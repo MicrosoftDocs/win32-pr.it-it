@@ -1,5 +1,5 @@
 ---
-description: Includere le tabelle MergeModuleSequence nel file con estensione msm se il modulo di merge deve modificare le tabelle della sequenza di azioni del file .msi destinazione. L'unione non aggiunge queste tabelle al file .msi. Queste tabelle si verificano solo nei moduli unione.
+description: Includere le tabelle MergeModuleSequence nel file con estensione msm se il modulo di merge deve modificare le tabelle della sequenza di azioni del file di .msi destinazione. L'unione non aggiunge queste tabelle al file .msi. Queste tabelle si verificano solo nei moduli unione.
 ms.assetid: 9efb75d2-43f9-404c-8e7f-918d056190cf
 title: Creazione di tabelle di sequenza del modulo merge
 ms.topic: article
@@ -17,7 +17,7 @@ Includere le tabelle MergeModuleSequence nel file con estensione msm [](s-gly.md
 
 Se una delle tabelle ModuleSequence è presente in un file con estensione msm, nel modulo merge deve essere creata anche una copia vuota della tabella della sequenza del programma di installazione corrispondente. Ad esempio, se un modulo di merge contiene una tabella ModuleAdminExecuteSequence, il modulo di merge deve includere anche una tabella AdminExecuteSequence vuota. Durante un'unione, queste tabelle vuote forniscono allo strumento di unione le linee guida necessarie per lo schema.
 
-Quando si [usano azioni standard](standard-actions.md) nelle tabelle di sequenza del modulo merge, il valore nella colonna Sequenza deve essere il numero di sequenza di azione consigliato per l'azione standard. Per i numeri di sequenza consigliati in ogni tabella di sequenza, vedere le sequenze di azione suggerite riportate di seguito. Se il numero di sequenza nella tabella di sequenze del modulo di merge è diverso dal numero di sequenza per la stessa azione nel file .msi, lo strumento di unione usa il numero di sequenza nel file .msi durante l'unione.
+Quando si [usano azioni standard](standard-actions.md) nelle tabelle di sequenza del modulo merge, il valore nella colonna Sequenza deve essere il numero di sequenza di azione consigliato per l'azione standard. Per i numeri di sequenza consigliati in ogni tabella di sequenza, vedere le sequenze di azione suggerite riportate di seguito. Se il numero di sequenza nella tabella di sequenza del modulo di merge è diverso dal numero di sequenza per la stessa azione nel file .msi, lo strumento di unione usa il numero di sequenza nel file di .msi durante l'unione.
 
 
 

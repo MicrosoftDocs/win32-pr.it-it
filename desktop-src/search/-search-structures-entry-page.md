@@ -18,7 +18,7 @@ Questa sezione documenta le strutture seguenti:
 
 [**INFORMAZIONI DI \_ AUTENTICAZIONE**](/windows/desktop/api/Searchapi/ns-searchapi-authentication_info)
 
-[**ORIGINI DATI \_ \_ FILTRATE**](/windows/desktop/api/filtereg/ns-filtereg-filtered_data_sources)
+[**ORIGINI \_ DATI \_ FILTRATE**](/windows/desktop/api/filtereg/ns-filtereg-filtered_data_sources)
 
 [**FILTERREGION**](/windows/win32/api/filter/ns-filter-filterregion)
 
@@ -28,7 +28,7 @@ Questa sezione documenta le strutture seguenti:
 
 [**INFORMAZIONI \_ DI ACCESSO \_ INCREMENTALE**](/windows/desktop/api/Searchapi/ns-searchapi-incremental_access_info)
 
-[**INLINE \_ NOTIFY \_ DATA \_ CHANGE \_ ENTRY**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
+[**INLINE \_ NOTIFICARE \_ L'IMMISSIONE \_ DI MODIFICHE AI \_ DATI**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
 
 [**INFORMAZIONI \_ SULL'ELEMENTO**](/windows/desktop/api/Searchapi/ns-searchapi-item_info)
 
@@ -36,11 +36,11 @@ Questa sezione documenta le strutture seguenti:
 
 [**INFORMAZIONI \_ PROXY**](/windows/desktop/api/Searchapi/ns-searchapi-proxy_info)
 
-[**SEARCH \_ COLUMN \_ PROPERTIES**](/windows/desktop/api/searchapi/ns-searchapi-search_column_properties)
+[**CERCARE \_ LE PROPRIETÀ DELLE \_ COLONNE**](/windows/desktop/api/searchapi/ns-searchapi-search_column_properties)
 
-[**SEARCH \_ ITEM \_ CHANGE**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_change)
+[**MODIFICA \_ DELL'ELEMENTO \_ DI RICERCA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_change)
 
-[**STATO \_ DI INDICIZZAZIONE DEGLI ELEMENTI DI \_ \_ RICERCA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_indexing_status)
+[**STATO \_ INDICIZZAZIONE ELEMENTI DI \_ \_ RICERCA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_indexing_status)
 
 [**MODIFICA \_ PERMANENTE \_ DELL'ELEMENTO DI \_ RICERCA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_persistent_change)
 

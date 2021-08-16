@@ -1,6 +1,6 @@
 ---
 title: rsq - vs
-description: Calcola la radice quadrata reciproca (solo positiva) dello scalare di origine. | rsq - vs
+description: Calcola la radice quadrata reciproca (solo positivo) dello scalare di origine. | rsq - vs
 ms.assetid: 1ac37dad-0cea-41af-8dae-f299896462b1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118510908"
 ---
 # <a name="rsq---vs"></a>rsq - vs
 
-Calcola la radice quadrata reciproca (solo positiva) dello scalare di origine.
+Calcola la radice quadrata reciproca (solo positivo) dello scalare di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +34,13 @@ Calcola la radice quadrata reciproca (solo positiva) dello scalare di origine.
 dove
 
 -   dst è il registro di destinazione.
--   src è un registro di origine. Il registro di origine richiede l'uso esplicito di replicate swizzle, ovvero esattamente uno dei componenti .x, .y, .z, .w swizzle (o .r, .g, .b, .a equivalenti) deve essere specificato.
+-   src è un registro di origine. Il registro di origine richiede l'uso esplicito dello swizzle di replica, ovvero è necessario specificare esattamente uno dei componenti .x, .y, .z, .w swizzle (o .r, .g, .b, .a equivalents).
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | Rsq                    | x    | x    | x    | x     | x    | x     |
 
@@ -48,7 +48,7 @@ dove
 
  
 
-Il frammento di codice seguente illustra le operazioni eseguite.
+Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
 
 
 ```
@@ -66,11 +66,11 @@ dest.z = dest.y = dest.z = dest.w = f;
 
 
 
-Il valore assoluto viene assunto prima dell'elaborazione.
+Il valore assoluto viene preso prima dell'elaborazione.
 
-La precisione deve essere almeno 1,0/(2²²) errore assoluto nell'intervallo (1.0, 4.0) perché le implementazioni comuni separeranno mantissa ed esponente.
+La precisione deve essere almeno un errore assoluto di 1,0/(2°) nell'intervallo (1.0, 4.0) perché le implementazioni comuni separano mantissa ed esponente.
 
-Se source non ha pedi, viene usato il componente x. L'output deve essere esattamente 1,0 se l'input è esattamente 1,0. Un'origine 0,0 restituisce infinito.
+Se source non ha pedi, viene usato il componente x. L'output deve essere esattamente 1,0 se l'input è esattamente 1,0. Un'origine di 0,0 restituisce infinito.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

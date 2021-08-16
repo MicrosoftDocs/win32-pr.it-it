@@ -22,7 +22,7 @@ ms.locfileid: "118375798"
 ---
 # <a name="audio-compression-manager-reference"></a>Informazioni di riferimento su Gestione compressione audio
 
-In questa sezione vengono descritte le funzioni, le strutture e i messaggi associati a ACM. Questi elementi sono raggruppati come indicato di seguito.
+In questa sezione vengono descritte le funzioni, le strutture e i messaggi associati a ACM. Questi elementi sono raggruppati nel modo seguente.
 
 ## <a name="drivers"></a>Driver
 

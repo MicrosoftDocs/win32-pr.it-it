@@ -1,40 +1,40 @@
 ---
-title: Come usare le finestre di Buddy
-description: Impostando altri controlli come finestre Buddy per un TrackBar, è possibile posizionare automaticamente tali controlli alle estremità del TrackBar come etichette.
+title: Come usare Windows
+description: Impostando altri controlli come finestre di controllo per un trackbar, è possibile posizionare automaticamente tali controlli alle estremità del trackbar come etichette.
 ms.assetid: 5797AA55-BD8D-407A-8896-08EE0DDC7E30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eca9a4e3b3049f8d4cf7515879d91a096f5a9e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d6819e0f37f07a90ae08a623f14c6c26d1d67f55ea81143834dfd10816f74396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829057"
 ---
-# <a name="how-to-use-buddy-windows"></a>Come usare le finestre di Buddy
+# <a name="how-to-use-buddy-windows"></a>Come usare Windows
 
-Impostando altri controlli come finestre Buddy per un TrackBar, è possibile posizionare automaticamente tali controlli alle estremità del TrackBar come etichette.
+Impostando altri controlli come finestre di controllo per un trackbar, è possibile posizionare automaticamente tali controlli alle estremità del trackbar come etichette.
 
-Nella figura seguente vengono mostrati un TrackBar orizzontale e un TrackBar verticale, entrambi con controlli statici come finestre di contatto.
+La figura seguente mostra un trackbar orizzontale e uno verticale, entrambi con controlli statici come finestre di controllo.
 
-![screenshot che mostra una finestra di dialogo con un TrackBar orizzontale e un TrackBar verticale](images/tkb-buddy.png)
+![Screenshot che mostra una finestra di dialogo con un trackbar orizzontale e un trackbar verticale](images/tkb-buddy.png)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="use-buddy-windows"></a>Usare le finestre di Buddy
+### <a name="use-buddy-windows"></a>Usare Windows
 
-Nell'esempio di codice seguente vengono create le finestre di Buddy visualizzate nell'illustrazione.
+Nell'esempio di codice seguente vengono create le finestre di avvio mostrate nell'illustrazione.
 
 
 ```
@@ -86,18 +86,18 @@ void LabelTrackbarsWithBuddies(HWND hDlg)
 
 ## <a name="remarks"></a>Commenti
 
-**IDC \_ SLIDER1** e **IDC \_ SLIDER2** sono trackbars creati nell'editor risorse.
+**IDC \_ SLIDER1** e **IDC \_ SLIDER2** sono trackbar creati nell'editor delle risorse.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso di controlli TrackBar](using-trackbar-controls.md)
+[Uso dei controlli Trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

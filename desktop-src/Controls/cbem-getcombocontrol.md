@@ -1,9 +1,9 @@
 ---
-title: Messaggio CBEM_GETCOMBOCONTROL (COMmctrl. h)
+title: CBEM_GETCOMBOCONTROL messaggio (Commctrl.h)
 description: Ottiene l'handle per il controllo casella combinata figlio.
 ms.assetid: b7eb8607-79c5-4dc8-b835-4014093532e4
 keywords:
-- Controlli di Windows Message CBEM_GETCOMBOCONTROL
+- CBEM_GETCOMBOCONTROL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef61e949ff8fb63d9113b0a1ecbfebc76424a3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2295812303a1c459dea70619dfe43e466f5e3ebaa09d77c421451be7526107ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832259"
 ---
-# <a name="cbem_getcombocontrol-message"></a>\_Messaggio CBEM GETCOMBOCONTROL
+# <a name="cbem_getcombocontrol-message"></a>Messaggio CBEM \_ GETCOMBOCONTROL
 
 Ottiene l'handle per il controllo casella combinata figlio.
 
@@ -45,9 +45,9 @@ Restituisce l'handle per il controllo casella combinata all'interno del controll
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

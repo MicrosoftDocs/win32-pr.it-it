@@ -56,25 +56,25 @@ Implements IWMPMedia.getItemInfo
 *bstrItemName* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni [di riferimento sugli attributi](attribute-reference.md).
+**System.String** che rappresenta il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere Riferimento [agli attributi.](attribute-reference.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Oggetto **System.String** che rappresenta il valore dell'attributo specificato.
+**System.String che** rappresenta il valore dell'attributo specificato.
 
 ## <a name="remarks"></a>Commenti
 
 Questo metodo restituisce i metadati per un singolo elemento multimediale o un elemento multimediale che fa parte di una playlist.
 
-La **proprietà attributeCount** ottiene il numero di nomi di attributi disponibili per un determinato elemento multimediale. I numeri di indice possono quindi essere usati con **il metodo getAttributeName** per determinare il nome di ogni attributo disponibile. I singoli nomi di attributo possono essere passati a **getItemInfo**.
+La **proprietà attributeCount** ottiene il numero di nomi di attributi disponibili per un determinato elemento multimediale. I numeri di indice possono quindi essere usati con **il metodo getAttributeName** per determinare il nome di ogni attributo disponibile. I nomi dei singoli attributi possono essere passati **a getItemInfo.**
 
 Per recuperare attributi con più valori e attributi con valori complessi, usare il **metodo getItemInfoByType.**
 
-Se l'elemento multimediale provenga da una libreria recuperata chiamando [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il set di attributi disponibili sarà diverso da quelli su cui è possibile eseguire query dalla libreria locale recuperata chiamando [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md). Ad esempio, gli attributi disponibili dalla libreria locale recuperata tramite **IWMPLibrary** saranno un subset degli attributi disponibili dalla libreria locale recuperata tramite **IWMPCore**. Il set di attributi disponibili da altre origini (librerie remote, dispositivi portatili o CD) è definito dalle altre origini.
+Se l'elemento multimediale deriva da una libreria recuperata chiamando [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il set di attributi disponibili sarà diverso da quelli su cui è possibile eseguire query dalla libreria locale recuperata chiamando [AxWindowsMediaPlayer.mediaCollection.](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md) Ad esempio, gli attributi disponibili dalla libreria locale recuperata tramite **IWMPLibrary** saranno un subset degli attributi disponibili dalla libreria locale recuperata tramite **IWMPCore.** Il set di attributi disponibili da altre origini (librerie remote, dispositivi portatili o CD) è definito dalle altre origini.
 
-Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,7 +92,7 @@ Prima di chiamare questo metodo, è necessario avere accesso in lettura alla lib
 
 <dl> <dt>
 
-[**Informazioni di riferimento su attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> <dt>
 
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

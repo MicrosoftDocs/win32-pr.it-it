@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d03edc8a33fb854aa8790de2415a7039b2792698
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56dcb57c6572ee8ea9fd10ba753d6d0ffb0149e759cb2250bae7d07ecbfa474f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334522"
 ---
 # <a name="playlistindex-attribute"></a>Attributo PlaylistIndex
 
-L'attributo **PlaylistIndex** è l'indice dell'elemento multimediale nella playlist padre.
+**L'attributo PlaylistIndex** è l'indice dell'elemento multimediale nella playlist padre.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -32,9 +32,9 @@ L'attributo **PlaylistIndex** è l'indice dell'elemento multimediale nella playl
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è un attributo temporaneo. Non è archiviato nella libreria o nel file multimediale digitale.
+Questo attributo è temporaneo. Non viene archiviato nella libreria o nel file multimediale digitale.
 
-Gli elementi multimediali possono essere elementi della playlist. Questo attributo è l'indice in base zero che rappresenta la posizione dell'elemento multimediale nella playlist. Se l'elemento multimediale non fa parte di una playlist, il valore di questo attributo è una stringa vuota ("").
+Gli elementi multimediali possono essere elementi playlist. Questo attributo è l'indice in base zero che rappresenta la posizione dell'elemento multimediale nella playlist. Se l'elemento multimediale non fa parte di una playlist, il valore di questo attributo è una stringa vuota ("").
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Gli elementi multimediali possono essere elementi della playlist. Questo attribu
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

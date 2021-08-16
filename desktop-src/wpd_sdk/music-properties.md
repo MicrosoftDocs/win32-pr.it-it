@@ -1,7 +1,7 @@
 ---
-description: I dispositivi portatili Windows supportano le proprietà musicali seguenti.
+description: Windows Dispositivi portatili supporta le proprietà di musica seguenti.
 ms.assetid: a1688c95-af5a-4061-80d4-61f08787d49e
-title: Proprietà Music (PortableDevice. h)
+title: Musica Proprietà (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3b33c2219dc9da43474f28b4b807727bdd1d90a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9231ad4a3c15aac893cc51105e764d7bb6bbd4866dae6e11164b9418db557c9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842882"
 ---
-# <a name="music-properties"></a>Proprietà musica
+# <a name="music-properties"></a>Musica Proprietà
 
-I dispositivi portatili Windows supportano le proprietà musicali seguenti.
+Windows Dispositivi portatili supporta le proprietà di musica seguenti.
 
 
 
 | Proprietà               | VarType        | Descrizione                                |
 |------------------------|----------------|--------------------------------------------|
-| **\_album musica \_ WPD**  | **\_LPWSTR VT** | Album a cui appartiene la traccia.            |
-| **WPD \_ Music \_ lyrics** | **\_LPWSTR VT** | I lyrics per la musica.                  |
-| **WPD \_ Music \_ Mood**   | **\_LPWSTR VT** | Stringa che descrive lo stato di un brano musicale. |
-| **WPD \_ Music \_ Track**  | **\_UI4 VT**    | Il numero di traccia della registrazione sull'album. |
+| **ALBUM DI MUSICA WPD \_ \_**  | **VT \_ LPWSTR** | Album a cui appartiene la traccia.            |
+| **TESTI DI WPD \_ MUSIC \_** | **VT \_ LPWSTR** | Testo per la musica.                  |
+| **WPD \_ MUSIC \_ MOOD**   | **VT \_ LPWSTR** | Stringa che descrive l'atmosfera della musica. |
+| **TRACCIA MUSICALE \_ WPD \_**  | **Interfaccia utente \_ VT4**    | Numero di traccia della registrazione nell'album. |
 
 
 
@@ -43,7 +43,7 @@ I dispositivi portatili Windows supportano le proprietà musicali seguenti.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ I dispositivi portatili Windows supportano le proprietà musicali seguenti.
 
 <dl> <dt>
 
-[**Proprietà e attributi di WPD**](properties-and-attributes.md)
+[**Proprietà e attributi WPD**](properties-and-attributes.md)
 </dt> </dl>
 
  

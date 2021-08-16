@@ -13,9 +13,9 @@ ms.locfileid: "118328617"
 ---
 # <a name="web-standards-and-application-compatibility"></a>Standard Web e compatibilità delle applicazioni
 
-Gli standard Web forniscono una linea di base comune di tecnologie che consentono agli utenti di selezionare un Web browser senza preoccuparsi di usare i siti Web desiderati e che consentono ai web designer e agli sviluppatori di creare un singolo sito Web che tutti possono usare.
+Gli standard Web offrono una baseline comune di tecnologie che consentono agli utenti di selezionare un Web browser senza doversi preoccupare di usare i siti Web desiderati e che consentono a progettisti e sviluppatori Web di creare un singolo sito Web che tutti possono usare.
 
-Gli standard per i Web browser sono in continua evoluzione e i Web browser vengono costantemente aggiornati per adottare questi standard. Di conseguenza, i professionisti IT e gli sviluppatori devono garantire che le applicazioni Web siano compatibili con gli standard Web e i browser attuali ed emergenti. Questa manutenzione garantisce che le applicazioni Web e i siti siano compatibili con le nuove versioni dei browser e consentono di evitare molti problemi di compatibilità che potrebbero verificarsi.
+Gli standard per il Web browser sono in continua evoluzione e i Web browser vengono continuamente aggiornati per adottare questi standard. Di conseguenza, i professionisti IT e gli sviluppatori devono assicurarsi che le applicazioni Web siano compatibili con browser e standard Web attuali ed emergenti. Questa manutenzione garantisce che le applicazioni Web e i siti siano compatibili con le nuove versioni dei browser e consentono di evitare molti problemi di compatibilità che potrebbero verificarsi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

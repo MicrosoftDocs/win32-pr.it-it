@@ -1,5 +1,5 @@
 ---
-description: Illustra come implementare un verbo shell usando il metodo ExecuteCommand.
+description: Illustra come implementare un verbo Shell usando il metodo ExecuteCommand.
 title: Esempio di verbo del comando Execute
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "117858270"
 ---
 # <a name="execute-command-verb-sample"></a>Esempio di verbo del comando Execute
 
-Illustra come implementare un verbo shell usando il metodo ExecuteCommand.
+Illustra come implementare un verbo Shell usando il metodo ExecuteCommand.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -30,7 +30,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-Questo metodo è preferibile per le implementazioni verbo perché offre la massima flessibilità, è semplice e supporta l'attivazione out-of-process. In questo esempio viene implementato un oggetto com (Server Component Object Model) locale autonomo, ma è previsto che l'implementazione del verbo sia integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale deve registrare un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se presente.
+Questo metodo è preferibile per le implementazioni di verbi perché offre la massima flessibilità, è semplice e supporta l'attivazione out-of-process. Questo esempio implementa un oggetto server Component Object Model (COM) autonomo, ma è previsto che l'implementazione del verbo verrà integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale deve registrare un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se presente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Questo metodo è preferibile per le implementazioni verbo perché offre la massi
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Località      | URL del percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio di ExecuteCommandVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/ExecuteCommandVerb) |
 
@@ -55,19 +55,19 @@ Questo metodo è preferibile per le implementazioni verbo perché offre la massi
 
 Per compilare l'esempio dal prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory **del progetto ExecuteCommandVerb.**
+1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **ExecuteCommandVerb.**
 2.  Immettere `msbuild ExecuteCommand.sln`.
 
 Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Windows Explorer e passare alla directory **del progetto ExecuteCommandVerb.**
-2.  Fare doppio clic sull'icona del file ExecuteCommand.sln per aprire il progetto in Visual Studio.
+1.  Aprire Windows Explorer e passare alla directory del progetto **ExecuteCommandVerb.**
+2.  Fare doppio clic sull'icona per il file ExecuteCommand.sln per aprire il progetto in Visual Studio.
 3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
 1.  Passare alla directory che contiene il nuovo eseguibile, usando il prompt dei comandi o Windows Explorer.
-2.  Nella riga di comando immettere `ExecuteCommand.exe` . In alternativa, in Windows Explorer fare doppio clic sull'icona per ExecuteCommand.exe.
+2.  Nella riga di comando immettere `ExecuteCommand.exe` . In alternativa, da esplora Windows fare doppio clic sull'icona per ExecuteCommand.exe.
 3.  Seguire le istruzioni nella finestra di dialogo visualizzata
 
  

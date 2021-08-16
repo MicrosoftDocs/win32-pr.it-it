@@ -1,6 +1,6 @@
 ---
-title: Valori di estrazione personalizzati (CommCtrl. h)
-description: In questa sezione vengono elencati i valori utilizzati per identificare le parti di un controllo TrackBar.
+title: Valori di disegno personalizzati (CommCtrl.h)
+description: Questa sezione elenca i valori usati per identificare le parti di un controllo Trackbar.
 ms.assetid: 154321c7-99f8-4ed5-a5ff-fb96126b43c7
 topic_type:
 - apiref
@@ -14,30 +14,30 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf05ab951fdc83ec5be414688be56d710ba0d98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb714df7c91819a7d459c4c9fbed1fbc1e0d4fd2455f52891030d95991fa6497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831692"
 ---
-# <a name="custom-draw-values"></a>Valori di estrazione personalizzati
+# <a name="custom-draw-values"></a>Valori di disegno personalizzati
 
-In questa sezione vengono elencati i valori utilizzati per identificare le parti di un controllo TrackBar.
+Questa sezione elenca i valori usati per identificare le parti di un controllo Trackbar.
 
 
 
 | Costante                                                                                                                                                   | Descrizione                                                                                                     |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| <span id="TBCD_CHANNEL"></span><span id="tbcd_channel"></span><dl> <dt>**\_canale TBCD**</dt> </dl> | Identifica il canale con cui scorre il marcatore Thumb del controllo TrackBar.<br/>                        |
-| <span id="TBCD_THUMB"></span><span id="tbcd_thumb"></span><dl> <dt>**TBCD \_ Thumb**</dt> </dl>       | Identifica il marcatore Thumb del controllo TrackBar. Questa è la parte del controllo che l'utente sposta.<br/> |
-| <span id="TBCD_TICS"></span><span id="tbcd_tics"></span><dl> <dt>**\_TIC TBCD**</dt> </dl>          | Identifica i segni di graduazione visualizzati lungo il bordo del controllo TrackBar.<br/>                      |
+| <span id="TBCD_CHANNEL"></span><span id="tbcd_channel"></span><dl> <dt>**CANALE \_ TBCD**</dt> </dl> | Identifica il canale lungo cui scorre l'indicatore di scorrimento del controllo trackbar.<br/>                        |
+| <span id="TBCD_THUMB"></span><span id="tbcd_thumb"></span><dl> <dt>**TBCD \_ THUMB**</dt> </dl>       | Identifica il marcatore di scorrimento del controllo trackbar. Questa è la parte del controllo spostata dall'utente.<br/> |
+| <span id="TBCD_TICS"></span><span id="tbcd_tics"></span><dl> <dt>**TBCD \_ TICS**</dt> </dl>          | Identifica i segni di graduazione visualizzati lungo il bordo del controllo trackbar.<br/>                      |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-I valori di estrazione personalizzati, ad esempio, vengono specificati nel membro **dwItemSpec** della struttura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) .
+I valori di Disegno personalizzato, ad esempio, vengono specificati nel **membro dwItemSpec** della [**struttura NMCUSTOMDRAW.**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ I valori di estrazione personalizzati, ad esempio, vengono specificati nel membr
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

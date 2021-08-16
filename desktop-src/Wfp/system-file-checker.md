@@ -162,7 +162,7 @@ Per altre informazioni, vedere [Valori del Registro di sistema WFP.](wfp-registr
 
 ## <a name="remarks"></a>Commenti
 
-Solo Windows Vista è possibile impostare la variabile di ambiente **\_ \_ LOGFILE** DI TRACCIA DI WINDOWS sul percorso di una directory valida per ricevere un file di log.
+Solo Windows Vista è possibile impostare la variabile di ambiente **\_ \_ LOGFILE** di TRACCIA DI WINDOWS sul percorso di una directory valida per ricevere un file di log.
 
 ## <a name="examples"></a>Esempio
 

@@ -53,7 +53,7 @@ Restituisce un **valore booleano** che indica se tutti i valori di un'operazione
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="minimum-shader-model"></a>Modello di shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -61,7 +61,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 

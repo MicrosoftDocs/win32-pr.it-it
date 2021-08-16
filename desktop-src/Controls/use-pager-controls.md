@@ -1,48 +1,48 @@
 ---
 title: Come usare i controlli pager
-description: In questa sezione viene descritto come implementare il controllo pager nell'applicazione.
+description: Questa sezione descrive come implementare il controllo pager nell'applicazione.
 ms.assetid: 5703FE4B-987E-49DA-9741-F8B45AD26467
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 586bfff0c8d8097c4b0e861506bb73f55467b711
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: b917943f5f86498bb3cbea2c58842049c4618caf64a66a6b8db1cb2ab86a315b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828642"
 ---
 # <a name="how-to-use-pager-controls"></a>Come usare i controlli pager
 
-In questa sezione viene descritto come implementare il controllo pager nell'applicazione.
+Questa sezione descrive come implementare il controllo pager nell'applicazione.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="initialize-a-pager-control"></a>Inizializzare un controllo pager
+### <a name="initialize-a-pager-control"></a>Inizializzare un controllo Pager
 
-Per utilizzare il controllo pager, è necessario chiamare la funzione [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) con il \_ \_ flag di classe PAGESCROLLER ICC impostato nel membro **dwICC** della struttura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) .
+Per usare il controllo pager, è necessario chiamare la [**funzione InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) con il flag ICC PAGESCROLLER CLASS impostato nel membro \_ \_ **dwICC** della struttura [**INITCOMMONCONTROLSEX.**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex)
 
-### <a name="create-a-pager-control"></a>Creazione di un controllo pager
+### <a name="create-a-pager-control"></a>Creare un controllo Pager
 
-Usare [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o l'API [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare un controllo cercapersone. Il nome della classe per il controllo è [**WC \_ PAGESCROLLER**](common-control-window-classes.md), che è definito in commctrl. h. Lo [**stile \_ orizzontalmente PGS**](pager-control-styles.md) viene usato per creare un cercapersone orizzontale e lo stile [**di \_ PGS Vert**](pager-control-styles.md) viene usato per creare un cercapersone verticale. Poiché si tratta di un controllo figlio, deve essere utilizzato anche lo stile [**WS \_ figlio**](/windows/desktop/winmsg/window-styles) .
+Usare [**l'API CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare un controllo pager. Il nome della classe per il controllo [**è WC \_ PAGESCROLLER,**](common-control-window-classes.md)definito in Commctrl.h. Lo [**stile PGS \_ HORZ**](pager-control-styles.md) viene usato per creare un pager orizzontale e lo stile [**PGS \_ VERT**](pager-control-styles.md) viene usato per creare un pager verticale. Poiché si tratta di un controllo figlio, è necessario usare anche lo [**stile \_ WS CHILD.**](/windows/desktop/winmsg/window-styles)
 
-Dopo la creazione del controllo pager, è probabile che si desideri assegnare una finestra contenuta. Se la finestra contenuta è una finestra figlio, è necessario rendere la finestra figlio un elemento figlio del controllo cercapersone in modo che le dimensioni e la posizione vengano calcolate correttamente. La finestra viene quindi assegnata al controllo pager con il messaggio [**PGM \_ figlio**](pgm-setchild.md) . Tenere presente che questo messaggio non modifica effettivamente la finestra padre della finestra contenuta; assegna semplicemente la finestra contenuta. Se la finestra contenuta è uno dei controlli comuni, deve disporre dello stile [**CCS \_ noresize**](common-control-styles.md) per impedire che il controllo tenti di ridimensionarsi in base alle dimensioni del controllo cercapersone.
+Dopo aver creato il controllo pager, è molto probabile che si voglia assegnare una finestra indipendente. Se la finestra contenuta è una finestra figlio, è necessario impostare la finestra figlio come figlio del controllo pager in modo che le dimensioni e la posizione vengano calcolate correttamente. Assegnare quindi la finestra al controllo pager con il [**messaggio PGM \_ SETCHILD.**](pgm-setchild.md) Tenere presente che questo messaggio non modifica effettivamente la finestra padre della finestra contenuta. assegna semplicemente la finestra contenuta. Se la finestra contenuta è uno dei controlli comuni, deve avere lo stile [**\_ CCS NORESIZE**](common-control-styles.md) per impedire al controllo di tentare di ridimensionarsi in base alle dimensioni del controllo pager.
 
-### <a name="process-pager-control-notifications"></a>Notifiche del controllo cercapersone del processo
+### <a name="process-pager-control-notifications"></a>Elaborare le notifiche del controllo Pager
 
-Come minimo, è necessario elaborare la notifica di [ \_ CALCSIZE PGN](pgn-calcsize.md) . Se non si elabora questa notifica e si immette un valore per la larghezza o l'altezza, le frecce di scorrimento nel controllo pager non verranno visualizzate. Questo perché il controllo pager usa la larghezza o l'altezza fornite nella notifica PGN \_ CALCSIZE per determinare le dimensioni "ideali" della finestra contenuta.
+Come minimo, è necessario elaborare la notifica [PGN \_ CALCSIZE.](pgn-calcsize.md) Se non si elabora questa notifica e si immette un valore per la larghezza o l'altezza, le frecce di scorrimento nel controllo pager non verranno visualizzate. Questo perché il controllo pager usa la larghezza o l'altezza fornita nella notifica PGN CALCSIZE per determinare le dimensioni \_ "ideali" della finestra contenuta.
 
-Nell'esempio seguente viene illustrato come elaborare il caso di notifica [ \_ CALCSIZE di PGN](pgn-calcsize.md) . In questo esempio, la finestra contenuta è un controllo Toolbar che contiene un numero sconosciuto di pulsanti a una dimensione sconosciuta. Nell'esempio viene illustrato come utilizzare il messaggio [**TB \_ GETMAXSIZE**](tb-getmaxsize.md) per determinare le dimensioni di tutti gli elementi nella barra degli strumenti. Nell'esempio viene quindi inserita la larghezza di tutti gli elementi nel membro **larghezza** della struttura [**NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) che viene passata alla notifica.
+L'esempio seguente illustra come elaborare il caso [di notifica \_ PGN CALCSIZE.](pgn-calcsize.md) In questo esempio la finestra contenuta è un controllo barra degli strumenti che contiene un numero sconosciuto di pulsanti di dimensioni sconosciute. L'esempio illustra come usare il messaggio [**\_ TB GETMAXSIZE**](tb-getmaxsize.md) per determinare le dimensioni di tutti gli elementi nella barra degli strumenti. L'esempio inserisce quindi la larghezza di tutti gli elementi nel membro **iWidth** della struttura [**NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) passata alla notifica.
 
 
 ```C++
@@ -72,12 +72,12 @@ return 0;
 
 <dl> <dt>
 
-[Uso di controlli pager](using-pager-controls.md)
+[Uso dei controlli pager](using-pager-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -33,7 +33,7 @@ ms.locfileid: "118496740"
 ---
 # <a name="esentfatalexception-class"></a>Classe EsentFatalException
 
-Classe di base per le eccezioni irreversibili.
+Classe di base per le eccezioni fatali.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
@@ -45,7 +45,7 @@ Classe di base per le eccezioni irreversibili.
           Microsoft.Isam.Esent.Interop.EsentFatalException  
             
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

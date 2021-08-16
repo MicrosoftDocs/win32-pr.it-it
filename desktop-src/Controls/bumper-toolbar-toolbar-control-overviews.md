@@ -1,6 +1,6 @@
 ---
-title: Cenni preliminari sul controllo Toolbar
-description: Cenni preliminari sul controllo Toolbar
+title: Panoramica del controllo Barra degli strumenti
+description: Panoramica del controllo Barra degli strumenti
 ms.assetid: 3f1c0fec-fc52-4e24-bf01-5e10a610eec4
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118415643"
 ---
-# <a name="toolbar-control-overview"></a>Cenni preliminari sul controllo Toolbar
+# <a name="toolbar-control-overview"></a>Panoramica del controllo Barra degli strumenti
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

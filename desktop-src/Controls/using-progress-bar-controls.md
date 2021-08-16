@@ -1,19 +1,19 @@
 ---
-title: Utilizzo di controlli indicatore di stato
-description: In questa sezione vengono forniti esempi di codice e informazioni su come creare un controllo indicatore di stato.
+title: Uso dei controlli indicatore di stato
+description: Questa sezione fornisce codice di esempio e informazioni su come creare un controllo indicatore di stato.
 ms.assetid: 64432698-913D-41E6-BD5E-7F5CCAAF7631
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f887f05960dfca95f82bea5b616889aa65262e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a120fc2aef30e942c91392386ce00007becfc09929d70c51b55522cec93ce77b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828512"
 ---
-# <a name="using-progress-bar-controls"></a>Utilizzo di controlli indicatore di stato
+# <a name="using-progress-bar-controls"></a>Uso dei controlli indicatore di stato
 
-In questa sezione vengono forniti esempi di codice e informazioni su come creare un controllo indicatore di stato.
+Questa sezione fornisce codice di esempio e informazioni su come creare un controllo indicatore di stato.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ In questa sezione vengono forniti esempi di codice e informazioni su come creare
 
 | Argomento                                                                           | Descrizione                                                                                                             |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Come usare i controlli indicatore di stato](create-progress-bar-controls.md)<br/> | In questo argomento viene illustrato come utilizzare un indicatore di stato per indicare lo stato di un'operazione di analisi dei file di lunga durata. <br/> |
+| [Come usare i controlli indicatore di stato](create-progress-bar-controls.md)<br/> | Questo argomento illustra come usare un indicatore di stato per indicare lo stato di avanzamento di una lunga operazione di analisi dei file. <br/> |
 
 
 

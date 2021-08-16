@@ -1,9 +1,9 @@
 ---
-title: Attributo WM/writer
-description: L'attributo WM/writer è il nome del writer che ha scritto le parole del contenuto.
+title: Attributo WM/Writer
+description: L'attributo WM/Writer è il nome dello scrittore che ha scritto le parole del contenuto.
 ms.assetid: e2035cf7-29f4-4642-9388-4cd7cb08149e
 keywords:
-- Attributo WM/Writer Windows Media Player
+- Attributi WM/Writer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29aabf353fc742370ac5d01f084544be8143d3ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a239fd83c936a0712459307fbf08b01c4bfcc4f6fd4c6d32cddc12d8092f2b2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332056"
 ---
-# <a name="wmwriter-attribute"></a>Attributo WM/writer
+# <a name="wmwriter-attribute"></a>Attributo WM/Writer
 
-L'attributo **WM/writer** è il nome del writer che ha scritto le parole del contenuto.
+**L'attributo WM/Writer** è il nome dello scrittore che ha scritto le parole del contenuto.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Elementi video](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
 Questo attributo viene archiviato sia nella libreria che nel file multimediale digitale.
 
-Questo attributo può avere più valori. Per recuperare tutti i valori per un attributo multivalore, è necessario usare il metodo **Media. getItemInfoByType** , non il metodo **Media. GetItemInfo** .
+Questo attributo può avere più valori. Per recuperare tutti i valori per un attributo multivalore, è necessario usare il metodo **Media.getItemInfoByType,** non il **metodo Media.getItemInfo.**
 
 **Writer** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMWriter.
+La Windows Media Format SDK per questo attributo è g \_ wszWMWriter.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -55,10 +55,10 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> </dl>
 
  

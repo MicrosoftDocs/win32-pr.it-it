@@ -19,7 +19,7 @@ Il contenuto di questa pagina è stato spostato nella pagina di riferimento appr
 
 <dl> <dt>
 
-[Guida per programmatori per DDS](dx-graphics-dds-pguide.md)
+[Guida di programmazione per DDS](dx-graphics-dds-pguide.md)
 </dt> </dl>
 
  

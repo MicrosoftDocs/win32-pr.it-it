@@ -25,7 +25,7 @@ Internet Explorer 8 include le modalità di rendering seguenti che è possibile 
 |---------------|---------------------------------------------------------------------------------------|
 | IE=5          | Usare la modalità non standard.                                                                      |
 | IE=7          | Usare sempre la Windows Internet Explorer 7.                                          |
-| IE=EmulateIE7 | Visualizzare in Internet Explorer 7 a meno che il sito non abbia i caratteri non standard DOCTYPE.           |
+| IE=EmulateIE7 | Visualizzare in Internet Explorer 7, a meno che il sito non abbia i caratteri non standard DOCTYPE.           |
 | IE=8          | Usare sempre Internet Explorer modalità 8.                                                  |
 | IE=EmulateIE8 | Eseguire l Visualizzazione Compatibilità nei computer client e usare Internet Explorer modalità 8.      |
 | IE=Edge       | Visualizzare nella modalità più recente. In Internet Explorer 8, questo valore equivale a IE=8. |

@@ -24,19 +24,19 @@ LPFNInitRoutine            m_lpfnInit;            // Initialization function (op
 const AMOVIESETUP_FILTER * m_pAMovieSetup_Filter; // Set-up information (for filters)
 ```
 
-I due puntatori a [**funzione, m \_ lpfnNew**](cfactorytemplate-m-lpfnnew.md) e [**m \_ lpfnInit**](cfactorytemplate-m-lpfninit.md), usano le definizioni di tipo seguenti:
+I due puntatori a funzione, [**m \_ lpfnNew**](cfactorytemplate-m-lpfnnew.md) e [**m \_ lpfnInit**](cfactorytemplate-m-lpfninit.md), usano le definizioni di tipo seguenti:
 
 ``` syntax
 typedef CUnknown *(CALLBACK *LPFNNewCOMObject)(LPUNKNOWN pUnkOuter, HRESULT *phr);
 typedef void (CALLBACK *LPFNInitRoutine)(BOOL bLoading, const CLSID *rclsid);
 ```
 
-Il primo è la funzione di creazione di istanze per il componente. Il secondo è una funzione di inizializzazione facoltativa. Se si fornisce una funzione di inizializzazione, viene chiamata dall'interno della funzione del punto di ingresso della DLL. La funzione del punto di ingresso dll è descritta più avanti in questo articolo.
+Il primo è la funzione di creazione di istanze per il componente. Il secondo è una funzione di inizializzazione facoltativa. Se si fornisce una funzione di inizializzazione, viene chiamata dall'interno della funzione del punto di ingresso della DLL. La funzione del punto di ingresso della DLL viene illustrata più avanti in questo articolo.
 
-Si supponga di creare una DLL contenente un componente denominato CMyComponent, che eredita da [**CUnknown**](cunknown.md). È necessario specificare gli elementi seguenti nella DLL:
+Si supponga di creare una DLL che contiene un componente denominato CMyComponent, che eredita da [**CUnknown.**](cunknown.md) È necessario specificare gli elementi seguenti nella DLL:
 
 -   Funzione di inizializzazione, un metodo pubblico che restituisce una nuova istanza di CMyComponent.
--   Matrice globale di modelli di factory, denominata *g \_ Templates.* Questa matrice contiene il modello factory per CMyComponent.
+-   Matrice globale di modelli factory, denominata *g \_ Templates.* Questa matrice contiene il modello factory per CMyComponent.
 -   Variabile globale denominata *g \_ cTemplates* che specifica le dimensioni della matrice.
 
 L'esempio seguente illustra come dichiarare questi elementi:
@@ -68,11 +68,11 @@ int g_cTemplates = sizeof(g_Templates) / sizeof(g_Templates[0]);
 
 
 
-Il `CreateInstance` metodo chiama il costruttore della classe e restituisce un puntatore alla nuova istanza della classe. Il parametro *pUnk* è un puntatore all'aggregazione [**di IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown). È sufficiente passare questo parametro al costruttore della classe. Il parametro *pHr è* un puntatore a un valore HRESULT. Il costruttore della classe imposta questo valore su un valore appropriato, ma se il costruttore ha esito negativo, impostare il valore su E \_ OUTOFMEMORY.
+Il `CreateInstance` metodo chiama il costruttore della classe e restituisce un puntatore alla nuova istanza della classe. Il parametro *pUnk è* un puntatore all'oggetto [**IUnknown aggregato.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) È sufficiente passare questo parametro al costruttore della classe. Il parametro *pHr è* un puntatore a un valore HRESULT. Il costruttore della classe imposta questa proprietà su un valore appropriato, ma se il costruttore ha esito negativo, impostare il valore su E \_ OUTOFMEMORY.
 
-La macro [**NAME**](name.md) genera una stringa nelle build di debug, ma viene risolta in **NULL** nelle build di vendita al dettaglio. Viene usato in questo esempio per assegnare al componente un nome che viene visualizzato nei log di debug ma non occupa memoria nella versione finale.
+La macro [**NAME**](name.md) genera una stringa nelle build di debug, ma viene risolta in **NULL** nelle build per la vendita al dettaglio. Viene usato in questo esempio per assegnare al componente un nome che viene visualizzato nei log di debug ma non occupa memoria nella versione finale.
 
-Il `CreateInstance` metodo può avere qualsiasi nome, perché il class factory fa riferimento al puntatore a funzione nel modello factory. Tuttavia, *\_ i modelli g* e *g \_ cTemplate sono* variabili globali che il class factory prevede di trovare, quindi devono avere esattamente questi nomi.
+Il `CreateInstance` metodo può avere qualsiasi nome, perché il class factory fa riferimento al puntatore a funzione nel modello factory. Tuttavia, *\_ i modelli g* e *g \_ cTemplates* sono variabili globali che l'class factory si aspetta di trovare, quindi devono avere esattamente questi nomi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentSLVDatabaseMissingException'
+description: Altre informazioni sulle proprietà di EsentSLVDatabaseMissingException
 title: Proprietà di EsentSLVDatabaseMissingException
 TOCTitle: EsentSLVDatabaseMissingException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVDatabaseMissingException
@@ -17,7 +17,7 @@ ms.locfileid: "118491308"
 # <a name="esentslvdatabasemissingexception-properties"></a>Proprietà di EsentSLVDatabaseMissingException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentSLVDatabaseMissingException](./esentslvdatabasemissingexception-class.md) espone i membri seguenti.
 

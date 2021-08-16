@@ -1,7 +1,7 @@
 ---
-description: Lunghezza del tempo impiegato per decodificare l'esempio più recente, in millisecondi.
+description: Tempo necessario per decodificare l'esempio più recente, espresso in millisecondi.
 ms.assetid: e9cac411-f327-4750-9129-0bc2885eedd7
-title: 'Membro CVideoTransformFilter:: m_tDecodeStart (Vtrans. h)'
+title: Membro CVideoTransformFilter::m_tDecodeStart (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3948b37c2efeb7d21e664da354571c2bdf9ab298
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a162103a8a67cfcb4589c7f030db8ca7d93a89ee6fb7f12f1c0e2a40a4841ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821598"
 ---
-# <a name="cvideotransformfilterm_tdecodestart-member"></a>Membro tDecodeStart di CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_tdecodestart-member"></a>Membro CVideoTransformFilter::m \_ tDecodeStart
 
-Lunghezza del tempo impiegato per decodificare l'esempio più recente, in millisecondi.
+Tempo necessario per decodificare l'esempio più recente, espresso in millisecondi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ int m_tDecodeStart;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

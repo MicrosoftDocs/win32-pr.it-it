@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118218540"
 ---
-# <a name="inkpictureclick-event"></a>Evento InkPicture.Click
+# <a name="inkpictureclick-event"></a>InkPicture.Click - evento
 
-Si verifica quando un utente fa clic sul [controllo InkPicture.](inkpicture-control-reference.md)
+Si verifica quando un utente fa clic [sul controllo InkPicture.](inkpicture-control-reference.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Facendo clic su un controllo vengono generati gli eventi [**MouseDown**](inkpict
 
 Se è presente codice nell'evento **Click,** l'evento [**DblClick**](inkpicture-dblclick.md) non verrà mai attivato, perché l'evento **Click** è il primo evento da attivare tra i due. Di conseguenza, il clic del mouse viene intercettato dall'evento **Click,** quindi l'evento **DblClick** non si verifica.
 
-Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia IDispatch con un identificatore **DISPID \_ IPEClick**.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia IDispatch con un identificatore **\_ DISPID IPEClick.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** *
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

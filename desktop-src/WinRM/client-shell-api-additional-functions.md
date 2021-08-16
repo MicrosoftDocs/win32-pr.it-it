@@ -1,6 +1,6 @@
 ---
-title: Funzioni aggiuntive dell'API Shell client
-description: La tabella seguente offre una panoramica delle funzioni non di base per l'API (Application Programming Interface) Windows Remote Management (WinRM) Client Shell.
+title: Funzioni aggiuntive dell'API della shell client
+description: La tabella seguente offre una panoramica delle funzioni non di base per l'API della shell client di gestione remota Windows (WinRM).
 ms.assetid: ea90e314-12c1-42e7-bafa-15dd8ce63aa6
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118324000"
 ---
-# <a name="client-shell-api-additional-functions"></a>Funzioni aggiuntive dell'API Shell client
+# <a name="client-shell-api-additional-functions"></a>Funzioni aggiuntive dell'API della shell client
 
-La tabella seguente offre una panoramica delle funzioni non di base per l'API (Application Programming Interface) Windows Remote Management (WinRM) Client Shell.
+La tabella seguente offre una panoramica delle funzioni non di base per l'API della shell client di gestione remota Windows (WinRM).
 
 
 
@@ -23,7 +23,7 @@ La tabella seguente offre una panoramica delle funzioni non di base per l'API (A
 | [**WSManGetErrorMessage**](/windows/desktop/api/Wsman/nf-wsman-wsmangeterrormessage)                   | Ottiene i messaggi di errore.              |
 | [**WSManGetSessionOptionAsDword**](/windows/desktop/api/Wsman/nf-wsman-wsmangetsessionoptionasdword)   | Ottiene le opzioni di sessione come DWORD.  |
 | [**WSManGetSessionOptionAsString**](/windows/desktop/api/Wsman/nf-wsman-wsmangetsessionoptionasstring) | Ottiene le opzioni di sessione come stringa. |
-| [**WSManSetSessionOption**](/windows/desktop/api/Wsman/nf-wsman-wsmansetsessionoption)                 | Imposta le opzioni di sessione.             |
+| [**WSManSetSessionOption**](/windows/desktop/api/Wsman/nf-wsman-wsmansetsessionoption)                 | Imposta le opzioni della sessione.             |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti vengono forniti da una DLL di estensione di File Manager.
+description: Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti sono forniti da una DLL di estensione di File Manager.
 title: FMS_TOOLBARLOAD struttura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118224110"
 ---
-# <a name="fms_toolbarload-structure"></a>Struttura TOOLBARLOAD di FMS \_
+# <a name="fms_toolbarload-structure"></a>Struttura TOOLBARLOAD DI FMS \_
 
-Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti vengono forniti da una DLL di estensione di File Manager.
+Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti sono forniti da una DLL di estensione di File Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensione, in byte, della struttura . File Manager imposta le dimensioni prima di chiamare l'estensione e controlla le dimensioni dopo la fine della procedura di estensione.
+Dimensione, in byte, della struttura . File Manager imposta le dimensioni prima di chiamare l'estensione e controlla le dimensioni al termine della procedura di estensione.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Identificatore di una risorsa bitmap nel file eseguibile per la DLL di estensione. La risorsa bitmap contiene immagini per il numero di pulsanti specificato da **cBitmaps**. File Manager carica la risorsa bitmap e la usa per visualizzare i pulsanti.
+Identificatore di una risorsa bitmap nel file eseguibile per la DLL di estensione. La risorsa bitmap contiene immagini per il numero di pulsanti specificato da **cBitmaps.** File Manager carica la risorsa bitmap e quindi la usa per visualizzare i pulsanti.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Tipo: **HBITMAP**
 
 </dd> <dd>
 
-Handle di una bitmap che File Manager userà per ottenere e visualizzare le immagini dei pulsanti se **idBitmap** è 0.
+Handle per una bitmap che File Manager userà per ottenere e visualizzare le immagini dei pulsanti se **idBitmap** è 0.
 
 </dd> </dl>
 
@@ -126,7 +126,7 @@ Handle di una bitmap che File Manager userà per ottenere e visualizzare le imma
 
 <dl> <dt>
 
-[**BARRA DEGLI STRUMENTI \_ FMEVENTLOAD**](fmevent-toolbarload.md)
+[**FMEVENT \_ TOOLBARLOAD**](fmevent-toolbarload.md)
 </dt> </dl>
 
  

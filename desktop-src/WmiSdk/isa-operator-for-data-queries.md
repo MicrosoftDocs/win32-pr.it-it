@@ -27,9 +27,9 @@ SELECT * FROM Class WHERE EmbeddedProp ISA "ParentClass"
 
 Il risultato include le istanze **di Class** con oggetti incorporati derivati da **ParentClass** nella **proprietà EmbeddedProp.** Non tutte le istanze **dell'oggetto Class** derivano da **ParentClass**, ma il risultato restituisce gli oggetti incorporati derivati da **ParentClass**.
 
-Nella query seguente, ad esempio, **ClassA** include la proprietà **EmbeddedObj** con tipi di dati deboli. La **classe ClassA** ha dieci istanze. Cinque di queste istanze hanno oggetti incorporati con un tipo derivato da **ClassZ**. Gli altri cinque hanno oggetti incorporati di altri tipi.
+Ad esempio, nella query seguente **ClassA** include la proprietà **EmbeddedObj** tipiata in modo debole. La **classe ClassA** ha dieci istanze. Cinque di queste istanze hanno oggetti incorporati con un tipo derivato da **ClassZ**. Gli altri cinque hanno oggetti incorporati di altri tipi.
 
-Nell'esempio seguente viene illustrata la query che restituisce le cinque istanze di , che includono gli oggetti derivati da **ClassZ**.
+Nell'esempio seguente viene illustrata la query che restituisce le cinque istanze , che includono gli oggetti derivati da **ClassZ**.
 
 
 ```sql

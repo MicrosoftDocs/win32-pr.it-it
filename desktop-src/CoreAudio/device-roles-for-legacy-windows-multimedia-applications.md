@@ -14,13 +14,13 @@ ms.locfileid: "118406921"
 # <a name="device-roles-for-legacy-windows-multimedia-applications"></a>Ruoli del dispositivo per applicazioni multimediali Windows legacy
 
 > [!Note]  
-> L'API MMDevice supporta i ruoli del dispositivo. Tuttavia, l'interfaccia utente in Windows Vista non implementa il supporto per questa funzionalità. Il supporto dell'interfaccia utente per i ruoli del dispositivo potrebbe essere implementato in una versione futura di Windows. Per altre informazioni, vedere [Ruoli del dispositivo in Windows Vista](device-roles-in-windows-vista.md).
+> L'API MMDevice supporta i ruoli del dispositivo. Tuttavia, l'interfaccia utente in Windows Vista non implementa il supporto per questa funzionalità. Il supporto dell'interfaccia utente per i ruoli dispositivo potrebbe essere implementato in una versione futura di Windows. Per altre informazioni, vedere [Ruoli del dispositivo in Windows Vista.](device-roles-in-windows-vista.md)
 
  
 
-Le funzioni **waveOutXxx** e **waveInXxx** Windows legacy non consentono a un'applicazione di selezionare il dispositivo [endpoint audio](audio-endpoint-devices.md) assegnato dall'utente a un particolare [ruolo del dispositivo.](device-roles.md) Tuttavia, in Windows Vista, le API audio di base possono essere usate insieme a un'applicazione multimediale Windows per abilitare la selezione dei dispositivi in base al ruolo del dispositivo. Ad esempio, con [l'AIUTO dell'API MMDevice,](mmdevice-api.md)un'applicazione **waveOutXxx** può identificare il dispositivo endpoint audio assegnato a un ruolo, identificare il dispositivo di output della forma d'onda corrispondente e chiamare la funzione **waveOutOpen** per aprire un'istanza del dispositivo. Per altre informazioni su **waveOutXxx** e **waveInXxx,** vedere la documentazione Windows SDK.
+Le funzioni legacy Windows multimediali **waveOutXxx** e **waveInXxx** non consentono a un'applicazione di selezionare il dispositivo [endpoint audio](audio-endpoint-devices.md) assegnato dall'utente a un ruolo [di dispositivo specifico.](device-roles.md) Tuttavia, in Windows Vista, le API audio di base possono essere usate in combinazione con un'applicazione multimediale Windows per abilitare la selezione dei dispositivi in base al ruolo del dispositivo. Ad esempio, con [l'aiuto dell'API MMDevice](mmdevice-api.md), un'applicazione **waveOutXxx** può identificare il dispositivo endpoint audio assegnato a un ruolo, identificare il dispositivo di output waveform corrispondente e chiamare la funzione **waveOutOpen** per aprire un'istanza del dispositivo. Per altre informazioni su **waveOutXxx** e **waveInXxx,** vedere la documentazione Windows SDK.
 
-L'esempio di codice seguente illustra come ottenere l'ID dispositivo waveform per il dispositivo endpoint di rendering assegnato a un ruolo del dispositivo specifico:
+L'esempio di codice seguente mostra come ottenere l'ID dispositivo waveform per il dispositivo endpoint di rendering assegnato a un particolare ruolo di dispositivo:
 
 
 ```C++
@@ -147,21 +147,21 @@ Exit:
 
 
 
-Nell'esempio di codice precedente la funzione GetWaveOutId accetta un ruolo del dispositivo (eConsole, eMultimedia o eCommunications) come parametro di input. Il secondo parametro è un puntatore tramite il quale la funzione scrive l'ID dispositivo della forma d'onda per il dispositivo di output della forma d'onda assegnato al ruolo specificato. L'applicazione può quindi chiamare **waveOutOpen** con questo ID per aprire il dispositivo.
+Nell'esempio di codice precedente la funzione GetWaveOutId accetta un ruolo del dispositivo (eConsole, eMultimedia o eCommunications) come parametro di input. Il secondo parametro è un puntatore tramite il quale la funzione scrive l'ID dispositivo waveform per il dispositivo di output waveform assegnato al ruolo specificato. L'applicazione può quindi **chiamare waveOutOpen** con questo ID per aprire il dispositivo.
 
-Il ciclo main nell'esempio di codice precedente contiene due chiamate alla **funzione waveOutMessage.** La prima chiamata invia un messaggio DRV QUERYFUNCTIONINSTANCEIDSIZE per recuperare le dimensioni, in byte, della stringa di ID endpoint del dispositivo waveform identificato dal \_ *parametro waveOutId.* [](endpoint-id-strings.md) La stringa dell'ID endpoint identifica il dispositivo endpoint audio alla base dell'astrazione del dispositivo waveform. La dimensione segnalata da questa chiamata include lo spazio per il carattere Null di terminazione alla fine della stringa. Il programma può usare le informazioni sulle dimensioni per allocare un buffer sufficientemente grande da contenere l'intera stringa di ID endpoint.
+Il ciclo main nell'esempio di codice precedente contiene due chiamate alla **funzione waveOutMessage.** La prima chiamata invia un messaggio DRV QUERYFUNCTIONINSTANCEIDSIZE per recuperare le dimensioni, in byte, della stringa dell'ID endpoint del dispositivo waveform identificato dal \_ *parametro waveOutId.* [](endpoint-id-strings.md) La stringa dell'ID endpoint identifica il dispositivo endpoint audio alla base dell'astrazione del dispositivo waveform. La dimensione segnalata da questa chiamata include lo spazio per il carattere Null di terminazione alla fine della stringa. Il programma può usare le informazioni sulle dimensioni per allocare un buffer sufficientemente grande da contenere l'intera stringa di ID endpoint.
 
-La seconda chiamata a **waveOutMessage** invia un messaggio DRV QUERYFUNCTIONINSTANCEID per recuperare la stringa id dispositivo del \_ dispositivo di output della forma d'onda. Il codice di esempio confronta questa stringa con la stringa ID dispositivo del dispositivo endpoint audio con il ruolo del dispositivo specificato. Se le stringhe corrispondono, la funzione scrive l'ID dispositivo waveform nella posizione a cui punta il *parametro pWaveOutId*. Il chiamante può usare questo ID per aprire il dispositivo di output waveform con il ruolo del dispositivo specificato.
+La seconda chiamata a **waveOutMessage** invia un messaggio DRV QUERYFUNCTIONINSTANCEID per recuperare la stringa ID dispositivo del \_ dispositivo di output waveform. Il codice di esempio confronta questa stringa con la stringa ID dispositivo del dispositivo endpoint audio con il ruolo del dispositivo specificato. Se le stringhe corrispondono, la funzione scrive l'ID dispositivo waveform nella posizione a cui punta *il parametro pWaveOutId*. Il chiamante può usare questo ID per aprire il dispositivo di output waveform con il ruolo di dispositivo specificato.
 
-Windows Vista supporta i messaggi DRV \_ QUERYFUNCTIONINSTANCEIDSIZE e DRV \_ QUERYFUNCTIONINSTANCEID. Non sono supportate nelle versioni precedenti di Windows, tra cui Windows Server 2003, Windows XP e Windows 2000.
+Windows Vista supporta i messaggi DRV \_ QUERYFUNCTIONINSTANCEIDSIZE e DRV \_ QUERYFUNCTIONINSTANCEID. Non sono supportati nelle versioni precedenti di Windows, tra cui Windows Server 2003, Windows XP e Windows 2000.
 
-La funzione nell'esempio di codice precedente ottiene l'ID dispositivo waveform per un dispositivo di rendering, ma, con alcune modifiche, può essere adattata per ottenere l'ID dispositivo waveform per un dispositivo di acquisizione. L'applicazione può quindi chiamare **waveInOpen** con questo ID per aprire il dispositivo. Per modificare l'esempio di codice precedente per ottenere l'ID dispositivo waveform per il dispositivo endpoint di acquisizione audio assegnato a un ruolo specifico, eseguire le operazioni seguenti:
+La funzione nell'esempio di codice precedente ottiene l'ID dispositivo waveform per un dispositivo di rendering, ma, con alcune modifiche, può essere adattata per ottenere l'ID dispositivo waveform per un dispositivo di acquisizione. L'applicazione può quindi **chiamare waveInOpen** con questo ID per aprire il dispositivo. Per modificare l'esempio di codice precedente per ottenere l'ID dispositivo waveform per il dispositivo endpoint di acquisizione audio assegnato a un ruolo specifico, eseguire le operazioni seguenti:
 
--   Sostituire tutte le chiamate **di funzione waveOutXxx** nell'esempio precedente con le chiamate di funzione **waveInXxx** corrispondenti.
+-   Sostituire tutte le chiamate di **funzione waveOutXxx** nell'esempio precedente con le chiamate di **funzione waveInXxx** corrispondenti.
 -   Modificare il tipo di handle HWAVEOUT in HWAVEIN.
 -   Sostituire la costante di enumerazione [**ERole**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole) eRender con eCapture.
 
-In Windows Vista, le funzioni **waveOutOpen** e **waveInOpen** assegnano sempre i flussi audio creati alla sessione predefinita, ovvero la sessione specifica del processo identificata dal valore GUID della sessione GUID \_ NULL.
+In Windows Vista le funzioni **waveOutOpen** e **waveInOpen** assegnano sempre i flussi audio creati alla sessione predefinita, ovvero la sessione specifica del processo identificata dal valore GUID della sessione GUID \_ NULL.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

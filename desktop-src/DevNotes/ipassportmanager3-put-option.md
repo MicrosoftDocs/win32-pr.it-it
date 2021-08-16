@@ -1,7 +1,7 @@
 ---
-description: Imposta un'opzione di accesso Microsoft .NET Passport specifica.
+description: Imposta una specifica Microsoft .NET'opzione di accesso Passport.
 ms.assetid: 5ec79faa-1c74-42a4-b964-ea15edacda79
-title: IPassportManager3::p ut_Option metodo
+title: Metodo IPassportManager3::p ut_Option
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 52a1324c4b1a04a207b5bccac1a95bcd060be8ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 92a1c432df3f3948a85205e26da64073722ba84dd365ebdcaccf3b80521c517c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827212"
 ---
-# <a name="ipassportmanager3put_option-method"></a>IPassportManager3: \_ Metodo Option ut:p
+# <a name="ipassportmanager3put_option-method"></a>Metodo IPassportManager3::p ut \_ Option
 
-Imposta un'opzione di accesso Microsoft .NET Passport specifica.
+Imposta una specifica Microsoft .NET'opzione di accesso Passport.
 
 > [!Note]  
-> Il metodo **put \_ Option** appartiene all'interfaccia [**IPassportManager3**](/previous-versions/ms817681(v=msdn.10)) . Questo argomento integra la documentazione iniziale.
+> Il **metodo \_ put Option** appartiene all'interfaccia [**IPassportManager3.**](/previous-versions/ms817681(v=msdn.10)) Questo argomento integra la documentazione iniziale.
 
  
 
@@ -54,13 +54,13 @@ Opzione di accesso da impostare. Attualmente, l'unica opzione supportata è iMod
 *newVal* 
 </dt> <dd>
 
-**Variant** (VT \_ bool) che specifica il nuovo valore per l'opzione. Questo valore può essere true o false.
+VARIANT  (VT \_ BOOL) che specifica il nuovo valore per l'opzione. Questo valore può essere True o False.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK quando il metodo ha esito positivo.
+Restituisce S \_ OK quando il metodo ha esito positivo.
 
 ## <a name="remarks"></a>Commenti
 

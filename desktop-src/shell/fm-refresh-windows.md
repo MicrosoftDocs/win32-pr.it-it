@@ -44,7 +44,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Le modifiche al file system causate da un'estensione vengono rilevate automaticamente da File Manager. Un'estensione deve usare questo messaggio solo in situazioni in cui le connessioni alle unità vengono effettuate o annullate.
+Le modifiche al file system causate da un'estensione vengono rilevate automaticamente da File Manager. Un'estensione deve usare questo messaggio solo in situazioni in cui le connessioni all'unità vengono effettuate o annullate.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,17 +1,17 @@
 ---
 description: Specifica il flag di copyright in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 0fe02acb-cdac-4b6c-8835-6e338727973f
-title: Proprietà AVEncDDCopyright (codecapis. h)
+title: Proprietà AVEncDDCopyright (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43bea391d924483ff5a4c0c38dccb7ff6b2f6886
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8b70258b75b302229c50ec6e093084e6bbedbfadd8867049d37b0f2a61c79e50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403763"
 ---
-# <a name="avencddcopyright-property"></a>Proprietà AVEncDDCopyright
+# <a name="avencddcopyright-property"></a>AVEncDDCopyright - proprietà
 
 Specifica il flag di copyright in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
@@ -19,11 +19,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDCopyright**
+**CODECAPI \_ AVEncDDCopyright**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

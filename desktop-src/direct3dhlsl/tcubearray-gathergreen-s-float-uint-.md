@@ -1,6 +1,6 @@
 ---
 title: Funzione TextureCubeArray::GatherGreen(S,float,uint)
-description: Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri. | Funzione TextureCubeArray::GatherGreen(S,float,uint)
+description: Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni. | Funzione TextureCubeArray::GatherGreen(S,float,uint)
 ms.assetid: 0DEB1810-F2C7-4097-B2D3-20ED4E297561
 keywords:
 - Funzione GatherGreen HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118506500"
 ---
 # <a name="texturecubearraygathergreensfloatuint-function"></a>Funzione TextureCubeArray::GatherGreen(S,float,uint)
 
-Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.
+Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ Coordinate di esempio (u,v).
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 

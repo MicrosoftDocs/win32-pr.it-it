@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETWORKAREAS (COMmctrl. h)
-description: Imposta le aree di lavoro all'interno di un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro SetWorkAreas di ListView.
+title: LVM_SETWORKAREAS messaggio (Commctrl.h)
+description: Imposta le aree di lavoro all'interno di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView SetWorkAreas.
 ms.assetid: 87ac192d-f481-43ac-b8a5-c754cf33e487
 keywords:
-- Controlli di Windows Message LVM_SETWORKAREAS
+- LVM_SETWORKAREAS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4166238c97b5766a5f2bbb19e0de853526d83385
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f1060377fd9aec9014d18d206444355b052f4aafb796403e3e47fa92a0a7aaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830662"
 ---
-# <a name="lvm_setworkareas-message"></a>\_Messaggio SETWORKAREAS LVM
+# <a name="lvm_setworkareas-message"></a>Messaggio LVM \_ SETWORKAREAS
 
-Imposta le aree di lavoro all'interno di un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ SetWorkAreas di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setworkareas) .
+Imposta le aree di lavoro all'interno di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView SetWorkAreas.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setworkareas)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Imposta le aree di lavoro all'interno di un controllo di visualizzazione elenco.
 *wParam* 
 </dt> <dd>
 
-Numero di strutture nella matrice in corrispondenza di *LPRC*. Il numero massimo di aree di lavoro consentito è definito dal \_ valore LV Max \_ WORKAREAS.
+Numero di strutture nella matrice in *corrispondenza di lprc*. Il numero massimo di aree di lavoro consentite è definito dal valore LV \_ MAX \_ WORKAREAS.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**Rect**](/previous-versions//dd162897(v=vs.85)) che contengono le nuove aree di lavoro del controllo visualizzazione elenco. I valori in queste strutture si trovano nelle coordinate del client. Se questo parametro è **null**, l'area di lavoro verrà impostata sull'area client del controllo. *wParam* specifica il numero di strutture in questa matrice.
+Puntatore a una matrice di [**strutture RECT**](/previous-versions//dd162897(v=vs.85)) che contengono le nuove aree di lavoro del controllo visualizzazione elenco. I valori in queste strutture sono in coordinate client. Se questo parametro è **NULL,** l'area di lavoro verrà impostata sull'area client del controllo. *wParam* specifica il numero di strutture in questa matrice.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questo messaggio non viene utilizzato.
+Il valore restituito per questo messaggio non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 <dl> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso dei List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

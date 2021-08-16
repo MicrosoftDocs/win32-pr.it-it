@@ -26,7 +26,7 @@ FROM [machinename.]SystemIndex
 
 
 
-Di seguito viene illustrata la parte della colonna della sintassi dell'istruzione SELECT:
+Di seguito viene illustrata la parte di colonna della sintassi dell'istruzione SELECT:
 
 
 ```
@@ -44,7 +44,7 @@ Gli identificatori di colonna devono essere colonne di nomi di proprietà valide
 
 Quando la query restituisce un documento che non dispone della colonna richiesta, il valore di tale colonna per il documento è **NULL.**
 
-È necessario specificare almeno un nome di colonna in un'istruzione SELECT. Nella query Structured Query Language (SQL) è possibile usare l'asterisco ( ) per specificare che devono essere restituite tutte \* le colonne di una tabella. Tuttavia, nessun set definito e fisso di proprietà si applica a tutti i documenti. Per questo motivo, l SQL'asterisco non è consentito <columns> nell'identificatore dell'istruzione SELECT.
+È necessario specificare almeno un nome di colonna in un'istruzione SELECT. Nella query Structured Query Language (SQL) è possibile usare l'asterisco ( ) per specificare che devono essere restituite tutte \* le colonne di una tabella. Tuttavia, nessun set definito e fisso di proprietà si applica a tutti i documenti. Per questo motivo, l'SQL asterisco non è consentito <columns> nell'identificatore dell'istruzione SELECT.
 
 ## <a name="getting-the-top-n-results"></a>Recupero dei primi n risultati
 
@@ -63,7 +63,7 @@ A volte potrebbe essere necessario eseguire il cast dei dati stringa estratti da
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti restituiscono il nome e l'URL dei documenti corrispondenti.
+Negli esempi seguenti vengono restituiti il nome e l'URL dei documenti corrispondenti.
 
 
 ```

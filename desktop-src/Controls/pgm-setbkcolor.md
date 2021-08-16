@@ -1,9 +1,9 @@
 ---
-title: Messaggio PGM_SETBKCOLOR (COMmctrl. h)
-description: Imposta il colore di sfondo corrente per il controllo pager. È possibile inviare questo messaggio in modo esplicito o utilizzare la \_ macro SetBkColor del cercapersone.
+title: PGM_SETBKCOLOR messaggio (Commctrl.h)
+description: Imposta il colore di sfondo corrente per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Pager SetBkColor.
 ms.assetid: 720a25d7-3854-4f28-b227-bafab7b1e8c9
 keywords:
-- Controlli di Windows Message PGM_SETBKCOLOR
+- PGM_SETBKCOLOR dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9e8dc1c0cad3e60bdde3f3c05d77d8c57b98ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d727bf401fae3b8c58b96fe8b5190a3ad427abb40b0478d59de087add553ddf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830182"
 ---
-# <a name="pgm_setbkcolor-message"></a>\_Messaggio SETBKCOLOR PGM
+# <a name="pgm_setbkcolor-message"></a>Messaggio PGM \_ SETBKCOLOR
 
-Imposta il colore di sfondo corrente per il controllo pager. È possibile inviare questo messaggio in modo esplicito o utilizzare la macro [**\_ SetBkColor del cercapersone**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbkcolor) .
+Imposta il colore di sfondo corrente per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Pager SetBkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbkcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,17 +35,17 @@ Imposta il colore di sfondo corrente per il controllo pager. È possibile inviar
 *lParam* 
 </dt> <dd>
 
-Valore **COLORREF** che contiene il nuovo colore di sfondo del controllo pager.
+**Valore COLORREF** che contiene il nuovo colore di sfondo del controllo pager.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **COLORREF** che contiene il colore di sfondo precedente.
+Restituisce un **valore COLORREF** che contiene il colore di sfondo precedente.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il controllo pager utilizzerà il colore della superficie del pulsante di sistema come colore di sfondo. Si tratta dello stesso colore che può essere recuperato chiamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) con il colore \_ BTNFACE.
+Per impostazione predefinita, il controllo pager userà il colore del viso del pulsante di sistema come colore di sfondo. Questo è lo stesso colore che può essere recuperato chiamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) con COLOR \_ BTNFACE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Per impostazione predefinita, il controllo pager utilizzerà il colore della sup
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

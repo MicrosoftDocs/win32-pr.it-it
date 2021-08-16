@@ -1,23 +1,23 @@
 ---
 description: Questo argomento include un esempio di codice che illustra come registrare una finestra locale e usarla per creare una finestra principale.
 ms.assetid: ea9e36c9-b10d-441e-b1b5-1ab93e009e1d
-title: Uso delle classi finestra
+title: Uso delle classi window
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d23f49e431aa6f980d16fc7a9df5c4f98951498
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ac7edfaf89ee336534e2cca8e25a3222b3fddd159fa6c52d34a3832a44f03a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849577"
 ---
-# <a name="using-window-classes"></a>Uso delle classi finestra
+# <a name="using-window-classes"></a>Uso delle classi window
 
 Questo argomento include un esempio di codice che illustra come registrare una finestra locale e usarla per creare una finestra principale.
 
-Ogni processo deve registrare le proprie classi di finestra. Per registrare una classe locale dell'applicazione, usare la funzione [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa) . È necessario definire la routine della finestra, compilare i membri della struttura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) e quindi passare un puntatore alla struttura alla funzione **RegisterClassEx** .
+Ogni processo deve registrare le proprie classi finestra. Per registrare una classe locale dell'applicazione, usare la [**funzione RegisterClassEx.**](/windows/win32/api/winuser/nf-winuser-registerclassexa) È necessario definire la routine window, compilare i membri della struttura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) e quindi passare un puntatore alla struttura alla **funzione RegisterClassEx.**
 
-Nell'esempio seguente viene illustrato come registrare una classe della finestra locale e usarla per creare una finestra principale.
+L'esempio seguente illustra come registrare una classe di finestra locale e usarla per creare una finestra principale.
 
 
 ```
@@ -129,7 +129,7 @@ BOOL InitInstance(HINSTANCE hinstance, int nCmdShow)
 
 
 
-La registrazione di una classe globale dell'applicazione è simile alla registrazione di una classe locale dell'applicazione, ad eccezione del fatto che il membro dello **stile** della struttura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) deve specificare lo stile **cs \_ GLOBALCLASS** .
+La registrazione di una classe globale dell'applicazione è simile  alla registrazione di una classe locale dell'applicazione, con la differenza che il membro di stile della struttura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) deve specificare lo stile **CS \_ GLOBALCLASS.**
 
  
 

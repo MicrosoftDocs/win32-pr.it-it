@@ -1,6 +1,6 @@
 ---
-title: Guida per gli sviluppatori per i Active Accessibility server
-description: Guida per gli sviluppatori per i Active Accessibility server
+title: Guida per gli sviluppatori per Active Accessibility server
+description: Guida per gli sviluppatori per Active Accessibility server
 ms.assetid: 5ecf34dd-aab4-4fae-80a9-1086d92839f2
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118325438"
 ---
-# <a name="developers-guide-for-active-accessibility-servers"></a>Guida per gli sviluppatori per i Active Accessibility server
+# <a name="developers-guide-for-active-accessibility-servers"></a>Guida per gli sviluppatori per Active Accessibility server
 
 In questa sezione vengono fornite informazioni per gli sviluppatori di server che usano Microsoft Active Accessibility per esporre informazioni sugli elementi dell'interfaccia utente di un'applicazione.
 

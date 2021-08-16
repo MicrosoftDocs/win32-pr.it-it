@@ -73,9 +73,9 @@ Numero di caratteri elaborati.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo preferito è usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) insieme al livello Microsoft per Unicode (MSLU).
+Il metodo preferito è usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) in combinazione con Microsoft Layer for Unicode (MSLU).
 
-**CharUpperBuffWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando l'ordinale 44.
+**CharUpperBuffWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando il numero ordinale 44.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Il metodo preferito è usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5.0 o successiva)</dt> </dl> |
 
 

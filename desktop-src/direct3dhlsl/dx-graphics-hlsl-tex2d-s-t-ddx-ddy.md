@@ -90,7 +90,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il controllo di flusso è presente in uno shader, il risultato di un calcolo della sfumatura richiesto all'interno di un determinato percorso di ramo è ambiguo quando i pixel adiacenti possono scendere in percorsi di controllo di flusso separati. Pertanto, è considerato non valido usare qualsiasi operazione di pixel shader che richiede un calcolo della sfumatura in una posizione all'interno di un costrutto di controllo di flusso che può variare in pixel per una determinata primitiva da rasterizzarsi. Se su entrambi i lati di **un'istruzione if** con l'attributo branch viene utilizzata una funzione sfumatura, potrebbe essere generato un errore del compilatore. Vedere [l'istruzione if (DirectX HLSL)](dx-graphics-hlsl-if.md).
+Quando il controllo di flusso è presente in uno shader, il risultato di un calcolo della sfumatura richiesto all'interno di un determinato percorso di ramo è ambiguo quando i pixel adiacenti possono scendere in percorsi di controllo di flusso separati. Pertanto, è considerato non valido usare qualsiasi operazione di pixel shader che richiede un calcolo della sfumatura in una posizione all'interno di un costrutto di controllo di flusso che può variare in pixel per una determinata primitiva in fase di rasterizzato. Se su entrambi i lati di **un'istruzione if** con l'attributo branch viene utilizzata una funzione sfumatura, potrebbe essere generato un errore del compilatore. Vedere [l'istruzione if (DirectX HLSL)](dx-graphics-hlsl-if.md).
 
 ## <a name="see-also"></a>Vedi anche
 

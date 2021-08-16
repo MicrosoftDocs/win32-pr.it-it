@@ -5,7 +5,7 @@ ms.assetid: 5cb4b89f-b679-4d92-a5f9-5d0fe686775d
 keywords:
 - Metodo Item Windows Media Player
 - Metodo Item Windows Media Player, interfaccia IWMPPlaylistArray
-- Interfaccia IWMPPlaylistArray Windows Media Player , metodo Item
+- Interfaccia IWMPPlaylistArray Windows Media Player metodo , Item
 topic_type:
 - apiref
 api_name:
@@ -56,7 +56,7 @@ Implements IWMPPlaylistArray.Item
 *lIndex* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.Int32** contenente l'indice che identifica la playlist che il metodo deve recuperare.
+**System.Int32 contenente l'indice** che identifica la playlist che il metodo deve recuperare.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Interfaccia **WMPLib.IWMPPlaylist** per la playlist recuperata.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Prima di chiamare questo metodo, è necessario avere accesso in lettura alla lib
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successiva.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

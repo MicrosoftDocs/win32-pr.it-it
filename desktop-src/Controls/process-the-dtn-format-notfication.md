@@ -1,37 +1,37 @@
 ---
-title: Come elaborare la notifica di DTN_FORMAT
-description: In questo argomento viene illustrato come elaborare una notifica di formato inviata dal controllo di selezione data e ora (DTP).
+title: Come elaborare la DTN_FORMAT notifica
+description: In questo argomento viene illustrato come elaborare una notifica di formato inviata dal controllo selezione data e ora .
 ms.assetid: 7B559846-FE52-4181-B25D-888BE90EB038
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25271ff33ee6978ebcb0bc474492f884ed7faaa2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 070d1234dbd9d09159335539309deec86e2d3e1e05547d933cd18f16b9d7162d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103873122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829912"
 ---
-# <a name="how-to-process-the-dtn_format-notification"></a>Come elaborare la notifica del \_ formato DTN
+# <a name="how-to-process-the-dtn_format-notification"></a>Come elaborare la notifica DTN \_ FORMAT
 
-In questo argomento viene illustrato come elaborare una notifica di formato inviata dal controllo di selezione data e ora (DTP).
+In questo argomento viene illustrato come elaborare una notifica di formato inviata dal controllo selezione data e ora .
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Un controllo DTP Invia la notifica del [ \_ formato DTN](dtn-format.md) al testo della richiesta che verrà visualizzato in un campo di callback del controllo. L'applicazione deve gestire questa notifica per consentire al controllo DTP di visualizzare le informazioni che non supportano in modo nativo.
+Un controllo DTP invia la [notifica DTN \_ FORMAT](dtn-format.md) al testo della richiesta che verrà visualizzato in un campo di callback del controllo. L'applicazione deve gestire questa notifica per consentire al controllo DTP di visualizzare informazioni non supportate in modo nativo.
 
-Il seguente esempio di codice C++ è una funzione definita dall'applicazione (**DoFormat**) che elabora i codici di notifica del [ \_ formato DTN](dtn-format.md) fornendo una stringa di testo per un campo di callback. L'applicazione chiama la funzione definita dall'applicazione **GetDayNum** per richiedere il numero di giorno da usare nella stringa di callback.
+L'esempio di codice C++ seguente è una funzione definita dall'applicazione (**DoFormat**) che elabora i codici [di notifica DTN \_ FORMAT](dtn-format.md) fornendo una stringa di testo per un campo di callback. L'applicazione chiama la funzione definita dall'applicazione **GetDayNum** per richiedere il numero del giorno da usare nella stringa di callback.
 
 
 ```C++
@@ -63,7 +63,7 @@ else
 
 **Funzione definita dall'applicazione GetDayNum**
 
-La funzione di esempio definita dall'applicazione **DoFormat** chiama la seguente funzione definita dall'applicazione **GetDayNum** per richiedere il numero di giorno in base alla data corrente. **GetDayNum** restituisce un valore **int** che rappresenta il giorno corrente dell'anno, da 0 a 366. Questa funzione chiama un'altra funzione definita dall'applicazione, **IsLeapYr**, durante l'elaborazione.
+La funzione **doFormat** di esempio definita dall'applicazione chiama la funzione **getDayNum** definita dall'applicazione seguente per richiedere il numero di giorno in base alla data corrente. **GetDayNum** restituisce un **valore INT** che rappresenta il giorno corrente dell'anno, da 0 a 366. Questa funzione chiama un'altra funzione definita dall'applicazione, **IsLeapYr, durante** l'elaborazione.
 
 
 ```C++
@@ -94,7 +94,7 @@ int WINAPI GetDayNum(SYSTEMTIME *st)
 
 **Funzione definita dall'applicazione IsLeapYr**
 
-La funzione definita dall'applicazione **GetDayNum** chiama la funzione **IsLeapYr** per determinare se l'anno corrente è bisestile. **IsLeapYr** restituisce un valore **bool** che è **true** se è un anno bisestile e **false** in caso contrario.
+La funzione definita dall'applicazione **GetDayNum** chiama la **funzione IsLeapYr** per determinare se l'anno corrente è bisestile. **IsLeapYr restituisce** un **valore BOOL** **true** se si tratta di un anno bisestile e FALSE in **caso contrario.**
 
 
 ```C++
@@ -123,10 +123,10 @@ BOOL WINAPI IsLeapYr(int iYear)
 
 <dl> <dt>
 
-[Uso di controlli selezione data e ora](using-date-and-time-picker.md)
+[Uso dei controlli selezione data e ora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Riferimento al controllo selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Informazioni di riferimento sul controllo Selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
 [Selezione data e ora](date-and-time-picker-control-reference.md)

@@ -18,17 +18,17 @@ Come molte altre tecniche in Managed Object Format (MOF), l'applicazione di un q
 
 Le uniche sfide reali sono le restrizioni seguenti nelle convenzioni di denominazione applicate da WMI:
 
--   Un qualificatore può descrivere una classe, un'istanza, una proprietà, un metodo o un parametro del metodo.
+-   Un qualificatore può descrivere una classe, un'istanza, una proprietà, un metodo o un parametro di metodo.
 -   I nomi dei qualificatori non possono contenere caratteri di sottolineatura iniziali o finali.
 -   Un nome di qualificatore non può iniziare con una cifra.
 -   Un nome di qualificatore non può contenere caratteri speciali, ad esempio & \* @ ! ~ \\ /.
--   Per tutti i nomi dei qualificatori non viene fatto distinzione tra maiuscole e minuscole.
+-   Per tutti i nomi di qualificatore non viene fatto distinzione tra maiuscole e minuscole.
 -   Non è possibile ridefinire i qualificatori WMI standard o i qualificatori descritti nella specifica CIM DMTF.
--   I tipi qualificatori non vengono dichiarati in modo esplicito.
+-   I tipi di qualificatore non vengono dichiarati in modo esplicito.
 
-    Se non si dichiara un tipo qualificatore, WMI presuppone che il tipo sia booleano con valore **TRUE.** In caso contrario, wmi tipi di qualificatori in base ai valori del qualificatore dichiarati.
+    Se non si dichiara un tipo qualificatore, WMI presuppone che il tipo sia booleano con valore **TRUE**. In caso contrario, i qualificatori dei tipi WMI si basano sui valori del qualificatore dichiarati.
 
--   Quando si creano qualificatori personalizzati, è necessario antefisare il nome dello schema al nome del qualificatore.
+-   Quando si creano qualificatori personalizzati, è necessario antesare il nome dello schema al nome del qualificatore.
 
     Lo scopo di questa regola è evitare confusione con i nuovi qualificatori.
 
@@ -40,7 +40,7 @@ Le uniche sfide reali sono le restrizioni seguenti nelle convenzioni di denomina
     [StringArray{"hello", "there"}, SingleElementArray{3}]
     ```
 
--   WMI non supporta i tipi di automazione non elencati nel riferimento, ad esempio VT \_ NULL. Per altre informazioni, vedere [Tipi di dati MOF.](mof-data-types.md)
+-   WMI non supporta i tipi di automazione non elencati nel riferimento, ad esempio VT \_ NULL. Per altre informazioni, vedere [Tipi di dati MOF](mof-data-types.md).
 
 La procedura seguente consente di usare C++ per aggiungere un qualificatore a una proprietà.
 
@@ -56,7 +56,7 @@ La procedura seguente consente di applicare un qualificatore nei file MOF.
 
 -   Inserire un qualificatore tra parentesi prima della parola chiave o dell'identificatore descritto dal qualificatore.
 
-    Nell'esempio di codice seguente viene illustrato l'utilizzo dei qualificatori.
+    Nell'esempio di codice seguente viene illustrato come vengono usati i qualificatori.
 
     ``` syntax
     [qualifiers...]
@@ -69,7 +69,7 @@ La procedura seguente consente di applicare un qualificatore nei file MOF.
     };
     ```
 
-    Nell'esempio seguente viene descritto il posizionamento corretto dei qualificatori.
+    Nell'esempio seguente viene descritta la corretta posizione dei qualificatori.
 
     ``` syntax
     [Abstract]

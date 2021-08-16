@@ -4,12 +4,12 @@ ms.assetid: 0361b7da-bfb3-4880-b982-85d2fe419805
 title: Come personalizzare le cartelle con Desktop.ini
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a671b169c4b025683cdd220ee3a920b4d592488
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 23ec216bedfdee16e26f87070a0196d77a8db12c802d97b1449cd78001f51a16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859833"
 ---
 # <a name="how-to-customize-folders-with-desktopini"></a>Come personalizzare le cartelle con Desktop.ini
 
@@ -29,7 +29,7 @@ Le cartelle vengono in genere visualizzate con l'icona della cartella standard. 
 
 ### <a name="creating-a-desktopini-file"></a>Creazione di un Desktop.ini file
 
-Il Desktop.ini file è un file di testo che consente di specificare la modalità file system una cartella. Oggetto \[ . La sezione ShellClassInfo consente di personalizzare la visualizzazione della \] cartella assegnando valori a diverse voci:
+Il Desktop.ini file è un file di testo che consente di specificare la modalità file system visualizzazione di una cartella. Oggetto \[ . La sezione ShellClassInfo consente di personalizzare la visualizzazione della \] cartella assegnando valori a diverse voci:
 
 | Valore             | Descrizione                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,9 +48,9 @@ Le illustrazioni seguenti illustrano la cartella Musica con un file Desktop.ini 
 -   Ha un'icona personalizzata.
 -   Se la cartella viene spostata o eliminata, non viene visualizzato l'avviso "Si sta eliminando una cartella di sistema".
 -   Non può essere condivisa.
--   Visualizza testo informativo quando il cursore passa il mouse sulla cartella.
+-   Visualizza testo informativo quando il cursore passa sulla cartella.
 
-Le opzioni della cartella nelle illustrazioni seguenti sono impostate per visualizzare i file nascosti in modo che Desktop.ini visibile. La cartella è simile alla seguente:
+Le opzioni della cartella nelle illustrazioni seguenti sono impostate per visualizzare i file nascosti in modo che Desktop.ini visibili. La cartella è simile alla seguente:
 
 ![Screenshot della cartella con l'icona personalizzata](images/webview4.jpg)
 
@@ -62,7 +62,7 @@ L'icona personalizzata sostituisce l'icona della cartella ovunque venga visualiz
 
 ![Screenshot dell'icona personalizzata che sostituisce l'icona della cartella](images/webview5.jpg)
 
-Il file desktop.ini seguente è stato usato per personalizzare la Musica, come illustrato nelle illustrazioni precedenti.
+Il file desktop.ini seguente è stato usato per personalizzare Musica cartella, come illustrato nelle illustrazioni precedenti.
 
 
 ```

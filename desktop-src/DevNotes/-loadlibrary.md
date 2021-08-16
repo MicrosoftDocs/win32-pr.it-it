@@ -1,7 +1,7 @@
 ---
 description: Carica una libreria.
 ms.assetid: 191fcbd8-4542-4cad-955e-6951f3005fc5
-title: Funzione _LoadLibrary
+title: _LoadLibrary funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: ce4502813c1ca2a292486a18f1946f4c605c96cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67755d96d87530f450627714de7c1526750967b87bdf51901b788662c4534045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827982"
 ---
-# <a name="_loadlibrary-function"></a>\_LoadLibrary (funzione)
+# <a name="_loadlibrary-function"></a>\_Funzione LoadLibrary
 
-\[Questa funzione è un wrapper della funzione **LoadLibrary** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **LoadLibrary** direttamente.\]
+\[Questa funzione è un wrapper sulla **funzione LoadLibrary.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **direttamente LoadLibrary.**\]
 
-Carica una libreria. Vedere [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya).
+Carica una libreria. Vedere [**LoadLibrary.**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_MoreColorsLabel
-description: Identifica la proprietà \_ UI PKEY \_ MoreColorsLabel.
+description: Identifica la proprietà \_ \_ MoreColorsLabel dell'interfaccia utente PKEY.
 ms.assetid: 69057320-b9b4-4022-baf2-f44247bfdae2
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117850231"
 ---
 # <a name="ui_pkey_morecolorslabel"></a>UI \_ PKEY \_ MoreColorsLabel
 
-Identifica la proprietà \_ UI PKEY \_ MoreColorsLabel.
+Identifica la proprietà \_ \_ MoreColorsLabel dell'interfaccia utente PKEY.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-UI PKEY MoreColorsLabel viene usato da un'applicazione per eseguire query sul valore dell'etichetta associata al pulsante Altri colori \_ \_ di un controllo [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
+L'interfaccia utente PKEY MoreColorsLabel viene usata da un'applicazione per eseguire una query sul valore dell'etichetta associata al pulsante \_ Altri colori di un controllo \_ [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
 
 UI PKEY MoreColorsLabel è valida solo per \_ \_ un controllo [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) in cui o è specificato come valore `ThemeColors` `StandardColors` **dell'attributo ColorTemplate.**
 

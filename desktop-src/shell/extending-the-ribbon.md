@@ -18,7 +18,7 @@ ms.locfileid: "117860852"
 ---
 # <a name="extending-the-ribbon"></a>Estensione della barra multifunzione
 
-In Windows Explorer, la barra multifunzione consente di semplificare e individuare le attività comuni di gestione dei file degli utenti finali, ma sono presenti modifiche per gli sviluppatori di app. Ad esempio, la barra dei comandi precedente era liberamente estendibile, ma al momento la barra multifunzione è più limitata. Inoltre, la barra multifunzione non viene visualizzata per impostazione predefinita per tutte le estensioni dello spazio dei nomi, quindi è necessario acconsentire esplicitamente per ottenere la barra multifunzione. In caso contrario, si ottiene la barra dei comandi precedente.
+In Windows, la barra multifunzione consente di semplificare e individuare le attività comuni di gestione dei file degli utenti finali, ma sono state apportate modifiche per gli sviluppatori di app. Ad esempio, la barra dei comandi precedente era liberamente estendibile, ma al momento la barra multifunzione è più limitata. Inoltre, la barra multifunzione non viene visualizzata per impostazione predefinita per tutte le estensioni dello spazio dei nomi, pertanto è necessario acconsentire esplicitamente per ottenere la barra multifunzione. In caso contrario, si ottiene la barra dei comandi precedente.
 
 Le azioni disponibili per gli utenti sulla barra multifunzione rientrano in tre categorie di estendibilità:
 
@@ -37,7 +37,7 @@ Per acconsentire esplicitamente alla barra multifunzione, l'implementazione [**d
 Questi pulsanti della barra multifunzione sono estendibili in base alle estensioni di file:
 
 -   Estrai tutto
--   Mount \| Burn (iso)
+-   Montare \| la masterizzazione (iso)
 -   Riproduci \| tutto Aggiungi a playlist \| (verbo: Accodamento)
 -   Apri
 -   Modifica

@@ -1,36 +1,36 @@
 ---
-title: Come usare i metodi di tabulazione in TOM
-description: Nell'esempio seguente vengono fornite le funzioni C che illustrano l'utilizzo dei metodi di tabulazione nel modello a oggetti di testo (TOM).
+title: Come usare i metodi delle schede in TOM
+description: Nell'esempio seguente vengono fornite funzioni C che illustrano l'uso dei metodi tab nel modello a oggetti di testo (TOM).
 ms.assetid: C74B4E43-615D-48B9-9884-F626BAF31F74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9851b30fdf58c0d4200600c0c4c83c7f9a00a555
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 654b4a101c2deb3c22993f41b11ee94df6ac738da41963046f02a072f3eaa6a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103872227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828613"
 ---
-# <a name="how-to-use-tab-methods-in-tom"></a>Come usare i metodi di tabulazione in TOM
+# <a name="how-to-use-tab-methods-in-tom"></a>Come usare i metodi delle schede in TOM
 
-Nell'esempio seguente vengono fornite le funzioni C che illustrano l'utilizzo dei metodi di tabulazione nel modello a oggetti di testo (TOM). Si presuppone che la maggior parte delle applicazioni includa una barra degli strumenti che mostra la posizione corrente e il tipo delle schede per il paragrafo attualmente selezionato.
+Nell'esempio seguente vengono fornite funzioni C che illustrano l'uso dei metodi tab nel modello a oggetti di testo (TOM). Si presuppone che la maggior parte delle applicazioni includa una barra degli strumenti che mostra la posizione corrente e il tipo di tabulazione per il paragrafo attualmente selezionato.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="use-a-tab-method"></a>Usare un metodo Tab
 
-Nell'esempio di codice riportato di seguito viene illustrato come aggiornare una barra degli strumenti con i dettagli della scheda corrente.
+Nell'esempio di codice seguente viene illustrato come aggiornare una barra degli strumenti con i dettagli della scheda corrente.
 
 
 ```C++
@@ -68,9 +68,9 @@ cleanup:
 
 
 
-### <a name="copy-tab-information"></a>Copia informazioni scheda
+### <a name="copy-tab-information"></a>Copiare le informazioni della scheda
 
-Nell'esempio seguente viene illustrato come copiare solo le informazioni di tabulazione da un'interfaccia [**ITextPara**](/windows/desktop/api/Tom/nn-tom-itextpara) a un'altra. Accetta due parametri: **ITextPara** \* *pParaFrom* (il paragrafo da cui copiare le schede) e **ITextPara** \* *pParaFrom* (il paragrafo in cui copiare le schede).
+Nell'esempio seguente viene illustrato come copiare solo le informazioni sulla scheda da [**un'interfaccia ITextPara**](/windows/desktop/api/Tom/nn-tom-itextpara) a un'altra. Accetta due parametri: **ITextPara pParaFrom** (il paragrafo da cui copiare le tabulazioni) e \*  **ITextPara** \* *pParaFrom* (il paragrafo in cui copiare le tabulazioni).
 
 
 ```C++
@@ -101,15 +101,15 @@ HRESULT CopyOnlyTabs(ITextPara *pParaFrom, ITextPara *pParaTo)
 [Uso del modello a oggetti di testo](using-the-text-object-model.md)
 </dt> <dt>
 
-[Uso di controlli Rich Edit](using-rich-edit-controls.md)
+[Uso dei controlli Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

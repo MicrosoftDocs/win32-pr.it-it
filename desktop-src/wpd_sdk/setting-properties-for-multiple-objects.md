@@ -4,16 +4,16 @@ ms.assetid: 0686ba54-4782-42a4-8fdb-2325fc8d8bc2
 title: Impostazione delle proprietà per più oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e951662d9920cb22db0a417f1af94f3eb7eb4d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14517e26843265d8273785657e98b691c155821c10f57b92d53e374c20d34ede
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842683"
 ---
 # <a name="setting-properties-for-multiple-objects"></a>Impostazione delle proprietà per più oggetti
 
-Alcuni driver di dispositivo supportano l'impostazione di proprietà per più oggetti in una singola chiamata di funzione. questa operazione viene definita scrittura in blocco. L'applicazione può eseguire una scrittura bulk usando le interfacce descritte nella tabella seguente.
+Alcuni driver di dispositivo supportano l'impostazione di proprietà per più oggetti in una singola chiamata di funzione, definita scrittura bulk. L'applicazione può eseguire una scrittura bulk usando le interfacce descritte nella tabella seguente.
 
 
 
@@ -22,16 +22,16 @@ Alcuni driver di dispositivo supportano l'impostazione di proprietà per più og
 | [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Fornisce l'accesso ai metodi specifici del contenuto.             |
 | [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Fornisce l'accesso ai metodi specifici della proprietà.            |
 | [**Interfaccia IPortableDevicePropertiesBulk**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)               | Supporta l'operazione di scrittura bulk.                           |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per archiviare gli identificatori di oggetto per l'operazione bulk. |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per archiviare gli identificatori di oggetto per l'operazione in blocco. |
 | [**Interfaccia IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)           | Utilizzato per identificare le proprietà da scrivere.               |
 
 
 
  
 
-La `WriteContentPropertiesBulk` funzione nel modulo ContentProperties. cpp dell'applicazione di esempio illustra un'operazione di scrittura bulk.
+La `WriteContentPropertiesBulk` funzione nel modulo ContentProperties.cpp dell'applicazione di esempio illustra un'operazione di scrittura bulk.
 
-La prima attività eseguita in questo esempio è determinare se il driver specificato supporta le operazioni bulk. Questa operazione viene eseguita chiamando QueryInterface su un oggetto **IPortableDeviceProperties** e verificando l'esistenza di **IPortableDevicePropertiesBulk**.
+La prima attività eseguita in questo esempio è determinare se il driver specificato supporta o meno le operazioni bulk. Questa operazione viene eseguita chiamando QueryInterface su un **oggetto IPortableDeviceProperties** e verificando l'esistenza di **IPortableDevicePropertiesBulk**.
 
 
 ```C++
@@ -79,7 +79,7 @@ if (SUCCEEDED(hr))
 
 
 
-L'attività successiva comporta la creazione di un oggetto **IPortableDeviceValuesCollection** . Si tratta dell'oggetto che contiene i valori delle proprietà che verrà scritto dall'esempio.
+L'attività successiva comporta la creazione di **un oggetto IPortableDeviceValuesCollection.** Si tratta dell'oggetto che contiene i valori delle proprietà che verranno scrivere nell'esempio.
 
 
 ```C++
@@ -109,7 +109,7 @@ if (SUCCEEDED(hr))
 
 
 
-Successivamente, l'esempio crea un'istanza dell' [**interfaccia IPortableDevicePropertiesBulkCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk). L'applicazione utilizzerà i metodi in questa interfaccia per tenere traccia dello stato di avanzamento dell'operazione di scrittura bulk asincrona.
+Successivamente, l'esempio crea un'istanza [**dell'interfaccia IPortableDevicePropertiesBulkCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk). L'applicazione userà i metodi in questa interfaccia per tenere traccia dello stato di avanzamento dell'operazione asincrona di scrittura bulk.
 
 
 ```C++
@@ -136,7 +136,7 @@ if (SUCCEEDED(hr))
 
 
 
-La funzione successiva chiamata dall'applicazione di esempio è la `CreateIPortableDevicePropVariantCollectionWithAllObjectIDs` funzione di supporto. Questa funzione enumera in modo ricorsivo tutti gli oggetti in un determinato dispositivo e restituisce un' [**interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene un identificatore per ogni oggetto trovato. Questa funzione è definita nel modulo ContentEnumeration. cpp.
+La funzione successiva chiamata dall'applicazione di esempio è la `CreateIPortableDevicePropVariantCollectionWithAllObjectIDs` funzione helper. Questa funzione enumera in modo ricorsivo tutti gli oggetti in un determinato dispositivo e restituisce [**un'interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene un identificatore per ogni oggetto trovato. Questa funzione è definita nel modulo ContentEnumeration.cpp.
 
 
 ```C++
@@ -153,11 +153,11 @@ if (SUCCEEDED(hr))
 
 
 
-L'oggetto **IPortableDevicePropVariantCollection** include una raccolta di valori **PROPVARIANT** indicizzati dello stesso VARTYPE. In questo caso, questi valori contengono un identificatore di oggetto specificato per ogni oggetto trovato nel dispositivo.
+**L'oggetto IPortableDevicePropVariantCollection** contiene una raccolta di valori **PROPVARIANT** indicizzati dello stesso VARTYPE. In questo caso, questi valori contengono un identificatore di oggetto specificato per ogni oggetto trovato nel dispositivo.
 
-Gli identificatori di oggetto e le rispettive proprietà Name vengono archiviati in un oggetto [**IPortableDeviceValuesCollection**](iportabledevicevalues.md) . Le proprietà Name sono organizzate in modo che al primo oggetto venga assegnata una proprietà Name di "NewName0", al secondo oggetto viene assegnata una proprietà Name di "NewName1" e così via.
+Gli identificatori di oggetto e le rispettive proprietà name vengono archiviati in un [**oggetto IPortableDeviceValuesCollection.**](iportabledevicevalues.md) Le proprietà name sono organizzate in modo che al primo oggetto sia assegnata una proprietà name "NewName0", al secondo oggetto sia assegnata una proprietà name "NewName1" e così via.
 
-Nell'esempio seguente viene illustrato il modo in cui l'oggetto **IPortableDeviceValuesCollection** è stato inizializzato con gli identificatori di oggetto e le nuove stringhe del nome.
+L'estratto seguente dell'esempio illustra come **l'oggetto IPortableDeviceValuesCollection** è stato inizializzato con identificatori di oggetto e nuove stringhe di nome.
 
 
 ```C++
@@ -248,9 +248,9 @@ if (SUCCEEDED(hr))
 
 
 
-Quando l'esempio crea l'oggetto **IPortableDeviceValuesCollection** che contiene le coppie di identificatori di oggetto e nomi, può iniziare l'operazione asincrona.
+Dopo che l'esempio ha **creato l'oggetto IPortableDeviceValuesCollection** che contiene le coppie identificatore oggetto e nome, può iniziare l'operazione asincrona.
 
-L'operazione di scrittura asincrona inizia quando l'esempio chiama il metodo [**IPortableDevicePropertiesBulk:: QueueSetValuesByObjectList**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-queuesetvaluesbyobjectlist) . Questo metodo notifica al driver che un'operazione bulk sta per iniziare. Successivamente, l'esempio chiama il metodo [**IPortableDeviceBulk:: Start**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-start) per iniziare a scrivere effettivamente i nuovi valori di nome.
+L'operazione di scrittura asincrona inizia quando l'esempio chiama il metodo [**IPortableDevicePropertiesBulk::QueueSetValuesByObjectList.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-queuesetvaluesbyobjectlist) Questo metodo notifica al driver che sta per iniziare un'operazione in blocco. Successivamente, l'esempio chiama il [**metodo IPortableDeviceBulk::Start**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-start) per iniziare a scrivere effettivamente i nuovi valori del nome.
 
 
 ```C++
@@ -309,7 +309,7 @@ L'operazione di scrittura asincrona inizia quando l'esempio chiama il metodo [**
 
 
 
-Si noti che l'esempio attende un lungo periodo di tempo infinito per il completamento dell'operazione. Se si trattasse di un'applicazione di produzione, è necessario modificare il codice.
+Si noti che l'esempio attende un periodo di tempo infinitamente lungo per il completamento dell'operazione. Se si trattasse di un'applicazione di produzione, sarebbe necessario modificare il codice.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

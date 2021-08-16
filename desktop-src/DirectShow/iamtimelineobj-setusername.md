@@ -1,5 +1,5 @@
 ---
-description: Il metodo SetUserName imposta un nome definito dall'applicazione per l'oggetto.
+description: Il metodo SetUserName imposta un nome definito dall'applicazione per l'oggetto .
 ms.assetid: 6f071884-519a-465f-8273-ab1be58dda8b
 title: Metodo IAMTimelineObj::SetUserName (Qedit.h)
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.locfileid: "118399666"
 # <a name="iamtimelineobjsetusername-method"></a>Metodo IAMTimelineObj::SetUserName
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

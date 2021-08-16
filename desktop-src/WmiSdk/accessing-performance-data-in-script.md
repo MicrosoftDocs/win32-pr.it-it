@@ -1,5 +1,5 @@
 ---
-description: Gli script WMI possono accedere alle classi del contatore delle prestazioni WMI preinstallate, nel computer locale o in remoto.
+description: Gli script WMI possono accedere alle classi dei contatori delle prestazioni WMI preinstallate, nel computer locale o in remoto.
 ms.assetid: 79e47173-c8b6-452d-9400-93e2bd6e9da5
 ms.tgt_platform: multiple
 title: Accesso ai dati sulle prestazioni nello script
@@ -19,20 +19,20 @@ ms.locfileid: "118320444"
 ---
 # <a name="accessing-performance-data-in-script"></a>Accesso ai dati sulle prestazioni nello script
 
-Gli script WMI possono accedere alle classi del contatore delle prestazioni [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstallate, nel computer locale o in remoto. Mentre gli script possono ottenere dati da classi non calcolate, ad esempio [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o classi formattate, [**Win32 \_ PerfFormattedData \_ PerfOS \_ Memory,**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)le classi di dati formattate possono essere più facili da usare.
+Gli script WMI possono accedere alle classi dei contatori delle prestazioni [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstallate, nel computer locale o in remoto. Mentre gli script possono ottenere dati da classi non calcolate, ad esempio [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o classi formattate, [**Win32 \_ PerfFormattedData \_ PerfOS \_ Memory,**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)le classi di dati formattate possono essere più facili da usare.
 
-Il monitoraggio dei dati sulle prestazioni con le classi del contatore delle prestazioni richiede l'uso di un [*aggiornamento*](gloss-r.md). Usare [**l'oggetto SWbemRefresher**](swbemrefresher.md) per archiviare uno o più oggetti prestazioni per l'aggiornamento o l'aggiornamento di un singolo oggetto tramite la chiamata [**SWbemObjectEx.Refresh.**](swbemobjectex-refresh-.md) Per altre informazioni, vedere [Aggiornamento di dati WMI negli script](refreshing-wmi-data-in-scripts.md).
+Il monitoraggio dei dati sulle prestazioni con le classi dei contatori delle prestazioni richiede l'uso di un [*aggiornamento*](gloss-r.md). Usare [**l'oggetto SWbemRefresher**](swbemrefresher.md) per archiviare uno o più oggetti prestazioni per l'aggiornamento o l'aggiornamento di un singolo oggetto tramite la [**chiamata SWbemObjectEx.Refresh.**](swbemobjectex-refresh-.md) Per altre informazioni, vedere [Aggiornamento dei dati WMI negli script.](refreshing-wmi-data-in-scripts.md)
 
 Impostando la proprietà [**SWbemRefresher.AutoReconnect**](swbemrefresher-autoreconnect.md) su **TRUE,** WMI si riconnette automaticamente a un provider remoto se la connessione viene interrotta in modo che non sia necessario verificare lo stato della connessione.
 
-Come illustrato nello script di esempio di codice di script seguente, è necessario eseguire una chiamata di aggiornamento iniziale per ottenere un valore iniziale per l'oggetto che si sta aggiornando. Le chiamate di aggiornamento successive contengono quindi dati.
+Come illustrato nello script di esempio di codice di script seguente, è necessario effettuare una chiamata di aggiornamento iniziale per ottenere un valore iniziale per l'oggetto che si sta aggiornando. Le chiamate di aggiornamento successive contengono quindi dati.
 
 > [!Note]  
-> Quando uno script accede ai dati del contatore delle prestazioni WMI da un computer remoto, lo script può essere eseguito solo con l'account utente connesso corrente. WMI non supporta una [**chiamata SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) che passa credenziali utente diverse. Pertanto, l'account che chiama il computer remoto deve avere già i privilegi appropriati per tale computer.
+> Quando uno script accede ai dati dei contatori delle prestazioni WMI da un computer remoto, lo script può essere eseguito solo con l'account utente connesso corrente. WMI non supporta una [**chiamata SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) che passa credenziali utente diverse. Pertanto, l'account che chiama il computer remoto deve avere già i privilegi appropriati su tale computer.
 
  
 
-Nell'esempio di codice di script seguente viene illustrato come usare un [**oggetto SWbemRefresher**](swbemrefresher.md) per aggiornare i dati negli oggetti contatore delle prestazioni. Per altre informazioni sull'uso dei contatori delle prestazioni in WMI, vedere [Accesso alle classi di prestazioni preinstallate WMI](accessing-wmi-preinstalled-performance-classes.md).
+Nell'esempio di codice script seguente viene illustrato come utilizzare un [**oggetto SWbemRefresher**](swbemrefresher.md) per aggiornare i dati negli oggetti contatore delle prestazioni. Per altre informazioni sull'uso dei contatori delle prestazioni in WMI, vedere [Accessing WMI Preinstalled Performance Classes](accessing-wmi-preinstalled-performance-classes.md).
 
 
 ```VB
@@ -60,9 +60,9 @@ next
 
 ## <a name="example"></a>Esempio
 
-L'esempio di codice di script seguente mostra che è necessario eseguire una chiamata di aggiornamento iniziale per ottenere un valore iniziale per l'oggetto aggiornato. Le chiamate di aggiornamento successive contengono quindi dati.
+Nell'esempio di codice script seguente viene illustrato che è necessario effettuare una chiamata di aggiornamento iniziale per ottenere un valore iniziale per l'oggetto aggiornato. Le chiamate di aggiornamento successive contengono quindi dati.
 
-Nell'esempio di codice di script seguente viene illustrato come usare un [**oggetto SWbemRefresher**](swbemrefresher.md) per aggiornare i dati negli oggetti contatore delle prestazioni. Per altre informazioni sull'uso dei contatori delle prestazioni in WMI, vedere [Accesso alle classi di prestazioni preinstallate WMI](accessing-wmi-preinstalled-performance-classes.md).
+Nell'esempio di codice script seguente viene illustrato come utilizzare un [**oggetto SWbemRefresher**](swbemrefresher.md) per aggiornare i dati negli oggetti contatore delle prestazioni. Per altre informazioni sull'uso dei contatori delle prestazioni in WMI, vedere [Accessing WMI Preinstalled Performance Classes](accessing-wmi-preinstalled-performance-classes.md).
 
 
 ```VB
@@ -98,7 +98,7 @@ next
 
 <dl> <dt>
 
-[Classi di contatori delle prestazioni](/windows/desktop/CIMWin32Prov/performance-counter-classes)
+[Classi dei contatori delle prestazioni](/windows/desktop/CIMWin32Prov/performance-counter-classes)
 </dt> <dt>
 
 [Attività WMI: Monitoraggio delle prestazioni](wmi-tasks--performance-monitoring.md)

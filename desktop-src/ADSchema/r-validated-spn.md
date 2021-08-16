@@ -1,10 +1,10 @@
 ---
-title: Convalidato-scritture convalidate SPN
-description: Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attributo SPN che è conforme al nome host DNS del computer.
+title: Scritture convalidate con nome SPN convalidato
+description: Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attributo SPN conforme al nome host DNS del computer.
 ms.assetid: f5760ee0-d1e3-4e0d-afb8-6f1c1493d379
 ms.tgt_platform: multiple
 keywords:
-- Convalidato-il nome SPN convalida la scrittura dello schema di Active Directory
+- Schema AD per scritture convalidate con nome SPN convalidato
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2417c6bea1338031b27c8debc3ed257ea6e8d58
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f6508f4c75b07a095cb3fb12f5d422975396a38cc2aff0476e2b008336bd7e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835712"
 ---
-# <a name="validated-spn-validated-writes"></a>Convalidato-scritture convalidate SPN
+# <a name="validated-spn-validated-writes"></a>Scritture convalidate con nome SPN convalidato
 
-Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attributo SPN che è conforme al nome host DNS del computer.
+Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attributo SPN conforme al nome host DNS del computer.
 
 
 
 | Voce | Valore |
 |--------------|-------------------------------------------|
-| CN           | Convalidato-SPN                             |
+| CN           | SPN convalidato                             |
 | Display-Name | Validated write to service principal name |
 | Rights-GUID  | f3a64788-5306-11d1-a9c5-0000f80367c1      |
 
@@ -50,7 +50,7 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 | Voce | Valore |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -61,7 +61,7 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 | Voce | Valore |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -72,7 +72,7 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 | Voce | Valore |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -83,7 +83,7 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 | Voce | Valore |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 14                                        |
+| Localization-Display-ID | 14                                        |
 
 
 
@@ -93,8 +93,8 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> |
-| Localization-display-ID | 14                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 14                                                                                                                         |
 
 
 
@@ -104,8 +104,8 @@ Autorizzazione di scrittura convalidata per abilitare l'impostazione dell'attrib
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> |
-| Localization-display-ID | 14                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 14                                                                                                                         |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IRenderEngine2 consente all'applicazione di sostituire il filtro di ridimensionamento video predefinito usato da DirectShow editing Services (DES). Il motore di rendering di base e il motore di rendering intelligente supportano entrambi questa interfaccia.
+description: L'interfaccia IRenderEngine2 consente all'applicazione di sostituire il filtro di ridimensionamento video predefinito usato DirectShow Editing Services (DES). Il motore di rendering di base e il motore di rendering intelligente supportano entrambe questa interfaccia.
 ms.assetid: 37603c73-e199-431a-9a1e-a40c77755c70
-title: Interfaccia IRenderEngine2 (qedit. h)
+title: Interfaccia IRenderEngine2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,31 +14,31 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ed7802cf3d47d745b4e4733bb1fb60c61130b44a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39f1bc68fc6cd76e87d1998047cb211b3a8aa8e263c90e0494c7eaf15d52f75f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818509"
 ---
 # <a name="irenderengine2-interface"></a>Interfaccia IRenderEngine2
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `IRenderEngine2` interfaccia consente all'applicazione di sostituire il filtro di ridimensionamento video predefinito usato da DirectShow editing Services (des). Il [motore di rendering di base](basic-render-engine.md) e il [motore di rendering intelligente](smart-render-engine.md) supportano entrambi questa interfaccia.
+L'interfaccia consente all'applicazione di sostituire il filtro di ridimensionamento video predefinito usato `IRenderEngine2` DirectShow Editing Services (DES). Il [motore di rendering di base](basic-render-engine.md) e il motore di rendering [intelligente](smart-render-engine.md) supportano entrambe questa interfaccia.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IRenderEngine2** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IRenderEngine2** dispone anche di questi tipi di membri:
+**L'interfaccia IRenderEngine2** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IRenderEngine2** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IRenderEngine2** dispone di questi metodi.
+**L'interfaccia IRenderEngine2** include questi metodi.
 
 
 
@@ -53,12 +53,12 @@ L'interfaccia **IRenderEngine2** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -68,9 +68,9 @@ L'interfaccia **IRenderEngine2** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ L'interfaccia **IRenderEngine2** dispone di questi metodi.
 
 <dl> <dt>
 
-[Creazione di una ridisposizione video personalizzata](providing-a-custom-video-resizer.md)
+[Fornire un ridimensionamento video personalizzato](providing-a-custom-video-resizer.md)
 </dt> </dl>
 
  

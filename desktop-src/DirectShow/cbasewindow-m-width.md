@@ -1,7 +1,7 @@
 ---
-description: Larghezza dell'area client in pixel.
+description: Larghezza dell'area client, in pixel.
 ms.assetid: b4970e1a-a358-4cf0-9ae6-2b221b332f6f
-title: 'Membro CBaseWindow:: m_Width (Winutil. h)'
+title: Membro CBaseWindow::m_Width (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5b3df98a58c666b1e1bbb1f626004e09fa66d086
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6e8c2d0c379ce8690a7ca5306d880aad777905d4164bbaf8873c2a43624994f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822297"
 ---
-# <a name="cbasewindowm_width-member"></a>Membro Width CBaseWindow:: m \_
+# <a name="cbasewindowm_width-member"></a>Membro Width CBaseWindow::m \_
 
-Larghezza dell'area client in pixel.
+Larghezza dell'area client, in pixel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ LONG m_Width;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

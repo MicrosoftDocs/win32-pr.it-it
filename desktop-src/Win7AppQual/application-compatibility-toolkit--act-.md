@@ -14,7 +14,7 @@ ms.locfileid: "118330094"
 # <a name="application-compatibility-toolkit-act"></a>Application Compatibility Toolkit (ACT)
 
 > [!IMPORTANT]
-> Le versioni Toolkit compatibilità delle applicazioni trattate in questo articolo non sono più supportate. L'ultima versione supportata è inclusa in [Windows 10 Assessment and Deployment Kit](/archive/blogs/yongrhee/download-windows-10-assessment-and-deployment-kit-adk)
+> Le versioni di Toolkit di compatibilità delle applicazioni trattate in questo articolo non sono più supportate. L'ultima versione supportata è inclusa in [Windows 10 Assessment and Deployment Kit](/archive/blogs/yongrhee/download-windows-10-assessment-and-deployment-kit-adk)
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
@@ -38,15 +38,15 @@ Con ACT è possibile:
 -   Razionalizzare e organizzare applicazioni, siti Web e computer
 -   Assegnare priorità alle attività di compatibilità delle applicazioni con la creazione di report filtrati
 -   Aggiungere e gestire problemi e soluzioni per l'ambiente di elaborazione aziendale
--   Distribuire soluzioni automatizzate a problemi di compatibilità noti
+-   Distribuire mitigazioni automatizzate per problemi di compatibilità noti
 -   Inviare e ricevere informazioni sulla compatibilità da Microsoft Compatibility Exchange
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Compatibilità delle applicazioni Toolkit download](/archive/blogs/yongrhee/download-windows-10-assessment-and-deployment-kit-adk)
--   [Introduzione alla compatibilità delle applicazioni Toolkit](/previous-versions/windows/it-pro/windows-7/cc722367(v=ws.10))
--   [Guida di riferimento tecnico Toolkit compatibilità delle applicazioni](/previous-versions/windows/it-pro/windows-7/cc749328(v=ws.10))
--   [Esercizi della procedura dettagliata ACT](/previous-versions/windows/it-pro/windows-7/cc766493(v=ws.10))
+-   [Application Compatibility Toolkit Download](/archive/blogs/yongrhee/download-windows-10-assessment-and-deployment-kit-adk)
+-   [Introduzione al servizio di compatibilità Toolkit](/previous-versions/windows/it-pro/windows-7/cc722367(v=ws.10))
+-   [Documentazione tecnica sulla compatibilità Toolkit applicazioni](/previous-versions/windows/it-pro/windows-7/cc749328(v=ws.10))
+-   [Esercizi dettagliati su ACT](/previous-versions/windows/it-pro/windows-7/cc766493(v=ws.10))
 
  
 

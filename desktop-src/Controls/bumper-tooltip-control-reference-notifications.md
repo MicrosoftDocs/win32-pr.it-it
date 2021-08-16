@@ -1,6 +1,6 @@
 ---
-title: Notifiche del controllo Tooltip
-description: Notifiche del controllo Tooltip
+title: Notifiche di controllo della descrizione comando
+description: Notifiche di controllo della descrizione comando
 ms.assetid: 181390f8-359c-41be-9010-b302b22fb878
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118415265"
 ---
-# <a name="tooltip-control-notifications"></a>Notifiche del controllo Tooltip
+# <a name="tooltip-control-notifications"></a>Notifiche di controllo della descrizione comando
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [NM \_ CUSTOMDRAW (descrizione comando)](nm-customdraw-tooltip.md)
 -   [TTN \_ GETDISPINFO](ttn-getdispinfo.md)
--   [TTN \_ LINKCLICK](ttn-linkclick.md)
+-   [COLLEGAMENTO \_ TTNCLICK](ttn-linkclick.md)
 -   [TTN \_ NEEDTEXT](ttn-needtext.md)
 -   [TTN \_ POP](ttn-pop.md)
 -   [TTN \_ SHOW](ttn-show.md)

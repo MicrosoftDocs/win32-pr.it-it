@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_SETBARCOLOR (COMmctrl. h)
-description: Imposta il colore della barra indicatore di stato nel controllo indicatore di stato.
+title: PBM_SETBARCOLOR messaggio (Commctrl.h)
+description: Imposta il colore dell'indicatore di stato nel controllo indicatore di stato.
 ms.assetid: 4b512420-04ec-4884-ab13-4c58304b95f6
 keywords:
-- Controlli di Windows Message PBM_SETBARCOLOR
+- PBM_SETBARCOLOR del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1387e69622e84990a197dc5a374d1c3449393408
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: babff5ad74d943d64f5ad61354447498e91e1325c99c82b32183fbc62eabafdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830202"
 ---
-# <a name="pbm_setbarcolor-message"></a>\_Messaggio SETBARCOLOR PBM
+# <a name="pbm_setbarcolor-message"></a>Messaggio \_ SETBARCOLOR PBM
 
-Imposta il colore della barra indicatore di stato nel controllo indicatore di stato.
+Imposta il colore dell'indicatore di stato nel controllo indicatore di stato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Valore **COLORREF** che specifica il nuovo colore della barra dell'indicatore di stato. Se si specifica il \_ valore predefinito CLR, l'indicatore di stato utilizzerà il colore predefinito della barra dell'indicatore di stato.
+Valore **COLORREF** che specifica il nuovo colore dell'indicatore di stato. Se si specifica il valore CLR \_ DEFAULT, l'indicatore di stato utilizzerà il colore predefinito dell'indicatore di stato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il colore della barra dell'indicatore di stato precedente oppure il \_ valore predefinito CLR se il colore della barra dell'indicatore di stato è il colore predefinito.
+Restituisce il colore della barra dell'indicatore di stato precedente o CLR DEFAULT se il colore dell'indicatore \_ di stato è il colore predefinito.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

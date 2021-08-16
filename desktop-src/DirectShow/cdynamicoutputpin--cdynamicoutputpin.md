@@ -1,5 +1,5 @@
 ---
-description: Distruttore CDynamicOutputPin.~CDynamicOutputPin - Metodo del distruttore.
+description: Distruttore CDynamicOutputPin.~CDynamicOutputPin - Metodo distruttore.
 ms.assetid: 122c2506-a38a-4d24-a372-da210801df88
 title: Distruttore CDynamicOutputPin.~CDynamicOutputPin (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8f1369b63f3ae5cacf74d32c89cda5602660d228
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 23ecf58d0d2cbebf09f47dd9a5f61d9658d3af94a118a7a902ac1e41ce612631
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822114"
 ---
 # <a name="cdynamicoutputpincdynamicoutputpin-destructor"></a>Distruttore CDynamicOutputPin.~CDynamicOutputPin
 
@@ -42,7 +42,7 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

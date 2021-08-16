@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_GETINFOTIP (COMmctrl. h)
-description: Inviato da un controllo di visualizzazione elenco icone grande con lo \_ stile esteso LVS ex \_ INFOTIP.
+title: LVN_GETINFOTIP di notifica (Commctrl.h)
+description: Inviato da un controllo visualizzazione elenco di visualizzazione icone di grandi dimensioni con lo stile esteso LVS \_ EX \_ INFOTIP.
 ms.assetid: 62be5087-7e49-4722-a63a-1768e030af48
 keywords:
-- Controlli di Windows per il codice di notifica LVN_GETINFOTIP
+- LVN_GETINFOTIP del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b4552456a575e2f03e02b2bfb78f7fcc1d8ca1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f7477230913ec5efd0827bc48e1a6021619aa4cdbbad252426d1af364b5b36b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830442"
 ---
-# <a name="lvn_getinfotip-notification-code"></a>\_Codice di notifica GETINFOTIP di LVN
+# <a name="lvn_getinfotip-notification-code"></a>Codice di notifica \_ LVN GETINFOTIP
 
-Inviato da un controllo di visualizzazione elenco icone grande con lo stile esteso [**LVS \_ ex \_ INFOTIP**](extended-list-view-styles.md) . Questo codice di notifica viene inviato quando il controllo elenco-visualizzazione richiede informazioni aggiuntive sul testo da visualizzare in una descrizione comando. Viene inviato sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Inviato da un controllo visualizzazione elenco di visualizzazione icone di grandi dimensioni con lo stile [**esteso LVS \_ EX \_ INFOTIP.**](extended-list-view-styles.md) Questo codice di notifica viene inviato quando il controllo visualizzazione elenco richiede la visualizzazione di informazioni di testo aggiuntive in una descrizione comando. Viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ LVN_GETINFOTIP
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmlvgetinfotipa) che contiene informazioni su questo codice di notifica.
+Puntatore a una [**struttura NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmlvgetinfotipa) che contiene informazioni su questo codice di notifica.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica viene inviato solo da controlli di visualizzazione elenco con stile esteso [**LVS \_ ex \_ INFOTIP**](extended-list-view-styles.md) . Il \_ codice di notifica GETINFOTIP di LVN viene inviato solo per l'elemento secondario 0.
+Questo codice di notifica viene inviato solo dai controlli di visualizzazione elenco con lo stile [**esteso LVS \_ EX \_ INFOTIP.**](extended-list-view-styles.md) Il codice di notifica \_ LVN GETINFOTIP viene inviato solo per l'elemento secondario 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Questo codice di notifica viene inviato solo da controlli di visualizzazione ele
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **LVN \_ GETINFOTIPW** (Unicode) e **LVN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

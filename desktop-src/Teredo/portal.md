@@ -15,7 +15,7 @@ ms.locfileid: "118354464"
 
 ## <a name="purpose"></a>Scopo
 
-Teredo è una tecnologia di transizione IPv6 che fornisce l'assegnazione di indirizzi e il tunneling automatico da host a host per il traffico IPv6 unicast quando gli host IPv6/IPv4 si trovano dietro uno o più traduttori di indirizzi di rete IPv4 (NAT). Per attraversare i NAT IPv4, i pacchetti IPv6 vengono inviati come messaggi UDP (User Datagram Protocol) IPv4.
+Teredo è una tecnologia di transizione IPv6 che fornisce l'assegnazione di indirizzi e il tunneling automatico da host a host per il traffico IPv6 unicast quando gli host IPv6/IPv4 si trovano dietro uno o più convertitori di indirizzi di rete (NAT) IPv4. Per attraversare i NAT IPv4, i pacchetti IPv6 vengono inviati come messaggi UDP (User Datagram Protocol) IPv4.
 
 ## <a name="developer-audience"></a>Sviluppatori
 
@@ -23,7 +23,7 @@ Teredo è progettato per l'uso da parte degli sviluppatori C/C++ con esperienza 
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
-L Teredo interface è supportata principalmente da Windows Vista e Windows Server 2008. La funzionalità limitata dell'interfaccia Teredo supportata da Windows XP con Service Pack 2 (SP2) e Windows Server 2003 è dettagliata [in](receiving-solicited-traffic-over-teredo.md)Ricezione di traffico richiesto su Teredo .
+L Teredo inter interface è supportata principalmente da Windows Vista e Windows Server 2008. La funzionalità limitata dell'interfaccia Teredo supportata da Windows XP con Service Pack 2 (SP2) e Windows Server 2003 è dettagliata in [Ricezione di](receiving-solicited-traffic-over-teredo.md)traffico richiesto su Teredo .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -32,7 +32,7 @@ L Teredo interface è supportata principalmente da Windows Vista e Windows Serve
 | Argomento                                       | Descrizione                                                                                |
 |---------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Informazioni Teredo](about-teredo.md)<br/> | Informazioni sull'Teredo predefinita.<br/>                                         |
-| [Utilizzo di Teredo](using-teredo.md)<br/> | Informazioni sull'implementazione e sull'utilizzo generale dell Teredo intervazione.<br/> |
+| [Utilizzo di Teredo](using-teredo.md)<br/> | Informazioni sull'implementazione e sull'utilizzo generale dell Teredo intervaio.<br/> |
 
 
 

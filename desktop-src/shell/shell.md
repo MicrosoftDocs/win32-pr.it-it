@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 75fc151e-5b9e-476b-b4e5-b848917357a8
-ms.openlocfilehash: 55f8062b71e553ec5ceefa413b45f439874744b8
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: fe2fbaa1bad61ac9c22d36919e49cf493a26a778a8e97d69d1b200c0c62205e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857720"
 ---
 # <a name="shell-object"></a>Oggetto shell
 
@@ -55,7 +55,7 @@ Rappresenta gli oggetti nella shell. Vengono forniti metodi per controllare la s
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-browseforfolder.md"><strong>BrowseForFolder</strong></a></td>
-<td style="text-align: left;">Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto <a href="folder.md"><strong>Folder della</strong></a> cartella selezionata.<br/></td>
+<td style="text-align: left;">Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto <a href="folder.md"><strong>Cartella della</strong></a> cartella selezionata.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-canstartstopservice"><strong>CanStartStopService</strong></a></td>
@@ -63,41 +63,41 @@ Rappresenta gli oggetti nella shell. Vengono forniti metodi per controllare la s
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-cascadewindows.md"><strong>CascadeWindows</strong></a></td>
-<td style="text-align: left;">Sovrapporre tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere <strong>Sovrapponi finestre.</strong><br/></td>
+<td style="text-align: left;">Sovrapporre tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e <strong>scegliere Propaga</strong>Windows .<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-controlpanelitem.md"><strong>ControlPanelItem</strong></a></td>
-<td style="text-align: left;">Esegue l'Pannello di controllo specificata (*.cpl). Se l'applicazione è già aperta, attiverà l'istanza in esecuzione. <br/>
+<td style="text-align: left;">Esegue l'Pannello di controllo (*.cpl) specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione. <br/>
 <blockquote>
 <p>[!Note]<br />
-A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono elementi della shell e non possono essere aperte con questa funzione. Per aprire queste Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:</p>
+A Windows Vista, la maggior parte Pannello di controllo applicazioni sono elementi della shell e non possono essere aperti con questa funzione. Per aprire tali Pannello di controllo applicazioni, passare il nome canonico a control.exe. Esempio:</p>
 <pre class="syntax" data-space="preserve"><code>control.exe /name Microsoft.Personalization</code></pre>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-ejectpc.md"><strong>EjectPC</strong></a></td>
-<td style="text-align: left;">Espulse il computer dall'alloggiamento di espansione. Questo è lo stesso che si fa clic sul menu <strong>Start</strong> e si <strong>seleziona Espulsa PC</strong>, se il computer supporta questo comando.<br/></td>
+<td style="text-align: left;">Espulsa il computer dalla relativa stazione di ancoraggio. Questa operazione è identica a quando si fa clic sul menu <strong>Start</strong> e si <strong>seleziona Eject PC (Espila PC),</strong>se il computer supporta questo comando.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-explore.md"><strong>Esplorare</strong></a></td>
-<td style="text-align: left;">Apre una cartella specificata in una finestra Esplora risorse dati.<br/></td>
+<td style="text-align: left;">Apre una cartella specificata in una finestra Windows Explorer.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-explorerpolicy.md"><strong>ExplorerPolicy</strong></a></td>
-<td style="text-align: left;">Ottiene il valore per un criterio di Internet Explorer specificati.<br/></td>
+<td style="text-align: left;">Ottiene il valore per un criterio di Internet Explorer specificato.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-filerun.md"><strong>FileRun</strong></a></td>
-<td style="text-align: left;">Visualizza la <strong>finestra di</strong> dialogo Esegui per l'utente. Questo metodo ha lo stesso effetto di fare clic sul menu <strong>Start</strong> e selezionare <strong>Esegui</strong>.<br/></td>
+<td style="text-align: left;"><a href="shell-filerun.md"><strong>Esecuzione file</strong></a></td>
+<td style="text-align: left;">Visualizza la <strong>finestra di</strong> dialogo Esegui all'utente. Questo metodo ha lo stesso effetto di fare clic sul menu <strong>Start</strong> e scegliere <strong>Esegui.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-findcomputer.md"><strong>FindComputer</strong></a></td>
-<td style="text-align: left;">Visualizza la <strong>finestra di dialogo Risultati ricerca:</strong> Computer. La finestra di dialogo mostra il risultato della ricerca di un computer specificato.<br/></td>
+<td style="text-align: left;">Visualizza la <strong>finestra di dialogo Risultati ricerca:</strong> Computer . Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-findfiles.md"><strong>FindFiles</strong></a></td>
-<td style="text-align: left;">Visualizza la <strong>finestra di dialogo Trova:</strong> Tutti i file. Equivale a fare clic sul menu <strong>Start</strong> e quindi selezionare <strong>Cerca</strong> (o il relativo equivalente in sistemi precedenti a Windows XP).<br/></td>
+<td style="text-align: left;">Consente di visualizzare <strong>la finestra di dialogo Trova:</strong> Tutti i file . Equivale a fare clic sul menu <strong>Start</strong> e quindi selezionare Cerca <strong>(o</strong> l'equivalente in sistemi precedenti a Windows XP.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-findprinter"><strong>FindPrinter</strong></a></td>
@@ -112,8 +112,8 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 <td style="text-align: left;">Recupera le informazioni di sistema.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-help.md"><strong>Guida</strong></a></td>
-<td style="text-align: left;">Visualizza la finestra di Guida e supporto tecnico. Questo metodo ha lo stesso effetto di fare clic sul menu <strong>Start</strong> e scegliere <strong>Guida e supporto tecnico.</strong><br/></td>
+<td style="text-align: left;"><a href="shell-help.md"><strong>Help</strong></a></td>
+<td style="text-align: left;">Visualizza il Windows Guida e supporto tecnico. Questo metodo ha lo stesso effetto del menu <strong>Start</strong> e della selezione di <strong>Guida e supporto tecnico.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-isrestricted"><strong>IsRestricted</strong></a></td>
@@ -125,14 +125,14 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a></td>
-<td style="text-align: left;">Riduce a icona tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di <strong></strong> fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Riduci a icona tutte le finestre nei sistemi meno recenti oppure fare clic sull'icona Mostra <strong>desktop</strong> nell'area Avvio veloce della barra delle applicazioni in Windows 2000 o Windows XP.<br/></td>
+<td style="text-align: left;">Riduce a icona tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro <strong></strong> del mouse sulla barra delle applicazioni e scegliere Riduci a icona tutto <strong>Windows</strong> nei sistemi meno recenti o facendo clic sull'icona Mostra desktop nell'area Avvio veloce della barra delle applicazioni in Windows 2000 o Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-namespace.md"><strong>Namespace</strong></a></td>
 <td style="text-align: left;">Crea e restituisce un <a href="folder.md"><strong>oggetto Folder</strong></a> per la cartella specificata.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="shell-open.md"><strong>Apri</strong></a></td>
+<td style="text-align: left;"><a href="shell-open.md"><strong>Aperto</strong></a></td>
 <td style="text-align: left;">Apre la cartella specificata.<br/></td>
 </tr>
 <tr class="odd">
@@ -144,7 +144,7 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 <td style="text-align: left;">Visualizza il riquadro Ricerca app.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestart"><strong>ServiceStart</strong></a></td>
+<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestart"><strong>Avvio del servizio</strong></a></td>
 <td style="text-align: left;">Avvia un servizio denominato.<br/></td>
 </tr>
 <tr class="even">
@@ -153,7 +153,7 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-settime.md"><strong>Settime</strong></a></td>
-<td style="text-align: left;">Consente di visualizzare <strong>la finestra di dialogo Proprietà data</strong> e ora . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sull'orologio nell'area di stato della barra delle applicazioni e scegliere <strong>Regola data/ora</strong>.<br/></td>
+<td style="text-align: left;">Consente di visualizzare <strong>la finestra di dialogo Proprietà data</strong> e ora . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sull'orologio nell'area di stato della barra delle applicazioni e <strong>scegliere Regola data/ora.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-shellexecute"><strong>ShellExecute</strong></a></td>
@@ -165,7 +165,7 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-shutdownwindows.md"><strong>ShutdownWindows</strong></a></td>
-<td style="text-align: left;">Visualizza la <strong>finestra di dialogo Arresta</strong> Windows. Questa operazione è identica a quando si fa clic sul menu <strong>Start</strong> e si <strong>sceglie Arresta</strong>.<br/></td>
+<td style="text-align: left;">Consente di <strong>visualizzare la finestra Windows</strong> arresta il sistema. Si tratta di un'operazione identica a quando si fa clic sul menu <strong>Start</strong> e si <strong>sceglie Arresta</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-suspend.md"><strong>Sospendi</strong></a></td>
@@ -173,11 +173,11 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-tilehorizontally.md"><strong>TileHorizontally</strong></a></td>
-<td style="text-align: left;">Affianca tutte le finestre del desktop orizzontalmente. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere <strong>Affianca finestre orizzontalmente.</strong><br/></td>
+<td style="text-align: left;">Affianca orizzontalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere <strong>Windows orizzontalmente.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-tilevertically.md"><strong>TileVertically</strong></a></td>
-<td style="text-align: left;">Affianca verticalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e <strong>scegliere Affianca finestre verticalmente.</strong><br/></td>
+<td style="text-align: left;">Affianca verticalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e <strong>scegliere Windows verticalmente.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-toggledesktop.md"><strong>ToggleDesktop</strong></a></td>
@@ -189,7 +189,7 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
-<td style="text-align: left;">Ripristina tutte le finestre desktop allo stesso stato in cui si trovavano prima dell'ultimo <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Questo metodo ha lo stesso effetto di <strong></strong> fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Annulla Riduci a icona tutte le finestre nei sistemi precedenti o un secondo clic sull'icona Mostra <strong>desktop</strong> nell'area Avvio veloce della barra delle applicazioni in Windows 2000 o Windows XP.<br/></td>
+<td style="text-align: left;">Ripristina tutte le finestre desktop allo stesso stato in cui si trovavano prima dell'ultimo <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse <strong></strong> sulla barra delle applicazioni e scegliere Annulla Riduci a icona tutto <strong>Windows</strong> nei sistemi precedenti o un secondo clic sull'icona Mostra desktop nell'area Avvio veloce della barra delle applicazioni in Windows 2000 o Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-windows.md"><strong>Windows</strong></a></td>
@@ -231,7 +231,7 @@ A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono ele
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

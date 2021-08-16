@@ -1,7 +1,7 @@
 ---
 description: Genera un BLOB opaco di dati che contiene informazioni sulla compatibilità per il sistema specificato.
 ms.assetid: 5cfb50c4-d695-4867-ac6a-234ce5120a6d
-title: Metodo GetSystemCompatibilityInfo della Msvm_VirtualSystemMigrationService classe
+title: Metodo GetSystemCompatibilityInfo della classe Msvm_VirtualSystemMigrationService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118392815"
 ---
 # <a name="getsystemcompatibilityinfo-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo GetSystemCompatibilityInfo della classe Msvm \_ VirtualSystemMigrationService
 
-Genera un BLOB opaco di dati che contiene informazioni sulla compatibilità per il sistema specificato. Questo metodo viene usato insieme al metodo [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) per determinare se è possibile eseguire una migrazione rapida o in tempo reale di una macchina virtuale a un altro computer host senza tentare effettivamente la migrazione.
+Genera un BLOB opaco di dati che contiene informazioni sulla compatibilità per il sistema specificato. Questo metodo viene usato insieme al metodo [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) per determinare se è possibile eseguire una migrazione rapida o in tempo reale di una macchina virtuale a un altro sistema di computer host senza tentare effettivamente la migrazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ uint32 GetSystemCompatibilityInfo(
 *ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a una classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) che rappresenta la macchina virtuale per cui recuperare le informazioni di compatibilità. Se questo parametro fa riferimento al sistema del computer host, i dati restituiti nel parametro *CompatibilityInfo* possono essere usati per determinare se è possibile eseguire rapidamente la migrazione di una delle macchine virtuali nel computer host a un altro computer host.
+Riferimento a una classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) che rappresenta la macchina virtuale per cui recuperare le informazioni di compatibilità. Se questo parametro fa riferimento al sistema del computer di hosting, i dati restituiti nel parametro *CompatibilityInfo* possono essere usati per determinare se è possibile eseguire rapidamente la migrazione di una delle macchine virtuali nel sistema del computer host a un altro sistema di computer host.
 
 </dd> <dt>
 
 *CompatibilityInfo* \[ Cambio\]
 </dt> <dd>
 
-BLOB opaco di dati che può essere passato al metodo [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) in un altro computer host per verificare la compatibilità.
+BLOB opaco di dati che può essere passato al metodo [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md) in un altro sistema di computer host per verificare la compatibilità.
 
 </dd> </dl>
 
@@ -60,13 +60,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -84,7 +84,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Il sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)
@@ -107,7 +107,7 @@ Questo metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRMNET_POLICY_GLOBAL_REQUIREMENTS (wmdrmsdk. h)
-description: La \_ struttura dei \_ requisiti globali del criterio WMDRMNET include i \_ requisiti globali per Windows Media DRM per i dispositivi di rete.
+title: WMDRMNET_POLICY_GLOBAL_REQUIREMENTS struttura (Wmdrmsdk.h)
+description: La struttura DEI REQUISITI GLOBALI DEI CRITERI WMDRMNET include i requisiti globali per Windows \_ \_ \_ DRM multimediale per i dispositivi di rete.
 ms.assetid: 140b3a6f-ccba-4735-b48a-2e990f5ec570
 keywords:
-- Formato di Windows Media per la struttura WMDRMNET_POLICY_GLOBAL_REQUIREMENTS
-- struttura Windows Media Format
+- WMDRMNET_POLICY_GLOBAL_REQUIREMENTS struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ccf13c881c9696d970a00ac902f3f8d08f13c58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e2a8dc7be95638e171126eb4a55c50744ee3e5126d3e0b49eb8f229ec0257e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843972"
 ---
-# <a name="wmdrmnet_policy_global_requirements-structure"></a>\_Struttura dei \_ requisiti globali dei criteri WMDRMNET \_
+# <a name="wmdrmnet_policy_global_requirements-structure"></a>Struttura DEI REQUISITI GLOBALI DEI CRITERI WMDRMNET \_ \_ \_
 
-La struttura dei **\_ \_ \_ requisiti globali del criterio WMDRMNET** include i requisiti globali per Windows Media DRM per i dispositivi di rete.
+La **struttura WMDRMNET \_ POLICY GLOBAL \_ \_ REQUIREMENTS** contiene i requisiti globali per Windows DRM multimediale per i dispositivi di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,13 +44,13 @@ typedef struct WMDRMNET_POLICY_GLOBAL_REQUIREMENTS {
 **MinimumEnvironment**
 </dt> <dd>
 
-[**WMDRMNET \_ Struttura \_ di \_ ambiente minima dei criteri**](wmdrmnet-policy-minimum-environment.md) contenente i requisiti minimi di sicurezza per Windows Media DRM per i dispositivi di rete.
+[**WMDRMNET \_ Struttura \_ POLICY MINIMUM \_ ENVIRONMENT**](wmdrmnet-policy-minimum-environment.md) contenente i requisiti minimi di sicurezza per Windows Media DRM per i dispositivi di rete.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Nessuna.
 [**Strutture**](drm-structures.md)
 </dt> <dt>
 
-[**criteri di WMDRMNET \_**](wmdrmnet-policy.md)
+[**CRITERI \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

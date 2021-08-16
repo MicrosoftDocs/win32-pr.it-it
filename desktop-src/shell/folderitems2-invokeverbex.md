@@ -22,7 +22,7 @@ ms.locfileid: "117860150"
 ---
 # <a name="folderitems2invokeverbex-method"></a>Metodo FolderItems2.InvokeVerbEx
 
-Esegue un verbo su una raccolta di [**oggetti FolderItem.**](folderitem.md) Questo metodo è un'estensione del [**metodo InvokeVerb,**](folderitem-invokeverb.md) consentendo un controllo aggiuntivo dell'operazione tramite un set di flag.
+Esegue un verbo su una raccolta [**di oggetti FolderItem.**](folderitem.md) Questo metodo è un'estensione del [**metodo InvokeVerb,**](folderitem-invokeverb.md) consentendo un controllo aggiuntivo dell'operazione tramite un set di flag.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ iRetVal = FolderItems2.InvokeVerbEx(
 
 Tipo: **Variante**
 
-Variant **con** la stringa verbo corrispondente al comando da eseguire. Se non viene specificato alcun verbo, viene eseguito il verbo predefinito.
+Valore **Variant** con la stringa del verbo corrispondente al comando da eseguire. Se non viene specificato alcun verbo, viene eseguito il verbo predefinito.
 
 </dd> <dt>
 
@@ -54,17 +54,17 @@ Variant **con** la stringa verbo corrispondente al comando da eseguire. Se non v
 
 Tipo: **Variante**
 
-Variante  costituita da una stringa con uno o più argomenti per il comando specificato da *vVerb*. Il formato di questa stringa dipende dal verbo specifico.
+Variant **costituita** da una stringa con uno o più argomenti per il comando specificato da *vVerb*. Il formato di questa stringa dipende dal verbo specifico.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Un verbo è una stringa usata per specificare una determinata azione associata a un elemento o a una raccolta di elementi. In genere, la chiamata a un verbo avvia un'applicazione correlata. Ad esempio, se si chiama il **verbo di** apertura su un file .txt in genere il file viene aperto con un editor di testo, in genere Microsoft Blocco note. Per altre informazioni sui verbi, vedere [Avvio di applicazioni.](launch.md)
+Un verbo è una stringa usata per specificare una determinata azione associata a un elemento o a una raccolta di elementi. In genere, la chiamata a un verbo avvia un'applicazione correlata. Ad esempio, se si chiama il **verbo open** su un file .txt in genere il file viene aperto con un editor di testo, in genere Microsoft Blocco note. Per altre informazioni sui verbi, vedere [Avvio di applicazioni](launch.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene **utilizzato InvokeVerbEx** per richiamare il verbo predefinito ("open") **Computer locale**. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato InvokeVerbEx** per richiamare il verbo predefinito ("open") **Computer locale**. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -162,7 +162,7 @@ End Sub
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

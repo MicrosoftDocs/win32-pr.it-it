@@ -1,9 +1,9 @@
 ---
 title: Metodo INapComponentInfo GetVersion (NapCommon.h)
-description: Viene utilizzato dal sistema di Protezione accesso alla rete per ottenere la versione di un client di integrità.
+description: Viene usato dal sistema di Protezione accesso alla rete per ottenere la versione di un client di integrità.
 ms.assetid: aabd13d9-d2ad-4554-a9f6-7845e6775ccd
 keywords:
-- Metodo GetVersion NAP
+- Metodo GetVersion nap
 - Metodo GetVersion NAP, interfaccia INapComponentInfo
 - Interfaccia INapComponentInfo NAP, metodo GetVersion
 topic_type:
@@ -30,7 +30,7 @@ ms.locfileid: "118368383"
 
  
 
-Il metodo di callback **INapComponentInfo::GetVersion** viene usato dal sistema nap per ottenere la versione di un client di integrità.
+Il metodo di callback **INapComponentInfo::GetVersion** viene usato dal sistema di Protezione accesso alla rete per ottenere la versione di un client di integrità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,8 +63,8 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -76,8 +76,8 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
 | Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 

@@ -29,9 +29,9 @@ Lo screenshot seguente illustra il pulsante Drop-Down barra multifunzione in una
 
 ## <a name="drop-down-button-properties"></a>Drop-Down proprietà del pulsante
 
-Il framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per il Drop-Down pulsante.
+Il framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per Drop-Down controllo Button.
 
-In genere, una Drop-Down button viene aggiornata nell'interfaccia utente della barra multifunzione invalidando il comando associato al controllo tramite una chiamata al [**metodo IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) L'evento di invalidamento viene gestito e la proprietà viene aggiornata dal metodo di callback [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
+In genere, una Drop-Down button viene aggiornata nell'interfaccia utente della barra multifunzione invalidando l'oggetto Command associato al controllo tramite una chiamata al [**metodo IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) L'evento di invalidamento viene gestito e la proprietà viene aggiornata dal metodo di callback [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
 Il metodo di callback [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) non viene eseguito e l'applicazione ha eseguito una query per un valore di proprietà aggiornato, fino a quando la proprietà non è richiesta dal framework. Ad esempio, quando una scheda viene attivata e un controllo viene visualizzato nell'interfaccia utente della barra multifunzione o quando viene visualizzata una descrizione comando.
 
@@ -62,10 +62,10 @@ Nella tabella seguente sono elencate le chiavi di proprietà associate al Drop-D
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).
+<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">imposta UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).
 <blockquote>
 [!Important]<br />
-La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> proprietà per il controllo Drop-Down Button deve essere invalidata dopo l'a attivazione o la disabilitazione di uno o più elementi figlio. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo pulsante Drop-Down nell'interfaccia utente della barra multifunzione.
+La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> per il controllo Drop-Down button deve essere invalidata dopo che uno o più elementi figlio sono stati abilitati o disabilitati. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo pulsante Drop-Down nell'interfaccia utente della barra multifunzione.
 </blockquote>
 <br/> <br/></td>
 </tr>

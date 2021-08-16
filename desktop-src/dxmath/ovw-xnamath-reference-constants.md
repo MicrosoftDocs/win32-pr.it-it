@@ -31,7 +31,7 @@ Le costanti seguenti vengono fornite dalla libreria DirectXMath.
 <tbody>
 <tr class="odd">
 <td>DIRECTXMATH_VERSION<br/></td>
-<td>Versione della libreria DirectXMath. La versione di anteprima iniziale è la 300, la Windows 8 finale è la 303, la Windows 8.1 versione è 305. Le versioni di XNA Math erano 200, 201, 202, 203, 204 e così via. Viene definito come simbolo del preprocessore.<br/></td>
+<td>Versione della libreria DirectXMath. La versione di anteprima iniziale è la 300, Windows 8 finale è la 303, la Windows 8.1 versione è 305. Le versioni di XNA Math erano 200, 201, 202, 203, 204 e così via. Viene definito come simbolo del preprocessore.<br/></td>
 </tr>
 <tr class="even">
 <td>XM_PI<br/></td>
@@ -91,7 +91,7 @@ Le costanti seguenti vengono fornite dalla libreria DirectXMath.
 </tr>
 <tr class="even">
 <td>XM_SELECT_0<br/></td>
-<td>Costante utilizzata per costruire un vettore di controllo usato <a href="/windows/desktop/api/directxmath/nf-directxmath-xmvectorselect"><strong>con XMVectorSelect.</strong></a> Indica che il componente del primo argomento vector in <strong>XMVectorSelect</strong> deve essere copiato nella posizione di indice in un vettore di risultato corrispondente al relativo indice nel vettore di controllo.<br/> Ad esempio, un vettore di controllo con XM_SELECT_0 come secondo componente copia il secondo componente del primo vettore nel secondo componente del vettore di risultato. <br/></td>
+<td>Costante utilizzata per costruire un vettore di controllo usato <a href="/windows/desktop/api/directxmath/nf-directxmath-xmvectorselect"><strong>con XMVectorSelect.</strong></a> Indica che il componente del primo argomento vector in <strong>XMVectorSelect</strong> deve essere copiato nella posizione di indice in un vettore di risultato corrispondente al relativo indice nel vettore di controllo.<br/> Ad esempio, un vettore di controllo con XM_SELECT_0 come secondo componente copia il secondo componente del primo vettore nel secondo componente del vettore risultante. <br/></td>
 </tr>
 <tr class="odd">
 <td>XM_SELECT_1<br/></td>
@@ -158,7 +158,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Tema</td>
+<td>Colori::Marrone</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -170,7 +170,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::ColorshedAlmond</td>
+<td>Colors::BlanchedAlmond</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
@@ -178,7 +178,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::BlueViolet</td>
+<td>Colori::BlueViolet</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
@@ -186,7 +186,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::BurlyWood</td>
+<td>Colori::BurlyWood</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
@@ -194,7 +194,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::Chartreuse</td>
+<td>Colori::Chartreuse</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
@@ -206,15 +206,15 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::FlowflowerBlue</td>
+<td>Colors::CornflowerBlue</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::Tuttosilk</td>
+<td>Colors::Cornsilk</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::Nalson</td>
+<td>Colori::Crimson</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -310,7 +310,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::ColorsWhite</td>
+<td>Colori::DistorsivaWhite</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -318,15 +318,15 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Fuchsia</td>
+<td>Colori::Fucsia</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::Gainsboro</td>
+<td>Colori::Gainsboro</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::GhostWhite</td>
+<td>Colori::GhostWhite</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -334,7 +334,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::Goldenrod</td>
+<td>Colori::Goldenrod</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -346,19 +346,19 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::GreenYellow</td>
+<td>Colori::GreenYellow</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::Honeydew</td>
+<td>Colori::Honeydew</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::HotPink</td>
+<td>Colori::HotPink</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::IndiaRed</td>
+<td>Colori::IndianRed</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -370,27 +370,27 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::Temaki</td>
+<td>Colori::Kaki</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Lavender</td>
+<td>Colori::Lavanda</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::LavenderBlush</td>
+<td>Colori::LavenderBlush</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::LawnGreen</td>
+<td>Colori::LawnGreen</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::ColorsChiffon</td>
+<td>Colors::LemonChiffon</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::LightBlue</td>
+<td>Colori::LightBlue</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -402,11 +402,11 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::LightGoldenrodYellow</td>
+<td>Colori::LightGoldenrodYellow</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Verde chiaro</td>
+<td>Colori::LightGreen</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
@@ -414,11 +414,11 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colors::LightPink</td>
+<td>Colori::LightPink</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::LightSalmon</td>
+<td>Colori::LightSalmon</td>
 <td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
@@ -427,279 +427,279 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 </tr>
 <tr class="even">
 <td>Colori::LightSkyBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::LightSlateGray</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::LightSteelBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::LightYellow</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Lime</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::LimeGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::Lino</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colori::Linen</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Magenta</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Maroon</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MediumAquamarine</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::MediumBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MediumOrchid</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::MediumPurple</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MediumSeaGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::MediumSlateBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MediumSpringGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::MediumTurquoise</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MediumVioletRed</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::MidnightBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::MintCream</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::MistyRose</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colori::MistyRose</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Moccasin</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::NavajoWhite</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Blu blu</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::OldLace</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Olive</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::OliveDrab</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Arancione</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::OrangeRed</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Orchidea</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::P aleGoldenrod</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::P aleGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::P aleTurquoise</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::P aleVioletRed</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::P apayaWhip</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colori::P apwhip</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::P eachPuff</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::P eru</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::P ink</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::P lum</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::P owderBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::P urple</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Rosso</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::RosyBrown</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::RosyBrown</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::RoyalBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::RoyalBlue</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colors::SaddleBrown</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::SellerBrown</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Salmon</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colori::Tema</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::SandyBrown</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::ColorsBrown</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::SeaGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::SeaShell</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::SeaShell</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Sienna</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Silver</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::SkyBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::SlateBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::SlateBlue</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::SlateGray</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::SlateGray</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Snow</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::SpringGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
-<td>Colori::SteelBlue</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::SteelBlue</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Tan</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Teal</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Thistle</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colors::Thistle</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Tomato</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Trasparente</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Turchese</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
-<td>Colori::Viola</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Colori::Tema</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::Tutto</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Bianco</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::WhiteSmoke</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="odd">
 <td>Colori::Giallo</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 <tr class="even">
 <td>Colori::YellowGreen</td>
-<td>Costanti per le definizioni di colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
+<td>Costanti per le definizioni dei colori .NET standard. Questi valori sono dati R, G, B che possono essere usati come XMVECTOR o passati direttamente al metodo Clear dell'API Direct3D 10.x/Direct3D 11.</td>
 </tr>
 </tbody>
 </table>
@@ -710,7 +710,7 @@ Vedere anche <a href="/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparis
 
 > [!Note]
 >
-> Tutte le costanti Colors sono definite nello spazio colori [sRGB](https://en.wikipedia.org/wiki/SRGB) standard(così come i colori .NET e i colori HTML sicuri per il Web). Per il rendering corretto con gamma con spazio colore lineare, i valori devono essere regolati leggermente.
+> Tutte le costanti Colors sono definite nello spazio colori [sRGB](https://en.wikipedia.org/wiki/SRGB) standard(così come i colori .NET e i colori HTML sicuri per il Web). Per il rendering con correzione gamma con spazio colore lineare, i valori devono essere regolati leggermente.
 
  
 

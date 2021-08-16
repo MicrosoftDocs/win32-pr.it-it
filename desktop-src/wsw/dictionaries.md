@@ -1,30 +1,30 @@
 ---
 title: Dizionari
-description: I dizionari consentono la suddivisione in token di dati del nodo comuni, ad esempio nomi di elementi/attributi, spazi dei nomi e testo comune in un formato XML binario.
+description: I dizionari consentono la tokenizzazione dei dati dei nodi comuni, ad esempio nomi di elementi/attributi, spazi dei nomi e testo comune all'interno di un formato XML binario.
 ms.assetid: 6f25366c-0e81-479b-930e-ff088d425562
 keywords:
-- Servizi Web dei dizionari per Windows
+- Dizionari Servizi Web per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75ba13760a1ff1a1cef61ff6015c5630ab0e134c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 8ea9ac022ab88f70b304b65581fbcdf294e9aee45c52e3ffd888138b82815230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104399950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841761"
 ---
 # <a name="dictionaries"></a>Dizionari
 
-I dizionari consentono la suddivisione in token di dati del nodo comuni, ad esempio nomi di elementi/attributi, spazi dei nomi e testo comune in un formato XML binario.
+I dizionari consentono la tokenizzazione dei dati dei nodi comuni, ad esempio nomi di elementi/attributi, spazi dei nomi e testo comune all'interno di un formato XML binario.
 
 
-È possibile specificare un [**>Dictionary**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary) come parte del tipo [**di \_ \_ stringa WS XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string) . Tutte le stringhe all'interno di un singolo **dizionario>** devono essere univoche.
+Un [**oggetto Dictionary>**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary) può essere specificato come parte del tipo [**\_ WS XML \_ STRING.**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string) Tutte le stringhe all'interno di **un singolo>** devono essere univoche.
 
-Gli ID del dizionario sono supportati per tutte le codifiche, non solo per il formato XML binario.
+Gli ID dizionario sono supportati per tutte le codifiche (non solo per il formato XML binario).
 
-Con i dizionari viene utilizzata la funzione seguente:
+La funzione seguente viene usata con i dizionari:
 
 -   [**WsGetDictionary**](/windows/desktop/api/WebServices/nf-webservices-wsgetdictionary)
 

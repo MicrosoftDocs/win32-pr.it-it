@@ -82,7 +82,7 @@ La <a href="/windows/desktop/api/winuser/nf-winuser-getclassinfoa"><strong>funzi
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/winuser/nf-winuser-getclassword"><strong>GetClassWord</strong></a></td>
-<td>Recupera il valore a 16 bit (<strong>WORD</strong>) in corrispondenza dell'offset specificato nella memoria della classe aggiuntiva per la classe finestra a cui appartiene la finestra specificata.
+<td>Recupera il valore a 16 bit (<strong>WORD</strong>) in corrispondenza dell'offset specificato nella memoria aggiuntiva della classe della finestra a cui appartiene la finestra specificata.
 <blockquote>
 [!Note]<br />
 Questa funzione è deprecata per qualsiasi uso diverso da <em>nIndex</em> impostato su GCW_ATOM. La funzione viene fornita solo per la compatibilità con le versioni a 16 bit Windows. Le applicazioni devono usare la <a href="/windows/desktop/api/winuser/nf-winuser-getclasslonga"><strong>funzione GetClassLong.</strong></a>

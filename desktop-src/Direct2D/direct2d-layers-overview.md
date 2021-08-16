@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 027be097c5c21929f3ccdbaa169a1f3dac55b394
-ms.sourcegitcommit: 698ce2d9ba2fa650f2875225d99623995fac246a
+ms.openlocfilehash: a54c5336b26d2b84f46df4f688101367686d3dbe60be33d8bac5d8c584151daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114231608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825713"
 ---
 # <a name="layers-overview"></a>Panoramica dei livelli
 
@@ -43,7 +43,7 @@ Anche se i livelli offrono una potente tecnica di rendering per produrre effetti
 
 ## <a name="layers-in-windows-8-and-later"></a>Livelli in Windows 8 e versioni successive
 
-Windows 8 nuove API correlate ai livelli che semplificano, migliorano le prestazioni di e aggiungono funzionalità ai livelli.
+Windows 8 sono state introdotte nuove API correlate ai livelli che semplificano, migliorano le prestazioni di e aggiungono funzionalità ai livelli.
 
 ### <a name="id2d1devicecontext-and-pushlayer"></a>ID2D1DeviceContext e PushLayer
 

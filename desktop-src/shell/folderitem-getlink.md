@@ -22,7 +22,7 @@ ms.locfileid: "118224065"
 ---
 # <a name="folderitemgetlink-property"></a>FolderItem.GetLink - proprietà
 
-Contiene l'oggetto [**ShellLinkObject dell'elemento,**](shelllinkobject-object.md) se l'elemento è un collegamento.
+Contiene l'oggetto [**ShellLinkObject**](shelllinkobject-object.md) dell'elemento, se l'elemento è un collegamento.
 
 Questa proprietà è di sola lettura.
 
@@ -37,11 +37,11 @@ objGetLink = FolderItem.GetLink
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che riceve [**l'oggetto ShellLinkObject.**](shelllinkobject-object.md)
+Variabile di tipo [**IDispatch che**](/windows/win32/api/oaidl/nn-oaidl-idispatch) riceve l'oggetto [**ShellLinkObject.**](shelllinkobject-object.md)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente usa **GetLink** per recuperare [**l'oggetto ShellLinkObject**](shelllinkobject-object.md) per un collegamento Internet Explorer. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato GetLink** per recuperare [**l'oggetto ShellLinkObject**](shelllinkobject-object.md) per un collegamento Internet Explorer. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -163,7 +163,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

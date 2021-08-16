@@ -15,15 +15,15 @@ ms.locfileid: "118379396"
 
 Quando si crea una patch per [gli aggiornamenti di piccole dimensioni,](small-updates.md)gli autori devono rispettare le linee guida seguenti:
 
--   Le patch di aggiornamento di piccole dimensioni devono essere progettate per una singola installazione di destinazione.
+-   Le patch di aggiornamento di piccole dimensioni devono essere progettate per un'installazione singola di destinazione.
 -   Le patch di aggiornamento di piccole dimensioni devono usare la versione meno recente come installazione di destinazione.
--   Una patch di aggiornamento di piccole dimensioni deve sostituire e rendere obsolete tutte le patch di aggiornamento di piccole dimensioni precedenti.
+-   Una piccola patch di aggiornamento deve sostituire e rendere obsolete tutte le patch di aggiornamento di piccole dimensioni precedenti.
 
-Lo scenario seguente illustra quando è ottimale una patch di aggiornamento di piccole dimensioni.
+Lo scenario seguente illustra quando una patch di aggiornamento di piccole dimensioni è più adatta.
 
-La società viene fornita la versione 1.0 di Myproduct.msi. Poco dopo, si spedirà una [piccola](small-updates.md) patch di aggiornamento per Myproduct.msi denominata QFE1. Questa operazione non modifica la [**proprietà ProductCode**](productcode.md) o [**la proprietà ProductVersion.**](productversion.md)
+La società viene fornita con la versione 1.0 Myproduct.msi. Poco dopo si spedirà una piccola patch [di](small-updates.md) aggiornamento per Myproduct.msi denominata QFE1. Ciò non modifica la [**proprietà ProductCode**](productcode.md) o [**la proprietà ProductVersion.**](productversion.md)
 
-Successivamente, si crea una seconda [patch di aggiornamento di](small-updates.md) piccole dimensioni per Myproduct.msi denominata QFE2. Questa seconda patch deve essere Myproduct.msi versione 1.0. Questa seconda patch non deve essere Myproduct.msi versione 1.0 e Myproduct.msi versione 1.0 + QFE1. Quando si applica QFE2, deve rimuovere QFE1.
+Successivamente si crea una seconda piccola patch [di](small-updates.md) aggiornamento per Myproduct.msi denominata QFE2. Questa seconda patch deve essere Myproduct.msi versione 1.0. Questa seconda patch non deve essere Myproduct.msi versione 1.0 e Myproduct.msi versione 1.0 + QFE1. Quando si applica QFE2, deve rimuovere QFE1.
 
  
 
