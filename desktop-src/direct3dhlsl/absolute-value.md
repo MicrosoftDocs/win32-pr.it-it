@@ -1,6 +1,6 @@
 ---
 title: Valore assoluto
-description: Assumere il valore assoluto di un operando di origine utilizzato in un'operazione aritmetica.
+description: Accetta il valore assoluto di un operando di origine usato in un'operazione aritmetica.
 ms.assetid: FD2ACE91-0AF6-43E8-80C5-849488E39BEF
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,33 +9,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27ceefa2c4b4ee2eb890b0692a33266e89a18cfb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 904ff3bb89e71a95a1c88851426ba283987ba6b96f336c91dd443794ee5e143d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795410"
 ---
 # <a name="absolute-value"></a>Valore assoluto
 
-Assumere il valore assoluto di un operando di origine utilizzato in un'operazione aritmetica.
+Accetta il valore assoluto di un operando di origine usato in un'operazione aritmetica.
 
 
 
-| \_ABS |
+| \_Ass |
 |-------|
 
 
 
- 
+ 
 
-Questo modificatore viene utilizzato per solo istruzioni e virgola mobile a precisione singola e doppia. Il modificatore **\_ ABS** forza il segno dei numeri sull'operando di origine positivo, inclusi i valori inf.
+Questo modificatore viene usato solo per le istruzioni e la virgola mobile a precisione singola e doppia. Il **\_ modificatore abs** forza il segno dei numeri sull'operando di origine positivo, inclusi i valori INF.
 
-L'applicazione di **\_ ABS** su Nan conserva Nan, anche se il particolare modello di bit Nan che risulta non è definito.
+**\_ L'applicazione di abs** su NaN mantiene NaN, anche se il particolare modello di bit NaN che risulta non è definito.
 
-Quando \_ ABS viene combinato con il modificatore [negazioni](negate.md) , la combinazione forza il segno a essere negativo, come se il modificatore **\_ ABS** venisse applicato per primo, quindi la **negazione**.
+Quando abs viene combinato con il modificatore negate, la combinazione forza il segno a essere negativo, come se il \_ **\_ modificatore abs** fosse applicato per [](negate.md) primo, quindi nega **.**
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questo modificatore è supportato nei modelli shader seguenti.
 
@@ -43,27 +43,27 @@ Questo modificatore è supportato nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Modificatori di istruzione](instruction-modifiers.md)
+[Modificatori di istruzioni](instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

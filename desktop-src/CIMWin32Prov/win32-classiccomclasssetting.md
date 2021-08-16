@@ -353,7 +353,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ LocalServer32 Default \[ \] ")
 </dt> </dl>
 
-Percorso completo che include nome file o solo nome file per un'applicazione server locale a 32 bit. Il provider non restituisce sempre il percorso completo.
+Percorso completo che include il nome file o solo il nome file di un'applicazione server locale a 32 bit. Il provider non restituisce sempre il percorso completo.
 
 </dd> <dt>
 
@@ -369,7 +369,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AuxUserType \\ \\ 3 Default \[ \] ")
 </dt> </dl>
 
-Nome completo dell'applicazione COM. Viene usato in aree come il campo **Risultati** della finestra di dialogo **Incolla speciale OLE.**
+Nome completo dell'applicazione COM. Viene usato in aree come il campo **Risultati** della finestra di **dialogo Incolla speciale OLE.**
 
 </dd> <dt>
 

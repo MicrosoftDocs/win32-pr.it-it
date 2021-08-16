@@ -3,7 +3,7 @@ title: Opzione /old
 description: Questa opzione è obsoleta ed è stata sostituita dall'opzione /oldtlb.
 ms.assetid: 7c38aebd-d2bb-4b2c-b515-66de6ada2cb1
 keywords:
-- /old - opzione MIDL
+- Opzione /old MIDL
 topic_type:
 - apiref
 api_name:

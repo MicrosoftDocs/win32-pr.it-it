@@ -1,11 +1,11 @@
 ---
 title: Metodo SystemMonitor BrowseCounters
-description: Consente di visualizzare la finestra di dialogo Aggiungi contatori.
+description: Consente di visualizzare la finestra di dialogo Aggiungi contatori .
 ms.assetid: 7edc4a80-4a04-49fd-b383-b892e1e16215
 keywords:
 - Metodo BrowseCounters SysMon
-- Metodo BrowseCounters SysMon, interfaccia SystemMonitor
-- Interfaccia SystemMonitor SysMon, metodo BrowseCounters
+- Metodo BrowseCounters SysMon , interfaccia SystemMonitor
+- Interfaccia SystemMonitor SysMon , metodo BrowseCounters
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96df5d50ab9fc89963f9d09f4c0cb92479b4ecac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e88d493ea0e4e1a9312191533162c8eb5a94cfb4233d17d21bb7217a136d403
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882927"
 ---
-# <a name="systemmonitorbrowsecounters-method"></a>Metodo SystemMonitor:: BrowseCounters
+# <a name="systemmonitorbrowsecounters-method"></a>Metodo SystemMonitor::BrowseCounters
 
-Consente di visualizzare la finestra di dialogo **Aggiungi contatori** .
+Consente di visualizzare **la finestra di dialogo** Aggiungi contatori .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa finestra di dialogo consente all'utente di selezionare i contatori delle prestazioni locali o remoti da un elenco di oggetti prestazioni. I contatori selezionati vengono aggiunti alla raccolta dei [**contatori**](counters.md) e visualizzati nel grafico o nel report.
+Questa finestra di dialogo consente all'utente di selezionare contatori delle prestazioni locali o remoti da un elenco di oggetti prestazioni. I contatori selezionati vengono aggiunti alla raccolta [**Counters**](counters.md) e visualizzati nel grafico o nel report.
 
-Per ricevere una notifica quando viene aggiunto un contatore, implementare l'evento [**OnCounterAdded**](systemmonitor-oncounteradded.md) .
+Per ricevere una notifica quando viene aggiunto un contatore, implementare [**l'evento OnCounterAdded.**](systemmonitor-oncounteradded.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Per ricevere una notifica quando viene aggiunto un contatore, implementare l'eve
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Per ricevere una notifica quando viene aggiunto un contatore, implementare l'eve
 [**SystemMonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**Contatori. Aggiungi**](counters-add.md)
+[**Counters.Add**](counters-add.md)
 </dt> </dl>
 
  

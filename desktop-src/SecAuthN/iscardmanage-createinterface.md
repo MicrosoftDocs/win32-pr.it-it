@@ -1,7 +1,7 @@
 ---
 description: Crea l'interfaccia specificata.
 ms.assetid: f4cfc407-b006-46a2-9751-834b532309ec
-title: 'Metodo ISCardManage:: CreateInterface'
+title: Metodo ISCardManage::CreateInterface
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 99a3f7c1acd4266395917b47c81f044d5385b3d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9b231ec7930b78c1693e38268638e7a24b26dfa32d8f25acb5a429dbcdedc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118922660"
 ---
-# <a name="iscardmanagecreateinterface-method"></a>Metodo ISCardManage:: CreateInterface
+# <a name="iscardmanagecreateinterface-method"></a>Metodo ISCardManage::CreateInterface
 
-\[Il metodo **CreateInterface** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo CreateInterface** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **CreateInterface** crea l'interfaccia specificata.
+Il **metodo CreateInterface** crea l'interfaccia specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ HRESULT CreateInterface(
 
 <dl> <dt>
 
-*pguidInterface* \[ in\]
+*pguidInterface* \[ Pollici\]
 </dt> <dd>
 
 Valore GUID dell'interfaccia da creare.
 
 </dd> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
 Nome dell'interfaccia da creare se il GUID non è disponibile. I valori standard sono "CryptoProvider".
 
 </dd> <dt>
 
-*pUserData* \[ in\]
+*pUserData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a dati specifici dell'utente da utilizzare nella creazione di un'interfaccia.
+Puntatore ai dati specifici dell'utente da utilizzare nella creazione di un'interfaccia.
 
 </dd> <dt>
 
-*ppInterface* \[ out\]
+*ppInterface* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'interfaccia restituita.
@@ -79,10 +79,10 @@ I possibili valori restituiti sono i seguenti:
 
 | Codice restituito                                                                                   | Descrizione                                                                                      |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/>                                                     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno dei parametri specificati non è valido.<br/>                                         |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un puntatore errato è stato passato nel parametro *pguidInterface* o *pUserData* .<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                                                                        |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/>                                                     |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno dei parametri forniti non è valido.<br/>                                         |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | È stato passato un puntatore non valido nel *parametro pguidInterface* o *pUserData.*<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                                                                        |
 
 
 
@@ -90,9 +90,9 @@ I possibili valori restituiti sono i seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di tutti i metodi definiti dall'interfaccia [**ISCardManage**](iscardmanage.md) , vedere **ISCardManage**.
+Per un elenco di tutti i metodi definiti [**dall'interfaccia ISCardManage,**](iscardmanage.md) vedere **ISCardManage**.
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della [*Smart Card*](../secgloss/s-gly.md) se è stata chiamata una funzione Smart Card per completare la richiesta. Per informazioni sui codici di errore della smart card, vedere [valori restituiti da Smart Card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati [](../secgloss/s-gly.md) in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per informazioni sui smart card di errore, vedere [Valori restituiti da smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,8 +100,8 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

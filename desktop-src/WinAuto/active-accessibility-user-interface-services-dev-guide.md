@@ -1,6 +1,6 @@
 ---
-title: Guida per Active Accessibility Interfaccia utente Services per sviluppatori
-description: In questa sezione vengono illustrati gli argomenti seguenti
+title: Guida per gli sviluppatori di Active Accessibility Interfaccia utente Services
+description: 'In questa sezione vengono illustrati gli argomenti seguenti:'
 ms.assetid: 91738bc9-0e33-4959-8f8a-ac4645e8511a
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118327041"
 ---
-# <a name="active-accessibility-user-interface-services-developers-guide"></a>Guida per Active Accessibility Interfaccia utente Services per sviluppatori
+# <a name="active-accessibility-user-interface-services-developers-guide"></a>Guida per gli sviluppatori di Active Accessibility Interfaccia utente Services
 
 In questa sezione vengono illustrati gli argomenti seguenti:
 
--   [Interfaccia utente API](user-interface-apis.md)
+-   [INTERFACCIA UTENTE API](user-interface-apis.md)
 -   [Chiamata Active Accessibility API](calling-active-accessibility-apis.md)
 -   [Guida per gli sviluppatori per Active Accessibility client](developer-s-guide-for-active-accessibility-clients.md)
 -   [Guida per gli sviluppatori per Active Accessibility server](developer-s-guide-for-active-accessibility-servers.md)

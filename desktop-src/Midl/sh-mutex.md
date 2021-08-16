@@ -18,9 +18,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118641366"
 ---
-# <a name="sh_mutex-keyword"></a>Parola \_ chiave sh mutex
+# <a name="sh_mutex-keyword"></a>Parola \_ chiave mutex sh
 
-La **parola chiave sh \_ mutex** specifica che un `system_handle` oggetto contiene un handle per un mutex.
+La **parola chiave sh \_ mutex** specifica che un oggetto `system_handle` contiene un handle per un mutex.
 
 ``` syntax
 [system_handle(sh_mutex)]
@@ -32,11 +32,11 @@ La **parola chiave sh \_ mutex** specifica che un `system_handle` oggetto contie
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` in base alle specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
+La [**system_handle**](system-handle.md) documentazione contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l'attributo , il flag deve essere impostato `system_handle` `-target` su `NT100` (o superiore) durante l'esecuzione midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato su (o versione successiva) quando si `system_handle` `-target` esegue `NT100` midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -61,7 +61,7 @@ interface MyInterface : IUnknown
 [**system_handle**](system-handle.md)
 </dt> <dt>
 
-[Oggetti mutex](../sync/mutex-objects.md)
+[Oggetti Mutex](../sync/mutex-objects.md)
 </dt> <dt>
 
 [Sicurezza degli oggetti di sincronizzazione e diritti di accesso](../sync/synchronization-object-security-and-access-rights.md)

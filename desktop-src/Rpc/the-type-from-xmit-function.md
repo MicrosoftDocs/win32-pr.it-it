@@ -1,21 +1,21 @@
 ---
 title: Funzione type_from_xmit
-description: Gli stub chiamano il tipo \_ dalla \_ funzione Xmit per convertire i dati dal tipo trasmesso al tipo presentato all'applicazione.
+description: Gli stub chiamano il tipo dalla funzione xmit per convertire i dati dal tipo trasmesso al tipo \_ \_ presentato all'applicazione.
 ms.assetid: 679a2738-a166-4e73-bca7-950f979ed97a
 keywords:
 - type_from_xmit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e594e8586522dd3697f5ae62c95851917741f73c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1a38e372467208c76111728080037c65f5dca2856304a49f06e7e33426277eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923700"
 ---
-# <a name="the-type_from_xmit-function"></a>Tipo \_ dalla \_ funzione Xmit
+# <a name="the-type_from_xmit-function"></a>Tipo \_ della \_ funzione xmit
 
-Gli stub chiamano il **tipo \_ dalla funzione \_ Xmit** per convertire i dati dal tipo trasmesso al tipo presentato all'applicazione. La funzione è definita come segue:
+Gli stub chiamano il **tipo \_ dalla funzione \_ xmit** per convertire i dati dal tipo trasmesso al tipo presentato all'applicazione. La funzione è definita come:
 
 ``` syntax
 void __RPC_USER <type>_from_xmit ( 
@@ -25,9 +25,9 @@ void __RPC_USER <type>_from_xmit (
 
 Il primo parametro è un puntatore ai dati trasmessi. La funzione imposta il secondo parametro in modo che punti ai dati presentati.
 
-Il **tipo della funzione \_ \_ Xmit** deve gestire la memoria per il tipo presentato. La funzione deve allocare memoria per l'intera struttura di dati che inizia dall'indirizzo indicato dal secondo parametro, ad eccezione del parametro stesso (lo stub alloca memoria per il nodo radice e la passa alla funzione). Il valore del secondo parametro non può essere modificato durante la chiamata. La funzione può modificare il contenuto in corrispondenza di tale indirizzo.
+Il **tipo della funzione \_ \_ xmit** deve gestire la memoria per il tipo presentato. La funzione deve allocare memoria per l'intera struttura di dati che inizia in corrispondenza dell'indirizzo indicato dal secondo parametro, ad eccezione del parametro stesso (lo stub alloca memoria per il nodo radice e lo passa alla funzione). Il valore del secondo parametro non può cambiare durante la chiamata. La funzione può modificare il contenuto in corrispondenza di tale indirizzo.
 
-In questo esempio, il tipo di collegamento doppio della funzione \_ \_ \_ da \_ Xmit converte la matrice di dimensioni in un elenco a collegamento doppio. La funzione mantiene il puntatore valido all'inizio dell'elenco, libera la memoria associata al resto dell'elenco, quindi crea un nuovo elenco che inizia con lo stesso puntatore. La funzione usa una funzione di utilità, **InsertNewNode**, per aggiungere un nodo elenco alla fine dell'elenco e per assegnare i puntatori *pNext* e *pPrevious* ai valori appropriati.
+In questo esempio la funzione DOUBLE \_ LINK \_ TYPE di \_ xmit converte la matrice \_ dimensionata in un elenco collegato doppio. La funzione mantiene il puntatore valido all'inizio dell'elenco, libera la memoria associata al resto dell'elenco, quindi crea un nuovo elenco che inizia in corrispondenza dello stesso puntatore. La funzione usa una funzione di utilità, **InsertNewNode**, per aggiungere un nodo elenco alla fine dell'elenco e assegnare i puntatori *pNext* e *pPrevious* ai valori appropriati.
 
 
 ```C++
@@ -63,9 +63,9 @@ void __RPC_USER DOUBLE_LINK_TYPE_from_xmit(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

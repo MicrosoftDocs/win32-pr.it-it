@@ -13,7 +13,7 @@ ms.locfileid: "118402071"
 ---
 # <a name="clock-times"></a>Orario di clock
 
-DirectShow definisce due ore di clock correlate: l'ora di riferimento e l'ora del flusso.
+DirectShow definisce due orari di clock correlati: ora di riferimento e ora del flusso.
 
 -   *L'ora di* riferimento è l'ora assoluta restituita dal clock di riferimento. Vedere [Clock di riferimento.](reference-clocks.md)
 -   *L'ora di* flusso è definita in relazione all'ultima esecuzione del grafo.

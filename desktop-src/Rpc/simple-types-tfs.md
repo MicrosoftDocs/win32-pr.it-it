@@ -4,16 +4,16 @@ description: Tutti i tipi semplici sono rappresentati da un singolo carattere di
 ms.assetid: 77c293a1-70c4-4825-bb2e-de36e01d3abb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afe123ca7c06a0522a139dc0cca8a9e24d1d585d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e265c24d1eaf4b85ab67c7f8997c656257522bfc8290e73596a8628bdd4215c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925161"
 ---
 # <a name="simple-types"></a>Tipi semplici
 
-Tutti i tipi semplici sono rappresentati da un singolo carattere di formato che indica il tipo in base al nome. Sono inclusi tutti i tipi numerici e altri tipi IDL speciali. L'elenco è il seguente:
+Tutti i tipi semplici sono rappresentati da un singolo carattere di formato che indica il tipo in base al nome. Sono inclusi tutti i tipi numerici e alcuni altri tipi IDL speciali. L'elenco è il seguente:
 
 ``` syntax
 FC_BYTE,                    // 0x01
@@ -35,13 +35,13 @@ FC_INT3264,                 // 0xb8
 FC_UINT3264,                // 0xb9
 ```
 
-I tipi SMALL, WCHAR, HYPER, ERROR \_ status \_ T, \_ \_ INT3264 sono intrinseci MIDL con interpretazioni RPC speciali. I tipi INT e \_ \_ Int32 vengono mappati a FC \_ Long, unsigned int e unsigned \_ \_ Int32 map to FC \_ ULong, \_ \_ Int64 e unsigned \_ \_ Int64 map to FC \_ Hyper.
+I tipi SMALL, WCHAR, HYPER, ERROR \_ STATUS \_ T, \_ \_ INT3264 sono intrinseci MIDL con interpretazioni RPC speciali. I tipi INT e INT32 eseguono il mapping a \_ \_ FC \_ LONG, unsigned INT e unsigned \_ \_ INT32 a FC \_ ULONG, \_ \_ INT64 e UNsigned \_ \_ INT64 a FC \_ HYPER.
 
 I \_ \_ tipi INT128, FLOAT128 e FLOAT80 non sono supportati.
 
- 
+ 
 
- 
+ 
 
 
 

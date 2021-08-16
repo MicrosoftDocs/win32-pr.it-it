@@ -13,33 +13,33 @@ ms.locfileid: "118310718"
 ---
 # <a name="containers"></a>Contenitori
 
-Un ActiveX Control è un contenitore OLE che supporta le funzionalità aggiuntive seguenti:
+Un ActiveX control è un contenitore OLE che supporta le funzionalità aggiuntive seguenti:
 
 -   Oggetti incorporati da server in-process
 -   Attivazione sul posto
--   OLEMISC \_ ACTIVATEWHENVISIBLE
+-   ATTIVAZIONE \_ OLEMISCWHENVISIBLE
 -   Gestione degli eventi
 
 ActiveX I contenitori di controllo devono fornire il supporto per tutte queste funzionalità.
 
 Per altre informazioni, vedere i seguenti argomenti:
 
--   [Interfacce obbligatorie](required-interfaces.md)
+-   [Interfacce necessarie](required-interfaces.md)
 -   [Metodi facoltativi](optional-methods-in-control-interfaces.md)
--   [Supporto di bit di stato vari](miscellaneous-status-bits-support.md)
+-   [Supporto dei bit di stato vari](miscellaneous-status-bits-support.md)
 -   [Gestione della tastiera nei controlli](keyboard-handling-in-controls.md)
 -   [Archiviazione Interfacce](storage-interfaces.md)
 -   [Proprietà di ambiente](ambient-properties-for-controls.md)
--   [Proprietà, eventi e metodi estesi](extended-properties--events-and-methods.md)
+-   [Proprietà estese, eventi e metodi](extended-properties--events-and-methods.md)
 -   [Reflection dei messaggi](message-reflection.md)
 -   [Ritaglio automatico](automatic-clipping.md)
--   [Riduzione delle prestazioni in assenza di un'interfaccia](degrading-gracefully-in-the-absence-of-an-interface.md)
+-   [Degradazione normalmente in assenza di un'interfaccia](degrading-gracefully-in-the-absence-of-an-interface.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[ActiveX Linee guida per i contenitori di controlli e controlli](activex-control-and-control-container-guidelines.md)
+[ActiveX Linee guida per il controllo e il controllo dei contenitori](activex-control-and-control-container-guidelines.md)
 </dt> </dl>
 
  

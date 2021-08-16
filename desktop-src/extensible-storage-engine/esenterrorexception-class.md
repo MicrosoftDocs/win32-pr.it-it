@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentErrorException'
+description: Altre informazioni sulla classe EsentErrorException
 title: Classe EsentErrorException
 TOCTitle: EsentErrorException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentErrorException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eb05197392c1d5c8798968254b24d2d0ae677bbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f3890248063740f7c1078da54495ddffb97c93179ee929a629803d53b69b964
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779290"
 ---
 # <a name="esenterrorexception-class"></a>Classe EsentErrorException
 
@@ -38,18 +38,18 @@ Classe di base per le eccezioni di errore ESENT.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      Microsoft. ISAM. esent. Interop. EsentErrorException  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentCannotLogDuringRecoveryRedoException](./esentcannotlogduringrecoveryredoexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentPreviousVersionException](./esentpreviousversionexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentVersionStoreEntryTooBigException](./esentversionstoreentrytoobigexception-class.md)  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      Microsoft.Isam.Esent.Interop.EsentErrorException  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentCannotLogDuringRecoveryRedoException](./esentcannotlogduringrecoveryredoexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentPreviousVersionException](./esentpreviousversionexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentVersionStoreEntryTooBigException](./esentversionstoreentrytoobigexception-class.md)  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,4 +77,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentErrorException](./esenterrorexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: NM_FONTCHANGED di notifica (Commctrl.h)
+title: NM_FONTCHANGED codice di notifica (Commctrl.h)
 description: Inviato da un controllo di visualizzazione elenco quando il controllo ha modificato un tipo di carattere. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: ffa019b0-34be-4bb3-b9dd-c267545fec84
 keywords:

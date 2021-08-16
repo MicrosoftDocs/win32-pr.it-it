@@ -3,7 +3,7 @@ title: Ulteriori considerazioni
 description: Quando si esegue la portabilità del codice, tenere presente quanto segue.
 ms.assetid: 2d649a09-b593-477a-9b4f-d2404784f4b0
 keywords:
-- porting tips 64-bit Windows Programming (Suggerimenti per la portabilità a 64 bit Windows programmazione)
+- suggerimenti per la portabilità a 64 bit Windows programmazione
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 199f522bebf0d6d5552aa81d99aab12f77685dea35eb329b9e7d11d46b4f1500
@@ -65,7 +65,7 @@ Quando si esegue la portabilità del codice, tenere presente quanto segue:
     a = a & ~(b - 1);
     ```
 
-    Il problema è che ~(b–1) produce "0x0000 0000 xxxx xxxx" e non "0xFFFF FFFF xxxx xxxx". Il compilatore non lo rileverà. Per risolvere il problema, modificare il codice come segue:
+    Il problema è che ~(b-1) produce "0x0000 0000 xxxx xxxx" e non "0xFFFF FFFF xxxx xxxx". Il compilatore non lo rileverà. Per risolvere il problema, modificare il codice come segue:
 
     ```syntax
     a = a & ~((UINT_PTR)b - 1);

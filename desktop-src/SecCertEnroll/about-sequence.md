@@ -1,19 +1,19 @@
 ---
-description: Una sequenza contiene un campo ordinato di uno o più tipi.
+description: Sequence contiene un campo ordinato di uno o più tipi.
 ms.assetid: b1a37cde-d5a2-4b01-a076-cb09741ae51d
 title: SEQUENCE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28602a122303f341507029375a2e4762581ec197
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1362fd66180d6f85926e1c0fe0ae57cc0edbf5edc770283ef7d9eae81cbd7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903700"
 ---
 # <a name="sequence"></a>SEQUENCE
 
-Una **sequenza** contiene un campo ordinato di uno o più tipi. Viene codificato in una tripletta TLV che inizia con un byte di **tag** di 0x30. Il seguente Certutil.exe output dell'argomento [ \# ASN. 1 con codifica PKCS 10](pkcs--10-encoded-asn-1.md) offre più esempi di strutture di dati di **sequenza** . L'output Mostra una chiave pubblica di 128 byte e un esponente di tre byte.
+Sequence **contiene** un campo ordinato di uno o più tipi. Viene codificato in una tripletta TLV che inizia con un byte **tag** di 0x30. L'output Certutil.exe seguente dell'argomento [ \# PKCS 10 Encoded ASN.1 (ASN con codifica PKCS 10)](pkcs--10-encoded-asn-1.md) fornisce diversi esempi di strutture di dati **SEQUENCE.** L'output mostra una chiave pubblica a 128 byte e un esponente a tre byte.
 
 ``` syntax
 30 81 9f                             ; SEQUENCE (9f Bytes)
@@ -38,16 +38,16 @@ Una **sequenza** contiene un campo ordinato di uno o più tipi. Viene codificato
 |           01 00 01
 ```
 
-Se la **sequenza** contiene meno di 128 byte, il campo **lunghezza** della tripletta TLV richiede un solo byte per specificare la lunghezza del contenuto. Se è maggiore di 127 byte, bit 7 del campo **lunghezza** è impostato su 1 e BITS 6-0 specifica il numero di byte aggiuntivi usati per identificare la lunghezza del contenuto. Ad esempio, il secondo byte della prima riga nell'esempio precedente indica che è presente un byte di **lunghezza** finale che specifica 0x9F byte di contenuto (la maggior parte della **sequenza** non viene visualizzata). Per ulteriori informazioni, vedere [lunghezza codificata e byte valore](about-encoded-length-and-value-bytes.md).
+Se **SEQUENCE contiene** meno di 128 byte, il campo **Length** della tripletta TLV richiede un solo byte per specificare la lunghezza del contenuto. Se è maggiore di 127 byte, il bit 7 del campo **Length** è impostato su 1 e i bit da 6 a 0 specificano il numero di byte aggiuntivi usati per identificare la lunghezza del contenuto. Ad esempio, il secondo byte della prima riga nell'esempio precedente indica che è presente un byte **length** finale  che specifica 0x9F byte di contenuto (la maggior parte della sequenza non viene visualizzata). Per altre informazioni, vedere [Lunghezza codificata e Byte valore.](about-encoded-length-and-value-bytes.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Sistema di tipi ASN. 1](about-asn-1-type-system.md)
+[Sistema di tipi ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codifica DER dei tipi ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codifica DER dei tipi ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Guida alla programmazione WPD
-description: Questa guida alla programmazione è incentrata sul modo in cui le attività di esempio vengono eseguite usando le interfacce e i metodi WPD disponibili nelle interfacce.
+description: Questa guida per programmatori è incentrata sul modo in cui le attività di esempio vengono eseguite usando le interfacce e i metodi WPD disponibili nelle interfacce.
 ms.assetid: 87777b0b-a7a0-4032-99bb-92b717d3c452
 ms.topic: article
 ms.date: 05/31/2018

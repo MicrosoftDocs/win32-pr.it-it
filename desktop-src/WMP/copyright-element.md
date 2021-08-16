@@ -1,5 +1,5 @@
 ---
-title: Elemento COPYRIGHT (msfeeds. h)
+title: Elemento COPYRIGHT (Msfeeds.h)
 description: L'elemento COPYRIGHT definisce una stringa di testo che specifica le informazioni sul copyright per un elemento ASX o ENTRY.
 ms.assetid: 264b92de-b10c-41b9-b219-727879079f15
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83b757528cfb14a01854346854a342ee9faced65
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e5a01e97364aa47182e38e3e3066895c771e2d5edb6c480e8108cb168e7f8cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997461"
 ---
-# <a name="copyright-element"></a>COPYRIGHT (elemento)
+# <a name="copyright-element"></a>Elemento COPYRIGHT
 
-L'elemento **Copyright** definisce una stringa di testo che specifica le informazioni sul copyright per un elemento **ASX** o **entry** .
+**L'elemento COPYRIGHT** definisce una stringa di testo che specifica le informazioni sul copyright per **un elemento ASX** **o ENTRY.**
 
 ``` syntax
 <COPYRIGHT>
@@ -41,7 +41,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia       | Elementi           |
 |-----------------|--------------------|
-| Elementi padre | **ASX**, **voce** |
+| Elementi padre | **ASX**, **ENTRY** |
 | Elementi figlio  | nessuno               |
 
 
@@ -50,13 +50,13 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento definisce una stringa di testo che specifica le informazioni sul copyright per un elemento **ASX** o **entry** .
+Questo elemento definisce una stringa di testo che specifica le informazioni sul copyright per **un elemento ASX** **o ENTRY.**
 
-Quando questo elemento viene visualizzato all'interno di un elemento **ASX** , la stringa di copyright viene visualizzata solo come **Mostra** informazioni. Quando questo elemento viene visualizzato all'interno di un elemento **entry** , il testo viene visualizzato come informazioni di ritaglio. Ogni elemento **ASX** e **entry** padre deve contenere al massimo un elemento **Copyright** figlio. Più elementi di **Copyright** dopo il primo verranno ignorati e non verranno visualizzati.
+Quando questo elemento viene visualizzato all'interno **di un elemento ASX,** la stringa di copyright viene visualizzata solo come **Mostra** informazioni. Quando questo elemento viene visualizzato all'interno di **un elemento ENTRY,** il testo viene visualizzato come informazioni sul clip. Ogni elemento **ASX e** **ENTRY** padre deve contenere al massimo un elemento **COPYRIGHT** figlio. Più **elementi COPYRIGHT** dopo il primo verranno ignorati e non verranno visualizzati.
 
-I caratteri per il copyright e i simboli di registrazione dei marchi (o) potrebbero non essere visualizzati correttamente se il metafile non è codificato con lo schema di codifica UTF-8. In questo caso, per visualizzare correttamente uno di questi simboli per tutti gli utenti, è invece possibile usare gli equivalenti ASCII (c) e (R).
+I caratteri per i simboli di registrazione del copyright e del marchio ( o ) potrebbero non essere visualizzati correttamente se il metafile non è codificato usando lo schema di codifica UTF-8. In questo caso, per visualizzare correttamente uno di questi simboli per tutti gli utenti, è possibile usare gli equivalenti ASCII (c) e (R).
 
-Se il metafile è codificato con UTF-8, i simboli del copyright e dei marchi vengono visualizzati correttamente.
+Se il metafile viene codificato usando UTF-8, i simboli di copyright e marchio verranno visualizzati correttamente.
 
 ## <a name="examples"></a>Esempio
 
@@ -74,8 +74,8 @@ Se il metafile è codificato con UTF-8, i simboli del copyright e dei marchi ven
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/>                                 |
-| Intestazione<br/>  | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/>                                 |
+| Intestazione<br/>  | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Se il metafile è codificato con UTF-8, i simboli del copyright e dei marchi ven
 
 <dl> <dt>
 
-[**Aggiunta di caratteri di copyright a metafile**](adding-copyright-characters-to-metafiles.md)
+[**Aggiunta di caratteri di copyright ai metafile**](adding-copyright-characters-to-metafiles.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

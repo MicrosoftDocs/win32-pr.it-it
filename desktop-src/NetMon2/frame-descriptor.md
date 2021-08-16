@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura del descrittore di frame fornisce informazioni descrittive sui frame non elaborati.
+description: La struttura FRAME \_ DESCRIPTOR fornisce informazioni descrittive sui frame non elaborati.
 ms.assetid: f2fc256e-8e64-49c1-b2ad-ef656762d5c7
-title: Struttura FRAME_DESCRIPTOR (Netmon. h)
+title: FRAME_DESCRIPTOR struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: c327ce1568eec07aabe3334013dae8b720ab7446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e675c07eae46096878e7c0aa71b53ba5bf22194e82ad8cc5aa5b6070d7e27e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938572"
 ---
-# <a name="frame_descriptor-structure"></a>\_Struttura del descrittore di frame
+# <a name="frame_descriptor-structure"></a>Struttura \_ FRAME DESCRIPTOR
 
-La struttura del **\_ descrittore di frame** fornisce informazioni descrittive sui frame non elaborati.
+La **struttura FRAME \_ DESCRIPTOR** fornisce informazioni descrittive sui frame non elaborati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,10 +55,10 @@ Puntatore ai dati del frame.
 
 </dd> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd>
 
-Tempo di sistema, in microsecondi, quando il frame è stato acquisito. Questo tempo viene in genere usato per determinare l'intervallo tra l'acquisizione di due frame.
+Ora di sistema, in microsecondi, in cui è stato acquisito il frame. Questo tempo viene in genere usato per determinare l'intervallo tra i due fotogrammi acquisiti.
 
 </dd> <dt>
 
@@ -79,11 +79,11 @@ Lunghezza effettiva del frame copiata.
 **Etype**
 </dt> <dd>
 
-Nome etype.
+Nome del tipo.
 
 </dd> <dt>
 
-**SAP**
+**Sap**
 </dt> <dd>
 
 Valore SAP.
@@ -100,14 +100,14 @@ Indice del protocollo trovato.
 **LowProtocolOffset**
 </dt> <dd>
 
-Offset ai dati del protocollo ottenuti da **LowProtocol**.
+Offset ai dati del protocollo ottenuti **da LowProtocol**.
 
 </dd> <dt>
 
 **HighPort**
 </dt> <dd>
 
-Porta del protocollo elevato identificato in **LowProtocol**.
+Porta del protocollo alto identificata in **LowProtocol.**
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Offset ai dati del protocollo ottenuti da **HighPort**.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

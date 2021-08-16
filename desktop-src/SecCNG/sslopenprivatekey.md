@@ -1,7 +1,7 @@
 ---
 description: Apre un handle per una chiave privata.
 ms.assetid: 2406be2c-121c-4475-b193-d370a88641da
-title: Funzione SslOpenPrivateKey (Sslprovider. h)
+title: Funzione SslOpenPrivateKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 6fd5c10ce6385e377c72d21f4557d27d2345737d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bab1451ada84576ee33623dfdaa7d8dcad189e6d4ef8050b0b79fafaba11b49c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905650"
 ---
-# <a name="sslopenprivatekey-function"></a>SslOpenPrivateKey (funzione)
+# <a name="sslopenprivatekey-function"></a>Funzione SslOpenPrivateKey
 
-La funzione **SslOpenPrivateKey** apre un handle per una [*chiave privata*](/windows/desktop/SecGloss/p-gly).
+La **funzione SslOpenPrivateKey** apre un handle per una [*chiave privata.*](/windows/desktop/SecGloss/p-gly)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ SECURITY_STATUS WINAPI SslOpenPrivateKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'istanza del provider di protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+Handle per [*l'istanza Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) protocol (SSL).
 
 </dd> <dt>
 
-*phPrivateKey* \[ out\]
+*phPrivateKey* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un buffer in cui scrivere l'handle per la chiave privata.
+Indirizzo di un buffer in cui scrivere l'handle nella chiave privata.
 
-Al termine dell'uso della chiave, è necessario liberare *phPrivateKey* chiamando la funzione [**SslFreeObject**](sslfreeobject.md) .
+Al termine dell'uso della chiave, è necessario liberare *phPrivateKey* chiamando la [**funzione SslFreeObject.**](sslfreeobject.md)
 
 </dd> <dt>
 
-*pCertContext* \[ in\]
+*pCertContext* \[ Pollici\]
 </dt> <dd>
 
 Indirizzo del certificato da cui ottenere la chiave privata.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -78,15 +78,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Handle *hSslProvider* non valido.<br/>                       |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *phPrivateKey* o *pCertContext* è **null**.<br/>   |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare i buffer necessari.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | *L'handle hSslProvider* non è valido.<br/>                       |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Il *parametro phPrivateKey* o *pCertContext* è **NULL.**<br/>   |
 
 
 
@@ -94,7 +94,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-La chiave privata ottenuta è parte di una [*coppia di chiavi pubblica/privata*](/windows/desktop/SecGloss/p-gly) all'interno di un [*certificato*](/windows/desktop/SecGloss/c-gly). Questa funzione estrae semplicemente la chiave privata dal certificato specificato dal parametro *pCertContext* .
+La chiave privata ottenuta fa parte di una [*coppia di chiavi pubblica/privata*](/windows/desktop/SecGloss/p-gly) all'interno di un [*certificato*](/windows/desktop/SecGloss/c-gly). Questa funzione estrae semplicemente la chiave privata dal certificato specificato dal *parametro pCertContext.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,9 +102,9 @@ La chiave privata ottenuta è parte di una [*coppia di chiavi pubblica/privata*]
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

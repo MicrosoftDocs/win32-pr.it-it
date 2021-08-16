@@ -1,9 +1,9 @@
 ---
-title: Interfacce di Windows Media Audio e codec video
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | Interfacce di Windows Media Audio e codec video
+title: Windows Interfacce codec audio e video multimediali
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Windows Interfacce codec audio e video multimediali
 ms.assetid: 582e5df9-b727-4156-9fb1-43b52aed19c5
 keywords:
-- Formato Windows Media per interfacce codec Windows Media Audio e video
+- Windows Windows Media Codec Interfaces (Interfacce codec audio e video multimediali) Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ccf1ce25c636897784f86cc56041a4854541daa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 59860553262ab1aa09c95a5d5b793b2fd93f956b98dcf13ab784e0e56eaecfa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431829"
 ---
-# <a name="windows-media-audio-and-video-codec-interfaces"></a>Interfacce di Windows Media Audio e codec video
+# <a name="windows-media-audio-and-video-codec-interfaces"></a>Windows Interfacce codec audio e video multimediali
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
  
 

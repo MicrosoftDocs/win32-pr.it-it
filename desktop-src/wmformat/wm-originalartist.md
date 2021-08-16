@@ -33,7 +33,7 @@ g \_ wszWMOriginalArtist
 
 ## <a name="remarks"></a>Commenti
 
-L'artista originale viene in genere usato per i remake di brani. Per tali file. usare il [**nome**](author.md) dell'autore della band che ha originariamente registrato il brano.
+L'artista originale viene in genere usato per i remake dei brani. Per tali file. usare il [**nome**](author.md) dell'autore della band che ha originariamente registrato il brano.
 
 ## <a name="see-also"></a>Vedi anche
 

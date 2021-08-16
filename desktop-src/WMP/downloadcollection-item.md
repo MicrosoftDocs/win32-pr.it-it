@@ -1,11 +1,11 @@
 ---
-title: Metodo DownloadCollection. Item
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. Il metodo Item recupera un oggetto download in sospeso.
+title: Metodo DownloadCollection.item
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo item recupera un oggetto download in sospeso.
 ms.assetid: a79db9db-e80c-48db-aee6-9bd8f77a7dff
 keywords:
-- Metodo Item Media Player Windows
-- Metodo Item Media Player Windows, classe DownloadCollection
-- Scaricacollection (classe) Windows Media Player, metodo Item
+- Metodo item Windows Media Player
+- Metodo item Windows Media Player , classe DownloadCollection
+- Classe DownloadCollection Windows Media Player metodo , item
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d57db60a776c71d9ff16eceb1584c79a125bbf46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a82a903236038c2f0372786137eec48ad5c5f502d7fd614eb8944f3f4684aea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997041"
 ---
-# <a name="downloadcollectionitem-method"></a>Metodo DownloadCollection. Item
+# <a name="downloadcollectionitem-method"></a>Metodo DownloadCollection.item
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-Il metodo **Item** recupera un oggetto download in sospeso.
+Il **metodo item** recupera un oggetto download in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,20 +47,20 @@ retVal = DownloadCollection.item(
 
 <dl> <dt>
 
-*ID* \[ elemento in\]
+*itemId* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che specifica l'indice di **DownloadItem** da recuperare.
+**Numero** (**long**) che specifica l'indice di **DownloadItem** da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **DownloadItem** .
+Questo metodo restituisce un **oggetto DownloadItem.**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore *ItemId* è in base zero.
+Il *valore itemID* è in base zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Il valore *ItemId* è in base zero.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Il valore *ItemId* è in base zero.
 
 <dl> <dt>
 
-[**Download (oggetto)**](downloadcollection-object.md)
+[**Oggetto DownloadCollection**](downloadcollection-object.md)
 </dt> <dt>
 
 [**Oggetto DownloadItem**](downloaditem-object.md)

@@ -1,7 +1,7 @@
 ---
 description: Recupera il valore di una proprietà del provider specificata.
 ms.assetid: 69235520-acaa-4ec4-9fd6-4b3297e14376
-title: Funzione SslGetProviderProperty (Sslprovider. h)
+title: Funzione SslGetProviderProperty (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: ced0f32d45531a1220f7aae9fe0e660648e5d1bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfe65fe4033397fd5885eceb3bf0d2ac9ce9aa9b487a84ab7611cb253d979220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906109"
 ---
-# <a name="sslgetproviderproperty-function"></a>SslGetProviderProperty (funzione)
+# <a name="sslgetproviderproperty-function"></a>Funzione SslGetProviderProperty
 
-La funzione **SslGetProviderProperty** Recupera il valore di una proprietà del provider specificata.
+La **funzione SslGetProviderProperty** recupera il valore di una proprietà del provider specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,46 +44,46 @@ SECURITY_STATUS WINAPI SslGetProviderProperty(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle del provider di [*protocollo Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) (SSL) per il quale recuperare la proprietà.
+Handle del provider [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL) per il quale recuperare la proprietà.
 
 </dd> <dt>
 
-*pszProperty* \[ in\]
+*pszProperty* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che contiene il nome della proprietà da recuperare.
+Puntatore a una stringa Unicode con terminazione Null contenente il nome della proprietà da recuperare.
 
 </dd> <dt>
 
-*ppbOutput* \[ out\]
+*ppbOutput* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di un buffer che riceve il valore della proprietà.
 
-Il chiamante della funzione deve liberare questo buffer chiamando la funzione [**SslFreeBuffer**](sslfreebuffer.md) .
+Il chiamante della funzione deve liberare questo buffer chiamando la [**funzione SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*pcbOutput* \[ out\]
+*pcbOutput* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pbOutput* .
+Dimensione, in byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*ppEnumState* \[ in uscita\]
+*ppEnumState* \[ in, out\]
 </dt> <dd>
 
-Indirizzo di un puntatore **void** che riceve le informazioni sullo stato di enumerazione utilizzate nelle chiamate successive a questa funzione. Queste informazioni hanno significato solo per il provider SSL ed è opaca per il chiamante. Il provider SSL usa queste informazioni per determinare l'elemento successivo nell'enumerazione. Se la variabile a cui punta questo parametro contiene **null**, l'enumerazione viene avviata dall'inizio.
+Indirizzo di un **puntatore VOID** che riceve informazioni sullo stato dell'enumerazione utilizzate nelle chiamate successive a questa funzione. Queste informazioni hanno significato solo per il provider SSL e sono opache per il chiamante. Il provider SSL usa queste informazioni per determinare l'elemento successivo nell'enumerazione . Se la variabile a cui punta questo parametro contiene **NULL,** l'enumerazione viene avviata dall'inizio.
 
-Il chiamante della funzione deve liberare la memoria chiamando la funzione [**SslFreeBuffer**](sslfreebuffer.md) .
+Il chiamante della funzione deve liberare questa memoria chiamando la [**funzione SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -96,15 +96,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Handle *hSslProvider* non valido.<br/>                       |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Uno dei parametri specificati non è valido.<br/>                  |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare i buffer necessari.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | *L'handle hSslProvider* non è valido.<br/>                       |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Uno dei parametri forniti non è valido.<br/>                  |
 
 
 
@@ -116,9 +116,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

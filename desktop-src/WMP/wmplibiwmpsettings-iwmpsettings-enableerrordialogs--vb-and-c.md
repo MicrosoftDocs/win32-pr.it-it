@@ -1,10 +1,10 @@
 ---
-title: Proprietà enableErrorDialogs IWMPSettings
+title: Proprietà enableErrorDialogs di IWMPSettings
 description: La proprietà enableErrorDialogs ottiene o imposta un valore che indica se le finestre di dialogo di errore vengono visualizzate automaticamente.
 ms.assetid: 5310864b-e250-4fb1-8351-d1d7de312f21
 keywords:
 - Proprietà enableErrorDialogs Windows Media Player
-- Proprietà enableErrorDialogs Windows Media Player, interfaccia IWMPSettings
+- proprietà enableErrorDialogs Windows Media Player , interfaccia IWMPSettings
 - Interfaccia IWMPSettings Windows Media Player proprietà enableErrorDialogs
 topic_type:
 - apiref

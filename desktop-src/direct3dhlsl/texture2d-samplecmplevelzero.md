@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di Texture2D:: Texture2D SampleCmpLevelZero'
-description: Esegue il campionamento di un Texture2D solo su mipmap di livello 0, usando un valore di confronto per rifiutare gli esempi.
+title: Metodi di Texture2D::Texture2D SampleCmpLevelZero
+description: Viene eseguito il campionamento di un oggetto Texture2D solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni.
 ms.assetid: 5E0D0C4A-61D2-48F2-A817-969A97537235
 keywords:
-- Metodi SampleCmpLevelZero HLSL
+- Metodi di SampleCmpLevelZero HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 6fe48ef207132eb48e0e34ff712e8e9824fbf46c
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: bc69294f3b36b7652f7f0279e02926a279ef80e19f5d109dcfb22185101bf7b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104335031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505629"
 ---
-# <a name="texture2dsamplecmplevelzero-methods"></a>Metodi Texture2D:: SampleCmpLevelZero
+# <a name="texture2dsamplecmplevelzero-methods"></a>Metodi texture2D::SampleCmpLevelZero
 
-Esegue il campionamento di un [**Texture2D**](sm5-object-texture2d.md) solo su mipmap di livello 0, usando un valore di confronto per rifiutare gli esempi.
+Viene eseguito il [**campionamento di un oggetto Texture2D**](sm5-object-texture2d.md) solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,14 +29,14 @@ Esegue il campionamento di un [**Texture2D**](sm5-object-texture2d.md) solo su m
 
 | Metodo                                                                                           | Descrizione                                                                                                                            |
 |:-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmpLevelZero (S, float, float, int)**](dx-graphics-hlsl-to-samplecmplevelzero.md)          | Esegue il campionamento di una trama solo sul livello 0 di mipmap e confronta il risultato con un valore di confronto.<br/>                                     |
-| [**SampleCmpLevelZero (S, float, float, int, uint)**](samplecmplevelzero-s-float-float-int-uint-.md) | Esegue il campionamento di una trama solo sul livello 0 di mipmap e confronta il risultato con un valore di confronto. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleCmpLevelZero(S,float,float,int)**](dx-graphics-hlsl-to-samplecmplevelzero.md)          | Viene eseguito il campionamento di una trama solo sul livello mipmap 0 e il risultato viene confrontato con un valore di confronto.<br/>                                     |
+| [**SampleCmpLevelZero(S,float,float,int,uint)**](samplecmplevelzero-s-float-float-int-uint-.md) | Viene eseguito il campionamento di una trama solo sul livello mipmap 0 e il risultato viene confrontato con un valore di confronto. Restituisce lo stato dell'operazione.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Fare riferimento a [texture-Object](dx-graphics-hlsl-to-type.md).
+Fare riferimento a [Texture-Object.](dx-graphics-hlsl-to-type.md)
 
 ## <a name="see-also"></a>Vedi anche
 

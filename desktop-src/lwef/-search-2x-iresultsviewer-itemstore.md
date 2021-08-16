@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer itemStore sconosciuta (WdsView. h)
-description: Questa proprietà consente di impostare o restituire il nome dell'archivio in base al quale filtrare i risultati.
+title: Proprietà IResultsViewer ItemStore (WdsView.h)
+description: Questa proprietà imposta o restituisce il nome dell'archivio in base al cui filtro vengono filtrati i risultati.
 ms.assetid: c2a60485-c8f7-4951-a75e-2e6f6dcc2e4f
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà itemStore sconosciuta
-- Proprietà itemStore sconosciuta caratteristiche dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà itemStore sconosciuta
+- Proprietà ItemStore Funzionalità dell'Windows legacy
+- Proprietà ItemStore Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà ItemStore
 topic_type:
 - apiref
 api_name:
@@ -18,19 +18,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99abd4ef7ee36a0c76efa391d98a9fdb1d75f34e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b21db485f8bfeb52ac413a2886f5624345e9812f2a0086b143f9a10942f7aa74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753902"
 ---
-# <a name="iresultsvieweritemstore-property"></a>Proprietà IResultsViewer:: itemStore sconosciuta
+# <a name="iresultsvieweritemstore-property"></a>Proprietà IResultsViewer::ItemStore
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Questa proprietà consente di impostare o restituire il nome dell'archivio in base al quale filtrare i risultati.
+Questa proprietà imposta o restituisce il nome dell'archivio in base al cui filtro vengono filtrati i risultati.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -59,10 +59,10 @@ Imposta i nomi dell'archivio.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

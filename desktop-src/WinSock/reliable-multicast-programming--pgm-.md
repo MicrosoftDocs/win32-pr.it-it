@@ -1,5 +1,5 @@
 ---
-description: Questa sezione descrive l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita multicast affidabile. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
+description: In questa sezione viene descritta l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita reliable multicast. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
 ms.assetid: 81c203ed-739f-4a06-99a1-9a99c6164edc
 title: Programmazione multicast affidabile (PGM)
 ms.topic: article
@@ -13,17 +13,17 @@ ms.locfileid: "118559953"
 ---
 # <a name="reliable-multicast-programming-pgm"></a>Programmazione multicast affidabile (PGM)
 
-Questa sezione descrive l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita multicast affidabile. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
+In questa sezione viene descritta l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita reliable multicast. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
 
-**Windows XP:** PGM è supportato solo quando Microsoft Message Queuing (MSMQ) 3.0.
+**Windows XP:** PGM è supportato solo quando Microsoft Message Queuing (MSMQ) 3.0 è installato.
 
-PGM è un protocollo multicast affidabile e scalabile che consente ai ricevitori di rilevare la perdita, richiedere la ritrasmissione di dati persi o notificare a un'applicazione una perdita irreversibile. PGM è un protocollo affidabile per il ricevitore, il che significa che il ricevitore è responsabile della ricezione di tutti i dati, assolvendo il mittente della responsabilità di ricezione.
+PGM è un protocollo multicast affidabile e scalabile che consente ai ricevitori di rilevare la perdita, richiedere la ritrasmissione dei dati persi o notificare a un'applicazione la perdita irreversibile. PGM è un protocollo affidabile dal ricevitore, il che significa che il ricevitore è responsabile della ricezione di tutti i dati, assolvendo il mittente della responsabilità della ricezione.
 
-PGM è appropriato per le applicazioni che richiedono il recapito di dati multicast senza duplicati da più origini a più ricevitori. PGM non supporta il recapito riconosciuto, né garantisce l'ordinamento dei pacchetti da più mittenti.
+PGM è appropriato per le applicazioni che richiedono il recapito di dati multicast senza duplicati da più origini a più ricevitori. La PGM non supporta il recapito riconosciuto né garantisce l'ordinamento dei pacchetti da più mittenti.
 
-Per altre informazioni su PGM, vedere RFC 3208 disponibile [all'indirizzo www.ietf.org](https://www.ietf.org/).
+Per altre informazioni sulla PGM, vedere RFC 3208 disponibile [all'indirizzo www.ietf.org](https://www.ietf.org/).
 
-Questa sezione descrive come usare il multicast affidabile Windows. Negli argomenti seguenti vengono illustrati i vari aspetti della creazione di un'applicazione multicast affidabile Windows Sockets:
+Questa sezione descrive come usare reliable multicast in Windows. Negli argomenti seguenti vengono illustrati i vari aspetti della creazione di un'applicazione multicast affidabile Windows Socket:
 
 -   [Mittenti e ricevitori PGM](pgm-senders-and-receivers.md)
 -   [Opzioni del mittente PGM](pgm-sender-options.md)

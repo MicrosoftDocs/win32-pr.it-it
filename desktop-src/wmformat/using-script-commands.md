@@ -1,6 +1,6 @@
 ---
-title: Uso dei comandi script
-description: Uso dei comandi script
+title: Uso di comandi script
+description: Uso di comandi script
 ms.assetid: be8a2d22-35cb-4b8d-ad00-e8a45bb85b39
 keywords:
 - Windows MEDIA Format SDK,comandi script
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118195787"
 ---
-# <a name="using-script-commands"></a>Uso dei comandi script
+# <a name="using-script-commands"></a>Uso di comandi script
 
 L Windows Media Format SDK supporta l'uso di comandi script per comunicare le azioni dell'applicazione nei file ASF. Ogni comando script è costituito da due stringhe, la prima stringa è il tipo di comando, la seconda è i dati del comando. Ad esempio, è possibile usare il tipo di script "URL" e passare un URL Internet valido come dati del comando. Quando un'applicazione di lettura che supporta comandi script di tipo "URL" riceve questo comando, aprirà l'indirizzo specificato in una finestra del browser.
 

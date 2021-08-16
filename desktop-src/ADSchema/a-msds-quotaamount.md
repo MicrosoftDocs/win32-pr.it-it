@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-quota-amount
+title: Attributo ms-DS-Quota-Amount
 description: Quota assegnata in termini di numero di oggetti di proprietà del database.
 ms.assetid: 6ae57661-e384-493b-82a9-c002eab277a1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-quota-amount
-- attributo msDS-QuotaAmount-schema AD
+- Schema AD dell'attributo ms-DS-Quota-Amount
+- Schema AD dell'attributo msDS-QuotaAmount
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1629f93d077cabcfaf7f812a72ca7fb0c417320
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23698d19877570dacbbc632c471114f91be47b54dde2b4e785be42b2c76b72ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425753"
 ---
-# <a name="ms-ds-quota-amount-attribute"></a>attributo ms-DS-quota-amount
+# <a name="ms-ds-quota-amount-attribute"></a>Attributo ms-DS-Quota-Amount
 
 Quota assegnata in termini di numero di oggetti di proprietà del database.
 
@@ -29,13 +29,13 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-quota-importo                   |
-| LDAP-Display-Name | msDS-QuotaAmount                     |
+| CN                | ms-DS-Quota-Amount                   |
+| Ldap-Display-Name | msDS-QuotaAmount                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1845              |
-| System-ID-GUID    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
+| System-Id-Guid    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**ms-DS-quota-controllo**](c-msds-quotacontrol.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 

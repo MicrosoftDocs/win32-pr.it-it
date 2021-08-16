@@ -4,16 +4,16 @@ ms.assetid: 4c514197-0df0-49c6-b39e-8a2a7cefa93d
 title: aliasInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 052409864617bdaba7acbf9ae561752c83d18395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 087323df682a2f74164c530f18a9c4da8405930304186288a3d84635bb06ab55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970970"
 ---
 # <a name="aliasinfo"></a>aliasInfo
 
-Specifica un alias di ordinamento o un elenco di alias di ordinamento specificando un elemento che contiene una proprietà di ordinamento o un elenco di proprietà di ordinamento. Deve essere presente un solo elemento [aliasInfo]() per ogni elemento [PropertyDescription](./propdesc-schema-propertydescription.md) . Per le proprietà che impostano canGroupBy = true, a meno che non sia specificata una proprietà di ordinamento secondaria ( aliasInfo/@additionalSortByAliases = prop: example), l'utente può riscontrare un comportamento imprevisto quando si modifica il tipo di ordinamento in una vista raggruppata in base alla proprietà. In particolare, l'ordine dei gruppi cambierà, ma l'ordine degli elementi all'interno dei gruppi non lo è.
+Specifica un alias di ordinamento o un elenco di alias di ordinamento specificando un elemento che contiene una proprietà di ordinamento o un elenco di proprietà di ordinamento. Deve essere presente un solo [elemento aliasInfo]() per ogni [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Per le proprietà che impostano canGroupBy=true, a meno che non venga specificata una proprietà di ordinamento secondaria ( =prop:example), è possibile che si verifichi un comportamento imprevisto quando si modifica l'ordinamento in una vista raggruppata in base alla aliasInfo/@additionalSortByAliases proprietà . In particolare, l'ordine dei gruppi cambierà, ma non l'ordine degli elementi all'interno dei gruppi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Specifica un alias di ordinamento o un elenco di alias di ordinamento specifican
 
 | Elemento padre                                                   | Elementi figlio |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | nessuno           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | Nessuno           |
 
 
 
@@ -48,8 +48,8 @@ Specifica un alias di ordinamento o un elenco di alias di ordinamento specifican
 
 | Attributo               | Descrizione                                                                                                                                                            |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sortByAlias             | Pubblica. facoltativo. Nome canonico della proprietà da utilizzare per l'ordinamento. La stringa è di tipo canonico.                                            |
-| additionalSortByAliases | Pubblica. facoltativo. Elenco delimitato da punti e virgola di proprietà aggiuntive da utilizzare durante l'ordinamento. Le proprietà vengono applicate all'ordinamento nella sequenza specificata. |
+| sortByAlias             | Pubblica. facoltativo. Nome canonico della proprietà in base alla quale eseguire l'ordinamento. Questa stringa è di tipo canonical-type.                                            |
+| additionalSortByAliases | Pubblica. facoltativo. Elenco delimitato da punto e virgola di proprietà aggiuntive da utilizzare durante l'ordinamento. Le proprietà vengono applicate all'ordinamento nella sequenza specificata. |
 
 
 

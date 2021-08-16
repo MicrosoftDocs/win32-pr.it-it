@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice MaxVolume (PlayToDevice. h)
+title: Proprietà ActiveBasicDevice MaxVolume (PlayToDevice.h)
 description: Ottiene il volume massimo supportato dal dispositivo.
 ms.assetid: EA0EC323-4A18-4CC1-8FA4-7BD302318863
 keywords:
-- API di streaming multimediale della proprietà MaxVolume
-- API di streaming multimediale della proprietà MaxVolume, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà MaxVolume
+- Proprietà MaxVolume API Streaming multimediale
+- Proprietà MaxVolume API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Streaming multimediale, proprietà MaxVolume
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b48c25ef6c0e25c35ba07914c00fb063b4e8dc79
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 803e2e66306bce0d6fd308501edece61668d5f2e0d8041273d508b662f6cd66f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736197"
 ---
-# <a name="activebasicdevicemaxvolume-property"></a>Proprietà ActiveBasicDevice:: MaxVolume
+# <a name="activebasicdevicemaxvolume-property"></a>Proprietà ActiveBasicDevice::MaxVolume
 
 Ottiene il volume massimo supportato dal dispositivo.
 
@@ -43,7 +43,7 @@ HRESULT get_MaxVolume(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a un oggetto **UInt32** che specifica il volume massimo supportato dal dispositivo.
+Puntatore a **un oggetto UINT32** che specifica il volume massimo supportato dal dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,10 +51,10 @@ Puntatore a un oggetto **UInt32** che specifica il volume massimo supportato dal
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

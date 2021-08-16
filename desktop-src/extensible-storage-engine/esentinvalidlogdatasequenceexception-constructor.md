@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidLogDataSequenceException'
+description: Altre informazioni sul costruttore EsentInvalidLogDataSequenceException
 title: Costruttore EsentInvalidLogDataSequenceException
 TOCTitle: 'EsentInvalidLogDataSequenceException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidLogDataSequenceException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 207e3c82ea3a2fe3e14e0c33eaf4532947c6c374
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cdea45165e3d13d5e820f273e6cfce96fb58e8ce436260402790e69da47fff7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118777913"
 ---
 # <a name="esentinvalidlogdatasequenceexception-constructor"></a>Costruttore EsentInvalidLogDataSequenceException
 
 Inizializza una nuova istanza della classe EsentInvalidLogDataSequenceException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidLogDataSequenceException()
 
 [Membri di EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

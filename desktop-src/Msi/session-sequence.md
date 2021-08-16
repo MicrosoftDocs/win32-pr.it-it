@@ -1,5 +1,5 @@
 ---
-description: Il metodo Sequence dell'oggetto Session apre una query sulla tabella specificata, ordinando le azioni in base ai numeri nella colonna Sequenza.
+description: Il metodo Sequence dell'oggetto Session apre una query sulla tabella specificata, ordinando le azioni in base ai numeri nella colonna Sequence.
 ms.assetid: cde735b0-0b97-4c4f-adfc-f0321aafb012
 title: Metodo Session.Sequence
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118625119"
 ---
 # <a name="sessionsequence-method"></a>Metodo Session.Sequence
 
-Il **metodo Sequence** [**dell'oggetto Session**](session-object.md) apre una query sulla tabella specificata, ordinando le azioni in base ai numeri nella colonna Sequenza. Per ogni riga recuperata, viene chiamato il metodo [**DoAction,**](session-doaction.md) a condizione che qualsiasi espressione di condizione fornita non restituirà False. Restituisce un'enumerazione msiDoActionStatusEnum, come descritto nel [**metodo DoAction.**](session-doaction.md)
+Il **metodo Sequence** dell'oggetto [**Session**](session-object.md) apre una query sulla tabella specificata, ordinando le azioni in base ai numeri nella colonna Sequence. Per ogni riga recuperata, viene chiamato il [**metodo DoAction,**](session-doaction.md) a condizione che qualsiasi espressione di condizione fornita non restituirà False. Restituisce un'enumerazione msiDoActionStatusEnum, come descritto nel [**metodo DoAction.**](session-doaction.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ Questo metodo non restituisce valori.
 
 Questo metodo viene in genere chiamato internamente dalle azioni di primo livello.
 
-Una sequenza di azioni contenente azioni che aggiornano il sistema, ad esempio le azioni [InstallFiles](installfiles-action.md) e [WriteRegistryValues,](writeregistryvalues-action.md) non può essere eseguita chiamando il **metodo Sequence.** L'eccezione a questa regola è se il metodo **Sequence** viene chiamato da un'azione personalizzata pianificata nella tabella [InstallExecuteSequence](installexecutesequence-table.md) tra le azioni [InstallInitialize](installinitialize-action.md) e [InstallFinalize](installfinalize-action.md). È possibile chiamare azioni che non aggiornano il sistema, ad esempio [AppSearch](appsearch-action.md) o [CostInitialize.](costinitialize-action.md)
+Una sequenza di azioni contenente azioni che aggiornano il sistema, ad esempio le azioni [InstallFiles](installfiles-action.md) e [WriteRegistryValues,](writeregistryvalues-action.md) non può essere eseguita chiamando il **metodo Sequence.** L'eccezione a questa regola è se il metodo **Sequence** viene chiamato da un'azione personalizzata pianificata nella tabella [InstallExecuteSequence](installexecutesequence-table.md) tra [le azioni InstallInitialize](installinitialize-action.md) e [InstallFinalize](installfinalize-action.md). È possibile chiamare azioni che non aggiornano il sistema, ad esempio [AppSearch](appsearch-action.md) o [CostInitialize.](costinitialize-action.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Una sequenza di azioni contenente azioni che aggiornano il sistema, ad esempio l
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISession è definito come 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession è definito \_ come 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
 
 
 

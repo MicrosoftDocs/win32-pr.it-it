@@ -19,8 +19,8 @@ Le sezioni seguenti descrivono i problemi comuni che gli sviluppatori possono av
 In questo argomento vengono illustrate le sezioni seguenti:
 
 -   [Accesso DCOM negato](#dcom-access-denied)
--   [Mancata Connessione](#failure-to-connect)
--   [Timeout della connessione WMI](#wmi-connection-timed-out)
+-   [Errore di Connessione](#failure-to-connect)
+-   [Timeout connessione WMI](#wmi-connection-timed-out)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="dcom-access-denied"></a>Accesso DCOM negato
@@ -30,7 +30,7 @@ In questo argomento vengono illustrate le sezioni seguenti:
 <span id="Symptom"></span><span id="symptom"></span><span id="SYMPTOM"></span>Sintomo
 </dt> <dd>
 
-La connessione non è riuscita con l'errore "Accesso DCOM negato", insieme al valore decimale -2147024891 o valore esadecimale0x80070005.
+La connessione non è riuscita e viene visualizzato l'errore "Accesso DCOM negato", insieme al valore decimale -2147024891 o al valore esadecimale0x80070005.
 
 </dd> <dt>
 
@@ -44,13 +44,13 @@ DCOM potrebbe non essere configurato per consentire una connessione WMI.
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Risoluzione
 </dt> <dd>
 
-È possibile configurare le impostazioni DCOM per WMI usando l'utilità di configurazione DCOM (**DCOMCnfg.exe**) disponibile in **Strumenti** di amministrazione in **Pannello di controllo**. Questa utilità espone le impostazioni che consentono a determinati utenti di connettersi al computer in modalità remota tramite DCOM. Ai membri del gruppo Administrators è consentito connettersi in remoto al computer per impostazione predefinita. Con questa utilità è possibile impostare la sicurezza per avviare, accedere e configurare il servizio WMI.
+È possibile configurare le impostazioni DCOM per WMI usando l'utilità di configurazione DCOM (**DCOMCnfg.exe**) disponibile **in** Strumenti di amministrazione in **Pannello di controllo**. Questa utilità espone le impostazioni che consentono a determinati utenti di connettersi al computer in remoto tramite DCOM. I membri del gruppo Administrators sono autorizzati a connettersi in remoto al computer per impostazione predefinita. Con questa utilità è possibile impostare la sicurezza per avviare, accedere e configurare il servizio WMI.
 
-Per altre informazioni, vedere [Protezione di una connessione WMI remota](securing-a-remote-wmi-connection.md).
+Per altre informazioni, vedere [Protezione di una connessione WMI remota.](securing-a-remote-wmi-connection.md)
 
 </dd> </dl>
 
-## <a name="failure-to-connect"></a>Mancata Connessione
+## <a name="failure-to-connect"></a>Errore di Connessione
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ Non è possibile connettersi a WMI in un sistema remoto.
 
 -   Non è possibile connettersi a un computer che esegue un'edizione Starter, Basic o Home.
 
-In alternativa, è possibile che si stia tentando di connettersi a uno spazio dei nomi che richiede una connessione crittografata, una che richiede un livello di autenticazione `pktPrivacy` , **WbemAuthenticationLevelPktPrivacy** o **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**.
+In alternativa, è possibile che si stia tentando di connettersi a uno spazio dei nomi che richiede una connessione crittografata, che richiede un livello di autenticazione di `pktPrivacy` , **WbemAuthenticationLevelPktPrivacy** o **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Per altre informazioni, vedere Protezione degli spazi dei nomi [WMI,](securing-w
 
 </dd> </dl>
 
-## <a name="wmi-connection-timed-out"></a>Timeout della connessione WMI
+## <a name="wmi-connection-timed-out"></a>Timeout connessione WMI
 
 <dl> <dt>
 
@@ -93,14 +93,14 @@ Timeout della connessione WMI.
 <span id="Issue"></span><span id="issue"></span><span id="ISSUE"></span>Problema
 </dt> <dd>
 
-A causa di problemi di ritardo di rete, il computer semplicemente non è in grado di rispondere in tempo.
+A causa di problemi di ritardo della rete, il computer semplicemente non è in grado di rispondere in tempo.
 
 </dd> <dt>
 
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Risoluzione
 </dt> <dd>
 
-Quando ci si connette a WMI tramite una chiamata a [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) o [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), è possibile impostare il flag **wbemConnectFlagUseMaxWait** (scripting) o **WBEM \_ FLAG CONNECT USE MAX \_ \_ \_ \_ WAIT** in C++ su 128 (0x80) per imporre un timeout di due (2) minuti sulla chiamata.
+Quando ci si connette a WMI tramite una chiamata a [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) o [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), è possibile impostare il flag **wbemConnectFlagUseMaxWait** (scripting) o il valore **WBEM \_ FLAG CONNECT USE MAX \_ \_ \_ \_ WAIT** in C++ su 128 (0x80) per imporre un timeout di due (2) minuti per la chiamata.
 
 </dd> </dl>
 

@@ -24,7 +24,7 @@ ms.locfileid: "118315137"
 
 Tutte le implementazioni conformi a CIM devono gestire un set standard di qualificatori. Per qualsiasi oggetto specifico non sono elencati tutti i qualificatori. In genere, le classi di estensione forniscono qualificatori aggiuntivi per facilitare il provisioning di istanze di classe e altre operazioni sulla classe.
 
-È responsabilità del provider applicare i qualificatori. WMI non impone qualificatori, ma li usa solo per informare l'utente sulla modalità di utilizzo della proprietà.
+È responsabilità del provider applicare i qualificatori. WMI non impone qualificatori, ma li usa solo per informare l'utente sull'uso della proprietà.
 
 > [!Note]  
 > WMI è conforme alla specifica CIM 2.5.
@@ -35,8 +35,8 @@ I qualificatori presentano le limitazioni seguenti:
 
 -   Non tutti i qualificatori standard possono essere usati insieme.
 -   Non tutti i qualificatori possono essere applicati a tutti i costrutti, ad esempio associazione o riferimento. Queste limitazioni sono identificate nell'elenco Si applica a.
--   Per un costrutto specifico, ad esempio l'associazione o il riferimento, l'uso dei qualificatori legali può essere ulteriormente vincolato perché alcuni qualificatori si escludono a vicenda, l'uso di un qualificatore può implicare alcune restrizioni sul valore di un altro e così via. Queste regole di utilizzo sono documentate.
--   I qualificatori validi vengono ereditati solo da entità quali proprietà, metodi, istanze o sottoclassi, non da associazioni o riferimenti. Ad esempio, il **qualificatore MaxLen** che si applica alle proprietà non viene ereditato dai riferimenti.
+-   Per un costrutto specifico, ad esempio un'associazione o un riferimento, l'uso dei qualificatori legali può essere ulteriormente vincolato perché alcuni qualificatori si escludono a vicenda, l'uso di un qualificatore può implicare alcune restrizioni sul valore di un altro e così via. Queste regole di utilizzo sono documentate.
+-   I qualificatori legali vengono ereditati solo da entità quali proprietà, metodi, istanze o sottoclassi, non da associazioni o riferimenti. Ad esempio, il **qualificatore MaxLen** che si applica alle proprietà non viene ereditato dai riferimenti.
 
 Di seguito sono elencati i qualificatori standard WMI.
 
@@ -62,7 +62,7 @@ Si applica a: riferimenti
 
 Indica se il riferimento è il componente padre di un'associazione di aggregazione. Il valore predefinito è **FALSE.**
 
-Utilizzo: i **qualificatori Aggregazione** **e** Aggregazione vengono usati   **insieme. Aggregazione** qualifica l'associazione e **Aggregazione** specifica il riferimento padre.
+Utilizzo: i **qualificatori Aggregazione** **e** Aggregazione vengono usati insieme   **Aggregazione** qualifica l'associazione e **Aggregazione** specifica il riferimento padre.
 
 </dd> <dt>
 
@@ -73,14 +73,14 @@ Tipo di dati: **booleano**
 
 Si applica a: associazioni
 
-Indica se l'associazione è un'aggregazione. Il valore predefinito è **FALSE.** Utilizzato con **Aggregate.** Questo qualificatore è obbligatorio per tutte le associazioni di aggregazione.
+Indica se l'associazione è un'aggregazione. Il valore predefinito è **FALSE.** Utilizzato con **Aggregate**. Questo qualificatore è obbligatorio per tutte le associazioni di aggregazione.
 
 </dd> <dt>
 
 <span id="Alias"></span><span id="alias"></span><span id="ALIAS"></span>**Alias**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà, riferimenti, metodi
 
@@ -91,7 +91,7 @@ Nome alternativo per una proprietà o un metodo nello schema. Il valore predefin
 <span id="ArrayType"></span><span id="arraytype"></span><span id="ARRAYTYPE"></span>**ArrayType**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà, parametri
 
@@ -103,7 +103,7 @@ I valori validi sono:
 -   indicizzati
 -   ordered
 
-Utilizzo: applicare questo tipo di qualificatore solo alle proprietà e ai parametri che sono matrici (definite usando la sintassi tra parentesi quadre).
+Utilizzo: applicare questo tipo di qualificatore solo alle proprietà e ai parametri che sono matrici (definite tramite la sintassi tra parentesi quadre).
 
 </dd> <dt>
 
@@ -114,13 +114,13 @@ Tipo di dati: **matrice di stringhe**
 
 Si applica a: proprietà, metodi, parametri
 
-Mappa delle posizioni di bit significative in cui ogni posizione significativa può essere "on" o "off". Ogni bit "on" esegue il mapping a un valore corrispondente nella **matrice BitValues.** Con più bit "on", vengono indicati più valori simultanei nella matrice **BitValues.** Il valore predefinito è **NULL.**
+Mappa di posizioni di bit significative in cui ogni posizione significativa può essere "on" o "off". Ogni bit "on" viene mappato a un valore corrispondente nella **matrice BitValues.** Con più bit "on", vengono indicati più valori simultanei nella matrice **BitValues.** Il valore predefinito è **NULL.**
 
-Per altre informazioni, vedere [BitMap e BitValues.](bitmap-and-bitvalues.md)
+Per altre informazioni, vedere [BitMap e BitValues](bitmap-and-bitvalues.md).
 
 </dd> <dt>
 
-<span id="BitValues"></span><span id="bitvalues"></span><span id="BITVALUES"></span>**Valori bit**
+<span id="BitValues"></span><span id="bitvalues"></span><span id="BITVALUES"></span>**BitValues**
 </dt> <dd>
 
 Tipo di dati: **matrice di stringhe**
@@ -129,7 +129,7 @@ Si applica a: proprietà, metodi, parametri
 
 Conversione di un valore di posizione di bit in una stringa **associata.** Il valore predefinito è **NULL.**
 
-Per altre informazioni, vedere [BitMap e BitValues.](bitmap-and-bitvalues.md)
+Per altre informazioni, vedere [BitMap e BitValues](bitmap-and-bitvalues.md).
 
 </dd> <dt>
 
@@ -140,42 +140,42 @@ Tipo di dati: **booleano**
 
 Si applica a: metodi
 
-Indica se il metodo crea istanze di . Questi metodi non sono vincolati all'azione su una singola istanza o su una singola classe. Ad esempio, un costruttore può creare istanze di associazione e istanze della classe che definisce il costruttore.
+Indica se il metodo crea istanze. Questi metodi non sono vincolati ad agire su una singola istanza o su una singola classe. Ad esempio, un costruttore può creare istanze di associazione e istanze della classe che definisce il costruttore.
 
-Il **qualificatore** del costruttore è destinato solo alle informazioni e non è previsto che sia utilizzato dal gestore di oggetti. Il gestore oggetti non deve chiamare i metodi del costruttore quando viene creato un oggetto. Inoltre, quando viene chiamato un costruttore, il gestore di oggetti non deve richiamare metodi del costruttore definiti per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
+Il **qualificatore** Costruttore è destinato solo alle informazioni e non è previsto che sia agito dal gestore di oggetti. Il gestore oggetti non deve chiamare i metodi del costruttore quando viene creato un oggetto . Inoltre, quando viene chiamato un costruttore, il gestore oggetti non deve richiamare alcun metodo costruttore definito per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
 <span id="CreateBy"></span><span id="createby"></span><span id="CREATEBY"></span>**CreateBy**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: classi
 
-Nome del metodo con cui vengono create istanze di questa classe. Il valore è "PutInstance" o il nome di un altro metodo che crea le istanze. Il valore predefinito è **NULL.**
+Nome del metodo con cui vengono create le istanze di questa classe. Il valore è "PutInstance" o il nome di un altro metodo che crea le istanze. Il valore predefinito è **NULL.**
 
-Utilizzo: questo qualificatore può essere usato solo se è presente **il qualificatore SupportsCreate.**
+Utilizzo: questo qualificatore può essere usato solo se è presente il qualificatore **SupportsCreate.**
 
 </dd> <dt>
 
 <span id="DeleteBy"></span><span id="deleteby"></span><span id="DELETEBY"></span>**DeleteBy**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: classi
 
 Nome del metodo in base al quale vengono eliminate le istanze di questa classe. Il valore è "DeleteInstance" o il nome di un altro metodo che elimina le istanze. Il valore predefinito è **NULL.**
 
-Utilizzo: questo qualificatore può essere usato solo se è presente **il qualificatore SupportsDelete.**
+Utilizzo: questo qualificatore può essere usato solo se è presente il qualificatore **SupportsDelete.**
 
 </dd> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: any
 
@@ -190,7 +190,7 @@ Tipo di dati: **booleano**
 
 Si applica a: metodi
 
-Indica se il metodo elimina istanze di . I metodi che usano **il** qualificatore del distruttore eliminano le istanze a cui viene applicato il distruttore e non sono vincolati ad agire su una singola istanza o classe. Ad esempio, un distruttore potrebbe eliminare le istanze di associazione e le istanze della classe che definisce il distruttore.
+Indica se il metodo elimina le istanze. I metodi che usano il qualificatore **distruttore** eliminano le istanze a cui viene applicato il distruttore e non sono vincolati ad agire su una singola istanza o classe. Ad esempio, un distruttore potrebbe eliminare le istanze di associazione e le istanze della classe che definisce il distruttore.
 
 Il **qualificatore distruttore** è destinato solo alle informazioni e non è previsto che sia agito dal gestore oggetti. Non è obbligatorio che il gestore di oggetti chiami un metodo con il **qualificatore Distruttore** quando un'istanza viene eliminata. Inoltre, quando viene chiamato un distruttore, il gestore oggetti non deve richiamare alcun metodo del distruttore definito per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
 
@@ -269,7 +269,7 @@ Indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più prop
 
 Si applica a: proprietà
 
-Indica che la proprietà è a elevato utilizzo di risorse da restituire e richiede molto tempo e memoria del processore. WMI migliora le prestazioni delle query non tentando di restituire le proprietà contrassegnate con il qualificatore **Lazy.**
+Indica che la proprietà è a elevato utilizzo di risorse per restituire e richiede molto tempo e memoria del processore. WMI migliora le prestazioni delle query non tentando di restituire le proprietà contrassegnate con il qualificatore **Lazy.**
 
 </dd> <dt>
 
@@ -291,7 +291,7 @@ Tipo di dati: **int**
 
 Si applica a: riferimenti
 
-Numero massimo di valori che un riferimento specificato può avere per ogni set di altri valori di riferimento nell'associazione. Il valore predefinito è **NULL.** Ad esempio, se un'associazione mette in relazione istanze A a istanze B e deve essere presente al massimo un'istanza A per ogni istanza B, il riferimento ad A deve avere un massimo di un qualificatore.
+Numero massimo di valori che un determinato riferimento può avere per ogni set di altri valori di riferimento nell'associazione. Il valore predefinito è **NULL.** Ad esempio, se un'associazione mette in relazione istanze A a istanze B e deve essere presente al massimo un'istanza A per ogni istanza B, il riferimento ad A deve avere un massimo di un qualificatore.
 
 </dd> <dt>
 
@@ -378,22 +378,22 @@ Tipo di dati: **stringa**
 
 Si applica a: riferimenti
 
-Tipo di posizione di un'istanza di . Il valore è <namespacetype> . Il valore predefinito è **NULL.**
+Tipo di posizione di un'istanza. Il valore è <namespacetype> . Il valore predefinito è **NULL.**
 
-Utilizzo: questo qualificatore non può essere usato con il **qualificatore Nonlocal.**
+Utilizzo: questo qualificatore non può essere usato con il **qualificatore non** locale.
 
 </dd> <dt>
 
 <span id="NullValue"></span><span id="nullvalue"></span><span id="NULLVALUE"></span>**Nullvalue**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà
 
 Valore che indica che la proprietà associata è **NULL** (la proprietà non ha un valore valido o significativo). Il valore predefinito è **NULL.**
 
-Le convenzioni e le restrizioni usate per definire i valori **NULL** sono uguali a quelle applicabili al qualificatore **ValueMap.** Si noti che non è possibile eseguire l'override di questo qualificatore. Non è ragionevole consentire a una sottoclasse di restituire un **valore NULL** diverso da quello della classe padre.
+Le convenzioni e le restrizioni usate per definire i **valori NULL** sono le stesse applicabili al qualificatore **ValueMap.** Si noti che questo qualificatore non può essere sottoposto a override. Non è ragionevole consentire a una sottoclasse di restituire un **valore NULL** diverso da quello della classe padre.
 
 </dd> <dt>
 
@@ -411,19 +411,19 @@ Indica se il parametro restituisce valori da un metodo. Il valore predefinito è
 <span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**prevalere**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà, metodi, riferimenti
 
-Classe padre o costrutto subordinato (proprietà, metodo o riferimento) sottoposto a override dalla proprietà, dal metodo o dal riferimento con lo stesso nome nella classe derivata. Il valore predefinito è **NULL.**
+Classe padre o costrutto subordinato (proprietà, metodo o riferimento) sottoposto a override dalla proprietà, dal metodo o dal riferimento dello stesso nome nella classe derivata. Il valore predefinito è **NULL.**
 
 Il formato è:
 
-\[<*Classe>.* \] < *costrutto subordinato*>
+\[<*classe*>. \] < *costrutto subordinato*>
 
-Se il nome della classe viene omesso, l'override viene applicato al costrutto subordinato nella classe padre nella gerarchia di classi.
+Se il nome della classe viene omesso, l'override si applica al costrutto subordinato nella classe padre nella gerarchia di classi.
 
-Utilizzo: il **qualificatore Override** può fare riferimento a costrutti basati solo sullo stesso meta modello. Non è consentito modificare il nome o la firma di un costrutto durante un'operazione di override.
+Utilizzo: il **qualificatore Override** può fare riferimento a costrutti basati solo sullo stesso meta model. Non è consentito modificare il nome o la firma di un costrutto durante un'operazione di override.
 
 </dd> <dt>
 
@@ -439,7 +439,7 @@ Indica se il valore della proprietà in una sottoclasse esegue l'override del va
 <span id="Propagated"></span><span id="propagated"></span><span id="PROPAGATED"></span>**Propagate**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà
 
@@ -447,9 +447,9 @@ Nome della chiave da propagare. Il valore predefinito è **NULL.**
 
 L'uso di questo qualificatore presuppone l'esistenza di un solo qualificatore debole in un riferimento con la classe contenitore come destinazione. La proprietà associata deve avere lo stesso valore della proprietà denominata dal qualificatore nella classe sull'altro lato dell'associazione debole. Il formato è:
 
-\[<*Classe>.* \] < *costrutto subordinato*>
+\[<*classe*>. \] < *costrutto subordinato*>
 
-Utilizzo: quando si **usa il qualificatore Propagated,** il [**qualificatore Key**](key-qualifier.md) deve essere specificato con il valore **TRUE.**
+Utilizzo: quando si **usa il qualificatore Propagated,** il [**qualificatore Key**](key-qualifier.md) deve essere specificato con il valore **TRUE**.
 
 </dd> <dt>
 
@@ -478,20 +478,20 @@ Indica se per la proprietà è necessario un valore non Null. Il valore predefin
 <span id="Revision"></span><span id="revision"></span><span id="REVISION"></span>**Revisione**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: classi, associazioni, indicazioni, schemi
 
 Numero di revisione secondario dell'oggetto schema. Il valore predefinito è **NULL.**
 
-Utilizzo: il **qualificatore di** versione deve essere presente per fornire il numero di versione principale quando viene usato il **qualificatore** Revision.
+Utilizzo: il **qualificatore Di** versione deve essere presente per specificare il numero di versione principale quando viene usato il **qualificatore** Revisione.
 
 </dd> <dt>
 
 <span id="Schema"></span><span id="schema"></span><span id="SCHEMA"></span>**Schema**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà, metodi
 
@@ -502,7 +502,7 @@ Nome dello schema in cui è definita la funzionalità. Il valore predefinito è 
 <span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**fonte**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: classi, associazioni, indicazioni, riferimenti
 
@@ -517,7 +517,7 @@ Utilizzo: il **qualificatore Source** non può essere usato con il **qualificato
 <span id="SourceType"></span><span id="sourcetype"></span><span id="SOURCETYPE"></span>**Sourcetype**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: classi, associazioni, indicazioni, riferimenti
 
@@ -534,7 +534,7 @@ Tipo di dati: **booleano**
 
 Si applica a: classi
 
-Indica se la classe supporta la creazione di istanze di . Il valore predefinito è **FALSE.**
+Indica se la classe supporta la creazione di istanze. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -545,7 +545,7 @@ Tipo di dati: **booleano**
 
 Si applica a: classi
 
-Indica se la classe supporta l'eliminazione di istanze di . Il valore predefinito è **FALSE.**
+Indica se la classe supporta l'eliminazione di istanze. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -556,7 +556,7 @@ Tipo di dati: **booleano**
 
 Si applica a: classi
 
-Indica se la classe supporta la modifica (aggiornamento) delle istanze di . Il valore predefinito è **FALSE.**
+Indica se la classe supporta la modifica (aggiornamento) delle istanze. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -571,14 +571,14 @@ Indica se la classe può avere sottoclassi. Il valore predefinito è **FALSE.**
 
 Se viene dichiarata una sottoclasse, il compilatore genera un errore.
 
-Utilizzo: questo qualificatore non può coesistere con il **qualificatore Abstract.** Se vengono specificati entrambi **i qualificatori Terminal** e **Abstract,** il compilatore genera un errore.
+Utilizzo: questo qualificatore non può coesistere con il **qualificatore Abstract.** Se vengono specificati **entrambi i qualificatori Terminal** e **Abstract,** il compilatore genera un errore.
 
 </dd> <dt>
 
 <span id="Units"></span><span id="units"></span><span id="UNITS"></span>**Unità**
 </dt> <dd>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 
 Si applica a: proprietà, metodi, parametri
 
@@ -634,7 +634,7 @@ Tipo di dati: **booleano**
 
 Si applica a: riferimenti
 
-Indica se le chiavi della classe a cui si fa riferimento includono le chiavi degli altri partecipanti nell'associazione. Il valore predefinito è **FALSE.**
+Indica se le chiavi della classe a cui si fa riferimento includono le chiavi degli altri partecipanti all'associazione. Il valore predefinito è **FALSE.**
 
 Questo qualificatore viene usato quando l'identità della classe a cui si fa riferimento dipende dall'identità degli altri partecipanti all'associazione. Non più di un riferimento a una determinata classe può essere debole. Le altre classi nell'associazione devono definire una chiave. Le chiavi delle altre classi nell'associazione vengono ripetute nella classe a cui si fa riferimento e contrassegnate con un **qualificatore propagato.**
 
@@ -660,7 +660,7 @@ Tipo di dati: **booleano**
 
 Si applica a: proprietà
 
-Indica se la proprietà è scrivibile durante la creazione dell'istanza. Questo qualificatore può essere usato insieme al qualificatore **WriteAtCreate.** Il valore predefinito è **FALSE.**
+Indica se la proprietà è scrivibile durante la creazione dell'istanza. Questo qualificatore può essere usato insieme al **qualificatore WriteAtCreate.** Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -671,7 +671,7 @@ Tipo di dati: **booleano**
 
 Si applica a: proprietà
 
-Indica se la proprietà è scrivibile in fase di aggiornamento dell'istanza. Questo qualificatore può essere usato insieme al qualificatore **WriteAtCreate.** Il valore predefinito è **FALSE.**
+Indica se la proprietà è scrivibile in fase di aggiornamento dell'istanza. Questo qualificatore può essere usato insieme al **qualificatore WriteAtCreate.** Il valore predefinito è **FALSE.**
 
 </dd> </dl>
 

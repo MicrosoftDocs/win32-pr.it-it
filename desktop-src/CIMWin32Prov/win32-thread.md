@@ -45,7 +45,7 @@ ms.locfileid: "118416717"
 ---
 # <a name="win32_thread-class"></a>Classe Thread Win32 \_
 
-La classe  [WMI](../wmisdk/retrieving-a-class.md) **\_ Thread Win32** rappresenta un thread di esecuzione. Mentre un processo deve avere un thread di esecuzione, può creare altri thread per eseguire attività in parallelo. I thread condividono l'ambiente del processo, pertanto più thread nello stesso processo usano meno memoria rispetto allo stesso numero di processi.
+La classe  [WMI](../wmisdk/retrieving-a-class.md) **\_ Thread Win32** rappresenta un thread di esecuzione. Mentre un processo deve avere un thread di esecuzione, il processo può creare altri thread per eseguire attività in parallelo. I thread condividono l'ambiente di processo, pertanto più thread nello stesso processo usano meno memoria rispetto allo stesso numero di processi.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
@@ -88,14 +88,14 @@ La **classe \_ Thread Win32** ha questi tipi di membri:
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ Thread Win32** ha queste proprietà.
+La **classe \_ Thread Win32** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -113,7 +113,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -122,34 +122,34 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Cim \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza. Se usata con le altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
+Questa proprietà viene ereditata dal [**\_ thread CIM.**](cim-thread.md)
 
 </dd> <dt>
 
 **CSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CSCreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CSCreationClassName**"), [**Cim \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome della classe di creazione del computer di ambito.
+Nome della classe di creazione del sistema informatico di ambito.
 
-Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
+Questa proprietà viene ereditata dal [**\_ thread CIM.**](cim-thread.md)
 
 </dd> <dt>
 
 **CSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -158,16 +158,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CSName**"), [**Cim \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome del computer di ambito.
+Nome del sistema informatico di ambito.
 
-Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
+Questa proprietà viene ereditata dal [**\_ thread CIM.**](cim-thread.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -191,12 +191,12 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("milliseconds")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture dei dati delle prestazioni Win32API \| \| [**PERF \_ OBJECT \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfTime"), [**Unità**](../wmisdk/standard-qualifiers.md) ("millisecondi")
 </dt> </dl>
 
-Tempo di esecuzione totale, espresso in millisecondi, assegnato a questo thread dalla sua creazione.
+Tempo di esecuzione totale, in millisecondi, assegnato a questo thread dalla creazione.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](../wmisdk/creating-a-wmi-script.md)
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Tipo di accesso: sola lettura
 
 Condizione operativa corrente del thread.
 
-Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
+Questa proprietà viene ereditata dal [**\_ thread CIM.**](cim-thread.md)
 
 <dt>
 
@@ -259,7 +259,7 @@ Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
 
 <span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>
 
-**Sospeso pronto** (6)
+**Pronto sospeso** (6)
 
 
 </dt> <dd></dd> </dl>
@@ -269,7 +269,7 @@ Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
 **Handle**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -278,7 +278,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Handle"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32ThreadID")
 </dt> </dl>
 
-Handle per un thread. L'handle ha diritti di accesso completi per impostazione predefinita. Con l'accesso di sicurezza corretto, l'handle può essere usato in qualsiasi funzione che accetta un handle di thread. A seconda del flag di ereditarietà specificato al momento della creazione, questo handle può essere ereditato dai processi figlio.
+Handle a un thread. L'handle ha diritti di accesso completi per impostazione predefinita. Con l'accesso di sicurezza corretto, l'handle può essere usato in qualsiasi funzione che accetta un handle di thread. A seconda del flag di ereditarietà specificato al momento della creazione, questo handle può essere ereditato dai processi figlio.
 
 </dd> <dt>
 
@@ -309,19 +309,19 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Performance \| Data Structures \| [**PERF \_ OBJECT \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PrivilegedTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture dei dati delle prestazioni Win32API \| \| [**PERF \_ OBJECT \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PrivilegedTime"), [**Unità**](../wmisdk/standard-qualifiers.md) ("100 nanosecondi")
 </dt> </dl>
 
-Tempo in modalità kernel, in unità di 100 nanosecondi. Se queste informazioni non sono disponibili, è necessario usare il valore 0 (zero).
+Tempo in modalità kernel, in unità da 100 nanosecondi. Se queste informazioni non sono disponibili, deve essere usato il valore 0 (zero).
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](../wmisdk/creating-a-wmi-script.md)
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -330,7 +330,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. In caso di sottoclasse, è possibile eseguire l'override della proprietà come proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, la proprietà può essere sottoposta a override per essere una proprietà chiave.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -339,25 +339,25 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **OSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**OSCreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**OSCreationClassName**"), [**Cim \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nome della classe di creazione del sistema operativo di ambito.
 
-Questa proprietà viene ereditata dal [**thread CIM. \_**](cim-thread.md)
+Questa proprietà viene ereditata dal [**\_ thread CIM.**](cim-thread.md)
 
 </dd> <dt>
 
 **OSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -384,7 +384,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| tpDeltaPri")
 </dt> </dl>
 
-Priorità dinamica del thread. Ogni thread ha una priorità dinamica utilizzata dall'utilità di pianificazione per determinare quale thread eseguire. Inizialmente, la priorità dinamica di un thread corrisponde alla priorità di base. Il sistema può aumentare e ridurre la priorità dinamica, per assicurarsi che sia reattivo (garantendo che nessun thread sia affamato per il tempo del processore). Il sistema non aumenta la priorità dei thread con un livello di priorità di base compreso tra 16 e 31. Solo i thread con una priorità di base compresa tra 0 e 15 ricevono boost di priorità dinamica. I numeri più elevati indicano priorità più elevate.
+Priorità dinamica del thread. Ogni thread ha una priorità dinamica utilizzata dall'utilità di pianificazione per determinare quale thread eseguire. Inizialmente, la priorità dinamica di un thread corrisponde alla priorità di base. Il sistema può aumentare e ridurre la priorità dinamica, per garantire la velocità di risposta (garantendo che nessun thread sia affamato per il tempo del processore). Il sistema non aumenta la priorità dei thread con un livello di priorità di base compreso tra 16 e 31. Solo i thread con una priorità di base compresa tra 0 e 15 ricevono boost di priorità dinamica. I numeri più elevati indicano priorità più elevate.
 
 </dd> <dt>
 
@@ -466,7 +466,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -678,7 +678,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Thread Wait Reason")
 </dt> </dl>
 
-Motivo per cui il thread è in attesa. Questo valore è valido solo se il **membro ThreadState** è impostato su Transition (6). Le coppie di eventi consentono la comunicazione con sottosistemi protetti.
+Motivo per cui il thread è in attesa. Questo valore è valido solo se il **membro ThreadState** è impostato su Transition (6). Le coppie di eventi consentono la comunicazione con i sottosistemi protetti.
 
 <dt>
 

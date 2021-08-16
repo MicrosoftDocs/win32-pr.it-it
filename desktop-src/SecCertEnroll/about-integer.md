@@ -1,25 +1,25 @@
 ---
-description: I valori integer sono codificati in una tripletta TLV che inizia con un valore di Tag pari a 0x02.
+description: I valori interi vengono codificati in una tripletta TLV che inizia con un valore Tag di 0x02.
 ms.assetid: a6fed62f-af59-488c-a690-be8c3413086f
 title: INTEGER (API di registrazione certificati)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f0e8ed162d4cf4b2ac4909baf1cd7b5e94ddea6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85151947653a66c98b7a030ade7b9ff7b4f5ee87fd84edc4cc52679be296a1a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904344"
 ---
 # <a name="integer-certificate-enrollment-api"></a>INTEGER (API di registrazione certificati)
 
-I valori integer sono codificati in una tripletta TLV che inizia con un valore di **tag** pari a 0x02. Il campo del **valore** della terna di TLV contiene l'intero codificato se è positivo o il complemento a due se è negativo. Se il valore integer è positivo, ma il bit di ordine superiore è impostato su 1, viene aggiunto un 0x00 di primo livello al contenuto per indicare che il numero non è negativo. Ad esempio, il byte di ordine elevato di 0x8F (10001111) è 1. Viene pertanto aggiunto al contenuto un byte zero iniziali, come illustrato nella figura seguente.
+I valori interi vengono codificati in una tripletta TLV che inizia con un **valore Tag** di 0x02. Il **campo Value** della tripletta TLV contiene l'intero codificato se è positivo o il complemento dei due se è negativo. Se il numero intero è positivo ma il bit di ordine elevato è impostato su 1, al contenuto viene aggiunto un 0x00 iniziale per indicare che il numero non è negativo. Ad esempio, il byte di ordine 0x8F (10001111) è 1. Viene quindi aggiunto un byte zero iniziale al contenuto, come illustrato nella figura seguente.
 
-![codifica der del tipo di dati Boolean](images/der-tlv-integer.png)
+![Codifica der del tipo di dati booleano](images/der-tlv-integer.png)
 
-Se il valore integer contiene meno di 128 byte, il campo *length* richiede un solo byte per specificare la lunghezza del contenuto. Se il valore integer è maggiore di 127 byte, il bit 7 del campo *length* è impostato su 1 e BITS 6-0 specifica il numero di byte aggiuntivi utilizzati per identificare la lunghezza del contenuto. Per ulteriori informazioni, vedere [lunghezza codificata e byte valore](about-encoded-length-and-value-bytes.md).
+Se il numero intero contiene meno di 128 byte, il campo *Lunghezza* richiede un solo byte per specificare la lunghezza del contenuto. Se il numero intero è maggiore di 127 byte, il bit 7 del campo *Lunghezza* è impostato su 1 e i bit da 6 a 0 specificano il numero di byte aggiuntivi usati per identificare la lunghezza del contenuto. Per altre informazioni, vedere [Lunghezza codificata e Byte dei valori](about-encoded-length-and-value-bytes.md).
 
-Nell'esempio seguente, da [ \# ASN 10 con codifica ASN. 1](pkcs--10-encoded-asn-1.md), viene visualizzata la codifica per una chiave pubblica a 128 byte. Il primo byte contiene il valore del **tag** per il tipo di dati **Integer** , 0x02. Il secondo e il terzo byte contengono il valore **length** . Il bit 7 del secondo byte è impostato su 1 perché sono presenti più di 127 byte di contenuto. I bit da 0 a 6 del secondo byte specificano il numero di byte finali necessari, in questo caso uno, per specificare accuratamente la lunghezza del contenuto. Il terzo byte specifica il numero di byte di contenuto, 0x81. Il quarto byte, 0x00, viene aggiunto al contenuto per indicare che l'intero è effettivamente un valore positivo anche se il bit di segno del byte di contenuto iniziali (0x8F) è impostato su 1.
+L'esempio seguente, da [PKCS \# 10 Encoded ASN.1,](pkcs--10-encoded-asn-1.md)mostra la codifica per una chiave pubblica a 128 byte. Il primo byte contiene il **valore Tag** per il tipo di **dati INTEGER,** 0x02. Il secondo e il terzo byte contengono il **valore Length.** Il bit 7 del secondo byte è impostato su 1 perché sono presenti più di 127 byte di contenuto. I bit da 0 a 6 del secondo byte specificano il numero di byte finali necessari, in questo caso uno, per specificare in modo accurato la lunghezza del contenuto. Il terzo byte specifica il numero di byte di contenuto, 0x81. Il quarto byte, 0x00, viene aggiunto al contenuto per indicare che l'intero è effettivamente un valore positivo anche se il bit di segno del byte di contenuto iniziale (0x8F) è impostato su 1.
 
 ``` syntax
 02 81 81          ; INTEGER (81 Bytes)
@@ -34,7 +34,7 @@ Nell'esempio seguente, da [ \# ASN 10 con codifica ASN. 1](pkcs--10-encoded-asn-
 |  31 5b b1 9c bc 20 55 bf  3a 37 42 45 75 dc 90 65
 ```
 
-Nell'esempio seguente viene illustrato come codificare il valore integer 0x03. Il byte di **tag** contiene 0x02 e la **lunghezza** byte indica che è presente un byte di contenuto.
+Nell'esempio seguente viene illustrato come viene codificato il valore 0x03 integer. Il **byte** tag contiene 0x02 e **length** byte specifica che è presente un byte di contenuto.
 
 ``` syntax
 02 01             ; INTEGER (1 Bytes)
@@ -45,10 +45,10 @@ Nell'esempio seguente viene illustrato come codificare il valore integer 0x03. I
 
 <dl> <dt>
 
-[Sistema di tipi ASN. 1](about-asn-1-type-system.md)
+[Sistema di tipi ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codifica DER dei tipi ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codifica DER dei tipi ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

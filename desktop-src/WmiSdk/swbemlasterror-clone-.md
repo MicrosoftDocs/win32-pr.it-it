@@ -27,7 +27,7 @@ ms.locfileid: "118314667"
 
 Il **\_ metodo Clone** dell'oggetto [**SWbemLastError**](swbemlasterror.md) restituisce un nuovo oggetto che è un clone dell'oggetto **SWbemLastError** corrente.
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,11 +45,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il **metodo \_ Clone** ha esito positivo, restituisce un [**nuovo oggetto SWbemLastError.**](swbemlasterror.md)
+Se il **metodo Clone \_** ha esito positivo, restituisce un nuovo oggetto [**SWbemLastError.**](swbemlasterror.md)
 
 ## <a name="error-codes"></a>Codici di errore
 
-Al termine del metodo **Clone, \_** l'oggetto **Err** può contenere uno dei codici di errore seguenti.
+Al termine del metodo **Clone, \_ l'oggetto** **Err** può contenere uno dei codici di errore seguenti.
 
 <dl> <dt>
 
@@ -76,9 +76,9 @@ Memoria insufficiente per completare l'operazione.
 
 ## <a name="remarks"></a>Commenti
 
-Usare il metodo **Clone \_** per duplicare una definizione di classe o un'istanza. Questo metodo è utile quando è necessario eseguire il backup della copia originale dell'oggetto mentre si modifica una nuova copia. Usare inoltre questo metodo per creare molte nuove istanze da una singola istanza di origine. Ad esempio, usare [**\_ SWbemObject.SpawnInstance**](swbemobject-spawninstance-.md) per creare una singola istanza iniziale e **usare SWbemLastError.Clone \_** per produrre rapidamente 100 copie dell'istanza. Successivamente, è possibile modificare gli oggetti, fornendo valori specifici a ogni oggetto.
+Usare il **metodo Clone \_** per duplicare una definizione o un'istanza di classe. Questo metodo è utile quando è necessario eseguire il backup della copia originale dell'oggetto mentre si modifica una nuova copia. Usare anche questo metodo per creare molte nuove istanze da una singola istanza di origine. Ad esempio, usare [**\_ SWbemObject.SpawnInstance**](swbemobject-spawninstance-.md) per creare una singola istanza iniziale e **usare SWbemLastError.Clone \_** per produrre rapidamente 100 copie dell'istanza. Successivamente, è possibile modificare gli oggetti, fornendo valori specifici a ogni oggetto.
 
-Non è possibile usare questo metodo per convertire una definizione di classe in un'istanza di o per convertire un'istanza in una definizione di classe.
+Non è possibile usare questo metodo per convertire una definizione di classe in un'istanza o per convertire un'istanza in una definizione di classe.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -4,12 +4,12 @@ ms.assetid: 5b07060e-0c66-4bf2-b697-05231cb38375
 title: Uso delle funzionalità di configurazione della crittografia di CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd700b52810f43381722a315bec12216acd7b683
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa1845d7c1df7afb95b93446b1e86b3838aed7e0ef51bb0e53b6f7a83f3515b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905400"
 ---
 # <a name="using-the-cryptography-configuration-features-of-cng"></a>Uso delle funzionalità di configurazione della crittografia di CNG
 
@@ -20,11 +20,11 @@ L'API CNG fornisce funzioni per enumerare e ottenere informazioni sui provider r
 
 ## <a name="enumerating-providers"></a>Enumerazione dei provider
 
-Utilizzare la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per enumerare i provider registrati. La funzione **BCryptEnumRegisteredProviders** può essere chiamata in uno dei due modi seguenti:
+Usare la [**funzione BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per enumerare i provider registrati. La **funzione BCryptEnumRegisteredProviders** può essere chiamata in uno dei due modi seguenti:
 
-1.  Il primo consiste nell'allocazione della memoria da parte della funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) . Questa operazione viene eseguita passando l'indirizzo di un puntatore **null** per il parametro *ppBuffer* . Tramite questo codice verrà allocata la memoria necessaria per la struttura dei [**\_ provider di crittografia**](/windows/desktop/api/Bcrypt/ns-bcrypt-crypt_providers) e le stringhe associate. Quando la funzione **BCryptEnumRegisteredProviders** viene usata in questo modo, è necessario liberare la memoria quando non è più necessaria passando *PpBuffer* alla funzione [**BCryptFreeBuffer**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfreebuffer) .
+1.  Il primo è fare in modo che la [**funzione BCryptEnumRegisteredProviders alloca**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) la memoria. Questa operazione viene eseguita passando l'indirizzo di un **puntatore NULL** per il *parametro ppBuffer.* Questo codice alloca la memoria necessaria per la [**struttura CRYPT \_ PROVIDERS**](/windows/desktop/api/Bcrypt/ns-bcrypt-crypt_providers) e le stringhe associate. Quando la **funzione BCryptEnumRegisteredProviders** viene usata in questo modo, è necessario liberare la memoria quando non è più necessaria passando *ppBuffer* alla [**funzione BCryptFreeBuffer.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfreebuffer)
 
-    Nell'esempio seguente viene illustrato come utilizzare la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per allocare il buffer.
+    L'esempio seguente illustra come usare la [**funzione BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per allocare automaticamente il buffer.
 
     ```C++
     #include <windows.h>
@@ -76,9 +76,9 @@ Utilizzare la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/
 
     
 
-2.  Il secondo metodo consiste nell'allocare la memoria necessaria. Questa operazione viene eseguita chiamando la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) con **null** per il parametro *ppBuffer* . La funzione **BCryptEnumRegisteredProviders** viene posizionata nel valore a cui punta il parametro *pcbBuffer* , ovvero la dimensione richiesta, in byte, della struttura dei [**\_ provider di crittografia**](/windows/desktop/api/Bcrypt/ns-bcrypt-crypt_providers) e di tutte le stringhe. Si alloca quindi la memoria necessaria e si passa l'indirizzo del puntatore del buffer per il parametro *ppBuffer* in una seconda chiamata alla funzione **BCryptEnumRegisteredProviders** .
+2.  Il secondo metodo è allocare manualmente la memoria necessaria. Questa operazione viene eseguita chiamando la [**funzione BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) con **NULL** per il *parametro ppBuffer.* La **funzione BCryptEnumRegisteredProviders** verrà posizionata nel valore a cui punta il *parametro pcbBuffer,* le dimensioni richieste, in byte, della struttura [**CRYPT \_ PROVIDERS**](/windows/desktop/api/Bcrypt/ns-bcrypt-crypt_providers) e di tutte le stringhe. Allocare quindi la memoria necessaria e passare l'indirizzo di questo puntatore al buffer per il *parametro ppBuffer* in una seconda chiamata alla **funzione BCryptEnumRegisteredProviders.**
 
-    Nell'esempio seguente viene illustrato come utilizzare la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per allocare e utilizzare il proprio buffer.
+    L'esempio seguente illustra come usare la [**funzione BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) per allocare e usare il proprio buffer.
 
     ```C++
     #include <windows.h>
@@ -128,7 +128,7 @@ Utilizzare la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/
 
 ## <a name="getting-provider-registration-information"></a>Recupero delle informazioni di registrazione del provider
 
-La funzione [**BCryptQueryProviderRegistration**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration) viene utilizzata per ottenere informazioni aggiuntive specifiche per la registrazione relative a un provider. Questa funzione accetta il nome del provider per il quale si desidera ottenere informazioni, la modalità del provider desiderata (modalità kernel, modalità utente o entrambi) e l'identificatore dell'interfaccia del provider per il quale recuperare le informazioni di registrazione. Ad esempio, per ottenere le informazioni di registrazione della modalità utente per l'interfaccia di crittografia per il provider "Microsoft primitive provider", effettuare una chiamata simile alla seguente.
+La [**funzione BCryptQueryProviderRegistration**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration) viene usata per ottenere informazioni aggiuntive specifiche della registrazione su un provider. Questa funzione accetta il nome del provider per cui si desidera ottenere informazioni, la modalità provider desiderata (modalità kernel, modalità utente o entrambi) e l'identificatore dell'interfaccia del provider per cui recuperare le informazioni di registrazione. Ad esempio, per ottenere le informazioni di registrazione in modalità utente per l'interfaccia di crittografia per il provider "Microsoft Primitive Provider", è necessario effettuare una chiamata simile alla seguente.
 
 
 ```C++
@@ -143,7 +143,7 @@ BCryptQueryProviderRegistration(
 
 
 
-Come la funzione [**BCryptEnumRegisteredProviders**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) , la funzione [**BCryptQueryProviderRegistration**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration) può allocare memoria per l'utente oppure è possibile allocare la memoria. Il processo è lo stesso per le due funzioni.
+Analogamente alla [**funzione BCryptEnumRegisteredProviders,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumregisteredproviders) la [**funzione BCryptQueryProviderRegistration**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration) può allocare memoria oppure è possibile allocare la memoria manualmente. Il processo è lo stesso per le due funzioni.
 
  
 

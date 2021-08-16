@@ -21,7 +21,7 @@ Windows Il programma di installazione può ottimizzare l'applicazione delle patc
 
 **Windows Installer 3.1 e versioni successive:** A partire da Windows Installer 3.1, l'ottimizzazione delle patch richiede che per tutte le patch nella transazione la proprietà OptimizedInstallMode sia impostata su 1 (uno) nella tabella [MsiPatchMetadata](msipatchmetadata-table.md).
 
-Se una patch modifica solo le tabelle seguenti, Windows Installer 3.0 o versione successiva ignora le azioni associate a tutte le altre tabelle, anche se tali azioni sono elencate nelle tabelle di sequenza del pacchetto di installazione dell'applicazione originale (file .msi).
+Se una patch modifica solo le tabelle seguenti, Windows Installer 3.0 o versioni successive ignora le azioni associate a tutte le altre tabelle, anche se tali azioni sono elencate nelle tabelle di sequenza del pacchetto di installazione dell'applicazione originale (file .msi).
 
 -   [AdminExecuteSequence](adminexecutesequence-table.md)
 -   [AdminUISequence](adminuisequence-table.md)

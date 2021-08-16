@@ -44,21 +44,21 @@ Installer.ApplyMultiplePatches(
 *PatchPackagesList* 
 </dt> <dd>
 
-Stringa che contiene un elenco delimitato da punto e virgola dei percorsi per applicare patch ai file. Ad esempio: ""c: \\ sus \\ download cache Office \\ \\ \\ sp1.msp; c: \\ sus \\ download cache \\ Office \\ \\ QFE1.msp;c: \\ sus download cache Office \\ \\ \\ \\ QFEn.msp""
+Stringa che contiene un elenco delimitato da punti e virgola dei percorsi dei file di patch. Ad esempio: ""c: \\ sus \\ download cache Office \\ \\ \\ sp1.msp; c: \\ sus \\ download cache \\ Office \\ \\ QFE1.msp;c: \\ sus download cache Office \\ \\ \\ \\ QFEn.msp""
 
 </dd> <dt>
 
 *Prodotto* 
 </dt> <dd>
 
-Questo parametro fornisce il [**Codice Prodotto del**](productcode.md) prodotto a cui applicare la patch. Questo parametro è facoltativo. Quando questo parametro è Null, le patch vengono applicate a tutti i prodotti idonei per la ricezione di tali patch.
+Questo parametro fornisce il [**codice ProductCode**](productcode.md) del prodotto a cui viene patchata. Questo parametro è facoltativo. Quando questo parametro è Null, le patch vengono applicate a tutti i prodotti idonei a ricevere queste patch.
 
 </dd> <dt>
 
 *szPropertiesList* 
 </dt> <dd>
 
-Stringa con terminazione Null che specifica le impostazioni delle proprietà della riga di comando. Questo parametro è facoltativo. Vedere [Informazioni sulle proprietà](about-properties.md) e Impostazione dei valori delle proprietà pubbliche nella riga di [comando.](setting-public-property-values-on-the-command-line.md) Queste proprietà sono condivise da tutti i prodotti di destinazione.
+Stringa con terminazione Null che specifica le impostazioni delle proprietà della riga di comando. Questo parametro è facoltativo. Vedere [Informazioni sulle proprietà](about-properties.md) e Impostazione di valori di proprietà pubbliche nella riga di [comando.](setting-public-property-values-on-the-command-line.md) Queste proprietà sono condivise da tutti i prodotti di destinazione.
 
 </dd> </dl>
 
@@ -72,9 +72,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003 o Windows XP.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP.<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 

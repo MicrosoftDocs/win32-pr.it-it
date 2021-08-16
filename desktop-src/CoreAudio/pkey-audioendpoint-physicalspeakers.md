@@ -15,7 +15,7 @@ ms.locfileid: "118406417"
 
 La **proprietà PKEY \_ AudioEndpoint \_ PhysicalSpeakers** specifica la maschera di configurazione del canale per il dispositivo endpoint audio. La maschera indica la configurazione fisica di un set di altoparlanti e specifica l'assegnazione dei canali agli altoparlanti. Per altre informazioni sulle maschere di configurazione del canale, vedere quanto segue:
 
-1.  Descrizione della proprietà KSPROPERTY AUDIO CHANNEL CONFIG nella \_ \_ documentazione Windows \_ DDK.
+1.  Descrizione della proprietà KSPROPERTY AUDIO CHANNEL CONFIG nella documentazione Windows \_ \_ \_ DDK.
 2.  Il white paper dal titolo "Supporto dei driver audio per le configurazioni degli altoparlanti home theater" nel sito [Web di Audio Device Technologies for Windows.](https://www.microsoft.com/whdc/device/audio/default.mspx)
 
 Il **membro vt** della **struttura PROPVARIANT** è impostato su VT \_ UI4.

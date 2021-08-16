@@ -1,5 +1,5 @@
 ---
-description: Sia che si progetti un'applicazione per l'esecuzione di attività commerciali online, il rilevamento delle informazioni, l'accesso ai dati nei sistemi legacy, la messaggistica, la pianificazione delle risorse, la pubblicazione e la gestione delle conoscenze o un'applicazione line-of-business critica, è possibile migliorare e semplificare la progettazione del livello intermedio integrando i servizi COM+. Il modo più comune per eseguire questa operazione è raggruppare i componenti in applicazioni COM+.
+description: Sia che si progetti un'applicazione per l'esecuzione del commercio online, il rilevamento delle informazioni, l'accesso ai dati nei sistemi legacy, la messaggistica, la pianificazione delle risorse, la pubblicazione e la gestione delle conoscenze o un'applicazione line-of-business critica, è possibile migliorare e semplificare la progettazione di livello intermedio integrando i servizi COM+. Il modo più comune per eseguire questa operazione è raggruppare i componenti in applicazioni COM+.
 ms.assetid: 75002a82-5300-4758-9fe4-56537af5168c
 title: Progettazione di applicazioni COM+
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118548000"
 ---
 # <a name="designing-com-applications"></a>Progettazione di applicazioni COM+
 
-Sia che si progetti un'applicazione per l'esecuzione di attività commerciali online, il rilevamento delle informazioni, l'accesso ai dati nei sistemi legacy, la messaggistica, la pianificazione delle risorse, la pubblicazione e la gestione delle conoscenze o un'applicazione line-of-business critica, è possibile migliorare e semplificare la progettazione del livello intermedio integrando i servizi COM+. Il modo più comune per eseguire questa operazione è raggruppare i componenti in applicazioni COM+.
+Sia che si progetti un'applicazione per l'esecuzione del commercio online, il rilevamento delle informazioni, l'accesso ai dati nei sistemi legacy, la messaggistica, la pianificazione delle risorse, la pubblicazione e la gestione delle conoscenze o un'applicazione line-of-business critica, è possibile migliorare e semplificare la progettazione di livello intermedio integrando i servizi COM+. Il modo più comune per eseguire questa operazione è raggruppare i componenti in applicazioni COM+.
 
-Sebbene una revisione della metodologia completa per l'uso di COM+ in tutte le situazioni esersi dall'ambito di questo documento, gli argomenti seguenti presentano informazioni che è possibile usare durante la creazione di un'applicazione COM+.
+Sebbene una revisione della metodologia completa per l'uso di COM+ in tutte le situazioni esersi dall'ambito di questo documento, gli argomenti seguenti presentano informazioni che è possibile usare quando si crea un'applicazione COM+.
 
 
 

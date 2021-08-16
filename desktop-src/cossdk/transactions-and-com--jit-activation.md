@@ -13,28 +13,28 @@ ms.locfileid: "118546048"
 ---
 # <a name="transactions-and-com-jit-activation"></a>Transazioni e attivazione JIT COM+
 
-L'attivazione JIT COM+ è strettamente associata alle transazioni automatiche. Quando si configura un componente in modo che richieda una transazione o richieda una nuova transazione, viene abilitata automaticamente anche l'attivazione JIT. Le due funzionalità funzionano naturalmente in combinazione. I componenti transazionali attivati tramite JIT condividono le caratteristiche seguenti:
+L'attivazione JIT COM+ è strettamente associata alle transazioni automatiche. Quando si configura un componente in modo che richieda una transazione o una nuova transazione, viene abilitata automaticamente anche l'attivazione JIT. Le due funzionalità funzionano naturalmente in combinazione. I componenti transazionali attivati da JIT condividono le caratteristiche seguenti:
 
--   Statelessness. Non è necessario mantenere lo stato che viola l'isolamento della transazione né lo stato che andrebbe perso in caso di disattivazione dell'oggetto.
+-   Stato attivo. Non è necessario mantenere lo stato che viola l'isolamento delle transazioni né lo stato che andrebbe perso in caso di disattivazione dell'oggetto.
 
--   Uso rapido. Il modello di utilizzo canonico per un oggetto che esegue operazioni in una transazione automatica è eseguire una piccola unità di lavoro, voto e uscita.
+-   Uso rapido. Il modello di utilizzo canonico per un oggetto che esegue il lavoro in una transazione automatica è eseguire una piccola unità di lavoro, votare ed uscire.
 
     > [!Note]  
-    > Anche i modi in cui si vota nelle transazioni COM+ e la correttezza del segnale per l'attivazione JIT sono strettamente associati. Per altre informazioni, vedere [Impostazione del bit done](setting-the-done-bit.md).
+    > Anche i modi in cui si vota nelle transazioni COM+ e la correttezza dei segnali per l'attivazione JIT sono strettamente legati tra loro. Per altre informazioni, vedere [Impostazione del bit done.](setting-the-done-bit.md)
 
      
 
--   Uso ripetuto. Quando il lavoro transazionale viene suddiviso correttamente, i client usano gli stessi oggetti più volte per eseguire piccole particelle di lavoro atomico.
+-   Uso ripetuto. Quando il lavoro transazionale viene suddiviso correttamente, i client usano gli stessi oggetti più volte per eseguire piccole operazioni atomiche.
 
--   Disattivato al commit o all'interruzione. In COM+, tutti gli oggetti all'interno del limite della transazione vengono disattivati quando la transazione esegue il commit o l'interruzione.
+-   Disattivata al commit o all'interruzione. In COM+, tutti gli oggetti all'interno del limite della transazione vengono disattivati quando la transazione viene interrotta o ne viene eseguito il commit.
 
-In combinazione con i componenti transazionali COM+, l'attivazione JIT funge da grande miglioramento delle prestazioni mantenendo aperto il canale man mano che i client contengono riferimenti di lunga durata agli oggetti transazionali. Come ulteriori miglioramenti, è possibile scegliere di eseguire il pool degli oggetti transazionali per riutilizzare le risorse che contengono, velocizzare il tempo di riattivazione degli oggetti e gestire da vicino il modo in cui si usano le risorse di memoria per oggetti specifici.
+In combinazione con i componenti transazionali COM+, l'attivazione JIT rappresenta un miglioramento importante delle prestazioni mantenendo aperto il canale man mano che i client contengono riferimenti di lunga durata a oggetti transazionali. Come ulteriori miglioramenti, è possibile scegliere di creare un pool degli oggetti transazionali per riutilizzare le risorse che contengono, accelerare il tempo di riattivazione degli oggetti e gestire attentamente il modo in cui si usano le risorse di memoria per oggetti specifici.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Concetti relativi all'attivazione just-in-time di COM+](com--just-in-time-activation-concepts.md)
+[Concetti relativi all'attivazione just-in-time COM+](com--just-in-time-activation-concepts.md)
 </dt> <dt>
 
 [Abilitazione dell'attivazione JIT per un componente](enabling-jit-activation-for-a-component.md)

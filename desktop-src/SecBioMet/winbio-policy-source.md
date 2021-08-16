@@ -1,10 +1,10 @@
 ---
-title: Enumerazione WINBIO_POLICY_SOURCE ( \_ tipi WINBIO. h)
-description: Elenca le possibili origini delle informazioni sui criteri per il rilevamento dello spoofing per i fattori biometrici.
+title: WINBIO_POLICY_SOURCE enumerazione (Winbio \_ types.h)
+description: Elenca le possibili origini di informazioni sui criteri per il rilevamento dello spoofing per i fattori biometrici.
 ms.assetid: 3DC3BB0B-1FD7-473C-8E0B-B7E0A4A44E9E
 keywords:
-- WINBIO_POLICY_SOURCE enumerazione Windows Biometric Framework API
-- Puntatore di enumerazione PWINBIO_POLICY_SOURCE Windows Biometric Framework API
+- WINBIO_POLICY_SOURCE'Windows API Biometric Framework
+- PWINBIO_POLICY_SOURCE puntatore di enumerazione Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866d1d82d939f143c4385caa5d94c68ffe3758f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 962d4bc3e8cffb778df56d78a9ddaf0641f57f8f96c8f7b024745a4b879f2f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909935"
 ---
-# <a name="winbio_policy_source-enumeration"></a>Enumerazione dell'origine dei \_ criteri WINBIO \_
+# <a name="winbio_policy_source-enumeration"></a>Enumerazione WINBIO \_ POLICY \_ SOURCE
 
-Elenca le possibili origini delle informazioni sui criteri per il rilevamento dello spoofing per i fattori biometrici.
+Elenca le possibili origini di informazioni sui criteri per il rilevamento dello spoofing per i fattori biometrici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,28 +44,28 @@ typedef enum _WINBIO_POLICY_SOURCE {
 
 <dl> <dt>
 
-<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**\_criterio WINBIO \_ sconosciuto**
+<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**CRITERI WINBIO \_ \_ SCONOSCIUTI**
 </dt> <dd>
 
-L'origine del criterio è sconosciuta.
+L'origine dei criteri è sconosciuta.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**\_impostazione predefinita dei criteri di WINBIO \_**
+<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**IMPOSTAZIONE PREDEFINITA DEI CRITERI WINBIO \_ \_**
 </dt> <dd>
 
-Il criterio è il criterio predefinito fornito dal Windows Biometric Framework.
+I criteri sono i criteri predefiniti forniti dall'Windows Biometric Framework.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**\_criteri WINBIO \_ locale**
+<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**CRITERI WINBIO \_ \_ LOCALI**
 </dt> <dd>
 
-Criteri impostati dall'utente singolo per il proprio account tramite l'app **Impostazioni** . Questo criterio sostituisce i criteri predefiniti.
+Criteri impostati dal singolo utente per il proprio account usando l'app **Impostazioni** app. Questo criterio esegue l'override dei criteri predefiniti.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**\_amministrazione dei criteri di WINBIO \_**
+<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**AMMINISTRATORE DEI CRITERI WINBIO \_ \_**
 </dt> <dd>
 
 Criteri di gruppo impostati dall'amministratore IT per l'organizzazione. I singoli utenti non possono eseguire l'override di questo criterio.
@@ -78,9 +78,9 @@ Criteri di gruppo impostati dall'amministratore IT per l'organizzazione. I singo
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ types. h (includere WinBio. h per le applicazioni client o WinBio \_ Adapters. h per gli adapter)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (includere Winbio.h per le applicazioni client o Adapters.h Winbio \_ per gli adapter)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Criteri di gruppo impostati dall'amministratore IT per l'organizzazione. I singo
 
 <dl> <dt>
 
-[**\_ \_ \_ Azione criterio anti-spoofing WINBIO \_**](winbio-anti-spoof-policy-action.md)
+[**AZIONE DEI CRITERI \_ ANTI \_ \_ SPOOFING WINBIO \_**](winbio-anti-spoof-policy-action.md)
 </dt> </dl>
 
  

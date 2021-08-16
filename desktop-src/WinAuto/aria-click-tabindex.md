@@ -1,6 +1,6 @@
 ---
-title: Errore DI ARIA Tabindex
-description: Errore DI ARIA Tabindex
+title: Errore di indice di tabulazione ARIA
+description: Errore di indice di tabulazione ARIA
 ms.assetid: CCBC56E8-8899-4962-8315-762538CA666C
 keywords:
 - AriaTabIndexErrorId
@@ -13,7 +13,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118326746"
 ---
-# <a name="aria-tabindex-error"></a>Errore DI ARIA Tabindex
+# <a name="aria-tabindex-error"></a>Errore di indice di tabulazione ARIA
 
 ## <a name="text"></a>Testo
 

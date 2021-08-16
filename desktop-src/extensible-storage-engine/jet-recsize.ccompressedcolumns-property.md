@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECSIZE. cCompressedColumns'
-title: Proprietà JET_RECSIZE. cCompressedColumns (Microsoft. ISAM. esent. Interop. vista)
+description: Altre informazioni sulla proprietà JET_RECSIZE.cCompressedColumns
+title: JET_RECSIZE.cCompressedColumns (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cCompressedColumns property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cCompressedColumns
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.ccompressedcolumns(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 448a18afc5a986fb34128dc4113fddef4448486a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80a058cc12174b9247524ccd88060a9aa17ba561a95b036010040a4786d0d47c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763746"
 ---
-# <a name="jet_recsizeccompressedcolumns-property"></a>Proprietà JET_RECSIZE. cCompressedColumns
+# <a name="jet_recsizeccompressedcolumns-property"></a>JET_RECSIZE.cCompressedColumns
 
 Ottiene il numero totale di colonne nel record compresse.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public long cCompressedColumns { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

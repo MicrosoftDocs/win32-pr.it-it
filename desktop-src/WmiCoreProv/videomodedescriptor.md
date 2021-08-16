@@ -1,5 +1,5 @@
 ---
-description: Contiene gli elementi del descrittore di modalità per la matrice MonitorSourceModes nella classe WmiMonitorListedSupportedSourceModes.
+description: Contiene gli elementi descrittori di modalità per la matrice MonitorSourceModes nella classe WmiMonitorListedSupportedSourceModes.
 ms.assetid: 6d6c846d-caec-41a8-8a88-1c1e14bc0473
 title: Classe VideoModeDescriptor
 ms.topic: reference
@@ -48,7 +48,7 @@ ms.locfileid: "118558406"
 ---
 # <a name="videomodedescriptor-class"></a>Classe VideoModeDescriptor
 
-La classe WMI **VideoModeDescriptorVideo** contiene gli elementi del descrittore di modalità per la matrice **MonitorSourceModes** nella [**classe WmiMonitorListedSupportedSourceModes.**](wmimonitorlistedsupportedsourcemodes.md) Questi elementi includono funzionalità di monitoraggio, ad esempio la frequenza di aggiornamento, le caratteristiche in pixel o le dimensioni dell'immagine. La **classe VideoModeDescriptorVideo** contiene informazioni che sono un superset dei dati disponibili da blocchi di temporizzazione stabiliti, standard e dettagliati.
+La classe WMI **VideoModeDescriptorVideo** contiene elementi descrittori di modalità per la matrice **MonitorSourceModes** nella [**classe WmiMonitorListedSupportedSourceModes.**](wmimonitorlistedsupportedsourcemodes.md) Questi elementi includono funzionalità di monitoraggio, ad esempio frequenza di aggiornamento, caratteristiche dei pixel o dimensioni dell'immagine. La **classe VideoModeDescriptorVideo** contiene informazioni che sono un superset dei dati disponibili dai blocchi di temporizzazione stabiliti, standard e dettagliati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -105,7 +105,7 @@ Tipo di dati: **uint8**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di polarità composita. Questa è la polarità degli pulsazioni di sincronizzazione orizzontale al di fuori della sincronizzazione verticale.
+Tipo di polarità composita. Questa è la polarità degli pulsamenti di sincronizzazione orizzontale al di fuori della sincronizzazione verticale.
 
 
 
@@ -143,7 +143,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di pixel con spazi vuoti orizzontali
+Numero di pixel vuoti orizzontali
 
 </dd> <dt>
 
@@ -246,7 +246,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Larghezza dell'pulse di sincronizzazione orizzontale.
+Larghezza dell'impulso di sincronizzazione orizzontale.
 
 </dd> <dt>
 
@@ -272,7 +272,7 @@ Tipo di dati: **uint8**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il tipo di serrazione richiesto, se appropriato.
+Indica il tipo di serrazione necessario, se appropriato.
 
 
 
@@ -303,8 +303,8 @@ Indica quali linee del segnale video devono essere sincronizzate, se appropriato
 
 | Valore                                                                              | Significato                                                                           |
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl> | L'pulse di sincronizzazione dovrebbe essere visualizzato su tutte e 3 le linee di segnale video.<br/>                  |
-| <dl> <dt>1 (0x1)</dt> </dl> | L'allarme di sincronizzazione dovrebbe essere visualizzato solo sulla linea del segnale video verde.<br/>          |
+| <dl> <dt>0 (0x0)</dt> </dl> | L'impulso di sincronizzazione dovrebbe essere visualizzato su tutte e tre le linee del segnale video.<br/>                  |
+| <dl> <dt>1 (0x1)</dt> </dl> | L'impulso di sincronizzazione dovrebbe essere visualizzato solo sulla linea verde del segnale video.<br/>          |
 | <dl> <dt>2 (0x2)</dt> </dl> | Non applicabile. Il tipo di sincronizzazione del segnale deve essere composito bipolare analogico.<br/> |
 
 
@@ -342,12 +342,12 @@ Tipo di modalità stereo. Nella tabella seguente sono elencati i valori possibil
 | Valore                                                                              | Significato                                                             |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Nessun stereo.<br/>                                               |
-| <dl> <dt>1 (0x1)</dt> </dl> | Stereo sequenziale dei campi con immagine destra nella sincronizzazione stereo.<br/> |
-| <dl> <dt>2 (0x2)</dt> </dl> | Stereo sequenziale dei campi con immagine sinistra nella sincronizzazione stereo.<br/>  |
-| <dl> <dt>3 (0x3)</dt> </dl> | Stereo interleaved a 2 way con immagine destra su linee pari.<br/> |
-| <dl> <dt>4 (0x4)</dt> </dl> | Stereo interleaved a 2 way con immagine sinistra su linee pari.<br/>  |
-| <dl> <dt>5 (0x5)</dt> </dl> | Stereo interleaved a 4 way.<br/>                                |
-| <dl> <dt>6 (0x6)</dt> </dl> | Stereo interleaved affiancato.<br/>                         |
+| <dl> <dt>1 (0x1)</dt> </dl> | Stereo sequenziale di campo con immagine destra nella sincronizzazione stereo.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | Stereo sequenziale di campo con immagine sinistra nella sincronizzazione stereo.<br/>  |
+| <dl> <dt>3 (0x3)</dt> </dl> | Stereo interfoliato bidireale con immagine destra su linee pari.<br/> |
+| <dl> <dt>4 (0x4)</dt> </dl> | Stereo interfoliato bidireale con immagine sinistra su linee pari.<br/>  |
+| <dl> <dt>5 (0x5)</dt> </dl> | Stereo interleaved a 4 canali.<br/>                                |
+| <dl> <dt>6 (0x6)</dt> </dl> | Stereo interfoliato side-by-side.<br/>                         |
 
 
 
@@ -371,9 +371,9 @@ Tipo di sincronizzazione del segnale. Nella tabella seguente sono elencati i val
 | Valore                                                                              | Significato                             |
 |------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Composito analogico<br/>         |
-| <dl> <dt>1 (0x1)</dt> </dl> | Bipolar Analog Composite<br/> |
+| <dl> <dt>1 (0x1)</dt> </dl> | Composito bipolare analogico<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl> | Composito digitale<br/>        |
-| <dl> <dt>3 (0x3)</dt> </dl> | Digital Separate<br/>         |
+| <dl> <dt>3 (0x3)</dt> </dl> | Separazione digitale<br/>         |
 
 
 
@@ -429,7 +429,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensioni dell'immagine verticali in millimetri (mm).
+Dimensioni verticali dell'immagine in millimetri (mm).
 
 </dd> <dt>
 
@@ -506,7 +506,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Larghezza dell'pulse di sincronizzazione verticale.
+Larghezza dell'impulso di sincronizzazione verticale.
 
 </dd> <dt>
 
@@ -519,14 +519,14 @@ Tipo di dati: **uint8**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo standard video.
+Tipo di video standard.
 
 
 
 | Valore                                                                                | Significato                                                                                                        |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl>   | Altri<br/>                                                                                               |
-| <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. Dalla specifica Video Electronics Standard Association (VESA) Display Monitor Timings (Intervalli del monitor di visualizzazione VESA).<br/> |
+| <dl> <dt>0 (0x0)</dt> </dl>   | Altro<br/>                                                                                               |
+| <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. Dalla specifica Video Electronics Standard Association (VESA) Display Monitor Timings (Intervalli di monitoraggio video elettronica standard).<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>   | VESA GTF. Dallo standard VESA Generalized Timing Formula.<br/>                                            |
 | <dl> <dt>3 (0x3)</dt> </dl>   | VESA CVT/ dallo standard VESA Coordinated Video Timings.<br/>                                             |
 | <dl> <dt>4 (0x4)</dt> </dl>   | IBM<br/>                                                                                                 |

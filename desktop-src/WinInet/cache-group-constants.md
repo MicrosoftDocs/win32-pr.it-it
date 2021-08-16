@@ -1,6 +1,6 @@
 ---
-title: Costanti di gruppo della cache (WinInet. h)
-description: Nell'elenco seguente sono contenute le costanti utilizzate dalle funzioni del gruppo di cache.
+title: Costanti del gruppo di cache (Wininet.h)
+description: L'elenco seguente contiene le costanti utilizzate dalle funzioni del gruppo di cache.
 ms.assetid: 9ca2069e-497d-4747-acf4-d5b8020b8ab7
 topic_type:
 - apiref
@@ -27,20 +27,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a08efa37ad78fa3351d12fa43491c7b62ee64af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb79ae76d743ff4633f6d7f359f96906d2f60cc64c2c35ab2544ae80918721a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955621"
 ---
-# <a name="cache-group-constants"></a>Costanti gruppo cache
+# <a name="cache-group-constants"></a>Costanti del gruppo di cache
 
-Nell'elenco seguente sono contenute le costanti utilizzate dalle funzioni del gruppo di cache.
+L'elenco seguente contiene le costanti utilizzate dalle funzioni del gruppo di cache.
 
 <dl> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_BASIC"></span><span id="cachegroup_attribute_basic"></span>**\_attributo CACHEGROUP \_ Basic**
+<span id="CACHEGROUP_ATTRIBUTE_BASIC"></span><span id="cachegroup_attribute_basic"></span>**ATTRIBUTO CACHEGROUP \_ \_ BASIC**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -48,12 +48,12 @@ Nell'elenco seguente sono contenute le costanti utilizzate dalle funzioni del gr
 
 
 
-Recupera i flag, il tipo e gli attributi della quota del disco del gruppo di cache. Viene usato dalla funzione [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) .
+Recupera i flag, il tipo e gli attributi di quota del disco del gruppo di cache. Viene usato dalla [**funzione GetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_FLAG"></span><span id="cachegroup_attribute_flag"></span>**\_flag dell'attributo CACHEGROUP \_**
+<span id="CACHEGROUP_ATTRIBUTE_FLAG"></span><span id="cachegroup_attribute_flag"></span>**FLAG DI ATTRIBUTO CACHEGROUP \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -61,25 +61,25 @@ Recupera i flag, il tipo e gli attributi della quota del disco del gruppo di cac
 
 
 
-Imposta o recupera i flag associati al gruppo di cache. Viene usato dalle funzioni [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta o recupera i flag associati al gruppo di cache. Viene usato dalle [**funzioni GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_GET_ALL"></span><span id="cachegroup_attribute_get_all"></span>**\_attributo CACHEGROUP \_ get \_ All**
+<span id="CACHEGROUP_ATTRIBUTE_GET_ALL"></span><span id="cachegroup_attribute_get_all"></span>**ATTRIBUTO CACHEGROUP \_ \_ GET \_ ALL**
 </dt> <dd> <dl> <dt>
 
-0xFFFFFFFF
+0xffffffff
 </dt> <dt>
 
 
 
-Recupera tutti gli attributi del gruppo di cache. Viene usato dalla funzione [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) .
+Recupera tutti gli attributi del gruppo di cache. Viene usato dalla [**funzione GetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_GROUPNAME"></span><span id="cachegroup_attribute_groupname"></span>**\_ \_ GroupName attributo CACHEGROUP**
+<span id="CACHEGROUP_ATTRIBUTE_GROUPNAME"></span><span id="cachegroup_attribute_groupname"></span>**CACHEGROUP \_ ATTRIBUTE \_ GROUPNAME**
 </dt> <dd> <dl> <dt>
 
 0x000000010
@@ -87,12 +87,12 @@ Recupera tutti gli attributi del gruppo di cache. Viene usato dalla funzione [**
 
 
 
-Imposta o Recupera il nome del gruppo di cache. Viene usato dalle funzioni [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta o recupera il nome del gruppo di cache. Viene usato dalle [**funzioni GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_QUOTA"></span><span id="cachegroup_attribute_quota"></span>**\_quota dell'attributo CACHEGROUP \_**
+<span id="CACHEGROUP_ATTRIBUTE_QUOTA"></span><span id="cachegroup_attribute_quota"></span>**QUOTA \_ DELL'ATTRIBUTO \_ CACHEGROUP**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -100,12 +100,12 @@ Imposta o Recupera il nome del gruppo di cache. Viene usato dalle funzioni [**Ge
 
 
 
-Imposta o recupera la quota disco associata al gruppo di cache. Viene usato dalle funzioni [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta o recupera la quota del disco associata al gruppo di cache. Viene usato dalle [**funzioni GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_STORAGE"></span><span id="cachegroup_attribute_storage"></span>**\_archiviazione degli attributi di CACHEGROUP \_**
+<span id="CACHEGROUP_ATTRIBUTE_STORAGE"></span><span id="cachegroup_attribute_storage"></span>**ARCHIVIAZIONE \_ ATTRIBUTI CACHEGROUP \_**
 </dt> <dd> <dl> <dt>
 
 0x00000020
@@ -113,12 +113,12 @@ Imposta o recupera la quota disco associata al gruppo di cache. Viene usato dall
 
 
 
-Imposta o recupera lo spazio di archiviazione del proprietario del gruppo associato al gruppo di cache. Viene usato dalle funzioni [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta o recupera l'archiviazione proprietaria del gruppo associata al gruppo di cache. Viene usato dalle [**funzioni GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_ATTRIBUTE_TYPE"></span><span id="cachegroup_attribute_type"></span>**\_tipo di attributo CACHEGROUP \_**
+<span id="CACHEGROUP_ATTRIBUTE_TYPE"></span><span id="cachegroup_attribute_type"></span>**TIPO DI \_ ATTRIBUTO \_ CACHEGROUP**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -126,12 +126,12 @@ Imposta o recupera lo spazio di archiviazione del proprietario del gruppo associ
 
 
 
-Imposta o Recupera il tipo di gruppo di cache. Viene usato dalle funzioni [**GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta o recupera il tipo di gruppo di cache. Viene usato dalle [**funzioni GetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-geturlcachegroupattributea) e [**SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_FLAG_FLUSHURL_ONDELETE"></span><span id="cachegroup_flag_flushurl_ondelete"></span>**\_flag CACHEGROUP \_ FLUSHURL \_ OnDelete**
+<span id="CACHEGROUP_FLAG_FLUSHURL_ONDELETE"></span><span id="cachegroup_flag_flushurl_ondelete"></span>**CACHEGROUP \_ FLAG \_ FLUSHURL \_ ONDELETE**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -139,12 +139,12 @@ Imposta o Recupera il tipo di gruppo di cache. Viene usato dalle funzioni [**Get
 
 
 
-Indica che tutte le voci della cache associate al gruppo di cache devono essere eliminate, a meno che la voce appartenga a un altro gruppo di cache.
+Indica che tutte le voci della cache associate al gruppo di cache devono essere eliminate, a meno che la voce non appartenga a un altro gruppo di cache.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_FLAG_GIDONLY"></span><span id="cachegroup_flag_gidonly"></span>**\_flag CACHEGROUP \_ GIDONLY**
+<span id="CACHEGROUP_FLAG_GIDONLY"></span><span id="cachegroup_flag_gidonly"></span>**CACHEGROUP \_ FLAG \_ GIDONLY**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -152,12 +152,12 @@ Indica che tutte le voci della cache associate al gruppo di cache devono essere 
 
 
 
-Indica che la funzione deve creare solo un GROUPID univoco per il gruppo di cache e non creare il gruppo effettivo.
+Indica che la funzione deve creare solo un GROUPID univoco per il gruppo di cache e non il gruppo effettivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_FLAG_NONPURGEABLE"></span><span id="cachegroup_flag_nonpurgeable"></span>**\_flag CACHEGROUP \_ NONPURGEABLE**
+<span id="CACHEGROUP_FLAG_NONPURGEABLE"></span><span id="cachegroup_flag_nonpurgeable"></span>**FLAG \_ CACHEGROUP \_ NON UTILIZZABILE**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -170,7 +170,7 @@ Indica che il gruppo di cache non può essere eliminato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_READWRITE_MASK"></span><span id="cachegroup_readwrite_mask"></span>**\_maschera CACHEGROUP ReadWrite \_**
+<span id="CACHEGROUP_READWRITE_MASK"></span><span id="cachegroup_readwrite_mask"></span>**CACHEGROUP \_ READWRITE \_ MASK**
 </dt> <dd> <dl> <dt>
 
 0x0000003c
@@ -178,12 +178,12 @@ Indica che il gruppo di cache non può essere eliminato.
 
 
 
-Imposta il tipo, la quota del disco, il nome del gruppo e gli attributi di archiviazione del proprietario del gruppo di cache. Viene usato dalla funzione [**SetUrlCacheGroupAttribute**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea) .
+Imposta il tipo, la quota del disco, il nome del gruppo e gli attributi di archiviazione del proprietario del gruppo di cache. Viene usato dalla [**funzione SetUrlCacheGroupAttribute.**](/windows/desktop/api/Wininet/nf-wininet-seturlcachegroupattributea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_SEARCH_ALL"></span><span id="cachegroup_search_all"></span>**CACHEGROUP \_ Cerca \_ tutto**
+<span id="CACHEGROUP_SEARCH_ALL"></span><span id="cachegroup_search_all"></span>**RICERCA DI CACHEGROUP \_ \_ ALL**
 </dt> <dd> <dl> <dt>
 
 0x00000000
@@ -196,7 +196,7 @@ Indica che tutti i gruppi di cache nel sistema dell'utente devono essere enumera
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_SEARCH_BYURL"></span><span id="cachegroup_search_byurl"></span>**\_ricerca CACHEGROUP \_ BYURL**
+<span id="CACHEGROUP_SEARCH_BYURL"></span><span id="cachegroup_search_byurl"></span>**CACHEGROUP \_ SEARCH \_ BYURL**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -209,7 +209,7 @@ Non implementato attualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="CACHEGROUP_TYPE_INVALID"></span><span id="cachegroup_type_invalid"></span>**tipo di CACHEGROUP \_ \_ non valido**
+<span id="CACHEGROUP_TYPE_INVALID"></span><span id="cachegroup_type_invalid"></span>**TIPO CACHEGROUP \_ \_ NON VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -222,7 +222,7 @@ Indica che il tipo di gruppo di cache non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GROUP_OWNER_STORAGE_SIZE"></span><span id="group_owner_storage_size"></span>**\_dimensioni di \_ archiviazione del proprietario del gruppo \_**
+<span id="GROUP_OWNER_STORAGE_SIZE"></span><span id="group_owner_storage_size"></span>**DIMENSIONI DI \_ ARCHIVIAZIONE DEL PROPRIETARIO DEL \_ \_ GRUPPO**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -235,7 +235,7 @@ Lunghezza dell'array di archiviazione del proprietario del gruppo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GROUPNAME_MAX_LENGTH"></span><span id="groupname_max_length"></span>**\_lunghezza massima GroupName \_**
+<span id="GROUPNAME_MAX_LENGTH"></span><span id="groupname_max_length"></span>**LUNGHEZZA \_ MASSIMA GROUPNAME \_**
 </dt> <dd> <dl> <dt>
 
 0x00000078
@@ -251,7 +251,7 @@ Numero massimo di caratteri consentiti per il nome di un gruppo di cache.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere utilizzato da un servizio. Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi del server [usare Microsoft Windows servizi HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 
@@ -263,7 +263,7 @@ Numero massimo di caratteri consentiti per il nome di un gruppo di cache.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>WinInet. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

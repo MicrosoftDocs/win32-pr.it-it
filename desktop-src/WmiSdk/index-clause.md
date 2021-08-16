@@ -14,30 +14,30 @@ ms.locfileid: "118318743"
 ---
 # <a name="index-clause"></a>Clausola INDEX
 
-La clausola INDEX specifica una chiave per selezionare una riga univoca in una raccolta scalare o di tabella. Il provider SNMP esegue il mapping a un tipo diverso di classe CIM a seconda del tipo di tabella utilizzato dal dispositivo SNMP. Poiché una chiave può essere più di un tipo di oggetto, il provider usa regole di mapping diverse a seconda del tipo di oggetto all'interno della chiave. Per altre informazioni, vedere [Tipi di dati della clausola INDEX](#index-clause-data-types).
+La clausola INDEX specifica una chiave per selezionare una riga univoca in una raccolta scalare o di tabella. Il provider SNMP esegue il mapping a un tipo diverso di classe CIM a seconda del tipo di tabella utilizzata dal dispositivo SNMP. Poiché una chiave può essere più di un tipo di oggetto, il provider usa regole di mapping diverse a seconda del tipo di oggetto all'interno della chiave. Per altre informazioni, vedere [Tipi di dati della clausola INDEX](#index-clause-data-types).
 
 > [!Note]  
-> Per altre informazioni sull'installazione del provider, vedere [Configurazione dell'ambiente SNMP WMI.](setting-up-the-wmi-snmp-environment.md)
+> Per altre informazioni sull'installazione del provider, vedere [Setting up the WMI SNMP Environment](setting-up-the-wmi-snmp-environment.md).
 
  
 
-Una raccolta scalare viene mappata a una classe singleton CIM, una classe che può avere una sola istanza. Poiché non è necessario identificare in modo univoco un'istanza da un'altra, una classe singleton non designa una o più proprietà come chiave. Classi generate da raccolte scalari:
+Una raccolta scalare esegue il mapping a una classe singleton CIM, ad esempio una classe che può avere una sola istanza. Poiché non è necessario identificare in modo univoco un'istanza da un'altra, una classe singleton non designa una o più proprietà come chiave. Classi generate da raccolte scalari:
 
 -   Non contengono **qualificatori di** proprietà Key.
--   Contenere il qualificatore di classe CIM standard **Singleton**, che è di tipo **Bool**.
+-   Contenere il qualificatore di classe CIM standard **Singleton**, che è di **tipo Bool**.
 
-Una raccolta di tabelle viene mappata a una classe CIM che può avere più di un'istanza. Di conseguenza, la definizione della classe CIM deve contenere almeno una proprietà che definisce la chiave dell'oggetto. una proprietà che identifica in modo univoco un'istanza della classe . La clausola INDEX della macro [OBJECT-TYPE](object-type-macro.md) di una raccolta di tabelle specifica il set di proprietà chiave della raccolta. Si applicano le regole di mapping seguenti:
+Una raccolta di tabelle esegue il mapping a una classe CIM che può avere più di un'istanza. Di conseguenza, la definizione della classe CIM deve contenere almeno una proprietà che definisce la chiave dell'oggetto. una proprietà che identifica in modo univoco un'istanza della classe . La clausola INDEX della macro [OBJECT-TYPE](object-type-macro.md) di una raccolta di tabelle specifica il set di proprietà chiave della raccolta. Si applicano le regole di mapping seguenti:
 
--   Il qualificatore CIM **Key**, tipo **Bool**, definisce una proprietà chiave.
+-   Il qualificatore CIM **Key,** di **tipo Bool,** definisce una proprietà della chiave.
 -   L'ordinamento delle informazioni INDEX all'interno della raccolta di tabelle definisce l'ordinamento delle chiavi all'interno della definizione della classe CIM.
 
-    Il qualificatore CIM **Key \_ Order** definisce l'ordinamento delle chiavi. Questo qualificatore è un valore intero senza segno a 32 bit che, ai fini della sintassi del qualificatore MOF, deve essere convertito in un valore integer a 32 bit con segno usando l'operazione twos-complement.
+    L'ordine delle chiavi **del qualificatore \_** CIM definisce l'ordinamento delle chiavi. Questo qualificatore è un valore intero senza segno a 32 bit che, ai fini della sintassi del qualificatore MOF, deve essere convertito in un intero con segno a 32 bit usando l'operazione a complemento a due.
 
 Attualmente, il mapping della clausola SNMPv2C INDEX non gestisce l'uso del **qualificatore IMPLIED.** In questo caso non viene generata una definizione di classe CIM.
 
 ## <a name="index-clause-data-types"></a>Tipi di dati della clausola INDEX
 
-A causa della flessibilità della clausola INDEX all'interno della macro [OBJECT-TYPE,](object-type-macro.md) la specifica delle proprietà con chiave non è semplice. È invece consigliabile considerare le possibilità che la clausola INDEX possa contenere uno o più dei tipi di dati seguenti:
+Data la flessibilità della clausola INDEX all'interno della macro [OBJECT-TYPE,](object-type-macro.md) la specifica delle proprietà con chiave non è semplice. È invece necessario considerare le possibilità che la clausola INDEX possa contenere uno o più dei tipi di dati seguenti:
 
 -   Valore **indexobject accessibile internamente**
 
@@ -51,14 +51,14 @@ A causa della flessibilità della clausola INDEX all'interno della macro [OBJECT
 
     Il **valore indextype** è un tipo denominato che fa riferimento a uno dei tipi di dati **seguenti: INTEGER,** **OCTET STRING,** **OBJECT IDENTIFIER,** **NetworkAddress** o **IpAddress.** Se la clausola INDEX contiene un riferimento di tipo MIB, si applicano le regole di mapping seguenti:
 
-    -   L'oggetto MIB a cui si fa riferimento esegue il mapping a una proprietà chiave della definizione della classe CIM. La sintassi del tipo è basata sul **valore indextype** specificato, che esegue il mapping ai qualificatori di proprietà CIM usando le procedure di mapping della clausola [SYNTAX](syntax-clause.md) standard.
-    -   Il processo di mapping genera un nome di proprietà univoco concatenando il descrittore dell'oggetto tabella MIB, un carattere di sottolineatura ( ) e l'ordine di classificazione del valore \_ **indextype** della clausola INDEX. Ad esempio, il nome della proprietà per il terzo **tipo** di indice componente della tabella MIB **enterpriseIfTable** è **enterpriseIfTable \_ 3.**
-    -   La proprietà CIM viene annotata con il **qualificatore virtual \_ key.** Questo qualificatore specifica che il provider SNMP deve calcolare il valore della proprietà in base al superset di informazioni sull'istanza associato a tutte le definizioni di oggetto MIB accessibili nella definizione della classe.
-    -   La definizione della classe CIM deve contenere almeno una proprietà a cui non è associato un **qualificatore \_** di chiave virtuale. Se non si specifica questa proprietà, la definizione della classe non viene invalidata.
+    -   L'oggetto MIB a cui si fa riferimento esegue il mapping a una proprietà chiave della definizione della classe CIM. La sintassi del tipo è basata sul **valore indextype** specificato, che esegue il mapping ai qualificatori di proprietà CIM usando le procedure standard di mapping della [clausola SYNTAX.](syntax-clause.md)
+    -   Il processo di mapping genera un nome di proprietà univoco concatenando il descrittore dell'oggetto tabella MIB, un carattere di sottolineatura ( ) e l'ordine di classificazione del valore indextype della clausola \_ INDEX.  Ad esempio, il nome della proprietà per il terzo **indextype** componente della tabella MIB **enterpriseIfTable** è **enterpriseIfTable \_ 3**.
+    -   La proprietà CIM viene annotata con il **qualificatore Virtual \_ Key.** Questo qualificatore specifica che il provider SNMP deve calcolare il valore della proprietà in base al superset di informazioni sull'istanza associato a tutte le definizioni di oggetto MIB accessibili nella definizione di classe.
+    -   La definizione della classe CIM deve contenere almeno **\_** una proprietà a cui non è associato un qualificatore di chiave virtuale. La mancata specifica di questa proprietà invalida la definizione della classe.
 
 -   Sottotipo a lunghezza fissa
 
-    Quando la clausola INDEX di una raccolta di tabelle SNMP contiene un tipo supportato da SNMP sottotipo come STRINGA OTTETTO a lunghezza fissa, è necessario usare il qualificatore di proprietà CIM Lunghezza fissa per specificare questo valore. **\_**
+    Quando la clausola INDEX di una raccolta di tabelle SNMP contiene un tipo supportato da SNMP sottotipo come OCTET STRING a lunghezza fissa, è necessario usare il qualificatore di proprietà CIM Lunghezza fissa per specificare questo valore. **\_**
 
  
 

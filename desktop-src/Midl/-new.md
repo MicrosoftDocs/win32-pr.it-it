@@ -1,9 +1,9 @@
 ---
 title: Opzione /new
-description: Questa opzione è obsoleta ed è stata sostituita dall'opzione /newtlb.
+description: Questa opzione è obsoleta ed è stata sostituita dall'opzione /newtlb .
 ms.assetid: e8893bde-3803-484d-8ca3-27e6631c665b
 keywords:
-- /new opzione MIDL
+- Opzione /new MIDL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118644110"
 ---
 # <a name="new-switch"></a>Opzione /new
 
-Questa opzione è obsoleta ed è stata sostituita [**dall'opzione /newtlb.**](-newtlb.md)
+Questa opzione è obsoleta ed è stata sostituita [**dall'opzione /newtlb**](-newtlb.md) .
 
  
 

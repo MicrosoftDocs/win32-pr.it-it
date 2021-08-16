@@ -1,11 +1,11 @@
 ---
-title: Metodo di copia SystemMonitor
-description: Copia le impostazioni delle proprietà del controllo, l'elenco dei contatori e i dati del contatore negli Appunti come oggetto HTML.
+title: Metodo Copy di SystemMonitor
+description: Copia le impostazioni delle proprietà del controllo, l'elenco di contatori e i dati dei contatori negli Appunti come oggetto HTML.
 ms.assetid: 0e045372-71ef-4142-9863-48e6a9331782
 keywords:
-- Metodo Copy SysMon
-- Metodo Copy SysMon, interfaccia SystemMonitor
-- Interfaccia SystemMonitor SysMon, metodo Copy
+- Metodo di copia SysMon
+- Metodo di copia SysMon , interfaccia SystemMonitor
+- Interfaccia SystemMonitor SysMon , metodo Copy
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34f6346fd6c594c98b6eb23c37e371b878ddd3b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ef8e7f76231dc65dcf27d898e9b4f2b9aa5187253e8ccc081657221bbca7cbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882616"
 ---
-# <a name="systemmonitorcopy-method"></a>Metodo SystemMonitor:: Copy
+# <a name="systemmonitorcopy-method"></a>Metodo SystemMonitor::Copy
 
-Copia le impostazioni delle proprietà del controllo, l'elenco dei contatori e i dati del contatore negli Appunti come oggetto HTML.
+Copia le impostazioni delle proprietà del controllo, l'elenco di contatori e i dati dei contatori negli Appunti come oggetto HTML.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ Negli Appunti può esistere una sola copia.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Negli Appunti può esistere una sola copia.
 [**SystemMonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**SystemMonitor. Paste**](systemmonitor-paste.md)
+[**SystemMonitor.Paste**](systemmonitor-paste.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Il driver video Windows WIA (wiavusd.dll Image Acquisition) standard supporta le proprietà seguenti per i dispositivi video in streaming.
+description: Il driver video Windows image acquisition (WIA) standard (wiavusd.dll) supporta le proprietà seguenti per i dispositivi video in streaming.
 ms.assetid: 24fa7e02-c409-49ec-b1a9-309f7c95e292
 title: Costanti delle proprietà del dispositivo WIA video (Wiadef.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "118207369"
 ---
 # <a name="video-wia-device-property-constants"></a>Costanti delle proprietà del dispositivo WIA video
 
-Il driver video Windows WIA (wiavusd.dll Image Acquisition) standard supporta le proprietà seguenti per i dispositivi video in streaming.
+Il driver video Windows image acquisition (WIA) standard (wiavusd.dll) supporta le proprietà seguenti per i dispositivi video in streaming.
 
 > [!Note]  
 > WIA non supporta i dispositivi video in Windows Server 2003, Windows Vista o versioni successive. Per queste versioni del Windows, [usare](/previous-versions//ms783323(v=vs.85)) DirectShow per acquisire immagini dal video.
@@ -51,7 +51,7 @@ Il prefisso "WIA DPV" indica una proprietà del dispositivo per i dispositivi vi
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>              |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>              |
 | Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                |
 | Intestazione<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 

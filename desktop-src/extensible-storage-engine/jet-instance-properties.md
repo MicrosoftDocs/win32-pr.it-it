@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INSTANCE'
-title: Proprietà JET_INSTANCE
+description: 'Altre informazioni su: JET_INSTANCE proprietà'
+title: JET_INSTANCE proprietà
 TOCTitle: JET_INSTANCE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INSTANCE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_properties(v=EXCHG.10)
 ms:contentKeyID: 39512887
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7744dd87a508fecdad874f5d422e2e79b0a1f540
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 790e083c58ad9d51e4917b942f95b3c47a9ca03857f4cc3ef1a415da716c1588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765808"
 ---
-# <a name="jet_instance-properties"></a>Proprietà JET_INSTANCE
+# <a name="jet_instance-properties"></a>JET_INSTANCE proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_INSTANCE](./jet-instance-structure.md) espone i membri seguenti.
+Il [JET_INSTANCE](./jet-instance-structure.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,7 +35,7 @@ Il tipo di [JET_INSTANCE](./jet-instance-structure.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh578872(v=exchg.10).md">Nil</a></td>
-<td>Ottiene un JET_INSTANCE null.</td>
+<td>Ottiene un valore null JET_INSTANCE.</td>
 </tr>
 </tbody>
 </table>
@@ -47,6 +47,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_INSTANCE](./jet-instance-structure.md)
+[JET_INSTANCE struttura](./jet-instance-structure.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

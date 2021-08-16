@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione COMApplicationSettings Win32 mette in correlazione un'applicazione DCOM e le relative impostazioni di configurazione.
+description: La classe WMI di associazione \_ WIN32 COMApplicationSettings mette in relazione un'applicazione DCOM e le relative impostazioni di configurazione.
 ms.assetid: b08eaff1-b42a-42f3-abf7-3664b6195acd
 ms.tgt_platform: multiple
-title: Classe Win32_COMApplicationSettings
+title: Win32_COMApplicationSettings classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8f2fd5953d770d541e704b7dc7fe8580e98b3066
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a1126563b00861ab8b8168832f72189c3a3828378f5d89c4b74e49f68b09bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417911"
 ---
-# <a name="win32_comapplicationsettings-class"></a>Win32 \_ COMApplicationSettings (classe)
+# <a name="win32_comapplicationsettings-class"></a>Classe COMApplicationSettings Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ COMApplicationSettings Win32** mette in correlazione un'applicazione DCOM e le relative impostazioni di configurazione.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di **associazione WIN32 \_ COMApplicationSettings** mette in relazione un'applicazione DCOM e le relative impostazioni di configurazione.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_COMApplicationSettings : CIM_ElementSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ COMApplicationSettings** presenta questi tipi di membri:
+La **classe \_ WIN32 COMApplicationSettings** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ COMApplicationSettings** dispone di queste proprietà.
+La **classe \_ WIN32 COMApplicationSettings** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo di dati: **Win32 \_ DCOMApplication**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-[**\_ DCOMApplication Win32**](win32-dcomapplication.md) che rappresenta l'applicazione DCOM A cui vengono applicate le impostazioni.
+Oggetto [**\_ DCOMApplication Win32**](win32-dcomapplication.md) che rappresenta l'applicazione DCOM in cui vengono applicate le impostazioni.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo di dati: **Win32 \_ DCOMApplicationSetting**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("setting"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplicationSetting")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Setting"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplicationSetting")
 </dt> </dl>
 
-[**\_ DCOMApplicationSetting Win32**](win32-dcomapplicationsetting.md) che rappresenta le impostazioni di configurazione associate all'applicazione DCOM.
+Oggetto [**\_ DCOMApplicationSetting Win32**](win32-dcomapplicationsetting.md) che rappresenta le impostazioni di configurazione associate all'applicazione DCOM.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ COMApplicationSettings** è derivata da [**CIM \_ ElementSetting**](cim-elementsetting.md).
+La **classe \_ WIN32 COMApplicationSettings** è derivata da [**CIM \_ ElementSetting.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ COMApplicationSettings** è derivata da [**CIM \_ ElementSe
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ COMApplicationSettings** è derivata da [**CIM \_ ElementSe
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**Elemento \_ CIMSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
