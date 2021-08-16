@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di vertici nella rete.
+description: Recupera il numero di vertici nella mesh.
 ms.assetid: 2be2bb34-74fa-438c-913d-e41dd9fa8354
-title: 'Metodo ID3DXBaseMesh:: GetNumVertices (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::GetNumVertices (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0f239cbae38c09f2718aff4cf6fcbb2234ae60f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f576616dc342c6ee8b7d822f15f9245e541d86ce39ee3935e7a5e6c2933faea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121793"
 ---
-# <a name="id3dxbasemeshgetnumvertices-method"></a>Metodo ID3DXBaseMesh:: GetNumVertices
+# <a name="id3dxbasemeshgetnumvertices-method"></a>Metodo ID3DXBaseMesh::GetNumVertices
 
-Recupera il numero di vertici nella rete.
+Recupera il numero di vertici nella mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Restituisce il numero di vertici nella rete.
+Restituisce il numero di vertici nella mesh.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il numero di vertici nella rete.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

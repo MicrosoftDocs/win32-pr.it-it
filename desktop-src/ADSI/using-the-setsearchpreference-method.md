@@ -1,26 +1,26 @@
 ---
-title: Utilizzo del metodo SetSearchPreference
-description: La chiamata al metodo SetSearchPreference di IDirectorySearch modifica il modo in cui i risultati della ricerca vengono ottenuti e presentati tramite l'interfaccia IDirectorySearch.
+title: Uso del metodo SetSearchPreference
+description: La chiamata al metodo IDirectorySearch SetSearchPreference modifica il modo in cui i risultati della ricerca vengono ottenuti e presentati tramite l'interfaccia IDirectorySearch.
 ms.assetid: 37583276-8372-4478-82aa-3e456cc0f8f1
 ms.tgt_platform: multiple
 keywords:
-- SetSearchPreference ADSI, uso del metodo SetSearchPreference
-- ADSI ADSI, codice di esempio C/C++, utilizzo del metodo SetSearchPreference
-- esegue una query su ADSI, usando SetSearchPreference
+- SetSearchPreference ADSI con il metodo SetSearchPreference
+- ADSI ADSI , codice di esempio C/C++, con il metodo SetSearchPreference
+- esegue query ad ADSI usando SetSearchPreference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29c357fd331ae8589bffdd3ff7a834a7bc9e0430
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e7f40d7af4069c9b67d9cd2634f6b7f58f51aafce95af9d4f9275b0e55fc1b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637481"
 ---
-# <a name="using-the-setsearchpreference-method"></a>Utilizzo del metodo SetSearchPreference
+# <a name="using-the-setsearchpreference-method"></a>Uso del metodo SetSearchPreference
 
-La chiamata al metodo [**IDirectorySearch:: SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) modifica il modo in cui i risultati della ricerca vengono ottenuti e presentati tramite l'interfaccia [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) .
+La chiamata al metodo [**IDirectorySearch::SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) modifica il modo in cui i risultati della ricerca vengono ottenuti e presentati tramite [**l'interfaccia IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
-La documentazione dell'SDK definisce [**SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) come segue:
+La documentazione dell'SDK [**definisce SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) come segue:
 
 
 ```C++
@@ -34,7 +34,7 @@ HRESULT SetSearchPreference(
 
 
 
-È possibile impostare più preferenze passando una matrice come primo parametro e la dimensione della matrice come secondo parametro.
+È possibile impostare più preferenze passando una matrice come primo parametro e le dimensioni della matrice come secondo parametro.
 
 
 ```C++
@@ -53,11 +53,11 @@ hr = pDSearch->SetSearchPreference(&arSearchPrefs, 2);
 
 
 
-Questo esempio Mostra come impostare le dimensioni della pagina su 100 righe e l'ambito \_ sul \_ tipo di sottoalbero ambito ads. L'impostazione delle dimensioni della pagina fa sì che il server restituisca immediatamente i dati al client, dopo che sono state calcolate 100 righe. L' \_ impostazione del \_ sottoalbero dell'ambito Ads fa sì che la ricerca racchiuda tutti i rami nell'albero al di sotto del punto da cui viene eseguita la ricerca.
+Questo esempio imposta le dimensioni della pagina su 100 righe e l'ambito sul tipo ADS \_ SCOPE \_ SUBTREE. L'impostazione delle dimensioni della pagina determina la restituzione immediata dei dati al client da parte del server, dopo il calcolo di 100 righe. L'impostazione ADS SCOPE SUBTREE fa sì che la ricerca comprersi in tutti i rami dell'albero sotto il punto da cui viene \_ \_ eseguita la ricerca.
 
- 
+ 
 
- 
+ 
 
 
 

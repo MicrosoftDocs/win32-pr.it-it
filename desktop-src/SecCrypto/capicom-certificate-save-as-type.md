@@ -1,7 +1,7 @@
 ---
 description: Definisce il formato di un file contenente informazioni sul certificato.
 ms.assetid: 417a6d1b-6329-418c-823c-d82b94207fd6
-title: CAPICOM_CERTIFICATE_SAVE_AS_TYPE enumerazione (Capicom.h)
+title: CAPICOM_CERTIFICATE_SAVE_AS_TYPE di controllo (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,8 +30,8 @@ Il **tipo di enumerazione CAPICOM CERTIFICATE SAVE AS \_ \_ \_ \_ TYPE** definis
 
 | Membro                                  | Descrizione                                                                                                                                   | Valore |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **SALVATAGGIO \_ DEL CERTIFICATO CAPICOM \_ \_ COME \_ PFX** | Il file di output verrà formattato come file PFX (PKCS 12) e verranno salvate anche le chiavi private associate esportabili.<br/> | 0     |
-| **SALVATAGGIO \_ DEL CERTIFICATO CAPICOM \_ \_ COME \_ CER** | Il file di output verrà formattato come file CER senza chiavi private salvate.<br/>                                                        | 1     |
+| **SALVA CERTIFICATO CAPICOM \_ \_ COME \_ \_ PFX** | Il file di output verrà formattato come file PFX (PKCS 12) e verranno salvate anche le chiavi private associate esportabili.<br/> | 0     |
+| **SALVATAGGIO DEL CERTIFICATO CAPICOM \_ COME AREA A ESECUZIONE \_ \_ \_ VINCOLATA** | Il file di output verrà formattato come file CER senza chiavi private salvate.<br/>                                                        | 1     |
 
 
 

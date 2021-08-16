@@ -4,7 +4,7 @@ description: Definisce una raccolta di unità floppy all'interno della macchina 
 ms.assetid: ba05fa84-81c3-4e70-98f5-404a9bc517ad
 keywords:
 - Interfaccia IVMFloppyDriveCollection Virtual PC
-- Interfaccia IVMFloppyDriveCollection Virtual PC, descritta
+- Interfaccia IVMFloppyDriveCollection Virtual PC , descritto
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "119653591"
 
 \[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Definisce una raccolta di unità floppy all'interno della macchina virtuale. Per ottenere **un oggetto IVMFloppyDriveCollection,** usare la [**proprietà IVMVirtualMachine::FloppyDrives.**](ivmvirtualmachine-floppydrives.md)
+Definisce una raccolta di unità floppy all'interno della macchina virtuale. Per ottenere un **oggetto IVMFloppyDriveCollection,** usare la [**proprietà IVMVirtualMachine::FloppyDrives.**](ivmvirtualmachine-floppydrives.md)
 
 ## <a name="members"></a>Membri
 

@@ -1,33 +1,33 @@
 ---
-description: Questo argomento descrive le istruzioni di programmazione per individuare le stringhe del registro di sistema reindirizzate Per ulteriori informazioni, vedere Utilizzo del reindirizzamento delle stringhe del registro di sistema.
+description: Questo argomento illustra le istruzioni di programmazione per l'individuazione di stringhe del Registro di sistema reindirizzate. Per altre informazioni, vedere Uso del reindirizzamento delle stringhe del Registro di sistema.
 ms.assetid: 03d1512f-35a6-4b3a-9a0e-97e17bd9b126
 title: Individuazione di stringhe reindirizzate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f11600ad57c04de54d914c2c876b67967dfa1467
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9c4e1a46b2c12af839e4c5b562eba18a80c8e814e5a6071dca925a14a46d0ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788481"
 ---
 # <a name="locating-redirected-strings"></a>Individuazione di stringhe reindirizzate
 
-Questo argomento descrive le istruzioni di programmazione per individuare le stringhe del registro di sistema reindirizzate Per ulteriori informazioni, vedere [utilizzo del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md).
+Questo argomento illustra le istruzioni di programmazione per l'individuazione di stringhe del Registro di sistema reindirizzate. Per altre informazioni, vedere [Uso del reindirizzamento delle stringhe del Registro di sistema](using-registry-string-redirection.md).
 
-## <a name="load-a-language-neutral-registry-value"></a>Carica un valore del registro di sistema Language-Neutral
+## <a name="load-a-language-neutral-registry-value"></a>Caricare un valore Language-Neutral Registro di sistema
 
-In Windows Vista e versioni successive, l'applicazione MUI utilizza un valore del registro di sistema indipendente dalla lingua per consentire l'accesso alle stringhe specifiche della lingua archiviate in una tabella delle risorse di stringa. Per altre informazioni, vedere creare una risorsa Language-Neutral in [uso del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md).
+In Windows Vista e versioni successive, l'applicazione MUI usa un valore del Registro di sistema indipendente dalla lingua per consentire l'accesso alle stringhe specifiche della lingua archiviate in una tabella di risorse stringa. Per altre informazioni, vedere Creare una risorsa Language-Neutral in Uso del reindirizzamento [delle stringhe del Registro di sistema](using-registry-string-redirection.md).
 
-Il codice dell'applicazione che legge il valore indipendente dalla lingua dal registro di sistema deve caricare le stringhe nella lingua dell'interfaccia utente corretta chiamando [**RegLoadMUIStringW**](/windows/win32/api/winreg/nf-winreg-regloadmuistringa). Se si usa questa funzione, l'applicazione non deve gestire in modo esplicito il caricamento delle risorse.
+Il codice dell'applicazione che legge il valore indipendente dalla lingua dal Registro di sistema deve caricare le stringhe nella lingua corretta dell'interfaccia utente chiamando [**RegLoadMUIStringW**](/windows/win32/api/winreg/nf-winreg-regloadmuistringa). Se si usa questa funzione, l'applicazione non deve gestire in modo esplicito il caricamento delle risorse.
 
-Se si sta aggiornando un'applicazione esistente all'uso indipendente dalla lingua del registro di sistema, in genere si manterranno i valori di stringa esistenti, localizzati in inglese o in un'altra lingua singola nel registro di sistema, come fallback e per compatibilità con le versioni precedenti. Il mantenimento di una stringa letterale nel registro di sistema consente all'applicazione di eseguire il fallback alla stringa letterale se una chiamata a [**RegLoadMUIStringW**](/windows/win32/api/winreg/nf-winreg-regloadmuistringa) ha esito negativo. È necessario decidere come implementare tale fallback, perché MUI non fornisce alcun supporto per tale implementazione.
+Se si aggiorna un'applicazione esistente all'uso indipendente dalla lingua del Registro di sistema, in genere si manteneranno i valori stringa esistenti, localizzati in inglese o in un'altra lingua singola nel Registro di sistema, come fallback e per la compatibilità con le versioni precedenti. Mantenere una stringa letterale nel Registro di sistema consente all'applicazione di eseguire il fall back alla stringa letterale se una chiamata a [**RegLoadMUIStringW**](/windows/win32/api/winreg/nf-winreg-regloadmuistringa) ha esito negativo. È necessario decidere come implementare tale fallback, in quanto MUI non fornisce alcun supporto per tale implementazione.
 
-## <a name="use-shell-api-to-set-shortcut-strings-from-the-registry"></a>Usare l'API shell per impostare le stringhe di collegamento dal registro di sistema
+## <a name="use-shell-api-to-set-shortcut-strings-from-the-registry"></a>Usare l'API Shell per impostare stringhe di collegamento dal Registro di sistema
 
-L'applicazione può usare l'API shell per creare stringhe per i collegamenti che collegano file o cartelle nel menu **Start** o sul desktop. Per altre informazioni, vedere creare risorse per le stringhe di collegamento in [uso del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md).
+L'applicazione può usare l'API shell per creare stringhe per collegamenti che collegano file o cartelle nel menu **Start** o sul desktop. Per altre informazioni, vedere Creare risorse per le stringhe di collegamento in [Uso del reindirizzamento delle stringhe del Registro di sistema](using-registry-string-redirection.md).
 
-L'applicazione può usare [**SHSetLocalizedName**](/windows/win32/api/shellapi/nf-shellapi-shsetlocalizedname) per caricare il nome visualizzato compatibile con MUI per un collegamento. Per impostare il InfoTip associato, è necessario utilizzare [**IShellLink:: FileDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription) . Le chiamate registrano le stringhe con il registro di sistema. Si considerino gli esempi seguenti, per i quali "HKCR" rappresenta la \_ \_ chiave del registro di sistema radice delle classi HKEY:
+L'applicazione può [**usare SHSetLocalizedName**](/windows/win32/api/shellapi/nf-shellapi-shsetlocalizedname) per caricare il nome visualizzato conforme a MUI per un collegamento. Deve usare [**IShellLink::SetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription) per impostare il suggerimento informazioni associato. Le chiamate registrano le stringhe nel Registro di sistema. Si considerino gli esempi seguenti, per i quali "HKCR" rappresenta la chiave del Registro di sistema HKEY \_ CLASSES \_ ROOT:
 
 
 ```C++
@@ -40,25 +40,25 @@ HKCR,"CLSID\%CLSID_AntiSpyware%","InfoTip",,"@%ProgramFiles%\Windows AntiSpyware
 
 
 
-La prima riga fornisce una stringa letterale non localizzata per il fallback e la compatibilità con le versioni precedenti. La seconda riga Mostra il modo conforme a MUI per registrare il nome visualizzato. Questa riga indica l'identificatore di stringa 104 archiviato in Msascui.exe (per Windows XP) o nel file specifico della lingua associato (per Windows Vista). Questo identificatore di stringa corrisponde a "My Network posizioni". La terza riga nell'esempio gestisce la registrazione di InfoTip. % CLSID \_ antispyware% specifica una variabile di ambiente che rappresenta il GUID corrispondente all'identificatore di classe del componente.
+La prima riga fornisce una stringa letterale non localizzata per il fallback e la compatibilità con le versioni precedenti. La seconda riga mostra il modo conforme a MUI per registrare il nome visualizzato. Questa riga indica l'identificatore di stringa 104 archiviato in Msascui.exe (per Windows XP) o nel file specifico della lingua associato (per Windows Vista). Questo identificatore di stringa corrisponde a "My Network Places". La terza riga dell'esempio gestisce la registrazione del suggerimento informazioni. %CLSID AntiSpyware% specifica una variabile di ambiente che rappresenta il GUID corrispondente all'identificatore \_ di classe di questo componente.
 
-Per l'esempio illustrato in precedenza, l'applicazione chiama [**SHSetLocalizedName**](/windows/win32/api/shellapi/nf-shellapi-shsetlocalizedname) per specificare il percorso del file eseguibile per i primi due parametri e specificare *idsRes* come "@% ProgramFiles% \\ Windows AntiSpyware \\MSASCui.exe, 104". Una chiamata a [**IShellLink:: FileDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription)specifica il percorso di infotip come "@% ProgramFiles% \\ Windows AntiSpyware \\MSASCui.exe, 208".
+Per l'esempio illustrato in precedenza, l'applicazione chiama [**SHSetLocalizedName**](/windows/win32/api/shellapi/nf-shellapi-shsetlocalizedname) per specificare il percorso del file eseguibile per i primi due parametri e specificare *idsRes* come "@%ProgramFiles% \\ Windows AntiSpyware \\MSASCui.exe,104". Una chiamata a [**IShellLink::SetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription)specifica il percorso del suggerimento informazioni come "@%ProgramFiles% \\ Windows AntiSpyware \\MSASCui.exe,208".
 
-## <a name="query-friendly-document-type-names-in-the-registry"></a>Eseguire query sui nomi dei tipi di documento nel registro di sistema
+## <a name="query-friendly-document-type-names-in-the-registry"></a>Nomi di tipo di documento descrittivi per le query nel Registro di sistema
 
-La creazione di risorse per i nomi descrittivi dei tipi di documento è illustrata in creare risorse per i nomi dei tipi di documenti descrittivi in [uso del reindirizzamento delle stringhe](using-registry-string-redirection.md) Per eseguire una query su un nome descrittivo del documento, l'applicazione deve usare [**IQueryAssociations:: init**](/windows/win32/api/shlwapi/nf-shlwapi-iqueryassociations-init), seguito da una chiamata a [**IQueryAssociations:: GetString**](/windows/win32/api/shlwapi/nf-shlwapi-iqueryassociations-getstring). La chiamata a **IQueryAssociations:: init** specifica il tipo di documento, ad esempio ". txt". La chiamata a **IQueryAssociations:: GetString** deve specificare ASSOCSTR \_ FRIENDLYDOCNAME come identificatore di stringa.
+La creazione di risorse per i nomi descrittivi dei tipi di documento è descritta in Creare risorse per i nomi descrittivi dei tipi di documento in [Uso del reindirizzamento delle stringhe del Registro di sistema](using-registry-string-redirection.md). Per eseguire query su un nome descrittivo del documento, l'applicazione deve usare [**IQueryAssociations::Init**](/windows/win32/api/shlwapi/nf-shlwapi-iqueryassociations-init), seguito da una chiamata a [**IQueryAssociations::GetString**](/windows/win32/api/shlwapi/nf-shlwapi-iqueryassociations-getstring). La chiamata a **IQueryAssociations::Init** specifica il tipo di documento, ad esempio ".txt". La chiamata a **IQueryAssociations::GetString** deve specificare ASSOCSTR \_ FRIENDLYDOCNAME come identificatore di stringa.
 
-## <a name="register-microsoft-management-console-snap-in-strings-not-read-from-the-registry"></a>Registra stringhe di snap-in di Microsoft Management Console non lette dal registro di sistema
+## <a name="register-microsoft-management-console-snap-in-strings-not-read-from-the-registry"></a>Registrare Microsoft Management Console stringhe snap-in non lette dal Registro di sistema
 
-L'applicazione può utilizzare uno snap-in di Microsoft Management Console (MMC) per ospitare le attività di gestione. La maggior parte delle stringhe viene gestita come risorse usando le impostazioni del registro di sistema descritte in creare risorse stringa per Microsoft Management Console Snap-Ins in [uso del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md). Tuttavia, alcuni snap-in registrano i valori stringa del registro di sistema che MMC non è in grado di leggere dal registro di sistema In questo caso, è necessario che lo snap-in ottenga i valori usando l'interfaccia [**ISnapinAbout**](/windows/win32/api/mmc/nn-mmc-isnapinabout) , che è compatibile con MUI.
+L'applicazione può usare uno snap-in Microsoft Management Console (MMC) per ospitare le attività di gestione. La maggior parte delle stringhe viene gestita come risorse usando le impostazioni del Registro di sistema descritte in Create String Resources for Microsoft Management Console Snap-Ins in [Using Registry String Redirection](using-registry-string-redirection.md). Tuttavia, alcuni snap-in registrano i valori stringa del Registro di sistema che MMC non può leggere dal Registro di sistema. In questo caso, lo snap-in deve ottenere i valori usando [**l'interfaccia ISnapinAbout,**](/windows/win32/api/mmc/nn-mmc-isnapinabout) compatibile con MUI.
 
-## <a name="set-the-display-name-and-description-for-a-windows-service-from-the-registry"></a>Impostare il nome visualizzato e la descrizione di un servizio Windows dal registro di sistema
+## <a name="set-the-display-name-and-description-for-a-windows-service-from-the-registry"></a>Impostare il nome visualizzato e la descrizione per un Windows dal Registro di sistema
 
-Se l'applicazione MUI usa un servizio Windows, deve visualizzare il nome visualizzato e la descrizione del servizio. Le risorse associate sono descritte in "creare risorse di stringa per un servizio Windows" in [uso del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md).
+Se l'applicazione MUI usa un Windows, deve visualizzare il nome visualizzato e la descrizione del servizio. Le risorse associate sono descritte in "Creare risorse stringa per un Windows" in Uso del reindirizzamento [delle stringhe del Registro di sistema](using-registry-string-redirection.md).
 
-Per impostare il nome visualizzato del servizio, l'applicazione MUI chiama [**CreateService**](/windows/win32/api/winsvc/nf-winsvc-createservicea) o [**ChangeServiceConfig**](/windows/win32/api/winsvc/nf-winsvc-changeserviceconfiga). Il nome è una stringa nel formato " `@<PE-path>,-<stringID>[;<comment>]` ". Se, ad esempio, il servizio è implementato da un file con estensione dll con percorso% ProgramFiles% \\ % MyFile% \\MyDll.dll e l'identificatore di stringa del nome visualizzato specifico della lingua è 347, il parametro viene specificato come " `@%ProgramFiles%\\%MyPath%\\MyDll.dll,-347` ". Le barre rovesciate doppie ( \\ \\ ) sono necessarie perché C/C++ usa la barra rovesciata come carattere di escape nelle stringhe.
+Per impostare il nome visualizzato del servizio, l'applicazione MUI chiama [**CreateService**](/windows/win32/api/winsvc/nf-winsvc-createservicea) [**o ChangeServiceConfig**](/windows/win32/api/winsvc/nf-winsvc-changeserviceconfiga). Il nome è una stringa nel formato " `@<PE-path>,-<stringID>[;<comment>]` ". Ad esempio, se il servizio viene implementato da un file .dll con percorso %ProgramFiles% %MyPath%MyDll.dll e l'identificatore di stringa del nome visualizzato specifico del linguaggio \\ \\ è 347, il parametro viene specificato come " `@%ProgramFiles%\\%MyPath%\\MyDll.dll,-347` ". Le doppie barre rovesciate ( ) sono necessarie perché \\ C/C++ usa la barra rovesciata come carattere \\ di escape nelle stringhe.
 
-Per impostare la descrizione del servizio specifica del linguaggio, l'applicazione MUI deve fare in modo che il membro **lpDescription** di una struttura di [**\_ Descrizione del servizio**](/windows/win32/api/winsvc/ns-winsvc-service_descriptiona) indichi una stringa di formato " `@<PE-path>,-<stringID>[;<comment>]` ", facendo riferimento all'identificatore di stringa appropriato. Quindi, l'applicazione chiama [**ChangeServiceConfig2**](/windows/win32/api/winsvc/nf-winsvc-changeserviceconfig2a) con il parametro *dwInfoLevel* specificato \_ come \_ Descrizione della configurazione del servizio e il parametro *LpInfo* specificato come struttura della **\_ Descrizione del servizio** .
+Per impostare la descrizione del servizio specifica del linguaggio, l'applicazione MUI deve rendere **lpDescription** membro di una struttura [**SERVICE \_ DESCRIPTION**](/windows/win32/api/winsvc/ns-winsvc-service_descriptiona) indicando una stringa di formato " ", facendo riferimento all'identificatore di `@<PE-path>,-<stringID>[;<comment>]` stringa appropriato. L'applicazione chiama quindi [**ChangeServiceConfig2**](/windows/win32/api/winsvc/nf-winsvc-changeserviceconfig2a) con il parametro *dwInfoLevel* specificato come SERVICE CONFIG DESCRIPTION e il parametro \_ \_ *lpInfo* specificato come struttura **SERVICE \_ DESCRIPTION.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -67,7 +67,7 @@ Per impostare la descrizione del servizio specifica del linguaggio, l'applicazio
 [Individuazione delle risorse PE Win32](locating-win32-pe-resources.md)
 </dt> <dt>
 
-[Uso del reindirizzamento delle stringhe del registro di sistema](using-registry-string-redirection.md)
+[Uso del reindirizzamento delle stringhe del Registro di sistema](using-registry-string-redirection.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Esegue un'interpolazione lineare tra due vettori 3D.
 ms.assetid: f3f06f1b-8824-47f0-b2ed-c212fa4c3225
-title: Funzione D3DXVec3Lerp (D3dx9math. h)
+title: Funzione D3DXVec3Lerp (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed6905cc0b13908a4e60e221737e9b5dc5a627f1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4805cb4163e7ab2adee17e66346dd076989aa292fc04df6ef31e131baa5813fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630611"
 ---
-# <a name="d3dxvec3lerp-function"></a>D3DXVec3Lerp (funzione)
+# <a name="d3dxvec3lerp-function"></a>Funzione D3DXVec3Lerp
 
 Esegue un'interpolazione lineare tra due vettori 3D.
 
@@ -43,39 +43,39 @@ D3DXVECTOR3* D3DXVec3Lerp(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che esegue l'interpolazione lineare tra i vettori.
+Parametro che interpola in modo lineare tra i vettori.
 
 </dd> </dl>
 
@@ -83,13 +83,13 @@ Parametro che esegue l'interpolazione lineare tra i vettori.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che è il risultato dell'interpolazione lineare.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che è il risultato dell'interpolazione lineare.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione esegue l'interpolazione lineare in base alla formula seguente: V1 + s (v2-v1).
+Questa funzione esegue l'interpolazione lineare in base alla formula seguente: V1 + s(V2-V1).
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec3Lerp** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3Lerp** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

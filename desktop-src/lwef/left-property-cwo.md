@@ -1,19 +1,19 @@
 ---
 title: Proprietà Left (oggetto CommandsWindow)
-description: Informazioni sulla proprietà dell'oggetto Left CommandsWindow. Microsoft Agent è deprecato a livello di Windows 7.
+description: Informazioni sulla proprietà dell'oggetto Left CommandsWindow. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: 03786379-42c2-4f54-99cc-1dc120c45858
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fdcbb8cb39b2c07120ecab2b4da5da99d55b78f
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 348a695e69320abd340fd06789603ff6e1f2b3fe8671fa583ed2f253970cdf5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105027"
 ---
 # <a name="left-property-commandswindow-object"></a>Proprietà Left (oggetto CommandsWindow)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 

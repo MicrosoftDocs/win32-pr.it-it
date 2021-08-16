@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 2d9c1aa8335078cad71832c6090cada1669641cb
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: e47fa7705701701af2fc0832c5ea27cfdc7d1e67948ec095f3c24837a93de18b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610481"
 ---
 # <a name="dlp_app_op_enlightened_level-structure"></a>DLP_APP_OP_ENLIGHTENED_LEVEL struttura
 
-Associa un'azione di prevenzione della perdita dei dati (DLP) dell'endpoint a un livello di imposizione.
+Associa un'azione di prevenzione della perdita dei dati dell'endpoint a un livello di imposizione.
 
 ## <a name="syntax"></a>Sintassi
 

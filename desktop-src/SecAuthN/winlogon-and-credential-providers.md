@@ -21,7 +21,7 @@ Per informazioni sull'implementazione di Provider di credenziali, vedere gli arg
 
 | Argomento                                                                                                           | Descrizione                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Provider di credenziali'accesso Windows utente](https://go.microsoft.com/fwlink/?LinkId=717287)<br/> | Panoramica dell'architettura winlogon Provider di credenziali e di un esempio Provider di credenziali.<br/> |
+| [Provider di credenziali'accesso Windows guidata dall'utente](https://go.microsoft.com/fwlink/?LinkId=717287)<br/> | Panoramica dell'architettura winlogon Provider di credenziali e di un esempio Provider di credenziali.<br/> |
 | [Interfacce della shell](../shell/samples-usingthumbnailproviders.md)<br/>                                                                | Provider di credenziali riferimento all'interfaccia.<br/>                                                    |
 | [Provider di credenziali in Windows 10](credential-providers-in-windows.md)<br/>                            | Provider di credenziali di terze parti e provider di credenziali di sistema Windows 10.<br/>             |
 
@@ -29,7 +29,7 @@ Per informazioni sull'implementazione di Provider di credenziali, vedere gli arg
 
  
 
-Per un esempio di Provider di credenziali, vedere l'esempio disponibile nella directory di installazione di Windows SDK in \\ Samples \\ Security \\ CredentialProvider (Provider di credenziali di sicurezza degli esempi).
+Per un esempio di Provider di credenziali, vedere l'esempio disponibile nella directory di installazione di Windows SDK in \\ Samples \\ Security CredentialProvider (Esempi di \\ CredentialProvider di sicurezza).
 
 **Windows Server 2003 e Windows XP:** I provider di credenziali non sono supportati. Per informazioni sulla personalizzazione di Winlogon, vedere [Winlogon e LANA.](winlogon-and-gina.md)
 

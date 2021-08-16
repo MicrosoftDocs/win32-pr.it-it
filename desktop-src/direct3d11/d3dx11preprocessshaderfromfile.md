@@ -30,7 +30,7 @@ ms.locfileid: "119124666"
  
 
 > [!Note]  
-> Invece di usare questa funzione, è consigliabile usare l'API [**D3DPreprocess.**](/windows/desktop/direct3dhlsl/d3dpreprocess)
+> Anziché usare questa funzione, è consigliabile usare l'API [**D3DPreprocess.**](/windows/desktop/direct3dhlsl/d3dpreprocess)
 
  
 
@@ -71,7 +71,7 @@ Nome del file shader.
 
 Tipo: **const D3D11 \_ SHADER \_ MACRO \***
 
-Matrice con terminazione NULL di macro shader. impostare questa proprietà **su NULL** per non specificare macro.
+Matrice di macro shader con terminazione NULL. impostare questa proprietà **su NULL** per non specificare macro.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Matrice con terminazione NULL di macro shader. impostare questa proprietà **su 
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Puntatore a un'interfaccia di inclusione. impostare questa proprietà su **NULL** per specificare che non è presente alcun file di inclusione.
+Puntatore a un'interfaccia di inclusione. impostare questa proprietà **su NULL** per specificare che non è presente alcun file di inclusione.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Puntatore a un'interfaccia di inclusione. impostare questa proprietà su **NULL*
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntatore a un'interfaccia pump di thread (vedere [**l'interfaccia ID3DX11ThreadPump).**](id3dx11threadpump.md) Usare **NULL** per specificare che questa funzione non deve restituire alcun valore finché non viene completata.
+Puntatore a un'interfaccia thread pump (vedere [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Usare **NULL** per specificare che questa funzione non deve restituire finché non viene completata.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Puntatore alla memoria che contiene lo shader non ricompilato.
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Indirizzo di un puntatore alla memoria che contiene gli eventuali errori di creazione dell'effetto.
+Indirizzo di un puntatore alla memoria che contiene errori di creazione degli effetti, se presenti.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Indirizzo di un puntatore alla memoria che contiene gli eventuali errori di crea
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere un percorso di memoria valido fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -124,7 +124,7 @@ Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,*
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 

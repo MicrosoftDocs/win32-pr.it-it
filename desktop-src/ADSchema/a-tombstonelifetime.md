@@ -1,6 +1,6 @@
 ---
 title: Tombstone-Lifetime attributo
-description: Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi directory.
+description: Numero di giorni prima della rimozione di un oggetto eliminato dai servizi directory.
 ms.assetid: 58898097-912b-4fe6-b6ea-91f49aaa2b1b
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "119644951"
 ---
 # <a name="tombstone-lifetime-attribute"></a>Tombstone-Lifetime attributo
 
-Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi directory. Ciò consente di rimuovere oggetti dai server replicati e impedire ai ripristini di introdurre nuovamente un oggetto eliminato. Questo valore si trova nell'oggetto Servizio directory nella scheda di interfaccia di rete di configurazione.
+Numero di giorni prima della rimozione di un oggetto eliminato dai servizi directory. Ciò consente di rimuovere oggetti dai server replicati e di impedire ai ripristini di introdurre nuovamente un oggetto eliminato. Questo valore si trova nell'oggetto Servizio directory nella scheda di interfaccia di rete di configurazione.
 
 
 
@@ -32,7 +32,7 @@ Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi direct
 | CN                | Tombstone-Lifetime                                        |
 | Ldap-Display-Name | tombstoneLifetime                                         |
 | Dimensione              | 4 byte. Il valore predefinito è 60 giorni quando non viene immesso alcun valore. |
-| Aggiorna privilegio  | \-                                                        |
+| Privilegio di aggiornamento  | \-                                                        |
 | Frequenza di aggiornamento  | \-                                                        |
 | Attribute-Id      | 1.2.840.113556.1.2.54                                     |
 | System-Id-Guid    | 16c3a860-1273-11d0-a060-00aa006c33ed                      |
@@ -59,7 +59,7 @@ Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi direct
 | ID collegamento                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| A valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -80,7 +80,7 @@ Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi direct
 | ID collegamento                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| A valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -101,7 +101,7 @@ Numero di giorni prima che un oggetto eliminato venga rimosso dai servizi direct
 | ID collegamento                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| A valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |

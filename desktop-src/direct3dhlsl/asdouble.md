@@ -1,9 +1,9 @@
 ---
-title: AsDouble (funzione)
-description: Reinterpreta un valore cast (valori a 2 32 bit) in un valore Double.
+title: Funzione asdouble
+description: Reinterpreta un valore di cast (due valori a 32 bit) in un valore double.
 ms.assetid: 55e5276d-81e1-4e7e-8cb4-0beb57d2fb7f
 keywords:
-- funzione AsDouble HLSL
+- Funzione asdouble HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: caa2c83ee01739a2e2ee9595d0a26e1bdb80fef1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0e191a2bf9ee7fb46337c3c7dfef7f8dea3525acf936ab745c07e7720f1ac509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626641"
 ---
-# <a name="asdouble-function"></a>AsDouble (funzione)
+# <a name="asdouble-function"></a>Funzione asdouble
 
-Reinterpreta un valore cast (valori a 2 32 bit) in un valore Double.
+Reinterpreta un valore di cast (due valori a 32 bit) in un valore double.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 double asdouble(
-  in uint lowbits,
-  in uint highbits
+  in uint lowbits,
+  in uint highbits
 );
 ```
 
@@ -37,7 +37,7 @@ double asdouble(
 
 <dl> <dt>
 
-*lowbits* \[ in\]
+*lowbits* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Modello a 32 bit basso del valore di input.
 
 </dd> <dt>
 
-*highbits* \[ in\]
+*highbits* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,9 +57,9 @@ Modello a 32 bit elevato del valore di input.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Double**
+Tipo: **double**
 
-L'input (valori a 2 32 bit) viene rieseguito come Double.
+L'input (due valori a 32 bit) viene ricastato come double.
 
 ## <a name="remarks"></a>Commenti
 
@@ -69,33 +69,33 @@ L'input (valori a 2 32 bit) viene rieseguito come Double.
 double2 asdouble(uint2 lowbits, uint2 highbits);
 ```
 
-Se il valore di input è costituito da componenti a 2 32 bit, il tipo restituito conterrà un valore Double. Se il valore di input è costituito da componenti a 4 32 bit, il tipo restituito conterrà due Double. Se il valore di input è un tipo a 64 bit, il valore restituito avrà lo stesso numero di componenti del valore di input.
+Se il valore di input è due componenti a 32 bit, il tipo restituito conterrà un valore double. Se il valore di input è quattro componenti a 32 bit, il tipo restituito conterrà due valori double. Se il valore di input è un tipo a 64 bit, il valore restituito avrà lo stesso numero di componenti del valore di input.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -104,12 +104,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

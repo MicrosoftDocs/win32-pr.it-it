@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e10029c0397c16a5a5eb30be6e3db64c0baec596
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b4b3d63b63e4deb9c48f9e117122f021e9d63791292e60da3cc919a6e4535e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069811"
 ---
 # <a name="readythread-class"></a>Classe ReadyThread
 
@@ -46,13 +46,13 @@ class ReadyThread : Thread_V2
 
 ## <a name="members"></a>Members
 
-La classe **ReadyThread** dispone di questi tipi di membri:
+La **classe ReadyThread** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ReadyThread** dispone di queste proprietà.
+La **classe ReadyThread** ha queste proprietà.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 Valore in base al quale viene regolata la priorità.
@@ -81,18 +81,18 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Motivo del priority boost.
+Motivo dell'priority boost.
 
 
 
 | Valore                                                                        | Significato                                                                                                                 |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Ignorare l'incremento.<br/>                                                                                        |
-| <dl> <dt>1</dt> </dl> | Applicare l'incremento, che decade in modo incrementale alla fine di ogni quantum.<br/>                              |
-| <dl> <dt>2</dt> </dl> | Applicare l'incremento come Boost che dedurrà interamente il suo intero in quantum (in genere per la donazione di priorità).<br/> |
+| <dl> <dt>1</dt> </dl> | Applicare l'incremento, che decadrà in modo incrementale alla fine di ogni quantum.<br/>                              |
+| <dl> <dt>2</dt> </dl> | Applicare l'incremento come boost che decadrà per intero nel calcolo quantistico (in genere per la priorità di priorità).<br/> |
 
 
 
@@ -109,24 +109,24 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Di seguito sono riportati i flag di stato possibili:
+Di seguito sono riportati i possibili flag di stato:
 
 
 
 | Valore                                                                          | Significato                                                                    |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>0x1</dt> </dl> | Il thread è stato preparato da DPC (chiamata di procedura posticipata).<br/> |
-| <dl> <dt>0x2</dt> </dl> | Lo stack del kernel è attualmente stato scambiato.<br/>                      |
+| <dl> <dt>0x1</dt> </dl> | Il thread è stato letto da DPC (chiamata di procedura posticipata).<br/> |
+| <dl> <dt>0x2</dt> </dl> | Lo stack del kernel è attualmente scambiato.<br/>                      |
 | <dl> <dt>0x4</dt> </dl> | Lo spazio degli indirizzi del processo viene scambiato.<br/>                       |
 
 
 
  
 
-Si noti che quando lo stack del kernel o lo spazio degli indirizzi del processo viene sostituito, sarà presente un evento ReadyThread aggiuntivo dopo lo scambio dello stack del kernel o dello spazio degli indirizzi del processo e il thread sarà pronto per l'invio.
+Si noti che quando lo stack del kernel o lo spazio degli indirizzi del processo viene scambiato, si verifica un evento ReadyThread aggiuntivo dopo che lo stack del kernel o lo spazio degli indirizzi del processo è stato scambiato nuovamente e il thread è pronto per l'invio.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5)
+Qualificatori: WmiDataId(5)
 </dt> </dl>
 
 Riservato.
@@ -149,16 +149,16 @@ Riservato.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Format ("x")
+Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificatore del thread di cui è in corso la preparazione per l'esecuzione.
+Identificatore del thread da leggere per l'esecuzione.
 
 </dd> </dl>
 
@@ -177,7 +177,7 @@ Identificatore del thread di cui è in corso la preparazione per l'esecuzione.
 
 <dl> <dt>
 
-[**Thread \_ v2**](thread-v2.md)
+[**Thread \_ V2**](thread-v2.md)
 </dt> </dl>
 
  

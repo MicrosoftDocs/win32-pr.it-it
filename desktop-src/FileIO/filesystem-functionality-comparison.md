@@ -1,24 +1,24 @@
 ---
-description: Le tabelle in cui sono elencate le funzionalità e le funzionalità supportano i confronti per i quattro file System Windows principali, NTFS, exFAT, UDF e FAT32.
+description: Le tabelle che elencano funzionalità e funzionalità supportano i confronti per i quattro file system Windows, NTFS, exFAT, UDF e FAT32.
 ms.assetid: 28cf2805-f1ce-46b4-bf08-a329f67f4d99
-title: Confronto delle funzionalità del file System
+title: Confronto delle funzionalità del file system
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7547e48ff68a8fdab195087904a47a535aa3464
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5af85dbacfd04920d8eb0a9558e0d57cc6e4020da35ffac57f7bdc703e6ef15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790691"
 ---
-# <a name="file-system-functionality-comparison"></a>Confronto delle funzionalità del file System
+# <a name="file-system-functionality-comparison"></a>Confronto delle funzionalità del file system
 
-Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i quattro file System Windows principali, NTFS, exFAT, UDF e FAT32:
+Le tabelle seguenti elencano funzionalità e funzionalità che supportano i confronti per i quattro file system Windows, NTFS, exFAT, UDF e FAT32:
 
 -   [Funzionalità](#file-system-functionality-comparison)
 -   [Limiti](#limits)
--   [Journaling e log delle modifiche](#journaling-and-change-log)
--   [Blocca funzionalità di allocazione](#block-allocation-features)
+-   [Inserimento nel journal e log delle modifiche](#journaling-and-change-log)
+-   [Funzionalità di allocazione dei blocchi](#block-allocation-features)
 -   [Sicurezza](#security)
 -   [Compressione](#compression)
 -   [Quote](#quotas)
@@ -32,11 +32,11 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 | Funzionalità                             | NTFS                           | exFAT          | UDF                           | FAT32                      |
 |-------------------------------------|--------------------------------|----------------|-------------------------------|----------------------------|
 | Timestamp di creazione<br/>     | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
-| Timestamp ultimo accesso<br/>  | No (vedere la nota sotto)<br/> | Sì<br/> | Sì<br/>                | Sì (solo data)<br/> |
-| Timestamp dell'Ultima modifica<br/>  | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
+| Timestamp dell'ultimo accesso<br/>  | No (vedere la nota sotto)<br/> | Sì<br/> | Sì<br/>                | Sì (solo data)<br/> |
+| Timestamp dell'ultima modifica<br/>  | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
 | Timestamp dell'ultimo archivio<br/> | No<br/>                  | No<br/>  | No<br/>                 | No<br/>              |
 | Con distinzione tra maiuscole e minuscole<br/>           | Sì (opzione)<br/>        | No<br/>  | Sì<br/>                | No<br/>              |
-| Conservazione del case<br/>          | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
+| Conservazione delle maiuscole e minuscole<br/>          | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
 | Collegamenti reali<br/>               | Sì<br/>                 | No<br/>  | Sì<br/>                | No<br/>              |
 | Soft link<br/>               | Sì<br/>                 | No<br/>  | No<br/>                 | No<br/>              |
 | File sparse<br/>             | Sì<br/>                 | No<br/>  | Sì<br/>                | No<br/>              |
@@ -50,7 +50,7 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 
  
 
-**Windows Server 2003 e Windows XP:** Il campo data e ora ultimo accesso NTFS è stato aggiornato.
+**Windows Server 2003 e Windows XP:** Il campo timestamp dell'ultimo accesso NTFS viene aggiornato.
 
 ## <a name="limits"></a>Limiti
 
@@ -58,37 +58,37 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 
 | Funzionalità                             | NTFS                                                                                      | exFAT                                                                                     | UDF                                                                                       | FAT32                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Lunghezza massima del nome del file<br/> | 255 caratteri Unicode<br/>                                                         | 255 caratteri Unicode<br/>                                                         | 127 caratteri ASCII Unicode o 254<br/>                                            | 255 caratteri Unicode<br/>                                                         |
+| Lunghezza massima del nome del file<br/> | 255 caratteri Unicode<br/>                                                         | 255 caratteri Unicode<br/>                                                         | 127 caratteri Unicode o 254 caratteri ASCII<br/>                                            | 255 caratteri Unicode<br/>                                                         |
 | Lunghezza massima del nome del percorso<br/> | 32.760 caratteri Unicode con ogni componente del percorso non più di 255 caratteri<br/> | 32.760 caratteri Unicode con ogni componente del percorso non più di 255 caratteri<br/> | 32.760 caratteri Unicode con ogni componente del percorso non più di 255 caratteri<br/> | 32.760 caratteri Unicode con ogni componente del percorso non più di 255 caratteri<br/> |
-| Dimensione massima dei file<br/>        | 2 ^ 64 1 byte<br/>                                                                   | 2 ^ 64 1 byte<br/>                                                                   | 2 ^ 64 1 byte<br/>                                                                   | 4 GiB<br/>                                                                          |
-| Dimensioni massime volume<br/>      | 16 TB (dimensioni del cluster da 4 KB) o 256TB (dimensione del cluster 64 KB)<br/>                        | 2 ^ 32 1 cluster (dimensioni massime del cluster = 2 ^ 25 1)<br/>                               | 2 ^ 32 blocchi<br/>                                                                    | 2 ^ 32 blocchi<br/>                                                                    |
+| Dimensione massima dei file<br/>        | 2^64 1 byte<br/>                                                                   | 2^64 1 byte<br/>                                                                   | 2^64 1 byte<br/>                                                                   | 4 GiB<br/>                                                                          |
+| Dimensioni massime volume<br/>      | 16 TB (dimensioni del cluster da 4 KB) o 256 TB (dimensioni del cluster di 64 KB)<br/>                        | 2^32 1 cluster (dimensioni massime del cluster = 2^25 1)<br/>                               | 2^32 blocchi<br/>                                                                    | 2^32 blocchi<br/>                                                                    |
 
 
 
  
 
-## <a name="journaling-and-change-log"></a>Journaling e log delle modifiche
+## <a name="journaling-and-change-log"></a>Inserimento nel journal e log delle modifiche
 
 
 
 | Funzionalità                             | NTFS           | exFAT         | UDF           | FAT32         |
 |-------------------------------------|----------------|---------------|---------------|---------------|
-| Journaling solo metadati<br/> | Sì<br/> | No<br/> | No<br/> | No<br/> |
-| Log modifiche file<br/>          | Sì<br/> | No<br/> | No<br/> | No<br/> |
+| Inserimento nel journal solo metadati<br/> | Sì<br/> | No<br/> | No<br/> | No<br/> |
+| Log delle modifiche dei file<br/>          | Sì<br/> | No<br/> | No<br/> | No<br/> |
 
 
 
  
 
-## <a name="block-allocation-features"></a>Blocca funzionalità di allocazione
+## <a name="block-allocation-features"></a>Funzionalità di allocazione blocchi
 
 
 
 | Funzionalità                        | NTFS                                                                        | exFAT         | UDF            | FAT32         |
 |--------------------------------|-----------------------------------------------------------------------------|---------------|----------------|---------------|
-| Compressione della coda<br/>        | Sì (i file di piccole dimensioni vengono resi residenti nel descrittore del flusso MFT)<br/> | No<br/> | No<br/>  | No<br/> |
+| Creazione di un pacchetto della parte finale<br/>        | Sì (i file di piccole dimensioni vengono resi residenti nel descrittore di flusso MFT)<br/> | No<br/> | No<br/>  | No<br/> |
 | Extents<br/>             | Sì<br/>                                                              | No<br/> | Sì<br/> | No<br/> |
-| Dimensioni blocco variabili<br/> | No (impostato dal volume)<br/>                                           | No<br/> | No<br/>  | No<br/> |
+| Dimensioni dei blocchi variabili<br/> | No (impostato dal volume)<br/>                                           | No<br/> | No<br/>  | No<br/> |
 
 
 
@@ -100,10 +100,10 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 
 | Funzionalità                                  | NTFS                                                 | exFAT               | UDF                 | FAT32         |
 |------------------------------------------|------------------------------------------------------|---------------------|---------------------|---------------|
-| Rileva proprietario file<br/>              | Sì<br/>                                       | No<br/>       | No<br/>       | No<br/> |
+| Tenere traccia del proprietario del file<br/>              | Sì<br/>                                       | No<br/>       | No<br/>       | No<br/> |
 | Autorizzazioni per file POSIX<br/>        | No (disponibile nella funzionalità del sottosistema POSIX)<br/> | No<br/>       | Sì<br/>      | No<br/> |
 | Elenchi di controllo di accesso<br/>          | Sì<br/>                                       | No<br/>       | No<br/>       | No<br/> |
-| Crittografia a livello di file System<br/> | Sì<br/>                                       | No<br/>       | No<br/>       | No<br/> |
+| Crittografia a livello di file system<br/> | Sì<br/>                                       | No<br/>       | No<br/>       | No<br/> |
 | Checksum/ECC<br/>                  | No<br/>                                        | Metadati<br/> | Metadati<br/> | No<br/> |
 
 
@@ -135,9 +135,9 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 
  
 
-**Nota**  La funzionalità quote di spazio su disco a livello di directory in NTFS è disponibile tramite il file server Gestione risorse.
+**Nota**  La funzionalità delle quote di spazio su disco a livello di directory in NTFS è disponibile tramite il file server Resource Manager.
 
-## <a name="single-instance-store"></a>Archivio Single-Instance
+## <a name="single-instance-store"></a>Single-Instance Store
 
 
 
@@ -149,7 +149,7 @@ Le tabelle seguenti elencano le funzionalità e i confronti di supporto per i qu
 
  
 
-**Nota**  L'archivio a istanza singola per NTFS è disponibile come parte della funzionalità di archiviazione a istanza singola di Windows Server.
+**Nota**  L'archivio a istanza singola per NTFS è disponibile come parte della funzionalità Archiviazione istanza singola in Windows Server.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

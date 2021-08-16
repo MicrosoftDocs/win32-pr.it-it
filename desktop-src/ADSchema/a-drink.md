@@ -1,10 +1,10 @@
 ---
-title: attributo drink
-description: Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita di un oggetto o persona.
+title: Attributo drink
+description: Il tipo di attributo drink (Favorite Drink) specifica la bevanda preferita di un oggetto (o di una persona).
 ms.assetid: 1d3f6301-1bb3-4ff9-8be9-5a5590636d16
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo della bevanda
+- Schema AD dell'attributo drink
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dda2886bc497064308c6b824c8f8db6587df70b3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3bd5dd141d8ae6f4de2d1333b3d772098c788478da46fb6c2d02c6c1c5d75e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656670"
 ---
-# <a name="drink-attribute"></a>attributo drink
+# <a name="drink-attribute"></a>Attributo drink
 
-Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita di un oggetto o persona.
+Il tipo di attributo drink (Favorite Drink) specifica la bevanda preferita di un oggetto (o di una persona).
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | drink                                       |
-| LDAP-Display-Name | drink                                       |
+| CN                | Bere                                       |
+| Ldap-Display-Name | Bere                                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.5                   |
-| System-ID-GUID    | 1a1aa5b5-262e-4df6-af04-2cf6b0d80048        |
+| System-Id-Guid    | 1a1aa5b5-262e-4df6-af04-2cf6b0d80048        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita 
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -77,15 +77,15 @@ Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita 
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -98,15 +98,15 @@ Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita 
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -119,15 +119,15 @@ Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita 
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -140,15 +140,15 @@ Il tipo di attributo bevanda (bevanda preferita) specifica la bevanda preferita 
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

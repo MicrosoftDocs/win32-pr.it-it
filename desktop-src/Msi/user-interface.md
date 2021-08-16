@@ -13,11 +13,11 @@ ms.locfileid: "119809351"
 ---
 # <a name="user-interface-windows-installer"></a>Interfaccia utente (Windows installer)
 
-Windows Il programma di installazione offre un'interfaccia utente completa per l'installazione di un'applicazione o di un prodotto. L'interfaccia utente presenta all'utente le opzioni disponibili per configurare l'installazione e ottiene informazioni dal processo di installazione in sospeso.
+Windows Il programma di installazione offre un'interfaccia utente completa per l'installazione di un'applicazione o di un prodotto. L'interfaccia utente presenta all'utente le opzioni disponibili per configurare l'installazione e ottiene informazioni dall'utente sul processo di installazione in sospeso.
 
-[Informazioni sul Interfaccia utente](about-the-user-interface.md) descrive la funzionalità dell'interfaccia utente del programma di installazione. [L'Interfaccia utente](using-the-user-interface.md) descrive l'uso dell'interfaccia utente interna del programma di installazione.
+[Informazioni sul Interfaccia utente](about-the-user-interface.md) descrive la funzionalità dell'interfaccia utente del programma di installazione. [L'uso Interfaccia utente](using-the-user-interface.md) descrive l'uso dell'interfaccia utente interna del programma di installazione.
 
-Le informazioni di riferimento sulla finestra di dialogo interna del programma di installazione e sugli stili e le opzioni dei controlli sono disponibili in [Interfaccia utente Riferimento](user-interface-reference.md).
+Le informazioni di riferimento sulla finestra di dialogo interna del programma di installazione e gli stili e le opzioni dei controlli sono [Interfaccia utente riferimento](user-interface-reference.md).
 
  
 

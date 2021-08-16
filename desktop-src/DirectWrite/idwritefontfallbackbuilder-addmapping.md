@@ -1,11 +1,11 @@
 ---
-title: Metodo IDWriteFontFallbackBuilder AddMapping
-description: Accoda un singolo mapping all'elenco. Chiamare questa volta per ogni mapping aggiuntivo.
+title: Metodo IdWriteFontFallbackBuilder AddMapping
+description: Aggiunge un singolo mapping all'elenco. Chiamare questa operazione una volta per ogni mapping aggiuntivo.
 ms.assetid: FCA3CD9C-9FB3-49BD-B4D1-53AEAAAAEE8A
 keywords:
-- Scrittura diretta Metodo AddMapping
-- Metodo AddMapping scrittura diretta, interfaccia IDWriteFontFallbackBuilder
-- IDWriteFontFallbackBuilder Interface Direct Write, Metodo AddMapping
+- Metodo AddMapping Direct Write
+- Metodo AddMapping Direct Write, interfaccia IDWriteFontFallbackBuilder
+- Interfaccia IDWriteFontFallbackBuilder Direct Write, metodo AddMapping
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a084aa2a9df0e34741c8bf5f39ae00933d49cfe7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b6496ac9ef9bdfa574cc2c4710ed4620fd855dbf5eff2b22885b32bf343d141
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650441"
 ---
-# <a name="idwritefontfallbackbuilderaddmapping-method"></a>Metodo IDWriteFontFallbackBuilder:: AddMapping
+# <a name="idwritefontfallbackbuilderaddmapping-method"></a>Metodo IDWriteFontFallbackBuilder::AddMapping
 
-Accoda un singolo mapping all'elenco. Chiamare questa volta per ogni mapping aggiuntivo.
+Aggiunge un singolo mapping all'elenco. Chiamare questa operazione una volta per ogni mapping aggiuntivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,75 +49,75 @@ HRESULT AddMapping(
 
 <dl> <dt>
 
-*intervalli* 
+*Gamme* 
 </dt> <dd>
 
-Tipo: **[**DWrite \_ Unicode \_ Range**](/windows/win32/api/Dwrite_1/ns-dwrite_1-dwrite_unicode_range) \** _
+Tipo: **[ **DWRITE \_ UNICODE \_ RANGE**](/windows/win32/api/Dwrite_1/ns-dwrite_1-dwrite_unicode_range)\***
 
-Intervalli Unicode applicabili a questo mapping.
+Intervalli Unicode che si applicano a questo mapping.
 
 </dd> <dt>
 
-_rangesCount * 
+*rangesCount* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
 Numero di intervalli Unicode.
 
 </dd> <dt>
 
-*targetFamilyNames* \[ in\]
+*targetFamilyNames* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* \* WCHAR**
 
-Elenco delle stringhe del nome della famiglia di destinazione.
+Elenco di stringhe del nome della famiglia di destinazione.
 
 </dd> <dt>
 
 *targetFamilyNamesCount* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
 Numero di nomi di famiglia di destinazione.
 
 </dd> <dt>
 
-*FontCollection* \[ in, facoltativo\]
+*oggetto fontCollection* \[ in, facoltativo\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection)**
 
-Raccolta di tipi di carattere esplicita facoltativa per questo mapping.
+Raccolta esplicita dei tipi di carattere facoltativa per questo mapping.
 
 </dd> <dt>
 
 *localeName* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const \* WCHAR* _
+Tipo: **const \* WCHAR**
 
 Impostazioni locali del contesto.
 
 </dd> <dt>
 
-_baseFamilyName * \[ in, facoltativo\]
+*baseFamilyName* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const \* WCHAR* _
+Tipo: **const \* WCHAR**
 
-Nome della famiglia di base in base al quale trovare la corrispondenza, se applicabile.
+Nome della famiglia di base con cui trovare la corrispondenza, se applicabile.
 
 </dd> <dt>
 
-_scale * 
+*scale* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Fattore di scala per moltiplicare il tipo di carattere di destinazione risultato per.
+Fattore di scala per moltiplicare il tipo di carattere di destinazione del risultato.
 
 </dd> </dl>
 
@@ -125,7 +125,7 @@ Fattore di scala per moltiplicare il tipo di carattere di destinazione risultato
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -133,10 +133,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                          |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/> |
-| Libreria<br/>                  | <dl> <dt>DWrite. lib</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                          |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/> |
+| Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

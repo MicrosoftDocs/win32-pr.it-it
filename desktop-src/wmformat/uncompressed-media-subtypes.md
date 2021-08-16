@@ -51,7 +51,7 @@ Molti sottotipi multimediali nella tabella seguente forniscono meno colori di qu
 | WMMEDIASUBTYPE \_ DRM        | Dati audio non compressi ma crittografati usati con un percorso audio sicuro.                                                                                                                                                       |
 | TwoString WMSCRIPTTYPE \_   | Comandi script costituiti da una stringa contenente il tipo di comando e da una stringa contenente i dati del comando. Questo è l'unico tipo di script supportato in Windows Media Format SDK.                                     |
 | WMMEDIASUBTYPE \_ WebStream  | Dati di trasferimento di file contenenti file e componenti HTML per il flusso Web.                                                                                                                                               |
-| WMMEDIASUBTYPE \_ VIDEOIMAGE | Tipo di input per il codec Windows media video 9. Gli esempi sono una combinazione di immagini bitmap e dati di trasformazione.                                                                                                |
+| WMMEDIASUBTYPE \_ VIDEOIMAGE | Tipo di input per il codec Windows Media Video 9 Image. Gli esempi sono una combinazione di immagini bitmap e dati di trasformazione.                                                                                                |
 
 
 

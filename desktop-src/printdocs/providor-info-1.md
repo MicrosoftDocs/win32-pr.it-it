@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura PROVIDOR info \_ 1 identifica un provider di stampa.
+description: La struttura PROVIDOR \_ INFO \_ 1 identifica un provider di stampa.
 ms.assetid: 0eff115a-b3d2-4c8f-b820-46e7f62dd295
-title: Struttura PROVIDOR_INFO_1 (winspool. h)
+title: PROVIDOR_INFO_1 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 2eabc00009b76247af71b06ea877ca0bf738c1d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f9e7015382ef34f4582c4772e148059c4ed01de9e81da5af71bc0849df26f15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091701"
 ---
-# <a name="providor_info_1-structure"></a>\_Struttura PROVIDOR info \_ 1
+# <a name="providor_info_1-structure"></a>Struttura PROVIDOR \_ INFO \_ 1
 
-La struttura **PROVIDOR \_ info \_ 1** identifica un provider di stampa.
+La **struttura PROVIDOR \_ INFO \_ 1** identifica un provider di stampa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ typedef struct _PROVIDOR_INFO_1 {
 
 <dl> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che rappresenta il nome del provider di stampa.
+Puntatore a una stringa con terminazione Null che rappresenta il nome del provider di stampa.
 
 </dd> <dt>
 
 **pEnvironment**
 </dt> <dd>
 
-Puntatore a una stringa di ambiente con terminazione null che specifica l'ambiente in cui è progettata la libreria di collegamento dinamico (DLL) del provider.
+Puntatore a una stringa di ambiente con terminazione Null che specifica l'ambiente in cui è progettata la libreria a collegamento dinamico (DLL) del provider.
 
 </dd> <dt>
 
 **pDLLName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che rappresenta il nome del provider. dll.
+Puntatore a una stringa con terminazione Null che rappresenta il nome del provider .dll.
 
 </dd> </dl>
 
@@ -72,8 +72,8 @@ Puntatore a una stringa con terminazione null che rappresenta il nome del provid
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ PROVIDOR \_ info \_ 1W** (Unicode) e **\_ PROVIDOR \_ info \_ 1a** (ANSI)<br/>                         |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ PROVIDOR \_ INFO \_ 1W** (Unicode) e **\_ PROVIDOR \_ INFO \_ 1A** (ANSI)<br/>                         |
 
 
 
@@ -84,7 +84,7 @@ Puntatore a una stringa con terminazione null che rappresenta il nome del provid
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrintProvidor**](addprintprovidor.md)

@@ -51,7 +51,7 @@ Questo esempio è un'istanza dello schema [legacy eaptlsconnectionpropertiesv1.]
 [Proprietà connessione](connection-profiles.md)
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> </dl>
 
  

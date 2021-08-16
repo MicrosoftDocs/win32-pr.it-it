@@ -33,7 +33,7 @@ PCCERT_CONTEXT WINAPI CryptUIDlgSelectCertificate(
 *pcsc* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [**struttura \_ \_ STRUCT CRYPTUI SELECTCERTIFICATE**](cryptui-selectcertificate-struct.md) che contiene informazioni sulla finestra di dialogo da visualizzare.
+Puntatore a una [**struttura STRUCT CRYPTUI \_ SELECTCERTIFICATE \_**](cryptui-selectcertificate-struct.md) che contiene informazioni sulla finestra di dialogo da visualizzare.
 
 </dd> </dl>
 
@@ -41,13 +41,13 @@ Puntatore a una [**struttura \_ \_ STRUCT CRYPTUI SELECTCERTIFICATE**](cryptui-s
 
 Puntatore a una [**struttura CERT \_ CONTEXT**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_context) che rappresenta il certificato selezionato dall'utente. Al termine dell'uso di questo certificato, è necessario passare questo puntatore alla funzione [**CertFreeCertificateContext**](/windows/win32/api/wincrypt/nf-wincrypt-certfreecertificatecontext) per decrementare il conteggio dei riferimenti del contesto del certificato.
 
-Se il **membro dwFlags** della struttura *pcsc* non contiene il flag **CRYPTUI \_ SELECTCERT \_ MULTISELECT,** un valore restituito **NULL** indica che l'utente ha chiuso la finestra di dialogo senza selezionare un certificato.
+Se il membro **dwFlags** della struttura *pcsc* non contiene il flag **CRYPTUI \_ SELECTCERT \_ MULTISELECT,** un valore restituito **NULL** indica che l'utente ha chiuso la finestra di dialogo senza selezionare un certificato.
 
-Se il **membro dwFlags** della *struttura pcsc* contiene il flag **CRYPTUI \_ SELECTCERT \_ MULTISELECT,** questa funzione restituisce sempre **NULL.** I certificati selezionati saranno contenuti nell'archivio certificati rappresentato dal membro **hSelectedCertStore** di *pcsc*. Se il numero di certificati nell'archivio è lo stesso prima e dopo la chiamata di **CryptUIDlgSelectCertificate,** l'utente ha chiuso la finestra di dialogo senza selezionare alcun certificato.
+Se il **membro dwFlags** della struttura *pcsc* contiene il flag **CRYPTUI \_ SELECTCERT \_ MULTISELECT,** questa funzione restituisce sempre **NULL.** I certificati selezionati saranno contenuti nell'archivio certificati rappresentato dal membro **hSelectedCertStore** di *pcsc*. Se il numero di certificati nell'archivio è lo stesso prima e dopo la chiamata a **CryptUIDlgSelectCertificate,** l'utente ha chiuso la finestra di dialogo senza selezionare alcun certificato.
 
 ## <a name="remarks"></a>Commenti
 
-Se il **membro dwFlags** della struttura [**\_ \_ STRUCT CRYPTUI SELECTCERTIFICATE**](cryptui-selectcertificate-struct.md) è impostato su **CRYPTUI \_ SELECTCERT \_ LEGACY,** viene visualizzata la finestra di dialogo legacy. In caso contrario, viene visualizzata la finestra di dialogo di selezione del certificato corrente.
+Se il **membro dwFlags** della struttura [**STRUCT CRYPTUI \_ SELECTCERTIFICATE \_**](cryptui-selectcertificate-struct.md) è impostato su **CRYPTUI \_ SELECTCERT \_ LEGACY,** viene visualizzata la finestra di dialogo legacy. In caso contrario, viene visualizzata la finestra di dialogo di selezione del certificato corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Se il **membro dwFlags** della struttura [**\_ \_ STRUCT CRYPTUI SELECTCERTIFICA
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows solo \[ app desktop XP\]<br/>                                                       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                              |
+| Client minimo supportato<br/> | Windows solo app desktop XP \[\]<br/>                                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                              |
 | Fine del supporto<br/> | Windows 7 \[ app desktop\]<br/>                                                       |
 | Libreria<br/>                  | <dl> <dt>Cryptui.lib</dt> </dl>            |
 | DLL<br/>                      | <dl> <dt>Cryptui.dll</dt> </dl>            |

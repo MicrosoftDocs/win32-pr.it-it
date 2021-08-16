@@ -1,5 +1,5 @@
 ---
-description: 'Distruttore COutputQueue.~COutputQueue : metodo del distruttore.'
+description: Distruttore COutputQueue.~COutputQueue - Metodo del distruttore.
 ms.assetid: a49471a3-7497-4f10-b8d1-2ceb407f34ec
 title: Distruttore COutputQueue.~COutputQueue (Outputq.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3db82f5757b9ced3ae8d4c33dc6ba67c7de0d0ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2cbc26cc6c333e1bb93e51281c16c6d72c995b02be570411a3f241870134237e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634241"
 ---
 # <a name="coutputqueuecoutputqueue-destructor"></a>Distruttore COutputQueue.~COutputQueue
 
@@ -42,7 +42,7 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

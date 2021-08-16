@@ -1,5 +1,5 @@
 ---
-description: Specifica il livello di imposizione di un'operazione DLP (Data Loss Prevention) dell'endpoint.
+description: Specifica il livello di imposizione di un'operazione di prevenzione della perdita dei dati (DLP) dell'endpoint.
 title: Enumerazione DlpAppEnforceLevel (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -21,7 +21,7 @@ ms.locfileid: "119349351"
 ---
 # <a name="dlpappenforcelevel-enumeration"></a>Enumerazione DlpAppEnforceLevel
 
-Specifica il livello di imposizione di un'operazione DLP (Data Loss Prevention) dell'endpoint.
+Specifica il livello di imposizione di un'operazione di prevenzione della perdita dei dati (DLP) dell'endpoint.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef enum _DlpAppEnforceLevel {
 *DlpAppEnforceLevelNone* \[ Pollici\]
 </dt> <dd>
 
-Nessuna imposizione da parte dell'app. Il sistema DLP imposirà l'operazione.
+Nessuna imposizione da parte dell'app. Il sistema DLP imporrà l'operazione.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Nessuna imposizione da parte dell'app. Il sistema DLP imposirà l'operazione.
 *DlpAppEnforceLevelNotify* \[ Pollici\]
 </dt> <dd>
 
-L'app Tne userà le API DLP per notificare al sistema DLP l'operazione. Il sistema DLP imposirà l'operazione.
+L'app Tne userà le API DLP per notificare l'operazione al sistema DLP. Il sistema DLP imporrà l'operazione.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Valore massimo dell'enumerazione.
 
 ## <a name="remarks"></a>Commenti
 
-I valori di questa enumerazione vengono usati dalla [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) struttura .
+I valori di questa enumerazione vengono utilizzati dalla [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) struttura .
 
 
 ## <a name="requirements"></a>Requisiti

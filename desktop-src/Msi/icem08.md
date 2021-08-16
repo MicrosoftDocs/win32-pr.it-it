@@ -1,27 +1,27 @@
 ---
-description: ICEM08 garantisce che un modulo non escluda un altro modulo da cui dipende.
+description: ICEM08 garantisce che un modulo non escludi un altro modulo da cui dipende.
 ms.assetid: 56d115b4-7410-4db2-a9af-bc6716f3358d
 title: ICEM08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a9767c6748f5a21d83bddb3b5fe93a0a8d7ea67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43f5d0076de382889e5fd3df8a03dddb51c6a73eb5a4f825068f6cd66ad24d07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811011"
 ---
 # <a name="icem08"></a>ICEM08
 
-ICEM08 garantisce che un modulo non escluda un altro modulo da cui dipende.
+ICEM08 garantisce che un modulo non escludi un altro modulo da cui dipende.
 
 ## <a name="result"></a>Risultato
 
-ICEM08 Invia un errore quando un modulo esclude un altro modulo da cui dipende.
+ICEM08 invia un errore quando un modulo esclude un altro modulo da cui dipende.
 
 ## <a name="example"></a>Esempio
 
-ICEM08 invia il messaggio di errore seguente per un modulo contenente le voci di database indicate nell'esempio.
+ICEM08 pubblica il messaggio di errore seguente per un modulo contenente le voci di database mostrate nell'esempio.
 
 ``` syntax
 Error: This module requires module ModuleB.<GUID> (1033v1.0) but also 
@@ -32,9 +32,9 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | RequiredID           | RequiredLanguage | RequiredVersion |
+| ModuleID             | ModuleLanguage | Id obbligatorio           | RequiredLanguage | RequiredVersion |
 |----------------------|----------------|----------------------|------------------|-----------------|
-| Modulo a.<GUID> | 1033           | ModuleB.<GUID> | 1033             | 1.0             |
+| Modulo A.<GUID> | 1033           | ModuloB.<GUID> | 1033             | 1.0             |
 
 
 
@@ -44,21 +44,21 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | ExcludedID           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
+| ModuleID             | ModuleLanguage | ExcludedID           | Lingua esclusa | ExcludedMinVersion | ExcludedMaxVersion |
 |----------------------|----------------|----------------------|------------------|--------------------|--------------------|
-| Modulo a.<GUID> | 1033           | ModuleB.<GUID> | 1033             |                    | 1.0                |
+| Modulo A.<GUID> | 1033           | ModuloB.<GUID> | 1033             |                    | 1.0                |
 
 
 
  
 
-Per correggere l'errore, rimuovere la dipendenza o l'esclusione. Se ModuleB è una dipendenza (RequiredID) di Modulea, non è possibile escluderla, come illustrato nella colonna ExludedID della tabella ModuleExclusion. Se è necessario escludere ModuleB, è necessario rimuovere la dipendenza di Modulea su di essa.
+Per correggere l'errore, rimuovere la dipendenza o l'esclusione. Se ModuleB è una dipendenza (RequiredID) di ModuleA, non è possibile escluderla (come illustrato nella colonna ExludedID della tabella ModuleExclusion). Se è necessario escludere ModuleB, è necessario rimuovere la dipendenza di ModuleA da esso.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio del modulo merge](merge-module-ice-reference.md)
+[Informazioni di riferimento su ICE del modulo merge](merge-module-ice-reference.md)
 </dt> </dl>
 
  

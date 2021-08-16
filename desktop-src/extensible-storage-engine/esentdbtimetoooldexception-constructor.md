@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDbTimeTooOldException'
+description: Altre informazioni sul costruttore EsentDbTimeTooOldException
 title: Costruttore EsentDbTimeTooOldException
 TOCTitle: 'EsentDbTimeTooOldException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDbTimeTooOldException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118779865"
 
 Inizializza una nuova istanza della classe EsentDbTimeTooOldException.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

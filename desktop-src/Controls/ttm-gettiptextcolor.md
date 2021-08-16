@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_GETTIPTEXTCOLOR (COMmctrl. h)
+title: TTM_GETTIPTEXTCOLOR messaggio (Commctrl.h)
 description: Recupera il colore del testo in una finestra della descrizione comando.
 ms.assetid: dede991e-35e6-4bd0-9654-656c96135298
 keywords:
-- Controlli di Windows Message TTM_GETTIPTEXTCOLOR
+- TTM_GETTIPTEXTCOLOR dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a302e72e727fe5eb95a2a39e657dc4dcd05514
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af123827a0a07ab34b7013ef9d4fb751d4f259245105e6df40566f508e828112
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797451"
 ---
-# <a name="ttm_gettiptextcolor-message"></a>\_Messaggio TTM GETTIPTEXTCOLOR
+# <a name="ttm_gettiptextcolor-message"></a>Messaggio TTM \_ GETTIPTEXTCOLOR
 
 Recupera il colore del testo in una finestra della descrizione comando.
 
@@ -37,7 +37,7 @@ Recupera il colore del testo in una finestra della descrizione comando.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **COLORREF** che rappresenta il colore del testo.
+Restituisce un **valore COLORREF** che rappresenta il colore del testo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore **COLORREF** che rappresenta il colore del testo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce un valore **COLORREF** che rappresenta il colore del testo.
 
 <dl> <dt>
 
-[**\_SETTIPTEXTCOLOR TTM**](ttm-settiptextcolor.md)
+[**TTM \_ SETTIPTEXTCOLOR**](ttm-settiptextcolor.md)
 </dt> </dl>
 
  

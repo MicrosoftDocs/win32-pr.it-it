@@ -26,11 +26,11 @@ Etichetta facoltativa in [un'istruzione switch.](switch--sm4---asm-.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione funziona esattamente come il valore predefinito **in** C. Il controllo è valido solo se non è stato aggiunto codice, quindi più case (incluso il valore predefinito **)** possono condividere lo stesso blocco di codice.
+Questa istruzione funziona come impostazione predefinita **in** C. Il falling through è valido solo se non è stato aggiunto codice, quindi più case (incluso il valore predefinito **)** possono condividere lo stesso blocco di codice.
 
 In un **costrutto** switch è consentita una **sola istruzione** predefinita.
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
@@ -44,7 +44,7 @@ Questa istruzione si applica alle fasi di shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli di shader seguenti.
+Questa funzione è supportata nei modelli shader seguenti.
 
 
 
@@ -53,9 +53,9 @@ Questa funzione è supportata nei modelli di shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -65,7 +65,7 @@ Questa funzione è supportata nei modelli di shader seguenti.
 
 <dl> <dt>
 
-[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

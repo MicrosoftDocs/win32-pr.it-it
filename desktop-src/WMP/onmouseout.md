@@ -1,9 +1,9 @@
 ---
-title: onmouseout
-description: Il gestore eventi onmouse gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse sull'elemento.
+title: Onmouseout
+description: Il gestore eventi onmouseout gestisce un evento che si verifica quando l'utente sposta il puntatore fuori dall'elemento.
 ms.assetid: 8d4c5aec-0d4e-4912-a5e6-9aa1cf3e0971
 keywords:
-- Media Player Windows onmouse
+- onmouseout Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 172865ad8a6255ff18d52369058ecb9bdbbeb09a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b14b055d99781423f5a9961ccb49f9b60380289d22ad53ab4d8aab975be2656
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616731"
 ---
-# <a name="onmouseout"></a>onmouseout
+# <a name="onmouseout"></a>Onmouseout
 
-Il gestore eventi **onmouse** gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse sull'elemento.
+Il **gestore eventi onmouseout** gestisce un evento che si verifica quando l'utente sposta il puntatore fuori dall'elemento.
 
 ``` syntax
 onmouseout
@@ -30,7 +30,7 @@ onmouseout
 
 ## <a name="remarks"></a>Commenti
 
-Questo gestore eventi non è applicabile all'elemento **playlist** .
+Questo gestore eventi non è applicabile **all'elemento PLAYLIST.**
 
 ## <a name="requirements"></a>Requisiti
 

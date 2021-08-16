@@ -21,16 +21,16 @@ Questa sezione contiene i criteri dei metadati delle foto per le proprietà di s
 
 | Argomento                                                                                                | Descrizione                                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Criteri dei metadati delle foto system.ApplicationName](-wic-photoprop-system-applicationname.md)<br/> | Criteri dei metadati delle foto per [la proprietà System.ApplicationName.](../properties/props-system-applicationname.md)<br/> |
-| [Criteri dei metadati delle foto di System.Author](-wic-photoprop-system-author.md)<br/>                   | Criteri dei metadati delle foto per [la proprietà System.Author.](../properties/props-system-author.md)<br/>          |
-| [Criteri dei metadati delle foto di System.Comment](-wic-photoprop-system-comment.md)<br/>                 | Criteri dei metadati della foto per [la proprietà System.Comment.](../properties/props-system-comment.md)<br/>         |
-| [Criteri dei metadati delle foto di System.Copyright](-wic-photoprop-system-copyright.md)<br/>             | Criteri dei metadati delle foto per [la proprietà System.Copyright.](../properties/props-system-copyright.md)<br/>       |
-| [Criteri dei metadati delle foto System.DateAcquired](-wic-photoprop-system-dateacquired.md)<br/>       | Criteri dei metadati della foto [per la proprietà System.DateAcquired.](../properties/props-system-dateacquired.md)<br/>    |
-| [Criteri dei metadati delle foto di System.Keywords](-wic-photoprop-system-keywords.md)<br/>               | Criteri dei metadati della foto per [la proprietà System.Keywords.](../properties/props-system-keywords.md)<br/>        |
-| [Criteri dei metadati delle foto di System.Rating](-wic-photoprop-system-rating.md)<br/>                   | Criteri dei metadati della foto per [la proprietà System.Rating.](../properties/props-system-rating.md)<br/>          |
-| [Criteri dei metadati delle foto di System.SimpleRating](-wic-photoprop-system-simplerating.md)<br/>       | Criteri dei metadati delle foto per [la proprietà System.SimpleRating.](../properties/props-system-simplerating.md)<br/>    |
-| [Criteri dei metadati delle foto system.Subject](-wic-photoprop-system-subject.md)<br/>                 | Criteri dei metadati della foto per [la proprietà System.Subject.](../properties/props-system-subject.md)<br/>         |
-| [Criteri dei metadati delle foto di System.Title](-wic-photoprop-system-title.md)<br/>                     | Criteri dei metadati della foto per [la proprietà System.Title.](../properties/props-system-title.md)<br/>           |
+| [Criteri metadati foto System.ApplicationName](-wic-photoprop-system-applicationname.md)<br/> | Criteri dei metadati delle foto per [la proprietà System.ApplicationName.](../properties/props-system-applicationname.md)<br/> |
+| [Criteri metadati foto System.Author](-wic-photoprop-system-author.md)<br/>                   | Criteri dei metadati delle foto per [la proprietà System.Author.](../properties/props-system-author.md)<br/>          |
+| [Criteri metadati foto System.Comment](-wic-photoprop-system-comment.md)<br/>                 | Criteri dei metadati delle foto per [la proprietà System.Comment.](../properties/props-system-comment.md)<br/>         |
+| [Criteri relativi ai metadati delle foto di System.Copyright](-wic-photoprop-system-copyright.md)<br/>             | Criteri dei metadati delle foto per [la proprietà System.Copyright.](../properties/props-system-copyright.md)<br/>       |
+| [Criteri metadati foto System.DateAcquired](-wic-photoprop-system-dateacquired.md)<br/>       | Criteri dei metadati delle foto [per la proprietà System.DateAcquired.](../properties/props-system-dateacquired.md)<br/>    |
+| [Criteri dei metadati foto di System.Keywords](-wic-photoprop-system-keywords.md)<br/>               | Criteri dei metadati delle foto per [la proprietà System.Keywords.](../properties/props-system-keywords.md)<br/>        |
+| [Criteri dei metadati delle foto System.Rating](-wic-photoprop-system-rating.md)<br/>                   | Criteri dei metadati delle foto per [la proprietà System.Rating.](../properties/props-system-rating.md)<br/>          |
+| [System.SimpleRating Photo Metadata Policy](-wic-photoprop-system-simplerating.md)<br/>       | Criteri dei metadati delle foto per [la proprietà System.SimpleRating.](../properties/props-system-simplerating.md)<br/>    |
+| [Criteri di metadati foto System.Subject](-wic-photoprop-system-subject.md)<br/>                 | Criteri dei metadati delle foto per [la proprietà System.Subject.](../properties/props-system-subject.md)<br/>         |
+| [Criteri metadati foto System.Title](-wic-photoprop-system-title.md)<br/>                     | Criteri dei metadati delle foto per [la proprietà System.Title.](../properties/props-system-title.md)<br/>           |
 
 
 

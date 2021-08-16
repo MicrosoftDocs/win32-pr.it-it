@@ -35,13 +35,13 @@ dove
 
 -   dst è il registro di destinazione. Il risultato è un vettore a 3 componenti.
 -   src0 è un registro di origine che rappresenta un vettore a 3 componenti.
--   src1 è un registro di origine che rappresenta una matrice 3x3, che corrisponde al primo di 3 registri consecutivi.
+-   src1 è un registro di origine che rappresenta una matrice 3x3, che corrisponde al primo dei 3 registri consecutivi.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m3x3                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,9 +49,9 @@ dove
 
  
 
-La maschera xyz è necessaria per il registro di destinazione. I modificatori di negazione e swizzle sono consentiti per src0 ma non per src1.
+La maschera xyz è necessaria per il registro di destinazione. I modificatori negate e swizzle sono consentiti per src0 ma non per src1.
 
-Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -62,7 +62,7 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z);
 
 
 
-Il vettore di input si trova nel registro src0. La matrice di input 3x3 si trova nel registro src1 e nei due registri successivi, come illustrato nell'espansione seguente. Viene prodotto un risultato 3D, lasciando inalterato l'altro elemento del registro di destinazione (dest.w).
+Il vettore di input si trova nel registro src0. La matrice 3x3 di input si trova nel registro src1 e nei due registri successivi, come illustrato nell'espansione seguente. Viene prodotto un risultato 3D, lasciando inalterato l'altro elemento del registro di destinazione (dest.w).
 
 Questa operazione viene comunemente usata per trasformare vettori normali durante i calcoli di illuminazione. Questa istruzione viene implementata come coppia di prodotti punto, come illustrato di seguito.
 

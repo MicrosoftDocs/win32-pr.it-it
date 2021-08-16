@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_QUERYSIBLINGS (Prsht. h)
-description: Inviato a una finestra delle proprietà che quindi inoltra il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro PropSheet QuerySiblings.
+title: PSM_QUERYSIBLINGS messaggio (Prsht.h)
+description: Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet QuerySiblings.
 ms.assetid: 96f48847-b7b8-4d6f-8bde-ada915b7c962
 keywords:
-- Controlli di Windows Message PSM_QUERYSIBLINGS
+- PSM_QUERYSIBLINGS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea5943fefa906475e34d1cc7acc7f8a86cd99252
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c270a3c7a667894f7821f6c0c169115846b6ddc2492648f5f9d75a0c85d21d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088651"
 ---
-# <a name="psm_querysiblings-message"></a>\_Messaggio QUERYSIBLINGS di PSM
+# <a name="psm_querysiblings-message"></a>Messaggio \_ QUERYSIBLINGS PSM
 
-Inviato a una finestra delle proprietà che quindi inoltra il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**PropSheet \_ QuerySiblings**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings) .
+Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet QuerySiblings.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings)
 
 ## <a name="parameters"></a>Parametri
 
@@ -57,9 +57,9 @@ Se una pagina restituisce un valore diverso da zero, la finestra delle propriet�
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

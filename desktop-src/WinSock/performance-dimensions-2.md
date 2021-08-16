@@ -1,21 +1,21 @@
 ---
 description: Le prestazioni dell'applicazione variano in base alla prospettiva.
 ms.assetid: 0d65a693-d879-4841-b93a-ad677eb34144
-title: Dimensioni prestazioni
+title: Dimensioni delle prestazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0271a6a405004ac30f9b047a61f9fef7cc83f3e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 023de3074a6a531a0cab60b1e8389dd09b9b73901f1d6550ca524e9f90e8170b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641741"
 ---
-# <a name="performance-dimensions"></a>Dimensioni prestazioni
+# <a name="performance-dimensions"></a>Dimensioni delle prestazioni
 
-Le prestazioni dell'applicazione variano in base alla prospettiva. Per un utente, un'applicazione ideale offrirebbe prestazioni elevate e velocità di risposta. Per un amministratore, un'applicazione ideale utilizzerebbe il minor numero di risorse di rete. Le prestazioni variano anche in base al tipo di applicazione. Le prestazioni di un'applicazione di trasferimento di file bulk potrebbero avere implicazioni diverse rispetto alle prestazioni di un'applicazione transazionale.
+Le prestazioni dell'applicazione variano in base alla prospettiva. Per un utente, un'applicazione ideale offre prestazioni elevate e velocità di risposta elevate. Per un amministratore, un'applicazione ideale usa la quantità minima di risorse di rete. Le prestazioni variano anche in base al tipo di applicazione. Le prestazioni per un'applicazione di trasferimento di file bulk potrebbero avere implicazioni diverse rispetto alle prestazioni per un'applicazione transazionale.
 
-Le sezioni seguenti si riferiscono alle dimensioni delle prestazioni e ai tipi di applicazioni diversi e in che modo gli ambienti di rete influiscono sulle
+Le sezioni seguenti illustrano le diverse dimensioni delle prestazioni e i tipi di applicazione e il modo in cui gli ambienti di rete influiscono sulle prestazioni.
 
 -   [Esigenze di prestazioni: utenti e amministratori](performance-needs-users-and-administrators-2.md)
 -   [Applicazioni transazionali e di streaming](transactional-versus-streaming-applications-2.md)
@@ -25,7 +25,7 @@ Le sezioni seguenti si riferiscono alle dimensioni delle prestazioni e ai tipi d
 
 <dl> <dt>
 
-[Applicazioni Windows Sockets a prestazioni elevate](high-performance-windows-sockets-applications-2.md)
+[Applicazioni socket Windows ad alte prestazioni](high-performance-windows-sockets-applications-2.md)
 </dt> </dl>
 
  

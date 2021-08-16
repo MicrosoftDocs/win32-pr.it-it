@@ -1,9 +1,9 @@
 ---
-title: Elemento Ccn (sendEmailType)
+title: Elemento Bcc (sendEmailType)
 description: Contiene gli indirizzi di posta elettronica utilizzati nella riga Ccn di un messaggio di posta elettronica.
 ms.assetid: c80407d0-3b3f-4efe-91de-7a3a7abc996f
 keywords:
-- Utilità di pianificazione elemento Ccn
+- Elemento Bcc Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f262b8f5d74018a4622f915def85df5e16108cdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1409d50a0317758534724b9e2c3a9796c4dd0cb40e666f58fc65ca0771da9762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659041"
 ---
-# <a name="bcc-sendemailtype-element"></a>Elemento Ccn (sendEmailType)
+# <a name="bcc-sendemailtype-element"></a>Elemento Bcc (sendEmailType)
 
 Contiene gli indirizzi di posta elettronica utilizzati nella riga Ccn di un messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene gli indirizzi di posta elettronica utilizzati nella riga Ccn di un mess
  />
 ```
 
-L'elemento **Ccn** è definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento Bcc** è definito dal tipo complesso [**sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **Ccn** è definito dal tipo complesso [**sendEmailType**](taskschedu
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**proprietà Ccn di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc).
+Per lo sviluppo in C++, vedere [**Proprietà Bcc di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc)
 
-Per lo sviluppo di script, vedere [**EmailAction. Ccn**](emailaction-bcc.md).
+Per lo sviluppo di script, [**vedere EmailAction.Bcc.**](emailaction-bcc.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**EmailAction. Ccn**](emailaction-bcc.md).
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

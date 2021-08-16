@@ -1,7 +1,7 @@
 ---
 description: Questa tabella esegue il mapping dei codici FVF a una struttura D3DVERTEXELEMENT9.
 ms.assetid: de865481-2a08-4d25-967c-8e68b7affe8d
-title: Mapping di codici FVF a una dichiarazione Direct3D 9 (Direct3D 9)
+title: Mapping dei codici FVF a una dichiarazione Direct3D 9 (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ff8ef4d5e8e29c4c7f6af8d82b650b4898c57d900b92b8dd45ca2368bb9eacce
@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118799077"
 ---
-# <a name="mapping-fvf-codes-to-a-direct3d-9-declaration-direct3d-9"></a>Mapping di codici FVF a una dichiarazione Direct3D 9 (Direct3D 9)
+# <a name="mapping-fvf-codes-to-a-direct3d-9-declaration-direct3d-9"></a>Mapping dei codici FVF a una dichiarazione Direct3D 9 (Direct3D 9)
 
 Questa tabella esegue il mapping dei codici FVF a [**una struttura D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 
 
-| FVF                                                   | Tipo di dati                                                           | Uso                                                                         | Indice di utilizzo |
+| FVF                                                   | Tipo di dati                                                           | Utilizzo                                                                         | Indice di utilizzo |
 |-------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------|
 | D3DFVF \_ XYZ                                           | D3DDECLTYPE \_ FLOAT3                                                 | POSIZIONE D3DDECLUSAGE \_                                                        | 0           |
 | D3DFVF \_ XYZRHW                                        | D3DDECLTYPE \_ FLOAT4                                                 | D3DDECLUSAGE \_ POSITIONT                                                       | 0           |
@@ -28,10 +28,10 @@ Questa tabella esegue il mapping dei codici FVF a [**una struttura D3DVERTEXELEM
 | D3DFVF \_ XYZBn (n=1..4)                                | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOATn                            | POSIZIONE D3DDECLUSAGE, \_ D3DDECLUSAGE \_ BLENDWEIGHT                             | 0           |
 | D3DFVF \_ XYZBn (n=1..4) e D3DFVF \_ LASTBETA \_ UBYTE4   | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT(n-1), D3DDECLTYPE \_ UBYTE4   | POSIZIONE D3DDECLUSAGE, \_ D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
 | D3DFVF \_ XYZBn (n=1..4) e D3DFVF \_ LASTBETA \_ D3DCOLOR | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT(n-1), D3DDECLTYPE \_ D3DCOLOR | POSIZIONE D3DDECLUSAGE, \_ D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ NORMAL                                        | D3DDECLTYPE \_ FLOAT3                                                 | NORMALE D3DDECLUSAGE \_                                                          | 0           |
+| D3DFVF \_ NORMAL                                        | D3DDECLTYPE \_ FLOAT3                                                 | D3DDECLUSAGE \_ NORMAL                                                          | 0           |
 | D3DFVF \_ PSIZE                                         | D3DDECLTYPE \_ FLOAT1                                                 | D3DDECLUSAGE \_ PSIZE                                                           | 0           |
 | D3DFVF \_ DIFFUSE                                       | D3DDECLTYPE \_ D3DCOLOR                                               | COLORE D3DDECLUSAGE \_                                                           | 0           |
-| D3DFVF \_ SPECULAR                                      | D3DDECLTYPE \_ D3DCOLOR                                               | COLORE D3DDECLUSAGE \_                                                           | 1           |
+| SPECULARE D3DFVF \_                                      | D3DDECLTYPE \_ D3DCOLOR                                               | COLORE D3DDECLUSAGE \_                                                           | 1           |
 | D3DFVF \_ TEXCOORDSIZEm(n)                              | D3DDECLTYPE \_ FLOATm                                                 | D3DDECLUSAGE \_ TEXCOORD                                                        | n           |
 
 
@@ -40,43 +40,43 @@ Questa tabella esegue il mapping dei codici FVF a [**una struttura D3DVERTEXELEM
 
 ## <a name="vertex-declarations-with-d3ddeclusage_positiont"></a>Dichiarazioni di vertici con D3DDECLUSAGE \_ POSITIONT
 
-La presenza di un elemento vertice con (D3DUSAGE POSITIONT, 0) viene usata per indicare al dispositivo che i dati del vertice in arrivo sono già stati in elaborazione dei vertici (ad esempio un FVF con set di \_ bit D3DFVF \_ XYZRHW). In fase di disegno, se la dichiarazione attualmente impostata ha un elemento con semantica (D3DUSAGE POSITIONT, 0), l'intera elaborazione dei vertici viene ignorata (come se fosse stato impostato un FVF con il \_ bit D3DFVF \_ XYZRHW).
+La presenza di un elemento vertice con (D3DUSAGE POSITIONT, 0) viene usata per indicare al dispositivo che i dati dei vertici in arrivo sono già stati tramite l'elaborazione dei vertici (ad esempio un FVF con set di \_ bit D3DFVF \_ XYZRHW). In fase di disegno, se la dichiarazione attualmente impostata include un elemento con semantica (D3DUSAGE POSITIONT, 0), l'intera elaborazione dei vertici viene ignorata (proprio come se fosse stato impostato un \_ FVF con bit D3DFVF \_ XYZRHW).
 
-Esistono alcune restrizioni sulle dichiarazioni dei vertici con (D3DDECLUSAGE \_ POSITIONT, 0):
+Esistono alcune restrizioni sulle dichiarazioni di vertici con (D3DDECLUSAGE \_ POSITIONT, 0):
 
 -   In tali dichiarazioni è possibile usare solo il flusso zero.
--   Gli elementi vertice devono essere ordinati in base all'offset del flusso crescente.
+-   Gli elementi vertice devono essere ordinati aumentando l'offset del flusso.
 -   L'offset del flusso deve essere allineato con DWORD.
--   La stessa coppia (Utilizzo, Indice di utilizzo) deve essere elencata una sola volta.
--   È possibile usare solo il metodo DEFAULT D3DDECLMETHOD. \_
+-   La stessa coppia (Usage, Usage Index) deve essere elencata una sola volta.
+-   È possibile usare solo il metodo D3DDECLMETHOD \_ DEFAULT.
 -   Altri elementi vertice non possono avere la semantica (D3DDECLUSAGE \_ POSITION, 0).
 
-Esistono inoltre alcune restrizioni relative a tale dichiarazione relative alla versione del driver di dispositivo. Queste restrizioni sono effettive perché Direct3D invia tali dichiarazioni direttamente al driver senza eseguire alcuna conversione.
+Esistono inoltre alcune restrizioni su tale dichiarazione correlate alla versione del driver di dispositivo. Queste restrizioni sono effettive perché Direct3D invia tali dichiarazioni direttamente al driver senza eseguire alcuna conversione.
 
 ## <a name="vertex-declarations-without-d3ddeclusage_positiont"></a>Dichiarazioni di vertici senza D3DDECLUSAGE \_ POSITIONT
 
-Il runtime convalida la creazione di dichiarazioni. Di seguito sono riportate le regole generali per le dichiarazioni che sono legali.
+Il runtime convalida la creazione di dichiarazioni. Di seguito sono riportate le regole generali per le dichiarazioni legali.
 
 -   Tutti gli elementi vertice per un flusso devono essere consecutivi e ordinati in base all'offset.
 -   L'offset del flusso deve essere allineato con DWORD.
--   La stessa coppia (Utilizzo, Indice di utilizzo) deve essere elencata una sola volta.
+-   La stessa coppia (Usage, Usage Index) deve essere elencata una sola volta.
 -   Se l'opzione D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET è impostata,
     -   Più elementi vertice possono condividere lo stesso offset in un flusso.
     -   Gli elementi vertice possono essere tutti di tipi diversi, che possono avere dimensioni diverse.
-    -   Gli elementi vertice possono sovrapporsi in modo arbitrario. Ad esempio, un elemento può iniziare in una posizione di un flusso che è, contemporaneamente, al centro di un altro elemento.
-    -   Gli elementi vertice possono avere l'offset del flusso in qualsiasi ordine.
+    -   Gli elementi vertice possono sovrapporsi in modo arbitrario. Ad esempio, un elemento può iniziare da una posizione di un flusso che si trova, contemporaneamente, al centro di un altro elemento.
+    -   Agli elementi vertice è consentito l'offset del flusso in qualsiasi ordine.
 -   Il numero di elementi vertice non può essere maggiore di 64.
 -   UsageIndex deve essere compreso nell'intervallo \[ 0-15. \]
 -   La dichiarazione, usata con l'API DrawPrimitive, non deve avere elementi vertice diversi da D3DDECLMETHOD \_ DEFAULT, D3DDECLMETHOD \_ LOOKUPPRESAMPLED o D3DDECLMETHOD \_ LOOKUP.
--   La dichiarazione, che contiene D3DDECLMETHOD LOOKUP o LOOKUPPRESAMPLED, deve essere usata solo con la \_ pipeline dei vertici programmabili.
+-   La dichiarazione , che contiene D3DDECLMETHOD LOOKUP o LOOKUPPRESAMPLED, deve essere usata solo con la \_ pipeline di vertici programmabili.
 -   La dichiarazione, usata con l'API DrawRectPatch/DrawTriPatch, non può avere elementi vertice con D3DDECLMETHOD \_ LOOKUPPRESAMPLED o D3DDECLMETHOD \_ LOOKUP.
 -   La dichiarazione deve avere un solo elemento con il metodo D3DDECLMETHOD \_ LOOKUP o D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
--   La dichiarazione con D3DDECLMETHOD LOOKUP o D3DDECLMETHOD LOOKUPPRESAMPLED non deve avere elementi diversi da \_ \_ D3DDECLMETHOD DEFAULT, perché il mapping dello spostamento viene eseguito solo per le \_ patch N.
+-   La dichiarazione con D3DDECLMETHOD LOOKUP o D3DDECLMETHOD LOOKUPPRESAMPLED non deve avere elementi diversi da \_ \_ D3DDECLMETHOD DEFAULT, perché il mapping dello spostamento viene eseguito solo per \_ le patch N.
 -   Gli elementi vertice con D3DDECLMETHOD LOOKUP o D3DDECLMETHOD LOOKUPPRESAMPLED possono essere usati solo con la \_ \_ semantica (D3DDECLUSAGE \_ SAMPLE, n) e viceversa.
 -   Se un elemento vertice con metodo D3DDECLMETHOD LOOKUP ha un indice di flusso e un offset di un elemento vertice già esistente, questo elemento vertice deve \_ avere lo stesso tipo di dati.
 -   Un elemento vertice con il metodo D3DDECLMETHOD LOOKUP deve avere il tipo di dati \_ D3DDECLTYPE \_ FLOAT2/3/4
 -   Gli elementi vertice con tipi D3DDECLMETHOD \_ CROSSUV, D3DDECLMETHOD PARTIALU e \_ D3DDECLMETHOD PARTIALV devono avere un offset di un elemento vertice con un tipo di dati \_ compatibile.
--   Un elemento vertice con il metodo D3DDECLMETHOD UV o \_ D3DDECLMETHOD LOOKUPPRESAMPLED deve avere il tipo \_ D3DDECLTYPE UNUSED, l'indice del flusso zero e l'offset del flusso \_ zero.
+-   Un elemento vertice con il metodo D3DDECLMETHOD UV o \_ D3DDECLMETHOD LOOKUPPRESAMPLED deve avere il tipo \_ D3DDECLTYPE UNUSED, l'indice di flusso zero e l'offset del flusso \_ zero.
 -   Le dichiarazioni con metodi D3DDECLMETHOD \_ UV, D3DDECLMETHOD PARTIALU e \_ D3DDECLMETHOD PARTIALV possono essere usate solo con \_ DrawRectPatch.
 -   L'utilizzo di D3DDECLUSAGE TESSFACTOR deve essere usato solo con il tipo di dati \_ D3DDECLTYPE FLOAT1 e l'indice \_ di utilizzo 0.
 -   Quando si usa una dichiarazione per lo schema a squame (DrawRectPatch, DrawTriPatch, N patch), il tipo di dati deve essere minore o uguale a D3DDECLTYPE \_ SHORT4.
@@ -131,7 +131,7 @@ Quando una dichiarazione viene usata con l'elaborazione dei vertici hardware in 
 -   Il tipo di dati deve essere minore o uguale a D3DDECLTYPE \_ SHORT4.
 -   Sono consentiti solo i metodi seguenti: D3DDECLMETHOD \_ DEFAULT, D3DDECLMETHOD \_ CROSSUV e D3DDECLMETHOD \_ UV
 -   Il mapping tra una dichiarazione Direct3D 9 e una dichiarazione [Direct3D 8 (Direct3D 9)](mapping-between-a-directx-9-declaration-and-directx-8.md) indica quale semantica Direct3D 9 può essere convertita in dichiarazione di tipo DirectX 8. Usage e UsageIndex vengono convertiti in un valore di registro.
--   Se sono presenti n elementi vertice in una dichiarazione e 0 - m (m < n) esegue il mapping a un FVF (elementi descritti in Mapping tra una dichiarazione Direct3D e i codici [FVF (Direct3D 9),](mapping-between-a-directx-9-declaration-and-fvf-codes.md)ma m + 1 non esegue questa operazione:
+-   Se sono presenti n elementi vertice in una dichiarazione e 0 - m (m < n) esegue il mapping a un FVF (elementi descritti in Mapping tra una dichiarazione Direct3D e codici [FVF (Direct3D 9),](mapping-between-a-directx-9-declaration-and-fvf-codes.md)ma m + 1 no, allora:
     -   Se uno degli elementi m + 2 fino a n - 1 elementi vertice è mappato a FVF/dx8decl, la dichiarazione non è valida.
     -   Gli elementi da 0 a m vengono convertiti (dal runtime per i driver DirectX 8 e versioni precedenti e dai driver Direct3D 9) usando il mapping tra una dichiarazione Direct3D e i codici [FVF (Direct3D 9),](mapping-between-a-directx-9-declaration-and-fvf-codes.md)m + 1, m + 2 fino a n - 1 vengono mappati a texcoord(k) contigui, texcoord (k+1), a partire da qualsiasi texcoord negli elementi 0 - m.
     -   Si presuppone che il tipo di dati in un texcoord mappato sia float 1234 sostituendo il tipo di dati contenuto nell'elemento corrente (ma con \[ \] le stesse dimensioni). Pertanto, il tipo di dati esistente può essere un elemento che non è in Mapping tra una dichiarazione Direct3D e i codici [FVF (Direct3D 9).](mapping-between-a-directx-9-declaration-and-fvf-codes.md)

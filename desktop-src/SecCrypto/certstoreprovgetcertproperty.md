@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 50de9a73438e2755e002570f921d15e6086a4b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d338c94c4e9655c125b0f70e3f2e8dfa732316a970c74c26e4a7fbced22671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769926"
 ---
 # <a name="certstoreprovgetcertproperty-callback-function"></a>Funzione di callback CertStoreProvGetCertProperty
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvGetCertProperty(
 
 <dl> <dt>
 
-*hStoreProv* \[ in\]
+*hStoreProv* \[ Pollici\]
 </dt> <dd>
 
-Handle **HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
+**Handle HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCertContext* \[ in\]
+*pCertContext* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**del \_ contesto del certificato**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) .
+Puntatore a una [**struttura CERT \_ CONTEXT.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*dwPropId* \[ in\]
+*dwPropId* \[ Pollici\]
 </dt> <dd>
 
 Indica un identificatore di proprietà.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tutti i valori di flag necessari.
 
 </dd> <dt>
 
-*pvData* \[ out\]
+*pvData* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che contiene il puntatore a una struttura [**del \_ contesto del certificato**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) che deve essere restituita dalla funzione. Può essere impostato su **null** in una prima chiamata alla funzione per ottenere il valore di *pcbData* prima di allocare memoria per il buffer.
+Puntatore a un buffer per contenere il puntatore a una [**struttura CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) che deve essere restituita dalla funzione. Può essere impostato su **NULL** in una prima chiamata alla funzione per ottenere il valore *di pcbData* prima di allocare memoria per il buffer.
 
 </dd> <dt>
 
-*pcbData* \[ in uscita\]
+*pcbData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** che indica la lunghezza del buffer *pvData* .
+Puntatore a **un valore DWORD** che indica la lunghezza del buffer *pvData.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo o **false** se l'operazione ha esito negativo.
+Restituisce **TRUE** se la funzione ha esito positivo o **FALSE** se ha esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 
@@ -104,7 +104,7 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 
 <dl> <dt>
 
-[**contesto del certificato \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTESTO \_ CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

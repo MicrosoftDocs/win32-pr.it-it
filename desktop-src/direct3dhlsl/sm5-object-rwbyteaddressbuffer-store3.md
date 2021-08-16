@@ -3,7 +3,7 @@ title: Funzione RWByteAddressBuffer::Store3
 description: Imposta tre valori.
 ms.assetid: eaf12b5a-c9c6-413a-9646-3d14e7825460
 keywords:
-- HLSL della funzione Store3
+- Funzione Store3 HLSL
 topic_type:
 - apiref
 api_name:

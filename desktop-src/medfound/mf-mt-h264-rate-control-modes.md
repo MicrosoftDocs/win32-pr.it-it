@@ -1,19 +1,19 @@
 ---
-description: Specifica la modalità di controllo della frequenza per un flusso video H. 264.
+description: Specifica la modalità di controllo della frequenza per un flusso video H.264.
 ms.assetid: EA8EFEFA-9292-4D7B-BF5D-DE5239BB1D2C
-title: Attributo MF_MT_H264_RATE_CONTROL_MODES (Mfapi. h)
+title: MF_MT_H264_RATE_CONTROL_MODES attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e3fc19070cd3b45aa25a1307a216f611dce1fd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d34fac6f047b8454ea6ddd79dfd26659fa7751fd1a6a14e01c7ea9457a5f7dc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104437"
 ---
-# <a name="mf_mt_h264_rate_control_modes-attribute"></a>\_ \_ \_ \_ Attributo modalità di controllo della velocità MF mt H264 \_
+# <a name="mf_mt_h264_rate_control_modes-attribute"></a>Attributo MF \_ MT \_ H264 \_ RATE CONTROL \_ \_ MODES
 
-Specifica la modalità di controllo della frequenza per un flusso video H. 264.
+Specifica la modalità di controllo della frequenza per un flusso video H.264.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica la modalità di controllo della frequenza per un flusso video H. 264.
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,7 +31,7 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai tipi di supporto per i flussi H. 264 trasmessi tramite USB. Il valore corrisponde al campo **bmRateControlModes** nel controllo probe/commit 1,2 H. 264.
+Questo attributo si applica ai tipi di supporti per i flussi H.264 trasmessi tramite USB. Il valore corrisponde al **campo bmRateControlModes** nel controllo probe/commit UVC 1.2 H.264.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ Questo attributo si applica ai tipi di supporto per i flussi H. 264 trasmessi tr
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Questo attributo si applica ai tipi di supporto per i flussi H. 264 trasmessi tr
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

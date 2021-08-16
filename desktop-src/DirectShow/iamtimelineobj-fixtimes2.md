@@ -1,5 +1,5 @@
 ---
-description: Il metodo FixTimes2 arrotonda gli orari di inizio e di arresto specificati ai limiti del frame più vicini, come definito dall'impostazione della frequenza fotogrammi del gruppo padre. Questo metodo equivale a IAMTimelineObj::FixTimes, ma accetta valori REFTIME.
+description: Il metodo FixTimes2 arrotonda gli orari di inizio e di arresto specificati ai limiti di frame più vicini, come definito dall'impostazione della frequenza fotogrammi del gruppo padre. Questo metodo equivale a IAMTimelineObj::FixTimes, ma accetta valori REFTIME.
 ms.assetid: bdb3d999-2c91-4108-9286-c6e1f3362c09
 title: Metodo IAMTimelineObj::FixTimes2 (Qedit.h)
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.locfileid: "118400906"
 # <a name="iamtimelineobjfixtimes2-method"></a>Metodo IAMTimelineObj::FixTimes2
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -72,7 +72,7 @@ Restituisce S \_ OK in caso di esito positivo oppure E \_ NOTINTREE se l'oggetto
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

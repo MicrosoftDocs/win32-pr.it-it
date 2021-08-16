@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Has-Instantiated-NCs
-description: Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli attributi esistenti hasMasterNCs e hasPartialReplicaNCs. Che deve essere usato da KCC durante la configurazione dei partner di replica.
+description: Le informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli attributi esistenti hannoMasterNCs e hasPartialReplicaNCs. Da usare da KCC durante la configurazione dei partner di replica.
 ms.assetid: 00dda441-e382-4fb2-b735-ae547901c11f
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-DS-Has-Instantiated-NCs Schema di ACTIVE Directory
+- Schema AD dell'attributo ms-DS-Has-Instantiated-NCs
 - Schema AD dell'attributo msDS-HasInstantiatedNCs
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "119804052"
 ---
 # <a name="ms-ds-has-instantiated-ncs-attribute"></a>Attributo ms-DS-Has-Instantiated-NCs
 
-Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli attributi esistenti hasMasterNCs e hasPartialReplicaNCs. Che deve essere usato da KCC durante la configurazione dei partner di replica.
+Le informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli attributi esistenti hannoMasterNCs e hasPartialReplicaNCs. Da usare da KCC durante la configurazione dei partner di replica.
 
 
 
@@ -32,8 +32,8 @@ Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli a
 | CN                | ms-DS-Has-Instantiated-NCs                                                                                                                                                                                  |
 | Ldap-Display-Name | msDS-HasInstantiatedNCs                                                                                                                                                                                     |
 | Dimensione              | 4 byte                                                                                                                                                                                                     |
-| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                                                                                                                                                                            |
-| Frequenza di aggiornamento  | Circa il doppio della frequenza di hasMasterNCs/hasPartialReplicaNCs. Questi attributi esistenti vengono aggiornati solo quando il controller di dominio aggiunge o rimuove una partizione (ad esempio, quando si cambia da controller di dominio a GC o viceversa). |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                                                                                                                                                                            |
+| Frequenza di aggiornamento  | Circa il doppio della frequenza di hasMasterNCs/hasPartialReplicaNCs. Questi attributi esistenti vengono aggiornati solo quando il controller di dominio aggiunge o rimuove una partizione ,ad esempio quando si cambia da controller di dominio a GC o viceversa. |
 | Attribute-Id      | 1.2.840.113556.1.4.1709                                                                                                                                                                                     |
 | System-Id-Guid    | 11e9a5bc-4517-4049-af9c-51554fb0fc09                                                                                                                                                                        |
 | Sintassi            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                                                                                             |
@@ -58,7 +58,7 @@ Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli a
 | ID collegamento                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Vero                                     |
-| A valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                             |
@@ -79,7 +79,7 @@ Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli a
 | ID collegamento                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Vero                                     |
-| A valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                             |
@@ -100,7 +100,7 @@ Informazioni sullo stato della replica DS, analoghe a (e a un superset di) gli a
 | ID collegamento                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Vero                                     |
-| A valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                             |

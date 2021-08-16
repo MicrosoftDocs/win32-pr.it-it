@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetProperties recupera le proprietà dell'esempio. Questo metodo implementa il metodo IMediaSample2:: GetProperties."
+description: Il metodo GetProperties recupera le proprietà dell'esempio. Questo metodo implementa il metodo IMediaSample2::GetProperties.
 ms.assetid: c2a6d611-9c17-41fb-bb6d-f5b17f1c9966
-title: Metodo CMediaSample. GetProperties (Amfilter. h)
+title: Metodo CMediaSample.GetProperties (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 06ee1022f298e2f5167d348777b33fc2f1703eef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 856da0c73f3dd93d0c660f55aa0a9de35d87ab1b270df2179d7ad0b520e6d0a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074025"
 ---
-# <a name="cmediasamplegetproperties-method"></a>Metodo CMediaSample. GetProperties
+# <a name="cmediasamplegetproperties-method"></a>Metodo CMediaSample.GetProperties
 
-Il `GetProperties` metodo recupera le proprietà dell'esempio. Questo metodo implementa il metodo [**IMediaSample2:: GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) .
+Il `GetProperties` metodo recupera le proprietà dell'esempio. Questo metodo implementa il [**metodo IMediaSample2::GetProperties.**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ HRESULT GetProperties(
 *cbProperties* 
 </dt> <dd>
 
-Lunghezza dei dati della proprietà da recuperare, in byte.
+Lunghezza in byte dei dati della proprietà da recuperare.
 
 </dd> <dt>
 
-*pbProperties* 
+*proprietà pb* 
 </dt> <dd>
 
 Puntatore a un buffer di dimensioni *cbProperties*.
@@ -59,14 +59,14 @@ Puntatore a un buffer di dimensioni *cbProperties*.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Esito positivo.<br/>                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Argomento puntatore **null** .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione completata.<br/>                   |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Argomento del puntatore **NULL.**<br/> |
 
 
 
@@ -78,8 +78,8 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

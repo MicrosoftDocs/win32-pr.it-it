@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. Flash.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.Flash.
 ms.assetid: 24b400a4-f4c7-4b59-a9e3-8a20144cd52e
-title: Criteri per i metadati delle foto di System. Photo. Flash
+title: Criteri dei metadati delle foto System.Photo.Flash
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0302e0f310d2f9a6a4390b0d4856578cc2f43e93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba32a7b4dfcde564f6b0c0c9e175aa56786e1324080264c7c928398fe97e6a34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811731"
 ---
-# <a name="systemphotoflash-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. Flash
+# <a name="systemphotoflash-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.Flash
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. Flash](../properties/props-system-photo-exposuretime.md) .
+Criteri dei metadati delle foto per [la proprietà System.Photo.Flash.](../properties/props-system-photo-exposuretime.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ Flash
 
@@ -27,32 +27,32 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-VT \_ Ui1 (se lo schema di origine è XMP) o VT \_ UI2 (se lo schema di origine è EXIF)
+VT \_ UI1 (se lo schema di origine era XMP) o VT \_ UI2 (se lo schema di origine era EXIF)
 
 \\lang1036
 
 ### <a name="input-type"></a>Tipo di input
 
-VT \_ Ui1, VTUI2, VT \_ UI4
+VT \_ UI1, VTUI2, VT \_ UI4
 
 \\lang1033
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                             | Formato disco |
 |-------|----------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 37385}    | ushort      |
-| 2     | /XMP/ <xmpstruct> EXIF: Flash |             |
+| 1     | /app1/ifd/exif/{ushort=37385}    | ushort      |
+| 2     | /xmp/ <xmpstruct> exif:Flash |             |
 
 
 
@@ -64,8 +64,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                             | Formato disco |
 |-------|----------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 37385}    | ushort      |
-| 2     | /XMP/ <xmpstruct> EXIF: Flash |             |
+| 1     | /app1/ifd/exif/{ushort=37385}    | ushort      |
+| 2     | /xmp/ <xmpstruct> exif:Flash |             |
 
 
 
@@ -77,8 +77,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                             |
 |-------|----------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 37385}    |
-| 2     | /XMP/ <xmpstruct> EXIF: Flash |
+| 1     | /app1/ifd/exif/{ushort=37385}    |
+| 2     | /xmp/ <xmpstruct> exif:flash |
 
 
 
@@ -86,14 +86,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                 | Formato disco |
 |-------|--------------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 37385}             | ushort      |
-| 2     | /IFD/XMP/ <xmpstruct> EXIF: Flash |             |
+| 1     | /ifd/exif/{ushort=37385}             | ushort      |
+| 2     | /ifd/xmp/ <xmpstruct> exif:Flash |             |
 
 
 
@@ -105,8 +105,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                 | Formato disco |
 |-------|--------------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 37385}             | ushort      |
-| 2     | /IFD/XMP/ <xmpstruct> EXIF: Flash |             |
+| 1     | /ifd/exif/{ushort=37385}             | ushort      |
+| 2     | /ifd/xmp/ <xmpstruct> exif:Flash |             |
 
 
 
@@ -118,8 +118,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                 |
 |-------|--------------------------------------|
-| 1     | /IFD/EXIF/{ushort = 37385}             |
-| 2     | /IFD/XMP/ <xmpstruct> EXIF: Flash |
+| 1     | /ifd/exif/{ushort=37385}             |
+| 2     | /ifd/xmp/ <xmpstruct> exif:flash |
 
 
 
@@ -131,7 +131,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. Flash](../properties/props-system-photo-exposuretime.md)
+[System.Photo.Flash](../properties/props-system-photo-exposuretime.md)
 </dt> </dl>
 
  

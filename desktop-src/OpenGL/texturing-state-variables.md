@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff468c701100cc598a519ed3aa290913016a559e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 7393fc6e700b028ba3783e5c78d8175e0c3fba4937bf3830d5cae8897aa0d4db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776581"
 ---
 # <a name="texturing-state-variables"></a>Texturing State Variables
 
@@ -25,7 +25,7 @@ ms.locfileid: "107908649"
 
 | Proprietà | Valore |
 |------------------|-------------------------------------------------------|
-| Descrizione:     | True se *x* - Texturing D abilitato (*x* è 1-D o 2-D) |
+| Descrizione:     | True se *x* - D texturing abilitato (*x* è 1-D o 2-D) |
 | Gruppo di attributi: | trama/abilitazione                                        |
 | Valore iniziale:   | GL \_ FALSE                                             |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md)                    |
@@ -60,11 +60,11 @@ ms.locfileid: "107908649"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>ALTEZZA TRAMA GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>ALTEZZA \_ TRAMA \_ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------|
-| Descrizione:     | *x* - Altezza dell'immagine della trama D *i*                      |
+| Descrizione:     | *x* - Altezza dell'immagine della trama *D i*                      |
 | Gruppo di attributi: |                                                          |
 | Valore iniziale:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -73,11 +73,11 @@ ms.locfileid: "107908649"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>BORDO DELLA TRAMA GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>BORDO TRAMA GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------|
-| Descrizione:     | *x* - Bordo dell'immagine della trama D *i*                      |
+| Descrizione:     | *x* - D texture image *i* 's border                      |
 | Gruppo di attributi: |                                                          |
 | Valore iniziale:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -194,7 +194,7 @@ ms.locfileid: "107908649"
 
 | Proprietà | Valore |
 |------------------|--------------------------------------|
-| Descrizione:     | Coefficienti delle equazioni del piano texgen   |
+| Descrizione:     | Coefficienti delle equazioni del piano Texgen   |
 | Gruppo di attributi: | trama                              |
 | Valore iniziale:   |                                      |
 | Comando Get:     | [**glGetTexGenfv**](glgettexgen.md) |

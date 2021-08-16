@@ -1,5 +1,5 @@
 ---
-description: 'Nomi delle persone nel campo Cc: .'
+description: Nomi delle persone nel campo Cc:.
 ms.assetid: a9675268-7006-4a6a-9a7a-68541f43311b
 title: System.Message.CcName
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118724679"
 ---
 # <a name="systemmessageccname"></a>System.Message.CcName
 
-Nomi delle persone nel campo Cc: .
+Nomi delle persone nel campo Cc:.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

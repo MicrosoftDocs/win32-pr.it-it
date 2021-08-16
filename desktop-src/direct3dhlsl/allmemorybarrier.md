@@ -1,6 +1,6 @@
 ---
-title: AllMemoryBarrier (funzione)
-description: Blocca l'esecuzione di tutti i thread in un gruppo fino a quando tutti gli accessi alla memoria non sono stati completati.
+title: Funzione AllMemoryBarrier
+description: Blocca l'esecuzione di tutti i thread in un gruppo fino al completamento di tutti gli accessi alla memoria.
 ms.assetid: 63593de6-7b92-4f29-bcd9-21c69b9defcb
 keywords:
 - Funzione AllMemoryBarrier HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3252389da64b74e07853069c71315b290a2ba6d5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4fc5d22c36d67aa0e8df8352ba8fa6f2d579ddabd4825e6508499420a56bd0ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104398011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626751"
 ---
-# <a name="allmemorybarrier-function"></a>AllMemoryBarrier (funzione)
+# <a name="allmemorybarrier-function"></a>Funzione AllMemoryBarrier
 
-Blocca l'esecuzione di tutti i thread in un gruppo fino a quando tutti gli accessi alla memoria non sono stati completati.
+Blocca l'esecuzione di tutti i thread in un gruppo fino al completamento di tutti gli accessi alla memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,33 +40,33 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Una barriera di memoria garantisce il completamento delle operazioni di memoria in attesa. I thread sono sincronizzati alle barriere GroupSync. Questo potrebbe bloccare un thread o thread se sono in corso operazioni di memoria.
+Una barriera di memoria garantisce il completamento delle operazioni di memoria in sospeso. I thread vengono sincronizzati in corrispondenza delle barriere GroupSync. Ciò può bloccare un thread o thread se sono in corso operazioni di memoria.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -75,12 +75,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

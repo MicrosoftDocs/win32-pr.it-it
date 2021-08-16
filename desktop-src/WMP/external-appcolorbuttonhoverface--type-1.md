@@ -1,9 +1,9 @@
 ---
-title: External. appColorButtonHoverFace (tipo 1)
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. appColorButtonHoverFace (tipo 1)
+title: External.appColorButtonHoverFace (tipo 1)
+description: Nota In questo argomento vengono descritte le funzionalità progettate per l'uso da parte dei negozi online. | External.appColorButtonHoverFace (tipo 1)
 ms.assetid: b13643ee-cb0f-4de1-9337-c7affa3e93d4
 keywords:
-- External. appColorButtonHoverFace (tipo 1) Windows Media Player
+- External.appColorButtonHoverFace (tipo 1) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d965875b4818e0674c118ff52a32b8da5252515
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 400a526fa82ed1a4009482e5cfa1683b2d56fb807044be2fbd8225c41d8c1437
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649951"
 ---
-# <a name="externalappcolorbuttonhoverface-type-1"></a>External. appColorButtonHoverFace (tipo 1)
+# <a name="externalappcolorbuttonhoverface-type-1"></a>External.appColorButtonHoverFace (tipo 1)
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-La proprietà **appColorButtonHoverFace** Recupera il colore corrente del pulsante al passaggio del mouse per l'interfaccia utente di Windows Media Player. Questo colore viene visualizzato quando l'utente sposta il puntatore del mouse su un pulsante.
+La **proprietà appColorButtonHoverFace** recupera il colore corrente del passaggio del mouse del pulsante per l Windows Media Player'interfaccia utente. Questo colore viene visualizzato quando l'utente sposta il puntatore del mouse su un pulsante.
 
 ``` syntax
 window.external.appColorButtonHoverFace
@@ -37,11 +37,11 @@ window.external.appColorButtonHoverFace
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media Player. È possibile usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
+Gli utenti possono modificare il colore dell'Windows Media Player utente. È possibile usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> </dl>
 
  

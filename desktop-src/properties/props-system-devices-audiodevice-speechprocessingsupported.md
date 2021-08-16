@@ -1,19 +1,19 @@
 ---
-description: Supporto della modalità vocale per il dispositivo audio. Se VARIANT \_ true, il dispositivo supporta la modalità vocale.
+description: Supporto della modalità voce per il dispositivo audio. Se VARIANT \_ TRUE, il dispositivo supporta la modalità voce.
 ms.assetid: 1ed8b831-df74-4612-aeef-009160325248
 title: System.Devices.AudioDevice.SpeechProcessingSupported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 097b3961e19fa9fe0e76f5c68c13e2e685be585f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71b2b9339b04a2eb3510847ee45db3d321460d57979d679a47fd3c8bc1108911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097842"
 ---
 # <a name="systemdevicesaudiodevicespeechprocessingsupported"></a>System.Devices.AudioDevice.SpeechProcessingSupported
 
-Supporto della modalità vocale per il dispositivo audio. Se VARIANT \_ true, il dispositivo supporta la modalità vocale.
+Supporto della modalità voce per il dispositivo audio. Se VARIANT \_ TRUE, il dispositivo supporta la modalità voce.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,7 +1,7 @@
 ---
-description: Verifica la connettività di rete di una macchina virtuale in un ambiente di virtualizzazione rete Windows.
+description: Verifica la connettività di rete di una macchina virtuale in Windows di virtualizzazione di rete.
 ms.assetid: 37d4c34d-406e-4c52-afce-b0eef754eeb3
-title: Metodo TestNetworkConnection della classe Msvm_VirtualSystemManagementService
+title: Metodo TestNetworkConnection della Msvm_VirtualSystemManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e8f15faacb1b8ad683b1ea9abfa9b91f5c376dab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66988944b6c4f4a97a450f63964d57084fc5886716d109e655921d8744bba721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119388380"
 ---
-# <a name="testnetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo TestNetworkConnection della classe MSVM \_ VirtualSystemManagementService
+# <a name="testnetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo TestNetworkConnection della classe Msvm \_ VirtualSystemManagementService
 
-Verifica la connettività di rete di una macchina virtuale in un ambiente di virtualizzazione rete Windows.
+Verifica la connettività di rete di una macchina virtuale in Windows di virtualizzazione di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,63 +47,63 @@ uint32 TestNetworkConnection(
 
 <dl> <dt>
 
-*TargetNetworkAdapter* \[ in\]
+*TargetNetworkAdapter* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un [**\_ EthernetPortAllocationSettingData MSVM**](msvm-ethernetportallocationsettingdata.md) che descrive la scheda di rete di destinazione.
+Riferimento a un oggetto [**Msvm \_ EthernetPortAllocationSettingData che**](msvm-ethernetportallocationsettingdata.md) descrive la scheda di rete di destinazione.
 
 </dd> <dt>
 
-Il *mittenti* \[ in\]
+*IsSender* \[ Pollici\]
 </dt> <dd>
 
-Indica se questo metodo viene richiamato al mittente o al ricevitore.
+Indica se questo metodo viene richiamato al mittente o al destinatario.
 
 </dd> <dt>
 
-*SenderIP* \[ in\]
+*SenderIP* \[ Pollici\]
 </dt> <dd>
 
 Indirizzo IP del mittente.
 
 </dd> <dt>
 
-*ReceiverIP* \[ in\]
+*ReceiverIP* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo MAC del mittente.
+Indirizzo Mac del mittente.
 
 </dd> <dt>
 
-*ReceiverMac* \[ in\]
+*ReceiverMac* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo MAC del mittente.
+Indirizzo Mac del mittente.
 
 </dd> <dt>
 
-*IsolationId* \[ in\]
+*IsolationId* \[ Pollici\]
 </dt> <dd>
 
-ID isolamento.
+ID di isolamento.
 
 </dd> <dt>
 
-*SequenceNumber* \[ in\]
+*SequenceNumber* \[ Pollici\]
 </dt> <dd>
 
-ID isolamento.
+ID di isolamento.
 
 </dd> <dt>
 
-*RoundtripTime* \[ out\]
+*RoundTripTime* \[ Cambio\]
 </dt> <dd>
 
-Round trip tempo.
+Ora round trip corrente.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -116,13 +116,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -131,16 +131,16 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non valido** (4)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -150,9 +150,9 @@ Questo metodo restituisce uno dei valori seguenti.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

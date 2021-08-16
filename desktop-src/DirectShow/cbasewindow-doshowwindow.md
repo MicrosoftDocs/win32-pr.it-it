@@ -1,7 +1,7 @@
 ---
 description: Il metodo DoShowWindow imposta lo stato di visualizzazione della finestra.
 ms.assetid: 4180de9d-ef40-40e3-aa37-be54283b1f97
-title: Metodo CBaseWindow. DoShowWindow (Winutil. h)
+title: Metodo CBaseWindow.DoShowWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a2a1f7d4cd9bc4600733d5d33f9df6d3b6998f57
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fef63e04d0e04f2fe0daa78cd6b33a22fa7c8fa14c57b1e022703dea0914dab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074630"
 ---
-# <a name="cbasewindowdoshowwindow-method"></a>CBaseWindow. DoShowWindow, metodo
+# <a name="cbasewindowdoshowwindow-method"></a>Metodo CBaseWindow.DoShowWindow
 
-Il metodo **DoShowWindow** imposta lo stato di visualizzazione della finestra.
+Il **metodo DoShowWindow** imposta lo stato di visualizzazione della finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT DoShowWindow(
 *ShowCmd* 
 </dt> <dd>
 
-Flag che specifica come deve essere visualizzata la finestra. Il valore può essere qualsiasi costante definita per il parametro *nCmdShow* della funzione [**ShowWindow**](/windows/desktop/api/winuser/nf-winuser-showwindow) .
+Flag che specifica la modalità di visualizzazione della finestra. Il valore può essere qualsiasi costante definita per il *parametro nCmdShow* della [**funzione ShowWindow.**](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

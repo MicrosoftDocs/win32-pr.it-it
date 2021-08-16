@@ -27,12 +27,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 52ab249ab5087a1528317687d90f6d8fa665bc1a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 465fe0bacd23ad99bb744c915b60056b96419761f93a4aefd5f1a3d2fb4c6129
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766351"
 ---
 # <a name="systemconfig_phydisk-class"></a>Classe SystemConfig \_ PhyDisk
 
@@ -120,7 +120,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (5)
 </dt> </dl>
 
-Numero totale di cilindri nell'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, consultare il produttore.
+Numero totale di cilindri nell'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (1)
 </dt> </dl>
 
-Numero di indice del disco contenente questa partizione.
+Numero di indice del disco contenente la partizione.
 
 </dd> <dt>
 
@@ -184,7 +184,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (11)
 </dt> </dl>
 
-Numero di partizioni in questa unità disco fisico riconosciute dal sistema operativo.
+Numero di partizioni in questa unità disco fisica riconosciute dal sistema operativo.
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4)
 </dt> </dl>
 
-Numero di tracce in ogni cilindro nell'unità disco fisico. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13 ore. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
+Numero di tracce in ogni cilindro nell'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
 
 </dd> <dt>
 
@@ -322,8 +322,8 @@ True se la cache di scrittura è abilitata.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

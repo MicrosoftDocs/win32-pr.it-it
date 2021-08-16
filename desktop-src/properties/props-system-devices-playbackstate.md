@@ -1,17 +1,17 @@
 ---
 description: Stato di riproduzione del dispositivo.
 ms.assetid: 7F77459B-5900-4967-A2A3-AAEE78DF84E1
-title: System. Devices. PlaybackState
+title: System.Devices.PlaybackState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a95b736d80df49587954f20c4c000c82779d5648
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c81a7cf0bccb2a490fac1015ffeffc67f4fbb6c7fd1a1e95e7621dec7e09e16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097457"
 ---
-# <a name="systemdevicesplaybackstate"></a>System. Devices. PlaybackState
+# <a name="systemdevicesplaybackstate"></a>System.Devices.PlaybackState
 
 Stato di riproduzione del dispositivo.
 
@@ -75,7 +75,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -90,13 +90,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -105,7 +105,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

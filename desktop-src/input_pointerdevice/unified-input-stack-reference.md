@@ -1,5 +1,5 @@
 ---
-description: Gli argomenti di questa sezione forniscono le specifiche di riferimento per pointer device input stack in Windows 8.
+description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per pointer device input stack in Windows 8.
 ms.assetid: 1B620557-0C1F-4334-975E-C9F0D1A61253
 title: Informazioni di riferimento sullo stack di input del dispositivo puntatore
 ms.topic: article

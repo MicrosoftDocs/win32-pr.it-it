@@ -1,25 +1,25 @@
 ---
-description: Quando si usano stringhe con terminazione null, le applicazioni Unicode devono sempre eseguire il cast di zero a TCHAR.
+description: Quando si usano stringhe con terminazione Null, le applicazioni Unicode devono sempre eseguire il cast di zero a TCHAR.
 ms.assetid: 43bbf0ab-9b69-4f7d-acda-d0f8b6caf4b5
-title: Utilizzo di stringhe con terminazione null
+title: Uso di stringhe con terminazione Null
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce12079fa3d0c5a88af369a347f1cd655136ee09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d0a5f27048bde2af75eca28626a562473ceffcc66f3f2f23509beca4fba06ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631781"
 ---
-# <a name="using-null-terminated-strings"></a>Utilizzo di stringhe con terminazione null
+# <a name="using-null-terminated-strings"></a>Uso di stringhe con terminazione Null
 
-Quando si usano stringhe con terminazione null, le applicazioni Unicode devono sempre eseguire il cast di zero a TCHAR. Il codice 0x0000 è il carattere di terminazione della stringa Unicode per una stringa con terminazione null. Un byte null singolo non è sufficiente per questo codice, perché molti caratteri Unicode contengono byte null come valore massimo o basso. Un esempio è la lettera A, per cui il codice carattere è 0x0041.
+Quando si usano stringhe con terminazione Null, le applicazioni Unicode devono sempre eseguire il cast di zero a TCHAR. Il codice 0x0000 è il terminatore di stringa Unicode per una stringa con terminazione Null. Un singolo byte Null non è sufficiente per questo codice, perché molti caratteri Unicode contengono byte Null come byte alto o basso. Un esempio è la lettera A, per cui viene utilizzato il codice carattere 0x0041.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Utilizzo di caratteri speciali in Unicode](using-special-characters-in-unicode.md)
+[Uso di caratteri speciali in Unicode](using-special-characters-in-unicode.md)
 </dt> </dl>
 
  

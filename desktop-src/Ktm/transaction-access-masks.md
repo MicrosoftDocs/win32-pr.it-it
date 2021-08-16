@@ -64,7 +64,7 @@ Il chiamante può integrarsi in questa transazione.
 
 
 
-Il chiamante può eseguire il commit della transazione.
+Il chiamante può eseguire il commit di questa transazione.
 
 
 </dt> </dl> </dd> <dt>

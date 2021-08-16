@@ -32,7 +32,7 @@ Per un tipo di attestazione, questo attributo indica l'origine del tipo di attes
 | CN                | ms-DS-Claim-Source                          |
 | Ldap-Display-Name | msDS-ClaimSource                            |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2157                     |
 | System-Id-Guid    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |

@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. Border
-description: L'attributo border specifica o recupera un valore che indica se il controllo casella di riepilogo presenta un bordo.
+title: LISTBOX.border
+description: L'attributo border specifica o recupera un valore che indica se il controllo casella di riepilogo ha un bordo.
 ms.assetid: a00e9290-2276-4b00-b07a-92770c3434b2
 keywords:
-- LISTBOX. Border Media Player Windows
+- LISTBOX.border Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a83f120fc7d21e4286ea467e477f1b16c1e44b04
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f8426b6d519bc370b45707bd66f48c5fdc1b24b87359d8c02cbd0ec7ab154a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617031"
 ---
-# <a name="listboxborder"></a>LISTBOX. Border
+# <a name="listboxborder"></a>LISTBOX.border
 
-L'attributo **Border** specifica o recupera un valore che indica se il controllo casella di riepilogo presenta un bordo.
+**L'attributo** border specifica o recupera un valore che indica se il controllo casella di riepilogo ha un bordo.
 
 ``` syntax
         elementID.border
@@ -29,14 +29,14 @@ L'attributo **Border** specifica o recupera un valore che indica se il controllo
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un valore **booleano** .
+Questo attributo è un **valore booleano.**
 
 
 
 | Valore | Descrizione                                  |
 |-------|----------------------------------------------|
-| true  | Valore predefinito. Il controllo casella di riepilogo presenta un bordo.  |
-| false | Il controllo casella di riepilogo non dispone di un bordo. |
+| true  | Valore predefinito. Il controllo casella di riepilogo ha un bordo.  |
+| false | Il controllo casella di riepilogo non ha un bordo. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un valore **booleano** .
 
 ## <a name="remarks"></a>Commenti
 
-Il bordo viene visualizzato come un bordo incassato a due pixel intorno al controllo casella di riepilogo con i colori di sistema.
+Il bordo viene visualizzato come bordo incassato di due pixel intorno al controllo casella di riepilogo con colori di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Il bordo viene visualizzato come un bordo incassato a due pixel intorno al contr
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -60,7 +60,7 @@ Il bordo viene visualizzato come un bordo incassato a due pixel intorno al contr
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  
