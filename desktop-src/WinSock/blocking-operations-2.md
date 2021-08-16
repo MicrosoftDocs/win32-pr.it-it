@@ -13,7 +13,7 @@ ms.locfileid: "118322436"
 ---
 # <a name="blocking-operations"></a>Operazioni di blocco
 
-La nozione di blocco in un Windows è sempre stata molto importante. Negli Windows Sockets 1.1, le chiamate di blocco erano sconsigliate perché tendevano a disabilitare l'interazione continua con il sistema. Inoltre, si avvale di una tecnica di pseudo-blocco che, per diversi motivi, non sempre funziona come previsto. Tuttavia, negli ambienti Windows pianificati preventivamente, le chiamate di blocco hanno molto più senso, possono essere implementate dai servizi nativi del sistema operativo e sono in realtà un meccanismo generalmente preferito. L'API Winsock 2 non supporta più il blocco psuedo, ma poiché gli s shimi di compatibilità di Windows Sockets 1.1 devono continuare a emulare questo comportamento, i provider di servizi devono supportare questo comportamento come descritto di seguito.
+La nozione di blocco in un Windows è sempre stata molto importante. Negli Windows Sockets 1.1, le chiamate di blocco erano sconsigliate perché tendevano a disabilitare l'interazione continua con il sistema. Inoltre, si avvale di una tecnica di pseudo-blocco che, per diversi motivi, non sempre funziona come previsto. Tuttavia, negli ambienti Windows pianificati preventivamente, le chiamate di blocco hanno molto più senso, possono essere implementate dai servizi nativi del sistema operativo e sono in realtà un meccanismo generalmente preferito. L'API Winsock 2 non supporta più il psuedoblocking, ma poiché gli s shims di compatibilità di Windows Sockets 1.1 devono continuare a emulare questo comportamento, i provider di servizi devono supportare questo comportamento come descritto di seguito.
 
  
 

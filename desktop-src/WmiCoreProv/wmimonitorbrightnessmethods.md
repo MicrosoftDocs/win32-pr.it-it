@@ -1,5 +1,5 @@
 ---
-description: Contiene metodi che gestiscono la luminosità del monitor.
+description: Contiene metodi che gestiscono la luminosità del monitoraggio.
 ms.assetid: e7e4139e-b985-4163-9c95-03008a2cc8cb
 title: Classe WmiMonitorBrightnessMethods
 ms.topic: reference
@@ -38,7 +38,7 @@ class WmiMonitorBrightnessMethods
 
 ## <a name="members"></a>Members
 
-La **classe WmiMonitorBrightnessMethods** include questi tipi di membri:
+La **classe WmiMonitorBrightnessMethods** ha questi tipi di membri:
 
 -   [Metodi](#wmimonitorbrightnessmethods-class)
 -   [Proprietà](#properties)
@@ -62,7 +62,7 @@ La **classe WmiMonitorBrightnessMethods** include questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe WmiMonitorBrightnessMethods** dispone di queste proprietà.
+La **classe WmiMonitorBrightnessMethods** ha queste proprietà.
 
 <dl> <dt>
 
@@ -82,16 +82,16 @@ Indica il monitoraggio attivo.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Chiave**
+Qualificatori: **chiave**
 </dt> </dl>
 
-Nome dell'istanza di monitoraggio specifica.
+Nome dell'istanza del monitoraggio specifica.
 
 </dd> </dl>
 

@@ -12,25 +12,25 @@ ms.locfileid: "118223585"
 ---
 # <a name="how-to-create-drop-handlers"></a>Come creare gestori di rilascio
 
-Per impostazione predefinita, i file non sono destinazioni di rilascio. È possibile rendere i membri di un [tipo di file](fa-file-types.md) in destinazioni di rilascio implementando e registrando un gestore di *rilascio*.
+Per impostazione predefinita, i file non sono destinazioni di rilascio. È possibile impostare i membri di un [tipo di file](fa-file-types.md) in destinazioni di rilascio implementando e registrando un gestore di *rilascio*.
 
-Se un gestore di rilascio è registrato per un tipo di file, viene chiamato ogni volta che un oggetto viene trascinato su un membro del tipo di file. La shell gestisce l'operazione chiamando i metodi appropriati [**sull'interfaccia IDropTarget del**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) gestore.
+Se un gestore di rilascio è registrato per un tipo di file, viene chiamato ogni volta che un oggetto viene trascinato o rilasciato su un membro del tipo di file. Shell gestisce l'operazione chiamando i metodi appropriati [**sull'interfaccia IDropTarget del**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) gestore.
 
-Le procedure generali per l'implementazione e la registrazione di un gestore estensioni della shell sono descritte in [Creazione di gestori di estensioni della shell.](handlers.md) Questo documento è in particolare sugli aspetti dell'implementazione specifici dei gestori di rilascio.
+Le procedure generali per l'implementazione e la registrazione di un gestore di estensioni shell sono descritte in [Creazione di gestori di estensioni della shell](handlers.md). Questo documento è in particolare sugli aspetti dell'implementazione specifici dei gestori di rilascio.
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-implementing-drop-handlers"></a>Passaggio 1: Implementazione di gestori di rilascio
+### <a name="step-1-implementing-drop-handlers"></a>Passaggio 1: Implementazione di gestori di eliminazione
 
-Come tutti i gestori di estensioni della shell, i gestori di rilascio sono oggetti COM (In-Process Component Object Model) implementati come DLL. Esportano due interfacce oltre a [**IUnknown:**](/windows/win32/api/unknwn/nn-unknwn-iunknown) [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) e [**IDropTarget.**](/windows/win32/api/oleidl/nn-oleidl-idroptarget)
+Come tutti i gestori dell'estensione shell, i gestori di rilascio sono oggetti COM (In-Process Component Object Model) implementati come DLL. Esportano due interfacce oltre a [**IUnknown:**](/windows/win32/api/unknwn/nn-unknwn-iunknown) [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) e [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget).
 
-La shell inizializza il gestore tramite la relativa [**interfaccia IPersistFile.**](/windows/win32/api/objidl/nn-objidl-ipersistfile) Usa questa interfaccia per richiedere l'identificatore di classe (CLSID) del gestore e fornisce il nome del file. Per una descrizione generale di come implementare i gestori di estensioni della shell, inclusa **l'interfaccia IPersistFile,** vedere Creazione di gestori di [estensioni della shell.](handlers.md)
+Shell inizializza il gestore tramite [**l'interfaccia IPersistFile.**](/windows/win32/api/objidl/nn-objidl-ipersistfile) Usa questa interfaccia per richiedere l'identificatore di classe (CLSID) del gestore e fornisce il nome del file. Per una descrizione generale di come implementare i gestori di estensioni shell, inclusa **l'interfaccia IPersistFile,** vedere Creazione di gestori [di estensioni della shell](handlers.md).
 
-Dopo l'inizializzazione del gestore di rilascio, la shell chiama il metodo appropriato [**sull'interfaccia IDropTarget del**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) gestore.
+Dopo l'inizializzazione del gestore di rilascio, Shell chiama il metodo appropriato [**sull'interfaccia IDropTarget del**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) gestore.
 
 ### <a name="step-2-registering-drop-handlers"></a>Passaggio 2: Registrazione dei gestori di rilascio
 
-I gestori di rilascio vengono registrati nella sottochiave di questo tipo di file.
+I gestori di eliminazione vengono registrati nella sottochiave di questo tipo di file.
 
 ```
 HKEY_CLASSES_ROOT
@@ -39,9 +39,9 @@ HKEY_CLASSES_ROOT
          DropHandler
 ```
 
-Creare una sottochiave di **DropHandler** denominata per il gestore e impostare il valore predefinito della sottochiave sul formato stringa del GUID CLSID del gestore. Per una descrizione generale di come registrare i gestori di estensioni della shell, vedere [Creazione di gestori di estensioni della shell.](handlers.md)
+Creare una sottochiave **di DropHandler** denominata per il gestore e impostare il valore predefinito della sottochiave sul formato stringa del GUID CLSID del gestore. Per una descrizione generale di come registrare i gestori di estensioni della shell, vedere [Creazione di gestori di estensioni della shell](handlers.md).
 
-L'esempio seguente illustra le voci del Registro di sistema che abilitano un gestore di eliminazione per un tipo di file myp di esempio.
+L'esempio seguente illustra le voci del Registro di sistema che abilitano un gestore di eliminazione per un tipo di file con estensione myp di esempio.
 
 ```
 HKEY_CLASSES_ROOT

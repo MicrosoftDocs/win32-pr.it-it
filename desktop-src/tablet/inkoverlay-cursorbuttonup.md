@@ -51,9 +51,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante sulla punta di una penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Quando il pulsante non è premuto, è disponibile un pulsante su una freccia verso l'alto.
+Un pulsante su una punta della penna viene visualizzato quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Un pulsante su un barile è in alto quando il pulsante non viene premuto.
 
-Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due eventi [**CursorButtonUp:**](inkcollector-cursorbuttonup.md) uno per il pulsante destro verso l'alto e uno per il pulsante sinistro in alto.
+Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due [**eventi CursorButtonUp,**](inkcollector-cursorbuttonup.md) uno per il pulsante destro verso l'alto e uno per il pulsante sinistro verso l'alto.
 
 Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICECursorButtonUp.
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

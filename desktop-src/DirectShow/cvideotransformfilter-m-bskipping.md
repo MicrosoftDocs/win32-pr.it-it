@@ -1,7 +1,7 @@
 ---
-description: Valore booleano che indica se il filtro sta attualmente eliminando i frame. Se questo valore è TRUE, il filtro continua a rilasciare i frame fino a raggiungere il fotogramma chiave successivo o fino a quando non riceve 30 frame Delta in una riga senza un fotogramma chiave.
+description: Valore booleano che indica se il filtro sta rilasciando frame. Se questo valore è TRUE, il filtro continua a eliminare i fotogrammi fino a raggiungere il fotogramma chiave successivo o fino a quando non riceve 30 fotogrammi delta in una riga senza fotogramma chiave.
 ms.assetid: 1af22879-bf9b-4835-b3b5-06fb52b3140f
-title: 'Membro CVideoTransformFilter:: m_bSkipping (Vtrans. h)'
+title: Membro CVideoTransformFilter::m_bSkipping (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7beb4073052149e246a55ffbb1ff057e836704c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f865bdc707b206a8528413a357a4e14bcfe88fff813e1f62a44d30e6f4843ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821916"
 ---
-# <a name="cvideotransformfilterm_bskipping-member"></a>Membro bSkipping di CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_bskipping-member"></a>Membro CVideoTransformFilter::m \_ bSkipping
 
-Valore booleano che indica se il filtro sta attualmente eliminando i frame. Se questo valore è **true**, il filtro continua a rilasciare i frame fino a raggiungere il fotogramma chiave successivo o fino a quando non riceve 30 frame Delta in una riga senza un fotogramma chiave.
+Valore booleano che indica se il filtro sta rilasciando frame. Se questo valore è **TRUE,** il filtro continua a eliminare i fotogrammi fino a raggiungere il fotogramma chiave successivo o fino a quando non riceve 30 fotogrammi delta in una riga senza fotogramma chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bSkipping;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

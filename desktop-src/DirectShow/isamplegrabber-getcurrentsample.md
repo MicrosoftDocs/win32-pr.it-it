@@ -24,7 +24,7 @@ ms.locfileid: "117818006"
 # <a name="isamplegrabbergetcurrentsample-method"></a>Metodo ISampleGrabber::GetCurrentSample
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -45,7 +45,7 @@ HRESULT GetCurrentSample(
 
 <dl> <dt>
 
-*ppSample* 
+*PpSample* 
 </dt> <dd>
 
 Riservato.
@@ -64,7 +64,7 @@ Restituisce E \_ NOTIMPL.
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -83,7 +83,7 @@ Restituisce E \_ NOTIMPL.
 
 <dl> <dt>
 
-[Uso di Grabber di esempio](using-the-sample-grabber.md)
+[Uso del grabber di esempio](using-the-sample-grabber.md)
 </dt> <dt>
 
 [**Interfaccia ISampleGrabber**](isamplegrabber.md)

@@ -27,7 +27,7 @@ Un URI è costituito da un prefisso e da un percorso a una risorsa, come illustr
 
 "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_LogicalDisk"
 
-Questa specifica dello schema indica che l'URI è basato sulla versione 1 del protocollo WS-Management ufficiale e che la risorsa è un [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) nello spazio dei nomi \\ "cimv2 radice" del repository WMI. I prefissi URI contengono una specifica dello schema, ad esempio "schemas.microsoft.com/wbem/wsman/1/wmi" e un tipo specifico di risorsa, ad esempio **\_ LogicalDisk Win32.** Per altre informazioni sull'identificazione di un'istanza specifica di una classe WMI, vedere Windows [Gestione remota e WMI](windows-remote-management-and-wmi.md).
+Questa specifica dello schema indica che l'URI è basato sulla versione 1 del protocollo WS-Management ufficiale e che la risorsa è un [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) nello spazio dei nomi \\ "cimv2 radice" del repository WMI. I prefissi URI contengono una specifica dello schema, ad esempio "schemas.microsoft.com/wbem/wsman/1/wmi" e un tipo specifico di risorsa, ad esempio **\_ LogicalDisk Win32.** Per altre informazioni sull'identificazione di un'istanza specifica di una classe WMI, vedere Windows [Gestione remota e WMI.](windows-remote-management-and-wmi.md)
 
 Per altre informazioni, vedere [Prefissi URI](uri-prefixes.md).
 
@@ -39,7 +39,7 @@ L'elenco seguente descrive diversi tipi di URI di risorsa usati Windows gestione
 
 -   URI WMI
 
-    Questo gruppo di URI [](/windows/desktop/WmiSdk/gloss-c) rappresenta un percorso di Common Information Model che include lo spazio dei nomi e la classe.
+    Questo gruppo di URI rappresenta un percorso di Common Information Model [*che*](/windows/desktop/WmiSdk/gloss-c) include lo spazio dei nomi e la classe.
 
     Gli URI WMI possono essere usati in:
 
@@ -52,7 +52,7 @@ L'elenco seguente descrive diversi tipi di URI di risorsa usati Windows gestione
 
     Questo gruppo di URI rappresenta gli URI standard del settore basati su CIM versione 2.9. Gli URI IPMI possono essere usati nei [**metodi di**](session.md) sessione [**Get**](session-get.md), [**Put**](session-put.md), [**Enumerate**](session-enumerate.md) e [**Invoke**](session-invoke.md).
 
-    Un esempio è https://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_NumericSensor.xsd. Questa risorsa viene definita [](https://www.dmtf.org/home) in base allo DMTF.org CIM.
+    Un esempio è https://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_NumericSensor.xsd. Questa risorsa viene definita in base allo [DMTF.org](https://www.dmtf.org/home) CIM.
 
 -   URI di configurazione di Gestione remota Windows
 
@@ -68,7 +68,7 @@ L'elenco seguente descrive diversi tipi di URI di risorsa usati Windows gestione
 
 Il [*plug-in WMI*](windows-remote-management-glossary.md) mantiene il caso dell'URI della risorsa ricevuto in una richiesta. Tuttavia, per garantire l'interoperabilità con altre implementazioni del protocollo WS-Management, usare il caso corretto per la risorsa richiesta nell'URI della risorsa. La distinzione tra maiuscole e minuscole è l'ortografia definita dal provider di risorse.
 
-Anche se gli URI delle risorse non richiedono la distinzione tra maiuscole e minuscole, [*il frammento*](windows-remote-management-glossary.md) XML lo fa. Un frammento specifica una sola proprietà, anziché l'intero set di proprietà per una risorsa. Nel caso di risorse WMI, la sintassi del frammento ottiene una proprietà da un'istanza di risorsa. Ad esempio, per ottenere solo la **proprietà Version** dal sistema [**operativo Win32 \_**](/windows/desktop/CIMWin32Prov/win32-operatingsystem) è necessario usare un frammento. Per altre informazioni sui frammenti, vedere "Aggiunta di un selettore a un oggetto ResourceLocator o IWSManResourceLocator" in Windows Gestione remota [e WMI.](windows-remote-management-and-wmi.md)
+Anche se gli URI delle risorse non richiedono la distinzione tra maiuscole e minuscole, [*il frammento*](windows-remote-management-glossary.md) XML lo fa. Un frammento specifica una sola proprietà, anziché l'intero set di proprietà per una risorsa. Nel caso delle risorse WMI, la sintassi del frammento ottiene una proprietà da un'istanza di risorsa. Ad esempio, per ottenere solo la **proprietà Version** dal sistema [**operativo Win32 \_**](/windows/desktop/CIMWin32Prov/win32-operatingsystem) è necessario usare un frammento. Per altre informazioni sui frammenti, vedere "Aggiunta di un selettore a un oggetto ResourceLocator o IWSManResourceLocator" in Windows Gestione remota [e WMI.](windows-remote-management-and-wmi.md)
 
 Seguendo gli standard XML [*e XPath,*](windows-remote-management-glossary.md) il [*plug-in WMI*](windows-remote-management-glossary.md) applica la distinzione tra maiuscole e minuscole per frammenti e XML che definisce i parametri di input per un metodo. La distinzione tra maiuscole e minuscole è necessaria per supportare lo standard XPath 1.0/Livello 1. Per ottenere dati WMI tramite WinRM, la distinzione tra maiuscole e minuscole indica che i nomi delle classi, delle proprietà e dei metodi WMI devono corrispondere alla distinzione tra maiuscole e minuscole del nome presente nel repository WMI.
 

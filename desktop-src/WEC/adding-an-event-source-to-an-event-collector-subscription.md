@@ -14,9 +14,9 @@ ms.locfileid: "118344212"
 ---
 # <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Aggiunta di un'origine evento a una sottoscrizione avviata dall'agente di raccolta
 
-Per ricevere un evento inoltrato da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale. Per altre informazioni su come creare una sottoscrizione avviata dall'agente di raccolta, vedere l'esempio di codice C++ illustrato in [Creazione di una sottoscrizione dell'agente di raccolta eventi.](creating-an-event-collector-subscription.md)
+Per ricevere un evento inoltrato da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale. Per altre informazioni su come creare una sottoscrizione avviata dall'agente di raccolta, vedere l'esempio di codice C++ illustrato in [Creazione di una sottoscrizione dell'agente di raccolta eventi](creating-an-event-collector-subscription.md).
 
-Dopo aver creato una sottoscrizione avviata dall'agente di raccolta, è possibile aggiungere origini evento alla sottoscrizione. È necessario aggiungere almeno un'origine evento a una sottoscrizione per raccogliere gli eventi.
+Dopo aver creato una sottoscrizione avviata dall'agente di raccolta, è possibile aggiungere origini eventi alla sottoscrizione. È necessario aggiungere almeno un'origine eventi a una sottoscrizione per raccogliere gli eventi.
 
 > [!Note]
 >
@@ -28,16 +28,16 @@ Dopo aver creato una sottoscrizione avviata dall'agente di raccolta, è possibil
 
  
 
-Per altre informazioni su come aggiungere origini evento a una sottoscrizione avviata dall'origine, vedere [Impostazione di una sottoscrizione avviata dall'origine.](setting-up-a-source-initiated-subscription.md)
+Per altre informazioni su come aggiungere origini eventi a una sottoscrizione avviata dall'origine, vedere [Impostazione di una sottoscrizione avviata dall'origine](setting-up-a-source-initiated-subscription.md).
 
 Questo esempio segue una serie di passaggi per aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta.
 
 **Per aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta**
 
-1.  Aprire la sottoscrizione esistente specificando il nome della sottoscrizione e i diritti di accesso come parametri per [**la funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere l'Windows [**costanti dell'agente di raccolta eventi**](windows-event-collector-constants.md).
-2.  Ottenere la matrice di origini evento della sottoscrizione chiamando la [**funzione EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Per altre informazioni sulle proprietà di sottoscrizione che possono essere recuperate, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+1.  Aprire la sottoscrizione esistente specificando il nome della sottoscrizione e i diritti di accesso come parametri per la [**funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**Costanti dell'agente Windows eventi**](windows-event-collector-constants.md).
+2.  Ottenere la matrice di origini eventi della sottoscrizione chiamando la [**funzione EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Per altre informazioni sulle proprietà della sottoscrizione che possono essere recuperate, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
 3.  Aggiungere una nuova origine evento alla matrice di origini eventi della sottoscrizione chiamando la [**funzione EcInsertObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
-4.  Impostare le proprietà dell'origine evento chiamando [**la funzione EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **proprietà EcSubscriptionEventSourceAddress** è impostata su un indirizzo per il computer locale (Localhost) o su un nome di dominio completo per un computer remoto. Per altre informazioni sulle proprietà dell'origine evento che è possibile impostare, vedere l'enumerazione **EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**
+4.  Impostare le proprietà dell'origine evento chiamando la [**funzione EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **proprietà EcSubscriptionEventSourceAddress** è impostata su un indirizzo per il computer locale (Localhost) o su un nome di dominio completo per un computer remoto. Per altre informazioni sulle proprietà dell'origine evento che è possibile impostare, vedere l'enumerazione **EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**
 5.  Salvare la sottoscrizione chiamando la [**funzione EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
 6.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 

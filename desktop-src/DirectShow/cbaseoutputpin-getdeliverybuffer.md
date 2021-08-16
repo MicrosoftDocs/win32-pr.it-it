@@ -48,7 +48,7 @@ virtual HRESULT GetDeliveryBuffer(
 *ppSample* 
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore [**all'interfaccia IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) buffer.
+Indirizzo di una variabile che riceve un puntatore all'interfaccia [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) buffer.
 
 </dd> <dt>
 

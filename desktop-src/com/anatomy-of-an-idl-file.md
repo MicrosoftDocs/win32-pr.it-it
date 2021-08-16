@@ -13,11 +13,11 @@ ms.locfileid: "118311335"
 ---
 # <a name="anatomy-of-an-idl-file"></a>Anatomia di un file IDL
 
-Questi file IDL di esempio illustrano i costrutti fondamentali della definizione dell'interfaccia. L'allocazione di memoria, il marshalling personalizzato e la messaggistica asincrona sono solo alcune delle funzionalità che è possibile implementare in un'interfaccia COM personalizzata. Gli attributi MIDL vengono usati per definire le interfacce COM. Per altre informazioni sull'implementazione di interfacce e librerie dei tipi, incluso un riepilogo degli attributi MIDL, vedere [Interface Definitions and Type Libraries](/windows/desktop/Midl/interface-definitions-and-type-libraries) (Definizioni di interfaccia e librerie dei tipi) in MIDL Programmer's Guide and Reference (Guida e riferimento per programmatori MIDL). Per informazioni di riferimento complete su tutti gli attributi, le parole chiave e le direttive MIDL, vedere MIDL Language Reference (Riferimenti [al linguaggio MIDL).](/windows/desktop/Midl/midl-language-reference)
+Questi file IDL di esempio illustrano i costrutti fondamentali della definizione dell'interfaccia. Allocazione di memoria, marshalling personalizzato e messaggistica asincrona sono solo alcune delle funzionalità che è possibile implementare in un'interfaccia COM personalizzata. Gli attributi MIDL vengono usati per definire le interfacce COM. Per altre informazioni sull'implementazione di interfacce e librerie dei tipi, incluso un riepilogo degli attributi MIDL, vedere [Definizioni](/windows/desktop/Midl/interface-definitions-and-type-libraries) di interfaccia e librerie dei tipi nella Guida e riferimento per programmatori MIDL. Per un riferimento completo di tutti gli attributi, le parole chiave e le direttive MIDL, vedere [midl Language Reference](/windows/desktop/Midl/midl-language-reference).
 
 ## <a name="exampleidl"></a>Example.idl
 
-Il file IDL di esempio seguente definisce due interfacce COM. Da questo file IDL, Midl.exe genererà proxy/stub e il marshalling del codice e dei file di intestazione. Una sezione riga per riga segue l'esempio.
+Il file IDL di esempio seguente definisce due interfacce COM. Da questo file IDL, Midl.exe genera proxy/stub e effettua il marshalling del codice e dei file di intestazione. Una sezione riga per riga segue l'esempio.
 
 ``` syntax
 //
@@ -47,25 +47,25 @@ HRESULT MethodC([in] long Max,
  
 ```
 
-L'istruzione [**IDL import**](/windows/desktop/Midl/import) viene usata qui per importare un file di intestazione, Mydefs.h, che contiene tipi definiti dall'utente, e Unknwn.idl, che contiene la definizione di [**IUnknown,**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown)da cui derivano IFace1 e IFace2.
+L'istruzione di importazione [**IDL**](/windows/desktop/Midl/import) viene usata qui per importare un file di intestazione, Mydefs.h, che contiene tipi definiti dall'utente, e Unknwn.idl, che contiene la definizione [**di IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown), da cui derivano IFace1 e IFace2.
 
-[**L'attributo**](/windows/desktop/Midl/object) dell'oggetto identifica l'interfaccia come interfaccia oggetto e indica al compilatore MIDL di generare codice proxy/stub anziché stub client e server RPC. I metodi dell'interfaccia oggetto devono avere un tipo restituito [**HRESULT**](/openspecs/windows_protocols/ms-erref/0642cb2f-2075-4469-918c-4441e69c548a), per consentire al meccanismo RPC sottostante di segnalare gli errori relativi alle chiamate che non vengono completate a causa di problemi di rete.
+[**L'attributo**](/windows/desktop/Midl/object) dell'oggetto identifica l'interfaccia come interfaccia a oggetti e indica al compilatore MIDL di generare codice proxy/stub anziché stub client RPC e server. I metodi dell'interfaccia a oggetti devono avere un tipo restituito [**HRESULT**](/openspecs/windows_protocols/ms-erref/0642cb2f-2075-4469-918c-4441e69c548a), per consentire al meccanismo RPC sottostante di segnalare gli errori per le chiamate che non riescono a completare a causa di problemi di rete.
 
-[**L'attributo uuid**](/windows/desktop/Midl/uuid) specifica l'identificatore di interfaccia (IID). Ogni interfaccia, classe e libreria dei tipi deve essere identificata con il proprio identificatore univoco. Usare l'Uuidgen.exe per generare un set di ID univoci per le interfacce e altri componenti.
+[**L'attributo uuid**](/windows/desktop/Midl/uuid) specifica l'identificatore di interfaccia (IID). Ogni interfaccia, classe e libreria dei tipi deve essere identificata con il proprio identificatore univoco. Usare l'utilità Uuidgen.exe generare un set di ID univoci per le interfacce e altri componenti.
 
-La [**parola chiave interface**](/windows/desktop/Midl/interface) definisce il nome dell'interfaccia. Tutte le interfacce oggetto devono derivare, direttamente o indirettamente, da [**IUnknown.**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown)
+La [**parola chiave interface**](/windows/desktop/Midl/interface) definisce il nome dell'interfaccia. Tutte le interfacce oggetto devono derivare, direttamente o indirettamente, da [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown).
 
-Il [**parametro in**](/windows/desktop/Midl/in) directional specifica un parametro impostato solo dal chiamante. Il [**parametro out**](/windows/desktop/Midl/out-idl) specifica i dati che vengono passati al chiamante. L'uso di entrambi gli attributi direzionali in un parametro specifica che il parametro viene usato sia per inviare dati al metodo che per passare di nuovo i dati al chiamante.
+Il [**parametro in**](/windows/desktop/Midl/in) directional specifica un parametro impostato solo dal chiamante. Il [**parametro out**](/windows/desktop/Midl/out-idl) specifica i dati passati al chiamante. L'uso di entrambi gli attributi direzionali in un parametro specifica che il parametro viene usato sia per inviare dati al metodo che per passare i dati al chiamante.
 
 [**L'attributo \_ predefinito del**](/windows/desktop/Midl/pointer-default) puntatore specifica il tipo di puntatore predefinito ([**unique**](/windows/desktop/Midl/unique), [**ref**](/windows/desktop/Midl/ref)o [**ptr**](/windows/desktop/Midl/ptr)) per tutti i puntatori ad eccezione di quelli inclusi negli elenchi di parametri. Se non viene specificato alcun tipo predefinito, MIDL presuppone che i singoli puntatori siano **univoci.** Tuttavia, quando si dispone di più livelli di puntatori, è necessario specificare in modo esplicito un tipo di puntatore predefinito, anche se si vuole che il tipo predefinito sia **univoco.**
 
-Nell'esempio precedente la matrice BkfstStuff è una matrice conforme, la cui dimensione viene \[ \] determinata in fase di esecuzione.  [**\_ L'attributo max**](/windows/desktop/Midl/max-is) is specifica la variabile che contiene il valore massimo per l'indice della matrice.
+Nell'esempio precedente la matrice BkfstStuff è una matrice conforme, le cui dimensioni \[ \] vengono determinate in fase di esecuzione.  [**\_ L'attributo max is**](/windows/desktop/Midl/max-is) specifica la variabile che contiene il valore massimo per l'indice della matrice.
 
-[**\_ L'attributo size**](/windows/desktop/Midl/size-is) viene usato anche per specificare le dimensioni di una matrice o, come nell'esempio precedente, più livelli di puntatori. Nell'esempio la chiamata può essere effettuata senza sapere in anticipo la quantità di dati che verranno restituiti.
+[**\_ L'attributo size is**](/windows/desktop/Midl/size-is) viene usato anche per specificare le dimensioni di una matrice o, come nell'esempio precedente, più livelli di puntatori. Nell'esempio, la chiamata può essere effettuata senza sapere in anticipo la quantità di dati che verranno restituiti.
 
-## <a name="example2idl"></a>Example2.idl
+## <a name="example2idl"></a>Esempio2.idl
 
-Nell'esempio IDL seguente (che riutilizza le interfacce descritte nell'esempio IDL precedente) vengono illustrati i vari modi per generare informazioni sulle librerie dei tipi per le interfacce.
+L'esempio IDL seguente (che riutilizza le interfacce descritte nell'esempio IDL precedente) illustra i vari modi per generare informazioni sulla libreria dei tipi per le interfacce.
 
 ``` syntax
 //
@@ -121,15 +121,15 @@ interface IFace4 : IDispatch
  
 ```
 
-[**L'attributo helpstring**](/windows/desktop/Midl/helpstring) è facoltativo. viene utilizzato per descrivere brevemente l'oggetto o per fornire una riga di stato. Queste stringhe della Guida sono leggibili con un visualizzatore oggetti, ad esempio quello fornito con Microsoft Visual Basic.
+[**L'attributo helpstring**](/windows/desktop/Midl/helpstring) è facoltativo. viene utilizzato per descrivere brevemente l'oggetto o per fornire una riga di stato. Queste stringhe della Guida sono leggibili con un Visualizzatore oggetti, ad esempio quello fornito con Microsoft Visual Basic.
 
-[**L'attributo dual**](/windows/desktop/Midl/dual) in IFace3 crea un'interfaccia che è sia un'interfaccia dispatch che un'interfaccia COM. Poiché deriva da **IDispatch,** un'interfaccia duale supporta l'automazione, che è ciò che [**l'attributo oleautomation**](/windows/desktop/Midl/oleautomation) specifica. IFace3 importa Oaidl.idl per ottenere la definizione di **IDispatch.**
+[**L'attributo duale**](/windows/desktop/Midl/dual) in IFace3 crea un'interfaccia che è sia un'interfaccia dispatch che un'interfaccia COM. Poiché deriva da **IDispatch**, un'interfaccia duale supporta l'automazione, che è ciò che specifica [**l'attributo oleautomation.**](/windows/desktop/Midl/oleautomation) IFace3 importa Oaidl.idl per ottenere la definizione di **IDispatch**.
 
 [**L'istruzione**](/windows/desktop/Midl/library) library definisce la libreria dei tipi ExampleLib, che ha i propri [**attributi uuid**](/windows/desktop/Midl/uuid), [**helpstring**](/windows/desktop/Midl/helpstring)e [**version.**](/windows/desktop/Midl/version)
 
-All'interno della definizione della libreria dei tipi, la [**direttiva importlib**](/windows/desktop/Midl/importlib) include una libreria dei tipi compilata. Tutte le definizioni della libreria dei tipi devono importare la libreria dei tipi di base definita in Stdole32.tlb.
+All'interno della definizione della libreria dei tipi, la [**direttiva importlib**](/windows/desktop/Midl/importlib) include una libreria dei tipi compilata. Tutte le definizioni della libreria dei tipi devono contenere la libreria dei tipi di base definita in Stdole32.tlb.
 
-Questa definizione della libreria dei tipi illustra tre diversi modi per includere le interfacce nella libreria dei tipi. IFace3 viene incluso semplicemente facendo riferimento a esso nell'istruzione della libreria.
+Questa definizione della libreria dei tipi illustra tre diversi modi per includere le interfacce nella libreria dei tipi. IFace3 viene incluso semplicemente facendo riferimento a esso all'interno dell'istruzione della libreria.
 
 [**L'istruzione coclass**](/windows/desktop/Midl/coclass) definisce una classe componente completamente nuova, BkfstComponent, che include due interfacce definite in precedenza, IFace1 e IFace2. L'attributo predefinito designa IFace1 come interfaccia predefinita.
 

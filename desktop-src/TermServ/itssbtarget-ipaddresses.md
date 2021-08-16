@@ -9,7 +9,7 @@ keywords:
 - Proprietà TargetExternalIpAddresses Servizi Desktop remoto , interfaccia ITsSbTarget
 - Proprietà IpAddresses Servizi Desktop remoto
 - Proprietà IpAddresses Servizi Desktop remoto, interfaccia ITsSbTarget
-- Interfaccia ITsSbTarget Servizi Desktop remoto proprietà , IpAddresses
+- Interfaccia ITsSbTarget Servizi Desktop remoto proprietà IpAddresses
 - Proprietà IpAddresses Servizi Desktop remoto, interfaccia ITsSbTargetEx
 - Interfaccia ITsSbTargetEx Servizi Desktop remoto proprietà IpAddresses
 topic_type:
@@ -69,7 +69,7 @@ Puntatore a una **variabile DWORD** che contiene il numero di indirizzi IP ester
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà era nota in precedenza come **TargetExternalIpAddresses** in Windows Server 2008 R2.
+Questa proprietà era precedentemente nota come **TargetExternalIpAddresses** in Windows Server 2008 R2.
 
 Se il numero di indirizzi IP esterni è sconosciuto, è possibile chiamare questo metodo con *sockaddr* impostato su **NULL.** Il metodo restituirà quindi, nel *parametro numAddresses,* il numero di strutture [**\_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necessarie per ricevere tutti gli indirizzi IP esterni. Allocare la matrice per *sockaddr* in base a questo numero e quindi chiamare di nuovo il metodo , impostando *sockaddr* sulla matrice appena allocata e *numAddresses* sul numero restituito dalla prima chiamata.
 

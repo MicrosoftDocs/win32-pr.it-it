@@ -26,7 +26,7 @@ ms.locfileid: "118320808"
 ---
 # <a name="__instanceoperationevent-class"></a>\_\_Classe InstanceOperationEvent
 
-La classe di sistema **\_ \_ InstanceOperationEvent** funge da classe di base per tutti gli eventi intrinseci correlati a un'istanza.
+La **\_ \_ classe di sistema InstanceOperationEvent** funge da classe di base per tutti gli eventi intrinseci correlati a un'istanza.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -110,11 +110,11 @@ Le istanze **\_ \_ di InstanceOperationEvent** non vengono create. Vengono creat
 
 Così come esiste una classe WMI che rappresenta ogni tipo di risorsa di sistema che può essere gestita tramite WMI, esiste una classe WMI che rappresenta ogni tipo di evento WMI. Quando si verifica un evento che può essere monitorato da WMI, viene creata un'istanza della classe di evento WMI corrispondente. Un evento WMI si verifica quando viene creata l'istanza.
 
-Esistono tre tipi principali di classi di eventi WMI, tutti derivati dalla classe [**\_ \_ WMI**](--event.md) event: eventi intrinseci, eventi estensivi ed eventi timer. Gli eventi intrinseci, a loro volta, sono rappresentati da tre classi distinte derivate dalla classe **\_ \_ Event:** [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md), **\_ \_ InstanceOperationEvent** e [**\_ \_ ClassOperationEvent**](--classoperationevent.md).
+Esistono tre tipi principali di classi di eventi WMI, tutti derivati dalla classe [**\_ \_ WMI**](--event.md) Event: Eventi intrinseci, Eventi estensivi ed Eventi timer. Gli eventi intrinseci, a loro volta, sono rappresentati da tre classi distinte derivate dalla classe **\_ \_ Event:** [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md), **\_ \_ InstanceOperationEvent** e [**\_ \_ ClassOperationEvent**](--classoperationevent.md).
 
 Eventi intrinseci
 
-Gli eventi intrinseci vengono usati per monitorare una risorsa rappresentata da una classe nel repository CIM. Ogni risorsa è rappresentata da un'istanza di una classe. Ciò significa che il monitoraggio di una risorsa tramite WMI comporta effettivamente il monitoraggio delle istanze che corrispondono alla risorsa.
+Gli eventi intrinseci vengono usati per monitorare una risorsa rappresentata da una classe nel repository CIM. Ogni risorsa è rappresentata da un'istanza di una classe . Ciò significa che il monitoraggio di una risorsa tramite WMI comporta effettivamente il monitoraggio delle istanze che corrispondono alla risorsa.
 
 Gli eventi intrinseci possono essere usati anche per monitorare le modifiche apportate a uno spazio dei nomi o a una classe nel repository. Tuttavia, il monitoraggio delle modifiche agli spazi dei nomi o alle classi ha un valore limitato per gli amministratori di sistema.
 

@@ -1,5 +1,5 @@
 ---
-description: Si verifica quando la selezione dell'input penna all'interno del controllo sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, alle procedure taglia e incolla o alla proprietà Selection.
+description: Si verifica quando la selezione dell'input penna all'interno del controllo sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, alle procedure di taglia e incolla o alla proprietà Selection.
 ms.assetid: dffdb183-d363-40d3-81a2-d496433f7075
 title: Evento InkOverlay.SelectionChanging (Msinkaut.h)
 ms.topic: reference

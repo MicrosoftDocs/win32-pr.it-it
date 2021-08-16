@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put Invert specifica se l'operazione di chiave è invertita. Questa proprietà si applica a tutti i tipi di chiave ad eccezione di DXTKEY \_ alfa.
+description: Il metodo put \_ Invert specifica se l'operazione chiave è invertita. Questa proprietà si applica a tutti i tipi di chiave, ad eccezione di DXTKEY \_ ALPHA.
 ms.assetid: 06acdd9f-eb3a-49bd-961d-00966df2ccb4
-title: 'IDxtKey: metodo:p ut_Invert (qedit. h)'
+title: Metodo IDxtKey::p ut_Invert (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3e4b807770d0eeb985c982b61b8390695cc42327
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed1ed445e7a6f5f1f07eff74ac739934f2c9ca1358affe3e0cd699b7a101f0a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819438"
 ---
-# <a name="idxtkeyput_invert-method"></a>IDxtKey: metodo di \_ inversione:p UT
+# <a name="idxtkeyput_invert-method"></a>Metodo IDxtKey::p ut \_ Invert
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `put_Invert` metodo specifica se l'operazione chiave è invertita. Questa proprietà si applica a tutti i tipi di chiave ad eccezione di DXTKEY \_ alfa.
+Il `put_Invert` metodo specifica se l'operazione chiave è invertita. Questa proprietà si applica a tutti i tipi di chiave, ad eccezione di DXTKEY \_ ALPHA.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,26 +45,26 @@ HRESULT put_Invert(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
-Specifica un valore booleano. Se **true**, i pixel nell'immagine di sovrastanti vengono invertiti rispetto all'operazione predefinita. Se **false**, i pixel nell'immagine di sovrastanti vengono resi trasparenti nel modo predefinito.
+Specifica un valore booleano. Se **TRUE,** i pixel nell'immagine in e sovrasospetti vengono invertiti rispetto all'operazione predefinita. Se **FALSE,** i pixel nell'immagine sovrassinge vengono resi trasparenti nel modo predefinito.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 [**Interfaccia IDxtKey**](idxtkey.md)
 </dt> <dt>
 
-[**IDxtKey: tipo di:p di \_ tipo UT**](idxtkey-put-keytype.md)
+[**IDxtKey::put \_ KeyType**](idxtkey-put-keytype.md)
 </dt> </dl>
 
  

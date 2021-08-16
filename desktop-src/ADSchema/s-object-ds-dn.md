@@ -1,10 +1,10 @@
 ---
-title: Sintassi dell'oggetto (DS-DN)
+title: Sintassi di Object(DS-DN)
 description: Stringa che contiene un nome distinto (DN).
 ms.assetid: 089104c4-ff82-49ea-a8db-a6dadc3a18bc
 ms.tgt_platform: multiple
 keywords:
-- Oggetto (DS-DN) sintassi di AD schema
+- Schema AD della sintassi object(DS-DN)
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45154985fa7fbfc4d95d563196357d43eac2ea72
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad0c9adf4138de56d90ac89743c3b428a1f25b45027bc19f0b5dccc2e005b143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835684"
 ---
-# <a name="objectds-dn-syntax"></a>Sintassi dell'oggetto (DS-DN)
+# <a name="objectds-dn-syntax"></a>Sintassi di Object(DS-DN)
 
-Stringa che contiene un nome distinto (DN). Per gli attributi con questa sintassi, Active Directory gestisce i valori di attributo come riferimenti all'oggetto identificato dal DN e aggiorna automaticamente il valore se l'oggetto viene spostato o rinominato. Per le query che includono attributi della sintassi DN in un filtro, specificare nomi distinti completi. I caratteri jolly (ad esempio, CN = John \* ) non sono supportati.
+Stringa che contiene un nome distinto (DN). Per gli attributi con questa sintassi, Active Directory gestisce i valori degli attributi come riferimenti all'oggetto identificato dal DN e aggiorna automaticamente il valore se l'oggetto viene spostato o rinominato. Per le query che includono attributi della sintassi DN in un filtro, specificare nomi distinti completi. I caratteri jolly (ad esempio, cn=John) \* non sono supportati.
 
 
 
@@ -30,10 +30,10 @@ Stringa che contiene un nome distinto (DN). Per gli attributi con questa sintass
 |--------------|------------------------------------------------------------------------|
 | Nome         | Object(DS-DN)                                                           |
 | ID sintassi    | 2.5.5.1                                                                |
-| ID OM        | 127                                                                    |
+| OM ID        | 127                                                                    |
 | Tipo MAPI    | OBJECT                                                                 |
-| Tipo di annunci     | \_stringa DN \_ ADSTYPE                                                    |
-| Tipo Variant | \_BSTR VT                                                               |
+| Tipo di ADS     | STRINGA DN ADSTYPE \_ \_                                                    |
+| Tipo variant | VT \_ BSTR                                                               |
 | Tipo SDS     | [System.String](/dotnet/api/system.string) |
 
 

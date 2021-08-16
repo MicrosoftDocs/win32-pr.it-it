@@ -1,7 +1,7 @@
 ---
 description: Si verifica al termine della fase di analisi intermedia corrente.
 ms.assetid: 9ade61f4-bcfe-4c49-bda1-b60aaf780935
-title: 'Evento _IAnalysisEvents:: IntermediateResults () (IACom. h)'
+title: evento _IAnalysisEvents::IntermediateResults (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 33430225746ddd1a4099f89112f14f99f2b6da84
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9efead00094fdcd773c3ac90b0d626e2036030171bcf3be011323b6da70fb665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857197"
 ---
-# <a name="_ianalysiseventsintermediateresults-event"></a>\_Evento IAnalysisEvents:: IntermediateResults ()
+# <a name="_ianalysiseventsintermediateresults-event"></a>\_Evento IAnalysisEvents::IntermediateResults
 
 Si verifica al termine della fase di analisi intermedia corrente.
 
@@ -40,14 +40,14 @@ HRESULT IntermediateResults(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ in\]
+*pInkAnalyzer* \[ Pollici\]
 </dt> <dd>
 
-[**IInkAnalyzer**](iinkanalyzer.md) che sta eseguendo l'analisi.
+[**IInkAnalyzer che**](iinkanalyzer.md) esegue l'analisi.
 
 </dd> <dt>
 
-*pAnalysisStatus* \[ in\]
+*pAnalysisStatus* \[ Pollici\]
 </dt> <dd>
 
 Oggetto [**IAnalysisStatus**](ianalysisstatus.md) che rappresenta lo stato dei risultati intermedi.
@@ -56,19 +56,19 @@ Oggetto [**IAnalysisStatus**](ianalysisstatus.md) che rappresenta lo stato dei r
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-[**IInkAnalyzer**](iinkanalyzer.md) genera questo evento dopo aver riconciliato i risultati intermedi per la fase di analisi corrente.
+[**L'IInkAnalyzer**](iinkanalyzer.md) genera questo evento dopo aver riconciliato i risultati intermedi per la fase di analisi corrente.
 
-Se l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer**](iinkanalyzer.md), questo evento indica che il **IInkAnalyzer** ha completato le modifiche ai dati interni per questa fase di analisi.
+Se l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer,**](iinkanalyzer.md)questo evento indica che **IInkAnalyzer** ha terminato di apportare modifiche ai dati interni per questa fase di analisi.
 
-Bloccare la struttura dei dati quando [**IInkAnalyzer**](iinkanalyzer.md) genera l'evento [**\_ IAnalysisProxyEvents:: InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md) . Le modifiche apportate alla struttura dei dati durante questa fase dell'analisi possono causare errori nell'analisi dell'input penna e nella sincronizzazione. È possibile sbloccare la struttura dei dati quando **IInkAnalyzer** genera l'evento **\_ IAnalysisEvents:: IntermediateResults ()** o [**\_ IAnalysisEvents:: results**](-ianalysisevents-results.md) .
+Bloccare la struttura dei dati [**quando IInkAnalyzer**](iinkanalyzer.md) genera l'evento [**\_ IAnalysisProxyEvents::InkAnalyzerStateChanging.**](-ianalysisproxyevents-inkanalyzerstatechanging.md) Le modifiche alla struttura dei dati durante questa fase di analisi possono causare errori nell'analisi e nella sincronizzazione dell'input penna. È possibile sbloccare la struttura dei dati quando **IInkAnalyzer** genera l'evento **\_ IAnalysisEvents::IntermediateResults** o [**\_ IAnalysisEvents::Results.**](-ianalysisevents-results.md)
 
-Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer**](iinkanalyzer.md), vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con analisi input penna.](data-proxy-with-ink-analysis.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) genera risultati intermedi solo quando le modalità di analisi hanno il flag **AnalysisModes \_ IntermediateResults ()** impostato (vedere il [**Metodo IInkAnalyzer:: GetAnalysisModes**](iinkanalyzer-getanalysismodes.md)).
+[**IInkAnalyzer**](iinkanalyzer.md) genera risultati intermedi solo quando per le modalità di analisi è impostato il flag **\_ IntermediateResults di AnalysisModes** (vedere [**Metodo IInkAnalyzer::GetAnalysisModes).**](iinkanalyzer-getanalysismodes.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,9 +76,9 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -90,10 +90,10 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 [**\_IAnalysisEvents**](-ianalysisevents.md)
 </dt> <dt>
 
-[**AnalysisModes**](analysismodes.md)
+[**Analysismodes**](analysismodes.md)
 </dt> <dt>
 
-[**\_IAnalysisEvents:: results**](-ianalysisevents-results.md)
+[**\_IAnalysisEvents::Results**](-ianalysisevents-results.md)
 </dt> <dt>
 
 [**\_IAnalysisProxyEvents**](-ianalysisproxyevents.md)
@@ -102,11 +102,11 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>

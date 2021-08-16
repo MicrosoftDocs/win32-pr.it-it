@@ -1,5 +1,5 @@
 ---
-description: "Elemento InkClass: rappresenta i tratti raccolti dell'input penna all'interno di uno spazio input penna."
+description: "Elemento InkClass: rappresenta i tratti di input penna raccolti all'interno di uno spazio input penna."
 ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
@@ -41,7 +41,7 @@ Nessuno.
 |--------------|--------------------------------------------|
 | Tipo di elemento | **xs:string**                              |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink |
-| Nome schema  | Lettore di journal                             |
+| Nome schema  | Lettore journal                             |
 
 
 

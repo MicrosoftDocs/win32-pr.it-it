@@ -1,6 +1,6 @@
 ---
 title: Supporto di queste estensioni da parte dei protocolli multipoint
-description: Gli argomenti seguenti indicano come è possibile accedere alle funzionalità multicast IP e da punto a multipunto di ATM tramite le funzioni multipunto Windows Sockets 2.
+description: Gli argomenti seguenti indicano come è possibile accedere alle funzionalità da punto a multipoint IP multicast e ATM tramite le funzioni multipoint Windows Sockets 2.
 ms.assetid: f6f1dcfa-c316-455b-a993-e09f02c2eedb
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,10 +13,10 @@ ms.locfileid: "118322191"
 ---
 # <a name="how-multipoint-protocols-support-these-extensions"></a>Supporto di queste estensioni da parte dei protocolli multipoint
 
-Gli argomenti seguenti indicano come è possibile accedere alle funzionalità multicast IP e da punto a multipunto di ATM tramite le funzioni multipunto Windows Sockets 2. Questi due esempi sono stati scelti perché sono popolari e ben compresi.
+Gli argomenti seguenti indicano come è possibile accedere alle funzionalità da punto a multipoint IP multicast e ATM tramite le funzioni multipoint Windows Sockets 2. Questi due sono stati scelti come esempi perché sono popolari e ben compresi.
 
 -   [IP Multicast](ip-multicast-2.md)
--   [ATM Point to Multipoint](atm-point-to-multipoint-2.md)
+-   [ATM Da punto a multipunto](atm-point-to-multipoint-2.md)
 
  
 

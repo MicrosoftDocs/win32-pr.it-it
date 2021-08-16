@@ -5,7 +5,7 @@ ms.assetid: 8f9d5bde-95b1-4566-84ee-31c6ed5e8986
 keywords:
 - Metodo SetCorrelationId nap
 - Metodo SetCorrelationId NAP , interfaccia INapEnforcementClientConnection
-- Interfaccia INapEnforcementClientConnection nap, metodo SetCorrelationId
+- Interfaccia INapEnforcementClientConnection NAP, metodo SetCorrelationId
 topic_type:
 - apiref
 api_name:
@@ -76,7 +76,7 @@ Correlation-id viene impostato da NapAgent e in base all'ID connessione.
 
 Questo ID viene usato per correlare richieste e risposte, ad esempio descrive in modo univoco uno scambio SoH e contiene sempre l'ID del set SoH più recente nell'oggetto connessione.
 
-Quando viene ricevuto SoH-Response, NapAgent garantisce prima di tutto che gli ID corrispondano. In caso contrario, viene restituito un errore e l'applicatore deve eliminare il pacchetto. Per [**altri dettagli, vedere INapEnforcementClientBinding::P rocessSoHResponse.**](inapenforcementclientbinding-processsohresponse-method.md)
+Quando viene ricevuto SoH-Response, NapAgent garantisce prima di tutto che gli ID corrispondano. In caso contrario, viene restituito un errore e l'applicatore deve eliminare il pacchetto. Per altri dettagli, vedere [**INapEnforcementClientBinding::P rocessSoHResponse.**](inapenforcementclientbinding-processsohresponse-method.md)
 
 ## <a name="requirements"></a>Requisiti
 

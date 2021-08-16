@@ -1,7 +1,7 @@
 ---
-description: Inviato quando il numero del programma DVD o il numero di cella cambia.
+description: Inviato quando cambia il numero di programma DVD o il numero di cella.
 ms.assetid: a500e86d-cd42-4716-9c57-828a72c4e1df
-title: EC_DVD_PROGRAM_CELL_CHANGE (Dvdevcode. h)
+title: EC_DVD_PROGRAM_CELL_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: d41f691016c3e41cfc3e14ed1ce6fff276dcc70e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90683bfff2cc6d3bbdd09c6a51dd7febbb9516f81738c513d446264c2f1ffd0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820396"
 ---
-# <a name="ec_dvd_program_cell_change"></a>\_ \_ \_ modifica cella programma DVD \_ EC
+# <a name="ec_dvd_program_cell_change"></a>EC \_ DVD \_ PROGRAM \_ CELL \_ CHANGE
 
-Inviato quando il numero del programma DVD o il numero di cella cambia.
+Inviato quando cambia il numero di programma DVD o il numero di cella.
 
 ## <a name="parameters"></a>Parametri
 
@@ -44,7 +44,7 @@ Nuovo numero di cella.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDVDControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **DVD \_ NotifyPositionChange** su **true**.
+Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **DVD \_ NotifyPositionChange** su **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Questo evento è disabilitato per impostazione predefinita. Per abilitare questo
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

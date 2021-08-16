@@ -23,7 +23,7 @@ ms.locfileid: "118369395"
 ---
 # <a name="wm_cap_set_scale-message"></a>Messaggio WM \_ CAP \_ SET \_ SCALE
 
-Il **messaggio WM CAP SET \_ \_ \_ SCALE** abilita o disabilita il ridimensionamento delle immagini video di anteprima. Se il ridimensionamento è abilitato, il fotogramma video acquisito viene adattato alle dimensioni della finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPreviewScale.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale)
+Il **messaggio WM CAP SET \_ \_ \_ SCALE** abilita o disabilita il ridimensionamento delle immagini video di anteprima. Se la scalabilità è abilitata, il fotogramma video acquisito viene adattato alle dimensioni della finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPreviewScale.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale)
 
 
 ```C++
@@ -41,19 +41,19 @@ lParam = 0L;
 <span id="f"></span><span id="F"></span>*F*
 </dt> <dd>
 
-Flag di ridimensionamento di anteprima. Specificare **TRUE** per questo parametro per adattare i fotogrammi di anteprima alle dimensioni della finestra di acquisizione o **FALSE** per visualizzarli alle dimensioni naturali.
+Flag di ridimensionamento in anteprima. Specificare **TRUE** per questo parametro per estendere i fotogrammi di anteprima alle dimensioni della finestra di acquisizione o **FALSE** per visualizzarli alle dimensioni naturali.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
 Il ridimensionamento delle immagini di anteprima controlla la presentazione immediata dei fotogrammi acquisiti all'interno della finestra di acquisizione. Non ha alcun effetto sulle dimensioni dei frame salvati nel file.
 
-Il ridimensionamento non ha alcun effetto quando si usa la sovrimpressione per visualizzare i video nel buffer dei fotogrammi.
+Il ridimensionamento non ha alcun effetto quando si usa la sovrimpressione per visualizzare il video nel buffer dei fotogrammi.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -3,7 +3,7 @@ title: Ribbon.QuickAccessToolbar - proprietà
 description: Rappresenta un contenitore per la barra di accesso rapido.
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Proprietà Ribbon.QuickAccessToolbar Windows barra multifunzione
+- Proprietà Ribbon.QuickAccessToolbar Windows Barra multifunzione
 topic_type:
 - apiref
 api_name:

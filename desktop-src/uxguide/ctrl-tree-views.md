@@ -18,7 +18,7 @@ ms.locfileid: "118217649"
 
 Con una visualizzazione albero, gli utenti possono visualizzare e interagire con una raccolta di oggetti disposti gerarchicamente, usando una singola selezione o più selezioni.
 
-In un albero gli oggetti che contengono dati sono denominati nodi foglia e gli oggetti che contengono altri oggetti sono denominati nodi contenitore. Un singolo nodo contenitore di primo livello è denominato nodo radice. Gli utenti possono espandere e comprimere i nodi del contenitore facendo clic sui pulsanti di espansione più e meno.
+In un albero gli oggetti che contengono dati sono denominati nodi foglia e gli oggetti che contengono altri oggetti sono denominati nodi contenitore. Un singolo nodo contenitore in primo piano è denominato nodo radice. Gli utenti possono espandere e comprimere i nodi del contenitore facendo clic sui pulsanti di espansione più e meno.
 
 ![Screenshot della visualizzazione albero di Esplora risorse ](images/ctrl-tree-views-image1.png)
 
@@ -40,7 +40,7 @@ Visualizzazione ad albero tipica.
 **Per usare una visualizzazione elenco, è possibile appiattire le informazioni gerarchiche usando le tecniche seguenti:**
 
 -   Rimuovere il nodo radice, se presente, perché spesso non è necessario.
--   Usare gruppi di visualizzazione elenco, schede, elenchi [a](/windows/desktop/uxguide/ctrl-drop)discesa o [intestazioni espandibili](glossary.md) per sostituire i contenitori di primo livello.
+-   Usare gruppi di visualizzazione [elenco,](/windows/desktop/uxguide/ctrl-drop)schede, elenchi a discesa o [intestazioni espandibili](glossary.md) per sostituire i contenitori di primo livello.
 
     ![Screenshot dei gruppi di visualizzazione elenco contenenti elenchi ](images/ctrl-tree-views-image2.png)
 
@@ -48,7 +48,7 @@ Visualizzazione ad albero tipica.
 
     ![Screenshot delle schede usate per i contenitori di primo livello ](images/ctrl-tree-views-image3.png)
 
-    In questo esempio vengono usate le schede per i contenitori di primo livello
+    In questo esempio le schede vengono usate per i contenitori di primo livello
 
     ![Screenshot dell'elenco a discesa usato come contenitore ](images/ctrl-tree-views-image4.png)
 
@@ -69,7 +69,7 @@ Per decidere se una visualizzazione albero è il controllo giusto, considerare q
 -   **Gli elementi hanno dati ausiliari?** In tal caso, è consigliabile usare una visualizzazione elenco nella modalità di visualizzazione Dettagli per sfruttare al meglio i dati ausiliari.
 -   **I dati di livello inferiore sono correlati a sottoattività indipendenti?** In tal caso, è consigliabile visualizzare le informazioni in un controllo associato o in una finestra separata (visualizzata tramite pulsanti di [comando](ctrl-command-buttons.md) o [collegamenti).](ctrl-command-links.md)
 -   **Gli utenti di destinazione sono avanzati?** Gli utenti avanzati sono più esperti nell'uso degli alberi. Se l'applicazione è destinata a utenti principianti, evitare di usare le visualizzazioni albero.
--   **Gli elementi hanno una categorizzazione singola, naturale e gerarchica che è familiare alla maggior parte degli utenti?** In tal caso, i dati sono ideali per una visualizzazione albero. Se è necessario disporre di più visualizzazioni o ordinamento, usare invece una visualizzazione elenco.
+-   **Gli elementi hanno una singola categorizzazione gerarchica naturale e familiare per la maggior parte degli utenti?** In tal caso, i dati sono ideali per una visualizzazione albero. Se è necessario disporre di più visualizzazioni o ordinamento, usare invece una visualizzazione elenco.
 -   **Gli utenti devono visualizzare i dati di livello inferiore in alcuni scenari, ma non in tutti, o in alcuni, ma non sempre?** In tal caso, i dati sono ideali per una visualizzazione albero.
 
 > [!Note]  
@@ -79,13 +79,13 @@ Per decidere se una visualizzazione albero è il controllo giusto, considerare q
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-Gli alberi hanno lo scopo di organizzare i dati e semplificare l'individuazione, ma è difficile rendere facilmente individuabili i dati all'interno di un albero. Quando si decidono le visualizzazioni albero e l'organizzazione, tenere presenti i principi seguenti.
+Gli alberi sono concepiti per organizzare i dati e semplificare l'individuazione, ma è difficile rendere facilmente individuabili i dati all'interno di un albero. Quando si decidono le visualizzazioni albero e la relativa organizzazione, tenere presenti i principi seguenti.
 
 ### <a name="predictability-and-discoverability"></a>Prevedibilità e individuabilità
 
 **Una visualizzazione albero è basata sulle relazioni tra gli oggetti.** Gli alberi funzionano meglio quando gli oggetti formano una relazione chiara, nota e che si escludono a vicenda in cui ogni oggetto viene mappato a un singolo contenitore facile da determinare.
 
-**Un problema significativo è che un oggetto può essere visualizzato in nodi diversi.** Ad esempio, dove gli utenti si aspetterebbero di trovare un dispositivo hardware che riproduce musica, ha un disco rigido di grandi dimensioni e usa una porta USB? Ad esempio, in uno dei diversi nodi contenitore, ad esempio Multimedia, Archiviazione, USB ed eventualmente in Risorse hardware. Una soluzione consiste nel posizionare ogni oggetto nel singolo contenitore più appropriato indipendentemente dalle circostanze. un altro approccio consiste nel posizionare ogni oggetto in tutti i contenitori applicabili. La prima promuove una gerarchia semplice e pulita e la seconda promuove l'individuabilità, ognuna presenta vantaggi e potenziali problemi.
+**Un problema significativo è che un oggetto può essere visualizzato in nodi diversi.** Ad esempio, dove gli utenti si aspetterebbero di trovare un dispositivo hardware che riproduce musica, ha un disco rigido di grandi dimensioni e usa una porta USB? Ad esempio, in uno qualsiasi dei diversi nodi contenitore, ad esempio Multimedia, Archiviazione, USB e possibilmente in Risorse hardware. Una soluzione consiste nel posizionare ogni oggetto nel singolo contenitore più appropriato indipendentemente dalle circostanze. un altro approccio consiste nel posizionare ogni oggetto in tutti i contenitori applicabili. La prima alza di livello una gerarchia semplice e pulita e la seconda promuove l'individuabilità, ognuna presenta vantaggi e potenziali problemi.
 
 **Gli utenti potrebbero non comprendere completamente il layout dell'albero, ma formeranno un modello mentale delle relazioni dopo aver interagito con l'albero per un po'.** Se il modello mentale non è corretto, si crea confusione. Si supponga, ad esempio, che un lettore musicale sia disponibile nei contenitori Multimediali, Archiviazione e USB. Questa disposizione migliora l'individuabilità. Se un utente trova per la prima volta il dispositivo in Multimedia, l'utente può concludere che tutti i dispositivi come i lettori musicali vengono visualizzati nel contenitore Multimedia. L'utente si aspetterà quindi che dispositivi simili, ad esempio fotocamere digitali, vengano visualizzati nel contenitore Multimediale e si confonderanno in caso contrario.
 
@@ -93,11 +93,11 @@ Gli alberi hanno lo scopo di organizzare i dati e semplificare l'individuazione,
 
 ### <a name="breadth-vs-depth"></a>Ampiezza e profondità
 
-Gli studi sull'usabilità hanno dimostrato che gli utenti hanno più successo nel trovare oggetti in un albero ampio che **in** un albero profondo, quindi quando si progetta un albero è consigliabile scegliere la larghezza rispetto alla profondità. Idealmente, un albero non deve avere più di quattro livelli (senza contare il nodo radice) e gli oggetti a cui si accede più di frequente dovrebbero essere visualizzati nei primi due livelli.
+Gli studi sull'usabilità hanno dimostrato che gli utenti hanno maggiore successo nel trovare oggetti in un albero ampio rispetto **a** un albero profondo, quindi quando si progetta un albero è consigliabile scegliere la larghezza rispetto alla profondità. Idealmente, un albero non deve avere più di quattro livelli (senza contare il nodo radice) e gli oggetti a cui si accede più di frequente dovrebbero essere visualizzati nei primi due livelli.
 
 ### <a name="other-principles"></a>Altri principi
 
--   Quando gli utenti trovano ciò che cercano, smetti di cercare. Non vogliono vedere dove altro potrebbe essere trovato un oggetto perché non è necessario. Questi utenti possono presupporre che il primo percorso trovato sia l'unico.
+-   Quando gli utenti trovano ciò che cercano, smetti di cercare. Non sono in grado di vedere dove altro potrebbe essere trovato un oggetto perché non è necessario. Questi utenti possono presupporre che il primo percorso trovato sia l'unico.
 -   Gli utenti hanno problemi a trovare oggetti in alberi complessi di grandi dimensioni. Gli utenti non eseguono una ricerca manuale esaustiva per trovare oggetti in tali alberi; si fermano quando si pensa di aver expended un impegno ragionevole. Di conseguenza, gli alberi complessi di grandi dimensioni devono essere integrati con altri metodi di accesso, ad esempio la ricerca di parole, un indice o un filtro.
 -   Alcuni programmi consentono agli utenti di creare alberi personalizzati. Anche se questi alberi auto-progettati potrebbero essere allineati con il modello mentale di un utente, vengono spesso creati in modo casuale e mal gestiti. Ad esempio, mentre un file system, un programma di posta elettronica e un elenco Preferiti archiviano in genere tipi simili di informazioni, gli utenti raramente si preoccupano di organizzarle nello stesso modo.
 
@@ -111,13 +111,13 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
 
 
 
-| Uso                           |    Esempio                         |
+| Utilizzo                           |    Esempio                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Visualizzazioni albero con solo nodi contenitore**<br/> gli utenti possono visualizzare e interagire con un contenitore alla volta. <br/>                        | In genere, a queste visualizzazioni albero è associato un controllo che visualizza il contenuto del contenitore selezionato, in modo che gli utenti possano interagire con un solo contenitore alla volta. <br/> ![Screenshot del riquadro contenitore e del riquadro contenuto ](images/ctrl-tree-views-image6.png)<br/> In questo esempio la visualizzazione albero include solo nodi contenitore. Il contenuto del nodo selezionato viene visualizzato nel controllo visualizzazione elenco associato.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Visualizzazioni albero con contenitori e nodi foglia**<br/> gli utenti possono visualizzare e interagire con contenitori e file.<br/>                       | In genere, a queste visualizzazioni albero è associato un controllo che visualizza il contenuto del contenitore o della foglia selezionata. per consentire agli utenti di interagire con i fogli di lavoro spesso è necessario supportare più selezioni. <br/> ![Screenshot del riquadro della visualizzazione struttura ad albero e del riquadro contenuto ](images/ctrl-tree-views-image7.png)<br/> In questo esempio la visualizzazione albero include sia nodi contenitore che nodi foglia. Poiché la selezione multipla è supportata, il contenuto degli elementi aperti viene visualizzato usando [le schede](ctrl-tabs.md) nel controllo associato.<br/> in alternativa, la visualizzazione albero può avere un elenco organizzato, in cui i contenitori sono intestazioni e le foglia sono opzioni. <br/> ![Screenshot della visualizzazione albero con intestazioni e opzioni ](images/ctrl-tree-views-image8.png)<br/> In questo esempio le foglia dell'albero sono opzioni e i contenitori sono categorie di opzioni.<br/> |
+| **Visualizzazioni albero con contenitori e nodi foglia**<br/> gli utenti possono visualizzare e interagire con contenitori e file.<br/>                       | In genere, a queste visualizzazioni albero è associato un controllo che visualizza il contenuto del contenitore o della foglia selezionata. per consentire agli utenti di interagire con i fogli di lavoro spesso è necessario supportare più selezioni. <br/> ![Screenshot del riquadro di visualizzazione ad albero e del riquadro contenuto ](images/ctrl-tree-views-image7.png)<br/> In questo esempio la visualizzazione albero include sia nodi contenitore che nodi foglia. Poiché la selezione multipla è supportata, il contenuto degli elementi aperti viene visualizzato usando [le schede](ctrl-tabs.md) nel controllo associato.<br/> in alternativa, la visualizzazione albero può avere un elenco organizzato, in cui i contenitori sono intestazioni e le foglia sono opzioni. <br/> ![Screenshot della visualizzazione albero con intestazioni e opzioni ](images/ctrl-tree-views-image8.png)<br/> In questo esempio le foglia dell'albero sono opzioni e i contenitori sono categorie di opzioni.<br/> |
 | **Visualizzazioni albero delle caselle di controllo**<br/> gli utenti possono selezionare un numero qualsiasi di elementi, incluso nessuno.<br/>                                             | Le caselle di controllo indicano chiaramente che è possibile selezionare più elementi. usare questo modello di albero quando la selezione multipla è essenziale o comune. <br/> ![Screenshot della visualizzazione albero con caselle di controllo ](images/ctrl-tree-views-image9.png)<br/> In questo esempio, una visualizzazione albero di caselle di controllo consente di attivare o disattivare la selezione delle funzionalità.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Generatori di visualizzazione albero**<br/> Gli utenti possono creare un albero aggiungendo un contenitore o una foglia alla volta e impostando facoltativamente l'ordine.<br/> | Molti alberi possono essere creati o modificati dagli utenti. alcuni alberi vengono creati usando i menu di scelta rapida e il trascinamento della selezione (ad esempio le cartelle in Esplora finestre), mentre altri alberi vengono compilati usando una finestra di dialogo specializzata ,ad esempio l'elenco Preferiti in Windows Internet Explorer. <br/> ![Screenshot della finestra di dialogo Preferiti ](images/ctrl-tree-views-image10.png)<br/> In questo esempio da Internet Explorer, gli utenti possono creare un proprio elenco di Preferiti usando una finestra di dialogo.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Visualizzazioni albero con metodi di accesso alternativi**<br/> gli utenti possono trovare oggetti in modi diversi dall'uso di un albero gerarchico.<br/>        | Come accennato in precedenza, gli utenti hanno difficoltà a trovare oggetti in alberi complessi di grandi dimensioni, quindi tali alberi devono essere integrati con altri metodi di accesso, ad esempio una ricerca di parole, un indice o un filtro. <br/> ![Screenshot del contenuto, dell'indice e delle schede Preferiti ](images/ctrl-tree-views-image11.png)<br/> In questo esempio, gli utenti possono anche accedere alle informazioni usando un sommario, un indice e i Preferiti. Per alcuni utenti, le schede indice e ricerca possono essere più utili rispetto alla scheda contenuto.<br/> ![Screenshot del menu Start e della casella di ricerca di Windows ](images/ctrl-tree-views-image12.png)<br/> In questo esempio il Windows menu Start consente anche agli utenti di accedere a programmi, file e pagine Web digitando parte del nome nella casella di ricerca.<br/>                                                                                                             |
+| **Generatori di visualizzazione albero**<br/> Gli utenti possono creare un albero aggiungendo un contenitore o una foglia alla volta e impostando facoltativamente l'ordine.<br/> | Molti alberi possono essere creati o modificati dagli utenti. alcuni alberi vengono creati usando i menu di scelta rapida e il trascinamento della selezione (ad esempio le cartelle in Esplora risorse), mentre altri alberi vengono compilati usando una finestra di dialogo specializzata, ad esempio l'elenco Preferiti in Windows Internet Explorer. <br/> ![Screenshot della finestra di dialogo Preferiti ](images/ctrl-tree-views-image10.png)<br/> In questo esempio da Internet Explorer, gli utenti possono compilare un proprio elenco di Preferiti usando una finestra di dialogo.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Visualizzazioni albero con metodi di accesso alternativi**<br/> gli utenti possono trovare oggetti in modi diversi dall'uso di un albero gerarchico.<br/>        | Come accennato in precedenza, gli utenti hanno problemi a trovare oggetti in alberi complessi di grandi dimensioni, quindi tali alberi devono essere integrati con altri metodi di accesso, ad esempio una ricerca di parole, un indice o un filtro. <br/> ![Screenshot del contenuto, dell'indice e delle schede Preferiti ](images/ctrl-tree-views-image11.png)<br/> In questo esempio, gli utenti possono anche accedere alle informazioni usando un sommario, un indice e i Preferiti. Per alcuni utenti, le schede indice e ricerca possono essere più utili rispetto alla scheda contenuto.<br/> ![Screenshot del menu Start e della casella di ricerca di Windows ](images/ctrl-tree-views-image12.png)<br/> In questo esempio il Windows menu Start consente inoltre agli utenti di accedere a programmi, file e pagine Web digitando parte del nome nella casella di ricerca.<br/>                                                                                                             |
 
 
 
@@ -136,18 +136,18 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
 
     In questo esempio l'elenco viene inizialmente presentato con esempi.
 
--   **Non rendere comprimibile i nodi contenitore se gli utenti non hanno alcun motivo per comprimerli.** In questo modo si aggiunge una complessità non necessaria.
+-   **Non rendere comprimibile i nodi contenitore se gli utenti non hanno motivo di comprimerli.** In questo modo si aggiunge una complessità non necessaria.
 -   **Se le prestazioni del carico sono un problema, visualizzare solo i contenitori di primo e secondo livello dell'albero per impostazione predefinita.** È quindi possibile caricare dati aggiuntivi su richiesta quando un utente espande i rami nell'albero.
--   **Se gli** utenti espandono o comprendono un contenitore, rendere persistente tale stato in modo che venga reso attivo alla successiva visualizzazione albero, a meno che gli utenti non preferiscano iniziare con lo stato predefinito. La persistenza deve essere basata su una visualizzazione per albero, per utente.
+-   **Se gli utenti** espandono o comprendono un contenitore, rendere persistente tale stato in modo che venga reso attivo alla successiva visualizzazione albero, a meno che gli utenti non preferiscano iniziare con lo stato predefinito. La persistenza deve essere basata su una visualizzazione per albero, per utente.
 -   **Se i contenitori di alto livello hanno contenuti simili, è consigliabile usare gli indizi visivi per differenziarli.**
 
     **Non corretto:**
 
     ![Screenshot degli elementi di Outlook con icone diverse ](images/ctrl-tree-views-image14.png)
 
-    In questo esempio, le cartelle Cassetta postale e Archivio hanno contenuto simile. Dopo l'ulteriore espansione degli alberi, è molto difficile per gli utenti sapere dove si trova nell'albero, con una confusione. L'uso di icone leggermente diverse nelle diverse sezioni risolverebbe questo problema.
+    In questo esempio, le cartelle Cassetta postale e Archivio hanno contenuto simile. Una volta espansi ulteriormente gli alberi, è molto difficile per gli utenti sapere dove si trova nell'albero, causando confusione. L'uso di icone leggermente diverse nelle diverse sezioni risolverebbe questo problema.
 
--   **Riconsiderare le linee di connessione.** Anche se queste righe mostrano chiaramente le relazioni tra i nodi contenitore e foglia, aggiungono confusione visiva senza facilitare in modo significativo la comprensione. In particolare, non sono utili quando i nodi sono vicini tra loro e non sono utili quando i nodi sono così distanti che lo scorrimento è necessario.
+-   **Riconsiderare le linee di connessione.** Anche se queste righe mostrano chiaramente le relazioni tra i nodi contenitore e foglia, aggiungono confusione visiva senza facilitare in modo significativo la comprensione. In particolare, non sono utili quando i nodi sono vicini e non sono utili quando i nodi sono così distanti che è necessario lo scorrimento.
 
     **Corretto:**
 
@@ -169,7 +169,7 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
 
     In questo esempio, un infotip fornisce altre informazioni.
 
--   **Fornire menu di scelta rapida dei comandi pertinenti.** Tali comandi includono Taglia, Copia, Incolla, Rimuovi o Elimina, Rinomina e Proprietà.
+-   **Fornire i menu di scelta rapida dei comandi pertinenti.** Tali comandi includono Taglia, Copia, Incolla, Rimuovi o Elimina, Rinomina e Proprietà.
 -   **Quando si disabilita una visualizzazione albero, disabilitare anche le etichette e i pulsanti di comando associati.**
 
 ### <a name="tree-organization"></a>Organizzazione albero
@@ -178,7 +178,7 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
 -   **Se non è possibile usare una struttura di questo tipo, provare a bilanciare l'individuabilità con un modello utente prevedibile che riduce al minimo la confusione.**
 -   **Per migliorare in modo sicuro l'individuabilità, inserire un elemento in più contenitori quando:**
     -   L'elemento non è correlato ad altri elementi simili, pertanto gli utenti non vengono confusi da associazioni non corrette.
-    -   Esistono solo alcuni di questi elementi con ridondanza (quindi l'albero non diventa gonfio).
+    -   Esistono solo alcuni di questi elementi con ridondanza (quindi l'albero non si gonfirà).
 -   **Usare la struttura gerarchica più semplice che funzioni correttamente.** A tale scopo, procedere nel seguente modo:
     -   Posizionare gli oggetti a cui si accede più di frequente nei primi due livelli dell'albero (senza contare il nodo radice) e posizionare gli oggetti a cui si accede meno di frequente più in basso nella gerarchia.
     -   Eliminare i contenitori di livello intermedio ridondanti o combinarli.
@@ -195,7 +195,7 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
     In questo esempio il numero di elementi selezionati viene visualizzato sotto l'albero . È chiaro che due elementi non sono selezionati.
 
 -   Se sono presenti potenzialmente molti elementi e la selezione o la cancellazione di tutti gli elementi è probabile, aggiungere Seleziona tutto e Cancella tutti i pulsanti di comando.
--   **Usare le caselle di controllo a stato misto per indicare la selezione parziale degli elementi in un contenitore.**
+-   **Usare le caselle di controllo dello stato misto per indicare la selezione parziale degli elementi in un contenitore.**
 
     **Corretto:**
 
@@ -209,7 +209,7 @@ Le visualizzazioni albero hanno diversi modelli di utilizzo:
 
 Dimensioni e spaziatura consigliate per i controlli visualizzazione albero.
 
--   **Scegliere una larghezza della visualizzazione albero che eviti lo** scorrimento orizzontale per la maggior parte degli elementi quando l'albero è completamente espanso.
+-   **Scegliere una larghezza della visualizzazione albero che eviti la necessità** di scorrimento orizzontale per la maggior parte degli elementi quando l'albero è completamente espanso.
 -   **Includere un ulteriore 30% per supportare la localizzazione.**
 -   **Scegliere un'altezza della visualizzazione albero che elimini lo scorrimento verticale non necessario.** Valutare la possibilità di rendere leggermente più lunga una visualizzazione albero (o anche di più se è disponibile spazio) se in questo modo si riduce la necessità di una barra di scorrimento verticale.
 

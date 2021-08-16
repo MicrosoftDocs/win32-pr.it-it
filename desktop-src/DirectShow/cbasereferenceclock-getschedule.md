@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la [**variabile membro CBaseReferenceClock::m \_ pSchedule.**](cbasereferenceclock-m-pschedule.md)
+Restituisce la variabile membro [**CBaseReferenceClock::m \_ pSchedule.**](cbasereferenceclock-m-pschedule.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Restituisce la [**variabile membro CBaseReferenceClock::m \_ pSchedule.**](cbase
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

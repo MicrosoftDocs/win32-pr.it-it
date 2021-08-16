@@ -1,6 +1,6 @@
 ---
 title: Solid Foundation
-description: Windows 7 offre una piattaforma e strumenti di sviluppo altamente produttivi che offrono nozioni fondamentali sui sistemi operativi di base.
+description: Windows 7 offre una piattaforma di sviluppo e strumenti altamente produttivi che offrono nozioni fondamentali sui sistemi operativi di base.
 ms.assetid: 2ca82ec9-639d-4122-b9ce-b1d5b397f880
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118203818"
 ---
 # <a name="solid-foundation"></a>Solid Foundation
 
-Windows 7 offre una piattaforma e strumenti di sviluppo altamente produttivi che offrono nozioni fondamentali sui sistemi operativi di base. Windows 7 si basa sulla piattaforma Windows Vista, offrendo agli sviluppatori la capacità di creare applicazioni compatibili con entrambe le piattaforme, limitando al tempo stesso i problemi di compatibilità delle applicazioni. Windows 7 migliora notevolmente le prestazioni e il risparmio energia, in modo da poter creare applicazioni che ottimizzano l'esperienza per dispositivi mobili. Di conseguenza, le applicazioni saranno più visivamente accattivanti, più facili da creare e supporteranno una gamma più ampia di standard internazionali. Sono stati apportati miglioramenti anche per il supporto globale, l'accessibilità e la distribuzione di applicazioni.
+Windows 7 offre una piattaforma di sviluppo e strumenti altamente produttivi che offrono nozioni fondamentali sui sistemi operativi di base. Windows 7 si basa sulla piattaforma Windows Vista, offrendo agli sviluppatori la capacità di creare applicazioni compatibili con entrambe le piattaforme, limitando al tempo stesso i problemi di compatibilità delle applicazioni. Windows 7 migliora notevolmente le prestazioni e il risparmio energia in modo da poter creare applicazioni che ottimizzano l'esperienza mobile. Di conseguenza, le applicazioni saranno visivamente più accattivanti, più facili da creare e supporteranno una gamma più ampia di standard internazionali. Sono stati apportati progressi anche nel supporto globale, nell'accessibilità e nella distribuzione delle applicazioni.
 
 -   [Compatibilità e affidabilità](compatibility-and-reliability.md)
 -   [Gestione e distribuzione](management-and-deployment.md)

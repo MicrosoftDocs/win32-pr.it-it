@@ -1,9 +1,9 @@
 ---
 title: WM_CAP_STOP messaggio (Vfw.h)
-description: Il messaggio WM \_ CAP \_ STOP arresta l'operazione di acquisizione. È possibile inviare questo messaggio in modo esplicito o tramite la macro capCaptureStop.
+description: Il messaggio WM \_ CAP \_ STOP arresta l'operazione di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro capCaptureStop.
 ms.assetid: 0fea82f5-f381-485a-82ae-b081b3a5e402
 keywords:
-- WM_CAP_STOP messaggio Windows Multimedia
+- WM_CAP_STOP messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369330"
 ---
-# <a name="wm_cap_stop-message"></a>Messaggio \_ CAP \_ STOP WM
+# <a name="wm_cap_stop-message"></a>Messaggio \_ WM CAP \_ STOP
 
-Il **messaggio WM CAP \_ \_ STOP** arresta l'operazione di acquisizione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
+Il **messaggio WM CAP \_ \_ STOP** arresta l'operazione di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
 
-Nell'acquisizione dei frame del passaggio, i dati dell'immagine raccolti prima dell'invio del messaggio vengono mantenuti nel file di acquisizione. Una durata equivalente dei dati audio viene mantenuta anche nel file di acquisizione se è stata abilitata l'acquisizione audio.
+Nell'acquisizione dei fotogrammi del passaggio, i dati dell'immagine raccolti prima dell'invio del messaggio vengono conservati nel file di acquisizione. Una durata equivalente dei dati audio viene mantenuta anche nel file di acquisizione se l'acquisizione audio è stata abilitata.
 
 
 ```C++
@@ -38,11 +38,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-L'operazione di acquisizione deve cedere per utilizzare questo messaggio. Usare il [**messaggio WM \_ CAP \_ ABORT**](wm-cap-abort.md) per abbandonare l'operazione di acquisizione corrente.
+L'operazione di acquisizione deve essere eseguita per usare questo messaggio. Usare il [**messaggio WM \_ CAP \_ ABORT**](wm-cap-abort.md) per abbandonare l'operazione di acquisizione corrente.
 
 ## <a name="requirements"></a>Requisiti
 

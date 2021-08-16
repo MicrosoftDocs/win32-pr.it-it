@@ -1,9 +1,9 @@
 ---
 title: WM_CAP_SET_CALLBACK_FRAME messaggio (Vfw.h)
-description: Il messaggio WM \_ CAP SET CALLBACK FRAME imposta una funzione di callback di anteprima \_ \_ \_ nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i fotogrammi di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetCallbackOnFrame.
+description: Il messaggio WM \_ CAP SET CALLBACK FRAME imposta una funzione di callback di anteprima \_ \_ \_ nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i frame di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetCallbackOnFrame.
 ms.assetid: 3882e6f6-c48c-4e50-9697-cbdf5b9342a5
 keywords:
-- WM_CAP_SET_CALLBACK_FRAME messaggio Windows Multimediali
+- WM_CAP_SET_CALLBACK_FRAME di messaggi Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369509"
 ---
-# <a name="wm_cap_set_callback_frame-message"></a>Messaggio \_ WM CAP SET CALLBACK \_ \_ \_ FRAME
+# <a name="wm_cap_set_callback_frame-message"></a>Messaggio WM \_ CAP \_ SET CALLBACK \_ \_ FRAME
 
-Il **messaggio WM CAP SET CALLBACK \_ \_ \_ \_ FRAME** imposta una funzione di callback di anteprima nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i fotogrammi di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
+Il **messaggio WM CAP SET CALLBACK \_ \_ \_ \_ FRAME** imposta una funzione di callback di anteprima nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i frame di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntatore alla funzione di callback di anteprima di [**tipo capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Specificare **NULL per** questo parametro per disabilitare una funzione di callback installata in precedenza.
+Puntatore alla funzione di callback di anteprima, di [**tipo capVideoStreamCallback.**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback) Specificare **NULL per** questo parametro per disabilitare una funzione di callback installata in precedenza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se è in corso un'acquisizione di streaming o una sessione di acquisizione a frame singolo.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se è in corso un'acquisizione di flusso o una sessione di acquisizione a frame singolo.
 
 ## <a name="remarks"></a>Commenti
 
-La finestra di acquisizione chiama la funzione di callback prima di visualizzare i frame di anteprima. Ciò consente a un'applicazione di modificare il frame, se necessario. Questa funzione di callback non viene usata durante l'acquisizione di video in streaming.
+La finestra di acquisizione chiama la funzione di callback prima di visualizzare i frame di anteprima. In questo modo un'applicazione può modificare il frame, se necessario. Questa funzione di callback non viene usata durante l'acquisizione di video in streaming.
 
 ## <a name="requirements"></a>Requisiti
 

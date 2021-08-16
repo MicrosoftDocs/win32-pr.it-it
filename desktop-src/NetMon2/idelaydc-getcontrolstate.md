@@ -66,7 +66,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 | Codice restituito                                                                                          | Descrizione                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettere NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ IN RITARDO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
 
 
 

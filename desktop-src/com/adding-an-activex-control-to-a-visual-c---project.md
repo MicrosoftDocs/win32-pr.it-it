@@ -17,10 +17,10 @@ La procedura seguente aggiunge la classe dispatch e i file di intestazione per u
 
 **Per aggiungere un controllo ActiveX a un Visual C++ Project**
 
-1.  Scegliere **Aggiungi** Project dal menu **Project**. Viene visualizzato un menu di scelta rapida.
+1.  Scegliere **Aggiungi Project** dal menu **Project**. Viene visualizzato un menu di scelta rapida.
 2.  Fare **clic su Componenti e controlli**. Verrà **visualizzata la finestra di dialogo Raccolta** componenti e controlli .
 3.  Fare clic sul componente da aggiungere al progetto. Visual C++ viene visualizzata una finestra di dialogo da cui è possibile selezionare un subset delle classi del componente da aggiungere al progetto.
-4.  Fare clic per selezionare le caselle di controllo delle classi da aggiungere e fare clic su **OK**.
+4.  Fare clic per selezionare le caselle di controllo delle classi da aggiungere e fare clic su **OK.**
 
 Visual C++ genera i file di classe e di intestazione dispatch per il componente e li aggiunge al progetto.
 

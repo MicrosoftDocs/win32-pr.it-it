@@ -245,7 +245,7 @@ Exit:
 
 <dl> <dt>
 
-[**Configurazione dei Flussi**](configuring-audio-streams.md)
+[**Configurazione di audio Flussi**](configuring-audio-streams.md)
 </dt> <dt>
 
 [**Per enumerare i formati di codec**](to-enumerate-codec-formats.md)

@@ -24,7 +24,7 @@ ms.locfileid: "117819107"
 # <a name="imediadetget_currentstream-method"></a>Metodo IMediaDet::get \_ CurrentStream
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 

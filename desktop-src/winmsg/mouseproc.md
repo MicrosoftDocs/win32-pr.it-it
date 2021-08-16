@@ -44,10 +44,10 @@ ms.locfileid: "118200692"
 ## <a name="description"></a>Descrizione
 
 Funzione di callback definita dall'applicazione o definita dalla libreria usata con la [funzione SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
-Il sistema chiama questa funzione ogni volta che un'applicazione chiama [la funzione GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ed è presente un messaggio del mouse da elaborare.
+Il sistema chiama questa funzione ogni volta che un'applicazione chiama la [funzione GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ed è presente un messaggio del mouse da elaborare.
 
 Il **tipo HOOKPROC** definisce un puntatore a questa funzione di callback.
-**MouseProc è** un segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
+**MouseProc** è un segnaposto per il nome di funzione definito dall'applicazione o definito dalla libreria.
 
 ```cpp
 LRESULT CALLBACK MouseProc(
@@ -64,7 +64,7 @@ LRESULT CALLBACK MouseProc(
 Tipo: **int**
 
 Codice utilizzato dalla routine hook per determinare come elaborare il messaggio.
-Se *nCode* è minore di zero, la procedura hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx**.
+Se *nCode* è minore di zero, la routine hook deve passare il messaggio alla [funzione CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito **da CallNextHookEx**.
 Questo parametro può avere uno dei valori seguenti.
 
 | Valore | Significato |
@@ -88,10 +88,10 @@ Puntatore a una [struttura MOUSEHOOKSTRUCT.](/windows/desktop/api/winuser/ns-win
 
 Tipo: **LRESULT**
 
-Se *nCode* è minore di zero, la routine hook deve restituire il valore restituito **da CallNextHookEx.**
+Se *nCode* è minore di zero, la routine hook deve restituire il valore restituito **da CallNextHookEx**.
 
-Se *nCode* è maggiore o uguale a zero e la procedura hook non ha elaborata il messaggio, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito. In caso contrario, le altre applicazioni in cui [WH_MOUSE](about-hooks.md) hook non riceveranno notifiche hook e potrebbero comportarsi in modo non corretto.
-Se la procedura hook ha elaborato il messaggio, può restituire un valore diverso da zero per impedire al sistema di passare il messaggio alla routine della finestra di destinazione.
+Se *nCode* è maggiore o uguale a zero e la routine hook non ha elaborata il messaggio, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito. In caso contrario, altre applicazioni che hanno [installato](about-hooks.md) WH_MOUSE hook non riceveranno notifiche hook e potrebbero comportarsi in modo non corretto.
+Se la routine hook ha elaborato il messaggio, può restituire un valore diverso da zero per impedire al sistema di passare il messaggio alla procedura della finestra di destinazione.
 
 ## <a name="remarks"></a>Commenti
 

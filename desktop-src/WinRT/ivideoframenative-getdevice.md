@@ -56,7 +56,7 @@ Quando questo metodo viene restituito correttamente, contiene il puntatore di di
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK al completamento dell'operazione.
+Restituisce S \_ OK al completamento corretto.
 
 ## <a name="see-also"></a>Vedi anche
 

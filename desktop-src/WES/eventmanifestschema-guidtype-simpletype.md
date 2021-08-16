@@ -3,7 +3,7 @@ title: Tipo semplice GUIDType (schema EventManifest)
 description: Definisce un tipo di identificatore univoco globale, in formato Registro di sistema. | Tipo semplice GUIDType (schema EventManifest)
 ms.assetid: c35fa54b-5a2e-46de-a1c7-fc408b00ee68
 keywords:
-- Log eventi di tipo semplice GUIDType
+- GuidType tipo semplice EventLog
 topic_type:
 - apiref
 api_name:
@@ -50,8 +50,8 @@ Il **tipo semplice GUIDType** è una stringa limitata dal modello seguente:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

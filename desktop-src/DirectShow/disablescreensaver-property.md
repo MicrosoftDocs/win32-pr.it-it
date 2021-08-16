@@ -1,15 +1,15 @@
 ---
-description: La proprietà DVDAdm. DisableScreenSaver attiva o disattiva la screen saver di sistema.
+description: La proprietà DVDAdm.DisableScreenSaver attiva o screen saver sistema.
 ms.assetid: 78a0512f-456a-45b6-8717-13593461a765
 title: Proprietà DisableScreenSaver
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d651026f2bf09f872655a0ef58accb3a6173dcb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9bc714dbbdc3e9b144f2d49cb54871cdf09baad5df39f8e18b962d7fc415d44a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821129"
 ---
 # <a name="disablescreensaver-property"></a>Proprietà DisableScreenSaver
 
@@ -18,7 +18,7 @@ ms.locfileid: "103876034"
 
  
 
-La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva la screen saver di sistema.
+La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva screen saver sistema.
 
 ``` syntax
 [ bDisabled = ] DVD.DVDAdm.DisableScreenSaver
@@ -26,11 +26,11 @@ La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva la screen saver di 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore booleano che indica se le impostazioni screen saver del sistema sono disabilitate per l'applicazione DVD Player; true indica che le impostazioni sono disabilitate.
+Restituisce un valore booleano che indica se le impostazioni screen saver del sistema sono disabilitate per l'applicazione lettore DVD. true indica che le impostazioni sono disabilitate.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e il valore predefinito è true. Quando si visualizza un disco DVD-Video, un utente in genere non utilizza il mouse o la tastiera per periodi di tempo prolungati. Il controllo® ActiveX MSWebDVD Disabilita quindi il screen saver di sistema per impostazione predefinita. Oggetto
+Questa proprietà è di lettura/scrittura con il valore predefinito true. Quando si visualizza un DVD-Video, un utente in genere non usa il mouse o la tastiera per lunghi periodi di tempo. Il controllo ActiveX® MSWebDVD disabilita quindi l'screen saver di sistema per impostazione predefinita. Oggetto
 
 ## <a name="see-also"></a>Vedi anche
 

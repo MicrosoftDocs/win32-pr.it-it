@@ -1,7 +1,7 @@
 ---
-description: Cerca la destinazione di un collegamento della shell, anche se la destinazione è stata spostata o rinominata.
+description: Cerca la destinazione di un collegamento shell, anche se la destinazione è stata spostata o rinominata.
 ms.assetid: 60e119be-8e45-4f63-a381-cad048de0765
-title: Metodo ShellLinkObject. Resolve (shldisp. h)
+title: Metodo ShellLinkObject.Resolve (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b1cb0760f1ee19acfa10208711e73919fd084ecf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdff3fd1a606b8dbec35476988497dd14892692a42e6502343716264873c184d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857494"
 ---
-# <a name="shelllinkobjectresolve-method"></a>Metodo ShellLinkObject. Resolve
+# <a name="shelllinkobjectresolve-method"></a>Metodo ShellLinkObject.Resolve
 
-Cerca la destinazione di un collegamento della shell, anche se la destinazione è stata spostata o rinominata.
+Cerca la destinazione di un collegamento shell, anche se la destinazione è stata spostata o rinominata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,12 +39,12 @@ iRetVal = ShellLinkObject.Resolve(
 
 <dl> <dt>
 
-*fFlags* \[ in\]
+*fFlags* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
 
-Flag che specificano l'azione da intraprendere. Può trattarsi di una combinazione dei valori seguenti:
+Flag che specificano l'azione da eseguire. Può trattarsi di una combinazione dei valori seguenti:
 
 <dt>
 
@@ -55,7 +55,7 @@ Flag che specificano l'azione da intraprendere. Può trattarsi di una combinazio
 
 </dt> <dd>
 
-Non visualizzare una finestra di dialogo se non è possibile risolvere il collegamento. Quando questo flag è impostato, la parola più ordinata di *fFlags* specifica una durata di timeout, in millisecondi. Il metodo restituisce se non è possibile risolvere il collegamento entro la durata del timeout. Se la parola più ordinata è impostata su zero, il valore predefinito per la durata del timeout è 3000 millisecondi (3 secondi).
+Non visualizzare una finestra di dialogo se il collegamento non può essere risolto. Quando questo flag è impostato, la parola di ordine superiore *di fFlags* specifica una durata del timeout, in millisecondi. Il metodo restituisce se il collegamento non può essere risolto entro la durata del timeout. Se la parola più importante è impostata su zero, la durata del timeout viene impostata su 3000 millisecondi (3 secondi).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Non visualizzare una finestra di dialogo se non è possibile risolvere il colleg
 
 </dt> <dd>
 
-Se il collegamento è stato modificato, aggiornarne il percorso e l'elenco degli identificatori.
+Se il collegamento è stato modificato, aggiornarne il percorso e l'elenco di identificatori.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Non usare il rilevamento dei collegamenti distribuiti.
 
 </dt> <dd>
 
-Disabilitare il rilevamento dei collegamenti distribuiti. Per impostazione predefinita, il rilevamento dei collegamenti distribuiti tiene traccia dei supporti rimovibili tra più dispositivi in base al nome del volume. USA anche il percorso UNC per tenere traccia dei file system remoti con la lettera di unità modificata. L'impostazione di questo flag consente di disabilitare entrambi i tipi di rilevamento.
+Disabilitare il rilevamento dei collegamenti distribuiti. Per impostazione predefinita, il rilevamento dei collegamenti distribuiti tiene traccia dei supporti rimovibili tra più dispositivi in base al nome del volume. Usa anche il percorso UNC per tenere traccia dei file system remoti la cui lettera di unità è stata modificata. L'impostazione di questo flag disabilita entrambi i tipi di rilevamento.
 
 </dd> <dt>
 
@@ -121,19 +121,19 @@ Disabilitare il rilevamento dei collegamenti distribuiti. Per impostazione prede
 
 </dt> <dd>
 
-Chiamare il Windows Installer.
+Chiamare il programma Windows di installazione.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è essenzialmente identico nelle funzionalità da [**risolvere**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve). Per ulteriori informazioni sulla risoluzione dei collegamenti, vedere la sezione Osservazioni di tale pagina.
+Questo metodo è essenzialmente identico nella funzionalità di [**Resolve.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve) Per altre informazioni sulla risoluzione dei collegamenti, vedere la sezione Osservazioni di tale pagina.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -167,7 +167,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -241,11 +241,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Criteri dei metadati delle foto per la proprietà System.Photo.LightSource.
+description: Criteri dei metadati della foto per la proprietà System.Photo.LightSource.
 ms.assetid: 051a49ad-bb4c-459f-ae52-dc359a03a14a
-title: Criteri dei metadati delle foto System.Photo.LightSource
+title: Criteri dei metadati delle foto system.Photo.LightSource
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 195d165a6a929c8e0b4bf2dd165a5f22068a8b75e8ea4dfcddb5b8979900b035
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118204723"
 ---
-# <a name="systemphotolightsource-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.LightSource
+# <a name="systemphotolightsource-photo-metadata-policy"></a>Criteri dei metadati delle foto system.Photo.LightSource
 
-Criteri dei metadati delle foto per [la proprietà System.Photo.LightSource.](../properties/props-system-photo-lightsource.md)
+Criteri dei metadati della foto per [la proprietà System.Photo.LightSource.](../properties/props-system-photo-lightsource.md)
 
-### <a name="pkey"></a>Chiave PKEY
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ LightSource
 
@@ -29,7 +29,7 @@ No
 
 ### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-VT \_ UI4
+Interfaccia utente \_ VT4
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -67,7 +67,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
@@ -108,7 +108,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 

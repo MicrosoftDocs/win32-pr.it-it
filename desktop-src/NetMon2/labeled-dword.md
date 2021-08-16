@@ -1,5 +1,5 @@
 ---
-description: La struttura \_ DWORD ETICHETTATA definisce un'etichetta che viene visualizzata quando viene rilevato un valore di proprietà DWORD specifico.
+description: La struttura \_ DWORD CON ETICHETTA definisce un'etichetta che viene visualizzata quando viene rilevato un valore di proprietà DWORD specifico.
 ms.assetid: 1aed3226-6d69-41b0-860b-4ffb5b905f1a
 title: LABELED_DWORD struttura (Netmon.h)
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118364846"
 ---
-# <a name="labeled_dword-structure"></a>Struttura \_ DWORD ETICHETTATA
+# <a name="labeled_dword-structure"></a>Struttura \_ DWORD CON ETICHETTA
 
-La **struttura \_ DWORD ETICHETTATA** definisce un'etichetta che viene visualizzata quando viene rilevato un valore di proprietà DWORD specifico.
+La **struttura \_ DWORD CON ETICHETTA** definisce un'etichetta che viene visualizzata quando viene rilevato un valore di proprietà DWORD specifico.
 
 ## <a name="syntax"></a>Sintassi
 

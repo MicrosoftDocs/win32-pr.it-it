@@ -13,11 +13,11 @@ ms.locfileid: "117857119"
 ---
 # <a name="auto-claims-form-sample"></a>Esempio di modulo attestazioni automatico
 
-L'esempio auto claims risolve un ipotetico scenario per un valutatore di assicurazioni. Il lavoro dell'assessore richiede a lui o a lei di visitare i clienti a casa o all'azienda e di immettere le informazioni relative alle richieste in un modulo. Per aumentare la produttività del valutatore, il reparto IT sviluppa un'applicazione tablet che consente di immettere rapidamente e accuratamente le informazioni sulle attestazioni tramite due controlli input penna: i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture.](/previous-versions/ms583740(v=vs.100))
+L'esempio auto claims risolve un ipotetico scenario per un valutatore di assicurazioni. Il lavoro dell'assessore richiede a lui di visitare i clienti a casa o all'azienda e di immettere le informazioni relative alle richieste in un modulo. Per aumentare la produttività del valutatore, il reparto IT sviluppa un'applicazione tablet che consente di immettere rapidamente e accuratamente le informazioni sulle attestazioni tramite due controlli input penna: [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture.](/previous-versions/ms583740(v=vs.100))
 
-In questo esempio viene usato [un controllo InkEdit](/previous-versions/ms835842(v=msdn.10)) per ogni campo di input di testo. Un utente immette le informazioni rilevanti su una polizza assicurativa e un veicolo in questi campi con una penna. Il [controllo InkPicture](/previous-versions/ms583740(v=vs.100)) viene usato per aggiungere input penna su un'immagine dell'automobile per evidenziare le aree danneggiate dell'automobile. L'esempio di attestazioni auto è disponibile per C \# e Microsoft Visual Basic .NET. Questo argomento descrive l'Visual Basic .NET.
+In questo esempio viene usato [un controllo InkEdit](/previous-versions/ms835842(v=msdn.10)) per ogni campo di input di testo. Un utente immette le informazioni rilevanti su una polizza assicurativa e un veicolo in questi campi con una penna. Il [controllo InkPicture](/previous-versions/ms583740(v=vs.100)) viene usato per aggiungere input penna su un'immagine dell'automobile per evidenziare le aree danneggiate dell'automobile. L'esempio di attestazioni automatica è disponibile per C \# e Microsoft Visual Basic .NET. Questo argomento descrive l'Visual Basic .NET.
 
-La classe AutoClaims è definita come sottoclasse di [System.Windows. Forms.Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e una classe annidata vengono definite per la creazione e la gestione di livelli di input penna per diversi tipi di danni. Sono definiti quattro gestori eventi per eseguire le attività seguenti:
+La classe AutoClaims è definita come sottoclasse di [System.Windows. Forms.Form e](/dotnet/api/system.windows.forms.form?view=netcore-3.1) una classe annidata vengono definiti per la creazione e la gestione di livelli di input penna per diversi tipi di danni. Sono definiti quattro gestori eventi per eseguire le attività seguenti:
 
 -   Inizializzazione dei livelli di form e input penna.
 -   Ridisegno del [controllo InkPicture.](/previous-versions/ms583740(v=vs.100))
@@ -160,7 +160,7 @@ inkPictVehicle.DefaultDrawingAttributes.Color = inkLayers[lstAnnotationLayer.Sel
 
 ## <a name="redrawing-the-inkpicture-control"></a>Ridisegno del controllo InkPicture
 
-Nel gestore eventi ereditato del [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) Paint, i livelli input penna vengono controllati per determinare quali sono nascosti. Se un livello non è nascosto, la routine evento lo visualizza usando il metodo Draw della [proprietà](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Se si osserva nel Visualizzatore oggetti, si noti che la proprietà Microsoft.Ink.InkPicture.Renderer è definita come [oggetto Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
+Nel gestore dell'evento Paint [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) vengono controllati i livelli input penna per determinare quali sono nascosti. Se un livello non è nascosto, la routine evento lo visualizza usando il metodo Draw della [proprietà](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Se si osserva nel Visualizzatore oggetti, si noti che la proprietà Microsoft.Ink.InkPicture.Renderer è definita come [oggetto Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
 
 
 ```VB
@@ -373,7 +373,7 @@ private void chHideLayer_CheckedChanged(object sender, System.EventArgs e)
 
 ## <a name="closing-the-form"></a>Chiusura del modulo
 
-Nel codice Windows generato da Progettazione form, i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) vengono aggiunti all'elenco dei componenti del form quando il form viene inizializzato. Alla chiusura del form, i controlli InkEdit e InkPicture vengono eliminati, nonché gli altri componenti del form, dal metodo [Dispose del](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) form. Il metodo Dispose del form elimina anche gli [oggetti Ink](/previous-versions/ms583670(v=vs.100)) creati per il form.
+Nel codice Windows generato da Progettazione form, i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) vengono aggiunti all'elenco dei componenti del form quando il form viene inizializzato. Quando il form viene chiuso, i controlli InkEdit e InkPicture vengono eliminati, nonché gli altri componenti del form, dal metodo [Dispose del](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) form. Il metodo Dispose del form elimina anche gli [oggetti Ink](/previous-versions/ms583670(v=vs.100)) creati per il form.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

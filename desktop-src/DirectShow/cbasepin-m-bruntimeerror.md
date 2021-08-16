@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se si è verificato un errore in fase di esecuzione.
+description: Flag che indica se si è verificato un errore di run-time.
 ms.assetid: 917bcb21-a11e-4ac5-af96-565f61c155cd
-title: 'Membro CBasePin:: m_bRunTimeError (Amfilter. h)'
+title: Membro CBasePin::m_bRunTimeError (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e8b0c5548d3089a6e619f88db5e4eed19b12be8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffc07a15f7c34744be52c5e2c7b5233e1885b58c5b9b7d078871277f8fc0efd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823333"
 ---
-# <a name="cbasepinm_bruntimeerror-member"></a>Membro bRunTimeError di CBasePin:: m \_
+# <a name="cbasepinm_bruntimeerror-member"></a>Membro CBasePin::m \_ bRunTimeError
 
-Flag che indica se si è verificato un errore in fase di esecuzione.
+Flag che indica se si è verificato un errore di run-time.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ bool m_bRunTimeError;
 
 ## <a name="remarks"></a>Osservazioni
 
-Il valore predefinito di questo flag è **false**. Impostare il flag su **true** se si verifica un errore in fase di esecuzione durante il flusso. Il metodo [**CBasePin:: inactive**](cbasepin-inactive.md) Reimposta il flag su **false**.
+Il valore predefinito di questo flag è **FALSE.** Impostare il flag su **TRUE se** si verifica un errore di run-time durante lo streaming. Il [**metodo CBasePin::Inactive**](cbasepin-inactive.md) reimposta il flag su **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il valore predefinito di questo flag è **false**. Impostare il flag su **true**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

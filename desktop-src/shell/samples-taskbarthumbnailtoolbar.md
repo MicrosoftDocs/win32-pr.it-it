@@ -1,5 +1,5 @@
 ---
-description: Illustra una barra degli strumenti di anteprima, un controllo della barra degli strumenti attivo incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
+description: Illustra una barra degli strumenti di anteprima, un controllo barra degli strumenti attivo incorporato nell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza che l'utente ripristini o attivi la finestra dell'applicazione.
 title: Esempio di barra degli strumenti di anteprima della barra delle applicazioni
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118219630"
 ---
 # <a name="taskbar-thumbnail-toolbar-sample"></a>Esempio di barra degli strumenti di anteprima della barra delle applicazioni
 
-Illustra una barra degli strumenti di anteprima, un controllo della barra degli strumenti attivo incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
+Illustra una barra degli strumenti di anteprima, un controllo barra degli strumenti attivo incorporato nell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza che l'utente ripristini o attivi la finestra dell'applicazione.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -52,9 +52,9 @@ Questo esempio illustra come fornire una semplice barra degli strumenti a un'ant
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Località      | URL del percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio di TaskbarThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
+| GitHub  | [Esempio di Barra delle applicazioniThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
@@ -65,13 +65,13 @@ Per compilare l'esempio dal prompt dei comandi:
 
 Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Windows Explorer e passare alla directory **del progetto TaskbarThumbnailToolbar.**
+1.  Aprire Windows Explorer e passare alla directory del progetto **TaskbarThumbnailToolbar.**
 2.  Fare doppio clic sull'icona per il file ThumbnailToolbar.sln per aprire il progetto in Visual Studio.
 3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Passare alla directory che contiene il nuovo file eseguibile , ad esempio , usando il prompt dei comandi `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` o Windows Explorer.
+1.  Passare alla directory che contiene il nuovo file eseguibile ,ad esempio , usando il prompt dei comandi `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` o Windows Explorer.
 
     -   Se si usa la riga di comando, immettere `ThumbnailToolbar.exe` .
     -   Se si usa Windows Explorer, fare doppio clic sull'icona per ThumbnailToolbar.exe.

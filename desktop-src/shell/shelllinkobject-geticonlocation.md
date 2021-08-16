@@ -1,5 +1,5 @@
 ---
-description: Ottiene la posizione dell'icona assegnata al collegamento.
+description: Ottiene il percorso dell'icona assegnata al collegamento.
 ms.assetid: 3bb7f0f0-7ab9-41e6-b738-274efbcd52ab
 title: Metodo ShellLinkObject.GetIconLocation (Shlobj \_ core.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "117857582"
 ---
 # <a name="shelllinkobjectgeticonlocation-method"></a>Metodo ShellLinkObject.GetIconLocation
 
-Ottiene la posizione dell'icona assegnata al collegamento.
+Ottiene il percorso dell'icona assegnata al collegamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ iRetVal = ShellLinkObject.GetIconLocation(
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
-Quando il metodo viene restituito, contiene il percorso completo del file che contiene l'icona.
+Quando viene restituito, questo metodo contiene il percorso completo del file che contiene l'icona.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Quando il metodo viene restituito, contiene il percorso completo del file che co
 
 Tipo: **\* Integer**
 
-Restituisce l'indice dell'icona nel file specificato da *sPath.*
+Restituisce l'indice dell'icona nel file specificato da *sPath*.
 
 ## <a name="examples"></a>Esempio
 
@@ -175,7 +175,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con le app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shlobj \_ core.h (includere Shldisp.h)</dt> </dl> |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |

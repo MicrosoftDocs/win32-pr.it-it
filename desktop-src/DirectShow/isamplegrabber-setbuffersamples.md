@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetBufferSamples specifica se copiare i dati di esempio in un buffer mentre passa attraverso il filtro.
+description: Il metodo SetBufferSamples specifica se copiare i dati di esempio in un buffer mentre passano attraverso il filtro.
 ms.assetid: 1ef4508e-441f-45e0-afb4-239dd947284b
-title: 'Metodo ISampleGrabber:: SetBufferSamples (qedit. h)'
+title: Metodo ISampleGrabber::SetBufferSamples (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9fab426b7bcad1a12895f632a719a40b4aaa8da4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c768a21d4e08e6900f3a46f3e398f5040aaf6b6b0bc45c9187ac07821500a372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817996"
 ---
-# <a name="isamplegrabbersetbuffersamples-method"></a>Metodo ISampleGrabber:: SetBufferSamples
+# <a name="isamplegrabbersetbuffersamples-method"></a>Metodo ISampleGrabber::SetBufferSamples
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il metodo **SetBufferSamples** specifica se copiare i dati di esempio in un buffer mentre passa attraverso il filtro.
+Il **metodo SetBufferSamples** specifica se copiare i dati di esempio in un buffer mentre passano attraverso il filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ void SetBufferSamples(
 *BufferThem* 
 </dt> <dd>
 
-Valore booleano che specifica se memorizzare nel buffer i dati di esempio. Se **true**, il filtro copia i dati di esempio in un buffer interno.
+Valore booleano che specifica se i dati di esempio devono essere memorizzati nel buffer. Se **TRUE,** il filtro copia i dati di esempio in un buffer interno.
 
 </dd> </dl>
 
@@ -58,15 +58,15 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere il buffer copiato, chiamare [**ISampleGrabber:: GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md).
+Per ottenere il buffer copiato, chiamare [**ISampleGrabber::GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md).
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Per ottenere il buffer copiato, chiamare [**ISampleGrabber:: GetCurrentBuffer**]
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

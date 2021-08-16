@@ -1,6 +1,6 @@
 ---
-title: Metodo FetchReportSummaryEntries della classe Win32_TSLicenseReport
-description: Recupera i riepiloghi Servizi Desktop remoto licenze di accesso client per utente (Servizi Desktop remoto \ 160; Cal cal per utente) dal report.
+title: Metodo FetchReportSummaryEntries della Win32_TSLicenseReport classe
+description: Recupera i riepiloghi Servizi Desktop remoto licenze di accesso client per utente (Servizi Desktop remoto \ 160; Cal per utente) dal report.
 ms.assetid: 0312B787-83E9-42FC-B21B-904B804C5C94
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "118348576"
 ---
 # <a name="fetchreportsummaryentries-method-of-the-win32_tslicensereport-class"></a>Metodo FetchReportSummaryEntries della classe \_ Win32 TSLicenseReport
 
-Recupera i riepiloghi Servizi Desktop remoto licenze CAL client per utente (CAL Per Utente di Servizi Desktop remoto) dal report.
+Recupera i riepiloghi Servizi Desktop remoto licenze CAL per utente (LICENZE CAL Per Utente di Servizi Desktop remoto) dal report.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Indice della prima voce del report da ricevere. La prima voce del report ha un i
 *Conteggio* \[ in, out\]
 </dt> <dd>
 
-Numero di voci del report da recuperare dall'oggetto report. Il valore zero indica che tutte le voci del report a partire da *StartIndex* devono essere recuperate. In caso di restituzione, contiene il numero di voci nella matrice *ReportSummaryEntries.*
+Numero di voci del report da recuperare dall'oggetto report. Il valore zero indica che devono essere recuperate tutte le voci del report a partire da *StartIndex.* Al ritorno, contiene il numero di voci nella *matrice ReportSummaryEntries.*
 
 </dd> <dt>
 
@@ -74,9 +74,9 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 Non si tratta di un metodo statico. Questo metodo deve essere chiamato da un oggetto report sull'utilizzo delle licenze per utente.
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

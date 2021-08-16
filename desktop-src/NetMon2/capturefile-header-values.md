@@ -22,7 +22,7 @@ ms.locfileid: "118367417"
 ---
 # <a name="capturefile_header_values-structure"></a>Struttura CAPTUREFILE \_ HEADER \_ VALUES
 
-La **struttura CAPTUREFILE \_ HEADER \_ VALUES** definisce la Network Monitor del file di intestazione.
+La **struttura CAPTUREFILE \_ HEADER \_ VALUES** definisce la struttura Network Monitor file di intestazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -121,7 +121,7 @@ Lunghezza dei dati utente.
 **CommentDataOffset**
 </dt> <dd>
 
-Offset dei dati del commento.
+Offset dei dati di commento.
 
 </dd> <dt>
 
@@ -163,14 +163,14 @@ Lunghezza della **struttura NETWORKINFO.**
 **ConversationStatsOffset**
 </dt> <dd>
 
-Questo membro non viene usato.
+Questo membro non viene utilizzato.
 
 </dd> <dt>
 
 **ConversationStatsLength**
 </dt> <dd>
 
-Questo membro non viene usato.
+Questo membro non viene utilizzato.
 
 </dd> </dl>
 

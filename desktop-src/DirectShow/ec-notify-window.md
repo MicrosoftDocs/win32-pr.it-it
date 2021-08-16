@@ -1,19 +1,19 @@
 ---
-description: Invia una notifica a un filtro della finestra del renderer video.
+description: Notifica un filtro della finestra del renderer video.
 ms.assetid: 65d2f40e-c42c-4d71-b9b3-7662a8be0953
-title: EC_NOTIFY_WINDOW (dshow. h)
+title: EC_NOTIFY_WINDOW (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3165247f05e2fb945f02fee43149b84480bd4b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 355d4ec8b5b6bea55a2f32f01cc2f83aabeab84443b28e431e5b0d6155acc6d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820113"
 ---
-# <a name="ec_notify_window"></a>\_finestra notifica \_ EC
+# <a name="ec_notify_window"></a>FINESTRA \_ DI NOTIFICA \_ EC
 
-Invia una notifica a un filtro della finestra del renderer video.
+Notifica un filtro della finestra del renderer video.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,11 +35,11 @@ Zero.
 
 ## <a name="default-action"></a>Azione predefinita
 
-Questo evento viene utilizzato internamente da DirectShow. Il gestore del grafico del filtro non passa questo evento all'applicazione. Le applicazioni non possono eseguire l'override dell'azione predefinita per questo evento.
+Questo evento viene usato internamente da DirectShow. Il gestore del grafico del filtro non passa questo evento all'applicazione. Le applicazioni non possono eseguire l'override dell'azione predefinita per questo evento.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un renderer video è connesso, verifica se il pin di output upstream supporta l'interfaccia [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) . In tal caso, il renderer Invia questo evento al filtro upstream.
+Quando un renderer video è connesso, controlla se il pin di output upstream supporta [**l'interfaccia IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) In tal caso, il renderer invia questo evento al filtro upstream.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Quando un renderer video è connesso, verifica se il pin di output upstream supp
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

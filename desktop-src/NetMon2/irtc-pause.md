@@ -49,9 +49,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 | Codice restituito                                                                                           | Descrizione                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già sospesa.<br/>                                                                                     |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | NPP non è connesso alla rete. Chiamare [IRTC::Connessione](irtc-connect.md) per connettere NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IRTC::Connessione.](irtc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | Il NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | Il NPP non è connesso alla rete. Chiamare [IRTC::Connessione](irtc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>   | Il NPP è connesso alla rete, ma non con il [metodo IRTC::Connessione.](irtc-connect.md)<br/>                     |
 
 
 
@@ -59,11 +59,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione è in stato di sospensione, i nuovi fotogrammi non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC::Resume](irtc-resume.md) per riavviare l'acquisizione.
+Mentre l'acquisizione è sospesa, i nuovi fotogrammi non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC::Resume](irtc-resume.md) per riavviare l'acquisizione.
 
 Quando si usano i metodi **IRTC::P ause** e **IRTC::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
-Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arrestare l'acquisizione, chiamare [IRTC::Stop](irtc-stop.md).
+Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arrestare l'acquisizione, [chiamare IRTC::Stop](irtc-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 

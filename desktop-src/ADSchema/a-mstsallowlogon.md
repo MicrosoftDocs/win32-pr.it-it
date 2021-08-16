@@ -1,6 +1,6 @@
 ---
-title: attributo ms-TS-Allow-Logon
-description: Specifica se l'utente è autorizzato ad accedere al Terminal Server. Il valore è 1 se è consentito l'accesso e 0 se l'accesso non è consentito.
+title: Attributo ms-TS-Allow-Logon
+description: Specifica se l'utente può accedere a Terminal Server. Il valore è 1 se l'accesso è consentito e 0 se l'accesso non è consentito.
 ms.assetid: 9cd6edbc-f8e7-4933-9f62-1e34e3d31fb7
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bcd78662167e281ea720f2ad5d98f25c2f5c4ae
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a5707f2f18ae4a2da1768090d9ebd1126c72411fc6b79212f459996ecbce080
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837871"
 ---
-# <a name="ms-ts-allow-logon-attribute"></a>attributo ms-TS-Allow-Logon
+# <a name="ms-ts-allow-logon-attribute"></a>Attributo ms-TS-Allow-Logon
 
-Specifica se l'utente è autorizzato ad accedere al Terminal Server. Il valore è 1 se è consentito l'accesso e 0 se l'accesso non è consentito.
+Specifica se l'utente può accedere a Terminal Server. Il valore è 1 se l'accesso è consentito e 0 se l'accesso non è consentito.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Allow-Logon                    |
-| LDAP-Display-Name | msTSAllowLogon                       |
+| CN                | ms-TS-Allow-Logon                    |
+| Ldap-Display-Name | msTSAllowLogon                       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1979              |
-| System-ID-GUID    | 3a0cd464-bc54-40e7-93ae-a646a6ecc4b4 |
+| System-Id-Guid    | 3a0cd464-bc54-40e7-93ae-a646a6ecc4b4 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,15 +55,15 @@ Specifica se l'utente è autorizzato ad accedere al Terminal Server. Il valore �
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Specifica se l'utente è autorizzato ad accedere al Terminal Server. Il valore �
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Specifica se l'utente è autorizzato ad accedere al Terminal Server. Il valore �
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

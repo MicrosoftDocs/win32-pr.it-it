@@ -1,78 +1,78 @@
 ### YamlMime:FAQ
 metadata:
-  description: Domande frequenti su DirectShow
+  description: DirectShow Domande frequenti
   ms.assetid: 198758b9-025a-44af-958c-9ddea8cbb12d
-  title: Domande frequenti su DirectShow
+  title: DirectShow Domande frequenti
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: a36cd1942fcc1b07e63a3ec7bfb8297b7d6b6e70
-  ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+  ms.openlocfilehash: b21916e381262be4a695abfeca0c570bc3b13f7b376c7728b33e3458f6e58c98
+  ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/09/2021
-  ms.locfileid: "111852712"
-title: Domande frequenti su DirectShow
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "117821176"
+title: DirectShow Domande frequenti
 summary: Questo articolo risponde a molte domande frequenti su Microsoft DirectShow.
 sections:
 - name: Ignorato
   questions:
   - question: >
-      Quali sistemi operativi supporta DirectShow?
+      Quali sistemi operativi DirectShow supportati?
     answer: >
       DirectShow è disponibile in tutte le versioni supportate di Windows.
   - question: >
       Quante conoscenze COM è necessario programmare con DirectShow?
     answer: >
-      Per lo sviluppo di applicazioni, è necessario comprendere le nozioni di base sull'uso degli oggetti COM: come crearne un'istanza, accedere alle interfacce che espongono e gestire i conteggi dei riferimenti su tali interfacce. Lo sviluppo di filtri richiede più conoscenze COM.
+      Per lo sviluppo di applicazioni, è necessario comprendere le nozioni di base dell'uso degli oggetti COM: come crearne un'istanza, accedere alle interfacce che espongono e gestire i conteggi dei riferimenti su tali interfacce. Lo sviluppo di filtri richiede una maggiore conoscenza di COM.
   - question: >
-      Quali formati supporta DirectShow?
+      Quali formati DirectShow supportati?
     answer: >
-      Vedere [Formati supportati in DirectShow.](supported-formats-in-directshow.md)
+      Vedere [Formati supportati in DirectShow](supported-formats-in-directshow.md).
   - question: >
-      Esiste un elenco di compatibilità hardware (HCL) DirectShow?
+      Esiste un elenco DirectShow di compatibilità hardware?
     answer: >
-      No. DirectShow usa le funzionalità hardware Microsoft DirectDraw e Microsoft DirectSound, se disponibili. Quando non è disponibile alcun hardware speciale, DirectShow usa GDI per disegnare video e le API **multimediali waveOut** \* per riprodurre l'audio.
+      No. DirectShow usa le funzionalità hardware Microsoft DirectDraw e Microsoft DirectSound, se disponibili. Quando non è disponibile hardware speciale, DirectShow GDI per disegnare video e le API **multimediali waveOut** \* per riprodurre l'audio.
   - question: >
-      Quali linguaggi è possibile usare per scrivere un'applicazione DirectShow?
+      Quali linguaggi è possibile usare per scrivere un'DirectShow applicazione?
     answer: >
-      DirectShow è progettato principalmente per lo sviluppo C++. Un piccolo sotto-set dell'API DirectShow viene esposto tramite Visual Basic 6.0; Tuttavia, questa funzionalità è deprecata.
+      DirectShow è progettato principalmente per lo sviluppo in C++. Un piccolo sotto-set dell'API DirectShow viene esposto tramite Visual Basic 6.0; Tuttavia, questa funzionalità è deprecata.
   - question: >
-      DirectShow sarà mai accessibile tramite codice gestito?
+      I DirectShow saranno mai accessibili tramite codice gestito?
     answer: >
       Microsoft non prevede di implementare un'API DirectShow gestita.
   - question: >
-      Quale compilatore è necessario per lo sviluppo DirectShow?
+      Quale compilatore è necessario per DirectShow sviluppo?
     answer: >
-      Qualsiasi compilatore in grado di generare Component Object Model (COM) deve funzionare dopo che l'ambiente del compilatore è stato configurato correttamente.
+      Qualsiasi compilatore in grado di generare Component Object Model (COM) dovrebbe funzionare dopo che l'ambiente del compilatore è stato configurato correttamente.
   - question: >
-      In che modo DirectShow è correlato a Microsoft DirectX?
+      In che modo DirectShow a Microsoft DirectX?
     answer: >
-      Internamente, DirectShow usa DirectSound e DirectDraw quando l'hardware lo supporta. I filtri Renderer video e Overlay Mixer usano le superfici DirectDraw 3 e DirectDraw 5. Il renderer di combinazione video 7 (solo Windows XP) usa le superfici DirectDraw 7. Il renderer video mixing 9 e il renderer video avanzato usano le API Microsoft Direct3D più recenti. Non è necessario usare le altre API DirectX per scrivere un'applicazione DirectShow, anche se è possibile combinarle.
+      Internamente, DirectShow usa DirectSound e DirectDraw quando l'hardware lo supporta. Il renderer video e i filtri di Mixer usano le superfici DirectDraw 3 e DirectDraw 5. Il renderer di combinazione video 7 (solo Windows XP) usa superfici DirectDraw 7. Video Mixing Renderer 9 e Enhanced Video Renderer usano le API Microsoft Direct3D più recenti. Non è necessario usare le altre API DirectX per scrivere un'applicazione DirectShow, anche se è possibile combinarle.
   - question: >
-      In che modo DirectShow è correlato a Microsoft ActiveMovie?
+      In che modo DirectShow a Microsoft ActiveMovie?
     answer: >
-      ActiveMovie è il nome originale di DirectShow. Il termine ActiveMovie non viene più usato.
+      ActiveMovie è il nome originale per DirectShow. Il termine ActiveMovie non viene più usato.
   - question: >
       Il codice sorgente per l'utilità GraphEdit è disponibile? È possibile ridistribuire GraphEdit?
     answer: >
       No, l'origine non è disponibile e Graphedt.exe non è ridistribuibile.
   - question: >
-      I DMO sostituiscono i filtri DirectShow?
+      Gli oggetti DMO sostituiscono DirectShow filtri?
     answer: >
-      Microsoft DirectX Media Objects (DMO) può essere usato in un'applicazione DirectShow. Per codificatori, decodificatori ed effetti, si consiglia di scrivere un DMO anziché un filtro DirectShow. Nota: se si vuole usare DirectX Video Acceleration nel decodificatore, è necessario implementarlo come filtro. Per altri scopi, un filtro DirectShow potrebbe essere più appropriato. Per altre informazioni sulle DMO, vedere [DirectX Media Objects](directx-media-objects.md).
+      Microsoft DirectX Media Objects (DMO) può essere usato in un'DirectShow applicazione. Per codificatori, decodificatori ed effetti, si consiglia di scrivere un DMO invece di un DirectShow filtro. Nota: se si vuole usare l'accelerazione video DirectX nel decodificatore, è necessario implementarla come filtro. Per altri scopi, un DirectShow filtro potrebbe essere più appropriato. Per altre informazioni sugli oggetti DMO, vedere [Oggetti multimediali DirectX.](directx-media-objects.md)
   - question: >
-      Sto riproducendo un file di formato AVI con Windows Media Player. È possibile ascoltare l'audio, ma sembra che non ci sia alcun video, ma viene semplicemente visualizzato il nero. Qual è il problema?
-    answer: "Probabilmente il file è stato codificato con un codec che non è presente nel sistema. Anche se il formato di file AVI è comune, i file AVI possono essere creati con molti formati di compressione (codec) diversi. Se si prova a riprodurre un file AVI che usa un codec non supportato, è possibile ascoltare il componente audio, ma il video verrà visualizzato come schermo nero o il contenuto dello schermo rimarrà invariato.\n\n> [!Note]  \n> Windows Media Player spesso tenta di scaricare e installare un codec se non è presente nel sistema.\n\n \n"
+      Si sta riproducendo un file di formato AVI con Windows Media Player. Posso ascoltare l'audio, ma sembra che non ci siano video, ma solo nero. Qual è il problema?
+    answer: "Probabilmente il file è stato codificato con un codec che non è presente nel sistema. Anche se il formato di file AVI è comune, i file AVI possono essere creati con molti formati di compressione (codec) diversi. Se si prova a riprodurre un file AVI che usa un codec non supportato, è possibile che si senta il componente audio, ma il video verrà visualizzato come schermo nero o il contenuto dello schermo rimarrà invariato.\n\n> [!Note]  \n> Windows Media Player spesso tenta di scaricare e installare un codec se non è presente nel sistema.\n\n \n"
   - question: >
       Ricerca per categorie l'applicazione? Quali librerie e file di intestazione sono necessari?
     answer: >
-      Vedere [Configurazione dell'ambiente di compilazione](setting-up-the-build-environment.md).
+      Vedere [Configurazione dell'ambiente di compilazione.](setting-up-the-build-environment.md)
   - question: >
-      GraphEdit visualizza molti filtri non documentati. Che cosa sono questi filtri?
+      GraphEdit visualizza molti filtri che non sono documentati. Che cosa sono questi filtri?
     answer: >
-      GraphEdit enumera tutti i filtri registrati nel sistema in una categoria di filtri. Ad esempio, i filtri installati da applicazioni di terze parti o da altre tecnologie Microsoft, ad esempio Windows Media o NetMeeting. Inoltre, alcuni filtri DirectShow fungono da wrapper per codec o dispositivi hardware, con ogni codec o dispositivo visualizzato come filtro distinto. Il codec video Microsoft H.263 viene usato da NetMeeting e non è più supportato in DirectShow. Per altre informazioni, vedere [Enumerazione di dispositivi e filtri](enumerating-devices-and-filters.md).
+      GraphEdit enumera tutti i filtri registrati nel sistema in una categoria di filtri. Ad esempio, i filtri installati da applicazioni di terze parti o da altre tecnologie Microsoft, ad esempio Windows Media o NetMeeting. Inoltre, alcuni DirectShow fungono da wrapper per codec o dispositivi hardware, con ogni codec o dispositivo visualizzato come filtro distinto. Il codec video Microsoft H.263 viene usato da NetMeeting e non è più supportato in DirectShow. Per altre informazioni, vedere [Enumerazione di dispositivi e filtri.](enumerating-devices-and-filters.md)
   - question: >
-      Si sono verificare problemi durante la creazione del grafico personalizzato a livello di codice.
+      Si sono verificare problemi durante la creazione del grafo personalizzato a livello di codice.
     answer: >
       Provare prima di tutto a compilare il grafico dei filtri con GraphEdit. Questo strumento consente di simulare rapidamente molte possibilità. GraphEdit è sempre un ottimo punto per testare il grafo prima di provare a compilarlo con codice sorgente.
 
@@ -80,13 +80,13 @@ sections:
       Per altre informazioni sulla creazione di grafi, vedere gli articoli seguenti:
 
 
-      -   [Compilazione del grafico dei filtri](building-the-filter-graph.md)
+      -   [Compilazione del filtro Graph](building-the-filter-graph.md)
 
-      -   [Enumerazione di oggetti in un grafo filtro](enumerating-objects-in-a-filter-graph.md)
+      -   [Enumerazione di oggetti in un filtro Graph](enumerating-objects-in-a-filter-graph.md)
   - question: >
-      Come è possibile rilevare se DirectShow è installato in un determinato computer?
+      Come è possibile rilevare se DirectShow è installato in un computer specificato?
     answer: >
-      Chiamare **CoCreateInstance** per creare un'istanza di Filter Graph Manager. Se questa chiamata ha esito positivo, DirectShow viene installato nel computer. Nel codice seguente viene illustrato come eseguire questa operazione:
+      Chiamare **CoCreateInstance** per creare un'istanza di Filter Graph Manager. Se questa chiamata ha esito positivo, DirectShow installato nel computer. Nel codice seguente viene illustrato come eseguire questa operazione:
 
 
 
@@ -102,24 +102,24 @@ sections:
   - question: >
       Ricerca per categorie modificare le impostazioni di un filtro senza visualizzare la pagina delle proprietà?
     answer: >
-      La maggior parte dei filtri espone una o più interfacce per l'impostazione delle proprietà nel filtro. Consultare la pagina di riferimento per il filtro in questione. Vedere [Filtri DirectShow.](directshow-filters.md)
+      La maggior parte dei filtri espone una o più interfacce per l'impostazione delle proprietà nel filtro. Consultare la pagina di riferimento per il filtro in questione. Vedere DirectShow [filtri.](directshow-filters.md)
   - question: >
       È possibile testare il filtro con GraphEdit?
     answer: >
-      Durante lo sviluppo di un filtro, GraphEdit consente di visualizzare le connessioni tra i filtri. Può anche fornire un rapido test delle funzionalità di un filtro. Tuttavia, non è inteso come una piattaforma di test affidabile.
+      Durante lo sviluppo di un filtro, GraphEdit consente di visualizzare le connessioni tra i filtri. Può anche fornire un rapido test della funzionalità di un filtro. Tuttavia, non è concepito come una piattaforma di test affidabile.
   - question: >
       In quale anello di privilegi vengono eseguiti i filtri?
     answer: >
-      I filtri vengono eseguiti all'anello 3, anche se alcuni filtri controllano i dispositivi di streaming eseguiti all'anello 0. Per altre informazioni, vedere [Modalità di partecipazione dei dispositivi hardware nel grafico dei filtri.](how-hardware-devices-participate-in-the-filter-graph.md)
+      I filtri vengono eseguiti all'anello 3, anche se alcuni filtri controllano i dispositivi di streaming eseguiti all'anello 0. Per altre informazioni, vedere [How Hardware Devices Participate in the Filter Graph](how-hardware-devices-participate-in-the-filter-graph.md).
   - question: >
       È necessario usare un debugger del kernel?
     answer: >
-      Dipende dal progetto specifico. L'installazione delle librerie di runtime di debug DirectX significa che si installano driver di debug e altri componenti in modalità kernel e che se l'applicazione causa un'asserzione di debug in uno di questi componenti, il computer verrà riavviato automaticamente a meno che non sia collegato un debugger del kernel al processo.
+      Dipende dal progetto specifico. L'installazione delle librerie di runtime di debug DirectX significa che si stanno installando driver di debug e altri componenti in modalità kernel e che, se l'applicazione causa un'asserzione di debug in uno di questi componenti, il computer verrà riavviato automaticamente a meno che al processo non sia collegato un debugger del kernel.
   - question: >
-      Quando si esegue l'applicazione nel debugger, si arresta in modo anomalo.
+      Quando si esegue l'applicazione nel debugger, si verifica un arresto anomalo.
     answer: >
       Alcuni decodificatori sono progettati per non funzionare mentre l'applicazione è collegata al debugger. Provare a eseguire l'applicazione all'esterno del debugger.
   - question: >
-      Come funziona la macro DEFINE \_ GUID?
-    answer: "La macro **DEFINE \\_ GUID** risolve il problema della dichiarazione dei `extern` riferimenti ai valori GUID nel codice sorgente. Si supponga, ad esempio, che il progetto abbia tre file di origine, Src1.cpp, Src2.cpp e Src3.cpp, e che tutti e tre i file usino un determinato valore GUID definito. Il valore GUID deve essere definito esattamente una volta nel progetto e gli altri file di origine devono dichiarare `extern` riferimenti a esso. Con la macro **DEFINE \\_ GUID** è possibile usare lo stesso file di intestazione per entrambi gli scopi. Nel file di intestazione dichiarare il GUID come segue:\n\n\n```C++\nDEFINE_GUID(CLSID_MyObject, \n0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);\n```\n\n\n\nSe in questo esempio sono specificati zeri, inserire i valori GUID effettivi. È possibile usare l'utilità Guidgen.exe per creare un nuovo GUID e incollarlo nel file di intestazione nel **formato DEFINE \\_ GUID.** Includere questo file di intestazione in ogni file di origine che fa riferimento al GUID. In esattamente uno dei file di origine includere il file di intestazione Initguid.h prima del file di intestazione. Ad esempio:\n\n\n```C++\n// Src1.cpp\n#include <initguid.h>\n#include \"MyGuids.h\"\n\n// Src2.cpp\n#include \"MyGuids.h\"\n\n// Src3.cpp\n#include \"MyGuids.h\"\n```\n\nSe il file di intestazione Initguid.h non è incluso, la macro **DEFINE \\_ GUID** crea un riferimento `extern` al valore GUID. Quando il file di intestazione Initguid.h è incluso, ridefinisce la macro **DEFINE \\_ GUID** in modo che **DEFINE \\_ GUID** crei una dichiarazione di definizione del GUID.\n\nSe non si include Initguid.h in uno dei file di origine, verrà visualizzato un errore di collegamento \"Simbolo esterno non risolto\". Se si include Initguid.h due volte per lo stesso GUID, verrà visualizzato un errore di compilazione \"ridefinizione; inizializzazione multipla.\" Per risolvere questi errori, assicurarsi che Initguid.h sia incluso esattamente una volta. Inoltre, non includere Initguid.h all'interno di un file di intestazione precompilata, perché in effetti l'intestazione precompilata è inclusa in ogni file di origine.\n"
+      Come funziona la \_ macro DEFINE GUID?
+    answer: "La macro **\\_ DEFINE GUID** risolve il problema della dichiarazione di riferimenti a valori GUID nel codice `extern` sorgente. Si supponga, ad esempio, che il progetto abbia tre file di origine, Src1.cpp, Src2.cpp e Src3.cpp, e che tutti e tre i file usino un determinato valore GUID definito. Il valore GUID deve essere definito esattamente una volta nel progetto e gli altri file di origine devono dichiarare `extern` riferimenti a esso. Con la macro **DEFINE \\_ GUID** è possibile usare lo stesso file di intestazione per entrambi gli scopi. Nel file di intestazione dichiarare il GUID come segue:\n\n\n```C++\nDEFINE_GUID(CLSID_MyObject, \n0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);\n```\n\n\n\nSe questo esempio contiene zeri, inserire i valori GUID effettivi. È possibile usare lGuidgen.exe per creare un nuovo GUID e incollarlo nel file di intestazione nel **formato DEFINE \\_ GUID.** Includere questo file di intestazione in ogni file di origine che fa riferimento al GUID. In uno dei file di origine includere il file di intestazione Initguid.h prima del file di intestazione. Esempio:\n\n\n```C++\n// Src1.cpp\n#include <initguid.h>\n#include \"MyGuids.h\"\n\n// Src2.cpp\n#include \"MyGuids.h\"\n\n// Src3.cpp\n#include \"MyGuids.h\"\n```\n\nSe il file di intestazione Initguid.h non è incluso, la macro **DEFINE \\_ GUID** crea un `extern` riferimento al valore GUID. Quando il file di intestazione Initguid.h è incluso, ridefinisce la macro **DEFINE \\_ GUID** in modo che **DEFINE \\_ GUID** crei una dichiarazione di definizione del GUID.\n\nSe non si include Initguid.h nei file di origine, verrà visualizzato un errore di collegamento \"Simbolo esterno non risolto\". Se si include Initguid.h due volte per lo stesso GUID, verrà visualizzato un errore di compilazione \"redefinition; inizializzazione multipla.\" Per risolvere questi errori, assicurarsi che Initguid.h sia incluso una sola volta. Inoltre, non includere Initguid.h all'interno di un file di intestazione precompilata, perché in effetti l'intestazione precompilata è inclusa in ogni file di origine.\n"
 additionalContent: "\n## <a name=\"related-topics\"></a>Argomenti correlati\n\n[Introduzione a DirectShow](introduction-to-directshow.md)"

@@ -58,10 +58,10 @@ Nella tabella seguente sono elencate le chiavi di proprietà associate al contro
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).
+<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">imposta UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).
 <blockquote>
 [!Important]<br />
-La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> proprietà per il controllo Pulsante di menu suddiviso deve essere invalidata dopo che uno o più elementi figlio sono stati abilitati o disabilitati. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo Pulsante di menu suddiviso nell'interfaccia utente della barra multifunzione.
+La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> proprietà per il controllo Pulsante di menu suddiviso deve essere invalidata dopo l'a attivazione o la disabilitazione di uno o più elementi figlio. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo Pulsante di menu suddiviso nell'interfaccia utente della barra multifunzione.
 </blockquote>
 <br/> <br/></td>
 </tr>

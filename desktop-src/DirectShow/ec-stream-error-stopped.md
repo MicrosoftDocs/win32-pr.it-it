@@ -1,19 +1,19 @@
 ---
-description: Un flusso è stato interrotto a causa di un errore.
+description: Un flusso è stato arrestato a causa di un errore.
 ms.assetid: bee05025-161e-49b7-8c9b-79e1ed28315f
-title: EC_STREAM_ERROR_STOPPED (dshow. h)
+title: EC_STREAM_ERROR_STOPPED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbe0b0488267a9a3b2b9f6098c546240f9b6c704
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d746dd76315a6db95f2df5e3c79574bdcbfe01004751843aa035f59836cd273
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819971"
 ---
-# <a name="ec_stream_error_stopped"></a>\_errore di flusso EC \_ \_ arrestato
+# <a name="ec_stream_error_stopped"></a>ERRORE \_ DEL FLUSSO EC \_ \_ ARRESTATO
 
-Un flusso è stato interrotto a causa di un errore.
+Un flusso è stato arrestato a causa di un errore.
 
 ## <a name="parameters"></a>Parametri
 
@@ -29,13 +29,13 @@ Un flusso è stato interrotto a causa di un errore.
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-(**DWORD**) Codice di errore secondario. Questo valore è in genere pari a zero.
+(**DWORD**) Codice di errore secondario. Questo valore è in genere zero.
 
 </dd> </dl>
 
 ## <a name="default-action"></a>Azione predefinita
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

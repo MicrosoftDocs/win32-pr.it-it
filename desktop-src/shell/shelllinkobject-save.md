@@ -50,7 +50,7 @@ Valore stringa che contiene il percorso completo del file in cui devono essere s
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo JScript, VBScript e Visual Basic.
 
 JScript:
 

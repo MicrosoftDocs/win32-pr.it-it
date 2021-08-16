@@ -1,12 +1,12 @@
 ---
-title: Metodo SetStringProperty della classe Win32_RDMSVirtualDesktopCollection (CertEnroll. h)
-description: Aggiorna una proprietà di stringa di un insieme di desktop virtuali.
+title: Metodo SetStringProperty della Win32_RDMSVirtualDesktopCollection classe (Certenroll.h)
+description: Aggiorna una proprietà stringa di una raccolta di desktop virtuali.
 ms.assetid: d76d5f77-3b51-41b9-8ec5-a737ddc0a9d3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo SetStringProperty
-- Metodo SetStringProperty Servizi Desktop remoto, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Servizi Desktop remoto, Metodo SetStringProperty
+- Metodo SetStringProperty Servizi Desktop remoto
+- Metodo SetStringProperty Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto, metodo SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97fd85ef6611cd02dc80ca66816c5c4ce13f6cd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8fa0f8302ca2b4c843e552bed8de9145d74c6492626694bb9da0b127d0a07d2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349355"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo SetStringProperty della \_ classe RDMSVirtualDesktopCollection Win32
+# <a name="setstringproperty-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo SetStringProperty della classe \_ RDMSVirtualDesktopCollection Win32
 
-Aggiorna una proprietà di stringa di un insieme di desktop virtuali.
+Aggiorna una proprietà stringa di una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave che identifica la proprietà da aggiornare.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore della proprietà.
@@ -70,9 +70,9 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| Intestazione<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| Intestazione<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -81,7 +81,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

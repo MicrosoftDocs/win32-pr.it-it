@@ -83,7 +83,7 @@ Specifica il nome visualizzato da utilizzare per il plug-in. Se viene restituito
 <span id="PlugInConfiguration_Architecture"></span><span id="pluginconfiguration_architecture"></span><span id="PLUGINCONFIGURATION_ARCHITECTURE"></span>**PlugInConfiguration** / **Architettura**
 </dt> <dd>
 
-Specifica se il plug-in delle operazioni è a 32 bit o a 64 bit. Se questo elemento non viene specificato, il valore predefinito sarà "32" nei sistemi x86 e su "64" nei sistemi a 64 bit. Per i sistemi x86, l'unico valore valido è "32". Se il valore è "32" in un sistema a 64 bit, è necessario prendere in considerazione il reindirizzamento wow64 quando si immettono le informazioni sul nome **file.** L'file system usa il reindirizzamento wow64 per convertire system32 in syswow64. Ad esempio,  se Filename è "%windir% system32myplugin.dll" e Architecture è "32", il file plug-in effettivo si trova in \\ \\ "%windir%  \\ syswow64 \\myplugin.dll".
+Specifica se il plug-in delle operazioni è a 32 bit o a 64 bit. Se questo elemento non viene specificato, il valore predefinito sarà "32" nei sistemi x86 e su "64" nei sistemi a 64 bit. Per i sistemi x86, l'unico valore valido è "32". Se il valore è "32" in un sistema a 64 bit, è necessario prendere in considerazione il reindirizzamento wow64 quando si immettono le informazioni sul nome **file.** L'file system usa il reindirizzamento wow64 per convertire system32 in syswow64. Ad esempio,  se Filename è "%windir% system32myplugin.dll" e Architecture è "32", il file del plug-in effettivo si trova in \\ \\ "%windir%  \\ syswow64 \\myplugin.dll".
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Questo nodo è facoltativo e consente a un plug-in di configurare codice XML agg
 <span id="PlugInConfiguration_Resources"></span><span id="pluginconfiguration_resources"></span><span id="PLUGINCONFIGURATION_RESOURCES"></span>**PlugInConfiguration** / **Risorse**
 </dt> <dd>
 
-Specifica un elenco [*di URI di risorsa*](windows-remote-management-glossary.md)supportati da questo plug-in. È necessario specificare almeno una voce **ResourceUri.** In caso contrario, il codice XML verrà rifiutato.
+Specifica un elenco di [*URI di risorsa*](windows-remote-management-glossary.md)supportati da questo plug-in. È necessario specificare almeno una voce **ResourceUri.** In caso contrario, il codice XML verrà rifiutato.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Specifica una funzionalità disponibile [*nell'URI della risorsa.*](windows-remo
 <span id="Get"></span><span id="get"></span><span id="GET"></span>Ottieni
 </dt> <dd>
 
-Le operazioni Get sono supportate [*nell'URI della risorsa*](windows-remote-management-glossary.md). **L'attributo SupportFragment** viene usato se l'operazione get supporta il concetto . **L'attributo SupportFiltering** non è valido e deve essere impostato su false. Questa funzionalità non è valida per un *URI di risorsa* se sono supportate anche le operazioni della shell.
+Le operazioni Get sono supportate [*nell'URI della risorsa*](windows-remote-management-glossary.md). **L'attributo SupportFragment** viene usato se l'operazione get supporta il concetto. **L'attributo SupportFiltering** non è valido e deve essere impostato su false. Questa funzionalità non è valida per un *URI di risorsa* se sono supportate anche le operazioni della shell.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Le operazioni della shell sono supportate [*nell'URI della risorsa*](windows-rem
 <span id="PlugInConfiguration_Resources_Resource_Security"></span><span id="pluginconfiguration_resources_resource_security"></span><span id="PLUGINCONFIGURATION_RESOURCES_RESOURCE_SECURITY"></span>**PlugInConfiguration** / **Risorse** / **Risorsa** / **Sicurezza**
 </dt> <dd>
 
-Questo elemento definisce il descrittore di sicurezza (tramite l'attributo **Sddl)** che deve essere applicato per determinare l'accesso a un [*URI*](windows-remote-management-glossary.md) di risorsa specifico (tramite l'attributo **URI).** Se **ExactMatch** non è presente, il valore predefinito dell'elemento **Security** è **False**, il che significa che **Sddl** si applica a tutti gli *URI* di risorsa che condividono **l'URI** come prefisso. Se **ExactMatch** è impostato su true, **Sddl** si applica solo all'URI **esatto** specificato. Se sono presenti più **voci di** sicurezza che possono essere applicate a un URI di risorsa *specifico,* la corrispondenza del prefisso più lungo viene usata per determinare il **valore Sddl appropriato.** In seguito alla corrispondenza con il prefisso più lungo, se esiste una voce **URI** di corrispondenza esatta, verrà sempre scelto come elemento Di sicurezza appropriato.
+Questo elemento definisce il descrittore di sicurezza (tramite l'attributo **Sddl)** che deve essere applicato per determinare l'accesso a un [*URI*](windows-remote-management-glossary.md) di risorsa specifico (tramite l'attributo **URI).** Se **ExactMatch** non è presente, il valore predefinito dell'elemento **Security** è **False**, il che significa che **Sddl** si applica a tutti gli *URI* di risorsa che condividono **l'URI** come prefisso. Se **ExactMatch** è impostato su true, **Sddl** si applica solo all'URI **esatto** specificato. Se sono presenti più **voci di** sicurezza che possono essere applicate a uno specifico *URI* di risorsa, la corrispondenza del prefisso più lungo viene usata per determinare il **valore Sddl appropriato.** In seguito alla corrispondenza con il prefisso più lungo, se esiste una voce **URI** di corrispondenza esatta, verrà sempre scelta come elemento Di sicurezza appropriato.
 
 </dd> </dl>
 

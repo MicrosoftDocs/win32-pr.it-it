@@ -39,7 +39,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="even">
 <td><span id="WSA_NOT_ENOUGH_MEMORY"></span><span id="wsa_not_enough_memory"></span><dl> <dt><strong>WSA_NOT_ENOUGH_MEMORY</strong></dt> <dt>8</dt> </dl></td>
-<td><dl> <dt><span id="Insufficient_memory_available."></span><span id="insufficient_memory_available."></span><span id="INSUFFICIENT_MEMORY_AVAILABLE."></span>Memoria disponibile insufficiente.</dt> <dd> In un'applicazione è stata Windows una funzione Sockets che esegue direttamente il mapping a una Windows funzione. La Windows funzione indica una mancanza di risorse di memoria necessarie.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Insufficient_memory_available."></span><span id="insufficient_memory_available."></span><span id="INSUFFICIENT_MEMORY_AVAILABLE."></span>Memoria disponibile insufficiente.</dt> <dd> In un'applicazione è stata Windows una funzione Sockets che esegue direttamente il mapping a Windows funzione. La Windows funzione indica una mancanza di risorse di memoria necessarie.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="WSA_INVALID_PARAMETER"></span><span id="wsa_invalid_parameter"></span><dl> <dt><strong>WSA_INVALID_PARAMETER</strong></dt> <dt>87</dt> </dl></td>
@@ -67,7 +67,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAEACCES"></span><span id="wsaeacces"></span><dl> <dt><strong>WSAEACCES</strong></dt> <dt>10013</dt> </dl></td>
-<td><dl> <dt><span id="Permission_denied."></span><span id="permission_denied."></span><span id="PERMISSION_DENIED."></span>Autorizzazione negata.</dt> <dd> Si è tentato di accedere a un socket in un modo non consentito dalle relative autorizzazioni di accesso. Un esempio è l'uso di un indirizzo di trasmissione per <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>sendto</strong></a> senza l'autorizzazione di trasmissione impostata tramite <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a>(SO_BROADCAST). <br/> Un altro possibile motivo dell'errore WSAEACCES è che quando viene chiamata la funzione di associazione (in Windows NT 4.0 con SP4 e versioni successive), un altro driver in modalità applicazione, servizio o kernel viene associato allo stesso indirizzo con accesso esclusivo. <a href="/windows/desktop/api/winsock/nf-winsock-bind"><strong></strong></a> Tale accesso esclusivo è una nuova funzionalità di Windows NT 4.0 con SP4 e versioni successive e viene implementato usando <a href="/windows/desktop/winsock/so-exclusiveaddruse">l'opzione SO_EXCLUSIVEADDRUSE.</a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="Permission_denied."></span><span id="permission_denied."></span><span id="PERMISSION_DENIED."></span>Autorizzazione negata.</dt> <dd> Si è tentato di accedere a un socket in un modo non consentito dalle relative autorizzazioni di accesso. Un esempio è l'uso di un indirizzo di trasmissione per <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>sendto</strong></a> senza l'autorizzazione di trasmissione impostata tramite <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a>(SO_BROADCAST). <br/> Un altro possibile motivo dell'errore WSAEACCES è che quando viene chiamata la funzione di associazione (in Windows NT 4.0 con SP4 e versioni successive), un altro driver in modalità applicazione, servizio o kernel è associato allo stesso indirizzo con accesso esclusivo. <a href="/windows/desktop/api/winsock/nf-winsock-bind"><strong></strong></a> Tale accesso esclusivo è una nuova funzionalità di Windows NT 4.0 con SP4 e versioni successive e viene implementato usando <a href="/windows/desktop/winsock/so-exclusiveaddruse">l'opzione SO_EXCLUSIVEADDRUSE.</a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSAEFAULT"></span><span id="wsaefault"></span><dl> <dt><strong>WSAEFAULT</strong></dt> <dt>10014</dt> </dl></td>
@@ -115,7 +115,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAEPROTONOSUPPORT"></span><span id="wsaeprotonosupport"></span><dl> <dt><strong>WSAEPROTONOSUPPORT</strong></dt> <dt>10043</dt> </dl></td>
-<td><dl> <dt><span id="Protocol_not_supported."></span><span id="protocol_not_supported."></span><span id="PROTOCOL_NOT_SUPPORTED."></span>Protocollo non supportato.</dt> <dd> Il protocollo richiesto non è stato configurato nel sistema o non esiste alcuna implementazione per esso. Ad esempio, una <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>chiamata socket</strong></a> richiede un socket SOCK_DGRAM, ma specifica un protocollo di flusso.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Protocol_not_supported."></span><span id="protocol_not_supported."></span><span id="PROTOCOL_NOT_SUPPORTED."></span>Protocollo non supportato.</dt> <dd> Il protocollo richiesto non è stato configurato nel sistema o non esiste alcuna implementazione per esso. Ad esempio, una <a href="/windows/desktop/api/Winsock2/nf-winsock2-socket"><strong>chiamata socket</strong></a> richiede un SOCK_DGRAM socket, ma specifica un protocollo di flusso.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSAESOCKTNOSUPPORT"></span><span id="wsaesocktnosupport"></span><dl> <dt><strong>WSAESOCKTNOSUPPORT</strong></dt> <dt>10044</dt> </dl></td>
@@ -159,7 +159,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="even">
 <td><span id="WSAECONNRESET"></span><span id="wsaeconnreset"></span><dl> <dt><strong>WSAECONNRESET</strong></dt> <dt>10054</dt> </dl></td>
-<td><dl> <dt><span id="Connection_reset_by_peer."></span><span id="connection_reset_by_peer."></span><span id="CONNECTION_RESET_BY_PEER."></span>Reimpostazione della connessione in base al peer.</dt> <dd> Connessione in corso interrotta forzatamente dall'host remoto. Ciò si verifica in genere se l'applicazione peer nell'host remoto viene arrestata improvvisamente, l'host viene riavviato, l'host o l'interfaccia di rete remota è disabilitata o l'host remoto usa una chiusura rigida (vedere <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> per altre informazioni sull'opzione SO_LINGER nel socket remoto). Questo errore può verificarsi anche se una connessione è stata interrotta a causa di un'attività keep-alive che rileva un errore durante una o più operazioni in corso. Le operazioni in corso hanno esito negativo con WSAENETRESET. Le operazioni successive hanno esito negativo con WSAECONNRESET.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Connection_reset_by_peer."></span><span id="connection_reset_by_peer."></span><span id="CONNECTION_RESET_BY_PEER."></span>Reimpostazione della connessione in base al peer.</dt> <dd> Connessione in corso interrotta forzatamente dall'host remoto. Ciò si verifica in genere se l'applicazione peer nell'host remoto viene improvvisamente arrestata, l'host viene riavviato, l'host o l'interfaccia di rete remota è disabilitata o l'host remoto usa una chiusura rigida (vedere <a href="/windows/desktop/api/winsock/nf-winsock-setsockopt"><strong>setsockopt</strong></a> per altre informazioni sull'opzione SO_LINGER nel socket remoto). Questo errore può verificarsi anche se una connessione è stata interrotta a causa di un'attività keep-alive che rileva un errore durante una o più operazioni in corso. Le operazioni in corso hanno esito negativo con WSAENETRESET. Le operazioni successive hanno esito negativo con WSAECONNRESET.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="WSAENOBUFS"></span><span id="wsaenobufs"></span><dl> <dt><strong>WSAENOBUFS</strong></dt> <dt>10055</dt> </dl></td>
@@ -167,7 +167,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="even">
 <td><span id="WSAEISCONN"></span><span id="wsaeisconn"></span><dl> <dt><strong>WSAEISCONN</strong></dt> <dt>10056</dt> </dl></td>
-<td><dl> <dt><span id="Socket_is_already_connected."></span><span id="socket_is_already_connected."></span><span id="SOCKET_IS_ALREADY_CONNECTED."></span>Il socket è già connesso.</dt> <dd> È stata effettuata una richiesta di connessione in un socket già connesso. Alcune implementazioni restituiscono anche questo errore se <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>sendto</strong></a> viene chiamato su un socket SOCK_DGRAM connesso (per i socket SOCK_STREAM, il parametro <em>to</em> in <strong>sendto</strong> viene ignorato), anche se altre implementazioni lo trattano come un evento legale.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Socket_is_already_connected."></span><span id="socket_is_already_connected."></span><span id="SOCKET_IS_ALREADY_CONNECTED."></span>Il socket è già connesso.</dt> <dd> È stata effettuata una richiesta di connessione in un socket già connesso. Alcune implementazioni restituiscono anche questo errore se <a href="/windows/desktop/api/winsock/nf-winsock-sendto"><strong>sendto</strong></a> viene chiamato su un socket SOCK_DGRAM connesso (per i socket SOCK_STREAM, il <em>parametro to</em> in <strong>sendto</strong> viene ignorato), anche se altre implementazioni lo trattano come un evento legale.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="WSAENOTCONN"></span><span id="wsaenotconn"></span><dl> <dt><strong>WSAENOTCONN</strong></dt> <dt>10057</dt> </dl></td>
@@ -211,7 +211,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAEPROCLIM"></span><span id="wsaeproclim"></span><dl> <dt><strong>WSAEPROCLIM</strong></dt> <dt>10067</dt> </dl></td>
-<td><dl> <dt><span id="Too_many_processes."></span><span id="too_many_processes."></span><span id="TOO_MANY_PROCESSES."></span>Troppi processi.</dt> <dd> Un Windows'implementazione di Sockets può avere un limite al numero di applicazioni che possono usarlo contemporaneamente. <a href="/windows/desktop/api/winsock/nf-winsock-wsastartup"><strong>WSAStartup</strong></a> potrebbe non riuscire con questo errore se è stato raggiunto il limite.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Too_many_processes."></span><span id="too_many_processes."></span><span id="TOO_MANY_PROCESSES."></span>Troppi processi.</dt> <dd> Un Windows'implementazione di Sockets può avere un limite al numero di applicazioni che possono usarla contemporaneamente. <a href="/windows/desktop/api/winsock/nf-winsock-wsastartup"><strong>WSAStartup</strong></a> potrebbe non riuscire con questo errore se è stato raggiunto il limite.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSAEUSERS"></span><span id="wsaeusers"></span><dl> <dt><strong>WSAEUSERS</strong></dt> <dt>10068</dt> </dl></td>
@@ -219,7 +219,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAEDQUOT"></span><span id="wsaedquot"></span><dl> <dt><strong>WSAEDQUOT</strong></dt> <dt>10069</dt> </dl></td>
-<td><dl> <dt><span id="Disk_quota_exceeded."></span><span id="disk_quota_exceeded."></span><span id="DISK_QUOTA_EXCEEDED."></span>Quota del disco superata.</dt> <dd> La quota del disco è esaurita. <br/> </dd> </dl></td>
+<td><dl> <dt><span id="Disk_quota_exceeded."></span><span id="disk_quota_exceeded."></span><span id="DISK_QUOTA_EXCEEDED."></span>Quota del disco superata.</dt> <dd> Esaurita la quota del disco. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSAESTALE"></span><span id="wsaestale"></span><dl> <dt><strong>WSAESTALE</strong></dt> <dt>10070</dt> </dl></td>
@@ -264,7 +264,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAEINVALIDPROVIDER"></span><span id="wsaeinvalidprovider"></span><dl> <dt><strong>WSAEINVALIDPROVIDER</strong></dt> <dt>10105</dt> </dl></td>
-<td><dl> <dt><span id="Service_provider_is_invalid."></span><span id="service_provider_is_invalid."></span><span id="SERVICE_PROVIDER_IS_INVALID."></span>Provider di servizi non valido.</dt> <dd> Il provider di servizi richiesto non è valido. Questo errore viene restituito dalle funzioni <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo"><strong>WSCGetProviderInfo</strong></a> e <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32"><strong>WSCGetProviderInfo32</strong></a> se la voce del protocollo specificata non è stata trovata. Questo errore viene restituito anche se il provider di servizi ha restituito un numero di versione diverso dalla 2.0.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Service_provider_is_invalid."></span><span id="service_provider_is_invalid."></span><span id="SERVICE_PROVIDER_IS_INVALID."></span>Provider di servizi non valido.</dt> <dd> Il provider di servizi richiesto non è valido. Questo errore viene restituito dalle funzioni <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo"><strong>WSCGetProviderInfo</strong></a> e <a href="/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32"><strong>WSCGetProviderInfo32</strong></a> se non è stato possibile trovare la voce di protocollo specificata. Questo errore viene restituito anche se il provider di servizi ha restituito un numero di versione diverso dalla 2.0.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSAEPROVIDERFAILEDINIT"></span><span id="wsaeproviderfailedinit"></span><dl> <dt><strong>WSAEPROVIDERFAILEDINIT</strong></dt> <dt>10106</dt> </dl></td>
@@ -272,7 +272,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSASYSCALLFAILURE"></span><span id="wsasyscallfailure"></span><dl> <dt><strong>WSASYSCALLFAILURE</strong></dt> <dt>10107</dt> </dl></td>
-<td><dl> <dt><span id="System_call_failure."></span><span id="system_call_failure."></span><span id="SYSTEM_CALL_FAILURE."></span>Errore di chiamata di sistema.</dt> <dd> Una chiamata di sistema che non dovrebbe mai avere esito negativo ha avuto esito negativo. Si tratta di un codice di errore generico, restituito in diverse condizioni. <br/> Restituito quando una chiamata di sistema che non deve mai avere esito negativo ha esito negativo. Ad esempio, se una chiamata a <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsawaitformultipleevents"><strong>WaitForMultipleEvents</strong></a> ha esito negativo o una delle funzioni del Registro di sistema non riesce a modificare i cataloghi di protocollo/spazio dei nomi.<br/> Restituito quando un provider non restituisce SUCCESS e non fornisce un codice di errore esteso. Può indicare un errore di implementazione del provider di servizi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="System_call_failure."></span><span id="system_call_failure."></span><span id="SYSTEM_CALL_FAILURE."></span>Errore di chiamata di sistema.</dt> <dd> Una chiamata di sistema che non deve mai avere esito negativo ha avuto esito negativo. Si tratta di un codice di errore generico, restituito in diverse condizioni. <br/> Restituito quando una chiamata di sistema che non deve mai avere esito negativo ha esito negativo. Ad esempio, se una chiamata a <a href="/windows/desktop/api/Winsock2/nf-winsock2-wsawaitformultipleevents"><strong>WaitForMultipleEvents</strong></a> ha esito negativo o una delle funzioni del Registro di sistema non riesce a modificare i cataloghi di protocollo/spazio dei nomi.<br/> Restituito quando un provider non restituisce SUCCESS e non fornisce un codice di errore esteso. Può indicare un errore di implementazione del provider di servizi.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSASERVICE_NOT_FOUND"></span><span id="wsaservice_not_found"></span><dl> <dt><strong>WSASERVICE_NOT_FOUND</strong></dt> <dt>10108</dt> </dl></td>
@@ -296,7 +296,7 @@ Nell'elenco seguente vengono descritti i possibili codici di errore restituiti [
 </tr>
 <tr class="odd">
 <td><span id="WSAHOST_NOT_FOUND"></span><span id="wsahost_not_found"></span><dl> <dt><strong>WSAHOST_NOT_FOUND</strong></dt> <dt>11001</dt> </dl></td>
-<td><dl> <dt><span id="Host_not_found."></span><span id="host_not_found."></span><span id="HOST_NOT_FOUND."></span>Host non trovato.</dt> <dd> L'host è sconosciuto. Il nome non è un nome host ufficiale o un alias oppure non è disponibile nei database su cui viene eseguita la query. Questo errore può essere restituito anche per le query del protocollo e del servizio e significa che il nome specificato non è stato trovato nel database pertinente.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="Host_not_found."></span><span id="host_not_found."></span><span id="HOST_NOT_FOUND."></span>Host non trovato.</dt> <dd> L'host è sconosciuto. Il nome non è un nome host o un alias ufficiale oppure non è stato trovato nei database su cui viene eseguita la query. Questo errore può essere restituito anche per le query di protocollo e servizio e significa che il nome specificato non è stato trovato nel database pertinente.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="WSATRY_AGAIN"></span><span id="wsatry_again"></span><dl> <dt><strong>WSATRY_AGAIN</strong></dt> <dt>11002</dt> </dl></td>

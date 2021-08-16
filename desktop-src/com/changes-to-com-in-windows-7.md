@@ -13,7 +13,7 @@ ms.locfileid: "118310807"
 ---
 # <a name="changes-to-com-in-windows-7"></a>Modifiche a COM in Windows 7
 
-Le aggiunte seguenti sono state apportate all'API COM in Windows 7:
+Le aggiunte seguenti sono state apportate all'API COM Windows 7:
 
 -   [**CoGetApartmentType**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetapartmenttype)
 

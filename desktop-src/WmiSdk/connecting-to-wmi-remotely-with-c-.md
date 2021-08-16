@@ -63,7 +63,7 @@ La connessione remota tramite classi nello spazio dei nomi [Microsoft.Management
 
 3.  Se si desidera impostare le credenziali per la connessione, è necessario creare e aggiungere un oggetto [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) a [CimSessionOptions.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))
 
-    L'esempio di codice seguente descrive la creazione di una classe [WSManSessionOptions,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) il riempimento con il valore [CimSessionOptions appropriato](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))e l'uso in una chiamata [CimSession.Create.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85))
+    L'esempio di codice seguente descrive la creazione di una classe [WSManSessionOptions,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) la compilazione con il valore [CimSessionOptions appropriato](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))e il suo uso in [una chiamata CimSession.Create.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85))
 
     ```CSharp
     string computer = “Computer_B”;

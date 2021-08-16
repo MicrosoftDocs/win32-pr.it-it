@@ -1,5 +1,5 @@
 ---
-description: Gli elementi seguenti vengono usati per creare e gestire file segnaposto e directory.
+description: Gli elementi seguenti vengono usati per creare e gestire file e directory segnaposto.
 ms.assetid: 518988BF-9D75-4CA7-8622-33A5C9DD1F4E
 title: Informazioni di riferimento sul filtro cloud
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118311445"
 ---
 # <a name="cloud-filter-reference"></a>Informazioni di riferimento sul filtro cloud
 
-Gli elementi seguenti vengono usati per creare e gestire file segnaposto e directory.
+Gli elementi seguenti vengono usati per creare e gestire file e directory segnaposto.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,9 +21,9 @@ Gli elementi seguenti vengono usati per creare e gestire file segnaposto e direc
 
 | Argomento                                                                     | Descrizione                                                                                                   |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Enumerazioni di filtri cloud](/windows/desktop/cfApi/cloud-files-enumerations)<br/> | Le enumerazioni seguenti vengono usate per la creazione e la gestione di file segnaposto e directory.<br/> |
-| [Funzioni filtro cloud](/windows/desktop/cfApi/cloud-files-functions)<br/>       | Le funzioni seguenti vengono usate per la creazione e la gestione di file e directory segnaposto.<br/>    |
-| [Strutture di filtro cloud](/windows/desktop/cfApi/cloud-files-structures)<br/>     | Le strutture seguenti vengono usate per la creazione e la gestione di file segnaposto e directory.<br/>   |
+| [Enumerazioni di filtri cloud](/windows/desktop/cfApi/cloud-files-enumerations)<br/> | Le enumerazioni seguenti vengono usate per la creazione e la gestione di file e directory segnaposto.<br/> |
+| [Funzioni di filtro cloud](/windows/desktop/cfApi/cloud-files-functions)<br/>       | Le funzioni seguenti vengono usate per la creazione e la gestione di file e directory segnaposto.<br/>    |
+| [Strutture di filtro cloud](/windows/desktop/cfApi/cloud-files-structures)<br/>     | Le strutture seguenti vengono usate per la creazione e la gestione di file e directory segnaposto.<br/>   |
 
 
 

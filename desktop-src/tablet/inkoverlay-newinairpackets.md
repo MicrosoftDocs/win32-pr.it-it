@@ -1,5 +1,5 @@
 ---
-description: 'Evento InkOverlay.NewInAirPackets: si verifica quando viene visualizzato un pacchetto in air.'
+description: 'Evento InkOverlay.NewInAirPackets: si verifica quando viene visualizzato un pacchetto in aria.'
 ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
 title: Evento InkOverlay.NewInAirPackets (Msinkaut.h)
 ms.topic: reference
@@ -49,9 +49,9 @@ Numero di pacchetti in aria ricevuti.
 *PacketData* \[ in, out\]
 </dt> <dd>
 
-Matrice contenente i dati selezionati per il pacchetto.
+Matrice che contiene i dati selezionati per il pacchetto.
 
-Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
 
 </dd> </dl>
 
@@ -61,16 +61,16 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pacchetto in air viene creato quando un utente sposta una penna vicino al tablet e il cursore si trova all'interno della finestra dell'oggetto dell'agente di raccolta input penna oppure l'utente sposta un mouse all'interno della finestra associata dell'oggetto dell'agente di raccolta input penna. [**Gli eventi NewInAirPackets**](inkcollector-newinairpackets.md) vengono generati rapidamente e il gestore eventi deve essere veloce o le prestazioni ne risentiranno.
+Un pacchetto in aria viene creato quando un utente sposta una penna accanto al tablet e il cursore si trova all'interno della finestra dell'oggetto dell'agente di raccolta input penna o quando l'utente sposta un mouse all'interno della finestra associata dell'oggetto dell'agente di raccolta input penna. [**Gli eventi NewInAirPackets**](inkcollector-newinairpackets.md) vengono generati rapidamente e il gestore eventi deve essere veloce o le prestazioni ne risentiranno.
 
 Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICENewInAirPackets.
 
-[**L'evento NewInAirPackets**](inkcollector-newinairpackets.md) viene generato anche in modalità di selezione o cancellazione, non solo quando si inserisce l'input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovare sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
+[**L'evento NewInAirPackets**](inkcollector-newinairpackets.md) viene generato anche in modalità di selezione o cancellazione, non solo quando si inserisce l'input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
-Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice *restituita dal parametro PacketData* contiene i dati per tali proprietà.
+Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita *dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
-> Anche se è possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o usate.
+> Sebbene sia possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o utilizzate.
 
  
 
@@ -80,7 +80,7 @@ Per impostare le proprietà contenute in questa matrice, usare la [**proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

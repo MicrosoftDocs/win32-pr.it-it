@@ -41,7 +41,7 @@ Codice del tasto virtuale del tasto premuto dall'utente.
 *MaiuscKey* 
 </dt> <dd>
 
-Membro [**dell'enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica quali tasti di modifica vengono pre-modificati al momento dell'evento.
+Membro [**dell'enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica quali tasti di modifica vengono premuto al momento dell'evento.
 
 
 
@@ -59,11 +59,11 @@ Membro [**dell'enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msi
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'evento ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
+Se questo evento ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_ L'interfaccia IInkEditEvents** implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ di DISPID IeeKeyUp.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_ L'interfaccia IInkEditEvents** implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IeeKeyUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,9 +71,9 @@ Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Inked.h (richiede anche \_ i.c con input penna)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Inked.h (richiede anche input \_ penna i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -91,7 +91,7 @@ Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_
 [**Controllo \[ InkEdit dell'evento KeyDown\]**](inkedit-keydown.md)
 </dt> <dt>
 
-[**Controllo Input penna \[ evento KeyPressModifica\]**](inkedit-keypress.md)
+[**Controllo Input \[ penna evento KeyPressModifica\]**](inkedit-keypress.md)
 </dt> </dl>
 
  

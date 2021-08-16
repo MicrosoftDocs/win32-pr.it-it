@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-Name
-description: Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catalogo globale.
+title: Attributo ms-WMI-Name
+description: Nome visualizzato per gli oggetti criteri di primo livello. Usato nel catalogo globale.
 ms.assetid: 4c07e4ba-7f3f-4066-b4cd-2c6d738d7421
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-WMI-Name-schema AD
-- msWMI-nome attributo AD schema
+- Schema AD dell'attributo ms-WMI-Name
+- Attributo msWMI-Name Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e49d5a57a9056e6f7201d3cdd53039c4f74b590f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6de31306ef4f62ed0b502cf9d32c84dad0803c8cc593706913856114df26ee77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837294"
 ---
-# <a name="ms-wmi-name-attribute"></a>attributo ms-WMI-Name
+# <a name="ms-wmi-name-attribute"></a>Attributo ms-WMI-Name
 
-Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catalogo globale.
+Nome visualizzato per gli oggetti criteri di primo livello. Usato nel catalogo globale.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-nome                                 |
-| LDAP-Display-Name | msWMI-nome                                  |
+| CN                | ms-WMI-Name                                 |
+| Ldap-Display-Name | msWMI-Name                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Aggiorna privilegio  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1639                     |
-| System-ID-GUID    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
+| System-Id-Guid    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catal
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catal
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catal
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catal
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Nome visualizzato per gli oggetti Criteri di primo livello. Utilizzato nel catal
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

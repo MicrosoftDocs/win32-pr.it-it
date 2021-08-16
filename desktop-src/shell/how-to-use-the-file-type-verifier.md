@@ -1,5 +1,5 @@
 ---
-description: Questo argomento descrive come usare File Type Verifier fornito in Windows 7 SDK.
+description: Questo argomento descrive come usare File Type Verifier fornito nell'SDK Windows 7.
 ms.assetid: 96FCA74B-DEB2-49D1-B670-EBD8BE0783F1
 title: Come usare Il verificatore del tipo di file
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118223373"
 ---
 # <a name="how-to-use-the-file-type-verifier"></a>Come usare Il verificatore del tipo di file
 
-Questo argomento descrive come usare Il verificatore del tipo di file fornito in [Windows 7 SDK.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Se il programma crea tipi di file con cui gli utenti dovrebbero interagire da Windows Shell (in genere archiviati nella cartella nota di un utente, ad esempio **Documenti**), è molto importante testare l'applicazione e verificare che i file creati siano registrati correttamente e offrire un'esperienza utente di alta qualità durante l'esplorazione e la ricerca dei file. Ciò è particolarmente importante se si prevede che gli utenti esercitino le applicazioni in Windows 7, che si basa su gestori di tipi di file di alta qualità per molte delle funzionalità di Shell.
+Questo argomento descrive come usare File Type Verifier fornito in [Windows 7 SDK.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Se il programma crea tipi di file con cui gli utenti dovrebbero interagire da Windows Shell (in genere archiviati nella cartella nota di un utente, ad esempio **Documenti**), è molto importante testare l'applicazione e verificare che i file creati siano registrati correttamente e offrire un'esperienza utente di alta qualità durante l'esplorazione e la ricerca di file. Ciò è particolarmente importante se si prevede che gli utenti esercitino le applicazioni in Windows 7, che si basa su gestori di tipi di file di alta qualità per molte delle funzionalità di Shell.
 
 Per verificare il tipo di file usando File Type Verifier, seguire questa procedura.
 

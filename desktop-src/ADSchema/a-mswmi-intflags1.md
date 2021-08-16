@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-intFlags1
+title: Attributo ms-WMI-intFlags1
 description: L'attributo ms-WMI-intFlags1 è riservato per uso interno.
 ms.assetid: ec3c18c3-6efc-4939-8a68-e461115be2ec
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-intFlags1
-- msWMI-schema AD attributo intFlags1
+- Schema AD dell'attributo msWMI-intFlags1
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 638316a72438ad3f4459cfe392c6090385606c8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8b0bfbdcc196015be1eb47931b959aefe41d9b83d28ae71cdf0756658c64bc00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837743"
 ---
-# <a name="ms-wmi-intflags1-attribute"></a>attributo ms-WMI-intFlags1
+# <a name="ms-wmi-intflags1-attribute"></a>Attributo ms-WMI-intFlags1
 
-L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
+**L'attributo ms-WMI-intFlags1** è riservato per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-intFlags1                     |
-| LDAP-Display-Name | msWMI-intFlags1                      |
+| CN                | ms-WMI-intFlags1                     |
+| Ldap-Display-Name | msWMI-intFlags1                      |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1678              |
-| System-ID-GUID    | 18e006b9-6445-48e3-9dcf-b5ecfbc4df8e |
+| System-Id-Guid    | 18e006b9-6445-48e3-9dcf-b5ecfbc4df8e |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ L'attributo **MS-WMI-intFlags1** è riservato per uso interno.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Si verifica quando l'oggetto InkOverlay o il controllo InkPicture ha completato il ridisegno di se stesso.
+description: Si verifica quando l'oggetto InkOverlay o il controllo InkPicture ha completato il ridisegno.
 ms.assetid: de3c69de-4a33-46e4-96e5-462805681bda
 title: Evento InkOverlay.Painted (Msinkaut.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118218935"
 ---
 # <a name="inkoverlaypainted-event"></a>Evento InkOverlay.Painted
 
-Si verifica quando [**l'oggetto InkOverlay**](inkoverlay-class.md) [o il controllo InkPicture](inkpicture-control-reference.md) ha completato il ridisegno di se stesso.
+Si verifica quando [**l'oggetto InkOverlay**](inkoverlay-class.md) o [il controllo InkPicture](inkpicture-control-reference.md) ha completato il ridisegno.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID IOEPainted.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ (dispatchinterface) IInkOverlayEvents e \_ IInkPictureEvents con ID DISPID \_ IOEPainted.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverla
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

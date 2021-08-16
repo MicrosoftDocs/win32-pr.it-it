@@ -59,7 +59,7 @@ I temi sono specifiche per l'aspetto dei controlli, in modo che l'elemento visiv
 
 Per rilasciare un handle del tema esistente, [**chiamare CloseThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-closethemedata). Per acquisire un nuovo handle del tema, [**usare OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata).
 
-Dopo la **trasmissione WM \_ THEMECHANGED,** tutti gli handle del tema esistenti non sono validi. Una finestra in grado di riconoscere il tema deve rilasciare e riaprire uno degli handle di tema preesistenti quando riceve il **messaggio WM \_ THEMECHANGED.** Se la [**funzione OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) restituisce **NULL,** la finestra deve disegnare senzathemed.
+Dopo la **trasmissione WM \_ THEMECHANGED,** tutti gli handle del tema esistenti non sono validi. Una finestra in grado di riconoscere il tema deve rilasciare e riaprire uno degli handle di tema preesistenti quando riceve il **messaggio WM \_ THEMECHANGED.** Se la [**funzione OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) restituisce **NULL,** la finestra deve disegnare senza intemed.
 
 ## <a name="requirements"></a>Requisiti
 

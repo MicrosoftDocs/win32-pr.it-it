@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsReplicaPointer (IADs. h)
-description: Il metodo Property dell'interfaccia IADsReplicaPointer imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsReplicaPointer (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsReplicaPointer imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: fc520ea4-b2c2-44c0-8bec-25f8d4a77074
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsReplicaPointer ADSI
+- Metodi della proprietà IADsReplicaPointer ADSI
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 044d5a5f1b87d42accb7e8e6e6c83eeda69eb5e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d4e232edf2fb64ec7e560d34d5a6b5c1a498e03c348e601230ced07a585f6dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839721"
 ---
-# <a name="iadsreplicapointer-property-methods"></a>Metodi di proprietà IADsReplicaPointer
+# <a name="iadsreplicapointer-property-methods"></a>Metodi della proprietà IADsReplicaPointer
 
-Il metodo Property dell'interfaccia [**IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,10 +52,10 @@ Numero di repliche esistenti.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -76,14 +76,14 @@ HRESULT put_Count(
 **ReplicaAddressHints**
 </dt> <dd> <dl>
 
-Un indirizzo di rete suggerito come riferimento probabile a un nodo che conduce al server dei nomi.
+Indirizzo di rete suggerito come riferimento probabile a un nodo che porta al server dei nomi.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -108,10 +108,10 @@ Numero di identificazione della replica.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -129,17 +129,17 @@ HRESULT put_ReplicaNumber(
 
 </dt> </dl> </dd> <dt>
 
-**ReplicaType**
+**Tipo di replica**
 </dt> <dd> <dl>
 
-Tipo di replica (Master, secondario o di sola lettura).
+Tipo di replica (master, secondaria o di sola lettura).
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -164,7 +164,7 @@ Nome del server dei nomi che contiene la replica.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -195,7 +195,7 @@ HRESULT put_ServerName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsReplicaPointer è definito come F60FB803-4080-11D1-A3AC-00C04FB950DC<br/>   |
 
@@ -208,7 +208,7 @@ HRESULT put_ServerName(
 [**IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer)
 </dt> <dt>
 
-[**\_REPLICAPOINTER ADS**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
+[**ADS \_ REPLICAPOINTER**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
 </dt> </dl>
 
  

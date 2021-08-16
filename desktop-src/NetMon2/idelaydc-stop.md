@@ -59,7 +59,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettere NPP alla rete.<br/> |
 | <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ NON \_ IN RITARDO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -67,7 +67,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Quando **viene chiamato IDelaydC::Stop,** Network Monitor l'acquisizione dei dati e chiude il [*file di acquisizione*](c.md). Il nome del file di acquisizione è stato restituito [quando è stato chiamato IDelaydC::Start.](idelaydc-start.md) È ora possibile esaminare il contenuto del file di acquisizione.
+Quando **viene chiamato IDelaydC::Stop,** Network Monitor l'acquisizione dei dati e chiude il [*file di acquisizione*](c.md). Il nome del file di acquisizione è stato restituito quando è stato chiamato [IDelaydC::Start.](idelaydc-start.md) È ora possibile esaminare il contenuto del file di acquisizione.
 
 Quando si arresta e si avvia l'acquisizione, assicurarsi di chiamare il metodo [IDelaydC::Configure](idelaydc-configure.md) ogni volta che si chiama [IDelaydC::Start](idelaydc-start.md) per riavviare l'acquisizione.
 

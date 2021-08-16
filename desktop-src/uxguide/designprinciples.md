@@ -28,7 +28,7 @@ Usare questi articoli per progettare l'esperienza utente per le Windows desktop:
 
     Alcuni errori comuni e incoerenze da controllare nella progettazione dell'interfaccia utente.
 
-Per informazioni sulla progettazione di app UWP (Universal Windows Platform), vedere Nozioni di base sulla progettazione [per le app UWP.](https://dev.windows.com/design/design-basics)
+Per informazioni sulla progettazione di app UWP (Universal Windows Platform), vedere Nozioni di base sulla progettazione [di app UWP.](https://dev.windows.com/design/design-basics)
 
  
 

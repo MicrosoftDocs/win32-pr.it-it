@@ -1,6 +1,6 @@
 ---
 title: Categorizzazione in base alle funzionalità del contenitore
-description: I componenti spesso richiedono determinate funzionalità dal contenitore e non funzionano con un contenitore che non fornisce il supporto.
+description: I componenti richiedono spesso determinate funzionalità dal contenitore e non funzionano con un contenitore che non fornisce il supporto.
 ms.assetid: 11002f3e-17de-4e05-a2df-0c9e6326846d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118310888"
 ---
 # <a name="categorizing-by-container-capabilities"></a>Categorizzazione in base alle funzionalità del contenitore
 
-I componenti spesso richiedono determinate funzionalità dal contenitore e non funzionano con un contenitore che non fornisce il supporto. L'interfaccia utente deve filtrare i componenti che richiedono funzionalità non supportate dal contenitore. A tale scopo, i componenti possono essere classificati in base alla funzionalità contenitore richiesta.
+I componenti richiedono spesso determinate funzionalità dal contenitore e non funzionano con un contenitore che non fornisce il supporto. L'interfaccia utente deve filtrare i componenti che richiedono funzionalità non supportate dal contenitore. A tale scopo, i componenti possono essere categorizzati in base alla funzionalità contenitore richiesta.
 
 Un esempio di componenti che richiedono funzionalità dal contenitore e non funzionano nei contenitori che non supportano tale funzionalità sono semplici controlli OLE con frame. La categorizzazione in base alle funzionalità del contenitore viene eseguita da una chiave del Registro di sistema aggiuntiva all'interno della chiave CLSID del componente:
 
@@ -25,9 +25,9 @@ HKEY_CLASSES_ROOT\CLSID\{123456FF-ABCD-4321-0101-00000000000C}Required Categorie
  
 ```
 
-Come illustrato in questo esempio, un componente può appartenere a categorie di componenti che indicano funzionalità supportate e a categorie di componenti che indicano le funzionalità necessarie.
+Come illustrato in questo esempio, un componente può appartenere a categorie di componenti che indicano funzionalità supportate, nonché a categorie di componenti che indicano le funzionalità necessarie.
 
-Nell'esempio seguente il controllo pulsante è un controllo OLE generico che non supporta alcuna funzionalità aggiuntiva. Funzionerà in qualsiasi contenitore di controlli OLE.
+Nell'esempio seguente il controllo pulsante è un controllo OLE generico che non supporta funzionalità aggiuntive. Funzionerà in qualsiasi contenitore di controlli OLE.
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_Button...}\Implemented Categories
@@ -54,7 +54,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Required Categories\{...CATID_Sim
  
 ```
 
-Un contenitore che supporta Visual Basic controlli associati a dati ma non supporta controlli frame semplici specifica il controllo CATID e IL CATID VBDatabound nell'interfaccia utente \_ \_ del controllo di inserimento. L'elenco dei controlli visualizzati all'utente conterrà il pulsante CLSID \_ e il CLSID \_ MyDBControl. GroupBox \_ CLSID non viene visualizzato.
+Un contenitore che supporta Visual Basic controlli con associazione a dati ma non i controlli frame semplici specifica il controllo CATID e CATID VBDatabound all'interfaccia utente del \_ \_ controllo di inserimento. L'elenco dei controlli visualizzati all'utente conterrà il pulsante CLSID \_ e il CLSID \_ MyDBControl. GroupBox \_ CLSID non verrà visualizzato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -69,10 +69,10 @@ Un contenitore che supporta Visual Basic controlli associati a dati ma non suppo
 [Classi e associazioni predefinite](default-classes-and-associations.md)
 </dt> <dt>
 
-[Definizione delle categorie di componenti](defining-component-categories.md)
+[Definizione di categorie di componenti](defining-component-categories.md)
 </dt> <dt>
 
-[Gestione categorie componenti](the-component-categories-manager.md)
+[Gestione categorie di componenti](the-component-categories-manager.md)
 </dt> </dl>
 
  

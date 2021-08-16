@@ -16,7 +16,7 @@ ms.locfileid: "118322024"
 
 Alcune applicazioni e/o protocolli basati sul protocollo UDP (User Datagram Protocol), ad esempio QUIC, cercano di sfruttare l'uso di punti di codice ECN (Explicit Congestion Notification) per migliorare la latenza e instabilità nelle reti congestionate.
 
-Le API ECN Winsock estendono l'interfaccia dei messaggi di controllo **getsockopt** setsockopt, nonché l'interfaccia del messaggio di controllo /  &mdash; [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) / [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) con il supporto per la modifica e la ricezione di punti di codice ECN nelle intestazioni &mdash; IP. La funzionalità fornita consente di ottenere e impostare punti di codice ECN in base al pacchetto.
+Le API ECN Winsock estendono l'interfaccia dei messaggi di controllo **getsockopt** / **setsockopt** e &mdash; [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) / [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) con il supporto per la modifica e la ricezione di punti di codice ECN nelle intestazioni &mdash; IP. La funzionalità fornita consente di ottenere e impostare punti di codice ECN in base al pacchetto.
 
 Per altre informazioni su ECN, vedere The Addition of Explicit Congestion Notification (ECN) to IP ( Aggiunta della notifica di congestione esplicita [(ECN) all'INDIRIZZO IP).](https://tools.ietf.org/html/rfc3168)
 
@@ -44,7 +44,7 @@ Vedere anche la [**struttura WSAMSG.**](/windows/win32/api/ws2def/ns-ws2def-wsam
 
 [**WSASetRecvIPEcn**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetrecvipecn) è una funzione inline, definita in `ws2tcpip.h` .
 
-Chiamare **WSASetRecvIPEcn** per specificare se lo stack IP deve popolare il buffer di controllo con un messaggio contenente il punto di codice ECN del campo di intestazione Tipo di servizio IPv4 (o campo di intestazione IPv6 della classe di traffico) in un datagramma ricevuto. Se impostata su `TRUE` , la funzione LPFN_WSARECVMSG [**(WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) restituisce dati di controllo facoltativi contenenti il punto di codice ECN del datagramma ricevuto. Il tipo di messaggio di controllo restituito **sarà IP_ECN** (o **IPV6_ECN**) con livello IPPROTO_IP **(o** **IPPROTO_IPV6**). I dati del messaggio di controllo vengono restituiti come **INT.** Questa opzione è valida solo nei socket di datagramma (il tipo di socket deve **essere SOCK_DGRAM**).
+Chiamare **WSASetRecvIPEcn** per specificare se lo stack IP deve popolare il buffer di controllo con un messaggio contenente il punto di codice ECN del campo di intestazione Tipo di servizio IPv4 (o campo di intestazione IPv6 della classe di traffico) in un datagramma ricevuto. Se impostata su `TRUE` , la funzione LPFN_WSARECVMSG [**(WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) restituisce dati di controllo facoltativi contenenti il punto di codice ECN del datagramma ricevuto. Il tipo di messaggio di controllo restituito **sarà IP_ECN** (o **IPV6_ECN**) con livello IPPROTO_IP **(o IPPROTO_IPV6**).  I dati del messaggio di controllo vengono restituiti come **INT.** Questa opzione è valida solo nei socket di datagramma (il tipo di socket deve **essere SOCK_DGRAM**).
 
 ## <a name="code-example-1mdashapplication-advertising-ecn-support"></a>Esempio di codice 1 &mdash; applicazione che pubblicizza il supporto ECN
 

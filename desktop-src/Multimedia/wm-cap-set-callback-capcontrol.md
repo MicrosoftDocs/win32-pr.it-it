@@ -3,7 +3,7 @@ title: WM_CAP_SET_CALLBACK_CAPCONTROL messaggio (Vfw.h)
 description: Il messaggio WM CAP SET CALLBACK CAPCONTROL imposta una funzione \_ di callback \_ \_ \_ nell'applicazione fornendo un controllo di registrazione preciso. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetCallbackOnCapControl.
 ms.assetid: 1e93ed7b-8205-45fe-bdcf-efe3f709f728
 keywords:
-- WM_CAP_SET_CALLBACK_CAPCONTROL messaggio Windows Multimediali
+- WM_CAP_SET_CALLBACK_CAPCONTROL messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
