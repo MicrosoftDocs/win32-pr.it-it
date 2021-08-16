@@ -20,9 +20,9 @@ ms.locfileid: "118197511"
 
 Gli attributi dei metadati vengono impostati usando il [**metodo IWMHeaderInfo3::AddAttribute.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-addattribute)
 
-A tutti gli attributi viene assegnata una lingua dall'elenco delle lingue per il file. È possibile accedere all'elenco di lingue usando [**l'interfaccia IWMLanguageList.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmlanguagelist) Per ottenere un puntatore a **un'interfaccia IWMLanguageList,** chiamare **QueryInterface** su qualsiasi interfaccia dell'oggetto da cui è stato ottenuto [**IWMHeaderInfo3.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3)
+A tutti gli attributi viene assegnata una lingua dall'elenco delle lingue per il file. È possibile accedere all'elenco di lingue usando [**l'interfaccia IWMLanguageList.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmlanguagelist) Per ottenere un puntatore a **un'interfaccia IWMLanguageList,** chiamare **QueryInterface** su qualsiasi interfaccia dell'oggetto da cui è stato [**ottenuto IWMHeaderInfo3.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3)
 
-È possibile aggiungere attributi con qualsiasi nome. Tuttavia, l'uso di nomi di attributi che non sono nomi standard supportati da Windows Media Format SDK può rendere i metadati difficili da individuare per gli utenti. La maggior parte delle applicazioni per la riproduzione di contenuti multimediali verifica la presenza di valori standard. Per altre informazioni, vedere [Metadati personalizzati.](custom-metadata.md)
+È possibile aggiungere attributi con qualsiasi nome. Tuttavia, l'uso di nomi di attributi non standard supportati da Windows Media Format SDK può rendere i metadati difficili da individuare per gli utenti. La maggior parte delle applicazioni per la riproduzione di contenuti multimediali verifica la presenza di valori standard. Per altre informazioni, vedere [Metadati personalizzati.](custom-metadata.md)
 
 Non è possibile usare il numero di 0xFFFF per aggiungere un attributo a livello globale. È necessario assegnare ogni attributo a un numero di flusso specifico o il flusso 0 per gli attributi a livello di file.
 

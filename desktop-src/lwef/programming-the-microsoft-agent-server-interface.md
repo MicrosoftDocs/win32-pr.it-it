@@ -1,32 +1,32 @@
 ---
-title: Programmazione dell'interfaccia del server di Microsoft Agent
-description: Programmazione dell'interfaccia del server di Microsoft Agent
+title: Programmazione dell'interfaccia del server Microsoft Agent
+description: Programmazione dell'interfaccia del server Microsoft Agent
 ms.assetid: d1f9feb1-afcf-45a5-8ebf-7200c5963f70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9699a102884eeab5079e25aaa39fb6942c5f4ef
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 81a57a0638e1832c66825693aba2c4cc7f2894739d3ad9c7d24f8929440165c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104043969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117882792"
 ---
-# <a name="programming-the-microsoft-agent-server-interface"></a>Programmazione dell'interfaccia del server di Microsoft Agent
+# <a name="programming-the-microsoft-agent-server-interface"></a>Programmazione dell'interfaccia del server Microsoft Agent
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Microsoft Agent fornisce servizi che consentono di programmare caratteri animati da un'applicazione. Questi servizi vengono implementati come server di automazione OLE. L'automazione OLE consente a un'applicazione di controllare a livello di codice l'oggetto di un'altra applicazione. In questo documento si presuppone la conoscenza delle Component Object Model (COM) e OLE. Per un'introduzione di questi servizi, vedere [Cenni preliminari sull'interfaccia di programmazione](microsoft-agent-programming-interface-overview.md).
+Microsoft Agent offre servizi che consentono di programmare caratteri animati da un'applicazione. Questi servizi vengono implementati come server di automazione OLE. L'automazione OLE consente a un'applicazione di controllare l'oggetto di un'altra applicazione a livello di codice. In questo documento si presuppone una conoscenza delle Component Object Model (COM) e OLE. Per un'introduzione a questi servizi, vedere Cenni [preliminari sull'interfaccia di programmazione](microsoft-agent-programming-interface-overview.md).
 
--   [Aggiunta della funzionalità Microsoft Agent all'applicazione](adding-microsoft-agent-functionality-to-your-application.md)
--   [Caricamento dei dati di tipo carattere e animazione](loading-character-and-animation-data.md)
+-   [Aggiunta di funzionalità di Microsoft Agent all'applicazione](adding-microsoft-agent-functionality-to-your-application.md)
+-   [Caricamento di dati di animazione e caratteri](loading-character-and-animation-data.md)
 -   [Creazione di un sink di notifica](creating-a-notification-sink.md)
 -   [Accesso ai servizi tramite Java](accessing-services-using-java.md)
--   [Accesso ai servizi di riconoscimento vocale](accessing-speech-services.md)
+-   [Accesso ai servizi Voce](accessing-speech-services.md)
 -   [Riferimento](reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Usare i metodi e le proprietà dell'oggetto SWbemObjectPath per creare e convalidare il percorso di un oggetto. Questo oggetto può essere creato dalla chiamata CreateObject di VBScript.
+description: Usare i metodi e le proprietà dell'oggetto SWbemObjectPath per costruire e convalidare il percorso di un oggetto. Questo oggetto può essere creato dalla chiamata CreateObject di VBScript.
 ms.assetid: f2cf489d-d2a9-4926-84cf-fb33fe3d726a
 ms.tgt_platform: multiple
-title: Oggetto SWbemObjectPath (wbemdisp. h)
+title: Oggetto SWbemObjectPath (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,34 +15,34 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 1e6836cd58970f3667d8f629a678d55bec5185a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d7273b39c5cdccea7e46a077c925247846cd9ca255fc1dba20a95aeb159b773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313550"
 ---
 # <a name="swbemobjectpath-object"></a>Oggetto SWbemObjectPath
 
-Usare i metodi e le proprietà dell'oggetto **SWbemObjectPath** per creare e convalidare il percorso di un oggetto. Questo oggetto può essere creato dalla chiamata **CreateObject** di VBScript.
+Usare i metodi e le proprietà **dell'oggetto SWbemObjectPath** per costruire e convalidare il percorso di un oggetto. Questo oggetto può essere creato dalla chiamata **CreateObject di** VBScript.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **SWbemObjectPath** dispone di questi tipi di membri:
+**L'oggetto SWbemObjectPath** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **SWbemObjectPath** dispone di questi metodi.
+**L'oggetto SWbemObjectPath** dispone di questi metodi.
 
 
 
 | Metodo                                                   | Descrizione                                                     |
 |:---------------------------------------------------------|:----------------------------------------------------------------|
-| [**SetAsClass**](swbemobjectpath-setasclass.md)         | Impone al percorso di indirizzare una classe WMI.<br/>              |
-| [**SetAsSingleton**](swbemobjectpath-setassingleton.md) | Impone al percorso di indirizzare un'istanza WMI singleton.<br/> |
+| [**Classe SetAs**](swbemobjectpath-setasclass.md)         | Forza il percorso a una classe WMI.<br/>              |
+| [**SetAsSingleton**](swbemobjectpath-setassingleton.md) | Forza il percorso a un'istanza WMI singleton.<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'oggetto **SWbemObjectPath** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **SWbemObjectPath** dispone di queste proprietà.
+**L'oggetto SWbemObjectPath** ha queste proprietà.
 
 
 
@@ -58,17 +58,17 @@ L'oggetto **SWbemObjectPath** dispone di queste proprietà.
 |:----------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Authority**](swbemobjectpath-authority.md)<br/>             | Lettura/Scrittura<br/> | Stringa che definisce il componente Authority del percorso dell'oggetto.<br/>                                                                                                           |
 | [**Classe**](swbemobjectpath-class.md)<br/>                     | Lettura/Scrittura<br/> | Nome della classe che fa parte del percorso dell'oggetto.<br/>                                                                                                                        |
-| [**DisplayName**](swbemobjectpath-displayname.md)<br/>         | Lettura/Scrittura<br/> | Stringa che contiene il percorso in un form che può essere utilizzato come nome visualizzato del moniker. Vedere [creazione di un'applicazione o di uno script WMI](creating-a-wmi-application-or-script.md).<br/> |
-| [**IsClass**](swbemobjectpath-isclass.md)<br/>                 | Sola lettura<br/>  | Valore booleano che indica se questo percorso rappresenta una classe. Questo è analogo alla proprietà [ \_ \_ genre](wmi-system-properties.md) nell'API com.<br/>                    |
+| [**Displayname**](swbemobjectpath-displayname.md)<br/>         | Lettura/Scrittura<br/> | Stringa che contiene il percorso in un formato che può essere usato come nome visualizzato del moniker. Vedere [Creazione di un'applicazione WMI o di uno script.](creating-a-wmi-application-or-script.md)<br/> |
+| [**IsClass**](swbemobjectpath-isclass.md)<br/>                 | Sola lettura<br/>  | Valore booleano che indica se questo percorso rappresenta una classe. Questo è analogo alla proprietà [ \_ \_ Genus](wmi-system-properties.md) nell'API COM.<br/>                    |
 | [**IsSingleton**](swbemobjectpath-issingleton.md)<br/>         | Sola lettura<br/>  | Valore booleano che indica se questo percorso rappresenta un'istanza singleton.<br/>                                                                                                |
-| [**Chiavi**](swbemobjectpath-keys.md)<br/>                       | Sola lettura<br/>  | Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che contiene le associazioni del valore della chiave.<br/>                                                                          |
+| [**Chiavi**](swbemobjectpath-keys.md)<br/>                       | Sola lettura<br/>  | Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che contiene le associazioni del valore di chiave.<br/>                                                                          |
 | [**Locale**](swbemobjectpath-locale.md)<br/>                   | Lettura/Scrittura<br/> | Stringa contenente le impostazioni locali per il percorso dell'oggetto.<br/>                                                                                                                     |
-| [**Spazio dei nomi**](swbemobjectpath-namespace.md)<br/>             | Lettura/Scrittura<br/> | Nome dello spazio dei nomi che fa parte del percorso dell'oggetto. Corrisponde alla proprietà [ \_ \_ namespace](wmi-system-properties.md) nell'API com.<br/>                        |
+| [**Spazio dei nomi**](swbemobjectpath-namespace.md)<br/>             | Lettura/Scrittura<br/> | Nome dello spazio dei nomi che fa parte del percorso dell'oggetto. Corrisponde alla proprietà [ \_ \_ Namespace](wmi-system-properties.md) nell'API COM.<br/>                        |
 | [**ParentNamespace**](swbemobjectpath-parentnamespace.md)<br/> | Sola lettura<br/>  | Nome dell'elemento padre dello spazio dei nomi che fa parte del percorso dell'oggetto.<br/>                                                                                                      |
-| [**Percorso**](swbemobjectpath-path.md)<br/>                       | Lettura/Scrittura<br/> | Contiene il percorso assoluto. Corrisponde alla proprietà di sistema [ \_ \_ path](wmi-system-properties.md) nell'API com. Si tratta della proprietà predefinita di questo oggetto.<br/>    |
-| [**RelPath**](swbemobjectpath-relpath.md)<br/>                 | Lettura/Scrittura<br/> | Contiene il percorso relativo. Corrisponde alla proprietà di sistema [ \_ \_ RelPath](wmi-system-properties.md) nell'API com.<br/>                                              |
-| [**Sicurezza\_**](swbemobjectpath-security-.md)<br/>            | Sola lettura<br/>  | Utilizzato per leggere o modificare le impostazioni di sicurezza.<br/>                                                                                                                             |
-| [**Server**](swbemobjectpath-server.md)<br/>                   | Lettura/Scrittura<br/> | Nome del server. Corrisponde alla proprietà di sistema del [ \_ \_ server](wmi-system-properties.md) nell'API com.<br/>                                                       |
+| [**Percorso**](swbemobjectpath-path.md)<br/>                       | Lettura/Scrittura<br/> | Contiene il percorso assoluto. Corrisponde alla proprietà di sistema [ \_ \_ Path](wmi-system-properties.md) nell'API COM. Si tratta della proprietà predefinita di questo oggetto.<br/>    |
+| [**Percorso relpath**](swbemobjectpath-relpath.md)<br/>                 | Lettura/Scrittura<br/> | Contiene il percorso relativo. Corrisponde alla proprietà di [ \_ \_ sistema Relpath](wmi-system-properties.md) nell'API COM.<br/>                                              |
+| [**Sicurezza\_**](swbemobjectpath-security-.md)<br/>            | Sola lettura<br/>  | Consente di leggere o modificare le impostazioni di sicurezza.<br/>                                                                                                                             |
+| [**Server**](swbemobjectpath-server.md)<br/>                   | Lettura/Scrittura<br/> | Nome del server. Corrisponde alla proprietà di sistema [ \_ \_ Server](wmi-system-properties.md) nell'API COM.<br/>                                                       |
 
 
 
@@ -76,7 +76,7 @@ L'oggetto **SWbemObjectPath** dispone di queste proprietà.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene illustrato come compilare i percorsi degli oggetti.
+Nell'esempio di codice VBScript seguente viene illustrato come compilare percorsi di oggetti.
 
 
 ```VB
@@ -136,7 +136,7 @@ WScript.Echo ""
 
 
 
-Nell'esempio di codice Perl seguente viene illustrato come compilare i percorsi degli oggetti.
+L'esempio di codice Perl seguente illustra come compilare percorsi di oggetti.
 
 
 ```
@@ -221,11 +221,11 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 
@@ -233,7 +233,7 @@ else
 
 <dl> <dt>
 
-[Oggetti API di scripting](scripting-api-objects.md)
+[Scripting di oggetti API](scripting-api-objects.md)
 </dt> </dl>
 
  

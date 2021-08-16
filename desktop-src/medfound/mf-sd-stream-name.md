@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118474057"
 ---
-# <a name="mf_sd_stream_name-attribute"></a>Attributo \_ MF SD \_ STREAM \_ NAME
+# <a name="mf_sd_stream_name-attribute"></a>Attributo MF \_ SD \_ STREAM \_ NAME
 
 Contiene il nome di un flusso.
 
@@ -42,7 +42,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del descrittore di flusso](stream-descriptor-attributes.md)

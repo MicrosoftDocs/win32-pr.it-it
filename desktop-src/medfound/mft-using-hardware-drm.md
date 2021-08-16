@@ -1,28 +1,28 @@
 ---
-description: Specifica se IMFTransform utilizza DRM hardware.
+description: Specifica se IMFTransform usa DRM hardware.
 title: MFT_USING_HARDWARE_DRM (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6dbacedbf5fd9298e4da5154bd82fcc9f39bde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3b46760fd5759abdd601269f5905f0649145649713839de5fe6424bc36219c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473551"
 ---
-# <a name="mft_using_hardware_drm-attribute"></a>MFT \_ con \_ \_ attributo DRM hardware
+# <a name="mft_using_hardware_drm-attribute"></a>Attributo \_ \_ DRM MFT USING \_ HARDWARE
 
-Specifica se IMFTransform utilizza DRM hardware.
+Specifica se IMFTransform usa DRM hardware.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (considerato **bool**)
+**UINT32** (trattato come **BOOL**)
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -30,10 +30,10 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/win32/ap
 
 ## <a name="remarks"></a>Commenti
 
-Se un MFT Decrypter specifica che questo attributo è impostato su 1, utilizza DRM hardware. Se un MFT Decrypter specifica che questo attributo è impostato su 0, non sta utilizzando DRM hardware. Se un MFT Decrypter non specifica questo attributo o lo specifica con un valore diverso, non lo è o non è in grado di indicare se sta utilizzando DRM hardware.
+Se un decrypter MFT specifica questo attributo impostato su 1, usa DRM hardware. Se un decrypter MFT specifica questo attributo impostato su 0, non usa DRM hardware. Se un decrypter MFT non specifica questo attributo o lo specifica con un valore diverso, non indica (o non è in grado di) indicare se usa DRM hardware.
 
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Aggiornamento di Windows 10 aprile 2020   <br/>                                       |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10 Aggiornamento di aprile 2020   <br/>                                       |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt>  <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

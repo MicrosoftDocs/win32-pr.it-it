@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-site-ID
-description: L'attributo MSMQ-site-ID contiene informazioni in modalità mista MSMQ.
+title: Attributo MSMQ-Site-ID
+description: L'attributo MSMQ-Site-ID contiene informazioni in modalità mista MSMQ.
 ms.assetid: 28874ae3-e3eb-4158-ba63-5dbdac6892f6
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-site-ID attributo AD schema
+- Schema AD dell'attributo MSMQ-Site-ID
 - Schema AD dell'attributo mSMQSiteID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66c125dd721b623c4203540757193511842a3a68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6f0b0e73f31332009f02c7dbe4090b25bc8a83cf8006affb9e5533ca41f76110
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762051"
 ---
-# <a name="msmq-site-id-attribute"></a>Attributo MSMQ-site-ID
+# <a name="msmq-site-id-attribute"></a>Attributo MSMQ-Site-ID
 
-L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
+**L'attributo MSMQ-Site-ID** contiene informazioni in modalità mista MSMQ.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-site-ID                                          |
-| LDAP-Display-Name | mSMQSiteID                                            |
+| CN                | MSMQ-Site-ID                                          |
+| Ldap-Display-Name | mSMQSiteID                                            |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.953                                |
-| System-ID-GUID    | 9a0dc340-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc340-c100-11d1-bbc5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MSMQ-site-ID** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 

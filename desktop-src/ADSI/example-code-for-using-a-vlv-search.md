@@ -114,7 +114,7 @@ int WideCharToLocal(LPTSTR pLocal, LPCWSTR pWide, DWORD dwChars)
 
 ## <a name="getvlvitemcount-example-function"></a>Funzione di esempio GetVLVItemCount
 
-Nell'esempio di codice seguente viene illustrato come usare una ricerca VLV per ottenere una stima del numero di elementi che verrebbero restituiti dalla ricerca.
+L'esempio di codice seguente illustra come usare una ricerca VLV per ottenere una stima del numero di elementi che verrebbero restituiti dalla ricerca.
 
 
 ```C++
@@ -227,7 +227,7 @@ HRESULT GetVLVItemCount(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemtext-example-function"></a>Funzione di esempio GetVLVItemText
 
-L'esempio di codice seguente illustra come usare una ricerca VLV per ottenere il testo per un singolo elemento in base a un indice.
+L'esempio di codice seguente illustra come usare una ricerca VLV per ottenere il testo di un singolo elemento in base a un indice.
 
 
 ```C++

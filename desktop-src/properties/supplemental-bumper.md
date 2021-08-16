@@ -13,7 +13,7 @@ ms.locfileid: "118463916"
 ---
 # <a name="supplemental"></a>Supplementare
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ ms.locfileid: "118463916"
 
 | Argomento                                                                                  | Descrizione                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [System.Supplemental.AlbumID](https://www.bing.com/search?q=System.Supplemental.AlbumID)<br/>       | Contiene gli identificatori degli album di cui l'elemento è membro. Può essere usato insieme all'elemento Album nelle API di Content Indexer per notificare ad altre app gli album di immagini creati dall'utente o le app già create.<br/> |
+| [System.Supplemental.AlbumID](https://www.bing.com/search?q=System.Supplemental.AlbumID)<br/>       | Contiene gli identificatori degli album di cui l'elemento è membro. Può essere usato in combinazione con l'elemento Album nelle API di Content Indexer per inviare una notifica ad altre app sugli album di immagini creati dall'utente o da app già create.<br/> |
 | [System.Supplemental.ResourceId](https://www.bing.com/search?q=System.Supplemental.ResourceId)<br/> | Contiene l'identificatore per l'elemento nel servizio di sincronizzazione remota. Usato per confrontare un file nel sistema con quelli disponibili nel cloud.<br/>                                                                                               |
 
 

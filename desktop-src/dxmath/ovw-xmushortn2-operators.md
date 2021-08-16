@@ -16,7 +16,7 @@ ms.locfileid: "118500695"
 La [**struttura XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) espone gli operatori seguenti.
 
 > [!Note]  
-> Gli operatori elencati qui sono disponibili solo in C++.
+> Gli operatori elencati di seguito sono disponibili solo in C++.
 
  
 

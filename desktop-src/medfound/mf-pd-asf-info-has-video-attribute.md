@@ -1,17 +1,17 @@
 ---
 description: Specifica se un file ASF (Advanced Systems Format) contiene almeno un flusso video.
 ms.assetid: 98411c75-519f-4ace-999f-1ea22457ed4a
-title: Attributo MF_PD_ASF_INFO_HAS_VIDEO (Wmcontainer. h)
+title: MF_PD_ASF_INFO_HAS_VIDEO attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c1a11f672ec4063d14131946ef4e1a820cc3ee7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46b5012a7fc20628cf8b50a4fc72242c02779623beb8126525a51501f51e412a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876272"
 ---
-# <a name="mf_pd_asf_info_has_video-attribute"></a>L' \_ attributo video di MF PD \_ ASF \_ \_ è stato \_ associato
+# <a name="mf_pd_asf_info_has_video-attribute"></a>MF \_ PD \_ ASF \_ INFO HAS \_ \_ VIDEO attribute
 
 Specifica se un file ASF (Advanced Systems Format) contiene almeno un flusso video.
 
@@ -23,9 +23,9 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di presentazione per il contenuto ASF. Se il valore è **true**, il file contiene almeno un flusso video. In caso contrario, il file non contiene flussi video.
+Questo attributo si applica ai descrittori di presentazione per il contenuto asf. Se il valore è **TRUE,** il file ha almeno un flusso video. In caso contrario, il file non contiene flussi video.
 
-Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati ASF.
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati asf.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -43,22 +43,22 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> <dt>
 
-[Oggetto intestazione ASF](asf-file-structure.md)
+[Oggetto Intestazione ASF](asf-file-structure.md)
 </dt> </dl>
 
  

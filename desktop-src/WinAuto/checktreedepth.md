@@ -15,7 +15,7 @@ ms.locfileid: "118325970"
 
 ## <a name="text"></a>Testo
 
-L'albero è {0} a livello di livello.
+L'albero è {0} di livello più profondo.
 
 ## <a name="type"></a>Tipo
 

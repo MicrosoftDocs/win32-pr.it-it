@@ -14,7 +14,7 @@ ms.locfileid: "118462969"
 # <a name="notifications-interfaces"></a>Interfacce di notifica
 
 
-Questa Windows di riferimento della ricerca è costituita dalle interfacce di notifica seguenti:
+Questa Windows di riferimento alla ricerca è costituita dalle interfacce di notifica seguenti:
 
 [**IGatherInlineStatus**](/previous-versions/windows/desktop/legacy/bb231473(v=vs.85))
 

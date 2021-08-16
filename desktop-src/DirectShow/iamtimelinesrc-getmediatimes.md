@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMediaTimes recupera le ore di inizio e di fine del supporto.
+description: Il metodo GetMediaTimes recupera le ore di avvio e arresto dei supporti.
 ms.assetid: c6a7d992-ceb5-4378-aee2-f2d778b41516
-title: 'Metodo IAMTimelineSrc:: GetMediaTimes (qedit. h)'
+title: Metodo IAMTimelineSrc::GetMediaTimes (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fa6e9cbb69da504a929e23722068583489063b9d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2a4b3fc716ba0865a010155e2f1e8a592cab396f5efb0c2d4afa3264da4a337
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756041"
 ---
-# <a name="iamtimelinesrcgetmediatimes-method"></a>Metodo IAMTimelineSrc:: GetMediaTimes
+# <a name="iamtimelinesrcgetmediatimes-method"></a>Metodo IAMTimelineSrc::GetMediaTimes
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetMediaTimes` metodo recupera le ore di inizio e di fine del supporto.
+Il `GetMediaTimes` metodo recupera i tempi di avvio e arresto dei supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,35 +46,35 @@ HRESULT GetMediaTimes(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
-Riceve l'ora di inizio del supporto, in unità di 100 nanosecondi.
+Riceve l'ora di inizio del supporto, in unità da 100 nanosecondi.
 
 </dd> <dt>
 
 *pStop* 
 </dt> <dd>
 
-Riceve l'ora di arresto del supporto, in unità di 100 nanosecondi.
+Riceve il tempo di arresto dei supporti, in unità da 100 nanosecondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-I tempi dei supporti sono relativi al file multimediale originale. Per ulteriori informazioni, vedere [tempo in servizi di modifica DirectShow](time-in-directshow-editing-services.md).
+I tempi dei supporti sono relativi al file multimediale originale. Per altre informazioni, vedere [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ I tempi dei supporti sono relativi al file multimediale originale. Per ulteriori
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

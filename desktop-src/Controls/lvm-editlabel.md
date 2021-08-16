@@ -3,7 +3,7 @@ title: LVM_EDITLABEL messaggio (Commctrl.h)
 description: Avvia la modifica sul posto del testo dell'elemento della visualizzazione elenco specificato. Il messaggio seleziona e attiva in modo implicito l'elemento specificato. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro ListView EditLabel.
 ms.assetid: b63f13f1-6e66-4770-af84-30bcdb241727
 keywords:
-- LVM_EDITLABEL di controllo Windows messaggio
+- LVM_EDITLABEL dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:

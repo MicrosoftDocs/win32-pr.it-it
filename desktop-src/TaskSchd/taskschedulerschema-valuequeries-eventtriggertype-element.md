@@ -22,7 +22,7 @@ ms.locfileid: "118355344"
 ---
 # <a name="valuequeries-eventtriggertype-element"></a>Elemento ValueQueries (eventTriggerType)
 
-Contiene una sequenza di elementi ognuno dei quali contiene un nome e un valore di query XPath. Le query vengono applicate a un evento restituito dalla sottoscrizione di eventi specificata [**nell'elemento Subscription.**](taskschedulerschema-subscription-eventtriggertype-element.md) Il nome del valore della query XPath può essere usato come variabile nella sezione azione di un'attività.
+Contiene una sequenza di elementi ognuno dei quali contiene un nome e un valore di query XPath. Le query vengono applicate a un evento restituito dalla sottoscrizione di eventi specificata [**nell'elemento Subscription.**](taskschedulerschema-subscription-eventtriggertype-element.md) Il nome del valore della query XPath può essere utilizzato come variabile nella sezione azione di un'attività.
 
 ``` syntax
 <xs:element name="ValueQueries"
@@ -31,7 +31,7 @@ Contiene una sequenza di elementi ognuno dei quali contiene un nome e un valore 
  />
 ```
 
-**L'elemento ValueQueries** è definito dal tipo complesso [**eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
+**L'elemento ValueQueries** è definito dal [**tipo complesso eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -45,9 +45,9 @@ Contiene una sequenza di elementi ognuno dei quali contiene un nome e un valore 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo C++, vedere [**Proprietà ValueQueries di IEventTrigger**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_valuequeries).
+Per lo sviluppo in C++, vedere [**Proprietà ValueQueries di IEventTrigger.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_valuequeries)
 
-Per lo sviluppo di script, [**vedere EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
+Per lo sviluppo di script, [**vedere EventTrigger.ValueQueries.**](eventtrigger-valuequeries.md)
 
 ## <a name="examples"></a>Esempio
 
@@ -59,8 +59,8 @@ Per un esempio completo del codice XML per un'attività che specifica un trigger
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

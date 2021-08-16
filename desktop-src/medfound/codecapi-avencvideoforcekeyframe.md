@@ -1,19 +1,19 @@
 ---
-description: Impone al codificatore di codificare il fotogramma successivo come fotogramma chiave.
+description: Forza il codificatore a codificare il fotogramma successivo come fotogramma chiave.
 ms.assetid: 1E252967-6C28-4DA3-9E64-BD276E475753
-title: Proprietà CODECAPI_AVEncVideoForceKeyFrame (codecapit. h)
+title: CODECAPI_AVEncVideoForceKeyFrame proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d72c555d5680e822e9a8308b3e143a754eb22b89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2e28738dcd7398ce04abe7f71778e94d7d5d4f49393365e92c43bbb347d98c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880707"
 ---
-# <a name="codecapi_avencvideoforcekeyframe-property"></a>Proprietà AVEncVideoForceKeyFrame di codecapi \_
+# <a name="codecapi_avencvideoforcekeyframe-property"></a>CODECAPI \_ AVEncVideoForceKeyFrame - proprietà
 
-Impone al codificatore di codificare il fotogramma successivo come fotogramma chiave.
+Forza il codificatore a codificare il fotogramma successivo come fotogramma chiave.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,17 +21,17 @@ Impone al codificatore di codificare il fotogramma successivo come fotogramma ch
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoForceKeyFrame**
+**CODECAPI \_ AVEncVideoForceKeyFrame**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se il valore è diverso da zero, il codificatore codifica il frame successivo come fotogramma chiave. Se il valore è zero, il codificatore seleziona se codificare il fotogramma successivo come fotogramma chiave.
+Se il valore è diverso da zero, il codificatore codifica il fotogramma successivo come fotogramma chiave. Se il valore è zero, il codificatore seleziona se codificare il fotogramma successivo come fotogramma chiave.
 
-Questa proprietà si applica al frame successivo che il codificatore riceve come input. Per un Media Foundation Transform (MFT), questo è il frame successivo passato al metodo [**IMFTransform::P rocessinput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) . L'impostazione viene reimpostata su zero dopo il frame successivo.
+Questa proprietà si applica al fotogramma successivo ricevuto dal codificatore come input. Per una Media Foundation (MFT), questo è il frame successivo passato al [**metodo IMFTransform::P rocessInput.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) L'impostazione viene reimpostata su zero dopo il fotogramma successivo.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene usata anche con [codificatori della fotocamera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Questa proprietà viene usata anche con codificatori [di fotocamera H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ Questa proprietà viene usata anche con [codificatori della fotocamera H. 264 UV
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Questa proprietà viene usata anche con [codificatori della fotocamera H. 264 UV
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

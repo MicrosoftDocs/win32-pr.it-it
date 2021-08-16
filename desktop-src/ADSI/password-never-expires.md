@@ -1,23 +1,23 @@
 ---
-title: Nessuna scadenza password (provider LDAP)
-description: Per abilitare l'opzione Nessuna scadenza password usando il provider LDAP, impostare il \_ flag per la scadenza di ADS UF \_ dont \_ expire nell' \_ attributo userAccountControl dell'utente.
+title: La password non scade mai (provider LDAP)
+description: Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD sull'attributo user userAccountControl.
 ms.assetid: b8d7e7fe-c846-45c4-9c5f-770530453836
 ms.tgt_platform: multiple
 keywords:
-- La password non scade mai con ADSI, provider LDAP
-- Provider LDAP ADSI, esempi di gestione degli utenti, nessuna scadenza password
+- La password non scade mai ad ADSI, provider LDAP
+- Provider LDAP ADSI, esempi di gestione utenti,Password mai scaduta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94c0d9eb42d37c1bcc7d65495fa0d72609060407
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: dfa48145fa2b78c7685cdf52ab58b1e681df48c7d10a80f0ac7462fa7d4cb868
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104399718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838931"
 ---
-# <a name="password-never-expires-ldap-provider"></a>Nessuna scadenza password (provider LDAP)
+# <a name="password-never-expires-ldap-provider"></a>La password non scade mai (provider LDAP)
 
-Per abilitare l'opzione Nessuna scadenza password usando il provider LDAP, impostare il flag per la [**scadenza di ADS \_ UF \_ dont \_ expire \_**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) nell'attributo [**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) dell'utente.
+Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag [**ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) sull'attributo [**user userAccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)
 
 
 ```VB
@@ -56,6 +56,6 @@ hr = pUser->Release();
 
 
 
- 
+ 
 
- 
+ 

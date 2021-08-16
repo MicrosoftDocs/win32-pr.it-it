@@ -1,9 +1,9 @@
 ---
 title: Image.Source - proprietà
-description: Rappresenta il percorso di directory di un'immagine.
+description: Rappresenta il percorso della directory di un'immagine.
 ms.assetid: 174a518a-e9a3-4461-a9a3-d61b62d2b718
 keywords:
-- Proprietà Image.Source Windows barra multifunzione
+- Proprietà Image.Source Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118202406"
 ---
 # <a name="imagesource-property"></a>Image.Source - proprietà
 
-Rappresenta il percorso di directory di un'immagine.
+Rappresenta il percorso della directory di un'immagine.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -57,7 +57,7 @@ Questo elemento contiene un valore di tipo *xs:anyURI* o qualsiasi sequenza di c
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice seguente illustra il markup necessario per dichiarare, tramite un set di elementi [**Image,**](windowsribbon-element-image.md) una raccolta di risorse immagine progettate per supportare quattro impostazioni dpi dello schermo specifiche. La **proprietà Image.Source** viene usata per specificare il percorso della risorsa immagine.
+Nell'esempio di codice seguente viene illustrato il markup necessario per dichiarare, tramite un set di elementi [**Image,**](windowsribbon-element-image.md) una raccolta di risorse immagine progettate per supportare quattro impostazioni dpi dello schermo specifiche. La **proprietà Image.Source** viene usata per specificare il percorso della risorsa immagine.
 
 
 ```C++

@@ -3,7 +3,7 @@ title: LVM_CREATEDRAGIMAGE messaggio (Commctrl.h)
 description: Crea un elenco di immagini di trascinamento per l'elemento specificato. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro CreateDragImage di ListView.
 ms.assetid: face4c8f-01ff-4f5a-a468-e306a50dae35
 keywords:
-- LVM_CREATEDRAGIMAGE di controllo Windows messaggio
+- LVM_CREATEDRAGIMAGE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

@@ -1,5 +1,5 @@
 ---
-description: Rappresenta gli oggetti in una vista e fornisce proprietà e metodi utilizzati per ottenere informazioni sul contenuto della vista.
+description: Rappresenta gli oggetti in una visualizzazione e fornisce le proprietà e i metodi utilizzati per ottenere informazioni sul contenuto della visualizzazione.
 ms.assetid: 3b866266-fee0-42f7-a1e0-9adb6cc2e23f
 title: Oggetto ShellFolderView (Shldisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118452128"
 ---
 # <a name="shellfolderview-object"></a>Oggetto ShellFolderView
 
-Rappresenta gli oggetti in una vista e fornisce proprietà e metodi utilizzati per ottenere informazioni sul contenuto della vista.
+Rappresenta gli oggetti in una visualizzazione e fornisce le proprietà e i metodi utilizzati per ottenere informazioni sul contenuto della visualizzazione.
 
 ## <a name="members"></a>Membri
 
@@ -87,7 +87,7 @@ Rappresenta gli oggetti in una vista e fornisce proprietà e metodi utilizzati p
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

@@ -36,7 +36,7 @@ Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-È consigliabile impostare *Impostazioni*. **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
+È necessario impostare *Impostazioni*. **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
 
 ## <a name="examples"></a>Esempio
 

@@ -17,7 +17,7 @@ ms.locfileid: "118361462"
 Le sezioni seguenti forniscono codice di esempio per eseguire attività specifiche usando l'API SDO.
 
 -   [Aggiunta di un client](/windows/desktop/Nps/sdo-adding-a-client)
--   [Modifica delle impostazioni di accesso Impostazioni](/windows/desktop/Nps/sdo-changing-dial-in-settings)
+-   [Modifica delle impostazioni di Impostazioni](/windows/desktop/Nps/sdo-changing-dial-in-settings)
 -   [Creazione di un criterio di richiesta di connessione](/windows/desktop/Nps/sdo-creating-a-connection-request-policy)
 -   [Elenco di profili, criteri e client](/windows/desktop/Nps/sdo-listing-profiles-policies-and-clients)
 -   [Recupero delle proprietà di accounting](/windows/desktop/Nps/sdo-obtaining-accounting-properties)

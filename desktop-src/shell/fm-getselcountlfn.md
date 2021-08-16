@@ -1,5 +1,5 @@
 ---
-description: Inviato da un'estensione di File Manager per recuperare il numero di file selezionati nella finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca). Il conteggio include i file con nomi di file lunghi.
+description: Inviato da un'estensione di File Manager per recuperare il numero di file selezionati nella finestra di Gestione file attiva (finestra della directory o finestra Risultati ricerca). Il conteggio include i file con nomi di file lunghi.
 title: FM_GETSELCOUNTLFN messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: d0815afc-5356-48a7-a90d-5f48dae6bee5
-ms.openlocfilehash: 1ec06c08775836a94b9ada6520ea7c5ea46b62f3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: ff0884e1b80e4a5a7e6c295bd449c8e1f6d069ced6c988f584108318a98c6891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094176"
 ---
-# <a name="fm_getselcountlfn-message"></a>Messaggio \_ FM GETSELCOUNTLFN
+# <a name="fm_getselcountlfn-message"></a>Messaggio \_ DI FM GETSELCOUNTLFN
 
-Inviato da un'estensione di File Manager per recuperare il numero di file selezionati nella finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca). Il conteggio include i file con nomi di file lunghi.
+Inviato da un'estensione di File Manager per recuperare il numero di file selezionati nella finestra di Gestione file attiva (finestra della directory o finestra Risultati ricerca). Il conteggio include i file con nomi di file lunghi.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,7 +40,7 @@ Restituisce il numero di file selezionati.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio deve essere utilizzato solo per le estensioni che supportano nomi di file lunghi, ad esempio estensioni che supportano la rete.
+Solo le estensioni che supportano nomi di file lunghi ( ad esempio, estensioni che supportano la rete) devono usare questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -57,7 +57,7 @@ ms.locfileid: "118421889"
 La **classe CIM \_ PowerSupply** rappresenta le funzionalità e la gestione del dispositivo logico di alimentazione.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -105,14 +105,14 @@ class CIM_PowerSupply : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La **classe \_ CIM PowerSupply** ha questi tipi di membri:
+La **classe \_ CiM PowerSupply** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe CIM \_ PowerSupply** dispone di questi metodi.
+La **classe \_ CIM PowerSupply** include questi metodi.
 
 
 
@@ -127,7 +127,7 @@ La **classe CIM \_ PowerSupply** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe CIM \_ PowerSupply** ha queste proprietà.
+La **classe \_ CIM PowerSupply** ha queste proprietà.
 
 <dl> <dt>
 
@@ -143,7 +143,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.15")
 </dt> </dl>
 
-Intervallo di tensione attualmente in uso. Se l'alimentatore non è attualmente alimentato, è possibile specificare il valore 6 ("Nessuno dei due"). Queste informazioni sono necessarie nel caso di un alimentatore ininterrotto (UPS), una sottoclasse **di CIM \_ PowerSupply.**
+Intervallo di tensione attualmente in uso. Se l'alimentazione non è attualmente disponibile, è possibile specificare il valore 6 ("Nessuno dei due"). Queste informazioni sono necessarie nel caso di un alimentatore (UPS) ininterrotto, una sottoclasse di **CIM \_ PowerSupply.**
 
 <dt>
 
@@ -225,7 +225,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Esecuzione/alimentazione completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
@@ -264,7 +264,7 @@ Esecuzione o alimentazione completa
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off line** (8)
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -304,7 +304,7 @@ Esecuzione o alimentazione completa
 
 </dt> <dd>
 
-Il dispositivo è noto per essere in modalità risparmio energia, ma lo stato esatto è sconosciuto.
+È noto che il dispositivo è in modalità di risparmio energia, ma lo stato esatto è sconosciuto.
 
 </dd> <dt>
 
@@ -315,7 +315,7 @@ Il dispositivo è noto per essere in modalità risparmio energia, ma lo stato es
 
 </dt> <dd>
 
-Il dispositivo è in stato di risparmio energia, ma funziona ancora e può presentare prestazioni ridotte.
+Il dispositivo è in stato di risparmio energia, ma continua a funzionare e può presentare prestazioni ridotte.
 
 </dd> <dt>
 
@@ -326,7 +326,7 @@ Il dispositivo è in stato di risparmio energia, ma funziona ancora e può prese
 
 </dt> <dd>
 
-Il dispositivo non funziona, ma può essere portato a piena potenza rapidamente.
+Il dispositivo non funziona, ma può essere alimentato rapidamente.
 
 </dd> <dt>
 
@@ -344,7 +344,7 @@ Il dispositivo non funziona, ma può essere portato a piena potenza rapidamente.
 
 </dt> <dd>
 
-Il dispositivo è in uno stato di avviso, anche se in modalità risparmio energia.
+Il dispositivo è in uno stato di avviso, anche se in modalità di risparmio energia.
 
 </dd> <dt>
 
@@ -355,7 +355,7 @@ Il dispositivo è in uno stato di avviso, anche se in modalità risparmio energi
 
 </dt> <dd>
 
-Il dispositivo è sospeso.
+Il dispositivo è in pausa.
 
 </dd> <dt>
 
@@ -383,7 +383,7 @@ Il dispositivo non è configurato.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattivo** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattiva** (21)
 
 
 </dt> <dd>
@@ -397,7 +397,7 @@ Il dispositivo è silenzioso.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -421,7 +421,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
 Codice di errore Gestione configurazione Win32.
@@ -466,13 +466,13 @@ Il dispositivo non è configurato correttamente.
 
 </dt> <dd>
 
-Il driver per questo dispositivo potrebbe essere danneggiato o il sistema potrebbe avere memoria insufficiente o altre risorse.
+Il driver per questo dispositivo potrebbe essere danneggiato o la memoria del sistema potrebbe essere insufficiente o altre risorse.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Questo dispositivo non funziona correttamente. Uno dei relativi driver o il registro potrebbe essere danneggiato.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro di sistema potrebbe essere danneggiato.** (4)
 
 
 </dt> <dd>
@@ -483,12 +483,12 @@ Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che Windows non può gestire.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che non Windows gestire.** (5)
 
 
 </dt> <dd>
 
-Il driver per il dispositivo richiede una risorsa che Windows non può gestire.
+Il driver per il dispositivo richiede una risorsa che non Windows gestire.
 
 </dd> <dt>
 
@@ -534,7 +534,7 @@ Il dispositivo non funziona correttamente. Il firmware di controllo segnala erro
 
 <span id="This_device_cannot_start."></span><span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>
 
-<span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>**Questo dispositivo non può essere avviato.** (10)
+<span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>**Impossibile avviare il dispositivo.** (10)
 
 
 </dt> <dd>
@@ -545,7 +545,7 @@ Impossibile avviare il dispositivo.
 
 <span id="This_device_failed."></span><span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>
 
-<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Questo dispositivo non è riuscito.** (11)
+<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Il dispositivo non è riuscito.** (11)
 
 
 </dt> <dd>
@@ -578,18 +578,18 @@ Windows possibile verificare le risorse del dispositivo.
 
 <span id="This_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>
 
-<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non può funzionare correttamente fino a quando non si riavvia il computer.** (14)
+<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non funziona correttamente fino a quando non si riavvia il computer.** (14)
 
 
 </dt> <dd>
 
-Il dispositivo non può funzionare correttamente fino al riavvio del computer.
+Il dispositivo non funziona correttamente finché il computer non viene riavviato.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Questo dispositivo non funziona correttamente perché è probabile che si sia verificato un problema di rienumere.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Questo dispositivo non funziona correttamente perché è probabile che si sia verificato un problema di enumerazione.** (15)
 
 
 </dt> <dd>
@@ -600,12 +600,12 @@ Il dispositivo non funziona correttamente a causa di un possibile problema di en
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificare tutte le risorse utilizzate dal dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.** (16)
 
 
 </dt> <dd>
 
-Windows identificare tutte le risorse utilizzate dal dispositivo.
+Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.
 
 </dd> <dt>
 
@@ -640,7 +640,7 @@ I driver di dispositivo devono essere reinstallati.
 
 <span id="Your_registry_might_be_corrupted."></span><span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il Registro di sistema potrebbe essere danneggiato.** (20)
+<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il registro potrebbe essere danneggiato.** (20)
 
 
 </dt> <dd>
@@ -651,12 +651,12 @@ Il Registro di sistema potrebbe essere danneggiato.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware. Windows sta rimuovendo questo dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.** (21)
 
 
 </dt> <dd>
 
-Errore di sistema. Se la modifica del driver di dispositivo non è efficace, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.
+Errore di sistema. Se la modifica del driver di dispositivo è inefficace, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.
 
 </dd> <dt>
 
@@ -678,13 +678,13 @@ Il dispositivo è disabilitato.
 
 </dt> <dd>
 
-Errore di sistema. Se la modifica del driver di dispositivo non è efficace, vedere la documentazione dell'hardware.
+Errore di sistema. Se la modifica del driver di dispositivo è inefficace, vedere la documentazione dell'hardware.
 
 </dd> <dt>
 
 <span id="This_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>
 
-<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Questo dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.** (24)
+<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Il dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.** (24)
 
 
 </dt> <dd>
@@ -695,7 +695,7 @@ Il dispositivo non è presente, non funziona correttamente o non dispone di tutt
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando il dispositivo.** (25)
 
 
 </dt> <dd>
@@ -706,7 +706,7 @@ Windows sta ancora configurando il dispositivo.
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando il dispositivo.** (26)
 
 
 </dt> <dd>
@@ -750,7 +750,7 @@ Il dispositivo è disabilitato. il firmware del dispositivo non ha fornito le ri
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interruzione (IRQ) in uso da un altro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interrupt (IRQ) che un altro dispositivo sta usando.** (30)
 
 
 </dt> <dd>
@@ -781,7 +781,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
 Se **TRUE,** il dispositivo usa una configurazione definita dall'utente.
@@ -793,7 +793,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -802,7 +802,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza. Se usata con altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze della classe e delle relative sottoclassi.
+Nome della classe o sottoclasse utilizzata nella creazione di un'istanza di . Se usata con altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze della classe e delle relative sottoclassi.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -811,7 +811,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -829,7 +829,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -862,13 +862,13 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che fornisce informazioni sull'errore registrato nella proprietà **LastErrorCode** e le azioni correttive da eseguire.
+Stringa in formato libero che fornisce informazioni sull'errore registrato nella proprietà **LastErrorCode** e sulle azioni correttive da eseguire.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -901,7 +901,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** l'alimentatore è un alimentatore a commutazione (rispetto a un alimentatore lineare).
+Se **TRUE,** l'alimentatore è un alimentatore a commutazione (anziché lineare).
 
 </dd> <dt>
 
@@ -923,7 +923,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -932,7 +932,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override per essere una proprietà chiave.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -941,16 +941,16 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **PNPDeviceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play identificatore del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Win32 Plug and Play identificatore di dispositivo del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 Esempio: \* "PNP030b"
 
@@ -1005,7 +1005,7 @@ Le funzionalità di risparmio energia sono attualmente abilitate, ma il set di f
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità di risparmio energia immesse automaticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità risparmio energia immesse automaticamente** (4)
 
 
 </dt> <dd>
@@ -1021,18 +1021,18 @@ Il dispositivo può modificare lo stato di alimentazione in base all'utilizzo o 
 
 </dt> <dd>
 
-Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo si trova nella classe **CIM \_ LogicalDevice padre** e può essere implementato. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo si trova nella classe **CIM \_ LogicalDevice** padre e può essere implementato. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Risparmio energia supportato** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Alimentazione supportata** (6)
 
 
 </dt> <dd>
 
-Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il *parametro PowerState* impostato su 5 (Power Cycle).
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il *parametro PowerState* impostato su 5 (Ciclo di alimentazione).
 
 </dd> <dt>
 
@@ -1043,7 +1043,7 @@ Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) p
 
 </dt> <dd>
 
-Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro  *PowerState* impostato su 5 (Ciclo di alimentazione) e l'ora impostata su una data e un intervallo specifici per l'accensione.
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (Power Cycle) e *Time* impostato su una data e un'ora o un intervallo specifici per l'accensione.
 
 </dd> </dl>
 
@@ -1058,9 +1058,9 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** il dispositivo può essere gestito dall'alimentazione, vale a dire in stato di risparmio energia. Se **FALSE,** il valore intero 1 ("Non supportato") deve essere l'unica voce nella **matrice PowerManagementCapabilities.**
+Se **TRUE,** il dispositivo può essere gestito dall'alimentazione, vale a dire inserito in uno stato di risparmio energia. Se **FALSE,** il valore intero 1 ("Non supportato") deve essere l'unica voce nella matrice **PowerManagementCapabilities.**
 
-Questa proprietà non indica se le funzionalità di risparmio energia sono attualmente abilitate o, se abilitate, quali funzionalità sono supportate. Per altre informazioni, vedere la **matrice PowerManagementCapabilities.** Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Questa proprietà non indica se le funzionalità di risparmio energia sono attualmente abilitate o, se abilitate, quali funzionalità sono supportate. Per altre informazioni, vedere la matrice **PowerManagementCapabilities.** Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1076,7 +1076,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza (in hertz) all'estremità superiore dell'intervallo di frequenza di input dell'alimentatore 1. Il valore 0 implica dc.
+Frequenza (in hertz) all'estremità alta dell'intervallo di frequenza di input dell'alimentatore 1. Il valore 0 implica DC.
 
 </dd> <dt>
 
@@ -1092,7 +1092,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.17"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza (in hertz) all'estremità bassa dell'intervallo di frequenza di input dell'alimentatore 1. Il valore 0 implica dc.
+Frequenza (in hertz) all'estremità bassa dell'intervallo di frequenza di input dell'alimentatore 1. Il valore 0 implica DC.
 
 </dd> <dt>
 
@@ -1108,7 +1108,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.8"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("millivolts")
 </dt> </dl>
 
-Alta tensione dell'intervallo di tensione di input 1 per l'alimentatore, in millivolt. Il valore 0 indica "Sconosciuto".
+Alta tensione dell'intervallo di tensione di input 1 per l'alimentatore, in millivolts. Il valore 0 indica "Sconosciuto".
 
 </dd> <dt>
 

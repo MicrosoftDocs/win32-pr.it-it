@@ -1,7 +1,7 @@
 ---
-description: Interfacce di ambito della ricerca per indicizzazione
+description: Interfacce dell'ambito di ricerca per indicizzazione
 ms.assetid: 3e91974d-4868-4646-95fd-da6e63551973
-title: Interfacce di ambito della ricerca per indicizzazione
+title: Interfacce dell'ambito di ricerca per indicizzazione
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 219723e7fc5a13f4ae3f782afa151abb2e871297895fe908f29cc63026ea9e34
@@ -11,10 +11,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118463126"
 ---
-# <a name="crawl-scope-interfaces"></a>Interfacce di ambito della ricerca per indicizzazione
+# <a name="crawl-scope-interfaces"></a>Interfacce dell'ambito di ricerca per indicizzazione
 
 
-Questa Windows di riferimento alla ricerca è costituita dalle interfacce di ambito della ricerca per indicizzazione seguenti:
+Questa Windows di riferimento per la ricerca è costituita dalle interfacce di ambito di ricerca per indicizzazione seguenti:
 
 [**IEnumSearchRoots**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchroots)
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: MmscUrl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 319146573e4782365b7db67c453a0866f198d61b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a2c2e21e466a0c81b42b06ef782eeef3a35f83537f934fbe2268c4c58383646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881682"
 ---
 # <a name="span-idwwan_profile_v4element_mmscurlspanmmscurl"></a><span id="WWAN_profile_v4.element_MmscUrl"></span>MmscUrl
 
@@ -38,11 +38,11 @@ Specifica l'URL del server MMSC per il dispositivo. facoltativo.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
@@ -60,15 +60,15 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><a href="element-mmsconfiguration.md">MmsConfiguration</a></td>
-<td><p>Informazioni di configurazione per il servizio messaggistica multimediale (MMS).</p>
+<td><p>Informazioni di configurazione per MmS (Multimedia Messaging Service).</p>
 <p>Oltre a impostare gli elementi di configurazione all'interno di questo elemento, un profilo MMS deve avere le impostazioni seguenti.</p>
 <ul>
-<li>L'elemento <a href="element-name.md"><strong>Name</strong></a> deve contenere un nome univoco a livello di sistema.</li>
-<li>Il relativo <a href="../mbn/schema-profilecreationtype-mbnprofile-element.md"><strong>ProfileCreationType</strong></a> deve essere impostato su <strong>UserProvisioned</strong>.</li>
-<li>Il <a href="/windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid"><strong>SimIccID</strong></a> deve contenere il ICCID della SIM a cui è destinato questo profilo.</li>
-<li>Il relativo <a href="../mbn/schema-connectionmode-mbnprofile-element.md"><strong>ConnectionMode</strong></a> deve essere impostato su <strong>Manual</strong>.</li>
-<li>Il <a href="element-purposegroupguid.md"><strong>PurposeGroupGuid</strong></a> deve contenere il GUID per il gruppo di scopi di MMS.</li>
-<li>Il valore di <a href="/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)"><strong>IsAdditionalPdpContextProfile</strong></a> deve essere impostato su <strong>true</strong>.</li>
+<li><a href="element-name.md"><strong>L'elemento Name</strong></a> deve contenere un nome univoco a livello di sistema.</li>
+<li><a href="../mbn/schema-profilecreationtype-mbnprofile-element.md"><strong>ProfileCreationType deve</strong></a> essere impostato su <strong>UserProvisioned.</strong></li>
+<li><a href="/windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid"><strong>SimIccID deve</strong></a> contenere l'ICCID della SIM a cui è destinato questo profilo.</li>
+<li>ConnectionMode <a href="../mbn/schema-connectionmode-mbnprofile-element.md"><strong>deve</strong></a> essere impostato su <strong>Manual.</strong></li>
+<li><a href="element-purposegroupguid.md"><strong>PurposeGroupGuid deve</strong></a> contenere il GUID per il gruppo di scopi MMS.</li>
+<li><a href="/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)"><strong>IsAdditionalPdpContextProfile</strong></a> deve essere impostato su <strong>true.</strong></li>
 </ul></td>
 </tr>
 </tbody>

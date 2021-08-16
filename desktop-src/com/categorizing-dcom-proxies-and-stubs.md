@@ -1,21 +1,21 @@
 ---
-title: Categorizzazione di proxy e Stub DCOM
-description: Categorizzazione di proxy e Stub DCOM
+title: Categorizzazione di proxy e stub DCOM
+description: Categorizzazione di proxy e stub DCOM
 ms.assetid: f5d117d6-6c2c-4beb-8869-1581a5b1846f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31685cd1318856b9e305246cfebc2cebb3a7874e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 5f45f61d89e31316975685d3e603a93d30559546c86abc3b63e8e7e8a0c83ff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310868"
 ---
-# <a name="categorizing-dcom-proxies-and-stubs"></a>Categorizzazione di proxy e Stub DCOM
+# <a name="categorizing-dcom-proxies-and-stubs"></a>Categorizzazione di proxy e stub DCOM
 
-DCOM esegue il marshalling dei riferimenti agli oggetti costruendo OBJREF che contengono CLSID. Questi CLSID sono vulnerabili agli attacchi di sicurezza perché le dll arbitrarie possono essere caricate durante il marshalling. Tuttavia, \_ non \_ \_ è possibile specificare il flag di marshalling personalizzato EOAC quando si chiama [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) (vedere [**\_ \_ funzionalità di autenticazione Eole**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)). L'impostazione di questo flag consente di proteggere la sicurezza del server quando si utilizza DCOM perché riduce le probabilità di esecuzione di dll arbitrarie. Quando questo flag è impostato, il server consente il marshalling solo dei CLSID implementati in ole32.dll, comadmin.dll, comsvcs.dll o es.dll o che implementano l' \_ ID di categoria del gestore di marshalling CATID.
+DCOM effettua il marshalling dei riferimenti agli oggetti mediante la creazione di OBJREF contenenti CLSID. Questi CLSID sono vulnerabili agli attacchi alla sicurezza perché le DLL arbitrarie possono essere caricate durante il marshalling. Tuttavia, il flag EOAC NO CUSTOM MARSHAL può essere specificato quando si \_ \_ chiama \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) (vedere [**EOLE AUTHENTICATION \_ \_ CAPABILITIES).**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities) L'impostazione di questo flag consente di proteggere la sicurezza del server quando si usa DCOM perché riduce le probabilità di esecuzione di DLL arbitrarie. Quando questo flag è impostato, il server consente il marshalling solo dei CLSID implementati in ole32.dll, comadmin.dll, comsvcs.dll o es.dll o che implementano l'ID categoria \_ MARSHALER CATID.
 
-\_Il gestore di marshalling CATID è un GUID della categoria di componenti che può essere associato a un CLSID sottoposto a marshalling personalizzato. Le interfacce sottoposte a marshalling personalizzato con questo CLSID sono consentite quando EOAC \_ non \_ \_ è impostato alcun marshalling personalizzato tramite [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+CATID MARSHALER è un GUID di categoria di componenti che può \_ essere associato a un CLSID di cui viene effettuato il marshalling personalizzato. Le interfacce di cui viene effettuato il marshalling personalizzato con questo CLSID sono consentite quando eOAC NO CUSTOM MARSHAL viene \_ \_ impostato tramite \_ [**CoInitializeSecurity.**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -24,6 +24,6 @@ DCOM esegue il marshalling dei riferimenti agli oggetti costruendo OBJREF che co
 [Categorie di componenti](component-categories.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

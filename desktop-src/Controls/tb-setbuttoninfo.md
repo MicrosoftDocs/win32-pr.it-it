@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETBUTTONINFO (COMmctrl. h)
+title: TB_SETBUTTONINFO messaggio (Commctrl.h)
 description: Imposta le informazioni per un pulsante esistente in una barra degli strumenti.
 ms.assetid: ac9b88b9-d0d0-4669-a342-708924d97c8b
 keywords:
-- Controlli di Windows Message TB_SETBUTTONINFO
+- TB_SETBUTTONINFO dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70612a90f245a25dde5a487917d7c3b669424ea8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8e9fa1da0f9556c025b83ac2b3345680fe11dac0dd15e202ed7336cacfe511e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829625"
 ---
-# <a name="tb_setbuttoninfo-message"></a>TB \_ SETBUTTONINFO messaggio
+# <a name="tb_setbuttoninfo-message"></a>TB \_ SETBUTTONINFO message
 
 Imposta le informazioni per un pulsante esistente in una barra degli strumenti.
 
@@ -41,17 +41,17 @@ Identificatore del pulsante.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TBBUTTONINFO**](/windows/desktop/api/Commctrl/ns-commctrl-tbbuttoninfoa) che contiene le informazioni sul pulsante nuovo. Prima di inviare questo messaggio, è necessario compilare i membri **cbSize** e **dwMask** di questa struttura.
+Puntatore a [**una struttura TBBUTTONINFO**](/windows/desktop/api/Commctrl/ns-commctrl-tbbuttoninfoa) che contiene le informazioni sul nuovo pulsante. I **membri cbSize** **e dwMask** di questa struttura devono essere compilati prima di inviare questo messaggio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il testo viene generalmente assegnato ai pulsanti quando vengono aggiunti a una barra degli strumenti specificando l'indice di una stringa nel pool di stringhe della barra degli strumenti. Se si usa un **\_ SETBUTTONINFO TB** per assegnare nuovo testo a un pulsante, il testo verrà sostituito in modo permanente dal pool di stringhe. È possibile modificare il testo richiamando **TB \_ SETBUTTONINFO** , ma non è possibile riassegnare la stringa dal pool di stringhe.
+Il testo viene in genere assegnato ai pulsanti quando vengono aggiunti a una barra degli strumenti specificando l'indice di una stringa nel pool di stringhe della barra degli strumenti. Se si usa **\_ setBUTTONINFO da TB** per assegnare nuovo testo a un pulsante, verrà eseguito l'override permanente del testo dal pool di stringhe. È possibile modificare il testo chiamando **di nuovo \_ TB SETBUTTONINFO,** ma non è possibile riassegnare la stringa dal pool di stringhe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,10 +59,10 @@ Il testo viene generalmente assegnato ai pulsanti quando vengono aggiunti a una 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **TB \_ SETBUTTONINFOW** (Unicode) e **TB \_ SETBUTTONINFOA** (ANSI)<br/>         |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **TB \_ SETBUTTONINFOW** (Unicode) e **\_ TB SETBUTTONINFOA** (ANSI)<br/>         |
 
 
 
@@ -82,7 +82,7 @@ Il testo viene generalmente assegnato ai pulsanti quando vengono aggiunti a una 
 [**TB \_ GETBUTTONTEXT**](tb-getbuttontext.md)
 </dt> <dt>
 
-[**TB \_ GETstring**](tb-getstring.md)
+[**TB \_ GETSTRING**](tb-getstring.md)
 </dt> <dt>
 
 [**TB \_ INSERTBUTTON**](tb-insertbutton.md)

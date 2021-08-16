@@ -1,36 +1,36 @@
 ---
 description: Recupero e impostazione delle proprietà
 ms.assetid: 259612e7-70df-4f0f-90bc-766008dfdce7
-title: Recupero e impostazione delle proprietà (Servizi componenti)
+title: Recupero e impostazione di proprietà (Servizi componenti)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d151b08293cd32a35cd27bdba4dd3a37cdebfa4f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 805d98463e1f9b8f08c1018b49554c95e2735bfa7ea6dca21d90243eb324df49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306756"
 ---
-# <a name="getting-and-setting-properties-component-services"></a>Recupero e impostazione delle proprietà (Servizi componenti)
+# <a name="getting-and-setting-properties-component-services"></a>Recupero e impostazione di proprietà (Servizi componenti)
 
-Prima di poter leggere o scrivere particolari proprietà esposte da un elemento in una raccolta, è necessario eseguire i passaggi seguenti:
+Prima di poter leggere o scrivere determinate proprietà esposte da un elemento in una raccolta, è necessario eseguire i passaggi seguenti:
 
 1.  Recuperare la raccolta.
-2.  Compilare la raccolta per leggere i dati dal catalogo COM+.
-3.  Recuperare l'elemento specifico della raccolta, che lo rappresenta con un oggetto della classe [**COMAdminCatalogObject**](comadmincatalogobject.md) .
+2.  Popolare la raccolta per leggere i dati dal catalogo COM+.
+3.  Recuperare l'elemento specifico nella raccolta, che lo rappresenta con un oggetto dalla [**classe COMAdminCatalogObject.**](comadmincatalogobject.md)
 
-Per un esempio in cui vengono illustrati questi passaggi, vedere [esplorazione della gerarchia della raccolta com+](navigating-the-com--collection-hierarchy.md).
+Per un esempio che illustra questi passaggi, vedere Esplorazione della gerarchia [di raccolte COM+.](navigating-the-com--collection-hierarchy.md)
 
-Poiché le particolari proprietà esposte possono variare a seconda dell'elemento rappresentato dall'elemento; ovvero un elemento che rappresenta un componente ha proprietà diverse rispetto a una che rappresenta un'applicazione COM+. Impostare una di queste proprietà utilizzando una singola proprietà generica, ovvero la proprietà Value, su [**COMAdminCatalogObject**](comadmincatalogobject.md).
+Poiché le particolari proprietà esposte possono variare a seconda di ciò che rappresenta l'elemento; ciò significa che un elemento che rappresenta un componente ha proprietà diverse rispetto a un elemento che rappresenta un'applicazione COM+. Impostare una di queste proprietà usando una singola proprietà generica, la proprietà Value, in [**COMAdminCatalogObject.**](comadmincatalogobject.md)
 
-La proprietà Value consente di ottenere o impostare eventuali proprietà denominate specifiche esposte da un elemento, restituendo un valore per una proprietà denominata durante il recupero e accettando un nome e un valore quando si imposta.
+La proprietà Value consente di ottenere o impostare qualsiasi proprietà denominata specifica esposta da un elemento, di restituire un valore per una proprietà denominata durante il recupero e di ottenere un nome e un valore durante l'impostazione.
 
-Non vengono effettivamente registrate modifiche nel catalogo COM+ fino a quando non si salvano in modo esplicito le modifiche utilizzando il metodo [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) sull'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) . Le modifiche in sospeso per tutte le proprietà di tutti gli elementi di una raccolta specifica vengono salvate in una sola volta. Per informazioni dettagliate, vedere [salvataggio o eliminazione di modifiche](saving-or-discarding-changes.md).
+Nessuna modifica viene effettivamente registrata nel catalogo COM+ fino a quando non si salvano in modo esplicito le modifiche usando il metodo [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) [**nell'oggetto COMAdminCatalogCollection.**](comadmincatalogcollection.md) Le modifiche in sospeso per tutte le proprietà di tutti gli elementi in una determinata raccolta vengono salvate tutte contemporaneamente. Per informazioni dettagliate, vedere [Salvataggio o rimozione delle modifiche.](saving-or-discarding-changes.md)
 
-Non tutte le modifiche apportate verranno accettate. Il catalogo COM+ applica una logica coerenza per assicurarsi di configurare gli elementi in modo ragionevole. Inoltre, quando si modificano alcune proprietà, altre potrebbero cambiare automaticamente dalla stessa logica di coerenza. Questi effetti vengono visualizzati quando si tenta di salvare le modifiche.
+Non tutte le modifiche apportate verranno accettate. Il catalogo COM+ applica una logica di coerenza per garantire la configurazione degli elementi in modo ragionevole. Inoltre, quando si modificano alcune proprietà, altre potrebbero cambiare automaticamente in base alla stessa logica di coerenza. Questi effetti vengono visualizzati quando si tenta di salvare le modifiche.
 
 > [!Note]  
-> È possibile che si sia in conflitto con un altro writer nel catalogo COM+. Tra le chiamate a [**popolare**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) per una determinata raccolta, non si dispone di un blocco su nessuno dei dati nel catalogo. Più parti possono contemporaneamente configurare gli elementi in una raccolta specificata e potrebbero essere in conflitto quando salvano le modifiche. Ciò significa che un altro utente potrebbe modificare le impostazioni di un oggetto prima o dopo l'esecuzione, eseguendo un tipo di programma usando gli oggetti COMAdmin o utilizzando lo strumento di amministrazione Servizi componenti, in locale o in remoto. La regola generale per la scrittura di oggetti nel catalogo è che tutte le proprietà di un oggetto vengono scritte in una sola volta. Ovvero l'ultimo writer WINS, l'oggetto viene salvato nel catalogo esattamente come l'ultimo autore lo ha configurato.
+> È possibile che l'utente sia in disezione con un altro writer nel catalogo COM+. Tra le [**chiamate a Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) per una determinata raccolta, non è presente un blocco su nessuno di questi dati nel catalogo. Più parti possono configurare contemporaneamente gli elementi in una determinata raccolta e possono essere in contesa quando salvano le modifiche. Ciò significa che un altro utente potrebbe modificare le impostazioni di un oggetto prima o dopo l'esecuzione, eseguendo un tipo di programma usando gli oggetti COMAdmin o lo strumento amministrativo Servizi componenti, in locale o in remoto. La regola generale per la scrittura di oggetti nel catalogo è che tutte le proprietà di un oggetto vengono scritte contemporaneamente. Ovvero, l'ultimo writer ha la precedenza, ovvero l'oggetto viene salvato nel catalogo esattamente come è stato configurato dall'ultimo writer.
 
  
 
@@ -44,7 +44,7 @@ Non tutte le modifiche apportate verranno accettate. Il catalogo COM+ applica un
 [Esecuzione di query per le proprietà disponibili](querying-for-available-properties.md)
 </dt> <dt>
 
-[Salvataggio o eliminazione di modifiche](saving-or-discarding-changes.md)
+[Salvataggio o rimozione delle modifiche](saving-or-discarding-changes.md)
 </dt> </dl>
 
  

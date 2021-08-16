@@ -29,7 +29,7 @@ g \_ wszWMOriginalFilename
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="see-also"></a>Vedi anche
 

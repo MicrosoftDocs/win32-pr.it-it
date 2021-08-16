@@ -287,7 +287,7 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Flag del tipo BOOL che indica che l'elenco SACL è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Questo flag può influire sul modo in cui il sistema gestisce l'elenco SACL, in relazione all'ereditarietà ACE. Il sistema ignora questo flag se il flag \_ EDIZIONE STANDARD \_ SACL PRESENT non è impostato.
+Flag del tipo BOOL che indica che l'elenco SACL è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Questo flag può influire sul modo in cui il sistema gestisce l'elenco SACL, in relazione all'ereditarietà ACE. Il sistema ignora questo flag se edizione Standard \_ flag SACL \_ PRESENT non è impostato.
 
 <dt>
 

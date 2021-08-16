@@ -1,5 +1,5 @@
 ---
-description: Modalità programma di esposizione della fotocamera al momento della foto, come letto dalle informazioni del file di immagine scambiabile (EXIF).
+description: Modalità del programma di esposizione della fotocamera al momento della foto, come letta dalle informazioni exIF (Exchangeable Image File).
 ms.assetid: d27003b4-f30a-4c48-b32f-933b2f29182a
 title: System.Photo.ExposureProgram
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118229976"
 ---
 # <a name="systemphotoexposureprogram"></a>System.Photo.ExposureProgram
 
-Modalità programma di esposizione della fotocamera al momento della foto, come letto dalle informazioni del file di immagine scambiabile (EXIF).
+Modalità del programma di esposizione della fotocamera al momento della foto, come letta dalle informazioni exIF (Exchangeable Image File).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -141,7 +141,7 @@ I valori PKEY sono definiti in Propkey.h.
 [Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -171,7 +171,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

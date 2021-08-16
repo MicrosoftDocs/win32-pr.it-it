@@ -1,7 +1,7 @@
 ---
 description: Chiude un handle di ricerca.
 ms.assetid: 2e6a547f-26a7-401a-b1e4-3f085ce82729
-title: CSCFindClose (funzione)
+title: Funzione CSCFindClose
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Cscmig.dll
-ms.openlocfilehash: 69e3ea972ccd67a1db999c186709ef3aeff84be9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 862159ed74d6c7c9ddbe4d6f97bede37bab7dca949e6d3259715737de07b8df5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758721"
 ---
-# <a name="cscfindclose-function"></a>CSCFindClose (funzione)
+# <a name="cscfindclose-function"></a>Funzione CSCFindClose
 
-\[Questa funzione non è supportata e non deve essere utilizzata.\]
+\[Questa funzione non è supportata e non deve essere usata.\]
 
 Chiude un handle di ricerca.
 
@@ -41,20 +41,20 @@ BOOL WINAPI CSCFindClose(
 
 <dl> <dt>
 
-*hFind* \[ in\]
+*hFind* \[ Pollici\]
 </dt> <dd>
 
-Handle di ricerca restituito dalla funzione [**CSCFindFirstFileW**](cscfindfirstfilew.md) .
+Handle di ricerca restituito dalla [**funzione CSCFindFirstFileW.**](cscfindfirstfilew.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **true** se ha esito positivo; in caso contrario, restituisce **false**.
+Questa funzione restituisce **TRUE** se ha esito positivo; In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

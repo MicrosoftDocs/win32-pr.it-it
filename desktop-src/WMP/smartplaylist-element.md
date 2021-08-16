@@ -3,7 +3,7 @@ title: Elemento smartPlaylist
 description: L'elemento smartPlaylist contiene la parte definita dinamicamente di una playlist.
 ms.assetid: 05912849-7475-4eb9-a7bd-00f20b80b1cf
 keywords:
-- Finestra elementi smartPlaylist Media Player
+- Elemento smartPlaylist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 511294af2de4343cb7f63db4312d530aadf57da6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a21d685759e9e8b27c881ceaec6595535b3c4b799eb28ecd94dd96a3a571ec99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763471"
 ---
 # <a name="smartplaylist-element"></a>Elemento smartPlaylist
 
-L'elemento **smartPlaylist** contiene la parte definita dinamicamente di una playlist.
+**L'elemento smartPlaylist** contiene la parte definita dinamicamente di una playlist.
 
 ``` syntax
 <smartPlaylist
@@ -37,7 +37,7 @@ L'elemento **smartPlaylist** contiene la parte definita dinamicamente di una pla
 
 | Termine                                                                                                                                   | Descrizione                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span id="version__required______________"></span><span id="VERSION__REQUIRED______________"></span>**versione** (obbligatoria) <br/> | Numero decimale che rappresenta il numero di versione dello schema della playlist intelligente. Impostare su 1.0.0.0.<br/> |
+| <span id="version__required______________"></span><span id="VERSION__REQUIRED______________"></span>**version** (obbligatorio) <br/> | Numero decimale che rappresenta il numero di versione dello schema smart playlist. Impostare su 1.0.0.0.<br/> |
 
 
 
@@ -58,7 +58,7 @@ L'elemento **smartPlaylist** contiene la parte definita dinamicamente di una pla
 
 ## <a name="remarks"></a>Commenti
 
-Un elemento **smartPlaylist** contiene in genere un elemento **querySet** e può contenere anche un elemento **Filter** .
+Un **elemento smartPlaylist** contiene in genere un **elemento querySet** e può anche contenere un **elemento filter.**
 
 ## <a name="examples"></a>Esempio
 
@@ -93,7 +93,7 @@ Un elemento **smartPlaylist** contiene in genere un elemento **querySet** e può
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/> |
 
 
 
@@ -104,10 +104,10 @@ Un elemento **smartPlaylist** contiene in genere un elemento **querySet** e può
 [**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Filter-elemento**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento querySet**](queryset-element.md)
@@ -116,7 +116,7 @@ Un elemento **smartPlaylist** contiene in genere un elemento **querySet** e può
 [**Elemento seq**](seq-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

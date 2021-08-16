@@ -1,5 +1,5 @@
 ---
-description: Questo argomento illustra come creare un collegamento per l'app, assegnargli un AppUserModelID e installarlo nella schermata Start.
+description: Questo argomento illustra come creare un collegamento per l'app, assegnarle un AppUserModelID e installarlo nel schermata Start.
 title: Come abilitare le notifiche di tipo avviso popup sul desktop tramite un AppUserModelID
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: bd02a0ec6512aa7637f0d6b2b281e1b862e61d3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 517c2b72e830c00b105048adc63923291f896cd5d0d77569c91b1aa12e034e60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459793"
 ---
 # <a name="how-to-enable-desktop-toast-notifications-through-an-appusermodelid"></a>Come abilitare le notifiche di tipo avviso popup sul desktop tramite un AppUserModelID
 
-Questo argomento illustra come creare un collegamento per l'app, assegnargli un [AppUserModelID](appids.md)e installarlo nella schermata Start. Si consiglia vivamente di eseguire questa operazione nell'Windows Installer piuttosto che nel codice dell'app. Senza un collegamento valido installato nella schermata Start o in **tutti i programmi**, non è possibile generare una notifica di tipo avviso popup da un'applicazione desktop.
+Questo argomento illustra come creare un collegamento per l'app, assegnarle un [AppUserModelID](appids.md)e installarlo nel schermata Start. È consigliabile eseguire questa operazione nel programma di installazione Windows anziché nel codice dell'app. Senza un collegamento valido installato nel schermata Start o **in** Tutti i programmi, non è possibile generare una notifica di tipo avviso popup da un'app desktop.
 
 > [!Note]  
-> I metodi di esempio usati in questo argomento sono tratti dall' [esempio di toast sul desktop](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts).
+> I metodi di esempio usati in questo argomento sono tratto [dall'esempio di](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts)avviso popup desktop .
 
  
 
@@ -34,16 +34,16 @@ Questo argomento illustra come creare un collegamento per l'app, assegnargli un 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   Librerie
-    -   C++: Runtime. Object. lib
-    -   C \# : Windows. winmd
--   C \# : Windows API Code Pack per Microsoft .NET Framework
+    -   C++: Runtime.object.lib
+    -   C: \# Windows. Winmd
+-   C: \# Windows Code Pack dell'API per Microsoft .NET Framework
 -   Una versione di Microsoft Visual Studio che supporta almeno Windows 8
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-prepare-the-shortcut-to-be-created"></a>Passaggio 1: preparare il collegamento da creare
+### <a name="step-1-prepare-the-shortcut-to-be-created"></a>Passaggio 1: Preparare il collegamento da creare
 
-Questo esempio determina innanzitutto il percorso della cartella di dati dell'app dell'utente tramite la funzione [**GetEnvironmentVariable**](/windows/win32/api/processenv/nf-processenv-getenvironmentvariablea) . Quindi compone il percorso completo del collegamento, determina che un collegamento con tale nome non esiste già in quel percorso e passa tali informazioni a un altro metodo che crea e installa il collegamento.
+Questo esempio determina innanzitutto il percorso della cartella dei dati dell'app dell'utente tramite la [**funzione GetEnvironmentVariable.**](/windows/win32/api/processenv/nf-processenv-getenvironmentvariablea) Compone quindi il percorso completo del collegamento, determina che un collegamento con tale nome non esiste già in tale percorso e passa le informazioni a un altro metodo che crea e installa il collegamento.
 
 Si noti che il collegamento può essere distribuito per utente o per app.
 
@@ -81,9 +81,9 @@ HRESULT DesktopToastsApp::TryCreateShortcut()
 
 
 
-### <a name="step-2-create-the-shortcut-and-install-it-in-the-start-screen"></a>Passaggio 2: creare il collegamento e installarlo nella schermata Start
+### <a name="step-2-create-the-shortcut-and-install-it-in-the-start-screen"></a>Passaggio 2: Creare il collegamento e installarlo nel schermata Start
 
-In questo esempio viene recuperato anche l'archivio delle proprietà del collegamento e viene impostata la proprietà [System.AppUserModel.ID](../properties/props-system-appusermodel-id.md) richiesta da una variabile definita in precedenza, `AppID` .
+Questo esempio recupera anche l'archivio delle proprietà del collegamento e imposta la [proprietà](../properties/props-system-appusermodel-id.md) System.AppUserModel.ID richiesta da una variabile definita in precedenza, `AppID` .
 
 
 ```C++
@@ -146,43 +146,43 @@ HRESULT DesktopToastsApp::InstallShortcut(_In_z_ wchar_t *shortcutPath)
 
 ## <a name="remarks"></a>Commenti
 
-In alternativa all'approccio illustrato in questo argomento, è possibile usare un Framework come il Windows Installer XML (WiX) per generare il collegamento e distribuirlo come parte del Windows Installer. In tal caso, il codice deve essere incluso nel file MSI invece che nel codice dell'app. Per altre informazioni, vedere il file di configurazione di WiX di esempio incluso nell'esempio [invio di notifiche di tipo avviso popup da app desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) .
+In alternativa all'approccio illustrato in questo argomento, è possibile usare un framework come Windows Installer XML (WiX) per generare il collegamento e distribuirlo come parte del programma di installazione Windows. In tal caso, questo codice deve essere incluso nell'msi anziché nel codice dell'app. Per altre informazioni, vedere il file di configurazione WiX di esempio incluso nell'esempio Invio di [notifiche di tipo avviso popup da app desktop.](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208))
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Guida introduttiva: invio di una notifica di tipo avviso popup dal desktop](quickstart-sending-desktop-toast.md)
+[Avvio rapido: Invio di una notifica di tipo avviso popup dal desktop](quickstart-sending-desktop-toast.md)
 </dt> <dt>
 
 [Esempio di invio notifiche di tipo avviso popup da app desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208))
 </dt> <dt>
 
-[ID modello utente applicazione (AppUserModelIDs)](appids.md)
+[ID modello utente applicazione (AppUserModelID)](appids.md)
 </dt> <dt>
 
-[Procedura: installare gli strumenti di Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
+[Procedura: Installare gli strumenti Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
 </dt> <dt>
 
-[XML Schema popup](/uwp/schemas/tiles/toastschema/schema-root)
+[Schema XML di tipo avviso popup](/uwp/schemas/tiles/toastschema/schema-root)
 </dt> <dt>
 
 [Panoramica delle notifiche di tipo avviso popup](/previous-versions/windows/apps/hh779727(v=win.10))
 </dt> <dt>
 
-[Guida introduttiva: invio di una notifica di tipo avviso popup](/previous-versions/windows/apps/hh465448(v=win.10))
+[Avvio rapido: Invio di una notifica di tipo avviso popup](/previous-versions/windows/apps/hh465448(v=win.10))
 </dt> <dt>
 
-[Guida introduttiva: invio di notifiche push di tipo avviso popup](/previous-versions/windows/hh761487(v=win.10))
+[Avvio rapido: Invio di una notifica push di tipo avviso popup](/previous-versions/windows/hh761487(v=win.10))
 </dt> <dt>
 
-[Linee guida ed elenco di controllo per notifiche di tipo avviso popup](/windows/uwp/design/shell/tiles-and-notifications/)
+[Linee guida ed elenco di controllo per le notifiche di tipo avviso popup](/windows/uwp/design/shell/tiles-and-notifications/)
 </dt> <dt>
 
 [Come aggiungere immagini a un modello di avviso popup](/previous-versions/windows/)
 </dt> <dt>
 
-[Come verificare le impostazioni di notifica di tipo avviso popup](/previous-versions/windows/)
+[Come controllare le impostazioni di notifica di tipo avviso popup](/previous-versions/windows/)
 </dt> <dt>
 
 [Come scegliere e usare un modello di avviso popup](/previous-versions/windows/apps/hh465448(v=win.10))
@@ -191,13 +191,13 @@ In alternativa all'approccio illustrato in questo argomento, è possibile usare 
 [Come gestire l'attivazione da una notifica di tipo avviso popup](/previous-versions/windows/apps/hh761468(v=win.10))
 </dt> <dt>
 
-[Come acconsentire esplicitamente per le notifiche di tipo avviso popup](/previous-versions/windows/apps/hh781238(v=win.10))
+[Come acconsentire esplicitamente alle notifiche di tipo avviso popup](/previous-versions/windows/apps/hh781238(v=win.10))
 </dt> <dt>
 
 [Scelta di un modello di avviso popup](/previous-versions/windows/apps/hh761494(v=win.10))
 </dt> <dt>
 
-[Opzioni audio popup](/previous-versions/windows/apps/hh761492(v=win.10))
+[Opzioni audio di tipo Avviso popup](/previous-versions/windows/apps/hh761492(v=win.10))
 </dt> </dl>
 
  

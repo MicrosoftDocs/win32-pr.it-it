@@ -1,4 +1,4 @@
-- name: Interfaccia di programmazione dell'applicazione WPD
+- name: WPD Application Programming Interface
   href: wpd-application-programming-interface.md
   items:
     - name: Requisiti generali per lo sviluppo di applicazioni
@@ -11,7 +11,7 @@
               href: support-in-windows-vista.md
             - name: Supporto in Windows XP
               href: support-in-windows-xp.md
-    - name: Requisiti per le applicazioni Windows Media DRM-Enabled
+    - name: Requisiti per Windows applicazioni DRM-Enabled multimediali
       href: requirements-for-windows-media-drm-enabled-applications.md
     - name: Esempi
       href: sample.md
@@ -35,14 +35,14 @@
           href: the-conceptual-model.md
         - name: Rappresentazione del dispositivo
           href: device-representation.md
-        - name: Rappresentazione della funzionalità
+        - name: Rappresentazione delle funzionalità
           href: representing-functionality.md
         - name: Requisiti per gli oggetti
           href: requirements-for-objects.md
           items:
-            - name: Oggetto dispositivo
+            - name: Oggetto Device
               href: device-object.md
-        - name: PROPERTYKEYs e GUID nei dispositivi portatili Windows
+        - name: PROPERTYKEYs e GUID in Windows dispositivi portatili
           href: propertykeys-and-guids-in-windows-portable-devices.md
     - name: Guida per programmatori
       href: programming-guide.md
@@ -59,17 +59,17 @@
                   href: specifying-client-information.md
         - name: Enumerazione del contenuto
           href: enumerating-content.md
-        - name: Recupero delle proprietà dell'oggetto
+        - name: Recupero delle proprietà degli oggetti
           href: retrieving-object-properties.md
           items:
             - name: Recupero di proprietà per un singolo oggetto
               href: retrieving-properties-for-a-single-object.md
-        - name: Impostazione delle proprietà degli oggetti
+        - name: Impostazione delle proprietà dell'oggetto
           href: setting-object-properties.md
           items:
             - name: Impostazione delle proprietà per un singolo oggetto
               href: setting-properties-for-a-single-object.md
-        - name: Recupero delle informazioni sul dispositivo
+        - name: Recupero di informazioni sul dispositivo
           href: retrieving-device-information.md
           items:
             - name: Recupero delle categorie funzionali supportate da un dispositivo
@@ -78,25 +78,25 @@
               href: retrieving-the-content-types-supported-by-a-device.md
             - name: Recupero degli eventi supportati da un dispositivo
               href: retrieving-the-events-supported-by-a-device.md
-        - name: Recupero delle informazioni sull'oggetto
+        - name: Recupero di informazioni sugli oggetti
           href: retrieving-object-information.md
           items:
             - name: Recupero di un ID oggetto da un ID univoco persistente
               href: retrieving-an-object-identifier-from-a-persistent-unique-identifier.md
-            - name: Recupero degli identificatori di oggetti funzionali per un dispositivo
+            - name: Recupero degli identificatori di oggetto funzionale per un dispositivo
               href: retrieving-the-functional-object-identifiers-for-a-device.md
-        - name: Funzionamento sul contenuto del dispositivo
+        - name: Uso del contenuto del dispositivo
           href: operating-on-device-content.md
           items:
-            - name: Trasferimento di un'immagine o di un file musicale al dispositivo
+            - name: Trasferimento di un'immagine o Musica file al dispositivo
               href: transferring-an-image-or-music-file-to-the-device.md
-            - name: Trasferimento di un oggetto Properties-Only al dispositivo
+            - name: Trasferimento di un Properties-Only al dispositivo
               href: transferring-a-properties-only-object-to-the-device.md
-            - name: Trasferimento del contenuto dal dispositivo a un PC
+            - name: Trasferimento di contenuto dal dispositivo a un PC
               href: transferring-content-from-the-device-to-a-pc.md
-            - name: Eliminazione del contenuto dal dispositivo
+            - name: Eliminazione di contenuto dal dispositivo
               href: deleting-content-from-the-device.md
-        - name: Attività del servizio del dispositivo
+        - name: Attività del servizio dispositivo
           href: device-service-tasks.md
           items:
             - name: Apertura di un servizio
@@ -105,29 +105,29 @@
               href: enumerating-service-content.md
             - name: Enumerazione dei servizi
               href: enumerating-services.md
-            - name: Recupero degli eventi del servizio supportati
+            - name: Recupero di eventi del servizio supportati
               href: retrieving-supported-events.md
-            - name: Recupero dei formati di servizio supportati
+            - name: Recupero di formati di servizio supportati
               href: retrieving-supported-formats.md
             - name: Recupero di metodi di servizio supportati
               href: retrieving-supported-methods.md
             - name: Accesso alle proprietà dell'oggetto servizio
               href: accessing-service-object-properties.md
               items:
-                - name: Recupero proprietà contenuto-oggetto
+                - name: Recupero di proprietà content-object
                   href: retrieving-content-object-properties.md
-                - name: Scrittura di proprietà di contenuto-oggetto
+                - name: Scrittura di proprietà content-object
                   href: writing-content-object-properties.md
             - name: Richiamare metodi di servizio
               href: invoking-methods-synchronously.md
-            - name: Richiamo asincrono di metodi del servizio
+            - name: Chiamata asincrona dei metodi del servizio
               href: invoking-methods-asynchronously.md
         - name: Attività avanzate
           href: advanced-tasks.md
           items:
             - name: Recupero di proprietà per più oggetti
               href: retrieving-properties-for-multiple-objects.md
-            - name: Recupero di proprietà per più oggetti in base al formato oggetto
+            - name: Recupero di proprietà per più oggetti in base al formato dell'oggetto
               href: retrieving-properties-for-multiple-objects-by-object-format.md
             - name: Impostazione delle proprietà per più oggetti
               href: setting-properties-for-multiple-objects.md
@@ -135,7 +135,7 @@
               href: retrieving-the-rendering-capabilities-supported-by-a-device.md
             - name: Aggiunta di una risorsa a un oggetto
               href: adding-a-resource-to-an-object.md
-            - name: Trasferimento del contenuto nel dispositivo
+            - name: Spostamento del contenuto nel dispositivo
               href: moving-content-on-the-device.md
             - name: Gestione degli eventi dal dispositivo
               href: handling-events-from-the-device.md
@@ -144,25 +144,25 @@
               items:
                 - name: Registrazione del gestore del menu di scelta rapida
                   href: registering-your-context-menu-handler.md
-                - name: Supporto di Device-Side contenuto
+                - name: Supporto Device-Side contenuto
                   href: supporting-device-side-content-context-menu.md
             - name: Implementazione delle estensioni della finestra delle proprietà
               href: implementing-property-sheet-extensions.md
               items:
                 - name: Registrazione del gestore della finestra delle proprietà
                   href: registering-your-property-sheet-handler.md
-                - name: Supporto di Device-Side contenuto
+                - name: Supporto Device-Side contenuto
                   href: supporting-device-side-content-property-sheet.md
             - name: Supporto di AutoPlay
               href: supporting-autoplay.md
             - name: Supporto delle estensioni MTP
               href: supporting-mtp-extensions.md
               items:
-                - name: Emissione del comando GetNumObjects
+                - name: Esecuzione del comando GetNumObjects
                   href: issuing-the-getdevicepropvalue-command.md
-                - name: Emissione del comando GetDevicePropValue
+                - name: Esecuzione del comando GetDevicePropValue
                   href: issuing-the-getnumobjects-command.md
-                - name: Emissione del comando SetDevicePropValue
+                - name: Esecuzione del comando SetDevicePropValue
                   href: issuing-the-setdevicepropvalue-command.md
     - name: Guida di riferimento alla programmazione
       href: programming-reference.md
@@ -180,9 +180,9 @@
               href: event-constants.md
             - name: GUID del tipo di oggetto
               href: object-type-guids.md
-            - name: GUID formato oggetto
+            - name: GUID di formato oggetto
               href: object-format-guids.md
-            - name: GUID di tipo di risorsa
+            - name: GUID del tipo di risorsa
               href: resource-type-guids.md
         - name: Interfacce driver
           href: driver-interfaces.md
@@ -362,7 +362,7 @@
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-open
                 - name: SendCommand
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand
-                - name: Unadvise
+                - name: Non supervisione
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-unadvise
             - name: IPortableDeviceCapabilities
               href: /windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities
@@ -494,7 +494,7 @@
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-delete
                 - name: GetResourceAttributes
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getresourceattributes
-                - name: GetStream
+                - name: Getstream
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getstream
                 - name: GetSupportedResources
                   href: /windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getsupportedresources
@@ -521,7 +521,7 @@
                   href: /windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open
                 - name: SendCommand
                   href: /windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-sendcommand
-                - name: Unadvise
+                - name: Annullamento della supervisione
                   href: /windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-unadvise
             - name: IPortableDeviceServiceCapabilities
               href: /windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities
@@ -608,13 +608,13 @@
               items:
                 - name: Annulla
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-cancel
-                - name: Connessione
+                - name: Connettere
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-connect
                 - name: Disconnetti
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-disconnect
                 - name: GetPnPID
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-getpnpid
-                - name: GetProperty
+                - name: Getproperty
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-getproperty
                 - name: SetProperty
                   href: /windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-setproperty
@@ -642,13 +642,13 @@
               href: appointment-properties.md
             - name: Proprietà audio
               href: audio-properties.md
-            - name: Proprietà estensione classe
+            - name: Proprietà dell'estensione di classe
               href: class-extension-properties.md
             - name: Proprietà client
               href: client-properties.md
-            - name: Proprietà informazioni comuni
+            - name: Proprietà comuni delle informazioni
               href: common-information-properties.md
-            - name: Proprietà del contatto
+            - name: Proprietà contatto
               href: contact-properties.md
             - name: Proprietà dispositivo
               href: device-properties.md
@@ -658,23 +658,23 @@
               href: event-properties.md
             - name: Proprietà immagine
               href: image-properties.md
-            - name: Proprietà supporto
+            - name: Proprietà dei supporti
               href: media-properties.md
             - name: Proprietà varie
               href: miscellaneous-properties.md
-            - name: Proprietà musica
+            - name: Musica Proprietà
               href: music-properties.md
-            - name: Proprietà dell'associazione di rete
+            - name: Proprietà associazione di rete
               href: network-association-properties.md
             - name: Proprietà degli oggetti
               href: object-properties.md
-            - name: Proprietà degli attributi delle risorse
+            - name: Proprietà dell'attributo della risorsa
               href: resource-attribute-properties.md
-            - name: Proprietà dell'attributo Section
+            - name: Proprietà degli attributi della sezione
               href: section-attribute-properties.md
             - name: Proprietà SMS
               href: sms-properties.md
-            - name: Proprietà dell'immagine ancora
+            - name: Proprietà immagine ancorata
               href: still-image-properties.md
             - name: Storage Properties
               href: storage-properties.md
@@ -746,19 +746,19 @@
           items:
             - name: Parametri dei comandi
               href: common-properties.md
-            - name: Comando WPD_COMMAND_COMMON_RESET_DEVICE
+            - name: WPD_COMMAND_COMMON_RESET_DEVICE comando
               href: wpd-command-common-reset-device-command.md
-            - name: Comando WPD_COMMAND_DEVICE_HINTS_GET_CONTENT_LOCATION
+            - name: WPD_COMMAND_DEVICE_HINTS_GET_CONTENT_LOCATION comando
               href: wpd-command-device-hints-get-content-location-command.md
-            - name: Comando WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED
+            - name: WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED comando
               href: wpd-command-object-properties-get-supported2.md
-            - name: Comando WPD_COMMAND_SMS_SEND
+            - name: WPD_COMMAND_SMS_SEND comando
               href: wpd-command-sms-send-command.md
-            - name: Comando WPD_COMMAND_STORAGE_EJECT
+            - name: WPD_COMMAND_STORAGE_EJECT comando
               href: wpd-command-storage-eject-command.md
-            - name: Comando WPD_COMMAND_STORAGE_FORMAT
+            - name: WPD_COMMAND_STORAGE_FORMAT comando
               href: wpd-command-storage-format-command.md
-            - name: Comando WPD_COMMAND_STILL_IMAGE_CAPTURE_INITIATE
+            - name: WPD_COMMAND_STILL_IMAGE_CAPTURE_INITIATE comando
               href: wpd-command-still-image-capture-initiate-command.md
         - name: Tipi di contenuto
           href: content-types.md
@@ -864,28 +864,28 @@
         - name: Estensioni MTP
           href: mtp-extensions.md
           items:
-            - name: Eventi di estensione MTP
+            - name: Eventi dell'estensione MTP
               href: mtp-extension-events.md
             - name: Formati di estensione MTP
               href: mtp-extension-formats.md
-            - name: Proprietà estensione MTP
+            - name: Proprietà dell'estensione MTP
               href: mtp-extension-properties.md
-            - name: Comandi di estensione MTP
+            - name: Comandi dell'estensione MTP
               href: mtp-extension-commands.md
               items:
-                - name: Comando WPD_COMMAND_MTP_EXT_END_DATA_TRANSFER
+                - name: WPD_COMMAND_MTP_EXT_END_DATA_TRANSFER comando
                   href: wpd-command-mtp-ext-end-data-transfer.md
-                - name: Comando WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_READ
+                - name: WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_READ comando
                   href: wpd-command-mtp-ext-execute-command-with-data-to-read.md
-                - name: Comando WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_WRITE
+                - name: WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_WRITE comando
                   href: wpd-command-mtp-ext-execute-command-with-data-to-write.md
-                - name: Comando WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITHOUT_DATA_PHASE
+                - name: WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITHOUT_DATA_PHASE comando
                   href: wpd-command-mtp-ext-execute-command-without-data-phase.md
-                - name: Comando WPD_COMMAND_MTP_EXT_GET_SUPPORTED_VENDOR_OPCODES
+                - name: WPD_COMMAND_MTP_EXT_GET_SUPPORTED_VENDOR_OPCODES comando
                   href: wpd-command-mtp-ext-get-supported-vendor-opcodes.md
-                - name: Comando WPD_COMMAND_MTP_EXT_GET_VENDOR_EXTENSION_DESCRIPTION
+                - name: WPD_COMMAND_MTP_EXT_GET_VENDOR_EXTENSION_DESCRIPTION comando
                   href: wpd-command-mtp-ext-get-vendor-extension-description.md
-                - name: Comando WPD_COMMAND_MTP_EXT_READ_DATA
+                - name: WPD_COMMAND_MTP_EXT_READ_DATA comando
                   href: wpd-command-mtp-ext-read-data.md
-                - name: Comando WPD_COMMAND_MTP_EXT_WRITE_DATA
+                - name: WPD_COMMAND_MTP_EXT_WRITE_DATA comando
                   href: wpd-command-mtp-ext-write-data.md

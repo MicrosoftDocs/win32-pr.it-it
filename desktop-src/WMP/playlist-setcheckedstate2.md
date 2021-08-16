@@ -48,11 +48,11 @@ Il **metodo setCheckedState2** imposta lo stato selezionato dell'elemento con l'
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un valore **booleano.**
+Questo metodo restituisce un valore **booleano**.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere utilizzato con playlist annidate e sostituisce il **metodo setCheckedState,** che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel *parametro item.*
+Questo metodo può funzionare con playlist annidate e sostituisce il **metodo setCheckedState,** che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel *parametro item.*
 
 ## <a name="requirements"></a>Requisiti
 

@@ -22,7 +22,7 @@ ms.locfileid: "118452827"
 ---
 # <a name="shelltrayproperties-method"></a>Metodo Shell.TrayProperties
 
-Consente di visualizzare la **finestra di dialogo Proprietà barra delle** applicazioni e menu Start . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere **Proprietà**.
+Visualizza la finestra **di dialogo Proprietà barra delle** applicazioni e menu Start . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e **scegliere Proprietà.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra **TrayProperties** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
+L'esempio seguente **mostra TrayProperties** in uso. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
 JScript:
 

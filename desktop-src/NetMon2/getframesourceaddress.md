@@ -73,7 +73,7 @@ Flag utilizzati per modificare i dati dell'indirizzo di origine restituiti.
 | Valore                                                                                                                                                                                                           | Significato                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**FLAG ADDRESSTYPE \_ \_ NORMALIZE**</dt> </dl>        | Annulla i BIT di routing e gruppo.<br/>                   |
-| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**FLAG ADDRESSTYPE \_ \_ BIT \_ REVERSE**</dt> </dl> | Converte gli indirizzi di rete token ring alla normalità.<br/> |
+| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**FLAG ADDRESSTYPE \_ \_ BIT \_ REVERSE**</dt> </dl> | Converte gli indirizzi di rete del token ring alla normalità.<br/> |
 
 
 

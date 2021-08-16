@@ -1,5 +1,5 @@
 ---
-description: Platform Software Development Kit (SDK) contiene esempi completi di traccia degli eventi.
+description: Platform Software Development Kit (SDK) contiene esempi completi di traccia eventi.
 ms.assetid: 49f9d981-e91c-479f-a5a2-daafee8be3d1
 title: Esempi di traccia eventi
 ms.topic: article
@@ -13,16 +13,16 @@ ms.locfileid: "118395069"
 ---
 # <a name="event-tracing-samples"></a>Esempi di traccia eventi
 
-Platform Software Development Kit (SDK) contiene esempi completi di traccia degli eventi. Questi esempi si trovano nella \\ directory EventTrace di WinBase \\ degli esempi. La radice di questo percorso è la directory di installazione di base di PSDK. È possibile scaricare PSDK da [https://www.microsoft.com/downloads/details.aspx?FamilyId=A55B6B43-E24F-4EA3-A93E-40C0EC4F68E5](https://msdn.microsoft.com/windowsserver/bb980924.aspx) .
+Platform Software Development Kit (SDK) contiene esempi completi di traccia eventi. Questi esempi si trovano nella \\ directory Samples WinBase \\ EventTrace. La radice di questo percorso è la directory di installazione di base di PSDK. È possibile scaricare PSDK da [https://www.microsoft.com/downloads/details.aspx?FamilyId=A55B6B43-E24F-4EA3-A93E-40C0EC4F68E5](https://msdn.microsoft.com/windowsserver/bb980924.aspx) .
 
-Nella tabella seguente vengono descritti gli esempi contenuti nella \\ directory EventTrace di WinBase \\ degli esempi.
+La tabella seguente descrive gli esempi contenuti nella \\ directory EventTrace di WinBase \\ degli esempi.
 
 
 
 | Esempio   | Descrizione                                                                                                                            |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------|
 | TraceDmp | Consumer di traccia eventi. Decodifica i dati dell'evento usando le informazioni sul formato ottenute da WMI e restituisce i dati in un file .csv dati. |
-| TraceDp  | Usa l'API del provider di traccia eventi per fornire dati di traccia eventi al logger o a un consumer.                                             |
+| TraceDp  | Usa l'API del provider di traccia eventi per fornire i dati di traccia dell'evento al logger o a un consumer.                                             |
 | TraceLog | Usa l'API del controller di traccia eventi per gestire le sessioni di registrazione.                                                                        |
 
 

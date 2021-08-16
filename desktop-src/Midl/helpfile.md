@@ -1,6 +1,6 @@
 ---
 title: helpfile (attributo)
-description: L'attributo \helpfile\ imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della Guida.
+description: L'attributo \ helpfile\ imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della Guida.
 ms.assetid: caa248b1-a1a7-4c36-886a-079a66a01907
 keywords:
 - Attributo helpfile MIDL
@@ -42,7 +42,7 @@ library
 *uuid-number* 
 </dt> <dd>
 
-Specifica un numero di identificazione universalmente univoco per la [**libreria**](library.md).
+Specifica un numero di identificazione univoco universale per la [**libreria**](library.md).
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Specifica zero o più attributi che verranno applicati dal compilatore MIDL alla
 
 </dd> <dt>
 
-*istruzioni library* 
+*istruzioni di libreria* 
 </dt> <dd>
 
 Specifica una o più istruzioni MIDL che definiscono l'interfaccia della libreria.

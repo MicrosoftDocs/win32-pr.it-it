@@ -1,59 +1,59 @@
-- name: Controlli padre
+- name: Controllo genitori
   href: parental-controls-portal.md
   items:
-    - name: Novità dei controlli padre di Windows 8
+    - name: Novità di Controllo genitori Windows 8 genitori
       href: what-s-new-in-windows-8-parental-controls.md
-    - name: Novità dei controlli padre di Windows 7
+    - name: Novità di Windows 7 Controllo genitori
       href: what-s-new-in-windows-7-parental-controls.md
-    - name: Informazioni sui controlli parentali
+    - name: Informazioni su Controllo genitori
       href: about-parental-controls.md
       items:
-        - name: Istruzione del problema dei controlli padre
+        - name: Dichiarazione del problema di Controllo genitori
           href: parental-controls-problem-statement.md
-        - name: Soluzione di sicurezza della famiglia di Windows
+        - name: Windows Family Safety soluzione
           href: windows-family-safety-solution.md
-        - name: Decisioni di progettazione principali dei controlli padre
+        - name: Decisioni di progettazione chiave di Controllo genitori
           href: parental-controls-key-design-decisions.md
-        - name: Solidità dei controlli padre
+        - name: Affidabilità dei controlli genitori
           href: parental-controls-robustness.md
-        - name: Set di funzionalità dei controlli padre
+        - name: Set di funzionalità di Controllo genitori
           href: parental-controls-feature-set.md
           items:
-            - name: Controlli padre Top-Level interfaccia utente
+            - name: Controllo genitori Top-Level Interfaccia utente
               href: parental-controls-top-level-user-interface.md
-            - name: Segnalazione attività dei controlli padre
+            - name: Controllo genitori Rapporto attività
               href: parental-controls-activity-reporting.md
-            - name: Controlli padre In-Box restrizioni e interfacce utente
+            - name: Controllo genitori In-Box restrizioni e interfacce utente
               href: parental-controls-in-box-restrictions-and-user-interfaces.md
-            - name: Cenni preliminari sull'API dei controlli padre
+            - name: Panoramica dell'API Controllo genitori
               href: parental-controls-api-overview.md
-            - name: Cenni preliminari sulle funzionalità di estensibilità dei controlli padre
+            - name: Cenni preliminari sulle funzionalità di estendibilità di Controllo genitori
               href: parental-controls-extensibility-features-overview.md
-        - name: Controllo parentale disponibilità SKU
+        - name: Disponibilità dello SKU di Controllo genitori
           href: parental-controls-sku-availability.md
-    - name: Uso di controlli parentali
+    - name: Uso di Controllo genitori
       href: using-parental-controls.md
       items:
-        - name: Mapping di soluzioni nell'infrastruttura dei controlli padre
+        - name: Mapping di soluzioni nell'infrastruttura di Controllo genitori
           href: mapping-solutions-onto-the-parental-controls-infrastructure.md
-        - name: Associazione delle identità degli account per i controlli padre
+        - name: Associazione delle identità dell'account per Controllo genitori
           href: association-of-account-identities-for-parental-controls.md
-        - name: Controlli padre e controllo dell'account utente
+        - name: Controllo genitori e Controllo dell'account utente
           href: parental-controls-and-user-account-control.md
-        - name: Uso delle API dei controlli padre
+        - name: Uso delle API di Controllo genitori
           href: using-parental-controls-apis.md
           items:
-            - name: Uso delle API delle impostazioni dei controlli padre
+            - name: Uso di Controllo genitori Impostazioni API
               href: using-parental-controls-settings-apis.md
-            - name: Uso delle API di registrazione per i controlli padre
+            - name: Uso delle API di registrazione per Controllo genitori
               href: using-logging-apis-for-parental-controls.md
-    - name: Riferimento ai controlli padre
+    - name: Informazioni di riferimento su Controllo genitori
       href: parental-controls-reference.md
       items:
-        - name: Registrazione dei controlli padre
+        - name: Registrazione di Controllo genitori
           href: parental-controls-logging.md
           items:
-            - name: Enumerazioni di registrazione dei controlli padre
+            - name: Enumerazioni di registrazione di Controllo genitori
               href: parental-controls-logging-enumerations.md
               items:
                 - name: WPC_ARGS_CONVERSATIONINITEVENT
@@ -100,46 +100,46 @@
                   href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_isblocked
                 - name: WPCFLAG_LOGOFF_TYPE
                   href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_logoff_type
-            - name: Eventi di registrazione dei controlli padre
+            - name: Eventi di registrazione di Controllo genitori
               href: parental-controls-logging-events.md
               items:
-                - name: Evento WPCEVENT_CUSTOM
+                - name: WPCEVENT_CUSTOM evento
                   href: wpcevent-custom-event.md
-                - name: Evento WPCEVENT_EMAIL_CONTACT
+                - name: WPCEVENT_EMAIL_CONTACT evento
                   href: wpcevent-email-contact-event.md
-                - name: Evento WPCEVENT_EMAIL_RECEIVED
+                - name: WPCEVENT_EMAIL_RECEIVED evento
                   href: wpcevent-email-received-event.md
-                - name: Evento WPCEVENT_EMAIL_SENT
+                - name: WPCEVENT_EMAIL_SENT evento
                   href: wpcevent-email-sent-event.md
-                - name: Evento WPCEVENT_GAME_START
+                - name: WPCEVENT_GAME_START evento
                   href: wpcevent-game-start-event.md
-                - name: Evento WPCEVENT_IM_CONTACT
+                - name: WPCEVENT_IM_CONTACT evento
                   href: wpcevent-im-contact-event.md
-                - name: Evento WPCEVENT_IM_FEATURE
+                - name: WPCEVENT_IM_FEATURE evento
                   href: wpcevent-im-feature-event.md
-                - name: Evento WPCEVENT_IM_INVITATION
+                - name: WPCEVENT_IM_INVITATION evento
                   href: wpcevent-im-invitation-event.md
-                - name: Evento WPCEVENT_IM_JOIN
+                - name: WPCEVENT_IM_JOIN evento
                   href: wpcevent-im-join-event.md
-                - name: Evento WPCEVENT_IM_LEAVE
+                - name: WPCEVENT_IM_LEAVE evento
                   href: wpcevent-im-leave-event.md
-                - name: Evento WPCEVENT_MEDIA_PLAYBACK
+                - name: WPCEVENT_MEDIA_PLAYBACK evento
                   href: wpcevent-media-playback-event.md
                 - name: WPCEVENT_SYS_SETTINGCHANGE
                   href: wpcevent-sys-settingchange-event.md
-                - name: Evento WPCEVENT_SYSTEM_APPBLOCKED
+                - name: WPCEVENT_SYSTEM_APPBLOCKED evento
                   href: wpcevent-system-appblocked-event.md
-                - name: Evento WPCEVENT_WEB_FILEDOWNLOAD
+                - name: WPCEVENT_WEB_FILEDOWNLOAD evento
                   href: wpcevent-web-filedownload-event.md
-                - name: Evento WPCEVENT_WEB_URLVISIT
+                - name: WPCEVENT_WEB_URLVISIT evento
                   href: wpcevent-web-urlvisit-event.md
-        - name: API di conformità minima dei controlli padre
+        - name: API di conformità minima di Controllo genitori
           href: parental-controls-minimum-compliance-api.md
           items:
             - name: IWindowsParentalControls
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwindowsparentalcontrols
               items:
-                - name: Metodi IWindowsParentalControls
+                - name: Metodi di IWindowsParentalControls
                   href: iwindowsparentalcontrols-methods.md
                   items:
                     - name: Metodo GetGamesSettings
@@ -155,34 +155,34 @@
             - name: IWPCGamesSettings
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcgamessettings
               items:
-                - name: Metodi IWPCGamesSettings
+                - name: Metodi di IWPCGamesSettings
                   href: iwpcgamessettings-methods.md
                   items:
-                    - name: Metodo di blocco
+                    - name: Metodo IsBlocked
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcgamessettings-isblocked
             - name: IWPCSettings
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcsettings
               items:
-                - name: Metodi IWPCSettings
+                - name: Metodi di IWPCSettings
                   href: iwpcsettings-methods.md
                   items:
                     - name: Metodo GetLastSettingsChangeTime
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getlastsettingschangetime
-                    - name: Metodo getrestrictions
+                    - name: Metodo GetRestrictions
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getrestrictions
                     - name: Metodo IsLoggingRequired
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-isloggingrequired
             - name: IWPCWebSettings
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcwebsettings
               items:
-                - name: Metodi IWPCWebSettings
+                - name: Metodi di IWPCWebSettings
                   href: iwpcwebsettings-methods.md
                   items:
                     - name: Metodo GetSettings
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-getsettings
                     - name: Metodo RequestURLOverride
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-requesturloverride
-        - name: API del provider WMI per controlli padre
+        - name: API del provider WMI di Controllo genitori
           href: parental-controls-wmi-provider-api.md
           items:
             - name: IWPCProviderConfig
@@ -191,7 +191,7 @@
                 - name: Metodi IWPCProviderConfig
                   href: iwpcproviderconfig-methods.md
                   items:
-                    - name: Configure (metodo)
+                    - name: Metodo Configure
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-configure
                     - name: Metodo GetUserSummary
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-getusersummary
@@ -200,12 +200,12 @@
             - name: IWPCProviderState
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcproviderstate
               items:
-                - name: Metodi IWPCProviderState
+                - name: Metodi di IWPCProviderState
                   href: iwpcproviderstate-methods.md
                   items:
-                    - name: Disable (metodo)
+                    - name: Metodo Disable
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-disable
-                    - name: Enable (metodo)
+                    - name: Metodo Enable
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-enable
             - name: IWPCProviderSupport
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcprovidersupport
@@ -215,9 +215,9 @@
                   items:
                     - name: Metodo GetCurrent
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcprovidersupport-getcurrent
-            - name: Schema del provider WMI per controlli padre
+            - name: Schema del provider WMI di Controllo genitori
               href: parental-controls-wmi-provider-schema.md
-    - name: Esempi di controlli padre
+    - name: Esempi di Controllo genitori
       href: parental-controls-samples.md
-    - name: Glossario dei controlli padre
+    - name: Glossario di Controllo genitori
       href: parental-controls-glossary.md

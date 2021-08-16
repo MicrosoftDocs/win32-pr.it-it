@@ -1,21 +1,21 @@
 ---
-title: Luminanza all'effetto Alfa
-description: Utilizzare la luminanza per l'effetto Alfa per impostare il canale alfa sulla luminanza dell'immagine e impostare i canali dei colori su 0.
+title: Effetto Luminance to Alpha
+description: Usare l'effetto luminance to alpha per impostare il canale alfa sulla luminanza dell'immagine e impostare i canali di colore su 0.
 ms.assetid: B380DE5A-C097-47E0-8E0F-E3C9D2BA44B0
 keywords:
-- luminanza all'effetto Alfa
+- effetto luminance to alpha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb4c6fb78a1d49498b2adab6716d41e93d30deb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 803070fea76b47c1334803a4e7f8fef510cc77c8b3bc05c8477b572cb0451670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104561026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825262"
 ---
-# <a name="luminance-to-alpha-effect"></a>Luminanza all'effetto Alfa
+# <a name="luminance-to-alpha-effect"></a>Effetto Luminance to Alpha
 
-Utilizzare la luminanza per l'effetto Alfa per impostare il canale alfa sulla luminanza dell'immagine e impostare i canali dei colori su 0. È possibile usare l'output di questo effetto per creare una sovrapposizione semitrasparente basata sulla luminosità dell'immagine di input. In alternativa, è possibile usarlo per creare una maschera immagine.
+Usare l'effetto luminance to alpha per impostare il canale alfa sulla luminanza dell'immagine e impostare i canali di colore su 0. È possibile usare l'output di questo effetto per creare una sovrapposizione semitrasparente in base alla luminosità dell'immagine di input. Oppure è possibile usarlo per creare una maschera immagine.
 
 > [!Note]  
 > Questo effetto non ha proprietà.
@@ -26,15 +26,15 @@ Il CLSID per questo effetto è CLSID \_ D2D1LuminanceToAlpha.
 
 ## <a name="example-image"></a>Immagine di esempio
 
-Questo esempio mostra l'output della luminanza all'effetto Alfa composito su una superficie bianca per visualizzare l'opacità.
+Questo esempio mostra l'output dell'effetto luminance to alpha composito su una superficie bianca per mostrare l'opacità.
 
 
 
 | Prima                                                            |
 |-------------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)        |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)        |
 | After                                                             |
-| ![immagine dopo la trasformazione.](images/18-luminancetoalpha.png) |
+| ![l'immagine dopo la trasformazione.](images/18-luminancetoalpha.png) |
 
 
 
@@ -69,11 +69,11 @@ Questo effetto imposta il canale alfa dell'output sulla luminanza dell'immagine 
 
 ![matrice di colori utilizzata dall'effetto per impostare il canale alfa.](images/luminance-to-alpha-math1.png)
 
-Questo effetto utilizza e restituisce immagini alfa premoltiplicate. L'effetto non funzionerà su immagini Alpha dritte a meno che non siano completamente opache.
+Questo effetto usa e restituisce immagini alfa premoltilied. L'effetto non funzionerà sulle immagini alfa rette a meno che non siano completamente opache.
 
 > [!Note]
 >
-> Poiché le immagini vengono archiviate in un formato con compensazione gamma, prima di calcolare la luminanza per un'immagine, è necessario prima eseguire la correzione gamma inversa per ottenere i valori di colore true per l'immagine. Poiché le immagini vengono in genere archiviate in 2,2 gamma, è possibile usare l'effetto di trasferimento gamma con un esponente di (1/2.2) e quindi usare l'output di tale effetto.
+> Poiché le immagini vengono archiviate in un formato con compensazione gamma, prima di calcolare la luminanza per un'immagine è prima necessario eseguire la correzione gamma inversa per ottenere i valori di colore effettivi per l'immagine. Poiché le immagini vengono in genere archiviate a una gamma di 2,2, è possibile usare l'effetto di trasferimento Gamma con un esponente di (1/2.2) e quindi usare l'output di tale effetto.
 
  
 
@@ -83,10 +83,10 @@ Questo effetto utilizza e restituisce immagini alfa premoltiplicate. L'effetto n
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

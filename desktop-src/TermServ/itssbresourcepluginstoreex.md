@@ -91,7 +91,7 @@ Questa interfaccia è disponibile solo in Windows Server 2012 R2 con [KB3091411]
 [**ITsSbResourcePluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcepluginstore)
 </dt> <dt>
 
-[Desktop remoto virtualization interface](remote-desktop-virtualization-interfaces.md)
+[Desktop remoto virtualization interfaces](remote-desktop-virtualization-interfaces.md)
 </dt> </dl>
 
  

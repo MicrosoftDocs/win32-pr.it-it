@@ -66,7 +66,7 @@ Stringa o etichetta visualizzata quando bit specificato in **BitNumber** è ugua
 
 Una matrice di **strutture LABELED \_ BIT** viene usata per definire un set di coppie BIT di etichetta. Un puntatore alla matrice viene specificato nel **membro lpLabeledBit** della [struttura SET.](set.md) Le coppie vengono usate quando si vuole visualizzare un'etichetta in base all'impostazione di ogni BIT. In genere, questo tipo di set viene usato per indicare il valore ON o OFF dei BIT.
 
-Quando viene specificato un set BIT, Network Monitor visualizza solo i BIT inclusi nella matrice di **strutture SET.** I BIT non presenti nella **struttura SET** non vengono visualizzati.
+Quando si specifica un set BIT, Network Monitor visualizza solo i BIT inclusi nella matrice di **strutture SET.** I BIT non presenti nella **struttura SET** non vengono visualizzati.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-TDO-uscita-BL
-description: Collegamento alle regole in uscita da backlink a TDO per l'oggetto.
+title: Attributo ms-DS-TDO-Egress-BL
+description: Backlink a regole di Egress TDO per l'oggetto.
 ms.assetid: 3bf7a566-4e9b-45b4-b408-329f21b914db
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-TDO-uscita-BL
-- attributo msDS-TDOEgressBL-schema AD
+- Schema AD dell'attributo ms-DS-TDO-Egress-BL
+- Schema AD dell'attributo msDS-TDOEgressBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5f70afa5b8ca53525f46634efa264f2b847f351
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bb25639069a0beb6aae3b9267b7eb655d9e13c811823bbf6faa908050512d68f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763391"
 ---
-# <a name="ms-ds-tdo-egress-bl-attribute"></a>attributo ms-DS-TDO-uscita-BL
+# <a name="ms-ds-tdo-egress-bl-attribute"></a>Attributo ms-DS-TDO-Egress-BL
 
-Collegamento alle regole in uscita da backlink a TDO per l'oggetto.
+Backlink a regole di Egress TDO per l'oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-TDO-uscita-BL                     |
-| LDAP-Display-Name | msDS-TDOEgressBL                        |
+| CN                | ms-DS-TDO-Egress-BL                     |
+| Ldap-Display-Name | msDS-TDOEgressBL                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2194                 |
-| System-ID-GUID    | d5006229-9913-2242-8b17-83761d1e0e5b    |
+| System-Id-Guid    | d5006229-9913-2242-8b17-83761d1e0e5b    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -53,15 +53,15 @@ Collegamento alle regole in uscita da backlink a TDO per l'oggetto.
 | ID collegamento                | 2193                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

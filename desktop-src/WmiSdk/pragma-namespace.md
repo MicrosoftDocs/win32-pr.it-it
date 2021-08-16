@@ -1,8 +1,8 @@
 ---
-description: Richiede che il compilatore carichi il file MOF nello spazio dei nomi specificato come NamespacePath. Se vengono usati sia l'opzione dello spazio dei nomi del compilatore MOF-n che lo \# spazio dei nomi pragma&\# 32; il comando NamespacePath, il comando ha la priorità sull'opzione.
+description: Richiede che il compilatore carichi il file MOF nello spazio dei nomi specificato come namespacepath. Se vengono usati sia l'opzione del compilatore MOF -n dello spazio dei nomi che il comando \# pragma namespace&32;namespacepath, il comando ha la priorità \# sull'opzione .
 ms.assetid: d280f67a-a798-47c0-b8de-071c290dd216
 ms.tgt_platform: multiple
-title: spazio dei nomi pragma
+title: Spazio dei nomi pragma
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b5f5e164632fef5a41e7233caf4fd154d1dafe16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3eea58c8e32ab8b1b851205b365b837194d0472a1c39017e2eb69dc3fe70a98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316827"
 ---
-# <a name="pragma-namespace"></a>spazio dei nomi pragma
+# <a name="pragma-namespace"></a>Spazio dei nomi pragma
 
-Il comando per il preprocessore **pragma namespace** richiede che il compilatore carichi il file MOF nello spazio dei nomi specificato come *namespacePath*. Se vengono usati sia l'opzione dello spazio dei nomi del compilatore MOF **-n** che il comando **\# pragma namespace** *namespacePath* , il comando ha la priorità sull'opzione.
+Il **comando per** il preprocessore dello spazio dei nomi pragma richiede che il compilatore carichi il file MOF nello spazio dei nomi specificato come *namespacepath*. Se vengono usati sia l'opzione del compilatore MOF **-n** dello spazio dei nomi che il comando **\# pragma namespace** *namespacepath,* il comando ha la priorità sull'opzione .
 
 Di seguito viene descritta la sintassi:
 
@@ -33,17 +33,17 @@ Di seguito viene descritta la sintassi:
 
 
 
-Lo spazio dei *\[ nomi \]* è lo spazio dei nomi specificato.
+*\[ Lo \] spazio* dei nomi è lo spazio dei nomi specificato.
 
-Se non si specifica questo comando o l'opzione della riga di comando equivalente, il compilatore MOF utilizzerà lo \\ spazio dei nomi predefinito radice per impostazione predefinita.
+Se non si specifica questo comando o l'opzione della riga di comando equivalente, il compilatore MOF usa lo spazio dei nomi predefinito radice \\ per impostazione predefinita.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile richiedere che le applicazioni e gli script client usino una connessione crittografata per l'autenticazione aggiungendo il qualificatore **RequiresEncryption** al file MOF che crea lo spazio dei nomi. È anche possibile modificare uno spazio dei nomi esistente aggiungendo questo attributo e compilare di nuovo il file MOF. Per ulteriori informazioni sull'utilizzo di **RequiresEncryption**, vedere la pagina relativa alla [richiesta di una connessione crittografata a uno spazio dei nomi](requiring-an-encrypted-connection-to-a-namespace.md).
+È possibile richiedere che gli script client e le applicazioni usino una connessione crittografata per l'autenticazione aggiungendo il qualificatore **RequiresEncryption** al file mof che crea lo spazio dei nomi. È anche possibile modificare uno spazio dei nomi esistente aggiungendo questo attributo e compilare nuovamente il file MOF. Per altre informazioni su come usare **RequiresEncryption,** vedere Richiesta di una [connessione crittografata a uno spazio dei nomi](requiring-an-encrypted-connection-to-a-namespace.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come posizionare le classi o le istanze nello \\ spazio dei nomi "root test".
+L'esempio seguente illustra come inserire classi o istanze nello spazio dei nomi "Root \\ Test".
 
 
 ```mof
@@ -67,13 +67,13 @@ Nell'esempio seguente viene illustrato come posizionare le classi o le istanze n
 
 <dl> <dt>
 
-[Impostazione di descrittori di sicurezza spazio dei nomi](setting-namespace-security-descriptors.md)
+[Impostazione dei descrittori di sicurezza di Namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [**Qualificatori WMI standard**](standard-wmi-qualifiers.md)
 </dt> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

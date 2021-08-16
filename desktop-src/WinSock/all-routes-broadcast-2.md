@@ -1,21 +1,21 @@
 ---
-description: Una trasmissione generale attraverso Internet viene eseguita impostando i campi SA \_ netnum e sa \_ nodenum su quelli binari (1).
+description: Una trasmissione generale tramite Internet viene ottenuta impostando i campi sa netnum e sa nodenum su quelli binari \_ \_ (1).
 ms.assetid: a56f3059-d6e5-42eb-8ba2-16071fffafa5
 title: Tutte le route trasmesse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15830ad4f82a3cc5d93e84762c8c17ed0cfd85bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0a5f0ba1e900dd390610a3bd3af2f779d523ae4a08973596e7da6b8331acc31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322722"
 ---
 # <a name="all-routes-broadcast"></a>Tutte le route trasmesse
 
-Una trasmissione generale attraverso Internet viene eseguita impostando i campi **sa \_ netnum** e **sa \_ nodenum** su quelli binari (1). Il provider di servizi traduce la richiesta in un pacchetto di tipo-20, che i router IPX riconoscono e inoltrano. Il pacchetto visita tutte le subnet e può essere duplicato più volte. I ricevitori devono gestire diverse copie duplicate del datagramma.
+Una trasmissione generale tramite Internet viene ottenuta impostando i campi **sa \_ netnum** e **sa \_ nodenum** su quelli binari (1). Il provider di servizi converte questa richiesta in un pacchetto di tipo 20, che i router IPX riconoscono e inoltrano. Il pacchetto visita tutte le subnet e può essere duplicato più volte. I ricevitori devono gestire diverse copie duplicate del datagramma.
 
-L'uso di questo tipo di trasmissione non è popolare tra gli amministratori di rete, quindi il suo utilizzo dovrebbe essere estremamente limitato. Molti router disabilitano questo tipo di trasmissione, lasciando le parti della subnet invisibili al pacchetto.
+L'uso di questo tipo di trasmissione non è popolare tra gli amministratori di rete, quindi il suo uso deve essere estremamente limitato. Molti router disabilitano questo tipo di trasmissione, lasciando parti della subnet invisibili al pacchetto.
 
  
 

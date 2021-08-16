@@ -63,7 +63,7 @@ Questo elenco riceve un elenco con terminazione Null doppia di singole stringhe 
 
 Questo buffer viene allocato dalla funzione **DsBackupGetBackupLogs** e deve essere liberato quando non è più necessario chiamando la funzione [**DsBackupFree.**](dsbackupfree.md)
 
-Il primo carattere di ognuno dei nomi di file contiene una delle [**costanti BFT**](bft-constants.md) che identifica il tipo di nome.
+Il primo carattere di ogni nome di file contiene una delle [**costanti BFT**](bft-constants.md) che identifica il tipo di nome.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Il chiamante non dispone dei privilegi di accesso adeguati per chiamare questa f
 **ERRORE \_ PARAMETRO NON \_ VALIDO**
 </dt> <dd>
 
-*hbc,* *pszBackupLogFiles* o *pcbSize* non è valido.
+*hbc,* *pszBackupLogFiles* o *pcbSize* non sono validi.
 
 </dd> <dt>
 

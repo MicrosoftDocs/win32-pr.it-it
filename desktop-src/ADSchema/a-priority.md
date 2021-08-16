@@ -4,7 +4,7 @@ description: Priorità corrente (di un processo, un processo di stampa e così v
 ms.assetid: 89cce143-446d-444b-bda1-36ac748075d1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo priority
+- Schema AD dell'attributo di priorità
 - Schema AD dell'attributo priority
 topic_type:
 - apiref
@@ -121,7 +121,7 @@ Priorità corrente (di un processo, un processo di stampa e così via).
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -142,7 +142,7 @@ Priorità corrente (di un processo, un processo di stampa e così via).
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -163,7 +163,7 @@ Priorità corrente (di un processo, un processo di stampa e così via).
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |

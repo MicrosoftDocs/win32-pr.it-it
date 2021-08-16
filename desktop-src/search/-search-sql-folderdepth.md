@@ -1,5 +1,5 @@
 ---
-description: I predicati di profondità della cartella controllano l'ambito di una ricerca specificando un percorso e se eseguire un attraversamento profondo o superficiale.
+description: I predicati di profondità delle cartelle controllano l'ambito di una ricerca specificando un percorso e indicando se eseguire un attraversamento profondo o superficiale.
 ms.assetid: 8eadbd42-3538-412e-9bf8-b2355d23437e
 title: Predicati SCOPE e DIRECTORY
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118462470"
 ---
 # <a name="scope-and-directory-predicates"></a>Predicati SCOPE e DIRECTORY
 
-I predicati di profondità della cartella controllano l'ambito di una ricerca specificando un percorso e se eseguire un attraversamento profondo o superficiale. Di seguito viene illustrata la sintassi dei predicati di profondità della cartella:
+I predicati di profondità delle cartelle controllano l'ambito di una ricerca specificando un percorso e indicando se eseguire un attraversamento profondo o superficiale. Di seguito viene illustrata la sintassi dei predicati di profondità della cartella:
 
 
 ```
@@ -22,9 +22,9 @@ I predicati di profondità della cartella controllano l'ambito di una ricerca sp
 
 
 
-Il predicato è seguito da un segno di uguale. Il percorso viene chiuso tra virgolette singole e deve iniziare con un protocollo e i due punti (ad esempio, `file:` `mapi:` , o `csc:` ). Il predicato SCOPE esegue un attraversamento completo del percorso, incluse tutte le sottocartelle, mentre il predicato DIRECTORY esegue un attraversamento superficiale solo della cartella specificata. Analogamente ad Structured Query Language restrizioni (SQL), è possibile specificare più restrizioni di profondità della cartella in una singola query.
+Il predicato è seguito da un segno di uguale. Il percorso viene chiuso tra virgolette singole e deve iniziare con un protocollo e i due punti (ad `file:` esempio, `mapi:` , o `csc:` ). Il predicato SCOPE esegue un attraversamento profondo del percorso, incluse tutte le sottocartelle, mentre il predicato DIRECTORY esegue un attraversamento superficiale solo della cartella specificata. Analogamente ad altre Structured Query Language restrizioni (SQL), è possibile specificare più restrizioni di profondità della cartella in una singola query.
 
-Per eseguire una query sul catalogo locale di un computer remoto, includere il nome del computer prima del catalogo e un percorso Universal Naming Convention (UNC) nel computer remoto nella clausola SCOPE o DIRECTORY.
+Per eseguire query sul catalogo locale di un computer remoto, includere il nome del computer prima del catalogo e un percorso Universal Naming Convention (UNC) nel computer remoto nella clausola SCOPE o DIRECTORY.
 
 ## <a name="examples"></a>Esempio
 
@@ -43,10 +43,10 @@ SELECT System.ItemURL FROM SystemIndex WHERE SCOPE='mapi://{S-1-5-21-2117521111-
 
 
 
-Il primo esempio scope cerca nella cartella C: \\ Files Reports e in tutte le relative \\ sottocartelle. Nell'esempio DIRECTORY viene eseguita la ricerca solo nella cartella radice C: \\ Files \\ Reports.
+Il primo esempio SCOPE cerca la cartella C: \\ Files Reports e tutte le relative \\ sottocartelle. Nell'esempio DIRECTORY viene eseguita la ricerca solo nella cartella radice C: \\ Files \\ Reports.
 
 > [!Note]  
-> Le file system barre rovesciate ( ) diventano barre di tipo URL (talvolta denominate \\ barre) (/).
+> Le file system barre rovesciate ( ) diventano barre di tipo URL (talvolta chiamate \\ barre) (/).
 
  
 

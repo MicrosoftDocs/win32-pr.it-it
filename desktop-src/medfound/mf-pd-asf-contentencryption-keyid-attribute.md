@@ -1,19 +1,19 @@
 ---
-description: Specifica l'identificatore di chiave per un file ASF (Advanced Systems Format) crittografato. Questo attributo corrisponde al campo ID chiave dell'intestazione di crittografia del contenuto, definito nella specifica ASF.
+description: Specifica l'identificatore di chiave per un file ASF (Advanced Systems Format) crittografato. Questo attributo corrisponde al campo KEY ID dell'intestazione content encryption, definito nella specifica ASF.
 ms.assetid: ebadd156-28f4-499c-a182-f48a35ecbefb
-title: Attributo MF_PD_ASF_CONTENTENCRYPTION_KEYID (Wmcontainer. h)
+title: MF_PD_ASF_CONTENTENCRYPTION_KEYID attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd49c7a006345cceba01edde7caf76e499323b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8edae0f324e7ab4889b21ae69714da16bfa88803db1d3aef808e4ba715522f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876434"
 ---
-# <a name="mf_pd_asf_contentencryption_keyid-attribute"></a>\_Attributo KEYID MF PD \_ ASF \_ CONTENTENCRYPTION \_
+# <a name="mf_pd_asf_contentencryption_keyid-attribute"></a>Attributo MF \_ PD \_ ASF \_ CONTENTENCRYPTION \_ KEYID
 
-Specifica l'identificatore di chiave per un file ASF (Advanced Systems Format) crittografato. Questo attributo corrisponde al campo ID chiave dell'intestazione di crittografia del contenuto, definito nella specifica ASF.
+Specifica l'identificatore di chiave per un file ASF (Advanced Systems Format) crittografato. Questo attributo corrisponde al campo KEY ID dell'intestazione content encryption, definito nella specifica ASF.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Stringa di caratteri wide
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di presentazione per il contenuto ASF.
+Questo attributo si applica ai descrittori di presentazione per il contenuto asf.
 
-Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) Recupera il campo ID chiave, lo converte in una stringa di caratteri wide e quindi popola una matrice con terminazione null di **WCHAR** s. La dimensione della matrice è uguale al campo lunghezza ID chiave dell'intestazione della crittografia del contenuto.
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) recupera il campo KEY ID, lo converte in una stringa di caratteri wide e quindi popola una matrice di **WCHAR** con terminazione Null. La dimensione della matrice è uguale al campo Lunghezza ID chiave dell'intestazione di crittografia del contenuto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> <dt>
 
 [Oggetto intestazione ASF](asf-file-structure.md)

@@ -22,7 +22,7 @@ ms.locfileid: "118458881"
 ---
 # <a name="folderitemgetfolder-property"></a>FolderItem.GetFolder - proprietà
 
-Contiene l'oggetto [**Folder dell'elemento,**](folder.md) se l'elemento è una cartella.
+Contiene l'oggetto [**Folder**](folder.md) dell'elemento, se l'elemento è una cartella.
 
 Questa proprietà è di sola lettura.
 
@@ -41,7 +41,7 @@ Variabile di tipo [**IDispatch che**](/windows/win32/api/oaidl/nn-oaidl-idispatc
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene **utilizzato GetFolder** per recuperare [**l'oggetto Folder**](folder.md) per la cartella System32. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa GetFolder** per recuperare [**l'oggetto Folder**](folder.md) per la cartella System32. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -164,7 +164,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shlobj.h (includere Shldisp.h)</dt> </dl>        |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

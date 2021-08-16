@@ -1,23 +1,23 @@
 ---
-description: Formati pixel con intervallo dinamico elevato
+description: High Dynamic Range formati pixel
 ms.assetid: 037b6bde-a3e0-401d-9be7-b58c5f74c30a
-title: Formati pixel con intervallo dinamico elevato
+title: High Dynamic Range formati pixel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8405a01fa5397dd5681077ac1ac9acc28e7d1003
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a544d2331cc32943e3bc74400e1751111aac69e0a1448103e7651cb51da9353
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086914"
 ---
-# <a name="high-dynamic-range-pixel-formats"></a>Formati pixel con intervallo dinamico elevato
+# <a name="high-dynamic-range-pixel-formats"></a>High Dynamic Range formati pixel
 
-I codec devono usare formati pixel di Windows Imaging Component (WIC) che conservano tutti gli intervalli dinamici dei dati dei sensori sottostanti. GUID \_ WICPixelFormat48bppRGB è un tipico formato a virgola fissa a 16 bit per canale che può essere utilizzato. È anche possibile usare altri formati con precisione più elevata. Per abilitare il supporto completo per la pipeline di rendering con accelerazione della Windows Presentation Foundation GPU (Graphics Processing Unit), Microsoft consiglia vivamente di supportare un formato pixel a virgola mobile a 32 bit.
+I codec devono usare Windows di pixel WIC (Imaging Component) che mantengono tutto l'intervallo dinamico dei dati del sensore sottostante. GUID \_ WICPixelFormat48bppRGB è un tipico formato a 16 bit per canale a 16 bit che può essere usato. È possibile usare anche altri formati di precisione superiore. Per abilitare il supporto completo per la pipeline di rendering con accelerazione GPU (Graphics Processing Unit) di Windows Presentation Foundation, Microsoft consiglia vivamente il supporto per un formato pixel a virgola mobile a 32 bit.
 
-Formati pixel di colore elevato: con Windows 7 sono stati aggiunti due nuovi formati pixel WIC per supportare i nuovi formati di visualizzazione a colori elevati. Ovvero GUID \_ WICPixelFormat32bppRGBA1010102 e GUID \_ WICPixelFormat32bppRGBA1010102XR.
+Formati pixel a colori elevati: con Windows 7, sono stati aggiunti due nuovi formati di pixel WIC per supportare i nuovi formati di visualizzazione a colori elevati. Questi sono: GUID \_ WICPixelFormat32bppRGBA1010102 e GUID \_ WICPixelFormat32bppRGBA1010102XR.
 
-Il formato a colori elevato float a 16 bit per canale (bpc) è supportato dal \_ formato pixel WICPIXELFORMAT64BPPRGBAHALF GUID esistente.
+Il formato a 16 bit per canale (bpc) float High Color è supportato dal formato \_ pixel WICPixelFormat64bppRGBAHalf GUID esistente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -26,13 +26,13 @@ Il formato a colori elevato float a 16 bit per canale (bpc) è supportato dal \_
 **Informazioni concettuali**
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Linee guida per WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
+[Linee guida WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

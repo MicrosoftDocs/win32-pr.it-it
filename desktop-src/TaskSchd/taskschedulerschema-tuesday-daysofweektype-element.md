@@ -62,8 +62,8 @@ Il codice XML seguente definisce un calendario del giorno della settimana che av
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il codice XML seguente definisce un calendario del giorno della settimana che av
 
 <dl> <dt>
 
-[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

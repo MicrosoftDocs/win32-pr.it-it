@@ -42,7 +42,7 @@ Questo attributo deve essere impostato su uno dei valori nella tabella seguente.
 | "E0236BEB-C281-4EDE-A36D-7AF76A3D45B5" | Usare per i file di libri audio.                                                                                                                                                               |
 | "3A172A13-2BD9-4831-835B-114F6A95943F" | Usare per i file audio che contengono parole parlate, ma non sono libri audio. Ad esempio, routine di stand-up comedy.                                                                           |
 | "6677DB9B-E5A0-4063-A1AD-ACEB52840CF1" | Usare per i file audio correlati alle notizie.                                                                                                                                                    |
-| "1B824A67-3F80-4E3E-9CDE-F7361B0F5F1B" | Usare per i file audio con contenuto talk show.                                                                                                                                             |
+| "1B824A67-3F80-4E3E-9CDE-F7361B0F5F1B" | Usare per i file audio con contenuto del talk show.                                                                                                                                             |
 | "1FE2E091-4E1E-40CE-B22D-348C732E0B10" | Usare per i file video correlati alle notizie.                                                                                                                                                    |
 | "D6DE1D88-C77C-4593-BFBC-9C61E8C373E3" | Usare per i file video contenenti show basati sul Web, brevi film, trailer di film e così via. Questo è l'identificatore generale per l'intrattenimento video che non rientra in un'altra categoria. |
 | "00033368-5009-4AC3-A820-5D2D09A4E7C1" | Usare per i file audio contenenti clip audio dei giochi.                                                                                                                                  |
@@ -52,7 +52,7 @@ Questo attributo deve essere impostato su uno dei valori nella tabella seguente.
 | "A9B87FC9-BD47-4BF0-AC4F-655B89F7D868" | Usare per i file video contenenti film di funzionalità.                                                                                                                                           |
 | "BA7F258A-62F7-47A9-B21F-4651C42A000E" | Usare per i file video contenenti programmi televisivi. Per gli show basati sul Web, usare l'identificatore più generico.                                                                                  |
 | "44051B5B-B103-4B5C-92AB-93060A9463F0" | Usare per i file video contenenti video aziendali. Ad esempio, riunioni registrate o video di training.                                                                                      |
-| "0B710218-8C0C-475E-AF73-4C41C0C8F8CE" | Usare per i file video contenenti video home realizzati con fotografie.                                                                                                                        |
+| "0B710218-8C0C-475E-AF73-4C41C0C8F8CE" | Usare per i file video contenenti video home realizzati da fotografie.                                                                                                                        |
 
 
 

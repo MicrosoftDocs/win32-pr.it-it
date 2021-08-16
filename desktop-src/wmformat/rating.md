@@ -3,7 +3,7 @@ title: Classificazione
 description: L'attributo Rating contiene la classificazione del contenuto.
 ms.assetid: 3de28d65-9c81-4290-8b57-ceac5ab52f8d
 keywords:
-- Formato delle finestre di valutazione
+- Formato multimediale delle finestre di classificazione
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ g \_ wszWMRating
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Commenti
 

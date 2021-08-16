@@ -1,5 +1,5 @@
 ---
-description: La classe WMI di associazione \_ Win32 DependentService mette in relazione due servizi di base interdipendenti.
+description: La classe WMI di associazione DependentService Win32 mette in relazione due servizi \_ di base interdipendenti.
 ms.assetid: ba21fce3-f8f9-4886-b09d-a9e830376364
 ms.tgt_platform: multiple
 title: Win32_DependentService classe
@@ -26,7 +26,7 @@ ms.locfileid: "118417630"
 ---
 # <a name="win32_dependentservice-class"></a>Classe DependentService Win32 \_
 
-La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di **associazione Win32 \_ DependentService** mette in relazione due servizi di base interdipendenti.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **di associazione \_ DependentService Win32** mette in relazione due servizi di base interdipendenti.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -44,13 +44,13 @@ class Win32_DependentService : CIM_ServiceServiceDependency
 
 ## <a name="members"></a>Members
 
-La **classe Win32 \_ DependentService** ha questi tipi di membri:
+La **classe \_ DependentService Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Win32 \_ DependentService** ha queste proprietà.
+La **classe \_ DependentService Win32** ha queste proprietà.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Tipo di dati: **Win32 \_ BaseService**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ BaseService")
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ BaseService")
 </dt> </dl>
 
 Oggetto [**\_ BaseService Win32**](win32-baseservice.md) che rappresenta il servizio di base su cui si basa la **proprietà Dependent** di questa classe.
@@ -152,7 +152,7 @@ Il servizio non deve essere avviato.
 
 ## <a name="remarks"></a>Commenti
 
-La **classe Win32 \_ DependentService** è derivata da [**CIM \_ ServiceServiceDependency**](cim-serviceservicedependency.md).
+La **classe \_ DependentService Win32** è derivata da [**CIM \_ ServiceServiceDependency.**](cim-serviceservicedependency.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -4,12 +4,12 @@ ms.assetid: 6f613183-eb70-4b7e-bbea-2ebdeba96f65
 title: System.TransferPosition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e352f68ecbf89658adc28d31297995d1223546b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 23dc00e4a0f4cadd6e72a348ef7e415a2f9eb7a4dff13777edefe06b3bf3925e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095428"
 ---
 # <a name="systemtransferposition"></a>System.TransferPosition
 

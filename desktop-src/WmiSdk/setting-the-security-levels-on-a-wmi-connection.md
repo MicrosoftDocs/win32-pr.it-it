@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Impostazione dei livelli di sicurezza in una connessione WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc58b4bbbe1a01d927d8f5977c21003cdae2e315
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2c2c4a492d4b40410b42fd9a94f22d346617a84d3baaa0679db325452a69c19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118315325"
 ---
 # <a name="setting-the-security-levels-on-a-wmi-connection"></a>Impostazione dei livelli di sicurezza in una connessione WMI
 
-Dopo aver recuperato un puntatore a un proxy [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) , è necessario impostare la sicurezza sul proxy per accedere a WMI tramite il proxy. È necessario impostare la sicurezza perché il proxy **IWbemServices** concede l'accesso a un oggetto out-of-process. In generale, la sicurezza COM non consente a un processo di accedere a un altro processo se non si impostano le proprietà di sicurezza appropriate. Per ulteriori informazioni, vedere [impostazione della sicurezza su IWbemServices e altri proxy](setting-the-security-on-iwbemservices-and-other-proxies.md). Per le connessioni a sistemi operativi diversi sono necessari diversi livelli di autenticazione e rappresentazione. Per ulteriori informazioni, vedere [connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Dopo aver recuperato un puntatore a un proxy [**IWbemServices,**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) è necessario impostare la sicurezza sul proxy per accedere a WMI tramite il proxy. È necessario impostare la sicurezza perché il proxy **IWbemServices** concede l'accesso a un oggetto out-of-process. In generale, la sicurezza COM non consente a un processo di accedere a un altro processo se non si impostano le proprietà di sicurezza appropriate. Per altre informazioni, vedere [Impostazione della sicurezza in IWbemServices e altri proxy.](setting-the-security-on-iwbemservices-and-other-proxies.md) Le connessioni a sistemi operativi diversi richiedono diversi livelli di autenticazione e rappresentazione. Per altre informazioni, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
-Negli esempi di codice di questo argomento sono necessari i riferimenti seguenti e le \# istruzioni di inclusione per la compilazione corretta.
+Gli esempi di codice in questo argomento richiedono i riferimenti seguenti e includono \# istruzioni per la compilazione corretta.
 
 
 ```C++
@@ -29,13 +29,13 @@ using namespace std;
 
 
 
-Nella procedura riportata di seguito viene descritto come impostare i livelli di sicurezza in una connessione WMI.
+La procedura seguente descrive come impostare i livelli di sicurezza in una connessione WMI.
 
 **Per impostare i livelli di sicurezza in una connessione WMI**
 
--   Impostare i livelli di sicurezza sul proxy [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) con una chiamata a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+-   Impostare i livelli di sicurezza nel proxy [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) con una chiamata a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-    Nell'esempio di codice riportato di seguito viene descritto un modo comune per chiamare [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+    Nell'esempio di codice seguente viene descritto un modo comune per chiamare [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
     ```C++
         HRESULT hres;
@@ -66,7 +66,7 @@ Nella procedura riportata di seguito viene descritto come impostare i livelli di
 
     
 
-Dopo aver impostato i livelli di sicurezza per il puntatore [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) , è possibile accedere alle varie funzionalità di WMI. Al termine dell'utilizzo di WMI, è necessario arrestare l'applicazione. Per ulteriori informazioni, vedere [pulizia e arresto di un'applicazione WMI](cleaning-up-and-shutting-down-a-wmi-application.md).
+Dopo aver impostato i livelli di sicurezza per il puntatore [**IWbemServices,**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) è possibile accedere alle varie funzionalità di WMI. Al termine dell'uso di WMI, è necessario arrestare l'applicazione. Per altre informazioni, vedere [Pulizia e arresto di un'applicazione WMI.](cleaning-up-and-shutting-down-a-wmi-application.md)
 
  
 
