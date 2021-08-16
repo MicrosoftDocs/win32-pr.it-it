@@ -1,5 +1,5 @@
 ---
-description: In questo argomento vengono presentati i formati pixel forniti dal Windows Imaging Component (WIC).
+description: In questo argomento vengono presentati i formati pixel forniti da Windows Imaging Component (WIC).
 ms.assetid: 348b6d15-e339-4dce-99f3-4d639ee9bf7d
 title: Panoramica dei formati di pixel nativi
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118206339"
 ---
 # <a name="native-pixel-formats-overview"></a>Panoramica dei formati di pixel nativi
 
-In questo argomento vengono presentati i formati pixel forniti dal Windows Imaging Component (WIC).
+In questo argomento vengono presentati i formati pixel forniti da Windows Imaging Component (WIC).
 
 Un formato pixel descrive il layout di memoria di ogni pixel in una bitmap. Questo layout di memoria descrive come vengono codificati i dati immagine di una bitmap specificando il formato numerico e l'organizzazione del canale colori. WIC supporta diversi formati numerici per più schemi organizzativi del canale colori, offrendo un'ampia gamma di formati di pixel.
 
@@ -52,7 +52,7 @@ Un formato pixel descrive il layout di memoria di ogni pixel in una bitmap. Ques
 
 La *profondità in bit* è il numero di bit usati per codificare ogni canale di colore. Attualmente, la maggior parte delle immagini digitali usa una profondità in bit di 8, vale a dire che ogni canale di colore in un pixel è rappresentato da 8 bit, fornendo 2⁸ (256) valori univoci per canale. Un'immagine con una profondità in bit di 8 e tre canali di colori (ad esempio rosso, verde e blu) usa 24 bit per pixel (bpp), che fornisce 2⁴ (16.777.216) colori diversi per pixel.
 
-Per una migliore risoluzione dei colori, è possibile usare una profondità in bit di 16 o 32. In questo modo ogni canale di colore ha 2⁶ (65.536) o 2 i valori univoci, a un costo di più memoria per pixel.
+Per una migliore risoluzione dei colori, è possibile usare una profondità in bit di 16 o 32. In questo modo, ogni canale di colore ha 2⁶ (65.536) o 2 i valori univoci, a un costo di più memoria per pixel.
 
 In alcuni formati, la profondità in bit non è un multiplo di 8. Questi formati sono *detti formati packed,* perché i canali di colore in un pixel non sono allineati ai limiti dei byte. Ad esempio, se la profondità in bit di 5, tre canali di colore possono essere archiviati in 16 bit (incluso 1 bit di spaziatura interna, per rendere i pixel allineati ai byte). I formati pack sono utili quando la memoria o la potenza di elaborazione sono limitate.
 
@@ -62,7 +62,7 @@ Per la maggior parte delle immagini digitali attuali, i byte senza segno e i val
 
 WiC supporta anche formati a virgola fissa e a virgola mobile. Questi formati supportano intervalli dinamici più grandi, perché l'intero intervallo numerico di ogni canale di colore è maggiore dell'intervallo visibile. Di conseguenza, i colori possono essere regolati sopra o sotto l'intervallo visibile, durante i passaggi intermedi dell'elaborazione delle immagini, senza perdita di informazioni sulle immagini.
 
-### <a name="fixed-point-numerical-encoding"></a>Fixed-Point codifica numerica
+### <a name="fixed-point-numerical-encoding"></a>Fixed-Point numerica
 
 I valori a virgola fissa a 16 bit vengono interpretati come s2.13: bit di segno, due bit interi e 13 bit frazionari. Usando questa interpretazione, un intervallo numerico compreso tra [...]4,0 e +3,999... può essere rappresentato con il valore 1.0 rappresentato dal valore intero con segno 8192 (0x2000).
 
@@ -93,54 +93,54 @@ Oltre al modello di colore CMYK standard, WIC fornisce anche CMYK con alfa. In q
 
 ### <a name="n-channel-color-model"></a>Modello colori a n canali
 
-Per una maggiore flessibilità, WIC fornisce anche formati pixel che non hanno un ordine predefinito per i canali. WIC offre formati pixel che supportano da tre a otto canali di dati di immagine continui a profondità di bit sia di 8 che di 16. A differenza dei formati di pixel RGB/BGR e CMYK, i formati a n canali non specificano l'ordine dei canali, ma piuttosto il numero di canali di colore disponibili. Ad esempio, nel formato pixel GUID WICPixelFormat32bpp4Channels, ogni pixel è costituito da 32 bit con ognuno dei 4 canali che occupano \_ un singolo byte.
+Per una maggiore flessibilità, WIC fornisce anche formati pixel che non hanno un ordine predefinito per i canali. WIC offre formati pixel che supportano da tre a otto canali di dati di immagine continui a profondità di bit sia di 8 che di 16. A differenza dei formati pixel RGB/BGR e CMYK, i formati a n canali non specificano l'ordine dei canali, ma piuttosto il numero di canali di colore disponibili. Ad esempio, nel formato pixel GUID WICPixelFormat32bpp4Channels, ogni pixel è costituito da 32 bit con ognuno dei 4 canali che occupano \_ un singolo byte.
 
-WIC fornisce anche formati pixel per n canali con alfa. In questo modo le immagini a più canali possono avere dati di fusione alfa simili ai modelli di colore RGB/BGR e CMYK. Il canale alfa si trova immediatamente dopo l'ultimo canale di colore nel flusso di bit sequenziale di una bitmap.
+WIC fornisce anche formati pixel per n-channel con alfa. In questo modo le immagini a n canali possono avere dati di fusione alfa simili ai modelli di colore RGB/BGR e CMYK. Il canale alfa si trova immediatamente dopo l'ultimo canale di colore nel flusso di bit sequenziale di una bitmap.
 
 ### <a name="indexed-and-grayscale-color-models"></a>Modelli a colori indicizzati e in scala di grigi
 
-*I formati indicizzati* usano una tabella di colori, denominata *tavolozza.* La tavolozza viene archiviata esternamente ai dati pixel oppure definita in modo implicito. Il valore di ogni pixel nell'immagine è un indice nella tavolozza. Con un formato indicizzato, il numero di bit per pixel è direttamente correlato al numero di voci nella tavolozza. Questo riduce significativamente la quantità di dati necessari per rappresentare l'immagine, ma limita anche il numero di colori disponibili per l'immagine. WIC supporta i formati indicizzati con 1, 2, 4 o 8 bpp.
+*I formati indicizzati* usano una tabella di colori, denominata *tavolozza*. La tavolozza viene archiviata esternamente ai dati pixel oppure definita in modo implicito. Il valore di ogni pixel nell'immagine è un indice nella tavolozza. Con un formato indicizzato, il numero di bit per pixel è direttamente correlato al numero di voci nella tavolozza. Questo riduce significativamente la quantità di dati necessari per rappresentare l'immagine, ma limita anche il numero di colori disponibili per l'immagine. WIC supporta i formati indicizzati con 1, 2, 4 o 8 bpp.
 
-Per i formati monocromatici (in scala di grigi), WIC supporta 1, 2, 4, 8, 16 e 32 bit per pixel. Per profondità in bit di 1, 8, 16 e 32, i dati relativi ai colori vengono archiviati in un singolo canale. Per profondità in bit di 2 o 4, i pixel sono indici in una tavolozza in scala di grigi.
+Per i formati monocromatici (in scala di grigi), WIC supporta 1, 2, 4, 8, 16 e 32 bit per pixel. Per profondità in bit di 1, 8, 16 e 32, i dati dei colori vengono archiviati in un singolo canale. Per profondità in bit di 2 o 4, i pixel sono indici in una tavolozza in scala di grigi.
 
 ### <a name="ycbcr-color-model"></a>Modello a colori Y'CbCr
 
-WIC aggiunge il supporto per il modello a colori JPEG JFIF Y'CbCr. Y'CbCr separa i colori in un componente luma (Y') e due componenti chroma (Cb e Cr). Molti file JPEG archiviano in modo nativo i dati delle immagini usando il modello a colori Y'CbCr.
+WIC aggiunge il supporto per il modello di colore JFIF Y'CbCr JPEG. Y'CbCr separa i colori in un componente luma (Y') e due componenti di chroma (Cb e Cr). Molti file JPEG archiviano in modo nativo i dati delle immagini usando il modello a colori Y'CbCr.
 
-Il sistema visivo umano è meno sensibile alle modifiche nella chroma rispetto a luma e i formati Y'CbCr possono sfruttare questa sensibilità ridotta riducendo la quantità di dati chroma archiviati rispetto a luma. A tale scopo, archiviano chroma e luma in piani separati e ridimensionano ogni piano componente in una risoluzione diversa. Questa pratica è nota come sottocampionamento della chroma.
+Il sistema visivo umano è meno sensibile alle modifiche nella croma rispetto a luma e i formati Y'CbCr possono sfruttare questa sensibilità ridotta riducendo la quantità di dati di chroma archiviati rispetto a luma. A tale scopo, archiviano chroma e luma in piani separati e ridimensionano ogni piano componente in una risoluzione diversa. Questa pratica è nota come sottocampionamento di chroma.
 
-Poiché i dati chroma e luma vengono archiviati separatamente e possono essere risoluzioni diverse, WIC definisce formati di pixel luma e chroma separati. WIC supporta dati di 8 bit per canale.
+Poiché i dati di chroma e luma vengono archiviati separatamente e possono essere risoluzioni diverse, WIC definisce formati di pixel luma e chroma separati. WIC supporta dati a 8 bit per canale.
 
 ## <a name="wic-pixel-format"></a>Formato pixel WIC
 
-I formati pixel in WIC vengono definiti usando GUID per evitare conflitti con i file IHV. WIC fornisce un nome descrittivo per fare riferimento al GUID di un formato pixel nativo. La convenzione di denominazione per i formati di pixel WIC è la seguente:
+I formati pixel in WIC vengono definiti usando GUID per evitare conflitti con gli IHV. WIC fornisce un nome descrittivo per fare riferimento al GUID di un formato pixel nativo. La convenzione di denominazione per i formati pixel WIC è la seguente:
 
-**\[Guid \_ WICPixelFormat \] \[ Bits Per Pixel \] \[ Channel Order Archiviazione \] \[ Type\]**
+**\[GUID \_ WICPixelFormat \] \[ Bits Per Pixel \] \[ Channel Order Archiviazione \] \[ Type\]**
 
-| Componente Formato         | Descrizione                                                                                                                                                                                                                                                                                                  |
+| Componente Format         | Descrizione                                                                                                                                                                                                                                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **GUID \_ WICPixelFormat** | Identificazione descrittiva per tutti i formati di pixel WIC. Il nome descrittivo per tutti i pixel wic inizia con questa stringa.                                                                                                                                                                                       |
 | **Bit per pixel**       | Numero di bit per pixel (bpp) usati per il formato pixel.                                                                                                                                                                                                                                                |
-| **Ordine dei canali**        | Modello del canale colori e ordine di ogni canale per il formato.                                                                                                                                                                                                                                            |
-| **Archiviazione digitare**         | Codifica numerica utilizzata per il formato pixel. La codifica predefinita è un intero senza segno. Se non segue le informazioni sul modello a colori, viene implicito un intero senza segno (UINT). FixedPoint e Float vengono usati per identificare i formati pixel che usano rispettivamente la codifica a virgola fissa e a virgola mobile. |
+| **Ordine dei canali**        | Modello del canale a colori e ordine di ogni canale per il formato.                                                                                                                                                                                                                                            |
+| **Archiviazione digitare**         | Codifica numerica usata per il formato pixel. La codifica predefinita è un intero senza segno. Se non segue le informazioni sul modello a colori, viene implicito un intero senza segno (UINT). FixedPoint e Float vengono usati per identificare i formati pixel che usano rispettivamente la codifica a virgola fissa e a virgola mobile. |
 
 
 
  
 
 > [!Note]  
-> Per i formati a n canali, \[ l'ordine dei canali \] non specifica l'ordine dei colori, ma piuttosto il numero di canali disponibili. Ad esempio, IL GUID \_ WICPixelFormat24bpp3Channels fornisce 3 canali di colore in cui "3Channels" è la voce channel order, ma indica solo il numero di canali e non \[ l'ordine. \]
+> Per i formati a n canali, l'ordine dei canali non \[ \] specifica l'ordine dei colori, ma il numero di canali disponibili. Ad esempio, GUID \_ WICPixelFormat24bpp3Channels fornisce 3 canali a colori in cui "3Channels" è la voce Channel Order, ma indica solo il numero di canali e non \[ l'ordine. \]
 
  
 
-Ad esempio, il nome descrittivo GUID WICPixelFormat24bppRGB indica che il formato pixel usa 24 bit per pixel e il modello di colore \_ RGB. Poiché il nome non identifica in modo esplicito un tipo di archiviazione, viene implicito un intero senza segno.
+Ad esempio, il nome descrittivo GUID \_ WICPixelFormat24bppRGB indica che il formato pixel usa 24 bit per pixel e il modello di colore RGB. Poiché il nome non identifica in modo esplicito un tipo di archiviazione, è implicito un intero senza segno.
 
 WIC supporta diversi formati pixel. Le tabelle seguenti raggruppano formati di pixel simili in base alla struttura dei colori, fornendo allo stesso tempo informazioni aggiuntive, ad esempio profondità in bit, bit per pixel e codifica numerica. Ogni tabella contiene le informazioni seguenti:
 
 -   **Nome descrittivo**. Nome descrittivo del formato pixel.
--   **Channel Count**. Numero di canali di colore.
--   **Bit per canale.** Numero di bit per canale (profondità in bit).
--   **Bit per pixel**. Numero di bit per pixel, inclusi eventuali bit di riempimento.
+-   **Conteggio canali**. Numero di canali di colore.
+-   **Bit per canale**. Numero di bit per canale (profondità in bit).
+-   **Bit per pixel**. Numero di bit per pixel, inclusi i bit di riempimento.
 -   **Archiviazione tipo**. Codifica numerica dei dati dell'immagine. Questo valore può essere un intero senza segno (UINT), un numero a virgola fissa (FixedPoint) o un numero a virgola mobile (Float).
 
 > [!Note]  
@@ -150,18 +150,18 @@ WIC supporta diversi formati pixel. Le tabelle seguenti raggruppano formati di p
 
 ### <a name="undefined-pixel-formats"></a>Formati di pixel non definiti
 
-L'elenco seguente mostra i formati pixel generici usati quando il formato pixel non è definito o non è importante per un'operazione sull'immagine.
+L'elenco seguente mostra i formati pixel generici usati quando il formato pixel non è definito o non è importante per un'operazione di immagine.
 
 -   GUID \_ WICPixelFormatUndefined
 -   GUID \_ WICPixelFormatDontCare
 
 ### <a name="indexed-pixel-formats"></a>Formati di pixel indicizzati
 
-La tabella seguente elenca i formati di pixel indicizzati forniti da WIC. In questi formati, il valore di ogni pixel è un indice in una tavolozza dei colori.
+Nella tabella seguente sono elencati i formati di pixel indicizzati forniti da WIC. In questi formati, il valore di ogni pixel è un indice in una tavolozza dei colori.
 
 
 
-| Nome descrittivo                   | Numero di canali | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                   | Conteggio canali | Bit per pixel | Tipo di archiviazione |
 |---------------------------------|---------------|----------------|--------------|
 | GUID \_ WICPixelFormat1bppIndexed | 1             | 1              | UINT         |
 | GUID \_ WICPixelFormat2bppIndexed | 1             | 2              | UINT         |
@@ -172,13 +172,13 @@ La tabella seguente elenca i formati di pixel indicizzati forniti da WIC. In que
 
  
 
-### <a name="packed-bit-pixel-formats"></a>Formati di pixel di bit packed
+### <a name="packed-bit-pixel-formats"></a>Formati di pixel di bit imballati
 
-Nella tabella seguente sono elencati i formati di bit di tipo pack forniti da WIC. In questi formati, i dati del canale colore non sono allineati ai byte.
+Nella tabella seguente sono elencati i formati di bit pack forniti da WIC. In questi formati, i dati del canale di colore non sono allineati a byte.
 
 
 
-| Nome descrittivo                          | Numero di canali | Bit per canale       | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                          | Conteggio canali | Bit per canale       | Bit per pixel | Tipo di archiviazione |
 |-------------------------------------------|---------------|------------------------|----------------|--------------|
 | GUID \_ WICPixelFormat16bppBGR555           | 3             | 5                      | 16             | UINT         |
 | GUID \_ WICPixelFormat16bppBGR565           | 3             | 5(B)/6(G)/5(R)         | 16             | UINT         |
@@ -189,17 +189,17 @@ Nella tabella seguente sono elencati i formati di bit di tipo pack forniti da WI
 | GUID \_ WICPixelFormat32bppR10G10B10A2      | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
 | GUID \_ WICPixelFormat32bppR10G10B10A2HDR10 | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
 
-Per i formati \_ GUID WICPixelFormat32bppBGR101010 e \_ GUID WICPixelFormat32bppRGBA1010102, il canale rosso viene archiviato nei bit meno significativi. Per i formati \_ GUID WICPixelFormat32bppR10G10B10A2 e \_ GUID WICPixelFormat32bppR10G10B10A2HDR10, il canale rosso è definito [](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)nei bit più significativi, lo stesso layout di DXGI_FORMAT_R10G10B10A2_UNORM .
+Per i formati \_ GUID WICPixelFormat32bppBGR101010 e \_ GUID WICPixelFormat32bppRGBA101010102, il canale rosso viene archiviato nei bit meno significativi. Per i formati \_ GUID WICPixelFormat32bppR10G10B10A2 e GUID \_ WICPixelFormat32bppR10G10B10A2HDR10, il canale rosso viene definito [](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)nei bit più significativi, lo stesso layout di DXGI_FORMAT_R10G10B10A2_UNORM .
 
-Il formato \_ GUID WICPixelFormat32bppR10G10B10A2HDR10 è il formato pixel a 10 bit per HDR10 (spazio colore BT.2020 e SMPTE ST.2084 EOTF).
+Il formato \_ GUID WICPixelFormat32bppR10G10B10A2HDR10 è il formato pixel a 10 bit per HDR10 (spazio colori BT.2020 e SMPTE ST.2084 EOTF).
 
 ### <a name="grayscale-pixel-formats"></a>Formati pixel in scala di grigi
 
-Nella tabella seguente sono elencati i formati in scala di grigi forniti da WIC. In questi formati i dati di colore rappresentano sfumature di grigio.
+Nella tabella seguente sono elencati i formati in scala di grigi forniti da WIC. In questi formati, i dati sui colori rappresentano sfumature di grigio.
 
 
 
-| Nome descrittivo                           | Numero di canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                           | Conteggio canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
 |-----------------------------------------|---------------|------------------|----------------|--------------|
 | GUID \_ WICPixelFormatBlackWhite          | 1             | 1                | 1              | UINT         |
 | GUID \_ WICPixelFormat2bppGray            | 1             | 2                | 2              | UINT         |
@@ -217,11 +217,11 @@ Nella tabella seguente sono elencati i formati in scala di grigi forniti da WIC.
 
 ### <a name="rgbbgr-pixel-formats"></a>Formati RGB/BGR Pixel
 
-La tabella seguente elenca i formati RGB/BGR forniti da WIC. Questi formati separano i dati dei colori primari in canali rosso (R), verde (G) e blu (B). Per informazioni sull'opacità in alcuni formati viene fornito un canale alfa (A) aggiuntivo.
+La tabella seguente elenca i formati RGB/BGR forniti da WIC. Questi formati separano i dati dei colori primari in canali rosso (R), verde (G) e blu (B). Viene fornito un canale alfa (A) aggiuntivo per le informazioni sull'opacità in alcuni formati.
 
 
 
-| Nome descrittivo                            | Conteggio canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                            | Numero di canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
 |------------------------------------------|---------------|------------------|----------------|--------------|
 | GUID \_ WICPixelFormat24bppRGB             | 3             | 8                | 24             | UINT         |
 | GUID \_ WICPixelFormat24bppBGR             | 3             | 8                | 24             | UINT         |
@@ -257,15 +257,15 @@ La tabella seguente elenca i formati RGB/BGR forniti da WIC. Questi formati sepa
  
 
 > [!Note]  
-> \*Il formato \_ GUID WICPixelFormat32bppRGBE codifica tre valori a virgola mobile a 16 bit in 4 byte, come indicato di seguito: Tre mantissa a 8 bit senza segno per i canali R, G e B, oltre a un esponente condiviso a 8 bit. Questo formato fornisce una precisione a virgola mobile a 16 bit in una rappresentazione in pixel più piccola.
+> \*Il formato \_ GUID WICPixelFormat32bppRGBE codifica tre valori a virgola mobile a 16 bit in 4 byte, come indicato di seguito: tre mantissa a 8 bit senza segno per i canali R, G e B, oltre a un esponente condiviso a 8 bit. Questo formato fornisce la precisione a virgola mobile a 16 bit in una rappresentazione in pixel più piccola.
 
  
 
-A partire Windows 8 e l'aggiornamento della piattaforma [per Windows 7,](/windows/desktop/direct3darticles/platform-update-for-windows-7)WIC offre formati aggiuntivi, illustrati nella tabella qui.
+A partire Windows 8 e l'aggiornamento della piattaforma [per Windows 7,](/windows/desktop/direct3darticles/platform-update-for-windows-7)WIC fornisce formati aggiuntivi, illustrati nella tabella qui.
 
 
 
-| Nome descrittivo                      | Conteggio canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                      | Numero di canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
 |------------------------------------|---------------|------------------|----------------|--------------|
 | GUID \_ WICPixelFormat32bppRGB       | 3             | 8                | 32             | UINT         |
 | GUID \_ WICPixelFormat64bppRGB       | 3             | 16               | 64             | UINT         |
@@ -278,11 +278,11 @@ A partire Windows 8 e l'aggiornamento della piattaforma [per Windows 7,](/window
 
 ### <a name="cmyk-pixel-formats"></a>Formati pixel CMYK
 
-Nella tabella seguente sono elencati i formati CMYK forniti da WIC. Questi formati separano i dati dei colori primari in canali ciano (C), magenta (M), giallo (Y) e nero (K).
+La tabella seguente elenca i formati CMYK forniti da WIC. Questi formati separano i dati dei colori primari in canali ciano (C), magenta (M), giallo (Y) e nero (K).
 
 
 
-| Nome descrittivo                      | Conteggio canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                      | Numero di canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
 |------------------------------------|---------------|------------------|----------------|--------------|
 | GUID \_ WICPixelFormat32bppCMYK      | 4             | 8                | 32             | UINT         |
 | GUID \_ WICPixelFormat64bppCMYK      | 4             | 16               | 64             | UINT         |
@@ -295,11 +295,11 @@ Nella tabella seguente sono elencati i formati CMYK forniti da WIC. Questi forma
 
 ### <a name="n-channel-pixel-formats"></a>Formati pixel a n canali
 
-La tabella seguente elenca i formati a n canali forniti da WIC. Questi formati forniscono una serie di canali di colore non definiti per archiviare i dati delle immagini.
+Nella tabella seguente sono elencati i formati a n canali forniti da WIC. Questi formati forniscono una serie di canali di colore non definiti per archiviare i dati delle immagini.
 
 
 
-| Nome descrittivo                            | Numero di canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
+| Nome descrittivo                            | Conteggio canali | Bit per canale | Bit per pixel | Tipo di archiviazione |
 |------------------------------------------|---------------|------------------|----------------|--------------|
 | GUID \_ WICPixelFormat24bpp3Channels       | 3             | 8                | 24             | UINT         |
 | GUID \_ WICPixelFormat48bpp3Channels       | 3             | 16               | 48             | UINT         |
@@ -324,7 +324,7 @@ La tabella seguente elenca i formati a n canali forniti da WIC. Questi formati f
 | GUID \_ WICPixelFormat64bpp8Channels       | 8             | 8                | 64             | UINT         |
 | GUID \_ WICPixelFormat128bpp8Channels      | 8             | 16               | 128            | UINT         |
 | GUID \_ WICPixelFormat72bpp8ChannelsAlpha  | 9             | 8                | 72             | UINT         |
-| GUID \_ WICPixelFormat1444bpp8ChannelsAlpha | 9             | 16               | 144            | UINT         |
+| GUID \_ WICPixelFormat144bpp8ChannelsAlpha | 9             | 16               | 144            | UINT         |
 
 
 
@@ -346,7 +346,7 @@ Nella tabella seguente sono elencati i formati solo alfa forniti da WIC. Questo 
 
 ### <a name="ycbcr-pixel-formats"></a>Formati pixel Y'CbCr
 
-La tabella seguente elenca i formati Y'CbCr forniti da WIC. Questi formati separano i dati dei colori primari in luma (Y), differenza di chroma blu (Cb) e differenza choma rossa (Cr). Si noti che questi formati sono progettati per archiviare i dati pixel JFIF Y'CbCr JPEG.
+Nella tabella seguente sono elencati i formati Y'CbCr forniti da WIC. Questi formati separano i dati dei colori primari in luma (Y), differenza di chroma blu (Cb) e differenza choma rossa (Cr). Si noti che questi formati sono progettati per archiviare i dati pixel JFIF Y'CbCr JPEG.
 
 
 
@@ -363,7 +363,7 @@ La tabella seguente elenca i formati Y'CbCr forniti da WIC. Questi formati separ
 
 ## <a name="color-space"></a>Spazio colore
 
-I formati pixel non hanno uno spazio colore. In genere, lo spazio colore è un'interpretazione semantica dei valori dei pixel che dipende dal contesto della bitmap. Alcune immagini identificano un contesto di colore che definisce lo spazio colore dell'immagine. Lo spazio colore deve essere dedotto solo in assenza di un contesto di colore.
+I formati pixel in se stessi non hanno uno spazio colore. In genere, lo spazio colore è un'interpretazione semantica dei valori dei pixel che dipende dal contesto della bitmap. Alcune immagini identificano un contesto di colore che definisce lo spazio colore dell'immagine. Lo spazio colore deve essere dedotto solo in assenza di un contesto di colore.
 
 Le informazioni sul contesto del colore sono definite [**dall'interfaccia IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) per WIC. Per recuperare le informazioni sul contesto del colore per una cornice di immagine, usare il **metodo GetColorContext.**
 
@@ -506,7 +506,7 @@ Le tabelle seguenti illustrano i formati pixel supportati da ognuno dei Windows 
  
 
 > [!Note]  
-> IL \_ GUID WICPixelFormat96bppRGBFloat è supportato solo in Windows 8, l'aggiornamento della piattaforma [per Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e versioni successive.
+> GUID \_ WICPixelFormat96bppRGBFloat è supportato solo in Windows 8, l'aggiornamento della piattaforma [per Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e versioni successive.
 
  
 
@@ -586,7 +586,7 @@ Le tabelle seguenti illustrano i formati pixel supportati da ognuno dei Windows 
  
 
 > [!Note]  
-> Il codec Windows DDS fornito supporta i file DDS codificati usando i valori DXGI \_ FORMAT seguenti:
+> Il codec DDS Windows supporta i file DDS codificati usando i valori DXGI \_ FORMAT seguenti:
 
  
 

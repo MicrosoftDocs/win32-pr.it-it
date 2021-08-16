@@ -29,7 +29,7 @@ ms.locfileid: "118336537"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un numero **di** lettura/scrittura (**float**) con un valore compreso tra 0,0 e 2,0 con un valore predefinito di 1,0.
+Questo attributo è un numero di lettura/scrittura **(** **float**) con un valore compreso tra 0,0 e 2,0 con un valore predefinito pari a 1,0.
 
 ## <a name="remarks"></a>Commenti
 

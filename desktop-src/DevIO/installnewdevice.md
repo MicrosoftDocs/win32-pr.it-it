@@ -1,7 +1,7 @@
 ---
 description: Installa un nuovo dispositivo. All'utente viene richiesto di selezionare il dispositivo.
 ms.assetid: 9bdee82c-1d0a-41ea-8b42-7ad96ac37663
-title: InstallNewDevice (funzione)
+title: Funzione InstallNewDevice
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - NewDev.dll
-ms.openlocfilehash: 76a458ae071c61b9f1030aad535c4d4c6a31078c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cb12e87ceee4812ffc8c0e39d961ce631e26c4ab8ca7ae555785c8ad8381ca01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405308"
 ---
-# <a name="installnewdevice-function"></a>InstallNewDevice (funzione)
+# <a name="installnewdevice-function"></a>Funzione InstallNewDevice
 
 Installa un nuovo dispositivo. All'utente viene richiesto di selezionare il dispositivo.
 
@@ -41,24 +41,24 @@ BOOL WINAPI InstallNewDevice(
 
 <dl> <dt>
 
-*hwndParent* \[ in\]
+*hwndParent* \[ Pollici\]
 </dt> <dd>
 
-Handle per la finestra di primo livello da utilizzare per qualsiasi interfaccia utente richiesta.
+Handle per la finestra di primo livello da usare per qualsiasi interfaccia utente richiesta.
 
 </dd> <dt>
 
-*ClassGuid* \[ in\]
+*ClassGuid* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un **GUID** di classe. Questo parametro è facoltativo. Se questo parametro è **null**, l'utente inizia dalla pagina scelta del rilevamento. Se questo parametro è **GUID \_ null** o **GUID \_ devclass \_ Unknown**, l'utente inizia dalla pagina di selezione della classe.
+Puntatore a un **GUID di classe.** Questo parametro è facoltativo. Se questo parametro è **NULL,** l'utente inizia dalla pagina di scelta del rilevamento. Se questo parametro è **GUID \_ NULL** o **GUID \_ DEVCLASS \_ UNKNOWN,** l'utente inizia dalla pagina di selezione della classe.
 
 </dd> <dt>
 
-*preavvio* \[ out\]
+*pReboot* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve lo stato di riavvio. Questo parametro può essere **di \_ NEEDRESTART** o **di \_ NEEDREBOOT**.
+Puntatore a una variabile che riceve lo stato di riavvio. Questo parametro può essere **DI \_ NEEDRESTART** o **DI \_ NEEDREBOOT.**
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Se la funzione ha esito negativo, il valore restituito è zero. Per informazioni
 
 ## <a name="remarks"></a>Osservazioni
 
-A questa funzione non è associata alcuna libreria di importazione. È necessario utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a NewDev.dll.
+A questa funzione non è associata alcuna libreria di importazione. È necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente NewDev.dll.
 
 ## <a name="requirements"></a>Requisiti
 

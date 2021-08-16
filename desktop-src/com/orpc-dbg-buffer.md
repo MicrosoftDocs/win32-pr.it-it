@@ -4,7 +4,7 @@ description: La struttura BUFFER DBG ORPC è il formato di buffer usato per il m
 ms.assetid: 444cd3b8-bc7b-425d-9ccc-04fd6c7393b2
 keywords:
 - ORPC_DBG_BUFFER struttura COM
-- PORPC_DBG_BUFFER struttura com
+- PORPC_DBG_BUFFER puntatore alla struttura COM
 topic_type:
 - apiref
 api_name:
@@ -66,7 +66,7 @@ Valore che controlla la generazione del debugger. **alwaysOrSometimes** può ess
 | Valore                                                                                                                                                                                                                                                                   | Significato                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="ORPC_DEBUG_ALWAYS"></span><span id="orpc_debug_always"></span><dl> <dt>**ORPC \_ DEBUG \_ ALWAYS**</dt> <dt>0X00000000</dt> </dl>                              | Se impostata, COM genererà sempre la notifica client o server sul ricevitore.<br/>                                                                                                                                                    |
-| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ DEBUG \_ IF HOOK ENABLED \_ \_ 0X00000001**</dt> <dt></dt> </dl> | Se impostata, COM genererà la notifica client o server sul ricevitore solo se il debug COM è stato abilitato chiamando [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) in tale processo con **fTrace** impostato su **TRUE.** <br/> |
+| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ DEBUG \_ IF HOOK ENABLED \_ \_ 0x00000001**</dt> <dt></dt> </dl> | Se impostata, COM genererà la notifica client o server sul ricevitore solo se il debug COM è stato abilitato chiamando [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) in tale processo con **fTrace** impostato su **TRUE.** <br/> |
 
 
 

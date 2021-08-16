@@ -1,5 +1,5 @@
 ---
-description: 'Membro CBaseRenderer::m_pPosition : oggetto helper per passare i comandi di ricerca a monte.'
+description: 'CBaseRenderer::m_pPosition: oggetto helper per passare i comandi di ricerca a monte.'
 ms.assetid: 10fe022d-8707-4059-90b8-5740c3861071
 title: Membro CBaseRenderer::m_pPosition (Renbase.h)
 ms.topic: reference

@@ -1,11 +1,11 @@
 ---
-title: DownloadItem. pause (metodo)
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. Il metodo pause sospende il download.
+title: Metodo DownloadItem.pause
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo pause sospende il download.
 ms.assetid: 763d85da-1044-4a8c-98e7-8889bee6c2c7
 keywords:
-- sospendere il metodo Windows Media Player
-- sospendere il metodo Windows Media Player, classe DownloadItem
-- Classe DownloadItem Windows Media Player, metodo pause
+- Metodo pause Windows Media Player
+- Metodo pause Windows Media Player , classe DownloadItem
+- Classe DownloadItem Windows Media Player , metodo pause
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 875e06c221a20088b43d9902775238426dd0c5b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f0ff1bec36635f980ab630628a3e2ab1bd32a521afccb7debc984c4c29e851c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340741"
 ---
-# <a name="downloaditempause-method"></a>DownloadItem. pause (metodo)
+# <a name="downloaditempause-method"></a>Metodo DownloadItem.pause
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-Il metodo **pause** sospende il download.
+Il **metodo pause** sospende il download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo **pause** non ha alcun effetto sui download in tempo reale.
+Il **metodo pause** non ha effetto sui download in tempo reale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Il metodo **pause** non ha alcun effetto sui download in tempo reale.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ Il metodo **pause** non ha alcun effetto sui download in tempo reale.
 [**Oggetto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. Resume**](downloaditem-resume.md)
+[**DownloadItem.resume**](downloaditem-resume.md)
 </dt> </dl>
 
  

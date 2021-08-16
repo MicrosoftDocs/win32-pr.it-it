@@ -63,7 +63,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Un uso speciale del **metodo setItemInfo è** quello di ordinare gli elementi nella playlist usando l'attributo SortAttribute. Nell'esempio JScript seguente una playlist viene ordinata in base ai valori dell'attributo UserLastPlayedTime. La playlist della variabile è un riferimento a un **oggetto Playlist.**
+Un uso speciale del **metodo setItemInfo è** quello di ordinare gli elementi nella playlist usando l'attributo SortAttribute. Nell'JScript seguente una playlist viene ordinata in base ai valori dell'attributo UserLastPlayedTime. La playlist della variabile è un riferimento a un **oggetto Playlist.**
 
 
 ```JScript

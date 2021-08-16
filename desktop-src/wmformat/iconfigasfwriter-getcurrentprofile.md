@@ -4,7 +4,7 @@ description: Il metodo GetCurrentProfile recupera il profilo definito dall'appli
 ms.assetid: 7f6e7085-982b-4234-b890-950efdcdb559
 keywords:
 - Metodo GetCurrentProfile windows Media Format
-- Metodo GetCurrentProfile windows Media Format , interfaccia IConfigAsfWriter
+- Metodo GetCurrentProfile in formato Windows Media, interfaccia IConfigAsfWriter
 - Interfaccia IConfigAsfWriter windows Media Format , metodo GetCurrentProfile
 topic_type:
 - apiref
@@ -41,7 +41,7 @@ HRESULT GetCurrentProfile(
 
 <dl> <dt>
 
-*PpProfile* \[ Cambio\]
+*ppProfile* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di un puntatore che riceve [**l'interfaccia IWMProfile**](iwmprofile.md) del profilo definito dall'applicazione.
@@ -50,7 +50,7 @@ Indirizzo di un puntatore che riceve [**l'interfaccia IWMProfile**](iwmprofile.m
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se non riesce, restituisce un **codice di errore HRESULT.**
+Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 

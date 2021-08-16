@@ -23,7 +23,7 @@ ms.locfileid: "118198926"
 ---
 # <a name="g_wszwmvcendofpass"></a>g \_ wszWMVCEndOfPass
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 

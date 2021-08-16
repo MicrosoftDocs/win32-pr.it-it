@@ -1,7 +1,7 @@
 ---
 description: La funzione SetClassIDInBlob imposta il valore dell'identificatore di classe denominato di un BLOB.
 ms.assetid: d17dd48b-2e35-4c57-ba33-688180910b63
-title: Funzione SetClassIDInBlob (Netmon. h)
+title: Funzione SetClassIDInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: b617c39767038bac51d749a640ebcf2301e0c63f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70e68d3a0d9d105b765ee6cd0ae1a6422f48e3dd6776cf144b302c9e1c5ff951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364160"
 ---
-# <a name="setclassidinblob-function"></a>SetClassIDInBlob (funzione)
+# <a name="setclassidinblob-function"></a>Funzione SetClassIDInBlob
 
-La funzione **SetClassIDInBlob** imposta il valore dell'identificatore di classe denominato di un BLOB.
+La **funzione SetClassIDInBlob** imposta il valore dell'identificatore di classe denominato di un BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ DWORD SetClassIDInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ in\]
+*pOwnerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del **proprietario** del BLOB impostato.
+Puntatore al nome **del proprietario** DEL BLOB impostato.
 
 </dd> <dt>
 
-*pCategoryName* \[ in\]
+*pCategoryName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome della **categoria** BLOB impostato.
+Puntatore al **nome della categoria** BLOB impostato.
 
 </dd> <dt>
 
-*pTagName* \[ in\]
+*pTagName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del **tag** BLOB impostato.
+Puntatore al nome **del tag** BLOB impostato.
 
 </dd> <dt>
 
-*pClsID* \[ in\]
+*pClsID* \[ Pollici\]
 </dt> <dd>
 
 Puntatore all'identificatore di classe del BLOB impostato.
@@ -80,7 +80,7 @@ Puntatore all'identificatore di classe del BLOB impostato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

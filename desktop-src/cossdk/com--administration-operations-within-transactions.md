@@ -23,7 +23,7 @@ Il database di registrazione COM+ (RegDB) è un gestore di risorse transazionale
 
 ## <a name="isolation-behavior-of-regdb"></a>Comportamento di isolamento di RegDB
 
-Per garantire la coerenza dei dati appropriata e le transazioni serializzabili, RegDB applica un particolare comportamento di blocco e isolamento quando le operazioni di amministrazione vengono eseguite all'interno delle transazioni.
+Per garantire la coerenza dei dati e le transazioni serializzabili, RegDB applica un particolare comportamento di blocco e isolamento quando vengono eseguite operazioni di amministrazione all'interno delle transazioni.
 
 Ogni volta che un componente che esegue operazioni all'interno di una transazione chiama qualsiasi metodo che causerà una scrittura nel catalogo COM+, ad esempio [**SaveChanges,**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) [**InstallApplication**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installapplication)o [**InstallComponent,**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent)viene eseguito un blocco del writer sul codice del server di catalogo COM+ che bloccherà l'ingresso di qualsiasi altro writer fino al commit o all'interruzione della transazione corrente. In altre informazioni, i writer possono accedere solo se hanno l'affinità di transazione corretta e partecipano alla transazione corrente.
 

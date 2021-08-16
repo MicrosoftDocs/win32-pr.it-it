@@ -1,5 +1,5 @@
 ---
-description: Questa sezione presenta una panoramica del funzionamento di Windows image acquisition (WIA) e di come può essere usato per creare applicazioni che gestiscono i dispositivi di creazione di immagini.
+description: Questa sezione presenta una panoramica del funzionamento di Windows Image Acquisition (WIA) e di come può essere usato per creare applicazioni che gestiscono i dispositivi di creazione di immagini.
 ms.assetid: e8a138f9-a322-4527-ace6-511c63a92afb
 title: Uso Windows'acquisizione di immagini
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "118207968"
 ---
 # <a name="using-windows-image-acquisition"></a>Uso Windows'acquisizione di immagini
 
-Questa sezione presenta una panoramica del funzionamento di Windows image acquisition (WIA) e di come può essere usato per creare applicazioni che gestiscono i dispositivi di creazione di immagini. Per altre informazioni, vedere gli argomenti seguenti:
+Questa sezione presenta una panoramica del funzionamento di Windows Image Acquisition (WIA) e di come può essere usato per creare applicazioni che gestiscono i dispositivi di creazione di immagini. Per altre informazioni, vedere gli argomenti seguenti:
 
 -   [Informazioni sull'albero degli elementi IWiaItem2](-wia-about-item-tree.md)
 -   [Uso di oggetti dispositivo WIA](-wia-using-wia-device-objects.md)
 -   [Acquisizione di immagini](-wia-acquiring-images.md)
 -   [Esplorazione di un albero degli elementi](-wia-navigating-an-item-tree.md)
 -   [Registrazione di eventi WIA](-wia-registering-wia-events.md)
--   [Uso degli enumeratori WIA](-wia-using-wia-enumerators.md)
+-   [Uso di enumeratori WIA](-wia-using-wia-enumerators.md)
 -   [Lettura e impostazione delle proprietà WIA](-wia-reading-and-setting-wia-properties.md)
 -   [Informazioni sugli errori WIA](-wia-wia-error-information.md)
 -   [Uso di più thread in un'applicazione WIA](-wia-using-multiple-threads.md)

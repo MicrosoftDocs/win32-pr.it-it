@@ -1,6 +1,6 @@
 ---
-title: Ricerca per categorie decomprimere flussi da un file AVI o da un altro file per il quale non sono disponibili informazioni sul formato
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | Ricerca per categorie decomprimere i flussi da un file AVI o da un altro file per cui non sono disponibili informazioni sul formato
+title: Ricerca per categorie decomprimere i flussi da un file AVI o da un altro file per cui non sono disponibili informazioni sul formato
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Ricerca per categorie decomprimere i flussi da un file AVI o da un altro file per cui non sono disponibili informazioni sul formato
 ms.assetid: ba283da2-4ae4-442e-9efc-754c4e1fe0ac
 keywords:
 - Ricerca per categorie decomprimere flussi da un file AVI o da un altro file per il quale non sono disponibili informazioni sul formato windows Media Format
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118198492"
 ---
-# <a name="how-do-i-decompress-streams-from-an-avi-file-or-other-file-about-which-i-have-no-format-information"></a>Ricerca per categorie decomprimere flussi da un file AVI o da un altro file per il quale non sono disponibili informazioni sul formato
+# <a name="how-do-i-decompress-streams-from-an-avi-file-or-other-file-about-which-i-have-no-format-information"></a>Ricerca per categorie decomprimere i flussi da un file AVI o da un altro file per cui non sono disponibili informazioni sul formato
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
  
 

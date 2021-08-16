@@ -1,7 +1,7 @@
 ---
-description: Attività com+ Low-Memory di attivazione
+description: Attività dei Low-Memory di attivazione com+
 ms.assetid: 42a50775-05aa-49ef-9f38-e557110670d7
-title: Attività com+ Low-Memory di attivazione
+title: Attività dei Low-Memory di attivazione com+
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b98f1ff6294cafa8ed77d5178612db9e49cd7370942da4f418f5e7c0779743dd
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118308039"
 ---
-# <a name="com-low-memory-activation-gates-tasks"></a>Attività com+ Low-Memory di attivazione
+# <a name="com-low-memory-activation-gates-tasks"></a>Attività dei Low-Memory di attivazione com+
 
-La funzionalità di controllo dell'attivazione con memoria insufficiente di COM+ viene fornita automaticamente da COM+. Questa funzionalità non è configurabile, quindi non vi sono attività associate.
+La funzionalità dei gate di attivazione a memoria insufficiente COM+ viene fornita automaticamente da COM+. Questa funzionalità non è configurabile, quindi non vi sono attività associate.
 
  
 

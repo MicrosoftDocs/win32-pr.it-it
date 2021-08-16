@@ -24,7 +24,7 @@ ms.locfileid: "118338642"
 ---
 # <a name="implementing-an-audio-dsp-plug-in"></a>Implementazione di un plug-in DSP audio
 
-Per creare un Windows Media Player plug-in DSP che elabora l'audio, è necessario modificare il codice di esempio nella funzione **denominata DoProcessOutput**. **DoProcessOutput** viene chiamato ogni volta Windows Media Player chiama correttamente **IMediaObject::P rocessOutput**. È la funzione che esegue le attività di elaborazione del segnale digitale che producono il risultato udibile che il plug-in DSP è destinato a produrre.
+Per creare Windows Media Player plug-in DSP che elabora l'audio, è necessario modificare il codice di esempio nella funzione denominata **DoProcessOutput**. **DoProcessOutput** viene chiamato ogni volta Windows Media Player chiama **correttamente IMediaObject::P rocessOutput**. È la funzione che esegue le attività di elaborazione del segnale digitale che producono il risultato udibile che il plug-in DSP è destinato a produrre.
 
 L'elaborazione di un flusso audio è simile alla gestione di un evento a tempo. **DoProcessOutput** verrà chiamato ripetutamente e a intervalli specifici. Ogni volta che il codice viene eseguito, sarà necessario elaborare un numero specifico di byte di dati. **DoProcessOutput** contiene i parametri seguenti:
 
@@ -32,7 +32,7 @@ L'elaborazione di un flusso audio è simile alla gestione di un evento a tempo. 
 
 | Parametro          | Descrizione                                                                                                             |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| *pbOutputData*     | Si tratta di un **puntatore BYTE** al buffer in cui l'implementazione di **DoProcessOutput** deve copiare i dati elaborati. |
+| *pbOutputData*     | Si tratta di un **puntatore BYTE** al buffer in cui l'implementazione **di DoProcessOutput** deve copiare i dati elaborati. |
 | *pbInputData*      | Si tratta di un **puntatore BYTE** costante al buffer che contiene i dati da elaborare.                               |
 | *cbBytesToProcess* | Si tratta di **un valore DWORD** che contiene un conteggio del numero di byte nel buffer di input da elaborare.             |
 

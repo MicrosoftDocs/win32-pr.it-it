@@ -28,7 +28,7 @@ Usare i tipi di enumerazione seguenti quando si modificano gli attributi del diz
 -   [**DICTIONARYPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-dictionaryproperties)
 -   [**EAPWRAPPROPERTIES**](/previous-versions/ms717032(v=vs.85))
 -   [**IASCOMMONPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iascommonproperties)
--   [**PROPRIETÀ POLICY**](/windows/desktop/api/sdoias/ne-sdoias-policyproperties)
+-   [**PROPRIETÀ DEI CRITERI**](/windows/desktop/api/sdoias/ne-sdoias-policyproperties)
 -   [**PROPRIETÀ PROFILO**](/windows/desktop/api/sdoias/ne-sdoias-profileproperties)
 
  

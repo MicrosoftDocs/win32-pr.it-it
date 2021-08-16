@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_TABLECREATE Class'
-title: Classe JET_TABLECREATE
+description: 'Altre informazioni su: JET_TABLECREATE classe'
+title: JET_TABLECREATE classe
 TOCTitle: JET_TABLECREATE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_TABLECREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7f422e0d5eb8cb7fe28edb7d3139a073776f06b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3bc04a6aad8d0d4c2b36d483f9d8b022a392e4d2bb8a8322fb2899ce364b413
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892620"
 ---
-# <a name="jet_tablecreate-class"></a>Classe JET_TABLECREATE
+# <a name="jet_tablecreate-class"></a>JET_TABLECREATE classe
 
 Contiene le informazioni necessarie per creare una tabella in un database ESE. Contiene le informazioni necessarie per creare una tabella in un database ESE.
 
@@ -40,8 +40,8 @@ Contiene le informazioni necessarie per creare una tabella in un database ESE. C
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_TABLECREATE  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,6 +68,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membri](./jet-tablecreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

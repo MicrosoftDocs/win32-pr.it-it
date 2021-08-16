@@ -1,7 +1,7 @@
 ---
 description: Ridimensiona un vettore 2D.
 ms.assetid: 1887bc48-3766-42d7-840b-1e29d78db4ce
-title: Funzione D3DXVec2Scale (D3dx9math. h)
+title: Funzione D3DXVec2Scale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 941e85763b15724e3c810c0416b5b142c9d95913
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 72972655710ef470120801608fbbac7809a4a692d25b2167a5fadb35cf4bc39c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298180"
 ---
-# <a name="d3dxvec2scale-function"></a>D3DXVec2Scale (funzione)
+# <a name="d3dxvec2scale-function"></a>Funzione D3DXVec2Scale
 
 Ridimensiona un vettore 2D.
 
@@ -42,28 +42,28 @@ D3DXVECTOR2* D3DXVec2Scale(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR2**](d3dxvector2.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR2**](d3dxvector2.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR2**](d3dxvector2.md) di origine.
+Puntatore alla struttura [**D3DXVECTOR2 di**](d3dxvector2.md) origine.
 
 </dd> <dt>
 
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore di ridimensionamento.
 
@@ -73,11 +73,11 @@ Valore di ridimensionamento.
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR2**](d3dxvector2.md) che rappresenta il vettore ridimensionato.
+Puntatore a [**una struttura D3DXVECTOR2**](d3dxvector2.md) che rappresenta il vettore ridimensionato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec2Scale** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec2Scale** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

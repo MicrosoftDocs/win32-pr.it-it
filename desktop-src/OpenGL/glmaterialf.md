@@ -52,7 +52,7 @@ Viso o visi da aggiornare. Deve essere uno dei seguenti: GL \_ FRONT, GL \_ BACK
 *Pname* 
 </dt> <dd>
 
-Parametro del materiale a valore singolo del viso o dei visi da aggiornare. Deve essere GL \_ BRILLANTEZZA.
+Parametro materiale a valore singolo del viso o dei visi da aggiornare. Deve essere GL \_ BRILLANTEZZA.
 
 
 
@@ -98,7 +98,7 @@ La **funzione glMaterialf** accetta tre argomenti. Il primo, *viso*, specifica s
 
 I parametri dei materiali vengono usati nell'equazione di illuminazione che viene facoltativamente applicata a ogni vertice. L'equazione è descritta in [**glLightModel**](gllightmodel-functions.md).
 
-I parametri del materiale possono essere aggiornati in qualsiasi momento. In particolare, è possibile chiamare **glMaterialf** tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). Se è necessario modificare un solo parametro di materiale per vertice, tuttavia, [**glColorMaterial**](glcolormaterial.md) è preferibile rispetto **a glMaterialf**.
+I parametri del materiale possono essere aggiornati in qualsiasi momento. In particolare, è possibile chiamare **glMaterialf** tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). Se è necessario modificare un solo parametro materiale per vertice, tuttavia, [**glColorMaterial**](glcolormaterial.md) è preferibile rispetto **a glMaterialf**.
 
 La funzione seguente recupera le informazioni correlate a **glMaterialf**:
 

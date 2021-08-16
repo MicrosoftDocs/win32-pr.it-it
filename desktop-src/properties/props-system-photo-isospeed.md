@@ -1,5 +1,5 @@
 ---
-description: Velocità ISO (International Standards Organization) registrata dalla fotocamera quando è stata scattata la foto.
+description: Velocità ISO (International Standards Organization) registrata dalla fotocamera al momento della foto.
 ms.assetid: 2d9b642f-6b42-4fc6-839c-269bbb0f7296
 title: System.Photo.ISOSpeed
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118228745"
 ---
 # <a name="systemphotoisospeed"></a>System.Photo.ISOSpeed
 
-Velocità ISO (International Standards Organization) registrata dalla fotocamera quando è stata scattata la foto.
+Velocità ISO (International Standards Organization) registrata dalla fotocamera al momento della foto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -55,7 +55,7 @@ I valori PKEY sono definiti in Propkey.h.
 [Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -85,7 +85,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

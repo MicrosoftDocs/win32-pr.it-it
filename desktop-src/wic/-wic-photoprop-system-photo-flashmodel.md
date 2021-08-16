@@ -1,7 +1,7 @@
 ---
-description: Criteri dei metadati della foto per la proprietà System.Photo.FlashModel.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.FlashModel.
 ms.assetid: ef322823-1b87-40ea-a5e3-e7551f14e44d
-title: Criteri dei metadati delle foto system.Photo.FlashModel
+title: Criteri dei metadati delle foto System.Photo.FlashModel
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 15c9e45e1ef759f2bee0d383cde3bcdabe8be67dc55a463ab6c9f7e6e05889a2
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118204882"
 ---
-# <a name="systemphotoflashmodel-photo-metadata-policy"></a>Criteri dei metadati delle foto system.Photo.FlashModel
+# <a name="systemphotoflashmodel-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.FlashModel
 
 Criteri dei metadati delle foto per [la proprietà System.Photo.FlashModel.](../properties/props-system-photo-flashmodel.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ FlashModel
 
@@ -41,7 +41,7 @@ I valori di schemi diversi vengono riconciliati.
 
 ### <a name="precedence-of-paths-jpeg"></a>Precedenza dei percorsi (JPEG)
 
-Se il file è in formato JPEG, il gestore userà il percorso seguente durante la lettura o la scrittura dei dati.
+Se il file è in formato JPEG, il gestore utilizzerà il percorso seguente durante la lettura o la scrittura dei dati.
 
 
 

@@ -35,12 +35,12 @@ Tenere presente che questi comandi sono specifici di MTP. e sono pertanto implem
 
 | Comando  | Descrizione  |
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**TRASFERIMENTO DEI DATI \_ DI FINE DEL COMANDO \_ WPD MTP \_ EXT \_ \_ \_**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-end-data-transfer)                                      | Emetta un comando MTP che segnala la conclusione di un'operazione di lettura o scrittura dei dati.              |
+| [**TRASFERIMENTO DEI DATI \_ DI FINE DEL COMANDO \_ WPD MTP \_ EXT \_ \_ \_**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-end-data-transfer)                                      | Consente di eseguire un comando MTP che segnala la conclusione di un'operazione di lettura o scrittura dei dati.              |
 | [**COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE COMMAND WITHOUT DATA \_ \_ \_ \_ PHASE**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-without-data-phase)  | Consente di eseguire un comando MTP senza una fase dati corrispondente.                                         |
 | [**COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE CON DATI DA \_ \_ \_ \_ \_ SCRIVERE**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-write) | Viene eseguito un comando MTP seguito dai dati che accompagnano, che verranno scritti nel dispositivo. |
-| [**COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE CON DATI DA \_ \_ \_ \_ \_ LEGGERE**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-read)   | Viene eseguito un comando MTP seguito dai dati che accompagnano, che vengono letti dal dispositivo.       |
+| [**COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE CON DATI DA \_ \_ \_ \_ \_ LEGGERE**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-execute-command-with-data-to-read)   | Consente di eseguire un comando MTP seguito dai dati correlati, che vengono letti dal dispositivo.       |
 | [**COMANDO WPD \_ \_ MTP \_ EXT \_ LETTURA \_ DATI**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-read-data)                                                       | Invia un comando MTP che invia i dati dal dispositivo al PC.                                  |
-| [**WPD \_ COMMAND \_ MTP \_ EXT \_ WRITE \_ DATA**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-write-data)                                                     | Invia un comando MTP che invia i dati al dispositivo dal PC.                                  |
+| [**WPD \_ COMMAND \_ MTP \_ EXT \_ WRITE \_ DATA**](/windows/desktop/wpd_sdk/wpd-command-mtp-ext-write-data)                                                     | Invia un comando MTP che invia dati al dispositivo dal PC.                                  |
 
 
 

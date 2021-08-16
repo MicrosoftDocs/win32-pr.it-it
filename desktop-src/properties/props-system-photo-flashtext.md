@@ -13,7 +13,7 @@ ms.locfileid: "118229805"
 ---
 # <a name="systemphotoflashtext"></a>System.Photo.FlashText
 
-Il formato descrittivo di [System.Photo.Flash](./props-system-photo-flash.md). Non deve essere analizzato a livello di codice.
+Formato descrittivo di [System.Photo.Flash.](./props-system-photo-flash.md) Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

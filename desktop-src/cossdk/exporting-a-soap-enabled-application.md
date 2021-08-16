@@ -25,7 +25,7 @@ Per esportare un'applicazione abilitata per SOAP da un server, seguire questa pr
 
 3.  Nella casella di testo immettere il percorso completo e il nome del **file** dell'applicazione da creare, immettere il percorso  completo e il nome del file MSI che conterrà l'applicazione esportata oppure fare clic su Sfoglia per selezionare il percorso completo e il nome file usando una finestra di dialogo.
 
-4.  In **Esporta come** selezionare il pulsante di opzione Application Proxy - Installa in altri computer per abilitare **l'accesso a questo** computer.
+4.  In **Esporta come** selezionare il pulsante di opzione Application Proxy - Installa in altri computer per abilitare **l'accesso a questo computer.**
 
 ## <a name="visual-basic"></a>Visual Basic
 

@@ -1,7 +1,7 @@
 ---
-description: Criteri dei metadati delle foto per la proprietà System.Photo.FNumber.
+description: Criteri dei metadati della foto per la proprietà System.Photo.FNumber.
 ms.assetid: 434d52cb-c98d-4860-87f7-4aedab7f8188
-title: Criteri metadati foto System.Photo.FNumber
+title: Criteri dei metadati delle foto System.Photo.FNumber
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c90ad29c4dc6211f66df8621cfb589c2947f08dbb9f0b4f0fe03196c23909a2f
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118204811"
 ---
-# <a name="systemphotofnumber-photo-metadata-policy"></a>Criteri metadati foto System.Photo.FNumber
+# <a name="systemphotofnumber-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.FNumber
 
-Criteri dei metadati delle foto per [la proprietà System.Photo.FNumber.](../properties/props-system-photo-fnumber.md)
+Criteri dei metadati della foto per [la proprietà System.Photo.FNumber.](../properties/props-system-photo-fnumber.md)
 
-### <a name="pkey"></a>Chiave PKEY
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ FNumber
 
@@ -60,7 +60,7 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 | 2     | /xmp/exif:FNumber             |             | 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
@@ -101,7 +101,7 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 

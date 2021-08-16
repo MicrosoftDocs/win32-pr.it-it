@@ -41,7 +41,7 @@ L'associazione di stringhe non è valida.
 
 
 
-L'handle di associazione non è del tipo corretto.
+L'handle di associazione non è il tipo corretto.
 
 
 </dt> </dl> </dd> <dt>
@@ -111,7 +111,7 @@ Il formato dell'endpoint non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_NET_ADDR"></span><span id="rpc_s_invalid_net_addr"></span>**RPC \_ S NON VALIDO NET \_ \_ \_ ADDR**
+<span id="RPC_S_INVALID_NET_ADDR"></span><span id="rpc_s_invalid_net_addr"></span>**RPC \_ S NON VALIDA NET \_ \_ \_ ADDR**
 </dt> <dd> <dl> <dt>
 
 1707 (0x6AB)
@@ -137,7 +137,7 @@ Non è stato trovato alcun endpoint.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_TIMEOUT"></span><span id="rpc_s_invalid_timeout"></span>**TIMEOUT \_ NON VALIDO DI \_ RPC S \_**
+<span id="RPC_S_INVALID_TIMEOUT"></span><span id="rpc_s_invalid_timeout"></span>**TIMEOUT \_ NON \_ VALIDO RPC S \_**
 </dt> <dd> <dl> <dt>
 
 1709 (0x6AD)
@@ -691,7 +691,7 @@ L'endpoint server non può eseguire l'operazione.
 
 
 
-Non sono disponibili altri endpoint dal mapper di endpoint.
+Non sono disponibili altri endpoint dal mapper degli endpoint.
 
 
 </dt> </dl> </dd> <dt>
@@ -813,7 +813,7 @@ Il servizio dei nomi non è disponibile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_NAF_ID"></span><span id="rpc_s_invalid_naf_id"></span>**ID \_ \_ \_ NAF NON VALIDO DI \_ RPC S**
+<span id="RPC_S_INVALID_NAF_ID"></span><span id="rpc_s_invalid_naf_id"></span>**ID \_ \_ NAF NON \_ VALIDO DI \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1763 (0x6E3)
@@ -1593,7 +1593,7 @@ L'errore specificato non è un codice Windows errore RPC valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UUID_LOCAL_ONLY"></span><span id="rpc_s_uuid_local_only"></span>**RPC \_ S \_ UUID \_ SOLO \_ LOCALE**
+<span id="RPC_S_UUID_LOCAL_ONLY"></span><span id="rpc_s_uuid_local_only"></span>**SOLO \_ \_ UUID RPC \_ \_ LOCALE**
 </dt> <dd> <dl> <dt>
 
 1824 (0x720)
@@ -1731,7 +1731,7 @@ Il server proxy HTTP ha rifiutato la connessione perché l'autenticazione del co
 
 
 
-Il membro del gruppo non è stato trovato.
+Impossibile trovare il membro del gruppo.
 
 
 </dt> </dl> </dd> <dt>
@@ -1749,7 +1749,7 @@ Impossibile creare la voce di database del mapper di endpoint.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**OGGETTO \_ RPC S NON \_ \_ VALIDO**
+<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**OGGETTO \_ NON VALIDO RPC S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1900 (0x76C)
@@ -1939,7 +1939,7 @@ Alcuni dati rimangono da inviare nel buffer delle richieste.
 
 
 
-Handle di chiamata di procedura remota asincrono non valido.
+Handle di chiamata di procedura remota asincrona non valido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2139,7 +2139,7 @@ Impossibile rimuovere l'elemento group.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_KM_DRIVER_BLOCKED"></span><span id="error_km_driver_blocked"></span>**ERRORE \_ DRIVER \_ KM \_ BLOCCATO**
+<span id="ERROR_KM_DRIVER_BLOCKED"></span><span id="error_km_driver_blocked"></span>**ERRORE \_ DEL DRIVER KM \_ \_ BLOCCATO**
 </dt> <dd> <dl> <dt>
 
 1930 (0x78A)
@@ -2152,7 +2152,7 @@ Il driver della stampante non è compatibile con un criterio abilitato nel compu
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONTEXT_EXPIRED"></span><span id="error_context_expired"></span>**CONTESTO \_ \_ DELL'ERRORE SCADUTO**
+<span id="ERROR_CONTEXT_EXPIRED"></span><span id="error_context_expired"></span>**CONTESTO \_ DI ERRORE \_ SCADUTO**
 </dt> <dd> <dl> <dt>
 
 1931 (0x78B)
@@ -2165,7 +2165,7 @@ Il contesto è scaduto e non può più essere usato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PER_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_per_user_trust_quota_exceeded"></span>**È STATA \_ SUPERATA \_ LA QUOTA DI \_ \_ ATTENDIBILITÀ PER \_ UTENTE**
+<span id="ERROR_PER_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_per_user_trust_quota_exceeded"></span>**È STATA \_ \_ SUPERATA LA \_ QUOTA DI \_ ATTENDIBILITÀ PER \_ UTENTE**
 </dt> <dd> <dl> <dt>
 
 1932 (0x78C)
@@ -2173,12 +2173,12 @@ Il contesto è scaduto e non può più essere usato.
 
 
 
-La quota di creazione del trust delegato dell'utente corrente è stata superata.
+La quota di creazione dell'attendibilità delegata dell'utente corrente è stata superata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_all_user_trust_quota_exceeded"></span>**ERROR \_ ALL \_ USER \_ TRUST \_ QUOTA \_ EXCEEDED**
+<span id="ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_all_user_trust_quota_exceeded"></span>**ERRORE \_ TUTTE LE QUOTE DI \_ \_ \_ ATTENDIBILITÀ UTENTE \_ SUPERATE**
 </dt> <dd> <dl> <dt>
 
 1933 (0x78D)
@@ -2191,7 +2191,7 @@ La quota di creazione del trust delegato dell'utente corrente è stata superata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED"></span><span id="error_user_delete_trust_quota_exceeded"></span>**ERRORE DURANTE \_ \_ L'ELIMINAZIONE DELLA QUOTA DI TRUST DA PARTE \_ \_ \_ DELL'UTENTE**
+<span id="ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED"></span><span id="error_user_delete_trust_quota_exceeded"></span>**ERRORE \_ DURANTE \_ L'ELIMINAZIONE \_ DELLA QUOTA DI \_ \_ ATTENDIBILITÀ DELL'UTENTE SUPERATA**
 </dt> <dd> <dl> <dt>
 
 1934 (0x78E)
@@ -2204,7 +2204,7 @@ La quota di eliminazione dell'attendibilità delegata dell'utente corrente è st
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUTHENTICATION_FIREWALL_FAILED"></span><span id="error_authentication_firewall_failed"></span>**ERRORE DI \_ AUTENTICAZIONE DEL FIREWALL NON \_ \_ RIUSCITA**
+<span id="ERROR_AUTHENTICATION_FIREWALL_FAILED"></span><span id="error_authentication_firewall_failed"></span>**ERRORE \_ DEL FIREWALL DI AUTENTICAZIONE NON \_ \_ RIUSCITO**
 </dt> <dd> <dl> <dt>
 
 1935 (0x78F)
@@ -2217,7 +2217,7 @@ Il computer a cui si esegue l'accesso è protetto da un firewall di autenticazio
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED"></span><span id="error_remote_print_connections_blocked"></span>**ERRORE \_ CONNESSIONI DI STAMPA REMOTA \_ \_ \_ BLOCCATE**
+<span id="ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED"></span><span id="error_remote_print_connections_blocked"></span>**ERRORE \_ CONNESSIONI DI STAMPA REMOTE \_ \_ \_ BLOCCATE**
 </dt> <dd> <dl> <dt>
 
 1936 (0x790)
@@ -2225,7 +2225,7 @@ Il computer a cui si esegue l'accesso è protetto da un firewall di autenticazio
 
 
 
-Le connessioni remote a Spooler di stampa sono bloccate da un set di criteri nel computer.
+Le connessioni remote a Spooler di stampa vengono bloccate da un criterio impostato nel computer.
 
 
 </dt> </dl> </dd> <dt>
@@ -2243,7 +2243,7 @@ L'autenticazione non è riuscita perché l'autenticazione NTLM è stata disabili
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PASSWORD_CHANGE_REQUIRED"></span><span id="error_password_change_required"></span>**RICHIESTA \_ MODIFICA DELLA PASSWORD DI \_ \_ ERRORE**
+<span id="ERROR_PASSWORD_CHANGE_REQUIRED"></span><span id="error_password_change_required"></span>**MODIFICA \_ DELLA PASSWORD DI ERRORE \_ \_ RICHIESTA**
 </dt> <dd> <dl> <dt>
 
 1938 (0x792)
@@ -2251,12 +2251,12 @@ L'autenticazione non è riuscita perché l'autenticazione NTLM è stata disabili
 
 
 
-Errore di accesso: i criteri EAS richiedono che l'utente cambi la password prima di poter eseguire questa operazione.
+Errore di accesso: i criteri EAS richiedono all'utente di modificare la password prima di poter eseguire questa operazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PIXEL_FORMAT"></span><span id="error_invalid_pixel_format"></span>**ERRORE FORMATO \_ \_ PIXEL NON \_ VALIDO**
+<span id="ERROR_INVALID_PIXEL_FORMAT"></span><span id="error_invalid_pixel_format"></span>**ERRORE \_ FORMATO PIXEL NON \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2000 (0x7D0)
@@ -2282,7 +2282,7 @@ Il driver specificato non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_WINDOW_STYLE"></span><span id="error_invalid_window_style"></span>**ERRORE - \_ STILE DI FINESTRA NON \_ \_ VALIDO**
+<span id="ERROR_INVALID_WINDOW_STYLE"></span><span id="error_invalid_window_style"></span>**ERRORE STILE \_ FINESTRA \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2002 (0x7D2)
@@ -2303,12 +2303,12 @@ Lo stile della finestra o l'attributo della classe non è valido per questa oper
 
 
 
-L'operazione metafile richiesta non è supportata.
+L'operazione del metafile richiesta non è supportata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSFORM_NOT_SUPPORTED"></span><span id="error_transform_not_supported"></span>**LA TRASFORMAZIONE \_ DEGLI ERRORI NON È \_ \_ SUPPORTATA**
+<span id="ERROR_TRANSFORM_NOT_SUPPORTED"></span><span id="error_transform_not_supported"></span>**TRASFORMAZIONE \_ DEGLI ERRORI NON \_ \_ SUPPORTATA**
 </dt> <dd> <dl> <dt>
 
 2004 (0x7D4)
@@ -2321,7 +2321,7 @@ L'operazione di trasformazione richiesta non è supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLIPPING_NOT_SUPPORTED"></span><span id="error_clipping_not_supported"></span>**IL \_ RITAGLIO DEGLI ERRORI NON È \_ \_ SUPPORTATO**
+<span id="ERROR_CLIPPING_NOT_SUPPORTED"></span><span id="error_clipping_not_supported"></span>**RITAGLIO \_ DEGLI ERRORI NON \_ \_ SUPPORTATO**
 </dt> <dd> <dl> <dt>
 
 2005 (0x7D5)
@@ -2347,7 +2347,7 @@ Il modulo di gestione dei colori specificato non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PROFILE"></span><span id="error_invalid_profile"></span>**ERRORE PROFILO \_ NON \_ VALIDO**
+<span id="ERROR_INVALID_PROFILE"></span><span id="error_invalid_profile"></span>**ERRORE \_ PROFILO NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2011 (0x7DB)
@@ -2425,7 +2425,7 @@ Il profilo colori specificato non è stato trovato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_COLORSPACE"></span><span id="error_invalid_colorspace"></span>**ERRORE SPAZIO \_ \_ COLORE NON VALIDO**
+<span id="ERROR_INVALID_COLORSPACE"></span><span id="error_invalid_colorspace"></span>**ERRORE \_ DI \_ COLORSPACE NON VALIDO**
 </dt> <dd> <dl> <dt>
 
 2017 (0x7E1)
@@ -2433,7 +2433,7 @@ Il profilo colori specificato non è stato trovato.
 
 
 
-Lo spazio colore specificato non è valido.
+Lo spazio colori specificato non è valido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2459,12 +2459,12 @@ Gestione colori immagine non è abilitata.
 
 
 
-Si è verificato un errore durante l'eliminazione della trasformazione colore.
+Si è verificato un errore durante l'eliminazione della trasformazione del colore.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TRANSFORM"></span><span id="error_invalid_transform"></span>**ERRORE TRASFORMAZIONE \_ NON \_ VALIDA**
+<span id="ERROR_INVALID_TRANSFORM"></span><span id="error_invalid_transform"></span>**ERRORE \_ TRASFORMAZIONE NON \_ VALIDA**
 </dt> <dd> <dl> <dt>
 
 2020 (0x7E4)
@@ -2472,12 +2472,12 @@ Si è verificato un errore durante l'eliminazione della trasformazione colore.
 
 
 
-La trasformazione colore specificata non è valida.
+La trasformazione del colore specificata non è valida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COLORSPACE_MISMATCH"></span><span id="error_colorspace_mismatch"></span>**ERRORE \_ COLORSPACE \_ MISMATCH**
+<span id="ERROR_COLORSPACE_MISMATCH"></span><span id="error_colorspace_mismatch"></span>**ERRORE \_ DI MANCATA CORRISPONDENZA DI COLORSPACE \_**
 </dt> <dd> <dl> <dt>
 
 2021 (0x7E5)
@@ -2498,7 +2498,7 @@ La trasformazione specificata non corrisponde allo spazio colore della bitmap.
 
 
 
-L'indice dei colori denominato specificato non è presente nel profilo.
+L'indice colori denominato specificato non è presente nel profilo.
 
 
 </dt> </dl> </dd> <dt>
@@ -2516,7 +2516,7 @@ Il profilo specificato è destinato a un dispositivo di un tipo diverso da quell
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONNECTED_OTHER_PASSWORD"></span><span id="error_connected_other_password"></span>**ERRORE - \_ CONNESSIONE \_ DI \_ UN'ALTRA PASSWORD**
+<span id="ERROR_CONNECTED_OTHER_PASSWORD"></span><span id="error_connected_other_password"></span>**ERRORE CONNESSO \_ \_ ALTRA \_ PASSWORD**
 </dt> <dd> <dl> <dt>
 
 2108 (0x83C)
@@ -2524,12 +2524,12 @@ Il profilo specificato è destinato a un dispositivo di un tipo diverso da quell
 
 
 
-La connessione di rete è stata stabilita correttamente, ma all'utente era necessario richiedere una password diversa da quella specificata in origine.
+La connessione di rete è stata stabilita correttamente, ma all'utente è stata richiesta una password diversa da quella specificata in origine.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONNECTED_OTHER_PASSWORD_DEFAULT"></span><span id="error_connected_other_password_default"></span>**ERRORE CONNESSO \_ \_ ALTRO VALORE PREDEFINITO \_ \_ PASSWORD**
+<span id="ERROR_CONNECTED_OTHER_PASSWORD_DEFAULT"></span><span id="error_connected_other_password_default"></span>**ERRORE \_ CONNESSO \_ \_ UN'ALTRA PASSWORD \_ PREDEFINITA**
 </dt> <dd> <dl> <dt>
 
 2109 (0x83D)
@@ -2542,7 +2542,7 @@ La connessione di rete è stata stabilita correttamente usando le credenziali pr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_USERNAME"></span><span id="error_bad_username"></span>**ERRORE NOME \_ UTENTE \_ NON VALIDO**
+<span id="ERROR_BAD_USERNAME"></span><span id="error_bad_username"></span>**ERRORE \_ NOME UTENTE NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2202 (0x89A)
@@ -2568,7 +2568,7 @@ Questa connessione di rete non esiste.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPEN_FILES"></span><span id="error_open_files"></span>**ERRORE \_ DURANTE L'APERTURA \_ DEI FILE**
+<span id="ERROR_OPEN_FILES"></span><span id="error_open_files"></span>**ERRORE DURANTE \_ \_ L'APERTURA DI FILE**
 </dt> <dd> <dl> <dt>
 
 2401 (0x961)
@@ -2594,7 +2594,7 @@ Le connessioni attive esistono ancora.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_IN_USE"></span><span id="error_device_in_use"></span>**DISPOSITIVO \_ DI ERRORE IN \_ \_ USO**
+<span id="ERROR_DEVICE_IN_USE"></span><span id="error_device_in_use"></span>**ERRORE \_ DISPOSITIVO \_ IN \_ USO**
 </dt> <dd> <dl> <dt>
 
 2404 (0x964)
@@ -2620,7 +2620,7 @@ Il monitor di stampa specificato è sconosciuto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_IN_USE"></span><span id="error_printer_driver_in_use"></span>**DRIVER \_ DELLA STAMPANTE DI ERRORE IN \_ \_ \_ USO**
+<span id="ERROR_PRINTER_DRIVER_IN_USE"></span><span id="error_printer_driver_in_use"></span>**ERRORE \_ DEL DRIVER DELLA STAMPANTE IN \_ \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 3001 (0xBB9)
@@ -2633,7 +2633,7 @@ Il driver della stampante specificato è attualmente in uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SPOOL_FILE_NOT_FOUND"></span><span id="error_spool_file_not_found"></span>**FILE \_ DI SPOOL \_ DEGLI ERRORI \_ NON \_ TROVATO**
+<span id="ERROR_SPOOL_FILE_NOT_FOUND"></span><span id="error_spool_file_not_found"></span>**ERRORE \_ FILE DI \_ SPOOLING NON \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 3002 (0xBBA)
@@ -2641,7 +2641,7 @@ Il driver della stampante specificato è attualmente in uso.
 
 
 
-Impossibile trovare il file di spooling.
+Il file di spooling non è stato trovato.
 
 
 </dt> </dl> </dd> <dt>
@@ -2672,7 +2672,7 @@ Non è stata emessa una chiamata AddJob.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED"></span><span id="error_print_processor_already_installed"></span>**PROCESSORE \_ DI STAMPA DEGLI ERRORI GIÀ \_ \_ \_ INSTALLATO**
+<span id="ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED"></span><span id="error_print_processor_already_installed"></span>**ERRORE DEL \_ \_ PROCESSORE \_ DI STAMPA GIÀ \_ INSTALLATO**
 </dt> <dd> <dl> <dt>
 
 3005 (0xBBD)
@@ -2693,7 +2693,7 @@ Il processore di stampa specificato è già stato installato.
 
 
 
-Il monitoraggio di stampa specificato è già stato installato.
+Il monitor di stampa specificato è già stato installato.
 
 
 </dt> </dl> </dd> <dt>
@@ -2711,7 +2711,7 @@ Il monitor di stampa specificato non dispone delle funzioni necessarie.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_MONITOR_IN_USE"></span><span id="error_print_monitor_in_use"></span>**MONITORAGGIO \_ STAMPA ERRORI IN \_ \_ \_ USO**
+<span id="ERROR_PRINT_MONITOR_IN_USE"></span><span id="error_print_monitor_in_use"></span>**MONITOR \_ DI STAMPA DEGLI ERRORI IN \_ \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 3008 (0xBC0)
@@ -2724,7 +2724,7 @@ Il monitor di stampa specificato è attualmente in uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_HAS_JOBS_QUEUED"></span><span id="error_printer_has_jobs_queued"></span>**LA \_ STAMPANTE DEGLI ERRORI HA PROCESSI \_ \_ \_ ACCODATI**
+<span id="ERROR_PRINTER_HAS_JOBS_QUEUED"></span><span id="error_printer_has_jobs_queued"></span>**ERRORE \_ DURANTE \_ L'ACCODAMENTO \_ DEI PROCESSI DELLA \_ STAMPANTE**
 </dt> <dd> <dl> <dt>
 
 3009 (0xBC1)
@@ -2737,7 +2737,7 @@ L'operazione richiesta non è consentita quando sono presenti processi accodati 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SUCCESS_REBOOT_REQUIRED"></span><span id="error_success_reboot_required"></span>**È NECESSARIO \_ IL \_ RIAVVIO DELL'ERRORE \_ RIUSCITO**
+<span id="ERROR_SUCCESS_REBOOT_REQUIRED"></span><span id="error_success_reboot_required"></span>**ERRORE ESITO \_ POSITIVO \_ RIAVVIO \_ NECESSARIO**
 </dt> <dd> <dl> <dt>
 
 3010 (0xBC2)
@@ -2750,7 +2750,7 @@ L'operazione richiesta ha esito positivo. Le modifiche saranno effettive solo do
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SUCCESS_RESTART_REQUIRED"></span><span id="error_success_restart_required"></span>**È NECESSARIO \_ IL \_ RIAVVIO DELL'ERRORE \_ RIUSCITO**
+<span id="ERROR_SUCCESS_RESTART_REQUIRED"></span><span id="error_success_restart_required"></span>**RIAVVIO \_ \_ DELL'ERRORE RIUSCITO \_ OBBLIGATORIO**
 </dt> <dd> <dl> <dt>
 
 3011 (0xBC3)
@@ -2758,7 +2758,7 @@ L'operazione richiesta ha esito positivo. Le modifiche saranno effettive solo do
 
 
 
-L'operazione richiesta ha esito positivo. Le modifiche non saranno effettive fino al riavvio del servizio.
+L'operazione richiesta ha esito positivo. Le modifiche saranno effettive solo dopo il riavvio del servizio.
 
 
 </dt> </dl> </dd> <dt>
@@ -2771,7 +2771,7 @@ L'operazione richiesta ha esito positivo. Le modifiche non saranno effettive fin
 
 
 
-Non sono state trovate stampanti.
+Nessuna stampante trovata.
 
 
 </dt> </dl> </dd> <dt>
@@ -2784,7 +2784,7 @@ Non sono state trovate stampanti.
 
 
 
-Il driver della stampante è noto per essere inaffidabile.
+Il driver della stampante è noto come inaffidabile.
 
 
 </dt> </dl> </dd> <dt>
@@ -2797,7 +2797,7 @@ Il driver della stampante è noto per essere inaffidabile.
 
 
 
-Il driver della stampante è noto per danneggiare il sistema.
+È noto che il driver della stampante danneggia il sistema.
 
 
 </dt> </dl> </dd> <dt>
@@ -2815,7 +2815,7 @@ Il pacchetto driver della stampante specificato è attualmente in uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORE_DRIVER_PACKAGE_NOT_FOUND"></span><span id="error_core_driver_package_not_found"></span>**PACCHETTO \_ DRIVER PRINCIPALE DI ERRORE NON \_ \_ \_ \_ TROVATO**
+<span id="ERROR_CORE_DRIVER_PACKAGE_NOT_FOUND"></span><span id="error_core_driver_package_not_found"></span>**ERRORE \_ PACCHETTO DRIVER PRINCIPALE NON \_ \_ \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 3016 (0xBC8)
@@ -2828,7 +2828,7 @@ Impossibile trovare un pacchetto driver di base richiesto dal pacchetto driver d
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_REBOOT_REQUIRED"></span><span id="error_fail_reboot_required"></span>**È NECESSARIO \_ IL \_ RIAVVIO DELL'ERRORE \_ NON RIUSCITO**
+<span id="ERROR_FAIL_REBOOT_REQUIRED"></span><span id="error_fail_reboot_required"></span>**ERRORE FAIL \_ \_ REBOOT \_ REQUIRED**
 </dt> <dd> <dl> <dt>
 
 3017 (0xBC9)
@@ -2841,7 +2841,7 @@ L'operazione richiesta non è riuscita. È necessario un riavvio del sistema per
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_REBOOT_INITIATED"></span><span id="error_fail_reboot_initiated"></span>**AVVIO \_ DEL RIAVVIO CON \_ ERRORE NON \_ RIUSCITO**
+<span id="ERROR_FAIL_REBOOT_INITIATED"></span><span id="error_fail_reboot_initiated"></span>**ERRORE NON \_ RIUSCITO \_ \_ RIAVVIO AVVIATO**
 </dt> <dd> <dl> <dt>
 
 3018 (0xBCA)
@@ -2854,7 +2854,7 @@ L'operazione richiesta non è riuscita. È stato avviato un riavvio del sistema 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_DOWNLOAD_NEEDED"></span><span id="error_printer_driver_download_needed"></span>**DOWNLOAD \_ DEL DRIVER DELLA STAMPANTE DI ERRORE \_ \_ \_ NECESSARIO**
+<span id="ERROR_PRINTER_DRIVER_DOWNLOAD_NEEDED"></span><span id="error_printer_driver_download_needed"></span>**ERRORE DURANTE \_ IL DOWNLOAD DEL DRIVER DELLA STAMPANTE \_ \_ \_ NECESSARIO**
 </dt> <dd> <dl> <dt>
 
 3019 (0xBCB)
@@ -2867,7 +2867,7 @@ Il driver della stampante specificato non è stato trovato nel sistema e deve es
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_JOB_RESTART_REQUIRED"></span><span id="error_print_job_restart_required"></span>**È NECESSARIO \_ \_ RIAVVIARE IL \_ PROCESSO DI STAMPA \_ DEGLI ERRORI**
+<span id="ERROR_PRINT_JOB_RESTART_REQUIRED"></span><span id="error_print_job_restart_required"></span>**ERRORE DURANTE \_ IL \_ RIAVVIO \_ DEL PROCESSO DI \_ STAMPA RICHIESTO**
 </dt> <dd> <dl> <dt>
 
 3020 (0xBCC)
@@ -2940,7 +2940,7 @@ Riemettere l'operazione specificata come operazione di I/O memorizzata nella cac
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Winerror</dt> </dl> |
 
 

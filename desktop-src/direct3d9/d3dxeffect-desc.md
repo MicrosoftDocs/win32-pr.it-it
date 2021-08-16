@@ -1,7 +1,7 @@
 ---
 description: Descrive un oggetto effetto.
 ms.assetid: 161d3e7a-213a-4a83-a1b5-837b0aab96bf
-title: Struttura D3DXEFFECT_DESC (D3dx9effect. h)
+title: D3DXEFFECT_DESC struttura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: c8e7a3a2adf19514e2e4d1c6f61dbea888ce033d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b30ad0348a5c799690d668e036724d30808c2998eee9d762fa2ad3fc8106c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298594"
 ---
-# <a name="d3dxeffect_desc-structure"></a>\_Struttura D3DXEFFECT DESC
+# <a name="d3dxeffect_desc-structure"></a>Struttura DESC D3DXEFFECT \_
 
 Descrive un oggetto effetto.
 
@@ -56,29 +56,29 @@ Stringa che contiene il nome dell'autore dell'effetto.
 **Parametri**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di parametri utilizzati per effetto.
+Numero di parametri usati per l'effetto.
 
 </dd> <dt>
 
 **Tecniche**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di tecniche che consentono di eseguire il rendering dell'effetto.
+Numero di tecniche che possono eseguire il rendering dell'effetto.
 
 </dd> <dt>
 
 **Funzioni**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -88,7 +88,7 @@ Numero di funzioni che possono eseguire il rendering dell'effetto.
 
 ## <a name="remarks"></a>Commenti
 
-Un oggetto Effect può contenere più tecniche di rendering e parametri per lo stesso effetto.
+Un oggetto effetto può contenere più tecniche di rendering e parametri per lo stesso effetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Un oggetto Effect può contenere più tecniche di rendering e parametri per lo s
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 

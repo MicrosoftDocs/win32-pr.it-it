@@ -13,7 +13,7 @@ ms.locfileid: "118307601"
 ---
 # <a name="com-transactions-concepts"></a>Concetti relativi alle transazioni COM+
 
-Sebbene COM+ gestisca molti dei dettagli di programmazione noiosi associati all'elaborazione delle transazioni, è utile avere una conoscenza concettuale della teoria delle transazioni quando è necessario programmare le transazioni in COM+.
+Anche se COM+ gestisce molti dei dettagli di programmazione noiosi associati all'elaborazione delle transazioni, è utile avere una conoscenza concettuale della teoria delle transazioni quando è necessario programmare le transazioni in COM+.
 
 Gli argomenti descritti nella tabella seguente illustrano i concetti applicabili all'elaborazione delle transazioni.
 

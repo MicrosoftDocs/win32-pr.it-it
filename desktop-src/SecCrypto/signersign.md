@@ -1,7 +1,7 @@
 ---
 description: Firma il file specificato.
 ms.assetid: 5a59e663-057b-4380-aa14-536030e4051d
-title: SignerSign (funzione)
+title: Funzione SignerSign
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 9aa8ecc15e38c4a502b363898d5845cba5b0e47e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9756fba3a931ddf09715b5086e613a9395c10c57c82fa18c64007aeb02b615c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973135"
 ---
-# <a name="signersign-function"></a>SignerSign (funzione)
+# <a name="signersign-function"></a>Funzione SignerSign
 
-La funzione **SignerSign** firma il file specificato.
+La **funzione SignerSign** firma il file specificato.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mssign32.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mssign32.dll.
 
  
 
@@ -50,47 +50,47 @@ HRESULT WINAPI SignerSign(
 
 <dl> <dt>
 
-*pSubjectInfo* \[ in\]
+*pSubjectInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ informazioni sul soggetto del firmatario**](signer-subject-info.md) che specifica l'oggetto da firmare.
+Puntatore a una [**struttura \_ SIGNER SUBJECT \_ INFO**](signer-subject-info.md) che specifica l'oggetto da firmare.
 
 </dd> <dt>
 
-*pSignerCert* \[ in\]
+*pSignerCert* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura del certificato del [**firmatario \_**](signer-cert.md) che specifica il certificato da usare per creare la firma digitale.
+Puntatore a una [**struttura \_ SIGNER CERT**](signer-cert.md) che specifica il certificato da utilizzare per creare la firma digitale.
 
 </dd> <dt>
 
-*pSignatureInfo* \[ in\]
+*pSignatureInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ informazioni sulla firma del firmatario**](signer-signature-info.md) che contiene informazioni sulla firma digitale.
+Puntatore a una [**struttura \_ SIGNER SIGNATURE \_ INFO**](signer-signature-info.md) che contiene informazioni sulla firma digitale.
 
 </dd> <dt>
 
 *pProviderInfo* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ informazioni del provider del firmatario**](signer-provider-info.md) che specifica le informazioni sul [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) e sulla [*chiave privata*](../secgloss/p-gly.md) utilizzate per creare la firma digitale.
+Puntatore a una [**struttura SIGNER \_ PROVIDER \_ INFO**](signer-provider-info.md) che specifica il [](../secgloss/p-gly.md) [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) e le informazioni sulla chiave privata utilizzate per creare la firma digitale.
 
-Se il valore di questo parametro è **null**, il valore del parametro *pSignerCert* deve specificare un certificato associato a un CSP.
+Se il valore di questo parametro è **NULL,** il valore del *parametro pSignerCert* deve specificare un certificato associato a un CSP.
 
 </dd> <dt>
 
 *pwszHttpTimeStamp* \[ in, facoltativo\]
 </dt> <dd>
 
-URL di un server di timestamp.
+URL di un server timestamp.
 
 </dd> <dt>
 
 *psRequest* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**degli \_ attributi Crypt**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) che vengono aggiunte a una richiesta di firma. Questo parametro viene ignorato se il parametro *pwszHttpTimeStamp* non contiene un valore valido che non è **null**.
+Puntatore a una matrice [**di strutture ATTRIBUTE CRYPT \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) aggiunte a una richiesta di firma. Questo parametro viene ignorato se *il parametro pwszHttpTimeStamp* non contiene un valore valido diverso da **NULL.**
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Valore a 32 bit passato come dati aggiuntivi alle funzioni SIP. Il formato e il 
 
 Se la funzione ha esito positivo, la funzione restituisce S \_ OK.
 
-Se la funzione ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se la funzione ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](common-hresult-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,8 +113,8 @@ Se la funzione ha esito negativo, restituisce un valore **HRESULT** che indica l
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

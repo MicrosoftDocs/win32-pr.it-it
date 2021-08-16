@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRMNET_POLICY_MINIMUM_ENVIRONMENT (wmdrmsdk. h)
-description: La \_ \_ struttura di ambiente minima dei criteri WMDRMNET \_ contiene i requisiti di sicurezza minimi per Windows Media DRM per i dispositivi di rete.
+title: WMDRMNET_POLICY_MINIMUM_ENVIRONMENT struttura (Wmdrmsdk.h)
+description: La struttura MINIMUM ENVIRONMENT dei criteri WMDRMNET contiene i requisiti minimi di sicurezza per Windows \_ \_ Media \_ DRM per i dispositivi di rete.
 ms.assetid: b1bc9a8d-197e-45fe-a152-0b81add977eb
 keywords:
-- Formato di Windows Media per la struttura WMDRMNET_POLICY_MINIMUM_ENVIRONMENT
-- struttura Windows Media Format
+- WMDRMNET_POLICY_MINIMUM_ENVIRONMENT struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bf53fdec186a44eff375dd2e9cf9badfe0ba715
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26c11cf02d7cfcd2e3ab62c4e6b110e2c20b77cf6f79251a23f642b38d4df553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027462"
 ---
-# <a name="wmdrmnet_policy_minimum_environment-structure"></a>\_Struttura di \_ ambiente minima dei criteri WMDRMNET \_
+# <a name="wmdrmnet_policy_minimum_environment-structure"></a>Struttura DELL'AMBIENTE \_ \_ MINIMO DEI CRITERI WMDRMNET \_
 
-La struttura di **\_ \_ \_ ambiente minima dei criteri WMDRMNET** contiene i requisiti di sicurezza minimi per Windows Media DRM per i dispositivi di rete.
+La struttura MINIMUM ENVIRONMENT di **\_ CRITERI \_ \_ WMDRMNET** contiene i requisiti minimi di sicurezza per Windows DRM multimediale per i dispositivi di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,27 +46,27 @@ typedef struct WMDRMNET_POLICY_MINIMUM_ENVIRONMENT {
 **wMinimumSecurityLevel**
 </dt> <dd>
 
-È necessario un livello di sicurezza minimo per l'applicazione.
+Livello minimo di sicurezza dell'applicazione richiesto.
 
 </dd> <dt>
 
 **dwMinimumAppRevocationListVersion**
 </dt> <dd>
 
-È richiesta la versione minima dell'elenco di revoche di certificati dell'applicazione.
+Versione minima dell'elenco di revoche di certificati dell'applicazione richiesta.
 
 </dd> <dt>
 
 **dwMinimumDeviceRevocationListVersion**
 </dt> <dd>
 
-È necessario un elenco di revoche di certificati minimo per il dispositivo.
+È necessario un elenco minimo di revoche di certificati del dispositivo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Nessuna.
 [**Strutture**](drm-structures.md)
 </dt> <dt>
 
-[**criteri di WMDRMNET \_**](wmdrmnet-policy.md)
+[**CRITERI \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

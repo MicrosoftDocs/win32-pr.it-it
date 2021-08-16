@@ -1,6 +1,6 @@
 ---
 description: Descrive come usare lo strumento Di ricerca errori Microsoft per trovare spiegazioni testuali dei codici di errore esadecimali in Windows.
-title: Strumento Di ricerca errori Microsoft
+title: Strumento di ricerca errori Microsoft
 ms.topic: article
 ms.date: 12/4/2019
 ms.openlocfilehash: 534b2af92b8dc0e906bd033e8ce1f0fbd08ead0cda21406d1818a318356db613
@@ -10,7 +10,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118405891"
 ---
-# <a name="the-microsoft-error-lookup-tool"></a>Strumento Di ricerca errori Microsoft
+# <a name="the-microsoft-error-lookup-tool"></a>Strumento di ricerca errori Microsoft
 
 Microsoft Error Lookup Tool visualizza il testo del messaggio associato a un codice di stato esadecimale (o a un altro codice). Questo testo è definito in vari file di intestazione del codice sorgente Microsoft, ad esempio Winerror.h, Setupapi.h e così via.
 
@@ -18,12 +18,12 @@ Lo strumento è firmato digitalmente da Microsoft. Di seguito sono riportate le 
 
 |Algoritmo |Hash |
 | --- | --- |
-|SHA256 |88739EC82BA16A0B4A3C83C1DD2FCA6336AD8E2A1E5F1238C085B1E86AB8834A |
+|SHA256 |88739EC82BA16A0B4A3C83C1DDD2FCA6336AD8E2A1E5F1238C085B1E86AB8834A |
 
 > [!NOTE]
 > Gli ambienti aziendali possono limitare i file che possono essere eseguiti e da dove. Prima di scaricare ed eseguire questo strumento, controllare i dettagli seguenti:
 > - È necessario disporre dell'autorizzazione o di un'eccezione di sicurezza per scaricare o eseguire lo strumento?
-> - È possibile archiviare ed eseguire questo strumento nel computer (ad esempio, nella cartella Documenti)? Oppure è necessario archiviare ed eseguire lo strumento in un computer specializzato, ad esempio un computer file server?
+> - È possibile archiviare ed eseguire questo strumento nel computer (ad esempio, nella cartella Documenti)? Oppure è necessario archiviare ed eseguire lo strumento in un computer specializzato, ad esempio un file server?
 
 ## <a name="usage"></a>Utilizzo
 
@@ -38,7 +38,7 @@ Lo strumento è firmato digitalmente da Microsoft. Di seguito sono riportate le 
    Err_6.4.5.exe <error code>
    ```
    > [!NOTE]  
-   > In questo comando rappresenta il codice esadecimale \<*error code*> che si vuole cercare.
+   > In questo comando rappresenta il codice esadecimale da \<*error code*> cercare.
 
 ## <a name="examples"></a>Esempio
 
@@ -75,4 +75,4 @@ C:\Tools>Err_6.4.5.exe 7b
 
 ## <a name="more-information"></a>Altre informazioni
 
-Tenere presente che si tratta di uno strumento "tempormente". Lo strumento Di ricerca errori Microsoft decodifica la maggior parte dei codici di errore Microsoft alla data in cui è stato compilato lo strumento. Poiché le nuove versioni Windows aggiungere nuovi codici di evento e di errore, potrebbe essere necessario scaricare una nuova versione dello strumento Di ricerca errori. Controllare l'Area download Microsoft per una nuova versione oppure vedere [Codici di errore](system-error-codes.md).
+Tenere presente che si tratta di uno strumento "punto nel tempo". Microsoft Error Lookup Tool decodifica la maggior parte dei codici di errore Microsoft alla data in cui è stato compilato lo strumento. Poiché le nuove versioni di Windows aggiungere nuovi codici di evento e di errore, potrebbe essere necessario scaricare una nuova versione dello strumento Di ricerca errori. Controllare l'Area download Microsoft per una nuova versione o vedere [Codici di errore](system-error-codes.md).

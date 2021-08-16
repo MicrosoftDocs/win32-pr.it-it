@@ -19,17 +19,17 @@ ms.locfileid: "118208063"
 # <a name="limitations-of-the-scripting-model"></a>Limitazioni del modello di scripting
 
 > [!Note]  
-> Questo sistema di scripting è stato sostituito con Windows di automazione wia (Image Acquisition). Vedere [Windows Image Acquisition Automation Layer](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
+> Questo sistema di scripting è stato sostituito con Windows di automazione di acquisizione di immagini (WIA). Vedere [Windows di automazione dell'acquisizione di immagini.](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage)
 
  
 
-Il modello di scripting Windows Image Acquisition (WIA) espone un subset di funzionalità WIA. Nella tabella seguente vengono fornite descrizioni delle limitazioni del modello di scripting. 
+Il Windows di scripting WIA (Image Acquisition) espone un subset di funzionalità WIA. Nella tabella seguente vengono fornite le descrizioni delle limitazioni del modello di scripting. 
 
 | Funzionalità WIA               | Limitazione del modello di scripting                                                                                                                                                                                                                                               |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Eliminazione dell'interfaccia utente  | Impossibile eliminare l'interfaccia utente per l'impostazione delle proprietà di dispositivo/trasferimento.                                                                                                                                                                                               |
-| Impostazione di proprietà              | Impossibile impostare (scrivere) le proprietà di un dispositivo o di un elemento.                                                                                                                                                                                                                        |
-| Registrazione per gli eventi di callback | Può ricevere notifica solo per tre eventi specificati: [**OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md), [**OnDeviceConnected**](-wia--iwiaevents-ondeviceconnected.md)e [**OnDeviceDisconnected**](-wia--iwiaevents-ondevicedisconnected.md). |
+| Eliminazione dell'interfaccia utente  | Impossibile eliminare l'interfaccia utente per l'impostazione delle proprietà del dispositivo/trasferimento.                                                                                                                                                                                               |
+| Impostazione di proprietà              | Non è possibile impostare (scrivere) le proprietà di dispositivi o elementi.                                                                                                                                                                                                                        |
+| Registrazione per eventi di callback | Può ricevere notifica solo per tre eventi specificati: [**OnTransferComplete,**](-wia--iwiaevents-ontransfercomplete.md) [**OnDeviceConnected**](-wia--iwiaevents-ondeviceconnected.md)e [**OnDeviceDisconnected.**](-wia--iwiaevents-ondevicedisconnected.md) |
 | Gestione degli errori                 | Impossibile gestire gli errori WIA.                                                                                                                                                                                                                                                |
 
 

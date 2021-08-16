@@ -1,10 +1,10 @@
 ---
-title: Evento Player. MouseMove
-description: L'evento MouseMove si verifica quando il puntatore del mouse viene spostato. | Evento Player. MouseMove
+title: Evento Player.MouseMove
+description: L'evento MouseMove si verifica quando il puntatore del mouse viene spostato. | Evento Player.MouseMove
 ms.assetid: 026928a3-25a6-4e67-837a-df71c05e49ee
 keywords:
-- Windows Event di MouseMove Media Player
-- Evento MouseMove Windows Media Player, classe Player
+- Evento MouseMove Windows Media Player
+- Classe di evento MouseMove Windows Media Player , Player
 - Classe Player Windows Media Player, evento MouseMove
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a536609ba5e3095fed9826b071084491a81b385f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb864e2a8bf686bd39f2d44ba8f5558516d72034f606579a79c76a5d86ab3990
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338098"
 ---
-# <a name="playermousemove-event"></a>Evento Player. MouseMove
+# <a name="playermousemove-event"></a>Evento Player.MouseMove
 
-L'evento **MouseMove** si verifica quando il puntatore del mouse viene spostato.
+**L'evento MouseMove** si verifica quando il puntatore del mouse viene spostato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,31 +45,31 @@ Player.MouseMove(
 
 <dl> <dt>
 
-*Npulsante* 
+*nButton* 
 </dt> <dd>
 
-**Number** (**int**) che specifica un bit con bit corrispondenti al pulsante sinistro (bit 0), al pulsante destro (bit 1) e al pulsante centrale (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. È possibile impostare some, all o nessuno dei bit, a indicare che vengono premuti alcuni, tutti o nessuno dei pulsanti.
+**Numero** (**int**) che specifica un campo di bit con bit corrispondenti al pulsante sinistro (bit 0), al pulsante destro (bit 1) e al pulsante centrale (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. Alcuni, tutti o nessuno dei bit possono essere impostati, a indicare che alcuni, tutti o nessuno dei pulsanti sono premuti.
 
 </dd> <dt>
 
 *nShiftState* 
 </dt> <dd>
 
-**Number** (**int**) che specifica un bit con i bit meno significativi che corrispondono al tasto MAIUSC (bit 0), il tasto Ctrl (bit 1) e il tasto Alt (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. L'argomento Shift indica lo stato di queste chiavi. È possibile impostare some, all o nessuno dei bit, a indicare che vengono premuti alcuni, tutti o nessuno dei tasti.
+**Numero** (**int**) che specifica un campo di bit con i bit meno significativi corrispondenti al tasto MAIUSC (bit 0), al tasto CTRL (bit 1) e al tasto ALT (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. L'argomento shift indica lo stato di queste chiavi. È possibile impostare alcuni, tutti o nessuno dei bit, a indicare che vengono premuti alcuni, tutti o nessuno dei tasti.
 
 </dd> <dt>
 
-*fX* 
+*Fx* 
 </dt> <dd>
 
-**Numero** (**Long**) che specifica la coordinata x del puntatore del mouse rispetto all'angolo superiore sinistro del controllo.
+**Numero** (**long**) che specifica la coordinata x del puntatore del mouse rispetto all'angolo superiore sinistro del controllo.
 
 </dd> <dt>
 
-*fY* 
+*Fy* 
 </dt> <dd>
 
-**Numero** (**Long**) che specifica la coordinata y del puntatore del mouse rispetto all'angolo superiore sinistro del controllo.
+**Numero** (**long**) che specifica la coordinata y del puntatore del mouse rispetto all'angolo superiore sinistro del controllo.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 
@@ -89,7 +89,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

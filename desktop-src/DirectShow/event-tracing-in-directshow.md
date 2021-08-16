@@ -4,20 +4,20 @@ ms.assetid: e78c4514-25f4-441d-bfd0-6dac4f7567fd
 title: Traccia eventi in DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c567d8a2e75d838570323d8ad6be04f11502c9c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6afdeabfb13608453fc6b84bbefb36cca79265739c049cc0e5d35e997ebaf902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819583"
 ---
 # <a name="event-tracing-in-directshow"></a>Traccia eventi in DirectShow
 
-DirectShow supporta Event Tracing for Windows (ETW), che può essere usato per creare registri eventi per la strumentazione o il debug. Per ulteriori informazioni su ETW, vedere la documentazione di Windows SDK. Per utilizzare gli eventi ETW in un'applicazione DirectShow, è necessario abilitare la traccia e quindi elaborare gli eventi di traccia. Seguire questa procedura.
+DirectShow supporta Event Tracing for Windows (ETW), che può essere usato per creare log eventi per la strumentazione o il debug. Per altre informazioni su ETW, vedere la documentazione Windows SDK. Per utilizzare gli eventi ETW in un'DirectShow, è necessario abilitare la traccia e quindi elaborare gli eventi di traccia. Seguire questa procedura.
 
-**Impostare le chiavi del registro di sistema necessarie**
+**Impostare le chiavi del Registro di sistema necessarie**
 
-Per abilitare la traccia nel computer dell'utente, impostare innanzitutto le chiavi del registro di sistema seguenti:
+Per abilitare la traccia nel computer dell'utente, impostare prima le chiavi del Registro di sistema seguenti:
 
 
 ```C++
@@ -29,28 +29,28 @@ HKEY_LOCAL_MACHINE\SOFTWARE\DEBUG\Quartz.dll
 
 
 
-Queste chiavi si applicano ai file binari di rilascio e di debug.
+Queste chiavi si applicano sia ai file binari di versione che di debug.
 
 **Abilitare la traccia nell'applicazione**
 
 Per abilitare la traccia nell'applicazione, seguire questa procedura:
 
-1.  Chiamare **StartTrace** per avviare una nuova sessione di traccia.
-2.  Chiamare **EnableTrace** per abilitare la traccia. Il GUID del provider per DirectShow è GUID \_ dshow \_ CTL.
-3.  Prima della chiusura dell'applicazione, chiamare **StopTrace** per chiudere la sessione di traccia.
+1.  Chiamare **StartTrace per** avviare una nuova sessione di traccia.
+2.  Chiamare **EnableTrace per** abilitare la traccia. Il GUID del provider DirectShow guid \_ DSHOW \_ CTL.
+3.  Prima che l'applicazione venga chiusa, chiamare **StopTrace** per chiudere la sessione di traccia.
 
 **Elaborare gli eventi**
 
 Per elaborare gli eventi, seguire questa procedura:
 
-1.  Chiamare **OpenTrace** per aprire la traccia per l'elaborazione.
+1.  Chiamare **OpenTrace per** aprire la traccia per l'elaborazione.
 2.  Chiamare **ProcessTrace** per elaborare gli eventi.
-3.  Nel callback **ProcessTrace** usare il GUID dell'evento per trovare il tipo di evento. Il GUID dell'evento indica la struttura utilizzata per i dati dell'evento. Vedere [GUID dell'evento di traccia](trace-guids.md).
-4.  Chiamare **CloseTrace** per chiudere l'handle di traccia.
+3.  Nel callback **di ProcessTrace** usare il GUID dell'evento per trovare il tipo di evento. Il GUID dell'evento indica la struttura utilizzata per i dati dell'evento. Vedere [GUID degli eventi di traccia](trace-guids.md).
+4.  Chiamare **CloseTrace per** chiudere l'handle di traccia.
 
 **Codice di esempio**
 
-Nel codice seguente viene illustrata una classe helper che consente la traccia. In questo codice viene illustrato come scrivere eventi in un file di log, che può essere elaborato al termine della sessione. È anche possibile elaborare gli eventi in tempo reale. Per ulteriori informazioni, vedere la documentazione ETW nella Windows SDK.
+Il codice seguente illustra una classe helper che abilita la traccia. Questo codice illustra come scrivere eventi in un file di log, che può essere elaborato al termine della sessione. È anche possibile elaborare gli eventi in tempo reale. Per altre informazioni, vedere la documentazione di ETW in Windows SDK.
 
 
 ```C++

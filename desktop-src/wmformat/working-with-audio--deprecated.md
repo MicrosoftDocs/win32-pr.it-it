@@ -1,6 +1,6 @@
 ---
 title: Uso dell'audio (Windows Media Format 11 SDK)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Uso dell'audio (Windows Media Format 11 SDK)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | Uso dell'audio (Windows Media Format 11 SDK)
 ms.assetid: 3899aad3-0a66-4fb0-8e01-7eeee1487686
 keywords:
 - Uso di Audio Windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118194913"
 ---
 # <a name="working-with-audio-windows-media-format-11-sdk"></a>Uso dell'audio (Windows Media Format 11 SDK)
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
  
 

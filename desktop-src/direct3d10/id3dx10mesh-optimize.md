@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DX10Mesh::Optimize: genera una nuova mesh con visi e vertici riordinati per ottimizzare le prestazioni del disegno.'
+description: 'Metodo ID3DX10Mesh::Optimize: genera una nuova mesh con visi e vertici riordinati per ottimizzare le prestazioni di disegno.'
 ms.assetid: c03e112a-7c9b-4082-9afe-42e1c20b5f4d
 title: Metodo ID3DX10Mesh::Optimize (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f530995a2388d3ec2627ac5ce128271ed085a779
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41bc7b4ac7fb263073a88cd998190b0fa6e044d528f9d3f4613c3284f28c0f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302576"
 ---
 # <a name="id3dx10meshoptimize-method"></a>Metodo ID3DX10Mesh::Optimize
 
-Genera una nuova mesh con visi e vertici riordinati per ottimizzare le prestazioni del disegno.
+Genera una nuova mesh con visi e vertici riordinati per ottimizzare le prestazioni di disegno.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT Optimize(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Specifica il tipo di ottimizzazione da eseguire. Questo parametro può essere impostato su una combinazione di uno o più flag di D3DXMESHOPT e D3DXMESH (ad eccezione di D3DXMESH \_ 32BIT, D3DXMESH \_ IB \_ WRITEONLY e D3DXMESH \_ WRITEONLY).
+Specifica il tipo di ottimizzazione da eseguire. Questo parametro può essere impostato su una combinazione di uno o più flag di D3DXMESHOPT e D3DXMESH (ad eccezione di D3DXMESH \_ a 32 BIT, D3DXMESH \_ IB WRITEONLY e \_ D3DXMESH \_ WRITEONLY).
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Specifica il tipo di ottimizzazione da eseguire. Questo parametro può essere im
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matrice di UINT, uno per viso, che identifica il viso della mesh originale che corrisponde a ogni viso nella mesh ottimizzata. Se il valore fornito per questo argomento è **NULL,** i dati di modifica del mapping dei visi non vengono restituiti.
+Matrice di UINT, uno per viso, che identifica la faccia mesh originale che corrisponde a ogni viso nella mesh ottimizzata. Se il valore fornito per questo argomento è **NULL,** i dati di modifica del mapping dei visi non vengono restituiti.
 
 </dd> <dt>
 

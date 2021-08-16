@@ -1,7 +1,7 @@
 ---
-description: Criteri dei metadati delle foto per la proprietà System.Comment.
+description: Criteri dei metadati della foto per la proprietà System.Comment.
 ms.assetid: 02a6ac18-ad69-4880-a267-8330d648c0d9
-title: Criteri metadati foto System.Comment
+title: Criteri dei metadati delle foto di System.Comment
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 45b3511e0a459a2b652b29828060be6f0a92a36639aef63d4fa087e54ec9d80b
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118205630"
 ---
-# <a name="systemcomment-photo-metadata-policy"></a>Criteri metadati foto System.Comment
+# <a name="systemcomment-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.Comment
 
-Criteri dei metadati delle foto per [la proprietà System.Comment.](../properties/props-system-comment.md)
+Criteri dei metadati della foto per [la proprietà System.Comment.](../properties/props-system-comment.md)
 
-### <a name="pkey"></a>Chiave PKEY
+### <a name="pkey"></a>PKEY
 
 Commento \_ PKEY
 
@@ -47,7 +47,7 @@ I valori di schemi diversi vengono riconciliati.
 
 | JSON | Percorso                                | Formato disco    |
 |-------|-------------------------------------|----------------|
-| 1     | /app1/ifd/{ushort=40092}            | byte \_ Unicode |
+| 1     | /app1/ifd/{ushort=40092}            | byte \_ unicode |
 | 2     | /app1/ifd/{ushort=37510}            | unicode        |
 | 3     | /xmp/ <xmpalt> exif:UserComment | unicode        |
 
@@ -61,13 +61,13 @@ I valori di schemi diversi vengono riconciliati.
 
 | JSON | Percorso                     | Formato disco    |
 |-------|--------------------------|----------------|
-| 1     | /app1/ifd/{ushort=40092} | byte \_ Unicode |
+| 1     | /app1/ifd/{ushort=40092} | byte \_ unicode |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
@@ -89,7 +89,7 @@ I valori di schemi diversi vengono riconciliati.
 
 | JSON | Percorso                                    | Formato disco    |
 |-------|-----------------------------------------|----------------|
-| 1     | /ifd/{ushort=40092}                     | byte \_ Unicode |
+| 1     | /ifd/{ushort=40092}                     | byte \_ unicode |
 | 2     | /ifd/{ushort=37510}                     | unicode        |
 | 3     | /ifd/xmp/ <xmpalt> exif:UserComment | unicode        |
 
@@ -103,13 +103,13 @@ I valori di schemi diversi vengono riconciliati.
 
 | JSON | Percorso                | Formato disco    |
 |-------|---------------------|----------------|
-| 1     | /ifd/{ushort=40092} | byte \_ Unicode |
+| 1     | /ifd/{ushort=40092} | byte \_ unicode |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 

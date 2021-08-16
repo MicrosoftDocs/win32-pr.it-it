@@ -54,7 +54,7 @@ Restituisce il numero di minuti dall'ultima attività dell'utente.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Questa funzione non viene esportata in base al nome. Specificare il numero ordinale 8 quando si **chiama GetProcAddress**.
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Questa funzione non viene esportata in base al nome. specificare l'ordinale 8 quando si **chiama GetProcAddress**.
 
 ## <a name="requirements"></a>Requisiti
 

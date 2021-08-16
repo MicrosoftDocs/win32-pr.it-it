@@ -3,7 +3,7 @@ title: Tipo complesso StringTableType
 description: Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto. | Tipo complesso StringTableType
 ms.assetid: 47a59ff7-aaf6-4200-805b-0a8b5f57f101
 keywords:
-- Log eventi di tipo complesso StringTableType
+- EventLog di tipo complesso StringTableType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a9964c51524f7401afdfdd8a2da10cf43326bcae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f5d52f19ca01a926c82fcc1e13cc7191866722ba5e0e6eef81e916e244744783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342985"
 ---
 # <a name="stringtabletype-complex-type"></a>Tipo complesso StringTableType
 
@@ -72,7 +72,7 @@ Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento 
 
 | Nome       | Tipo   | Descrizione                                                                                                              |
 |------------|--------|--------------------------------------------------------------------------------------------------------------------------|
-| id         | string | Identificatore che identifica in modo univoco la stringa nella tabella di stringhe. Ad esempio, "Printer. Connection".<br/> |
+| id         | string | Identificatore che identifica in modo univoco la stringa all'interno della tabella di stringhe. Ad esempio, "Printer.Connection".<br/> |
 | stringType | string | Non usato.<br/>                                                                                                     |
 | Valore      | string | Stringa localizzata.<br/>                                                                                         |
 
@@ -80,7 +80,7 @@ Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento 
 
 ## <a name="remarks"></a>Commenti
 
-È possibile fare riferimento alle stringhe da qualsiasi tipo di manifesto che contiene l'attributo del messaggio. Per fare riferimento a una stringa con un stringType di "String" e un ID "Printer. Connection", usare $ (String. Printer. Connection) come valore dell'attributo Message.
+È possibile fare riferimento alle stringhe da qualsiasi tipo di manifesto che contiene l'attributo del messaggio. Per fare riferimento a una stringa con stringType "string" e l'ID "Printer.Connection", usare $(string. Printer.Connection) come valore dell'attributo del messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

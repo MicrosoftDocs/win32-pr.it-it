@@ -29,7 +29,7 @@ ms.locfileid: "118336784"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una  stringa di lettura/scrittura contenente qualsiasi valore di colore Internet Explorer Microsoft. Il valore predefinito è "graytext".
+Questo attributo è una stringa di **lettura/scrittura contenente** qualsiasi valore di colore Internet Explorer Microsoft. Il valore predefinito è "graytext".
 
 ## <a name="requirements"></a>Requisiti
 

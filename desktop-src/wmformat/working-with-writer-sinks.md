@@ -4,7 +4,7 @@ description: Uso dei sink del writer
 ms.assetid: 1ad28684-47d2-4ddb-bf18-22310f0392a0
 keywords:
 - Advanced Systems Format (ASF), sink writer
-- ASF (Advanced Systems Format),sink writer
+- ASF (Advanced Systems Format), sink writer
 - Advanced Systems Format (ASF), sink
 - ASF (Advanced Systems Format), sink
 - sink, sink writer
@@ -22,11 +22,11 @@ ms.locfileid: "118194868"
 
 L'oggetto writer dell'SDK Windows Media Format elabora i dati multimediali di input in un flusso di bit. Tuttavia, l'oggetto writer non recapita il flusso di bit alla destinazione finale (a un file o a un percorso di rete). Per scrivere il contenuto asf in un formato utilizzabile, è necessario usare i sink del writer.
 
-L'oggetto writer supporta tre tipi di sink: sink di file, sink di rete e sink push. Un sink di file scrive il contenuto di ASF in un file ASF su disco. Un sink di rete trasmette il contenuto asf da un indirizzo di rete. Un sink push recapita i dati a un server che esegue Servizi Windows Media in modo che il server possa rendere disponibile il contenuto ai destinatari. È anche possibile creare sink personalizzati per distribuire i dati ASF nel modo richiesto dall'applicazione. Per informazioni sui sink di rete e i sink push, vedere [Invio di dati ASF in una rete.](sending-asf-data-over-a-network.md) Nella parte restante di questa sezione vengono illustrati i sink del writer.
+L'oggetto writer supporta tre tipi di sink: sink di file, sink di rete e sink push. Un sink di file scrive il contenuto asf in un file ASF su disco. Un sink di rete trasmette il contenuto asf da un indirizzo di rete. Un sink push recapita i dati a un server che esegue Servizi Windows Media in modo che il server possa rendere disponibile il contenuto ai destinatari. È anche possibile creare sink personalizzati per recapitare i dati ASF in qualsiasi modo richiesto dall'applicazione. Per informazioni sui sink di rete e push, vedere [Invio di dati ASF in rete](sending-asf-data-over-a-network.md). Nella parte restante di questa sezione vengono illustrati i sink del writer.
 
-È possibile configurare uno o più sink per ogni istanza del writer in uso. Ogni sink gestisce una sola destinazione. Ad esempio, se si desidera scrivere tre file contemporaneamente, è necessario creare e configurare un sink di file separato per ognuno.
+È possibile configurare uno o più sink per ogni istanza del writer in uso. Ogni sink gestisce solo una singola destinazione. Ad esempio, se si vogliono scrivere tre file contemporaneamente, è necessario creare e configurare un sink di file separato per ognuno.
 
-Nelle sezioni seguenti viene descritto l'utilizzo dei sink del writer.
+Le sezioni seguenti descrivono l'uso dei sink del writer.
 
 
 
@@ -36,7 +36,7 @@ Nelle sezioni seguenti viene descritto l'utilizzo dei sink del writer.
 | [Enumerazione di sink](enumerating-sinks.md)                                   | Viene descritto come enumerare i sink aggiunti al writer.         |
 | [Recupero di messaggi di errore da un sink](getting-error-messages-from-a-sink.md) | Viene descritto come configurare i sink per recapitare messaggi di stato all'applicazione. |
 | [Uso di file sink](using-file-sinks.md)                                     | Viene descritto come usare un sink di file writer per creare un file ASF su disco.           |
-| [Uso di sink personalizzati](using-custom-sinks.md)                                 | Viene descritto come creare e usare sink personalizzati per distribuire dati ASF.       |
+| [Uso di sink personalizzati](using-custom-sinks.md)                                 | Viene descritto come creare e usare sink personalizzati per recapitare dati ASF.       |
 
 
 

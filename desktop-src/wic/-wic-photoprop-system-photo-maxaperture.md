@@ -1,7 +1,7 @@
 ---
-description: Criteri dei metadati delle foto per la proprietà System.Photo.MaxAperture.
+description: Criteri dei metadati della foto per la proprietà System.Photo.MaxAperture.
 ms.assetid: 9d12d265-0b0a-44d9-bbf6-ca7d748382ee
-title: Criteri metadati foto System.Photo.MaxAperture
+title: Criteri dei metadati delle foto System.Photo.MaxAperture
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8d692c12b9a5df584331a9a5ff4a82707d8549ab7891e1d9162eef318a77fe4d
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118204713"
 ---
-# <a name="systemphotomaxaperture-photo-metadata-policy"></a>Criteri metadati foto System.Photo.MaxAperture
+# <a name="systemphotomaxaperture-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.MaxAperture
 
-Criteri dei metadati delle foto [per la proprietà System.Photo.MaxAperture.](../properties/props-system-photo-maxaperture.md)
+Criteri dei metadati della foto [per la proprietà System.Photo.MaxAperture.](../properties/props-system-photo-maxaperture.md)
 
-### <a name="pkey"></a>Chiave PKEY
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ MaxAperture
 
@@ -67,7 +67,7 @@ Questo valore viene generato da System.Photo.MaxApertureNumerator e System.Photo
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
@@ -108,7 +108,7 @@ Questo valore viene generato da System.Photo.MaxApertureNumerator e System.Photo
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 

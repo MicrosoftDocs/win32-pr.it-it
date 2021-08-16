@@ -1,5 +1,5 @@
 ---
-description: Quando si usa un Windows intervana WIA (Windows Image Acquisition) in più thread all'interno di un singolo processo, un'applicazione deve fornire il marshalling per tale interfaccia.
+description: Quando si usa un Windows di acquisizione di immagini in più thread all'interno di un singolo processo, un'applicazione deve fornire il marshalling per tale interfaccia.
 ms.assetid: b125b36e-1428-4aa6-b367-eac78291c88e
 title: Uso di più thread in un'applicazione WIA
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118208007"
 ---
 # <a name="using-multiple-threads-in-a-wia-application"></a>Uso di più thread in un'applicazione WIA
 
-Quando si usa un Windows intervana WIA (Windows Image Acquisition) in più thread all'interno di un singolo processo, un'applicazione deve fornire il marshalling per tale interfaccia. Se un thread crea un puntatore a interfaccia, non è possibile usare tale puntatore in un thread diverso senza marshalling.
+Quando si usa un Windows di acquisizione di immagini in più thread all'interno di un singolo processo, un'applicazione deve fornire il marshalling per tale interfaccia. Se un thread crea un puntatore a interfaccia, non è possibile usare tale puntatore in un thread diverso senza marshalling.
 
 Ad esempio, se un thread in un'applicazione ottiene un puntatore all'interfaccia [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) o [**IWiaItem2,**](-wia-iwiaitem2.md) un thread separato non può usare tale puntatore di interfaccia senza marshalling.
 

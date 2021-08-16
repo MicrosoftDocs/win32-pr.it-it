@@ -21,7 +21,7 @@ ms.locfileid: "118197072"
 ---
 # <a name="to-edit-metadata-with-the-writer"></a>Per modificare i metadati con il writer
 
-È possibile accedere, direttamente dal writer, ai metadati che verranno all'interno dell'intestazione del file. Chiamare il **metodo QueryInterface** di qualsiasi interfaccia nell'oggetto writer per ottenere un puntatore all'interfaccia [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) Dopo aver creato un puntatore all'interfaccia appropriata, è possibile modificare i metadati come si farebbe se il file fosse stato caricato nell'oggetto dell'editor di metadati. Per altre informazioni sulla modifica dei metadati, vedere [Uso dei metadati](working-with-metadata.md).
+È possibile accedere, direttamente dal writer, ai metadati che verranno nell'intestazione del file. Chiamare il **metodo QueryInterface** di qualsiasi interfaccia nell'oggetto writer per ottenere un puntatore all'interfaccia [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) Dopo aver creato un puntatore all'interfaccia appropriata, è possibile modificare i metadati esattamente come si farebbe se il file fosse stato caricato nell'oggetto dell'editor di metadati. Per altre informazioni sulla modifica dei metadati, vedere [Uso dei metadati](working-with-metadata.md).
 
 È necessario apportare tutte le modifiche ai metadati prima di [**chiamare IWMWriter::BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).
 

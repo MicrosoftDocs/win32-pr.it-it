@@ -1,7 +1,7 @@
 ---
-description: Il metodo NotifyEndOfStream Invia un \_ evento EC complete al gestore del grafico dei filtri.
+description: Il metodo NotifyEndOfStream invia un evento EC \_ COMPLETE al gestore del grafo del filtro.
 ms.assetid: 9eec5b65-654d-4b2e-be39-93225a7674a5
-title: Metodo CBaseRenderer. NotifyEndOfStream (Renbase. h)
+title: Metodo CBaseRenderer.NotifyEndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2f1187705bfa678252237bd95d9a4cb21a0f97d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05504b2ca1520320777b93c1c066e91edd5135798e4710c6514dbe858737760b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402812"
 ---
-# <a name="cbaserenderernotifyendofstream-method"></a>CBaseRenderer. NotifyEndOfStream, metodo
+# <a name="cbaserenderernotifyendofstream-method"></a>Metodo CBaseRenderer.NotifyEndOfStream
 
-Il `NotifyEndOfStream` metodo invia un evento [**EC \_ complete**](ec-complete.md) al gestore del grafico dei filtri.
+Il `NotifyEndOfStream` metodo invia un evento EC [**\_ COMPLETE**](ec-complete.md) al gestore del grafico dei filtri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Questo metodo non restituisce valori.
 [**Classe CBaseRenderer**](cbaserenderer.md)
 </dt> <dt>
 
-[**CBaseRenderer:: EndOfStream**](cbaserenderer-endofstream.md)
+[**CBaseRenderer::EndOfStream**](cbaserenderer-endofstream.md)
 </dt> <dt>
 
 [**CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md)

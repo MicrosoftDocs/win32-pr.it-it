@@ -90,7 +90,7 @@ Flag di filtro impostati.
 *hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errore che specifica dove si è verificato l'errore (se presente) nel BLOB originale.
+Handle a un BLOB di errore che specifica dove nel BLOB originale si è verificato l'errore (se presente).
 
 </dd> </dl>
 

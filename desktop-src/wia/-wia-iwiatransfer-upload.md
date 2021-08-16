@@ -65,7 +65,7 @@ Specifica un puntatore ai [dati IStream.](/windows/win32/api/objidl/nn-objidl-is
 
 Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Specifica un puntatore all'interfaccia [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) del chiamante.
+Specifica un puntatore all'interfaccia [**IWiaTransferCallback del**](-wia-iwiatransfercallback.md) chiamante.
 
 </dd> </dl>
 
@@ -81,8 +81,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
 | Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |

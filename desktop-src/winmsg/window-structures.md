@@ -1,7 +1,7 @@
 ---
-description: Strutture delle finestre
+description: Strutture della finestra
 ms.assetid: 8254174d-d19f-4177-91b0-dc87aa1e40e0
-title: Strutture delle finestre
+title: Strutture della finestra
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 511014a51e7dfd0fc569c0a583c7fa6e79954da4fc234afe5ffc6ec20f23ede1
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118200582"
 ---
-# <a name="window-structures"></a>Strutture delle finestre
+# <a name="window-structures"></a>Strutture della finestra
 
 -   [**ALTTABINFO**](/windows/win32/api/winuser/ns-winuser-alttabinfo)
 -   [**CHANGEFILTERSTRUCT**](/windows/win32/api/winuser/ns-winuser-changefilterstruct)

@@ -45,7 +45,7 @@ ms.locfileid: "118200783"
 
 Funzione di callback definita dall'applicazione o definita dalla libreria usata con la [funzione SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 Il sistema chiama questa funzione dopo che si verifica un evento di input in una finestra di dialogo, una finestra di messaggio, un menu o una barra di scorrimento, ma prima dell'elaborazione del messaggio generato dall'evento di input.
-La procedura hook consente di monitorare i messaggi per una finestra di dialogo, una finestra di messaggio, un menu o una barra di scorrimento creata da una determinata applicazione o da tutte le applicazioni.
+La procedura hook consente di monitorare i messaggi per una finestra di dialogo, una finestra di messaggio, un menu o una barra di scorrimento creata da una particolare applicazione o da tutte le applicazioni.
 
 Il **tipo HOOKPROC** definisce un puntatore a questa funzione di callback.
 **MessageProc** è un segnaposto per il nome di funzione definito dall'applicazione o definito dalla libreria.
@@ -100,7 +100,7 @@ Se la routine hook ha elaborato il messaggio, può restituire un valore diverso 
 
 Un'applicazione installa la procedura hook specificando il tipo **hook** WH_MSGFILTER e un puntatore alla routine hook in una chiamata alla **funzione SetWindowsHookEx.**
 
-Se un'applicazione che usa DDEML ed esegue transazioni sincrone deve elaborare i messaggi  prima di essere inviata, deve usare l'hook WH_MSGFILTER.
+Se un'applicazione che usa DDEML ed esegue transazioni sincrone deve elaborare i messaggi  prima che siano inviati, deve usare l'hook WH_MSGFILTER.
 
 ## <a name="see-also"></a>Vedi anche
 

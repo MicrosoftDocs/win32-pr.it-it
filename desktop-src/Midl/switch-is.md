@@ -88,7 +88,7 @@ Specifica un tipo [di base,](midl-base-types.md) [**uno struct,**](struct.md) [*
 
 </dd> <dt>
 
-*dichiaratore di puntatore* 
+*pointer-declarator* 
 </dt> <dd>
 
 Specifica zero o più dichiaratori di puntatore. Un dichiaratore di puntatore è lo stesso del dichiaratore di puntatore usato in C; viene costruito dal \* designatore, dai modificatori come **far** e dal qualificatore [**const**](const.md).
@@ -105,7 +105,7 @@ Specifica il nome della procedura remota.
 *param-attr-list* 
 </dt> <dd>
 
-Specifica zero o più attributi appropriati per il tipo di parametro specificato. Gli attributi dei parametri possono assumere gli attributi direzionali **\[ \] in** e **\[ \] out**, **\[ \]** **\[ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** gli attributi del campo sono , **\[ \_ \]** last è , length è , max è , size è e switch type ; l'attributo **\[ puntatore ref \]**, unique o **\[ ptr \]** e l'handle **\[ \_ \]** di contesto degli attributi di utilizzo e string . L'attributo **\[ di utilizzo ignore \]** non può essere usato come attributo di parametro. Separare più attributi con virgole.
+Specifica zero o più attributi appropriati per il tipo di parametro specificato. Gli attributi dei parametri possono assumere gli attributi direzionali **\[ \] in** e **\[ \] out**, **\[ \]** **\[ \]** **\[ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** gli attributi del campo sono , **\[ \_ \]** last è , length è , max è , size è e switch type ; l'attributo puntatore ref , unique o **\[ ptr \]** e l'handle **\[ \_ \]** di contesto degli attributi di utilizzo e string . L'attributo **\[ di utilizzo ignore \]** non può essere usato come attributo di parametro. Separare più attributi con virgole.
 
 </dd> <dt>
 

@@ -3,7 +3,7 @@ title: Attributi ACF di ottimizzazione stub
 description: Questi attributi consentono di ottimizzare le dimensioni e la velocità del codice stub.
 ms.assetid: 8c98b9ff-d91c-4a17-90c9-298f588e46c5
 keywords:
-- ACF MIDL , attributi, ottimizzazione stub
+- ACF MIDL, attributi, ottimizzazione stub
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6f8386eb6a6077a994b6f9800ff237a9966e97bff5eb0d6d865ea313634790f5
@@ -21,8 +21,8 @@ Questi attributi consentono di ottimizzare le dimensioni e la velocità del codi
 
 | Attributo                                    | Utilizzo                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**code**](code.md)[**nocode**](nocode.md) | Usare il [**codice**](code.md) e [**gli attributi nocode**](nocode.md) insieme per evitare di generare codice stub per le funzioni inutilizzate. Applicare **l'attributo nocode** all'intestazione dell'interfaccia e applicare l'attributo **di codice** alle procedure che verranno implementate dall'applicazione client. Il codice stub del client verrà generato solo per le procedure selezionate.                                                                |
-| [**Ottimizzare**](optimize.md)                 | Consente di ottimizzare il livello di ottimizzazione eseguito dal compilatore MIDL durante la generazione di codice stub, specificando che i dati devono essere sottoposti a marshalling tramite il metodo in modalità mista o interpretato. È possibile applicare [**l'attributo optimize**](optimize.md) a un'interfaccia o a funzioni selezionate all'interno dell'interfaccia. In entrambi i casi, l'uso di eseguirà l'override delle ottimizzazioni della riga di comando ed eventuali impostazioni predefinite preesistnti. |
+| [**code**](code.md)[**nocode**](nocode.md) | Usare il [**codice**](code.md) e [**gli attributi nocode**](nocode.md) insieme per evitare di generare codice stub per le funzioni inutilizzate. Applicare **l'attributo nocode** all'intestazione dell'interfaccia e applicare l'attributo **code** alle procedure che verranno implementate dall'applicazione client. Il codice stub client verrà generato solo per le procedure selezionate.                                                                |
+| [**Ottimizzare**](optimize.md)                 | Consente di ottimizzare il livello di ottimizzazione eseguito dal compilatore MIDL durante la generazione di codice stub, specificando che i dati devono essere sottoposti a marshalling tramite il metodo in modalità mista o interpretato. È possibile applicare [**l'attributo optimize**](optimize.md) a un'interfaccia o a funzioni selezionate all'interno dell'interfaccia. In entrambi i casi, l'uso eseguirà l'override delle ottimizzazioni della riga di comando e di eventuali impostazioni predefinite preesiste. |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Vengono illustrate le classificazioni dei file.
+description: Illustra le classificazioni dei file.
 ms.assetid: 0cd6b665-faf8-4fc5-9625-7d5edbdf7e2f
-title: System.ParentRatingReason
+title: System.ParentalRatingReason
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ea92839916d553566ff5c6bcb3f1d31cb857a9f7b5ab88007514f97ddc67f16d
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118230361"
 ---
-# <a name="systemparentalratingreason"></a>System.ParentRatingReason
+# <a name="systemparentalratingreason"></a>System.ParentalRatingReason
 
-Vengono illustrate le classificazioni dei file. Ad esempio, "Emiso, Lingua DiFfie" per una classificazione di R nel sistema di classificazione MPAA.
+Illustra le classificazioni dei file. Ad esempio, "Violenza, Linguaggio volgare" per una classificazione di R nel sistema di classificazione MPAA.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

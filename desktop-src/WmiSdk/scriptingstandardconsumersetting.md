@@ -1,5 +1,5 @@
 ---
-description: La classe Singleton ScriptingStandardConsumerSetting fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard ActiveScriptEventConsumer.
+description: La classe singleton ScriptingStandardConsumerSetting fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard ActiveScriptEventConsumer.
 ms.assetid: d217e058-3529-4173-b896-ebff3d7b05c6
 ms.tgt_platform: multiple
 title: Classe ScriptingStandardConsumerSetting
@@ -28,7 +28,7 @@ ms.locfileid: "118316205"
 ---
 # <a name="scriptingstandardconsumersetting-class"></a>Classe ScriptingStandardConsumerSetting
 
-La classe **Singleton ScriptingStandardConsumerSetting** fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard [**ActiveScriptEventConsumer.**](activescripteventconsumer.md) **Un'istanza di ActiveScriptEventConsumer** usa **le proprietà MaximumScripts** **e Timeout.** Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md)
+La classe **singleton ScriptingStandardConsumerSetting** fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard [**ActiveScriptEventConsumer.**](activescripteventconsumer.md) **Un'istanza di ActiveScriptEventConsumer** usa **le proprietà MaximumScripts** **e Timeout.** Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
@@ -48,20 +48,20 @@ class ScriptingStandardConsumerSetting : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La **classe ScriptingStandardConsumerSetting** include questi tipi di membri:
+La **classe ScriptingStandardConsumerSetting** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe ScriptingStandardConsumerSetting** dispone di queste proprietà.
+La **classe ScriptingStandardConsumerSetting** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -77,7 +77,7 @@ Breve descrizione di un oggetto una stringa di una riga. Contiene la stringa **S
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -93,17 +93,17 @@ Descrizione testuale di un oggetto.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Numero massimo di script eseguiti prima che un consumer inizi una nuova istanza. Per cancellare le perdite di memoria dagli script, arrestare regolarmente il consumer. Il valore predefinito è 300.
+Numero massimo di script eseguiti prima che un consumer avvia una nuova istanza. Per eliminare le perdite di memoria dagli script, arrestare regolarmente il consumer. Il valore predefinito è 300.
 
 </dd> <dt>
 
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -122,7 +122,7 @@ Identificatore per l'oggetto impostazione.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: [**unità**](standard-qualifiers.md) ("Minuti")
@@ -134,7 +134,7 @@ Numero massimo di minuti prima che un consumer inizi una nuova istanza. Se 0 (ze
 
 ## <a name="remarks"></a>Commenti
 
-La singola istanza della classe **ScriptingStandardConsumerSetting** si trova nello spazio dei \\ nomi radice cimv2.
+La singola istanza della **classe ScriptingStandardConsumerSetting** si trova nello spazio \\ dei nomi cimv2 radice.
 
 ## <a name="requirements"></a>Requisiti
 

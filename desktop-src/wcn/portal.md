@@ -15,7 +15,7 @@ ms.locfileid: "118211088"
 
 ## <a name="purpose"></a>Scopo
 
-Windows Connect Now (WCN) consente ai dispositivi mobili e incorporati, ai punti di accesso 802.11 e ai computer di connettersi e scambiare le impostazioni in modo sicuro tra loro. WCN è progettato per l'utente della casa o della piccola azienda, fornendo un compromesso ragionevole tra facilità d'uso e sicurezza affidabile.
+Windows Connect Now (WCN) consente ai dispositivi mobili e incorporati, ai punti di accesso 802.11 e ai computer di connettersi e scambiare le impostazioni in modo sicuro. WCN è progettato per l'utente della casa o della piccola azienda, fornendo un compromesso ragionevole tra facilità d'uso e sicurezza affidabile.
 
 ## <a name="developer-audience"></a>Sviluppatori
 

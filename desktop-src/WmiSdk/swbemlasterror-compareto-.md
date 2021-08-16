@@ -27,7 +27,7 @@ ms.locfileid: "118314595"
 
 Il **metodo \_ CompareTo** dell'oggetto [**SWbemLastError**](swbemlasterror.md) confronta due [**oggetti SWbemObject.**](swbemobject.md) Questo confronto è soggetto a determinati vincoli in base ai valori specificati nel *parametro iFlags.*
 
-Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,18 +55,18 @@ Obbligatorio. Oggetto [**della classe SWbemObject.**](swbemobject.md) Questo par
 *iFlags* \[ in, facoltativo\]
 </dt> <dd>
 
-Intero che specifica flag aggiuntivi per l'operazione. Questo parametro specifica le caratteristiche dell'oggetto da considerare quando vengono evasi confronti tra oggetti. È possibile usare **wbemComparisonFlagIncludeAll** per prendere in considerazione tutte le funzionalità (impostazione predefinita) o qualsiasi combinazione dei valori seguenti.
+Intero che specifica flag aggiuntivi per l'operazione. Questo parametro specifica le caratteristiche dell'oggetto da considerare quando vengono effettuati confronti tra oggetti. È possibile usare **wbemComparisonFlagIncludeAll** per prendere in considerazione tutte le funzionalità (impostazione predefinita) o qualsiasi combinazione dei valori seguenti.
 
 <dt>
 
 <span id="wbemComparisonFlagIncludeAll"></span><span id="wbemcomparisonflagincludeall"></span><span id="WBEMCOMPARISONFLAGINCLUDEALL"></span>
 
-<span id="wbemComparisonFlagIncludeAll"></span><span id="wbemcomparisonflagincludeall"></span><span id="WBEMCOMPARISONFLAGINCLUDEALL"></span>wbemComparisonFlagIncludeAll*** (0 (0x0))
+<span id="wbemComparisonFlagIncludeAll"></span><span id="wbemcomparisonflagincludeall"></span><span id="WBEMCOMPARISONFLAGINCLUDEALL"></span>wbemComparisonFlagIncludeAll**** (0 (0x0))
 
 
 </dt> <dd>
 
-Fa in modo che tutte le proprietà, i qualificatori e i tipi di gusto siano confrontati.
+Determina il confronto di tutte le proprietà, i qualificatori e i tipi.
 
 </dd> <dt>
 
@@ -77,29 +77,29 @@ Fa in modo che tutte le proprietà, i qualificatori e i tipi di gusto siano conf
 
 </dt> <dd>
 
-Fa in modo che tutti i qualificatori **(inclusi Key** **e Dynamic)** siano ignorati nel confronto.
+Fa sì che tutti i qualificatori **(inclusi Key** **e Dynamic)** siano ignorati nel confronto.
 
 </dd> <dt>
 
 <span id="wbemComparisonFlagIgnoreObjectSource"></span><span id="wbemcomparisonflagignoreobjectsource"></span><span id="WBEMCOMPARISONFLAGIGNOREOBJECTSOURCE"></span>
 
-<span id="wbemComparisonFlagIgnoreObjectSource"></span><span id="wbemcomparisonflagignoreobjectsource"></span><span id="WBEMCOMPARISONFLAGIGNOREOBJECTSOURCE"></span>wbemComparisonFlagIgnoreObjectSource*** (2 (0x2))
+<span id="wbemComparisonFlagIgnoreObjectSource"></span><span id="wbemcomparisonflagignoreobjectsource"></span><span id="WBEMCOMPARISONFLAGIGNOREOBJECTSOURCE"></span>wbemComparisonFlagIgnoreObjectSource**** (2 (0x2))
 
 
 </dt> <dd>
 
-Fa sì che l'origine degli oggetti, ad esempio il server e lo spazio dei nomi da cui provenivano, sia ignorata rispetto ad altri oggetti.
+Fa sì che l'origine degli oggetti, in modo che il server e lo spazio dei nomi da cui provenivano, siano ignorati rispetto ad altri oggetti.
 
 </dd> <dt>
 
 <span id="wbemComparisonFlagIgnoreDefaultValues"></span><span id="wbemcomparisonflagignoredefaultvalues"></span><span id="WBEMCOMPARISONFLAGIGNOREDEFAULTVALUES"></span>
 
-<span id="wbemComparisonFlagIgnoreDefaultValues"></span><span id="wbemcomparisonflagignoredefaultvalues"></span><span id="WBEMCOMPARISONFLAGIGNOREDEFAULTVALUES"></span>wbemComparisonFlagIgnoreDefaultValues*** (4 (0x4))
+<span id="wbemComparisonFlagIgnoreDefaultValues"></span><span id="wbemcomparisonflagignoredefaultvalues"></span><span id="WBEMCOMPARISONFLAGIGNOREDEFAULTVALUES"></span>wbemComparisonFlagIgnoreDefaultValues**** (4 (0x4))
 
 
 </dt> <dd>
 
-Fa in modo che i valori predefiniti delle proprietà siano ignorati. Questo flag è significativo solo quando si confrontano le classi.
+Fa sì che i valori predefiniti delle proprietà siano ignorati. Questo flag è significativo solo quando si confrontano le classi.
 
 </dd> <dt>
 
@@ -110,13 +110,13 @@ Fa in modo che i valori predefiniti delle proprietà siano ignorati. Questo flag
 
 </dt> <dd>
 
-Indica al sistema di presupporre che gli oggetti confrontati siano istanze della stessa classe. Di conseguenza, questo flag confronta solo le informazioni correlate all'istanza. Utilizzare questo flag per ottimizzare le prestazioni. Se gli oggetti non appartengono alla stessa classe, i risultati sono indefiniti.
+Indica al sistema di presupporre che gli oggetti confrontati siano istanze della stessa classe. Di conseguenza, questo flag confronta solo le informazioni relative all'istanza. Utilizzare questo flag per ottimizzare le prestazioni. Se gli oggetti non appartengono alla stessa classe, i risultati sono indefiniti.
 
 </dd> <dt>
 
 <span id="wbemComparisonFlagIgnoreCase"></span><span id="wbemcomparisonflagignorecase"></span><span id="WBEMCOMPARISONFLAGIGNORECASE"></span>
 
-<span id="wbemComparisonFlagIgnoreCase"></span><span id="wbemcomparisonflagignorecase"></span><span id="WBEMCOMPARISONFLAGIGNORECASE"></span>wbemComparisonFlagIgnoreCase*** (16 (0x10))
+<span id="wbemComparisonFlagIgnoreCase"></span><span id="wbemcomparisonflagignorecase"></span><span id="WBEMCOMPARISONFLAGIGNORECASE"></span>wbemComparisonFlagIgnoreCase**** (16 (0x10))
 
 
 </dt> <dd>
@@ -127,18 +127,18 @@ Fa in modo che i valori stringa siano confrontati senza distinzione tra maiuscol
 
 <span id="wbemComparisonFlagIgnoreFlavor"></span><span id="wbemcomparisonflagignoreflavor"></span><span id="WBEMCOMPARISONFLAGIGNOREFLAVOR"></span>
 
-<span id="wbemComparisonFlagIgnoreFlavor"></span><span id="wbemcomparisonflagignoreflavor"></span><span id="WBEMCOMPARISONFLAGIGNOREFLAVOR"></span>wbemComparisonFlagIgnoreFlavor*** (32 (0x20))
+<span id="wbemComparisonFlagIgnoreFlavor"></span><span id="wbemcomparisonflagignoreflavor"></span><span id="WBEMCOMPARISONFLAGIGNOREFLAVOR"></span>wbemComparisonFlagIgnoreFlavor**** (32 (0x20))
 
 
 </dt> <dd>
 
-Fa in modo che i qualificatori siano ignorati. Impostando questo flag, anche se vengono presi in considerazione i valori del qualificatore, vengono tuttavia ignorate le distinzioni tra le caratteristiche, quali le regole di propagazione e le limitazioni di override.
+Fa sì che i tipi di qualificatore siano ignorati. Impostando questo flag, anche se vengono presi in considerazione i valori del qualificatore, vengono tuttavia ignorate le distinzioni tra le caratteristiche, quali le regole di propagazione e le limitazioni di override.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il **metodo \_ CompareTo** restituisce il valore booleano **TRUE** se gli oggetti corrispondono; in caso contrario, restituisce **FALSE.**
+Il **metodo \_ CompareTo** restituisce il valore booleano **TRUE se** gli oggetti corrispondono; in caso contrario, restituisce **FALSE.**
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -190,7 +190,7 @@ Memoria insufficiente per completare l'operazione.
 [**SWbemLastError**](swbemlasterror.md)
 </dt> <dt>
 
-[**SWbemObject**](swbemobject.md)
+[**Oggetto SWbem**](swbemobject.md)
 </dt> </dl>
 
  

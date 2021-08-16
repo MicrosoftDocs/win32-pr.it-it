@@ -1,7 +1,7 @@
 ---
-description: Indica l'energia dell'oggetto nel momento in cui è stata acquisita l'immagine, misurata in secondi di potenza a trazione. Calcolato da PKEY \_ Photo \_ FlashLuminyNumerator e PKEY \_ Photo \_ FlashDenominator.
+description: Indica l'energia stroboscopica al momento dell'acquisizione dell'immagine, misurata in secondi di potenza della cera. Calcolato da PKEY \_ Photo \_ FlashEnergyNumerator e PKEY \_ Photo \_ FlashLuminyDenominator.
 ms.assetid: afdd1bc6-87c3-4c47-9d29-43422fd699b3
-title: System.Photo.Flash Usb
+title: System.Photo.FlashEnergy
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 431d311725717d9da0b696b79567d12908f7c48f867bc0a105304b389e23de94
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118229966"
 ---
-# <a name="systemphotoflashenergy"></a>System.Photo.Flash Usb
+# <a name="systemphotoflashenergy"></a>System.Photo.FlashEnergy
 
-Indica l'energia dell'oggetto nel momento in cui è stata acquisita l'immagine, misurata in secondi di potenza a trazione. Calcolato da PKEY \_ Photo \_ FlashLuminyNumerator e PKEY \_ Photo \_ FlashDenominator.
+Indica l'energia stroboscopica al momento dell'acquisizione dell'immagine, misurata in secondi di potenza della cera. Calcolato da PKEY \_ Photo \_ FlashEnergyNumerator e PKEY \_ Photo \_ FlashLuminyDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -42,7 +42,7 @@ I valori PKEY sono definiti in Propkey.h.
 [Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -72,7 +72,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

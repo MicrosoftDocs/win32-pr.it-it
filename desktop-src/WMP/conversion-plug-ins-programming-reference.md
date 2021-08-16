@@ -19,14 +19,14 @@ ms.locfileid: "118341790"
 ---
 # <a name="conversion-plug-ins-programming-reference"></a>Informazioni di riferimento sulla programmazione dei plug-in di conversione
 
-Microsoft Windows Media Player Software Development Kit (SDK) supporta un'interfaccia per i plug-in di conversione che convertono un formato di file multimediale digitale in un altro. L'SDK specifica anche i requisiti per la registrazione dei formati di file per la conversione da parte di un plug-in specifico. Le sezioni seguenti illustrano in dettaglio questi elementi.
+Microsoft Windows Media Player Software Development Kit (SDK) supporta un'interfaccia per i plug-in di conversione che convertono un formato di file multimediale digitale in un altro. L'SDK specifica anche i requisiti per la registrazione dei formati di file per la conversione da parte di un particolare plug-in. Le sezioni seguenti illustrano in dettaglio questi elementi.
 
 
 
 | Sezione                                                                | Descrizione                                                                                                                                                                                           |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Registrazione dei plug-in di conversione](registering-conversion-plug-ins.md) | Viene descritto come registrare i formati di file multimediali digitali per la conversione.                                                                                                                                  |
-| [Interfaccia IWMPConvert](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpconvert)                               | Fornisce metodi per Windows Media Player plug-in di conversione per convertire i file multimediali digitali creati usando tecnologie non fornite da Microsoft, in Advanced Systems Format (ASF). |
+| [Interfaccia IWMPConvert](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpconvert)                               | Fornisce metodi che consentono Windows Media Player plug-in di conversione per convertire i file multimediali digitali creati usando tecnologie non fornite da Microsoft in Advanced Systems Format (ASF). |
 
 
 

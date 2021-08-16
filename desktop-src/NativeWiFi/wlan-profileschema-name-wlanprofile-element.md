@@ -1,7 +1,7 @@
 ---
 description: Contiene il nome di un profilo LAN wireless.
 ms.assetid: b8977183-7b5d-4c79-9065-ade85ed45716
-title: Elemento Name (WLANProfile)
+title: Elemento name (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 79174d1cb24fff1841b3022fa06e201794415ce5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a6d19c043f7cc2e42ca8221e98b05e4afe7628b143bd572465f00e1d3652275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984114"
 ---
-# <a name="name-wlanprofile-element"></a>Elemento Name (WLANProfile)
+# <a name="name-wlanprofile-element"></a>Elemento name (WLANProfile)
 
-L'elemento Name (WLANProfile) contiene il nome di un profilo LAN wireless.
+L'elemento name (WLANProfile) contiene il nome di un profilo LAN wireless.
 
 ``` syntax
 <xs:element name="name"
@@ -29,19 +29,19 @@ L'elemento Name (WLANProfile) contiene il nome di un profilo LAN wireless.
  />
 ```
 
-L'elemento **Name** viene definito dall'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+**L'elemento** name è definito dall'elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-I nomi fanno distinzione tra maiuscole e minuscole.
+Per i nomi viene fatto distinzione tra maiuscole e minuscole.
 
-Per Windows XP con Service Pack 3 (SP3) e l'API LAN wireless per Windows XP con Service Pack 2 (SP2), l'elemento Name viene ignorato quando il profilo viene salvato nell'archivio profili. Il nome del profilo deriva dall'SSID della rete. Per i profili di rete dell'infrastruttura, il nome del profilo è il SSID della rete. Per i profili di rete ad hoc, il nome del profilo è il SSID della rete ad hoc seguita da `-adhoc` . I caratteri di escape XML, ad esempio &, non vengono visualizzati. Evitare di utilizzare caratteri di escape XML nei nomi SSID per i profili distribuiti in Windows XP con SP3 o l'API LAN wireless per Windows XP con SP2.
+Per Windows XP con Service Pack 3 (SP3) e l'API LAN wireless per Windows XP con Service Pack 2 (SP2), l'elemento name viene ignorato quando il profilo viene salvato nell'archivio profili. Il nome del profilo deriva dall'SSID della rete. Per i profili di rete dell'infrastruttura, il nome del profilo è l'SSID della rete. Per i profili di rete ad hoc, il nome del profilo è l'SSID della rete ad hoc seguito da `-adhoc` . I caratteri di escape XML, ad &, non vengono visualizzati. Evitare di usare caratteri di escape XML nei nomi SSID per i profili distribuiti in Windows XP con SP3 o nell'API LAN wireless per Windows XP con SP2.
 
-Per qualsiasi profilo di rete destinato a essere utilizzato solo in Windows Vista o Windows Server 2008, il nome può essere qualsiasi stringa.
+Per qualsiasi profilo di rete destinato all'uso solo in Windows Vista o Windows Server 2008, il nome può essere qualsiasi stringa.
 
 ## <a name="examples"></a>Esempio
 
-Per visualizzare i profili di esempio che usano l'elemento **Name** , vedere esempi di profili [wireless](wireless-profile-samples.md).
+Per visualizzare i profili di esempio che usano **l'elemento name,** vedere [Wireless Profile Samples](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,8 +49,8 @@ Per visualizzare i profili di esempio che usano l'elemento **Name** , vedere ese
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                 |
 
 
@@ -65,7 +65,7 @@ Per visualizzare i profili di esempio che usano l'elemento **Name** , vedere ese
 [**WLANProfile**](wlan-profileschema-wlanprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**WLANProfile**](wlan-profileschema-wlanprofile-element.md)

@@ -1,7 +1,7 @@
 ---
 description: Criteri dei metadati delle foto per la proprietà System.GPS.AreaInformation.
 ms.assetid: d9ecb00b-1f97-4f53-909f-30231104d398
-title: Criteri dei metadati delle foto di System.GPS.AreaInformation
+title: Criteri dei metadati foto system.GPS.AreaInformation
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e4eee2cf4234902049241c833d1077814f5daf88187323c43bc1cb00f6f44aa6
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118205522"
 ---
-# <a name="systemgpsareainformation-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.AreaInformation
+# <a name="systemgpsareainformation-photo-metadata-policy"></a>Criteri dei metadati foto system.GPS.AreaInformation
 
 Criteri dei metadati delle foto per [la proprietà System.GPS.AreaInformation.](../properties/props-system-gps-areainformation.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ GPS \_ AreaInformation
 
@@ -67,7 +67,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 
@@ -108,7 +108,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 

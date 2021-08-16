@@ -1,5 +1,5 @@
 ---
-description: Un'applicazione invia il messaggio WM MDIREFRESHMENU a una finestra client MDI (Multiple Document Interface) per aggiornare il menu della finestra della \_ finestra cornice MDI.
+description: Un'applicazione invia il messaggio WM MDIREFRESHMENU a una finestra client dell'interfaccia a documenti multipli (MDI) per aggiornare il menu della finestra della \_ finestra cornice MDI.
 ms.assetid: 6450d84a-a0b9-45d0-9e0c-757d26502059
 title: WM_MDIREFRESHMENU messaggio (Winuser.h)
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118200067"
 ---
-# <a name="wm_mdirefreshmenu-message"></a>Messaggio di WM \_ MDIREFRESHMENU
+# <a name="wm_mdirefreshmenu-message"></a>Messaggio \_ MDIREFRESHMENU WM
 
 Un'applicazione invia il messaggio **\_ WM MDIREFRESHMENU** a una finestra client dell'interfaccia a documenti multipli (MDI) per aggiornare il menu della finestra della finestra cornice MDI.
 

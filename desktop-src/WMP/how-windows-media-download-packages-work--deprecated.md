@@ -1,12 +1,12 @@
 ---
-title: Funzionamento Windows dei pacchetti di download multimediali (deprecato)
-description: Funzionamento Windows dei pacchetti di download multimediali (deprecato)
+title: Funzionamento Windows dei pacchetti di download dei supporti (deprecato)
+description: Funzionamento Windows dei pacchetti di download dei supporti (deprecato)
 ms.assetid: 8bab1764-93da-4abc-a8b7-17bc44b381ce
 keywords:
 - Windows Metafile multimediali, Windows download di file multimediali
 - Windows Media Player,Windows media download pacchetti
 - metafile, Windows download di file multimediali
-- Windows Supporti, Windows download di file multimediali
+- Windows Supporti, Windows download di supporti
 - Windows pacchetti di download multimediali,informazioni
 - Windows Download di pacchetti multimediali,funzionamento dei pacchetti
 ms.topic: article
@@ -23,13 +23,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338972"
 ---
-# <a name="how-windows-media-download-packages-work-deprecated"></a>Funzionamento Windows dei pacchetti di download multimediali (deprecato)
+# <a name="how-windows-media-download-packages-work-deprecated"></a>Funzionamento Windows dei pacchetti di download dei supporti (deprecato)
 
 Questa pagina documenta una funzionalità che potrebbe non essere disponibile nelle versioni future di Windows Media Player e Windows Media Player SDK.
 
 Un Windows di download multimediale viene avviato da un sito Web quando un utente fa clic su un collegamento in un Web browser, ad esempio Microsoft Internet Explorer. Questa azione apre Windows Media Player e quindi scarica e annulla il pacchetto Windows Media Download sul disco rigido dell'utente in una cartella predefinita.
 
-Dopo che i file sono stati estratti dal pacchetto Windows Media Download, Windows Media Player individua una playlist di metafile di Windows Media con estensione asx tra i file in pacchetto. Se ne trova una, il lettore crea una playlist basata sul metafile incluso. I file che contengono contenuto multimediale vengono quindi aggiunti alla raccolta.
+Dopo aver estratto i file dal pacchetto Windows Media Download, Windows Media Player individua una playlist di metafile di Windows Media con estensione asx tra i file in pacchetto. Se ne trova una, il lettore crea una playlist basata sul metafile incluso. I file che contengono contenuto multimediale vengono quindi aggiunti alla raccolta.
 
 Windows Media Player cerca anche un **elemento SKIN** nel metafile. Se **l'elemento SKIN** contiene un riferimento a un file di bordo con estensione wmz, il lettore carica il bordo nel **riquadro In riproduzione.** Il lettore inizia quindi a riprodurre il contenuto fornito nel pacchetto.
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono descritti i tre elementi che costituiscono un pac
 | Elemento Package    | Funzione                                                                                                                                                                                                                                        | Estensioni di file                     |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | Bordo             | Interfaccia utente fissa e personalizzata creata dal proprietario del contenuto per la visualizzazione, il collegamento e la riproduzione di tutti i file multimediali presenti nel pacchetto Windows Media Download. Le tecniche usate per creare i bordi sono simili a quelle usate per creare le interfaccia. | wmz                                     |
-| Metafile Playlist  | Oggetto Windows metafile multimediale che contiene elementi **ENTRY,** informazioni sulle playlist e un'identità dell'elemento **SKIN** per i file di contenuto.                                                                                                             | .asx                                     |
+| Metafile Playlist  | Oggetto Windows metafile multimediale che contiene elementi **ENTRY,** informazioni sulla playlist e un'identità **dell'elemento SKIN** per i file di contenuto.                                                                                                             | .asx                                     |
 | Contenuto multimediale | File contenente qualsiasi formato audio o video supportato da Windows Media Player.                                                                                                                                                          | .wma, .wmv, .asf, .wav, .avi, .mpg, .mp3 |
 
 

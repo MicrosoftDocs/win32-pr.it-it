@@ -48,9 +48,9 @@ Il **metodo setColumnResizeMode** specifica le dimensioni della colonna indicizz
 
 | Valore          | Descrizione                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| AutosizeHeader | La colonna viene ridimensionata per contenere tutti i dati sia nella colonna che nell'intestazione.                                  |
+| AutosizeHeader | La colonna viene ridimensionata in modo da contenere tutti i dati sia nella colonna che nell'intestazione.                                  |
 | AutosizeData   | La colonna viene ridimensionata in modo da contenere solo tutti i dati nella colonna.                                                 |
-| Fisso          | Le dimensioni della colonna sono fisse.                                                                                    |
+| Fisso          | La colonna ha dimensioni fisse.                                                                                    |
 | Si estende      | La colonna viene ridimensionata in modo da usare lo spazio rimanente nell'elemento **PLAYLIST** dopo il ridimensionamento di tutte le altre colonne. |
 
 

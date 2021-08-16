@@ -3,7 +3,7 @@ title: Attributo Count
 description: L'attributo Count è il numero di elementi nella playlist.
 ms.assetid: 33d2a7a6-ad87-4794-8008-d235b3827081
 keywords:
-- Conteggio dell'attributo Windows Media Player
+- Conteggio attributi Windows Media Player
 topic_type:
 - apiref
 api_name:
