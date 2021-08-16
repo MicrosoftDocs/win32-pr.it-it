@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-DfsPath
-description: Contiene il percorso completo del collegamento di file system distribuito (DFS) associato.
+title: Attributo ms-DFSR-DfsPath
+description: Contiene il percorso completo del collegamento file system distribuito (DFS) associato.
 ms.assetid: bd596110-b156-4640-a6d0-ace9e4e30909
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-DFSR-DfsPath-schema AD
-- msDFSR-schema AD attributo DfsPath
+- Attributo ms-DFSR-DfsPath Schema DI AD
+- Attributo msDFSR-DfsPath Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 718c052ea89df9d8c237c4ef73a6d6d6af13ee49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24a8f1e1ae9f9baeaa134737d5f6b84777f99c283f7f7013828483b2e6751b7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960970"
 ---
-# <a name="ms-dfsr-dfspath-attribute"></a>attributo ms-DFSR-DfsPath
+# <a name="ms-dfsr-dfspath-attribute"></a>Attributo ms-DFSR-DfsPath
 
-Contiene il percorso completo del collegamento di file system distribuito (DFS) associato per il supporto di Replica DFS Service.
+Contiene il percorso completo del collegamento file system distribuito (DFS) associato per il Replica DFS del servizio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-DfsPath                             |
-| LDAP-Display-Name | msDFSR-DfsPath                              |
+| CN                | ms-DFSR-DfsPath                             |
+| Ldap-Display-Name | msDFSR-DfsPath                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.21                  |
-| System-ID-GUID    | 2cc903e2-398c-443b-ac86-ff6b01eac7ba        |
+| System-Id-Guid    | 2cc903e2-398c-443b-ac86-ff6b01eac7ba        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Contiene il percorso completo del collegamento di file system distribuito (DFS) 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classi utilizzate in        | [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene il percorso completo del collegamento di file system distribuito (DFS) 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classi utilizzate in        | [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene il percorso completo del collegamento di file system distribuito (DFS) 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classi utilizzate in        | [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -119,21 +119,21 @@ Contiene il percorso completo del collegamento di file system distribuito (DFS) 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classi utilizzate in        | [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **MS-DFSR-DfsPath** fa parte del supporto del servizio di replica file System distribuito (DFS).
+**L'attributo ms-DFSR-DfsPath** fa parte del supporto del servizio replica file system distribuito (DFS).
 
  
 

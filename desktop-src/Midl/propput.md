@@ -1,6 +1,6 @@
 ---
 title: propput (attributo)
-description: L'attributo \ propput\ specifica una funzione di impostazione delle proprietà. La proprietà deve avere lo stesso nome della funzione.
+description: L'attributo \ propput\ specifica una funzione di impostazione della proprietà. La proprietà deve avere lo stesso nome della funzione.
 ms.assetid: ffd8af15-42a4-4852-a29b-1fc66f673978
 keywords:
 - Attributo propput MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118641934"
 ---
 # <a name="propput-attribute"></a>propput (attributo)
 
-**\[ L'attributo \] propput** specifica una funzione di impostazione delle proprietà. La proprietà deve avere lo stesso nome della funzione *.*
+**\[ L'attributo \] propput** specifica una funzione di impostazione della proprietà. La proprietà deve avere lo stesso nome della funzione *.*
 
 ``` syntax
 [propput [,optional-property-attributes]] return-type function-name( parameters);
@@ -41,7 +41,7 @@ Zero o più attributi di proprietà.
 *return-type* 
 </dt> <dd>
 
-Tipo dei dati restituiti dalla procedura remota.
+Tipo di dati restituiti dalla procedura remota.
 
 </dd> <dt>
 
@@ -61,15 +61,15 @@ Zero o più parametri per la procedura remota.
 
 ## <a name="remarks"></a>Commenti
 
-Anche una funzione con **\[ l'attributo propput \]** deve avere, come ultimo parametro, un parametro con l'attributo **\[** [**in**](in.md) **\]** .
+Una funzione con **\[ l'attributo propput \]** deve avere anche, come ultimo parametro, un parametro con l'attributo **\[** [**in**](in.md) **\]** .
 
-Al massimo, è possibile specificare uno tra **\[** [**propget**](propget.md) **\]** , **\[ propput \]** e **\[** [**propputref**](propputref.md) per una **\]** funzione.
+Al massimo, è possibile specificare uno dei valori **\[** [**propget**](propget.md) **\]** , **\[ propput \]** e **\[** [**propputref**](propputref.md) per una **\]** funzione.
 
-Se **\[** [**l'attributo lcid**](lcid.md) viene utilizzato nell'elenco di parametri di una funzione che contiene un parametro con l'attributo **\]** **\[ \] propput,** il parametro **\[ lcid \]** deve essere il secondo all'ultimo.
+Se **\[** [**l'attributo lcid**](lcid.md) viene usato nell'elenco di parametri di una funzione che contiene un parametro con l'attributo **\]** **\[ propput, \]** il **\[ parametro lcid \]** deve essere secondo all'ultimo.
 
 ### <a name="flags"></a>Flags
 
-INVOKE \_ PROPERTYPUT
+RICHIAMARE \_ PROPERTYPUT
 
 ## <a name="examples"></a>Esempi
 

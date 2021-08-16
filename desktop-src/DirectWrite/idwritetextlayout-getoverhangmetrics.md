@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteTextLayout GetOverhangMetrics
-description: Restituisce le sporgenze (in DIP) del layout e tutti gli oggetti in esso contenuti, inclusi glifi di testo e oggetti inline.
+description: Restituisce gli elementi di struttura (in DIP) del layout e tutti gli oggetti in esso contenuti, inclusi glifi di testo e oggetti inline.
 ms.assetid: 4b23f6c5-cacc-41e2-8934-6f95208b999a
 keywords:
 - Metodo GetOverhangMetrics Direct Write
 - Metodo GetOverhangMetrics Direct Write, interfaccia IDWriteTextLayout
-- Interfaccia IDWriteTextLayout Direct Write, metodo GetOverhangMetrics
+- Interfaccia IDWriteTextLayout Scrittura diretta, metodo GetOverhangMetrics
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118649746"
 ---
 # <a name="idwritetextlayoutgetoverhangmetrics-method"></a>Metodo IDWriteTextLayout::GetOverhangMetrics
 
-Restituisce le sporgenze (in DIP) del layout e tutti gli oggetti in esso contenuti, inclusi glifi di testo e oggetti inline.
+Restituisce gli elementi di struttura (in DIP) del layout e tutti gli oggetti in esso contenuti, inclusi glifi di testo e oggetti inline.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,12 +42,12 @@ virtual HRESULT GetOverhangMetrics(
 
 <dl> <dt>
 
-*sporgenze* \[ Cambio\]
+*overhangs* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWRITE \_ OVERHANG \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
 
-Overshoots of visible extents (in DIP) outside the layout.
+Overshoots of visible extents (in DIP) outside the layout( Overshoots of visible extents (in DIP) outside the layout( Overshoots of visible extents (in DIP) outside the layout.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Le sottolineature e i barrati non contribuiscono alla determinazione black box, poiché vengono effettivamente disegnate dal renderer, che può disegnarle in qualsiasi varietà di stili.
+Le sottolineature e i barrati non contribuiscono alla determinazione black box, poiché vengono effettivamente disegnati dal renderer, che può disegnarli in qualsiasi varietà di stili.
 
 ## <a name="requirements"></a>Requisiti
 

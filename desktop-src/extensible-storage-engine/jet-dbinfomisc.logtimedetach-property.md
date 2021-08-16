@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla proprietà JET_DBINFOMISC.logtimeDetach
+description: 'Altre informazioni su: JET_DBINFOMISC.logtimeDetach'
 title: JET_DBINFOMISC.logtimeDetach
 TOCTitle: 'logtimeDetach property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeDetach
@@ -37,7 +37,7 @@ ms.locfileid: "118766175"
 
 Ottiene l'ora dell'ultimo scollegamento.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

@@ -30,7 +30,7 @@ A partire da Windows Vista, WMI contiene molte nuove funzionalità basate sulle 
 <span id="WMI_Diagnosis_Utility"></span><span id="wmi_diagnosis_utility"></span><span id="WMI_DIAGNOSIS_UTILITY"></span>Utilità di diagnosi di WMI
 </dt> <dd>
 
-Questa utilità esamina lo stato corrente del servizio WMI e i componenti correlati, le impostazioni DCOM e le impostazioni del Registro di sistema nel computer locale. L'utilità segnala i problemi e offre suggerimenti per il ripristino. Per altre informazioni e per scaricare l'utilità, [vedere](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en)Utilità di diagnosi di WMI .
+Questa utilità esamina lo stato corrente del servizio WMI e i componenti correlati, le impostazioni DCOM e le impostazioni del Registro di sistema nel computer locale. L'utilità segnala i problemi e offre suggerimenti per la riparazione. Per altre informazioni e per scaricare l'utilità, [vedere](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en)Utilità di diagnosi di WMI .
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ La [**classe Win32 \_ SecurityDescriptorHelper**](/previous-versions/windows/des
 <span id="User_Account_Control"></span><span id="user_account_control"></span><span id="USER_ACCOUNT_CONTROL"></span>Controllo dell'account utente
 </dt> <dd>
 
-Il controllo dell'account utente influisce sui dati WMI restituiti, sull'accesso remoto e sulla modalità di esecuzione degli script. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](user-account-control-and-wmi.md) Per altre informazioni sul controllo dell'account utente, [Attività iniziali controllo dell'account utente in Windows Vista](https://support.microsoft.com/help/922708/how-to-use-user-account-control-uac-in-windows-vista).
+Il controllo dell'account utente influisce sui dati WMI restituiti, sull'accesso remoto e sulla modalità di esecuzione degli script. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](user-account-control-and-wmi.md) Per altre informazioni sul controllo dell'account utente, vedere [Attività iniziali controllo dell'account utente in Windows Vista](https://support.microsoft.com/help/922708/how-to-use-user-account-control-uac-in-windows-vista).
 
 </dd> </dl>
 
@@ -112,7 +112,7 @@ Il [provider di route IP WMI](/previous-versions/windows/desktop/wmiiprouteprov/
 <span id="Changes_to_remote_connections"></span><span id="changes_to_remote_connections"></span><span id="CHANGES_TO_REMOTE_CONNECTIONS"></span>Modifiche alle connessioni remote
 </dt> <dd>
 
-La connessione a uno spazio dei nomi WMI in un computer remoto che esegue Windows Vista può richiedere modifiche alle impostazioni per Windows [Firewall,](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx) [Controllo account](/previous-versions/aa905108(v=msdn.10))utente o DCOM. Per altre informazioni, vedere [Connessione a WMI in modalità remota a partire da Vista.](connecting-to-wmi-remotely-starting-with-vista.md)
+La connessione a uno spazio dei nomi WMI in un computer remoto che esegue Windows Vista può richiedere modifiche alle impostazioni per Windows [Firewall,](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx) [Controllo account utente](/previous-versions/aa905108(v=msdn.10))o DCOM. Per altre informazioni, vedere [Connessione a WMI in modalità remota a partire da Vista.](connecting-to-wmi-remotely-starting-with-vista.md)
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ Per i sistemi in esecuzione Windows Vista e versioni successive, questa classe r
 <span id="Intelligent_Platform_Management_Interface_provider"></span><span id="intelligent_platform_management_interface_provider"></span><span id="INTELLIGENT_PLATFORM_MANAGEMENT_INTERFACE_PROVIDER"></span>Provider di Intelligent Platform Management Interface
 </dt> <dd>
 
-Il provider [IPMI WMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) fornisce i dati dalle operazioni del controller di gestione della scheda base (BMC) al sistema operativo. Il provider fornisce informazioni alle classi di informazioni di Intelligent Platform Management, che forniscono i dati dei sensori e i dati dei messaggi del registro eventi di sistema BMC (SEL).
+Il provider [IPMI WMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) fornisce i dati dalle operazioni BMC (Baseboard Management Controller) al sistema operativo. Il provider fornisce informazioni alle classi di informazioni di Intelligent Platform Management, che forniscono i dati dei sensori e i dati dei messaggi del registro eventi di sistema BMC (SEL).
 
 </dd> <dt>
 

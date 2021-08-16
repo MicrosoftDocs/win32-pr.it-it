@@ -1,21 +1,21 @@
 ---
-description: Le funzioni descritte in questa panoramica recuperano una serie di dati.
+description: Le funzioni descritte in questa panoramica recuperano un'ampia gamma di dati.
 ms.assetid: 869912f0-cb3b-402d-8445-3b1df6546da5
-title: Informazioni sul sistema
+title: Informazioni System Information
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8313aea963855057e9ee7d78f56fd9e1263fbb49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4aba65cfd4b8db15a4677510cb8524786d16b972b9d972c0b583fcf71a416a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764975"
 ---
-# <a name="about-system-information"></a>Informazioni sul sistema
+# <a name="about-system-information"></a>Informazioni System Information
 
-Le funzioni descritte in questa panoramica recuperano una serie di dati. Le informazioni sulla configurazione di sistema descrivono l'hardware del computer, il nome del computer e il nome utente. Le informazioni di configurazione del sistema operativo descrivono la versione del sistema operativo, le directory delle chiavi e le variabili di ambiente. I parametri di sistema descrivono gli attributi di sistema. Le metriche di sistema forniscono le dimensioni degli elementi nell'area di visualizzazione.
+Le funzioni descritte in questa panoramica recuperano un'ampia gamma di dati. Le informazioni di configurazione del sistema descrivono l'hardware del computer, il nome del computer e il nome utente. Le informazioni di configurazione del sistema operativo descrivono la versione del sistema operativo, le directory chiave e le variabili di ambiente. I parametri di sistema descrivono gli attributi di sistema. Le metriche di sistema forniscono le dimensioni degli elementi nell'area di visualizzazione.
 
-Nelle sezioni seguenti viene descritto come ottenere questi tipi di informazioni:
+Le sezioni seguenti descrivono come ottenere questi tipi di informazioni:
 
 -   [Configurazione hardware](hardware-configuration.md)
 -   [Nomi computer](computer-names.md)

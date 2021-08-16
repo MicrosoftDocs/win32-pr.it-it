@@ -1,7 +1,7 @@
-- name: Notifiche e messaggi di input del puntatore
+- name: Messaggi di input del puntatore e notifiche
   href: messages-and-notifications-portal.md
   items:
-    - name: Riferimento al messaggio di input del puntatore
+    - name: Informazioni di riferimento sul messaggio di input del puntatore
       href: wmpointer-reference.md
       items:
         - name: Costanti
@@ -11,19 +11,19 @@
               href: modifier-key-states-constants.md
             - name: Flag di penna
               href: pen-flags-constants.md
-            - name: Maschera di penna
+            - name: Maschera penna
               href: pen-mask-constants.md
-            - name: Modifica dispositivo puntatore
+            - name: Modifica del dispositivo puntatore
               href: pointer-device-change-constants.md
             - name: Flag puntatore
               href: pointer-flags-contants.md
-            - name: Flag messaggi puntatore
+            - name: Flag di messaggio puntatore
               href: pointer-message-flags.md
-            - name: Flag tocco
+            - name: Flag di tocco
               href: touch-flags-constants.md
             - name: Finestra hit testing tocco
               href: touch-hit-testing-window-constants.md
-            - name: Touch mask
+            - name: Touch Mask
               href: touch-mask-constants.md
         - name: Enumerazioni
           href: enums.md
@@ -160,5 +160,5 @@
               href: /windows/win32/api/Winuser/ns-winuser-pointer_touch_info
             - name: TOUCHPREDICTIONPARAMETERS
               href: /windows/win32/api/Winuser/ns-winuser-touchpredictionparameters
-    - name: Glossario dei messaggi e delle notifiche di input del puntatore
+    - name: Glossario dei messaggi di input e delle notifiche del puntatore
       href: wmpointer-glossary.md

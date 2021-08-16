@@ -35,9 +35,9 @@ ms.locfileid: "118766195"
 ---
 # <a name="jet_dbinfomisclogtimerepair-property"></a>JET_DBINFOMISC.logtimeRepair
 
-Ottiene l'ultima volta che è stato eseguito il ripristino in questo database.
+Ottiene l'ora dell'ultima esecuzione del ripristino nel database.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

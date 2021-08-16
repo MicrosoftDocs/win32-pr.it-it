@@ -17,7 +17,7 @@ ms.locfileid: "118771898"
 # <a name="esentslvrootstillopenexception-properties"></a>Proprietà di EsentSLVRootStillOpenException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentSLVRootStillOpenException](./esentslvrootstillopenexception-class.md) espone i membri seguenti.
 

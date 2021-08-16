@@ -1,7 +1,7 @@
 ---
 description: Crea una copia di IAnalysisRegion.
 ms.assetid: eb94e1ce-7801-409d-9ae6-e7db0a9b861f
-title: 'Metodo IAnalysisRegion:: Clone (IACom. h)'
+title: Metodo IAnalysisRegion::Clone (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fb069ddb461ab4422f8cbbc8990fb6d735808e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13bd514396c738f2e5367528dc62833bd3a4dcc195aecf30ee723ea9c09b5bcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596791"
 ---
-# <a name="ianalysisregionclone-method"></a>Metodo IAnalysisRegion:: Clone
+# <a name="ianalysisregionclone-method"></a>Metodo IAnalysisRegion::Clone
 
-Crea una copia di [**IAnalysisRegion**](ianalysisregion.md).
+Crea una copia di [**IAnalysisRegion.**](ianalysisregion.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,23 +39,23 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*pClonedRegion* \[ out\]
+*pClonedRegion* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una copia di [**IAnalysisRegion**](ianalysisregion.md).
+Puntatore a una copia di [**IAnalysisRegion.**](ianalysisregion.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è eqivalent al metodo nomiSystem. Windows. Ink. AnalysisCore. AnalysisRegionBase. Clone nel .NET Framework.
+Questo metodo è eqivalent per theSystem. Windows. Metodo Ink.AnalysisCore.AnalysisRegionBase.Clone nel .NET Framework.
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su \* *pClonedRegion* quando non è più necessario usare l'area di analisi clonata.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) in \* *pClonedRegion* quando non è più necessario usare l'area di analisi clonata.
 
  
 
@@ -65,9 +65,9 @@ Questo metodo è eqivalent al metodo nomiSystem. Windows. Ink. AnalysisCore. Ana
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -76,10 +76,10 @@ Questo metodo è eqivalent al metodo nomiSystem. Windows. Ink. AnalysisCore. Ana
 
 <dl> <dt>
 
-[**IAnalysisRegion**](ianalysisregion.md)
+[**Area IAnalysis**](ianalysisregion.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

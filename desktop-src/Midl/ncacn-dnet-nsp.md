@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642762"
 ---
-# <a name="ncacn_dnet_nsp-attribute"></a>Attributo nsp ncacn \_ \_ dnet
+# <a name="ncacn_dnet_nsp-attribute"></a>ncacn \_ dnet \_ nsp attribute
 
 La **parola chiave ncacn \_ dnet \_ nsp** identifica DECnet come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 
@@ -31,23 +31,23 @@ endpoint("ncacn_dnet_nsp:server-name[port-name]")
 
 <dl> <dt>
 
-*nome-server* 
+*server-name* 
 </dt> <dd>
 
-Specifica il nome o l'indirizzo Internet per il server, o host, computer. Il nome è una stringa di caratteri.
+Specifica il nome o l'indirizzo Internet per il server o l'host del computer. Il nome è una stringa di caratteri.
 
 </dd> <dt>
 
 *port-name* 
 </dt> <dd>
 
-Specifica il nome o il numero dell'oggetto DECnet. Il nome dell'oggetto può contenere fino a 16 caratteri. I numeri di oggetto possono essere preceduti dal simbolo di cancelletto ( \# ).
+Specifica un nome di oggetto DECnet o un numero di oggetto. Il nome dell'oggetto può essere costituito da un massimo di 16 caratteri. I numeri di oggetto possono essere preceduti dal cancelletto ( \# ).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La sintassi della stringa della porta di trasporto DECnet, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue alcuni controlli della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa di porta del trasporto DECnet, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue un controllo della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
 
 > [!Note]  
 > Questa famiglia di protocolli non è supportata in Windows XP.

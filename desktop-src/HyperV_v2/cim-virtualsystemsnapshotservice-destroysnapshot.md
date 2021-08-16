@@ -53,7 +53,7 @@ Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.m
 Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito [**un processo CIM \_ ConcreteJob**](cim-concretejob.md) che rappresenta il processo.
 
 > [!Note]  
-> Questo parametro era in lettura/scrittura in Windows 8.1.
+> Questo parametro era di lettura/scrittura Windows 8.1.
 
  
 

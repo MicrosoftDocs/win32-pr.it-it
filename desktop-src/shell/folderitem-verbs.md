@@ -1,7 +1,7 @@
 ---
 description: Recupera l'oggetto FolderItemVerbs dell'elemento. Questo oggetto è la raccolta di verbi che possono essere eseguiti sull'elemento.
 ms.assetid: e31160cd-093a-45a6-a066-58120c44eb2c
-title: Metodo FolderItem. Verbs (shldisp. h)
+title: Metodo FolderItem.Verbs (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f15c2471f749748f7928a45aa03037d955c75d4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963581431c35e2c63cbe9af4f5b37ef6d0709d01146a223253247ad2b8c37dda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090601"
 ---
-# <a name="folderitemverbs-method"></a>Metodo FolderItem. Verbs
+# <a name="folderitemverbs-method"></a>Metodo FolderItem.Verbs
 
-Recupera l'oggetto [**folderitemverbs**](folderitemverbs.md) dell'elemento. Questo oggetto è la raccolta di verbi che possono essere eseguiti sull'elemento.
+Recupera l'oggetto [**FolderItemVerbs**](folderitemverbs.md) dell'elemento. Questo oggetto è la raccolta di verbi che possono essere eseguiti sull'elemento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,15 +39,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **folderitemverbs**](folderitemverbs.md)\*\***
+Tipo: **[ **FolderItemVerbs**](folderitemverbs.md)\*\***
 
-Riferimento all'oggetto [**folderitemverbs**](folderitemverbs.md) .
+Riferimento all'oggetto [**FolderItemVerbs.**](folderitemverbs.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono usati i **verbi** per recuperare l'oggetto [**folderitemverbs**](folderitemverbs.md) che rappresenta il set di verbi che è possibile eseguire nella cartella Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente usa **Verbs** per recuperare l'oggetto [**FolderItemVerbs**](folderitemverbs.md) che rappresenta il set di verbi che possono essere eseguiti nella Windows cartella. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -81,7 +81,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -164,11 +164,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
@@ -182,7 +182,7 @@ End Sub
 [**InvokeVerb**](folderitem-invokeverb.md)
 </dt> <dt>
 
-[**DoIt**](folderitemverb-doit.md)
+[**Doit**](folderitemverb-doit.md)
 </dt> </dl>
 
  

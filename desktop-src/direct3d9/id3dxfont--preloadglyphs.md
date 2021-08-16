@@ -1,7 +1,7 @@
 ---
 description: Carica una serie di glifi nella memoria video per migliorare l'efficienza del rendering nel dispositivo.
 ms.assetid: df023359-bcb3-4c05-950b-19cdeba97c85
-title: Metodo ID3DXFont::P reloadGlyphs (D3dx9core. h)
+title: Metodo ID3DXFont::P reloadGlyphs (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 954d9e8abb310f962f7188720cb32035baf50d3d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ea422a6e0b0ecfda6b4eb03a0636eb013d8c840c96cec6f1c482589de29f3c76
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119563931"
 ---
-# <a name="id3dxfontpreloadglyphs-method"></a>ID3DXFont::P metodo reloadGlyphs
+# <a name="id3dxfontpreloadglyphs-method"></a>Metodo ID3DXFont::P reloadGlyphs
 
 Carica una serie di glifi nella memoria video per migliorare l'efficienza del rendering nel dispositivo.
 
@@ -41,19 +41,19 @@ HRESULT PreloadGlyphs(
 
 <dl> <dt>
 
-*Primo* \[ in\]
+*First (Prima)* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 ID del primo glifo da caricare nella memoria video.
 
 </dd> <dt>
 
-*Ultima* \[ in\]
+*Ultimo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 ID dell'ultimo glifo da caricare nella memoria video.
 
@@ -63,13 +63,13 @@ ID dell'ultimo glifo da caricare nella memoria video.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="remarks"></a>Commenti
 
 Questo metodo genera trame che contengono i glifi di input. I glifi vengono disegnati come una serie di triangoli.
 
-Non verrà eseguito il rendering dei glifi nel dispositivo. Per eseguire il rendering dei glifi, è comunque necessario chiamare [**DrawText**](id3dxfont--drawtext.md) . Tuttavia, se si precaricano i glifi nella memoria video, **DrawText** utilizzerà in modo sostanziale un minor numero di risorse della CPU.
+Non verrà eseguito il rendering dei glifi nel dispositivo. [**DrawText**](id3dxfont--drawtext.md) deve comunque essere chiamato per eseguire il rendering dei glifi. Tuttavia, precaricando i glifi nella memoria video, **DrawText** userà sostanzialmente meno risorse della CPU.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Non verrà eseguito il rendering dei glifi nel dispositivo. Per eseguire il rend
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

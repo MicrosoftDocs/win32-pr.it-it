@@ -12,12 +12,12 @@ ms.locfileid: "118530721"
 ---
 # <a name="the-direct3d-12-core-10-feature-level"></a>Livello di funzionalità di Direct3D 12 Core 1.0
 
-Il livello di funzionalità Core 1.0 è un subset del set completo di funzionalità Direct3D 12. Il livello di funzionalità Core 1.0 può essere esposto da una categoria di dispositivi noti come *dispositivi solo di calcolo.* Il modello di driver complessivo per i dispositivi di solo calcolo è microsoft Compute Driver Model (MCDM). MCDM è un peer con scalabilità orizzontale del Windows Device Driver Model (WDDM), che ha un ambito più ampio.
+Il livello di funzionalità Core 1.0 è un subset del set completo di funzionalità Direct3D 12. Il livello di funzionalità Core 1.0 può essere esposto da una categoria di dispositivi noti come *dispositivi solo di calcolo.* Il modello di driver complessivo per i dispositivi di solo calcolo è microsoft Compute Driver Model (MCDM). MCDM è un peer con scalabilità orizzontale del modello WDDM (Device Driver Model) Windows, che ha un ambito più ampio.
 
 Un dispositivo che supporta solo *le* funzionalità all'interno di un livello di funzionalità core è noto come *dispositivo core.*
 
 > [!NOTE]
-> *Il dispositivo solo calcolo,* *il dispositivo MCDM,* *il dispositivo a livello* di funzionalità principale e il dispositivo *Core* hanno tutti lo stesso significato. Per semplicità, è preferibile usare il dispositivo *Core.*
+> *Il dispositivo solo calcolo,* *il dispositivo MCDM,* *il dispositivo a livello* di funzionalità principale e il *dispositivo Core* hanno tutti lo stesso significato. Per semplicità, è *preferibile usare* il dispositivo Core.
 
 ## <a name="creating-a-core-device"></a>Creazione di un dispositivo Core
 
@@ -36,7 +36,7 @@ Se si specifica un livello di funzionalità, il livello di runtime/debug verific
 
 ## <a name="shader-model-for-core-devices"></a>Modello shader per dispositivi Core
 
-Un dispositivo Core supporta Shader Model 5.0+.
+Un dispositivo Core supporta il modello Shader 5.0+.
 
 Il runtime esegue la conversione di modelli shader non DXIL da 5.x a 6.0 DXIL. Il driver deve quindi supportare solo la versione 6.x.
 
@@ -45,7 +45,7 @@ Il runtime esegue la conversione di modelli shader non DXIL da 5.x a 6.0 DXIL. I
 - Dimensioni delle risorse supportate: solo buffer non elaborati e strutturati (senza buffer tipici, texture1d/2D e così via)
 - Nessun supporto per le risorse riservate (affiancate)
 - Nessun supporto per gli heap personalizzati
-- Nessun supporto per uno di questi flag heap:
+- Nessun supporto per uno di questi flag dell'heap:
   - D3D12_HEAP_FLAG_HARDWARE_PROTECTED
   - D3D12_HEAP_FLAG_ALLOW_WRITE_WATCH
   - D3D12_HEAP_FLAG_ALLOW_DISPLAY
@@ -53,13 +53,13 @@ Il runtime esegue la conversione di modelli shader non DXIL da 5.x a 6.0 DXIL. I
 
 ## <a name="resource-binding-model-for-core-devices"></a>Modello di associazione di risorse per i dispositivi Core
 
-- Supporto solo per il livello di binding delle risorse 1
+- Supporto solo per il livello 1 dell'associazione di risorse
 - Eccezioni:
   - Nessun supporto per i campionatori di trame
   - Supporto per 64 UAV come Feature Level 11.1+ (anziché solo 8)
-  - Le implementazioni non devono implementare il controllo dei limiti sugli accessi dello shader alle risorse tramite descrittori, gli accessi fuori dai limiti producono un comportamento non definito.
-    - Come sottoprodotto, il flag dell'intervallo di D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_STATIC_KEEPING_BUFFER_BOUNDS_CHECKS nelle firme radice non è supportato.
-- I descrittori UAV/CBV possono essere emesse solo sulle risorse dagli heap predefiniti (quindi non sono disponibili heap di caricamento/readback). In questo modo l'applicazione deve eseguire copie per ottenere i dati< CPU >GPU.
+  - Le implementazioni non devono implementare il controllo dei limiti sugli accessi dello shader alle risorse tramite descrittori. Gli accessi fuori dai limiti producono un comportamento non definito.
+    - Come sottoprodotto, il flag dell'intervallo D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_STATIC_KEEPING_BUFFER_BOUNDS_CHECKS descrittore nelle firme radice non è supportato.
+- I descrittori UAV/CBV possono essere emesse solo sulle risorse dagli heap predefiniti (quindi non sono disponibili heap di caricamento/readback). In questo modo l'applicazione deve eseguire copie per ottenere i dati<->GPU.
 - Nonostante sia il livello di funzionalità di associazione più basso, esistono ancora alcune funzionalità necessarie anche in questo livello, vale la pena notare:
   - Gli heap dei descrittori possono essere aggiornati dopo la registrazione degli elenchi di comandi (vedere D3D12_DESCRIPTOR_RANGE_FLAG_DESCRIPTORS_VOLATILE nella specifica di associazione di risorse)
   - I descrittori radice sono fondamentalmente puntatori GPUVA
@@ -165,7 +165,7 @@ L'elenco seguente rappresenta il subset supportato dell'interfaccia di  programm
 
 * [ID3D12CommandList::GetType](/windows/win32/api/d3d12/nf-d3d12-id3d12commandlist-gettype)
 
-### <a name="id3d12graphicscommandlist-methods"></a>Metodi id3D12GraphicsCommandList
+### <a name="id3d12graphicscommandlist-methods"></a>Metodi ID3D12GraphicsCommandList
 
 * [ID3D12GraphicsCommandList::BeginEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginevent)
 * [ID3D12GraphicsCommandList::BeginQuery](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginquery)
@@ -199,7 +199,7 @@ L'elenco seguente rappresenta il subset supportato dell'interfaccia di  programm
 * [ID3D12GraphicsCommandList1::AtomicCopyBufferUINT](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-atomiccopybufferuint)
 * [ID3D12GraphicsCommandList1::AtomicCopyBufferUINT64](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-atomiccopybufferuint64)
 
-### <a name="id3d12graphicscommandlist2-methods"></a>Metodi id3D12GraphicsCommandList2
+### <a name="id3d12graphicscommandlist2-methods"></a>Metodi ID3D12GraphicsCommandList2
 
 * [ID3D12GraphicsCommandList2::WriteBufferImmediate](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist2-writebufferimmediate)
 

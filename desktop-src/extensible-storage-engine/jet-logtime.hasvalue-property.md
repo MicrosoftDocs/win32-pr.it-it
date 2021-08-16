@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_LOGTIME. Proprietà HasValue'
-title: JET_LOGTIME. Proprietà HasValue
+description: 'Altre informazioni su: JET_LOGTIME. HasValue - proprietà'
+title: JET_LOGTIME. HasValue - proprietà
 TOCTitle: 'HasValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_LOGTIME.HasValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_logtime.hasvalue(v=EXCHG.10)
@@ -32,11 +32,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118765390"
 ---
-# <a name="jet_logtimehasvalue-property"></a>JET_LOGTIME. Proprietà HasValue
+# <a name="jet_logtimehasvalue-property"></a>JET_LOGTIME. HasValue - proprietà
 
 Ottiene un valore che indica se l'JET_LOGTIME ha un valore Null.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -62,7 +62,7 @@ Tipo: [System.Boolean](/dotnet/api/system.boolean)
 
 #### <a name="implements"></a>Implementazioni
 
-[INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
+[INullableStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
 ## <a name="see-also"></a>Vedi anche
 

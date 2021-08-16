@@ -1,6 +1,6 @@
 ---
 title: Strutture 11on12
-description: Le strutture seguenti vengono dichiarate in d3d11on12.h.
+description: Le strutture seguenti sono dichiarate in d3d11on12.h.
 ms.assetid: 9EB0E780-0000-413C-BA3E-A735B8422BF6
 ms.localizationpriority: low
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118529925"
 ---
 # <a name="11on12-structures"></a>Strutture 11on12
 
-Le strutture seguenti vengono dichiarate in d3d11on12.h.
+Le strutture seguenti sono dichiarate in d3d11on12.h.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ Le strutture seguenti vengono dichiarate in d3d11on12.h.
 
 | Argomento                                                             | Descrizione                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**FLAG DI RISORSE D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usato con [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) per eseguire l'override dei flag che verrebbero dedotto dalle proprietà delle risorse o dell'heap, inclusi i flag di associazione, i flag di errore e i flag di accesso della CPU. <br/> |
+| [**FLAG DI RISORSA D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usato con [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) per eseguire l'override dei flag che verrebbero dedotto dalle proprietà della risorsa o dalle proprietà dell'heap, inclusi i flag di associazione, i flag misc e i flag di accesso della CPU. <br/> |
 
 
 

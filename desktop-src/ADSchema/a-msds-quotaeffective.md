@@ -1,11 +1,11 @@
 ---
-title: ms-DS-quota-attributo valido
-description: Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una partizione di directory.
+title: Attributo ms-DS-Quota-Effective
+description: Quota effettiva per un'entità di sicurezza calcolata dalle quote assegnate per una partizione di directory.
 ms.assetid: 22422499-9b56-4d74-a30e-63917abacdd1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-quote-effective
-- attributo msDS-QuotaEffective-schema AD
+- Schema AD dell'attributo ms-DS-Quota-Effective
+- Schema AD dell'attributo msDS-QuotaEffective
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fe610c87c356431883cecded5eda3e0a9c42297
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 722daf2728992c441771830babf3b2b2bf9b4230367baae12a0d71264876ebc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960590"
 ---
-# <a name="ms-ds-quota-effective-attribute"></a>ms-DS-quota-attributo valido
+# <a name="ms-ds-quota-effective-attribute"></a>Attributo ms-DS-Quota-Effective
 
-Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una partizione di directory.
+Quota effettiva per un'entità di sicurezza calcolata dalle quote assegnate per una partizione di directory.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-quota-effettivo                |
-| LDAP-Display-Name | msDS-QuotaEffective                  |
+| CN                | ms-DS-Quota-Effective                |
+| Ldap-Display-Name | msDS-QuotaEffective                  |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1848              |
-| System-ID-GUID    | 6655b152-101c-48b4-b347-e1fcebc60157 |
+| System-Id-Guid    | 6655b152-101c-48b4-b347-e1fcebc60157 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| A valore singolo       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| A valore singolo       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Quota valida per un'entità di sicurezza calcolata dalle quote assegnate per una
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| A valore singolo       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 

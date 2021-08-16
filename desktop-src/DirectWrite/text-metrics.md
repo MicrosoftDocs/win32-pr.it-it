@@ -1,6 +1,6 @@
 ---
 title: Metriche di testo
-description: Per facilitare il layout, la selezione personalizzata dei tipi di carattere e altre operazioni a elevato utilizzo di metriche, a partire da Windows 8, DirectWrite include una serie di nuove API per esprimere tutte le informazioni sui tipi di carattere che potrebbero essere necessarie per sviluppare app di testo RTF.
+description: Per facilitare il layout, la selezione personalizzata dei tipi di carattere e altre operazioni a elevato utilizzo di metriche, a partire da Windows 8, DirectWrite dispone di una serie di nuove API per esprimere tutte le informazioni sui tipi di carattere che potrebbero essere necessarie per sviluppare app di testo RTF.
 ms.assetid: 9df8c675-6f4d-4de7-916e-7dc51f5f04aa
 ms.topic: article
 ms.date: 05/31/2018
@@ -46,7 +46,7 @@ Le app che consentono agli utenti di scrivere codice computer usano spesso tipi 
 
 Le app di testo RTF, ad esempio i lettori PDF, devono essere in grado di associare i tipi di carattere del contenuto ai tipi di carattere nel sistema, devono poter accedere ai nomi completi dei tipi di carattere in più formati. È quindi possibile trovare una corrispondenza migliore con [i DirectWrite](direct-write-portal.md) contiene un'enumerazione che esprime informazioni di denominazione complete su un tipo di carattere in molti formati.
 
-L'enumerazione [**DWRITE \_ INFORMATIONAL \_ STRING ID \_ viene**](/windows/win32/api/dwrite/ne-dwrite-dwrite_informational_string_id) utilizzata per ottenere il nome completo, il nome PostScript e il nome CID PostScript di qualsiasi tipo di carattere nel sistema. Queste informazioni sono utili quando è necessario associare i tipi di carattere dell'app ai tipi di carattere appropriati nel sistema locale.
+L'enumerazione [**DWRITE \_ INFORMATIONAL \_ STRING \_ ID**](/windows/win32/api/dwrite/ne-dwrite-dwrite_informational_string_id) viene utilizzata per ottenere il nome completo, il nome PostScript e il nome CID PostScript di qualsiasi tipo di carattere nel sistema. Queste informazioni sono utili quando è necessario associare i tipi di carattere dell'app ai tipi di carattere appropriati nel sistema locale.
 
 ## <a name="glyph-advances"></a>Avanzamenti del glifo
 

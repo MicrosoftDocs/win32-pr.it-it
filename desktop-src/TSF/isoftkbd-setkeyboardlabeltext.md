@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd SetKeyboardLabelText (Softkbdc. h)
+title: Metodo ISoftKbd SetKeyboardLabelText (Softkbdc.h)
 description: Il metodo ISoftKbd SetKeyboardLabelText imposta il testo dell'etichetta dal layout per una tastiera soft.
 ms.assetid: 86c45c37-fe50-4596-b4c9-960de760a2e0
 keywords:
-- Framework servizi di testo Metodo SetKeyboardLabelText
-- Framework dei servizi di testo del metodo SetKeyboardLabelText, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo SetKeyboardLabelText
+- Metodo SetKeyboardLabelText Framework servizi di testo
+- Metodo SetKeyboardLabelText Framework servizi di testo, interfaccia ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo, metodo SetKeyboardLabelText
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 862341182b9c97a751ba4a130566d5cf18437c2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d15e81e2ff29affaa6bf6e87f87410d9c9d3ef7e913998a1bffa1ab6b0dff3fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877416"
 ---
-# <a name="isoftkbdsetkeyboardlabeltext-method"></a>Metodo ISoftKbd:: SetKeyboardLabelText
+# <a name="isoftkbdsetkeyboardlabeltext-method"></a>Metodo ISoftKbd::SetKeyboardLabelText
 
-Il metodo **ISoftKbd:: SetKeyboardLabelText** imposta il testo dell'etichetta dal layout per una tastiera soft.
+Il **metodo ISoftKbd::SetKeyboardLabelText** imposta il testo dell'etichetta dal layout per una tastiera soft.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT SetKeyboardLabelText(
 
 <dl> <dt>
 
-*hKl* \[ in\]
+*hKl* \[ Pollici\]
 </dt> <dd>
 
 Handle utilizzato per recuperare il layout installato per la tastiera soft.
@@ -57,8 +57,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                        | Descrizione                                |
 |----------------------------------------------------------------------------------------------|--------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>      |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *hKl* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro hKl* non è valido.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

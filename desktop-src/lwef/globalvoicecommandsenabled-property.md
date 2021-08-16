@@ -45,9 +45,9 @@ Restituisce o imposta un valore che indica se la voce è abilitata per i comandi
 
 ## <a name="remarks"></a>Commenti
 
-Microsoft Agent aggiunge automaticamente i parametri vocali (grammatica) per l'apertura e la chiusura della finestra Comandi vocali e per visualizzare e nascondere il carattere. Se si imposta **GlobalVoiceCommandsEnabled** su **False,** Agent disabilita tutti i parametri vocali [](caption-property.md) per questi comandi, nonché i parametri vocali per la didascalia degli oggetti [**Commands**](/windows/desktop/lwef/the-commands-collection-object) di altri client. In questo modo è possibile eliminarli dalla grammatica attiva corrente del client. Tuttavia, poiché potenzialmente blocca l'accesso vocale ad altri client, reimpostare questa proprietà su **True** dopo l'elaborazione dell'input vocale dell'utente.
+Microsoft Agent aggiunge automaticamente i parametri vocali (grammatica) per l'apertura e la chiusura della finestra Comandi vocali e per visualizzare e nascondere il carattere. Se si imposta **GlobalVoiceCommandsEnabled** su **False,** Agent disabilita tutti i parametri vocali [](caption-property.md) per questi comandi, nonché i parametri vocali per la didascalia degli oggetti [**Commands di**](/windows/desktop/lwef/the-commands-collection-object) altri client. In questo modo è possibile eliminarli dalla grammatica attiva corrente del client. Tuttavia, poiché potenzialmente blocca l'accesso vocale ad altri client, reimpostare questa proprietà su **True** dopo l'elaborazione dell'input vocale dell'utente.
 
-La disabilitazione della proprietà non influisce sul menu a comparsa del carattere. Verranno comunque visualizzati i comandi globali aggiunti dal server. Non è possibile rimuoverli dal menu a comparsa.
+La disabilitazione della proprietà non influisce sul menu a comparsa del carattere. I comandi globali aggiunti dal server verranno comunque visualizzati. Non è possibile rimuoverli dal menu a comparsa.
 
  
 

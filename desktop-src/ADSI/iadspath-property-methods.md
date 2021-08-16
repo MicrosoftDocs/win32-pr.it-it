@@ -1,6 +1,6 @@
 ---
 title: Metodi della proprietà IADsPath (Iads.h)
-description: Il metodo di proprietà dell'interfaccia IADsPath imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
+description: Il metodo di proprietà dell'interfaccia IADsPath imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: 6fc7ce1a-575b-48c4-9f66-3ea22d60c96b
 ms.tgt_platform: multiple
 keywords:
@@ -33,7 +33,7 @@ ms.locfileid: "118691329"
 ---
 # <a name="iadspath-property-methods"></a>Metodi della proprietà IADsPath
 
-Il metodo di proprietà [**dell'interfaccia IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -46,10 +46,10 @@ Percorso di una directory del file system.
 
 <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -74,10 +74,10 @@ Tipo di file del file system.
 
 <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati scripting: **LONG**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -98,14 +98,14 @@ HRESULT put_Type(
 **VolumeName**
 </dt> <dd> <dl>
 
-Nome di un volume esistente dell'file system.
+Nome di un volume esistente del file system.
 
 <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -135,7 +135,7 @@ HRESULT put_VolumeName(
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IADsPath IID è definito \_ come B287FCD5-4080-11D1-A3AC-00C04FB950DC<br/>             |
+| IID<br/>                      | IID \_ IADsPath è definito come B287FCD5-4080-11D1-A3AC-00C04FB950DC<br/>             |
 
 
 
@@ -146,7 +146,7 @@ HRESULT put_VolumeName(
 [**IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath)
 </dt> <dt>
 
-[**PERCORSO DI \_ ADS**](/windows/win32/api/iads/ns-iads-ads_path)
+[**ADS \_ PATH**](/windows/win32/api/iads/ns-iads-ads_path)
 </dt> </dl>
 
  

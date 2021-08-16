@@ -1,7 +1,7 @@
 ---
 description: Specifica gli attributi per una firma Authenticode.
 ms.assetid: 1c1052c3-c5c5-48ae-8266-0b367800a84a
-title: Struttura SIGNER_ATTR_AUTHCODE
+title: SIGNER_ATTR_AUTHCODE struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 952ed0f55a185d9a7ef9eeed3366f64c84423ddd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cce522403e4b4e416bd3d1ecb9d6c4a551ef3bb67407f853f586bd061f3d8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898948"
 ---
-# <a name="signer_attr_authcode-structure"></a>Struttura del FIRMATARIo \_ attr \_ AUTHCODE
+# <a name="signer_attr_authcode-structure"></a>Struttura \_ SIGNER ATTR \_ AUTHCODE
 
-La struttura del **firmatario \_ attr \_ AUTHCODE** specifica gli attributi per una firma [*Authenticode*](../secgloss/a-gly.md) .
+La **struttura \_ SIGNER ATTR \_ AUTHCODE** specifica gli attributi per una [*firma Authenticode.*](../secgloss/a-gly.md)
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -50,35 +50,35 @@ typedef struct _SIGNER_ATTR_AUTHCODE {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **fCommercial**
 </dt> <dd>
 
-**True** per firmare l'oggetto come server di pubblicazione commerciale; in caso contrario, **false**.
+**TRUE** per firmare l'oggetto come editore commerciale. in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **fIndividual**
 </dt> <dd>
 
-**True** per firmare l'oggetto come singolo editore; in caso contrario, **false**.
+**TRUE** per firmare l'oggetto come singolo autore. in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **pwszName**
 </dt> <dd>
 
-Nome visualizzato del file dopo il download.
+Nome visualizzato del file al momento del download.
 
 </dd> <dt>
 
 **pwszInfo**
 </dt> <dd>
 
-Nome visualizzato dell'URL del file durante il download.
+Nome visualizzato dell'URL del file al momento del download.
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ Nome visualizzato dell'URL del file durante il download.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Nome visualizzato dell'URL del file durante il download.
 
 <dl> <dt>
 
-[**informazioni sulla firma del FIRMATARIo \_ \_**](signer-signature-info.md)
+[**INFORMAZIONI SULLA \_ FIRMA DEL \_ FIRMATARIO**](signer-signature-info.md)
 </dt> </dl>
 
  

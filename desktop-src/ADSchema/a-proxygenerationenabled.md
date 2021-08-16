@@ -1,10 +1,10 @@
 ---
-title: Attributo abilitato per la generazione di proxy
-description: TRUE se la generazione del proxy è abilitata.
+title: Attributo Proxy-Generation-Enabled
+description: TRUE se la generazione di proxy è abilitata.
 ms.assetid: 8a9ee22d-531d-4ba7-90ba-094f0afb161f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD degli attributi abilitati per la generazione di proxy
+- Schema AD dell'attributo Proxy-Generation-Enabled
 - Schema AD dell'attributo proxyGenerationEnabled
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e44aaf416821a6cda8bd170f4431b253e00dffc2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97e5f609202251371a9d255c18a72af3607ae77e8074eb713f3e0e1dd4da7702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836791"
 ---
-# <a name="proxy-generation-enabled-attribute"></a>Attributo abilitato per la generazione di proxy
+# <a name="proxy-generation-enabled-attribute"></a>Attributo Proxy-Generation-Enabled
 
-**True** se la generazione del proxy è abilitata.
+**TRUE se** la generazione di proxy è abilitata.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Abilitato per la generazione di proxy             |
-| LDAP-Display-Name | proxyGenerationEnabled               |
+| CN                | Generazione proxy abilitata             |
+| Ldap-Display-Name | proxyGenerationEnabled               |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.523               |
-| System-ID-GUID    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
+| System-Id-Guid    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ms.locfileid: "104121982"
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Indirizzo di posta elettronica principale del contatto.
+description: Indirizzo di posta elettronica primario del contatto.
 ms.assetid: f4247d92-d343-4946-8b5a-99f98f239616
-title: System. Contact. PrimaryEmailAddress
+title: System.Contact.PrimaryEmailAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0ca86435948004bd14b7cb65e03105e159c7289
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac9769caf0264529bd7f984f57a3edecd1c833a367ff41fb801e2c1414876c74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091551"
 ---
-# <a name="systemcontactprimaryemailaddress"></a>System. Contact. PrimaryEmailAddress
+# <a name="systemcontactprimaryemailaddress"></a>System.Contact.PrimaryEmailAddress
 
-Indirizzo di posta elettronica principale del contatto
+Indirizzo di posta elettronica primario del contatto
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul metodo Api.DeserializeObjectFromColumn (JET_SESID, JET_TABLEID, JET_COLUMNID)
+description: 'Altre informazioni su: Metodo Api.DeserializeObjectFromColumn (JET_SESID, JET_TABLEID, JET_COLUMNID)'
 title: Metodo Api.DeserializeObjectFromColumn (JET_SESID, JET_TABLEID, JET_COLUMNID)
 TOCTitle: DeserializeObjectFromColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.DeserializeObjectFromColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID)
@@ -31,7 +31,7 @@ ms.locfileid: "118784537"
 
 Deserializzare un oggetto da una colonna.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -66,7 +66,7 @@ public static Object DeserializeObjectFromColumn(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 
@@ -95,6 +95,6 @@ Oggetto deserializzato. Null se la colonna è Null.
 
 [Membri api](./api-members.md)
 
-[Overload deserializeObjectFromColumn](./api.deserializeobjectfromcolumn-method.md)
+[Overload di DeserializeObjectFromColumn](./api.deserializeobjectfromcolumn-method.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

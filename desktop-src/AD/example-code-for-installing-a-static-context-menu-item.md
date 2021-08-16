@@ -1,27 +1,27 @@
 ---
-title: Codice di esempio per l'installazione di una voce di menu di scelta rapida statica
+title: Codice di esempio per l'installazione di una voce di menu di scelta rapida statico
 description: Nell'esempio di codice seguente vengono utilizzati due script.
 ms.assetid: 22d6a220-7712-4b07-a6d9-67dd748358a6
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33a8b6eb65706ad3adc9fd4c10b4c60f96a72848
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16e4ff9890aa73b1107fe511c3e41480b5db7f1bb68a8a264a990cf58a94ea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962320"
 ---
-# <a name="example-code-for-installing-a-static-context-menu-item"></a>Codice di esempio per l'installazione di una voce di menu di scelta rapida statica
+# <a name="example-code-for-installing-a-static-context-menu-item"></a>Codice di esempio per l'installazione di una voce di menu di scelta rapida statico
 
-Nell'esempio di codice seguente vengono utilizzati due script. Il primo script (Frommenu.vbs) è il comando che viene eseguito quando si seleziona la voce di menu. Il secondo script (Addmenu.vbs) installa la voce di menu di scelta rapida dell'identificatore di visualizzazione per eseguire lo script Frommenu.vbs. Questo esempio presuppone le impostazioni locali 409 (Stati Uniti) ed estende il menu di scelta rapida dell'oggetto utente in Active Directory snap-in amministrativi.
+Nell'esempio di codice seguente vengono utilizzati due script. Il primo script (Frommenu.vbs) è il comando che viene eseguito quando viene selezionata la voce di menu. Il secondo script (Addmenu.vbs) installa la voce di menu di scelta rapida dell'identificatore di visualizzazione per eseguire lo script Frommenu.vbs. Questo esempio presuppone le impostazioni locali 409 (inglese Stati Uniti) ed estende il menu di scelta rapida dell'oggetto utente negli snap-in amministrativi di Active Directory.
 
 Per eseguire il codice di esempio
 
-1.  Copiare il codice per Frommenu.vbs riportato di seguito, aprire il blocco note, incollare il codice nel blocco note, salvare il file come C: \\frommenu.vbs e chiudere il blocco note.
-2.  Copiare il codice per Addmenu.vbs riportato di seguito, aprire il blocco note, incollare il codice nel blocco note, salvare il file come C: \\addmenu.vbs e chiudere il blocco note.
+1.  Copiare il codice Frommenu.vbs seguente, aprire Blocco note, incollare il codice in Blocco note, salvare il file come C: \\frommenu.vbs e chiudere Blocco note.
+2.  Copiare il codice Addmenu.vbs seguente, aprire Blocco note, incollare il codice in Blocco note, salvare il file come C: \\addmenu.vbs e chiudere Blocco note.
 3.  Eseguire Addmenu.vbs.
-4.  Avviare lo snap-in utenti e computer Active Directory.
+4.  Avviare Utenti e computer di Active Directory snap-in.
 
 FROMMENU.VBS
 
@@ -126,9 +126,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,14 +16,14 @@ ms.locfileid: "118745123"
 ---
 # <a name="span-idwwan_profile_v3element_isadditionalpdpcontextprofilespanisadditionalpdpcontextprofile"></a><span id="WWAN_profile_v3.element_IsAdditionalPdpContextProfile"></span>IsAdditionalPdpContextProfile
 
-**L'elemento IsAdditionalPdpContextProfile** contiene un valore booleano **che** è true se si tratta di un profilo "contesto PDP (Packet Data Protocol) aggiuntivo" e **false**, in caso contrario.  Il valore predefinito **è false.**
+**L'elemento IsAdditionalPdpContextProfile** contiene un valore **booleano** **che** è true se si tratta di un profilo "contesto PDP (Packet Data Protocol) aggiuntivo" e **false** in caso contrario. Il valore predefinito **è false.**
 
-Un profilo "contesto PDP aggiuntivo" è un profilo che non viene attivato sulla porta predefinita della scheda fisica e l'impostazione di questo elemento su true garantisce che questo profilo non sia visualizzato in modo non appropriato nell'interfaccia utente.
+Un profilo "contesto PDP aggiuntivo" è un profilo che non viene attivato sulla porta predefinita della scheda fisica e l'impostazione di questo elemento su true garantisce che il profilo non sia visualizzato in modo non appropriato nell'interfaccia utente.
 
 Si noti che se questo elemento è impostato su true, deve essere true anche quanto segue.
 
 -   [**L'elemento IsDefault**](./schema-isdefault-mbnprofile-element.md) deve essere non specificato o impostato su **false** perché il profilo sia valido.
--   [**L'elemento ConnectionMode**](./schema-connectionmode-mbnprofile-element.md) deve essere non specificato o impostato su **manual** perché il profilo sia valido.
+-   Per [**la validità**](./schema-connectionmode-mbnprofile-element.md) del profilo,  l'elemento ConnectionMode deve essere non specificato o impostato su manual.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 

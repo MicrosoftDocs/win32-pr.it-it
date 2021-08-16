@@ -1,10 +1,10 @@
 ---
-description: Richiede l'output del framebuffer della destinazione di rendering, dell'evento e del frame specificati.
+description: Richiede l'output framebuffer della destinazione di rendering, dell'evento e del frame specificati.
 MS-HAID: vspixengine.IFrameBufferRequest\_RequestAsync\_DWORD\_EventID\_DWORD\_IFrameBufferCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IFrameBufferRequest:: RequestAsync'
+title: Metodo IFrameBufferRequest::RequestAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 93E9BDFE-3913-4242-A973-7C113B6663FB
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 35c50b78486f25051e14ce2811382875e1fab240
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f843a4ad0911f72c7b9aaf6ff51f8d4ff6953ff3baf2401d230bd1443739a88e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094861"
 ---
-# <a name="span-idvspixengineiframebufferrequest_requestasync_dword_eventid_dword_iframebuffercallback_ptr_dword_dwordspaniframebufferrequestrequestasync-method"></a><span id="vspixengine.iframebufferrequest_requestasync_dword_eventid_dword_iframebuffercallback_ptr_dword_dword"></span>Metodo IFrameBufferRequest:: RequestAsync
+# <a name="span-idvspixengineiframebufferrequest_requestasync_dword_eventid_dword_iframebuffercallback_ptr_dword_dwordspaniframebufferrequestrequestasync-method"></a><span id="vspixengine.iframebufferrequest_requestasync_dword_eventid_dword_iframebuffercallback_ptr_dword_dword"></span>Metodo IFrameBufferRequest::RequestAsync
 
-Richiede l'output del framebuffer della destinazione di rendering, dell'evento e del frame specificati.
+Richiede l'output framebuffer della destinazione di rendering, dell'evento e del frame specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,31 +44,31 @@ HRESULT RequestAsync(
 
 ## <a name="parameters"></a>Parametri
 
-*NumeroFrame*   
+*frameNumber*   
 Frame specificato.
 
-*eventID*   
+*Eventid*   
 Evento specificato.
 
 *renderTargetIndex*   
 Indice della destinazione di rendering specificata.
 
 *requestCallback*   
-Indirizzo di un callback utilizzato per notificare all'host i risultati.
+Indirizzo di un callback utilizzato per inviare una notifica all'host dei risultati.
 
 *requestCookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

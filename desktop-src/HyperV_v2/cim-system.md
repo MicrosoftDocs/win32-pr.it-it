@@ -73,7 +73,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName viene** combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
+Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName** viene combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. INFORMAZIONI \| GENERALI DMTF \| 001.4")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| General Information \| 001.4")
 </dt> </dl>
 
 Stringa che fornisce informazioni su come è possibile raggiungere il proprietario del sistema primario, ad esempio il numero di telefono, l'indirizzo di posta elettronica e così via.

@@ -1,7 +1,7 @@
 ---
 description: Usato per controllare la raccolta di metriche per uno o più elementi gestiti.
 ms.assetid: 3DC043ED-A790-4322-BF80-55961E9946C2
-title: Metodo ControlMetrics della classe Msvm_MetricService
+title: Metodo ControlMetrics della Msvm_MetricService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,14 +44,14 @@ uint32 ControlMetrics(
 *Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Istanza [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) che identifica gli elementi gestiti per i quali verranno raccolte le metriche. Se questo parametro è **Null,** verranno raccolte le  metriche per tutti gli elementi gestiti associati al parametro Definition.
+Istanza [**CiM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) che identifica gli elementi gestiti per i quali verranno raccolte le metriche. Se questo parametro è **Null,** verranno raccolte le  metriche per tutti gli elementi gestiti associati al parametro Definition.
 
 </dd> <dt>
 
 *Definizione* \[ Pollici\]
 </dt> <dd>
 
-Istanza [**di Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) che specifica le metriche che verranno raccolte. Se questo parametro è **Null,** verranno raccolte le metriche per tutte le definizioni associate all'elemento gestito identificato dal *parametro Subject*
+Istanza [**di \_ BaseMetricDefinition msvm**](msvm-basemetricdefinition.md) che specifica quali metriche verranno raccolte. Se questo parametro è **Null,** verranno raccolte le metriche per  tutte le definizioni associate all'elemento gestito identificato dal parametro Subject
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Abilitare la raccolta di metriche.
 
 </dt> <dd>
 
-Disabilitare la raccolta di metriche.
+Disabilitare la raccolta delle metriche.
 
 </dd> <dt>
 
@@ -97,14 +97,14 @@ Reimpostare i valori delle metriche.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32768..65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -134,7 +134,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 Questo metodo avrà esito negativo nelle istanze seguenti:
 
--   I *parametri Subject* e *Definition* sono entrambi **Null.**
+-   I *parametri Subject* e *Definition* sono **entrambi Null.**
 -   I *parametri Subject* e *Definition* sono entrambi diversi da **Null** e non esiste un'istanza di [**Msvm \_ MetricDefForME**](msvm-metricdefforme.md) che associa le due istanze.
 -   Il *parametro Definition* è un riferimento a un'istanza di [**Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) non associata a [**Msvm \_ MetricService**](msvm-metricservice.md) tramite [**Msvm \_ ServiceAffectsElement.**](msvm-serviceaffectselement.md)
 
@@ -146,7 +146,7 @@ Questo metodo avrà esito negativo nelle istanze seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

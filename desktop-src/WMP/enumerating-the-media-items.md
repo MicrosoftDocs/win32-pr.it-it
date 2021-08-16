@@ -3,31 +3,31 @@ title: Enumerazione degli elementi multimediali
 description: Enumerazione degli elementi multimediali
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
-- Media Player di Windows, playlist di sincronizzazione
-- Modello a oggetti di Windows Media Player, playlist di sincronizzazione
+- Windows Media Player, playlist di sincronizzazione
+- Windows Media Player a oggetti, playlist di sincronizzazione
 - modello a oggetti, playlist di sincronizzazione
-- Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX di Windows Media Player, playlist di sincronizzazione
-- Controllo ActiveX Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX, playlist di sincronizzazione
+- Windows Media Player dispositivi mobili, playlist di sincronizzazione
+- Windows Media Player ActiveX controllo, playlist di sincronizzazione
+- Windows Media Player controllo di ActiveX per dispositivi mobili, playlist di sincronizzazione
+- ActiveX, playlist di sincronizzazione
 - playlist, sincronizzazione
 - playlist di metafile, sincronizzazione
-- Playlist di Windows Media Metafile, sincronizzazione
+- Windows playlist di metafile multimediali, sincronizzazione
 - playlist di sincronizzazione, enumerazione
 - dispositivi portatili, enumerazione
 - enumerazioni, playlist di sincronizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8e07148ed6978355056febfb2ad920e4b1380a3
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 96f6afd6c209f96edd011b6b5829af07583057bd9220c61015d8e8ffa9fe4bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "106299414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650911"
 ---
 # <a name="enumerating-the-media-items"></a>Enumerazione degli elementi multimediali
 
-Il codice seguente consente di visualizzare gli elementi multimediali contenuti in una singola playlist. Questo codice viene eseguito quando l'utente fa clic su una playlist nel controllo ListView identificato da IDC \_ PLVIEW.
+Nel codice seguente vengono visualizzati gli elementi multimediali contenuti in una singola playlist. Questo codice viene eseguito quando l'utente fa clic su una playlist nel controllo ListView identificato da IDC \_ PLVIEW.
 
 
 ```C++
@@ -147,7 +147,7 @@ STDMETHODIMP CSyncSettings::ShowMedia(long lIndex)
 
 
 
-Per l'implementazione della funzione GetPartnershipSyncState, vedere [determinazione dello stato di sincronizzazione della playlist](determining-playlist-synchronization-state.md).
+Per l'implementazione della funzione GetPartnershipSyncState, vedere [Determining Playlist Synchronization State](determining-playlist-synchronization-state.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -162,9 +162,9 @@ Per l'implementazione della funzione GetPartnershipSyncState, vedere [determinaz
 [**Gestione delle playlist di sincronizzazione**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

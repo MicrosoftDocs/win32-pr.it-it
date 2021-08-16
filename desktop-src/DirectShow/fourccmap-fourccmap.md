@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore che fornisce il mapping tra i tipi DWORD di formato multimediale obsoleti e i sottotipi GUID. Questo metodo non usa parametri.
+description: Metodo costruttore che fornisce il mapping tra tipi DWORD in formato multimediale di vecchio stile e sottotipi GUID. Questo metodo non usa parametri.
 ms.assetid: 2152803c-f45f-43b0-9207-4eaeddf5eeb6
-title: 'Costruttore FOURCCMap:: FOURCCMap (fourcc. h)-nessun parametro'
+title: Costruttore FOURCCMap::FOURCCMap (Fourcc.h) - Nessun parametro
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd37ac842ab46c0d46fb3db1567d42274a026c47
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: d856589146103e599a1cf67d2090dd64af7107d1c221c46b9c93852f989ade9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015729"
 ---
-# <a name="fourccmapfourccmap-constructor-fourcch---no-parameters"></a>Costruttore FOURCCMap:: FOURCCMap (fourcc. h)-nessun parametro
+# <a name="fourccmapfourccmap-constructor-fourcch---no-parameters"></a>Costruttore FOURCCMap::FOURCCMap (Fourcc.h) - Nessun parametro
 
-Metodo del costruttore. Costruttore fornisce il mapping tra i tipi **DWORD** di formato multimediale obsoleti e i sottotipi **GUID** .
+Metodo del costruttore. Il constuctor fornisce il mapping tra i tipi DWORD in formato **multimediale** precedente e i **sottotipi GUID.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo costruttore non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo oggetto viene costruito con il codice **fourcc** , viene creato un **GUID** corrispondente. Se questo oggetto viene creato con un **GUID** esistente, il valore **fourcc** dell'oggetto viene impostato su zero. Successivamente, è possibile impostare o recuperare il valore **fourcc** usando rispettivamente le funzioni membro [**SetFOURCC**](fourccmap-setfourcc.md) e [**GetFOURCC**](fourccmap-getfourcc.md) .
+Se questo oggetto viene costruito con il **codice FOURCC,** viene creato un **GUID** per la corrispondenza. Se questo oggetto viene creato con un **GUID esistente,** il **valore FOURCC** dell'oggetto viene impostato su zero. Successivamente, il **valore FOURCC** può essere impostato o recuperato usando rispettivamente le funzioni membro [**SetFOURCC**](fourccmap-setfourcc.md) e [**GetFOURCC.**](fourccmap-getfourcc.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 | Requisito | Valore |
 |-|-|
-| Intestazione  | FourCC. h (include Streams. h) |
-| Libreria | Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione  | Fourcc.h (include Flussi.h) |
+| Libreria | Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 
 

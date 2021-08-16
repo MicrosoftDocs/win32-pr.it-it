@@ -25,9 +25,9 @@ Set ns = GetObject("LDAP:")
 
 
 
-Verrà aperto il provider LDAP e verrà preparato per il recupero dei dati. Non viene stabilita alcuna connessione fino a quando non vengono richiesti dati. Quando vengono richiesti dati, ADSI, con l'aiuto del servizio localizzatore, tenta di trovare il controller di dominio (DC) migliore per la connessione e stabilirà una connessione al server. Questo processo è noto come associazione serverless.
+Verrà aperto il provider LDAP e preparato per recuperare i dati. Non viene stabilita alcuna connessione fino a quando non vengono richiesti dati. Quando vengono richiesti dati, ADSI, con l'aiuto del servizio localizzatore, tenta di trovare il controller di dominio migliore per la connessione e stabilirà una connessione al server. Questo processo è noto come associazione serverless.
 
-ADSI consente inoltre di specificare il nome del server da utilizzare per la connessione.
+ADSI consente anche di specificare il nome del server da utilizzare per la connessione.
 
 
 ```VB
@@ -36,7 +36,7 @@ Set obj = GetObject("LDAP://mysrv01")
 
 
 
-In un altro scenario è possibile conoscere solo il nome di dominio, ma non il nome del server specifico. Anche in questo caso, ADSI consente di specificare il nome di dominio. In Windows 2000, il nome di dominio è rappresentato come un nome DNS. Ad esempio, se Joe Worden, l'amministratore di rete, sceglie di connettersi usando il nome di dominio, potrebbe usare l'esempio di codice seguente.
+In un altro scenario è possibile conoscere solo il nome di dominio, ma non il nome del server specifico. Anche in questo caso, ADSI consente di specificare il nome di dominio. In Windows 2000 il nome di dominio è rappresentato come nome DNS. Ad esempio, se Joe Worden, l'amministratore di rete, sceglie di connettersi usando il nome di dominio, potrebbe usare l'esempio di codice seguente.
 
 
 ```VB
@@ -51,7 +51,7 @@ ADSI si connetterà a uno dei controller di dominio nel fabrikam.com dominio.
 
 <dl> <dt>
 
-[Associazione a oggetti Active Directory](binding-to-active-directory-objects.md)
+[Associazione a oggetti di Active Directory](binding-to-active-directory-objects.md)
 </dt> </dl>
 
  

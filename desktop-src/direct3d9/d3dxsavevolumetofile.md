@@ -49,7 +49,7 @@ HRESULT D3DXSaveVolumeToFile(
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome file dell'immagine di destinazione. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati string viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file dell'immagine di destinazione. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Puntatore a una stringa che specifica il nome file dell'immagine di destinazione
 
 Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ FILEFORMAT che**](./d3dximage-fileformat.md) specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (con estensione ppm) e Dell'adattatore grafico Bitmap/Truevision (TGA).
+[**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md) che specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (.ppm) e Dell'adattatore grafico Persica/Truevision (.tga).
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntatore [**all'interfaccia IDirect3DVolume9**](/windows/win32/api/d3d9helper/n
 
 Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a [**una struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
+Puntatore a una [**struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ L'impostazione del compilatore determina anche la versione della funzione. Se un
 
 Questa funzione gestisce la conversione da e verso formati di trama compressi.
 
-Se il volume è non dinamico (a causa di un parametro di utilizzo impostato su 0 al momento della creazione) e si trova nella memoria video (il pool di memoria impostato su D3DPOOL \_ DEFAULT), [**D3DXSaveTextureToFile**](d3dxsavetexturetofile.md) avrà esito negativo perché D3DX non è in grado di bloccare i volumi non dinamici che si trovano nella memoria video.
+Se il volume non è dinamico (a causa di un parametro di utilizzo impostato su 0 al momento della creazione) e si trova nella memoria video (pool di memoria impostato su D3DPOOL \_ DEFAULT), [**D3DXSaveTextureToFile**](d3dxsavetexturetofile.md) avrà esito negativo perché D3DX non è in grado di bloccare i volumi non dinamici che si trovano nella memoria video.
 
 ## <a name="requirements"></a>Requisiti
 

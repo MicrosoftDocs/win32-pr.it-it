@@ -13,7 +13,7 @@ ms.locfileid: "118636925"
 ---
 # <a name="event-logging-windows-installer"></a>Registrazione eventi (Windows programma di installazione)
 
-[Windows eventi offre](../events/windows-events.md) una modalità standard e centralizzata per le applicazioni (e il sistema operativo) per registrare eventi software e hardware importanti. Il servizio di registrazione eventi archivia gli eventi provenienti da diverse origini in un'unica raccolta denominata *registro eventi*. Prima di Windows Vista, è necessario usare [Event Tracing for Windows](../etw/event-tracing-portal.md) (ETW) o Registrazione [eventi](../eventlog/event-logging.md) per registrare gli eventi. Windows Vista ha introdotto un nuovo modello di gestione degli eventi che unifica sia ETW che [l Windows aPI del registro](../wes/windows-event-log.md) eventi.
+[Windows eventi offre](../events/windows-events.md) una modalità standard e centralizzata per le applicazioni (e il sistema operativo) per registrare importanti eventi software e hardware. Il servizio di registrazione eventi archivia gli eventi provenienti da diverse origini in un'unica raccolta denominata *registro eventi*. Prima di Windows Vista, è necessario usare [Event Tracing for Windows](../etw/event-tracing-portal.md) (ETW) o Registrazione [eventi](../eventlog/event-logging.md) per registrare gli eventi. Windows Vista ha introdotto un nuovo modello di gestione degli eventi che unifica sia ETW che [l Windows aPI del registro](../wes/windows-event-log.md) eventi.
 
 Il programma di installazione scrive anche le voci nel registro eventi. Questi registrano eventi come i seguenti:
 
@@ -135,13 +135,13 @@ Per informazioni su come abilitare la registrazione dettagliata nel computer di 
 </tr>
 <tr class="even">
 <td>1023</td>
-<td>Prodotto: %1 : impossibile installare l'aggiornamento '%2'. Codice errore %3. Altre informazioni sono disponibili nel file di log %4.</td>
+<td>Prodotto: %1 - Impossibile installare l'aggiornamento '%2'. Codice errore %3. Altre informazioni sono disponibili nel file di log %4.</td>
 <td>Messaggio di errore che indica che il programma di installazione non è stato in grado di installare l'aggiornamento. Altre informazioni sono disponibili nel file di log. <strong>Windows Installer 2.0:</strong> Non disponibile.<br/></td>
 </tr>
 <tr class="odd">
 <td>1024</td>
-<td>Prodotto: %1 : impossibile installare l'aggiornamento '%2'. Codice errore %3.</td>
-<td>Messaggio di errore che indica che il programma di installazione non è stato in grado di installare l'aggiornamento. Per informazioni su come attivare l'accesso, vedere Abilitare la registrazione dettagliata nel <a href="windows-installer-best-practices.md">computer dell'utente</a> durante la risoluzione dei problemi relativi alla distribuzione. <strong>Windows Installer 2.0:</strong> Non disponibile.<br/></td>
+<td>Prodotto: %1 - Impossibile installare l'aggiornamento '%2'. Codice errore %3.</td>
+<td>Messaggio di errore che indica che il programma di installazione non è stato in grado di installare l'aggiornamento. Per informazioni su come attivare la registrazione, vedere Abilitare la registrazione dettagliata nel <a href="windows-installer-best-practices.md">computer dell'utente</a> durante la risoluzione dei problemi relativi alla distribuzione. <strong>Windows Installer 2.0:</strong> Non disponibile.<br/></td>
 </tr>
 <tr class="even">
 <td>1025</td>
@@ -171,7 +171,7 @@ Per informazioni su come abilitare la registrazione dettagliata nel computer di 
 <tr class="odd">
 <td>1030</td>
 <td>Prodotto: %1. L'applicazione ha provato a installare una versione più recente del file Windows protetto %2. Potrebbe essere necessario aggiornare il sistema operativo per il corretto funzionamento dell'applicazione. (Versione pacchetto: %3, Versione protetta del sistema operativo: %4).</td>
-<td>Messaggio di avviso che indica che l'installazione ha tentato di sostituire un file critico protetto da Windows <a href="windows-resource-protection-on-windows-vista.md">Resource Protection.</a> Per usare questa applicazione potrebbe essere necessario un aggiornamento del sistema operativo. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 e versioni precedenti:</a></strong> Non disponibile.<br/></td>
+<td>Messaggio di avviso che indica che l'installazione ha tentato di sostituire un file critico protetto Windows <a href="windows-resource-protection-on-windows-vista.md">Resource Protection.</a> Per usare questa applicazione potrebbe essere necessario un aggiornamento del sistema operativo. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 e versioni precedenti:</a></strong> Non disponibile.<br/></td>
 </tr>
 <tr class="even">
 <td>1031</td>

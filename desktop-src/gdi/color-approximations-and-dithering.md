@@ -1,25 +1,25 @@
 ---
-description: Sebbene un'applicazione possa usare il colore senza considerare le funzionalità di colore del dispositivo, l'output risultante potrebbe non essere informativo e piacevole come output per il quale viene scelto attentamente il colore.
+description: Anche se un'applicazione può usare il colore indipendentemente dalle funzionalità di colore del dispositivo, l'output risultante potrebbe non essere informativo e gradevole come output per cui il colore viene scelto con attenzione.
 ms.assetid: 008c8a8e-3456-4727-9b27-00b20ae880a2
-title: Approssimazioni di colori e dithering
+title: Approssimazioni dei colori e dithering
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a72e28dbc3ce20a42b53b5ff060d950719e2d861
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af9733259aff787856ac9c6fed68f708c3b580c6200b65652424264eef3c73d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761968"
 ---
-# <a name="color-approximations-and-dithering"></a>Approssimazioni di colori e dithering
+# <a name="color-approximations-and-dithering"></a>Approssimazioni dei colori e dithering
 
-Sebbene un'applicazione possa usare il colore senza considerare le funzionalità di colore del dispositivo, l'output risultante potrebbe non essere informativo e piacevole come output per il quale viene scelto attentamente il colore. Alcuni dispositivi garantiscono una corrispondenza esatta per ogni possibile valore di colore. di conseguenza, se un'applicazione richiede un colore che il dispositivo non può generare, il sistema si avvicina al colore usando un colore che il dispositivo può generare. Se, ad esempio, un'applicazione tenta di creare una penna rossa per una stampante nera e bianca, riceverà una penna nera, ma il sistema utilizzerà il nero come approssimazione per il rosso.
+Anche se un'applicazione può usare il colore indipendentemente dalle funzionalità di colore del dispositivo, l'output risultante potrebbe non essere informativo e gradevole come output per cui il colore viene scelto con attenzione. Pochi, se presenti, dispositivi garantiscono una corrispondenza esatta per ogni valore di colore possibile; Pertanto, se un'applicazione richiede un colore che il dispositivo non può generare, il sistema approssima tale colore usando un colore che il dispositivo può generare. Ad esempio, se un'applicazione tenta di creare una penna rossa per una stampante in bianco e nero, riceverà una penna nera invece il sistema usa il nero come approssimazione per il rosso.
 
-Un'applicazione è in grado di rilevare se il sistema apparirà approssimativamente un determinato colore utilizzando la funzione [**GetNearestColor**](/windows/desktop/api/Wingdi/nf-wingdi-getnearestcolor) . La funzione accetta un valore di colore e restituisce il valore del colore del colore corrispondente più vicino che il dispositivo può generare. Il metodo utilizzato dal sistema per determinare l'approssimazione dipende dal driver di dispositivo e dalle relative funzionalità di colore. Nella maggior parte dei casi, l'intensità complessiva del colore approssimativo è più vicina a quella del colore richiesto.
+Un'applicazione può individuare se il sistema approssima un determinato colore usando la [**funzione GetNearestColor.**](/windows/desktop/api/Wingdi/nf-wingdi-getnearestcolor) La funzione accetta un valore di colore e restituisce il valore del colore corrispondente più vicino che il dispositivo può generare. Il metodo utilizzato dal sistema per determinare questa approssimazione dipende dal driver di dispositivo e dalle relative funzionalità di colore. Nella maggior parte dei casi, l'intensità complessiva del colore approssimativo è più vicina a quella del colore richiesto.
 
-Quando un'applicazione crea una penna o imposta il colore per il testo, il sistema è sempre approssimato a un colore se non esiste alcuna corrispondenza esatta. Quando un'applicazione crea un pennello a tinta unita, il sistema può tentare di simulare il colore richiesto eseguendo la dithering. La *dithering* simula un colore alternando due o più colori in un modello. Ad esempio, è possibile simulare diverse sfumature di rosa alternando diverse combinazioni di rosso e bianco. A seconda dei colori e del modello, la dithering può produrre simulazioni ragionevoli. È particolarmente utile per i dispositivi monocromi, perché espande il numero di "colori" disponibili oltre il semplice bianco e nero.
+Quando un'applicazione crea una penna o imposta il colore per il testo, il sistema approssima sempre un colore se non esiste alcuna corrispondenza esatta. Quando un'applicazione crea un pennello a tinta unita, il sistema può tentare di simulare il colore richiesto tramite dithering. *Il dithering* simula un colore alternando due o più colori in un motivo. Ad esempio, diverse sfumature di rosa possono essere simulate alternando combinazioni diverse di rosso e bianco. A seconda dei colori e del modello, il dithering può produrre simulazioni ragionevoli. È particolarmente utile per i dispositivi monocromatici, perché espande il numero di "colori" disponibili ben oltre il semplice bianco e nero.
 
-Il metodo utilizzato per creare colori con divariato dipende dal driver di dispositivo. La maggior parte dei driver di dispositivo utilizza un algoritmo di rethering standard, che genera un modello basato sui valori di intensità dei colori rosso, verde e blu richiesti. In generale, qualsiasi colore richiesto che non può essere generato dal dispositivo è soggetto alla simulazione, ma un'applicazione non viene notificata quando il sistema simula un colore. Inoltre, un'applicazione non può modificare o modificare l'algoritmo di rethering del driver di dispositivo. Un'applicazione, tuttavia, può ignorare l'algoritmo creando e usando pennelli modello. In questo modo, l'applicazione crea i propri colori digitati combinando colori a tinta unita nella bitmap utilizzata per creare il pennello.
+Il metodo usato per creare colori con dithering dipende dal driver di dispositivo. La maggior parte dei driver di dispositivo usa un algoritmo di dithering standard, che genera un modello basato sui valori di intensità dei colori rosso, verde e blu richiesti. In generale, qualsiasi colore richiesto che non può essere generato dal dispositivo è soggetto a simulazione, ma un'applicazione non viene notificata quando il sistema simula un colore. Inoltre, un'applicazione non può modificare l'algoritmo di dithering del driver di dispositivo. Un'applicazione, tuttavia, può ignorare l'algoritmo creando e usando pennelli per modelli. In questo modo, l'applicazione crea i propri colori con dithering combinando i colori a tinta unita nella bitmap che usa per creare il pennello.
 
  
 

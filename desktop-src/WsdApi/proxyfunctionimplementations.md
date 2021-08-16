@@ -15,7 +15,7 @@ ms.locfileid: "118552430"
 
 Genera implementazioni per le funzioni proxy per le operazioni sul tipo di porta.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <proxyFunctionImplementations>

@@ -1,5 +1,5 @@
 ---
-description: Se il bit Bitmap Control è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text della tabella Control è una chiave esterna nella tabella Binary.
+description: Se il bit controllo bitmap è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text nella tabella Control è una chiave esterna nella tabella Binary.
 ms.assetid: ec774f31-7712-4a70-8c69-1cc731009049
 title: Attributo del controllo Bitmap
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118638740"
 ---
 # <a name="bitmap-control-attribute"></a>Attributo del controllo Bitmap
 
-Se il bit Bitmap Control è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text nella [tabella Control è](control-table.md) una chiave esterna nella tabella [Binary](binary-table.md).
+Se il bit controllo bitmap è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text nella [tabella Control è](control-table.md) una chiave esterna nella tabella [Binary](binary-table.md).
 
 Se questo bit non è impostato, il testo nel controllo viene specificato nella colonna Text della [tabella Control](control-table.md).
 
@@ -43,13 +43,13 @@ Se questo bit non è impostato, il testo nel controllo viene specificato nella c
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo in un controllo , includere il bit Bitmap nella colonna Attributes del record del controllo nella [tabella Control](control-table.md).
+Per impostare questo attributo su un controllo, includere il bit Bitmap nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-La colonna Text nella tabella Control viene usata come chiave esterna della tabella [Binary](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che testo.
+La colonna Text nella tabella Control viene usata come chiave esterna per la tabella [Binary](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che un testo.
 
-Non impostare entrambi i bit [Icona](icon-control-attribute.md) e Bitmap.
+Non impostare i bit [Icona](icon-control-attribute.md) e Bitmap.
 
-Vedere [Attributi di](control-attributes.md) controllo e il controllo che è necessario creare in [Controlli](controls.md).
+Vedere [Attributi di controllo](control-attributes.md) e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

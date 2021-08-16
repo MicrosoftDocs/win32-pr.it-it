@@ -44,10 +44,10 @@ typedef enum D3DVERTEXBLENDFLAGS {
 
 <dl> <dt>
 
-<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**D3DVBF \_ DISABLE**
+<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**DISABILITAZIONE D3DVBF \_**
 </dt> <dd>
 
-Disabilitare la fusione dei vertici; applica solo la matrice globale impostata dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore di indice per lo stato della trasformazione è 0.
+Disabilitare la fusione dei vertici; applica solo la matrice globale impostata dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore dell'indice per lo stato della trasformazione è 0.
 
 </dd> <dt>
 

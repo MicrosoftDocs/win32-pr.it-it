@@ -1,108 +1,108 @@
 ---
-title: Animazioni degli agenti Microsoft per il carattere Robby
-description: Animazioni degli agenti Microsoft per il carattere Robby
+title: Microsoft Agent Animations for Robby Character
+description: Microsoft Agent Animations for Robby Character
 ms.assetid: 05baf1ab-3217-4da4-9562-6719c58cd744
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 347c95fd6a29af72041d3b9e1192167d34602260
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8ef6cf0fc3d44f9783fe3d22f9f0d2b291e6acc51bd5bb72890af793ffe55156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609101"
 ---
-# <a name="microsoft-agent-animations-for-robby-character"></a>Animazioni degli agenti Microsoft per il carattere Robby
+# <a name="microsoft-agent-animations-for-robby-character"></a>Microsoft Agent Animations for Robby Character
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Il [carattere di Microsoft Agent Robby](https://www.microsoft.com/downloads/details.aspx?FamilyID=fa36d1d5-d828-494a-ad0a-7b571db5bd2e) è un lavoro di copyright di Microsoft Corporation.
+Il [carattere robby di Microsoft Agent](https://www.microsoft.com/downloads/details.aspx?FamilyID=fa36d1d5-d828-494a-ad0a-7b571db5bd2e) è un'opera con copyright di Microsoft Corporation.
 
-Robby supporta le animazioni elencate nella tabella seguente. Vedere [Programming the Microsoft Agent Server Interface](/windows/desktop/lwef/programming-the-microsoft-agent-server-interface) e [Programming the Microsoft Agent Control](programming-the-microsoft-agent-control.md) per informazioni su come chiamare le animazioni del carattere.
+Robby supporta le animazioni elencate nella tabella seguente. Per informazioni su come chiamare le animazioni del carattere, vedere Programming the Microsoft Agent Server Interface (Programmazione dell'interfaccia server di [Microsoft Agent)](/windows/desktop/lwef/programming-the-microsoft-agent-server-interface) e Programming the Microsoft Agent Control (Programmazione del controllo [Microsoft Agent).](programming-the-microsoft-agent-control.md)
 
-Se si accede a queste animazioni di caratteri utilizzando il protocollo HTTP e il metodo di [**preparazione**](/windows/desktop/lwef/iagentcharacter--prepare) del controllo [**Get**](get-method.md) o del server, valutare il modo in cui eseguirne il download. Anziché scaricare contemporaneamente tutte le animazioni, è possibile recuperare prima le animazioni dello stato di **visualizzazione** e di **pronuncia** . In questo modo sarà possibile visualizzare il carattere rapidamente e fare in modo che parli mentre si disattivano le altre animazioni in modo asincrono. Per assicurarsi che il caricamento dei dati di tipo carattere e animazione venga eseguito correttamente, utilizzare l'evento [**RequestComplete**](requestcomplete-event.md) . Se una richiesta di caricamento ha esito negativo, è possibile riprovare a caricare i dati o visualizzare un messaggio appropriato.
+Se si accede a queste animazioni di caratteri usando il protocollo HTTP e il metodo [**Get**](get-method.md) o [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) del controllo, prendere in considerazione il modo in cui verranno scaricate. Invece di scaricare tutte le animazioni contemporaneamente, è possibile recuperare prima le animazioni di stato **Showing** (Visualizzazione) e **Speaking** (Pronuncia). In questo modo sarà possibile visualizzare rapidamente il carattere e farlo parlare mentre altre animazioni vengono avviate in modo asincrono. Inoltre, per assicurarsi che i dati dei caratteri e delle animazioni siano caricati correttamente, usare [**l'evento RequestComplete.**](requestcomplete-event.md) Se una richiesta di caricamento non riesce, è possibile riprovare a caricare i dati o visualizzare un messaggio appropriato.
 
-Se un'animazione **restituisce** un'animazione viene definita usando i rami di uscita, non è necessario chiamarla in modo esplicito; Agent esegue automaticamente l'animazione **restituita** prima dell'animazione successiva. Tuttavia, se viene elencata un'animazione **restituita** , è necessario chiamare l'animazione utilizzando il metodo [**Play**](play-method.md) prima di un'altra animazione per fornire una transizione senza problemi. Se non è presente alcuna animazione **restituita** , l'animazione termina in genere senza che sia necessaria un'animazione di transizione.
+Se l'animazione **Return** di un'animazione viene definita usando rami Exit, non è necessario chiamarla in modo esplicito. Agent riproduce automaticamente **l'animazione Return** prima dell'animazione successiva. Tuttavia, se è **elencata** un'animazione Return, è necessario chiamare l'animazione usando il metodo [**Play**](play-method.md) prima di un'altra animazione per fornire una transizione uniforme. Se non è **elencata** alcuna animazione Return, l'animazione termina in genere senza che sia necessaria un'animazione di transizione.
 
-Il file di caratteri include effetti audio per alcune animazioni, come indicato nella tabella seguente. Gli effetti audio Riproduci solo se questa opzione è abilitata nella finestra delle proprietà di Microsoft Agent. È anche possibile disabilitare gli effetti audio nell'applicazione.
+Il file di caratteri include effetti audio per alcune animazioni, come illustrato nella tabella seguente. Gli effetti sonori vengono riprodotti solo se questa opzione è abilitata nella finestra delle proprietà di Microsoft Agent. È anche possibile disabilitare gli effetti audio nell'applicazione.
 
 
 
-| Animazione                 | Restituisci animazione         | Supporta l'espressione | Effetti audio | Assegnato a stato                            | Descrizione                                                |
+| Animazione                 | Restituire un'animazione         | Supporto per la pronuncia | Effetti sonori | Assegnato allo stato                            | Descrizione                                                |
 |---------------------------|--------------------------|-------------------|---------------|----------------------------------------------|------------------------------------------------------------|
-| **Riconoscere**           | nessuno                     | No                | **No**        | nessuno                                         | Cenni Head                                                  |
-| **Avviso**                 | Sì, uso di rami di uscita | Sì               | **No**        | **In ascolto**                                | Raddrizza                                                |
-| **Annunciare**              | Sì, uso di rami di uscita | Sì               | **Sì**       | nessuno                                         | Stampa carta e report                               |
-| **Blink**                 | nessuno                     | No                | **No**        |  **IdlingLevel2** IdlingLevel1<br/> | Lampeggia gli occhi                                                |
-| **Confusione**              | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Testa graffi                                             |
-| **Congratularmi**          | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Eleva le mani e quindi stringe le mani                             |
-| **Non accetto**               | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Genera la mano e scuote la testa                                |
-| **DoMagic1**              | nessuno                     | Sì               | **No**        | nessuno                                         | Rimuove il dispositivo                                             |
-| **DoMagic2**              | Sì, uso di rami di uscita | No                | **Sì**       | nessuno                                         | Viene visualizzata la pressione del pulsante e del raggio                            |
-| **DontRecognize**         | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Passa a orecchio                                          |
-| **Explain**               | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Movimenti con bracci                                         |
-| **GestureDown**           | Sì, uso di rami di uscita | Sì               | **No**        | **GesturingDown**                            | Movimenti in basso                                              |
-| **GestureLeft**           | Sì, uso di rami di uscita | Sì               | **No**        | **GesturingLeft**                            | Movimenti rimasti                                              |
-| **GestureRight**          | Sì, uso di rami di uscita | Sì               | **No**        | **GesturingRight**                           | Movimenti a destra                                             |
-| **GestureUp**             | Sì, uso di rami di uscita | Sì               | **No**        | **GesturingUp**                              | Movimenti verso l'alto                                                |
-| **Getattenzione**          | **GetAttentionReturn**   | Sì               | **No**        | nessuno                                         | Bracci d'onda                                                 |
-| **GetAttentionContinued** | **GetAttentionReturn**   | Sì               | **No**        | nessuno                                         | Di nuovo Waves Arms                                           |
-| **GetAttentionReturn**    | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **Greet**                 | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | In mano                                              |
-| **Udienza \_ 1**            | Sì, uso di rami di uscita | No                | **No**        | **Udito**                                  | Inclina la testa a destra ( \* animazione ciclo)                     |
-| **Udienza \_ 2**            | Sì, uso di rami di uscita | No                | **No**        | **Udito**                                  | Inclina il capo a sinistra ( \* animazione ciclo)                      |
-| **Udienza \_ 3**            | Sì, uso di rami di uscita | No                | **No**        | **Udito**                                  | Cocks Head Left ( \* animazione loop)                      |
-| **Udienza \_ 4**            | Sì, uso di rami di uscita | No                | **No**        | **Udito**                                  | Inclina l'intestazione verso il basso ( \* animazione ciclo)                      |
-| **Nascondi**                  | nessuno                     | No                | **Sì**       | **Nascondere**                                   | Scompare dalla porta                                    |
-| **Idle1 \_ 1**              | nessuno                     | No                | **No**        |  **IdlingLevel2** IdlingLevel1<br/> | Sguardi a destra                                              |
-| **Idle1 \_ 2**              | nessuno                     | No                | **No**        |  **IdlingLevel2** IdlingLevel1<br/> | Sguardi e lampeggi                                      |
-| **Idle1 \_ 3**              | nessuno                     | No                | **No**        |  **IdlingLevel2** IdlingLevel1<br/> | Sguardi in basso e lampeggia                                    |
-| **Idle1 \_ 4**              | nessuno                     | No                | **No**        |  **IdlingLevel2** IdlingLevel1<br/> | Sguardi a sinistra e a lampeggiamento                                    |
-| **Idle2 \_ 1**              | nessuno                     | No                | **No**        | **IdlingLevel2**                             | Riduzioni bracci                                                 |
-| **Idle2 \_ 2**              | nessuno                     | No                | **Sì**       | **IdlingLevel2**                             | Rimuove la testa e apporta la regolazione                          |
-| **Idle3 \_ 1**              | nessuno                     | No                | **No**        | **IdlingLevel3**                             | Noia                                                      |
-| **Idle3 \_ 2**              | nessuno                     | No                | **Sì**       | **IdlingLevel3**                             | Arresta                                                 |
-| **LookDown**              | **LookDownReturn**       | No                | **No**        | nessuno                                         | Cerca giù                                                 |
-| **LookDownReturn**        | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **LookLeft**              | **LookLeftReturn**       | No                | **No**        | nessuno                                         | A sinistra                                                 |
-| **LookLeftReturn**        | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **LookRight**             | **LookRightReturn**      | No                | **No**        | nessuno                                         | A destra                                                |
-| **LookRightReturn**       | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **Ricerca**                | **LookUpReturn**         | No                | **No**        | nessuno                                         | Cerca                                                   |
-| **LookUpReturn**          | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **MoveDown**              | Sì, uso di rami di uscita | No                | **Sì**       | **MovingDown**                               | Vola giù                                                 |
-| **MoveLeft**              | Sì, uso di rami di uscita | No                | **Sì**       | **MovingLeft**                               | Mosche a sinistra                                                 |
-| **MoveRight**             | Sì, uso di rami di uscita | No                | **Sì**       | **MovingRight**                              | Vola a destra                                                |
-| **MoveUp**                | Sì, uso di rami di uscita | No                | **Sì**       | **MovingUp**                                 | Vola su                                                   |
-| **Lieti**               | Sì, uso di rami di uscita | Sì               | **Sì**       | nessuno                                         | Smile e raddrizzamento                                  |
-| **Processo**               | No                       | No                | **Sì**       | nessuno                                         | Preme i pulsanti, stampa, letture, quindi esegue il lancio della stampa       |
-| **Elaborazione in corso**            | Sì, uso di rami di uscita | No                | **Sì**       | nessuno                                         | Preme i pulsanti, stampa, letture, quindi esegue il lancio della stampa       |
-| **Lettura**                  | **ReadReturn**           | Sì               | **Sì**       | nessuno                                         | Stampa, letture e ricerca                                |
-| **ReadContinued**         | **ReadReturn**           | Sì               | **Sì**       | nessuno                                         | Letture e ricerca                                         |
-| **ReadReturn**            | nessuno                     | No                | **Sì**       | nessuno                                         | Torna alla posizione neutra                                |
-| **Lettura**               | Sì, uso di rami di uscita | No                | **Sì**       | nessuno                                         | Stampa, letture e ricerca ( \* animazione ciclo)          |
-| **RestPose**              | nessuno                     | Sì               | **No**        | **Parlando**                                 | Posizione neutra                                           |
-| **Triste**                   | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Espressione triste                                             |
-| **Ricerca**                | No                       | No                | **Sì**       | nessuno                                         | Mostra la casella degli strumenti e rimuove lo strumento                           |
-| **Ricerca**             | Sì, uso di rami di uscita | No                | **Sì**       | nessuno                                         | Consente di visualizzare la casella degli strumenti e di rimuovere gli strumenti ( \* animazione ciclo)    |
-| **Mostra**                  | nessuno                     | No                | **Sì**       | **Visualizzazione**                                  | Viene visualizzato attraverso la porta                                    |
-| **StartListening**        | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Passa a orecchio                                           |
-| **StopListening**         | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Mette a disposizione gli orecchi                                       |
-| **Suggerisci**               | Sì, uso di rami di uscita | Sì               | **Sì**       | nessuno                                         | Visualizza lampadina                                         |
-| **Sorprendente**             | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Sembra sorpreso                                            |
-| **Pensare**                 | Sì, uso di rami di uscita | Sì               | **Sì**       | nessuno                                         | Testa graffi                                             |
-| **Pensare**              | No                       | No                | **Sì**       | nessuno                                         | Scratch Head ( \* animazione ciclo)                       |
-| **Incerto**             | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Alza                                                     |
-| **Onda**                  | Sì, uso di rami di uscita | Sì               | **No**        | nessuno                                         | Diverse fasi                                                      |
-| **Scrittura**                 | **WriteReturn**          | Sì               | **Sì**       | nessuno                                         | Rivela matita e appunti, scrive e cerca          |
-| **WriteContinued**        | **WriteReturn**          | Sì               | **Sì**       | nessuno                                         | Scrive e cerca                                        |
-| **WriteReturn**           | nessuno                     | No                | **No**        | nessuno                                         | Torna alla posizione neutra                                |
-| **Scrittura**               | Sì, uso di rami di uscita | No                | **Sì**       | nessuno                                         | Rivela matita e appunti, Scritture ( \* animazione ciclo) |
+| **Riconoscere**           | Nessuno                     | No                | **No**        | Nessuno                                         | Nods head                                                  |
+| **Avviso**                 | Sì, uso dei rami exit | Sì               | **No**        | **Ascolto**                                | Raddrizza                                                |
+| **Annunciare**              | Sì, uso dei rami exit | Sì               | **Sì**       | Nessuno                                         | Stampa carta e report                               |
+| **Blink**                 | Nessuno                     | No                | **No**        | **IdlingLevel1** **IdlingLevel2**<br/> | Lampeggia gli occhi                                                |
+| **Confusione**              | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Scratches head                                             |
+| **Congratularmi con**          | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Alza le mani e quindi stringe le mani                             |
+| **Non accetto**               | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Alza la mano e trema la testa                                |
+| **DoMagic1**              | Nessuno                     | Sì               | **No**        | Nessuno                                         | Rimuove il dispositivo                                             |
+| **DoMagic2**              | Sì, uso dei rami exit | No                | **Sì**       | Nessuno                                         | Preme il pulsante e viene visualizzato il trave                            |
+| **DontRecognize**         | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Tiene la mano all'ascolto                                          |
+| **Explain**               | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Movimenti con le mani                                         |
+| **GestureDown**           | Sì, uso dei rami exit | Sì               | **No**        | **GesturingDown**                            | Movimenti in basso                                              |
+| **GestureLeft**           | Sì, uso dei rami exit | Sì               | **No**        | **GesturingLeft**                            | Movimenti a sinistra                                              |
+| **GestureRight**          | Sì, con i rami exit | Sì               | **No**        | **GesturingRight**                           | Movimenti a destra                                             |
+| **GestureUp**             | Sì, con i rami exit | Sì               | **No**        | **GesturingUp**                              | Movimenti verso l'alto                                                |
+| **GetAttention**          | **GetAttentionReturn**   | Sì               | **No**        | Nessuno                                         | Onde di bracci                                                 |
+| **GetAttentionContinued** | **GetAttentionReturn**   | Sì               | **No**        | Nessuno                                         | Ondate di nuovo le bracci                                           |
+| **GetAttentionReturn**    | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **Greet**                 | Sì, con i rami exit | Sì               | **No**        | Nessuno                                         | Tiene la mano                                              |
+| **Udito \_ 1**            | Sì, con i rami exit | No                | **No**        | **Udito**                                  | Inclina la testa a destra \* (animazione a ciclo continuo)                     |
+| **Udito \_ 2**            | Sì, con i rami exit | No                | **No**        | **Udito**                                  | Inclina la testa a sinistra \* (animazione a ciclo continuo)                      |
+| **Udito \_ 3**            | Sì, con i rami exit | No                | **No**        | **Udito**                                  | Testa a sinistra \* (animazione a ciclo continuo)                      |
+| **Udito \_ 4**            | Sì, con i rami exit | No                | **No**        | **Udito**                                  | Inclina verso il basso \* (animazione a ciclo continuo)                      |
+| **Nascondi**                  | Nessuno                     | No                | **Sì**       | **Nascondere**                                   | Scompare attraverso la porta                                    |
+| **Inattivo 1 \_ 1**              | Nessuno                     | No                | **No**        | **IdlingLevel1** **IdlingLevel2**<br/> | Sguardi a destra                                              |
+| **Inattivo 1 \_ 2**              | Nessuno                     | No                | **No**        | **IdlingLevel1** **IdlingLevel2**<br/> | Sguardi verso l'alto e lampeggia                                      |
+| **Inattivo1 \_ 3**              | Nessuno                     | No                | **No**        | **IdlingLevel1** **IdlingLevel2**<br/> | Sguardi verso il basso e lampeggia                                    |
+| **Inattivo1 \_ 4**              | Nessuno                     | No                | **No**        | **IdlingLevel1** **IdlingLevel2**<br/> | Sguardi verso sinistra e lampeggia                                    |
+| **Inattivo 2 \_ 1**              | Nessuno                     | No                | **No**        | **IdlingLevel2**                             | Incrocia le bracci                                                 |
+| **Inattivo \_ 2 2**              | Nessuno                     | No                | **Sì**       | **IdlingLevel2**                             | Rimuove la testa ed esegue la regolazione                          |
+| **Inattivo3 \_ 1**              | Nessuno                     | No                | **No**        | **IdlingLevel3**                             | Sbadiglia                                                      |
+| **Inattivo3 \_ 2**              | Nessuno                     | No                | **Sì**       | **IdlingLevel3**                             | Spegne                                                 |
+| **LookDown**              | **LookDownReturn**       | No                | **No**        | Nessuno                                         | Cerca in basso                                                 |
+| **LookDownReturn**        | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **LookLeft**              | **LookLeftReturn**       | No                | **No**        | Nessuno                                         | Sembra a sinistra                                                 |
+| **LookLeftReturn**        | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **LookRight**             | **LookRightReturn**      | No                | **No**        | Nessuno                                         | Sembra a destra                                                |
+| **LookRightReturn**       | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **Ricerca**                | **LookUpReturn**         | No                | **No**        | Nessuno                                         | Cerca                                                   |
+| **LookUpReturn**          | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **MoveDown**              | Sì, uso dei rami exit | No                | **Sì**       | **MovingDown**                               | In basso                                                 |
+| **MoveLeft**              | Sì, uso dei rami exit | No                | **Sì**       | **MovingLeft**                               | 1000 a sinistra                                                 |
+| **MoveRight**             | Sì, uso dei rami exit | No                | **Sì**       | **MovingRight**                              | Diritto di controllo                                                |
+| **MoveUp**                | Sì, uso dei rami exit | No                | **Sì**       | **MovingUp**                                 | Res up                                                   |
+| **Contento**               | Sì, uso dei rami exit | Sì               | **Sì**       | Nessuno                                         | Smile e raddrizza                                  |
+| **Processo**               | No                       | No                | **Sì**       | Nessuno                                         | Preme i pulsanti, stampa, legge e quindi lancia la stampa       |
+| **Elaborazione in corso**            | Sì, uso dei rami exit | No                | **Sì**       | Nessuno                                         | Preme i pulsanti, stampa, legge e quindi lancia la stampa       |
+| **Lettura**                  | **ReadReturn**           | Sì               | **Sì**       | Nessuno                                         | Stampa, legge e cerca                                |
+| **ReadContinued**         | **ReadReturn**           | Sì               | **Sì**       | Nessuno                                         | Legge e cerca                                         |
+| **ReadReturn**            | Nessuno                     | No                | **Sì**       | Nessuno                                         | Torna alla posizione neutra                                |
+| **Lettura**               | Sì, uso dei rami exit | No                | **Sì**       | Nessuno                                         | Stampa, legge e cerca \* (animazione a ciclo continuo)          |
+| **RestPose**              | Nessuno                     | Sì               | **No**        | **Parlando**                                 | Posizione neutra                                           |
+| **Triste**                   | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Espressione tristia                                             |
+| **Ricerca**                | No                       | No                | **Sì**       | Nessuno                                         | Visualizza la casella degli strumenti e rimuove lo strumento                           |
+| **Ricerca**             | Sì, uso dei rami exit | No                | **Sì**       | Nessuno                                         | Visualizza la casella degli strumenti e rimuove gli strumenti \* (animazione a ciclo continuo)    |
+| **Mostra**                  | Nessuno                     | No                | **Sì**       | **Visualizzazione**                                  | Viene visualizzato attraverso l'ingresso                                    |
+| **Elenco di avvio**        | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Mette la mano all'ascolto                                           |
+| **Elenco di arresto**         | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Mette le mani sopra le mani                                       |
+| **Suggerisci**               | Sì, uso dei rami exit | Sì               | **Sì**       | Nessuno                                         | Visualizza la lampadina                                         |
+| **Sorpreso**             | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Sembra disdato                                            |
+| **Pensare**                 | Sì, uso dei rami exit | Sì               | **Sì**       | Nessuno                                         | Scratches head                                             |
+| **Pensando**              | No                       | No                | **Sì**       | Nessuno                                         | Scratches head \* (animazione a ciclo continuo)                       |
+| **Incerto**             | Sì, uso dei rami exit | Sì               | **No**        | Nessuno                                         | Shrugs                                                     |
+| **Onda**                  | Sì, con i rami exit | Sì               | **No**        | Nessuno                                         | Onde                                                      |
+| **Scrittura**                 | **WriteReturn**          | Sì               | **Sì**       | Nessuno                                         | Visualizza matita e Appunti, scrive e cerca          |
+| **WriteContinued**        | **WriteReturn**          | Sì               | **Sì**       | Nessuno                                         | Scrive e cerca                                        |
+| **WriteReturn**           | Nessuno                     | No                | **No**        | Nessuno                                         | Torna alla posizione neutra                                |
+| **Scrittura**               | Sì, con i rami exit | No                | **Sì**       | Nessuno                                         | Visualizza matita e Appunti, scrive \* (animazione a ciclo continuo) |
 
 
 
  
 
-\* Se si riproduce un'animazione di ciclo, è necessario usare [**Stop**](stop-method.md) per cancellarla prima che vengano riprodotte altre animazioni nella coda del carattere.
+\* Se si riproduce un'animazione a ciclo continuo, è necessario usare [**Arresta**](stop-method.md) per cancellarla prima che altre animazioni nella coda del carattere verranno riprodotte.
 
  
 

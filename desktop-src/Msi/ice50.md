@@ -1,5 +1,5 @@
 ---
-description: ICE50 verifica che le icone dei collegamenti siano specificate in modo da essere visualizzate correttamente e che corrispondano all'estensione del file di destinazione.
+description: ICE50 verifica che le icone dei collegamenti vengano visualizzate correttamente e corrispondano all'estensione del file di destinazione.
 ms.assetid: 19288c87-fddb-46c9-8145-59e1b870a261
 title: ICE50
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118635152"
 ---
 # <a name="ice50"></a>ICE50
 
-ICE50 verifica che le icone dei collegamenti siano specificate in modo da essere visualizzate correttamente e che corrispondano all'estensione del file di destinazione.
+ICE50 verifica che le icone dei collegamenti vengano visualizzate correttamente e corrispondano all'estensione del file di destinazione.
 
 ## <a name="result"></a>Risultato
 
-ICE50 invia un messaggio di errore se l'estensione dell'icona e dei file di destinazione non corrispondono. ICE50 invia un avviso se le icone vengono archiviate in file che non hanno .exe o con estensione ico.
+ICE50 invia un messaggio di errore se l'estensione dell'icona e i file di destinazione non corrispondono. ICE50 invia un avviso se le icone vengono archiviate in file che non hanno .exe o con estensione ico.
 
 ## <a name="example"></a>Esempio
 
@@ -28,7 +28,7 @@ ICE50 segnala l'errore seguente per l'esempio illustrato.
 | Errore o avviso ICE50                                                                                                              | Descrizione                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | L'estensione dell'icona 'Icon2.dat' per il collegamento 'Shortcut2' non corrisponde all'estensione del file di chiave per il componente 'Component2'. | Se le estensioni dell'icona e del file di destinazione non corrispondono, il collegamento non avrà il menu di scelta rapida corretto quando il componente viene annunciato. Per correggere l'errore, rinominare l'icona in modo che corrisponda all'estensione del file di destinazione.<br/> |
-| L'estensione dell'icona "Icon1.bat" per il collegamento "Shortcut1" non è "exe" o "ico". L'icona non verrà visualizzata correttamente.         | Non tutte le versioni della shell visualizzano correttamente le icone archiviate in file che non hanno estensioni "exe" o "ico". Per correggere l'avviso, rinominare l'icona con estensione "exe" o "ico".<br/>                                      |
+| L'estensione dell'icona 'Icon1.bat' per il collegamento 'Shortcut1' non è "exe" o "ico". L'icona non verrà visualizzata correttamente.         | Non tutte le versioni della shell visualizzano correttamente le icone archiviate nei file che non hanno estensioni "exe" o "ico". Per correggere questo avviso, rinominare l'icona con estensione "exe" o "ico".<br/>                                      |
 
 
 

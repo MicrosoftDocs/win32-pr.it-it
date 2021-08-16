@@ -1,5 +1,5 @@
 ---
-description: Le azioni personalizzate non gestite che chiamano librerie o script a collegamento dinamico possono accedere a un'installazione in esecuzione per eseguire query o modificare gli attributi della sessione di installazione corrente.
+description: Le azioni personalizzate non gestite che chiamano librerie a collegamento dinamico o script possono accedere a un'installazione in esecuzione per eseguire query o modificare gli attributi della sessione di installazione corrente.
 ms.assetid: cf70b0b3-ac81-47ab-a4c8-4db53ed9dc84
 title: Accesso alla sessione del programma di installazione corrente dall'interno di un'azione personalizzata
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118640190"
 ---
 # <a name="accessing-the-current-installer-session-from-inside-a-custom-action"></a>Accesso alla sessione del programma di installazione corrente dall'interno di un'azione personalizzata
 
-Le azioni personalizzate non gestite [](dynamic-link-libraries.md) che chiamano [](scripts.md) librerie o script a collegamento dinamico possono accedere a un'installazione in esecuzione per eseguire query o modificare gli attributi della sessione di installazione corrente. Per ogni **processo può** esistere un solo oggetto Session e gli script delle azioni personalizzate non devono tentare di creare un'altra sessione.
+Le azioni personalizzate non gestite [](dynamic-link-libraries.md) che chiamano librerie a collegamento dinamico o [script](scripts.md) possono accedere a un'installazione in esecuzione per eseguire query o modificare gli attributi della sessione di installazione corrente. Per ogni **processo può** esistere un solo oggetto Session e gli script delle azioni personalizzate non devono tentare di creare un'altra sessione.
 
 Le azioni personalizzate possono solo aggiungere, modificare o rimuovere righe, colonne o tabelle temporanee da un database. Le azioni personalizzate non possono modificare i dati persistenti in un database, ad esempio i dati che fanno parte del database archiviato su disco.
 
@@ -63,7 +63,7 @@ Non è possibile accedere alla sessione del programma di installazione corrente 
 
 [Azioni personalizzate di esecuzione posticipata](deferred-execution-custom-actions.md)
 
-Non è possibile accedere alla sessione corrente del programma di installazione o a tutti i dati delle proprietà da un'azione personalizzata di esecuzione posticipata. Per altre informazioni, vedere [Recupero di informazioni di contesto per azioni personalizzate di esecuzione posticipata.](obtaining-context-information-for-deferred-execution-custom-actions.md)
+Non è possibile accedere alla sessione corrente del programma di installazione o a tutti i dati delle proprietà da un'azione personalizzata di esecuzione posticipata. Per altre informazioni, vedere [Recupero di informazioni sul contesto per le azioni personalizzate di esecuzione posticipata.](obtaining-context-information-for-deferred-execution-custom-actions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

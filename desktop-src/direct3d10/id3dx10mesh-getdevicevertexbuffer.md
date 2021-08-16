@@ -1,5 +1,5 @@
 ---
-description: Accedere al vertex buffer della mesh dopo che è stato eseguito il commit nel dispositivo con ID3DX10Mesh::CommitToDevice. Questa operazione è diversa da ID3DX10Mesh::GetVertexBuffer, che restituisce il vertex buffer prima che ne sia stato eseguito il commit nel dispositivo.
+description: Accedere al buffer dei vertici della mesh dopo che è stato eseguito il commit nel dispositivo con ID3DX10Mesh::CommitToDevice. Questa operazione è diversa da ID3DX10Mesh::GetVertexBuffer, che restituisce il buffer dei vertici prima che ne sia stato eseguito il commit nel dispositivo.
 ms.assetid: 621d9105-e55d-47b8-8557-8adb7db19d66
 title: Metodo ID3DX10Mesh::GetDeviceVertexBuffer (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118540264"
 ---
 # <a name="id3dx10meshgetdevicevertexbuffer-method"></a>Metodo ID3DX10Mesh::GetDeviceVertexBuffer
 
-Accedere al vertex buffer della mesh dopo che è stato eseguito il commit nel dispositivo con [**ID3DX10Mesh::CommitToDevice**](id3dx10mesh-committodevice.md). Questa operazione è diversa da [**ID3DX10Mesh::GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), che restituisce il vertex buffer prima che ne sia stato eseguito il commit nel dispositivo.
+Accedere al buffer dei vertici della mesh dopo che è stato eseguito il commit nel dispositivo con [**ID3DX10Mesh::CommitToDevice**](id3dx10mesh-committodevice.md). Questa operazione è diversa da [**ID3DX10Mesh::GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), che restituisce il buffer dei vertici prima che ne sia stato eseguito il commit nel dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT GetDeviceVertexBuffer(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice che identifica il vertex buffer a cui accedere.
+Indice che identifica il buffer dei vertici a cui accedere.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Buffer dei vertici dopo che è stato eseguito il commit nel dispositivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 

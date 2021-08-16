@@ -92,7 +92,7 @@ public enum JET_prep
 <tr class="even">
 <td></td>
 <td>ReplaceNoLock</td>
-<td>Questo flag è simile a JET_prepReplace, ma non viene intrapreso alcun blocco per impedire ad altre sessioni di aggiornare questo record. Al contrario, questa sessione può ricevere JET_errWriteConflict quando chiama JetUpdate per completare l'aggiornamento.</td>
+<td>Questo flag è simile a JET_prepReplace, ma non viene effettuato alcun blocco per impedire ad altre sessioni di aggiornare questo record. Al contrario, questa sessione può ricevere JET_errWriteConflict quando chiama JetUpdate per completare l'aggiornamento.</td>
 </tr>
 <tr class="odd">
 <td></td>

@@ -4,12 +4,12 @@ description: Funzioni della finestra di dialogo
 ms.assetid: 7ea6445a-1772-4986-b4b7-27512afa680d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c44e63184a75a9bc3bddedc4f8c037719689fced
-ms.sourcegitcommit: 57e91b10658c36e28dd8ebe3e77d5b9bec4fbcc2
+ms.openlocfilehash: 23f8f59b0d231cc2029232cc8bcbd51ce527d26dfd095bd593fc4f0d4232d50b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "107509840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094631"
 ---
 # <a name="dialog-box-functions"></a>Funzioni della finestra di dialogo
 

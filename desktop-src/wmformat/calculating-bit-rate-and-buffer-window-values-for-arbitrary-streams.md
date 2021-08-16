@@ -1,6 +1,6 @@
 ---
-title: Calcolo della frequenza di bit e dei valori delle finestre del buffer per le Flussi
-description: Calcolo della frequenza di bit e dei valori delle finestre del buffer per le Flussi
+title: Calcolo della frequenza di bit e dei valori della finestra del buffer per le Flussi
+description: Calcolo della frequenza di bit e dei valori della finestra del buffer per le Flussi
 ms.assetid: 28ba863b-9c3e-4b0e-875d-6b696600888c
 keywords:
 - flussi, velocità in bit
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118434485"
 ---
-# <a name="calculating-bit-rate-and-buffer-window-values-for-arbitrary-streams"></a>Calcolo della frequenza di bit e dei valori delle finestre del buffer per le Flussi
+# <a name="calculating-bit-rate-and-buffer-window-values-for-arbitrary-streams"></a>Calcolo della frequenza di bit e dei valori della finestra del buffer per le Flussi
 
 Il calcolo della frequenza in bit corretta e della finestra del buffer per un tipo di flusso arbitrario non è un'operazione scientifica esatta. Un approccio semplice consiste nell'impostare la velocità in bit in modo che corrisponda alla dimensione del flusso divisa per la lunghezza, in secondi. Ad esempio, un flusso contenente un totale di 68000 bit di durata di 20 secondi potrebbe avere una velocità in bit di 3400 bit al secondo (68000 bit/20 secondi = 3400 bit al secondo).
 

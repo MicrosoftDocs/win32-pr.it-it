@@ -4,12 +4,12 @@ ms.assetid: 96b48917-1fbc-467f-b2b4-1a9673f1ee99
 title: PageBlackGenerationProcessingBlackInkLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c753554b240a5fef0012a81c533b6efe938075e
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a27d289ef82f5850a96d29bcb1d999c531a71bb3d9b7ce471abed3d4ac3d9d23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091901"
 ---
 # <a name="pageblackgenerationprocessingblackinklimit"></a>PageBlackGenerationProcessingBlackInkLimit
 

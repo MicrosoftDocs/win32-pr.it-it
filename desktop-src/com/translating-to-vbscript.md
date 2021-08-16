@@ -13,13 +13,13 @@ ms.locfileid: "118550585"
 ---
 # <a name="translating-to-vbscript"></a>Conversione in VBScript
 
-VBScript è un subset del linguaggio Visual Basic, Applications Edition Microsoft. Poiché VBScript è progettato per essere sicuro per l'uso in applicazioni lato client, ad esempio pagine Web, non fornisce input e output di file o l'accesso diretto al sistema operativo sottostante. In questo modo si impedisce a uno script basato sul Web di eliminare o modificare i file nel computer. Per un elenco completo delle Visual Basic non supportate in VBScript, vedere la documentazione Visual Basic, Applications Edition.
+VBScript è un subset del linguaggio Visual Basic, Applications Edition Microsoft. Poiché VBScript è progettato per essere sicuro per l'uso in applicazioni lato client, ad esempio le pagine Web, non fornisce l'input e l'output del file né l'accesso diretto al sistema operativo sottostante. In questo modo si impedisce a uno script basato sul Web di eliminare o modificare i file nel computer. Per un elenco completo delle Visual Basic non supportate in VBScript, vedere la documentazione Visual Basic, Applications Edition.
 
-Oltre alle funzionalità del linguaggio fornite da VBScript, l'host di scripting può anche esporre un modello a oggetti VBScript a cui lo script può accedere. Ad esempio, Internet Explorer un modello a oggetti che consente agli script di interagire con e controllare il browser a livello di codice. Per altre informazioni sull'uso di tali modelli a oggetti, vedere la documentazione sull'host di scripting.
+Oltre alle funzionalità del linguaggio fornite da VBScript, l'host di scripting può anche esporre un modello a oggetti VBScript a cui lo script può accedere. Ad esempio, Internet Explorer espone un modello a oggetti che consente agli script di interagire con e controllare il browser a livello di codice. Per altre informazioni sull'uso di tali modelli a oggetti, vedere la documentazione sull'host di scripting.
 
-Negli argomenti seguenti vengono descritti i problemi da considerare quando si traduce uno script in VBScript da JavaScript o JScript:
+Gli argomenti seguenti descrivono i problemi da considerare durante la conversione di uno script in VBScript da JavaScript o JScript:
 
--   [Traduzione in VBScript da JScript](translating-to-vbscript-from-jscript.md)
+-   [Conversione in VBScript da JScript](translating-to-vbscript-from-jscript.md)
 -   [Conversione in VBScript da JavaScript](translating-to-vbscript-from-javascript.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

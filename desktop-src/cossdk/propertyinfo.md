@@ -48,7 +48,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome della proprietà. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome della proprietà. Questa proprietà viene restituita quando il [**metodo della**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) proprietà Key o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                                                         |
 | Type           | string                                                                                                                                                                                           |
 | Predefinito        | nessuno                                                                                                                                                                                             |

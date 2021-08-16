@@ -1,7 +1,7 @@
 ---
-description: Il metodo di svuotamento esegue una query per determinare se il filtro sta attualmente scaricando.
+description: Il metodo IsFlushing esegue una query per determinare se il filtro è attualmente in fase di scaricamento.
 ms.assetid: 366b6162-7a2c-4882-8774-8b4bf83012b4
-title: Metodo CBaseInputPin. IsValid (Amfilter. h)
+title: Metodo CBaseInputPin.IsFlushing (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5af91e78d10f480596b8e0820ee6de4c4df2998
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf14abbf20d01f5e78284b65dd1159202146437f2492423c2eaa998a65ee412f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017059"
 ---
-# <a name="cbaseinputpinisflushing-method"></a>Metodo CBaseInputPin. di scaricamento
+# <a name="cbaseinputpinisflushing-method"></a>Metodo CBaseInputPin.IsFlushing
 
-Il `IsFlushing` metodo esegue una query per determinare se il filtro sta attualmente scaricando.
+Il `IsFlushing` metodo esegue una query per determinare se il filtro è attualmente in fase di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la variabile membro [**CBaseInputPin:: m \_ bFlushing**](cbaseinputpin-m-bflushing.md) .
+Restituisce la [**variabile membro \_ bFlushing CBaseInputPin::m.**](cbaseinputpin-m-bflushing.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la variabile membro [**CBaseInputPin:: m \_ bFlushing**](cbaseinputp
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

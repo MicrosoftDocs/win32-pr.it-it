@@ -1,5 +1,5 @@
 ---
-description: 'Membro CImagePalette::m_pFilter: la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
+description: 'Membro CImagePalette::m_pFilter : la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
 ms.assetid: f1a75a75-5f5c-420d-a7ab-5f0f03c6afb1
 title: Membro CImagePalette::m_pFilter (Winutil.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118402541"
 ---
-# <a name="cimagepalettem_pfilter-member"></a>Membro CImagePalette::m \_ pFilter
+# <a name="cimagepalettem_pfilter-member"></a>Membro PFilter CImagePalette::m \_
 
 La `m_pFilter` variabile membro è un puntatore al filtro proprietario.
 

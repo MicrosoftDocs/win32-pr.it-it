@@ -34,7 +34,7 @@ Numero di contesto dell'argomento della Guida associato [**all'oggetto**](/windo
 
 </dd> </dl>
 
-Se è stata creata una Windows file della Guida per l'applicazione e impostata nella proprietà [**HelpFile del**](helpfile-property.md) carattere. Microsoft Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property-com.md), Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
+Se è stato creato un Windows file della Guida per l'applicazione e si imposta questo valore nella proprietà [**HelpFile del**](helpfile-property.md) carattere. Microsoft Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property-com.md), Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
 
 > [!Note]  
 > La compilazione di un file della Guida richiede il compilatore della Guida Windows Microsoft.

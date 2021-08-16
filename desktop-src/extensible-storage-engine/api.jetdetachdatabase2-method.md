@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo Api.JetDetachDatabase2'
+description: Altre informazioni sul metodo Api.JetDetachDatabase2
 title: Metodo Api.JetDetachDatabase2
 TOCTitle: 'JetDetachDatabase2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetDetachDatabase2(Microsoft.Isam.Esent.Interop.JET_SESID,System.String,Microsoft.Isam.Esent.Interop.DetachDatabaseGrbit)
@@ -35,7 +35,7 @@ ms.locfileid: "118784343"
 
 Rilascia un file di database precedentemente collegato a una sessione di database.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

@@ -4,16 +4,16 @@ description: Evento HelpComplete
 ms.assetid: d805f089-154f-4b39-9d78-a02b732f87ed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3984f4b67eaed6bc9226685e927c35e151c11e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8a41b4dc0b1b6767b113220f2a922d1a512132a2cd7754891acb9c99b92d0039
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478996"
 ---
 # <a name="helpcomplete-event"></a>Evento HelpComplete
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,15 +27,15 @@ Indica che la modalità della Guida sensibile al contesto è stata chiusa.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-Agente **secondario** *. * * * (ByVal* *  *CharacterID * * *, ByVal* *  *Name * * *, ByVal* *  *causare * * *)**
+**Sub** *agent.***(ByVal* *  *CharacterID***, ByVal* *  *Name***, ByVal* *  *Cause***)**
 
 
 
 | Parte          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *CharacterID* | Restituisce l'ID del carattere selezionato sotto forma di stringa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| *CharacterID* | Restituisce l'ID del carattere su cui è stato fatto clic come stringa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | *Nome*        | Restituisce un valore stringa che identifica il nome (ID) del comando.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| *Causa*       | Restituisce un valore che indica la causa del completamento della modalità della guida. 1 l'utente ha selezionato un comando fornito dall'applicazione.<br/> 2 l'utente ha selezionato l'oggetto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) di un altro client.<br/> 3 l'utente ha selezionato il comando Open Voice Commands.<br/> 4 l'utente ha selezionato il comando Chiudi voce comandi.<br/> 5 l'utente ha selezionato il comando Mostra *caratteriname* .<br/> 6 l'utente ha selezionato il comando Nascondi *caratterename* .<br/> 7 l'utente ha selezionato (selezionato) il carattere.<br/> |
+| *Causa*       | Restituisce un valore che indica la causa del completamento della modalità Guida. 1 L'utente ha selezionato un comando fornito dall'applicazione.<br/> 2 L'utente ha selezionato [**l'oggetto Commands**](/windows/desktop/lwef/the-commands-collection-object) di un altro client.<br/> 3 L'utente ha selezionato il comando Apri comandi vocali.<br/> 4 L'utente ha selezionato il comando Chiudi comandi vocali.<br/> 5 L'utente ha selezionato il comando *Show CharacterName.*<br/> 6 L'utente ha selezionato il *comando Nascondi CharacterName.*<br/> 7 L'utente ha selezionato (selezionato) il carattere.<br/> |
 
 
 
@@ -45,13 +45,13 @@ Agente **secondario** *. * * * (ByVal* *  *CharacterID * * *, ByVal* *  *Name * 
 
 ### <a name="remarks"></a>Commenti
 
-In genere, la modalità della guida viene completata quando l'utente fa clic o trascina il carattere o seleziona un comando dal menu di scelta rapida del carattere. Se si fa clic su un altro carattere o altrove sullo schermo, la modalità della guida non viene annullata. Il client che imposta la modalità della Guida per il carattere può annullare la modalità della Guida impostando [**HelpModeOn**](helpmodeon-property.md) su **false**. (L'evento **HelpComplete** non viene attivato).
+In genere, la modalità Guida viene completata quando l'utente fa clic o trascina il carattere o seleziona un comando dal menu a comparsa del carattere. Facendo clic su un altro carattere o altrove sullo schermo non viene annullata la modalità Guida. Il client che imposta la modalità Guida per il carattere può annullare la modalità Guida impostando [**HelpModeOn**](helpmodeon-property.md) su **False.** Questa operazione non attiva **l'evento HelpComplete.**
 
-Quando l'utente seleziona un comando dal menu popup del carattere in modalità guida, il server rimuove il menu, chiama la guida con il [**HelpContextID**](helpcontextid-property.md)specificato del comando e invia questo evento. L'oggetto sensibile al contesto (noto anche come?) La finestra della guida viene visualizzata nella posizione del puntatore. Se l'utente seleziona il comando in base all'input vocale, la finestra della guida viene visualizzata sopra il carattere. Se il carattere è esterno allo schermo, la finestra viene visualizzata sullo schermo più vicino alla posizione corrente del carattere.
+Quando l'utente seleziona un comando dal menu a comparsa del carattere in modalità Guida, il server rimuove il menu, chiama la Guida con il [**valore HelpContextID**](helpcontextid-property.md)specificato dal comando e invia questo evento. Sensibile al contesto (noto anche come What's This?) La finestra della Guida viene visualizzata nella posizione del puntatore. Se l'utente seleziona il comando tramite input vocale, viene visualizzata la finestra della Guida sul carattere. Se il carattere è fuori schermo, la finestra viene visualizzata sullo schermo più vicina alla posizione corrente del carattere.
 
-Se il server restituisce un nome come stringa vuota (""), indica che l'utente ha selezionato un comando fornito dal server.
+Se il server restituisce Name come stringa vuota (""), indica che l'utente ha selezionato un comando fornito dal server.
 
-Questo evento viene inviato solo all'applicazione client che inserisce il carattere in modalità guida.
+Questo evento viene inviato solo all'applicazione client che imposta il carattere in modalità Guida.
 
 ### <a name="see-also"></a>Vedere anche
 

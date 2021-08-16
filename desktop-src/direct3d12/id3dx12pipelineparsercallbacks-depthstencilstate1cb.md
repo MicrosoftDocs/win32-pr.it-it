@@ -1,6 +1,6 @@
 ---
 title: Metodo ID3DX12PipelineParserCallbacks DepthStencilState1Cb (D3DX12.h)
-description: Chiama il callback depth stencil oggetto secondario D3D12 \_ DEPTH STENCIL DESC1 di un oggetto \_ \_ che implementa questa interfaccia.
+description: Chiama il callback depth stencil dell'oggetto secondario D3D12 \_ DEPTH STENCIL DESC1 di un oggetto \_ \_ che implementa questa interfaccia.
 ms.assetid: C1AE06E5-B1FF-44C2-9C56-1540B97AD883
 keywords:
 - Metodo DepthStencilState1Cb
@@ -26,7 +26,7 @@ ms.locfileid: "118528969"
 ---
 # <a name="id3dx12pipelineparsercallbacksdepthstencilstate1cb-method"></a>Metodo ID3DX12PipelineParserCallbacks::D epthStencilState1Cb
 
-Chiama il callback depth stencil oggetto secondario [**D3D12 \_ DEPTH \_ STENCIL \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)) di un oggetto che implementa questa interfaccia.
+Chiama il callback depth stencil dell'oggetto secondario [**D3D12 \_ DEPTH \_ STENCIL \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)di un oggetto che implementa questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ void DepthStencilState1Cb(
 
 Tipo: **const [**D3D12 \_ DEPTH STENCIL \_ \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)**
 
-Dettagli del sottooggetto depth stencil stato della pipeline analizzato da un flusso di stato della pipeline.
+Dettagli del sottooggetto depth stencil stato analizzato da un flusso di stato della pipeline.
 
 </dd> </dl>
 

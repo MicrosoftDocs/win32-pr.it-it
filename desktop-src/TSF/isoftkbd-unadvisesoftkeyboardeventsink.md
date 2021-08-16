@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc. h)
+title: Metodo ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc.h)
 description: Il metodo ISoftKbd UnadviseSoftKeyboardEventSink rimuove un sink di evento della tastiera soft.
 ms.assetid: 785340bd-c4f6-4c80-a492-6e60d1c1d552
 keywords:
-- Framework servizi di testo Metodo UnadviseSoftKeyboardEventSink
-- Framework dei servizi di testo del metodo UnadviseSoftKeyboardEventSink, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo UnadviseSoftKeyboardEventSink
+- Metodo UnadviseSoftKeyboardEventSink Framework servizi di testo
+- Metodo UnadviseSoftKeyboardEventSink Framework servizi di testo , interfaccia ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo metodo , UnadviseSoftKeyboardEventSink
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a77129d1b5df024964af4ab19318963708d4b3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90552c09e47d8a51f413f0588b12c8da5d44e665a6a5a51a79dc31717c6d56c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877111"
 ---
-# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>Metodo ISoftKbd:: UnadviseSoftKeyboardEventSink
+# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>Metodo ISoftKbd::UnadviseSoftKeyboardEventSink
 
-Il metodo **ISoftKbd:: UnadviseSoftKeyboardEventSink** rimuove un sink di evento della tastiera soft.
+Il **metodo ISoftKbd::UnadviseSoftKeyboardEventSink** rimuove un sink di evento della tastiera soft.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ HRESULT UnadviseSoftKeyboardEventSink(
 
 <dl> <dt>
 
-*TID* \[ in\]
+*tid* \[ Pollici\]
 </dt> <dd>
 
-Identificatore del client proprietario del sink di evento della tastiera soft. Questo valore è stato passato quando è stato installato il sink di evento utilizzando [ISoftKbd:: AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
+Identificatore del client proprietario del sink di evento della tastiera soft. Questo valore è stato passato quando il sink di evento è stato installato [usando ISoftKbd::AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                                   | Descrizione                                                   |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                    | Il metodo è stato eseguito correttamente.<br/>                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | Il parametro *TID* non è valido.<br/>                    |
-| <dl> <dt>**Connetti \_ E \_ NOCONNECTION**</dt> </dl> | Il sink di notifica identificato da *TID* non è stato trovato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Il metodo è stato eseguito correttamente.<br/>                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | Il *parametro tid* non è valido.<br/>                    |
+| <dl> <dt>**CONNECT \_ E \_ NOCONNECTION**</dt> </dl> | Il sink di consulenza identificato *da tid* non è stato trovato.<br/> |
 
 
 
@@ -73,9 +73,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

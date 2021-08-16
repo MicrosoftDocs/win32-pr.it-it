@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630914"
 ---
-# <a name="installerfileattributes-property"></a>Installer.FileAttributes - proprietà
+# <a name="installerfileattributes-property"></a>Proprietà Installer.FileAttributes
 
 La **proprietà FileAttributes** dell'oggetto [**Installer**](installer-object.md) restituisce un numero che rappresenta gli attributi di file combinati per il percorso designato di un file o di una cartella.
 
@@ -67,10 +67,10 @@ Restituisce -1 se il file o la cartella non esiste o non è accessibile.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | Intestazione<br/>  | <dl> <dt>Windows.storage.h</dt> </dl>                                                                                                                                                            |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

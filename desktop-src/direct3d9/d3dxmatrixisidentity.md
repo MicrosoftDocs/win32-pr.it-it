@@ -1,7 +1,7 @@
 ---
 description: Determina se una matrice è una matrice di identità.
 ms.assetid: 00f72d08-5d4b-4310-8167-e6b6371d24fd
-title: Funzione D3DXMatrixIsIdentity (D3dx9math. h)
+title: Funzione D3DXMatrixIsIdentity (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c2ca91f74512b432d7cc18b28cef44d713cfc11
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 913034d9cf3781dce4bb8c1ee643eac90bd23054300fbaa8b0a55eab62914958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044869"
 ---
-# <a name="d3dxmatrixisidentity-function"></a>D3DXMatrixIsIdentity (funzione)
+# <a name="d3dxmatrixisidentity-function"></a>Funzione D3DXMatrixIsIdentity
 
 Determina se una matrice è una matrice di identità.
 
@@ -40,20 +40,20 @@ BOOL D3DXMatrixIsIdentity(
 
 <dl> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che verrà testata per l'identità.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che verrà testata per l'identità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se la matrice è una matrice di identità, la funzione restituisce **true**. In caso contrario, la funzione restituisce **false**.
+Se la matrice è una matrice di identità, questa funzione restituisce **TRUE.** In caso contrario, questa funzione restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se la matrice è una matrice di identità, la funzione restituisce **true**. In 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

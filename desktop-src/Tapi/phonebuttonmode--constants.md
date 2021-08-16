@@ -22,7 +22,7 @@ Le costanti del flag di bit **PHONEBUTTONMODE \_** descrivono le classi di pulsa
 
 
 
-Il pulsante viene assegnato all'aspetto di una chiamata.
+Il pulsante viene assegnato a un aspetto di chiamata.
 
 
 </dt> </dl> </dd> <dt>
@@ -37,12 +37,12 @@ Il pulsante è un pulsante "soft" associato allo schermo del telefono. Un set di
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONEBUTTONMODE_DUMMY"></span><span id="phonebuttonmode_dummy"></span>**PHONEBUTTONMODE \_ FITTIZIO**
+<span id="PHONEBUTTONMODE_DUMMY"></span><span id="phonebuttonmode_dummy"></span>**PHONEBUTTONMODE \_ DUMMY**
 </dt> <dd> <dl> <dt>
 
 
 
-Questo valore viene usato per descrivere la posizione di un pulsante/lampione che non ha un pulsante corrispondente ma ha solo una lampione.
+Questo valore viene usato per descrivere una posizione di pulsante/lampione che non ha un pulsante corrispondente, ma ha solo una lampadina.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Questo valore viene usato per descrivere la posizione di un pulsante/lampione ch
 
 
 
-Il pulsante viene assegnato alla richiesta di funzionalità dal commutatore, ad esempio attesa, conferenza e trasferimento.
+Il pulsante viene assegnato alla richiesta di funzionalità dal commutatore, ad esempio blocco, conferenza e trasferimento.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,12 +62,12 @@ Il pulsante viene assegnato alla richiesta di funzionalità dal commutatore, ad 
 
 
 
-Il pulsante è uno dei dodici pulsanti del tastierino, da 0 a 9, ' \* ' e ' \# '.
+Il pulsante è uno dei dodici pulsanti della tastiera, da 0 a 9, ' \* ' e ' \# '.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONEBUTTONMODE_LOCAL"></span><span id="phonebuttonmode_local"></span>**PHONEBUTTONMODE \_ LOCAL**
+<span id="PHONEBUTTONMODE_LOCAL"></span><span id="phonebuttonmode_local"></span>**PHONEBUTTONMODE \_ LOCALE**
 </dt> <dd> <dl> <dt>
 
 

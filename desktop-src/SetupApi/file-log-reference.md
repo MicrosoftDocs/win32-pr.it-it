@@ -1,21 +1,21 @@
 ---
-description: Nella sezione seguente sono elencate le funzioni di configurazione che forniscono funzionalità di log dei file.
+description: La sezione seguente elenca le funzioni di installazione che forniscono funzionalità di log dei file.
 ms.assetid: 773c0a1d-f1e1-47e4-b277-8704c58a0be0
-title: Riferimento al log file
+title: Informazioni di riferimento sul log dei file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fee243ea44cf228ffd52f3d443296d163213bc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d80e21203a0365977a6468a43a4723b59f129fd1b5d525b590386f6208bdcf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887070"
 ---
-# <a name="file-log-reference"></a>Riferimento al log file
+# <a name="file-log-reference"></a>Informazioni di riferimento sul log dei file
 
-Nella sezione seguente sono elencate le funzioni di configurazione che forniscono funzionalità di log dei file:
+La sezione seguente elenca le funzioni di installazione che forniscono funzionalità di log dei file:
 
--   [Funzioni log file](file-log-functions.md)
+-   [Funzioni di log dei file](file-log-functions.md)
 
  
 

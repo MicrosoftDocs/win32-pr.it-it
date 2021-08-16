@@ -16,7 +16,7 @@ ms.locfileid: "118436354"
 
 Inviato come segnale che una finestra o un'applicazione deve terminare.
 
-Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -80,7 +80,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 
 Un'applicazione può richiedere conferma all'utente, prima di eliminare una finestra, elaborando il messaggio **WM \_ CLOSE** e chiamando la funzione [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) solo se l'utente conferma la scelta.
 
-Per impostazione predefinita, la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) chiama la [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) per eliminare la finestra.
+Per impostazione predefinita, [**la funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) chiama la [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) per eliminare la finestra.
 
 ## <a name="requirements"></a>Requisiti
 

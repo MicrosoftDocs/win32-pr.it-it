@@ -1,41 +1,41 @@
 ---
-description: Viene illustrato come usare le funzioni CryptMsgOpenToEncode, CryptMsgOpenToDecode e CryptMsgUpdate con la struttura delle \_ informazioni di flusso di CMSG \_ per codificare e decodificare un messaggio usando le funzionalità di streaming di queste funzioni.
+description: Illustra come usare le funzioni CryptMsgOpenToEncode, CryptMsgOpenToDecode e CryptMsgUpdate con la struttura CMSG STREAM INFO per codificare e decodificare un messaggio usando le funzionalità di streaming di queste \_ \_ funzioni.
 ms.assetid: 6c9c0509-1ad9-42cd-9589-e77752df6739
-title: 'Esempio di programma C: codifica e decodifica di un messaggio tramite un flusso'
+title: 'Programma C di esempio: codifica e decodifica di un messaggio tramite un flusso'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 962420bfba05caabb272419e305ee01f76d39c63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eef428d7c6c0b175623bfa4811c4043bcd7bdaef3e05afea24a288f6629b8e0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765653"
 ---
-# <a name="example-c-program-encoding-and-decoding-a-message-using-a-stream"></a>Esempio di programma C: codifica e decodifica di un messaggio tramite un flusso
+# <a name="example-c-program-encoding-and-decoding-a-message-using-a-stream"></a>Programma C di esempio: codifica e decodifica di un messaggio tramite un flusso
 
-Nell'esempio seguente viene illustrato come usare le funzioni [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode)e [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) con la struttura [**delle \_ \_ informazioni di flusso di CMSG**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) per codificare e decodificare un messaggio usando le funzionalità di streaming di queste funzioni.
+L'esempio seguente illustra come usare le funzioni [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode)e [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) con la struttura [**CMSG \_ STREAM \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) per codificare e decodificare un messaggio usando le funzionalità di streaming di queste funzioni.
 
-La firma e la codifica di un messaggio non garantiscono la privacy del messaggio. Ma garantisce l'autenticità del messaggio. Poiché il messaggio viene firmato con la chiave privata del mittente, quando il ricevitore del messaggio decrittografa la firma con la [*chiave pubblica*](../secgloss/p-gly.md) del mittente (disponibile dal certificato inviato insieme al messaggio), il destinatario può essere sicuro che il messaggio sia stato inviato dalla persona o dall'entità associata al certificato e che il messaggio non sia stato modificato dopo la firma.
+La firma e la codifica di un messaggio non garantiscono la privacy del messaggio. Garantisce invece l'autenticità del messaggio. Poiché il messaggio viene firmato con la chiave privata del mittente, quando il destinatario del messaggio decrittografa la firma con la chiave pubblica del mittente [*(disponibile*](../secgloss/p-gly.md) dal certificato inviato insieme al messaggio), il destinatario può essere sicuro che il messaggio sia stato inviato dalla persona o dall'entità associata al certificato e che il messaggio non sia stato modificato dopo la firma.
 
-Questa parte relativa alla firma della codifica di questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
+Questa parte della firma di codifica di questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
 
--   Apertura di un archivio certificati utilizzando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Recupero di un certificato con un nome soggetto specifico utilizzando [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Recupero e stampa del nome del soggetto di un certificato tramite [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Recupero dell'handle a un provider di crittografia in grado di fornire una chiave privata con la funzione [**CryptAcquireCertificatePrivateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey) .
--   Inizializzazione [**delle \_ \_ \_ informazioni di codifica CMSG firmate**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signed_encode_info) e delle strutture di [**\_ \_ informazioni del flusso CMSG**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) da usare in una chiamata a [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
--   Firma e codifica di un messaggio tramite [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode) e [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Implementazione di una funzione di callback del flusso in grado di salvare un messaggio codificato e firmato in qualsiasi formato persistente, ad esempio scrivendolo in un file.
+-   Apertura di un archivio certificati tramite [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Recupero di un certificato con un nome soggetto specifico tramite [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
+-   Recupero e stampa del nome soggetto di un certificato tramite [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Recupero dell'handle per un provider di crittografia in grado di fornire una chiave privata con la [**funzione CryptAcquireCertificatePrivateKey.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey)
+-   Inizializzazione delle strutture [**CMSG \_ SIGNED \_ ENCODE \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signed_encode_info) e [**CMSG \_ STREAM \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) da usare in una chiamata a [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
+-   Firma e codifica di un messaggio [**tramite CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode) e [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Implementazione di una funzione di callback di flusso in grado di salvare un messaggio codificato e firmato in qualsiasi formato permanente, ad esempio scrivendolo in un file.
 
-Nella parte relativa alla decodifica di questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+La parte relativa alla decodifica di questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
 
--   Inizializzazione di una struttura di [**\_ \_ informazioni del flusso CMSG**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) da utilizzare in una chiamata a [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
--   Implementazione di una funzione di callback del flusso che può salvare un messaggio decodificato in qualsiasi formato persistente, ad esempio stamparlo sullo schermo.
+-   Inizializzazione di [**una struttura CMSG \_ STREAM \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) da usare in una chiamata a [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
+-   Implementazione di una funzione di callback di flusso in grado di salvare un messaggio decodificato in qualsiasi formato permanente, ad esempio stamparlo sullo schermo.
 -   Lettura di un messaggio codificato da un file e decodifica del messaggio tramite [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
 
-Per un esempio di come eseguire queste stesse operazioni senza usare un callback di flusso, vedere [esempio di programma C: firma, codifica, decodifica e verifica di un messaggio](example-c-program-signing-encoding-decoding-and-verifying-a-message.md).
+Per un esempio di come eseguire queste stesse operazioni senza usare un callback di flusso, vedere Esempio [di programma C: firma, codifica,](example-c-program-signing-encoding-decoding-and-verifying-a-message.md)decodifica e verifica di un messaggio .
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [ \_ \_ funzioni di utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [Funzioni \_ per utilizzo \_ generico](general-purpose-functions.md).
 
 
 ```C++

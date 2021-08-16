@@ -39,7 +39,7 @@ La tabella TargetFiles \_ OptionalData contiene le colonne seguenti.
 <span id="Target"></span><span id="target"></span><span id="TARGET"></span>bersaglio
 </dt> <dd>
 
-Chiave esterna per la colonna Target della [tabella TargetImages (Patchwiz.dll).](targetimages-table-patchwiz-dll-.md)
+Chiave esterna per la colonna Target della tabella [TargetImages (Patchwiz.dll).](targetimages-table-patchwiz-dll-.md)
 
 </dd> <dt>
 

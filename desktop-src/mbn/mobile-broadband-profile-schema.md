@@ -13,7 +13,7 @@ ms.locfileid: "118744613"
 ---
 # <a name="mobile-broadband-profile-schema-v1"></a>Schema del profilo Mobile Broadband v1
 
-Lo Windows 7Mobile Broadband Profile Schema v1 è disponibile nello spazio dei nomi `https://www.microsoft.com/networking/WWAN/profile/v1` .
+Lo Windows 7 Schema profilo Mobile Broadband v1 è disponibile nello spazio dei nomi `https://www.microsoft.com/networking/WWAN/profile/v1` .
 
 -   [Elementi dello schema del profilo Mobile Broadband v1](schema-elements.md)
 -   [Tipi semplici dello schema del profilo Mobile Broadband v1](schema-simple-types.md)
