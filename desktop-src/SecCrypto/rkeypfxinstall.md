@@ -1,7 +1,7 @@
 ---
 description: La funzione RKeyPFXInstall non è supportata.
 ms.assetid: 061e3d9d-fc92-4204-92f3-f3425afdbe27
-title: Funzione RKeyPFXInstall (Rkeysvcc. h)
+title: Funzione RKeyPFXInstall (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 4908b7224a02f5a28b876b1ff67cbcec7d23df5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f19a01e9132bf9c4b1e281a75b0e0d7a27b4f9c7f299eefdd47bef8d60daea97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900546"
 ---
-# <a name="rkeypfxinstall-function"></a>RKeyPFXInstall (funzione)
+# <a name="rkeypfxinstall-function"></a>Funzione RKeyPFXInstall
 
-La funzione **RKeyPFXInstall** non è supportata.
+La **funzione RKeyPFXInstall** non è supportata.
 
-**Windows Server 2003:** La funzione **RKeyPFXInstall** installa un certificato in un computer remoto. Si noti che questo comportamento è stato modificato con Windows Server 2003 con Service Pack 1 (SP1).
+**Windows Server 2003:** La **funzione RKeyPFXInstall** installa un certificato in un computer remoto. Si noti che questo comportamento è stato modificato con Windows Server 2003 con Service Pack 1 (SP1).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,28 +44,28 @@ ULONG RKeyPFXInstall(
 
 <dl> <dt>
 
-*hKeySvcCli* \[ in\]
+*hKeySvcCli* \[ Pollici\]
 </dt> <dd>
 
-Handle [**di \_ handle KEYSVCC**](keysvcc-handle.md) precedentemente aperto da [**RKeyOpenKeyService**](rkeyopenkeyservice.md). L'handle rappresenta il computer remoto che riceverà il certificato. Questo valore non può essere **null**.
+Handle [**KEYSVCC \_ HANDLE**](keysvcc-handle.md) aperto in precedenza da [**RKeyOpenKeyService.**](rkeyopenkeyservice.md) L'handle rappresenta il computer remoto che riceverà il certificato. Questo valore non può essere **NULL.**
 
 </dd> <dt>
 
-*pPFX* \[ in\]
+*pPFX* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**\_ BLOB KEYSVC**](keysvc-blob.md) che rappresenta il certificato da installare. Il BLOB è in formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+Puntatore a una [**struttura BLOB KEYSVC \_**](keysvc-blob.md) che rappresenta il certificato da installare. Il BLOB è in [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> <dt>
 
-*ppassword* \[ in\]
+*pPassword* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ \_ stringhe Unicode KEYSVC**](keysvc-unicode-string.md) che rappresenta la password per il BLOB. Al termine dell'utilizzo della password, cancellare la password dalla memoria chiamando la funzione [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) . Per ulteriori informazioni sulla protezione delle password, vedere [gestione delle password](../secbp/handling-passwords.md).
+Puntatore a una [**struttura STRING \_ UNICODE \_ KEYSVC**](keysvc-unicode-string.md) che rappresenta la password per il BLOB. Dopo aver terminato di usare la password, cancellarla dalla memoria chiamando la [**funzione SecureZeroMemory.**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) Per altre informazioni sulla protezione delle password, vedere [Gestione delle password.](../secbp/handling-passwords.md)
 
 </dd> <dt>
 
-*ulFlags* \[ in\]
+*flag ulFlags* \[ Pollici\]
 </dt> <dd>
 
 Flag che specificano le opzioni di installazione del certificato. Questo parametro può essere uno zero o una combinazione dei valori seguenti.
@@ -74,8 +74,8 @@ Flag che specificano le opzioni di installazione del certificato. Questo paramet
 
 | Valore                                                                                                                                                                                                                                     | Significato                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**Crypt \_ Esportabile**</dt><dt></dt> </dl>              | Le chiavi importate sono contrassegnate come esportabili.<br/>                                           |
-| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**Crypt \_ \_keyset del computer**</dt><dt></dt> </dl> | Le chiavi private vengono archiviate nel computer remoto e non nell'utente corrente.<br/> |
+| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**CRYPT \_ ESPORTABILE**</dt><dt></dt> </dl>              | Le chiavi importate sono contrassegnate come esportabili.<br/>                                           |
+| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**CRYPT \_ KEYSET \_ DEL COMPUTER**</dt><dt></dt> </dl> | Le chiavi private vengono archiviate nel computer remoto e non nell'utente corrente.<br/> |
 
 
 
@@ -85,9 +85,9 @@ Flag che specificano le opzioni di installazione del certificato. Questo paramet
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK.
 
-Se la funzione ha esito negativo, il valore restituito è un **ULONG** che indica l'errore.
+Se la funzione ha esito negativo, il valore restituito è **un ULONG** che indica l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,8 +96,8 @@ Se la funzione ha esito negativo, il valore restituito è un **ULONG** che indic
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: WINBIO_EXTENDED_SENSOR_INFO struttura (Winbio \_ types.h)
-description: Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore sensore per un'unità biometrica.
+description: Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore del sensore per un'unità biometrica.
 ms.assetid: 37D8BC57-F68D-487A-98B0-94D62CC091C2
 keywords:
 - WINBIO_EXTENDED_SENSOR_INFO struttura Windows'API Biometric Framework
@@ -24,7 +24,7 @@ ms.locfileid: "118910419"
 ---
 # <a name="winbio_extended_sensor_info-structure"></a>Struttura WINBIO \_ EXTENDED \_ SENSOR \_ INFO
 
-Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore sensore per un'unità biometrica.
+Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore del sensore per un'unità biometrica.
 
 ## <a name="syntax"></a>Sintassi
 

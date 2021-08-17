@@ -4,29 +4,29 @@ description: Servizi di testo
 ms.assetid: 870ed892-dc68-4f36-a450-1400747211d6
 keywords:
 - Framework servizi di testo (TSF), servizi di testo
-- TSF (Text Services Framework), servizi di testo
-- Servizi di testo, informazioni
+- TSF (Framework servizi di testo),servizi di testo
+- servizi di testo, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e86d6d537687afe22ba618657c6591cb733ccef2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dd67185325d33a0bc8b01147ec21cd1f0ee362b5db8b1ca55accaea6ac59f041
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874762"
 ---
 # <a name="text-services"></a>Servizi di testo
 
-Gli elementi di programmazione seguenti vengono utilizzati o implementati da un [servizio di testo](architecture.md).
+Gli elementi di programmazione seguenti vengono usati o implementati da un [servizio di testo](architecture.md).
 
 -   [Registrazione del servizio di testo](text-service-registration.md)
 -   [Barra della lingua](language-bar.md)
 -   [Sessioni di modifica](edit-sessions.md)
 -   [Fornire attributi di visualizzazione](providing-display-attributes.md)
 
- 
+ 
 
- 
+ 
 
 
 

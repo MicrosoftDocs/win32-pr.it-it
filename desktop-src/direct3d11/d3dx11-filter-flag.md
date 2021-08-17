@@ -59,7 +59,7 @@ typedef enum D3DX11_FILTER_FLAG {
 
 <dl> <dt>
 
-<span id="D3DX11_FILTER_NONE"></span><span id="d3dx11_filter_none"></span>**FILTRO D3DX11 \_ \_ NESSUNO**
+<span id="D3DX11_FILTER_NONE"></span><span id="d3dx11_filter_none"></span>**D3DX11 \_ FILTER \_ NONE**
 </dt> <dd>
 
 Non verrà fatto alcun ridimensionamento o filtro. Si presuppone che i pixel all'esterno dei limiti dell'immagine di origine siano di colore nero trasparente.
@@ -83,7 +83,7 @@ Ogni pixel di destinazione viene calcolato tramite il campionamento dei quattro 
 <span id="D3DX11_FILTER_TRIANGLE"></span><span id="d3dx11_filter_triangle"></span>**TRIANGOLO FILTRO D3DX11 \_ \_**
 </dt> <dd>
 
-Ogni pixel nell'immagine di origine contribuisce equamente all'immagine di destinazione. Questo è il più lento dei filtri.
+Ogni pixel nell'immagine di origine contribuisce in modo uniforme all'immagine di destinazione. Questo è il più lento dei filtri.
 
 </dd> <dt>
 
@@ -97,14 +97,14 @@ Ogni pixel viene calcolato mediamente da una casella di 2x2(x2) di pixel dall'im
 <span id="D3DX11_FILTER_MIRROR_U"></span><span id="d3dx11_filter_mirror_u"></span>**D3DX11 \_ FILTER \_ MIRROR \_ U**
 </dt> <dd>
 
-I pixel al di fuori del bordo della trama sull'asse u devono essere speculari, non di cui è stato eseguito il wrapping.
+I pixel al di fuori del bordo della trama sull'asse U devono essere speculari, non di cui è stato eseguito il wrapping.
 
 </dd> <dt>
 
 <span id="D3DX11_FILTER_MIRROR_V"></span><span id="d3dx11_filter_mirror_v"></span>**D3DX11 \_ FILTER \_ MIRROR \_ V**
 </dt> <dd>
 
-I pixel al di fuori del bordo della trama sull'asse v devono essere speculari, non di cui è stato eseguito il wrapping.
+I pixel al di fuori del bordo della trama sull'asse v devono essere speculari, senza eseguire il wrapping.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Come specificare D3DX \_ FILTER \_ SRGB \_ IN \| D3DX \_ FILTER \_ SRGB \_ OUT. 
 
 ## <a name="remarks"></a>Commenti
 
-D3DX11 esegue automaticamente la correzione gamma (per convertire i dati di colore dallo spazio RGB allo spazio RGB standard) durante il caricamento dei dati di trama. Questa operazione viene eseguita automaticamente, ad esempio, quando i dati RGB vengono caricati da un file .png in una trama sRGB. Usare i flag di filtro SRGB per indicare se i dati non devono essere convertiti in spazio sRGB.
+D3DX11 esegue automaticamente la correzione gamma (per convertire i dati dei colori dallo spazio RGB allo spazio RGB standard) durante il caricamento dei dati di trama. Questa operazione viene eseguita automaticamente, ad esempio, quando i dati RGB vengono caricati da un file .png in una trama sRGB. Usare i flag di filtro SRGB per indicare se i dati non devono essere convertiti in spazio sRGB.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECPOS'
-title: Proprietà JET_RECPOS
+description: 'Altre informazioni su: JET_RECPOS proprietà'
+title: JET_RECPOS proprietà
 TOCTitle: JET_RECPOS properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_RECPOS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos_properties(v=EXCHG.10)
 ms:contentKeyID: 55103866
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0090b04b0363f5ba3978f05540473843c2524566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b08a39c72fd32e71e652bd8fa63d22a01ba43e6d364d5755778b67a778d93d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104568607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107510"
 ---
-# <a name="jet_recpos-properties"></a>Proprietà JET_RECPOS
+# <a name="jet_recpos-properties"></a>JET_RECPOS proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_RECPOS](./jet-recpos-class.md) espone i membri seguenti.
+Il [JET_RECPOS](./jet-recpos-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,7 +35,7 @@ Il tipo di [JET_RECPOS](./jet-recpos-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351021(v=exchg.10).md">centriesLT</a></td>
-<td>Ottiene o imposta il numero approssimativo di voci di indice minori della chiave.</td>
+<td>Ottiene o imposta il numero approssimativo di voci di indice inferiori alla chiave.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RECPOS](./jet-recpos-class.md)
+[JET_RECPOS classe](./jet-recpos-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
 title: Codice di esempio per il controllo dei diritti per la creazione di oggetti dello schema
-description: Nell'esempio di codice C/C++ seguente viene illustrata una funzione che controlla l'attributo allowedChildClassesEffective nel contenitore dello schema (il puntatore IAD al contenitore dello schema viene passato come parametro) per le classi attributeSchema e classSchema.
+description: L'esempio di codice C/C++ seguente mostra una funzione che controlla l'attributo allowedChildClassesEffective nel contenitore dello schema (il puntatore IAD al contenitore dello schema viene passato come parametro) per le classi attributeSchema e classSchema.
 ms.assetid: 3abc2351-a3cf-4a6c-9a13-15dd51723883
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118694483"
 ---
 # <a name="example-code-for-checking-for-rights-to-create-schema-objects"></a>Codice di esempio per il controllo dei diritti per la creazione di oggetti dello schema
 
-Nell'esempio di codice C/C++ seguente viene illustrata una funzione che controlla l'attributo **allowedChildClassesEffective** nel contenitore dello schema (il puntatore IAD al contenitore dello schema viene passato come parametro) per le classi **attributeSchema** e **classSchema.** Restituisce **S \_ OK se** entrambe le classi sono elencate in **allowedChildClassesEffective.** In caso contrario, restituisce **S \_ FALSE.**
+L'esempio di codice C/C++ seguente mostra una funzione che controlla l'attributo **allowedChildClassesEffective** nel contenitore dello schema (il puntatore IAD al contenitore dello schema viene passato come parametro) per le classi **attributeSchema** e **classSchema.** Restituisce **S \_ OK se** entrambe le classi sono elencate in **allowedChildClassesEffective.** In caso contrario, restituisce **S \_ FALSE.**
 
 
 ```C++

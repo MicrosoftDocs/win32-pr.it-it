@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_ls"></a>JET_LS
 
-Il **JET_LS** dati contiene un handle di contesto per l'archiviazione locale (LS). Questo handle può essere associato a un cursore o a una tabella e può fare riferimento a risorse allocate dinamicamente.
+Il **JET_LS** di dati contiene un handle di contesto per l'archiviazione locale(LS). Questo handle può essere associato a un cursore o a una tabella e può fare riferimento a risorse allocate dinamicamente.
 
 **Windows XP: JET_LS** è stato introdotto in Windows XP.
 
@@ -41,13 +41,13 @@ Il **JET_LS** dati contiene un handle di contesto per l'archiviazione locale (LS
 
 JET_LS
 
-Il valore JET_LSNil un handle di contesto non valido.
+Il valore JET_LSNil indica un handle di contesto non valido.
 
 ### <a name="remarks"></a>Commenti
 
 Un handle di contesto viene inizialmente associato al **tipo JET_LS** dati, usando [JetSetLS](./jetsetls-function.md). L'handle di contesto può essere recuperato dal **tipo JET_LS** dati, usando [JetGetLS](./jetgetls-function.md).
 
-L'handle di contesto può essere disassociato in modo esplicito dal tipo di dati JET_LS [tramite JetGetLS](./jetgetls-function.md) con JET_bitLSReset.  In alternativa, l'handle di contesto può essere dissociato in modo implicito dal tipo di dati JET_LS quando l'oggetto sottostante viene rilasciato dal motore di database **come** risultato di un'azione diretta o indiretta da parte dell'applicazione. Nel caso implicito, viene eseguito un callback di runtime per l'applicazione in modo che possa pulire l'handle di contesto. Per altre informazioni sulla dissociazione implicita dal tipo JET_LS dati, vedere [JetSetLS](./jetsetls-function.md). 
+L'handle di contesto può essere dissociato in modo esplicito dal tipo di dati JET_LS [tramite JetGetLS](./jetgetls-function.md) con JET_bitLSReset.  In alternativa, l'handle di contesto può essere dissociato in modo implicito dal tipo di dati JET_LS quando l'oggetto sottostante viene rilasciato dal motore di database **come** risultato di un'azione diretta o indiretta da parte dell'applicazione. Nel caso implicito, viene eseguito un callback di runtime per l'applicazione in modo che possa pulire l'handle di contesto. Per altre informazioni sulla dissociazione implicita dal tipo JET_LS dati, vedere [JetSetLS](./jetsetls-function.md). 
 
 I flag seguenti sono associati al tipo JET_LS dati.
 

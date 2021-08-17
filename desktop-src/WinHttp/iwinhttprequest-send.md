@@ -53,10 +53,10 @@ Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di err
 
 ## <a name="remarks"></a>Commenti
 
-La richiesta da inviare è stata definita in una chiamata precedente al [**metodo Open.**](iwinhttprequest-open.md) L'applicazione chiamante può fornire dati da inviare al server tramite il *parametro Body.* Se il [*verbo HTTP*](glossary.md) dell'oggetto [**Open**](iwinhttprequest-open.md) è "GET", questo metodo invia la richiesta senza *Body,* anche se viene fornito dall'applicazione chiamante.
+La richiesta da inviare è stata definita in una chiamata precedente al [**metodo**](iwinhttprequest-open.md) Open. L'applicazione chiamante può fornire dati da inviare al server tramite il *parametro Body.* Se il [*verbo HTTP*](glossary.md) dell'oggetto [**Open**](iwinhttprequest-open.md) è "GET", questo metodo invia la richiesta senza *Body,* anche se viene fornito dall'applicazione chiamante.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHttp.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHttp.
 
  
 
@@ -169,7 +169,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-L'esempio di scripting seguente illustra come pubblicare dati in un server HTTP.
+Nell'esempio di scripting seguente viene illustrato come inviare dati a un server HTTP.
 
 
 ```JScript
@@ -192,7 +192,7 @@ WinHttpReq.Send("Post data");
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
 | Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |

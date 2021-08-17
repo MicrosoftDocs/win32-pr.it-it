@@ -15,13 +15,13 @@ ms.locfileid: "118715071"
 
 **L'oggetto DivisionResult** rappresenta uno snapshot dell'analisi del layout dei tratti contenuti nell'oggetto **Divider.** Contiene le informazioni di classificazione e raggruppamento dei tratti dall'analisi del layout.
 
-È possibile ottenere informazioni dall'oggetto **DivisionResult in** base al tipo di elemento strutturale, ad esempio disegno o linee di scrittura manuale. **L'oggetto DivisionResult** può essere mantenuto dopo l'eliminazione dell'oggetto Divider.  In Automazione questo oggetto è denominato [**oggetto interfaccia IInkDivisionResult.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
+È possibile ottenere informazioni dall'oggetto **DivisionResult in** base al tipo di elemento strutturale, ad esempio il disegno o le linee della grafia. **L'oggetto DivisionResult** può essere mantenuto dopo l'eliminazione dell'oggetto Divider.  In Automazione questo oggetto è denominato [**oggetto interfaccia IInkDivisionResult.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
 La [**proprietà Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) dell'oggetto **DivisionResult** contiene una copia della raccolta **Strokes** nell'oggetto **Divider** al momento della creazione dell'oggetto **DivisionResult.**
 
 [**L'enumerazione InkDivisionType**](/windows/win32/api/msinkaut15/ne-msinkaut15-inkdivisiontype) definisce i tipi di elementi strutturali che l'analisi del layout riconosce.
 
-Il [**metodo ResultByType**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-resultbytype) dell'oggetto **DivisionResult** restituisce una **raccolta DivisionUnits** che contiene tutti gli elementi strutturali di un determinato tipo. Un singolo elemento strutturale è rappresentato da un **oggetto DivisionUnit.** Ogni volta che si chiama il **metodo ResultByType,** l'oggetto **DivisionResult** crea una **raccolta DivisionUnits.** Per altre informazioni **sull'oggetto DivisionUnit,** vedere [Utilizzo dell'oggetto DivisionUnit](working-with-the-divisionunit-object.md).
+Il [**metodo ResultByType**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-resultbytype) dell'oggetto **DivisionResult** restituisce una **raccolta DivisionUnits** che contiene tutti gli elementi strutturali di un determinato tipo. Un singolo elemento strutturale è rappresentato da un **oggetto DivisionUnit.** Ogni volta che si chiama il **metodo ResultByType,** l'oggetto **DivisionResult** crea una **raccolta DivisionUnits.** Per altre informazioni **sull'oggetto DivisionUnit,** vedere [Utilizzo dell'oggetto DivisionUnit.](working-with-the-divisionunit-object.md)
 
  
 

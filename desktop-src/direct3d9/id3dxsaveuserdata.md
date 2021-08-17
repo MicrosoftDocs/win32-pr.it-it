@@ -44,7 +44,7 @@ Questa interfaccia viene implementata dall'applicazione per salvare eventuali da
 | [**AddTopLevelDataObjectsPost**](id3dxsaveuserdata--addtopleveldataobjectspost.md) | Aggiungere un oggetto di primo livello dopo la gerarchia dei frame.<br/>       |
 | [**AddTopLevelDataObjectsPre**](id3dxsaveuserdata--addtopleveldataobjectspre.md)   | Aggiungere un oggetto di primo livello prima della gerarchia dei frame.<br/>      |
 | [**RegisterTemplates**](id3dxsaveuserdata--registertemplates.md)                   | Callback che consente all'utente di registrare un modello di file con estensione x.<br/> |
-| [**SaveTemplates**](id3dxsaveuserdata--savetemplates.md)                           | Callback che consente all'utente di salvare un modello di file con estensione x.<br/>     |
+| [**Salva modelli**](id3dxsaveuserdata--savetemplates.md)                           | Callback che consente all'utente di salvare un modello di file con estensione x.<br/>     |
 
 
 

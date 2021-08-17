@@ -15,9 +15,9 @@ ms.locfileid: "118625071"
 
 L'evento SetTargetPath notifica al programma di installazione di controllare e impostare il percorso selezionato. Se il percorso non è valido per la scrittura, il programma di installazione blocca altri ControlEvent associati al controllo.
 
-Questo evento può essere pubblicato da un [controllo PushButton o](pushbutton-control.md) [selectionTree.](selectiontree-control.md) Questo evento deve essere creato nella tabella [ControlEvent](controlevent-table.md).
+Questo evento può essere pubblicato da un [controllo PushButton o](pushbutton-control.md) [selectionTree](selectiontree-control.md). Questo evento deve essere creato nella [tabella ControlEvent](controlevent-table.md).
 
-Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Interfaccia utente Levels.](user-interface-levels.md)
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia [*utente ridotta*](r-gly.md) o un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
 ## <a name="published-by"></a>Pubblicato da
 
@@ -37,7 +37,7 @@ Un [controllo PushButton](pushbutton-control.md) in una finestra di dialogo di e
 
 ## <a name="remarks"></a>Commenti
 
-Non tentare di configurare il percorso di destinazione se i componenti che usano tali percorsi sono già installati per l'utente corrente o per un utente diverso. Controllare la [**proprietà ProductState**](productstate.md) prima di pubblicare l'oggetto ControlEvent SetTargetPath per determinare se il prodotto contenente il componente è installato.
+Non tentare di configurare il percorso di destinazione se i componenti che usano tali percorsi sono già installati per l'utente corrente o per un utente diverso. Controllare la [**proprietà ProductState**](productstate.md) prima di pubblicare SetTargetPath ControlEvent per determinare se il prodotto contenente il componente è installato.
 
  
 

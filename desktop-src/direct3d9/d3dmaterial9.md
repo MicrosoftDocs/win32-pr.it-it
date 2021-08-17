@@ -1,5 +1,5 @@
 ---
-description: Specifica le proprietà dei materiali.
+description: Specifica le proprietà del materiale.
 ms.assetid: 943e6f6d-8091-462f-8c44-e0c27686934a
 title: Struttura D3DMATERIAL9 (D3D9Types.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118527581"
 ---
 # <a name="d3dmaterial9-structure"></a>Struttura D3DMATERIAL9
 
-Specifica le proprietà dei materiali.
+Specifica le proprietà del materiale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valore che specifica il colore diffuso del materiale. Vedere [**D3DCOLORVALUE.**](d3dcolorvalue.md)
+Valore che specifica il colore diffuso del materiale. Vedere [**D3DCOLORVALUE**](d3dcolorvalue.md).
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valore che specifica il colore di ambiente del materiale. Vedere [**D3DCOLORVALUE.**](d3dcolorvalue.md)
+Valore che specifica il colore di ambiente del materiale. Vedere [**D3DCOLORVALUE**](d3dcolorvalue.md).
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valore che specifica il colore speculare del materiale. Vedere [**D3DCOLORVALUE.**](d3dcolorvalue.md)
+Valore che specifica il colore speculare del materiale. Vedere [**D3DCOLORVALUE**](d3dcolorvalue.md).
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Valore che specifica il colore emissivo del materiale. Vedere [**D3DCOLORVALUE.**](d3dcolorvalue.md)
+Valore che specifica il colore emissivo del materiale. Vedere [**D3DCOLORVALUE**](d3dcolorvalue.md).
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valore a virgola mobile che specifica la nitidezza delle evidenziazioni speculari. Maggiore è il valore, maggiore sarà la nitidezza dell'evidenziazione.
+Valore a virgola mobile che specifica la nitidezza delle evidenziazioni speculari. Più alto è il valore, maggiore è la nitidezza dell'evidenziazione.
 
 </dd> </dl>
 

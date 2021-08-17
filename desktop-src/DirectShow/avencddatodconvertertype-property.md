@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403847"
 ---
-# <a name="avencddatodconvertertype-property"></a>AvEncDDAtoDConverterType - proprietà
+# <a name="avencddatodconvertertype-property"></a>AVEncDDAtoDConverterType - proprietà
 
 Specifica il tipo di conversione da analogico a digitale (A/D) per un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
@@ -35,8 +35,8 @@ Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncDDAtoDCon
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
-| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
@@ -45,7 +45,7 @@ Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncDDAtoDCon
 
 <dl> <dt>
 
-[Proprietà API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

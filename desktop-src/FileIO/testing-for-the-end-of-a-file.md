@@ -4,18 +4,18 @@ ms.assetid: 93fa9e29-1ff1-496d-9551-99ae88ba7253
 title: Test per la fine di un file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25e6b60f8e17fc452b0638b820be5978775ea5ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1b345a0b908e88cfbb98129bc05350c2e265db8bc943d10151a89a17a10fc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951000"
 ---
 # <a name="testing-for-the-end-of-a-file"></a>Test per la fine di un file
 
-La funzione [**ReadFile**](/windows/desktop/api/FileAPI/nf-fileapi-readfile) verifica la presenza di una condizione di fine file (EOF) in modo diverso per le operazioni di lettura sincrona e asincrona. Quando un'operazione di lettura sincrona raggiunge la fine di un file, **ReadFile** restituisce **true** e imposta la variabile a cui punta il parametro *lpNumberOfBytesRead* su zero. Un'operazione di lettura asincrona può rilevare la fine di un file durante la chiamata di avvio a **ReadFile** o durante le successive operazioni asincrone se il puntatore del file è avanzato a livello di codice oltre la fine del file.
+La [**funzione ReadFile**](/windows/desktop/api/FileAPI/nf-fileapi-readfile) verifica in modo diverso la condizione di fine file (EOF) per le operazioni di lettura sincrone e asincrone. Quando un'operazione di lettura sincrona arriva alla fine di un file, **ReadFile** restituisce **TRUE** e imposta la variabile a cui punta *il parametro lpNumberOfBytesRead* su zero. Un'operazione di lettura asincrona può riscontrare la fine di un file durante la chiamata iniziale a **ReadFile** o durante le operazioni asincrone successive se il puntatore del file viene avanzato a livello di codice oltre la fine del file.
 
-Nell'esempio C++ riportato di seguito viene illustrato come verificare la fine di un file durante un'operazione di lettura sincrona.
+Nell'esempio C++ seguente viene illustrato come testare la fine di un file durante un'operazione di lettura sincrona.
 
 
 ```C++
@@ -31,9 +31,9 @@ Nell'esempio C++ riportato di seguito viene illustrato come verificare la fine d
 
 
 
-Il test per la fine del file durante un'operazione di lettura asincrona è leggermente più impegnativo rispetto a un'operazione di lettura sincrona simile. L'indicatore di fine del file per le operazioni di lettura asincrona è quando [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) restituisce **false** e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce l' **handle di errore \_ \_ EOF**.
+Il test per la fine del file durante un'operazione di lettura asincrona è leggermente più coinvolto rispetto a un'operazione di lettura sincrona simile. L'indicatore di fine file per le operazioni di lettura asincrona è quando [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) restituisce **FALSE** e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce **ERROR HANDLE \_ \_ EOF**.
 
-Nell'esempio C++ riportato di seguito viene illustrato come verificare la fine del file durante un'operazione di lettura asincrona.
+Nell'esempio C++ seguente viene illustrato come testare la fine del file durante un'operazione di lettura asincrona.
 
 
 ```C++

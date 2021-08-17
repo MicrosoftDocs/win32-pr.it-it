@@ -33,16 +33,16 @@ Rappresenta un oggetto stilo.
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **ITabletCursor.**
+**L'interfaccia ITabletCursor** include questi metodi.
 
 
 
 | Metodo                                                 | Descrizione                                                            |
 |:-------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**GetButton**](itabletcursor-getbutton.md)           | Recupera l'oggetto pulsante specificato da uno stilo del tablet.<br/> |
+| [**GetButton**](itabletcursor-getbutton.md)           | Recupera l'oggetto pulsante specificato da uno stilo tablet.<br/> |
 | [**GetButtonCount**](itabletcursor-getbuttoncount.md) | Recupera il numero di pulsanti sullo stilo del tablet.<br/>       |
 | [**GetId**](itabletcursor-getid.md)                   | Recupera l'identificatore dello stilo.<br/>                            |
-| [**GetName**](itabletcursor-getname.md)               | Recupera il nome dello stilo del tablet.<br/>                    |
+| [**GetName**](itabletcursor-getname.md)               | Recupera il nome dello stilo tablet.<br/>                    |
 | [**IsInverted**](itabletcursor-isinverted.md)         | Indica se lo stilo è capovolto.<br/>                     |
 
 
@@ -53,7 +53,7 @@ Questi metodi sono disponibili nell'interfaccia **ITabletCursor.**
 
 Non usare questa interfaccia.
 
-Il codice seguente descrive come viene definita **l'interfaccia ITabletCursor.**
+Nel codice seguente viene descritto come viene **definita l'interfaccia ITabletCursor.**
 
 ``` syntax
 [
@@ -91,7 +91,7 @@ interface ITabletCursor : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

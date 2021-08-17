@@ -33,7 +33,7 @@ ms.locfileid: "118767600"
 ---
 # <a name="int64columnvalue-class"></a>Classe Int64ColumnValue
 
-Valore [della colonna Int64.](/dotnet/api/system.int64)
+Valore [di colonna Int64.](/dotnet/api/system.int64)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
@@ -42,7 +42,7 @@ Valore [della colonna Int64.](/dotnet/api/system.int64)
     [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
       Microsoft.Isam.Esent.Interop.Int64ColumnValue  
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

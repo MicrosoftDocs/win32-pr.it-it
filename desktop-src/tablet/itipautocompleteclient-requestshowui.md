@@ -73,7 +73,7 @@ Questo metodo può restituire uno di questi valori.
 
 Questo metodo viene chiamato dal provider di completamento automatico quando sta per visualizzare l'interfaccia utente di completamento automatico. Se lo stato interno del client non consente al provider di visualizzare l'interfaccia utente, *pfAllowShowing* verrà impostato su **FALSE.** Ad esempio, quando il testo viene inviato al campo dall'interfaccia di scrittura manuale nel Pannello input penna del Tablet PC e l'utente avvia immediatamente l'input penna, il client consiglia di non visualizzare l'interfaccia utente di completamento automatico, per evitare di distrumentare l'input penna dell'utente, impostando *pfAllowShowing* su **FALSE.**
 
-Chiamare **RequestShowUI per** impostare l'handle della finestra dell'elenco di completamento automatico popup prima di chiamare il metodo [**ITipAutocompleteClient::P referredRects**](itipautocompleteclient-preferredrects.md). In caso negativo, si verifica un **errore E \_ INVALIDARG** quando si **chiama PreferredRects**.
+Chiamare **RequestShowUI** per impostare l'handle della finestra dell'elenco di completamento automatico popup prima di chiamare il metodo [**ITipAutocompleteClient::P referredRects**](itipautocompleteclient-preferredrects.md). In caso negativo, si verifica un **errore E \_ INVALIDARG** quando si **chiama PreferredRects**.
 
 ## <a name="requirements"></a>Requisiti
 

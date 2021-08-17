@@ -56,7 +56,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-L'accesso è stato negato.
+Accesso negato.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**File di paging Win32 \_**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio seguente un messaggio di testo non crittografato viene letto da un file e viene aperto un archivio certificati contenente i certificati dei destinatari dei messaggi desiderati.
+description: Nell'esempio seguente viene letto un messaggio in testo non crittografato da un file e viene aperto un archivio certificati contenente i certificati dei destinatari del messaggio previsti.
 ms.assetid: 7ae672d3-e11d-453c-b9c0-354d21830ae4
 title: Invio di un messaggio di dati in busta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f59c04418a2f1d0186ddc0d88c30e7cc790c715b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d93c73e22a9ac98e08d12164e78aa585a6b2ba3da6f47bf53675a7320bc206e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900361"
 ---
 # <a name="sending-an-enveloped-data-message"></a>Invio di un messaggio di dati in busta
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Nell'esempio seguente un messaggio di testo non crittografato viene letto da un file e viene aperto un archivio certificati contenente i certificati dei destinatari dei messaggi desiderati. Tutti i certificati presenti nell'archivio vengono aggiunti come destinatari del messaggio, il messaggio viene inserito in busta e il messaggio in busta digitale viene scritto in un file.
+Nell'esempio seguente viene letto un messaggio in testo non crittografato da un file e viene aperto un archivio certificati contenente i certificati dei destinatari del messaggio previsti. Tutti i certificati nell'archivio vengono aggiunti come destinatari del messaggio, il messaggio viene in busta e il messaggio in busta viene scritto in un file.
 
-È possibile aggiungere codice aggiuntivo per visualizzare i certificati aggiunti come destinatari dei messaggi, per verificare tali certificati prima che vengano aggiunti come destinatari desiderati o per scegliere altrimenti quelli da aggiungere.
+È possibile aggiungere codice aggiuntivo per visualizzare i certificati aggiunti come destinatari del messaggio, per verificare i certificati prima che vengano aggiunti come destinatari previsti o per scegliere in altro modo quelli da aggiungere.
 
-In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **di Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
 
 ```VB

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INDEXLIST. columnidLCMapFlags'
-title: Proprietà JET_INDEXLIST. columnidLCMapFlags
+description: 'Altre informazioni su: JET_INDEXLIST.columnidLCMapFlags'
+title: JET_INDEXLIST.columnidLCMapFlags
 TOCTitle: 'columnidLCMapFlags property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidLCMapFlags
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidlcmapflags(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d5479bda4a0b4f4b802ae42221f5bbd9879c94c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2efdab9e48ad578b7a737479d2171b8d3f08599b8161deb238d7e3c5a0d9d877
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485653"
 ---
-# <a name="jet_indexlistcolumnidlcmapflags-property"></a>Proprietà JET_INDEXLIST. columnidLCMapFlags
+# <a name="jet_indexlistcolumnidlcmapflags-property"></a>JET_INDEXLIST.columnidLCMapFlags
 
-Ottiene l'ColumnID della colonna nella tabella temporanea in cui sono archiviati i flag di normalizzazione Unicode per l'indice. La colonna è di tipo [Long](./jet-coltyp-enumeration.md).
+Ottiene il columnid della colonna nella tabella temporanea in cui sono archiviati i flag di normalizzazione Unicode per l'indice. La colonna è di tipo [Long](./jet-coltyp-enumeration.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidLCMapFlags { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXLIST](./jet-indexlist-class.md)
+[JET_INDEXLIST classe](./jet-indexlist-class.md)
 
-[Membri JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST membri](./jet-indexlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -68,7 +68,7 @@ Matrice di riferimenti a istanze della classe [**CIM \_ ResourceAllocationSettin
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione lunga, è possibile che venga restituito un processo. In questo caso, le istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresentano le impostazioni delle risorse aggiunte sono disponibili tramite l'associazione **CIM \_ ConreteComponent** dall'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta la configurazione del sistema virtuale interessata.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo. In questo caso, le istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresentano le impostazioni delle risorse aggiunte sono disponibili tramite l'associazione **CIM \_ ConreteComponent** dall'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta la configurazione del sistema virtuale interessata.
 
 </dd> </dl>
 

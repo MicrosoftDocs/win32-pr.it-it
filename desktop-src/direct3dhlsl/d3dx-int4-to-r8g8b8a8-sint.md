@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_INT4_to_R8G8B8A8_SINT
-description: Comprime di nuovo il XMINT4 specificato in un \_ formato DXGI \_ R8G8B8A8 \_ Sint.
+title: D3DX_INT4_to_R8G8B8A8_SINT funzione
+description: Riporta il valore XMINT4 specificato in un SINT DXGI \_ FORMAT \_ R8G8B8A8. \_
 ms.assetid: ab9c5454-1673-43a9-ab76-bcd7b510b9a8
 keywords:
-- Funzione D3DX_INT4_to_R8G8B8A8_SINT HLSL
+- D3DX_INT4_to_R8G8B8A8_SINT funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9df4e4094ac96e7da2ccbff1da08e7aa1f7c4de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cdeb7a92bff374d7b93d647971afd52746fbb768d9a33ec7c3a5c33b1c493523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515865"
 ---
-# <a name="d3dx_int4_to_r8g8b8a8_sint-function"></a>D3DX \_ INT4 \_ to \_ R8G8B8A8 \_ Sint Function
+# <a name="d3dx_int4_to_r8g8b8a8_sint-function"></a>Funzione SINT da D3DX INT4 a \_ \_ \_ R8G8B8A8 \_
 
-Comprime di nuovo il XMINT4 specificato in un \_ formato DXGI \_ R8G8B8A8 \_ Sint.
+Riporta il valore XMINT4 specificato in un SINT DXGI \_ FORMAT \_ R8G8B8A8. \_
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ UINT D3DX_INT4_to_R8G8B8A8_SINT(
 *unpackedInput* 
 </dt> <dd>
 
-Dati dello shader da comprimere.
+Dati dello shader da creare come pacchetto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Dati dello shader compressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader compressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

@@ -13,7 +13,7 @@ ms.locfileid: "118519476"
 ---
 # <a name="using-indexed-vertex-blending-direct3d-9"></a>Uso della fusione dei vertici indicizzati (Direct3D 9)
 
-Gli stati di trasformazione 256-511 sono riservati per archiviare fino a 256 matrici che possono essere indicizzate usando indici a 8 bit. Usare la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) per eseguire il mapping degli indici da 0 a 255 agli stati di trasformazione corrispondenti. L'esempio di codice seguente illustra come usare il metodo [**IDirect3DDevice9::SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) per impostare la matrice in corrispondenza del numero di stato di trasformazione 256 su una matrice di identità.
+Gli stati di trasformazione 256-511 sono riservati per archiviare fino a 256 matrici che possono essere indicizzate usando indici a 8 bit. Usare la macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) per eseguire il mapping degli indici da 0 a 255 agli stati di trasformazione corrispondenti. L'esempio di codice seguente illustra come usare il metodo [**IDirect3DDevice9::SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) per impostare la matrice in corrispondenza dello stato di trasformazione numero 256 su una matrice di identità.
 
 
 ```
@@ -24,7 +24,7 @@ m_pD3DDevice->SetTransform( D3DTS_WORLDMATRIX(0), &matBlend );
 
 
 
-Per abilitare o disabilitare la fusione dei vertici indicizzati, impostare lo stato di rendering D3DRS \_ INDEXEDVERTEXBLENDENABLE su **TRUE.** Quando lo stato di rendering è abilitato, è necessario passare gli indici di matrice come DWORD di tipo packed con ogni vertice. Quando questo stato di rendering è disabilitato e la fusione dei vertici è abilitata, equivale a disporre degli indici di matrice 0, 1, 2 e 3 in ogni vertice. L'esempio di codice seguente usa [**il metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) per abilitare la fusione dei vertici indicizzati.
+Per abilitare o disabilitare la fusione dei vertici indicizzati, impostare lo stato di rendering D3DRS \_ INDEXEDVERTEXBLENDENABLE su **TRUE.** Quando lo stato di rendering è abilitato, è necessario passare gli indici della matrice come DWORD di tipo pack con ogni vertice. Quando questo stato di rendering è disabilitato e la fusione dei vertici è abilitata, equivale a avere gli indici di matrice 0, 1, 2 e 3 in ogni vertice. L'esempio di codice seguente usa il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) per abilitare la fusione dei vertici indicizzata.
 
 
 ```
@@ -33,7 +33,7 @@ m_pD3DDevice->SetRenderState( D3DRS_INDEXEDVERTEXBLENDENABLE, TRUE );
 
 
 
-Per abilitare o disabilitare la fusione dei vertici, impostare lo stato di rendering [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) su un valore diverso da D3DRS DISABLE dal tipo \_ [**enumerato D3DVERTEXBLENDFLAGS.**](./d3dvertexblendflags.md) Se questo stato di rendering non è impostato su D3DRS DISABLE, è necessario passare il numero necessario di \_ pesi per ogni vertice. L'esempio di codice seguente usa **IDirect3DDevice9::SetRenderState** per abilitare la fusione dei vertici con tre pesi per ogni vertice.
+Per abilitare o disabilitare la fusione dei vertici, impostare lo stato di rendering [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) su un valore diverso da D3DRS DISABLE dal tipo enumerato \_ [**D3DVERTEXBLENDFLAGS.**](./d3dvertexblendflags.md) Se questo stato di rendering non è impostato su D3DRS DISABLE, è necessario passare il numero richiesto di pesi \_ per ogni vertice. L'esempio di codice seguente usa **IDirect3DDevice9::SetRenderState** per abilitare la fusione dei vertici con tre pesi per ogni vertice.
 
 
 ```
@@ -44,7 +44,7 @@ m_pD3DDevice->SetRenderState( D3DRS_VERTEXBLEND, D3DVBF_3WEIGHTS );
 
 ## <a name="determining-indexed-vertex-blending-support"></a>Determinazione del supporto della fusione dei vertici indicizzati
 
-Per determinare le dimensioni massime per la matrice di fusione dei vertici indicizzati, controllare il membro MaxVertexBlendMatrixIndex della struttura [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) L'esempio di codice seguente usa [**il metodo IDirect3DDevice9::GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps) per recuperare queste dimensioni.
+Per determinare le dimensioni massime per la matrice di fusione dei vertici indicizzati, controllare il membro MaxVertexBlendMatrixIndex della struttura [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) L'esempio di codice seguente usa il [**metodo IDirect3DDevice9::GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps) per recuperare queste dimensioni.
 
 
 ```
@@ -65,7 +65,7 @@ Se il valore impostato in MaxVertexBlendMatrixIndex è 0, il dispositivo non sup
 
 ## <a name="passing-matrix-indices-to-direct3d"></a>Passaggio di indici di matrice a Direct3D
 
-Gli indici della matrice globale possono essere passati a Direct3D usando vertex shader legacy ( FVF) o dichiarazioni.
+Gli indici della matrice globale possono essere passati a Direct3D usando vertex shader legacy - FVF - o dichiarazioni.
 
 L'esempio di codice seguente illustra come usare vertex shader legacy.
 
@@ -85,13 +85,13 @@ struct VERTEX
 
 
 
-Quando si usa un vertex shader legacy, gli indici di matrice vengono passati insieme alle posizioni dei vertici usando i flag D3DFVF \_ XYZBn. Gli indici di matrice vengono passati come byte all'interno di un valore DWORD e devono essere presenti immediatamente dopo l'ultimo peso del vertice. I pesi dei vertici vengono passati anche tramite D3DFVF \_ XYZBn. Un valore DWORD di tipo pack contiene index3, index2, index1 e index0, dove index0 si trova nel byte più basso del valore DWORD. Il numero di indici world-matrix usati è uguale al numero passato al numero di matrici usate per la fusione, come definito da [**D3DRS \_ VERTEXBLEND.**](./d3drenderstatetype.md)
+Quando si usa un vertex shader legacy, gli indici di matrice vengono passati insieme alle posizioni dei vertici usando i flag D3DFVF \_ XYZBn. Gli indici di matrice vengono passati come byte all'interno di un valore DWORD e devono essere presenti immediatamente dopo l'ultimo peso del vertice. I pesi dei vertici vengono passati anche usando D3DFVF \_ XYZBn. Un valore DWORD pack contiene index3, index2, index1 e index0, dove index0 si trova nel byte più basso della DWORD. Il numero di indici world-matrix usati è uguale al numero passato al numero di matrici usate per la fusione, come definito da [**\_ VERTEXBLEND D3DRS.**](./d3drenderstatetype.md)
 
-Quando si usa una dichiarazione, D3DVSDE BLENDINDICES definisce il registro dei vertici di input da cui \_ ottenere gli indici della matrice. Gli indici di matrice devono essere passati come D3DVSDT \_ UBYTE4.
+Quando si usa una dichiarazione, D3DVSDE BLENDINDICES definisce il registro vertici di input da cui \_ ottenere gli indici della matrice. Gli indici di matrice devono essere passati come \_ UBYTE4 D3DVSDT.
 
 L'esempio di codice seguente illustra come usare le dichiarazioni. Si noti che l'ordine dei componenti non è più importante a meno che non si utilizzi un vertex shader a funzione fissa.
 
-Ecco la dichiarazione del vertice.
+Ecco la dichiarazione dei vertici.
 
 
 ```
@@ -127,7 +127,7 @@ D3DVERTEXELEMENT9 decl[] =
 
 <dl> <dt>
 
-[Blending dei vertici indicizzati](indexed-vertex-blending.md)
+[Fusione di vertici indicizzati](indexed-vertex-blending.md)
 </dt> </dl>
 
  

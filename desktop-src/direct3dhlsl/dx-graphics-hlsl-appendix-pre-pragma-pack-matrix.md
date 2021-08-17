@@ -1,9 +1,9 @@
 ---
-title: pack_matrix direttiva pragma
+title: direttiva pragma pack_matrix
 description: Direttiva pragma che specifica l'allineamento di tabulazione per le matrici.
 ms.assetid: e77dc007-d915-4d78-9fff-d44d4999e4da
 keywords:
-- pack_matrix direttiva pragma HLSL
+- pack_matrix pragma HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118514784"
 ---
-# <a name="pack_matrix-pragma-directive"></a>Direttiva \_ pragma pack matrix
+# <a name="pack_matrix-pragma-directive"></a>Direttiva pragma \_ pack matrix
 
 Direttiva pragma che specifica l'allineamento di tabulazione per le matrici.
 
@@ -82,7 +82,7 @@ Direttiva pragma che specifica l'allineamento di tabulazione per le matrici.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene impostato l'allineamento di tabulazione della matrice su row major.
+Nell'esempio seguente viene impostato l'allineamento dei caratteri di tabulazione della matrice su row major.
 
 
 ```

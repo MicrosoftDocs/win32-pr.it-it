@@ -13,7 +13,7 @@ ms.locfileid: "118558815"
 ---
 # <a name="using-sendto-while-connected"></a>Uso di Sendto durante la connessione
 
-[**WSPSendTo**](/previous-versions/windows/desktop/legacy/ms742291(v=vs.85)) recapita sempre i dati all'indirizzo specificato, anche se è stato stabilito un peer designato per il socket di invio in [**WSPConnect.**](/previous-versions/windows/hardware/network/ff566275(v=vs.85))
+[**WSPSendTo**](/previous-versions/windows/desktop/legacy/ms742291(v=vs.85)) consegnerà sempre i dati all'indirizzo specificato, anche se in [**WSPConnect**](/previous-versions/windows/hardware/network/ff566275(v=vs.85))è stato stabilito un peer designato per il socket di invio.
 
  
 

@@ -1,31 +1,31 @@
 ---
-description: Indica le lunghezze di NALUs nell'esempio. Si tratta di un BLOB MF impostato su esempi di input compressi per il decodificatore H. 264.
+description: Indica le lunghezze delle unità NALU nell'esempio. Si tratta di un BLOB MF impostato su campioni di input compressi nel decodificatore H.264.
 ms.assetid: 09F54504-A6CF-4385-BDD7-8D23B1D0125C
-title: Attributo MF_NALU_LENGTH_INFORMATION (Mfidl. h)
+title: MF_NALU_LENGTH_INFORMATION attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46d9a0b7cbec92c4cde40548b8d3baecf955b50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2020c0086247adda742ce2613045bb3a2004c3b8c13c7cdcb04a0ff3997cf0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104417"
 ---
-# <a name="mf_nalu_length_information-attribute"></a>\_ \_ \_ Attributo delle informazioni sulla lunghezza di MF Nalu
+# <a name="mf_nalu_length_information-attribute"></a>Attributo MF \_ NALU \_ LENGTH \_ INFORMATION
 
-Indica le lunghezze di NALUs nell'esempio. Si tratta di un **BLOB** MF impostato su esempi di input compressi per il decodificatore H. 264.
+Indica le lunghezze delle unità NALU nell'esempio. Si tratta di un **BLOB** MF impostato su campioni di input compressi nel decodificatore H.264.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**BLOB**
+**Blob**
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo, è necessario che il supporto sia di tipo MEDIASUBTYPE \_ H264 e che l'attributo [ \_ set di \_ lunghezza \_ MF Nalu](mf-nalu-length-set.md) sia impostato sul tipo di supporto di input di MEDIASUBTYPE \_ H264.
+Per impostare questo attributo, il supporto deve essere di tipo MEDIASUBTYPE H264 e l'attributo MF NALU LENGTH SET deve essere impostato sul tipo di supporto di \_ input MEDIASUBTYPE [ \_ \_ \_ ](mf-nalu-length-set.md) \_ H264.
 
-Impostare MF \_ Nalu \_ length \_ Information come **BLOB** nell'esempio di input, con un valore DWORD per ogni Nalu nell'esempio. Se ad esempio sono presenti AUD (9 byte), SPS (25 byte), PPS (10 byte), IDR slice1 (50 k), IDR Slice 2 (60 k), dovrebbero essere presenti 5 DWORD con valori 9, 25, 10, 50 k, 60 k nel **BLOB**.
+Impostare MF NALU LENGTH INFORMATION come BLOB nell'esempio di input, con un \_ \_ valore \_ DWORD per ogni NALU nell'esempio.  Ad esempio, se sono presenti AUD (9 byte), SPS (25 byte), PPS (10 byte), IDR slice1 (50 k), IDR slice 2 (60 k), dovrebbero essere presenti 5 DWORD con valori 9, 25, 10, 50 k, 60 k nel **BLOB**.
 
-Di seguito è riportato il codice che imposta il **BLOB**, dove **rgdwNALULengthInfo** è una matrice di tipo DWORD e **uiNaluLengthIdx** è la lunghezza Nalu valida impostata sul **BLOB**.
+In questo esempio il codice che imposta **il BLOB**, dove **rgdwNALULengthInfo** è una matrice di tipo DWORD e **uiNaluLengthIdx** è la lunghezza NALU valida impostata su **BLOB**.
 
 
 ```C++
@@ -43,9 +43,9 @@ m_spSample->SetBlob( MF_NALU_LENGTH_INFORMATION,
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ m_spSample->SetBlob( MF_NALU_LENGTH_INFORMATION,
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

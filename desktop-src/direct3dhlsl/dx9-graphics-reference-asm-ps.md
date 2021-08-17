@@ -24,7 +24,7 @@ ms.locfileid: "118512841"
 -   [ps \_ 3 \_ 0](dx9-graphics-reference-asm-ps-3-0.md)
 -   [Registri](dx9-graphics-reference-asm-ps-registers.md)
 -   [Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
--   [Differenze di pixel shader](dx9-graphics-reference-asm-ps-differences.md)
+-   [Differenze dei pixel shader](dx9-graphics-reference-asm-ps-differences.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

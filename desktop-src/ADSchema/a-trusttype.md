@@ -121,7 +121,7 @@ Tipo di attendibilità, ad esempio Windows NT o MIT.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
@@ -142,7 +142,7 @@ Tipo di attendibilità, ad esempio Windows NT o MIT.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
@@ -163,7 +163,7 @@ Tipo di attendibilità, ad esempio Windows NT o MIT.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |

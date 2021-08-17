@@ -46,13 +46,13 @@ HRESULT EnumFiles(
 *ppEnumFiles* \[ Cambio\]
 </dt> <dd>
 
-[**Puntatore a interfaccia IEnumBackgroundCopyFiles**](ienumbackgroundcopyfiles-.md) che viene utilizzato per enumerare i file nel processo. Al *termine, rilasciare ppEnumFiles.*
+[**Puntatore a interfaccia IEnumBackgroundCopyFiles**](ienumbackgroundcopyfiles-.md) che consente di enumerare i file nel processo. Al *termine, rilasciare ppEnumFiles.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo **restituisce** S_OK esito positivo o uno dei valori **HRESULT** COM standard in caso di errore.
+Questo metodo **restituisce** S_OK in caso di esito positivo o uno dei valori **HRESULT** COM standard in caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Questo metodo **restituisce** S_OK esito positivo o uno dei valori **HRESULT** C
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
+| IID<br/>                      | IID_IBackgroundCopyJob è definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 

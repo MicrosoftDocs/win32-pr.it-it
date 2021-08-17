@@ -1,12 +1,12 @@
 ---
-title: Scopo di una playlist metafile
-description: Scopo di una playlist metafile
+title: Scopo di una playlist di metafile
+description: Scopo di una playlist di metafile
 ms.assetid: fd5f002e-79c9-4339-bb98-86d5f378d8ed
 keywords:
-- Windows Media Metafile playlist, scopo
+- Windows Playlist di metafile multimediali, scopo
 - playlist di metafile, scopo
 - playlist, scopo
-- Playlist Windows Media Metafile, informazioni
+- Windows playlist di metafile multimediali,informazioni
 - playlist di metafile, informazioni
 - playlist, informazioni
 ms.topic: article
@@ -16,29 +16,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fbc251d1b8a12b10a1106a131457d01af1483730
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 47ed06080cc76ad863c201acad4279064c36cb1ea5bbba31a205aabd234078bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333862"
 ---
-# <a name="purpose-of-a-metafile-playlist"></a>Scopo di una playlist metafile
+# <a name="purpose-of-a-metafile-playlist"></a>Scopo di una playlist di metafile
 
-Lo scopo di base di una playlist di metafile è quello di reindirizzare i contenuti multimediali di streaming dai browser a Windows Media Player perché la maggior parte dei browser tenterà di scaricare il contenuto invece di trasmettere il contenuto. Una playlist di Metafile fornisce le informazioni utilizzate da Windows Media Player per ricevere flussi, ad esempio l'Uniform Resource Locator (URL). La playlist di metafile può fornire il percorso dei file multimediali tramite Internet, una Intranet o solo i supporti archiviati in una rete o in un'unità locale. Con l'elaborazione reindirizzata a Windows Media Player, si ha un maggiore controllo sui flussi multimediali.
+Lo scopo di base di una playlist di metafile è reindirizzare il contenuto multimediale in streaming dai browser a Windows Media Player perché la maggior parte dei browser tenterà di scaricare il contenuto invece di trasmettere in streaming. Una playlist di metafile fornisce informazioni Windows Media Player per ricevere flussi, ad esempio il Uniform Resource Locator (URL). La playlist del metafile può fornire il percorso dei file multimediali su Internet, su una rete Intranet o solo su supporti archiviati in una rete o in un'unità locale. Con l'elaborazione reindirizzata Windows Media Player, si ha un maggiore controllo sui supporti di streaming.
 
-Le playlist di metafile vengono usate per controllare l'esperienza di streaming. Combinando file multimediali diversi in un unico flusso di contenuto, è possibile controllare e personalizzare la presentazione.
+Le playlist dei metafile vengono usate per controllare l'esperienza di streaming. Combinando file multimediali diversi in un singolo flusso di contenuto, è possibile controllarne e personalizzarne la presentazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Cenni preliminari sui file di Windows Media**](windows-media-metafiles-overview.md)
+[**Windows Panoramica dei metafile multimediali**](windows-media-metafiles-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

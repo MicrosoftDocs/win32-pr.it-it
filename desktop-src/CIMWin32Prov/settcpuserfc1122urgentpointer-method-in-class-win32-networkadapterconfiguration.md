@@ -1,8 +1,8 @@
 ---
-description: Il metodo statico della classe WMI SetTcpUseRFC1122SortentPointer viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
+description: Il metodo statico della classe WMI SetTcpUseRFC1122UrgentPointer viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
 ms.assetid: f8d07690-2723-4bc3-b15f-a24d575456a7
 ms.tgt_platform: multiple
-title: Metodo SetTcpUseRFC1122SortentPointer della Win32_NetworkAdapterConfiguration classe
+title: Metodo SetTcpUseRFC1122UrgentPointer della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119439241"
 ---
-# <a name="settcpuserfc1122urgentpointer-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpUseRFC1122SortentPointer della classe NetworkAdapterConfiguration Win32 \_
+# <a name="settcpuserfc1122urgentpointer-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpUseRFC1122UrgentPointer della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122SortentPointer** viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
+Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122UrgentPointer** viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -42,7 +42,7 @@ uint32 SetTcpUseRFC1122UrgentPointer(
 
 <dl> <dt>
 
-*TcpUseRFC1122DecontePointer* \[ Pollici\]
+*TcpUseRFC1122UrgentPointer* \[ Pollici\]
 </dt> <dd>
 
 Se **true,** TCP usa la specifica RFC 1122. Se **false,** i dati urgenti vengono inviati nella modalità usata dai sistemi derivati da BSD.
@@ -51,16 +51,16 @@ Se **true,** TCP usa la specifica RFC 1122. Se **false,** i dati urgenti vengono
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Completamento riuscito, riavvio non necessario**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Completamento riuscito, riavvio non necessario.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Completamento riuscito, riavvio non necessario.
 
 1
 
-Completamento riuscito. È necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**Non subnet mask**
+**Non valido subnet mask**
 </dt> <dd>
 
 66
 
-Non subnet mask.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -199,12 +199,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -258,7 +258,7 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato nella scheda.
+IP non abilitato sulla scheda.
 
 </dd> <dt>
 
@@ -271,12 +271,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore di limiti dei numeri di rete/frame**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore di limiti del numero di rete o del frame.
+Errore di limiti del numero di frame o di rete.
 
 </dd> <dt>
 

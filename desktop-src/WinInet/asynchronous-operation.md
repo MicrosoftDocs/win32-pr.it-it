@@ -15,9 +15,9 @@ ms.locfileid: "118562093"
 
 Il tempo necessario a un'applicazione per accedere a una risorsa Internet dipende da diversi fattori, ad esempio la connessione usata, il server in cui si trova la risorsa e il numero di utenti che tentano di accedere alla risorsa. Per le applicazioni che scaricano più risorse o gestiscono più attività (inclusi uno o più download), attendere il completamento di ogni download prima di passare all'attività successiva può essere estremamente inefficiente. Per ridurre il tempo di attesa di un'applicazione, molte delle funzioni WinINet possono funzionare in modo asincrono.
 
-In modalità asincrona, un'applicazione può eseguire qualsiasi funzione che include un valore di contesto come uno dei relativi parametri e può continuare a eseguire altri comandi o funzioni mentre l'applicazione attende che la funzione completi l'attività. Durante il completamento dell'attività, una funzione di callback dello stato fornita dall'applicazione viene notificata sullo stato di avanzamento dell'attività e sul momento in cui è stata completata. In questo momento, la funzione di callback dello stato può chiamare altre funzioni o eseguire qualsiasi altra attività richiesta che dipendeva dal completamento dell'attività.
+In modalità asincrona, un'applicazione può eseguire qualsiasi funzione che include un valore di contesto come uno dei relativi parametri e può continuare a eseguire altri comandi o funzioni mentre l'applicazione attende che la funzione completi l'attività. Durante il completamento dell'attività, una funzione di callback dello stato fornita dall'applicazione viene notificata lo stato dell'attività e il momento in cui è stata completata. In questo momento, la funzione di callback dello stato può chiamare altre funzioni o eseguire qualsiasi altra attività richiesta dipendente dal completamento dell'attività.
 
-Quando chiami WinINet in modo asincrono non esiste alcuna afinità del thread di callback: una chiamata potrebbe iniziare da un thread, ma qualsiasi altro thread può ricevere il callback.
+Non esiste alcuna afinità del thread di callback quando si chiama WinINet in modo asincrono: una chiamata può essere avviata da un thread, ma qualsiasi altro thread può ricevere il callback.
 
 -   [Vantaggi](#benefits)
 -   [Scenari](#scenarios)
@@ -37,13 +37,13 @@ Il funzionamento asincrono offre diversi vantaggi. Esempio:
 
 -   Monitorare lo stato del download.
 
-    La funzione di callback dello stato riceve le notifiche durante l'elaborazione di una richiesta. Se necessario, l'applicazione può usare le informazioni fornite dalla funzione di callback dello stato per mantenere l'utente informato sullo stato di avanzamento dell'operazione o per interrompere le richieste che stanno richiedendo troppo tempo per il completamento.
+    La funzione di callback dello stato riceve notifiche durante l'elaborazione di una richiesta. Se necessario, l'applicazione può usare le informazioni fornite da tale funzione di callback dello stato per mantenere l'utente informato sullo stato dell'operazione o per interrompere le richieste che stanno richiedendo troppo tempo per il completamento.
 
 ## <a name="scenarios"></a>Scenari
 
-Si supponiamo che l'applicazione deve scaricare i prezzi del caffè dai siti Downfall Coffee & Coffee e Fourth Coffee e confrontare i prezzi. Il sito Fourth Coffee ha in genere un tempo di risposta più lento, quindi l'applicazione deve prima scaricare le informazioni da Downfall Coffee & Coffee.
+Si supponiamo che l'applicazione deve scaricare i prezzi del caffè dai siti Downfall Coffee & Tea e Fourth Coffee e confrontare i prezzi. Il sito Fourth Coffee ha in genere un tempo di risposta più lento, quindi l'applicazione deve scaricare prima le informazioni da Downfall Coffee & Tea.
 
-Vengono sviluppate due versioni dell'applicazione. Uno funziona in modo sincrono, scaricando prima i prezzi dal sito Downfall Coffee & Coffee e quindi i prezzi dal sito Fourth Coffee. Il secondo funziona in modo asincrono, inviando richieste a entrambi i siti e scaricando i prezzi quando diventano disponibili.
+Vengono sviluppate due versioni dell'applicazione. Uno funziona in modo sincrono, scaricando prima i prezzi dal sito Downfall Coffee & Tea e quindi i prezzi dal sito Fourth Coffee. Il secondo funziona in modo asincrono, inviando richieste a entrambi i siti e scaricando i prezzi quando diventano disponibili.
 
 La tabella seguente illustra cosa accadrebbe se il sito Fourth Coffee fosse più veloce in un determinato giorno.
 
@@ -51,10 +51,10 @@ La tabella seguente illustra cosa accadrebbe se il sito Fourth Coffee fosse più
 
 | Evento                                                            | Versione sincrona                        | Versione asincrona                                     |
 |------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------|
-| Avvio                                                            | Inviare una richiesta a Downfall Coffee & Coffee      | Inviare richieste a Downfall Coffee & Coffee and Fourth Coffee |
+| Avvio                                                            | Inviare una richiesta a Downfall Coffee & Tea      | Inviare richieste a Downfall Coffee & Tea e Fourth Coffee |
 | Richiesta dalla versione asincrona a Fourth Coffee completata | Attesa                                    | Scaricare i prezzi da Fourth Coffee                       |
-| Richiesta di downfall coffee & Coffee completata                       | Scaricare i prezzi da Downfall Coffee & Coffee | Scaricare i prezzi da Downfall Coffee & Coffee               |
-| Dopo il download di Downfall Coffee & i prezzi di Coffee              | Inviare la richiesta a Fourth Coffee              | Confrontare i prezzi                                           |
+| Richiesta di downfall coffee & Tea completata                       | Scaricare i prezzi da Downfall Coffee & Tea | Scaricare i prezzi da Downfall Coffee & Tea               |
+| Dopo il download dei prezzi di & coffee & Tea              | Inviare la richiesta a Fourth Coffee              | Confrontare i prezzi                                           |
 | Confronto della versione asincrona completato                      | Attesa                                    | Operazione completata                                       |
 | Richiesta dalla versione sincrona a Fourth Coffee completata  | Scaricare i prezzi da Fourth Coffee         | n/d                                                      |
 | Dopo il download dei prezzi di Fourth Coffee                      | Confrontare i prezzi                             | n/d                                                      |
@@ -64,11 +64,11 @@ La tabella seguente illustra cosa accadrebbe se il sito Fourth Coffee fosse più
 
  
 
-Un altro esempio è un Web browser, ad esempio Microsoft Internet Explorer. Quando il browser scarica una pagina, spesso deve scaricare altre risorse, ad esempio immagini e file audio. In modalità asincrona, la pagina e le risorse associate possono essere richieste contemporaneamente e scaricate non appena diventano disponibili, anziché richiedere e scaricare la pagina e ogni risorsa una alla volta.
+Un altro esempio potrebbe essere un Web browser, ad esempio Microsoft Internet Explorer. Quando il browser scarica una pagina, spesso deve scaricare altre risorse, ad esempio immagini e file audio. In modalità asincrona, la pagina e le risorse associate possono essere richieste contemporaneamente e scaricate non appena diventano disponibili, invece di richiedere e scaricare la pagina e ogni risorsa una alla volta.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Di seguito sono riportati i collegamenti correlati.
+Di seguito sono riportati collegamenti correlati.
 
 Esercitazioni
 
@@ -106,7 +106,7 @@ Funzioni che possono essere usate in modo asincrono
  
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi server, [usare Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi del server usare [Microsoft Windows servizi HTTP (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: La classe \_ ClusterShare Win32 rappresenta una risorsa condivisa in un cluster.
+description: La classe ClusterShare Win32 \_ rappresenta una risorsa condivisa in un cluster.
 ms.assetid: 6c8b40e3-431f-4728-a389-affbc04b8415
 ms.tgt_platform: multiple
 title: Win32_ClusterShare classe
@@ -36,7 +36,7 @@ ms.locfileid: "118417992"
 
 \[La **classe \_ ClusterShare Win32** è deprecata. Usare invece le [**classi MSFT \_ FileShare**](/previous-versions/windows/desktop/stormgmt/msft-fileshare) e [**\_ MSFT SMFileShare.**](/previous-versions/windows/desktop/msftstrgmanprov/msft-smfileshare)\]
 
-La classe \_ ClusterShare Win32 rappresenta una risorsa condivisa in un cluster.
+La classe ClusterShare Win32 \_ rappresenta una risorsa condivisa in un cluster.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -75,8 +75,8 @@ La **classe \_ ClusterShare Win32** include questi metodi.
 
 | Metodo                                                    | Descrizione                                                      |
 |:----------------------------------------------------------|:-----------------------------------------------------------------|
-| [**Creare**](create-win32-clustershare.md)               | Crea una nuova **istanza \_ ClusterShare Win32.**<br/>       |
-| [**Elimina**](delete-win32-clustershare.md)               | Elimina **un'istanza \_ ClusterShare Win32.**<br/>           |
+| [**Creare**](create-win32-clustershare.md)               | Crea una nuova **istanza di \_ ClusterShare Win32.**<br/>       |
+| [**Elimina**](delete-win32-clustershare.md)               | Elimina **un'istanza di \_ ClusterShare Win32.**<br/>           |
 | [**GetAccessMask**](getaccessmask-win32-clustershare.md) | Restituisce una bitmap con i diritti di accesso alla condivisione.<br/> |
 | [**SetShareInfo**](setshareinfo-win32-clustershare.md)   | Imposta i parametri della risorsa condivisa.<br/>           |
 
@@ -102,7 +102,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Questa proprietà è obsoleta e non viene più utilizzata. Usare invece [**il metodo \_ Win32 Share.GetAccessMask.**](getaccessmask-method-in-class-win32-share.md) Il valore della **proprietà AccessMask** è impostato su **Null** da WMI. Per altre informazioni sull'impostazione dell'accesso quando viene creata una condivisione, vedere il [**metodo Create.**](create-method-in-class-win32-share.md)
+Questa proprietà è obsoleta e non viene più usata. Usare invece [**il metodo Win32 \_ Share.GetAccessMask.**](getaccessmask-method-in-class-win32-share.md) Il valore della **proprietà AccessMask** è impostato su **Null** da WMI. Per altre informazioni sull'impostazione dell'accesso quando viene creata una condivisione, vedere il [**metodo Create.**](create-method-in-class-win32-share.md)
 
 Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 
@@ -129,7 +129,7 @@ Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -138,7 +138,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -147,7 +147,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -201,7 +201,7 @@ Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -212,7 +212,7 @@ Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrin
 
 Alias assegnato a un percorso configurato come condivisione in un computer che esegue Windows.
 
-Windows 2008 esempio: \\ "SERVER01 public" - Windows Server 2008 richiede di inserire \\ l'UNC nel nome.
+Windows 2008: \\ "SERVER01 \\ public" - Windows Server 2008 richiede di inserire il nome UNC.
 
 Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 
@@ -221,7 +221,7 @@ Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 **Percorso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -230,7 +230,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ path")
 </dt> </dl>
 
-Percorso locale della condivisione Windows distribuzione.
+Percorso locale della condivisione Windows locale.
 
 Esempio: "C: \\ Programmi"
 
@@ -241,7 +241,7 @@ Questa proprietà viene ereditata da [**Win32 \_ Share.**](win32-share.md)
 **ServerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -257,7 +257,7 @@ Server del cluster in cui è ospitata la condivisione.
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -266,9 +266,9 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Danneggiato" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma prevede un errore , ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Degraded" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma sta stimando un errore (ad esempio, un disco rigido abilitato per SMART).
 
-Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". Il "servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". "Servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altre operazioni amministrative. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -285,14 +285,14 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("Errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradato** ("Degraded")
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -313,7 +313,7 @@ Sono inclusi i valori seguenti:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** ("Avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -371,7 +371,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Strutture di gestione di rete Win32API \| SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| di tipo shi502") \_
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ type")
 </dt> </dl>
 
 Tipo di risorsa condivisa. I tipi includono: unità disco, code di stampa, comunicazioni interprocesso (IPC) e dispositivi generali.

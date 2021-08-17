@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulle proprietà di EsentRedoAbruptEndedException
+description: 'Altre informazioni su: Proprietà di EsentRedoAbruptEndedException'
 title: Proprietà di EsentRedoAbruptEndedException
 TOCTitle: EsentRedoAbruptEndedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentRedoAbruptEndedException
@@ -17,7 +17,7 @@ ms.locfileid: "118774214"
 # <a name="esentredoabruptendedexception-properties"></a>Proprietà di EsentRedoAbruptEndedException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md) espone i membri seguenti.
 

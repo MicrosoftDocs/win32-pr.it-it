@@ -34,7 +34,7 @@ Per le descrizioni di ognuno di questi algoritmi, vedere il glossario.
 
 ## <a name="related-documentation"></a>Related Documentation (Documentazione correlata)
 
-Una specifica che spiega il protocollo SSL è disponibile in Netscape Communications Corporation.
+Una specifica che illustra il protocollo SSL è disponibile in Netscape Communications Corporation.
 
  
 

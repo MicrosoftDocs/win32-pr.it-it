@@ -27,7 +27,7 @@ Interrompe l'animazione per il carattere specificato.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agent***. Caratteri ("**_CharacterID_*_"). Richiesta di_ *  *interruzione*
+*agent***. Caratteri ("**_CharacterID_*_"). Richiesta di_ *  *interrupt*
 
 
 
@@ -45,7 +45,7 @@ Interrompe l'animazione per il carattere specificato.
 
 È possibile usarlo per sincronizzare l'animazione tra i caratteri. Ad esempio, se un altro carattere è in un'animazione a ciclo continuo, questo metodo arresta il ciclo e passa all'animazione successiva nella coda del carattere. Non è possibile interrompere un'animazione di caratteri non in uso (che non è stata caricata).
 
-Per specificare il parametro request, è necessario creare una variabile e assegnare la richiesta di animazione da interrompere:
+Per specificare il parametro della richiesta, è necessario creare una variabile e assegnare la richiesta di animazione da interrompere:
 
 
 ```
@@ -81,12 +81,12 @@ Per specificare il parametro request, è necessario creare una variabile e asseg
 
 
 
-Non è possibile interrompere l'animazione dello stesso carattere specificato in questo metodo perché il server accoda il metodo **Interrupt** nella coda di animazione del carattere. Pertanto, è possibile usare **Interrupt solo per** arrestare l'animazione di un altro carattere caricato.
+Non è possibile interrompere l'animazione dello stesso carattere specificato in questo metodo perché il server accoda il metodo **Interrupt** nella coda di animazione del carattere. Pertanto, è possibile usare **Interrupt solo** per interrompere l'animazione di un altro carattere caricato.
 
-Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito [**un oggetto Request.**](/windows/desktop/lwef/the-request-object)
+Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito un [**oggetto Request.**](/windows/desktop/lwef/the-request-object)
 
 > [!Note]  
-> **L'interrupt** non scarica la coda del carattere. arresta l'animazione esistente e passa all'animazione successiva nella coda del carattere. Per arrestare e scaricare la coda di un carattere, usare il [**metodo Stop.**](stop-method.md)
+> **L'interrupt** non scarica la coda del carattere. interrompe l'animazione esistente e passa all'animazione successiva nella coda del carattere. Per arrestare e scaricare la coda di un carattere, usare il [**metodo Stop.**](stop-method.md)
 
  
 

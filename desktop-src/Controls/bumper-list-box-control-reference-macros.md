@@ -30,7 +30,7 @@ ms.locfileid: "119438392"
 -   [**ListBox \_ GetItemData**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getitemdata)
 -   [**ListBox \_ GetItemHeight**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getitemheight)
 -   [**ListBox \_ GetItemRect**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getitemrect)
--   [**GetSel di ListBox \_**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getsel)
+-   [**ListBox \_ GetSel**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getsel)
 -   [**ListBox \_ GetSelCount**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getselcount)
 -   [**ListBox \_ GetSelItems**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_getselitems)
 -   [**ListBox \_ GetText**](/windows/desktop/api/Windowsx/nf-windowsx-listbox_gettext)

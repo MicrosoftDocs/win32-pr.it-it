@@ -3,7 +3,7 @@ title: Elemento ToggleButton
 description: Rappresenta un controllo Toggle Button.
 ms.assetid: f26a90e6-9e9a-4fde-8753-50b8b1d09f80
 keywords:
-- Elemento ToggleButton Windows barra multifunzione
+- Elemento ToggleButton Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "119441591"
 
 Rappresenta un [controllo Toggle Button.](windowsribbon-controls-togglebutton.md)
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <ToggleButton
@@ -63,8 +63,8 @@ Rappresenta un [controllo Toggle Button.](windowsribbon-controls-togglebutton.md
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -103,9 +103,9 @@ Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsri
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra il markup di base per **l'elemento ToggleButton.**
+Nell'esempio seguente viene illustrato il markup di base per **l'elemento ToggleButton.**
 
-Questa sezione di codice mostra una dichiarazione di **elemento ToggleButton** all'interno [**dell'elemento QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
+Questa sezione di codice illustra una dichiarazione **di elemento ToggleButton** all'interno dell'elemento [**QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
 
 
 ```XML

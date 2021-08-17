@@ -27,7 +27,7 @@ Per aggiungere sottoscrittori al componente sottoscrittore, seguire questa proce
 
 5.  Fare clic su **OK**.
 
-Quando un'applicazione di pubblicazione vuole creare un evento, l'editore crea un'istanza dell'oggetto della classe di evento e chiama un metodo su di esso. COM+ cerca nel catalogo COM+ tutti i sottoscrittori. Crea l'oggetto sottoscrittore (direttamente, in coda o con un moniker) e passa la chiamata al metodo originariamente effettuata dal server di pubblicazione.
+Quando un'applicazione di pubblicazione vuole creare un evento, l'autore crea un'istanza dell'oggetto della classe di evento e chiama un metodo su di esso. COM+ cerca nel catalogo COM+ tutti i sottoscrittori. Crea l'oggetto sottoscrittore (direttamente, in coda o con un moniker) e passa la chiamata al metodo originariamente effettuata dal server di pubblicazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

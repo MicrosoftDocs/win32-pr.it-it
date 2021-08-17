@@ -3,7 +3,7 @@ title: EM_SETZOOM messaggio (Richedit.h)
 description: Imposta il rapporto di zoom. Il rapporto deve essere un valore compreso tra 1/64 e 64. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: 6cdec5b8-4ce7-4fd5-8083-4daa63d17f63
 keywords:
-- EM_SETZOOM dei controlli Windows messaggio
+- EM_SETZOOM dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "119437181"
 ---
 # <a name="em_setzoom-message"></a>Messaggio \_ EM SETZOOM
 
-Imposta il rapporto di zoom per un controllo di modifica su più righe o un controllo Rich Edit. Il rapporto deve essere un valore compreso tra 1/64 e 64. Per il controllo di modifica deve essere impostato lo stile esteso **ES \_ EX \_ ZOOMABLE.** Per un effetto su questo messaggio, vedere Modifica degli stili [estesi del controllo.](edit-control-window-extended-styles.md)
+Imposta il rapporto di zoom per un controllo di modifica su più righe o un controllo Rich Edit. Il rapporto deve essere un valore compreso tra 1/64 e 64. Il controllo di modifica deve avere lo stile esteso **ES \_ EX \_ ZOOMABLE** impostato. Per ottenere un effetto su questo messaggio, vedere Modifica degli stili [estesi del controllo.](edit-control-window-extended-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -63,7 +63,7 @@ Se la nuova impostazione di zoom non viene accettata, il valore restituito è **
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica:** Supportato in Windows 10 1809 e versioni successive. Per il controllo di modifica deve essere impostato lo stile esteso **ES \_ EX \_ ZOOMABLE.** Per un effetto su questo messaggio, vedere Modifica degli stili [estesi del controllo.](edit-control-window-extended-styles.md) Per informazioni sul controllo di modifica, vedere [Edit Controls.](about-edit-controls.md)
+**Modifica:** Supportato in Windows 10 1809 e versioni successive. Il controllo di modifica deve avere lo stile esteso **ES \_ EX \_ ZOOMABLE** impostato. Per ottenere un effetto su questo messaggio, vedere Modifica degli stili [estesi del controllo.](edit-control-window-extended-styles.md) Per informazioni sul controllo di modifica, vedere [Modifica di controlli](about-edit-controls.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se la nuova impostazione di zoom non viene accettata, il valore restituito è **
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
 | Intestazione<br/>                   | <dl> <dt>Richedit.h/Commctrl.h</dt> </dl> |
 

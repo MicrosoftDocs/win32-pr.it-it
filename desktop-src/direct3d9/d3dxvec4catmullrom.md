@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 06ba24374ee2ad4e6fd008d90c55d2990dc166f6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7f55eb0434b36daca81e8e3e93b335c2d58124a53d31d59d20ddaa525a6b1c04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803769"
 ---
 # <a name="d3dxvec4catmullrom-function-d3dx9mathh"></a>Funzione D3DXVec4CatmullRom (D3dx9math.h)
 
-Esegue unCatmull-Rom interpolazione, usando i vettori 4D specificati.
+Esegue un Catmull-Rom interpolazione, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -103,7 +103,7 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dellCatmull-Rom interpolazione.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che è il risultato dellCatmull-Rom interpolazione.
 
 ## <a name="remarks"></a>Commenti
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline può essere derivata dalla spline hermite impostando:
+La Catmull-Rom spline può essere derivata dalla spline Hermite impostando:
 
 
 ```
@@ -141,7 +141,7 @@ p3 è il contenuto di pV2.
 
 p4 è il contenuto di pV3.
 
-Uso dell'equazione spline hermite:
+Uso dell'equazione spline Hermite:
 
 
 ```
@@ -150,7 +150,7 @@ Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2
 
 
 
-e sostituendo v1, v2, t1, t2 produce:
+e la sostituzione di v1, v2, t1, t2 produce:
 
 
 ```
@@ -159,7 +159,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Questa operazione può essere ridisposta nel modo seguente:
+Questo può essere riorganizzato come:
 
 
 ```

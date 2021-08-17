@@ -1,6 +1,6 @@
 ---
 title: Attributo ACS-Server-List
-description: Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
+description: Contiene i nomi DNS dei Windows NT a cui è consentito eseguire ACS.
 ms.assetid: 1a26ba49-e9c9-4881-a7ce-7c91bf32875e
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118689350"
 ---
 # <a name="acs-server-list-attribute"></a>Attributo ACS-Server-List
 
-Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
+Contiene i nomi DNS dei Windows NT a cui è consentito eseguire ACS.
 
 
 
@@ -58,7 +58,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -79,7 +79,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -100,7 +100,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -121,7 +121,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -142,7 +142,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -163,7 +163,7 @@ Contiene i nomi DNS dei Windows NT server a cui è consentito eseguire ACS.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |

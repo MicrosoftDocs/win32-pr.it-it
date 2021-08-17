@@ -46,7 +46,7 @@ HRESULT D3DXFVFFromDeclarator(
 
 Tipo: **const [**LPD3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrivono il codice FVF.
+Matrice di [**elementi D3DVERTEXELEMENT9,**](d3dvertexelement9.md) che descrive il codice FVF.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrivono
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a un valore DWORD, che rappresenta la combinazione restituita di [D3DFVF](d3dfvf.md) che descrive il formato dei vertici restituito dal dichiaratore.
+Puntatore a un valore DWORD che rappresenta la combinazione restituita di [D3DFVF](d3dfvf.md) che descrive il formato del vertice restituito dal dichiaratore.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione avrà esito negativo per qualsiasi dichiaratore che non esegue il mapping direttamente a un FVF.
+Questa funzione avrà esito negativo per qualsiasi dichiaratore che non è mappato direttamente a un FVF.
 
 ## <a name="requirements"></a>Requisiti
 

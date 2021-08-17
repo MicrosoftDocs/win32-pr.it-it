@@ -54,7 +54,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-A una finestra viene concesso un cookie quando viene registrata come finestra della shell. Per altre informazioni, vedere [**Registrare**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
+A una finestra viene concesso un cookie quando viene registrato come finestra shell. Per altre informazioni, vedere [**Registrare**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
 
 ## <a name="requirements"></a>Requisiti
 

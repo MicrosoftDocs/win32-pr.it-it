@@ -69,7 +69,7 @@ I flag Oi<1> campo è una maschera \_ a 8 bit dei flag seguenti.
 | 01  | Oi \_ FULL \_ PTR \_ USED          | Usa il pacchetto puntatore completo.           |
 | 02  | Oi \_ RPCSS \_ ALLOC \_ USED       | Usa il pacchetto di memoria RpcSs.           |
 | 04  | Oi \_ OBJECT \_ PROC             | Routine in un'interfaccia a oggetti.      |
-| 08  | Oi \_ HAS \_ RPCFLAGS            | La procedura include flag Rpc diversi da zero.     |
+| 08  | Oi \_ HAS \_ RPCFLAGS            | La procedura ha flag Rpc diversi da zero.     |
 | 10  | Oi\_\*                       | Di overload.                              |
 | 20  | Oi\_\*                       | Di overload.                              |
 | 40  | Oi \_ USE \_ NEW \_ INIT \_ ROUTINES | Usa Windows routine init NT3.5 Beta2+. |
@@ -98,7 +98,7 @@ I flag seguenti sono sottoposti a overload.
 Il campo rpc flags<4> descrive come impostare il campo \_ **RpcFlags** della [**struttura RPC \_ MESSAGE.**](/windows/desktop/api/RpcdceP/ns-rpcdcep-rpc_message) Questo campo è presente solo se i flag Oi<1> \_ Oi \_ HAD \_ RPCFLAGS è impostato. Se questo campo non è presente, i flag RPC per la procedura remota sono pari a zero.
 
 > [!Note]  
-> Per le prestazioni, gli interpreti asincroni hanno sempre i flag rpc \_<4> campo presente.
+> Per le prestazioni, gli interpreti asincroni hanno sempre i flag rpc \_<4> campo.
 
  
 

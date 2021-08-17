@@ -13,9 +13,9 @@ ms.locfileid: "118697607"
 ---
 # <a name="enumerating-services"></a>Enumerazione dei servizi
 
-L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può enumerare tutti i servizi Contatti presenti in uno dei dispositivi attualmente connessi a un computer.
+L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può enumerare tutti i servizi Contatti disponibili in uno dei dispositivi attualmente connessi a un computer.
 
-Quando l'utente sceglie l'opzione "0" dalla riga di comando, l'applicazione richiama il metodo **EnumerateContactsServices** disponibile nel modulo ServiceEnumeration.cpp. Questo metodo visualizza un elenco di tutti i dispositivi connessi che supportano il servizio Contatti.
+Quando l'utente sceglie l'opzione "0" nella riga di comando, l'applicazione richiama il metodo **EnumerateContactsServices** disponibile nel modulo ServiceEnumeration.cpp. Questo metodo visualizza un elenco di tutti i dispositivi connessi che supportano il servizio Contatti.
 
 Ad esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, l'applicazione restituisce tre campi di dati: un nome descrittivo ("Dispositivo di esempio"), un produttore ("gruppo di dispositivi portatili Windows") e una descrizione ("Dispositivo del servizio Contatti 2000").
 

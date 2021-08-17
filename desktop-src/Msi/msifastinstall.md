@@ -1,5 +1,5 @@
 ---
-description: La proprietà MSIFASTINSTALL può essere usata per ridurre il tempo necessario per installare un pacchetto di installazione di Windows di grandi dimensioni.
+description: La proprietà MSIFASTINSTALL può essere usata per ridurre il tempo necessario per installare un pacchetto di Windows programma di installazione di grandi dimensioni.
 ms.assetid: 011668da-da04-4b80-989e-192b0daa3060
 title: MSIFASTINSTALL - proprietà
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118628504"
 ---
 # <a name="msifastinstall-property"></a>MSIFASTINSTALL - proprietà
 
-La **proprietà MSIFASTINSTALL** può essere usata per ridurre il tempo necessario per installare un pacchetto di installazione di Windows di grandi dimensioni. La proprietà può essere impostata nella riga di comando o nella tabella [Property](property-table.md) per configurare le operazioni che l'utente o lo sviluppatore determina come non essenziali per l'installazione.
+La **proprietà MSIFASTINSTALL** può essere usata per ridurre il tempo necessario per installare un pacchetto di Windows programma di installazione di grandi dimensioni. La proprietà può essere impostata nella riga di comando o nella tabella [Property](property-table.md) per configurare le operazioni che l'utente o lo sviluppatore determina come non essenziali per l'installazione.
 
 Il valore della **proprietà MSIFASTINSTALL** può essere una combinazione dei valori seguenti.
 
@@ -38,7 +38,7 @@ Il valore della **proprietà MSIFASTINSTALL** può essere una combinazione dei v
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack minimo Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119441521"
 ---
-# <a name="ui_pkey_categoryid"></a>Id \_ categoria PKEY \_ dell'interfaccia utente
+# <a name="ui_pkey_categoryid"></a>ID \_ categoria PKEY \_ dell'interfaccia utente
 
 Identifica la proprietà \_ CategoryId PKEY \_ dell'interfaccia utente.
 

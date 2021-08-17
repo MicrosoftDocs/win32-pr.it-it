@@ -1,6 +1,6 @@
 ---
 title: D3DX11_IMAGE_LOAD_INFO struttura (D3DX11tex.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. | D3DX11_IMAGE_LOAD_INFO (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. | D3DX11_IMAGE_LOAD_INFO struttura (D3DX11tex.h)
 ms.assetid: 6cd2f590-4e15-41e6-9f04-cd91eeb082db
 keywords:
 - D3DX11_IMAGE_LOAD_INFO struttura Direct3D 11
@@ -25,11 +25,11 @@ ms.locfileid: "118536858"
 # <a name="d3dx11_image_load_info-structure"></a>Struttura D3DX11 \_ IMAGE \_ LOAD \_ INFO
 
 > [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 
  
 
-Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11 DEFAULT per uno di questi parametri fa in modo che D3DX usi automaticamente il valore \_ del file di origine.
+Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11 DEFAULT per uno di questi parametri determina l'uso automatico del valore del file di origine da parte di \_ D3DX.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,7 +76,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla all'altezza di destinazione.
+Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla a questa altezza di destinazione.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Livello di mipmap con risoluzione più elevata della trama. Se è maggiore di 0, dopo il caricamento della trama FirstMipLevel verrà eseguito il mapping al livello mipmap 0.
+Livello mipmap con risoluzione più alta della trama. Se è maggiore di 0, dopo il caricamento della trama FirstMipLevel verrà eseguito il mapping al livello mipmap 0.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Numero massimo di livelli mipmap nella trama. Vedere le osservazioni in [**D3D11 \_ TEX1D \_ SRV.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv) L'uso di 0 o D3DX11 DEFAULT causerà la creazione di una catena \_ mipmap completa.
+Numero massimo di livelli mipmap nella trama. Vedere le osservazioni in [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). Se si usa 0 o D3DX11 DEFAULT, verrà creata una catena \_ mipmap completa.
 
 </dd> <dt>
 
@@ -120,11 +120,11 @@ Tipo: **[ **D3D11 \_ USAGE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)**
 
 </dd> <dd>
 
-Modalità di utilizzo della risorsa trama. Vedere [**D3D11 \_ USAGE ( UTILIZZO D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
+Modalità di utilizzo della risorsa trama. Vedere [**D3D11 \_ USAGE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage).
 
 </dd> <dt>
 
-**Flag di associazione**
+**BindFlags**
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
@@ -142,7 +142,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Autorizzazioni di accesso che la CPU avrà per la risorsa trama. Vedere [**D3D11 \_ CPU ACCESS FLAG \_ \_ (FLAG DI ACCESSO CPU D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag)
+Autorizzazioni di accesso che la cpu avrà per la risorsa trama. Vedere [**D3D11 \_ CPU ACCESS \_ \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag).
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Proprietà varie delle risorse (vedere [**D3D11 \_ RESOURCE \_ MISC \_ FLAG).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+Proprietà delle risorse varie (vedere [**D3D11 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)).
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxg
 
 </dd> <dd>
 
-Enumerazione [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che indica il formato della trama dopo il caricamento.
+Enumerazione [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che indica il formato in cui si trova la trama dopo il caricamento.
 
 </dd> <dt>
 
@@ -179,14 +179,14 @@ Filtrare la trama usando il filtro specificato (solo durante il ricampionamento)
 
 </dd> <dt>
 
-**Filtro mip**
+**MipFilter**
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Filtrare i livelli mip della trama usando il filtro specificato (solo se si generano mipmap). I valori validi sono D3DX11 \_ FILTER \_ NONE, D3DX11 \_ FILTER \_ POINT, D3DX11 FILTER LINEAR o \_ \_ D3DX11 \_ FILTER \_ TRIANGLE. Vedere [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
+Filtrare i livelli mip della trama usando il filtro specificato (solo se si generano mipmap). I valori validi sono D3DX11 \_ FILTER \_ NONE, D3DX11 \_ FILTER \_ POINT, D3DX11 \_ FILTER LINEAR o \_ D3DX11 \_ FILTER \_ TRIANGLE. Vedere [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
 
 </dd> <dt>
 
@@ -197,18 +197,18 @@ Tipo: **[ **D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md)\***
 
 </dd> <dd>
 
-Informazioni sull'immagine originale. Vedere [**D3DX11 \_ IMAGE INFO (INFORMAZIONI SULL'IMMAGINE \_ D3DX11).**](d3dx11-image-info.md) Può essere ottenuto con [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
+Informazioni sull'immagine originale. Vedere [**D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md). È possibile ottenere con [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si inizializza la struttura, è possibile impostare qualsiasi membro su D3DX11 DEFAULT e D3DX la inizializza con un valore predefinito della trama di origine quando la \_ trama viene caricata.
+Quando si inizializza la struttura, è possibile impostare qualsiasi membro su D3DX11 DEFAULT e D3DX la inizializza con un valore predefinito dalla trama di origine quando la trama viene \_ caricata.
 
 Questa struttura può essere usata dalle API che:
 
 -   Creare risorse, ad esempio [**D3DX11CreateTextureFromFile**](d3dx11createtexturefromfile.md) e [**D3DX11CreateShaderResourceViewFromFile**](d3dx11createshaderresourceviewfromfile.md).
--   Creare processori di dati, ad esempio [**D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor.**](d3dx11createasyncshaderresourceviewprocessor.md)
+-   Creare processori di dati, ad esempio [**D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor**](d3dx11createasyncshaderresourceviewprocessor.md).
 
 I valori predefiniti sono:
 
@@ -231,7 +231,7 @@ I valori predefiniti sono:
 
 
 
-Di seguito è riportato un breve esempio che usa questa struttura per fornire il formato pixel durante il caricamento di una trama. Per il codice completo, vedere HDRFormats10.cpp [nell'esempio HDRToneMappingCS11.](https://msdn.microsoft.com/library/Ee416569(v=VS.85).aspx)
+Ecco un breve esempio che usa questa struttura per fornire il formato pixel durante il caricamento di una trama. Per il codice completo, vedere HDRFormats10.cpp [nell'esempio HDRToneMappingCS11.](https://msdn.microsoft.com/library/Ee416569(v=VS.85).aspx)
 
 
 ```

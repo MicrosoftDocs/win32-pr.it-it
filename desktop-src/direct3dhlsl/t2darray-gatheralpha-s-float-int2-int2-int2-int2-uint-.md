@@ -1,6 +1,6 @@
 ---
 title: Funzione Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
-description: Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri. | Funzione Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
+description: Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni. | Funzione Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
 ms.assetid: 1B069708-FC77-4FD0-A264-3AB170F48D58
 keywords:
 - Funzione GatherAlpha HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118788954"
 ---
 # <a name="texture2darraygatheralphasfloatint2int2int2int2uint-function"></a>Funzione Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
 
-Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.
+Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -104,7 +104,7 @@ Quarto componente di offset applicato alle coordinate della trama prima del camp
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 

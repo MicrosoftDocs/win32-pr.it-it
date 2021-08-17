@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_Label
-description: Identifica la proprietà \_ Ui PKEY \_ Label.
+description: Identifica la proprietà \_ UI PKEY \_ Label.
 ms.assetid: 4d704133-bba7-4c32-a552-d748b66455eb
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118706432"
 ---
 # <a name="ui_pkey_label"></a>Etichetta \_ PKEY \_ dell'interfaccia utente
 
-Identifica la proprietà \_ Ui PKEY \_ Label.
+Identifica la proprietà \_ UI PKEY \_ Label.
 
 ```
 propertyDescription
@@ -27,10 +27,10 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente PKEY Label viene usata da un'applicazione per eseguire query sul testo dell'etichetta di \_ schede, gruppi, pulsanti, elementi della raccolta \_ e altri controlli della barra multifunzione.
+L'etichetta PKEY dell'interfaccia utente viene usata da un'applicazione per eseguire query sul testo dell'etichetta di \_ schede, gruppi, pulsanti, elementi della raccolta \_ e altri controlli della barra multifunzione.
 
 > [!Note]  
-> Windows 8 e più recente: [l'immagine del](windowsribbon-controls-applicationmenu.md) pulsante Menu dell'applicazione è stata modificata in etichetta: **File**. È consigliabile non usare File come etichetta per le schede personalizzate.
+> Windows 8 e più recente: [l'immagine del pulsante Del menu](windowsribbon-controls-applicationmenu.md) dell'applicazione è stata modificata in etichetta: **File**. È consigliabile non usare File come etichetta per le schede personalizzate.
 
  
 
@@ -43,9 +43,9 @@ Il valore della proprietà è una stringa vincolata a qualsiasi sequenza di cara
 
 L'allineamento a destra non è supportato.
 
-La lunghezza massima dell'etichetta \_ PKEY \_ dell'interfaccia utente è illimitata.
+La lunghezza massima dell'etichetta \_ PKEY \_ dell'interfaccia utente non è associata.
 
-Se un comando viene esposto tramite una voce di menu e il valore di [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o UI PKEY Label contiene una lettera preceduta da una e commerciale, come illustrato nell'esempio seguente, questa lettera viene considerata sia come suggerimento tasto di scelta che come tasto di scelta rapida per tale comando dal framework della barra \_ \_ multifunzione.
+Se un comando viene esposto tramite una voce di menu e il valore di [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o UI PKEY Label contiene una lettera preceduta da una e commerciale, come illustrato nell'esempio seguente, questa lettera viene considerata sia come descrizione comando che come tasto di scelta rapida per tale comando dal framework della barra \_ \_ multifunzione.
 
 
 ```XML
@@ -58,7 +58,7 @@ Se un comando viene esposto tramite una voce di menu e il valore di [**Command.L
 
 
 
-Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della designazione di carattere speciale con una doppia e commerciale ( ) come illustrato `&&` nell'esempio seguente.
+Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della designazione di carattere speciale con una doppia e commerciale ( `&&` ) come illustrato nell'esempio seguente.
 
 
 ```XML
@@ -75,7 +75,7 @@ Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della desi
 
 <dl> <dt>
 
-[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
+[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
 [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md)

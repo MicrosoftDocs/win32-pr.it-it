@@ -19,7 +19,7 @@ Incorporare questi attributi nell'intestazione dell'interfaccia per trasmettere 
 
 
 
-| Attributo                                   | Uso                                                                                                                                                                                                                                            |
+| Attributo                                   | Utilizzo                                                                                                                                                                                                                                            |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**async \_ uuid**](async-uuid.md)           | Indica al compilatore MIDL di definire versioni sincrone e asincrone di un'interfaccia COM.                                                                                                                                               |
 | [**Uuid**](uuid.md)                        | Designa un valore a 128 bit che distingue una particolare interfaccia da tutte le altre. Il valore effettivo può rappresentare un GUID, un CLSID o un IID.                                                                                                 |
@@ -27,14 +27,14 @@ Incorporare questi attributi nell'intestazione dell'interfaccia per trasmettere 
 | [**ms \_ union**](-ms-union.md)              | Controlla l'allineamento del rapporto di mancato recapito delle unioni non incapsulate. Usare per la compatibilità con le versioni precedenti con le interfacce compilate in MIDL 1.0 o 2.0.                                                                                                                   |
 | [**Oggetto**](object.md)                    | Identifica l'interfaccia come interfaccia COM e indica al compilatore MIDL di generare codice proxy/stub anziché stub client e server RPC.                                                                                                    |
 | [**Versione**](version.md)                  | Identifica una particolare versione di un'interfaccia nei casi in cui esistono più versioni dell'interfaccia. Poiché le interfacce COM non sono modificabili, non è possibile usare [**l'attributo version**](version.md) in un'interfaccia [**a**](object.md) oggetti. |
-| [**impostazione predefinita del \_ puntatore**](pointer-default.md) | Specifica il tipo di puntatore predefinito per tutti i puntatori ad eccezione di quelli inclusi negli elenchi di parametri. Il tipo predefinito può essere [**univoco,**](unique.md) [**ref**](ref.md)o [**ptr.**](ptr.md)                                                   |
+| [**impostazione predefinita del \_ puntatore**](pointer-default.md) | Specifica il tipo di puntatore predefinito per tutti i puntatori, ad eccezione di quelli inclusi negli elenchi di parametri. Il tipo predefinito può essere [**univoco,**](unique.md) [**ref**](ref.md)o [**ptr.**](ptr.md)                                                   |
 | [**Endpoint**](endpoint.md)                | Specifica un endpoint statico (noto) su cui un'applicazione server sarà in ascolto delle chiamate di procedura remota.                                                                                                                                   |
 
 
 
  
 
-Vedere [Attributi della libreria dei](type-library-attributes.md) tipi per gli attributi di interfaccia, ad esempio [**dual**](dual.md) e [**oleautomation**](oleautomation.md), specifici delle interfacce definite o a cui si fa riferimento all'interno di un'istruzione della libreria.
+Vedere [Attributi della libreria dei](type-library-attributes.md) tipi per gli attributi dell'interfaccia, ad esempio [**dual**](dual.md) e [**oleautomation**](oleautomation.md), specifici delle interfacce definite o a cui si fa riferimento all'interno di un'istruzione della libreria.
 
  
 

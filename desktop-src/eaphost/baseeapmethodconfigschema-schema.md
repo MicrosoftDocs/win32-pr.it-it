@@ -18,7 +18,7 @@ ms.locfileid: "118498713"
 ---
 # <a name="baseeapmethodconfig-schema"></a>Schema baseeapmethodconfig
 
-Lo schema baseeapmethodconfig definisce elementi comuni dello schema di configurazione.
+Lo schema baseeapmethodconfig definisce gli elementi dello schema di configurazione comuni.
 
 -   [Tipi complessi dello schema baseeapmethodconfig](baseeapmethodconfigschema-complex-types.md)
 
@@ -26,7 +26,7 @@ Lo schema baseeapmethodconfig definisce elementi comuni dello schema di configur
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> </dl>
 
  

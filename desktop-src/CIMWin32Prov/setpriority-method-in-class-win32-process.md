@@ -2,7 +2,7 @@
 description: SetPriority&\# 32; Il metodo della classe WMI tenta di modificare la priorità di esecuzione del processo.
 ms.assetid: ef012e9e-ff65-4881-835e-ddab23af9333
 ms.tgt_platform: multiple
-title: Metodo SetPriority della classe Win32_Process
+title: Metodo SetPriority della Win32_Process classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118675570"
 ---
-# <a name="setpriority-method-of-the-win32_process-class"></a>Metodo SetPriority della classe Win32 \_ Process
+# <a name="setpriority-method-of-the-win32_process-class"></a>Metodo SetPriority della classe Process \_ Win32
 
 Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetPriority** tenta di modificare la priorità di esecuzione del processo.
 
@@ -56,7 +56,7 @@ Nuova classe di priorità per il processo. Si noti che questi valori sono divers
 
 </dt> <dd>
 
-Specificato per un processo con thread che vengono eseguiti solo quando il sistema è inattivo. I thread del processo sono preempted dai thread di un processo che vengono eseguiti in una classe con priorità più alta, ad esempio un screen saver. La classe idle-priority viene ereditata dai processi figlio.
+Specificato per un processo con thread eseguiti solo quando il sistema è inattivo. I thread del processo vengono seguiti dai thread di un processo in esecuzione in una classe con priorità più alta, ad esempio un screen saver. La classe con priorità di inattività viene ereditata dai processi figlio.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Specificato per un processo con thread che vengono eseguiti solo quando il siste
 
 </dt> <dd>
 
-Indica un processo con priorità superiore a **IDLE \_ PRIORITY \_ CLASS,** ma inferiore a **NORMAL PRIORITY \_ \_ CLASS**.
+Indica un processo con priorità superiore a **IDLE \_ PRIORITY \_ CLASS,** ma inferiore a **NORMAL PRIORITY \_ \_ CLASS.**
 
 </dd> <dt>
 
@@ -84,12 +84,12 @@ Specificato per un processo senza esigenze di pianificazione speciali.
 
 <span id="Above_Normal"></span><span id="above_normal"></span><span id="ABOVE_NORMAL"></span>
 
-<span id="Above_Normal"></span><span id="above_normal"></span><span id="ABOVE_NORMAL"></span>**Sopra il normale** (32768)
+<span id="Above_Normal"></span><span id="above_normal"></span><span id="ABOVE_NORMAL"></span>**Sopra normale** (32768)
 
 
 </dt> <dd>
 
-Indica un processo con priorità superiore a **NORMAL \_ PRIORITY \_ CLASS,** ma inferiore a **HIGH PRIORITY \_ \_ CLASS**.
+Indica un processo con priorità superiore a **NORMAL \_ PRIORITY \_ CLASS,** ma inferiore **a HIGH PRIORITY \_ \_ CLASS.**
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Indica un processo con priorità superiore a **NORMAL \_ PRIORITY \_ CLASS,** ma
 
 </dt> <dd>
 
-Specificato per un processo che esegue attività time-critical che devono essere eseguite immediatamente. I thread del processo hanno la precedenza sui thread dei processi con classe di priorità normal o idle. Un esempio è il Elenco attività, che deve rispondere rapidamente quando viene chiamato dall'utente, indipendentemente dal carico sul sistema operativo. Quando si usa la classe con priorità alta, un'applicazione di classe con priorità elevata può usare quasi tutto il tempo di CPU disponibile.
+Specificato per un processo che esegue attività di importanza critica che devono essere eseguite immediatamente. I thread del processo hanno la precedenza sui thread dei processi con classe di priorità normal o idle. Un esempio è il Elenco attività, che deve rispondere rapidamente quando viene chiamato dall'utente, indipendentemente dal carico sul sistema operativo. Usare estrema attenzione quando si usa la classe ad alta priorità, perché un'applicazione di classe ad alta priorità può usare quasi tutto il tempo di CPU disponibile.
 
 </dd> <dt>
 
@@ -111,13 +111,13 @@ Specificato per un processo che esegue attività time-critical che devono essere
 
 </dt> <dd>
 
-Specificato per un processo con la priorità più alta possibile. I thread del processo pre-eseguono i thread di tutti gli altri processi, inclusi i processi del sistema operativo che eseguono attività importanti. Ad esempio, un processo in tempo reale che viene eseguito per più di un intervallo molto breve può causare la non scaricamento delle cache su disco o la non risposta di un mouse.
+Specificato per un processo con la priorità più alta possibile. I thread del processo hanno la priorità su tutti gli altri processi, inclusi i processi del sistema operativo che eseguono attività importanti. Ad esempio, un processo in tempo reale che viene eseguito per più di un intervallo molto breve può causare la non scaricamento delle cache del disco o il fatto che un mouse non rispetti.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -144,11 +144,11 @@ Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare la priorità su Tempo reale, il chiamante deve avere **SeIncreaseBasePriorityPrivilege** (**edizione Standard INC BASE PRIORITY \_ \_ \_ \_ PRIVILEGE**). Senza questo privilegio, la priorità più alta può essere impostata su Priorità alta.
+Per impostare la priorità su Realtime, il chiamante deve avere **SeIncreaseBasePriorityPrivilege** (**edizione Standard INC BASE PRIORITY \_ \_ \_ \_ PRIVILEGE**). Senza questo privilegio, la priorità più alta può essere impostata su Priorità alta.
 
 ## <a name="examples"></a>Esempio
 
-[L'esempio Di modifica della priorità di un](https://Gallery.TechNet.Microsoft.Com/23615ee7-cccb-43c2-b994-6106ce2fc05e) processo in esecuzione di VBScript modifica la priorità di un'istanza in esecuzione di Notepad.exe da Normale a Sopra normale.
+[L'esempio Modify the Priority Of a Running Process](https://Gallery.TechNet.Microsoft.Com/23615ee7-cccb-43c2-b994-6106ce2fc05e) VBScript modifica la priorità di un'istanza in Notepad.exe da Normale a Sopra normale.
 
 ## <a name="requirements"></a>Requisiti
 

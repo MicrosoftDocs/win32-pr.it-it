@@ -1,29 +1,29 @@
 ---
 description: Contiene un valore definito dal chiamante per un evento METransformMarker.
 ms.assetid: c6ab20d9-c2bc-43ba-a018-2c6682bf0485
-title: Attributo MF_EVENT_MFT_CONTEXT (Mfapi. h)
+title: MF_EVENT_MFT_CONTEXT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d61e8920c119da151df1215e8de8ce0d526220e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9518853030ec52a687f02ac0288c3fd3ffcf55b676be56c7036b349e1dec9aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104847"
 ---
-# <a name="mf_event_mft_context-attribute"></a>\_Attributo di \_ contesto MFT evento \_ MF
+# <a name="mf_event_mft_context-attribute"></a>Attributo MF \_ EVENT \_ MFT \_ CONTEXT
 
-Contiene un valore definito dal chiamante per un evento [METransformMarker](metransformmarker.md) .
+Contiene un valore definito dal chiamante per un [evento METransformMarker.](metransformmarker.md)
 
 ## <a name="data-type"></a>Tipo di dati
 
-**ULONG \_ PTR** archiviato come **UInt64**
+**ULONG \_ PTR** archiviato come **UINT64**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene utilizzato con l'evento [METransformMarker](metransformmarker.md) . Il valore dell'attributo viene tratto dal parametro *ulParam* del metodo [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) .
+Questo attributo viene usato con [l'evento METransformMarker.](metransformmarker.md) Il valore dell'attributo deriva dal *parametro ulParam* del metodo [**IMFTransform::P rocessMessage.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs asincrono](asynchronous-mfts.md)
+[MFT asincroni](asynchronous-mfts.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)

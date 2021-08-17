@@ -3,7 +3,7 @@ title: String.Id proprietà
 description: Rappresenta l'ID univoco di una risorsa stringa.
 ms.assetid: 393da279-bdf6-4796-a546-1931cbe49113
 keywords:
-- String.Id proprietà Windows barra multifunzione
+- String.Id proprietà Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119441651"
 
 Rappresenta l'ID univoco di una risorsa stringa.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <String.Id/>
@@ -63,7 +63,7 @@ La lunghezza massima è di 10 caratteri con zeri iniziali facoltativi.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) **con** String.Id dichiarazione.
+L'esempio seguente illustra il markup per [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con una **String.Id** dichiarazione.
 
 
 ```XML

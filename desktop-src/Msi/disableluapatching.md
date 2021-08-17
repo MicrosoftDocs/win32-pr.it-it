@@ -13,7 +13,7 @@ ms.locfileid: "118637778"
 ---
 # <a name="disableluapatching"></a>DisableLUAPatching
 
-Se questo criterio di sistema per computer è impostato su "1", il programma di installazione impedisce agli utenti non amministratori di usare l'applicazione di patch controllo dell'account utente [(UAC)](user-account-control--uac--patching.md) per qualsiasi applicazione installata nel computer. Quando i criteri di sistema per computer non sono impostati o impostati su 0, gli utenti non amministratori possono applicare patch utente con privilegi minimi alle applicazioni abilitate per l'applicazione di patch agli account utente con privilegi minimi.
+Se questo criterio di sistema per computer è impostato su "1", il programma di installazione impedisce agli utenti non amministratori di usare l'applicazione di [patch](user-account-control--uac--patching.md) di Controllo dell'account utente per qualsiasi applicazione installata nel computer. Quando i criteri di sistema per computer non sono impostati o impostati su 0, gli utenti non amministratori possono applicare patch utente con privilegi minimi alle applicazioni abilitate per l'applicazione di patch agli account utente con privilegi minimi.
 
 Usare la [**proprietà MSIDISABLELUAPATCHING**](msidisableluapatching.md) per impedire l'applicazione di patch con privilegi minimi di un'applicazione.
 
@@ -21,7 +21,7 @@ Il criterio DisableLUAPatching è disponibile a partire da Windows Installer ver
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ Criteri \_ software del computer** \\ **locale** \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Criteri \_ software del** \\ **computer** \\ **locale Programma** di installazione \\  \\ **Windows** \\ **Microsoft**
 
 ## <a name="data-type"></a>Tipo di dati
 

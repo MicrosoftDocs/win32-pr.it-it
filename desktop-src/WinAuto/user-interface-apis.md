@@ -13,7 +13,7 @@ ms.locfileid: "118563610"
 ---
 # <a name="user-interface-apis"></a>Interfaccia utente API
 
-In questa sezione vengono illustrate le API seguenti:
+Questa sezione illustra le API seguenti:
 
 -   [Uso dell'interfaccia IAccessible](using-iaccessible.md)
 -   [API di annotazione dinamica](dynamic-annotation-api.md)

@@ -4,16 +4,16 @@ description: Segnalibro IAgentNotifySink
 ms.assetid: 172042af-a524-4ea4-955d-4e3dee079344
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1febedfc962904544a49b8621812d0518026b459
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02562b7cbf42c3445a25edc5071476da1b2d8dc53d80923ad875fddf09e5d31b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477097"
 ---
-# <a name="iagentnotifysinkbookmark"></a>IAgentNotifySink:: segnalibro
+# <a name="iagentnotifysinkbookmark"></a>IAgentNotifySink::Bookmark
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT Bookmark(
@@ -21,7 +21,7 @@ HRESULT Bookmark(
 );                          
 ```
 
-Notifica a un'applicazione client quando il relativo segnalibro viene completato.
+Notifica a un'applicazione client il completamento del segnalibro.
 
 -   Nessun valore restituito.
 
@@ -30,20 +30,20 @@ Notifica a un'applicazione client quando il relativo segnalibro viene completato
 <span id="dwBookMarkID"></span><span id="dwbookmarkid"></span><span id="DWBOOKMARKID"></span>*dwBookMarkID*
 </dt> <dd>
 
-Identificatore del segnalibro che ha generato l'attivazione dell'evento.
+Identificatore del segnalibro che ha generato l'evento.
 
 </dd> </dl>
 
-Quando si includono tag di segnalibro in un metodo [**Speak**](speak-method.md) , è possibile tenere traccia del momento in cui si verificano con questo evento.
+Quando si includono tag segnalibro in [**un metodo Speak,**](speak-method.md) è possibile tenere traccia di quando si verificano con questo evento.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCharacter:: Speak**](iagentcharacter--speak.md), [tag di output di sintesi vocale di Microsoft Agent](microsoft-agent-speech-output-tags.md)
+[**IAgentCharacter::Speak , Tag**](iagentcharacter--speak.md) [di output vocale di Microsoft Agent](microsoft-agent-speech-output-tags.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

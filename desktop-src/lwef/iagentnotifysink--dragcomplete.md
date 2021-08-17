@@ -62,14 +62,14 @@ Parametro che indica lo stato del pulsante del mouse e del tasto di modifica. Il
 <span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordinata x del puntatore del mouse in pixel, rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata x del puntatore del mouse in pixel rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> <dt>
 
 <span id="y"></span><span id="Y"></span>*Y*
 </dt> <dd>
 
-Coordinata y del puntatore del mouse in pixel, rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata y del puntatore del mouse in pixel rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> </dl>
 

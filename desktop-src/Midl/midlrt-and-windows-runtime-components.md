@@ -22,7 +22,7 @@ Illustra come creare file di metadati (con estensione winmd) che rappresentano l
 
 Usare il compilatore MIDLRT per compilare file di metadati (con estensione winmd) per i componenti Windows Runtime.
 
-Quando vengono generati i file di metadati, è possibile componirli in un pacchetto più efficiente usando l'utilità MDMERGE. Per altre informazioni, vedere [MDMERGE e i file di metadati.](mdmerge-and-metadata-files.md)
+Quando i file di metadati vengono generati, è possibile componirli in un pacchetto più efficiente usando l'utilità MDMERGE. Per altre informazioni, vedere [MDMERGE e i file di metadati.](mdmerge-and-metadata-files.md)
 
 
 L'uso di MIDLRT è simile all'uso del compilatore MIDL. Eseguire MIDLRT dalla riga di comando usando il comando seguente:

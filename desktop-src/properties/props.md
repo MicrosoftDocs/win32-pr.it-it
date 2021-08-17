@@ -1,5 +1,5 @@
 ---
-description: Questa sezione descrive le singole proprietà all'interno del Windows proprietà che possono essere impostate Windows file.
+description: In questa sezione vengono descritte le singole proprietà all'interno Windows sistema di proprietà che è possibile impostare Windows file.
 ms.assetid: 7532E58F-BBF2-4e36-9D81-C8E04B92CB7C
 title: Proprietà Windows
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118463926"
 ---
 # <a name="windows-properties"></a>Proprietà Windows
 
-Questa sezione descrive le singole proprietà all'interno del Windows proprietà che possono essere impostate Windows file.
+In questa sezione vengono descritte le singole proprietà all'interno Windows sistema di proprietà che è possibile impostare Windows file.
 
 -   [Audio](audio-bumper.md)
 -   [Calendario](calendar-bumper.md)
@@ -52,13 +52,13 @@ Questa sezione descrive le singole proprietà all'interno del Windows proprietà
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Per altre informazioni sull'uso delle proprietà canoniche nelle query, vedere Uso della sintassi [di query avanzata a livello di codice.](../search/-search-3x-advancedquerysyntax.md)
+Per altre informazioni sull'uso delle proprietà canoniche nelle query, vedere [Uso della sintassi di query avanzata](../search/-search-3x-advancedquerysyntax.md)a livello di codice.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Schema di descrizione della proprietà](property-description-schema.md)
+[Schema di descrizione delle proprietà](property-description-schema.md)
 </dt> <dt>
 
 [Set di proprietà](property-sets.md)

@@ -1,6 +1,6 @@
 ---
 title: WMT_PROP_DATATYPE (Wmcodecdsp.h)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | WMT_PROP_DATATYPE (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | WMT_PROP_DATATYPE (Wmcodecdsp.h)
 ms.assetid: d86cbadd-16da-448d-bda9-db1219db3cf9
 keywords:
 - WMT_PROP_DATATYPE windows Media Format
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697823"
 ---
-# <a name="wmt_prop_datatype"></a>WMT \_ PROP \_ DATATYPE
+# <a name="wmt_prop_datatype"></a>TIPO DI DATI \_ PROP \_ WMT
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 

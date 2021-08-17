@@ -1,6 +1,6 @@
 ---
 title: D3DX11_IMAGE_INFO struttura (D3DX11tex.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Facoltativamente, fornire informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. | D3DX11_IMAGE_INFO struttura (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. | D3DX11_IMAGE_INFO struttura (D3DX11tex.h)
 ms.assetid: 981f4f1d-7609-416a-8f92-c7223d8b2773
 keywords:
 - D3DX11_IMAGE_INFO struttura Direct3D 11
@@ -22,14 +22,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118536868"
 ---
-# <a name="d3dx11_image_info-structure"></a>Struttura D3DX11 \_ IMAGE \_ INFO
+# <a name="d3dx11_image_info-structure"></a>Struttura IMAGE INFO D3DX11 \_ \_
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 
  
 
-Facoltativamente, fornire informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. Il valore D3DX11 DEFAULT per uno di questi parametri determina l'uso automatico del valore del file di origine da parte di \_ D3DX.
+Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11 DEFAULT per uno di questi parametri fa in modo che D3DX usi automaticamente il valore \_ del file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,7 +72,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla a questa altezza di destinazione.
+Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla all'altezza di destinazione.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Numero massimo di livelli mipmap nella trama. Vedere le osservazioni in [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). Se si usa 0 o D3DX11 DEFAULT, verrà creata una catena \_ mipmap completa.
+Numero massimo di livelli mipmap nella trama. Vedere le osservazioni in [**D3D11 \_ TEX1D \_ SRV.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv) L'uso di 0 o D3DX11 DEFAULT causerà la creazione di una catena \_ mipmap completa.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxg
 
 </dd> <dd>
 
-Enumerazione [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che specifica il formato in cui si trova la trama dopo il caricamento.
+Enumerazione [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che specifica il formato della trama dopo il caricamento.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Valore [**D3DX11 \_ IMAGE FILE \_ \_ FORMAT**](d3dx11-image-file-format.md) che 
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene usata da metodi come [**D3DX11GetImageInfoFromFile,**](d3dx11getimageinfofromfile.md) [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource.**](d3dx11getimageinfofromresource.md)
+Questa struttura viene usata da metodi come: [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 ## <a name="requirements"></a>Requisiti
 

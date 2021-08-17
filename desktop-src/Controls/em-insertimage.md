@@ -3,7 +3,7 @@ title: EM_INSERTIMAGE messaggio (Richedit.h)
 description: Sostituisce la selezione con un BLOB che visualizza un'immagine.
 ms.assetid: 147B298B-C4A9-455B-9736-A0B09D72902B
 keywords:
-- EM_INSERTIMAGE del messaggio Windows controlli
+- EM_INSERTIMAGE di Windows messaggi
 topic_type:
 - apiref
 api_name:

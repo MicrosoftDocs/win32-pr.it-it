@@ -1,10 +1,10 @@
 ---
 title: Classe GetPositionInformationOperation
-description: Registra un gestore eventi che viene richiamato quando l'operazione asincrona avviata da GetPositionInformationAsync viene completata e fornisce un metodo che restituisce i risultati dell'operazione.
+description: Registra un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da GetPositionInformationAsync e fornisce un metodo che restituisce i risultati dell'operazione.
 ms.assetid: 57DDE3B2-EFA9-4FEB-B701-D987C58F5CEA
 keywords:
-- Api Streaming multimediale della classe GetPositionInformationOperation
-- Descrizione della classe GetPositionInformationOperation dell'API Streaming multimediale
+- Classe GetPositionInformationOperation API Di streaming multimediale
+- Classe GetPositionInformationOperation API Streaming multimediale , descritta
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118473453"
 ---
 # <a name="getpositioninformationoperation-class"></a>Classe GetPositionInformationOperation
 
-Registra un gestore eventi che viene richiamato quando l'operazione asincrona avviata da [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) viene completata e fornisce un metodo che restituisce i risultati dell'operazione.
+Registra un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetPositionInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) e fornisce un metodo che restituisce i risultati dell'operazione.
 
 **GetPositionInformationOperation** ha questi tipi di membri:
 
@@ -38,7 +38,7 @@ La **classe GetPositionInformationOperation** include questi metodi.
 
 | Metodo                                                           | Descrizione                                                                                                                                                 |
 |:-----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetResults**](getpositioninformationoperation-getresults.md) | Restituisce i risultati dell'operazione asincrona avviata da [**GetPositionInformationAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) <br/> |
+| [**GetResults**](getpositioninformationoperation-getresults.md) | Restituisce i risultati dell'operazione asincrona avviata [**da GetPositionInformationAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) <br/> |
 
 
 
@@ -52,7 +52,7 @@ La **classe GetPositionInformationOperation** ha queste proprietà.
 
 | Proprietà                                                                  | Tipo di accesso           | Descrizione                                                                                                                                                                                          |
 |:--------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completi**](getpositioninformationoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi richiamato quando viene completata l'operazione asincrona avviata da [**GetPositionInformationAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) <br/> |
+| [**Completi**](getpositioninformationoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetPositionInformationAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getpositioninformationasync) <br/> |
 
 
 

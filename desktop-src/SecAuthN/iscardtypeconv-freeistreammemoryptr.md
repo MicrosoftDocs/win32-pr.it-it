@@ -1,5 +1,5 @@
 ---
-description: Libera il puntatore ai byte che punta al blocco di memoria HGLOBAL gestito da un'interfaccia COM IStream.
+description: Libera il puntatore di byte che punta al blocco di memoria HGLOBAL gestito da un'interfaccia COM IStream.
 ms.assetid: a76c97a9-d0e9-4eb0-9f97-15f22111187d
 title: Metodo ISCardTypeConv::FreeIStreamMemoryPtr (Scarddat.h)
 ms.topic: reference
@@ -66,8 +66,8 @@ Il metodo restituisce uno dei valori possibili seguenti:
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Memoria allocata correttamente.<br/>                                                        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Si è verificato un errore in uno o più parametri passati alla funzione.<br/> |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Un parametro di tipo puntatore non è corretto.<br/>                                            |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per soddisfare la richiesta.<br/>                                            |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Un parametro di tipo puntatore non è corretto.<br/>                                            |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria disponibile insufficiente per soddisfare la richiesta.<br/>                                            |
 
 
 
@@ -75,7 +75,7 @@ Il metodo restituisce uno dei valori possibili seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione rilascia completamente e correttamente il puntatore di byte che punta al blocco di memoria HGLOBAL gestito **dall'interfaccia IStream.** Il puntatore di byte viene acquisito da una [**chiamata a GetAtIStreamMemory.**](iscardtypeconv-getatistreammemory.md)
+Questa funzione rilascia completamente e in modo pulito il puntatore di byte che punta al blocco di memoria HGLOBAL gestito **dall'interfaccia IStream.** Il puntatore di byte viene acquisito da una chiamata a [**GetAtIStreamMemory**](iscardtypeconv-getatistreammemory.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,13 +84,13 @@ Questa funzione rilascia completamente e correttamente il puntatore di byte che 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Libreria dei tipi<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCardTypeConv è definito come 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
+| IID<br/>                      | IID ISCardTypeConv è definito come \_ 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
 
 
 
@@ -101,7 +101,7 @@ Questa funzione rilascia completamente e correttamente il puntatore di byte che 
 [**ISCardTypeConv**](iscardtypeconv.md)
 </dt> <dt>
 
-[Valori restituiti dalla smart card](authentication-return-values.md)
+[Valori restituiti da smart card](authentication-return-values.md)
 </dt> <dt>
 
 [**GetAtIStreamMemory**](iscardtypeconv-getatistreammemory.md)

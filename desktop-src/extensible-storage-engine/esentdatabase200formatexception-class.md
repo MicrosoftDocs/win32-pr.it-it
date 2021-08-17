@@ -33,7 +33,7 @@ ms.locfileid: "118781966"
 ---
 # <a name="esentdatabase200formatexception-class"></a>Classe EsentDatabase200FormatException
 
-Classe di base per JET_err. Eccezioni Database200Format.
+Classe di base per JET_err. Database200Format eccezioni.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
@@ -45,7 +45,7 @@ Classe di base per JET_err. Eccezioni Database200Format.
           [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
             Microsoft.Isam.Esent.Interop.EsentDatabase200FormatException  
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

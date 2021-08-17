@@ -1,6 +1,6 @@
 ---
 title: Attributo RecordingTimeYearMonth
-description: L'attributo RecordingTimeYearMonth è la parte relativa all'anno e al mese della data della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+description: L'attributo RecordingTimeYearMonth è la parte anno e mese della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 ms.assetid: aced29c4-5f11-4ade-b9e9-f0b3431fe577
 keywords:
 - Attributo RecordingTimeYearMonth Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a477f7c94bafd2806829d3e670e6a4542432fc9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6f278d00e34b108f2da725d93cdb45ff8270395bb5693c457bf5c2158b8f367
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333551"
 ---
 # <a name="recordingtimeyearmonth-attribute"></a>Attributo RecordingTimeYearMonth
 
-L'attributo **RecordingTimeYearMonth** è la parte relativa all'anno e al mese della data della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+**L'attributo RecordingTimeYearMonth** è la parte anno e mese della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **RecordingTimeYearMonth** è la parte relativa all'anno e al mese d
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

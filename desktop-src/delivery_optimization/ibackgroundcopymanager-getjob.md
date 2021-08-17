@@ -60,7 +60,7 @@ Puntatore [**a interfaccia IBackgroundCopyJob**](ibackgroundcopyjob-.md) al proc
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
+Questo metodo restituisce i **valori HRESULT** seguenti, oltre ad altri.
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Questa Windows installer indica quando il livello di interfaccia utente interno è stato impostato per nascondere il pulsante Annulla.
+description: Questa Windows installer indica quando il livello dell'interfaccia utente interno è stato impostato per nascondere il pulsante Annulla.
 ms.assetid: 0e842bee-32c2-41ae-97f3-bc8b34960a44
 title: MsiUIHideCancel - proprietà
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118943989"
 ---
 # <a name="msiuihidecancel-property"></a>MsiUIHideCancel - proprietà
 
-Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 quando il livello di interfaccia utente interno è stato impostato in modo da includere INSTALLUILEVEL HIDECANCEL con la funzione \_ [](command-line-options.md) [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md)dell'oggetto [**Installer**](installer-object.md) o tramite le opzioni della riga di comando .
+Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 quando il livello dell'interfaccia utente interno è stato impostato per includere INSTALLUILEVEL HIDECANCEL con la funzione \_ [](command-line-options.md) [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md)dell'oggetto [**Installer**](installer-object.md) o tramite opzioni della riga di comando .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 qua
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP. Per informazioni Windows service pack minimo richiesto da una versione Windows Windows [Installer,](windows-installer-portal.md) vedere l'Windows installer Run-Time requisiti minimi.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

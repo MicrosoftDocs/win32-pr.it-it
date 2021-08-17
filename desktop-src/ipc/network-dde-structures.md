@@ -13,7 +13,7 @@ ms.locfileid: "118756053"
 ---
 # <a name="network-dde-structures"></a>Strutture DDE di rete
 
-\[DDE di rete non è più supportato. Nddeapi.dll presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
+\[DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
 
 La struttura seguente viene usata con DDE di rete:
 

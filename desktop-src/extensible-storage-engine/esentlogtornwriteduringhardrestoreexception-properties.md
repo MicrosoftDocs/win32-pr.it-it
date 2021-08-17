@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentLogTornWriteDuringHardRestoreException'
+description: Altre informazioni sulle proprietà di EsentLogTornWriteDuringHardRestoreException
 title: Proprietà di EsentLogTornWriteDuringHardRestoreException
 TOCTitle: EsentLogTornWriteDuringHardRestoreException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLogTornWriteDuringHardRestoreException
@@ -17,7 +17,7 @@ ms.locfileid: "118776410"
 # <a name="esentlogtornwriteduringhardrestoreexception-properties"></a>Proprietà di EsentLogTornWriteDuringHardRestoreException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringhardrestoreexception-class.md) espone i membri seguenti.
 

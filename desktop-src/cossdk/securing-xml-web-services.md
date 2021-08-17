@@ -13,7 +13,7 @@ ms.locfileid: "118546964"
 ---
 # <a name="securing-xml-web-services"></a>Protezione dei servizi Web XML
 
-L'accesso alle applicazioni COM+ esposte come servizi Web XML è controllato dal server Web IIS, che elabora le richieste in ingresso. È anche possibile configurare IIS in modo da richiedere che le comunicazioni con il chiamante si s svolgono su un canale sicuro stabilito tramite il protocollo Secure Sockets Layer (SSL).
+L'accesso alle applicazioni COM+ esposte come servizi Web XML è controllato dal server Web IIS, che elabora le richieste in ingresso. È anche possibile configurare IIS in modo da richiedere che le comunicazioni con il chiamante si snodino su un canale sicuro stabilito usando il protocollo Secure Sockets Layer (SSL).
 
 > [!Note]  
 > Un servizio Web XML protetto non supporta l'accesso WKO tramite WSDL. I client che hanno installato il .NET Framework versione 1.1 possono invece chiamarlo in modalità CAO. Se i client di terze parti devono accedere al servizio Web XML tramite WSDL, è necessario consentire l'accesso anonimo.
@@ -25,36 +25,36 @@ L'accesso alle applicazioni COM+ esposte come servizi Web XML è controllato dal
 
  
 
-## <a name="component-services-administrative-tool"></a>Strumento di amministrazione Servizi componenti
+## <a name="component-services-administrative-tool"></a>Strumento amministrativo servizi componenti
 
 Per selezionare il meccanismo di autenticazione per un servizio Web XML, seguire questa procedura:
 
-1.  Fare clic con il pulsante **destro del Computer locale** sul desktop e scegliere **Gestisci.**
+1.  Fare clic con il pulsante **destro del Computer locale** sul desktop e scegliere **Gestisci**.
 
-2.  In **Servizi e applicazioni** e Internet Information **Service** individuare l'icona corrispondente alla directory radice virtuale per il servizio Web XML. Fare clic con il pulsante destro del mouse sull'icona della directory e **scegliere Proprietà.**
+2.  In **Servizi e applicazioni** e Internet Information **Service** individuare l'icona corrispondente alla directory radice virtuale per il servizio Web XML. Fare clic con il pulsante destro del mouse sull'icona della directory e scegliere **Proprietà**.
 
 3.  Nella scheda **Sicurezza directory della** finestra di dialogo delle proprietà individuare Autenticazione e controllo di **accesso** e fare clic sul pulsante **Modifica** corrispondente.
 
-4.  Nella finestra **di dialogo Metodi** di autenticazione in **Accesso** autenticato usare le caselle di controllo per selezionare i meccanismi di autenticazione da consentire. Fare clic su **OK**.
+4.  Nella finestra **di dialogo Metodi** di autenticazione in **Accesso** autenticato usare le caselle di controllo per selezionare i meccanismi di autenticazione che si desidera consentire. Fare clic su **OK**.
 
     > [!Note]  
-    > È possibile configurare IIS per autenticare i chiamanti usando una delle opzioni seguenti nella finestra di dialogo Metodi di autenticazione **IIS:** Autenticazione **integrata Windows**, Autenticazione digest per i server di dominio Windows , Autenticazione di base (la password viene inviata **in** testo non **crittografato)** o Autenticazione **Passport .NET**. È anche possibile consentire l'accesso anonimo.
+    > È possibile configurare IIS per autenticare i chiamanti usando una delle opzioni seguenti nella finestra di dialogo Metodi di autenticazione **IIS:** Autenticazione **integrata di Windows**, Autenticazione digest per i server di dominio Windows , Autenticazione di base (password inviata **in** testo non **crittografato)** o **autenticazione .NET Passport**. È anche possibile consentire l'accesso anonimo.
 
      
 
-5.  Nella finestra di dialogo delle proprietà fare clic **su OK.**
+5.  Nella finestra di dialogo delle proprietà fare clic su **OK.**
 
-Per consentire l'accesso anonimo non sicuro a un servizio Web XML, seguire questa procedura:
+Per consentire l'accesso anonimo e non sicuro a un servizio Web XML, seguire questa procedura:
 
-1.  Fare clic con il pulsante **destro del Computer locale** sul desktop e scegliere **Gestisci.**
+1.  Fare clic con il pulsante **destro del Computer locale** sul desktop e scegliere **Gestisci**.
 
-2.  In **Servizi e applicazioni** e Internet Information **Service** individuare l'icona corrispondente alla directory radice virtuale per il servizio Web XML. Fare clic con il pulsante destro del mouse sull'icona della directory e **scegliere Proprietà.**
+2.  In **Servizi e applicazioni** e Internet Information **Service** individuare l'icona corrispondente alla directory radice virtuale per il servizio Web XML. Fare clic con il pulsante destro del mouse sull'icona della directory e scegliere **Proprietà**.
 
-3.  Nella scheda **Sicurezza directory della** finestra di dialogo delle proprietà individuare Autenticazione e controllo di **accesso** e fare clic sul pulsante **Modifica** corrispondente. Selezionare la casella **di controllo Abilita accesso** anonimo . Fare clic su **OK**.
+3.  Nella scheda **Sicurezza directory della** finestra di dialogo delle proprietà individuare Autenticazione e controllo di **accesso** e fare clic sul pulsante **Modifica** corrispondente. Selezionare la **casella di controllo Abilita accesso** anonimo. Fare clic su **OK**.
 
-4.  Nella scheda **Sicurezza directory della** finestra di dialogo delle proprietà individuare Comunicazioni **protette** e fare clic sul pulsante **Modifica** corrispondente. Deselezionare la **casella di controllo Richiedi canale sicuro (SSL).** Fare clic su **OK**.
+4.  Nella scheda **Sicurezza directory della** finestra di dialogo delle proprietà individuare Comunicazioni **protette** e fare clic sul pulsante **Modifica** corrispondente. Deselezionare la casella di controllo Richiedi canale sicuro **(SSL).** Fare clic su **OK**.
 
-5.  Nella finestra di dialogo delle proprietà fare clic **su OK.**
+5.  Nella finestra di dialogo delle proprietà fare clic su **OK.**
 
 ## <a name="visual-basic"></a>Visual Basic
 

@@ -1,6 +1,6 @@
 ---
 title: Codici di errore COM
-description: Gli argomenti seguenti forniscono elenchi di codici di errore usati dalle API basate su COM. Questi valori sono definiti nel file di intestazione Winerror.h.
+description: Negli argomenti seguenti vengono forniti elenchi di codici di errore usati dalle API basate su COM. Questi valori sono definiti nel file di intestazione Winerror.h.
 ms.assetid: 373671fe-489e-4f12-afe5-b7541f32441b
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118550604"
 ---
 # <a name="com-error-codes"></a>Codici di errore COM
 
-Gli argomenti seguenti forniscono elenchi di codici di errore usati dalle API basate su COM. Questi valori sono definiti nel file di intestazione Winerror.h.
+Negli argomenti seguenti vengono forniti elenchi di codici di errore usati dalle API basate su COM. Questi valori sono definiti nel file di intestazione Winerror.h.
 
 -   [**Codici di errore COM (generici)**](com-error-codes-1.md)
 -   [**Codici di errore COM (XACT, SCHED, OLE)**](com-error-codes-2.md)
@@ -26,7 +26,7 @@ Gli argomenti seguenti forniscono elenchi di codici di errore usati dalle API ba
 -   [**Codici di errore COM (WPN, MBN, P2P, Bluetooth)**](com-error-codes-9.md)
 -   [**Codici di errore COM (interfaccia utente, audio, DirectX, codec)**](com-error-codes-10.md)
 
-Se si verificano difficoltà con un'applicazione che si sta installando o in esecuzione, contattare il supporto tecnico per il software che visualizza il messaggio di errore. Per ottenere supporto per un prodotto Microsoft, passare a [https://support.microsoft.com](https://support.microsoft.com) .
+Se si riscontrano difficoltà con un'applicazione che si sta installando o in esecuzione, contattare il supporto tecnico per il software che visualizza il messaggio di errore. Per ottenere supporto per un prodotto Microsoft, passare a [https://support.microsoft.com](https://support.microsoft.com) .
 
  
 

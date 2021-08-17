@@ -19,7 +19,7 @@ ms.locfileid: "118774910"
 Includere membri protetti  
 Includere i membri ereditati  
 
-Classe di base per JET_err. Eccezioni RecoveredWithoutUndoDatabasesConsistent.
+Classe di base per JET_err. RecoveredWithoutUndoDatabasesConsistent exceptions( Eccezioni recoveredWithoutUndoDatabasesConsistent).
 
 Il [tipo EsentRecoveredWithoutUndoDatabasesConsistentException](./esentrecoveredwithoutundodatabasesconsistentexception-class.md) espone i membri seguenti.
 

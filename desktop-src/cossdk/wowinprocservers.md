@@ -1,5 +1,5 @@
 ---
-description: Contiene un elenco dei server in-process registrati nel sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
+description: Contiene un elenco dei server in-process registrati con il sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
 ms.assetid: 4dbcf059-b09b-4a65-95c9-3a4735c252c3
 title: Raccolta WOWInprocServers
 ms.topic: reference
@@ -21,13 +21,13 @@ ms.locfileid: "118545572"
 ---
 # <a name="wowinprocservers-collection"></a>Raccolta WOWInprocServers
 
-Contiene un elenco dei server in-process registrati nel sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
+Contiene un elenco dei server in-process registrati con il sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
 
 Questa raccolta supporta il [**metodo Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection,**](comadmincatalogcollection.md) ma non il [**metodo Add.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) Per installare o importare componenti in un'applicazione, usare i metodi [**nell'oggetto COMAdminCatalog.**](comadmincatalog.md)
 
 ## <a name="members"></a>Membri
 
-La **raccolta WOWInprocServers** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta WOWInprocServers** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 

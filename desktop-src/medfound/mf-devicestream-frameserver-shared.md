@@ -1,19 +1,19 @@
 ---
-description: Questo attributo, se impostato su un flusso, contrassegna in modo esplicito il flusso come condiviso dal server di frame.
+description: Questo attributo, se impostato in un flusso, contrassegna in modo esplicito il flusso come condiviso dal server frame.
 ms.assetid: 15DF88A2-041C-4E73-A121-00454964E2C1
-title: Attributo MF_DEVICESTREAM_FRAMESERVER_SHARED (Mfidl. h)
+title: MF_DEVICESTREAM_FRAMESERVER_SHARED attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbea28d4d53c7f8a63aa64379550d9c856da1760
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 591231d552c969e2b30d353849ab433c4b2f60b473ff0ce5d933c57b6162079b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104957"
 ---
-# <a name="mf_devicestream_frameserver_shared-attribute"></a>\_ \_ Attributo condiviso FRAMESERVER MF DEVICESTREAM \_
+# <a name="mf_devicestream_frameserver_shared-attribute"></a>Attributo \_ MF DEVICESTREAM \_ FRAMESERVER \_ SHARED
 
-Questo attributo, se impostato su un flusso, contrassegna in modo esplicito il flusso come condiviso dal server di frame.
+Questo attributo, se impostato in un flusso, contrassegna in modo esplicito il flusso come condiviso dal server frame.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Questo attributo, se impostato su un flusso, contrassegna in modo esplicito il f
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

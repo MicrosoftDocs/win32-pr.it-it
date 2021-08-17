@@ -40,14 +40,14 @@ typedef enum WPD_SECTION_DATA_UNITS_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTE UNITÀ DATI SEZIONE WPD \_ \_ \_ \_**
+<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTE DELLE UNITÀ DATI \_ \_ DELLA \_ SEZIONE \_ WPD**
 </dt> <dd>
 
 Le unità specificate sono specificate in byte.
 
 </dd> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**UNITÀ DATI DELLA SEZIONE WPD \_ \_ IN \_ \_ MILLISECONDI**
+<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**MILLISECONDI DI \_ UNITÀ DATI DELLA SEZIONE \_ WPD \_ \_**
 </dt> <dd>
 
 Le unità specificate sono specificate in millisecondi.

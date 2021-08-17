@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Conversione implicita di sessione (da sessione a JET_SESID)'
-title: Conversione implicita della sessione (da sessione a JET_SESID)
+title: Conversione implicita di sessione (da sessione JET_SESID)
 TOCTitle: Implicit conversion (Session to JET_SESID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.op_Implicit(Microsoft.Isam.Esent.Interop.Session)~Microsoft.Isam.Esent.Interop.JET_SESID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.session.op_implicit(v=EXCHG.10)
@@ -32,11 +32,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118485510"
 ---
-# <a name="session-implicit-conversion-session-to-jet_sesid"></a>Conversione implicita della sessione (da sessione a JET_SESID)
+# <a name="session-implicit-conversion-session-to-jet_sesid"></a>Conversione implicita di sessione (da sessione JET_SESID)
 
-Operatore di conversione implicita da session a JET_SESID. In questo modo è possibile usare una sessione con le API che prevedono un JET_SESID.
+Operatore di conversione implicita da una sessione a una JET_SESID. In questo modo è possibile usare una sessione con le API che prevedono un JET_SESID.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

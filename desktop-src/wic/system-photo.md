@@ -67,7 +67,7 @@ Questa sezione contiene i criteri dei metadati delle foto per le proprietà Syst
 | [Criteri metadati foto System.Photo.SubjectDistance](-wic-photoprop-system-photo-subjectdistance.md)<br/>                     | Criteri dei metadati delle foto [per la proprietà System.Photo.SubjectDistance.](../properties/props-system-photo-subjectdistance.md)<br/>           |
 | [System.Photo.SubjectDistance Proxy](-wic-photoprop-system-photo-subjectdistance-proxy.md)<br/>                               | Proxy di proprietà per i criteri dei metadati delle foto System.Photo.SubjectDistance.<br/>                                                                     |
 | [Criteri metadati foto System.Photo.TranscodedForSync](-wic-photoprop-system-photo-transcodedforsync.md)<br/>                 | Criteri dei metadati delle foto [per la proprietà System.Photo.TranscodedForSync.](../properties/props-system-photo-transcodedforsync.md)<br/>         |
-| [Criteri metadati foto System.Photo.WhiteBalance](-wic-photoprop-system-photo-whitebalance.md)<br/>                           | Criteri dei metadati della foto per [la proprietà System.Photo.WhiteBalance.](../properties/props-system-photo-whitebalance.md)<br/>              |
+| [Criteri metadati foto System.Photo.WhiteBalance](-wic-photoprop-system-photo-whitebalance.md)<br/>                           | Criteri dei metadati delle foto [per la proprietà System.Photo.WhiteBalance.](../properties/props-system-photo-whitebalance.md)<br/>              |
 
 
 
