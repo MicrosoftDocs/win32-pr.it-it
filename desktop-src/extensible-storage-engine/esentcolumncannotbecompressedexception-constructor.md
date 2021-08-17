@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentColumnCannotBeCompressedException'
+description: Altre informazioni sul costruttore EsentColumnCannotBeCompressedException
 title: Costruttore EsentColumnCannotBeCompressedException
 TOCTitle: 'EsentColumnCannotBeCompressedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnCannotBeCompressedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0678d7f7218d9cb4b625548237fd91fe104ddc76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47a8e12cccd6bef00d7dff56201f7f237ecbde6bc7e4748841249a8e1e1452a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975411"
 ---
 # <a name="esentcolumncannotbecompressedexception-constructor"></a>Costruttore EsentColumnCannotBeCompressedException
 
 Inizializza una nuova istanza della classe EsentColumnCannotBeCompressedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentColumnCannotBeCompressedException()
 
 [Membri di EsentColumnCannotBeCompressedException](./esentcolumncannotbecompressedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

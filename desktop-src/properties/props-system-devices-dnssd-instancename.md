@@ -1,19 +1,19 @@
 ---
-description: Parte dell'istanza del nome dell'istanza del servizio DNS-SD. (ad esempio &\# 0034; myservices&\# 0034; in &\# 0034; servizio. \_ http. \_ TCP. local&\# 0034;).
+description: Parte dell'istanza del nome dell'istanza del servizio DNS-SD. (ad esempio, &\# 0034;myservice&\# 0034; in &\# 0034;myservice. \_ http. \_ tcp.local&\# 0034;).
 ms.assetid: c051560e-1d0e-4f57-a079-ea92e0d15143
-title: System. Devices. dnssd. NomeIstanza
+title: System.Devices.Dnssd.InstanceName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ab74a6c3fa59b7f06bc5247f16ebf710d751a7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f801a080a8b06ba7087df6c36b232a1861f2ac32146297b8a589eec19d97aa9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091301"
 ---
-# <a name="systemdevicesdnssdinstancename"></a>System. Devices. dnssd. NomeIstanza
+# <a name="systemdevicesdnssdinstancename"></a>System.Devices.Dnssd.InstanceName
 
-Parte dell'istanza del nome dell'istanza del servizio DNS-SD. (ad esempio "servizio" in "servizio". \_ http. \_ TCP. local ")
+Parte dell'istanza del nome dell'istanza del servizio DNS-SD. ad esempio "myservice" in "myservice. \_ http. \_ tcp.local")
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

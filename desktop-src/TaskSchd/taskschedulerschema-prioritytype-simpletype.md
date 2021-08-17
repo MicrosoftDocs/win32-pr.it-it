@@ -3,7 +3,7 @@ title: Tipo semplice priorityType
 description: Definisce i valori minimo e massimo per l'elemento Priority (settingsType).
 ms.assetid: 44e97d78-f035-4db9-a557-f24960518628
 keywords:
-- Utilità di pianificazione di tipo semplice priorityType
+- tipo semplice priorityType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 05b3c6d04adf557242438c813dab4f10d48cdb9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 71bdf8b87a641247ce2064ccf44ee861d79aab0593229e4cd7b38035c5c7c124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424431"
 ---
 # <a name="prioritytype-simple-type"></a>Tipo semplice priorityType
 
-Definisce i valori minimo e massimo per l'elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) .
+Definisce i valori minimo e massimo per [**l'elemento Priority (settingsType).**](taskschedulerschema-priority-settingstype-element.md)
 
 ``` syntax
 <xs:simpleType name="priorityType">
@@ -41,7 +41,7 @@ Definisce i valori minimo e massimo per l'elemento [**Priority (settingsType)**]
 
 ## <a name="enumeration-values"></a>Valori di enumerazione
 
-Il tipo semplice **priorityType** definisce i valori seguenti.
+Il **tipo semplice priorityType** definisce i valori seguenti.
 
 
 
@@ -58,8 +58,8 @@ Il tipo semplice **priorityType** definisce i valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ Il tipo semplice **priorityType** definisce i valori seguenti.
 
 <dl> <dt>
 
-[Tipi semplici dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione tipi semplici dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

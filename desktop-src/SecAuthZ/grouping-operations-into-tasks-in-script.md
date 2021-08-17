@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fb7fc1d4a84cd42dc0ae48af4fcbf02412b93337
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29c7dedb9944a208e5ba128f0341a8cbde3e787056c099d527be8f79260c6f7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913575"
 ---
 # <a name="grouping-operations-into-tasks-in-script"></a>Raggruppamento di operazioni in attività nello script
 
-In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituite da operazioni, ovvero funzioni di basso livello e metodi dell'applicazione. Viene quindi assegnata un'attività ai ruoli che devono eseguire tale attività. Un'attività è rappresentata da un oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) . Per ulteriori informazioni sulle operazioni e sulle attività, vedere [operazioni e attività](operations-and-tasks.md).
+In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituito da operazioni, ovvero funzioni di basso livello e metodi dell'applicazione. Un'attività viene quindi assegnata ai ruoli che devono eseguire tale attività. Un'attività è rappresentata da un [**oggetto IAzTask.**](/windows/desktop/api/Azroles/nn-azroles-iaztask) Per altre informazioni su operazioni e attività, vedere [Operazioni e attività](operations-and-tasks.md).
 
-Nell'esempio seguente viene illustrato come raggruppare le operazioni per creare un'attività. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contiene un'applicazione denominata Expense e che l'applicazione contenga operazioni definite nell'argomento [definizione di operazioni nello script](defining-operations-in-script.md).
+Nell'esempio seguente viene illustrato come raggruppare le operazioni per creare un'attività. Nell'esempio si presuppone che sia presente un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che l'archivio contenga un'applicazione denominata Expense e che questa applicazione contenga operazioni definite nell'argomento Definizione delle operazioni [nello script](defining-operations-in-script.md).
 
 
 ```VB

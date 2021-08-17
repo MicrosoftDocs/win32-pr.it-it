@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGetSessionParameter'
-title: JetGetSessionParameter (funzione)
+description: Altre informazioni sulla funzione JetGetSessionParameter
+title: Funzione JetGetSessionParameter
 TOCTitle: JetGetSessionParameter Function
 ms:assetid: 36fbcc06-a72d-4bfb-976b-1b705487732a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835039(v=EXCHG.10)
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0ac02142d48009d668d903b39163b425d738b55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: effd1ea5a9489df0a85af54a79cd773cc05b2fa3d6dbe57096a61fbd4c79c25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472031"
 ---
-# <a name="jetgetsessionparameter-function"></a>JetGetSessionParameter (funzione)
+# <a name="jetgetsessionparameter-function"></a>Funzione JetGetSessionParameter
 
 
 _**Si applica a:** Windows | Windows Server_
 
-La funzione **JetGetSessionParameter** legge il parametro Session per la sessione specificata.
+La **funzione JetGetSessionParameter** legge il parametro di sessione per la sessione specificata.
 
-La funzione **JetGetSessionParameter** è stata introdotta nel sistema operativo Windows 8.
+La **funzione JetGetSessionParameter** è stata introdotta nel Windows 8 operativo.
 
 ``` c++
 JET_ERR JET_API JetGetSessionParameter (
@@ -51,33 +51,33 @@ JET_ERR JET_API JetGetSessionParameter (
 
 Sessione da utilizzare per questa chiamata.
 
-Quando specificato, l'istanza specificata viene ignorata e viene utilizzata l'istanza associata alla sessione.
+Se specificato, l'istanza specificata viene ignorata e verrà usata l'istanza associata alla sessione.
 
 *sesparamid*
 
-ID del parametro della sessione da impostare.
+ID del parametro di sessione da impostare.
 
 *pvParam*
 
-Dati in questo parametro della sessione.
+Dati in questo parametro di sessione.
 
 *cbParamMax*
 
-Dimensione massima del set di dati in questo parametro della sessione.
+Dimensione massima del set di dati in questo parametro di sessione.
 
 *pcbParamActual*
 
-Dimensioni effettive del set di dati in questo parametro della sessione.
+Dimensioni effettive del set di dati in questo parametro di sessione.
 
 ### <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, il buffer di output appropriato per il parametro della sessione richiesto verrà impostato sul valore di tale parametro della sessione.
+In caso di esito positivo, il buffer di output appropriato per il parametro di sessione richiesto verrà impostato sul valore di tale parametro di sessione.
 
-In caso di errore, lo stato dei buffer di output sarà indefinito.
+In caso di errore, lo stato dei buffer di output non sarà definito.
 
 #### <a name="remarks"></a>Commenti
 
-Il parametro Session viene usato per la durata della sessione o finché non viene reimpostato il valore.
+Il parametro session viene usato per la durata della sessione o fino a quando il valore non viene reimpostato.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -97,11 +97,11 @@ Il parametro Session viene usato per la durata della sessione o finché non vien
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

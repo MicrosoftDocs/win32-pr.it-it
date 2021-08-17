@@ -1,40 +1,40 @@
 ---
-title: Tipo di controllo barra dei menu
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo barra dei menu.
+title: Tipo di controllo MenuBar
+description: Questo argomento fornisce informazioni sul supporto microsoft Automazione interfaccia utente per il tipo di controllo MenuBar.
 ms.assetid: e93a92ce-7c98-4e8f-8a6a-a365ccb705d6
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo barra dei menu
-- Automazione interfaccia utente, tipo di controllo barra dei menu
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo barra dei menu
-- Automazione interfaccia utente, proprietà per il tipo di controllo barra dei menu
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo barra dei menu
-- Automazione interfaccia utente, eventi per il tipo di controllo barra dei menu
-- strutture ad albero, tipo di controllo barra dei menu
-- Proprietà, tipo di controllo barra dei menu
-- pattern di controllo, tipo di controllo barra dei menu
-- eventi, tipo di controllo barra dei menu
-- supporto per il tipo di controllo barra dei menu
-- Tipo di controllo barra dei menu
-- tipi di controllo, struttura ad albero per il tipo di controllo barra dei menu
-- tipi di controllo, pattern di controllo per il tipo di controllo barra dei menu
-- tipi di controllo, supporto per la barra dei menu
-- tipi di controllo, barra dei menu
+- Automazione interfaccia utente,supporto per il tipo di controllo MenuBar
+- Automazione interfaccia utente,Tipo di controllo MenuBar
+- Automazione interfaccia utente,struttura ad albero per il tipo di controllo MenuBar
+- Automazione interfaccia utente,proprietà per il tipo di controllo MenuBar
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo MenuBar
+- Automazione interfaccia utente,eventi per il tipo di controllo MenuBar
+- strutture ad albero, tipo di controllo MenuBar
+- proprietà,Tipo di controllo MenuBar
+- pattern di controllo, tipo di controllo MenuBar
+- eventi, tipo di controllo MenuBar
+- supporto per il tipo di controllo MenuBar
+- Tipo di controllo MenuBar
+- tipi di controllo, struttura ad albero per il tipo di controllo MenuBar
+- tipi di controllo,pattern di controllo per il tipo di controllo MenuBar
+- tipi di controllo, supporto per MenuBar
+- tipi di controllo,MenuBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94bb60c13b5999bc8020eb70b84f6c932a2fb94
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 096dd2d48281c63a6006d679b8edacfc3607100574eb53325ae491ff1e011386
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119387801"
 ---
-# <a name="menubar-control-type"></a>Tipo di controllo barra dei menu
+# <a name="menubar-control-type"></a>Tipo di controllo MenuBar
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **barra dei menu** .
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo MenuBar.**
 
-I controlli barra dei menu sono un esempio di controlli che implementano il tipo di controllo **barra** dei menu. Le barre dei menu consentono agli utenti di attivare comandi e opzioni contenuti in un'applicazione.
+I controlli barra dei menu sono un esempio di controlli che implementano il **tipo di controllo MenuBar.** Le barre dei menu consentono agli utenti di attivare comandi e opzioni contenuti in un'applicazione.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **barra dei menu** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli barra dei menu in cui il Framework dell'interfaccia utente/piattaforma integra il supporto di automazione interfaccia utente per i tipi di controllo e i pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il tipo di **controllo MenuBar.** I Automazione interfaccia utente si applicano a tutti i controlli barra dei menu in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente supporto per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -46,7 +46,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli barra dei menu e descrive il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente che riguarda i controlli barra dei menu e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero](uiauto-treeoverview.md).
 
 
 
@@ -83,73 +83,73 @@ La tabella seguente illustra una tipica visualizzazione del controllo e del cont
 
 
 
- 
+ 
 
-Un controllo barra dei menu viene sempre visualizzato nella visualizzazione controlli, ma non nella visualizzazione contenuto, perché in genere non fornisce informazioni significative all'utente finale (a meno che l'applicazione non contenga più di una barra dei menu).
+Un controllo barra dei menu viene sempre visualizzato nella visualizzazione controlli, ma non nella visualizzazione contenuto perché in genere non trasmette informazioni significative all'utente finale(a meno che l'applicazione non contenga più di una barra dei menu).
 
-I client di automazione interfaccia utente possono restare in ascolto dell'evento [**\_ MenuModeStartEventId di UIA**](uiauto-event-ids.md) per assicurarsi che vengano informati costantemente quando l'interfaccia utente entra in modalità menu. Quando l'applicazione è in modalità menu, è possibile acquisire tutti gli input da tastiera per la navigazione dei menu. ad esempio, la digitazione di ' potrebbe richiamare il menu **Salva** anziché digitare il carattere nell'area client dell'applicazione. L' **evento \_ MenuModeStartEventId di UIA** deve precedere il primo evento [**\_ MenuOpenedEventId di UIA**](uiauto-event-ids.md) per garantire la coerenza logica. L' [**evento \_ MenuModeEndEventId di UIA**](uiauto-event-ids.md) segue l'ultimo evento [**\_ MenuClosedEventId di UIA**](uiauto-event-ids.md) . Se si fa clic su una voce di menu, è possibile attivare immediatamente l'evento **\_ MenuModeStartEventId di UIA** , seguito da un evento **\_ MenuOpenedEventId di UIA** .
+Automazione interfaccia utente client possono restare in ascolto dell'evento [**\_ UIA MenuModeStartEventId**](uiauto-event-ids.md) per assicurarsi che siano informati in modo coerente quando l'interfaccia utente entra in modalità menu. Quando l'applicazione è in modalità menu, tutto l'input della tastiera può essere acquisito per la navigazione nei menu(ad esempio, la digitazione di 's' potrebbe richiamare il **menu** Salva invece di digitare il carattere nell'area client dell'applicazione). **L'evento UIA \_ MenuModeStartEventId** deve precedere il primo evento [**\_ UiA MenuOpenedEventId**](uiauto-event-ids.md) per garantire la coerenza logica. [**L'evento UIA \_ MenuModeEndEventId**](uiauto-event-ids.md) segue l'ultimo [**evento \_ UIA MenuClosedEventId.**](uiauto-event-ids.md) Facendo clic su una voce di menu è anche possibile attivare immediatamente l'evento **UIA \_ MenuModeStartEventId,** seguito da un evento **UIA \_ MenuOpenedEventId.**
 
 Un controllo barra dei menu può contenere altri controlli, ad esempio controlli di modifica e caselle combinate, all'interno della relativa struttura. Questi controlli aggiuntivi corrispondono agli "altri controlli" elencati sopra nelle visualizzazioni controlli e contenuto.
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il tipo di controllo **barra dei menu** . Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o definizione è particolarmente rilevante per il **tipo di controllo MenuBar.** Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di proprietà [da Automazione interfaccia utente elements](uiauto-propertiesforclients.md).
 
 
 
 | Proprietà di automazione interfaccia utente                                                                                              | Valore       | Note                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ACCELERATORKEYPROPERTYID UIA**](uiauto-automation-element-propids.md)             | NULL        | Le barre dei menu in genere non dispongono di tasti di scelta rapida.                                                                                                                                                                                          |
-| [**\_ACCESSKEYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | "ALT"       | La pressione del tasto ALT dovrebbe in genere spostare lo stato attivo sulla barra dei menu all'interno dell'applicazione.                                                                                                                                                  |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note.  | Il valore esposto da questa proprietà deve includere tutti i controlli contenuti.                                                                                                                                                 |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **MenuBar** |                                                                                                                                                                                                                                          |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | FALSE       | Il controllo barra dei menu non è incluso nella visualizzazione contenuto dell'albero di automazione interfaccia utente.                                                                                                                                                      |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true        | Il controllo barra dei menu viene sempre incluso nella visualizzazione controlli dell'albero di automazione interfaccia utente.                                                                                                                                                   |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | true        | I controlli barra dei menu hanno lo stato attivabile perché i controlli che contengono possono prendere lo stato attivo.                                                                                                                                      |
-| [**\_ISOFFSCREENPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | Vedere le note.  | Il valore di questa proprietà dipende dal fatto che il controllo sia visualizzabile o meno sullo schermo.                                                                                                                                                     |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | NULL        | I controlli barra dei menu in genere non hanno un'etichetta.                                                                                                                                                                                           |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note.  | Stringa localizzata corrispondente al tipo di controllo **barra dei menu** . Il valore predefinito è "barra dei menu" per en-US o inglese (Stati Uniti).                                                                                                    |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note.  | Il controllo barra dei menu non necessita di un nome a meno che un'applicazione non abbia più di una barra dei menu. Se in un'applicazione è presente più di una barra dei menu, utilizzare questa proprietà per esporre i nomi distinti, ad esempio "formattazione" o "struttura". |
-| [**\_ORIENTATIONPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | Dipende da     | Questa proprietà espone l'orientamento orizzontale o verticale del controllo barra dei menu.                                                                                                                                                            |
+| [**UIA \_ AcceleratorKeyPropertyId**](uiauto-automation-element-propids.md)             | NULL        | Le barre dei menu in genere non dispongono di tasti di scelta rapida.                                                                                                                                                                                          |
+| [**UIA \_ AccessKeyPropertyId**](uiauto-automation-element-propids.md)                       | "ALT"       | La pressione del tasto ALT dovrebbe in genere portare lo stato attivo sulla barra dei menu all'interno dell'applicazione.                                                                                                                                                  |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.  | Il valore esposto da questa proprietà deve includere tutti i controlli contenuti.                                                                                                                                                 |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **MenuBar** |                                                                                                                                                                                                                                          |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE       | Il controllo barra dei menu non è incluso nella visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero.                                                                                                                                                      |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true        | Il controllo barra dei menu è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                                                                   |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | true        | I controlli barra dei menu hanno lo stato attivabile perché i controlli che contengono possono prendere lo stato attivo.                                                                                                                                      |
+| [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Vedere le note.  | Il valore di questa proprietà dipende dal fatto che il controllo sia visualizzabile o meno sullo schermo.                                                                                                                                                     |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL        | I controlli barra dei menu in genere non hanno un'etichetta.                                                                                                                                                                                           |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.  | Stringa localizzata corrispondente al **tipo di controllo MenuBar.** Il valore predefinito è "barra dei menu" per en-US o inglese (Stati Uniti).                                                                                                    |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note.  | Il controllo barra dei menu non necessita di un nome a meno che un'applicazione non abbia più di una barra dei menu. Se in un'applicazione sono presenti più barre dei menu, usare questa proprietà per esporre nomi distinti, ad esempio "Formattazione" o "Struttura". |
+| [**UIA \_ OrientationPropertyId**](uiauto-automation-element-propids.md)                   | Dipende da     | Questa proprietà espone l'orientamento orizzontale o verticale del controllo barra dei menu.                                                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati dai controlli barra dei menu. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente di controllo necessari per essere supportati dai controlli barra dei menu. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo                                                   | Supporto | Note                                                                                                                                       |
 |-------------------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Dipende da | Se il controllo può essere espanso o compresso, deve implementare il pattern di controllo [ExpandCollapse](uiauto-implementingexpandcollapse.md) . |
-| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)                     | Dipende da | Se il controllo può essere ancorato a parti diverse dello schermo, deve implementare il pattern di controllo [Dock](uiauto-implementingdock.md) .   |
-| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider)           | Dipende da | Se il controllo può essere ridimensionato, ruotato o spostato, deve implementare il pattern di controllo [Transform](uiauto-implementingtransform.md) .      |
+| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Dipende da | Se il controllo può essere espanso o compresso, deve implementare il [pattern di controllo ExpandCollapse.](uiauto-implementingexpandcollapse.md) |
+| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)                     | Dipende da | Se il controllo può essere ancorato a parti diverse dello schermo, deve implementare il [pattern di controllo Dock.](uiauto-implementingdock.md)   |
+| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider)           | Dipende da | Se il controllo può essere ridimensionato, ruotato o spostato, deve implementare il [pattern di controllo Trasforma.](uiauto-implementingtransform.md)      |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente che sono necessari per supportare i controlli barra dei menu. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati Automazione interfaccia utente eventi che i controlli barra dei menu devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                                                | Note                                                                                                                            |
+| Automazione interfaccia utente evento                                                                                                                                                | Note                                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                   |                                                                                                                                  |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId.                              |                                                                                                                                  |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ExpandCollapseExpandCollapseStatePropertyId. | Se il controllo supporta il pattern di controllo [ExpandCollapse](uiauto-implementingexpandcollapse.md) , deve supportare questo evento. |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                                              | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.         |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.                                          | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento.       |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                               |                                                                                                                                  |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                                   |                                                                                                                                  |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                              |                                                                                                                                  |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ExpandCollapseExpandCollapseStatePropertyId.**](uiauto-control-pattern-propids.md) | Se il controllo supporta il [pattern di controllo ExpandCollapse,](uiauto-implementingexpandcollapse.md) deve supportare questo evento. |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                              | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                          | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento.       |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                               |                                                                                                                                  |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -164,9 +164,9 @@ La tabella seguente elenca gli eventi di automazione interfaccia utente che sono
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

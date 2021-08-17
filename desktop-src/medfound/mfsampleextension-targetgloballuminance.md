@@ -1,19 +1,19 @@
 ---
-description: Valore in nit che specifica la luminanza della retroilluminazione globale di destinazione per il frame video associato.
+description: Valore in Nits che specifica la luminanza della retroilluminazione globale di destinazione per il fotogramma video associato.
 ms.assetid: 12B75798-1367-40AB-B9BF-E29D05E5D8F0
-title: Attributo MFSampleExtension_TargetGlobalLuminance (Mfapi. h)
+title: MFSampleExtension_TargetGlobalLuminance attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7fc70f8f64042437d829923c9410faac34724b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a91b9df202b61ea4eae2f673af5210f5a04527da096809c9ce8517202e0f515
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102201"
 ---
-# <a name="mfsampleextension_targetgloballuminance-attribute"></a>\_Attributo TargetGlobalLuminance di MFSampleExtension
+# <a name="mfsampleextension_targetgloballuminance-attribute"></a>Attributo TargetGlobalLuminance di MFSampleExtension \_
 
-Valore in nit che specifica la luminanza della retroilluminazione globale di destinazione per il frame video associato.
+Valore in Nits che specifica la luminanza della retroilluminazione globale di destinazione per il fotogramma video associato.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Valore in nit che specifica la luminanza della retroilluminazione globale di des
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Metodo ModifyPermissions della classe Win32_TSAccount
+title: Metodo ModifyPermissions della Win32_TSAccount classe
 description: Imposta un'autorizzazione per l'account specificato.
 ms.assetid: cef36f7f-d327-4bb6-9bff-282036c1a5d5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo ModifyPermissions
-- Metodo ModifyPermissions Servizi Desktop remoto, classe Win32_TSAccount
-- Classe Win32_TSAccount Servizi Desktop remoto, metodo ModifyPermissions
+- Metodo ModifyPermissions Servizi Desktop remoto
+- Metodo ModifyPermissions Servizi Desktop remoto , Win32_TSAccount classe
+- Win32_TSAccount classe Servizi Desktop remoto, metodo ModifyPermissions
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4bf6147c215475314f65bb8fa426442884bc82e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6265290fa3604c426609f51d0518f1f6762ea02718757d86ff9ed69b10bd018
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119421671"
 ---
-# <a name="modifypermissions-method-of-the-win32_tsaccount-class"></a>Metodo ModifyPermissions della \_ classe TSAccount Win32
+# <a name="modifypermissions-method-of-the-win32_tsaccount-class"></a>Metodo ModifyPermissions della classe TSAccount Win32 \_
 
 Imposta un'autorizzazione per l'account specificato.
 
@@ -44,10 +44,10 @@ uint32 ModifyPermissions(
 
 <dl> <dt>
 
-*PermissionMask* \[ in\]
+*PermissionMask* \[ Pollici\]
 </dt> <dd>
 
-[Autorizzazione host sessione Desktop remoto](terminal-services-permissions.md) da impostare.
+Autorizzazione [Desktop remoto host sessione da](terminal-services-permissions.md) impostare.
 
 I valori possibili sono:
 
@@ -60,13 +60,13 @@ I valori possibili sono:
 
 </dt> <dd>
 
-Autorizzazione per eseguire query sulle informazioni relative a una sessione.
+Autorizzazione per eseguire query sulle informazioni su una sessione.
 
 </dd> <dt>
 
 <span id="WINSTATION_SET"></span><span id="winstation_set"></span>
 
-<span id="WINSTATION_SET"></span><span id="winstation_set"></span>**WINSTATION \_ IMPOSTA** (1)
+<span id="WINSTATION_SET"></span><span id="winstation_set"></span>**WINSTATION \_ SET** (1)
 
 
 </dt> <dd>
@@ -77,7 +77,7 @@ Autorizzazione per la modifica dei parametri di connessione.
 
 <span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>
 
-<span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>**WINSTATION \_ Reimposta** (6)
+<span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>**WINSTATION \_ RESET** (6)
 
 
 </dt> <dd>
@@ -88,29 +88,29 @@ Autorizzazione per reimpostare o terminare una sessione o una connessione.
 
 <span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>
 
-<span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>**WINSTATION \_ \| Diritti standard \_ virtuali \_ richiesti** (3)
+<span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>**WINSTATION \_ DIRITTI \| STANDARD \_ VIRTUALI \_ RICHIESTI** (3)
 
 
 </dt> <dd>
 
-Autorizzazione per l'utilizzo di canali virtuali. I canali virtuali forniscono l'accesso da un programma server ai dispositivi client.
+Autorizzazione per l'uso di canali virtuali. I canali virtuali forniscono l'accesso da un programma server ai dispositivi client.
 
 </dd> <dt>
 
 <span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>
 
-<span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>**WINSTATION \_ OMBREGGIAtura** (4)
+<span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>**WINSTATION \_ SHADOW** (4)
 
 
 </dt> <dd>
 
-Autorizzazione per nascondere o controllare in modalità remota la sessione di un altro utente.
+Autorizzazione per lo shadow o il controllo remoto della sessione di un altro utente.
 
 </dd> <dt>
 
 <span id="WINSTATION_LOGON"></span><span id="winstation_logon"></span>
 
-<span id="WINSTATION_LOGON"></span><span id="winstation_logon"></span>**WINSTATION \_ ACCESSO** (5)
+<span id="WINSTATION_LOGON"></span><span id="winstation_logon"></span>**WINSTATION \_ LOGON** (5)
 
 
 </dt> <dd>
@@ -121,7 +121,7 @@ Autorizzazione per accedere a una sessione nel server.
 
 <span id="WINSTATION_LOGOFF"></span><span id="winstation_logoff"></span>
 
-<span id="WINSTATION_LOGOFF"></span><span id="winstation_logoff"></span>**WINSTATION \_ Disconnessione** (2)
+<span id="WINSTATION_LOGOFF"></span><span id="winstation_logoff"></span>**WINSTATION \_ LOGOFF** (2)
 
 
 </dt> <dd>
@@ -132,18 +132,18 @@ Autorizzazione per disconnettere un utente da una sessione.
 
 <span id="WINSTATION_MSG"></span><span id="winstation_msg"></span>
 
-<span id="WINSTATION_MSG"></span><span id="winstation_msg"></span>**WINSTATION \_ MESSAGGIO** (7)
+<span id="WINSTATION_MSG"></span><span id="winstation_msg"></span>**WINSTATION \_ MSG** (7)
 
 
 </dt> <dd>
 
-Autorizzazione per l'invio di un messaggio alla sessione di un altro utente.
+Autorizzazione per inviare un messaggio a una sessione di un altro utente.
 
 </dd> <dt>
 
 <span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>
 
-<span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>**WINSTATION \_ Connetti** (8)
+<span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>**WINSTATION \_ CONNECT** (8)
 
 
 </dt> <dd>
@@ -154,7 +154,7 @@ Autorizzazione per la connessione a un'altra sessione.
 
 <span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>
 
-<span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>**WINSTATION \_ Disconnetti** (9)
+<span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>**WINSTATION \_ DISCONNECT** (9)
 
 
 </dt> <dd>
@@ -163,10 +163,10 @@ Autorizzazione per disconnettere una sessione.
 
 </dd> </dl> </dd> <dt>
 
-*Consenti* \[ in\]
+*Consenti* \[ Pollici\]
 </dt> <dd>
 
-Specifica se l'autorizzazione nel parametro *PermissionMask* è consentita o negata.
+Specifica se l'autorizzazione nel *parametro PermissionMask* è consentita o negata.
 
 I valori possibili sono:
 
@@ -190,17 +190,17 @@ Il set di autorizzazioni specificato è consentito.
 
 </dt> <dd>
 
-Il set di autorizzazioni specificato è stato negato.
+Il set di autorizzazioni specificato è negato.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -211,7 +211,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -220,7 +220,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSAccount Win32**](win32-tsaccount.md)
+[**Account \_ TS Win32**](win32-tsaccount.md)
 </dt> </dl>
 
  

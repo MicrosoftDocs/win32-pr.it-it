@@ -1,10 +1,10 @@
 ---
-title: Attributo RID successivo
-description: Il successivo campo RID usato dall'allocatore in modalità mista.
+title: Attributo Next-Rid
+description: Campo Next Rid usato dall'allocatore in modalità mista.
 ms.assetid: 5a7a68e9-a07d-4160-be2f-083dcec79945
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RID successivo
+- Schema AD dell'attributo Next-Rid
 - Schema AD dell'attributo nextRid
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da332ecc7823796eca1cf7e59178655378674b95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4d68ad96c645c006842e63b2d0294cd4198c5dbeeb507c404df614d05ef644b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924091"
 ---
-# <a name="next-rid-attribute"></a>Attributo RID successivo
+# <a name="next-rid-attribute"></a>Attributo Next-Rid
 
-Il successivo campo RID usato dall'allocatore in modalità mista.
+Campo Next Rid usato dall'allocatore in modalità mista.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Successivo RID                             |
-| LDAP-Display-Name | nextRid                              |
+| CN                | Next-Rid                             |
+| Ldap-Display-Name | nextRid                              |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.88                |
-| System-ID-GUID    | bf9679db-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679db-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il successivo campo RID usato dall'allocatore in modalità mista.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

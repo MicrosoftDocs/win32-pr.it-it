@@ -1,24 +1,24 @@
 ---
-description: Implementa i metodi di interfaccia che i provider di terze parti possono usare per interagire con le API dei controlli padre.
+description: Implementa metodi di interfaccia che i provider di terze parti possono usare per interagire con le API di Controllo genitori.
 ms.assetid: a2cbc127-7011-4107-9ee2-f7172c069ed7
-title: API del provider WMI per controlli padre
+title: API provider WMI di Controllo genitori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8d6790f201c74ea79c69814eb8d22a7a6f78106
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a02413f98750d8d1274b4523f11cd842989a64e8d90ce1252f7ed14452978db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100585"
 ---
-# <a name="parental-controls-wmi-provider-api"></a>API del provider WMI per controlli padre
+# <a name="parental-controls-wmi-provider-api"></a>API provider WMI di Controllo genitori
 
-L'API del provider WMI implementa i metodi di interfaccia che i provider di terze parti possono usare per interagire con le API dei controlli padre.
+L'API del provider WMI implementa metodi di interfaccia che i provider di terze parti possono usare per interagire con le API di Controllo genitori.
 
 -   [**IWPCProviderConfig**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcproviderconfig)
 -   [**IWPCProviderState**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcproviderstate)
 -   [**IWPCProviderSupport**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcprovidersupport)
--   [Schema del provider WMI per controlli padre](parental-controls-wmi-provider-schema.md)
+-   [Schema del provider WMI di Controllo genitori](parental-controls-wmi-provider-schema.md)
 
  
 

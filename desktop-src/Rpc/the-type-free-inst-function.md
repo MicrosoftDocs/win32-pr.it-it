@@ -1,29 +1,29 @@
 ---
 title: Funzione type_free_inst
-description: Gli stub chiamano la \_ funzione Inst gratuita del tipo \_ per liberare la memoria associata al tipo presentato.
+description: Gli stub chiamano la funzione inst gratuita del tipo \_ per liberare la memoria \_ associata al tipo presentato.
 ms.assetid: 4ee2e6a6-b506-445f-adaf-3705228defa7
 keywords:
 - type_free_inst
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3754106cf8e0cc6e338f91d6c233181aa33038eb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0dc71c8d3557c62eec39fe9a90855ef3ed057d29c21ec60a82ddc7fe04207f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923710"
 ---
-# <a name="the-type_free_inst-function"></a>\_Funzione Inst gratuita del tipo \_
+# <a name="the-type_free_inst-function"></a>Funzione \_ \_ inst type free
 
-Gli stub chiamano la **funzione \_ \_ inst gratuita del tipo** per liberare la memoria associata al tipo presentato. La funzione è definita come segue:
+Gli stub chiamano la **funzione \_ \_ inst** gratuita del tipo per liberare la memoria associata al tipo presentato. La funzione è definita come:
 
 ``` syntax
 void __RPC_USER <type>_free_inst(<type> __RPC_FAR *)
 ```
 
-Il parametro punta all'istanza del tipo presentata. Questo oggetto non deve essere liberato. Per una discussione su quando chiamare la funzione, vedere [l'attributo trasmissione \_ As](the-transmit-as-attribute.md).
+Il parametro punta all'istanza del tipo presentato. Questo oggetto non deve essere liberato. Per una discussione su quando chiamare la funzione, vedere [ \_ Trasmissione come attributo](the-transmit-as-attribute.md).
 
-Nell'esempio seguente, l'elenco collegato doppio viene liberato scorrendo l'elenco fino alla fine, quindi eseguendo il backup e liberando ogni elemento dell'elenco.
+Nell'esempio seguente l'elenco a doppio collegamento viene liberato tramite la visualizzazione dell'elenco fino alla fine, quindi il backup e la libera di ogni elemento dell'elenco.
 
 
 ```C++
@@ -45,9 +45,9 @@ void __RPC_USER DOUBLE_LINK_TYPE_free_inst(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

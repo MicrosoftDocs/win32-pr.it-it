@@ -25,7 +25,7 @@ In Windows 8.1, gli eventi relativi alla rotellina del mouse non vengono più re
 
 ## <a name="manifestations"></a>Manifestazioni
 
-Quando si passa il mouse sulle app dello Store, la rotellina del mouse scorrerà qualsiasi contenuto applicabile senza che l'utente sia necessario fare clic sull'app dello Store. Questo vale anche per la schermata start. In questo modo lo scorrimento tramite rotellina del mouse è un'interazione più Windows 8.1 che in Windows 8.
+Quando si passa il mouse sulle app dello Store, la rotellina del mouse scorrerà qualsiasi contenuto applicabile senza che l'utente sia necessario fare clic sull'app dello Store. Questo vale anche per la schermata start. In questo modo, lo scorrimento tramite rotellina del mouse è un'interazione più semplice in Windows 8.1 che in Windows 8.
 
 ## <a name="mitigation"></a>Strategia di riduzione del rischio
 

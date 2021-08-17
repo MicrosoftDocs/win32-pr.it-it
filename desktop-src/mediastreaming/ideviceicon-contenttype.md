@@ -1,11 +1,11 @@
 ---
-title: IDeviceIcon (Metodo ContentType)
+title: Metodo ContentType IDeviceIcon
 description: Recupera il tipo di contenuto dell'icona.
 ms.assetid: 01928A98-B7D0-4523-9259-81FEB33F052E
 keywords:
-- API di streaming multimediale del Metodo ContentType
-- API di streaming multimediale del Metodo ContentType, interfaccia IDeviceIcon
-- API di streaming multimediale dell'interfaccia IDeviceIcon, Metodo ContentType
+- Metodo ContentType API Streaming multimediale
+- Metodo ContentType API Streaming multimediale, interfaccia IDeviceIcon
+- Interfaccia IDeviceIcon API Streaming multimediale, metodo ContentType
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af48aabb2a64f4c4b8fbd40a3859acc82496a399
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d8fb9cb639381b60bb59965d12ce3f0545daf6d2725cde69d3dea3dee589f8f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461746"
 ---
-# <a name="ideviceiconcontenttype-method"></a>Metodo IDeviceIcon:: ContentType
+# <a name="ideviceiconcontenttype-method"></a>Metodo IDeviceIcon::ContentType
 
 Recupera il tipo di contenuto dell'icona.
 
@@ -41,7 +41,7 @@ HRESULT ContentType(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
 Riceve un puntatore al tipo di contenuto dell'icona.
@@ -50,13 +50,13 @@ Riceve un puntatore al tipo di contenuto dell'icona.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

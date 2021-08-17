@@ -1,33 +1,33 @@
 ---
-description: Specifica il numero di sessioni di codifica completate. Questa proprietà si applica solo alla codifica Multipass.
+description: Specifica il numero di passaggi di codifica completati. Questa proprietà si applica solo alla codifica multipass.
 ms.assetid: 19286f26-96f1-429c-9d6a-5e9b98597cd2
-title: Proprietà AVEncStatCommonCompletedPasses (codecapis. h)
+title: Proprietà AVEncStatCommonCompletedPasses (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2927e501963d450cbc08106e7860dfbfd2d7d98a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d5950a8f013dc697b0e8178e65610971776c0bd7bba233a58d164c05080f966f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275871"
 ---
-# <a name="avencstatcommoncompletedpasses-property"></a>Proprietà AVEncStatCommonCompletedPasses
+# <a name="avencstatcommoncompletedpasses-property"></a>AVEncStatCommonCompletedPasses - proprietà
 
-Specifica il numero di sessioni di codifica completate. Questa proprietà si applica solo alla codifica Multipass.
+Specifica il numero di passaggi di codifica completati. Questa proprietà si applica solo alla codifica multipass.
 
 Questa proprietà è di sola lettura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncStatCommonCompletedPasses**
+**CODECAPI \_ AVEncStatCommonCompletedPasses**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo 
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

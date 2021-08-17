@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Metodi BoolColumnValue'
-title: Metodi BoolColumnValue
+description: Altre informazioni sui metodi BoolColumnValue
+title: Metodi di BoolColumnValue
 TOCTitle: BoolColumnValue methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.BoolColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.boolcolumnvalue_methods(v=EXCHG.10)
 ms:contentKeyID: 55100950
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5b503ce6b92219cb0adfb0a91052c0c8c793bf02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f788816c51176e961a53223663db25affe0f57697e98b617cb995436859838d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104553546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119366581"
 ---
-# <a name="boolcolumnvalue-methods"></a>Metodi BoolColumnValue
+# <a name="boolcolumnvalue-methods"></a>Metodi di BoolColumnValue
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo [BoolColumnValue](./boolcolumnvalue-class.md) espone i membri seguenti.
+Il [tipo BoolColumnValue](./boolcolumnvalue-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,42 +35,42 @@ Il tipo [BoolColumnValue](./boolcolumnvalue-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Assicurarsi che i dati recuperati siano esattamente le dimensioni necessarie per la struttura. Viene generata un'eccezione in caso di mancata corrispondenza. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Assicurarsi che i dati recuperati siano esattamente delle dimensioni necessarie per la struttura. In caso di mancata corrispondenza, viene generata un'eccezione. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn334119(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dato che i dati sono stati recuperati da ESENT, decodificano i dati e impostano il valore nell'oggetto ColumnValue. Esegue l'override di <a href="dn334208(v=exchg.10).md">columnValue. GetValueFromBytes ([], Int32, Int32, Int32)</a>.</td>
+<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. Esegue l'override <a href="dn334208(v=exchg.10).md">di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334223(v=exchg.10).md">ToString</a></td>
-<td>Ottiene una rappresentazione di stringa di questo oggetto. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Ottiene una rappresentazione di stringa di questo oggetto . Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Inizio
 
 [Classe BoolColumnValue](./boolcolumnvalue-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

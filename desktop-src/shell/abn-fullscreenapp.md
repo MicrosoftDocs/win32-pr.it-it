@@ -1,6 +1,6 @@
 ---
-description: Notifica a un AppBar quando un'applicazione a schermo intero è in fase di apertura o chiusura. Questa notifica viene inviata sotto forma di messaggio definito dall'applicazione impostato dal \_ nuovo messaggio ABM.
-title: Messaggio ABN_FULLSCREENAPP (Shellapi. h)
+description: Notifica a una barra delle app quando un'applicazione a schermo intero si sta aprendo o chiudendo. Questa notifica viene inviata sotto forma di messaggio definito dall'applicazione impostato dal messaggio ABM \_ NEW.
+title: ABN_FULLSCREENAPP messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: c67ec934-088c-43e0-bff4-900d76a456e5
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d73a30c9f40fc494603afd4a6cbb990f81290c8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55bba51153ff90dfa69b870468a1c5002121eaccf45559821c6031aba35d4b98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090791"
 ---
-# <a name="abn_fullscreenapp-message"></a>\_Messaggio FULLSCREENAPP di ABN
+# <a name="abn_fullscreenapp-message"></a>Messaggio ABN \_ FULLSCREENAPP
 
-Notifica a un AppBar quando un'applicazione a schermo intero è in fase di apertura o chiusura. Questa notifica viene inviata sotto forma di messaggio definito dall'applicazione impostato dal [**\_ nuovo messaggio ABM**](abm-new.md) .
+Notifica a una barra delle app quando un'applicazione a schermo intero si sta aprendo o chiudendo. Questa notifica viene inviata sotto forma di messaggio definito dall'applicazione impostato dal [**messaggio ABM \_ NEW.**](abm-new.md)
 
 
 ```C++
@@ -40,10 +40,10 @@ ABN_FULLSCREENAPP
 
 <dl> <dt>
 
-*fOpen* 
+*Fopen* 
 </dt> <dd>
 
-Flag che specifica se un'applicazione a schermo intero è in apertura o in chiusura. Questo parametro è **true** se l'applicazione è in apertura o **false** se è in chiusura.
+Flag che specifica se un'applicazione a schermo intero si sta aprendo o chiudendo. Questo parametro è **TRUE se** l'applicazione si sta aprendo o **FALSE** se è in chiusura.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si apre un'applicazione a schermo intero, un AppBar deve essere rilasciato nella parte inferiore dell'ordine z. Quando viene chiuso, il AppBar deve ripristinare la posizione dell'ordine z.
+Quando si apre un'applicazione a schermo intero, una barra delle app deve essere visualizzata nella parte inferiore dell'ordine Z. Quando viene chiusa, la barra dell'app dovrebbe ripristinare la posizione dell'ordine Z.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Quando si apre un'applicazione a schermo intero, un AppBar deve essere rilasciat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

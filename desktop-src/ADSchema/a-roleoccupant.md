@@ -1,11 +1,11 @@
 ---
 title: Role-Occupant attributo
-description: Nome distinto di un oggetto che soddisfa un ruolo aziendale.
+description: Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 ms.assetid: 47f5d367-d1da-4189-a73e-b6e6715bd297
 ms.tgt_platform: multiple
 keywords:
 - Role-Occupant schema AD dell'attributo
-- Schema AD dell'attributo roleOccupant
+- RoleOccupant attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118681684"
 ---
 # <a name="role-occupant-attribute"></a>Role-Occupant attributo
 
-Nome distinto di un oggetto che soddisfa un ruolo aziendale.
+Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 
 
 
@@ -32,10 +32,10 @@ Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 | CN                | Role-Occupant                           |
 | Ldap-Display-Name | roleOccupant                            |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 2.5.4.33                                |
-| System-Id-Guid    | a8df7465-c5ea-11d1-bbcb-0080c76670c0    |
+| System-Id-Guid    | a8df7465-c5ea-11d1-kb-0080c76670c0    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,7 +58,7 @@ Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Is-Single-Valued       | Falso                                                          |
+| A valore singolo       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -79,7 +79,7 @@ Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Is-Single-Valued       | Falso                                                          |
+| A valore singolo       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -100,7 +100,7 @@ Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Is-Single-Valued       | Falso                                                          |
+| A valore singolo       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |

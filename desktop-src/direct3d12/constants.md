@@ -1,6 +1,6 @@
 ---
-title: Costanti (D3D12. h)
-description: Le costanti seguenti sono dichiarate in d3d12. h, per l'uso da parte di un titolo di D3D12.
+title: Costanti (D3D12.h)
+description: Le costanti seguenti sono dichiarate in d3d12.h, per l'uso da parte di un titolo D3D12.
 ms.assetid: f02eaaaf-984f-4357-ab81-ac8045e2ae49
 keywords:
 - Costanti
@@ -15,427 +15,427 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c8218273350edede9f210f491c8b7fc2fb0c4f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2bdc1f2765688cd736353095450a95c6edd03817d32fbf23fbf16bd997f4e4a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858051"
 ---
-# <a name="constants-d3d12h"></a>Costanti (D3D12. h)
+# <a name="constants-d3d12h"></a>Costanti (D3D12.h)
 
-Le costanti seguenti sono dichiarate in d3d12. h, per l'uso da parte di un titolo di D3D12.
+Le costanti seguenti sono dichiarate in d3d12.h, per l'uso da parte di un titolo D3D12.
 
 
 
 | Costante                                                                         | Valore            |
 |----------------------------------------------------------------------------------|------------------|
-| \_ \_ \_ \_ Valore Cut Strip index D3D12 a 16 bit \_                                           | 0xFFFF           |
-| \_ \_ \_ \_ Valore Cut Strip index D3D12 a 32 bit \_                                           | 0xFFFFFFFF       |
-| \_ \_ \_ \_ Valore Cut Strip index D3D12 a 8 bit \_                                            | 0xFF             |
-| D3D12 \_ Accodamento \_ elemento allineato \_                                                  | 0xFFFFFFFF       |
-| \_ \_ \_ \_ \_ Conteggio bit intervallo indirizzi asse \_ matrice D3D12                                   | 9                |
-| D3D12 \_ clip \_ o \_ abbattimento \_ distanza \_ numero                                           | 8                |
-| \_Numero di elementi della distanza D3D12 clip \_ o \_ abbattimento \_ \_ \_                                  | 2                |
-| \_Numero di \_ \_ \_ slot API del buffer costante \_ D3D12 \_ COMMONSHADER                          | 14               |
-| \_Componenti del \_ \_ buffer costanti COMMONSHADER di \_ D3D12                                | 4                |
-| \_ \_ \_ \_ \_ Conteggio bit componente buffer costante \_ D3D12 COMMONSHADER                     | 32               |
-| \_Numero di \_ \_ \_ slot HW del buffer costante \_ D3D12 \_ COMMONSHADER                           | 15               |
-| \_Allineamento dei \_ \_ byte per \_ \_ extent di aggiornamento parziale \_ \_ del buffer costante D3D12 \_ COMMONSHADER | 16               |
-| \_Componenti di \_ \_ registrazione buffer \_ costanti \_ COMMONSHADER di D3D12                      | 4                |
-| D3D12 \_ COMMONSHADER \_ - \_ \_ conteggio registri \_ buffer costanti                           | 15               |
-| D3D12 \_ COMMONSHADER \_ - \_ \_ letture registro buffer costanti \_ \_ per \_ inst                | 1                |
-| D3D12 COMMONSHADER-porta di \_ \_ \_ \_ lettura registro buffer \_ costante \_                     | 1                |
-| \_Limite di \_ \_ annidamento FLOWCONTROL COMMONSHADER D3D12 \_                                 | 64               |
-| \_Componenti di \_ \_ \_ registro buffer costante \_ immediato D3D12 COMMONSHADER \_           | 4                |
-| \_ \_ \_ \_ \_ Conteggio registro buffer costante immediato \_ D3D12 COMMONSHADER                | 1                |
-| \_ \_ \_ Letture registro buffer costante immediata D3D12 COMMONSHADER \_ \_ \_ \_ per \_ inst     | 1                |
-| \_Porte di \_ \_ lettura del \_ registro del buffer costante \_ immediato \_ D3D12 COMMONSHADER \_          | 1                |
-| D3D12 \_ COMMONSHADER \_ - \_ \_ \_ conteggio bit del componente valore immediato \_                     | 32               |
-| \_Componenti del \_ \_ Registro risorse \_ di input COMMONSHADER di D3D12 \_                       | 1                |
-| \_ \_ \_ \_ Conteggio registro risorse di input COMMONSHADER di D3D12 \_                            | 128              |
-| \_ \_ \_ Letture registro risorse input COMMONSHADER D3D12 \_ \_ \_ per \_ inst                 | 1                |
-| \_Porte di \_ \_ \_ lettura registro risorse \_ di input COMMONSHADER di \_ D3D12                      | 1                |
-| \_Numero di \_ \_ slot di risorse di input COMMONSHADER \_ di \_ D3D12                                | 128              |
-| \_Componenti di \_ registrazione del campionatore COMMONSHADER D3D12 \_ \_                               | 1                |
-| \_ \_ Conteggio registri campionatore COMMONSHADER D3D12 \_ \_                                    | 16               |
-| \_ \_ Letture registro campionatore COMMONSHADER D3D12 \_ \_ \_ per \_ inst                         | 1                |
-| D3D12 \_ COMMONSHADER \_ - \_ Registra \_ le \_ porte di lettura                              | 1                |
-| \_Numero di \_ slot del campionatore COMMONSHADER D3D12 \_ \_                                        | 16               |
-| \_Limite di \_ nidificazione della subroutine D3D12 COMMONSHADER \_ \_                                  | 32               |
-| \_Componenti del \_ \_ registro temporaneo COMMONSHADER di \_ D3D12                                  | 4                |
-| D3D12 \_ COMMONSHADER \_ - \_ \_ \_ conteggio bit componente registro temporaneo \_                       | 32               |
-| \_ \_ Conteggio registri temporanei COMMONSHADER D3D12 \_ \_                                       | 4096             |
-| D3D12 \_ COMMONSHADER \_ - \_ letture registro temporaneo \_ \_ per \_ inst                            | 3                |
-| \_Porte di \_ \_ lettura registro \_ temporaneo \_ COMMONSHADER D3D12                                 | 3                |
-| D3D12 \_ COMMONSHADER \_ TEXCOORD \_ intervallo \_ \_ massimo                             | 10               |
-| D3D12 \_ COMMONSHADER \_ TEXCOORD \_ intervallo \_ \_ minimo                             | -10              |
-| D3D12 \_ COMMONSHADER \_ Texel \_ offset \_ Max \_ negativo                                | -8               |
-| D3D12 \_ COMMONSHADER \_ - \_ offset Texel \_ Max \_ positivo                                | 7                |
-| \_Allineamento della \_ \_ posizione dei dati del buffer \_ costante D3D12 \_                              | 256              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET00 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 256              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET00 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 64               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET01 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 240              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET01 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 68               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET02 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 224              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET02 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 72               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET03 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 208              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET03 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 76               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET04 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 192              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET04 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 84               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET05 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 176              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET05 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 92               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET06 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 160              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET06 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 100              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET07 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 144              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET07 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 112              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET08 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 128              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET08 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 128              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET09 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 112              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET09 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 144              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET10 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 96               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET10 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 168              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET11 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 80               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET11 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 204              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET12 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 64               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET12 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 256              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET13 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 48               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET13 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 340              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET14 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 32               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET14 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 512              |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET15 \_ Max \_ bytes \_ TGSM \_ scrivibile \_ per \_ thread               | 16               |
-| D3D12 \_ cs \_ 4 \_ X \_ BUCKET15 \_ Max \_ num \_ thread \_ per \_ gruppo                         | 768              |
-| D3D12 \_ cs \_ 4 \_ X \_ INVIO \_ \_ \_ di gruppi di thread Max \_ nella \_ \_ dimensione Z                 | 1                |
-| D3D12 \_ cs \_ 4 \_ X \_ RAW \_ UAV \_ byte \_ Alignment                                       | 256              |
-| \_ \_ \_ \_ \_ \_ Numero massimo di \_ thread \_ per \_ gruppo di thread D3D12 CS 4 X                         | 768              |
-| D3D12 \_ cs \_ 4 \_ x \_ gruppo di thread \_ \_ Max \_ x                                           | 768              |
-| D3D12 \_ cs \_ 4 \_ X \_ gruppo di thread \_ \_ Max \_ Y                                           | 768              |
-| D3D12 \_ cs \_ 4 \_ X \_ UAV \_ Register \_ Count                                            | 1                |
-| \_Gruppi di \_ thread max dispatch D3D12 cs \_ \_ \_ \_ per \_ dimensione                         | 65535            |
-| \_ \_ \_ Conteggio registri D3D12 cs \_ TGSM                                                 | 8192             |
-| D3D12 \_ cs \_ TGSM \_ Register \_ Reads \_ per \_ inst                                      | 1                |
-| \_Componenti del \_ \_ Registro risorse \_ TGSM \_ CS D3D12                                  | 1                |
-| D3D12 \_ cs \_ TGSM \_ - \_ \_ porte di lettura registro \_                                 | 1                |
-| \_Componenti D3D12 cs \_ THREADGROUPID \_ Register \_                                   | 3                |
-| \_ \_ \_ Conteggio registri D3D12 cs \_ THREADGROUPID                                        | 1                |
-| \_Componenti D3D12 cs \_ THREADIDINGROUPFLATTENED \_ Register \_                        | 1                |
-| \_ \_ \_ Conteggio registri D3D12 cs \_ THREADIDINGROUPFLATTENED                             | 1                |
-| \_Componenti D3D12 cs \_ THREADIDINGROUP \_ Register \_                                 | 3                |
-| \_ \_ \_ Conteggio registri D3D12 cs \_ THREADIDINGROUP                                      | 1                |
-| \_Componenti D3D12 cs \_ THREADID \_ Register \_                                        | 3                |
-| \_ \_ \_ Conteggio registri D3D12 cs \_ THREADID                                             | 1                |
-| \_ \_ Numero massimo di thread del gruppo di thread D3D12 cs \_ \_ \_ \_ per \_ gruppo                               | 1024             |
-| D3D12 \_ del \_ gruppo di thread cs \_ \_ Max \_ X                                                 | 1024             |
-| D3D12 \_ del \_ gruppo di thread cs \_ \_ Max \_ Y                                                 | 1024             |
-| D3D12 \_ \_ gruppo di thread cs \_ \_ Max \_ Z                                                 | 64               |
-| D3D12 \_ \_ gruppo di thread cs \_ \_ Min \_ X                                                 | 1                |
-| D3D12 \_ \_ gruppo di thread cs \_ \_ Min \_ Y                                                 | 1                |
-| D3D12 \_ \_ gruppo di thread cs \_ \_ Min \_ Z                                                 | 1                |
-| \_ \_ \_ \_ \_ Pool del registro temporaneo locale del thread D3D12 cs \_                                   | 16384            |
-| \_ \_ Alfa fattore di fusione predefinito \_ D3D12 \_                                             | 1,0 f             |
-| D3D12 \_ \_ fattore di fusione predefinito \_ \_ blu                                              | 1,0 f             |
-| D3D12 \_ default \_ Blend \_ Factor \_ verde                                             | 1,0 f             |
-| \_ \_ \_ Red Factor Blend predefinito \_ D3D12                                               | 1,0 f             |
-| \_ \_ \_ Componente colore bordo predefinito \_ D3D12                                         | 0,0 f             |
-| \_ \_ Distorsione della profondità predefinita D3D12 \_                                                      | 0                |
-| \_Clamp di \_ \_ distorsione profondità predefinita \_ D3D12                                               | 0,0 f             |
-| \_ \_ Anisotropia max predefinito \_ D3D12                                                  | 16               |
-| \_ \_ \_ Distorsione del LOD \_ MIP predefinito D3D12                                                   | 0,0 f             |
-| \_Allineamento del \_ \_ posizionamento delle risorse MSAA \_ predefinito \_ D3D12                             | 4194304          |
-| \_Indice della \_ \_ matrice di destinazione di rendering predefinito \_ D3D12 \_                                     | 0                |
-| \_Allineamento della \_ posizione delle risorse predefinite \_ D3D12 \_                                   | 65536            |
-| \_Maschera di \_ esempio \_ predefinita D3D12                                                     | 0xFFFFFFFF       |
-| D3D12 \_ \_ Scissor \_ ENDX predefinito                                                    | 0                |
-| D3D12 \_ \_ Scissor \_ Endy predefinito                                                    | 0                |
-| D3D12 \_ a \_ forbice predefinito di \_ STARTX                                                  | 0                |
-| D3D12 \_ \_ avvio a forbice predefinito \_                                                  | 0                |
-| \_ \_ Distorsione della profondità della pendenza \_ RIDIMENSIONAta predefinita \_ D3D12 \_                                       | 0,0 f             |
-| \_Maschera di \_ \_ lettura stencil predefinito D3D12 \_                                              | 0xFF             |
-| \_Riferimento allo \_ stencil \_ predefinito D3D12                                               | 0                |
-| \_Maschera di \_ \_ scrittura stencil predefinita D3D12 \_                                             | 0xFF             |
-| D3D12 \_ default \_ viewport \_ e \_ SCISSORRECT \_ index                                | 0                |
-| D3D12 \_ \_ altezza viewport \_ predefinita                                                 | 0                |
-| \_ \_ \_ Profondità massima viewport predefinita \_ D3D12                                             | 0,0 f             |
-| \_ \_ Profondità minima del viewport predefinito \_ D3D12 \_                                             | 0,0 f             |
-| D3D12 \_ \_ viewport predefinito \_ TOPLEFTX                                               | 0                |
-| D3D12 \_ \_ viewport predefinito \_                                               | 0                |
-| \_Larghezza del \_ viewport \_ predefinita D3D12                                                  | 0                |
-| \_ \_ \_ Aggiunta offset intervallo DEscrittore D3D12 \_                                         | 0xFFFFFFFF       |
-| \_ \_ \_ \_ \_ Fine valori spazio registro riservato \_ driver D3D12                            | 0xfffffff7       |
-| \_ \_ \_ \_ \_ Inizio valori spazio registro riservato \_ driver D3D12                          | 0xfffffff0       |
-| D3D12 \_ i \_ punti di controllo input DS \_ \_ \_ massimi \_ totali \_ scalari                           | 3968             |
-| \_Componenti di \_ \_ registrazione del \_ punto di controllo input \_ DS \_ di D3D12                           | 4                |
-| \_ \_ \_ \_ \_ \_ \_ Numero bit componente registro punto di controllo \_ input DS D3D12                | 32               |
-| \_ \_ \_ \_ \_ Conteggio registri punti di controllo input \_ DS D3D12                                | 32               |
-| \_ \_ \_ Letture registro punti di controllo input DS D3D12 \_ \_ \_ \_ per \_ inst                     | 2                |
-| \_Registrazione del \_ punto di controllo dell'input DS D3D12 \_ \_ porte di \_ \_ lettura \_                          | 1                |
-| \_Componenti di \_ \_ registrazione del punto di dominio di input \_ DS \_ D3D12 \_                            | 3                |
-| \_ \_ \_ \_ \_ \_ \_ Numero bit componente registro punti di dominio \_ di input DS D3D12                 | 32               |
-| \_ \_ \_ \_ \_ Conteggio registri punti di dominio di input DS D3D12 \_                                 | 1                |
-| \_ \_ Letture registro punti di dominio di input DS D3D12 \_ \_ \_ \_ \_ per \_ inst                      | 2                |
-| \_Registrazione del \_ punto di dominio di input DS D3D12 \_ \_ porte di \_ \_ lettura \_                           | 1                |
-| \_Componenti di \_ \_ registro delle \_ costanti patch input \_ \_ di D3D12 DS                          | 4                |
-| \_Numero di \_ \_ \_ \_ \_ bit componente registro \_ costante \_ patch input D3D12 DS               | 32               |
-| \_ \_ \_ \_ \_ Conteggio registri costanti patch di input D3D12 DS \_                               | 32               |
-| \_ \_ \_ Letture registro costanti patch input D3D12 DS \_ \_ \_ \_ per \_ inst                    | 2                |
-| D3D12 \_ le \_ \_ porte di \_ \_ lettura registro \_ della costante patch input \_ DS                         | 1                |
-| \_Componenti di \_ \_ \_ registrazione ID PRIMItive input DS \_ D3D12 \_                            | 1                |
-| \_Numero di \_ \_ bit del \_ \_ componente di \_ registrazione \_ \_ D3D12 DS input                 | 32               |
-| \_ \_ \_ \_ \_ Conteggio registro ID primitivo input DS D3D12 \_                                 | 1                |
-| \_ \_ \_ Letture registro ID primitivo input DS D3D12 \_ \_ \_ \_ per \_ inst                      | 2                |
-| \_ \_ ID primitivo di input DS di D3D12 \_ \_ \_ registrazione \_ porte di lettura \_                           | 1                |
-| \_Componenti del \_ Registro di output \_ \_ di D3D12 DS                                          | 4                |
-| \_ \_ \_ \_ \_ Conteggio bit componente registro output \_ di D3D12 DS                               | 32               |
-| \_Conteggio del \_ Registro di output \_ \_ di D3D12 DS                                               | 32               |
-| \_Tolleranza FLOAT16 \_ \_ di D3D12 \_ in \_ ULP rispetto                                        | 0,6              |
-| D3D12 \_ FLOAT32 \_ Max                                                              | 3.402823466 e + 38F |
-| D3D12 \_ FLOAT32 \_ a \_ \_ tolleranza integer \_ in \_ ULP rispetto                                  | 0.6 f             |
-| D3D12 \_ \_ da float a \_ sRGB \_ esponente \_                                    | 2.4 f             |
-| \_ \_ Numeratore D3D12 float a \_ sRGB \_ esponente \_                                      | 1,0 f             |
-| \_ \_ Offset da float a \_ sRGB \_ D3D12                                                   | 0.055 f           |
-| D3D12 \_ float \_ a \_ sRGB \_ scale \_ 1                                                 | 12.92 f           |
-| D3D12 \_ float \_ a \_ sRGB \_ scale \_ 2                                                 | 1.055 f           |
-| \_ \_ Soglia da float a \_ sRGB \_ D3D12                                                | 0.0031308 f       |
-| \_ \_ \_ Input max istruzione FTOI \_ D3D12                                             | 2147483647.999 f  |
-| \_ \_ \_ Input min istruzione FTOI \_ D3D12                                             | -2147483648.999 f |
-| \_ \_ \_ Input max istruzione FTOU \_ D3D12                                             | 4294967295.999 f  |
-| \_ \_ \_ Input min istruzione FTOU \_ D3D12                                             | 0,0 f             |
-| \_ \_ \_ Letture ID istanza input D3D12 GS \_ \_ \_ per \_ inst                                 | 2                |
-| \_Porte di \_ \_ \_ lettura ID istanza \_ input D3D12 GS \_                                      | 1                |
-| \_Componenti di \_ \_ \_ registrazione ID istanza \_ input D3D12 GS \_                             | 1                |
-| \_ \_ ID istanza di input D3D12 GS \_ \_ \_ registrazione \_ \_ numero bit componente \_                  | 32               |
-| \_ \_ \_ \_ \_ Conteggio registro ID istanza input \_ D3D12 GS                                  | 1                |
-| \_Componenti D3D12 GS \_ input \_ Prim \_ const \_ Register \_                              | 1                |
-| D3D12 \_ GS \_ input \_ Prim \_ const \_ Register \_ \_ numero bit componente \_                   | 32               |
-| D3D12 \_ GS \_ input \_ Prim \_ const \_ Register \_ Count                                   | 1                |
-| D3D12 \_ GS \_ input \_ Prim \_ const \_ Register \_ Reads \_ per \_ inst                        | 2                |
-| \_Porte di lettura del registro D3D12 GS \_ input \_ Prim \_ const \_ \_ \_                             | 1                |
-| \_Componenti del \_ Registro di input \_ \_ di D3D12 GS                                           | 4                |
-| \_ \_ \_ \_ \_ Conteggio bit componente registro di input D3D12 GS \_                                | 32               |
-| \_ \_ \_ Conteggio registri input D3D12 \_ GS                                                | 32               |
-| \_ \_ Letture registro di input D3D12 GS \_ \_ \_ per \_ inst                                     | 2                |
-| \_Porte di \_ \_ lettura registro \_ di input D3D12 GS \_                                          | 1                |
-| \_ \_ \_ Vertici registro input D3D12 GS \_                                             | 32               |
-| \_ \_ Numero massimo di \_ istanze di D3D12 GS \_                                                  | 32               |
-| \_ \_ Numero massimo di \_ vertici di output D3D12 GS \_ tra le \_ \_ \_ istanze                         | 1024             |
-| \_Elementi di \_ output D3D12 GS \_                                                      | 32               |
-| \_Componenti del \_ Registro di output \_ \_ di D3D12 GS                                          | 4                |
-| \_ \_ \_ \_ \_ Conteggio bit componente registro output \_ D3D12 GS                               | 32               |
-| \_ \_ \_ Conteggio registro output D3D12 \_ GS                                               | 32               |
-| \_Numero di \_ \_ registri di \_ input della fase del punto di \_ \_ controllo \_ di D3D12 HS                         | 32               |
-| \_Numero di \_ \_ registri di \_ output della fase del punto di \_ \_ controllo \_ di D3D12 HS                        | 32               |
-| \_Componenti del \_ registro del punto di controllo \_ \_ di D3D12 HS \_                                  | 4                |
-| \_ \_ \_ \_ \_ \_ Conteggio bit componente registro punto di controllo \_ D3D12 HS                       | 32               |
-| Letture del registro del punto di controllo di D3D12 \_ HS \_ \_ \_ \_ \_ per \_ inst                            | 2                |
-| Registrazione del punto di controllo di D3D12 \_ HS- \_ \_ \_ \_ porte di lettura \_                                 | 1                |
-| \_ \_ \_ \_ \_ Limite superiore del numero di istanze della fase \_ della \_ divisione D3D12 HS                            | 0xFFFFFFFF       |
-| \_Componenti di \_ \_ registrazione dell' \_ ID istanza del fork di \_ \_ input \_ D3D12 HS                       | 1                |
-| D3D12 \_ HS \_ input \_ fork \_ \_ ID istanza \_ Registra \_ \_ numero bit \_ componente            | 32               |
-| \_ \_ \_ \_ \_ \_ Conteggio registro ID istanza fork di input \_ D3D12 HS                            | 1                |
-| D3D12 \_ HS \_ input \_ fork \_ ID istanza- \_ \_ \_ letture registro \_ per \_ inst                 | 2                |
-| \_ \_ ID istanza del fork di input D3D12 HS \_ \_ \_ \_ registrazione \_ porte di lettura \_                      | 1                |
-| \_Componenti di \_ \_ registrazione dell' \_ ID dell'istanza di join di \_ \_ input D3D12 \_ HS                       | 1                |
-| D3D12 \_ HS \_ input \_ join \_ \_ ID istanza \_ registro \_ \_ numero bit \_ componente            | 32               |
-| \_Numero di \_ \_ registri dell' \_ ID istanza di join \_ \_ D3D12 \_ HS                            | 1                |
-| \_ \_ \_ \_ Letture registro ID istanza join D3D12 HS \_ \_ \_ \_ per \_ inst                 | 2                |
-| \_ID istanza di join di input di D3D12 HS \_ \_ \_ \_ \_ registrazione \_ porte di lettura \_                      | 1                |
-| \_Componenti di \_ \_ \_ registrazione ID PRIMItivo input HS \_ D3D12 \_                            | 1                |
-| \_Numero di \_ \_ bit del \_ \_ componente registro \_ ID \_ primitivo input HS \_ D3D12                 | 32               |
-| \_ \_ \_ \_ \_ Conteggio registro ID primitivo input HS D3D12 \_                                 | 1                |
-| \_ \_ \_ Letture registro ID primitivo input HS D3D12 \_ \_ \_ \_ per \_ inst                      | 2                |
-| \_ \_ ID primitivo di input D3D12 HS- \_ \_ \_ Registra \_ porte di lettura \_                           | 1                |
-| \_ \_ \_ \_ \_ Limite superiore del numero di istanze \_ del \_ join D3D12 HS                            | 0xFFFFFFFF       |
-| \_ \_ \_ Limite inferiore D3D12 HS \_ MAXTESSFACTOR                                           | 1,0 f             |
-| \_ \_ \_ Limite superiore D3D12 HS \_ MAXTESSFACTOR                                           | 64,0 f            |
-| D3D12 \_ HS \_ output \_ punti di controllo \_ \_ massimo \_ \_ scalari totali                          | 3968             |
-| \_Componenti del \_ \_ \_ \_ registro ID del punto di controllo \_ dell' \_ output D3D12 HS                      | 1                |
-| \_Numero di \_ \_ bit del \_ \_ \_ componente Register ID \_ del \_ punto \_ di controllo dell'output D3D12 HS           | 32               |
-| \_ \_ \_ \_ \_ \_ Conteggio registro ID punto di controllo output \_ D3D12 HS                           | 1                |
-| \_ \_ \_ \_ Letture registro ID punto di controllo output D3D12 HS \_ \_ \_ \_ per \_ inst                | 2                |
-| ID del punto di controllo dell'output di D3D12 \_ HS \_ registrazione delle \_ \_ \_ \_ \_ porte di lettura \_                     | 1                |
-| \_Componenti di \_ \_ \_ registrazione costanti patch \_ di output D3D12 HS \_                         | 4                |
-| D3D12 \_ HS \_ output \_ patch \_ - \_ \_ \_ conteggio bit componente \_ Registro              | 32               |
-| \_ \_ \_ \_ \_ Conteggio registri costanti della patch di output D3D12 HS \_                              | 32               |
-| \_ \_ Letture registro costanti della patch di output D3D12 HS \_ \_ \_ \_ \_ per \_ inst                   | 2                |
-| D3D12 \_ HS \_ output patch-porta di \_ \_ \_ \_ lettura \_                        | 1                |
-| D3D12 \_ HS \_ output \_ patch \_ - \_ Registra \_ componenti scalari \_                 | 128              |
-| \_ \_ \_ \_ Offset del buffer dell'indice predefinito D3D12 Ia \_ \_ in \_ byte                             | 0                |
-| \_ \_ \_ Topologia primitiva predefinita di D3D12 Ia \_                                          | 0                |
-| \_ \_ \_ Offset del buffer dei vertici predefinito D3D12 Ia \_ \_ \_ in \_ byte                            | 0                |
-| \_Numero di \_ \_ slot di risorse di input dell'indice \_ D3D12 \_ Ia \_                                   | 1                |
-| D3D12 \_ \_ ID istanza \_ Ia \_ \_ numero bit                                              | 32               |
-| \_Numero di \_ \_ \_ bit aritmetici \_ di D3D12 Ia                                       | 32               |
-| \_ \_ \_ Numero massimo di \_ punti di \_ controllo \_ della patch D3D12 Ia                                     | 32               |
-| \_ \_ \_ \_ Conteggio bit ID primitiva Ia D3D12 \_                                             | 32               |
-| \_ \_ \_ \_ Conteggio bit ID vertice D3D12 Ia \_                                                | 32               |
-| \_ \_ \_ \_ \_ Conteggio slot risorse input Vertex \_ D3D12 Ia                                  | 32               |
-| \_ \_ \_ \_ Componenti elementi della struttura di input del \_ vertice \_ Ia D3D12                        | 128              |
-| \_ \_ \_ \_ Conteggio elementi della struttura di input del \_ vertice \_ Ia D3D12                              | 32               |
-| \_Quoziente D3D12 Integer diviso \_ \_ per \_ zero \_                                       | 0xFFFFFFFF       |
-| D3D12 \_ intero \_ diviso \_ per \_ zero di \_ resto                                      | 0xFFFFFFFF       |
-| D3D12 \_ Mantieni \_ \_ le destinazioni \_ di rendering e lo \_ \_ stencil Depth                                | 0xFFFFFFFF       |
-| D3D12 \_ Mantieni \_ viste di accesso non ordinate \_ \_                                            | 0xFFFFFFFF       |
-| \_Gamma lineare \_ D3D12                                                             | 1,0 f             |
-| \_Versione principale di D3D12 \_                                                            | 12               |
-| \_ \_ \_ Componente colore massimo bordo \_ D3D12                                             | 1,0 f             |
-| \_Profondità massima \_ D3D12                                                                | 1,0 f             |
-| D3D12 \_ Max \_ MAXANISOTROPY                                                        | 16               |
-| \_Numero massimo di \_ campioni multicampionamento D3D12 \_ \_                                           | 32               |
-| \_Valore D3D12 Max \_ position \_                                                      | 3.402823466 e + 34F |
-| \_ \_ Costo radice massimo \_ D3D12                                                           | 64               |
-| D3D12 \_ \_ dimensione massima \_ trama \_ 2 \_ a \_ Exp                                       | 17               |
-| \_Versione secondaria \_ D3D12                                                            | 0                |
-| D3D12 \_ Min \_ Border \_ Color \_ Component                                             | 0,0 f             |
-| \_Profondità minima \_ D3D12                                                                | 0,0 f             |
-| D3D12 \_ Min \_ MAXANISOTROPY                                                        | 0                |
-| D3D12 \_ PIP \_ LOD \_ Bias \_ Max                                                       | 15.99 f           |
-| D3D12 \_ PIP \_ LOD \_ \_ minimo                                                       | -16 f           |
-| \_ \_ \_ \_ Conteggio bit frazionari D3D12 MIP LOD \_                                          | 8                |
-| \_ \_ \_ Conteggio bit dell'intervallo \_ LOD \_ D3D12 MIP                                               | 8                |
-| D3D12 \_ multisample \_ antialias \_ - \_ spessore riga                                       | 1.4 f             |
-| \_ \_ \_ \_ Risultato dell'accesso non compreso nell' \_ intervallo \_ per il recupero di \_ D3D12 non sample                          | 0                |
-| \_ \_ \_ \_ \_ Fine valori spazio registro riservato \_ sistema operativo D3D12                                | 0xFFFFFFFF       |
-| \_ \_ \_ \_ \_ Inizio valori spazio registro riservato \_ sistema operativo D3D12                              | 0xfffffff8       |
-| \_Riquadro compresso \_ D3D12                                                              | 0xFFFFFFFF       |
-| \_ \_ \_ \_ Conteggio bit intervallo indirizzi pixel \_ D3D12                                         | 15               |
-| D3D12 \_ \_ numero di \_ \_ bit dell'intervallo di indirizzi pixel \_ \_ pre-Scissor \_                           | 16               |
-| D3D12 \_ PS \_ cs \_ UAV \_ registro \_ componenti                                         | 1                |
-| \_ \_ \_ \_ Conteggio registri UAV D3D12 PS \_ CS                                              | 8                |
-| D3D12 \_ PS \_ cs \_ - \_ letture registro UAV \_ \_ per \_ inst                                   | 1                |
-| D3D12 \_ PS \_ cs \_ UAV \_ registrare \_ le \_ porte di lettura                                        | 1                |
-| Valore predefinito di D3D12 \_ PS \_ FRONTFACING \_ \_                                           | 0xFFFFFFFF       |
-| D3D12 \_ PS \_ FRONTFACING \_ false \_ valore                                             | 0                |
-| D3D12 \_ PS \_ FRONTFACING \_ true \_ value                                              | 0xFFFFFFFF       |
-| \_Componenti del \_ Registro di input \_ \_ di D3D12 PS                                           | 4                |
-| \_ \_ \_ \_ \_ Numero bit componente registro di input D3D12 PS \_                                | 32               |
-| \_ \_ \_ Conteggio registri input D3D12 \_ PS                                                | 32               |
-| \_ \_ Letture registro di input D3D12 PS \_ \_ \_ per \_ inst                                     | 2                |
-| \_Porte di \_ lettura del registro di input D3D12 PS \_ \_ \_                                          | 1                |
-| \_ \_ \_ \_ \_ Componente frazionario pixel Center legacy D3D12 \_ PS                          | 0,0 f             |
-| \_Componenti del \_ Registro di profondità di output \_ \_ di D3D12 PS \_                                   | 1                |
-| \_ \_ \_ \_ \_ \_ Numero bit componente registro profondità output \_ D3D12 PS                        | 32               |
-| \_ \_ \_ \_ Conteggio Registro profondità output D3D12 PS \_                                        | 1                |
-| D3D12 \_ PS \_ output \_ mask \_ Registra \_ componenti                                    | 1                |
-| D3D12 \_ PS \_ output \_ mask \_ Registra \_ il \_ numero di bit componente \_                         | 32               |
-| \_ \_ \_ Conteggio registri della maschera di output \_ di D3D12 PS \_                                         | 1                |
-| \_Componenti del \_ Registro di output \_ \_ di D3D12 PS                                          | 4                |
-| \_ \_ \_ \_ \_ Conteggio bit componente registro output \_ D3D12 PS                               | 32               |
-| \_ \_ \_ Conteggio registro output D3D12 \_ PS                                               | 8                |
-| \_ \_ \_ \_ Componente frazionario D3D12 PS pixel \_ Center                                  | 0,5 f             |
-| \_Allineamento del \_ \_ byte SRV \_ D3D12 RAW UAV \_                                            | 16               |
-| D3D12 \_ RAYTRACING \_ AABB \_ \_ allineamento byte                                         | 8                |
-| \_ \_ \_ \_ Allineamento byte struttura di accelerazione RAYTRACING D3D12 \_                      | 256              |
-| D3D12 \_ \_ istanza RAYTRACING \_ - \_ allineamento byte desc \_                               | 16               |
-| D3D12 \_ RAYTRACING \_ - \_ dimensioni massime attributo \_ \_ in \_ byte                               | 32               |
-| D3D12 \_ RAYTRACING \_ - \_ profondità di \_ \_ ricorsione traccia dichiarabile \_                      | 31               |
-| \_ \_ Dimensioni identificatore shader D3D12 \_ RAYTRACING \_ \_ in \_ byte                           | 32               |
-| \_ \_ \_ \_ Allineamento byte record shader D3D12 RAYTRACING \_                               | 32               |
-| \_ \_ \_ \_ Allineamento byte tabella shader D3D12 RAYTRACING \_                                | 64               |
-| D3D12 \_ RAYTRACING \_ TRANSFORM3X4 \_ \_ allineamento byte                                 | 16               |
-| Numero di oggetti della blend di D3D12 \_ req \_ \_ \_ \_ per \_ dispositivo                                    | 4096             |
-| D3D12 \_ \_ risorse buffer del buffer \_ di richiesta \_ \_ \_ -conteggio \_ da 2 a \_ Exp                           | 27               |
-| \_ \_ \_ \_ Conteggio elementi buffer costanti \_ D3D12                                     | 4096             |
-| \_ \_ \_ Conteggio oggetti stencil Depth \_ D3D12 \_ \_ per \_ dispositivo                           | 4096             |
-| D3D12 \_ req \_ DRAWINDEXED \_ indice \_ numero \_ 2 \_ a \_ Exp                                | 32               |
-| D3D12 \_ req \_ che estrae i \_ vertici dal \_ numero \_ 2 \_ a \_ Exp                                      | 32               |
-| \_ \_ \_ \_ Dimensione risorsa indirizzabile di \_ D3D12 req Filtering HW \_                      | 16384            |
-| \_Limite del \_ \_ componente di output a \_ 32 bit della chiamata \_ \_ \_ di D3D12 req GS                      | 1024             |
-| \_ \_ \_ \_ \_ Conteggio elementi buffer costanti immediate \_ D3D12                          | 4096             |
-| D3D12 \_ req \_ MAXANISOTROPY                                                        | 16               |
-| \_ \_ Livelli MIP di D3D12 req \_                                                          | 15               |
-| \_ \_ \_ \_ Dimensioni della struttura a più elementi di D3D12 req \_ \_ in \_ byte                           | 2048             |
-| \_ \_ Conteggio oggetti di rasterizzazione req D3D12 \_ \_ \_ per \_ dispositivo                               | 4096             |
-| Rendering della richiesta \_ \_ di D3D12 per la \_ \_ \_ larghezza della finestra buffer \_                                    | 16384            |
-| D3D12 \_ \_ \_ dimensione della risorsa req \_ in \_ megabyte \_ espressione \_ a \_ termine                   | 128              |
-| D3D12 \_ \_ \_ dimensione della risorsa \_ di req in \_ megabyte \_ espressione \_ B \_ termine                   | 0,25 f            |
-| D3D12 \_ \_ delle dimensioni delle risorse req \_ \_ in \_ megabyte \_ espressione \_ C \_                   | 2048             |
-| \_ \_ Numero di visualizzazioni delle risorse di D3D12 req per \_ \_ \_ \_ dispositivo \_ 2 \_ a \_ Exp                       | 20               |
-| \_ \_ Conteggio oggetti Sampler req D3D12 \_ \_ \_ per \_ dispositivo                                  | 4096             |
-| Sottorisorse di D3D12 \_ req \_                                                         | 30720            |
-| \_Dimensione dell' \_ \_ asse della matrice D3D12 req TEXTURE1D \_ \_                                    | 2048             |
-| \_Dimensione D3D12 req \_ TEXTURE1D \_ U \_                                              | 16384            |
-| \_Dimensione dell' \_ \_ asse della matrice D3D12 req TEXTURE2D \_ \_                                    | 2048             |
-| \_Dimensione D3D12 req \_ TEXTURE2D \_ U \_ o \_ V \_                                       | 16384            |
-| \_Dimensione D3D12 req \_ TEXTURE3D \_ U \_ V \_ o \_ W \_                                    | 2048             |
-| \_Dimensione D3D12 req \_ TEXTURECUBE \_                                               | 16384            |
-| \_Retval del \_ \_ componente mancante \_ nell'istruzione D3D12 RESINFO \_                          | 0                |
-| \_Barriera risorse \_ D3D12 \_ tutte le \_ sottorisorse                                      | 0xFFFFFFFF       |
+| D3D12 \_ 16BIT \_ INDEX \_ STRIP \_ CUT \_ VALUE                                           | 0xffff           |
+| D3D12 \_ 32BIT \_ INDEX \_ STRIP \_ CUT \_ VALUE                                           | 0xffffffff       |
+| D3D12 \_ 8BIT \_ INDEX \_ STRIP \_ CUT \_ VALUE                                            | 0xff             |
+| ELEMENTO ALLINEATO D3D12 \_ APPEND \_ \_                                                  | 0xffffffff       |
+| NUMERO DI BIT DELL'INTERVALLO DI \_ INDIRIZZI DELL'ASSE \_ \_ DELLA \_ \_ \_ MATRICE D3D12                                   | 9                |
+| CONTEGGIO DELLE DISTANZE DI CLIP D3D12 \_ \_ \_ O CULL \_ \_                                           | 8                |
+| CONTEGGIO ELEMENTI CLIP O \_ \_ \_ CULL \_ DISTANCE \_ \_ D3D12                                  | 2                |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ API \_ SLOT \_ COUNT                          | 14               |
+| COMPONENTI \_ COMMONSHADER CONSTANT \_ \_ BUFFER \_ D3D12                                | 4                |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ COMPONENT \_ BIT \_ COUNT                     | 32               |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ HW \_ SLOT \_ COUNT                           | 15               |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ PARTIAL \_ UPDATE \_ EXTENTS \_ BYTE \_ ALIGNMENT | 16               |
+| COMPONENTI DEL REGISTRO BUFFER COSTANTI D3D12 \_ COMMONSHADER \_ \_ \_ \_                      | 4                |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ REGISTER \_ COUNT                           | 15               |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ REGISTER \_ READS \_ PER \_ INST                | 1                |
+| D3D12 \_ COMMONSHADER \_ CONSTANT \_ BUFFER \_ REGISTER \_ READ \_ PORTS                     | 1                |
+| D3D12 \_ COMMONSHADER \_ FLOWCONTROL \_ NESTING \_ LIMIT                                 | 64               |
+| COMPONENTI DEL REGISTRO BUFFER COSTANTE D3D12 \_ COMMONSHADER \_ IMMEDIATE \_ \_ \_ \_           | 4                |
+| D3D12 \_ COMMONSHADER \_ IMMEDIATE \_ CONSTANT \_ BUFFER \_ REGISTER \_ COUNT                | 1                |
+| D3D12 \_ COMMONSHADER \_ IMMEDIATE \_ CONSTANT \_ BUFFER \_ REGISTER \_ READS \_ PER \_ INST     | 1                |
+| D3D12 \_ COMMONSHADER \_ IMMEDIATE \_ CONSTANT \_ BUFFER \_ REGISTER \_ READ \_ PORTS          | 1                |
+| D3D12 \_ COMMONSHADER \_ IMMEDIATE \_ VALUE \_ COMPONENT \_ BIT \_ COUNT                     | 32               |
+| COMPONENTI DEL REGISTRO RISORSE DI INPUT D3D12 \_ COMMONSHADER \_ \_ \_ \_                       | 1                |
+| D3D12 \_ COMMONSHADER \_ INPUT \_ RESOURCE \_ REGISTER \_ COUNT                            | 128              |
+| D3D12 \_ COMMONSHADER \_ INPUT \_ RESOURCE \_ REGISTER \_ READS \_ PER \_ INST                 | 1                |
+| D3D12 \_ COMMONSHADER \_ INPUT \_ RESOURCE \_ REGISTER \_ READ \_ PORTS                      | 1                |
+| D3D12 \_ COMMONSHADER \_ INPUT \_ RESOURCE \_ SLOT \_ COUNT                                | 128              |
+| COMPONENTI DEL REGISTRO \_ COMMONSHADER \_ SAMPLER \_ D3D12 \_                               | 1                |
+| D3D12 \_ COMMONSHADER \_ SAMPLER \_ REGISTER \_ COUNT                                    | 16               |
+| D3D12 \_ COMMONSHADER \_ SAMPLER \_ REGISTER \_ READS \_ PER \_ INST                         | 1                |
+| D3D12 \_ COMMONSHADER \_ SAMPLER \_ REGISTER \_ READ \_ PORTS                              | 1                |
+| NUMERO DI \_ SLOT DEL \_ SAMPLER \_ COMMONSHADER D3D12 \_                                        | 16               |
+| LIMITE DI ANNIDAMENTO \_ \_ DELLE SUBROUTINE COMMONSHADER \_ \_ D3D12                                  | 32               |
+| COMPONENTI DEL REGISTRO TEMP D3D12 \_ COMMONSHADER \_ \_ \_                                  | 4                |
+| D3D12 \_ COMMONSHADER \_ TEMP \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                       | 32               |
+| D3D12 \_ COMMONSHADER \_ TEMP \_ REGISTER \_ COUNT                                       | 4096             |
+| D3D12 \_ COMMONSHADER \_ TEMP \_ REGISTER \_ READS \_ PER \_ INST                            | 3                |
+| D3D12 \_ COMMONSHADER \_ TEMP \_ REGISTER \_ READ \_ PORTS                                 | 3                |
+| D3D12 \_ COMMONSHADER \_ TEXCOORD \_ RANGE \_ REDUCTION \_ MAX                             | 10               |
+| D3D12 \_ COMMONSHADER \_ TEXCOORD \_ RANGE \_ REDUCTION \_ MIN                             | -10              |
+| D3D12 \_ COMMONSHADER \_ TEXEL \_ OFFSET \_ MAX \_ NEGATIVE                                | -8               |
+| D3D12 \_ COMMONSHADER \_ TEXEL \_ OFFSET \_ MAX \_ POSITIVE                                | 7                |
+| ALLINEAMENTO DEL POSIZIONAMENTO DEI DATI DEL BUFFER COSTANTE D3D12 \_ \_ \_ \_ \_                              | 256              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET00 \_ MAX \_ BYTES \_ TGSM \_ WRITABLE \_ PER \_ THREAD               | 256              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET00 \_ MAX NUM THREADS PER \_ \_ \_ \_ GRUPPO                         | 64               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET01 \_ MAX \_ BYTES \_ TGSM \_ WRITABLE \_ PER \_ THREAD               | 240              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET01 \_ NUMERO MASSIMO DI THREAD NUM PER \_ \_ \_ \_ GRUPPO                         | 68               |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET02 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 224              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET02 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 72               |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET03 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 208              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET03 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 76               |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET04 \_ MAX BYTES \_ \_ TGSM \_ SCRIVIBILE PER \_ \_ THREAD               | 192              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET04 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 84               |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET05 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 176              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET05 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 92               |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET06 \_ MAX BYTES \_ \_ TGSM \_ SCRIVIBILE PER \_ \_ THREAD               | 160              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET06 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 100              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET07 \_ MAX \_ BYTES \_ TGSM \_ WRITABLE \_ PER \_ THREAD               | 144              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET07 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 112              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET08 \_ MAX BYTES \_ \_ TGSM \_ SCRIVIBILE PER \_ \_ THREAD               | 128              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET08 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 128              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET09 \_ MAX BYTES \_ \_ TGSM \_ SCRIVIBILE PER \_ \_ THREAD               | 112              |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET09 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 144              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET10 \_ MAX BYTES \_ \_ TGSM \_ SCRIVIBILE PER \_ \_ THREAD               | 96               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET10 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 168              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET11 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 80               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET11 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 204              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET12 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 64               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET12 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 256              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET13 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 48               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET13 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 340              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET14 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 32               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET14 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 512              |
+| D3D12 \_ CS \_ 4 X \_ \_ BUCKET15 \_ MAX BYTES \_ \_ TGSM \_ WRISM WRITABLE \_ PER \_ THREAD               | 16               |
+| D3D12 \_ CS \_ 4 \_ X \_ BUCKET15 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 768              |
+| D3D12 \_ CS \_ 4 \_ X \_ DISPATCH \_ MAX \_ THREAD \_ GROUPS \_ IN \_ Z \_ DIMENSION                 | 1                |
+| ALLINEAMENTO BYTE \_ \_ \_ \_ \_ UAV \_ \_ NON ELABORATI D3D12 CS 4 X                                       | 256              |
+| D3D12 \_ CS \_ 4 X NUMERO MASSIMO THREAD \_ PER GRUPPO DI THREAD PER \_ \_ \_ \_ \_ \_ GRUPPO                         | 768              |
+| D3D12 \_ CS \_ 4 X GRUPPO DI THREAD \_ MAX \_ \_ \_ \_ X                                           | 768              |
+| D3D12 \_ CS \_ 4 X GRUPPO DI THREAD \_ MAX \_ \_ \_ \_ Y                                           | 768              |
+| D3D12 \_ CS \_ 4 \_ X \_ UAV \_ REGISTER \_ COUNT                                            | 1                |
+| D3D12 \_ CS \_ DISPATCH \_ MAX \_ THREAD \_ GROUPS \_ PER \_ DIMENSION                         | 65535            |
+| D3D12 \_ CS \_ TGSM \_ REGISTER \_ COUNT                                                 | 8192             |
+| D3D12 \_ CS \_ TGSM \_ REGISTER \_ READS \_ PER \_ INST                                      | 1                |
+| COMPONENTI DEL REGISTRO RISORSE \_ \_ TGSM D3D12 CS \_ \_ \_                                  | 1                |
+| PORTE DI LETTURA DEL REGISTRO DELLE RISORSE \_ \_ TGSM D3D12 CS \_ \_ \_ \_                                 | 1                |
+| COMPONENTI DEL REGISTRO \_ \_ THREADGROUPID \_ D3D12 CS \_                                   | 3                |
+| D3D12 \_ CS \_ THREADGROUPID \_ REGISTER \_ COUNT                                        | 1                |
+| COMPONENTI DEL REGISTRO \_ \_ THREADIDINGROUPFLATTENED D3D12 \_ \_ CS                        | 1                |
+| D3D12 \_ CS \_ THREADIDINGROUPFLATTENED \_ REGISTER \_ COUNT                             | 1                |
+| COMPONENTI DEL REGISTRO \_ \_ THREADIDINGROUP \_ D3D12 CS \_                                 | 3                |
+| D3D12 \_ CS \_ THREADIDINGROUP \_ REGISTER \_ COUNT                                      | 1                |
+| COMPONENTI DEL REGISTRO \_ \_ THREADID \_ D3D12 CS \_                                        | 3                |
+| D3D12 \_ CS \_ THREADID \_ REGISTER \_ COUNT                                             | 1                |
+| NUMERO MASSIMO THREAD PER GRUPPO DI THREAD D3D12 \_ CS \_ PER \_ \_ \_ \_ \_ GRUPPO                               | 1024             |
+| D3D12 \_ CS \_ THREAD \_ GROUP \_ MAX \_ X                                                 | 1024             |
+| D3D12 \_ CS \_ THREAD \_ GROUP \_ MAX \_ Y                                                 | 1024             |
+| GRUPPO DI THREAD D3D12 \_ CS \_ MAX \_ \_ \_ Z                                                 | 64               |
+| D3D12 \_ CS \_ THREAD \_ GROUP \_ MIN \_ X                                                 | 1                |
+| D3D12 \_ CS \_ THREAD \_ GROUP \_ MIN \_ Y                                                 | 1                |
+| GRUPPO DI THREAD D3D12 \_ CS \_ MIN \_ \_ \_ Z                                                 | 1                |
+| POOL DI REGISTRAZIONE TEMPORANEA LOCALE DEL THREAD D3D12 \_ CS \_ \_ \_ \_ \_                                   | 16384            |
+| D3D12 \_ DEFAULT \_ BLEND \_ FACTOR \_ ALPHA                                             | 1.0f             |
+| D3D12 \_ DEFAULT \_ BLEND \_ FACTOR \_ BLUE                                              | 1.0f             |
+| D3D12 \_ DEFAULT \_ BLEND \_ FACTOR \_ GREEN                                             | 1.0f             |
+| D3D12 \_ DEFAULT \_ BLEND \_ FACTOR \_ RED                                               | 1.0f             |
+| COMPONENTE COLORE BORDO PREDEFINITO D3D12 \_ \_ \_ \_                                         | 0.0f             |
+| DISTORSIONE DELLA PROFONDITÀ PREDEFINITA D3D12 \_ \_ \_                                                      | 0                |
+| D3D12 \_ DEFAULT \_ DEPTH \_ BIAS \_ CLAMP                                               | 0.0f             |
+| D3D12 \_ DEFAULT \_ MAX \_ ANISOTROPY                                                  | 16               |
+| D3D12 \_ DEFAULT \_ MIP \_ LOD \_ BIAS                                                   | 0.0f             |
+| ALLINEAMENTO DEL POSIZIONAMENTO \_ DELLE \_ RISORSE MSAA PREDEFINITO \_ \_ \_ D3D12                             | 4194304          |
+| INDICE DELLA MATRICE DI DESTINAZIONE \_ DI \_ \_ RENDERING \_ \_ PREDEFINITO D3D12                                     | 0                |
+| ALLINEAMENTO DEL POSIZIONAMENTO DELLE RISORSE PREDEFINITO D3D12 \_ \_ \_ \_                                   | 65536            |
+| MASCHERA DI ESEMPIO PREDEFINITA D3D12 \_ \_ \_                                                     | 0xffffffff       |
+| D3D12 \_ DEFAULT \_ SCISSOR \_ ENDX                                                    | 0                |
+| D3D12 \_ DEFAULT \_ SCISSOR \_ ENDY                                                    | 0                |
+| D3D12 \_ DEFAULT \_ SCISSOR \_ STARTX                                                  | 0                |
+| AVVIO \_ \_ SCISSOR PREDEFINITO D3D12 \_                                                  | 0                |
+| DISTORSIONE DELLA PROFONDITÀ CON SCALABILITÀ IN \_ \_ \_ PENDENZA \_ PREDEFINITA D3D12 \_                                       | 0.0f             |
+| MASCHERA DI LETTURA DELLO STENCIL PREDEFINITO D3D12 \_ \_ \_ \_                                              | 0xff             |
+| RIFERIMENTO ALLO STENCIL PREDEFINITO D3D12 \_ \_ \_                                               | 0                |
+| MASCHERA DI SCRITTURA DELLO STENCIL PREDEFINITO D3D12 \_ \_ \_ \_                                             | 0xff             |
+| D3D12 \_ DEFAULT \_ VIEWPORT \_ AND \_ SCISSORRECT \_ INDEX                                | 0                |
+| ALTEZZA PREDEFINITA DEL \_ \_ \_ VIEWPORT D3D12                                                 | 0                |
+| PROFONDITÀ MASSIMA DEL \_ \_ VIEWPORT \_ PREDEFINITO D3D12 \_                                             | 0.0f             |
+| PROFONDITÀ MINIMA DEL \_ \_ VIEWPORT \_ PREDEFINITO D3D12 \_                                             | 0.0f             |
+| D3D12 \_ \_ VIEWPORT \_ PREDEFINITO TOPLEFTX                                               | 0                |
+| D3D12 \_ DEFAULT \_ VIEWPORT \_ TOPLEFTY                                               | 0                |
+| LARGHEZZA PREDEFINITA DEL \_ \_ \_ VIEWPORT D3D12                                                  | 0                |
+| AGGIUNTA OFFSET INTERVALLO DESCRITTORE D3D12 \_ \_ \_ \_                                         | 0xffffffff       |
+| D3D12 \_ DRIVER \_ RESERVED \_ REGISTER \_ SPACE \_ VALUES \_ END                            | 0xfffffff7       |
+| D3D12 \_ DRIVER \_ RESERVED \_ REGISTER \_ SPACE \_ VALUES \_ START                          | 0xfffffff0       |
+| D3D12 \_ DS \_ INPUT \_ CONTROL \_ POINTS \_ MAX \_ TOTAL \_ SCALARS                           | 3968             |
+| COMPONENTI DEL REGISTRO DEL PUNTO DI CONTROLLO DI INPUT D3D12 \_ DS \_ \_ \_ \_ \_                           | 4                |
+| D3D12 \_ DS \_ INPUT \_ CONTROL \_ POINT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                | 32               |
+| CONTEGGIO DEI REGISTRI DEI PUNTI DI CONTROLLO DI INPUT D3D12 \_ DS \_ \_ \_ \_ \_                                | 32               |
+| D3D12 \_ DS \_ INPUT \_ CONTROL \_ POINT \_ REGISTER \_ READS \_ PER \_ INST                     | 2                |
+| D3D12 \_ DS \_ INPUT \_ CONTROL \_ POINT \_ REGISTER \_ READ \_ PORTS                          | 1                |
+| COMPONENTI DI REGISTRAZIONE DEL PUNTO DI DOMINIO DI INPUT D3D12 \_ DS \_ \_ \_ \_ \_                            | 3                |
+| D3D12 \_ DS \_ INPUT \_ DOMAIN \_ POINT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                 | 32               |
+| D3D12 \_ DS \_ INPUT \_ DOMAIN \_ POINT \_ REGISTER \_ COUNT                                 | 1                |
+| D3D12 \_ DS \_ INPUT \_ DOMAIN \_ POINT \_ REGISTER \_ READS \_ PER \_ INST                      | 2                |
+| D3D12 \_ DS \_ INPUT \_ DOMAIN \_ POINT \_ REGISTER \_ READ \_ PORTS                           | 1                |
+| COMPONENTI DEL REGISTRO COSTANTI DELLA \_ PATCH DI INPUT D3D12 DS \_ \_ \_ \_ \_                          | 4                |
+| D3D12 \_ DS \_ INPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT               | 32               |
+| D3D12 \_ DS \_ INPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ COUNT                               | 32               |
+| D3D12 \_ DS \_ INPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ READS \_ PER \_ INST                    | 2                |
+| D3D12 \_ DS \_ INPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ READ \_ PORTS                         | 1                |
+| COMPONENTI DEL REGISTRO DEGLI \_ \_ \_ ID PRIMITIVI \_ \_ DI INPUT D3D12 DS \_                            | 1                |
+| D3D12 \_ DS \_ INPUT \_ PRIMITIVE \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                 | 32               |
+| D3D12 \_ DS \_ INPUT \_ PRIMITIVE \_ ID \_ REGISTER \_ COUNT                                 | 1                |
+| D3D12 \_ DS \_ INPUT \_ PRIMITIVE \_ ID \_ REGISTER \_ READS \_ PER \_ INST                      | 2                |
+| D3D12 \_ DS \_ INPUT \_ PRIMITIVE ID \_ \_ REGISTRARE LE PORTE DI \_ \_ LETTURA                           | 1                |
+| COMPONENTI DEL REGISTRO OUTPUT D3D12 \_ DS \_ \_ \_                                          | 4                |
+| D3D12 \_ DS \_ OUTPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                               | 32               |
+| CONTEGGIO REGISTRI OUTPUT D3D12 \_ DS \_ \_ \_                                               | 32               |
+| TOLLERANZA FUSO D3D12 \_ FLOAT16 \_ \_ IN \_ \_ ULP                                        | 0,6              |
+| D3D12 \_ FLOAT32 \_ MAX                                                              | 3.402823466e+38f |
+| TOLLERANZA DA D3D12 \_ FLOAT32 A \_ \_ INTEGER IN \_ \_ \_ ULP                                  | 0.6f             |
+| DENOMINATORE DELL'ESPONENTE DA D3D12 FLOAT A \_ \_ \_ SRGB \_ \_                                    | 2.4f             |
+| NUMERATORE ESPONENTE DA D3D12 FLOAT A \_ \_ \_ SRGB \_ \_                                      | 1.0f             |
+| OFFSET DA FLOAT A SRGB DA D3D12 \_ \_ A \_ SRGB \_                                                   | 0,055f           |
+| DA D3D12 \_ FLOAT \_ A \_ SRGB \_ SCALE \_ 1                                                 | 12.92f           |
+| DA D3D12 \_ FLOAT \_ A \_ SRGB \_ SCALE \_ 2                                                 | 1.055f           |
+| DA D3D12 \_ FLOAT \_ A \_ SRGB \_ THRESHOLD                                                | 0.0031308f       |
+| INPUT MASSIMO \_ ISTRUZIONI FTOI D3D12 \_ \_ \_                                             | 2147483647.999f  |
+| INPUT MINIMO \_ ISTRUZIONE FTOI D3D12 \_ \_ \_                                             | -2147483648.999f |
+| INPUT MASSIMO \_ ISTRUZIONI FTOU D3D12 \_ \_ \_                                             | 4294967295.999f  |
+| INPUT MINIMO \_ ISTRUZIONE FTOU D3D12 \_ \_ \_                                             | 0.0f             |
+| D3D12 \_ GS \_ INPUT \_ INSTANCE \_ ID \_ READS \_ PER \_ INST                                 | 2                |
+| PORTE DI LETTURA DELL'ID ISTANZA DI INPUT D3D12 \_ GS \_ \_ \_ \_ \_                                      | 1                |
+| COMPONENTI DI REGISTRAZIONE DELL'ID ISTANZA DI INPUT D3D12 \_ GS \_ \_ \_ \_ \_                             | 1                |
+| D3D12 \_ GS \_ INPUT \_ INSTANCE \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                  | 32               |
+| CONTEGGIO REGISTRI ID ISTANZA DI INPUT D3D12 \_ GS \_ \_ \_ \_ \_                                  | 1                |
+| COMPONENTI DEL REGISTRO \_ \_ \_ PRIM \_ CONST \_ DI INPUT \_ D3D12 GS                              | 1                |
+| D3D12 \_ GS \_ INPUT \_ PRIM \_ CONST \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                   | 32               |
+| D3D12 \_ GS \_ INPUT \_ PRIM \_ CONST \_ REGISTER \_ COUNT                                   | 1                |
+| D3D12 \_ GS \_ INPUT \_ PRIM \_ CONST \_ REGISTER \_ READS \_ PER \_ INST                        | 2                |
+| D3D12 \_ GS \_ INPUT \_ PRIM \_ CONST \_ REGISTER \_ READ \_ PORTS                             | 1                |
+| COMPONENTI DEL REGISTRO INPUT D3D12 \_ GS \_ \_ \_                                           | 4                |
+| CONTEGGIO DEI BIT DEL COMPONENTE DEL REGISTRO DI INPUT D3D12 \_ GS \_ \_ \_ \_ \_                                | 32               |
+| NUMERO DI REGISTRI DI INPUT D3D12 \_ GS \_ \_ \_                                                | 32               |
+| D3D12 \_ GS \_ INPUT \_ REGISTER \_ READS \_ PER \_ INST                                     | 2                |
+| PORTE DI LETTURA DEL REGISTRO INPUT D3D12 \_ GS \_ \_ \_ \_                                          | 1                |
+| VERTICI DEL REGISTRO DI INPUT D3D12 \_ \_ \_ \_ GS                                             | 32               |
+| NUMERO MASSIMO DI ISTANZE D3D12 \_ GS \_ \_ \_                                                  | 32               |
+| D3D12 \_ GS \_ MAX \_ OUTPUT \_ VERTEX \_ COUNT \_ ACROSS \_ INSTANCES                         | 1024             |
+| ELEMENTI DI OUTPUT D3D12 \_ GS \_ \_                                                      | 32               |
+| COMPONENTI DEL REGISTRO OUTPUT D3D12 \_ GS \_ \_ \_                                          | 4                |
+| CONTEGGIO DEI BIT DEL COMPONENTE DEL REGISTRO DI OUTPUT D3D12 \_ GS \_ \_ \_ \_ \_                               | 32               |
+| CONTEGGIO REGISTRI OUTPUT D3D12 \_ GS \_ \_ \_                                               | 32               |
+| D3D12 \_ HS \_ CONTROL \_ POINT \_ PHASE \_ INPUT \_ REGISTER \_ COUNT                         | 32               |
+| D3D12 \_ HS \_ CONTROL \_ POINT \_ PHASE \_ OUTPUT \_ REGISTER \_ COUNT                        | 32               |
+| COMPONENTI DEL REGISTRO DEL PUNTO DI CONTROLLO D3D12 \_ HS \_ \_ \_ \_                                  | 4                |
+| CONTEGGIO DEI BIT DEL COMPONENTE DEL PUNTO DI CONTROLLO D3D12 \_ HS \_ \_ \_ \_ \_ \_                       | 32               |
+| D3D12 \_ HS \_ CONTROL \_ POINT \_ REGISTER \_ READS \_ PER \_ INST                            | 2                |
+| PORTE DI LETTURA DEL PUNTO DI CONTROLLO D3D12 \_ HS \_ \_ \_ \_ \_                                 | 1                |
+| D3D12 \_ HS \_ FORK \_ PHASE \_ INSTANCE \_ COUNT \_ UPPER \_ BOUND                            | 0xffffffff       |
+| COMPONENTI DI REGISTRAZIONE DELL'ID ISTANZA \_ \_ DEL \_ FORK \_ \_ \_ DI INPUT \_ D3D12 HS                       | 1                |
+| D3D12 \_ HS \_ INPUT \_ FORK \_ INSTANCE \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT            | 32               |
+| CONTEGGIO REGISTRI ID ISTANZA FORK DI INPUT D3D12 \_ HS \_ \_ \_ \_ \_ \_                            | 1                |
+| D3D12 \_ HS \_ INPUT \_ FORK \_ INSTANCE \_ ID \_ REGISTER \_ READS \_ PER \_ INST                 | 2                |
+| D3D12 \_ HS \_ INPUT \_ FORK \_ INSTANCE \_ ID \_ REGISTER \_ READ \_ PORTS                      | 1                |
+| COMPONENTI DI REGISTRAZIONE \_ DELL'ID ISTANZA DEL \_ \_ JOIN \_ DI \_ \_ INPUT \_ D3D12 HS                       | 1                |
+| D3D12 \_ HS \_ INPUT \_ JOIN \_ INSTANCE \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT            | 32               |
+| D3D12 \_ HS \_ INPUT \_ JOIN \_ INSTANCE \_ ID \_ REGISTER \_ COUNT                            | 1                |
+| D3D12 \_ HS \_ INPUT \_ JOIN \_ INSTANCE \_ ID \_ REGISTER \_ READS \_ PER \_ INST                 | 2                |
+| D3D12 \_ HS \_ INPUT \_ JOIN \_ INSTANCE \_ ID \_ REGISTER \_ READ \_ PORTS                      | 1                |
+| COMPONENTI DEL REGISTRO DEGLI \_ \_ \_ ID PRIMITIVI \_ \_ \_ DI INPUT D3D12 HS                            | 1                |
+| D3D12 \_ HS \_ INPUT \_ PRIMITIVE \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                 | 32               |
+| CONTEGGIO DEI REGISTRI DEGLI \_ \_ \_ ID PRIMITIVI \_ \_ DI INPUT \_ D3D12 HS                                 | 1                |
+| D3D12 \_ HS \_ INPUT \_ PRIMITIVE \_ ID \_ REGISTER \_ READS \_ PER \_ INST                      | 2                |
+| D3D12 \_ HS \_ INPUT \_ PRIMITIVE ID \_ \_ REGISTRARE LE PORTE DI \_ \_ LETTURA                           | 1                |
+| D3D12 \_ HS \_ JOIN \_ PHASE \_ INSTANCE \_ COUNT \_ UPPER \_ BOUND                            | 0xffffffff       |
+| LIMITE INFERIORE D3D12 \_ HS \_ MAXTESSFACTOR \_ \_                                           | 1.0f             |
+| LIMITE SUPERIORE D3D12 \_ HS \_ MAXTESSFACTOR \_ \_                                           | 64.0f            |
+| D3D12 \_ HS \_ OUTPUT \_ CONTROL \_ POINTS \_ MAX \_ TOTAL \_ SCALARS                          | 3968             |
+| COMPONENTI DI REGISTRAZIONE DELL'ID PUNTO DI CONTROLLO DELL'OUTPUT D3D12 \_ HS \_ \_ \_ \_ \_ \_                      | 1                |
+| D3D12 \_ HS \_ OUTPUT \_ CONTROL \_ POINT \_ ID \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT           | 32               |
+| D3D12 \_ HS \_ OUTPUT \_ CONTROL \_ POINT \_ ID \_ REGISTER \_ COUNT                           | 1                |
+| D3D12 \_ HS \_ OUTPUT \_ CONTROL \_ POINT \_ ID \_ REGISTER \_ READS \_ PER \_ INST                | 2                |
+| D3D12 \_ HS \_ OUTPUT \_ CONTROL \_ POINT \_ ID \_ REGISTER \_ READ \_ PORTS                     | 1                |
+| COMPONENTI DEL REGISTRO COSTANTI DELLA PATCH DI OUTPUT D3D12 \_ HS \_ \_ \_ \_ \_                         | 4                |
+| D3D12 \_ HS \_ OUTPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT              | 32               |
+| D3D12 \_ HS \_ OUTPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ COUNT                              | 32               |
+| D3D12 \_ HS \_ OUTPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ READS \_ PER \_ INST                   | 2                |
+| D3D12 \_ HS \_ OUTPUT \_ PATCH \_ CONSTANT \_ REGISTER \_ READ \_ PORTS                        | 1                |
+| COMPONENTI SCALARI DEL REGISTRO COSTANTI DELLA PATCH DI OUTPUT D3D12 \_ HS \_ \_ \_ \_ \_ \_                 | 128              |
+| OFFSET DEL \_ BUFFER DELL'INDICE PREDEFINITO D3D12 IA \_ IN \_ \_ \_ \_ \_ BYTE                             | 0                |
+| TOPOLOGIA PRIMITIVA PREDEFINITA D3D12 \_ IA \_ \_ \_                                          | 0                |
+| OFFSET DEL BUFFER DEI VERTICI PREDEFINITO D3D12 \_ IA \_ IN \_ \_ \_ \_ \_ BYTE                            | 0                |
+| D3D12 \_ IA \_ INDEX \_ INPUT \_ RESOURCE \_ SLOT \_ COUNT                                   | 1                |
+| NUMERO DI \_ BIT DELL'ID ISTANZA IA D3D12 \_ \_ \_ \_                                              | 32               |
+| D3D12 \_ IA \_ INTEGER NUMERO DI \_ BIT ARITMETICI \_ \_                                       | 32               |
+| D3D12 \_ IA \_ PATCH \_ MAX \_ CONTROL \_ POINT \_ COUNT                                     | 32               |
+| D3D12 \_ IA \_ PRIMITIVE \_ ID \_ BIT \_ COUNT                                             | 32               |
+| D3D12 \_ IA \_ VERTEX \_ ID \_ BIT \_ COUNT                                                | 32               |
+| D3D12 \_ IA \_ VERTEX \_ INPUT \_ RESOURCE \_ SLOT \_ COUNT                                  | 32               |
+| COMPONENTI DEGLI ELEMENTI DELLA STRUTTURA DI INPUT DEI VERTICI D3D12 \_ IA \_ \_ \_ \_ \_                        | 128              |
+| D3D12 \_ IA \_ VERTEX \_ INPUT \_ STRUCTURE \_ ELEMENT \_ COUNT                              | 32               |
+| DIVISIONE INTERA D3D12 \_ \_ PER \_ \_ \_ QUOZIENTE ZERO                                       | 0xffffffff       |
+| DIVISIONE INTERA D3D12 \_ \_ PER RESTO \_ \_ ZERO \_                                      | 0xffffffff       |
+| D3D12 \_ KEEP \_ RENDER \_ TARGETS \_ AND \_ DEPTH \_ STENCIL                                | 0xffffffff       |
+| D3D12 \_ KEEP \_ UNORDERED \_ ACCESS \_ VIEWS                                            | 0xffffffff       |
+| GAMMA LINEARE D3D12 \_ \_                                                             | 1.0f             |
+| VERSIONE PRINCIPALE D3D12 \_ \_                                                            | 12               |
+| COMPONENTE COLORE BORDO MASSIMO D3D12 \_ \_ \_ \_                                             | 1.0f             |
+| PROFONDITÀ MASSIMA D3D12 \_ \_                                                                | 1.0f             |
+| D3D12 \_ MAX \_ MAXANISOTROPY                                                        | 16               |
+| D3D12 \_ MAX \_ MULTISAMPLE \_ SAMPLE \_ COUNT                                           | 32               |
+| D3D12 \_ MAX \_ POSITION \_ VALUE                                                      | 3.402823466e+34f |
+| D3D12 \_ MAX \_ ROOT \_ COST                                                           | 64               |
+| D3D12 \_ MAX \_ TEXTURE \_ DIMENSION \_ 2 \_ TO \_ EXP                                       | 17               |
+| VERSIONE SECONDARIA D3D12 \_ \_                                                            | 0                |
+| COMPONENTE COLORE BORDO MINIMO D3D12 \_ \_ \_ \_                                             | 0,0f             |
+| PROFONDITÀ D3D12 \_ \_ MIN                                                                | 0,0f             |
+| D3D12 \_ MIN \_ MAXANISOTROPY                                                        | 0                |
+| D3D12 \_ MIP \_ LOD \_ BIAS \_ MAX                                                       | 15.99f           |
+| D3D12 \_ MIP \_ LOD \_ BIAS \_ MIN                                                       | -16.0f           |
+| D3D12 \_ MIP \_ LOD \_ FRACTIONAL \_ BIT \_ COUNT                                          | 8                |
+| D3D12 \_ MIP \_ LOD \_ RANGE \_ BIT \_ COUNT                                               | 8                |
+| LARGHEZZA LINEA \_ \_ ANTIALIAS MULTICAMPIONAMENTO D3D12 \_ \_                                       | 1.4f             |
+| RISULTATO DEL RECUPERO NON DI ESEMPIO D3D12 \_ \_ NON COMPRESO \_ \_ \_ \_ NELL'INTERVALLO DI \_ ACCESSO                          | 0                |
+| FINE DEI VALORI DELLO SPAZIO RISERVATO DEL REGISTRO DEL \_ \_ SISTEMA \_ \_ \_ OPERATIVO \_ D3D12                                | 0xffffffff       |
+| D3D12 \_ OS \_ RESERVED \_ REGISTER \_ SPACE \_ VALUES \_ START                              | 0xfffffff8       |
+| RIQUADRO IN PACCHETTO D3D12 \_ \_                                                              | 0xffffffff       |
+| NUMERO DI BIT DELL'INTERVALLO DI INDIRIZZI PIXEL D3D12 \_ \_ \_ \_ \_                                         | 15               |
+| NUMERO DI BIT DELL'INTERVALLO DI INDIRIZZI \_ DI \_ PRE-SCISSOR \_ \_ \_ \_ D3D12 \_                           | 16               |
+| COMPONENTI DI REGISTRAZIONE \_ \_ \_ UAV \_ D3D12 PS CS \_                                         | 1                |
+| D3D12 \_ PS \_ CS \_ UAV \_ REGISTER \_ COUNT                                              | 8                |
+| D3D12 \_ PS \_ CS \_ UAV \_ REGISTER \_ READS \_ PER \_ INST                                   | 1                |
+| PORTE DI LETTURA DEL REGISTRO \_ \_ \_ UAV \_ \_ D3D12 PS CS \_                                        | 1                |
+| VALORE PREDEFINITO DI D3D12 \_ PS \_ FRONTFACING \_ \_                                           | 0xffffffff       |
+| D3D12 \_ PS \_ FRONTFACING \_ FALSE \_ VALUE                                             | 0                |
+| D3D12 \_ PS \_ FRONTFACING \_ TRUE \_ VALUE                                              | 0xffffffff       |
+| COMPONENTI DEL REGISTRO DI INPUT D3D12 \_ PS \_ \_ \_                                           | 4                |
+| D3D12 \_ PS \_ INPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                                | 32               |
+| D3D12 \_ PS \_ INPUT \_ REGISTER \_ COUNT                                                | 32               |
+| D3D12 \_ PS \_ INPUT \_ REGISTER \_ READS \_ PER \_ INST                                     | 2                |
+| PORTE DI LETTURA DEL REGISTRO DI INPUT D3D12 \_ PS \_ \_ \_ \_                                          | 1                |
+| COMPONENTE FRAZIONARIO D3D12 \_ PS \_ PIXEL CENTER \_ \_ \_ LEGACY \_                          | 0,0f             |
+| COMPONENTI DEL REGISTRO PROFONDITÀ OUTPUT D3D12 \_ PS \_ \_ \_ \_                                   | 1                |
+| D3D12 \_ PS \_ OUTPUT \_ DEPTH \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                        | 32               |
+| D3D12 \_ PS \_ OUTPUT \_ DEPTH \_ REGISTER \_ COUNT                                        | 1                |
+| COMPONENTI DEL REGISTRO DELLA MASCHERA DI OUTPUT D3D12 \_ PS \_ \_ \_ \_                                    | 1                |
+| D3D12 \_ PS \_ OUTPUT \_ MASK \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                         | 32               |
+| D3D12 \_ PS \_ OUTPUT \_ MASK \_ REGISTER \_ COUNT                                         | 1                |
+| COMPONENTI DEL REGISTRO DI OUTPUT D3D12 \_ PS \_ \_ \_                                          | 4                |
+| D3D12 \_ PS \_ OUTPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                               | 32               |
+| D3D12 \_ PS \_ OUTPUT \_ REGISTER \_ COUNT                                               | 8                |
+| D3D12 \_ PS \_ PIXEL \_ CENTER \_ FRACTIONAL \_ COMPONENT                                  | 0,5f             |
+| ALLINEAMENTO BYTE \_ \_ \_ SRV UAV \_ NON \_ ELABORATO D3D12                                            | 16               |
+| ALLINEAMENTO DEI \_ \_ BYTE AABB RAYTRACING \_ D3D12 \_                                         | 8                |
+| ALLINEAMENTO DEI BYTE DELLA STRUTTURA DI ACCELERAZIONE D3D12 \_ RAYTRACING \_ \_ \_ \_                      | 256              |
+| D3D12 \_ RAYTRACING \_ INSTANCE \_ DESC \_ BYTE \_ ALIGNMENT                               | 16               |
+| DIMENSIONI MASSIME DELL'ATTRIBUTO D3D12 \_ RAYTRACING \_ \_ IN \_ \_ \_ BYTE                               | 32               |
+| D3D12 \_ RAYTRACING \_ MAX \_ DECLARABLE \_ TRACE \_ RECURSION \_ DEPTH                      | 31               |
+| DIMENSIONI \_ \_ IN \_ \_ \_ \_ BYTE DELL'IDENTIFICATORE DELLO SHADER D3D12 RAYTRACING                           | 32               |
+| ALLINEAMENTO DEI BYTE DEI RECORD DI SHADER D3D12 \_ RAYTRACING \_ \_ \_ \_                               | 32               |
+| ALLINEAMENTO DEI BYTE DELLA TABELLA SHADER D3D12 \_ RAYTRACING \_ \_ \_ \_                                | 64               |
+| D3D12 \_ RAYTRACING \_ TRANSFORM3X4 \_ BYTE \_ ALIGNMENT                                 | 16               |
+| D3D12 \_ REQ \_ BLEND \_ OBJECT \_ COUNT \_ PER \_ DEVICE                                    | 4096             |
+| D3D12 \_ REQ \_ BUFFER \_ RESOURCE \_ TEXEL \_ COUNT \_ 2 \_ TO \_ EXP                           | 27               |
+| CONTEGGIO ELEMENTI DEL BUFFER COSTANTE D3D12 \_ REQ \_ \_ \_ \_                                     | 4096             |
+| D3D12 \_ REQ \_ DEPTH \_ STENCIL \_ OBJECT \_ COUNT \_ PER \_ DEVICE                           | 4096             |
+| D3D12 \_ REQ \_ DRAWINDEXED \_ INDEX \_ COUNT \_ 2 \_ TO \_ EXP                                | 32               |
+| D3D12 \_ REQ \_ DRAW \_ VERTEX \_ COUNT \_ 2 \_ TO \_ EXP                                      | 32               |
+| D3D12 \_ REQ \_ FILTERING \_ HW \_ ADDRESSABLE \_ RESOURCE \_ DIMENSION                      | 16384            |
+| D3D12 \_ REQ \_ GS \_ INVOCATION \_ 32BIT \_ OUTPUT \_ COMPONENT \_ LIMIT                      | 1024             |
+| CONTEGGIO ELEMENTI DEL BUFFER COSTANTE IMMEDIATO D3D12 \_ REQ \_ \_ \_ \_ \_                          | 4096             |
+| D3D12 \_ REQ \_ MAXANISOTROPY                                                        | 16               |
+| LIVELLI \_ MIP REQ D3D12 \_ \_                                                          | 15               |
+| DIMENSIONI IN BYTE DELLA STRUTTURA A \_ \_ PIÙ \_ ELEMENTI \_ \_ \_ REQ D3D12 \_                           | 2048             |
+| D3D12 \_ REQ \_ RASTERIZER \_ OBJECT \_ COUNT \_ PER \_ DEVICE                               | 4096             |
+| D3D12 \_ REQ \_ RENDER \_ TO \_ BUFFER \_ WINDOW \_ WIDTH                                    | 16384            |
+| D3D12 \_ REQ \_ RESOURCE \_ SIZE \_ IN \_ MEGABYTES \_ EXPRESSION \_ A \_ TERM                   | 128              |
+| D3D12 \_ REQ \_ RESOURCE \_ SIZE \_ IN \_ MEGABYTES \_ EXPRESSION \_ B \_ TERM                   | 0,25f            |
+| D3D12 \_ REQ \_ RESOURCE \_ SIZE \_ IN \_ MEGABYTES \_ EXPRESSION \_ C \_ TERM                   | 2048             |
+| D3D12 \_ REQ \_ RESOURCE \_ VIEW \_ COUNT \_ PER \_ DEVICE \_ 2 \_ TO \_ EXP                       | 20               |
+| D3D12 \_ REQ \_ SAMPLER \_ OBJECT \_ COUNT \_ PER \_ DEVICE                                  | 4096             |
+| RISORSE \_ SECONDARIE REQ D3D12 \_                                                         | 30720            |
+| D3D12 \_ REQ \_ TEXTURE1D \_ ARRAY \_ AXIS \_ DIMENSION                                    | 2048             |
+| DIMENSIONE D3D12 \_ REQ \_ TEXTURE1D \_ U \_                                              | 16384            |
+| D3D12 \_ REQ \_ TEXTURE2D \_ ARRAY \_ AXIS \_ DIMENSION                                    | 2048             |
+| DIMENSIONE D3D12 \_ REQ \_ TEXTURE2D \_ U O \_ \_ V \_                                       | 16384            |
+| DIMENSIONE D3D12 \_ REQ \_ TEXTURE3D \_ U V O \_ \_ \_ W \_                                    | 2048             |
+| DIMENSIONE \_ \_ TEXTURECUBE REQ D3D12 \_                                               | 16384            |
+| ISTRUZIONE RESINFO D3D12 \_ \_ MANCANTE \_ COMPONENTE \_ \_ RETVAL                          | 0                |
+| D3D12 \_ RESOURCE \_ BARRIER \_ ALL \_ SUBRESOURCES                                      | 0xffffffff       |
 | D3D12_RS_SET_SHADING_RATE_COMBINER_COUNT                                         | 2       |
-| \_ \_ Versione principale dello shader \_ D3D12                                                    | 5                |
-| Istanze di D3D12 \_ shader \_ Max \_                                                    | 65535            |
-| \_Interfacce D3D12 shader \_ Max \_                                                   | 253              |
-| \_Siti di chiamata dell'interfaccia D3D12 shader \_ Max \_ \_ \_                                       | 4096             |
-| \_Tipi D3D12 shader \_ Max \_                                                        | 65535            |
-| \_ \_ Versione secondaria di D3D12 \_ shader                                                    | 1                |
-| \_Valore del \_ riquadro dell'istruzione di spostamento D3D12 \_ \_                                            | 0                |
-| \_ \_ \_ \_ Conteggio bit del valore Shift \_ dell'istruzione D3D12 Shift \_                              | 5                |
-| \_ \_ \_ Conteggio destinazione rendering simultaneo D3D12 \_                                       | 8                |
-| \_Allineamento della \_ \_ posizione delle risorse MSAA \_ D3D12 \_ Small                               | 65536            |
-| \_Allineamento della \_ posizione delle risorse D3D12 Small \_ \_                                     | 4096             |
-| D3D12 \_ per \_ buffer \_ - \_ Stride massimo \_ in \_ byte                                        | 2048             |
-| D3D12 \_ \_ in modo \_ da memorizzare la \_ finestra massima di scrittura \_ \_ in \_ byte                                 | 512              |
-| D3D12 in modo da consentire il numero di \_ slot del \_ buffer \_ \_                                                   | 4                |
-| D3D12 in modo che l' \_ \_ indice di registro DDI che \_ \_ \_ denota \_ Gap                                   | 0xFFFFFFFF       |
-| D3D12, \_ quindi \_ nessun \_ flusso rasterizzato \_                                                | 0xFFFFFFFF       |
-| D3D12 \_ quindi \_ \_ conteggio componenti di output \_                                              | 128              |
-| D3D12 \_ il \_ numero di flussi \_                                                         | 4                |
-| D3D12 \_ \_ data specifica \_ giorno                                                           | 14               |
-| \_ \_ Mese data specifica \_ D3D12                                                         | 11               |
-| \_Anno di \_ data \_ specifica D3D12                                                          | 2014             |
-| \_Versione specifica \_ D3D12                                                             | 1.16             |
-| D3D12 \_ sRGB \_ gamma                                                               | 2.2 f             |
-| D3D12 \_ sRGB \_ a \_ float \_ denominatore \_ 1                                           | 12.92 f           |
-| D3D12 \_ sRGB \_ a \_ float \_ denominator \_ 2                                           | 1.055 f           |
-| \_ \_ Esponente D3D12 da sRGB a \_ float \_                                                 | 2.4 f             |
-| \_ \_ Offset da sRGB a \_ float \_ D3D12                                                   | 0.055 f           |
-| D3D12 \_ \_ da sRGB a \_ float \_ soglia                                                | 0.04045 f         |
-| \_Tolleranza D3D12 \_ da sRGB a \_ float \_ \_ in \_ ULP rispetto                                       | 0,5 f             |
-| \_ \_ \_ Conteggio bit componente standard \_ D3D12                                           | 32               |
-| \_ \_ Conteggio bit del componente standard D3D12 \_ \_ \_ raddoppiato                                  | 64               |
-| D3D12 \_ \_ numero massimo \_ di \_ byte di allineamento dell'elemento \_ \_ standard                     | 4                |
-| \_ \_ \_ Conteggio componenti pixel standard \_ D3D12                                         | 128              |
-| \_ \_ \_ Conteggio elementi pixel standard \_ D3D12                                           | 32               |
-| \_ \_ Dimensioni vettoriali standard D3D12 \_                                                    | 4                |
-| \_ \_ \_ Conteggio elementi Vertex Standard \_ D3D12                                          | 32               |
-| \_ \_ \_ \_ Numero totale componenti del vertice standard D3D12 \_                                 | 64               |
-| \_ \_ \_ Conteggio bit frazionari D3D12 subpixel \_                                          | 8                |
-| \_ \_ \_ Conteggio bit frazionari D3D12 sottotexel \_                                          | 8                |
-| \_ \_ \_ \_ \_ Fine valori spazio registro riservato \_ del sistema D3D12                            | 0xFFFFFFFF       |
-| \_ \_ \_ \_ \_ Inizio valori spazio registro riservato \_ sistema D3D12                          | 0xfffffff0       |
-| \_Fattore D3D12 mosaico \_ Max \_ even \_ mosaico \_                              | 64               |
-| D3D12 \_ mosaico \_ - \_ \_ fattore di suddivisione a \_ mosaico \_ densità massima                  | 64               |
-| D3D12 \_ mosaico \_ - \_ fattore di suddivisione a mosaico dispari massimo \_ \_                               | 63               |
-| \_Fattore a \_ \_ mosaico massimo D3D12 mosaico \_                                    | 64               |
-| \_Fattore D3D12 mosaico \_ Min \_ even \_ mosaico \_                              | 2                |
-| D3D12 \_ mosaico \_ - \_ \_ fattore a mosaico densità \_ \_ minimo                  | 1                |
-| D3D12 \_ mosaico \_ - \_ \_ fattore di mosaico strano minimo \_                               | 1                |
-| \_ \_ \_ \_ Conteggio bit intervallo indirizzi Texel \_ D3D12                                         | 16               |
-| \_ \_ \_ Allineamento passo dati trama \_ D3D12                                           | 256              |
-| \_ \_ \_ Allineamento posizionamento dati trama \_ D3D12                                       | 512              |
-| \_ \_ Dimensioni del riquadro delle risorse affiancate D3D12 \_ \_ \_ in \_ byte                                    | 65536            |
-| \_Numero di \_ slot \_ UAV D3D12                                                          | 64               |
-| \_ \_ Risultato dell' \_ accesso alla memoria non associato \_ D3D12                                           | 0                |
-| D3D12 \_ viewport \_ e \_ SCISSORRECT \_ Max \_ index                                    | 15               |
-| \_Viewport D3D12 \_ e \_ \_ Conteggio oggetti \_ SCISSORRECT \_ per \_ pipeline                  | 16               |
-| \_ \_ Massimo limiti del viewport \_ D3D12                                                     | 32767            |
-| \_ \_ Min limiti viewport D3D12 \_                                                     | -32768           |
-| Componenti di D3D12 e di \_ \_ \_ registrazione input \_                                           | 4                |
-| \_ \_ \_ \_ Conteggio bit del componente di \_ registrazione \_ di D3D12 vs input                                | 32               |
-| \_Numero di \_ registri di input \_ \_ e di D3D12 di Visual Studio                                                | 32               |
-| D3D12 \_ e \_ letture del registro di input \_ \_ \_ per \_ inst                                     | 2                |
-| \_Porte di \_ \_ lettura registro \_ \_ di D3D12 e input                                          | 1                |
-| Componenti di D3D12 e di \_ \_ \_ registrazione output \_                                          | 4                |
-| \_ \_ \_ \_ Conteggio bit del componente di \_ registrazione \_ di D3D12 vs output                               | 32               |
-| \_Conteggio del \_ Registro di output \_ \_ di D3D12 vs                                               | 32               |
-| \_ \_ \_ Conteggio del contesto di D3D12 WHQL per il \_ \_ limite di risorse \_                                | 10               |
-| D3D12 \_ WHQL \_ DRAWINDEXED \_ indice \_ numero \_ 2 \_ a \_ Exp                               | 25               |
-| D3D12 \_ WHQL \_ traggono i \_ vertici dal \_ numero \_ 2 \_ a \_ Exp                                     | 25               |
+| VERSIONE PRINCIPALE DELLO SHADER D3D12 \_ \_ \_                                                    | 5                |
+| ISTANZE MAX DELLO SHADER D3D12 \_ \_ \_                                                    | 65535            |
+| D3D12 \_ SHADER \_ MAX \_ INTERFACES                                                   | 253              |
+| SITI DI CHIAMATA DELL'INTERFACCIA D3D12 \_ SHADER \_ MAX \_ \_ \_                                       | 4096             |
+| TIPI D3D12 \_ SHADER \_ \_ MAX                                                        | 65535            |
+| VERSIONE SECONDARIA DELLO SHADER D3D12 \_ \_ \_                                                    | 1                |
+| D3D12 \_ SHIFT \_ INSTRUCTION \_ PAD \_ VALUE                                            | 0                |
+| D3D12 \_ SHIFT \_ INSTRUCTION \_ SHIFT \_ VALUE \_ BIT \_ COUNT                              | 5                |
+| NUMERO DI DESTINAZIONE DI \_ RENDERING SIMULTANEO D3D12 \_ \_ \_                                       | 8                |
+| ALLINEAMENTO DEL POSIZIONAMENTO \_ DELLE RISORSE \_ MSAA \_ \_ DI PICCOLE DIMENSIONI D3D12 \_                               | 65536            |
+| ALLINEAMENTO DEL POSIZIONAMENTO DELLE RISORSE DI \_ \_ PICCOLE DIMENSIONI \_ D3D12 \_                                     | 4096             |
+| D3D12, \_ BUFFER MAX STRIDE IN \_ \_ \_ \_ \_ BYTE                                        | 2048             |
+| D3D12, \_ FINESTRA DI SCRITTURA MASSIMA BUFFER IN \_ \_ \_ \_ \_ \_ BYTE                                 | 512              |
+| D3D12 \_ SO \_ BUFFER \_ SLOT \_ COUNT                                                   | 4                |
+| D3D12 \_ QUINDI \_ DDI REGISTRA IL GAP DI \_ \_ \_ DENOTAZIONE \_ DELL'INDICE                                   | 0xffffffff       |
+| D3D12 \_ QUINDI NESSUN FLUSSO \_ \_ \_ RASTERIZZATO                                                | 0xffffffff       |
+| D3D12 \_ SO \_ OUTPUT \_ COMPONENT \_ COUNT                                              | 128              |
+| D3D12 \_ SO \_ STREAM \_ COUNT                                                         | 4                |
+| D3D12 \_ SPEC \_ DATE \_ DAY                                                           | 14               |
+| D3D12 \_ SPEC \_ DATE \_ MONTH                                                         | 11               |
+| D3D12 \_ SPEC \_ DATE \_ YEAR                                                          | 2014             |
+| VERSIONE SPECIFICA D3D12 \_ \_                                                             | 1.16             |
+| D3D12 \_ SRGB \_ GAMMA                                                               | 2.2f             |
+| DA D3D12 \_ SRGB \_ A \_ FLOAT \_ DENOMINATORE \_ 1                                           | 12.92f           |
+| DA D3D12 \_ SRGB \_ A \_ FLOAT \_ DENOMINATORE \_ 2                                           | 1,055f           |
+| DA D3D12 \_ SRGB \_ A \_ \_ ESPONENTE FLOAT                                                 | 2.4f             |
+| OFFSET DA D3D12 \_ SRGB \_ \_ A FLOAT \_                                                   | 0,055f           |
+| D3D12 \_ SRGB \_ TO \_ FLOAT \_ THRESHOLD                                                | 0,04045f         |
+| TOLLERANZA DA D3D12 \_ SRGB \_ A FLOAT IN \_ \_ \_ \_ ULP                                       | 0,5f             |
+| D3D12 \_ STANDARD \_ COMPONENT \_ BIT \_ COUNT                                           | 32               |
+| D3D12 \_ STANDARD \_ COMPONENT \_ BIT \_ COUNT \_ DOUBLED                                  | 64               |
+| D3D12 \_ STANDARD \_ MAXIMUM \_ ELEMENT \_ ALIGNMENT \_ BYTE \_ MULTIPLE                     | 4                |
+| CONTEGGIO COMPONENTI \_ PIXEL STANDARD D3D12 \_ \_ \_                                         | 128              |
+| NUMERO DI ELEMENTI \_ \_ PIXEL STANDARD \_ D3D12 \_                                           | 32               |
+| DIMENSIONI DEL \_ VETTORE STANDARD D3D12 \_ \_                                                    | 4                |
+| D3D12 \_ STANDARD \_ VERTEX \_ ELEMENT \_ COUNT                                          | 32               |
+| D3D12 \_ STANDARD \_ VERTEX \_ TOTAL \_ COMPONENT \_ COUNT                                 | 64               |
+| D3D12 \_ SUBPIXEL \_ FRACTIONAL \_ BIT \_ COUNT                                          | 8                |
+| D3D12 \_ SUBTEXEL \_ FRACTIONAL \_ BIT \_ COUNT                                          | 8                |
+| D3D12 \_ SYSTEM \_ RESERVED \_ REGISTER \_ SPACE \_ VALUES \_ END                            | 0xffffffff       |
+| D3D12 \_ SYSTEM \_ RESERVED \_ REGISTER \_ SPACE \_ VALUES \_ START                          | 0xfffffff0       |
+| D3D12 \_ TESSELLATOR \_ MAX \_ EVEN \_ TESSELLATION \_ FACTOR                              | 64               |
+| D3D12 \_ TESSELLATOR \_ MAX \_ ISOLINE \_ DENSITY \_ TESSELLATION \_ FACTOR                  | 64               |
+| D3D12 \_ TESSELLATOR \_ MAX \_ ODD \_ TESSELLATION \_ FACTOR                               | 63               |
+| D3D12 \_ TESSELLATOR \_ MAX \_ TESSELLATION \_ FACTOR                                    | 64               |
+| D3D12 \_ TESSELLATOR \_ MIN \_ EVEN \_ TESSELLATION \_ FACTOR                              | 2                |
+| D3D12 \_ TESSELLATOR \_ MIN \_ ISOLINE \_ DENSITY \_ TESSELLATION \_ FACTOR                  | 1                |
+| D3D12 \_ TESSELLATOR \_ MIN \_ ODD \_ TESSELLATION \_ FACTOR                               | 1                |
+| NUMERO DI BIT DELL'INTERVALLO DI \_ INDIRIZZI TEXEL D3D12 \_ \_ \_ \_                                         | 16               |
+| ALLINEAMENTO DEL PASSO DEI DATI DELLA TRAMA D3D12 \_ \_ \_ \_                                           | 256              |
+| ALLINEAMENTO DEL POSIZIONAMENTO \_ DEI DATI \_ DELLA TRAMA \_ D3D12 \_                                       | 512              |
+| DIMENSIONI DEL RIQUADRO DELLA RISORSA AFFIANCATA D3D12 \_ \_ IN \_ \_ \_ \_ BYTE                                    | 65536            |
+| NUMERO DI \_ SLOT UAV D3D12 \_ \_                                                          | 64               |
+| RISULTATO DELL'ACCESSO ALLA MEMORIA NON ASSOCIATO D3D12 \_ \_ \_ \_                                           | 0                |
+| VIEWPORT D3D12 \_ \_ E \_ SCISSORRECT \_ MAX \_ INDEX                                    | 15               |
+| CONTEGGIO OGGETTI \_ VIEWPORT \_ E \_ SCISSORRECT \_ \_ \_ D3D12 PER \_ PIPELINE                  | 16               |
+| D3D12 \_ VIEWPORT \_ BOUNDS \_ MAX                                                     | 32767            |
+| D3D12 \_ VIEWPORT \_ BOUNDS \_ MIN                                                     | -32768           |
+| COMPONENTI DEL REGISTRO DI INPUT D3D12 \_ \_ E DI \_ \_ INPUT                                           | 4                |
+| D3D12 \_ VS \_ INPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                                | 32               |
+| D3D12 \_ VS \_ INPUT \_ REGISTER \_ COUNT                                                | 32               |
+| D3D12 \_ VS \_ INPUT \_ REGISTER \_ READS \_ PER \_ INST                                     | 2                |
+| PORTE DI LETTURA DEL REGISTRO DI INPUT D3D12 \_ \_ E DI \_ \_ \_ INPUT                                          | 1                |
+| COMPONENTI DEL REGISTRO DI OUTPUT DI D3D12 \_ \_ VS \_ \_                                          | 4                |
+| D3D12 \_ VS \_ OUTPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                               | 32               |
+| D3D12 \_ VS \_ OUTPUT \_ REGISTER \_ COUNT                                               | 32               |
+| D3D12 \_ WHQL \_ CONTEXT \_ COUNT \_ FOR \_ RESOURCE \_ LIMIT                                | 10               |
+| D3D12 \_ WHQL \_ DRAWINDEXED \_ INDEX \_ COUNT \_ 2 \_ TO \_ EXP                               | 25               |
+| D3D12 \_ WHQL \_ DRAW \_ VERTEX \_ COUNT \_ 2 \_ TO \_ EXP                                     | 25               |
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D12.h</dt> </dl> |
 
 
 
@@ -443,10 +443,10 @@ Le costanti seguenti sono dichiarate in d3d12. h, per l'uso da parte di un titol
 
 <dl> <dt>
 
-[Riferimento principale](direct3d-12-core-reference.md)
+[Informazioni di riferimento di base](direct3d-12-core-reference.md)
 </dt> <dt>
 
-[Guida di riferimento a Direct3D 12](direct3d-12-reference.md)
+[Informazioni di riferimento su Direct3D 12](direct3d-12-reference.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CCritSec.CCritSec : metodo costruttore.'
+description: 'Costruttore CCritSec.CCritSec : metodo del costruttore.'
 ms.assetid: e8e9138a-6c39-41de-a7f8-d9e9c4fe5ab6
 title: Costruttore CCritSec.CCritSec (Wxutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de2b852ffc9a12622a4560ae834a3347b1e07552
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9fce4cb5edb9765e7f69726188e5ed0ba2017df7d6fa90cae0bfa059b89fc939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688991"
 ---
 # <a name="ccritsecccritsec-constructor"></a>Costruttore CCritSec.CCritSec
 
@@ -50,7 +50,7 @@ Questo metodo chiama la [**funzione InitializeCriticalSection**](/windows/deskto
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

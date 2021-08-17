@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI PrinterDriver Win32 rappresenta i driver per un' \_ istanza di stampante Win32.
+description: La classe \_ WMI Win32 PrinterDriver rappresenta i driver per un'istanza della stampante \_ Win32.
 ms.assetid: baf48bbf-60a3-4d9b-93b7-c1b22518a9c1
 ms.tgt_platform: multiple
-title: Classe Win32_PrinterDriver
+title: Win32_PrinterDriver classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -36,18 +36,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 615d6561e12f67edee34e0de84dade12f250e0f0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f28958436ba7ff87aed139bf58129f028c5c3e008f8cc0f291bc3b37091fc5d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971871"
 ---
-# <a name="win32_printerdriver-class"></a>Win32 \_ PrinterDriver (classe)
+# <a name="win32_printerdriver-class"></a>Classe PrinterDriver Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) **\_ PrinterDriver Win32** rappresenta i driver per un'istanza di [**\_ stampante Win32**](win32-printer.md) .
+La classe [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 PrinterDriver** rappresenta i driver per un'istanza [**della stampante Win32. \_**](win32-printer.md)
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le proprietà ereditate, ma esclude i metodi. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi in questo argomento.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate, ma esclude i metodi. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi in questo argomento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,21 +81,21 @@ class Win32_PrinterDriver : CIM_Service
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ PrinterDriver** presenta questi tipi di membri:
+La **classe \_ PrinterDriver Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ PrinterDriver** presenta questi metodi.
+La **classe \_ PrinterDriver Win32** include questi metodi.
 
 
 
 | Metodo                                                                           | Descrizione                              |
 |:---------------------------------------------------------------------------------|:-----------------------------------------|
-| [**AddPrinterDriver**](addprinterdriver-method-in-class-win32-printerdriver.md) | Crea un nuovo driver della stampante.<br/> |
-| [**StartService**](startservice-method-in-class-win32-printerdriver.md)         | Avvia il servizio di stampa.<br/>         |
+| [**Addprinterdriver**](addprinterdriver-method-in-class-win32-printerdriver.md) | Crea un nuovo driver della stampante.<br/> |
+| [**Startservice**](startservice-method-in-class-win32-printerdriver.md)         | Avvia il servizio di stampa.<br/>         |
 | [**StopService**](stopservice-method-in-class-win32-printerdriver.md)           | Arresta il servizio di stampa.<br/>          |
 
 
@@ -104,38 +104,38 @@ La classe **Win32 \_ PrinterDriver** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ PrinterDriver** dispone di queste proprietà.
+La **classe \_ PrinterDriver Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descrizione dell'oggetto, ovvero una stringa a una riga.
+Breve descrizione dell'oggetto, ovvero una stringa di una riga.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigFile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-File di configurazione per il driver della stampante.
+File di configurazione per questo driver della stampante.
 
 Esempio: "pscrptui.dll"
 
@@ -144,58 +144,58 @@ Esempio: "pscrptui.dll"
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome classe")
+Qualificatori: [**CIM \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Class Name")
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di un'istanza di. Se utilizzata con le altre proprietà chiave di questa classe, questa proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave di questa classe, questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
 
 </dd> <dt>
 
-**DataFile**
+**Datafile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) (CIM \_ DataFile. FileName)
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) (CIM \_ DataFile.FileName)
 </dt> </dl>
 
 File di dati per questo driver della stampante.
 
-Esempio: "qms810. PPD"
+Esempio: "qms810.ppd"
 
 </dd> <dt>
 
 **DefaultDataType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di dati predefinito per il driver della stampante.
+Tipo di dati predefinito per questo driver della stampante.
 
 Esempio: "EMF"
 
 </dd> <dt>
 
-**DependentFiles**
+**File dipendenti**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -208,7 +208,7 @@ Matrice di file dipendenti per questo driver della stampante.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -219,20 +219,20 @@ Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description
 
 Commento che descrive il collegamento.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DriverPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) (CIM \_ DataFile. Path)
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) (CIM \_ DataFile.Path)
 </dt> </dl>
 
 Percorso del driver della stampante.
@@ -241,117 +241,117 @@ Esempio: "C: \\ \\ drivers \\ \\pscript.dll"
 
 </dd> <dt>
 
-**FilePath**
+**Filepath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Percorso del file INF utilizzato.
+Percorso del file INF in uso.
 
-Esempio: "c: \\ \\ temp \\ \\ driver"
+Esempio: "c: \\ \\ driver \\ \\ temporaneo"
 
 </dd> <dt>
 
-**HelpFile**
+**Helpfile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-File della Guida per il driver della stampante.
+File della Guida per questo driver della stampante.
 
-Esempio: "PSCRPTUI. hlp"
+Esempio: "pscrptui.hlp"
 
 </dd> <dt>
 
 **InfName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Nome del file INF utilizzato. Per impostazione predefinita, viene utilizzato un file INF della stampante fornito dal sistema operativo. Se il driver viene fornito direttamente dal produttore della stampante e non dal sistema operativo, viene utilizzato un nome file diverso.
+Nome del file INF in uso. Per impostazione predefinita, viene utilizzato un file INF della stampante fornito dal sistema operativo. Se il driver viene fornito direttamente dal produttore della stampante e non dal sistema operativo, viene utilizzato un nome file diverso.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MonitorName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del monitoraggio del driver della stampante.
+Nome del monitor per questo driver della stampante.
 
-Esempio: "monitoraggio PJL"
+Esempio: "Monitoraggio PJL"
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](../wmisdk/key-qualifier.md)
+Qualificatori: [ **Chiave**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
-Nome del driver per la stampante. Si tratta di una chiave composta costituita dai valori **Name**, **Version** e **SupportedPlatform** .
+Nome del driver per questa stampante. Si tratta di una chiave composta composta dai **valori Name,** **Version** e **SupportedPlatform.**
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) ed esegue l'override della definizione del **nome** in tale classe.
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) ed esegue l'override della **definizione Name** in tale classe.
 
 </dd> <dt>
 
 **OEMUrl**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Collegamento World Wide Web (WWW) al sito Web del produttore della stampante. Si noti che questa proprietà non viene popolata quando viene utilizzato il file Win32. inf ed è applicabile solo ai driver forniti direttamente dal produttore.
+World Wide Web collegamento (WWW) al sito Web del produttore della stampante. Si noti che questa proprietà non viene popolata quando viene usato il file Win32.inf ed è applicabile solo ai driver forniti direttamente dal produttore.
 
 </dd> <dt>
 
 **Avviato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -360,44 +360,44 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Started")
 </dt> </dl>
 
-Se **true**, il servizio viene avviato. Se **false**, il servizio viene arrestato.
+Se **TRUE,** il servizio viene avviato. Se **FALSE,** il servizio viene arrestato.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
 **Modalità avvio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("modalità di avvio")
+Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Modalità di avvio")
 </dt> </dl>
 
-La modalità di avvio del servizio viene avviata automaticamente da un sistema operativo o viene avviata solo quando richiesto.
+La modalità di avvio del servizio viene avviata automaticamente da un sistema operativo o solo quando richiesto.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM. \_**](cim-service.md)
 
 Di seguito sono indicati i valori possibili:
 
-<dl> <dd>Automatica</dd> <dd>Manuale</dd> </dl>
+<dl> <dd>"Automatico"</dd> <dd>"Manuale"</dd> </dl>
 
 <dt>
 
 <span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span>
 
-**Automatico** ("automatico")
+**Automatico** ("Automatico")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>
 
-**Manuale** ("manuale")
+**Manuale** ("Manuale")
 
 
 </dt> <dd></dd> </dl>
@@ -407,18 +407,18 @@ Di seguito sono indicati i valori possibili:
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -433,77 +433,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -513,13 +513,13 @@ Ridotto **("danneggiato"** )
 **SupportedPlatform**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Ambienti operativi per i quali il driver è destinato.
+Ambienti operativi a cui è destinato il driver.
 
 Esempio: "Windows NT x86".
 
@@ -528,46 +528,46 @@ Esempio: "Windows NT x86".
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome classe di sistema ")
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**SISTEMA CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
 </dt> </dl>
 
 Nome della classe di creazione del sistema di ambito.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**Nome**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome sistema ")
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**SISTEMA CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
 </dt> </dl>
 
-Nome del sistema che ospita il servizio.
+Nome del sistema che ospita questo servizio.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Versione del sistema operativo per il driver della stampante.
@@ -589,17 +589,17 @@ Win2k
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ PrinterDriver** deriva dal [**\_ servizio CIM**](cim-service.md) che deriva da [**CIM \_ LogicalElement**](cim-logicalelement.md).
+La **classe \_ PrinterDriver Win32** deriva dal [**servizio CIM \_**](cim-service.md) che deriva da [**CIM \_ LogicalElement.**](cim-logicalelement.md)
 
 Gli utenti possono disinstallare un driver della stampante eliminando un'istanza corrispondente di questa classe. A tale scopo, il processo chiamante deve avere il privilegio **SeLoadDriverPrivilege** impostato per eliminare un'istanza di questa classe.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Manage Printer and Printer Drivers](https://Gallery.TechNet.Microsoft.Com/710bb2ad-9a8d-42cb-b142-cda2c1452548) VBScript gestisce i driver della stampante e le porte della stampante.
+[L'esempio VBScript Manage Printer and Printer Drivers](https://Gallery.TechNet.Microsoft.Com/710bb2ad-9a8d-42cb-b142-cda2c1452548) gestisce i driver della stampante e le porte della stampante.
 
-La seguente [discussione sui forum TechNet](https://social.technet.microsoft.com/Forums/scriptcenter/6210fa0b-0c32-4bce-a79c-dfe835922613/create-printers-in-powershell-with-wmi-win32printer-createinstance?forum=ITCG) descrive come creare una stampante e caricare i driver da un server.
+La discussione [seguente nei forum TechNet](https://social.technet.microsoft.com/Forums/scriptcenter/6210fa0b-0c32-4bce-a79c-dfe835922613/create-printers-in-powershell-with-wmi-win32printer-createinstance?forum=ITCG) descrive come creare una stampante e caricare i driver da un server.
 
-Nell'esempio VBScript seguente sono elencati tutti i driver della stampante installati in un computer.
+L'esempio DI VBScript seguente elenca tutti i driver della stampante installati in un computer.
 
 
 ```VB
@@ -636,7 +636,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -645,10 +645,10 @@ Next
 
 <dl> <dt>
 
-[**\_Servizio CIM**](./cim-service.md)
+[**Servizio \_ CIM**](./cim-service.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

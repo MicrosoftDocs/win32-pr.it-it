@@ -1,7 +1,7 @@
 ---
-description: Ottiene un elenco di \_ istanze di CompatibilityVector MSVM che possono essere usate per verificare la compatibilità della macchina virtuale (VM) con l'host.
+description: Ottiene un elenco di istanze di Msvm CompatibilityVector che possono essere usate per verificare la compatibilità tra macchine virtuali \_ e host.
 ms.assetid: 3881D9A0-07C2-4275-925D-F3C3A36B79B4
-title: 'Metodo Msvm_VirtualSystemMigrationService:: GetSystemCompatibilityVectors'
+title: Msvm_VirtualSystemMigrationService::GetSystemCompatibilityVectors
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8ef8a374d992468247f6dc8f914d7252e7cd2829
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19eb9fe54c9a20e635d706eff9b22eb0e78cb8347b27fcdcaff0f419e60a6112
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119427661"
 ---
-# <a name="msvm_virtualsystemmigrationservicegetsystemcompatibilityvectors-method"></a>\_Metodo MSVM VirtualSystemMigrationService:: GetSystemCompatibilityVectors
+# <a name="msvm_virtualsystemmigrationservicegetsystemcompatibilityvectors-method"></a>Metodo Msvm \_ VirtualSystemMigrationService::GetSystemCompatibilityVectors
 
-Ottiene un elenco di istanze di [**\_ CompatibilityVector MSVM**](msvm-compatibilityvector.md) che possono essere usate per verificare la compatibilità della macchina virtuale (VM) con l'host.
+Ottiene un elenco di [**istanze di Msvm \_ CompatibilityVector**](msvm-compatibilityvector.md) che possono essere usate per verificare la compatibilità tra macchine virtuali e host.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ uint32 GetSystemCompatibilityVectors(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a una classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) che rappresenta la macchina virtuale per cui recuperare i vettori di compatibilità. Se questo parametro fa riferimento al sistema del computer host, i dati restituiti nel parametro *CompatibilityVectors* possono essere usati per determinare se è possibile eseguire rapidamente la migrazione di una o più macchine virtuali nel computer host a un altro computer host.
+Riferimento a una classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) che rappresenta la macchina virtuale per cui recuperare i vettori di compatibilità. Se questo parametro fa riferimento al sistema del computer di hosting, i dati restituiti nel parametro *CompatibilityVectors* possono essere usati per determinare se è possibile eseguire rapidamente la migrazione di una delle macchine virtuali nel sistema del computer host a un altro sistema di computer host.
 
 </dd> <dt>
 
-*CompatibilityVectors* \[ out\]
+*CompatibilityVectors* \[ Cambio\]
 </dt> <dd>
 
-Matrice di istanze [**di \_ CompatibilityVector MSVM**](msvm-compatibilityvector.md) che contengono le informazioni sulla compatibilità per le macchine virtuali o il computer host.
+Matrice di istanze [**di Msvm \_ CompatibilityVector**](msvm-compatibilityvector.md) che contengono le informazioni di compatibilità per le macchine virtuali o il sistema del computer di hosting.
 
 </dd> </dl>
 
@@ -63,10 +63,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -101,7 +101,7 @@ Il **sistema è in uso** (32774)
 
 ## <a name="remarks"></a>Commenti
 
-**GetSystemCompatibilityVectors** ottiene le informazioni sulla compatibilità per una macchina virtuale (VM) (quando viene eseguita in un computer VM) o un host (quando viene eseguito in un computer host). Le informazioni sulla compatibilità rimangono opache per il client mentre le informazioni consentono di confrontare le informazioni di compatibilità dell'host con quelle della macchina virtuale.
+**GetSystemCompatibilityVectors** ottiene informazioni di compatibilità per una macchina virtuale (VM) (se eseguita in un sistema di computer vm) o un host (quando viene eseguita in un sistema di computer host). Le informazioni di compatibilità rimangono opache rispetto al client, mentre le informazioni forniscono un modo per confrontare le informazioni di compatibilità dell'host con quella della macchina virtuale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,10 +109,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Virtualizzazione \\ radice \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,10 +121,10 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_CompatibilityVector MSVM**](msvm-compatibilityvector.md)
+[**Msvm \_ CompatibilityVector**](msvm-compatibilityvector.md)
 </dt> <dt>
 
-[**\_VirtualSystemMigrationService MSVM**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetLanguageID
 ms.assetid: 4e4e5342-edf9-480b-a9c3-e2626fd89e76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d847bf392709b2433b045a357a703173e2de454
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: fb0eeee052111ef0acbb843f4362ca0bfd3b40ab7d154ef0c46c43f6c2d0e0f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105549"
 ---
 # <a name="iagentcharacterexgetlanguageid"></a>IAgentCharacterEx::GetLanguageID
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetLanguageID(
@@ -34,13 +34,13 @@ Indirizzo di una variabile che riceve l'impostazione dell'ID lingua per il carat
 
 </dd> </dl>
 
-Valore Long integer che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID lingua primaria e un ID lingua secondaria. Gli esempi seguenti sono valori per alcuni linguaggi. Per determinare i valori di altri linguaggi, vedere la documentazione di Platform SDK.
+Valore Long integer che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID lingua primaria e un ID lingua secondaria. Gli esempi seguenti sono i valori per alcuni linguaggi. Per determinare i valori in altri linguaggi, vedere la documentazione di Platform SDK.
 
 
 
-| Lingua              | ID     | Lingua              | ID     |
+| Linguaggio              | ID     | Linguaggio              | ID     |
 |-----------------------|--------|-----------------------|--------|
-| Arabo (Saudita)        | 0x0401 | Italiano               | 0x0410 |
+| Arabo (Arabo)        | 0x0401 | Italiano               | 0x0410 |
 | Basco                | 0x042d | Giapponese              | 0x0411 |
 | Cinese (semplificato)  | 0x0804 | Coreano                | 0x0412 |
 | Cinese (tradizionale) | 0x0404 | Norvegese             | 0x0414 |
@@ -61,20 +61,20 @@ Valore Long integer che specifica l'ID lingua per il carattere. L'ID lingua (LAN
 
  
 
-Se non si imposta questo ID lingua per il carattere, l'ID lingua del carattere sarà l'ID lingua di sistema corrente.
+Se non si imposta questo ID lingua per il carattere, l'ID lingua del carattere sarà l'ID lingua del sistema corrente.
 
 Questa impostazione determina anche la lingua per l'output TTS, il testo del fumetto, i comandi nel menu a comparsa del carattere e il motore di riconoscimento vocale. Per determinare se è disponibile un motore di riconoscimento vocale compatibile per la lingua del carattere, usare [**IAgentCharacterEx::GetSRModeID**](iagentcharacterex--getsrmodeid.md) o [**IAgentCharacterEx::GetTTSModeID**](iagentcharacterex--getttsmodeid.md).
 
-Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. L'impostazione non influisce su altri client del carattere o di altri caratteri dell'applicazione client.
 
 > [!Note]  
-> Se l'ID lingua è impostato su una lingua che supporta il testo bidirezionale (ad esempio arabo o ebraico), ma nel sistema che esegue l'applicazione non è installato il supporto bidirezionale, il testo verrà visualizzato nel fumetto della parola in ordine logico anziché di visualizzazione.
+> Se l'ID lingua è impostato su una lingua che supporta testo bidirezionale (ad esempio arabo o ebraico), ma nel sistema che esegue l'applicazione non è installato il supporto bidirezionale, il testo verrà visualizzato nel fumetto delle parole in ordine logico anziché in ordine di visualizzazione.
 
  
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCharacterEx:SetLanguageID,**](iagentcharacterex--setlanguageid.md) [**IAgentCharacterEx::GetSRModeID,**](iagentcharacterex--getsrmodeid.md) [**IAgentCharacterEx::GetTTSModeID**](iagentcharacterex--getttsmodeid.md)
+[**IAgentCharacterEx:SetLanguageID**](iagentcharacterex--setlanguageid.md), [**IAgentCharacterEx::GetSRModeID**](iagentcharacterex--getsrmodeid.md), [**IAgentCharacterEx::GetTTSModeID**](iagentcharacterex--getttsmodeid.md)
 
 
  

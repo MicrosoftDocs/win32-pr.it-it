@@ -4,12 +4,12 @@ ms.assetid: 5a710c2d-ab79-4376-88be-26931346f116
 title: System.Media.ThumbnailLargePath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2bd17e148e25d84b254b18f347cff2a8b288554
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 8777fbb81b05a7115d9c919845beae0c1bd5e95b6788a8b6fb057673b932c5a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457281"
 ---
 # <a name="systemmediathumbnaillargepath"></a>System.Media.ThumbnailLargePath
 

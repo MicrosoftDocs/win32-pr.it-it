@@ -1,17 +1,17 @@
 ---
-description: System.Media.Publisher
+description: Oggetto System.Media. Publisher
 ms.assetid: 64de54af-6900-4361-a7b5-f29fbd5cd0e0
-title: System.Media.Publisher
+title: Oggetto System.Media. Publisher
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a03f4bdb89f10c35f9837b28f20e8d5f62d11b55
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6688102cbe6729e2f25ccabc71251e6d2877a9406ff8eb0d147000df31b7c698
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090931"
 ---
-# <a name="systemmediapublisher"></a>System.Media.Publisher
+# <a name="systemmediapublisher"></a>Oggetto System.Media. Publisher
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 

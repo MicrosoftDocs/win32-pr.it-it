@@ -1,10 +1,10 @@
 ---
-title: Attributo PKI-registrazione-accesso
-description: L'attributo PKI-registrazione-accesso è solo per uso interno.
+title: Attributo PKI-Enrollment-Access
+description: L'attributo PKI-Enrollment-Access è solo per uso interno.
 ms.assetid: 09eab075-71a5-4a38-af34-dafedca9c2c6
 ms.tgt_platform: multiple
 keywords:
-- Infrastruttura a chiave pubblica-schema AD dell'attributo di accesso
+- Schema AD dell'attributo PKI-Enrollment-Access
 - Schema AD dell'attributo pKIEnrollmentAccess
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f974e1072810b902fa42d30f067a67e22236ca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7af4331d5ed5069448848ba56cd331251eb055c10767f4b63d0b581da98f35fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923881"
 ---
-# <a name="pki-enrollment-access-attribute"></a>Attributo PKI-registrazione-accesso
+# <a name="pki-enrollment-access-attribute"></a>Attributo PKI-Enrollment-Access
 
-L'attributo **PKI-registrazione-accesso** è solo per uso interno.
+**L'attributo PKI-Enrollment-Access** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------|
-| CN                | PKI-registrazione-accesso                               |
-| LDAP-Display-Name | pKIEnrollmentAccess                                 |
+| CN                | PKI-Enrollment-Access                               |
+| Ldap-Display-Name | pKIEnrollmentAccess                                 |
 | Dimensione              | \-                                                  |
-| Privilegio aggiornamento  | \-                                                  |
+| Privilegio di aggiornamento  | \-                                                  |
 | Frequenza di aggiornamento  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1335                             |
-| System-ID-GUID    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
+| System-Id-Guid    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
 | Sintassi            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **PKI-registrazione-accesso** è solo per uso interno.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

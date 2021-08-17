@@ -7,20 +7,20 @@ keywords:
 - Enumerazione di oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c26b78f084f95ac59c909b326be10d42c4a6696a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d8e4bcead2d3fc8f98daeada89cdd10b3ad30bed855563efd89b3eebce8995f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961950"
 ---
 # <a name="enumerating-objects"></a>Enumerazione di oggetti
 
-Per visualizzare l'oggetto figlio di un contenitore, ad esempio un'unità organizzativa, enumerare l'oggetto contenitore. Per eseguire un'analogia a una file system, l'oggetto figlio corrisponderebbe ai file nella directory, mentre il contenitore, che è l'oggetto padre, corrisponderebbe alla directory stessa. È anche possibile usare l'operazione enumerate quando si desidera ottenere l'oggetto padre di un oggetto.
+Per visualizzare l'oggetto figlio di un contenitore, ad esempio un'unità organizzativa, enumerare l'oggetto contenitore. Per fare un'analogia con un file system, l'oggetto figlio corrisponderebbe ai file nella directory, mentre il contenitore, che è l'oggetto padre, corrisponderebbe alla directory stessa. È anche possibile usare l'operazione di enumerazione quando si desidera ottenere l'oggetto padre di un oggetto .
 
-Quando si enumera un oggetto, in realtà si esegue l'associazione a un oggetto nella directory e viene restituita un'interfaccia [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) per ogni oggetto.
+Quando si enumera un oggetto, si esegue effettivamente l'associazione a un oggetto nella directory e viene restituita [**un'interfaccia IAD**](/windows/desktop/api/Iads/nn-iads-iads) per ogni oggetto.
 
-Nell'esempio di codice riportato di seguito viene illustrato come enumerare gli elementi figlio di un contenitore.
+Nell'esempio di codice seguente viene illustrato come enumerare gli elementi figlio di un contenitore.
 
 
 ```VB
@@ -43,7 +43,7 @@ Cleanup:
 
 
 
-È possibile filtrare i tipi di oggetti restituiti dall'enumerazione. Per visualizzare, ad esempio, solo gli utenti e i gruppi, usare l'esempio di codice seguente prima dell'enumerazione.
+È possibile filtrare i tipi di oggetti restituiti dall'enumerazione . Ad esempio, per visualizzare solo utenti e gruppi, usare l'esempio di codice seguente prima dell'enumerazione .
 
 
 ```VB
@@ -52,7 +52,7 @@ Ou.Filter = Array("user", "group")
 
 
 
-Se si dispone di un riferimento a un oggetto, è possibile ottenere l'elemento padre dell'oggetto utilizzando la proprietà [**padre**](iads-property-methods.md) [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) . Nell'esempio di codice riportato di seguito viene illustrato come eseguire l'associazione all'oggetto padre.
+Se si dispone di un riferimento a un oggetto, è possibile ottenere l'elemento padre dell'oggetto usando la [**proprietà padre IADs.**](/windows/desktop/api/Iads/nn-iads-iads) [](iads-property-methods.md) Nell'esempio di codice seguente viene illustrato come eseguire l'associazione all'oggetto padre.
 
 
 ```VB
@@ -62,7 +62,7 @@ Set parent = GetObject(parentPath)
 
 
 
-Per ulteriori informazioni, vedere [enumerazione di oggetti ADSI](enumerating-adsi-objects.md).
+Per altre informazioni, vedere [Enumerazione di oggetti ADSI.](enumerating-adsi-objects.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -71,9 +71,9 @@ Per ulteriori informazioni, vedere [enumerazione di oggetti ADSI](enumerating-ad
 [Ricerca di oggetti](searching-for-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

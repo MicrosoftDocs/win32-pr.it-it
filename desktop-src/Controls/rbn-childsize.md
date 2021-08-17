@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica RBN_CHILDSIZE (COMmctrl. h)
-description: Inviato da un controllo Rebar quando la finestra figlio di una banda viene ridimensionata. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: RBN_CHILDSIZE di notifica (Commctrl.h)
+description: Inviato da un controllo Rebar quando viene ridimensionata la finestra figlio di una banda. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: ba64d21a-e568-4894-8007-be644ae4f54a
 keywords:
-- Controlli di Windows per il codice di notifica RBN_CHILDSIZE
+- RBN_CHILDSIZE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d505d13048d96783d53b9b1a821d80712597da4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3450b0c94d4c625d866a25fb5d319b2f0957bef58c6e46296a498ecf3803f764
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985281"
 ---
-# <a name="rbn_childsize-notification-code"></a>\_Codice di notifica CHILDSIZE di RBN
+# <a name="rbn_childsize-notification-code"></a>Codice di notifica \_ RBN CHILDSIZE
 
-Inviato da un controllo Rebar quando la finestra figlio di una banda viene ridimensionata. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo Rebar quando viene ridimensionata la finestra figlio di una banda. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ RBN_CHILDSIZE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMREBARCHILDSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchildsize) contenente informazioni sul codice di notifica.
+Puntatore a [**una struttura NMREBARCHILDSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchildsize) che contiene informazioni sul codice di notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

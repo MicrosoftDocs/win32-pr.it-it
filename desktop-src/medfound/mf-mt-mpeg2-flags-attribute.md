@@ -1,19 +1,19 @@
 ---
-description: Contiene i flag varie per un tipo di supporto video MPEG-2.
+description: Contiene flag vari per un tipo di supporto video MPEG-2.
 ms.assetid: 2e1bf3e3-c005-418b-b9fd-1d43c42dad6f
-title: Attributo MF_MT_MPEG2_FLAGS (Mfapi. h)
+title: MF_MT_MPEG2_FLAGS attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2ef0a0def9c3e5413ec9b9bf7568fcbe9add851
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a8cd73616edff4e9b35f7c082b9bdec3b8932a5bd5ce862a7c62d77f9041b9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104427"
 ---
-# <a name="mf_mt_mpeg2_flags-attribute"></a>\_ \_ Attributo flag MPEG2 MF mt \_
+# <a name="mf_mt_mpeg2_flags-attribute"></a>Attributo \_ MF MT \_ MPEG2 \_ FLAGS
 
-Contiene i flag varie per un tipo di supporto video MPEG-2.
+Contiene flag vari per un tipo di supporto video MPEG-2.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Contiene i flag varie per un tipo di supporto video MPEG-2.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **dwFlags** della struttura [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) . Per un elenco dei flag validi, vedere la documentazione relativa a **MPEG2VIDEOINFO**.
+Questo attributo corrisponde al **membro dwFlags** della [**struttura MPEG2VIDEOINFO.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) Per un elenco di flag validi, vedere la documentazione di **MPEG2VIDEOINFO**.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo IndexSegment. GetHashCode'
-title: Metodo IndexSegment. GetHashCode
+description: Altre informazioni sul metodo IndexSegment.GetHashCode
+title: Metodo IndexSegment.GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.IndexSegment.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a23cfa34e167d43dfe5987525f7f33d57ba62062
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae34648ff1cdd8861270b4e0dd83d9e655df3e750ef7d436704416b3381c7e2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093621"
 ---
-# <a name="indexsegmentgethashcode-method"></a>Metodo IndexSegment. GetHashCode
+# <a name="indexsegmentgethashcode-method"></a>Metodo IndexSegment.GetHashCode
 
 Restituisce il codice hash per l'istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Codice hash per l'istanza.  
 
 ## <a name="see-also"></a>Vedi anche
@@ -65,6 +65,6 @@ Codice hash per l'istanza.
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Membri di IndexSegment](./indexsegment-members.md)
+[Membri indexSegment](./indexsegment-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,21 +4,21 @@ description: Esempi che illustrano come ottenere un elenco di heap per il proces
 ms.assetid: cfa1d2a4-fec0-4089-9351-e0a26f9ecfe3
 ms.topic: article
 ms.date: 03/23/2021
-ms.openlocfilehash: 5cc555f9a94166fa181309985d8a49c686baf06c
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 868526c76ee85095f5b52cc9238e9e16015bfb3a81c9888da148f1d5ecc644aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "106334294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119419251"
 ---
 # <a name="traversing-the-heap-list"></a>Attraversamento dell'elenco di heap
 
-Nell'esempio seguente viene ottenuto un elenco di heap per il processo corrente. Acquisisce uno snapshot degli heap usando la funzione [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) e quindi esamina l'elenco usando le funzioni [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst) e [**Heap32ListNext**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext) . Per ogni heap, USA le funzioni [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) per esaminare i blocchi dell'heap.
+Nell'esempio seguente viene ottenuto un elenco di heap per il processo corrente. Crea uno snapshot degli heap usando la funzione [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) e quindi illustra l'elenco usando le funzioni [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst) e [**Heap32ListNext.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext) Per ogni heap, usa le funzioni [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) per eseguire il percorso dei blocchi heap.
 
 > [!NOTE]
-> [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) sono inefficienti, in particolare per gli heap di grandi dimensioni. Tuttavia, sono utili per eseguire query in altri processi in cui in genere è necessario inserire un thread nell'altro processo per raccogliere le informazioni. queste API eseguono questa operazione.
+> [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) sono inefficienti, in particolare per heap di grandi dimensioni. Tuttavia, sono utili per l'esecuzione di query su altri processi in cui in genere è necessario inserire un thread nell'altro processo per raccogliere le informazioni (queste API lo fanno automaticamente).
 
-Vedere il secondo esempio per un'alternativa equivalente, molto più efficiente, che usa [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) anziché [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next). Si noti che [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) può essere usato solo per lo stesso processo.
+Vedere il secondo esempio per un'alternativa equivalente, molto più efficiente, che usa [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) anziché [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) [**e Heap32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) Si noti [**che HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) può essere usato solo per lo stesso processo.
 
 ```C++
 #include <windows.h>
@@ -68,7 +68,7 @@ int main( void )
 }
 ```
 
-Il frammento di codice seguente usa la funzione [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) per esaminare gli heap del processo, producendo un output identico all'esempio precedente, ma in modo molto più efficiente:
+Il frammento di codice seguente usa la funzione [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) per tracciare gli heap dei processi, producendo un output identico all'esempio precedente, ma molto più efficiente:
 
 ```C++
 #include <windows.h>
@@ -118,7 +118,7 @@ int main( void )
 }
 ```
 
-L'analisi di un heap con la funzione [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) è approssimativamente lineare nelle dimensioni dell'heap, mentre l'esplorazione di un heap con la funzione [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) è approssimativamente quadratica nelle dimensioni dell'heap.
-Anche per un heap modesto con allocazioni di 10.000, [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) esegue 10.000 volte più velocemente rispetto a [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) e fornisce informazioni più dettagliate. La differenza nelle prestazioni diventa ancora più drammatica Man mano che aumentano le dimensioni dell'heap.
+L'analisi di un heap con la funzione [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) è approssimativamente lineare nelle dimensioni dell'heap, mentre l'analisi di un heap con la funzione [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) è approssimativamente quadratica nelle dimensioni dell'heap.
+Anche per un heap modere con 10.000 allocazioni, [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) viene eseguito 10.000 volte più veloce di [**Heap32Next,**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) fornendo al tempo stesso informazioni più dettagliate. La differenza di prestazioni diventa ancora più significativa con l'aumentare delle dimensioni dell'heap.
 
-Per un esempio più dettagliato di analisi dell'heap con la funzione [**HEAPWALK**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) , vedere [enumerazione di un heap](/windows/win32/memory/enumerating-a-heap).
+Per un esempio più dettagliato dell'analisi dell'heap con la [**funzione HeapWalk,**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) vedere [Enumerazione di un heap.](/windows/win32/memory/enumerating-a-heap)

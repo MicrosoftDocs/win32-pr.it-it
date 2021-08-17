@@ -1,19 +1,19 @@
 ---
-description: Questa proprietà è simile a System. ItemNameDisplay, con la differenza che è impostata solo per le cartelle, per i file sarà vuota.
+description: Questa proprietà è simile a System.ItemNameDisplay, ma è impostata solo per le cartelle, per i file sarà vuota.
 ms.assetid: 4517a4bf-3cc1-4835-b21b-03de5b33db0c
-title: System. FolderNameDisplay
+title: System.FolderNameDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60922054e80a6589bcb04c3962a4527ee62eaf7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb7b6f7d22eb7f835510b8ebe7cfe3ede01fcdea4a1cf86207e7733602b9b0ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033559"
 ---
-# <a name="systemfoldernamedisplay"></a>System. FolderNameDisplay
+# <a name="systemfoldernamedisplay"></a>System.FolderNameDisplay
 
-Questa proprietà è simile a System. ItemNameDisplay, con la differenza che è impostata solo per le cartelle, per i file sarà vuota. Questa operazione è utile per separare i file e le cartelle utilizzando come prima chiave di ordinamento. Quando System. ItemDate viene usato come seconda chiave di ordinamento, produce i risultati con le cartelle prima ordinate in base al nome, quindi i file ordinati per data.
+Questa proprietà è simile a System.ItemNameDisplay, ma è impostata solo per le cartelle, per i file sarà vuota. Ciò è utile per separare file e cartelle usando come prima chiave di ordinamento. Quando System.ItemDate viene usato come seconda chiave di ordinamento, produce risultati con le cartelle ordinate per nome, quindi i file ordinati in base alla data.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodi EsentSLVStreamingFileInUseException'
+description: Altre informazioni sui metodi di EsentSLVStreamingFileInUseException
 title: 'Metodi di EsentSLVStreamingFileInUseException '
 TOCTitle: EsentSLVStreamingFileInUseException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileInUseException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102936
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2cf7e91e9f99e58dda05aea01bf55159d462f77a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57828d60db2f669f93219cacb18d40b01e29598e53b99d177f5763431bc7d206
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093981"
 ---
 # <a name="esentslvstreamingfileinuseexception-methods"></a>Metodi di EsentSLVStreamingFileInUseException 
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo [EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexception-class.md) espone i membri seguenti.
+Il [tipo EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexception-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,42 +35,42 @@ Il tipo [EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexcept
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta l'oggetto <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con le informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.</td>
+<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Inizio
 
 [Classe EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexception-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

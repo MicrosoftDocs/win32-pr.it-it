@@ -1,19 +1,19 @@
 ---
-description: Consente al renderer video avanzato (EVR) di inviare in batch le chiamate al metodo Microsoft Direct3D IDirect3DDevice9::P reinviate.
+description: Consente al renderer video avanzato (EVR) di eseguire chiamate in batch al metodo Microsoft Direct3D IDirect3DDevice9::P resent.
 ms.assetid: 6dbb2839-97ea-4881-8f22-0f8e943a3071
-title: Attributo EVRConfig_AllowBatching (UUIDs. h)
+title: EVRConfig_AllowBatching attributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 191c3c0f0ea4ad18e7bb711ae6d37c21f75cd478
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1013ca2578d8fd46ea4019035df1ba3397ad629fd27c1901cd92ac8de1bc43af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742380"
 ---
-# <a name="evrconfig_allowbatching-attribute"></a>\_Attributo AllowBatching di EVRConfig
+# <a name="evrconfig_allowbatching-attribute"></a>Attributo \_ AllowBatching EVRConfig
 
-Consente al renderer video avanzato (EVR) di inviare in batch le chiamate al metodo Microsoft Direct3D **IDirect3DDevice9::P** reinviate.
+Consente al renderer video avanzato (EVR) di eseguire chiamate in batch al metodo Microsoft Direct3D **IDirect3DDevice9::P resent.**
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,17 +21,17 @@ Consente al renderer video avanzato (EVR) di inviare in batch le chiamate al met
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo può essere impostato sul sink di supporto EVR. Per impostare l'attributo, utilizzare **QueryInterface** per eseguire una query sul sink multimediale EVR per l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Questo attributo può essere impostato nel sink del supporto EVR. Per impostare l'attributo, usare **QueryInterface** per eseguire una query sul sink multimediale EVR per [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-L'impostazione di questo attributo ha lo stesso effetto dell'impostazione del flag **MFVideoRenderPrefs \_ ALLOWBATCHING** in EVR. Per una descrizione di questo flag, vedere [**MFVideoRenderPrefs**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs) .
+L'impostazione di questo attributo ha lo stesso effetto dell'impostazione del flag **\_ AllowBatching MFVideoRenderPrefs** nell'EVR. Per una descrizione di questo flag, vedere [**MFVideoRenderPrefs.**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs)
 
-La costante GUID per questo attributo viene esportata da strmiids. lib.
+La costante GUID per questo attributo viene esportata da strmiids.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ La costante GUID per questo attributo viene esportata da strmiids. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ La costante GUID per questo attributo viene esportata da strmiids. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi EVR](enhanced-video-renderer-attributes.md)

@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-ieee-80211-Data
-description: Archivia un elenco di configurazioni di rete preferite in Criteri di gruppo per le reti wireless.
+description: Archivia un elenco di configurazioni di rete preferite Criteri di gruppo per le reti wireless.
 ms.assetid: 8e5ae2c6-c048-419d-a684-e450a2445a0e
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118682743"
 ---
 # <a name="ms-ieee-80211-data-attribute"></a>Attributo ms-ieee-80211-Data
 
-Archivia un elenco di configurazioni di rete preferite in Criteri di gruppo per le reti wireless.
+Archivia un elenco di configurazioni di rete preferite Criteri di gruppo per le reti wireless.
 
 
 

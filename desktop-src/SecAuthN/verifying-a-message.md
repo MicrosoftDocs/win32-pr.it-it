@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene illustrato il codice per la ricezione e la verifica di un messaggio firmato. Nell'esempio vengono ricevuti il buffer della firma e le relative dimensioni in SignatureBuffer e SignatureBufferSize e il buffer dei messaggi e le relative dimensioni in MessageBuffer e MessageBufferSize.
+description: Nell'esempio seguente viene illustrato il codice per ricevere e verificare un messaggio firmato. L'esempio riceve il buffer della firma e le relative dimensioni in SignatureBuffer e SignatureBufferSize, il buffer dei messaggi e le relative dimensioni in MessageBuffer e MessageBufferSize.
 ms.assetid: 3e71aa0f-d135-4311-96f3-305762543627
 title: Verifica di un messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ebf62be707efcbd3ab3a5eca5345261ca1a0fde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a90850a88ede875ae41549bca79aceb2d7bdea17db6f50eeb1a3a5e6dfb9a921
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915090"
 ---
 # <a name="verifying-a-message"></a>Verifica di un messaggio
 
-Nell'esempio seguente viene illustrato il codice per la ricezione e la verifica di un messaggio firmato. Nell'esempio vengono ricevuti il buffer della firma e le relative dimensioni in SignatureBuffer e SignatureBufferSize e il buffer dei messaggi e le relative dimensioni in MessageBuffer e MessageBufferSize.
+Nell'esempio seguente viene illustrato il codice per ricevere e verificare un messaggio firmato. L'esempio riceve il buffer della firma e le relative dimensioni in SignatureBuffer e SignatureBufferSize, il buffer dei messaggi e le relative dimensioni in MessageBuffer e MessageBufferSize.
 
-Nell'esempio si presuppone che venga inizializzata una variabile **SecHandle** denominata phContext e una struttura **socket** denominata s. Per le dichiarazioni e le inizializzazioni di queste variabili, vedere [uso di SSPI con un client Windows Sockets](using-sspi-with-a-windows-sockets-client.md) e [uso di SSPI con un server Windows Sockets](using-sspi-with-a-windows-sockets-server.md). Questo codice include le chiamate alle funzioni in Secur32. lib, che devono essere incluse tra le librerie di collegamento.
+Nell'esempio si presuppone che **siano inizializzate** una variabile SecHandle denominata phContext e una struttura **SOCKET** denominata s. Per le dichiarazioni e le inizializzazioni di queste variabili, vedere Using [SSPI with a Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md) e [Using SSPI with a Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md). Questo codice include le chiamate alle funzioni in Secur32.lib, che devono essere incluse tra le librerie di collegamento.
 
 
 ```C++

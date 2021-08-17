@@ -27,7 +27,7 @@ Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-com
 
 ## <a name="members"></a>Membri
 
-La **raccolta DCOMProtocols** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta DCOMProtocols** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 

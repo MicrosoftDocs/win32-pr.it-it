@@ -4,12 +4,12 @@ ms.assetid: E17F8C61-6985-43D7-8AAA-5300D1AA7028
 title: Pacchetti di crittografia TLS in Windows 10 v1511
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 644417cc4af531049c0c09f7c06dd6c5f92ca3e0
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 98b14876a66518aa2f35c181bd1b04ac24ee5a61556b91b4e63bd3d1f82fe31d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916268"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1511"></a>Pacchetti di crittografia TLS in Windows 10 v1511
 
@@ -25,9 +25,9 @@ La disponibilità dei pacchetti di crittografia deve essere controllata in uno d
 
  
 
-La conformità FIPS è diventata più complessa con l'aggiunta di curve ellittiche che rende fuorviante la colonna abilitata per la modalità FIPS nelle versioni precedenti di questa tabella. Ad esempio, una suite di crittografia come TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC SHA256 è solo \_ fips-complaint quando si usano curve ellittiche NIST. Per scoprire quali combinazioni di curve ellittiche e suite di crittografia verranno abilitate in modalità FIPS, vedere la sezione 3.3.1 delle linee guida per la selezione, la configurazione e l'uso delle implementazioni [TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf)
+La conformità FIPS è diventata più complessa con l'aggiunta di curve ellittiche che rende fuorviante la colonna abilitata per la modalità FIPS nelle versioni precedenti di questa tabella. Ad esempio, una suite di crittografia come TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256 è solo un reclamo FIPS quando si usano curve ellittiche NIST. Per scoprire quali combinazioni di curve ellittiche e suite di crittografia verranno abilitate in modalità FIPS, vedere la sezione 3.3.1 delle linee guida per la selezione, la configurazione e l'uso delle implementazioni [TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf)
 
-Ad Windows 10, versione 1511, le suite di crittografia seguenti sono abilitate e in questo ordine di priorità per impostazione predefinita usando il provider Microsoft Schannel:
+Ad Windows 10, versione 1511, i pacchetti di crittografia seguenti sono abilitati e in questo ordine di priorità per impostazione predefinita usando il provider Microsoft Schannel:
 
 
 
@@ -57,7 +57,7 @@ Ad Windows 10, versione 1511, le suite di crittografia seguenti sono abilitate e
 | TLS \_ RSA \_ CON \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                                  | Sì<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ RSA \_ CON \_ 3DES \_ EDE \_ CBC \_ SHA<br/>                                                                 | Sì<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | \_ \_ DSS TLS DHE CON \_ \_ AES \_ 256 \_ CBC \_ SHA256<br/>                                                          | Sì<br/>                      | TLS 1.2<br/>                            |
-| \_ \_ DSS TLS DHE CON \_ \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                                          | Sì<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ DHE \_ DSS \_ CON \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                                          | Sì<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ DHE \_ DSS \_ CON \_ AES \_ 256 \_ CBC \_ SHA<br/>                                                             | Sì<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ DHE \_ DSS \_ CON \_ AES \_ 128 \_ CBC \_ SHA<br/>                                                             | Sì<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0<br/>          |
 | TLS \_ DHE \_ DSS \_ CON \_ 3DES \_ EDE \_ CBC \_ SHA<br/>                                                            | Sì<br/>                      | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
@@ -85,7 +85,7 @@ I pacchetti di crittografia seguenti sono supportati dal provider Microsoft Scha
 | TLS \_ RSA \_ CON \_ \_ MD5 NULL <br/> Usato solo quando l'applicazione richiede in modo esplicito.<br/> | No<br/>                       | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
 | TLS \_ DHE \_ DSS \_ CON DES \_ \_ CBC \_ SHA<br/>                                                    | No<br/>                       | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
 | TLS \_ \_ DSS \_ EXPORT1024 \_ CON DES \_ \_ CBC \_ SHA<br/>                                        | No<br/>                       | TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0<br/> |
-| SSL \_ CK \_ DES \_ 64 \_ CBC CON \_ \_ MD5<br/>                                                      | No<br/>                       | SSL 2.0<br/>                            |
+| SSL \_ CK \_ DES \_ 64 \_ CBC \_ WITH \_ MD5<br/>                                                      | No<br/>                       | SSL 2.0<br/>                            |
 | SSL \_ CK \_ RC4 \_ 128 \_ EXPORT40 \_ WITH \_ MD5<br/>                                                | No<br/>                       | SSL 2.0<br/>                            |
 
 
@@ -94,11 +94,11 @@ I pacchetti di crittografia seguenti sono supportati dal provider Microsoft Scha
 
 Per aggiungere pacchetti di crittografia, distribuire criteri di gruppo o usare i cmdlet TLS:
 
--   Per usare Criteri di gruppo, configurare SSL Cipher Suite Order in Configurazione computer > Modelli amministrativi > Network > SSL Configuration Settings con l'elenco di priorità per tutti i pacchetti di crittografia che si vuole sia abilitato.
+-   Per usare Criteri di gruppo, configurare SSL Cipher Suite Order in Configurazione computer > Modelli amministrativi > Network > SSL Configuration Impostazioni con l'elenco di priorità per tutti i pacchetti di crittografia che si vuole sia abilitato.
 -   Per usare PowerShell, vedere [Cmdlet TLS.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  
-> Prima di Windows 10, le stringhe del pacchetto di crittografia venivano aggiunte con la curva ellittica per determinare la priorità della curva. Windows 10 supporta un'impostazione dell'ordine di priorità a curva ellittica in modo che il suffisso della curva ellittica non sia obbligatorio e venga sostituito dal nuovo ordine di priorità della curva ellittica, se specificato, per consentire alle organizzazioni di usare Criteri di gruppo per configurare versioni diverse di Windows con gli stessi pacchetti di crittografia.
+> Prima di Windows 10, le stringhe del gruppo di crittografia venivano aggiunte con la curva ellittica per determinare la priorità della curva. Windows 10 supporta un'impostazione dell'ordine di priorità a curva ellittica in modo che il suffisso della curva ellittica non sia obbligatorio e venga sostituito dal nuovo ordine di priorità della curva ellittica, se specificato, per consentire alle organizzazioni di usare Criteri di gruppo per configurare versioni diverse di Windows con gli stessi pacchetti di crittografia.
 
  
 

@@ -65,7 +65,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK (const float*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMFLOAT3PK</code> un argomento della matrice di tre <code>float</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da un argomento della <code>float</code> matrice di tre elementi.<br/>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMFLOAT3PK</code> un argomento della matrice di tre <code>float</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da un argomento di <code>float</code> matrice a tre elementi.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.

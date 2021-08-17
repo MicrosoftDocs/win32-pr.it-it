@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b6f6f08e10155509df800cca3cb3788d6b27e520
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 81a087156de61f7997b5d755eb45c0c7e7736fd2345c219b22e8b642ea44e9dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460370"
 ---
 # <a name="d3dxloadmeshhierarchyfromx-function"></a>Funzione D3DXLoadMeshHierarchyFromX
 
@@ -51,7 +51,7 @@ HRESULT D3DXLoadMeshHierarchyFromX(
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati string viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -121,16 +121,16 @@ L'impostazione del compilatore determina anche la versione della funzione. Se un
 
 Tutte le mesh nel file verranno compresse in un'unica mesh di output. Se il file contiene una gerarchia di frame, tutte le trasformazioni verranno applicate alla mesh.
 
-**D3DXLoadMeshHierarchyFromX** carica i dati di animazione e la gerarchia dei frame da un file con estensione x. Analizza il file con estensione x e compila una gerarchia di frame e un controller di animazione in base all'oggetto derivato da [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)passato tramite pAlloc. Il caricamento dei dati richiede diversi passaggi, come indicato di seguito:
+**D3DXLoadMeshHierarchyFromX** carica i dati di animazione e la gerarchia dei frame da un file con estensione x. Analizza il file con estensione x e compila una gerarchia di fotogrammi e un controller di animazione in base all'oggetto derivato da [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)passato tramite pAlloc. Il caricamento dei dati richiede diversi passaggi, come indicato di seguito:
 
-1.  Derivare [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementando ogni metodo. In questo modo viene controllata la modalità di allocazione e di liberare frame e mesh.
+1.  Derivare [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md), implementando ogni metodo. Questo controllo controlla come vengono allocati e liberati frame e mesh.
 2.  Derivare [**ID3DXLoadUserData**](id3dxloaduserdata.md), implementando ogni metodo. Se il file con estensione x non contiene dati definiti dall'utente incorporati o se non sono necessari, è possibile ignorare questa parte.
-3.  Creare un oggetto della classe [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e, facoltativamente, della classe LoadUserData. Non è necessario chiamare manualmente i metodi di questi oggetti.
+3.  Creare un oggetto della [**classe ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e, facoltativamente, della classe LoadUserData. Non è necessario chiamare i metodi di questi oggetti manualmente.
 4.  Chiamare **D3DXLoadMeshHierarchyFromX,** passando l'oggetto [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) e l'oggetto [**ID3DXLoadUserData**](id3dxloaduserdata.md) (o **NULL)** per creare la gerarchia dei frame e il controller di animazione. Tutti i set di animazione e i fotogrammi vengono registrati automaticamente nel controller di animazione.
 
 Durante il caricamento, [**CreateFrame**](id3dxallocatehierarchy--createframe.md) e [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) vengono richiamati in ogni frame per controllare il caricamento e l'allocazione del frame. L'applicazione definisce questi metodi per controllare la modalità di archiviazione dei frame. [**CreateMeshContainer**](id3dxallocatehierarchy--createmeshcontainer.md) e [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md) vengono richiamati su ogni oggetto mesh per controllare il caricamento e l'allocazione degli oggetti mesh. [**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md) viene richiamato per ogni oggetto di primo livello che non viene caricato dagli altri metodi.
 
-Per liberare questi dati, chiamare ID3DXAnimationController::Release per liberare i set di animazione e [**D3DXFRAMEDestroy,**](d3dxframedestroy.md)passando il nodo radice della gerarchia dei frame e un oggetto della classe [**DERIVATA ID3DXAllocateHierarchy.**](id3dxallocatehierarchy.md) [**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) e [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) verranno chiamati per ogni frame e oggetto mesh nella gerarchia dei frame. L'implementazione **di DestroyFrame** deve rilasciare tutti gli elementi allocati da [**CreateFrame**](id3dxallocatehierarchy--createframe.md)e allo stesso modo per i metodi del contenitore mesh.
+Per liberare questi dati, chiamare ID3DXAnimationController::Release per liberare i set di animazione e [**D3DXFRAMEDestroy**](d3dxframedestroy.md), passando il nodo radice della gerarchia dei frame e un oggetto della classe [**ID3DXAllocateHierarchy derivata.**](id3dxallocatehierarchy.md) [**DestroyFrame**](id3dxallocatehierarchy--destroyframe.md) e [**DestroyMeshContainer**](id3dxallocatehierarchy--destroymeshcontainer.md) verranno chiamati per ogni frame e oggetto mesh nella gerarchia dei frame. L'implementazione **di DestroyFrame** deve rilasciare tutti gli elementi allocati da [**CreateFrame**](id3dxallocatehierarchy--createframe.md)e allo stesso modo per i metodi del contenitore mesh.
 
 ## <a name="requirements"></a>Requisiti
 

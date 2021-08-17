@@ -1,7 +1,7 @@
 ---
 UID: ''
-title: CaptureStackBackTrace (funzione)
-description: Acquisisce una traccia dello stack indietro facendo scorrere lo stack.
+title: Funzione CaptureStackBackTrace
+description: Acquisisce un'analisi dello stack di nuovo risalendo lo stack.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,18 +34,18 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 3c9edc9184000d513b82ad4131e3ac05c2ed22d6
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 0b6cad22d7a52908c3aa02bef7e23a57899e421f87bda00660519750de742919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "106299329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279502"
 ---
-# <a name="capturestackbacktrace-function"></a>CaptureStackBackTrace (funzione)
+# <a name="capturestackbacktrace-function"></a>Funzione CaptureStackBackTrace
 
 ## <a name="description"></a>Descrizione
 
-Acquisisce una traccia dello stack indietro scorrendo lo stack e registrando le informazioni per ogni fotogramma.
+Acquisisce una traccia dello stack risalendo lo stack e registrando le informazioni per ogni frame.
 
 ```cpp
 USHORT WINAPI CaptureStackBackTrace(
@@ -65,21 +65,21 @@ Numero di frame da ignorare dall'inizio della traccia indietro.
 ### <a name="framestocapture-in"></a>FramesToCapture [in]
 
 Numero di frame da acquisire.
-È possibile acquisire fino a **MAXUSHORT** frame.
+È possibile acquisire fino a **frame MAXUSHORT.**
 
-**Windows Server 2003 e Windows XP:**  La somma dei parametri *FramesToSkip* e *FramesToCapture* deve essere minore di 63.
+**Windows Server 2003 e Windows XP:**  La somma dei *parametri FramesToSkip* *e FramesToCapture* deve essere minore di 63.
 
-### <a name="backtrace-out"></a>Backtrace [out]
+### <a name="backtrace-out"></a>BackTrace [out]
 
-Matrice di puntatori acquisiti dalla traccia dello stack corrente.
+Matrice di puntatori acquisiti dall'analisi dello stack corrente.
 
-### <a name="backtracehash-out-optional"></a>BackTraceHash [out, optional]
+### <a name="backtracehash-out-optional"></a>BackTraceHash [out, facoltativo]
 
 Valore che può essere utilizzato per organizzare le tabelle hash.
-Se questo parametro è **null**, non viene calcolato alcun valore hash.
+Se questo parametro è **NULL,** non viene calcolato alcun valore hash.
 
-Questo valore viene calcolato in base ai valori dei puntatori restituiti nella matrice di backtrace.
-Due tracce dello stack identiche genereranno valori hash identici.
+Questo valore viene calcolato in base ai valori dei puntatori restituiti nella matrice BackTrace.
+Due analisi dello stack identiche genereranno valori hash identici.
 
 ## <a name="returns"></a>Restituisce
 
@@ -87,7 +87,7 @@ Numero di frame acquisiti.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **CaptureStackBackTrace** è definita come funzione **RtlCaptureStackBackTrace** (la definizione è inclusa nella Windows SDK a partire da Windows Vista).
-Per ulteriori informazioni, vedere WinBase. h e WinNT. h.
+La **funzione CaptureStackBackTrace** è definita come funzione **RtlCaptureStackBackTrace** (la definizione è inclusa in Windows SDK a partire da Windows Vista).
+Per altre informazioni, vedere WinBase.h e WinNT.h.
 
 ## <a name="see-also"></a>Vedere anche

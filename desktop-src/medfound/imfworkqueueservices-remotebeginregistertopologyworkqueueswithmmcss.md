@@ -1,19 +1,19 @@
 ---
-description: 'Versione utilizzabile del metodo IMFWorkQueueServices:: BeginRegisterTopologyWorkQueuesWithMMCSS.'
+description: Versione remota del metodo IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS.
 ms.assetid: 1ea258c9-1f7f-4324-a17a-d044a4864ea4
-title: RemoteBeginRegisterTopologyWorkQueuesWithMMCSS (Mfobjects. h)
+title: RemoteBeginRegisterTopologyWorkQueuesWithMMCSS (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 448008c29e34574263f04ebbc7dee54d60b6f4ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee42b870f46b6bc41e37223a89020acabcbbd6fb02084ee4ddcc9ef4dbaa28ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465617"
 ---
 # <a name="remotebeginregistertopologyworkqueueswithmmcss"></a>RemoteBeginRegisterTopologyWorkQueuesWithMMCSS
 
-Versione utilizzabile del metodo [**IMFWorkQueueServices:: BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) .
+Versione remota del [**metodo IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS.**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 
 ``` syntax
 [call_as(BeginRegisterTopologyWorkQueuesWithMMCSS)]
@@ -24,7 +24,7 @@ HRESULT RemoteBeginRegisterTopologyWorkQueuesWithMMCSS(
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato in vtable per l'interfaccia. Se [**BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) viene chiamato tra i limiti del processo, la Media Foundation DLL di proxy/stub converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
+Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato nella tabella vtable per l'interfaccia . Se [**BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) viene chiamato oltre i limiti del processo, la DLL proxy/stub di Media Foundation converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -32,10 +32,10 @@ Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti no
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mfuuid. lib</dt> </dl>                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 
 
 

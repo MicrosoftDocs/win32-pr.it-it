@@ -1,25 +1,25 @@
 ---
-title: Notifiche del controllo statico
-description: Notifiche del controllo statico
+title: Notifiche di controllo statico
+description: Notifiche di controllo statico
 ms.assetid: 359f7855-85e9-49d9-b73d-a82d441ba957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4019916afde4ce0ab4b15b701da45cbdaccff41f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 246ecb6016a50a3a86451df9af2b48625d4929bcbabc2759561fe396395661f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969901"
 ---
-# <a name="static-control-notifications"></a>Notifiche del controllo statico
+# <a name="static-control-notifications"></a>Notifiche di controllo statico
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [STN \_ selezionato](stn-clicked.md)
--   [\_DBLCLK STN](stn-dblclk.md)
--   [STN \_ disabilitato](stn-disable.md)
--   [\_Abilitazione di STN](stn-enable.md)
--   [**\_CTLCOLORSTATIC WM**](wm-ctlcolorstatic.md)
+-   [STN \_ CLICKED](stn-clicked.md)
+-   [STN \_ DBLCLK](stn-dblclk.md)
+-   [STN \_ DISABLE](stn-disable.md)
+-   [STN \_ ENABLE](stn-enable.md)
+-   [**WM \_ CTLCOLORSTATIC**](wm-ctlcolorstatic.md)
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete.
 ms.assetid: 1cae611b-fb6a-4416-8fd4-0c882e8aa5e6
-title: Classe SystemConfig_V0_NIC
+title: SystemConfig_V0_NIC classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,14 +28,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 040c409564c0ad37e5208c1e91962d3f04de5fc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6abe9356ce222d8f461509ec9cfa25ab0a49b8583022ee5e1d832cf29a226dcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746471"
 ---
-# <a name="systemconfig_v0_nic-class"></a>\_Classe SystemConfig V0 \_ NIC
+# <a name="systemconfig_v0_nic-class"></a>Classe NIC SystemConfig \_ V0 \_
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete.
 
@@ -68,20 +68,20 @@ class SystemConfig_V0_NIC : SystemConfig_V0
 
 ## <a name="members"></a>Members
 
-La classe **SystemConfig \_ V0 \_ NIC** presenta questi tipi di membri:
+La **classe NIC SystemConfig \_ V0 \_** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SystemConfig \_ V0 \_ NIC** ha queste proprietà.
+La **classe NIC SystemConfig \_ V0 \_** ha queste proprietà.
 
 <dl> <dt>
 
 **Dati**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,7 +106,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (8)
 </dt> </dl>
 
-Indirizzo IP del server DHCP (Dynamic Host Configuration Protocol). Il valore 255.255.255.255 indica che non è stato possibile raggiungere il server DHCP oppure è in corso il raggiungimento. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzo IP del server DHCP (Dynamic Host Configuration Protocol). Il valore 255.255.255.255 indica che il server DHCP non è stato raggiunto o è in corso di raggiungere. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (12)
 </dt> </dl>
 
-Primi indirizzi IP del server da utilizzare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Primo indirizzo IP del server da usare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (13)
 </dt> </dl>
 
-Secondi indirizzi IP del server da utilizzare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Secondo indirizzo IP del server da usare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (14)
 </dt> </dl>
 
-Indirizzi IP del terzo server da utilizzare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzi IP del terzo server da usare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (15)
 </dt> </dl>
 
-Quarto indirizzo IP del server da utilizzare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Quarto indirizzo IP del server da usare nell'esecuzione di query per i server DNS. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -186,14 +186,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (9)
 </dt> </dl>
 
-Indirizzo IP del gateway predefinito utilizzato dal computer. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzo IP del gateway predefinito utilizzato dal sistema informatico. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
 **Index**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -202,11 +202,11 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2)
 </dt> </dl>
 
-Indice dell'adapter. È possibile che l'indice dell'adapter venga modificato quando un adapter viene disabilitato e quindi abilitato oppure in altre circostanze e non deve essere considerato persistente.
+Indice dell'adapter. L'indice dell'adapter può cambiare quando un adapter viene disabilitato e quindi abilitato o in altre circostanze e non deve essere considerato permanente.
 
 </dd> <dt>
 
-**IpAddress**
+**Ipaddress**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
@@ -218,14 +218,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (6)
 </dt> </dl>
 
-Indirizzi IP associati alla scheda di interfaccia di rete. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzi IP associati alla scheda di interfaccia di rete. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
 **NICName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -241,7 +241,7 @@ Nome della scheda di interfaccia di rete.
 **PhysicalAddr**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Char16**
+Tipo di dati: **char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -257,7 +257,7 @@ Indirizzo hardware per la scheda.
 **PhysicalAddrLen**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -282,7 +282,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (10)
 </dt> </dl>
 
-Indirizzo IP del server WINS primario. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzo IP per il server WINS primario. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
@@ -298,14 +298,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (11)
 </dt> </dl>
 
-Indirizzo IP del server WINS secondario. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Indirizzo IP per il server WINS secondario. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> <dt>
 
 **Dimensioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -314,7 +314,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (5)
 </dt> </dl>
 
-Dimensione, in byte, della proprietà dei dati.
+Dimensioni, in byte, della proprietà Data.
 
 </dd> <dt>
 
@@ -330,7 +330,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (7)
 </dt> </dl>
 
-Subnet mask associata alla scheda di interfaccia di rete. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.
+Subnet mask associata alla scheda di interfaccia di rete. Ogni byte di sint32 rappresenta una delle quattro parti dell'indirizzo IP (p1.p2.p3.p4). Il byte di ordine basso contiene il valore per p1, il byte successivo contiene il valore per p2 e così via.
 
 </dd> </dl>
 
@@ -341,7 +341,7 @@ Subnet mask associata alla scheda di interfaccia di rete. Ogni byte di sint32 ra
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

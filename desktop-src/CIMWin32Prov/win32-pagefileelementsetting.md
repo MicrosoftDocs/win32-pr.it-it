@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione PageFileElementSetting Win32 mette in relazione le impostazioni iniziali di un file di paging e lo stato di tali impostazioni durante il normale utilizzo.
+description: La classe WMI di associazione Win32 PageFileElementSetting mette in relazione le impostazioni iniziali di un file di paging e lo stato di tali impostazioni \_ durante il normale utilizzo.
 ms.assetid: efc1f20d-166e-4e27-9767-f6ec0bbd6c14
 ms.tgt_platform: multiple
-title: Classe Win32_PageFileElementSetting
+title: Win32_PageFileElementSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dfc1087225894cef2895cf41af5e5297769a4041
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 366f2b8ae14e57d17b4f6a48fb59cdd6c5cfd5c2c12068e40650e410c7c1f45f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972261"
 ---
-# <a name="win32_pagefileelementsetting-class"></a>Win32 \_ PageFileElementSetting (classe)
+# <a name="win32_pagefileelementsetting-class"></a>Classe \_ PageFileElementSetting Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ PageFileElementSetting Win32** mette in relazione le impostazioni iniziali di un file di paging e lo stato di tali impostazioni durante il normale utilizzo.
+La classe [WMI](../wmisdk/retrieving-a-class.md) di associazione **\_ Win32 PageFileElementSetting** mette in relazione le impostazioni iniziali di un file di paging e lo stato di tali impostazioni durante il normale utilizzo.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_PageFileElementSetting : CIM_ElementSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ PageFileElementSetting** presenta questi tipi di membri:
+La **classe \_ Win32 PageFileElementSetting** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ PageFileElementSetting** dispone di queste proprietà.
+La **classe Win32 \_ PageFileElementSetting** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,32 +61,32 @@ Tipo di dati: **Win32 \_ PageFileUsage**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PageFileUsage")
+Qualificatori: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PageFileUsage")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta le proprietà di un file di paging mentre il sistema Win32 è in uso.
+Riferimento all'istanza che rappresenta le proprietà di un file di pagina mentre il sistema Win32 è in uso.
 
 </dd> <dt>
 
 **Impostazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ PageFileSetting**
+Tipo di dati: **\_ PageFileSetting Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PageFileSetting")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PageFileSetting")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta le impostazioni iniziali di un file di paging all'avvio del sistema Win32.
+Riferimento all'istanza di che rappresenta le impostazioni iniziali di un file di pagina all'avvio del sistema Win32.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ PageFileElementSetting** è derivata da [**CIM \_ ElementSetting**](cim-elementsetting.md).
+La **classe Win32 \_ PageFileElementSetting** è derivata da [**CIM \_ ElementSetting.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ PageFileElementSetting** è derivata da [**CIM \_ ElementSe
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ PageFileElementSetting** è derivata da [**CIM \_ ElementSe
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**Elemento \_ CIMSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

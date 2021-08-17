@@ -1,6 +1,6 @@
 ---
 title: GetNumberOfValues
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | GetNumberOfValues
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | GetNumberOfValues
 ms.assetid: d766da06-4dd0-4556-9a94-4c675c310a98
 keywords:
 - GetNumberOfValues windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118198215"
 ---
 # <a name="getnumberofvalues"></a>GetNumberOfValues
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

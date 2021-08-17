@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: classe Windows7IdxInfo'
-title: Classe Windows7IdxInfo (Microsoft. ISAM. esent. Interop. Windows7)
+description: Altre informazioni sulla classe Windows7IdxInfo
+title: Classe Windows7IdxInfo (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7IdxInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.Windows7IdxInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7idxinfo(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77902cbbeb5779acdf235a645fc48c865fb683bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89377e1428259453ebcf789fbb04c619b7cd403ec649e0a2f0b48202ab428157
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470861"
 ---
 # <a name="windows7idxinfo-class"></a>Classe Windows7IdxInfo
 
-Livelli di informazioni sulle colonne aggiunti alla versione Windows 7 di ESENT.
+Livelli di informazioni sulle colonne aggiunti alla Windows 7 di ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Windows7. Windows7IdxInfo  
+  Microsoft.Isam.Esent.Interop.Windows7.Windows7IdxInfo  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,4 +64,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

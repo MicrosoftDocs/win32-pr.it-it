@@ -4,12 +4,12 @@ ms.assetid: 95074b6f-371b-449a-ba98-eadd3235e49b
 title: System.RecordedTV.OriginalBroadcastDate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04cda1e959f519b6f33424cb826171ca9a9faa78
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5559f9aed4e47c0efa2659269f033403896055f041a6f0eef2c8b874ad90b94f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095853"
 ---
 # <a name="systemrecordedtvoriginalbroadcastdate"></a>System.RecordedTV.OriginalBroadcastDate
 

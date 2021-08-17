@@ -1,6 +1,6 @@
 ---
-title: EvaluateAttributeAtSample (funzione)
-description: Valuta in corrispondenza della posizione di esempio indicizzata.
+title: Funzione EvaluateAttributeAtSample
+description: Valuta in corrispondenza della posizione dell'esempio indicizzato.
 ms.assetid: b5886004-5960-461d-a0d2-f4c3b0d09d94
 keywords:
 - Funzione EvaluateAttributeAtSample HLSL
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b183f86599d08a6892e33c169b938dc09a2b55de
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 29191a3790afee2d37fee3d2ee8fb58673ff487af178bd8b1e2b33f26f1ec44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982481"
 ---
-# <a name="evaluateattributeatsample-function"></a>EvaluateAttributeAtSample (funzione)
+# <a name="evaluateattributeatsample-function"></a>Funzione EvaluateAttributeAtSample
 
-Valuta in corrispondenza della posizione di esempio indicizzata.
+Valuta in corrispondenza della posizione dell'esempio indicizzato.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 numeric EvaluateAttributeAtSample(
-  in attrib numeric value,
-  in uint sampleindex
+  in attrib numeric value,
+  in uint sampleindex
 );
 ```
 
@@ -37,16 +37,16 @@ numeric EvaluateAttributeAtSample(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-Tipo: formato **numerico attrib**
+Tipo: **attrib numeric**
 
 Valore di input.
 
 </dd> <dt>
 
-*sampleindex* \[ in\]
+*sampleindex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,9 +57,9 @@ Percorso di esempio.
 
 ## <a name="remarks"></a>Commenti
 
-La modalità di interpolazione può essere **lineare** o **lineare \_ senza alcuna \_ prospettiva** sulla variabile. L'uso **di centro** o **campione** viene ignorato. Sono consentiti anche gli attributi con interpolazione costante. in questo caso, l'indice di esempio viene ignorato.
+La modalità di interpolazione può **essere lineare** **o lineare senza \_ \_ prospettiva** sulla variabile. L'uso **di centroid** **o sample** viene ignorato. Sono consentiti anche attributi con interpolazione costante, nel qual caso l'indice di esempio viene ignorato.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -67,23 +67,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -92,12 +92,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

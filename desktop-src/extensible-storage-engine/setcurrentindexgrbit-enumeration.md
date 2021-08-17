@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione SetCurrentIndexGrbit'
+description: Altre informazioni sull'enumerazione SetCurrentIndexGrbit
 title: Enumerazione SetCurrentIndexGrbit
 TOCTitle: SetCurrentIndexGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2391715332989bf20aae3d0a666c1cef2ce2e135
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee060e73208219408b278e325d2ecf21c36e50975fc5d72e7723fab344b9459b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107265"
 ---
 # <a name="setcurrentindexgrbit-enumeration"></a>Enumerazione SetCurrentIndexGrbit
 
-Opzioni per [JetSetCurrentIndex2 (JET_SESID, JET_TABLEID, String, SetCurrentIndexGrbit)](./api.jetsetcurrentindex2-method.md) e [JetSetCurrentIndex3 (JET_SESID, JET_TABLEID, String, SetCurrentIndexGrbit, Int32)](./api.jetsetcurrentindex3-method.md).
+Opzioni per [JetSetCurrentIndex2(JET_SESID, JET_TABLEID, String, SetCurrentIndexGrbit)](./api.jetsetcurrentindex2-method.md) e [JetSetCurrentIndex3(JET_SESID, JET_TABLEID, String, SetCurrentIndexGrbit, Int32)](./api.jetsetcurrentindex3-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -79,13 +79,13 @@ public enum SetCurrentIndexGrbit
 </tr>
 <tr class="even">
 <td></td>
-<td>MoveFirst</td>
+<td>Movefirst</td>
 <td>Indica che il cursore deve essere posizionato sulla prima voce dell'indice specificato. Se viene selezionato l'indice corrente, questa opzione viene ignorata.</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Nomove</td>
-<td>Indica che il cursore deve essere posizionato sulla voce di indice del nuovo indice che corrisponde al record associato alla voce di indice in corrispondenza della posizione corrente del cursore sull'indice precedente.</td>
+<td>NoMove</td>
+<td>Indica che il cursore deve essere posizionato sulla voce di indice del nuovo indice corrispondente al record associato alla voce di indice nella posizione corrente del cursore sull'indice precedente.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum SetCurrentIndexGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

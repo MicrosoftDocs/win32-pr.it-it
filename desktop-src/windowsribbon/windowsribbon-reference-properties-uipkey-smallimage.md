@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-\_L'interfaccia utente PKEY \_ SmallImage viene usata da un'applicazione per eseguire una query sull'immagine piccola associata a un controllo della barra multifunzione.
+\_L'interfaccia utente PKEY \_ SmallImage viene usata da un'applicazione per eseguire query sull'immagine di piccole dimensioni associata a un controllo barra multifunzione.
 
 Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
@@ -35,7 +35,7 @@ Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/ui
 
 <dl> <dt>
 
-[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
+[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
 [Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)

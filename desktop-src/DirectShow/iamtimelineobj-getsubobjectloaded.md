@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetSubObjectLoaded determina se il puntatore del sottooggetto è stato impostato.
 ms.assetid: 05b58435-eeca-4b52-9a53-ad7f81b5b35d
-title: 'Metodo IAMTimelineObj:: GetSubObjectLoaded (qedit. h)'
+title: Metodo IAMTimelineObj::GetSubObjectLoaded (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 073810b6c02997d78e21a66976954d88e47ae82b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6a9cdf3737c00c20e003d8f8c70cb5ed07589dfbca8677629e77e65ea618fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428241"
 ---
-# <a name="iamtimelineobjgetsubobjectloaded-method"></a>Metodo IAMTimelineObj:: GetSubObjectLoaded
+# <a name="iamtimelineobjgetsubobjectloaded-method"></a>Metodo IAMTimelineObj::GetSubObjectLoaded
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -45,26 +45,26 @@ HRESULT GetSubObjectLoaded(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Riceve un valore booleano. Se il valore è **true**, il puntatore al sottooggetto è stato impostato. Se **false**, il puntatore non è stato impostato.
+Riceve un valore booleano. Se il valore è **TRUE,** il puntatore del sottooggetto è stato impostato. Se **FALSE,** il puntatore non è stato impostato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -19,7 +19,7 @@ Una *stazione finestra* contiene gli Appunti, una tabella atom e uno o più ogge
 
 La *stazione finestra interattiva è* l'unica stazione finestra in grado di visualizzare un'interfaccia utente o ricevere l'input dell'utente. Viene assegnato alla sessione di accesso dell'utente interattivo e contiene la tastiera, il mouse e il dispositivo di visualizzazione. Viene sempre denominato "WinSta0". Tutte le altre stazioni finestra non sono interattive, ovvero non possono visualizzare un'interfaccia utente o ricevere l'input dell'utente.
 
-Quando un utente accede a un computer usando Servizi Desktop remoto, viene avviata una sessione per l'utente. Ogni sessione è associata alla propria stazione finestra interattiva denominata "WinSta0". Per altre informazioni, vedere [Desktop remoto Sessions](/windows/desktop/TermServ/terminal-services-sessions).
+Quando un utente accede a un computer usando Servizi Desktop remoto, viene avviata una sessione per l'utente. Ogni sessione è associata alla propria stazione finestra interattiva denominata "WinSta0". Per altre informazioni, vedere [Desktop remoto sessioni](/windows/desktop/TermServ/terminal-services-sessions).
 
 Per altre informazioni sulle stazioni finestra, vedere gli argomenti seguenti:
 

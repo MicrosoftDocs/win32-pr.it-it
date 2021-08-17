@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDatabaseCorruptedException'
+description: Altre informazioni sul costruttore EsentDatabaseCorruptedException
 title: Costruttore EsentDatabaseCorruptedException
 TOCTitle: 'EsentDatabaseCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseCorruptedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5bc7635fdfbd878a69306fc2ad6170cd103f8e82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c010ec7d191be215f0b00c4e165263376f58c983fe751add06cd3ef323042c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094181"
 ---
 # <a name="esentdatabasecorruptedexception-constructor"></a>Costruttore EsentDatabaseCorruptedException
 
 Inizializza una nuova istanza della classe EsentDatabaseCorruptedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDatabaseCorruptedException()
 
 [Membri di EsentDatabaseCorruptedException](./esentdatabasecorruptedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

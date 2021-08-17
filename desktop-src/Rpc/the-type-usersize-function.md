@@ -1,21 +1,21 @@
 ---
 title: Funzione type_UserSize
-description: Il tipo \_ UserSize Function è una funzione di supporto per gli attributi \ Wire \_ Marshal \ e \ User \_ Marshal \.
+description: La funzione \_ UserSize di tipo è una funzione helper per gli attributi \ wire \_ marshal\ e \ user \_ marshal\.
 ms.assetid: 74a46418-1a02-47ed-a3ab-35f3364cc38f
 keywords:
 - type_UserSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a29e5936763f9fe7b3513d66ddca7db9c35dbfe7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a5b7c5d0918489dbc41baaa4e799aa1dbbda67723cf8104e0641ced24b9b5bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923541"
 ---
-# <a name="the-type_usersize-function"></a>Funzione di tipo \_ UserSize
+# <a name="the-type_usersize-function"></a>Funzione \_ UserSize di tipo
 
-La funzione **<type> \_ UserSize** è una funzione di supporto per il \[ [ \_ marshalling di rete](/windows/desktop/Midl/wire-marshal) \] e \[ gli attributi del [ \_ marshalling degli utenti](/windows/desktop/Midl/user-marshal) \] . Gli stub chiamano questa funzione per ridimensionare il buffer di dati RPC per l'oggetto dati utente prima che venga eseguito il marshalling dei dati sul lato client o server. La funzione è definita come segue:
+La **<type> \_ funzione UserSize** è una funzione helper per gli attributi \[ [wire \_ marshal](/windows/desktop/Midl/wire-marshal) \] e user \[ [ \_ marshal.](/windows/desktop/Midl/user-marshal) \] Gli stub chiamano questa funzione per ridimensionare il buffer di dati RPC per l'oggetto dati utente prima che venga effettuato il marshalling dei dati sul lato client o server. La funzione è definita come:
 
 ``` syntax
 unsigned long __RPC_USER  <type>_UserSize(
@@ -24,53 +24,53 @@ unsigned long __RPC_USER  <type>_UserSize(
     <type>  __RPC_FAR *pMyObj);
 ```
 
-<type>Nel nome della funzione corrisponde a User-Type, come specificato nella definizione del **\[ \_ marshalling \] di rete** o del tipo di **\[ \_ \] marshalling dell'utente** . Questo tipo può essere untransmittable o even, se usato con l'attributo **\[ \_ Marshal \] dell'utente** , sconosciuto al compilatore MIDL. Il nome del tipo Wire (il nome del tipo trasmesso attraverso la rete) non viene utilizzato nel prototipo di funzione. Si noti, tuttavia, che il tipo Wire definisce il layout per i dati come specificato da OSF DCE. Tutti i dati devono essere convertiti nel formato di rappresentazione dei dati di rete (NDR).
+nel nome della funzione indica il tipo userm, come specificato nella definizione del tipo <type> **\[ \_ wire marshal \]** o user **\[ \_ marshal. \]** Questo tipo può essere non ritrasmettibile o persino, se usato con l'attributo **\[ \_ di marshalling \]** utente, sconosciuto al compilatore MIDL. Il nome del tipo di cavo (il nome del tipo trasmesso in rete) non viene usato nel prototipo di funzione. Si noti, tuttavia, che il tipo wire definisce il layout per i dati come specificato da OSF DCE. Tutti i dati devono essere convertiti nel formato di rappresentazione dei dati di rete (NDR).
 
-Il parametro *pFlags* è un puntatore a un campo **unsigned long** flag. La parola superiore del flag contiene i flag di formato NDR come definito da OSF DCE per la virgola mobile, l'ordine dei byte e le rappresentazioni di caratteri. La parola inferiore contiene un flag di contesto di marshalling definito dal canale COM. La tabella seguente illustra il layout esatto dei flag all'interno del campo.
+Il *parametro pFlags* è un puntatore a un campo flag **long** senza segno. La parola superiore del flag contiene flag di formato NDR come definito da DCE OSF per le rappresentazioni a virgola mobile, ordine dei byte e caratteri. La parola inferiore contiene un flag di contesto di marshalling come definito dal canale COM. Il layout esatto dei flag all'interno del campo è illustrato nella tabella seguente.
 
 
 
 | BITS  | Flag                                  | valore                                                                                     |
 |-------|---------------------------------------|-------------------------------------------------------------------------------------------|
 | 31-24 | Rappresentazione a virgola mobile         | 0 = IEEE 1 = VAX 2 = Cray 3 = IBM                                                         |
-| 23-20 | Ordine di byte Integer e a virgola mobile | 0 = big-endian 1 = little-endian                                                          |
-| 19-16 | Rappresentazione di caratteri              | 0 = ASCII 1 = EBCDIC                                                                      |
-| 15-0  | Flag di contesto di marshalling               | 0 = MSHCTX \_ Local 1 = MSHCTX \_ NOSHAREDMEM 2 = MSHCTX \_ DIFFERENTMACHINE 3 = MSHCTX \_ InProc |
+| 23-20 | Ordine dei byte integer e a virgola mobile | 0 = Big-endian 1 = Little-endian                                                          |
+| 19-16 | Rappresentazione dei caratteri              | 0 = ASCII 1 = EBCDIC                                                                      |
+| 15-0  | Flag di contesto di marshalling               | 0 = MSHCTX \_ LOCAL 1 = MSHCTX \_ NOSHAREDMEM 2 = MSHCTX \_ DIFFERENTMACHINE 3 = MSHCTX \_ INPROC |
 
 
 
- 
+ 
 
-Il flag di contesto del marshalling rende possibile la modifica del comportamento della routine a seconda del contesto della chiamata RPC. Se, ad esempio, si dispone di un handle (**Long**) per un blocco di dati, è possibile inviare l'handle per una chiamata in-process, ma inviare i dati effettivi per una chiamata a un altro computer. Il flag del contesto di marshalling e i relativi valori sono definiti nei file wtypes. h e wtypes. idl di Platform Software Development Kit (SDK).
+Il flag del contesto di marshalling consente di modificare il comportamento della routine a seconda del contesto per la chiamata RPC. Ad esempio, se si dispone di un handle (**long**) a un blocco di dati, è possibile inviare l'handle per una chiamata in-process, ma si inviano i dati effettivi per una chiamata a un computer diverso. Il flag del contesto di marshalling e i relativi valori sono definiti nei file Wtypes.h e Wtypes.idl in Platform Software Development Kit (SDK).
 
 > [!Note]  
-> Quando il tipo di trasmissione è definito correttamente, non è necessario usare i flag di formato NDR, perché il motore di NDR esegue le conversioni necessarie.
+> Quando il tipo di collegamento è definito correttamente, non è necessario usare i flag di formato NDR, perché il motore NDR esegue le conversioni necessarie.
 
- 
+ 
 
-*StartingSize* un parametro è l'offset del buffer corrente. La dimensione iniziale indica l'offset del buffer per l'oggetto utente e può essere allineato o meno correttamente. La routine dovrebbe tenere conto del riempimento necessario.
+Il *parametro StartingSize* è l'offset del buffer corrente. La dimensione iniziale indica l'offset del buffer per l'oggetto utente e può essere allineata correttamente o meno. La routine deve prendere in considerazione la spaziatura interna necessaria.
 
-Il parametro *pMyObj* è un puntatore a un oggetto tipo utente.
+Il *parametro pMyObj* è un puntatore a un oggetto di tipo utente.
 
-Il valore restituito è il nuovo offset o la nuova posizione del buffer. La funzione deve restituire la dimensione cumulativa, ovvero le dimensioni iniziali più la spaziatura interna più la dimensione dei dati.
+Il valore restituito è il nuovo offset o posizione del buffer. La funzione deve restituire la dimensione cumulativa, ovvero la dimensione iniziale più la possibile spaziatura interna più le dimensioni dei dati.
 
-La funzione **<type> \_ UserSize** può restituire una sovrastima delle dimensioni necessarie. La dimensione effettiva del buffer inviato è definita dalle dimensioni dei dati, non dalle dimensioni di allocazione del buffer.
+La **<type> \_ funzione UserSize** può restituire una sovrastima delle dimensioni necessarie. Le dimensioni effettive del buffer inviato sono definite dalle dimensioni dei dati, non dalla dimensione di allocazione del buffer.
 
-La funzione **<type> \_ UserSize** non viene chiamata se le dimensioni del Wire possono essere calcolate in fase di compilazione. Si noti che per la maggior parte delle unioni, anche se non sono presenti puntatori, le dimensioni effettive della rappresentazione in transito possono essere determinate solo in fase di esecuzione.
+La **<type> \_ funzione UserSize** non viene chiamata se le dimensioni del cavo possono essere calcolate in fase di compilazione. Si noti che per la maggior parte delle unioni, anche se non sono presenti puntatori, le dimensioni effettive della rappresentazione cablata possono essere determinate solo in fase di esecuzione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Regole di marshalling per \_ marshalling utente e \_ marshalling di rete](marshaling-rules-for-user-marshal-and-wire-marshal.md)
+[Regole di marshalling per il \_ marshalling utente e il \_ marshalling del wire](marshaling-rules-for-user-marshal-and-wire-marshal.md)
 </dt> <dt>
 
-[\_marshalling utente](/windows/desktop/Midl/user-marshal)
+[marshalling \_ utente](/windows/desktop/Midl/user-marshal)
 </dt> <dt>
 
-[\_marshalling di rete](/windows/desktop/Midl/wire-marshal)
+[wire \_ marshal](/windows/desktop/Midl/wire-marshal)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

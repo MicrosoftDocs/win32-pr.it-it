@@ -43,7 +43,7 @@ void WINAPI glIndexi(
 *c* 
 </dt> <dd>
 
-Nuovo valore per l'indice colori corrente.
+Nuovo valore per l'indice dei colori corrente.
 
 </dd> </dl>
 
@@ -53,17 +53,17 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione glIndexi** aggiorna l'indice dei colori corrente (a valore singolo). Accetta un argomento: il nuovo valore per l'indice colori corrente.
+La **funzione glIndexi** aggiorna l'indice dei colori corrente (a valore singolo). Accetta un argomento: il nuovo valore per l'indice dei colori corrente.
 
 L'indice corrente viene archiviato come valore a virgola mobile. I valori interi vengono convertiti direttamente in valori a virgola mobile, senza mapping speciale.
 
-I valori di indice esterni all'intervallo rappresentabile del colore index buffer non sono ancorati. Tuttavia, prima che un indice venga dithering (se abilitato) e scritto nel framebuffer, viene convertito in formato a virgola fissa. Tutti i bit nella parte intera del valore a virgola fissa risultante che non corrispondono ai bit nel framebuffer vengono mascherati.
+I valori di indice esterni all'intervallo rappresentabile dell'index buffer colore non sono ancorati. Tuttavia, prima che un indice venga dithering (se abilitato) e scritto in framebuffer, viene convertito in formato a virgola fissa. Tutti i bit nella parte intera del valore a virgola fissa risultante che non corrispondono ai bit in framebuffer vengono mascherati.
 
 L'indice corrente può essere aggiornato in qualsiasi momento. In particolare, **glIndexi** può essere chiamato tra una chiamata a [**glBegin**](/windows/desktop/OpenGL/glbegin) e la chiamata corrispondente a [**glEnd**](glend.md).
 
-La funzione seguente recupera le informazioni correlate a **glIndexi**:
+La funzione seguente recupera le informazioni correlate a **glIndexi:**
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ CURRENT \_ INDEX
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisiti
 

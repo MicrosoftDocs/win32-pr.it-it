@@ -38,8 +38,8 @@ Elenca le funzioni geometriche vettoriali 4D.
 | [**XMVector4ReciprocalLength**](/windows/win32/api/directxmath/nf-directxmath-xmvector4reciprocallength)<br/>             | Calcola il reciproco della lunghezza di un vettore 4D.<br/>              |
 | [**XMVector4ReciprocalLengthEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector4reciprocallengthest)<br/>       | Stima il reciproco della lunghezza di un vettore 4D.<br/>             |
 | [**XMVector4Reflect**](/windows/win32/api/directxmath/nf-directxmath-xmvector4reflect)<br/>                               | Riflette un vettore 4D imprevisto in un vettore normale 4D.<br/>          |
-| [**XMVector4Refract**](/windows/win32/api/directxmath/nf-directxmath-xmvector4refract)<br/>                               | Rifratta un vettore 4D imprevisto in un vettore normale 4D.<br/>          |
-| [**XMVector4RefractV**](/windows/win32/api/directxmath/nf-directxmath-xmvector4refractv)<br/>                             | Rifratta un vettore 4D imprevisto in un vettore normale 4D.<br/>          |
+| [**XMVector4Refract**](/windows/win32/api/directxmath/nf-directxmath-xmvector4refract)<br/>                               | Rifratta un vettore 4D imprevisto attraverso un vettore normale 4D.<br/>          |
+| [**XMVector4RefractV**](/windows/win32/api/directxmath/nf-directxmath-xmvector4refractv)<br/>                             | Rifratta un vettore 4D imprevisto attraverso un vettore normale 4D.<br/>          |
 
 
 

@@ -13,9 +13,9 @@ ms.locfileid: "118200057"
 ---
 # <a name="wm_nccreate-message"></a>Messaggio \_ WM NCCREATE
 
-Inviato prima del [**messaggio WM \_ CREATE**](wm-create.md) quando viene creata per la prima volta una finestra.
+Inviato prima del [**messaggio WM \_ CREATE**](wm-create.md) quando viene creata una finestra per la prima volta.
 
-Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -38,7 +38,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore alla [**struttura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) che contiene informazioni sulla finestra da creare. I membri di **CREATESTRUCT** sono identici ai parametri della [**funzione CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
+Puntatore alla [**struttura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) che contiene informazioni sulla finestra da creare. I membri **di CREATESTRUCT** sono identici ai parametri della [**funzione CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Puntatore alla [**struttura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuse
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora questo messaggio, deve restituire **TRUE** per continuare la creazione della finestra. Se l'applicazione restituisce **FALSE,** la [**funzione CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) restituirà un handle **NULL.**
+Se un'applicazione elabora questo messaggio, deve restituire **TRUE per** continuare la creazione della finestra. Se l'applicazione **restituisce FALSE,** la [**funzione CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) restituirà un handle **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,7 +79,7 @@ Se un'applicazione elabora questo messaggio, deve restituire **TRUE** per contin
 [**CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa)
 </dt> <dt>
 
-[**CREAZIONE \_ DI WM**](wm-create.md)
+[**WM \_ CREATE**](wm-create.md)
 </dt> <dt>
 
 **Informazioni concettuali**

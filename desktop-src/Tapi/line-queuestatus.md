@@ -1,19 +1,19 @@
 ---
-description: Il \_ messaggio di riga QUEUESTATUS viene inviato quando lo stato di una coda ACD viene modificato in un gestore dell'agente per il quale l'applicazione dispone attualmente di una linea aperta. Questo messaggio viene generato tramite la funzione lineProxyMessage.
+description: Il messaggio LINE QUEUESTATUS viene inviato quando lo stato di una coda ACD cambia in un gestore dell'agente per il quale l'applicazione \_ ha attualmente una riga aperta. Questo messaggio viene generato usando la funzione lineProxyMessage.
 ms.assetid: 9baacfc5-f26c-41c7-a1f8-f48ec8aa844c
-title: Messaggio di LINE_QUEUESTATUS (TAPI. h)
+title: LINE_QUEUESTATUS messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a89785b92009a7531ae693545febaf153cf19bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b336a8239e31e5c0bcc70de747cbb48a2028c85e67f44a3e45032f02b37065d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975531"
 ---
-# <a name="line_queuestatus-message"></a>\_Messaggio linea QUEUESTATUS
+# <a name="line_queuestatus-message"></a>LINE \_ QUEUESTATUS message
 
-Il messaggio di **riga \_ QUEUESTATUS** viene inviato quando lo stato di una coda ACD viene modificato in un gestore dell'agente per il quale l'applicazione dispone attualmente di una linea aperta. Questo messaggio viene generato tramite la funzione [**lineProxyMessage**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage) .
+Il **messaggio LINE \_ QUEUESTATUS** viene inviato quando lo stato di una coda ACD cambia in un gestore dell'agente per il quale l'applicazione ha attualmente una riga aperta. Questo messaggio viene generato usando la [**funzione lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
 
 ```C++
@@ -29,7 +29,7 @@ Il messaggio di **riga \_ QUEUESTATUS** viene inviato quando lo stato di una cod
 *dwDevice* 
 </dt> <dd>
 
-Handle dell'applicazione per il dispositivo linea. Questo si riferisce al gestore agenti.
+Handle dell'applicazione per il dispositivo line. Ciò è correlato al gestore dell'agente.
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Identificatore della coda il cui stato è stato modificato.
 *dwParam2* 
 </dt> <dd>
 
-Specifica lo stato della coda che è stato modificato. Può essere una o più delle [**\_ costanti LINEQUEUESTATUS**](linequeuestatus--constants.md).
+Specifica lo stato della coda modificato. Può essere una o più costanti [**LINEQUEUESTATUS \_**](linequeuestatus--constants.md).
 
 </dd> <dt>
 
@@ -67,8 +67,8 @@ Riservato. Imposta su zero.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

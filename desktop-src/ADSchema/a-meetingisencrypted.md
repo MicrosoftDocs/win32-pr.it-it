@@ -1,6 +1,6 @@
 ---
-title: attributo meetingIsEncrypted
-description: Questo vale se la riunione deve essere crittografata.
+title: Attributo meetingIsEncrypted
+description: Questo valore è TRUE se la riunione deve essere crittografata.
 ms.assetid: bf8c1344-9f7e-4e4f-aac7-52cb0b65b9f0
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e645624ff9167da7e8a6278e10bf57420cd152
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3132a08589395619dc4ed2222f2497e0e15a6b1425ac150259c5a8ada95445e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300772"
 ---
-# <a name="meetingisencrypted-attribute"></a>attributo meetingIsEncrypted
+# <a name="meetingisencrypted-attribute"></a>Attributo meetingIsEncrypted
 
-Questo vale **se la** riunione deve essere crittografata.
+Questo valore **è TRUE** se la riunione deve essere crittografata.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingIsEncrypted                                                               |
-| LDAP-Display-Name | meetingIsEncrypted                                                               |
+| Ldap-Display-Name | meetingIsEncrypted                                                               |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Aggiorna privilegio  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.585                                                           |
-| System-ID-GUID    | 11b6cc8e-48c4-11d1-a9c3-0000f80367c1                                             |
+| System-Id-Guid    | 11b6cc8e-48c4-11d1-a9c3-0000f80367c1                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -57,15 +57,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Questo vale **se la** riunione deve essere crittografata.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

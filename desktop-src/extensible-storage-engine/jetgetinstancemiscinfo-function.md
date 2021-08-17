@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGetInstanceMiscInfo'
-title: JetGetInstanceMiscInfo (funzione)
+description: 'Altre informazioni su: Funzione JetGetInstanceMiscInfo'
+title: Funzione JetGetInstanceMiscInfo
 TOCTitle: JetGetInstanceMiscInfo Function
 ms:assetid: 0bfe36fe-4ddd-442b-b934-57a7bfb28e5f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269183(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed63c6a5c6d3b2488f7226da0a1f23e1adb39e09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ada8dfcd69a4e1933bcb60756d1b812f3b358cd37a3cda914819d2a9f6f4275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472351"
 ---
-# <a name="jetgetinstancemiscinfo-function"></a>JetGetInstanceMiscInfo (funzione)
+# <a name="jetgetinstancemiscinfo-function"></a>Funzione JetGetInstanceMiscInfo
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetgetinstancemiscinfo-function"></a>JetGetInstanceMiscInfo (funzione)
+## <a name="jetgetinstancemiscinfo-function"></a>Funzione JetGetInstanceMiscInfo
 
-La funzione **JetGetInstanceMiscInfo** recupera informazioni sull'istanza di, mentre l'istanza è online.
+La **funzione JetGetInstanceMiscInfo** recupera informazioni sull'istanza, mentre l'istanza è online.
 
 **Windows Vista: JetGetInstanceMiscInfo** è stato introdotto in Windows Vista.
 
@@ -47,23 +47,23 @@ La funzione **JetGetInstanceMiscInfo** recupera informazioni sull'istanza di, me
 
 ### <a name="parameters"></a>Parametri
 
-*istanza*
+*Istanza*
 
-Identifica l'istanza del database che verrà usata per la chiamata API.
+Identifica l'istanza di database che verrà usata per la chiamata API.
 
 *pvResult*
 
-Puntatore a un buffer che riceverà le informazioni. Il tipo di buffer dipende da *InfoLevel*. Il chiamante è responsabile dell'allineamento appropriato del buffer.
+Puntatore a un buffer che riceverà le informazioni. Il tipo del buffer dipende da *InfoLevel.* Il chiamante è responsabile dell'allineamento appropriato del buffer.
 
 *cbMax*
 
-Dimensione, in byte, del buffer passato in *pvResult*.
+Dimensione, in byte, del buffer passato in *pvResult.*
 
 *InfoLevel*
 
-Determina il tipo di informazioni che verranno recuperate per l'istanza di specificata dall' *istanza*. Il formato dei dati archiviati in *pvResult* dipende da *InfoLevel*.
+Determina il tipo di informazioni che verranno recuperate per l'istanza specificata *dall'istanza di*. Il formato dei dati archiviati in *pvResult* dipende da *InfoLevel.*
 
-Con questo parametro è possibile usare le opzioni seguenti.
+Le opzioni seguenti sono disponibili per l'uso con questo parametro.
 
 <table>
 <colgroup>
@@ -79,7 +79,7 @@ Con questo parametro è possibile usare le opzioni seguenti.
 <tbody>
 <tr class="odd">
 <td><p>JET_InstanceMiscInfoLogSignature</p></td>
-<td><p><em>pvResult</em> viene interpretato come una struttura <a href="gg269340(v=exchg.10).md">JET_SIGNATURE</a> della sequenza del log delle transazioni associata a questa istanza.</p></td>
+<td><p><em>pvResult viene</em> interpretato come una <a href="gg269340(v=exchg.10).md">JET_SIGNATURE</a> della sequenza del log delle transazioni associata a questa istanza.</p></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +87,7 @@ Con questo parametro è possibile usare le opzioni seguenti.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -107,11 +107,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errBufferTooSmall</p></td>
-<td><p>Il buffer è troppo piccolo.</p></td>
+<td><p>Buffer troppo piccolo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>È stato specificato un <a href="gg294048(v=exchg.10).md">JET_INSTANCE</a> non valido o un <em>InfoLevel</em> non valido.</p></td>
+<td><p>È stato specificato <a href="gg294048(v=exchg.10).md">un JET_INSTANCE</a> non valido o <em>un InfoLevel</em> non valido.</p></td>
 </tr>
 </tbody>
 </table>
@@ -135,11 +135,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

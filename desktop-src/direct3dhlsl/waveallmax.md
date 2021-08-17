@@ -1,6 +1,6 @@
 ---
-title: WaveActiveMax (funzione)
-description: Restituisce il valore massimo dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie attive.
+title: Funzione WaveActiveMax
+description: Restituisce il valore massimo dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie attive.
 ms.assetid: 19101C56-2618-4F34-8725-DF92198ABDA4
 keywords:
 - Funzione WaveActiveMax HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7c0fd10f578d598c326cdfb4cf943d3a35fe78a9
-ms.sourcegitcommit: a232805e6c618673f2df904111cc4f5a33e15504
-ms.translationtype: HT
+ms.openlocfilehash: 8c85936ca28aabe0365fd912b4d764739b0ab15765241a243ad67143dacd0d7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "104399987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484201"
 ---
-# <a name="waveactivemax-function"></a>WaveActiveMax (funzione)
+# <a name="waveactivemax-function"></a>Funzione WaveActiveMax
 
-Restituisce il valore massimo dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie attive.
+Restituisce il valore massimo dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie attive.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Restituisce il valore massimo dell'espressione in tutte le corsie attive nell'on
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -51,7 +51,7 @@ Valore massimo.
 
 L'ordine delle operazioni non è definito.
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -68,7 +68,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)
