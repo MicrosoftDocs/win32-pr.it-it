@@ -1,7 +1,7 @@
 ---
 description: Avvia l'hashing di un flusso di dati.
 ms.assetid: 0EA7C98E-777C-4B2A-AF35-04F90BA3D024
-title: Funzione A_SHAInit (SHA. h)
+title: A_SHAInit funzione (Sha.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: 831c86b02c946896014fa9eec02270f2e963e484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0081311988a5da0ae5ca21e924305918bb1e713a6cde3be1b77821c9b458cb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774266"
 ---
-# <a name="a_shainit-function"></a>\_Funzione SHAInit
+# <a name="a_shainit-function"></a>Una \_ funzione SHAInit
 
 Avvia l'hashing di un flusso di dati.
 
@@ -39,7 +39,7 @@ void RSA32API A_SHAInit(
 
 <dl> <dt>
 
-*Contesto* \[ in uscita\]
+*Contesto* \[ in, out\]
 </dt> <dd>
 
 Contesto SHA.
@@ -52,7 +52,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è molto simile a SHAInit, ma viene chiamata direttamente dalla libreria, anziché essere instradata tramite l'infrastruttura di crittografia. Per ulteriori informazioni, vedere [provider NTCryptographic Windows](/previous-versions/tn-archive/cc723484(v=technet.10)).
+Questa funzione è molto simile a SHAInit, ma viene chiamata direttamente dalla libreria, anziché essere instradata tramite l'infrastruttura di crittografia. Per altre informazioni, vedere [Windows NTCryptographic Providers](/previous-versions/tn-archive/cc723484(v=technet.10)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Questa funzione è molto simile a SHAInit, ma viene chiamata direttamente dalla 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Sha. h</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>Sha.h</dt> </dl>     |
 | Libreria<br/> | <dl> <dt>Ntdll.dll</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Ntdll.dll</dt> </dl> |
 

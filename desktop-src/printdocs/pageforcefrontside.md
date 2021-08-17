@@ -4,12 +4,12 @@ ms.assetid: 0658c808-f050-41f3-90b6-2a013b616b58
 title: PageForceFrontSide
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79f22e9ec52b7cee72e8f3a479d161e9abb765c4
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 53d05aeab9ae3e9e28ab981b5525ec0214ae6093e688cce66c9c0e68f7a1cc45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868196"
 ---
 # <a name="pageforcefrontside"></a>PageForceFrontSide
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageForceFrontSide">

@@ -1,8 +1,8 @@
 ---
-title: 'Metodo IDODownloadStatusCallback:: OnStatusChange'
-description: Chiama l'implementazione di questo metodo ogni volta che viene modificato lo stato del download.
+title: Metodo IDODownloadStatusCallback::OnStatusChange
+description: DO chiama l'implementazione di questo metodo ogni volta che viene modificato lo stato di download.
 keywords:
-- 'Metodo IDODownloadStatusCallback:: OnStatusChange'
+- Metodo IDODownloadStatusCallback::OnStatusChange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 9abf13969a6183f98102792b9bcf7a3329ca243d
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 0395b6bc64ad3abe102a0a4f0dc7afd8e8d59f336949a3b97eaf683a4f4900cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104046146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736218"
 ---
-# <a name="idodownloadstatuscallbackonstatuschange-method"></a>Metodo IDODownloadStatusCallback:: OnStatusChange
+# <a name="idodownloadstatuscallbackonstatuschange-method"></a>Metodo IDODownloadStatusCallback::OnStatusChange
 
-Chiama l'implementazione di questo metodo ogni volta che viene modificato lo stato del download.
+DO chiama l'implementazione di questo metodo ogni volta che viene modificato lo stato di download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,20 +38,20 @@ HRESULT OnStatusChange(
 
 `download`
 
-Puntatore all'interfaccia **IDODownload** il cui stato è stato modificato.
+Puntatore **all'interfaccia IDODownload** il cui stato è cambiato.
 
 `status`
 
-Puntatore a una struttura **DO_DOWNLOAD_STATUS** contenente lo stato del download.
+Puntatore a una **DO_DOWNLOAD_STATUS** contenente lo stato del download.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [codice di errore](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | Do.h |

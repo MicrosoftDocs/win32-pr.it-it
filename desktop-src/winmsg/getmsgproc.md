@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Funzione di callback GetMsgProc
-description: Il sistema chiama questa funzione quando una funzione Message riceve un messaggio da una coda di messaggi dell'applicazione.
+description: Il sistema chiama questa funzione quando una funzione di messaggio ottiene un messaggio da una coda di messaggi dell'applicazione.
 old-location: ''
 ms.assetid: na
 ms.date: 04/05/2019
@@ -32,22 +32,22 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: aa055e4184cdc9be5bb60a421ad5937bbfd15393
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: e5c51f2abe8b3660ae40bae05c13428e0622fd4d5c4b8020fea8caa924a35681
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "106303666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200793"
 ---
-# <a name="getmsgproc-function"></a>GetMsgProc (funzione)
+# <a name="getmsgproc-function"></a>Funzione GetMsgProc
 
-## <a name="-description"></a>-Descrizione
+## <a name="-description"></a>-description
 
-Funzione di callback definita dall'applicazione o definita dalla libreria utilizzata con la funzione [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) . Il sistema chiama questa funzione ogni volta che la funzione [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ha recuperato un messaggio da una coda di messaggi dell'applicazione.
+Funzione di callback definita dall'applicazione o definita dalla libreria usata con la [funzione SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) Il sistema chiama questa funzione ogni volta che la [funzione GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) recupera un messaggio da una coda di messaggi dell'applicazione.
 Prima di restituire il messaggio recuperato al chiamante, il sistema passa il messaggio alla routine hook.
 
-Il tipo **HookProc** definisce un puntatore a questa funzione di callback.
-**GetMsgProc** è un segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
+Il **tipo HOOKPROC** definisce un puntatore a questa funzione di callback.
+**GetMsgProc è un** segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
 
 ```cpp
 LRESULT CALLBACK GetMsgProc(
@@ -57,47 +57,47 @@ LRESULT CALLBACK GetMsgProc(
 );
 ```
 
-## <a name="-parameters"></a>-parametri
+## <a name="-parameters"></a>-parameters
 
-### <a name="code-in"></a>Codice [in]
+### <a name="code-in"></a>codice [in]
 
 Tipo: **int**
 
 Specifica se la routine hook deve elaborare il messaggio.
-Se il *codice* è **HC_ACTION**, la routine hook deve elaborare il messaggio.
-Se il *codice* è minore di zero, la routine hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx**.
+Se *il* codice **HC_ACTION**, la routine hook deve elaborare il messaggio.
+Se *il* codice è minore di zero, la procedura hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx.**
 
 ### <a name="wparam-in"></a>wParam [in]
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
 Specifica se il messaggio è stato rimosso dalla coda.
 Questo parametro può avere uno dei valori seguenti.
 
 | Valore | Significato |
 |-------|---------|
-| **PM_NOREMOVE** 0x0000 | Il messaggio non è stato rimosso dalla coda. (Applicazione chiamata funzione **PeekMessage** , che specifica il flag di **PM_NOREMOVE** ). |
-| **PM_REMOVE** 0x0001 | Il messaggio è stato rimosso dalla coda. (Un'applicazione denominata **GetMessage** o chiamata funzione  **PeekMessage** , che specifica il flag di **PM_REMOVE** ).|
+| **PM_NOREMOVE** 0x0000 | Il messaggio non è stato rimosso dalla coda. Un'applicazione denominata **funzione PeekMessage,** che specifica il flag **PM_NOREMOVE.** |
+| **PM_REMOVE** 0x0001 | Il messaggio è stato rimosso dalla coda. Un'applicazione denominata **GetMessage** o ha chiamato la **funzione PeekMessage,** specificando il flag **PM_REMOVE.**|
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-Puntatore a una struttura [msg](/windows/desktop/api/winuser/ns-winuser-msg) che contiene i dettagli sul messaggio.
+Puntatore a una [struttura MSG](/windows/desktop/api/winuser/ns-winuser-msg) che contiene i dettagli sul messaggio.
 
-## <a name="-returns"></a>-Restituisce
+## <a name="-returns"></a>-returns
 
-Se il *codice* è minore di zero, la routine hook deve restituire il valore restituito da [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex).
+Se *il* codice è minore di zero, la routine hook deve restituire il valore restituito [da CallNextHookEx.](/windows/desktop/api/winuser/nf-winuser-callnexthookex)
 
-Se il *codice* è maggiore o uguale a zero, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito; in caso contrario, altre applicazioni che hanno installato [WH_GETMESSAGE](about-hooks.md) hook non riceveranno le notifiche Hook e potrebbero comportarsi in modo errato.
-Se la routine hook non chiama **CallNextHookEx**, il valore restituito deve essere zero.
+Se *il* codice è maggiore o uguale a zero, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito. In caso contrario, le altre applicazioni WH_GETMESSAGE [hook](about-hooks.md) non riceveranno notifiche hook e potrebbero comportarsi in modo non corretto.
+Se la routine hook non chiama **CallNextHookEx,** il valore restituito deve essere zero.
 
-## <a name="-remarks"></a>-Note
+## <a name="-remarks"></a>-remarks
 
-La procedura **GetMsgProc** hook può esaminare o modificare il messaggio.
-Dopo che la routine hook restituisce il controllo al sistema, la funzione **GetMessage** o **PeekMessage** restituisce il messaggio, insieme alle eventuali modifiche, all'applicazione che l'ha originariamente chiamata.
+La procedura hook **GetMsgProc** può esaminare o modificare il messaggio.
+Dopo che la routine hook ha restituito il controllo al sistema, la funzione **GetMessage** o **PeekMessage** restituisce il messaggio, insieme alle eventuali modifiche, all'applicazione che lo ha chiamato in origine.
 
-Un'applicazione installa questa routine hook specificando il tipo di hook **WH_GETMESSAGE** e un puntatore alla routine hook in una chiamata alla funzione **SetWindowsHookEx** .
+Un'applicazione installa questa procedura hook specificando il tipo hook **WH_GETMESSAGE** e un puntatore alla routine hook in una chiamata alla **funzione SetWindowsHookEx.**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -105,10 +105,10 @@ Un'applicazione installa questa routine hook specificando il tipo di hook **WH_G
 
 [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage)
 
-[MESSAGGIO](/windows/desktop/api/winuser/ns-winuser-msg)
+[Msg](/windows/desktop/api/winuser/ns-winuser-msg)
 
 [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew)
 
-[SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+[Setwindowshookex](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 
 [Hook](hooks.md)

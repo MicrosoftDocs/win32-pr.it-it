@@ -4,12 +4,12 @@ ms.assetid: c59af6a9-93f9-4b05-95fa-2b5b06a89b55
 title: System.Media.EncodingSettings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8638cb12d7843836625e9aef0572b794b338c7af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9bd1ca6deb6e1230f3abebf84ccd8b478d2661d6202f66837b4146e1700d2368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865660"
 ---
 # <a name="systemmediaencodingsettings"></a>System.Media.EncodingSettings
 

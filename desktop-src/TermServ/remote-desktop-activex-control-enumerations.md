@@ -1,20 +1,20 @@
 ---
-title: Enumerazioni di controlli ActiveX Desktop remoto
-description: Con il controllo ActiveX Desktop remoto vengono utilizzate le enumerazioni seguenti.
+title: Desktop remoto ActiveX di controllo
+description: Le enumerazioni seguenti vengono usate con il Desktop remoto ActiveX controllo .
 ms.assetid: C4EBA996-B3C7-492B-A6B7-96A3EC1847B2
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb2313cdc429fd39366a38f9596298a94e24e65b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f5880ff690e93d3a18337347b964aae421bff5acc95c5ec4859e597bc307822e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756182"
 ---
-# <a name="remote-desktop-activex-control-enumerations"></a>Enumerazioni di controlli ActiveX Desktop remoto
+# <a name="remote-desktop-activex-control-enumerations"></a>Desktop remoto ActiveX di controllo
 
-Con il controllo ActiveX Desktop remoto vengono utilizzate le enumerazioni seguenti.
+Le enumerazioni seguenti vengono usate con il Desktop remoto ActiveX controllo .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -30,21 +30,21 @@ Indica se l'applicazione che contiene il controllo può chiudere immediatamente 
 [**ControlReconnectStatus**](controlreconnectstatus.md)
 </dt> <dd>
 
-Specifica il risultato del metodo [**IMsRdpClient8:: Reconnect**](imsrdpclient8-reconnect.md) .
+Specifica il risultato del metodo [**IMsRdpClient8::Reconnect.**](imsrdpclient8-reconnect.md)
 
 </dd> <dt>
 
 [**ClientSpec**](clientspec.md)
 </dt> <dd>
 
-Utilizzato con la proprietà [**ClientProtocolSpec**](imsrdpclientadvancedsettings8-clientprotocolspec.md) per specificare il protocollo desktop remoto utilizzato tra il client e il server.
+Usato con la [**proprietà ClientProtocolSpec**](imsrdpclientadvancedsettings8-clientprotocolspec.md) per specificare il protocollo Desktop remoto usato tra il client e il server.
 
 </dd> <dt>
 
 [**ExtendedDisconnectReasonCode**](extendeddisconnectreasoncode.md)
 </dt> <dd>
 
-Definisce le informazioni estese sul motivo del controllo per la disconnessione.
+Definisce informazioni estese sul motivo della disconnessione del controllo.
 
 </dd> <dt>
 
@@ -72,24 +72,24 @@ Utilizzato per specificare il tipo di azione remota.
 [**RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md)
 </dt> <dd>
 
-Utilizzato con il metodo per specificare le informazioni sull'evento.
+Utilizzato con il metodo per specificare informazioni sull'evento.
 
 </dd> <dt>
 
 [**SnapshotEncodingType**](/windows/win32/api/rdpappcontainerclient/ne-rdpappcontainerclient-snapshotencodingtype)
 </dt> <dd>
 
-Tipo di codifica usato per uno snapshot client del contenitore di app Remote Desktop Protocol (RDP).
+Tipo di codifica usato per uno snapshot del client del contenitore di app Remote Desktop Protocol (RDP).
 
 </dd> <dt>
 
 [**SnapshotFormatType**](/windows/win32/api/rdpappcontainerclient/ne-rdpappcontainerclient-snapshotformattype)
 </dt> <dd>
 
-Formato dati usato per uno snapshot client del contenitore di app Remote Desktop Protocol (RDP).
+Formato di dati usato per uno snapshot del client del contenitore di app Remote Desktop Protocol (RDP).
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

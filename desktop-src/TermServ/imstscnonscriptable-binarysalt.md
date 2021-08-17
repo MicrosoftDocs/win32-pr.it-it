@@ -1,21 +1,21 @@
 ---
-title: IMsTscNonScriptable BinarySalt - proprietà
-description: Questa proprietà non è più disponibile per l'uso. | IMsTscNonScriptable BinarySalt - proprietà
+title: Proprietà IMsTscNonScriptable BinarySalt
+description: Questa proprietà non è più disponibile per l'uso. | Proprietà IMsTscNonScriptable BinarySalt
 ms.assetid: 7af2e5be-9ddb-46ab-947c-f79ab890d7bc
 ms.tgt_platform: multiple
 keywords:
 - Proprietà BinarySalt Servizi Desktop remoto
 - Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsTscNonScriptable
 - Interfaccia IMsTscNonScriptable Servizi Desktop remoto , proprietà BinarySalt
-- Proprietà BinarySalt Servizi Desktop remoto, oggetto MsTscAx
-- Oggetto MsTscAx Servizi Desktop remoto proprietà , BinarySalt
+- Proprietà BinarySalt Servizi Desktop remoto , oggetto MsTscAx
+- Oggetto MsTscAx Servizi Desktop remoto , proprietà BinarySalt
 - Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable
 - Interfaccia IMsRdpClientNonScriptable Servizi Desktop remoto , proprietà BinarySalt
-- Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable2
+- Proprietà BinarySalt Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable2
 - Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto , proprietà BinarySalt
 - Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
 - Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà BinarySalt
-- Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Proprietà BinarySalt Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable4
 - Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà BinarySalt
 - Proprietà BinarySalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
 - Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà BinarySalt
@@ -95,7 +95,7 @@ Restituisce **E \_ NOTIMPL.**
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                              |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable è definito come c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IMsTscNonScriptable IID è definito \_ come c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 

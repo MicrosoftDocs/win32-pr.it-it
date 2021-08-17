@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable IsValid (D3dx11effect. h)
+title: Metodo ID3DX11EffectVariable IsValid (D3dx11effect.h)
 description: Confrontare il tipo di dati con i dati archiviati.
 ms.assetid: 3384afa3-6ae5-4c7c-b95d-4fe3c87cc2fe
 keywords:
-- Metodo IsValid-Direct3D 11
-- Metodo IsValid, Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo IsValid
+- Metodo IsValid Direct3D 11
+- Metodo IsValid Direct3D 11, interfaccia ID3DX11EffectVariable
+- ID3DX11EffectVariable interface Direct3D 11 , IsValid method
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5136005e675a6f5e54cc3863ef2d80ffadfb7c5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e198fcd1a5dc39823df8c707d97849c5115d818b784dd78b1e960ee2463087ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734060"
 ---
-# <a name="id3dx11effectvariableisvalid-method"></a>Metodo ID3DX11EffectVariable:: IsValid
+# <a name="id3dx11effectvariableisvalid-method"></a>Metodo ID3DX11EffectVariable::IsValid
 
 Confrontare il tipo di dati con i dati archiviati.
 
@@ -43,16 +43,16 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-**True** se la sintassi è valida. in caso contrario, **false**.
+**TRUE** se la sintassi è valida. in caso **contrario, FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
 Questo metodo verifica che il tipo di dati corrisponda ai dati archiviati dopo il cast di un'interfaccia a un'altra (usando uno dei metodi As).
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -62,8 +62,8 @@ Questo metodo verifica che il tipo di dati corrisponda ai dati archiviati dopo i
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

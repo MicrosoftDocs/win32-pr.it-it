@@ -1,11 +1,11 @@
 ---
-title: Struttura TSMF_SUPPORT_DATA_IN
-description: Contiene informazioni sui formati multimediali. | Struttura TSMF_SUPPORT_DATA_IN
+title: TSMF_SUPPORT_DATA_IN struttura
+description: Contiene informazioni sui formati multimediali. | TSMF_SUPPORT_DATA_IN struttura
 ms.assetid: cd1a8295-22b7-4d75-8325-94da4d7380d0
 ms.tgt_platform: multiple
 keywords:
-- Struttura TSMF_SUPPORT_DATA_IN Servizi Desktop remoto
-- Puntatore alla struttura PTSMF_SUPPORT_DATA_IN Servizi Desktop remoto
+- TSMF_SUPPORT_DATA_IN struttura Servizi Desktop remoto
+- PTSMF_SUPPORT_DATA_IN puntatore alla struttura Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2072363978cb0e70d64a09d855ed2861341e9cf0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8ae90099b69494425344ff65b73090cce574b843cd1589572203a4786b38ff6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755777"
 ---
-# <a name="tsmf_support_data_in-structure"></a>TSMF \_ supporta \_ i dati \_ nella struttura
+# <a name="tsmf_support_data_in-structure"></a>Struttura TSMF \_ SUPPORT \_ DATA \_ IN
 
-Contiene informazioni sui formati multimediali. Questa struttura viene usata dal metodo [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante le query di supporto per il **\_ \_ \_ \_ formato WRDS query MF** .
+Contiene informazioni sui formati multimediali. Questa struttura viene usata dal metodo [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante le **query WRDS \_ QUERY \_ MF FORMAT \_ \_ SUPPORT.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ Numero di strutture nei dati a lunghezza variabile.
 **...**
 </dt> <dd>
 
-Numero variabile di strutture che contengono dati di formato multimediale.
+Numero variabile di strutture contenenti dati in formato multimediale.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Numero variabile di strutture che contengono dati di formato multimediale.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**\_supporto \_ di TSMF NODEDATA \_ in**](tsmf-support-nodedata-in.md)
+[**TSMF \_ SUPPORTA \_ NODEDATA \_ IN**](tsmf-support-nodedata-in.md)
 </dt> </dl>
 
  

@@ -1,30 +1,30 @@
 ---
 description: Viene illustrato come convalidare manualmente le credenziali di Schannel.
 ms.assetid: 0229486a-5812-4a7e-98ad-446292997ee3
-title: Convalida manuale di credenziali Schannel
+title: Convalida manuale delle credenziali Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20ec87b662cf9d3711c1ae729d2dd3b14ac5f79e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d71ddff50ab674825d8effd1a08477116ee0c654d031e7f353a30c95e4f1249f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787003"
 ---
-# <a name="manually-validating-schannel-credentials"></a>Convalida manuale di credenziali Schannel
+# <a name="manually-validating-schannel-credentials"></a>Convalida manuale delle credenziali Schannel
 
-Per impostazione predefinita, Schannel convalida il [*certificato del server*](../secgloss/s-gly.md) chiamando la funzione [**WinVerifyTrust**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust) . Tuttavia, se questa funzionalità è stata disabilitata usando il \_ \_ \_ \_ flag di convalida di ISC req Manual, è necessario convalidare il certificato fornito dal server che sta provando a stabilirne l'identità.
+Per impostazione predefinita, Schannel convalida il [*certificato del server*](../secgloss/s-gly.md) chiamando la funzione [**WinVerifyTrust.**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust) Tuttavia, se questa funzionalità è stata disabilitata utilizzando il flag ISC \_ REQ \_ MANUAL \_ CRED VALIDATION, è necessario convalidare il certificato fornito dal server che sta tentando di stabilire la \_ propria identità.
 
-Per convalidare manualmente il certificato del server, è necessario prima ottenerlo. Usare la funzione [**QueryContextAttributes (generale)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) e specificare il \_ valore dell' \_ attributo di contesto del certificato remoto SECPKG attr \_ \_ . Questo attributo restituisce una struttura del [**\_ contesto**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) del certificato contenente il certificato fornito dal server. Questo certificato viene chiamato certificato foglia perché è l'ultimo certificato nella catena di certificati ed è più lontano dal [*certificato radice*](../secgloss/r-gly.md).
+Per convalidare manualmente il certificato del server, è prima necessario ottenerlo. Usare la [**funzione QueryContextAttributes (Generale)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) e specificare il valore dell'attributo SECPKG \_ ATTR \_ REMOTE \_ CERT \_ CONTEXT. Questo attributo restituisce una [**struttura CERT \_ CONTEXT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) contenente il certificato fornito dal server. Questo certificato è denominato certificato foglia perché è l'ultimo certificato nella catena di certificati ed è più lontano dal [*certificato radice*](../secgloss/r-gly.md).
 
-Utilizzando il certificato foglia è necessario verificare quanto segue:
+Usando il certificato foglia è necessario verificare quanto segue:
 
--   La catena di certificati è completa e la radice è un certificato di un' [*autorità di certificazione*](../secgloss/c-gly.md) (CA) attendibile.
--   L'ora corrente non è oltre le date di inizio e di fine per ogni certificato nella catena di certificati.
+-   La catena di certificati è completa e la radice è un certificato di un'autorità [*di certificazione (CA)*](../secgloss/c-gly.md) attendibile.
+-   L'ora corrente non supera le date di inizio e fine per ognuno dei certificati nella catena di certificati.
 -   Nessuno dei certificati nella catena di certificati è stato revocato.
--   La profondità del certificato foglia non è maggiore della profondità massima consentita specificata nell'estensione del certificato. Questo controllo è necessario solo se è stata specificata una profondità.
--   L'utilizzo del certificato è corretto. ad esempio, un [*certificato client*](../secgloss/c-gly.md) non deve essere utilizzato per autenticare un server.
--   Per l'autenticazione server, l'identità del server contenuta nel certificato foglia del server corrisponde al server che il client sta tentando di contattare. In genere, il client corrisponderà a un elemento nel campo del nome del soggetto del certificato all'indirizzo IP o al nome DNS del server.
+-   La profondità del certificato foglia non è superiore alla profondità massima consentita specificata nell'estensione del certificato. Questo controllo è necessario solo se è specificata una profondità.
+-   L'utilizzo del certificato è corretto, ad esempio un certificato [*client*](../secgloss/c-gly.md) non deve essere usato per autenticare un server.
+-   Per l'autenticazione server, l'identità del server contenuta nel certificato foglia del server corrisponde al server che il client sta tentando di contattare. In genere, il client corrisponde a un elemento nel campo Nome soggetto del certificato con l'indirizzo IP o il nome DNS del server.
 
  
 

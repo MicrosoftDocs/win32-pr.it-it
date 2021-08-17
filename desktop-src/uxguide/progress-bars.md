@@ -4,17 +4,17 @@ description: Con un indicatore di stato, gli utenti possono seguire lo stato di 
 ms.assetid: 067961fa-2fb1-4cd1-99a4-cbe2244c3913
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: f0bb693541f40b82c66409b9f6696456491ba687
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: b62240da0df0b284e8a5f7175131eaa9db18fc1743f9f8701019cc2efb390464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117853835"
 ---
 # <a name="progress-bars"></a>Barre di stato
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
 Con un indicatore di stato, gli utenti possono seguire lo stato di avanzamento di un'operazione di lunga durata. Un indicatore di stato può mostrare una percentuale approssimativa di completamento (determinato) o indicare che un'operazione è in corso (indeterminata).
 
@@ -35,7 +35,7 @@ Per decidere, prendi in considerazione queste domande:
 
 -   **L'operazione verrà completata in circa cinque secondi o meno?** In tal caso, usare invece [un indicatore di](inter-mouse.md) attività, perché la visualizzazione di un indicatore di stato per una durata così breve potrebbe distrarre. Se l'operazione richiede in genere cinque secondi o meno, ma a volte ne richiede di più, iniziare con un puntatore occupato e convertirlo in un indicatore di stato dopo cinque secondi.
 -   **Un indicatore di stato indeterminato viene usato per attendere il completamento di un'attività da parte dell'utente?** In tal caso, non usare un indicatore di stato. Gli barre di stato sono per lo stato del computer, non per l'utente.
--   **Un indicatore di stato indeterminato è combinato con un'animazione?** In tal caso, usare solo l'animazione. L'indicatore di stato indeterminato è in effetti un'animazione generica e non aggiunge alcun valore all'animazione.
+-   **Un indicatore di stato indeterminato è combinato con un'animazione?** In caso contrario, usare solo l'animazione. L'indicatore di stato indeterminato è in effetti un'animazione generica e non aggiunge alcun valore all'animazione.
 -   **L'operazione è un'attività in background molto lunga (più di due minuti) per cui gli utenti sono più interessati al completamento che allo stato di avanzamento?** In caso contrario, usare [una notifica.](mess-notif.md) In questo caso, gli utenti ese avanti nel frattempo e non monitorano lo stato di avanzamento. L'uso di una notifica consente agli utenti di eseguire altre attività senza interruzioni. Esempi di operazioni di questo tipo includono stampa, backup, analisi di sistema e trasferimenti o conversioni di dati in blocco.
 -   **Al termine dell'operazione, gli utenti saranno in grado di riprodurre i risultati?** In tal caso, usare invece un dispositivo di scorrimento. Esempi di tali operazioni includono la registrazione e la riproduzione di video e audio.
 
@@ -45,9 +45,9 @@ Per decidere, prendi in considerazione queste domande:
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-Durante un'operazione di lunga durata, gli utenti necessitano di un'idea generale delle operazioni. Devono anche conoscere:
+Durante un'operazione di lunga durata, gli utenti necessitano di un'idea generale dell'operazione. Devono anche conoscere:
 
--   È stata avviata un'operazione di lunga durata.
+-   L'avvio di un'operazione di lunga durata.
 -   Lo stato di avanzamento è in corso e l'operazione verrà completata (e pertanto non è stata bloccata).
 -   Percentuale approssimativa dell'operazione completata (e pertanto la percentuale rimanente).
 -   Se devono annullare l'operazione se non vale la pena continuare ad attendere.
@@ -55,7 +55,7 @@ Durante un'operazione di lunga durata, gli utenti necessitano di un'idea general
 
 **Usare gli indicatore di stato determinati** per le operazioni che richiedono una quantità di tempo delimitata, anche se tale quantità di tempo non può essere stimata in modo accurato. Gli barre di stato indeterminati indicano lo stato di avanzamento in corso, ma non forniscono altre informazioni. Non scegliere un indicatore di stato indeterminato basato solo sulla possibile mancanza di accuratezza.
 
-Si supponga, ad esempio, che un'operazione richieda cinque passaggi e che ognuno di questi passaggi richieda una quantità di tempo delimitata, ma la quantità di tempo per ogni passaggio può variare notevolmente. In questo caso, usare un indicatore di stato determinato e mostrare lo stato di avanzamento quando ogni passaggio viene completato proporzionalmente alla quantità di tempo generalmente necessario per ogni passaggio. Usare un indicatore di stato indeterminato solo se un indicatore di stato determinato fa sì che gli utenti concludono in modo non corretto che l'operazione è stata bloccata.
+Si supponga, ad esempio, che un'operazione richieda cinque passaggi e che ognuno di questi passaggi richieda una quantità di tempo delimitata, ma la quantità di tempo per ogni passaggio può variare notevolmente. In questo caso, usare un indicatore di stato determinato e mostrare lo stato di avanzamento quando ogni passaggio viene completato proporzionalmente alla quantità di tempo generalmente necessario per ogni passaggio. Usare un indicatore di stato indeterminato solo se un indicatore di stato determinato fa sì che gli utenti concludono in modo errato che l'operazione è stata bloccata.
 
 **Se si fa una sola cosa...**
 
@@ -77,7 +77,7 @@ Gli barre di stato hanno diversi modelli di utilizzo:
 <tbody>
 <tr class="odd">
 <td><strong>Barre di stato determinate modali</strong><br/> Indicare lo stato di avanzamento di un'operazione compilando da sinistra a destra e completando l'operazione al termine dell'operazione. <br/></td>
-<td>Poiché questo <a href="glossary.md"></a>feedback è modale, gli utenti non possono eseguire altre attività nella finestra (o l'elemento padre se visualizzato in una finestra di dialogo modale) fino al completamento dell'operazione. <br/> <img src="images/progress-bars-image3.png" alt="Screen shot of progress bar in modal window " /><br/> In questo esempio, l'indicatore di stato fornisce feedback durante la configurazione. <br/></td>
+<td>Poiché questo <a href="glossary.md"></a>feedback è modale, gli utenti non possono eseguire altre attività nella finestra (o l'elemento padre se visualizzato in una finestra di dialogo modale) fino al completamento dell'operazione. <br/> <img src="images/progress-bars-image3.png" alt="Screen shot of progress bar in modal window " /><br/> In questo esempio l'indicatore di stato fornisce feedback durante la configurazione. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>Barre di stato determinate modali con un pulsante Annulla o Arresta</strong><br/> Consentire agli utenti di interrompere l'operazione, ad esempio perché l'operazione sta prendendo troppo tempo o non vale la pena attendere.<br/></td>
@@ -89,7 +89,7 @@ Gli barre di stato hanno diversi modelli di utilizzo:
 </tr>
 <tr class="even">
 <td><strong>Barre di stato doppie determinate modali</strong><br/> Indicare lo stato di avanzamento di un'operazione in più passaggi visualizzando lo stato del passaggio corrente nel primo indicatore di stato e l'avanzamento complessivo nella seconda barra.<br/></td>
-<td>Poiché il primo indicatore di stato fornisce poche informazioni aggiuntive e può essere piuttosto distratto, questo modello non è consigliato. Al contrario, fare in modo che tutti i passaggi dell'operazione contino una parte dello stato di avanzamento e che un singolo indicatore di stato passi al completamento una sola volta. <br/> <img src="images/progress-bars-image6.png" alt="Screen shot of current and overall progress bars " /><br/> In questo esempio, il primo indicatore di stato mostra lo stato di avanzamento del passaggio corrente e il secondo indicatore di stato mostra lo stato di avanzamento complessivo.<br/>
+<td>Poiché il primo indicatore di stato fornisce poche informazioni aggiuntive e può essere piuttosto distratto, questo modello non è consigliato. Al contrario, fare in modo che tutti i passaggi dell'operazione condino una parte dello stato di avanzamento e che un singolo indicatore di stato passi al completamento una sola volta. <br/> <img src="images/progress-bars-image6.png" alt="Screen shot of current and overall progress bars " /><br/> In questo esempio, il primo indicatore di stato mostra lo stato di avanzamento del passaggio corrente e il secondo indicatore di stato mostra lo stato di avanzamento complessivo.<br/>
 <blockquote>
 [!Note]<br />
 Questo modello non è in genere necessario e deve essere evitato.
@@ -98,7 +98,7 @@ Questo modello non è in genere necessario e deve essere evitato.
 </tr>
 <tr class="odd">
 <td><strong>Barre di stato determinate non modabili</strong><br/> Indicare lo stato di avanzamento di un'operazione compilando da sinistra a destra e completando l'operazione al termine dell'operazione.<br/></td>
-<td>A differenza degli barre di stato modali, gli utenti possono eseguire altre attività mentre l'operazione è in corso. Questi barre di stato possono essere visualizzati nel contesto o in una barra di stato. <br/> <img src="images/progress-bars-image7.png" alt="Screen shot of progress bar on status bar " /><br/> In questo esempio, Windows Internet ExplorerWindows Internet Explorer lo stato di avanzamento per il caricamento di una pagina Web sulla barra di stato. Gli utenti possono eseguire altre attività durante il caricamento della pagina.<br/></td>
+<td>A differenza degli barre di stato modali, gli utenti possono eseguire altre attività mentre l'operazione è in corso. Questi barre di stato possono essere visualizzati nel contesto o in una barra di stato. <br/> <img src="images/progress-bars-image7.png" alt="Screen shot of progress bar on status bar " /><br/> In questo esempio, Windows Internet ExplorerWindows Internet Explorer visualizza lo stato di avanzamento per il caricamento di una pagina Web sulla barra di stato. Gli utenti possono eseguire altre attività durante il caricamento della pagina.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -113,8 +113,8 @@ Questo modello non è in genere necessario e deve essere evitato.
 
 |   Tipo di indicatore di stato  | Descrizione             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Indicatore di stato indeterminato modale**<br/> indicano che è in corso un'operazione visualizzando un'animazione che scorre continuamente sulla barra da sinistra a destra. <br/>   | Usato solo per le operazioni il cui stato di avanzamento complessivo non può essere determinato, quindi non esiste alcuna nozione di completezza. È preferibile definire gli barre di stato perché indicano la percentuale approssimativa dell'operazione completata e consentono agli utenti di determinare se l'operazione vale la pena continuare ad attendere. sono anche meno distratti visivamente. <br/> ![Screenshot dell'indicatore di stato modale e indeterminato](images/progress-bars-image8.png)<br/> In questo esempio, Windows Update usa un indicatore di stato indeterminato modale per indicare lo stato di avanzamento durante la ricerca degli aggiornamenti.<br/> |
-| **Barre di stato indeterminate non modabili**<br/> indicano che è in corso un'operazione visualizzando un'animazione che scorre continuamente sulla barra da sinistra a destra.<br/> | A differenza degli barre di stato modali, gli utenti possono eseguire altre attività mentre è in corso l'elaborazione. Questi barre di stato possono essere visualizzati nel contesto o in una barra di stato. <br/> ![Screenshot dell'indicatore di stato sottile nella finestra di Outlook ](images/progress-bars-image9.png)<br/> In questo esempio, Microsoft Outlook usa un indicatore di stato non modabile indeterminato durante la compilazione delle proprietà del contatto. Gli utenti possono continuare a usare la finestra delle proprietà mentre questa operazione è in corso.<br/>                                                                                                                    |
+| **Indicatore di stato indeterminato modale**<br/> indicano che un'operazione è in corso visualizzando un'animazione che scorre continuamente sulla barra da sinistra a destra. <br/>   | Usato solo per le operazioni il cui stato di avanzamento complessivo non può essere determinato, quindi non esiste alcuna nozione di completezza. È preferibile definire gli barre di stato perché indicano la percentuale approssimativa dell'operazione completata e consentono agli utenti di determinare se l'operazione vale la pena continuare ad attendere. sono anche meno distratti visivamente. <br/> ![Screenshot dell'indicatore di stato modale e indeterminato](images/progress-bars-image8.png)<br/> In questo esempio, Windows Update usa un indicatore di stato indeterminato modale per indicare lo stato di avanzamento durante la ricerca degli aggiornamenti.<br/> |
+| **Barre di stato indeterminate non modabili**<br/> indicano che un'operazione è in corso visualizzando un'animazione che scorre continuamente sulla barra da sinistra a destra.<br/> | A differenza degli barre di stato modali, gli utenti possono eseguire altre attività mentre è in corso l'elaborazione. Questi barre di stato possono essere visualizzati nel contesto o in una barra di stato. <br/> ![Screenshot dell'indicatore di stato sottile nella finestra di Outlook ](images/progress-bars-image9.png)<br/> In questo esempio, Microsoft Outlook usa un indicatore di stato non modabile indeterminato durante la compilazione delle proprietà del contatto. Gli utenti possono continuare a usare la finestra delle proprietà mentre questa operazione è in corso.<br/>                                                                                                                    |
 
 
 
@@ -145,7 +145,7 @@ Questo modello non è in genere necessario e deve essere evitato.
 
     In questo esempio, gli utenti possono visualizzare la velocità di trasferimento. La bassa velocità di trasferimento qui suggerisce la necessità di usare una connessione di rete a larghezza di banda elevata.
 
--   **Non specificare dettagli non necessari.** In genere gli utenti non si preoccupano dei dettagli dell'operazione eseguita. Ad esempio, gli utenti di un programma di installazione non si preoccupano del file specifico copiato o che i componenti di sistema vengono registrati perché non hanno aspettative su questi dettagli. In genere, un indicatore di stato ben etichettato da solo fornisce informazioni sufficienti, quindi fornire informazioni aggiuntive sullo stato solo se gli utenti possono eseguire un'operazione con esso. Fornire informazioni dettagliate che gli utenti non sono importanti rende l'esperienza utente e troppo complessa e tecnica. Se sono necessarie informazioni più dettagliate per il debug, non visualizzarle nelle build di rilascio.
+-   **Non specificare dettagli non necessari.** In genere gli utenti non si preoccupano dei dettagli dell'operazione in esecuzione. Ad esempio, gli utenti di un programma di installazione non si preoccupano del file specifico copiato o che i componenti di sistema vengono registrati perché non hanno aspettative su questi dettagli. In genere, un indicatore di stato ben etichettato da solo fornisce informazioni sufficienti, quindi fornire informazioni aggiuntive sullo stato solo se gli utenti possono eseguire un'operazione con esso. Fornire informazioni dettagliate che gli utenti non sono importanti rende l'esperienza utente e troppo complessa e tecnica. Se sono necessarie informazioni più dettagliate per il debug, non visualizzarle nelle build di rilascio.
 
     **Corretto:**
 
@@ -157,7 +157,7 @@ Questo modello non è in genere necessario e deve essere evitato.
 
     ![Screenshot dell'indicatore di stato che mostra la velocità di trasferimento ](images/progress-bars-image11.png)
 
-    In questo esempio, Esplora risorse copia i file selezionati dall'utente, quindi la visualizzazione dei nomi file copiati è significativa.
+    In questo esempio, Windows Explorer copia i file selezionati dall'utente, quindi la visualizzazione dei nomi file copiati è significativa.
 
     **Non corretto:**
 
@@ -165,7 +165,7 @@ Questo modello non è in genere necessario e deve essere evitato.
 
     In questo esempio, un programma di installazione fornisce dettagli che non sono importanti per l'utente.
 
--   **Fornire animazioni utili.** Se eseguite in modo ottimale, le animazioni migliorano l'esperienza utente consentendo agli utenti di visualizzare l'operazione. Le animazioni di qualità hanno un impatto maggiore rispetto al solo testo. Ad esempio, l'indicatore di stato per il comando Elimina di Outlook visualizza il Cestino per la destinazione se i file possono essere ripristinati, ma non Cestino se i file non possono essere ripristinati.
+-   **Fornire animazioni utili.** Se eseguite in modo ottimale, le animazioni migliorano l'esperienza utente consentendo agli utenti di visualizzare l'operazione. Le animazioni di qualità hanno un impatto maggiore rispetto al solo testo. Ad esempio, l'indicatore di stato per il comando Outlook Elimina visualizza il Cestino per la destinazione se i file possono essere ripristinati, ma non Cestino se i file non possono essere ripristinati.
 
     ![Screenshot dello stato di avanzamento dell'eliminazione ](images/progress-bars-image14.png)
 
@@ -197,7 +197,7 @@ Questo modello non è in genere necessario e deve essere evitato.
 ### <a name="determinate-progress-bars"></a>Indicatore di stato determinati
 
 -   **Usare gli indicatore di stato determinati** per le operazioni che richiedono una quantità di tempo delimitata, anche se tale quantità di tempo non può essere stimata in modo accurato. Gli barre di stato indeterminati indicano lo stato di avanzamento in corso, ma non forniscono altre informazioni. Non scegliere un indicatore di stato indeterminato basato solo sulla possibile mancanza di accuratezza.
--   **Indicare chiaramente la fase di avanzamento.** L'indicatore di stato deve essere in grado di indicare se l'operazione si trova all'inizio, al centro o alla fine di un'operazione. Ad esempio, gli barre di stato che si affondono immediatamente fino al 99% del completamento, quindi rimangono in tale stato per molto tempo, sono particolarmente informati e fastidiosi. In questi casi, l'indicatore di stato deve essere inizialmente impostato su un massimo del 33% per indicare che l'operazione è ancora nella fase iniziale.
+-   **Indicare chiaramente la fase di avanzamento.** L'indicatore di stato deve essere in grado di indicare se l'operazione si trova all'inizio, al centro o alla fine di un'operazione. Ad esempio, gli barre di stato che si affondono immediatamente fino al 99% del completamento, quindi rimangono in tale stato per molto tempo, sono particolarmente poco formattati e fastidiosi. In questi casi, l'indicatore di stato deve essere inizialmente impostato su un massimo del 33% per indicare che l'operazione è ancora nella fase iniziale.
 -   **Indicare chiaramente il completamento.** Non lasciare che un indicatore di stato passi al 100% a meno che l'operazione non sia stata completata.
 -   **Fornire una stima del tempo rimanente se è possibile farlo in modo accurato.** Le stime del tempo rimanente che sono accurate sono utili, ma non sono utili le stime che sono fuori dal segno o che si aggirano in modo significativo. Potrebbe essere necessario eseguire alcune operazioni di elaborazione prima di poter fornire stime accurate. In questo caso, non visualizzare stime potenzialmente imprecise durante questo periodo iniziale.
 -   **Non riavviare lo stato di avanzamento.** Un indicatore di stato perde il valore se viene riavviato (ad esempio perché viene completato un passaggio dell'operazione) perché gli utenti non hanno modo di sapere quando l'operazione verrà completata. Al contrario, fare in modo che tutti i passaggi dell'operazione contitino una parte dello stato di avanzamento e che l'indicatore di stato passi al completamento una sola volta.
@@ -213,9 +213,9 @@ Questo modello non è in genere necessario e deve essere evitato.
 ### <a name="indeterminate-progress-bars"></a>Barre di stato indeterminate
 
 -   **Usare gli barre di stato indeterminati solo per le operazioni di cui non è possibile determinare lo stato di avanzamento complessivo.** Usare gli indicatore di stato indeterminati per le operazioni che richiedono un periodo di tempo illimitato o che accedono a un numero sconosciuto di oggetti. Usare i timeout per assegnare limiti alle operazioni basate sul tempo.
--   **Eseguire la conversione in un indicatore di stato determinato dopo aver determinato lo stato di avanzamento complessivo.** Ad esempio, se sono necessari molto più di due secondi per determinare il numero di oggetti, è possibile usare un indicatore di stato indeterminato mentre gli oggetti vengono conteggiati e quindi convertirli in un indicatore di stato determinato.
--   **Non combinare le barre di stato indeterminate con le stime della percentuale di completamento o del tempo rimanente.** Se è possibile fornire queste informazioni, usare invece un indicatore di stato determinato.
--   **Non combinare barre di stato indeterminate con animazioni.** Un indicatore di stato indeterminato è in effetti un'animazione generica, pertanto è consigliabile usare uno o l'altro, ma mai entrambi.
+-   **Eseguire la conversione in un indicatore di stato determinato dopo aver determinato lo stato di avanzamento complessivo.** Ad esempio, se sono necessari più di due secondi per determinare il numero di oggetti, è possibile usare un indicatore di stato indeterminato mentre gli oggetti vengono conteggiati e quindi convertirli in un indicatore di stato determinato.
+-   **Non combinare gli indicatore di stato indeterminati con le stime della percentuale di completamento o del tempo rimanente.** Se è possibile fornire queste informazioni, usare invece un indicatore di stato determinato.
+-   **Non combinare barre di stato indeterminate con animazioni.** Un indicatore di stato indeterminato è in effetti un'animazione generica, pertanto è consigliabile usare una o l'altra, ma mai entrambe.
 
     **Corretto:**
 
@@ -225,49 +225,49 @@ Questo modello non è in genere necessario e deve essere evitato.
 
 ### <a name="modeless-progress-bars"></a>Barre di stato non modabili
 
--   **Se gli utenti possono eseguire operazioni produttive mentre l'operazione è in corso, fornire feedback non modabile.** Potrebbe essere necessario disabilitare un subset di funzionalità che richiede il completamento dell'operazione.
+-   **Se gli utenti possono eseguire operazioni produttive mentre l'operazione è in corso, fornire commenti e suggerimenti non modabili.** Potrebbe essere necessario disabilitare un subset di funzionalità che richiede il completamento dell'operazione.
 -   **Se la finestra ha una barra degli indirizzi, visualizzare lo stato di avanzamento non modato nella barra degli indirizzi.**
 
     ![Screenshot dell'indicatore di stato come parte della barra degli indirizzi ](images/progress-bars-image19.png)
 
-    In questo esempio lo stato non modato viene visualizzato nella barra degli indirizzi.
+    In questo esempio lo stato di avanzamento non modato viene visualizzato nella barra degli indirizzi.
 
 -   In caso **contrario, se la finestra ha una barra di stato, visualizzare lo stato di avanzamento non modato nella barra di stato.** Posizionare il testo corrispondente a sinistra nella barra di stato.
 
-    ![Screenshot dell'indicatore di stato come parte della barra di stato ](images/progress-bars-image7.png)
+    ![screenshot dell'indicatore di stato come parte della barra di stato ](images/progress-bars-image7.png)
 
-    In questo esempio, lo stato non modato viene visualizzato nella barra di stato.
+    In questo esempio lo stato di avanzamento non modato viene visualizzato nella barra di stato.
 
 ### <a name="modal-progress-bars"></a>Barre di stato modali
 
--   **Posizionare le barre di stato modali nelle pagine di stato o nelle finestre** di dialogo di [stato](win-dialog-box.md).
--   **Fornire un pulsante di comando per arrestare l'operazione se il completamento richiede più di pochi secondi o può non essere mai completato.** Etichettare il pulsante Annulla se l'annullamento riporta l'ambiente allo stato precedente (senza effetti collaterali), in caso contrario, etichettare il pulsante Arresta per indicare che lascia invariata l'operazione parzialmente completata. È possibile modificare l'etichetta del pulsante da Annulla a Arresta nel mezzo dell'operazione se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente. Centrare il pulsante di comando verticalmente con l'indicatore di stato invece di allinearne i vertici.
+-   **Posizionare gli barre di stato modali nelle pagine di stato o nelle finestre** di dialogo di [stato](win-dialog-box.md).
+-   **Fornire un pulsante di comando per arrestare l'operazione se il completamento richiede più di pochi secondi o se può non essere mai completato.** Etichettare il pulsante Annulla se l'annullamento riporta l'ambiente allo stato precedente (senza effetti collaterali). In caso contrario, etichettare il pulsante Arresta per indicare che lascia intatta l'operazione parzialmente completata. È possibile modificare l'etichetta del pulsante da Annulla a Arresta al centro dell'operazione se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente. Centrare il pulsante di comando verticalmente con l'indicatore di stato invece di allinearne la parte superiore.
 
     **Corretto:**
 
     ![Screenshot dello stato di attesa della rete ](images/progress-bars-image20.png)
 
-    In questo esempio, l'arresto della connessione di rete non ha alcun effetto collaterale, quindi viene usato Annulla.
+    In questo esempio l'interruzione della connessione di rete non ha alcun effetto collaterale, quindi viene usato Annulla.
 
     **Corretto:**
 
     ![Screenshot dell'indicatore di stato che mostra il tempo di copia a sinistra ](images/progress-bars-image21.png)
 
-    In questo esempio, l'interruzione della copia lascia tutti i file copiati, quindi il pulsante di comando è contrassegnato come Arresta.
+    In questo esempio, l'interruzione della copia lascia tutti i file copiati, quindi il pulsante di comando è contrassegnato con l'etichetta Arresta.
 
     **Non corretto:**
 
-    ![Screenshot dell'indicatore di stato della ricerca e del pulsante di arresto ](images/progress-bars-image22.png)
+    ![Screenshot dell'indicatore di stato della ricerca e del pulsante arresta ](images/progress-bars-image22.png)
 
-    In questo esempio, l'interruzione della ricerca non lascia alcun effetto collaterale, quindi il pulsante di comando deve essere etichettato come Annulla.
+    In questo esempio l'interruzione della ricerca non ha alcun effetto collaterale, quindi il pulsante di comando deve essere contrassegnato con l'etichetta Annulla.
 
 ### <a name="time-remaining"></a>Tempo rimanente
 
-Per le barre di stato determinate:
+Per gli barre di stato determinati:
 
 -   **Usare i formati di ora seguenti.** Iniziare con il primo dei formati seguenti in cui l'unità di tempo più grande non è zero e quindi passare al formato successivo quando l'unità di tempo più grande diventa zero.
 
-    **Per le barre di stato:**
+    **Per gli barre di stato:**
 
     **Se le informazioni correlate vengono visualizzate in formato due punti:**
 
@@ -279,7 +279,7 @@ Per le barre di stato determinate:
 
     **Se lo spazio sullo schermo è premium:**
 
-    h hrs, m mins rimanenti
+    h hrs, m min rimanenti
 
     m mins, s secs remaining
 
@@ -297,68 +297,68 @@ Per le barre di stato determinate:
 
     hh:mm rimanente
 
-    mm:ss rimanenti
+    mm:ss remaining
 
     0:ss rimanenti
 
     Questo formato compatto mostra prima le informazioni più importanti in modo che non sia troncato sulla barra delle applicazioni.
 
--   **Rendere accurate le stime, ma non fornire una precisione falsa.** Se l'unità più grande è hours, assegnare minuti (se significativi) ma non secondi.
+-   **Fare in modo che le stime siano accurate, ma non fornire false precisione.** Se l'unità più grande è di ore, assegnare minuti (se significativi) ma non secondi.
 
     **Non corretto:**
 
     hh hours, mm minutes, ss seconds
 
--   **Mantenere aggiornata la stima.** Il tempo rimanente di aggiornamento stima almeno ogni 5 secondi.
--   **Concentrarsi sul tempo rimanente** perché si tratta delle informazioni più importanti per gli utenti. Concedere il tempo totale trascorso solo in alcuni scenari in cui il tempo trascorso è utile, ad esempio quando è probabile che l'attività sia ripetuta. Se la stima del tempo rimanente è associata a un indicatore di stato, non avere il testo della percentuale di completamento perché queste informazioni vengono trasmesse dall'indicatore di stato stesso.
--   **Essere grammaticalmente corretto.** Usare unità singolari quando il numero è uno.
+-   **Mantenere aggiornata la stima.** Aggiornare le stime del tempo rimanente almeno ogni 5 secondi.
+-   **Concentrarsi sul tempo rimanente** perché si tratta delle informazioni più importanti per gli utenti. Assegnare il tempo trascorso totale solo in alcuni scenari in cui il tempo trascorso è utile, ad esempio quando è probabile che l'attività sia ripetuta. Se la stima del tempo rimanente è associata a un indicatore di stato, non avere il testo completo della percentuale perché queste informazioni vengono trasmesse dall'indicatore di stato stesso.
+-   **Essere grammaticalmente corretti.** Usare unità singolari quando il numero è uno.
 
     **Non corretto:**
 
-    1 minuto e 1 secondo
+    1 minuto, 1 secondo
 
 -   **Usare le maiuscole/minuscole come nelle frasi comuni.**
 
 ### <a name="progress-bar-colors"></a>Colori dell'indicatore di stato
 
 -   **Usare barre di stato rosse o gialle solo per indicare lo stato di avanzamento, non i risultati finali di un'attività.** Un indicatore di stato rosso o giallo indica che gli utenti devono eseguire un'azione per completare l'attività. Se la condizione non è recuperabile, lasciare verde l'indicatore di stato e visualizzare un messaggio di errore.
--   **Attivare l'indicatore di stato rosso quando è presente una condizione ripristinabile dall'utente che impedisce di eseguire ulteriori progressi.** Visualizzare un messaggio per spiegare il problema e consigliare una soluzione.
--   **Impostare** l'indicatore di stato in giallo per indicare che l'utente ha sospeso l'attività o che esiste una condizione che impedisce lo stato di avanzamento, ma lo stato è ancora in corso, ad esempio con una connettività di rete scadente. Se l'utente è stato sospeso, modificare l'etichetta del pulsante Sospendi in Riprendi. Se lo stato di avanzamento è ostacolato, visualizzare un messaggio per spiegare il problema e consigliare una soluzione.
+-   **Attivare l'indicatore di stato rosso quando è presente una condizione ripristinabile dall'utente che impedisce l'avanzamento.** Visualizzare un messaggio per spiegare il problema e consigliare una soluzione.
+-   **Impostare** l'indicatore di stato in giallo per indicare che l'utente ha sospeso l'attività o che è presente una condizione che impedisce lo stato di avanzamento, ma lo stato di avanzamento è ancora in corso, ad esempio con una connettività di rete scadente. Se l'utente è stato sospeso, modificare l'etichetta del pulsante Sospendi in Riprendi. Se lo stato di avanzamento è ostacolato, visualizzare un messaggio per spiegare il problema e consigliare una soluzione.
 
 ### <a name="meters"></a>Metri
 
--   **Usare le barre di stato solo per lo stato di avanzamento.** Usare i contatori per indicare percentuali non correlate allo stato di avanzamento.
+-   **Usare gli barre di stato solo per lo stato di avanzamento.** Usare i contatori per indicare le percentuali non correlate allo stato di avanzamento.
 
 ## <a name="recommended-sizing-and-spacing"></a>Dimensioni e spaziatura consigliate
 
 ![Diagramma che mostra il ridimensionamento e la spaziatura dell'indicatore di stato ](images/progress-bars-image23.png)
 
-Dimensioni e spaziatura consigliate per le barre di stato.
+Dimensioni e spaziatura consigliate per gli barre di stato.
 
 -   Usare sempre l'altezza consigliata dell'indicatore di stato.
     -   **Eccezione:** È possibile usare un'altezza diversa se la finestra padre non supporta l'altezza consigliata.
--   Usare la larghezza minima se si vuole rendere l'indicatore di stato non intrusivo.
--   Non usare larghezze più lunghe del valore massimo consigliato. L'indicatore di stato non deve riempire lo spazio disponibile.
+-   Usare la larghezza minima se si vuole rendere non intrusivo l'indicatore di stato.
+-   Non usare larghezze superiori al valore massimo consigliato. L'indicatore di stato non deve riempire lo spazio disponibile.
 -   Centrare l'indicatore di stato orizzontalmente se la finestra è molto più ampia della larghezza massima consigliata.
 
 ## <a name="labels"></a>Etichette
 
 ### <a name="progress-bar-labels"></a>Etichette dell'indicatore di stato
 
--   **Usare un'etichetta concisa con un controllo testo statico per indicare le operazioni in corso.** Avviare l'etichetta con un verbo (ad esempio, Copia) e terminare con i puntini di sospensione. Questa etichetta può cambiare dinamicamente se l'operazione ha più passaggi o sta elaborando più oggetti.
--   Non assegnare una chiave di [accesso univoca](glossary.md) perché il controllo non è interattivo.
+-   **Usare un'etichetta concisa con un controllo di testo statico per indicare l'operazione eseguita.** Iniziare l'etichetta con un verbo (ad esempio, Copia) e terminare con i puntini di sospensione. Questa etichetta può cambiare in modo dinamico se l'operazione ha più passaggi o sta elaborando più oggetti.
+-   Non assegnare una chiave [di accesso univoca](glossary.md) perché il controllo non è interattivo.
 -   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
--   Se l'operazione non è stata avviata direttamente dall'utente, è possibile includere un'etichetta aggiuntiva per fornire il contesto e chiedere scusa per l'interruzione. Avviare questa etichetta aggiuntiva con la frase , Attendere. Questa etichetta non deve cambiare durante l'operazione.
+-   Se l'operazione non è stata avviata direttamente dall'utente, è possibile includere un'etichetta aggiuntiva per fornire il contesto e chiedere di essere interrotta. Avviare questa etichetta aggiuntiva con la frase Please wait while (Attendere). Questa etichetta non deve cambiare durante l'operazione.
 
     ![Screenshot dell'indicatore di stato con etichetta ](images/progress-bars-image24.png)
 
-    In questo esempio all'utente viene chiesto di attendere perché l'utente non ha avviato direttamente l'operazione.
+    In questo esempio viene richiesto all'utente di attendere perché l'utente non ha avviato direttamente l'operazione.
 
 -   Posizionare l'etichetta sopra l'indicatore di stato e allineare l'etichetta al bordo sinistro dell'indicatore di stato.
 
 ### <a name="progress-bar-details"></a>Dettagli dell'indicatore di stato
 
--   Specificare i dettagli in testo statico, che precedono i dati con un'etichetta che termina con i due punti. Specificare le unità (secondi, kilobyte e così via) dopo il testo dei dettagli.
+-   Specificare i dettagli nel testo statico, precedendo i dati con un'etichetta che termina con i due punti. Specificare le unità (secondi, kilobyte e così via) dopo il testo dei dettagli.
 
     **Corretto:**
 
@@ -370,18 +370,18 @@ Dimensioni e spaziatura consigliate per le barre di stato.
 
     ![Screenshot dell'indicatore di stato senza etichetta appropriata ](images/progress-bars-image25.png)
 
-    In questo esempio i dettagli non sono etichettati, quindi gli utenti devono determinarne il significato.
+    In questo esempio, i dettagli non sono etichettati e quindi richiedono agli utenti di determinarne il significato.
 
 -   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
 -   Posizionare i dettagli sotto l'indicatore di stato e allineare l'etichetta al bordo sinistro dell'indicatore di stato.
--   Non assegnare la percentuale di completamento o di rimanente perché queste informazioni vengono trasmesse dall'indicatore di stato stesso.
+-   Non assegnare la percentuale di completamento o di rimanente perché queste informazioni vengono comunicate dall'indicatore di stato stesso.
 
 ### <a name="cancel-button"></a>Scegliere il pulsante Annulla.
 
--   Etichettare il pulsante Annulla se l'annullamento riporta l'ambiente allo stato precedente (senza alcun effetto collaterale); In caso contrario, etichettare il pulsante Arresta per indicare che lascia intatta l'operazione parzialmente completata.
--   È possibile modificare l'etichetta del pulsante da Annulla a Arresta al centro dell'operazione se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente.
+-   Etichettare il pulsante Annulla se l'annullamento riporta l'ambiente allo stato precedente (senza effetto collaterale); In caso contrario, etichettare il pulsante Arresta per indicare che l'operazione parzialmente completata rimane invariata.
+-   È possibile modificare l'etichetta del pulsante da Annulla a Arresta nel mezzo dell'operazione se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente.
 
-### <a name="progress-dialog-box-titles"></a>Titoli delle finestre di dialogo di stato
+### <a name="progress-dialog-box-titles"></a>Titoli della finestra di dialogo Stato
 
 -   Se l'indicatore di stato viene visualizzato in una finestra di dialogo modale, il titolo della finestra di dialogo deve essere il nome del programma o il nome dell'operazione. Non usare l'etichetta dell'indicatore di stato per il titolo della finestra di dialogo.
 
@@ -395,9 +395,9 @@ Dimensioni e spaziatura consigliate per le barre di stato.
 
     ![Screenshot del titolo della finestra di dialogo ridondante ](images/progress-bars-image27.png)
 
-    In questo esempio il testo del titolo della finestra di dialogo è una ridescrizione dell'etichetta dell'indicatore di stato. In alternativa, è necessario usare il nome del programma.
+    In questo esempio, il testo del titolo della finestra di dialogo è una riezione dell'etichetta dell'indicatore di stato. In alternativa, è necessario usare il nome del programma.
 
--   Se l'indicatore di stato viene visualizzato in una finestra di dialogo non modali, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni inserendo concisamente le informazioni distintive. Esempio: "66% Completato".
+-   Se l'indicatore di stato viene visualizzato in una finestra di dialogo non modali, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni posizionando concisamente le informazioni distintive per prime. Esempio: "66% completato".
 
  
 

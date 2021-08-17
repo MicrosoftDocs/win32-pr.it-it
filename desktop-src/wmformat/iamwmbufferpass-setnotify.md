@@ -1,11 +1,11 @@
 ---
-title: Metodo IAMWMBufferPass senotify
-description: Il metodo senotify viene usato dalle applicazioni per fornire il filtro WM ASF Writer o WM ASF Reader con un puntatore all'interfaccia IAMWMBufferPassCallback dell'applicazione.
+title: Metodo IAMWMBufferPass SetNotify
+description: Il metodo SetNotify viene usato dalle applicazioni per fornire al filtro WM ASF Writer o WM ASF Reader un puntatore all'interfaccia IAMWMBufferPassCallback dell'applicazione.
 ms.assetid: b0fff344-a20c-4cfc-828b-c6fc49d990ea
 keywords:
-- Metodo senotify-formato Windows Media
-- Metodo senotify, formato Windows Media, interfaccia IAMWMBufferPass
-- Interfaccia IAMWMBufferPass Windows Media Format, metodo senotify
+- Metodo SetNotify windows Media Format
+- Metodo SetNotify windows Media Format , interfaccia IAMWMBufferPass
+- Metodo SetNotify dell'interfaccia IAMWMBufferPass windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9739952792fcfa49da1b5656db513c3af41a419c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47e189a2654ed4c760fdfcd6ced5506cc90d5e7cc989a7f79979e6d95b0bbfb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847607"
 ---
-# <a name="iamwmbufferpasssetnotify-method"></a>Metodo IAMWMBufferPass:: senotify
+# <a name="iamwmbufferpasssetnotify-method"></a>Metodo IAMWMBufferPass::SetNotify
 
-Il metodo **senotify** viene usato dalle applicazioni per fornire il filtro WM ASF Writer o [WM ASF Reader](wm-asf-reader-filter.md) con un puntatore all'interfaccia [**IAMWMBufferPassCallback**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpasscallback) dell'applicazione.
+Il **metodo SetNotify** viene usato dalle applicazioni per fornire al filtro WM ASF Writer o [WM ASF Reader](wm-asf-reader-filter.md) un puntatore all'interfaccia [**IAMWMBufferPassCallback**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpasscallback) dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
 HRESULT SetNotify(
-  [in] IAMWMBufferPassCallback *pCallback
+  [in] IAMWMBufferPassCallback *pCallback
 );
 ```
 
@@ -41,16 +41,16 @@ HRESULT SetNotify(
 
 <dl> <dt>
 
-*pCallback* \[ in\]
+*pCallback* \[ Pollici\]
 </dt> <dd>
 
-Puntatore all'interfaccia **IAMWMBufferPassCallback** dell'applicazione.
+Puntatore all'interfaccia **IAMWMBufferPassCallback dell'applicazione.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -63,6 +63,6 @@ Chiamare questo metodo prima di inserire il grafico del filtro nello stato di es
 [**Interfaccia IAMWMBufferPass**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpass)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

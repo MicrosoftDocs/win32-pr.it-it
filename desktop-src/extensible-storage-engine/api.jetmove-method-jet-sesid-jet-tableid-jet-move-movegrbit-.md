@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)'
-title: Metodo API. JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
+description: 'Altre informazioni su: Metodo Api.JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)'
+title: Metodo Api.JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
 TOCTitle: JetMove method (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetMove(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_Move,Microsoft.Isam.Esent.Interop.MoveGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetmove(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5b6eeaf8d728cf63304141614caaf9598bcc6c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b7ea09ae36160fc83fbee4dc3b7f94222f55125b992039aa15035c1d958c696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117718719"
 ---
-# <a name="apijetmove-method-jet_sesid-jet_tableid-jet_move-movegrbit"></a>Metodo API. JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
+# <a name="apijetmove-method-jet_sesid-jet_tableid-jet_move-movegrbit"></a>Metodo Api.JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
 
-Spostarsi all'interno di un indice. Il cursore può essere posizionato all'inizio o alla fine dell'indice e spostato in avanti e indietro in base a un numero specificato di voci di indice. Vedere anche [TryMoveFirst (JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast (JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext (JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious (JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).
+Spostarsi all'interno di un indice. Il cursore può essere posizionato all'inizio o alla fine dell'indice e spostato avanti e indietro in base a un numero specificato di voci di indice. Vedere anche [TryMoveFirst(JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast(JET_SESID, JET_TABLEID)](./api.trymovelast-method.md), [TryMoveNext(JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious(JET_SESID, JET_TABLEID)](./api.trymoveprevious-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,28 +64,28 @@ public static void JetMove(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare per la chiamata.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da posizionare.
 
 <!-- end list -->
 
   - numRows  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_Move](./jet-move-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_Move](./jet-move-enumeration.md)  
     
     Offset che indica la distanza di spostamento del cursore.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. MoveGrbit](./movegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.MoveGrbit](./movegrbit-enumeration.md)  
     
     Opzioni di spostamento.
 
@@ -95,8 +95,8 @@ public static void JetMove(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetMove](./api.jetmove-method.md)
+[Overload di JetMove](./api.jetmove-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

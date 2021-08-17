@@ -29,7 +29,7 @@ Nella procedura seguente viene descritto come eseguire uno script.
 
 1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non a .txt'estensione al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
-3.  Digitare **cscript filename.vbs** al prompt dei comandi.
+3.  Digitare **cscript filename.vbs** prompt dei comandi.
 4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da Controlli di accesso utente.
 
 > [!Note]  
@@ -265,7 +265,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... trovare i servizi che devono essere in esecuzione prima di poter avviare il servizio DHCP?</td>
-<td><p>Eseguire una query <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> <a href="associators-of-statement.md">per</a> gli WIN32_SERVICE classe denominata DHCP che si Win32_DependentService classe e che hanno Dependent nella &quot; proprietà &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Ruolo</strong> indica il ruolo del servizio DHCP: in questo caso dipende dagli altri servizi in fase di avvio.</p>
+<td><p>Eseguire una <a href="associators-of-statement.md">query per</a> GLI <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>ASSOCIATORI WIN32_SERVICE</strong></a> classe denominata DHCP che si Win32_DependentService classe e hanno Dependent nella proprietà &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Ruolo</strong> indica il ruolo del servizio DHCP: in questo caso dipende dagli altri servizi in fase di avvio.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>

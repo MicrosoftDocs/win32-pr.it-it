@@ -1,7 +1,7 @@
 ---
-description: Contiene l'oggetto cartella padre.
+description: Contiene l'oggetto Folder padre.
 ms.assetid: b832948c-f599-4ada-8760-9280b86abfed
-title: Proprietà Folder. ParentFolder (shldisp. h)
+title: Proprietà Folder.ParentFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 200d8f8c931bd81015f52226bed5a4e584951e20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d812d127884ca1c76533992a4ee4d8c527d151891239d715f5e3a7f8a5f0ba0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860269"
 ---
-# <a name="folderparentfolder-property"></a>Proprietà Folder. ParentFolder
+# <a name="folderparentfolder-property"></a>Folder.ParentFolder - proprietà
 
-Contiene l'oggetto [**cartella**](folder.md) padre.
+Contiene [**l'oggetto Folder**](folder.md) padre.
 
 Questa proprietà è di sola lettura.
 
@@ -37,12 +37,12 @@ ParentFolder = Folder.ParentFolder
 
 ## <a name="property-value"></a>Valore proprietà
 
-Riferimento all'oggetto ParentFolder.
+Riferimento all'oggetto all'oggetto ParentFolder.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi sono implementati per tutte le cartelle. Il metodo [**ParseName**](folder-parsename.md) , ad esempio, non è implementato per la cartella del pannello di controllo ( \_ controlli CSIDL). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non è implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato 0x800A01BD errore di tipo decimale 445.
 
  
 
@@ -50,7 +50,7 @@ Riferimento all'oggetto ParentFolder.
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di **ParentFolder** per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -78,7 +78,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -145,11 +145,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

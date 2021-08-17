@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_RETURNSTRING (VFW. h)
-description: Il \_ messaggio MCIWNDM RETURNSTRING recupera la risposta al comando di stringa MCI più recente inviato a un dispositivo MCI.
+title: MCIWNDM_RETURNSTRING messaggio (Vfw.h)
+description: Il messaggio RETURNSTRING MCIWNDM recupera la risposta al comando stringa MCI più \_ recente inviato a un dispositivo MCI.
 ms.assetid: 36a5222c-a63c-4b8c-ad0c-a00477e95b96
 keywords:
-- MCIWNDM_RETURNSTRING messaggi multimediali di Windows
+- MCIWNDM_RETURNSTRING messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b99307bd7d61a70db594d0a696cceccd6d246a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2ea9624c70245c67f0f6a78af68bf291ae3ce60ba65ae2cd273008bbc914ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137658"
 ---
-# <a name="mciwndm_returnstring-message"></a>\_Messaggio MCIWNDM RETURNSTRING
+# <a name="mciwndm_returnstring-message"></a>Messaggio RETURNSTRING MCIWNDM \_
 
-Il messaggio **MCIWNDM \_ RETURNSTRING** recupera la risposta al comando di stringa MCI più recente inviato a un dispositivo MCI. Le informazioni nella risposta vengono fornite come stringa con terminazione null. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring) .
+Il **messaggio \_ RETURNSTRING MCIWNDM** recupera la risposta al comando stringa MCI più recente inviato a un dispositivo MCI. Le informazioni nella risposta vengono fornite come stringa con terminazione Null. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndReturnString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 
 
 ```C++
@@ -45,20 +45,20 @@ Dimensione, in byte, del buffer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntatore a un buffer definito dall'applicazione per contenere la stringa con terminazione null.
+Puntatore a un buffer definito dall'applicazione per contenere la stringa con terminazione Null.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un Integer che corrisponde alla stringa MCI.
+Restituisce un intero corrispondente alla stringa MCI.
 
 ## <a name="remarks"></a>Commenti
 
-Se la stringa con terminazione null è più lunga del buffer, la stringa viene troncata.
+Se la stringa con terminazione Null è più lunga del buffer, la stringa viene troncata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Se la stringa con terminazione null è più lunga del buffer, la stringa viene t
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

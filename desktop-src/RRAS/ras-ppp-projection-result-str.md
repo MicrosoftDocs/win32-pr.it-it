@@ -1,6 +1,6 @@
 ---
 title: RAS_PPP_PROJECTION_RESULT struttura (Rassapi.h)
-description: La struttura RAS PPP PROJECTION RESULT viene usata per segnalare i risultati delle varie operazioni di \_ \_ \_ proiezione PPP per una porta.
+description: La struttura RAS PPP PROJECTION RESULT viene usata per segnalare i risultati delle varie operazioni \_ \_ di \_ proiezione PPP per una porta.
 ms.assetid: 061b1b51-4b6f-4127-8ee5-8a1913a2aa99
 keywords:
 - RAS_PPP_PROJECTION_RESULT struttura RAS

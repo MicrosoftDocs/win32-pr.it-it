@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetIPortableDeviceKeyCollectionValue recupera un valore IPortableDeviceKeyCollection (Type VT \_ Unknown) specificato da una chiave.
+description: Il metodo GetIPortableDeviceKeyCollectionValue recupera un valore IPortableDeviceKeyCollection (tipo VT \_ UNKNOWN) specificato da una chiave.
 ms.assetid: 131c8e05-9224-4db4-bdf6-0fd9c563e049
-title: 'Metodo IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7868b71790f6dbb7525fcd1be49b197042a196f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13a7ccde6a7cf5a73c78cc382341f7d750d9032cbfd8d69bdcfd3e318eeccece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194102"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>Metodo IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue
+# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>Metodo IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue
 
-Il metodo **GetIPortableDeviceKeyCollectionValue** recupera un valore **IPORTABLEDEVICEKEYCOLLECTION** (Type VT \_ Unknown) specificato da una chiave.
+Il **metodo GetIPortableDeviceKeyCollectionValue** recupera un **valore IPortableDeviceKeyCollection** (tipo VT \_ UNKNOWN) specificato da una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,31 +41,31 @@ HRESULT GetIPortableDeviceKeyCollectionValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave **REFPROPERTYKEY** che specifica l'elemento da recuperare.
 
 </dd> <dt>
 
-*ppValue* \[ out\]
+*ppValue* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al puntatore all'interfaccia [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) recuperato. Il chiamante è responsabile della chiamata della **versione** sull'interfaccia recuperata.
+Puntatore al puntatore a [**interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) recuperato. Il chiamante è responsabile della chiamata **a Release** sull'interfaccia recuperata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                                                 |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *Key* non è un'interfaccia **IPortableDeviceKeyCollection** .<br/> |
-| <dl> <dt>**HRESULT \_ da \_ Win32 (errore \_ non \_ trovato)**</dt> </dl> | La proprietà specificata dalla *chiave* non è presente nella raccolta.<br/>                             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                                                 |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *key* non è **un'interfaccia IPortableDeviceKeyCollection.**<br/> |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nella raccolta.<br/>                             |
 
 
 
@@ -73,7 +73,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [recupero di eventi del servizio supportati](retrieving-supported-events.md).
+Per un esempio di come usare questo metodo, vedere [Recupero di eventi del servizio supportati](retrieving-supported-events.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Per un esempio di come usare questo metodo, vedere [recupero di eventi del servi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -96,10 +96,10 @@ Per un esempio di come usare questo metodo, vedere [recupero di eventi del servi
 [**IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-setiportabledevicekeycollectionvalue.md)
 </dt> <dt>
 
-[Recupero degli eventi del servizio supportati](retrieving-supported-events.md)
+[Recupero di eventi del servizio supportati](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recupero di metodi di servizio supportati](retrieving-supported-methods.md)
+[Recupero dei metodi di servizio supportati](retrieving-supported-methods.md)
 </dt> </dl>
 
  

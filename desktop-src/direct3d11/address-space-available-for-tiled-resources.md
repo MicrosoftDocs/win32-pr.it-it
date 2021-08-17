@@ -1,38 +1,38 @@
 ---
-title: Spazio degli indirizzi disponibile per le risorse affiancate
-description: In questa sezione viene specificato lo spazio degli indirizzi virtuale disponibile per le risorse affiancate.
+title: Spazio indirizzi disponibile per le risorse affiancate
+description: Questa sezione specifica lo spazio degli indirizzi virtuali disponibile per le risorse affiancate.
 ms.assetid: A3D08564-3C7A-4578-BC38-EE202045580A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c774c697cf5d3bf575d01ce5751dc413c1d14b0
-ms.sourcegitcommit: 4dcafeb002cbee4f6028b32a956ec22cb95cbc44
+ms.openlocfilehash: e5753fdb9d700689c6ebfffdae4368399c0e4bb36d328c9ff1a8cfc284005214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "103719327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734283"
 ---
-# <a name="address-space-available-for-tiled-resources"></a>Spazio degli indirizzi disponibile per le risorse affiancate
+# <a name="address-space-available-for-tiled-resources"></a>Spazio indirizzi disponibile per le risorse affiancate
 
-In questa sezione viene specificato lo spazio degli indirizzi virtuale disponibile per le risorse affiancate.
+Questa sezione specifica lo spazio degli indirizzi virtuali disponibile per le risorse affiancate.
 
-Nei sistemi operativi a 64 bit sono disponibili almeno 40 bit di spazio degli indirizzi virtuali (1 terabyte).
+Nei sistemi operativi a 64 bit sono disponibili almeno 40 bit di spazio degli indirizzi virtuali (1 Terabyte).
 
-Per i sistemi operativi a 32 bit, lo spazio degli indirizzi è 32 bit (4 GB). Per i sistemi ARM a 32 bit, la creazione di singole risorse affiancate può non riuscire se l'allocazione utilizzerà più di 27 bit di spazio degli indirizzi (128 MB). Sono incluse eventuali spaziatura interna nascosta nello spazio degli indirizzi che l'hardware può usare per mipmap, riempimento affiancato e possibilmente dimensioni della superficie di riempimento a potenze di 2.
+Per i sistemi operativi a 32 bit, lo spazio indirizzi è a 32 bit (4 GB). Per i sistemi ARM a 32 bit, la creazione di singole risorse affiancate può non riuscire se l'allocazione usa più di 27 bit di spazio degli indirizzi (128 MB). Ciò include la spaziatura interna nascosta nello spazio degli indirizzi che l'hardware può usare per le mipmap, la spaziatura interna delle sezioni impacchetto ed eventualmente le dimensioni della superficie di riempimento su 2.
 
-Nei sistemi grafici con una tabella di pagina separata per l'unità di elaborazione grafica (GPU), la maggior parte di questo spazio di indirizzi sarà disponibile per le risorse GPU eseguite dall'applicazione, sebbene le allocazioni GPU eseguite dal driver di visualizzazione rientrino nello stesso spazio.
+Nei sistemi di grafica con una tabella di pagine separata per l'unità di elaborazione grafica (GPU), la maggior parte di questo spazio indirizzi sarà disponibile per le risorse GPU effettuate dall'applicazione, anche se le allocazioni gpu effettuate dal driver di visualizzazione rientrano nello stesso spazio.
 
-Nei sistemi futuri con una tabella di pagina condivisa tra la CPU e la GPU, lo spazio degli indirizzi disponibile viene condiviso tra tutte le allocazioni di CPU e GPU in un processo.
+Nei sistemi futuri con una tabella di pagine condivisa tra CPU e GPU, lo spazio indirizzi disponibile viene condiviso tra tutte le allocazioni di CPU e GPU in un processo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Parametri per la creazione di risorse affiancate](tiled-resource-creation-parameters.md)
+[Parametri di creazione di risorse affiancate](tiled-resource-creation-parameters.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

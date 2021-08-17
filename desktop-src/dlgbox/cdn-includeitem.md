@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f25ea90f8eb37c829cdc86e89f6d7e8cad2312
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 445ea8626d7ecc6c1c72cd13eebfc9811ae229b772787eae2625224d830bc25e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721079"
 ---
-# <a name="cdn_includeitem-notification-code"></a>Codice di notifica INCLUDEITEM della rete CDN \_
+# <a name="cdn_includeitem-notification-code"></a>\_rete CDN Codice di notifica INCLUDEITEM
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, le  **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Inviato da una **finestra di** dialogo Apri o **Salva** con nome per determinare se la finestra di dialogo deve visualizzare un elemento nell'elenco di elementi di una cartella della shell. Quando l'utente apre una cartella, la finestra di dialogo invia una notifica **\_ INCLUDEITEM della** rete CDN per ogni elemento nella cartella. La finestra di dialogo invia questa notifica solo se al momento della creazione della finestra di dialogo è stato impostato il flag **OFN \_ ENABLEINCLUDENOTIFY.**
+Inviato da una **finestra di dialogo** Apri o **Salva** con nome per determinare se la finestra di dialogo deve visualizzare un elemento nell'elenco di elementi di una cartella della shell. Quando l'utente apre una cartella, la finestra di dialogo invia rete CDN **\_ notifica INCLUDEITEM** per ogni elemento nella cartella. La finestra di dialogo invia questa notifica solo se al momento della creazione della finestra di dialogo è stato impostato il flag **OFN \_ ENABLEINCLUDENOTIFY.**
 
 La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
@@ -53,7 +53,7 @@ Questo parametro non viene usato.
 
 Puntatore a una [**struttura OFNOTIFYEX.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa)
 
-La [**struttura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) il cui membro **di** codice indica il messaggio di notifica **\_ INCLUDEITEM** della rete CDN.
+La [**struttura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una  [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) il cui membro di codice indica rete CDN **messaggio di notifica \_ INCLUDEITEM.**
 
 Il **membro psf** della struttura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) è un puntatore a un'interfaccia per la cartella i cui elementi vengono enumerati. Il **membro pidl** è un puntatore a un elenco di identificatori di elemento che identifica l'elemento relativo alla cartella.
 
@@ -67,7 +67,7 @@ Per includere l'elemento, restituire un valore diverso da zero dalla routine hoo
 
 ## <a name="remarks"></a>Commenti
 
-La finestra di dialogo include sempre gli elementi con gli attributi **SFGAO \_ FILESYSTEM** e **SFGAO \_ FILESYSANCESTOR,** indipendentemente dal valore restituito da **\_ CDN INCLUDEITEM.**
+La finestra di dialogo include sempre gli elementi con gli attributi **SFGAO \_ FILESYSTEM** e **SFGAO \_ FILESYSANCESTOR,** indipendentemente dal valore restituito da **rete CDN \_ INCLUDEITEM**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,6 +103,6 @@ La finestra di dialogo include sempre gli elementi con gli attributi **SFGAO \_ 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 

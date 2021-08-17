@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRendererActionInformation IsPauseAvailable
-description: Recupera un valore che indica se ricevitore sta attualmente accettando il metodo PauseAsync.
+description: Recupera un valore che indica se la dmr accetta attualmente il metodo PauseAsync.
 ms.assetid: 095A664F-D974-410D-8741-87A171EDD071
 keywords:
-- API di streaming multimediale del metodo IsPauseAvailable
-- API di streaming multimediale del metodo IsPauseAvailable, interfaccia IMediaRendererActionInformation
-- API di streaming multimediale dell'interfaccia IMediaRendererActionInformation, metodo IsPauseAvailable
+- Metodo IsPauseAvailable API Streaming multimediale
+- Metodo IsPauseAvailable API Streaming multimediale, interfaccia IMediaRendererActionInformation
+- Metodo IsPauseAvailable dell'interfaccia IMediaRendererActionInformation
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9eb0b750f5a04528aef830d87376c276bdaf6674
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fad69863306a8a937771f16c2ab9a83a2622c571d2cd5ee5658a279bf7564132
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870848"
 ---
-# <a name="imediarendereractioninformationispauseavailable-method"></a>Metodo IMediaRendererActionInformation:: IsPauseAvailable
+# <a name="imediarendereractioninformationispauseavailable-method"></a>Metodo IMediaRendererActionInformation::IsPauseAvailable
 
-Recupera un valore che indica se ricevitore sta attualmente accettando il metodo [**PauseAsync**](imediarenderer-pauseasync.md) .
+Recupera un valore che indica se la dmr accetta attualmente il [**metodo PauseAsync.**](imediarenderer-pauseasync.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT IsPauseAvailable(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Valore booleano che è **true** se ricevitore sta attualmente accettando il metodo [**PauseAsync**](imediarenderer-pauseasync.md) e **false** in caso contrario.
+Valore booleano true **se** la dmr accetta attualmente il metodo [**PauseAsync**](imediarenderer-pauseasync.md) e **False** in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

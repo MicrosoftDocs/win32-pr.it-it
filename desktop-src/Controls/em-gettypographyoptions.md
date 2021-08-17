@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETTYPOGRAPHYOPTIONS (RichEdit. h)
+title: EM_GETTYPOGRAPHYOPTIONS messaggio (Richedit.h)
 description: Restituisce lo stato corrente delle opzioni tipografiche di un controllo Rich Edit.
 ms.assetid: 6ff5980e-3201-4b0f-9a03-3de78730ce33
 keywords:
-- Controlli di Windows Message EM_GETTYPOGRAPHYOPTIONS
+- EM_GETTYPOGRAPHYOPTIONS dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d692639ba6c8cea758abe694faed3a46e3f65be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d575550e2c239ee5b689deb5874a9803c581151b54100ab227a24d4f29941973
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831171"
 ---
-# <a name="em_gettypographyoptions-message"></a>\_Messaggio GETTYPOGRAPHYOPTIONS em
+# <a name="em_gettypographyoptions-message"></a>Messaggio \_ EM GETTYPOGRAPHYOPTIONS
 
 Restituisce lo stato corrente delle opzioni tipografiche di un controllo Rich Edit.
 
@@ -32,24 +32,24 @@ Restituisce lo stato corrente delle opzioni tipografiche di un controllo Rich Ed
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce le opzioni di tipografia correnti. Per un elenco di opzioni, vedere [**em \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md).
+Restituisce le opzioni tipografiche correnti. Per un elenco di opzioni, vedere [**EM \_ SETTYPOGRAPHYOPTIONS.**](em-settypographyoptions.md)
 
 ## <a name="remarks"></a>Commenti
 
-È possibile attivare l'interruzioni di riga avanzate inviando il messaggio [**\_ SETTYPOGRAPHYOPTIONS em**](em-settypographyoptions.md) . Le interruzioni di riga avanzate e normali possono anche essere attivate automaticamente dal controllo Rich Edit, se necessario per determinate lingue.
+È possibile attivare l'interruzione di riga avanzata inviando il [**messaggio EM \_ SETTYPOGRAPHYOPTIONS.**](em-settypographyoptions.md) L'interruzione di riga avanzata e normale può anche essere attivata automaticamente dal controllo Rich Edit, se necessario per determinate lingue.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,10 +57,10 @@ Restituisce le opzioni di tipografia correnti. Per un elenco di opzioni, vedere 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Restituisce le opzioni di tipografia correnti. Per un elenco di opzioni, vedere 
 **Riferimento**
 </dt> <dt>
 
-[**\_SETTYPOGRAPHYOPTIONS em**](em-settypographyoptions.md)
+[**EM \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md)
 </dt> <dt>
 
 **Informazioni concettuali**

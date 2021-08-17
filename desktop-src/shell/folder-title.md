@@ -1,7 +1,7 @@
 ---
 description: Contiene il titolo della cartella.
 ms.assetid: 95c064ff-4504-4e9c-80ac-47beca443ad4
-title: Proprietà Folder. title (shldisp. h)
+title: Proprietà Folder.Title (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8fc66d231d49d724749ae79b248b4dca9d917acc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b449caa1a1447b292a982522e30b9172168f09098d5e4dee0647c0ae6dc14e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860258"
 ---
-# <a name="foldertitle-property"></a>Proprietà Folder. title
+# <a name="foldertitle-property"></a>Folder.Title - proprietà
 
 Contiene il titolo della cartella.
 
@@ -37,20 +37,20 @@ strTitle = Folder.Title
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa che contiene il titolo dell'oggetto.
+Stringa contenente il titolo dell'oggetto.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi sono implementati per tutte le cartelle. Il metodo [**ParseName**](folder-parsename.md) , ad esempio, non è implementato per la cartella del pannello di controllo ( \_ controlli CSIDL). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non è implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato 0x800A01BD errore di tipo decimale 445.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **title** per recuperare il titolo della cartella che contiene i gruppi di programmi dell'utente (in genere "programmi"). L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa Title** per recuperare il titolo della cartella che contiene i gruppi di programmi dell'utente (in genere "Programmi"). Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -72,7 +72,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -127,11 +127,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

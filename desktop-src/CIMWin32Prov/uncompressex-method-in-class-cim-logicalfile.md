@@ -1,5 +1,5 @@
 ---
-description: Decomprime il file o la directory logica specificata nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo Decompress.
+description: Decomprime il file logico (o la directory) specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo Uncompress.
 ms.assetid: 383475ba-77d4-4bfb-a241-9c37aa594a1e
 ms.tgt_platform: multiple
 title: Metodo UncompressEx della classe CIM_LogicalFile
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1c514939425625c15f3b683e4dc10bd5e05cb511
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ec2626f68fda6d34bab83b0212343e6983474c032e4796ea41b3dec19ec58d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834462"
 ---
-# <a name="uncompressex-method-of-the-cim_logicalfile-class"></a>Metodo UncompressEx della classe CIM \_ LogicalFile
+# <a name="uncompressex-method-of-the-cim_logicalfile-class"></a>Metodo UncompressEx della classe \_ CIM LogicalFile
 
-Il metodo **UncompressEx** decomprime il file o la directory logica specificata nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo [**Decompress**](uncompress-method-in-class-cim-logicalfile.md) .
+Il **metodo UncompressEx** decomprime il file logico (o la directory) specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo Uncompress.**](uncompress-method-in-class-cim-logicalfile.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,30 +49,30 @@ uint32 UncompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo ha avuto esito negativo. Questo parametro è **null** se il metodo ha esito positivo.
+Nome del file (o della directory) in cui il metodo ha avuto esito negativo. Questo parametro è **Null se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Nome del file figlio (o directory) da utilizzare come punto di partenza per il metodo. In genere, questo parametro è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Nome del file figlio (o directory) da utilizzare come punto di partenza per il metodo . In genere, questo parametro è il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **Null,** l'operazione viene eseguita sul file o sulla directory specificata nella chiamata [**ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se è **true**, anche il metodo viene applicato in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) . Per le istanze di file, questo parametro viene ignorato.
+Se **TRUE,** il metodo viene applicato in modo ricorsivo anche ai file e alle directory all'interno della directory specificata [**dall'istanza di CIM \_ LogicalFile.**](cim-logicalfile.md) Per le istanze di file, questo parametro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -112,7 +112,7 @@ Oggetto non valido.
 
 </dd> <dt>
 
-**Oggetto già esistente**
+**L'oggetto esiste già**
 </dt> <dd>
 
 10
@@ -121,12 +121,12 @@ Oggetto già esistente.
 
 </dd> <dt>
 
-**File System non NTFS**
+**File system non NTFS**
 </dt> <dd>
 
 11
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -208,7 +208,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -217,10 +217,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_LOGICALFILE CIM](uncompressex-method-in-class-cim-logicalfile.md)
+[CIM \_ LogicalFile](uncompressex-method-in-class-cim-logicalfile.md)
 </dt> <dt>
 
-[**\_LOGICALFILE CIM**](cim-logicalfile.md)
+[**CIM \_ LogicalFile**](cim-logicalfile.md)
 </dt> </dl>
 
  

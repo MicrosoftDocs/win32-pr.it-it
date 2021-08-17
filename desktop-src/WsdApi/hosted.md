@@ -35,7 +35,7 @@ Non ci sono attributi.
 |---------------------------------------------------------|----------------------------------------------------------------------------------|
 | [**PnPXCompatibleId**](pnpxcompatibleid.md)<br/> | Specifica l'identificatore compatibile PnP-X del servizio.<br/> <br/> |
 | [**PnPXHardwareId**](pnpxhardwareid.md)<br/>     | Specifica l'identificatore hardware PnP-X del servizio.<br/> <br/>   |
-| [**ID servizio**](serviceid.md)<br/>               | Definisce un identificatore di servizio per l'host del servizio.<br/> <br/>        |
+| [**ServiceID**](serviceid.md)<br/>               | Definisce un identificatore del servizio per l'host del servizio.<br/> <br/>        |
 | [**Tipi**](types.md)<br/>                       | Definisce un elenco di nomi qualificati XSD.<br/> <br/>                    |
 
 
@@ -63,11 +63,11 @@ Non ci sono attributi.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni servizio fornito da un host  del servizio deve avere le proprie informazioni sugli elementi ospitati per garantire che il servizio venga pubblicato correttamente in risposta alle richieste di metadati.
+Ogni servizio fornito da un host  del servizio deve avere informazioni sull'elemento ospitato per garantire che il servizio venga pubblicato correttamente in risposta alle richieste di metadati.
 
-Gli [**elementi PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) sono facoltativi, ma quando usati devono essere usati insieme. Se ne è presente uno, deve essere presente anche l'altro.
+Gli [**elementi PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) sono facoltativi, ma quando vengono usati devono essere usati insieme. Se è presente uno, deve essere presente anche l'altro.
 
-Se è presente un elemento [**PnPXDeviceCategory,**](pnpxdevicecategory.md) almeno un elemento ospitato deve contenere entrambi gli elementi [**PnPXHardwareId**](pnpxhardwareid.md) [**e PnPXCompatibleId.**](pnpxcompatibleid.md)  Analogamente, se gli elementi **PnPXHardwareId** e **PnPXCompatibleId** sono presenti in un elemento ospitato, all'interno dell'elemento [**thisModelMetadata**](thismodelmetadata.md) deve essere presente almeno un elemento **PnPXDeviceCategory.** 
+Se è presente un elemento [**PnPXDeviceCategory,**](pnpxdevicecategory.md) almeno un elemento **ospitato** deve contenere entrambi gli elementi [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId.**](pnpxcompatibleid.md) Analogamente, se gli elementi **PnPXHardwareId** e **PnPXCompatibleId** sono presenti in un elemento **ospitato,** all'interno dell'elemento [**thisModelMetadata**](thismodelmetadata.md) deve essere presente almeno un elemento **PnPXDeviceCategory.**
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 

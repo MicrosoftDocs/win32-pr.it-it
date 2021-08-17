@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: c9b55fbf718382e9dca7e3999cce0cabe895a261
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8c188e1b50905abd61184c7e1fe67d4253e920aa26d5d1782c1633d843bd282
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733353"
 ---
 # <a name="d3dcolorvalue-structure-d3d9typesh"></a>Struttura D3DCOLORVALUE (D3D9Types.h)
 
@@ -82,13 +82,13 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valore a virgola mobile che specifica il componente alfa di un colore. Questo valore è in genere compreso nell'intervallo da 0,0 a 1,0. Un valore pari a 0,0 indica completamente trasparente, mentre un valore pari a 1,0 indica che è completamente opaco.
+Valore a virgola mobile che specifica il componente alfa di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica completamente trasparente, mentre un valore pari a 1,0 indica completamente opaco.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare i membri di questa struttura su valori esterni all'intervallo compreso tra 0 e 1 per implementare alcuni effetti insoliti. I valori maggiori di 1 producono luci forti che tendono a evase una scena. I valori negativi producono luci scuri che rimuovono effettivamente la luce da una scena.
+È possibile impostare i membri di questa struttura su valori esterni all'intervallo compreso tra 0 e 1 per implementare alcuni effetti insoliti. I valori maggiori di 1 producono luci forti che tendono a lavare una scena. I valori negativi producono luci scure che rimuovono effettivamente la luce da una scena.
 
 ## <a name="requirements"></a>Requisiti
 

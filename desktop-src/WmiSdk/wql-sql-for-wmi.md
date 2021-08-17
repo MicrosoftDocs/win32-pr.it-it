@@ -1,5 +1,5 @@
 ---
-description: Il WMI Query Language (WQL) è un subset di American National Standards Institute Structured Query Language (ANSI SQL)&\# 8212; con modifiche semantiche secondarie. Nella tabella seguente sono elencate le parole chiave WQL.
+description: Il WMI Query Language (WQL) è un subset del American National Standards Institute Structured Query Language (ANSI SQL)&\# 8212; con modifiche semantiche secondarie. Nella tabella seguente sono elencate le parole chiave WQL.
 ms.assetid: 72a7ec04-9af3-41ae-9189-6e1d46803fa9
 ms.tgt_platform: multiple
 title: WQL (SQL per WMI)
@@ -14,7 +14,7 @@ ms.locfileid: "117738820"
 ---
 # <a name="wql-sql-for-wmi"></a>WQL (SQL per WMI)
 
-Il WMI Query Language (WQL) è un subset dell'American National Standards Institute Structured Query Language (ANSI SQL) con modifiche semantiche secondarie. Nella tabella seguente sono elencate le parole chiave WQL.
+Il WMI Query Language (WQL) è un subset del American National Standards Institute Structured Query Language (ANSI SQL) con modifiche semantiche secondarie. Nella tabella seguente sono elencate le parole chiave WQL.
 
 
 
@@ -44,7 +44,7 @@ Il WMI Query Language (WQL) è un subset dell'American National Standards Instit
 </tr>
 <tr class="even">
 <td>FROM<br/></td>
-<td>Specifica la classe che contiene le proprietà elencate in un'istruzione SELECT. Windows Strumentazione gestione (WMI) supporta le query sui dati di una sola classe alla volta.<br/></td>
+<td>Specifica la classe che contiene le proprietà elencate in un'istruzione SELECT. Windows Strumentazione gestione (WMI) supporta le query di dati da una sola classe alla volta.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="group-clause.md">Clausola GROUP</a></td>
@@ -52,19 +52,19 @@ Il WMI Query Language (WQL) è un subset dell'American National Standards Instit
 </tr>
 <tr class="even">
 <td><a href="having-clause.md">HAVING</a></td>
-<td>Filtra gli eventi ricevuti durante l'intervallo di raggruppamento specificato nella clausola <a href="within-clause.md">WITHIN</a>.<br/></td>
+<td>Filtra gli eventi ricevuti durante l'intervallo di raggruppamento specificato nella <a href="within-clause.md">clausola WITHIN.</a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="wql-operators.md">IS</a></td>
-<td>Operatore di confronto usato con NOT e <strong>NULL.</strong> La sintassi di questa istruzione è la seguente:<br/> IS [NOT] <strong>NULL</strong><br/> (dove NOT è facoltativo)<br/></td>
+<td>Operatore di confronto usato con NOT e <strong>NULL.</strong> La sintassi per questa istruzione è la seguente:<br/> IS [NOT] <strong>NULL</strong><br/> (dove NOT è facoltativo)<br/></td>
 </tr>
 <tr class="even">
 <td><a href="wql-operators.md">ISA</a></td>
-<td>Operatore che applica una query alle sottoclassi di una classe specificata. Per altre informazioni, vedere <a href="isa-operator-for-event-queries.md">Operatore ISA per query di</a>eventi , <a href="isa-operator-for-data-queries.md">Operatore ISA</a>per query di dati e <a href="isa-operator-for-schema-queries.md">Operatore ISA per le query di schema</a>.<br/></td>
+<td>Operatore che applica una query alle sottoclassi di una classe specificata. Per altre informazioni, vedere <a href="isa-operator-for-event-queries.md">Operatore ISA per query di</a>eventi, <a href="isa-operator-for-data-queries.md">Operatore ISA</a>per query di dati e <a href="isa-operator-for-schema-queries.md">Operatore ISA per query di schema.</a><br/></td>
 </tr>
 <tr class="odd">
 <td>KEYSONLY<br/></td>
-<td>Usato nelle query <a href="references-of-statement.md">REFERENCES OF</a> e <a href="associators-of-statement.md">ASSOCIATORS OF</a> per garantire che le istanze risultanti siano popolate solo con le chiavi delle istanze, riducendo così il sovraccarico della chiamata.<br/></td>
+<td>Utilizzato nelle query <a href="references-of-statement.md">REFERENCES OF</a> e <a href="associators-of-statement.md">ASSOCIATORS OF</a> per garantire che le istanze risultanti siano popolate solo con le chiavi delle istanze, riducendo così l'overhead della chiamata.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="wql-operators.md">LIKE</a></td>
@@ -72,7 +72,7 @@ Il WMI Query Language (WQL) è un subset dell'American National Standards Instit
 </tr>
 <tr class="odd">
 <td>NOT<br/></td>
-<td>Operatore di confronto che usa in una query SELECT WQL, ad esempio:<br/>
+<td>Operatore di confronto che utilizza in una query WQL SELECT, ad esempio:<br/>
 <pre data-space="preserve"><code>SELECT * FROM meta_class WHERE NOT __class < &quot;Win32&quot; AND NOT __this ISA &quot;Win32_Account&quot;</code></pre></td>
 </tr>
 <tr class="even">
@@ -81,7 +81,7 @@ Il WMI Query Language (WQL) è un subset dell'American National Standards Instit
 </tr>
 <tr class="odd">
 <td>OR<br/></td>
-<td>Combina due condizioni.<br/> Quando in un'istruzione vengono usati più operatori logici, gli operatori OR vengono valutati dopo gli operatori AND.<br/></td>
+<td>Combina due condizioni.<br/> Quando in un'istruzione viene usato più di un operatore logico, gli operatori OR vengono valutati dopo gli operatori AND.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="references-of-statement.md">RIFERIMENTI DI</a></td>
@@ -89,7 +89,7 @@ Il WMI Query Language (WQL) è un subset dell'American National Standards Instit
 </tr>
 <tr class="odd">
 <td>SELECT<br/></td>
-<td>Specifica le proprietà utilizzate in una query.<br/> Per altre informazioni, vedere <a href="select-statement-for-data-queries.md">Istruzione SELECT per query di dati</a>, Istruzione SELECT per query <a href="select-statement-for-event-queries.md">di</a>eventi o Istruzione SELECT per query <a href="select-statement-for-schema-queries.md">di schema</a>.<br/></td>
+<td>Specifica le proprietà utilizzate in una query.<br/> Per altre informazioni, vedere <a href="select-statement-for-data-queries.md">Istruzione SELECT per query di dati,</a>Istruzione SELECT per query <a href="select-statement-for-event-queries.md">di</a>eventi o Istruzione SELECT per query <a href="select-statement-for-schema-queries.md">di schema.</a><br/></td>
 </tr>
 <tr class="even">
 <td><strong>TRUE</strong></td>

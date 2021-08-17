@@ -1,10 +1,10 @@
 ---
-title: Enumerazione DRM_INDIVIDUALIZATION_STATUS (wmdrmsdk. h)
-description: Il \_ \_ tipo di enumerazione dello stato di individualizzazione DRM definisce gli stati validi per l'individualizzazione DRM. | Enumerazione DRM_INDIVIDUALIZATION_STATUS (wmdrmsdk. h)
+title: DRM_INDIVIDUALIZATION_STATUS enumerazione (Wmdrmsdk.h)
+description: Il tipo di enumerazione DRM \_ INDIVIDUALIZATION \_ STATUS definisce gli stati validi per l'individualizzazione DRM. | DRM_INDIVIDUALIZATION_STATUS enumerazione (Wmdrmsdk.h)
 ms.assetid: 4e6712e2-3297-4636-9b0c-07269bd63d52
 keywords:
-- Formato Windows Media enumerazione DRM_INDIVIDUALIZATION_STATUS
-- Enumerazione formato Windows Media
+- DRM_INDIVIDUALIZATION_STATUS di enumerazione windows Media Format
+- enumerazione windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b395d3ad4271ccef9964f0d39c74a1e0ba158257
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47e339fda95ccf7408ad2f218179cfb591da217b16fbbce9c9870eabd7437eaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848227"
 ---
-# <a name="drm_individualization_status-enumeration-wmdrmsdkh"></a>Enumerazione DRM_INDIVIDUALIZATION_STATUS (wmdrmsdk. h)
+# <a name="drm_individualization_status-enumeration-wmdrmsdkh"></a>DRM_INDIVIDUALIZATION_STATUS enumerazione (Wmdrmsdk.h)
 
-Il tipo di enumerazione **\_ \_ dello stato di individualizzazione DRM** definisce gli stati validi per l'individualizzazione DRM.
+Il **tipo di enumerazione DRM \_ INDIVIDUALIZATION \_ STATUS** definisce gli stati validi per l'individualizzazione DRM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,49 +47,49 @@ typedef enum DRM_INDIVIDUALIZATION_STATUS {
 
 <dl> <dt>
 
-<span id="INDI_UNDEFINED"></span><span id="indi_undefined"></span>**INDI non \_ definito**
+<span id="INDI_UNDEFINED"></span><span id="indi_undefined"></span>**INDI \_ UNDEFINED**
 </dt> <dd>
 
 Questo valore è riservato per l'uso futuro.
 
 </dd> <dt>
 
-<span id="INDI_BEGIN"></span><span id="indi_begin"></span>**\_inizio indi**
+<span id="INDI_BEGIN"></span><span id="indi_begin"></span>**INDI \_ BEGIN**
 </dt> <dd>
 
 Indica l'inizio del processo di individualizzazione.
 
 </dd> <dt>
 
-<span id="INDI_SUCCEED"></span><span id="indi_succeed"></span>**operazione INDI \_ riuscita**
+<span id="INDI_SUCCEED"></span><span id="indi_succeed"></span>**INDI \_ SUCCEED**
 </dt> <dd>
 
 Indica che il processo di individualizzazione è stato completato.
 
 </dd> <dt>
 
-<span id="INDI_FAIL"></span><span id="indi_fail"></span>**\_errore indi**
+<span id="INDI_FAIL"></span><span id="indi_fail"></span>**INDI \_ FAIL**
 </dt> <dd>
 
 Indica che il processo di individualizzazione non è riuscito.
 
 </dd> <dt>
 
-<span id="INDI_CANCEL"></span><span id="indi_cancel"></span>**\_Annulla indi**
+<span id="INDI_CANCEL"></span><span id="indi_cancel"></span>**INDI \_ CANCEL**
 </dt> <dd>
 
 Indica che il processo di individualizzazione è stato annullato dall'applicazione.
 
 </dd> <dt>
 
-<span id="INDI_DOWNLOAD"></span><span id="indi_download"></span>**\_download indi**
+<span id="INDI_DOWNLOAD"></span><span id="indi_download"></span>**INDI \_ DOWNLOAD**
 </dt> <dd>
 
 Indica che è in corso il download dell'aggiornamento della sicurezza.
 
 </dd> <dt>
 
-<span id="INDI_INSTALL"></span><span id="indi_install"></span>**\_installazione indi**
+<span id="INDI_INSTALL"></span><span id="indi_install"></span>**INDI \_ INSTALL**
 </dt> <dd>
 
 Indica che è in corso l'installazione dell'aggiornamento della sicurezza.
@@ -98,7 +98,7 @@ Indica che è in corso l'installazione dell'aggiornamento della sicurezza.
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione viene utilizzata dalla struttura [**di \_ \_ stato di personalizzazione WM**](drmwm-individualize-status.md) .
+Questa enumerazione viene utilizzata dalla [**struttura WM \_ INDIVIDUALIZE \_ STATUS.**](drmwm-individualize-status.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa enumerazione viene utilizzata dalla struttura [**di \_ \_ stato di person
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

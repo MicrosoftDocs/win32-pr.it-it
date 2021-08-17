@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Enumerazione PrereadKeysGrbit'
-title: Enumerazione PrereadKeysGrbit (Microsoft. ISAM. esent. Interop. Windows7)
+title: Enumerazione PrereadKeysGrbit (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: PrereadKeysGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.PrereadKeysGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.prereadkeysgrbit(v=EXCHG.10)
@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dadd7622206fe29197aa56d5629b5a9e2931e162
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35b88c1b6fab760782d7233b736f469565b9f7420bffdf097bed4d30554a447c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117703076"
 ---
 # <a name="prereadkeysgrbit-enumeration"></a>Enumerazione PrereadKeysGrbit
 
@@ -41,8 +41,8 @@ Opzioni per JetPrereadKeys.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,7 +73,7 @@ public enum PrereadKeysGrbit
 <tr class="odd">
 <td></td>
 <td>Inoltra</td>
-<td>Prelettura in futuro.</td>
+<td>Prelettura in avanti.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -88,4 +88,4 @@ public enum PrereadKeysGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

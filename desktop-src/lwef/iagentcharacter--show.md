@@ -4,16 +4,16 @@ description: IAgentCharacter Show
 ms.assetid: 5f13dcef-3777-41eb-827f-6162bad71a2e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997a9879d564644085bd92e4515460c3dde33208
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: dcefb523bd2e9f477991bf6fa8352382f75b6bc76d93aab2e7f5c9e8cc1358dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117693003"
 ---
-# <a name="iagentcharactershow"></a>IAgentCharacter:: Show
+# <a name="iagentcharactershow"></a>IAgentCharacter::Show
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT Show(
@@ -24,33 +24,33 @@ HRESULT Show(
 
 Visualizza un carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata. Quando la funzione restituisce, *pdwReqID* contiene l'ID della richiesta.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita. Quando la funzione viene restituita, *pdwReqID* contiene l'ID della richiesta.
 
 <dl> <dt>
 
-<span id="bFast"></span><span id="bfast"></span><span id="BFAST"></span>*bFast*
+<span id="bFast"></span><span id="bfast"></span><span id="BFAST"></span>*Colazione*
 </dt> <dd>
 
-Visualizzazione del flag di animazione stato. Se questo parametro è **true**, l'animazione di stato che **Visualizza** viene riprodotta dopo aver reso visibile il carattere; Se **false**, l'animazione non viene riprodotto.
+Visualizzazione del flag di animazione dello stato. Se questo parametro è **True,** **l'animazione Dello** stato di visualizzazione viene riprodotta dopo aver rendere visibile il carattere. se **False**, l'animazione non viene riprodotta.
 
 </dd> <dt>
 
 <span id="pdwReqID"></span><span id="pdwreqid"></span><span id="PDWREQID"></span>*pdwReqID*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve l'ID della richiesta di [**visualizzazione**](/windows/desktop/lwef/iagentcharacter--show) .
+Indirizzo di una variabile che riceve l'ID [**richiesta Show.**](/windows/desktop/lwef/iagentcharacter--show)
 
 </dd> </dl>
 
-Evitare di impostare il parametro *bFast* su **true** senza prima riprodurre un'animazione. in caso contrario, è possibile che venga visualizzato il frame di caratteri, ma che non sia presente alcuna immagine da visualizzare. In particolare, si noti che se si chiama [**MoveTo**](iagentcharacter--moveto.md) quando il carattere non è visibile, non viene eseguita alcuna animazione. Se pertanto si chiama il metodo **show** con *Bfast* impostato su **true**, non verrà visualizzata alcuna immagine. In modo analogo, se si chiama [**Nascondi**](/windows/desktop/lwef/iagentcharacter--hide), quindi **Mostra** con *bFast* impostato su **true**, non sarà presente alcuna immagine visibile.
+Evitare di impostare *il parametro bFast* su **True** senza riprodurre un'animazione in anticipo. In caso contrario, il fotogramma carattere potrebbe essere visualizzato, ma non avere alcuna immagine da visualizzare. In particolare, si noti che se si chiama [**MoveTo**](iagentcharacter--moveto.md) quando il carattere non è visibile, non viene riprodotta alcuna animazione. Pertanto, se si chiama il **metodo Show** con *bFast impostato* su **True,** non verrà visualizzata alcuna immagine. Analogamente, se si chiama [**Nascondi**](/windows/desktop/lwef/iagentcharacter--hide), quindi **Mostra** con *bFast* impostato su **True**, non verrà visualizzata alcuna immagine visibile.
 
-Quando si utilizza il protocollo HTTP per accedere ai dati di tipo carattere e animazione, utilizzare il metodo [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) per garantire la disponibilità dell'animazione **di visualizzazione dello stato prima** di chiamare questo metodo.
+Quando si usa il protocollo HTTP per accedere ai dati di animazione e carattere, usare il [**metodo Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) per garantire la disponibilità dell'animazione dello stato **Showing** prima di chiamare questo metodo.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCharacter:: Hide**](iagentcharacter--hide.md)
+[**IAgentCharacter::Hide**](iagentcharacter--hide.md)
 
 
- 
+ 
 
- 
+ 

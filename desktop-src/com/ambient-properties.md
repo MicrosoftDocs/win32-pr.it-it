@@ -13,7 +13,7 @@ ms.locfileid: "117737304"
 ---
 # <a name="ambient-properties"></a>Proprietà di ambiente
 
-Come minimo, ActiveX contenitori di controllo devono supportare le proprietà di ambiente seguenti usando i dispid standard.
+Come minimo, i ActiveX di controllo devono supportare le proprietà di ambiente seguenti usando i dispid standard.
 
 
 

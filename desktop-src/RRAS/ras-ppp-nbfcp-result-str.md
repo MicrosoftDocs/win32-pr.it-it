@@ -25,7 +25,7 @@ ms.locfileid: "117789595"
 
 \[La **struttura \_ RAS PPP \_ NBFCP \_ RESULT** non è supportata a Windows Vista.\]
 
-La **struttura RAS \_ PPP \_ NBFCP \_ RESULT** viene usata per segnalare il risultato di un'operazione di proiezione PPP NetBEUI Framer (NBF) per una porta.
+La **struttura RAS \_ PPP \_ NBFCP \_ RESULT** viene usata per segnalare il risultato di un'operazione di proiezione NBF (NetBEUI Framer) PPP per una porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ typedef struct _RAS_PPP_NBFCP_RESULT {
 **dwError**
 </dt> <dd>
 
-Indica i risultati dell'operazione di proiezione NBF. Il valore NO ERROR indica l'esito positivo, nel qual caso il membro \_ **wszWksta** contiene il nome del computer remoto. Se l'operazione di proiezione non è riuscita, **dwError** è un codice di errore di Winerror.h o Raserror.h.
+Indica i risultati dell'operazione di proiezione NBF. Il valore NO ERROR indica l'esito positivo. In questo caso, il membro \_ **wszWksta** contiene il nome del computer remoto. Se l'operazione di proiezione non è riuscita, **dwError** è un codice di errore di Winerror.h o Raserror.h.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Stringa Unicode con terminazione Null che specifica il nome NetBIOS della workst
 [**PORTA \_ RAS \_ 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**RISULTATO \_ DELLA PROIEZIONE PPP \_ \_ RAS**](ras-ppp-projection-result-str.md)
+[**RISULTATO \_ DELLA \_ PROIEZIONE RAS PPP \_**](ras-ppp-projection-result-str.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

@@ -1,6 +1,6 @@
 ---
 title: Funzione WaveActiveMin
-description: Restituisce il valore minimo dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie attive.
+description: Restituisce il valore minimo dell'espressione in tutte le corsie attive nell'ondata corrente e la replica in tutte le corsie attive.
 ms.assetid: BA762C02-894C-4AF9-A226-C1E3AAC286FF
 keywords:
 - Funzione WaveActiveMin HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "117721788"
 ---
 # <a name="waveactivemin-function"></a>Funzione WaveActiveMin
 
-Restituisce il valore minimo dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie attive.
+Restituisce il valore minimo dell'espressione in tutte le corsie attive nell'ondata corrente e la replica in tutte le corsie attive.
 
 ## <a name="syntax"></a>Sintassi
 

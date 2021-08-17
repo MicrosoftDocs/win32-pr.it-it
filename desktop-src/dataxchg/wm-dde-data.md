@@ -50,7 +50,7 @@ Handle per la finestra del server che pubblica il messaggio.
 
 La parola di ordine basso è un handle per un oggetto di memoria globale contenente una [**struttura DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) con i dati e informazioni aggiuntive. L'handle deve essere impostato su **NULL** se il server invia una notifica al client che il valore dell'elemento di dati è stato modificato durante un collegamento dati a caldo. Un collegamento a caldo viene stabilito dal client che invia un [**messaggio WM \_ DDE \_ ADVISE**](wm-dde-advise.md) con il bit **fDeferUpd** impostato.
 
-La parola di ordine elevato contiene un atom che identifica l'elemento di dati per cui vengono inviati i dati o la notifica.
+La parola di ordine elevato contiene un atom che identifica l'elemento di dati per il quale vengono inviati i dati o la notifica.
 
 </dd> </dl>
 

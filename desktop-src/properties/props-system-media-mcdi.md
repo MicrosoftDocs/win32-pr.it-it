@@ -4,12 +4,12 @@ ms.assetid: a653c29b-6c6c-4e26-9f7d-94a2dbb48113
 title: System.Media.MCDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3905827b40d934a0d4056323422e191fc1b2c56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 98359dfff40df419568a6087c653083524bef8aca1be21e6bc315519e8481a59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683466"
 ---
 # <a name="systemmediamcdi"></a>System.Media.MCDI
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

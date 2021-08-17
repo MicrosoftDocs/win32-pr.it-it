@@ -4,57 +4,57 @@ ms.assetid: 79dd4a45-c42c-4775-93ce-6e3206894d63
 title: ACE per controllare l'accesso alle proprietà di un oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1068ceb994e72deedcb795586ddf712fe9c1893
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fddd5d78ff5b02bbbe4b9b7a7ce0b77d7be263f9fd3926f44411469af2bb3c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785253"
 ---
 # <a name="aces-to-control-access-to-an-objects-properties"></a>ACE per controllare l'accesso alle proprietà di un oggetto
 
-L' [*elenco di controllo di accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) di un oggetto servizio directory (DS) può contenere una gerarchia di [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE), come indicato di seguito:
+[*L'elenco*](/windows/desktop/SecGloss/d-gly) di controllo di accesso discrezionale (DACL) di un oggetto del servizio directory può contenere una gerarchia di voci di controllo di accesso (ACE), come indicato di seguito: [](/windows/desktop/SecGloss/a-gly)
 
 1.  ACE che proteggono l'oggetto stesso
-2.  [Voci ACE specifiche dell'oggetto](object-specific-aces.md) che proteggono una proprietà specificata impostata nell'oggetto
-3.  Voci ACE specifiche dell'oggetto che proteggono una proprietà specificata nell'oggetto
+2.  [ACE specifiche dell'oggetto](object-specific-aces.md) che proteggono un set di proprietà specificato nell'oggetto
+3.  ACE specifiche dell'oggetto che proteggono una proprietà specificata nell'oggetto
 
-All'interno di questa gerarchia, i diritti concessi o negati a un livello superiore sono validi anche per i livelli inferiori. Se, ad esempio, una voce ACE specifica dell'oggetto in un set di proprietà consente a un trustee il diritto di \_ \_ lettura di un dominio ADS \_ \_ , il trustee ha accesso in lettura implicito a tutte le proprietà di tale set di proprietà. Analogamente, una voce ACE nell'oggetto stesso che consente ADS \_ Rights \_ DS \_ Read \_ prop Access fornisce al trustee l'accesso in lettura a tutte le proprietà dell'oggetto.
+All'interno di questa gerarchia, i diritti concessi o negati a un livello superiore si applicano anche ai livelli inferiori. Ad esempio, se una ACE specifica dell'oggetto in un set di proprietà consente a un trustee il diritto READ \_ \_ PROP DS ADS RIGHT, il \_ trustee ha accesso in lettura implicito a tutte le proprietà di tale \_ set di proprietà. Analogamente, una ACE sull'oggetto stesso che consente l'accesso ADS RIGHT DS READ PROP concede al \_ trustee l'accesso in lettura a tutte le \_ \_ proprietà \_ dell'oggetto.
 
-Nella figura seguente viene illustrata la struttura ad albero di un oggetto DS ipotetico e dei relativi set di proprietà e proprietà.
+La figura seguente mostra l'albero di un ipotetico oggetto DS e i relativi set di proprietà e proprietà.
 
 ![gerarchia di oggetti del servizio directory](images/accctrl2.png)
 
-Si supponga di voler consentire il seguente accesso alle proprietà di questo oggetto DS:
+Si supponga di voler consentire l'accesso seguente alle proprietà di questo oggetto DS:
 
--   Consenti al gruppo un'autorizzazione di lettura/scrittura per tutte le proprietà dell'oggetto
--   Consenti a tutti gli utenti l'autorizzazione di lettura/scrittura per tutte le proprietà ad eccezione della proprietà D
+-   Consenti gruppo Autorizzazione di lettura/scrittura per tutte le proprietà dell'oggetto
+-   Consentire a tutti gli altri utenti l'autorizzazione di lettura/scrittura per tutte le proprietà ad eccezione della proprietà D
 
-A tale scopo, impostare le voci ACE nel DACL dell'oggetto, come illustrato nella tabella seguente.
+A tale scopo, impostare le voci ACE nell'elenco DACL dell'oggetto, come illustrato nella tabella seguente.
 
 
 
 | Fiduciario  | GUID oggetto    | Tipo ACE                  | Diritti di accesso                                             |
 |----------|----------------|---------------------------|-----------------------------------------------------------|
-| Gruppo A  | nessuno           | ACE consentito per l'accesso        | ADS \_ Rights \_ DS \_ Read \_ prop \| Ads \_ right \_ DS \_ scrivere \_ prop |
-| Tutti | Set di proprietà 1 | ACE oggetto consentito Access | ADS \_ Rights \_ DS \_ Read \_ prop \| Ads \_ right \_ DS \_ scrivere \_ prop |
-| Tutti | Proprietà C     | ACE oggetto consentito Access | ADS \_ Rights \_ DS \_ Read \_ prop \| Ads \_ right \_ DS \_ scrivere \_ prop |
+| Gruppo A  | Nessuno           | ACE consentita per l'accesso        | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| Tutti | Set di proprietà 1 | Access-allowed object ACE | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| Tutti | Proprietà C     | Access-allowed object ACE | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
 
 
 
  
 
-La voce ACE per il gruppo A non ha un GUID oggetto, il che significa che consente l'accesso a tutte le proprietà dell'oggetto. La voce ACE specifica dell'oggetto per il set di proprietà 1 consente a tutti gli utenti di accedere alle proprietà A e B. L'altra voce ACE specifica dell'oggetto consente a tutti gli utenti di accedere alla proprietà C. si noti che, sebbene questo DACL non disponga di Ace con accesso negato, nega in modo implicito l'accesso alla proprietà D a tutti gli utenti tranne il gruppo A.
+La ACE per il gruppo A non dispone di un GUID di oggetto, ovvero consente l'accesso a tutte le proprietà dell'oggetto. L'ACE specifica dell'oggetto per il set di proprietà 1 consente a tutti gli utenti di accedere alle proprietà A e B. L'altra ACE specifica dell'oggetto consente a tutti gli utenti di accedere alla proprietà C. Si noti che, anche se questo elenco di controllo di accesso non dispone di ACE per accesso negato, nega implicitamente l'accesso alla proprietà D a tutti gli utenti ad eccezione del gruppo A.
 
-Quando un utente tenta di accedere alla proprietà di un oggetto, il sistema controlla le voci ACE, in ordine, fino a quando l'accesso richiesto non viene concesso o negato in modo esplicito o non ci sono più voci ACE, nel qual caso l'accesso viene negato in modo implicito.
+Quando un utente tenta di accedere alla proprietà di un oggetto, il sistema controlla le ACE, in ordine, fino a quando l'accesso richiesto non viene concesso, negato o non sono presenti altre ACE. In questo caso, l'accesso viene negato in modo implicito.
 
 Il sistema valuta:
 
--   Ace applicabili all'oggetto stesso
--   Voci ACE specifiche dell'oggetto applicabili al set di proprietà che contiene la proprietà a cui si accede
--   Voci ACE specifiche dell'oggetto applicabili alla proprietà a cui si accede
+-   Voci ACE che si applicano all'oggetto stesso
+-   ACE specifiche dell'oggetto che si applicano al set di proprietà che contiene la proprietà a cui si accede
+-   ACE specifiche dell'oggetto che si applicano alla proprietà a cui si accede
 
-Il sistema ignora le voci ACE specifiche dell'oggetto applicabili ad altri set di proprietà o proprietà.
+Il sistema ignora le voci ACE specifiche dell'oggetto che si applicano ad altri set di proprietà o proprietà.
 
  
 

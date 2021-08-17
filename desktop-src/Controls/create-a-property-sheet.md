@@ -1,38 +1,38 @@
 ---
 title: Come creare una finestra delle proprietà
-description: Nell'esempio riportato in questa sezione viene creata una finestra delle proprietà che contiene due pagine \ 8212, una per l'impostazione delle proprietà del tipo di carattere di una cella in un foglio di calcolo e un'altra per l'impostazione delle proprietà del bordo della cella.
+description: L'esempio in questa sezione crea una finestra delle proprietà che contiene due pagine \ 8212; una per l'impostazione delle proprietà del carattere di una cella in un foglio di calcolo e un'altra per l'impostazione delle proprietà del bordo della cella.
 ms.assetid: 61ACF87A-938C-4487-ACEB-484FCB677C6A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d15abd44f3a583afd99c5d943b9105c8734b73c1
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 5fa99c3e678fa7d8e6aa70cd3f5c6e4c7bc514f94114c7bb7a411fa7df1caac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831847"
 ---
 # <a name="how-to-create-a-property-sheet"></a>Come creare una finestra delle proprietà
 
-Nell'esempio riportato in questa sezione viene creata una finestra delle proprietà che contiene due pagine, una per l'impostazione delle proprietà del tipo di carattere di una cella in un foglio di calcolo e un'altra per l'impostazione delle proprietà del bordo della cella.
+Nell'esempio riportato in questa sezione viene creata una finestra delle proprietà contenente due pagine, una per l'impostazione delle proprietà del tipo di carattere di una cella in un foglio di calcolo e l'altra per l'impostazione delle proprietà del bordo della cella.
 
-Nell'esempio vengono definite le pagine compilando una coppia di strutture [**PROPSHEETPAGE**](pss-propsheetpage.md) e specificando l'indirizzo nella struttura [**PROPSHEETHEADER**](pss-propsheetheader.md) che viene passato alla funzione [**PropertySheet**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta) .
+L'esempio definisce le pagine compilando una coppia di strutture [**PROPSHEETPAGE**](pss-propsheetpage.md) e specificando l'indirizzo nella [**struttura PROPSHEETHEADER**](pss-propsheetheader.md) passata alla [**funzione PropertySheet.**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="create-a-property-sheet"></a>Crea una finestra delle proprietà
+### <a name="create-a-property-sheet"></a>Creare una finestra delle proprietà
 
-Nell'esempio di codice riportato di seguito viene illustrato come creare una finestra delle proprietà a due pagine.
+Nell'esempio di codice seguente viene illustrato come creare una finestra delle proprietà a due pagine.
 
 
 ```C++
@@ -91,13 +91,13 @@ VOID DoPropertySheet(HWND hwndOwner)
 
 ## <a name="remarks"></a>Commenti
 
-I modelli, le icone e le etichette della finestra di dialogo per le pagine vengono caricati dalle risorse contenute nel file eseguibile dell'applicazione. Anche l'icona per la finestra delle proprietà viene caricata dalle risorse dell'applicazione.
+I modelli di finestra di dialogo, le icone e le etichette per le pagine vengono caricati dalle risorse contenute nel file eseguibile dell'applicazione. L'icona per la finestra delle proprietà viene caricata anche dalle risorse dell'applicazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Utilizzo delle finestre delle proprietà](using-property-sheets.md)
+[Uso delle finestre delle proprietà](using-property-sheets.md)
 </dt> <dt>
 
 [Esempio di proprietà](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/controls/common/property)

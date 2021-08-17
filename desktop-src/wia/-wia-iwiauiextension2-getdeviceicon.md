@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: fe1498a804de5adeeea459464e95640b3b81ef06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 236a12bdf37a3d4c73a4601dd35667e946442bab3fc8dc66340d5f889b165f20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669383"
 ---
 # <a name="iwiauiextension2getdeviceicon-method"></a>Metodo IWiaUIExtension2::GetDeviceIcon
 
@@ -46,7 +46,7 @@ HRESULT GetDeviceIcon(
 
 Tipo: **BSTR**
 
-Specifica l'ID dispositivo del dispositivo WIA per il quale è necessario ottenere l'icona.
+Specifica l'ID dispositivo del dispositivo WIA per il quale deve essere ottenuta l'icona.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se il metodo ha esito negat
 
 | Codice di errore    | Descrizione                                                                                                  |
 |---------------|--------------------------------------------------------------------------------------------------------------|
-| E \_ INVALIDARG | Il parametro bstrDeviceId o phIcon è **NULL** oppure bstrDeviceId non punta a una stringa ID dispositivo WIA valida |
+| E \_ INVALIDARG | Il parametro bstrDeviceId o phIcon **è NULL** oppure bstrDeviceId non punta a una stringa di ID dispositivo WIA valida |
 | E \_ FAIL       | Nessuna risorsa icona disponibile.                                                                               |
 | E \_ NOTIMPL    | Non è disponibile alcuna icona delle dimensioni richieste.                                                                  |
 
@@ -92,8 +92,8 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se il metodo ha esito negat
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 

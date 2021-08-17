@@ -1,32 +1,32 @@
 ---
-title: Blocco evento
-description: Blocco evento
+title: Blocco degli eventi
+description: Blocco degli eventi
 ms.assetid: 1e537503-f7e7-42f4-aa3c-3c71715b84fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e403448d53949c263b8e146961690de1200436c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ba439ebce12a48d78e1eb1d2daa31990c02f4a42082d3425e9b6ef2f842b3ba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736801"
 ---
-# <a name="event-freezing"></a>Blocco evento
+# <a name="event-freezing"></a>Blocco degli eventi
 
-Un contenitore può notificare a un controllo che non è pronto a rispondere agli eventi chiamando [**IOleControl:: FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **true**. Può sbloccare gli eventi chiamando **FreezeEvents** con **false**. Quando un contenitore blocca gli eventi, è in corso il blocco dell'elaborazione degli eventi, non la ricezione di eventi; ovvero, un contenitore può comunque ricevere eventi mentre gli eventi vengono bloccati. Se un contenitore riceve una notifica degli eventi mentre i relativi eventi sono bloccati, il contenitore deve ignorare l'evento. Non sono necessarie altre azioni.
+Un contenitore può notificare a un controllo che non è pronto a rispondere agli eventi chiamando [**IOleControl::FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **TRUE.** Può sbloccare gli eventi chiamando **FreezeEvents** con **FALSE.** Quando un contenitore blocca gli eventi, blocca l'elaborazione degli eventi, non la ricezione di eventi. ciò significa che un contenitore può comunque ricevere eventi mentre gli eventi sono bloccati. Se un contenitore riceve una notifica degli eventi mentre i relativi eventi sono bloccati, il contenitore deve ignorare l'evento. Non sono appropriate altre azioni.
 
-Un controllo deve prendere nota della chiamata di un contenitore a [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **true** se è importante per il controllo che un evento non viene perso. Mentre l'elaborazione degli eventi di un contenitore è bloccata, un controllo deve implementare una delle tecniche seguenti:
+Un controllo deve prendere nota della chiamata di un contenitore a [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **TRUE** se è importante per il controllo che un evento non viene perso. Mentre l'elaborazione degli eventi di un contenitore è bloccata, un controllo deve implementare una delle tecniche seguenti:
 
--   Attivare gli eventi con la massima consapevolezza che il contenitore non eseguirà alcuna azione.
--   Rimuovere tutti gli eventi che il controllo avrebbe generato.
--   Accodare tutti gli eventi in sospeso e attivarli dopo che il contenitore ha chiamato [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **false**.
--   Accodare solo gli eventi rilevanti o importanti e attivarli dopo che il contenitore ha chiamato [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **false**.
+-   Genera gli eventi con la piena consapevolezza che il contenitore non esempierà alcuna azione.
+-   Elimina tutti gli eventi generati dal controllo.
+-   Accodare tutti gli eventi in sospeso e generarli dopo che il contenitore ha chiamato [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **FALSE.**
+-   Accodare solo gli eventi rilevanti o importanti e generarli dopo che il contenitore ha chiamato [**FreezeEvents**](/windows/desktop/api/OCIdl/nf-ocidl-iolecontrol-freezeevents) con **FALSE.**
 
 Ogni tecnica è accettabile e appropriata in circostanze diverse. Lo sviluppatore del controllo è responsabile della determinazione e dell'implementazione della tecnica appropriata per la funzionalità del controllo.
 
- 
+ 
 
- 
+ 
 
 
 

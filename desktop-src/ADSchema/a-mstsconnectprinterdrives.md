@@ -1,10 +1,10 @@
 ---
-title: attributo ms-TS-Connect-Printer-Drives
-description: Unità di connessione della sessione di Servizi terminal specifica se riconnettersi alle stampanti client mappate all'accesso.
+title: Attributo ms-TS-Connessione-Printer-Drives
+description: La sessione di Servizi Connessione le unità stampanti specifica se riconnettersi alle stampanti client mappate all'accesso.
 ms.assetid: 80bf0ace-5c63-49f8-b689-23a55bb09577
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TS-Connect-Printer-Drives
+- Schema AD dell'attributo ms-TS-Connessione-Printer-Drives
 - Schema AD dell'attributo msTSConnectPrinterDrives
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d905207bf101c3077b2242311b69c5a61a5378c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e4ff7e2e754acd33103ee6df29d2fe3e688e2760f2b31cd65a7200d1ef54df79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837861"
 ---
-# <a name="ms-ts-connect-printer-drives-attribute"></a>attributo ms-TS-Connect-Printer-Drives
+# <a name="ms-ts-connect-printer-drives-attribute"></a>Attributo ms-TS-Connessione-Printer-Drives
 
-Unità di connessione della sessione di Servizi terminal specifica se riconnettersi alle stampanti client mappate all'accesso.
+La sessione di Servizi Connessione le unità stampanti specifica se riconnettersi alle stampanti client mappate all'accesso.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Connect-Printer-Drives         |
-| LDAP-Display-Name | msTSConnectPrinterDrives             |
+| CN                | ms-TS-Connessione-Printer-Drives         |
+| Ldap-Display-Name | msTSConnectPrinterDrives             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1987              |
-| System-ID-GUID    | 8ce6a937-871b-4c92-b285-d99d4036681c |
+| System-Id-Guid    | 8ce6a937-871b-4c92-b285-d99d4036681c |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,15 +55,15 @@ Unità di connessione della sessione di Servizi terminal specifica se riconnette
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Unità di connessione della sessione di Servizi terminal specifica se riconnette
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Unità di connessione della sessione di Servizi terminal specifica se riconnette
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

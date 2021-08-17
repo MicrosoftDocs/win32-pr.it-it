@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà Int16ColumnValue. size'
-title: Proprietà Int16ColumnValue. size
+description: Altre informazioni sulla proprietà Int16ColumnValue.Size
+title: Int16ColumnValue.Size - proprietà
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Int16ColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int16columnvalue.size(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e244b81dceb79be9919d06fc2d2212e11d5c0eeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3dcc683e12a386d7b07fc2bb2b6ba222cc9cc481b52837c4cae47ff1af4332fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117705703"
 ---
-# <a name="int16columnvaluesize-property"></a>Proprietà Int16ColumnValue. size
+# <a name="int16columnvaluesize-property"></a>Int16ColumnValue.Size - proprietà
 
-Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.
+Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe Int16ColumnValue](./int16columnvalue-class.md)
 
-[Membri di Int16ColumnValue](./int16columnvalue-members.md)
+[Membri Int16ColumnValue](./int16columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

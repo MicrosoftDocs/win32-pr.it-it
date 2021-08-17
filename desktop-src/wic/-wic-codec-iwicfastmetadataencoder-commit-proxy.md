@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 848ed74ec9c9bb490065935bd94cae7a35d02db2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69f94853761affe09472a18ca27585a74f398846dd06ef54abb88fe3c9b7ce71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668404"
 ---
-# <a name="iwicfastmetadataencoder_commit_proxy-function"></a>Funzione proxy di commit IWICFastMetadataEncoder \_ \_
+# <a name="iwicfastmetadataencoder_commit_proxy-function"></a>Funzione proxy commit IWICFastMetadataEncoder \_ \_
 
 Funzione proxy per il [**metodo Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicfastmetadataencoder-commit)
 
@@ -63,8 +63,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

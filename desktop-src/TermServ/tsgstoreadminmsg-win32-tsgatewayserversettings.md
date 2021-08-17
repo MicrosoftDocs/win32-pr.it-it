@@ -4,9 +4,9 @@ description: Aggiorna il messaggio amministrativo per il server gateway.
 ms.assetid: 84e5b967-12fd-47a7-93e4-2550c15c4491
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo TSGStoreAdminMsg
-- Metodo TSGStoreAdminMsg Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo TSGStoreAdminMsg
+- Metodo TSGStoreAdminMsg Servizi Desktop remoto
+- Metodo TSGStoreAdminMsg Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto , metodo TSGStoreAdminMsg
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 398a027d28970b28b4a1e7db37b5fbfee06e881e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c921eb977597147713f1251b94bb36ed3aa5678bde1e27881af4dc930dd957fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755787"
 ---
-# <a name="tsgstoreadminmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGStoreAdminMsg della \_ classe TSGatewayServerSettings Win32
+# <a name="tsgstoreadminmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGStoreAdminMsg della classe \_ Win32 TSGatewayServerSettings
 
 Aggiorna il messaggio amministrativo per il server gateway.
 
@@ -45,28 +45,28 @@ uint32 TSGStoreAdminMsg(
 
 <dl> <dt>
 
-*TSGAdmMsg* \[ in\]
+*TSGAdmMsg* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Testo del messaggio amministrativo.
 
 </dd> <dt>
 
-*MsgStartTime* \[ in\]
+*MsgStartTime* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Ora di inizio del messaggio amministrativo.
 
 </dd> <dt>
 
-*MsgEndTime* \[ in\]
+*MsgEndTime* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Ora di fine del messaggio amministrativo.
 
@@ -74,15 +74,15 @@ Ora di fine del messaggio amministrativo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,7 +93,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -102,7 +102,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetPropById dell'oggetto DeviceInfo usa l'ID di una proprietà del dispositivo per restituirne il valore.
 ms.assetid: 9c68e6af-446c-4750-89e6-70862b23b296
-title: DeviceInfo. GetPropById, metodo
+title: Metodo DeviceInfo.GetPropById
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: adbc8b6a29f97066c8dc5b2e45b7ddc5834f2b60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c996989661703c4a9c7416cd63904c376fdb7fcca3071d4558551bdd78470d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208787"
 ---
-# <a name="deviceinfogetpropbyid-method"></a>DeviceInfo. GetPropById, metodo
+# <a name="deviceinfogetpropbyid-method"></a>Metodo DeviceInfo.GetPropById
 
-Il metodo **GetPropById** dell'oggetto [**DEVICEINFO**](-wia-deviceinfo.md) usa l'ID di una proprietà del dispositivo per restituirne il valore.
+Il **metodo GetPropById** dell'oggetto [**DeviceInfo**](-wia-deviceinfo.md) usa l'ID di una proprietà del dispositivo per restituirne il valore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,15 +50,15 @@ Specifica l'ID della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Variant**
+Tipo: **VARIANT**
 
-Questo metodo restituisce il valore della proprietà specificata da *ID*.
+Questo metodo restituisce il valore della proprietà specificata da *Id*.
 
 ## <a name="remarks"></a>Commenti
 
-Usare questo metodo per trovare il valore di una proprietà del dispositivo dal relativo ID. Per un elenco di ID di proprietà, vedere [definizioni di costanti della proprietà WIA](-wia-wia-property-constant-definitions.md). Per informazioni sulle proprietà WIA (Windows Image Acquisition), vedere [costanti della proprietà WIA](-wia-wia-property-constants.md).
+Usare questo metodo per trovare il valore di una proprietà del dispositivo dal relativo ID. Per un elenco di ID di proprietà, vedere [Definizioni delle costanti delle proprietà WIA.](-wia-wia-property-constant-definitions.md) Per informazioni sulle Windows di acquisizione di immagini (WIA) stesse, vedere Costanti delle [proprietà WIA.](-wia-wia-property-constants.md)
 
-Per le applicazioni Microsoft Visual Basic, aggiungere un riferimento a "Windows Image Acquisition 1,01 Type Library". Le seguenti costanti definite in tale file sono valide per questo metodo:
+Per le Visual Basic Microsoft, aggiungere un riferimento a "Windows image acquisition 1.01 Type Library". Le costanti seguenti definite nel file sono valide per questo metodo:
 
 ``` syntax
 const DeviceID = 2
@@ -74,7 +74,7 @@ const UIClassID = 10
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo del metodo **GetPropById** per recuperare un valore della proprietà.
+L'esempio seguente illustra l'uso **del metodo GetPropById** per recuperare il valore di una proprietà.
 
 
 ```JScript
@@ -103,9 +103,9 @@ Next
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

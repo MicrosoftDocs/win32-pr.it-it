@@ -1,17 +1,17 @@
 ---
-title: Funzioni di controllo della barra degli strumenti
-description: Funzioni di controllo della barra degli strumenti
+title: Funzioni di controllo Barra degli strumenti
+description: Funzioni di controllo Barra degli strumenti
 ms.assetid: 038825f0-0757-40de-b28e-e7b753c5729b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a1062d472a0c17c73f5262b7525646fc5b6fc68
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d56933023519dacf5f1f8c8f28ac64b10f531bd1d3d720ff1175ea5f46e0c5f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833043"
 ---
-# <a name="toolbar-control-functions"></a>Funzioni di controllo della barra degli strumenti
+# <a name="toolbar-control-functions"></a>Funzioni di controllo Barra degli strumenti
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

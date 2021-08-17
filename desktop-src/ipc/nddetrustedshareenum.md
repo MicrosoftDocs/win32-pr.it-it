@@ -1,7 +1,7 @@
 ---
-description: Recupera i nomi di tutte le condivisioni DDE di rete considerate attendibili nel contesto del processo chiamante.
+description: Recupera i nomi di tutte le condivisioni DDE di rete attendibili nel contesto del processo chiamante.
 ms.assetid: 8e2323a4-0c27-44e6-9598-08a3c1a88bd3
-title: Funzione NDdeTrustedShareEnum (nddeapi. h)
+title: Funzione NDdeTrustedShareEnum (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: caa3f7c20b95243e03c0c6025d1ff32d60443ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc8eefd335ad9c54e7dc4aefa5a1027785de1b9c33cd3346c8bb1c8a4872b939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695043"
 ---
-# <a name="nddetrustedshareenum-function"></a>NDdeTrustedShareEnum (funzione)
+# <a name="nddetrustedshareenum-function"></a>Funzione NDdeTrustedShareEnum
 
-\[Il DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ non \_ implementate.\]
+\[DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Recupera i nomi di tutte le condivisioni DDE di rete considerate attendibili nel contesto del processo chiamante.
+Recupera i nomi di tutte le condivisioni DDE di rete attendibili nel contesto del processo chiamante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,53 +48,53 @@ UINT NDdeTrustedShareEnum(
 
 <dl> <dt>
 
-*lpszServer* \[ in\]
+*lpszServer* \[ Pollici\]
 </dt> <dd>
 
-Nome del server in cui risiede l'DSDM.
+Nome del server in cui risiede DSDM.
 
 </dd> <dt>
 
-*nLevel* \[ in\]
+*nLevel* \[ Pollici\]
 </dt> <dd>
 
 Riservato. Questo parametro deve essere zero.
 
 </dd> <dt>
 
-*lpBuffer* \[ out\]
+*lpBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve l'elenco di condivisioni DDE attendibili. L'elenco di condivisioni DDE attendibili viene restituito come sequenza di stringhe separate da null che terminano con un carattere null doppio alla fine. Questo parametro può essere **NULL**. Se *lpBuffer* è **null**, DSDM restituisce la dimensione del buffer necessaria per memorizzare l'elenco di condivisioni nel campo *lpcbTotalAvailable* .
+Puntatore a un buffer che riceve l'elenco di condivisioni DDE attendibili. L'elenco di condivisioni DDE attendibili viene restituito come sequenza di stringhe separate da Null che terminano con un carattere Null doppio alla fine. Questo parametro può essere **NULL**. Se *lpBuffer* è **NULL,** DSDM restituisce le dimensioni del buffer necessarie per contenere l'elenco di condivisioni nel campo *lpcbTotalAvailable.*
 
 </dd> <dt>
 
-*cBufSize* \[ in\]
+*cBufSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *lpBuffer* . Questo parametro deve essere zero se *lpBuffer* è **null**.
+Dimensioni del buffer *lpBuffer,* in byte. Questo parametro deve essere zero se *lpBuffer* è **NULL.**
 
 </dd> <dt>
 
-*lpnEntriesRead* \[ out\]
+*lpnEntriesRead* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero totale di condivisioni attendibili enumerate. Questo parametro non può essere **null**.
+Puntatore a una variabile che riceve il numero totale di condivisioni attendibili enumerate. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*lpcbTotalAvailable* \[ out\]
+*lpcbTotalAvailable* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero totale di byte necessari per archiviare l'elenco di condivisioni DDE attendibili. Questo parametro non può essere **null**.
+Puntatore a una variabile che riceve il numero totale di byte necessari per archiviare l'elenco di condivisioni DDE attendibili. Questo parametro non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NDDE \_ senza \_ errori.
+Se la funzione ha esito positivo, il valore restituito è NDDE \_ NO \_ ERROR.
 
-Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString**](nddegeterrorstring.md). Se il parametro *lpBuffer* è **null**, restituisce NDDE \_ BUF \_ troppo \_ piccolo.
+Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString**](nddegeterrorstring.md). Se il *parametro lpBuffer* è **NULL,** restituisce NDDE \_ BUF \_ TOO \_ SMALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,8 +104,8 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore, c
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **NDdeTrustedShareEnumW** (Unicode) e **NDdeTrustedShareEnumA** (ANSI)<br/>    |
 
@@ -115,7 +115,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore, c
 
 <dl> <dt>
 
-[Panoramica di Dynamic Data Exchange di rete](network-dynamic-data-exchange.md)
+[Panoramica Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funzioni DDE di rete](network-dde-functions.md)

@@ -1,19 +1,19 @@
 ---
-description: L' <depth> elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono Deep e Shallow. Questo elemento non ha elementi figlio e nessun attributo.
+description: <depth>L'elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono Deep e Shallow. Questo elemento non ha elementi figlio e nessun attributo.
 ms.assetid: 859decab-cbe3-4cec-b37c-6d0e7c353876
-title: Elemento Depth (Schema connettore di ricerca)
+title: Elemento depth (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf68bcbc96b6d1beb2c381f0a17532272b8d397e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 245156088cd68fcf67103c18b987a9b459b0b760b3a04a1ced817badd25aada8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117862526"
 ---
-# <a name="depth-element-search-connector-schema"></a>Elemento Depth (Schema connettore di ricerca)
+# <a name="depth-element-search-connector-schema"></a>Elemento depth (schema del connettore di ricerca)
 
-L' <depth> elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono `Deep` e `Shallow`. Questo elemento non ha elementi figlio e nessun attributo.
+<depth>L'elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono `Deep` e `Shallow`. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,11 +68,11 @@ L' <depth> elemento specifica se l'ambito del connettore di ricerca deve include
 
 ## <a name="remarks"></a>Commenti
 
-Se la profondità è profonda, gli utenti possono sfogliare o cercare gli elementi nel livello URL di scopeItem o in qualsiasi URL figlio.
+Se la profondità è approfondita, gli utenti possono esplorare o cercare elementi a livello di URL di scopeItem o all'interno di qualsiasi URL figlio.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un ambito di ricerca che include C: \\ FolderA e tutte le relative cartelle figlio e c: \\ FolderB ma nessuna delle relative cartelle figlio.
+L'esempio seguente illustra un ambito di ricerca che include C: CartellaA e tutte le relative cartelle figlio e \\ C: \\ CartellaB ma nessuna delle relative cartelle figlio.
 
 
 ```

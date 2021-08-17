@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 19c87cbd5fd81100682225aa16256573c7f95be0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6d559dc8a04500b4b208a87bcbda6841c21bf7c6e30f662a01cf943de286652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117735999"
 ---
 # <a name="id3dxmatrixstackpop-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::P op (D3DX10.h)
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questo metodo decrementa il numero di elementi nello stack di 1, rimuovendo in modo efficace la matrice corrente dall'inizio dello stack e innalzando di livello una matrice all'inizio dello stack. Se il numero corrente di elementi nello stack è 0, questo metodo restituisce senza eseguire alcuna azione. Se il conteggio corrente degli elementi nello stack è 1, questo metodo svuota lo stack.
+Si noti che questo metodo decrementa il numero di elementi nello stack di 1, rimuovendo in modo efficace la matrice corrente dall'inizio dello stack e innalzando di livello una matrice all'inizio dello stack. Se il numero corrente di elementi nello stack è 0, questo metodo restituisce senza eseguire alcuna azione. Se il numero corrente di elementi nello stack è 1, questo metodo svuota lo stack.
 
 ## <a name="requirements"></a>Requisiti
 

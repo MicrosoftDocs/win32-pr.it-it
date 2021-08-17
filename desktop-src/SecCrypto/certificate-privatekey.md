@@ -1,7 +1,7 @@
 ---
 description: Imposta o recupera la chiave privata associata al certificato.
 ms.assetid: 976d81b4-5cbe-4824-9087-9a908b0e60e5
-title: Certificate.PrivateKey - proprietà
+title: Proprietà Certificate.PrivateKey
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117771556"
 ---
-# <a name="certificateprivatekey-property"></a>Certificate.PrivateKey - proprietà
+# <a name="certificateprivatekey-property"></a>Proprietà Certificate.PrivateKey
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
 La **proprietà PrivateKey** imposta o recupera la chiave privata associata al certificato. Questa proprietà è stata introdotta in CAPICOM 2.0.
 

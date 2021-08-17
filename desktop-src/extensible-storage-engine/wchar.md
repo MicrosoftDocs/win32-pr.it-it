@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1dfa86cbc771059d941027385090dcbd2f401855
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d35dd161816253b13b09c2f2f12e9aaa6d701d197546ee3e76cbf4b687236ae7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117701145"
 ---
 # <a name="wchar"></a>WCHAR
 
@@ -43,7 +43,7 @@ Il tipo di dati WCHAR contiene un carattere Unicode a 16 bit.
 
 WCHAR
 
-Carattere Unicode A 16 bit.
+Carattere Unicode a 16 bit.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Carattere Unicode A 16 bit.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

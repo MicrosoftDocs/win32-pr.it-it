@@ -6,9 +6,9 @@ ms.tgt_platform: multiple
 keywords:
 - Proprietà RemoteApplicationArgs Servizi Desktop remoto
 - Proprietà RemoteApplicationArgs Servizi Desktop remoto, interfaccia ITSRemoteProgram2
-- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto proprietà RemoteApplicationArgs
+- ItsRemoteProgram2 interface Servizi Desktop remoto , RemoteApplicationArgs property
 - Proprietà RemoteApplicationArgs Servizi Desktop remoto, interfaccia ITSRemoteProgram3
-- ItsRemoteProgram3 interface Servizi Desktop remoto , proprietà RemoteApplicationArgs
+- ItsRemoteProgram3 interface Servizi Desktop remoto , RemoteApplicationArgs property
 topic_type:
 - apiref
 api_name:

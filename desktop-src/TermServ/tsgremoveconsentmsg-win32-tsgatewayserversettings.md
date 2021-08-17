@@ -1,6 +1,6 @@
 ---
-title: Metodo TSGRemoveConsentMsg della classe Win32_TSGatewayServerSettings
-description: Rimuove il messaggio amministrativo per il server gateway. | Metodo TSGRemoveConsentMsg della classe Win32_TSGatewayServerSettings
+title: Metodo TSGRemoveConsentMsg della Win32_TSGatewayServerSettings classe
+description: Rimuove il messaggio amministrativo per il server gateway. | Metodo TSGRemoveConsentMsg della Win32_TSGatewayServerSettings classe
 ms.assetid: 626dc9ca-d6a1-48ab-84ec-cfccb8e720c2
 ms.tgt_platform: multiple
 keywords:
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117755993"
 ---
-# <a name="tsgremoveconsentmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGRemoveConsentMsg della classe \_ TSGatewayServerSettings Win32
+# <a name="tsgremoveconsentmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGRemoveConsentMsg della classe \_ Win32 TSGatewayServerSettings
 
 Rimuove il messaggio amministrativo per il server gateway.
 
@@ -49,9 +49,9 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Managed Object Format file MOF contengono le definizioni per le classi WMI (Wind
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

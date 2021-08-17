@@ -1,7 +1,7 @@
 ---
 description: L'interfaccia IUpdateExceptionCollection definisce le proprietà seguenti.
 ms.assetid: 829b9a3a-433c-4cb8-8c30-c19638f54958
-title: Proprietà IUpdateExceptionCollection
+title: Proprietà di IUpdateExceptionCollection
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e04638dcda97ec8f6fcd04269dfb433d1832413b37cd53e765a1f6f10bf289ae
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117738256"
 ---
-# <a name="iupdateexceptioncollection-properties"></a>Proprietà IUpdateExceptionCollection
+# <a name="iupdateexceptioncollection-properties"></a>Proprietà di IUpdateExceptionCollection
 
 [**L'interfaccia IUpdateExceptionCollection**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateexceptioncollection) definisce le proprietà seguenti.
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Replica-Source
+title: Replica-Source attributo
 description: Questo attributo contiene il GUID di un'origine di replica.
 ms.assetid: a3415613-273a-40a8-966a-8d7a2b07ba70
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Replica-Source attribute
+- Replica-Source schema AD dell'attributo
 - Schema AD dell'attributo replicaSource
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9328ff208a66bc12315d1572a5f395ad0a2659b3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23f73aabec4f81eeefc47fbdf78acfbcc2fc956ec89df5e83801894d03c7685a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836700"
 ---
-# <a name="replica-source-attribute"></a>Attributo Replica-Source
+# <a name="replica-source-attribute"></a>Replica-Source attributo
 
 Questo attributo contiene il GUID di un'origine di replica.
 
@@ -30,12 +30,12 @@ Questo attributo contiene il GUID di un'origine di replica.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Replica-Source                              |
-| LDAP-Display-Name | replicaSource                               |
+| Ldap-Display-Name | replicaSource                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.109                      |
-| System-ID-GUID    | bf967a18-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a18-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene il GUID di un'origine di replica.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Vero                                         |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: Introduzione al framework della barra multifunzione di Windows
-description: Visualizzare la pagina di destinazione per il framework della barra multifunzione di Windows, un'alternativa ai menu a più livelli, alle barre degli strumenti e ai riquadri attività delle applicazioni Windows tradizionali.
+title: Introduzione al framework Windows ribbon
+description: Visualizzare la pagina di destinazione per il framework della barra multifunzione Windows, un'alternativa ai menu a più livelli, alle barre degli strumenti e ai riquadri attività delle applicazioni Windows tradizionali.
 ms.assetid: bc19d5eb-e3a4-4022-8051-512cb3a3e065
 keywords:
-- Barra multifunzione di Windows, framework
+- Windows Barra multifunzione, framework
 - Barra multifunzione, framework
-- Barra multifunzione di Windows, informazioni su
+- Windows Barra multifunzione, informazioni su
 - Barra multifunzione, informazioni su
-- Barra multifunzione di Windows, componenti
+- Windows Barra multifunzione, componenti
 - Barra multifunzione, componenti
-- Barra multifunzione di Windows, visualizzazioni
+- Windows Barra multifunzione, visualizzazioni
 - Barra multifunzione, visualizzazioni
-- Barra multifunzione di Windows, architettura
+- Windows Barra multifunzione, architettura
 - Barra multifunzione, architettura
-- Barra multifunzione di Windows, API
+- Windows Barra multifunzione, API
 - Barra multifunzione, API
-- Barra multifunzione di Windows, sicurezza
+- Windows Barra multifunzione, sicurezza
 - Barra multifunzione, sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db15165b91708a85e5ae6237b66a15bf733e80a7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 65576d90abb68b0efddf850f4855633f4b362d8cb21ce6f6f85f7924085e8810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850644"
 ---
-# <a name="introducing-the-windows-ribbon-framework"></a>Introduzione al framework della barra multifunzione di Windows
+# <a name="introducing-the-windows-ribbon-framework"></a>Introduzione al framework Windows ribbon
 
-Il framework della barra multifunzione di Windows è un ricco sistema di presentazione dei comandi che offre un'alternativa moderna ai menu a più livelli, alle barre degli strumenti e ai riquadri attività delle applicazioni Windows tradizionali.
+Il framework Windows della barra multifunzione è un sistema di presentazione dei comandi ricco che offre un'alternativa moderna ai menu a più livelli, alle barre degli strumenti e ai riquadri attività delle applicazioni Windows tradizionali.
 
 -   [Un nuovo paradigma di comando](#a-new-command-paradigm)
 -   [Visualizzazioni](#views)
@@ -43,20 +43,20 @@ Il framework della barra multifunzione di Windows è un ricco sistema di present
 
 ## <a name="a-new-command-paradigm"></a>Un nuovo paradigma di comando
 
-Il framework della barra multifunzione è una raccolta di API Win32 Microsoft che supportano una serie di nuove funzionalità dell'interfaccia utente per gli sviluppatori Windows.
+Il framework della barra multifunzione è una raccolta di API Win32 Microsoft che supportano una serie di nuove funzionalità dell'interfaccia utente per Windows sviluppatori.
 
 Questo framework di comandi dell'interfaccia utente moderno offre:
 
 -   Implementazione semplice per le nuove applicazioni del framework ribbon e migrazione semplice delle applicazioni Win32 esistenti.
 -   Aspetto e comportamento coerenti tra le applicazioni della barra multifunzione.
--   Conformità alle linee guida dell'interfaccia utente di Windows per un'esperienza Windows di prima classe tramite standard di accessibilità, supporto dello stile di visualizzazione (tema), regolazioni automatiche del contrasto elevato e riconoscimento di punti per pollice (dpi).
+-   Conformità alle linee guida Windows'interfaccia utente per un'esperienza Windows di prima classe tramite standard di accessibilità, supporto dello stile di visualizzazione (tema), regolazioni automatiche del contrasto elevato e riconoscimento di punti per pollice (dpi) elevati.
 
 Il framework della barra multifunzione è costituito da due componenti principali dell'interfaccia utente:
 
 -   La barra dei comandi della barra multifunzione, costituita dalla barra di accesso rapido che espone ed evidenzia vari comandi della barra multifunzione, come specificato dall'utente o dall'applicazione, e da una riga di scheda contenente il menu dell'applicazione, le schede standard o contestuali e un pulsante della Guida.
 -   Un sistema di menu di scelta rapida ricco.
 
-Una combinazione di interfacce COM dichiarative e XML native viene usata per separare la presentazione e la funzionalità di questi componenti.
+Una combinazione di interfacce COM native e XML dichiarative viene usata per separare la presentazione e la funzionalità di questi componenti.
 
 ## <a name="views"></a>Viste
 
@@ -64,9 +64,9 @@ I componenti principali dell'interfaccia utente del framework della barra multif
 
 ### <a name="the-ribbon-view"></a>Visualizzazione barra multifunzione
 
-L'interfaccia utente della [**visualizzazione**](windowsribbon-element-ribbon.md) barra multifunzione è la funzionalità principale del framework della barra multifunzione e offre l'esperienza utente di nuova generazione per la presentazione dei comandi nelle applicazioni Windows.
+L'interfaccia [**utente**](windowsribbon-element-ribbon.md) della visualizzazione barra multifunzione è la funzionalità principale del framework della barra multifunzione e offre l'esperienza utente di nuova generazione per la presentazione di comandi nelle Windows applicazioni.
 
-La barra multifunzione è una barra dei comandi che espone le principali funzionalità di un'applicazione tramite una serie di schede nella parte superiore di una finestra dell'applicazione. È simile per funzionalità e aspetto all'interfaccia Microsoft Office Fluent 2007. La barra multifunzione offre un punto di contrasto intuitivo al processo di valutazione ed errore dell'individuazione dei comandi tipico dei sistemi di menu standard di Windows. Ottimizzata per l'efficienza e l'individuabilità, la barra multifunzione facilita la ricerca, la comprensione e l'uso dei comandi con un numero minimo di clic del mouse e sequenze di tasti tramite un sistema di controlli standard, raccolte e anteprima live.
+La barra multifunzione è una barra dei comandi che espone le principali funzionalità di un'applicazione tramite una serie di schede nella parte superiore di una finestra dell'applicazione. È simile per funzionalità e aspetto all'interfaccia Microsoft Office 2007 Fluent 2007. La barra multifunzione offre un punto di contrasto intuitivo al processo di valutazione ed errore dell'individuazione dei comandi tipico dei sistemi di menu Windows standard. Ottimizzata per l'efficienza e l'individuabilità, la barra multifunzione facilita la ricerca, la comprensione e l'uso dei comandi con un numero minimo di clic del mouse e sequenze di tasti tramite un sistema di controlli standard, raccolte e anteprima live.
 
 L'immagine seguente illustra l'implementazione del framework della barra multifunzione in Paint per Windows 7.
 
@@ -74,11 +74,11 @@ L'immagine seguente illustra l'implementazione del framework della barra multifu
 
 ### <a name="the-contextpopup-view"></a>Visualizzazione ContextPopup
 
-La [**visualizzazione ContextPopup,**](windowsribbon-element-contextpopup.md) tramite il [controllo Popup](windowsribbon-controls-contextpopup.md) di contesto, fornisce un sistema di menu di scelta rapida più completo rispetto a quello disponibile con le applicazioni Windows precedenti. Un popup di contesto può essere distribuito solo in supporto di una barra multifunzione, un popup di contesto autonomo non è supportato dal framework della barra multifunzione.
+La [**visualizzazione ContextPopup,**](windowsribbon-element-contextpopup.md) tramite il controllo [Popup](windowsribbon-controls-contextpopup.md) di contesto, fornisce un sistema di menu di scelta rapida più completo rispetto a quello disponibile con le applicazioni Windows precedenti. Un popup di contesto può essere distribuito solo in supporto di una barra multifunzione, un popup di contesto autonomo non è supportato dal framework della barra multifunzione.
 
 ## <a name="ribbon-architecture"></a>Architettura della barra multifunzione
 
-A differenza del modello di sviluppo dell'interfaccia utente di Windows basato su controlli tradizionale, lo sviluppo dell'interfaccia utente del framework della barra multifunzione di Windows si basa sul concetto più astratto di Comandi. Concentrandosi sui comandi associati ai controlli, anziché sui controlli stessi, il framework è in grado di regolare automaticamente l'interfaccia utente in base alle esigenze in risposta allo stato di esecuzione del comando recuperato dall'applicazione host della barra multifunzione.
+A differenza del modello di sviluppo dell'interfaccia utente basato su controlli Windows, lo sviluppo dell'interfaccia utente del framework della barra multifunzione Windows è basato sul concetto più astratto di Comandi. Concentrandosi sui comandi associati ai controlli, anziché sui controlli stessi, il framework è in grado di regolare automaticamente l'interfaccia utente in base alle esigenze in risposta allo stato di esecuzione del comando recuperato dall'applicazione host della barra multifunzione.
 
 Un'applicazione che usa il framework della barra multifunzione espone i comandi senza essere ingombrati con i dettagli del modo in cui tale comando viene rappresentato nell'interfaccia utente. Questo modello viene talvolta definito modello di interfaccia utente basato sulle finalità. Il [**tipo di comando**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype), le relative proprietà e le relative risorse definiscono la finalità del comando per l'applicazione. Ad esempio, l'input del mouse, l'input da tastiera o persino l'agitazione di un dispositivo giroscopico può comportare l'esecuzione dello stesso comando che l'applicazione è interessata solo all'esecuzione del comando, non al modo in cui è stato richiamato.
 
@@ -130,7 +130,7 @@ Le API della barra multifunzione forniscono le connessioni necessarie tra una vi
     |--------------------------------------------------------------------|----------------------------------------------------------|
     | [Raccolta](windowsribbon-reference-properties-collection.md)    | Definisce le proprietà per i controlli basati su raccolta della barra multifunzione. |
     | [Selezione colori](windowsribbon-reference-properties-colorpicker.md) | Definisce le proprietà per i controlli selezione colori della barra multifunzione.     |
-    | [Carattere](windowsribbon-reference-properties-fontcontrol.md)         | Definisce le proprietà per l'oggetto FontControl della barra multifunzione.           |
+    | [Font](windowsribbon-reference-properties-fontcontrol.md)         | Definisce le proprietà per l'oggetto FontControl della barra multifunzione.           |
     | [Global](windowsribbon-reference-properties-framework.md)         | Definisce le proprietà globali per il framework della barra multifunzione.      |
     | [Risorsa](windowsribbon-reference-properties-resource.md)        | Definisce le proprietà delle risorse della barra multifunzione.                      |
     | [Barra multifunzione](windowsribbon-reference-properties-ribbon.md)            | Definisce le proprietà della visualizzazione barra multifunzione.                          |
@@ -144,21 +144,21 @@ Le API della barra multifunzione forniscono le connessioni necessarie tra una vi
 
 La DLL del framework della barra multifunzione (uiribbon.dll) viene eseguita in-process e ha gli stessi privilegi dell'applicazione host. La barra multifunzione accetta solo ciò che l'applicazione host fornisce come input o input utente da controlli strettamente vincolati, ad esempio la casella di selezione e la casella combinata modificabile.
 
-Inoltre, il framework non archivia in modo permanente tutte le informazioni tranne quelle fornite dall'applicazione host o raccolte (come autorizzato dall'utente finale) tramite il programma esperienza utente di Windows con consenso esplicito.
+Inoltre, il framework non archivia in modo permanente tutte le informazioni tranne quelle fornite dall'applicazione host o raccolte (come autorizzato dall'utente finale) tramite il programma Windows Customer Experience Program.
 
 ### <a name="accessibility-and-localization"></a>Accessibilità e localizzazione
 
 Per fornire un'interfaccia utente altamente accessibile, il framework della barra multifunzione implementa Microsoft Active Accessibility. Popolando automaticamente le proprietà Microsoft Active Accessibility con informazioni valide e utili, il framework riduce significativamente l'onere per gli sviluppatori di offrire un'esperienza inclusiva a tutti gli utenti.
 
-Per altre informazioni sull'accessibilità nel framework della barra multifunzione, vedere [Working with Active Accessibility in the 2007 Office Fluent Interfaccia utente](/previous-versions/office/developer/office-2007/bb404170(v=office.12)).
+Per altre informazioni sull'accessibilità nel framework della barra multifunzione, vedere Working [with Active Accessibility in the 2007 Office Fluent Interfaccia utente](/previous-versions/office/developer/office-2007/bb404170(v=office.12)).
 
-Inoltre, il framework della barra multifunzione è una funzionalità di Windows e, di conseguenza, è localizzato per tutte le lingue supportate da Windows. Gli sviluppatori, tuttavia, sono responsabili della localizzazione delle proprie risorse dell'applicazione specifiche.
+Inoltre, il framework della barra multifunzione è Windows funzionalità e, di conseguenza, è localizzato per tutte le lingue supportate Windows. Gli sviluppatori, tuttavia, sono responsabili della localizzazione delle proprie risorse dell'applicazione specifiche.
 
 ## <a name="conclusion"></a>Conclusione
 
-La barra multifunzione è una nuova e coinvolgente presentazione dei comandi che sviluppatori, architetti e progettisti di applicazioni devono prendere in considerazione quando progettano e compilano nuove applicazioni o aggiornano quelle esistenti.
+La barra multifunzione è una nuova e coinvolgente forma di presentazione dei comandi che sviluppatori, architetti e progettisti di applicazioni devono prendere in considerazione quando si progettano e compilano nuove applicazioni o si aggiornano quelle esistenti.
 
-Il [forum sullo sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione di Windows è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni che implementano il framework della barra multifunzione di Windows.
+Il [Windows di sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni che implementano il framework Windows Ribbon.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

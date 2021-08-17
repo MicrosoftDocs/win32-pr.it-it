@@ -1,11 +1,11 @@
 ---
 title: Interfaccia IRDVTaskPlugin
-description: L'interfaccia IRDVTaskPlugin viene implementata da un agente attività aggiornamento macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti del sistema per una macchina virtuale.
+description: L'interfaccia IRDVTaskPlugin viene implementata da un agente attività di aggiornamento della macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti di sistema per una macchina virtuale.
 ms.assetid: e06eb707-be78-4d1f-96d3-21526b167e61
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IRDVTaskPlugin Servizi Desktop remoto
-- Interfaccia IRDVTaskPlugin Servizi Desktop remoto, descritta
+- Interfaccia IRDVTaskPlugin Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,35 +15,35 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 59e90e899e8084f7fbc6b0b6f11067061eaa807b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe76f0b0b92286d5a4b7db5126706fd55bdb6f580c11fda1dcaa55a47be4678c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129170"
 ---
 # <a name="irdvtaskplugin-interface"></a>Interfaccia IRDVTaskPlugin
 
-L'interfaccia **IRDVTaskPlugin** viene implementata da un *agente attività* aggiornamento macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti del sistema per una macchina virtuale. Questa interfaccia viene utilizzata dall' *agente trigger*, che viene implementato dal sistema host.
+**L'interfaccia IRDVTaskPlugin** viene implementata  da un agente attività di aggiornamento della macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti di sistema per una macchina virtuale. Questa interfaccia viene utilizzata *dall'agente trigger*, implementato dal sistema host.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IRDVTaskPlugin** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IRDVTaskPlugin** dispone anche di questi tipi di membri:
+**L'interfaccia IRDVTaskPlugin** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRDVTaskPlugin** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IRDVTaskPlugin** dispone di questi metodi.
+**L'interfaccia IRDVTaskPlugin** include questi metodi.
 
 
 
 | Metodo                                          | Descrizione                                                        |
 |:------------------------------------------------|:-------------------------------------------------------------------|
 | [**Inizializzare**](irdvtaskplugin-initialize.md) | Chiamato per inizializzare l'agente attività.<br/>                    |
-| [**StartTask**](irdvtaskplugin-starttask.md)   | Chiamato per avviare l'attività di aggiornamento nella macchina virtuale.<br/> |
-| [**Terminare**](irdvtaskplugin-terminate.md)   | Chiamato quando l'agente attività viene arrestato.<br/>          |
+| [**Attività di avvio**](irdvtaskplugin-starttask.md)   | Chiamato per avviare l'attività di aggiornamento nella macchina virtuale.<br/> |
+| [**Terminare**](irdvtaskplugin-terminate.md)   | Chiamato quando l'agente attività è in fase di arresto.<br/>          |
 
 
 
@@ -51,7 +51,7 @@ L'interfaccia **IRDVTaskPlugin** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IRDVTaskPlugin** ha queste proprietà.
+Queste **proprietà sono disponibili nell'interfaccia IRDVTaskPlugin.**
 
 
 
@@ -65,19 +65,19 @@ L'interfaccia **IRDVTaskPlugin** ha queste proprietà.
 
 ## <a name="remarks"></a>Commenti
 
-L'agente attività viene eseguito nella macchina virtuale quando la macchina virtuale è pianificata per un aggiornamento del sistema. L'agente attività Aggiorna la macchina virtuale quando viene chiamato il metodo [**StartTask**](irdvtaskplugin-starttask.md) .
+L'agente attività viene eseguito nella macchina virtuale quando tale macchina virtuale è pianificata per un aggiornamento del sistema. L'agente attività aggiorna la macchina virtuale quando viene [**chiamato il metodo StartTask.**](irdvtaskplugin-starttask.md)
 
-Per registrare l'agente attività, aggiungere la chiave seguente al registro di sistema della macchina virtuale:
+Per registrare l'agente attività, aggiungere la chiave seguente al Registro di sistema della macchina virtuale:
 
-**HKEY \_ Software del \_ computer locale** \\  \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Terminal Server** \\  \\ **plugin** attività \\ **TaskAgentName**
+**HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Terminal Server** \\ **Task** \\ **Plugins** \\ **TaskAgentName**
 
-In questa chiave del registro di sistema aggiungere i valori seguenti:
+In questa chiave del Registro di sistema aggiungere i valori seguenti:
 
 
 
 | Nome                     | Tipo                      | Descrizione                                                                   |
 |--------------------------|---------------------------|-------------------------------------------------------------------------------|
-| **CLSID**<br/>     | **REG \_ SZ**<br/>    | Stringa che rappresenta il **CLSID** dell'agente attività.<br/>          |
+| **Clsid**<br/>     | **REG \_ SZ**<br/>    | Stringa che rappresenta il **CLSID dell'agente** attività.<br/>          |
 | **IsEnabled**<br/> | **REG \_ DWORD**<br/> | 0 se l'agente attività è disabilitato o 1 se l'agente attività è abilitato.<br/> |
 
 
@@ -85,11 +85,11 @@ In questa chiave del registro di sistema aggiungere i valori seguenti:
  
 
 > [!Note]  
-> È possibile registrare più di un agente attività, ma verrà usato un solo agente attività. Se è abilitato più di un agente attività, verrà utilizzato solo il primo oggetto trovato.
+> È possibile registrare più agenti attività, ma verrà utilizzato un solo agente attività. Se è abilitato più di un agente attività, verrà utilizzato solo il primo agente trovato.
 
  
 
-Sebbene questa interfaccia sia supportata nei sistemi operativi indicati nei requisiti indicati di seguito, verrà usata solo se la macchina virtuale è ospitata in Windows Server 2012.
+Anche se questa interfaccia è supportata nei sistemi operativi identificati nei requisiti seguenti, verrà usata solo se la macchina virtuale è ospitata in Windows Server 2012.
 
 ## <a name="requirements"></a>Requisiti
 

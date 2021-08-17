@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_SHOWDROPDOWN (winuser. h)
-description: Un'applicazione invia un \_ messaggio CB SHOWDROPDOWN per mostrare o nascondere la casella di riepilogo di una casella combinata con lo \_ stile di menu a discesa CBS o CBS \_ DropDownList.
+title: CB_SHOWDROPDOWN messaggio (Winuser.h)
+description: Un'applicazione invia un messaggio CB SHOWDROPDOWN per visualizzare o nascondere la casella di riepilogo di una casella combinata con lo stile CBS DROPDOWN o \_ \_ CBS \_ DROPDOWNLIST.
 ms.assetid: 32b995d7-eed6-4173-8525-0d356dea39b3
 keywords:
-- Controlli di Windows Message CB_SHOWDROPDOWN
+- CB_SHOWDROPDOWN di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb66e9a0ecf3b6680fce9aca7f680fd6e6fd13e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c820c65c053f7acbcffb379228ea5f7720476b6d2165ac4988ce8789e912cdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832239"
 ---
-# <a name="cb_showdropdown-message"></a>\_Messaggio SHOWDROPDOWN CB
+# <a name="cb_showdropdown-message"></a>Messaggio CB \_ SHOWDROPDOWN
 
-Un'applicazione invia un messaggio **CB \_ SHOWDROPDOWN** per mostrare o nascondere la casella di riepilogo di una casella combinata con lo stile di [**menu a \_ discesa CBS**](combo-box-styles.md) o [**CBS \_ DropDownList**](combo-box-styles.md) .
+Un'applicazione invia un **messaggio CB \_ SHOWDROPDOWN** per visualizzare o nascondere la casella di riepilogo di una casella combinata con lo stile [**CBS \_ DROPDOWN**](combo-box-styles.md) o [**CBS \_ DROPDOWNLIST.**](combo-box-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Un'applicazione invia un messaggio **CB \_ SHOWDROPDOWN** per mostrare o nascond
 *wParam* 
 </dt> <dd>
 
-Valore **booleano** che specifica se la casella di riepilogo a discesa deve essere mostrata o nascosta. Il valore **true** Mostra la casella di riepilogo; il valore **false** lo nasconde.
+VALORE **BOOL** che specifica se la casella di riepilogo a discesa deve essere visualizzata o nascosta. Il valore **TRUE mostra** la casella di riepilogo. il valore **FALSE** lo nasconde.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è sempre **true**.
+Il valore restituito è sempre **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio non ha alcun effetto su una casella combinata creata con lo stile [**\_ semplice CBS**](combo-box-styles.md) .
+Questo messaggio non ha effetto su una casella combinata creata con lo [**stile \_ SIMPLE di CBS.**](combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Questo messaggio non ha alcun effetto su una casella combinata creata con lo sti
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
