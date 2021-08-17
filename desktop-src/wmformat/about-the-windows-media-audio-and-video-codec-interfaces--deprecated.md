@@ -1,9 +1,9 @@
 ---
-title: Informazioni sulle interfacce di Windows Media Audio e codec video
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | Informazioni sulle interfacce di Windows Media Audio e codec video
+title: Informazioni sulle Windows codec video e audio multimediali
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Informazioni sulle Windows codec video e audio multimediali
 ms.assetid: 7cb50930-ddcc-4cd1-95df-1f6f7ede9d4f
 keywords:
-- Informazioni sul formato di Windows Media per le interfacce codec Windows Media Audio e video
+- Informazioni sulle Windows codec video e audio multimediali windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 094151569db48d86b4cb287cbb5dbd4ca99737cb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ca1d02bff19027742effa03222dcb2bda21ff8ff4e5bdd226a6c253bebf86ea2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086217"
 ---
-# <a name="about-the-windows-media-audio-and-video-codec-interfaces"></a>Informazioni sulle interfacce di Windows Media Audio e codec video
+# <a name="about-the-windows-media-audio-and-video-codec-interfaces"></a>Informazioni sulle Windows codec video e audio multimediali
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Cerca uno shader per un commento specifico. Il commento è identificato da un codice di quattro caratteri (FOURCC) nel primo valore DWORD del commento.
+description: Cerca un commento specifico in uno shader. Il commento è identificato da un codice a quattro caratteri (FOURCC) nel primo DWORD del commento.
 ms.assetid: 86ab8330-fd48-4d14-835c-92399c6c8a38
-title: Funzione D3DXFindShaderComment (D3DX9Shader. h)
+title: Funzione D3DXFindShaderComment (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 394c72bcf7076075318cd664cf56bbb464d7e3cf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 07ff15b77866732f7a2dcab814e1ccf84d5344f640d83300af874e162485879b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096056"
 ---
-# <a name="d3dxfindshadercomment-function"></a>D3DXFindShaderComment (funzione)
+# <a name="d3dxfindshadercomment-function"></a>Funzione D3DXFindShaderComment
 
-Cerca uno shader per un commento specifico. Il commento è identificato da un codice di quattro caratteri (FOURCC) nel primo valore DWORD del commento.
+Cerca un commento specifico in uno shader. Il commento è identificato da un codice a quattro caratteri (FOURCC) nel primo DWORD del commento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT D3DXFindShaderComment(
 
 <dl> <dt>
 
-*pFunction* \[ in\]
+*pFunction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -52,30 +52,30 @@ Puntatore al flusso DWORD della funzione shader.
 
 </dd> <dt>
 
-*Fourcc* \[ in\]
+*FourCC* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Codice FOURCC che identifica il blocco di commento. Vedere [formati FourCC](d3dformat.md).
+Codice FOURCC che identifica il blocco di commenti. Vedere [FourCC Formats (Formati FourCC).](d3dformat.md)
 
 </dd> <dt>
 
-*ppData* \[ in\]
+*ppData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)\***
 
-Restituisce un puntatore ai dati di commento, escluso il token di commento e il codice FOURCC. Questo valore può essere **null**.
+Restituisce un puntatore ai dati di commento (senza includere il token di commento e il codice FOURCC). Questo valore può essere **NULL.**
 
 </dd> <dt>
 
-*pSizeInBytes* \[ out\]
+*pSizeInBytes* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Restituisce le dimensioni in byte dei dati di commento. Questo valore può essere **null**.
+Restituisce le dimensioni in byte dei dati di commento. Questo valore può essere **NULL.**
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Restituisce le dimensioni in byte dei dati di commento. Questo valore può esser
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se il commento non viene trovato e non si sono verificati altri errori, \_ viene restituito S false.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se il commento non viene trovato e non si è verificato alcun altro errore, viene restituito S \_ FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se il comme
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo di indice ISearchResult
+title: Metodo ISearchResult Index
 description: Riservato.
 ms.assetid: vs|search|~\search\wds2x\activex_control\reference\ifaces\isearchresult\index.htm
 keywords:
-- Caratteristiche dell'ambiente Windows legacy del metodo index
-- Caratteristiche dell'ambiente Windows legacy del metodo index, Interfaccia ISearchResult
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia ISearchResult, metodo index
+- Metodo di indice Funzionalità dell'Windows legacy
+- Metodo Di indice Legacy Windows Environment Features , interfaccia ISearchResult
+- Interfaccia ISearchResult Legacy Windows Environment Features , Metodo Index
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2db8928eddde265f862caed67796ce24815cdb4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 21c6cc680fc3420c41b89cd614d4bab603e89eb4c5118e5802e6f76cbaf7a21d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976961"
 ---
-# <a name="isearchresultindex-method"></a>Metodo ISearchResult:: index
+# <a name="isearchresultindex-method"></a>Metodo ISearchResult::Index
 
 Questo metodo non è implementato.
 
- 
+ 
 
- 
+ 
 
 
 

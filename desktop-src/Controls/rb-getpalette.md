@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETPALETTE (COMmctrl. h)
-description: Recupera la tavolozza corrente del controllo Rebar.
+title: RB_GETPALETTE messaggio (Commctrl.h)
+description: Recupera il riquadro corrente del controllo rebar.
 ms.assetid: f9eeefb3-8308-45bf-89e4-4f282ee6d935
 keywords:
-- Controlli di Windows Message RB_GETPALETTE
+- RB_GETPALETTE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36dd2764b6a8951a337c990dcbcfb8e5aff9c56b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e2a4be005392e01bceedd2582c61edfa60b808ef98414237109ec276dc016f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078705"
 ---
-# <a name="rb_getpalette-message"></a>Messaggio di RB \_ GETpalette
+# <a name="rb_getpalette-message"></a>Messaggio \_ GETPALETTE RB
 
-Recupera la tavolozza corrente del controllo Rebar.
+Recupera il riquadro corrente del controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera la tavolozza corrente del controllo Rebar.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **HPALETTE** che specifica la tavolozza corrente del controllo Rebar.
+Restituisce un **oggetto HPALETTE** che specifica il riquadro corrente del controllo rebar.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un **HPALETTE** che specifica la tavolozza corrente del controllo Re
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce un **HPALETTE** che specifica la tavolozza corrente del controllo Re
 
 <dl> <dt>
 
-[**\_tavolozza RB**](rb-setpalette.md)
+[**RB \_ SETPALETTE**](rb-setpalette.md)
 </dt> </dl>
 
  

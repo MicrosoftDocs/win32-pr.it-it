@@ -1,7 +1,7 @@
 ---
 description: Crea un effetto da una descrizione di effetto ASCII o binario. Questa funzione è una versione estesa di D3DXCreateEffect che consente a un'applicazione di controllare quali parametri vengono ignorati dal sistema di effetti.
 ms.assetid: b08f727e-6061-4e78-8243-08c4ccab342d
-title: Funzione D3DXCreateEffectEx (D3DX9Effect. h)
+title: Funzione D3DXCreateEffectEx (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 979b09f852e692b4c25414607f79cd8792342755
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 19321dde9f44a2262ee3875d40bd5822e65eff9b84d1fc01656993ea584a8dc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988651"
 ---
-# <a name="d3dxcreateeffectex-function"></a>D3DXCreateEffectEx (funzione)
+# <a name="d3dxcreateeffectex-function"></a>Funzione D3DXCreateEffectEx
 
 Crea un effetto da una descrizione di effetto ASCII o binario. Questa funzione è una versione estesa di [**D3DXCreateEffect**](d3dxcreateeffect.md) che consente a un'applicazione di controllare quali parametri vengono ignorati dal sistema di effetti.
 
@@ -49,16 +49,16 @@ HRESULT D3DXCreateEffectEx(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore al dispositivo che creerà l'effetto. Vedere [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9).
+Puntatore al dispositivo che creerà l'effetto. Vedere [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)
 
 </dd> <dt>
 
-*pSrcData* \[ in\]
+*pSrcData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -67,70 +67,70 @@ Puntatore a un buffer contenente una descrizione dell'effetto.
 
 </dd> <dt>
 
-*SrcDataLen* \[ in\]
+*SrcDataLen* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Lunghezza in byte dei dati effettivi.
+Lunghezza dei dati dell'effetto, in byte.
 
 </dd> <dt>
 
-*pDefines* \[ in\]
+*pDefines* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa con terminazione **null** di strutture [**D3DXMACRO**](d3dxmacro.md) che descrivono le definizioni del preprocessore. Questo valore può essere **null**.
+Matrice facoltativa **con terminazione NULL** di strutture [**D3DXMACRO**](d3dxmacro.md) che descrivono le definizioni del preprocessore. Questo valore può essere **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ in\]
+*pInclude* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia facoltativo, [**ID3DXInclude**](id3dxinclude.md), da usare per la gestione delle \# direttive include. Se questo valore è **null**, le \# inclusioni verranno rispettate durante la compilazione da un file o genereranno un errore quando vengono compilate da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
-*pSkipConstants* \[ in\]
+*pSkipConstants* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Una stringa di parametri effetti che verrà ignorata dal sistema di effetti. La stringa deve essere con terminazione **null** e deve contenere il nome di ogni costante gestita dall'applicazione separata da un punto e virgola.
+Stringa di parametri dell'effetto che verrà ignorata dal sistema di effetti. La stringa deve **terminare** con NULL e deve contenere il nome di ogni costante gestita dall'applicazione separati da un punto e virgola.
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Se *pSrcData* contiene un effetto di testo, i flag possono essere una combinazione di flag [D3DXSHADER](d3dxshader-flags.md) e flag [D3DXFX](d3dxfx.md) ; in caso contrario, *pSrcData* contiene un effetto binario e gli unici flag rispettati sono i flag D3DXFX. Il compilatore Direct3D 10 HLSL è ora il valore predefinito. Per informazioni dettagliate, vedere [strumento del compilatore di effetti](../direct3dtools/fxc.md) .
+Se *pSrcData contiene* un effetto di testo, i flag possono essere una combinazione di flag [D3DXSHADER](d3dxshader-flags.md) e [flag D3DXFX;](d3dxfx.md) In caso contrario, *pSrcData* contiene un effetto binario e gli unici flag rispettati sono i flag D3DXFX. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Effect-Compiler Tool](../direct3dtools/fxc.md) .
 
 </dd> <dt>
 
-*pPool* \[ in\]
+*pPool* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTPOOL**](id3dxeffectpool.md)**
 
-Puntatore a un oggetto [**ID3DXEffectPool**](id3dxeffectpool.md) da utilizzare per i parametri condivisi. Se questo valore è **null**, non verrà condiviso alcun parametro.
+Puntatore a [**un oggetto ID3DXEffectPool**](id3dxeffectpool.md) da usare per i parametri condivisi. Se questo valore è **NULL,** non verrà condiviso alcun parametro.
 
 </dd> <dt>
 
-*ppEffect* \[ out\]
+*ppEffect* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECT**](id3dxeffect.md)\***
 
-Restituisce un puntatore a un'interfaccia [**ID3DXEffect**](id3dxeffect.md) .
+Restituisce un puntatore a [**un'interfaccia ID3DXEffect.**](id3dxeffect.md)
 
 </dd> <dt>
 
-*ppCompilationErrors* \[ out\]
+*ppCompilationErrors* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
@@ -143,18 +143,18 @@ Restituisce un buffer contenente un elenco di errori di compilazione.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è una versione estesa di [**D3DXCreateEffect**](d3dxcreateeffect.md) che consente a un'applicazione di specificare quali costanti di effetto verranno gestite dall'applicazione. Una costante gestita dall'applicazione viene ignorata dal sistema di effetti. In altre condizioni, l'applicazione è responsabile dell'inizializzazione della costante, nonché del salvataggio e del ripristino dello stato quando appropriato.
+Questa funzione è una versione estesa di [**D3DXCreateEffect**](d3dxcreateeffect.md) che consente a un'applicazione di specificare quali costanti di effetto verranno gestite dall'applicazione. Una costante gestita dall'applicazione viene ignorata dal sistema di effetti. In altri casi, l'applicazione è responsabile dell'inizializzazione della costante, nonché del salvataggio e del ripristino dello stato quando appropriato.
 
-Questa funzione controlla ogni costante in pSkipConstants per vedere quanto segue:
+Questa funzione controlla ogni costante in pSkipConstants per verificare che:
 
 -   È associato a un registro costante.
--   Viene usato solo nel codice shader HLSL.
+-   Viene usato solo nel codice dello shader HLSL.
 
-Se una costante viene denominata nella stringa non presente nell'effetto, viene ignorata.
+Se una costante viene denominata nella stringa che non è presente nell'effetto, viene ignorata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -162,8 +162,8 @@ Se una costante viene denominata nella stringa non presente nell'effetto, viene 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -171,7 +171,7 @@ Se una costante viene denominata nella stringa non presente nell'effetto, viene 
 
 <dl> <dt>
 
-[Funzioni effetto](dx9-graphics-reference-effects-functions.md)
+[Funzioni di effetto](dx9-graphics-reference-effects-functions.md)
 </dt> <dt>
 
 [**D3DXCreateEffectFromFileEx**](d3dxcreateeffectfromfileex.md)

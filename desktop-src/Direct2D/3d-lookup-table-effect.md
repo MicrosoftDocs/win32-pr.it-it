@@ -27,7 +27,7 @@ Il CLSID per questo effetto è CLSID \_ D2D1LookupTable3D.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà degli effetti](#effect-properties)
+-   [Proprietà dell'effetto](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
@@ -126,8 +126,8 @@ Le proprietà per l'effetto tabella di ricerca 3D sono definite dall'enumerazion
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
-| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
 | Intestazione                   | d2d1effects \_ 2.h                                  |
 | Libreria                  | d2d1.lib, dxguid.lib                              |
 

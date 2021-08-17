@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9b9b0f5ae0e3fda05cd8bdd92ee73b826f81b970
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2115b804dfda537508247785d897757a3f25263e8ee528fdacfb1a91b0515045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730800"
 ---
 # <a name="d3dxvec2transform-function-d3dx9mathh"></a>Funzione D3DXVec2Transform (D3dx9math.h)
 

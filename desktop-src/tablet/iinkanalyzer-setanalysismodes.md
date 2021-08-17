@@ -1,7 +1,7 @@
 ---
 description: Modifica i flag che controllano il modo in cui IInkAnalyzer esegue l'analisi dell'input penna.
 ms.assetid: cb82edd0-1f15-4313-a286-1fcd715ac6df
-title: 'Metodo IInkAnalyzer:: SetAnalysisModes (IACom. h)'
+title: Metodo IInkAnalyzer::SetAnalysisModes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 826d31fd5b61db2332ef953d55b2cf6c6331995b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7edd167cd40b80a01fd2f23243c931fe6a15795da08d7735b6e2433c462ee01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091503"
 ---
-# <a name="iinkanalyzersetanalysismodes-method"></a>Metodo IInkAnalyzer:: SetAnalysisModes
+# <a name="iinkanalyzersetanalysismodes-method"></a>Metodo IInkAnalyzer::SetAnalysisModes
 
-Modifica i flag che controllano il modo in cui [**IInkAnalyzer**](iinkanalyzer.md) esegue l'analisi dell'input penna.
+Modifica i flag che controllano il modo in cui [**IInkAnalyzer esegue**](iinkanalyzer.md) l'analisi dell'input penna.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ HRESULT SetAnalysisModes(
 
 <dl> <dt>
 
-*analysisMode* \[ in\]
+*analysisMode* \[ Pollici\]
 </dt> <dd>
 
-Combinazione bit per bit dei valori dell'enumerazione [**AnalysisModes**](analysismodes.md) .
+Combinazione bit per bit dei [**valori di enumerazione AnalysisModes.**](analysismodes.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -70,19 +70,19 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**AnalysisModes**](analysismodes.md)
+[**Analysismodes**](analysismodes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: GetAnalysisModes**](iinkanalyzer-getanalysismodes.md)
+[**Metodo IInkAnalyzer::GetAnalysisModes**](iinkanalyzer-getanalysismodes.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

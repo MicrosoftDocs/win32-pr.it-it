@@ -47,7 +47,7 @@ Restituisce l'arcotangente del valore specificato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Arcotangente del *parametro x.* Questo valore è compreso nell'intervallo compreso tra -π/2 e π/2.
+Arcotangente del *parametro x.* Questo valore è compreso nell'intervallo da -π/2 a π/2.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -64,14 +64,14 @@ Arcotangente del *parametro x.* Questo valore è compreso nell'intervallo compre
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì       |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
 

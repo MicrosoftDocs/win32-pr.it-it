@@ -1,7 +1,7 @@
 ---
-description: Esegue una query sullo stato blit della superficie specificata.
+description: Esegue una query sullo stato di blit della superficie specificata.
 ms.assetid: 0221bdc6-2146-4f4d-afb5-d1f701446d5e
-title: Funzione NtGdiDdGetBltStatus (Ntgdi. h)
+title: Funzione NtGdiDdGetBltStatus (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 381de7f8c360f222a004786834fa36e92f1220d9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 488d0b28da747346b795ef7a1c5a3846d4661c0afb31c65a9e624584b8fe60e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956360"
 ---
-# <a name="ntgdiddgetbltstatus-function"></a>NtGdiDdGetBltStatus (funzione)
+# <a name="ntgdiddgetbltstatus-function"></a>Funzione NtGdiDdGetBltStatus
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Esegue una query sullo stato blit della superficie specificata.
+Esegue una query sullo stato di blit della superficie specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdGetBltStatus(
 
 <dl> <dt>
 
-*hSurface* \[ in\]
+*hSurface* \[ Pollici\]
 </dt> <dd>
 
-Handle per una [struttura \_ \_ locale della superficie DD](https://msdn.microsoft.com/library/ms793861.aspx) che rappresenta l'area di cui viene eseguita la query sullo stato blit.
+Handle a una [struttura SURFACE \_ \_ LOCAL DD](https://msdn.microsoft.com/library/ms793861.aspx) che rappresenta la superficie di cui viene eseguita una query sullo stato di blit.
 
 </dd> <dt>
 
-*puGetBltStatusData* \[ in uscita\]
+*puGetBltStatusData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [DD \_ GETBLTSTATUSDATA](https://msdn.microsoft.com/library/ms794243.aspx) che contiene le informazioni necessarie per eseguire la query sullo stato blit.
+Puntatore a [una struttura \_ GETBLTSTATUSDATA DD](https://msdn.microsoft.com/library/ms794243.aspx) che contiene le informazioni necessarie per eseguire la query sullo stato del blit.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntatore a una struttura [DD \_ GETBLTSTATUSDATA](https://msdn.microsoft.com/li
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Puntatore a una struttura [DD \_ GETBLTSTATUSDATA](https://msdn.microsoft.com/li
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Puntatore a una struttura [DD \_ GETBLTSTATUSDATA](https://msdn.microsoft.com/li
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: Il metodo DeleteBookmark Elimina il segnalibro salvato.
+description: Il metodo DeleteBookmark elimina il segnalibro salvato.
 ms.assetid: f408a65d-3b95-446b-9a48-a98dc920ea30
-title: Metodo DeleteBookmark (Segment. h)
+title: Metodo DeleteBookmark (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f3193708752716bffcc59bf7a637546db7176a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7aca0fdd0f212658d50678451dd4d57216a923d2ab43924f18fa9ed42288c648
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952980"
 ---
 # <a name="deletebookmark-method"></a>Metodo DeleteBookmark
 
@@ -18,7 +18,7 @@ ms.locfileid: "106327671"
 
  
 
-Il metodo **DeleteBookmark** Elimina il segnalibro salvato.
+Il **metodo DeleteBookmark** elimina il segnalibro salvato.
 
 ``` syntax
     MSWebDVD.DeleteBookmark()
@@ -38,7 +38,7 @@ Può essere presente un solo segnalibro alla volta.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

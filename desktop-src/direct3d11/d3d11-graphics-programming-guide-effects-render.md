@@ -4,12 +4,12 @@ description: Informazioni sul rendering di un effetto per Direct3D 11. Un effett
 ms.assetid: 7af239de-812d-4295-b599-b9deb371b01b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7def8f7bbfb9f2c7a5102eb8e02fc848155e4bde
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: a3ba8ebbc1ac8989ac10568a00f26b26370c4bb8e7710098733dad74618e53af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117913601"
 ---
 # <a name="rendering-an-effect-direct3d-11"></a>Rendering di un effetto (Direct3D 11)
 
@@ -17,7 +17,7 @@ Un effetto può essere usato per archiviare le informazioni o per eseguire il re
 
 Esistono alcuni passaggi per preparare un effetto per il rendering. Il primo è la compilazione, che controlla il codice HLSL come rispetto alla sintassi del linguaggio HLSL e alle regole del framework degli effetti. È possibile compilare un effetto dall'applicazione usando le chiamate API oppure è possibile compilare un effetto offline usando l'utilità del compilatore di [ effettifxc.exe](/windows/desktop/direct3dtools/fxc). Dopo aver compilato correttamente l'effetto, crearlo chiamando un set di API diverso (ma molto simile).
 
-Dopo aver creato l'effetto, sono necessari due passaggi rimanenti per usarlo. Prima di tutto, è necessario inizializzare i valori dello stato dell'effetto (i valori delle variabili dell'effetto) usando diversi metodi per impostare lo stato se non vengono inizializzati in HLSL. Per alcune variabili questa operazione può essere eseguita una sola volta quando viene creato un effetto. altri devono essere aggiornati ogni volta che l'applicazione chiama il ciclo di rendering. Dopo aver impostato le variabili dell'effetto, si indica al runtime di eseguire il rendering dell'effetto applicando una tecnica. Questi argomenti sono tutti descritti in dettaglio più avanti.
+Dopo aver creato l'effetto, sono necessari due passaggi rimanenti per usarlo. Prima di tutto, è necessario inizializzare i valori dello stato dell'effetto (i valori delle variabili dell'effetto) usando diversi metodi per impostare lo stato se non vengono inizializzati in HLSL. Per alcune variabili questa operazione può essere eseguita una sola volta quando viene creato un effetto. altri devono essere aggiornati ogni volta che l'applicazione chiama il ciclo di rendering. Dopo aver impostato le variabili dell'effetto, si indica al runtime di eseguire il rendering dell'effetto applicando una tecnica. Questi argomenti sono descritti in dettaglio più avanti.
 
 Naturalmente, esistono considerazioni sulle prestazioni per l'uso degli effetti. Queste considerazioni sono in gran parte le stesse se non si usa un effetto. Come ridurre al minimo la quantità di modifiche dello stato e organizzare le variabili in base alla frequenza di aggiornamento. Queste tattiche vengono usate per ridurre al minimo la quantità di dati che devono essere inviati dalla CPU alla GPU e quindi ridurre al minimo i potenziali problemi di sincronizzazione.
 

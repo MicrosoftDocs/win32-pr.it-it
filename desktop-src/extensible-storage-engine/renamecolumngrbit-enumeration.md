@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione RenameColumnGrbit'
+description: Altre informazioni sull'enumerazione RenameColumnGrbit
 title: Enumerazione RenameColumnGrbit
 TOCTitle: RenameColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.RenameColumnGrbit
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 446b24bf584034d300c5b631ce450ead31f68741
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 904ce2d926814dc97d65ede9d5b622cfe94b9cbce6d97a01e5366d7f65b31e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071801"
 ---
 # <a name="renamecolumngrbit-enumeration"></a>Enumerazione RenameColumnGrbit
 
-Opzioni per [JetRenameColumn (JET_SESID, JET_TABLEID, String, String, RenameColumnGrbit)](./api.jetrenamecolumn-method.md).
+Opzioni per [JetRenameColumn(JET_SESID, JET_TABLEID, String, String, RenameColumnGrbit)](./api.jetrenamecolumn-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,4 +81,4 @@ public enum RenameColumnGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

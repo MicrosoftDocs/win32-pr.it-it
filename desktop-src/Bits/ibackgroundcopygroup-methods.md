@@ -1,19 +1,19 @@
 ---
-title: Metodi IBackgroundCopyGroup
+title: Metodi di IBackgroundCopyGroup
 description: L'interfaccia IBackgroundCopyGroup espone i metodi seguenti.
 ms.assetid: F107750A-7A37-4654-AF0E-77D9D2DFD8C7
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c11a7e459d2944f97bd4ac7890d1505af5d24b0f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6fb8104dcc7314c0eac31dc7ecfb3fad88e7683bb62031162c9cc0424a4a5485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959340"
 ---
-# <a name="ibackgroundcopygroup-methods"></a>Metodi IBackgroundCopyGroup
+# <a name="ibackgroundcopygroup-methods"></a>Metodi di IBackgroundCopyGroup
 
-L'interfaccia [**IBackgroundCopyGroup**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopygroup) espone i metodi seguenti.
+[**L'interfaccia IBackgroundCopyGroup**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgroundcopygroup) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,19 +21,19 @@ L'interfaccia [**IBackgroundCopyGroup**](/windows/desktop/api/Qmgr/nn-qmgr-iback
 -   [**Metodo CreateJob**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-createjob)
 -   [**Metodo EnumJobs**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-enumjobs)
 -   [**Metodo GetJob**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-getjob)
--   [**Metodo getProgress**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-getprogress)
+-   [**Metodo GetProgress**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-getprogress)
 -   [**Metodo GetProp**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-getprop)
 -   [**Metodo GetStatus**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-getstatus)
--   [**\_metodo Get GroupID**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-get_groupid)
--   [**\_metodo Get Size**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-get_size)
+-   [**Metodo get \_ GroupID**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-get_groupid)
+-   [**Metodo get \_ Size**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-get_size)
 -   [**Metodo ResumeGroup**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-resumegroup)
--   [**Metodo seprop**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-setprop)
+-   [**Metodo SetProp**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-setprop)
 -   [**Metodo SuspendGroup**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-suspendgroup)
 -   [**Metodo SwitchToForeground**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopygroup-switchtoforeground)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Codici di stato HTTP (WinInet. h)
+title: Codici di stato HTTP (Wininet.h)
 description: La tabella seguente contiene le costanti e i valori corrispondenti per i codici di stato HTTP restituiti dai server su Internet.
 ms.assetid: 28a5e889-c8f3-4996-a1ca-c48866fa59d7
 topic_type:
@@ -50,20 +50,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6933617b0488e059c029dd783af238a3ddbb3ecb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01c6a8fecf7d1c7b3f95c1d4ce8040b9ba25e7d72ee4a41c8cbbcd24cd0da4bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743809"
 ---
-# <a name="http-status-codes-winineth"></a>Codici di stato HTTP (WinInet. h)
+# <a name="http-status-codes-winineth"></a>Codici di stato HTTP (Wininet.h)
 
 La tabella seguente contiene le costanti e i valori corrispondenti per i codici di stato HTTP restituiti dai server su Internet.
 
 <dl> <dt>
 
-<span id="HTTP_STATUS_CONTINUE"></span><span id="http_status_continue"></span>**\_stato http \_ continua**
+<span id="HTTP_STATUS_CONTINUE"></span><span id="http_status_continue"></span>**STATO HTTP \_ \_ CONTINUA**
 </dt> <dd> <dl> <dt>
 
 100
@@ -76,7 +76,7 @@ La richiesta può essere continuata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**\_protocolli del \_ cambio di stato http \_**
+<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**PROTOCOLLI \_ DI CAMBIO DI STATO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 101
@@ -84,12 +84,12 @@ La richiesta può essere continuata.
 
 
 
-Il server ha cambiato i protocolli in un'intestazione di aggiornamento.
+Il server ha protocolli commutati in un'intestazione di aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_OK"></span><span id="http_status_ok"></span>**\_stato http \_ OK**
+<span id="HTTP_STATUS_OK"></span><span id="http_status_ok"></span>**STATO \_ HTTP \_ OK**
 </dt> <dd> <dl> <dt>
 
 200
@@ -102,7 +102,7 @@ La richiesta è stata completata correttamente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_CREATED"></span><span id="http_status_created"></span>**\_stato http \_ creato**
+<span id="HTTP_STATUS_CREATED"></span><span id="http_status_created"></span>**STATO \_ HTTP \_ CREATO**
 </dt> <dd> <dl> <dt>
 
 201
@@ -110,12 +110,12 @@ La richiesta è stata completata correttamente.
 
 
 
-La richiesta è stata soddisfatta e ha causato la creazione di una nuova risorsa.
+La richiesta è stata soddisfatta e ha comportato la creazione di una nuova risorsa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_ACCEPTED"></span><span id="http_status_accepted"></span>**\_stato http \_ accettato**
+<span id="HTTP_STATUS_ACCEPTED"></span><span id="http_status_accepted"></span>**STATO HTTP \_ \_ ACCETTATO**
 </dt> <dd> <dl> <dt>
 
 202
@@ -128,7 +128,7 @@ La richiesta è stata accettata per l'elaborazione, ma l'elaborazione non è sta
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PARTIAL"></span><span id="http_status_partial"></span>**\_stato http \_ parziale**
+<span id="HTTP_STATUS_PARTIAL"></span><span id="http_status_partial"></span>**HTTP \_ STATUS \_ PARTIAL**
 </dt> <dd> <dl> <dt>
 
 203
@@ -136,12 +136,12 @@ La richiesta è stata accettata per l'elaborazione, ma l'elaborazione non è sta
 
 
 
-Le metainformazioni restituite nell'intestazione dell'entità non sono il set definitivo disponibile dal server di origine.
+Le meta informazioni restituite nell'intestazione dell'entità non sono il set definitivo disponibile dal server di origine.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NO_CONTENT"></span><span id="http_status_no_content"></span>**\_stato http \_ nessun \_ contenuto**
+<span id="HTTP_STATUS_NO_CONTENT"></span><span id="http_status_no_content"></span>**STATO HTTP \_ \_ SENZA \_ CONTENUTO**
 </dt> <dd> <dl> <dt>
 
 204
@@ -149,12 +149,12 @@ Le metainformazioni restituite nell'intestazione dell'entità non sono il set de
 
 
 
-Il server ha completato la richiesta, ma non sono presenti nuove informazioni da restituire.
+Il server ha soddisfatto la richiesta, ma non sono disponibili nuove informazioni da inviare.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**\_contenuto della \_ reimpostazione dello stato http \_**
+<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**HTTP \_ STATUS \_ RESET \_ CONTENT**
 </dt> <dd> <dl> <dt>
 
 205
@@ -167,7 +167,7 @@ La richiesta è stata completata e il programma client deve reimpostare la visua
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PARTIAL_CONTENT"></span><span id="http_status_partial_content"></span>**\_contenuto parziale dello stato http \_ \_**
+<span id="HTTP_STATUS_PARTIAL_CONTENT"></span><span id="http_status_partial_content"></span>**CONTENUTO \_ PARZIALE DELLO STATO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 206
@@ -175,12 +175,12 @@ La richiesta è stata completata e il programma client deve reimpostare la visua
 
 
 
-Il server ha completato la richiesta di GET parziale per la risorsa.
+Il server ha soddisfatto la richiesta GET parziale per la risorsa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_AMBIGUOUS"></span><span id="http_status_ambiguous"></span>**\_stato http \_ ambiguo**
+<span id="HTTP_STATUS_AMBIGUOUS"></span><span id="http_status_ambiguous"></span>**STATO \_ \_ HTTP AMBIGUO**
 </dt> <dd> <dl> <dt>
 
 300
@@ -193,7 +193,7 @@ Il server non è riuscito a decidere cosa restituire.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_MOVED"></span><span id="http_status_moved"></span>**\_stato http \_ spostato**
+<span id="HTTP_STATUS_MOVED"></span><span id="http_status_moved"></span>**STATO HTTP \_ \_ SPOSTATO**
 </dt> <dd> <dl> <dt>
 
 301
@@ -201,12 +201,12 @@ Il server non è riuscito a decidere cosa restituire.
 
 
 
-La risorsa richiesta è stata assegnata a un nuovo URI permanente (Uniform Resource Identifier) e tutti i riferimenti futuri a questa risorsa devono essere eseguiti usando uno degli URI restituiti.
+La risorsa richiesta è stata assegnata a un nuovo URI permanente (Uniform Resource Identifier) ed eventuali riferimenti futuri a questa risorsa devono essere evasi usando uno degli URI restituiti.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT"></span><span id="http_status_redirect"></span>**\_Reindirizzamento stato \_ http**
+<span id="HTTP_STATUS_REDIRECT"></span><span id="http_status_redirect"></span>**REINDIRIZZAMENTO \_ DELLO STATO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 302
@@ -219,7 +219,7 @@ La risorsa richiesta risiede temporaneamente in un URI diverso (Uniform Resource
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**\_metodo di \_ Reindirizzamento \_ stato http**
+<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**METODO DI \_ \_ REINDIRIZZAMENTO DELLO STATO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 303
@@ -232,7 +232,7 @@ La risposta alla richiesta si trova in un URI diverso (Uniform Resource Identifi
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NOT_MODIFIED"></span><span id="http_status_not_modified"></span>**\_stato http \_ non \_ modificato**
+<span id="HTTP_STATUS_NOT_MODIFIED"></span><span id="http_status_not_modified"></span>**STATO \_ HTTP \_ NON \_ MODIFICATO**
 </dt> <dd> <dl> <dt>
 
 304
@@ -245,7 +245,7 @@ La risorsa richiesta non è stata modificata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_USE_PROXY"></span><span id="http_status_use_proxy"></span>**\_ \_ Usa proxy per lo stato http \_**
+<span id="HTTP_STATUS_USE_PROXY"></span><span id="http_status_use_proxy"></span>**HTTP \_ STATUS \_ USE \_ PROXY**
 </dt> <dd> <dl> <dt>
 
 305
@@ -253,12 +253,12 @@ La risorsa richiesta non è stata modificata.
 
 
 
-È necessario accedere alla risorsa richiesta tramite il proxy fornito dal campo location.
+È necessario accedere alla risorsa richiesta tramite il proxy specificato dal campo location.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**\_ \_ verbo Keep del reindirizzamento dello stato \_ http \_**
+<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**VERBO \_ KEEP \_ DEL \_ REINDIRIZZAMENTO DELLO STATO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 307
@@ -271,7 +271,7 @@ La richiesta reindirizzata mantiene lo stesso verbo HTTP. Comportamento HTTP/1.1
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**\_richiesta non \_ valida di stato http \_**
+<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**RICHIESTA DI STATO HTTP \_ \_ NON \_ VALIDA**
 </dt> <dd> <dl> <dt>
 
 400
@@ -279,12 +279,12 @@ La richiesta reindirizzata mantiene lo stesso verbo HTTP. Comportamento HTTP/1.1
 
 
 
-La richiesta non è stata elaborata dal server a causa di una sintassi non valida.
+Impossibile elaborare la richiesta dal server a causa di una sintassi non valida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_DENIED"></span><span id="http_status_denied"></span>**\_stato http \_ negato**
+<span id="HTTP_STATUS_DENIED"></span><span id="http_status_denied"></span>**STATO HTTP \_ \_ NEGATO**
 </dt> <dd> <dl> <dt>
 
 401
@@ -297,7 +297,7 @@ La risorsa richiesta prevede l'autenticazione degli utenti.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PAYMENT_REQ"></span><span id="http_status_payment_req"></span>**\_ \_ req pagamento stato \_ http**
+<span id="HTTP_STATUS_PAYMENT_REQ"></span><span id="http_status_payment_req"></span>**RICHIESTA \_ DI PAGAMENTO DELLO STATO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 402
@@ -310,7 +310,7 @@ Attualmente non implementato nel protocollo HTTP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_FORBIDDEN"></span><span id="http_status_forbidden"></span>**stato HTTP non \_ \_ consentito**
+<span id="HTTP_STATUS_FORBIDDEN"></span><span id="http_status_forbidden"></span>**STATO \_ HTTP \_ NON CONSENTITO**
 </dt> <dd> <dl> <dt>
 
 403
@@ -318,12 +318,12 @@ Attualmente non implementato nel protocollo HTTP.
 
 
 
-Il server ha compreso la richiesta, ma sta rifiutando di soddisfarla.
+Il server ha compreso la richiesta, ma rifiuta di soddisfarla.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NOT_FOUND"></span><span id="http_status_not_found"></span>**\_stato http \_ non \_ trovato**
+<span id="HTTP_STATUS_NOT_FOUND"></span><span id="http_status_not_found"></span>**STATO \_ HTTP \_ NON \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 404
@@ -336,7 +336,7 @@ Il server non ha trovato alcun elemento corrispondente all'URI richiesto (Unifor
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_METHOD"></span><span id="http_status_bad_method"></span>**Metodo di stato HTTP non \_ \_ valido \_**
+<span id="HTTP_STATUS_BAD_METHOD"></span><span id="http_status_bad_method"></span>**METODO \_ HTTP STATUS \_ BAD \_**
 </dt> <dd> <dl> <dt>
 
 405
@@ -344,12 +344,12 @@ Il server non ha trovato alcun elemento corrispondente all'URI richiesto (Unifor
 
 
 
-Il verbo HTTP utilizzato non è consentito.
+Il verbo HTTP usato non è consentito.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NONE_ACCEPTABLE"></span><span id="http_status_none_acceptable"></span>**\_stato http \_ nessuno \_ accettabile**
+<span id="HTTP_STATUS_NONE_ACCEPTABLE"></span><span id="http_status_none_acceptable"></span>**STATO HTTP \_ \_ NON ACCETTABILE \_**
 </dt> <dd> <dl> <dt>
 
 406
@@ -362,7 +362,7 @@ Non sono state trovate risposte accettabili per il client.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**richiesta \_ di \_ autenticazione proxy di stato \_ http \_**
+<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**HTTP \_ STATUS \_ PROXY \_ AUTH \_ REQ**
 </dt> <dd> <dl> <dt>
 
 407
@@ -370,12 +370,12 @@ Non sono state trovate risposte accettabili per il client.
 
 
 
-Richiesta autenticazione proxy.
+Autenticazione proxy richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REQUEST_TIMEOUT"></span><span id="http_status_request_timeout"></span>**\_ \_ timeout richiesta stato \_ http**
+<span id="HTTP_STATUS_REQUEST_TIMEOUT"></span><span id="http_status_request_timeout"></span>**TIMEOUT \_ DELLA RICHIESTA DI STATO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 408
@@ -388,7 +388,7 @@ Timeout del server durante l'attesa della richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_CONFLICT"></span><span id="http_status_conflict"></span>**\_conflitto stato \_ http**
+<span id="HTTP_STATUS_CONFLICT"></span><span id="http_status_conflict"></span>**CONFLITTO \_ DI STATO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 409
@@ -396,12 +396,12 @@ Timeout del server durante l'attesa della richiesta.
 
 
 
-Non è stato possibile completare la richiesta a causa di un conflitto con lo stato corrente della risorsa. L'utente deve inviare nuovamente con ulteriori informazioni.
+Impossibile completare la richiesta a causa di un conflitto con lo stato corrente della risorsa. L'utente deve inviare di nuovo con altre informazioni.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_GONE"></span><span id="http_status_gone"></span>**\_stato http \_ andato**
+<span id="HTTP_STATUS_GONE"></span><span id="http_status_gone"></span>**STATO \_ HTTP NON PIÙ \_ VISUALIZZATO**
 </dt> <dd> <dl> <dt>
 
 410
@@ -409,12 +409,12 @@ Non è stato possibile completare la richiesta a causa di un conflitto con lo st
 
 
 
-La risorsa richiesta non è più disponibile nel server e non è noto alcun indirizzo di spedizione.
+La risorsa richiesta non è più disponibile nel server e non è noto alcun indirizzo di inoltro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**\_lunghezza stato \_ http \_ obbligatoria**
+<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**LUNGHEZZA \_ DELLO STATO HTTP \_ \_ OBBLIGATORIA**
 </dt> <dd> <dl> <dt>
 
 411
@@ -422,12 +422,12 @@ La risorsa richiesta non è più disponibile nel server e non è noto alcun indi
 
 
 
-Il server rifiuta di accettare la richiesta senza una lunghezza del contenuto definita.
+Il server rifiuta di accettare la richiesta senza una lunghezza di contenuto definita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**\_Precond stato http \_ \_ non riuscita**
+<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**PRECOND STATO HTTP \_ \_ NON \_ RIUSCITO**
 </dt> <dd> <dl> <dt>
 
 412
@@ -435,12 +435,12 @@ Il server rifiuta di accettare la richiesta senza una lunghezza del contenuto de
 
 
 
-La precondizione specificata in uno o più campi di intestazione della richiesta ha restituito false quando è stato testato nel server.
+La precondizione specificata in uno o più campi di intestazione della richiesta ha restituito false quando è stata testata nel server.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REQUEST_TOO_LARGE"></span><span id="http_status_request_too_large"></span>**\_richiesta di stato http \_ \_ troppo \_ grande**
+<span id="HTTP_STATUS_REQUEST_TOO_LARGE"></span><span id="http_status_request_too_large"></span>**RICHIESTA \_ DI STATO HTTP TROPPO \_ \_ \_ GRANDE**
 </dt> <dd> <dl> <dt>
 
 413
@@ -448,12 +448,12 @@ La precondizione specificata in uno o più campi di intestazione della richiesta
 
 
 
-Il server rifiuta di elaborare una richiesta perché l'entità della richiesta è più grande di quanto il server sia disposto o in grado di elaborare.
+Il server rifiuta di elaborare una richiesta perché l'entità richiesta è più grande di quella che il server è disposto o in grado di elaborare.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_URI_TOO_LONG"></span><span id="http_status_uri_too_long"></span>**\_URI stato \_ http \_ troppo \_ lungo**
+<span id="HTTP_STATUS_URI_TOO_LONG"></span><span id="http_status_uri_too_long"></span>**URI \_ DI STATO HTTP TROPPO \_ \_ \_ LUNGO**
 </dt> <dd> <dl> <dt>
 
 414
@@ -461,12 +461,12 @@ Il server rifiuta di elaborare una richiesta perché l'entità della richiesta �
 
 
 
-Il server rifiuta di servire la richiesta perché l'URI della richiesta (Uniform Resource Identifier) è più lungo di quello che il server è disposto a interpretare.
+Il server rifiuta di eseguire la richiesta perché l'URI della richiesta (Uniform Resource Identifier) è più lungo di quello che il server è disposto a interpretare.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**supporto di stato HTTP non \_ \_ supportato \_**
+<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**STATO HTTP \_ \_ SUPPORTO NON \_ SUPPORTATO**
 </dt> <dd> <dl> <dt>
 
 415
@@ -474,12 +474,12 @@ Il server rifiuta di servire la richiesta perché l'URI della richiesta (Uniform
 
 
 
-Il server rifiuta di servire la richiesta perché l'entità della richiesta è in un formato non supportato dalla risorsa richiesta per il metodo richiesto.
+Il server rifiuta di eseguire la richiesta perché l'entità della richiesta è in un formato non supportato dalla risorsa richiesta per il metodo richiesto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_RETRY_WITH"></span><span id="http_status_retry_with"></span>**\_ \_ tentativo di stato http \_ con**
+<span id="HTTP_STATUS_RETRY_WITH"></span><span id="http_status_retry_with"></span>**STATO HTTP \_ \_ \_ RIPROVARE CON**
 </dt> <dd> <dl> <dt>
 
 449
@@ -487,12 +487,12 @@ Il server rifiuta di servire la richiesta perché l'entità della richiesta è i
 
 
 
-La richiesta deve essere ritentata dopo aver eseguito l'azione appropriata.
+La richiesta deve essere ritentata dopo l'azione appropriata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SERVER_ERROR"></span><span id="http_status_server_error"></span>**\_errore del \_ server di stato http \_**
+<span id="HTTP_STATUS_SERVER_ERROR"></span><span id="http_status_server_error"></span>**ERRORE \_ DEL SERVER DI STATO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 500
@@ -500,12 +500,12 @@ La richiesta deve essere ritentata dopo aver eseguito l'azione appropriata.
 
 
 
-Si è verificata una condizione imprevista che ha impedito al server di completare la richiesta.
+Il server ha rilevato una condizione imprevista che ha impedito di soddisfare la richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NOT_SUPPORTED"></span><span id="http_status_not_supported"></span>**\_stato http \_ non \_ supportato**
+<span id="HTTP_STATUS_NOT_SUPPORTED"></span><span id="http_status_not_supported"></span>**STATO \_ HTTP \_ NON \_ SUPPORTATO**
 </dt> <dd> <dl> <dt>
 
 501
@@ -518,7 +518,7 @@ Il server non supporta la funzionalità necessaria per soddisfare la richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_GATEWAY"></span><span id="http_status_bad_gateway"></span>**GATEWAY di stato HTTP non \_ \_ valido \_**
+<span id="HTTP_STATUS_BAD_GATEWAY"></span><span id="http_status_bad_gateway"></span>**STATO HTTP \_ \_ GATEWAY NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 502
@@ -526,12 +526,12 @@ Il server non supporta la funzionalità necessaria per soddisfare la richiesta.
 
 
 
-Il server, che funge da gateway o proxy, ha ricevuto una risposta non valida dal server padre a cui ha effettuato l'accesso nel tentativo di completare la richiesta.
+Il server, che funge da gateway o proxy, ha ricevuto una risposta non valida dal server upstream a cui ha effettuato l'accesso nel tentativo di soddisfare la richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SERVICE_UNAVAIL"></span><span id="http_status_service_unavail"></span>**servizio di stato HTTP non \_ \_ \_ disponibile**
+<span id="HTTP_STATUS_SERVICE_UNAVAIL"></span><span id="http_status_service_unavail"></span>**SERVIZIO DI STATO HTTP \_ \_ \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 503
@@ -544,7 +544,7 @@ Il servizio è momentaneamente sovraccarico.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_GATEWAY_TIMEOUT"></span><span id="http_status_gateway_timeout"></span>**\_timeout del \_ gateway di stato http \_**
+<span id="HTTP_STATUS_GATEWAY_TIMEOUT"></span><span id="http_status_gateway_timeout"></span>**TIMEOUT \_ \_ GATEWAY STATO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 504
@@ -557,7 +557,7 @@ Richiesta scaduta in attesa di un gateway.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_VERSION_NOT_SUP"></span><span id="http_status_version_not_sup"></span>**\_versione stato \_ http \_ non \_ sup**
+<span id="HTTP_STATUS_VERSION_NOT_SUP"></span><span id="http_status_version_not_sup"></span>**VERSIONE STATO HTTP \_ \_ NON \_ \_ SUP**
 </dt> <dd> <dl> <dt>
 
 505
@@ -573,7 +573,7 @@ Il server non supporta o rifiuta di supportare la versione del protocollo HTTP u
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere utilizzato da un servizio. Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi server, [usare Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 
@@ -585,7 +585,7 @@ Il server non supporta o rifiuta di supportare la versione del protocollo HTTP u
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>WinInet. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

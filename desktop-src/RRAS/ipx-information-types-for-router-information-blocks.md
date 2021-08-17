@@ -19,17 +19,17 @@ I tipi di informazioni seguenti sono elencati in Ipxrtdef.h. Usare questi tipi d
 
 | Tipo di informazioni                              | Struttura delle informazioni                                          |
 |-----------------------------------------------|----------------------------------------------------------------|
-| TIPO DI INFORMAZIONI \_ \_ SULL'ADAPTER IPX \_                      | INFORMAZIONI SULL'ADAPTER IPX \_ \_                                             |
+| TIPO DI INFORMAZIONI \_ \_ SULL'ADAPTER \_ IPX                      | INFORMAZIONI \_ SULL'ADAPTER IPX \_                                             |
 | TIPO DI \_ INFORMAZIONI GLOBALI \_ \_ IPX                       | INFORMAZIONI \_ GLOBALI IPX \_                                              |
-| TIPO DI INFORMAZIONI \_ \_ SULL'INTERFACCIA IPX \_                    | [**INFORMAZIONI IF \_ IPX \_**](/windows/desktop/api/Ipxrtdef/ns-ipxrtdef-ipx_if_info)                           |
-| IPX \_ NEL TIPO DI INFORMAZIONI GLOBALE FILTRO \_ \_ \_ \_ \_ TRAFFICO  | INFORMAZIONI GLOBALI \_ DEL FILTRO \_ TRAFFICO \_ IPX \_                             |
-| IPX OUT TRAFFIC FILTER GLOBAL INFO TYPE (TIPO DI INFORMAZIONI GLOBALI \_ FILTRO TRAFFICO IN USCITA \_ \_ \_ \_ \_ IPX) | INFORMAZIONI GLOBALI \_ DEL FILTRO \_ TRAFFICO \_ IPX \_                             |
-| IPX \_ NEL TIPO DI INFORMAZIONI DEL FILTRO DEL \_ \_ \_ \_ TRAFFICO          | INFORMAZIONI SUL FILTRO DEL TRAFFICO IPX \_ \_ \_                                     |
-| TIPO DI \_ INFORMAZIONI FILTRO TRAFFICO IN \_ \_ \_ USCITA \_ IPX         | INFORMAZIONI SUL FILTRO DEL TRAFFICO IPX \_ \_ \_                                     |
-| TIPO DI INFORMAZIONI \_ \_ SUL NOME NETBIOS \_ \_ STATICO \_ IPX        | INFORMAZIONI SUL \_ NOME \_ NETBIOS \_ STATICO \_ IPX                               |
-| TIPO DI INFORMAZIONI \_ \_ SULLA ROUTE \_ STATICA IPX \_                | INFORMAZIONI SULLA \_ \_ ROUTE STATICA IPX \_                                       |
-| TIPO DI INFORMAZIONI \_ SUL \_ SERVIZIO \_ STATICO \_ IPX              | [**INFORMAZIONI SUL SERVIZIO STATICO IPX \_ \_ \_**](/previous-versions/windows/desktop/legacy/aa374456(v=vs.85)) |
-| TIPO DI INFORMAZIONI \_ SULL'INTERFACCIA IPXWAN \_ \_                 | [**INFORMAZIONI IF DI \_ IPXWAN \_**](/windows/desktop/api/Ipxrtdef/ns-ipxrtdef-ipxwan_if_info)                     |
+| TIPO DI INFORMAZIONI \_ \_ SULL'INTERFACCIA \_ IPX                    | [**INFORMAZIONI IF \_ IPX \_**](/windows/desktop/api/Ipxrtdef/ns-ipxrtdef-ipx_if_info)                           |
+| IPX \_ NEL TIPO DI INFORMAZIONI GLOBALE FILTRO \_ \_ \_ \_ \_ TRAFFICO  | INFORMAZIONI GLOBALI \_ DEL \_ FILTRO TRAFFICO \_ \_ IPX                             |
+| IPX \_ OUT \_ TRAFFIC \_ FILTER \_ GLOBAL \_ INFO \_ TYPE | INFORMAZIONI GLOBALI \_ DEL \_ FILTRO TRAFFICO \_ \_ IPX                             |
+| IPX \_ NEL TIPO DI INFORMAZIONI FILTRO \_ \_ \_ \_ TRAFFICO          | INFORMAZIONI FILTRO TRAFFICO IPX \_ \_ \_                                     |
+| TIPO DI INFORMAZIONI FILTRO TRAFFICO IN \_ \_ \_ \_ \_ USCITA IPX         | INFORMAZIONI FILTRO TRAFFICO IPX \_ \_ \_                                     |
+| TIPO DI INFORMAZIONI \_ \_ SUL NOME NETBIOS \_ \_ STATICO \_ IPX        | INFORMAZIONI SUL NOME \_ \_ NETBIOS STATICO \_ IPX \_                               |
+| TIPO DI INFORMAZIONI \_ \_ SULLA ROUTE \_ STATICA \_ IPX                | INFORMAZIONI SULLA \_ \_ ROUTE STATICA IPX \_                                       |
+| TIPO DI INFORMAZIONI \_ SUL \_ SERVIZIO STATICO \_ \_ IPX              | [**INFORMAZIONI SUL SERVIZIO STATICO IPX \_ \_ \_**](/previous-versions/windows/desktop/legacy/aa374456(v=vs.85)) |
+| TIPO DI INFORMAZIONI \_ \_ SULL'INTERFACCIA \_ IPXWAN                 | [**INFORMAZIONI SU IPXWAN \_ \_ IF**](/windows/desktop/api/Ipxrtdef/ns-ipxrtdef-ipxwan_if_info)                     |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Imposta o recupera la raccolta di certificati che possono essere utilizzati per compilare la catena di certificati.
+description: Imposta o recupera la raccolta di certificati che possono essere usati per compilare la catena di certificati.
 ms.assetid: cdf378f9-0d71-4dd9-93cc-85f09a51c5fc
-title: CertificateStatus.Certificates - proprietà
+title: Proprietà CertificateStatus.Certificates
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117770388"
 ---
-# <a name="certificatestatuscertificates-property"></a>CertificateStatus.Certificates - proprietà
+# <a name="certificatestatuscertificates-property"></a>Proprietà CertificateStatus.Certificates
 
 \[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**struttura X509ChainStatus**](/dotnet/api/system.security.cryptography.x509certificates.x509chainstatus?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
@@ -37,7 +37,7 @@ CertificateStatus.Certificates As Certificates
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto [**Certificates**](certificates.md) che rappresenta la raccolta di certificati che possono essere utilizzati per compilare la catena di certificati.
+Oggetto [**Certificates**](certificates.md) che rappresenta la raccolta di certificati che è possibile usare per compilare la catena di certificati.
 
 ## <a name="requirements"></a>Requisiti
 

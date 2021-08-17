@@ -1,10 +1,10 @@
 ---
-title: Attributo FRS-replica-set-GUID
+title: Attributo FRS-Replica-Set-GUID
 description: GUID che identifica un set di repliche FRS.
 ms.assetid: c916e10a-bf4e-4dbd-8a22-4a88f3933af0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-repliche-set-GUID
+- Schema AD dell'attributo FRS-Replica-Set-GUID
 - Schema AD dell'attributo fRSReplicaSetGUID
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a914c937771c4ea5548fd21bc35efd05486a899
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f197026bc660103c3210e2ae1ac9730442ffbf13834fa5e5c3e6c587aa87c1d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323651"
 ---
-# <a name="frs-replica-set-guid-attribute"></a>Attributo FRS-replica-set-GUID
+# <a name="frs-replica-set-guid-attribute"></a>Attributo FRS-Replica-Set-GUID
 
 GUID che identifica un set di repliche FRS.
 
@@ -29,13 +29,13 @@ GUID che identifica un set di repliche FRS.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | FRS-replica-set-GUID                                  |
-| LDAP-Display-Name | fRSReplicaSetGUID                                     |
+| CN                | FRS-Replica-Set-GUID                                  |
+| Ldap-Display-Name | fRSReplicaSetGUID                                     |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.533                                |
-| System-ID-GUID    | 5245801a-ca6a-11d0-afff-0000f80367c1                  |
+| System-Id-Guid    | 5245801a-ca6a-11d0-afff-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ GUID che identifica un set di repliche FRS.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 

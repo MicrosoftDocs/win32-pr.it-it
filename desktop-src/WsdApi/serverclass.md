@@ -4,12 +4,12 @@ ms.assetid: b0d9a126-0f69-4d07-ae18-07aa49ee2666
 title: elemento serverClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be84aad9c5b84d6cfb992a0e3ff51e19bc9d8f14
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f8c9afce4869af533aebafccdf95f34dce9fa413632ff0dcb4ac2853ce386e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130643"
 ---
 # <a name="serverclass-element"></a>elemento serverClass
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

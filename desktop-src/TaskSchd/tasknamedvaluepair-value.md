@@ -5,7 +5,7 @@ ms.assetid: 9bbf0c44-533f-48d6-a8ce-dca48f709c3f
 keywords:
 - Proprietà Value Utilità di pianificazione
 - Proprietà Value Utilità di pianificazione, oggetto TaskNamedValuePair
-- Oggetto TaskNamedValuePair Utilità di pianificazione proprietà , Value
+- TaskNamedValuePair object Utilità di pianificazione , Value property
 topic_type:
 - apiref
 api_name:
@@ -46,8 +46,8 @@ Valore associato a un nome in una coppia nome-valore.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

@@ -1,19 +1,19 @@
 ---
-title: OLE e Trasferimento dati
-description: Le sezioni seguenti descrivono i documenti composti, il meccanismo fornito dal Component Object Model (COM) per trasferire i dati tra le applicazioni e le API usate per creare documenti composti ed eseguire il trasferimento dei dati.
+title: OLE e trasferimento di dati
+description: Le sezioni seguenti descrivono i documenti composti, il meccanismo fornito da Component Object Model (COM) per trasferire i dati tra applicazioni e le API usate per creare documenti composti ed eseguire il trasferimento dei dati.
 ms.assetid: d4a57956-37ba-44ca-8efc-bf617ad5e77b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4061f8642167e0258a48e62d6caa7f039cf6088a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2f5e30d6126cec85d9daf975fbaf89a7f280f32c02d6eb8f4e3fa1acd932fa7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130073"
 ---
-# <a name="ole-and-data-transfer"></a>OLE e Trasferimento dati
+# <a name="ole-and-data-transfer"></a>OLE e trasferimento di dati
 
-Le sezioni seguenti descrivono i documenti composti, il meccanismo fornito dal Component Object Model (COM) per trasferire i dati tra le applicazioni e le API usate per creare documenti composti ed eseguire il trasferimento dei dati.
+Le sezioni seguenti descrivono i documenti composti, il meccanismo fornito da Component Object Model (COM) per trasferire i dati tra applicazioni e le API usate per creare documenti composti ed eseguire il trasferimento dei dati.
 
 -   [Guida](guide-odt.md)
 -   [Riferimento](reference-odt.md)
@@ -25,9 +25,9 @@ Le sezioni seguenti descrivono i documenti composti, il meccanismo fornito dal C
 [Component Object Model (COM)](component-object-model--com--portal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

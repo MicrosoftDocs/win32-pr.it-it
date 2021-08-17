@@ -1,7 +1,7 @@
 ---
 description: Associa una macchina virtuale a una connessione terminale.
 ms.assetid: 31979FB8-3870-44D9-9720-AD99237C5268
-title: Classe Msvm_SystemTerminalConnection
+title: Msvm_SystemTerminalConnection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 368c25b8505ec7ddd29da3b95d95fc842602119e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 280c8c6489e831bf9342e8e19699fb56fcdc6b15d1088a53796af28e45651d8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810596"
 ---
-# <a name="msvm_systemterminalconnection-class"></a>\_Classe MSVM SystemTerminalConnection
+# <a name="msvm_systemterminalconnection-class"></a>Classe \_ Msvm SystemTerminalConnection
 
 Associa una macchina virtuale a una connessione terminale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,26 +41,26 @@ class Msvm_SystemTerminalConnection : CIM_HostedDependency
 
 ## <a name="members"></a>Members
 
-La **classe \_ SystemTerminalConnection di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SystemTerminalConnection** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SystemTerminalConnection di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SystemTerminalConnection** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ ComputerSystem**](msvm-computersystem.md)**
+Tipo di dati: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Macchina virtuale a cui è collegata la connessione.
@@ -70,13 +70,13 @@ Macchina virtuale a cui è collegata la connessione.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ TerminalConnection**](msvm-terminalconnection.md)**
+Tipo di dati: **[ **Msvm \_ TerminalConnection**](msvm-terminalconnection.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Connessione alla macchina virtuale.
@@ -85,7 +85,7 @@ Connessione alla macchina virtuale.
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ SystemTerminalConnection di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ SystemTerminalConnection** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,10 +93,10 @@ L'accesso alla **classe \_ SystemTerminalConnection di MSVM** potrebbe essere li
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -105,10 +105,10 @@ L'accesso alla **classe \_ SystemTerminalConnection di MSVM** potrebbe essere li
 
 <dl> <dt>
 
-[**\_HOSTEDDEPENDENCY CIM**](cim-hosteddependency.md)
+[**CIM \_ HostedDependency**](cim-hosteddependency.md)
 </dt> <dt>
 
-[**\_HOSTEDDEPENDENCY CIM**](/previous-versions//cc136861(v=vs.85))
+[**CIM \_ HostedDependency**](/previous-versions//cc136861(v=vs.85))
 </dt> <dt>
 
 [Classi video](video-classes.md)

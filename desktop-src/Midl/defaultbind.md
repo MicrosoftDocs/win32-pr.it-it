@@ -1,9 +1,9 @@
 ---
 title: defaultbind (attributo)
-description: L'attributo \ defaultbind \ indica la singola proprietà associabile che meglio rappresenta l'oggetto.
+description: L'attributo \ defaultbind\ indica la singola proprietà associabile che meglio rappresenta l'oggetto.
 ms.assetid: 8cf0922a-3d7c-404d-b4fd-edbd772987bf
 keywords:
-- attributo MIDL di defaultbind
+- Attributo defaultbind MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 518c11da8d5f9b0762843c5b69292562a94b80c4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a981d0469219a32b5931507f5df6d742e84fa67e6676e44c24edfb823f521a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807297"
 ---
 # <a name="defaultbind-attribute"></a>defaultbind (attributo)
 
-L'attributo **\[ defaultbind \]** indica la singola proprietà associabile che meglio rappresenta l'oggetto.
+**\[ L'attributo \] defaultbind** indica la singola proprietà associabile che meglio rappresenta l'oggetto.
 
 ``` syntax
 [
@@ -37,53 +37,53 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di uno o più attributi che si applicano all'interfaccia nel suo complesso. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
+Specifica un elenco di uno o più attributi che si applicano all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Specifica il nome dell'interfaccia.
 
 </dd> <dt>
 
-*elenco attributi* 
+*attribute-list* 
 </dt> <dd>
 
 Specifica un elenco di uno o più attributi che si applicano alla funzione. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
-*returnType* 
+*Returntype* 
 </dt> <dd>
 
 Specifica il tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
-Specifica il nome della funzione a cui verrà applicato l'attributo **\[ defaultbind \]** .
+Specifica il nome della funzione a cui verrà applicato **\[ l'attributo defaultbind. \]**
 
 </dd> <dt>
 
 *params* 
 </dt> <dd>
 
-Elenco dei parametri della funzione.
+Elenco di parametri della funzione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Anche le proprietà con l'attributo **\[ defaultbind \]** devono avere l' **\[** attributo [**associabile**](bindable.md) **\]** . Solo una proprietà in un'interfaccia o in un'interfaccia dispatch può avere l'attributo **\[ defaultbind \]** .
+Anche le proprietà con **\[ l'attributo defaultbind \]** devono avere l'attributo **\[** [**associabile.**](bindable.md) **\]** Solo una proprietà in un'interfaccia o un'interfaccia dispatch può avere **\[ l'attributo defaultbind. \]**
 
-Questo attributo viene usato dai contenitori che hanno un modello utente che implica l'associazione a un oggetto anziché l'associazione a una proprietà di un oggetto. Un oggetto può supportare data binding ma non avere questo attributo.
+Questo attributo viene usato dai contenitori che hanno un modello utente che prevede l'associazione a un oggetto anziché l'associazione a una proprietà di un oggetto. Un oggetto può supportare data binding ma non dispone di questo attributo.
 
 ### <a name="flags"></a>Flags
 
@@ -117,15 +117,15 @@ interface MyObject : IUnknown
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Intervallo osservato più grande tra fotogrammi chiave.
+description: Intervallo massimo osservato tra fotogrammi chiave.
 ms.assetid: 66a39b4f-9eed-4fc3-aa31-f832c951c8a1
-title: 'Membro CVideoTransformFilter:: m_nKeyFramePeriod (Vtrans. h)'
+title: Membro CVideoTransformFilter::m_nKeyFramePeriod (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 264c5520a6c20bbed5aab6a96af0b3174ce01379
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c22271f2ce73af343ce5877ee508ccbd31b392073600ef0d5a4519134e52341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953380"
 ---
-# <a name="cvideotransformfilterm_nkeyframeperiod-member"></a>Membro nKeyFramePeriod di CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_nkeyframeperiod-member"></a>Membro CVideoTransformFilter::m \_ nKeyFramePeriod
 
-Intervallo osservato più grande tra fotogrammi chiave.
+Intervallo massimo osservato tra fotogrammi chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ int m_nKeyFramePeriod;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -5,21 +5,21 @@ ms.tgt_platform: multiple
 title: Metodi IWbemHiPerfEnum
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f29d88aba82b2221a3386db66991eecdfe5ba22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56d1fdd47c0e424b4413213086e2bd483771b6b34a1ef2c15e57c6bc07ca115c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993061"
 ---
 # <a name="iwbemhiperfenum-methods"></a>Metodi IWbemHiPerfEnum
 
-L'interfaccia [**IWbemHiPerfEnum**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemhiperfenum) espone i metodi seguenti.
+[**L'interfaccia IWbemHiPerfEnum**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemhiperfenum) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Metodo AddObjects**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-addobjects)
--   [**GetObjects (metodo)**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
+-   [**Metodo GetObjects**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
 -   [**RemoveAll, metodo**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-removeall)
 -   [**Metodo RemoveObjects**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-removeobjects)
 

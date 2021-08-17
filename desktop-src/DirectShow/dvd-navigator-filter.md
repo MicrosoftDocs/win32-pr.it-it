@@ -1,21 +1,21 @@
 ---
-description: Filtro navigatore DVD
+description: Filtro strumento di navigazione DVD
 ms.assetid: 3b2c01a2-d52c-4497-8fc9-d1113e8507e8
-title: Filtro navigatore DVD
+title: Filtro strumento di navigazione DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53bb1c6f46e3dd846ffccda32fece2c2f04c8992
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a395001daeac5f90be85bea972d1d4f118198ee4343960cb4eed0d958e1677aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016009"
 ---
-# <a name="dvd-navigator-filter"></a>Filtro navigatore DVD
+# <a name="dvd-navigator-filter"></a>Filtro strumento di navigazione DVD
 
-Il filtro di spostamento DVD è il filtro di origine per un grafico filtro di riproduzione DVD-Video. Apre tutti i file necessari in un volume di DVD-Video, naviga nei file Linear DVD-Video. VOB e analizza il flusso di programma MPEG-2 risultante, suddividendo il flusso in tre pin di output (video, audio, sottoimmagine).
+Il filtro DVD Navigator è il filtro di origine per un grafico DVD-Video filtro di riproduzione. Apre tutti i file necessari in un volume DVD-Video, esplora i file con estensione vob DVD-Video lineare e analizza il flusso del programma MPEG-2 risultante, suddividendo il flusso in tre pin di output (video, audio, immagine secondaria).
 
-Il filtro di spostamento DVD implementa anche le interfacce [**IDVDControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) e [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) che consentono a un'applicazione di riproduzione DVD di controllare DVD-Video la riproduzione.
+Il filtro DVD Navigator implementa anche le interfacce [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) e [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) che consentono a un'applicazione di riproduzione DVD di controllare DVD-Video riproduzione.
 
 
 
@@ -27,7 +27,7 @@ Il filtro di spostamento DVD implementa anche le interfacce [**IDVDControl2**](/
 <tbody>
 <tr class="odd">
 <td>Interfacce di filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2"><strong>IDVDControl2</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-idvdinfo2"><strong>IDvdInfo2</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter"><strong>IFileSourceFilter</strong></a>, <strong>ISpecifyPropertyPages</strong></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2"><strong>IDvdControl2,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvdinfo2"><strong>IDvdInfo2,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter"><strong>IFileSourceFilter,</strong></a> <strong>ISpecifyPropertyPages</strong></td>
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di input</td>
@@ -43,7 +43,7 @@ Il filtro di spostamento DVD implementa anche le interfacce [**IDVDControl2**](/
 <ul>
 <li>Video: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li>
 <li>Audio: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
-<li>Immagine subimmagine: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
+<li>Immagine secondaria: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
 </ul>
 Tipi estesi:<br/> Video:<br/>
 <ul>
@@ -57,20 +57,20 @@ Audio:<br/>
 <li><strong>MEDIATYPE_Audio</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
 <li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
 </ul>
-Sottoimmagine<br/>
+Immagine secondaria:<br/>
 <ul>
 <li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
 <li><strong>MEDIATYPE_Video</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
 <li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
 </ul>
-Per abilitare i tipi estesi, chiamare <a href="/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption"><strong>IDVDControl2:: SetOption</strong></a> e impostare il <br/></td>
+Per abilitare i tipi estesi, chiamare <a href="/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption"><strong>IDvdControl2::SetOption</strong></a> e impostare <br/></td>
 </tr>
 <tr class="odd">
-<td>Interfacce del PIN di output</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
+<td>Interfacce pin di output</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
-<td>CLSID filtro</td>
+<td>Filtro CLSID</td>
 <td>CLSID_DVDNavigator</td>
 </tr>
 <tr class="odd">
@@ -100,7 +100,7 @@ Per abilitare i tipi estesi, chiamare <a href="/windows/desktop/api/Strmif/nf-st
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> <dt>
 
 [Applicazioni DVD](dvd-applications.md)

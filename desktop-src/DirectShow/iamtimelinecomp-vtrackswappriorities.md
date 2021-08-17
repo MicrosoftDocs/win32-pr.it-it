@@ -1,7 +1,7 @@
 ---
-description: Il metodo VTrackSwapPriorities passa i livelli di priorità di due tracce.
+description: Il metodo VTrackSwapPriorities cambia i livelli di priorità di due tracce.
 ms.assetid: 87085060-5165-4c32-b5b0-895ae487e7ef
-title: 'Metodo IAMTimelineComp:: VTrackSwapPriorities (qedit. h)'
+title: Metodo IAMTimelineComp::VTrackSwapPriorities (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: df90fe3f4c481f454c6cc743f09de9538a2c892d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb67e07f96ec2e8377690a5cd5233ba6cdb40242870da6d5f23b5f404b77b890
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117999284"
 ---
-# <a name="iamtimelinecompvtrackswappriorities-method"></a>Metodo IAMTimelineComp:: VTrackSwapPriorities
+# <a name="iamtimelinecompvtrackswappriorities-method"></a>Metodo IAMTimelineComp::VTrackSwapPriorities
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `VTrackSwapPriorities` metodo passa i livelli di priorità di due tracce.
+Il `VTrackSwapPriorities` metodo cambia i livelli di priorità di due tracce.
 
-Con due livelli di priorità, questo metodo cambia le tracce virtuali in base a tali priorità. Quando il metodo restituisce, la traccia con il primo livello di priorità è ora al secondo livello di priorità e viceversa.
+Dati due livelli di priorità, questo metodo cambia le tracce virtuali in base a tali priorità. Quando il metodo viene restituito, la traccia che si trova al primo livello di priorità è ora al secondo livello di priorità e viceversa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,30 +51,30 @@ HRESULT VTrackSwapPriorities(
 *VirtualTrackA* 
 </dt> <dd>
 
-Primo livello di priorità in cui scambiare le tracce virtuali.
+Primo livello di priorità al quale scambiare le tracce virtuali.
 
 </dd> <dt>
 
 *VirtualTrackB* 
 </dt> <dd>
 
-Secondo livello di priorità in cui scambiare le tracce virtuali.
+Secondo livello di priorità al quale scambiare le tracce virtuali.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: Registrazione di oggetti nella tabella ROT
-description: Registrazione di oggetti nella tabella ROT
+title: Registrazione di oggetti nella ROT
+description: Registrazione di oggetti nella ROT
 ms.assetid: f479c2d1-0c55-4281-8f15-2f957fa03b70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b452ead94a717791910ecceaa5082535bc1b233c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d77e7bc6fe8b0a4d5896bf33575df2f57fb0e583f78acd02653f6ccb014f34ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118104814"
 ---
-# <a name="registering-objects-in-the-rot"></a>Registrazione di oggetti nella tabella ROT
+# <a name="registering-objects-in-the-rot"></a>Registrazione di oggetti nella ROT
 
-In genere, quando un client richiede a un server di creare un'istanza dell'oggetto, il server crea in genere un moniker per l'oggetto e lo registra nella tabella degli oggetti in esecuzione (ROT) tramite una chiamata a [**IRunningObjectTable:: Register**](/windows/desktop/api/ObjIdl/nf-objidl-irunningobjecttable-register).
+In genere, quando un client chiede a un server di creare un'istanza dell'oggetto, il server crea in genere un moniker per l'oggetto e lo registra nella tabella degli oggetti in esecuzione (ROT) tramite una chiamata a [**IRunningObjectTable::Register**](/windows/desktop/api/ObjIdl/nf-objidl-irunningobjecttable-register).
 
-Quando il server chiama [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) per creare un moniker di file da registrare nella ROT, i server devono passare i nomi di file locali che sono basati su unità e non in formato UNC. In questo modo si garantisce che i dati di confronto del moniker generati dalla chiamata al registro ROT corrispondano a quelli utilizzati durante la ricerca di una ROT sulla parte di un client remoto. Questo perché quando il servizio COM distribuito riceve una richiesta di attivazione per un file locale al server da un client remoto, il file viene convertito in un percorso basato su unità locale.
+Quando il server chiama [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) per creare un moniker di file da registrare nella rot, i server devono passare nomi di file locali basati su unità, non in formato UNC. Ciò garantisce che i dati di confronto del moniker generati dalla chiamata al registro ROT corrispondano a quanto usato durante una ricerca ROT da parte di un client remoto. Ciò è dovuto al fatto che quando il servizio COM distribuito riceve una richiesta di attivazione per un file locale al server da un client remoto, il file viene convertito in un percorso basato su unità locale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -33,9 +33,9 @@ Quando il server chiama [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-
 [Registrazione automatica](self-registration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,27 +1,27 @@
 ---
 title: Gestione connessione
-description: I clienti che intendono sviluppare dialer personalizzati mediante l'API del servizio di accesso remoto potrebbero voler analizzare gestione connessione Microsoft e Connection Manager Administration Kit.
+description: I clienti che intendono sviluppare dialer personalizzati usando l'API del servizio di accesso remoto potrebbero voler esaminare Microsoft Gestione connessioni e il Connection Manager Administration Kit.
 ms.assetid: c3227aea-ba36-44f6-b69d-2c6aa4be360e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7959482542630b6dc90149971df08f7944f83fc
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: fc20979ecd99f904aef158738d49ce1e5bc5a25309288db83dfc99de05959234
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104046372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117791585"
 ---
 # <a name="connection-manager"></a>Gestione connessione
 
-I clienti che intendono sviluppare dialer personalizzati mediante l'API del servizio di accesso remoto potrebbero voler analizzare gestione connessione Microsoft e Connection Manager Administration Kit. Gestione connessione è il client di accesso remoto gestito da Microsoft. Consente a un amministratore di creare un pacchetto di configurazione di accesso remoto da distribuire agli utenti remoti dell'amministratore. Per ulteriori informazioni su gestione connessione e Connection Manager Administration Kit, vedere la Guida in linea per Microsoft Windows Server 2000 e sistemi operativi successivi.
+I clienti che intendono sviluppare dialer personalizzati usando l'API del servizio di accesso remoto potrebbero voler esaminare Microsoft Gestione connessioni e il Connection Manager Administration Kit. Gestione connessioni è il client di accesso remoto gestito di Microsoft. Consente a un amministratore di creare un pacchetto di configurazione di accesso remoto da distribuire agli utenti remoti dell'amministratore. Per altre informazioni sui Gestione connessioni e sul Connection Manager Administration Kit, vedere la Guida online per Microsoft Windows 2000 Server e sistemi operativi successivi.
 
-È possibile trovare il codice sorgente per un'azione personalizzata di gestione connessione di esempio nel Software Development Kit (SDK) completo della piattaforma. Platform SDK può essere scaricato dal [sito Web Microsoft](https://msdn.microsoft.com/windowsserver/bb980924.aspx). Al termine dell'installazione, il percorso del codice di esempio è% install path% \\ Microsoft SDK \\ Samples \\ netds \\ RAS \\ ConnectionManager, dove% install path% designa la directory di installazione di base di Platform SDK, ad esempio C: \\ Program Files.
+È possibile trovare il codice sorgente per un esempio Gestione connessioni'azione personalizzata nell'SDK (Platform Software Development Kit) completo. Platform SDK può essere scaricato dal [sito Web Microsoft](https://msdn.microsoft.com/windowsserver/bb980924.aspx). Dopo l'installazione, il percorso del codice di esempio è %Install Path% Microsoft SDK Samples netds Ras ConnectionManager, dove %Install Path% definisce la directory di installazione di base di \\ \\ Platform SDK \\ \\ \\ (ad esempio, C: \\ Programmi).
 
-Le azioni personalizzate consentono al client di accesso remoto di eseguire azioni specifiche in diversi punti del processo di connessione. L'azione personalizzata illustrata nell'esempio regola automaticamente la configurazione del server proxy per una connessione in base all'indirizzo del server della connessione. I clienti possono usare questo esempio come punto di partenza per la creazione di azioni personalizzate.
+Le azioni personalizzate rendono possibile per il client di accesso remoto eseguire azioni specifiche in vari punti del processo di connessione. L'azione personalizzata illustrata nell'esempio regola automaticamente la configurazione del server proxy per una connessione in base all'indirizzo del server della connessione. I clienti possono usare questo esempio come punto di partenza per la creazione di azioni personalizzate.
 
- 
+ 
 
- 
+ 
 
 
 

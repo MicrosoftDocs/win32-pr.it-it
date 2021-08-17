@@ -1,15 +1,15 @@
 ---
-description: Il metodo PlayAtTimeInTitle avvia la riproduzione all'ora specificata nel titolo specificato.
+description: Il metodo PlayAtTimeInTitle avvia la riproduzione all'ora specificata all'interno del titolo specificato.
 ms.assetid: 82726885-8393-409b-b8a1-29a8e9e9ac65
 title: Metodo PlayAtTimeInTitle
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c40373b4327b6df5fc341ca392c223d464a70a8b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a33640733f7333395a4affc4dedc0ae8db3e3558bf066584cb603dfc5f906f73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119291270"
 ---
 # <a name="playattimeintitle-method"></a>Metodo PlayAtTimeInTitle
 
@@ -18,7 +18,7 @@ ms.locfileid: "104480597"
 
  
 
-Il `PlayAtTimeInTitle` metodo avvia la riproduzione all'ora specificata nel titolo specificato.
+Il `PlayAtTimeInTitle` metodo avvia la riproduzione all'ora specificata all'interno del titolo specificato.
 
 ``` syntax
 MSWebDVD.PlayAtTimeInTitle(sTime, iTitle)
@@ -31,14 +31,14 @@ MSWebDVD.PlayAtTimeInTitle(sTime, iTitle)
 <span id="sTime"></span><span id="stime"></span><span id="STIME"></span>*sTime*
 </dt> <dd>
 
-Specifica l'ora in cui iniziare la riproduzione sotto forma di stringa. Il formato della stringa deve essere "HH: mm: SS: FF" (specifica di ore, minuti, secondi, fotogrammi).
+Specifica l'ora in cui avviare la riproduzione come stringa. La stringa deve essere nel formato "hh:mm:ss:ff" (specificando ore, minuti, secondi, fotogrammi).
 
 </dd> <dt>
 
 <span id="iTitle"></span><span id="ititle"></span><span id="ITITLE"></span>*iTitle*
 </dt> <dd>
 
-Specifica l'indice del titolo come intero.
+Specifica l'indice del titolo come integer.
 
 </dd> </dl>
 

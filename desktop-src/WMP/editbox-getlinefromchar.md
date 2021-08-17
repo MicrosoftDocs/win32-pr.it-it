@@ -1,9 +1,9 @@
 ---
-title: CASELLA. getLineFromChar
+title: EDITBOX.getLineFromChar
 description: Il metodo getLineFromChar recupera l'indice di riga per l'indice dei caratteri specificato.
 ms.assetid: c3a29bdf-ff63-4b6d-90e8-d414dde87f85
 keywords:
-- Media Player Windows casella. getLineFromChar
+- EDITBOX.getLineFromChar Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3462ce628da72ca1e55df79e408fc79e0ec8b63a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 110030c3c756a91c993857cef125c51669f71eb9a358eb7261205fde0b0ad4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749307"
 ---
-# <a name="editboxgetlinefromchar"></a>CASELLA. getLineFromChar
+# <a name="editboxgetlinefromchar"></a>EDITBOX.getLineFromChar
 
-Il metodo **getLineFromChar** recupera l'indice di riga per l'indice dei caratteri specificato.
+Il **metodo getLineFromChar** recupera l'indice di riga per l'indice dei caratteri specificato.
 
 ``` syntax
         elementID.getLineFromChar(index)
@@ -35,13 +35,13 @@ Il metodo **getLineFromChar** recupera l'indice di riga per l'indice dei caratte
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice del carattere il cui indice di riga deve essere recuperato.
+**Numero** (**long**) contenente l'indice del carattere di cui recuperare l'indice di riga.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
@@ -55,7 +55,7 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -63,13 +63,13 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**CASELLA. getline**](editbox-getline.md)
+[**EDITBOX.getLine**](editbox-getline.md)
 </dt> <dt>
 
-[**CASELLA. getLineIndex**](editbox-getlineindex.md)
+[**EDITBOX.getLineIndex**](editbox-getlineindex.md)
 </dt> </dl>
 
  

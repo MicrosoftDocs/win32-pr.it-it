@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixOrthoLH (D3DX10Math.h): compila una matrice di proiezione ortografica mancino.'
+description: 'Funzione D3DXMatrixOrthoLH (D3DX10Math.h): crea una matrice di proiezione ortogonale mancino.'
 ms.assetid: 67bec4a3-2126-4f5a-9301-97faa6dc6e84
 title: Funzione D3DXMatrixOrthoLH (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 73cd5d9b809a0eb442db57e91c3788d2548a8c33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8b1b64818f4c0903897dc5b1de83b1aaa963461e909edbbfc9ba8dc4a1f10f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282961"
 ---
 # <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoLH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortografica mancino.
+Compila una matrice di proiezione ortogonale mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Larghezza del volume della vista.
+Larghezza del volume di visualizzazione.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Larghezza del volume della vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Altezza del volume della vista.
+Altezza del volume di visualizzazione.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Altezza del volume della vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore z minimo del volume della vista, definito z-near.
+Valore z minimo del volume di visualizzazione, definito z-near.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Valore z minimo del volume della vista, definito z-near.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore z massimo del volume della vista, definito z-far.
+Valore z massimo del volume di visualizzazione, definito z-far.
 
 </dd> </dl>
 

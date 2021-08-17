@@ -4,16 +4,16 @@ ms.assetid: e1e3a9d9-209b-46a6-92da-5570476507cf
 title: Cenni preliminari sulla codifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f938e184dee7fd9b3e5348365550615ee28de70d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: eee4c554046fa99cab53ff3e3acb8e2eadeb1a70a9140370dbc4b426fd576c15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088083"
 ---
 # <a name="encoding-overview"></a>Cenni preliminari sulla codifica
 
-Un codificatore scrive i dati dell'immagine in un flusso. I codificatori possono comprimere, crittografare e modificare i pixel dell'immagine in diversi modi prima di scriverli nel flusso. L'uso di alcuni codificatori comporta compromessi, ad esempio JPEG, che scambia le informazioni sui colori per una migliore compressione. Altri codificatori non comportano perdite di questo tipo, ad esempio bitmap (BMP). Poiché molti codec usano una tecnologia proprietaria per ottenere una migliore compressione e fedeltà delle immagini, i dettagli su come viene codificata un'immagine sono a responsabilità dello sviluppatore di codec.
+Un codificatore scrive i dati dell'immagine in un flusso. I codificatori possono comprimere, crittografare e modificare i pixel dell'immagine in diversi modi prima di scriverli nel flusso. L'uso di alcuni codificatori comporta compromessi, ad esempio JPEG, che scambia le informazioni sui colori per una migliore compressione. Altri codificatori non comportano perdite di questo tipo, ad esempio bitmap (BMP). Poiché molti codec usano la tecnologia proprietaria per ottenere una migliore compressione e fedeltà delle immagini, i dettagli su come viene codificata un'immagine sono a responsabilità dello sviluppatore di codec.
 
 In questo argomento sono incluse le sezioni seguenti.
 
@@ -27,9 +27,9 @@ In questo argomento sono incluse le sezioni seguenti.
 
 ## <a name="iwicbitmapencoder"></a>IWICBitmapEncoder
 
-[**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) è l'interfaccia principale per la codifica di un'immagine nel formato di destinazione e viene usata per serializzare i componenti di un'immagine, ad esempio thumbnail ([**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail)) e frame ([**CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe)) nel file di immagine.
+[**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) è l'interfaccia principale per la codifica di un'immagine nel formato di destinazione e usata per serializzare i componenti di un'immagine, ad esempio thumbnail ([**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail)) e frame ([**CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe)), nel file di immagine.
 
-La modalità e il momento in cui viene eseguita la serializzazione vengono lasciati allo sviluppatore di codec. Ogni singolo blocco di dati all'interno del formato di file di destinazione deve essere in grado di impostare in modo indipendente dall'ordine, ma anche in questo caso, questa è la decisione dello sviluppatore del codec. Una volta chiamato il metodo [**Commit,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit) tuttavia, le modifiche all'immagine non devono essere consentite e il flusso deve essere chiuso.
+La modalità e il momento in cui viene eseguita la serializzazione vengono lasciati allo sviluppatore di codec. Ogni singolo blocco di dati all'interno del formato di file di destinazione deve essere in grado di impostare indipendentemente dall'ordine, ma anche in questo caso, questa è la decisione dello sviluppatore di codec. Dopo aver chiamato il [**metodo Commit,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit) tuttavia, le modifiche all'immagine non devono essere consentite e il flusso deve essere chiuso.
 
 ## <a name="iwicbitmapframeencode"></a>IWICBitmapFrameEncode
 
@@ -175,15 +175,15 @@ return hr;
 
 ## <a name="encoder-options-usage"></a>Utilizzo delle opzioni del codificatore
 
-Codificatori diversi per formati diversi devono esporre opzioni diverse per la modalità di codifica di un'immagine. Windows Imaging Component (WIC) fornisce un meccanismo coerente per indicare se le opzioni di codifica sono necessarie e allo stesso tempo consentire alle applicazioni di lavorare con più codificatori senza richiedere la conoscenza di un formato specifico. Questa operazione viene eseguita fornendo un [parametro IPropertyBag](/windows/win32/api/oaidl/nn-oaidl-ipropertybag) nel [**metodo CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe) e nel [**metodo Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-initialize)
+Codificatori diversi per formati diversi devono esporre opzioni diverse per la modalità di codifica di un'immagine. Windows Il componente di creazione dell'immagine (WIC) offre un meccanismo coerente per indicare se sono necessarie opzioni di codifica, consentendo comunque alle applicazioni di lavorare con più codificatori senza richiedere la conoscenza di un formato specifico. Questa operazione viene eseguita fornendo un [parametro IPropertyBag](/windows/win32/api/oaidl/nn-oaidl-ipropertybag) nel [**metodo CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe) e nel [**metodo Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-initialize)
 
-La factory dei componenti fornisce un punto di creazione semplice per la creazione di un contenitore delle proprietà delle opzioni del codificatore. I codec possono usare questo servizio se devono fornire un set semplice, intuitivo e non in conflitto di opzioni del codificatore. Il contenitore delle proprietà di creazione dell'immagine deve essere inizializzato durante la creazione con tutte le opzioni del codificatore rilevanti per tale codec. Per le opzioni del codificatore dal set canonico, l'intervallo di valori verrà applicato in scrittura. Per esigenze più avanzate, i codec devono scrivere la propria implementazione del contenitore delle proprietà.
+La factory dei componenti fornisce un punto di creazione semplice per la creazione di un contenitore delle proprietà delle opzioni del codificatore. I codec possono usare questo servizio se devono fornire un set semplice, intuitivo e non in conflitto di opzioni del codificatore. Il contenitore delle proprietà di creazione dell'immagine deve essere inizializzato durante la creazione con tutte le opzioni del codificatore rilevanti per tale codec. Per le opzioni del codificatore dal set canonico, l'intervallo di valori verrà applicato in Scrittura. Per esigenze più avanzate, i codec devono scrivere la propria implementazione del contenitore di proprietà.
 
-A un'applicazione viene assegnato il contenitore delle opzioni del codificatore durante la creazione del frame e è necessario configurare tutti i valori prima di inizializzare il frame del codificatore. Per un'applicazione basata sull'interfaccia utente, può offrire un'interfaccia utente fissa per le opzioni del codificatore canonico e una visualizzazione avanzata per le opzioni rimanenti. Le modifiche possono essere apportate una alla volta tramite il metodo Write e qualsiasi errore verrà segnalato tramite IErrorLog. L'applicazione dell'interfaccia utente deve sempre ri-leggere e visualizzare tutte le opzioni dopo aver apportato una modifica nel caso in cui la modifica abbia causato un effetto a catena. Un'applicazione deve essere preparata per gestire l'inizializzazione dei frame non riuscita per i codec che forniscono solo segnalazioni di errori minime tramite il contenitore delle proprietà.
+A un'applicazione viene assegnato il contenitore delle opzioni del codificatore durante la creazione del frame e deve configurare tutti i valori prima di inizializzare il frame del codificatore. Per un'applicazione basata sull'interfaccia utente, può offrire un'interfaccia utente fissa per le opzioni del codificatore canonico e una visualizzazione avanzata per le opzioni rimanenti. Le modifiche possono essere apportate una alla volta tramite il metodo Write e qualsiasi errore verrà segnalato tramite IErrorLog. L'applicazione dell'interfaccia utente deve sempre ri-leggere e visualizzare tutte le opzioni dopo aver apportato una modifica nel caso in cui la modifica abbia causato un effetto a catena. Un'applicazione deve essere preparata per gestire l'inizializzazione dei frame non riuscita per i codec che forniscono solo la segnalazione degli errori minima tramite il proprio contenitore delle proprietà.
 
 ## <a name="encoder-options"></a>Opzioni del codificatore
 
-Un'applicazione può prevedere di riscontrare il set di opzioni del codificatore seguente. Le opzioni del codificatore riflettono le funzionalità di un codificatore e il formato del contenitore sottostante e pertanto non sono per loro natura realmente indipendenti dal codec. Quando possibile, le nuove opzioni devono essere normalizzate in modo che possano essere applicate ai nuovi codec che emergono.
+Un'applicazione può prevedere che venga rilevato il set di opzioni del codificatore seguente. Le opzioni del codificatore riflettono le funzionalità di un codificatore e il formato del contenitore sottostante e pertanto non sono per loro natura realmente indipendenti dal codec. Quando possibile, le nuove opzioni devono essere normalizzate in modo che possano essere applicate ai nuovi codec che emergono.
 
 
 
@@ -223,11 +223,11 @@ Oltre alle opzioni del codificatore generico precedenti, i codec forniti con WIC
 
  
 
-Usare **VT \_ EMPTY** per indicare **\* che non è impostato \*** come predefinito. Se le proprietà aggiuntive vengono impostate ma non supportate, il codificatore deve ignorarle. Ciò consente alle applicazioni di codificare meno logica se desiderano una funzionalità che potrebbe essere presente o meno.
+Usare **VT \_ EMPTY** per indicare **\* che non è impostato \*** come predefinito. Se le proprietà aggiuntive sono impostate ma non supportate, il codificatore deve ignorarle. ciò consente alle applicazioni di codificare meno logica se vogliono una funzionalità che può o meno essere presente.
 
 ## <a name="encoder-options-examples"></a>Esempi di opzioni del codificatore
 
-Nell'esempio [di codifica TIFF precedente](#tiff-encoding-example) viene impostata un'opzione del codificatore specifica. Il *membro pstrName* della struttura PROPBAG2 viene impostato sul nome della proprietà appropriato e VARIANT viene impostato sul varTYPE corrispondente e sul valore desiderato, in questo caso un membro dell'enumerazione [**WICTiffCompressionOption.**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption)
+[Nell'esempio di codifica TIFF precedente](#tiff-encoding-example) è impostata un'opzione del codificatore specifica. Il *membro pstrName* della struttura PROPBAG2 viene impostato sul nome della proprietà appropriato e VARIANT viene impostato sul VARTYPE corrispondente e sul valore desiderato, in questo caso un membro dell'enumerazione [**WICTiffCompressionOption.**](/windows/desktop/api/Wincodec/ne-wincodec-wictiffcompressionoption)
 
 
 ```C++
@@ -276,7 +276,7 @@ if (SUCCEEDED(hr))
 
 
 
-È anche possibile eliminare il contenitore delle proprietà quando non viene considerata alcuna opzione del codificatore.
+È anche possibile eliminare il contenitore delle proprietà quando non vengono considerate opzioni del codificatore.
 
 
 ```C++
@@ -304,10 +304,10 @@ if (SUCCEEDED(hr))
 **Informazioni concettuali**
 </dt> <dt>
 
-[Windows Imaging Component panoramica](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Cenni preliminari sulla decodifica](-wic-creating-decoder.md)
+[Panoramica della decodifica](-wic-creating-decoder.md)
 </dt> <dt>
 
 **Altre risorse**

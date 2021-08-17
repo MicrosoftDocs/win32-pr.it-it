@@ -1,23 +1,23 @@
 ---
-title: Attività di animazione Windows
-description: Negli argomenti contenuti in questa sezione vengono descritte le attività di base necessarie per le applicazioni che utilizzano Windows Animation Manager.
+title: Windows Attività di animazione
+description: Negli argomenti contenuti in questa sezione vengono descritte le attività di base necessarie per le applicazioni che usano Windows Animation Manager.
 ms.assetid: 28103e5e-f00a-4ff5-820b-ece24a7ef21a
 keywords:
-- Animazione Windows Animation Windows, attività
+- Windows Animazione Windows animation ,tasks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a2007e53a738494e9b143b3aa8a6cf83290acb1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4db8f5116a6e36697e649ad81bfbad883c57aee50440c3ba80734419ce2fb372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058149"
 ---
-# <a name="windows-animation-tasks"></a>Attività di animazione Windows
+# <a name="windows-animation-tasks"></a>Windows Attività di animazione
 
-Negli argomenti contenuti in questa sezione vengono descritte le attività di base necessarie per le applicazioni che utilizzano Windows Animation Manager.
+Negli argomenti contenuti in questa sezione vengono descritte le attività di base necessarie per le applicazioni che usano Windows Animation Manager.
 
-Queste attività, in ordine, includono:
+Queste attività, nell'ordine, includono:
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -25,12 +25,12 @@ Queste attività, in ordine, includono:
 
 | Argomento                                                                                                | Descrizione                                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Creare gli oggetti animazione principali](adding-animation-to-an-application.md)<br/>               | Per utilizzare l'animazione Windows nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti animazione principali.<br/>                                                                                                                                                                           |
-| [Creare variabili di animazione](create-animation-variables.md)<br/>                              | Un'applicazione deve creare una variabile di animazione per ogni caratteristica visiva che deve essere animata usando l'animazione di Windows.<br/>                                                                                                                                                            |
-| [Aggiornare gestione animazioni e creare frame](introducing-windows-animation-manager.md)<br/> | Ogni volta che un'applicazione pianifica uno storyboard, l'applicazione deve fornire l'ora corrente al gestore dell'animazione. L'ora corrente è necessaria anche quando si indica al gestore delle animazioni di aggiornare lo stato e impostare tutte le variabili di animazione sui valori interpolati appropriati.<br/> |
+| [Creare gli oggetti di animazione principali](adding-animation-to-an-application.md)<br/>               | Per usare Windows'animazione nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti di animazione principali.<br/>                                                                                                                                                                           |
+| [Creare variabili di animazione](create-animation-variables.md)<br/>                              | Un'applicazione deve creare una variabile di animazione per ogni caratteristica visiva che deve essere animata usando Windows Animation.<br/>                                                                                                                                                            |
+| [Aggiornare Gestione animazioni e disegnare fotogrammi](introducing-windows-animation-manager.md)<br/> | Ogni volta che un'applicazione pianifica uno storyboard, l'applicazione deve fornire l'ora corrente al gestore dell'animazione. L'ora corrente è necessaria anche quando il gestore dell'animazione deve aggiornare lo stato e impostare tutte le variabili di animazione ai valori interpolati appropriati.<br/> |
 | [Leggere i valori delle variabili di animazione](updating---application-driven-animation.md)<br/>         | Ogni volta che l'applicazione disegna, deve leggere i valori correnti delle variabili di animazione che rappresentano le caratteristiche visive da animare.<br/>                                                                                                                                  |
 | [Creare uno storyboard e aggiungere transizioni](updating---timer-driven-animation.md)<br/>          | Per creare un'animazione, un'applicazione deve costruire uno storyboard.<br/>                                                                                                                                                                                                                        |
-| [Pianificare uno storyboard](scheduling-a-storyboard.md)<br/>                                      | Dopo la creazione di uno storyboard, questo viene pianificato dal gestore dell'animazione.<br/>                                                                                                                                                                                                                   |
+| [Pianificare uno storyboard](scheduling-a-storyboard.md)<br/>                                      | Dopo la creazione, uno storyboard viene pianificato dal gestore dell'animazione.<br/>                                                                                                                                                                                                                   |
 
 
 
@@ -40,13 +40,13 @@ Queste attività, in ordine, includono:
 
 <dl> <dt>
 
-[Cenni preliminari sull'animazione Windows](scenic-animation-api-overview.md)
+[Windows Panoramica dell'animazione](scenic-animation-api-overview.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'animazione Windows](windows-animation-reference.md)
+[Windows Informazioni di riferimento sulle animazioni](windows-animation-reference.md)
 </dt> <dt>
 
-[Esempi di animazioni Windows](windows-animation-samples.md)
+[Windows Esempi di animazione](windows-animation-samples.md)
 </dt> </dl>
 
  

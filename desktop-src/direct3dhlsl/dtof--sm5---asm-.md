@@ -1,6 +1,6 @@
 ---
 title: dtof (sm5 - asm)
-description: Conversione a livello di componente da dati a virgola mobile e precisione doppia a dati a virgola mobile e precisione singola.
+description: Conversione a livello di componente da dati a virgola mobile e precisione doppia a dati a virgola mobile a precisione singola.
 ms.assetid: 1D2EF05C-06EF-44F0-AA0F-22D3057FF43E
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,11 +13,11 @@ ms.locfileid: "118792328"
 ---
 # <a name="dtof-sm5---asm"></a>dtof (sm5 - asm)
 
-Conversione a livello di componente da dati a virgola mobile e precisione doppia a dati a virgola mobile e precisione singola.
+Conversione a livello di componente da dati a virgola mobile e precisione doppia a dati a virgola mobile a precisione singola.
 
 
 
-| dtof dest \[ .mask \] , \[ - \] src \[ .swizzle \] , |
+| dtof dest \[ \] .mask, \[ - \] src \[ .swizzle \] , |
 |-------------------------------------------|
 
 
@@ -29,7 +29,7 @@ Conversione a livello di componente da dati a virgola mobile e precisione doppia
 | Elemento                                                            | Descrizione                                          |
 |-----------------------------------------------------------------|------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo dei dati convertiti.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Dati da convertire.<br/>          |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] I dati da convertire.<br/>          |
 
 
 
@@ -37,7 +37,7 @@ Conversione a livello di componente da dati a virgola mobile e precisione doppia
 
 ## <a name="remarks"></a>Commenti
 
-Ogni componente dell'origine viene convertito dalla rappresentazione a precisione doppia alla rappresentazione a precisione singola usando l'arrotondamento all'arrotondamento pari più vicino.
+Ogni componente dell'origine viene convertito dalla rappresentazione a precisione doppia alla rappresentazione a precisione singola usando l'arrotondamento arrotondato al più vicino.
 
 Gli swizzle validi per il parametro source sono .xyzw, .xyxy, .zwxy, .zwzw.
 
@@ -45,11 +45,11 @@ Le maschere *dest* valide sono uno o due componenti. Ad esempio: .x, .y, .z, .w,
 
 *I componenti dest* sono float32.
 
-*src* è un doppio vec2 in (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB) post-swizzle.
+*src* è un doppio vec2 attraverso (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB) post swizzle.
 
-Per le conversioni double<->float32, le implementazioni possono rispettare le denorme float32 o scaricarle.
+Per le conversioni double float32<->, le implementazioni possono rispettare le denorme float32 o scaricarle.
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
@@ -63,7 +63,7 @@ Questa istruzione si applica alle fasi di shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli di shader seguenti:
+Questa istruzione è supportata nei modelli shader seguenti:
 
 
 
@@ -72,9 +72,9 @@ Questa istruzione è supportata nei modelli di shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -84,7 +84,7 @@ Questa istruzione è supportata nei modelli di shader seguenti:
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

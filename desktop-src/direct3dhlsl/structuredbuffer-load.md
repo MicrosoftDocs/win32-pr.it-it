@@ -21,7 +21,7 @@ ms.locfileid: "117724440"
 ---
 # <a name="structuredbufferload-methods"></a>Metodi StructuredBuffer::Load
 
-Legge i dati del buffer da [**un oggetto StructuredBuffer.**](sm5-object-structuredbuffer.md)
+Legge i dati del buffer da un [**oggetto StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 

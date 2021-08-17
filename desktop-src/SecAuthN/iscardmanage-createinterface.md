@@ -60,7 +60,7 @@ Nome dell'interfaccia da creare se il GUID non è disponibile. I valori standard
 *pUserData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore ai dati specifici dell'utente da utilizzare nella creazione di un'interfaccia.
+Puntatore a dati specifici dell'utente da utilizzare nella creazione di un'interfaccia.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ I possibili valori restituiti sono i seguenti:
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/>                                                     |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno dei parametri forniti non è valido.<br/>                                         |
-| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | È stato passato un puntatore non valido nel *parametro pguidInterface* o *pUserData.*<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido nel *parametro pguidInterface* o *pUserData.*<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                                                                        |
 
 
@@ -90,9 +90,9 @@ I possibili valori restituiti sono i seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di tutti i metodi definiti [**dall'interfaccia ISCardManage,**](iscardmanage.md) vedere **ISCardManage**.
+Per un elenco di tutti i metodi definiti [**dall'interfaccia ISCardManage,**](iscardmanage.md) vedere **ISCardManage.**
 
-Oltre ai codici di errore COM elencati [](../secgloss/s-gly.md) in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per informazioni sui smart card di errore, vedere [Valori restituiti da smart card.](authentication-return-values.md)
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore [*smart card*](../secgloss/s-gly.md) se è stata chiamata una funzione smart card per completare la richiesta. Per informazioni sui codici smart card, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Oltre ai codici di errore COM elencati [](../secgloss/s-gly.md) in precedenza, q
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

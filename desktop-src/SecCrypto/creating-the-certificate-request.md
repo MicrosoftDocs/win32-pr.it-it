@@ -4,18 +4,18 @@ ms.assetid: b03efa83-e255-4427-a796-63d5841664a9
 title: Creazione della richiesta di certificato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be29a1fbdbaf9fd956150808471086b7d8ca2815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 607ebbfd5d230c216c2b7ebc4d3b217e1f8c0d2a375d39cdd6b311ec145be361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768882"
 ---
 # <a name="creating-the-certificate-request"></a>Creazione della richiesta di certificato
 
-Il processo di creazione di una richiesta di certificato comporta la raccolta di determinate informazioni dal richiedente. In genere, questa operazione viene eseguita tramite una sorta di interfaccia utente, sebbene le informazioni possano essere ricavate direttamente da un database senza la necessità di un'interfaccia utente. Il livello delle informazioni richieste viene impostato in base ai criteri dell' [*autorità di certificazione*](../secgloss/c-gly.md) (CA).
+Il processo di creazione di una richiesta di certificato comporta la raccolta di determinate informazioni dal richiedente. In genere, questa operazione viene eseguita tramite una sorta di interfaccia utente, anche se le informazioni potrebbero essere prese direttamente da un database senza la necessità di un'interfaccia utente. Il livello di informazioni necessarie viene impostato dai criteri [*dell'autorità di certificazione*](../secgloss/c-gly.md) (CA).
 
-Un esempio delle informazioni necessarie potrebbe essere il seguente:
+Di seguito è riportato un esempio delle informazioni necessarie:
 
 -   Nome comune
 -   Nome unità
@@ -25,7 +25,7 @@ Un esempio delle informazioni necessarie potrebbe essere il seguente:
 -   Paese/Area geografica
 
 > [!Note]  
-> L'interfaccia è progettata per eseguire una singola richiesta per ogni istanza di Xenroll. Per creare ogni [*richiesta di certificato*](../secgloss/c-gly.md), è necessario creare un'istanza di Xenroll distinta.
+> L'interfaccia è progettata per effettuare una singola richiesta per ogni istanza di xenroll. Per creare ogni richiesta di certificato, è necessario creare un'istanza xenroll [*separata.*](../secgloss/c-gly.md)
 
  
 

@@ -1,41 +1,41 @@
 ---
-title: Suggerimenti per le applicazioni di estensione dello schema
-description: Questo argomento include consigli per le applicazioni di estensione dello schema.
+title: Consigli per le applicazioni di estensione dello schema
+description: Questo argomento include raccomandazioni per le applicazioni di estensione dello schema.
 ms.assetid: 615e927e-a113-4557-b354-55a208a649eb
 ms.tgt_platform: multiple
 keywords:
-- Suggerimenti per le applicazioni di estensione dello schema AD
+- Consigli per le applicazioni di estensione dello schema AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2393211eb910ce4bc490667398da7f38d212ddcf
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 3c0a01e68fbe9751b778caa2404d02afb1ddd7704457c9cf0aedcc914387ab5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104117539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025269"
 ---
-# <a name="recommendations-for-schema-extension-applications"></a>Suggerimenti per le applicazioni di estensione dello schema
+# <a name="recommendations-for-schema-extension-applications"></a>Consigli per le applicazioni di estensione dello schema
 
 Oltre ai prerequisiti, per le applicazioni di estensione dello schema sono consigliate le procedure consigliate seguenti:
 
--   Trovare il master schema. Associare allo schema sul controller di dominio che rappresenta il master schema. Evitare di modificare in modo inutilmente il ruolo di master schema tra controller di dominio. Per eseguire l'associazione al contenitore dello schema nel master schema. Per ulteriori informazioni, vedere [prerequisiti per l'installazione di un'estensione dello schema](prerequisites-for-installing-a-schema-extension.md).
--   Prima di eseguire qualsiasi azione, controllare la proprietà **allowedChildClassesEffective** del contenitore dello schema per verificare che sia possibile creare attributi e/o classi. Se **attributeSchema** e **classSchema** non sono valori in tale proprietà, non si dispone di diritti sufficienti per aggiungere attributi o classi allo schema. Per ulteriori informazioni, vedere [il codice di esempio per verificare la presenza di diritti per la creazione di oggetti dello schema](example-code-for-checking-for-rights-to-create-schema-objects.md).
--   Verificare che l'aggiornamento dello schema consentito sia impostato in modo appropriato nel registro di sistema del master schema. Per creare o impostare questo valore, ripristinare lo stato originale come parte della routine di pulizia dell'applicazione. Per ulteriori informazioni sul controllo e sull'impostazione di questo valore, vedere [Abilitazione delle modifiche dello schema nel master schema](enabling-schema-changes-at-the-schema-master.md).
--   Prima di aggiungere attributi o classi, assicurarsi che non esistano già. Se esistono, verificare che siano gli stessi attributi o classi da aggiungere e non un attributo o una classe creata da un utente con sintassi e proprietà diverse che siano incompatibili con gli attributi o le classi.
+-   Trovare il master dello schema. Eseguire l'associazione allo schema nel controller di dominio che è il master schema. Evitare di modificare inutilmente il ruolo master dello schema tra i controller di dominio. Per eseguire l'associazione al contenitore dello schema nel master schema. Per altre informazioni, vedere [Prerequisiti per l'installazione di un'estensione dello schema](prerequisites-for-installing-a-schema-extension.md).
+-   Prima di eseguire qualsiasi azione, controllare la **proprietà allowedChildClassesEffective** del contenitore dello schema per verificare che sia possibile creare attributi e/o classi. Se **attributeSchema** e **classSchema** non sono valori in tale proprietà, non si dispone di diritti sufficienti per aggiungere attributi o classi allo schema. Per altre informazioni, vedere [Codice di esempio per il controllo dei diritti per la creazione di oggetti dello schema](example-code-for-checking-for-rights-to-create-schema-objects.md).
+-   Assicurarsi che l'opzione Aggiornamento dello schema consentito sia impostata in modo appropriato nel Registro di sistema del master schema. Per creare o impostare questo valore, ripristinarlo allo stato originale come parte della routine di pulizia dell'applicazione. Per altre informazioni sul controllo e sull'impostazione di questo valore, vedere [Abilitazione delle modifiche dello schema nel master schema](enabling-schema-changes-at-the-schema-master.md).
+-   Prima di aggiungere attributi o classi, assicurarsi che non esistano già. Se esistono, verificare che siano gli stessi attributi o classi aggiunti e non un attributo o una classe creata da un utente con sintassi e proprietà diverse incompatibili con gli attributi o le classi.
 
-    Per gli attributi, eseguire una query per **CN**, **attributeId**, **governsID**, **ldapDisplayName** e **schemaIDGUID** per assicurarsi che non siano già in uso. Se si aggiunge un set di attributi collegati (un collegamento diretto, un collegamento indietro), assicurarsi che i **LinkId** non siano già in uso. Eseguire una query per **governsID** perché l'identificatore di oggetto (OID) deve essere univoco tra gli attributi e le classi.
+    Per gli attributi, eseguire una query per **cn**, **attributeID**, **governsID**, **lDAPDisplayName** e **schemaIDGUID** per assicurarsi che non siano già usati. Se si aggiunge un set di attributi collegati (un collegamento in avanti, un collegamento indietro), assicurarsi che **i linkID** non siano già usati. Eseguire una query **per governsID** perché l'identificatore di oggetto (OID) deve essere univoco tra attributi e classi.
 
-    Per le classi, eseguire una query per **CN**, **governsID**, **attributeId**, **ldapDisplayName** e **schemaIDGUID** per assicurarsi che non siano già in uso. Eseguire una query per **attributeId** perché l'OID deve essere univoco tra classi e attributi.
+    Per le classi, eseguire una query per **cn**, **governsID**, **attributeID**, **lDAPDisplayName** e **schemaIDGUID** per assicurarsi che non siano già usate. Eseguire una query **per attributeID** perché l'OID deve essere univoco tra classi e attributi.
 
-    Per ulteriori informazioni sulla verifica dei conflitti di denominazione, vedere il [codice di esempio per il rilevamento di conflitti di denominazione dello schema](example-code-for-detecting-schema-naming-collisions.md).
+    Per altre informazioni sul controllo dei conflitti di denominazione, vedere Codice di esempio per il rilevamento dei conflitti di [denominazione degli schemi](example-code-for-detecting-schema-naming-collisions.md).
 
-    Se esistono attributi o classi che sono in conflitto con i nuovi attributi o classi, l'applicazione non deve applicare le modifiche dello schema.
+    Se esistono attributi o classi in conflitto con i nuovi attributi o classi, l'applicazione non deve applicare le modifiche dello schema.
 
--   Se esiste un conflitto di questo tipo, l'applicazione non deve applicare le modifiche dello schema. È possibile che l'amministratore dello schema debba risolvere la collisione, quindi eseguire di nuovo l'applicazione. In alternativa, è possibile usare un **ldapDisplayName** diverso; Tuttavia, tutte le applicazioni che utilizzano l'attributo o l'oggetto devono essere a conoscenza di tale modifica. Per evitare collisioni OID, ottenere un OID da un'autorità di registrazione dei nomi ISO.
--   Se l'applicazione dipende da attributi o classi che ha aggiunto, aggiornare la cache dello schema prima di aggiungere i nuovi attributi o classi che dipendono da tali attributi o classi. Tenere presente che l'attributo operativo **schemaUpdateNow** è sincrono. Ovvero la chiamata al metodo [**IADs::P UT**](/windows/desktop/api/iads/nf-iads-iads-put) si bloccherà fino a quando non viene aggiornata la cache dello schema. Quando la chiamata restituisce, la cache dello schema è stata aggiornata e i nuovi attributi e/o classi sono accessibili.
+-   Se esiste una collisione di questo tipo, l'applicazione non deve applicare le modifiche dello schema. L'amministratore dello schema potrebbe dover risolvere il conflitto e quindi eseguire di nuovo l'applicazione. In alternativa, è possibile **usare un lDAPDisplayName** diverso. Tuttavia, tutte le applicazioni che usano l'attributo o l'oggetto devono essere a conoscenza di tale modifica. Per evitare conflitti OID, ottenere un OID da un'autorità di registrazione dei nomi ISO.
+-   Se l'applicazione dipende da attributi o classi che ha aggiunto, aggiornare la cache dello schema prima di aggiungere i nuovi attributi o classi dipendenti da tali attributi o classi. Tenere presente che **l'attributo operativo schemaUpdateNow** è sincrono. Ciò significa che la chiamata al metodo [**IADs::P ut**](/windows/desktop/api/iads/nf-iads-iads-put) verrà bloccata fino all'aggiornamento della cache dello schema. Quando la chiamata viene restituita, la cache dello schema è stata aggiornata e i nuovi attributi e/o classi sono accessibili.
 
-    Per ulteriori informazioni su come aggiornare la cache degli schemi, vedere [il codice di esempio per l'aggiornamento della cache dello schema](example-code-for-updating-the-schema-cache.md).
+    Per altre informazioni su come aggiornare la cache dello schema, vedere [Codice di esempio per l'aggiornamento della cache dello schema](example-code-for-updating-the-schema-cache.md).
 
- 
+ 
 
- 
+ 

@@ -1,22 +1,22 @@
 ---
-title: Proprietà ConnectionBarShowMinimizeButton di IMsRdpClientAdvancedSettings3
-description: Specifica se visualizzare il pulsante Riduci a icona sulla barra delle connessioni.
+title: Proprietà IMsRdpClientAdvancedSettings3 ConnectionBarShowMinimizeButton
+description: Specifica se visualizzare il pulsante Riduci a icona sulla barra di connessione.
 ms.assetid: 3ad89f25-f1ff-4bfc-ae86-09603058c9b5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
-- Servizi Desktop remoto proprietà ConnectionBarShowMinimizeButton, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
+- Proprietà ConnectionBarShowMinimizeButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ConnectionBarShowMinimizeButton
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3cb600a853e4bc2dea7c693e676f992db85f48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02f1ef263868d29685242962e4538bd84635138fb0f205194d8c27c5b6932aeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058959"
 ---
-# <a name="imsrdpclientadvancedsettings3connectionbarshowminimizebutton-property"></a>Proprietà IMsRdpClientAdvancedSettings3:: ConnectionBarShowMinimizeButton
+# <a name="imsrdpclientadvancedsettings3connectionbarshowminimizebutton-property"></a>Proprietà IMsRdpClientAdvancedSettings3::ConnectionBarShowMinimizeButton
 
-Specifica se visualizzare il pulsante **Riduci a icona** sulla barra delle connessioni.
+Specifica se visualizzare il pulsante **Riduci** a icona sulla barra di connessione.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -74,17 +74,17 @@ HRESULT get_ConnectionBarShowMinimizeButton(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ true** per visualizzare il pulsante **Riduci a icona** e su **Variant \_ false** per disabilitare la visualizzazione del pulsante **Riduci a icona** .
+Impostare questo parametro su **VARIANT \_ TRUE per** visualizzare il pulsante **Riduci** a icona e su **VARIANT \_ FALSE** per disabilitare la visualizzazione del **pulsante Riduci a** icona.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata mentre il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                   |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 è definito come 19cd856b-C542-4c53-Acee-f127e3be1a59<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 è definito come 19cd856b-c542-4c53-acee-f127e3be1a59<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Di seguito è riportato il codice sorgente completo per l'applicazione client Winsock TCP/IP di base.
+description: Di seguito è riportato il codice sorgente completo per l'applicazione client TCP/IP Winsock di base.
 ms.assetid: 42e003d8-1471-4f7f-b01a-23c7041036ea
-title: Codice client Winsock completo
+title: Completare il codice client Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a9000aa117f7262bcd11663eee6fe8f5791538b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54584b21e3236e8c82bc66f16586af8d07ad04af63be4b2229d76116f8aa7ad2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117741433"
 ---
-# <a name="complete-winsock-client-code"></a>Codice client Winsock completo
+# <a name="complete-winsock-client-code"></a>Completare il codice client Winsock
 
-Di seguito è riportato il codice sorgente completo per l'applicazione client Winsock TCP/IP di base.
+Di seguito è riportato il codice sorgente completo per l'applicazione client TCP/IP Winsock di base.
 
 ## <a name="winsock-client-source-code"></a>Codice sorgente del client Winsock
 
@@ -152,13 +152,13 @@ int __cdecl main(int argc, char **argv)
 
 <dl> <dt>
 
-[Introduzione con Winsock](getting-started-with-winsock.md)
+[Attività iniziali con Winsock](getting-started-with-winsock.md)
 </dt> <dt>
 
-[Esecuzione dell'esempio di codice server e client Winsock](finished-server-and-client-code.md)
+[Esecuzione dell'esempio di codice del client e del server Winsock](finished-server-and-client-code.md)
 </dt> <dt>
 
-[Codice server Winsock completo](complete-server-code.md)
+[Completare il codice del server Winsock](complete-server-code.md)
 </dt> </dl>
 
  

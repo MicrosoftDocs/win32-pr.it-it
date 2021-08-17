@@ -1,11 +1,11 @@
 ---
-title: ms-DS-blocco-soglia attributo
+title: Attributo ms-DS-Lockout-Threshold
 description: Soglia di blocco per il blocco degli account utente.
 ms.assetid: 040f2c22-413f-4f30-a0ad-7c2411567771
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Lock-Threshold
-- attributo msDS-LockoutThreshold-schema AD
+- Schema AD dell'attributo ms-DS-Lockout-Threshold
+- Schema AD dell'attributo msDS-LockoutThreshold
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cae7f3d397982a9e018df73fd3801161436811bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e7613856098f67f87e860743406eddd9acc5b9acb8b258793af0c4fe13e7d80d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960710"
 ---
-# <a name="ms-ds-lockout-threshold-attribute"></a>ms-DS-blocco-soglia attributo
+# <a name="ms-ds-lockout-threshold-attribute"></a>Attributo ms-DS-Lockout-Threshold
 
 Soglia di blocco per il blocco degli account utente.
 
@@ -29,13 +29,13 @@ Soglia di blocco per il blocco degli account utente.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-blocco-soglia              |
-| LDAP-Display-Name | msDS-LockoutThreshold                |
+| CN                | ms-DS-Lockout-Threshold              |
+| Ldap-Display-Name | msDS-LockoutThreshold                |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2019              |
-| System-ID-GUID    | b8c8c35e-4a19-4a95-99d0-69fe4446286f |
+| System-Id-Guid    | b8c8c35e-4a19-4a95-99d0-69fe4446286f |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Soglia di blocco per il blocco degli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| A valore singolo       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Soglia di blocco per il blocco degli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| A valore singolo       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Soglia di blocco per il blocco degli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| A valore singolo       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 

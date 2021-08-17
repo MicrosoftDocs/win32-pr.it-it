@@ -1,29 +1,29 @@
 ---
 title: HttpClientWithSslExample
-description: Questo esempio mostra un client HTTP che invia messaggi di richiesta-risposta con sicurezza del trasporto SSL.
+description: In questo esempio viene illustrato un client HTTP che invia messaggi request/reply con sicurezza del trasporto SSL.
 ms.assetid: 0e73baee-a56d-446e-ae2e-a3aae31d8508
 keywords:
-- HttpClientWithSslExample native-servizi Web
+- HttpClientWithSslExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e108124d0d2b29cc313a7d711d871666dca7fa1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a88d19bc632cf7fed85aef49bce51da7e5806163952db89311fcc307a57b477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963340"
 ---
 # <a name="httpclientwithsslexample"></a>HttpClientWithSslExample
 
-Questo esempio mostra un client HTTP che invia messaggi di richiesta-risposta con sicurezza del trasporto SSL.
+In questo esempio viene illustrato un client HTTP che invia messaggi request/reply con sicurezza del trasporto SSL.
 
--   [HttpClientWithSsl. cpp](#httpclientwithsslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpClientWithSsl.cpp](#httpclientwithsslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpclientwithsslcpp"></a>HttpClientWithSsl. cpp
+## <a name="httpclientwithsslcpp"></a>HttpClientWithSsl.cpp
 
 
 ```C++
@@ -422,7 +422,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -566,9 +566,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

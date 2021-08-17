@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Table. ReleaseResource, metodo'
-title: Table. ReleaseResource, metodo
+description: 'Altre informazioni su: Metodo Table.ReleaseResource'
+title: Metodo Table.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Table.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d8a4a59f9846af09b75320e651220d4c0217f591
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94c37d8fcc6815525626accbafc73c0d350b7e7eb7f8b619b16795d828bbd295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978401"
 ---
-# <a name="tablereleaseresource-method"></a>Table. ReleaseResource, metodo
+# <a name="tablereleaseresource-method"></a>Metodo Table.ReleaseResource
 
-Liberare il JET_TABLEID sottostante.
+Liberare l'oggetto JET_TABLEID.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,6 +58,6 @@ protected override void ReleaseResource()
 
 [Classe Table](./table-class.md)
 
-[Membri della tabella](./table-members.md)
+[Membri di tabella](./table-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

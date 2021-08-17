@@ -4,16 +4,16 @@ ms.assetid: aa59f322-09b1-4b0a-be6f-d865c20f76e5
 title: MSTape Driver
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951084f8827f925bba43028c0792736883d5ff0f
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 23eaf6dd7f0d6713b0db5ba5ed21ba4f7640c1373f23cb0066b0b31f366809cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952210"
 ---
 # <a name="mstape-driver"></a>MSTape Driver
 
-Questo argomento si applica a Windows XP o versioni successive.
+Questo argomento si applica Windows XP o versioni successive.
 
 Il driver MSTape supporta i dispositivi videocamere D-VHS e MPEG. Viene esposto alle applicazioni come filtro [di acquisizione video WDM.](wdm-video-capture-filter.md) La sua funzionalità è simile a quella di [MSDV,](msdv-driver.md)il driver del videocamere DV:
 
@@ -27,7 +27,7 @@ Il pin di input supporta un tipo di supporto.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |--------------|------------------------------------------------------------|
 | Tipo principale   | Flusso \_ MEDIATYPE                                          |
 | Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE                     |
@@ -42,12 +42,12 @@ Il pin di output supporta due tipi di supporti.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |--------------|----------------------------------------|
 | Tipo principale   | Flusso \_ MEDIATYPE                      |
 | Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
 | Dimensione del campione  | 192 x 256                              |
-| Blocco di formato | MPEG2 \_ TRANSPORT \_ STRIDE               |
+| Formatta blocco | MPEG2 \_ TRANSPORT \_ STRIDE               |
 
 
 
@@ -55,12 +55,12 @@ Il pin di output supporta due tipi di supporti.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |--------------|----------------------------------------|
 | Tipo principale   | Flusso \_ MEDIATYPE                      |
 | Subtype      | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
 | Dimensione del campione  | 188 x 256                              |
-| Blocco di formato | **NULL**                               |
+| Formatta blocco | **NULL**                               |
 
 
 
@@ -68,16 +68,16 @@ Il pin di output supporta due tipi di supporti.
 
 **Informazioni sul dispositivo**
 
-Il driver legge dinamicamente le informazioni dalla ROM di configurazione del dispositivo. L'applicazione può recuperare queste informazioni associando il moniker del dispositivo a un contenitore di proprietà e chiamando il **metodo IPropertyBag::Read.**
+Il driver legge dinamicamente le informazioni dalla ROM di configurazione del dispositivo. L'applicazione può recuperare queste informazioni associando il moniker del dispositivo a un contenitore delle proprietà e chiamando **il metodo IPropertyBag::Read.**
 
 
 
 | Proprietà            | Descrizione                                                                                                                                                                         | Tipo di dati           |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| UniqueID \_ Low       | ID univoco del dispositivo **(DWORD basso).**                                                                                                                                            | **long** (VT \_ I4)   |
+| UniqueID \_ Low       | ID univoco del dispositivo **(valore DWORD basso).**                                                                                                                                            | **long** (VT \_ I4)   |
 | UniqueID \_ High      | ID univoco del dispositivo **(DWORD alto)**                                                                                                                                            | **long**            |
 | VendorID            | ID fornitore.                                                                                                                                                                          | **long**            |
-| ModelID             | ID modello.                                                                                                                                                                           | **long**            |
+| ID modello             | ID modello.                                                                                                                                                                           | **long**            |
 | Testo fornitore          | Nome del fornitore.                                                                                                                                                                        | **BSTR** (VT \_ BSTR) |
 | Testo modello           | Nome del modello di dispositivo.                                                                                                                                                                  | **BSTR**            |
 | UnitModelText       | Nome del modello di unità; può essere uguale a ModelText.                                                                                                                                      | **BSTR**            |
@@ -92,16 +92,16 @@ Il driver legge dinamicamente le informazioni dalla ROM di configurazione del di
 
 L'ID dispositivo è un intero a 64 bit. Il **valore DWORD basso** viene archiviato nella proprietà UniqueID Low e il valore DWORD alto viene archiviato \_ nella proprietà UniqueID  \_ High.
 
-Per altre informazioni sui moniker dei dispositivi, vedere [Uso dell'enumeratore dispositivo di sistema](using-the-system-device-enumerator.md).
+Per altre informazioni sui moniker dei dispositivi, vedere [Using the System Device Enumerator](using-the-system-device-enumerator.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> <dt>
 
-[Controllo di un camcorder DV](controlling-a-dv-camcorder.md)
+[Controllo di un videocamere DV](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  
