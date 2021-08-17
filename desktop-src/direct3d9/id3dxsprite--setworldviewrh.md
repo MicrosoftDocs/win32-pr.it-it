@@ -1,5 +1,5 @@
 ---
-description: Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima di ordinare gli sprite.
+description: Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima dell'ordinamento o dell'ordinamento degli sprite.
 ms.assetid: 83654e9a-8991-49ec-ab28-cf9063126dbe
 title: Metodo ID3DXSprite::SetWorldViewRH (D3dx9core.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118800419"
 ---
 # <a name="id3dxspritesetworldviewrh-method"></a>Metodo ID3DXSprite::SetWorldViewRH
 
-Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima di ordinare gli sprite.
+Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima dell'ordinamento o dell'ordinamento degli sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasform
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione di visualizzazione. Se **NULL,** la matrice di identità viene utilizzata per la trasformazione della visualizzazione.
+Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione di visualizzazione. Se **NULL,** la matrice di identità viene usata per la trasformazione della visualizzazione.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-È necessaria una chiamata a questo metodo (o a [**ID3DXSprite::SetWorldViewLH)**](id3dxsprite--setworldviewlh.md)se il rendering dello sprite verrà eseguito con il valore del flag [D3DXSpriteUNIT, \_ \_](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ \_ BACKTOFRONT in [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
+È necessaria una chiamata a questo metodo (o a [**ID3DXSprite::SetWorldViewLH)**](id3dxsprite--setworldviewlh.md)se il rendering dello sprite verrà eseguito con il valore del flag [D3DXSprite \_ \_ ROLLBACK,](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ \_ BACKTOFRONT in [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
 
 ## <a name="requirements"></a>Requisiti
 

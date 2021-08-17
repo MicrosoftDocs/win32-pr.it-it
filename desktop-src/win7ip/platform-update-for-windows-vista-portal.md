@@ -4,12 +4,12 @@ description: Aggiornamento della piattaforma per Windows Vista
 ms.assetid: 661f88f9-e5ba-412d-8cb4-f3f186568b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a97e083c8b7458b8a475631da30b8409cbd802c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4d272893699222e2a34263839afae03afc814b032d9473d7687403265a711468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964560"
 ---
 # <a name="platform-update-for-windows-vista"></a>Aggiornamento della piattaforma per Windows Vista
 
@@ -24,7 +24,7 @@ L'API supportata dall'aggiornamento della piattaforma per Windows Vista e dall'a
 Competenze consigliate:
 
 -   Programmazione COM
--   Programmazione di API Windows
+-   Windows Programmazione api
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
@@ -36,8 +36,8 @@ Per Windows Vista, gli utenti finali ottengono l'aggiornamento della piattaforma
 
 | Argomento                                                                                                                               | Descrizione                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Informazioni sull'aggiornamento della piattaforma per Windows Vista](platform-update-for-windows-vista-overview.md)<br/>                                | Offre una panoramica dell'aggiornamento della piattaforma per Windows Vista e dell'aggiornamento della piattaforma per Windows Server 2008 e delle relative funzionalità.<br/>                                                                                                         |
-| [Sviluppo di applicazioni per versioni precedenti di Windows](developing-applications-for-previous-versions-of-windows.md)<br/> | Spiega cosa fare per sviluppare applicazioni in esecuzione in versioni precedenti di Windows e sfruttare l'API supportata con l'aggiornamento della piattaforma per Windows Vista e l'aggiornamento della piattaforma per Windows Server 2008.<br/> |
+| [Informazioni sull'aggiornamento della piattaforma Windows Vista](platform-update-for-windows-vista-overview.md)<br/>                                | Offre una panoramica dell'aggiornamento della piattaforma per Windows Vista e dell'aggiornamento della piattaforma per Windows Server 2008 e delle relative funzionalità.<br/>                                                                                                         |
+| [Sviluppo di applicazioni per le versioni precedenti di Windows](developing-applications-for-previous-versions-of-windows.md)<br/> | Spiega cosa fare per sviluppare applicazioni eseguite in versioni precedenti di Windows e sfruttare l'API supportata con l'aggiornamento della piattaforma per Windows Vista e l'aggiornamento della piattaforma per Windows Server 2008.<br/> |
 
 
 
@@ -45,7 +45,7 @@ Per Windows Vista, gli utenti finali ottengono l'aggiornamento della piattaforma
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-[Knowledge Base articolo sull'aggiornamento della piattaforma per Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
+[Knowledge Base articolo sull'aggiornamento della piattaforma per Windows Vista (kb 971644)](https://support.microsoft.com/kb/971644)
 
  
 

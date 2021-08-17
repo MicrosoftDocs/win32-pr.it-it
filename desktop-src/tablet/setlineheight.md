@@ -1,7 +1,7 @@
 ---
 description: Imposta la proprietà LineHeight sull'oggetto InkDivider.
 ms.assetid: ce5e40c5-faa1-4d66-94f4-d5bd1a11ee4c
-title: SetLineHeight (funzione)
+title: Funzione SetLineHeight
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: be4045e01ac890471536d95768668b633d8f2249
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c6a176b5878b7aaee4a0e51a5a366302b13a1a643453ad2c6d57e103362c4fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966820"
 ---
-# <a name="setlineheight-function"></a>SetLineHeight (funzione)
+# <a name="setlineheight-function"></a>Funzione SetLineHeight
 
-Imposta la proprietà [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) sull'oggetto [**InkDivider**](inkdivider-class.md) .
+Imposta la [**proprietà LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) sull'oggetto [**InkDivider.**](inkdivider-class.md)
 
-Questa funzione helper non è progettata per essere utilizzata dal codice dell'applicazione.
+Questa funzione helper non deve essere usata dal codice dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ HRESULT WINAPI SetLineHeight(
 
 <dl> <dt>
 
-*hDivider* \[ in\]
+*hDivider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto [**InkDivider**](inkdivider-class.md) .
+Handle per [**l'oggetto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*lLineHeight* \[ in\]
+*lLineHeight* \[ Pollici\]
 </dt> <dd>
 
-Proprietà [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) dell'oggetto [**InkDivider**](inkdivider-class.md) , in unità HIMETRIC.
+Proprietà [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) [**dell'oggetto InkDivider,**](inkdivider-class.md) in unità HIMETRIC.
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Questa funzione può restituire uno di questi valori.
 
 | Codice restituito                                                                                  | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Funzione completata.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pDivider* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Funzione completata.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pDivider* non è valido.<br/> |
 
 
 
@@ -78,7 +78,7 @@ Questa funzione può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

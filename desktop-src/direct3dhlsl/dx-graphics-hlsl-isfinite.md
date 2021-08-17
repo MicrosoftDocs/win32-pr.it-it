@@ -48,7 +48,7 @@ Determina se il valore a virgola mobile specificato è finito.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore delle stesse dimensioni dell'input, con un valore impostato su **True** se *il parametro x* è finito; in caso **contrario, False**.
+Restituisce un valore delle stesse dimensioni dell'input, con un valore impostato su **True** se il *parametro x* è finito; in caso **contrario, False.**
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -65,14 +65,14 @@ Restituisce un valore delle stesse dimensioni dell'input, con un valore impostat
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | sì (solo \_ vs 1 \_ 1) |
 
 
 

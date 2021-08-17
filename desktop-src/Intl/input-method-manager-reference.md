@@ -1,27 +1,27 @@
 ---
-description: Riferimento a gestione metodi di input
+description: Informazioni di riferimento su Gestione metodi di input
 ms.assetid: 28e0c84e-febd-454b-bd9c-b6446d2b001a
-title: Riferimento a gestione metodi di input
+title: Informazioni di riferimento su Gestione metodi di input
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 812f3e3de7b08f0f0b40a30055be8005d8ec3536
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f10cf643a6a637be4640abac56b43ca8934563b84b7076305f0117556a0e6be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147564"
 ---
-# <a name="input-method-manager-reference"></a>Riferimento a gestione metodi di input
+# <a name="input-method-manager-reference"></a>Informazioni di riferimento su Gestione metodi di input
 
 Con il gestore del metodo di input vengono usati gli elementi seguenti:
 
--   [Enumerazioni di gestione metodi di input](input-method-manager-enumerations.md)
--   [Interfacce di gestione metodi di input](input-method-manager-interfaces.md)
--   [Funzioni di input Method Manager](input-method-manager-functions.md)
--   [Comandi di input Method Manager](input-method-manager-commands.md)
--   [Messaggi di gestione metodo di input](input-method-manager-messages.md)
--   [Strutture di gestione metodi di input](input-method-manager-structures.md)
--   [Costanti di gestione metodi di input](input-method-manager-constants.md)
+-   [Enumerazioni di Gestione metodi di input](input-method-manager-enumerations.md)
+-   [Interfacce di Gestione metodi di input](input-method-manager-interfaces.md)
+-   [Funzioni di gestione del metodo di input](input-method-manager-functions.md)
+-   [Comandi di Gestione metodi di input](input-method-manager-commands.md)
+-   [Messaggi di Gestione metodo di input](input-method-manager-messages.md)
+-   [Strutture di Gestione metodi di input](input-method-manager-structures.md)
+-   [Costanti di Gestione metodi di input](input-method-manager-constants.md)
 
  
 

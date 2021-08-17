@@ -1,34 +1,34 @@
 ---
-description: Errori Client-Side
+description: Client-Side errori
 ms.assetid: 95fb2ef1-eec2-4c74-891a-617450098160
-title: Errori Client-Side
+title: Client-Side errori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef309858d1527fdcabe0f487de87df19d20635c0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9c27c73cd2be39d98c881021e1a042f15dc623766af0d52a578c6cd49c30e0a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129363"
 ---
-# <a name="client-side-errors"></a>Errori Client-Side
+# <a name="client-side-errors"></a>Client-Side errori
 
-Gli errori sul lato client vengono gestiti in modo analogo agli errori sul lato server. [Accodamento messaggi](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) può spostare un messaggio nella coda di destinazione se, ad esempio, il messaggio non può essere spostato da client a server. In questo caso, il messaggio viene spostato nella coda dei messaggi non recapitabili sul lato client.
+Gli errori lato client vengono gestiti in modo analogo agli errori lato server. [Accodamento messaggi può](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) spostare un messaggio nella coda di destinazione se, ad esempio, il messaggio non può essere spostato da client a server. In questo caso, il messaggio viene spostato nella coda dei messaggi non recapitali sul lato client.
 
-Il servizio componenti in coda COM+ monitora la coda dei messaggi non recapitabili. Se i messaggi sono stati spostati, il servizio componenti in coda crea un'istanza della classe Exception e chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per richiedere [**IPlaybackControl**](/windows/desktop/api/ComSvcs/nn-comsvcs-iplaybackcontrol). Se l'operazione ha esito positivo, il monitoraggio della coda dei messaggi non recapitabili richiama [**IPlaybackControl:: FinalClientRetry**](/windows/desktop/api/ComSvcs/nf-comsvcs-iplaybackcontrol-finalclientretry).
+Il servizio componenti in coda COM+ monitora la coda dei messaggi non recapitati. Se i messaggi sono stati spostati, il servizio dei componenti in coda crea un'istanza della classe di eccezione e chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per richiedere [**IPlaybackControl.**](/windows/desktop/api/ComSvcs/nn-comsvcs-iplaybackcontrol) Se l'operazione ha esito positivo, il monitoraggio della coda dei messaggi non recapitare richiama [**IPlaybackControl::FinalClientRetry**](/windows/desktop/api/ComSvcs/nf-comsvcs-iplaybackcontrol-finalclientretry).
 
-L'oggetto può intraprendere alcune azioni per invertire l'effetto di una transazione precedente. Se viene eseguito il commit della riproduzione, il messaggio viene rimosso dalla coda dei messaggi non recapitabili di XACT. Se la riproduzione ha esito negativo o il CLSID e l'interfaccia necessari non sono disponibili, il messaggio rimane nella coda dei messaggi non recapitabili XACT.
+L'oggetto può eseguire un'azione per invertire l'effetto di una transazione precedente. Se viene eseguito il commit della riproduzione, il messaggio viene rimosso dalla coda di messaggi non recapitare Xact. Se la riproduzione ha esito negativo o il CLSID e l'interfaccia necessari non sono disponibili, il messaggio rimane nella coda di messaggi non recapitati Xact.
 
-Se è necessario intervenire nel processo descritto in precedenza o se è necessario spostare un messaggio non elaborabile dalla coda di riposo finale, usare l'utilità di spostamento messaggi. Per ulteriori informazioni sull'utilità Message Mover, vedere [gestione degli errori](handling-errors-in-queued-components.md).
+Se è necessario intervenire nel processo descritto in precedenza o se è necessario spostare un messaggio non elaborabile dalla coda in attesa finale, usare l'utilità di spostamento dei messaggi. Per altre informazioni sull'utilità di spostamento dei messaggi, vedere [Gestione degli errori](handling-errors-in-queued-components.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Errori persistenti Client-Side](persistent-client-side-failures.md)
+[Errori Client-Side persistenti](persistent-client-side-failures.md)
 </dt> <dt>
 
-[Errori sul lato server](server-side-errors.md)
+[Errori lato server](server-side-errors.md)
 </dt> </dl>
 
  

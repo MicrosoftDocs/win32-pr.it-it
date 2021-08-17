@@ -1,17 +1,17 @@
 ---
 description: Indica il formato del file audio.
 ms.assetid: 58cb9e95-7ac8-42f1-ad2a-a3979ec800eb
-title: System. audio. Format
+title: System.Audio.Format
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9895c36c4ce196d29bb4b370b805253f5dfaad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77ed979896503ebc67f72390726389d17ae1d0f14db245a924b0480facde8ad7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970810"
 ---
-# <a name="systemaudioformat"></a>System. audio. Format
+# <a name="systemaudioformat"></a>System.Audio.Format
 
 Indica il formato del file audio.
 
@@ -49,7 +49,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -64,13 +64,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -79,7 +79,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

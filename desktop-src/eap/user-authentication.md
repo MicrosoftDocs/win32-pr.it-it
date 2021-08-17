@@ -13,9 +13,9 @@ ms.locfileid: "119978371"
 ---
 # <a name="user-authentication"></a>Autenticazione degli utenti
 
-Il protocollo di autenticazione stesso può autenticare l'utente tramite PEAP (Protected EAP). Il sistema operativo include anche due provider di autenticazione: l'autenticazione Windows dominio (accessibile tramite servizi directory) e radius (Remote Access Dial-In User Service).
+Il protocollo di autenticazione stesso può autenticare l'utente tramite PEAP (Protected EAP). Nel sistema operativo sono inoltre incorporati due provider di autenticazione: l'autenticazione Windows dominio (a cui si accede tramite Servizi directory) e radiuS (Remote Access Dial-In User Service).
 
-Nel caso in cui RADIUS sia il provider di autenticazione, il plug-in EAP viene installato nel server RADIUS anziché nel server DELP (Wireless Access Point), ad esempio un server RAS. Il server AP passa i pacchetti EAP direttamente dal client al servizio di autenticazione nel server RADIUS. Il server AP non elabora alcuna informazione nei pacchetti EAP, ma deve accettare le chiavi di crittografia generate da PEAP sul lato server (256 bit) per creare la connessione sicura.
+Nel caso in cui RADIUS sia il provider di autenticazione, il plug-in EAP viene installato nel server RADIUS anziché nel server del punto di accesso wireless, ad esempio un server RAS. Il server AP passa i pacchetti EAP direttamente dal client al servizio di autenticazione nel server RADIUS. Il server AP non elabora alcuna informazione nei pacchetti EAP, ma deve accettare le chiavi di crittografia generate da PEAP sul lato server e a livello completo (256 bit) per creare la connessione protetta.
 
  
 

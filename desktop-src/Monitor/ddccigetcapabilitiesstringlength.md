@@ -1,5 +1,5 @@
 ---
-title: DDCCIGetCapabilitiesStringLength (funzione)
+title: Funzione DDCCIGetCapabilitiesStringLength
 description: Ottiene la lunghezza di una stringa di funzionalità per un monitoraggio.
 ms.assetid: 8a26d17b-1535-49c7-8cfb-48feb283a3c4
 keywords:
@@ -14,17 +14,17 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28d82e2f0667d542c8fa4c9255fde765e4cea81d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd30aeb1e71d88b649478d0ecd1c3052dbbe32372909882f73ae77db6e4dbc1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066611"
 ---
-# <a name="ddccigetcapabilitiesstringlength-function"></a>DDCCIGetCapabilitiesStringLength (funzione)
+# <a name="ddccigetcapabilitiesstringlength-function"></a>Funzione DDCCIGetCapabilitiesStringLength
 
 > [!IMPORTANT]
-> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -46,29 +46,29 @@ NTSTATUS WINAPI DDCCIGetCapabilitiesStringLength(
 
 <dl> <dt>
 
-*hMonitor* \[ in\]
+*hMonitor* \[ Pollici\]
 </dt> <dd>
 
-Handle per un monitor fisico.
+Handle per un monitoraggio fisico.
 
 </dd> <dt>
 
-*pdwLength* \[ out\]
+*pdwLength* \[ Cambio\]
 </dt> <dd>
 
-Riceve la lunghezza della stringa di funzionalità, in caratteri, incluso il carattere null di terminazione.
+Riceve la lunghezza della stringa di funzionalità, in caratteri, incluso il carattere Null di terminazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono chiamare [**GetCapabilitiesStringLength**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) invece di chiamare questa funzione.
+Le applicazioni devono [**chiamare GetCapabilitiesStringLength**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) anziché questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

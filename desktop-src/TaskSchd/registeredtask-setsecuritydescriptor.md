@@ -1,10 +1,10 @@
 ---
-title: RegisteredTask. SetSecurityDescriptor, metodo
-description: Per lo scripting, imposta il descrittore di sicurezza utilizzato come credenziali per l'attività registrata.
+title: Metodo RegisteredTask.SetSecurityDescriptor
+description: Per lo scripting, imposta il descrittore di sicurezza usato come credenziali per l'attività registrata.
 ms.assetid: 2dc10df0-5827-4199-940e-865a03a694f5
 keywords:
-- Utilità di pianificazione del metodo SetSecurityDescriptor
-- Metodo SetSecurityDescriptor Utilità di pianificazione, oggetto RegisteredTask
+- Metodo SetSecurityDescriptor Utilità di pianificazione
+- Metodo SetSecurityDescriptor Utilità di pianificazione , oggetto RegisteredTask
 - Oggetto RegisteredTask Utilità di pianificazione, metodo SetSecurityDescriptor
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 386c97c470b94686c0a1f654313c6ef1e0bca5a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7ac6845624ab2032b9b90d742c1346081c3ba4719d0814cfd257d3787c2bf70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759592"
 ---
-# <a name="registeredtasksetsecuritydescriptor-method"></a>RegisteredTask. SetSecurityDescriptor, metodo
+# <a name="registeredtasksetsecuritydescriptor-method"></a>Metodo RegisteredTask.SetSecurityDescriptor
 
-Per lo scripting, imposta il descrittore di sicurezza utilizzato come credenziali per l'attività registrata.
+Per lo scripting, imposta il descrittore di sicurezza usato come credenziali per l'attività registrata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ RegisteredTask.SetSecurityDescriptor( _
 
 <dl> <dt>
 
-*SDDL* \[ in\]
+*sddl* \[ Pollici\]
 </dt> <dd>
 
 Descrittore di sicurezza utilizzato come credenziali per l'attività registrata.
@@ -55,10 +55,10 @@ Descrittore di sicurezza utilizzato come credenziali per l'attività registrata.
 
 </dd> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
-Flag che specificano come impostare il descrittore di sicurezza. \_ \_ È possibile specificare l'attività non aggiungere il \_ \_ flag ACE principale (0x10) dell'enumerazione per la [**\_ creazione di attività**](/windows/desktop/api/taskschd/ne-taskschd-task_creation) .
+Flag che specificano come impostare il descrittore di sicurezza. È possibile specificare il flag ACE TASK \_ DONT ADD PRINCIPAL \_ \_ \_ (0x10) [**dall'enumerazione TASK \_ CREATION.**](/windows/desktop/api/taskschd/ne-taskschd-task_creation)
 
 </dd> </dl>
 
@@ -76,9 +76,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -90,10 +90,10 @@ Questo metodo non restituisce valori.
 [**RegisteredTask**](registeredtask.md)
 </dt> <dt>
 
-[**TaskFolder. GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
+[**TaskFolder.GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
 </dt> <dt>
 
-[**RegisteredTask. SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)
+[**RegisteredTask.SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)
 </dt> </dl>
 
  

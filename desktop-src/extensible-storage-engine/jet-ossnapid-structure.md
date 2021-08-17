@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_OSSNAPID'
-title: Struttura JET_OSSNAPID
+description: 'Altre informazioni su: JET_OSSNAPID struttura'
+title: JET_OSSNAPID struttura
 TOCTitle: JET_OSSNAPID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_OSSNAPID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 215bd8f096ba9c1788f4db70a014cab48b74afa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13c68c7e441df06d1c51ddfbf0da66226b42c453183e82c5bda79e8a472c7928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073910"
 ---
-# <a name="jet_ossnapid-structure"></a>Struttura JET_OSSNAPID
+# <a name="jet_ossnapid-structure"></a>JET_OSSNAPID struttura
 
 Un JET_OSSNAPID contiene un handle per uno snapshot di un database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,6 +61,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID membri](./jet-ossnapid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_DbInfo'
-title: Enumerazione JET_DbInfo
+description: 'Altre informazioni su: enumerazione JET_DbInfo dati'
+title: JET_DbInfo enumerazione
 TOCTitle: JET_DbInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_DbInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfo(v=EXCHG.10)
@@ -48,19 +48,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 39c6c3175c08e4f7644ad4f0b41137e12e84f71d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c364b89ccb50542130c988a643fed594a34e370e5adb5e9d0a13f77eab5b04d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112230"
 ---
-# <a name="jet_dbinfo-enumeration"></a>Enumerazione JET_DbInfo
+# <a name="jet_dbinfo-enumeration"></a>JET_DbInfo enumerazione
 
-Livelli di informazioni per il recupero delle informazioni sul database.
+Livelli di informazioni per il recupero di informazioni sul database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -89,22 +89,22 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>Nome file</td>
-<td>Restituisce il percorso del file di database (String).</td>
+<td>Restituisce il percorso del file di database (stringa).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LCID</td>
-<td>Restituisce l'identificatore delle impostazioni locali (LCID) associato a questo database (Int32).</td>
+<td>Restituisce l'identificatore delle impostazioni locali (LCID) associato al database (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Opzioni</td>
-<td>Restituisce un <a href="hh579532(v=exchg.10).md">OpenDatabaseGrbit</a>. Indica se il database è aperto in modalità esclusiva. Se il database è in modalità esclusiva, viene restituito <a href="hh579532(v=exchg.10).md">Exclusive</a> ; in caso contrario, viene restituito zero. Non vengono restituite altre opzioni di grbit del database per JetAttachDatabase e JetOpenDatabase.</td>
+<td>Restituisce un <a href="hh579532(v=exchg.10).md">oggetto OpenDatabaseGrbit.</a> Indica se il database viene aperto in modalità esclusiva. Se il database è in modalità esclusiva, <a href="hh579532(v=exchg.10).md">verrà restituito Exclusive,</a> in caso contrario viene restituito zero. Non vengono restituite altre opzioni grbit del database per JetAttachDatabase e JetOpenDatabase.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Transazioni</td>
-<td>Restituisce un numero maggiore del livello massimo a cui è possibile annidare le transazioni. Se viene chiamato <a href="dn292105(v=exchg.10).md">JetBeginTransaction (JET_SESID)</a> (in un modo annidato, ovvero nella stessa sessione senza commit o rollback) il numero di volte in cui questo valore viene restituito, nell'ultima chiamata a <a href="hh564840(v=exchg.10).md">TransTooDeep</a> verrà restituito (Int32).</td>
+<td>Restituisce un numero uno maggiore del livello massimo a cui è possibile annidare le transazioni. Se <a href="dn292105(v=exchg.10).md">jetBeginTransaction(JET_SESID)</a> viene chiamato (in modo annidamento, ovvero nella stessa sessione, senza commit o rollback) quante volte questo valore, nell'ultima chiamata <a href="hh564840(v=exchg.10).md">verrà restituito TransTooDeep</a> (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -113,8 +113,8 @@ public enum JET_DbInfo
 </tr>
 <tr class="even">
 <td></td>
-<td>Filesize</td>
-<td>Restituisce il Filesize del database, in pagine (Int32).</td>
+<td>Dimensione</td>
+<td>Restituisce la dimensione del file del database, in pagine (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -129,7 +129,7 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>Varie</td>
-<td>Restituisce un oggetto <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> .</td>
+<td>Restituisce un <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> oggetto .</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -139,12 +139,12 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>PageSize</td>
-<td>Restituisce le dimensioni di pagina del database (Int32).</td>
+<td>Restituisce le dimensioni della pagina del database (Int32).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FileType</td>
-<td>Restituisce il tipo di database (<a href="hh566739(v=exchg.10).md">JET_filetype</a>).</td>
+<td>Restituisce il tipo del database (<a href="hh566739(v=exchg.10).md">JET_filetype</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -154,4 +154,4 @@ public enum JET_DbInfo
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

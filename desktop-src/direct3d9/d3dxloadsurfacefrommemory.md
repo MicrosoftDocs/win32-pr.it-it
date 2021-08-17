@@ -1,7 +1,7 @@
 ---
 description: Carica una superficie dalla memoria.
 ms.assetid: 9a36e395-fd00-47fe-8df1-cda8c80182ef
-title: Funzione D3DXLoadSurfaceFromMemory (D3dx9tex. h)
+title: Funzione D3DXLoadSurfaceFromMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ffb7be05301ae807505242153be902ab30eecf14
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1b2bcb98f5fd64da221f73bf2cee4222d8925797acd4c7e01914e8e068d6e381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123049"
 ---
-# <a name="d3dxloadsurfacefrommemory-function"></a>D3DXLoadSurfaceFromMemory (funzione)
+# <a name="d3dxloadsurfacefrommemory-function"></a>Funzione D3DXLoadSurfaceFromMemory
 
 Carica una superficie dalla memoria.
 
@@ -49,34 +49,34 @@ HRESULT D3DXLoadSurfaceFromMemory(
 
 <dl> <dt>
 
-*pDestSurface* \[ in\]
+*pDestSurface* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
 
-Puntatore a un'interfaccia [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) . Specifica la superficie di destinazione che riceve l'immagine.
+Puntatore a [**un'interfaccia IDirect3DSurface9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) Specifica la superficie di destinazione, che riceve l'immagine.
 
 </dd> <dt>
 
-*pDestPalette* \[ in\]
+*pDestPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la tavolozza di destinazione di 256 colori o **null**.
+Puntatore a [**una struttura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la tavolozza di destinazione di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*pDestRect* \[ in\]
+*pDestRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Specifica il rettangolo di destinazione. Impostare questo parametro su **null** per specificare l'intera superficie.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Specifica il rettangolo di destinazione. Impostare questo parametro su **NULL per** specificare l'intera superficie.
 
 </dd> <dt>
 
-*pSrcMemory* \[ in\]
+*pSrcMemory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -85,57 +85,57 @@ Puntatore all'angolo superiore sinistro dell'immagine di origine in memoria.
 
 </dd> <dt>
 
-*SrcFormat* \[ in\]
+*SrcFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DFORMAT](d3dformat.md)**
 
-Membro del tipo enumerato [D3DFORMAT](d3dformat.md) , il formato pixel dell'immagine di origine.
+Membro del tipo [enumerato D3DFORMAT,](d3dformat.md) il formato pixel dell'immagine di origine.
 
 </dd> <dt>
 
-*SrcPitch* \[ in\]
+*SrcPitch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pitch of source image, in bytes. Per i formati DXT, questo numero deve rappresentare la larghezza di una riga di celle, in byte.
+Passo dell'immagine di origine, in byte. Per i formati DXT, questo numero deve rappresentare la larghezza di una riga di celle, in byte.
 
 </dd> <dt>
 
-*pSrcPalette* \[ in\]
+*pSrcPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la tavolozza di origine di 256 colori o **null**.
+Puntatore a una [**struttura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la tavolozza di origine di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*pSrcRect* \[ in\]
+*pSrcRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Specifica le dimensioni dell'immagine di origine in memoria. Questo valore non può essere **null**.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Specifica le dimensioni dell'immagine di origine in memoria. Questo valore non può essere **NULL.**
 
 </dd> <dt>
 
-*Filtro* \[ di in\]
+*Filtro* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più [ \_ filtri D3DX](d3dx-filter.md) che controllano il modo in cui l'immagine viene filtrata. Specificare \_ il valore predefinito di D3DX per questo parametro equivale a specificare \_ il \_ \| \_ dithering del filtro D3DX del triangolo di filtro D3DX \_ .
+Combinazione di uno o più [filtri D3DX \_ che](d3dx-filter.md) controllano la modalità di filtro dell'immagine. Specificare D3DX DEFAULT per questo parametro equivale a specificare \_ D3DX \_ \_ FILTER TRIANGLE \| D3DX \_ FILTER \_ DITHER.
 
 </dd> <dt>
 
-*ColorKey* \[ in\]
+*ColorKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-Valore [**D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare il colorkey. Si tratta sempre di un colore ARGB a 32 bit, indipendente dal formato di immagine di origine. Alfa è significativo e in genere deve essere impostato su FF per le chiavi di colore opache. Pertanto, per il nero opaco, il valore sarà uguale a 0xFF000000.
+[**Valore D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare la chiave di colore. Si tratta sempre di un colore ARGB a 32 bit, indipendentemente dal formato dell'immagine di origine. Il valore alfa è significativo e in genere deve essere impostato su FF per le chiavi di colore opache. Pertanto, per il nero opaco, il valore sarebbe uguale a 0xFF000000.
 
 </dd> </dl>
 
@@ -149,7 +149,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 Questa funzione gestisce la conversione da e verso formati di trama compressi.
 
-La scrittura in una superficie non di livello zero non comporterà l'aggiornamento del rettangolo modificato. Se viene chiamato **D3DXLoadSurfaceFromMemory** e la superficie non è già sporca (si tratta di un problema improbabile in scenari di utilizzo normali), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla superficie.
+La scrittura su una superficie non di livello zero non causerà l'aggiornamento del rettangolo dirty. Se viene chiamato **D3DXLoadSurfaceFromMemory** e la superficie non era già dirty (questo è improbabile in scenari di utilizzo normale), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla superficie.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -157,8 +157,8 @@ La scrittura in una superficie non di livello zero non comporterà l'aggiornamen
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

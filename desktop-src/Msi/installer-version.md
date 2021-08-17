@@ -1,7 +1,7 @@
 ---
 description: La proprietà Version dell'oggetto Installer è una proprietà di sola lettura che rappresenta la rappresentazione di stringa della versione corrente di Windows Installer. La stringa viene restituita nel formato seguente.
 ms.assetid: 9af262f0-b573-471d-aac6-6a72e8cb5314
-title: Proprietà Installer. Version
+title: Installer.Version - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 29af85b8fc1afe468dc87d5516da9a528024c73a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3d2aeb845647317751eba53caae1609f8d3d66f9f7d373aa7faa24e3b8cdfb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119295550"
 ---
-# <a name="installerversion-property"></a>Proprietà Installer. Version
+# <a name="installerversion-property"></a>Installer.Version - proprietà
 
-La proprietà **Version** dell'oggetto [**Installer**](installer-object.md) è una proprietà di sola lettura che rappresenta la rappresentazione di stringa della versione corrente di Windows Installer. La stringa viene restituita nel formato seguente.
+La **proprietà Version** dell'oggetto [**Installer**](installer-object.md) è una proprietà di sola lettura che rappresenta la rappresentazione di stringa della versione corrente di Windows Installer. La stringa viene restituita nel formato seguente.
 
-*principale*. *minore*. *compilazione*. *aggiornamento* di
+*oggetto principale.* *secondario.* *Compilare*. *aggiornamento*
 
 Questa proprietà è di sola lettura.
 
@@ -45,7 +45,7 @@ propVal = Installer.Version
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

@@ -31,7 +31,7 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | CN                | ms-net-ieee-8023-GP-PolicyData              |
 | Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyData              |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1955                     |
 | System-Id-Guid    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
@@ -54,7 +54,7 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
@@ -75,7 +75,7 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
@@ -96,7 +96,7 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |

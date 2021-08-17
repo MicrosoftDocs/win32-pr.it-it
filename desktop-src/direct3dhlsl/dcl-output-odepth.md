@@ -18,7 +18,7 @@ ms.locfileid: "118793147"
 ---
 # <a name="dcl_output-odepth-sm4---asm"></a>dcl \_ output oDepth (sm4 - asm)
 
-Dichiara che un pixel shader userà il registro di profondità di output.
+Dichiara che un'pixel shader userà il registro di profondità dell'output.
 
 
 
@@ -29,9 +29,9 @@ Dichiara che un pixel shader userà il registro di profondità di output.
 
  
 
-Il valore nel registro output-depth viene usato durante un confronto di profondità (se il confronto di profondità è abilitato).
+Il valore nel registro di profondità dell'output viene usato durante un confronto di profondità (se il confronto di profondità è abilitato).
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -43,7 +43,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader nel linguaggio di assembly usando Shader Model 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. Non è possibile creare uno shader in linguaggio assembly usando il modello shader 4.
 
 ## <a name="example"></a>Esempio
 
@@ -58,7 +58,7 @@ dcl_output oDepth
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -67,9 +67,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -79,7 +79,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -19,11 +19,11 @@ ms.locfileid: "119302881"
  
 
 > [!Note]  
-> Questo componente è deprecato. Per informazioni sulla riproduzione e la navigazione dei DVD in DirectShow, vedere [Applicazioni DVD](dvd-applications.md).
+> Questo componente è deprecato. Per informazioni sulla riproduzione e l'esplorazione di DVD in DirectShow, vedere [Applicazioni DVD](dvd-applications.md).
 
  
 
-Il controllo ® MSWebDVD ActiveX® microsoft può essere usato per creare un'applicazione DVD basata su script. Espone gli oggetti e gli eventi seguenti a un'applicazione.
+Il controllo® ActiveX® MSWebDVD di Microsoft può essere usato per creare un'applicazione DVD basata su script. Espone gli oggetti e gli eventi seguenti a un'applicazione.
 
 -   [MSWebDVD](mswebdvd-object.md)
 -   [MSDVDAdm](msdvdadm-object.md)

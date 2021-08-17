@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Transaction. ReleaseResource'
-title: Transaction. ReleaseResource, metodo
+description: Altre informazioni sul metodo Transaction.ReleaseResource
+title: Metodo Transaction.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78d3dc358b6c7c5dfe297132fd83f08c64693c85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9ca7a00a5c824b9f73db5d9e5f225a772a34e8d0d67f36d17a46958dffa78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107045"
 ---
-# <a name="transactionreleaseresource-method"></a>Transaction. ReleaseResource, metodo
+# <a name="transactionreleaseresource-method"></a>Metodo Transaction.ReleaseResource
 
-Chiamato quando la transazione viene eliminata quando è attiva. Questa operazione deve eseguire il rollback della transazione.
+Chiamato quando la transazione viene eliminata mentre è attiva. Verrà eseguito il rollback della transazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,6 +58,6 @@ protected override void ReleaseResource()
 
 [Transaction (classe)](./transaction-class.md)
 
-[Membri transazione](./transaction-members.md)
+[Membri della transazione](./transaction-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

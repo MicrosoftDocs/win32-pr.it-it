@@ -1,25 +1,25 @@
 ---
-description: Guida di riferimento a DMO
+description: DMO Riferimento
 ms.assetid: 34954718-78c7-4309-9e47-5ece6948a957
-title: Guida di riferimento a DMO
+title: DMO Riferimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4a12f08a0cd0645909ef9fe1555c0618193c684
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6f67ec54af14625c4ac734344764cbe0e3659b1beb6231c1018c0cfc28f44566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016119"
 ---
-# <a name="dmo-reference"></a>Guida di riferimento a DMO
+# <a name="dmo-reference"></a>DMO Riferimento
 
-Questa sezione contiene informazioni di riferimento per gli oggetti multimediali DirectX (DMOs).
+Questa sezione contiene informazioni di riferimento per directx media objects (DMO).
 
--   [Interfacce DMO](dmo-interfaces.md)
--   [Strutture DMO](dmo-structures.md)
--   [Tipi enumerati DMO](dmo-enumerated-types.md)
--   [DMO (funzioni)](dmo-functions.md)
--   [Costanti DMO](dmo-constants.md)
+-   [DMO Interfacce](dmo-interfaces.md)
+-   [DMO Strutture](dmo-structures.md)
+-   [DMO Tipi enumerati](dmo-enumerated-types.md)
+-   [DMO Funzioni](dmo-functions.md)
+-   [DMO Costanti](dmo-constants.md)
 -   [**Modello di classe IMediaObjectImpl**](imediaobjectimpl-class-template.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

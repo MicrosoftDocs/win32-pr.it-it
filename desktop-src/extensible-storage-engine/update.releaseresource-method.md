@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul metodo Update.ReleaseResource
+description: 'Altre informazioni su: Metodo Update.ReleaseResource'
 title: Metodo Update.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.ReleaseResource
@@ -35,7 +35,7 @@ ms.locfileid: "119471431"
 
 Chiamato quando la transazione viene eliminata mentre è attiva. Verrà eseguito il rollback della transazione.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

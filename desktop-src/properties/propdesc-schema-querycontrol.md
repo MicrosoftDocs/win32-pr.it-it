@@ -1,21 +1,21 @@
 ---
-description: Non supportato in Windows 7 e versioni successive. Specifica il controllo da utilizzare nel generatore di query.
+description: Non supportato in Windows 7 e versioni successive. Specifica il controllo da usare nel generatore di query.
 ms.assetid: 7d79c2fe-c63d-4ac5-8dd6-1a6103e53245
 title: queryControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 448b47038f82afb9f860209bfe89eb9e6eecb890
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34f05800fc026c61a4ea50098fb1d8f4deb98d971c9eecfed478d71bd3c01033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823561"
 ---
 # <a name="querycontrol"></a>queryControl
 
-Non supportato in Windows 7 e versioni successive. Specifica il controllo da utilizzare nel generatore di query. Deve essere presente un solo elemento [queryControl]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Non supportato in Windows 7 e versioni successive. Specifica il controllo da usare nel generatore di query. Deve essere presente un solo [elemento queryControl]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [queryControl]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [queryControl,]() le impostazioni dell'attributo predefinite vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -75,7 +75,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>controllo</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; default &quot; . I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Default. I valori validi sono i seguenti. 
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -90,7 +90,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>Predefinito</td>
-<td>Valore predefinito. Usa il controllo predefinito, in base all' <typeInfo type=&quot;&quot;> attributo. I tipi predefiniti sono elencati di seguito. Qualsiasi altro tipo comporta l'utilizzo del &quot; controllo di testo &quot; . 
+<td>Valore predefinito. Usa il controllo predefinito, in base <typeInfo type=&quot;&quot;> all'attributo . I tipi predefiniti sono elencati di seguito. Qualsiasi altro tipo comporta l'uso del &quot; controllo &quot; Text. 
 <table>
 <thead>
 <tr class="header">
@@ -104,7 +104,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <td>Testo</td>
 </tr>
 <tr class="even">
-<td>String (multivalore)</td>
+<td>Stringa (multivalore)</td>
 <td>MultiValueText</td>
 </tr>
 <tr class="odd">
@@ -112,7 +112,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <td>NumericText</td>
 </tr>
 <tr class="even">
-<td>Numero o dimensione (enumerazione)</td>
+<td>Number o Size (enum)</td>
 <td>Elenco</td>
 </tr>
 <tr class="odd">
@@ -134,31 +134,31 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>Calendario</td>
-<td>Usa il controllo del calendario a discesa.</td>
+<td>Usa il controllo calendario a discesa.</td>
 </tr>
 <tr class="even">
 <td>CheckboxDropList</td>
-<td>Usa il controllo elenco con le caselle di controllo.</td>
+<td>Usa il controllo elenco con caselle di controllo.</td>
 </tr>
 <tr class="odd">
-<td>DropList</td>
+<td>Elenco a discesa</td>
 <td>Usa il controllo elenco a discesa.</td>
 </tr>
 <tr class="even">
 <td>MultiValueText</td>
-<td>Utilizza il controllo di modifica del testo multivalore.</td>
+<td>Usa il controllo di modifica del testo multivalore.</td>
 </tr>
 <tr class="odd">
 <td>NumericText</td>
-<td>Utilizza il controllo di modifica del testo numerico.</td>
+<td>Usa il controllo di modifica del testo numerico.</td>
 </tr>
 <tr class="even">
 <td>Classificazione</td>
-<td>Usa il controllo della classificazione a 5 stelle.</td>
+<td>Usa il controllo classificazione a 5 stelle.</td>
 </tr>
 <tr class="odd">
 <td>Testo</td>
-<td>Utilizza il controllo di modifica del testo.</td>
+<td>Usa il controllo di modifica del testo.</td>
 </tr>
 </tbody>
 </table>

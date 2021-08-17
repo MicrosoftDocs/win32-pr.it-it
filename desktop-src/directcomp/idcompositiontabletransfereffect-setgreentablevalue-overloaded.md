@@ -1,9 +1,9 @@
 ---
-title: Metodi SetGreenTableValue di IDCompositionTableTransferEffect (Dcomp. h)
+title: Metodi IDCompositionTableTransferEffect SetGreenTableValue (Dcomp.h)
 description: Imposta un valore nella tabella verde.
 ms.assetid: feccfc61-31e6-362a-1e81-0650736b962a
 keywords:
-- Metodi SetGreenTableValue DirectComposition
+- Metodi Di SetGreenTableValue DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 04f0fad20abc95c7c48a55b3bf3144b7ae3a8d90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad6e190265859e902188df33308aa9324e0c2c7a74f2fc78fd0eeb1d907ea1f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118805"
 ---
-# <a name="idcompositiontabletransfereffectsetgreentablevalue-methods"></a>Metodi IDCompositionTableTransferEffect:: SetGreenTableValue
+# <a name="idcompositiontabletransfereffectsetgreentablevalue-methods"></a>Metodi IDCompositionTableTransferEffect::SetGreenTableValue
 
 Imposta un valore nella tabella verde.
 
@@ -30,7 +30,7 @@ Imposta un valore nella tabella verde.
 | Metodo                                                                                                                | Descrizione                                 |
 |:----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------|
 | [**SetGreenTableValue**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontabletransfereffect-setgreentablevalue(uint_float))                                     | Imposta un valore nella tabella verde.<br/> |
-| [**SetGreenTableValue (UINT, IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontabletransfereffect-setgreentablevalue(uint_idcompositionanimation)) | Imposta un valore nella tabella verde.<br/> |
+| [**SetGreenTableValue (UINT, IDCompositionAnimation) \***](/windows/win32/api/dcomp/nf-dcomp-idcompositiontabletransfereffect-setgreentablevalue(uint_idcompositionanimation)) | Imposta un valore nella tabella verde.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Imposta un valore nella tabella verde.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

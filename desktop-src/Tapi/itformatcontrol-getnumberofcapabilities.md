@@ -1,21 +1,21 @@
 ---
-description: Il metodo GetNumberOfCapabilities Recupera il numero di funzionalità associate al formato corrente.
+description: Il metodo GetNumberOfCapabilities recupera il numero di funzionalità associate al formato corrente.
 ms.assetid: 26e51c0d-c1cb-410f-ab19-eb884afa8431
-title: 'Metodo ITFormatControl:: GetNumberOfCapabilities (Ipmsp. h)'
+title: Metodo ITFormatControl::GetNumberOfCapabilities (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e29153f5ee9ce8c5e12b93a1d219905c40f80418
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57bd79b61f8c41893ec8d99ffc9bfadcc3887631c885d5caa430a6fb723396a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117945276"
 ---
-# <a name="itformatcontrolgetnumberofcapabilities-method"></a>Metodo ITFormatControl:: GetNumberOfCapabilities
+# <a name="itformatcontrolgetnumberofcapabilities-method"></a>Metodo ITFormatControl::GetNumberOfCapabilities
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **GetNumberOfCapabilities** Recupera il numero di funzionalità associate al formato corrente.
+Il **metodo GetNumberOfCapabilities** recupera il numero di funzionalità associate al formato corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT GetNumberOfCapabilities(
 
 <dl> <dt>
 
-*pdwCount* \[ out\]
+*pdwCount* \[ Cambio\]
 </dt> <dd>
 
 Conteggio delle funzionalità.
@@ -47,8 +47,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

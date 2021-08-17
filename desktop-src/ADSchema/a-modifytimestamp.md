@@ -59,7 +59,7 @@ Attributo calcolato che rappresenta la data dell'ultima modifica dell'oggetto. Q
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| A valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
@@ -80,7 +80,7 @@ Attributo calcolato che rappresenta la data dell'ultima modifica dell'oggetto. Q
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| A valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
@@ -101,7 +101,7 @@ Attributo calcolato che rappresenta la data dell'ultima modifica dell'oggetto. Q
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| A valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |

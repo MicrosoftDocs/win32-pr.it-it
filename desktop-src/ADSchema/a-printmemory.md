@@ -32,7 +32,7 @@ Quantità di memoria installata in una stampante.
 | CN                | Print-Memory                         |
 | Ldap-Display-Name | printMemory                          |
 | Dimensione              | 4 byte                              |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.282               |
 | System-Id-Guid    | ba305f74-47e3-11d0-a1a6-00c04fd930c9 |
@@ -58,7 +58,7 @@ Quantità di memoria installata in una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -79,7 +79,7 @@ Quantità di memoria installata in una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -100,7 +100,7 @@ Quantità di memoria installata in una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |

@@ -1,5 +1,5 @@
 ---
-description: Per uniformità, viene prima eseguito il mapping di ogni istanza della macro TRAP-TYPE a un'istanza della macro NOTIFICATION-TYPE usando il mapping definito in RFC 1908.
+description: Per uniformità, ogni istanza della macro TRAP-TYPE viene prima mappata a un'istanza della macro NOTIFICATION-TYPE usando il mapping definito in RFC 1908.
 ms.assetid: ed3536b8-5846-4207-aa9d-6814b1f4a35f
 ms.tgt_platform: multiple
 title: TRAP-TYPE Macro
@@ -14,10 +14,10 @@ ms.locfileid: "118554301"
 ---
 # <a name="trap-type-macro"></a>TRAP-TYPE Macro
 
-Per uniformità, viene prima eseguito il mapping di ogni istanza della macro TRAP-TYPE a un'istanza della macro [NOTIFICATION-TYPE](notification-type-macro.md) usando il mapping definito in [RFC 1908.](https://www.ietf.org/rfc/rfc1908.txt)
+Per uniformità, ogni istanza della macro TRAP-TYPE viene prima mappata a un'istanza della macro [NOTIFICATION-TYPE](notification-type-macro.md) usando il mapping definito in [RFC 1908.](https://www.ietf.org/rfc/rfc1908.txt)
 
 > [!Note]  
-> Per altre informazioni sull'installazione del provider, vedere [Setting up the WMI SNMP Environment](setting-up-the-wmi-snmp-environment.md).
+> Per altre informazioni sull'installazione del provider, vedere [Configurazione dell'ambiente SNMP WMI.](setting-up-the-wmi-snmp-environment.md)
 
  
 

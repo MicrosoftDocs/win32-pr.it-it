@@ -3,7 +3,7 @@ title: MCM_GETCURRENTVIEW messaggio (Commctrl.h)
 description: Ottiene la visualizzazione corrente del calendario. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro MonthCal GetCurrentView.
 ms.assetid: 9c42ebf6-611e-4e50-9dcc-cf7fd63b32eb
 keywords:
-- MCM_GETCURRENTVIEW dei messaggi Windows controllo
+- MCM_GETCURRENTVIEW dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:

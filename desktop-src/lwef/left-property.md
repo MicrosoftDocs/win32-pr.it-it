@@ -1,26 +1,26 @@
 ---
 title: Proprietà Left (oggetto Characters)
-description: Informazioni sulla proprietà dell'oggetto Left Characters. Microsoft Agent è deprecato a livello di Windows 7.
+description: Informazioni sulla proprietà dell'oggetto Left Characters. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: f496f075-6430-4806-a237-1c7b626d355e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e2f860e6827a9c96c42014456e43b791ab70ed4
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: e546dc662dc535889eb6c3a476a54b839c5d9577a7e2ff525eeadf79f727fbf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105017"
 ---
 # <a name="left-property-characters-object"></a>Proprietà Left (oggetto Characters)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce o imposta il bordo sinistro della cornice del carattere specificato.
+Restituisce o imposta il bordo sinistro del frame del carattere specificato.
 
 </dd> <dt>
 
@@ -33,7 +33,7 @@ Restituisce o imposta il bordo sinistro della cornice del carattere specificato.
 
 | Parte    | Descrizione                                                           |
 |---------|-----------------------------------------------------------------------|
-| *value* | Valore Long integer che specifica il bordo sinistro della cornice del carattere. |
+| *value* | Valore Long Integer che specifica il bordo sinistro del frame del carattere. |
 
 
 
@@ -45,7 +45,7 @@ Restituisce o imposta il bordo sinistro della cornice del carattere specificato.
 
 La **proprietà Left** è sempre espressa in pixel, rispetto all'origine dello schermo (in alto a sinistra). L'impostazione di questa proprietà si applica a tutti i client del carattere.
 
-Anche se il carattere viene visualizzato in una finestra di area irregolare, la posizione del carattere è basata sulle dimensioni esterne del frame di animazione rettangolare usato quando il carattere è stato compilato con Microsoft Agent Character Editor.
+Anche se il carattere viene visualizzato in una finestra di area irregolare, la posizione del carattere è basata sulle dimensioni esterne del frame di animazione rettangolare usato quando il carattere è stato compilato con l'editor di caratteri di Microsoft Agent.
 
  
 

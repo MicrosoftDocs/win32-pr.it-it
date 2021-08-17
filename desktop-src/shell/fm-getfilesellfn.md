@@ -1,5 +1,5 @@
 ---
-description: Inviato da un'estensione di File Manager per recuperare informazioni su un file selezionato dalla finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca). Il file selezionato può avere un nome file lungo.
+description: Inviato da un'estensione di File Manager per recuperare le informazioni su un file selezionato dalla finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca). Il file selezionato può avere un nome file lungo.
 title: FM_GETFILESELLFN messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 461fd171-d47f-41d6-953e-8e497e023ab1
-ms.openlocfilehash: e991d2705f74aa8822dcef89878e9762f22b08dc
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 2074fb1e631edf1795b8f0d15ea9f0d40e90556d527899873ef88195c2367576
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860768"
 ---
 # <a name="fm_getfilesellfn-message"></a>Messaggio \_ FM GETFILESELLFN
 
-Inviato da un'estensione di File Manager per recuperare informazioni su un file selezionato dalla finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca). Il file selezionato può avere un nome file lungo.
+Inviato da un'estensione di File Manager per recuperare le informazioni su un file selezionato dalla finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca). Il file selezionato può avere un nome file lungo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -48,9 +48,9 @@ Restituisce l'indice in base zero del file selezionato recuperato.
 
 ## <a name="remarks"></a>Commenti
 
-Solo le estensioni che supportano nomi di file lunghi ( ad esempio, estensioni che supportano la rete) devono usare questo messaggio.
+Questo messaggio deve essere utilizzato solo per le estensioni che supportano nomi di file lunghi, ad esempio estensioni che supportano la rete.
 
-Un'estensione può usare [**il messaggio FM \_ GETSELCOUNTLFN**](fm-getselcountlfn.md) per recuperare il conteggio dei file selezionati.
+Un'estensione può usare il [**messaggio FM \_ GETSELCOUNTLFN**](fm-getselcountlfn.md) per recuperare il numero di file selezionati.
 
 ## <a name="requirements"></a>Requisiti
 

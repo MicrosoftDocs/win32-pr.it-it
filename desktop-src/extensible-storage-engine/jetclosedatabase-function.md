@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla funzione JetCloseDatabase
+description: 'Altre informazioni su: Funzione JetCloseDatabase'
 title: Funzione JetCloseDatabase
 TOCTitle: JetCloseDatabase Function
 ms:assetid: e17a05dd-c30b-4e8f-8538-91a65e8052d2
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetclosedatabase-function"></a>Funzione JetCloseDatabase
 
-La **funzione JetCloseDatabase** chiude un file di database aperto in precedenza con [JetOpenDatabase](./jetopendatabase-function.md).
+La **funzione JetCloseDatabase** chiude un file di database aperto in precedenza [con JetOpenDatabase](./jetopendatabase-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseDatabase(
@@ -58,7 +58,7 @@ Riservato per utilizzi futuri.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>

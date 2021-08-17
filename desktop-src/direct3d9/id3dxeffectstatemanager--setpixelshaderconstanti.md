@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXEffectStateManager::SetPixelShaderConstantI: funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti integer del vertex shader.'
+description: 'Metodo ID3DXEffectStateManager::SetPixelShaderConstantI: funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti integer vertex shader.'
 ms.assetid: 55f5747d-b7f8-4d13-ac2c-df2dcb160091
 title: Metodo ID3DXEffectStateManager::SetPixelShaderConstantI (D3DX9Effect.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 53eab5993ee737efe866c73a550e6b216edaac3b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a817ac4e092eb9d8be2e4e2da02af051ae957dc97655b45e4e48dbe85b115ca3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121504"
 ---
 # <a name="id3dxeffectstatemanagersetpixelshaderconstanti-method"></a>Metodo ID3DXEffectStateManager::SetPixelShaderConstantI
 
-Funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti integer di vertex shader.
+Funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti integer vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT SetPixelShaderConstantI(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice in base zero del primo registro costante.
+Indice in base zero del primo registro delle costanti.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Indice in base zero del primo registro costante.
 
 Tipo: **const [**INT**](../winprog/windows-data-types.md) \***
 
-Matrice di costanti Integer.
+Matrice di costanti integer.
 
 </dd> <dt>
 
@@ -73,10 +73,10 @@ Numero di registri in pConstantData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo durante l'impostazione dello stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico ( [**ad esempio IDirect3DDevice9::SetPixelShaderConstantI**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstanti)) avrà esito negativo.
+-   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico ( ad esempio [**IDirect3DDevice9::SetPixelShaderConstantI**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstanti)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 

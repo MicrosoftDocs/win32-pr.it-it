@@ -1,11 +1,11 @@
 ---
-title: Proprietà GetStreamPropertiesOperation. Completed
-description: Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da GetStreamPropertiesAsync.
+title: GetStreamPropertiesOperation.Completed - proprietà
+description: Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da GetStreamPropertiesAsync.
 ms.assetid: 97194F8E-DE36-4DC6-ADB5-F1EDE8AEF079
 keywords:
-- API di streaming multimediale delle proprietà completate
-- API di streaming multimediale delle proprietà completa, interfaccia GetStreamPropertiesOperation
-- API di streaming multimediale dell'interfaccia GetStreamPropertiesOperation, proprietà Completed
+- Proprietà Completata API Streaming multimediale
+- Proprietà completata API Streaming multimediale, interfaccia GetStreamPropertiesOperation
+- Interfaccia GetStreamPropertiesOperation API Streaming multimediale , proprietà Completed
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb60ad137c8dafa42a58394d58a105267dabda3a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c6fc6982866ed97f70467d13cb5e899d94a1459266ca0149d12400d154aad784
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100665"
 ---
-# <a name="getstreampropertiesoperationcompleted-property"></a>Proprietà GetStreamPropertiesOperation. Completed
+# <a name="getstreampropertiesoperationcompleted-property"></a>GetStreamPropertiesOperation.Completed - proprietà
 
-Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) .
+Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetStreamPropertiesAsync.**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85))
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -33,11 +33,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ```C++
 HRESULT put_Completed(
-  [in]  IGetStreamPropertiesCompletedHandler *value
+  [in]  IGetStreamPropertiesCompletedHandler *value
 );
 
 HRESULT get_Completed(
-  [out] IGetStreamPropertiesCompletedHandler **value
+  [out] IGetStreamPropertiesCompletedHandler **value
 );
 ```
 
@@ -54,6 +54,6 @@ Gestore eventi.
 [**GetStreamPropertiesOperation**](getstreampropertiesoperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

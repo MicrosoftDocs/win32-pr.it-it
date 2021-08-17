@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_Underline
-description: Identifica la proprietà \_ FontProperties Underline dell'interfaccia \_ utente \_ PKEY.
+description: Identifica la proprietà \_ FontProperties Underline PKEY \_ \_ dell'interfaccia utente.
 ms.assetid: 88492558-ab19-4606-8fe0-5f100677b88a
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118706722"
 ---
 # <a name="ui_pkey_fontproperties_underline"></a>UI \_ PKEY \_ FontProperties \_ Underline
 
-Identifica la proprietà \_ FontProperties Underline dell'interfaccia \_ utente \_ PKEY.
+Identifica la proprietà \_ FontProperties Underline PKEY \_ \_ dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui \_ PKEY \_ FontProperties \_ Underline viene usato da un'applicazione per eseguire query sullo stato del **pulsante Sottolineatura.**
+UI \_ PKEY \_ FontProperties \_ Underline viene usato da un'applicazione per eseguire una query sullo stato del **pulsante Sottolineato.**
 
 Il valore della proprietà deriva [**dall'enumerazione \_ FONTUNDERLINE dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline) utente.
 
 Il valore predefinito è `UI_FONTUNDERLINE_NOTSET`.
 
-Lo screenshot seguente mostra il **pulsante Sottolinea** della barra multifunzione [**FontControl**](windowsribbon-element-fontcontrol.md).
+Lo screenshot seguente mostra il pulsante **Sottolineato** del controllo [**FontControl della barra multifunzione.**](windowsribbon-element-fontcontrol.md)
 
 ![Screenshot dell'elemento fontcontrol con l'attributo richfont impostato su true.](images/markup/fontcontrol-underline.png)
 
@@ -43,7 +43,7 @@ La tabella seguente descrive le proprietà e il risultato dell'interfaccia utent
 
 |      Proprietà                   |       Risultato dell'interfaccia utente                                                          |
 |---------------------------------|--------------------------------------------------------------------------|
-| `UI_FONTUNDERLINE_NOTAVAILABLE` | **Il pulsante** Sottolineatura è disabilitato e può essere impostato solo dall'applicazione. |
+| `UI_FONTUNDERLINE_NOTAVAILABLE` | **Il** pulsante Sottolineatura è disabilitato e può essere impostato solo dall'applicazione. |
 | `UI_FONTUNDERLINE_NOTSET`       | **Il pulsante** Sottolineatura non è selezionato.                                    |
 | `UI_FONTUNDERLINE_SET`          | **Il pulsante** Sottolineatura è selezionato.                                        |
 
@@ -58,10 +58,10 @@ La tabella seguente descrive le proprietà e il risultato dell'interfaccia utent
 [Proprietà del controllo Font](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[**\_FONTUNDERLINE dell'interfaccia utente**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline)
+[**CARATTERE \_ DELL'INTERFACCIA UTENTEUNDERLINE**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline)
 </dt> <dt>
 
-[Controllo Carattere](windowsribbon-controls-fontcontrol.md)
+[Controllo Font](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Tipo complesso weeksType
 description: Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento Week.
 ms.assetid: c9e8814c-b8f9-426d-943d-ca3efa5d914b
 keywords:
-- Tipo complesso weeksType Utilità di pianificazione
+- tipo complesso weeksType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -52,8 +52,8 @@ Definisce l'elemento figlio e le informazioni di sequenziazione per [**l'element
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Phonetic-First-Name
-description: Contiene il nome fonetico specificato o il nome della persona.
+description: Contiene il nome fonetico o il nome della persona.
 ms.assetid: a1338295-4545-4146-9dfe-8e45d5f9fdf4
 ms.tgt_platform: multiple
 keywords:
-- Attributo ms-DS-Phonetic-First-Name Schema DI AD
+- Attributo ms-DS-Phonetic-First-Name schema DI AD
 - Schema AD dell'attributo msDS-PhoneticFirstName
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "118683394"
 ---
 # <a name="ms-ds-phonetic-first-name-attribute"></a>Attributo ms-DS-Phonetic-First-Name
 
-Contiene il nome fonetico specificato o il nome della persona.
+Contiene il nome fonetico o il nome della persona.
 
 
 
@@ -32,7 +32,7 @@ Contiene il nome fonetico specificato o il nome della persona.
 | CN                | ms-DS-Phonetic-First-Name                   |
 | Ldap-Display-Name | msDS-PhoneticFirstName                      |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1942                     |
 | System-Id-Guid    | 4b1cba4e-302f-4134-ac7c-f01f6c797843        |
@@ -55,7 +55,7 @@ Contiene il nome fonetico specificato o il nome della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
@@ -76,7 +76,7 @@ Contiene il nome fonetico specificato o il nome della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
@@ -97,7 +97,7 @@ Contiene il nome fonetico specificato o il nome della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |

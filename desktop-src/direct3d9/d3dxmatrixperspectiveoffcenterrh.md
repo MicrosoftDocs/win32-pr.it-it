@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3d051894a6706cf8d58b81a85003666513f2a956
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d86aa735f8bafba6da5d697dc89b5e97469a6181de30862515ba8b94190d9cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122841"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx9mathh"></a>Funzione D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h)
 
@@ -117,7 +117,7 @@ Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è una matrice di 
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della **funzione D3DXMatrixPerspectiveOffCenterRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della **funzione D3DXMatrixPerspectiveOffCenterRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixPerspectiveOffCenterRH** può essere usata come parametro per un'altra funzione.
 

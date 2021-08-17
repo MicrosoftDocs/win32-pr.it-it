@@ -1,21 +1,21 @@
 ---
-description: In genere, l'applicazione eseguirà il rendering di scene 3D in maniera più realistica se usa mappe chiare colorate. Una mappa chiara colorata usa i dati RGB nella mappa chiara per le relative informazioni di illuminazione.
+description: L'applicazione esegue in genere il rendering delle scene 3D in modo più realistico se usa mappe di luce colorata. Una mappa di luce colorata usa i dati RGB nella mappa di luce per le informazioni sull'illuminazione.
 ms.assetid: 47760884-7b9f-45de-9d4a-faf822da899f
-title: Mappe per la luce del colore (Direct3D 9)
+title: Colore chiaro Mappe (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 621c5056fe2cbb9e6446adfb5dcad3079c0d90bf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4dbff9fe246131fc90bda8ac9b5f1c49cd2413c412a7b3da5c013b1e936aa6f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989301"
 ---
-# <a name="color-light-maps-direct3d-9"></a>Mappe per la luce del colore (Direct3D 9)
+# <a name="color-light-maps-direct3d-9"></a>Colore chiaro Mappe (Direct3D 9)
 
-In genere, l'applicazione eseguirà il rendering di scene 3D in maniera più realistica se usa mappe chiare colorate. Una mappa chiara colorata usa i dati RGB nella mappa chiara per le relative informazioni di illuminazione.
+L'applicazione esegue in genere il rendering delle scene 3D in modo più realistico se usa mappe di luce colorata. Una mappa di luce colorata usa i dati RGB nella mappa di luce per le informazioni sull'illuminazione.
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato il mapping leggero con i dati cromatici RGB.
+L'esempio di codice C++ seguente illustra il mapping della luce con i dati di colore RGB.
 
 
 ```
@@ -33,13 +33,13 @@ d3dDevice->SetTextureStageState( 0,D3DTSS_COLORARG2, D3DTA_DIFFUSE );
 
 
 
-Questo esempio imposta la mappa chiara come prima trama. Imposta quindi lo stato della prima fase di fusione per modulare i dati della trama in ingresso. Usa la prima trama e il colore corrente della primitiva come argomenti dell'operazione di modulazione.
+Questo esempio imposta la mappa di luce come prima trama. Imposta quindi lo stato della prima fase di fusione per modulare i dati della trama in ingresso. Usa la prima trama e il colore corrente della primitiva come argomenti per l'operazione di modulazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Mapping chiaro con trame](light-mapping-with-textures.md)
+[Mapping di luce con trame](light-mapping-with-textures.md)
 </dt> </dl>
 
  

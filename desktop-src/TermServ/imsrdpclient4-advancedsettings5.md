@@ -4,21 +4,21 @@ description: Recupera un puntatore a un'interfaccia IMsRdpClientAdvancedSettings
 ms.assetid: 2dd0cc5f-7822-485f-8b3f-12407af1e091
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà AdvancedSettings5
-- Servizi Desktop remoto proprietà AdvancedSettings5, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà AdvancedSettings5
+- Proprietà AdvancedSettings5 Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto , proprietà AdvancedSettings5
 topic_type:
 - apiref
 api_name:
@@ -42,16 +42,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad96588b2109375aed23c1024ef925936cb3368
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb8efd8fae25be768a1b758389b5ca7c20a9f3f8b414e62acb865fecf83eeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138954"
 ---
-# <a name="imsrdpclient4advancedsettings5-property"></a>Proprietà IMsRdpClient4:: AdvancedSettings5
+# <a name="imsrdpclient4advancedsettings5-property"></a>Proprietà IMsRdpClient4::AdvancedSettings5
 
-Recupera un puntatore a un'interfaccia [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) .
+Recupera un puntatore a [**un'interfaccia IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md)
 
 Questa proprietà è di sola lettura.
 
@@ -68,17 +68,17 @@ HRESULT get_AdvancedSettings5(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore all'interfaccia [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) . L'interfaccia può essere utilizzata per impostare impostazioni avanzate per il controllo client.
+Puntatore [**all'interfaccia IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md) L'interfaccia può essere usata per impostare impostazioni avanzate per il controllo client.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se il metodo ha esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata quando il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

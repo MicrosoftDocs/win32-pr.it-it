@@ -25,7 +25,7 @@ Costruttori esposti da `XMXDECN4` .
 Costruisce istanze della [**struttura XMXDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4)
 
 > [!Note]  
-> I costruttori elencati di seguito sono disponibili solo in C++.
+> I costruttori elencati qui sono disponibili solo in C++.
 
  
 
@@ -47,7 +47,7 @@ Costruisce istanze della [**struttura XMXDECN4.**](/windows/win32/api/directxpac
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMXDECN4</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4.</strong></a> <br/>
+<td style="text-align: left;">Costruttore predefinito per <code>XMXDECN4</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -56,7 +56,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMXDECN4</code> una variabile contenente i dati del componente in un formato di tipo <code>uint32_t</code> packed. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da una variabile contenente i <code>uint32_t</code> dati dei componenti in un formato di pacchetto. <br/>
+<td style="text-align: left;">Inizializza una nuova istanza di <code>XMXDECN4</code> da una variabile contenente i dati del componente in formato <code>uint32_t</code> pack. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da una variabile contenente i dati <code>uint32_t</code> del componente in formato packed. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -65,7 +65,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMXDECN4</code> un argomento di matrice di quattro <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da un oggetto da un argomento di matrice di <code>float</code> quattro elementi. <br/>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMXDECN4</code> un argomento della matrice di quattro <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da un da un argomento di <code>float</code> matrice di quattro elementi. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.

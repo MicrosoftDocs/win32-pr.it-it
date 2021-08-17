@@ -60,7 +60,7 @@ Specifica un safearray contenente un file system per ogni voce.
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                                  | L'operazione è stata completata.<br/>                                                                                               |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>                                    | Il parametro è **NULL.**<br/>                                                                                                  |
-| <dl> <dt>E \_ INVALIDARG</dt> <dt>0x80000003</dt> </dl>                                 | Il *parametro searchPaths* non è valido e non è stato possibile analizzarlo in una matrice di percorsi.<br/>                                    |
+| <dl> <dt>E \_ InvalidARG</dt> <dt>0x80000003</dt> </dl>                                 | Il *parametro searchPaths* non è valido e non è stato possibile analizzarlo in una matrice di percorsi.<br/>                                    |
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ FILE NOT \_ \_ FOUND)</dt> <dt>0x80070002</dt> </dl> | Il sistema non riesce a trovare una directory specificata nel *parametro searchPaths.*<br/>                                                |
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ PATH NOT \_ \_ FOUND)</dt> <dt>0x80070003</dt> </dl> | Il sistema non riesce a trovare un percorso specificato dal *parametro searchPaths.*<br/>                                                     |
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ INVALID \_ NAME)</dt> <dt>0x8007007b</dt> </dl>    | Un percorso specificato nel *parametro searchPaths* contiene caratteri non validi. I caratteri non validi sono " \* ?<>/ \| ":".<br/> |
@@ -81,7 +81,7 @@ Specifica un safearray contenente un file system per ogni voce.
 | Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualPC è definito come 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 

@@ -1,5 +1,5 @@
 ---
-description: Una nuova funzionalità interessante del Tablet PC è il sistema di input penna.
+description: Una nuova funzionalità interessante di Tablet PC è il sistema di input penna.
 ms.assetid: 8432617a-5ae7-44cb-a5f7-f3b2d8885846
 title: Input penna, input penna e riconoscimento
 ms.topic: article
@@ -13,19 +13,19 @@ ms.locfileid: "118716265"
 ---
 # <a name="pen-input-ink-and-recognition"></a>Input penna, input penna e riconoscimento
 
-Una nuova funzionalità interessante del Tablet PC è il sistema di input penna. Tutti i computer Tablet PC hanno un digitalizzatore sotto lo schermo che accetta l'input penna. Questo nuovo meccanismo di input richiede di pensare a come compilare applicazioni in modo specifico per Tablet PC. L'API (Application Programming Interface) della piattaforma Tablet PC consente di eseguire questa operazione.
+Una nuova funzionalità interessante di Tablet PC è il sistema di input penna. Tutti i computer Tablet PC hanno un digitalizzatore sotto lo schermo che accetta l'input penna. Questo nuovo meccanismo di input richiede di pensare a come creare applicazioni specifiche per Tablet PC. L'API (Application Programming Interface) della piattaforma Tablet PC consente di eseguire questa operazione.
 
 ## <a name="collection-data-management-and-recognition"></a>Raccolta, Gestione dati e riconoscimento
 
 La piattaforma Tablet PC può essere suddivisa in tre aree distinte:
 
--   Raccolta input penna (oggetti utilizzati per raccogliere input penna dal digitalizzatore).
--   Gestione dei dati dell'input penna (oggetti usati per gestire l'input penna raccolto).
+-   Raccolta di input penna (oggetti usati per raccogliere input penna dal digitalizzatore).
+-   Gestione dei dati input penna (oggetti usati per gestire l'input penna raccolto).
 -   Riconoscimento input penna (oggetti usati per convertire l'input penna raccolto in altri tipi di dati, ad esempio testo).
 
-L'immagine seguente illustra, a livello di alto livello, il funzionamento dell'API Raccolta input penna (API Penna), dell'API Ink Gestione dati (API Input penna) e dell'API Riconoscimento input penna (API Riconoscimento input penna) nella piattaforma Tablet PC.
+L'immagine seguente illustra, a livello elevato, come l'API Raccolta input penna (API Penna), l'API Ink Gestione dati (API Ink) e l'API Riconoscimento input penna (API Riconoscimento input penna) funzionano insieme nella piattaforma Tablet PC.
 
-![Illustraton che illustra il funzionamento dell'API penna, dell'API input penna e dell'API di riconoscimento](images/aabc298b-fd64-435b-87bc-eb7cd11524e8.jpg)
+![illustrato che illustra l'utilizzo di API penna, API input penna e API di riconoscimento](images/aabc298b-fd64-435b-87bc-eb7cd11524e8.jpg)
 
 L'API della piattaforma Tablet PC è disponibile nelle API gestite e in una libreria COM. Gli argomenti seguenti descrivono gli oggetti nell'API e illustrano come le applicazioni usano questi oggetti:
 

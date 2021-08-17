@@ -1,34 +1,34 @@
 ---
-title: Proprietà di IMsRdpClientTransportSettings
+title: Proprietà IMsRdpClientTransportSettings
 description: L'interfaccia IMsRdpClientTransportSettings espone le proprietà seguenti.
 ms.assetid: 3D70D211-3525-471B-BB41-F0D8CC4DEBEF
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39d79b0ddc8a6cbf42dbc6f7732880a934e88d74
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: be04c0d3de3cdf299bc4dc2a46385b33b679a3be756823ed76f531de64fede58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974681"
 ---
-# <a name="imsrdpclienttransportsettings-properties"></a>Proprietà di IMsRdpClientTransportSettings
+# <a name="imsrdpclienttransportsettings-properties"></a>Proprietà IMsRdpClientTransportSettings
 
-L'interfaccia [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md) espone le proprietà seguenti.
+[**L'interfaccia IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà GatewayCredsSource**](imsrdpclienttransportsettings-gatewaycredssource.md)
--   [**Proprietà GatewayDefaultUsageMethod**](imsrdpclienttransportsettings-gatewaydefaultusagemethod.md)
+-   [**GatewayCredsSource - proprietà**](imsrdpclienttransportsettings-gatewaycredssource.md)
+-   [**GatewayDefaultUsageMethod - proprietà**](imsrdpclienttransportsettings-gatewaydefaultusagemethod.md)
 -   [**Proprietà GatewayHostname**](imsrdpclienttransportsettings-gatewayhostname.md)
--   [**Proprietà GatewayIsSupported**](imsrdpclienttransportsettings-gatewayissupported.md)
--   [**Proprietà GatewayProfileUsageMethod**](imsrdpclienttransportsettings-gatewayprofileusagemethod.md)
--   [**Proprietà GatewayUsageMethod**](imsrdpclienttransportsettings-gatewayusagemethod.md)
--   [**Proprietà GatewayUserSelectedCredsSource**](imsrdpclienttransportsettings-gatewayuserselectedcredssource.md)
+-   [**GatewayIsSupported - proprietà**](imsrdpclienttransportsettings-gatewayissupported.md)
+-   [**GatewayProfileUsageMethod - proprietà**](imsrdpclienttransportsettings-gatewayprofileusagemethod.md)
+-   [**GatewayUsageMethod - proprietà**](imsrdpclienttransportsettings-gatewayusagemethod.md)
+-   [**GatewayUserSelectedCredsSource - proprietà**](imsrdpclienttransportsettings-gatewayuserselectedcredssource.md)
 
- 
+ 
 
- 
+ 
 
 
 

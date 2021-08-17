@@ -33,17 +33,17 @@ Dichiara un registro temporaneo indicizzabile.
 
 | Elemento                                                                                                                           | Descrizione                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[in \] Un numero intero che indica il numero di registro.<br/>                              |
-| <span id="_size_"></span><span id="_SIZE_"></span>*\[Dimensione\]*<br/>                                                        | \[in \] Un valore intero facoltativo. Numero di elementi nella matrice di registri.<br/>  |
-| <span id="ComponentCount"></span><span id="componentcount"></span><span id="COMPONENTCOUNT"></span>*ComponentCount*<br/> | \[in \] Un valore intero facoltativo. Numero di componenti nella matrice di registri.<br/> |
+| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[in \] Numero intero che indica il numero di registro.<br/>                              |
+| <span id="_size_"></span><span id="_SIZE_"></span>*\[Dimensione\]*<br/>                                                        | \[in \] Valore intero facoltativo. Numero di elementi nella matrice di registri.<br/>  |
+| <span id="ComponentCount"></span><span id="componentcount"></span><span id="COMPONENTCOUNT"></span>*ComponentCount*<br/> | \[in \] Valore intero facoltativo. Numero di componenti nella matrice di registri.<br/> |
 
 
 
  
 
-Un registro contiene spazio sufficiente per un valore a quattro componenti a 32 bit. Il numero di elementi nella matrice di registri temporanei (indicizzabili e [non](dcl-temps.md)indicizzabili) non può superare 4096.
+Un registro contiene spazio sufficiente per un valore a quattro componenti a 32 bit; Il numero di elementi nella matrice di registri temporanei (indicizzabili e [non](dcl-temps.md)indicizzabili) non può superare 4096.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -55,11 +55,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader nel linguaggio di assembly usando Shader Model 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. Non è possibile creare uno shader in linguaggio assembly usando il modello shader 4.
 
 ## <a name="example"></a>Esempio
 
-Ecco alcuni esempi del codice generato per i registri indicizzabili.
+Di seguito sono riportati alcuni esempi del codice generato per i registri indicizzabili.
 
 
 ```
@@ -71,7 +71,7 @@ dcl_indexableTemp x1[16], 4 ; // An indexable array of 16, 4-component, 32-bit e
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -80,9 +80,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -92,7 +92,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

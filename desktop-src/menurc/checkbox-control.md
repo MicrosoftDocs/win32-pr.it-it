@@ -1,5 +1,5 @@
 ---
-title: Controllo CHECKBOX (compilatore di risorse)
+title: Controllo CHECKBOX (Compilatore di risorse)
 description: Definisce un controllo casella di controllo.
 ms.assetid: 24ee25e5-9de2-4843-a55e-96b897f6ae8e
 keywords:
@@ -21,7 +21,7 @@ ms.locfileid: "119461331"
 ---
 # <a name="checkbox-control"></a>Controllo CHECKBOX
 
-Definisce un controllo casella di controllo. Il controllo è un piccolo rettangolo (casella di controllo) con il testo specificato visualizzato accanto (in genere a destra). Quando l'utente seleziona il controllo , il controllo evidenzia il rettangolo e invia un messaggio alla relativa finestra padre.
+Definisce un controllo casella di controllo. Il controllo è un piccolo rettangolo (casella di controllo) a cui è visualizzato il testo specificato (in genere, a destra). Quando l'utente seleziona il controllo, il controllo evidenzia il rettangolo e invia un messaggio alla finestra padre.
 
 **L'istruzione CHECKBOX,** che può essere usata solo in un'istruzione [**DIALOGEX,**](dialogex-resource.md) definisce il testo, l'identificatore, le dimensioni e gli attributi del controllo.
 
@@ -41,17 +41,17 @@ Testo da visualizzare a destra del controllo.
 <span id="style"></span><span id="STYLE"></span>*Stile*
 </dt> <dd>
 
-Stili dei controlli. Questo valore può essere una combinazione dello stile della classe del pulsante **BS \_ CHECKBOX** e degli **stili WS \_ TABSTOP** **e WS \_ GROUP.**
+Stili dei controlli. Questo valore può essere una combinazione dello stile della classe del pulsante **BS \_ CHECKBOX** e degli stili **WS \_ TABSTOP** **e WS \_ GROUP.**
 
 Se non si specifica uno stile, lo stile predefinito è `BS_CHECKBOX | WS_TABSTOP` .
 
 </dd> </dl>
 
-Per altre informazioni sulla sintassi generale di un'istruzione di controllo, vedere [Parametri di controllo comuni](common-control-parameters.md).
+Per altre informazioni sulla sintassi generale di un'istruzione di controllo, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 ## <a name="examples"></a>Esempio
 
-In questo esempio viene definito un controllo casella di controllo con etichetta Corsivo:
+Questo esempio definisce un controllo casella di controllo con etichetta Corsivo:
 
 ``` syntax
 CHECKBOX "Italic", 3, 10, 10, 40, 10
@@ -61,7 +61,7 @@ CHECKBOX "Italic", 3, 10, 10, 40, 10
 
 <dl> <dt>
 
-[**AUTOCHECKBOX**](autocheckbox-control.md)
+[**CASELLA DI CONTROLLO AUTOMATICA**](autocheckbox-control.md)
 </dt> <dt>
 
 [**AUTO3STATE**](auto3state-control.md)

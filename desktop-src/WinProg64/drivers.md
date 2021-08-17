@@ -1,25 +1,25 @@
 ---
-title: Driver (Guida per programmatori per Windows a 64 bit)
-description: La versione a 64 bit di Windows è progettata per consentire agli sviluppatori di usare un'unica base di codice sorgente per le applicazioni a 32 bit e 64 bit. In larga misura, questo vale anche per i driver Windows a 32 bit e a 64 bit.
+title: Driver (Guida per programmatori per la versione a 64 bit Windows)
+description: La versione a 64 bit di Windows è progettata per consentire agli sviluppatori di usare una singola base di codice sorgente per le applicazioni a 32 bit e a 64 bit. In gran parte, questo vale anche per i driver a 32 bit e a 64 bit Windows driver.
 ms.assetid: 85d789c9-91dd-4cdc-a10b-c38a455fc940
 keywords:
-- driver programmazione Windows a 64 bit
+- driver a 64 bit Windows programmazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6843a4efbb68652bf269c819c3a11ba102521318
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 3cda928bbfc8c7f83e3aeac0bacbaea1e1a46214d9c0785d4675a3042b87fa1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104340212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132854"
 ---
-# <a name="drivers-programming-guide-for-64-bit-windows"></a>Driver (Guida per programmatori per Windows a 64 bit)
+# <a name="drivers-programming-guide-for-64-bit-windows"></a>Driver (Guida per programmatori per la versione a 64 bit Windows)
 
-La versione a 64 bit di Windows è progettata per consentire agli sviluppatori di usare un'unica base di codice sorgente per le applicazioni a 32 bit e 64 bit. In larga misura, questo vale anche per i driver Windows a 32 bit e a 64 bit.
+La versione a 64 bit di Windows è progettata per consentire agli sviluppatori di usare una singola base di codice sorgente per le applicazioni a 32 bit e a 64 bit. In gran parte, questo vale anche per i driver a 32 bit e a 64 bit Windows driver.
 
-Tuttavia, i driver a 32 bit non possono essere eseguiti su Windows a 64 bit e devono essere trasportati. Per le applicazioni in modalità utente, Windows a 64 bit include WOW64, che consente l'esecuzione di applicazioni Windows a 32 bit (con alcune perdite di prestazioni) sui sistemi che eseguono Windows a 64 bit. Non esiste alcun livello di conversione equivalente per i driver.
+Tuttavia, i driver a 32 bit non possono essere eseguiti in Windows a 64 bit e devono essere portati. Per le applicazioni in modalità utente, il Windows a 64 bit include WOW64, che consente alle applicazioni Windows a 32 bit di essere eseguite (con una certa perdita di prestazioni) nei sistemi che eseguono applicazioni Windows a 64 bit. Non esiste alcun livello di conversione equivalente per i driver.
 
-Per informazioni sul porting dei driver in Windows a 64 bit, vedere [problemi relativi a 64 bit](https://msdn.microsoft.com/library/aa489627.aspx) in Windows Driver Kit (WDK).
+Per informazioni sulla portabilità dei driver in Windows a 64 bit, vedere [64-Bit Issues](https://msdn.microsoft.com/library/aa489627.aspx) (Problemi a 64 bit) in Windows Driver Kit (WDK).
 
  
 

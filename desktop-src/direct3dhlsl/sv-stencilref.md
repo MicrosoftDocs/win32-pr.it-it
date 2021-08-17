@@ -1,6 +1,6 @@
 ---
 title: SV_StencilRef
-description: SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
+description: SV \_ StencilRef rappresenta il valore di riferimento pixel shader stencil corrente.
 ms.assetid: 0E27BF04-9DA0-4D6D-BD50-07553F80590E
 keywords:
 - SV_StencilRef HLSL
@@ -21,7 +21,7 @@ ms.locfileid: "118789323"
 ---
 # <a name="sv_stencilref"></a>SV \_ StencilRef
 
-SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
+SV \_ StencilRef rappresenta il valore di riferimento pixel shader stencil corrente.
 
 ## <a name="type"></a>Tipo
 
@@ -37,7 +37,7 @@ SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader
 
 ## <a name="remarks"></a>Commenti
 
-La specifica del valore di riferimento dello shader pixel shader è disponibile sia in D3D11.3 che in D3D12. Fare riferimento a:
+La specifica del valore di riferimento dello shader nel pixel shader è disponibile sia in D3D11.3 che in D3D12. Fare riferimento a:
 
 -   [Valore di riferimento dello stencil specificato dello shader D3D11.3](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
 -   [Valore di riferimento dello stencil specificato dello shader D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)

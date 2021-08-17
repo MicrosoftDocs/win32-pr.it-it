@@ -4,38 +4,38 @@ description: StorAHCI sostituisce MSAHCI
 ms.assetid: 9C6FAFA7-A6B3-4D3A-94EE-B53626DBF183
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7a41a9b113ba33c35e3a1a1c4b2ea5dad3054c8
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 6affffe41dd00c009ebb7bebf508dac1b63bec673c17783f594d22969822e542
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "106300572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932141"
 ---
 # <a name="storahci-replaces-msahci"></a>StorAHCI sostituisce MSAHCI
 
 ## <a name="platforms"></a>Piattaforme
 
-**Client** -Windows 8  
+**Client** : Windows 8  
 **Server** : Windows Server 2012  
 
 
 ## <a name="description"></a>Descrizione
 
-StorAHCI, un Storport miniport, supporta i controller AHCI (Advanced Host Controller Interface) SATA (Serial Advanced Technology Attachment) in Windows e sostituisce MSAHCI, un miniport ATAport.
+StorAHCI, un miniport Storport, supporta controller ADVANCED Host Controller Interface (AHCI) SATA (Serial Advanced Technology Attachment) in Windows e sostituisce MSAHCI, un miniport ATAport.
 
 ## <a name="manifestation"></a>Manifestazione
 
-Non devono essere apportate modifiche alle funzionalità e alle prestazioni. Questo driver supporta tutti gli stessi dispositivi supportati da MSAHCI.
+Non devono essere presenti modifiche nelle funzionalità o nelle prestazioni. questo driver supporta tutti gli stessi dispositivi supportati da MSAHCI.
 
 Questa modifica è trasparente per l'utente.
 
 ## <a name="mitigation"></a>Strategia di riduzione del rischio
 
-Aggiornare tutte le utilità e gli script basati sui binding ATAport. Non fare affidamento sul nome dell'unità. Usare invece il rilevamento del disco standard.
+Aggiornare le utilità e gli script che si basano sulle associazioni ATAport. Non basarsi sul nome dell'unità. Usare invece il rilevamento dei dischi standard.
 
- 
+ 
 
- 
+ 
 
 
 

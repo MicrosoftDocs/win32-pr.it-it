@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo CimInstance. SetCimSessionComputerName (String)'
+description: 'Altre informazioni su: Metodo CimInstance.SetCimSessionComputerName (String)'
 title: Metodo CimInstance.SetCimSessionComputerName (Microsoft.Management.Infrastructure)
 TOCTitle: CimInstance.SetCimSessionComputerName method (Microsoft.Management.Infrastructure)
 ms:assetid: M:Microsoft.Management.Infrastructure.CimInstance.SetCimSessionComputerName(System.String)
@@ -23,19 +23,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: b9f4cd9d308617a2369eaa542705e4ad7f854fa4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3f3c3cbe93710f5f9a796463539ad754c1f2e50ce5524c90a5f639021e716bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131113"
 ---
-# <a name="ciminstancesetcimsessioncomputername-method-string"></a>Metodo CimInstance. SetCimSessionComputerName (String)
+# <a name="ciminstancesetcimsessioncomputername-method-string"></a>Metodo CimInstance.SetCimSessionComputerName (String)
 
 Imposta il nome del computer utilizzato per la sessione CIM.
 
-**Spazio dei nomi:**   [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958\(v=vs.85\))  
-**Assembly:**  Microsoft. Management. Infrastructure (in Microsoft.Management.Infrastructure.dll)  
+**Spazio dei nomi:**   [Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958\(v=vs.85\))  
+**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,11 +66,11 @@ Public Sub SetCimSessionComputerName (
 #### <a name="parameters"></a>Parametri
 
   - computerName  
-    Tipo: [System. String](/dotnet/api/system.string?view=netframework-4.8)
+    Tipo: [System.String](/dotnet/api/system.string?view=netframework-4.8)
     
-    Nome del computer utilizzato per la sessione CIM. **null** se l'istanza corrente è solo lato client o se l'istanza è stata recuperata da localhost.
+    Nome del computer utilizzato per la sessione CIM. **null** se l'istanza corrente è solo sul lato client o se l'istanza è stata recuperata da localhost.
 
 ## <a name="see-also"></a>Vedi anche
 
 [Classe CimInstance](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832336\(v=vs.85\))  
-[Spazio dei nomi Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958\(v=vs.85\))
+[Spazio dei nomi Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958\(v=vs.85\))

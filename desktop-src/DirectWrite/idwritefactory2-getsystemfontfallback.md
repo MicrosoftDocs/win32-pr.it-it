@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteFactory2 GetSystemFontFallback
-description: Crea un oggetto di fallback del tipo di carattere dall'elenco di fallback dei tipi di carattere di sistema.
+description: Crea un oggetto di fallback dei tipi di carattere dall'elenco di fallback dei tipi di carattere di sistema.
 ms.assetid: 7F2BDB39-2CB4-4DB7-BBBA-74B0C07E7420
 keywords:
 - Metodo GetSystemFontFallback Direct Write
 - Metodo GetSystemFontFallback Direct Write, interfaccia IDWriteFactory2
-- Interfaccia IDWriteFactory2 Direct Write, metodo GetSystemFontFallback
+- Interfaccia IDWriteFactory2 Scrittura diretta, metodo GetSystemFontFallback
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "119329447"
 ---
 # <a name="idwritefactory2getsystemfontfallback-method"></a>Metodo IDWriteFactory2::GetSystemFontFallback
 
-Crea un oggetto di fallback del tipo di carattere dall'elenco di fallback dei tipi di carattere di sistema.
+Crea un oggetto di fallback dei tipi di carattere dall'elenco di fallback dei tipi di carattere di sistema.
 
 ## <a name="syntax"></a>Sintassi
 

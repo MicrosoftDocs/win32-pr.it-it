@@ -1,7 +1,7 @@
 ---
-description: Descrive una patch di ordine superiore triangolare.
+description: Descrive una patch triangolare di ordine elevato.
 ms.assetid: 3f97120b-3b32-4f95-8614-7b263ff330db
-title: Struttura D3DTRIPATCH_INFO (D3D9Types. h)
+title: D3DTRIPATCH_INFO struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b910d38025c44d6157a76aa3e3425ba46d628787
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c20a846d13cd45bb8a1629fca0e958d3042aacf148c24b0633dd19fb5462bd66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850116"
 ---
-# <a name="d3dtripatch_info-structure"></a>Struttura delle informazioni di D3DTRIPATCH \_
+# <a name="d3dtripatch_info-structure"></a>Struttura D3DTRIPATCH \_ INFO
 
-Descrive una patch di ordine superiore triangolare.
+Descrive una patch triangolare di ordine elevato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,18 +45,18 @@ typedef struct D3DTRIPATCH_INFO {
 **StartVertexOffset**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset del vertice iniziale, in numero di vertici.
+Offset iniziale dei vertici, in numero di vertici.
 
 </dd> <dt>
 
 **NumVertices**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -71,7 +71,7 @@ Tipo: **[ **D3DBASISTYPE**](./d3dbasistype.md)**
 
 </dd> <dd>
 
-Membro del tipo enumerato [**D3DBASISTYPE**](./d3dbasistype.md) , che definisce il tipo di base per la patch di ordine superiore triangolare. L'unico valore valido per questo membro è D3DBASIS \_ Bezier.
+Membro del [**tipo enumerato D3DBASISTYPE,**](./d3dbasistype.md) che definisce il tipo di base per la patch triangolare di ordine elevato. L'unico valore valido per questo membro è D3DBASIS \_ BEZIER.
 
 </dd> <dt>
 
@@ -82,30 +82,30 @@ Tipo: **[ **D3DDEGREETYPE**](./d3ddegreetype.md)**
 
 </dd> <dd>
 
-Membro del tipo enumerato [**D3DDEGREETYPE**](./d3ddegreetype.md) , che definisce il tipo di grado per la patch di ordine superiore triangolare.
+Membro del [**tipo enumerato D3DDEGREETYPE,**](./d3ddegreetype.md) che definisce il tipo di grado per la patch triangolare di ordine alto.
 
 
 
 | Valore                | Numero di vertici |
 |----------------------|--------------------|
-| \_Cubi D3DDEGREE     | 10                 |
-| D3DDEGREE \_ lineare    | 3                  |
-| D3DDEGREE \_ quadratico | N/D                |
-| D3DDEGREE \_ quinte   | 21                 |
+| CUBO D3DDEGREE \_     | 10                 |
+| LINEARE D3DDEGREE \_    | 3                  |
+| QUADRATICA D3DDEGREE \_ | N/A                |
+| D3DDEGREE \_ QUINTIC   | 21                 |
 
 
 
  
 
-N/A: non disponibile. Non supportata.
+N/D: non disponibile. Non supportata.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il diagramma seguente, ad esempio, identifica i numeri di ordine e di segmento dei vertici per una patch del triangolo di Bézier cubica. L'ordine dei vertici determina i numeri di segmento usati da [**DrawTriPatch**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawtripatch). L'offset è il numero di byte al primo vertice della patch del triangolo nel buffer dei vertici.
+Ad esempio, il diagramma seguente identifica l'ordine dei vertici e i numeri di segmento per un triangolo di Bézier cubico. L'ordine dei vertici determina i numeri di segmento usati [**da DrawTriPatch.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawtripatch) L'offset è il numero di byte al primo vertice della patch del triangolo nel vertex buffer.
 
-![diagramma di una patch di ordine superiore triangolare con nove vertici](images/hop-tripatch-info.png)
+![diagramma di una patch triangolare di alto ordine con nove vertici](images/hop-tripatch-info.png)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,7 +113,7 @@ Il diagramma seguente, ad esempio, identifica i numeri di ordine e di segmento d
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

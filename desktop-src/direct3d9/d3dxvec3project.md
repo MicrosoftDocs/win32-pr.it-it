@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXVec3Project (D3dx9math.h): proietta un vettore 3D dallo spazio dell'oggetto allo spazio dello schermo."
+description: 'Funzione D3DXVec3Project (D3dx9math.h): proietta un vettore 3D dallo spazio oggetto allo spazio dello schermo.'
 ms.assetid: b012771d-052f-4bf9-b39c-387d8a63fa59
 title: Funzione D3DXVec3Project (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a5a9abcb54c883d74bde831570b9df0b40fedfae
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bb0d7b962dd4595ec9246c036d4ff9e459e062f366b6e62f46cce1a5a3ebab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803813"
 ---
 # <a name="d3dxvec3project-function-d3dx9mathh"></a>Funzione D3DXVec3Project (D3dx9math.h)
 
-Proietta un vettore 3D dallo spazio dell'oggetto nello spazio dello schermo.
+Proietta un vettore 3D dallo spazio oggetto allo spazio dello schermo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,7 +68,7 @@ Puntatore alla struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 Tipo: **const [**D3DVIEWPORT9**](d3dviewport9.md) \***
 
-Puntatore a [**una struttura D3DVIEWPORT9**](d3dviewport9.md) che rappresenta il viewport.
+Puntatore a [**una struttura D3DVIEWPORT9,**](d3dviewport9.md) che rappresenta il viewport.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a [**una struttura D3DVIEWPORT9**](d3dviewport9.md) che rappresenta il
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di proiezione.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice di proiezione.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la mat
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
 
 </dd> <dt>
 

@@ -1,25 +1,25 @@
 ---
-title: Installazione del carattere
-description: Installazione del carattere
+title: Installazione del tuo carattere
+description: Installazione del tuo carattere
 ms.assetid: 8e1414e7-d315-4fa5-8803-2c0147a5fb54
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4bb2cbae099e4789a26e51177fe87b7c4a4b60
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 62966b83095997c3f07450f9f05c0ddea615dfa2977965ada8215596852d721b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105127"
 ---
-# <a name="installing-your-character"></a>Installazione del carattere
+# <a name="installing-your-character"></a>Installazione del tuo carattere
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Per visualizzare il carattere nella raccolta di assistenti, installarlo nella cartella Microsoft \\ Office \\ Actors all'interno della cartella di dati dell'applicazione dell'utente. La cartella Application Data si trova nella directory Windows o nella directory profili utente all'interno della directory di Windows. Ad esempio, in Windows 2000, è possibile installare il carattere in "C: \\ Documents and Settings \\ nomediaccesso \\ Application Data \\ Microsoft \\ Office \\ Actors".
+Per visualizzare il carattere nella raccolta di assistenti, installarlo nella cartella Microsoft Office Actors all'interno della cartella \\ \\ Application Data dell'utente. La cartella Dati applicazione è disponibile nella directory Windows o nella directory Profili utente all'interno della directory Windows. Ad esempio, in Windows 2000 è possibile installare il carattere in "C: \\ Documents and Impostazioni \\ YourLoginName \\ Application Data Microsoft Office \\ \\ \\ Actors".
 
- 
+ 
 
- 
+ 
 
 
 

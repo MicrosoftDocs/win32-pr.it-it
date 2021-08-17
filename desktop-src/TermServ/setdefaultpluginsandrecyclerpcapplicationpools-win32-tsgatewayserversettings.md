@@ -1,12 +1,12 @@
 ---
-title: Metodo SetDefaultPluginsAndRecycleRpcApplicationPools della classe Win32_TSGatewayServerSettings
-description: Imposta i plug-in di autenticazione e autorizzazione correnti per il server Gateway Desktop remoto di Desktop remoto e ricicla i pool di applicazioni RPC in IIS.
+title: Metodo SetDefaultPluginsAndRecycleRpcApplicationPools della Win32_TSGatewayServerSettings predefinita
+description: Imposta i plug-in di autenticazione e autorizzazione correnti per il server Gateway Desktop remoto e ricicla i pool di applicazioni RPC in IIS.
 ms.assetid: 1eac9e42-e533-4020-b2b6-571063f18c3c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetDefaultPluginsAndRecycleRpcApplicationPools
-- Metodo SetDefaultPluginsAndRecycleRpcApplicationPools Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo SetDefaultPluginsAndRecycleRpcApplicationPools
+- Metodo SetDefaultPluginsAndRecycleRpcApplicationPools Servizi Desktop remoto
+- Metodo SetDefaultPluginsAndRecycleRpcApplicationPools Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto metodo , SetDefaultPluginsAndRecycleRpcApplicationPools
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b9ead29e987b68ec3f041010be5dde64d8a2b54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61272f6abe62b719667668d60ecdb7ae97c5da717893acd3b89413012c7612d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137994"
 ---
-# <a name="setdefaultpluginsandrecyclerpcapplicationpools-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetDefaultPluginsAndRecycleRpcApplicationPools della \_ classe TSGatewayServerSettings Win32
+# <a name="setdefaultpluginsandrecyclerpcapplicationpools-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetDefaultPluginsAndRecycleRpcApplicationPools della classe \_ Win32 TSGatewayServerSettings
 
-Imposta i plug-in di autenticazione e autorizzazione correnti per il server Gateway Desktop remoto di Desktop remoto e ricicla i pool di applicazioni RPC in IIS.
+Imposta i plug-in di autenticazione e autorizzazione correnti per il server Gateway Desktop remoto e ricicla i pool di applicazioni RPC in IIS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Commenti
 
 La chiamata a questo metodo comporta la disconnessione di tutte le connessioni esistenti.
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -73,7 +73,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

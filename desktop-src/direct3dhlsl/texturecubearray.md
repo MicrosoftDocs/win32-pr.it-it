@@ -45,7 +45,7 @@ ms.locfileid: "118786169"
 | [**GatherCmpRed**](texturecubearray-gathercmpred.md)             | Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente rosso e un valore di confronto.<br/>   |
 | [**GatherGreen**](texturecubearray-gathergreen.md)               | Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                        |
 | [**GatherRed**](texturecubearray-gatherred.md)                   | Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                          |
-| [**Esempio**](texturecubearray-sample.md)                         | Campiota una trama.<br/>                                                                                                                                  |
+| [**Esempio**](texturecubearray-sample.md)                         | Esempi di una trama.<br/>                                                                                                                                  |
 | [**SampleBias**](texturecubearray-samplebias.md)                 | Campionamento di una trama, dopo l'applicazione del valore di distorsione al livello mipmap.<br/>                                                                               |
 | [**SampleCmp**](texturecubearray-samplecmp.md)                   | Esempi di una trama, usando un valore di confronto per rifiutare gli esempi.<br/>                                                                                      |
 | [**SampleCmpLevelZero**](texturecubearray-samplecmplevelzero.md) | Esempi di una trama (solo livello mipmap 0), usando un valore di confronto per rifiutare i campioni.<br/>                                                                |
@@ -58,7 +58,7 @@ ms.locfileid: "118786169"
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="minimum-shader-model"></a>Modello di shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questo oggetto è supportato nei modelli shader seguenti.
 
@@ -66,7 +66,7 @@ Questo oggetto è supportato nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
