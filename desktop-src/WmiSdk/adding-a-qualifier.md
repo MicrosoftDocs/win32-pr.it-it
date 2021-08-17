@@ -28,21 +28,21 @@ class MyDerivedClass : MyClass
 };
 ```
 
-I qualificatori possono essere suddivisi in qualificatori standard, qualificatori CIM e qualificatori univoci:
+I qualificatori possono essere divisi in qualificatori standard, qualificatori CIM e qualificatori univoci:
 
 -   Qualificatore standard
 
-    Un qualificatore standard è un qualificatore definito da WMI e comunemente usato nel codice MOF. Ad esempio, i [**qualificatori Dynamic**](dynamic-qualifier.md) [**e Read**](standard-qualifiers.md) sono entrambi qualificatori standard. Per altre informazioni, vedere [Qualificatori WMI](wmi-qualifiers.md).
+    Un qualificatore standard è un qualificatore definito da WMI e comunemente usato nel codice MOF. Ad esempio, i [**qualificatori Dinamici**](dynamic-qualifier.md) [**e**](standard-qualifiers.md) Lettura sono entrambi qualificatori standard. Per altre informazioni, vedere [Qualificatori WMI.](wmi-qualifiers.md)
 
 -   Qualificatore CIM
 
-    Un qualificatore CIM è un qualificatore incluso nella specifica CIM. Anche se si usano qualificatori CIM nel codice MOF, i qualificatori standard sono progettati in modo specifico tenendo presente WMI. Per altre informazioni, vedere la specifica [CIM DMTF.](https://www.dmtf.org/spec/cims.html/)
+    Un qualificatore CIM è un qualificatore incluso nella specifica CIM. Anche se si usano qualificatori CIM nel codice MOF, i qualificatori standard sono progettati specificamente tenendo presente WMI. Per altre informazioni, vedere la specifica [CIM](https://www.dmtf.org/spec/cims.html/)DMTF.
 
 -   Qualificatore univoco
 
-    Un qualificatore univoco è un qualificatore definito in modo specifico per una nuova classe da un provider di classi. Ad esempio, il [**qualificatore Units**](standard-qualifiers.md) è un qualificatore non standard specifico del provider. È possibile creare qualificatori personalizzati da usare con il provider. Per altre informazioni sulla creazione di un provider, vedere [Sviluppo di un provider WMI](developing-a-wmi-provider.md).
+    Un qualificatore univoco è un qualificatore definito in modo specifico per una nuova classe da un provider di classi. Ad esempio, il [**qualificatore Units**](standard-qualifiers.md) è un qualificatore non standard specifico del provider. È possibile creare qualificatori personalizzati da usare con il provider. Per altre informazioni sulla creazione di un provider, vedere [Sviluppo di un provider WMI.](developing-a-wmi-provider.md)
 
-Indipendentemente dal qualificatore, il processo principale da eseguire è l'uso del qualificatore nel codice MOF. Per altre informazioni, vedere [Applicazione di un qualificatore](applying-a-qualifier.md). È possibile descrivere ulteriormente un qualificatore con una descrizione del qualificatore. Un qualificatore contiene altre informazioni sul modo in cui un provider deve usare un qualificatore. Per altre informazioni, vedere [Descrizione di un qualificatore con un qualificatore Flavor.](describing-a-qualifier-with-a-qualifier-flavor.md)
+Indipendentemente dal qualificatore, il processo principale da eseguire è l'uso del qualificatore nel codice MOF. Per altre informazioni, vedere [Applicazione di un qualificatore.](applying-a-qualifier.md) È possibile descrivere ulteriormente un qualificatore con una descrizione qualificatore. Un qualificatore contiene altre informazioni su come un provider deve usare un qualificatore. Per altre informazioni, vedere [Descrizione di un qualificatore con un qualificatore Flavor.](describing-a-qualifier-with-a-qualifier-flavor.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

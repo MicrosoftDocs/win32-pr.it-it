@@ -44,7 +44,7 @@ WQL supporta i tipi di query seguenti:
     Le query di dati vengono usate per recuperare le istanze di classe e le associazioni dati. Si tratta del tipo di query più comunemente usato negli script e nelle applicazioni WMI. Per altre informazioni sulla sintassi delle query di dati, vedere [Richiesta dei dati dell'istanza della classe](requesting-class-instance-data.md). Per altre informazioni sulle associazioni, vedere [Dichiarazione di una classe di associazione](declaring-an-association-class.md).
 
     > [!Note]  
-    > WQL non supporta query di tipi di dati di matrice.
+    > WQL non supporta le query di tipi di dati di matrice.
 
      
 
@@ -63,7 +63,7 @@ WQL supporta i tipi di query seguenti:
 
 -   Query di eventi
 
-    I consumer usano query di eventi per registrarsi per ricevere notifiche di eventi. I provider di eventi usano query di eventi per la registrazione per supportare uno o più eventi. Per altre informazioni sulle query di evento, vedere [Ricezione di notifiche degli eventi.](receiving-event-notifications.md)
+    I consumer usano query di eventi per registrarsi per ricevere notifiche di eventi. I provider di eventi usano query di eventi per la registrazione per supportare uno o più eventi. Per altre informazioni sulle query di evento, vedere [Ricezione di notifiche degli eventi](receiving-event-notifications.md).
 
     La query di evento di esempio seguente eseguita da un consumer di eventi temporaneo richiede una notifica quando viene creata una nuova istanza di una classe derivata da [**Win32 \_ NTLogEvent.**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent)
 

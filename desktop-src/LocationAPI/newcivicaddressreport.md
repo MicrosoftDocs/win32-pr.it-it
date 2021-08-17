@@ -1,5 +1,5 @@
 ---
-description: Si verifica quando viene generato un nuovo report degli indirizzi civici.
+description: Si verifica quando viene generato un nuovo report di indirizzi civici.
 ms.assetid: a8df870e-6744-4e8a-a103-56b446da135f
 title: Evento NewCivicAddressReport
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118386739"
 
 \[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
-Si verifica quando viene generato un nuovo report degli indirizzi civici.
+Si verifica quando viene generato un nuovo report di indirizzi civici.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -62,7 +62,7 @@ I GUID PATTERNID che rappresentano i pattern di controllo nella [**funzione UiaL
 | GUID modello SpreadsheetItem \_ \_   |
 | GUID modello SynchronizedInput \_ \_ |
 | \_GUID modello \_ stili            |
-| \_GUID del modello di \_ tabella             |
+| \_GUID modello di \_ tabella             |
 | GUID modello TableItem \_ \_         |
 | GUID modello TextChild \_ \_         |
 | \_GUID modello di \_ testo              |
@@ -142,32 +142,32 @@ I GUID EVENTID che rappresentano gli eventi Automazione interfaccia utente Micro
 | GUID evento AutomationFocusChanged \_ \_                          |
 | GUID evento AutomationPropertyChanged \_ \_                       |
 | Trascinare \_ il \_ GUID dell'evento DragCancel \_                                |
-| Trascinare \_ il \_ GUID dell'evento DragComplete \_                              |
+| Trascinare \_ il GUID dell'evento DragComplete \_ \_                              |
 | Trascinare \_ il \_ GUID dell'evento DragStart \_                                 |
 | GUID evento \_ DropTarget DragEnter \_ \_                           |
 | GUID evento \_ DropTarget DragLeave \_ \_                           |
-| GUID evento \_ dropTarget \_ eliminato \_                             |
+| \_DROPTarget Dropped Event GUID (GUID evento \_ \_ dropTarget eliminato)                             |
 | GUID evento HostedFragmentRootsInvalidated \_ \_                  |
 | GUID evento InputDiscarded \_ \_                                  |
 | GUID evento InputReachedOtherElement \_ \_                        |
 | GUID evento InputReachedTarget \_ \_                              |
-| GUID \_ \_ dell'evento \_ richiamato                                 |
+| Invoke \_ Invoked \_ Event GUID (GUID evento \_ richiamato)                                 |
 | GUID evento LayoutInvalidated \_ \_                               |
 | GUID evento LiveRegionChanged \_ \_                               |
 | GUID evento MenuClosed \_ \_                                      |
 | GUID evento MenuModeEnd \_ \_                                     |
 | GUID evento MenuModeStart \_ \_                                   |
-| GUID evento \_ MenuOpened \_                                      |
-| GUID \_ dell'evento Selection InvalidatedEvent \_ \_                     |
-| GUID evento \_ SelectionItem ElementAddedToSelectionEvent \_ \_     |
+| GUID evento MenuOpened \_ \_                                      |
+| \_GUID evento InvalidatedEvent \_ di \_ selezione                     |
+| GUID evento SelectionItem \_ ElementAddedToSelectionEvent \_ \_     |
 | GUID evento \_ SelectionItem ElementRemovedFromSelectionEvent \_ \_ |
 | GUID evento \_ SelectionItem ElementSelectedEvent \_ \_             |
 | GUID evento StructureChanged \_ \_                                |
 | GUID evento SystemAlert \_ \_                                     |
 | \_GUID dell'evento TextChangedEvent \_ \_                          |
-| \_GUID dell'evento Text TextSelectionChangedEvent \_ \_                 |
+| \_TEXT TextSelectionChangedEvent Event GUID (GUID evento TextSelectionChangedEvent) \_ \_                 |
 | GUID evento ToolTipClosed \_ \_                                   |
-| GUID \_ evento WindowOpened \_ \_                            |
+| \_GUID evento WindowOpened \_ \_                            |
 | GUID evento ToolTipOpened \_ \_                                   |
 | \_GUID evento WindowClosed \_ \_                            |
 
@@ -186,45 +186,45 @@ I GUID PROPERTYID che rappresentano Automazione interfaccia utente proprietà ne
 | GUID della proprietà AcceleratorKey \_ \_                      |
 | GUID della proprietà AccessKey \_ \_                           |
 | \_GUID della proprietà AnnotationTypeId \_ \_        |
-| \_GUID della proprietà AnnotationTypeName \_ \_ dell'annotazione      |
-| \_GUID proprietà autore \_ \_ annotazione                  |
-| \_GUID della proprietà DateTime \_ \_ dell'annotazione                |
-| \_GUID proprietà destinazione \_ \_ annotazione                  |
+| Annotation \_ AnnotationTypeName \_ Property \_ GUID      |
+| GUID proprietà \_ autore \_ \_ annotazioni                  |
+| GUID della \_ proprietà DateTime \_ \_ dell'annotazione                |
+| GUID della \_ proprietà di \_ destinazione \_ dell'annotazione                  |
 | GUID della proprietà AriaProperties \_ \_                      |
 | GUID della proprietà AriaRole \_ \_                            |
 | GUID della proprietà AutomationId \_ \_                        |
 | GUID della proprietà BoundingRectangle \_ \_                   |
-| GUID della proprietà ClassName \_ \_                           |
+| GUID della \_ proprietà ClassName \_                           |
 | GUID della proprietà ClickablePoint \_ \_                      |
 | GUID della proprietà ControllerFor \_ \_                       |
 | GUID della proprietà ControlType \_ \_                         |
 | \_GUID proprietà impostazioni \_ cultura                             |
-| Guid della proprietà DescribedBy \_ \_                         |
+| GUID \_ proprietà DescribedBy \_                         |
 | \_GUID della proprietà DockPosition \_ \_                  |
 | Trascinare \_ il GUID della proprietà DropEffect \_ \_                    |
 | Trascinare \_ il GUID della proprietà DropEffects \_ \_                   |
 | Trascinare \_ il \_ \_ GUID della proprietà GrabbedItems                  |
 | Trascinare \_ il GUID della proprietà IsGrabbed \_ \_                     |
-| GUID della \_ proprietà DropTargetEffect \_ \_        |
-| GUID della proprietà \_ DropTarget DropTargetEffects \_ \_       |
+| GUID della \_ proprietà DropTargetEffect dropTargetEffect \_ \_        |
+| GUID della \_ proprietà DropTarget DropTargetEffects \_ \_       |
 | GUID della proprietà ExpandCollapse \_ ExpandCollapseState \_ \_ |
 | GUID della proprietà FlowsTo \_ \_                             |
 | GUID della proprietà FrameworkId \_ \_                         |
 | \_GUID della proprietà Grid ColumnCount \_ \_                   |
 | \_GUID della proprietà Grid RowCount \_ \_                      |
 | GUID proprietà colonna GridItem \_ \_ \_                    |
-| GUID della proprietà \_ GridItem ColumnSpan \_ \_                |
-| GUID della \_ proprietà padre \_ gridItem \_                    |
-| GUID proprietà \_ riga GridItem \_ \_                       |
-| GUID della proprietà \_ GridItem RowSpan \_ \_                   |
+| GUID della \_ proprietà ColumnSpan \_ gridItem \_                |
+| GUID della \_ proprietà padre GridItem \_ \_                    |
+| GUID della proprietà \_ GridItem \_ Row \_                       |
+| GUID della \_ proprietà RowSpan \_ gridItem \_                   |
 | GUID della proprietà HasKeyboardFocus \_ \_                    |
-| GUID della \_ proprietà HelpText \_                            |
-| GUID della proprietà IsAnnotationPatternAvailable \_ \_        |
+| GUID della proprietà HelpText \_ \_                            |
+| GUID proprietà IsAnnotationPatternAvailable \_ \_        |
 | GUID della proprietà IsContentElement \_ \_                    |
 | GUID della proprietà IsControlElement \_ \_                    |
 | GUID della proprietà IsDataValidForForm \_ \_                  |
 | GUID della proprietà IsDockPatternAvailable \_ \_              |
-| GUID della proprietà IsDragPatternAvailable \_ \_              |
+| GUID proprietà IsDragPatternAvailable \_ \_              |
 | GUID della proprietà IsDropTargetPatternAvailable \_ \_        |
 | GUID della proprietà IsEnabled \_ \_                           |
 | GUID della proprietà IsExpandCollapsePatternAvailable \_ \_    |
@@ -233,7 +233,7 @@ I GUID PROPERTYID che rappresentano Automazione interfaccia utente proprietà ne
 | GUID della proprietà IsInvokePatternAvailable \_ \_            |
 | GUID della proprietà IsItemContainerPatternAvailable \_ \_     |
 | GUID della proprietà IsKeyboardFocusable \_ \_                 |
-| GUID della proprietà IsLegacyIAccessiblePatternAvailable \_ \_ |
+| GUID proprietà IsLegacyIAccessiblePatternAvailable \_ \_ |
 | GUID della proprietà IsMultipleViewPatternAvailable \_ \_      |
 | GUID della proprietà IsObjectModelPatternAvailable \_ \_       |
 | GUID della proprietà IsOffscreen \_ \_                         |
@@ -244,7 +244,7 @@ I GUID PROPERTYID che rappresentano Automazione interfaccia utente proprietà ne
 | GUID della proprietà IsScrollPatternAvailable \_ \_            |
 | GUID della proprietà IsSelectionItemPatternAvailable \_ \_     |
 | GUID della proprietà IsSelectionPatternAvailable \_ \_         |
-| GUID della proprietà IsSpreadsheetPatternAvailable \_ \_       |
+| GUID proprietà IsSpreadsheetPatternAvailable \_ \_       |
 | GUID della proprietà IsSpreadsheetItemPatternAvailable \_ \_   |
 | GUID della proprietà IsStylesPatternAvailable \_ \_            |
 | GUID della proprietà IsSynchronizedInputPatternAvailable \_ \_ |
@@ -272,11 +272,11 @@ I GUID PROPERTYID che rappresentano Automazione interfaccia utente proprietà ne
 | GUID della proprietà \_ Di selezione LegacyIAccessible \_ \_        |
 | GUID della proprietà di stato LegacyIAccessible \_ \_ \_            |
 | GUID proprietà valore LegacyIAccessible \_ \_ \_            |
-| GUID della proprietà LiveSetting \_ \_                         |
+| GUID della \_ proprietà LiveSetting \_                         |
 | GUID della proprietà LocalizedControlType \_ \_                |
 | GUID della \_ proprietà CurrentView di MultipleView \_ \_           |
 | GUID della \_ proprietà SupportedViews di MultipleView \_ \_        |
-| \_GUID della proprietà \_ Name                                |
+| GUID \_ della proprietà \_ Name                                |
 | GUID della proprietà NewNativeWindowHandle \_ \_               |
 | GUID della proprietà OptimizeForVisualContent \_ \_            |
 | \_GUID della proprietà Orientation \_                         |
@@ -304,7 +304,7 @@ I GUID PROPERTYID che rappresentano Automazione interfaccia utente proprietà ne
 | GUID della proprietà \_ AnnotationTypes \_ di SpreadsheetItem \_    |
 | GUID proprietà formula SpreadsheetItem \_ \_ \_            |
 | \_GUID della proprietà Styles ExtendedProperties \_ \_          |
-| \_GUID della proprietà FillColor degli \_ \_ stili                   |
+| GUID \_ della proprietà FillColor degli \_ \_ stili                   |
 | \_GUID della proprietà FillPatternColor degli \_ \_ stili            |
 | \_GUID della proprietà FillPatternStyle degli \_ \_ stili            |
 | \_GUID proprietà forma \_ \_ stili                       |
@@ -355,7 +355,7 @@ I GUID TEXTATTRIBUTEID che rappresentano gli attributi di testo nella [**funzion
 | \_GUID \_ dell'attributo delle impostazioni cultura del \_ testo                 |
 | \_GUID dell'attributo FontName \_ del \_ testo                |
 | \_GUID dell'attributo FontSize \_ del \_ testo                |
-| \_GUID dell'attributo FontWeight \_ di \_ testo              |
+| \_GUID dell'attributo FontWeight \_ del \_ testo              |
 | \_GUID dell'attributo ForegroundColor \_ del \_ testo         |
 | \_GUID dell'attributo HorizontalTextAlignment \_ di \_ testo |
 | Guid \_ dell'attributo Text IndentationFirstLine \_ \_    |

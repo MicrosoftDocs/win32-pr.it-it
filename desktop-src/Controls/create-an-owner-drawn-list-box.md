@@ -1,41 +1,41 @@
 ---
-title: Come creare una casella di riepilogo Owner-Drawn
-description: In questo argomento viene illustrato come implementare una casella di riepilogo creata dal proprietario.
+title: Come creare una casella di riepilogo Owner-Drawn dati
+description: Questo argomento illustra come implementare una casella di riepilogo disegnata dal proprietario.
 ms.assetid: AE6E8943-DC03-4A21-9F0A-9C70C6BD7481
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b48a56ca188fb2c277cc822dcb9a343205a331
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 2994c88aec9f3c11ae856136103cf3327d53a2b72c5b2e8903e187ece01bf0f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413199"
 ---
-# <a name="how-to-create-an-owner-drawn-list-box"></a>Come creare una casella di riepilogo Owner-Drawn
+# <a name="how-to-create-an-owner-drawn-list-box"></a>Come creare una casella di riepilogo Owner-Drawn dati
 
-In questo argomento viene illustrato come implementare una casella di riepilogo creata dal proprietario.
+Questo argomento illustra come implementare una casella di riepilogo disegnata dal proprietario.
 
-Nell'esempio di codice C++ in questo argomento viene illustrato come creare una casella di riepilogo contenente cinque elementi creati dal proprietario: quattro implementazioni del disegno e un fork. Ogni elemento dell'elenco viene visualizzato come bitmap seguito dal nome dell'oggetto. Un pulsante richiede all'utente di selezionare un elemento che non è simile a quello degli altri. Se si sceglie il pulsante con il fork selezionato, viene visualizzato il valore "Your are right!" messaggio e chiude la finestra di dialogo. Se si sceglie il pulsante con qualsiasi altro elemento elenco selezionato, verrà visualizzato un messaggio di prova. il messaggio "Hello World!".
+L'esempio di codice C++ in questo argomento illustra come disegnare una casella di riepilogo contenente cinque elementi disegnati dal proprietario: quattro strumenti di disegno e un fork. Ogni elemento dell'elenco viene visualizzato come bitmap seguita dal nome dell'oggetto . Un pulsante richiede all'utente di selezionare un elemento che non è simile agli altri. Se si sceglie il pulsante con il fork selezionato, viene visualizzato il messaggio "You're right!" e chiude la finestra di dialogo. Se si sceglie il pulsante con qualsiasi altro elemento dell'elenco selezionato, viene visualizzato il messaggio "Riprova!" .
 
-Nella casella di riepilogo sono presenti gli stili [**\_ HASSTRINGS**](list-box-styles.md) [**lbs \_ OwnerDrawFixed**](list-box-styles.md) e lbs, oltre agli stili standard della casella di riepilogo.
+La casella di riepilogo include gli stili [**LBS \_ OWNERDRAWFIXED**](list-box-styles.md) e [**\_ LBS HASSTRINGS,**](list-box-styles.md) oltre agli stili standard della casella di riepilogo.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per inizializzare una casella di riepilogo creata dal proprietario, l'applicazione deve caricare la stringa di testo e la bitmap associata per ogni elemento della casella di riepilogo.
+Per inizializzare una casella di riepilogo disegnata dal proprietario, l'applicazione deve caricare la stringa di testo e la bitmap associata per ogni elemento della casella di riepilogo.
 
-Nell'esempio di codice C++ riportato di seguito, la routine della finestra di dialogo Inizializza la casella di riepilogo, ovvero l' **\_ elenco \_ IDC**, inviando il messaggio [**lb \_ ADDSTRING**](lb-addstring.md) per impostare il testo e quindi invia il messaggio [**lb \_ SETITEMDATA**](lb-setitemdata.md) per associare una bitmap a ogni elemento della casella di riepilogo. Il codice imposta inoltre l'altezza di ogni elemento della casella di riepilogo elaborando il messaggio [**WM \_ MeasureItem**](wm-measureitem.md) e disegna il testo e la bitmap per ogni elemento elaborando il messaggio [**WM \_ DrawItem**](wm-drawitem.md) .
+Nell'esempio di codice C++ seguente la procedura della finestra di dialogo inizializza la casella di riepilogo **IDC \_ LIST \_ STUFF** inviando il messaggio [**LB \_ ADDSTRING**](lb-addstring.md) per impostare il testo e quindi invia il messaggio [**\_ LB SETITEMDATA**](lb-setitemdata.md) per associare una bitmap a ogni elemento della casella di riepilogo. Il codice imposta anche l'altezza di ogni elemento della casella di riepilogo elaborando il messaggio [**WM \_ MEASUREITEM**](wm-measureitem.md) e disegna il testo e la bitmap per ogni elemento elaborando il [**messaggio WM \_ DRAWITEM.**](wm-drawitem.md)
 
 
 
@@ -268,13 +268,13 @@ INT_PTR CALLBACK DlgDrawProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Riferimento al controllo casella di riepilogo](bumper-list-box-list-box-control-reference.md)
+[Informazioni di riferimento sul controllo Casella di riepilogo](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Informazioni sulle caselle di riepilogo](about-list-boxes.md)
 </dt> <dt>
 
-[Uso di caselle di riepilogo](using-list-boxes.md)
+[Uso delle caselle di riepilogo](using-list-boxes.md)
 </dt> </dl>
 
  

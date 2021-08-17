@@ -1,12 +1,12 @@
 ---
-title: Informazioni di riferimento su MCIWnd
-description: Informazioni di riferimento su MCIWnd
+title: Riferimenti a MCIWnd
+description: Riferimenti a MCIWnd
 ms.assetid: 11fba6bb-17f1-4fbe-b148-4755a3c6216a
 keywords:
-- MCI (Media Control Interface), informazioni di riferimento su MCIWnd
-- classe finestra MCIWnd,riferimento
-- FINESTRA MCIWnd,riferimento
-- Informazioni di riferimento su MCIWnd, informazioni su
+- MCI (Media Control Interface),Informazioni di riferimento su MCIWnd
+- classe di finestra MCIWnd, riferimento
+- FINESTRA MCIWnd, informazioni di riferimento
+- Informazioni di riferimento su MCIWnd
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 03249d5e0f0a0f4fef8110d878021437f7aee667085a0720a86de77c8cbdfe49
@@ -16,9 +16,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118374362"
 ---
-# <a name="mciwnd-reference"></a>Informazioni di riferimento su MCIWnd
+# <a name="mciwnd-reference"></a>Riferimenti a MCIWnd
 
-In questa sezione vengono descritte le funzioni, i messaggi e le macro associate alla classe della finestra MCIWnd. Questi elementi sono raggruppati nel modo seguente.
+Questa sezione descrive le funzioni, i messaggi e le macro associati alla classe della finestra MCIWnd. Questi elementi sono raggruppati nel modo seguente.
 
 ## <a name="window-management"></a>Gestione finestre
 
@@ -83,7 +83,7 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 -   [**MCIWndSetVolume**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetvolume)
 -   [**MCIWndSetZoom**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetzoom)
 
-## <a name="image-and-palette-adjustments"></a>Regolazioni di immagini e tavolozze
+## <a name="image-and-palette-adjustments"></a>Regolazioni di immagini e tavolozza
 
 -   [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
 -   [**MCIWndGetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette)
@@ -144,7 +144,7 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 
 <dl> <dt>
 
-[Classe finestra MCIWnd](mciwnd-window-class.md)
+[Classe della finestra MCIWnd](mciwnd-window-class.md)
 </dt> </dl>
 
  

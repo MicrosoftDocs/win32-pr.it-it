@@ -62,11 +62,11 @@ Se gli indirizzi non sono uguali, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per la restituzione corretta della funzione **CompareFrameDestAddress,** il tipo di indirizzo di destinazione deve corrispondere al tipo di indirizzo specificato nel *parametro lpAddress.*
+Per la corretta restituzione della funzione **CompareFrameDestAddress,** il tipo di indirizzo di destinazione deve corrispondere al tipo di indirizzo specificato nel *parametro lpAddress.*
 
-Network Monitor altre due funzioni, [CompareFrameSourceAddress](compareframesourceaddress.md) e [CompareAddresses,](compareaddresses.md)che è possibile usare per confrontare gli indirizzi. La **funzione CompareFrameSourceAddress** confronta un determinato indirizzo con l'indirizzo di origine del frame e la **funzione CompareAddress** confronta due indirizzi specificati.
+Network Monitor offre altre due funzioni, [CompareFrameSourceAddress](compareframesourceaddress.md) e [CompareAddresses,](compareaddresses.md)che è possibile usare per confrontare gli indirizzi. La **funzione CompareFrameSourceAddress** confronta un determinato indirizzo con l'indirizzo di origine del frame e la **funzione CompareAddress** confronta due indirizzi specificati.
 
-[*Esperti*](e.md) e [*parser possono*](p.md) chiamare la **funzione CompareFrameDestAddress.**
+[*Esperti*](e.md) e [*parser*](p.md) possono chiamare la **funzione CompareFrameDestAddress.**
 
 ## <a name="requirements"></a>Requisiti
 

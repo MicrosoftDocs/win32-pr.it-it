@@ -3,7 +3,7 @@ title: LVM_GETGROUPINFO messaggio (Commctrl.h)
 description: Ottiene informazioni sui gruppi.
 ms.assetid: 72d84e0b-121e-473b-a34d-874234c598b6
 keywords:
-- LVM_GETGROUPINFO controlli Windows messaggio
+- LVM_GETGROUPINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -44,7 +44,7 @@ Restituisce l'ID del gruppo in caso di esito positivo oppure -1 in caso contrari
 Prima di tentare di recuperare l'intestazione per un gruppo, assicurarsi che il gruppo non abbia lo stile \_ LBGS NOHEADER.
 
 > [!Note]  
-> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 

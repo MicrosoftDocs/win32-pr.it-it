@@ -48,7 +48,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Per ridurre gli errori di troncamento, questa proprietà non usa la misura della frequenza fotogrammi standard dei fotogrammi al secondo (FPS). Questa proprietà misura invece la frequenza dei fotogrammi come fotogrammi per 1000 secondi (FPS moltiplicato per 1000). Ad esempio, [System.Video.FrameRate]() esprime una frequenza di fotogrammi di 29,97 FPS come valore intero di 29970.
+Per ridurre gli errori di troncamento, questa proprietà non usa la misura della frequenza dei fotogrammi standard dei fotogrammi al secondo (FPS). Questa proprietà misura invece la frequenza dei fotogrammi come fotogrammi per 1000 secondi (FPS moltiplicato per 1000). [System.Video.FrameRate,]() ad esempio, esprime una frequenza dei fotogrammi di 29,97 FPS come valore intero di 29970.
 
 I valori PKEY sono definiti in Propkey.h.
 
@@ -56,7 +56,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -86,7 +86,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

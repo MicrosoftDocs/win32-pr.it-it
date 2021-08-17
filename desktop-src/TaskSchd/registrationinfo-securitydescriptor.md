@@ -42,7 +42,7 @@ Descrittore di sicurezza associato all'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, il descrittore di sicurezza dell'attività viene specificato utilizzando [**l'elemento SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) dello schema Utilità di pianificazione sicurezza.
+Durante la lettura o la scrittura di codice XML per un'attività, il descrittore di sicurezza dell'attività viene specificato utilizzando l'elemento [**SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) dello schema Utilità di pianificazione sicurezza.
 
 ## <a name="requirements"></a>Requisiti
 

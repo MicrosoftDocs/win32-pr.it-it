@@ -30,7 +30,7 @@ Nella figura seguente viene illustrato il rendering di una teiera con ombreggiat
 
 Quando Direct3D esegue il rendering di un poligono usando l'ombreggiatura Gouraud, calcola un colore per ogni vertice usando i parametri normali e di illuminazione dei vertici. Quindi, interpola il colore sul viso dei poligoni L'interpolazione viene eseguita in modo lineare. Ad esempio, se il componente rosso del colore del vertice 1 è 0,8 e il componente rosso del vertice 2 è 0,4, usando la modalità di ombreggiatura Gouraud e il modello di colore RGB, il modulo di illuminazione Direct3D assegna un componente rosso di 0,6 al pixel al punto medio della linea tra questi vertici.
 
-La figura seguente illustra l'ombreggiatura di Gouraud. Questa teiera è costituita da molti poligoni piatte e triangolari. Tuttavia, l'ombreggiatura Gouraud rende la superficie dell'oggetto curva e uniforme.
+La figura seguente illustra l'ombreggiatura gouraud. Questa teiera è costituita da molti poligoni piatte e triangolari. Tuttavia, l'ombreggiatura Gouraud rende la superficie dell'oggetto curva e uniforme.
 
 ![illustrazione della teiera usando l'ombreggiatura gouraud](images/gourtea.png)
 

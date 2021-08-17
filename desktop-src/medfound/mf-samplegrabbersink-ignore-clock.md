@@ -1,5 +1,5 @@
 ---
-description: Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare i campioni.
+description: Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare gli esempi.
 ms.assetid: 780ec4a6-8e14-4b81-9d50-82b2850c70ae
 title: MF_SAMPLEGRABBERSINK_IGNORE_CLOCK attributo (Mfidl.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118474424"
 ---
 # <a name="mf_samplegrabbersink_ignore_clock-attribute"></a>Attributo MF \_ SAMPLEGRABBERSINK \_ IGNORE \_ CLOCK
 
-Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare i campioni.
+Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare gli esempi.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -27,14 +27,14 @@ Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare questo attributo nell'oggetto attivazione creato dalla [**funzione MFCreateSampleGrabberSinkActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) Impostare l'attributo prima di chiamare [**il metodo IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) sull'oggetto attivazione.
+È possibile impostare questo attributo sull'oggetto di attivazione creato dalla [**funzione MFCreateSampleGrabberSinkActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) Impostare l'attributo prima di chiamare il [**metodo IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) sull'oggetto di attivazione.
 
-Per impostazione predefinita, quando il sink sample-grabber riceve un esempio, attende fino all'ora di presentazione dell'esempio per richiamare il callback dell'applicazione. Se l'attributo MF SAMPLEGRABBERSINK IGNORE CLOCK è diverso da zero, il \_ \_ sink sample-grabber ignora il clock di presentazione e richiama il callback non appena riceve ogni \_ esempio.
+Per impostazione predefinita, quando il sink sample-grabber riceve un esempio, attende fino all'ora di presentazione dell'esempio per richiamare il callback dell'applicazione. Se l'attributo \_ MF SAMPLEGRABBERSINK IGNORE CLOCK è diverso da zero, il \_ sink sample-grabber ignora l'orologio di presentazione e richiama il callback non appena riceve \_ ogni esempio.
 
 Utilizzo consigliato:
 
--   Se si desidera elaborare gli esempi il più rapidamente possibile, impostare questo attributo su **TRUE.**
--   Se si desidera che le chiamate al metodo di callback siano sincronizzate con l'orologio, non impostare questo attributo o impostarlo su **FALSE.** È possibile ottenere campioni leggermente avanti rispetto all'orologio, pur rimanendo sincronizzati, impostando l'attributo [**MF \_ SAMPLEGRABBERSINK \_ SAMPLE TIME \_ \_ OFFSET.**](mf-samplegrabbersink-sample-time-offset-attribute.md)
+-   Per elaborare gli esempi il più rapidamente possibile, impostare questo attributo su **TRUE.**
+-   Se si desidera sincronizzare le chiamate al metodo di callback con l'orologio, non impostare questo attributo o impostarlo su **FALSE.** È possibile ottenere esempi leggermente in anticipo rispetto all'orologio, pur rimanendo sincronizzati, impostando l'attributo [**\_ SAMPLEGRABBERSINK \_ SAMPLE \_ TIME \_ OFFSET di MF SAMPLEGRABBERSINK.**](mf-samplegrabbersink-sample-time-offset-attribute.md)
 
 La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
@@ -54,7 +54,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Media Foundation attributi](media-foundation-attributes.md)

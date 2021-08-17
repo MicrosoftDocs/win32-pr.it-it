@@ -1,30 +1,30 @@
 ---
-description: In questo argomento viene descritto come inviare i dati di controllo della stampante direttamente alle stampanti che utilizzano i driver della stampante XPSDrv.
+description: In questo argomento viene descritto come inviare i dati di controllo della stampante direttamente alle stampanti che usano i driver della stampante XPSDrv.
 ms.assetid: 7e98e08a-d572-451d-befb-18fc86f0e505
-title: 'Procedura: inviare dati direttamente a una stampante XPS'
+title: 'Procedura: Inviare dati direttamente a una stampante XPS'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d78a8c36d6862860862059f9bbcc8db25e171b19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65fba87578f9257290123b737f2d1d8c3e48f57e6a628110a20a232ddb290ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470153"
 ---
-# <a name="how-to-send-data-directly-to-an-xps-printer"></a>Procedura: inviare dati direttamente a una stampante XPS
+# <a name="how-to-send-data-directly-to-an-xps-printer"></a>Procedura: Inviare dati direttamente a una stampante XPS
 
-In questo argomento viene descritto come inviare i dati di controllo della stampante direttamente alle stampanti che utilizzano i driver della stampante XPSDrv.
+In questo argomento viene descritto come inviare i dati di controllo della stampante direttamente alle stampanti che usano i driver della stampante XPSDrv.
 
-Nei passaggi seguenti viene descritto come inviare dati direttamente a una stampante. Questi passaggi sono illustrati anche nell'esempio di codice seguente.
+I passaggi seguenti descrivono come inviare i dati direttamente a una stampante. Questi passaggi sono illustrati anche nell'esempio di codice seguente.
 
 1.  Chiamare [**OpenPrinter**](openprinter.md) per ottenere un handle per la stampante.
-2.  Inizializzare una struttura [**DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con i dati della stampante.
-3.  Chiamare [**StartDocPrinter**](startdocprinter.md) per indicare che l'applicazione invierà i dati del documento alla stampante.
+2.  Inizializzare [**una struttura DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con i dati della stampante.
+3.  Chiamare [**StartDocPrinter per**](startdocprinter.md) indicare che l'applicazione invierà i dati del documento alla stampante.
 4.  Chiamare [**WritePrinter**](writeprinter.md) per inviare i dati.
 5.  Chiamare [**EndDocPrinter**](enddocprinter.md) per indicare che tutti i dati per questo documento sono stati inviati.
 6.  Chiamare [**ClosePrinter**](closeprinter.md) per rilasciare le risorse.
 
-Inviare i dati di controllo della stampante direttamente alle stampanti che utilizzano i driver della stampante XPSDrv.
+Inviare i dati di controllo della stampante direttamente alle stampanti che usano i driver della stampante XPSDrv.
 
 
 ```C++

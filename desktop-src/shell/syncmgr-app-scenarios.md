@@ -21,7 +21,7 @@ ms.locfileid: "118451877"
 Le applicazioni e i servizi che possono usare Gestione sincronizzazione includono quanto segue:
 
 -   Microsoft Office applicazioni che devono preparare i file per l'uso offline.
--   Memorizzazione nella cache lato client che consente di memorizzare i file nella cache locale.
+-   Memorizzazione nella cache lato client che consente di memorizzare nella cache i file in locale.
 -   Browser in grado di memorizzare nella cache le pagine HTML in locale.
 -   Programmi di posta elettronica in grado di memorizzare nella cache i messaggi di posta elettronica in locale.
 -   Database in grado di archiviare informazioni in locale.

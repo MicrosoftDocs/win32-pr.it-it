@@ -36,7 +36,7 @@ Questo attributo è un numero **di** lettura/scrittura (long) contenente uno dei
 | Valore | Descrizione                              |
 |-------|------------------------------------------|
 | 0     | Gli altoparlanti correnti sono cuffia.     |
-| 1     | I parlanti correnti hanno dimensioni normali. |
+| 1     | Gli altoparlanti correnti hanno dimensioni normali. |
 | 2     | Gli altoparlanti correnti sono di grandi dimensioni.          |
 
 

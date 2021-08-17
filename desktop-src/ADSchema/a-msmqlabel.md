@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Label
-description: Sostituito da MSMQ-label-es.
+title: MSMQ-Label attributo
+description: Sostituito da MSMQ-Label-Ex.
 ms.assetid: d225fc59-8130-4a5f-98ed-0b1f83198e97
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Label attribute
+- MSMQ-Label schema AD dell'attributo
 - Schema AD dell'attributo mSMQLabel
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b24d71e42849e30cfc34ed058d7453f77eb7753
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a3e9bb3bbf70a82b99c1f1549617fa4aa67ae7563c3eaee3e6dda268096fbb30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013851"
 ---
-# <a name="msmq-label-attribute"></a>Attributo MSMQ-Label
+# <a name="msmq-label-attribute"></a>MSMQ-Label attributo
 
-Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
+Sostituito [**da MSMQ-Label-Ex**](a-msmqlabelex.md).
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MSMQ-Label                                  |
-| LDAP-Display-Name | mSMQLabel                                   |
+| Ldap-Display-Name | mSMQLabel                                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.922                      |
-| System-ID-GUID    | 9a0dc325-c100-11d1-bbc5-0080c76670c0        |
+| System-Id-Guid    | 9a0dc325-c100-11d1-nette5-0080c76670c0        |
 | Sintassi            | [**String(Teletex)**](s-string-teletex.md) |
 
 
@@ -58,15 +58,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Sostituito da [**MSMQ-label-es**](a-msmqlabelex.md).
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 

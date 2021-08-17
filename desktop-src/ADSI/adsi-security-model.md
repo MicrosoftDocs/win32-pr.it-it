@@ -4,15 +4,15 @@ description: ADSI fornisce interfacce per applicare sia l'autenticazione utente 
 ms.assetid: 6c3ffc05-92d1-45df-9b29-11f9a7cebda2
 ms.tgt_platform: multiple
 keywords:
-- sicurezza ADSI, ADSI ADSI, uso, sicurezza
+- security ADSI ,ADSI ADSI ,using,security
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 886d7f174df48a6d78e546d0987a3f5743a6a2b5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eac7667bb0ab8a30be0e95e90a2c752b3a1bc076d16bd29007875025a22a9639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018171"
 ---
 # <a name="adsi-security-model"></a>Modello di sicurezza ADSI
 
@@ -21,11 +21,11 @@ ADSI fornisce interfacce per applicare sia l'autenticazione utente che il contro
 In questa sezione vengono descritti gli argomenti seguenti.
 
 -   [autenticazione](authentication.md)
--   [Descrittori di sicurezza su file e chiavi del registro di sistema](security-descriptors-on-files-and-registry-keys.md)
+-   [Descrittori di sicurezza per file e chiavi del Registro di sistema](security-descriptors-on-files-and-registry-keys.md)
 
- 
+ 
 
- 
+ 
 
 
 

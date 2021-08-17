@@ -4,12 +4,12 @@ ms.assetid: e6e5326c-d143-44ad-a8fa-7d2cb3ef0058
 title: Informazioni di riferimento sul messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8625a49405125bd274575fc49ea5aa764978bb16
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 70c424bff2265e57f7f2ee0c7cfdc0c1c4ac7bd13bf60e3bfb6085d49820fc64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118437056"
 ---
 # <a name="message-reference"></a>Informazioni di riferimento sul messaggio
 

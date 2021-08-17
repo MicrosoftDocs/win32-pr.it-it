@@ -1,10 +1,10 @@
 ---
-title: Messaggio CQPM_GETPARAMETERS (cmnquery. h)
-description: Inviato alla funzione di callback CQPageProc di una pagina di estensione del modulo di query per recuperare i dati relativi alla query eseguita dalla pagina.
+title: CQPM_GETPARAMETERS messaggio (Cmnquery.h)
+description: Inviato alla funzione di callback CQPageProc di una pagina di estensione del modulo di query per recuperare i dati sulla query eseguita dalla pagina.
 ms.assetid: 6b94b318-8356-4554-99fe-f82364325e6e
 ms.tgt_platform: multiple
 keywords:
-- Messaggio CQPM_GETPARAMETERS Active Directory
+- CQPM_GETPARAMETERS message Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aac8961e2299e4a8a69ead9426698e8c932346e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64713c79fc2c1b72f1962363f1330ecd794ad804f0ab084b66c134c66133cd82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021232"
 ---
-# <a name="cqpm_getparameters-message"></a>\_Messaggio GETparameters CQPM
+# <a name="cqpm_getparameters-message"></a>Messaggio CQPM \_ GETPARAMETERS
 
-Il messaggio **CQPM \_ GetParameters** viene inviato alla funzione di callback [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) di una pagina di estensione del modulo di query per recuperare i dati relativi alla query eseguita dalla pagina.
+Il **messaggio CQPM \_ GETPARAMETERS** viene inviato alla funzione di callback [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) di una pagina di estensione del modulo di query per recuperare i dati sulla query eseguita dalla pagina.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,13 +40,13 @@ Non usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a un valore [**LPDSQUERYPARAMS**](/windows/desktop/api/Dsquery/ns-dsquery-dsqueryparams) che riceve i dati relativi alla query eseguita dalla pagina. Se questo parametro è **null**, la struttura **DSQUERYPARAMS** deve essere allocata dall'estensione utilizzando la funzione [**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) .
+Puntatore a [**un valore LPDSQUERYPARAMS**](/windows/desktop/api/Dsquery/ns-dsquery-dsqueryparams) che riceve i dati sulla query eseguita dalla pagina. Se questo parametro è **NULL,** la **struttura DSQUERYPARAMS** deve essere allocata dall'estensione usando la [**funzione CoTaskMemAlloc.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **\_ OK** se l'esito è positivo o un codice di errore **HRESULT** standard.
+Restituisce **S OK in \_ caso** di esito positivo o un codice **di errore HRESULT** standard in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Restituisce **\_ OK** se l'esito è positivo o un codice di errore **HRESULT** s
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Restituisce **\_ OK** se l'esito è positivo o un codice di errore **HRESULT** s
 [**DSQUERYPARAMS**](/windows/desktop/api/Dsquery/ns-dsquery-dsqueryparams)
 </dt> <dt>
 
-[**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)
+[**Cotaskmemalloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)
 </dt> </dl>
 
  

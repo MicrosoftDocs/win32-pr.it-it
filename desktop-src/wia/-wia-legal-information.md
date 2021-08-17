@@ -4,12 +4,12 @@ ms.assetid: 343c8f3c-3172-4e38-b276-082199b2d48b
 title: Informazioni legali (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb8023ce16eed495f977f5703d14c9457179fbbc
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 8fa7e6ff958651678bd9fe1f43fdad32998c7afc7d3080ac91ee01c53b5e4cdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118034922"
 ---
 # <a name="legal-information-wia"></a>Informazioni legali (WIA)
 

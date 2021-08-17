@@ -1,9 +1,9 @@
 ---
 title: WIM_OPEN messaggio (Mmsystem.h)
-description: Il messaggio WIM OPEN viene inviato a una funzione di callback di input audio-waveform all'apertura di un dispositivo di \_ input audio-forma d'onda.
+description: Il messaggio WIM OPEN viene inviato a una funzione di callback di input waveform-audio quando viene aperto un dispositivo di \_ input waveform-audio.
 ms.assetid: de18e6b2-ea28-46d9-812c-e6dac49838ee
 keywords:
-- WIM_OPEN di Windows multimediali
+- WIM_OPEN messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118369754"
 ---
 # <a name="wim_open-message"></a>Messaggio WIM \_ OPEN
 
-Il **messaggio WIM \_ OPEN viene** inviato a una funzione di callback di input audio-waveform all'apertura di un dispositivo di input audio-forma d'onda.
+Il **messaggio WIM \_ OPEN** viene inviato a una funzione di callback di input waveform-audio quando viene aperto un dispositivo di input waveform-audio.
 
 
 ```C++
@@ -75,7 +75,7 @@ Questo messaggio non restituisce un valore.
 [Waveform Audio](waveform-audio.md)
 </dt> <dt>
 
-[Messaggi Waveform](waveform-messages.md)
+[Messaggi waveform](waveform-messages.md)
 </dt> </dl>
 
  

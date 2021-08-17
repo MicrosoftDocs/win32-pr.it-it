@@ -1,5 +1,5 @@
 ---
-description: Copia il file o la directory di paging logica specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.
+description: Copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.
 ms.assetid: e1ff3e91-dc30-4849-b80a-8838b527ad63
 ms.tgt_platform: multiple
 title: Metodo Copy della classe Win32_PageFile
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bde9e0b5cf9b8ab88b5efa1c6aae58a9b8a54cfb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f078e040a356cd575dfc222c9c13548737d8846ad9c211ff1dedc334faee1cb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419675"
 ---
-# <a name="copy-method-of-the-win32_pagefile-class"></a>Metodo Copy della \_ classe pagefile Win32
+# <a name="copy-method-of-the-win32_pagefile-class"></a>Metodo Copy della classe PageFile Win32 \_
 
-Il metodo **Copy** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
+Il **metodo Copia** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,18 +42,18 @@ uint32 Copy(
 
 <dl> <dt>
 
-*Nome file* \[ in\]
+*FileName* \[ Pollici\]
 </dt> <dd>
 
 Nome completo della copia del file (o directory).
 
-Esempio: c: \\ temp \\ NewDirectory
+Esempio: c: \\ temp \\ newdirectory
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -130,7 +130,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Pagefile Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

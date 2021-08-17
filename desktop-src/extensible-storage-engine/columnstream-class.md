@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe ColumnStream'
+description: Altre informazioni sulla classe ColumnStream
 title: Classe ColumnStream
 TOCTitle: ColumnStream class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ColumnStream
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eea249347acd18ec71f03fcdc82b8a2baa1da9ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec768d48a03216a7cad72b5125c9444437f78a7738c2986235174fb5eac24623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083874"
 ---
 # <a name="columnstream-class"></a>Classe ColumnStream
 
-Questa classe fornisce un'interfaccia di flusso a una colonna con valore Long, ovvero una colonna di tipo [LongBinary](./jet-coltyp-enumeration.md) o [LONGTEXT](./jet-coltyp-enumeration.md).
+Questa classe fornisce un'interfaccia di flusso a una colonna con valore lungo, ad esempio una colonna di tipo [LongBinary](./jet-coltyp-enumeration.md) [o LongText.](./jet-coltyp-enumeration.md)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   [System.MarshalByRefObject](/dotnet/api/system.marshalbyrefobject)  
-    [System. IO. Stream](/dotnet/api/system.io.stream)  
-      Microsoft. ISAM. esent. Interop. ColumnStream  
+    [System.io.stream](/dotnet/api/system.io.stream)  
+      Microsoft.Isam.Esent.Interop.ColumnStream  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,6 +67,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di ColumnStream](./columnstream-members.md)
+[Membri ColumnStream](./columnstream-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

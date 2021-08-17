@@ -1,6 +1,6 @@
 ---
 title: Attributo RecordingTimeDay
-description: L'attributo RecordingTimeDay è la parte relativa al giorno della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+description: L'attributo RecordingTimeDay è la parte del giorno della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 ms.assetid: fb2d9eb6-ea06-492c-839b-27f6bd3fd986
 keywords:
 - Attributo RecordingTimeDay Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f6f4bbd80625df7b3a548cc6ad89707a5e595ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff864607ceced7942ccb759caab6be2bbef299c647f4b749056e172876d08a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746580"
 ---
 # <a name="recordingtimeday-attribute"></a>Attributo RecordingTimeDay
 
-L'attributo **RecordingTimeDay** è la parte relativa al giorno della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+**L'attributo RecordingTimeDay** è la parte del giorno della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **RecordingTimeDay** è la parte relativa al giorno della registrazi
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: GetDimensions'
-description: 'Ottiene la lunghezza del buffer. | Funzione RWByteAddressBuffer:: GetDimensions'
+title: Funzione RWByteAddressBuffer::GetDimensions
+description: Ottiene la lunghezza del buffer. | Funzione RWByteAddressBuffer::GetDimensions
 ms.assetid: 7d78aa0d-75b8-43d5-85d9-0a6fb04ae64f
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0d22b6f655802d77a92611fe8699a405aa323873
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2271f563251cfdb9c6f2a2174c91dc8c271c7354a2b10b9b2e7e55cb4af09d0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725146"
 ---
-# <a name="rwbyteaddressbuffergetdimensions-function"></a>Funzione RWByteAddressBuffer:: GetDimensions
+# <a name="rwbyteaddressbuffergetdimensions-function"></a>Funzione RWByteAddressBuffer::GetDimensions
 
 Ottiene la lunghezza del buffer.
 
@@ -36,7 +36,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Dim* \[ out\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -55,7 +55,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -70,7 +70,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

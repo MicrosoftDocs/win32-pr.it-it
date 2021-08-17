@@ -1,9 +1,9 @@
 ---
 title: Elemento NetworkProfileName (settingsType)
-description: Contiene il nome di un profilo di rete. Il servizio Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento RunOnlyIfNetworkAvailable è impostato su true. Il nome viene usato a scopo di visualizzazione.
+description: Contiene il nome di un profilo di rete. Il Utilità di pianificazione verifica la disponibilità di questa rete quando l'elemento RunOnlyIfNetworkAvailable è impostato su True. Il nome viene usato a scopo di visualizzazione.
 ms.assetid: f02dc75c-6c48-4a42-8263-13d9704b993c
 keywords:
-- Utilità di pianificazione elemento NetworkProfileName
+- Elemento NetworkProfileName Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76a1e89b1d40a422f10512583563e9b1ac56c06f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 464c8b8f23dfeed6ea7c3412c3eeec07f20e5a8a7fcea662b4a16dfac7cb3fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758491"
 ---
 # <a name="networkprofilename-settingstype-element"></a>Elemento NetworkProfileName (settingsType)
 
-Contiene il nome di un profilo di rete. Il servizio Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **true**. Il nome viene usato a scopo di visualizzazione.
+Contiene il nome di un profilo di rete. Il Utilità di pianificazione verifica la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **True.** Il nome viene usato a scopo di visualizzazione.
 
 ``` syntax
 <xs:element name="NetworkProfileName"
@@ -31,7 +31,7 @@ Contiene il nome di un profilo di rete. Il servizio Utilità di pianificazione c
  />
 ```
 
-L'elemento **NetworkProfileName** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento NetworkProfileName** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -49,8 +49,8 @@ L'elemento **NetworkProfileName** è definito dal tipo complesso [**settingsType
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

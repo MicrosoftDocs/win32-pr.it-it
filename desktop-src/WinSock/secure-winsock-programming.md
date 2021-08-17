@@ -16,9 +16,9 @@ ms.locfileid: "118559719"
 Di seguito è riportata una guida per proteggere la Windows Sockets. È progettato per offrire una conoscenza della sicurezza Winsock e delle opzioni disponibili per lo sviluppatore di applicazioni di rete sicura.
 
 -   [Uso di SO \_ REUSEADDR e SO \_ EXCLUSIVEADDRUSE](using-so-reuseaddr-and-so-exclusiveaddruse.md)
--   [Winsock Secure Socket Extensions](winsock-secure-socket-extensions.md)
+-   [Estensioni secure socket Winsock](winsock-secure-socket-extensions.md)
 
-Le comunicazioni che usano socket possono anche essere crittografate usando gli standard SSL/TLS usando il canale sicuro, noto anche come tecnologia Schannel. Schannel è un provider di supporto per la sicurezza (SSP) che contiene un set di protocolli di sicurezza che forniscono l'autenticazione delle identità e comunicazioni private protette tramite crittografia. Schannel viene usato principalmente per le applicazioni Internet che richiedono comunicazioni Hypertext Transfer Protocol (HTTP). Per altre informazioni, vedere [Canale sicuro](../secauthn/secure-channel.md).
+Le comunicazioni che usano i socket possono anche essere crittografate usando gli standard SSL/TLS usando il canale sicuro, noto anche come tecnologia Schannel. Schannel è un provider di supporto per la sicurezza (SSP) che contiene un set di protocolli di sicurezza che forniscono l'autenticazione delle identità e la comunicazione privata protetta tramite crittografia. Schannel viene usato principalmente per le applicazioni Internet che richiedono comunicazioni Hypertext Transfer Protocol (HTTP). Per altre informazioni, vedere [Canale sicuro](../secauthn/secure-channel.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

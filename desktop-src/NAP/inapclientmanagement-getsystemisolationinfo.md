@@ -3,8 +3,8 @@ title: Metodo INapClientManagement GetSystemIsolationInfo (NapManagement.h)
 description: Recupera informazioni sullo stato di isolamento di NapClient.
 ms.assetid: e1f69e66-71ca-402e-9c94-8af159d00b21
 keywords:
-- Metodo GetSystemIsolationInfo NAP
-- Metodo GetSystemIsolationInfo NAP, interfaccia INapClientManagement
+- Metodo GetSystemIsolationInfo nap
+- Metodo GetSystemIsolationInfo NAP , interfaccia INapClientManagement
 - Interfaccia INapClientManagement NAP, metodo GetSystemIsolationInfo
 topic_type:
 - apiref
@@ -51,28 +51,28 @@ HRESULT GetSystemIsolationInfo(
 *isolationInfo* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un puntatore a una struttura [**IsolationInfo**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo) che contiene informazioni sullo stato di isolamento.
+Puntatore a un puntatore a una [**struttura IsolationInfo**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo) che contiene informazioni sullo stato di isolamento.
 
 </dd> <dt>
 
 *unknownConnections* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un flag che indica se una delle connessioni è in uno stato sconosciuto. In caso contrario, il flag viene impostato su **TRUE.** In caso contrario, il flag è **impostato su FALSE.**
+Puntatore a un flag che indica se una delle connessioni si trova in uno stato sconosciuto. In caso contrario, il flag viene impostato su **TRUE.** in caso contrario, il flag è impostato su **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un codice di stato HRESULT che include, a sua volta, uno degli elementi seguenti.
+Il metodo restituisce un codice di stato HRESULT che include, ma non solo, uno degli elementi seguenti.
 
 
 
 | Codice restituito                                                                                         | Descrizione                                                        |
 |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                | Operazione riuscita.<br/>                                   |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>      | Errore di autorizzazione, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>      | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 | <dl> <dt>**RPC \_ E \_ DISCONNESSO**</dt> </dl> | NapAgent non è in esecuzione.<br/>                            |
 
 
@@ -81,7 +81,7 @@ Il metodo restituisce un codice di stato HRESULT che include, a sua volta, uno d
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni di isolamento recuperate non riflettono gli stati sconosciuti.
+Le informazioni di isolamento recuperate non riflettono stati sconosciuti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Le informazioni di isolamento recuperate non riflettono gli stati sconosciuti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                               |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                         |
 | Intestazione<br/>                   | <dl> <dt>NapManagement.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |

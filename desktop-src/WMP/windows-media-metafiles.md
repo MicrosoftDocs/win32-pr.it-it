@@ -1,14 +1,14 @@
 ---
-title: Metafile di Windows Media
-description: Metafile di Windows Media
+title: Windows Metafile multimediali
+description: Windows Metafile multimediali
 ms.assetid: 77af7d15-52ac-496c-8037-51827adf0250
 keywords:
-- Metafile di Windows Media, informazioni
-- Windows Media Player, metafile
-- Windows Media Player, metafile di Windows Media
-- Metafile, informazioni
-- Windows Media, metafile
-- Playlist Windows Media Metafile, informazioni
+- Windows metafile multimediali, informazioni su
+- Windows Media Player,metafile
+- Windows Media Player,Windows metafile multimediali
+- metafile, informazioni
+- Windows Supporti, metafile
+- Windows playlist di metafile multimediali, informazioni
 - playlist, informazioni
 - playlist di metafile, informazioni
 ms.topic: article
@@ -18,20 +18,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 385b149e07e9d30df4e11a21f8e7aa4b05e06910
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e9060de5f33956dde0cf288a3125af2a89f97bb841faeda8e0638cd5ab29334a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116624"
 ---
-# <a name="windows-media-metafiles"></a>Metafile di Windows Media
+# <a name="windows-media-metafiles"></a>Windows Metafile multimediali
 
-Questo documento di riferimento illustra i metafile di Windows Media, che usano le estensioni di file. Wax,. wvx,. WMX e. asx. Contiene le sezioni Panoramica e guida alla programmazione e una sezione di riferimento completa sui tag dell'elemento metafile, i relativi attributi e valori e le condizioni speciali correlate a ogni elemento.
+Questo documento di riferimento Windows metafile multimediali, che usano le estensioni dei nomi di file con estensione .tutto, wvx, wmx e asx. Contiene informazioni generali e sezioni della guida per programmatori e una sezione di riferimento completa sui tag degli elementi metafile, i relativi attributi e valori e le condizioni speciali correlate a ogni elemento.
 
-Un metafile è un file che contiene informazioni su altri file. Un metafile può essere usato per elencare un gruppo di file di contenuto multimediale che devono essere riprodotti nell'ordine. Le playlist Windows Media Metafile, denominate semplicemente playlist in questo documento di riferimento, sono una delle funzionalità più potenti delle tecnologie Microsoft Windows Media. Le playlist consentono di controllare e personalizzare il contenuto multimediale. Ad esempio, con le playlist è possibile pianificare il contenuto per la riproduzione in successione o inserire clip pubblicitari o di interesse speciale in una presentazione. Un ulteriore vantaggio delle playlist è che, anziché riprodurre un flusso, arrestare, avviare il flusso successivo e quindi attendere il completamento del buffer, servizi Windows Media e Windows Media Player interagiscono per riprodurre i clip uno dopo l'altro con un tempo minimo di buffering o un'interruzione tra di essi.
+Un metafile è un file che contiene informazioni su altri file. Un metafile può essere usato per elencare un gruppo di file di contenuto multimediale che devono essere riprodotti in ordine. Windows Le playlist dei metafile multimediali, note semplicemente come playlist in questo documento di riferimento, sono una delle funzionalità più potenti di Microsoft Windows Media Technologies. Le playlist consentono di controllare e personalizzare il contenuto multimediale. Ad esempio, con le playlist è possibile pianificare il contenuto per la riproduzione in successione o inserire annunci pubblicitari o clip di interesse speciale in una presentazione. Un ulteriore vantaggio delle playlist è che, invece di riprodurre un flusso, arrestare, avviare il flusso successivo e quindi attendere il completamento del buffering, Servizi Windows Media e Windows Media Player lavorano insieme per riprodurre le clip una dopo l'altra con un tempo di memorizzazione nel buffer minimo o un'interruzione tra di esse.
 
-Le tecnologie Windows Media e altri prodotti Internet forniscono gli strumenti per comprendere i dati demografici degli utenti e personalizzare dinamicamente una trasmissione o un messaggio per singoli utenti.
+Windows Media Technologies e altri prodotti Internet offrono gli strumenti per comprendere i dati demografici degli utenti e personalizzare dinamicamente una trasmissione o un messaggio per i singoli utenti.
 
 Questo riferimento è suddiviso nelle sezioni seguenti.
 
@@ -39,24 +39,24 @@ Questo riferimento è suddiviso nelle sezioni seguenti.
 
 | Sezione                                                                  | Descrizione                                                                                                                                                                         |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Informazioni sui metafile di Windows Media](about-windows-media-metafiles.md)       | Introduce gli elementi metafile di Windows Media e ne illustra lo scopo.                                                                                                             |
-| [Guida ai metafile di Windows Media](windows-media-metafile-guide.md)         | Descrive i passaggi necessari per la creazione di metafile. Gli esempi illustrano come usare i tag di elemento per attività specifiche.                                                                 |
-| [Informazioni di riferimento sui metafile di Windows Media](windows-media-metafile-reference.md) | Vengono illustrati in dettaglio ogni elemento metafile, i relativi attributi e valori e le condizioni speciali correlate a ciascuna di esse. Vengono illustrate le estensioni dei nomi di file di metafile e l'utilizzo appropriato. |
+| [Informazioni Windows metafile multimediali](about-windows-media-metafiles.md)       | Introduce gli Windows metafile multimediali e ne illustra lo scopo.                                                                                                             |
+| [Windows Guida al metafile multimediale](windows-media-metafile-guide.md)         | Illustra in dettaglio i passaggi necessari per la creazione di metafile. Gli esempi illustrano come usare i tag degli elementi per attività specifiche.                                                                 |
+| [Windows Informazioni di riferimento sul metafile multimediale](windows-media-metafile-reference.md) | Illustra in dettaglio ogni elemento del metafile, i relativi attributi e valori e le condizioni speciali correlate a ognuno. Illustra le estensioni dei nomi di file metafile e il relativo uso corretto. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Windows Media Player SDK**](windows-media-player-sdk.md)
+[**Windows Media Player Sdk**](windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Proprietà Error Windows Remote Management
 - Proprietà Error Windows gestione remota , oggetto WSMan
-- Oggetto WSMan Windows gestione remota, proprietà Error
+- Oggetto WSMan Windows gestione remota , proprietà Error
 topic_type:
 - apiref
 api_name:

@@ -1,5 +1,5 @@
 ---
-description: Il metodo FixMediaTimes2 arrotonda i valori di ora specificati al limite del frame più vicino, come definito dalla frequenza fotogrammi di output. Questo metodo equivale a IAMTimelineSrc::FixMediaTimes, ma accetta valori REFTIME.
+description: Il metodo FixMediaTimes2 arrotonda i valori di tempo specificati al limite del frame più vicino, come definito dalla frequenza dei fotogrammi di output. Questo metodo è equivalente a IAMTimelineSrc::FixMediaTimes, ma accetta valori REFTIME.
 ms.assetid: c51172ea-b5d7-4a2e-ace2-85e6e671c1e9
 title: Metodo IAMTimelineSrc::FixMediaTimes2 (Qedit.h)
 ms.topic: reference
@@ -28,7 +28,7 @@ ms.locfileid: "118399621"
 
  
 
-Il metodo arrotonda i valori di tempo specificati al limite del frame più `FixMediaTimes2` vicino, come definito dalla frequenza fotogrammi di output. Questo metodo equivale a [**IAMTimelineSrc::FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), ma accetta [**valori REFTIME.**](reftime.md)
+Il `FixMediaTimes2` metodo arrotonda i valori di tempo specificati al limite del fotogramma più vicino, come definito dalla frequenza dei fotogrammi di output. Questo metodo è equivalente a [**IAMTimelineSrc::FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), ma accetta [**valori REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ Puntatore a una variabile che contiene l'ora di inizio, in secondi. Se la chiama
 *pStop* 
 </dt> <dd>
 
-Puntatore a una variabile che contiene il tempo di arresto, espresso in secondi. Se la chiamata ha esito positivo, questa variabile viene impostata sull'ora arrotondata.
+Puntatore a una variabile che contiene l'ora di arresto, in secondi. Se la chiamata ha esito positivo, questa variabile viene impostata sull'ora arrotondata.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

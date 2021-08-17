@@ -272,7 +272,7 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Bit di convalida utilizzati per indicare la validità dei campi successivi. Il valore 1 (0x1) indica che **l'evento \_ SMBIOS** è valido.
+Bit di convalida utilizzati per indicare la validità dei campi successivi. Il valore 1 (0x1) indica che **l'EVENTO \_ SMBIOS** è valido.
 
 Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 

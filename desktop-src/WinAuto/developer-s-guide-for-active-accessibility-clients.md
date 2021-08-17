@@ -22,7 +22,7 @@ Questa sezione è per gli sviluppatori client che usano Microsoft Active Accessi
 -   [Ricezione di errori per puntatori a interfaccia IAccessible](receiving-errors-for-iaccessible-interface-pointers.md)
 -   [Active Accessibility e Windows ridimensionamento dello schermo di Vista](active-accessibility-and-windows-vista-screen-scaling.md)
 
-Per informazioni sull'uso degli eventi in un'applicazione client, vedere [Eventi WinEvent e Active Accessibility](winevents-overview.md).
+Per informazioni sull'uso degli eventi in un'applicazione client, vedere [WinEvents e Active Accessibility](winevents-overview.md).
 
  
 

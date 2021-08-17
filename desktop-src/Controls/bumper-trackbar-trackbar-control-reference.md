@@ -16,9 +16,9 @@ ms.locfileid: "118414478"
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [Messaggi di controllo Trackbar](bumper-trackbar-control-reference-messages.md)
--   [Notifiche di controllo Trackbar](bumper-trackbar-control-reference-notifications.md)
--   [Strutture dei controlli Trackbar](trackbar-control-structures.md)
--   [Costanti di controllo Trackbar](bumper-trackbar-control-reference-constants.md)
+-   [Notifiche del controllo Trackbar](bumper-trackbar-control-reference-notifications.md)
+-   [Strutture di controllo Trackbar](trackbar-control-structures.md)
+-   [Costanti del controllo Trackbar](bumper-trackbar-control-reference-constants.md)
 
  
 

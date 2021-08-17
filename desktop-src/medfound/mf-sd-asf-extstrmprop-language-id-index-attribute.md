@@ -1,19 +1,19 @@
 ---
-description: Specifica la lingua utilizzata da un flusso in un file di formato Advanced Systems (ASF).
+description: Specifica la lingua usata da un flusso in un file ASF (Advanced Systems Format).
 ms.assetid: 834cac0a-0c84-49aa-baf2-32bae26e215b
-title: Attributo MF_SD_ASF_EXTSTRMPROP_LANGUAGE_ID_INDEX (Wmcontainer. h)
+title: MF_SD_ASF_EXTSTRMPROP_LANGUAGE_ID_INDEX attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afcf2388d2c0641aede4ff0eaccac9178207fb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87f77b53a4156cf21a23680618da010db781e0c7c75d7d4decb2f9e1136c5dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474069"
 ---
-# <a name="mf_sd_asf_extstrmprop_language_id_index-attribute"></a>\_Attributo di \_ \_ \_ \_ indice ID lingua \_ MF SD ASF EXTSTRMPROP
+# <a name="mf_sd_asf_extstrmprop_language_id_index-attribute"></a>Attributo INDEX \_ \_ DELL'ID LINGUA ASF \_ SD EXTSTRMPROP \_ \_ \_ MF
 
-Specifica la lingua utilizzata da un flusso in un file di formato Advanced Systems (ASF).
+Specifica la lingua usata da un flusso in un file ASF (Advanced Systems Format).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,13 +21,13 @@ Specifica la lingua utilizzata da un flusso in un file di formato Advanced Syste
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di flusso per il contenuto ASF. Il valore è un indice nell'elenco di lingue contenuto nell'attributo della lingua [**MF \_ PD \_ ASF \_**](mf-pd-asf-langlist-attribute.md) .
+Questo attributo si applica ai descrittori di flusso per il contenuto asf. Il valore è un indice nell'elenco di lingue contenuto nell'attributo [**\_ \_ \_ LANGLIST di MF PD ASF.**](mf-pd-asf-langlist-attribute.md)
 
-Questo attributo corrisponde al campo dell'indice ID lingua del flusso nell'oggetto proprietà del flusso esteso. Per ulteriori informazioni, vedere la specifica ASF.
+Questo attributo corrisponde al campo Stream Language ID Index nell'oggetto Extended Stream Properties. Per altre informazioni, vedere la specifica ASF.
 
-Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati ASF. L'applicazione può creare il descrittore del flusso per il flusso dal descrittore della presentazione chiamando [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex).
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati asf. L'applicazione può creare il descrittore di flusso per il flusso dal descrittore di presentazione chiamando [**IMFPresentationDescriptor::GetStreamDescriptorByIndex.**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex)
 
-È anche possibile ottenere il tag della lingua eseguendo una query sul descrittore di flusso per l'attributo del [**\_ \_ linguaggio MF SD**](mf-sd-language-attribute.md) .
+È anche possibile ottenere il tag di lingua tramite una query sul descrittore di flusso per [**l'attributo \_ MF SD \_ LANGUAGE.**](mf-sd-language-attribute.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -45,13 +45,13 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)
@@ -60,7 +60,7 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 [Attributi del descrittore di flusso](stream-descriptor-attributes.md)
 </dt> <dt>
 
-[Oggetto intestazione ASF](asf-file-structure.md)
+[Oggetto Intestazione ASF](asf-file-structure.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-title: Progetto personalizzato
-description: Il progetto personalizzato non è un controllo comune; si tratta di un servizio che molti controlli comuni forniscono.
+title: Disegno personalizzato
+description: Il disegno personalizzato non è un controllo comune. è un servizio fornito da molti controlli comuni.
 ms.assetid: vs|controls|~\controls\custdraw\custdraw.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5184d06dbb8e04185bf12a43c6c71dd96b933a6a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16271e915a942e21f3f3763237a25c37a8b934fc1a44a016bb7e3938491a3c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413179"
 ---
-# <a name="custom-draw"></a>Progetto personalizzato
+# <a name="custom-draw"></a>Disegno personalizzato
 
-Il progetto personalizzato non è un controllo comune; si tratta di un servizio che molti controlli comuni forniscono. Il servizio di personalizzazione personalizzato consente a un'applicazione una maggiore flessibilità nella personalizzazione dell'aspetto di un controllo. L'applicazione può sfruttare le notifiche di traccia personalizzate per modificare facilmente il tipo di carattere usato per visualizzare gli elementi o per tracciare manualmente un elemento senza dover eseguire un Owner Draw completo.
+Il disegno personalizzato non è un controllo comune. è un servizio fornito da molti controlli comuni. Il servizio di disegno personalizzato consente a un'applicazione una maggiore flessibilità nella personalizzazione dell'aspetto di un controllo. L'applicazione può sfruttare le notifiche di disegno personalizzate per modificare facilmente il tipo di carattere usato per visualizzare gli elementi o disegnare manualmente un elemento senza dover eseguire un disegno completo del proprietario.
 
-Questa sezione contiene informazioni sugli elementi di programmazione usati con il progetto personalizzato.
+Questa sezione contiene informazioni sugli elementi di programmazione usati con il disegno personalizzato.
 
 ## <a name="overviews"></a>Cenni preliminari
 
@@ -23,8 +23,8 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                                      | Contenuto                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Informazioni sul progetto personalizzato](about-custom-draw.md) | Questa sezione contiene informazioni generali sulla funzionalità di personalizzazione personalizzata e fornisce una panoramica concettuale del modo in cui un'applicazione può supportare il progetto personalizzato.<br/> |
-| [Uso di un progetto personalizzato](using-custom-draw.md) | Questa sezione contiene esempi che illustrano come implementare un progetto personalizzato. <br/>                                                                              |
+| [Informazioni sul disegno personalizzato](about-custom-draw.md) | Questa sezione contiene informazioni generali sulla funzionalità di disegno personalizzato e offre una panoramica concettuale del modo in cui un'applicazione può supportare il disegno personalizzato.<br/> |
+| [Uso del disegno personalizzato](using-custom-draw.md) | Questa sezione contiene esempi che illustrano come implementare il disegno personalizzato. <br/>                                                                              |
 
 
 
@@ -36,7 +36,7 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                               | Contenuto                                                                                                                                                                 |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [\_CUSTOMDRAW Nm](nm-customdraw.md) | Notifica alla finestra padre di un controllo informazioni sulle operazioni di disegno personalizzate. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) . <br/> |
+| [NM \_ CUSTOMDRAW](nm-customdraw.md) | Notifica alla finestra padre di un controllo le operazioni di disegno personalizzate. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md) <br/> |
 
 
 
@@ -48,7 +48,7 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                                | Contenuto                                                                                              |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) | Contiene informazioni specifiche di un codice di notifica [ \_ CUSTOMDRAW Nm](nm-customdraw.md) .<br/> |
+| [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) | Contiene informazioni specifiche di un [codice di notifica NM \_ CUSTOMDRAW.](nm-customdraw.md)<br/> |
 
 
 

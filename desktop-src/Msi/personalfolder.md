@@ -1,7 +1,7 @@
 ---
 description: Il programma di installazione imposta la proprietà PersonalFolder sul percorso completo della cartella Personale per l'utente corrente.
 ms.assetid: 89388341-6417-4b28-9608-3be30e816780
-title: Proprietà PersonalFolder
+title: PersonalFolder - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 98677df8e0dd2d5088a1e4309bcf6e56f7f648e832f99fbc2533d387211bf553
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118377512"
 ---
-# <a name="personalfolder-property"></a>Proprietà PersonalFolder
+# <a name="personalfolder-property"></a>PersonalFolder - proprietà
 
 Il programma di installazione imposta **la proprietà PersonalFolder** sul percorso completo della cartella Personale per l'utente corrente.
 
@@ -21,7 +21,7 @@ Il programma di installazione imposta **la proprietà PersonalFolder** sul perco
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni Windows service pack minimo richiesto da una versione Windows Windows [Installer,](windows-installer-portal.md) vedere l'Windows installer Run-Time requisiti minimi.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack minimo Windows richiesto da una versione Windows Installer.<br/> |
 
 
 

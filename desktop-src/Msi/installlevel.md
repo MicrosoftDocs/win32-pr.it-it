@@ -1,5 +1,5 @@
 ---
-description: La proprietà INSTALLLEVEL è il livello iniziale in cui le funzionalità vengono selezionate &\# 0034;ON&0034; per l'installazione per \# impostazione predefinita.
+description: La proprietà INSTALLLEVEL è il livello iniziale in cui le funzionalità vengono selezionate &\# 0034;ON&\# 0034; per impostazione predefinita.
 ms.assetid: 5051cc46-837a-4446-a54c-4bd4081a424c
 title: INSTALLLEVEL - proprietà
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "118629960"
 ---
 # <a name="installlevel-property"></a>INSTALLLEVEL - proprietà
 
-La **proprietà INSTALLLEVEL** è il livello iniziale in cui le funzionalità vengono selezionate "ON" per l'installazione per impostazione predefinita. Una funzionalità viene installata solo se il valore nel campo Livello della tabella [Funzionalità](feature-table.md) è minore o uguale al valore INSTALLLEVEL corrente. Il livello di installazione per qualsiasi installazione viene specificato dalla **proprietà INSTALLLEVEL** e può essere un integrale da 1 a 32.767. Per altre informazioni sui livelli di installazione, vedere [Tabella delle funzionalità](feature-table.md).
+La **proprietà INSTALLLEVEL** è il livello iniziale in cui le funzionalità vengono selezionate "ON" per l'installazione per impostazione predefinita. Una funzionalità viene installata solo se il valore nel campo Level della tabella [Feature](feature-table.md) è minore o uguale al valore INSTALLLEVEL corrente. Il livello di installazione per qualsiasi installazione viene specificato dalla **proprietà INSTALLLEVEL** e può essere un integrale da 1 a 32.767. Per altre informazioni sui livelli di installazione, vedere [Tabella delle funzionalità.](feature-table.md)
 
 ## <a name="default-value"></a>Valore predefinito
 
-Se non viene specificato alcun valore, il livello di installazione viene impostato su 1.
+Se non viene specificato alcun valore, il livello di installazione predefinito è 1.
 
 ## <a name="remarks"></a>Commenti
 
@@ -34,9 +34,9 @@ Il livello di installazione specificato dalla **proprietà INSTALLLEVEL** può e
 -   [**REINSTALL**](reinstall.md)
 -   [**Pubblicizzare**](advertise.md)
 
-Ad esempio, se si imposta ADDLOCAL=ALL, tutte le funzionalità vengono installate localmente indipendentemente dal valore della **proprietà INSTALLLEVEL.** Se il valore della colonna Level nella [tabella Feature](feature-table.md) è 0, tale funzionalità non viene installata e non viene visualizzata nell'interfaccia utente.
+Ad esempio, se si imposta ADDLOCAL=ALL, tutte le funzionalità vengono installate localmente indipendentemente dal valore **della proprietà INSTALLLEVEL.** Se il valore della colonna Level nella [tabella Feature](feature-table.md) è 0, tale funzionalità non viene installata e non viene visualizzata nell'interfaccia utente.
 
-Un amministratore può disabilitare in modo permanente una funzionalità applicando una trasformazione di personalizzazione che imposta 0 nella colonna Livello per tale funzionalità. L'applicazione della trasformazione di personalizzazione impedisce l'installazione e la visualizzazione della funzionalità anche se l'utente seleziona un'installazione completa tramite l'interfaccia utente o impostando ADDLOCAL su ALL nella riga di comando. Vedere [Un esempio di trasformazione di personalizzazione](a-customization-transform-example.md).
+Un amministratore può disabilitare definitivamente una funzionalità applicando una trasformazione di personalizzazione che imposta 0 nella colonna Livello per tale funzionalità. L'applicazione della trasformazione di personalizzazione impedisce l'installazione e la visualizzazione della funzionalità anche se l'utente seleziona un'installazione completa tramite l'interfaccia utente o impostando ADDLOCAL su ALL nella riga di comando. Vedere [un esempio di trasformazione di personalizzazione.](a-customization-transform-example.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Un amministratore può disabilitare in modo permanente una funzionalità applica
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo richiesto da una Windows installer, vedere i Windows Windows di installazione Run-Time requisiti minimi.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

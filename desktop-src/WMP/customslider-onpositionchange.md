@@ -1,9 +1,9 @@
 ---
-title: CUSTOMSLIDER. onPositionChange
-description: Il gestore dell'evento onPositionChange gestisce un evento che si verifica quando la posizione del dispositivo di scorrimento viene modificata in seguito alla selezione o al trascinamento dell'utente. | CUSTOMSLIDER. onPositionChange
+title: LETIDER.onPositionChange
+description: Il gestore dell'evento onPositionChange gestisce un evento che si verifica quando la posizione del dispositivo di scorrimento cambia in seguito al clic o al trascinamento da parte dell'utente. | LETIDER.onPositionChange
 ms.assetid: d8fe99a2-69ff-4e75-8d7d-506bcb2f75bf
 keywords:
-- Media Player Windows CUSTOMSLIDER. onPositionChange
+- WINDOWS MEDIA PLAYER
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee3d5547d66ca6dc1b770242301bd95ed010a8d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a3833987ebdbbf2700d9426da31b8efc80f64787e93be1a8418d83065724d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749978"
 ---
-# <a name="customslideronpositionchange"></a>CUSTOMSLIDER. onPositionChange
+# <a name="customslideronpositionchange"></a>LETIDER.onPositionChange
 
-Il gestore dell'evento **onPositionChange** gestisce un evento che si verifica quando la posizione del dispositivo di scorrimento viene modificata in seguito alla selezione o al trascinamento dell'utente.
+Il **gestore dell'evento onPositionChange** gestisce un evento che si verifica quando la posizione del dispositivo di scorrimento cambia in seguito al clic o al trascinamento da parte dell'utente.
 
 ``` syntax
 onPositionChange
@@ -29,7 +29,7 @@ onPositionChange
 
 ## <a name="remarks"></a>Commenti
 
-Se la posizione del dispositivo di scorrimento personalizzato cambia in seguito all'attributo **value** modificato nello script, questo evento non viene generato. Per soddisfare questa possibilità, implementare invece il gestore eventi **\_ OnChange del valore** .
+Se la posizione del dispositivo di scorrimento personalizzato cambia in seguito alla modifica dell'attributo **value** nello script, questo evento non viene generato. Per far fronte a questa possibilità, implementare **invece il \_ gestore dell'evento onchange** del valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Se la posizione del dispositivo di scorrimento personalizzato cambia in seguito 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,7 +45,7 @@ Se la posizione del dispositivo di scorrimento personalizzato cambia in seguito 
 
 <dl> <dt>
 
-[**Elemento CUSTOMSLIDER**](customslider-element.md)
+[**Elemento INSODELIDER**](customslider-element.md)
 </dt> </dl>
 
  

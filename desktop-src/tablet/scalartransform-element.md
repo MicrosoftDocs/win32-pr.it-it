@@ -59,7 +59,7 @@ Nessuno.
 |--------------|-----------------------------------------------------------------------------|
 | Tipo di elemento | [**ComplexType ScalarTransformType**](scalartransformtype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                                  |
-| Nome schema  | Lettore di journal                                                              |
+| Nome schema  | Lettore journal                                                              |
 
 
 

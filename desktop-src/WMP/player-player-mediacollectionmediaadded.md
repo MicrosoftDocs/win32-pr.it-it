@@ -1,10 +1,10 @@
 ---
-title: Evento Player. MediaCollectionMediaAdded
-description: L'evento MediaCollectionMediaAdded si verifica quando un elemento multimediale viene aggiunto alla libreria locale. | Evento Player. MediaCollectionMediaAdded
+title: Evento Player.MediaCollectionMediaAdded
+description: L'evento MediaCollectionMediaAdded si verifica quando un elemento multimediale viene aggiunto alla libreria locale. | Evento Player.MediaCollectionMediaAdded
 ms.assetid: 01696d28-e83b-4fd2-8e88-2871831b61e7
 keywords:
-- Media Player di Windows Event MediaCollectionMediaAdded
-- Windows Event MediaCollectionMediaAdded Media Player, classe Player
+- Evento MediaCollectionMediaAdded Windows Media Player
+- Classe di evento MediaCollectionMediaAdded Windows Media Player , Player
 - Classe Player Windows Media Player, evento MediaCollectionMediaAdded
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d18dd0536f508090c46f9fc5a9059c809f50091d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fef517c3d22335df6dd5dc5f62adcfd8f35dc3f2f91b08f8041c05770311993
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747350"
 ---
-# <a name="playermediacollectionmediaadded-event"></a>Evento Player. MediaCollectionMediaAdded
+# <a name="playermediacollectionmediaadded-event"></a>Evento Player.MediaCollectionMediaAdded
 
 L'evento MediaCollectionMediaAdded si verifica quando un elemento multimediale viene aggiunto alla libreria locale.
 
@@ -45,7 +45,7 @@ Player.MediaCollectionMediaAdded(
 *pdispMedia* 
 </dt> <dd>
 
-Oggetto **multimediale** aggiunto.
+**Oggetto** multimediale aggiunto.
 
 </dd> </dl>
 
@@ -74,13 +74,13 @@ Questo evento si verifica solo per la libreria locale.
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediacollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

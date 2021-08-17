@@ -28,7 +28,7 @@ ms.locfileid: "118312920"
 
 La **proprietà SWbemRefreshableItem.IsSet** è un valore booleano che indica se l'oggetto [**SWbemRefreshableItem**](swbemrefreshableitem.md) rappresenta un singolo oggetto o un set di oggetti.
 
-Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 

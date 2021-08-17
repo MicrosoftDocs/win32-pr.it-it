@@ -4,7 +4,7 @@ description: Restituisce il valore del flag di enumerazione EnumerationFlagHiera
 ms.assetid: b84b82fa-0b2e-418e-850f-6d7a4749fdc1
 ms.tgt_platform: multiple
 keywords:
-- Metodo EnumerationFlagHierarchyDeep Windows Remote Management
+- Metodo EnumerationFlagHierarchyDeep Windows gestione remota
 - Metodo EnumerationFlagHierarchyDeep Windows gestione remota , oggetto WSMan
 - Oggetto WSMan Windows gestione remota, metodo EnumerationFlagHierarchyDeep
 topic_type:
@@ -26,9 +26,9 @@ ms.locfileid: "117742594"
 ---
 # <a name="wsmanenumerationflaghierarchydeep-method"></a>Metodo WSMan.EnumerationFlagHierarchyDeep
 
-Il **metodo EnumerationFlagHierarchyDeep** restituisce il valore del flag di enumerazione **EnumerationFlagHierarchyDeep** da usare nel parametro *flags* di [**Session.Enumerate**](session-enumerate.md). Questo metodo fornisce una sintassi più efficiente per l'uso della costante in modo che gli script non siano necessari per impostare un valore costante. Per altre informazioni su come chiamare questo metodo, vedere [Costanti di sessione](session-constants.md).
+Il **metodo EnumerationFlagHierarchyDeep** restituisce il valore del flag di enumerazione **EnumerationFlagHierarchyDeep** da usare nel parametro *flags* di [**Session.Enumerate.**](session-enumerate.md) Questo metodo fornisce una sintassi più efficiente per l'uso della costante in modo che gli script non siano necessari per impostare un valore costante. Per altre informazioni su come chiamare questo metodo, vedere [Costanti di sessione.](session-constants.md)
 
-**EnumerationFlagHierarchyDeep** è una costante nell'enumerazione **\_ WSManEnumFlags** ed è descritta in [**Costanti di enumerazione**](enumeration-constants.md).
+**EnumerationFlagHierarchyDeep** è una costante **\_ nell'enumerazione WSManEnumFlags** ed è descritta in [**Costanti di enumerazione**](enumeration-constants.md).
 
 ## <a name="syntax"></a>Sintassi
 

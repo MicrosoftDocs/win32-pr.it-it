@@ -1,11 +1,11 @@
 ---
-title: Proprietà stato IVMVirtualMachine (VPCCOMInterfaces. h)
+title: Proprietà IVMVirtualMachine State (VPCCOMInterfaces.h)
 description: Recupera lo stato corrente della macchina virtuale.
 ms.assetid: a4214dfc-09d2-4d6b-a053-e75e99063411
 keywords:
-- Proprietà stato PC virtuale
-- Proprietà state Virtual PC, interfaccia IVMVirtualMachine
-- Interfaccia IVMVirtualMachine Virtual PC, state (proprietà)
+- Proprietà State Virtual PC
+- Proprietà State Virtual PC, interfaccia IVMVirtualMachine
+- Interfaccia IVMVirtualMachine Virtual PC, proprietà State
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11616f2a88b9238da11a4edec00c048e69885a07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cab0c0f9c1c3d3d527e5415e985039fb2754027a198b4fffa0062013c653169c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117752162"
 ---
-# <a name="ivmvirtualmachinestate-property"></a>Proprietà IVMVirtualMachine:: state
+# <a name="ivmvirtualmachinestate-property"></a>Proprietà IVMVirtualMachine::State
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera lo stato corrente della macchina virtuale.
 
@@ -54,9 +54,9 @@ Stato corrente della macchina virtuale. Per un elenco di valori, vedere [**VMVMS
 | Nome/valore                                                                                                                                                    | Significato                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>        |
-| <dl> <dt>Macchina virtuale \_ 0xA0040207 E \_ VM \_ sconosciute</dt> <dt></dt> </dl> | La configurazione è sconosciuta.<br/>     |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
+| <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione è sconosciuta.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -66,12 +66,12 @@ Stato corrente della macchina virtuale. Per un elenco di valori, vedere [**VMVMS
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4F78-a59f-c00adfc2edd7<br/>          |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

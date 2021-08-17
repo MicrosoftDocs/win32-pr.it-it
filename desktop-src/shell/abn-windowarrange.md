@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118225022"
 ---
-# <a name="abn_windowarrange-message"></a>Messaggio \_ WINDOWARRANGE ABN
+# <a name="abn_windowarrange-message"></a>Messaggio ABN \_ WINDOWARRANGE
 
 Notifica a una barra delle app che l'utente ha selezionato il comando Sovrapponi, Affianca orizzontalmente o Affianca verticalmente dal menu di scelta rapida della barra delle applicazioni.
 
@@ -42,7 +42,7 @@ ABN_WINDOWARRANGE
 *fBeginning* 
 </dt> <dd>
 
-Flag che specifica se l'operazione di propagazione o affiancata sta iniziando. Questo parametro è **TRUE se** l'operazione inizia e le finestre non sono ancora state spostate. È **FALSE se** l'operazione è stata completata.
+Flag che specifica se l'operazione di propagazione o riquadro è in corso. Questo parametro è **TRUE se** l'operazione è in corso e le finestre non sono ancora state spostate. È **FALSE se** l'operazione è stata completata.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il sistema invia questo messaggio di notifica due volte prima *con lParam* impostato su **TRUE** e quindi con *lParam* impostato su **FALSE.** La prima notifica viene inviata prima che le finestre siano propagate o affiancate e la seconda viene inviata dopo che si è verificata l'operazione a cascata o affiancata.
+Il sistema invia questo messaggio di notifica due volte prima *con lParam* impostato su **TRUE** e quindi con *lParam* impostato su **FALSE.** La prima notifica viene inviata prima che le finestre siano sovrapposte o affiancate e la seconda viene inviata dopo che è stata eseguita l'operazione di propagazione o riquadro.
 
 ## <a name="requirements"></a>Requisiti
 

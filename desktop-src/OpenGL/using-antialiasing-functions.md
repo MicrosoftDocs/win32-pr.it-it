@@ -1,41 +1,41 @@
 ---
-title: Uso di funzioni di anti-aliasing
-description: La tabella seguente elenca le funzioni di anti-aliasing di IRIS GL e le relative funzioni OpenGL equivalenti.
+title: Uso delle funzioni di anti-aliasing
+description: La tabella seguente elenca le funzioni di anti-aliasing IRIS GL e le funzioni OpenGL equivalenti.
 ms.assetid: d54990b6-5645-4389-82ca-7d7f0a7fd7e9
 keywords:
-- Porting di IRIS GL, anti-aliasing
-- porting da IRIS GL, anti-aliasing
-- porting in OpenGL da IRIS GL, anti-aliasing
-- Porting OpenGL da IRIS GL, anti-aliasing
+- Portabilità, antialiasing IRIS GL
+- porting da IRIS GL, antialiasing
+- porting to OpenGL from IRIS GL,antialiasing
+- Portabilità OpenGL da IRIS GL, antialiasing
 - anti-aliasing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 896d02dec050c72e59762ff5ee139b0bd091d9a8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab36f41e3b639447b4f246d706e11c134d8f920528cde1e946d26af057a95951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117980347"
 ---
-# <a name="using-antialiasing-functions"></a>Uso di funzioni di anti-aliasing
+# <a name="using-antialiasing-functions"></a>Uso delle funzioni di anti-aliasing
 
-La tabella seguente elenca le funzioni di anti-aliasing di IRIS GL e le relative funzioni OpenGL equivalenti.
+La tabella seguente elenca le funzioni di anti-aliasing IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL | OpenGL (funzione)                                      | Significato                           |
+| Funzione GL IRIS | Funzione OpenGL                                      | Significato                           |
 |------------------|------------------------------------------------------|-----------------------------------|
-| **pntsmooth**    | [**glEnable**](glenable.md) ( \_ punto GL \_ smussato)   | Abilita l'anti-aliasing dei punti.   |
-| **linesmooth**   | **glEnable**( \_ linea GL \_ smussata)                     | Abilita l'anti-aliasing delle righe.    |
-| **con uniformità**   | [**glEnable**](glenable.md) ( \_ arrotondamento del poligono GL \_ ) | Abilita l'anti-aliasing dei poligoni. |
+| **pntsmooth**    | [**glEnable**](glenable.md) ( GL \_ POINT \_ SMOOTH )   | Abilita l'anti-aliasing dei punti.   |
+| **linesmooth**   | **glEnable**( GL \_ LINE \_ SMOOTH )                     | Abilita l'antialiasing delle righe.    |
+| **polysmooth**   | [**glEnable**](glenable.md) ( GL \_ POLYGON \_ SMOOTH ) | Abilita l'antialiasing dei poligoni. |
 
 
 
- 
+ 
 
 Usare le chiamate [**glDisable**](gldisable.md) equivalenti per disattivare l'anti-aliasing.
 
-In IRIS GL è possibile controllare la qualità dell'anti-aliasing chiamando:
+In IRIS GL è possibile controllare la qualità dell'antialiasing chiamando:
 
 
 ```C++
@@ -44,7 +44,7 @@ linesmooth(SML_ON + SML_SMOOTHER);
 
 
 
-OpenGL fornisce un [**glHint**](glhint.md)controluse simile:
+OpenGL offre un controllo simileuse [**glHint:**](glhint.md)
 
 
 ```C++
@@ -57,9 +57,9 @@ glHint(GL_POLYGON_SMOOTH_HINT, hintMode);
 
 dove *hintMode* è uno dei seguenti:
 
--   GL \_ più gradevole (usare la migliore smussatura della qualità).
--   GL \_ più veloce (usare la smussatura più efficiente).
--   GL \_ dont \_ care
+-   GL \_ NICEST (usare la smussamento della massima qualità).
+-   GL \_ FASTEST (usare la smussamento più efficiente).
+-   GL \_ DONT \_ CARE
 
 IRIS GL consente anche la correzione finale chiamando:
 
@@ -70,11 +70,11 @@ linesmooth(SML_ON +  SML_END_CORRECT);
 
 
 
-OpenGL non ha un equivalente per questa funzione.
+OpenGL non ha equivalenti per questa funzione.
 
- 
+ 
 
- 
+ 
 
 
 

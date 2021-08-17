@@ -15,7 +15,7 @@ ms.locfileid: "118650313"
 ---
 # <a name="directwrite-functions"></a>DirectWrite funzioni
 
-DirectWrite fornisce la funzione seguente. Tutte le altre operazioni vengono eseguite usando DirectWrite di interfaccia creati dall'oggetto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) creato con la funzione seguente.
+DirectWrite fornisce la funzione seguente. Tutte le altre operazioni vengono eseguite usando DirectWrite oggetti interfaccia creati dall'oggetto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) creato con la funzione seguente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,5 +23,5 @@ DirectWrite fornisce la funzione seguente. Tutte le altre operazioni vengono ese
 
 | Argomento                                                         | Descrizione                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Crea un DirectWrite factory utilizzato per la creazione successiva di singoli oggetti DirectWrite factory.<br/> |
+| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Crea un DirectWrite factory che viene usato per la creazione successiva di singoli oggetti DirectWrite factory.<br/> |
 | [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | Crea un DirectWrite factory utilizzato per la creazione successiva di singoli oggetti DWriteCore.<br/> |

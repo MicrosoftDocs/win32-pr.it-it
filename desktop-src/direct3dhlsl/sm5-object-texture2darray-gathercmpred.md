@@ -1,6 +1,6 @@
 ---
 title: Funzione Texture2DArray::GatherCmpRed(S,float,float,int)
-description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il relativo componente rosso e un valore di confronto. | Funzione Texture2DArray::GatherCmpRed(S,float,float,int)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente rosso e un valore di confronto. | Funzione Texture2DArray::GatherCmpRed(S,float,float,int)
 ms.assetid: aa7fadf8-fe96-406a-9c93-9ae0c59ef087
 keywords:
 - Funzione GatherCmpRed HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "117724612"
 ---
 # <a name="texture2darraygathercmpredsfloatfloatint-function"></a>Funzione Texture2DArray::GatherCmpRed(S,float,float,int)
 
-Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il relativo componente rosso e un valore di confronto.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente rosso e un valore di confronto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,7 +71,7 @@ Valore da confrontare con ogni valore campionato.
 
 Tipo: **int2**
 
-Offset applicato alla coordinata della trama prima del campionamento.
+Offset applicato alla coordinata di trama prima del campionamento.
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ Offset applicato alla coordinata della trama prima del campionamento.
 
 Tipo: **float4**
 
-Valore a quattro componenti, ogni componente è il risultato di un confronto per componente.
+Un valore a quattro componenti, ogni componente è il risultato di un confronto per componente.
 
 ## <a name="remarks"></a>Commenti
 
-I campioni di trama possono essere usati per l'interpolazione bilineare.
+Gli esempi di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 

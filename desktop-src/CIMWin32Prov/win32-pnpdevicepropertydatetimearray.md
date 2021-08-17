@@ -109,7 +109,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della coppia chiave Name-Value che identifica la **proprietà** Data.
+Nome della coppia chiaveName-Value che identifica la **proprietà** Data.
 
 Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -477,7 +477,7 @@ I valori possibili sono .
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Sconosciuto: controllare devpropdef.h** (4120)
+**Sconosciuto: archiviare devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>

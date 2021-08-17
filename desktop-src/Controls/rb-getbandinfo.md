@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETBANDINFO (COMmctrl. h)
-description: Recupera le informazioni su una banda specificata in un controllo Rebar.
+title: RB_GETBANDINFO messaggio (Commctrl.h)
+description: Recupera informazioni su una banda specificata in un controllo Rebar.
 ms.assetid: c2a76c91-7d44-4278-823d-bd263520e7a8
 keywords:
-- Controlli di Windows Message RB_GETBANDINFO
+- RB_GETBANDINFO dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b87715cf61b4eb2726eab83d500330721f41719f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b0ae509699c23ad24b9b97451178f4711ab52176a9c15aeef757bab85c861c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409442"
 ---
-# <a name="rb_getbandinfo-message"></a>\_Messaggio GETBANDINFO RB
+# <a name="rb_getbandinfo-message"></a>Messaggio RB \_ GETBANDINFO
 
-Recupera le informazioni su una banda specificata in un controllo Rebar.
+Recupera informazioni su una banda specificata in un controllo Rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,20 +34,20 @@ Recupera le informazioni su una banda specificata in un controllo Rebar.
 *wParam* 
 </dt> <dd>
 
-Indice in base zero della banda per cui verranno recuperate le informazioni.
+Indice in base zero della banda per la quale verranno recuperate le informazioni.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) che riceverà le informazioni sulla banda richiesta. Prima di inviare questo messaggio, è necessario impostare il membro **cbSize** della struttura sulla dimensione della struttura **REBARBANDINFO** e impostare il membro **fmask** sugli elementi che si desidera recuperare. Inoltre, è necessario impostare il **membro** REBARBANDINFO della struttura  sulla dimensione del buffer **lpText** quando \_ viene specificato il testo RBBIM.
+Puntatore a una [**struttura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) che riceverà le informazioni sulla banda richieste. Prima di inviare questo messaggio, è necessario impostare il membro **cbSize** di questa struttura sulla dimensione della struttura **REBARBANDINFO** e impostare il membro **fMask** sugli elementi da recuperare. Inoltre, è necessario impostare il membro **cch** della struttura **REBARBANDINFO** sulla dimensione del buffer **lpText** quando viene specificato RBBIM \_ TEXT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **RB \_ GETBANDINFOW** (Unicode) e **RB \_ GETBANDINFOA** (ANSI)<br/>             |
 
 

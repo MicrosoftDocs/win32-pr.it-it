@@ -49,7 +49,7 @@ Specifica un valore associato al nome definito.
 
 Lo spazio vuoto tra **l'opzione /D** e il nome definito è facoltativo.
 
-Quando l'opzione [**/cpp \_ cmd**](-cpp-cmd.md) è presente e l'opzione [**/cpp \_ opt**](-cpp-opt.md) non lo è, il compilatore MIDL concatena la stringa specificata dall'opzione **cmd \_ /cpp** con le opzioni [**/I**](-i.md), **/D** e [**/U**](-u.md) e usa questa stringa concatenata per richiamare il preprocessore C per ogni file di origine IDL e ACF.
+Quando l'opzione [**cmd \_ /cpp**](-cpp-cmd.md) è presente e l'opzione [**/cpp \_ opt**](-cpp-opt.md) non lo è, il compilatore MIDL concatena la stringa specificata dall'opzione **/cpp \_ cmd** con le opzioni [**/I**](-i.md), **/D** e [**/U**](-u.md) e usa questa stringa concatenata per richiamare il preprocessore C per ogni file di origine IDL e ACF.
 
 L'opzione **/D** del compilatore MIDL viene ignorata quando viene specificata l'opzione del compilatore MIDL [/no \_ cpp](-no-cpp-nocpp.md) o [**/cpp \_ opt.**](-cpp-opt.md)
 

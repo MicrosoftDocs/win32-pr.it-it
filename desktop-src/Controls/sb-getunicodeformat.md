@@ -3,7 +3,7 @@ title: SB_GETUNICODEFORMAT messaggio (Commctrl.h)
 description: 'SB_GETUNICODEFORMAT messaggio: recupera il flag di formato carattere Unicode per il controllo.'
 ms.assetid: 0b2b543a-b1ef-452c-9b34-c5fbbac4aaa9
 keywords:
-- SB_GETUNICODEFORMAT dei controlli Windows messaggio
+- SB_GETUNICODEFORMAT controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

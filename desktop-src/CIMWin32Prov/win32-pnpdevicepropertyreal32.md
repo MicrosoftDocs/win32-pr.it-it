@@ -516,7 +516,7 @@ I valori possibili sono .
 
 <dl> <dt>
 
-[**Proprietà \_ PnPDeviceProperty Win32**](win32-pnpdeviceproperty.md)
+[**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)
 </dt> </dl>
 
  

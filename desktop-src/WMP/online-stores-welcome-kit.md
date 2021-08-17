@@ -1,47 +1,47 @@
 ---
-title: Kit di benvenuto per gli archivi online
-description: Kit di benvenuto per gli archivi online
+title: Kit di benvenuto per negozi online
+description: Kit di benvenuto per negozi online
 ms.assetid: 0684f705-62c4-4b90-bd0e-b33ab8fec6ef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa42f51400aedba55682f87d0dc8734b438755ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6271a7dfda3bfe16e27071b39c6610b4b99e844f5d7a5270fb7286c3f1ae3798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747849"
 ---
-# <a name="online-stores-welcome-kit"></a>Kit di benvenuto per gli archivi online
+# <a name="online-stores-welcome-kit"></a>Kit di benvenuto per negozi online
 
-Questa sezione contiene il kit di benvenuto dei negozi online, che è una raccolta di informazioni sull'introduzione di un archivio musicale online per Windows Media Player. Il kit contiene gli argomenti seguenti.
+Questa sezione contiene online stores welcome kit, che è una raccolta di informazioni su come portare a bordo un negozio di musica online per Windows Media Player. Il kit contiene gli argomenti seguenti.
 
 
 
 | Argomento                                                                                                          | Descrizione                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Introduzione al kit di benvenuto per i negozi online](introduction-to-the-online-stores-welcome-kit.md)             | Viene fornita un'introduzione al kit di benvenuto, alle informazioni di contatto e a un elenco di documenti correlati.                 |
-| [Ottenere un negozio online per musica online](getting-an-online-music-store-on-board.md)                           | Viene descritto il processo di integrazione di un archivio musicale online per Windows Media Player.                         |
-| [Requisiti per gli archivi musicali online](requirements-for-online-music-stores.md)                               | Vengono descritti alcuni requisiti principali relativi a cusomization e alla riproduzione.                                               |
-| [Contratti e licenze per gli archivi musicali online](contracts-and-licenses-for-online-music-stores.md)           | Descrive i contratti che devono essere firmati prima che un negozio online possa essere portato a bordo.                 |
-| [Modulo per le informazioni di contatto per un Music Store online](contact-information-form-for-an-online-music-store.md)   | Fornisce un modulo che le finestre di progettazione di un Music Store online possono usare per fornire a Microsoft informazioni di contatto. |
-| [Modulo informazioni di avvio per un negozio online](startup-information-form-for-an-online-music-store.md)   | Fornisce un modulo che le finestre di progettazione di un Music Store online possono usare per fornire a Microsoft informazioni di avvio. |
-| [Test di convalida per i negozi di musica online di tipo 2](validation-tests-for-type-2-online-music-stores.md)         | Descrive i test che Microsoft esegue per convalidare un negozio di musica di tipo 2 online.                               |
-| [Problemi comuni di onboarding per gli archivi musicali online](common-on-boarding-problems-for-online-music-stores.md) | Vengono descritti i problemi comuni che si sono verificati durante il processo di caricamento da parte di negozi musicali online.         |
+| [Introduzione al kit di benvenuto dei negozi online](introduction-to-the-online-stores-welcome-kit.md)             | Fornisce un'introduzione al Kit di benvenuto, informazioni di contatto e un elenco di documenti correlati.                 |
+| [Ottenere un online Musica Store On Board](getting-an-online-music-store-on-board.md)                           | Descrive il processo di gestione di un negozio di musica online per Windows Media Player.                         |
+| [Requisiti per i negozi Musica online](requirements-for-online-music-stores.md)                               | Vengono descritti alcuni requisiti chiave relativi alla cusomizzazione e alla riproduzione.                                               |
+| [Contratti e licenze per i negozi Musica online](contracts-and-licenses-for-online-music-stores.md)           | Descrive i contratti che devono essere firmati prima di poter portare a bordo un negozio di musica online.                 |
+| [Modulo di informazioni di contatto per un negozio Musica online](contact-information-form-for-an-online-music-store.md)   | Fornisce un modulo che i progettisti di un negozio di musica online possono usare per fornire a Microsoft le informazioni di contatto. |
+| [Modulo di informazioni di avvio per un negozio Musica online](startup-information-form-for-an-online-music-store.md)   | Fornisce un modulo che i progettisti di un negozio di musica online possono usare per fornire a Microsoft le informazioni di avvio. |
+| [Test di convalida per i negozi online Musica tipo 2](validation-tests-for-type-2-online-music-stores.md)         | Descrive i test eseguiti da Microsoft per convalidare un negozio di musica online di tipo 2.                               |
+| [Problemi comuni di on-boarding per i negozi Musica online](common-on-boarding-problems-for-online-music-stores.md) | Descrive i problemi comuni riscontrati da negozi di musica online durante il processo di bordo.         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Windows Media Player Online Stores](windows-media-player-online-stores.md)
+[Windows Media Player Negozi online](windows-media-player-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

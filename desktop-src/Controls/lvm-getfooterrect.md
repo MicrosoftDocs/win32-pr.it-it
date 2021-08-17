@@ -3,7 +3,7 @@ title: LVM_GETFOOTERRECT messaggio (Commctrl.h)
 description: Recupera le coordinate del piè di pagina per un controllo di visualizzazione elenco. Inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetFooterRect.
 ms.assetid: f8816f35-c1d2-4072-81d3-0a9a3df53d64
 keywords:
-- LVM_GETFOOTERRECT di controllo Windows messaggio
+- LVM_GETFOOTERRECT dei messaggi Windows
 topic_type:
 - apiref
 api_name:
@@ -53,8 +53,8 @@ Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrari
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
