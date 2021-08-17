@@ -31,7 +31,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 
 
-| Product                                | Versione minima del prodotto |
+| Prodotto                                | Versione minima del prodotto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
 | Windows Software Development Kit (SDK) | 6.1                     |
@@ -44,9 +44,9 @@ Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Località      | URL del percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio nameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
+| GitHub  | [Esempio di NameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

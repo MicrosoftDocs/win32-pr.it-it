@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Is-Domain-For
-description: Collegamento indietro per ms-DS-Has-Domain-NCs. Identifica i controller di dominio che contengono la partizione come dominio primario. | Attributo ms-DS-Is-Domain-For
+description: Collegamento all'indietro per ms-DS-Has-Domain-NCs. Identifica i controller di dominio che contengono tale partizione come dominio primario. | Attributo ms-DS-Is-Domain-For
 ms.assetid: ec63ddb4-c220-492b-92ce-e3da2069bcb8
 ms.tgt_platform: multiple
 keywords:
-- Ms-DS-Is-Domain-For attribute AD Schema
+- Schema AD dell'attributo ms-DS-Is-Domain-For
 - Schema AD dell'attributo msDS-IsDomainFor
 topic_type:
 - apiref
@@ -23,16 +23,16 @@ ms.locfileid: "118685111"
 ---
 # <a name="ms-ds-is-domain-for-attribute"></a>Attributo ms-DS-Is-Domain-For
 
-Collegamento indietro per [**ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica i controller di dominio che contengono la partizione come dominio primario.
+Collegamento all'indietro [**per ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica i controller di dominio che contengono tale partizione come dominio primario.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-is-Domain-For                     |
+| CN                | ms-DS-Is-Domain-For                     |
 | Ldap-Display-Name | msDS-IsDomainFor                        |
 | Dimensione              | \-                                      |
-| Aggiorna privilegio  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
 | System-Id-Guid    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
@@ -55,7 +55,7 @@ Collegamento indietro per [**ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Id
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -76,7 +76,7 @@ Collegamento indietro per [**ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Id
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -97,7 +97,7 @@ Collegamento indietro per [**ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Id
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

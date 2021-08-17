@@ -1,9 +1,9 @@
 ---
-title: SaveSystemAcctInputSettings (funzione)
-description: Applica il layout di tastiera utente e l'impostazione del servizio testo all'hive degli account di sistema.
+title: Funzione SaveSystemAcctInputSettings
+description: Applica il layout della tastiera dell'utente e l'impostazione del servizio di testo all'hive degli account di sistema.
 ms.assetid: 73782637-3784-46d9-ba93-0527a2527412
 keywords:
-- Framework servizi di testo funzione SaveSystemAcctInputSettings
+- Funzione SaveSystemAcctInputSettings Framework servizi di testo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e45d590b80a9119d78eac8363a493ecd6c7b70d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c60b9743ebbf54ce7189499f7295d44377c272b6d7cfcf5693259f12657bf06c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118875295"
 ---
-# <a name="savesystemacctinputsettings-function"></a>SaveSystemAcctInputSettings (funzione)
+# <a name="savesystemacctinputsettings-function"></a>Funzione SaveSystemAcctInputSettings
 
-Applica il layout di tastiera utente e l'impostazione del servizio testo all'hive degli account di sistema.
+Applica il layout della tastiera dell'utente e l'impostazione del servizio di testo all'hive degli account di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,17 +41,17 @@ BOOL CALLBACK SaveSystemAcctInputSettings(
 
 <dl> <dt>
 
-*hwndParent* \[ in\]
+*hwndParent* \[ Pollici\]
 </dt> <dd>
 
-Finestra padre per la finestra di dialogo di avviso. La finestra di dialogo di avviso non è sempre visualizzata e viene visualizzata in modo appropriato. Se questo parametro è **null**, la finestra di dialogo di avviso non verrà visualizzata.
+Finestra padre per la finestra di dialogo di avviso. La finestra di dialogo di avviso non viene sempre visualizzata e viene visualizzata in modo appropriato. Se questo parametro è **NULL,** la finestra di dialogo di avviso non verrà visualizzata.
 
 </dd> <dt>
 
-*hSourceRegKey* \[ in\]
+*hSourceRegKey* \[ Pollici\]
 </dt> <dd>
 
-Chiave del registro di sistema radice dell'impostazione utente da copiare.
+Chiave del Registro di sistema radice dell'impostazione utente da copiare.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Chiave del registro di sistema radice dell'impostazione utente da copiare.
 
 | Codice restituito                                                                          | Descrizione                               |
 |--------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | La funzione è stata completata.<br/>   |
-| <dl> <dt>**FALSE**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**Vero**</dt> </dl>  | La funzione ha avuto esito positivo.<br/>   |
+| <dl> <dt>**False**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -70,14 +70,14 @@ Chiave del registro di sistema radice dell'impostazione utente da copiare.
 
 ## <a name="remarks"></a>Commenti
 
-L'account di sistema hive è HKEY \_ Users \\ . DEFAULT, HKEY \_ Users \\ s-1-5-19 e HKEY \_ Users \\ s-1-5-20.
+L'hive dell'account di sistema è HKEY \_ USERS \\ . DEFAULT, HKEY \_ USERS \\ S-1-5-19 e HKEY \_ USERS \\ S-1-5-20.
 
 ## <a name="examples"></a>Esempio
 
-Non è disponibile alcuna libreria di importazione che definisce questa funzione, quindi è necessario ottenere un puntatore a questa funzione utilizzando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). Nell'esempio seguente viene illustrato come ottenere un puntatore a questa funzione.
+Non è disponibile alcuna libreria di importazione che definisce questa funzione, pertanto è necessario ottenere un puntatore a questa funzione usando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) Nell'esempio seguente viene illustrato come ottenere un puntatore a questa funzione.
 
 > [!Note]  
-> L'uso errato di [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la dll non corretta. Per informazioni su come caricare correttamente le dll con diverse versioni di Microsoft Windows, vedere l' [ordine di ricerca della libreria a collegamento dinamico](/windows/desktop/Dlls/dynamic-link-library-search-order) .
+> [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Microsoft Windows, vedere [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order) (Ordine di ricerca della libreria a collegamento dinamico).
 
  
 
@@ -115,8 +115,8 @@ else
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Input.dll</dt> </dl> |
 
 

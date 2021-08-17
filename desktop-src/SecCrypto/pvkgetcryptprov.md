@@ -23,14 +23,14 @@ ms.locfileid: "118901321"
 # <a name="pvkgetcryptprov-function"></a>Funzione PvkGetCryptProv
 
 > [!IMPORTANT]
-> Questa API è deprecata. Microsoft potrà rimuovere questa API nelle versioni future.
+> Questa API è deprecata. Microsoft potrebbe rimuovere questa API nelle versioni future.
 
  
 
 La **funzione PvkGetCryptProv** ottiene un handle per un [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) basato su un [*file*](../secgloss/p-gly.md) di chiave privata o su un nome di contenitore di chiavi.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mssign32.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mssign32.dll.
 
  
 
@@ -81,14 +81,14 @@ Puntatore a una stringa con terminazione Null per il nome CSP.
 *dwProviderType* \[ Pollici\]
 </dt> <dd>
 
-Valore **DWORD** che rappresenta il tipo di provider del servizio di crittografia. Per altre informazioni, vedere [Tipi di provider del servizio di crittografia.](cryptographic-provider-types.md)
+Valore **DWORD** che rappresenta il tipo di provider di crittografia. Per altre informazioni, vedere [Tipi di provider di crittografia](cryptographic-provider-types.md).
 
 </dd> <dt>
 
 *pwszPvkFile* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione Null che contiene il nome di un file di chiave privata.
+Puntatore a una stringa con terminazione Null contenente il nome di un file di chiave privata.
 
 </dd> <dt>
 
@@ -102,21 +102,21 @@ Puntatore a una stringa con terminazione Null per il nome del contenitore di chi
 *pdwKeySpec* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** per il tipo di chiave del contenitore restituito con *phCryptProv* e *ppwszTmpContainer.*
+Puntatore a un **valore DWORD** per il tipo di chiave del contenitore restituito con *phCryptProv* *e ppwszTmpContainer*.
 
 </dd> <dt>
 
 *ppwszTmpContainer* \[ out, facoltativo\]
 </dt> <dd>
 
-Indirizzo di un puntatore a una stringa con terminazione Null per il nome del contenitore di chiavi temporaneo. La **funzione PvkGetCryptProv** fornisce e inizializza il contenitore temporaneo. Quando si **chiama PvkGetCryptProv,** l'indirizzo deve puntare a un **valore NULL.**
+Indirizzo di un puntatore a una stringa con terminazione Null per il nome del contenitore di chiavi temporaneo. La **funzione PvkGetCryptProv** fornisce e inizializza il contenitore temporaneo. Quando si chiama **PvkGetCryptProv,** l'indirizzo deve puntare a un **valore NULL.**
 
 </dd> <dt>
 
 *phCryptProv* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un handle per il CSP.
+Puntatore a un handle per CSP.
 
 </dd> </dl>
 
@@ -124,13 +124,13 @@ Puntatore a un handle per il CSP.
 
 Se il metodo ha esito positivo, restituisce **S \_ OK**.
 
-Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](common-hresult-values.md)
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](common-hresult-values.md).
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione PvkGetCryptProv** tenta prima di tutto di ottenere l'handle del provider dal nome del contenitore di chiavi specificato dal *parametro pwszKeyContainerName.* Se si passa **NULL** per il *parametro pwszKeyContainerName,* **PvkGetCryptProv** tenta di ottenere il provider dal file di chiave privata specificato nel *parametro pwszPvkFile.*
+La **funzione PvkGetCryptProv** tenta innanzitutto di ottenere l'handle del provider dal nome del contenitore di chiavi specificato dal *parametro pwszKeyContainerName.* Se si passa **NULL** per il *parametro pwszKeyContainerName,* **PvkGetCryptProv** tenta di ottenere il provider dal file di chiave privata specificato nel *parametro pwszPvkFile.*
 
-Dopo aver terminato di usare il CSP, liberare l'handle del provider e il contenitore di chiavi temporaneo chiamando la [**funzione PvkFreeCryptProv.**](pvkfreecryptprov.md)
+Al termine dell'uso di CSP, liberare l'handle del provider e il contenitore di chiavi temporaneo chiamando la funzione [**PvkFreeCryptProv.**](pvkfreecryptprov.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,7 +139,7 @@ Dopo aver terminato di usare il CSP, liberare l'handle del provider e il conteni
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

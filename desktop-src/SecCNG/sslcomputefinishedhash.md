@@ -1,7 +1,7 @@
 ---
-description: Calcola l'hash inviato nel messaggio terminato dell'handshake del protocollo di Secure Sockets Layer (SSL).
+description: Calcola l'hash inviato nel messaggio completato dell'handshake Secure Sockets Layer protocol (SSL).
 ms.assetid: 82dfeb1d-c141-40c9-b692-daad78ab6d55
-title: Funzione SslComputeFinishedHash (Sslprovider. h)
+title: Funzione SslComputeFinishedHash (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 365f3c849b0a499d2bd875c8d234bbda1911eb71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0f23a58111bfcebbe668cd3b6c50a135da0dae240907f09a65d60ef1cebdda8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907142"
 ---
-# <a name="sslcomputefinishedhash-function"></a>SslComputeFinishedHash (funzione)
+# <a name="sslcomputefinishedhash-function"></a>Funzione SslComputeFinishedHash
 
-La funzione **SslComputeFinishedHash** calcola l' [*hash*](/windows/desktop/SecGloss/h-gly) inviato nel messaggio finito dell'handshake SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ). Per ulteriori informazioni sulla sequenza di handshake SSL, vedere [la descrizione dell'handshake Secure Sockets Layer (SSL)](https://support.microsoft.com/kb/257591).
+La **funzione SslComputeFinishedHash** calcola l'hash inviato nel messaggio completato dell'handshake [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL). [](/windows/desktop/SecGloss/h-gly) Per altre informazioni sulla sequenza di handshake SSL, vedere [Descrizione dell'handshake Secure Sockets Layer (SSL).](https://support.microsoft.com/kb/257591)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,52 +44,52 @@ SECURITY_STATUS WINAPI SslComputeFinishedHash(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*hMasterKey* \[ in\]
+*hMasterKey* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'oggetto [*chiave master*](/windows/desktop/SecGloss/m-gly) .
+Handle [*dell'oggetto chiave*](/windows/desktop/SecGloss/m-gly) master.
 
 </dd> <dt>
 
-*hHandshakeHash* \[ in\]
+*hHandshakeHash* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'hash dei messaggi di handshake.
 
 </dd> <dt>
 
-*pbOutput* \[ out\]
+*pbOutput* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un buffer che riceve l'hash per il messaggio di fine.
 
 </dd> <dt>
 
-*cbOutput* \[ in\]
+*cbOutput* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbOutput* .
+Lunghezza, in byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Una delle seguenti costanti.
+Una delle costanti seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                                      | Significato                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ \_ \_ Flag client SSL**</dt> <dt>0x00000001</dt> </dl> | Specifica che si tratta di una chiamata client.<br/> |
-| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ \_ \_ Flag server SSL**</dt> <dt>0x00000002</dt> </dl> | Specifica che si tratta di una chiamata al server.<br/> |
+| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ Flag \_ \_ CLIENT SSL**</dt> <dt>0x00000001</dt> </dl> | Specifica che si tratta di una chiamata client.<br/> |
+| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ FLAG \_ \_ DEL SERVER SSL**</dt> <dt>0x00000002</dt> </dl> | Specifica che si tratta di una chiamata al server.<br/> |
 
 
 
@@ -107,7 +107,7 @@ Se la funzione ha esito negativo, restituisce un valore di errore diverso da zer
 
 | Codice/valore restituito                                                                                                                                                                | Descrizione                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Handle non valido**</dt> <dt>2148073510 (0x80090026)</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ 2148073510**</dt> <dt>(0x80090026)</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
 
 
 
@@ -115,15 +115,15 @@ Se la funzione ha esito negativo, restituisce un valore di errore diverso da zer
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **SslComputeFinishedHash** è una delle tre funzioni usate per generare un hash da usare durante l'handshake SSL.
+La **funzione SslComputeFinishedHash** è una delle tre funzioni usate per generare un hash da usare durante l'handshake SSL.
 
-1.  Viene chiamata la funzione [**SslCreateHandshakeHash**](sslcreatehandshakehash.md) per ottenere un handle hash.
-2.  La funzione [**SslHashHandshake**](sslhashhandshake.md) viene chiamata un numero qualsiasi di volte con l'handle hash per aggiungere dati all'hash.
-3.  La funzione **SslComputeFinishedHash** viene chiamata con l'handle hash per ottenere il digest dei dati con hash.
+1.  La [**funzione SslCreateHandshakeHash**](sslcreatehandshakehash.md) viene chiamata per ottenere un handle hash.
+2.  La [**funzione SslHashHandshake**](sslhashhandshake.md) viene chiamata un numero qualsiasi di volte con l'handle hash per aggiungere dati all'hash.
+3.  La **funzione SslComputeFinishedHash** viene chiamata con l'handle hash per ottenere il digest dei dati con hash.
 
-Il valore hash viene calcolato eseguendo l'hashing della master secret con un hash di tutti i messaggi di handshake precedenti inviati o ricevuti.
+Il valore hash viene calcolato tramite hash del master secret con un hash di tutti i messaggi di handshake precedenti inviati o ricevuti.
 
-Il valore di *cbOutput* determina la lunghezza dei dati hash. Quando si usa il protocollo TLS ( [*Transport Layer Security Protocol*](/windows/desktop/SecGloss/t-gly) ) 1,0, deve essere sempre 12 (byte). Per ulteriori informazioni, vedere [la versione 1,0 del protocollo TLS](https://www.ietf.org/rfc/rfc2246.txt).
+Il valore *di cbOutput* determina la lunghezza dei dati hash. Quando viene [*Transport Layer Security protocollo*](/windows/desktop/SecGloss/t-gly) TLS (Tls) 1.0, deve essere sempre 12 (byte). Per altre informazioni, vedere [Protocollo TLS versione 1.0.](https://www.ietf.org/rfc/rfc2246.txt)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,9 +131,9 @@ Il valore di *cbOutput* determina la lunghezza dei dati hash. Quando si usa il p
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

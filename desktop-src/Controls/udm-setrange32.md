@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_SETRANGE32 (COMmctrl. h)
-description: Imposta l'intervallo di 32 bit di un controllo di scorrimento.
+title: UDM_SETRANGE32 messaggio (Commctrl.h)
+description: Imposta l'intervallo a 32 bit di un controllo up-down.
 ms.assetid: 6167db8f-a823-44d3-a515-888b6d1a39c2
 keywords:
-- Controlli di Windows Message UDM_SETRANGE32
+- UDM_SETRANGE32 di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80de7c9583a10abe7c62ec5a074dcfa91a59cc7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5d98a55f503ebc194a00a65ff207aaed4a3a20d614b6416b4f6049e342df4f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957730"
 ---
-# <a name="udm_setrange32-message"></a>\_Messaggio UDM SETRANGE32
+# <a name="udm_setrange32-message"></a>Messaggio SETRANGE32 di UDM \_
 
-Imposta l'intervallo di 32 bit di un controllo di scorrimento.
+Imposta l'intervallo a 32 bit di un controllo up-down.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Imposta l'intervallo di 32 bit di un controllo di scorrimento.
 *wParam* 
 </dt> <dd>
 
-Valore intero con segno che rappresenta il nuovo limite inferiore dell'intervallo di controllo di scorrimento.
+Valore intero con segno che rappresenta il nuovo limite inferiore dell'intervallo di controllo verso l'alto verso il basso.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Valore intero con segno che rappresenta il nuovo limite superiore dell'intervallo di controllo di scorrimento.
+Valore intero con segno che rappresenta il nuovo limite superiore dell'intervallo di controllo verso l'alto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questo messaggio non viene utilizzato.
+Il valore restituito per questo messaggio non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

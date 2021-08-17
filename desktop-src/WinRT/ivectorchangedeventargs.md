@@ -1,5 +1,5 @@
 ---
-description: Fornisce dati per un evento VectorChanged.
+description: Fornisce i dati per un evento VectorChanged.
 ms.assetid: 635c0f96-5d64-436e-9186-78f9d85b6d29
 title: Interfaccia IVectorChangedEventArgs (IVectorChangedEventArgs.h)
 ms.topic: reference
@@ -22,24 +22,24 @@ ms.locfileid: "118560616"
 ---
 # <a name="ivectorchangedeventargs-interface"></a>Interfaccia IVectorChangedEventArgs
 
-Fornisce dati per un [**evento VectorChanged.**](/uwp/api/windows.foundation.collections.iobservablevector-1?view=winrt-19041)
+Fornisce i dati per un [**evento VectorChanged.**](/uwp/api/windows.foundation.collections.iobservablevector-1?view=winrt-19041)
 
 ## <a name="members"></a>Membri
 
-**L'interfaccia IVectorChangedEventArgs** eredita da **IInspectable.** **IVectorChangedEventArgs** include anche questi tipi di membri:
+**L'interfaccia IVectorChangedEventArgs** eredita da **IInspectable**. **IVectorChangedEventArgs** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-**L'interfaccia IVectorChangedEventArgs** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IVectorChangedEventArgs.**
 
 
 
 | Metodo                                                                        | Descrizione                                                           |
 |:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | [**get \_ CollectionChange**](ivectorchangedeventargs-get-collectionchange.md) | Ottiene il tipo di modifica che si è verificata nel vettore.<br/>       |
-| [**get \_ Index**](ivectorchangedeventargs-get-index.md)                       | Ottiene la posizione nel vettore in cui si è verificata la modifica.<br/> |
+| [**get \_ index**](ivectorchangedeventargs-get-index.md)                       | Ottiene la posizione nel vettore in cui si è verificata la modifica.<br/> |
 
 
 

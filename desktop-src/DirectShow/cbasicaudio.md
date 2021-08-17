@@ -1,7 +1,7 @@
 ---
 description: La classe CBasicAudio implementa i metodi IDispatch dell'interfaccia IBasicAudio. I metodi IBasicAudio rimanenti vengono lasciati come metodi virtuali puri e devono essere implementati da una classe derivata.
 ms.assetid: 6772ade4-84c5-443f-a8b5-0e8e12263f76
-title: Classe CBasicAudio (Ctlutil. h)
+title: Classe CBasicAudio (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e2d52b07284d10d82122e52e41b185799e12d458
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f511df84b93372fda1e557b4ebd12011fa8ef41beca9eb3d190c049564021031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074481"
 ---
 # <a name="cbasicaudio-class"></a>Classe CBasicAudio
 
-![gerarchia di classi cbasicaudio](images/cutil07.png)
+![Gerarchia di classi cbasicaudio](images/cutil07.png)
 
-La `CBasicAudio` classe implementa i metodi **IDispatch** dell'interfaccia [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio) . I metodi **IBasicAudio** rimanenti vengono lasciati come metodi virtuali puri e devono essere implementati da una classe derivata.
+La `CBasicAudio` classe implementa i metodi **IDispatch** dell'interfaccia [**IBasicAudio.**](/windows/desktop/api/Control/nn-control-ibasicaudio) I metodi **IBasicAudio** rimanenti vengono lasciati come metodi virtuali puri e devono essere implementati da una classe derivata.
 
-I metodi **IDispatch** in questa classe sono implementazioni standard e non sono descritti in dettaglio di seguito.
+I **metodi IDispatch** in questa classe sono implementazioni standard e non sono descritti in dettaglio qui.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ I metodi **IDispatch** in questa classe sono implementazioni standard e non sono
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

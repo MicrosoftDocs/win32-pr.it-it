@@ -21,7 +21,7 @@ HRESULT GetHelpModeOn(
 );
 ```
 
-Recupera un valore che indica se la modalità guida sensibile al contesto è attivata per il carattere.
+Recupera un valore che indica se la modalità Guida sensibile al contesto è attivata per il carattere.
 
 -   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
@@ -30,15 +30,15 @@ Recupera un valore che indica se la modalità guida sensibile al contesto è att
 <span id="pbHelpModeOn"></span><span id="pbhelpmodeon"></span><span id="PBHELPMODEON"></span>*pbHelpModeOn*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve **True se** la modalità Guida è attiva per il carattere e **False in** caso contrario.
+Indirizzo di una variabile che riceve **True** se la modalità Guida è attivata per il carattere e **False** in caso contrario.
 
 </dd> </dl>
 
-Quando questa proprietà è impostata su **True,** il puntatore del mouse passa all'immagine della Guida sensibile al contesto quando viene spostato sul carattere o sul menu a comparsa del carattere. Quando l'utente fa clic o trascina il carattere o fa clic su un elemento nel menu a comparsa del carattere, il server attiva l'evento [**IAgentNotifySinkEx::HelpComplete**](https://www.bing.com/search?q=**IAgentNotifySinkEx::HelpComplete**) e esce dalla modalità Guida.
+Quando questa proprietà è impostata su **True,** il puntatore del mouse passa all'immagine della Guida sensibile al contesto quando viene spostato sul carattere o sul menu a comparsa per il carattere. Quando l'utente fa clic o trascina il carattere o fa clic su un elemento nel menu a comparsa del carattere, il server attiva l'evento [**IAgentNotifySinkEx::HelpComplete**](https://www.bing.com/search?q=**IAgentNotifySinkEx::HelpComplete**) e esce dalla modalità Guida.
 
-In modalità Guida il server non invia gli eventi [**IAgentNotifySink::Click**](iagentnotifysink--click.md), [**IAgentNotifySink::D ragStart**](iagentnotifysink--dragstart.md), [**IAgentNotifySink::D ragComplete**](iagentnotifysink--dragcomplete.md)e [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) a meno che la proprietà [**GetAutoPopupMenu non**](https://www.bing.com/search?q=**GetAutoPopupMenu**) restituisca **True**. In tal caso, il server invierà l'evento **IAgentNotifySink::Click** (non esce dalla modalità Guida), ma solo per il pulsante destro del mouse per consentire la visualizzazione del menu a comparsa.
+In modalità Guida il server non invia gli eventi [**IAgentNotifySink::Click**](iagentnotifysink--click.md), [**IAgentNotifySink::D ragStart**](iagentnotifysink--dragstart.md), [**IAgentNotifySink::D ragComplete**](iagentnotifysink--dragcomplete.md)e [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) a meno che la proprietà [**GetAutoPopupMenu non**](https://www.bing.com/search?q=**GetAutoPopupMenu**) restituisca **True.** In tal caso, il server invierà l'evento **IAgentNotifySink::Click** (non esce dalla modalità Guida), ma solo per il pulsante destro del mouse per consentire la visualizzazione del menu a comparsa.
 
-Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. L'impostazione non influisce su altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
 
 ## <a name="see-also"></a>Vedere anche
 

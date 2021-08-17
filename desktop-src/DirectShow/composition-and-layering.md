@@ -1,31 +1,31 @@
 ---
-description: Composizione e sovrapposizione
+description: Composizione e livelli
 ms.assetid: c1aefd92-b47f-4af1-8299-9ba401ad5fe8
-title: Composizione e sovrapposizione
+title: Composizione e livelli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7dce1e1df87b5ffc5c65e9090c6fb7266b972d3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8b173ed0727869d3630a2241d7237cf74fb5143a907a95fcc53901a7b85f285c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954230"
 ---
-# <a name="composition-and-layering"></a>Composizione e sovrapposizione
+# <a name="composition-and-layering"></a>Composizione e livelli
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-In una raccolta di tracce, la prima traccia ha la priorità più bassa (priorità 0) e ogni traccia successiva ha priorità di un livello superiore. A ogni livello di priorità, le clip di origine in tale traccia nascondono le clip di origine nelle tracce sottostanti, a meno che tale livello non contenga anche una transizione. In questo modo è possibile immaginare che la creazione di più passaggi quando viene eseguito il rendering.
+In una raccolta di tracce, la prima traccia ha la priorità più bassa (priorità 0) e ogni traccia successiva ha una priorità di un livello superiore. A ogni livello di priorità, le clip di origine nella traccia nascondono le clip di origine nelle tracce sottostanti, a meno che tale livello non contenga anche una transizione. È quindi possibile immaginare des che effettua diversi passaggi durante il rendering.
 
-Viene innanzitutto eseguito il rendering di Track 0. Non è presente alcun elemento "in" Track 0, quindi viene eseguito il rendering delle aree vuote come immagine nera a tinta unita. Le transizioni in questo livello si verificano tra l'immagine nera e la traccia 0 o viceversa. DES stabilisce la traccia 1 nella parte superiore della traccia 0, generando le transizioni tra le due tracce. Il risultato è costituito da un composto di due tracce. Quindi posiziona il Track 2 su questo composto. Le transizioni a questo livello si verificano tra composito e Track 2. Il processo continua fino a quando non viene disattivata l'ultima traccia (priorità più alta).
+In primo luogo, viene eseguito il rendering della traccia 0. Non c'è nulla "sotto" Traccia 0, quindi le aree vuote vengono visualizzate come un'immagine nera a tinta unita. Le transizioni in questo livello si verificano tra l'immagine nera e la traccia 0 o viceversa. DES lays track 1 on top of track 0, generating any transitions between the two tracks. Il risultato è il composto delle due tracce. Inserisce quindi la traccia 2 in questo composito. Le transizioni a questo livello si verificano tra la composita e la traccia 2. Il processo continua fino a quando non viene impostata l'ultima traccia (con priorità più alta).
 
-Quando più tracce sono composte insieme, si comportano come una singola traccia (denominata traccia virtuale). L'oggetto Composition incapsula questo comportamento, rendendo possibili transizioni complesse. Ad esempio, un clip video può essere cancellato da un secondo clip, mentre il composito (entrambi i clip più la cancellazione) si dissolve in una terza clip.
+Quando più tracce vengono composte insieme, si comportano come una singola traccia (detta traccia virtuale). L'oggetto di composizione incapsula questo comportamento, rendendo possibili transizioni complesse. Ad esempio, un clip video può essere cancellato in un secondo clip, mentre il clip composito (entrambe le clip più la cancellazione) si dissolve in una terza clip.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Introduzione con i servizi di modifica DirectShow](getting-started-with-directshow-editing-services.md)
+[Attività iniziali con DirectShow Editing Services](getting-started-with-directshow-editing-services.md)
 </dt> </dl>
 
  

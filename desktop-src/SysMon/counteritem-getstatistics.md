@@ -1,11 +1,11 @@
 ---
-title: Metodo CounterItem. GetStatistics
-description: Recupera i valori medio, massimo e minimo per il contatore.
+title: Metodo CounterItem.GetStatistics
+description: Recupera i valori medi, massimi e minimi per il contatore.
 ms.assetid: fb55d68b-1dbe-48b1-88c8-51f33048ec24
 keywords:
 - Metodo GetStatistics SysMon
-- Metodo GetStatistics SysMon, classe CounterItem
-- Classe CounterItem SysMon, Metodo GetStatistics
+- Metodo GetStatistics SysMon , classe CounterItem
+- Classe CounterItem SysMon , metodo GetStatistics
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c993ed8b9bb39a4d8bb3ff18663f2d884ece156
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bea1be162d68bb02db4842a7140effe653231dcc5105c4bea3b557abb02beab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883777"
 ---
-# <a name="counteritemgetstatistics-method"></a>Metodo CounterItem. GetStatistics
+# <a name="counteritemgetstatistics-method"></a>Metodo CounterItem.GetStatistics
 
-Recupera i valori medio, massimo e minimo per il contatore.
+Recupera i valori medi, massimi e minimi per il contatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ CounterItem.GetStatistics( _
 
 <dl> <dt>
 
-*numero massimo* \[ out\]
+*max* \[ Cambio\]
 </dt> <dd>
 
 Valore massimo del contatore.
 
 </dd> <dt>
 
-valore *minimo* \[ out\]
+*min* \[ Cambio\]
 </dt> <dd>
 
 Valore minimo del contatore.
 
 </dd> <dt>
 
-*media* \[ out\]
+*average* \[ Cambio\]
 </dt> <dd>
 
 Valore medio del contatore.
 
 </dd> <dt>
 
-*stato* \[ di out\]
+*stato* \[ Cambio\]
 </dt> <dd>
 
 Indica se i valori sono validi.
@@ -90,7 +90,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per calcolare i valori statistici vengono utilizzati solo i valori dei contatori visibili nella finestra Graph.
+Per calcolare i valori statistici vengono usati solo i valori dei contatori visibili nella finestra del grafico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,7 +100,7 @@ Per calcolare i valori statistici vengono utilizzati solo i valori dei contatori
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ Per calcolare i valori statistici vengono utilizzati solo i valori dei contatori
 [**CounterItem.GetDataAt**](counteritem-getdataat.md)
 </dt> <dt>
 
-[**CounterItem. GetValue**](counteritem-getvalue.md)
+[**CounterItem.GetValue**](counteritem-getvalue.md)
 </dt> </dl>
 
  

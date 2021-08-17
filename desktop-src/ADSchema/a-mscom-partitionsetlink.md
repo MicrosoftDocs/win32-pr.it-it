@@ -1,11 +1,11 @@
 ---
-title: attributo ms-COM-PartitionSetLink
-description: Collegamento utilizzato per associare una partizione COM+ a un oggetto del partizionamento COM+.
+title: Attributo ms-COM-PartitionSetLink
+description: Collegamento usato per associare una partizione COM+ a un oggetto PartitionSet COM+.
 ms.assetid: b36a9a3a-987c-41ff-9743-d0c806eb7ae9
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-COM-PartitionSetLink
-- msCOM-schema AD attributo PartitionSetLink
+- Schema AD dell'attributo msCOM-PartitionSetLink
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52e2d6fa4046ac95d0fcbde6dea999e1ef2968ec
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ddc17fb3e1f6ff80b5834d1d96f2758bd56bf3a6941890cd3f184d7229ece1c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961110"
 ---
-# <a name="ms-com-partitionsetlink-attribute"></a>attributo ms-COM-PartitionSetLink
+# <a name="ms-com-partitionsetlink-attribute"></a>Attributo ms-COM-PartitionSetLink
 
-Collegamento utilizzato per associare una partizione COM+ a un oggetto del partizionamento COM+.
+Collegamento usato per associare una partizione COM+ a un oggetto PartitionSet COM+.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MS-COM-PartitionSetLink                 |
-| LDAP-Display-Name | msCOM-PartitionSetLink                  |
+| CN                | ms-COM-PartitionSetLink                 |
+| Ldap-Display-Name | msCOM-PartitionSetLink                  |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1424                 |
-| System-ID-GUID    | 67f121dc-7d02-4c7d-82f5-9ad4c950ac34    |
+| System-Id-Guid    | 67f121dc-7d02-4c7d-82f5-9ad4c950ac34    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Collegamento utilizzato per associare una partizione COM+ a un oggetto del parti
 | ID collegamento                | 1041                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Collegamento utilizzato per associare una partizione COM+ a un oggetto del parti
 | ID collegamento                | 1041                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Collegamento utilizzato per associare una partizione COM+ a un oggetto del parti
 | ID collegamento                | 1041                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Collegamento utilizzato per associare una partizione COM+ a un oggetto del parti
 | ID collegamento                | 1041                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Collegamento utilizzato per associare una partizione COM+ a un oggetto del parti
 | ID collegamento                | 1041                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

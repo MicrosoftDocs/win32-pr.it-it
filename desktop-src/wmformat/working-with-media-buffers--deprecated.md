@@ -1,6 +1,6 @@
 ---
 title: Uso dei buffer multimediali (Windows Media Format 11 SDK)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Uso dei buffer multimediali (Windows Media Format 11 SDK)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Uso dei buffer multimediali (Windows Media Format 11 SDK)
 ms.assetid: 45428737-3f72-44b5-9606-69fa8aba308c
 keywords:
 - Uso di Media Buffers windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118697752"
 ---
 # <a name="working-with-media-buffers-windows-media-format-11-sdk"></a>Uso dei buffer multimediali (Windows Media Format 11 SDK)
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

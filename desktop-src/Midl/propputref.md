@@ -1,6 +1,6 @@
 ---
 title: propputref (attributo)
-description: L'attributo \ propputref\ specifica una funzione di impostazione della proprietà che usa un riferimento anziché un valore.
+description: L'attributo \ propputref\ specifica una funzione di impostazione delle proprietà che usa un riferimento anziché un valore.
 ms.assetid: 84f1cd08-3c42-4a6d-bb1d-0bfd3f4c33f2
 keywords:
 - Attributo propputref MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118641964"
 ---
 # <a name="propputref-attribute"></a>propputref (attributo)
 
-**\[ L'attributo \] propputref** specifica una funzione di impostazione della proprietà che usa un riferimento anziché un valore.
+**\[ L'attributo \] propputref** specifica una funzione di impostazione delle proprietà che usa un riferimento anziché un valore.
 
 ``` syntax
 [propputref [,optional-property-attributes]] return-type function-name( parameters);
@@ -41,7 +41,7 @@ Zero o più attributi di proprietà.
 *return-type* 
 </dt> <dd>
 
-Tipo di dati restituiti dalla procedura remota.
+Tipo dei dati restituiti dalla procedura remota.
 
 </dd> <dt>
 
@@ -61,13 +61,13 @@ Zero o più parametri per la procedura remota.
 
 ## <a name="remarks"></a>Commenti
 
-Una funzione con **\[ l'attributo propputref \]** deve avere anche, come ultimo parametro, un puntatore con l'attributo **\[** [**in**](in.md) **\]** .
+Anche una funzione con **\[ l'attributo propputref \]** deve avere, come ultimo parametro, un puntatore con l'attributo **\[** [**in**](in.md) **\]** .
 
 La proprietà deve avere lo stesso nome della funzione. Al massimo, è possibile specificare uno degli attributi **\[** [**propget**](propget.md), propput e **\]** **\[** [](propput.md) **\]** **\[ propputref \]** per una funzione.
 
 ### <a name="flags"></a>Flags
 
-RICHIAMARE \_ PROPERTYPUTREF
+INVOKE \_ PROPERTYPUTREF
 
 ## <a name="examples"></a>Esempi
 

@@ -1,5 +1,5 @@
 ---
-description: Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
+description: Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica quanti materiali sono presenti e i materiali specificano il materiale da applicare.
 ms.assetid: b38fd445-1a31-41ed-abbe-084abfe1c221
 title: MeshMaterialList
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118798787"
 ---
 # <a name="meshmateriallist"></a>MeshMaterialList
 
-Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
+Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica quanti materiali sono presenti e i materiali specificano il materiale da applicare.
 
 ``` syntax
 template MeshMaterialList
@@ -30,7 +30,7 @@ Dove:
 
 -   nMaterials: valore DWORD. Numero di materiali.
 -   nFaceIndexes: valore DWORD. Numero di indici.
--   faceIndexes \[ nFaceIndexes: \] matrice di DWORD contenenti gli indici del viso.
+-   faceIndexes \[ nFaceIndexes: \] matrice di valori DWORD contenente gli indici del viso.
 
 ## <a name="see-also"></a>Vedi anche
 

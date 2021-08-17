@@ -1,7 +1,7 @@
 ---
-description: Genera un set di chiavi di sessione SSL (Secure Sockets Layer Protocol).
+description: Genera un set di Secure Sockets Layer di sessione SSL (Secure Sockets Layer Protocol).
 ms.assetid: 88465f30-8591-411e-8618-8a381d4c22e9
-title: Funzione SslGenerateSessionKeys (Sslprovider. h)
+title: Funzione SslGenerateSessionKeys (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cf8e20008d2a77cae3a47728f4e38fff8ae0b09b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a9d7a25e5dd2035bd0b060ae11904e351489309b3a5e3c65c0e1582dce77500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906173"
 ---
-# <a name="sslgeneratesessionkeys-function"></a>SslGenerateSessionKeys (funzione)
+# <a name="sslgeneratesessionkeys-function"></a>Funzione SslGenerateSessionKeys
 
-La funzione **SslGenerateSessionKeys** genera un set di chiavi di sessione SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslGenerateSessionKeys** genera un set [*di chiavi Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) di sessione SSL (Secure Sockets Layer Protocol).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,42 +44,42 @@ SECURITY_STATUS WINAPI SslGenerateSessionKeys(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*hMasterKey* \[ in\]
+*hMasterKey* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto [*chiave master*](/windows/desktop/SecGloss/m-gly) .
+Handle per [*l'oggetto chiave master.*](/windows/desktop/SecGloss/m-gly)
 
 </dd> <dt>
 
-*phReadKey* \[ out\]
+*phReadKey* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'handle della chiave di lettura restituito.
 
 </dd> <dt>
 
-*phWriteKey* \[ out\]
+*phWriteKey* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'handle della chiave di scrittura restituito.
 
 </dd> <dt>
 
-*pParameterList* \[ in\]
+*pParameterList* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una matrice di buffer [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) che contengono informazioni utilizzate come parte dell'operazione di scambio delle chiavi. Il set preciso di buffer dipende dal protocollo e dal pacchetto di crittografia utilizzati. Come minimo, l'elenco conterrà i buffer contenenti i valori casuali specificati dal client e dal server.
+Puntatore a una matrice di buffer [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) che contengono informazioni usate come parte dell'operazione di scambio delle chiavi. Il set preciso di buffer dipende dal protocollo e dalla suite di crittografia usati. Come minimo, l'elenco conterrà i buffer che contengono i valori casuali forniti dal client e dal server.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -92,15 +92,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Uno degli handle forniti non è valido.<br/>                     |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *phReadKey* o *phWriteKey* è null.<br/>            |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare i buffer necessari.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno degli handle forniti non è valido.<br/>                     |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON**</dt> <dt>VALIDO 0x80090027L</dt> </dl> | Il *parametro phReadKey* *o phWriteKey* è Null.<br/>            |
 
 
 
@@ -112,9 +112,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

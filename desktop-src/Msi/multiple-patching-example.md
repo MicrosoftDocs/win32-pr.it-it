@@ -1,5 +1,5 @@
 ---
-description: L'esempio seguente illustra Windows Installer 3.0 e versioni successive per applicare le patch nell'ordine in cui vengono scritte.
+description: L'esempio seguente illustra come Windows Installer 3.0 e versioni successive per applicare le patch nell'ordine in cui vengono scritte.
 ms.assetid: 98771652-cec2-4371-8132-a741cf8431fb
 title: Esempio di applicazione di più patch
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118943368"
 ---
 # <a name="multiple-patching-example"></a>Esempio di applicazione di più patch
 
-L'esempio seguente illustra Windows Installer 3.0 e versioni successive per applicare le patch nell'ordine in cui vengono scritte.
+L'esempio seguente illustra come Windows Installer 3.0 e versioni successive per applicare le patch nell'ordine in cui vengono scritte.
 
 ## <a name="example"></a>Esempio
 
-In questo esempio sono presenti tre patch, QFE1, QFE2 e ServicePack1, ognuna con una [tabella MsiPatchSequence.](msipatchsequence-table.md) Queste patch sono state scritte per essere applicate alla versione 1.0 dell'applicazione.
+In questo esempio sono presenti tre patch, QFE1, QFE2 e ServicePack1, ognuna con una tabella [MsiPatchSequence.](msipatchsequence-table.md) Queste patch sono state scritte per essere applicate alla versione 1.0 dell'applicazione.
 
 
 
@@ -31,9 +31,9 @@ In questo esempio sono presenti tre patch, QFE1, QFE2 e ServicePack1, ognuna con
 
  
 
-La [tabella MsiPatchSequence](msipatchsequence-table.md) di ogni patch include un solo record che contiene la famiglia di patch, il codice prodotto e il numero di sequenza. Le tre patch vengono tutte applicate allo stesso prodotto e appartengono alla stessa famiglia di patch, denominata AppPatch. Nessuna delle patch ha l'attributo **msidbPatchSequenceSupersedeEarlier.**
+La [tabella MsiPatchSequence](msipatchsequence-table.md) di ogni patch contiene un solo record che contiene la famiglia di patch, il codice prodotto e il numero di sequenza. Le tre patch vengono tutte applicate allo stesso prodotto e appartengono alla stessa famiglia di patch, denominata AppPatch. Nessuna delle patch ha **l'attributo msidbPatchSequenceSupersedeEarlier.**
 
-[Tabella MsiPatchSequence per](msipatchsequence-table.md) l'aggiornamento di piccole dimensioni QFE1. [](small-updates.md) 
+[Tabella MsiPatchSequence per](msipatchsequence-table.md) l'aggiornamento QFE1 [di piccole dimensioni](small-updates.md). 
 
 | PatchFamily | ProductCode                            | Sequenza | Attributi |
 |-------------|----------------------------------------|----------|------------|
@@ -43,7 +43,7 @@ La [tabella MsiPatchSequence](msipatchsequence-table.md) di ogni patch include u
 
  
 
-[Tabella MsiPatchSequence per](msipatchsequence-table.md) l'aggiornamento di piccole dimensioni QFE2. [](small-updates.md) 
+[Tabella MsiPatchSequence per](msipatchsequence-table.md) l'aggiornamento di piccole [dimensioni](small-updates.md)QFE2 . 
 
 | PatchFamily | ProductCode                            | Sequenza | Attributi |
 |-------------|----------------------------------------|----------|------------|
@@ -63,11 +63,11 @@ La [tabella MsiPatchSequence](msipatchsequence-table.md) di ogni patch include u
 
  
 
-Se un utente installa la versione 1.0 del prodotto e quindi applica QFE2 e successivamente decide di applicare QFE1, il programma di installazione di Windows garantisce che la sequenza effettiva dell'applicazione patch al prodotto sia QFE1 applicata prima di QFE2. Se l'utente applica ServicePack1, quindi applica QFE2 e QFE1 insieme in un secondo momento, il programma di installazione di Windows garantisce che la sequenza effettiva dell'applicazione patch al prodotto sia QFE1 prima di QFE2 e prima di ServicePack1.
+Se un utente installa la versione 1.0 del prodotto e quindi applica QFE2 e successivamente decide di applicare QFE1, il programma di installazione di Windows garantisce che la sequenza effettiva dell'applicazione patch al prodotto sia QFE1 applicata prima di QFE2. Se l'utente applica ServicePack1, quindi applica QFE2 e QFE1 in un secondo momento, il programma di installazione di Windows garantisce che la sequenza effettiva dell'applicazione patch al prodotto sia QFE1 prima di QFE2 e prima di ServicePack1.
 
-Se ServicePack1 ha **msidbPatchSequenceSupersedeEarlier** impostato nella colonna Attributi della tabella [MsiPatchSequence,](msipatchsequence-table.md) significa che il Service Pack contiene tutte le modifiche in QFE1 e QFE2. In questo caso, QFE1 e QFE2 non vengono applicati quando viene applicato ServicePack1.
+Se servicePack1 ha **msidbPatchSequenceSupersedeEarlier** impostato nella colonna Attributi della relativa tabella [MsiPatchSequence,](msipatchsequence-table.md) significa che il Service Pack contiene tutte le modifiche in QFE1 e QFE2. In questo caso, QFE1 e QFE2 non vengono applicati quando viene applicato ServicePack1.
 
-**Windows Installer 2.0:** Non supportato. Le versioni precedenti Windows Installer 3.0 possono installare una sola patch per transazione e le patch vengono applicate nella sequenza fornita. Per l'esempio precedente, se QFE2 viene applicato per primo e quindi QFE1, si tratta di due transazioni e le patch vengono applicate alla versione 1.0 dell'applicazione nella sequenza QFE2 seguita da QFE1. Se ServicePack1 viene applicato per primo, non è possibile applicare QFE1 o QFE2 in una transazione successiva perché ServicePack1 è un aggiornamento secondario che modifica la versione dell'applicazione. QFE1 e QFE2 possono essere applicati solo alla versione 1.0 dell'applicazione.
+**Windows Installer 2.0:** Non supportato. Le versioni precedenti Windows Installer 3.0 possono installare una sola patch per transazione e le patch vengono applicate nella sequenza in cui vengono fornite. Per l'esempio precedente, se QFE2 viene applicato per primo e quindi QFE1, si tratta di due transazioni e le patch vengono applicate alla versione 1.0 dell'applicazione nella sequenza QFE2 seguita da QFE1. Se ServicePack1 viene applicato per primo, non è possibile applicare QFE1 o QFE2 in una transazione successiva perché ServicePack1 è un aggiornamento secondario che modifica la versione dell'applicazione. QFE1 e QFE2 possono essere applicati solo alla versione 1.0 dell'applicazione.
 
  
 

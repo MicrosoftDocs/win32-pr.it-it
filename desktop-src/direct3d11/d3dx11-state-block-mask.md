@@ -1,9 +1,9 @@
 ---
-title: Struttura D3DX11_STATE_BLOCK_MASK (D3dx11effect. h)
+title: D3DX11_STATE_BLOCK_MASK struttura (D3dx11effect.h)
 description: Indica lo stato del dispositivo.
 ms.assetid: 42044a6d-6a11-4f90-889a-82e7954da6c7
 keywords:
-- Struttura D3DX11_STATE_BLOCK_MASK Direct3D 11
+- D3DX11_STATE_BLOCK_MASK struttura Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41236c541fc251902a7a0a5ad6030a28dd36e3a4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8087f45ad94fe3e45f78a1be9d86b30f6f7e3f2c9161b9c4498865b12582436e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124936"
 ---
-# <a name="d3dx11_state_block_mask-structure"></a>\_Struttura della \_ maschera di blocco dello stato D3DX11 \_
+# <a name="d3dx11_state_block_mask-structure"></a>Struttura D3DX11 \_ STATE \_ BLOCK \_ MASK
 
 Indica lo stato del dispositivo.
 
@@ -83,10 +83,10 @@ typedef struct _D3DX11_STATE_BLOCK_MASK {
 
 <dl> <dt>
 
-**VS**
+**Vs**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -94,373 +94,373 @@ Valore booleano che indica se salvare lo stato del vertex shader.
 
 </dd> <dt>
 
-**VSSamplers**
+**VsSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler vertex shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori di vertex shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
-**VSShaderResources**
+**VsShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse vertex shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse vertex shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **VSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer costanti del vertex shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer costante.
+Matrice di buffer costanti vertex shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di buffer costante.
 
 </dd> <dt>
 
-**VSInterfaces**
+**Interfacce VSInterface**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce vertex shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce vertex shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
-**HS**
+**Hs**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato di Hull shader.
+Valore booleano che indica se salvare lo stato dello hull shader.
 
 </dd> <dt>
 
 **HSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler di Hull shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori di hull shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
 **HSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse dello shader Hull. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse di tipo hull shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **HSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer costanti dello shader Hull. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer costante.
+Matrice di buffer costanti di hull shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di buffer costante.
 
 </dd> <dt>
 
-**HSInterfaces**
+**Interfacce HS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce dello shader Hull. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce di hull shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
 **DS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato del Domain shader.
+Valore booleano che indica se salvare lo stato dello shader del dominio.
 
 </dd> <dt>
 
 **DSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler di Domain shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori domain-shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
 **DSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse dello shader di dominio. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse domain shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **DSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer di costanti dello shader di dominio. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer.
+Matrice di buffer costanti domain-shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot del buffer.
 
 </dd> <dt>
 
-**DSInterfaces**
+**Interfacce DS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce dello shader di dominio. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce domain-shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
 **GS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato di Geometry shader.
+Valore booleano che indica se salvare lo stato dello shader geometrico.
 
 </dd> <dt>
 
 **GSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler geometry shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori geometry shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
 **GSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse dello shader di geometria. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse geometry shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **GSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer costanti dello shader di geometria. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer.
+Matrice di buffer costanti geometry shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot del buffer.
 
 </dd> <dt>
 
-**GSInterfaces**
+**Interfacce GS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce di shader Geometry. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce geometry shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
-**PS**
+**Ps**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato del pixel shader.
+Valore booleano che indica se salvare lo pixel shader stato.
 
 </dd> <dt>
 
 **PSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler pixel shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori di pixel shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
 **PSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse pixel shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse pixel shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **PSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer costanti pixel shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer costante.
+Matrice di buffer costanti pixel shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di buffer costante.
 
 </dd> <dt>
 
-**PSInterfaces**
+**Interfacce PSInterface**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce pixel shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce pixel shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
 **PSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare il pixel shader le visualizzazioni di accesso non ordinate.
+Valore booleano che indica se salvare il pixel shader viste di accesso non ordinate.
 
 </dd> <dt>
 
 **CS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato di compute shader.
+Valore booleano che indica se salvare lo stato del compute shader.
 
 </dd> <dt>
 
 **CSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di Sampler di compute shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del campionatore.
+Matrice di campionatori compute shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di campionamento.
 
 </dd> <dt>
 
 **CSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di risorse di calcolo shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di risorse compute shader. La matrice è una maschera di bit multi-byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **CSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer costanti compute shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot del buffer costante.
+Matrice di buffer costanti compute shader. La matrice è una maschera di bit multi-byte in cui ogni bit rappresenta uno slot di buffer costante.
 
 </dd> <dt>
 
-**CSInterfaces**
+**Interfacce CSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di interfacce di calcolo shader. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di interfaccia.
+Matrice di interfacce compute shader. La matrice è una maschera di bit multi byte in cui ogni bit rappresenta uno slot di interfaccia.
 
 </dd> <dt>
 
 **CSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare le visualizzazioni di accesso non ordinato del compute shader.
+Valore booleano che indica se salvare le visualizzazioni di accesso non ordinate del compute shader.
 
 </dd> <dt>
 
 **IAVertexBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matrice di buffer dei vertici. La matrice è una maschera di bit a più byte in cui ogni bit rappresenta uno slot di risorse.
+Matrice di buffer dei vertici. La matrice è una maschera di bit multi-byte in cui ogni bit rappresenta uno slot di risorse.
 
 </dd> <dt>
 
 **IAIndexBuffer**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato del buffer dell'indice.
+Valore booleano che indica se salvare lo index buffer stato.
 
 </dd> <dt>
 
 **IAInputLayout**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -471,7 +471,7 @@ Valore booleano che indica se salvare lo stato del layout di input.
 **IAPrimitiveTopology**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -482,94 +482,94 @@ Valore booleano che indica se salvare lo stato della topologia primitiva.
 **OMRenderTargets**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare gli Stati delle destinazioni di rendering.
+Valore booleano che indica se salvare gli stati delle destinazioni di rendering.
 
 </dd> <dt>
 
 **OMDepthStencilState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato dello stencil di profondità.
+Valore booleano che indica se salvare lo stato depth-stencil.
 
 </dd> <dt>
 
 **OMBlendState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato di Blend.
+Valore booleano che indica se salvare lo stato di blend.
 
 </dd> <dt>
 
 **RSViewports**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare gli Stati dei viewport.
+Valore booleano che indica se salvare gli stati dei viewport.
 
 </dd> <dt>
 
 **RSScissorRects**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare gli Stati dei rettangoli a forbice.
+Valore booleano che indica se salvare gli stati dei rettangoli di forbice.
 
 </dd> <dt>
 
 **RSRasterizerState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato del rasterizzatore.
+Valore booleano che indica se salvare lo stato di rasterizzazione.
 
 </dd> <dt>
 
 **SOBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare gli Stati dei buffer di flusso.
+Valore booleano che indica se salvare gli stati dei buffer di flusso in uscita.
 
 </dd> <dt>
 
 **Predicazione**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valore booleano che indica se salvare lo stato predicazione.
+Valore booleano che indica se salvare lo stato del predicato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Una maschera di blocco di stato indica che il dispositivo è stato modificato da un passaggio o da una tecnica.
+Una maschera di blocco di stato indica che il dispositivo indica che un passaggio o una tecnica cambia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -577,7 +577,7 @@ Una maschera di blocco di stato indica che il dispositivo è stato modificato da
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -585,7 +585,7 @@ Una maschera di blocco di stato indica che il dispositivo è stato modificato da
 
 <dl> <dt>
 
-[Strutture Effects 11](d3d11-graphics-reference-effects11-structures.md)
+[Effetti 11 Strutture](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

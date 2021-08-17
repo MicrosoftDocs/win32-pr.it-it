@@ -17,7 +17,7 @@ ms.locfileid: "118773629"
 # <a name="esentsectorsizenotsupportedexception-methods"></a>Metodi di EsentSectorSizeNotSupportedException 
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentSectorSizeNotSupportedException](./esentsectorsizenotsupportedexception-class.md) espone i membri seguenti.
 
@@ -39,7 +39,7 @@ Il [tipo EsentSectorSizeNotSupportedException](./esentsectorsizenotsupportedexce
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -55,7 +55,7 @@ Il [tipo EsentSectorSizeNotSupportedException](./esentsectorsizenotsupportedexce
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
+<td>Quando ne viene eseguito l'override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>

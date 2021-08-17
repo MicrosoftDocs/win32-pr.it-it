@@ -1,11 +1,11 @@
 ---
-title: Attributo Dns-Root
-description: Nome di dominio DNS più alto assegnato a una partizione di dominio/directory.
+title: Dns-Root attributo
+description: Nome di dominio DNS in alto assegnato a una partizione di dominio/directory.
 ms.assetid: 0b33daad-b5c5-4126-86fa-abd3e0006c5f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Dns-Root attribute
-- Schema AD dell'attributo dnsRoot
+- Dns-Root schema AD dell'attributo
+- Attributo dnsRoot Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a2c2fd2c39e8f0015d7641eccd27279b3478ec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6f87acecb86fcd8ca8af4bbc2917dbe5381deaf4e5722a5803d31f186e57e04d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961580"
 ---
-# <a name="dns-root-attribute"></a>Attributo Dns-Root
+# <a name="dns-root-attribute"></a>Dns-Root attributo
 
-Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. Viene impostato su un oggetto crossRef e, tra le altre cose, viene usato per la generazione di riferimenti. Quando si esegue la ricerca in un intero albero di dominio, è necessario avviare la ricerca in corrispondenza dell'oggetto Dns-Root. Questo attributo può essere multivalore, nel qual caso vengono generati più riferimenti.
+Nome di dominio DNS in alto assegnato a una partizione di dominio/directory. Questa proprietà viene impostata su un oggetto crossRef e viene usata, tra le altre cose, per la generazione di segnalazioni. Quando si esegue una ricerca in un intero albero di dominio, la ricerca deve essere avviata in corrispondenza dellDns-Root o object. Questo attributo può essere multivalore, nel qual caso vengono generate più segnalazioni.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Dns-Root                                    |
-| LDAP-Display-Name | dnsRoot                                     |
+| Ldap-Display-Name | dnsRoot                                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.28                       |
-| System-ID-GUID    | bf967959-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967959-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| A valore singolo       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| A valore singolo       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| A valore singolo       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome di dominio DNS più alto assegnato a una partizione di dominio/directory. V
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| A valore singolo       | Falso                                      |
 | Indicizzato             | Vero                                       |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | 1                                          |
 | Range-Upper            | 255                                        |
 | Search-Flags           | 0x00000001                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 

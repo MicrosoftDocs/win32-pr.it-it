@@ -46,7 +46,7 @@ HRESULT SetTimeouts(
 *ResolveTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato durante la risoluzione di un nome host (ad esempio ) in un indirizzo IP (ad esempio `www.microsoft.com` 192.168.131.199), in millisecondi. Il valore predefinito è zero, ovvero nessun timeout (infinito). Se il timeout DNS viene specificato usando NAME RESOLUTION TIMEOUT, si verifica \_ \_ un sovraccarico di un thread per ogni richiesta.
+Valore di timeout applicato durante la risoluzione di un nome host (ad esempio ) in un indirizzo IP (ad esempio `www.microsoft.com` 192.168.131.199), in millisecondi. Il valore predefinito è zero, ovvero nessun timeout (infinito). Se il timeout DNS viene specificato usando NAME \_ RESOLUTION \_ TIMEOUT, si verifica un sovraccarico di un thread per ogni richiesta.
 
 </dd> <dt>
 
@@ -60,14 +60,14 @@ Valore di timeout applicato quando si stabilisce un socket di comunicazione con 
 *SendTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato quando si invia un singolo pacchetto di dati della richiesta sul socket di comunicazione al server di destinazione, in millisecondi. Una richiesta di grandi dimensioni inviata a un server HTTP viene in genere suddivisa in più pacchetti. il timeout di invio si applica all'invio di ogni pacchetto singolarmente. Il valore predefinito è 30.000 (30 secondi).
+Valore di timeout applicato durante l'invio di un singolo pacchetto di dati della richiesta sul socket di comunicazione al server di destinazione, in millisecondi. Una richiesta di grandi dimensioni inviata a un server HTTP viene in genere suddivisa in più pacchetti. Il timeout di invio si applica all'invio di ogni pacchetto singolarmente. Il valore predefinito è 30.000 (30 secondi).
 
 </dd> <dt>
 
 *ReceiveTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato quando si riceve un pacchetto di dati di risposta dal server di destinazione, in millisecondi. Le risposte di grandi dimensioni vengono suddivise in più pacchetti. Il timeout di ricezione si applica al recupero di ogni pacchetto di dati dal socket. Il valore predefinito è 30.000 (30 secondi).
+Valore di timeout applicato quando si riceve un pacchetto di dati di risposta dal server di destinazione, in millisecondi. Le risposte di grandi dimensioni sono suddivise in più pacchetti. Il timeout di ricezione si applica al recupero di ogni pacchetto di dati dal socket. Il valore predefinito è 30.000 (30 secondi).
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Tutti i parametri sono obbligatori. Il valore 0 o -1 imposta un timeout per l'at
 I valori di timeout vengono applicati al livello Winsock.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHttp.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHttp.
 
  
 
@@ -184,7 +184,7 @@ int main()
 
 
 
-L'esempio di scripting seguente illustra come impostare tutti i timeout WinHTTP su 30 secondi, aprire una connessione HTTP e inviare una richiesta HTTP.
+L'esempio di scripting seguente mostra come impostare tutti i timeout WinHTTP su 30 secondi, aprire una connessione HTTP e inviare una richiesta HTTP.
 
 
 ```JScript
@@ -211,7 +211,7 @@ WinHttpReq.Send();
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
 | Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |

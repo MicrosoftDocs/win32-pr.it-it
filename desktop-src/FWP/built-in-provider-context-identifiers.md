@@ -1,6 +1,6 @@
 ---
-title: Identificatori di contesto del provider predefiniti (Fwpmu. h)
-description: I contesti provider predefiniti identificano i criteri predefiniti da usare con i socket protetti.
+title: Identificatori di contesto del provider predefiniti (Fwpmu.h)
+description: I contesti provider predefiniti identificano i criteri predefiniti da usare con i socket sicuri.
 ms.assetid: 439a5abc-08ac-4514-a126-d738e5311003
 topic_type:
 - apiref
@@ -13,37 +13,37 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 942ed1d21d2acd46f0dc6b303049e0936e3cf63d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0247b58b38de55eb67479c68e0c0955fb9d2a56a793215330366ca8ccfbe4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951330"
 ---
 # <a name="built-in-provider-context-identifiers"></a>Identificatori di contesto del provider predefiniti
 
-Gli identificatori per i contesti del provider incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID. Questi contesti provider predefiniti identificano i criteri predefiniti da usare con i socket protetti.
+Gli identificatori per i contesti del provider incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID. Questi contesti provider predefiniti identificano i criteri predefiniti da usare con i socket sicuri.
 
-Questi identificatori sono definiti nel modo seguente.
+Questi identificatori sono definiti come indicato di seguito.
 
 <dl> <dt>
 
-<span id="FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_AUTHIP"></span><span id="fwpm_provider_context_secure_socket_authip"></span>**\_ \_ \_ \_ AUTHIP socket sicuro del contesto del provider FWPM \_**
+<span id="FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_AUTHIP"></span><span id="fwpm_provider_context_secure_socket_authip"></span>**FWPM \_ PROVIDER \_ CONTEXT \_ SECURE \_ SOCKET \_ AUTHIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Authenticated Internet Protocol (AuthIP) criterio predefinito della modalità principale per i socket protetti.
+Authenticated Internet Protocol criteri predefiniti in modalità principale (AuthIP) per i socket sicuri.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_IPSEC"></span><span id="fwpm_provider_context_secure_socket_ipsec"></span>**\_ \_ \_ \_ IPSec socket sicuro del contesto del provider FWPM \_**
+<span id="FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_IPSEC"></span><span id="fwpm_provider_context_secure_socket_ipsec"></span>**IPSEC SECURE \_ \_ SOCKET DEL CONTESTO \_ \_ DEL \_ PROVIDER FWPM**
 </dt> <dd> <dl> <dt>
 
 
 
-Criteri predefiniti della modalità rapida IPsec (Internet Protocol Security) per i socket protetti.
+Criteri predefiniti in modalità rapida IPsec (Internet Protocol Security) per i socket sicuri.
 
 
 </dt> </dl> </dd> </dl>
@@ -54,9 +54,9 @@ Criteri predefiniti della modalità rapida IPsec (Internet Protocol Security) pe
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

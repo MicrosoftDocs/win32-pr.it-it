@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 88073e23826362e1f9a753f411ac89ac1e272fc6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 052174ba85370c62dc8a4618b44880f1e750801a78cf61963d863a9057c10568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804053"
 ---
 # <a name="d3dxvec2hermite-function-d3dx9mathh"></a>Funzione D3DXVec2Hermite (D3dx9math.h)
 
-Esegue un'interpolazione spline hermite, usando i vettori 2D specificati.
+Esegue un'interpolazione spline hermite usando i vettori 2D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,7 +68,7 @@ Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine, un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR2 di**](d3dxvector2.md) origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine, un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR2 di**](d3dxvector2.md) origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ La **funzione D3DXVec2Hermite** interpola da (positionA, tangentA) a (positionB,
 
 L'interpolazione spline è una generalizzazione della spline ease-in e ease-out. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q(s) = As³ + Bs² + Cs + D (e quindi, Q(s) = 3As² + 2Bs + C)
+Q(s) = As² + Bs² + Cs + D (e pertanto, Q(s) = 3As² + 2Bs + C)
 
 a) Q(0) = v1, quindi Q'(0) = t1
 

@@ -1,9 +1,9 @@
 ---
 title: WM/MCDI
-description: L'attributo WM/MCDI contiene l'identificatore del CD musicale. Si tratta di un dump binario del sommario del CD usato per identificare in modo univoco il CD.
+description: L'attributo WM/MCDI contiene l'identificatore cd musicale. Si tratta di un dump binario del sommario del CD usato per identificare in modo univoco il CD.
 ms.assetid: cb16c62b-b9e0-4676-b1bb-ff26a2e09cb7
 keywords:
-- Formato di Windows Media WM/MCDI
+- Formato windows media WM/MCDI
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da5c629bcef9ca2072d0ddda433fde97932e97e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: bccf4a081141c1902fe93680937a3196e015e6690acf76d69f3a3d8a016c092e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963750"
 ---
 # <a name="wmmcdi"></a>WM/MCDI
 
-L'attributo **WM/MCDI** contiene l'identificatore del CD musicale. Si tratta di un dump binario del sommario del CD usato per identificare in modo univoco il CD.
+**L'attributo WM/MCDI** contiene l'identificatore cd musicale. Si tratta di un dump binario del sommario del CD usato per identificare in modo univoco il CD.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMMCDI
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_binario di tipo WMT \_**
+**FILE \_ BINARIO DI TIPO WMT \_**
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è compatibile con il frame ID3, MCDI. Per la specifica ID3 per il frame MCDI è necessario che esista un solo frame per ogni file e che esista un frame TRCK valido. L'editor dei metadati non esegue alcuna convalida per queste regole. Inoltre, le dimensioni di WM/MCDI non sono limitate a 804 byte, così come il frame ID3 MCDI.
+Questo attributo è compatibile con il frame ID3, MCDI. La specifica ID3 per il frame MCDI richiede che esista solo un frame di questo tipo per ogni file e che esista un frame TRCK valido. L'editor dei metadati non esegue alcuna convalida per queste regole. Inoltre, le dimensioni di WM/MCDI non sono limitate a 804 byte, così come il frame MCDI ID3.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,9 +42,9 @@ Questo attributo è compatibile con il frame ID3, MCDI. Per la specifica ID3 per
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

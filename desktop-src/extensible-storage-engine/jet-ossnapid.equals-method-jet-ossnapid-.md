@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 383b8641cb9f0ee37da0ae3ddabd8311ab38495f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e9abae88f2649bb1e49a324e336e4305568b11780e0456052ba82fe96f6993f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107685"
 ---
 # <a name="jet_ossnapidequals-method-jet_ossnapid"></a>JET_OSSNAPID. Metodo Equals (JET_OSSNAPID)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
-    Istanza di da confrontare con questa istanza.
+    Istanza da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IEquatable \<T\> . Uguale a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable. \<T\> Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID struttura](./jet-ossnapid-structure.md)
 
-[Membri JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID membri](./jet-ossnapid-members.md)
 
 [Confronta l'overload](./jet-ossnapid.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

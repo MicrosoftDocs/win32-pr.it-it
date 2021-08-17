@@ -1,6 +1,6 @@
 ---
 title: Metodi della proprietà IADsSession (Iads.h)
-description: I metodi delle proprietà dell'interfaccia IADsSession ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere Metodi delle proprietà dell'interfaccia.
+description: I metodi di proprietà dell'interfaccia IADsSession ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: b2366da7-c51c-4279-8931-2000d3110d72
 ms.tgt_platform: multiple
 keywords:
@@ -36,7 +36,7 @@ ms.locfileid: "118690736"
 ---
 # <a name="iadssession-property-methods"></a>Metodi della proprietà IADsSession
 
-I metodi delle proprietà [**dell'interfaccia IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,7 +52,7 @@ Nome della workstation client.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -67,7 +67,7 @@ HRESULT get_Computer(
 
 </dt> </dl> </dd> <dt>
 
-**ComputerPath**
+**Percorso computer**
 </dt> <dd> <dl>
 
 ADsPath dell'oggetto computer per la workstation client.
@@ -77,7 +77,7 @@ ADsPath dell'oggetto computer per la workstation client.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -102,7 +102,7 @@ Tempo trascorso, in secondi, dall'avvio della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **LONG**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -127,7 +127,7 @@ Tempo di inattività, in secondi, della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **LONG**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -152,7 +152,7 @@ Nome dell'utente della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -177,7 +177,7 @@ ADsPath dell'oggetto utente per l'utente di questa sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -299,7 +299,7 @@ Cleanup:
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IADsSession IID è definito come \_ 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9<br/>          |
+| IID<br/>                      | IID \_ IADsSession è definito come 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9<br/>          |
 
 
 

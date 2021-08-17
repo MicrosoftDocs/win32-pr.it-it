@@ -15,7 +15,7 @@ ms.locfileid: "118637713"
 
 L'azione DuplicateFiles duplica i file installati [dall'azione InstallFiles.](installfiles-action.md) I file duplicati possono essere copiati nella stessa directory con un nome diverso o in una directory diversa con il nome originale.
 
-## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
+## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
 L'azione DuplicateFiles deve essere eseguita dopo [l'azione InstallFiles](installfiles-action.md). L'azione DuplicateFiles deve essere eseguita anche dopo [l'azione PatchFiles](patchfiles-action.md) per impedire la duplicazione della versione senza patch del file.
 
@@ -35,11 +35,11 @@ L'azione DuplicateFiles deve essere eseguita dopo [l'azione InstallFiles](instal
 
 ## <a name="remarks"></a>Commenti
 
-L'azione DuplicateFiles elabora una voce [di tabella DuplicateFile](duplicatefile-table.md) solo se il componente collegato a tale voce viene installato localmente. Per altre informazioni, vedere [Tabella dei componenti.](component-table.md)
+L'azione DuplicateFiles elabora una voce di tabella [DuplicateFile](duplicatefile-table.md) solo se il componente collegato a tale voce viene installato in locale. Per altre informazioni, vedere [Tabella dei componenti](component-table.md).
 
-La stringa nel campo DestFolder è un nome di proprietà il cui valore deve essere risolto in un percorso completo. Questa proprietà può essere una delle voci di directory nella tabella [Directory,](directory-table.md) qualsiasi proprietà di cartella predefinita ([**CommonFilesFolder,**](commonfilesfolder.md)ad esempio) o una proprietà impostata da qualsiasi voce nella tabella [AppSearch.](appsearch-table.md) Se la **proprietà DestFolder** non restituisce un percorso valido, l'azione DuplicateFiles non esegue alcuna operazione per tale voce.
+La stringa nel campo DestFolder è un nome di proprietà il cui valore deve essere risolto in un percorso completo. Questa proprietà può essere una delle voci di directory nella tabella [Directory,](directory-table.md) qualsiasi proprietà di cartella predefinita ([**CommonFilesFolder**](commonfilesfolder.md), ad esempio) o una proprietà impostata da qualsiasi voce nella [tabella AppSearch.](appsearch-table.md) Se la **proprietà DestFolder** non restituisce un percorso valido, l'azione DuplicateFiles non esegue alcuna operazione per tale voce.
 
-Se il nome del file di destinazione nella colonna DestName della tabella DuplicateFile viene lasciato vuoto, il nome del file di destinazione sarà uguale al nome del file originale.
+Se il nome del file di destinazione nella colonna DestName della tabella DuplicateFile viene lasciato vuoto, il nome del file di destinazione sarà lo stesso del nome del file originale.
 
 I file installati dall'azione DuplicateFiles vengono rimossi [dall'azione RemoveDuplicateFiles](removeduplicatefiles-action.md) quando appropriato.
 

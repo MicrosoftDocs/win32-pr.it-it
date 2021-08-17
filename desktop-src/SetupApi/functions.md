@@ -4,16 +4,16 @@ ms.assetid: 0a9518b7-f231-48f2-ba50-5b802f8ccaed
 title: Funzioni (API di installazione)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24051c52d7c7555e1e1b84c03fafd6faf6ad1b96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e2bf2b8797faa22576fc78deb58e46fd1f2a140721b0d71df469812fabab314
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886881"
 ---
 # <a name="functions-setup-api"></a>Funzioni (API di installazione)
 
-\[Queste funzioni sono disponibili per l'uso nei sistemi operativi indicati nelle sezioni requisiti. Possono essere modificati o non disponibili nelle versioni successive. SetupAPI non deve più essere utilizzato per l'installazione delle applicazioni. Usare invece il Windows Installer per lo sviluppo di programmi di installazione dell'applicazione. SetupAPI continua a essere utilizzato per l'installazione dei driver di dispositivo.\]
+\[Queste funzioni sono disponibili per l'uso nei sistemi operativi indicati nelle sezioni Requisiti. Possono essere modificati o non disponibili nelle versioni successive. SetupAPI non deve più essere usato per l'installazione di applicazioni. Usare invece il programma di installazione Windows per lo sviluppo di programmi di installazione delle applicazioni. SetupAPI continua a essere usato per l'installazione dei driver di dispositivo.\]
 
 Le funzioni seguenti fanno parte dell'API di installazione:
 

@@ -1,23 +1,23 @@
 ---
-title: sample_b (SM4-ASM)
-description: Campiona i dati dall'elemento/trama specificato utilizzando l'indirizzo specificato e la modalità di filtro identificata dal campionatore specificato. | sample_b (SM4-ASM)
+title: sample_b (sm4 - asm)
+description: Campionare i dati dall'elemento/trama specificato usando l'indirizzo specificato e la modalità di filtro identificata dal campionatore specificato. | sample_b (sm4 - asm)
 ms.assetid: FC0DF03E-9C21-4E88-96ED-EEFE86017E7C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e82696ecc5b01847f87b39cbfeba0c665bcde4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9193930aadf8874c759fde3beac7d7da4c9d01b709f6e0b1840b36fe0675ef8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790789"
 ---
-# <a name="sample_b-sm4---asm"></a>esempio \_ b (SM4-ASM)
+# <a name="sample_b-sm4---asm"></a>sample \_ b (sm4 - asm)
 
-Campiona i dati dall'elemento/trama specificato utilizzando l'indirizzo specificato e la modalità di filtro identificata dal campionatore specificato.
+Campionare i dati dall'elemento/trama specificato usando l'indirizzo specificato e la modalità di filtro identificata dal campionatore specificato.
 
 
 
-| esempio \_ b \[ \_ aoffimmi (u, v, w) \] dest \[ . mask \] , srcAddress \[ . Swizzle \] , srcResource \[ . Swizzle \] , srcSampler, srcLODBias. Select \_ Component |
+| sample \_ b \[ \_ aoffimmi(u,v,w) \] dest \[ .mask , \] srcAddress \[ .swizzle \] , srcResource \[ .swizzle \] , srcSampler, srcLODBias.select \_ component |
 |-----------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,11 +28,11 @@ Campiona i dati dall'elemento/trama specificato utilizzando l'indirizzo specific
 
 | Elemento                                                                                                               | Descrizione                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                    | \[nell' \] indirizzo del risultato dell'operazione.<br/>                                                              |
-| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[in \] un set di coordinate di trama. Per ulteriori informazioni, vedere l'istruzione di [esempio](sample--sm4---asm-.md) .<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[in \] un registro di trama. Per ulteriori informazioni, vedere l'istruzione di **esempio** .<br/>                                 |
-| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[in \] un registro del campionatore. Per ulteriori informazioni, vedere l'istruzione di **esempio** .<br/>                                 |
-| <span id="srcLODBias"></span><span id="srclodbias"></span><span id="SRCLODBIAS"></span>*srcLODBias*<br/>     | \[\]per informazioni su questo parametro, vedere la sezione **osservazioni** .<br/>                                        |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[in \] Indirizzo del risultato dell'operazione.<br/>                                                              |
+| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[in \] Un set di coordinate di trama. Per altre informazioni, vedere [l'istruzione di](sample--sm4---asm-.md) esempio.<br/> |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[in \] Un registro di trama. Per altre informazioni, vedere **l'istruzione di** esempio.<br/>                                 |
+| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[in \] Un registro del campionatore. Per altre informazioni, vedere **l'istruzione di** esempio.<br/>                                 |
+| <span id="srcLODBias"></span><span id="srclodbias"></span><span id="SRCLODBIAS"></span>*srcLODBias*<br/>     | \[Per \] informazioni su questo **parametro,** vedere la sezione Osservazioni.<br/>                                        |
 
 
 
@@ -40,17 +40,17 @@ Campiona i dati dall'elemento/trama specificato utilizzando l'indirizzo specific
 
 ## <a name="remarks"></a>Commenti
 
-I dati di origine possono provenire da qualsiasi tipo di risorsa, ad eccezione dei buffer. Viene applicata un'ulteriore distorsione al livello di dettaglio calcolato come parte dell'esecuzione dell'istruzione.
+I dati di origine possono derivare da qualsiasi tipo di risorsa, diverso da Buffer. Viene applicata una distorsione aggiuntiva al livello di dettaglio calcolato come parte dell'esecuzione dell'istruzione.
 
-Questa istruzione si comporta come l'istruzione di [esempio](sample--sm4---asm-.md) con l'aggiunta dell'applicazione del valore *srcLODBias* specificato al livello di dettaglio calcolato come parte dell'esecuzione dell'istruzione prima di selezionare le mappe MIP. Il valore *srcLODBias* viene aggiunto all'oggetto LOD calcolato per ogni pixel, insieme al valore MipLODBias del campionatore, prima del morsetto a MinLOD e MaxLOD.
+Questa istruzione si [](sample--sm4---asm-.md) comporta come l'istruzione di esempio con l'aggiunta dell'applicazione del valore *srcLODBias* specificato al livello di valore di dettaglio calcolato come parte dell'esecuzione dell'istruzione prima di selezionare le mappe mip. Il *valore srcLODBias* viene aggiunto al LOD calcolato in base al pixel, insieme al valore MipLODBias del campionatore, prima della chiusura a MinLOD e MaxLOD.
 
 ### <a name="restrictions"></a>Restrizioni
 
--   l' **esempio \_ b** eredita le stesse restrizioni dell'istruzione di [esempio](sample--sm4---asm-.md) , oltre alle restrizioni aggiuntive per il parametro aggiuntivo.
--   L'intervallo di *srcLODBias* è (-16 f a 15.99 f); i valori al di fuori di questo intervallo produrranno risultati non definiti.
--   *srcLODBias* deve usare un selettore di componente singolo se non è un controllo immediato scalare.
+-   **\_ L'esempio b** eredita le stesse restrizioni dell'istruzione [di](sample--sm4---asm-.md) esempio, oltre ad altre restrizioni per il parametro aggiuntivo.
+-   L'intervallo *di srcLODBias* è (da -16,0f a 15,99f); I valori esterni a questo intervallo produrranno risultati indefiniti.
+-   *srcLODBias* deve usare un selettore di componente singolo se non è un selettore scalare immediato.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -62,20 +62,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -85,7 +85,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

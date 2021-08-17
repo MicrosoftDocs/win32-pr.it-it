@@ -1,7 +1,7 @@
 ---
 description: Ottiene una trama.
 ms.assetid: e009ccc2-4491-4976-9460-7478b2bd34c2
-title: 'Metodo ID3DXBaseEffect:: GetTexture (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetTexture (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 25ef71df1f9dcd84bbe6726fd3a13f9ec09eff17
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7b7f52eaa5d78e7f1a88d88a077536f5ece581b588c60817f3947baa3dbfc9b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121850"
 ---
-# <a name="id3dxbaseeffectgettexture-method"></a>Metodo ID3DXBaseEffect:: GetTexture
+# <a name="id3dxbaseeffectgettexture-method"></a>Metodo ID3DXBaseEffect::GetTexture
 
 Ottiene una trama.
 
@@ -41,21 +41,21 @@ HRESULT GetTexture(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*ppTexture* \[ out\]
+*ppTexture* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)\***
 
-Restituisce un oggetto trama. Vedere [**IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9).
+Restituisce un oggetto trama. Vedere [**IDirect3DBaseTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

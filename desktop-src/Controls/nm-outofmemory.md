@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_OUTOFMEMORY (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo che il controllo non è stato in grado di completare un'operazione perché la memoria disponibile non è sufficiente. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_OUTOFMEMORY di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo che il controllo non è stato in grado di completare un'operazione perché la memoria disponibile non è sufficiente. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: d7d80515-ae6c-4817-a698-d486a9d86c4a
 keywords:
-- Controlli di Windows per il codice di notifica NM_OUTOFMEMORY
+- NM_OUTOFMEMORY del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f1321f88360d168b13d16b36f984d9b797dc094
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8a2efdd0048006b86d97964dc953d2dbd7c4ecb2687b3c0fb67a5effc63fea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958110"
 ---
-# <a name="nm_outofmemory-notification-code"></a>\_Codice di notifica OutOfMemory Nm
+# <a name="nm_outofmemory-notification-code"></a>Codice \_ di notifica NM OUTOFMEMORY
 
-Notifica alla finestra padre di un controllo che il controllo non è stato in grado di completare un'operazione perché la memoria disponibile non è sufficiente. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo che il controllo non è stato in grado di completare un'operazione perché la memoria disponibile non è sufficiente. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_OUTOFMEMORY
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive sulla notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito viene ignorato dal controllo.
+Il valore restituito viene ignorato dal controllo .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato dal controllo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

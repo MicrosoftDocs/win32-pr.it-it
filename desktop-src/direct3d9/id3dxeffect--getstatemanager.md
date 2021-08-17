@@ -1,7 +1,7 @@
 ---
-description: Ottenere il gestore degli Stati dell'effetto.
+description: Ottiene il gestore dello stato dell'effetto.
 ms.assetid: 4a09eb2a-2393-40b0-81b9-3c27998c2b77
-title: 'Metodo ID3DXEffect:: GetStateManager (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::GetStateManager (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 293b642dfecfa4cc14426addf2567d43dffa7233
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6700447485d83f2610149b809065ab02140a2e6cf068508b6571d5132844fb0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121642"
 ---
-# <a name="id3dxeffectgetstatemanager-method"></a>Metodo ID3DXEffect:: GetStateManager
+# <a name="id3dxeffectgetstatemanager-method"></a>Metodo ID3DXEffect::GetStateManager
 
-Ottenere il gestore degli Stati dell'effetto.
+Ottiene il gestore dello stato dell'effetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetStateManager(
 
 <dl> <dt>
 
-*ppManager* \[ out\]
+*PpManager* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTSTATEMANAGER**](id3dxeffectstatemanager.md)\***
 
-Restituisce un puntatore al gestore di stato. Vedere [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md).
+Restituisce un puntatore al gestore di stato. Vedere [**ID3DXEffectStateManager.**](id3dxeffectstatemanager.md)
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -47,7 +47,7 @@ HRESULT GetMaxFaceInfluences(
 
 Tipo: **[ **LPDIRECT3DINDEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9)**
 
-Puntatore al index buffer che contiene i dati dell'indice mesh.
+Puntatore all'index buffer che contiene i dati dell'indice mesh.
 
 </dd> <dt>
 

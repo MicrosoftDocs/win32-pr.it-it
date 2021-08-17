@@ -33,7 +33,7 @@ ms.locfileid: "118767791"
 ---
 # <a name="int16columnvalue-class"></a>Classe Int16ColumnValue
 
-Valore [della colonna Int16.](/dotnet/api/system.int16)
+Valore [di colonna Int16.](/dotnet/api/system.int16)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
@@ -42,7 +42,7 @@ Valore [della colonna Int16.](/dotnet/api/system.int16)
     [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int16](/dotnet/api/system.int16)\>  
       Microsoft.Isam.Esent.Interop.Int16ColumnValue  
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -67,6 +67,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri int16ColumnValue](./int16columnvalue-members.md)
+[Membri Int16ColumnValue](./int16columnvalue-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

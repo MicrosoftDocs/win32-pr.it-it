@@ -15,7 +15,7 @@ ms.locfileid: "118742927"
 
 Questo argomento descrive come implementare [**l'interfaccia IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult)
 
-È raro che sia necessario scrivere un'implementazione personalizzata [**dell'interfaccia IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) In quasi tutti i casi, l'implementazione Media Foundation standard è sufficiente. Questa implementazione viene restituita dalla [**funzione MFCreateAsyncResult.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateasyncresult) Tuttavia, se si scrive un'implementazione personalizzata, è necessario tenere presenti alcuni problemi.
+È raro che sia necessario scrivere un'implementazione personalizzata [**dell'interfaccia IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) In quasi tutti i casi, l'implementazione Media Foundation standard è sufficiente. Questa implementazione viene restituita [**dalla funzione MFCreateAsyncResult.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateasyncresult) Tuttavia, se si scrive un'implementazione personalizzata, è necessario tenere presenti alcuni problemi.
 
 In primo luogo, l'implementazione deve [**ereditare la struttura MFASYNCRESULT.**](/windows/win32/api/mfapi/ns-mfapi-mfasyncresult) Le Media Foundation di lavoro usano questa struttura internamente per inviare l'operazione. Inizializza tutti i membri della struttura su zero, ad eccezione del membro **pCallback,** che contiene un puntatore all'interfaccia di callback del chiamante.
 

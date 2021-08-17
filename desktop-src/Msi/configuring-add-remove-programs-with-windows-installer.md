@@ -105,7 +105,7 @@ Il programma di installazione usa [le proprietà pubbliche seguenti](public-prop
 </tr>
 <tr class="even">
 <td><a href="arpurlinfoabout.md"><strong>ARPURLINFOABOUT</strong></a></td>
-<td>URL per il nome dell'home page. Valore scritto dal programma di installazione nella chiave <a href="uninstall-registry-key.md">disinstalla del Registro di sistema</a>.</td>
+<td>URL per l'home page dell'applicazione. Valore scritto dal programma di installazione nella chiave <a href="uninstall-registry-key.md">disinstalla del Registro di sistema</a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="arpurlupdateinfo.md"><strong>ARPURLUPDATEINFO</strong></a></td>

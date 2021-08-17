@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_SIZETORECT (COMmctrl. h)
+title: RB_SIZETORECT messaggio (Commctrl.h)
 description: Tenta di trovare il layout migliore delle bande per il rettangolo specificato.
 ms.assetid: c6242b54-bd65-489b-b417-9680cc39b64a
 keywords:
-- Controlli di Windows Message RB_SIZETORECT
+- RB_SIZETORECT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3db5727ee8c94d2473b503c9a81b7669bb829a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba63630fc64f56dff914b4fb576ecc6cef43d12d192606a5088924fd6a5832e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078551"
 ---
-# <a name="rb_sizetorect-message"></a>\_Messaggio SIZETORECT RB
+# <a name="rb_sizetorect-message"></a>Messaggio RB \_ SIZETORECT
 
 Tenta di trovare il layout migliore delle bande per il rettangolo specificato.
 
@@ -35,7 +35,7 @@ Tenta di trovare il layout migliore delle bande per il rettangolo specificato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che specifica il rettangolo in cui deve essere ridimensionato il controllo Rebar.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che specifica il rettangolo in cui deve essere ridimensionato il controllo rebar.
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ Restituisce un valore diverso da zero se si è verificata una modifica del layou
 
 ## <a name="remarks"></a>Commenti
 
-Le bande Rebar verranno disposte e incapsulate in base alle esigenze per adattarsi al rettangolo. Le bande con lo \_ stile VARIABLEHEIGHT RBBS verranno ridimensionate nel modo più uniforme possibile per adattarsi al rettangolo. L'altezza di un Rebar orizzontale o la larghezza di un Rebar verticale può variare a seconda del nuovo layout.
+Le bande rebar verranno disposte e incapsulate in base alle esigenze per adattarle al rettangolo. Le bande con lo stile RBBS VARIABLEHEIGHT verranno ridimensionate nel modo più uniforme possibile per \_ adattarle al rettangolo. L'altezza di un rebar orizzontale o la larghezza di un rebar verticale può cambiare, a seconda del nuovo layout.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Le bande Rebar verranno disposte e incapsulate in base alle esigenze per adattar
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

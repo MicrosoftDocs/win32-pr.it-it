@@ -1,38 +1,38 @@
 ---
-title: Hosting del controllo Media Player Windows in un'applicazione Windows
-description: Hosting del controllo Media Player Windows in un'applicazione Windows
+title: Hosting del controllo Windows Media Player in un'Windows applicazione
+description: Hosting del controllo Windows Media Player in un'Windows applicazione
 ms.assetid: 8da04160-b9db-4082-aeff-b0107189e33e
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Windows Media Player, programmi basati su Windows
-- Modello a oggetti di Windows Media Player, programmi basati su Windows
-- modello a oggetti, programmi basati su Windows
-- Windows Media Player Mobile, programmi basati su Windows
-- Controllo ActiveX di Windows Media Player, programmi basati su Windows
-- Controllo ActiveX Windows Media Player Mobile, programmi basati su Windows
-- Controllo ActiveX, programmi basati su Windows
-- Incorporamento di programmi basati su Windows
-- incorporamento, programmi basati su Windows
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Dispositivi mobili, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player,Windows basati su applicazioni
+- Windows Media Player modello a oggetti, Windows basati su applicazioni
+- modello a oggetti, Windows basati su applicazioni
+- Windows Media Player Programmi basati Windows mobili
+- Windows Media Player ActiveX controllo, Windows basati su applicazioni
+- Windows Media Player Controllo ActiveX per dispositivi mobili, Windows basati su dispositivi mobili
+- ActiveX controllo, Windows basati su applicazioni
+- Windows incorporamento del programma basato su criteri
+- incorporamento, Windows basati su applicazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2190f0d0076fe3253c39f583ae7d2c197f8cb11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f3c2b4d84194376bd16842f0a9567c83fce2aa616ed4bfef4f20f7255068e8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748278"
 ---
-# <a name="hosting-the-windows-media-player-control-in-a-windows-application"></a>Hosting del controllo Media Player Windows in un'applicazione Windows
+# <a name="hosting-the-windows-media-player-control-in-a-windows-application"></a>Hosting del controllo Windows Media Player in un'Windows applicazione
 
-Per utilizzare il controllo ActiveX di Windows Media Player (inclusa l'interfaccia utente) in un programma basato su Windows, è necessario specificare un contenitore di controlli ActiveX. ATL fornisce la classe **CAxWindow** per fornire la funzionalità della finestra host ActiveX.
+Per usare il controllo Windows Media Player ActiveX (inclusa l'interfaccia utente) in un programma basato su Windows, è necessario fornire un contenitore ActiveX controllo. ATL fornisce la **classe CAxWindow** per fornire ActiveX della finestra host.
 
-Per ospitare il controllo Media Player Windows utilizzando la classe **CAxWindow** , attenersi alla seguente procedura:
+Per ospitare il Windows Media Player usando la **classe CAxWindow,** seguire questa procedura:
 
 1.  Includere le intestazioni seguenti:
     ```C++
@@ -54,7 +54,7 @@ Per ospitare il controllo Media Player Windows utilizzando la classe **CAxWindow
 
     
 
-3.  Quando viene creata la finestra dell'applicazione, chiamare **AtlAxWinInit**, che è necessario quando si utilizza la finestra host ActiveX ATL.
+3.  Quando viene creata la finestra dell'applicazione, chiamare **AtlAxWinInit,** che è necessario quando si usa la finestra host ActiveX ATL.
     ```C++
     AtlAxWinInit();
     
@@ -88,7 +88,7 @@ Per ospitare il controllo Media Player Windows utilizzando la classe **CAxWindow
 
     
 
-7.  Creare il controllo Media Player Windows nella finestra host usando l'ID classe:
+7.  Creare il Windows Media Player nella finestra host usando l'ID classe:
     ```C++
     hr = spHost->CreateControl(CComBSTR(_T("{6BF52A52-394A-11d3-B153-00C04F79FAA6}")), m_wndView, 0);
     
@@ -96,7 +96,7 @@ Per ospitare il controllo Media Player Windows utilizzando la classe **CAxWindow
 
     
 
-8.  Recuperare il puntatore all'interfaccia **IWMPPlayer** :
+8.  Recuperare il **puntatore all'interfaccia IWMPPlayer:**
     ```C++
     hr = m_wndView.QueryControl(&m_spWMPPlayer);
     
@@ -104,13 +104,13 @@ Per ospitare il controllo Media Player Windows utilizzando la classe **CAxWindow
 
     
 
-Quando si scrive codice personalizzato, assicurarsi di controllare ogni codice restituito **HRESULT** per individuare eventuali errori.
+Quando si scrive codice personalizzato, assicurarsi di controllare la presenza di errori in ogni **codice restituito HRESULT.**
 
-Per un esempio completo in cui viene illustrato come ospitare il controllo ActiveX di Windows Media Player usando la classe **CAxWindow** , vedere l'esempio WMPHost.
+Per un esempio completo che illustra come ospitare il controllo Windows Media Player ActiveX usando la classe **CAxWindow,** vedere l'esempio WMPHost.
 
-## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hosting del controllo Windows Media Player 10 mobile in Windows CE
+## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hosting del controllo Windows Media Player 10 Mobile in Windows CE
 
-Microsoft eMbedded Visual C++ 4,0 e Pocket PC 2003 SDK o lo Smartphone 2003 SDK devono essere installati quando si sviluppano applicazioni basate su Windows CE che ospitano un controllo Windows Media Player 10 Mobile. Inoltre, a differenza di ATL per Windows, ATL per Windows CE non supporta il modello di threading dell'Apartment. Pertanto, è necessario trovare tutte le istanze del threading Apartment nel progetto ATL e modificarle in modo da utilizzare il threading libero.
+Microsoft eMbedded Visual C++ 4.0 e Pocket PC 2003 SDK o Smartphone 2003 SDK devono essere installati durante lo sviluppo di applicazioni basate su Windows CE che ospitano un controllo Windows Media Player 10 Mobile. Inoltre, a differenza di ATL Windows, ATL per Windows CE non supporta il modello di threading apartment. Pertanto, è necessario trovare tutte le istanze del threading apartment nel progetto ATL e modificarle per usare il threading libero.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -119,12 +119,12 @@ Microsoft eMbedded Visual C++ 4,0 e Pocket PC 2003 SDK o lo Smartphone 2003 SDK 
 [**Esempi**](samples.md)
 </dt> <dt>
 
-[**Uso del controllo Media Player di Windows in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Uso del Windows Media Player in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

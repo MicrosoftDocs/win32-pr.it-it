@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-DS-Non-Members-BL
-description: Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano ad esso (stessa funzionalità di Non-Security-Member-BL).
+description: Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano a esso (stessa funzionalità di Non-Security-Member-BL).
 ms.assetid: 51725a95-a9c0-4c88-a390-b8e35b8fd3e1
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118683635"
 ---
 # <a name="ms-ds-non-members-bl-attribute"></a>Attributo ms-DS-Non-Members-BL
 
-Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano ad esso (stessa funzionalità di Non-Security-Member-BL).
+Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano a esso (stessa funzionalità di Non-Security-Member-BL).
 
 
 
@@ -32,7 +32,7 @@ Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si
 | CN                | ms-DS-Non-Members-BL                    |
 | Ldap-Display-Name | msDS-NonMembersBL                       |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1794                 |
 | System-Id-Guid    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
@@ -120,7 +120,7 @@ Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -141,7 +141,7 @@ Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

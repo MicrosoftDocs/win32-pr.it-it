@@ -5,7 +5,7 @@ ms.assetid: 75db2663-9eb8-406d-b1a9-8f6092c95f9d
 keywords:
 - Windows Media Format SDK, esempi di codice
 - Windows Media Format SDK, codice di esempio
-- Windows Media Format SDK, esempi di codice DRM
+- Windows Sdk di formato multimediale, esempi di codice DRM
 - digital rights management (DRM), esempi di codice
 - DRM (digital rights management),esempi di codice
 - digital rights management (DRM), codice di esempio

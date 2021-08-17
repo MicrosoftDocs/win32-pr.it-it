@@ -16,7 +16,7 @@ ms.locfileid: "118690516"
 ---
 # <a name="search-time-limit"></a>Limite di tempo di ricerca
 
-Quando si richiede una ricerca in un server con un carico di lavoro elevato, è possibile indicare al server di limitare la ricerca a un limite di tempo specificato. Ad esempio, per eseguire un'applicazione per generare un report settimanale in un server che esegue quasi la capacità e per evitare di ottimizzare il tempo di CPU e impedire l'esecuzione di altri processi, è possibile impostare il tempo di ricerca su un valore ridotto ed eseguire nuovamente l'applicazione in un secondo momento se non riesce a generare il report.
+Quando si richiede una ricerca in un server con un carico di lavoro elevato, è possibile indicare al server di limitare la ricerca a un limite di tempo specificato. Ad esempio, per eseguire un'applicazione per generare un report settimanale in un server che sta eseguendo quasi la capacità e per evitare di ottimizzare il tempo di CPU e impedire l'esecuzione di altri processi, è possibile impostare il tempo di ricerca su un valore ridotto ed eseguire nuovamente l'applicazione in un secondo momento se non riesce a generare il report.
 
 Alcuni server possono imporre un proprio limite di tempo amministrativo. In questi casi, se si specifica un valore di limite di tempo di ricerca maggiore del limite di tempo amministrativo, il server ignora la specifica e usa invece il limite di tempo amministrativo interno.
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 79f66c0e9130a320042c9b914bad47e5f02f0d8a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 078e23f94d72c6eccfa1e35ba02700a4c88f6e84e4acae5112429c02013f362c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803633"
 ---
 # <a name="d3dxvector2-structure-d3dx9mathh"></a>Struttura D3DXVECTOR2 (D3dx9math.h)
 

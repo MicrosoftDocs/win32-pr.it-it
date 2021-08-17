@@ -1,7 +1,7 @@
 ---
-description: Converte una stringa con pacchetto binario in una matrice di byte.
+description: Converte una stringa compressa binaria in una matrice di byte.
 ms.assetid: 61eeef7b-c962-4f10-ab93-6371db0b37a3
-title: Utilities. BinaryStringToByteArray, metodo
+title: Metodo Utilities.BinaryStringToByteArray
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 54d2463d38ea9d7f01037e932531465dd2d06a70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69528e14496d6055605532411b558085ac963c911022a9a734d7d4cb9129004e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118896600"
 ---
-# <a name="utilitiesbinarystringtobytearray-method"></a>Utilities. BinaryStringToByteArray, metodo
+# <a name="utilitiesbinarystringtobytearray-method"></a>Metodo Utilities.BinaryStringToByteArray
 
-\[Il metodo **BinaryStringToByteArray** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti.\]
+\[Il **metodo BinaryStringToByteArray** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti.\]
 
-Il metodo **BinaryStringToByteArray** converte una stringa con pacchetto binario in una matrice di byte.
+Il **metodo BinaryStringToByteArray** converte una stringa compressa binaria in una matrice di byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ Utilities.BinaryStringToByteArray( _
 
 <dl> <dt>
 
-*BinaryString* \[ in\]
+*BinaryString* \[ Pollici\]
 </dt> <dd>
 
-Stringa con pacchetto binario da convertire in una matrice di byte.
+Stringa compressa binaria da convertire in una matrice di byte.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Matrice contenente il risultato della conversione.
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

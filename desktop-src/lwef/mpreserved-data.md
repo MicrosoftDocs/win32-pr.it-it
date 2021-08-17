@@ -1,10 +1,10 @@
 ---
-title: Struttura MPRESERVED_DATA (MpClient. h)
+title: MPRESERVED_DATA (MpClient.h)
 description: Dati di notifica riservati.
 ms.assetid: C92206BD-6E56-4B7D-ABB1-DC1149AE141D
 keywords:
-- Struttura MPRESERVED_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPRESERVED_DATA
+- MPRESERVED_DATA funzionalità dell'ambiente Windows legacy
+- PMPRESERVED_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1e08184da71fe857cb412ef986c986a0c59baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faabacdcfb581f9b4fc7e9d9a42464dd61e152ca533865acfb7231a711f02317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747655"
 ---
-# <a name="mpreserved_data-structure"></a>\_Struttura dei dati MPRESERVED
+# <a name="mpreserved_data-structure"></a>Struttura MPRESERVED \_ DATA
 
 Dati di notifica riservati.
 
@@ -49,14 +49,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensioni in byte dei dati riservati.
+Dimensioni dei dati riservati, in byte.
 
 </dd> <dt>
 
 **pbReservedData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
@@ -70,9 +70,9 @@ Puntatore ai dati riservati.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

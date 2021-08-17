@@ -24,7 +24,7 @@ ms.locfileid: "118640999"
 # <a name="ddccigetvcpfeature-function"></a>Funzione DDCCIGetVCPFeature
 
 > [!IMPORTANT]
-> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -66,7 +66,7 @@ Codice VCP su cui eseguire una query.
 *pvct* \[ out, facoltativo\]
 </dt> <dd>
 
-Riceve il tipo di codice VCP come membro [**dell'enumerazione MC \_ VCP CODE \_ \_ TYPE.**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type)
+Riceve il tipo di codice VCP, come membro [**dell'enumerazione MC \_ VCP CODE \_ \_ TYPE.**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type)
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contr
 
 Le applicazioni devono [**chiamare GetVCPFeatureAndVCPFeatureReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) anziché questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 

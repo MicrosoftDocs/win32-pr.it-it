@@ -1,17 +1,17 @@
 ---
-description: Dati di testo associati all'istanza del servizio. Ogni stringa è in genere una coppia chiave-valore, separata da &\# 0034; =&\# 0034;.
+description: Dati di testo associati all'istanza del servizio. Ogni stringa è in genere una coppia chiave-valore, separata da &\# 0034;=&\# 0034;.
 ms.assetid: c514c9c9-7d5b-4c4a-b99a-723597b5b801
-title: System. Devices. dnssd. TextAttributes
+title: System.Devices.Dnssd.TextAttributes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 593a27c590fd9e5939b256607e450b592c89268a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15dfd926a80106a9baa2b14a5b26baa3ad03a77d4aa7e651cfce87b8aebbc034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728318"
 ---
-# <a name="systemdevicesdnssdtextattributes"></a>System. Devices. dnssd. TextAttributes
+# <a name="systemdevicesdnssdtextattributes"></a>System.Devices.Dnssd.TextAttributes
 
 Dati di testo associati all'istanza del servizio. Ogni stringa è in genere una coppia chiave-valore, separata da "=".
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

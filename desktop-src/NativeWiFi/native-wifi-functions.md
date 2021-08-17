@@ -1,22 +1,22 @@
 ---
-description: Le funzioni seguenti consentono agli sviluppatori di software di usare la funzionalità fornita dal Wi-Fi nativo.
+description: Le funzioni seguenti consentono agli sviluppatori di software di usare le funzionalità fornite dal Wi-Fi nativo.
 ms.assetid: c1816d68-48b2-4d3d-a8c8-4a243a4b3f3b
-title: Funzioni WiFi Native
+title: Funzioni Wi-Fi native
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce48b8f61f6558668c742e566eb53e3d32c8baa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b846a53626b2da6f492e20bee44a5b5909878c0c49becb530fa9701db18f19ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065041"
 ---
-# <a name="native-wifi-functions"></a>Funzioni WiFi Native
+# <a name="native-wifi-functions"></a>Funzioni Wi-Fi native
 
-Le funzioni seguenti consentono di usare la funzionalità fornita dal Wi-Fi nativo.
+Le funzioni seguenti consentono di usare le funzionalità fornite dal Wi-Fi nativo.
 
--   [**richiamata della notifica del sink di \_ visualizzazione della direttiva. \_ \_ \_**](wfd-display-sink-notification-callback.md)
--   [**\_ \_ callback completo della sessione di apertura della \_ direttiva GMA \_**](/windows/win32/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
+-   [**CALLBACK DI NOTIFICA SINK DI VISUALIZZAZIONE WFD \_ \_ \_ \_**](wfd-display-sink-notification-callback.md)
+-   [**CALLBACK DI COMPLETAMENTO \_ DELLA SESSIONE WFD OPEN \_ \_ \_**](/windows/win32/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
 -   [**WFDCancelOpenSession**](/windows/win32/api/wlanapi/nf-wlanapi-wfdcancelopensession)
 -   [**WFDDisplaySinkCloseSession**](wfdclosedisplaysinksession.md)
 -   [**WFDCloseHandle**](/windows/win32/api/wlanapi/nf-wlanapi-wfdclosehandle)
@@ -27,7 +27,7 @@ Le funzioni seguenti consentono di usare la funzionalità fornita dal Wi-Fi nati
 -   [**WFDStartOpenSession**](/windows/win32/api/wlanapi/nf-wlanapi-wfdstartopensession)
 -   [**WFDDisplaySinkStop**](wfdstopdisplaysink.md)
 -   [**WFDUpdateDeviceVisibility**](/windows/win32/api/wlanapi/nf-wlanapi-wfdupdatedevicevisibility)
--   [**\_callback notifiche \_ WLAN**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
+-   [**CALLBACK DI NOTIFICA WLAN \_ \_**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
 -   [**WlanAllocateMemory**](/windows/win32/api/wlanapi/nf-wlanapi-wlanallocatememory)
 -   [**WlanCloseHandle**](/windows/win32/api/wlanapi/nf-wlanapi-wlanclosehandle)
 -   [**WlanConnect**](/windows/win32/api/wlanapi/nf-wlanapi-wlanconnect)

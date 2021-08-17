@@ -23,7 +23,7 @@ ms.locfileid: "118901348"
 
 \[**L'oggetto PublicKey** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**proprietà X509Certificate2.PublicKey**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.publickey?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-**L'oggetto PublicKey** rappresenta una chiave pubblica in un [**oggetto**](certificate.md) Certificate.
+**L'oggetto PublicKey** rappresenta una chiave pubblica in un [**oggetto Certificate.**](certificate.md)
 
 ## <a name="when-to-use"></a>Utilizzo
 
@@ -43,7 +43,7 @@ ms.locfileid: "118901348"
 
 | Proprietà                                                            | Tipo di accesso          | Descrizione                                                                                                                            |
 |:--------------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Algoritmo**](publickey-algorithm.md)<br/>                 | Sola lettura<br/> | Recupera [**l'oggetto OID**](oid.md) che identifica l'algoritmo utilizzato dalla chiave pubblica. Si tratta della proprietà predefinita.<br/> |
+| [**Algoritmo**](publickey-algorithm.md)<br/>                 | Sola lettura<br/> | Recupera [**l'oggetto OID**](oid.md) che identifica l'algoritmo usato dalla chiave pubblica. Si tratta della proprietà predefinita.<br/> |
 | [**EncodedKey**](publickey-encodedkey.md)<br/>               | Sola lettura<br/> | Recupera un [**oggetto EncodedData**](encodeddata.md) che fornisce l'accesso al valore della chiave pubblica.<br/>                 |
 | [**EncodedParameters**](publickey-encodedparameters.md)<br/> | Sola lettura<br/> | Recupera un oggetto [**EncodedData**](encodeddata.md) che fornisce l'accesso ai parametri dell'algoritmo a chiave pubblica.<br/>  |
 | [**Length**](publickey-length.md)<br/>                       | Sola lettura<br/> | Recupera la lunghezza della chiave pubblica in bit.<br/>                                                                             |

@@ -4,16 +4,16 @@ ms.assetid: 3c0a71f6-f643-4a5e-8b5c-15c976a3736e
 title: Implementazione di SceSvcAttachmentUpdate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 381a2b04b75399b5f580426d9f2dd9f5911f52d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3f2399ee87fdc97dcfb82d9fd711c6407894c3dbbbf17a31df39bb225010032
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894595"
 ---
 # <a name="implementing-scesvcattachmentupdate"></a>Implementazione di SceSvcAttachmentUpdate
 
-La funzione [**SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) accetta come parametro un set di informazioni di configurazione fornite. Recupera quindi le informazioni dal database di sicurezza, calcola una nuova configurazione di base usando le informazioni di configurazione fornite, calcola le nuove informazioni di analisi basate sulle informazioni del database e le informazioni di configurazione fornite e aggiorna il database con le nuove informazioni di configurazione e analisi di base. È possibile implementare **SceSvcAttachmentUpdate** usando l'algoritmo seguente.
+La [**funzione SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) accetta come parametro un set di informazioni di configurazione fornite. Recupera quindi le informazioni dal database di sicurezza, calcola una nuova configurazione di base usando le informazioni di configurazione fornite, calcola le nuove informazioni di analisi in base alle informazioni del database e alle informazioni di configurazione fornite e aggiorna il database con le nuove informazioni di configurazione e analisi di base. È possibile **implementare SceSvcAttachmentUpdate** usando l'algoritmo seguente.
 
 **Per implementare SceSvcAttachmentUpdate**
 
@@ -24,9 +24,9 @@ La funzione [**SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) accetta come
     -   Se i dati sono diversi, chiamare la funzione di callback pfSetInfo nella struttura di callback per aggiornare i dati di configurazione nel database.
     -   Se i dati sono uguali, chiamare la funzione di callback pfSetInfo nella struttura di callback per aggiornare i dati di analisi nel database.
 
-4.  Ripetere fino a quando non vengono elaborati tutti i dati.
+4.  Ripetere l'operazione fino a quando non vengono elaborati tutti i dati.
 
-Nell'esempio seguente viene illustrata una possibile implementazione di [**SceSvcAttachmentUpdate**](scesvcattachmentupdate.md).
+Nell'esempio seguente viene illustrata una possibile implementazione di [**SceSvcAttachmentUpdate.**](scesvcattachmentupdate.md)
 
 
 ```C++

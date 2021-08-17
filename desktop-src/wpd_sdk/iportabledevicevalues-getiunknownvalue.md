@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetIUnknownValue recupera un valore di interfaccia IUnknown (Type VT \_ Unknown) specificato da una chiave.
+description: Il metodo GetIUnknownValue recupera un valore dell'interfaccia IUnknown (tipo VT \_ UNKNOWN) specificato da una chiave.
 ms.assetid: 2197fa1f-639d-4ac1-9d5b-c6534f3ecf1c
-title: 'Metodo IPortableDeviceValues:: GetIUnknownValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::GetIUnknownValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: bc7ecfdc699cfe5f572c303d2c8a9e71bafc026b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: daf1164fefdc414a84508e4b295620af3cb671e9da624dd60cc08541c5c4fd7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963650"
 ---
-# <a name="iportabledevicevaluesgetiunknownvalue-method"></a>Metodo IPortableDeviceValues:: GetIUnknownValue
+# <a name="iportabledevicevaluesgetiunknownvalue-method"></a>Metodo IPortableDeviceValues::GetIUnknownValue
 
-Il metodo **GetIUnknownValue** recupera un valore di interfaccia **IUnknown** (Type VT \_ Unknown) specificato da una chiave.
+Il **metodo GetIUnknownValue** recupera un **valore dell'interfaccia IUnknown** (tipo VT \_ UNKNOWN) specificato da una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,31 +41,31 @@ HRESULT GetIUnknownValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave **REFPROPERTYKEY** che specifica l'elemento da recuperare.
 
 </dd> <dt>
 
-*ppValue* \[ out\]
+*ppValue* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore all'interfaccia **IUnknown** recuperata. Il chiamante è responsabile della chiamata della **versione** sull'interfaccia recuperata.
+Indirizzo di una variabile che riceve un puntatore **all'interfaccia IUnknown** recuperata. Il chiamante è responsabile della chiamata **di Release** sull'interfaccia recuperata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                                  |
 |------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                             |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *Key* non è un'interfaccia **IUnknown** .<br/> |
-| <dl> <dt>**HRESULT \_ da \_ Win32 (errore \_ non \_ trovato)**</dt> </dl> | La proprietà specificata dalla *chiave* non è presente nella raccolta.<br/>         |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                             |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *key* non è **un'interfaccia IUnknown.**<br/> |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nell'insieme.<br/>         |
 
 
 
@@ -77,8 +77,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

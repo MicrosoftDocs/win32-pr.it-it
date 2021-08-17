@@ -1,10 +1,10 @@
 ---
-title: Display-name-attributo stampabile
-description: Nome visualizzato stampabile per un oggetto.
+title: Attributo Display-Name-Printable
+description: Nome visualizzato stampabile per un oggetto .
 ms.assetid: e8e5ff25-66dd-4c74-9571-9ec765d6d1af
 ms.tgt_platform: multiple
 keywords:
-- Nome visualizzato-schema AD dell'attributo stampabile
+- Schema AD dell'attributo Display-Name-Printable
 - Schema AD dell'attributo displayNamePrintable
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eff05c2279f026e3a94b707b522509b4801ff27
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1354cb59920460d83ad63b0e30498332dcce03b24a3a17db842cf87edf18119d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961700"
 ---
-# <a name="display-name-printable-attribute"></a>Display-name-attributo stampabile
+# <a name="display-name-printable-attribute"></a>Attributo Display-Name-Printable
 
-Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è in genere la combinazione del nome e del cognome dell'utente.
+Nome visualizzato stampabile per un oggetto . Il nome visualizzato stampabile è in genere la combinazione del nome dell'utente, dell'iniziale intermedia e del cognome.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------|
-| CN                | Display-Name-stampabile                 |
-| LDAP-Display-Name | displayNamePrintable                   |
+| CN                | Display-Name-Printable                 |
+| Ldap-Display-Name | displayNamePrintable                   |
 | Dimensione              | \-                                     |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account. |
 | Frequenza di aggiornamento  | \-                                     |
 | Attribute-Id      | 1.2.840.113556.1.2.353                 |
-| System-ID-GUID    | bf967954-0de6-11d0-a285-00aa003049e2   |
+| System-Id-Guid    | bf967954-0de6-11d0-a285-00aa003049e2   |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)    |
 
 
@@ -58,15 +58,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome visualizzato stampabile per un oggetto. Il nome visualizzato stampabile è 
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 256                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

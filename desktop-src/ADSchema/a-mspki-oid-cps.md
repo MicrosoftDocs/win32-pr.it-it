@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-OID-CPS
-description: CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittente Enterprise.
+title: Attributo ms-PKI-OID-CPS
+description: CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità di certificazione aziendale.
 ms.assetid: 94c5115e-a8d2-49d1-9fd2-f362e95550dc
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-PKI-OID-CPS
-- msPKI-OID-schema AD dell'attributo CPS
+- Schema AD dell'attributo msPKI-OID-CPS
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 218fc0eabe7311f46dba769f84b972a495138d3a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 25c9b9dddfe9b3af1f31537d83e7f4cad062df722269d002d7b2b80a5358b1c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960367"
 ---
-# <a name="ms-pki-oid-cps-attribute"></a>attributo ms-PKI-OID-CPS
+# <a name="ms-pki-oid-cps-attribute"></a>Attributo ms-PKI-OID-CPS
 
-CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittente Enterprise.
+CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità di certificazione aziendale.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------------------------------|
 | CN                | ms-PKI-OID-CPS                                                                             |
-| LDAP-Display-Name | msPKI-OID-CPS                                                                              |
+| Ldap-Display-Name | msPKI-OID-CPS                                                                              |
 | Dimensione              | \-                                                                                         |
-| Privilegio aggiornamento  | Amministratore dell'organizzazione                                                                   |
-| Frequenza di aggiornamento  | Ogni volta che viene creato un nuovo modello o vengono modificati gli attributi di modelli esistenti. |
+| Privilegio di aggiornamento  | Amministratore dell'organizzazione                                                                   |
+| Frequenza di aggiornamento  | Ogni volta che viene creato un nuovo modello o vengono modificati gli attributi di un modello esistente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1672                                                                    |
-| System-ID-GUID    | 5f49940e-a79f-4a51-bb6f-3d446a54dc6b                                                       |
+| System-Id-Guid    | 5f49940e-a79f-4a51-bb6f-3d446a54dc6b                                                       |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
@@ -57,15 +57,15 @@ CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittent
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classi usate in        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittent
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classi usate in        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittent
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classi usate in        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittent
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classi usate in        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ CPS (Certificate Policy Statement) per l'OID dei criteri dell'autorità emittent
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classi usate in        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 

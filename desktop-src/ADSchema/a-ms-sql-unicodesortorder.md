@@ -32,7 +32,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | CN                | MS-SQL-UnicodeSortOrder              |
 | Ldap-Display-Name | mS-SQL-UnicodeSortOrder              |
 | Dimensione              | 4 byte                              |
-| Aggiorna privilegio  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | All'avvio del sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1372              |
 | System-Id-Guid    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
@@ -58,7 +58,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -79,7 +79,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -100,7 +100,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -121,7 +121,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -142,7 +142,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -163,7 +163,7 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetStretchMode recupera la modalità di estensione. La modalità di estensione determina come viene eseguito il rendering di un'origine video se la relativa dimensione non corrisponde alle dimensioni di output.
+description: Il metodo GetStretchMode recupera la modalità di estensione. La modalità di estensione determina la modalità di rendering di un'origine video se le dimensioni non corrispondono alle dimensioni di output.
 ms.assetid: d9a3d283-edb5-40be-b877-69cb23462afa
-title: 'Metodo IAMTimelineSrc:: GetStretchMode (qedit. h)'
+title: Metodo IAMTimelineSrc::GetStretchMode (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8f10552ac67c50e8656f303fd524bdad2cd07823
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53be58df0315c4a03c62369f746efa510c2024fa030c3bef75eb4ff08505b1c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952910"
 ---
-# <a name="iamtimelinesrcgetstretchmode-method"></a>Metodo IAMTimelineSrc:: GetStretchMode
+# <a name="iamtimelinesrcgetstretchmode-method"></a>Metodo IAMTimelineSrc::GetStretchMode
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `GetStretchMode` metodo recupera la modalità di estensione. La modalità di estensione determina come viene eseguito il rendering di un'origine video se la relativa dimensione non corrisponde alle dimensioni di output.
+Il `GetStretchMode` metodo recupera la modalità di estensione. La modalità di estensione determina la modalità di rendering di un'origine video se le dimensioni non corrispondono alle dimensioni di output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,23 +48,23 @@ HRESULT GetStretchMode(
 *pnStretchMode* 
 </dt> <dd>
 
-Riceve un flag che indica la modalità di estensione corrente. Per un elenco di valori possibili, vedere [**ridimensionare i flag**](resize-flags.md).
+Riceve un flag che indica la modalità di estensione corrente. Per un elenco dei valori possibili, vedere [**Flag di ridimensionamento.**](resize-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

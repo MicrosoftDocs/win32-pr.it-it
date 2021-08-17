@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de565d9e6f8055f1b2ebc90c4deec83da463e7d5
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a9ac073ee9e71a47a36a34bf774698b7d00bec2cc675d9c1c1214725eb389dc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937310"
 ---
 # <a name="miscellaneous-state-variables"></a>Variabili di stato varie
 
@@ -73,7 +73,7 @@ ms.locfileid: "107909858"
 
  
 
-</dd> <dt><span id="GL_NAME_STACK_DEPTH"></span><span id="gl_name_stack_depth"></span>PROFONDITÀ DELLO STACK DEI NOMI DI CONTABILITÀ \_ \_ \_ GENERALE</dt> <dd> 
+</dd> <dt><span id="GL_NAME_STACK_DEPTH"></span><span id="gl_name_stack_depth"></span>GL \_ NAME \_ STACK \_ DEPTH</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ ms.locfileid: "107909858"
 
  
 
-</dd> <dt><span id="GL_RENDER_MODE"></span><span id="gl_render_mode"></span>MODALITÀ \_ DI RENDERING \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_RENDER_MODE"></span><span id="gl_render_mode"></span>MODALITÀ DI RENDERING GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|

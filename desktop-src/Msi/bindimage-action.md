@@ -1,5 +1,5 @@
 ---
-description: L'azione BindImage associa ogni eseguibile o DLL che deve essere associato alle DLL importate da esso.
+description: L'azione BindImage associa ogni eseguibile o DLL che deve essere associato alle DLL importate.
 ms.assetid: bf90acc0-4e90-4180-9df7-268b63a66538
 title: Azione BindImage
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118638777"
 ---
 # <a name="bindimage-action"></a>Azione BindImage
 
-L'azione BindImage associa ogni eseguibile o DLL che deve essere associato alle DLL importate da esso. L'azione BindImage agisce su ogni file nella [tabella BindImage,](bindimage-table.md) ma solo su quelli che devono essere installati in locale. Il programma di installazione calcola l'indirizzo virtuale di ogni funzione importata da tutte le DLL, quindi salva l'indirizzo virtuale calcolato nella tabella degli indirizzi di importazione [](i-gly.md) (IAT) dell'immagine di importazione.
+L'azione BindImage associa ogni eseguibile o DLL che deve essere associato alle DLL importate. L'azione BindImage agisce su ogni file nella [tabella BindImage,](bindimage-table.md) ma solo su quelli che devono essere installati in locale. Il programma di installazione calcola l'indirizzo virtuale di ogni funzione importata da tutte le DLL, quindi salva l'indirizzo virtuale calcolato nella tabella di indirizzi di importazione [*dell'immagine*](i-gly.md) importata.
 
-L'azione BindImage chiama internamente l'API **Windows BindImageEx.**
+L'azione BindImage chiama internamente **l'API di Windows BindImageEx.**
 
-## <a name="sequence-restrictions"></a>Restrizioni di sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
 L'azione BindImage deve essere eseguita dopo [l'azione InstallFiles.](installfiles-action.md)
 

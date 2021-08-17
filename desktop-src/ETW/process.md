@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8085bae0d00ebe830efff420744f6b7e9b4bf23c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25c21e5f301d88f3790900c70873d9485161f5041d28bb1a30f3bb85082a9bd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069901"
 ---
 # <a name="process-class"></a>Classe Process
 
@@ -67,8 +67,8 @@ Gli eventi di avvio di processi e thread possono essere registrati nel contesto 
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista \[ \| app UWP\]<br/>       |
-| Server minimo supportato<br/> | App UWP per app desktop di Windows Server 2008 \[ \|\]<br/> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>       |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ Gli eventi di avvio di processi e thread possono essere registrati nel contesto 
 [**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**Tipo \_ di processoGruppo1**](process-typegroup1.md)
+[**Process \_ TypeGroup1**](process-typegroup1.md)
 </dt> <dt>
 
 [**Processo \_ V0**](process-v0.md)

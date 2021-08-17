@@ -53,7 +53,7 @@ ms.locfileid: "118744458"
 [**MBNProfile**](schema-mbnprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**MBNProfile**](schema-mbnprofile-element.md)

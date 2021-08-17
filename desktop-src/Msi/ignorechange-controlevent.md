@@ -15,7 +15,7 @@ ms.locfileid: "118634459"
 
 IgnoreChange ControlEvent viene pubblicato dal [controllo DirectoryList](directorylist-control.md) quando la cartella selezionata viene modificata da una directory a un'altra nel controllo. Questo evento deve essere creato nella [tabella EventMapping](eventmapping-table.md).
 
-Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia [*utente ridotta*](r-gly.md) o un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
 ## <a name="published-by"></a>Pubblicato da
 
@@ -23,7 +23,7 @@ Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*c
 
 ## <a name="argument"></a>Argomento
 
-Questo ControlEvent non usa un argomento.
+Questo ControlEvent non usa un argomento .
 
 ## <a name="action-on-subscribers"></a>Azione nei Sottoscrittori
 

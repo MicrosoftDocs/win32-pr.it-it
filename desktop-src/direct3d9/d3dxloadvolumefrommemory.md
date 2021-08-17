@@ -1,7 +1,7 @@
 ---
 description: Carica un volume dalla memoria.
 ms.assetid: 9f74fcc0-f935-4466-865b-e798711a1f2f
-title: Funzione D3DXLoadVolumeFromMemory (D3dx9tex. h)
+title: Funzione D3DXLoadVolumeFromMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7d6c3f1bdfe40f19eeb57b4f0d8a38c40a239404
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c473d5194a20a7de7e20d76fbde18d0a974ff8f314dc93822f57bfef2a4a6a5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122965"
 ---
-# <a name="d3dxloadvolumefrommemory-function"></a>D3DXLoadVolumeFromMemory (funzione)
+# <a name="d3dxloadvolumefrommemory-function"></a>Funzione D3DXLoadVolumeFromMemory
 
 Carica un volume dalla memoria.
 
@@ -50,34 +50,34 @@ HRESULT D3DXLoadVolumeFromMemory(
 
 <dl> <dt>
 
-*pDestVolume* \[ in\]
+*pDestVolume* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVOLUME9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9)**
 
-Puntatore a un'interfaccia [**IDirect3DVolume9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9) . Specifica il volume di destinazione, che riceve l'immagine.
+Puntatore a [**un'interfaccia IDirect3DVolume9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9) Specifica il volume di destinazione che riceve l'immagine.
 
 </dd> <dt>
 
-*pDestPalette* \[ in\]
+*pDestPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la tavolozza di destinazione di 256 colori o **null**.
+Puntatore a [**una struttura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la tavolozza di destinazione di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*pDestBox* \[ in\]
+*pDestBox* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DBOX**](d3dbox.md) \***
 
-Puntatore a una struttura [**D3DBOX**](d3dbox.md) . Specifica la casella di destinazione. Impostare questo parametro su **null** per specificare l'intero volume.
+Puntatore a [**una struttura D3DBOX.**](d3dbox.md) Specifica la casella di destinazione. Impostare questo parametro su **NULL per** specificare l'intero volume.
 
 </dd> <dt>
 
-*pSrcMemory* \[ in\]
+*pSrcMemory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -86,66 +86,66 @@ Puntatore all'angolo superiore sinistro del volume di origine in memoria.
 
 </dd> <dt>
 
-*SrcFormat* \[ in\]
+*SrcFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DFORMAT](d3dformat.md)**
 
-Membro del tipo enumerato [D3DFORMAT](d3dformat.md) , il formato pixel del volume di origine.
+Membro del [tipo enumerato D3DFORMAT,](d3dformat.md) il formato pixel del volume di origine.
 
 </dd> <dt>
 
-*SrcRowPitch* \[ in\]
+*SrcRowPitch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pitch of source image, in bytes. Per i formati DXT (formati di trama compressi), questo numero deve rappresentare le dimensioni di una riga di celle, in byte.
+Passo dell'immagine di origine, in byte. Per i formati DXT (formati di trama compressa), questo numero deve rappresentare le dimensioni di una riga di celle, in byte.
 
 </dd> <dt>
 
-*SrcSlicePitch* \[ in\]
+*SrcSlicePitch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pitch of source image, in bytes. Per i formati DXT (formati di trama compressi), questo numero deve rappresentare la dimensione di una sezione di celle, in byte.
+Passo dell'immagine di origine, in byte. Per i formati DXT (formati di trama compressa), questo numero deve rappresentare le dimensioni di una sezione di celle, in byte.
 
 </dd> <dt>
 
-*pSrcPalette* \[ in\]
+*pSrcPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la tavolozza di origine di 256 colori o **null**.
+Puntatore a una [**struttura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la tavolozza di origine di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*pSrcBox* \[ in\]
+*pSrcBox* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DBOX**](d3dbox.md) \***
 
-Puntatore a una struttura [**D3DBOX**](d3dbox.md) . Specifica la casella di origine. **Null** non è un valore valido per questo parametro.
+Puntatore a [**una struttura D3DBOX.**](d3dbox.md) Specifica la casella di origine. **NULL** non è un valore valido per questo parametro.
 
 </dd> <dt>
 
-*Filtro* \[ di in\]
+*Filtro* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più [ \_ filtri D3DX](d3dx-filter.md) che controllano il modo in cui l'immagine viene filtrata. Specificare \_ il valore predefinito di D3DX per questo parametro equivale a specificare \_ il \_ \| \_ dithering del filtro D3DX del triangolo di filtro D3DX \_ .
+Combinazione di uno o più [filtri D3DX \_ che](d3dx-filter.md) controllano la modalità di filtro dell'immagine. Specificare D3DX DEFAULT per questo parametro equivale a specificare \_ D3DX \_ \_ FILTER TRIANGLE \| D3DX \_ FILTER \_ DITHER.
 
 </dd> <dt>
 
-*ColorKey* \[ in\]
+*ColorKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-Valore [**D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare il colorkey. Si tratta sempre di un colore ARGB a 32 bit, indipendente dal formato di immagine di origine. Alfa è significativo e in genere deve essere impostato su FF per le chiavi di colore opache. Pertanto, per il nero opaco, il valore sarà uguale a 0xFF000000.
+[**Valore D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare la chiave di colore. Si tratta sempre di un colore ARGB a 32 bit, indipendentemente dal formato dell'immagine di origine. Il valore alfa è significativo e in genere deve essere impostato su FF per le chiavi di colore opache. Pertanto, per il nero opaco, il valore sarebbe uguale a 0xFF000000.
 
 </dd> </dl>
 
@@ -157,7 +157,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-La scrittura in una superficie non di livello zero della trama del volume non comporterà l'aggiornamento del rettangolo modificato. Se viene chiamato **D3DXLoadVolumeFromMemory** e la trama non è già sporca (probabilmente in scenari di utilizzo normali), l'applicazione deve chiamare in modo esplicito [**IDirect3DVolumeTexture9:: AddDirtyBox**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-adddirtybox) sulla trama del volume.
+La scrittura su una superficie diversa da zero della trama del volume non causerà l'aggiornamento del rettangolo dirty. Se viene chiamato **D3DXLoadVolumeFromMemory** e la trama non era già dirty (questo è improbabile in scenari di utilizzo normale), l'applicazione deve chiamare in modo esplicito [**IDirect3DVolumeTexture9::AddDirtyBox**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-adddirtybox) sulla trama del volume.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -165,8 +165,8 @@ La scrittura in una superficie non di livello zero della trama del volume non co
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
