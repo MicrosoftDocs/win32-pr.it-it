@@ -1,9 +1,9 @@
 ---
-title: attributo min_is
-description: L'attributo IDL di DCE min \_ non è implementato in Microsoft RPC. Il valore dell'indice di matrice minimo valido è zero.
+title: min_is attributo
+description: L'attributo IDL DCE min \_ non è implementato in Microsoft RPC. Il valore dell'indice di matrice valido minimo è zero.
 ms.assetid: 993852f9-de1d-4014-8b9a-8ec74f526e00
 keywords:
-- attributo min_is MIDL
+- min_is attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,33 +12,33 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ee00eb999f6c043593714ea0a38567d8f5773af
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a57e5222635b00b8ba5eac7f6c7185a904d57303c9f6b0754e49eded6c7739a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806669"
 ---
-# <a name="min_is-attribute"></a>\_attributo min is
+# <a name="min_is-attribute"></a>min \_ è l'attributo
 
-L'attributo IDL di DCE **Min \_ non è** implementato in Microsoft RPC. Il valore dell'indice di matrice minimo valido è zero.
+L'attributo IDL DCE **min \_ non** è implementato in Microsoft RPC. Il valore dell'indice di matrice valido minimo è zero.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**matrici**](arrays-1.md)
+[**Matrici**](arrays-1.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**Max \_ è**](max-is.md)
+[**max \_ is**](max-is.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

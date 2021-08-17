@@ -1,5 +1,5 @@
 ---
-title: DDCCIGetCapabilitiesString (funzione)
+title: Funzione DDCCIGetCapabilitiesString
 description: Ottiene una stringa che descrive le funzionalità di un monitoraggio.
 ms.assetid: 54041126-b710-4448-a9f0-9b644d6b8186
 keywords:
@@ -14,17 +14,17 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9a49a6d7672ee505b4095afd3c6603c719679f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f21cf89ef459e2585dda9f05e4f16d032949d423c627225380481d71c59400d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806129"
 ---
-# <a name="ddccigetcapabilitiesstring-function"></a>DDCCIGetCapabilitiesString (funzione)
+# <a name="ddccigetcapabilitiesstring-function"></a>Funzione DDCCIGetCapabilitiesString
 
 > [!IMPORTANT]
-> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -47,36 +47,36 @@ NTSTATUS WINAPI DDCCIGetCapabilitiesString(
 
 <dl> <dt>
 
-*hMonitor* \[ in\]
+*hMonitor* \[ Pollici\]
 </dt> <dd>
 
 Handle per un monitor fisico.
 
 </dd> <dt>
 
-*pszString* \[ out\]
+*pszString* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve la stringa di funzionalità. Per ottenere la lunghezza della stringa delle funzionalità, chiamare [**DDCCIGetCapabilitiesStringLength**](ddccigetcapabilitiesstringlength.md).
+Puntatore a un buffer che riceve la stringa di funzionalità. Per ottenere la lunghezza della stringa delle funzionalità, chiamare [**DDCCIGetCapabilitiesStringLength.**](ddccigetcapabilitiesstringlength.md)
 
 </dd> <dt>
 
-*dwLength* \[ in\]
+*dwLength* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni del buffer *pszString* , in caratteri, incluso il carattere null di terminazione.
+Dimensione del buffer *pszString,* in caratteri, incluso il carattere Null di terminazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono chiamare [**CapabilitiesRequestAndCapabilitiesReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-capabilitiesrequestandcapabilitiesreply) invece di chiamare questa funzione.
+Le applicazioni devono [**chiamare CapabilitiesRequestAndCapabilitiesReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-capabilitiesrequestandcapabilitiesreply) invece di chiamare questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

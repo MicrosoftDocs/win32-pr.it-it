@@ -1,57 +1,57 @@
 ---
-title: Attributo la V-text-align
-description: Attributo la V-text-align
+title: Attributo VML V-Text-Align
+description: Attributo VML V-Text-Align
 ms.assetid: ca2cbbf6-ddbb-4f2b-942c-3fe0033bd649
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6efb96bde980a4831f400ada7032f9ee37f1d976
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 54bf8ec2e781b04e7ababc0b30ea3996e569e5cf9066a4bac072806fd7329eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117939130"
 ---
-# <a name="vml-v-text-align-attribute"></a>Attributo la V-text-align
+# <a name="vml-v-text-align-attribute"></a>Attributo VML V-Text-Align
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'allineamento del testo. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Percorso di testo](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "v-text-align: *Expression* " >
+<v: *element* style="v-text-align: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. v-text-align = "*Expression*"
+*element* .style.v-text-align="*expression*"
 
-*espressione* = *element*. Style. v-text-align
+*expression* = *elemento*.style.v-text-align
 
 **Osservazioni:**
 
 I possibili valori sono:
 
--   **Left** (impostazione predefinita)
--   **Ok**
--   **Center**
--   **giustificare**
+-   **left** (impostazione predefinita)
+-   **va bene**
+-   **Centro**
+-   **Giustificare**
 -   **lettera-giustificazione**
--   **Stretch-giustifica**
+-   **giustificazione estesa**
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il testo verrà esteso per adattarsi al percorso, ma lo spazio aggiuntivo verrà inserito tra ogni lettera.
+Il testo verrà adattato al percorso, ma lo spazio aggiuntivo verrà inserito tra ogni lettera.
 
 
 ```HTML
@@ -65,6 +65,6 @@ Il testo verrà esteso per adattarsi al percorso, ma lo spazio aggiuntivo verrà
 
 
 
- 
+ 
 
- 
+ 

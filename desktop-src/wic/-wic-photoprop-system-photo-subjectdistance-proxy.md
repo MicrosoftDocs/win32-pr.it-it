@@ -1,5 +1,5 @@
 ---
-description: Proxy di proprietà per i criteri dei metadati delle foto System.Photo.SubjectDistance.
+description: Proxy di proprietà per i criteri dei metadati della foto System.Photo.SubjectDistance.
 ms.assetid: 5a54183b-3e7c-41db-b225-2bf399c17629
 title: System.Photo.SubjectDistance Proxy
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118204639"
 ---
 # <a name="systemphotosubjectdistance-proxy"></a>System.Photo.SubjectDistance Proxy
 
-Proxy di proprietà per i criteri dei metadati delle foto System.Photo.SubjectDistance.
+Proxy di proprietà per i criteri dei metadati della foto System.Photo.SubjectDistance.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 

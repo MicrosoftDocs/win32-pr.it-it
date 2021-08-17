@@ -1,7 +1,7 @@
 ---
-description: GetCount non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.
+description: GetCount non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: 1fe39f2d-f95e-4436-a780-40fe8bd41b74
-title: 'Metodo IEnumUserIdentity:: GetCount (Msident. h)'
+title: Metodo IEnumUserIdentity::GetCount (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 43355a9585fc4099c8649f7df506ff3495a53944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4848ec183096b37adbc04521fab04fd800d3783377d1e14b3abd068819648ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678938"
 ---
-# <a name="ienumuseridentitygetcount-method"></a>Metodo IEnumUserIdentity:: GetCount
+# <a name="ienumuseridentitygetcount-method"></a>Metodo IEnumUserIdentity::GetCount
 
-\[**GetCount** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**GetCount** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio utente rapido e Desktop remoto](fastuserswitching.md).\]
 
-Ottiene il numero di identità utente attualmente presenti nel sistema.
+Ottiene il conteggio delle identità utente attualmente presenti nel sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,12 +41,12 @@ HRESULT GetCount(
 
 <dl> <dt>
 
-*pnCount* \[ out\]
+*pnCount* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Puntatore a un _ *ULONG** che riceve il conteggio.
+Puntatore a **un ULONG** che riceve il conteggio.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Puntatore a un _ *ULONG** che riceve il conteggio.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -66,12 +66,12 @@ Se il supporto per più identità utente è disabilitato, *pnCount* riceverà il
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                  |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ Se il supporto per più identità utente è disabilitato, *pnCount* riceverà il
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md)
+[**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Reset**](ienumuseridentity-reset.md)
+[**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Next**](ienumuseridentity-next.md)
+[**IEnumUserIdentity::Next**](ienumuseridentity-next.md)
 </dt> </dl>
 
  

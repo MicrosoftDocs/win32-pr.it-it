@@ -1,7 +1,7 @@
 ---
 description: Aggiunge l'oggetto OID specificato alla raccolta.
 ms.assetid: 0ae087d6-768a-4538-b834-0f936680de05
-title: OID. Add, metodo
+title: Metodo OIDs.Add
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: d2fa007798a0657991ec8e37a7dddc9fb4c95b2c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff686ae816fa61d68e0a0c40326581025ced8f4c94fb5cffc633ff452ac4f0ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117979652"
 ---
-# <a name="oidsadd-method"></a>OID. Add, metodo
+# <a name="oidsadd-method"></a>Metodo OIDs.Add
 
-\[Il metodo **Add** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Usare invece la [**classe OidCollection**](/dotnet/api/system.security.cryptography.oidcollection?view=netcore-3.1) nello spazio dei nomi [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[Il **metodo** Add è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe OidCollection nello**](/dotnet/api/system.security.cryptography.oidcollection?view=netcore-3.1) spazio [**dei nomi System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-Il metodo **Add** aggiunge l'oggetto [**OID**](oid.md) specificato alla raccolta.
+Il **metodo Add** aggiunge l'oggetto [**OID**](oid.md) specificato alla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ OIDs.Add( _
 
 <dl> <dt>
 
-*OID* \[ in\]
+*OID* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**OID**](oid.md) da aggiungere alla raccolta. L'oggetto **OID** viene aggiunto nell'ordinamento in base al relativo valore punteggiato.
+Oggetto [**OID**](oid.md) da aggiungere alla raccolta. **L'oggetto OID** viene aggiunto nell'ordinamento in base al relativo valore punteggiato.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

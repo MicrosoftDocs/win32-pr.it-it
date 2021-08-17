@@ -1,11 +1,11 @@
 ---
-title: attributo ms-TPM-TPM-Information-for-computer-BL
-description: Questo attributo collega un oggetto TPM agli oggetti computer associati.
+title: Attributo ms-TPM-Tpm-Information-For-Computer-BL
+description: Questo attributo collega un oggetto TPM agli oggetti Computer associati.
 ms.assetid: 75f3d39a-afea-459d-a105-c1eb24066578
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TPM-TPM-Information-for-computer-BL
-- msTPM-schema AD attributo TpmInformationForComputerBL
+- Schema AD dell'attributo ms-TPM-Tpm-Information-For-Computer-BL
+- Schema AD dell'attributo msTPM-TpmInformationForComputerBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 298f6b11ddfbad300585da45cfac96e9ccf4350d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2da1f274507aa590bb894246927c09d2e94039dc6f8a125612bc48df1a699f02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837915"
 ---
-# <a name="ms-tpm-tpm-information-for-computer-bl-attribute"></a>attributo ms-TPM-TPM-Information-for-computer-BL
+# <a name="ms-tpm-tpm-information-for-computer-bl-attribute"></a>Attributo ms-TPM-Tpm-Information-For-Computer-BL
 
-Questo attributo collega un oggetto TPM agli oggetti computer associati.
+Questo attributo collega un oggetto TPM agli oggetti Computer associati.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-TPM-TPM-Information-for-computer-BL  |
-| LDAP-Display-Name | msTPM-TpmInformationForComputerBL       |
+| CN                | ms-TPM-Tpm-Information-For-Computer-BL  |
+| Ldap-Display-Name | msTPM-TpmInformationForComputerBL       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2110                 |
-| System-ID-GUID    | 14fa84c9-8ecd-4348-bc91-6d3ced472ab7    |
+| System-Id-Guid    | 14fa84c9-8ecd-4348-bc91-6d3ced472ab7    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -53,15 +53,15 @@ Questo attributo collega un oggetto TPM agli oggetti computer associati.
 | ID collegamento                | 2183         |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

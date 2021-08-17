@@ -1,9 +1,9 @@
 ---
 title: Ribbon.SizeDefinitions - proprietà
-description: Rappresenta un contenitore per i modelli di layout personalizzati dei controlli della barra multifunzione.
+description: Rappresenta un contenitore per i modelli di layout personalizzati dei controlli barra multifunzione.
 ms.assetid: 1f5fcffc-7f2e-4763-b0a7-4e8f46534da8
 keywords:
-- Proprietà Ribbon.SizeDefinitions Windows ribbon
+- Proprietà Ribbon.SizeDefinitions Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118202257"
 ---
 # <a name="ribbonsizedefinitions-property"></a>Ribbon.SizeDefinitions - proprietà
 
-Rappresenta un contenitore per i modelli di layout personalizzati dei controlli della barra multifunzione.
+Rappresenta un contenitore per i modelli di layout personalizzati dei controlli barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -63,7 +63,7 @@ Può verificarsi al massimo una volta per ogni [**barra multifunzione.**](window
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato un modello personalizzato di base.
+L'esempio di codice seguente illustra un modello personalizzato di base.
 
 
 ```
@@ -99,7 +99,7 @@ Nell'esempio di codice seguente viene illustrato un modello personalizzato di ba
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

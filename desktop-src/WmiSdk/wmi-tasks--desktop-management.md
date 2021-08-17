@@ -1,5 +1,5 @@
 ---
-description: Le attività WMI per gestione desktop possono esercitare il controllo e ottenere dati da un desktop remoto o da un computer locale.
+description: Le attività WMI per la gestione desktop possono esercitare il controllo e ottenere dati da un desktop remoto o da un computer locale.
 ms.assetid: bb8356bf-de38-4925-a501-6ad47d23ea8f
 ms.tgt_platform: multiple
 title: 'Attività WMI: gestione desktop '
@@ -10,35 +10,35 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33f027c808a30463f2747d11020f45d1b8d40edf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1bb50e58b4db01b01b2122fd55c14bf73be0eb8601d732fa658752b33c35fcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738975"
 ---
 # <a name="wmi-tasks-desktop-management"></a>Attività WMI: gestione desktop 
 
-Le attività WMI per gestione desktop possono esercitare il controllo e ottenere dati da un desktop remoto o da un computer locale. Ad esempio, è possibile determinare se lo screensaver in un computer locale richiede una password. WMI offre inoltre la possibilità di arrestare un computer remoto. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Le attività WMI per la gestione desktop possono esercitare il controllo e ottenere dati da un desktop remoto o da un computer locale. Ad esempio, è possibile determinare se lo screen screen screen in un computer locale richiede una password. WMI offre anche la possibilità di arrestare un computer remoto. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per ulteriori informazioni sull'utilizzo dello script per ottenere dati da computer remoti, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Gli esempi di script illustrati in questo argomento ottengono i dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
-Nella procedura riportata di seguito viene descritto come eseguire uno script.
+Nella procedura seguente viene descritto come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunga un'estensione txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non a .txt'estensione al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
-3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare che sia in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni log eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da controlli di accesso utente (UAC).
+3.  Digitare **cscript filename.vbs** prompt dei comandi.
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da Controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript Visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
 
  
 
-Nella tabella seguente sono elencati esempi di script che è possibile utilizzare per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere utilizzati per ottenere vari tipi di dati dal computer locale.
 
 
 
@@ -55,8 +55,8 @@ Nella tabella seguente sono elencati esempi di script che è possibile utilizzar
 </thead>
 <tbody>
 <tr class="odd">
-<td>... determinare se un computer remoto è stato avviato in modalità provvisoria con lo stato di rete?</td>
-<td>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e controllare il valore della proprietà <strong>PrimaryOwnerName</strong> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... determinare se un computer remoto è stato avviato in modalità Cassaforte con stato rete?</td>
+<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e controllare il valore della <strong>proprietà PrimaryOwnerName.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -102,8 +102,8 @@ foreach ($objComputer in $colSettings)
 </td>
 </tr>
 <tr class="even">
-<td>... determinare se lo screensaver del computer richiede una password.</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-desktop"><strong>Win32_Desktop</strong></a> e controllare il valore della proprietà <strong>ScreenSaverSecure</strong> .</p>
+<td>... determinare se uno screen screener del computer richiede una password?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-desktop"><strong>Win32_Desktop</strong></a> e controllare il valore della <strong>proprietà ScreenSaverSecure.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -154,8 +154,8 @@ foreach ($desktop in $desktops) {
 </div></td>
 </tr>
 <tr class="odd">
-<td>... Verificare che sia stata impostata una schermata del computer per 800 pixel di 600 pixel?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-desktopmonitor"><strong>Win32_DesktopMonitor</strong></a> e verificare i valori delle proprietà <strong>ScreenHeight</strong> e <strong>ScreenWidth</strong>.</p>
+<td>... verificare che lo schermo di un computer sia stato impostato per 800 pixel per 600 pixel?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-desktopmonitor"><strong>Win32_DesktopMonitor</strong></a> e controllare i valori delle proprietà <strong>ScreenHeight</strong> <strong>e ScreenWidth</strong>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -197,9 +197,9 @@ $computer = &quot;.&quot;
 $desktops = Get-WmiObject -Class Win32_DesktopMonitor
 $hostname = hostname
 
-< # Visualizza i dettagli sul desktop # > &quot; sono presenti {0} desktop in {1} , come indicato di seguito: &quot; -f $desktops. Conteggio, $hostname &quot; &quot; $i = 1 # numero di desktop in questo sistema
+<# Display desktop details #> &quot; There are {0} Desktops on {1} as follows: &quot; -f $desktops. Conteggio, $hostname &quot; &quot; $i=1 numero di desktop in questo sistema
 
-foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i + +, $desktop. Caption &quot; Altezza schermo: {0} &quot; -f $desktop. &quot;Larghezza schermo ScreenHeight: {0} &quot; -f $desktop. ScreenWidth &quot; &quot; }</code></pre></td>
+foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i++, $Desktop.Caption &quot; Screen Height : {0} &quot; -f $desktop. Larghezza schermo ScreenHeight: &quot; {0} &quot; -f $desktop. ScreenWidth &quot; &quot; }</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -207,8 +207,8 @@ foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i + +, $de
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinare il tempo di esecuzione di un computer</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> e la proprietà <strong>LastBootUpTime</strong> . Sottrarre tale valore dall'ora corrente per ottenere il tempo di esecuzione del sistema.</p>
+<td>... determinare per quanto tempo un computer è stato eseguito?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> e la <strong>proprietà LastBootUpTime.</strong> Sottrarre tale valore dall'ora corrente per ottenere il tempo di attività del sistema.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -276,7 +276,7 @@ foreach ($system in $computers) {
 </tr>
 <tr class="odd">
 <td>... riavviare o arrestare un computer remoto?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> e il metodo <a href="/windows/desktop/CIMWin32Prov/win32shutdown-method-in-class-win32-operatingsystem"><strong>Win32Shutdown</strong></a> . È necessario includere il privilegio <a href="privilege-constants.md">RemoteShutdown</a> durante la connessione a WMI. Per ulteriori informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">esecuzione di operazioni con privilegi tramite VBScript</a>. A differenza del metodo <a href="/windows/desktop/CIMWin32Prov/shutdown-method-in-class-win32-operatingsystem"><strong>Shutdown</strong></a> su <strong>Win32_OperatingSystem</strong>, il metodo <strong>Win32Shutdown</strong> consente di impostare i flag per controllare il comportamento di arresto.</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/win32shutdown-method-in-class-win32-operatingsystem"><strong>metodo Win32Shutdown.</strong></a> È necessario includere il <a href="privilege-constants.md">privilegio RemoteShutdown</a> per la connessione a WMI. Per altre informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">Esecuzione di operazioni con privilegi tramite VBScript.</a> A differenza <a href="/windows/desktop/CIMWin32Prov/shutdown-method-in-class-win32-operatingsystem"><strong>del metodo Shutdown</strong></a> <strong>Win32_OperatingSystem</strong>, il <strong>metodo Win32Shutdown</strong> consente di impostare flag per controllare il comportamento di arresto.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -324,8 +324,8 @@ foreach ($objOperatingSystem in $colOperatingSystem)
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinare quali applicazioni vengono eseguite automaticamente ogni volta che si avvia Windows?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-startupcommand"><strong>Win32_StartupCommand</strong></a> .</p>
+<td>... determinare quali applicazioni vengono eseguite automaticamente ogni volta che si Windows?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-startupcommand"><strong>Win32_StartupCommand</strong></a> classe .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>

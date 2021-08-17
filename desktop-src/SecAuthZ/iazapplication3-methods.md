@@ -1,7 +1,7 @@
 ---
 description: L'interfaccia IAzApplication3 espone i metodi seguenti.
 ms.assetid: ACC5625A-4312-4C2A-9014-D4A4DA5B0547
-title: Metodi di IAzApplication3
+title: Metodi IAzApplication3
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b32cba46aa0ee31fb86fce371f0ce8a1a87eb9709f5867429728a818d7a00acc
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117781635"
 ---
-# <a name="iazapplication3-methods"></a>Metodi di IAzApplication3
+# <a name="iazapplication3-methods"></a>Metodi IAzApplication3
 
 [**L'interfaccia IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapplication3) espone i metodi seguenti.
 

@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come implementare un'estensione dello spazio dei nomi della shell, inclusi il comportamento del menu di scelta rapida e le attività personalizzate nel browser.
+description: Illustra come implementare un'estensione dello spazio dei nomi shell, inclusi il comportamento del menu di scelta rapida e le attività personalizzate nel browser.
 title: Esempio di provider di dati Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 6bd15cbef62ff69efcccd28fcb625fc1432fdf89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 223f498f42e33dda09206b1e21a44138fda54e261ec957efb62e55148a014d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677838"
 ---
 # <a name="explorer-data-provider-sample"></a>Esempio di provider di dati Explorer
 
-Viene illustrato come implementare un'estensione dello spazio dei nomi della shell, inclusi il comportamento del menu di scelta rapida e le attività personalizzate nel browser.
+Illustra come implementare un'estensione dello spazio dei nomi shell, inclusi il comportamento del menu di scelta rapida e le attività personalizzate nel browser.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -42,25 +42,25 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio ExplorerDataProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/explorerdataprovider) |
+| GitHub  | [Esempio di ExplorerDataProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/explorerdataprovider) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 Per compilare l'esempio dal prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **ExplorerDataProvider** .
+1.  Aprire la finestra del prompt dei comandi e passare alla directory **del progetto ExplorerDataProvider.**
 2.  Immettere `msbuild ExplorerDataProvider.sln`.
 
-Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
+Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Esplora risorse e passare alla directory del progetto **ExplorerDataProvider** .
-2.  Fare doppio clic sull'icona per il file ExplorerDataProvider. sln per aprire il progetto in Visual Studio.
-3.  Scegliere **Compila soluzione** dal menu **Compila** . La DLL verrà compilata nella \\ directory di debug o di \\ versione predefinita.
+1.  Aprire Windows Explorer e passare alla directory **del progetto ExplorerDataProvider.**
+2.  Fare doppio clic sull'icona per il file ExplorerDataProvider.sln per aprire il progetto in Visual Studio.
+3.  Scegliere **Compila** soluzione dal menu **Compila**. La DLL verrà compilata nella \\ directory Debug o Release \\ predefinita.
 
 > [!Note]  
-> Nella versione di questo esempio inclusa nella Windows SDK la configurazione per la build di rilascio a 64 bit non include il file ExplorerDataProvider. def nell'opzione del **file di definizione del modulo** del linker. È necessario specificare il file manualmente prima della compilazione in un ambiente a 64 bit. Aggiungere la riga `ModuleDefinitionFile="ExplorerDataProvider.def"` alla sezione VCLinkerTool (inizia alla riga 329) del file ExplorerDataProvider. vcproj, come illustrato di seguito:
+> Nella versione di questo esempio inclusa in Windows SDK, la configurazione per la build di rilascio a 64 bit non include il file ExplorerDataProvider.def nell'opzione **Module Definition File** del linker. È necessario specificare il file manualmente prima di compilare in un ambiente a 64 bit. Aggiungere la riga `ModuleDefinitionFile="ExplorerDataProvider.def"` alla sezione VCLinkerTool (inizia dalla riga 329) del file ExplorerDataProvider.vcproj, come illustrato di seguito:
 >
 > <span codelanguage=""></span>
 >
@@ -78,20 +78,20 @@ Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
 > </tbody>
 > </table> 
 >
-> La versione di questo esempio scaricabile dalla raccolta codici è stata corretta per questo problema e non è richiesta alcuna azione aggiuntiva da parte dell'utente.
+> La versione di questo esempio scaricabile da Code Gallery è stata corretta per questo problema e non è necessaria alcuna azione aggiuntiva da parte dell'utente.
 >
 >  
 >
 > ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 >
-> 1.  Passare alla directory che contiene il nuovo file. dll e. propdesc, utilizzando il prompt dei comandi o Esplora risorse.
+> 1.  Passare alla directory che contiene il nuovo .dll e il file con estensione propdesc, usando il prompt dei comandi o Windows Explorer.
 > 2.  Nella riga di comando digitare `regsvr32.exe` .
 >     > [!Note]  
->     > Se si esegue questo comando da un prompt dei comandi con privilegi elevati, la registrazione automatica registrerà automaticamente anche il file con estensione propdesc. Se viene eseguito da un prompt dei comandi non con privilegi elevati, l'estensione dello spazio dei nomi funzionerà, ma senza la funzionalità personalizzata della proprietà.
+>     > Se si esegue questo comando da un prompt dei comandi con privilegi elevati, la registrazione automatica registrerà automaticamente anche il file propdesc. Se viene eseguito da un prompt dei comandi senza privilegi elevati, l'estensione dello spazio dei nomi funzionerà, ma senza funzionalità di proprietà personalizzate.
 >
 >      
 >
-> 3.  Aprire la cartella **computer locale** e visualizzare la nuova estensione dello spazio dei nomi presente in tale cartella.
+> 3.  Aprire la cartella **Computer locale** ed esplorare la nuova estensione dello spazio dei nomi presente in questa cartella.
 >
 >  
 >

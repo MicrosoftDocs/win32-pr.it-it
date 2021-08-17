@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri di IndexInfo'
-title: Membri di IndexInfo
+description: 'Altre informazioni su: Membri IndexInfo'
+title: Membri indexInfo
 TOCTitle: IndexInfo members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IndexInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo_members(v=EXCHG.10)
 ms:contentKeyID: 55103271
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: abda2eab4a258c5bdc32c77132ac749af31be450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1ba99d4c42ab32fc7f2248dc069f24700a670fa6158fe17a7edca24ca8db7f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706280"
 ---
-# <a name="indexinfo-members"></a>Membri di IndexInfo
+# <a name="indexinfo-members"></a>Membri indexInfo
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 Informazioni su un indice esent. Non si tratta di una classe di interoperabilità, ma viene usata dai metodi helper dei metadati.
 
-Il tipo [IndexInfo](./indexinfo-class.md) espone i membri seguenti.
+Il [tipo IndexInfo](./indexinfo-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -42,12 +42,12 @@ Il tipo [IndexInfo](./indexinfo-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350921(v=exchg.10).md">CultureInfo</a></td>
-<td>Ottiene l'oggetto CultureInfo in base al quale l'indice viene ordinato.</td>
+<td>Ottiene l'oggetto CultureInfo in base al quale è ordinato l'indice.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350907(v=exchg.10).md">Voci</a></td>
-<td>Ottiene il numero di voci nell'indice. Questo valore non è corrente e viene aggiornato solo da API. JetComputeStats.</td>
+<td>Ottiene il numero di voci nell'indice. Questo valore non è corrente e viene aggiornato solo da Api.JetComputeStats.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -62,7 +62,7 @@ Il tipo [IndexInfo](./indexinfo-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350926(v=exchg.10).md">Chiavi</a></td>
-<td>Ottiene il numero di chiavi univoche nell'indice. Questo valore non è corrente e viene aggiornato solo da API. JetComputeStats.</td>
+<td>Ottiene il numero di chiavi univoche nell'indice. Questo valore non è corrente e viene aggiornato solo da Api.JetComputeStats.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -72,7 +72,7 @@ Il tipo [IndexInfo](./indexinfo-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350928(v=exchg.10).md">Pagine</a></td>
-<td>Ottiene il numero di pagine nell'indice. Questo valore non è corrente e viene aggiornato solo da API. JetComputeStats.</td>
+<td>Ottiene il numero di pagine nell'indice. Questo valore non è corrente e viene aggiornato solo da Api.JetComputeStats.</td>
 </tr>
 </tbody>
 </table>
@@ -94,32 +94,32 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn350905(v=exchg.10).md">ToString</a></td>
-<td>Restituisce una <a href="/dotnet/api/system.string">stringa</a> che rappresenta l'oggetto <a href="dn350919(v=exchg.10).md">IndexInfo</a>corrente. Esegue l'override di <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.</td>
+<td>Restituisce un <a href="/dotnet/api/system.string">oggetto String</a> che rappresenta l'oggetto <a href="dn350919(v=exchg.10).md">IndexInfo corrente.</a> Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString().</a></td>
 </tr>
 </tbody>
 </table>
@@ -133,4 +133,4 @@ Inizio
 
 [Classe IndexInfo](./indexinfo-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,17 +1,17 @@
 ---
 description: Nell'esempio seguente viene illustrato come avviare una sessione di traccia, abilitare un provider basato su manifesto o classico, disabilitare il provider e quindi arrestare la sessione.
 ms.assetid: 13c83b62-9235-4101-82a9-a118e6ece3d5
-title: Esempio di creazione di una sessione e abilitazione di un provider basato su manifesto o classico
+title: Esempio che crea una sessione e abilita un provider basato su manifesto o classico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d407bc1570e154dca99784c24a93911fe55409f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b660daf969db71e9d4c6f7f9d7b5afaeb32737f1575923663df678d88b14cde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814605"
 ---
-# <a name="example-that-creates-a-session-and-enables-a-manifest-based-or-classic-provider"></a>Esempio di creazione di una sessione e abilitazione di un provider basato su manifesto o classico
+# <a name="example-that-creates-a-session-and-enables-a-manifest-based-or-classic-provider"></a>Esempio che crea una sessione e abilita un provider basato su manifesto o classico
 
 Nell'esempio seguente viene illustrato come avviare una sessione di traccia, abilitare un provider basato su manifesto o classico, disabilitare il provider e quindi arrestare la sessione.
 

@@ -1,21 +1,21 @@
 ---
-description: Viene usato un Message Authentication Code (MAC) per rilevare manomissioni e falsificazioni di messaggi.
+description: Un Message Authentication Code (MAC) viene usato per rilevare la manomissione e la falsificazione dei messaggi.
 ms.assetid: 44f50407-8f55-49c4-9e42-2f1666c9da7c
-title: Codici di autenticazione messaggi in Schannel
+title: Codici di autenticazione dei messaggi in Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b93939c0c4b4550ad0c24f8e6ef0e0b8bf9f1b07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db81efbaa71dc94094e5efb14d11dde600798cc8f58855a3a3ae116a624b679f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786983"
 ---
-# <a name="message-authentication-codes-in-schannel"></a>Codici di autenticazione messaggi in Schannel
+# <a name="message-authentication-codes-in-schannel"></a>Codici di autenticazione dei messaggi in Schannel
 
-Viene usato un [*Message Authentication Code*](../secgloss/m-gly.md) (Mac) per rilevare manomissioni e falsificazioni di messaggi. Il mittente di un messaggio crea un MAC crittografando un [*hash*](../secgloss/h-gly.md) unidirezionale del corpo del messaggio usando una chiave di [*sessione*](../secgloss/s-gly.md) condivisa da mittente e destinatario. Il MAC viene aggiunto al messaggio inviato al destinatario. Il destinatario del messaggio genera di nuovo il MAC, usando la chiave della sessione condivisa e il corpo del messaggio e confronta il MAC generato con il Mac ricevuto dal mittente. Se i due sono identici, il mittente deve avere la chiave della sessione condivisa e il messaggio non è stato modificato durante il transito.
+Un [*Message Authentication Code*](../secgloss/m-gly.md) (MAC) viene usato per rilevare la manomissione e la falsificazione dei messaggi. Il mittente di un messaggio crea un MAC crittografando un [*hash*](../secgloss/h-gly.md) unidirede del corpo del messaggio usando una [*chiave di*](../secgloss/s-gly.md) sessione condivisa dal mittente e dal destinatario. Il MAC viene aggiunto al messaggio inviato al destinatario. Il destinatario del messaggio genera nuovamente il MAC, usando la chiave di sessione condivisa e il corpo del messaggio, e confronta il MAC generato con il MAC ricevuto dal mittente. Se i due sono identici, il mittente deve avere la chiave di sessione condivisa e il messaggio non è stato modificato in transito.
 
-Nei protocolli Schannel, l'algoritmo utilizzato per generare il MAC è determinato dal [pacchetto di crittografia](cipher-suites-in-schannel.md) utilizzato dal mittente e dal destinatario.
+Nei protocolli Schannel, l'algoritmo usato per generare il MAC è determinato dalla [suite di](cipher-suites-in-schannel.md) crittografia in uso dal mittente e dal destinatario.
 
  
 

@@ -5,22 +5,22 @@ ms.assetid: b4ac114f-1a23-4be6-af02-0c0d34a8f78f
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IADsObjectOptions ADSI
-- IADsObjectOptions ADSI, utilizzo
-- ADSI ADSI, codice di esempio C/C++, uso di IADsObjectOptions
+- IADsObjectOptions ADSI , con
+- ADSI ADSI, codice di esempio C/C++, con IADsObjectOptions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3049d4dee7f6bf2e7ebb61f01f42ef9fc39271c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43701b4b846e4bf4e69dc8882397b5aba6b19ffc370ba418a34239782433073f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839924"
 ---
 # <a name="iadsobjectoptions-interface"></a>Interfaccia IADsObjectOptions
 
-L'interfaccia [**IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) consente l'accesso diretto all'impostazione e al recupero di opzioni specifiche del provider.
+[**L'interfaccia IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) consente l'accesso diretto all'impostazione e al recupero di opzioni specifiche del provider.
 
-Una delle opzioni dell'oggetto Active Directory consiste nel restituire il nome host di un server. Nell'esempio di codice seguente viene utilizzata l'interfaccia per recuperare il nome host del server di catalogo globale.
+Una delle opzioni dell'oggetto Active Directory è la restituzione del nome host di un server. Nell'esempio di codice seguente viene utilizzata l'interfaccia per recuperare il nome host del server di catalogo globale.
 
 
 ```C++
@@ -99,9 +99,9 @@ HRESULT GetGCServerName(VARIANT *vGCServer)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

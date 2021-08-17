@@ -1,6 +1,6 @@
 ---
-title: dcl_output (SM4-ASM)
-description: '\_output di DCL (SM4-ASM)'
+title: dcl_output (sm4 - asm)
+description: Output dcl \_ (sm4 - asm)
 ms.assetid: 47e707ad-3ca4-477e-9eb8-3ec462abe864
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4391a30e172ef28133b8fe09a99bae7f77c971af
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d60f50250a3bf35056cd7232100fbac3e3d919c3c473436899e359f26f84ecea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104976490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726988"
 ---
-# <a name="dcl_output-sm4---asm"></a>\_output di DCL (SM4-ASM)
+# <a name="dcl_output-sm4---asm"></a>Output dcl \_ (sm4 - asm)
 
-Dichiara un registro di output shader.
+Dichiara un registro di output dello shader.
 
 
 
-| output di DCL \_ o *N \[ . \] mask* |
+| dcl \_ output o N *\[ .mask \]* |
 |---------------------------|
 
 
@@ -33,14 +33,14 @@ Dichiara un registro di output shader.
 
 | Elemento                                                                           | Descrizione                                                                                                  |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| <span id="oN"></span><span id="on"></span><span id="ON"></span>o *N*<br/> | \[in \] un registro dei dati di output; *N* è un numero intero che indica il numero di registro.<br/>               |
-| <span id="_.mask_"></span><span id="_.MASK_"></span>*\[. mask\]*<br/>     | \[in \] facoltativo. Maschera di componenti (con estensione xyzw) che specifica quale dei componenti del registro utilizzare.<br/> |
+| <span id="oN"></span><span id="on"></span><span id="ON"></span>o *N*<br/> | \[in \] Un registro dei dati di output; *N* è un numero intero che indica il numero di registro.<br/>               |
+| <span id="_.mask_"></span><span id="_.MASK_"></span>*\[.mask\]*<br/>     | \[in \] Facoltativo. Maschera del componente (.xyzw) che specifica quali componenti del registro usare.<br/> |
 
 
 
  
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -52,7 +52,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader in linguaggio assembly usando il modello di Shader 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. Non è possibile creare uno shader in linguaggio assembly usando il modello shader 4.
 
 ## <a name="example"></a>Esempio
 
@@ -67,20 +67,20 @@ dcl_output o2.xw
 
 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -90,7 +90,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

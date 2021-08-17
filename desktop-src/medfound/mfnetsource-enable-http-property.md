@@ -1,17 +1,17 @@
 ---
 description: Specifica se il protocollo HTTP è abilitato nell'origine di rete.
 ms.assetid: dcc4db5c-0274-4a8a-89a4-66cda62e1520
-title: Proprietà MFNETSOURCE_ENABLE_HTTP (Mfidl. h)
+title: MFNETSOURCE_ENABLE_HTTP proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 004868c92962702b774a8f6c0a9b75708c5727b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09d033594e223b8219f168e86d82ef02012bfafd4be9d758a438d042356735f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874767"
 ---
-# <a name="mfnetsource_enable_http-property"></a>MFNETSOURCE \_ Abilita \_ Proprietà http
+# <a name="mfnetsource_enable_http-property"></a>MFNETSOURCE \_ ENABLE - proprietà \_ HTTP
 
 Specifica se il protocollo HTTP è abilitato nell'origine di rete.
 
@@ -19,11 +19,11 @@ Specifica se il protocollo HTTP è abilitato nell'origine di rete.
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-Booleano (**Long**)
+Boolean (**LONG**)
 
 VT \_ I4
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ Abilita \_ http** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ ENABLE \_ HTTP** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_MFType
-description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record di agente di invio della posta elettronica per il dominio (MF).
+title: MicrosoftDNS_MFType classe
+description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record MF (Mail Forwarding Agent for Domain).
 ms.assetid: 0ba0fddd-c316-4a5b-ad65-6344dbe949c1
 keywords:
-- DNS della classe MicrosoftDNS_MFType
-- MicrosoftDNS_MFType della classe DNS, descritta
+- MicrosoftDNS_MFType DNS della classe
+- MicrosoftDNS_MFType classe DNS , descritto
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e030f695e95ee736b1c53a345201e0bd1addfe3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e0b2f2e08a7e9144f2fe2a6ac3e94578428109d7f3e712ac8c54752721f7592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163212"
 ---
-# <a name="microsoftdns_mftype-class"></a>\_Classe MicrosoftDNS MFType
+# <a name="microsoftdns_mftype-class"></a>Classe MicrosoftDNS \_ MFType
 
-Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record di agente di invio della posta elettronica per il dominio (MF).
+Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record MF (Mail Forwarding Agent for Domain).
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_MFType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Members
 
-La **classe \_ MFType di MicrosoftDNS** dispone di questi tipi di membri:
+La **classe MicrosoftDNS \_ MFType** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ MFType di MicrosoftDNS** dispone di questi metodi.
+La **classe MicrosoftDNS \_ MFType** include questi metodi.
 
 
 
 | Metodo                             | Descrizione                                                                                                                                                                                                                                                                                                                                                            |
 |:-----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Questo metodo crea un'istanza di un tipo MF di RR in base ai dati nei parametri di input del metodo: il nome del server DNS del record, il nome del contenitore, il nome del proprietario del dominio, la classe (impostazione predefinita = IN), il valore time-to-Live e l'host dell'agente di posta elettronica. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementata, statica<br/> |
-| **Modifica**                         | Questo metodo aggiorna l'host TTL e MF ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementato<br/>                         |
+| **CreateInstanceFromPropertyData** | Questo metodo crea un'istanza di un tipo MF di RR in base ai dati nei parametri di input del metodo: nome del server DNS del record, nome del contenitore, nome del proprietario del dominio, classe (impostazione predefinita = IN), valore di time-to-live e host dell'agente di posta elettronica. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementati, statici<br/> |
+| **Modifica**                         | Questo metodo aggiorna la durata (TTL) e l'host MF (MF Host) ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementati<br/>                         |
 
 
 
@@ -64,20 +64,20 @@ La **classe \_ MFType di MicrosoftDNS** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MFType di MicrosoftDNS** dispone di queste proprietà.
+La **classe MicrosoftDNS \_ MFType** ha queste proprietà.
 
 <dl> <dt>
 
 **MFHost**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-FQDN che specifica un host con un agente di posta elettronica che accetterà la posta elettronica per l'invio al dominio specificato.
+FQDN che specifica un host con un agente di posta che accetterà la posta per l'inoltro al dominio specificato.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ FQDN che specifica un host con un agente di posta elettronica che accetterà la 
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,10 +101,10 @@ FQDN che specifica un host con un agente di posta elettronica che accetterà la 
 [**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ MFType**](microsoftdns-mftype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe MFType di MicrosoftDNS**](microsoftdns-mftype-modify.md)
+[**Metodo Modify della classe MicrosoftDNS \_ MFType**](microsoftdns-mftype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

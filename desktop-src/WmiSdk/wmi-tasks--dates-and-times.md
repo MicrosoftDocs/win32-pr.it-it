@@ -1,5 +1,5 @@
 ---
-description: Sono disponibili diverse classi WMI e un oggetto di script per analizzare o convertire il formato DateTime CIM. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
+description: Esistono diverse classi WMI e un oggetto di scripting per analizzare o convertire il formato datetime CIM. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
 ms.assetid: dd01a732-5c88-4c24-a551-4d5452e712cc
 ms.tgt_platform: multiple
 title: 'Attività WMI: date e ore'
@@ -10,34 +10,34 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8864deb4f76b8ce6b76017c0348cdb86bf38b697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46e8c850ffd04fe4ac5bc9af1b130632338b61ec79c92d154f5769ffd54cb2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739447"
 ---
 # <a name="wmi-tasks-dates-and-times"></a>Attività WMI: date e ore
 
-Sono disponibili diverse classi WMI e un oggetto di script per analizzare o convertire il formato [DateTime CIM](date-and-time-format.md) . Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Esistono diverse classi WMI e un oggetto di scripting per analizzare o convertire il [formato datetime CIM.](date-and-time-format.md) Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per ulteriori informazioni sull'utilizzo dello script per ottenere dati da computer remoti, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 ## <a name="to-run-a-script"></a>Per eseguire uno script
 
-Nella procedura riportata di seguito viene descritto come eseguire uno script.
+La procedura seguente descrive come eseguire uno script.
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunga un'estensione txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare che sia in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni log eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da controlli di accesso utente (UAC).
+4.  Se non è possibile accedere a un registro eventi, verificare se si è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript Visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
 
  
 
-Nella tabella seguente sono elencati esempi di script che è possibile utilizzare per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere usati per ottenere vari tipi di dati dal computer locale.
 
 
 
@@ -55,7 +55,7 @@ Nella tabella seguente sono elencati esempi di script che è possibile utilizzar
 <tbody>
 <tr class="odd">
 <td>... convertire le date WMI in date e ore standard?<br/></td>
-<td>Usare l'oggetto <a href="swbemdatetime.md"><strong>SWbemDateTime</strong></a> per convertirli in date e ore normali.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Usare <a href="swbemdatetime.md"><strong>l'oggetto SWbemDateTime</strong></a> per convertirli in date e ore regolari.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -79,7 +79,7 @@ Next</code></pre></td>
 </tbody>
 </table>
 
-<p>In alternativa, è necessario che il codice esegua manualmente l'attività.</p>
+<p>In caso di codice, eseguire l'attività manualmente.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -106,7 +106,7 @@ End Function </code></pre></td>
 </tr>
 <tr class="even">
 <td><p>... determinare l'ora attualmente configurata in un computer?</p></td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/wmitimepprov/win32-localtime"><strong>Win32_LocalTime</strong></a> .</p>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/wmitimepprov/win32-localtime"><strong>Win32_LocalTime</strong></a> classe .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -177,7 +177,7 @@ Foreach ($time in $times) {
 </tr>
 <tr class="odd">
 <td><p>... determinare il nome del fuso orario in cui è in esecuzione un computer?</p></td>
-<td><p>Utilizzare la classe <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> e controllare il valore della proprietà <strong>Description</strong> .</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> classe e controllare il valore della <strong>proprietà Description.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -234,12 +234,12 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 </div></td>
 </tr>
 <tr class="even">
-<td><p>... Verificare che &quot; 10/02/2000 &quot; sia interpretato come Oct. 2, 2000, non &quot; 10 feb, 2000 &quot; ?</p></td>
-<td><p>Gestire le date nel formato <a href="datetime.md">DateTime</a> <a href="gloss-c.md"><em>CIM</em></a> e usare i metodi <a href="swbemdatetime.md"><strong>SWbemDateTime</strong></a> , ad esempio <a href="swbemdatetime-getvardate.md"><strong>getVarDate</strong></a> , per eseguire la conversione a e da formati <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a> o <strong>VT_Date</strong> . Poiché il formato DATETIME è indipendente dalle impostazioni locali, è possibile scrivere uno script che viene eseguito in qualsiasi computer. Usare l'oggetto <strong>SWbemDateTime</strong> per convertirli in date e ore normali. Per ulteriori informazioni sulla conversione di date e ore, vedere il <a href="date-and-time-format.md">formato di data e ora</a> .</p></td>
+<td><p>... assicurarsi che &quot; il 02/10/2000 venga interpretato come 2 ottobre &quot; 2000, non &quot; 10 febbraio 2000? &quot;</p></td>
+<td><p>Gestire le <a href="gloss-c.md"><em></em></a> date in formato <a href="datetime.md">CIM DATETIME</a> e usare i metodi <a href="swbemdatetime.md"><strong>SWbemDateTime,</strong></a> ad esempio <a href="swbemdatetime-getvardate.md"><strong>GetVarDate,</strong></a> per convertirle in formati <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a> <strong>o VT_Date.</strong> Poiché il formato DATETIME è indipendente dalle impostazioni locali, è possibile scrivere uno script che viene eseguito in qualsiasi computer. Usare <strong>l'oggetto SWbemDateTime</strong> per convertirli in date e ore regolari. Per <a href="date-and-time-format.md">altre informazioni sulla conversione</a> di date e ore, vedere Formato di data e ora.</p></td>
 </tr>
 <tr class="odd">
-<td><p>... convertire un valore DateTime WMI in un valore DateTime .NET?</p></td>
-<td><p>Analizzare manualmente la stringa, quindi inserire i valori recuperati in un oggetto <a href="/dotnet/api/system.datetime">DateTime</a> .</p>
+<td><p>... convertire un valore datetime WMI in un valore DateTime .NET?</p></td>
+<td><p>Analizzare manualmente la stringa e quindi inserire i valori recuperati in un <a href="/dotnet/api/system.datetime">oggetto DateTime.</a></p>
 <div class="code">
 <span data-codelanguage="PowerShell"></span>
 <table>
@@ -299,7 +299,7 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 [Attività WMI per script e applicazioni](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Esempi di applicazioni WMI C++](wmi-c---application-examples.md)
+[Esempi di applicazioni C++ WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [Formato di data e ora](date-and-time-format.md)

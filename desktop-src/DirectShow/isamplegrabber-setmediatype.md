@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetMediaType specifica il tipo di supporto per la connessione sul pin di input del grabber di esempio.
+description: Il metodo SetMediaType specifica il tipo di supporto per la connessione sul pin di input di Sample Grabber.
 ms.assetid: 9568832f-6666-45c9-9421-485c877affb3
-title: 'Metodo ISampleGrabber:: SetMediaType (qedit. h)'
+title: Metodo ISampleGrabber::SetMediaType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a39aa79e9311fe3491d0925fdc1b2dd3b1cc65c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 060ff0cc10fed441fdb2d6f2bf1bd0e66f3e8b9facec3cb52d8f270b350b1f4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817702"
 ---
-# <a name="isamplegrabbersetmediatype-method"></a>Metodo ISampleGrabber:: SetMediaType
+# <a name="isamplegrabbersetmediatype-method"></a>Metodo ISampleGrabber::SetMediaType
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `SetMediaType` metodo specifica il tipo di supporto per la connessione sul pin di input del grabber di esempio.
+Il `SetMediaType` metodo specifica il tipo di supporto per la connessione sul pin di input di Sample Grabber.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,47 +48,47 @@ HRESULT SetMediaType(
 *pType* 
 </dt> <dd>
 
-Puntatore a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) specifica il tipo di supporto richiesto. Non è necessario impostare tutti i membri della struttura. per informazioni dettagliate, vedere la sezione Osservazioni.
+Il puntatore a [**una struttura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) specifica il tipo di supporto richiesto. Non è necessario impostare tutti i membri della struttura. Per informazioni dettagliate, vedere La sezione Osservazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il grabber di esempio non ha un tipo di supporto preferito. Per assicurarsi che il grabber di esempio si connetta al filtro corretto, chiamare questo metodo prima di compilare il grafico del filtro.
+Per impostazione predefinita, Sample Grabber non ha un tipo di supporto preferito. Per assicurarsi che Sample Grabber si connetta al filtro corretto, chiamare questo metodo prima di compilare il grafico del filtro.
 
-Questo metodo limita l'intervallo di tipi di supporti che verrà accettato dal filtro. Quando il filtro si connette, tenta di trovare la corrispondenza con il tipo di supporto specificato in *pType*. A tale scopo, vengono confrontati i GUID di tipo principale, sottotipo e tipo di formato, in questo ordine. Per ognuno di questi GUID, se *pType* ha il valore GUID \_ null, il grabber di esempio accetta il tipo di supporto senza ulteriori controlli. Se *pType* ha un altro valore, il grabber di esempio lo confronta con il GUID nel tipo di connessione. A meno che i due GUID corrispondano esattamente, il grabber di esempio rifiuta la connessione.
+Questo metodo limita l'intervallo di tipi di supporti che il filtro accetterà. Quando il filtro si connette, tenta di trovare la corrispondenza con il tipo di supporto specificato in *pType*. A tale scopo, confronta i GUID del tipo principale, del sottotipo e del tipo di formato, in questo ordine. Per ognuno di questi GUID, se *pType* ha il valore GUID NULL, Sample Grabber accetta il tipo di supporto \_ senza ulteriori controlli. Se *pType* ha qualsiasi altro valore, Sample Grabber lo confronta con il GUID nel tipo di connessione. A meno che i due GUID non corrispondano esattamente, Sample Grabber rifiuta la connessione.
 
-Per i tipi di supporti video, il grabber di esempio ignora il blocco di formato. Pertanto, accetterà qualsiasi dimensione video e frequenza dei fotogrammi. Quando si chiama `SetMediaType` , impostare il blocco di formato (**pbFormat**) su **null** e la dimensione (**cbFormat**) su zero. Per i tipi di supporti audio, il grabber di esempio esaminerà la struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) e richiederà l'altro filtro per la connessione a tale formato, a meno che il blocco di formato in *pType* non sia **null** o il tag format sia un formato Wave \_ \_ PCM e gli altri membri della struttura siano pari a zero.
+Per i tipi di file multimediali video, Sample Grabber ignora il blocco di formato. Pertanto, accetterà qualsiasi dimensione video e frequenza dei fotogrammi. Quando si chiama `SetMediaType` , impostare il blocco di formato (**pbFormat**) su **NULL** e le dimensioni (**cbFormat**) su zero. Per i tipi di supporti audio, Sample Grabber esaminerà la struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) e richiederà che l'altro filtro si connetta a tale formato, a meno che il blocco di formato in *pType* non sia **NULL** o che il tag di formato sia WAVE FORMAT PCM e gli altri membri della struttura non siano pari a \_ \_ zero.
 
 Esempio 1:
 
--   Tipo principale: video di MEDIATYPE \_
--   Sottotipo: GUID \_ null
--   Tipo di formato: GUID \_ null
+-   Tipo principale: MEDIATYPE \_ Video
+-   Sottotipo: GUID \_ NULL
+-   Tipo di formato: GUID \_ NULL
 
-Il grabber di esempio accetterà qualsiasi tipo di video in cui il tipo principale è uguale a MEDIATYPE \_ video. Non controllerà il sottotipo.
+Sample Grabber accetterà qualsiasi tipo di video in cui il tipo principale è uguale a MEDIATYPE \_ Video. Non controlla il sottotipo.
 
 Esempio 2:
 
--   Tipo principale: video di MEDIATYPE \_
+-   Tipo principale: MEDIATYPE \_ Video
 -   Sottotipo: MEDIASUBTYPE \_ RGB24
--   Tipo di formato: GUID \_ null
+-   Tipo di formato: GUID \_ NULL
 
-A questo punto, il grabber di esempio controllerà il sottotipo e accetterà solo il video RGB 24.
+A questo punto, Sample Grabber controlla il sottotipo e accetta solo video RGB 24.
 
-**Limitazioni:** Indipendentemente dal tipo impostato, il filtro Grabber di esempio rifiuta tutti i tipi di video con orientamento dall'alto in basso ( *bialtezza* negativa) o con un tipo di formato formato \_ VideoInfo2. In questo caso, anche se il `SetMediaType` metodo ha esito positivo, il filtro non si connette.
+**Limitazioni:** Indipendentemente dal tipo impostato, sample Grabber Filter rifiuta tutti i tipi di video con orientamento dall'alto verso il basso *(biHeight* negativo) o con un tipo di formato FORMAT \_ VideoInfo2. In questo caso, anche se `SetMediaType` il metodo ha esito positivo, il filtro non si connetterà.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -98,8 +98,8 @@ A questo punto, il grabber di esempio controllerà il sottotipo e accetterà sol
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

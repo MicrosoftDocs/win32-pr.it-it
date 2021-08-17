@@ -58,7 +58,7 @@ Puntatore al nome dell'oggetto. Specificare **NULL** se l'oggetto non richiede u
 
 Tipo: **[**CONST GUID**](guid.md) \***
 
-Puntatore al GUID che rappresenta l'oggetto. Specificare **NULL** se l'oggetto non richiede un GUID.
+Puntatore al GUID che rappresenta l'oggetto . Specificare **NULL** se l'oggetto non richiede un GUID.
 
 </dd> <dt>
 

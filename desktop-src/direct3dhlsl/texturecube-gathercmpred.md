@@ -1,6 +1,6 @@
 ---
-title: Metodi Di TextureCube::TextureCube GatherCmpRed
-description: Campiota e confronta una trama e restituisce il componente rosso. | Metodi Di TextureCube::TextureCube GatherCmpRed
+title: Metodi TextureCube::TextureCube GatherCmpRed
+description: Campione e confronta una trama e restituisce il componente rosso. | Metodi TextureCube::TextureCube GatherCmpRed
 ms.assetid: 614F9DD0-2A49-4F20-8967-3DD63D5B5F32
 keywords:
 - Metodi GatherCmpRed HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117722361"
 ---
-# <a name="texturecubegathercmpred-methods"></a>Metodi textureCube::GatherCmpRed
+# <a name="texturecubegathercmpred-methods"></a>Metodi TextureCube::GatherCmpRed
 
-Campiota e confronta una trama e restituisce il componente rosso.
+Campione e confronta una trama e restituisce il componente rosso.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campiota e confronta una trama e restituisce il componente rosso.
 
 | Metodo                                                                             | Descrizione                                                                                                    |
 |:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpRed(S,float,float,uint)**](tcube-gathercmpred-s-float-float-uint-.md) | Esempi e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpRed(S,float,float,uint)**](tcube-gathercmpred-s-float-float-uint-.md) | Campione e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia ID3DXRenderToSurface viene utilizzata per generalizzare il processo di rendering nelle superfici.
+description: L'interfaccia ID3DXRenderToSurface viene usata per generalizzare il processo di rendering sulle superfici.
 ms.assetid: e9f2ca5e-faa3-45a8-94eb-16f354618e80
-title: Interfaccia ID3DXRenderToSurface (D3dx9core. h)
+title: Interfaccia ID3DXRenderToSurface (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,36 +14,36 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 577e729e4e1a510dd24dc981b2b90bdca27dc0f9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 238e1870fd5bf1832ffbb3b5c3a5a49533ef122277a4000bafdbaa10112b4528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729507"
 ---
 # <a name="id3dxrendertosurface-interface"></a>Interfaccia ID3DXRenderToSurface
 
-L'interfaccia ID3DXRenderToSurface viene utilizzata per generalizzare il processo di rendering nelle superfici.
+L'interfaccia ID3DXRenderToSurface viene usata per generalizzare il processo di rendering sulle superfici.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DXRenderToSurface** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXRenderToSurface** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DXRenderToSurface** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXRenderToSurface** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DXRenderToSurface** dispone di questi metodi.
+**L'interfaccia ID3DXRenderToSurface** include questi metodi.
 
 
 
 | Metodo                                                       | Descrizione                                                                                                                                                                                     |
 |:-------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BeginScene**](id3dxrendertosurface--beginscene.md)       | Inizia una scena.<br/>                                                                                                                                                                      |
+| [**BeginScene**](id3dxrendertosurface--beginscene.md)       | Avvia una scena.<br/>                                                                                                                                                                      |
 | [**EndScene**](id3dxrendertosurface--endscene.md)           | Termina una scena.<br/>                                                                                                                                                                        |
-| [**Getdesc**](id3dxrendertosurface--getdesc.md)             | Recupera i parametri della superficie di rendering.<br/>                                                                                                                                      |
+| [**GetDesc**](id3dxrendertosurface--getdesc.md)             | Recupera i parametri della superficie di rendering.<br/>                                                                                                                                      |
 | [**GetDevice**](id3dxrendertosurface--getdevice.md)         | Recupera il dispositivo Direct3D associato alla superficie di rendering.<br/>                                                                                                                    |
-| [**OnLostDevice**](id3dxrendertosurface--onlostdevice.md)   | Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti stateblocks. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima di reimpostare un dispositivo.<br/> |
+| [**OnLostDevice**](id3dxrendertosurface--onlostdevice.md)   | Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti i blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima della reimpostazione di un dispositivo.<br/> |
 | [**OnResetDevice**](id3dxrendertosurface--onresetdevice.md) | Usare questo metodo per acquisire nuovamente le risorse e salvare lo stato iniziale.<br/>                                                                                                                      |
 
 
@@ -52,13 +52,13 @@ L'interfaccia **ID3DXRenderToSurface** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Le superfici possono essere usate in diversi modi, tra cui le destinazioni di rendering, il rendering fuori schermo o il rendering in trame.
+Le superfici possono essere usate in diversi modi, tra cui destinazioni di rendering, rendering fuori schermo o rendering in trame.
 
-Una superficie può essere configurata usando un viewport separato usando il metodo [**ID3DXRenderToSurface:: BeginScene**](id3dxrendertosurface--beginscene.md) per fornire una visualizzazione di rendering personalizzata. Se la superficie non è una destinazione di rendering, viene utilizzata una destinazione di rendering compatibile e il risultato viene copiato nell'area alla fine della scena.
+Una superficie può essere configurata usando un viewport separato usando il metodo [**ID3DXRenderToSurface::BeginScene**](id3dxrendertosurface--beginscene.md) per fornire una visualizzazione di rendering personalizzata. Se la superficie non è una destinazione di rendering, viene usata una destinazione di rendering compatibile e il risultato viene copiato nella superficie alla fine della scena.
 
-L'interfaccia **ID3DXRenderToSurface** viene ottenuta chiamando la funzione [**D3DXCreateRenderToSurface**](d3dxcreaterendertosurface.md) .
+**L'interfaccia ID3DXRenderToSurface** viene ottenuta chiamando la [**funzione D3DXCreateRenderToSurface.**](d3dxcreaterendertosurface.md)
 
-Il tipo LPD3DXRENDERTOSURFACE è definito come puntatore all'interfaccia **ID3DXRenderToSurface** .
+Il tipo LPD3DXRENDERTOSURFACE è definito come puntatore **all'interfaccia ID3DXRenderToSurface.**
 
 
 ```
@@ -74,8 +74,8 @@ typedef interface ID3DXRenderToSurface *LPD3DXRENDERTOSURFACE;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

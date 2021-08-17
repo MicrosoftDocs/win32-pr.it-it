@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-Author
+title: Attributo ms-WMI-Author
 description: Autore di un'istanza di una classe.
 ms.assetid: 30f3763b-dc7d-4e01-a3a9-9246dd06299b
 ms.tgt_platform: multiple
 keywords:
-- Schema di annuncio dell'attributo ms-WMI-Author
-- msWMI-Crea schema AD attributo
+- Schema AD dell'attributo ms-WMI-Author
+- Schema AD dell'attributo msWMI-Author
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0cb7bf2d6215c3de3b4cf656d3777d94e8f719
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f13ffe007e537fe8d3f63d99aafd768cce4e914af2afb454d3bfed285a908d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837797"
 ---
-# <a name="ms-wmi-author-attribute"></a>attributo ms-WMI-Author
+# <a name="ms-wmi-author-attribute"></a>Attributo ms-WMI-Author
 
 Autore di un'istanza di una classe.
 
@@ -29,13 +29,13 @@ Autore di un'istanza di una classe.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-autore                               |
-| LDAP-Display-Name | msWMI-autore                                |
+| CN                | ms-WMI-Author                               |
+| Ldap-Display-Name | msWMI-Author                                |
 | Dimensione              | Meno di 25 caratteri.                    |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1623                     |
-| System-ID-GUID    | 6366c0c1-6972-4e66-b3a5-1d52ad0c0547        |
+| System-Id-Guid    | 6366c0c1-6972-4e66-b3a5-1d52ad0c0547        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Autore di un'istanza di una classe.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Autore di un'istanza di una classe.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Autore di un'istanza di una classe.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Autore di un'istanza di una classe.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Autore di un'istanza di una classe.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

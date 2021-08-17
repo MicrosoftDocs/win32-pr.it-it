@@ -1,21 +1,21 @@
 ---
-title: Recupera attributi oggetto, seleziona nuovi oggetti
+title: Recuperare gli attributi dell'oggetto, selezionare nuovi oggetti
 description: Un'applicazione può recuperare gli attributi per una penna, un pennello, una tavolozza, un tipo di carattere o una bitmap chiamando le funzioni GetCurrentObject e GetObject.
 ms.assetid: 09d8412f-a67d-48d5-9c04-9233dee43cf9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b18dcef03bf769e8b2d11574429b64f481b1a79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c58d946f61a6a83dcfeb2ddae24d735d3596e5e864cf672bab832d7db3aedf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117886147"
 ---
-# <a name="retrieve-object-attributes-select-new-objects"></a>Recupera attributi oggetto, seleziona nuovi oggetti
+# <a name="retrieve-object-attributes-select-new-objects"></a>Recuperare gli attributi dell'oggetto, selezionare nuovi oggetti
 
-Un'applicazione può recuperare gli attributi per una penna, un pennello, una tavolozza, un tipo di carattere o una bitmap chiamando le funzioni [**GetCurrentObject**](/windows/desktop/api/Wingdi/nf-wingdi-getcurrentobject) e [**GetObject**](/windows/desktop/api/Wingdi/nf-wingdi-getobject) . La funzione **GetCurrentObject** restituisce un handle che identifica l'oggetto attualmente selezionato nel controller di dominio; la funzione **GetObject** restituisce una struttura che descrive gli attributi dell'oggetto.
+Un'applicazione può recuperare gli attributi per una penna, un pennello, una tavolozza, un tipo di carattere o una bitmap chiamando le [**funzioni GetCurrentObject**](/windows/desktop/api/Wingdi/nf-wingdi-getcurrentobject) [**e GetObject.**](/windows/desktop/api/Wingdi/nf-wingdi-getobject) La **funzione GetCurrentObject** restituisce un handle che identifica l'oggetto attualmente selezionato nel controller di dominio. La **funzione GetObject** restituisce una struttura che descrive gli attributi dell'oggetto.
 
-Nell'esempio seguente viene illustrato come un'applicazione può recuperare gli attributi del pennello correnti e utilizzare i dati recuperati per determinare se è necessario selezionare un nuovo pennello.
+L'esempio seguente illustra come un'applicazione può recuperare gli attributi del pennello corrente e usare i dati recuperati per determinare se è necessario selezionare un nuovo pennello.
 
 
 ```C++
@@ -63,7 +63,7 @@ Nell'esempio seguente viene illustrato come un'applicazione può recuperare gli 
 
 > [!Note]
 >
-> L'applicazione ha salvato il pennello originale per la prima volta chiamando la funzione [**SelezionaOggetto**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . Questo handle viene salvato in modo che il pennello originale possa essere nuovamente selezionato nel controller di dominio dopo che l'ultima operazione di disegno è stata completata con il nuovo pennello. Dopo aver selezionato di nuovo il pennello originale nel controller di dominio, il nuovo pennello viene eliminato, liberando la memoria nell'heap GDI.
+> L'applicazione ha salvato l'handle del pennello originale quando chiama la [**funzione SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) la prima volta. Questo handle viene salvato in modo che il pennello originale possa essere selezionato nuovamente nel controller di dominio dopo il completamento dell'ultima operazione di disegno con il nuovo pennello. Dopo aver selezionato di nuovo il pennello originale nel controller di dominio, il nuovo pennello viene eliminato, liberando memoria nell'heap GDI.
 
  
 

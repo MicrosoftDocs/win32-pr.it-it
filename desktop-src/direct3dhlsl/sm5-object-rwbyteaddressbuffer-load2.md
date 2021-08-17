@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: load2 (uint)'
-description: 'Ottiene due valori. | Funzione RWByteAddressBuffer:: load2 (uint)'
+title: Funzione RWByteAddressBuffer::Load2(uint)
+description: Ottiene due valori. | Funzione RWByteAddressBuffer::Load2(uint)
 ms.assetid: a00396cb-e68d-479e-ab3f-4c52f2cfc3bc
 keywords:
-- Funzione load2 HLSL
+- Funzione Load2 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7595477448deb087b94664100710690a6f386a94
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0f71fd2d0585803fb10de3fddfa29c10838d73e32ba7d63b5619be91b042cb71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104982028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725058"
 ---
-# <a name="rwbyteaddressbufferload2uint-function"></a>Funzione RWByteAddressBuffer:: load2 (uint)
+# <a name="rwbyteaddressbufferload2uint-function"></a>Funzione RWByteAddressBuffer::Load2(uint)
 
 Ottiene due valori.
 
@@ -36,7 +36,7 @@ uint2 Load2(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -69,10 +69,10 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi load2](rwbyteaddressbuffer-load2.md)
+[Metodi Load2](rwbyteaddressbuffer-load2.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

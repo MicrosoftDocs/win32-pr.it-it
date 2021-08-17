@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b5ae7ec2a2c904a523f3388fa08a3bf2e44fec9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8e96600762db414fa93316098d5ba87dabfbc3138f516d3d69f1740d0d33d2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783087"
 ---
 # <a name="cieaxiinstallerservice-object"></a>Oggetto CIeAxiInstallerService
 
-L'oggetto **CIeAxiInstallerService** implementa le interfacce [**IAxiService**](ieaxiservice.md) e [**IeAxiServiceCallback**](ieaxiservicecallback.md) .
+**L'oggetto CIeAxiInstallerService** implementa le interfacce [**IAxiService**](ieaxiservice.md) e [**IeAxiServiceCallback.**](ieaxiservicecallback.md)
 
-Questo oggetto non è dichiarato in un'intestazione pubblica. Le applicazioni devono definirle autonomamente. Il frammento IDL (Interface Definition Language) seguente descrive questo oggetto, incluso il relativo CLSID.
+Questo oggetto non è dichiarato in un'intestazione pubblica. Le applicazioni devono definirlo in modo proprio. Il frammento IDL (Interface Definition Language) seguente descrive questo oggetto, incluso il relativo CLSID.
 
 ``` syntax
 [
@@ -43,7 +43,7 @@ Questo oggetto non è dichiarato in un'intestazione pubblica. Le applicazioni de
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo app desktop Vista Ultimate \[\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                 |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Proxy di proprietà per i criteri dei metadati delle foto System.Photo.Flash Photo.
+description: Proxy di proprietà per i criteri dei metadati della foto System.Photo.FlashEnergy.
 ms.assetid: edcd9757-19a6-4398-8600-06ffc72559e9
-title: Proxy System.Photo.Flash Usb
+title: System.Photo.FlashEnergy Proxy
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a0f91db8408d542c0f660a4e018b1dfb28e45fdcbc9cd007c8362f604f047124
@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118205278"
 ---
-# <a name="systemphotoflashenergy-proxy"></a>Proxy System.Photo.Flash Usb
+# <a name="systemphotoflashenergy-proxy"></a>System.Photo.FlashEnergy Proxy
 
-Proxy di proprietà per i criteri dei metadati delle foto System.Photo.Flash Photo.
+Proxy di proprietà per i criteri dei metadati della foto System.Photo.FlashEnergy.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 
@@ -43,7 +43,7 @@ LowPart dell'oggetto uhVal.
 
 <dl> <dt>
 
-[System.Photo.Flash Usb](../properties/props-system-photo-flashenergy.md)
+[System.Photo.FlashEnergy](../properties/props-system-photo-flashenergy.md)
 </dt> </dl>
 
  

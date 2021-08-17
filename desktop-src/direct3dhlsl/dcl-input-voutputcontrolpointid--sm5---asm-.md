@@ -1,23 +1,23 @@
 ---
-title: dcl_input vOutputControlPointID (SM5-ASM)
-description: Dichiarare l'ID del punto di controllo dell'output in una fase del punto di controllo Hull shader.
+title: dcl_input vOutputControlPointID (sm5 - asm)
+description: Dichiarare l'ID del punto di controllo di output in una fase del punto di controllo di hull shader.
 ms.assetid: 376ECA4F-DD71-4466-8A9D-E92A536832BC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cee49a8a825f25b0fbbccff027d5ad1b9ade514
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 230e4cb74c5fdcf5519ed4de9d632c1b336ceaf82a961644e26f749a9a7df7b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117727113"
 ---
-# <a name="dcl_input-voutputcontrolpointid-sm5---asm"></a>\_vOutputControlPointID di input DCL (SM5-ASM)
+# <a name="dcl_input-voutputcontrolpointid-sm5---asm"></a>dcl \_ input vOutputControlPointID (sm5 - asm)
 
-Dichiarare l'ID del punto di controllo dell'output in una fase del punto di controllo Hull shader.
+Dichiarare l'ID del punto di controllo di output in una fase del punto di controllo di hull shader.
 
 
 
-| \_vOutputControlPointID di input DCL |
+| dcl \_ input vOutputControlPointID |
 |----------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare l'ID del punto di controllo dell'output in una fase del punto di cont
 
 | Elemento                                                                                                                                                       | Descrizione                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="vOutputControlPointID"></span><span id="voutputcontrolpointid"></span><span id="VOUTPUTCONTROLPOINTID"></span>*vOutputControlPointID*<br/> | \[nell' \] ID del punto di controllo dell'output.<br/> |
+| <span id="vOutputControlPointID"></span><span id="voutputcontrolpointid"></span><span id="VOUTPUTCONTROLPOINTID"></span>*vOutputControlPointID*<br/> | \[in \] ID del punto di controllo di output.<br/> |
 
 
 
@@ -36,11 +36,11 @@ Dichiarare l'ID del punto di controllo dell'output in una fase del punto di cont
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,20 +48,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -71,7 +71,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

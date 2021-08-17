@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SORTITEMSEX (COMmctrl. h)
-description: Usa una funzione di confronto definita dall'applicazione per ordinare gli elementi di un controllo di visualizzazione elenco. L'indice di ogni elemento viene modificato per riflettere la nuova sequenza. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SortItemsEx di ListView.
+title: LVM_SORTITEMSEX messaggio (Commctrl.h)
+description: Usa una funzione di confronto definita dall'applicazione per ordinare gli elementi di un controllo visualizzazione elenco. L'indice di ogni elemento cambia per riflettere la nuova sequenza. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SortItemsEx di ListView.
 ms.assetid: eab2f6f5-68fd-4cb6-acf4-cb267ee40fdc
 keywords:
-- Controlli di Windows Message LVM_SORTITEMSEX
+- LVM_SORTITEMSEX dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99e524b00cb5ff1260eb68e7d86e185e5ae60c75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef492ff11980e764b33942f54c0732a64e799a94dde0e3d872ef0cb7bfb66c0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170367"
 ---
-# <a name="lvm_sortitemsex-message"></a>\_Messaggio SORTITEMSEX LVM
+# <a name="lvm_sortitemsex-message"></a>Messaggio \_ LVM SORTITEMSEX
 
-Usa una funzione di confronto definita dall'applicazione per ordinare gli elementi di un controllo di visualizzazione elenco. L'indice di ogni elemento viene modificato per riflettere la nuova sequenza. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SortItemsEx di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex) .
+Usa una funzione di confronto definita dall'applicazione per ordinare gli elementi di un controllo visualizzazione elenco. L'indice di ogni elemento cambia per riflettere la nuova sequenza. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SortItemsEx di ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Puntatore a una funzione di confronto definita dall'applicazione. Viene chiamato
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
@@ -55,12 +55,12 @@ La funzione di confronto ha il formato seguente:
 int CALLBACK CompareFunc(LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort);  
 ```
 
-Questo messaggio è simile a [**LVM \_ SORTITEMS**](lvm-sortitems.md), eccetto il tipo di informazioni passate alla funzione di confronto. Con **LVM \_ SORTITEMSEX**, *lParam1* è l'indice corrente del primo elemento e *lParam2* è l'indice corrente del secondo elemento. Se necessario, è possibile inviare un messaggio [**LVM \_ GETITEMTEXT**](lvm-getitemtext.md) per recuperare altre informazioni su un elemento.
+Questo messaggio è simile a [**LVM \_ SORTITEMS,**](lvm-sortitems.md)ad eccezione del tipo di informazioni passate alla funzione di confronto. Con **LVM \_ SORTITEMSEX**, *lParam1* è l'indice corrente del primo elemento e *lParam2* è l'indice corrente del secondo elemento. È possibile inviare un [**messaggio LVM \_ GETITEMTEXT**](lvm-getitemtext.md) per recuperare altre informazioni su un elemento, se necessario.
 
 La funzione di confronto deve restituire un valore negativo se il primo elemento deve precedere il secondo, un valore positivo se il primo elemento deve seguire il secondo oppure zero se i due elementi sono equivalenti.
 
 > [!Note]  
-> Durante il processo di ordinamento, il contenuto della visualizzazione elenco è instabile. Se la funzione di callback invia messaggi al controllo visualizzazione elenco oltre a [**LVM \_ GetItem**](lvm-getitem.md) ([**ListView \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitem)), i risultati sono imprevedibili.
+> Durante il processo di ordinamento, il contenuto della visualizzazione elenco è instabile. Se la funzione di callback invia messaggi al controllo visualizzazione elenco a parte [**LVM \_ GETITEM**](lvm-getitem.md) ([**ListView \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitem)), i risultati sono imprevedibili.
 
  
 
@@ -70,9 +70,9 @@ La funzione di confronto deve restituire un valore negativo se il primo elemento
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -13,20 +13,20 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: e29cd7b17c634250f56cbafcf86379449ac88199
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e1e9bea21cd4e21ca7549ce34343b42c50b293471e69576d7c1164f92a371c62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118004106"
 ---
 # <a name="ldrdllnotification-callback-function"></a>Funzione di callback LdrDllNotification
 
-\[Questa funzione può essere modificata o rimossa da Windows senza ulteriore preavviso.\]
+\[Questa funzione può essere modificata o rimossa da Windows senza preavviso.\]
 
-Funzione di callback di notifica specificata con la funzione [**LdrRegisterDllNotification**](ldrregisterdllnotification.md) . Il caricatore chiama questa funzione quando una DLL viene caricata per la prima volta.
+Funzione di callback di notifica specificata con la [**funzione LdrRegisterDllNotification.**](ldrregisterdllnotification.md) Il caricatore chiama questa funzione quando viene caricata per la prima volta una DLL.
 
-**Avviso:** Non è sicuro che la funzione di callback delle notifiche chiami le funzioni in qualsiasi DLL.
+**Avviso:** Non è sicuro che la funzione di callback di notifica chiami le funzioni in qualsiasi DLL.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ VOID CALLBACK LdrDllNotification(
 
 <dl> <dt>
 
-*NotificationReason* \[ in\]
+*NotificationReason* \[ Pollici\]
 </dt> <dd>
 
 Motivo per cui è stata chiamata la funzione di callback di notifica. Questo parametro può avere uno dei valori seguenti.
@@ -54,8 +54,8 @@ Motivo per cui è stata chiamata la funzione di callback di notifica. Questo par
 
 | Valore                                                                                                                                                                                                                                                                                        | Significato                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="LDR_DLL_NOTIFICATION_REASON_LOADED"></span><span id="ldr_dll_notification_reason_loaded"></span><dl> <dt>**LDR \_ \_Motivo della notifica dll \_ \_ caricato**</dt> <dt>1</dt> </dl>       | La DLL è stata caricata. Il parametro *NotificationData* punta a una struttura di **\_ \_ \_ \_ dati di notifica caricata dalla dll LDR** . <br/>     |
-| <span id="LDR_DLL_NOTIFICATION_REASON_UNLOADED"></span><span id="ldr_dll_notification_reason_unloaded"></span><dl> <dt>**LDR \_ \_Motivo della notifica dll \_ \_ scaricato**</dt> <dt>2</dt> </dl> | La DLL è stata scaricata. Il parametro *NotificationData* punta a una struttura di dati di **\_ \_ \_ notifica non \_ caricata della dll LDR** . <br/> |
+| <span id="LDR_DLL_NOTIFICATION_REASON_LOADED"></span><span id="ldr_dll_notification_reason_loaded"></span><dl> <dt>**LDR \_ MOTIVO \_ NOTIFICA \_ DLL \_ CARICATO**</dt> <dt>1</dt> </dl>       | La DLL è stata caricata. Il *parametro NotificationData* punta a una struttura **LDR DLL \_ \_ LOADED NOTIFICATION \_ \_ DATA.** <br/>     |
+| <span id="LDR_DLL_NOTIFICATION_REASON_UNLOADED"></span><span id="ldr_dll_notification_reason_unloaded"></span><dl> <dt>**LDR \_ MOTIVO \_ NOTIFICA DLL NON \_ \_ CARICATO**</dt> <dt>2</dt> </dl> | La DLL è stata scaricata. Il *parametro NotificationData* punta a una struttura **LDR DLL \_ \_ UNLOADED NOTIFICATION \_ \_ DATA.** <br/> |
 
 
 
@@ -63,10 +63,10 @@ Motivo per cui è stata chiamata la funzione di callback di notifica. Questo par
 
 </dd> <dt>
 
-*NotificationData* \[ in\]
+*NotificationData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'Unione di **\_ \_ notifiche della dll LDR** costante che contiene i dati di notifica. Questa Unione presenta la definizione seguente:
+Puntatore a una costante **LDR \_ DLL \_ NOTIFICATION** union che contiene i dati di notifica. Questa unione ha la definizione seguente:
 
 ``` syntax
 typedef union _LDR_DLL_NOTIFICATION_DATA {
@@ -75,7 +75,7 @@ typedef union _LDR_DLL_NOTIFICATION_DATA {
 } LDR_DLL_NOTIFICATION_DATA, *PLDR_DLL_NOTIFICATION_DATA;
 ```
 
-La **struttura \_ \_ \_ \_ dei dati di notifica caricati della dll LDR** presenta la seguente definizione:
+La **struttura LDR \_ DLL \_ LOADED NOTIFICATION \_ \_ DATA** ha la definizione seguente:
 
 ``` syntax
 typedef struct _LDR_DLL_LOADED_NOTIFICATION_DATA {
@@ -87,7 +87,7 @@ typedef struct _LDR_DLL_LOADED_NOTIFICATION_DATA {
 } LDR_DLL_LOADED_NOTIFICATION_DATA, *PLDR_DLL_LOADED_NOTIFICATION_DATA;
 ```
 
-La **struttura \_ \_ \_ \_ dei dati di notifica di LDR dll non caricata** presenta la seguente definizione:
+La **struttura LDR \_ DLL \_ UNLOADED NOTIFICATION \_ \_ DATA** ha la definizione seguente:
 
 ``` syntax
 typedef struct _LDR_DLL_UNLOADED_NOTIFICATION_DATA {
@@ -114,7 +114,7 @@ Questa funzione di callback non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione di callback delle notifiche viene chiamata prima che venga eseguita la connessione dinamica.
+La funzione di callback di notifica viene chiamata prima che venga eseguito il collegamento dinamico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -122,8 +122,8 @@ La funzione di callback delle notifiche viene chiamata prima che venga eseguita 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

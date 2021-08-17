@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECORDLIST'
-title: Proprietà JET_RECORDLIST
+description: 'Altre informazioni su: JET_RECORDLIST proprietà'
+title: JET_RECORDLIST proprietà
 TOCTitle: JET_RECORDLIST properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_RECORDLIST
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recordlist_properties(v=EXCHG.10)
 ms:contentKeyID: 55103831
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cdb071c7d63dbd5a01a2aa34147067bfa4052472
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd69d5357653dee59eb85880be5a87a32499871de4e416daa6fc97c2a7a52a2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893473"
 ---
-# <a name="jet_recordlist-properties"></a>Proprietà JET_RECORDLIST
+# <a name="jet_recordlist-properties"></a>JET_RECORDLIST proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_RECORDLIST](./jet-recordlist-class.md) espone i membri seguenti.
+Il [JET_RECORDLIST](./jet-recordlist-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,7 +35,7 @@ Il tipo di [JET_RECORDLIST](./jet-recordlist-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335244(v=exchg.10).md">columnidBookmark</a></td>
-<td>Ottiene l'ColumnID della colonna nella tabella temporanea in cui è archiviato il segnalibro del record. La colonna è di tipo JET_coltyp. Testo.</td>
+<td>Ottiene il valore columnid della colonna nella tabella temporanea in cui è archiviato il segnalibro del record. La colonna è di tipo JET_coltyp. Testo.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -44,8 +44,8 @@ Il tipo di [JET_RECORDLIST](./jet-recordlist-class.md) espone i membri seguenti.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn335255(v=exchg.10).md">TableID</a></td>
-<td>Ottiene TableID della tabella temporanea. Questa operazione deve essere chiusa quando la tabella non è più necessaria.</td>
+<td><a href="dn335255(v=exchg.10).md">tableid</a></td>
+<td>Ottiene l'ID di tabella della tabella temporanea. Questa operazione deve essere chiusa quando la tabella non è più necessaria.</td>
 </tr>
 </tbody>
 </table>
@@ -57,6 +57,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RECORDLIST](./jet-recordlist-class.md)
+[JET_RECORDLIST classe](./jet-recordlist-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

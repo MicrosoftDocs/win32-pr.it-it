@@ -6,39 +6,39 @@ ms.tgt_platform: multiple
 title: D (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d469b94ec6649c64722fb414880d2e79fc3c88b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2310ce8b14baf2b57634cfa36ef83c3dab239503632972b67bdc4cc6a9b1f602
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117924157"
 ---
 # <a name="d-wmi"></a>D (WMI)
 
-[A](gloss-a.md) B [C](gloss-c.md) d [E](gloss-e.md) [F](gloss-f.md) G [H](gloss-h.md) [i](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
+[A](gloss-a.md) B [C](gloss-c.md) D [E](gloss-e.md) [F](gloss-f.md) G [H](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) R [S](gloss-r.md) [](gloss-s.md) [T U](gloss-t.md) V [W](gloss-w.md) X Y Z
 
 <dl> <dt>
 
-<span id="wmi.gloss_datetime"></span><span id="WMI.GLOSS_DATETIME"></span>**DateTime**
+<span id="wmi.gloss_datetime"></span><span id="WMI.GLOSS_DATETIME"></span>**Datetime**
 </dt> <dd>
 
-Vedere [*CIM DateTime*](gloss-c.md).
+Vedere [*DATETIME CIM*](gloss-c.md).
 
 </dd> <dt>
 
-<span id="wmi.gloss_decoupled_provider"></span><span id="WMI.GLOSS_DECOUPLED_PROVIDER"></span>**provider disaccoppiato**
+<span id="wmi.gloss_decoupled_provider"></span><span id="WMI.GLOSS_DECOUPLED_PROVIDER"></span>**provider disaccoccolato**
 </dt> <dd>
 
-Provider gestito in un processo distinto da WMI. I provider disaccoppiati sono il metodo consigliato per instrumentare un'applicazione, poiché il provider può controllare la propria durata anziché essere avviato ogni volta che un utente accede al provider tramite WMI.
+Provider gestito in un processo distinto da WMI. I provider disaccodati sono il modo consigliato per instrumentare un'applicazione, perché il provider può controllare la propria durata anziché essere avviato ogni volta che un utente accede al provider tramite WMI.
 
 </dd> <dt>
 
 <span id="wmi.gloss_direct_access"></span><span id="WMI.GLOSS_DIRECT_ACCESS"></span>**accesso diretto**
 </dt> <dd>
 
-Un modo per accedere alle proprietà e ai metodi forniti da WMI in uno script come se si trattasse di proprietà e metodi di automazione di [**SWbemObject**](swbemobject.md).
+Un modo per accedere alle proprietà e ai metodi forniti da WMI in uno script come se fossero proprietà e metodi di automazione [**di SWbemObject**](swbemobject.md).
 
-Accesso non diretto: `VolumeName = MyDisk.Properties_("VolumeName")`
+Accesso non indiretto: `VolumeName = MyDisk.Properties_("VolumeName")`
 
 Accesso diretto: `VolumeName = MyDisk.VolumeName`
 
@@ -47,11 +47,11 @@ Accesso diretto: `VolumeName = MyDisk.VolumeName`
 <span id="wmi.gloss_distributed_management_task_force"></span><span id="WMI.GLOSS_DISTRIBUTED_MANAGEMENT_TASK_FORCE"></span>**Distributed Management Task Force (DMTF)**
 </dt> <dd>
 
-Un'organizzazione di standard internazionali che interagisce con i fornitori di tecnologie principali, tra cui Microsoft, per condurre lo sviluppo, l'adozione e l'unificazione degli standard di gestione e delle iniziative per ambienti desktop, aziendali e Internet.
+Organizzazione internazionale di standard che collabora con i principali fornitori di tecnologie, tra cui Microsoft, per guidare lo sviluppo, l'adozione e l'unificazione degli standard di gestione e delle iniziative per ambienti desktop, aziendali e Internet.
 
 </dd> <dt>
 
-<span id="wmi.gloss_dmtf"></span><span id="WMI.GLOSS_DMTF"></span>**DMTF**
+<span id="wmi.gloss_dmtf"></span><span id="WMI.GLOSS_DMTF"></span>**Dmtf**
 </dt> <dd>
 
 Vedere *Distributed Management Task Force (DMTF)*.
@@ -61,14 +61,14 @@ Vedere *Distributed Management Task Force (DMTF)*.
 <span id="wmi.gloss_dynamic_class"></span><span id="WMI.GLOSS_DYNAMIC_CLASS"></span>**classe dinamica**
 </dt> <dd>
 
-Classe CIM la cui definizione viene fornita da un [*provider*](gloss-p.md) in fase di esecuzione, in base alle esigenze. Le classi dinamiche rappresentano [*oggetti gestiti*](gloss-m.md) specifici del provider e non vengono archiviati nel [*repository CIM*](gloss-c.md). Le classi dinamiche supportano solo le *istanze dinamiche*.
+Classe CIM la cui definizione viene fornita da un [*provider*](gloss-p.md) in fase di esecuzione, in base alle esigenze. Le classi dinamiche rappresentano oggetti gestiti specifici [*del*](gloss-m.md) provider e non vengono archiviate nel [*repository CIM.*](gloss-c.md) Le classi dinamiche supportano solo *istanze dinamiche.*
 
 </dd> <dt>
 
 <span id="wmi.gloss_dynamic_instance"></span><span id="WMI.GLOSS_DYNAMIC_INSTANCE"></span>**istanza dinamica**
 </dt> <dd>
 
-Istanza di una classe CIM fornita da un [*provider*](gloss-p.md) quando richiesto. Non è archiviato nel [*repository CIM*](gloss-c.md). Le istanze dinamiche possono essere fornite per classi statiche o dinamiche. Il supporto dinamico di istanze di una classe consente a un provider di fornire i valori delle [*Proprietà*](gloss-p.md) fino al minuto.
+Istanza di una classe CIM fornita da un [*provider*](gloss-p.md) quando necessario. Non viene archiviato nel [*repository CIM.*](gloss-c.md) È possibile specificare istanze dinamiche per classi statiche o dinamiche. Il supporto dinamico di istanze di una classe consente a [](gloss-p.md) un provider di fornire valori di proprietà up-to-the-minute.
 
 </dd> </dl>
 

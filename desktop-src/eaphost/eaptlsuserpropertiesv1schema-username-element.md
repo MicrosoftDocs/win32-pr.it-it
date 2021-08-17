@@ -1,6 +1,6 @@
 ---
-title: Elemento UserName (TLS)
-description: Informazioni sull'elemento UserName. Questo elemento acquisisce il nome utente da inviare nella risposta EAP-Identity.
+title: Elemento Username (TLS)
+description: Informazioni sull'elemento Username. Questo elemento acquisisce il nome utente da inviare nella EAP-Identity risposta.
 ms.assetid: dda4a7dd-36ba-418d-9b26-2818ef20854d
 keywords:
 - Elemento Username EAPHost
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2975b425bc760979b33d83182d94469532944e46
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 6748ac8c352540d2288cf3bf3c790004d832ba47961fbc7b9e8211fa712ccb6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720120"
 ---
-# <a name="username-element-tls"></a>Elemento UserName (TLS)
+# <a name="username-element-tls"></a>Elemento Username (TLS)
 
-L'elemento **username** acquisisce il nome utente da inviare nella risposta EAP-Identity.
+**L'elemento Username** acquisisce il nome utente da inviare nella EAP-Identity risposta.
 
-Se l'elemento **username** è assente, EAP-TLS usa il nome nel certificato a cui si fa riferimento nell'elemento [**userCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) .
+Se **l'elemento Username** è assente, EAP-TLS usa il nome nel certificato a cui si fa riferimento [**nell'elemento UserCert.**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md)
 
 ``` syntax
 <xs:element name="Username"
@@ -37,10 +37,10 @@ Se l'elemento **username** è assente, EAP-TLS usa il nome nel certificato a cui
 
 
 
-| Ruolo | Versioni minime del sistema operativo supportate |
+| Ruolo | Versioni minime supportate del sistema operativo |
 |------|-------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

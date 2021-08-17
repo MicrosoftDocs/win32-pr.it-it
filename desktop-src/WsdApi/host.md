@@ -4,16 +4,16 @@ ms.assetid: 95066c04-5bdc-4c97-98b8-1da9928d9395
 title: elemento host
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f051f6665715ecaa519a060e18a3cbf4912210
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9fe0637c358fabe27f2a1203306cd53407d85ab8b52f2dcd7a827dd49becffda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738607"
 ---
 # <a name="host-element"></a>elemento host
 
-Definisce gli elementi [**ServiceID**](serviceid.md) e [**Types per**](types.md) l'host del servizio.
+Definisce gli elementi [**ServiceID**](serviceid.md) e [**Types**](types.md) per l'host del servizio.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -33,7 +33,7 @@ Non ci sono attributi.
 
 | Elemento                                   | Descrizione                                                                 |
 |-------------------------------------------|-----------------------------------------------------------------------------|
-| [**SERVICEID**](serviceid.md)<br/> | Definisce l'identificatore del servizio per l'host del servizio.<br/> <br/> |
+| [**ServiceID**](serviceid.md)<br/> | Definisce l'identificatore del servizio per l'host del servizio.<br/> <br/> |
 | [**Tipi**](types.md)<br/>         | Definisce un elenco di nomi qualificati XSD.<br/> <br/>               |
 
 
@@ -61,7 +61,7 @@ Non ci sono attributi.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

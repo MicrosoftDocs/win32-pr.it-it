@@ -1,7 +1,7 @@
 ---
-description: Estrae i coefficienti di proiezione del componente principale per campione (PCA) da un buffer di dati compresso ID3DXPRTCompBuffer e aggiunge i dati a un oggetto ID3DXMesh.
+description: Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati compresso ID3DXPRTCompBuffer e aggiunge i dati a un oggetto ID3DXMesh.
 ms.assetid: 0680d626-f07a-43d3-acb9-e8db82b5e933
-title: 'Metodo ID3DXPRTCompBuffer:: ExtractToMesh (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTCompBuffer::ExtractToMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 607b583b89358d2d28030a4187b1608174d849c0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 410ec268da89ad4033c88a90c2b37bfa8e78a7b9c229cab72c8ad07e666fce42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730037"
 ---
-# <a name="id3dxprtcompbufferextracttomesh-method"></a>Metodo ID3DXPRTCompBuffer:: ExtractToMesh
+# <a name="id3dxprtcompbufferextracttomesh-method"></a>Metodo ID3DXPRTCompBuffer::ExtractToMesh
 
-Estrae i coefficienti di proiezione del componente principale per campione (PCA) da un buffer di dati compresso [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) e aggiunge i dati a un oggetto [**ID3DXMesh**](id3dxmesh.md) .
+Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati compresso [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) e aggiunge i dati a un [**oggetto ID3DXMesh.**](id3dxmesh.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT ExtractToMesh(
 
 <dl> <dt>
 
-*NumPCA* \[ in\]
+*NumPCA* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di coefficienti PCA da estrarre dal buffer.
 
 </dd> <dt>
 
-*Utilizzo* \[ di in\]
+*Utilizzo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DDECLUSAGE**](./d3ddeclusage.md)**
 
-Descrizioni dell'utilizzo dei vertici della mesh. Vedere [**D3DDECLUSAGE**](./d3ddeclusage.md).
+Descrizioni dell'utilizzo dei vertici della mesh. Vedere [**D3DDECLUSAGE.**](./d3ddeclusage.md)
 
 </dd> <dt>
 
-*UsageIndexStart* \[ in\]
+*UsageIndexStart* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice iniziale per i coefficienti PCA da archiviare nella rete mesh.
+Indice iniziale per i coefficienti PCA da archiviare nella mesh.
 
 </dd> <dt>
 
-*pScene* \[ in\]
+*pScene* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a un oggetto mesh [**ID3DXMesh**](id3dxmesh.md) in cui vengono archiviati i coefficienti PCA.
+Puntatore a un oggetto mesh [**ID3DXMesh**](id3dxmesh.md) che archivierà i coefficienti PCA.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore a un oggetto mesh [**ID3DXMesh**](id3dxmesh.md) in cui vengono archivi
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

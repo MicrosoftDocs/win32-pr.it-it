@@ -1,41 +1,41 @@
 ---
-title: Notifiche comuni della finestra di dialogo
-description: . | Notifiche comuni della finestra di dialogo
+title: Notifiche comuni delle finestre di dialogo
+description: . | Notifiche comuni delle finestre di dialogo
 ms.assetid: 09b717f1-b6f8-4436-9c08-0b51767b9518
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8032e0acbacd590306d5fc1588ee95c2a494dcd4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0708fa941f95d32848e06adab6e9c2036b5f8db2048d66f90867a76a16a96734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720951"
 ---
-# <a name="common-dialog-box-notifications"></a>Notifiche comuni della finestra di dialogo
+# <a name="common-dialog-box-notifications"></a>Notifiche comuni delle finestre di dialogo
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**FILEOK rete CDN \_**](cdn-fileok.md)
--   [**FOLDERCHANGE rete CDN \_**](cdn-folderchange.md)
--   [**Guida della rete CDN \_**](cdn-help.md)
--   [**INCLUDEITEM rete CDN \_**](cdn-includeitem.md)
--   [**INITDONE rete CDN \_**](cdn-initdone.md)
--   [**SelChange rete CDN \_**](cdn-selchange.md)
--   [**SHAREVIOLATION rete CDN \_**](cdn-shareviolation.md)
--   [**TYPECHANGE rete CDN \_**](cdn-typechange.md)
+-   [**\_rete CDN FILEOK**](cdn-fileok.md)
+-   [**\_rete CDN FOLDERCHANGE**](cdn-folderchange.md)
+-   [**\_rete CDN Guida**](cdn-help.md)
+-   [**\_rete CDN INCLUDEITEM**](cdn-includeitem.md)
+-   [**\_rete CDN INITDONE**](cdn-initdone.md)
+-   [**\_rete CDN Selchange**](cdn-selchange.md)
+-   [**\_rete CDN SHAREVIOLATION**](cdn-shareviolation.md)
+-   [**\_rete CDN TYPECHANGE**](cdn-typechange.md)
 -   [**COLOROKSTRING**](colorokstring.md)
 -   [**FILEOKSTRING**](fileokstring.md)
 -   [**FINDMSGSTRING**](findmsgstring.md)
 -   [**HELPMSGSTRING**](helpmsgstring.md)
 -   [**LBSELCHSTRING**](lbselchstring.md)
 -   [**SHAREVISTRING**](sharevistring.md)
--   [**\_ENVSTAMPRECT PSD \_ WM**](wm-psd-envstamprect.md)
--   [**\_FULLPAGERECT PSD \_ WM**](wm-psd-fullpagerect.md)
--   [**\_GREEKTEXTRECT PSD \_ WM**](wm-psd-greektextrect.md)
--   [**\_MARGINRECT PSD \_ WM**](wm-psd-marginrect.md)
--   [**\_MINMARGINRECT PSD \_ WM**](wm-psd-minmarginrect.md)
--   [**\_PAGESETUPDLG PSD \_ WM**](wm-psd-pagesetupdlg.md)
--   [**\_YAFULLPAGERECT PSD \_ WM**](wm-psd-yafullpagerect.md)
+-   [**WM \_ PSD \_ ENVSTAMPRECT**](wm-psd-envstamprect.md)
+-   [**WM \_ PSD \_ FULLPAGERECT**](wm-psd-fullpagerect.md)
+-   [**WM \_ PSD \_ GREEKTEXTRECT**](wm-psd-greektextrect.md)
+-   [**WM \_ PSD \_ MARGINRECT**](wm-psd-marginrect.md)
+-   [**\_MINMARGINRECT DI WM PSD \_**](wm-psd-minmarginrect.md)
+-   [**WM \_ PSD \_ PAGESETUPDLG**](wm-psd-pagesetupdlg.md)
+-   [**WM \_ PSD \_ YAFULLPAGERECT**](wm-psd-yafullpagerect.md)
 
  
 

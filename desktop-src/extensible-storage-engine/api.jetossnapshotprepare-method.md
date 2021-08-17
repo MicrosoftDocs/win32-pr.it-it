@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetOSSnapshotPrepare'
-title: API. JetOSSnapshotPrepare, metodo
+description: Altre informazioni sul metodo Api.JetOSSnapshotPrepare
+title: Metodo Api.JetOSSnapshotPrepare
 TOCTitle: 'JetOSSnapshotPrepare method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOSSnapshotPrepare(Microsoft.Isam.Esent.Interop.JET_OSSNAPID@,Microsoft.Isam.Esent.Interop.SnapshotPrepareGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetossnapshotprepare(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ac304cf522e7c99a2495925da8571b2139c0a69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6e863c13ee46267e18133afc825e9362acfe44d58b64b22bc5105ab8c164bfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902961"
 ---
-# <a name="apijetossnapshotprepare-method"></a>API. JetOSSnapshotPrepare, metodo
+# <a name="apijetossnapshotprepare-method"></a>Metodo Api.JetOSSnapshotPrepare
 
-Inizia le preparazioni per una sessione snapshot. Una sessione snapshot è un breve intervallo di tempo in cui il motore non rilascia alcun disco IOs su disco, in modo che il motore possa partecipare a una sessione di snapshot del volume (se basata su uno snapshot writer).
+Avvia le operazioni di preparazione per una sessione snapshot. Una sessione snapshot è un breve intervallo di tempo in cui il motore non esegue operazioni di I/O di scrittura su disco, in modo che il motore possa partecipare a una sessione di snapshot del volume (se basata su un writer di snapshot).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public static void JetOSSnapshotPrepare(
 #### <a name="parameters"></a>Parametri
 
   - snapshot  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Restituisce l'ID della sessione snapshot.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SnapshotPrepareGrbit](./snapshotpreparegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SnapshotPrepareGrbit](./snapshotpreparegrbit-enumeration.md)  
     
     Opzioni snapshot.
 
@@ -79,6 +79,6 @@ public static void JetOSSnapshotPrepare(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

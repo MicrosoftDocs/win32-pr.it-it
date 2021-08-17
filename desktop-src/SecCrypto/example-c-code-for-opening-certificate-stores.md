@@ -1,21 +1,21 @@
 ---
-description: Gli esempi seguenti forniscono il codice per aprire un'ampia gamma di archivi certificati comuni. Questi esempi sono costituiti da una serie di frammenti di codice e non da programmi autonomi.
+description: Negli esempi seguenti viene fornito il codice per aprire un'ampia gamma di archivi certificati comuni. Questi esempi sono una serie di frammenti di codice e non sono programmi autonomi.
 ms.assetid: 975a56d1-aa45-470e-b385-753baa1911ff
 title: Codice C di esempio per l'apertura di archivi certificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ebf767fd98b4edca956bf338402ddd14efc26f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fc54577894c064e855396942139122678808307ee14a4f24474a25e2153ce6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766062"
 ---
 # <a name="example-c-code-for-opening-certificate-stores"></a>Codice C di esempio per l'apertura di archivi certificati
 
-Gli esempi seguenti forniscono il codice per aprire un'ampia gamma di archivi certificati comuni. Questi esempi sono costituiti da una serie di frammenti di codice e non da programmi autonomi.
+Negli esempi seguenti viene fornito il codice per aprire un'ampia gamma di archivi certificati comuni. Questi esempi sono una serie di frammenti di codice e non sono programmi autonomi.
 
-Nell'esempio seguente viene aperto l'archivio di sistema My.
+L'esempio seguente apre l'archivio di sistema My.
 
 
 ```C++
@@ -78,7 +78,7 @@ else
 
 
 
-Nell'esempio seguente viene aperto un archivio dal disco. Nell'esempio viene utilizzata la funzione **CreateMyDACL** , definita nell'argomento [Creating a DACL](../secbp/creating-a-dacl.md) , per garantire che il file aperto venga creato con un DACL appropriato.
+Nell'esempio seguente viene aperto un archivio dal disco. Nell'esempio viene utilizzata la funzione **CreateMyDACL,** definita nell'argomento Creazione di un [elenco DACL,](../secbp/creating-a-dacl.md) per assicurarsi che il file aperto sia stato creato con un DACL appropriato.
 
 
 ```C++
@@ -164,7 +164,7 @@ if(!(CloseHandle(hFile)))
 
 
 
-Nell'esempio seguente viene aperto un archivio basato su file usando CERT \_ Store \_ prov \_ filename.
+L'esempio seguente apre un archivio basato su file usando CERT \_ STORE \_ PROV \_ FILENAME.
 
 
 ```C++
@@ -292,7 +292,7 @@ if(!(CertCloseStore(hCollectionStoreHandle, 0)))
 
 
 
-Nell'esempio seguente viene aperto un archivio di registrazione.
+Nell'esempio seguente viene aperto un archivio registri.
 
 
 ```C++
@@ -320,7 +320,7 @@ if(!(CertCloseStore(hRegStore, 0)))
 
 
 
-Nell'esempio seguente viene aperto un archivio certificati basato su un \# messaggio PKCS 7.
+L'esempio seguente apre un archivio certificati basato su un messaggio PKCS \# 7.
 
 
 ```C++

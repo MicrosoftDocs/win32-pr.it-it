@@ -4,18 +4,18 @@ ms.assetid: ad30df59-0051-4471-8c0e-3207bcc7bfbe
 title: JobErrorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dcee6c50d482793eeef96e29ad98385da11a4e6
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: f5489e83ec866da1a8c8ead4b237bcb1ea8ca660363fad9b902271af8db04874
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686463"
 ---
 # <a name="joberrorsheet"></a>JobErrorSheet
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'output del foglio di errore. L'intero processo avrà un singolo foglio di errore. Il foglio di errore deve essere restituito nell'oggetto PageMediaSize predefinito e usando pageMediaType predefinito. Il foglio degli errori deve essere isolato dal resto del processo. Ciò significa che qualsiasi opzione di completamento o elaborazione (ad esempio JobDuplex, JobStaple o JobBinding) non deve includere il foglio di errore. Il foglio degli errori deve essere visualizzato come foglio finale del processo.
+Descrive l'output del foglio di errore. L'intero processo avrà un singolo foglio di errore. Il foglio di errore deve essere restituito nell'oggetto PageMediaSize predefinito e usando il pageMediaType predefinito. Il foglio degli errori deve essere isolato dal resto del processo. Ciò significa che qualsiasi opzione di completamento o elaborazione (ad esempio JobDuplex, JobStaple o JobBinding) non deve includere il foglio di errore. Il foglio degli errori deve essere visualizzato come foglio finale del processo.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)

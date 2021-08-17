@@ -1,9 +1,9 @@
 ---
 title: texCUBEproj
-description: Esegue il campionamento di una trama del cubo utilizzando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.
+description: Campio una trama del cubo usando una divisione proiettata; La coordinata della trama è divisa per t.w prima che venga verificata la ricerca.
 ms.assetid: 86bdd1c3-0a8d-4d09-b70d-1ebcee32c866
 keywords:
-- HLSL texCUBEproj
+- texCUBEproj HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d23a9b85034c1591cfe695759b29612a3674d436
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: aacc393080d06d8f6f72e4a55cc17f2d276f47174cbbb9e9b2fe495e27e7a749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104474086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725469"
 ---
 # <a name="texcubeproj"></a>texCUBEproj
 
-Esegue il campionamento di una trama del cubo utilizzando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.
+Campio una trama del cubo usando una divisione proiettata; La coordinata della trama è divisa per t.w prima che venga verificata la ricerca.
 
 
 
-| texCUBEproj RET (s, t) |
+| ret texCUBEproj(s, t) |
 |-----------------------|
 
 
@@ -40,7 +40,7 @@ Esegue il campionamento di una trama del cubo utilizzando una divisione proiezio
 | Elemento                                                   | Descrizione                               |
 |--------------------------------------------------------|-------------------------------------------|
 | <span id="s"></span><span id="S"></span>*s*<br/> | \[nello \] stato del campionatore.<br/>      |
-| <span id="t"></span><span id="T"></span>*t*<br/> | \[nella \] coordinata di trama.<br/> |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[in \] Coordinata trama.<br/> |
 
 
 
@@ -56,26 +56,26 @@ Valore dei dati della trama.
 
 | Nome | Ingresso/Uscita | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| s    | in ingresso     | [**oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [samplerCUBE](dx-graphics-hlsl-sampler.md)                    | 1    |
-| u    | in ingresso     | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| RET  | in uscita    | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| s    | in     | [**Oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [samplerCUBE](dx-graphics-hlsl-sampler.md)                    | 1    |
+| t    | in     | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| Ret  | in uscita    | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato               |
 |-----------------------------------------------------------|-------------------------|
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | Sì (solo pixel shader) |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | Sì (solo pixel shader) |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | Sì (solo pixel shader) |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no                      |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì (solo pixel shader) |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sì (solo pixel shader) |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sì (solo pixel shader) |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no                      |
 
 
 

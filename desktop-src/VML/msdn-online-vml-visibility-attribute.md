@@ -13,10 +13,10 @@ ms.locfileid: "118346183"
 ---
 # <a name="vml-visibility-attribute"></a>Attributo di visibilità VML
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -38,7 +38,7 @@ Determina se viene visualizzata una forma. Proprietà di lettura/scrittura. **St
 
 **Osservazioni:**
 
-**L'attributo Visibility** è simile all'attributo **Visibility** HTML standard per gli stili.
+**L'attributo Visibility** è simile all'attributo **di visibilità** HTML standard per gli stili.
 
 I possibili valori sono:
 
@@ -47,19 +47,19 @@ I possibili valori sono:
 | Valore    | Descrizione                                                                                                                                                                             |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | visible  | La forma è visibile.                                                                                                                                                                   |
-| hidden   | La forma non è visibile, ma fa ancora parte del flusso degli oggetti nel browser. Gli eventi del mouse non vengono elaborati.                                                                  |
-| inherit  | Valore predefinito. Lo stato di visibilità viene ereditato dall'elemento padre della forma. Microsoft Office applicazioni usano solo **ereditare** e **nascondere**; Viene eseguito il mapping di qualsiasi altro valore per **ereditare**. |
-| comprimere | Usato per le applicazioni di modifica grafica in grado di comprimere gruppi di forme; ad esempio, strutture.                                                                                     |
+| hidden   | La forma non è visibile, ma fa comunque parte del flusso degli oggetti nel browser. Gli eventi del mouse non vengono elaborati.                                                                  |
+| inherit  | Valore predefinito. Lo stato di visibilità viene ereditato dall'elemento padre della forma. Microsoft Office applicazioni usano solo **ereditarietà** **e nascoste.** Viene eseguito il mapping di qualsiasi altro valore per **ereditare**. |
+| comprimere | Usato per applicazioni di modifica grafica che possono comprimere gruppi di forme; ad esempio i contorni.                                                                                     |
 
 
 
  
 
-*Attributo VML Standard*
+*Attributo standard VML*
 
 **Esempio**
 
-Il codice seguente crea una forma, ma la rende nascosta. Altri oggetti nel documento scorreranno intorno ad esso, lasciando uno spazio delle stesse dimensioni della forma.
+Il codice seguente crea una forma ma la rende nascosta. Altri oggetti nel documento scorreranno intorno a esso, lasciando uno spazio delle stesse dimensioni della forma.
 
 
 ```HTML
@@ -70,7 +70,7 @@ Il codice seguente crea una forma, ma la rende nascosta. Altri oggetti nel docum
 
 
 
-[Esempio di attributo di visibilità](/previous-versions/bb264100(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
+[Esempio di attributo Visibility](/previous-versions/bb264100(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
  
 

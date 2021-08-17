@@ -1,23 +1,23 @@
 ---
-description: La modalità address texture mirror, identificata dal \_ membro mirror D3DTADDRESS del tipo enumerato D3DTEXTUREADDRESS, fa sì che Direct3D rispecchi la trama a ogni limite intero.
+description: La modalità di indirizzo della trama speculare, identificata dal membro D3DTADDRESS MIRROR del tipo enumerato D3DTEXTUREADDRESS, fa in modo che Direct3D rifletta la trama a ogni limite \_ integer.
 ms.assetid: 816efd4d-94b3-4b6c-9fc9-218cc2207b97
-title: Modalità address texture mirror (Direct3D 9)
+title: Modalità indirizzo trama speculare (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 471ad8b715d9375947162c66474687b9d6376bec
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 10ef8731c060e95c470bbf8d34222b9ee66e7f9da2c7a6f03a09c2989986ca3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728368"
 ---
-# <a name="mirror-texture-address-mode-direct3d-9"></a>Modalità address texture mirror (Direct3D 9)
+# <a name="mirror-texture-address-mode-direct3d-9"></a>Modalità indirizzo trama speculare (Direct3D 9)
 
-La modalità address texture mirror, identificata dal \_ membro mirror D3DTADDRESS del tipo enumerato [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md) , fa sì che Direct3D rispecchi la trama a ogni limite intero. Si supponga, ad esempio, che l'applicazione crei una primitiva quadrata e specifichi le coordinate di trama (0,0, 0,0), (0.0, 3.0), (3.0, 3.0) e (3.0, 0,0). Impostando la modalità di indirizzamento della trama su D3DTADDRESS \_ mirror, la trama viene applicata tre volte nelle direzioni u-e-v. Ogni altra riga e colonna a cui viene applicato è un'immagine speculare della riga o della colonna precedente, come illustrato nella figura seguente.
+La modalità di indirizzo della trama speculare, identificata dal membro D3DTADDRESS MIRROR del tipo enumerato \_ [**D3DTEXTUREADDRESS,**](./d3dtextureaddress.md) fa in modo che Direct3D rifletta la trama a ogni limite integer. Si supponga, ad esempio, che l'applicazione crei una primitiva quadrata e specifichi le coordinate di trama (0.0,0.0), (0.0,3.0), (3.0,3.0) e (3.0,0.0). Impostando la modalità di indirizzamento della trama su D3DTADDRESS MIRROR, la trama viene applicata tre volte in entrambe le direzioni \_ u e v. Ogni altra riga e colonna a cui viene applicata è un'immagine speculare della riga o della colonna precedente, come illustrato nella figura seguente.
 
-![illustrazione delle immagini speculari in una griglia 3x3](images/mirror.png)
+![illustrazione di immagini speculari in una griglia 3x3](images/mirror.png)
 
-Gli effetti di questa modalità di indirizzamento della trama sono simili a quelli della modalità a capo, ma distinti. Per altre informazioni, vedere [modalità di indirizzamento della trama a capo (Direct3D 9)](wrap-texture-address-mode.md).
+Gli effetti di questa modalità di indirizzo di trama sono simili, ma distinti da quelli della modalità a capo automatico. Per altre informazioni, vedere [Wrap Texture Address Mode (Direct3D 9) (Eseguire il wrapping della modalità indirizzo trama -Direct3D 9).](wrap-texture-address-mode.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

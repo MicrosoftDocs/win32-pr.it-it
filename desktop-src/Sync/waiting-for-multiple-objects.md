@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene usata la funzione CreateEvent per creare due oggetti evento e la funzione CreateThread per creare un thread.
+description: Nell'esempio seguente viene utilizzata la funzione CreateEvent per creare due oggetti evento e la funzione CreateThread per creare un thread.
 ms.assetid: 0132ac94-b45b-438a-b96a-e77cfe522702
-title: In attesa di più oggetti
+title: Attesa di più oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fc04d8737b0c404cf6296e1264fa86eb359be6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe4c8ac12585a32ede0fc96506fa770a19198b18fea833b42a5cf45c75be677b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765043"
 ---
-# <a name="waiting-for-multiple-objects"></a>In attesa di più oggetti
+# <a name="waiting-for-multiple-objects"></a>Attesa di più oggetti
 
-Nell'esempio seguente viene usata la funzione [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare due oggetti evento e la funzione [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) per creare un thread. USA quindi la funzione [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) per attendere che il thread imposti lo stato di uno degli oggetti su segnalato usando la funzione [**seevent**](/windows/win32/api/synchapi/nf-synchapi-resetevent) .
+Nell'esempio seguente viene utilizzata [**la funzione CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare due oggetti evento e la [**funzione CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) per creare un thread. Usa quindi la [**funzione WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) per attendere che il thread imposta lo stato di uno degli oggetti su segnalato tramite la [**funzione SetEvent.**](/windows/win32/api/synchapi/nf-synchapi-resetevent)
 
-Per un esempio di attesa di un singolo oggetto, vedere [uso di oggetti mutex](using-mutex-objects.md).
+Per un esempio che attende un singolo oggetto, vedere [Uso di oggetti Mutex](using-mutex-objects.md).
 
 
 ```C++

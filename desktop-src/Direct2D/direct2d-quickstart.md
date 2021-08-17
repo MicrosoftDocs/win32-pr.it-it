@@ -1,6 +1,6 @@
 ---
-title: Creazione di un'applicazione Direct2D semplice
-description: Viene illustrato il processo di creazione di una finestra che esegue il rendering del contenuto Direct2D.
+title: Creazione di una semplice applicazione Direct2D
+description: Illustra il processo di creazione di una finestra che esegue il rendering del contenuto Direct2D.
 ms.assetid: a627523e-417a-40cd-82c0-4f0380a3a0b1
 keywords:
 - Direct2D, esercitazione
@@ -10,44 +10,44 @@ keywords:
 - applicazioni per Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44d023e348e30b4e421ffe177f30c0c55a344fba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 907ec9a026005fec03b034978873f012cd956a8a7533d97b85b9122664ef1163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104559920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825340"
 ---
-# <a name="creating-a-simple-direct2d-application"></a>Creazione di un'applicazione Direct2D semplice
+# <a name="creating-a-simple-direct2d-application"></a>Creazione di una semplice applicazione Direct2D
 
-In questo argomento viene illustrato il processo di creazione della classe DemoApp, che crea una finestra e utilizza Direct2D per creare una griglia e due rettangoli. In questa esercitazione si apprenderà come creare risorse Direct2D e creare forme di base. Si apprenderà anche come strutturare l'applicazione per migliorare le prestazioni riducendo al minimo la creazione di risorse.
+Questo argomento illustra il processo di creazione della classe DemoApp, che crea una finestra e usa Direct2D per disegnare una griglia e due rettangoli. Questa esercitazione illustra come creare risorse Direct2D e disegnare forme di base. Si apprenderà anche come strutturare l'applicazione per migliorare le prestazioni riducendo al minimo la creazione di risorse.
 
-Per seguire l'esercitazione, è possibile usare Microsoft Visual Studio 2008 per creare un progetto Win32 e quindi sostituire il codice nell'intestazione principale dell'applicazione e nel file cpp con il codice descritto in questa esercitazione.
+Per seguire l'esercitazione, è possibile usare Microsoft Visual Studio 2008 per creare un progetto Win32 e quindi sostituire il codice nell'intestazione dell'applicazione principale e nel file cpp con il codice descritto in questa esercitazione.
 
 > [!Note]  
-> Se si vuole creare un'app di Windows Store che usa Direct2D, vedere l'argomento [avvio rapido di Direct2D per Windows 8](direct2d-quickstart-with-device-context.md) .
+> Se si vuole creare un'app Windows Store che usa Direct2D, vedere l'argomento [Direct2D Quickstart for Windows 8.](direct2d-quickstart-with-device-context.md)
 
- 
+ 
 
-Per una panoramica delle interfacce che è possibile usare per creare contenuto Direct2D, vedere [Cenni preliminari sull'API Direct2D](the-direct2d-api.md).
+Per una panoramica delle interfacce che è possibile usare per creare contenuto Direct2D, vedere Panoramica [dell'API Direct2D.](the-direct2d-api.md)
 
 Questa esercitazione contiene le parti seguenti:
 
--   [Parte 1: creare l'intestazione DemoApp](#part-1-create-the-demoapp-header)
--   [Parte 2: implementare l'infrastruttura della classe](#part-2-implement-the-class-infrastructure)
--   [Parte 3: creare risorse Direct2D](#part-3-create-direct2d-resources)
--   [Parte 4: rendering del contenuto Direct2D](#part-4-render-direct2d-content)
+-   [Parte 1: Creare l'intestazione DemoApp](#part-1-create-the-demoapp-header)
+-   [Parte 2: Implementare l'infrastruttura di classi](#part-2-implement-the-class-infrastructure)
+-   [Parte 3: Creare risorse Direct2D](#part-3-create-direct2d-resources)
+-   [Parte 4: Eseguire il rendering del contenuto Direct2D](#part-4-render-direct2d-content)
 -   [Summary](#summary)
 -   [Argomenti correlati](#related-topics)
 
-Al termine, la classe DemoApp produce l'output mostrato nella figura seguente.
+Al termine, la classe DemoApp produce l'output illustrato nella figura seguente.
 
-![illustrazione di due rettangoli sullo sfondo di una griglia](images/drawrectangleexample-small.png)
+![Illustrazione di due rettangoli su uno sfondo della griglia](images/drawrectangleexample-small.png)
 
-## <a name="part-1-create-the-demoapp-header"></a>Parte 1: creare l'intestazione DemoApp
+## <a name="part-1-create-the-demoapp-header"></a>Parte 1: Creare l'intestazione DemoApp
 
-In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungendo le intestazioni e le macro necessarie. Si dichiarano inoltre i metodi e i membri dati che verranno usati nelle parti successive di questa esercitazione.
+In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungendo le intestazioni e le macro necessarie. Si dichiarano anche i metodi e i membri dati che verranno utilizzati nelle parti successive di questa esercitazione.
 
-1.  Nel file di intestazione dell'applicazione includere le seguenti intestazioni di uso frequente.
+1.  Nel file di intestazione dell'applicazione includere le intestazioni usate di frequente seguenti.
 ```C++
     // Windows Header Files:
     #include <windows.h>
@@ -67,7 +67,7 @@ In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungend
 
     
 
-2.  Dichiarare funzioni aggiuntive per rilasciare le interfacce e le macro per la gestione degli errori e il recupero dell'indirizzo di base del modulo.
+2.  Dichiarare funzioni aggiuntive per il rilascio di interfacce e macro per la gestione degli errori e il recupero dell'indirizzo di base del modulo.
 ```C++
     template<class Interface>
     inline void SafeRelease(
@@ -101,7 +101,7 @@ In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungend
 
     
 
-3.  Dichiarare i metodi per l'inizializzazione della classe, la creazione e l'eliminazione di risorse, la gestione del ciclo di messaggi, il rendering del contenuto e la procedura di Windows.
+3.  Dichiarare i metodi per l'inizializzazione della classe, la creazione e la rimozione di risorse, la gestione del ciclo di messaggi, il rendering del contenuto e la procedura di Windows.
 ```C++
     class DemoApp
     {
@@ -150,7 +150,7 @@ In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungend
 
     
 
-4.  Dichiarare i puntatori per un oggetto [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) , un oggetto [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) e due oggetti [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) come membri della classe.
+4.  Dichiarare puntatori per un [**oggetto ID2D1Factory,**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) [**un oggetto ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) e due oggetti [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) come membri della classe.
 ```C++
     private:
     HWND m_hwnd;
@@ -162,11 +162,11 @@ In questo passaggio si configura l'applicazione per l'uso di Direct2D aggiungend
 
     
 
-## <a name="part-2-implement-the-class-infrastructure"></a>Parte 2: implementare l'infrastruttura della classe
+## <a name="part-2-implement-the-class-infrastructure"></a>Parte 2: Implementare l'infrastruttura di classi
 
-In questa parte si implementano il costruttore e il distruttore DemoApp, i metodi di inizializzazione e di ciclo dei messaggi e la funzione WinMain. La maggior parte di questi metodi ha un aspetto identico a quelli presenti in qualsiasi altra applicazione Win32. L'unica eccezione è il metodo Initialize, che chiama il metodo CreateDeviceIndependentResources (definito nella parte successiva) che crea diverse risorse Direct2D.
+In questa parte vengono implementati il costruttore e il distruttore DemoApp, i relativi metodi di inizializzazione e ciclo di messaggi e la funzione WinMain. La maggior parte di questi metodi ha lo stesso aspetto di quelli presenti in qualsiasi altra applicazione Win32. L'unica eccezione è il metodo Initialize, che chiama il metodo CreateDeviceIndependentResources (definito nella parte successiva) che crea diverse risorse Direct2D.
 
-1.  Nel file di implementazione della classe implementare il costruttore e il distruttore della classe. Il costruttore deve inizializzare i membri in **null**. Il distruttore deve rilasciare tutte le interfacce archiviate come membri della classe.
+1.  Nel file di implementazione della classe implementare il costruttore e il distruttore della classe. Il costruttore deve inizializzare i relativi membri su **NULL.** Il distruttore deve rilasciare tutte le interfacce archiviate come membri della classe.
 ```C++
     DemoApp::DemoApp() :
         m_hwnd(NULL),
@@ -192,7 +192,7 @@ DemoApp::~DemoApp()
 
     
 
-2.  Implementare il metodo DemoApp:: RunMessageLoop che converte e invia i messaggi.
+2.  Implementare il metodo DemoApp::RunMessageLoop che converte e invia messaggi.
 ```C++
     void DemoApp::RunMessageLoop()
     {
@@ -208,7 +208,7 @@ DemoApp::~DemoApp()
 
     
 
-3.  Implementare il metodo Initialize che crea la finestra, la Mostra e chiama il metodo DemoApp:: CreateDeviceIndependentResources. Implementare il metodo CreateDeviceIndependentResources nella sezione successiva.
+3.  Implementare il metodo Initialize che crea la finestra, la mostra e chiama il metodo DemoApp::CreateDeviceIndependentResources. Il metodo CreateDeviceIndependentResources viene implementato nella sezione successiva.
 ```C++
     HRESULT DemoApp::Initialize()
     {
@@ -272,7 +272,7 @@ DemoApp::~DemoApp()
 
     
 
-4.  Creare il metodo WinMain che funge da punto di ingresso dell'applicazione. Inizializzare un'istanza della classe DemoApp e iniziare il relativo ciclo di messaggi.
+4.  Creare il metodo WinMain che funge da punto di ingresso dell'applicazione. Inizializzare un'istanza della classe DemoApp e iniziare il ciclo di messaggi.
 ```C++
     int WINAPI WinMain(
         HINSTANCE /* hInstance */,
@@ -307,11 +307,11 @@ DemoApp::~DemoApp()
 
     
 
-## <a name="part-3-create-direct2d-resources"></a>Parte 3: creare risorse Direct2D
+## <a name="part-3-create-direct2d-resources"></a>Parte 3: Creare risorse Direct2D
 
-In questa parte vengono create le risorse Direct2D utilizzate per il progetto. Direct2D fornisce due tipi di risorse: risorse indipendenti dal dispositivo che possono durare per la durata dell'applicazione e risorse dipendenti dal dispositivo. Le risorse dipendenti dal dispositivo sono associate a un particolare dispositivo di rendering e smetteranno di funzionare se il dispositivo è stato rimosso.
+In questa parte vengono create le risorse Direct2D usate per disegnare. Direct2D offre due tipi di risorse: risorse indipendenti dal dispositivo che possono durare per la durata dell'applicazione e risorse dipendenti dal dispositivo. Le risorse dipendenti dal dispositivo sono associate a un particolare dispositivo di rendering e cesseranno di funzionare se tale dispositivo viene rimosso.
 
-1.  Implementare il metodo DemoApp:: CreateDeviceIndependentResources. Nel metodo creare un [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory), una risorsa indipendente dal dispositivo, per la creazione di altre risorse Direct2D. Usare il membro della classe **m \_ pDirect2DdFactory** per archiviare la factory.
+1.  Implementare il metodo DemoApp::CreateDeviceIndependentResources. Nel metodo creare un [**oggetto ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory), una risorsa indipendente dal dispositivo, per la creazione di altre risorse Direct2D. Usare il **membro della classe m \_ pDirect2DdFactory** per archiviare la factory.
 ```C++
     HRESULT DemoApp::CreateDeviceIndependentResources()
     {
@@ -326,7 +326,7 @@ In questa parte vengono create le risorse Direct2D utilizzate per il progetto. D
 
     
 
-2.  Implementare il metodo DemoApp:: CreateDeviceResources. Questo metodo crea le risorse dipendenti dal dispositivo della finestra, una destinazione di rendering e due pennelli. Recuperare le dimensioni dell'area client e creare un [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) della stessa dimensione che esegue il rendering nell'elemento **HWND** della finestra. Archiviare la destinazione di rendering nel membro della classe **m \_ pRenderTarget** .
+2.  Implementare il metodo DemoApp::CreateDeviceResources. Questo metodo crea le risorse dipendenti dal dispositivo della finestra, una destinazione di rendering e due pennelli. Recuperare le dimensioni dell'area client e creare un [**id2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) delle stesse dimensioni di cui viene eseguito il rendering **nell'oggetto HWND della finestra.** Archiviare la destinazione di rendering nel **membro della classe m \_ pRenderTarget.**
 ```C++
             RECT rc;
             GetClientRect(m_hwnd, &rc);
@@ -347,7 +347,7 @@ In questa parte vengono create le risorse Direct2D utilizzate per il progetto. D
 
     
 
-3.  Usare la destinazione di rendering per creare una [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) grigia e un **ID2D1SolidColorBrush** blu fiordaliso.
+3.  Usare la destinazione di rendering per creare un [**oggetto ID2D1SolidColorBrush grigio**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) e un oggetto **ID2D1SolidColorBrush** blu del fiordaliso.
 ```C++
             if (SUCCEEDED(hr))
             {
@@ -417,7 +417,7 @@ In questa parte vengono create le risorse Direct2D utilizzate per il progetto. D
 
     
 
-5.  Implementare il metodo DemoApp::D iscardDeviceResources. In questo metodo rilasciare la destinazione di rendering e i due pennelli creati nel metodo DemoApp:: CreateDeviceResources.
+5.  Implementare il metodo DemoApp::D iscardDeviceResources. In questo metodo rilasciare la destinazione di rendering e i due pennelli creati nel metodo DemoApp::CreateDeviceResources.
 ```C++
     void DemoApp::DiscardDeviceResources()
     {
@@ -429,11 +429,11 @@ In questa parte vengono create le risorse Direct2D utilizzate per il progetto. D
 
     
 
-## <a name="part-4-render-direct2d-content"></a>Parte 4: rendering del contenuto Direct2D
+## <a name="part-4-render-direct2d-content"></a>Parte 4: Eseguire il rendering del contenuto Direct2D
 
-In questa parte si implementa la routine di Windows, il metodo OnRender che dipinge il contenuto e il metodo OnResize che regola la dimensione della destinazione di rendering quando la finestra viene ridimensionata.
+In questa parte viene implementata la procedura windows, il metodo OnRender che disegna il contenuto e il metodo OnResize che regola le dimensioni della destinazione di rendering quando la finestra viene ridimensionata.
 
-1.  Implementare il metodo DemoApp:: WndProc per gestire i messaggi della finestra. Per il messaggio di [**\_ dimensioni WM**](../winmsg/wm-size.md) , chiamare il metodo demoApp:: OnResize e passargli la nuova larghezza e altezza. Per i messaggi [**WM \_ Paint**](/windows/desktop/gdi/wm-paint) e [**WM \_ DISPLAYCHANGE**](/windows/desktop/gdi/wm-displaychange) , chiamare il metodo demoApp:: OnRender per disegnare la finestra. Implementare i metodi OnRender e OnResize nei passaggi successivi.
+1.  Implementare il metodo DemoApp::WndProc per gestire i messaggi della finestra. Per il [**messaggio WM \_ SIZE,**](../winmsg/wm-size.md) chiamare il metodo DemoApp::OnResize e passarlo alla nuova larghezza e altezza. Per i [**messaggi WM \_ PAINT**](/windows/desktop/gdi/wm-paint) e [**WM \_ DISPLAYCHANGE,**](/windows/desktop/gdi/wm-displaychange) chiamare il metodo DemoApp::OnRender per disegnare la finestra. Implementare i metodi OnRender e OnResize nei passaggi seguenti.
 ```C++
     LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
     {
@@ -516,7 +516,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-2.  Implementare il metodo DemoApp:: OnRender. Per prima cosa, creare un **HRESULT**. Chiamare quindi il metodo CreateDeviceResource. Questo metodo viene chiamato ogni volta che la finestra viene disegnata. Si ricordi che nel passaggio 4 della parte 3 è stata aggiunta un'istruzione **if** per impedire al metodo di eseguire qualsiasi operazione se la destinazione di rendering esiste già.
+2.  Implementare il metodo DemoApp::OnRender. Creare prima di tutto **un HRESULT.** Chiamare quindi il metodo CreateDeviceResource. Questo metodo viene chiamato ogni volta che viene disegnata la finestra. Tenere presente che nel passaggio 4 della parte 3 è stata aggiunta un'istruzione **if** per impedire al metodo di eseguire operazioni se la destinazione di rendering esiste già.
 ```C++
     HRESULT DemoApp::OnRender()
     {
@@ -527,7 +527,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-3.  Verificare che il metodo CreateDeviceResource sia stato completato. In caso contrario, non eseguire alcun disegno.
+3.  Verificare che il metodo CreateDeviceResource sia riuscito. In caso contrario, non eseguire alcun disegno.
 ```C++
         if (SUCCEEDED(hr))
         {
@@ -535,7 +535,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-4.  All'interno dell'istruzione **if** appena creata, avviare il disegno chiamando il metodo BeginDraw della destinazione di rendering. Impostare la trasformazione della destinazione di rendering sulla matrice di identità e deselezionare la finestra.
+4.  **All'interno dell'istruzione if** appena creata, avviare il disegno chiamando il metodo BeginDraw della destinazione di rendering. Impostare la trasformazione della destinazione di rendering sulla matrice di identità e cancellare la finestra.
 ```C++
             m_pRenderTarget->BeginDraw();
 
@@ -554,7 +554,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-6.  Disegnare uno sfondo della griglia usando un ciclo **for** e il metodo [**DrawLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawline) della destinazione di rendering per disegnare una serie di righe.
+6.  Disegnare uno sfondo della griglia usando un **ciclo for** e il metodo [**DrawLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawline) della destinazione di rendering per disegnare una serie di linee.
 ```C++
             // Draw a grid background.
             int width = static_cast<int>(rtSize.width);
@@ -612,7 +612,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-9.  Usare il metodo [**DrawRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) della destinazione di rendering per disegnare la struttura del secondo rettangolo con il pennello blu fiordaliso.
+9.  Usare il metodo [**DrawRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) della destinazione di rendering per disegnare il contorno del secondo rettangolo con il pennello blu del fiordaliso.
 ```C++
             // Draw the outline of a rectangle.
             m_pRenderTarget->DrawRectangle(&rectangle2, m_pCornflowerBlueBrush);
@@ -620,7 +620,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-10. Chiamare il metodo [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) della destinazione di rendering. Il metodo **EndDraw** restituisce un valore **HRESULT** per indicare se le operazioni di disegno sono state completate correttamente. Chiudere l'istruzione **if** iniziata nel passaggio 3.
+10. Chiamare il metodo [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) della destinazione di rendering. Il **metodo EndDraw** restituisce un **HRESULT** per indicare se le operazioni di disegno hanno avuto esito positivo. Chiudere **l'istruzione if** avviata nel passaggio 3.
 ```C++
             hr = m_pRenderTarget->EndDraw();
         }
@@ -628,7 +628,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-11. Controllare **HRESULT** restituito da [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw). Se indica che è necessario ricreare la destinazione di rendering, chiamare il metodo DemoApp::D iscardDeviceResources per rilasciarlo; verrà ricreato la volta successiva che la finestra riceverà un messaggio [**WM \_ Paint**](/windows/desktop/gdi/wm-paint) o [**WM \_ DISPLAYCHANGE**](/windows/desktop/gdi/wm-displaychange) .
+11. Controllare il **valore HRESULT** restituito [**da EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) Se indica che la destinazione di rendering deve essere ricreata, chiamare il metodo DemoApp::D iscardDeviceResources per rilasciarla; verrà ricreato alla successiva ricezione di un messaggio [**WM \_ PAINT**](/windows/desktop/gdi/wm-paint) o [**WM \_ DISPLAYCHANGE**](/windows/desktop/gdi/wm-displaychange) nella finestra.
 ```C++
         if (hr == D2DERR_RECREATE_TARGET)
         {
@@ -639,7 +639,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-12. Restituire **HRESULT** e chiudere il metodo.
+12. Restituire **HRESULT e** chiudere il metodo.
 ```C++
         return hr;
     }
@@ -647,7 +647,7 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 
     
 
-13. Implementare il metodo DemoApp:: OnResize in modo da ridimensionare la destinazione di rendering alla nuova dimensione della finestra.
+13. Implementare il metodo DemoApp::OnResize in modo che ridimensioni la destinazione di rendering alle nuove dimensioni della finestra.
 ```C++
     void DemoApp::OnResize(UINT width, UINT height)
     {
@@ -666,13 +666,13 @@ In questa parte si implementa la routine di Windows, il metodo OnRender che dipi
 L'esercitazione è stata completata.
 
 > [!Note]  
-> Per usare Direct2D, verificare che l'applicazione includa il file di intestazione d2d1. h e venga compilato con la libreria d2d1. lib. È possibile trovare d2d1. h e d2d1. lib in [Windows Software Development Kit (SDK) per Windows 7](https://msdn.microsoft.com/windows/bb980924.aspx).
+> Per usare Direct2D, assicurarsi che l'applicazione includa il file di intestazione d2d1.h e venga compilata nella libreria d2d1.lib. È possibile trovare d2d1.h e d2d1.lib in [Windows Software Development Kit (SDK) per](https://msdn.microsoft.com/windows/bb980924.aspx)Windows 7 .
 
- 
+ 
 
 ## <a name="summary"></a>Riepilogo
 
-In questa esercitazione si è appreso come creare risorse Direct2D e creare forme di base. Si è inoltre appreso come strutturare l'applicazione per migliorare le prestazioni riducendo al minimo la creazione di risorse.
+In questa esercitazione si è appreso come creare risorse Direct2D e disegnare forme di base. Si è anche appreso come strutturare l'applicazione per migliorare le prestazioni riducendo al minimo la creazione di risorse.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -684,6 +684,6 @@ In questa esercitazione si è appreso come creare risorse Direct2D e creare form
 [Miglioramento delle prestazioni di Direct2D](improving-direct2d-performance.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

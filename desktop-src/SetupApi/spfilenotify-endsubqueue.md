@@ -1,19 +1,19 @@
 ---
-description: La \_ notifica SPFILENOTIFY ENDSUBQUEUE viene inviata alla funzione di callback quando la coda completa tutte le operazioni nella coda secondaria Delete, Rename o Copy.
+description: La notifica SPFILENOTIFY ENDSUBQUEUE viene inviata alla funzione di callback quando la coda completa tutte le operazioni nella coda secondaria di \_ eliminazione, ridenominazione o copia.
 ms.assetid: 76bd027a-0f00-46e3-b502-0c97827308a8
-title: Messaggio SPFILENOTIFY_ENDSUBQUEUE (Setupapi. h)
+title: SPFILENOTIFY_ENDSUBQUEUE messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7eadc7546487b308313b7cb31088a22420e27af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72645aafbe94e3f90d11f8ccf65ed8c6006301db811bccd80936cadbf0478dcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964550"
 ---
-# <a name="spfilenotify_endsubqueue-message"></a>\_Messaggio SPFILENOTIFY ENDSUBQUEUE
+# <a name="spfilenotify_endsubqueue-message"></a>MESSAGGIO SPFILENOTIFY \_ ENDSUBQUEUE
 
-La notifica **SPFILENOTIFY \_ ENDSUBQUEUE** viene inviata alla funzione di callback quando la coda completa tutte le operazioni nella coda secondaria Delete, Rename o Copy.
+La **notifica SPFILENOTIFY \_ ENDSUBQUEUE** viene inviata alla funzione di callback quando la coda completa tutte le operazioni nella coda secondaria di eliminazione, ridenominazione o copia.
 
 
 ```C++
@@ -32,7 +32,7 @@ SPFILENOTIFY_ENDSUBQUEUE
 *Param1* 
 </dt> <dd>
 
-Coda secondaria completata. Questo parametro può essere uno dei seguenti valori FILEOP \_ Delete, FILEOP \_ Rename o FILEOP \_ Copy.
+Coda secondaria completata. Questo parametro può essere uno dei valori seguenti: FILEOP \_ DELETE, FILEOP \_ RENAME o FILEOP \_ COPY.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

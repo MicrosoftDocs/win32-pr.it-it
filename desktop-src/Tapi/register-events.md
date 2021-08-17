@@ -1,5 +1,5 @@
 ---
-description: Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
+description: Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia dell'evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche delle chiamate.
 ms.assetid: e7662a26-d7b2-4bff-aa72-e38b58bc15df
 title: Registrare eventi
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117761178"
 ---
 # <a name="register-events"></a>Registrare eventi
 
-Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
+Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia dell'evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche delle chiamate.
 
-Il gestore eventi illustrato è un esempio anziché un requisito. L'obiettivo principale è garantire che il thread che riceve gli eventi eserciti un'elaborazione minima prima di passare il lavoro a un altro thread. Ciò impedisce al gestore eventi di diventare un problema di prestazioni in situazioni di carico elevato degli eventi.
+Il gestore eventi illustrato è un esempio anziché un requisito. L'obiettivo principale è garantire che il thread che riceve gli eventi eserciti un'elaborazione minima prima di passare il lavoro a un altro thread. In questo modo si evita che il gestore eventi diventi un problema di prestazioni in situazioni di carico elevato degli eventi.
 
-Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [Inizializza TAPI](initialize-tapi.md) [e Selezionare un indirizzo](select-an-address.md).
+Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [InizializzaRE TAPI](initialize-tapi.md) e [Selezionare un indirizzo.](select-an-address.md)
 
 > [!Note]  
 > In questo esempio non sono disponibili il controllo degli errori e le versioni appropriate per il codice di produzione.

@@ -1,7 +1,7 @@
 ---
-description: Indica che la riproduzione DVD è stata arrestata. Questo evento viene inviato quando un titolo o un capitolo viene completato e il navigatore DVD non trova altre istruzioni di branching per la riproduzione successiva. L'evento non viene inviato quando l'applicazione interrompe la riproduzione.
+description: Indica che la riproduzione di DVD è stata arrestata. Questo evento viene inviato quando un titolo o un capitolo viene completato e lo strumento di navigazione DVD non trova altre istruzioni di diramazione per la riproduzione successiva. L'evento non viene inviato quando l'applicazione arresta la riproduzione.
 ms.assetid: c8617307-d70e-48af-8e85-69105595aa10
-title: EC_DVD_PLAYBACK_STOPPED (Dvdevcode. h)
+title: EC_DVD_PLAYBACK_STOPPED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 2304d83aea532b764777b683c57c3bdd4d5df79a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a5f0b1b66e9d78309e33981910da467757a2b606b967cee5b78e86c4cc0049b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820457"
 ---
-# <a name="ec_dvd_playback_stopped"></a>\_riproduzione DVD \_ EC \_ arrestata
+# <a name="ec_dvd_playback_stopped"></a>RIPRODUZIONE \_ DI DVD EC \_ \_ ARRESTATA
 
-Indica che la riproduzione DVD è stata arrestata. Questo evento viene inviato quando un titolo o un capitolo viene completato e il [navigatore DVD](dvd-navigator-filter.md) non trova altre istruzioni di branching per la riproduzione successiva. L'evento non viene inviato quando l'applicazione interrompe la riproduzione.
+Indica che la riproduzione di DVD è stata arrestata. Questo evento viene inviato quando un titolo o un capitolo viene completato e lo strumento di navigazione [DVD](dvd-navigator-filter.md) non trova altre istruzioni di diramazione per la riproduzione successiva. L'evento non viene inviato quando l'applicazione arresta la riproduzione.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Indica che la riproduzione DVD è stata arrestata. Questo evento viene inviato q
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Membro dell'enumerazione del [**DVD \_ PB \_ arrestato**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_pb_stopped) , che indica perché la riproduzione è stata arrestata.
+Membro dell'enumerazione [**DVD \_ PB \_ STOPPED,**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_pb_stopped) che indica il motivo per cui la riproduzione è stata arrestata.
 
 </dd> <dt>
 
@@ -52,7 +52,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

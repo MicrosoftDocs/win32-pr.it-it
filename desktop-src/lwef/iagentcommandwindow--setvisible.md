@@ -1,19 +1,19 @@
 ---
-title: IAgentCommandWindow visibile
-description: IAgentCommandWindow visibile
+title: IAgentCommandWindow SetVisible
+description: IAgentCommandWindow SetVisible
 ms.assetid: 44f3fc2d-937a-4890-8dad-e0f29da4c6b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a43ddff54f4869cbe36016f30d775eeea017ae6c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 35b8d06c40fd88b525cadf9f90a1edd4edaaf3a9e9be7ccdcfa98dd6abf8b833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117692644"
 ---
-# <a name="iagentcommandwindowsetvisible"></a>IAgentCommandWindow:: sevisible
+# <a name="iagentcommandwindowsetvisible"></a>IAgentCommandWindow::SetVisible
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetVisible(
@@ -21,16 +21,16 @@ HRESULT SetVisible(
 );
 ```
 
-Impostare la proprietà [**Visible**](visible-property.md) per la finestra dei comandi vocali.
+Impostare la [**proprietà Visible**](visible-property.md) per la finestra Comandi vocali.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="bVisible"></span><span id="bvisible"></span><span id="BVISIBLE"></span>*bVisible*
 </dt> <dd>
 
-Impostazione della proprietà [**Visible**](visible-property.md) . Il valore **true** Visualizza la finestra comandi vocali; **False** lo nasconde.
+Impostazione della proprietà [**Visible.**](visible-property.md) Il valore **True visualizza** la finestra Comandi vocali. **False** lo nasconde.
 
 </dd> </dl>
 
@@ -38,12 +38,12 @@ L'utente può eseguire l'override di questa proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommandWindow:: GetVisible**](iagentcommandwindow--getvisible.md)
+[**IAgentCommandWindow::GetVisible**](iagentcommandwindow--getvisible.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

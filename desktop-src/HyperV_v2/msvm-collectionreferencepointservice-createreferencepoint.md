@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7681795ee18965e3e04b75c800e3e574d6627ea9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e1745a02b643f035dd46d82e1686a8f5075157a7f749a701865028f3a7db162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994802"
 ---
-# <a name="createreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo CreateReferencePoint della classe MSVM \_ CollectionReferencePointService
+# <a name="createreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo CreateReferencePoint della classe Msvm \_ CollectionReferencePointService
 
 Crea un punto di riferimento di una raccolta di sistemi virtuali.
 
@@ -43,21 +43,21 @@ uint32 CreateReferencePoint(
 
 <dl> <dt>
 
-*Raccolta* \[ di in\]
+*Raccolta* \[ Pollici\]
 </dt> <dd>
 
 Riferimento alla raccolta di sistemi virtuali interessata.
 
 </dd> <dt>
 
-*ReferencePointSettings* \[ in\]
+*ReferencePointSettings* \[ Pollici\]
 </dt> <dd>
 
-Impostazioni parametri.
+Impostazioni dei parametri.
 
 </dd> <dt>
 
-*ReferencePointType* \[ in\]
+*ReferencePointType* \[ Pollici\]
 </dt> <dd>
 
 Indica il tipo del punto di riferimento.
@@ -73,12 +73,12 @@ Indica il tipo del punto di riferimento.
 
 <span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>
 
-<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basato su log** (1)
+<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basato su** log (1)
 
 
 </dt> <dd>
 
-Rilevamento del log della replica Hyper-V.
+Rilevamento dei log della replica Hyper-V.
 
 </dd> <dt>
 
@@ -89,51 +89,51 @@ Rilevamento del log della replica Hyper-V.
 
 </dt> <dd>
 
-Basato su Rilevamento modifiche resiliente di dischi virtuali.
+In base alla Rilevamento modifiche resiliente dei dischi virtuali.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Specifico del fornitore** (32768.. 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Specifico del** fornitore (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*ResultingReferencePointCollection* \[ in uscita\]
+*ResultingReferencePointCollection* \[ in, out\]
 </dt> <dd>
 
 Punto di riferimento risultante di una raccolta di sistemi virtuali.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); in caso contrario, viene restituito un errore.
+Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -148,16 +148,16 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -166,10 +166,10 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -178,7 +178,7 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 <dl> <dt>
 
-[**\_CollectionReferencePointService MSVM**](msvm-collectionreferencepointservice.md)
+[**Msvm \_ CollectionReferencePointService**](msvm-collectionreferencepointservice.md)
 </dt> </dl>
 
  

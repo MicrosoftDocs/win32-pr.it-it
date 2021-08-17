@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithBasicOverSslClientExample
-description: Questo esempio illustra come usare il proxy del servizio per comunicare con un servizio di calcolatrice, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP.
+description: Questo esempio illustra come usare il proxy del servizio per la comunicazione con un servizio calcolatrice, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP.
 ms.assetid: be1a44e6-642c-42fa-8b95-bd8c6f335696
 keywords:
-- HttpCalculatorWithBasicOverSslClientExample native-servizi Web
+- HttpCalculatorWithBasicOverSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3fc925c9cfc6f276d405a27ab931596559adf9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 53e366d5181f2cc498756820a3c1ccf6345c1ebcff60353cb1ffc5e6338c7ae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841565"
 ---
 # <a name="httpcalculatorwithbasicoversslclientexample"></a>HttpCalculatorWithBasicOverSslClientExample
 
-Questo esempio illustra come usare il proxy del servizio per comunicare con un servizio di calcolatrice, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
+Questo esempio illustra come usare il proxy del servizio per la comunicazione con un servizio calcolatrice, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
 
--   [HttpCalculatorWithBasicOverSslClient. cpp](#httpcalculatorwithbasicoversslclientcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [HttpCalculatorWithBasicOverSslClient.cpp](#httpcalculatorwithbasicoversslclientcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorwithbasicoversslclientcpp"></a>HttpCalculatorWithBasicOverSslClient. cpp
+## <a name="httpcalculatorwithbasicoversslclientcpp"></a>HttpCalculatorWithBasicOverSslClient.cpp
 
 
 ```C++
@@ -241,7 +241,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -366,9 +366,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

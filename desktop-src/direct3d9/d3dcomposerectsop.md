@@ -1,7 +1,7 @@
 ---
-description: Specifica come combinare i dati del glifo dalle aree di origine e di destinazione in una chiamata a ComposeRects.
+description: Specifica come combinare i dati del glifo dalle superfici di origine e di destinazione in una chiamata a ComposeRects.
 ms.assetid: 4b0e6e48-48e0-4955-bb20-f953fdce785c
-title: Enumerazione D3DCOMPOSERECTSOP (D3d9types. h)
+title: Enumerazione D3DCOMPOSERECTSOP (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: cd47cb14ab129bf27a4b59ba07e0be12d144fb8e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d968770eb58d9d3dd59f178b05e8e6536079e8de601ddef602a41da4b52ee51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117911169"
 ---
 # <a name="d3dcomposerectsop-enumeration"></a>Enumerazione D3DCOMPOSERECTSOP
 
-Specifica come combinare i dati del glifo dalle aree di origine e di destinazione in una chiamata a [**ComposeRects**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-composerects).
+Specifica come combinare i dati del glifo dalle superfici di origine e di destinazione in una chiamata a [**ComposeRects**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-composerects).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,38 +43,38 @@ typedef enum _D3DCOMPOSERECTSOP {
 
 <dl> <dt>
 
-<span id="D3DCOMPOSERECTS_COPY"></span><span id="d3dcomposerects_copy"></span>**Copia di D3DCOMPOSERECTS \_**
+<span id="D3DCOMPOSERECTS_COPY"></span><span id="d3dcomposerects_copy"></span>**COPIA D3DCOMPOSERECTS \_**
 </dt> <dd>
 
 Copiare l'origine nella destinazione.
 
 </dd> <dt>
 
-<span id="D3DCOMPOSERECTS_OR"></span><span id="d3dcomposerects_or"></span>**D3DCOMPOSERECTS \_ o**
+<span id="D3DCOMPOSERECTS_OR"></span><span id="d3dcomposerects_or"></span>**D3DCOMPOSERECTS \_ O**
 </dt> <dd>
 
 OR bit per bit l'origine e la destinazione.
 
 </dd> <dt>
 
-<span id="D3DCOMPOSERECTS_AND"></span><span id="d3dcomposerects_and"></span>**D3DCOMPOSERECTS \_ e**
+<span id="D3DCOMPOSERECTS_AND"></span><span id="d3dcomposerects_and"></span>**D3DCOMPOSERECTS \_ E**
 </dt> <dd>
 
-Bit per bit e l'origine e la destinazione.
+AND bit per bit l'origine e la destinazione.
 
 </dd> <dt>
 
-<span id="D3DCOMPOSERECTS_NEG"></span><span id="d3dcomposerects_neg"></span>**D3DCOMPOSERECTS \_ neg**
+<span id="D3DCOMPOSERECTS_NEG"></span><span id="d3dcomposerects_neg"></span>**D3DCOMPOSERECTS \_ NEG**
 </dt> <dd>
 
-Copiare l'origine negata nella destinazione (DST & ~ src).
+Copiare l'origine negata nella destinazione (Dst & ~Src).
 
 </dd> <dt>
 
-<span id="D3DCOMPOSERECTS_FORCE_DWORD"></span><span id="d3dcomposerects_force_dword"></span>**D3DCOMPOSERECTS \_ Force \_ DWORD**
+<span id="D3DCOMPOSERECTS_FORCE_DWORD"></span><span id="d3dcomposerects_force_dword"></span>**D3DCOMPOSERECTS \_ FORZA \_ DWORD**
 </dt> <dd>
 
-Riservato. Utilizzato per forzare l'enumerazione a 32 bit.
+Riservato. Utilizzato per forzare l'enumerazione a dimensioni a 32 bit.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Riservato. Utilizzato per forzare l'enumerazione a 32 bit.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_DecimalValue
-description: Identifica la proprietà \_ DecimalValue PKEY \_ dell'interfaccia utente.
+description: Identifica la proprietà \_ Ui PKEY \_ DecimalValue.
 ms.assetid: 1bfa99c2-a31c-4524-9d1c-1b320e97c41a
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118201597"
 ---
 # <a name="ui_pkey_decimalvalue"></a>UI \_ PKEY \_ DecimalValue
 
-Identifica la proprietà \_ DecimalValue PKEY \_ dell'interfaccia utente.
+Identifica la proprietà \_ Ui PKEY \_ DecimalValue.
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-UI \_ PKEY DecimalValue viene usato da un'applicazione per eseguire query sul valore nel campo \_ di modifica del controllo [Spinner.](windowsribbon-controls-spinner.md)
+UI \_ PKEY \_ DecimalValue viene usato da un'applicazione per eseguire una query sul valore nel campo di modifica del controllo [Spinner.](windowsribbon-controls-spinner.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà dello stato](windowsribbon-reference-properties-state.md)
+[Proprietà di stato](windowsribbon-reference-properties-state.md)
 </dt> </dl>
 
  
