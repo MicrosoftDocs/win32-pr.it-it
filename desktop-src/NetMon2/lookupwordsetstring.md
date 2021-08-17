@@ -1,7 +1,7 @@
 ---
 description: La funzione LookupWordSetString restituisce la stringa corrispondente al valore richiesto da un set con etichetta.
 ms.assetid: e8d158a1-8544-4c10-b8e8-46888c1097e4
-title: Funzione LookupWordSetString (Netmon. h)
+title: Funzione LookupWordSetString (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 7487becb195571e1eb88044195293b2c0b226e8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15b529076660eec093df370df47823fb21aa13e53cce61565fe82de7fbb7e017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364719"
 ---
-# <a name="lookupwordsetstring-function"></a>LookupWordSetString (funzione)
+# <a name="lookupwordsetstring-function"></a>Funzione LookupWordSetString
 
-La funzione **LookupWordSetString** restituisce la stringa corrispondente al valore richiesto da un set con etichetta.
+La **funzione LookupWordSetString** restituisce la stringa corrispondente al valore richiesto da un set con etichetta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ LPBYTE WINAPI LookupWordSetString(
 *lpSet* 
 </dt> <dd>
 
-Etichettato set da cui estrarre l'etichetta del valore.
+Set con etichetta da cui si estrae l'etichetta del valore.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Valore di un set con etichetta.
 
 Se la funzione ha esito positivo, il valore restituito è una stringa che corrisponde al valore richiesto.
 
-Se la funzione ha esito negativo, il valore specificato non è presente nel set, il valore restituito è **null**.
+Se la funzione ha esito negativo, il valore specificato non è presente nel set, il valore restituito è **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Se la funzione ha esito negativo, il valore specificato non è presente nel set,
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Parser. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

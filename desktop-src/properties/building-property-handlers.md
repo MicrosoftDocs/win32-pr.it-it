@@ -4,12 +4,12 @@ ms.assetid: 9dacd399-2cf3-40dd-9501-f26f0281500d
 title: Implementazione di gestori di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0aadfabf451d5a90ba88925d28f3f460aaeeb28f
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 5df4012168a0b6d1af5db727907e1c0fdc07231eac42abfbd3b96e8daab2f3f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118469127"
 ---
 # <a name="implementing-property-handlers"></a>Implementazione di gestori di proprietà
 
@@ -18,7 +18,7 @@ In Windows Vista e versioni successive, i metadati sono diventati centrali come 
 Negli argomenti seguenti vengono illustrati i requisiti e le strategie necessari per definire le proprietà e i gestori delle proprietà.
 
 -   [Informazioni sui gestori di proprietà](./building-property-handlers-properties.md)
--   [Uso dei nomi dei tipi](./building-property-handlers-user-friendly-kind-names.md)
+-   [Uso di nomi di tipi](./building-property-handlers-user-friendly-kind-names.md)
 -   [Uso degli elenchi di proprietà](./building-property-handlers-property-lists.md)
 -   [Inizializzazione di gestori di proprietà](./building-property-handlers-property-handlers.md)
 -   [Registrazione e distribuzione di gestori di proprietà](./prophand-reg-dist.md)

@@ -1,23 +1,23 @@
 ---
-description: Definire per le funzionalità note per le applicazioni tramite la funzione AllocateAndInitializeSid.
+description: Definire per le applicazioni funzionalità note usando la funzione AllocateAndInitializeSid.
 ms.assetid: CD27774F-0B70-4D97-96C9-B247536CC88E
-title: Costanti SID della funzionalità (Winnt. h)
+title: Costanti SID funzionalità (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55809cbb341bcbe60578043778bc824e09b8a295
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e37a06c0bd0115c4f7d05753825477b5de4948d1ddb9576aea46933a63cbf409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783215"
 ---
 # <a name="capability-sid-constants"></a>Costanti SID funzionalità
 
-Le costanti SID della funzionalità definiscono per le funzionalità note di applicazioni tramite la funzione [**AllocateAndInitializeSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid) .
+Le costanti SID delle funzionalità definiscono per le applicazioni funzionalità note tramite la [**funzione AllocateAndInitializeSid.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid)
 
 <dl> <dt>
 
-<span id="SECURITY_CAPABILITY_INTERNET_CLIENT"></span><span id="security_capability_internet_client"></span>**\_ \_ client Internet funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_INTERNET_CLIENT"></span><span id="security_capability_internet_client"></span>**FUNZIONALITÀ \_ DI SICUREZZA CLIENT \_ INTERNET \_**
 </dt> <dd> <dl> <dt>
 
 (0x00000001L)
@@ -30,7 +30,7 @@ Un account ha accesso a Internet da un computer client.
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_INTERNET_CLIENT_SERVER"></span><span id="security_capability_internet_client_server"></span>**\_funzionalità di \_ sicurezza \_ server client Internet \_**
+<span id="SECURITY_CAPABILITY_INTERNET_CLIENT_SERVER"></span><span id="security_capability_internet_client_server"></span>**FUNZIONALITÀ \_ DI SICUREZZA SERVER \_ CLIENT INTERNET \_ \_**
 </dt> <dd> <dl> <dt>
 
 (0x00000002L)
@@ -43,7 +43,7 @@ Un account ha accesso a Internet dai computer client e server.
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER"></span><span id="security_capability_private_network_client_server"></span>**\_funzionalità di \_ sicurezza \_ \_ server client di rete privata \_**
+<span id="SECURITY_CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER"></span><span id="security_capability_private_network_client_server"></span>**FUNZIONALITÀ \_ DI SICUREZZA SERVER CLIENT DI RETE \_ \_ \_ \_ PRIVATA**
 </dt> <dd> <dl> <dt>
 
 (0x00000003L)
@@ -56,7 +56,7 @@ Un account ha accesso a Internet da una rete privata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_PICTURES_LIBRARY"></span><span id="security_capability_pictures_library"></span>**\_ \_ Libreria immagini per le funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_PICTURES_LIBRARY"></span><span id="security_capability_pictures_library"></span>**RACCOLTA \_ IMMAGINI DELLE FUNZIONALITÀ DI \_ \_ SICUREZZA**
 </dt> <dd> <dl> <dt>
 
 (0x00000004L)
@@ -64,12 +64,12 @@ Un account ha accesso a Internet da una rete privata.
 
 
 
-Un account può accedere alla raccolta immagini.
+Un account ha accesso alla raccolta immagini.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_VIDEOS_LIBRARY"></span><span id="security_capability_videos_library"></span>**\_ \_ libreria video sulle funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_VIDEOS_LIBRARY"></span><span id="security_capability_videos_library"></span>**RACCOLTA \_ VIDEO SULLA FUNZIONALITÀ DI \_ \_ SICUREZZA**
 </dt> <dd> <dl> <dt>
 
 (0x00000005L)
@@ -77,12 +77,12 @@ Un account può accedere alla raccolta immagini.
 
 
 
-Un account può accedere alla raccolta video.
+Un account ha accesso alla raccolta video.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_MUSIC_LIBRARY"></span><span id="security_capability_music_library"></span>**\_ \_ libreria musicale della funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_MUSIC_LIBRARY"></span><span id="security_capability_music_library"></span>**LIBRERIA \_ MUSIC PER LE FUNZIONALITÀ DI \_ \_ SICUREZZA**
 </dt> <dd> <dl> <dt>
 
 (0x00000006L)
@@ -90,12 +90,12 @@ Un account può accedere alla raccolta video.
 
 
 
-Un account può accedere alla raccolta musicale.
+Un account ha accesso alla raccolta musicale.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_DOCUMENTS_LIBRARY"></span><span id="security_capability_documents_library"></span>**\_ \_ raccolta documenti funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_DOCUMENTS_LIBRARY"></span><span id="security_capability_documents_library"></span>**RACCOLTA \_ DOCUMENTI DELLE FUNZIONALITÀ DI \_ \_ SICUREZZA**
 </dt> <dd> <dl> <dt>
 
 (0x00000007L)
@@ -103,12 +103,12 @@ Un account può accedere alla raccolta musicale.
 
 
 
-Un account ha accesso alla libreria della documentazione di.
+Un account ha accesso alla libreria della documentazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_ENTERPRISE_AUTHENTICATION"></span><span id="security_capability_enterprise_authentication"></span>**\_ \_ autenticazione Enterprise per le funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_ENTERPRISE_AUTHENTICATION"></span><span id="security_capability_enterprise_authentication"></span>**SECURITY \_ CAPABILITY \_ ENTERPRISE \_ AUTHENTICATION**
 </dt> <dd> <dl> <dt>
 
 (0x00000008L)
@@ -116,12 +116,12 @@ Un account ha accesso alla libreria della documentazione di.
 
 
 
-Un account ha accesso alle credenziali di Windows predefinite.
+Un account ha accesso alle credenziali Windows predefinite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_SHARED_USER_CERTIFICATES"></span><span id="security_capability_shared_user_certificates"></span>**\_funzionalità di \_ sicurezza \_ certificati utente condivisi \_**
+<span id="SECURITY_CAPABILITY_SHARED_USER_CERTIFICATES"></span><span id="security_capability_shared_user_certificates"></span>**CERTIFICATI \_ UTENTE CONDIVISI DELLE FUNZIONALITÀ DI \_ \_ \_ SICUREZZA**
 </dt> <dd> <dl> <dt>
 
 (0x00000009L)
@@ -129,12 +129,12 @@ Un account ha accesso alle credenziali di Windows predefinite.
 
 
 
-Un account può accedere ai certificati utente condivisi.
+Un account ha accesso ai certificati utente condivisi.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SECURITY_CAPABILITY_REMOVABLE_STORAGE"></span><span id="security_capability_removable_storage"></span>**\_ \_ archiviazione rimovibile della funzionalità di sicurezza \_**
+<span id="SECURITY_CAPABILITY_REMOVABLE_STORAGE"></span><span id="security_capability_removable_storage"></span>**FUNZIONALITÀ \_ DI SICUREZZA ARCHIVI \_ \_ RIMOVIBILI**
 </dt> <dd> <dl> <dt>
 
 (0x0000000AL)
@@ -142,14 +142,14 @@ Un account può accedere ai certificati utente condivisi.
 
 
 
-Un account può accedere all'archiviazione rimovibile.
+Un account ha accesso all'archiviazione rimovibile.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si costruisce un SID di funzionalità, è necessario includere l'autorità del pacchetto di sicurezza del \_ pacchetto dell'app \_ \_ {0,0,0,0,0,15} nella chiamata alla funzione [**AllocateAndInitializeSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid) . Inoltre, è necessario il conteggio RID di base e RID per le funzionalità predefinite, SECURITY \_ Capability \_ base \_ RID (0X00000003L) e Security \_ Builtin \_ Capability \_ RID \_ Count (2L).
+Quando si costruisce un SID di funzionalità, è necessario includere l'autorità del pacchetto, SECURITY APP PACKAGE AUTHORITY, nella chiamata alla \_ \_ funzione \_ {0,0,0,0,0,15} [**AllocateAndInitializeSid.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid) Sono inoltre necessari il numero di RID e RID di base per le funzionalità incorporate, SECURITY \_ CAPABILITY \_ BASE RID \_ (0x00000003L) e SECURITY \_ BUILTIN \_ CAPABILITY RID COUNT \_ \_ (2L).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -157,9 +157,9 @@ Quando si costruisce un SID di funzionalità, è necessario includere l'autorit�
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Winnt. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 

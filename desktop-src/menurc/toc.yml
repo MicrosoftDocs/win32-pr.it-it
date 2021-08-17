@@ -220,7 +220,7 @@
               items:
                 - name: CopyIcon
                   href: /windows/desktop/api/Winuser/nf-winuser-copyicon
-                - name: CreateIcon
+                - name: Istruzione CreateIcon
                   href: /windows/desktop/api/Winuser/nf-winuser-createicon
                 - name: CreateIconFromResource
                   href: /windows/desktop/api/Winuser/nf-winuser-createiconfromresource
@@ -263,7 +263,7 @@
                   href: /windows/win32/api/Winuser/ns-winuser-iconinfoexa
                 - name: ICONMETRICS
                   href: /windows/win32/api/Winuser/ns-winuser-iconmetricsa
-    - name: Tipi di carattere e metriche di testo
+    - name: Metriche relative a tipi di carattere e testo
       href: fonts-and-font-metrics.md
     - name: Tasti di scelta rapida
       href: keyboard-accelerators.md
@@ -272,7 +272,7 @@
           href: about-keyboard-accelerators.md
         - name: Uso dei tasti di scelta rapida
           href: using-keyboard-accelerators.md
-        - name: Informazioni di riferimento sull'acceleratore di tastiera
+        - name: Riferimento ai tasti di scelta rapida
           href: keyboard-accelerator-reference.md
           items:
             - name: Funzioni dei tasti di scelta rapida
@@ -288,7 +288,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa
                 - name: TranslateAccelerator
                   href: /windows/desktop/api/Winuser/nf-winuser-translateacceleratora
-            - name: Messaggi dell'acceleratore di tastiera
+            - name: Messaggi relativi ai tasti di scelta rapida
               href: keyboard-accelerator-messages.md
               items:
                 - name: WM_CHANGEUISTATE
@@ -299,7 +299,7 @@
                   href: wm-queryuistate.md
                 - name: WM_UPDATEUISTATE
                   href: wm-updateuistate.md
-            - name: Notifiche dell'acceleratore di tastiera
+            - name: Notifiche dei tasti di scelta rapida
               href: keyboard-accelerator-notifications.md
               items:
                 - name: WM_INITMENUPOPUP
@@ -634,7 +634,7 @@
             - name: Strutture delle informazioni sulla versione
               href: version-information-structures.md
               items:
-                - name: Stringa
+                - name: string
                   href: string-str.md
                 - name: StringFileInfo
                   href: stringfileinfo.md
@@ -801,7 +801,7 @@
             - name: Messaggi di diagnostica RC
               href: rc-diagnostic-messages.md
               items:
-                - name: Una
+                - name: A
                   href: a.md
                 - name: B
                   href: b.md

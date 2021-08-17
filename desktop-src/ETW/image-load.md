@@ -79,7 +79,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(7), Puntatore
+Qualificatori: WmiDataId(7), Pointer
 </dt> </dl>
 
 Indirizzo di base predefinito.
@@ -89,7 +89,7 @@ Indirizzo di base predefinito.
 FileName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -130,7 +130,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Somma del controllo immagine.
+Somma controllo immagine.
 
 </dd> <dt>
 
@@ -143,12 +143,12 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(2), Puntatore
+Qualificatori: WmiDataId(2), Pointer
 </dt> </dl>
 
 Dimensioni dell'immagine caricata.
 
-Quando si utilizza questa proprietà, il tipo di dati per questa proprietà è effettivamente size \_ t. Il qualificatore Pointer viene usato per determinare se la dimensione \_ t è di 4 byte o 8 byte.
+Quando si utilizza questa proprietà, il tipo di dati per questa proprietà è effettivamente \_ size t. Il qualificatore puntatore viene usato per determinare se la dimensione \_ t è di 4 byte o 8 byte.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(5)
 </dt> </dl>
 
-Ora e data in cui l'immagine è stata caricata o scaricata.
+Data e ora in cui l'immagine è stata caricata o scaricata.
 
 </dd> </dl>
 
@@ -274,8 +274,8 @@ Gli eventi DCStart e DCEnd enumerano tutte le immagini caricate rispettivamente 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

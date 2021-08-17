@@ -1,19 +1,19 @@
 ---
 title: Ottenere e chiamare i metodi esportati per un client
-description: Nell'esempio di codice seguente viene illustrato come ottenere un elenco di metodi esportati da un client e come richiamare un metodo per tale client.
+description: Il codice di esempio seguente illustra come ottenere un elenco di metodi esportati da un client e come richiamare un metodo per tale client.
 ms.assetid: 55b2a03f-498c-4321-891b-747f4baea10d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d9610922f9b0bffcacf477887103fea47e75de0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c8ffc39ea210537ed2248f374e3898464cb2be560fe09ef93a8f3acbdc380ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790064"
 ---
 # <a name="obtain-and-call-the-exported-methods-for-a-client"></a>Ottenere e chiamare i metodi esportati per un client
 
-Nell'esempio di codice seguente viene illustrato come ottenere un elenco di metodi esportati da un client e come richiamare un metodo per tale client.
+Il codice di esempio seguente illustra come ottenere un elenco di metodi esportati da un client e come richiamare un metodo per tale client.
 
 
 ```C++
@@ -184,9 +184,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

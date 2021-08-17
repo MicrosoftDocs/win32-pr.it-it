@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: Store'
+title: Funzione RWByteAddressBuffer::Store
 description: Imposta un valore.
 ms.assetid: edfda955-602c-44f4-adc3-77b61c9dcd05
 keywords:
-- Funzione di archivio HLSL
+- Archiviare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9e161e4fb64d09e41c6529954e63b2ace55207e9
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 5be699a28eea213b8847f32a3b66f53739a7db86ee5964bd97559a6d534fff6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104976226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724943"
 ---
 # <a name="store-function"></a>Funzione Store
 
@@ -28,8 +28,8 @@ Imposta un valore.
 
 ``` syntax
 void Store(
-  in uint address,
-  in uint value
+  in uint address,
+  in uint value
 );
 ```
 
@@ -37,7 +37,7 @@ void Store(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Indirizzo di input in byte, che deve essere un multiplo di 4.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -65,13 +65,13 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -80,12 +80,12 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

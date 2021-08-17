@@ -22,7 +22,7 @@ ms.locfileid: "118471674"
 ---
 # <a name="mergeandvalidateprintticketthunk2-function"></a>Funzione MergeAndValidatePrintTicketThunk2
 
-\[Questa funzione non è supportata e potrebbe essere disabilitata o eliminata nelle versioni future Windows. [**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket) fornisce funzionalità equivalenti e deve essere usato.\]
+\[Questa funzione non è supportata e potrebbe essere disabilitata o eliminata nelle versioni future di Windows. [**PTMergeAndValidatePrintTicket fornisce**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket) funzionalità equivalenti e deve essere usato.\]
 
 Unisce due print ticket e restituisce un ticket di stampa valido e valido.
 
@@ -59,7 +59,7 @@ Handle per un provider di ticket di stampa aperto. Questo handle viene restituit
 *pBasePrintTicket* \[ Pollici\]
 </dt> <dd>
 
-Buffer che contiene i dati del ticket di stampa di base, espressi in XML come descritto in [Schema di stampa](./printschema.md).
+Buffer che contiene i dati del print ticket di base, espressi in XML come descritto in [Schema di stampa.](./printschema.md)
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Dimensione, in byte, del buffer a cui fa riferimento *pBasePrintTicket.*
 *pDeltaPrintTicket* \[ in, facoltativo\]
 </dt> <dd>
 
-Buffer che contiene il ticket di stampa da unire. I dati del ticket di stampa sono espressi in XML come descritto in [Schema di stampa](./printschema.md). Il valore di questo parametro può essere **NULL.**
+Buffer che contiene il print ticket da unire. I dati del print ticket sono espressi in XML come descritto in [Schema di stampa](./printschema.md). Il valore di questo parametro può essere **NULL.**
 
 </dd> <dt>
 
@@ -87,34 +87,34 @@ Dimensione, in byte, del buffer a cui fa riferimento *pDeltaPrintTicket.*
 *ambito* \[ Pollici\]
 </dt> <dd>
 
-Valore che specifica se l'ambito di *pDeltaPrintTicket* e *ppValidatedPrintTicket* è una singola pagina, un intero documento o tutti i documenti nel processo di stampa. Il valore di questo parametro deve essere un membro [**dell'enumerazione EPrintTicketScope,**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) di cui viene eseguito il cast come **valore DWORD**.
+Valore che specifica se l'ambito di *pDeltaPrintTicket* e *ppValidatedPrintTicket* è una singola pagina, un intero documento o tutti i documenti nel processo di stampa. Il valore di questo parametro deve essere un membro [**dell'enumerazione EPrintTicketScope,**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) di cui viene eseguito il cast come **valore DWORD.**
 
 </dd> <dt>
 
 *ppValidatedPrintTicket* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo del buffer che contiene il ticket di stampa unito e convalidato. Questa funzione chiama [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) per allocare questo buffer. Quando il buffer non è più necessario, il chiamante deve liberarlo chiamando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Indirizzo del buffer che contiene il print ticket unito e convalidato. Questa funzione chiama [**CoTaskMemAlloc per**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) allocare questo buffer. Quando il buffer non è più necessario, il chiamante deve liberarlo chiamando [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> <dt>
 
 *pValidatedPrintTicketLength* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer a cui fa riferimento *ppValidatedPrintTicket*.
+Dimensione, in byte, del buffer a cui fa riferimento *ppValidatedPrintTicket.*
 
 </dd> <dt>
 
 *pbstrErrorMessage* \[ out, facoltativo\]
 </dt> <dd>
 
-Puntatore a una stringa che specifica l'elemento non valido per il ticket di stampa in *pBasePrintTicket* o *pDeltaPrintTicket*. Se sono entrambi validi, questo valore è **NULL.** Se *pbstrErrorMessage* non è **NULL quando** la funzione restituisce , il chiamante deve liberare la stringa con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Puntatore a una stringa che specifica quale elemento non è valido per il print ticket in *pBasePrintTicket* *o pDeltaPrintTicket.* Se sono entrambi validi, questo valore è **NULL.** Se *pbstrErrorMessage non* è **NULL** quando la funzione viene restituita, il chiamante deve liberare la stringa [**con SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce **S \_ OK;** in caso contrario, restituisce un **codice di errore HRESULT.** Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori](../com/error-handling-in-com.md).
+Se il metodo ha esito positivo, restituisce **S \_ OK;** in caso contrario, restituisce un **codice di errore HRESULT.** Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori.](../com/error-handling-in-com.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -123,7 +123,7 @@ Se il metodo ha esito positivo, restituisce **S \_ OK;** in caso contrario, rest
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Se il metodo ha esito positivo, restituisce **S \_ OK;** in caso contrario, rest
 
 <dl> <dt>
 
-[Stampare lo schema](./printschema.md)
+[Schema di stampa](./printschema.md)
 </dt> <dt>
 
 [**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)

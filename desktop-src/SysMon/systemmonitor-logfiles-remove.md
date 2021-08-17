@@ -1,11 +1,11 @@
 ---
-title: LogFiles. Remove (metodo)
+title: Metodo LogFiles.Remove
 description: Rimuove l'istanza di LogFileItem specificata dalla raccolta.
 ms.assetid: d2885ffd-5957-472c-9a67-2f1469d9b48b
 keywords:
-- Rimuovere il metodo SysMon
-- Metodo Remove SysMon, classe LogFiles
-- Classe LogFiles SysMon, Remove (metodo)
+- Metodo Remove SysMon
+- Metodo Remove SysMon , classe LogFiles
+- Metodo SysMon , Remove della classe LogFiles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 057607c57db600ca7a28c8a5bb6d75d5570829cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c12c0bae91df3baf421638665a5587612e6d1404c3300cf02b0308b7bef7d016
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955435"
 ---
-# <a name="logfilesremove-method"></a>LogFiles. Remove (metodo)
+# <a name="logfilesremove-method"></a>Metodo LogFiles.Remove
 
-Rimuove l'istanza di [**LogFileItem**](logfileitem.md) specificata dalla raccolta.
+Rimuove [**l'istanza di LogFileItem**](logfileitem.md) specificata dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ LogFiles.Remove( _
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
-Indice integer del file di log da rimuovere dalla raccolta. L'indice è in base uno.
+Indice intero del file di log da rimuovere dalla raccolta. L'indice è in base uno.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-**Prima di Windows Vista:** Non è possibile rimuovere i file di log dalla [**raccolta dei file di log**](systemmonitor-logfiles.md) se il valore di [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) è impostato su sysmonLogFiles.
+**Prima di Windows Vista:** Non è possibile rimuovere i file di log dalla raccolta [**di file**](systemmonitor-logfiles.md) di log se il valore di [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) è impostato su sysmonLogFiles.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Questo metodo non restituisce valori.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

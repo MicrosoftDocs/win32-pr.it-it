@@ -1,12 +1,12 @@
 ---
-title: Metodo WSMan. SessionFlagSkipCACheck (WSManDisp. h)
-description: Restituisce il valore del flag di autenticazione WSManFlagSkipCACheck per l'utilizzo nel parametro Flags di WSMan. CreateSession.
+title: Metodo WSMan.SessionFlagSkipCACheck (WSManDisp.h)
+description: Restituisce il valore del flag di autenticazione WSManFlagSkipCACheck da usare nel parametro flags di WSMan.CreateSession.
 ms.assetid: a67cadb3-c20a-4a58-a13b-5bbd23c547d1
 ms.tgt_platform: multiple
 keywords:
-- Gestione remota Windows del metodo SessionFlagSkipCACheck
-- Metodo SessionFlagSkipCACheck Gestione remota Windows, oggetto WSMan
-- Gestione remota Windows oggetto WSMan, metodo SessionFlagSkipCACheck
+- Metodo SessionFlagSkipCACheck Windows Gestione remota
+- Metodo SessionFlagSkipCACheck Windows gestione remota , oggetto WSMan
+- Oggetto WSMan Windows gestione remota, metodo SessionFlagSkipCACheck
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e536112b16ad8cbab3cebb2de582a2e0ea8aec0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe24e10ca7a568a6dc9b3af6efed6e31a3a9fde5acac70e2badab37d24373350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742030"
 ---
-# <a name="wsmansessionflagskipcacheck-method"></a>WSMan. SessionFlagSkipCACheck, metodo
+# <a name="wsmansessionflagskipcacheck-method"></a>Metodo WSMan.SessionFlagSkipCACheck
 
-Il metodo **WSMan. SessionFlagSkipCACheck** restituisce il valore del flag di autenticazione **WSManFlagSkipCACheck** da usare nel parametro *Flags* di [**WSMan. CreateSession**](wsman-createsession.md). Questo metodo fornisce una sintassi più efficiente per l'utilizzo della costante, in modo che gli script non siano necessari per impostare un valore costante. Per ulteriori informazioni su come chiamare questo metodo ed esempi di codice, vedere [costanti di sessione](session-constants.md).
+Il metodo **WSMan.SessionFlagSkipCACheck** restituisce il valore del flag di autenticazione **WSManFlagSkipCACheck** da usare nel parametro *flags* di [**WSMan.CreateSession**](wsman-createsession.md). Questo metodo fornisce una sintassi più efficiente per l'uso della costante in modo che gli script non siano necessari per impostare un valore costante. Per altre informazioni su come chiamare questo metodo ed esempi di codice, vedere [Costanti di sessione](session-constants.md).
 
-**WSManFlagSkipCACheck** è una costante nell'enumerazione **\_ \_ WSManSessionFlags** . Per altre informazioni, vedere [**costanti di autenticazione**](authentication-constants.md).
+**WSManFlagSkipCACheck** è una costante **\_ \_ nell'enumerazione WSManSessionFlags.** Per altre informazioni, vedere [**Costanti di autenticazione**](authentication-constants.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ WSMan.SessionFlagSkipCACheck( _
 
 <dl> <dt>
 
-*flag* \[ out\]
+*flag* \[ Cambio\]
 </dt> <dd>
 
 Valore della costante.
@@ -54,7 +54,7 @@ Valore della costante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

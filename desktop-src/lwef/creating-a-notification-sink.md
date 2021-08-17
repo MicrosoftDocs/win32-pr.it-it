@@ -15,7 +15,7 @@ ms.locfileid: "118480093"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Per ricevere una notifica degli eventi da Parte di Microsoft Agent, è necessario implementare [**l'interfaccia IAgentNotifySink**](events.md)o [**IAgentNotifySinkEx**](iagentnotifysinkex.md) e creare e registrare un oggetto del tipo in base alle convenzioni COM seguenti:
+Per ricevere una notifica degli eventi da Parte di Microsoft Agent, è necessario implementare l'interfaccia [**IAgentNotifySink**](events.md)o [**IAgentNotifySinkEx**](iagentnotifysinkex.md) e creare e registrare un oggetto di tale tipo seguendo le convenzioni COM:
 
 
 ```

@@ -1,16 +1,16 @@
 - name: Event Tracing
   href: event-tracing-portal.md
   items:
-    - name: Novità della traccia eventi
+    - name: Novità di Event Tracing
       href: what-s-new-in-event-tracing.md
-    - name: Informazioni sulla traccia eventi
+    - name: Informazioni su Event Tracing
       href: about-event-tracing.md
       items:
         - name: Sessioni di traccia eventi
           href: event-tracing-sessions.md
         - name: Driver di dispositivo
           href: device-drivers.md
-    - name: Uso della traccia eventi
+    - name: Uso di Event Tracing
       href: using-event-tracing.md
       items:
         - name: Controllo delle sessioni di traccia eventi
@@ -39,7 +39,7 @@
               href: updating-an-event-tracing-session.md
             - name: Recupero di dati di traccia eventi aggiuntivi
               href: retrieving-additional-event-tracing-data.md
-        - name: Fornire eventi
+        - name: Specifica di eventi
           href: providing-events.md
           items:
             - name: Scrittura di eventi
@@ -47,7 +47,7 @@
               items:
                 - name: Scrittura di eventi basati su manifesto
                   href: writing-manifest-based-events.md
-                - name: Scrittura di eventi MOF (versione classica)
+                - name: Scrittura di eventi MOF (classici)
                   href: tracing-events.md
                 - name: Scrittura di eventi WPP
                   href: windows-software-trace-preprocessor.md

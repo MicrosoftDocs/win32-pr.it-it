@@ -1,6 +1,6 @@
 ---
 title: Esempio di trigger di registrazione (XML)
-description: Il codice XML in questo esempio definisce un'attività che avvia il blocco note quando l'attività è registrata.
+description: Il codice XML in questo esempio definisce un'attività che inizia Blocco note quando l'attività viene registrata.
 ms.assetid: 976b9767-635f-42a6-84f5-7e0203478594
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,32 +9,32 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 09b9193f3b63f21464811609e8f5f19017539ecd
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: b111f5c8c0801bb404e12cee20faf19208d7372d1a3980f7368c6efd2bcbfd35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "106299333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759582"
 ---
 # <a name="registration-trigger-example-xml"></a>Esempio di trigger di registrazione (XML)
 
-Il codice XML in questo esempio definisce un'attività che avvia il blocco note quando l'attività è registrata.
+Il codice XML in questo esempio definisce un'attività che inizia Blocco note quando l'attività viene registrata.
 
-Per registrare un'attività definita in XML, è possibile usare la funzione [**ITaskFolder:: l'RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. l'RegisterTask**](taskfolder-registertask.md) per gli script) o lo strumento da riga di comando Schtasks.exe. Se si usa lo strumento Schtasks.exe (che si trova nella directory C: \\ Windows \\ System32), è possibile usare il comando seguente per registrare l'attività: **schtasks/create/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
-
-> [!Note]  
-> Quando si aggiorna un'attività con un trigger di registrazione, l'attività verrà eseguita dopo l'aggiornamento.
-
- 
-
-## <a name="to-define-a-task-to-start-notepad-on-registration"></a>Per definire un'attività per avviare il blocco note alla registrazione
-
-Nell'esempio di codice XML riportato di seguito viene illustrato come definire un'attività con un'unica azione di esecuzione (avvio del blocco note), un singolo trigger di registrazione che avvia l'attività quando viene registrata e diverse altre impostazioni di attività che influiscono sul modo in cui l'attività viene gestita dal Utilità di pianificazione.
+Per registrare un'attività definita in XML, è possibile usare la funzione [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) per lo scripting) o lo strumento Schtasks.exe da riga di comando. Se si usa lo strumento Schtasks.exe (disponibile nella directory C: Windows System32), è possibile usare il comando seguente per registrare l'attività: \\ \\ **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
 > [!Note]  
-> Quando si aggiorna un'attività con un trigger di registrazione, l'attività verrà eseguita dopo l'aggiornamento.
+> Quando un'attività con un trigger di registrazione viene aggiornata, l'attività verrà eseguita dopo l'aggiornamento.
 
- 
+ 
+
+## <a name="to-define-a-task-to-start-notepad-on-registration"></a>Per definire un'attività da avviare Blocco note alla registrazione
+
+L'esempio XML seguente illustra come definire un'attività con una singola azione di esecuzione (a partire da Blocco note), un singolo trigger di registrazione che avvia l'attività quando viene registrata e diverse altre impostazioni di attività che influiscono sul modo in cui l'attività viene gestita dal Utilità di pianificazione.
+
+> [!Note]  
+> Quando un'attività con un trigger di registrazione viene aggiornata, l'attività verrà eseguita dopo l'aggiornamento.
+
+ 
 
 
 ```XML
@@ -79,23 +79,23 @@ the task is registered.
 
 Di seguito sono riportati alcuni elementi importanti da tenere presenti quando si usa questo esempio.
 
--   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contiene le informazioni di registrazione relative all'attività.
--   [**Trigger**](taskschedulerschema-triggers-tasktype-element.md): definisce il trigger che avvia l'attività.
--   [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md): definisce il trigger di registrazione. In questo caso vengono utilizzati solo due elementi figlio: i limiti di inizio e di fine che specificano quando il trigger viene attivato e disattivato.
+-   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contiene informazioni di registrazione sull'attività.
+-   [**Trigger:**](taskschedulerschema-triggers-tasktype-element.md)definisce il trigger che avvia l'attività.
+-   [**RegistrationTrigger:**](taskschedulerschema-registrationtrigger-triggergroup-element.md)definisce il trigger di registrazione. In questo caso, vengono usati solo due elementi figlio: i limiti iniziale e finale che specificano quando il trigger viene attivato e disattivato.
 -   [**Principal**](taskschedulerschema-principal-principaltype-element.md): definisce il contesto di sicurezza in cui viene eseguita un'attività.
--   [**Impostazioni**](taskschedulerschema-settings-tasktype-element.md): definisce le impostazioni dell'attività utilizzate dal utilità di pianificazione per eseguire l'attività.
--   [**Actions**](taskschedulerschema-actions-tasktype-element.md): definisce le azioni eseguite dall'attività. In questo caso, viene eseguito il blocco note.
+-   [**Impostazioni**](taskschedulerschema-settings-tasktype-element.md): definisce le impostazioni dell'attività che l'Utilità di pianificazione usa per eseguire l'attività.
+-   [**Azioni**](taskschedulerschema-actions-tasktype-element.md): definisce le azioni eseguite dall'attività. In questo caso, eseguire Blocco note.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

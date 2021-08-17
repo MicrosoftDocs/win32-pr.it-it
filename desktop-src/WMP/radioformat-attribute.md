@@ -1,9 +1,9 @@
 ---
-title: Attributo radioformat
-description: L'attributo radioformat è una descrizione del tipo di contenuto fornito dalla stazione radio.
+title: Attributo RadioFormat
+description: L'attributo RadioFormat è una descrizione del tipo di contenuto fornito dalla stazione radio.
 ms.assetid: f614ea24-bd82-4efe-8240-400a62e5b5f2
 keywords:
-- Finestra degli attributi di radioformato Media Player
+- Attributo RadioFormat Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37dd942521374abe029bed05d63d64b03a134316
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e1aa70f89d8f75f4e52472f463bcf5cac298a65a73e5b528b43398dbcc6802e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333872"
 ---
-# <a name="radioformat-attribute"></a>Attributo radioformat
+# <a name="radioformat-attribute"></a>Attributo RadioFormat
 
-L'attributo **radioformat** è una descrizione del tipo di contenuto fornito dalla stazione radio.
+**L'attributo RadioFormat** è una descrizione del tipo di contenuto fornito dalla stazione radio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,7 +31,7 @@ L'attributo **radioformat** è una descrizione del tipo di contenuto fornito dal
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------|
-| Versione<br/> | Solo Windows Media Player 9 serie<br/> |
+| Versione<br/> | Windows Media Player serie 9<br/> |
 
 
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

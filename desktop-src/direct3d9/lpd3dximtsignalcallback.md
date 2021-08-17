@@ -4,12 +4,12 @@ ms.assetid: 97b07dbc-6b84-46d2-acc7-db81d94538f7
 title: LPD3DXIMTSIGNALCALLBACK
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dbf75bf1a3fc05b217feef8446636efaae55b3b
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 96e4f6ffaa4c844e755d489aae52dd13b8390da1145734d50f5865bbe0e3cfc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728508"
 ---
 # <a name="lpd3dximtsignalcallback"></a>LPD3DXIMTSIGNALCALLBACK
 
@@ -31,13 +31,13 @@ typedef HRESULT (WINAPI* LPD3DXIMTSIGNALCALLBACK)
 
 ## <a name="parameters"></a>Parametri
 
-\[in \] uv : puntatore a un vettore che contiene la coordinata della trama dei vertici.
+\[in \] uv: puntatore a un vettore che contiene la coordinata della trama del vertice.
 
-\[in uPrimitiveId: indice del triangolo di input nella mesh per cui deve essere calcolato \] il segnale.
+\[in \] uPrimitiveId: indice del triangolo di input nella mesh per cui deve essere calcolato il segnale.
 
-\[in \] uSignalDimension: numero di valori float da archiviare nella matrice di dati del segnale (pfSignalOut).
+\[in uSignalDimension: numero di float da archiviare nella matrice di dati \] del segnale (pfSignalOut).
 
-\[in \] pUserData: puntatore pUserData passato a [**D3DXComputeIMTFromSignal**](d3dxcomputeimtfromsignal.md).
+\[in \] pUserData: puntatore pUserData passato a [**D3DXComputeIMTFromSignal.**](d3dxcomputeimtfromsignal.md)
 
 \[out \] pfSignalOut: matrice di valori float che contiene i dati del segnale.
 
@@ -47,7 +47,7 @@ Questa funzione deve essere implementata per restituire S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Windows**](../winprog/windows-data-types.md) quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
+Assicurarsi di specificare la convenzione [**di chiamata Windows tipi di**](../winprog/windows-data-types.md) dati quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
 
 
 

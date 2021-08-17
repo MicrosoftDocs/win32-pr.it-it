@@ -1,6 +1,6 @@
 ---
 title: Funzioni (Windows movimenti tocco)
-description: Questa sezione contiene le funzioni per Windows tocco.
+description: Questa sezione contiene le funzioni per Windows movimenti touch.
 ms.assetid: 830031d1-eb8d-45d4-b66e-3f4fbb96ae13
 keywords:
 - Windows Tocco, funzioni
@@ -17,15 +17,15 @@ ms.locfileid: "118435382"
 ---
 # <a name="functions-windows-touch-gestures"></a>Funzioni (Windows movimenti tocco)
 
-Questa sezione contiene le funzioni per Windows tocco.
+Questa sezione contiene le funzioni per Windows movimenti touch.
 
-Le funzioni seguenti vengono usate per i Windows tocco.
+Le funzioni seguenti vengono usate per Windows movimenti touch.
 
 
 
 | Funzione                                                 | Descrizione                                                                                             |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [**CloseGestureInfoHandle**](/windows/desktop/api/winuser/nf-winuser-closegestureinfohandle) | Chiude le risorse associate a un handle recuperato manualmente per una struttura di informazioni sui movimenti.    |
+| [**CloseGestureInfoHandle**](/windows/desktop/api/winuser/nf-winuser-closegestureinfohandle) | Chiude le risorse associate a un handle recuperato manualmente in una struttura di informazioni sui movimenti.    |
 | [**GetGestureExtraArgs**](/windows/desktop/api/winuser/nf-winuser-getgestureextraargs)       | Recupera informazioni aggiuntive su un movimento dal relativo handle [**GESTUREINFO.**](/windows/win32/api/winuser/ns-winuser-gestureinfo)    |
 | [**GetGestureInfo**](/windows/desktop/api/winuser/nf-winuser-getgestureinfo)                 | Recupera manualmente una struttura di informazioni sui movimenti in base a un handle per la struttura delle informazioni sui movimenti. |
 | [**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig)             | Recupera le informazioni di configurazione del movimento per una finestra.                                           |

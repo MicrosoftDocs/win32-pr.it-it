@@ -33,7 +33,7 @@ Restituisce lo stile del carattere attualmente visualizzato nella finestra del f
 
 | Valore     | Descrizione                                             |
 |-----------|---------------------------------------------------------|
-| **True**  | Il tipo di carattere balloon usa l'effetto barrato.         |
+| **True**  | Il tipo di carattere del fumetto usa l'effetto barrato.         |
 | **False** | Il tipo di carattere del fumetto non usa l'effetto barrato. |
 
 
@@ -44,7 +44,7 @@ Restituisce lo stile del carattere attualmente visualizzato nella finestra del f
 
 ## <a name="remarks"></a>Commenti
 
-Il valore predefinito per le impostazioni del carattere del fumetto di un carattere viene impostato nell'editor di caratteri di Microsoft Agent. Inoltre, l'utente può eseguire l'override delle impostazioni dei caratteri per tutti i caratteri nella finestra delle proprietà di Microsoft Agent.
+Il valore predefinito per le impostazioni del tipo di carattere del fumetto di un carattere viene impostato nell'editor di caratteri di Microsoft Agent. Inoltre, l'utente può eseguire l'override delle impostazioni dei caratteri per tutti i caratteri nella finestra delle proprietà di Microsoft Agent.
 
  
 

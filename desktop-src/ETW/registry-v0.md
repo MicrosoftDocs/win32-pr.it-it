@@ -1,5 +1,5 @@
 ---
-description: 'Registry_V0: questa classe è la classe padre per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Registry_V0 classe: questa classe è la classe padre per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 879ac606-f451-4d5d-bf78-3e7fd3093189
 title: Registry_V0 classe
 ms.topic: reference
@@ -45,7 +45,7 @@ La **classe Registry \_ V0** non definisce membri.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

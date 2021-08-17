@@ -2,7 +2,7 @@
 description: Rappresenta un descrittore di sicurezza.
 ms.assetid: 1ade1751-52a2-4ada-8255-323321111663
 ms.tgt_platform: multiple
-title: Classe __SecurityDescriptor
+title: __SecurityDescriptor classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 5f305387a29d1d1569addafd127f53c98246e1a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c248a437651396811f71c04e72dd8b209c5d10823f49d03abbe7e9d9ee6b6867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110198"
 ---
 # <a name="__securitydescriptor-class"></a>\_\_Classe SecurityDescriptor
 
-La classe di sistema astratta **\_ \_ securityDescriptor** rappresenta un [*descrittore di sicurezza*](/windows/desktop/SecGloss/s-gly).
+La classe di sistema astratta **\_ \_ SecurityDescriptor** rappresenta un [*descrittore di sicurezza*](/windows/desktop/SecGloss/s-gly).
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,39 +49,39 @@ class __SecurityDescriptor
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ securityDescriptor** dispone di questi tipi di membri:
+La **\_ \_ classe SecurityDescriptor** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ securityDescriptor** dispone di queste proprietà.
+La **\_ \_ classe SecurityDescriptor** ha queste proprietà.
 
 <dl> <dt>
 
-**ControlFlags**
+**Flag di controllo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Flag di bit che forniscono informazioni sul contenuto e sul formato del descrittore. Per una descrizione dei flag, vedere la proprietà **ControlFlags** nella classe [**\_ securityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+Flag di bit che forniscono informazioni sul contenuto e sul formato del descrittore. Per una descrizione dei flag, vedere la proprietà **ControlFlags** nella [**classe \_ SecurityDescriptor Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 </dd> <dt>
 
-**DACL**
+**Dacl**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **[**\_ \_ ACE**](--ace.md)**
+Tipo di dati: **[**\_ \_ matrice ACE**](--ace.md)**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Matrice di voci [**\_ \_ ACE**](--ace.md) che specificano l'accesso all'oggetto.
+Matrice di voci [**\_ \_ ACE**](--ace.md) che specificano l'accesso all'oggetto .
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ ACE che identifica il trustee che rappresenta il proprietario dell'oggetto.
 
 </dd> <dt>
 
-**SACL**
+**Sacl**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **[ **\_ \_ ACE**](--ace.md)**
@@ -120,26 +120,26 @@ Tipo di dati: **[ **\_ \_ ACE**](--ace.md)**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di voci [**\_ \_ ACE**](--ace.md) che identifica gli utenti e i gruppi per i quali vengono raccolte le informazioni di controllo.
+Matrice di [**\_ \_ voci ACE**](--ace.md) che identifica gli utenti e i gruppi per cui vengono raccolte le informazioni di controllo.
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora nel formato [CIM \_ DateTime](cim-datetime.md) quando è stato creato il descrittore di sicurezza.
+Ora nel [formato CIM \_ DATETIME](cim-datetime.md) al momento della creazione del descrittore di sicurezza.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa classe fornisce le proprietà ereditate da [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Per ulteriori informazioni, vedere [oggetti del descrittore di sicurezza WMI](wmi-security-descriptor-objects.md) e [modifica della sicurezza di accesso per gli oggetti a protezione diretta](changing-access-security-on-securable-objects.md). Per ulteriori informazioni sulle voci ACE, vedere [Access Control Components](/windows/desktop/SecAuthZ/access-control-components).
+Questa classe fornisce le proprietà ereditate da [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Per altre informazioni, vedere [Oggetti descrittori di sicurezza WMI](wmi-security-descriptor-objects.md) e Modifica della sicurezza degli [accessi in oggetti a protezione diretta](changing-access-security-on-securable-objects.md). Per altre informazioni sulle ACE, vedere [Componenti di controllo di accesso](/windows/desktop/SecAuthZ/access-control-components).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -160,7 +160,7 @@ Questa classe fornisce le proprietà ereditate da [**Win32 \_ securityDescriptor
 [Classi di sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[**\_SecurityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Descrittore di sicurezza Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
 [Gestione della sicurezza WMI](maintaining-wmi-security.md)

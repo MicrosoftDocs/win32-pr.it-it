@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IMonitorEventer fornisce metodi per l'invio di eventi e l'allocazione e la liberazione di risorse di monitoraggio.
+description: L'interfaccia IMonitorEventer fornisce metodi per inviare eventi e allocare e liberare risorse di monitoraggio.
 ms.assetid: d59a8b42-cce3-410b-a62e-97d66d058d90
-title: Interfaccia IMonitorEventer (Netmon. h)
+title: Interfaccia IMonitorEventer (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,26 +13,26 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: 7d4ca58b5a0787638eee54b7733b4e1a8fbf7ffe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2af49529a74c23e0f4d4e77e0d2608cd44d12028d93022750fbbd3af891e2e77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365489"
 ---
 # <a name="imonitoreventer-interface"></a>Interfaccia IMonitorEventer
 
-L'interfaccia **IMonitorEventer** fornisce metodi per l'invio di eventi e l'allocazione e la liberazione di risorse di monitoraggio.
+**L'interfaccia IMonitorEventer** fornisce metodi per inviare eventi e allocare e liberare risorse di monitoraggio.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IMonitorEventer** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMonitorEventer** dispone anche di questi tipi di membri:
+**L'interfaccia IMonitorEventer** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMonitorEventer** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IMonitorEventer** dispone di questi metodi.
+**L'interfaccia IMonitorEventer** include questi metodi.
 
 
 
@@ -54,7 +54,7 @@ L'interfaccia **IMonitorEventer** dispone di questi metodi.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

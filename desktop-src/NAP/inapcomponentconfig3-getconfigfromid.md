@@ -1,10 +1,10 @@
 ---
-title: Metodo INapComponentConfig3 GetConfigFromID (NapCommon. h)
-description: Viene implementato da convalida integrità sistema (SHV) per fornire un modo per ottenere i dati di configurazione per un ID configurazione specifico.
+title: Metodo INapComponentConfig3 GetConfigFromID (NapCommon.h)
+description: Viene implementato dai validator di integrità del sistema per fornire un modo per ottenere i dati di configurazione per un ID di configurazione specifico.
 ms.assetid: 5c91681d-16d6-42f3-b1e0-c4b6e7561a73
 keywords:
-- NAP metodo GetConfigFromID
-- Metodo GetConfigFromID NAP, interfaccia INapComponentConfig3
+- Metodo GetConfigFromID nap
+- Metodo GetConfigFromID NAP , interfaccia INapComponentConfig3
 - Interfaccia INapComponentConfig3 NAP, metodo GetConfigFromID
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce3a0e20f19c73271cdcba4070972649fe25aea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 638704b5706b68b67f854a6a52b6c845be3fb757b596e9f5425f315c7d679fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118368388"
 ---
-# <a name="inapcomponentconfig3getconfigfromid-method"></a>Metodo INapComponentConfig3:: GetConfigFromID
+# <a name="inapcomponentconfig3getconfigfromid-method"></a>Metodo INapComponentConfig3::GetConfigFromID
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **GetConfigFromID** viene implementato da convalida integrità sistema (SHV) per fornire un modo per ottenere i dati di configurazione per un ID configurazione specifico.
+Il **metodo GetConfigFromID** viene implementato dai validator dell'integrità del sistema per fornire un modo per ottenere i dati di configurazione per un ID di configurazione specifico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,37 +49,37 @@ HRESULT GetConfigFromID(
 
 <dl> <dt>
 
-*configID* \[ in\]
+*configID* \[ Pollici\]
 </dt> <dd>
 
-Valore che rappresenta la configurazione. Se *ConfigID* è **0**, il servizio di convalida dell'integrità di sistema deve restituire i dati di configurazione predefiniti in *OutData*.
+Valore che rappresenta la configurazione. Se *ConfigID* è **0,** shv deve restituire i dati di configurazione predefiniti in *outdata*.
 
 </dd> <dt>
 
-*numero* \[ di out\]
+*count* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, dei dati di configurazione restituiti in *OutData*.
+Dimensioni, in byte, dei dati di configurazione restituiti in *outdata.*
 
 </dd> <dt>
 
-*dati OutData* \[ out\]
+*outdata* \[ Cambio\]
 </dt> <dd>
 
-Al ritorno, matrice di BYTE che contiene i dati di configurazione rappresentati da *ConfigID*.
+In caso di restituzione, matrice BYTE contenente i dati di configurazione rappresentati da *ConfigID.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti codici di errore in base al risultato di questa operazione.
+Restituisce uno dei codici di errore seguenti in base al risultato di questa operazione.
 
 
 
 | Codice restituito                                                                                                    | Descrizione                             |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                          | L'operazione è riuscita.<br/> |
-| <dl> <dt>**configurazione di protezione accesso alla rete \_ E \_ Convalida integrità sistema \_ \_ non \_ trovata**</dt> </dl> | *ConfigID* non è stato trovato.<br/>  |
+| <dl> <dt>**CONFIGURAZIONE \_ DI PROTEZIONE ACCESSO ALLA RETE E \_ \_ SHV NON \_ \_ TROVATA**</dt> </dl> | *Impossibile trovare ConfigID.*<br/>  |
 
 
 
@@ -87,7 +87,7 @@ Restituisce uno dei seguenti codici di errore in base al risultato di questa ope
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**NewConfig**](inapcomponentconfig3-newconfig.md) deve essere usato per allocare i dati di configurazione per *ConfigID* prima di poter chiamare questo metodo.
+Per poter chiamare questo metodo, è necessario usare il metodo [**NewConfig**](inapcomponentconfig3-newconfig.md) per allocare i dati di configurazione per *ConfigID.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,9 +96,9 @@ Il metodo [**NewConfig**](inapcomponentconfig3-newconfig.md) deve essere usato p
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

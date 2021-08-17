@@ -1,17 +1,17 @@
 ---
 description: Numero di telefono dell'auto del contatto.
 ms.assetid: ef7d6ac7-ef7e-463c-8408-60948802e9c5
-title: System. Contact. CarTelephone
+title: System.Contact.CarTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a307f601f795e3317fe1b21df994d85896e018e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b6f1167eef0af978a49d92d44c7c166ea269e6ded128e7504c04c8de491fb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468396"
 ---
-# <a name="systemcontactcartelephone"></a>System. Contact. CarTelephone
+# <a name="systemcontactcartelephone"></a>System.Contact.CarTelephone
 
 Numero di telefono dell'auto del contatto.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

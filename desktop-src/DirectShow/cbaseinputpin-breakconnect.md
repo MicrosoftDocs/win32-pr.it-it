@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5398f675e056da2c60747c0b4eb17c475771bdc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 625eab8cc070240d79456bff919317f884826fc6d14c26055b68de40aba4c969
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403490"
 ---
 # <a name="cbaseinputpinbreakconnect-method"></a>Metodo CBaseInputPin.BreakConnect
 
@@ -46,7 +46,7 @@ Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CBasePin::BreakConnect.**](cbasepin-breakconnect.md) Decomminzione dell'allocatore e rilascio [**dell'interfaccia IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
+Questo metodo esegue l'override [**del metodo CBasePin::BreakConnect.**](cbasepin-breakconnect.md) Decommita l'allocatore e rilascia [**l'interfaccia IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
 Se si esegue l'override di questo metodo, chiamare il metodo della classe base dal metodo di override. In caso contrario, potrebbero verificarsi perdite di memoria.
 
@@ -56,7 +56,7 @@ Se si esegue l'override di questo metodo, chiamare il metodo della classe base d
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

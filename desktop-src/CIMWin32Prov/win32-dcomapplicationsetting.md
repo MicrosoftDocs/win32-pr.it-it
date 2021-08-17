@@ -1,5 +1,5 @@
 ---
-description: Oggetto Win32 \_ DCOMApplicationSetting&\# 8194; La classe WMI rappresenta le impostazioni di un'applicazione DCOM.
+description: "\\_DCOMApplicationSetting Win32&\\# 8194; La classe WMI rappresenta le impostazioni di un'applicazione DCOM."
 ms.assetid: afa23faa-bf4d-4f54-9ee9-227956ff3292
 ms.tgt_platform: multiple
 title: Win32_DCOMApplicationSetting classe
@@ -35,7 +35,7 @@ ms.locfileid: "118417732"
 ---
 # <a name="win32_dcomapplicationsetting-class"></a>Classe \_ DCOMApplicationSetting Win32
 
-La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Win32 DCOMApplicationSetting** rappresenta le impostazioni di un'applicazione DCOM. Contiene le opzioni di configurazione DCOM associate alla **chiave AppID** nel Registro di sistema. Queste opzioni sono valide per i componenti raggruppati logicamente nella classe di applicazione specificata.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DCOMApplicationSetting Win32** rappresenta le impostazioni di un'applicazione DCOM. Contiene le opzioni di configurazione DCOM associate alla **chiave AppID** nel Registro di sistema. Queste opzioni sono valide per i componenti raggruppati logicamente nella classe dell'applicazione specificata.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -62,21 +62,21 @@ class Win32_DCOMApplicationSetting : Win32_COMSetting
 
 ## <a name="members"></a>Members
 
-La **classe \_ DCOMApplicationSetting Win32** ha questi tipi di membri:
+La **classe \_ DCOMApplicationSetting Win32** include i tipi di membri seguenti:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ Win32 DCOMApplicationSetting** include questi metodi.
+La **classe \_ DCOMApplicationSetting Win32** include questi metodi.
 
 
 
 | Metodo                                                                                                                        | Descrizione                                                                                                                                                                                                                     |
 |:------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**GetAccessSecurityDescriptor**](getaccesssecuritydescriptor-method-in-class-win32-dcomapplicationsetting.md)               | Ottiene il descrittore di sicurezza che controlla chi può accedere a un'applicazione DCOM.<br/>                                                                                                                              |
-| [**GetConfigurationSecurityDescriptor**](getconfigurationsecuritydescriptor-method-in-class-win32-dcomapplicationsetting.md) | Ottiene il descrittore di sicurezza che controlla chi può configurare un'applicazione DCOM.<br/>                                                                                                                           |
+| [**GetConfigurationSecurityDescriptor**](getconfigurationsecuritydescriptor-method-in-class-win32-dcomapplicationsetting.md) | Ottiene il descrittore di sicurezza che controlla chi è autorizzato a configurare un'applicazione DCOM.<br/>                                                                                                                           |
 | [**GetLaunchSecurityDescriptor**](getlaunchsecuritydescriptor-in-class-win32-dcomapplicationsetting.md)                      | Ottiene il descrittore di sicurezza che controlla chi può avviare un'applicazione DCOM.<br/>                                                                                                                              |
 | [**SetAccessSecurityDescriptor**](setaccesssecuritydescriptor-method-in-class-win32-dcomapplicationsetting.md)               | Aggiorna il descrittore di sicurezza di accesso dell'applicazione DCOM con un nuovo descrittore di sicurezza definito da un'istanza della [**classe \_ Win32 SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)<br/>        |
 | [**SetConfigurationSecurityDescriptor**](setconfigurationsecuritydescriptor-method-in-class-win32-dcomapplicationsetting.md) | Aggiorna il descrittore di sicurezza della configurazione dell'applicazione DCOM con un nuovo descrittore di sicurezza definito da un'istanza della [**classe \_ Win32 SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)<br/> |
@@ -88,20 +88,20 @@ La **classe \_ Win32 DCOMApplicationSetting** include questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ Win32 DCOMApplicationSetting** ha queste proprietà.
+La **classe \_ DCOMApplicationSetting Win32** dispone di queste proprietà.
 
 <dl> <dt>
 
 **AppID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY LOCAL MACHINE SOFTWARE \_ Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} Default \[ \] ")
+Qualificatori: [**Chiave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY LOCAL MACHINE SOFTWARE \_ Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} Default \[ \] ")
 </dt> </dl>
 
 Identificatore univoco globale (GUID) per questa applicazione DCOM.
@@ -114,7 +114,7 @@ Identificatore univoco globale (GUID) per questa applicazione DCOM.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ AuthenticationLevel \] ")
@@ -195,7 +195,7 @@ PacketPrivacy (vengono usate le proprietà degli altri livelli di autenticazione
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -213,7 +213,7 @@ Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md)
 **CustomSurrogate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -229,7 +229,7 @@ Nome del surrogato personalizzato in cui viene attivata l'applicazione DCOM in-p
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -260,7 +260,7 @@ L'applicazione DCOM recupera lo stato salvato dell'applicazione o inizia dallo s
 **LocalService**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -269,17 +269,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ LocalService \] ")
 </dt> </dl>
 
-Nome per i servizi forniti dall'applicazione DCOM.
+Nome dei servizi forniti dall'applicazione DCOM.
 
 </dd> <dt>
 
 **RemoteServerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ RemoteServerName \] ")
@@ -292,7 +292,7 @@ Nome del server remoto in cui è attivata l'applicazione.
 **RunAsUser**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -305,10 +305,10 @@ Account utente specifico con cui l'applicazione deve essere eseguita all'attivaz
 
 </dd> <dt>
 
-**ServiceParameters**
+**Parametri del servizio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -317,14 +317,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ ServiceParameters \] ")
 </dt> </dl>
 
-Parametri della riga di comando passati all'applicazione DCOM. Questa operazione è valida solo se l'applicazione viene scritta come Windows servizio basato su .
+Parametri della riga di comando passati all'applicazione DCOM. Questa operazione è valida solo se l'applicazione viene scritta come Windows servizio basato su criteri.
 
 </dd> <dt>
 
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -345,7 +345,7 @@ Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md)
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ DllSurrogate \] ")
@@ -357,7 +357,7 @@ L'applicazione DCOM può essere attivata come server out-of-process usando un fi
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ Win32 DCOMApplicationSetting** è derivata da [**WIN32 \_ COMSetting**](win32-comsetting.md).
+La **classe \_ DCOMApplicationSetting Win32** è derivata da [**\_ COMSetting Win32.**](win32-comsetting.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -383,13 +383,13 @@ La **classe \_ Win32 DCOMApplicationSetting** è derivata da [**WIN32 \_ COMSett
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Costanti dei privilegi**](/windows/desktop/WmiSdk/privilege-constants)
+[**Costanti privilege**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
-[Oggetti descrittori di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
+[Oggetti descrittore di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 </dt> <dt>
 
-[Modifica della sicurezza degli accessi per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+[Modifica della sicurezza dell'accesso per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 </dt> </dl>
 
  

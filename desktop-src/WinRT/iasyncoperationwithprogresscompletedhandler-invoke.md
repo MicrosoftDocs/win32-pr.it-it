@@ -1,7 +1,7 @@
 ---
-description: Richiama il metodo che viene chiamato quando l'operazione asincrona specificata segnala lo stato di avanzamento.
+description: Richiama il metodo chiamato quando l'operazione asincrona specificata segnala lo stato di avanzamento.
 ms.assetid: FB60DDC0-7521-4999-8DD8-175556004198
-title: 'IAsyncOperationWithProgressCompletedHandler<TResult, TProgress metodo>:: Invoke'
+title: Metodo IAsyncOperationWithProgressCompletedHandler<TResult,TProgress>::Invoke
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 469686cbd96dedc7f816fdd1f482d3474362688e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 141f79398e1f9f250b402df130daa728c8e2f0e5f78702d7866dbe9a202b5978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323120"
 ---
-# <a name="iasyncoperationwithprogresscompletedhandlertresulttprogressinvoke-method"></a>IAsyncOperationWithProgressCompletedHandler<TResult, TProgress metodo>:: Invoke
+# <a name="iasyncoperationwithprogresscompletedhandlertresulttprogressinvoke-method"></a>Metodo IAsyncOperationWithProgressCompletedHandler<TResult,TProgress>::Invoke
 
-Richiama il metodo che viene chiamato quando l'operazione asincrona specificata segnala lo stato di avanzamento.
+Richiama il metodo chiamato quando l'operazione asincrona specificata segnala lo stato di avanzamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ HRESULT Invoke(
 
 <dl> <dt>
 
-*AsyncInfo* \[ in\]
+*asyncInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IAsyncOperationWithProgress<TResult, TProgress>**](/previous-versions//br205807(v=vs.85)) \** _
+Tipo: **[ **IAsyncOperationWithProgress<TResult,TProgress>**](/previous-versions//br205807(v=vs.85))\***
 
 Azione asincrona che segnala il completamento.
 
@@ -49,9 +49,9 @@ Azione asincrona che segnala il completamento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 <dl> <dt>
 
-[**IAsyncOperationWithProgressCompletedHandler<TResult, TProgress>**](/previous-versions//br205808(v=vs.85))
+[**IAsyncOperationWithProgressCompletedHandler<TResult,TProgress>**](/previous-versions//br205808(v=vs.85))
 </dt> </dl>
 
  

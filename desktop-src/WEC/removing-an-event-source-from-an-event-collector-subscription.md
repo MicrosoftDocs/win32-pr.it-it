@@ -5,45 +5,45 @@ ms.assetid: 6c9e0dbf-59a2-4db9-8fb8-0dbfda5cf38b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 303e0a708c2b52225af83475674e5f60d1a8418d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 46e155e4d8467722e9ac5eae04189ed3ba8333f65ec162ffb50f6b9268cf8a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751042"
 ---
 # <a name="removing-an-event-source-from-a-collector-initiated-subscription"></a>Rimozione di un'origine evento da una sottoscrizione avviata dall'agente di raccolta
 
-È possibile rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta senza eliminare l'intera sottoscrizione. È necessario essere a conoscenza dell'indirizzo dell'origine evento che si desidera eliminare. È possibile trovare l'indirizzo di un'origine evento associato a una sottoscrizione usando l'esempio C++ illustrato in [visualizzazione delle proprietà di una sottoscrizione dell'agente di raccolta eventi](displaying-the-properties-of-an-event-collector-subscription.md)oppure è possibile digitare il comando seguente al prompt dei comandi:
+È possibile rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta senza eliminare l'intera sottoscrizione. È necessario conoscere l'indirizzo dell'origine evento da eliminare. [È](displaying-the-properties-of-an-event-collector-subscription.md)possibile trovare l'indirizzo di un'origine evento associata a una sottoscrizione usando l'esempio C++ illustrato in Visualizzazione delle proprietà di una sottoscrizione dell'agente di raccolta eventi oppure è possibile digitare il comando seguente al prompt dei comandi:
 
-*sottoscrizione* **wecutil gs**
+**wecutil gs** *SubscriptionName*
 
-Per elencare le sottoscrizioni correnti in un computer locale, è possibile usare l'esempio di codice C++ illustrato in [elenco delle sottoscrizioni](listing-event-collector-subscriptions.md)degli agenti di raccolta eventi oppure è possibile digitare il comando seguente al prompt dei comandi:
+Per elencare le sottoscrizioni correnti in un computer locale, è possibile usare l'esempio di codice C++ illustrato in [Elenco](listing-event-collector-subscriptions.md)delle sottoscrizioni dell'agente di raccolta eventi oppure digitare il comando seguente al prompt dei comandi:
 
 **wecutil es**
 
 > [!Note]
 >
-> È possibile usare questo esempio per rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta oppure è possibile digitare il comando seguente al prompt dei comandi:
+> È possibile usare questo esempio per rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta oppure digitare il comando seguente al prompt dei comandi:
 >
-> **wecutil SS** *subscriptionname*  * */ESA: * * * EventSourceAddress* **/res**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/res**
 >
 > *EventSourceAddress* può essere localhost per il computer locale o un nome di dominio completo per un computer remoto.
 
- 
+ 
 
 Questo esempio segue una serie di passaggi per rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta.
 
 **Per rimuovere un'origine evento da una sottoscrizione avviata dall'agente di raccolta**
 
-1.  Aprire la sottoscrizione esistente fornendo il nome della sottoscrizione e i diritti di accesso come parametri per la funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Per ulteriori informazioni sui diritti di accesso, vedere [**costanti dell'agente di raccolta eventi di Windows**](windows-event-collector-constants.md).
-2.  Ottenere la matrice di origini eventi della sottoscrizione chiamando la funzione [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Per ulteriori informazioni sulle proprietà di sottoscrizione che possono essere recuperate, vedere l'enumerazione di [**\_ \_ \_ ID proprietà della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Cercare l'origine evento specificata nella matrice di origini eventi della sottoscrizione chiamando la funzione [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . Il valore della proprietà **EcSubscriptionEventSourceAddress** sarà localhost per il computer locale o sarà un nome di dominio completo per un computer remoto. Per ulteriori informazioni sulle proprietà dell'origine evento che possono essere recuperate, vedere l'enumerazione dell' **\_ \_ \_ ID proprietà della sottoscrizione EC** .
-4.  Eliminare l'origine evento dalla sottoscrizione chiamando la funzione [**EcRemoveObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement) .
-5.  Salvare la sottoscrizione chiamando la funzione [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Chiudere la sottoscrizione chiamando la funzione [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Aprire la sottoscrizione esistente specificando il nome della sottoscrizione e i diritti di accesso come parametri per [**la funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere l'Windows [**costanti dell'agente di raccolta eventi**](windows-event-collector-constants.md).
+2.  Ottenere la matrice di origini evento della sottoscrizione chiamando la [**funzione EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Per altre informazioni sulle proprietà di sottoscrizione che possono essere recuperate, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Cercare l'origine evento specificata nella matrice di origini eventi della sottoscrizione chiamando la [**funzione EcGetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) Il valore della **proprietà EcSubscriptionEventSourceAddress** sarà Localhost per il computer locale o sarà un nome di dominio completo per un computer remoto. Per altre informazioni sulle proprietà dell'origine evento che possono essere recuperate, vedere **l'enumerazione EC SUBSCRIPTION PROPERTY \_ \_ \_ ID.**
+4.  Eliminare l'origine evento dalla sottoscrizione chiamando la [**funzione EcRemoveObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement)
+5.  Salvare la sottoscrizione chiamando la [**funzione EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come rimuovere un'origine evento da una sottoscrizione di raccolta eventi.
+Nell'esempio di codice C++ seguente viene illustrato come rimuovere un'origine evento da una sottoscrizione dell'agente di raccolta eventi.
 
 
 ```C++
@@ -319,18 +319,18 @@ DWORD GetEventSourceProperty(EC_OBJECT_ARRAY_PROPERTY_HANDLE hArray,
 
 <dl> <dt>
 
-[Visualizzazione delle proprietà di una sottoscrizione di raccolta eventi](displaying-the-properties-of-an-event-collector-subscription.md)
+[Visualizzazione delle proprietà di una sottoscrizione dell'agente di raccolta eventi](displaying-the-properties-of-an-event-collector-subscription.md)
 </dt> <dt>
 
-[Elenco delle sottoscrizioni degli agenti di raccolta eventi](listing-event-collector-subscriptions.md)
+[Elenco delle sottoscrizioni dell'agente di raccolta eventi](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

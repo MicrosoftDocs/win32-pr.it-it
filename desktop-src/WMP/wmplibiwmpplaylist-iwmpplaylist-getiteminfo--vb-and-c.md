@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMPPlaylist getItemInfo
-description: Il metodo getItemInfo restituisce il valore di un attributo della playlist specificato in base al nome.
+description: Il metodo getItemInfo restituisce il valore di un attributo playlist specificato in base al nome.
 ms.assetid: 62e882d6-66bb-450c-9700-b99d30dd42fa
 keywords:
-- metodo getItemInfo Windows Media Player
-- metodo getItemInfo Windows Media Player, interfaccia IWMPPlaylist
-- Interfaccia IWMPPlaylist Windows Media Player, metodo getItemInfo
+- Metodo getItemInfo Windows Media Player
+- Metodo getItemInfo Windows Media Player, interfaccia IWMPPlaylist
+- Interfaccia IWMPPlaylist Windows Media Player metodo , getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ced433b13f5af2d1df8c12dba023b7fbb55c5f7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54e3ad24f12333dbc9db5baf977300d1755a9cecc60739504da05478d5acc48e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745753"
 ---
-# <a name="iwmpplaylistgetiteminfo-method"></a>Metodo IWMPPlaylist:: getItemInfo
+# <a name="iwmpplaylistgetiteminfo-method"></a>Metodo IWMPPlaylist::getItemInfo
 
-Il metodo **GetItemInfo** restituisce il valore di un attributo della playlist specificato in base al nome.
+Il **metodo getItemInfo** restituisce il valore di un attributo playlist specificato in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,22 +53,22 @@ Implements IWMPPlaylist.getItemInfo
 
 <dl> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo playlist.
+Oggetto **System.String** che rappresenta il nome dell'attributo della playlist.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**System. String** che corrisponde al valore dell'attributo playlist.
+Oggetto **System.String** che rappresenta il valore dell'attributo playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di usare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per il codice di esempio che usa questa proprietà, vedere la proprietà [attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) .
+Vedere la [proprietà attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) per il codice di esempio che usa questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Per il codice di esempio che usa questa proprietà, vedere la proprietà [attrib
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -89,7 +89,7 @@ Per il codice di esempio che usa questa proprietà, vedere la proprietà [attrib
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. setItemInfo (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-setiteminfo--vb-and-c.md)
+[**IWMPPlaylist.setItemInfo (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-setiteminfo--vb-and-c.md)
 </dt> </dl>
 
  

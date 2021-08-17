@@ -1,19 +1,19 @@
 ---
-description: L' <propertyBag> elemento obbligatorio specifica un set di una o più proprietà utilizzate da questo provider di posizione.
+description: <propertyBag>L'elemento obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione.
 ms.assetid: 63f8f2e4-3b52-4d6e-8d3a-2e133aac0e86
 title: Elemento propertyBag (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fb9e80691e929f7fcceaff3dded4b99a242e92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50a8b888ba57fd71c892c61bc8b3f29a8ebc7f9e240162d0ecf6b3bbff41d2e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226481"
 ---
 # <a name="propertybag-element-search-connector-schema"></a>Elemento propertyBag (schema del connettore di ricerca)
 
-L' <propertyBag> elemento obbligatorio specifica un set di una o più proprietà utilizzate da questo provider di posizione.
+<propertyBag>L'elemento obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,13 +48,13 @@ L' <propertyBag> elemento obbligatorio specifica un set di una o più proprietà
 
 | Elemento padre                                                                                 | Elementi figlio                                                                                 |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Elemento locationProvider (schema del connettore di ricerca)](search-schema-sconn-locationprovider.md) | [Elemento Property (Schema connettore di ricerca)](search-schema-sconn-locationproviderproperty.md) |
+| [Elemento locationProvider (schema del connettore di ricerca)](search-schema-sconn-locationprovider.md) | [Elemento property (schema del connettore di ricerca)](search-schema-sconn-locationproviderproperty.md) |
 
 
 
  
 
-## <a name="example-of-a-propertybag-element-and-property-elements"></a>Esempio di elemento PropertyBag e di elementi Property
+## <a name="example-of-a-propertybag-element-and-property-elements"></a>Esempio di un elemento PropertyBag e di elementi property
 
 
 ```

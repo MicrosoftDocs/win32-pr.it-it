@@ -1,5 +1,5 @@
 ---
-description: La variabile \_ membro m hPalette è un handle per la tavolozza logica gestita da questo oggetto.
+description: La variabile \_ membro m hPalette è un handle per il riquadro logico gestito da questo oggetto.
 ms.assetid: 8c73adc1-0c01-4518-a0dd-17c7bff6c92b
 title: Membro CImagePalette::m_hPalette (Winutil.h)
 ms.topic: reference
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118402551"
 ---
-# <a name="cimagepalettem_hpalette-member"></a>Membro hPalette CImagePalette::m \_
+# <a name="cimagepalettem_hpalette-member"></a>Membro CImagePalette::m \_ hPalette
 
-La `m_hPalette` variabile membro è un handle per la tavolozza logica gestita da questo oggetto.
+La `m_hPalette` variabile membro è un handle per il riquadro logico gestito da questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HPALETTE m_hPalette;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

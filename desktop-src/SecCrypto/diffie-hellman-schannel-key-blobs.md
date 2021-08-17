@@ -1,26 +1,26 @@
 ---
-description: I BLOB vengono utilizzati con il provider Diffie-Hellman/SChannel per esportare le chiavi da e importare le chiavi in, il provider del servizio di crittografia (CSP).
+description: I BLOB vengono usati con il provider Diffie-Hellman/Schannel per esportare le chiavi dal provider del servizio di crittografia (CSP) e importare le chiavi in .
 ms.assetid: ebb85b7c-204d-4b1c-86dc-5a03c8eda47b
-title: BLOB di chiavi Diffie-Hellman/SChannel
+title: BLOB delle chiavi Diffie-Hellman/Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a76869c6c6239e17a5ae14921805a076c9381c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03c653e26f53611e8b00a1dae4e49df7084e6dc655d67f11550a430860fab12d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767695"
 ---
-# <a name="diffie-hellmanschannel-key-blobs"></a>BLOB di chiavi Diffie-Hellman/SChannel
+# <a name="diffie-hellmanschannel-key-blobs"></a>BLOB delle chiavi Diffie-Hellman/Schannel
 
-I [*BLOB*](../secgloss/b-gly.md) vengono utilizzati con il provider Schannel [*Diffie-Hellman*](../secgloss/d-gly.md) / [](../secgloss/s-gly.md) per esportare chiavi da e importare chiavi in, il [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP).
+[*I BLOB*](../secgloss/b-gly.md) vengono usati con il provider [*Schannel Diffie-Hellman*](../secgloss/d-gly.md)per esportare le chiavi dal provider del servizio di crittografia / [](../secgloss/s-gly.md) (CSP) e importare le chiavi in . [](../secgloss/c-gly.md)
 
--   [BLOB di chiavi pubbliche](#public-key-blobs)
--   [BLOB di chiavi private](#private-key-blobs)
+-   [BLOB di chiave pubblica](#public-key-blobs)
+-   [BLOB di chiave privata](#private-key-blobs)
 
-## <a name="public-key-blobs"></a>BLOB di chiavi pubbliche
+## <a name="public-key-blobs"></a>BLOB di chiave pubblica
 
-Diffie-Hellman [*BLOB di chiave pubblica*](../secgloss/p-gly.md), digitare **PublicKeyBlob**, vengono usati per scambiare il valore (G ^ X) mod P in uno scambio di chiave Diffie-Hellman. Queste chiavi vengono esportate e importate come sequenza di byte con il formato seguente.
+Diffie-Hellman BLOB con [*chiave*](../secgloss/p-gly.md)pubblica, digitare **PUBLICKEYBLOB**, vengono usati per scambiare il valore (G^X) mod P in uno scambio Diffie-Hellman chiave. Queste chiavi vengono esportate e importate come sequenza di byte con il formato seguente.
 
 ``` syntax
 PUBLICKEYSTRUC  publickeystruc;
@@ -28,23 +28,23 @@ DHPUBKEY        dhpubkey;
 BYTE            y[dhpubkey.bitlen/8]; // Where y = (G^X) mod P
 ```
 
-La tabella seguente descrive ogni componente del [*BLOB della chiave*](../secgloss/k-gly.md).
+Nella tabella seguente viene descritto ogni componente del [*BLOB della chiave.*](../secgloss/k-gly.md)
 
 
 
 | Campo          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dhpubkey       | Struttura [**DHPUBKEY**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) . Il membro **Magic** deve essere impostato su 0x31484400. Questo valore esadecimale è la codifica [*ASCII*](../secgloss/a-gly.md) di DH1.                                                                                                                                                                                                                                                                                                                                                      |
-| publickeystruc | Struttura [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| y              | Sequenza di **byte** . Il valore y, (G ^ X) mod P, si trova immediatamente dopo la struttura [**DHPUBKEY**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) . La lunghezza, in byte, della sequenza è il membro **bitlen** di **DHPUBKEY** diviso 8. Se la lunghezza dei dati risultante dal calcolo di (G ^ X) mod P è uno o più byte inferiori a P diviso 8, i dati devono essere riempiti con i byte necessari (di valore zero) per rendere i dati la lunghezza desiderata (formato [*Little Endian*](../secgloss/l-gly.md) ). |
+| dhpubkey       | Struttura [**DHPUBKEY.**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) Il **membro magic** deve essere impostato su 0x31484400. Questo valore esadecimale è la [*codifica ASCII*](../secgloss/a-gly.md) di DH1.                                                                                                                                                                                                                                                                                                                                                      |
+| publickeystruc | Struttura [**PUBLICKEYSTRUC.**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| y              | Sequenza **BYTE.** Il valore y, (G^X) mod P, si trova direttamente dopo la [**struttura DHPUBKEY.**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) La lunghezza, in byte, della sequenza è il membro **bitlen** di **DHPUBKEY** diviso per otto. Se la lunghezza dei dati risultanti dal calcolo di (G^X) mod P è di uno o più byte più corta di P divisa per otto, i dati devono essere riempiti con i byte necessari (valore zero) per rendere i dati di lunghezza desiderata [*(formato little-endian).*](../secgloss/l-gly.md) |
 
 
 
  
 
-## <a name="private-key-blobs"></a>BLOB di chiavi private
+## <a name="private-key-blobs"></a>BLOB di chiave privata
 
-I BLOB di [*chiavi private*](../secgloss/p-gly.md)d-h, digitare **PRIVATEKEYBLOB**, vengono usati per esportare e importare informazioni private di una chiave D-h. Queste chiavi vengono esportate e importate come sequenza di byte con il formato seguente.
+I BLOB della [*chiave privata*](../secgloss/p-gly.md)D-H, di tipo **PRIVATEKEYBLOB,** vengono usati per esportare e importare informazioni private di una chiave D-H. Queste chiavi vengono esportate e importate come sequenza di byte con il formato seguente.
 
 ``` syntax
 PUBLICKEYSTRUC  publickeystruc;
@@ -60,18 +60,18 @@ La tabella seguente descrive ogni componente del BLOB della chiave.
 
 | Campo          | Descrizione                                                                                                                                                                                                |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dhpubkey       | Struttura [**DHPUBKEY**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) . Il membro **Magic** deve essere impostato su 0x32484400. Questo valore esadecimale è la codifica [*ASCII*](../secgloss/a-gly.md) di DH2. |
-| generatore      | Sequenza di **byte** . Il generatore G.                                                                                                                                                                      |
-| publickeystruc | Struttura [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) .                                                                                                                                                      |
-| primo          | Sequenza di **byte** . Il modulo principale, P. Questi dati devono sempre avere il bit più significativo del set di byte più significativo su uno.                                                                    |
-| secret         | Sequenza di **byte** . Esponente del segreto X.                                                                                                                                                                |
+| dhpubkey       | Struttura [**DHPUBKEY.**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey) Il **membro magic** deve essere impostato su 0x32484400. Questo valore esadecimale è la [*codifica ASCII*](../secgloss/a-gly.md) di DH2. |
+| generatore      | Sequenza **BYTE.** Generatore G.                                                                                                                                                                      |
+| publickeystruc | Struttura [**PUBLICKEYSTRUC.**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc)                                                                                                                                                      |
+| Primo          | Sequenza **BYTE.** Modulo primo, P. Questi dati devono avere sempre il bit più significativo del byte più significativo impostato su uno.                                                                    |
+| secret         | Sequenza **BYTE.** Esponente segreto X.                                                                                                                                                                |
 
 
 
  
 
 > [!Note]  
-> I valori primo, generatore e segreto devono sempre avere la stessa lunghezza, in byte. Se un valore è un byte o più più breve di quello degli altri, deve essere riempito con il numero necessario di zero byte per renderli uguali. Il primo, il generatore e il segreto sono in formato [*Little-Endian*](../secgloss/l-gly.md) .
+> I valori primi, generatori e segreti devono avere sempre la stessa lunghezza, in byte. Se un valore è di un byte o più breve degli altri, deve essere riempito con il numero necessario di zero byte per renderli uguali. Il primo, il generatore e il segreto sono in [*formato little-endian.*](../secgloss/l-gly.md)
 
  
 

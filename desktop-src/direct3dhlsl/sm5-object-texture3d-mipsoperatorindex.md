@@ -1,9 +1,9 @@
 ---
-title: 'Texture3D:: MIPS. Funzione operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Texture3D:: MIPS. Funzione operator'
+title: Texture3D::mips. Funzione operatore
+description: Restituisce una variabile di risorsa di sola lettura. | Texture3D::mips. Funzione operatore
 ms.assetid: d5f6cb3b-4163-44c2-8379-ac8a412b1aa6
 keywords:
-- MIPS. Funzione operator HLSL
+- Mips. Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e8f7064459354ec4827ba6d96795e82ccab3800c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 18ad563041c8ad0b601240f4353dad5bbc44ef418c267f72d07f0f753d12d993
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724501"
 ---
-# <a name="texture3dmipsoperator----function"></a>Texture3D:: MIPS. Funzione operator
+# <a name="texture3dmipsoperator----function"></a>Texture3D::mips. Funzione operatore
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -37,16 +37,16 @@ R mips.Operator[][](
 
 <dl> <dt>
 
-*mipSlice* \[ in\]
+*mipSlice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Indice della sezione MIP.
+Indice della sezione mip.
 
 </dd> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -59,7 +59,7 @@ Posizione dell'indice. Contiene le coordinate (x, y, z).
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -80,7 +80,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -95,7 +95,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture3D](sm5-object-texture3d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

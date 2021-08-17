@@ -1,58 +1,58 @@
 ---
-title: Elemento del gruppo la
-description: Elemento del gruppo la
+title: Elemento gruppo VML
+description: Elemento gruppo VML
 ms.assetid: 536c2380-2583-4fe8-a92e-c539de209a70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33c128fddb5f070c9dbb6bbbd92c172cd58f5bce
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5fd68bf24d217310bf52998779396b4e0b72aef02073c3ad6d2a0d6566d30fc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754598"
 ---
-# <a name="vml-group-element"></a>Elemento del gruppo la
+# <a name="vml-group-element"></a>Elemento gruppo VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Definisce un gruppo che può essere utilizzato per raccogliere forme.
+Definisce un gruppo che può essere usato per raccogliere forme.
 
 Questo elemento supporta gli stessi attributi di una forma, ad eccezione dei seguenti:
 
--   **nascosto**
+-   **Nascosto**
 -   **type**
--   **ADJ**
+-   **Adj**
 -   **path**
 -   **spid**
--   **opacità**
--   **Chromakey**
--   **tracciato**
--   **StrokeColor**
--   **StrokeWeight**
--   **compilato**
--   **FillColor**
--   **SPT**
+-   **Opacità**
+-   **chromakey**
+-   **Accarezzò**
+-   **strokecolor**
+-   **strokeweight**
+-   **Riempito**
+-   **Fillcolor**
+-   **Spt**
 -   **ruleinitiator**
 -   **ruleproxy**
--   **ConnectorType**
+-   **Connectortype**
 -   **bwmode**
 -   **bwpure**
 -   **bwnormal**
 -   **forcedash**
 -   **oleicon**
 -   **preferrelative**
--   **OLE**
+-   **Ole**
 
-Con il **gruppo** è possibile utilizzare solo i sottoelementi seguenti.
+Con Group è possibile usare solo i sottoelementi **seguenti.**
 
 -   **Gruppo**
--   **TipoForma**
--   **Con forme**
+-   **Tipo di forma**
+-   **Forma**
 -   **Lock**
 
 **Esempio**
@@ -92,6 +92,6 @@ Nell'esempio seguente viene illustrato come definire un gruppo.
 
 
 
- 
+ 
 
- 
+ 

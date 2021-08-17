@@ -1,57 +1,57 @@
 ---
-title: Schema e algoritmi del profilo del modello del dispositivo a colori WCS
-description: In questo argomento vengono fornite informazioni sullo schema del profilo del modello di dispositivo con colori WCS e sugli algoritmi associati. Questo argomento contiene le sezioni seguenti OverviewColor Device Model Profile ArchitectureThe CDMP SchemaWCS CDMP v 2.0 Calibration AdditionThe CDMP schema ElementsColorDeviceModelProfileColorDeviceModelNamespaceVersionVersionDocumentationCRTDevice elementLCDDevice elementProjectorDevice elementScannerDevice elementCameraDevice elementRGBPrinterDevice elementCMYKPrinterDevice elementRGBVirtualDevice elementPlugInDeviceTypeRGBVirtualMeasurementTypeGammaTypeGammaOffsetGainTypeGammaOffsetGainLinearGainTypeToneResponseCurvesTypeGamutBoundarySamplesTypeFloatPairListCMYKPrinterMeasurementTypeRGBPrinterMeasurementTypeRGBCaptureMeasurementTypeOneBasedIndexRGBProjectorMeasurementTypeDisplayMeasurementTy peMeasurementConditionsTypeGeometryTypeRGBPrimariesGroupNonNegativeCMYKSampleTypeNonNegativeRGBSampleTypeNonNegativeCMYKTypeNonNegativeRGBTypeExtensionTypeNonNegativeXYZTypeXYZTypeThe CDMP Baseline AlgorithmsCRT modello dispositivo BaselineLCD modello di dispositivo BaselineRGB stampante modello BaselineRGB modello di dispositivo virtuale BaselineCMYK stampante modello BaselineRGB proiettore dispositivo modello BaselineICC modello di dispositivo BaselineRelated argomenti
+title: Schema e algoritmi del profilo del modello di dispositivo a colori WCS
+description: In questo argomento vengono fornite informazioni sullo schema del profilo del modello di dispositivo a colori WCS e sugli algoritmi associati. Questo argomento contiene le sezioni seguenti OverviewColor Device Model Profile ArchitectureThe CDMP SchemaWCS CDMP v2.0 Calibration AdditionThe CDMP Schema ElementsColorDeviceModelProfileColorDeviceModelNamespaceVersionVersionDocumentationCRTDevice elementLCDDevice elementProjectorDevice elementScannerDevice elementCameraDevice elementRGBPrinterDevice elementCMYKPrinterDevice elementRGBVirtualDevice elementRGBVirtualDevice elementPlugInDeviceTypeRGBVirtualMeasurementTypeGammaTypeGammaOffsetGainTypeGammaOffsetGainLinearGainTypeToneResponseCurvesTypeGamutBoundarySamplesTypeFloatPairListCMYKPrinterMeasurementTypeRGBPrinterMeasurementTypeRGBCaptureMeasurementTypeOneBasedIndexRGBProjectorMeasurementTypeDisplayMeasurementTypeMeasurementConditionsTypeGeometryTypeRGBPrimariesGroupNonNegativeCMYKSampleTypeNonNegativeRGBSampleTypeNonNegativeCMYKTypeNonNegativeRGBTypeExtensionTypeNonNegativeXYZTypeXYZTypeThe  Algoritmi di base CDMPResotto di base del modello di dispositivo CDMP Baseline Modello di dispositivoLCD BaselineRGB Modello di dispositivo stampante BaselineRGB Modello di dispositivo virtuale Baseline del modello di dispositivo della stampanteCmyk Modello di dispositivo BaselineRGB Modello di dispositivo Baseline del dispositivoCC Baseline del modello di dispositivoICC Argomenti correlati
 ms.assetid: bbb3b50d-75fc-476d-a011-af7dcc2ac520
 keywords:
-- Windows Color System (WCS), color Device Model Profile (CDMP)
-- WCS (sistema Windows Color), color Device Model Profile (CDMP)
-- Gestione colori immagine, profilo modello del dispositivo a colori (CDMP)
-- gestione dei colori, profilo del modello del dispositivo a colori (CDMP)
-- colori, profilo modello del dispositivo a colori (CDMP)
-- Windows Color System (WCS), profili
-- WCS (Windows Color System), profili
-- Gestione colori immagine, profili
+- Windows Sistema colori (WCS), profilo modello di dispositivo a colori (CDMP)
+- WCS (Windows Color System),profilo modello di dispositivo a colori (CDMP)
+- gestione dei colori delle immagini, profilo del modello di dispositivo a colori (CDMP)
+- gestione dei colori, profilo del modello di dispositivo a colori (CDMP)
+- colori, profilo modello di dispositivo a colori (CDMP)
+- Windows Sistema colori (WCS), profili
+- WCS (Windows Color System),profiles
+- gestione dei colori delle immagini, profili
 - gestione dei colori, profili
 - colori, profili
-- schemi, color Device Model Profile (CDMP)
-- algoritmi, color Device Model Profile (CDMP)
-- profilo del modello del dispositivo a colori (CDMP)
-- CDMP (Color Device Model Profile)
-- Profilo modello dispositivo a colori WCS
+- schemi, profilo modello di dispositivo a colori (CDMP)
+- algoritmi, profilo modello di dispositivo a colori (CDMP)
+- profilo modello di dispositivo a colori (CDMP)
+- CDMP (profilo del modello di dispositivo a colori)
+- Profilo del modello di dispositivo a colori WCS
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8b671bf97625b00c99060e65be4d39c44e5b35f
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 5210da85cd320a80e6b29a59e3cb5ff37c86fd174934832404e4b52cf53bd110
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104554325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118037900"
 ---
-# <a name="wcs-color-device-model-profile-schema-and-algorithms"></a>Schema e algoritmi del profilo del modello del dispositivo a colori WCS
+# <a name="wcs-color-device-model-profile-schema-and-algorithms"></a>Schema e algoritmi del profilo del modello di dispositivo a colori WCS
 
-In questo argomento vengono fornite informazioni sullo schema del profilo del modello di dispositivo con colori WCS e sugli algoritmi associati.
+In questo argomento vengono fornite informazioni sullo schema del profilo del modello di dispositivo a colori WCS e sugli algoritmi associati.
 
 In questo argomento sono incluse le sezioni seguenti:
 
 -   [Overview](#overview)
--   [Architettura del profilo del modello del dispositivo a colori](#color-device-model-profile-architecture)
--   [Schema CDMP](#the-cdmp-schema)
--   [Aggiunta calibrazione CDMP v 2.0 WCS](#wcs-cdmp-v20-calibration-addition)
+-   [Architettura del profilo del modello di dispositivo a colori](#color-device-model-profile-architecture)
+-   [The CDMP Schema](#the-cdmp-schema)
+-   [Aggiunta di calibrazione WCS CDMP v2.0](#wcs-cdmp-v20-calibration-addition)
 -   [Elementi dello schema CDMP](#the-cdmp-schema-elements)
     -   [ColorDeviceModelProfile](#colordevicemodelprofile)
     -   [ColorDeviceModel](#colordevicemodelprofile)
-    -   [NamespaceVersion](#namespaceversion)
-    -   [Versione](#namespaceversion)
+    -   [Versione spazio dei nomi](#namespaceversion)
+    -   [Version](#namespaceversion)
     -   [Documentazione](#documentation)
     -   [Elemento CRTDevice](#crtdevice-element)
     -   [Elemento LCDDevice](#lcddevice-element)
     -   [Elemento ProjectorDevice](#projectordevice-element)
     -   [Elemento ScannerDevice](#scannerdevice-element)
-    -   [Elemento CameraDevice](#cameradevice-element)
-    -   [Elemento RGBPrinterDevice](#rgbprinterdevice-element)
+    -   [CameraDevice - elemento](#cameradevice-element)
+    -   [RGBPrinterDevice - elemento](#rgbprinterdevice-element)
     -   [Elemento CMYKPrinterDevice](#cmykprinterdevice-element)
-    -   [Elemento RGBVirtualDevice](#rgbvirtualdevice-element)
+    -   [RGBVirtualDevice - elemento](#rgbvirtualdevice-element)
     -   [PlugInDeviceType](#plugindevicetype)
     -   [RGBVirtualMeasurementType](#rgbvirtualmeasurementtype)
     -   [GammaType](#gammatype)
@@ -67,40 +67,40 @@ In questo argomento sono incluse le sezioni seguenti:
     -   [RGBProjectorMeasurementType](#rgbprojectormeasurementtype)
     -   [DisplayMeasurementType](#displaymeasurementtype)
     -   [MeasurementConditionsType](#measurementconditionstype)
-    -   [GeometryType](#geometrytype)
+    -   [Tipo di geometria](#geometrytype)
     -   [RGBPrimariesGroup](#rgbprimariesgroup)
     -   [NonNegativeCMYKSampleType](#nonnegativecmyksampletype)
     -   [NonNegativeRGBSampleType](#nonnegativergbsampletype)
     -   [NonNegativeCMYKType](#nonnegativecmyktype)
     -   [NonNegativeRGBType](#nonnegativergbtype)
-    -   [ExtensionType](#extensiontype)
+    -   [Extensiontype](#extensiontype)
     -   [NonNegativeXYZType](#nonnegativexyztype)
     -   [XYZType](#nonnegativexyztype)
--   [Algoritmi di base di CDMP](#the-cdmp-baseline-algorithms)
-    -   [Baseline modello di dispositivo CRT](#crt-device-model-baseline)
-    -   [Linea di base del modello di dispositivo LCD](#lcd-device-model-baseline)
-    -   [Baseline modello dispositivo stampante RGB](#rgb-printer-device-model-baseline)
-    -   [Linea di base del modello di dispositivo virtuale RGB](#rgb-virtual-device-model-baseline)
-    -   [Baseline modello di dispositivo stampante CMYK](#cmyk-printer-device-model-baseline)
-    -   [Baseline modello di dispositivo proiettore RGB](#rgb-projector-device-model-baseline)
+-   [Algoritmi di base CDMP](#the-cdmp-baseline-algorithms)
+    -   [Baseline del modello di dispositivo CRT](#crt-device-model-baseline)
+    -   [Baseline del modello di dispositivo LCD](#lcd-device-model-baseline)
+    -   [Linea di base del modello di dispositivo della stampante RGB](#rgb-printer-device-model-baseline)
+    -   [Baseline del modello di dispositivo virtuale RGB](#rgb-virtual-device-model-baseline)
+    -   [Linea di base del modello di dispositivo della stampante CMYK](#cmyk-printer-device-model-baseline)
+    -   [Baseline del modello di dispositivo del proiettore RGB](#rgb-projector-device-model-baseline)
     -   [Baseline del modello di dispositivo ICC](#icc-device-model-baseline)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="overview"></a>Panoramica
 
-Questo schema viene utilizzato per specificare il contenuto di un profilo del modello del dispositivo a colori (CDMP). Gli algoritmi di base associati sono descritti di seguito.
+Questo schema viene usato per specificare il contenuto di un profilo cdMP (Color Device Model Profile). Gli algoritmi di base associati sono descritti di seguito.
 
-Lo schema DMP (Basic Device Model Profile) è costituito dai dati di misurazione del campionamento.
+Lo schema del profilo del modello di dispositivo (DMP) di base è costituito dai dati di misurazione del campionamento.
 
-Il componente di campionamento del XML Schema DMP fornisce supporto per gli obiettivi di misurazione dei colori di base, concentrandosi su destinazioni e destinazioni standard più comuni ottimizzate per i modelli di dispositivo di base.
+Il componente di campionamento dell'XML Schema DMP fornisce il supporto per le destinazioni di misurazione dei colori di base, concentrandosi su destinazioni standard comuni e destinazioni ottimizzate per i modelli di dispositivo di base.
 
-Il profilo del dispositivo fornisce inoltre informazioni specifiche sul modello di dispositivo di destinazione e fornisce un criterio che il modello di dispositivo di fallback di base può utilizzare se il modello di destinazione non è disponibile. Le istanze del profilo possono includere estensioni private mediante meccanismi di estensione XML standard.
+Inoltre, il profilo del dispositivo fornisce informazioni specifiche sul modello di dispositivo di destinazione e fornisce un criterio che il modello di dispositivo di fallback di base può usare se il modello di destinazione non è disponibile. Le istanze del profilo possono includere estensioni private tramite meccanismi di estensione XML standard.
 
-## <a name="color-device-model-profile-architecture"></a>Architettura del profilo del modello del dispositivo a colori
+## <a name="color-device-model-profile-architecture"></a>Architettura del profilo del modello di dispositivo a colori
 
-![Diagramma che mostra le informazioni che costituiscono un profilo del modello di dispositivo.](images/cdmp-image002new.png)
+![Diagramma che mostra le informazioni che costituisce un profilo del modello di dispositivo.](images/cdmp-image002new.png)
 
-## <a name="the-cdmp-schema"></a>Schema CDMP
+## <a name="the-cdmp-schema"></a>The CDMP Schema
 
 
 ```C++
@@ -482,9 +482,9 @@ Il profilo del dispositivo fornisce inoltre informazioni specifiche sul modello 
 
 
 
-## <a name="wcs-cdmp-v20-calibration-addition"></a>Aggiunta calibrazione CDMP v 2.0 WCS
+## <a name="wcs-cdmp-v20-calibration-addition"></a>Aggiunta di calibrazione WCS CDMP v2.0
 
-L'elemento **ColorDeviceModel** dello schema CDMP è stato aggiornato in Windows 7 in modo da includere il nuovo elemento Calibration. Di seguito viene illustrata la modifica allo schema CDMP.
+**L'elemento ColorDeviceModel** dello schema CDMP è stato aggiornato in Windows 7 per includere il nuovo elemento di calibrazione. Di seguito viene illustrata la modifica dello schema CDMP.
 
 
 ```C++
@@ -509,12 +509,12 @@ L'elemento **ColorDeviceModel** dello schema CDMP è stato aggiornato in Windows
 ## <a name="the-cdmp-schema-elements"></a>Elementi dello schema CDMP
 
 > [!Note]  
-> Le primarie sono esempi primari di rosso, verde, blu, nero e bianco. Una rampa primaria è una rampa tonale da minima luminanza a un valore primario completo. Il numero massimo di voci in una rampa di tono è 4096.
+> Le primarie sono esempi principali di rosso, verde, blu, nero e bianco. Una rampa primaria è una rampa tonale dalla minima luminance al valore primario completo. Il numero massimo di voci in una rampa di tono è 4096.
 
  
 
 > [!Note]  
-> Per i dati di misurazione è necessario DMPs.
+> Le dmp devono avere dati di misurazione.
 
  
 
@@ -522,20 +522,20 @@ L'elemento **ColorDeviceModel** dello schema CDMP è stato aggiornato in Windows
 
 Questo elemento è di tipo ColorDeviceModel.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="colordevicemodel"></a>ColorDeviceModel
 
-Questo elemento è una sequenza dei sottoelementi seguenti
+Questo elemento è una sequenza dei sotto-elementi seguenti
 
 1.  Stringa ProfileName,
-2.  stringa di descrizione facoltativa,
-3.  stringa autore facoltativa,
+2.  facoltativo Descrizione stringa,
+3.  stringa author facoltativa,
 4.  facoltativo MeasurementConditions MeasurementConditionsType,
-5.  Self-Luminous valore booleano,
+5.  Self-Luminous booleano,
 6.  MaxColorant float,
 7.  MinColorant float,
-8.  Scelta di elementi
+8.  Scelta degli elementi
     1.  CRTDevice,
     2.  LCDDevice,
     3.  RGBProjectorDevice,
@@ -545,21 +545,21 @@ Questo elemento è una sequenza dei sottoelementi seguenti
     7.  CMYKPrinterDevice,
     8.  RGBVirtualDevice,
 9.  PlugInDevice,
-10. Estensione facoltativa ExtensionType
+10. ExtensionType facoltativo
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo. Gli elementi secondari stringa hanno un massimo di 10.000 caratteri. Il sottoelemento MaxColorant deve essere maggiore o uguale a zero (0) e maggiore del sottoelemento MinColorant. Il valore di MinColorant può essere negativo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo. Gli elementi secondari della stringa hanno un massimo di 10.000 caratteri. Il sotto-elemento MaxColorant deve essere maggiore o uguale a zero (0) e maggiore del sotto-elemento MinColorant. MinColorant può essere negativo.
 
-### <a name="namespaceversion"></a>NamespaceVersion
+### <a name="namespaceversion"></a>Versione spazio dei nomi
 
-xmlns: CDM = " http://schemas.microsoft.com/windows/2005/02/color/ColorDeviceModel "
+xmlns:cdm=" http://schemas.microsoft.com/windows/2005/02/color/ColorDeviceModel "
 
-targetNamespace = " http://schemas.microsoft.com/windows/2005/02/color/ColorDeviceModel "
+targetNamespace=" http://schemas.microsoft.com/windows/2005/02/color/ColorDeviceModel "
 
 ### <a name="version"></a>Versione
 
-Version = "1,0" con Windows Vista.
+Versione = "1.0" con Windows Vista.
 
-**Condizioni di convalida:** Qualsiasi valore di versione &gt; 0,1 o &lt; = 2,0 è valido per supportare le modifiche non di rilievo nel formato.
+**Condizioni di convalida:** Qualsiasi valore di &gt; versione 0.1 o =2.0 è valido per &lt; supportare modifiche non di rilievo al formato.
 
 ### <a name="documentation"></a>Documentazione
 
@@ -569,61 +569,61 @@ Copyright (C) Microsoft. Tutti i diritti sono riservati.
 
 ### <a name="crtdevice-element"></a>Elemento CRTDevice
 
-Questo elemento è una sequenza di sottoelementi di un DisplayMeasurementType MeasurementData.
+Questo elemento è una sequenza di sotto-elementi di measurementData DisplayMeasurementType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="lcddevice-element"></a>Elemento LCDDevice
 
-Questo elemento è una sequenza di sottoelementi di un DisplayMeasurementType MeasurementData.
+Questo elemento è una sequenza di sotto-elementi di measurementData DisplayMeasurementType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="projectordevice-element"></a>Elemento ProjectorDevice
 
-Questo elemento è una sequenza di sottoelementi di un RGBProjectorMeasurementType MeasurementData.
+Questo elemento è una sequenza di sotto-elementi di measurementData RGBProjectorMeasurementType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="scannerdevice-element"></a>Elemento ScannerDevice
 
-Questo elemento è una sequenza di sottoelementi di un RGBCaptureMeasurementType MeasurementData
+Questo elemento è una sequenza di sotto-elementi di measurementData RGBCaptureMeasurementType
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
-### <a name="cameradevice-element"></a>Elemento CameraDevice
+### <a name="cameradevice-element"></a>CameraDevice - elemento
 
-Questo elemento è una sequenza di sottoelementi di un RGBCaptureMeasurementType MeasurementData
+Questo elemento è una sequenza di sotto-elementi di measurementData RGBCaptureMeasurementType
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
-### <a name="rgbprinterdevice-element"></a>Elemento RGBPrinterDevice
+### <a name="rgbprinterdevice-element"></a>RGBPrinterDevice - elemento
 
-Questo elemento è una sequenza di sottoelementi di un RGBPrinterMeasurementType MeasurementData.
+Questo elemento è una sequenza di sotto-elementi di measurementData RGBPrinterMeasurementType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="cmykprinterdevice-element"></a>Elemento CMYKPrinterDevice
 
-Questo elemento è una sequenza di sottoelementi di un CMYKPrinterMeasurementType MeasurementData.
+Questo elemento è una sequenza di sotto-elementi di measurementData CMYKPrinterMeasurementType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
-### <a name="rgbvirtualdevice-element"></a>Elemento RGBVirtualDevice
+### <a name="rgbvirtualdevice-element"></a>RGBVirtualDevice - elemento
 
-Questo elemento è una sequenza di sottoelementi di un RGBVirtualMeasurementDataType.
+Questo elemento è una sequenza di sotto-elementi di RGBVirtualMeasurementDataType.
 
-**Condizioni di convalida:** Ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di convalida:** Ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="plugindevicetype"></a>PlugInDeviceType
 
-Questo elemento è una sequenza di un GUID GUIDType e di tutti gli elementi secondari.
+Questo elemento è una sequenza di un GUID GUIDType ed eventuali sotto-elementi.
 
-**Condizioni di convalida:** Il GUID viene usato per trovare la corrispondenza con il GUID della dll del plug-in DM. Sono presenti un massimo di 100.000 sottoelementi personalizzati.
+**Condizioni di convalida:** Il GUID viene usato per trovare la corrispondenza con il GUID dll plugin dm. Esistono un massimo di 100.000 sotto-elementi secondari personalizzati.
 
 ### <a name="rgbvirtualmeasurementtype"></a>RGBVirtualMeasurementType
 
-Questo elemento è una sequenza composta da
+Questo elemento è una sequenza costituita da
 
 1.  Gruppo RGBPrimariesGroup
 2.  Scelta di
@@ -632,40 +632,40 @@ Questo elemento è una sequenza composta da
     -   GammaOffsetGainLinearGam
     -   Elementi ToneResponseCurves
 
-4.  GamutBoundarySamplesType GamutBoundarySamples facoltativo
-5.  DateTime TimeStamp
+4.  facoltativo GamutBoundarySamples GamutBoundarySamplesType
+5.  TimeStamp dateTime
 
-**Condizioni di convalida:** Ogni sottoelemento di questi tipi presenta le proprie condizioni di convalida.
+**Condizioni di convalida:** Ogni sotto-elemento di questi tipi ha le proprie condizioni di convalida.
 
 ### <a name="gammatype"></a>GammaType
 
 Questo elemento è un tipo complesso costituito dall'attributo
 
--   NonNegativeFloatType gamma
+-   Gamma NonNegativeFloatType
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="gammaoffsetgaintype"></a>GammaOffsetGainType
 
 Questo elemento è un tipo complesso costituito dagli attributi
 
--   NonNegativeFloatType gamma
+-   Gamma NonNegativeFloatType
 -   Offset NonNegativeFloatType
--   Ottieni NonNegativeFloatType
+-   Gain NonNegativeFloatType
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="gammaoffsetgainlineargaintype"></a>GammaOffsetGainLinearGainType
 
 Questo elemento è un tipo complesso costituito dagli attributi
 
--   NonNegativeFloatType gamma
+-   Gamma NonNegativeFloatType
 -   Offset NonNegativeFloatType
--   Ottieni NonNegativeFloatType
+-   Gain NonNegativeFloatType
 -   LinearGain NonNegativeFloatType
 -   TransitionPoint NonNegativeFloatType.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="toneresponsecurvestype"></a>ToneResponseCurvesType
 
@@ -675,140 +675,140 @@ Questo elemento è una sequenza di
 2.  GreenTRC FloatPairList
 3.  BlueTRC FloatPairList
 
-L'elemento dispone anche di un attributo TRCLength di tipo unsignedInt.
+L'elemento ha anche un attributo TRCLength di tipo unsignedint.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="gamutboundarysamplestype"></a>GamutBoundarySamplesType
 
-Questo elemento è una sequenza di RGBTypes RGB.
+Questo elemento è una sequenza di RGBType RGB.
 
-**Condizioni di convalida:** Numero massimo di occorrenze attualmente non vincolate, da raggiungere in base ai commenti del settore.
+**Condizioni di convalida:** Frequenze massime attualmente illimitate, da inviare in base ai commenti e suggerimenti del settore.
 
 ### <a name="floatpairlist"></a>FloatPairList
 
-Questo elemento è un tipo semplice di elenco di coppie di float.
+Questo elemento è un tipo semplice di elenco di coppie di valori float.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="cmykprintermeasurementtype"></a>CMYKPrinterMeasurementType
 
 Questo elemento è un
 
-1. sequenza dell'elemento cubocolori costituito da una sequenza di NonNegativeCMYKSampleType di esempio
+1. sequenza dell'elemento ColorCube costituita da una sequenza di Sample NonNegativeCMYKSampleType
 
-2. TimeStamp dateTime (attributo).
+2. Attributo dateTime di TimeStamp.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="rgbprintermeasurementtype"></a>RGBPrinterMeasurementType
 
 Questo elemento è un
 
-1. sequenza dell'elemento cubocolori costituito da una sequenza di NonNegativeRGBSampleType di esempio
+1. sequenza di elemento ColorCube costituita da una sequenza di Sample NonNegativeRGBSampleType
 
-2. TimeStamp dateTime (attributo).
+2. Attributo dateTime di TimeStamp.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="rgbcapturemeasurementtype"></a>RGBCaptureMeasurementType
 
 Questo elemento è una sequenza di
 
-1.  ComplexType PrimaryIndex
-2.  1.  OneBasedIndex bianco
+1.  complexType PrimaryIndex di
+2.  1.  White OneBasedIndex
     2.  OneBasedIndex nero facoltativo
     3.  OneBasedIndex rosso facoltativo
-    4.  OneBasedIndex verde facoltativo
-    5.  OneBasedIndex blu facoltativo
-    6.  OneBasedIndex ciano facoltativo
-    7.  OneBasedIndex magenta facoltativo
-    8.  OneBasedIndex giallo facoltativo
+    4.  Facoltativo OneBasedIndex verde
+    5.  Facoltativo OneBasedIndex blu
+    6.  Facoltativo Cyan OneBasedIndex
+    7.  Facoltativo Magenta OneBasedIndex
+    8.  Facoltativo OneBasedIndex giallo
 
 3.  NeutralIndices delle righe di OneBasedIndex
-4.  Sequenza ColorSamples di NonNegativeRGBSampleType di esempio
+4.  Sequenza ColorSamples di Sample NonNegativeRGBSampleType
 
-L'elemento include anche un attributo TimeStamp dateTime.
+L'elemento ha anche un attributo dateTime TimeStamp.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="onebasedindex"></a>OneBasedIndex
 
-Questo elemento è un tipo semplice di base di limitazione senza segno int con valore minInclusive = "1".
+Questo elemento è un tipo semplice di restrizione base unsigned int con valore minInclusive = "1".
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="rgbprojectormeasurementtype"></a>RGBProjectorMeasurementType
 
 Questo elemento è una sequenza di
 
 1.  Gruppo RGBPrimariesGroup
-2.  elemento ColorSamples costituito dalla sequenza di NonNegativeRGBSampleType di esempio
+2.  elemento ColorSamples costituito dalla sequenza di Sample NonNegativeRGBSampleType
 
-L'elemento include anche un attributo TimeStamp dateTime.
+L'elemento ha anche un attributo dateTime TimeStamp.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="displaymeasurementtype"></a>DisplayMeasurementType
 
 Questo elemento è una sequenza di
 
-1.  RGBPrimariesGroup gruppo
-2.  GrayRamp della sequenza di NonNegativeRGBType di esempio
-3.  RedRamp della sequenza di NonNegativeRGBType di esempio
-4.  GreenRamp della sequenza di NonNegativeRGBType di esempio
-5.  BlueRamp della sequenza di NonNegativeRGBType di esempio
+1.  group RGBPrimariesGroup
+2.  GrayRamp della sequenza di Sample NonNegativeRGBType
+3.  RedRamp della sequenza di Sample NonNegativeRGBType
+4.  GreenRamp della sequenza di Sample NonNegativeRGBType
+5.  BlueRamp della sequenza di Sample NonNegativeRGBType
 
-L'elemento DisplayMeasurementType include anche un attributo TimeStamp dateTime.
+L'elemento DisplayMeasurementType ha anche un attributo dateTime TimeStamp.
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="measurementconditionstype"></a>MeasurementConditionsType
 
-MeasurementConditionsType è una sequenza di sottoelementi che contiene:
+MeasurementConditionsType è una sequenza di sotto-elementi che contiene:
 
-1.  Valore di enumerazione di stringhe con limitazione dello spazio dei colore di "CIE XYZ"
-2.  scelta facoltativa dell'enumerazione WhitePoint NonNegativeXYZType o WhitePointName String dei valori D50, D65, A o F2
-3.  Geometria GeometryType
-4.  ApertureSize Integer in millimetri
+1.  Valore di enumerazione delle stringhe con restrizioni ColorSpace "CIEXYZ"
+2.  Scelta facoltativa dell'enumerazione di stringhe WhitePoint NonNegativeXYZType o WhitePointName dei valori D50, D65, A o F2
+3.  Geometry GeometryType
+4.  Valore intero ApertureSize in millimetri
 
-Le impostazioni predefinite sono:
+I valori predefiniti sono:
 
 1.  Stampanti RGB e CMYK:
-    1.  MeasurementSpaceType CIE XYZ
-    2.  WhitePointValue D50
+    1.  CIEXYZ MeasurementSpaceType
+    2.  D50 WhitePointValue
     3.  0/45 GeometryType
     4.  ApertureSize 10mm
-2.  Scanner
-    1.  MeasurementSpaceType CIE XYZ
-    2.  WhitePointValue D50
+2.  Scanner:
+    1.  CIEXYZ MeasurementSpaceType
+    2.  D50 WhitePointValue
     3.  0/45 GeometryType
     4.  ApertureSize 10mm
-3.  Visualizza e dispositivo virtuale RGB:
-    1.  MeasurementSpaceType CIE XYZ
-    2.  WhitePointValue D65
+3.  Display e dispositivo virtuale RGB:
+    1.  CIEXYZ MeasurementSpaceType
+    2.  D65 WhitePointValue
     3.  0/45 GeometryType
     4.  ApertureSize 10mm
-4.  Fotocamere
-    1.  MeasurementSpaceType CIE XYZ
-    2.  WhitePointValue D65
+4.  Telecamere:
+    1.  CIEXYZ MeasurementSpaceType
+    2.  D65 WhitePointValue
     3.  GeometryType diretto
     4.  ApertureSize 10mm
 
-**Condizioni di convalida:** La convalida di ogni sottoelemento è determinata dalle condizioni di convalida per tali sottoelementi. Se manca un sottoelemento, viene usato il tipo di modello di dispositivo predefinito specifico.
+**Condizioni di convalida:** La convalida di ogni sotto-elemento è determinata dalle condizioni di convalida per tali sotto-elementi. Se manca un sotto-elemento, viene usato il valore predefinito specifico del tipo di modello di dispositivo.
 
-### <a name="geometrytype"></a>GeometryType
+### <a name="geometrytype"></a>Tipo di geometria
 
 string
 
 Valori di enumerazione:
 
 -   "0/45"
--   "0/diffuso"
--   "diffuso/0"
--   Diretto
+-   "0/diffuse"
+-   "diffuse/0"
+-   "Diretto"
 
-**Condizioni di convalida:** Qualsiasi valore, ad eccezione dei valori enumberation elencati, non è valido. Queste informazioni non modificheranno il comportamento di elaborazione della linea di base.
+**Condizioni di convalida:** Qualsiasi valore ad eccezione dei valori di numerazione elencati non è valido. Queste informazioni non modificheranno il comportamento di elaborazione della baseline.
 
 ### <a name="rgbprimariesgroup"></a>RGBPrimariesGroup
 
@@ -820,40 +820,40 @@ Questo elemento è una sequenza di
 4.  BluePrimary NonNegativeXYZTYpe
 5.  BlackPrimary NonNegativeXYZType
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="nonnegativecmyksampletype"></a>NonNegativeCMYKSampleType
 
 Questo elemento è una sequenza di
 
-1.  NonNegativeCMYKType CMYK
-2.  NonNegativeXYZType CIE XYZ
+1.  CMYK NonNegativeCMYKType
+2.  CIEXYZ NonNegativeXYZType
 
-L'elemento include anche una stringa di Tag Attribute facoltativa
+L'elemento ha anche una stringa tag di attributo facoltativa
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="nonnegativergbsampletype"></a>NonNegativeRGBSampleType
 
 Questo elemento è una sequenza di
 
-1.  NonNegativeRGBType RGB
-2.  NonNegativeXYZType CIE XYZ
+1.  RGB NonNegativeRGBType
+2.  CIEXYZ NonNegativeXYZType
 
-L'elemento include anche una stringa di Tag Attribute facoltativa
+L'elemento ha anche una stringa tag di attributo facoltativa
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare in base ai commenti e suggerimenti del settore.
 
 ### <a name="nonnegativecmyktype"></a>NonNegativeCMYKType
 
 Questo elemento è costituito da attributi
 
 1.  C float
-2.  Float M
-3.  Float Y
+2.  M float
+3.  Y float
 4.  K float
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare dai commenti e suggerimenti del settore.
 
 ### <a name="nonnegativergbtype"></a>NonNegativeRGBType
 
@@ -861,93 +861,31 @@ Questo elemento è costituito da attributi
 
 1.  Float R
 2.  G float
-3.  Float B
+3.  B float
 
-**Condizioni di convalida:** Per essere determinato dal feedback del settore.
+**Condizioni di convalida:** Da determinare dai commenti e suggerimenti del settore.
 
-### <a name="extensiontype"></a>ExtensionType
+### <a name="extensiontype"></a>Extensiontype
 
-L'elemento ExtensionType è una sequenza di qualsiasi tipo di sottoelemento e viene usato per informazioni proprietarie da applicazioni non Microsoft.
+L'elemento ExtensionType è una sequenza di qualsiasi tipo di sotto-elemento e viene usato per informazioni proprietarie da applicazioni non Microsoft.
 
-**Condizioni di convalida:** Questo elemento è facoltativo. Possono essere presenti al massimo 1000 sottoelementi di estensione.
+**Condizioni di convalida:** Questo elemento è facoltativo. Possono essere presenti al massimo 1000 elementi secondari dell'estensione.
 
 ### <a name="nonnegativexyztype"></a>NonNegativeXYZType
 
-L'elemento NonNegativeXYZType è costituito da NonNegativeFloatType tre elementi a virgola mobile IEEE a precisione singola denominati "X", "Y" e "Z". Questi valori sono limitati ai valori di misurazione dei profili DMP. Queste misurazioni possono essere di tipo assoluto (non relativo) CIE XYZ 1931 o assoluti (non relativi) CIE XYZ 1931 Direct (transmissal) in candele per metro unità quadrate.
+L'elemento NonNegativeXYZType è costituito da tre elementi A virgola mobile IEEE a precisione singola denominati "X", "Y" e "Z". Questi valori sono limitati ai valori di misura dei profili DMP. Queste misurazioni possono essere valori assoluti (non relativi) CIEXYZ 1931 riflettenti o valori assoluti (non relativi) CIEXYZ 1931 diretti (trasmissivi) in candela per unità quadrate del contatore.
 
-**Condizioni di convalida:** Solo i valori reali sono validi e i valori di misurazione CIE XYZ negativi non sono validi. Poiché si tratta di valori assoluti, i valori possono essere maggiori di 1,0 f. Limite ragionevole per qualsiasi "X", "Y" o "Z". il valore è arbitrariamente impostato su 10000.0 f.
+**Condizioni di convalida:** Sono validi solo i valori reali e i valori di misura CIEXYZ negativi non sono validi. Poiché si tratta di valori assoluti, i valori possono essere maggiori di 1,0f. Limite ragionevole per qualsiasi "X", "Y" o "Z". value è arbitrariamente impostato su 10000.0f.
 
 ### <a name="xyztype"></a>XYZType
 
-L'elemento XYZType è costituito da tre valori a virgola mobile IEEE con precisione singola: "X", "Y" e "Z".
+L'elemento XYZType è costituito da tre valori a virgola mobile IEEE a precisione singola: "X", "Y" e "Z".
 
-## <a name="the-cdmp-baseline-algorithms"></a>Algoritmi di base di CDMP
+## <a name="the-cdmp-baseline-algorithms"></a>Algoritmi di base CDMP
 
-### <a name="crt-device-model-baseline"></a>Baseline modello di dispositivo CRT
+### <a name="crt-device-model-baseline"></a>Baseline del modello di dispositivo CRT
 
-Per comprendere questo modello, è necessario considerare sia il processo di caratterizzazione che la modellazione del dispositivo. Nel processo di caratterizzazione, le misurazioni XYZ vengono eseguite prima sui colori ottenuti riempiendo il buffer di visualizzazione di un dispositivo di visualizzazione CRT. I valori di esempio seguenti genereranno dati validi per il modello di dispositivo CRT Baseline:
-
-Rosso: R = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, G = B = 0
-
-Verde: G = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, R = B = 0
-
-Blu: B = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, R = G = 0
-
-Neutrals: R = G = B = 0, 8, 16, 32, 64, 128, 192, 255
-
-È inoltre possibile utilizzare incrementi diversi da 15 e incrementi non lineari. Ogni rampa rossa, verde, blu e neutra deve contenere almeno tre campioni, ma è consigliabile fornire più esempi. È necessario fornire esempi per i puri rossi, verdi, blu, neri e bianchi. Gli esempi non devono essere distanziati in modo uniforme.
-
-Il processo di creazione della matrice tristimolo è costituito da due passaggi. Per prima cosa, stimare il valore XYZ del punto nero o il bagliore. Questo passaggio si basa in larga misura sul lavoro di Bernas \[ 3 \] con una funzione oggettiva leggermente modificata per l'ottimizzazione non lineare. In secondo luogo, calcolare la matrice tristimolo in base al risultato del passaggio uno e anche da un calcolo della media di tutte le misurazioni per canale, non solo da quello per il numero massimo di numeri digitali.
-
-Ognuno di questi passaggi contiene procedure dettagliate. Il punto di partenza è costituito dalle rampe (17 passaggi nell'esempio) per ogni canale R, G e B. Quando le misurazioni XYZ sono tracciate sul piano *XY* di cromaticità, una situazione tipica è illustrata nella figura 1. Il primo passaggio consiste nella risoluzione di un problema di ottimizzazione non lineare per individuare il punto nero "migliore adattamento" che ridurrà al minimo la tendenza nella cromaticità come uno attraversa lungo i canali R, G e B. In base a Bernas \[ 3, cerchiamo \] ( *X <sub>k</sub>*,*Y <sub>k</sub>*,*Z <sub>k</sub>* ) che riduce al minimo la funzione Objective seguente:
-
-![Mostra la funzione objective in cui SR, SG e SB sono il set di punti dati nei canali R, G e B.](images/cdmp-formula1.png)
-
-dove *s <sub>R</sub>*,*s <sub>G</sub>* e *s <sub>B</sub>* sono il set di punti dati corrispondente ai punti sui canali R, G e b. Per qualsiasi set *S*, definire:
-
-![Mostra una formula per la definizione di tutti i set.](images/cdmp-formula2.png)
-
-Nell'esempio precedente, \| *s* \| è la cardinalità di *s*, ovvero il numero di punti nel set *S*. ![ Mostra una formula per la cromaticità di un punto.](images/cdmp-formula3.png) Coordinate di cromaticità del punto che ![ Mostra un formaula per un punto.](images/cdmp-formula4.png) , quindi, ![ Mostra una formula per la media o il centro della massa. ](images/cdmp-formula5.png) , è la media, o il centro della massa, di tutti i punti nel set *S* nel piano di cromaticità. Quindi, ![ Mostra una formula per la somma di un secondo istanti di punti.](images/cdmp-formula6.png) è la somma di secondi di punti relativi al centro della massa ed è una misura della diffusione dei punti. Infine, ![ Mostra una formula per la misura totale della distribuzione di tre cluster di punti.](images/cdmp-formula7.png) è una misura totale di come la distribuzione dei tre cluster di punti riguarda i rispettivi centri di massa.
-
-Nel calcolo di ![ viene mostrata una formula di f (X, Y, Z; XK,, di ZK, ZK).](images/cdmp-formula8.png) , se ![ Mostra una formula per X. ](images/cdmp-formula9.png) , il calcolo viene ignorato e la cardinalità di *S* viene modificata di conseguenza.
-
-Nonostante la complessità apparente della funzione oggettiva, è una somma dei quadrati di molte funzioni differenziabili in *X <sub>k</sub>*,*Y <sub>k</sub>Z <sub>k</sub>* (17 punti 2 *XY* -Components 3 Channels = 102, nell'esempio) e, pertanto, è suscettibile alle tecniche standard non lineari minime, ad esempio l'algoritmo Levenberg-Marquardt, che è l'algoritmo usato in WCS. Si noti che la funzione dell'obiettivo precedente è diversa da quella suggerita in Bernas \[ 3 \] in quanto quest'ultima misura la varianza delle distanze dal centro della massa, in modo che la varianza sia zero quando i punti sono equidistanti dal centro della massa, anche se possono diffondersi. Nell'esempio, la dispersione dei punti è contollata direttamente usando i secondi istanti.
-
-Come per qualsiasi algoritmo iterativo per il problema dei minimi quadrati non lineari, Levenberg-Marquardt richiede una supposizione iniziale. Esistono due candidati evidenti. Uno è (0, 0, 0); l'altro è il punto nero misurato. Per la CTE, il punto nero misurato viene usato per la prima volta come supposizione iniziale. Se viene superato un massimo di 100 iterazioni senza raggiungere una soglia di una distanza media di 0,001 di ogni punto dal centro di massa (che corrisponde a un valore soglia di (0,001) 17 3 = 0,000051 per la funzione Objective), viene eseguito un altro ciclo di iterazioni con l'ipotesi iniziale di (0, 0, 0). La stima risultante del punto nero è XYZ rispetto alla stima migliore del ciclo di iterazione precedente (con il punto nero misurato come supposizione iniziale). Utilizzare la stima che fornisce il valore più piccolo per la funzione Objective. La scelta di iterazioni 100 e la distanza degli errori di 0,001 sono state selezionate empiricamente. Nelle versioni future, potrebbe essere ragionevole parametrizzare la distanza degli errori.
-
-Il risultato del passaggio uno è il punto nero stimato ( *X <sub>k</sub>*,*Y <sub>k</sub>*,*Z <sub>k</sub>* ). Il secondo passaggio consiste nel determinare la matrice tristimolo calcolando la media della cromaticità dei punti nei tre cluster ottenuti nel passaggio 1. Per CRT, questa operazione viene eseguita principalmente per ridurre al minimo gli effetti degli errori di misurazione. I punti usati per la media della cromaticità devono essere gli stessi punti usati nell'ottimizzazione nel passaggio uno. In altre parole, se il primo punto (Digital count 15, nell'esempio) in ogni rampa viene eliminato nel passaggio di ottimizzazione, lo stesso deve essere eseguito nella media. Se ![ Mostra le formule della cromaticità media per le coordinate nei canali rosso e verde.](images/cdmp-formula10.png) e ![ Mostra una formula della cromaticità media per le coordinate nel canale blu.](images/cdmp-formula11.png) sono le coordinate della cromaticità media dei canali rosso, verde e blu, quindi la procedura seguente determina la matrice tristimolo. Per prima cosa, risolvere il 3? 3 sistema lineare:
-
-![Mostra la prima parte della procedura per risolvere un sistema lineare 3? 3.](images/cdmp-formula12.png)
-
-![Mostra la seconda parte del sistema lineare 3? 3.](images/cdmp-formula13.gif)![Mostra il valore di t pedice b alla fine della seconda parte del sistema lineare 3? 3.](images/cdmp-formula14.gif)
-
-*X <sub>w</sub>*,*Y <sub>w</sub>*,*Z <sub>w</sub>*
-
-![Mostra la parte finale della procedura per risolvere un sistema lineare 3? 3.](images/cdmp-formula15.png)
-
-Dopo che la matrice tristimolo è stata determinata, la determinazione delle curve di tono segue l'approccio standard. Per le visualizzazioni CRT, si presuppone che i singoli canali seguano il modello "GOG":
-
-![Mostra la formula per il modello ' G O G '.](images/cdmp-formula16.png)
-
-dove *k <sub>g</sub>* è il "guadagno", 1-*k <sub>g</sub>* è "offset" e? è il "gamma". La matrice inversa della matrice tristimolo viene applicata ai dati XYZ degli neutri per ottenere i dati RGB lineari, che vengono quindi correlati con i valori RGB digitali usando la regressione non lineare sul modello GOG. Queste caratteristiche non devono essere uguali per i canali R, G e B e in genere non sono uguali.
-
-Berns \[ 1 \] : Berns, *Billmeyer e spugnos, principi della tecnologia dei colori*, 3 <sub>Rd</sub> ed. John Wiley & Sons (2000).
-
-Berns \[ 2 \] : Berns e Katoh, la funzione di trasferimento da digitale a radiometrica per i monitor CRT controllati da computer, il *Simposio esperto cie di 97 colori standard per la tecnologia di imaging*, nov. 1997.
-
-Berns \[ 3 \] : Bernas, Fernandez e Taplin, stima Black-Level le emissioni di Computer-Controlled Visualizzazioni, *ricerca a colori e applicazione*, 28:379-383 dei periodici Wiley, Inc. (2003)
-
-Kang \[ 1 \] : Kang, *tecnologia dei colori per dispositivi di imaging elettronico*, spie (1997)
-
-Katoh \[ 1 \] : Katoh, Deguchi e Berns, una descrizione accurata della proposta di monitoraggio CRT (II) per un'estensione del metodo CIE e la relativa verifica, *opt. Rev.* 8:397-408 (2001)
-
-### <a name="lcd-device-model-baseline"></a>Linea di base del modello di dispositivo LCD
-
-La linea di base del modello di dispositivo LCD è simile alla baseline del modello di dispositivo CRT. In questa sezione vengono illustrati i modi in cui la modellazione LCD è diversa dalla modellazione CRT.
-
-Una differenza consiste nel fatto che non è possibile presupporre che gli schermi LCD seguano il modello GOG usato per CRT e che le curve di tono siano ottenute dall'interpolazione dei dati misurati. Per questo motivo, è consigliabile campionare l'asse neutro del dispositivo con maggiore frequenza.
-
-Di seguito sono riportati alcuni valori di esempio tipici che possono generare dati validi per la baseline del modello di dispositivo LCD:
+Per comprendere questo modello, è necessario considerare sia il processo di caratterizzazione che la modellazione dei dispositivi. Nel processo di caratterizzazione, le misurazioni XYZ vengono eseguite per la prima volta sui colori ottenuti riempiendo il buffer di visualizzazione di un dispositivo di visualizzazione CRT. I valori di esempio seguenti genereranno dati validi per il modello di dispositivo CRT di base:
 
 Rosso: R = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, G = B = 0
 
@@ -955,71 +893,133 @@ Verde: G = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 
 
 Blu: B = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, R = G = 0
 
-Neutrals: R = G = B = 0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255.
+Neutrali: R = G = B = 0, 8, 16, 32, 64, 128, 192, 255
 
-Il processo di media delle cromie di colore misurato per ottenere la cromaticità per le primarie del dispositivo è più importante per gli LCD rispetto a CRT. Quando le misurazioni XYZ sono tracciate sulla superficie *XY* , una situazione tipica è illustrata nella figura 1. Si noti come la cromaticità si allontana verso il punto nero. Questo perché tutti gli LCD hanno una certa quantità di perdite di luce.
+È anche possibile usare incrementi diversi da 15 e incrementi non lineari. Ogni rampa rossa, verde, blu e neutra deve contenere almeno tre campioni, ma è consigliabile fornire altri esempi. È necessario fornire esempi per rosso, verde, blu, nero e bianco puro. Non è necessario che gli esempi siano spaziati in modo uniforme.
 
-![Diagramma che mostra un grafico della cromaticità utilizzando dati non elaborati senza correzione.](images/cdmp-lcd-dmp-figure1.png)
+Il processo di compilazione della matrice tristimulus è costituito da due passaggi. Per prima cosa, stimare il valore XYZ del punto nero o il flare. Questo passaggio si basa principalmente sul lavoro di Berns 3 con una funzione obiettivo leggermente modificata \[ \] per l'ottimizzazione non lineare. In secondo piano, calcolare la matrice tristimulus in base al risultato del primo passaggio e anche da un calcolo della media su tutte le misurazioni per canale, non solo su quella per il numero massimo di dati digitali.
 
-**Figura 1** : diagramma di cromaticità con dati non elaborati senza correzione
+Ognuno di questi passaggi contiene procedure dettagliate. Il punto di partenza sono le rampe (17 passaggi nell'esempio) per ognuno dei canali R, G e B. Quando le misure XYZ vengono tracciate sul piano *xy* della cromaticità, nella figura 1 viene illustrata una situazione tipica. Il primo passaggio consiste nella risoluzione di un problema di ottimizzazione non lineare per trovare il punto nero "best fit" che ridurrà al minimo la deriva nella cromaticità quando si attraversano i canali R, G e B. In base a Berns \[ \] 3, si cerca ( *X <sub>K</sub>*,*Y <sub>K</sub>*,*Z <sub>K</sub>* ) che riduce al minimo la funzione obiettivo seguente:
 
-Quando viene sottratto dalle misurazioni XYZ non elaborate, una situazione tipica è illustrata nella figura 2. I punti di TImpossibile sono ora raggruppati in tre centri, sebbene non rientrino in modo identico. Il processo di mediazione descritto per CRT migliora notevolmente i risultati per i monitor LCD.
+![Mostra la funzione obiettivo in cui Sr, Sg e Sb sono il set di punti dati sui canali R, G e B.](images/cdmp-formula1.png)
 
-![Diagramma che mostra un grafico della cromaticità utilizzando dati non elaborati con un punto nero modificato.](images/cdmp-lcd-dmp-figure2.png)
+dove *S <sub>R,</sub>**S <sub>G</sub>* e *S <sub>B</sub>* sono il set di punti dati corrispondenti ai punti sui canali R, G e B. Per qualsiasi set *S* definire:
 
-**Figura 2** : diagramma di cromaticità con i dati con punto nero modificato
+![Mostra una formula per definire qualsiasi set S.](images/cdmp-formula2.png)
 
-### <a name="rgb-capture-device-model-baseline"></a>Linea di base modello di acquisizione RGB
+Nel precedente, \| *S* \| è la cardinalità di *S*, ad esempio il numero di punti nel set S . ![ Mostra una formula per la cromaticità di un punto.](images/cdmp-formula3.png) è le coordinate di cromaticità del punto ![ Mostra una formaula per un punto.](images/cdmp-formula4.png) , quindi Mostra una formula per la media o il centro della massa. , è la media, o il centro della massa, di tutti i punti del set S nel piano ![ ](images/cdmp-formula5.png) di cromaticità.  Mostra quindi ![ una formula per la somma di un secondo istante di punti.](images/cdmp-formula6.png) è la somma dei secondi momenti dei punti relativi al centro della massa ed è una misura della distribuzione dei punti. Infine, ![ mostra una formula per la misura totale della distribuzione di tre cluster di punti.](images/cdmp-formula7.png) è una misura totale della distribuzione dei tre cluster di punti sui rispettivi centri di massa.
 
-Il modello di dispositivo di acquisizione RGB di base è una sottoclasse della classe IDeviceModel. Nella caratterizzazione colorimetrico dei dispositivi di acquisizione dei colori, ad esempio scanner e fotocamere digitali, viene usato l'approccio seguente. Una destinazione costituita da patch di colore con valori CIE XYZ noti viene acquisita usando il dispositivo di acquisizione. Il risultato dell'acquisizione è un'immagine bitmap RGB in cui il colore di ogni patch è codificato in un valore RGB. Questi valori RGB del dispositivo sono specifici di un dispositivo di acquisizione specifico. L'obiettivo della caratterizzazione colorimetrico è stabilire una relazione empirica tra i valori RGB del dispositivo e i valori CIE XYZ o una trasformazione matematica da RGB a XYZ che modella il più accuratamente possibile il comportamento del dispositivo di acquisizione.
+Nel calcolo di ![ Mostra una formula di f(X,Y,Z; Xk, Yk, Zk).](images/cdmp-formula8.png) , se ![ mostra una formula per X. , il calcolo viene ignorato e la ](images/cdmp-formula9.png) cardinalità di *S* viene modificata di conseguenza.
 
-Una trasformazione matematica di questo tipo può essere modellata ragionevolmente da polinomi di basso livello. Questa procedura è descritta in dettaglio in letteratura, ad esempio Kang \[ 92 \] , Kang \[ 97 \] . In Kang \[ 97 \] viene segnalato un approccio che usa un set di tre polinomi con 3, 6, 8, 9, 11, 14 o 20 termini nelle variabili R, G e B, mentre i tre polinomi regressione rispettivamente nei componenti X, Y, Z dello spazio CIE XYZ. Per il polinomio a 20 termini, il formato è:
+Nonostante l'apparente complessità della funzione obiettivo, è una somma dei quadrati di molte funzioni differenziali in *X <sub>K,</sub>**Y <sub>K</sub>Z <sub>K</sub>* (17 punti 2 *xy* -components 3 canali = 102, nell'esempio) e, di conseguenza, è utilizzabile per tecniche di minimo quadrato non lineare standard, ad esempio l'algoritmo Levenberg-Marquardt, che è l'algoritmo usato in WCS. Si noti che la funzione obiettivo precedente è diversa da quella suggerita in Berna 3, in quanto quest'ultima funzione misura la varianza delle distanze dal centro della massa, in modo che la varianza sia zero quando i punti sono \[ equidistanti dal centro della massa, anche se possono estendersi \] leggermente. Nell'esempio la dispersione dei punti viene contollata direttamente usando i secondi momenti.
+
+Come per qualsiasi algoritmo iterativo per il problema dei quadrati meno lineari, Levenberg-Marquardt un'ipotesi iniziale. Esistono due candidati ovvi. Uno è (0, 0, 0); l'altro è il punto nero misurato. Per la CTE, il punto nero misurato viene usato per la prima volta come ipotesi iniziale. Se viene superato un massimo di 100 iterazioni senza raggiungere una soglia di una distanza media di 0,0001 di ogni punto dal centro di massa (che corrisponde a un valore soglia pari a (0,001) 17 3 = 0,000051 per la funzione obiettivo, viene eseguito un altro round di iterazioni con l'ipotesi iniziale (0, 0, 0). La stima risultante del punto nero è XYZ rispetto alla stima migliore del round precedente di iterazioni (con il punto nero misurato come ipotesi iniziale). Usare la stima che fornisce il valore più piccolo per la funzione obiettivo. La scelta di 100 iterazioni e la distanza di errore di 0,001 sono state selezionate empiricamente. Nelle versioni future potrebbe essere ragionevole parametrizzare la distanza di errore.
+
+Il risultato del primo passaggio è il punto nero stimato ( *X <sub>K,</sub>**Y <sub>K,</sub>**Z <sub>K</sub>* ). Il passaggio 2 consiste nel determinare la matrice tristimulus mediando la cromaticità dei punti nei tre cluster ottenuti nel primo passaggio. Per i CRT, questa operazione viene eseguita principalmente per ridurre al minimo gli effetti degli errori di misurazione. I punti usati nella media della cromaticità devono essere gli stessi usati nell'ottimizzazione nel primo passaggio. In altre parole, se il primo punto (numero digitale 15, nell'esempio) in ogni rampa viene eliminato nel passaggio di ottimizzazione, è necessario eseguire la stessa operazione nella media. Se ![ mostra formule di cromaticità media per le coordinate nei canali rosso e verde.](images/cdmp-formula10.png) e ![ Mostra una formula di cromaticità media per le coordinate nel canale blu.](images/cdmp-formula11.png) sono le coordinate di cromaticità medie dei canali rosso, verde e blu, quindi la procedura seguente determina la matrice tristimulus. Prima di tutto, risolvere il sistema lineare 3?3:
+
+![Mostra la prima parte della procedura per risolvere un sistema lineare 3?3.](images/cdmp-formula12.png)
+
+![Mostra la seconda parte del sistema lineare 3?3.](images/cdmp-formula13.gif)![Visualizzare il valore t pscript b alla fine della seconda parte del sistema lineare 3?3.](images/cdmp-formula14.gif)
+
+*X <sub>W,</sub>**Y <sub>W,</sub>**Z <sub>W</sub>*
+
+![Mostra la parte finale della procedura per risolvere un sistema lineare 3?3.](images/cdmp-formula15.png)
+
+Dopo aver determinato la matrice tristimulus, la determinazione delle curve del tono segue l'approccio standard. Per i display CRT, si presuppone che i singoli canali seguano il modello "GOG":
+
+![Mostra la formula per il modello "G O G".](images/cdmp-formula16.png)
+
+dove *k <sub>g</sub>* è il "guadagno", 1 -*k g <sub>è</sub>* l'"offset" e ? è il valore "gamma". La matrice inversa della matrice tristimulus viene applicata ai dati XYZ dei neutri per ottenere i dati RGB lineari, che vengono quindi correlati ai valori RGB digitali usando la regressione non lineare nel modello GOG. Queste caratteristiche non devono essere le stesse per i canali R, G e B e in genere non sono uguali.
+
+Berns \[ \] 1: Berns, *Billmeyer e Saltzman's Principles of Color Technology*, 3 <sub>rd</sub> Ed. John Wiley & i figli (2000).
+
+Berns 2: Berns e Katoh, Funzione di trasferimento da digitale a radiometrico per schermi CRT controllati dal \[ \] computer, *CIE Expert Symposium '97 Color Standards for Imaging Technology,* novembre 1997.
+
+Berns 3: Berns, Fernandez e Taplin, Stima delle Black-Level emissioni di \[ \] Computer-Controlled Displays, Color Research and *Application*, 28: 379-383 Wiley Periodicals, Inc. (2003)
+
+Kang \[ \] 1: Kang, *Color Technology for Electronic Imaging Devices*, SPIE (1997)
+
+Katoh 1: Katoh, Deguchi e Berns, Una descrizione accurata della proposta di monitoraggio CRT (II) per un'estensione al metodo CIE e la relativa \[ \] verifica, *Opt. Rev.* 8: 397-408 (2001)
+
+### <a name="lcd-device-model-baseline"></a>Baseline del modello di dispositivo LCD
+
+La baseline del modello di dispositivo LCD è simile alla baseline del modello di dispositivo CRT. Questa sezione illustra i modi in cui la modellazione LCD differisce dalla modellazione CRT.
+
+Una differenza è che non è possibile presupporre che i display LCD seguano il modello GOG usato per i CRT e che le curve del tono siano ottenute dall'interpolazione dei dati misurati. Per questo, l'asse neutro del dispositivo deve essere campionato più frequentemente.
+
+Ecco alcuni valori di esempio tipici che possono generare dati validi per la baseline del modello di dispositivo LCD:
+
+Rosso: R = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, G = B = 0
+
+Verde: G = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, R = B = 0
+
+Blu: B = 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, R = G = 0
+
+Neutrali: R = G = B = 0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255.
+
+Il processo di media delle cromatiche dei colori misurate per ottenere le cromatiche per le primarie dei dispositivi è più critico per le unità LCD rispetto ai CRT. Quando le misurazioni XYZ vengono tracciate sul piano *xy* della cromaticità, nella figura 1 viene illustrata una situazione tipica. Si noti come la cromaticità si sposta verso il punto nero. Ciò è dovuto al fatto che tutti i led hanno una certa quantità di perdita di luce.
+
+![Diagramma che mostra un grafico della cromaticità usando dati non elaborati senza correzione.](images/cdmp-lcd-dmp-figure1.png)
+
+**Figura 1:** Diagramma di cromaticità che usa dati non elaborati senza correzione
+
+Quando viene sottratto dalle misurazioni XYZ non elaborate, nella figura 2 viene illustrata una situazione tipica. I punti sono ora raggruppati su tre centri, anche se non rientrano in modo identico. Il processo di media descritto per i CRT migliora notevolmente i risultati per i CCD.
+
+![Diagramma che mostra un grafico della cromaticità usando dati non elaborati con un punto nero regolato.](images/cdmp-lcd-dmp-figure2.png)
+
+**Figura 2:** Diagramma di cromaticità con dati con punto nero regolato
+
+### <a name="rgb-capture-device-model-baseline"></a>Baseline del modello di dispositivo di acquisizione RGB
+
+Il modello di dispositivo di acquisizione RGB di base è una sottoclasse della classe IDeviceModel. Nella caratterizzazione colorimetrica dei dispositivi di acquisizione colori, ad esempio scanner e fotocamere digitali, viene usato l'approccio seguente. Una destinazione costituita da patch di colore con valori CIEXYZ noti viene acquisita usando il dispositivo di acquisizione. Il risultato dell'acquisizione è un'immagine bitmap RGB in cui il colore di ogni patch viene codificato in un valore RGB. Questi valori RGB del dispositivo sono specifici di un particolare dispositivo di acquisizione. L'obiettivo della caratterizzazione colorimetrica è stabilire una relazione empirica tra i valori RGB del dispositivo e i valori CIEXYZ o una trasformazione matematica da RGB a XYZ che modella nel modo più accurato possibile il comportamento del dispositivo di acquisizione.
+
+Una trasformazione matematica di questo tipo può essere modellata ragionevolmente da polinomi di gradi bassi. Questa procedura è descritta in dettaglio nella documentazione, ad esempio Kang \[ 92 \] , Kang \[ 97 \] . In Kang 97 viene segnalato un approccio che usa un set di tre \[ \] polinomi con 3, 6, 8, 9, 11, 14 o 20 termini nelle variabili R, G e B, mentre i tre polinomi regrediscono rispettivamente nei componenti X, Y, Z dello spazio CIEXYZ. Per il polinomio a 20 termini, il formato è:
 
 ![Mostra il polinomio a 20 termini.](images/cdmp-formula20.png)
 
-Sono presenti espressioni simili per Y e Z. La tecnica matematica per l'adattamento dei polinomi rientra in "regressione lineare multivariata" ed è descritta in qualsiasi testo elementare in Statistics.
+Esistono espressioni simili per Y e Z. La tecnica matematica per adattare i polinomi rientra nella "regressione lineare multivariata" ed è descritta in qualsiasi testo elementare in Statistiche.
 
-Questo metodo di regressione lineare soffre di non ridurre al minimo la funzione dell'obiettivo "Right". Per impostazione predefinita, la regressione lineare trova la soluzione dei minimi quadrati, che implica che i coefficienti ottenuti ridurranno al minimo la somma totale dei quadrati di errori nello spazio sottostante, o in modo equivalente, la somma dei quadrati delle distanze euclidee. In pratica, si vuole ridurre al minimo la somma dei quadrati di? Es, dove? E è uno degli standard accettati, ad esempio CIE94. La riduzione di questa funzione oggettiva è un problema di regressione non lineare.
+Questo metodo di regressione lineare non riduce al minimo la funzione obiettivo "giusta". Per impostazione predefinita, la regressione lineare trova la soluzione con i minimi quadrati, il che implica che i coefficienti ottenuti ridurranno al minimo la somma totale dei quadrati di errori nello spazio sottostante o, in modo equivalente, la somma dei quadrati delle distanze euclidee. In pratica, si vuole ridurre al minimo la somma dei quadrati di ? Es, dove ? E è uno degli standard accettati, ad esempio CIE94. Ridurre al minimo questa funzione obiettivo è un problema di regressione non lineare.
 
-Nel nuovo motore, Lab per XYZ è lo spazio dei colori CIE in cui viene regressione e viene usato il polinomiale cubico a 20 termini come modello per il dispositivo di acquisizione, o coefficienti ls, come, BS, in modo che i polinomi seguenti riducano al minimo la somma dei quadrati di? E <sub>CIE94</sub> .
+Nel nuovo motore, da Lab a XYZ è lo spazio colore CIE in cui viene regredita e il polinomio cubico a 20 termini viene usato come modello per il dispositivo di acquisizione, o coefficienti ls,as,bs in modo che i polinomi seguenti minimizzino la somma dei quadrati di ? E <sub>CIE94</sub> s.
 
 ![Mostra un set di formule polinomiali.](images/cdmp-formula21.png)
 
-La soluzione ( *l <sub>i</sub>*, *a <sub>i</sub>*, *b <sub>i</sub>* ) nello spazio numerico reale 60 dimensionale **R** 203 deve essere tale che l'errore totale seguente sia ridotto a icona:
+La soluzione ( *l <sub>i</sub>*, *a <sub>i</sub>*, *b <sub>i</sub>* ) nello spazio numerico reale 60 **dimensionale R** 203 deve essere tale che l'errore totale seguente sia ridotto al minimo:
 
-![Mostra l'errore totale da ridurre a icona.](images/cdmp-formula22.png)
+![Mostra l'errore totale da ridurre al minimo.](images/cdmp-formula22.png)
 
-dove la sommatoria è attraverso tutte le coppie di punti dati (*R <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>*;*L <sub>i</sub>*,*u <sub>i</sub>*,*v <sub>i</sub>* ) nel set di dati campionati più punti di controllo aggiuntivi per essere descritti in dettaglio nell'esempio riportato di seguito. Si tratta di un problema di regressione non lineare perché i parametri *?<sub> i</sub>*, *a <sub>i</sub>*, * <sub>i</sub>* entri nella funzione objective in modo non lineare (non quadratico).
+dove la somma è tramite tutte le coppie di punti dati (*R <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>*;*L <sub>i</sub>*,*u <sub>i</sub>*,*v <sub>i</sub>* ) nel set di dati campionati e altri punti di controllo da visualizzare in dettaglio di seguito. Si tratta di un problema di regressione non lineare perché i parametri *?<sub> i</sub>*, *a <sub>i</sub>*, * <sub>i</sub>* entrano nella funzione obiettivo in modo non lineare (non quadraticamente).
 
-Poiché la funzione Objective? è una funzione non lineare (e non quadratica) dei parametri *?<sub> i</sub>*, *a <sub>i</sub>* e * <sub>i</sub>* è necessario ricorrere a tecniche iterative per risolvere il problema di ottimizzazione. Poiché il form della funzione Objective è una somma di quadrati, viene usata una tecnica di ottimizzazione standard denominata Levenberg-Marquardt algoritmo. Viene considerato il metodo preferito per i problemi non lineari con i minimi quadrati. Per gli algoritmi iterativi come Levenberg-Marquardt, è necessario fornire una supposizione iniziale. Una buona supposizione iniziale è in genere cruciale nell'individuare il valore minimo corretto. In questo caso, un candidato valido per l'ipotesi iniziale è la soluzione del problema di regressione lineare. Per prima cosa, ridurre al minimo la somma del quadrato delle distanze euclidee nello spazio Lab definendo una funzione di obiettivo quadratico:
+Poiché la funzione obiettivo ? è una funzione non lineare (e nonquadratica) dei parametri *?<sub> i</sub>*, *a <sub>i</sub>* e * <sub>i</sub>*, è necessario ricorrere a tecniche iterative per risolvere il problema di ottimizzazione. Poiché la forma della funzione obiettivo è una somma di quadrati, viene usata una tecnica di ottimizzazione standard denominata Levenberg-Marquardt algoritmo. È considerato il metodo scelto per i problemi dei quadrati meno lineari. Per gli algoritmi iterativi, ad esempio Levenberg-Marquardt, è necessario specificare un'ipotesi iniziale. Una buona ipotesi iniziale è in genere fondamentale per trovare il valore minimo corretto. In questo caso, un buon candidato per l'ipotesi iniziale è la soluzione del problema della regressione lineare. Per prima cosa, ridurre al minimo la somma del quadrato delle distanze euclidee nello spazio lab, definendo una funzione obiettivo quadratica:
 
-![Mostra una funzione dell'obiettivo quadratico definita.](images/cdmp-formula23.png)
+![Mostra una funzione obiettivo quadratica definita.](images/cdmp-formula23.png)
 
-La soluzione matematica a questo problema "lineare con i minimi quadrati" è nota. Perché *?<sub></sub>viene visualizzato solo nella* modellazione *L* , *a <sub>i</sub>* viene visualizzato solo nella modellazione *u* e * <sub>i</sub>* viene visualizzato solo nella modellazione *v* ; il problema di ottimizzazione può essere scomposto in tre problemi, uno per *L*, uno per *u* e uno per *v*. Prendere in considerazione le equazioni *L* . (Le equazioni *u* e le equazioni *v* seguono esattamente lo stesso argomento). Il problema di ridurre al minimo la somma dei quadrati di errori in *L* può essere dichiarato come la risoluzione dell'equazione di matrice seguente nel senso minimo dei quadrati:
+La soluzione matematica a questo problema "linear least squares" è ben nota. Perché *?<sub> i</sub>* viene visualizzato solo nella modellazione *L,* *<sub>i</sub>* viene visualizzato solo nella *modellazione u* e * <sub>i</sub>* viene visualizzato solo nella *modellazione v.* il problema di ottimizzazione può essere scomposto in tre sottoproblemi: uno per *L*, uno per *u* e uno per *v*. Si *considerino le equazioni L.* Le *equazioni u* e *le equazioni v* seguono esattamente lo stesso argomento. Il problema di ridurre al minimo la somma di quadrati di errori in *L* può essere dichiarato come risolvere l'equazione di matrice seguente nel senso dei minimi quadrati:
 
-![Mostra un'equazione della matrice per L.](images/cdmp-formula24.png)
+![Mostra un'equazione di matrice per L.](images/cdmp-formula24.png)
 
-dove *N* è il numero totale di punti dati (punti campionati originali più punti di controllo creati in un modo descritto di seguito). In genere, *N* è molto più grande di 20, quindi l'equazione precedente è troppo determinata, richiedendo una soluzione con almeno quadrati. Una soluzione form chiusa per **?** disponibile:
+dove *N* è il numero totale di punti dati (punti campionati originali più punti di controllo creati nel modo descritto di seguito). In genere, *N* è molto più grande di 20, quindi l'equazione precedente è troppo determinata e richiede una soluzione con meno quadrati. Una soluzione in forma chiusa per **?** è disponibile:
 
-![Mostra una soluzione form chiusa.](images/cdmp-formula25.png)
+![Mostra una soluzione in formato chiuso.](images/cdmp-formula25.png)
 
-In pratica, la valutazione diretta tramite la soluzione modulo chiuso non viene utilizzata perché contiene proprietà numeriche scarse. Al contrario, un tipo di algoritmo di factorzzazione della matrice viene applicato alla matrice coefficiente, che riduce il sistema di equazioni a una forma canonica. Nell'implementazione corrente, la scomposizione di valori singolari (SVD) viene applicata alla matrice **R** e quindi il sistema decomposto risultante viene risolto.
+In pratica, la valutazione diretta tramite la soluzione modulo chiuso non viene usata perché ha proprietà numeriche scadente. Viene invece applicato un tipo di algoritmo di fattorizzazione della matrice alla matrice di coefficienti che riduce il sistema di equazioni in forma canonica. Nell'implementazione corrente, SVD (Singular Value Decomposition) viene applicato alla matrice **R** e quindi il sistema scomposto risultante viene risolto.
 
-La soluzione per il problema di regressione lineare, indicata da, ![ Mostra la soluzione al problema di regressione lineare.](images/cdmp-formula26.png) , viene usato come punto iniziale dell'algoritmo Levenberg-Marquardt. In questo algoritmo viene calcolato un passaggio di valutazione che dovrebbe spostare il punto più vicino alla soluzione ottimale. Il passaggio di valutazione soddisfa un set di equazioni lineari che dipendono dal valore funzionale e dai valori dei derivati nel punto corrente. Per questo motivo, i derivati della funzione Objective? per quanto riguarda i parametri *?<sub> i</sub>*, *i <sub></sub> <sub></sub> sono gli* input obbligatori per l'algoritmo Levenberg-Marquardt. Sebbene esistano 60 parametri, è disponibile un collegamento che consente di calcolare un numero molto inferiore. Dalla regola della catena di calcolo,
+La soluzione al problema di regressione lineare, indicato da ![ Mostra la soluzione al problema di regressione lineare.](images/cdmp-formula26.png) , viene usato come punto di partenza dell'algoritmo Levenberg-Marquardt. In questo algoritmo viene calcolato un passaggio di valutazione che dovrebbe avvicinare il punto alla soluzione ottimale. Il passaggio di valutazione soddisfa un set di equazioni lineari dipendenti dal valore funzionale e dai valori dei derivati nel punto corrente. Per questo motivo, i derivati della funzione obiettivo ? rispetto ai parametri *?<sub> i</sub>*, *i <sub>i</sub> <sub>sono</sub>* input obbligatori per l'algoritmo Levenberg-Marquardt. Anche se sono presenti 60 parametri, esiste un collegamento che consente di calcolare molto meno. In base alla regola di calcolo della catena,
 
-![Mostra un'equazione che consente un collegamento usando la regola della catena di calcolo.](images/cdmp-formula27.png)
+![Mostra un'equazione che consente un collegamento usando la regola di calcolo a catena.](images/cdmp-formula27.png)
 
-dove *j* = 1, 2,, 20, *L <sub>i</sub>*,*u <sub></sub>* i,*v <sub>i</sub>* è il valore CIELAB del punto di campionamento *i* , e *R <sub>IJ</sub>* è la voce *(i*,*j* ) della matrice **r** definita sopra. Quindi, invece di calcolare i derivati per i parametri di 60, è possibile calcolare i derivati per *L*,*a* e *b* usando le differenze di avanzamento numerico.
+dove *j* = 1, 2, , 20, *L <sub>i</sub>*,*u <sub>i</sub>*,*v <sub>i</sub>* sono il valore CIELAB del punto di campionamento *i* e *R <sub>ij</sub>* è la (*i*,*j* )th entry della matrice **R** definita in precedenza. Invece di calcolare i derivati per 60 parametri, è quindi possibile calcolare i derivati *per L*,*a* e *b* usando la differenza numerica in avanti.
 
-È anche necessario impostare un criterio di arresto per gli algoritmi iterativi. Nell'implementazione corrente, le iterazioni vengono interrotte se il DECIE94 quadrato medio è minore di 1 oppure il numero di iterazioni eseguite ha superato 10. Il numero 10 deriva dall'esperienza pratica che se le prime iterazioni non riducono significativamente l'errore, altre iterazioni non aiuteranno molto oltre lo scorrimento del punto in modo oscillante, ovvero l'algoritmo potrebbe non essere convergente. Anche nel caso in cui l'algoritmo si differenzia, è possibile verificare che il DECIE94 non sia peggiore rispetto a quello iniziato, ovvero con i parametri ottenuti dalla regressione lineare.
+È anche necessario impostare un criterio di arresto per gli algoritmi iterativi. Nell'implementazione corrente le iterazioni vengono terminate se il valore di DECIE94 quadrato medio è minore di 1 o se il numero di iterazioni eseguite ha superato 10. Il numero 10 deriva dall'esperienza pratica che se le prime iterazioni non riducono in modo significativo l'errore, altre iterazioni non potrebbero essere molto utili se non spostare il punto in modo oscillatore, ad esempio l'algoritmo potrebbe non convergere. Anche nel caso in cui l'algoritmo diverga, è possibile essere certi che DECIE94 non sia peggiore di quello che è stato avviato, ad esempio con i parametri ottenuti dalla regressione lineare.
 
-Anche con il metodo precedente di regressione non lineare, esistono diversi problemi con l'adattamento. Un problema consiste nel fatto che i polinomi tendono a superare o sottobattere i punti dati. Le massime e minime locali artificiali possono essere introdotte nel processo di adattamento. Questa operazione può essere neutralizzata usando polinomi di basso livello, motivo per cui non è consigliabile usare più di tre gradi. Un aspetto più grave dell'Overshooting o dell'abbattimento è che, mentre un polinomiale può assumere un valore reale teoricamente, lo spazio che tenta di modellare in genere presenta vincoli fisici e pratici. CIE XYZ deve avere tutti i X, Y, Z non negativi, che è un vincolo fisico. In pratica, accettano solo valori nella grandezza di centinaia, non di migliaia o superiori. Analogamente, CIELAB o CIELUV presenta vincoli fisici e pratici. Quando lo spazio RGB viene riempito sufficientemente con i punti di campionamento, il problema dell'Overshooting o dell'overshooting non è grave. Tuttavia, i punti RGB acquisiti dal dispositivo di acquisizione in genere non riempiono lo spazio RGB in modo uniforme. I punti possono riempirsi solo interno del 80% del cubo RGB, o peggiori, possono trovarsi in un collettore di dimensioni inferiori. Quando si verifica questo problema, i polinomi regressione possono eseguire un processo scadente per estrapolare i valori oltre i punti dati, a volte restituendo stime non realistiche. Si desidera un modello che restituisce sempre valori ragionevolmente realistici. Questa operazione richiede un metodo che possa controllare in modo efficace il comportamento dei limiti dei polinomi di regressione imponendo un costo aggiuntivo per i polinomi che si comportano in modo irregolare vicino al limite del cubo RGB. Un'ulteriore misura per assicurarsi che i polinomi restituiscano sempre i valori realistici vengono applicati ritagliando l'output all'interno del locus spettrale CIE.
+Anche con il metodo precedente di regressione non lineare, esistono diversi problemi con l'adattamento. Un problema è che i polinomi tendono a superare o sottoshoot oltre i punti dati. Nel processo di adattamento è possibile introdurre maxima e minima locali artificiali. Questa operazione può essere contrastata usando polinomie di basso grado, motivo per cui non è consigliabile usare più di tre gradi. Un aspetto più grave dell'overshooting o dell'undershooting è che, mentre un polinomio può assumere teoricamente qualsiasi valore reale, lo spazio che tenta di modellare ha in genere vincoli fisici e vincoli pratici. CIEXYZ deve avere tutti X, Y, Z non negativi, ovvero un vincolo fisico. In pratica, accettano solo valori di dimensioni di centinaia, non di migliaia o superiori. Analogamente, CIELAB o CIELUV ha vincoli fisici e pratici propri. Quando lo spazio RGB è riempito sufficientemente con punti di campionamento, il problema di overshooting o undershooting non è grave. Tuttavia, i punti RGB acquisiti dal dispositivo di acquisizione non riempiono in genere lo spazio RGB in modo uniforme. I punti possono riempirsi solo all'interno dell'80% del cubo RGB o, in caso contrario, possono risiedere in una varietà dimensionale inferiore. In questo caso, i polinomi regressi possono eseguire un'operazione non accurata nell'estrapolare i valori oltre i punti dati, talvolta restituiscono stime non realistiche. Si vuole un modello che restituisca sempre valori ragionevolmente realistici. Ciò richiede un metodo in grado di controllare in modo efficace il comportamento limite dei polinomi di regressione imponendo costi aggiuntivi ai polinomi che si comportano in modo irregolare vicino al limite del cubo RGB. Un'altra misura per garantire che i polinomi restituiranno sempre valori realistici viene applicata ritagliando l'output all'interno del locus spettrale CIE.
 
-È a questo punto che la modellazione dello scanner e la modellazione della fotocamera divergeno tra loro. Si prevede che il modello di fotocamera venga estrapolato nelle aree oltre i punti campionati, incluse le "evidenziazioni speculari", per il modello di scanner non è necessaria la stessa estrapolazione. Si prevede che la destinazione dello scanner copra una caratterizzazione simile al materiale stampato da analizzare. Il modello dello scanner è ancora necessario per essere affidabile, nel senso che non deve restituire valori non realistici, ma non è necessaria un'estrapolazione ben oltre la destinazione di caratterizzazione. Per garantire l'affidabilità, l'L-polinomiale precedente viene ritagliato a 100, ovvero il modello polinomiale è forzato a non estrapolare oltre "dmin" della destinazione dello scanner.
+È a questo punto che la modellazione dello scanner e la modellazione della fotocamera divergono l'una dall'altra. Si prevede che il modello di fotocamera estrapoli in aree oltre i punti campionati, incluse le "evidenziazioni speculari", la stessa estrapolazione non è necessaria per il modello dello scanner. La destinazione dello scanner deve coprire una caratterizzazione simile ai materiali stampati da analizzare. Il modello dello scanner deve comunque essere affidabile nel senso che non deve restituire valori irrealistici, ma l'estrapolazione ben oltre la destinazione di caratterizzazione non è necessaria. Per garantire la solidità, il polinomio L precedente viene ritagliato a 100, cio' il modello polinomiale viene forzato a non estrapolare oltre "Dmin" della destinazione dello scanner.
 
-Si prevede che il modello di fotocamera venga estrapolato in evidenza speculari, quindi il ritaglio a 100 è indesiderato. Viene invece utilizzato l'algoritmo seguente.
+È previsto che il modello di fotocamera estrapoli le evidenziazioni speculari, quindi il ritaglio a 100 è indesiderato. Viene invece usato l'algoritmo seguente.
 
-I punti di controllo artificiali vengono introdotti per controllare il comportamento dei polinomi in aree con campionamento insufficiente. Inserendo in modo strategico questi punti di controllo con i valori appropriati, questi vengono usati per eseguire il pull dei polinomi nella direzione richiesta. Nell'implementazione corrente, vengono usati otto punti di controllo corrispondenti agli angoli del cubo RGB. Se i valori del dispositivo vengono normalizzati in Unity, questi punti sono:
+Vengono introdotti punti di controllo artificiali per controllare il comportamento dei polinomi nelle aree con campionamento insufficiente. Posizionando strategicamente questi punti di controllo con i valori appropriati, servono a "tirare" i polinomi nella direzione richiesta. Nell'implementazione corrente vengono usati otto punti di controllo corrispondenti agli angoli del cubo RGB. Se i valori del dispositivo vengono normalizzati in unity, questi punti sono:
 
 *R* = 0, *G* = 0, *B* = 0
 
@@ -1037,204 +1037,204 @@ I punti di controllo artificiali vengono introdotti per controllare il comportam
 
 *R* = 1, *G* = 1, *B* = 1
 
-Ad eccezione del bianco *R*  = *G*  = *B* = 1, associato a un valore CIELAB di *L* = 100, *u*  = *v* = 0, viene usato l'algoritmo di estrapolazione seguente per determinare il valore CIELAB appropriato da associare a. In genere, per un determinato (*r*,*g*,*B* ), un peso è associato a ogni (*r <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>* ) nel set di dati campionati. Esistono due obiettivi per assegnare il peso. In primo luogo, il peso è inversamente proporzionale alla distanza tra (*r*,*g*,*b* ) e (*r <sub>i</sub>*,*g <sub>i</sub>*,*b <sub>i</sub>* ). In secondo luogo, si desidera eliminare o assegnare il peso 0 a, punti con una tonalità diversa rispetto al punto specificato (*R*,*G*,*B* ). Per prendere in considerazione la tonalità, considerare i punti che si trovano all'interno di un cono il cui vertice si trova in (0, 0, 0), il cui asse coincide con l'Unione di riga (0, 0, 0) a (*R*,*G*,*B* ) e il cui angolo semi-verticale? soddisfa i cos? = 0,9. Vedere la figura 3 per un'illustrazione di questo cono.
+Ad eccezione del bianco *R* G B = 1, associato a un valore  =   =  CIELAB *di L* = 100, *u* v = 0, viene usato l'algoritmo di estrapolazione seguente per determinare il  =  valore CIELAB appropriato a cui associare. In genere, per un determinato (*R*,*G*,*B* ), un peso è associato a ognuno di (*R <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>* ) nel set di dati campionati. L'assegnazione del peso è di due obiettivi. In primo luogo, il peso è inversamente proporzionale alla distanza tra (*R*,*G*,*B* ) e (*R <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>* ). In secondo piano, si vuole eliminare o assegnare il peso 0 ai punti con una tonalità diversa rispetto al punto specificato (*R*,*G*,*B* ). Per prendere in considerazione la tonalità, prendere in considerazione i punti che si trovano all'interno di un cono il cui vertice è in corrispondenza di (0, 0, 0), il cui asse coincide con l'unione della linea (0, 0, 0) a (*R*,*G*,*B* ) e il cui angolo semi-verticale ? soddisfa cos ? = 0,9. Vedere la figura 3 per un'illustrazione di questo cono.
 
 ![Diagramma che mostra la forma del quartiere.](images/cdmp-lcd-dmp-figure3.png)
 
-**Figura 3** : filtrare i punti di esempio in base all'angolo e alla distanza. La forma del quartiere raffigurato è solo a scopo illustrativo. La forma effettiva dipende dalla distanza utilizzata; si tratta di un quartiere a forma di rombo se si usa la norma 1.
+**Figura 3:** Filtro dei punti di campionamento in base all'angolo e alla distanza. La forma del quartiere rappresentato è solo a scopo illustrativo. La forma effettiva dipende dalla distanza usata. è un quartiere a forma di diamante se viene usata la norma 1.
 
 All'interno di questo cono viene eseguito un secondo filtro basato sulla distanza RGB, che usa la norma 1, definita da
 
 ![Mostra la formula per il secondo filtro all'interno del cono.](images/cdmp-formula28.png)
 
-Con il cono corrente, la ricerca iniziale è per i punti che si trovano all'interno di una distanza di 0,1 da (*R*,*G*,*B* ). Se non viene trovato alcun punto all'interno di questo raggio, il raggio viene aumentato di 0,1 e la ricerca viene riavviata. Se le reti tonde successive non sono punti, il raggio viene aumentato di 0,1. Questo processo continua fino a quando il raggio supera MaxDist/5, dove MaxDist = 3, nel caso di 1-Norm. Se non viene trovato alcun punto, il cono viene ingrandito diminuendo la cos? per 0,05, ovvero l'aumento dell'angolo? e riavviare l'intero processo con un raggio crescente. Questo processo continua fino a quando non viene trovato un set di punti non vuoto o cos? raggiunge 0, ovvero il cono si è aperto per diventare un piano. A questo punto, la ricerca viene riavviata aumentando il raggio, ad eccezione del fatto che la ricerca continua fino a quando il raggio raggiunge MaxDist. In questo modo si garantisce che nello scenario peggiore verrà trovato un set di punti non vuoto. L'algoritmo viene riepilogato nel diagramma di flusso della figura 4.
+Con il cono corrente, la ricerca iniziale è per i punti che si trova a una distanza di 0,1 da (*R*,*G*,*B* ). Se non viene trovato alcun punto all'interno di questo raggio, il raggio viene aumentato di 0,1 e la ricerca viene riavviata. Se la rete arrotondata successiva non ha alcun punto, il raggio viene aumentato di 0,1. Questo processo continua fino a quando il raggio non supera MaxDist/5, dove MaxDist = 3, nel caso di 1 norma. Se non viene trovato alcun punto, il cono viene ingrandito diminuendo il cos ? di 0,05, cio' aumentando l'angolo? e riavviando l'intero processo con un raggio crescente. Questo processo continua fino a quando non viene trovato un set non vuoto di punti o cos ? raggiunge 0, cio' il cono si è aperto per diventare un piano. A questo punto, la ricerca viene riavviata aumentando il raggio, ad eccezione del fatto che la ricerca continua fino a quando il raggio non raggiunge MaxDist. Ciò garantisce che nello scenario peggiore, verrà trovato un set non vuoto di punti. L'algoritmo è riepilogato nel diagramma di flusso nella figura 4.
 
 ![Diagramma che mostra il flusso dell'algoritmo.](images/cdmp-lcd-dmp-figure4.png)
 
-**Figura 4** : diagramma di flusso per determinare il set di punti di esempio usati nell'estrapolazione per un valore RGB di input
+**Figura 4:** diagramma Flow per determinare il set S di punti di campionamento usato nell'estrapolazione per un valore RGB di input
 
-Supponendo che il processo precedente restituisca *un set di* punti non vuoto (*R <sub>i</sub>*,*G <sub>i</sub>*,*b <sub>i</sub>* ) e corrispondente (*L <sub>i</sub>*,*a <sub>i</sub>*,*b <sub>i</sub>* ), quindi per ogni punto, viene assegnato un peso *w <sub>i</sub>* , fornito da
+Supponendo che il processo precedente restituisce un set non vuoto *S* di punti (*R <sub>i</sub>*,*G <sub>i</sub>*,*B <sub>i</sub>* ) e corrispondente (*L <sub>i</sub>*,*a <sub>i</sub>*,*b <sub>i</sub>* ), quindi per ogni punto di questo tipo viene assegnato un peso *w <sub>i,</sub>* dato da
 
 ![Mostra la formula per un peso per ogni punto.](images/cdmp-formula29.png)
 
-Infine, extrapolant è definito da
+Infine, l'estrapolante è definito da
 
-![Mostra la definizione di extrapolant.](images/cdmp-formula30.png)
+![Mostra la definizione per l'estrapolante.](images/cdmp-formula30.png)
 
-Le equazioni precedenti costituiscono un'istanza dei "Metodi ponderati per la distanza inversa", comunemente detti metodi Shepard. Eseguendo ognuno degli otto punti da EQ (6) attraverso l'algoritmo, vengono ottenuti otto punti di controllo, ognuno con i valori *R*,*G*,*B* e *L*,*a*,*b* , che vengono inseriti nel pool con i dati di esempio originali.
+Le equazioni precedenti costituiscono un'istanza dei "metodi ponderati a distanza inversa", comunemente denominati metodi Shepard. Eseguendo ognuno degli otto punti da eq (6) tramite l'algoritmo, vengono ottenuti otto punti di controllo, ognuno con *I,**G,**B* e *L*,*un* valore ,*b,* che vengono inseriti nel pool con i dati di esempio originali.
 
-Per assicurarsi che il modello produca sempre valori di colore validi e per l'integrità del sistema e la stabilità dell'intera pipeline di elaborazione dei colori, è necessario eseguire un ritaglio finale all'output del modello polinomiale. La gamma di oggetti visivi CIE è descritta dal componente acromatico (*Y* o *L* ) e dal componente cromatico (*XY* o *a'b '*, correlati allo spazio XYZ da una trasformazione proiettiva). Nell'implementazione corrente viene usata la cromaticità *a'b* , in quanto è direttamente correlata allo spazio CIELUV. Per qualsiasi valore *CIELAB* , prima ritagliare *L* su un valore non negativo:
+Per garantire che il modello produca sempre valori di colore validi e per l'integrità e la stabilità del sistema nell'intera pipeline di elaborazione dei colori, è necessario eseguire un ritaglio finale nell'output del modello polinomiale. La gamut visiva CIE è descritta dal componente acromatico (*Y* o *L* ) e dal componente cromatico (*xy* o *a'b',* che sono correlati allo spazio XYZ da una trasformazione proiettativa). Nell'implementazione corrente viene usata la cromaticità *a'b'* perché è direttamente correlata allo spazio CIELUV. Per qualsiasi *valore CIELAB,* ritagliare *prima L* in un valore non negativo:
 
-![Mostra il ritaglio di L a un valore non negativo.](images/cdmp-formula31.png)
+![Mostra il ritaglio di L in un valore non negativo.](images/cdmp-formula31.png)
 
-Per consentire l'estrapolazione per le evidenziazioni speculari, *L* non viene ritagliato a 100, il limite superiore "convenzionale" per *l* nello spazio Lab.
+Per consentire l'estrapolazione per le evidenziazioni speculari, *L* non viene ritagliato a 100, il limite superiore "convenzionale" per *L* nello spazio lab.
 
-Successivamente, se *L* = 0, *a* e *b* vengono ritagliati in modo che a *= b =* 0. Se *L* ? 0, calcola
+Successivamente, se *L* = 0, *a* e *b* vengono ritagliati in modo che a =*b =* 0. Se *L* ? 0, calcola
 
-![Mostra la formula se L = 0.](images/cdmp-formula32.png)
+![Visualizza la formula se L=0.](images/cdmp-formula32.png)
 
-Questi sono i componenti di un vettore nel diagramma *a'b* dal punto bianco (*u?'*,*v?'* ) per il colore in questione. Definire il locus spettrale CIE come struttura convessa di tutti i punti (*a'*,*b '* ) con parametri per la lunghezza?:
+Questi sono i componenti di un vettore nel diagramma *a'b'* dal punto bianco (*u?'*,*v?'* ) al colore in questione. Definire il locus spettrale CIE come scafo convesso di tutti i punti (*a'*,*b'* ), parametrizzato dalla lunghezza d'onda ?:
 
-![Mostra la formula per la lunghezza.](images/cdmp-formula33.png)
+![Mostra la formula per la lunghezza d'onda.](images/cdmp-formula33.png)
 
-dove ![ Mostra le funzioni per la corrispondenza dei colori CIE.](images/cdmp-formula34.png) sono le funzioni di corrispondenza dei colori CIE per l'osservatore di 2 gradi. Se il vettore si trova al di fuori del locus CIE, il colore viene ritagliato fino al punto nel locus CIE che rappresenta l'intersezione tra il locus e la riga definita dal vettore. Vedere Figura 5. Se si è verificato il ritaglio, il valore *a* e *b* viene ricostruito prima sottraendo *un?'* e *b? "* dal troncato *a "* e *b"*, quindi moltiplicando per 13 *L*.
+dove ![ Mostra le funzioni per la corrispondenza dei colori CIE.](images/cdmp-formula34.png) sono le funzioni di corrispondenza dei colori CIE per l'osservatore a 2 gradi. Se il vettore si trova all'esterno del locus CIE, il colore viene ritagliato fino al punto del locus CIE che rappresenta l'intersezione del locus e della linea definita dal vettore. Vedere Figura 5. Se si è verificato un ritaglio, il *valore a* *e b* viene ricostruito sottraendo prima *a?'* e *b?'* dall'oggetto *ritagliato a'* *e b'* e quindi moltiplicato per 13 *L.*
 
 ![Diagramma che mostra il grafico per l'algoritmo di ritaglio.](images/cdmp-lcd-dmp-figure5.png)
 
-**Figura 5** : algoritmo di ritaglio per i valori Lab esterni al gamut visivo Cie
+**Figura 5:** Algoritmo di ritaglio per i valori lab esterni alla gamma di oggetti visivi CIE
 
-Nell'implementazione corrente, il locus spettrale CIE nel piano *a'b* è rappresentato da una curva lineare a tratti con segmenti 35 (corrispondenti a una lunghezza compresa tra 360 e 700 nm). Ordinando i segmenti di linea in modo che i rispettivi angoli in base al punto bianco siano in ordine crescente, che equivale a lunghezze d'onda decrescenti, il segmento di linea che si interseca con il raggio formato dal vettore sopra riportato può essere trovato da una semplice ricerca binaria.
+Nell'implementazione corrente, il locus spettrale CIE nel piano *a'b'* è rappresentato da una curva lineare a senso unico con 35 segmenti (corrispondente a una lunghezza d'onda compresa tra 360 nm e 700 nm inclusi). Ordinando i segmenti di linea in modo che gli angoli sottotendati in corrispondenza del punto bianco siano ascendente, che equivale a lunghezze d'onda decrescenti, il segmento di linea che si interseca con il raggio formato dal vettore precedente può essere trovato da una semplice ricerca binaria.
 
-### <a name="rgb-printer-device-model-baseline"></a>Baseline modello dispositivo stampante RGB
+### <a name="rgb-printer-device-model-baseline"></a>Baseline del modello di dispositivo della stampante RGB
 
-Una descrizione del dispositivo di una stampante RGB è costituita dalla creazione di un modello empirico del dispositivo che prevede il colore CIELUV indipendente dal dispositivo per qualsiasi valore RGB specificato
+Una caratterizzazione del dispositivo di una stampante RGB consiste nella costruzione di un modello empirico del dispositivo che stima il colore CIELUV indipendente dal dispositivo per qualsiasi valore RGB specificato
 
-Esistono due modi per costruire il modello empirico. Un modo consiste nell'usare i dati del dispositivo per una stampante RGB e l'altro per usare i dati dei parametri analitici. Nel primo, i dati di misurazione forniti da un utente per un dispositivo di stampa RGB vengono usati per creare la tabella di ricerca 3D (LUT). I dati di misurazione sono costituiti da valori XYZ per le patch RGB campionate in modo uniforme. Le dimensioni di campionamento tipiche sono 9 o 17 per ogni componente. Ogni patch viene misurata con un colorimetro o uno spettrofotometro nello spazio CIE XYZ. Il valore XYZ per una patch viene quindi convertito in valore CIELUV, formando un LUT 3D. Nel modello di dispositivo, il metodo di interpolazione tetraedrica di Sakamoto viene applicato al LUT 3D per stimare i dati CIELUV per i dati RGB specificati. (Conferisce il brevetto US 4275413 (Sakamoto et al.), US Patent 4511989 (Sakamoto), Kang \[ 1 \] . I due brevetti citati sono scaduti. I dati dei parametri analitici passati nel secondo metodo sono semplicemente un LUT compilato in precedenza. In genere, LUT è stato creato usando il primo metodo, sebbene possa essere creato manualmente.
+Esistono due modi per costruire il modello empirico. Un modo è usare i dati del dispositivo per una stampante RGB e l'altro è usare i dati dei parametri analitici. Nella prima vengono usati i dati di misurazione forniti da un utente per un dispositivo stampante RGB per costruire una tabella di ricerca 3D (LUT). I dati di misurazione sono costituiti da valori XYZ per patch RGB campionate in modo uniforme. Le dimensioni di campionamento tipiche sono 9 o 17 per ogni componente. Ogni patch viene misurata con un colorimetro o uno spettrofotometro nello spazio CIEXYZ. Il valore XYZ per una patch viene quindi convertito in valore CIELUV, formando un LUT 3D. Nel modello di dispositivo, il metodo di interpolazione tetraedrale di Sakamoto viene applicato all'LUT 3D per stimare i dati CIELUV per un dato dato RGB. (Confer US Patent 4275413 (Sakamoto et al.), US Patent 4511989 (Sakamoto), Kang \[ 1 \] . I due brevetti menzionati sono scaduti. I dati dei parametri analitici passati nel secondo metodo sono semplicemente un LUT compilato in precedenza. In genere, tale LUT è stato compilato usando il primo metodo, anche se può essere compilato manualmente.
 
-Nella gestione dei colori corrente la mappa di origine è definita come mappa che passa dallo spazio RGB a uno spazio di colore CIE XYZ indipendente dal dispositivo. La mappa di destinazione viene definita come mappa che passa dallo spazio di colore CIE XYZ indipendente dal dispositivo allo spazio RGB. Si tratta dell'inverso della mappa di origine.
+Nella gestione del colore corrente, il source map definito come mappa che passa dallo spazio RGB a uno spazio colore CIEXYZ indipendente dal dispositivo. La mappa di destinazione è definita come mappa che passa dallo spazio colore CIEXYZ indipendente dal dispositivo allo spazio RGB. È l'inverso del source map.
 
-Il modello empirico viene usato direttamente nella mappa di origine. Esegue prima il mapping di un dato RGB dati in un CIELUV dati, che viene convertito in dati XYZ. Nella mappa di destinazione i dati CIE XYZ indipendenti dal dispositivo vengono prima convertiti in dati di CIELUV. Quindi, il modello empirico e il metodo di Newton-Raphson classico vengono usati per stimare i dati RGB migliori per i dati CIELUV. I dettagli sulla conversione da CieLUV a dati RGB sono i seguenti:
+Il modello empirico viene usato direttamente nel source map. Esegue innanzitutto il mapping di dati RGB in dati CIELUV, che vengono convertiti in dati XYZ. Nella mappa di destinazione i dati CIEXYZ indipendenti dal dispositivo vengono prima convertiti in dati CIELUV. Quindi, il modello empirico e il metodo Newton-Raphson classico vengono usati per stimare i dati RGB migliori per i dati CIELUV. I dettagli sulla conversione da dati CieLUV a RGB sono i seguenti:
 
-Dopo la generazione di un LUT 3D da RGB a CieLUV, la mappa da RGB a LUV viene compilata usando l'interpolazione tetraedrica su RGB. Questa mappa è indicata dalle equazioni seguenti:
+Dopo aver generato un LUT 3D da RGB a CieLUV, la mappa da RGB a LUV viene creata usando l'interpolazione tetraedrale su RGB. Questa mappa è denotata dalle equazioni seguenti:
 
 ![Mostra le equazioni per la mappa da R G B a L U V.](images/cdmp-image125.png)
 
-L'inversione della mappa è costituita dalla risoluzione, per qualsiasi colore ![Mostra L U V.](images/cdmp-image127.png) , il sistema seguente di equazioni non lineari:
+L'inversione della mappa è costituita dalla risoluzione, per qualsiasi colore ![Mostra L U V.](images/cdmp-image127.png) , il sistema di equazioni non lineari seguente:
 
-![Mostra le equazioni non lineari per lolving qualsiasi colore L U V.](images/cdmp-image129.png)
+![Mostra le equazioni non lineari per lolving di qualsiasi colore L U V.](images/cdmp-image129.png)
 
-Nella nuova CTE viene utilizzata un'equazione non lineare basata sul metodo di Newton-Raphson classico. Una supposizione iniziale, o *una precedente* , <sub>prima</sub> di, (R 0, G 0, B 0) viene ottenuta tramite la ricerca di una "matrice di inizializzazione" costituita da una griglia 8x8x8 uniforme di coppie pre-calcolate (RGB, Luv). Viene scelto il Luv corrispondente di RGB più vicino a L \* u \* v \* . Ogni punto della matrice di inizializzazione corrisponde al centro di una cella in modo che le iterazioni non inizino con un punto sulla faccia limite del cubo RGB. In altre parole, l'RGB dei semi viene definito da: STEP = 1/8 s <sub>IJK</sub> = (Step/2 + (i-1) Step, Step/2 + (j-1) STEP, Step/2 + (k-1) Step) with i, j, k = 1... 8 nel passaggio *i* ° di Newton-Raphson, la stima successiva ![ Mostra le variabili per la stima successiva.](images/cdmp-image133.png) viene ottenuto dalla formula:
+Nella nuova CTE viene usata un'equazione non lineare basata sul metodo Newton-Raphson classico. Un'ipotesi iniziale, o *a priori* see, s <sub>prior</sub> -(R 0, G 0, B 0 ) viene ottenuta eseguendo una ricerca in una "matrice di inizializzazione" costituita da una griglia uniforme 8x8x8 di coppie pre-calcolate (RGB, Luv). Viene scelto Luv corrispondente RGB più vicino all'L \* u \* \* v. Ogni punto nella matrice di valori di avviamento corrisponde al centro di una cella in modo che le iterazioni non inizino con un punto sulla faccia limite del cubo RGB. In altre parole, l'RGB dei semi è definito da: STEP = 1/8 s <sub>ijk</sub> = (STEP/2 + (i-1) STEP, STEP/2+(j-1)STEP, STEP/2+(k-1)STEP) with i,j,k = 1...8 At *the i* th step of Newton-Raphson, the next estimate Shows the ![ variables for the next estimate.](images/cdmp-image133.png) viene ottenuto dalla formula:
 
 ![Mostra la formula per la stima.](images/cdmp-image135.png)
 
-L'iterazione si interrompe quando l'errore (distanza nello spazio CIELUV) è inferiore a un livello di tolleranza preimpostato (0,1 nella CTE) o quando il numero di iterazioni ha superato il numero massimo consentito di iterazioni (10 nella CTE). I valori per la tolleranza e il numero di iterazioni sono stati determinati in modo empirico come validi. Nelle versioni future, il valore di tolleranza può essere modificato.
+L'iterazione viene arrestata quando l'errore (distanza nello spazio CIELUV) è minore di un livello di tolleranza pre-impostato (0,1 nella CTE) o quando il numero di iterazioni ha superato il numero massimo consentito di iterazioni (10 nella CTE). I valori per la tolleranza e il numero di iterazioni sono stati determinati empiricamente come effettivi. Nelle versioni future, il valore di tolleranza può essere modificato.
 
-La matrice jacobiano viene calcolata usando la differenza in avanti, tranne che in corrispondenza di un punto limite (uno o più dei R, G, B è 1) in cui viene invece usata la differenza tra le versioni precedenti. Invece di calcolare l'inverso della matrice jacobiano, il sistema lineare viene risolto direttamente usando Gauss-Jordan l'eliminazione con l'intera trasformazione pivot.
+La matrice giacobina viene calcolata usando la differenza in avanti, ad eccezione di un punto limite (uno o più R, G, B è 1) in cui viene invece usata la differenza all'indietro. Invece di calcolare l'inverso della matrice giacobita, il sistema lineare viene risolto direttamente usando Gauss-Jordan'eliminazione con pivot completo.
 
-Alla fine delle iterazioni, è possibile che la convergenza non venga comunque eseguita perché Newton-Raphson è un algoritmo "locale", ovvero funziona correttamente se si inizia con una supposizione iniziale vicina alla soluzione vera e propria. Se, alla fine del Newton-Raphson iterazioni, la convergenza entro la tolleranza di errore predefinita non è stata realizzata, le iterazioni vengono riavviate con un nuovo set di semi, definito come segue.
+Al termine delle iterazioni, la convergenza potrebbe ancora non essere ottenuta perché Newton-Raphson è un algoritmo "locale", vale a dire funziona bene solo se si inizia con un'ipotesi iniziale vicina alla soluzione vera. Se, alla fine delle iterazioni Newton-Raphson, la convergenza all'interno della tolleranza di errore predefinita non è stata raggiunta, le iterazioni vengono riavviate con un nuovo set di semi, definito come segue.
 
-Ad esempio, la soluzione migliore ottenuta finora è (r, g, b). Da questa soluzione vengono derivati i semi a posteriori, dove N = 4. In modo intuitivo, la soluzione viene spostata "verso il centro" in una dimensione del passaggio che dipende da N. Vedere la figura 6.
+Ad esempio, la soluzione migliore ottenuta finora è (r, g, b). Da questa soluzione vengono derivati N semi posteriori, dove N = 4. Intuitivamente, la soluzione viene spostata "verso il centro" in una dimensione del passaggio che dipende da N. Vedere la figura 6.
 
 ![Diagramma che mostra le direzioni di perturbazione della soluzione.](images/cdmp-image136.png)
 
-**Figura 6** : la direzione di perturbazione della soluzione dipende da quale ottetto si trova in.
+**Figura 6:** la direzione di perturbazione della soluzione dipende dall'ottetto in cui si trova.
 
-In altre parole, se r &gt; 0,5, il valore sul canale r viene ridotto; in caso contrario, il valore viene aumentato. Esiste una logica simile per i canali G e B. Le definizioni esatte sono:
+In altre parole, se r 0,5, il valore sul canale R viene ridotto, in caso contrario il &gt; valore viene aumentato. Esiste una logica simile per i canali G e B. Le definizioni precise sono:
 
-PERTURBATION = 0,5/(N + 1)
+PERTURBAZIONE = 0,5/(N+1)
 
-Dir (r) =-1 se r &gt; 0,5; + 1 in caso contrario. In modo analogo per dir (g) e dir (b)
+Dir(r) = -1 se r &gt; 0,5; +1 in caso contrario. Analogamente per Dir(g) e Dir(b)
 
-Il valore di inizializzazione di JTH a posteriori, s????, è (r + dir (r) j Perturbation \* \* , g + dir (g) j Perturbation \* \* , b + dir (b) \* j \* Perturbation)
+The jth a posteriori seed, s ????, is (r + Dir(r) \* j \* PERTURBATION, g + Dir(g) \* j \* PERTURBATION, b + Dir(b) \* j \* PERTURBATION)
 
-Prova la prima s???? e se fornisce una nuova soluzione entro la tolleranza di errore, è possibile arrestare. In caso contrario, provare la seconda s???? e così via fino all'ennesimo????.
+Provare la prima ???? e se offre una nuova soluzione entro la tolleranza di errore, è possibile arrestarsi. In caso contrario, provare la seconda ???? e così via fino all'Esima ????.
 
-Le schematiche dell'intero algoritmo sono illustrate nella figura 7.
+Gli schemi dell'intero algoritmo sono illustrati nella figura 7.
 
 ![Diagramma che mostra il flusso per l'inversione del modello di dispositivo.](images/cdmp-image138.png)
 
-**Figura 7** : schemi di inversione del modello di dispositivo
+**Figura 7:** Schemi di inversione del modello di dispositivo
 
-### <a name="rgb-virtual-device-model-baseline"></a>Linea di base del modello di dispositivo virtuale RGB
+### <a name="rgb-virtual-device-model-baseline"></a>Baseline del modello di dispositivo virtuale RGB
 
-Questo modello di dispositivo (DM) è un semplice algoritmo di riproduzione a matrice/tono. La matrice viene derivata dal punto bianco e dalle primarie usando gli algoritmi di scienza dei colori standard. La curva di riproduzione del tono è derivata dai parametri di misurazione in base alle descrizioni ICC di CurveType e ParametricType (o invertite in base alle esigenze). I dettagli degli algoritmi interni verranno forniti dopo la convalida aggiuntiva di problemi di intervallo dinamico elevato.
+Questo modello di dispositivo (DM) è un semplice algoritmo di riproduzione matrice/tono. La matrice è derivata dal punto bianco e dalle primarie usando algoritmi di scienza dei colori standard. La curva di riproduzione del tono deriva dai parametri di misurazione in base alle descrizioni ICC di CurveType e ParametricType (o invertita in base alle esigenze). I dettagli degli algoritmi interni verranno forniti dopo un'ulteriore convalida dei problemi di intervallo dinamico elevato.
 
-Il modello di dispositivo virtuale RGB è una curva di riproduzione a matrice/tono idealizzata RGB simile alla progettazione del profilo basato su matrice di tre componenti di ICC. I parametri di "misurazione virtuale" del DM includono un valore di punto bianco (CIE XYZ assoluto), i valori primari RGB (CIE XYZ assoluti) e una curva di riproduzione del tono basata sulle ParametricCurveType ICC e CurveType in formato XML coerenti con gli schemi DMP.
+Il modello di dispositivo virtuale RGB è una curva di riproduzione matrice/tono idealizzata, simile alla progettazione del profilo basato su matrice a tre componenti ICC. I parametri di "misurazione virtuale" del dm includono un valore punto bianco (CIEXYZ assoluto), valori primari RGB (CIEXYZ assoluti) e una curva di riproduzione del tono basata sui parametri ICC ParametricCurveType e CurveType nella formattazione XML coerente con gli schemi DMP.
 
-La tabella seguente illustra la codifica del tipo di funzione ICC parametricCurveType e il supporto corrispondente in IRGBVirtualDeviceModelBase.
+La codifica del tipo di funzione ICC parametricCurveType e il supporto corrispondente in IRGBVirtualDeviceModelBase sono illustrati nella tabella seguente.
 
 
 
 | Tipo di funzione                                         | Parametri                          | Tipo                                     | Nota                                           |
 |------------------------------------------|---------------------------|--------------------------------------|--------------------------------------------|
-| ![Mostra la funzione ' GammaType '.](images/cdmp-image154.png)<br/> | g<br/>              | GammaType<br/>                 | Implementazione comune<br/>           |
-| ![Mostra la funzione ' GammaOffsetGainType '.](images/cdmp-image156.png)<br/> | GA b<br/>           | GammaOffsetGainType<br/>       | CIE 122-1966<br/>                    |
-| ![Mostra la funzione ' GammaOffsetGainOffsetType '.](images/cdmp-image158.png)<br/> | GA b c<br/>         | GammaOffsetGainOffsetType<br/> | IEC 61966-3<br/>                     |
-| ![Mostra la funzione ' GammaOffsetGainGainType '.](images/cdmp-image160.png)<br/> | GA b c d<br/>       | GammaOffsetGainGainType<br/>   | IEC 61966-2.1<br/> sRGB<br/> |
-| ![Mostra una funzione per i parametri ' g a b c d e f '.](images/cdmp-image162.png)<br/> | GA b c d e f<br/>   | N/D<br/>                       | Non supportato in WCS<br/>            |
+| ![Mostra la funzione 'GammaType'.](images/cdmp-image154.png)<br/> | g<br/>              | GammaType<br/>                 | Implementazione comune<br/>           |
+| ![Mostra la funzione 'GammaOffsetGainType'.](images/cdmp-image156.png)<br/> | ga b<br/>           | GammaOffsetGainType<br/>       | CIE 122-1966<br/>                    |
+| ![Mostra la funzione 'GammaOffsetGainOffsetType'.](images/cdmp-image158.png)<br/> | ga b c<br/>         | GammaOffsetGainOffsetType<br/> | IEC 61966-3<br/>                     |
+| ![Mostra la funzione 'GammaOffsetGainGainType'.](images/cdmp-image160.png)<br/> | ga b c d<br/>       | GammaOffsetGainGainType<br/>   | IEC 61966-2.1<br/> (sRGB)<br/> |
+| ![Mostra una funzione per i parametri 'g a b c d e f'.](images/cdmp-image162.png)<br/> | ga b c d e f<br/>   | N/A<br/>                       | Non supportato in WCS<br/>            |
 
 
 
  
 
-La curva di tono per i dispositivi virtuali RGB viene applicata in DeviceToColorimetric tra i dati di input, pDeviceColors e la moltiplicazione della matrice. Per ColorimetricToDevice, è necessario usare un metodo per invertire la curva di tono. Nell'implementazione di base questa operazione viene eseguita dall'interpolazione diretta nella stessa curva di tono utilizzata per DeviceToColorimetric.
+La curva del tono per i dispositivi virtuali RGB viene applicata in DeviceToColorimetric tra i dati di input, pDeviceColors e la moltiplicazione della matrice. Per ColorimetricToDevice, è necessario usare un metodo per invertire la curva del tono. Nell'implementazione di base questa operazione viene eseguita tramite interpolazione diretta nella stessa curva tonale usata per DeviceToColorimetric.
 
-Le curve devono essere specificate nei profili come coppie di numeri nello spazio float. Il primo numero rappresenta i valori in pDeviceColors. Il secondo numero rappresenta l'output della curva di tono. Tutti i valori nella curva di tono devono essere compresi tra minColorantUsed e maxColorantUsed. Le curve di tono devono contenere almeno due voci, una per minColorantUsed e una per maxColorantUsed. Il numero massimo di voci in ToneCurve è 2048. In generale, maggiore è il numero di voci nella tabella, più accuratamente è possibile modellare la curvatura. Viene eseguita un'interpolazione lineare a tratti tra le voci.
+Le curve devono essere specificate nei profili come coppie di numeri nello spazio mobile. Il primo numero rappresenta i valori in pDeviceColors. Il secondo numero rappresenta l'output della curva tonale. Tutti i valori nella curva del tono devono essere compresi tra minColorantUsed e maxColorantUsed. Le curve tono devono contenere almeno due voci: una per minColorantUsed e una per maxColorantUsed. Il numero massimo di voci in ToneCurve è 2048. In generale, più voci sono presenti nella tabella, più accuratamente è possibile modellare la curvatura. Tra le voci viene eseguita un'interpolazione lineare a pezzetti.
 
-È possibile considerare metodi di interpolazione alternativi. Se si conosce qualcosa sul comportamento sottostante del dispositivo, è possibile usare un minor numero di campioni e un modello più accurato con una curva di ordine superiore. Tuttavia, se si usa il tipo di curva errato, sarà molto impreciso. Senza ulteriori informazioni, non è possibile indovinare il tipo di curva. Quindi, usare l'interpolazione lineare e fornire molti punti dati.
+È possibile prendere in considerazione metodi di interpolazione alternativi. Se si conosce qualcosa sul comportamento sottostante del dispositivo, è possibile usare meno campioni e modellare in modo più accurato con una curva di ordine superiore. Ma se si usa il tipo di curva errato, si sarà molto imprecisi. Senza altre informazioni, non è possibile indovinare il tipo di curva. Usare quindi l'interpolazione lineare e fornire molti punti dati.
 
-### <a name="cmyk-printer-device-model-baseline"></a>Baseline modello di dispositivo stampante CMYK
+### <a name="cmyk-printer-device-model-baseline"></a>Baseline del modello di dispositivo della stampante CMYK
 
-Una descrizione del dispositivo di una stampante CMYK è costituita dalla creazione di un modello empirico del dispositivo che prevede il colore stampato per un determinato valore CMYK. La caratterizzazione include anche l'inversione di questo modello, in modo che sia possibile assegnare una prescrizione del valore CMYK a noi per un determinato colore. Questa operazione viene in genere definita in termini di valore di CIE XYZ o CIELAB.
+Una caratterizzazione del dispositivo di una stampante CMYK consiste nella costruzione di un modello empirico del dispositivo che stima il colore stampato per qualsiasi valore CMYK specificato. La caratterizzazione include anche l'inversione di questo modello in modo che sia possibile specificare una prescrizione del valore CMYK per un determinato colore da stampare. Questo valore è in genere definito in termini di valore CIEXYZ o CIELAB.
 
-In genere, viene usata una destinazione IT 8,7/3 contenente le patch CMYK. Le patch sono costituite dal campionamento dello spazio CMYK in modo ben definito in modo da formare una griglia rettangolare (con spaziatura non uniforme in C, M, Y e K). Ogni patch viene quindi misurata con un colorimetro o uno spettrofotometro. Le misurazioni nei valori CIE XYZ formano quindi una tabella di ricerca (LUT), da cui viene compilato un modello empirico della stampante usando il metodo di interpolazione di Sakamoto. US Patent 4275413 (Sakamoto et al.), US Patent 4511989 (Sakamoto), Kang \[ 1 \] . I due brevetti citati sono scaduti.
+In genere, viene usata una destinazione IT8.7/3 contenente patch CMYK. Le patch sono costituite dal campionamento dello spazio CMYK in modo ben definito in modo da formare una griglia rettangolare (con spaziatura non uniforme in C, M, Y e K). Ogni patch viene quindi misurata con un colorimetro o uno spettrofotometro. Le misurazioni nei valori CIEXYZ formano quindi una tabella di ricerca (LUT), da cui viene creato un modello empirico della stampante usando il metodo di interpolazione di Sakamoto. US Patent 4275413 (Sakamoto et al.), US Patent 4511989 (Sakamoto), Kang \[ 1 \] . I due brevetti menzionati sono scaduti.
 
-I requisiti specifici per gli esempi di misurazione CMYK necessari per l'accettazione di un profilo del modello di dispositivo come validi dal modello di dispositivo Baseline Printer CMYK sono i seguenti. Il set di esempi è descritto più chiaramente come un set di cubi di esempio CMY, ognuno associato a un livello K specifico.
+Di seguito sono riportati i requisiti specifici per gli esempi di misurazione CMYK necessari per accettare un profilo del modello di dispositivo come valido dal modello di dispositivo di base della stampante CMYK. Il set di esempi è descritto più chiaramente come un set di cubi di esempio CMY, ognuno associato a un livello K specifico.
 
--   È necessario fornire almeno cubi CMY validi per i livelli K = 0 e K = 100.
--   È possibile che i livelli intermedi K non siano distanziati in modo uniforme.
--   Qualsiasi livello intermedio K senza un cubo CMY valido verrà ignorato.
--   I cubi CMY possono usare intervalli di campionamento non uniformi (spaziatura della griglia), ma lo stesso set di intervalli di campionamento deve essere usato in tutte le dimensioni C, M e Y del cubo CMY per un determinato livello K.
--   Ogni cubo CMY di livello K può usare un numero e una spaziatura diversi di intervalli di campionamento.
--   Tutti i cubi CMY devono contenere gli "angoli" del cubo CMY, ovvero i campioni CMY a \[ 0, 0, 0 \] , \[ 0, 0100 \] , \[ 0100, 0 \] , \[ 100, 0, 0 \] , \[ 0100.100 \] , \[ 100, 0100 \] , \[ 100.100, 0 \] , \[ 100.100.100 \] .
--   Tutti i livelli di griglia CMY intermedi devono essere campionati in modo completo in ogni canale. In altre parole, un campione deve esistere in ogni intersezione di griglia 3D all'interno del cubo CMY.
--   Per i cubi K = 0 e K = 100 CMY, i Cubi 2x2x2 "solo gli angoli" sono i cubi minimo accettati come validi.
+-   È necessario specificare almeno cubi CMY validi per i livelli K = 0 e K = 100.
+-   I livelli K intermedi possono essere spaziati in modo non uniforme.
+-   Qualsiasi livello K intermedio senza un cubo CMY valido verrà ignorato.
+-   I cubi CMY possono usare intervalli di campionamento non uniformi (spaziatura della griglia), ma lo stesso set di intervalli di campionamento deve essere usato in tutte le dimensioni C, M e Y nel cubo CMY per un determinato livello K.
+-   Ogni cubo CMY di livello K può usare un numero e una spaziatura diversi per gli intervalli di campionamento.
+-   Tutti i cubi CMY devono contenere gli "angoli" del cubo CMY, ad esempio, campioni CMY \[ in corrispondenza di 0,0,0 \] , \[ 0,0,100 \] , \[ 0,100,0 \] , \[ 100,0,0 \] , \[ 0,100,100 \] , \[ 100,0,100 \] , \[ 100,100, 0 \] , \[ 100,100,100. \]
+-   Tutti i livelli intermedi della griglia CMY devono essere campionati completamente in ogni canale. In altre parole, deve esistere un campione in corrispondenza di ogni intersezione di griglia 3D all'interno del cubo CMY.
+-   Per i cubi K = 0 e K = 100 CMY, i cubi 2x2x2 "solo angoli" sono il minimo accettato come validi.
 
-    \[Nota: per K = 0 e K = 100 livelli, un cubo 3x3x3 CMY verrà elaborato come un cubo 2x2x2 "solo angoli"; il livello di campionamento intermedio viene ignorato. in 4x4x4 e nei cubi più grandi saranno usati tutti gli esempi in griglia.\]
+    \[NOTA: per i livelli K=0 e K=100, un cubo CMY 3x3x3 verrà elaborato come cubo "solo angoli" 2x2x2; il livello di campionamento intermedio viene ignorato. Nei cubi 4x4x4 e più grandi verranno usati tutti gli esempi su griglia.\]
 
--   Per i livelli intermedio K, i cubi 4x4x4 CMY sono i cubi minimo accettati come validi.
+-   Per i livelli K intermedi, i cubi CMY 4x4x4 sono il minimo accettato come validi.
 
-Un profilo di qualità elevata utilizzerà griglie di campionamento più sottili del valore minimo necessario per la validità, in genere 9x9x9x9 o versione successiva. Gli esempi di IT 8.7/3, IT 8,7/4 e ECI targets producono i profili dei modelli di dispositivo (DMPs) validi per il modello di dispositivo Baseline della stampante CMYK. Sebbene questo modello di dispositivo sia in grado di ignorare gli esempi estranei (fuori griglia) in queste destinazioni, non è garantito che sia possibile eseguire questa operazione per altre destinazioni, quindi è consigliabile rimuovere gli esempi estranei dai set di misure che passano ai profili per questo modello di dispositivo.
+Un profilo di alta qualità userà griglie di campionamento più fine del minimo necessario per la validità, in genere 9x9x9x9 o superiore. Gli esempi delle destinazioni IT8.7/3, IT8.7/4 ed ECI producono profili di modello di dispositivo (DMP) validi per il modello di dispositivo di base della stampante CMYK. Anche se questo modello di dispositivo è in grado di ignorare gli esempi estranei (fuori rete) in queste destinazioni, non è garantito che sia in grado di eseguire questa operazione per altre destinazioni, pertanto è consigliabile rimuovere campioni estranei dai set di misurazioni che vengono suddivisi nei profili per questo modello di dispositivo.
 
-L'inversione del modello di stampante presenta maggiori difficoltà. Dato un colore di input in CIECAM, si verifica se questo colore si trova all'interno del gamut della stampante. Esiste anche il problema relativo alla disposizione dei punti nello spazio di aspetto dei colori. Sebbene sia possibile disporre i valori CMYK in modo che rientrino in una griglia rettangolare, come avviene nella destinazione 8,7/3, lo stesso non può essere detto dei colori stampati risultanti perché si trovano nello spazio di aspetto del colore. In generale, sono sparse nello spazio di aspetto dei colori senza motivo particolare.
+L'inversione del modello di stampante presenta maggiori difficoltà. Dato un colore di input in MODALITÀM, è necessario stabilire se questo colore rientra nella gamma della stampante. Esiste anche il problema relativo alla disposizione dei punti nello spazio dell'aspetto dei colori. Anche se è possibile disporre i valori CMYK in modo che cadano su una griglia rettangolare, come avviene nella destinazione IT8.7/3, non è possibile dire lo stesso dei colori stampati risultanti perché si trovano nello spazio dell'aspetto colore. In generale, sono sparsi nello spazio dell'aspetto dei colori senza un motivo particolare.
 
-Esistono in genere due approcci al problema di inversione dei punti sparsi. Un approccio consiste nell'usare una suddivisione geometrica della gamma di stampanti usando solidi tridimensionali primari, ad esempio tetraedri. Una suddivisione del gamut della stampante nello spazio di aspetto dei colori può essere indotta dalla suddivisione corrispondente dello spazio CMY (K), vedere Hung \[ 93 \] , Kang \[ 97 \] . Questo approccio offre il vantaggio della semplicità computazionale. Nel caso di un tetraedro, solo quattro punti vengono usati in un'interpolazione. D'altra parte, il risultato dipende molto da alcuni punti, il che significa che un errore di misurazione avrà un effetto significativo sul risultato. L'interpolatore tende anche a non essere uniforme. Il secondo approccio non presuppone alcuna suddivisione ed è basato sulla tecnica di interpolazione dei dati sparsi. Un esempio classico è la tecnica dell'interpolazione di Shepard o del metodo ponderato inverso (vedere Shepard \[ 68 \] ). In questo caso, diversi punti che racchiudono il punto di input vengono scelti in qualche modo, ognuno assegna un peso, generalmente proporzionale alla distanza e l'interpolazione viene considerata come la media ponderata dei punti adiacenti. In questo approccio, la scelta dei punti adiacenti è fondamentale per le prestazioni. Sebbene un numero troppo basso di punti possa rendere l'interoperabilità non accurata e non smussata, troppi punti impongono un elevato costo computazionale, in quanto i pesi sono in genere funzioni non lineari e costose da calcolare.
+Esistono in genere due approcci al problema di inversione dei punti sparsi. Un approccio consiste nell'usare una suddivisione geometrica della gamma di stampanti usando solidi tridimensionali elementari, ad esempio tetrahedra. Una suddivisione della gamma delle stampanti nello spazio dell'aspetto dei colori può essere indotta dalla suddivisione corrispondente dello spazio CMY(K), vedere Hung \[ 93 \] , Kang \[ 97 \] . Questo approccio ha il vantaggio della semplicità di calcolo. Nel caso di un tetrahedron, in un'interpolazione vengono usati solo quattro punti. D'altra parte, il risultato dipende molto da alcuni punti, il che significa che un errore di misurazione avrà un effetto significativo sul risultato. Anche l'interpolazione tende a non essere uniforme. Il secondo approccio non presuppone alcuna suddivisione ed è basato sulla tecnica dell'interpolazione di dati sparsi. Un esempio classico è la tecnica di interpolazione di Shepard o metodo ponderato inverso (vedere Shepard \[ \] 68). In questo caso, vengono scelti diversi punti che circondano il punto di input, ognuno dei quali ha assegnato un peso, in genere in modo inversamente proporzionale alla distanza, e l'interpolante viene preso come media ponderata dei punti adiacenti. In questo approccio, la scelta dei punti adiacenti è fondamentale per le prestazioni. Anche se un numero troppo ridotto di punti può rendere non accurato e non uniforme l'interpolazione, troppi punti impongono un costo di calcolo elevato, poiché i pesi sono in genere funzioni non lineari e costose da calcolare.
 
-I due approcci descritti in precedenza presentano problemi. L'approccio di suddivisione dipende dal fatto che i dati siano ragionevolmente privi di rumore e, in genere, l'interpolazione non è molto semplice. L'interpolazione dei dati sparse è più tollerante al rumore dei dati e in genere fornisce un'interpolazione più uniforme, ma è più costosa dal punto di vista del calcolo.
+I due approcci descritti in precedenza hanno entrambi problemi. L'approccio di suddivisione dipende in modo critico dai dati ragionevolmente vuoti dal rumore e in genere l'interpolazione non è molto uniforme. L'interpolazione di dati sparsi è più tollerante al rumore dei dati e in genere offre un interpolazione più uniforme, ma dal punto di vista del calcolo è più costosa.
 
-La nuova CTE accetta un approccio alternativo. Il dispositivo CMYK viene considerato come una raccolta di diversi dispositivi CMY, ognuno dei quali ha un valore specifico di nero (K). Usando un algoritmo di selezione che accetta come parametri luminosità e Chroma, viene scelto un livello di nero. I valori CMY vengono ottenuti dall'inversione della tabella CMY corrispondente alla tabella Luv usando i metodi Newton usati altrove dall'algoritmo di stampa RGB.
+La nuova CTE adotta un approccio alternativo. Il dispositivo CMYK viene considerato come una raccolta di diversi dispositivi CMY, ognuno dei quali ha un valore specifico di nero (K). Usando un algoritmo di selezione che accetta come parametri leggerezza e chroma, viene scelto un livello di nero. I valori CMY vengono ottenuti dall'inversione della tabella CMY in Luv corrispondente usando i metodi Newton utilizzati altrove dall'algoritmo di stampa RGB.
 
 Seguire questa procedura.
 
-1.  Stampare la destinazione di caratterizzazione, ovvero la destinazione 8.7/3, oppure una destinazione contenente il campionamento dello spazio CMYK a intervalli regolari o irregolari.
-2.  Misurare la destinazione usando uno spettrofotometro e convertire le misurazioni nello spazio CIELUV.
-3.  Costruire la mappa in diretta da CMYK a Luv.
-4.  Usare la mappa in linea per costruire un set di CMY a Luv Maps per un intervallo di valori K.
-5.  Per qualsiasi valore di input Luv, il valore CMYK corrispondente viene ottenuto selezionando una delle mappe costruite nel passaggio 4 precedente e invertendo l'uso del metodo di Newton per ottenere un set di colori CMY associato al valore K selezionato.
+1.  Stampare la destinazione di caratterizzazione, ovvero la destinazione IT8.7/3 o una destinazione contenente il campionamento dello spazio CMYK a intervalli regolari o irregolari.
+2.  Misurare la destinazione usando uno spectrofotometro e convertire le misure nello spazio CIELUV.
+3.  Costruire la mappa in avanti da CMYK a Luv.
+4.  Usare la mappa in avanti per costruire un set di mappe DA CMY a Luv per un intervallo di valori K.
+5.  Per qualsiasi valore Luv di input, il valore CMYK corrispondente viene ottenuto selezionando una delle mappe costruite nel passaggio 4 precedente e invertendo usando il metodo di Newton per ottenere un set di colori CMY associato al valore K selezionato.
 
-I passaggi 1 e 2, ovvero le procedure standard, vengono eseguiti da un programma di profilatura che non fa parte della nuova CTE. La destinazione IT 8,7/3 contiene un campionamento ragionevolmente dettagliato di tutti i valori CMYK a diversi livelli di C, M, Y e K. in alternativa, è possibile usare una destinazione personalizzata con campionamento uniforme dei canali C, M, Y e K. Dopo la stampa della destinazione, è possibile usare uno spettrofotometro o un colorimetro per misurare il valore XYZ di ogni patch e il valore XYZ può essere convertito nel valore Luv usando il modello CIELUV.
+I passaggi 1 e 2, che sono procedure standard, vengono eseguiti da un programma di profilatura che non fa parte della nuova CTE. La destinazione IT8.7/3 contiene un campionamento ragionevolmente dettagliato di tutti i valori CMYK a vari livelli di C, M, Y e K. In alternativa, è possibile usare una destinazione personalizzata con campionamento uniforme dei canali C, M, Y e K. Dopo aver stampato la destinazione, è possibile usare uno spectrofometro o un colorimetro per misurare il valore XYZ di ogni patch e il valore XYZ può essere convertito nel valore Luv usando il modello CIELUV.
 
-Passaggio 3: la costruzione della mappa in avanti da CMYK a Luv può essere realizzata applicando qualsiasi tecnica di interpolazione nota, ad esempio tetraedrica o metodo multilineare, sulla griglia rettangolare nello spazio CMYK. Nella nuova CTE viene utilizzata un'interpolazione tetraedrica a 4 dimensioni. Poiché le griglie di campionamento CMY sono generalmente diverse a seconda del livello K, tuttavia, viene usata una tecnica di supercampionamento, come descritto di seguito. Per un determinato punto CMYK, i livelli sandwich K vengono innanzitutto determinati in base al valore K. Introdurre quindi una "Supergrid" a ogni livello K che rappresenta un'Unione delle griglie CMY in ognuno dei due livelli K. A ogni livello K, il valore Luv di qualsiasi punto di griglia appena introdotto viene ottenuto da un'interpolazione tetraedrica tridimensionale all'interno del livello K. Infine, in questa nuova griglia viene eseguita un'interpolazione tetraedrica a 4 dimensioni per il punto CMYK specifico.
+Il passaggio 3, la costruzione della mappa in avanti da CMYK a Luv, può essere ottenuto applicando qualsiasi tecnica di interpolazione nota, ad esempio il metodo tetrahedral o multilineare, sulla griglia rettangolare nello spazio CMYK. Nella nuova CTE viene usata un'interpolazione tetraedrale a 4 dimensioni. Poiché le griglie di campionamento CMY sono in genere diverse per ogni livello di K, tuttavia, viene utilizzata una tecnica di super-campionamento, come descritto di seguito. Per un determinato punto CMYK, i livelli K di sandwiching vengono prima determinati in base al valore K. Introdurre quindi una "super-griglia" in ogni livello K che è un'unione delle griglie CMY in ognuno dei due livelli K. A ogni livello K, il valore Luv di qualsiasi punto della griglia appena introdotto viene ottenuto da un'interpolazione tetraedrale tridimensionale all'interno di tale livello K. Infine, in questa nuova griglia viene eseguita un'interpolazione tetraedrale 4-dimensionale per il punto CMYK specifico.
 
-![Diagramma che mostra il sovracampionamento.](images/cdmp-image163.png)
+![Diagramma che illustra il supersampling.](images/cdmp-image163.png)
 
-**Figura 8** : supercampionamento
+**Figura 8:** Supersampling
 
-Il passaggio 4 costruisce un set di tabelle di ricerca da CMY a Luv (LUTs). La mappa in avanti costruita nel passaggio 3 viene chiamata ripetutamente per ricampionare lo spazio CMYK. Lo spazio dei colori CMYK viene campionato usando una spaziatura uniforme di K e un campionamento di CMY diverso, ma ancora in modo uniforme.
+Il passaggio 4 costruisce un set di tabelle di ricerca DA CMY a Luv (LUT). La mappa in avanti costruita nel passaggio 3 viene chiamata ripetutamente per ricampionare lo spazio CMYK. Lo spazio colore CMYK viene campionato usando una spaziatura uniforme di K e un campionamento CMY diverso, ma ancora uniformemente disattato.
 
-Il passaggio 5 è una procedura per ottenere il valore CMYK usando LUTs costruito nel passaggio 4 per qualsiasi punto di Luv di input. Viene scelto il valore appropriato di K analizzando la luminosità, nonché il grado di colore nell'Luv richiesto. Dopo aver selezionato la tabella, i valori CMY vengono ottenuti dalla tabella usando il metodo di Newton, come illustrato in precedenza nel modello di dispositivo della stampante RGB.
+Il passaggio 5 è una procedura per ottenere il valore CMYK usando i LUT costruiti nel passaggio 4 per qualsiasi punto Luv di input. Il valore appropriato di K viene scelto analizzando la leggerezza e il grado di colore nel Luv richiesto. Dopo aver selezionato la tabella, i valori CMY vengono ottenuti dalla tabella usando il metodo di Newton ( come documentato in precedenza nel modello di dispositivo della stampante RGB).
 
-Lo spazio CIELUV viene usato nel modello di stampante invece che in CIEJab, perché il modello di dispositivo deve essere basato esclusivamente sui dati colorimetrico disponibili nel DMP. Il DMP contiene dati colorimetrico per ogni patch misurata, incluso il punto per i supporti, quindi è possibile convertire i dati CIE XYZ in dati CIELUV. Tuttavia, non è possibile eseguire la conversione in CIECAM02 JCh o jab, perché non è possibile accedere alle informazioni sulla condizione di visualizzazione nel DMP.
+Lo spazio CIELUV viene usato nel modello di stampante invece di CIEJab perché il modello di dispositivo deve essere basato esclusivamente sui dati colorimetrici disponibili nel DMP. Il DMP contiene dati colorimetrici per ogni patch misurata, incluso il punto bianco multimediale, quindi è possibile convertire i dati CIEXYZ in dati CIELUV. Tuttavia, non è possibile eseguire la conversione in UNAM02 JCh o Unto, perché non è possibile accedere alle informazioni sulle condizioni di visualizzazione nel DMP.
 
-### <a name="rgb-projector-device-model-baseline"></a>Baseline modello di dispositivo proiettore RGB
+### <a name="rgb-projector-device-model-baseline"></a>Baseline del modello di dispositivo del proiettore RGB
 
-Nota: molti proiettori RGB hanno più di una modalità operativa. In una modalità, che è spesso l'impostazione predefinita e potrebbe essere chiamata come "presentazione", la risposta al colore del proiettore è ottimizzata per la massima luminosità. Tuttavia, in questa modalità, il proiettore perde la possibilità di riprodurre colori chiari, leggermente cromatici, ad esempio i gialli pallidi e alcuni toni di carne. In un'altra modalità, spesso denominata "film", "video" o "sRGB", il proiettore è ottimizzato per la riproduzione di immagini realistiche e scene naturali. In questa modalità, la luminosità massima viene comunicata per migliorare la qualità complessiva della riproduzione dei colori. Per ottenere una riproduzione dei colori soddisfacente con i proiettori RGB, è necessario posizionare il proiettore in una modalità in cui è possibile riprodurre una gamma uniforme di colori.
+Nota: molti proiettori RGB hanno più modalità operative. In una modalità, che è spesso l'impostazione predefinita e potrebbe essere chiamata "presentazione", la risposta del colore del proiettore è ottimizzata per la massima luminosità. In questa modalità, tuttavia, il proiettore perde la possibilità di riprodurre colori chiari e leggermente cromatici, ad esempio i gialli blu e alcuni toni di color chiaro. In un'altra modalità, spesso denominata "film", "video" o "sRGB", il proiettore è ottimizzato per la riproduzione di immagini realistiche e scene naturali. In questa modalità, la luminosità massima viene compromessa per migliorare la qualità complessiva della riproduzione del colore. Per ottenere una riproduzione soddisfacente del colore con i proiettori RGB, è necessario posizionare il proiettore in una modalità in cui sia possibile riprodurre una gamma uniforme di colori.
 
 ![Diagramma che mostra un modello di dispositivo D L P.](images/cdmp-image167.png)
 
-**Figura 9** : modello di dispositivo DLP
+**Figura 9:** Modello di dispositivo DLP
 
-Un valore RGB in ingresso passa attraverso due percorsi computazionali. Il primo è il modello Matrix, che restituisce un valore XYZ. Questa operazione è seguita immediatamente dalla conversione da XYZ a Luv. Il secondo è l'interpolazione LUT non uniforme mediante l'interpolazione di tetraedrica. L'output dell'interpolazione si trova già nello spazio Luv per costruzione. Per ottenere il valore Luv stimato vengono aggiunti i due output. Viene infine convertito in XYZ, ovvero l'output previsto del modello colorimetrico per il dispositivo DLP.
+Un valore RGB in ingresso passa attraverso due percorsi di calcolo. Il primo è il modello a matrice, che determina un valore XYZ. Questa operazione è seguita immediatamente dalla conversione da XYZ a Luv. Il secondo è l'interpolazione LUT non uniforme che usa l'interpolazione tetrahedrale. L'output dell'interpolazione è già nello spazio Luv per costruzione. I due output vengono aggiunti per ottenere il valore Luv previsto. Viene infine convertito in XYZ, ovvero l'output previsto del modello colorimetrico per il dispositivo DLP.
 
-Poiché i proiettori sono dispositivi di visualizzazione, supportano anche l'inversione del modello, ovvero la trasformazione da XYZ a RGB. Poiché il modello di dispositivo trasforma lo spazio RGB nello spazio XYZ, che sono entrambi tridimensionali, l'inversione è equivalente alla risoluzione di tre equazioni non lineari in tre incognite. Questa operazione può essere eseguita dalle tecniche standard di risoluzione delle equazioni, ad esempio Newton-Raphson. È preferibile, tuttavia, convertire prima XYZ in Luv, quindi invertire il Luv nella trasformazione RGB, perché lo spazio Luv è più percettivamente lineare dello spazio XYZ.
+Poiché i proiettori sono dispositivi di visualizzazione, supportano anche l'inversione del modello, ad esempio la trasformazione da XYZ a RGB. Poiché il modello di dispositivo trasforma lo spazio RGB nello spazio XYZ, che sono entrambi tridimensionali, l'inversione equivale a risolvere tre equazioni non lineari in tre incognite. Questa operazione può essere eseguita con tecniche standard di risoluzione delle equazioni, ad esempio Newton-Raphson. È tuttavia preferibile convertire prima XYZ in Luv e quindi invertire la trasformazione Luv in RGB, perché lo spazio Luv è più percettivamente lineare rispetto allo spazio XYZ.
 
 ### <a name="icc-device-model-baseline"></a>Baseline del modello di dispositivo ICC
 
-L'interoperabilità del flusso di lavoro ICC viene abilitata mediante la creazione di un profilo del modello di dispositivo di baseline del dispositivo ICC speciale che archivia l'oggetto profilo e crea una trasformazione ICC usando un profilo no-op XYZ. Questa trasformazione viene quindi utilizzata per la conversione tra i colori del dispositivo e del CIE XYZ.
+L'interoperabilità del flusso di lavoro CITE ICC viene abilitata creando uno speciale profilo del modello di dispositivo di base del dispositivo ICC che archivia l'oggetto profilo e crea una trasformazione ICC usando un profilo XYZ no-op. Questa trasformazione viene quindi usata per la conversione tra i colori del dispositivo e CIEXYZ.
 
-![Diagramma che illustra l'interoperabilità del flusso di lavoro c I T E I c c.](images/cdmp-image168.png)
+![Diagramma che illustra l'interoperabilità del flusso di lavoro C I T E I C.](images/cdmp-image168.png)
 
-**Figura 10** : citare l'interoperabilità del flusso di lavoro ICC
+**Figura 10:** Interoperabilità del flusso di lavoro CITE ICC
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -1243,7 +1243,7 @@ L'interoperabilità del flusso di lavoro ICC viene abilitata mediante la creazio
 [Concetti di base sulla gestione dei colori](basic-color-management-concepts.md)
 </dt> <dt>
 
-[Schemi e algoritmi del sistema di colori Windows](windows-color-system-schemas-and-algorithms.md)
+[Windows Schemi e algoritmi del sistema di colori](windows-color-system-schemas-and-algorithms.md)
 </dt> </dl>
 
  

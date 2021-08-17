@@ -23,7 +23,7 @@ Questo riferimento alla programmazione per l'API Windows Touch contiene le sezio
 
 | Sezione                      | Descrizione                                  |
 |------------------------------|----------------------------------------------|
-| [Funzioni](mtfunctions.md) | Contiene funzioni per l Windows'input tocco.  |
+| [Funzioni](mtfunctions.md) | Contiene funzioni per l Windows input tocco.  |
 | [Macro](touch-macros.md)   | Contiene macro per l'Windows tocco.     |
 | [Messaggi](messages.md)     | Contiene messaggi per l Windows input tocco.   |
 | [Strutture](structures.md) | Contiene strutture per l'Windows touch. |

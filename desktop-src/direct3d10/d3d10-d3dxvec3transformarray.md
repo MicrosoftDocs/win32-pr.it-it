@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: bc38f0ef634763d9a5be85795a897b483431aede
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 00e8c2325b395a929af42abda4218a2458a8d964116a04f28ebac1ff72a877f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914694"
 ---
 # <a name="d3dxvec3transformarray-function-d3dx10mathh"></a>Funzione D3DXVec3TransformArray (D3DX10Math.h)
 
@@ -76,7 +76,7 @@ Puntatore alla matrice [**D3DXVECTOR3 di**](d3d10-d3dxvector3.md) origine.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra vettori nel flusso di dati di input.
+Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 

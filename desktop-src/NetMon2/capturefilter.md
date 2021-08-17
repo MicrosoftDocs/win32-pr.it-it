@@ -1,7 +1,7 @@
 ---
 description: La struttura CAPTUREFILTER contiene i dati del filtro di acquisizione.
 ms.assetid: 773187c6-31c7-4439-850d-1dd43d42f701
-title: Struttura CAPTUREFILTER (Netmon. h)
+title: Struttura CAPTUREFILTER (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 129575ba401aed0e78f52695a49139f4143c9c87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de5ab95ab395d50afb41223a458342706da1df7434d524f21c230436b3b9c7b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796361"
 ---
 # <a name="capturefilter-structure"></a>Struttura CAPTUREFILTER
 
-La struttura **capturefilter** contiene i dati del filtro di acquisizione.
+La **struttura CAPTUREFILTER** contiene i dati del filtro di acquisizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,10 +57,10 @@ Flag che descrivono il contenuto del filtro di acquisizione.
 
 | Valore                                                                                                                                                                                                                                                                                                   | Significato                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_SAPS"></span><span id="capturefilter_flags_include_all_saps"></span><dl> <dt>**Capturefilter \_ \_I flag includono \_ tutti i \_ succhi**</dt> <dt>0x0001</dt> </dl>       | Include tutti i succhi come frame accettabili.<br/>  |
-| <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_ETYPES"></span><span id="capturefilter_flags_include_all_etypes"></span><dl> <dt>**Capturefilter \_ \_I flag includono \_ tutti \_ etype del**</dt> <dt>0x0002</dt> </dl> | Includere tutti i ETYPE del come frame accettabili.<br/> |
-| <span id="CAPTUREFILTER_FLAGS_LOCAL_ONLY"></span><span id="capturefilter_flags_local_only"></span><dl> <dt>**Capturefilter \_ CONTRASSEGNA \_ \_ solo**</dt> <dt>0x0008</dt> locali </dl>                          | Nessuna modalità P<br/>                                |
-| <span id="CAPTUREFILTER_FLAGS_KEEP_RAW"></span><span id="capturefilter_flags_keep_raw"></span><dl> <dt>**Capturefilter \_ FLAG \_ Keep \_**</dt> <dt>0x0020</dt> RAW </dl>                                | Mantieni i frame MAC SMT e token ring.<br/>      |
+| <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_SAPS"></span><span id="capturefilter_flags_include_all_saps"></span><dl> <dt>**CAPTUREFILTER \_ I \_ FLAG INCLUDONO TUTTI I 0X0001 \_ \_ SAPS**</dt> <dt></dt> </dl>       | Include tutti i criteri di accesso condiviso come frame accettabili.<br/>  |
+| <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_ETYPES"></span><span id="capturefilter_flags_include_all_etypes"></span><dl> <dt>**CAPTUREFILTER \_ I \_ FLAG INCLUDONO TUTTI I TIPI \_ \_ 0X0002**</dt> <dt></dt> </dl> | Includere tutti i tipi di dati come frame accettabili.<br/> |
+| <span id="CAPTUREFILTER_FLAGS_LOCAL_ONLY"></span><span id="capturefilter_flags_local_only"></span><dl> <dt>**CAPTUREFILTER \_ FLAG \_ SOLO \_ LOCALI**</dt> <dt>0X0008</dt> </dl>                          | Nessuna modalità P<br/>                                |
+| <span id="CAPTUREFILTER_FLAGS_KEEP_RAW"></span><span id="capturefilter_flags_keep_raw"></span><dl> <dt>**CAPTUREFILTER \_ I FLAG \_ \_ MANTENGONO LE**</dt> <dt>0X0020</dt> </dl>                                | Mantenere i frame MAC SMT e Token Ring.<br/>      |
 
 
 
@@ -71,42 +71,42 @@ Flag che descrivono il contenuto del filtro di acquisizione.
 **lpSapTable**
 </dt> <dd>
 
-Puntatore a una matrice di valori SAP. Questo membro indica i valori SAP validi da passare al driver. Se \_ i flag capturefilter \_ includono \_ tutti i \_ succhi sono impostati, questo diventa un elenco di eccezioni (includere tutti i succhi ad eccezione di questi).
+Puntatore a una matrice di valori SAP. Questo membro indica i valori SAP validi da passare al driver. Se captureFILTER FLAGS INCLUDE ALL SAPS è impostato, questo diventa un elenco di eccezioni \_ \_ \_ \_ (includere tutti i SAPS tranne questi).
 
 </dd> <dt>
 
 **lpEtypeTable**
 </dt> <dd>
 
-Puntatore a una matrice di valori etype. Ciò indica i valori ETYPE validi da passare al driver. Se \_ i flag capturefilter \_ includono \_ tutti i \_ etype del impostati, questo diventa un elenco di eccezioni (includere tutti i ETYPE del ad eccezione di questi).
+Puntatore a una matrice di valori Etype. Indica i valori Etype validi da passare al driver. Se captureFILTER FLAGS INCLUDE ALL ETYPES è impostato, questo diventa un elenco di eccezioni \_ \_ \_ \_ (includere tutti i tipi tranne questi).
 
 </dd> <dt>
 
 **nSaps**
 </dt> <dd>
 
-Numero di succhi nella tabella SAP.
+Numero di sap nella tabella SAP.
 
 </dd> <dt>
 
 **nEtypes**
 </dt> <dd>
 
-Numero di ETYPE del nella tabella etype.
+Numero di Etype nella tabella Etype.
 
 </dd> <dt>
 
 **AddressTable**
 </dt> <dd>
 
-Nome della tabella degli indirizzi.
+Nome della tabella di indirizzi.
 
 </dd> <dt>
 
-**FilterExpression**
+**Filterexpression**
 </dt> <dd>
 
-Struttura dell'espressione. Contiene la parte relativa alla corrispondenza dei criteri del filtro di acquisizione.
+Struttura EXPRESSION. Contiene la parte relativa alle corrispondenze dei criteri del filtro di acquisizione.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Riservato.
 **nFrameBytesToCopy**
 </dt> <dd>
 
-Se il membro non è 0, specifica il numero di byte da memorizzare per ogni frame ricevuto. Se è 0, Mantieni l'intero frame.
+Se questo membro non è 0, specifica il numero di byte da mantenere per ogni frame ricevuto. Se è 0, mantenere l'intero frame.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Riservato.
 
 ## <a name="remarks"></a>Commenti
 
-La combinazione di flag, valori ed espressioni determina quali frame verranno passati dal driver che utilizza i dati della struttura. Per ulteriori informazioni sull'implementazione di una struttura **capturefilter** , vedere [Capture filters](capture-filters.md).
+La combinazione di flag, valori ed espressioni determina quali frame verranno passati dal driver che utilizza i dati della struttura. Per altre informazioni sull'implementazione di **una struttura CAPTUREFILTER,** vedere [Capture Filters](capture-filters.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -143,7 +143,7 @@ La combinazione di flag, valori ed espressioni determina quali frame verranno pa
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -151,13 +151,13 @@ La combinazione di flag, valori ed espressioni determina quali frame verranno pa
 
 <dl> <dt>
 
-[ADDRESSTABLE](addresstable.md)
+[TABELLA INDIRIZZI](addresstable.md)
 </dt> <dt>
 
 [ADDRESSPAIR](addresspair.md)
 </dt> <dt>
 
-[ESPRESSIONE](expression.md)
+[Espressione](expression.md)
 </dt> <dt>
 
 [ANDEXP](andexp.md)

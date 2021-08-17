@@ -1,7 +1,7 @@
 ---
 description: La funzione GetFrameLength restituisce la lunghezza del frame.
 ms.assetid: 30be1f5c-9b13-42ad-944a-92b1aee8a6bc
-title: Funzione GetFrameLength (Netmon. h)
+title: Funzione GetFrameLength (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 29a2a08ac105414a914e14a9ce8e69976725700c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2344f2401995af3bac2e8245f48824dfb992076113eb8c27dcb9eff0a54eae04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795703"
 ---
-# <a name="getframelength-function"></a>GetFrameLength (funzione)
+# <a name="getframelength-function"></a>Funzione GetFrameLength
 
-La funzione **GetFrameLength** restituisce la lunghezza del frame.
+La **funzione GetFrameLength** restituisce la lunghezza del frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ DWORD WINAPI GetFrameLength(
 
 <dl> <dt>
 
-*hFrame* \[ in\]
+*hFrame* \[ Pollici\]
 </dt> <dd>
 
 Handle per un frame.
@@ -54,7 +54,7 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFrameLength** .
+[*Esperti*](e.md) e [*parser possono*](p.md) chiamare la **funzione GetFrameLength.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFra
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

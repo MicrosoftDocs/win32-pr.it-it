@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: e457757a3542bbfc8ded7536396458ef3e592714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 958eb9134062d5380a2afda77eeaad3034a2da7430d2f6a3094916ceae211e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117926783"
 ---
 # <a name="wmimonitorbasicdisplayparams-class"></a>Classe WmiMonitorBasicDisplayParams
 
-La classe WMI **WmiMonitorBasicDisplayParams** rappresenta le funzionalità di visualizzazione di base di un monitor computer. Il valore della proprietà **VideoInputType** indica se il monitoraggio è analogico o digitale. I dati in questa classe corrispondono ai dati nel blocco Basic display Parameters/features di video Electronics Standard Association (VESA) Enhanced Extended Display Data (E-EDID) standard.
+La **classe WMI WmiMonitorBasicDisplayParams** rappresenta le funzionalità di visualizzazione di base di un monitor del computer. Il valore della proprietà **VideoInputType** indica se il monitor è analogico o digitale. I dati in questa classe corrispondono ai dati nel blocco Basic Display Parameters/Features dello standard VESA (Video Electronics Standard Association) Enhanced Extended Display Identification Data (E-EDID).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,20 +48,20 @@ class WmiMonitorBasicDisplayParams : MSMonitorClass
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorBasicDisplayParams** dispone di questi tipi di membri:
+La **classe WmiMonitorBasicDisplayParams** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorBasicDisplayParams** dispone di queste proprietà.
+La **classe WmiMonitorBasicDisplayParams** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -74,26 +74,26 @@ Indica il monitoraggio attivo.
 **DisplayTransferCharacteristic**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Caratteristica di trasferimento di visualizzazione (100 \* gamma-100).
+Caratteristica di trasferimento dello schermo (100 \* Gamma-100).
 
 </dd> <dt>
 
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Nome dell'istanza di monitoraggio specifica.
@@ -103,7 +103,7 @@ Nome dell'istanza di monitoraggio specifica.
 **MaxHorizontalImageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -116,7 +116,7 @@ Dimensioni massime dell'immagine orizzontale in centimetri. Per altre informazio
 **MaxVerticalImageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -135,14 +135,14 @@ Tipo di dati: **[ **SupportedDisplayFeaturesDescriptor**](supporteddisplayfeatur
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Visualizza le funzionalità supportate dal monitoraggio.
+Visualizzare le funzionalità supportate dal monitoraggio.
 
 </dd> <dt>
 
 **VideoInputType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -165,7 +165,7 @@ Tipo di input video.
 
 ## <a name="remarks"></a>Commenti
 
-**MaxHorizontalImageSize** e **MaxVerticalImageSize** rappresentano le dimensioni massime dell'immagine che il monitoraggio è in grado di visualizzare correttamente per l'intero set di combinazioni di formato e temporizzazione supportate. La dimensione massima dell'immagine è definita dallo standard VIAD (video image area Definition) VESA ed è arrotondata al centimetro più vicino. Il computer host può usare questi dati per selezionare le dimensioni e le proporzioni dell'immagine che consentiranno il testo ridimensionato correttamente. Tenere presente che, se uno o entrambi i campi sono pari a zero, il sistema non prevede alcuna supposizione sulle dimensioni di visualizzazione. Ad esempio, le dimensioni di una visualizzazione di proiezione potrebbero non essere determinate.
+**MaxHorizontalImageSize** e **MaxVerticalImageSize** rappresentano le dimensioni massime dell'immagine che il monitor può visualizzare correttamente per l'intero set di combinazioni di temporizzazione e formato supportate. La dimensione massima dell'immagine è definita dallo standard VIAD (Video Image Area Definition) VESA e viene arrotondata al centimetro più vicino. Il computer host può usare questi dati per selezionare le dimensioni e le proporzioni dell'immagine che consentiranno il ridimensionamento corretto del testo. Tenere presente che, se uno o entrambi questi campi sono pari a zero, il sistema non fa ipotesi sulle dimensioni di visualizzazione. Ad esempio, le dimensioni di una visualizzazione di proiezione possono essere indeterminate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -175,8 +175,8 @@ Tipo di input video.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

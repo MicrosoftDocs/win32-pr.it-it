@@ -1,7 +1,7 @@
 ---
 description: Consente di visualizzare in anteprima il nome wwpn (World Wide Port Name) corrente senza che il WWPN sia riservato.
 ms.assetid: 7fc02099-744e-4a56-ae4b-1f5fd6a1eb45
-title: Metodo GetCurrentWwpnFromGenerator della Msvm_VirtualSystemManagementService
+title: Metodo GetCurrentWwpnFromGenerator della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118393283"
 ---
 # <a name="getcurrentwwpnfromgenerator-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetCurrentWwpnFromGenerator della classe Msvm \_ VirtualSystemManagementService
 
-Consente di visualizzare in anteprima il nome wwpn (World Wide Port Name) corrente senza che il WWPN sia riservato. Il WWPN viene generato dall'interno dell'intervallo preconfigurato definito dalle proprietà **MinimumWWPNAddress** e **MaximumWWPNAddress** della [**classe Msvm \_ VirtualSystemManagementServiceSettingData.**](msvm-virtualsystemmanagementservicesettingdata.md) Se l'intervallo definito da queste proprietà è esaurito, il WWPN generato avrà la voce non valida "000000000000000" e il valore restituito indicherà l'esito positivo (0).
+Consente di visualizzare in anteprima il nome wwpn (World Wide Port Name) corrente senza che il WWPN sia riservato. Il WWPN viene generato dall'interno dell'intervallo preconfigurato definito dalle proprietà **MinimumWWPNAddress** e **MaximumWWPNAddress** della [**classe Msvm \_ VirtualSystemManagementServiceSettingData.**](msvm-virtualsystemmanagementservicesettingdata.md) Se l'intervallo definito da queste proprietà è esaurito, il WWPN generato avrà la voce non valida "00000000000000" e il valore restituito indicherà l'esito positivo (0).
 
 ## <a name="syntax"></a>Sintassi
 

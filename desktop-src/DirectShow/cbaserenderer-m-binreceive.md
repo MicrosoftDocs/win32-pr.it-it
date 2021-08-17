@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403063"
 ---
-# <a name="cbaserendererm_binreceive-member"></a>Membro BInReceive CBaseRenderer::m \_
+# <a name="cbaserendererm_binreceive-member"></a>Membro CBaseRenderer::m \_ bInReceive
 
 Flag che indica se il filtro sta elaborando una **chiamata Receive.**
 

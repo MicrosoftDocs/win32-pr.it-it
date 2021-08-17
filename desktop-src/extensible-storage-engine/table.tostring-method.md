@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Table. ToString'
-title: Table. ToString, metodo
+description: Altre informazioni sul metodo Table.ToString
+title: Metodo Table.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Table.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 022fc92ca7fbc15991104068dac000b1cedfa305
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b20afca5a6f397c05eecda7001b3d266b54213fa7faa616ed959a2473c67da89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484727"
 ---
-# <a name="tabletostring-method"></a>Table. ToString, metodo
+# <a name="tabletostring-method"></a>Metodo Table.ToString
 
-Restituisce una [stringa](/dotnet/api/system.string) che rappresenta la [tabella](./table-class.md)corrente.
+Restituisce un [oggetto String](/dotnet/api/system.string) che rappresenta l'oggetto [Table corrente.](./table-class.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) che rappresenta la [tabella](./table-class.md)corrente.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) che rappresenta l'oggetto [Table corrente.](./table-class.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Classe Table](./table-class.md)
 
-[Membri della tabella](./table-members.md)
+[Membri di tabella](./table-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

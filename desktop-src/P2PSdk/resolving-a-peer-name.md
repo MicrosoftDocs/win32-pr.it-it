@@ -4,35 +4,35 @@ ms.assetid: 7b21ec52-bc29-447e-9c46-34b9115574e0
 title: Risoluzione di un nome di peer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7f3aa59d3dc3be89f35ce9d6eca58bed1ce137
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7aefcae37c8853982fff8f4e925641ab9c650b8946766983fa437f9df18e01d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794444"
 ---
 # <a name="resolving-a-peer-name"></a>Risoluzione di un nome di peer
 
 Questo argomento illustra i metodi per la risoluzione di un nome peer usando le API del provider dello spazio dei nomi PNRP.
 
-Quando si risolve un nome peer, è necessario fornire le seguenti informazioni:
+Quando si risolve un nome peer, è necessario specificare le informazioni seguenti:
 
 -   [Nome peer](peer-names.md)
--   [Criteri di risoluzione](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
--   Nome del cloud in cui risolvere il nome peer
--   Indirizzo IP, facoltativo e utilizzato come hint
+-   [Risolvere i criteri](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
+-   Nome cloud in cui risolvere il nome peer
+-   Indirizzo IP, facoltativo e usato come suggerimento
 
 ## <a name="resolving-a-peer-name"></a>Risoluzione di un nome di peer
 
-Dopo aver fornito un nome peer, i criteri di risoluzione, il nome del cloud e l'indirizzo IP facoltativo, è necessario eseguire i passaggi seguenti per completare la risoluzione di un nome peer:
+Dopo aver specificato un nome peer, risolto i criteri, il nome del cloud e l'indirizzo IP facoltativo, è necessario seguire questa procedura per completare la risoluzione di un nome peer:
 
 -   Chiamare [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) per avviare il processo e restituire un handle.
--   Chiamare [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) per risolvere il nome peer.
+-   Chiamare [**WSALookupServiceNext per**](pnrp-and-wsalookupservicenext.md) risolvere il nome peer.
 -   Chiamare [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) per completare il processo.
 
 ## <a name="an-example-of-resolving-a-peer-name"></a>Esempio di risoluzione di un nome peer
 
-Il frammento di codice seguente illustra come risolvere un nome peer. Nell'esempio si presuppone che venga restituito un indirizzo TCP/IP.
+Il frammento di codice seguente illustra come risolvere un nome peer. Nell'esempio si presuppone che verrà restituito un indirizzo TCP/IP.
 
 
 ```C++

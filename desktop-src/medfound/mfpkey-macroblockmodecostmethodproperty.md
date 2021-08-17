@@ -1,19 +1,19 @@
 ---
-description: Specifica il metodo di costo utilizzato dal codec per determinare la modalità di macroblocco da utilizzare.
+description: Specifica il metodo di costo utilizzato dal codec per determinare la modalità macroblock da usare.
 ms.assetid: 2ba9b943-0daa-40c1-87ea-2fa647fb7095
-title: Proprietà MFPKEY_MACROBLOCKMODECOSTMETHOD (Wmcodecdsp. h)
+title: MFPKEY_MACROBLOCKMODECOSTMETHOD proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 289219300a79c67565891c48cec848851c17bd7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfe61be79b07a09d1f55c09b1970c4becbf7aca9818c525420712952bac40db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873285"
 ---
-# <a name="mfpkey_macroblockmodecostmethod-property"></a>\_Proprietà MACROBLOCKMODECOSTMETHOD di MFPKEY
+# <a name="mfpkey_macroblockmodecostmethod-property"></a>Proprietà MFPKEY \_ MACROBLOCKMODECOSTMETHOD
 
-Specifica il metodo di costo utilizzato dal codec per determinare la modalità di macroblocco da utilizzare.
+Specifica il metodo di costo utilizzato dal codec per determinare la modalità macroblock da usare.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -33,10 +33,10 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 
 
-| Valore | Metodo utilizzato                                                                                            |
+| Valore | Metodo usato                                                                                            |
 |-------|--------------------------------------------------------------------------------------------------------|
-| 0     | TRISTE/Hadamard. Questa opzione consente di configurare il codec in modo da usare solo la distorsione durante il calcolo dei costi.             |
-| 1     | Costo RD. Questa opzione consente di configurare il codec per tenere conto della velocità e della distorsione durante il calcolo dei costi. |
+| 0     | SAD/Hadamard. Questa opzione configura il codec in modo da usare solo la distorsione durante il calcolo dei costi.             |
+| 1     | Costo di Desktop remoto. Questa opzione configura il codec in modo da calcolare sia la frequenza che la distorsione durante il calcolo dei costi. |
 
 
 
@@ -48,9 +48,9 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -58,10 +58,10 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 <dl> <dt>
 
-[\_MOTIONMATCHMETHOD MFPKEY](mfpkey-motionmatchmethodproperty.md)
+[MFPKEY \_ MOTIONMATCHMETHOD](mfpkey-motionmatchmethodproperty.md)
 </dt> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 779156fe-f825-452b-acbe-e2cb189e24d2
 title: Uso delle code timer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d084a03eb25301f94361c1e7ca6b76dd9fee269
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: 43a5876b99b7de4da1d2265c5f13cf038b2d63885245037e5f0daec8310a2423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765022"
 ---
 # <a name="using-timer-queues"></a>Uso delle code timer
 

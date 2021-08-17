@@ -14,9 +14,9 @@ ms.locfileid: "118554025"
 ---
 # <a name="retrieving-amended-classes-using-the-com-api-for-wmi"></a>Recupero di classi modificate tramite l'API COM per WMI
 
-Se si usa l'API COM per WMI per recuperare o archiviare informazioni sulla classe localizzata, specificare le impostazioni locali nel *parametro strLocale* per l'interfaccia [**IWbemLocator::ConnectServer.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) Quando si leggono o si scrivono classi modificate, indicare che si vogliono usare definizioni di classi localizzate specificando WBEM FLAG USE AMENDED QUALIFIERS come flag per il \_ \_ parametro \_ \_ *iFlags.*
+Se si usa l'API COM per WMI per recuperare o archiviare informazioni sulla classe localizzata, specificare le impostazioni locali nel parametro *strLocale* per [**l'interfaccia IWbemLocator::ConnectServer.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) Durante la lettura o la scrittura di classi modificate, indicare che si desidera utilizzare le definizioni di classe localizzate specificando WBEM FLAG USE AMENDED QUALIFIERS come flag per il \_ \_ parametro \_ \_ *iFlags.*
 
-Nella tabella seguente sono elencate le versioni sincrone e asincrone dei metodi che usano il flag WBEM \_ FLAG \_ USE \_ AMENDED \_ QUALIFIERS.
+Nella tabella seguente sono elencate le versioni sincrone e asincrone dei metodi che utilizzano il flag WBEM \_ FLAG \_ USE \_ AMENDED \_ QUALIFIERS.
 
 
 

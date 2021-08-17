@@ -1,19 +1,19 @@
 ---
-description: Percorso dello spazio dei nomi della Shell per l'elemento.
+description: Percorso dello spazio dei nomi shell per l'elemento.
 ms.assetid: e0fb2092-0427-40c9-9e09-aefc5ef017e6
-title: System. ParsingPath
+title: System.ParsingPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae62243ff37464617f87654f8ca1f04c3ea606da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de98a39806d2db752c72da9706eaf35b4b6b5296cb82f3a75bee4d35add3680c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230399"
 ---
-# <a name="systemparsingpath"></a>System. ParsingPath
+# <a name="systemparsingpath"></a>System.ParsingPath
 
-Percorso dello spazio dei nomi della Shell per l'elemento.
+Percorso dello spazio dei nomi shell per l'elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,9 +33,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Questo valore può essere passato a [**SHParseDisplayName**](/windows/win32/api/shlobj_core/nf-shlobj_core-shparsedisplayname) per analizzare il percorso alla cartella della shell corretta. Se l'elemento è un file, il valore è identico a [System. ItemPathDisplay](./props-system-itempathdisplay.md). Se non è possibile accedere all'elemento tramite lo spazio dei nomi della shell, questo valore è VT \_ vuoto.
+Questo valore può essere passato [**a SHParseDisplayName**](/windows/win32/api/shlobj_core/nf-shlobj_core-shparsedisplayname) per analizzare il percorso della cartella Shell corretta. Se l'elemento è un file, il valore è identico a [System.ItemPathDisplay](./props-system-itempathdisplay.md). Se non è possibile accedere all'elemento tramite lo spazio dei nomi Shell, questo valore è VT \_ EMPTY.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -50,13 +50,13 @@ Questo valore può essere passato a [**SHParseDisplayName**](/windows/win32/api/
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -65,7 +65,7 @@ Questo valore può essere passato a [**SHParseDisplayName**](/windows/win32/api/
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

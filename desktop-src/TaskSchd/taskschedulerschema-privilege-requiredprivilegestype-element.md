@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55e9263ae9d02bb384bfbe56101ea82f98c2e076
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f181c2dbe21e31c752a44a4a3b0e27abd0f9396939c9a9dcee3127f796760527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758319"
 ---
 # <a name="privilege-requiredprivilegestype-element"></a>Elemento Privilege (requiredPrivilegesType)
 
@@ -32,7 +32,7 @@ Specifica il diritto di un'attività di eseguire varie operazioni correlate al s
  />
 ```
 
-L'elemento **Privilege** è definito dal tipo complesso [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) .
+**L'elemento Privilege** è definito dal tipo complesso [**requiredPrivilegesType.**](taskschedulerschema-requiredprivilegestype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,11 +46,11 @@ L'elemento **Privilege** è definito dal tipo complesso [**requiredPrivilegesTyp
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, queste informazioni sono accessibili tramite la proprietà [**IPrincipal2:: RequiredPrivilege**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege) .
+Per lo sviluppo in C++, queste informazioni sono accessibili tramite la [**proprietà IPrincipal2::RequiredPrivilege.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che specifica il diritto di un'attività di eseguire varie operazioni correlate al sistema, ad esempio l'arresto del sistema, il caricamento dei driver di dispositivo o la modifica dell'ora di sistema.
+Nel codice XML seguente viene definito un elemento settings che specifica il diritto di un'attività di eseguire varie operazioni correlate al sistema, ad esempio l'arresto del sistema, il caricamento dei driver di dispositivo o la modifica dell'ora di sistema.
 
 
 ```XML
@@ -70,8 +70,8 @@ Nel codice XML seguente viene definito un elemento Settings che specifica il dir
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ Nel codice XML seguente viene definito un elemento Settings che specifica il dir
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  
