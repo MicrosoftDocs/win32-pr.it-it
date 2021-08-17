@@ -1,7 +1,7 @@
 ---
 description: Recupera il nome del pulsante dello stilo.
 ms.assetid: 26fad9bc-43c2-4b00-b76b-bf9f1242da77
-title: 'Metodo ITabletCursorButton:: GetName'
+title: Metodo ITabletCursorButton::GetName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: b21fd92823fb0f60c0936f662982d176a938b4dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41155aa15a2efaeb789387ae3ea7c6863ab0010884ecacb2f7bd3a75453e57b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716821"
 ---
-# <a name="itabletcursorbuttongetname-method"></a>Metodo ITabletCursorButton:: GetName
+# <a name="itabletcursorbuttongetname-method"></a>Metodo ITabletCursorButton::GetName
 
 Recupera il nome del pulsante dello stilo.
 
@@ -40,7 +40,7 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*ppwszName* \[ out\]
+*ppwszName* \[ Cambio\]
 </dt> <dd>
 
 Nome del pulsante dello stilo.
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

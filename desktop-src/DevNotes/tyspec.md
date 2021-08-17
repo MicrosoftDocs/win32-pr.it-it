@@ -13,12 +13,12 @@ api_type:
 - IDLDef
 api_location:
 - Wtypes.idl
-ms.openlocfilehash: b4c8cf38a8f99458e76cabc726aa39ad01a71ebc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15e7ecdc06495c0fa68b2949ae159bbc76b8cababd2b8703d3ebbdebb874399b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075755"
 ---
 # <a name="tyspec-enumeration"></a>Enumerazione TYSPEC
 
@@ -48,55 +48,55 @@ typedef enum tagTYSPEC {
 <span id="TYSPEC_CLSID"></span><span id="tyspec_clsid"></span>**TYSPEC \_ CLSID**
 </dt> <dd>
 
-CLSID.
+A CLSID.
 
 </dd> <dt>
 
-<span id="TYSPEC_FILEEXT"></span><span id="tyspec_fileext"></span>**\_FILEEXT TYSPEC**
+<span id="TYSPEC_FILEEXT"></span><span id="tyspec_fileext"></span>**TYSPEC \_ FILEEXT**
 </dt> <dd>
 
 Estensione di file. Questo valore non è attualmente supportato.
 
 </dd> <dt>
 
-<span id="TYSPEC_MIMETYPE"></span><span id="tyspec_mimetype"></span>**\_MIMETYPE TYSPEC**
+<span id="TYSPEC_MIMETYPE"></span><span id="tyspec_mimetype"></span>**TYSPEC \_ MIMETYPE**
 </dt> <dd>
 
 Tipo MIME. Questo valore non è attualmente supportato.
 
 </dd> <dt>
 
-<span id="TYSPEC_FILENAME"></span><span id="tyspec_filename"></span>**\_nome file TYSPEC**
+<span id="TYSPEC_FILENAME"></span><span id="tyspec_filename"></span>**TYSPEC \_ FILENAME**
 </dt> <dd>
 
 Nome file. Questo valore non è attualmente supportato.
 
 </dd> <dt>
 
-<span id="TYSPEC_PROGID"></span><span id="tyspec_progid"></span>**\_ProgID TYSPEC**
+<span id="TYSPEC_PROGID"></span><span id="tyspec_progid"></span>**TYSPEC \_ PROGID**
 </dt> <dd>
 
-PROGID. Questo valore non è attualmente supportato.
+A PROGID. Questo valore non è attualmente supportato.
 
 </dd> <dt>
 
-<span id="TYSPEC_PACKAGENAME"></span><span id="tyspec_packagename"></span>**TYSPEC \_ PackageName**
+<span id="TYSPEC_PACKAGENAME"></span><span id="tyspec_packagename"></span>**TYSPEC \_ PACKAGENAME**
 </dt> <dd>
 
 Nome del pacchetto. Questo valore non è attualmente supportato.
 
 </dd> <dt>
 
-<span id="TYSPEC_OBJECTID"></span><span id="tyspec_objectid"></span>**\_ObjectID TYSPEC**
+<span id="TYSPEC_OBJECTID"></span><span id="tyspec_objectid"></span>**TYSPEC \_ OBJECTID**
 </dt> <dd>
 
-ID di oggetto. Questo valore non è attualmente supportato.
+Un ID oggetto. Questo valore non è attualmente supportato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'Unione **uCLSSPEC** è definita come segue:
+**L'unione uCLSSPEC** viene definita come segue:
 
 ``` syntax
 typedef union switch(DWORD tyspec) {
@@ -129,7 +129,7 @@ typedef union switch(DWORD tyspec) {
 
 | Requisito | Valore |
 |----------------|---------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>Wtypes. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>Wtypes.idl</dt> </dl> |
 
 
 
@@ -137,7 +137,7 @@ typedef union switch(DWORD tyspec) {
 
 <dl> <dt>
 
-[**Coinstallazione**](/windows/win32/api/objbase/nf-objbase-coinstall)
+[**CoInstall**](/windows/win32/api/objbase/nf-objbase-coinstall)
 </dt> </dl>
 
  

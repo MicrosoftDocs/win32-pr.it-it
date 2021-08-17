@@ -1,27 +1,27 @@
 ---
-description: È possibile utilizzare le funzioni linea e curva per tracciare un grafico a torta.
+description: È possibile usare le funzioni a linee e curve per disegnare un grafico a torta.
 ms.assetid: 788d3bc2-1010-436c-a95f-6fe55daac88e
 title: Disegno di un grafico a torta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d14928c3f90c3222c2a01d6a063d46f109ad7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 0a9bfc5d60ca425deb7d099558366f627d1f94dfbf4889090b5d494f1a5770d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038079"
 ---
 # <a name="drawing-a-pie-chart"></a>Disegno di un grafico a torta
 
-È possibile utilizzare le funzioni linea e curva per tracciare un grafico a torta. La funzione primaria utilizzata per creare grafici a torta è la funzione [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) , che richiede di specificare le coordinate del centro della torta, il raggio della torta, l'angolo iniziale e l'angolo di apertura. Lo screenshot seguente mostra una finestra di dialogo che l'utente può usare per immettere questi valori.
+È possibile usare le funzioni a linee e curve per disegnare un grafico a torta. La funzione principale usata per disegnare grafici a torta è la funzione [**AngleArc,**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) che richiede di specificare le coordinate del centro della torta, il raggio della torta, un angolo iniziale e un angolo di sweep. Lo screenshot seguente mostra una finestra di dialogo che l'utente può usare per immettere questi valori.
 
-![cattura di schermata che mostra una finestra di dialogo per l'immissione di valori per il grafico a torta](images/pie.png)
+![Screenshot che mostra una finestra di dialogo per l'immissione di valori per il grafico a torta](images/pie.png)
 
-I valori indicati sopra producono il grafico a torta seguente.
+I valori mostrati in precedenza producono il grafico a torta seguente.
 
-![screenshot del grafico a torta risultante](images/sampleapp.png)
+![Screenshot del grafico a torta risultante](images/sampleapp.png)
 
-Il modello della finestra di dialogo trovato nello script di risorsa dell'applicazione (. RC) specifica le caratteristiche della finestra di dialogo precedente (l'altezza, i controlli in esso contenuti e il relativo stile), come indicato di seguito.
+Modello di finestra di dialogo trovato nello script di risorsa dell'applicazione (. RC) specifica le caratteristiche della finestra di dialogo precedente ,ovvero l'altezza, i controlli in essa contenuti e il relativo stile, come indicato di seguito.
 
 
 ```C++
@@ -48,9 +48,9 @@ END
 
 
 
-La routine della finestra di dialogo, disponibile nel file di origine dell'applicazione, recupera i dati (coordinate centrali, raggio arco e angoli iniziali e di apertura) attenendosi alla seguente procedura:
+La procedura della finestra di dialogo, disponibile nel file di origine dell'applicazione, recupera i dati (coordinate del centro, raggio dell'arco e angoli di inizio e sweep) seguendo questa procedura:
 
-1.  La funzione ClearBits definita dall'applicazione Inizializza la matrice che riceve l'input dell'utente su zero.
+1.  La funzione ClearBits definita dall'applicazione inizializza la matrice che riceve l'input dell'utente su zero.
 2.  La funzione GetStrLngth definita dall'applicazione recupera la lunghezza della stringa immessa dall'utente.
 3.  La funzione RetrieveInput definita dall'applicazione recupera il valore immesso dall'utente.
 
@@ -180,7 +180,7 @@ DWORD RetrieveInput(LPTSTR cArray, int iLength)
 
 
 
-Per tracciare ogni sezione del grafico a torta, passare i valori immessi dall'utente alla funzione [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) . Per riempire il grafico a torta utilizzando il pennello corrente, incorporare la chiamata a **AngleArc** in una parentesi del percorso. Nell'esempio di codice seguente viene illustrata la parentesi del percorso definita e la chiamata a **AngleArc**.
+Per disegnare ogni sezione del grafico a torta, passare i valori immessi dall'utente alla [**funzione AngleArc.**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) Per riempire il grafico a torta usando il pennello corrente, incorporare la chiamata ad **AngleArc** in una parentesi di percorso. L'esempio di codice seguente illustra la parentesi di percorso definita e la chiamata **a AngleArc**.
 
 
 ```C++

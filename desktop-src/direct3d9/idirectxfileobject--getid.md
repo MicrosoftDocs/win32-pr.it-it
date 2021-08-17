@@ -1,7 +1,7 @@
 ---
 description: Recupera un puntatore al GUID che identifica un oggetto file DirectX. Deprecato.
 ms.assetid: 74c7a1d9-85e4-43eb-bcd8-1f3ddd713e9f
-title: 'Metodo IDirectXFileObject:: GetId (DXFile. h)'
+title: Metodo IDirectXFileObject::GetId (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 336dbde487ecd1b3af7b32d3743f037c235952f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5cb6788afe0b937822b8895790584f6928a7b5aecb564a31540337935763b2f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800182"
 ---
-# <a name="idirectxfileobjectgetid-method"></a>Metodo IDirectXFileObject:: GetId
+# <a name="idirectxfileobjectgetid-method"></a>Metodo IDirectXFileObject::GetId
 
 Recupera un puntatore al GUID che identifica un oggetto file DirectX. Deprecato.
 
@@ -46,7 +46,7 @@ HRESULT GetId(
 
 Tipo: **LPGUID**
 
-Puntatore a un GUID per ricevere l'ID dell'oggetto. La funzione imposterà il GUID su un GUID **null** se l'oggetto non dispone di un ID.
+Puntatore a un GUID per ricevere l'ID dell'oggetto. La funzione imposta il GUID su un GUID **NULL** se l'oggetto non ha un ID.
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

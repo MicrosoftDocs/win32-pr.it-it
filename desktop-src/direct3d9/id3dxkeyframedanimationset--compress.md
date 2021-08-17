@@ -1,7 +1,7 @@
 ---
-description: Trasforma le animazioni in un set di animazioni in un formato compresso e restituisce un puntatore al buffer che archivia i dati compressi.
+description: Trasforma le animazioni in un set di animazioni in un formato compresso e restituisce un puntatore al buffer in cui sono archiviati i dati compressi.
 ms.assetid: b70b6dfb-545f-4309-ab72-9543c3c48fc4
-title: 'Metodo ID3DXKeyframedAnimationSet:: Compress (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::Compress (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cd3a278760f2598df52d251a9e3558a72f954ceb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d444ffde525677715f64bd9641cc8fb3cf9513e2c8805a6be28b280aaa12e015
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802388"
 ---
-# <a name="id3dxkeyframedanimationsetcompress-method"></a>Metodo ID3DXKeyframedAnimationSet:: Compress
+# <a name="id3dxkeyframedanimationsetcompress-method"></a>Metodo ID3DXKeyframedAnimationSet::Compress
 
-Trasforma le animazioni in un set di animazioni in un formato compresso e restituisce un puntatore al buffer che archivia i dati compressi.
+Trasforma le animazioni in un set di animazioni in un formato compresso e restituisce un puntatore al buffer in cui sono archiviati i dati compressi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT Compress(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Uno dei valori [**di \_ flag D3DXCOMPRESSION**](./d3dxcompression-flags.md) che definiscono la modalità di compressione utilizzata per l'archiviazione dei dati del set di animazioni compressi. \_Il valore predefinito di D3DXCOMPRESS è l'unico valore attualmente supportato.
+Uno dei valori [**D3DXCOMPRESSION \_ FLAGS**](./d3dxcompression-flags.md) che definiscono la modalità di compressione usata per l'archiviazione dei dati dei set di animazioni compressi. D3DXCOMPRESS \_ DEFAULT è l'unico valore attualmente supportato.
 
 </dd> <dt>
 
-*Lossiness* \[ in\]
+*Perdita di dati* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Percentuale di perdita di compressione desiderata nell'intervallo compreso tra 0 e 1.
+Rapporto di perdita di compressione desiderato, compreso tra 0 e 1.
 
 </dd> <dt>
 
-*pHierarchy* \[ in\]
+*pHierarchy* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
 
-Puntatore a una gerarchia del frame di trasformazione [**D3DXFRAME**](d3dxframe.md) . Può essere **null**.
+Puntatore a una gerarchia di frame di trasformazione [**D3DXFRAME.**](d3dxframe.md) Può essere **NULL.**
 
 </dd> <dt>
 
-*ppCompressedData* \[ out\]
+*ppCompressedData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore al set di animazioni compresso [**ID3DXBuffer**](id3dxbuffer.md) .
+Indirizzo di un puntatore al set [**di animazioni compresse ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Indirizzo di un puntatore al set di animazioni compresso [**ID3DXBuffer**](id3dx
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

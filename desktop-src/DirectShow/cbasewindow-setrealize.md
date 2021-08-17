@@ -1,7 +1,7 @@
 ---
-description: Il metodo sealize specifica se la finestra realizza le tavolozze.
+description: Il metodo SetRealize specifica se la finestra realizza i palette.
 ms.assetid: ab4a6069-c11f-4126-93bf-6de5277970a1
-title: Metodo CBaseWindow. sealize (Winutil. h)
+title: Metodo CBaseWindow.SetRealize (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 587e54cdbbbf57ddb4cf52e2d5dfb916acaee22d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 825a020b73bc74b38a32daa6f6870b76a009f5b8090e253370c77dfce7d7dc31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954567"
 ---
-# <a name="cbasewindowsetrealize-method"></a>Metodo CBaseWindow. sealize
+# <a name="cbasewindowsetrealize-method"></a>Metodo CBaseWindow.SetRealize
 
-Il `SetRealize` metodo specifica se la finestra realizza le tavolozze.
+Il `SetRealize` metodo specifica se la finestra realizza i colori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void SetRealize(
 *bRealize* 
 </dt> <dd>
 
-Valore booleano che specifica se realizzare le tavolozze. Se **true**, il metodo [**CBaseWindow:: sepalette**](cbasewindow-setpalette.md) realizza le tavolozze.
+Valore booleano che specifica se realizzare i palette. Se **TRUE,** il [**metodo CBaseWindow::SetPalette**](cbasewindow-setpalette.md) realizza i colori.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il metodo **sepalette** realizza la tavolozza specificata. Chiamare questo metodo per modificare il comportamento predefinito, in modo che le tavolozze vengano selezionate ma non realizzate. Questo metodo imposta la variabile membro [**CBaseWindow:: m \_ bNoRealize**](cbasewindow-m-bnorealize.md) .
+Per impostazione predefinita, il **metodo SetPalette** realizza il riquadro specificato. Chiamare questo metodo per modificare il comportamento predefinito, in modo che i tavolozze siano selezionati ma non realizzati. Questo metodo imposta la [**variabile membro CBaseWindow::m \_ bNoRealize.**](cbasewindow-m-bnorealize.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Per impostazione predefinita, il metodo **sepalette** realizza la tavolozza spec
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

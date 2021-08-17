@@ -1,6 +1,6 @@
 ---
-title: Break-vs
-description: Interrompi il ciclo corrente nel EndLoop-vs o endrep-vs più vicino.
+title: break - vs
+description: Uscire dal ciclo corrente all'endloop più vicino, rispetto a endrep o endrep, rispetto a
 ms.assetid: d46a5ecd-8142-4134-b4c8-121a644a85c2
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27751d1d6f17a6c3d64baf3dbb1b4d8b37570209
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: bb51d7c6b398a1ee86afbffe78cd1bf54cf8e5290e5c04f8d7815525137ce303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794569"
 ---
-# <a name="break---vs"></a>Break-vs
+# <a name="break---vs"></a>break - vs
 
-Interrompi il ciclo corrente nel [EndLoop-vs](endloop---vs.md) o [endrep-vs](endrep---vs.md)più vicino.
+Uscire dal ciclo corrente [all'estremità più vicina,](endloop---vs.md) rispetto a [endrep o endrep, rispetto a](endrep---vs.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,7 +29,7 @@ Interrompi il ciclo corrente nel [EndLoop-vs](endloop---vs.md) o [endrep-vs](end
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,24 +37,24 @@ Questa istruzione è supportata nelle versioni seguenti.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | break                  |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

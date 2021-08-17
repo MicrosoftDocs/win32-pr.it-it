@@ -1,17 +1,17 @@
 ---
-title: Label (SM4-ASM)
+title: label (sm4 - asm)
 description: Indica l'inizio di una subroutine.
 ms.assetid: B966AE64-47CA-4A13-A26F-184D9FD26C26
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff4c2d73db5d776c75b6d6339cecb7748a9868d2
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1d9075aa14d72893d7c7862361b44ff636dd9bb6fda62563087ca2404bd1d70b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986461"
 ---
-# <a name="label-sm4---asm"></a>Label (SM4-ASM)
+# <a name="label-sm4---asm"></a>label (sm4 - asm)
 
 Indica l'inizio di una subroutine.
 
@@ -28,7 +28,7 @@ Indica l'inizio di una subroutine.
 
 | Elemento                                                       | Descrizione                         |
 |------------------------------------------------------------|-------------------------------------|
-| <span id="l_"></span><span id="L_"></span>*l\#*<br/> | \[nel \] numero di etichetta.<br/> |
+| <span id="l_"></span><span id="L_"></span>*L\#*<br/> | \[in \] Numero dell'etichetta.<br/> |
 
 
 
@@ -36,9 +36,9 @@ Indica l'inizio di una subroutine.
 
 ## <a name="remarks"></a>Commenti
 
-Un' **etichetta** può essere visualizzata solo immediatamente dopo un'istruzione [**ret**](ret--sm4---asm-.md) che non è annidata in alcuna istruzione di controllo di flusso.
+**Un'etichetta** può essere visualizzata solo dopo un'istruzione [**ret**](ret--sm4---asm-.md) che non è annidata in alcuna istruzione di controllo di flusso.
 
-Il codice prima della prima **etichetta** in un programma è il programma principale. Tutte le subroutine vengono visualizzate alla fine del programma, indicate dalle istruzioni **Label** .
+Il codice prima della prima **etichetta** in un programma è il programma principale. Tutte le subroutine vengono visualizzate alla fine del programma, indicate dalle **istruzioni label.**
 
 Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
 
@@ -57,7 +57,7 @@ Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
                 ret
 ```
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -69,20 +69,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -92,7 +92,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

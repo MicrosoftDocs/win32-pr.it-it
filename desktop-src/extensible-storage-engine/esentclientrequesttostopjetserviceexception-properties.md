@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentClientRequestToStopServiceException'
-title: Proprietà di EsentClientRequestToStopServiceException
+description: Altre informazioni sulle proprietà di EsentClientRequestToStopJetServiceException
+title: Proprietà di EsentClientRequestToStopJetServiceException
 TOCTitle: EsentClientRequestToStopJetServiceException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentClientRequestToStopJetServiceException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentclientrequesttostopjetserviceexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118782611"
 ---
-# <a name="esentclientrequesttostopjetserviceexception-properties"></a>Proprietà di EsentClientRequestToStopServiceException
+# <a name="esentclientrequesttostopjetserviceexception-properties"></a>Proprietà di EsentClientRequestToStopJetServiceException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
-Il [tipo EsentClientRequestToStopServiceException](./esentclientrequesttostopjetserviceexception-class.md) espone i membri seguenti.
+Il [tipo EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -87,6 +87,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe EsentClientRequestToStopServiceException](./esentclientrequesttostopjetserviceexception-class.md)
+[Classe EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-class.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

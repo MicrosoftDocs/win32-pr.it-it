@@ -3,7 +3,7 @@ title: Elemento Day (daysOfMonthType)
 description: Specifica un giorno del mese durante il quale viene eseguita l'attività.
 ms.assetid: b213df09-9301-4a51-b000-edfdafbe861e
 keywords:
-- Utilità di pianificazione elemento Day
+- Elemento Day Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e8e06169d2b758264f181263a5cb717977a1602
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c238ee5bd873c33f3acd2207ba9ad31869b151924dd20f082669b782d207c59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857954"
 ---
 # <a name="day-daysofmonthtype-element"></a>Elemento Day (daysOfMonthType)
 
@@ -30,7 +30,7 @@ Specifica un giorno del mese durante il quale viene eseguita l'attività.
  />
 ```
 
-L'elemento **Day** è definito dal tipo complesso [**daysOfMonthType**](taskschedulerschema-daysofmonthtype-complextype.md) .
+**L'elemento** Day è definito dal [**tipo complesso daysOfMonthType.**](taskschedulerschema-daysofmonthtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,7 +44,7 @@ L'elemento **Day** è definito dal tipo complesso [**daysOfMonthType**](tasksche
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce la parte relativa ai giorni di un calendario mensile che esegue l'attività il primo e il quindicesimo giorno del mese.
+Il codice XML seguente definisce la parte relativa ai giorni di un calendario mensile che esegue l'attività il 1° e il 15° giorno del mese.
 
 
 ```XML
@@ -62,8 +62,8 @@ Il codice XML seguente definisce la parte relativa ai giorni di un calendario me
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il codice XML seguente definisce la parte relativa ai giorni di un calendario me
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

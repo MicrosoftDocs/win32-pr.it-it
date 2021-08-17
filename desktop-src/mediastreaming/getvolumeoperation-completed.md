@@ -1,11 +1,11 @@
 ---
-title: Proprietà GetVolumeOperation. Completed
-description: Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da GetVolumeAsync.
+title: GetVolumeOperation.Completed - proprietà
+description: Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da GetVolumeAsync.
 ms.assetid: 34100EE7-C4CB-4AE0-BD3E-9E23A643F87E
 keywords:
-- API di streaming multimediale delle proprietà completate
-- API di streaming multimediale delle proprietà completa, interfaccia GetVolumeOperation
-- API di streaming multimediale dell'interfaccia GetVolumeOperation, proprietà Completed
+- Proprietà Completata API Streaming multimediale
+- Proprietà completata API Di streaming multimediale, interfaccia GetVolumeOperation
+- Interfaccia GetVolumeOperation API Streaming multimediale, proprietà Completed
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d21577d57e1e29aff1d2b12b92bcbef58a529eba
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 84668f41f12c4920ec45bf70a3a931e6fc9234e213fe0a359ab93f3e34aac724
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118735757"
 ---
-# <a name="getvolumeoperationcompleted-property"></a>Proprietà GetVolumeOperation. Completed
+# <a name="getvolumeoperationcompleted-property"></a>GetVolumeOperation.Completed - proprietà
 
-Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**GetVolumeAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getvolumeasync) .
+Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetVolumeAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getvolumeasync)
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -33,11 +33,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ```C++
 HRESULT put_Completed(
-  [in]  GetVolumeCompletedHandler *value
+  [in]  GetVolumeCompletedHandler *value
 );
 
 HRESULT get_Completed(
-  [out] GetVolumeCompletedHandler **value
+  [out] GetVolumeCompletedHandler **value
 );
 ```
 
@@ -54,6 +54,6 @@ Gestore eventi.
 [**GetVolumeOperation**](getvolumeoperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

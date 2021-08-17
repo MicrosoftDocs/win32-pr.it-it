@@ -1,21 +1,21 @@
 ---
-description: Eseguire una query sul database delle smart card. Possono fornire un elenco di Smart Card fornite da un utente specifico, le interfacce e il provider di servizi primari di una scheda specifica, i gruppi di Reader definiti per il sistema e i lettori in un set di gruppi di lettori.
+description: Eseguire una query smart card database. Possono fornire un elenco di smart card fornite da un utente specifico, le interfacce e il provider di servizi primario di una scheda specifica, i gruppi di lettori definiti per il sistema e i lettori all'interno di un set di gruppi di lettori.
 ms.assetid: a30cbb99-522c-4752-bfcd-75be608785f1
-title: Funzioni di query di database per Smart Card
+title: Funzioni di query del database smart card
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd74c15eb475d5de9ccce84ba5936b724c0d8d82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54050ad6e6b5b4d7e8c91f7cdefab683274d153050100545c9e1ed5452c47cdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917797"
 ---
-# <a name="smart-card-database-query-functions"></a>Funzioni di query di database per Smart Card
+# <a name="smart-card-database-query-functions"></a>Funzioni di query del database smart card
 
-Le funzioni seguenti eseguono una query sul [*database delle smart card*](../secgloss/s-gly.md). Possono fornire un elenco di Smart Card fornite da un utente specifico, le interfacce e il [*provider di servizi primari*](../secgloss/p-gly.md) di una scheda specifica, i [*gruppi di Reader*](../secgloss/r-gly.md) definiti per il sistema e i [*lettori*](../secgloss/r-gly.md) in un set di gruppi di lettori.
+Nelle funzioni seguenti viene eseguita una query [*smart card database*](../secgloss/s-gly.md). Possono fornire un elenco di smart card fornite da un utente specifico, le interfacce [](../secgloss/r-gly.md) e il [*provider*](../secgloss/p-gly.md) di servizi [](../secgloss/r-gly.md) primario di una scheda specifica, i gruppi di lettori definiti per il sistema e i lettori all'interno di un set di gruppi di lettori.
 
-Quando si usano queste funzioni, è possibile eseguire una query sul database completo delle smart card oppure è possibile limitare la ricerca impostando il [*contesto di Resource Manager*](../secgloss/r-gly.md). Il contesto di Resource Manager viene impostato chiamando [**SCardEstablishContext**](/windows/desktop/api/Winscard/nf-winscard-scardestablishcontext) prima di chiamare una funzione di query.
+Quando si usano queste funzioni, è possibile eseguire una query sul database smart card completo oppure limitare la ricerca impostando il contesto [*di resource manager*](../secgloss/r-gly.md). Il contesto di Gestione risorse viene impostato chiamando [**SCardEstablishContext prima**](/windows/desktop/api/Winscard/nf-winscard-scardestablishcontext) di chiamare una funzione di query.
 
 > [!Note]  
 > Senza un contesto specificato, alcune informazioni potrebbero essere ancora inaccessibili a causa di restrizioni di sicurezza.
@@ -26,11 +26,11 @@ Quando si usano queste funzioni, è possibile eseguire una query sul database co
 
 | Argomento                                                  | Descrizione                                                                                                                                                                          |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SCardGetProviderId**](/windows/desktop/api/Winscard/nf-winscard-scardgetproviderida)       | Recuperare l'identificatore (GUID) del [*provider di servizi primario*](../secgloss/p-gly.md) per la scheda specificata. |
-| [**SCardListCards**](/windows/desktop/api/Winscard/nf-winscard-scardlistcardsa)               | Recuperare un elenco di schede introdotte in precedenza dal sistema da un utente specifico.                                                                                                     |
-| [**SCardListInterfaces**](/windows/desktop/api/Winscard/nf-winscard-scardlistinterfacesa)     | Recuperare gli identificatori (GUID) delle interfacce fornite da una scheda specificata.                                                                                                         |
-| [**SCardListReaderGroups**](/windows/desktop/api/Winscard/nf-winscard-scardlistreadergroupsa) | Recuperare un elenco di gruppi di Reader introdotti in precedenza nel sistema.                                                                                                 |
-| [**SCardListReaders**](/windows/desktop/api/Winscard/nf-winscard-scardlistreadersa)           | Recuperare l'elenco di Reader in un set di gruppi di Reader denominati.                                                                                                                    |
+| [**SCardGetProviderId**](/windows/desktop/api/Winscard/nf-winscard-scardgetproviderida)       | Recupera l'identificatore (GUID) del [*provider di servizi primario*](../secgloss/p-gly.md) per la scheda specificata. |
+| [**SCardListCards**](/windows/desktop/api/Winscard/nf-winscard-scardlistcardsa)               | Recuperare un elenco di schede introdotte in precedenza nel sistema da un utente specifico.                                                                                                     |
+| [**SCardListInterfaces**](/windows/desktop/api/Winscard/nf-winscard-scardlistinterfacesa)     | Recupera gli identificatori (GUID) delle interfacce fornite da una scheda specificata.                                                                                                         |
+| [**SCardListReaderGroups**](/windows/desktop/api/Winscard/nf-winscard-scardlistreadergroupsa) | Recuperare un elenco di gruppi di lettori introdotti in precedenza nel sistema.                                                                                                 |
+| [**SCardListReaders**](/windows/desktop/api/Winscard/nf-winscard-scardlistreadersa)           | Recuperare l'elenco di lettori all'interno di un set di gruppi di lettori denominati.                                                                                                                    |
 
 
 

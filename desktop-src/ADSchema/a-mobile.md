@@ -4,7 +4,7 @@ description: Numero di telefono cellulare primario.
 ms.assetid: c35fbaf1-e3f2-45df-98bd-e47ed79373ee
 ms.tgt_platform: multiple
 keywords:
-- Telefono-Mobile-Primary attribute AD Schema
+- schema ad Telefono-Mobile-Primary dell'attributo
 - Attributo mobile Schema di ACTIVE Directory
 topic_type:
 - apiref

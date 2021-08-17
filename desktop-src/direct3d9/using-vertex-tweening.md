@@ -1,19 +1,19 @@
 ---
-description: Per determinare se Direct3D supporta l'interpolazione dei vertici, verificare la presenza del \_ flag di interpolazione D3DVTXPCAPS nel membro VertexProcessingCaps della struttura D3DCAPS9.
+description: Per determinare se Direct3D supporta l'interpolazione dei vertici, cercare il flag TWEENING D3DVTXPCAPS nel membro \_ VertexProcessingCaps della struttura D3DCAPS9.
 ms.assetid: b60c7f96-3752-4703-9059-486d9906c508
-title: Uso dell'interpolazione di vertici (Direct3D 9)
+title: Uso della tween dei vertici (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12ca56cc521b5bff01a5d6af5c2d4ab6b02cd49e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 14c4d2da3f32698cc24e052a152b674ecb023f79e90541af23374c0903d54d55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118797089"
 ---
-# <a name="using-vertex-tweening-direct3d-9"></a>Uso dell'interpolazione di vertici (Direct3D 9)
+# <a name="using-vertex-tweening-direct3d-9"></a>Uso della tween dei vertici (Direct3D 9)
 
-Per determinare se Direct3D supporta l'interpolazione dei vertici, verificare la presenza del \_ flag di interpolazione D3DVTXPCAPS nel membro VertexProcessingCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) . Nell'esempio di codice seguente viene usato il metodo [**IDirect3DDevice9:: GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps) per determinare se l'interpolazione è supportata.
+Per determinare se Direct3D supporta l'interpolazione dei vertici, cercare il flag TWEENING D3DVTXPCAPS nel membro \_ VertexProcessingCaps della [**struttura D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) L'esempio di codice seguente usa il metodo [**IDirect3DDevice9::GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps) per determinare se la tweening è supportata.
 
 
 ```
@@ -29,7 +29,7 @@ if( 0 != (d3dCaps.VertexProcessingCaps & D3DVTXPCAPS_TWEENING) )
 
 
 
-Per usare l'interpolazione vettoriale, è necessario innanzitutto configurare un tipo di vertice personalizzato che usa una seconda posizione normale o una seconda. Nell'esempio di codice seguente viene illustrata una dichiarazione di esempio che include sia un secondo punto che una seconda posizione.
+Per usare la tween vettoriale, è prima necessario configurare un tipo di vertice personalizzato che usa una seconda posizione normale o una seconda. Nell'esempio di codice seguente viene illustrata una dichiarazione di esempio che include sia un secondo punto che una seconda posizione.
 
 
 ```
@@ -46,7 +46,7 @@ struct TEX_VERTEX
 
 
 
-Il passaggio successivo consiste nell'impostare la dichiarazione corrente. Nell'esempio di codice seguente viene illustrato come eseguire questa operazione.
+Il passaggio successivo consiste nell'impostare la dichiarazione corrente. L'esempio di codice seguente illustra come eseguire questa operazione.
 
 
 ```
@@ -63,10 +63,10 @@ D3DVERTEXELEMENT9 decl[] =
 
 
 
-Per ulteriori informazioni sulla creazione di un tipo di vertice personalizzato e di un buffer di vertice, vedere [creazione di un buffer vertex (Direct3D 9)](creating-a-vertex-buffer.md).
+Per altre informazioni sulla creazione di un tipo di vertice personalizzato e di un vertex buffer, vedere [Creating a Vertex Buffer (Direct3D 9) (Creazione di un vertex buffer (Direct3D 9)](creating-a-vertex-buffer.md)).
 
 > [!Note]  
-> Quando è abilitata l'interpolazione dei vertici, nella dichiarazione corrente deve essere presente una seconda posizione o una seconda normale.
+> Quando l'interpolazione dei vertici è abilitata, nella dichiarazione corrente deve essere presente una seconda posizione o una seconda normale.
 
  
 
@@ -74,7 +74,7 @@ Per ulteriori informazioni sulla creazione di un tipo di vertice personalizzato 
 
 <dl> <dt>
 
-[Interpolazione di vertici](vertex-tweening.md)
+[Tweening vertici](vertex-tweening.md)
 </dt> </dl>
 
  

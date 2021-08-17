@@ -1,7 +1,7 @@
 ---
-description: Se è stata raggiunta la fine del flusso, il metodo SendEndOfStream pianifica un \_ evento di completamento EC per il gestore del grafico dei filtri.
+description: Se è stata raggiunta la fine del flusso, il metodo SendEndOfStream pianifica un evento EC \_ COMPLETE per il gestore del grafico del filtro.
 ms.assetid: 3c10c956-e352-4796-a8cd-cc69a02066f2
-title: Metodo CBaseRenderer. SendEndOfStream (Renbase. h)
+title: Metodo CBaseRenderer.SendEndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f04e4c8c90796aafb64870a9d59d38b0a33e7435
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 344783d8e8aac755d157f125b02827c9f362ca96271dccb84134f451b31d1bc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954820"
 ---
-# <a name="cbaserenderersendendofstream-method"></a>CBaseRenderer. SendEndOfStream, metodo
+# <a name="cbaserenderersendendofstream-method"></a>Metodo CBaseRenderer.SendEndOfStream
 
-Se è stata raggiunta la fine del flusso, il `SendEndOfStream` metodo pianifica un \_ evento di completamento EC per il gestore del grafico dei filtri.
+Se è stata raggiunta la fine del flusso, il `SendEndOfStream` metodo pianifica un evento EC COMPLETE per il gestore del grafico dei \_ filtri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                               |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Il gestore del grafico del filtro non accetta le notifiche degli eventi.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                                       |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il gestore del grafico del filtro non accetta notifiche degli eventi.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                                       |
 
 
 
@@ -57,15 +57,15 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro potrebbe ricevere una notifica di fine flusso prima dell'ora di arresto dell'esempio corrente. In tal caso, il filtro deve attendere prima di inviare una notifica di [**\_ completamento della EC**](ec-complete.md) al gestore del grafo dei filtri.
+Il filtro potrebbe ricevere una notifica di fine flusso prima dell'ora di arresto dell'esempio corrente. In tal caso, il filtro deve attendere prima di pubblicare una [**notifica EC \_ COMPLETE**](ec-complete.md) al gestore del grafo del filtro.
 
 Di conseguenza:
 
--   Se il filtro ha ricevuto una notifica di fine del flusso (EOS) iniziale, questo metodo pianifica un evento del timer. Quando l'evento timer viene attivato, il filtro Invia l' \_ evento di completamento EC.
--   Se il filtro ha ricevuto una notifica EOS che non era anticipata, questo metodo invia \_ immediatamente l'evento di completamento EC.
--   Se il filtro non dispone di alcuna notifica EOS in sospeso, il metodo restituisce senza eseguire alcuna operazione.
+-   Se il filtro ha ricevuto una notifica di fine flusso anticipata (EOS), questo metodo pianifica un evento timer. Quando l'evento timer viene attivato, il filtro invia l'evento EC \_ COMPLETE.
+-   Se il filtro ha ricevuto una notifica EOS non anticipata, questo metodo invia immediatamente l'evento EC \_ COMPLETE.
+-   Se il filtro non ha alcuna notifica EOS in sospeso, il metodo restituisce senza eseguire alcuna operazione.
 
-Il metodo di callback del timer è [**CBaseRenderer:: TimerCallback**](cbaserenderer-timercallback.md). Per recapitare l' \_ evento EC completo, il filtro chiama il metodo [**CBaseRenderer:: NotifyEndOfStream**](cbaserenderer-notifyendofstream.md) .
+Il metodo di callback del timer [**è CBaseRenderer::TimerCallback.**](cbaserenderer-timercallback.md) Per recapitare \_ l'evento EC COMPLETE, il filtro chiama il [**metodo CBaseRenderer::NotifyEndOfStream.**](cbaserenderer-notifyendofstream.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Il metodo di callback del timer è [**CBaseRenderer:: TimerCallback**](cbaserend
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

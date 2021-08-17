@@ -1,6 +1,6 @@
 ---
-title: MAD-vs
-description: Moltiplica e aggiunge origini.
+title: mad - vs
+description: Moltiplica e aggiunge le origini.
 ms.assetid: 059f0bf6-d143-4efc-b074-0ed026edb008
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 01e96bb63395fe9e5dd27a17fbb5c0ddd9bf3c17
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a42a4f2d28ed8f0506909199b4c15c26ae3bc434ec250ddae9909ef53525583b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986401"
 ---
-# <a name="mad---vs"></a>MAD-vs
+# <a name="mad---vs"></a>mad - vs
 
-Moltiplica e aggiunge origini.
+Moltiplica e aggiunge le origini.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| MAD DST, src0, src1, src2 |
+| mad dst, src0, src1, src2 |
 |---------------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 -   src2 è un registro di origine.
@@ -42,13 +42,13 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| pazzo                    | x    | x    | x    | x     | x    | x     |
+| matto                    | x    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
 
@@ -66,12 +66,12 @@ dest.w = src0.w * src1.w + src2.w;
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

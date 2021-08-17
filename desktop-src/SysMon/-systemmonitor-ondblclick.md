@@ -1,11 +1,11 @@
 ---
-title: Evento SystemMonitor. OnDblClick
-description: Invia una notifica quando un utente fa doppio clic sulla linea del grafico, sulla barra istogramma o sull'elemento del report con il pulsante sinistro del mouse.
+title: Evento SystemMonitor.OnDblClick
+description: Notifica quando un utente fa doppio clic sulla linea del grafico, sulla barra dell'istogramma o sull'elemento del report con il pulsante sinistro del mouse.
 ms.assetid: 06ad86ff-fcc0-4be5-a54c-7a6aa1147cf9
 keywords:
-- Evento OnDblClick SysMon
-- Evento OnDblClick SysMon, classe SystemMonitor
-- Classe SystemMonitor SysMon, evento OnDblClick
+- SysMon dell'evento OnDblClick
+- Evento OnDblClick SysMon , classe SystemMonitor
+- Classe SystemMonitor SysMon , evento OnDblClick
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f21c6d67468ecb07bbe0fe83bec7b48a086571
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37ef829fad368e7d8cf3b65ab70db4600f6d635b1d36bcc5e3f50fcdbaf429a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883961"
 ---
-# <a name="systemmonitorondblclick-event"></a>Evento SystemMonitor. OnDblClick
+# <a name="systemmonitorondblclick-event"></a>Evento SystemMonitor.OnDblClick
 
-Invia una notifica quando un utente fa doppio clic sulla linea del grafico, sulla barra istogramma o sull'elemento del report con il pulsante sinistro del mouse.
+Notifica quando un utente fa doppio clic sulla linea del grafico, sulla barra dell'istogramma o sull'elemento del report con il pulsante sinistro del mouse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ SystemMonitor.OnDblClick( _
 
 <dl> <dt>
 
-*Indice* \[ di in uscita\]
+*index* \[ in, out\]
 </dt> <dd>
 
-Indice del contatore selezionato nell'oggetto raccolta dei [**contatori**](counters.md) . Se non è stato selezionato alcun contatore, viene restituito un valore di indice pari a 0. in caso contrario, viene restituito l'indice del contatore selezionato.
+Indice del contatore selezionato [**nell'oggetto raccolta Counters.**](counters.md) Se non è stato selezionato alcun contatore, viene restituito un valore di indice pari a 0. In caso contrario, viene restituito l'indice del contatore selezionato.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene generato questo evento, nel riquadro Legenda viene selezionato anche il contatore selezionato dall'utente nel grafico a linee e nell'istogramma. In questo modo è più semplice per l'utente del monitor di sistema verificare quale contatore è selezionato quando vengono visualizzati diversi valori dei contatori.
+Quando viene attivato questo evento, nel riquadro Legenda viene selezionato anche il contatore selezionato dall'utente nel grafico a linee e nell'istogramma. In questo modo l'utente di Monitoraggio di sistema può visualizzare più facilmente il contatore selezionato quando vengono visualizzati diversi valori del contatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Quando viene generato questo evento, nel riquadro Legenda viene selezionato anch
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

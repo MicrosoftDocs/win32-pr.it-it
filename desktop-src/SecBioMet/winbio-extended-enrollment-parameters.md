@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EXTENDED_ENROLLMENT_PARAMETERS (WinBio \_ Adapter. h)
-description: Contiene informazioni aggiuntive necessarie per la creazione di un modello di registrazione da un adattatore del motore.
+title: WINBIO_EXTENDED_ENROLLMENT_PARAMETERS struttura (Adapter \_ Winbio.h)
+description: Contiene informazioni aggiuntive necessarie a un adattatore motore per creare un modello di registrazione.
 ms.assetid: E8007316-0A9D-4F35-A266-273B2406D545
 keywords:
-- Struttura di WINBIO_EXTENDED_ENROLLMENT_PARAMETERS Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EXTENDED_ENROLLMENT_PARAMETERS
+- WINBIO_EXTENDED_ENROLLMENT_PARAMETERS struttura Windows'API Biometric Framework
+- PWINBIO_EXTENDED_ENROLLMENT_PARAMETERS puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4f041d131bcee540a75a131b4179947fbe8e394
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55173b5badfb8764cfc9c681f4ed92e2f0d1c50e5db09075185af9e5db2e6433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910490"
 ---
-# <a name="winbio_extended_enrollment_parameters-structure"></a>WINBIO \_ \_ struttura dei parametri di registrazione estesa \_
+# <a name="winbio_extended_enrollment_parameters-structure"></a>Struttura DEI PARAMETRI \_ DI \_ REGISTRAZIONE ESTESA \_ WINBIO
 
-La struttura dei **\_ \_ \_ parametri di registrazione estesa WINBIO** contiene informazioni aggiuntive necessarie a un adattatore del motore per creare un modello di registrazione.
+La **struttura WINBIO \_ EXTENDED ENROLLMENT \_ \_ PARAMETERS** contiene informazioni aggiuntive necessarie a un adattatore motore per creare un modello di registrazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct _WINBIO_EXTENDED_ENROLLMENT_PARAMETERS {
 **Dimensioni**
 </dt> <dd>
 
-Dimensioni (in byte) della struttura dei **\_ \_ \_ parametri di registrazione estesa WINBIO** .
+Dimensione (in byte) della **struttura WINBIO \_ EXTENDED ENROLLMENT \_ \_ PARAMETERS.**
 
 </dd> <dt>
 
-**Sottofattore**
+**Sottofactoring**
 </dt> <dd>
 
-Uno dei valori [**\_ \_ costanti del SOTTOtipo biometrico WINBIO**](winbio-biometric-subtype-constants.md) che fornisce informazioni aggiuntive sulla registrazione.
+Uno dei valori [**di WINBIO \_ BIOMETRIC \_ SUBTYPE Constants**](winbio-biometric-subtype-constants.md) che fornisce informazioni aggiuntive sulla registrazione.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Il Windows Biometric Framework passa questa struttura al metodo [**EngineAdapter
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ Adapter. h (include WinBio \_ Adapter. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ adapter.h (include Winbio \_ adapter.h)</dt> </dl> |
 
 
 

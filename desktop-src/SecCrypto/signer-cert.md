@@ -1,7 +1,7 @@
 ---
-description: Specifica un certificato utilizzato per firmare un documento. Il certificato può essere archiviato in un file di certificato dell'editore del software (SPC) o in un archivio certificati.
+description: Specifica un certificato utilizzato per firmare un documento. Il certificato può essere archiviato in un file SPC (Software Publisher Certificate) o in un archivio certificati.
 ms.assetid: 9a99ce98-237d-4223-ab3d-0576041038e3
-title: Struttura SIGNER_CERT
+title: SIGNER_CERT struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a14f955749e98ca34cda0be2c57a3d5c546afc41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d31670575db045430e78b6c6b3182f4561b0d4784c1e1c0da95ff8629154d2c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898874"
 ---
-# <a name="signer_cert-structure"></a>Struttura del certificato del FIRMATARIo \_
+# <a name="signer_cert-structure"></a>Struttura DEL \_ CERTIFICATO DEL FIRMATARIO
 
-La struttura del certificato del **firmatario \_** specifica un [*certificato*](../secgloss/c-gly.md) utilizzato per firmare un documento. Il certificato può essere archiviato in un file di [*certificato dell'editore del software*](../secgloss/s-gly.md) (SPC) o in un [*archivio certificati*](../secgloss/c-gly.md).
+La **struttura SIGNER \_ CERT** specifica un [*certificato usato*](../secgloss/c-gly.md) per firmare un documento. Il certificato può essere archiviato in un file [*SPC (Software Publisher Certificate)*](../secgloss/s-gly.md) o in un [*archivio certificati*](../secgloss/c-gly.md).
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -53,22 +53,22 @@ typedef struct _SIGNER_CERT {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **dwCertChoice**
 </dt> <dd>
 
-Specifica la modalità di archiviazione del certificato. Il membro può essere costituito da uno o più dei valori seguenti.
+Specifica la modalità di archiviazione del certificato. Questo membro può essere uno o più dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                          | Significato                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SIGNER_CERT_SPC_FILE"></span><span id="signer_cert_spc_file"></span><dl> <dt>**\_ Firmatario \_ \_ File di certificato SPC**</dt> <dt>1</dt> </dl>    | Il certificato viene archiviato in un file SPC. Il membro **pwszSpcFile** contiene il percorso e il nome file del file SPC.<br/>                                                                                                                                                  |
-| <span id="SIGNER_CERT_STORE"></span><span id="signer_cert_store"></span><dl> <dt>**\_ Firmatario \_Archivio certificati**</dt> <dt>2</dt> </dl>              | Il certificato viene archiviato in un archivio certificati. Il membro **pCertStoreInfo** contiene un puntatore a una struttura di informazioni dell'archivio certificati del firmatario che specifica l'archivio certificati in cui è archiviato il certificato. [**\_ \_ \_**](signer-cert-store-info.md)<br/>                 |
-| <span id="SIGNER_CERT_SPC_CHAIN"></span><span id="signer_cert_spc_chain"></span><dl> <dt>**\_ Firmatario \_ \_ Catena di certificati SPC**</dt> <dt>3</dt> </dl> | Il certificato viene archiviato in un file SPC ed è associato a una catena di certificati. Il membro **pSpcChainInfo** contiene un puntatore a una struttura di informazioni della [**catena di SPC del firmatario \_ \_ \_**](signer-spc-chain-info.md) che contiene le informazioni sulla catena per il certificato.<br/> |
+| <span id="SIGNER_CERT_SPC_FILE"></span><span id="signer_cert_spc_file"></span><dl> <dt>**FIRMATARIO \_ CERT \_ SPC \_ FILE**</dt> <dt>1</dt> </dl>    | Il certificato viene archiviato in un file SPC. Il **membro pwszSpcFile** contiene il percorso e il nome file del file SPC.<br/>                                                                                                                                                  |
+| <span id="SIGNER_CERT_STORE"></span><span id="signer_cert_store"></span><dl> <dt>**FIRMATARIO \_ CERT \_ STORE**</dt> <dt>2</dt> </dl>              | Il certificato viene archiviato in un archivio certificati. Il **membro pCertStoreInfo** contiene un puntatore a una struttura [**SIGNER \_ CERT STORE \_ \_ INFO**](signer-cert-store-info.md) che specifica l'archivio certificati in cui è archiviato il certificato.<br/>                 |
+| <span id="SIGNER_CERT_SPC_CHAIN"></span><span id="signer_cert_spc_chain"></span><dl> <dt>**FIRMATARIO \_ CERT \_ SPC \_ CHAIN**</dt> <dt>3</dt> </dl> | Il certificato viene archiviato in un file SPC ed è associato a una catena di certificati. Il **membro pSpcChainInfo contiene** un puntatore a una struttura [**SIGNER \_ SPC CHAIN \_ \_ INFO**](signer-spc-chain-info.md) che contiene le informazioni sulla catena per il certificato.<br/> |
 
 
 
@@ -79,28 +79,28 @@ Specifica la modalità di archiviazione del certificato. Il membro può essere c
 **pwszSpcFile**
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che contiene il percorso e il nome file del file SPC in cui è archiviato il certificato. Questo membro viene utilizzato solo se il membro **dwCertChoice** contiene il **\_ \_ \_ file SPC del certificato del firmatario**.
+Puntatore a una stringa Unicode con terminazione Null che contiene il percorso e il nome file del file SPC in cui è archiviato il certificato. Questo membro viene usato solo se il **membro dwCertChoice** contiene **SIGNER \_ CERT \_ SPC \_ FILE**.
 
 </dd> <dt>
 
 **pCertStoreInfo**
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ \_ informazioni dell'archivio certificati del firmatario**](signer-cert-store-info.md) che specifica l'archivio certificati in cui è archiviato il certificato. Questo membro viene usato solo se il membro **dwCertChoice** contiene l' **\_ \_ Archivio del certificato del firmatario**.
+Puntatore a una [**struttura \_ SIGNER CERT \_ STORE \_ INFO**](signer-cert-store-info.md) che specifica l'archivio certificati in cui è archiviato il certificato. Questo membro viene usato solo se il **membro dwCertChoice** contiene **SIGNER \_ CERT \_ STORE.**
 
 </dd> <dt>
 
 **pSpcChainInfo**
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ \_ informazioni della catena SPC del firmatario**](signer-spc-chain-info.md) che contiene le informazioni sulla catena per il certificato. Questo membro viene usato solo se il membro **dwCertChoice** contiene una **\_ \_ \_ catena di certificati SPC del firmatario**.
+Puntatore a una [**struttura SIGNER \_ SPC \_ CHAIN \_ INFO**](signer-spc-chain-info.md) che contiene le informazioni sulla catena per il certificato. Questo membro viene usato solo se il **membro dwCertChoice** contiene **SIGNER \_ CERT \_ SPC \_ CHAIN.**
 
 </dd> <dt>
 
-**HWND**
+**Hwnd**
 </dt> <dd>
 
-Handle della finestra da utilizzare come proprietario di tutte le finestre di dialogo visualizzate. Questo membro non è attualmente in uso e viene ignorato.
+Handle della finestra da utilizzare come proprietario di qualsiasi finestra di dialogo visualizzata. Questo membro non è attualmente utilizzato e viene ignorato.
 
 </dd> </dl>
 
@@ -110,8 +110,8 @@ Handle della finestra da utilizzare come proprietario di tutte le finestre di di
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -119,7 +119,7 @@ Handle della finestra da utilizzare come proprietario di tutte le finestre di di
 
 <dl> <dt>
 
-[**SignerSign**](signersign.md)
+[**Firma del firmatario**](signersign.md)
 </dt> <dt>
 
 [**SignerSignEx**](signersignex.md)

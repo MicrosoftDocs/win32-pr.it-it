@@ -1,5 +1,5 @@
 ---
-description: Se true, non modificare i metadati di questo file. Impostata dall'utente.
+description: Se true, non modificare i metadati di questo file. Impostato dall'utente.
 ms.assetid: ee4ae7f9-0c4f-4127-9098-282641f9ab46
 title: System.Media.UserNoAutoInfo
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118724841"
 ---
 # <a name="systemmediausernoautoinfo"></a>System.Media.UserNoAutoInfo
 
-Se true, non modificare i metadati di questo file. Impostata dall'utente.
+Se true, non modificare i metadati di questo file. Impostato dall'utente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

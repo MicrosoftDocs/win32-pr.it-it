@@ -57,7 +57,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo ha lo stesso effetto del **pulsante Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop oppure nasconde il desktop visualizzando tutte le finestre aperte. Il **metodo ToggleDesktop** non visualizza un'interfaccia utente, ma richiama solo l'azione toggle.
+Questo metodo ha lo stesso effetto del **pulsante Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop oppure nasconde il desktop visualizzando tutte le finestre aperte. Il **metodo ToggleDesktop** non visualizza un'interfaccia utente, ma richiama semplicemente l'azione toggle.
 
 ## <a name="examples"></a>Esempio
 

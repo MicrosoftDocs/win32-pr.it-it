@@ -1,7 +1,7 @@
 ---
-description: Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inchiostrato nel pannello di input.
+description: Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inserito nel pannello di input penna.
 ms.assetid: 68413836-321a-4e75-8538-c5a8fc577c0f
-title: 'Metodo ITipAutocompleteProvider:: UpdatePendingText (TipAutoComplete. h)'
+title: Metodo ITipAutocompleteProvider::UpdatePendingText (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 5c66e625639aa7088b1b3934a2f984d0f4097536
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99fc67b5ba6495e2bdfb8a54de2412ca01cbdd37475d08d20d227b203f2da1bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716431"
 ---
-# <a name="itipautocompleteproviderupdatependingtext-method"></a>Metodo ITipAutocompleteProvider:: UpdatePendingText
+# <a name="itipautocompleteproviderupdatependingtext-method"></a>Metodo ITipAutocompleteProvider::UpdatePendingText
 
-Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inchiostrato nel pannello di input.
+Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inserito nel pannello di input penna.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ HRESULT UpdatePendingText(
 
 <dl> <dt>
 
-*bstrPendingText* \[ in\]
+*bstrPendingText* \[ Pollici\]
 </dt> <dd>
 
 Testo di origine da usare per generare l'elenco di completamento automatico.
@@ -54,8 +54,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo testo non conterrà il testo già inserito nel campo con lo stato attivo. Il provider di completamento automatico è responsabile di prendere in considerazione il testo del campo corrente e la selezione per generare l'elenco di completamento automatico. Quando *bstrPendingText* è **null**, l'elenco di completamento automatico viene generato con il testo corrente a sinistra della selezione nel campo.
+Questo testo non conterrà il testo già inserito nel campo con lo stato attivo. Il provider di completamento automatico è responsabile di prendere in considerazione il testo del campo corrente e la selezione per generare l'elenco di completamento automatico. Quando *bstrPendingText* è **NULL,** l'elenco di completamento automatico viene generato con il testo corrente a sinistra della selezione nel campo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,9 +71,9 @@ Questo testo non conterrà il testo già inserito nel campo con lo stato attivo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                       |
-| Intestazione<br/>                   | <dl> <dt>TipAutoComplete. h (richiede anche PenInputPanel \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>TipAutoComplete.h (richiede anche Peninputpanel \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -85,7 +85,7 @@ Questo testo non conterrà il testo già inserito nel campo con lo stato attivo.
 [**Interfaccia ITipAutocompleteProvider**](itipautocompleteprovider.md)
 </dt> <dt>
 
-[Riferimento al pannello input di testo](text-input-panel-reference.md)
+[Informazioni di riferimento sul pannello Input di testo](text-input-panel-reference.md)
 </dt> </dl>
 
  

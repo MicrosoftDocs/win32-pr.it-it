@@ -1,7 +1,7 @@
 ---
 description: Fornisce i dati di impostazione per un disco rigido virtuale.
 ms.assetid: 492a0b81-86b2-4d7d-a118-6ec14e3971ed
-title: Classe Msvm_VirtualHardDiskSettingData
+title: Msvm_VirtualHardDiskSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,18 +31,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6e13efbb068d15ca4051995e7d9f317eb2ccacab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7f87ba072aaff03ab415ccabe803546a89192ecb1e28d85b628dd0655d47421
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068421"
 ---
-# <a name="msvm_virtualharddisksettingdata-class"></a>\_Classe MSVM VirtualHardDiskSettingData
+# <a name="msvm_virtualharddisksettingdata-class"></a>Classe Msvm \_ VirtualHardDiskSettingData
 
 Fornisce i dati di impostazione per un disco rigido virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,52 +73,52 @@ class Msvm_VirtualHardDiskSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualHardDiskSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualHardDiskSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualHardDiskSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualHardDiskSettingData** ha queste proprietà.
 
 <dl> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Dimensioni in byte del blocco utilizzato dal disco rigido virtuale.
+Dimensioni del blocco utilizzate dal disco rigido virtuale, in byte.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "dati di impostazione del disco rigido virtuale".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Virtual Hard Disk Setting Data".
 
 </dd> <dt>
 
-**Dataalignment**
+**DataAlignment**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Specifica l'allineamento desiderato, in byte, per il payload dei dati del disco virtuale.
+Specifica l'allineamento desiderato, in byte, per il payload dei dati del disco virtuale
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -130,36 +130,36 @@ Specifica l'allineamento desiderato, in byte, per il payload dei dati del disco 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "impostazione dei dati per un disco rigido virtuale".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Setting Data for a Virtual Hard Disk" (Impostazione dei dati per un disco rigido virtuale).
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Formato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Formato del disco rigido virtuale. Si tratta di uno dei valori seguenti.
@@ -199,29 +199,29 @@ Formato del disco rigido virtuale. Si tratta di uno dei valori seguenti.
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **IsPmemCompatible**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Specifica se il disco virtuale può essere utilizzato come archivio di backup per un dispositivo di memoria permanente.
+Specifica se il disco virtuale può essere usato come archivio di backup per un dispositivo con memoria persistente.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -233,10 +233,10 @@ Specifica se il disco virtuale può essere utilizzato come archivio di backup pe
 **LogicalSectorSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Dimensioni del settore logico utilizzate dal disco rigido virtuale, in byte.
@@ -246,26 +246,26 @@ Dimensioni del settore logico utilizzate dal disco rigido virtuale, in byte.
 **MaxInternalSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Dimensione massima del disco rigido virtuale, in byte, visualizzabile dalla macchina virtuale. Questa dimensione verrà arrotondata al multiplo più grande successivo delle dimensioni del settore.
+Dimensioni massime del disco rigido virtuale come visualizzabili dalla macchina virtuale, in byte. Questa dimensione verrà arrotondata per es. al successivo multiplo più grande delle dimensioni del settore.
 
 </dd> <dt>
 
 **ParentIdentifier**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-GUID utilizzato per identificare in modo univoco l'elemento padre del disco rigido virtuale. Se il disco rigido virtuale non dispone di un elemento padre, questo campo è vuoto.
+GUID utilizzato per identificare in modo univoco l'elemento padre del disco rigido virtuale. Se il disco rigido virtuale non ha un elemento padre, questo campo è vuoto.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -277,26 +277,26 @@ GUID utilizzato per identificare in modo univoco l'elemento padre del disco rigi
 **ParentPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Elemento padre del disco rigido virtuale. Se il disco rigido virtuale non dispone di un elemento padre, questa proprietà è vuota.
+Elemento padre del disco rigido virtuale. Se il disco rigido virtuale non ha un elemento padre, questa proprietà è vuota.
 
 </dd> <dt>
 
 **ParentTimestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Timestamp dell'elemento padre del disco rigido virtuale. Se il disco rigido virtuale non dispone di un elemento padre, questo campo è vuoto.
+Timestamp dell'elemento padre del disco rigido virtuale. Se il disco rigido virtuale non ha un elemento padre, questo campo è vuoto.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -308,10 +308,10 @@ Timestamp dell'elemento padre del disco rigido virtuale. Se il disco rigido virt
 **Percorso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Percorso completo del disco rigido virtuale.
@@ -321,10 +321,10 @@ Percorso completo del disco rigido virtuale.
 **PhysicalSectorSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Dimensioni del settore fisico utilizzate dal disco rigido virtuale, in byte.
@@ -334,13 +334,13 @@ Dimensioni del settore fisico utilizzate dal disco rigido virtuale, in byte.
 **PmemAddressAbstractionType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Metodo di astrazione dell'indirizzo di memoria permanente da usare con questo disco virtuale.
+Metodo di astrazione dell'indirizzo di memoria persistente da usare con questo disco virtuale.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -375,26 +375,26 @@ Metodo di astrazione dell'indirizzo di memoria permanente da usare con questo di
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Tipo di disco rigido virtuale. Si tratta di uno dei valori seguenti.
+Tipo di disco rigido virtuale. Questo sarà uno dei valori seguenti.
 
 <dt>
 
 <span id="Fixed"></span><span id="fixed"></span><span id="FIXED"></span>
 
-**Corretto** (2)
+**Risolto** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dynamic"></span><span id="dynamic"></span><span id="DYNAMIC"></span>
 
-**Dinamica** (3)
+**Dinamico** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -411,21 +411,21 @@ Tipo di disco rigido virtuale. Si tratta di uno dei valori seguenti.
 **VirtualDiskId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-GUID utilizzato per identificare in modo univoco il disco virtuale.
+GUID usato per identificare in modo univoco il disco virtuale.
 
-Quando il metodo [**MSVM \_ servizio. GetVirtualHardDiskSettingData**](getvirtualharddisksettingdata-msvm-imagemanagementservice.md) restituisce un'istanza di **MSVM \_ VirtualHardDiskSettingData**, il client può usare questa proprietà per ottenere l'ID disco univoco del disco rigido virtuale.
+Quando il metodo [**Msvm \_ ImageManagementService.GetVirtualHardDiskSettingData**](getvirtualharddisksettingdata-msvm-imagemanagementservice.md) restituisce un'istanza di **Msvm \_ VirtualHardDiskSettingData,** il client può usare questa proprietà per ottenere l'ID disco univoco del disco rigido virtuale.
 
-Nel rilevamento dei conflitti o in caso contrario, un client può impostare il valore **VirtualDiskId** su un nuovo GUID e passare questa istanza **MSVM \_ VirtualHardDiskSettingData** al metodo [**MSVM \_ servizio. SetVirtualHardDiskSettingData**](setvirtualharddisksettingdata-msvm-imagemanagementservice.md) per modificare l'ID disco del disco rigido virtuale. Se il disco rigido virtuale non è un VHD VHDX o se il disco rigido virtuale è collegato, l'operazione ha esito negativo. L'operazione ha esito negativo anche se il valore passato non è valido, ovvero non è un GUID o ha tutti i 0. L'operazione ha esito positivo automaticamente se il valore passato è uguale all'ID del disco corrente.
+In caso di rilevamento dei conflitti o in caso contrario, un client può impostare il valore **VirtualDiskId** su un nuovo GUID e passare questa istanza **di Msvm \_ VirtualHardDiskSettingData** al metodo [**Msvm \_ ImageManagementService.SetVirtualHardDiskSettingData**](setvirtualharddisksettingdata-msvm-imagemanagementservice.md) per modificare l'ID disco del disco rigido virtuale. Se il disco rigido virtuale non è un disco rigido virtuale VHDX o se il disco rigido virtuale è collegato, l'operazione non riesce. L'operazione ha esito negativo anche se il formato del valore passato non è valido, cio' non è un GUID o ha tutti gli 0. L'operazione ha esito negativo se il valore passato è uguale all'ID disco corrente.
 
-Gli errori generati dalla funzione [**SetVirtualDiskInformation**](/windows/win32/api/virtdisk/nf-virtdisk-setvirtualdiskinformation) vengono propagati tramite questa proprietà. Un client può anche usare lo stesso meccanismo per fornire il valore **VirtualDiskId** in fase di creazione del disco rigido virtuale tramite il metodo [**MSVM \_ servizio. CreateVirtualHardDisk**](createvirtualharddisk-msvm-imagemanagementservice.md) nello stesso spazio dei nomi. Questa operazione può essere usata per creare dischi rigidi virtuali VHD1 o VHD2.
+Gli errori generati dalla [**funzione SetVirtualDiskInformation**](/windows/win32/api/virtdisk/nf-virtdisk-setvirtualdiskinformation) vengono visualizzati tramite questa proprietà. Un client può anche usare lo stesso meccanismo per fornire il **valore VirtualDiskId** durante la creazione del disco rigido virtuale tramite il metodo [**Msvm \_ ImageManagementService.CreateVirtualHardDisk**](createvirtualharddisk-msvm-imagemanagementservice.md) nello stesso spazio dei nomi. Può essere usato per creare dischi rigidi virtuali VHD1 o VHD2.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 </dd> </dl>
 
@@ -435,10 +435,10 @@ Gli errori generati dalla funzione [**SetVirtualDiskInformation**](/windows/win3
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -447,7 +447,7 @@ Gli errori generati dalla funzione [**SetVirtualDiskInformation**](/windows/win3
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
 [**GetVirtualHardDiskSettingData**](getvirtualharddisksettingdata-msvm-imagemanagementservice.md)

@@ -1,19 +1,19 @@
 ---
-title: IAgentCommands getvoice
-description: IAgentCommands getvoice
+title: IAgentCommands GetVoice
+description: IAgentCommands GetVoice
 ms.assetid: ef8983bc-c70c-48c7-9c5f-1dae61028d90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b1915512c89611267df3788e5dcaa84fb0874a4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 99b348904020a53eb11d2bb7884a05f8d98e223a359f796e7d891dafb3dcc402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104399025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105336"
 ---
-# <a name="iagentcommandsgetvoice"></a>IAgentCommands:: getvoice
+# <a name="iagentcommandsgetvoice"></a>IAgentCommands::GetVoice
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetVoice(
@@ -21,24 +21,24 @@ HRESULT GetVoice(
 );
 ```
 
-Recupera il valore della proprietà [**Voice**](voice-property.md) per una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) .
+Recupera il valore della proprietà [**Voice**](voice-property.md) per una [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="pbszVoice"></span><span id="pbszvoice"></span><span id="PBSZVOICE"></span>*pbszVoice*
 </dt> <dd>
 
-Indirizzo di un BSTR che riceve il valore dell'impostazione del testo [**vocale**](voice-property.md) per una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) .
+Indirizzo di un oggetto BSTR che riceve il valore dell'impostazione [**Di**](voice-property.md) testo vocale per una [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommands:: sevoice**](iagentcommands--setvoice.md), [**IAgentCommands:: GetCaption**](iagentcommands--getcaption.md), [**IAgentCommands:: getVisible**](iagentcommands--getvisible.md)
+[**IAgentCommands::SetVoice**](iagentcommands--setvoice.md), [**IAgentCommands::GetCaption**](iagentcommands--getcaption.md), [**IAgentCommands::GetVisible**](iagentcommands--getvisible.md)
 
 
- 
+ 
 
- 
+ 

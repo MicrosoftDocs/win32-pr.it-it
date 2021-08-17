@@ -1,23 +1,23 @@
 ---
-description: Sfumatura alfa di una bitmap
+description: Fusione alfa di una bitmap
 ms.assetid: 01ed3e2e-cfb3-42c9-9030-b64f9db088f1
-title: Sfumatura alfa di una bitmap
+title: Fusione alfa di una bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8410111477d312eab5eb94a170188400d3f4f263
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54870ccf13ec27b982669dc43382c357a932ea9052e5855200f27825ab96eb35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038299"
 ---
-# <a name="alpha-blending-a-bitmap"></a>Sfumatura alfa di una bitmap
+# <a name="alpha-blending-a-bitmap"></a>Fusione alfa di una bitmap
 
-Nell'esempio di codice seguente una finestra viene divisa in tre aree orizzontali. Viene quindi disegnata una bitmap con Blend alfa in ogni area della finestra, come indicato di seguito:
+Nell'esempio di codice seguente una finestra viene suddivisa in tre aree orizzontali. Disegna quindi una bitmap con sfumatura alfa in ognuna delle aree della finestra come indicato di seguito:
 
--   Nell'area superiore, costante Alpha = 50% ma non esiste alcun Alpha di origine.
--   Nell'area intermedia, la costante Alpha = 100% (disabilitata) e l'alfa di origine sono 0 (trasparente) al centro della bitmap e 0xFF (opaque) altrove.
--   Nell'area inferiore, la costante Alpha = 75% e l'Alpha di origine cambiano.
+-   Nell'area superiore, alfa costante = 50%, ma non è presente alcun alfa di origine.
+-   Nell'area centrale, la costante alpha = 100% (disabilitata) e il valore alfa di origine è 0 (trasparente) al centro della bitmap e 0xff (opaco) altrove.
+-   Nell'area inferiore, la costante alpha = 75% e il valore alfa di origine cambiano.
 
 
 ```C++

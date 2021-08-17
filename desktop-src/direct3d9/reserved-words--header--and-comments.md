@@ -4,12 +4,12 @@ ms.assetid: 680211de-3f81-4ea7-b03e-741096b5dde0
 title: Parole riservate, intestazione e commenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8879d0dbb518f92f0d8a6c38793ab315ae48b73e
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: f583084b3faa4777a5fe6031cc247fdb99c27cc1fb23c6a5676e60afe00aba20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044280"
 ---
 # <a name="reserved-words-header-and-comments"></a>Parole riservate, intestazione e commenti
 
@@ -50,7 +50,7 @@ L'intestazione a lunghezza variabile è obbligatoria e deve essere all'inizio de
 
 I valori nella tabella sono delimitati da virgolette per richiamare l'attenzione sul numero di caratteri in ogni valore. Quelli con 4 byte contengono quattro caratteri, quelli con 2 byte contengono due caratteri.
 
-I commenti sono applicabili solo nei file di testo. I commenti possono essere presenti in qualsiasi punto del flusso di dati. Un commento inizia con una doppia barra (//) in stile C++ o con un segno di cancelletto ( \# ). Il commento viene eseguito alla nuova riga successiva. L'esempio seguente mostra i commenti validi.
+I commenti sono applicabili solo nei file di testo. I commenti possono verificarsi in qualsiasi punto del flusso di dati. Un commento inizia con una barra doppia in stile C++ (//) o con un cancelletto ( \# ). Il commento viene eseguito alla nuova riga successiva. L'esempio seguente illustra i commenti validi.
 
 
 ```

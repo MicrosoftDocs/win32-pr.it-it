@@ -1,6 +1,6 @@
 ---
 UID: ''
-title: LsaManageSidNameMapping (funzione)
+title: Funzione LsaManageSidNameMapping
 description: Aggiunge o rimuove i mapping SID/nome dal set di mapping registrato con il servizio di ricerca LSA.
 old-location: ''
 ms.assetid: na
@@ -36,18 +36,18 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: fc0065c3964718d690149693f3c71ec4e9f676ec
-ms.sourcegitcommit: 382c7259008374408368c173e0027fb641c848fe
+ms.openlocfilehash: 6c2a66a318076588b725f74e9f03a23b8a134595b196dbf140850e72a7d78d8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "104336618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118921860"
 ---
-# <a name="lsamanagesidnamemapping-function"></a>LsaManageSidNameMapping (funzione)
+# <a name="lsamanagesidnamemapping-function"></a>Funzione LsaManageSidNameMapping
 
 ## <a name="description"></a>Descrizione
 
-La funzione **LsaManageSidNameMapping** aggiunge o rimuove i mapping SID/Name dal set di mapping registrato con il servizio di ricerca LSA.
+La **funzione LsaManageSidNameMapping** aggiunge o rimuove i mapping SID/nome dal set di mapping registrato con il servizio di ricerca LSA.
 
 ```cpp
 void WINAPI LsaManageSidNameMapping(
@@ -61,30 +61,30 @@ void WINAPI LsaManageSidNameMapping(
 
 ### <a name="optype-in"></a>OpType [in]
 
-Indica se è in corso la chiamata di questa funzione per aggiungere o rimuovere un mapping SID/Name.
+Indica se viene chiamata questa funzione per aggiungere o rimuovere un MAPPING SID/nome.
 
 ### <a name="opinput-in"></a>OpInput [in]
 
-Indica i valori di dominio, account e SID da utilizzare durante l'operazione. È anche possibile impostare flag aggiuntivi all'interno di questa struttura.
+Indica i valori di dominio, account e SID da usare durante questa operazione. All'interno di questa struttura è anche possibile impostare flag aggiuntivi.
 
 ### <a name="opoutput-out"></a>OpOutput [out]
 
-Contiene un valore di [LSA_SID_NAME_MAPPING_OPERATION_ERROR](/previous-versions/windows/desktop/legacy/dn280707(v=vs.85)) che indica l'esito positivo o negativo dell'operazione.
+Contiene un valore [di](/previous-versions/windows/desktop/legacy/dn280707(v=vs.85)) LSA_SID_NAME_MAPPING_OPERATION_ERROR che indica l'esito positivo o negativo dell'operazione.
 
 | Valore | Significato |
 |-------|---------|
 | **Success** | L'operazione è stata completata senza errori. |
 | **NonMappingError** | Si è verificato un errore non correlato al mapping del nome SID. |
-| **NameCollision** | Operazione non riuscita a causa di un conflitto di nomi. |
-| **SidCollision** | Operazione non riuscita a causa di un conflitto SID. |
+| **NameCollision** | Errore dell'operazione a causa di un conflitto di nomi. |
+| **SidCollision** | Errore dell'operazione a causa di un conflitto di SID. |
 | **DomainNotFound** | Dominio corrispondente non trovato. |
-| **DomainSidPrefixMismatch** | Il prefisso di dominio del SID specificato non è corretto. |
-| **MappingNotFound** | Il mapping non è stato trovato nella cache. |
+| **DomainSidPrefixMismatch** | Il SID specificato non ha il prefisso di dominio corretto. |
+| **MappingNotFound** | Mapping non trovato nella cache. |
 
 ## <a name="returns"></a>Restituisce
 
 Se il mapping viene inserito correttamente, il valore restituito viene STATUS_SUCCESS.
-In caso contrario, se la funzione ha esito negativo a causa di conflitti di nome o SID, viene restituito STATUS_INVALID_PARAMETER errore.
+In caso contrario, se la funzione ha esito negativo a causa di siD o conflitti di nome, STATUS_INVALID_PARAMETER verrà restituito un errore.
 
 ## <a name="remarks"></a>Commenti
 

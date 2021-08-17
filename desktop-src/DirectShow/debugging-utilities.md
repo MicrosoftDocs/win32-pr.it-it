@@ -4,22 +4,22 @@ ms.assetid: 1d40745f-9282-45ca-96e1-ed2a6f03cb98
 title: Utilità di debug
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cac574e5a7129e9a1f07167898d367e6bfa30173
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f68b8ff1e2b8cb48de2997895ba1a5ee6b50570d6c94ea94700e15c81eb4d061
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953230"
 ---
 # <a name="debugging-utilities"></a>Utilità di debug
 
-Questa sezione contiene le voci di riferimento per le macro e le funzioni fornite da DirectShow per facilitare il debug. Per usare queste funzioni, è necessario compilare la libreria di classi base DirectShow.
+Questa sezione contiene voci di riferimento per le macro e le funzioni DirectShow per facilitare il debug. Per usare queste funzioni, è necessario compilare la DirectShow della classe base.
 
--   [Macro di asserzione e punti di interruzione](assert-and-breakpoint-macros.md)
--   [Funzioni di debug della sezione critica](critical-section-debugging-functions.md)
+-   [Macro di asserzione e di punto di interruzione](assert-and-breakpoint-macros.md)
+-   [Funzioni di debug delle sezioni critiche](critical-section-debugging-functions.md)
 -   [Funzioni di output di debug](debug-output-functions.md)
--   [Macro di convalida del puntatore](pointer-validation-macros.md)
--   [Funzioni di debug di attesa](wait-debugging-functions.md)
+-   [Macro di convalida dei puntatori](pointer-validation-macros.md)
+-   [Funzioni di debug wait](wait-debugging-functions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -28,7 +28,7 @@ Questa sezione contiene le voci di riferimento per le macro e le funzioni fornit
 [Debug in DirectShow](debugging-in-directshow.md)
 </dt> <dt>
 
-[Uso delle classi di base di DirectShow](using-the-directshow-base-classes.md)
+[Uso delle classi DirectShow base](using-the-directshow-base-classes.md)
 </dt> </dl>
 
  

@@ -1,39 +1,39 @@
 ---
-description: Le costanti seguenti vengono utilizzate dall'Data Protection API CNG.
+description: Le costanti seguenti vengono usate dal Data Protection API CNG.
 ms.assetid: 4E43FAA9-7D6F-43DB-A998-189411E0AB4C
-title: Costanti DPAPI CNG (NCryptprotect. h)
+title: Costanti DPAPI CNG (NCryptprotect.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ece376a0b7282f26ef933b249a1356b2d012d438
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1afc589afa113250728b46639b7cd47442034f7b3bc82264099f334919a94c76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908799"
 ---
 # <a name="cng-dpapi-constants"></a>Costanti DPAPI CNG
 
-Le costanti seguenti vengono utilizzate dall'Data Protection API CNG.
+Le costanti seguenti vengono usate dal Data Protection API CNG.
 
 <dl> <dt>
 
-<span id="NCRYPT_DESCR_DELIMITER_AND"></span><span id="ncrypt_descr_delimiter_and"></span>**\_DElimitatore NCRYPT descr \_ \_ e**
+<span id="NCRYPT_DESCR_DELIMITER_AND"></span><span id="ncrypt_descr_delimiter_and"></span>**DELIMITATORE DESCR NCRYPT \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
-L "E"
+L" E "
 </dt> <dt>
 
 
 
-Può essere usato per testare una stringa del descrittore di protezione per un delimitatore e.
+Può essere usato per testare una stringa del descrittore di protezione per un delimitatore AND.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_DESCR_EQUAL"></span><span id="ncrypt_descr_equal"></span>**NCRYPT \_ Descr \_ uguale a**
+<span id="NCRYPT_DESCR_EQUAL"></span><span id="ncrypt_descr_equal"></span>**NCRYPT \_ DESCR \_ UGUALE**
 </dt> <dd> <dl> <dt>
 
-L "="
+L"="
 </dt> <dt>
 
 
@@ -43,20 +43,20 @@ Può essere usato per testare una stringa del descrittore di protezione per un s
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_DESCR_DELIMITER_OR"></span><span id="ncrypt_descr_delimiter_or"></span>**\_DElimitatore NCRYPT descr \_ \_ o**
+<span id="NCRYPT_DESCR_DELIMITER_OR"></span><span id="ncrypt_descr_delimiter_or"></span>**DELIMITATORE DESCR NCRYPT \_ \_ \_ O**
 </dt> <dd> <dl> <dt>
 
-L "O"
+L" OR "
 </dt> <dt>
 
 
 
-Può essere usato per testare una stringa del descrittore di protezione per un delimitatore o.
+Può essere usato per testare una stringa del descrittore di protezione per un delimitatore OR.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_LOCAL"></span><span id="ncrypt_key_protection_algorithm_local"></span>**\_algoritmo di protezione con chiave NCRYPT \_ \_ \_ locale**
+<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_LOCAL"></span><span id="ncrypt_key_protection_algorithm_local"></span>**ALGORITMO DI PROTEZIONE DELLE CHIAVI NCRYPT \_ \_ \_ \_ LOCALE**
 </dt> <dd> <dl> <dt>
 
 "LOCAL"
@@ -64,19 +64,19 @@ Può essere usato per testare una stringa del descrittore di protezione per un d
 
 
 
-Il descrittore di protezione locale protegge il contenuto della sessione di accesso, dell'utente corrente o del computer locale come identificato dalle costanti seguenti:
+Il descrittore di protezione LOCAL protegge il contenuto per la sessione di accesso, l'utente corrente o il computer locale, come identificato dalle costanti seguenti:
 
--   **\_ \_ \_ accesso locale per la protezione della chiave NCRYPT \_**
--   **utente locale di NCRYPT \_ Key \_ Protection \_ \_**
--   **\_ \_ computer locale di protezione con chiave NCRYPT \_ \_**
+-   **ACCESSO LOCALE DI NCRYPT \_ KEY \_ \_ \_ PROTECTION**
+-   **UTENTE LOCALE DI PROTEZIONE \_ \_ DELLE CHIAVI \_ NCRYPT \_**
+-   **COMPUTER LOCALE \_ DI PROTEZIONE \_ DELLE CHIAVI \_ NCRYPT \_**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_SDDL"></span><span id="ncrypt_key_protection_algorithm_sddl"></span>**\_ \_ SDDL algoritmo di protezione con chiave NCRYPT \_ \_**
+<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_SDDL"></span><span id="ncrypt_key_protection_algorithm_sddl"></span>**SDDL DELL'ALGORITMO DI PROTEZIONE \_ \_ DELLE \_ \_ CHIAVI NCRYPT**
 </dt> <dd> <dl> <dt>
 
-SDDL
+"SDDL"
 </dt> <dt>
 
 
@@ -86,10 +86,10 @@ Protegge il contenuto in una stringa SDDL (Security Descriptor Definition Langua
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_SID"></span><span id="ncrypt_key_protection_algorithm_sid"></span>**\_ \_ SID algoritmo di protezione con chiave NCRYPT \_ \_**
+<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_SID"></span><span id="ncrypt_key_protection_algorithm_sid"></span>**SID DELL'ALGORITMO NCRYPT \_ KEY \_ \_ PROTECTION \_**
 </dt> <dd> <dl> <dt>
 
-SID
+"SID"
 </dt> <dt>
 
 
@@ -99,86 +99,86 @@ Il descrittore di protezione SID contiene un'identità di gruppo o entità.
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_WEBCREDENTIALS"></span><span id="ncrypt_key_protection_algorithm_webcredentials"></span>**\_ \_ \_ credenziali webcredentials dell'algoritmo NCRYPT Key Protection \_**
+<span id="NCRYPT_KEY_PROTECTION_ALGORITHM_WEBCREDENTIALS"></span><span id="ncrypt_key_protection_algorithm_webcredentials"></span>**\_WEBCREDENTIALS \_ \_ DELL'ALGORITMO DI \_ PROTEZIONE DELLE CHIAVI NCRYPT**
 </dt> <dd> <dl> <dt>
 
-"Webcredentials"
+"WEBCREDENTIALS"
 </dt> <dt>
 
 
 
-Protegge le credenziali dell'account Web di un utente.
+Protegge dalle credenziali dell'account Web di un utente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_LOCAL_LOGON"></span><span id="ncrypt_key_protection_local_logon"></span>**\_ \_ \_ accesso locale per la protezione della chiave NCRYPT \_**
+<span id="NCRYPT_KEY_PROTECTION_LOCAL_LOGON"></span><span id="ncrypt_key_protection_local_logon"></span>**ACCESSO LOCALE DI NCRYPT \_ KEY \_ \_ \_ PROTECTION**
 </dt> <dd> <dl> <dt>
 
-accesso
+"logon"
 </dt> <dt>
 
 
 
-Protegge il contenuto nella sessione di accesso corrente. Gli utenti non saranno in grado di decrittografare il contenuto protetto dopo la disconnessione o il riavvio.
+Protegge il contenuto della sessione di accesso corrente. Gli utenti non potranno decrittografare il contenuto protetto dopo la disconnessione o il riavvio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_LOCAL_MACHINE"></span><span id="ncrypt_key_protection_local_machine"></span>**\_ \_ computer locale di protezione con chiave NCRYPT \_ \_**
+<span id="NCRYPT_KEY_PROTECTION_LOCAL_MACHINE"></span><span id="ncrypt_key_protection_local_machine"></span>**COMPUTER LOCALE \_ DI PROTEZIONE \_ DELLE CHIAVI \_ NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
-macchina
+"computer"
 </dt> <dt>
 
 
 
-Protegge il contenuto nel computer locale. Tutti gli utenti del computer locale possono decrittografare il contenuto protetto.
+Protegge il contenuto nel computer locale. Tutti gli utenti nel computer locale possono decrittografare il contenuto protetto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_PROTECTION_LOCAL_USER"></span><span id="ncrypt_key_protection_local_user"></span>**utente locale di NCRYPT \_ Key \_ Protection \_ \_**
+<span id="NCRYPT_KEY_PROTECTION_LOCAL_USER"></span><span id="ncrypt_key_protection_local_user"></span>**UTENTE LOCALE DI PROTEZIONE \_ \_ DELLE CHIAVI \_ NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
-utente
+"user"
 </dt> <dt>
 
 
 
-Protegge il contenuto nella sessione utente corrente. Solo questo utente nel computer locale sarà in grado di decrittografare il contenuto protetto.
+Protegge il contenuto della sessione utente corrente. Solo questo utente nel computer locale sarà in grado di decrittografare il contenuto protetto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MS_KEY_PROTECTION_PROVIDER"></span><span id="ms_key_protection_provider"></span>**\_provider di \_ protezione con chiave MS \_**
+<span id="MS_KEY_PROTECTION_PROVIDER"></span><span id="ms_key_protection_provider"></span>**PROVIDER \_ DI PROTEZIONE DELLA CHIAVE \_ \_ MS**
 </dt> <dd> <dl> <dt>
 
-"Provider Microsoft per la protezione delle chiavi"
+"Provider di protezione delle chiavi Microsoft"
 </dt> <dt>
 
 
 
-Rappresenta il provider Microsoft per la protezione delle chiavi che supporta formati rappresentati dalle costanti seguenti:
+Rappresenta il provider di protezione delle chiavi Microsoft che supporta i formati rappresentati dalle costanti seguenti:
 
--   **\_ \_ SID algoritmo di protezione con chiave NCRYPT \_ \_**
--   **\_algoritmo di protezione con chiave NCRYPT \_ \_ \_ locale**
--   **\_ \_ SDDL algoritmo di protezione con chiave NCRYPT \_ \_**
+-   **SID DELL'ALGORITMO NCRYPT \_ KEY \_ \_ PROTECTION \_**
+-   **ALGORITMO DI PROTEZIONE DELLE CHIAVI NCRYPT \_ \_ \_ \_ LOCALE**
+-   **SDDL DELL'ALGORITMO DI PROTEZIONE \_ \_ DELLE \_ \_ CHIAVI NCRYPT**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINDOWS_CLIENT_KEY_PROTECTION_PROVIDER"></span><span id="windows_client_key_protection_provider"></span>**\_provider di \_ protezione con chiave client \_ Windows \_**
+<span id="WINDOWS_CLIENT_KEY_PROTECTION_PROVIDER"></span><span id="windows_client_key_protection_provider"></span>**\_PROVIDER DI PROTEZIONE DELLE CHIAVI CLIENT \_ \_ \_ WINDOWS**
 </dt> <dd> <dl> <dt>
 
-"Windows client key protection provider"
+"Windows provider di protezione delle chiavi client"
 </dt> <dt>
 
 
 
-Rappresenta il provider di protezione con chiave Microsoft disponibile solo nel client e che supporta formati rappresentati dalle costanti seguenti:
+Rappresenta il provider di protezione delle chiavi Microsoft disponibile solo nel client e che supporta i formati rappresentati dalle costanti seguenti:
 
--   **\_ \_ \_ credenziali webcredentials dell'algoritmo NCRYPT Key Protection \_**
+-   **\_WEBCREDENTIALS \_ \_ DELL'ALGORITMO DI \_ PROTEZIONE DELLE CHIAVI NCRYPT**
 
 
 </dt> </dl> </dd> </dl>
@@ -189,9 +189,9 @@ Rappresenta il provider di protezione con chiave Microsoft disponibile solo nel 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>NCryptprotect. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>NCryptprotect.h</dt> </dl> |
 
 
 

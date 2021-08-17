@@ -44,11 +44,11 @@ Estende [**l'oggetto IShellDispatch**](ishelldispatch.md) con un'ampia gamma di 
 | Metodo                                                               | Descrizione                                                                        |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
 | [**CanStartStopService**](ishelldispatch2-canstartstopservice.md)   | Determina se l'utente corrente può avviare e arrestare il servizio denominato.<br/>    |
-| [**FindPrinter**](ishelldispatch2-findprinter.md)                   | Visualizza la **finestra di dialogo Trova** stampante.<br/>                               |
+| [**FindPrinter**](ishelldispatch2-findprinter.md)                   | Consente di visualizzare **la finestra di dialogo** Trova stampante .<br/>                               |
 | [**GetSystemInformation**](ishelldispatch2-getsysteminformation.md) | Recupera le informazioni di sistema.<br/>                                           |
 | [**IsRestricted**](ishelldispatch2-isrestricted.md)                 | Recupera l'impostazione di restrizione di un gruppo dal Registro di sistema.<br/>              |
-| [**IsServiceRunning**](ishelldispatch2-isservicerunning.md)         | Restituisce un valore che indica se un determinato servizio è in esecuzione.<br/> |
-| [**ServiceStart**](ishelldispatch2-servicestart.md)                 | Avvia un servizio denominato.<br/>                                                 |
+| [**Esecuzione di IsServiceRunning**](ishelldispatch2-isservicerunning.md)         | Restituisce un valore che indica se un determinato servizio è in esecuzione.<br/> |
+| [**Avvio del servizio**](ishelldispatch2-servicestart.md)                 | Avvia un servizio denominato.<br/>                                                 |
 | [**ServiceStop**](ishelldispatch2-servicestop.md)                   | Arresta un servizio denominato.<br/>                                                  |
 | [**ShellExecute**](ishelldispatch2-shellexecute.md)                 | Esegue un'operazione specificata su un file specificato.<br/>                     |
 | [**ShowBrowserBar**](ishelldispatch2-showbrowserbar.md)             | Visualizza una barra del browser.<br/>                                                 |
@@ -67,8 +67,8 @@ Per una descrizione dei Windows, vedere la documentazione [relativa ai](../servi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
@@ -82,7 +82,7 @@ Per una descrizione dei Windows, vedere la documentazione [relativa ai](../servi
 [**Idispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Oggetto Shell**](shell.md)
+[**Oggetto shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

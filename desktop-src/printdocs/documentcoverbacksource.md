@@ -4,12 +4,12 @@ ms.assetid: 43a0c881-75cc-4fbc-a0c3-b3eab9dfe4df
 title: DocumentCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be16ab26a4aa3dd7109fee7d630ed354b9b686d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bf2e83451cca940ab251f1ff3ceb25603d21cba8d6ec6dbd617395839917a135
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732941"
 ---
 # <a name="documentcoverbacksource"></a>DocumentCoverBackSource
 

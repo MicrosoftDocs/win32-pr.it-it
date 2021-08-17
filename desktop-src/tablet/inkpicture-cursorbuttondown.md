@@ -4,12 +4,12 @@ ms.assetid: 9ee2c19e-8a44-428b-a4c1-3c7250dcdeda
 title: Evento InkPicture.CursorButtonDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c2017cd7dc2291bdb29aa01df3d94f20211b7cf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 97305142e14d2200b3ffc98fd83267c515db28a9d4c93c738eb3010bb1b2e371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717340"
 ---
 # <a name="inkpicturecursorbuttondown-event"></a>Evento InkPicture.CursorButtonDown
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nell'interfaccia di solo invio **\_ IInkColl
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

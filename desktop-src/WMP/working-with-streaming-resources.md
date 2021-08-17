@@ -3,7 +3,7 @@ title: Uso delle risorse di streaming
 description: Uso delle risorse di streaming
 ms.assetid: 0258ad24-f1b9-4cb3-921c-068072fd2dbb
 keywords:
-- Windows Media Player plug-in, Echo sample streaming resources (Risorse di streaming di esempio Echo)
+- Windows Media Player plug-in, echo sample streaming resources (Risorse di streaming di esempio Echo)
 - plug-in, risorse di streaming di esempio Echo
 - plug-in di elaborazione dei segnali digitali, risorse di streaming di esempio Echo
 - Plug-in DSP, risorse di streaming di esempio Echo
@@ -19,7 +19,7 @@ ms.locfileid: "118567170"
 ---
 # <a name="working-with-streaming-resources"></a>Uso delle risorse di streaming
 
-Il progetto di plug-in DSP audio di esempio generato dalla creazione guidata plug-in Windows Media Player non richiede l'allocazione di risorse di streaming da parte del plug-in. L'esempio Echo, tuttavia, richiede un buffer separato per contenere i dati audio per un periodo di tempo per creare l'effetto di ritardo. Il buffer è gestito da due metodi: **IMediaObject::AllocateStreamingResources**, che crea il buffer, e **IMediaObject::FreeStreamingResources**, che rilascia il buffer. I **metodi IMediaObject** vengono implementati in Echo.cpp.
+Il progetto di plug-in DSP audio di esempio generato dalla Creazione guidata plug-in Windows Media Player non richiede l'allocazione di risorse di streaming da parte del plug-in. L'esempio Echo, tuttavia, richiede un buffer separato per contenere i dati audio per un periodo di tempo per creare l'effetto di ritardo. Il buffer è gestito da due metodi: **IMediaObject::AllocateStreamingResources**, che crea il buffer, e **IMediaObject::FreeStreamingResources**, che rilascia il buffer. I **metodi IMediaObject** vengono implementati in Echo.cpp.
 
 Le sezioni seguenti forniscono altre informazioni sulla gestione dei buffer:
 

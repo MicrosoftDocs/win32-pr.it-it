@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMissingFullBackupException'
+description: Altre informazioni sul costruttore EsentMissingFullBackupException
 title: Costruttore EsentMissingFullBackupException
 TOCTitle: 'EsentMissingFullBackupException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingFullBackupException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed43ac1c8dc7313a29220d7f1db2e13e86ac4dc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60122b1108bda54d6e9b9c75145a283d1fae8a848bcd88bc42e827b9f4675fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118776175"
 ---
 # <a name="esentmissingfullbackupexception-constructor"></a>Costruttore EsentMissingFullBackupException
 
 Inizializza una nuova istanza della classe EsentMissingFullBackupException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMissingFullBackupException()
 
 [Membri di EsentMissingFullBackupException](./esentmissingfullbackupexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

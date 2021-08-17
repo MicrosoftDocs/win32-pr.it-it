@@ -1,6 +1,6 @@
 ---
-title: texldl-vs
-description: Campionare una trama con un campionatore specifico. Il livello di dettaglio mipmap specifico da campionare deve essere specificato come quarto componente della coordinata di trama. | texldl-vs
+title: texldl - vs
+description: Campionare una trama con un determinato campionatore. Il particolare livello di dettaglio mipmap campionato deve essere specificato come quarto componente della coordinata della trama. | texldl - vs
 ms.assetid: 774c058d-7b3e-46a9-adce-c9a44efefd78
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: be9240f5307bb1e70b1f10cc1e392b92e5833fd8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7b06d9529d4f7e6bf8e44339290855d50e6668d67f56305fbc3bbeb77ad4b217
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104058520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787851"
 ---
-# <a name="texldl---vs"></a>texldl-vs
+# <a name="texldl---vs"></a>texldl - vs
 
-Campionare una trama con un campionatore specifico. Il livello di dettaglio mipmap specifico da campionare deve essere specificato come quarto componente della coordinata di trama.
+Campionare una trama con un determinato campionatore. Il particolare livello di dettaglio mipmap campionato deve essere specificato come quarto componente della coordinata della trama.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| texldl DST, src0, src1 |
+| texldl dst, src0, src1 |
 |------------------------|
 
 
@@ -33,15 +33,15 @@ Campionare una trama con un campionatore specifico. Il livello di dettaglio mipm
 
 Dove:
 
--   DST è un registro di destinazione.
--   src0 è un registro di origine che fornisce le coordinate di trama per l'esempio di trama.
--   src1 identifica i registri del campionatore \# di origine, dove \# specifica il numero del campionatore di trama da campionare. Il campionatore è associato a una trama e a uno stato di controllo definiti dall'enumerazione [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype) (ad esempio, D3DSAMP \_ MINFILTER).
+-   dst è un registro di destinazione.
+-   src0 è un registro di origine che fornisce le coordinate di trama per il campione di trama.
+-   src1 identifica il registro del campionatore di origine (s ), dove specifica il numero del \# \# campionatore di trama da campionare. Al campionatore è associata una trama e uno stato del controllo definiti dall'enumerazione [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype) ,ad esempio D3DSAMP \_ MINFILTER.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | texldl                 |      |      |      |       | x    | x     |
 
@@ -49,9 +49,9 @@ Dove:
 
  
 
-texldl Cerca il set di trame nella fase del campionatore a cui fa riferimento src1. Il livello di dettaglio è selezionato da src0. w. Questo valore può essere negativo, nel qual caso il livello di dettaglio selezionato è "Zero One" (mapping più grande) con il MAGFILTER. Poiché src0. w è un valore a virgola mobile, il valore frazionario viene usato per interpolare (se MIPFILTER è lineare) tra due livelli MIP. Gli Stati del campionatore MIPMAPLODBIAS e MAXMIPLEVEL vengono rispettati. Per ulteriori informazioni sugli Stati del campionatore, vedere [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype).
+texldl cerca il set di trame nella fase del campionatore a cui fa riferimento src1. Il livello di dettaglio viene selezionato da src0.w. Questo valore può essere negativo, nel qual caso il livello di dettaglio selezionato è il "primo zero" (mappa principale) con MAGFILTER. Poiché src0.w è un valore a virgola mobile, il valore frazionario viene usato per eseguire l'interpolazione (se MIPFILTER è LINEAR) tra due livelli mip. Vengono rispettati gli stati del campionatore MIPMAPLODBIAS e MAXMIPLEVEL. Per altre informazioni sugli stati del campionatore, vedere [**D3DSAMPLERSTATETYPE.**](/windows/desktop/direct3d9/d3dsamplerstatetype)
 
-Se uno shader esegue un campionamento di un campionatore che non dispone di un set di trame, 0001 viene ottenuto nel registro di destinazione.
+Se un programma shader esegue il campionamento da un campionatore per cui non è impostata una trama, viene ottenuto 0001 nel registro di destinazione.
 
 Si tratta di un'approssimazione all'algoritmo del dispositivo di riferimento.
 
@@ -81,23 +81,23 @@ else
 
 Restrizioni:
 
--   Le coordinate di trama non devono essere ridimensionate in base alle dimensioni della trama.
--   DST deve essere un [registro temporaneo](dx9-graphics-reference-asm-vs-registers-temporary.md) (r \# ).
--   DST può accettare una maschera di scrittura. Vedere [mascheramento del registro di destinazione](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md).
--   Le impostazioni predefinite per i componenti mancanti sono 0 o 1 e dipendono dal formato di trama.
--   src1 deve essere un [campionatore (Direct3D 9 ASM-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md) (s \# ). src1 non può usare un modificatore negazioni. src1 può usare Swizzle, che viene applicato dopo il campionamento prima che venga rispettata la maschera di scrittura. Il campionatore deve essere stato dichiarato (usando [DCL \_ samplerType (SM3-vs ASM)](dcl-samplertype---vs.md)) all'inizio dello shader.
--   Il numero di coordinate necessarie per eseguire l'esempio di trama dipende dalla modalità di dichiarazione del campionatore. Se è stata dichiarata come cubo, è richiesta una coordinata di trama a tre componenti (. RGB). La convalida impone che le coordinate fornite a texldl siano sufficienti per la dimensione di trama dichiarata per il campionatore. Tuttavia, non è garantito che l'applicazione imposti effettivamente una trama (tramite l'API) con dimensioni uguali alla dimensione dichiarata per il campionatore. In tal caso, il runtime tenterà di rilevare le mancate corrispondenze (probabilmente solo in fase di debug). Il campionamento di una trama con meno dimensioni rispetto a quelli presenti nella coordinata di trama sarà consentito e si presuppone che ignori i componenti aggiuntivi delle coordinate di trama. Viceversa, il campionamento di una trama con più dimensioni rispetto a quelle presenti nella coordinata di trama non è consentito.
--   Se il src0 (coordinata di trama) è un [registro temporaneo](dx9-graphics-reference-asm-vs-registers-temporary.md) (r \# ), i componenti necessari per la ricerca (descritta in precedenza) devono essere stati scritti in precedenza.
--   Il campionamento di trame RGB senza segno comporterà valori float compresi tra 0,0 e 1,0.
--   Il campionamento delle trame con segno comporterà valori float compresi tra-1,0 e 1,0.
--   Quando si campionano trame a virgola mobile, il valore di Float16 indica che i dati variano entro il numero massimo di \_ Float16. Float32 indica che verrà utilizzato l'intervallo massimo della pipeline. Il campionamento esterno a uno dei due intervalli non è definito.
--   Nessun limite di lettura dipendente.
+-   Le coordinate della trama non devono essere ridimensionate in base alle dimensioni della trama.
+-   dst deve essere un [registro temporaneo](dx9-graphics-reference-asm-vs-registers-temporary.md) (r \# ).
+-   dst può accettare una maschera di scrittura. Vedere [Maschera del registro di destinazione.](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md)
+-   I valori predefiniti per i componenti mancanti sono 0 o 1 e dipendono dal formato della trama.
+-   src1 deve essere un [campionatore (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md) (s \# ). src1 non può usare un modificatore di negazione. src1 può usare lo swizzle, che viene applicato dopo il campionamento prima che venga rispettata la maschera di scrittura. Il campionatore deve essere stato dichiarato (usando [dcl \_ samplerType (sm3 - vs asm)](dcl-samplertype---vs.md)) all'inizio dello shader.
+-   Il numero di coordinate necessarie per eseguire il campione di trama dipende da come è stato dichiarato il campionatore. Se è stato dichiarato come cubo, è necessaria una coordinata di trama a tre componenti (RGB). La convalida impone che le coordinate fornite a texldl siano sufficienti per la dimensione della trama dichiarata per il campionatore. Tuttavia, non è garantito che l'applicazione imposta effettivamente una trama (tramite l'API) con dimensioni uguali alla dimensione dichiarata per il campionatore. In tal caso, il runtime tenterà di rilevare le mancate corrispondenze (possibilmente solo in fase di debug). Il campionamento di una trama con meno dimensioni di quelle presenti nella coordinata di trama sarà consentito e si presuppone che ignori i componenti aggiuntivi delle coordinate della trama. Al contrario, il campionamento di una trama con più dimensioni di quelle presenti nella coordinata della trama non è consentito.
+-   Se src0 (coordinata trama) è un registro temporaneo [(r](dx9-graphics-reference-asm-vs-registers-temporary.md) ), i componenti necessari per la ricerca (descritti in precedenza) devono \# essere stati scritti in precedenza.
+-   Il campionamento di trame RGB senza segno avrà come risultato valori float compresi tra 0,0 e 1,0.
+-   Il campionamento delle trame con segno comporta valori float compresi tra -1,0 e 1,0.
+-   Quando si esegue il campionamento di trame a virgola mobile, Float16 indica che i dati saranno intervalli all'interno di MAX \_ FLOAT16. Float32 indica che verrà usato l'intervallo massimo della pipeline. Il campionamento al di fuori di entrambi gli intervalli non è definito.
+-   Non esiste alcun limite di lettura dipendente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

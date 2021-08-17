@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25a77083807c7ed5577b1ab92d71f312d0a38eee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c362e3d63d584b7b961594203b0dd47b03c11a47a44ae1387f0f31b05a8fa2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984401"
 ---
 # <a name="type-baseeapparameters-element"></a>Elemento Type (BaseEapParameters)
 
-L'elemento **Type (BaseEapParameters)** definisce l'elemento segnaposto per il tipo di metodo selezionato e la configurazione specifica del metodo.
+**L'elemento Type (BaseEapParameters)** definisce l'elemento segnaposto per il tipo di metodo selezionato e la configurazione specifica del metodo.
 
 ``` syntax
 <xs:element name="Type"
@@ -31,7 +31,7 @@ L'elemento **Type (BaseEapParameters)** definisce l'elemento segnaposto per il t
  />
 ```
 
-L'elemento **Type** è definito dal tipo complesso [**BaseEapParameters**](baseeapconnectionpropertiesv1schema-baseeapparameters-complextype.md) .
+**L'elemento** Type è definito dal tipo complesso [**BaseEapParameters.**](baseeapconnectionpropertiesv1schema-baseeapparameters-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **Type** è definito dal tipo complesso [**BaseEapParameters**](basee
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -57,7 +57,7 @@ L'elemento **Type** è definito dal tipo complesso [**BaseEapParameters**](basee
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)
+[**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)
 </dt> <dt>
 
 [EAPHost e schema legacy](eaphost-schemas.md)

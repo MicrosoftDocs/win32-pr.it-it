@@ -32,7 +32,7 @@ Contiene il nome visualizzato DN della parte dell'utente di un gruppo.
 | CN                | msSFU-30-Posix-Member                   |
 | Ldap-Display-Name | msSFU30PosixMember                      |
 | Dimensione              | \-                                      |
-| Aggiorna privilegio  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.346             |
 | System-Id-Guid    | c875d82d-2848-4cec-bb50-3c5486d09d57    |
@@ -56,7 +56,7 @@ Contiene il nome visualizzato DN della parte dell'utente di un gruppo.
 | ID collegamento                | 2030                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -77,7 +77,7 @@ Contiene il nome visualizzato DN della parte dell'utente di un gruppo.
 | ID collegamento                | 2030                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -98,7 +98,7 @@ Contiene il nome visualizzato DN della parte dell'utente di un gruppo.
 | ID collegamento                | 2030                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |

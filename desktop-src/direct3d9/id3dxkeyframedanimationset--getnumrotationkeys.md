@@ -1,7 +1,7 @@
 ---
 description: Ottiene il numero di chiavi di rotazione nell'animazione del fotogramma chiave specificata.
 ms.assetid: b39c6585-461d-48fb-a048-9965f58b0736
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetNumRotationKeys (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetNumRotationKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3279f79eeda0b992ac162fbab62687b1a58b0cbd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1355eae98e3f860609950021d75d8570a8593e8b5a241b366111870912808f72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802253"
 ---
-# <a name="id3dxkeyframedanimationsetgetnumrotationkeys-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetNumRotationKeys
+# <a name="id3dxkeyframedanimationsetgetnumrotationkeys-method"></a>Metodo ID3DXKeyframedAnimationSet::GetNumRotationKeys
 
 Ottiene il numero di chiavi di rotazione nell'animazione del fotogramma chiave specificata.
 
@@ -40,18 +40,18 @@ UINT GetNumRotationKeys(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di chiavi di rotazione nell'animazione del fotogramma chiave specificata.
 
@@ -61,8 +61,8 @@ Numero di chiavi di rotazione nell'animazione del fotogramma chiave specificata.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

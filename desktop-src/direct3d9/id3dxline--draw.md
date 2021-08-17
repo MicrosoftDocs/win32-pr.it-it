@@ -1,7 +1,7 @@
 ---
-description: Disegna una striscia di linea nello spazio dello schermo. L'input è sotto forma di matrice che definisce i punti (di D3DXVECTOR2) nell'elenco di righe.
+description: Disegna un elenco di linee nello spazio dello schermo. L'input è sotto forma di matrice che definisce i punti (di D3DXVECTOR2) sull'elenco di linee.
 ms.assetid: 10ad5af5-fb57-46ef-a89f-7a05dcf58826
-title: 'ID3DXLine: Metodo Raw:D (D3dx9core. h)'
+title: Metodo ID3DXLine::D raw (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0a7492fb2128e0d9ec402d5211c20d5569ceb506
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3cb8d55efffb58afefd7c42a6105131da83c48e1731b9d814d5af73f8c3f4f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987351"
 ---
-# <a name="id3dxlinedraw-method"></a>ID3DXLine::D Metodo Raw
+# <a name="id3dxlinedraw-method"></a>Metodo ID3DXLine::D raw
 
-Disegna una striscia di linea nello spazio dello schermo. L'input è sotto forma di matrice che definisce i punti (di [**D3DXVECTOR2**](d3dxvector2.md)) nell'elenco di righe.
+Disegna un elenco di linee nello spazio dello schermo. L'input è sotto forma di matrice che definisce i punti (di [**D3DXVECTOR2)**](d3dxvector2.md)nell'elenco di linee.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT Draw(
 
 <dl> <dt>
 
-*pVertexList* \[ in\]
+*pVertexList* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Matrice di vertici che costituiscono la riga. Vedere [**D3DXVECTOR2**](d3dxvector2.md).
+Matrice di vertici che costituiscono la linea. Vedere [**D3DXVECTOR2.**](d3dxvector2.md)
 
 </dd> <dt>
 
-*dwVertexListCount* \[ in\]
+*dwVertexListCount* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -60,7 +60,7 @@ Numero di vertici nell'elenco dei vertici.
 
 </dd> <dt>
 
-*Colore* \[ in\]
+*Colore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

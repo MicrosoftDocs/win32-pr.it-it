@@ -1,19 +1,19 @@
 ---
-title: Eliminazione del filtro intralciata
-description: Nell'esempio di codice seguente viene illustrato come rendere difficile l'eliminazione di un filtro impostando un DACL.
+title: Impedisci l'eliminazione dei filtri
+description: Il codice di esempio seguente illustra come rendere difficile l'eliminazione di un filtro impostando un elenco DACL.
 ms.assetid: 83c336fa-983e-4e17-86b3-3a42f4824c74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a15df58a6ccae781e20c9830fea63956f91be35
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa4d5de2384116629fed36c170d12b9ec262ca29779aa0cf6d6abc2f4f22f5c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069111"
 ---
-# <a name="hindering-filter-deletion"></a>Eliminazione del filtro intralciata
+# <a name="hindering-filter-deletion"></a>Impedisci l'eliminazione dei filtri
 
-Nell'esempio di codice seguente viene illustrato come rendere difficile l'eliminazione di un filtro impostando un DACL.
+Il codice di esempio seguente illustra come rendere difficile l'eliminazione di un filtro impostando un elenco DACL.
 
 
 ```C++
@@ -133,9 +133,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

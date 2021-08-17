@@ -5,7 +5,7 @@ ms.assetid: 08426923-be3d-4dfe-9ef2-0679eccd1d25
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo Public-Key-Policy
-- Attributo publicKeyPolicy - Schema AD
+- Schema AD dell'attributo publicKeyPolicy
 topic_type:
 - apiref
 api_name:
@@ -29,10 +29,10 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Criteri di chiave pubblica                                     |
+| CN                | Public-Key-Policy                                     |
 | Ldap-Display-Name | publicKeyPolicy                                       |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.420                                |
 | System-Id-Guid    | 80a67e28-9f22-11d0-afdd-00c04fd930c9                  |
@@ -58,7 +58,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
@@ -79,7 +79,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
@@ -100,7 +100,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
@@ -121,7 +121,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
@@ -142,7 +142,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
@@ -163,7 +163,7 @@ Riferimento ai criteri di chiave pubblica per questo dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| A valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |

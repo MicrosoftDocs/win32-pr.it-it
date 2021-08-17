@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetNextSrcEx recupera l'origine successiva dopo l'origine specificata.
 ms.assetid: cda3d079-eeb5-42a9-8854-5c90ae0e2c07
-title: 'Metodo IAMTimelineTrack:: GetNextSrcEx (qedit. h)'
+title: Metodo IAMTimelineTrack::GetNextSrcEx (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 274a4f6800d995e2b456dbd55adf81cf82aa84a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 438fcdbf4f95406994f5bf0cc63ebf5b5f600a9908419b63c4ceace65dfa9659
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952800"
 ---
-# <a name="iamtimelinetrackgetnextsrcex-method"></a>Metodo IAMTimelineTrack:: GetNextSrcEx
+# <a name="iamtimelinetrackgetnextsrcex-method"></a>Metodo IAMTimelineTrack::GetNextSrcEx
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -46,14 +46,14 @@ HRESULT GetNextSrcEx(
 
 <dl> <dt>
 
-*pLast* 
+*Plast* 
 </dt> <dd>
 
-Puntatore all'oggetto di origine precedente oppure **null** per recuperare la prima origine nella traccia.
+Puntatore all'oggetto di origine precedente oppure **NULL** per recuperare la prima origine nella traccia.
 
 </dd> <dt>
 
-*ppNext* \[ out\]
+*ppNext* \[ Cambio\]
 </dt> <dd>
 
 Riceve un puntatore all'interfaccia [**IAMTimelineObj**](iamtimelineobj.md) dell'oggetto di origine successivo.
@@ -62,19 +62,19 @@ Riceve un puntatore all'interfaccia [**IAMTimelineObj**](iamtimelineobj.md) dell
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il metodo recupera un'origine o \_ false in caso contrario.
+Restituisce S \_ OK se il metodo recupera un'origine oppure S FALSE in caso \_ contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo restituisce S \_ OK, l'interfaccia **IAMTimelineObj** restituita presenta un conteggio dei riferimenti in attesa. Assicurarsi di rilasciare l'interfaccia al termine dell'utilizzo.
+Se il metodo restituisce S \_ OK, **l'interfaccia IAMTimelineObj** restituita ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Se il metodo restituisce S \_ OK, l'interfaccia **IAMTimelineObj** restituita pr
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

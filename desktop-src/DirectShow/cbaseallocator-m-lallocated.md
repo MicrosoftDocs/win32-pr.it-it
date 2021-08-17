@@ -1,7 +1,7 @@
 ---
 description: Numero di buffer attualmente allocati.
 ms.assetid: 6a3d0948-7e03-4f41-8014-fa15d4578014
-title: 'Membro CBaseAllocator:: m_lAllocated (Amfilter. h)'
+title: Membro CBaseAllocator::m_lAllocated (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2bee488588cf3fc58334a55e5f1c39957581099c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51a42a9207bd2e3567a3fd2fdd0c4f9290b769fcaa9de4c68b2509713d371733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955360"
 ---
-# <a name="cbaseallocatorm_lallocated-member"></a>Membro lAllocated di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lallocated-member"></a>Membro CBaseAllocator::m \_ lAllocated
 
 Numero di buffer attualmente allocati.
 
@@ -42,8 +42,8 @@ long m_lAllocated;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

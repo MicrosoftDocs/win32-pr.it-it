@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: SystemParameters. LocaleNameMaxLength campo'
-title: Campo SystemParameters. LocaleNameMaxLength
+description: Altre informazioni sul campo SystemParameters.LocaleNameMaxLength
+title: Campo SystemParameters.LocaleNameMaxLength
 TOCTitle: LocaleNameMaxLength field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.LocaleNameMaxLength
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.localenamemaxlength(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 24a90459f53c538f526a523ec908ab2585b07e49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1fa69d7243305f51e29b5e3c76d34ab4ef9413b880ad490731886717cb6c14b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107024"
 ---
-# <a name="systemparameterslocalenamemaxlength-field"></a>Campo SystemParameters. LocaleNameMaxLength
+# <a name="systemparameterslocalenamemaxlength-field"></a>Campo SystemParameters.LocaleNameMaxLength
 
-Lunghezza massima del nome delle impostazioni locali (LOCALE_NAME_MAX_LENGTH da Winnt. h).
+Lunghezza massima di un nome delle impostazioni locali (LOCALE_NAME_MAX_LENGTH da winnt.h).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,6 +59,6 @@ public const int LocaleNameMaxLength
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

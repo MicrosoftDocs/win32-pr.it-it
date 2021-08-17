@@ -1,32 +1,32 @@
 ---
-title: Attributi di matrice MIDL utilizzati in RPC
-description: Pagina di navigazione per gli attributi di matrice MIDL utilizzati in RPC (Remote Procedure Call).
+title: Attributi di matrice MIDL usati in RPC
+description: Pagina di spostamento per gli attributi della matrice MIDL utilizzati in RPC (Remote Procedure Call).
 ms.assetid: 5cdf88fe-fc91-48fa-8edb-b5c6296ec9fe
 keywords:
-- RPC, riferimento, attributi MIDL di RPC (Remote Procedure Call)
+- Chiamata di procedura remota RPC, riferimento, attributi MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb1c21d57aed15797a481a2c718f122f13aa797c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c60ff9a4d37472b54e90954b1c22c5f2b2df6632b54c8a850bc9a5223c189596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928100"
 ---
-# <a name="midl-array-attributes-used-in-rpc"></a>Attributi di matrice MIDL utilizzati in RPC
+# <a name="midl-array-attributes-used-in-rpc"></a>Attributi di matrice MIDL usati in RPC
 
-Questa sezione illustra gli attributi di matrice MIDL negli argomenti seguenti:
+In questa sezione vengono illustrati gli attributi della matrice MIDL negli argomenti seguenti:
 
--   [La \[ dimensione \_ è \] attribute](the-size-is-attribute.md)
--   [La \[ lunghezza \_ è \] attribute](the-length-is-attribute.md)
--   [Il \[ primo \_ è \] e l' \[ ultimo \_ è \] Attributes](the-first-is-and-last-is-attributes.md)
--   [\[Attributo max \_ is \]](the-max-is-attribute.md)
+-   [La \[ dimensione \_ è \] Attribute](the-size-is-attribute.md)
+-   [La \[ lunghezza \_ è \] Attribute](the-length-is-attribute.md)
+-   [Il \[ primo è e \_ \] \[ \_ l'ultimo è \] Attributes](the-first-is-and-last-is-attributes.md)
+-   [Il \[ valore massimo è \_ \] Attribute](the-max-is-attribute.md)
 -   [Combinazione di attributi di matrice](combining-array-attributes.md)
--   [\[Attributo stringa \] nelle matrici](the-string-attribute-in-arrays.md)
+-   [Attributo \[ \] string nelle matrici](the-string-attribute-in-arrays.md)
 
- 
+ 
 
- 
+ 
 
 
 

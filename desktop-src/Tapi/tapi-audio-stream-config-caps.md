@@ -1,21 +1,21 @@
 ---
-description: La \_ struttura dei \_ tappi di configurazione del flusso audio TAPI \_ \_ è contenuta nella \_ struttura dei limiti di configurazione del flusso TAPI \_ \_ quando il membro CapsType è impostato sul membro AudioCap dell'Unione StreamConfigCapsType.
+description: La struttura TAPI AUDIO STREAM CONFIG CAPS è contenuta nella struttura TAPI STREAM CONFIG CAPS quando il membro CapsType è impostato sul membro AudioCap dell'unione \_ \_ \_ \_ \_ \_ \_ StreamConfigCapsType.
 ms.assetid: 61575839-4604-4c8b-ae4d-fe796c3c5314
-title: Struttura TAPI_AUDIO_STREAM_CONFIG_CAPS (Ipmsp. h)
+title: TAPI_AUDIO_STREAM_CONFIG_CAPS struttura (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: daec587a8e760bedd3ab9c6b3469ef8f70b72383
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51fc4777e6d174f7d4aaeac9bbd3f6d467123275b4030c9fa21363223584e8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118861220"
 ---
-# <a name="tapi_audio_stream_config_caps-structure"></a>\_Struttura di \_ \_ Caps di configurazione del flusso audio TAPI \_
+# <a name="tapi_audio_stream_config_caps-structure"></a>Struttura TAPI \_ AUDIO \_ STREAM CONFIG \_ \_ CAPS
 
-\[ Questa struttura non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questa struttura non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-La struttura dei **\_ \_ \_ \_ tappi di configurazione del flusso audio TAPI** è contenuta nella struttura dei [**\_ \_ \_ limiti di configurazione del flusso TAPI**](tapi-stream-config-caps.md) quando il membro **CapsType** è impostato sul membro **AudioCap** dell'Unione [**StreamConfigCapsType**](streamconfigcapstype.md) .
+La struttura TAPI AUDIO STREAM CONFIG CAPS è contenuta nella struttura [**\_ TAPI STREAM \_ CONFIG \_**](tapi-stream-config-caps.md) **\_ \_ \_ \_ CAPS** quando il membro **CapsType** è impostato sul membro **AudioCap** dell'unione [**StreamConfigCapsType.**](streamconfigcapstype.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ La struttura dei **\_ \_ \_ \_ tappi di configurazione del flusso audio TAPI** �
 **Descrizione**
 </dt> <dd>
 
-Descrizione intuitiva del tipo di configurazione del flusso audio da visualizzare agli utenti dell'applicazione.
+Descrizione descrittiva del tipo di configurazione del flusso audio per la visualizzazione agli utenti dell'applicazione.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Numero massimo di bit per campione.
 **BitsPerSampleGranularity**
 </dt> <dd>
 
-Granularità dei bit per i valori di esempio.
+Granularità dei bit per ogni valore di esempio.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Frequenza di campionamento minima.
 **MaximumSampleFrequency**
 </dt> <dd>
 
-Frequenza massima di campionamento.
+Frequenza di campionamento massima.
 
 </dd> <dt>
 
@@ -103,14 +103,14 @@ Granularità dei valori della frequenza di campionamento.
 **MinimumAvgBytesPerSec**
 </dt> <dd>
 
-Media minima di byte al secondo.
+Byte medi minimi al secondo.
 
 </dd> <dt>
 
 **MaximumAvgBytesPerSec**
 </dt> <dd>
 
-Numero massimo di byte media al secondo.
+Numero massimo di byte medi al secondo.
 
 </dd> <dt>
 
@@ -127,8 +127,8 @@ Granularità dei valori di byte al secondo.
 
 | Requisito | Valore |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                       |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                       |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -136,7 +136,7 @@ Granularità dei valori di byte al secondo.
 
 <dl> <dt>
 
-[**\_ \_ tappi configurazione flusso TAPI \_**](tapi-stream-config-caps.md)
+[**TAPI \_ STREAM \_ CONFIG \_ CAPS**](tapi-stream-config-caps.md)
 </dt> </dl>
 
  

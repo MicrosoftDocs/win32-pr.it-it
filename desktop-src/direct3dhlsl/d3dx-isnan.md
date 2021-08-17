@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_IsNan
-description: Determina se il valore è NaN (non un numero).
+title: D3DX_IsNan funzione
+description: Determina se il valore è un valore NaN (Not a Number).
 ms.assetid: 862d1d34-36ab-471e-b3ce-ce71896441e5
 keywords:
-- Funzione D3DX_IsNan HLSL
+- D3DX_IsNan funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60aac82ebfb145bc11aac8d4ab509a4260767a74
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b8851fb216bf400971a281fb589b92205014e006651d4fc89592d98f5c93916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793750"
 ---
-# <a name="d3dx_isnan-function"></a>D3DX \_ isNaN-funzione
+# <a name="d3dx_isnan-function"></a>Funzione \_ IsNan D3DX
 
-Determina se il valore è NaN (non un numero).
+Determina se il valore è un valore NaN (Not a Number).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,7 +37,7 @@ bool D3DX_IsNan(
 
 <dl> <dt>
 
-*\_V* 
+*\_Presso* 
 </dt> <dd>
 
 Valore specificato.
@@ -46,7 +46,7 @@ Valore specificato.
 
 ## <a name="return-value"></a>Valore restituito
 
-true se NaN; in caso contrario, false.
+true se un valore NaN; in caso contrario, false.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ true se NaN; in caso contrario, false.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ true se NaN; in caso contrario, false.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

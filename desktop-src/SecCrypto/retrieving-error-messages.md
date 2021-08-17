@@ -1,19 +1,19 @@
 ---
 description: Quando una chiamata al metodo genera un errore, molte funzioni restituiscono un codice di errore.
 ms.assetid: 9d60277a-5ee8-471e-bfcd-d104064030a8
-title: Recupero dei messaggi di errore
+title: Recupero di messaggi di errore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cefeab75e4419bc1e36785236962069a6913e84d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d96ffb6627dac4f8612a80c68b1a227516ec645440c56dd7c58672cd8222c23a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900509"
 ---
-# <a name="retrieving-error-messages"></a>Recupero dei messaggi di errore
+# <a name="retrieving-error-messages"></a>Recupero di messaggi di errore
 
-Quando una chiamata al metodo genera un errore, molte funzioni restituiscono un codice di errore. Per la maggior parte delle interfacce di Servizi certificati e degli elementi API che restituiscono un codice di errore, è possibile recuperare il testo del messaggio di errore chiamando [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con un handle di modulo **null** . Se **FormatMessage** ha esito negativo, il codice di errore probabilmente è risultato da un errore relativo al database o all'elemento API di backup; la chiamata di **FormatMessage** con un handle di modulo corrispondente alla libreria Ntdsbmsg.dll deve recuperare il testo del messaggio di errore. Nell'esempio seguente viene illustrato come recuperare il testo del messaggio di errore in un'applicazione di Servizi certificati.
+Quando una chiamata al metodo genera un errore, molte funzioni restituiscono un codice di errore. Per la maggior parte delle interfacce di Servizi certificati e degli elementi API che restituiscono un codice di errore, il testo del messaggio di errore può essere recuperato chiamando [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con un handle di modulo **NULL.** Se **FormatMessage non** riesce, è probabile che il codice di errore sia stato generato da un elemento API di backup o da un errore correlato al database. Chiamando **FormatMessage con** un handle di modulo corrispondente alla libreria Ntdsbmsg.dll deve recuperare il testo del messaggio di errore. Nell'esempio seguente viene illustrato come recuperare il testo del messaggio di errore in un'applicazione di Servizi certificati.
 
 
 ```C++
