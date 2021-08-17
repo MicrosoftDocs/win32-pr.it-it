@@ -4,33 +4,33 @@ description: Messaggi MCI
 ms.assetid: 459d0658-4654-4f4c-8a5f-72eccd7abdf3
 keywords:
 - Messaggi MCI
-- Riferimento a MCI, messaggi
+- riferimento MCI, messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 189a5fd6197df8deee736752cc474968fe28b6ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2561411afba88f58de49ddd76375ae71c4f20dbd5c40509b0934fa23f30e5536
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803543"
 ---
 # <a name="mci-messages"></a>Messaggi MCI
 
 I messaggi seguenti vengono usati con MCI.
 
--   [**\_MCINOTIFY mm**](mm-mcinotify.md)
--   [**\_MCISIGNAL mm**](mm-mcisignal.md)
+-   [**MM \_ MCINOTIFY**](mm-mcinotify.md)
+-   [**MM \_ MCISIGNAL**](mm-mcisignal.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento a MCI](mci-reference.md)
+[Informazioni di riferimento su MCI](mci-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

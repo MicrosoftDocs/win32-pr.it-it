@@ -5,7 +5,7 @@ ms.assetid: 61377f8c-728d-43ee-8e84-c6b5638d5e1e
 ms.tgt_platform: multiple
 keywords:
 - Address-Entry-Display-Table-MSDOS attribute AD Schema
-- Attributo addressEntryDisplayTableMSDOS Schema AD
+- Schema AD dell'attributo addressEntryDisplayTableMSDOS
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | CN                | Address-Entry-Display-Table-MSDOS                     |
 | Ldap-Display-Name | addressEntryDisplayTableMSDOS                         |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.400                                |
 | System-Id-Guid    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
@@ -58,7 +58,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -79,7 +79,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -100,7 +100,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -121,7 +121,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -142,7 +142,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -163,7 +163,7 @@ Tabella di visualizzazione MAPI per una voce di indirizzo per il client MSDOS.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |

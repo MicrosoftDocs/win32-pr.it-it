@@ -22,7 +22,7 @@ ms.locfileid: "117790394"
 
 | Costante                     | Valore | Descrizione                              |
 |------------------------------|-------|------------------------------------------|
-| RTM \_ NEXTHOP \_ STATE \_ CREATED | 0     | Indica che è stato creato l'hop successivo. |
+| STATO \_ NEXTHOP RTM \_ \_ CREATO | 0     | Indica che è stato creato l'hop successivo. |
 | RTM \_ NEXTHOP \_ STATE \_ DELETED | 1     | Indica che l'hop successivo è stato eliminato. |
 
 

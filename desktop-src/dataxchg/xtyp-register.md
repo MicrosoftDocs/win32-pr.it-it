@@ -1,6 +1,6 @@
 ---
 title: XTYP_REGISTER transazione (Ddeml.h)
-description: Una funzione di callback di Dynamic Data Exchange (DDE), DdeCallback, riceve il tipo di transazione XTYP REGISTER ogni volta che un'applicazione server DDEML (Dynamic Data Exchange Management Library) usa la funzione DdeNameService per registrare un nome di servizio o ogni volta che viene avviata un'applicazione non DDEML che supporta l'argomento \_ System.
+description: Una funzione di callback di Dynamic Data Exchange (DDE), DdeCallback, riceve il tipo di transazione XTYP REGISTER ogni volta che un'applicazione \_ server Dynamic Data Exchange Management Library (DDEML) usa la funzione DdeNameService per registrare un nome di servizio o ogni volta che viene avviata un'applicazione non DDEML che supporta l'argomento System.
 ms.assetid: 465e9c10-1526-4e2a-8a46-5984043f5a93
 keywords:
 - XTYP_REGISTER dati transazione Exchange
@@ -23,7 +23,7 @@ ms.locfileid: "118544750"
 ---
 # <a name="xtyp_register-transaction"></a>Transazione REGISTER \_ XTYP
 
-Una funzione di callback Dynamic Data Exchange (DDE), [*DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve il tipo di transazione **XTYP \_ REGISTER** ogni volta che un'applicazione server DDEML (Dynamic Data Exchange Management Library) usa la funzione [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) per registrare un nome di servizio o ogni volta che viene avviata un'applicazione non DDEML che supporta l'argomento System.
+Una funzione di callback DDE (Dynamic Data Exchange), [*DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve il tipo di transazione **XTYP \_ REGISTER** ogni volta che un'applicazione server DDEML (Dynamic Data Exchange Management Library) usa la funzione [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) per registrare un nome di servizio o ogni volta che viene avviata un'applicazione non DDEML che supporta l'argomento System.
 
 
 ```C++

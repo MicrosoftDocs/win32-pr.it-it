@@ -1,19 +1,19 @@
 ---
 title: Funzioni DLL di sicurezza RAS
-description: Implementare le funzioni seguenti durante lo sviluppo di una DLL di sicurezza RAS.
+description: Quando si sviluppa una DLL di sicurezza RAS, implementare le funzioni seguenti.
 ms.assetid: c548faa4-0926-40bc-923e-17e17c9289b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 075b58d25bd0c1f040c720683abca6ec7b46cc62
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6596663b86c83989b7479e649e0fe6f11c22497f3a1db89015e2a4d1d1344242
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789487"
 ---
 # <a name="ras-security-dll-functions"></a>Funzioni DLL di sicurezza RAS
 
-Implementare le funzioni seguenti durante lo sviluppo di una DLL di sicurezza RAS.
+Quando si sviluppa una DLL di sicurezza RAS, implementare le funzioni seguenti.
 
 -   [**RasSecurityDialogBegin**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogbegin)
 -   [**RasSecurityDialogComplete**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogcomplete)
@@ -22,9 +22,9 @@ Implementare le funzioni seguenti durante lo sviluppo di una DLL di sicurezza RA
 -   [**RasSecurityDialogReceive**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogreceive)
 -   [**RasSecurityDialogSend**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogsend)
 
- 
+ 
 
- 
+ 
 
 
 

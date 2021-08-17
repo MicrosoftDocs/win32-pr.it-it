@@ -1,41 +1,41 @@
 ---
-description: Specifica se il caricatore della topologia Abilita Microsoft DirectX Video Acceleration (DXVA) nella topologia.
+description: Specifica se il caricatore della topologia abilita Microsoft DirectX Video Acceleration (DXVA) nella topologia.
 ms.assetid: 03783ef3-f957-41e3-9734-94cb34ecc088
-title: Attributo MF_TOPOLOGY_DXVA_MODE (Mfidl. h)
+title: MF_TOPOLOGY_DXVA_MODE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ad75b37a2ca2e971077b05d1bbeb92748530614
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5462ccf575f94935d100eb70a6d806e139f09762151c2dad8d4e155ca5d1d17e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875732"
 ---
-# <a name="mf_topology_dxva_mode-attribute"></a>\_ \_ Attributo modalità DXVA TOPOLOGIa MF \_
+# <a name="mf_topology_dxva_mode-attribute"></a>Attributo MF \_ TOPOLOGY \_ DXVA \_ MODE
 
-Specifica se il caricatore della topologia Abilita Microsoft DirectX Video Acceleration (DXVA) nella topologia.
+Specifica se il caricatore della topologia abilita Microsoft DirectX Video Acceleration (DXVA) nella topologia.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**[**MFTOPOLOGY \_ \_Modalità DXVA**](/windows/desktop/api/mfidl/ne-mfidl-mftopology_dxva_mode)** archiviata come **UInt32**
+**[**MFTOPOLOGY \_ MODALITÀ DXVA \_**](/windows/desktop/api/mfidl/ne-mfidl-mftopology_dxva_mode)** archiviata come **UINT32**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
+[**Topologia IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è una costante di enumerazione della [**\_ \_ Modalità DXVA di MFTOPOLOGY**](/windows/desktop/api/mfidl/ne-mfidl-mftopology_dxva_mode) . Il valore predefinito è **MFTOPOLOGY \_ DXVA \_ default**.
+Il valore di questo attributo è una [**costante di enumerazione MFTOPOLOGY \_ DXVA \_ MODE.**](/windows/desktop/api/mfidl/ne-mfidl-mftopology_dxva_mode) Il valore predefinito è **MFTOPOLOGY \_ DXVA \_ DEFAULT.**
 
-Questo attributo controlla quali MFTs ricevono un puntatore a gestione dispositivi Direct3D. Per abilitare l'accelerazione video completa, impostare il valore su **MFTOPOLOGY \_ DXVA \_ full**. Il valore **MFTOPOLOGY \_ DXVA \_ default** è definito per compatibilità con le versioni precedenti, ma corrisponde al comportamento di tutte le versioni precedenti di Microsoft Media Foundation.
+Questo attributo controlla quali MFT ricevono un puntatore a Gestione dispositivi Direct3D. Per abilitare l'accelerazione video completa, impostare il valore su **MFTOPOLOGY \_ DXVA \_ FULL**. Il valore **MFTOPOLOGY \_ DXVA \_ DEFAULT** è definito per la compatibilità con le versioni precedenti. Corrisponde al comportamento di tutte le versioni precedenti di Microsoft Media Foundation.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Gestione dispositivi Direct3D](direct3d-device-manager.md)

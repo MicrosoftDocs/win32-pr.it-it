@@ -3,7 +3,7 @@ title: TVM_CREATEDRAGIMAGE messaggio (Commctrl.h)
 description: Crea una bitmap di trascinamento per l'elemento specificato in un controllo di visualizzazione albero.
 ms.assetid: fbe97921-c9d3-473c-933c-d6bc0599e24d
 keywords:
-- TVM_CREATEDRAGIMAGE del messaggio Windows controlli
+- TVM_CREATEDRAGIMAGE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118408661"
 ---
 # <a name="tvm_createdragimage-message"></a>Messaggio TVM \_ CREATEDRAGIMAGE
 
-Crea una bitmap di trascinamento per l'elemento specificato in un controllo di visualizzazione albero. Il messaggio crea anche un elenco di immagini per la bitmap e aggiunge la bitmap all'elenco di immagini. Un'applicazione può visualizzare l'immagine quando si trascina l'elemento usando le funzioni dell'elenco immagini. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ CreateDragImage di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_createdragimage)
+Crea una bitmap di trascinamento per l'elemento specificato in un controllo di visualizzazione albero. Il messaggio crea anche un elenco di immagini per la bitmap e aggiunge la bitmap all'elenco di immagini. Un'applicazione può visualizzare l'immagine quando si trascina l'elemento usando le funzioni dell'elenco immagini. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TreeView CreateDragImage.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_createdragimage)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Restituisce l'handle all'elenco di immagini a cui è stata aggiunta la bitmap di
 
 ## <a name="remarks"></a>Commenti
 
-Se si crea un controllo visualizzazione albero senza un elenco di immagini associato, non è possibile usare il messaggio **TVM \_ CREATEDRAGIMAGE** per creare l'immagine da visualizzare durante un'operazione di trascinamento. È necessario implementare un metodo personalizzato per la creazione di un cursore di trascinamento.
+Se si crea un controllo visualizzazione albero senza un elenco di immagini associato, non è possibile usare il **messaggio TVM \_ CREATEDRAGIMAGE** per creare l'immagine da visualizzare durante un'operazione di trascinamento. È necessario implementare un metodo personalizzato per creare un cursore di trascinamento.
 
 L'applicazione è responsabile dell'eliminazione dell'elenco di immagini quando non è più necessario.
 
@@ -55,8 +55,8 @@ L'applicazione è responsabile dell'eliminazione dell'elenco di immagini quando 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

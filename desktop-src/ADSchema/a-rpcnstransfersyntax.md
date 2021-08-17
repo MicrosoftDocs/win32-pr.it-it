@@ -29,10 +29,10 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Sintassi rpc-Ns-Transfer                      |
+| CN                | Sintassi rpc-Ns-Transfer-Syntax                      |
 | Ldap-Display-Name | rpcNsTransferSyntax                         |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
 | System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
@@ -58,7 +58,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
@@ -79,7 +79,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
@@ -100,7 +100,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
@@ -121,7 +121,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
@@ -142,7 +142,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
@@ -163,7 +163,7 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| A valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |

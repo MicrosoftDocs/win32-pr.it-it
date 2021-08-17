@@ -1,20 +1,20 @@
 ---
 title: OP_POLICY_ELEMENT_LIST
-description: Definizione di OP_POLICY_ELEMENT_LIST IDL
+description: OP_POLICY_ELEMENT_LIST definizione IDL
 ms.assetid: 1eebbdd2-655b-4bd3-938c-6bc687ffe7bb
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 3c46e7208e6c142b9f58a7704be9bd3461c845b2
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 1fde1bb1d2794be4fd1bf799282a0257b78ae213453566208ff64bcf7a312654
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "103734698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796863"
 ---
-# <a name="op_policy_element_list-structure"></a>Struttura OP_POLICY_ELEMENT_LIST
+# <a name="op_policy_element_list-structure"></a>OP_POLICY_ELEMENT_LIST struttura
 
-Definisce una chiave del registro di sistema radice e una matrice di elementi chiave del registro di sistema da configurare con tale chiave.
+Definisce una chiave del Registro di sistema radice e una matrice di elementi chiave del Registro di sistema da configurare in tale chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,22 +32,22 @@ typedef struct _OP_POLICY_ELEMENT_LIST
 
 ### <a name="psource"></a>pSource
 
-Contiene il percorso del file Criteri di gruppo dal quale sono stati originati gli elementi contenuti.
+Contiene il percorso del Criteri di gruppo file da cui sono stati provenienti gli elementi contenuti.
 
 ### <a name="ulrootkeyid"></a>ulRootKeyId
 
-Contiene l'identificatore della chiave del registro di sistema radice. attualmente deve essere impostato su HKEY_LOCAL_MACHINE.
+Contiene l'identificatore della chiave del Registro di sistema radice. attualmente deve essere impostato su HKEY_LOCAL_MACHINE.
 
 ### <a name="celements"></a>cElements
 
-Contiene il numero di elementi in pEles.
+Contiene il numero di elementi in pElements.
 
-### <a name="pelements"></a>pEle
+### <a name="pelements"></a>pElements
 
-Contiene una matrice di elementi OP_POLICY_ELEMENT.
+Contiene una matrice di OP_POLICY_ELEMENT elementi.
 
 ## <a name="see-also"></a>Vedi anche
 
-[**Definizioni IDL di aggiunta al dominio offline**](odj-idl.md)
+[**Definizioni IDL di aggiunta a un dominio offline**](odj-idl.md)
 
-[**\_elemento dei criteri op \_**](odj-op_policy_element.md)
+[**ELEMENTO \_ CRITERI \_ OP**](odj-op_policy_element.md)

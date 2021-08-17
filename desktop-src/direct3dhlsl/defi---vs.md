@@ -1,6 +1,6 @@
 ---
 title: defi - vs
-description: Definisce un valore costante integer che deve essere caricato ogni volta che uno shader viene impostato su un dispositivo.
+description: Definisce un valore costante integer, che deve essere caricato ogni volta che uno shader è impostato su un dispositivo.
 ms.assetid: d6067a7d-58fb-4553-a42f-192c29bf78b7
 ms.topic: reference
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "117726681"
 ---
 # <a name="defi---vs"></a>defi - vs
 
-Definisce un valore costante integer che deve essere caricato ogni volta che uno shader viene impostato su un dispositivo.
+Definisce un valore costante integer, che deve essere caricato ogni volta che uno shader è impostato su un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ Definisce un valore costante integer che deve essere caricato ogni volta che uno
 
 
 
-| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | Defi                   |      | x    | x    | x     | x    | x     |
 
@@ -46,11 +46,11 @@ Definisce un valore costante integer che deve essere caricato ogni volta che uno
 
  
 
-L'istruzione defi definisce una costante integer shader il cui valore viene caricato ogni volta che uno shader viene impostato su un dispositivo. Queste sono chiamate costanti immediate. Le costanti immediate hanno la precedenza sulle costanti impostate dal metodo API SetVertexShaderConstantI.
+L'istruzione defi definisce una costante shader integer il cui valore viene caricato ogni volta che uno shader è impostato su un dispositivo. Queste sono chiamate costanti immediate. Le costanti immediate hanno la precedenza sulle costanti impostate dal metodo API SetVertexShaderConstantI.
 
 Esistono due modi per impostare una costante integer in uno shader.
 
-1.  Usare defi per definire il vettore costante integer direttamente all'interno di uno shader.
+1.  Usare defi per definire il vettore costante Integer direttamente all'interno di uno shader.
 2.  Usare i metodi API per impostare una costante.
     -   Usare [**SetVertexShaderConstantI**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshaderconstanti) per impostare una costante integer.
 

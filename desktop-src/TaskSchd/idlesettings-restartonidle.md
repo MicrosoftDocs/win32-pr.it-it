@@ -44,7 +44,7 @@ Valore booleano che indica se l'attività deve essere riavviata quando il comput
 
 Questa proprietà viene usata solo se la [**proprietà IdleSettings.StopOnIdleEnd**](idlesettings-stoponidleend.md) è impostata su True.
 
-Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RestartOnIdle**](taskschedulerschema-restartonidle-idlesettingstype-element.md) dello schema Utilità di pianificazione dati.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RestartOnIdle**](taskschedulerschema-restartonidle-idlesettingstype-element.md) dello schema Utilità di pianificazione schema.
 
 ## <a name="requirements"></a>Requisiti
 

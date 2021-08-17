@@ -3,7 +3,7 @@ title: NetworkSettings.Name proprietà
 description: Per lo scripting, ottiene o imposta il nome di un profilo di rete.
 ms.assetid: 1b326236-c42f-4611-8c5e-296bf7b8c95b
 keywords:
-- Nome della proprietà Utilità di pianificazione
+- Nome proprietà Utilità di pianificazione
 - Proprietà Name Utilità di pianificazione , oggetto NetworkSettings
 - Oggetto NetworkSettings Utilità di pianificazione proprietà , Name
 topic_type:

@@ -41,7 +41,7 @@ HRESULT PreloadGlyphs(
 
 <dl> <dt>
 
-*First (Prima)* \[ Pollici\]
+*Prima di tutto* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
@@ -69,7 +69,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 Questo metodo genera trame che contengono i glifi di input. I glifi vengono disegnati come una serie di triangoli.
 
-Non verrà eseguito il rendering dei glifi nel dispositivo. ID3DX10Font::D rawText deve comunque essere chiamato per eseguire il rendering dei glifi. Tuttavia, precaricando i glifi nella memoria video, ID3DX10Font::D rawText userà notevolmente meno risorse della CPU.
+Non verrà eseguito il rendering dei glifi nel dispositivo. ID3DX10Font::D rawText deve comunque essere chiamato per eseguire il rendering dei glifi. Tuttavia, precaricando i glifi nella memoria video, ID3DX10Font::D rawText userà un numero sostanzialmente inferiore di risorse della CPU.
 
 ## <a name="requirements"></a>Requisiti
 

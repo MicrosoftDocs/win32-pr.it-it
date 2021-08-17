@@ -21,7 +21,7 @@ ms.locfileid: "118416175"
 -   [PSN \_ KILLACTIVE](psn-killactive.md)
 -   [PSN \_ QUERYCANCEL](psn-querycancel.md)
 -   [PSN \_ QUERYINITIALFOCUS](psn-queryinitialfocus.md)
--   [PSN \_ RESET](psn-reset.md)
+-   [REIMPOSTAZIONE PSN \_](psn-reset.md)
 -   [PSN \_ SETACTIVE](psn-setactive.md)
 -   [PSN \_ TRANSLATEACCELERATOR](psn-translateaccelerator.md)
 -   [PSN \_ WIZBACK](psn-wizback.md)

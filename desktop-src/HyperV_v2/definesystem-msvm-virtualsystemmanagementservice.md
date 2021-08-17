@@ -43,10 +43,10 @@ uint32 DefineSystem(
 
 <dl> <dt>
 
-*SystemSettings* \[ Pollici\]
+*Impostazioni di sistema* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Istanza incorporata della [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) usata per definire gli attributi della macchina virtuale da creare. Questo parametro è obbligatorio.
 
@@ -55,9 +55,9 @@ Istanza incorporata della [**classe Msvm \_ VirtualSystemSettingData**](msvm-vir
 *ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\[ \] stringa**
+Tipo: **\[ \] string**
 
-Numero di istanze incorporate della [**classe Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) (o classi derivate). Insieme queste istanze descrivono le risorse virtuali della macchina virtuale. Verrà creato un set predefinito di dispositivi per la macchina virtuale, indipendentemente dal fatto che questo parametro sia o meno impostato. Ad esempio, il processore e la memoria vengono creati e configurati automaticamente con i valori predefiniti.
+Numero di istanze incorporate della [**classe Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) (o delle classi derivate). Insieme, queste istanze descrivono le risorse virtuali della macchina virtuale. Verrà creato un set predefinito di dispositivi per la macchina virtuale, indipendentemente dal fatto che questo parametro sia impostato. Ad esempio, il processore e la memoria vengono creati e configurati automaticamente con i valori predefiniti.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Numero di istanze incorporate della [**classe Msvm \_ ResourceAllocationSettingD
 
 Tipo: **CIM \_ VirtualSystemSettingData**
 
-Riferimento a un'istanza della [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta l'oggetto di primo livello di una configurazione di macchina virtuale di riferimento. La configurazione di riferimento viene usata per integrare la configurazione della nuova macchina virtuale se i *parametri SystemSettings* e *ResourceSettings* non forniscono le rispettive informazioni.
+Riferimento a un'istanza della [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta l'oggetto di primo livello di una configurazione di macchina virtuale di riferimento. La configurazione di riferimento viene usata per integrare la configurazione della nuova macchina virtuale se i parametri *SystemSettings* e *ResourceSettings* non forniscono le rispettive informazioni.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Riferimento a un'istanza della [**classe Msvm \_ VirtualSystemSettingData**](msv
 
 Tipo: **CIM \_ ComputerSystem**
 
-Riferimento a un'istanza della [**classe \_ CIM ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale appena creata.
+Riferimento a un'istanza della [**classe \_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale appena creata.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Se questo metodo viene eseguito in modo sincrono, restituisce 0 se ha esito posi
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -108,13 +108,13 @@ Se questo metodo viene eseguito in modo sincrono, restituisce 0 se ha esito posi
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non** valido (4)
+**Parametro non valido** (4)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Metodo riservato** (4097..32767)
@@ -125,7 +125,7 @@ Se questo metodo viene eseguito in modo sincrono, restituisce 0 se ha esito posi
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -135,7 +135,7 @@ L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtuals
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

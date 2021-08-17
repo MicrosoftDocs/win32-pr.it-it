@@ -3,7 +3,7 @@ title: OutputPatch
 description: OutputPatch
 ms.assetid: 24841938-6c84-4e1f-ba8a-a81b589bdd51
 keywords:
-- HLSL OutputPatch
+- OutputPatch HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c77a30a2ff23bdc292d45df6514ef00fab53463
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ea806da8fe9b4219490c26b84e5b77f6f92b324a72850c79080de6ca363ef4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725240"
 ---
 # <a name="outputpatch"></a>OutputPatch
 
-Rappresenta una matrice di punti di controllo di output disponibili per la funzione patch-Constant di Hull shader e per lo shader del dominio.
+Rappresenta una matrice di punti di controllo di output disponibili per la funzione patch-constant dello hull shader e per lo shader di dominio.
 
 
 
@@ -32,7 +32,7 @@ Rappresenta una matrice di punti di controllo di output disponibili per la funzi
 
 
 
- 
+ 
 
 Inoltre, la classe InputPatch supporta le proprietà seguenti:
 
@@ -44,9 +44,9 @@ Inoltre, la classe InputPatch supporta le proprietà seguenti:
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questo oggetto è supportato nei modelli shader seguenti.
 
@@ -54,34 +54,34 @@ Questo oggetto è supportato nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questo oggetto è supportato per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Oggetti Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Oggetti modello shader 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

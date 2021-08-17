@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture2D:: Texture2D GatherCmpBlue'
-description: Campiona e confronta un Texture2D e restituisce il componente blu.
+title: Metodi GatherCmpBlue texture2D::Texture2D
+description: Campiota e confronta un oggetto Texture2D e restituisce il componente blu.
 ms.assetid: 2d266105-6d15-4593-ad70-b82c06f77a76
 keywords:
 - Metodi GatherCmpBlue HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 408e59e2cb0a5b0eba1e28b7d060a0d0a2b700ba
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
-ms.translationtype: HT
+ms.openlocfilehash: cb4f1c77204c45e4e0b056fa1d6c217e303fa62a6114d635aeda04dbe973a4d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104335095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722918"
 ---
-# <a name="texture2dgathercmpblue-methods"></a>Metodi Texture2D:: GatherCmpBlue
+# <a name="texture2dgathercmpblue-methods"></a>Metodi Texture2D::GatherCmpBlue
 
-Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce il componente blu.
+Campiota e confronta un [**oggetto Texture2D**](sm5-object-texture2d.md) e restituisce il componente blu.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,10 +29,10 @@ Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce i
 
 | Metodo                                                                                                                     | Descrizione                                                                                                     |
 |:---------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpBlue (S, float, float, int)**](sm5-object-texture2d-gathercmpblue.md)                                             | Campiona e confronta una trama e restituisce il componente blu.<br/>                                       |
-| [**GatherCmpBlue (S, float, float, int, uint)**](t2d-gathercmpblue-s-float-float-int-uint-.md)                                 | Campiona e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
-| [**GatherCmpBlue (S, float, float, int2, int2, int2, int2)**](t2d-gathercmpblue-s-float-float-int2-int2-int2-int2-.md)           | Campiona e confronta una trama e restituisce il componente blu.<br/>                                       |
-| [**GatherCmpBlue (S, float, float, int2, int2, int2, int2, uint)**](t2d-gathercmpblue-s-float-float-int2-int2-int2-int2-uint-.md) | Campiona e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpBlue(S,float,float,int)**](sm5-object-texture2d-gathercmpblue.md)                                             | Campione e confronta una trama e restituisce il componente blu.<br/>                                       |
+| [**GatherCmpBlue(S,float,float,int,uint)**](t2d-gathercmpblue-s-float-float-int-uint-.md)                                 | Campione e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpBlue(S,float,float,int2,int2,int2,int2)**](t2d-gathercmpblue-s-float-float-int2-int2-int2-int2-.md)           | Campione e confronta una trama e restituisce il componente blu.<br/>                                       |
+| [**GatherCmpBlue(S,float,float,int2,int2,int2,int2,uint)**](t2d-gathercmpblue-s-float-float-int2-int2-int2-int2-uint-.md) | Campione e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
 
 
 

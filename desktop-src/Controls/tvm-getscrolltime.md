@@ -3,7 +3,7 @@ title: TVM_GETSCROLLTIME messaggio (Commctrl.h)
 description: Recupera il tempo di scorrimento massimo per il controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetScrollTime di TreeView.
 ms.assetid: 992d1906-cda3-4ac7-ba90-c681c551ac2e
 keywords:
-- TVM_GETSCROLLTIME dei controlli Windows messaggio
+- TVM_GETSCROLLTIME dei messaggi Windows
 topic_type:
 - apiref
 api_name:

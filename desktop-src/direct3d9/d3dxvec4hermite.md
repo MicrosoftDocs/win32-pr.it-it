@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b08ed785c24ba9580be0fc7f620a471ea96184a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a62d96181b4242073b9e6a2176d841add86cbfeab4238bfb4cbb538bfd88e1e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730729"
 ---
 # <a name="d3dxvec4hermite-function-d3dx9mathh"></a>Funzione D3DXVec4Hermite (D3dx9math.h)
 
-Esegue un'interpolazione spline hermite, usando i vettori 4D specificati.
+Esegue un'interpolazione spline hermite usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il ri
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR4 di origine,**](d3dxvector4.md) un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a una [**struttura D3DXVECTOR4 di origine,**](d3dxvector4.md) un vetto
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR4 di origine,**](d3dxvector4.md) un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ La **funzione D3DXVec4Hermite** interpola da (positionA, tangentA) a (positionB,
 
 L'interpolazione spline è una generalizzazione della spline ease-in e ease-out. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q(s) = As³ + Bs² + Cs + D (e quindi, Q(s) = 3As² + 2Bs + C)
+Q(s) = As² + Bs² + Cs + D (e pertanto, Q(s) = 3As² + 2Bs + C)
 
 a) Q(0) = v1, quindi Q'(0) = t1
 

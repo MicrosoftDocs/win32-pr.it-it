@@ -1,32 +1,32 @@
 ---
-title: Archiviazione ottica di livello 1
-description: Archiviazione ottica di livello 1
+title: Livello 1 Archiviazione
+description: Livello 1 Archiviazione
 ms.assetid: 4ba0b3fa-d9ed-4058-896e-18c9d6707839
 keywords:
-- PC multimediali (MPC), livello 1
-- MPC (PC multimediale), livello 1
+- PC multimediale (MPC), livello 1
+- MPC (PC multimediale),livello 1
 - Consiglio marketing per PC multimediali, livello 1
-- MPC livello 1, archiviazione ottica
+- MPC Livello 1, archiviazione ottica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98189cd6ab9ffde07b5f2682ef0723828b947f55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3a36b14ab23c636a3cdbdae7eb5b6da749947c3c0353873a5e35bc5b81c6f4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139869"
 ---
-# <a name="level-1-optical-storage"></a>Archiviazione ottica di livello 1
+# <a name="level-1-optical-storage"></a>Livello 1 Archiviazione
 
-Il dispositivo di archiviazione ottico con prestazioni minime è un'unità CD-ROM che soddisfa i criteri seguenti:
+Il dispositivo di archiviazione ottica con prestazioni minime è un'unità CD-ROM che soddisfa i criteri seguenti:
 
--   Velocità di trasferimento dati prolungata di 150 kilobyte al secondo
--   Un utilizzo della larghezza di banda della CPU pari o inferiore al 40% quando si mantiene una velocità di trasferimento dati prolungata di 150 kilobyte al secondo
--   Tempo medio di ricerca di almeno 1 secondo
+-   Velocità di trasferimento dati sostenuta di 150 kilobyte al secondo
+-   Utilizzo della larghezza di banda della CPU del 40% o inferiore quando si mantiene una velocità di trasferimento dati sostenuta di 150 kilobyte al secondo
+-   Un tempo medio di ricerca di 1 secondo o inferiore
 
- 
+ 
 
- 
+ 
 
 
 

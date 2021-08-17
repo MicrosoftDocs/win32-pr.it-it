@@ -1,5 +1,5 @@
 ---
-description: Messaggio WS-Discovery usato per annunciare la presenza di un dispositivo o di un servizio in rete.
+description: Messaggio WS-Discovery usato per annunciare la presenza di un dispositivo o di un servizio nella rete.
 ms.assetid: a7402e02-9bdc-49ec-ba93-8a32f55b9dd8
 title: Messaggio Hello
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118552442"
 ---
 # <a name="hello-message"></a>Messaggio Hello
 
-Un messaggio Hello è un WS-Discovery usato per annunciare la presenza di un dispositivo o di un servizio in rete. I messaggi Hello vengono inviati anche in altri scenari. Per altre informazioni sui messaggi Hello, vedere la sezione 4.1 della [specifica WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un messaggio Hello è un WS-Discovery usato per annunciare la presenza di un dispositivo o di un servizio in rete. I messaggi Hello vengono inviati anche in altri scenari. Per altre informazioni sui messaggi Hello, vedere la sezione 4.1 della [specifica WS-Discovery.](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf)
 
 Un messaggio Hello viene inviato dal multicast UDP alla porta 3702. Questo messaggio non è richiesto.
 
@@ -97,7 +97,7 @@ Un messaggio Hello ha i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsa:Address>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:Address></code></pre></td>
-<td>Contiene l'indirizzo dell'endpoint. È possibile fare riferimento a questo indirizzo in un <a href="resolve-message.md">messaggio di</a> risoluzione.</td>
+<td>Contiene l'indirizzo dell'endpoint. A questo indirizzo può essere fatto riferimento in un <a href="resolve-message.md">messaggio di</a> risoluzione.</td>
 </tr>
 <tr class="even">
 <td>Tipi</td>

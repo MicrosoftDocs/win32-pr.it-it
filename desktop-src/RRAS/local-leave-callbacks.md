@@ -13,7 +13,7 @@ ms.locfileid: "117790641"
 ---
 # <a name="local-leave-callbacks"></a>Callback di lasciare locale
 
-Dopo che il gestore del gruppo multicast viene informato da IGMP che non sono presenti altri ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama il callback DI CALLBACK [**\_ LOCAL \_ LEAVE \_ PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback) al protocollo di routing su tale interfaccia, se presente. Questo callback notifica al protocollo di routing la modifica.
+Dopo che il gestore del gruppo multicast viene informato da IGMP che non sono presenti altri ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama il callback [**PMGM \_ LOCAL LEAVE \_ \_ CALLBACK**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback) al protocollo di routing su tale interfaccia, se presente. Questo callback notifica al protocollo di routing la modifica.
 
 Questo callback e il callback [**PMGM \_ LOCAL JOIN \_ \_ CALLBACK**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_join_callback) vengono usati per sincronizzare l'inoltro tra IGMP e i protocolli di routing.
 

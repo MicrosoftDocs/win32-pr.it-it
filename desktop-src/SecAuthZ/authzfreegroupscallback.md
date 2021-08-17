@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 7d8942acbc67f122ea79f0b9e98793628b5f21f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cce78e261892fede79fb8fc76bc5b0d009342db3e0bf672be2854cb8492bcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783765"
 ---
 # <a name="authzfreegroupscallback-callback-function"></a>Funzione di callback AuthzFreeGroupsCallback
 
-La funzione **AuthzFreeGroupsCallback** è una funzione definita dall'applicazione che libera la memoria allocata dalla funzione [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md) . **AuthzFreeGroupsCallback** è un segnaposto per il nome della funzione definita dall'applicazione.
+La **funzione AuthzFreeGroupsCallback** è una funzione definita dall'applicazione che libera la memoria allocata dalla [**funzione AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md) **AuthzFreeGroupsCallback** è un segnaposto per il nome della funzione definita dall'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ void CALLBACK AuthzFreeGroupsCallback(
 
 <dl> <dt>
 
-*pSidAttrArray* \[ in\]
+*pSidAttrArray* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla memoria allocata da [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md).
+Puntatore alla memoria allocata [**da AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md)
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Questa funzione di callback non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Le variabili di attributo devono essere sotto forma di espressione se utilizzate con operatori logici; in caso contrario, vengono valutati come sconosciuti.
+Le variabili di attributo devono essere sotto forma di espressione se usate con operatori logici. in caso contrario, vengono valutati come sconosciuti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Le variabili di attributo devono essere sotto forma di espressione se utilizzate
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                   |
 | Componente ridistribuibile<br/>          | Windows Server 2003 Administration Tools Pack in Windows XP<br/> |
 
 

@@ -1,11 +1,11 @@
 ---
 title: Metodo DownloadItem.cancel
-description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo cancel annulla il download.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. Il metodo cancel annulla il download.
 ms.assetid: b3715fde-6a83-45fa-92ea-1cbffbee7274
 keywords:
 - Metodo cancel Windows Media Player
 - Metodo cancel Windows Media Player , classe DownloadItem
-- Classe DownloadItem Windows Media Player , metodo cancel
+- Metodo DownloadItem Windows Media Player , cancel
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "117749732"
 # <a name="downloaditemcancel-method"></a>Metodo DownloadItem.cancel
 
 > [!Note]  
-> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
@@ -51,7 +51,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli elementi annullati restituiscono **un valore downloadState** pari a 4 (annullato).
+Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli elementi annullati restituiscono un **valore downloadState** pari a 4 (annullato).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli eleme
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

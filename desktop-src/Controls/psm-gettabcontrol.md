@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_GETTABCONTROL (Prsht. h)
-description: Recupera l'handle per il controllo struttura a schede di una finestra delle proprietà. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro PropSheet GetTabControl.
+title: PSM_GETTABCONTROL messaggio (Prsht.h)
+description: Recupera l'handle per il controllo Struttura a schede di una finestra delle proprietà. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet GetTabControl.
 ms.assetid: 5ddea541-c8e0-4357-b08e-3b5e64be377f
 keywords:
-- Controlli di Windows Message PSM_GETTABCONTROL
+- PSM_GETTABCONTROL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab296159cac4dbfb4ef894d90d31bcd74d6ca2e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b0e26c9489dc839383552b407a16313c94e1fc3b070d93f1d59ddaf0310134d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169661"
 ---
-# <a name="psm_gettabcontrol-message"></a>\_Messaggio PSM GETtabcontrol
+# <a name="psm_gettabcontrol-message"></a>Messaggio \_ GETTABCONTROL PSM
 
-Recupera l'handle per il controllo struttura a schede di una finestra delle proprietà. È possibile inviare questo messaggio in modo esplicito o usando la macro [**PropSheet \_ GetTabControl**](/windows/desktop/api/Prsht/nf-prsht-propsheet_gettabcontrol) .
+Recupera l'handle per il controllo Struttura a schede di una finestra delle proprietà. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet GetTabControl.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_gettabcontrol)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per il controllo struttura a schede.
+Restituisce l'handle per il controllo Struttura a schede.
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,9 +60,9 @@ Restituisce l'handle per il controllo struttura a schede.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

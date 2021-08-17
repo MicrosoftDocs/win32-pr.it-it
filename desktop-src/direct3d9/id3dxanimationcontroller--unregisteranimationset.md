@@ -45,7 +45,7 @@ HRESULT UnregisterAnimationSet(
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Puntatore [**all'animazione ID3DXAnimationSet**](id3dxanimationset.md) impostata da rimuovere.
+Puntatore al set [**di animazioni ID3DXAnimationSet**](id3dxanimationset.md) da rimuovere.
 
 </dd> </dl>
 

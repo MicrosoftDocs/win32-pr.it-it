@@ -22,7 +22,7 @@ ms.locfileid: "118508251"
 ---
 # <a name="sv_groupindex"></a>SV \_ GroupIndex
 
-Indice "flat" di un thread compute shader all'interno di un gruppo di thread, che trasforma groupThreadID SV multidimensionale \_ in un valore 1D. SV \_ GroupIndex varia da 0 a (numthreadsX \* numthreadsY \* numThreadsZ) - 1.
+Indice "flat" di un thread compute shader all'interno di un gruppo di thread, che trasforma groupThreadID SV multidimensionale \_ in un valore 1D. SV \_ GroupIndex varia da 0 a (numthreadsX \* numthreadsY \* numThreadsZ) – 1.
 
 ## <a name="type"></a>Tipo
 
@@ -51,7 +51,7 @@ dove dimx e dimy sono le dimensioni specificate [nell'attributo numthreads](sm5-
 
 Questo valore di sistema è facoltativo. Tuttavia, il relativo utilizzo garantisce che un thread scrive solo nell'area di memoria assegnata nella variabile groupshared.
 
-La figura seguente illustra la relazione tra i parametri passati [**a ID3D11DeviceContext::D ispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch)Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati allo shader di calcolo per i valori di sistema correlati ai thread (SV \_ GroupIndex,[SV \_ DispatchThreadID,](sv-dispatchthreadid.md)[SV \_ GroupThreadID,](sv-groupthreadid.md)[SV \_ GroupID).](sv-groupid.md)
+La figura seguente mostra la relazione tra i parametri passati [**a ID3D11DeviceContext::D ispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch)Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati allo shader di calcolo per i valori di sistema correlati ai thread (SV \_ GroupIndex,[SV \_ DispatchThreadID,](sv-dispatchthreadid.md)[SV \_ GroupThreadID,](sv-groupthreadid.md)[SV \_ GroupID).](sv-groupid.md)
 
 ![Illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
 

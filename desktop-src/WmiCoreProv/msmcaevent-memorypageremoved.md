@@ -1,5 +1,5 @@
 ---
-description: Indica che una pagina di memoria è stata rimossa dall'uso da parte del sistema a causa di un numero eccessivo di errori ECC (Hardware Error Checking and Correcting). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Indica che una pagina di memoria è stata rimossa dall'uso del sistema a causa di un numero eccessivo di errori di controllo degli errori hardware e di correzione (ECC). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: 364a2520-8d7c-44f2-95f6-eea9a5531975
 title: MSMCAEvent_MemoryPageRemoved classe
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "118558468"
 ---
 # <a name="msmcaevent_memorypageremoved-class"></a>Classe MSMCAEvent \_ MemoryPageRemoved
 
-La **classe MSMCAEvent \_ MemoryPageRemoved** indica che una pagina di memoria è stata rimossa dall'uso da parte del sistema a causa di un numero eccessivo di errori ECC (Hardware Error Checking and Correcting). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAEvent \_ MemoryPageRemoved** indica che una pagina di memoria è stata rimossa dall'uso del sistema a causa di un numero eccessivo di errori di controllo degli errori hardware e correzione (ECC). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
 La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
@@ -42,7 +42,7 @@ class MSMCAEvent_MemoryPageRemoved : WmiEvent
 
 ## <a name="members"></a>Members
 
-La **classe MSMCAEvent \_ MemoryPageRemoved** include questi tipi di membri:
+La **classe MSMCAEvent \_ MemoryPageRemoved** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -68,13 +68,13 @@ Tipo di accesso: sola lettura
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Identificatore univoco per questa istanza della classe .
@@ -92,13 +92,13 @@ Tipo di accesso: sola lettura
 
 Indirizzo della pagina di memoria rimossa.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe MSMCAEvent \_ MemoryPageRemoved** è derivata da [**WMIEvent.**](wmievent.md)
+La **classe MSMCAEvent \_ MemoryPageRemoved** è derivata da [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisiti
 

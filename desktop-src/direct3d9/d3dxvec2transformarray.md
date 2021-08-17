@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 38e60c6bb8084e7f8e1c0ee71379af552e73c09d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec21ad688a3b88576de3e97ac3497ddef49446b47ceef81cdcd4e8db60806a08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730847"
 ---
 # <a name="d3dxvec2transformarray-function-d3dx9mathh"></a>Funzione D3DXVec2TransformArray (D3dx9math.h)
 
-Trasforma una matrice (x, y, 0, 1) in base a una matrice specificata.
+Trasforma una matrice (x, y, 0, 1) in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 

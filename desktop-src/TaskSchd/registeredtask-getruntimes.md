@@ -1,11 +1,11 @@
 ---
-title: Metodo RegisteredTask. getruntimes
-description: Per gli script, ottiene le ore pianificate per l'esecuzione dell'attività registrata in un determinato periodo di tempo.
+title: Metodo RegisteredTask.GetRunTimes
+description: Per lo scripting, ottiene gli orari in cui è pianificata l'esecuzione dell'attività registrata durante un periodo di tempo specificato.
 ms.assetid: fc3d93eb-3186-419f-9f6f-7d54f8ade1ad
 keywords:
-- Metodo getruntimes Utilità di pianificazione
-- Metodo getruntimes Utilità di pianificazione, oggetto RegisteredTask
-- Oggetto RegisteredTask Utilità di pianificazione, metodo getruntimes
+- Metodo GetRunTimes Utilità di pianificazione
+- Metodo GetRunTimes Utilità di pianificazione , oggetto RegisteredTask
+- Metodo RegisteredTask Utilità di pianificazione , GetRunTimes
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c15aba82c5515578a3c58a485e47718d09176483
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 303dd08c576f31946207241b086fe945b3f1ac275c596496139d19f507670e30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759666"
 ---
-# <a name="registeredtaskgetruntimes-method"></a>Metodo RegisteredTask. getruntimes
+# <a name="registeredtaskgetruntimes-method"></a>Metodo RegisteredTask.GetRunTimes
 
-Per gli script, ottiene le ore pianificate per l'esecuzione dell'attività registrata in un determinato periodo di tempo.
+Per lo scripting, ottiene gli orari in cui è pianificata l'esecuzione dell'attività registrata durante un periodo di tempo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,31 +45,31 @@ RegisteredTask.GetRunTimes( _
 
 <dl> <dt>
 
-*inizia* \[ in\]
+*begin* \[ Pollici\]
 </dt> <dd>
 
-Ora di inizio per la query.
+Ora di inizio della query.
 
 </dd> <dt>
 
-*fine* \[ in\]
+*end* \[ Pollici\]
 </dt> <dd>
 
 Ora di fine della query.
 
 </dd> <dt>
 
-*numero* \[ di out\]
+*count* \[ Cambio\]
 </dt> <dd>
 
-Numero di volte pianificate in cui l'attività viene eseguita.
+Numero di volte pianificate per l'esecuzione dell'attività.
 
 </dd> <dt>
 
-*rgstTaskTimes* \[ out\]
+*rgstTaskTimes* \[ Cambio\]
 </dt> <dd>
 
-Orari pianificati in cui l'attività viene eseguita.
+Orari pianificati per l'esecuzione dell'attività.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'attività registrata contiene trigger disabilitati singolarmente, questi trigger avranno comunque effetto sul successivo runtime pianificato che viene restituito anche se sono disabilitati.
+Se l'attività registrata contiene trigger disabilitati singolarmente, questi trigger influiranno comunque sulla successiva ora di esecuzione pianificata restituita anche se sono disabilitati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,9 +87,9 @@ Se l'attività registrata contiene trigger disabilitati singolarmente, questi tr
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

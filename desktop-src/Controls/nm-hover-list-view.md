@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_HOVER (visualizzazione elenco) (COMmctrl. h)
-description: Inviato da un controllo di visualizzazione elenco quando il mouse viene spostato su un elemento. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_HOVER di notifica (visualizzazione elenco) (Commctrl.h)
+description: Inviato da un controllo di visualizzazione elenco quando il puntatore del mouse viene posizionato su un elemento. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 0d4a2eee-9c98-43d1-bc05-226d91c0480a
 keywords:
-- Codice di notifica NM_HOVER (visualizzazione elenco) controlli Windows
+- NM_HOVER di notifica (visualizzazione elenco) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60606dfac73e13b0439ce861f37cb4ec941fda3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb380e96e579e5e740678a4fa91270c510e7ca01c3596a68cdac02eedd3f1da8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411135"
 ---
-# <a name="nm_hover-list-view-notification-code"></a>Codice di notifica del passaggio del mouse su NM \_ (visualizzazione elenco)
+# <a name="nm_hover-list-view-notification-code"></a>Codice di \_ notifica NM HOVER (visualizzazione elenco)
 
-Inviato da un controllo di visualizzazione elenco quando il mouse viene spostato su un elemento. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo di visualizzazione elenco quando il puntatore del mouse viene posizionato su un elemento. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_HOVER
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero per consentire alla visualizzazione elenco di elaborare normalmente il passaggio del mouse o un valore diverso da zero per impedire l'elaborazione del passaggio del mouse.
+Restituire zero per consentire alla visualizzazione elenco di elaborare normalmente il passaggio del mouse o un valore diverso da zero per impedire l'elaborazione del passaggio del mouse.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce zero per consentire alla visualizzazione elenco di elaborare normalm
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

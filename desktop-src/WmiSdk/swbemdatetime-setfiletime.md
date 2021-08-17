@@ -1,5 +1,5 @@
 ---
-description: Converte una data nel formato stringa FILETIME nel formato datetime CIM.
+description: Converte una data nel formato stringa FILETIME nel formato cim datetime.
 ms.assetid: e375afda-5e94-46d6-b1ac-e801e0f4a620
 ms.tgt_platform: multiple
 title: Metodo SWbemDateTime.SetFileTime (Wbemdisp.h)
@@ -25,11 +25,11 @@ ms.locfileid: "117739458"
 ---
 # <a name="swbemdatetimesetfiletime-method"></a>Metodo SWbemDateTime.SetFileTime
 
-Il **metodo SetFileTime** dell'oggetto [**SWbemDateTime**](swbemdatetime.md) converte una data nel formato **stringa FILETIME** nel formato [datetime CIM.](date-and-time-format.md)
+Il **metodo SetFileTime** dell'oggetto [**SWbemDateTime**](swbemdatetime.md) converte una data nel formato **stringa FILETIME** nel formato [cim datetime.](date-and-time-format.md)
 
-Il **formato FILETIME** è una struttura datetime a 64 bit che rappresenta il numero di unità di 100 nanosecondi dall'inizio del 1° gennaio 1601. Windows Strumentazione gestione (WMI) considera **i valori FILETIME** come rappresentazioni di stringa di numeri a 64 bit senza segno.
+Il **formato FILETIME** è una struttura datetime a 64 bit che rappresenta il numero di unità da 100 nanosecondi dall'inizio del 1° gennaio 1601. Windows Strumentazione gestione (WMI) considera i **valori FILETIME** come rappresentazioni di stringa di numeri a 64 bit senza segno.
 
-Per la spiegazione della sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per la spiegazione della sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,11 +80,11 @@ Il formato di *strFileTime* non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-Dopo una chiamata a **SetFileTime,** il valore [**datetime**](datetime.md) viene sempre interpretato come valore assoluto (**datetime**) e [**IsInterval**](swbemdatetime-isinterval.md) è impostato su **FALSE.**
+Dopo una chiamata riuscita a **SetFileTime**, il valore [**datetime**](datetime.md) viene sempre interpretato come valore assoluto (**datetime**) e [**IsInterval**](swbemdatetime-isinterval.md) è impostato su **FALSE**.
 
 ## <a name="examples"></a>Esempio
 
-Per esempi d'uso dell'oggetto [**SWbemDateTime**](swbemdatetime.md) per convertire i valori [**CIM DATETIME**](datetime.md) nel e dal formato **FILETIME** o **VT \_ DATE,** vedere [Attività WMI:](wmi-tasks--dates-and-times.md)date e ore. Per una descrizione del formato **CIM DATETIME,** vedere [Formato di data e ora.](date-and-time-format.md)
+Per esempi di utilizzo dell'oggetto [**SWbemDateTime**](swbemdatetime.md) per convertire i valori [**CIM DATETIME**](datetime.md) in e dal formato **FILETIME** o **VT \_ DATE,** vedere [Attività WMI:](wmi-tasks--dates-and-times.md)date e ore . Per una descrizione del formato CIM **DATETIME,** vedere [Formato di data e ora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisiti
 

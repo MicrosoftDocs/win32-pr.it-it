@@ -4,12 +4,12 @@ ms.assetid: 77ad2da3-7927-40d5-8a62-213f88cb724e
 title: System.Document. SlideCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84e00e574a3c0d9a061dae70e8dbfa8de7f853d9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4828c900de9b6e6a0fac24704e784a92eea2f72fc482d112017515fcc42a9869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053453"
 ---
 # <a name="systemdocumentslidecount"></a>System.Document. SlideCount
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

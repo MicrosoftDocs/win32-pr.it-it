@@ -3,7 +3,7 @@ title: Texture1D
 description: Texture1D
 ms.assetid: 5f6fd0e4-a73e-4d13-b3a0-c884b7912581
 keywords:
-- HLSL Texture1D
+- Texture1D HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8b8a60706ea2752109cdda9907ffe7c654efe531
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 382ac1e436eff4108a2179aeefd4395fbc52c7af304bb719cbadf87a3c1f3d3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724872"
 ---
 # <a name="texture1d"></a>Texture1D
 
-Un tipo di trama 1D ([presente in Shader Model 4](dx-graphics-hlsl-to-type.md)) più le variabili di risorsa. Questo oggetto texture supporta i metodi seguenti, oltre ai metodi in Shader Model 4.
+Un tipo di trama 1D ( così come esiste nel modello[shader 4)](dx-graphics-hlsl-to-type.md)più le variabili di risorsa. Questo oggetto trama supporta i metodi seguenti oltre ai metodi nel modello shader 4.
 
 
 
@@ -31,54 +31,54 @@ Un tipo di trama 1D ([presente in Shader Model 4](dx-graphics-hlsl-to-type.md)) 
 | [**GetDimensions**](sm5-object-texture1d-getdimensions.md)             | Ottiene le dimensioni della risorsa.                                                              |
 | [**Caricamento**](texture1d-load.md)                                          | Legge i dati della trama.                                                                        |
 | [**Operatore\[\]**](sm5-object-texture1d-operatorindex.md)              | Ottiene una variabile di risorsa di sola lettura.                                                        |
-| [**MIPS. Operatore\[\]\[\]**](sm5-object-texture1d-mipsoperatorindex.md) | Ottiene una variabile di risorsa di sola lettura.                                                        |
-| [**Esempio**](texture1d-sample.md)                                      | Campiona una trama.                                                                         |
-| [**SampleBias**](texture1d-samplebias.md)                              | Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap.                      |
-| [**SampleCmp**](texture1d-samplecmp.md)                                | Campiona una trama, usando un valore di confronto per rifiutare gli esempi.                             |
-| [**SampleCmpLevelZero**](texture1d-samplecmplevelzero.md)              | Esegue il campionamento di una trama (solo livello mipmap 0), usando un valore di confronto per rifiutare gli esempi.       |
-| [**SampleGrad**](texture1d-samplegrad.md)                              | Campiona una trama utilizzando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio. |
-| [**SampleLevel**](texture1d-samplelevel.md)                            | Esegue il campionamento di una trama sul livello mipmap specificato.                                           |
+| [**Mips. Operatore\[\]\[\]**](sm5-object-texture1d-mipsoperatorindex.md) | Ottiene una variabile di risorsa di sola lettura.                                                        |
+| [**Esempio**](texture1d-sample.md)                                      | Campio una trama.                                                                         |
+| [**SampleBias**](texture1d-samplebias.md)                              | Campita una trama, dopo aver applicato il valore di distorsione al livello mipmap.                      |
+| [**SampleCmp**](texture1d-samplecmp.md)                                | Campio una trama, usando un valore di confronto per rifiutare i campioni.                             |
+| [**SampleCmpLevelZero**](texture1d-samplecmplevelzero.md)              | Campio una trama (solo livello mipmap 0), usando un valore di confronto per rifiutare i campioni.       |
+| [**SampleGrad**](texture1d-samplegrad.md)                              | Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. |
+| [**SampleLevel**](texture1d-samplelevel.md)                            | Campita una trama a livello di mipmap specificato.                                           |
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questo oggetto è supportato nei modelli shader seguenti.
+Questo oggetto è supportato nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
 
 
 
- 
+ 
 
 Questo oggetto è supportato per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Oggetti Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Oggetti modello shader 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

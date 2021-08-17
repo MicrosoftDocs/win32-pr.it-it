@@ -1,48 +1,48 @@
 ---
-description: Per lavorare con i componenti selezionati in modo implicito è necessario l'accesso ai documenti dei metadati del documento e del writer dei componenti di backup.
+description: L'uso di componenti selezionati in modo implicito richiede l'accesso ai documenti di metadati del documento e del writer dei componenti di backup.
 ms.assetid: ede51931-be50-4286-818b-0e6122247bdd
-title: Selezione e utilizzo delle proprietà dei componenti
+title: Selezionabilità e uso delle proprietà dei componenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d06683bafb02802d84f152f1ceb662eb7491f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a735481d4bd0d7fdaa4102026b74ca78be947afbab24858d88d9210dd7bd4e6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751653"
 ---
-# <a name="selectability-and-working-with-component-properties"></a>Selezione e utilizzo delle proprietà dei componenti
+# <a name="selectability-and-working-with-component-properties"></a>Selezionabilità e uso delle proprietà dei componenti
 
-Per lavorare con i componenti selezionati in modo implicito è necessario l'accesso ai documenti dei metadati del documento e del writer dei componenti di backup.
+L'uso di componenti selezionati in modo implicito richiede l'accesso ai documenti di metadati del documento e del writer dei componenti di backup.
 
 per due motivi:
 
--   I dati del componente archiviati nel documento dei componenti di backup (rappresentato dall'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) ) non dispongono dell'accesso alle informazioni sui set di file dei componenti, ovvero specifica file, percorso e flag di ricorsione. Vedere [utilizzo del documento componenti di backup](working-with-the-backup-components-document.md).
--   Solo i componenti [*inclusi in modo esplicito*](vssgloss-e.md) nel documento componenti di backup durante il backup hanno le informazioni archiviate direttamente nel documento componenti di backup. I richiedenti e i writer devono utilizzare le informazioni disponibili tramite l'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) , in combinazione con le informazioni sul [*percorso logico*](vssgloss-l.md) e i documenti dei metadati del writer per ottenere informazioni su e impostare le proprietà dei componenti [*inclusi in modo implicito*](vssgloss-i.md) .
+-   I dati dei componenti archiviati nel documento dei componenti di backup (rappresentati dall'interfaccia [**IVssComponent)**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) non hanno accesso alle informazioni sul set di file dei componenti, ovvero la specifica del file, il percorso e il flag di ricorsione. Vedere [Working with the Backup Components Document](working-with-the-backup-components-document.md).)
+-   Solo i componenti inclusi [*in modo esplicito nel*](vssgloss-e.md) documento dei componenti di backup durante il backup hanno le informazioni direttamente archiviate nel documento dei componenti di backup. I richiedenti e i writer devono usare le informazioni disponibili [](vssgloss-l.md) tramite l'interfaccia [**IVssComponent,**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) insieme alle informazioni sul percorso logico e ai documenti dei metadati del writer per ottenere informazioni sui componenti inclusi in modo [*implicito*](vssgloss-i.md) e impostarne le proprietà.
 
-Il caso "writeback" descritto in [percorsi logici di componenti](logical-pathing-of-components.md) può essere utilizzato per illustrare la selezione per il backup.
+Il caso "MyWriter" illustrato in [Percorso logico](logical-pathing-of-components.md) dei componenti può essere usato per illustrare la selezionabilità per il backup.
 
 
 
 | Nome componente | Percorso logico            | Selezionabile per il backup | Selezionabile per il ripristino | Incluso in modo esplicito |
 |----------------|-------------------------|-----------------------|------------------------|---------------------|
-| Eseguibili  | ""                      | N                     | N                      | S                   |
-| "ConfigFiles"  | Eseguibili           | N                     | N                      | S                   |
-| LicenseInfo  | ""                      | S                     | N                      | S                   |
+| "Eseguibili"  | ""                      | N                     | N                      | S                   |
+| "ConfigFiles"  | "Eseguibili"           | N                     | N                      | S                   |
+| "LicenseInfo"  | ""                      | S                     | N                      | S                   |
 | "Security"     | ""                      | S                     | N                      | S                   |
-| UserInfo     | "Security"              | N                     | N                      | N                   |
-| Certificati | "Security"              | N                     | N                      | N                   |
+| "UserInfo"     | "Security"              | N                     | N                      | N                   |
+| "Certificati" | "Security"              | N                     | N                      | N                   |
 | "writerData"   | ""                      | S                     | S                      | S                   |
-| Set1         | "writerData"            | N                     | S                      | N                   |
-| Jan          | "writerData \\ set1"      | N                     | N                      | N                   |
-| Dec          | "writerData \\ set1"      | N                     | N                      | N                   |
-| Set2         | "writerData"            | N                     | S                      | N                   |
-| Jan          | "writerData \\ set2"      | N                     | N                      | N                   |
-| Dec          | "writerData \\ set2"      | N                     | N                      | N                   |
-| Query        | "writerData \\ QueryLogs" | N                     | N                      | N                   |
-| Utilizzo        | "writerData"            | S                     | S                      | N                   |
-| Jan          | " \\ utilizzo writerData"     | N                     | N                      | N                   |
-| Dec          | " \\ utilizzo writerData"     | N                     | N                      | N                   |
+| "Set1"         | "writerData"            | N                     | S                      | N                   |
+| "Jan"          | "writerData \\ Set1"      | N                     | N                      | N                   |
+| "Dec"          | "writerData \\ Set1"      | N                     | N                      | N                   |
+| "Set2"         | "writerData"            | N                     | S                      | N                   |
+| "Jan"          | "writerData \\ Set2"      | N                     | N                      | N                   |
+| "Dec"          | "writerData \\ Set2"      | N                     | N                      | N                   |
+| "Query"        | "writerData \\ QueryLogs" | N                     | N                      | N                   |
+| "Utilizzo"        | "writerData"            | S                     | S                      | N                   |
+| "Jan"          | "writerData \\ Usage"     | N                     | N                      | N                   |
+| "Dec"          | "writerData \\ Usage"     | N                     | N                      | N                   |
 
 
 
@@ -50,133 +50,133 @@ Il caso "writeback" descritto in [percorsi logici di componenti](logical-pathing
 
 ## <a name="implicitly-included-components-in-the-backup-set"></a>Componenti inclusi in modo implicito nel set di backup
 
-Durante l'esame del documento di metadati del writer del writer (vedere [**IVssBackupComponents:: GetWriterMetadata**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritermetadata)) durante il backup, un richiedente deve archiviare un elenco di tutti i componenti, i [*percorsi logici*](vssgloss-l.md)e le informazioni sui set di file.
+Durante l'analisi del documento di metadati del writer (vedere [**IVssBackupComponents::GetWriterMetadata**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritermetadata)) durante il backup, un richiedente deve archiviare un elenco di tutti i componenti, i relativi percorsi logici e le relative informazioni sul set di file. [](vssgloss-l.md)
 
-Il set di file e le informazioni sui file esclusi saranno necessari per determinare un elenco di file per qualsiasi componente incluso (in modo esplicito o implicito).
+Le informazioni sul set di file e sui file esclusi saranno necessarie per determinare un elenco di file per qualsiasi componente incluso (in modo esplicito o implicito).
 
-Per i componenti non selezionabili per i componenti di backup senza selezione per i predecessori di backup e selezionabili per i componenti di backup che non definiscono un [*set*](vssgloss-c.md)di componenti, saranno necessarie solo le informazioni sui file impostati e esclusi per identificare tutti i candidati del componente per il backup, in quanto questi componenti non definiscono sottocomponenti.
+Per i componenti non selezionabili per i componenti di backup senza selezionabili per i predecessori di backup e selezionabili per i componenti di backup che non definiscono un set di componenti , saranno necessarie solo le informazioni sul [*set*](vssgloss-c.md)di file e sul file escluso per identificare tutti i candidati del componente per il backup, perché questi componenti non definiscono sottocomponenti.
 
-Per i componenti selezionabili inclusi in modo esplicito per i componenti di backup che definiscono un set di componenti, le informazioni sui file vengono impostate ed escluse sia per il componente di definizione che per tutti i [*sottocomponenti*](vssgloss-s.md) da utilizzare per selezionare i file per il backup.
+Per includere in modo esplicito i componenti di backup che definiscono un set di componenti, il file imposta ed esclude le informazioni sui file sia per il componente di definizione che per tutti i [*sottocomponenti*](vssgloss-s.md) deve essere usato per selezionare i file per il backup.
 
-Ciò significa che i set di backup per i componenti "Executables", "ConfigFiles" e "LicenseInfo" possono essere trovati solo esaminando i metadati del writer solo per questi componenti usando le istanze dell'interfaccia [**IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) .
+Ciò significa che i set di backup per i componenti "Executables", "ConfigFiles" e "LicenseInfo" possono essere trovati solo esaminando i metadati del writer solo per questi componenti usando le relative istanze [**dell'interfaccia IVssWMComponent.**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent)
 
-Tuttavia, se writerData è incluso in modo esplicito nel backup, è necessario esaminarne l'istanza dell'interfaccia [**IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) e quelli per "set1", "Jan" (con percorso logico "writerData \\ set1"), "Dec" (con percorso logico "writerData \\ set1"), "set2", "Jan" (con percorso logico "writerData \\ set2"), "Dec" (con percorso logico "writerData \\ set2"), "query", "Usage", "Jan" (con percorso logico "WriterData \\ Usage") e "Dec" (con percorso logico "writerData \\ Usage").
+Tuttavia, se writerData è incluso in modo esplicito nel backup, è necessario esaminare la relativa istanza [**dell'interfaccia IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) e quelle per "Set1", "Jan" (con percorso logico "writerData \\ Set1"), "Dec" (con percorso logico "writerData \\ Set1"), "Set2", "Jan" (con percorso logico "writerData \\ Set2"), "Dec" (con percorso logico "writerData \\ Set2"), "Query", "Usage", "Jan" (con percorso logico "writerData Usage") e "Dec" (con percorso logico \\ "writerData \\ Usage").
 
-A tale scopo, è necessario che un richiedente identifichi innanzitutto che il componente "writerData" (percorso logico "") è selezionabile. Dovrà quindi eseguire l'analisi di tutti gli altri componenti gestiti dal writer per determinare se il primo elemento nel percorso logico è "writerData". I componenti che contengono "writerData" come membri iniziali del percorso logico sono identificati come sottocomponenti di "writerData" e sono selezionati in modo implicito quando vengono selezionati in modo esplicito.
+A tale scopo, un richiedente dovrà prima identificare che il componente "writerData" (percorso logico "") è selezionabile. Sarà quindi necessario analizzare tutti gli altri componenti gestiti dal writer per determinare se il primo elemento nel percorso logico è "writerData". I componenti che hanno "writerData" come membri iniziali del percorso logico vengono identificati come sottocomponenti di "writerData" e vengono selezionati in modo implicito quando viene selezionato in modo esplicito.
 
-In realtà, è necessario eseguire un'analisi simile per determinare che nessun componente ha "LicenseInfo" come membro principale del percorso logico e che quindi "LicenseInfo" non ha sottocomponenti.
+Sarà infatti necessario eseguire un'analisi simile per determinare che nessun componente ha "LicenseInfo" come membro iniziale del percorso logico e quindi che "LicenseInfo" non ha sottocomponenti.
 
-A causa della complessità di questo meccanismo nel servizio Copia Shadow del volume, molti writer del richiedente possono rivelarsi utili per creare strutture personalizzate per archiviare le informazioni sui componenti e sui set di backup sia per i componenti esplicitamente che per quelli aggiunti in modo implicito.
+A causa della complessità di questo meccanismo in VSS, molti writer richiedenti possono risultare utili per creare strutture proprie per l'archiviazione delle informazioni sui componenti e sui set di backup per i componenti aggiunti in modo esplicito e implicito.
 
 ## <a name="properties-of-implicitly-included-components"></a>Proprietà dei componenti inclusi in modo implicito
 
-Durante le operazioni di ripristino e backup, le istanze delle interfacce [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) e [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) vengono utilizzate sia per recuperare informazioni sui componenti, sia per impostare o modificare le proprietà del componente. Tuttavia, solo i componenti inclusi in modo esplicito avranno istanze dell'interfaccia **IVssComponent** o saranno accessibili all'interfaccia **IVssBackupComponents** .
+Durante le operazioni di ripristino e backup, le istanze delle interfacce [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) e [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) vengono usate sia per recuperare informazioni sui componenti che per impostare o modificare le proprietà dei componenti. Tuttavia, solo i componenti inclusi in modo esplicito avranno istanze **dell'interfaccia IVssComponent** o saranno accessibili all'interfaccia **IVssBackupComponents.**
 
-Alcune proprietà sono a livello di set di componenti nell'ambito. Queste proprietà includono quanto segue:
+Alcune proprietà hanno un ambito a livello di set di componenti. Queste proprietà includono quanto segue:
 
 -   Stato di backup e ripristino: <dl>
 
-[**IVssBackupComponents:: SetBackupSucceeded**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded)  
-    [**IVssComponent:: GetBackupSucceeded**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded)  
-    [**IVssBackupComponents:: SetFileRestoreStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setfilerestorestatus)  
-    [**IVssComponent:: GetFileRestoreStatus**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getfilerestorestatus)  
+[**IVssBackupComponents::SetBackupSucceeded**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded)  
+    [**IVssComponent::GetBackupSucceeded**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded)  
+    [**IVssBackupComponents::SetFileRestoreStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setfilerestorestatus)  
+    [**IVssComponent::GetFileRestoreStatus**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getfilerestorestatus)  
     </dl>
 -   Opzioni di backup e ripristino: <dl>
 
-[**IVssBackupComponents:: SetBackupOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupoptions)  
-    [**IVssComponent:: GetBackupOptions**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupoptions)  
-    [**IVssBackupComponents:: SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions)  
-    [**IVssComponent:: GetRestoreOptions**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoreoptions)  
+[**IVssBackupComponents::SetBackupOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupoptions)  
+    [**IVssComponent::GetBackupOptions**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupoptions)  
+    [**IVssBackupComponents::SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions)  
+    [**IVssComponent::GetRestoreOptions**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoreoptions)  
     </dl>
 -   Messaggi di errore: <dl>
 
-[**IVssComponent:: SetPostRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setpostrestorefailuremsg)  
-    [**IVssComponent:: SetPreRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setprerestorefailuremsg)  
-    [**IVssComponent:: SetPostRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setpostrestorefailuremsg)  
-    [**IVssComponent:: SetPreRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setprerestorefailuremsg)  
+[**IVssComponent::SetPostRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setpostrestorefailuremsg)  
+    [**IVssComponent::SetPreRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setprerestorefailuremsg)  
+    [**IVssComponent::SetPostRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setpostrestorefailuremsg)  
+    [**IVssComponent::SetPreRestoreFailureMsg**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setprerestorefailuremsg)  
     </dl>
 -   Destinazioni di ripristino: <dl>
 
-[**IVssComponent:: SetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoretarget)  
-    [**IVssComponent:: GetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoretarget)  
+[**IVssComponent::SetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoretarget)  
+    [**IVssComponent::GetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoretarget)  
     </dl>
--   Timbri di backup: <dl>
+-   Indicatori di backup: <dl>
 
-[**IVssComponent:: SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp)  
-    [**IVssComponent:: GetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupstamp)  
+[**IVssComponent::SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp)  
+    [**IVssComponent::GetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupstamp)  
     </dl>
 -   Metadati aggiuntivi: <dl>
 
-[**IVssComponent:: SetRestoreMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoremetadata)  
-    [**IVssComponent:: GetRestoreMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoremetadata)  
-    [**IVssComponent:: SetBackupMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupmetadata)  
-    [**IVssComponent:: GetBackupMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupmetadata)  
+[**IVssComponent::SetRestoreMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoremetadata)  
+    [**IVssComponent::GetRestoreMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoremetadata)  
+    [**IVssComponent::SetBackupMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupmetadata)  
+    [**IVssComponent::GetBackupMetadata**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupmetadata)  
     </dl>
 
-Pertanto, si utilizza l'istanza dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) del membro di definizione di un set di componenti o si utilizza il nome, il tipo e il percorso logico del membro di definizione con un metodo [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) per impostare o recuperare le proprietà per tutti i membri del set di componenti.
+Si usa quindi l'istanza dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) del membro di definizione di un set di componenti oppure il nome, il tipo e il percorso logico del membro di definizione con un metodo [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) per impostare o recuperare le proprietà per tutti i membri del set di componenti.
 
-Per questo motivo, i set di componenti vengono considerati come unità. Un backup di un set di componenti, ad esempio, ha esito positivo solo se il backup di tutti i set di file di tutti i relativi componenti ha esito positivo.
+Per questo motivo, i set di componenti vengono considerati come unità. Ad esempio, un backup di un set di componenti ha esito positivo solo se il backup di tutti i set di file di tutti i relativi componenti ha esito positivo.
 
-Nell'esempio precedente, si supponga che un file nel componente "Jan" (con percorso logico "writerData \\ set2") sia un membro del set di componenti definito da "writerData". Se non è stato possibile eseguire il backup di uno dei file "gen", un richiedente utilizzerebbe le informazioni "writerData" (il nome "writerData", il percorso "" e il tipo di componente) come argomenti quando si imposta [**IVssBackupComponents:: SetBackupSucceeded**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded) con **false** per indicare l'errore del set di componenti.
+Nell'esempio precedente si supponga che un file nel componente "Jan" (con percorso logico "writerData Set2") sia un membro del set di componenti definito \\ da "writerData". Se non è stato possibile eseguire il backup di uno dei file di "Jan", un richiedente userebbe le informazioni di "writerData" (il nome "writerData", il percorso "" e il relativo tipo di componente) come argomenti durante l'impostazione di [**IVssBackupComponents::SetBackupSucceeded**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded) con **false** per indicare l'errore del set di componenti.
 
-Analogamente, lo stato restituito da [**IVssComponent:: GetBackupSucceeded**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded) per l'istanza "writerData" dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) si applica non solo a "writerData" ma anche a tutti i relativi sottocomponenti.
+Analogamente, lo stato restituito da [**IVssComponent::GetBackupSucceeded**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded) per l'istanza di "writerData" [**dell'interfaccia IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) si applica non solo a "writerData", ma anche a tutti i relativi sottocomponenti.
 
-Se, inoltre, un writer sceglie di modificare la destinazione di ripristino utilizzando [**IVssComponent:: SetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoretarget) dell'istanza di [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)"writerData", la destinazione di ripristino verrà modificata per tutti i set di file di tutti i sottocomponenti "writerData".
+Inoltre, se un writer sceglie di modificare la destinazione di ripristino usando [**IVssComponent::SetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoretarget) dell'istanza di "writerData" di [**IVssComponent,**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)la destinazione di ripristino viene cambiata per tutti i set di file di tutti i sottocomponenti di "writerData".
 
-Le proprietà seguenti si applicano non a livello di componente, ma a specifici file o set di file:
+Le proprietà seguenti non si applicano a livello di componente, ma a determinati file o set di file:
 
--   Mapping percorsi alternativi: <dl>
+-   Mapping di percorsi alternativi: <dl>
 
-[**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping)  
-    [**IVssComponent:: GetAlternateLocationMapping**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmapping)  
-    [**IVssComponent:: GetAlternateLocationMappingCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmappingcount)  
+[**IVssBackupComponents::AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping)  
+    [**IVssComponent::GetAlternateLocationMapping**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmapping)  
+    [**IVssComponent::GetAlternateLocationMappingCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmappingcount)  
     </dl>
--   File differenziati: <dl>
+-   File differenze: <dl>
 
-[**IVssComponent:: AddDifferencedFilesByLastModifyTime**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime)  
-    [**IVssComponent:: GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile)  
-    [**IVssComponent:: GetDifferencedFilesCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfilescount)  
+[**IVssComponent::AddDifferencedFilesByLastModifyTime**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime)  
+    [**IVssComponent::GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile)  
+    [**IVssComponent::GetDifferencedFilesCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfilescount)  
     </dl>
 -   File parziali: <dl>
 
-[**IVssComponent:: AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile)  
-    [**IVssComponent:: GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile)  
-    [**IVssComponent:: GetPartialFileCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfilecount)  
+[**IVssComponent::AddPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile)  
+    [**IVssComponent::GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile)  
+    [**IVssComponent::GetPartialFileCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfilecount)  
     </dl>
--   Destinazioni dirette: <dl>
+-   Destinazioni indirizzate: <dl>
 
-[**IVssComponent:: AddDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddirectedtarget)  
-    [**IVssComponent:: GetDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtarget)  
-    [**IVssComponent:: GetDirectedTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtargetcount)  
+[**IVssComponent::AddDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddirectedtarget)  
+    [**IVssComponent::GetDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtarget)  
+    [**IVssComponent::GetDirectedTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtargetcount)  
     </dl>
 -   Nuove destinazioni: <dl>
 
-[**IVssBackupComponents:: AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)  
-    [**IVssComponent:: GetNewTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtarget)  
-    [**IVssComponent:: GetNewTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtargetcount)  
+[**IVssBackupComponents::AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)  
+    [**IVssComponent::GetNewTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtarget)  
+    [**IVssComponent::GetNewTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtargetcount)  
     </dl>
 
-Quando un richiedente accede a queste funzionalità per un sottocomponente usando l'interfaccia [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) , USA le informazioni sul componente per il componente di definizione del set di componenti, ma le informazioni sui file o sui file impostati per il sottocomponente.
+Quando un richiedente accede a queste funzionalità per un sottocomponente usando [**l'interfaccia IVssBackupComponents,**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) usa le informazioni sul componente per il componente di definizione del set di componenti, ma le informazioni sul file o sul set di file per il sottocomponente.
 
-Analogamente, se la proprietà è accessibile tramite l'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) , viene utilizzata l'istanza corrispondente al sottocomponente che lo definisce, ma gli argomenti del file o del set di file vengono ricavati dal sottocomponente.
+Analogamente, se la proprietà è accessibile tramite l'interfaccia [**IVssComponent,**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) viene usata l'istanza corrispondente al sottocomponente di definizione, ma gli argomenti del file o del set di file vengono presi dal sottocomponente.
 
-Si supponga, ad esempio, che il sottocomponente "Jan" (con percorso logico "writerData \\ set2") abbia un file impostato con il percorso "c: \\ Fred", una specifica di file " \* . dat" e un flag ricorsivo di **true** potrebbe dover essere ripristinato in un percorso alternativo.
+Si supponga, ad esempio, che il sottocomponente "Jan" (con percorso logico "writerData Set2") abbia un set di file con un percorso \\ "c: fred", una specifica \\ di file \* ".dat"  e un flag ricorsivo true che potrebbe dover essere ripristinato in un percorso alternativo.
 
-In tal caso, un richiedente chiamerà [**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping), usando le informazioni di "writerData" (tipo di componente, il nome del componente "writeData" e il percorso logico "") insieme alle informazioni sul set di file di "Jan" (percorso "c: \\ Fred", specifica del file " \* . dat" e ricorsione uguale a **true**).
+In questo caso, un richiedente chiamerebbe [**IVssBackupComponents::AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping)usando le informazioni di "writerData" (tipo di componente, nome del componente "writeData" e percorso logico "") insieme alle informazioni sul set di file di "Jan" (percorso "c:fu", \\ specifica del file " .dat" e ricorsione uguale a \* **true).**
 
-Si noti che in questo caso le informazioni sui set di file devono corrispondere esattamente alle informazioni del set di file usate da [**IVssCreateWriterMetadata:: AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup), [**IVssCreateWriterMetadata:: AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles)o [**IVssCreateWriterMetadata:: AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles) per aggiungere file a Jan.
+Si noti che in questo caso le informazioni sul set di file devono corrispondere esattamente alle informazioni sul set di file usate da [**IVssCreateWriterMetadata::AddFilesToFileGroup**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup), [**IVssCreateWriterMetadata::AddDatabaseFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles)o [**IVssCreateWriterMetadata::AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles) per aggiungere file a Jan.
 
-Analogamente, se un writer volesse aggiungere una destinazione diretta a un file con il percorso "c: \\ Ethel" e il nome "Lucy. dat" gestito da "Jan" (con percorso logico "writerData \\ set2"), userà l'istanza di [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) corrispondente a "writerData", ma le informazioni sul file di "Jan".
+Analogamente, se un writer vuole aggiungere una destinazione diretta a un file con il percorso "c: ethel" e il nome \\ "writer.dat" gestito da "Jan" (con percorso logico "writerData \\ Set2"), userebbe l'istanza [**di IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) corrispondente a "writerData", ma le informazioni sul file di "Jan".
 
 ## <a name="implicitly-included-components-in-the-restore-set"></a>Componenti inclusi in modo implicito nel set di ripristino
 
-I componenti inclusi in modo implicito in un backup possono essere inclusi in modo esplicito in un ripristino se possono essere selezionati per il ripristino. Come indicato in [utilizzo della selezione per il ripristino e i sottocomponenti](working-with-selectability-for-restore-and-subcomponents.md), tali componenti vengono aggiunti al documento componenti di backup usando il metodo [**IVssBackupComponents:: AddRestoreSubcomponent**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addrestoresubcomponent) .
+I componenti inclusi implicitamente in un backup possono essere inclusi in modo esplicito in un ripristino se sono selezionabili per il ripristino. Come illustrato in [Working with Selectability for Restore and Subcomponents](working-with-selectability-for-restore-and-subcomponents.md)(Uso della selezionabilità per il ripristino e i sottocomponenti), tali componenti vengono aggiunti al documento dei componenti di backup usando il metodo [**IVssBackupComponents::AddRestoreSubcomponent.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addrestoresubcomponent)
 
-Tuttavia, non viene creata una nuova istanza dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) , né il componente è direttamente accessibile tramite l'interfaccia [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) .
+Tuttavia, non viene creata una nuova istanza [**dell'interfaccia IVssComponent,**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) né il componente è direttamente accessibile tramite l'interfaccia [**IVssBackupComponents.**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents)
 
-Al contrario, un componente incluso in modo esplicito per il ripristino, ma incluso in modo implicito per il backup, deve essere accessibile tramite un'istanza dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) che corrisponde al componente che definisce il set di componenti di cui è membro al momento del backup.
+È invece necessario accedere a un componente incluso in modo esplicito per il ripristino, ma in modo implicito per il backup, tramite un'istanza [**dell'interfaccia IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) corrispondente al componente che ha definito il set di componenti di cui era membro al momento del backup.
 
-Ad esempio, per includere in modo esplicito per il ripristino "set1", un sottocomponente del componente selezionabile per il backup "writerData", è possibile ottenere informazioni su di esso chiamando il metodo [**IVssComponent:: GetRestoreSubcomponent**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoresubcomponent) dell'istanza "writerData" dell'interfaccia [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent) .
+Ad esempio, per includere in modo esplicito per il ripristino "Set1", un sottocomponente del componente selezionabile per il componente di backup "writerData", è necessario ottenere informazioni chiamando il metodo [**IVssComponent::GetRestoreSubcomponent**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoresubcomponent) dell'istanza di "writerData" [**dell'interfaccia IVssComponent.**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)
 
  
 

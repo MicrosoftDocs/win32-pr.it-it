@@ -1,6 +1,6 @@
 ---
 title: Tipo matrice
-description: Una matrice è un tipo di dati speciale che contiene tra uno e sedici componenti. Ogni componente di una matrice deve essere dello stesso tipo.
+description: Una matrice è un tipo di dati speciale che contiene da uno a sedici componenti. Ogni componente di una matrice deve essere dello stesso tipo.
 ms.assetid: 728eb472-103d-4c7f-b6f6-e515fc024801
 keywords:
 - Tipo matrice HLSL
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c580706a2ddae3e4a94c138a1ca0f6932457732a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b9e6b98309c760a3da4d1e9c488e4aed049aa34f0b449042e8f00a02426cc513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726171"
 ---
 # <a name="matrix-type"></a>Tipo matrice
 
-Una matrice è un tipo di dati speciale che contiene tra uno e sedici componenti. Ogni componente di una matrice deve essere dello stesso tipo.
+Una matrice è un tipo di dati speciale che contiene da uno a sedici componenti. Ogni componente di una matrice deve essere dello stesso tipo.
 
 
 
 |                         |
 |-------------------------|
-| **Nome TypeComponents** |
+| **Nome typeComponents** |
 
 
 
@@ -40,7 +40,7 @@ Una matrice è un tipo di dati speciale che contiene tra uno e sedici componenti
 
 | Elemento                                                                                                                             | Descrizione                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nome singolo che contiene tre parti. La prima parte è uno dei tipi [scalari](dx-graphics-hlsl-data-types.md) . La seconda parte è il numero di righe. La terza parte è il numero di colonne. Il numero di righe e colonne è un numero intero positivo compreso tra 1 e 4.<br/> |
+| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nome singolo che contiene tre parti. La prima parte è uno dei [tipi scalari.](dx-graphics-hlsl-data-types.md) La seconda parte è il numero di righe. La terza parte è il numero di colonne. Il numero di righe e colonne è un numero intero positivo compreso tra 1 e 4 inclusi.<br/> |
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>                                         | Stringa ASCII che identifica in modo univoco il nome della variabile.<br/>                                                                                                                                                                                                                            |
 
 
@@ -49,7 +49,7 @@ Una matrice è un tipo di dati speciale che contiene tra uno e sedici componenti
 
 ## <a name="examples"></a>Esempio
 
-Ecco alcuni esempi:
+Di seguito sono riportati alcuni esempi:
 
 
 ```
@@ -65,7 +65,7 @@ float2x2 fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-Una matrice può essere dichiarata utilizzando anche questa sintassi:
+Una matrice può essere dichiarata anche usando questa sintassi:
 
 
 ```
@@ -74,7 +74,7 @@ matrix <Type, Number> VariableName
 
 
 
-Il tipo di matrice utilizza le parentesi acute per specificare il tipo, il numero di righe e il numero di colonne. In questo esempio viene creata una matrice a virgola mobile, con due righe e due colonne. È possibile utilizzare qualsiasi tipo di dati scalari.
+Il tipo matrice usa le parentesi uncinate per specificare il tipo, il numero di righe e il numero di colonne. In questo esempio viene creata una matrice a virgola mobile, con due righe e due colonne. È possibile usare qualsiasi tipo di dati scalare.
 
 Ecco un esempio:
 

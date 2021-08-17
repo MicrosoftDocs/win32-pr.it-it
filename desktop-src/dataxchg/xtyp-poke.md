@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_POKE (DDEML. h)
-description: Un client utilizza la \_ transazione poke XTYP per inviare dati non richiesti al server. Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve questa transazione quando un client specifica XTYP \_ poke nella funzione DdeClientTransaction.
+title: XTYP_POKE transazione (Ddeml.h)
+description: Un client usa la transazione POKE XTYP \_ per inviare dati non richiesta al server. Una funzione di callback del server Dynamic Data Exchange (DDE) DdeCallback riceve questa transazione quando un client specifica poKE XTYP nella \_ funzione DdeClientTransaction.
 ms.assetid: 63c6115e-24f8-4f35-8397-8be63110b21f
 keywords:
-- Scambio di dati delle transazioni XTYP_POKE
+- XTYP_POKE dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e538f72b7a736ed9be5cf3e1d83e8729f42ef83d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a179f4130ae06c4548b52586d6086201c2d832a158cef877d9aaf524160f4b16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914751"
 ---
-# <a name="xtyp_poke-transaction"></a>\_Transazione poke XTYP
+# <a name="xtyp_poke-transaction"></a>Transazione \_ POKE XTYP
 
-Un client utilizza la **transazione \_ poke XTYP** per inviare dati non richiesti al server. Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ poke** nella funzione [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un client usa la **\_ transazione POKE XTYP** per inviare dati non richiesta al server. Una funzione di callback del server Dynamic Data Exchange [*(DDE) DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione quando un client specifica **\_ poKE XTYP** nella [**funzione DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ Tipo di transazione.
 *uFmt* 
 </dt> <dd>
 
-Il formato dei dati inviati dal server.
+Formato dei dati inviati dal server.
 
 </dd> <dt>
 
@@ -95,11 +95,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Una funzione di callback del server deve restituire il flag **\_ fack DDE** se elabora questa transazione, il flag **\_ FBUSY DDE** se è troppo occupato per elaborare la transazione o il flag **\_ FNOTPROCESSED DDE** se rifiuta questa transazione.
+Una funzione di callback del server deve restituire il flag **DDE \_ FACK** se elabora questa transazione, il flag **DDE \_ FBUSY** se è troppo occupato per elaborare la transazione o il flag **DDE \_ FNOTPROCESSED** se rifiuta la transazione.
 
 ## <a name="remarks"></a>Commenti
 
-Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ Fail \_ pokes** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **\_ CBF FAIL \_ POKES** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -120,7 +120,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Riferimento**
 </dt> <dt>
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+[**Ddeclienttransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 </dt> <dt>
 
 [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
@@ -129,7 +129,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

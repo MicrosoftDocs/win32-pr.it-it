@@ -1,7 +1,7 @@
 ---
-description: Impostazione di compressione armonica sferica (SH).
+description: Impostazione di compressione sferica aricale (SH).
 ms.assetid: 214d6efb-419d-4eea-8360-322885c26bc3
-title: Enumerazione D3DXSHCOMPRESSQUALITYTYPE (D3dx9mesh. h)
+title: Enumerazione D3DXSHCOMPRESSQUALITYTYPE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: d61c70317505442ca4911a13dac8566f9bd7c6fb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 482483bb38c708c9b09004d48bd4f1e1e0ec0e4b9463a6d20f210b4fe8b1d44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731279"
 ---
 # <a name="d3dxshcompressqualitytype-enumeration"></a>Enumerazione D3DXSHCOMPRESSQUALITYTYPE
 
-Impostazione di compressione armonica sferica (SH).
+Impostazione di compressione sferica aricale (SH).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,24 +41,24 @@ typedef enum D3DXSHCOMPRESSQUALITYTYPE {
 
 <dl> <dt>
 
-<span id="D3DXSHCQUAL_FASTLOWQUALITY"></span><span id="d3dxshcqual_fastlowquality"></span>**\_FASTLOWQUALITY D3DXSHCQUAL**
+<span id="D3DXSHCQUAL_FASTLOWQUALITY"></span><span id="d3dxshcqual_fastlowquality"></span>**D3DXSHCQUAL \_ FASTLOWQUALITY**
 </dt> <dd>
 
 La compressione dei dati è di bassa qualità, ma è veloce da comprimere.
 
 </dd> <dt>
 
-<span id="D3DXSHCQUAL_SLOWHIGHQUALITY"></span><span id="d3dxshcqual_slowhighquality"></span>**\_SLOWHIGHQUALITY D3DXSHCQUAL**
+<span id="D3DXSHCQUAL_SLOWHIGHQUALITY"></span><span id="d3dxshcqual_slowhighquality"></span>**D3DXSHCQUAL \_ SLOWHIGHQUALITY**
 </dt> <dd>
 
-La compressione dei dati è di qualità elevata, ma è lenta da comprimere.
+La compressione dei dati è di alta qualità, ma la compressione è lenta.
 
 </dd> <dt>
 
-<span id="D3DXSHCQUAL_FORCE_DWORD"></span><span id="d3dxshcqual_force_dword"></span>**D3DXSHCQUAL \_ Force \_ DWORD**
+<span id="D3DXSHCQUAL_FORCE_DWORD"></span><span id="d3dxshcqual_force_dword"></span>**D3DXSHCQUAL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: La funzione GetAdaptersInfo inserisce un puntatore a una struttura IP ADAPTER INFO con informazioni sulle schede di rete \_ \_ associate al sistema.
+description: La funzione GetAdaptersInfo riempie un puntatore a una struttura IP ADAPTER INFO con informazioni sulle schede di \_ \_ rete associate al sistema.
 ms.assetid: 5bc72ee5-3065-4bfb-8dcb-8befb2a4bbd9
 title: Gestione delle schede di rete tramite GetAdaptersInfo
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118644631"
 ---
 # <a name="managing-network-adapters-using-getadaptersinfo"></a>Gestione delle schede di rete tramite GetAdaptersInfo
 
-La [**funzione GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) inserisce un puntatore a una struttura [**IP ADAPTER \_ \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) con informazioni sulle schede di rete associate al sistema.
+La [**funzione GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) riempie un puntatore a una struttura [**IP ADAPTER \_ \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) con informazioni sulle schede di rete associate al sistema.
 
 **Per usare GetAdaptersInfo**
 
-1.  Dichiarare un puntatore a [**una variabile IP ADAPTER \_ \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominata *pAdapterInfo* e una variabile **ULONG** denominata *ulOutBufLen.* Queste variabili vengono passate come parametri alla [**funzione GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Creare anche una **variabile DWORD** denominata *dwRetVal* (per il controllo degli errori).
+1.  Dichiarare un puntatore a [**una variabile IP ADAPTER \_ \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominata *pAdapterInfo* e una variabile **ULONG** denominata *ulOutBufLen*. Queste variabili vengono passate come parametri alla [**funzione GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Creare anche una **variabile DWORD** denominata *dwRetVal* (per il controllo degli errori).
     ```C++
     IP_ADAPTER_INFO  *pAdapterInfo;
     ULONG            ulOutBufLen;
@@ -36,7 +36,7 @@ La [**funzione GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
     
 
-3.  Eseguire una chiamata iniziale [**a GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) per ottenere le dimensioni necessarie nella *variabile ulOutBufLen.*
+3.  Effettuare una chiamata iniziale a [**GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) per ottenere le dimensioni necessarie nella variabile *ulOutBufLen.*
     > [!Note]  
     > Questa chiamata alla funzione ha esito negativo e viene usata per garantire che la variabile *ulOutBufLen* specifichi una dimensione sufficiente per contenere tutte le informazioni restituite a *pAdapterInfo*. Si tratta di un modello di programmazione comune per le strutture di dati e le funzioni di questo tipo.
 
@@ -52,7 +52,7 @@ La [**funzione GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
     
 
-4.  Eseguire una seconda chiamata a [**GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo), passando *pAdapterInfo* e *ulOutBufLen* come parametri ed eseguendo il controllo degli errori generale. Restituire il relativo valore alla **variabile DWORD** *dwRetVal* (per un controllo degli errori più completo).
+4.  Effettuare una seconda chiamata a [**GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo), passando *pAdapterInfo* e *ulOutBufLen* come parametri ed eseguendo il controllo degli errori generale. Restituire il valore alla **variabile DWORD** *dwRetVal* (per un controllo degli errori più completo).
     ```C++
     if ((dwRetVal = GetAdaptersInfo( pAdapterInfo, &ulOutBufLen)) != ERROR_SUCCESS) {
         printf("GetAdaptersInfo call failed with %d\n", dwRetVal);
@@ -63,7 +63,7 @@ La [**funzione GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
     
 
-5.  Se la chiamata ha avuto esito positivo, accedere ad alcuni dati nella *struttura pAdapterInfo.*
+5.  Se la chiamata ha esito positivo, accedere ad alcuni dei dati nella *struttura pAdapterInfo.*
     ```C++
     PIP_ADAPTER_INFO pAdapter = pAdapterInfo;
     while (pAdapter) {

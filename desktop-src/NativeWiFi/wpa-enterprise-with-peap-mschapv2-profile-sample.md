@@ -4,20 +4,20 @@ ms.assetid: e344c360-4ab5-4a5f-a1b2-b0fa890b8666
 title: WPA-Enterprise esempio di PEAP-MSCHAPv2 profilo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 364cc7a9cc85e4c5e2ef908c0ac2a4726d6c5a96
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: c6bd504f803795613b545c64025df3094346ea2478dd729b91ec8cec69f45c3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797431"
 ---
 # <a name="wpa-enterprise-with-peap-mschapv2-profile-sample"></a>WPA-Enterprise esempio di PEAP-MSCHAPv2 profilo
 
 Questo profilo di esempio usa Protected Extensible Authentication Protocol con Microsoft Challenge Handshake Authentication Protocol versione 2 (PEAP-MSCHAPv2) con *UserName* Password per l'autenticazione **/**  alla rete. All'utente viene richiesto di immettere le credenziali.
 
-Questo esempio è configurato per l'Wi-Fi sicurezza dell'accesso protetto in esecuzione in modalità Enterprise (WPA-Enterprise). Il WPA-Enterprise di sicurezza usa 802.1X per lo scambio di autenticazione con il back-end. Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
+Questo esempio è configurato per l'Wi-Fi di accesso protetto in esecuzione in modalità Enterprise (WPA-Enterprise). Il WPA-Enterprise di sicurezza usa 802.1X per lo scambio di autenticazione con il back-end. Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
 
-**Windows XP con SP3 e API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
+**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

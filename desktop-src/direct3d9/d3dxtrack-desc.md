@@ -1,7 +1,7 @@
 ---
-description: Descrive una traccia di animazione e specifica il peso, la velocità e la posizione della traccia in un determinato momento.
+description: Descrive una traccia di animazione e specifica il peso, la velocità e la posizione di fusione per la traccia in un determinato momento.
 ms.assetid: f1469b6f-861f-4b7d-a187-933092a5d257
-title: Struttura D3DXTRACK_DESC (D3dx9anim. h)
+title: D3DXTRACK_DESC struttura (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 12f1604cf954bcdd6a2a898fec5410804112e498
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cddabb3ea79951e35831c2cdc32e11baeb5c7c1c4ce174fd29d9382edb391953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731118"
 ---
-# <a name="d3dxtrack_desc-structure"></a>\_Struttura D3DXTRACK DESC
+# <a name="d3dxtrack_desc-structure"></a>Struttura D3DXTRACK \_ DESC
 
-Descrive una traccia di animazione e specifica il peso, la velocità e la posizione della traccia in un determinato momento.
+Descrive una traccia di animazione e specifica il peso, la velocità e la posizione di fusione per la traccia in un determinato momento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,29 +46,29 @@ typedef struct D3DXTRACK_DESC {
 **Priorità**
 </dt> <dd>
 
-Tipo: **[ **D3DXPRIORITY \_**](./d3dxpriority-type.md)**
+Tipo: **[ **D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md)**
 
 </dd> <dd>
 
-Tipo di priorità, come definito [**nel \_ tipo D3DXPRIORITY**](./d3dxpriority-type.md).
+Tipo di priorità, come definito in [**D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md).
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valore del peso. Il peso determina la percentuale di questa traccia da unire con altre tracce.
+Valore del peso. Il peso determina la proporzione di questa traccia da unire ad altre tracce.
 
 </dd> <dt>
 
 **Velocità**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -79,28 +79,28 @@ Valore della velocità. Viene usato in modo analogo a un moltiplicatore per ridi
 **Position**
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Posizione temporale della traccia nell'intervallo di tempo locale del set di animazioni corrente.
+Posizione temporale della traccia, nell'intervallo di tempo locale del set di animazioni corrente.
 
 </dd> <dt>
 
-**Attiva**
+**Abilita**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tenere traccia dell'abilitazione o disabilitazione. Per abilitare, impostare su **true**. Per disabilitare, impostare su **false**.
+Tenere traccia dell'abilitazione/disabilitazione. Per abilitarla, impostare su **TRUE.** Per disabilitare, impostare su **FALSE.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le tracce con la stessa priorità vengono combinate insieme e i due valori risultanti vengono combinati utilizzando il fattore di sfumatura della priorità. A una traccia deve essere associato un set di animazioni (archiviato separatamente).
+Le tracce con la stessa priorità vengono combinate tra loro e i due valori risultanti vengono quindi sfusi usando il fattore di blend di priorità. A una traccia deve essere associato un set di animazioni (archiviato separatamente).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Le tracce con la stessa priorità vengono combinate insieme e i due valori risul
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

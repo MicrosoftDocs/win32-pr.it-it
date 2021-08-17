@@ -16,7 +16,7 @@ ms.locfileid: "118553098"
 
 Un provider di consumer di eventi è un componente dell'architettura consumer permanente che determina quale consumer di eventi permanente gestisce un determinato evento. È necessario creare un provider di consumer di eventi insieme ai consumer di eventi permanenti per indirizzare correttamente gli eventi da WMI.
 
-Un provider di consumer di eventi collega un provider di eventi a un elenco di classi consumer. Le istanze di queste classi consumer ricevono quindi eventi da tale provider. WMI identifica il provider di consumer a cui vengono recapitati gli eventi, in base all'istanza [**\_ \_ EventConsumerProviderRegistration,**](--eventconsumerproviderregistration.md) che associa l'istanza [**\_ \_ win32Provider**](--win32provider.md) del provider di consumer a una classe consumer logica. Gli utenti creano istanze della classe consumer come parte di una sottoscrizione permanente. Se il provider di eventi non è in esecuzione quando si verifica un evento, WMI avvia il provider quando deve recapitare gli eventi.
+Un provider di consumer di eventi collega un provider di eventi a un elenco di classi consumer. Le istanze di queste classi consumer ricevono quindi eventi da tale provider. WMI identifica il provider di consumer a cui vengono recapitati gli eventi, in base all'istanza [**\_ \_ EventConsumerProviderRegistration,**](--eventconsumerproviderregistration.md) che associa l'istanza [**\_ \_ Win32Provider**](--win32provider.md) del provider di consumer a una classe consumer logica. Gli utenti creano istanze della classe consumer come parte di una sottoscrizione permanente. Se il provider di eventi non è in esecuzione quando si verifica un evento, WMI avvia il provider quando deve recapitare gli eventi.
 
 La procedura seguente descrive come implementare un provider di consumer di eventi.
 
@@ -28,7 +28,7 @@ La procedura seguente descrive come implementare un provider di consumer di even
 
 2.  Implementare [**l'interfaccia IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) per il provider.
 
-    WMI usa [**IWbemProviderInit per**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) caricare e inizializzare un provider. Per altre informazioni, vedere [Inizializzazione di un provider](initializing-a-provider.md).
+    WMI usa [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) per caricare e inizializzare un provider. Per altre informazioni, vedere [Inizializzazione di un provider](initializing-a-provider.md).
 
     > [!Note]  
     > I provider di consumer di eventi sono fortemente invitati a usare il modello di multithreading "Both".

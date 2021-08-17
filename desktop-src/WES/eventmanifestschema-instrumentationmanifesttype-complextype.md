@@ -3,7 +3,7 @@ title: Tipo complesso InstrumentationManifestType
 description: Definisce il tipo di base per l'elemento instrumentationManifest.
 ms.assetid: 1fcdf215-db65-45a8-9077-5c954ac247c7
 keywords:
-- Log eventi di tipo complesso InstrumentationManifestType
+- EventLog di tipo complesso InstrumentationManifestType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 66ae7506ca052d507c389fcd45e5439b7d69a59a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1f6241d50830add4c610332ec5db6a9625847a43bf24abc1fba9834590ce91c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120963"
 ---
 # <a name="instrumentationmanifesttype-complex-type"></a>Tipo complesso InstrumentationManifestType
 
-Definisce il tipo di base per l'elemento [**instrumentationManifest**](eventmanifestschema-instrumentationmanifest-element.md) .
+Definisce il tipo di base per [**l'elemento instrumentationManifest.**](eventmanifestschema-instrumentationmanifest-element.md)
 
 ``` syntax
 <xs:complexType name="InstrumentationManifestType" />
@@ -34,8 +34,8 @@ Definisce il tipo di base per l'elemento [**instrumentationManifest**](eventmani
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Proprietà Error di IWMPMedia2
 description: La proprietà Error ottiene un'interfaccia IWMPErrorItem se l'elemento multimediale presenta una condizione di errore.
 ms.assetid: 57dc8aef-5f22-43da-87bc-fdc0c8ebe49b
 keywords:
-- Proprietà Error Windows Media Player
+- Errore - proprietà Windows Media Player
 - Proprietà Error Windows Media Player, interfaccia IWMPMedia2
 - Interfaccia IWMPMedia2 Windows Media Player , proprietà Error
 topic_type:
@@ -53,7 +53,7 @@ Interfaccia **WMPLib.IWMPErrorItem** che fornisce l'accesso alle informazioni su
 
 ## <a name="remarks"></a>Commenti
 
-Se non è possibile riprodurre l'elemento multimediale, questa proprietà ottiene **un'interfaccia IWMPErrorItem** contenente informazioni sul problema riscontrato.
+Se non è possibile riprodurre l'elemento multimediale, questa proprietà ottiene **un'interfaccia IWMPErrorItem** che contiene informazioni sul problema riscontrato.
 
 ## <a name="requirements"></a>Requisiti
 

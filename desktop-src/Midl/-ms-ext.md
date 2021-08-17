@@ -1,6 +1,6 @@
 ---
 title: Opzione /ms_ext
-description: A causa di MIDL versione 3.0, le funzionalità abilitate dall'opzione ms ext sono ora la modalità \_ predefinita per il compilatore MIDL.
+description: Con MIDL versione 3.0, le funzionalità abilitate dall'opzione ms ext sono ora la modalità \_ predefinita per il compilatore MIDL.
 ms.assetid: 175894c9-fa7e-4907-966d-e9df5a8e2745
 keywords:
 - /ms_ext l'opzione MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118644560"
 ---
 # <a name="ms_ext-switch"></a>Opzione /ms \_ ext
 
-A causa di MIDL versione 3.0, le funzionalità abilitate dall'opzione **ms \_ ext** sono ora la modalità predefinita per il compilatore MIDL.
+Con MIDL versione 3.0, le funzionalità abilitate dall'opzione **ms \_ ext** sono ora la modalità predefinita per il compilatore MIDL.
 
 ``` syntax
 midl /ms_ext

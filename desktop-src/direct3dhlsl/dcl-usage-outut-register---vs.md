@@ -18,7 +18,7 @@ ms.locfileid: "117726718"
 ---
 # <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>Output dcl \_ usage (sm1, sm2, sm3 - vs asm)
 
-I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti). Possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate della trama, colori, colore, e così via.
+I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti). Possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate della trama, colori, blu e così via.
 
 I registri di output richiedono dichiarazioni che includono semantica. Ad esempio, la posizione precedente e i registri delle dimensioni dei punti vengono sostituiti dichiarando un registro di output con una semantica di posizione o dimensione del punto.
 

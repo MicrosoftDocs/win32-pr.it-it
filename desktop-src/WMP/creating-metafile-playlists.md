@@ -23,14 +23,14 @@ ms.locfileid: "117750468"
 ---
 # <a name="creating-metafile-playlists"></a>Creazione di playlist di metafile
 
-È possibile creare una playlist usando qualsiasi editor di testo, ad esempio Microsoft Blocco note. Aprire l'editor di testo. Digitare le voci di script da implementare. Dopo aver terminato di digitare in Blocco note, salvare il file con un nome file e un'estensione di file appropriati. Per altre informazioni sulle estensioni, vedere [Linee guida per le estensioni dei metafile.](metafile-extension-guidelines.md) Il nome del file è in genere il nome del flusso o del file multimediale Windows seguito da un'estensione di file con estensione .più, .wvx o .asx. Ad esempio, se il contenuto multimediale è un file audio di Windows Media con estensione wma, usare l'estensione .extension per denominare la playlist. Le playlist non devono includere codici di formattazione di un elaboratore di testo, ad esempio Microsoft Word. Per assicurarsi che nella playlist non siano inclusi codici di formattazione, salvare il file come file di testo normale o ASCII.
+È possibile creare una playlist usando qualsiasi editor di testo, ad esempio Microsoft Blocco note. Aprire l'editor di testo. Digitare le voci di script da implementare. Dopo aver terminato di digitare in Blocco note, salvare il file con un nome file e un'estensione di file appropriati. Per altre informazioni sulle estensioni, vedere [Linee guida per le estensioni dei metafile.](metafile-extension-guidelines.md) In genere il nome del file è il nome del flusso o del file multimediale Windows seguito da un'estensione di file con estensione a, wvx o asx. Ad esempio, se il contenuto multimediale è un file audio di Windows Media con estensione wma, usare l'estensione .extension per denominare la playlist. Le playlist non devono includere codici di formattazione di un elaboratore di testo, ad esempio Microsoft Word. Per assicurarsi che nella playlist non siano inclusi codici di formattazione, salvare il file come file di testo normale o ASCII.
 
 > [!Note]  
 > Gli elementi e gli attributi non supportano la distinzione tra maiuscole e minuscole. Il testo usato nella playlist per definire un elemento o un attributo può essere maiuscolo o minuscolo o una combinazione di entrambi.
 
  
 
-Se un elemento non ha elementi figlio (quelli che modificano o sono contenuti all'interno di un altro elemento), è possibile usare un singolo carattere barra (/) alla fine del tag di apertura, subito prima del tag ">", al posto di un tag di chiusura. Gli elementi figlio di un elemento devono essere presenti tra il tag di apertura e quello di chiusura dell'elemento; in caso contrario, non sono elementi figlio per tale elemento e vengono ignorati o causano un errore nella sintassi della playlist.
+Se un elemento non ha elementi figlio (quelli che modificano o sono contenuti all'interno di un altro elemento), è possibile usare un singolo carattere barra (/) alla fine del tag di apertura, subito prima di ">", al posto di un tag di chiusura. Gli elementi figlio di un elemento devono essere presenti tra il tag di apertura e quello di chiusura dell'elemento; in caso contrario, non sono elementi figlio per tale elemento e vengono ignorati o causano un errore nella sintassi della playlist.
 
 I primi quattro caratteri di una playlist devono essere &lt; "ASX". **L'elemento ASX** viene usato in tutte le playlist, indipendentemente dal fatto che l'estensione sia .tutto, .wvx o .asx. Deve essere presente un solo **elemento ASX** per playlist. Questo elemento identifica il file come playlist di metafile Windows media. Non specifica il tipo di playlist.
 
@@ -46,7 +46,7 @@ I primi quattro caratteri di una playlist devono essere &lt; "ASX". **L'elemento
 
 **BARRA BANNER**
 
-**L'attributo BANNERBAR facoltativo** definisce se il Windows Media Player riserva spazio per un'immagine banner. Usare **l'elemento BANNER** per specificare l'elemento grafico da visualizzare. Se il valore di **BANNERBAR** è FIXED, Windows Media Player riserva spazio banner per la visualizzazione e per ogni clip, indipendentemente dal fatto che la playlist del metafile specifichi un banner per la presentazione o il clip. In questo modo le dimensioni della finestra Windows Media Player verranno conservate allo stesso modo (tranne quando le dimensioni del video cambiano) indipendentemente dall'assenza o dalla presenza di un banner grafico. Se alla visualizzazione o al clip non è associato un banner, lo spazio riservato per uno è nero. Se il valore **dell'attributo BANNERBAR** è AUTO, Windows Media Player riserva spazio per il banner solo quando la visualizzazione o il clip ne include uno.
+**L'attributo BANNERBAR facoltativo** definisce se il Windows Media Player riserva spazio per un'immagine banner. Usare **l'elemento BANNER** per specificare l'elemento grafico da visualizzare. Se il valore di **BANNERBAR** è FIXED, Windows Media Player riserva spazio banner per la visualizzazione e per ogni clip, indipendentemente dal fatto che la playlist del metafile specifichi un banner per la presentazione o il clip. In questo modo le dimensioni della finestra Windows Media Player verranno conservate allo stesso modo (tranne quando le dimensioni del video cambiano), indipendentemente dall'assenza o dalla presenza di un banner grafico. Se alla visualizzazione o al clip non è associato un banner, lo spazio riservato per uno è nero. Se il valore **dell'attributo BANNERBAR** è AUTO, Windows Media Player riserva spazio per il banner solo quando la visualizzazione o il clip ne include uno.
 
 
 ```XML
@@ -86,7 +86,7 @@ Codice di esempio
 
 
 
-Assicurarsi che la playlist funzioni facendo doppio clic su di essa in Windows Explorer. Windows Media Player aprire e avviare lo streaming del contenuto multimediale. **Dopo** aver confermato il funzionamento della playlist, salvarla nel server Web insieme alle pagine Web e collegarla tramite un elemento **HREF** oppure incorporarla in una pagina Web usando l'elemento OBJECT Windows Media Player.
+Assicurarsi che la playlist funzioni facendo doppio clic su di essa in Windows Explorer. Windows Media Player aprire e avviare lo streaming del contenuto multimediale. **Dopo** aver confermato il funzionamento della playlist, salvarla nel server Web insieme alle pagine Web e collegarla tramite un **elemento HREF** oppure incorporarla in una pagina Web usando l'elemento OBJECT Windows Media Player.
 
 Le sezioni seguenti contengono altre informazioni:
 

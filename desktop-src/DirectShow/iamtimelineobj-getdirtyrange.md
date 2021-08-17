@@ -24,7 +24,7 @@ ms.locfileid: "118400719"
 # <a name="iamtimelineobjgetdirtyrange-method"></a>Metodo IAMTimelineObj::GetDirtyRange
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 

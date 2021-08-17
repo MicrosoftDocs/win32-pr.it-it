@@ -1,11 +1,11 @@
 ---
 title: Postal-Address attributo
-description: Indirizzo postale per l'oggetto .
+description: Indirizzo postale per l'oggetto.
 ms.assetid: 85e96b88-8e58-4916-a333-59e3d4ed8025
 ms.tgt_platform: multiple
 keywords:
 - Postal-Address schema AD dell'attributo
-- Schema AD dell'attributo postalAddress
+- Attributo postalAddress - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118682394"
 ---
 # <a name="postal-address-attribute"></a>Postal-Address attributo
 
-Indirizzo postale per l'oggetto .
+Indirizzo postale per l'oggetto.
 
 
 
@@ -32,8 +32,8 @@ Indirizzo postale per l'oggetto .
 | CN                | Postal-Address                                                              |
 | Ldap-Display-Name | postalAddress                                                               |
 | Dimensione              | \-                                                                          |
-| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                      |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che l'indirizzo deve cambiare. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                      |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che è necessario modificare l'indirizzo. |
 | Attribute-Id      | 2.5.4.16                                                                    |
 | System-Id-Guid    | bf9679fc-0de6-11d0-a285-00aa003049e2                                        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                 |
@@ -59,7 +59,7 @@ Indirizzo postale per l'oggetto .
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                           |
-| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                           |
+| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                    |
@@ -67,7 +67,7 @@ Indirizzo postale per l'oggetto .
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                            |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
-| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> |
 
 
 
@@ -80,7 +80,7 @@ Indirizzo postale per l'oggetto .
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x810C                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
@@ -88,7 +88,7 @@ Indirizzo postale per l'oggetto .
 | Range-Upper            | 4096                                                                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
