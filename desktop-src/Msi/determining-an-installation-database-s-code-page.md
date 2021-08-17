@@ -15,7 +15,7 @@ ms.locfileid: "118637850"
 
 Per determinare la tabella codici di un database, chiamare [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) con *hDatabase* impostato sull'handle del database e *szTableName* impostato su \_ ForceCodepage. Viene esportato un file di testo con estensione idt. Le prime due righe di questo file sono vuote. La terza riga è il numero della tabella codici ANSI, seguito da una scheda, seguita dal nome \_ ForceCodepage. Vedere anche [Gestione della tabella codici delle tabelle importate ed esportate](code-page-handling-of-imported-and-exported-tables.md).
 
-Un esempio di determinazione della tabella codici tramite il metodo [**Export**](database-export.md) viene fornito in Windows Installer SDK come parte dell'utilità WiLangId.vbs. Per altre informazioni sull'uso WiLangId.vbs vedere l'argomento Relativo alla gestione del linguaggio [e della tabella codici.](manage-language-and-codepage.md)
+Un esempio di determinazione della tabella codici tramite il metodo [**Export**](database-export.md) viene fornito in Windows Installer SDK come parte dell'utilità WiLangId.vbs. Per altre informazioni sull'uso di WiLangId.vbs vedere l'argomento Gestire il linguaggio [e la tabella codici.](manage-language-and-codepage.md)
 
  
 

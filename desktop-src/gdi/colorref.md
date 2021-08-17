@@ -26,11 +26,11 @@ typedef DWORD* LPCOLORREF;
 
 ## <a name="remarks"></a>Commenti
 
-Quando si specifica un [colore RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) esplicito, il **valore COLORREF** ha il formato esadecimale seguente:
+Quando si specifica un colore [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) esplicito, il **valore COLORREF** ha il formato esadecimale seguente:
 
 `0x00bbggrr`
 
-Il byte meno significativo contiene un valore per l'intensità relativa del rosso. il secondo byte contiene un valore verde. e il terzo byte contiene un valore per blu. Il byte più significativo deve essere zero. Il valore massimo per un singolo byte è 0xFF.
+Il byte meno significativo contiene un valore per l'intensità relativa del rosso. il secondo byte contiene un valore per il verde. e il terzo byte contiene un valore per il blu. Il byte di ordine elevato deve essere zero. Il valore massimo per un singolo byte è 0xFF.
 
 Per creare un **valore di colore COLORREF,** usare la macro [RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Per estrarre i singoli valori per i componenti rosso, verde e blu di un valore di colore, usare rispettivamente le macro [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)e [GetBValue.](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue)
 

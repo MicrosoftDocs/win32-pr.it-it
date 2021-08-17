@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Non-Security-Group-Extra-Classes
-description: Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo non di sicurezza tramite Utenti e computer di Active Directory snap-in.
+description: Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo non di sicurezza tramite lo snap-in Utenti e computer di Active Directory sicurezza.
 ms.assetid: 5b89c8d2-0450-480b-9252-17ae375e3a57
 ms.tgt_platform: multiple
 keywords:
-- Attributo AD Schema ms-DS-Non-Security-Group-Extra-Classes
+- Attributo MS-DS-Non-Security-Group-Extra-Classes Schema di AD
 - Attributo MSDS-Non-Security-Group-Extra-Classes schema DI AD
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "118683926"
 ---
 # <a name="ms-ds-non-security-group-extra-classes-attribute"></a>Attributo ms-DS-Non-Security-Group-Extra-Classes
 
-Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo non di sicurezza tramite Utenti e computer di Active Directory snap-in.
+Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo non di sicurezza tramite lo snap-in Utenti e computer di Active Directory sicurezza.
 
 
 
@@ -128,7 +128,7 @@ Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo no
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -149,13 +149,13 @@ Nomi comuni delle classi non standard che possono essere aggiunti a un gruppo no
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Nell'elenco seguente vengono identificate le classi standard che possono essere aggiunte a un gruppo tramite lo snap-in Utenti e computer di Active Directory gruppo.
+Nell'elenco seguente vengono identificate le classi standard che possono essere aggiunte a un gruppo tramite Utenti e computer di Active Directory snap-in.
 
 -   [**Group**](c-group.md)
 -   [**Utente**](c-user.md)

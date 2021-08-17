@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-TS-LicenseVersion2
-description: Versione del secondo server terminal cal per utente.
+description: Versione del secondo server terminal per utente CAL.
 ms.assetid: 9e4bc586-365a-4a46-a623-e686d305a159
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118960160"
 ---
 # <a name="ms-ts-licenseversion2-attribute"></a>Attributo MS-TS-LicenseVersion2
 
-Versione del secondo server terminal cal per utente.
+Versione del secondo server terminal per utente CAL.
 
 
 
@@ -32,7 +32,7 @@ Versione del secondo server terminal cal per utente.
 | CN                | MS-TS-LicenseVersion2                       |
 | Ldap-Display-Name | msTSLicenseVersion2                         |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2001                     |
 | System-Id-Guid    | 4b0df103-8d97-45d9-ad69-85c3080ba4e7        |
@@ -55,7 +55,7 @@ Versione del secondo server terminal cal per utente.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
@@ -76,7 +76,7 @@ Versione del secondo server terminal cal per utente.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
@@ -97,7 +97,7 @@ Versione del secondo server terminal cal per utente.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |

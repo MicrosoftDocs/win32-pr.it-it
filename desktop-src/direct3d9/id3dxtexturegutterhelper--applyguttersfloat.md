@@ -1,5 +1,5 @@
 ---
-description: Applica le grondaie a un buffer di trama FLOAT.
+description: Applica le gutter a un buffer di trama FLOAT.
 ms.assetid: 822483d7-ae62-498a-bce7-3a925ab21c04
 title: Metodo ID3DXTextureGutterHelper::ApplyGuttersFloat (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118800364"
 ---
 # <a name="id3dxtexturegutterhelperapplyguttersfloat-method"></a>Metodo ID3DXTextureGutterHelper::ApplyGuttersFloat
 
-Applica le grondaie a un buffer di trama FLOAT.
+Applica le gutter a un buffer di trama FLOAT.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,12 +52,12 @@ Puntatore a un buffer di dati di trama FLOAT.
 
 </dd> <dt>
 
-*NumCoeff* \[ Pollici\]
+*NumCoeffs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Numero di scalari per canale di colore usati in memoria per archiviare gli esempi. Ogni texel contiene valori FLOAT NumCoeffs.
+Numero di scalari per canale di colore usato in memoria per archiviare i campioni. Ogni texel contiene valori FLOAT NumCoeffs.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Larghezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper::GetWid
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Altezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper::GetHeight**](id3dxtexturegutterhelper--getheight.md).
+Altezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper::GetHeight.**](id3dxtexturegutterhelper--getheight.md)
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-[**I texel di**](id3dxtexturegutterhelper.md) classe 2 vengono generati tramite il ricampionamento delle classi 1 e 4 texel.
+[**I texel di classe 2**](id3dxtexturegutterhelper.md) vengono generati ricampionando le classi 1 e 4 texel.
 
 ## <a name="requirements"></a>Requisiti
 

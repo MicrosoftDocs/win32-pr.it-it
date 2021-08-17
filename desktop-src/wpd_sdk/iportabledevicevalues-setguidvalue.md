@@ -44,7 +44,7 @@ HRESULT SetGuidValue(
 *chiave* \[ Pollici\]
 </dt> <dd>
 
-**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
+**REFPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 

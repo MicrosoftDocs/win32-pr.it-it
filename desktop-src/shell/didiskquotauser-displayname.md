@@ -1,6 +1,6 @@
 ---
 description: Ottiene il nome visualizzato dell'utente.
-title: DiDiskQuotaUser.DisplayName - proprietà
+title: DIDiskQuotaUser.DisplayName - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118969460"
 ---
-# <a name="didiskquotauserdisplayname-property"></a>DiDiskQuotaUser.DisplayName - proprietà
+# <a name="didiskquotauserdisplayname-property"></a>DIDiskQuotaUser.DisplayName - proprietà
 
 Ottiene il nome visualizzato dell'utente.
 

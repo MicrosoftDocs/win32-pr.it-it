@@ -1,5 +1,5 @@
 ---
-description: La funzione InstallWiaDevice installa un Windows di acquisizione di immagini (WIA) come dispositivo enumerato nella radice. Potrebbe essere visualizzato un avviso di sicurezza se un file o un coinstallatore di installazione non è firmato digitalmente e considerato attendibile.
+description: La funzione InstallWiaDevice installa un Windows di acquisizione di immagini (WIA) come dispositivo enumerato nella radice. Potrebbe essere visualizzato un avviso di sicurezza se un file di installazione o un coinstallatore non è firmato digitalmente e attendibile.
 ms.assetid: c7de27f5-5994-4fce-a6ec-6e7cfae2e591
 title: Funzione InstallWiaDevice (Wia.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118965840"
 ---
 # <a name="installwiadevice-function"></a>Funzione InstallWiaDevice
 
-La **funzione InstallWiaDevice** installa un Windows di acquisizione di immagini (WIA) come dispositivo enumerato nella radice. Potrebbe essere visualizzato un avviso di sicurezza se un file o un coinstallatore di installazione non è firmato digitalmente e considerato attendibile.
+La **funzione InstallWiaDevice** installa un dispositivo wi-Windows come dispositivo con enumerazione radice. Potrebbe essere visualizzato un avviso di sicurezza se un file di installazione o un coinstallatore non è firmato digitalmente e attendibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ DWORD WINAPI InstallWiaDevice(
 
 Tipo: **PWIADEVICEINSTALL \***
 
-Puntatore a una struttura WIADEVICEINSTALL. Il *membro szFriendlyName* della struttura deve essere impostato sul valore friendlyName effettivo del dispositivo.
+Puntatore a una struttura WIADEVICEINSTALL. Il *membro szFriendlyName* della struttura deve essere impostato sull'effettivo friendlyName del dispositivo.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Se la funzione ha esito negativo, restituisce un codice di errore Win32.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
 | Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 

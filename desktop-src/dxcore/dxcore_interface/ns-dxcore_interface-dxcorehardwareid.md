@@ -1,19 +1,19 @@
 ---
 title: DXCoreHardwareID
-description: Rappresenta le parti dell'ID hardware PnP per un adapter.
+description: Rappresenta le parti ID hardware PnP per una scheda.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 6882d9aa16bf72fb33f9a254a6434becb37f9cb8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68cdb130dd6f0c0338e5b94da2f68c58f98bb91d404871e18ac82e817881117c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104117882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118628"
 ---
 # <a name="dxcorehardwareid-structure"></a>Struttura DXCoreHardwareID
 
-Rappresenta le parti dell'ID hardware PnP per un adapter.
+Rappresenta le parti ID hardware PnP per una scheda.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,8 +51,8 @@ ID PCI del sottosistema hardware della scheda.
 
 Tipo: **uint32_t \***
 
-ID PCI del numero di revisione della scheda.
+ID PCI del numero di revisione dell'adattatore.
 
 ## <a name="see-also"></a>Vedi anche
 
-Guida di [riferimento a DXCore](../dxcore-reference.md), [uso di DXCore per enumerare gli adapter](../dxcore-enum-adapters.md)
+[Riferimento DXCore](../dxcore-reference.md), [Uso di DXCore per enumerare gli adattatori](../dxcore-enum-adapters.md)

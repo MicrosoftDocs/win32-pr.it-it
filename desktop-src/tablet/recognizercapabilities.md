@@ -1,7 +1,7 @@
 ---
 description: Specifica gli attributi di un IInkAnalysisRecognizer.
 ms.assetid: e9577d83-0212-4f2f-88d7-e9153ec9fae5
-title: Enumerazione RecognizerCapabilities (IACom. h)
+title: Enumerazione RecognizerCapabilities (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: b2471e77fec02900804de831fc1197c071b9f566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96e932b8e47f323198e1b0cc87da0df7839a593a76850c00c2c2e4d095854851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091451"
 ---
 # <a name="recognizercapabilities-enumeration"></a>Enumerazione RecognizerCapabilities
 
-Specifica gli attributi di un [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Specifica gli attributi di un [**oggetto IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,142 +57,142 @@ typedef enum RecognizerCapabilities {
 
 <dl> <dt>
 
-<span id="RC_None"></span><span id="rc_none"></span><span id="RC_NONE"></span>**RC \_ nessuno**
+<span id="RC_None"></span><span id="rc_none"></span><span id="RC_NONE"></span>**RC \_ Nessuno**
 </dt> <dd>
 
 Nessuna funzionalità specificata.
 
 </dd> <dt>
 
-<span id="RC_DoNotCare"></span><span id="rc_donotcare"></span><span id="RC_DONOTCARE"></span>**\_DONOTCARE RC**
+<span id="RC_DoNotCare"></span><span id="rc_donotcare"></span><span id="RC_DONOTCARE"></span>**RC \_ DoNotCare**
 </dt> <dd>
 
 Ignora tutti gli altri flag impostati.
 
 </dd> <dt>
 
-<span id="RC_Object"></span><span id="rc_object"></span><span id="RC_OBJECT"></span>**RC ( \_ oggetto)**
+<span id="RC_Object"></span><span id="rc_object"></span><span id="RC_OBJECT"></span>**Oggetto \_ RC**
 </dt> <dd>
 
-Supporta il riconoscimento degli oggetti. in caso contrario, riconosce solo il testo.
+Supporta il riconoscimento degli oggetti; in caso contrario, riconosce solo il testo.
 
 </dd> <dt>
 
-<span id="RC_FreeInput"></span><span id="rc_freeinput"></span><span id="RC_FREEINPUT"></span>**\_FREEINPUT RC**
+<span id="RC_FreeInput"></span><span id="rc_freeinput"></span><span id="RC_FREEINPUT"></span>**RC \_ FreeInput**
 </dt> <dd>
 
-Supporta l'input libero, in cui viene immesso l'input penna senza utilizzare una guida per il riconoscimento, ad esempio una riga o una casella.
+Supporta l'input libero, in cui l'input penna viene immesso senza l'uso di una guida di riconoscimento, ad esempio una linea o una casella.
 
 </dd> <dt>
 
-<span id="RC_LinedInput"></span><span id="rc_linedinput"></span><span id="RC_LINEDINPUT"></span>**\_LINEDINPUT RC**
+<span id="RC_LinedInput"></span><span id="rc_linedinput"></span><span id="RC_LINEDINPUT"></span>**RC \_ LinedInput**
 </dt> <dd>
 
-Supporta l'input rigato, che è simile alla scrittura su un foglio di carta.
+Supporta l'input a linee, che è simile alla scrittura su carta a linee.
 
 </dd> <dt>
 
-<span id="RC_BoxedInput"></span><span id="rc_boxedinput"></span><span id="RC_BOXEDINPUT"></span>**\_BOXEDINPUT RC**
+<span id="RC_BoxedInput"></span><span id="rc_boxedinput"></span><span id="RC_BOXEDINPUT"></span>**RC \_ BoxedInput**
 </dt> <dd>
 
 Supporta l'input boxed, in cui ogni carattere o parola viene immesso in una casella.
 
 </dd> <dt>
 
-<span id="RC_CharacterAutoCompletionInput"></span><span id="rc_characterautocompletioninput"></span><span id="RC_CHARACTERAUTOCOMPLETIONINPUT"></span>**\_CHARACTERAUTOCOMPLETIONINPUT RC**
+<span id="RC_CharacterAutoCompletionInput"></span><span id="rc_characterautocompletioninput"></span><span id="RC_CHARACTERAUTOCOMPLETIONINPUT"></span>**RC \_ CharacterAutoCompletionInput**
 </dt> <dd>
 
-Supporta il completamento automatico del carattere. I riconoscitori che supportano il completamento automatico del carattere richiedono input boxed.
+Supporta il completamento automatico dei caratteri. I riconoscitori che supportano il completamento automatico dei caratteri richiedono l'input boxed.
 
 </dd> <dt>
 
-<span id="RC_RightAndDown"></span><span id="rc_rightanddown"></span><span id="RC_RIGHTANDDOWN"></span>**\_RIGHTANDDOWN RC**
+<span id="RC_RightAndDown"></span><span id="rc_rightanddown"></span><span id="RC_RIGHTANDDOWN"></span>**RC \_ RightAndDown**
 </dt> <dd>
 
-Supporta l'input della grafia nell'ordine a destra e in basso, ad esempio nelle lingue occidentali e in alcune lingue asiatiche orientali.
+Supporta l'input per la grafia in ordine destro e inferiore, ad esempio nelle lingue occidentali e in alcune lingue dell'Asia orientale.
 
 </dd> <dt>
 
-<span id="RC_LeftAndDown"></span><span id="rc_leftanddown"></span><span id="RC_LEFTANDDOWN"></span>**\_LEFTANDDOWN RC**
+<span id="RC_LeftAndDown"></span><span id="rc_leftanddown"></span><span id="RC_LEFTANDDOWN"></span>**RC \_ LeftAndDown**
 </dt> <dd>
 
-Supporta l'input della grafia nell'ordine di sinistra e in basso, ad esempio in lingua ebraica e araba.
+Supporta l'input per la grafia in ordine sinistro e inferiore, ad esempio nelle lingue ebraiche e arabe.
 
 </dd> <dt>
 
-<span id="RC_DownAndLeft"></span><span id="rc_downandleft"></span><span id="RC_DOWNANDLEFT"></span>**\_DOWNANDLEFT RC**
+<span id="RC_DownAndLeft"></span><span id="rc_downandleft"></span><span id="RC_DOWNANDLEFT"></span>**RC \_ DownAndLeft**
 </dt> <dd>
 
-Supporta l'input della grafia nell'ordine inverso e a sinistra, ad esempio in alcune lingue asiatiche orientali.
+Supporta l'input per la grafia in ordine inferiore e sinistro, ad esempio in alcune lingue dell'Asia orientale.
 
 </dd> <dt>
 
-<span id="RC_DownAndRight"></span><span id="rc_downandright"></span><span id="RC_DOWNANDRIGHT"></span>**\_DOWNANDRIGHT RC**
+<span id="RC_DownAndRight"></span><span id="rc_downandright"></span><span id="RC_DOWNANDRIGHT"></span>**RC \_ DownAndRight**
 </dt> <dd>
 
-Supporta l'input della grafia in ordine inverso e corretto, ad esempio in alcune lingue asiatiche orientali.
+Supporta l'input per la grafia in ordine inferiore e corretto, ad esempio in alcune lingue dell'Asia orientale.
 
 </dd> <dt>
 
-<span id="RC_ArbitraryAngle"></span><span id="rc_arbitraryangle"></span><span id="RC_ARBITRARYANGLE"></span>**\_ARBITRARYANGLE RC**
+<span id="RC_ArbitraryAngle"></span><span id="rc_arbitraryangle"></span><span id="RC_ARBITRARYANGLE"></span>**RC \_ ArbitraryAngle**
 </dt> <dd>
 
-Supporta testo scritto a angoli arbitrari.
+Supporta il testo scritto ad angoli arbitrari.
 
 </dd> <dt>
 
-<span id="RC_Lattice"></span><span id="rc_lattice"></span><span id="RC_LATTICE"></span>**\_Reticolo RC**
+<span id="RC_Lattice"></span><span id="rc_lattice"></span><span id="RC_LATTICE"></span>**RC \_ Lattice**
 </dt> <dd>
 
-Supporta la restituzione di un reticolo come alternativa a una stringa per i risultati del riconoscimento della grafia.
+Supporta la restituzione di un reticolo come stringa alternativa per i risultati del riconoscimento della grafia.
 
 </dd> <dt>
 
-<span id="RC_AdviseInkChange"></span><span id="rc_adviseinkchange"></span><span id="RC_ADVISEINKCHANGE"></span>**\_ADVISEINKCHANGE RC**
+<span id="RC_AdviseInkChange"></span><span id="rc_adviseinkchange"></span><span id="RC_ADVISEINKCHANGE"></span>**RC \_ AdviseInkChange**
 </dt> <dd>
 
-Supporta l'interruzione del riconoscimento in background, ad esempio quando l'input penna è stato modificato.
+Supporta l'interruzione del riconoscimento dello sfondo, ad esempio quando l'input penna è stato modificato.
 
 </dd> <dt>
 
-<span id="RC_StrokeReorder"></span><span id="rc_strokereorder"></span><span id="RC_STROKEREORDER"></span>**\_STROKEREORDER RC**
+<span id="RC_StrokeReorder"></span><span id="rc_strokereorder"></span><span id="RC_STROKEREORDER"></span>**RC \_ StrokeReorder**
 </dt> <dd>
 
-Supporta l'ordine dei tratti, spaziale e temporale, viene gestito come parte dell'operazione di riconoscimento. Il [**IInkAnalyzer**](iinkanalyzer.md) non riordina i tratti prima di inviare input penna al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Supporta che l'ordine dei tratti, spaziale e temporale, viene gestito come parte dell'operazione di riconoscimento. [**IInkAnalyzer**](iinkanalyzer.md) non riordina i tratti prima di inviare input penna a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> <dt>
 
-<span id="RC_Personalizable"></span><span id="rc_personalizable"></span><span id="RC_PERSONALIZABLE"></span>**\_Personalizzabile RC**
+<span id="RC_Personalizable"></span><span id="rc_personalizable"></span><span id="RC_PERSONALIZABLE"></span>**RC \_ Personalizable**
 </dt> <dd>
 
-Supporta la grafia personalizzata, in cui il riconoscimento migliora il riconoscimento quando viene esposto alla stessa grafia nel tempo.
+Supporta la grafia personalizzata, in cui il riconoscimento migliora il riconoscimento quando è esposto alla stessa grafia nel tempo.
 
 </dd> <dt>
 
-<span id="RC_PrefersArbitraryAngle"></span><span id="rc_prefersarbitraryangle"></span><span id="RC_PREFERSARBITRARYANGLE"></span>**\_PREFERSARBITRARYANGLE RC**
+<span id="RC_PrefersArbitraryAngle"></span><span id="rc_prefersarbitraryangle"></span><span id="RC_PREFERSARBITRARYANGLE"></span>**RC \_ PrefersArbitraryAngle**
 </dt> <dd>
 
-Il [**IInkAnalyzer**](iinkanalyzer.md) non deve ruotare la grafia a un orientamento orizzontale prima di inviare l'input penna al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+[**IInkAnalyzer**](iinkanalyzer.md) non deve ruotare la grafia su un orientamento orizzontale prima di inviare l'input penna a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> <dt>
 
-<span id="RC_PrefersParagraphBreaking"></span><span id="rc_prefersparagraphbreaking"></span><span id="RC_PREFERSPARAGRAPHBREAKING"></span>**\_PREFERSPARAGRAPHBREAKING RC**
+<span id="RC_PrefersParagraphBreaking"></span><span id="rc_prefersparagraphbreaking"></span><span id="RC_PREFERSPARAGRAPHBREAKING"></span>**RC \_ PreferisceParagraphBreaking**
 </dt> <dd>
 
-Il [**IInkAnalyzer**](iinkanalyzer.md) deve inviare interi paragrafi di input penna al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md), consentendo al **IInkAnalysisRecognizer** di eseguire le interruzioni di riga e di parola (o carattere).
+[**IInkAnalyzer**](iinkanalyzer.md) deve inviare interi paragrafi di input penna a [**IInkAnalysisRecognizer,**](iinkanalysisrecognizer.md)consentendo a **IInkAnalysisRecognizer** di eseguire l'interruzione di riga e l'interruzione di parola (o carattere).
 
 </dd> <dt>
 
-<span id="RC_PrefersSegmentationRecognition"></span><span id="rc_preferssegmentationrecognition"></span><span id="RC_PREFERSSEGMENTATIONRECOGNITION"></span>**\_PREFERSSEGMENTATIONRECOGNITION RC**
+<span id="RC_PrefersSegmentationRecognition"></span><span id="rc_preferssegmentationrecognition"></span><span id="RC_PREFERSSEGMENTATIONRECOGNITION"></span>**RC \_ PrefersSegmentationRecognition**
 </dt> <dd>
 
-Riconosce solo una parola o un carattere per ogni operazione di riconoscimento. [**IInkAnalyzer**](iinkanalyzer.md) esegue la segmentazione sulla grafia e invia un solo segmento alla volta al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Riconosce una sola parola o carattere per ogni operazione di riconoscimento. [**IInkAnalyzer**](iinkanalyzer.md) esegue la segmentazione della grafia e invia un solo segmento alla volta a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione consente una combinazione bit per bit dei relativi valori dei membri. Usare questa enumerazione per trovare un riconoscimento input penna installato che supporta gli attributi necessari.
+Questa enumerazione consente una combinazione bit per bit dei relativi valori dei membri. Usare questa enumerazione per trovare un sistema di riconoscimento input penna installato che supporta gli attributi necessari.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -200,9 +200,9 @@ Questa enumerazione consente una combinazione bit per bit dei relativi valori de
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 
 
 
@@ -210,10 +210,10 @@ Questa enumerazione consente una combinazione bit per bit dei relativi valori de
 
 <dl> <dt>
 
-[**IInkAnalysisRecognizer:: GetCapabilities**](iinkanalysisrecognizer-getcapabilities.md)
+[**IInkAnalysisRecognizer::GetCapabilities**](iinkanalysisrecognizer-getcapabilities.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

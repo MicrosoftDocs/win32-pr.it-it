@@ -1,7 +1,7 @@
 ---
-description: Modifica l'alternanza principale corrente nell'alternativa specificata e cancella il tipo di conferma per tutti gli oggetti IContextNode associati all'alternativa.
+description: Modifica l'oggetto alternativo superiore corrente in quello alternativo specificato e cancella il tipo di conferma per tutti gli oggetti IContextNode associati all'alternativa.
 ms.assetid: a4ff7e82-623f-4501-9641-5235c3083757
-title: 'Metodo IInkAnalyzer:: ModifyTopAlternate (IACom. h)'
+title: Metodo IInkAnalyzer::ModifyTopAlternate (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: da2fcde7015e993e13e47673b271c560b6c3d72a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b35cda4534bc5c791e4815c584f6da5d9972c018283b6c9385f6bad998187505
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092041"
 ---
-# <a name="iinkanalyzermodifytopalternate-method"></a>Metodo IInkAnalyzer:: ModifyTopAlternate
+# <a name="iinkanalyzermodifytopalternate-method"></a>Metodo IInkAnalyzer::ModifyTopAlternate
 
-Modifica l'alternanza principale corrente nell'alternativa specificata e cancella il tipo di conferma per tutti gli oggetti [**IContextNode**](icontextnode.md) associati all'alternativa.
+Modifica l'oggetto alternativo superiore corrente in quello alternativo specificato e cancella il tipo di conferma per tutti gli oggetti [**IContextNode**](icontextnode.md) associati all'alternativa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,22 +39,22 @@ HRESULT ModifyTopAlternate(
 
 <dl> <dt>
 
-*pAlternate* \[ in\]
+*pAlternate* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IAnalysisAlternate**](ianalysisalternate.md) contenente la nuova alternativa principale.
+Oggetto [**IAnalysisAlternate**](ianalysisalternate.md) contenente il nuovo oggetto alternativo superiore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere le alternative di analisi, usare il metodo [**IInkAnalyzer:: Getalternas**](iinkanalyzer-getalternates.md), il metodo [**IInkAnalyzer:: GetAlternatesForContextNodes**](iinkanalyzer-getalternatesforcontextnodes.md)o il metodo [**IInkAnalyzer:: GetAlternatesForStrokes**](iinkanalyzer-getalternatesforstrokes.md). Per ottenere gli oggetti [**IContextNode**](icontextnode.md) associati a un'alternativa di analisi, usare il [**Metodo IAnalysisAlternate:: GetAlternateNodes**](ianalysisalternate-getalternatenodes.md).
+Per ottenere alternative di analisi, usare il metodo [**IInkAnalyzer::GetAlternates**](iinkanalyzer-getalternates.md), il metodo [**IInkAnalyzer::GetAlternatesForContextNodes**](iinkanalyzer-getalternatesforcontextnodes.md)o il metodo [**IInkAnalyzer::GetAlternatesForStrokes**](iinkanalyzer-getalternatesforstrokes.md). Per ottenere gli [**oggetti IContextNode associati**](icontextnode.md) a un'analisi alternativa, usare il metodo [**IAnalysisAlternate::GetAlternateNodes**](ianalysisalternate-getalternatenodes.md).
 
-Per modificare il tipo di conferma per un nodo di contesto, utilizzare [**IContextNode:: Confirm**](icontextnode-confirm.md).
+Per modificare il tipo di conferma per un nodo di contesto, usare [**IContextNode::Confirm.**](icontextnode-confirm.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Per modificare il tipo di conferma per un nodo di contesto, utilizzare [**IConte
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,10 +82,10 @@ Per modificare il tipo di conferma per un nodo di contesto, utilizzare [**IConte
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**ConfirmationType**](confirmationtype.md)
+[**Tipo di conferma**](confirmationtype.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

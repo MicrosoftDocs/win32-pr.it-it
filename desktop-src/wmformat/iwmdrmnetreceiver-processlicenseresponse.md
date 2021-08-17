@@ -1,10 +1,10 @@
 ---
 title: Metodo IWMDRMNetReceiver ProcessLicenseResponse (Wmdrmsdk.h)
-description: Il metodo ProcessLicenseResponse elabora la risposta di licenza inviata dal trasmettitore in risposta a una richiesta di licenza.
+description: Il metodo ProcessLicenseResponse elabora la risposta della licenza inviata dal trasmettitore in risposta a una richiesta di licenza.
 ms.assetid: b6d04651-746b-474e-8a02-6b7cbee9db46
 keywords:
 - Metodo ProcessLicenseResponse windows Media Format
-- Metodo ProcessLicenseResponse windows Media Format , interfaccia IWMDRMNetReceiver
+- Metodo ProcessLicenseResponse in formato Windows Media, interfaccia IWMDRMNetReceiver
 - Interfaccia IWMDRMNetReceiver windows Media Format , metodo ProcessLicenseResponse
 topic_type:
 - apiref
@@ -25,7 +25,7 @@ ms.locfileid: "118700825"
 ---
 # <a name="iwmdrmnetreceiverprocesslicenseresponse-method"></a>Metodo IWMDRMNetReceiver::P rocessLicenseResponse
 
-Il **metodo ProcessLicenseResponse** elabora la risposta di licenza inviata dal trasmettitore in risposta a una richiesta di licenza.
+Il **metodo ProcessLicenseResponse** elabora la risposta della licenza inviata dal trasmettitore in risposta a una richiesta di licenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ HRESULT ProcessLicenseResponse(
 *pbLicenseResponse* \[ Pollici\]
 </dt> <dd>
 
-Risposta di licenza ricevuta dal trasmettitore.
+Risposta della licenza ricevuta dallo trasmettitore.
 
 </dd> <dt>
 
 *cbLicenseResponse* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni della risposta in byte.
+Dimensione della risposta in byte.
 
 </dd> <dt>
 
 *ppbWMDRMNetLicenseRepresentation* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve l'indirizzo della rappresentazione della licenza interna per la licenza contenuta nel messaggio di risposta della licenza. Al termine di questi dati, è necessario rilasciare la memoria chiamando **CoTaskMemFree**. Questo parametro può essere impostato su **NULL se** la rappresentazione della licenza non è necessaria.
+Indirizzo di una variabile che riceve l'indirizzo della rappresentazione della licenza interna per la licenza contenuta nel messaggio di risposta della licenza. Al termine di questi dati, è necessario rilasciare la memoria chiamando **CoTaskMemFree.** Questo parametro può essere impostato su **NULL se** la rappresentazione della licenza non è necessaria.
 
 </dd> <dt>
 
@@ -75,13 +75,13 @@ Indirizzo di una variabile che riceve le dimensioni della rappresentazione della
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM RIV TROPPO \_ \_ \_ PICCOLO**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
 
 

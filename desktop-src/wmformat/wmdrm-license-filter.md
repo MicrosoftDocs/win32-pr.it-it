@@ -1,10 +1,10 @@
 ---
 title: WMDRM_LICENSE_FILTER struttura (Wmdrmsdk.h)
-description: La struttura FILTRO LICENZE WMDRM \_ definisce i parametri di filtro da usare durante la creazione di \_ un'enumerazione delle licenze.
+description: La struttura WMDRM \_ LICENSE FILTER definisce i parametri di filtro da usare durante la creazione di \_ un'enumerazione delle licenze.
 ms.assetid: 43bbbfdc-1ec4-44a6-8245-96853bbeea86
 keywords:
 - WMDRM_LICENSE_FILTER struttura windows Media Format
-- struttura windows Media Format
+- Struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118698138"
 ---
-# <a name="wmdrm_license_filter-structure"></a>Struttura DEL FILTRO LICENZE WMDRM \_ \_
+# <a name="wmdrm_license_filter-structure"></a>Struttura FILTRO LICENZA WMDRM \_ \_
 
-La **struttura FILTRO LICENZE WMDRM \_ \_** definisce i parametri di filtro da usare durante la creazione di un'enumerazione delle licenze.
+La **struttura WMDRM \_ LICENSE \_ FILTER** definisce i parametri di filtro da usare durante la creazione di un'enumerazione delle licenze.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ Specifica un ID chiave per cui filtrare le licenze. Nell'enumerazione verranno i
 **bstrRights**
 </dt> <dd>
 
-Specifica un set di diritti per cui filtrare le licenze. Nell'enumerazione verranno incluse solo le licenze che forniscono tutti i diritti specificati.
+Specifica un set di diritti per filtrare le licenze. Nell'enumerazione verranno incluse solo le licenze che forniscono tutti i diritti specificati.
 
 </dd> <dt>
 

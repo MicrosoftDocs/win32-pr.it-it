@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get FramesDroppedInRenderer Recupera il numero di frame eliminati dal renderer.
+description: Il metodo get \_ FramesDroppedInRenderer recupera il numero di frame eliminati dal renderer.
 ms.assetid: d890f285-b3bb-426c-80f6-e273cf0cccbb
-title: Metodo CBaseVideoRenderer.get_FramesDroppedInRenderer (Renbase. h)
+title: CBaseVideoRenderer.get_FramesDroppedInRenderer metodo (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef81678fce8d349c7c047b0453cc480d8673f8f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21bd2e9c2f9edb50ca3800c95b59ba19fd91674d5ef343cf35842380ce617978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016759"
 ---
-# <a name="cbasevideorendererget_framesdroppedinrenderer-method"></a>Metodo CBaseVideoRenderer. Get \_ FramesDroppedInRenderer
+# <a name="cbasevideorendererget_framesdroppedinrenderer-method"></a>Metodo CBaseVideoRenderer.get \_ FramesDroppedInRenderer
 
 Il `get_FramesDroppedInRenderer` metodo recupera il numero di frame eliminati dal renderer.
 
@@ -51,11 +51,11 @@ Puntatore al numero di frame eliminati.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IQualProp:: Get \_ FramesDroppedInRenderer**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdroppedinrenderer) . Questo è il modo in cui la pagina delle proprietà recupera i dati dall'utilità di pianificazione. I frame possono anche essere eliminati a Monte senza che vengano visualizzati anche dal renderer.
+Questa funzione membro implementa il [**metodo IQualProp::get \_ FramesDroppedInRenderer.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdroppedinrenderer) In questo modo la pagina delle proprietà recupera i dati dall'utilità di pianificazione. I frame possono anche essere rilasciati a monte senza che il renderer li veda.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro implementa il metodo [**IQualProp:: Get \_ FramesDroppedI
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

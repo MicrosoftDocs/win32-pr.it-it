@@ -34,7 +34,7 @@ Entrambe queste funzioni richiedono la creazione del tipo di supporto di destina
 
 **Nota**  Se si usano [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate,**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) è possibile attivare il codificatore chiamando [**IMFActivate::ActivateObject,**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) ma non è possibile modificare i tipi di input e supporti di output del codificatore né modificare le proprietà di codifica.
 
-Per altre informazioni sulla creazione di Media Foundation di attivazione tramite oggetti di attivazione, vedere [Oggetti di attivazione.](activation-objects.md)
+Per altre informazioni sulla creazione di Media Foundation di attivazione tramite oggetti di attivazione, vedere [Oggetti attivazione.](activation-objects.md)
 
 **Per ottenere il tipo di supporto di destinazione dal sink del supporto ASF**
 

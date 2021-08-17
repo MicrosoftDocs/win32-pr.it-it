@@ -15,13 +15,13 @@ ms.locfileid: "118635304"
 
 ICE36 verifica che ogni icona nella tabella Icon sia elencata almeno una volta nella proprietà [**ARPPRODUCTICON**](arpproducticon.md) o nelle tabelle [Class](class-table.md), [ProgId](progid-table.md) [o Shortcut.](shortcut-table.md)
 
-Durante l'annuncio, il programma di installazione installa tutte le icone elencate nella [tabella Icona](icon-table.md) nel computer dell'utente. La presenza di icone inutilizzate nella tabella Icon non impedisce l'esecuzione dell'installazione, ma aumenta inutilmente le dimensioni del file .msi e il tempo e lo spazio necessari per annunciare una funzionalità.
+Durante l'annuncio, il programma di installazione installa tutte le icone elencate nella [tabella Icona](icon-table.md) nel computer dell'utente. La presenza di icone inutilizzate nella tabella Icona non impedisce l'esecuzione dell'installazione, ma aumenta inutilmente le dimensioni del file .msi e il tempo e lo spazio necessari per annunciare una funzionalità.
 
 Se non viene fatto riferimento a un'icona nella proprietà o nella tabella e non è disponibile alcuna interfaccia utente per creare un riferimento in fase di esecuzione, è necessario rimuovere l'icona per ottenere prestazioni migliori.
 
 ## <a name="result"></a>Risultato
 
-ICE36 pubblica un messaggio se nella tabella Icon è presente un'icona a cui non viene fatto riferimento nelle tabelle [Class](class-table.md), [ProgId](progid-table.md)o [Shortcut](shortcut-table.md) e se non è disponibile alcuna interfaccia utente per creare tale riferimento in fase di esecuzione.
+ICE36 invia un messaggio se nella tabella Icon è presente un'icona a cui non viene fatto riferimento nelle tabelle [Class](class-table.md), [ProgId](progid-table.md)o [Shortcut](shortcut-table.md) e se non è disponibile alcuna interfaccia utente per creare tale riferimento in fase di esecuzione.
 
 ## <a name="example"></a>Esempio
 
@@ -31,7 +31,7 @@ ICE36 segnala l'errore seguente per l'esempio illustrato.
 Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This adversely affects performance.
 ```
 
-[Tabella delle icone](icon-table.md) (parziale)
+[Tabella icona](icon-table.md) (parziale)
 
 
 

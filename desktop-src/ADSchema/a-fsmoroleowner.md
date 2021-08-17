@@ -32,7 +32,7 @@ Operazione Single-Master flessibile: nome distinto del controller di dominio in 
 | CN                | FSMO-Role-Owner                         |
 | Ldap-Display-Name | fSMORoleOwner                           |
 | Dimensione              | \-                                      |
-| Aggiorna privilegio  | Amministratore dello schema                    |
+| Privilegio di aggiornamento  | Amministratore dello schema                    |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.369                  |
 | System-Id-Guid    | 66171887-8f3c-11d0-afda-00c04fd930c9    |
@@ -59,7 +59,7 @@ Operazione Single-Master flessibile: nome distinto del controller di dominio in 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Operazione Single-Master flessibile: nome distinto del controller di dominio in 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Operazione Single-Master flessibile: nome distinto del controller di dominio in 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

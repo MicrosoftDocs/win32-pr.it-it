@@ -4,7 +4,7 @@ description: È comune trovare più directory amministrative distribuite all'int
 ms.assetid: e6f05beb-d88d-46d5-85c7-3477a6af03c9
 ms.tgt_platform: multiple
 keywords:
-- ADSI dei servizi directory
+- servizi directory ADSI
 - servizi directory ADSI , background per i servizi directory
 ms.topic: article
 ms.date: 05/31/2018
@@ -17,7 +17,7 @@ ms.locfileid: "118691896"
 ---
 # <a name="directory-services-today"></a>Servizi directory oggi stesso
 
-È comune trovare più directory amministrative distribuite all'interno di una singola organizzazione. Queste directory includono directory di risorse di rete, ad esempio directory basate su LDAP come il servizio directory Microsoft Active Directory, il servizio directory del sistema operativo Windows, nonché directory specifiche dell'applicazione, ad esempio Microsoft Exchange.
+È comune trovare più directory amministrative distribuite all'interno di una singola organizzazione. Queste directory includono directory di risorse di rete, ad esempio directory basate su LDAP, ad esempio il servizio directory Microsoft Active Directory, il servizio directory del sistema operativo Windows, nonché directory specifiche dell'applicazione, ad esempio Microsoft Exchange.
 
 ![distribuzione di più directory](images/ds2chal.png)
 

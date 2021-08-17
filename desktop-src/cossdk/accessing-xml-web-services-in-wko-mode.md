@@ -23,7 +23,7 @@ Non è valida.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-Nel frammento di Visual Basic Microsoft seguente viene illustrato l'utilizzo di un servizio Web XML in modalità WKO.
+Nel frammento di codice Visual Basic Microsoft seguente viene illustrato l'utilizzo di un servizio Web XML in modalità WKO.
 
 
 ```VB

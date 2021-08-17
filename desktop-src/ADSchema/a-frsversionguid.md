@@ -121,7 +121,7 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -142,7 +142,7 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -163,7 +163,7 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| A valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |

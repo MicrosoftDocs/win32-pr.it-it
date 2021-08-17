@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.nextPreset
-description: Il metodo nextPreset applica il set di impostazioni di equalizzatore successivo.
+description: Il metodo nextPreset applica il set di impostazioni dell'equalizzatore successivo.
 ms.assetid: 67d40ec9-2744-4d63-aa56-0ee20496e896
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. nextPreset
+- EQUALIZERSETTINGS.nextPreset Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b464c0fca9b38a14a65a24185e51813e4520eee0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 715c5ee514cf2818cbab8b5553cab9565a2b448e47d1f6fe2282f17940cfc5b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748696"
 ---
 # <a name="equalizersettingsnextpreset"></a>EQUALIZERSETTINGS.nextPreset
 
-Il metodo **nextPreset** applica il set di impostazioni di equalizzatore successivo.
+Il **metodo nextPreset applica** il set di impostazioni dell'equalizzatore successivo.
 
 ``` syntax
         elementID.nextPreset()
@@ -69,7 +69,7 @@ Se il set di impostazioni corrente è l'ultimo disponibile, il primo set di impo
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

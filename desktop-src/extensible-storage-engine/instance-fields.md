@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: campi istanza'
+description: "Altre informazioni su: Campi dell'istanza"
 title: Campi di istanza
 TOCTitle: Instance fields
 ms:assetid: Fields.T:Microsoft.Isam.Esent.Interop.Instance
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inst
 ms:contentKeyID: 55103268
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cc405911900b86739d41b1db78a546f1f07eef19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 892c70d68c400c47aa28ce5359052c94bc94bec256df2366849608f42a82efc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112606"
 ---
 # <a name="instance-fields"></a>Campi di istanza
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [istanza](./instance-class.md) espone i membri seguenti.
+Il [tipo Instance](./instance-class.md) espone i membri seguenti.
 
 ## <a name="fields"></a>Campi
 
@@ -34,8 +34,8 @@ Il tipo di [istanza](./instance-class.md) espone i membri seguenti.
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.protfield(exchg.10).gif" title="Campo protetto" alt="Protected field" /></td>
-<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">gestire</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.</td>
+<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.handle">Gestire</a></td>
+<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle.</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,6 +47,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe dell'istanza](./instance-class.md)
+[Classe di istanza](./instance-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -13,11 +13,11 @@ ms.locfileid: "118662751"
 ---
 # <a name="building-filter-graphs-to-write-asf-files"></a>Compilazione di grafici filtro per la scrittura di file ASF
 
-Quando si Windows contenuto basato su supporti, le applicazioni usano in genere uno degli scenari seguenti:
+Quando si Windows contenuto basato su media, le applicazioni usano in genere uno degli scenari seguenti:
 
--   Conversione o transcoding di contenuto da un altro formato Windows media.
+-   Conversione o transcoding di contenuto da un altro formato in Windows media.
 -   Inserimento di contenuto non Windows basato su supporti (formati di flusso nativi) nei file ASF.
--   Acquisizione di dati in tempo reale e codifica immediatamente in Windows media.
+-   Acquisizione di dati live e codifica immediatamente in Windows media.
 
 Transcodificare i file ASF
 

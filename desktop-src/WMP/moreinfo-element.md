@@ -1,9 +1,9 @@
 ---
 title: Elemento MOREINFO
-description: L'elemento MOREINFO specifica un URL di un sito Web, un indirizzo di posta elettronica o un comando script associato a una visualizzazione, una clip o un banner.
+description: L'elemento MOREINFO specifica un URL per un sito Web, un indirizzo di posta elettronica o un comando script associato a uno show, clip o banner.
 ms.assetid: b817ef1d-4ca0-45f4-942b-695eaf537110
 keywords:
-- Finestra elementi MOREINFO Media Player
+- Elemento MOREINFO Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: efc54fe9745566ec7eaa87b7f0f4645b07a055f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 925783b6bd48fbc8b944d7b8fd2a2b94a9954c7036114145b99b015b90cbb6d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134954"
 ---
 # <a name="moreinfo-element"></a>Elemento MOREINFO
 
-L'elemento **moreinfo** specifica un URL di un sito Web, un indirizzo di posta elettronica o un comando script associato a una visualizzazione, una clip o un banner.
+**L'elemento MOREINFO** specifica un URL per un sito Web, un indirizzo di posta elettronica o un comando script associato a uno show, clip o banner.
 
 ``` syntax
 <MOREINFO
@@ -33,24 +33,24 @@ L'elemento **moreinfo** specifica un URL di un sito Web, un indirizzo di posta e
 
 ## <a name="attributes"></a>Attributi
 
-**Href** (obbligatorio)
+**HREF** (obbligatorio)
 
-URL di un sito Web, un indirizzo di posta elettronica o un comando di script.
+URL di un sito Web, di un indirizzo di posta elettronica o di un comando script.
 
-**DESTINAZIONE**
+**bersaglio**
 
-Valore che definisce il frame o la finestra in cui il browser aprirà la pagina definita dall'attributo **href** .
+Valore che definisce il frame o la finestra in cui il browser aprirà la pagina definita **dall'attributo HREF.**
 
-Può trattarsi di una stringa contenente il nome di una finestra o di uno dei valori seguenti.
+Può trattarsi di una stringa contenente un nome di finestra o di uno dei valori seguenti.
 
 
 
 | Valore    | Descrizione                                                                                                              |
 |----------|--------------------------------------------------------------------------------------------------------------------------|
-| \_vuoto  | Il documento viene caricato in una nuova finestra del browser.                                                                              |
-| \_auto   | Il documento viene caricato nello stesso frame del documento corrente contenente il controllo Media Player di Windows.                |
-| \_padre | Il documento viene caricato nel frame padre immediato del frame corrente o nel frame corrente se non è presente alcun frame padre. |
-| \_In alto    | Il documento viene caricato nella finestra del browser completo, sostituendo tutti gli altri frame o documenti.                                  |
+| \_Vuoto  | Il documento viene caricato in una nuova finestra del browser.                                                                              |
+| \_stesso   | Il documento viene caricato nello stesso frame del documento corrente contenente il Windows Media Player controllo .                |
+| \_genitore | Il documento viene caricato nel frame padre diretto del frame corrente o nel frame corrente se non è presente alcun frame padre. |
+| \_In alto    | Il documento viene caricato nell'intera finestra del browser, sostituendo tutti gli altri frame o documenti.                                  |
 
 
 
@@ -62,7 +62,7 @@ Può trattarsi di una stringa contenente il nome di una finestra o di uno dei va
 
 | Gerarchia       | Elementi                       |
 |-----------------|--------------------------------|
-| Elementi padre | **ASX**, **voce**, **banner** |
+| Elementi padre | **ASX,** **VOCE,** **BANNER** |
 | Elementi figlio  | nessuno                           |
 
 
@@ -71,21 +71,21 @@ Può trattarsi di una stringa contenente il nome di una finestra o di uno dei va
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento specifica un URL di un sito Web, un indirizzo di posta elettronica **o un comando di script. L'utente può accedere alla destinazione dell'URL facendo clic sul grafico o sul testo associato all'elemento MOREINFO** . I dettagli dipendono dall'elemento padre dell'elemento **moreinfo** :
+Questo elemento specifica un URL per un sito Web, un indirizzo di posta elettronica **o un comando script. L'utente può accedere alla destinazione dell'URL facendo clic sull'elemento grafico o sul testo associato all'elemento MOREINFO.** I dettagli dipendono dall'elemento padre **dell'elemento MOREINFO:**
 
--   Se l'elemento **moreinfo** è figlio di un elemento **ASX** , l'utente può accedere all'URL facendo clic sul titolo show.
--   Se l'elemento **moreinfo** è figlio di un elemento **entry** , l'utente può accedere all'URL facendo clic sul titolo della clip.
--   Se l'elemento **moreinfo** è figlio di un elemento **banner** , l'utente può accedere all'URL facendo clic sull'icona del banner.
+-   Se **l'elemento MOREINFO** è l'elemento figlio di un **elemento ASX,** l'utente può accedere all'URL facendo clic sul titolo di visualizzazione.
+-   Se **l'elemento MOREINFO** è l'elemento figlio di un **elemento ENTRY,** l'utente può accedere all'URL facendo clic sul titolo del clip.
+-   Se **l'elemento MOREINFO** è figlio di un **elemento BANNER,** l'utente può accedere all'URL facendo clic sull'icona del banner.
 
-Se l'attributo **href** specifica un URL di un sito Web, il browser si apre e passa all'URL. Se l'attributo **href** specifica un indirizzo di posta elettronica, viene avviata l'applicazione di posta elettronica dell'utente. Se l'attributo **href** specifica un comando script, il comando script viene eseguito nel browser.
+Se **l'attributo HREF** specifica un URL per un sito Web, il browser si apre e passa all'URL. Se **l'attributo HREF** specifica un indirizzo di posta elettronica, viene avviata l'applicazione di posta elettronica dell'utente. Se **l'attributo HREF** specifica un comando script, il comando script viene eseguito nel browser.
 
 **Nota**
 
-Se l'elemento **moreinfo** viene visualizzato all'interno di un elemento **ASX** o **entry** , quando il cursore del mouse viene posizionato sul titolo della Mostra (per un elemento **ASX** ) o su una clip (per un elemento **entry** ), l'URL definito nell'attributo **href** può essere selezionato e accessibile da Windows Media Player.
+Se l'elemento **MOREINFO** viene visualizzato all'interno di un elemento **ASX** o **ENTRY,** quando il cursore del mouse viene posizionato sul titolo della visualizzazione (per un elemento **ASX)** o di un clip (per un elemento **ENTRY),** l'URL definito nell'attributo **HREF** può essere selezionato e accessibile da Windows Media Player.
 
-L'attributo di **destinazione** consente di definire il frame o la finestra in cui il browser aprirà la pagina definita dall'attributo **href** . I valori per questo attributo seguono la sintassi HTML standard e le definizioni. Nel caso di un controllo incorporato in una pagina Web, se non è stato definito alcun attributo di **destinazione** , l'URL caricherà la finestra del browser corrente e sostituirà la pagina esistente, il che significa che il contenuto smette di essere riprodotto. È pertanto consigliabile specificare sempre un attributo di **destinazione** quando si incorpora il controllo Media Player di Windows in una pagina Web.
+**L'attributo TARGET** definisce il frame o la finestra in cui il browser aprirà la pagina definita dall'attributo **HREF.** I valori per questo attributo seguono la sintassi e le definizioni HTML standard. Nel caso di un controllo incorporato in una pagina Web, se non è definito alcun attributo **TARGET,** l'URL carica la finestra del browser corrente e sostituisce la pagina esistente, il che significa che la riproduzione del contenuto viene interrotta. È pertanto consigliabile specificare sempre un attributo **TARGET** quando si incorpora il controllo Windows Media Player in una pagina Web.
 
-Se il metafile viene aperto nel Media Player Windows autonomo, l'attributo di **destinazione** viene ignorato e l'URL viene caricato in una finestra del browser esistente. Se non è presente alcuna finestra del browser attualmente aperta, l'URL viene caricato in una nuova finestra del browser.
+Se il metafile viene aperto nel Windows Media Player autonomo, l'attributo **TARGET** viene ignorato e l'URL viene caricato in una finestra del browser esistente. Se non è attualmente aperta alcuna finestra del browser, l'URL viene caricato in una nuova finestra del browser.
 
 ## <a name="examples"></a>Esempio
 
@@ -122,10 +122,10 @@ Se il metafile viene aperto nel Media Player Windows autonomo, l'attributo di **
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

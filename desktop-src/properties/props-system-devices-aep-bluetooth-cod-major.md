@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth del codice principale del dispositivo.
+description: Bluetooth classe del codice principale del dispositivo.
 ms.assetid: ea72cfee-74db-442f-82ad-36742b94cb77
-title: System. Devices. AEP. Bluetooth. Cod. Major
+title: System.Devices.Aep. Bluetooth. Cod.Major
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7478a9053022666229dd83af75bb2a396a11366a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6555a8974c8477e7795d622a085168b6cf84fff0d270b8947e9775f9036555fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097942"
 ---
-# <a name="systemdevicesaepbluetoothcodmajor"></a>System. Devices. AEP. Bluetooth. Cod. Major
+# <a name="systemdevicesaepbluetoothcodmajor"></a>System.Devices.Aep. Bluetooth. Cod.Major
 
-Classe Bluetooth del codice principale del dispositivo.
+Bluetooth classe del codice principale del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

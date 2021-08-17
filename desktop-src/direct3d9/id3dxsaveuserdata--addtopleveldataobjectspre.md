@@ -45,7 +45,7 @@ HRESULT AddTopLevelDataObjectsPre(
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Puntatore a un oggetto di salvataggio di file con estensione x. Usare questo puntatore per chiamare [**IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) per creare l'oggetto dati da salvare. Chiamare quindi [**IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md) per salvare i dati.
+Puntatore a un oggetto di salvataggio di file con estensione x. Usare questo puntatore per [**chiamare IDirectXFileSaveObject::CreateDataObject per**](idirectxfilesaveobject--createdataobject.md) creare l'oggetto dati da salvare. Chiamare quindi [**IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md) per salvare i dati.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un oggetto di salvataggio di file con estensione x. Usare questo pun
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR,**](./d3dxerr.md)perché in questo modo anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR,**](./d3dxerr.md)in quanto anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 

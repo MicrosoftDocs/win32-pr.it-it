@@ -1,5 +1,5 @@
 ---
-description: Questa proprietà viene usata per specificare i termini di ricerca che devono essere applicati nel modo più ampio possibile in tutte le proprietà valide per le origini dati da cercare. Non deve essere generato da un'origine dati.
+description: Questa proprietà viene usata per specificare i termini di ricerca che devono essere applicati nel modo più ampio possibile in tutte le proprietà valide per le origini dati in cui si sta cercando. Non deve essere generato da un'origine dati.
 ms.assetid: 16b751ab-b349-430c-9a58-a46a02f6c30b
 title: System.FullText
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118970430"
 ---
 # <a name="systemfulltext"></a>System.FullText
 
-Questa proprietà viene usata per specificare i termini di ricerca che devono essere applicati nel modo più ampio possibile in tutte le proprietà valide per le origini dati da cercare. Non deve essere generato da un'origine dati.
+Questa proprietà viene usata per specificare i termini di ricerca che devono essere applicati nel modo più ampio possibile in tutte le proprietà valide per le origini dati in cui si sta cercando. Non deve essere generato da un'origine dati.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,6 +1,6 @@
 ---
 title: Attributo id
-description: L'attributo \ id\ specifica un DISPID per una funzione membro (una proprietà o un metodo, in un'interfaccia o un'interfaccia dispatch).
+description: L'attributo \ id\ specifica un DISPID per una funzione membro (una proprietà o un metodo, in un'interfaccia o interfaccia dispatch).
 ms.assetid: 6f1be049-81b4-4aa2-a893-5dd79bb4d63c
 keywords:
 - Attributo ID MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118643067"
 ---
 # <a name="id-attribute"></a>Attributo id
 
-**\[ L'attributo id \]** specifica un DISPID per una funzione membro (una proprietà o un metodo, in un'interfaccia o un'interfaccia dispatch).
+**\[ L'attributo id \]** specifica un DISPID per una funzione membro (una proprietà o un metodo, in un'interfaccia o in un'interfaccia dispatch).
 
 ``` syntax
 [id(id-num) [,optional-attribute-list]] return-type function-name(optional-parameter-list)
@@ -68,11 +68,11 @@ Zero o più parametri di funzione.
 
 ## <a name="remarks"></a>Commenti
 
-Usare l'attributo **\[ id \]** quando si vuole assegnare un DISPID standard (ad esempio DISPID VALUE, DISPID NEWENUM e così via) a un metodo o a una proprietà o quando si implementa \_ un proprio \_ **IDispatch::Invoke** anziché delegare a **DispInvoke** / **ITypeInfo::Invoke**.
+Usare l'attributo **\[ id \]** quando si vuole assegnare un DISPID standard (ad esempio, DISPID VALUE, DISPID NEWENUM e così via) a un metodo o a una proprietà oppure quando si implementa il proprio IDispatch::Invoke anziché delegare a \_ \_ **DispInvoke**  / **ITypeInfo::Invoke**.
 
 Se non si usa **\[ l'attributo id \]** in un'interfaccia, il compilatore MIDL assegna automaticamente un DISPID. Tuttavia, quando si specifica un'interfaccia dispatch usando proprietà e metodi, è necessario specificare un DISPID per ogni proprietà e metodo.
 
-*ID-num è* un valore integrale positivo a 32 bit. Gli ID negativi sono riservati per l'uso da parte di Automazione.
+*id-num è* un valore integrale positivo a 32 bit. Gli ID negativi sono riservati per l'uso da parte di Automazione.
 
 ## <a name="examples"></a>Esempi
 

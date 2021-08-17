@@ -32,7 +32,7 @@ Numero minimo di caratteri che una password deve contenere.
 | CN                | Min-Pwd-Length                       |
 | Ldap-Display-Name | minPwdLength                         |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | Amministratore di dominio                 |
+| Aggiorna privilegio  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.79                |
 | System-Id-Guid    | bf9679c3-0de6-11d0-a285-00aa003049e2 |

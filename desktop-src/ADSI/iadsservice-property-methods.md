@@ -69,7 +69,7 @@ I metodi di proprietà [**dell'interfaccia IADsService**](/windows/desktop/api/I
 **Dipendenze**
 </dt> <dd> <dl>
 
-Matrice di **nomi BSTR** di servizi o gruppi di carico che devono essere caricati per il caricamento del servizio. La sintassi per la voce è "Service:" seguita dal nome del servizio o "Group:" seguita dal nome del gruppo di carico.
+Matrice di **nomi BSTR** di servizi o gruppi di carico che devono essere caricati per il caricamento del servizio. La sintassi per la voce è "Service:" seguita dal nome del servizio o "Group:" seguito dal nome del gruppo di caricamento.
 
 <dt>
 
@@ -131,7 +131,7 @@ Azione da eseguire se il servizio ha esito negativo all'avvio. Di seguito sono r
 
 <span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>
 
-<span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>ERRORE DEL \_ SERVIZIO ACTIVE \_ DIRECTORY \_ IGNORE****
+<span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>ERRORE DEL \_ SERVIZIO ADS \_ \_ IGNORE****
 
 
 </dt> <dd>
@@ -164,7 +164,7 @@ Il programma di avvio registra l'errore. Se viene avviata l'ultima configurazion
 
 <span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>
 
-<span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>ERRORE DEL SERVIZIO ADS \_ \_ \_ CRITICO****
+<span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>ERRORE CRITICO \_ DEL SERVIZIO ADS**** \_ \_
 
 
 </dt> <dd>
@@ -357,7 +357,7 @@ ADS \_ SERVICE \_ KERNEL \_ DRIVER**** (0x00000001)
 
 <span id="ADS_SERVICE_OWN_PROCESS"></span><span id="ads_service_own_process"></span>
 
-PROCESSO DEL \_ SERVIZIO \_ ADS**** \_ (0x00000010)
+PROCESSO DEL \_ SERVIZIO ADS**** \_ \_ (0x00000010)
 
 
 </dt> <dd></dd> <dt>
@@ -399,7 +399,7 @@ Determina come avviare il servizio. Di seguito sono riportati i valori validi pe
 
 <span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>
 
-<span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>AVVIO DEL SERVIZIO ACTIVE \_ \_ \_ DIRECTORY****
+<span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>AVVIO DEL \_ SERVIZIO ADS**** \_ \_
 
 
 </dt> <dd>
@@ -567,7 +567,7 @@ Cleanup:
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsService è definito come 68AF66E0-31CA-11CF-A98A-00AA006BC149<br/>          |
+| IID<br/>                      | IADsService IID è definito come \_ 68AF66E0-31CA-11CF-A98A-00AA006BC149<br/>          |
 
 
 

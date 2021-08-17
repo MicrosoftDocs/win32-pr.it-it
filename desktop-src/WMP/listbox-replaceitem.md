@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. replaceItem
+title: LISTBOX.replaceItem
 description: Il metodo replaceItem sostituisce il testo in corrispondenza dell'indice specificato con il testo specificato.
 ms.assetid: 8dc05dc6-4f89-4ae6-8a28-cbc418449694
 keywords:
-- Media Player di Windows LISTBOX. replaceItem
+- ListBOX.replaceItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74592feb9bc58e23853b886ee2383744e36b9cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4524b479490dff81b9a114ca957c7c40282ded130d2bf35dba8c58a6197eab17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135214"
 ---
-# <a name="listboxreplaceitem"></a>LISTBOX. replaceItem
+# <a name="listboxreplaceitem"></a>LISTBOX.replaceItem
 
-Il metodo **ReplaceItem** sostituisce il testo in corrispondenza dell'indice specificato con il testo specificato.
+Il **metodo replaceItem** sostituisce il testo in corrispondenza dell'indice specificato con il testo specificato.
 
 ``` syntax
         elementID.replaceItem(index, text)
@@ -35,11 +35,11 @@ Il metodo **ReplaceItem** sostituisce il testo in corrispondenza dell'indice spe
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice della riga da recuperare.
+**Numero** (**long**) contenente l'indice della riga da recuperare.
 
 </dd> <dt>
 
-<span id="text"></span><span id="TEXT"></span>*testo*
+<span id="text"></span><span id="TEXT"></span>*Testo*
 </dt> <dd>
 
 **Stringa** contenente il nuovo testo.
@@ -56,7 +56,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

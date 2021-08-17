@@ -23,7 +23,7 @@ ms.locfileid: "118706899"
 
 Rappresenta un contenitore per [i](windowsribbon-controls-splitbuttongallery.md) layout del menu a discesa Della raccolta di pulsanti di menu suddivisi.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <SplitButtonGallery.MenuLayout>

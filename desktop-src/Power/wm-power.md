@@ -1,26 +1,26 @@
 ---
-description: Notifica alle applicazioni che il sistema, in genere un personal computer alimentato dalla batteria, sta per entrare in modalità sospesa.
+description: Notifica alle applicazioni che il sistema, in genere un dispositivo alimentato a personal computer, sta per entrare in modalità sospesa.
 ms.assetid: ceaa5ca4-799e-4801-96cd-aeea3dfd7d52
-title: Messaggio WM_POWER (WinUser. h)
+title: WM_POWER messaggio (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc53fd165ee1cefe8970f85daea04b931a673b33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fd525b4bf229fdb04dac4c1d1492a52dad44317344f58a2f0807ba9afbdc962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143184"
 ---
-# <a name="wm_power-message"></a>\_Power Message di WM
+# <a name="wm_power-message"></a>Messaggio \_ DI WM POWER
 
-Notifica alle applicazioni che il sistema, in genere un personal computer alimentato dalla batteria, sta per entrare in modalità sospesa.
+Notifica alle applicazioni che il sistema, in genere un dispositivo alimentato a personal computer, sta per entrare in modalità sospesa.
 
 > [!Note]  
-> Il messaggio di **\_ risparmio energia WM** è obsoleto. Viene fornita solo per la compatibilità con le applicazioni basate su Windows a 16 bit. Le applicazioni devono usare il messaggio [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) .
+> Il **messaggio WM \_ POWER** è obsoleto. Viene fornito solo per la compatibilità con applicazioni Windows a 16 bit. Le applicazioni devono usare [**il messaggio WM \_ POWERBROADCAST.**](wm-powerbroadcast.md)
 
  
 
-Una finestra riceve questo messaggio tramite la funzione **WindowProc** .
+Una finestra riceve questo messaggio tramite la **relativa funzione WindowProc.**
 
 
 ```C++
@@ -38,32 +38,32 @@ LRESULT CALLBACK WindowProc
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Identificatore del messaggio di **\_ alimentazione WM** .
+Identificatore **del messaggio WM \_ POWER.**
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Notifica degli eventi di alimentazione. Questo parametro può avere uno dei valori seguenti.
+Notifica dell'evento di alimentazione. Questo parametro può avere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                        | Significato                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PWR_CRITICALRESUME"></span><span id="pwr_criticalresume"></span><dl> <dt>**\_CRITICALRESUME PWR**</dt> </dl> | Indica che il sistema sta riprendendo l'operazione dopo l'attivazione della modalità sospesa senza prima trasmettere un messaggio di notifica **PWR \_ SUSPENDREQUEST** all'applicazione. Un'applicazione deve eseguire tutte le azioni di ripristino necessarie.<br/>                                                   |
-| <span id="PWR_SUSPENDREQUEST"></span><span id="pwr_suspendrequest"></span><dl> <dt>**\_SUSPENDREQUEST PWR**</dt> </dl> | Indica che il sistema sta per attivare la modalità sospesa.<br/>                                                                                                                                                                                                                                 |
-| <span id="PWR_SUSPENDRESUME"></span><span id="pwr_suspendresume"></span><dl> <dt>**\_SUSPENDRESUME PWR**</dt> </dl>    | Indica che il sistema sta riprendendo l'operazione dopo che è stata attivata la modalità sospesa normalmente, il sistema trasmette un messaggio di notifica **PWR \_ SUSPENDREQUEST** all'applicazione prima che il sistema sia stato sospeso. Un'applicazione deve eseguire tutte le azioni di ripristino necessarie.<br/> |
+| <span id="PWR_CRITICALRESUME"></span><span id="pwr_criticalresume"></span><dl> <dt>**PWR \_ CRITICALRESUME**</dt> </dl> | Indica che il sistema sta riprendendo l'operazione dopo l'accesso alla modalità sospesa senza prima trasmettere all'applicazione un messaggio di notifica **PWR \_ SUSPENDREQUEST.** Un'applicazione deve eseguire le azioni di ripristino necessarie.<br/>                                                   |
+| <span id="PWR_SUSPENDREQUEST"></span><span id="pwr_suspendrequest"></span><dl> <dt>**PWR \_ SUSPENDREQUEST**</dt> </dl> | Indica che il sistema sta per entrare in modalità sospesa.<br/>                                                                                                                                                                                                                                 |
+| <span id="PWR_SUSPENDRESUME"></span><span id="pwr_suspendresume"></span><dl> <dt>**PWR \_ SUSPENDRESUME**</dt> </dl>    | Indica che il sistema sta riprendendo l'operazione dopo essere passato normalmente alla modalità di sospensione, ad esempio il sistema ha trasmesso un messaggio di notifica **PWR \_ SUSPENDREQUEST** all'applicazione prima della sospensione del sistema. Un'applicazione deve eseguire le azioni di ripristino necessarie.<br/> |
 
 
 
@@ -80,13 +80,13 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito da un'applicazione dipende dal valore del parametro *wParam* . Se *wParam* è **PWR \_ SUSPENDREQUEST**, il valore restituito è **PWR \_ non riesce** a impedire che il sistema entri nello stato Suspended. in caso contrario, è **PWR \_ OK**. Se *wParam* è **PWR \_ SUSPENDRESUME** o **PWR \_ CRITICALRESUME**, il valore restituito è zero.
+Il valore restituito da un'applicazione dipende dal valore del *parametro wParam.* Se *wParam* è **PWR \_ SUSPENDREQUEST**, il valore restituito è **PWR \_ FAIL** per impedire al sistema di entrare nello stato sospeso; in caso contrario, **è PWR \_ OK**. Se *wParam* è **PWR \_ SUSPENDRESUME** o **PWR \_ CRITICALRESUME**, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene trasmesso solo a un'applicazione in esecuzione in un sistema conforme alla specifica del BIOS (Basic Input/Output System) di Advanced Power Management (APM). Il messaggio viene trasmesso dal driver di gestione del risparmio energia a ogni finestra restituita dalla funzione **EnumWindows** .
+Questo messaggio viene trasmesso solo a un'applicazione in esecuzione in un sistema conforme alla specifica DEL BIOS (Basic Input/Output System) di Advanced Power Management (APM). Il messaggio viene trasmesso dal driver di risparmio energia a ogni finestra restituita dalla **funzione EnumWindows.**
 
-La modalità sospesa è lo stato in cui si verifica la maggiore quantità di risparmio energia, ma vengono conservati tutti i dati e i parametri operativi. Il contenuto della memoria ad accesso casuale (RAM) viene mantenuto, ma è probabile che molti dispositivi siano spenti.
+La modalità sospesa è lo stato in cui si verifica la maggiore quantità di risparmio energia, ma tutti i dati operativi e i parametri vengono mantenuti. Il contenuto della memoria ad accesso casuale (RAM) viene mantenuto, ma è probabile che molti dispositivi siano spenti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,9 +94,9 @@ La modalità sospesa è lo stato in cui si verifica la maggiore quantità di ris
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinUser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>WinUser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ La modalità sospesa è lo stato in cui si verifica la maggiore quantità di ris
 
 <dl> <dt>
 
-[**\_POWERBROADCAST WM**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

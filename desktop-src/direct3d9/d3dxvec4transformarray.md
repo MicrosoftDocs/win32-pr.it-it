@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f5435b7e88a5424db9457fac077495fcfd8828a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d91d0711ab523179e05c0b8f51098a6e44c308a96328bff2feb942dc9bab067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803695"
 ---
 # <a name="d3dxvec4transformarray-function-d3dx9mathh"></a>Funzione D3DXVec4TransformArray (D3dx9math.h)
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodi di EsentErrorException'
+description: Altre informazioni sui metodi di EsentErrorException
 title: Metodi di EsentErrorException
 TOCTitle: EsentErrorException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentErrorException
@@ -17,7 +17,7 @@ ms.locfileid: "118779208"
 # <a name="esenterrorexception-methods"></a>Metodi di EsentErrorException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentErrorException](./esenterrorexception-class.md) espone i membri seguenti.
 
@@ -39,7 +39,7 @@ Il [tipo EsentErrorException](./esenterrorexception-class.md) espone i membri se
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -55,7 +55,7 @@ Il [tipo EsentErrorException](./esenterrorexception-class.md) espone i membri se
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>In caso di override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo con</a> informazioni sull'eccezione. Esegue l'override <a href="/dotnet/api/system.exception.getobjectdata#System_Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">di Exception.GetObjectData(SerializationInfo, StreamingContext).</a></td>
+<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Esegue l'override <a href="/dotnet/api/system.exception.getobjectdata#System_Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">di Exception.GetObjectData(SerializationInfo, StreamingContext)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>

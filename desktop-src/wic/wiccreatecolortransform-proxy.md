@@ -1,5 +1,5 @@
 ---
-description: Crea un oggetto di trasformazione colore che implementa IWICColorTransform. Questo oggetto COM supporta il modello a oggetti a thread libero.
+description: Crea un oggetto di trasformazione del colore che implementa IWICColorTransform. Questo oggetto COM supporta il modello a oggetti a thread libero.
 ms.assetid: 43DCC3FB-B687-45F0-AAC6-DED76214716C
 title: WICCreateColorTransform_Proxy funzione
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118709218"
 ---
 # <a name="wiccreatecolortransform_proxy-function"></a>Funzione proxy WICCreateColorTransform \_
 
-Crea un oggetto di trasformazione colore che implementa [**IWICColorTransform.**](/windows/win32/api/wincodec/nn-wincodec-iwiccolortransform) Questo oggetto COM supporta il modello a oggetti a thread libero.
+Crea un oggetto di trasformazione del colore che implementa [**IWICColorTransform.**](/windows/win32/api/wincodec/nn-wincodec-iwiccolortransform) Questo oggetto COM supporta il modello a oggetti a thread libero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT WINAPI WICCreateColorTransform_Proxy(
 *ppIColorTransform* \[ Cambio\]
 </dt> <dd>
 
-Trasformazione colore creata.
+Trasformazione del colore creata.
 
 </dd> </dl>
 

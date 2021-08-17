@@ -3,7 +3,7 @@ title: usesgetlasterror (attributo)
 description: L'attributo \ usesgetlasterror\ segnala al chiamante che può chiamare GetLastError per recuperare il codice di errore.
 ms.assetid: 8e9ab8b5-f446-4aab-bb40-b6f78799e18e
 keywords:
-- Attributo usesgetlasterror MIDL
+- attributo usesgetlasterror MIDL
 topic_type:
 - apiref
 api_name:
@@ -37,7 +37,7 @@ module module-name
 
 <dl> <dt>
 
-*attributi del modulo* 
+*module-attributes* 
 </dt> <dd>
 
 Zero o più attributi MIDL che verranno applicati al [**modulo**](module.md).
@@ -51,10 +51,10 @@ Nome dell'identificatore del [**modulo**](module.md).
 
 </dd> <dt>
 
-*id voce* 
+*entry-id* 
 </dt> <dd>
 
-Specifica il punto di ingresso del modulo, il nome della funzione o il numero di identificazione di numeri interi.
+Specifica il nome del punto di ingresso del modulo o il numero di identificazione integer.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Zero o più attributi MIDL che verranno applicati alla procedura remota.
 *return-type* 
 </dt> <dd>
 
-Tipo di dati che la procedura remota restituirà al completamento.
+Tipo di dati restituiti dalla procedura remota al completamento.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Zero o più parametri per la procedura remota.
 
 ## <a name="remarks"></a>Commenti
 
-**\[ L'attributo usesgetlasterror \]** può essere impostato in un punto di ingresso del modulo, se tale punto di ingresso usa la Windows [**setLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire i codici di errore. L'attributo indica al chiamante che, se si verifica un errore durante la chiamata a tale funzione, il chiamante può quindi chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
+**\[ L'attributo usesgetlasterror \]** può essere impostato su un punto di ingresso del modulo, se tale punto di ingresso usa la funzione [**setLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) Windows per restituire i codici di errore. L'attributo indica al chiamante che, se si verifica un errore durante la chiamata a tale funzione, il chiamante può quindi chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
 
 ## <a name="examples"></a>Esempi
 

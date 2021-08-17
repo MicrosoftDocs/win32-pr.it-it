@@ -17,11 +17,11 @@ ms.locfileid: "118767071"
 # <a name="jet_commit_id-members"></a>JET_COMMIT_ID membri
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
-Dati racchiusi tra contesto delle informazioni emessi da JET_PFNEMITLOGDATA.
+Dati racchiusi nel contesto delle informazioni generati da JET_PFNEMITLOGDATA.
 
-Il [JET_COMMIT_ID](./jet-commit-id-class.md) tipo espone i membri seguenti.
+Il [JET_COMMIT_ID](./jet-commit-id-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -42,22 +42,22 @@ Il [JET_COMMIT_ID](./jet-commit-id-class.md) tipo espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335458(v=exchg.10).md">Equals(Object)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">di Object.Equals(Object)</a>.</td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di . Esegue l'override <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">di Object.Equals(Object)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335328(v=exchg.10).md">Equals(JET_COMMIT_ID)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335459(v=exchg.10).md">GetHashCode</a></td>
-<td>Restituisce il codice hash per l'istanza. Esegue l'override <a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">di Object.GetHashCode()</a>.</td>
+<td>Restituisce il codice hash per l'istanza. Esegue l'override <a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">di Object.GetHashCode().</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
@@ -72,7 +72,7 @@ Il [JET_COMMIT_ID](./jet-commit-id-class.md) tipo espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335330(v=exchg.10).md">ToString</a></td>
-<td>Generare una rappresentazione di stringa della struttura . Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString()</a>.</td>
+<td>Generare una rappresentazione di stringa della struttura . Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString().</a></td>
 </tr>
 </tbody>
 </table>

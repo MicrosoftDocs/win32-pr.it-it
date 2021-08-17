@@ -29,9 +29,9 @@ ms.locfileid: "118769664"
 ---
 # <a name="esentstateexception-constructor-serializationinfo-streamingcontext"></a>Costruttore EsentStateException (SerializationInfo, StreamingContext)
 
-Inizializza una nuova istanza della classe EsentStateException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.
+Inizializza una nuova istanza della classe EsentStateException. Questo costruttore viene usato per deserializzare un'eccezione serializzata.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

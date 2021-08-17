@@ -13,11 +13,11 @@ ms.locfileid: "118638355"
 ---
 # <a name="costfinalize-action"></a>Azione CostFinalize
 
-L'azione CostFinalize termina il processo di determinazione costi [*dell'installazione*](c-gly.md) interna avviato dall'azione [CostInitialize.](costinitialize-action.md)
+L'azione CostFinalize termina il processo di determinazione costi [*dell'installazione*](c-gly.md) interna avviato [dall'azione CostInitialize.](costinitialize-action.md)
 
-## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
+## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
-Tutte le azioni standard [o personalizzate che](custom-actions.md) influiscono sulla determinazione dei costi devono essere sequenziate prima [dell'azione CostInitialize.](costinitialize-action.md) Chiamare [l'azione FileCost](filecost-action.md) subito dopo l'azione CostInitialize e quindi chiamare l'azione CostFinalize per rendere tutti i calcoli dei costi finali disponibili per il programma di installazione tramite la [tabella Component.](component-table.md)
+Tutte le azioni standard [o personalizzate che](custom-actions.md) influiscono sulla determinazione dei costi devono essere sequenziate prima [dell'azione CostInitialize.](costinitialize-action.md) Chiamare [l'azione FileCost](filecost-action.md) immediatamente dopo l'azione CostInitialize e quindi chiamare l'azione CostFinalize per rendere disponibili tutti i calcoli dei costi finali al programma di installazione tramite la [tabella Component.](component-table.md)
 
 L'azione CostFinalize deve essere eseguita prima di avviare qualsiasi [](feature-table.md) sequenza dell'interfaccia utente che consenta all'utente di visualizzare o modificare le selezioni o le directory delle tabelle delle funzionalità.
 
@@ -27,7 +27,7 @@ Non sono presenti messaggi ActionData.
 
 ## <a name="remarks"></a>Commenti
 
-L'azione CostFinalize esegue una query [sulla tabella Condizione](condition-table.md) per determinare le funzionalità pianificate per l'installazione. La determinazione dei costi viene eseguita per ogni componente nella [tabella](component-table.md) Componente.
+L'azione CostFinalize esegue una query [nella tabella Condizione](condition-table.md) per determinare le funzionalità pianificate per l'installazione. La determinazione dei costi viene eseguita per ogni componente nella [tabella](component-table.md) Componente.
 
 L'azione CostFinalize verifica anche che tutte le directory di destinazione siano scrivibili prima di consentire la continuazione dell'installazione.
 

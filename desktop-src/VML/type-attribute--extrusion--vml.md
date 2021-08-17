@@ -1,40 +1,40 @@
 ---
-title: Attributo Type (estrusione) (la)
-description: Attributo Type (estrusione) (la)
+title: Attributo tipo (estrusione)(VML)
+description: Attributo tipo (estrusione)(VML)
 ms.assetid: 2c7ad2f1-fb5d-49fb-b490-3efe59ee5177
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14bc91f9348603bc89189debb2255f8fff39e135
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a14c3b69aa4156cbd94bb8598caa80ccd92721574daafe074486eb293059cae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103872730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057585"
 ---
-# <a name="type-attribute-extrusionvml"></a>Attributo Type (estrusione) (la)
+# <a name="type-attribute-extrusionvml"></a>Attributo tipo (estrusione)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce il modo in cui viene estrusa la forma. Proprietà di lettura/scrittura. **Stringa**.
+Definisce la modalità di estrusione della forma. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
 [Estrusione](msdn-online-vml-extrusion-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: tipo di *elemento* = " *Expression* " >
+<o: *element* type=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Type = "*Expression*"
+*element* .type="*expression*"
 
-*espressione* = *element*. Type
+*expression* = *elemento*.type
 
 **Osservazioni:**
 
@@ -44,15 +44,15 @@ I possibili valori sono:
 
 | Valore       | Descrizione                                                                                                                                                            |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parallel    | Viene eseguito il rendering dell'estrusione in modo che il centro della proiezione sia infinitamente lontano; in altre termini, le linee di estrusione non sono convergenti, a differenza delle proiezioni prospettiche. Valore predefinito. |
-| prospettiva | Viene eseguito il rendering dell'estrusione in un centro di proiezione, che corrisponde al punto di dissolvenza per gli oggetti non ruotati.                                                       |
+| parallel    | Il rendering dell'estrusione viene eseguito in modo che il centro della proiezione sia all'infinito lontano; ovvero le linee di estrusione non convergono (a differenza delle proiezioni prospettica). Valore predefinito. |
+| prospettiva | Il rendering dell'estrusione viene eseguito fino a un centro di proiezione, che corrisponde al punto di estrusione per gli oggetti non tosati.                                                       |
 
 
 
- 
+ 
 
-**Attributo Microsoft Office Extensions**
+**Microsoft Office Attributo Extensions**
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: 'Process_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi di processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 4f06e1af-3f9a-4346-aa50-50f3ee82cd98
 title: Process_TypeGroup1 classe
 ms.topic: reference
@@ -21,12 +21,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bd67059f5257dad9b66e1c21f642fef04f03719e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1a172b7c3c09ca5735e9e58da2003fcb3790f584cda5809e393ae721393e6a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070031"
 ---
 # <a name="process_typegroup1-class"></a>Classe \_ TypeGroup1 del processo
 
@@ -60,14 +60,14 @@ La **classe \_ Process TypeGroup1** ha questi tipi di membri:
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ Process TypeGroup1** ha queste proprietà.
+La **classe \_ TypeGroup1** del processo ha queste proprietà.
 
 <dl> <dt>
 
 CommandLine
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -89,7 +89,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(6), Pointer
+Qualificatori: WmiDataId(6), Puntatore
 </dt> </dl>
 
 Indirizzo fisico della tabella di pagine del processo.
@@ -140,7 +140,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(3), Format("x")
 </dt> </dl>
 
-Identificatore univoco del processo che crea questo processo. I numeri di identificatore del processo vengono riutilizzati, quindi identificano un processo solo per la durata di tale processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
+Identificatore univoco del processo che crea questo processo. I numeri di identificatore del processo vengono riutilizzati, quindi identificano un processo solo per la durata del processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
 
 </dd> <dt>
 
@@ -204,7 +204,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(7), Extension("Sid")
 </dt> </dl>
 
-ID di sicurezza (SID) per il contesto utente in cui si verifica l'evento.
+Identificatore di sicurezza (SID) per il contesto utente in cui si verifica l'evento.
 
 </dd> </dl>
 

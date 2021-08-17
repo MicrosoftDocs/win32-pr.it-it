@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-DS-NC-Repl-Cursors
-description: Elenco di partner di replica passati e presenti e del modo in cui sono presenti in ognuno di essi.
+description: Elenco di partner di replica passati e presenti e delle attuali modalità di utilizzo di ognuno di essi.
 ms.assetid: febe8614-b68a-4001-b6ae-dae3fe6eb25f
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118684331"
 ---
 # <a name="ms-ds-nc-repl-cursors-attribute"></a>Attributo ms-DS-NC-Repl-Cursors
 
-Elenco di partner di replica passati e presenti e del modo in cui sono presenti in ognuno di essi.
+Elenco di partner di replica passati e presenti e delle attuali modalità di utilizzo di ognuno di essi.
 
 
 

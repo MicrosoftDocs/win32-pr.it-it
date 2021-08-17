@@ -1,5 +1,5 @@
 ---
-description: In questa sezione viene descritto il formato dei record per ogni token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
+description: In questa sezione viene descritto il formato dei record per ognuno dei token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
 ms.assetid: 4fdd8339-f660-4389-878a-e7ab067d8508
 title: Record di token
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118797423"
 ---
 # <a name="token-records"></a>Record di token
 
-In questa sezione viene descritto il formato dei record per ogni token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
+In questa sezione viene descritto il formato dei record per ognuno dei token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
 
 -   [NOME \_ TOKEN](/windows)
 -   [STRINGA \_ TOKEN](/windows)
@@ -24,7 +24,7 @@ In questa sezione viene descritto il formato dei record per ogni token di regist
 
 ## <a name="token_name"></a>NOME \_ TOKEN
 
-Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di byte che seguono nel campo name. Il record viene completato da un nome ASCII di conteggio della lunghezza.
+Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di byte che seguono nel campo name. Un nome ASCII di length count completa il record.
 
 
 
@@ -80,8 +80,8 @@ Record a lunghezza fissa. Il token è seguito dai quattro campi dati definiti da
 |-------|------------|--------------|-------------------|
 | token | WORD       | 2            | GUID tOKEN \_       |
 | Data1 | DWORD      | 4            | Campo dati UUID 1 |
-| Dati2 | WORD       | 2            | Campo dati UUID 2 |
-| Dati3 | WORD       | 2            | Campo dati UUID 3 |
+| Data2 | WORD       | 2            | Campo dati UUID 2 |
+| Data3 | WORD       | 2            | Campo dati UUID 3 |
 | Dati4 | Matrice BYTE | 8            | Campo dati UUID 4 |
 
 

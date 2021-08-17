@@ -15,7 +15,7 @@ ms.locfileid: "118975501"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-VBScript è un linguaggio di programmazione incluso in Microsoft Internet Explorer. Per altri browser, contattare il fornitore per informazioni sul supporto. È consigliabile usare VBScript 2.0 (o versione successiva) con Agent. Anche se le versioni precedenti di VBScript possono funzionare con Agent, non dispongono di alcune funzioni che è possibile usare. È possibile scaricare VBScript 2.0 e ottenere altre informazioni su VBScript nel sito Microsoft Downloads e nel sito Microsoft VBScript.
+VBScript è un linguaggio di programmazione incluso in Microsoft Internet Explorer. Per altri browser, contattare il fornitore per assistenza. È consigliabile usare VBScript 2.0 (o versione successiva) con Agent. Anche se le versioni precedenti di VBScript possono funzionare con Agent, non dispongono di alcune funzioni che è possibile usare. È possibile scaricare VBScript 2.0 e ottenere altre informazioni su VBScript nel sito download Microsoft e nel sito Microsoft VBScript.
 
 Per programmare Microsoft Agent da VBScript, usare il codice HTML <SCRIPT> tags. To access the programming interface, use the name of control you assign in the <OBJECT> tag, followed by the subobject (if any), the name of the method or property, and any parameters or values supported by the method or property:
 
@@ -40,7 +40,7 @@ statements
 </SCRIPT>
 ```
 
-Anche se Microsoft Internet Explorer supporta questa seconda sintassi, non tutti i browser lo fanno. Per motivi di compatibilità, usare solo la sintassi precedente per gli eventi.
+Anche se Microsoft Internet Explorer supporta questa seconda sintassi, non tutti i browser lo supportano. Per compatibilità, usare solo la sintassi precedente per gli eventi.
 
 Con VBScript (2.0 o versione successiva), è possibile verificare se Microsoft Agent è installato provando a creare l'oggetto e verificando se esiste. L'esempio seguente illustra come verificare la presenza del controllo Agent senza attivare un download automatico del controllo (come accade se si includesse un tag per <OBJECT> il controllo nella pagina):
 

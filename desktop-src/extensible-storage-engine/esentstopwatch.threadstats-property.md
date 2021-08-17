@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà EsentStopwatch. ThreadStats'
-title: Proprietà EsentStopwatch. ThreadStats
+description: Altre informazioni sulla proprietà EsentStopwatch.ThreadStats
+title: Proprietà EsentStopwatch.ThreadStats
 TOCTitle: 'ThreadStats property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentStopwatch.ThreadStats
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.threadstats(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 241b7d80e86eb3c773aecd58b7d16e749e040611
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13cfe4ac7f318530e7fee60d0b0020c94602f5ad1a1dd1ba4f262a25380b7409
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119273101"
 ---
-# <a name="esentstopwatchthreadstats-property"></a>Proprietà EsentStopwatch. ThreadStats
+# <a name="esentstopwatchthreadstats-property"></a>Proprietà EsentStopwatch.ThreadStats
 
-Ottiene le statistiche di lavoro ESENT totali misurate dall'istanza corrente.
+Ottiene le statistiche di lavoro ESENT totali misurate in base all'istanza corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ public JET_THREADSTATS ThreadStats { get; private set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,4 +70,4 @@ Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-str
 
 [Membri di EsentStopwatch](./esentstopwatch-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

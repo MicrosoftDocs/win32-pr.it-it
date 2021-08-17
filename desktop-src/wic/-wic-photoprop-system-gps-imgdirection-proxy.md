@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per il criterio dei metadati della foto System. GPS. ImgDirection.
+description: Proxy di proprietà per i criteri dei metadati foto System.GPS.ImgDirection.
 ms.assetid: 735e7a00-78f9-4384-aec7-8caa1fdb3ac3
-title: System. GPS. ImgDirection proxy
+title: System.GPS.ImgDirection Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69cdcf9a94d17299fc6434689398812be50fba94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b283b67ecba8862fc24290c5cd7d9c257d66275329b50cb0fb97e0f5618028a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087259"
 ---
-# <a name="systemgpsimgdirection-proxy"></a>System. GPS. ImgDirection proxy
+# <a name="systemgpsimgdirection-proxy"></a>System.GPS.ImgDirection Proxy
 
-Il proxy di proprietà per il criterio dei metadati della foto System. GPS. ImgDirection.
+Proxy di proprietà per i criteri dei metadati foto System.GPS.ImgDirection.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="remarks"></a>Commenti
 
@@ -45,7 +45,7 @@ LowPart di uhVal.
 
 <dl> <dt>
 
-[System. GPS. ImgDirection](../properties/props-system-gps-imgdirection.md)
+[System.GPS.ImgDirection](../properties/props-system-gps-imgdirection.md)
 </dt> </dl>
 
  

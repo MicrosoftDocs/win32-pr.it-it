@@ -3,10 +3,10 @@ title: Oggetto di definizione delle priorità dei flussi
 description: Oggetto di definizione delle priorità dei flussi
 ms.assetid: cb0345ce-6847-435b-8cbb-f8b93856af9f
 keywords:
-- Windows Media Format SDK, oggetti di definizione delle priorità dei flussi
+- Windows MEDIA Format SDK, oggetti di definizione delle priorità dei flussi
 - Advanced Systems Format (ASF), oggetti di definizione delle priorità dei flussi
 - ASF (Advanced Systems Format),stream prioritization objects
-- oggetti,oggetti di definizione della priorità del flusso
+- oggetti,oggetti di definizione delle priorità dei flussi
 - oggetti di definizione delle priorità dei flussi
 - streams,stream prioritization objects
 ms.topic: article
@@ -22,7 +22,7 @@ ms.locfileid: "118699968"
 
 Un oggetto di priorità del flusso viene usato per specificare un ordine di importanza per i flussi in un profilo. Quando la riproduzione completa non è possibile a causa di limitazioni della velocità in bit, i flussi con priorità più bassa saranno i primi a essere eliminati.
 
-Gli oggetti di definizione delle priorità dei flussi possono essere creati per i dati di priorità del flusso esistenti in un profilo o possono essere creati vuoti, pronti per ricevere nuovi dati. Gli oggetti di priorità del flusso non possono esistere indipendentemente da un oggetto profilo. Per salvare il contenuto di un oggetto di priorità del flusso, è necessario chiamare [**IWMProfile3::SetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-setstreamprioritization). Per creare un oggetto di priorità del flusso, usare uno dei metodi seguenti.
+Gli oggetti di definizione delle priorità dei flussi possono essere creati per i dati di priorità del flusso esistenti in un profilo o possono essere creati vuoti, pronti per ricevere nuovi dati. Gli oggetti di definizione delle priorità dei flussi non possono esistere indipendentemente da un oggetto profilo. Per salvare il contenuto di un oggetto di definizione delle priorità del flusso, è necessario chiamare [**IWMProfile3::SetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-setstreamprioritization). Per creare un oggetto di priorità del flusso, usare uno dei metodi seguenti.
 
 
 
@@ -49,7 +49,7 @@ Entrambi i metodi nella tabella precedente impostano un puntatore a **un'interfa
 
 ## <a name="remarks"></a>Commenti
 
-Per un determinato profilo può esistere una sola priorità del flusso. Se si crea una nuova priorità del flusso per un profilo che contiene già una priorità di flusso, quella precedente verrà eliminata.
+Per un determinato profilo può esistere una sola priorità del flusso. Se si crea una nuova priorità del flusso per un profilo che contiene già una priorità del flusso, quella precedente verrà eliminata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

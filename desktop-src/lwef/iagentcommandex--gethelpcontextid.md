@@ -34,16 +34,16 @@ Indirizzo di una variabile che riceve il numero di contesto dell'argomento della
 
 </dd> </dl>
 
-Se è stato creato un file della Guida di Windows per l'applicazione e la proprietà [**HelpFile**](helpfile-property.md) del carattere è stata impostata su questo file, Microsoft Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property-com.md), Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
+Se è stato creato un file della Guida di Windows per l'applicazione e la proprietà [**HelpFile**](helpfile-property.md) del carattere è stata impostata su questo file, Microsoft Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID,**](helpcontextid-property-com.md)Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
 
 > [!Note]  
-> Per compilare un file della Guida è necessario il compilatore della Guida Windows Microsoft.
+> La compilazione di un file della Guida richiede il compilatore della Guida Windows Microsoft.
 
  
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommandEx::SetHelpContextID**](iagentcommandex--sethelpcontextid.md), [**IAgentCharacterEx::SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md), [**IAgentCharacterEx::SetHelpFileName**](iagentcharacterex--sethelpfilename.md)
+[**IAgentCommandEx::SetHelpContextID,**](iagentcommandex--sethelpcontextid.md) [**IAgentCharacterEx::SetHelpModeOn,**](iagentcharacterex--sethelpmodeon.md) [**IAgentCharacterEx::SetHelpFileName**](iagentcharacterex--sethelpfilename.md)
 
 
  

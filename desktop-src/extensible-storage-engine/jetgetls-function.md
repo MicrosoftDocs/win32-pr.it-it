@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetgetls-function"></a>Funzione JetGetLS
 
-La **funzione JetGetLS** consente all'applicazione di recuperare l'handle di contesto noto come Local Archiviazione associato a un cursore o alla tabella associata a tale cursore. Questo handle di contesto deve essere stato impostato in precedenza [tramite JetSetLS.](./jetsetls-function.md) **JetGetLS può essere** usato anche per recuperare contemporaneamente l'handle di contesto corrente per un cursore o una tabella e reimpostare tale handle di contesto.
+La **funzione JetGetLS** consente all'applicazione di recuperare l'handle di contesto noto come Archiviazione locale associato a un cursore o alla tabella associata a tale cursore. Questo handle di contesto deve essere stato impostato in precedenza [tramite JetSetLS.](./jetsetls-function.md) **È anche possibile usare JetGetLS** per recuperare contemporaneamente l'handle di contesto corrente per un cursore o una tabella e reimpostare tale handle di contesto.
 
 **Windows XP: JetGetLS** è stato introdotto in Windows XP.
 
@@ -77,17 +77,17 @@ Gruppo di bit che specifica zero o più delle opzioni seguenti.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitLSCursor</p></td>
-<td><p>Indica che deve essere recuperato l'handle di contesto associato al cursore specificato.</p>
-<p>Se non JET_bitLSCursor né JET_bitLSTable viene specificato alcun valore, JET_bitLSCursor viene presupposto.</p>
-<p>Questa opzione non può essere usata con JET_bitLSTable. L'operazione avrà esito negativo JET_errInvalidgrbit se si tenta di eseguire questa operazione.</p></td>
+<td><p>Indica che l'handle di contesto associato al cursore specificato deve essere recuperato.</p>
+<p>Se non JET_bitLSCursor né JET_bitLSTable specificato, JET_bitLSCursor si presuppone.</p>
+<p>Questa opzione non può essere usata con JET_bitLSTable. L'operazione avrà esito negativo JET_errInvalidgrbit se viene tentata.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitLSTable</p></td>
-<td><p>Indica che deve essere recuperato l'handle di contesto associato alla tabella che contiene il cursore specificato. Non è valido usare questa opzione con JET_bitLSCursor. L'operazione avrà esito negativo JET_errInvalidgrbit se si tenta di eseguire questa operazione.</p></td>
+<td><p>Indica che deve essere recuperato l'handle di contesto associato alla tabella che contiene il cursore specificato. Non è valido usare questa opzione con JET_bitLSCursor. L'operazione avrà esito negativo JET_errInvalidgrbit se viene tentata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitLSReset</p></td>
-<td><p>Indica che l'handle di contesto per l'oggetto scelto deve essere reimpostato su JET_LSNil. Il valore corrente dell'handle di contesto viene restituito nel buffer di output.</p></td>
+<td><p>Indica che l'handle di contesto per l'oggetto scelto deve essere reimpostato JET_LSNil. Il valore corrente dell'handle di contesto viene restituito nel buffer di output.</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,7 @@ Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Errori del motore Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -115,7 +115,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
@@ -124,13 +124,13 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidgrbit</p></td>
-<td><p>Una delle opzioni richieste non è valida, usata in modo non valido o non è implementata.</p>
-<p>Questa operazione può verificarsi <strong>per JetGetLS</strong> quando JET_bitLSCursor e JET_bitLSTable sono impostate.</p></td>
+<td><p>Una delle opzioni richieste non era valida, usata in modo non valido o non implementata.</p>
+<p>Questo problema può verificarsi <strong>per JetGetLS</strong> quando JET_bitLSCursor e JET_bitLSTable sono impostate.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errLSNotSet</p></td>
 <td><p>Impossibile restituire l'handle di contesto perché nessun handle di contesto è attualmente associato all'oggetto richiesto.</p>
-<p><strong>Nota  </strong> Questo errore non viene restituito se JET_bitLSReset specificato ma non è stato associato alcun handle di contesto all'oggetto richiesto.</p></td>
+<p><strong>Nota:  </strong> Questo errore non viene restituito se JET_bitLSReset specificato ma non è stato associato alcun handle di contesto all'oggetto richiesto.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInitialized</p></td>
@@ -148,9 +148,9 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 </table>
 
 
-In caso di esito positivo, l'handle di contesto è stato recuperato correttamente dall'oggetto richiesto. Se JET_bitLSReset è stato specificato , anche l'handle di contesto è stato rimosso correttamente dall'oggetto . Non verrà apportata alcuna modifica allo stato del database.
+In caso di esito positivo, l'handle di contesto è stato recuperato correttamente dall'oggetto richiesto. Se JET_bitLSReset stato specificato, anche l'handle di contesto è stato rimosso correttamente dall'oggetto . Non verrà apportata alcuna modifica allo stato del database.
 
-In caso di errore, non si è verificata alcuna modifica allo stato dell'oggetto richiesto. Non verrà apportata alcuna modifica allo stato del database.
+In caso di errore, non è stata apportata alcuna modifica allo stato dell'oggetto richiesto. Non verrà apportata alcuna modifica allo stato del database.
 
 #### <a name="requirements"></a>Requisiti
 

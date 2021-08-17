@@ -64,7 +64,7 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335209(v=exchg.10).md">columnidcRecord</a></td>
-<td>Ottiene il columnid della colonna nella tabella temporanea in cui è archiviato il numero di record nella tabella.</td>
+<td>Ottiene l'id colonna della colonna nella tabella temporanea in cui è archiviato il numero di record nella tabella.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -84,7 +84,7 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335212(v=exchg.10).md">columnidobjtyp</a></td>
-<td>Ottiene il columnid della colonna nella tabella temporanea in cui è archiviato il tipo della tabella.</td>
+<td>Ottiene l'id colonna della colonna nella tabella temporanea in cui è archiviato il tipo della tabella.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>

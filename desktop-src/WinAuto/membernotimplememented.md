@@ -15,7 +15,7 @@ ms.locfileid: "118565076"
 
 ## <a name="text"></a>Testo
 
-Il metodo non viene implementato in questo particolare elemento.
+Il metodo non è implementato in questo particolare elemento.
 
 ## <a name="type"></a>Tipo
 

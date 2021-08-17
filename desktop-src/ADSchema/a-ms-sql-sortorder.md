@@ -32,7 +32,7 @@ Ordinamento per l'istanza corrente di SQL Server.
 | CN                | MS-SQL-SortOrder                            |
 | Ldap-Display-Name | mS-SQL-SortOrder                            |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | Al momento dell'installazione del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1371                     |
 | System-Id-Guid    | 6ddc42c0-ccee-11d2-9993-0000f87a57d4        |

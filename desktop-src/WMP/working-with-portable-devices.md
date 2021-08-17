@@ -4,12 +4,12 @@ description: Uso di dispositivi portatili
 ms.assetid: 145ede07-a23b-486b-a561-9c87a48b72a8
 keywords:
 - Windows Media Player, dispositivi portatili
-- Windows Media Player a oggetti, dispositivi portatili
-- modello a oggetti, dispositivi portatili
+- Windows Media Player a oggetti, dispositivi portabili
+- modello a oggetti, dispositivi portabili
 - Windows Media Player ActiveX, dispositivi portatili
 - ActiveX, dispositivi portatili
-- Windows Media Player Controllo ActiveX per dispositivi mobili, dispositivi portatili
-- Windows Media Player Dispositivi mobili, portatili
+- Windows Media Player controllo ActiveX dispositivi mobili, dispositivi portatili
+- Windows Media Player Dispositivi mobili, dispositivi portatili
 - dispositivi portatili, informazioni
 ms.topic: article
 ms.date: 05/31/2018
@@ -22,9 +22,9 @@ ms.locfileid: "117745507"
 ---
 # <a name="working-with-portable-devices"></a>Uso di dispositivi portatili
 
-Questa sezione descrive come usare un controllo Windows Media Player ActiveX remoto per lavorare con i dispositivi portatili.
+Questa sezione descrive come usare un controllo Windows Media Player ActiveX remoto per lavorare con dispositivi portatili.
 
-Gli esempi di codice in questa sezione usano Active Template Library (ATL), ad esempio **CComPtr**.
+Gli esempi di codice in questa sezione usano Active Template Library (ATL), ad esempio **CComPtr.**
 
 ## <a name="included-headers"></a>Intestazioni incluse
 
@@ -84,11 +84,11 @@ CComPtr<IWMPSyncDevice> spSyncDevice(m_ppWMPDevices[lIndex]);
 
 
 
-Si noti che l'indice mostrato negli esempi precedenti non è l'indice di partnership per il dispositivo. È l'indice del dispositivo nella matrice personalizzata di dispositivi.
+Si noti che l'indice illustrato negli esempi precedenti non è l'indice di relazione per il dispositivo. Si tratta dell'indice del dispositivo nella matrice personalizzata di dispositivi.
 
 ## <a name="cleaning-up"></a>Pulizia
 
-Negli esempi viene utilizzata la funzione seguente per liberare la memoria nella matrice di dispositivi e rilasciare i puntatori a interfaccia:
+Gli esempi usano la funzione seguente per liberare la memoria nella matrice di dispositivi e per rilasciare i puntatori di interfaccia:
 
 
 ```C++
@@ -152,7 +152,7 @@ enum UIState
 
 
 
-Il *parametro bConnected* specifica se configurare l'interfaccia utente per un dispositivo connesso (TRUE indica che il dispositivo è connesso). I *parametri NewState* *e bConnected* comunicano le informazioni necessarie per il funzionamento della funzione.
+Il *parametro bConnected* specifica se configurare l'interfaccia utente per un dispositivo connesso (TRUE indica che il dispositivo è connesso). I *parametri NewState* *e bConnected* trasmettono le informazioni necessarie per eseguire il lavoro della funzione.
 
 Le sezioni seguenti forniscono le spiegazioni del codice di esempio:
 
@@ -165,7 +165,7 @@ Le sezioni seguenti forniscono le spiegazioni del codice di esempio:
 
 <dl> <dt>
 
-[**Guida al controllo del giocatore**](player-control-guide.md)
+[**Guida al controllo del lettore**](player-control-guide.md)
 </dt> </dl>
 
  

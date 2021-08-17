@@ -1,5 +1,5 @@
 ---
-title: Metodi Texture2D::Texture2D GatherCmpAlpha
+title: Metodi GatherCmpAlpha texture2D::Texture2D
 description: Campiota e confronta un oggetto Texture2D e restituisce il componente alfa.
 ms.assetid: 16db51c4-9093-413d-995f-32659435b281
 keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118787273"
 ---
-# <a name="texture2dgathercmpalpha-methods"></a>Metodi Texture2D::GatherCmpAlpha
+# <a name="texture2dgathercmpalpha-methods"></a>Metodi texture2D::GatherCmpAlpha
 
 Campiota e confronta un [**oggetto Texture2D**](sm5-object-texture2d.md) e restituisce il componente alfa.
 
@@ -29,10 +29,10 @@ Campiota e confronta un [**oggetto Texture2D**](sm5-object-texture2d.md) e resti
 
 | Metodo                                                                                                                       | Descrizione                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpAlpha(S,float,float,int)**](sm5-object-texture2d-gathercmpalpha.md)                                             | Campione e confronta una trama e restituisce il componente alfa.<br/>                                       |
-| [**GatherCmpAlpha(S,float,float,int,uint)**](t2d-gathercmpalpha-s-float-float-int-uint-.md)                                 | Campione e confronta una trama e restituisce il componente alfa insieme allo stato dell'operazione.<br/> |
-| [**GatherCmpAlpha(S,float,float,int2,int2,int2,int2)**](t2d-gathercmpalpha-s-float-int2-int2-int2-int2-.md)                 | Campione e confronta una trama e restituisce il componente alfa.<br/>                                       |
-| [**GatherCmpAlpha(S,float,float,int2,int2,int2,int2,uint)**](t2d-gathercmpalpha-s-float-float-int2-int2-int2-int2-uint-.md) | Campione e confronta una trama e restituisce il componente alfa insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpAlpha(S,float,float,int)**](sm5-object-texture2d-gathercmpalpha.md)                                             | Campiota e confronta una trama e restituisce il componente alfa.<br/>                                       |
+| [**GatherCmpAlpha(S,float,float,int,uint)**](t2d-gathercmpalpha-s-float-float-int-uint-.md)                                 | Esempi e confronta una trama e restituisce il componente alfa insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2)**](t2d-gathercmpalpha-s-float-int2-int2-int2-int2-.md)                 | Campiota e confronta una trama e restituisce il componente alfa.<br/>                                       |
+| [**GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2,uint)**](t2d-gathercmpalpha-s-float-float-int2-int2-int2-int2-uint-.md) | Esempi e confronta una trama e restituisce il componente alfa insieme allo stato dell'operazione.<br/> |
 
 
 
