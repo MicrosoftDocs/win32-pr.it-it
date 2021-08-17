@@ -15,14 +15,14 @@ ms.locfileid: "118560608"
 
 \[Gli esempi di WinSAT possono essere modificati o non disponibili per le versioni dopo Windows 8.1.\]
 
-Lo Windows System Assessment Tool (WinSAT) fornisce gli esempi seguenti in [Windows SDK](https://msdn.microsoft.com/windows/bb980924.aspx).
+Lo Windows System Assessment Tool (WinSAT) fornisce gli esempi seguenti in [Windows SDK.](https://msdn.microsoft.com/windows/bb980924.aspx)
 
 
 
 | Esempio             | Descrizione                                                                    |
 |--------------------|--------------------------------------------------------------------------------|
-| InitiateAssessment | Viene illustrato come avviare valutazioni formali e personalizzate.                           |
-| QueryWinSAT        | Viene illustrato come eseguire una query degli archivi dati WinSAT per ottenere i risultati di una valutazione. |
+| InitiateAssessment | Illustra come avviare valutazioni formali e personalizzate.                           |
+| QueryWinSAT        | Illustra come eseguire una query degli archivi dati WinSAT per ottenere i risultati di una valutazione. |
 
 
 

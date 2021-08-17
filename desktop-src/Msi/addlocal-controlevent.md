@@ -15,7 +15,7 @@ ms.locfileid: "118639564"
 
 Questo evento notifica al programma di installazione, mantenendo la finestra di dialogo in esecuzione, che una funzionalità o tutte le funzionalità devono essere eseguite in locale. Questo evento può essere pubblicato da un controllo [PushButton](pushbutton-control.md), [un controllo Checkbox](checkbox-control.md)o un controllo [SelectionTree](selectiontree-control.md). Questo evento deve essere creato nella tabella [ControlEvent](controlevent-table.md).
 
-Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Interfaccia utente Levels.](user-interface-levels.md)
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
 ## <a name="published-by"></a>Pubblicato da
 

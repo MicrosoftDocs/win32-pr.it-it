@@ -1,6 +1,6 @@
 ---
-description: Altre informazioni sulle proprietà di EsentException
-title: Proprietà EsentException (Microsoft.Isam.Esent)
+description: 'Altre informazioni su: Proprietà di EsentException'
+title: Proprietà di EsentException (Microsoft.Isam.Esent)
 TOCTitle: EsentException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.EsentException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception_properties(v=EXCHG.10)
@@ -17,7 +17,7 @@ ms.locfileid: "118496967"
 # <a name="esentexception-properties"></a>Proprietà di EsentException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentException](./esentexception-class.md) espone i membri seguenti.
 

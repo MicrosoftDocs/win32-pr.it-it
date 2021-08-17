@@ -17,7 +17,7 @@ Il processo di installazione ha esito positivo in due fasi: acquisizione ed esec
 
 ## <a name="acquisition"></a>Acquisizione
 
-All'inizio della fase di acquisizione, un'applicazione o un utente indica al programma di installazione di installare una funzionalità o un'applicazione. Il programma di installazione procede quindi con le azioni specificate nelle tabelle di sequenza del database di installazione. Queste azioni eseguono query sul database di installazione e generano uno script che fornisce una procedura dettagliata per l'esecuzione dell'installazione.
+All'inizio della fase di acquisizione, un'applicazione o un utente indica al programma di installazione di installare una funzionalità o un'applicazione. Il programma di installazione procede quindi attraverso le azioni specificate nelle tabelle di sequenza del database di installazione. Queste azioni eseguono query sul database di installazione e generano uno script che fornisce una procedura dettagliata per l'esecuzione dell'installazione.
 
 ## <a name="execution"></a>Esecuzione
 

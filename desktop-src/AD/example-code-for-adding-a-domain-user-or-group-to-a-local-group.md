@@ -4,7 +4,7 @@ description: Questo argomento include un esempio di codice che illustra come agg
 ms.assetid: 6333ce9f-0396-4af7-9e81-f008cf4536ec
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory , aggiunta di un utente o di un gruppo di dominio a un gruppo locale
+- Active Directory è un esempio di Active Directory e aggiunge un utente o un gruppo di dominio a un gruppo locale
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bdca65c26c6ab1195dcd0d7fc3f44b36e39bed1d15e97627664754c918e57e96
@@ -106,7 +106,7 @@ HRESULT AddDomainUserToLocalGroup(LPCWSTR pwszComputerName,
 
 
 
-Nell'esempio di codice Visual Basic seguente viene aggiunto un utente o un gruppo di dominio a un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
+Nell'esempio di Visual Basic seguente viene aggiunto un utente o un gruppo di dominio a un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
 
 
 ```VB

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: InterlockedMin'
-description: Trova il valore minimo, atomicamente.
+title: Funzione RWByteAddressBuffer::InterlockedMin
+description: Trova il valore minimo in modo atomico.
 ms.assetid: bf650b2e-9c6c-4458-9565-1e9ec76a1472
 keywords:
 - Funzione InterlockedMin HLSL
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b818a1fa0897d103e7d609a676212c6db428935f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: 062ae6c5fa37b732411891427770761881429069d030e9266ab20adb3e2d3726
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509550"
 ---
-# <a name="interlockedmin-function"></a>InterlockedMin (funzione)
+# <a name="interlockedmin-function"></a>Funzione InterlockedMin
 
-Trova il valore minimo, atomicamente.
+Trova il valore minimo in modo atomico.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void InterlockedMin(
-  in  UINT dest,
-  in  UINT value,
-  out UINT original_value
+  in  UINT dest,
+  in  UINT value,
+  out UINT original_value
 );
 ```
 
@@ -38,28 +38,28 @@ void InterlockedMin(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indirizzo di destinazione.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore di input.
 
 </dd> <dt>
 
-*\_ valore originale* in \[ uscita\]
+*valore \_ originale* \[ in uscita\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore originale.
 
@@ -71,19 +71,19 @@ Nothing
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse tipizzate int e uint e variabili di memoria condivisa. Per questa funzione sono disponibili tre possibili utilizzi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue un valore minimo atomico del valore al registro di memoria condiviso a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue un valore minimo atomico del valore per la posizione della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione riduce a un valore minimo del valore di dest e value, archiviato in dest. La funzione in overload ha una variabile di output aggiuntiva che verrà impostata sul valore originale di dest. Questa operazione di overload è disponibile solo quando R è leggibile e scrivibile.
+Questa operazione può essere eseguita solo su risorse di tipo int e uint e variabili di memoria condivisa. Questa funzione può essere utilizzata in tre modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue un minimo atomico del valore nel registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue un minimo atomico del valore nella posizione della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione riduce al minimo il valore di dest e value, archiviato in dest. La funzione in overload ha una variabile di output aggiuntiva che verrà impostata sul valore originale di dest. Questa operazione di overload è disponibile solo quando R è leggibile e scrivibile.
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| VS  | HS  | DS  | GS  | PS  | CS  |
+| VS  | Hs  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 | x   |  x  | x   | x   | x   | x   |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -92,9 +92,9 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

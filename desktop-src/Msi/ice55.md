@@ -47,7 +47,7 @@ Could not find item 'File3' in table 'File' which is referenced
 
 
 
-| File  | Versione | Lingua |
+| File  | Versione | Linguaggio |
 |-------|---------|----------|
 | File1 | File2   |          |
 | File2 | 1.0.0.0 | 1033     |
@@ -56,9 +56,9 @@ Could not find item 'File3' in table 'File' which is referenced
 
  
 
-L'oggetto File1 ha un valore Null nella colonna Permission. Ogni riga deve avere un valore nella colonna Autorizzazioni . Per correggere l'errore, specificare un valore numerico in questa colonna. Se non sono necessari privilegi per questo oggetto, è necessario rimuovere la riga.
+L'oggetto File1 ha un valore Null nella colonna Permission. Ogni riga deve avere un valore nella colonna Autorizzazioni. Per correggere l'errore, specificare un valore numerico in questa colonna. Se non sono necessari privilegi per questo oggetto, è necessario rimuovere la riga.
 
-L'oggetto File3 descritto nella tabella LockPermissions non è elencato nella tabella File. Per correggere questo errore, fare riferimento a un oggetto valido.
+L'oggetto File3 descritto nella tabella LockPermissions non è elencato nella tabella File. Per correggere l'errore, fare riferimento a un oggetto valido.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

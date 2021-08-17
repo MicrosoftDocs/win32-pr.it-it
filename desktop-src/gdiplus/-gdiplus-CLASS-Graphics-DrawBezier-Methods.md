@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118482972"
 ---
-# <a name="graphicsdrawbezier-methods"></a>Metodi graphics.DrawBezier
+# <a name="graphicsdrawbezier-methods"></a>Metodi Graphics.DrawBezier
 
-Questo argomento elenca i metodi DrawBezier della [**classe**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Graphics. Per un elenco completo dei metodi per la **classe Graphics,** vedere [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
+Questo argomento elenca i metodi DrawBezier della [**classe Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Per un elenco completo dei metodi per la **classe Graphics,** vedere [**Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -22,9 +22,9 @@ Questo argomento elenca i metodi DrawBezier della [**classe**](/windows/win32/ap
 | Metodo                                                                                                                                                                    | Descrizione                                                                                                                                                                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**DrawBezier(Pen,POINT \*&,POINT&,POINT&,POINT&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inconstpoint__inconstpoint__inconstpoint__inconstpoint_))                              | Il [**metodo Graphics::D rawBezier**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inconstpoint__inconstpoint__inconstpoint__inconstpoint_)) disegna una spline di Bézier.<br/>                  |
-| [**\*DrawBezier(Pen,INT,INT,INT,INT,INT,INT,INT,INT,INT,INT)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inint_inint_inint_inint_inint_inint_inint_inint))          | Il [**metodo Graphics::D rawBezier**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inint_inint_inint_inint_inint_inint_inint_inint)) disegna una spline di Bézier.<br/>  |
+| [**\*DrawBezier(Pen,INT,INT,INT,INT,INT,INT,INT,INT,INT)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inint_inint_inint_inint_inint_inint_inint_inint))          | Il [**metodo Graphics::D rawBezier**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inint_inint_inint_inint_inint_inint_inint_inint)) disegna una spline di Bézier.<br/>  |
 | [**DrawBezier(Pen,POINTF \*&,POINTF&,POINTF&,POINTF&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inconstpointf__inconstpointf__inconstpointf__inconstpointf_))                      | Il [**metodo Graphics::D rawBezier**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawbezier(inconstpen_inconstpointf__inconstpointf__inconstpointf__inconstpointf_)) disegna una spline di Bézier.<br/>              |
-| [**DrawBezier(Pen, \* REAL, REAL, REAL, REAL, REAL, REAL, REAL, REAL)**](/previous-versions//ms536150(v=vs.85)) | Il [**metodo Graphics::D rawBezier**](/previous-versions//ms536150(v=vs.85)) disegna una spline di Bézier.<br/> |
+| [**\*DrawBezier(Pen,REAL,REAL,REAL,REAL,REAL,REAL,REAL,REAL,REAL)**](/previous-versions//ms536150(v=vs.85)) | Il [**metodo Graphics::D rawBezier**](/previous-versions//ms536150(v=vs.85)) disegna una spline di Bézier.<br/> |
 
 
 

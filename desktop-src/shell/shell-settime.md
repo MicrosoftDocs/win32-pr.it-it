@@ -22,7 +22,7 @@ ms.locfileid: "118452842"
 ---
 # <a name="shellsettime-method"></a>Metodo Shell.SetTime
 
-Consente di visualizzare **la finestra di dialogo Proprietà data** e ora . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sull'orologio nell'area di stato della barra delle applicazioni e scegliere **Regola data/ora**.
+Consente di visualizzare **la finestra di dialogo Proprietà data** e ora . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sull'orologio nell'area di stato della barra delle applicazioni e **scegliere Regola data/ora.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra **SetTime** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
+L'esempio seguente mostra **SetTime** in uso. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -105,7 +105,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

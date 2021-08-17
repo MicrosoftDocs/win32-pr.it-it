@@ -23,7 +23,7 @@ L'impostazione di questo criterio [di sistema](system-policy.md) per computer co
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ Criteri \_ software del** \\ **computer** \\ **locale Programma** di installazione \\  \\ **Windows** \\ **Microsoft**
+**HKEY \_ Criteri \_ software del** \\ **computer** \\ **locale Programma** di installazione di \\ **Microsoft** \\ **Windows** \\ 
 
 ## <a name="data-type"></a>Tipo di dati
 

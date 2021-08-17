@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una porta del commutatore che invia e riceve frame di dati.
+description: Rappresenta una porta commutatore che invia e riceve frame di dati.
 ms.assetid: 015eed2a-1393-40ef-a190-832ab48766f9
 title: CIM_SwitchPort classe
 ms.topic: reference
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118647189"
 ---
-# <a name="cim_switchport-class"></a>Classe \_ CiM SwitchPort
+# <a name="cim_switchport-class"></a>Classe CiM \_ SwitchPort
 
-Rappresenta una porta del commutatore che invia e riceve frame di dati.
+Rappresenta una porta commutatore che invia e riceve frame di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,13 +37,13 @@ class CIM_SwitchPort : CIM_ProtocolEndpoint
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM SwitchPort** include i tipi di membri seguenti:
+La **classe CIM \_ SwitchPort** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CiM SwitchPort** ha queste proprietà.
+La **classe CIM \_ SwitchPort** ha queste proprietà.
 
 <dl> <dt>
 

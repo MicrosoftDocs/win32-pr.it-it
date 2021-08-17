@@ -1,6 +1,6 @@
 ---
 title: Metodo ID3DX12PipelineParserCallbacks RasterizerStateCb (D3DX12.h)
-description: Chiama il callback dell'oggetto secondario della descrizione dello stato di rasterizzazione di un oggetto che implementa questa interfaccia.
+description: Chiama il callback del sottooggetto di descrizione dello stato del rasterizzatore di un oggetto che implementa questa interfaccia.
 ms.assetid: 125FC6EC-B749-4EE2-9D34-14BD12993BDC
 keywords:
 - Metodo RasterizerStateCb
@@ -26,7 +26,7 @@ ms.locfileid: "118528621"
 ---
 # <a name="id3dx12pipelineparsercallbacksrasterizerstatecb-method"></a>Metodo ID3DX12PipelineParserCallbacks::RasterizerStateCb
 
-Chiama il callback dell'oggetto secondario della descrizione dello stato di rasterizzazione di un oggetto che implementa questa interfaccia.
+Chiama il callback del sottooggetto di descrizione dello stato del rasterizzatore di un oggetto che implementa questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,12 +43,12 @@ void RasterizerStateCb(
 
 <dl> <dt>
 
-*Stato rasterizzazione* \[ Ref\]
+*RasterizerState* \[ Ref\]
 </dt> <dd>
 
 Tipo: **const [**D3D12 \_ RASTERIZER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc)**
 
-Dettagli dell'oggetto secondario della descrizione dello stato di rasterizzazione analizzato da un flusso di stato della pipeline.
+Dettagli del sottooggetto di descrizione dello stato del rasterizzatore analizzato da un flusso di stato della pipeline.
 
 </dd> </dl>
 

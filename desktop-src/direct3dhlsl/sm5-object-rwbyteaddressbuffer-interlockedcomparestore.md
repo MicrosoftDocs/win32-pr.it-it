@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: InterlockedCompareStore'
-description: Ccompares l'input al valore di confronto in modo atomico.
+title: Funzione RWByteAddressBuffer::InterlockedCompareStore
+description: Ccompare l'input al valore di confronto, in modo atomico.
 ms.assetid: d82a73b6-24a5-4eb3-9f20-15ba263c93d0
 keywords:
 - Funzione InterlockedCompareStore HLSL
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: abaa390ba74657e42b54a5147a7bc4006564a5fb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dcb19358f98c1280ddb180b7381fb7714d28cc7db145ca36577f5f97f70c9f1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103872786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509690"
 ---
-# <a name="interlockedcomparestore-function"></a>InterlockedCompareStore (funzione)
+# <a name="interlockedcomparestore-function"></a>Funzione InterlockedCompareStore
 
-Ccompares l'input al valore di confronto in modo atomico.
+Ccompare l'input al valore di confronto, in modo atomico.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void InterlockedCompareStore(
-  in UINT dest,
-  in UINT compare_value,
-  in UINT value
+  in UINT dest,
+  in UINT compare_value,
+  in UINT value
 );
 ```
 
@@ -38,28 +38,28 @@ void InterlockedCompareStore(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indirizzo di destinazione.
 
 </dd> <dt>
 
-*Confronta \_ valore* \[ in\]
+*confrontare \_ il valore* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore di confronto.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore di input.
 
@@ -71,19 +71,19 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse tipizzate int o uint e variabili di memoria condivisa. Per questa funzione sono disponibili tre possibili utilizzi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul Registro di memoria condiviso a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione riduce l'operazione eseguita usando le operazioni locali.
+Questa operazione può essere eseguita solo su risorse tipiche int o uint e variabili di memoria condivisa. Esistono tre possibili utilizzi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione si riduce all'operazione eseguita usando operazioni locali.
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| VS  | HS  | DS  | GS  | PS  | CS  |
+| VS  | Hs  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 | x   | x   | x   | x   | x   | x   |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -92,9 +92,9 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

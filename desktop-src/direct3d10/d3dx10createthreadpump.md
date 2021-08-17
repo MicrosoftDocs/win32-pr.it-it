@@ -65,7 +65,7 @@ Numero di thread di processo da creare. Se si specifica 0, Direct3D tenterà di 
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\*\***
 
-Thread pump creato. Vedere [**Interfaccia ID3DX10ThreadPump.**](id3dx10threadpump.md)
+Thread pump creato. Vedere [**ID3DX10ThreadPump Interface ( Interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md)).
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Thread pump creato. Vedere [**Interfaccia ID3DX10ThreadPump.**](id3dx10threadpum
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Un thread pump è un oggetto a elevato utilizzo di risorse. È necessario creare un solo thread pump per ogni applicazione.
+Una pompa di thread è un oggetto a elevato utilizzo di risorse. È necessario creare un solo thread pump per ogni applicazione.
 
 ## <a name="requirements"></a>Requisiti
 

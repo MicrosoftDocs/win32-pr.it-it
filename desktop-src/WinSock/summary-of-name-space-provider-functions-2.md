@@ -25,7 +25,7 @@ Le sezioni seguenti identificano le funzioni in ogni categoria e descrivono brev
 
 -   [Configurazione e installazione del provider dello spazio dei nomi](name-space-provider-configuration-and-installation-2.md)
 -   [Inizializzazione e pulizia del provider dello spazio dei nomi](name-space-provider-initialization-and-cleanup-2.md)
--   [Installazione del servizio nella Windows Sockets 2 SPI](service-installation-in-the-windows-sockets-2-spi-2.md)
+-   [Installazione del servizio nel Windows Sockets 2 SPI](service-installation-in-the-windows-sockets-2-spi-2.md)
 -   [Query del servizio](service-query-2.md)
 -   [Funzioni helper nell'spi](helper-functions-in-the-spi-2.md)
 

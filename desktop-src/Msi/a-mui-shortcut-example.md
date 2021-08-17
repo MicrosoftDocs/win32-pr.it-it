@@ -1,5 +1,5 @@
 ---
-description: Questa sezione descrive come aggiungere stringhe di risorse alla tabella Windows collegamento del programma di installazione per l'uso con le interfacce utente multilingue (MUI).
+description: Questa sezione descrive come aggiungere stringhe di risorse alla tabella Windows collegamento del programma di installazione per l'uso con MUI (Multilingual User Interface).
 ms.assetid: f521cfb8-32a8-4b62-b258-5b99cc3e0416
 title: Esempio di collegamento MUI
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118640288"
 ---
 # <a name="a-mui-shortcut-example"></a>Esempio di collegamento MUI
 
-Questa sezione descrive come aggiungere stringhe di risorse alla tabella Windows [collegamento](shortcut-table.md) del programma di installazione per l'uso con le interfacce utente multilingue (MUI).
+Questa sezione descrive come aggiungere stringhe di risorse alla tabella Windows [collegamento](shortcut-table.md) del programma di installazione per l'uso con MUI (Multilingual User Interface).
 
 **Windows Installer 2.0 e Windows Installer 3.0:** Non supportato. Questo esempio richiede Windows Installer 4.0.
 
-Per informazioni su [come sviluppare applicazioni abilitate per MUI,](/windows/desktop/Intl/multilingual-user-interface) vedere la documentazione di interfaccia utente multilingue (MUI).
+Per informazioni su come sviluppare [applicazioni abilitate per MUI, vedere](/windows/desktop/Intl/multilingual-user-interface) la documentazione di interfaccia utente multilingue (MUI).
 
 Per aggiungere le stringhe di risorsa usate da Windows multilingue di Vista a un pacchetto Windows Installer:
 
-1.  Aggiungere le informazioni per tutti i file indipendenti dalla lingua e alla tabella [file](file-table.md). Ad esempio, i file possono essere costituiti da un file indipendente dalla lingua (msimsg.dll) e da file di lingua per l'inglese (msimsgen.dll.mui), il giapponese (msimsgja.dll.mui) e il cinese (msimsgcs.dll.mui). Ogni file può appartenere a un componente diverso. Ogni file può avere un nome di file lungo e breve. Nel caso di questo esempio, è possibile aggiungere le informazioni seguenti alla [tabella file](file-table.md).
+1.  Aggiungere le informazioni per tutti i file di lingua e indipendente dalla lingua alla [tabella file](file-table.md). Ad esempio, i file possono essere costituiti da un file indipendente dalla lingua (msimsg.dll) e da file di lingua per l'inglese (msimsgen.dll.mui), il giapponese (msimsgja.dll.mui) e il cinese (msimsgcs.dll.mui). Ogni file può appartenere a un componente diverso. Ogni file può avere sia un nome di file lungo che un nome di file breve. Nel caso di questo esempio, è possibile aggiungere le informazioni seguenti alla [tabella File](file-table.md).
 
     [Tabella file](file-table.md) (parziale)
 
@@ -38,7 +38,7 @@ Per aggiungere le stringhe di risorsa usate da Windows multilingue di Vista a un
 
      
 
-2.  Aggiungere informazioni alla tabella [Componente per](component-table.md) questi componenti. Ogni componente ha un identificatore GUID univoco che deve essere immesso nel campo ComponentId della tabella Component. Il file appartenente al componente può fungere da KeyPath per tale componente. La directory che contiene ogni componente può essere specificata nel campo \_ Directory. Le informazioni seguenti possono essere aggiunte alla tabella Component.
+2.  Aggiungere informazioni alla [tabella Componente per](component-table.md) questi componenti. Ogni componente ha un identificatore GUID univoco che deve essere immesso nel campo ComponentId della tabella Component. Il file appartenente al componente può fungere da KeyPath per tale componente. La directory che contiene ogni componente può essere specificata nel campo \_ Directory. Le informazioni seguenti possono essere aggiunte alla tabella Component.
 
     [Tabella dei componenti](component-table.md) (parziale)
 
@@ -57,11 +57,11 @@ Per aggiungere le stringhe di risorsa usate da Windows multilingue di Vista a un
 
 3.  Modificare la [tabella Directory](directory-table.md) in modo che i componenti siano installati nelle directory corrette. Assicurarsi di includere informazioni sulla directory in cui verrà installato il collegamento. Ad esempio, le informazioni seguenti potrebbero essere aggiunte alla tabella Directory di un pacchetto che installa i componenti e un collegamento che si trova nella directory DesktopFolder.
 
-    [Tabella directory](directory-table.md) (parziale)
+    [Tabella di directory](directory-table.md) (parziale)
 
     
 
-    | Directory     | Directory \_ Parent | DefaultDir |
+    | Directory     | Padre \_ della directory | DefaultDir |
     |---------------|-------------------|------------|
     | Targetdir     |                   | SourceDir  |
     | MsiTest       | Targetdir         | MsiTest:.  |
@@ -75,7 +75,7 @@ Per aggiungere le stringhe di risorsa usate da Windows multilingue di Vista a un
 
      
 
-4.  Aggiungere una riga alla tabella [Collegamento](shortcut-table.md) per ogni collegamento. Ad esempio, la [tabella Collegamento](shortcut-table.md) potrebbe contenere le informazioni seguenti per due collegamenti, Quick1 e Quick2, installati nella directory DirectoryFolder. Ogni collegamento appartiene alla funzionalità specificata nel campo Destinazione. L'icona associata al collegamento può essere specificata nel campo \_ Icona e nella [tabella](icon-table.md) Icona.
+4.  Aggiungere una riga alla tabella [Collegamento](shortcut-table.md) per ogni collegamento. Ad esempio, la [tabella Collegamento](shortcut-table.md) può contenere le informazioni seguenti per due collegamenti, Quick1 e Quick2, installati nella directory DirectoryFolder. Ogni collegamento appartiene alla funzionalità specificata nel campo Destinazione. L'icona associata al collegamento può essere specificata nel campo \_ Icona e nella [tabella](icon-table.md) Icona.
 
     [Tabella dei collegamenti](shortcut-table.md) (parziale)
 
@@ -83,20 +83,20 @@ Per aggiungere le stringhe di risorsa usate da Windows multilingue di Vista a un
 
     | Tasto di scelta rapida | Directory\_   | Componente\_ | Destinazione               | Icona             |
     |----------|---------------|-------------|----------------------|------------------|
-    | Rapida1   | Cartella Desktop | MSIMSG      | FeatureChild1 \_ Local | HelpFileIcon.exe |
-    | Rapida2   | Cartella Desktop | MSIMSG      | FeatureChild1 \_ Local | HelpFileIcon.exe |
+    | Quick1   | Cartella Desktop | MSIMSG      | FeatureChild1 \_ locale | HelpFileIcon.exe |
+    | Quick2   | Cartella Desktop | MSIMSG      | FeatureChild1 \_ locale | HelpFileIcon.exe |
 
     
 
      
 
-5.  Aggiungere informazioni alla tabella [tabella delle funzionalità](feature-table.md) per l'appartenenza al collegamento di proprietà della funzionalità. Quando il collegamento viene attivato, il programma di installazione verifica che tutti i componenti appartenenti a questa funzionalità siano installati prima di avviare il file di chiave del componente specificato nella colonna Componente della tabella \_ [Collegamento.](shortcut-table.md) Nel caso di questo esempio, è possibile aggiungere le informazioni seguenti alla tabella Tabella delle funzionalità per la funzionalità Locale \_ FeatureParent1.
+5.  Aggiungere informazioni alla tabella [Tabella funzionalità](feature-table.md) per l'appartenenza al collegamento proprietario della funzionalità. Quando il collegamento viene attivato, il programma di installazione verifica che tutti i componenti appartenenti a questa funzionalità siano installati prima di avviare il file di chiave del componente specificato nella colonna Componente della tabella \_ [Collegamento.](shortcut-table.md) Nel caso di questo esempio, è possibile aggiungere le informazioni seguenti alla tabella Feature Table per la funzionalità FeatureParent1 \_ Local.
 
     [Tabella delle funzionalità](feature-table.md) (parziale)
 
     
 
-    | Funzionalità               | Elemento padre \_ della funzionalità       | Title                 | Attributi |
+    | Funzionalità               | Elemento padre \_ della funzionalità       | Titolo                 | Attributi |
     |-----------------------|-----------------------|-----------------------|------------|
     | Elemento FeatureParent1 \_ locale |                       | Elemento FeatureParent1 \_ locale | 16         |
     | FeatureChild1 \_ Local  | Elemento FeatureParent1 \_ locale | Elemento FeatureParent1 \_ locale | 0          |

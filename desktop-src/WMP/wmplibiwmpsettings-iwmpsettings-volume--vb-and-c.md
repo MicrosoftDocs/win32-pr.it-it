@@ -3,9 +3,9 @@ title: Proprietà del volume IWMPSettings
 description: La proprietà volume ottiene o imposta il volume di riproduzione corrente.
 ms.assetid: cff4fe70-9ca2-4419-bfc3-d622e8c72756
 keywords:
-- Proprietà volume Windows Media Player
-- Proprietà del volume Windows Media Player, interfaccia IWMPSettings
-- Interfaccia IWMPSettings Windows Media Player , proprietà del volume
+- proprietà volume Windows Media Player
+- proprietà volume Windows Media Player, interfaccia IWMPSettings
+- Interfaccia IWMPSettings Windows Media Player proprietà del volume
 topic_type:
 - apiref
 api_name:
@@ -46,11 +46,11 @@ Public Property volume As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System.Int32** che rappresenta il livello del volume, compreso tra 0 e 100.
+Oggetto **System.Int32** che rappresenta il livello del volume, compreso tra 0 e 100.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore zero specifica che non è presente alcun volume (disattivato). Il valore 100 specifica il volume completo. Se non viene specificato alcun valore per questa proprietà, per impostazione predefinita viene impostata l'ultima impostazione del volume stabilita per Windows Media Player.
+Il valore zero non specifica alcun volume (disattivato). Il valore 100 specifica il volume completo. Se per questa proprietà non viene specificato alcun valore, per impostazione predefinita viene impostata l'ultima impostazione del volume stabilita per Windows Media Player.
 
 ## <a name="requirements"></a>Requisiti
 

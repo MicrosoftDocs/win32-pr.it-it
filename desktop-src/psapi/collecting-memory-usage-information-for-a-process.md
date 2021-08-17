@@ -13,7 +13,7 @@ ms.locfileid: "118462979"
 ---
 # <a name="collecting-memory-usage-information-for-a-process"></a>Raccolta di informazioni sull'utilizzo della memoria per un processo
 
-Per determinare l'efficienza dell'applicazione, è possibile esaminarne l'utilizzo della memoria. Il codice di esempio seguente usa [**la funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere informazioni sull'utilizzo della memoria di un processo.
+Per determinare l'efficienza dell'applicazione, è possibile esaminarne l'utilizzo della memoria. Il codice di esempio seguente usa la [**funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere informazioni sull'utilizzo della memoria di un processo.
 
 
 ```C++
@@ -92,7 +92,7 @@ int main( void )
 
 
 
-La funzione main ottiene un elenco di processi usando la [**funzione EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Per ogni processo, main chiama la funzione PrintMemoryInfo, passando l'identificatore del processo. PrintMemoryInfo chiama a sua volta la [**funzione OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess ha** esito negativo, l'output visualizza solo l'identificatore del processo. Ad esempio, **OpenProcess non** riesce per i processi Idle e CSRSS perché le restrizioni di accesso impediscono al codice a livello di utente di aprirli. PrintMemoryInfo chiama infine la [**funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere le informazioni sull'utilizzo della memoria.
+La funzione main ottiene un elenco di processi usando la [**funzione EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Per ogni processo, main chiama la funzione PrintMemoryInfo, passando l'identificatore del processo. PrintMemoryInfo a sua volta chiama la [**funzione OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess ha** esito negativo, l'output mostra solo l'identificatore del processo. Ad esempio, **OpenProcess ha** esito negativo per i processi Inattivi e CSRSS perché le restrizioni di accesso impediscono al codice a livello di utente di aprirli. PrintMemoryInfo chiama infine la [**funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere le informazioni sull'utilizzo della memoria.
 
  
 

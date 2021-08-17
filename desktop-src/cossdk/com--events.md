@@ -13,14 +13,14 @@ ms.locfileid: "118549498"
 ---
 # <a name="com-events"></a>Eventi COM+
 
-Il servizio eventi COM+ è un sistema di eventi automatizzato ad accoppiato libero che archivia le informazioni sugli eventi di diversi editori nel catalogo COM+. I sottoscrittori possono eseguire query su questo archivio e selezionare gli eventi di cui vogliono essere a ascolto.
+Il servizio eventi COM+ è un sistema di eventi automatizzato ad accoppiato libero che archivia le informazioni sugli eventi di diversi editori nel catalogo COM+. I Sottoscrittori possono eseguire query su questo archivio e selezionare gli eventi che desiderano conoscere.
 
 
 
 | Argomento                                            | Descrizione                                                                   |
 |--------------------------------------------------|-------------------------------------------------------------------------------|
-| [Concetti relativi agli eventi COM+](com--events-concepts.md) | Viene fornita una panoramica del servizio eventi COM+.                              |
-| [Attività degli eventi COM+](com--events-tasks.md)       | Fornisce istruzioni per l'uso del servizio eventi COM+ nelle applicazioni. |
+| [Concetti relativi agli eventi COM+](com--events-concepts.md) | Fornisce una panoramica del servizio eventi COM+.                              |
+| [Attività degli eventi COM+](com--events-tasks.md)       | Vengono fornite istruzioni per l'uso del servizio eventi COM+ nelle applicazioni. |
 
 
 

@@ -16,7 +16,7 @@ ms.locfileid: "118545552"
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**WM \_ CLEAR**](wm-clear.md)
--   [**WM \_ COPY**](wm-copy.md)
+-   [**COPIA \_ WM**](wm-copy.md)
 -   [**WM \_ CUT**](wm-cut.md)
 -   [**WM \_ PASTE**](wm-paste.md)
 

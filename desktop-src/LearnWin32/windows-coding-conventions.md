@@ -1,53 +1,53 @@
 ---
-title: Convenzioni di codifica Windows
-description: Se non si ha familiarità con la programmazione Windows, può essere sconcertante quando viene visualizzato per la prima volta un programma Windows.
+title: Windows Convenzioni di codifica
+description: Se non si ha esperienza Windows programmazione, può essere sconcertante quando viene visualizzato per la prima volta un Windows programma.
 ms.assetid: 466a66db-7681-4fce-9672-07849cd1b096
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365a9c8509d7cb799bafdfa70c326f1074b64d93
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b78c24f38f9f2f410c044637ca3aa59d4baa39e9b671b3485c5b85899b69c2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387396"
 ---
-# <a name="windows-coding-conventions"></a>Convenzioni di codifica Windows
+# <a name="windows-coding-conventions"></a>Windows Convenzioni di codifica
 
-Se non si ha familiarità con la programmazione Windows, può essere sconcertante quando viene visualizzato per la prima volta un programma Windows. Il codice viene compilato con definizioni di tipo strano, ad esempio **DWORD \_ ptr** e **lpRect**, e le variabili hanno nomi quali *HWND* e *PWSZ* (denominata notazione ungherese). È opportuno apprendere alcune delle convenzioni di codifica di Windows.
+Se non si ha esperienza Windows programmazione, può essere sconcertante quando viene visualizzato per la prima volta un Windows programma. Il codice è pieno di definizioni di tipi sconosciute, ad esempio **DWORD \_ PTR** e **LPRECT,** e le variabili hanno nomi come *hWnd* *e pwsz* (chiamata notazione ungherese). Vale la pena prendere un po' di tempo per apprendere alcune delle Windows di scrittura del codice.
 
-La maggior parte delle API di Windows è costituita da funzioni o interfacce di Component Object Model (COM). Poche API Windows sono fornite come classi C++. Un'eccezione significativa è GDI+, una delle API grafiche 2D.
+La maggior parte Windows API è costituita da funzioni o Component Object Model (COM). Pochissime Windows API vengono fornite come classi C++. Un'eccezione GDI+, una delle API grafiche 2D.
 
 ## <a name="typedefs"></a>Typedef
 
-Le intestazioni di Windows contengono numerosi typedef. Molti di questi vengono definiti nel file di intestazione WinDef. h. Di seguito sono riportati alcuni dei problemi che si verificheranno spesso.
+Le Windows contengono molti typedef. Molte di queste sono definite nel file di intestazione WinDef.h. Di seguito sono riportati alcuni esempi che si verificano spesso.
 
 ### <a name="integer-types"></a>Tipi integer
 
 
 
-| Tipo di dati     | Dimensione    | Con segno?  |
+| Tipo di dati     | Dimensione    | Firmato?  |
 |---------------|---------|----------|
 | **BYTE**      | 8 bit  | Senza segno |
-| **DWORD**     | 32 bit | Senza segno |
+| **Dword**     | 32 bit | Senza segno |
 | **INT32**     | 32 bit | Firmato   |
 | **INT64**     | 64 bit | Firmato   |
 | **LONG**      | 32 bit | Firmato   |
 | **LONGLONG**  | 64 bit | Firmato   |
 | **UINT32**    | 32 bit | Senza segno |
 | **UINT64**    | 64 bit | Senza segno |
-| **ULONG**     | 32 bit | Senza segno |
-| **ULONGLONG** | 64 bit | Senza segno |
+| **Ulong**     | 32 bit | Senza segno |
+| **Ulonglong** | 64 bit | Senza segno |
 | **WORD**      | 16 bit | Senza segno |
 
 
 
- 
+ 
 
-Come si può notare, in questi typedef esiste una certa quantità di ridondanza. Alcune di queste sovrapposizioni sono semplicemente dovute alla cronologia delle API di Windows. I tipi elencati di seguito hanno dimensioni fisse e le dimensioni sono le stesse nelle applicazioni a 32 bit e 64. Il tipo **DWORD** , ad esempio, è sempre di 32 bit.
+Come si può vedere, c'è una certa quantità di ridondanza in questi typedef. Alcune di queste sovrapposizioni sono semplicemente dovute alla cronologia delle API Windows. I tipi elencati hanno dimensioni fisse e le dimensioni sono le stesse nelle applicazioni a 32 bit e a 64 bit. Ad esempio, il **tipo DWORD** è sempre di 32 bit.
 
-### <a name="boolean-type"></a>Tipo Boolean
+### <a name="boolean-type"></a>Tipo booleano
 
-**Bool** è un typedef per un valore integer usato in un contesto booleano. Il file di intestazione WinDef. h definisce anche due valori da usare con **bool**.
+**BOOL** è un typedef per un valore integer usato in un contesto booleano. Il file di intestazione WinDef.h definisce anche due valori da usare con **BOOL**.
 
 
 ```C++
@@ -57,7 +57,7 @@ Come si può notare, in questi typedef esiste una certa quantità di ridondanza.
 
 
 
-Nonostante questa definizione di **true**, tuttavia, la maggior parte delle funzioni che restituiscono un tipo **bool** può restituire qualsiasi valore diverso da zero per indicare la verità booleana. Pertanto, è sempre necessario scrivere questo:
+Nonostante questa definizione di **TRUE,** tuttavia, la maggior parte delle funzioni che restituiscono un **tipo BOOL** può restituire qualsiasi valore diverso da zero per indicare la verità booleana. È pertanto consigliabile scrivere sempre questo codice:
 
 
 ```C++
@@ -71,7 +71,7 @@ if (result)
 
 
 
-e non:
+e non questo:
 
 
 ```C++
@@ -84,11 +84,11 @@ if (result == TRUE)
 
 
 
-Tenere presente che **bool** è un tipo integer e non è interscambiabile con il tipo C++ **bool** .
+Tenere presente che **BOOL** è un tipo integer e non è intercambiabile con il tipo **bool** C++.
 
 ### <a name="pointer-types"></a>Tipi di puntatore
 
-Windows definisce molti tipi di dati del form *puntatore a X*. In genere il prefisso *P-* o *LP-* nel nome. Ad esempio, **lpRect** è un puntatore a un oggetto [**Rect**](/previous-versions//dd162897(v=vs.85)), dove **Rect** è una struttura che descrive un rettangolo. Le seguenti dichiarazioni di variabili sono equivalenti.
+Windows definisce molti tipi di dati del formato *puntatore a X.* In genere hanno il prefisso *P-* *o LP-* nel nome. Ad esempio, **LPRECT** è un puntatore a [**rect**](/previous-versions//dd162897(v=vs.85)), dove **RECT** è una struttura che descrive un rettangolo. Le dichiarazioni di variabili seguenti sono equivalenti.
 
 
 ```C++
@@ -99,34 +99,34 @@ PRECT  rect;  // Also the same.
 
 
 
-In passato, *P* sta per "pointer" e *LP* sta per "Long pointer". I puntatori lunghi (detti anche *puntatori lontani*) sono retaggio da Windows a 16 bit, quando sono necessari per indirizzare gli intervalli di memoria all'esterno del segmento corrente. Il prefisso *LP* è stato mantenuto per semplificare la porta del codice a 16 bit in Windows a 32 bit. Attualmente non esiste alcuna distinzione: un puntatore è un puntatore.
+P è  l'acronimo di "pointer" e *LP* è l'acronimo di "long pointer". I puntatori long (detti anche *puntatori* far) sono un blocco da Windows a 16 bit, quando erano necessari per risolvere gli intervalli di memoria al di fuori del segmento corrente. Il *prefisso LP* è stato mantenuto per semplificare la porta del codice a 16 bit a Windows. Attualmente non esiste alcuna distinzione: un puntatore è un puntatore.
 
 ### <a name="pointer-precision-types"></a>Tipi di precisione del puntatore
 
-I tipi di dati riportati di seguito sono sempre le dimensioni di un puntatore, ovvero 32 bit a larghezza nelle applicazioni a 32 bit e 64 bit in larghezza nelle applicazioni a 64 bit. La dimensione viene determinata in fase di compilazione. Quando un'applicazione a 32 bit viene eseguita in Windows a 64 bit, questi tipi di dati sono ancora di 4 byte. Non è possibile eseguire un'applicazione a 64 bit su Windows a 32 bit, quindi non si verifica la situazione inversa.
+I tipi di dati seguenti sono sempre le dimensioni di un puntatore, ovvero 32 bit di larghezza nelle applicazioni a 32 bit e 64 bit di larghezza nelle applicazioni a 64 bit. Le dimensioni vengono determinate in fase di compilazione. Quando un'applicazione a 32 bit viene eseguita su Windows a 64 bit, questi tipi di dati sono ancora di 4 byte. Un'applicazione a 64 bit non può essere eseguita su Windows a 32 bit, quindi non si verifica la situazione inversa.
 
--   **\_ptr DWORD**
--   **\_ptr int**
--   **LONG \_ ptr**
--   **\_ptr ULONG**
--   **\_ptr uint**
+-   **DWORD \_ PTR**
+-   **INT \_ PTR**
+-   **LONG \_ PTR**
+-   **ULONG \_ PTR**
+-   **UINT \_ PTR**
 
-Questi tipi vengono utilizzati nelle situazioni in cui è possibile eseguire il cast di un numero intero a un puntatore. Vengono inoltre utilizzate per definire le variabili per l'aritmetica dei puntatori e per definire i contatori del ciclo che eseguono l'iterazione sull'intervallo completo di byte nei buffer di memoria. Più in generale, vengono visualizzati in posizioni in cui un valore esistente a 32 bit è stato espanso a 64 bit in Windows a 64 bit.
+Questi tipi vengono usati in situazioni in cui è possibile eseguire il cast di un integer a un puntatore. Vengono inoltre usate per definire variabili per l'aritmetica dei puntatori e per definire contatori del ciclo che esereranno l'intero intervallo di byte nei buffer di memoria. Più in generale, vengono visualizzati in posizioni in cui un valore a 32 bit esistente è stato espanso a 64 bit in Windows.
 
 ## <a name="hungarian-notation"></a>Notazione ungherese
 
-La *notazione ungherese* è la pratica di aggiungere i prefissi ai nomi delle variabili, per fornire informazioni aggiuntive sulla variabile. (L'inventore della notazione, Charles Simonyi, era ungherese, quindi il suo nome).
+*La notazione ungherese* è la pratica di aggiungere prefissi ai nomi delle variabili per fornire informazioni aggiuntive sulla variabile. (L'inventore della notazione, Charles Simonyi, era ungherese, da cui il nome).
 
-Nella sua forma originale, la notazione ungherese fornisce informazioni *semantiche* su una variabile, che indicano l'uso previsto. Ad esempio, un indice, *CB* indica una dimensione in byte ("count of bytes") e *i* numeri di riga e di colonna di *RW* e *col* mean. Questi prefissi sono progettati per evitare l'uso accidentale di una variabile nel contesto errato. Se, ad esempio, l'espressione è stata riguardata `rwPosition +  cbTable` , è possibile che venga aggiunto un numero di riga a una dimensione, che è quasi certamente un bug nel codice
+Nella forma originale, la notazione ungherese fornisce informazioni *semantiche* su una variabile, indicando l'uso previsto. Ad esempio, *i* indica un indice, *cb* indica una dimensione in byte ("numero di byte") e i numeri di riga e colonna *rw* e *col* mean. Questi prefissi sono progettati per evitare l'uso accidentale di una variabile nel contesto errato. Ad esempio, se è stata vista l'espressione , si saprebbe che un numero di riga viene aggiunto a una dimensione, che è quasi certamente un `rwPosition +  cbTable` bug nel codice
 
-Una forma più comune di notazione ungherese usa i prefissi per fornire informazioni sul *tipo* , ad esempio *DW* per **DWORD** e *w* per **Word**.
+Una forma più comune di notazione  ungherese usa i prefissi per fornire informazioni sul tipo, ad esempio *dw* per **DWORD** e *w* per **WORD**.
 
-Se si esegue una ricerca nel Web di "notazione ungherese", sono disponibili numerose opinioni sulla presenza di una notazione ungherese valida o negativa. Alcuni programmatori hanno un'intensa antipatia per la notazione ungherese. Altri lo trovano utile. Indipendentemente, molti degli esempi di codice su MSDN usano la notazione ungherese, ma non è necessario memorizzare i prefissi per comprendere il codice.
+Se si cerca sul Web la "notazione ungherese", si noteranno molte opinioni sul fatto che la notazione ungherese sia buona o negativa. Alcuni programmatori hanno un'intensa antipatia per la notazione ungherese. Altri lo trovano utile. Indipendentemente da ciò, molti esempi di codice in MSDN usano la notazione ungherese, ma non è necessario memorizzare i prefissi per comprendere il codice.
 
 ## <a name="next"></a>Prossima
 
 [Uso delle stringhe](working-with-strings.md)
 
- 
+ 
 
- 
+ 

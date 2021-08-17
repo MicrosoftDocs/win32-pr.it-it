@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentExistingLogFileIsNotContiguousException'
+description: 'Altre informazioni su: Classe EsentExistingLogFileIsNotContiguousException'
 title: Classe EsentExistingLogFileIsNotContiguousException
 TOCTitle: EsentExistingLogFileIsNotContiguousException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentExistingLogFileIsNotContiguousException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bacebf1ffadc1eb76208eb4bffdedaa7aa00e973
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c9179f3ee34e93ac84785f6232968ab82ec172578e08a4c90dcafc1fa29f40f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496820"
 ---
 # <a name="esentexistinglogfileisnotcontiguousexception-class"></a>Classe EsentExistingLogFileIsNotContiguousException
 
@@ -38,15 +38,15 @@ Classe di base per JET_err. Eccezioni ExistingLogFileIsNotContiguous.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentInconsistentException](./esentinconsistentexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentExistingLogFileIsNotContiguousException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInconsistentException](./esentinconsistentexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentExistingLogFileIsNotContiguousException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,4 +74,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -114,7 +114,7 @@ Per creare un'installazione firmata completamente verificata usando l'automazion
 [Creazione di un'installazione firmata completamente verificata tramite Automazione](authoring-a-fully-verified-signed-installation-using-automation.md)
 </dt> <dt>
 
-[Digital Signatures and Windows Installer (Firme digitali e Windows programma di installazione)](digital-signatures-and-windows-installer.md)
+[Digital Signatures and Windows Installer](digital-signatures-and-windows-installer.md)
 </dt> <dt>
 
 [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa)

@@ -1,6 +1,6 @@
 ---
 title: Opzione /newtlb
-description: Si tratta dell'impostazione predefinita per la scelta di un formato di libreria dei tipi.
+description: Questa è l'impostazione predefinita per la scelta di un formato di libreria dei tipi.
 ms.assetid: 460bc6bc-0958-42bd-92e0-838b019ec79d
 keywords:
 - Opzione /newtlb MIDL
@@ -21,19 +21,19 @@ ms.locfileid: "118644029"
 ---
 # <a name="newtlb-switch"></a>Opzione /newtlb
 
-Si tratta dell'impostazione predefinita per la scelta di un formato di libreria dei tipi.
+Questa è l'impostazione predefinita per la scelta di un formato di libreria dei tipi.
 
 ``` syntax
 midl /newtlb filename
 ```
 
-## <a name="switch-options"></a>Opzioni di cambio
+## <a name="switch-options"></a>Opzioni switch
 
 Questa opzione non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle versioni recenti di Windows questa opzione non esegue alcuna operazione. Nelle versioni non supportate di Windows, specificando questa opzione nella riga di comando MIDL verrà generato un errore.
+Nelle versioni recenti di Windows, questa opzione non esegue alcuna operazione. Nelle versioni non supportate di Windows, se si specifica questa opzione nella riga di comando MIDL verrà generato un errore.
 
 ## <a name="examples"></a>Esempio
 
@@ -45,7 +45,7 @@ Nelle versioni recenti di Windows questa opzione non esegue alcuna operazione. N
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/oldtlb**](-oldtlb.md)

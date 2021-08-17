@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d5e9fa8a49e86850d044216a3d95e3d4dd756fc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 398f0c11f748cb9dc4865cb1ccb94f24409bda104bbcb55ec00ffde62a17188b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810486"
 ---
-# <a name="defineplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo DefinePlannedSystem della classe MSVM \_ VirtualSystemManagementService
+# <a name="defineplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo DefinePlannedSystem della classe Msvm \_ VirtualSystemManagementService
 
 Definisce un sistema virtuale pianificato.
 
-L'input non completamente specificato può essere compilato con i valori predefiniti.
+L'input non completamente specificato può essere compilato con valori predefiniti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,35 +45,35 @@ uint32 DefinePlannedSystem(
 
 <dl> <dt>
 
-*SystemSettings* \[ in\]
+*SystemSettings* \[ Pollici\]
 </dt> <dd>
 
 Impostazioni di sistema per il sistema virtuale.
 
 </dd> <dt>
 
-*ResourceSettings* \[ in\]
+*ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
 Impostazioni delle risorse per il sistema virtuale.
 
 </dd> <dt>
 
-*ReferenceConfiguration* \[ in\]
+*ReferenceConfiguration* \[ Pollici\]
 </dt> <dd>
 
-[**\_ VirtualSystemSettingData CIM**](cim-virtualsystemsettingdata.md) contenente la configurazione di riferimento.
+Oggetto [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) contenente la configurazione di riferimento.
 
 </dd> <dt>
 
-*ResultingSystem* \[ out\]
+*ResultingSystem* \[ Cambio\]
 </dt> <dd>
 
-[**\_ ComputerSystem CIM**](cim-computersystem.md) che contiene il sistema risultante.
+Oggetto [**CIM \_ ComputerSystem**](cim-computersystem.md) contenente il sistema risultante.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -82,7 +82,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0 o 4096. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -92,25 +92,25 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -119,10 +119,10 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -131,7 +131,7 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: La proprietà FeatureState di sola lettura restituisce lo stato installato di una funzionalità.
 ms.assetid: a3d30296-191e-4446-b5b1-a92f8991926a
-title: Proprietà Installer.FeatureState
+title: Installer.FeatureState - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118631275"
 ---
-# <a name="installerfeaturestate-property"></a>Proprietà Installer.FeatureState
+# <a name="installerfeaturestate-property"></a>Installer.FeatureState - proprietà
 
 La proprietà **FeatureState** di sola lettura restituisce lo stato installato di una funzionalità.
 
@@ -46,7 +46,7 @@ Questa proprietà restituisce uno dei valori seguenti.
 | Valore                     | Descrizione                                      |
 |---------------------------|--------------------------------------------------|
 | msiInstallStateAbsent     | La funzionalità non è installata.                    |
-| msiInstallStateAdvertised | La funzionalità viene annunciata.                       |
+| msiInstallStateAdvertised | La funzionalità è annunciata.                       |
 | msiInstallStateLocal      | La funzionalità viene installata per l'esecuzione in locale.         |
 | msiInstallStateSource     | La funzionalità viene installata per l'esecuzione dall'origine.     |
 | msiInstallStateInvalidArg | Alla funzione è stato passato un parametro non valido. |
@@ -59,7 +59,7 @@ Questa proprietà restituisce uno dei valori seguenti.
 
  
 
-La **proprietà FeatureState** non convalida che la funzionalità sia accessibile.
+La **proprietà FeatureState** non verifica che la funzionalità sia accessibile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ La **proprietà FeatureState** non convalida che la funzionalità sia accessibil
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

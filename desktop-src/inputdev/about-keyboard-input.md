@@ -16,12 +16,12 @@ keywords:
 - messaggi di caratteri non inviati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de85794901be3fef37156bde29520039f85702b
-ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
+ms.openlocfilehash: eec8c9bf3c200ecf24ba3c114807a2bc6db1e0fbee44ef9c7a884c7059759fd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114373197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482936"
 ---
 # <a name="about-keyboard-input"></a>Informazioni sull'input da tastiera
 
@@ -47,17 +47,17 @@ Questa sezione contiene gli argomenti seguenti:
 
 ## <a name="keyboard-input-model"></a>Modello di input da tastiera
 
-Il sistema fornisce il supporto della tastiera indipendente dal dispositivo per le applicazioni installando un driver di dispositivo da tastiera appropriato per la tastiera corrente. Il sistema fornisce il supporto della tastiera indipendente dalla lingua usando il layout di tastiera specifico della lingua attualmente selezionato dall'utente o dall'applicazione. Il driver di dispositivo della tastiera riceve i codici di scansione dalla tastiera, che vengono inviati al layout di tastiera in cui vengono convertiti in messaggi e inseriti nelle finestre appropriate dell'applicazione.
+Il sistema fornisce il supporto della tastiera indipendente dal dispositivo per le applicazioni installando un driver di dispositivo da tastiera appropriato per la tastiera corrente. Il sistema fornisce il supporto della tastiera indipendente dalla lingua usando il layout di tastiera specifico della lingua attualmente selezionato dall'utente o dall'applicazione. Il driver di dispositivo della tastiera riceve i codici di digitalizzazione dalla tastiera, che vengono inviati al layout di tastiera in cui vengono convertiti in messaggi e inseriti nelle finestre appropriate dell'applicazione.
 
 A ogni tasto di una tastiera viene assegnato un valore univoco denominato codice di digitalizzazione, un identificatore dipendente dal dispositivo per il tasto della tastiera. Una tastiera genera due codici di digitalizzazione quando l'utente preme un tasto, uno quando preme il tasto e un altro quando l'utente rilascia il tasto.
 
-Il driver di dispositivo da tastiera interpreta un codice di scansione e lo converte (ne esegue il mapping) in un codice di tasto virtuale *,* un valore indipendente dal dispositivo definito dal sistema che identifica lo scopo di un tasto. Dopo aver traslato un codice di analisi, il layout di tastiera crea un messaggio che include il codice di analisi, il codice del tasto virtuale e altre informazioni sulla sequenza di tasti, quindi inserisce il messaggio nella coda di messaggi di sistema. Il sistema rimuove il messaggio dalla coda di messaggi di sistema e lo invia alla coda di messaggi del thread appropriato. Infine, il ciclo di messaggi del thread rimuove il messaggio e lo passa alla routine della finestra appropriata per l'elaborazione. La figura seguente illustra il modello di input da tastiera.
+Il driver di dispositivo da tastiera interpreta un codice di analisi e lo converte (ne esegue il mapping) in un codice di tasto virtuale *,* un valore indipendente dal dispositivo definito dal sistema che identifica lo scopo di un tasto. Dopo aver traslato un codice di digitalizzazione, il layout di tastiera crea un messaggio che include il codice di analisi, il codice del tasto virtuale e altre informazioni sulla sequenza di tasti, quindi inserisce il messaggio nella coda di messaggi di sistema. Il sistema rimuove il messaggio dalla coda di messaggi di sistema e lo invia alla coda di messaggi del thread appropriato. Infine, il ciclo di messaggi del thread rimuove il messaggio e lo passa alla routine della finestra appropriata per l'elaborazione. La figura seguente illustra il modello di input da tastiera.
 
 ![modello di elaborazione dell'input da tastiera](images/csinp-01.png)
 
 ## <a name="keyboard-focus-and-activation"></a>Stato attivo e attivazione della tastiera
 
-Il sistema invia i messaggi della tastiera alla coda di messaggi del thread in primo piano che ha creato la finestra con lo stato attivo. Lo *stato attivo della* tastiera è una proprietà temporanea di una finestra. Il sistema condivide la tastiera tra tutte le finestre sullo schermo spostando lo stato attivo della tastiera, in direzione dell'utente, da una finestra a un'altra. La finestra con lo stato attivo riceve (dalla coda di messaggi del thread che lo ha creato) tutti i messaggi della tastiera fino a quando lo stato attivo non viene modificato in un'altra finestra.
+Il sistema invia i messaggi della tastiera alla coda di messaggi del thread in primo piano che ha creato la finestra con lo stato attivo. Lo *stato attivo della* tastiera è una proprietà temporanea di una finestra. Il sistema condivide la tastiera tra tutte le finestre sullo schermo spostando lo stato attivo della tastiera, in direzione dell'utente, da una finestra a un'altra. La finestra con lo stato attivo riceve (dalla coda di messaggi del thread che l'ha creata) tutti i messaggi della tastiera fino a quando lo stato attivo non cambia in un'altra finestra.
 
 Un thread può chiamare la [**funzione GetFocus**](/windows/win32/api/winuser/nf-winuser-getfocus) per determinare quale delle finestre (se presenti) ha attualmente lo stato attivo della tastiera. Un thread può assegnare lo stato attivo della tastiera a una delle relative finestre chiamando la [**funzione SetFocus.**](/windows/win32/api/winuser/nf-winuser-setfocus) Quando lo stato attivo della tastiera cambia da una finestra a un'altra, il sistema invia un messaggio [**\_ KILLFOCUS WM**](wm-killfocus.md) alla finestra che ha perso lo stato attivo e quindi invia un messaggio [**WM \_ SETFOCUS**](wm-setfocus.md) alla finestra che ha raggiunto lo stato attivo.
 
@@ -73,7 +73,7 @@ Per impedire agli eventi di input della tastiera e del mouse di raggiungere le a
 
 Premendo un tasto, un messaggio [**WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) viene inserito nella coda di messaggi del thread collegata alla finestra con lo stato attivo della tastiera. Il rilascio di una chiave fa [**sì che un messaggio WM \_ KEYUP**](wm-keyup.md) o [**WM \_ SYSKEYUP**](wm-syskeyup.md) sia inserito nella coda.
 
-I messaggi di tasti up e key-down in genere si verificano a coppie, ma se l'utente tiene premuto un tasto per un tempo sufficiente per avviare la funzionalità di ripetizione automatica della tastiera, il sistema genera una serie di messaggi [**WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) in una riga. Genera quindi un singolo messaggio [**WM \_ KEYUP**](wm-keyup.md) o [**WM \_ SYSKEYUP**](wm-syskeyup.md) quando l'utente rilascia la chiave.
+I messaggi di tasti up e key-down vengono in genere eseguiti a coppie, ma se l'utente tiene premuto un tasto per un tempo sufficiente per avviare la funzionalità di ripetizione automatica della tastiera, il sistema genera una serie di messaggi [**WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) in una riga. Genera quindi un singolo messaggio [**WM \_ KEYUP**](wm-keyup.md) o [**WM \_ SYSKEYUP**](wm-syskeyup.md) quando l'utente rilascia la chiave.
 
 Questa sezione contiene gli argomenti seguenti:
 
@@ -87,9 +87,9 @@ Il sistema distingue tra le sequenze di tasti di sistema e le sequenze di tasti 
 
 Se la routine della finestra deve elaborare un messaggio di pressione dei tasti di sistema, assicurarsi che dopo l'elaborazione del messaggio la procedura lo passi alla [**funzione DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) In caso contrario, tutte le operazioni di sistema che coinvolgono il tasto ALT verranno disabilitate ogni volta che la finestra ha lo stato attivo. Ciò significa che l'utente non potrà accedere ai menu della finestra o al menu di sistema oppure usare la combinazione di tasti ALT+ESC o ALT+TAB per attivare un'altra finestra.
 
-I messaggi di pressione dei tasti di sistema vengono utilizzati principalmente dal sistema anziché da un'applicazione. Il sistema li usa per fornire l'interfaccia della tastiera predefinita ai menu e per consentire all'utente di controllare quale finestra è attiva. I messaggi di pressione dei tasti di sistema vengono generati quando l'utente digita un tasto in combinazione con ALT o quando l'utente digita e nessuna finestra ha lo stato attivo della tastiera (ad esempio, quando l'applicazione attiva è ridotta a icona). In questo caso, i messaggi vengono inviati alla coda di messaggi associata alla finestra attiva.
+I messaggi di pressione dei tasti di sistema vengono utilizzati principalmente dal sistema anziché da un'applicazione. Il sistema li usa per fornire l'interfaccia della tastiera predefinita ai menu e per consentire all'utente di controllare la finestra attiva. I messaggi di pressione dei tasti di sistema vengono generati quando l'utente digita un tasto in combinazione con ALT o quando l'utente digita e nessuna finestra ha lo stato attivo della tastiera (ad esempio, quando l'applicazione attiva è ridotta a icona). In questo caso, i messaggi vengono inviati alla coda di messaggi associata alla finestra attiva.
 
-I messaggi di pressione dei tasti non di sistema vengono utilizzati dalle finestre dell'applicazione; La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) non esegue alcuna operazione. Una routine di finestra può eliminare tutti i messaggi di sequenza di tasti non di sistema che non sono necessari.
+I messaggi di pressione dei tasti non di sistema vengono utilizzati dalle finestre dell'applicazione; La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) non esegue alcuna operazione. Una routine della finestra può eliminare tutti i messaggi di sequenza di tasti non di sistema non necessari.
 
 ### <a name="virtual-key-codes-described"></a>Virtual-Key descrizione dei codici
 
@@ -111,10 +111,10 @@ Un'applicazione può usare i valori seguenti per modificare i flag di pressione 
 |------------------|-----------------------------------------------------------------------------------|
 | **KF \_ ALTDOWN**  | Modifica il flag del tasto ALT, che indica se il tasto ALT è premuto.     |
 | **KF \_ DLGMODE**  | Modifica il flag della modalità finestra di dialogo, che indica se una finestra di dialogo è attiva. |
-| **KF \_ EXTENDED** | Modifica il flag della chiave estesa.                                                |
-| **KF \_ MENUMODE** | Modifica il flag della modalità menu, che indica se un menu è attivo.         |
+| **KF \_ EXTENDED** | Modifica il flag di chiave esteso.                                                |
+| **MODALITÀ MENU KF \_** | Modifica il flag della modalità menu, che indica se un menu è attivo.         |
 | **KF \_ REPEAT**   | Modifica il flag di stato della chiave precedente.                                          |
-| **KF \_ UP**       | Modifica il flag dello stato di transizione.                                            |
+| **KF \_ UP**       | Modifica il flag di stato della transizione.                                            |
 
 Codice di esempio:
 
@@ -145,52 +145,52 @@ break;
 
 ### <a name="repeat-count"></a>Ripeti conteggio
 
-È possibile controllare il numero di ripetizioni per determinare se un messaggio di sequenza di tasti rappresenta più di una sequenza di tasti. Il sistema incrementa il conteggio quando la tastiera genera messaggi [**WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) più velocemente di quanto un'applicazione possa elaborarli. Questo errore si verifica spesso quando l'utente tiene premuto un tasto per un tempo sufficiente per avviare la funzionalità di ripetizione automatica della tastiera. Invece di riempire la coda di messaggi di sistema con i messaggi key-down risultanti, il sistema combina i messaggi in un singolo messaggio key down e incrementa il numero di ripetizioni. Il rilascio di una chiave non può avviare la funzionalità di ripetizione automatica, pertanto il numero di ripetizioni per i messaggi [**WM \_ KEYUP**](wm-keyup.md) e [**WM \_ SYSKEYUP**](wm-syskeyup.md) è sempre impostato su 1.
+È possibile controllare il numero di ripetizioni per determinare se un messaggio di pressione di tasti rappresenta più di una sequenza di tasti. Il sistema incrementa il conteggio quando la tastiera genera messaggi [**WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) più velocemente di quanto un'applicazione possa elaborarli. Questo errore si verifica spesso quando l'utente tiene premuto un tasto per un tempo sufficiente per avviare la funzionalità di ripetizione automatica della tastiera. Invece di compilare la coda di messaggi di sistema con i messaggi di key down risultanti, il sistema combina i messaggi in un singolo messaggio key down e incrementa il numero di ripetizioni. Il rilascio di una chiave non può avviare la funzionalità di ripetizione automatica, quindi il numero di ripetizioni per i messaggi [**WM \_ KEYUP**](wm-keyup.md) e [**WM \_ SYSKEYUP**](wm-syskeyup.md) è sempre impostato su 1.
 
 ### <a name="scan-code"></a>Codice di analisi
 
 Il codice di analisi è il valore generato dall'hardware della tastiera quando l'utente preme un tasto. Si tratta di un valore dipendente dal dispositivo che identifica il tasto premuto, anziché il carattere rappresentato dal tasto. Un'applicazione in genere ignora i codici di analisi. Usa invece i codici dei tasti virtuali indipendenti dal dispositivo per interpretare i messaggi relativi alle sequenze di tasti.
 
-### <a name="extended-key-flag"></a>Extended-Key flag
+### <a name="extended-key-flag"></a>flag Extended-Key
 
-Il flag di tasti estesi indica se il messaggio di pressione dei tasti ha avuto origine da uno dei tasti aggiuntivi della tastiera avanzata. I tasti estesi sono costituiti da ALT e CTRL sul lato destro della tastiera; i tasti INS, DEL, HOME, END, PGGIS, PGGIUTO e i tasti di direzione nei cluster a sinistra del tastierino numerico; tasto BLOC NUM; il tasto INTERR (CTRL+PAUSE). il tasto PRINT SCRN; e i tasti di divisione (/) e INVIO nel tastierino numerico. Il flag della chiave estesa viene impostato se la chiave è una chiave estesa.
+Il flag di tasto esteso indica se il messaggio di pressione dei tasti ha avuto origine da uno dei tasti aggiuntivi sulla tastiera avanzata. I tasti estesi sono costituiti da ALT e CTRL sul lato destro della tastiera; i tasti INS, DEL, HOME, END, PGGIER, PGGI GIÙ e i tasti di direzione nei cluster a sinistra del tastierino numerico; tasto BLOC NUM; il tasto INTERR (CTRL+PAUSE). il tasto PRINT SCRN; e i tasti di divisione (/) e INVIO nel tastierino numerico. Il flag di chiave estesa viene impostato se la chiave è una chiave estesa.
 
 Se specificato, il codice di analisi è stato preceduto da un byte di prefisso con 0xE0 (224).
 
 ### <a name="context-code"></a>Codice di contesto
 
-Il codice di contesto indica se il tasto ALT era premuto quando è stato generato il messaggio di pressione del tasto. Il codice è 1 se il tasto ALT era premuto e 0 se era in alto.
+Il codice di contesto indica se il tasto ALT era premuto quando è stato generato il messaggio di pressione del tasto. Il codice è 1 se alt era premuto e 0 se era in alto.
 
 ### <a name="previous-key-state-flag"></a>Flag Key-State precedente
 
-Il flag di stato chiave precedente indica se il tasto che ha generato il messaggio di sequenza di tasti era in precedenza verso l'alto o verso il basso. È 1 se in precedenza la chiave era in stato in basso e 0 se la chiave era in precedenza in alto. È possibile usare questo flag per identificare i messaggi di sequenza di tasti generati dalla funzionalità di ripetizione automatica della tastiera. Questo flag è impostato su 1 per i messaggi di sequenza di tasti [**WM \_ KEYDOWN**](wm-keydown.md) e [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) generati dalla funzionalità di ripetizione automatica. È sempre impostato su 1 per i [**messaggi WM \_ KEYUP**](wm-keyup.md) [**e WM \_ SYSKEYUP.**](wm-syskeyup.md)
+Il flag di stato del tasto precedente indica se il tasto che ha generato il messaggio di sequenza di tasti in precedenza era attivo o in basso. È 1 se la chiave era in precedenza in giù e 0 se la chiave era in precedenza in alto. È possibile usare questo flag per identificare i messaggi di pressione dei tasti generati dalla funzionalità di ripetizione automatica della tastiera. Questo flag è impostato su 1 per i messaggi di sequenza di tasti [**WM \_ KEYDOWN**](wm-keydown.md) e [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) generati dalla funzionalità di ripetizione automatica. È sempre impostato su 1 per i [**messaggi WM \_ KEYUP**](wm-keyup.md) [**e WM \_ SYSKEYUP.**](wm-syskeyup.md)
 
-### <a name="transition-state-flag"></a>Transition-State flag
+### <a name="transition-state-flag"></a>flag Transition-State
 
-Il flag transition-state indica se la pressione di un tasto o il rilascio di un tasto ha generato il messaggio di sequenza di tasti. Questo flag è sempre impostato su 0 per i messaggi [**WM \_ KEYDOWN**](wm-keydown.md) e [**WM \_ SYSKEYDOWN.**](wm-syskeydown.md) È sempre impostato su 1 per i messaggi [**WM \_ KEYUP**](wm-keyup.md) e [**WM \_ SYSKEYUP.**](wm-syskeyup.md)
+Il flag transition-state indica se la pressione di un tasto o il rilascio di un tasto ha generato il messaggio di sequenza di tasti. Questo flag è sempre impostato su 0 per i messaggi [**WM \_ KEYDOWN**](wm-keydown.md) e [**\_ SYSKEYDOWN WM;**](wm-syskeydown.md) viene sempre impostato su 1 per i messaggi [**WM \_ KEYUP**](wm-keyup.md) e [**WM \_ SYSKEYUP.**](wm-syskeyup.md)
 
 ## <a name="character-messages"></a>Messaggi di tipo carattere
 
-I messaggi relativi alle sequenze di tasti forniscono molte informazioni sulle sequenze di tasti, ma non forniscono codici carattere per le sequenze di caratteri. Per recuperare i codici carattere, un'applicazione deve includere la [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) nel ciclo di messaggi del thread. **TranslateMessage** passa un [**messaggio WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) al layout di tastiera. Il layout esamina il codice del tasto virtuale del messaggio e, se corrisponde a un tasto carattere, fornisce l'equivalente del codice carattere (tenendo conto dello stato dei tasti MAIUSC e BLOC MAIUSC). Genera quindi un messaggio di tipo carattere che include il codice carattere e inserisce il messaggio nella parte superiore della coda di messaggi. L'iterazione successiva del ciclo di messaggi rimuove il messaggio di tipo carattere dalla coda e invia il messaggio alla routine della finestra appropriata.
+I messaggi relativi alle sequenze di tasti forniscono molte informazioni sulle sequenze di tasti, ma non forniscono codici carattere per le sequenze di caratteri. Per recuperare i codici carattere, un'applicazione deve includere la [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) nel ciclo di messaggi del thread. **TranslateMessage** passa un [**messaggio WM \_ KEYDOWN**](wm-keydown.md) o [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) al layout di tastiera. Il layout esamina il codice del tasto virtuale del messaggio e, se corrisponde a un tasto carattere, fornisce l'equivalente del codice carattere (tenendo conto dello stato dei tasti MAIUSC e BLOC MAIUSC). Genera quindi un messaggio di tipo carattere che include il codice carattere e inserisce il messaggio all'inizio della coda di messaggi. L'iterazione successiva del ciclo di messaggi rimuove il messaggio di tipo carattere dalla coda e invia il messaggio alla routine della finestra appropriata.
 
 Questa sezione contiene gli argomenti seguenti:
 
--   [Messaggi di caratteri non di sistema](#nonsystem-character-messages)
--   [Messaggi con caratteri non inviati](#dead-character-messages)
+-   [Messaggi di tipo carattere non di sistema](#nonsystem-character-messages)
+-   [Messaggi di caratteri non inviati](#dead-character-messages)
 
-### <a name="nonsystem-character-messages"></a>Messaggi di caratteri non di sistema
+### <a name="nonsystem-character-messages"></a>Messaggi di tipo carattere non di sistema
 
-Una routine finestra può ricevere i seguenti messaggi di carattere: [**WM \_ CHAR,**](wm-char.md) [**WM \_ DEADCHAR,**](wm-deadchar.md) [**WM \_ SYSCHAR,**](/windows/desktop/menurc/wm-syschar) [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md)e [**WM \_ UNICHAR.**](wm-unichar.md) La [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera un **messaggio WM \_ CHAR** o **WM \_ DEADCHAR** quando elabora un [**messaggio WM \_ KEYDOWN.**](wm-keydown.md) Analogamente, genera un messaggio **\_ SYSCHAR o** **\_ SYSDEADCHAR WM** quando elabora un [**messaggio \_ SYSKEYDOWN WM.**](wm-syskeydown.md)
+Una routine di finestra può ricevere i messaggi di carattere seguenti: [**WM \_ CHAR,**](wm-char.md) [**WM \_ DEADCHAR,**](wm-deadchar.md) [**WM \_ SYSCHAR,**](/windows/desktop/menurc/wm-syschar) [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md)e [**WM \_ UNICHAR.**](wm-unichar.md) La [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera un **messaggio WM \_ CHAR** o **WM \_ DEADCHAR** quando elabora un [**messaggio WM \_ KEYDOWN.**](wm-keydown.md) Analogamente, genera un messaggio **WM \_ SYSCHAR** o **WM \_ SYSDEADCHAR** quando elabora un [**messaggio \_ SYSKEYDOWN WM.**](wm-syskeydown.md)
 
-Un'applicazione che elabora l'input da tastiera ignora in genere tutti i messaggi, ad esempio [**WM \_ CHAR**](wm-char.md) e [**WM \_ UNICHAR,**](wm-unichar.md) passando tutti gli altri messaggi alla [**funzione DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Si noti **che WM \_ CHAR** usa il formato di trasformazione Unicode (UTF) a 16 bit, mentre **WM \_ UNICHAR** usa UTF-32. Il sistema usa i [**messaggi WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar) e [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) per implementare i comandi di menu.
+Un'applicazione che elabora l'input da tastiera ignora in genere tutti i messaggi, ad esempio [**WM \_ CHAR**](wm-char.md) e [**WM \_ UNICHAR,**](wm-unichar.md) passando qualsiasi altro messaggio alla [**funzione DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Si noti **che WM \_ CHAR** usa UTF (Unicode Transformation Format) a 16 bit, mentre **WM \_ UNICHAR** usa UTF-32. Il sistema usa i [**messaggi WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar) e [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) per implementare i comandi di menu.
 
-Il **parametro wParam** di tutti i messaggi di tipo carattere contiene il codice carattere del tasto carattere premuto. Il valore del codice carattere dipende dalla classe finestra della finestra che riceve il messaggio. Se la versione Unicode della [**funzione RegisterClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa) è stata usata per registrare la classe della finestra, il sistema fornisce caratteri Unicode a tutte le finestre di tale classe. In caso contrario, il sistema fornisce codici di caratteri ASCII. Per altre informazioni, vedere [Unicode e set di caratteri](/windows/desktop/Intl/unicode-and-character-sets).
+Il **parametro wParam** di tutti i messaggi di tipo carattere contiene il codice carattere del tasto carattere premuto. Il valore del codice carattere dipende dalla classe della finestra della finestra che riceve il messaggio. Se la versione Unicode della [**funzione RegisterClass**](/windows/desktop/api/winuser/nf-winuser-registerclassa) è stata usata per registrare la classe della finestra, il sistema fornisce caratteri Unicode a tutte le finestre di tale classe. In caso contrario, il sistema fornisce codici carattere ASCII. Per altre informazioni, vedere [Unicode e set di caratteri.](/windows/desktop/Intl/unicode-and-character-sets)
 
-Il contenuto del **parametro lParam** di un messaggio di tipo carattere è identico al contenuto del **parametro lParam** del messaggio key-down convertito per produrre il messaggio di tipo carattere. Per informazioni, vedere [Flag dei messaggi di sequenza di tasti](#keystroke-message-flags).
+Il contenuto del **parametro lParam** di un messaggio di tipo carattere è identico al contenuto del parametro **lParam** del messaggio di tasti di scelta che è stato convertito per produrre il messaggio di tipo carattere. Per informazioni, vedere [Flag di messaggi di sequenza di tasti.](#keystroke-message-flags)
 
 ### <a name="dead-character-messages"></a>Dead-Character messaggi
 
-Alcune tastiere non in lingua inglese contengono tasti di carattere che non dovrebbero produrre caratteri da soli. Vengono invece usati per aggiungere un diacritico al carattere prodotto dalla sequenza di tasti successiva. Queste chiavi sono denominate *chiavi non disponibili.* Il tasto circonflesso su una tastiera tedesca è un esempio di tasto non attivo. Per immettere il carattere costituito da una "o" con un circonflesso, un utente tedesco digita la chiave circumflex seguita dal tasto "o". La finestra con lo stato attivo della tastiera riceverà la sequenza di messaggi seguente:
+Alcune tastiere non in lingua inglese contengono tasti di caratteri che non dovrebbero produrre caratteri da soli. Vengono invece usati per aggiungere un diacritico al carattere prodotto dalla sequenza di tasti successiva. Queste chiavi sono denominate *chiavi non disponibili.* Il tasto circonflesso su una tastiera tedesca è un esempio di tasto non attivo. Per immettere il carattere costituito da una "o" con una circonflessa, un utente tedesco digitare la chiave circonflessa seguita dal tasto "o". La finestra con lo stato attivo riceverà la sequenza di messaggi seguente:
 
 1.  [**WM \_ KEYDOWN**](wm-keydown.md)
 2.  [**WM \_ DEADCHAR**](wm-deadchar.md)
@@ -199,23 +199,23 @@ Alcune tastiere non in lingua inglese contengono tasti di carattere che non dovr
 5.  [**WM \_ CHAR**](wm-char.md)
 6.  [**WM \_ KEYUP**](wm-keyup.md)
 
-[**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera il [**messaggio \_ WM DEADCHAR**](wm-deadchar.md) quando elabora il [**messaggio WM \_ KEYDOWN**](wm-keydown.md) da una chiave non elaborata. Anche se il *parametro wParam* del messaggio **WM \_ DEADCHAR** contiene il codice carattere del diacritico per la chiave non trovata, un'applicazione in genere ignora il messaggio. Elabora invece il messaggio [**WM \_ CHAR**](wm-char.md) generato dalla sequenza di tasti successiva. Il *parametro wParam* del **messaggio WM \_ CHAR** contiene il codice carattere della lettera con il diacritico. Se la sequenza di tasti successiva genera un carattere che non può essere combinato con un diacritico, il sistema genera due **messaggi WM \_ CHAR.** Il *parametro wParam* del primo contiene il codice carattere del diacritico. il *parametro wParam* del secondo contiene il codice carattere del tasto carattere successivo.
+[**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera il [**messaggio \_ DEADCHAR WM**](wm-deadchar.md) quando elabora il [**messaggio WM \_ KEYDOWN**](wm-keydown.md) da un tasto non elaborato. Anche se *il parametro wParam* del messaggio **WM \_ DEADCHAR** contiene il codice carattere del diacritico per la chiave non visualizzata, in genere il messaggio viene ignorato da un'applicazione. Elabora invece il messaggio [**WM \_ CHAR**](wm-char.md) generato dalla sequenza di tasti successiva. Il *parametro wParam* del **messaggio WM \_ CHAR** contiene il codice carattere della lettera con il carattere diacritico. Se la sequenza di tasti successiva genera un carattere che non può essere combinato con un diacritico, il sistema genera due **messaggi WM \_ CHAR.** Il *parametro wParam* del primo contiene il codice carattere del diacritico; Il *parametro wParam* del secondo contiene il codice carattere della chiave di caratteri successiva.
 
-La [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera il messaggio [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) quando elabora il messaggio [**WM \_ SYSKEYDOWN**](wm-syskeydown.md) da un tasto non funzionante di sistema (un tasto non funzionante premuto in combinazione con alt). Un'applicazione in genere ignora **il messaggio \_ WM SYSDEADCHAR.**
+La [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) genera il messaggio [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md) quando elabora il messaggio [**\_ SYSKEYDOWN WM**](wm-syskeydown.md) da un tasto di scelta rapida del sistema (un tasto non disponibile premuto in combinazione con alt). Un'applicazione in genere ignora **il messaggio \_ WM SYSDEADCHAR.**
 
 ## <a name="key-status"></a>Stato chiave
 
-Durante l'elaborazione di un messaggio da tastiera, un'applicazione potrebbe dover determinare lo stato di un altro tasto oltre a quello che ha generato il messaggio corrente. Ad esempio, un'applicazione di elaborazione di testo che consente all'utente di premere MAIUSC+FINE per selezionare un blocco di testo deve controllare lo stato del tasto MAIUSC ogni volta che riceve un messaggio di pressione del tasto FINE. L'applicazione può usare [**la funzione GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) per determinare lo stato di una chiave virtuale al momento della generazione del messaggio corrente. può usare la [**funzione GetAsyncKeyState**](/windows/win32/api/winuser/nf-winuser-getasynckeystate) per recuperare lo stato corrente di una chiave virtuale.
+Durante l'elaborazione di un messaggio della tastiera, un'applicazione potrebbe dover determinare lo stato di un altro tasto oltre a quello che ha generato il messaggio corrente. Ad esempio, un'applicazione di elaborazione di testo che consente all'utente di premere MAIUSC+FINE per selezionare un blocco di testo deve controllare lo stato del tasto MAIUSC ogni volta che riceve un messaggio di pressione di tasti dal tasto FINE. L'applicazione può usare [**la funzione GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) per determinare lo stato di una chiave virtuale al momento della generazione del messaggio corrente. può usare la [**funzione GetAsyncKeyState**](/windows/win32/api/winuser/nf-winuser-getasynckeystate) per recuperare lo stato corrente di una chiave virtuale.
 
-Il layout di tastiera mantiene un elenco di nomi. Il nome di una chiave che produce un singolo carattere è lo stesso del carattere prodotto dalla chiave. Il nome di un tasto non carattere, ad esempio TAB e INVIO, viene archiviato come stringa di caratteri. Un'applicazione può recuperare il nome di qualsiasi chiave dal driver di dispositivo chiamando la [**funzione GetKeyNameText.**](/windows/win32/api/winuser/nf-winuser-getkeynametexta)
+Il layout di tastiera gestisce un elenco di nomi. Il nome di una chiave che produce un singolo carattere è lo stesso del carattere prodotto dalla chiave. Il nome di un tasto non carattere, ad esempio TAB e INVIO, viene archiviato come stringa di caratteri. Un'applicazione può recuperare il nome di qualsiasi chiave dal driver di dispositivo chiamando la [**funzione GetKeyNameText.**](/windows/win32/api/winuser/nf-winuser-getkeynametexta)
 
-## <a name="keystroke-and-character-translations"></a>Combinazione di tasti e conversioni di caratteri
+## <a name="keystroke-and-character-translations"></a>Sequenze di tasti e traduzioni di caratteri
 
-Il sistema include diverse funzioni per scopi speciali che traslano codici di analisi, codici carattere e codici chiave virtuale forniti da vari messaggi di sequenza di tasti. Queste funzioni includono [**MapVirtualKey,**](/windows/win32/api/winuser/nf-winuser-mapvirtualkeya) [**ToAscii,**](/windows/win32/api/winuser/nf-winuser-toascii) [**ToUnicode**](/windows/win32/api/winuser/nf-winuser-tounicode)e [**VkKeyScan.**](/windows/win32/api/winuser/nf-winuser-vkkeyscana)
+Il sistema include diverse funzioni speciali per la conversione di codici di analisi, codici di caratteri e codici di tasti virtuali forniti da vari messaggi di sequenza di tasti. Queste funzioni includono [**MapVirtualKey,**](/windows/win32/api/winuser/nf-winuser-mapvirtualkeya) [**ToAscii,**](/windows/win32/api/winuser/nf-winuser-toascii) [**ToUnicode**](/windows/win32/api/winuser/nf-winuser-tounicode)e [**VkKeyScan.**](/windows/win32/api/winuser/nf-winuser-vkkeyscana)
 
 Microsoft Rich Edit 3.0 supporta anche [l'IME HexToUnicode,](/windows/desktop/Intl/hextounicode-ime)che consente a un utente di eseguire la conversione tra caratteri esadecimali e Unicode usando i tasti di scelta rapida. Ciò significa che quando Microsoft Rich Edit 3.0 viene incorporato in un'applicazione, l'applicazione erediterà le funzionalità dell'IME HexToUnicode.
 
-## <a name="hot-key-support"></a>Hot-Key supporto tecnico
+## <a name="hot-key-support"></a>Hot-Key supporto
 
 Un *tasto di* scelta rapida è una combinazione di tasti che genera un messaggio WM [**\_ HOTKEY,**](wm-hotkey.md) un messaggio che il sistema inserisce nella parte superiore della coda di messaggi di un thread, ignorando tutti i messaggi esistenti nella coda. Le applicazioni usano i tasti di scelta rapida per ottenere l'input della tastiera ad alta priorità dall'utente. Ad esempio, definendo un tasto di scelta rapida costituito dalla combinazione di tasti CTRL+C, un'applicazione può consentire all'utente di annullare un'operazione di lunga durata.
 

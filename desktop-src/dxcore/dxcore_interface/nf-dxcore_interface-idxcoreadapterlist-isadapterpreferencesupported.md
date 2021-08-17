@@ -15,7 +15,7 @@ ms.locfileid: "118502582"
 
 ## <a name="description"></a>Descrizione
 
-Determina se un [valore DXCoreAdapterPreference](./ne-dxcore_interface-dxcoreadapterpreference.md) specificato è compreso dal sistema operativo corrente. È possibile chiamare **IsAdapterPreferenceSupported prima** di chiamare [IDXCoreAdapterList::Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md).
+Determina se un [valore DXCoreAdapterPreference](./ne-dxcore_interface-dxcoreadapterpreference.md) specificato viene compreso dal sistema operativo corrente. È possibile chiamare **IsAdapterPreferenceSupported prima** di chiamare [IDXCoreAdapterList::Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md).
 
 ## <a name="syntax"></a>Sintassi
 

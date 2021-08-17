@@ -1,6 +1,6 @@
 ---
 title: AuxUserType
-description: Specifica il nome visualizzato breve e i nomi delle applicazioni di un'applicazione.
+description: Specifica il nome visualizzato breve di un'applicazione e i nomi delle applicazioni.
 ms.assetid: 3367eb68-01f4-4cb9-b1d0-27554c28b68d
 keywords:
 - AuxUserType chiave del Registro di sistema COM
@@ -15,7 +15,7 @@ ms.locfileid: "118550721"
 ---
 # <a name="auxusertype"></a>AuxUserType
 
-Specifica il nome visualizzato breve e i nomi delle applicazioni di un'applicazione.
+Specifica il nome visualizzato breve di un'applicazione e i nomi delle applicazioni.
 
 ## <a name="registry-entry"></a>Voce del Registro di sistema
 
@@ -29,9 +29,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Commenti
 
-La lunghezza massima consigliata per *ShortDisplayName* è di 15 caratteri. Questo nome viene usato nei menu, inclusi i menu a comparsa.
+La lunghezza massima consigliata per *ShortDisplayName* è di 15 caratteri. Questo nome viene usato nei menu, inclusi i menu popup.
 
-*ApplicationName* deve contenere il nome effettivo dell'applicazione, ad esempio "Acme Draw 2.0". Questo nome viene usato nel **campo Risultati** della finestra **di dialogo** Incolla speciale .
+*ApplicationName* deve contenere il nome effettivo dell'applicazione, ad esempio "Acme Draw 2.0". Questo nome viene usato nel **campo Risultati** della finestra **di dialogo** Incolla speciale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentCannotDeleteTemplateTableException'
+description: Altre informazioni sulla classe EsentCannotDeleteTemplateTableException
 title: Classe EsentCannotDeleteTemplateTableException
 TOCTitle: EsentCannotDeleteTemplateTableException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentCannotDeleteTemplateTableException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ea27be91ddf76bf12078074782ec1f5aba9f2570
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95ae73f99d22f42e844dad2d0fe752d901c651456fa3f45b6668cb291b43d0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118497602"
 ---
 # <a name="esentcannotdeletetemplatetableexception-class"></a>Classe EsentCannotDeleteTemplateTableException
 
@@ -38,15 +38,15 @@ Classe di base per JET_err. Eccezioni CannotDeleteTemplateTable.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentCannotDeleteTemplateTableException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentCannotDeleteTemplateTableException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,4 +74,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentCannotDeleteTemplateTableException](./esentcannotdeletetemplatetableexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

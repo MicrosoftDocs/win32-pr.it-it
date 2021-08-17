@@ -121,7 +121,7 @@ Ora del giorno in cui si applica questo criterio.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -129,7 +129,7 @@ Ora del giorno in cui si applica questo criterio.
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ Ora del giorno in cui si applica questo criterio.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -150,7 +150,7 @@ Ora del giorno in cui si applica questo criterio.
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ Ora del giorno in cui si applica questo criterio.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| A valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -171,7 +171,7 @@ Ora del giorno in cui si applica questo criterio.
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

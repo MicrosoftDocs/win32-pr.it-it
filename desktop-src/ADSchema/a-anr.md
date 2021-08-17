@@ -59,7 +59,7 @@ Attributo di risoluzione dei nomi ambiguo da usare per la scelta tra oggetti.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
@@ -80,7 +80,7 @@ Attributo di risoluzione dei nomi ambiguo da usare per la scelta tra oggetti.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
@@ -101,7 +101,7 @@ Attributo di risoluzione dei nomi ambiguo da usare per la scelta tra oggetti.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| A valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |

@@ -1,6 +1,6 @@
 ---
 title: Codice di esempio per l'impostazione delle autorizzazioni per un gruppo di proprietà
-description: Negli esempi di codice C e C++ seguenti viene creata una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà Informazioni personali degli oggetti utente al fiduciare specificato.
+description: Gli esempi di codice C e C++ seguenti creano una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà Informazioni personali degli oggetti utente al fiduciare specificato.
 ms.assetid: 46d53b41-02eb-4830-b625-2d9ffa21a312
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118190099"
 ---
 # <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a>Codice di esempio per l'impostazione delle autorizzazioni per un gruppo di proprietà
 
-Negli esempi di codice C e C++ seguenti viene creata una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà [**Informazioni**](/windows/desktop/ADSchema/r-personal-information) personali degli oggetti utente al fiduciare specificato.
+Gli esempi di codice C e C++ seguenti creano una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà [**Informazioni**](/windows/desktop/ADSchema/r-personal-information) personali degli oggetti utente al fiduciare specificato.
 
 
 ```C++

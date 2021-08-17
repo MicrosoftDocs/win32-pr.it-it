@@ -1,19 +1,19 @@
 ---
-description: Obsoleta. Elenco di proprietà da visualizzare nel pannello dei dettagli di XP WebView.
+description: Obsoleta. Elenco di proprietà da visualizzare nel pannello dei dettagli della visualizzazione Web XP.
 ms.assetid: 94f585bf-fd2f-4f71-bf06-6a39d1c4beb2
-title: System. Propin. XPDetailsPanel
+title: System.PropList.XPDetailsPanel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b05b332a87ecb56e63852fecd7456197ab8e21c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b6c1771b7580085bf36e28f1e844605bff73a66fb13a162254be57528c67312
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464944"
 ---
-# <a name="systemproplistxpdetailspanel"></a>System. Propin. XPDetailsPanel
+# <a name="systemproplistxpdetailspanel"></a>System.PropList.XPDetailsPanel
 
-Obsoleta. Elenco di proprietà da visualizzare nel pannello dei dettagli di XP WebView.
+Obsoleta. Elenco di proprietà da visualizzare nel pannello dei dettagli della visualizzazione Web XP.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

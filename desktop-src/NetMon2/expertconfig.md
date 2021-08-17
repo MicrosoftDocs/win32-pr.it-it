@@ -65,7 +65,7 @@ typedef struct
 typedef TESTEXPERTCONFIG* LPTESTEXPERTCONFIG;
 ```
 
-Si noti **che RawConfigLength** garantisce il corretto funzionamento della sovrimpressione. Quando si usano i dati, il codice potrebbe essere simile al seguente:
+Si noti **che RawConfigLength** garantisce che la sovrapposizione funzioni correttamente. Quando si usano i dati, il codice potrebbe essere simile al seguente:
 
 ``` syntax
 BOOL WINAPI Configure( 

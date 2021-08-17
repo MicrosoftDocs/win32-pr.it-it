@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646783"
 ---
-# <a name="cim_switchservice-class"></a>Classe \_ SwitchService CIM
+# <a name="cim_switchservice-class"></a>Classe \_ CiM SwitchService
 
 Rappresenta un servizio switch.
 
@@ -43,33 +43,33 @@ class CIM_SwitchService : CIM_ForwardingService
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM SwitchService** ha questi tipi di membri:
+La **classe CIM \_ SwitchService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CiM SwitchService** ha queste proprietà.
+La **classe CIM \_ SwitchService** ha queste proprietà.
 
 <dl> <dt>
 
 **BridgeAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseBridgeAddress"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseBridgeAddress"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType ")**
 </dt> </dl>
 
 Indirizzo del servizio switch, che è una parte dell'identificatore univoco del servizio.
 
 </dd> <dt>
 
-**Tipo di indirizzo bridge**
+**BridgeAddressType**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -78,7 +78,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddress**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddress ")**
 </dt> </dl>
 
 Formato di indirizzamento usato per il bridge e la **proprietà BridgeAddress.**
@@ -122,7 +122,7 @@ Formato di indirizzamento usato per il bridge e la **proprietà BridgeAddress.**
 
 </dd> <dt>
 
-**Tipo di bridge**
+**BridgeType**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint8**

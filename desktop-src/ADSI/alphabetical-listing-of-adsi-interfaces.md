@@ -4,15 +4,15 @@ description: La tabella seguente contiene un elenco alfabetico di tutte le inter
 ms.assetid: 23661784-e303-4e05-a358-8e00fb05b959
 ms.tgt_platform: multiple
 keywords:
-- Elenco alfabetico di ADSI Interfaces ADSI
+- Elenco alfabetico delle interfacce ADSI ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 760d8b39547248ca1ebaed04a07a8dff499a3a9f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9d101357760026c42ae0969832691a2d557c64363220fe662565c0dd3923ad40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104517097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118692690"
 ---
 # <a name="alphabetical-listing-of-adsi-interfaces"></a>Elenco alfabetico delle interfacce ADSI
 
@@ -20,9 +20,9 @@ La tabella seguente contiene un elenco alfabetico di tutte le interfacce ADSI.
 
 
 
-| Interfaccia                                                      | Categoria/Descrizione        |
+| Interfaccia                                                      | Categoria/descrizione        |
 |----------------------------------------------------------------|-----------------------------|
-| [**IADs**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Core                        |
+| [**IAD**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Core                        |
 | [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)       | Sicurezza                    |
 | [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)         | Sicurezza                    |
 | [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl)                                     | Tipo di dati                   |
@@ -31,7 +31,7 @@ La tabella seguente contiene un elenco alfabetico di tutte le interfacce ADSI.
 | **IADsAggregator**                                             | Obsoleti                    |
 | [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink)                           | Tipo di dati                   |
 | [**IADsCaseIgnoreList**](/windows/desktop/api/Iads/nn-iads-iadscaseignorelist)               | Tipo di dati                   |
-| [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | SCHEMA                      |
+| [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | Schema                      |
 | [**IADsCollection**](/windows/desktop/api/Iads/nn-iads-iadscollection)                       | Oggetto persistente           |
 | [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                           | Oggetto persistente           |
 | [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)       | Oggetto dinamico              |
@@ -66,7 +66,7 @@ La tabella seguente contiene un elenco alfabetico di tutte le interfacce ADSI.
 | [**IADsPrintJobOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations)       | Oggetto dinamico              |
 | [**IADsPrintQueue**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)                       | Oggetto persistente           |
 | [**IADsPrintQueueOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)   | Oggetto dinamico              |
-| [**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty)                           | SCHEMA                      |
+| [**Proprietà IADs**](/windows/desktop/api/Iads/nn-iads-iadsproperty)                           | Schema                      |
 | [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)                 | Cache delle proprietà              |
 | [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist)                   | Cache delle proprietà              |
 | [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)                 | Cache delle proprietà              |
@@ -77,9 +77,9 @@ La tabella seguente contiene un elenco alfabetico di tutte le interfacce ADSI.
 | [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice)                             | Oggetto persistente           |
 | [**IADsServiceOperations**](/windows/desktop/api/Iads/nn-iads-iadsserviceoperations)         | Oggetto dinamico              |
 | [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)                             | Oggetto dinamico              |
-| [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)                               | SCHEMA                      |
+| [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)                               | Schema                      |
 | [**IADsTimestamp**](/windows/desktop/api/Iads/nn-iads-iadstimestamp)                         | Tipo di dati                   |
-| [**IADsTsUserEx**](/windows/desktop/api/tsuserex/nn-tsuserex-iadstsuserex)                      | Dati utente Servizi terminal |
+| [**IADsTsUserEx**](/windows/desktop/api/tsuserex/nn-tsuserex-iadstsuserex)                      | Dati utente di Servizi terminal |
 | [**IADsTypedName**](/windows/desktop/api/Iads/nn-iads-iadstypedname)                         | Tipo di dati                   |
 | [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser)                                   | Oggetto persistente           |
 | [**IADsWinNTSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadswinntsysteminfo)             | Utilità                     |
@@ -91,8 +91,8 @@ La tabella seguente contiene un elenco alfabetico di tutte le interfacce ADSI.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

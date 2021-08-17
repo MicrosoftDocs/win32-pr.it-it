@@ -25,12 +25,12 @@ ms.locfileid: "118536820"
 # <a name="d3dx11compilefrommemory-function"></a>Funzione D3DX11CompileFromMemory
 
 > [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store.
 
  
 
 > [!Note]  
-> Invece di usare questa funzione, è consigliabile eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o una delle API di compilazione HLSL, come l'API [**D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
+> Invece di usare questa funzione, è consigliabile eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o usare una delle API di compilazione HLSL, ad esempio [**l'API D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
 
  
 

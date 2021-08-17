@@ -3,7 +3,7 @@ title: XTYP_ADVSTART transazione (Ddeml.h)
 description: Un client usa la transazione ADVSTART XTYP \_ per stabilire un ciclo di consulenza con un server.
 ms.assetid: 8911e722-5656-4ca6-8b0a-6bdf8281611a
 keywords:
-- XTYP_ADVSTART dati della transazione Exchange
+- XTYP_ADVSTART di dati della Exchange
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118544760"
 ---
 # <a name="xtyp_advstart-transaction"></a>Transazione \_ ADVSTART XTYP
 
-Un client usa la **transazione \_ ADVSTART XTYP** per stabilire un ciclo di consulenza con un server. Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ ADVSTART** come parametro *wType* della funzione [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+Un client usa la **transazione \_ ADVSTART XTYP** per stabilire un ciclo di consulenza con un server. Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione quando un client specifica **XTYP \_ ADVSTART** come parametro *wType* della [**funzione DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -95,11 +95,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Una funzione di callback del server deve restituire **TRUE** per consentire un ciclo advise nella coppia nome argomento e nome elemento specificata oppure **FALSE** per negare il ciclo advise. Se la funzione di callback restituisce **TRUE,** qualsiasi chiamata successiva alla funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) da parte del server nello stesso nome di argomento e nella stessa coppia di nomi di elemento determina l'invio di transazioni [**\_ ADVREQ XTYP**](xtyp-advreq.md) al server.
+Una funzione di callback del server deve restituire **TRUE** per consentire un ciclo di consulenza sulla coppia nome argomento e nome elemento specificata oppure **FALSE** per negare il ciclo di consulenza. Se la funzione di callback restituisce **TRUE,** qualsiasi chiamata successiva alla funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) da parte del server nella stessa coppia nome argomento e nome elemento fa sì che il sistema invii le transazioni [**\_ ADVREQ XTYP**](xtyp-advreq.md) al server.
 
 ## <a name="remarks"></a>Commenti
 
-Se un client richiede un ciclo advise per un nome di argomento, un nome di elemento e un formato dati per un ciclo di consulenza già stabilito, la libreria di gestione Dynamic Data Exchange (DDEML) non crea un ciclo di consulenza duplicato, ma modifica i flag del ciclo di consulenza (**XTYPF \_ ACKREQ** e **XTYPF \_ NODATA)** in modo che corrispondano alla richiesta più recente.
+Se un client richiede un ciclo di consulenza per un nome di argomento, un nome di elemento e un formato di dati per un ciclo di consulenza già stabilito, la libreria di gestione di Dynamic Data Exchange (DDEML) non crea un ciclo di consulenza duplicato, ma modifica i flag di ciclo di consulenza (**XTYPF \_ ACKREQ** e **XTYPF \_ NODATA)** in modo che corrispondano alla richiesta più recente.
 
 Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ FAIL \_ ADVISES** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 

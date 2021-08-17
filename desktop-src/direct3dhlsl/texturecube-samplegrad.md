@@ -1,9 +1,9 @@
 ---
-title: Metodi textureCube::TextureCube SampleGrad
-description: Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. | Metodi textureCube::TextureCube SampleGrad
+title: Metodi TextureCube::TextureCube SampleGrad
+description: Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. | Metodi TextureCube::TextureCube SampleGrad
 ms.assetid: 710A3049-53EF-4166-ABE3-CFA1DA90FB71
 keywords:
-- Metodi Di EsempioGrad HLSL
+- Metodi SampleGrad HLSL
 topic_type:
 - apiref
 api_type:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118505459"
 ---
-# <a name="texturecubesamplegrad-methods"></a>Metodi di TextureCube::SampleGrad
+# <a name="texturecubesamplegrad-methods"></a>Metodi TextureCube::SampleGrad
 
 Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.
 
@@ -29,9 +29,9 @@ Campionare una trama usando una sfumatura per influenzare il modo in cui viene c
 
 | Metodo                                                                                                 | Descrizione                                                                                                                                                                                                        |
 |:-------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleGrad(S,float,float,float)**](dx-graphics-hlsl-to-samplegrad.md)                              | Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.<br/>                                                                                                             |
-| [**SampleGrad(S,float,float,float,float)**](tcube-samplegrad-s-float-float-float-float-.md)           | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione.<br/>                                     |
-| [**SampleGrad(S,float,float,float,float,uint)**](tcube-samplegrad-s-float-float-float-float-uint-.md) | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleGrad(S,float,float,float)**](dx-graphics-hlsl-to-samplegrad.md)                              | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.<br/>                                                                                                             |
+| [**SampleGrad(S,float,float,float,float)**](tcube-samplegrad-s-float-float-float-float-.md)           | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui stringere i valori del livello di dettaglio (LOD) del campione.<br/>                                     |
+| [**SampleGrad(S,float,float,float,float,uint)**](tcube-samplegrad-s-float-float-float-float-uint-.md) | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui stringere i valori del livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Campionare una trama usando una sfumatura per influenzare il modo in cui viene c
 [**TextureCube**](texturecube.md)
 </dt> <dt>
 
-[Oggetto texture](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

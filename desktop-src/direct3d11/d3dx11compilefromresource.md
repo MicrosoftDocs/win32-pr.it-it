@@ -1,6 +1,6 @@
 ---
 title: Funzione D3DX11CompileFromResource (D3DX11async.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Nota Invece di usare questa funzione, è consigliabile usare le funzioni di risorsa, quindi eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o usare una delle API di compilazione HLSL, ad esempio l'API D3DCompile. Compilare uno shader o un effetto da una risorsa.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Nota Invece di usare questa funzione, è consigliabile usare le funzioni di risorsa, quindi eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o usare una delle API di compilazione HLSL, ad esempio l'API D3DCompile. Compilare uno shader o un effetto da una risorsa.
 ms.assetid: ececa469-f5e3-4cb3-befe-0ed1a5a57671
 keywords:
 - Funzione D3DX11CompileFromResource Direct3D 11
@@ -30,7 +30,7 @@ ms.locfileid: "118536765"
  
 
 > [!Note]  
-> Invece di usare questa funzione, è consigliabile usare le funzioni di risorsa [,](/windows/desktop/menurc/resources-functions)quindi eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o usare una delle API di compilazione HLSL, ad esempio l'API [**D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
+> Anziché usare questa funzione, è consigliabile usare le funzioni di risorsa [,](/windows/desktop/menurc/resources-functions)quindi eseguire la compilazione offline usando il compilatore della riga di comando di Fxc.exe o usare una delle API di compilazione HLSL, ad esempio l'API [**D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
 
  
 
@@ -68,7 +68,7 @@ HRESULT D3DX11CompileFromResource(
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Handle per il modulo di risorse contenente lo shader. È possibile ottenere HMODULE con [la funzione GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Handle al modulo della risorsa contenente lo shader. È possibile ottenere HMODULE con [la funzione GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Nome della risorsa contenente lo shader. Se le impostazioni del compilatore rich
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-facoltativo. Nome del file dell'effetto, usato solo per i messaggi di errore. Può essere **NULL.**
+facoltativo. Nome file dell'effetto, usato solo per i messaggi di errore. Può essere **NULL.**
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ facoltativo. Nome del file dell'effetto, usato solo per i messaggi di errore. Pu
 
 Tipo: **const [**D3D10 \_ SHADER \_ MACRO**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-facoltativo. Puntatore a una matrice di definizioni di macro (vedere [**D3D10 \_ SHADER \_ MACRO).**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) L'ultima struttura nella matrice funge da carattere di terminazione e deve avere tutti i membri impostati su 0. Se non viene usato, *impostare pDefines* su **NULL.**
+facoltativo. Puntatore a una matrice di definizioni di macro (vedere [**D3D10 \_ SHADER \_ MACRO**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). L'ultima struttura nella matrice funge da terminatore e deve avere tutti i membri impostati su 0. Se non viene usato, *impostare pDefines* su **NULL.**
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ facoltativo. Puntatore a una matrice di definizioni di macro (vedere [**D3D10 \_
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-facoltativo. Puntatore a un'interfaccia per la gestione dei file di inclusione. L'impostazione di **questa proprietà su NULL** causerà un errore di compilazione se uno shader contiene \# un'inclusione.
+facoltativo. Puntatore a un'interfaccia per la gestione dei file di inclusione. L'impostazione di questa proprietà su **NULL** causerà un errore di compilazione se uno shader contiene \# un'inclusione.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ facoltativo. Puntatore a un'interfaccia per la gestione dei file di inclusione. 
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nome della funzione del punto di ingresso dello shader in cui inizia l'esecuzione dello shader. Quando si compila un effetto, **D3DX11CompileFromResource** ignora *pFunctionName*; È consigliabile impostare *pFunctionName* su **NULL** perché è consigliabile impostare un parametro del puntatore su **NULL** se la funzione chiamata non lo userà.
+Nome della funzione del punto di ingresso shader in cui inizia l'esecuzione dello shader. Quando si compila un effetto, **D3DX11CompileFromResource** ignora *pFunctionName*; È consigliabile impostare *pFunctionName* su **NULL** perché è consigliabile impostare un parametro puntatore su **NULL** se la funzione chiamata non lo userà.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Nome della funzione del punto di ingresso dello shader in cui inizia l'esecuzion
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Stringa che specifica il modello di shader. può essere qualsiasi profilo nel modello shader 2, nel modello shader 3, nel modello shader 4 o nel modello shader 5. Il profilo può essere anche per il tipo di effetto (ad esempio, fx \_ 4 \_ 1).
+Stringa che specifica il modello shader. può essere qualsiasi profilo nel modello shader 2, nel modello shader 3, nel modello shader 4 o nel modello shader 5. Il profilo può essere anche per il tipo di effetto (ad esempio, fx \_ 4 \_ 1).
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Flag [**di compilazione shader**](/windows/desktop/direct3dhlsl/d3dcompile-const
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Flag [**di compilazione dell'effetto**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants). Quando si compila uno shader e non un file di effetto, **D3DX11CompileFromResource** ignora *Flags2*; È consigliabile impostare *Flags2* su zero perché è consigliabile impostare un parametro nonpointer su zero se la funzione chiamata non lo userà.
+Flag [**di compilazione dell'effetto**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants). Quando si compila uno shader e non un file di effetti, **D3DX11CompileFromResource** ignora *Flags2*; È consigliabile impostare *Flags2* su zero perché è buona norma di programmazione impostare un parametro nonpointer su zero se la funzione chiamata non lo userà.
 
 </dd> <dt>
 
@@ -149,7 +149,7 @@ Flag [**di compilazione dell'effetto**](/windows/desktop/direct3dhlsl/d3dcompile
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntatore a un'interfaccia pump di thread (vedere [**l'interfaccia ID3DX11ThreadPump).**](id3dx11threadpump.md) Usare **NULL** per specificare che questa funzione non deve restituire alcun valore finché non viene completata.
+Puntatore a un'interfaccia thread pump (vedere [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Usare **NULL** per specificare che questa funzione non deve restituire finché non viene completata.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Puntatore a un'interfaccia pump di thread (vedere [**l'interfaccia ID3DX11Thread
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntatore alla memoria che contiene lo shader compilato, nonché eventuali informazioni incorporate sul debug e sulla tabella dei simboli.
+Puntatore alla memoria che contiene lo shader compilato, nonché qualsiasi informazione incorporata sul debug e sulla tabella dei simboli.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Puntatore alla memoria che contiene un elenco di errori e avvisi che si sono ver
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere un percorso di memoria valido fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -186,13 +186,13 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-**D3DX11CompileFromResource** restituisce E INVALIDARG se si specifica un valore diverso da NULL al parametro pHResult quando si specifica NULL al \_ parametro *pPump.*    Per altre informazioni su questa situazione, vedere La sezione Osservazioni.
+**D3DX11CompileFromResource** restituisce E INVALIDARG se si specifica un valore diverso da NULL al parametro pHResult quando si specifica \_ **NULL** al *parametro pPump.*   Per altre informazioni su questa situazione, vedere Note.
 
 ## <a name="remarks"></a>Commenti
 
-Per altre informazioni su **D3DX11CompileFromResource,** vedere [**D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
+Per altre informazioni su **D3DX11CompileFromResource,** vedere [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
 
-È necessario fornire **NULL** al *parametro pHResult* se si specifica **anche NULL** al *parametro pPump.* In caso contrario, non è possibile creare successivamente uno shader usando il codice dello shader compilato restituito da **D3DX11CompileFromResource** nella memoria a cui punta *il parametro ppShader.* Per creare uno shader dal codice dello shader conforme, chiamare uno dei metodi di interfaccia [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) seguenti:
+È necessario fornire **NULL** al *parametro pHResult* se si specifica **anche NULL** al *parametro pPump.* In caso contrario, non è possibile creare successivamente uno shader usando il codice shader compilato restituito da **D3DX11CompileFromResource** nella memoria a cui punta *il parametro ppShader.* Per creare uno shader dal codice dello shader conforme, chiamare uno dei metodi di interfaccia [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) seguenti:
 
 -   [**CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader)
 -   [**CreateDomainShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createdomainshader)

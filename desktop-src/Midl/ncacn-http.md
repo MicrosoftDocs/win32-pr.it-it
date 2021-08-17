@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642212"
 ---
-# <a name="ncacn_http-attribute"></a>Attributo http \_ ncacn
+# <a name="ncacn_http-attribute"></a>Attributo HTTP ncacn \_
 
 La **parola chiave \_ http ncacn** identifica Microsoft Internet Information Server (IIS) come famiglia di protocolli per l'endpoint.
 
@@ -41,19 +41,19 @@ Indirizzo Internet o nome del computer in cui è in esecuzione il processo del s
 *Endpoint* 
 </dt> <dd>
 
-Porta TCP/IP (statica) nota su cui è in ascolto il processo del server RPC.
+Porta TCP/IP nota (statica) su cui è in ascolto il processo del server RPC.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'identificazione di Microsoft Internet Information Server (IIS) come famiglia di protocolli consente alle applicazioni client e server di comunicare attraverso Internet usando Microsoft Internet Information Server (IIS) come proxy. Poiché le chiamate vengono tunneled attraverso una porta HTTP stabilita, possono attraversare i firewall.
+L'identificazione di Microsoft Internet Information Server (IIS) come famiglia di protocolli consente alle applicazioni client e server di comunicare attraverso Internet usando Microsoft Internet Information Server (IIS) come proxy. Poiché le chiamate vengono tunnelate tramite una porta HTTP stabilita, possono attraversare i firewall.
 
-Tutte le applicazioni client e server RPC possono supportare il protocollo **\_ HTTP ncacn,** purché siano in rete in Internet Information Server. IIS contatta il server RPC e stabilisce un socket TCP/IP, che gestisce per il client. IIS negozia una connessione TCP/IP con il server RPC e, una volta completata la negoziazione, funge da proxy RPC, inoltrando i dati tra il socket TCP/IP sul lato client e il socket TCP/IP sul lato server. Quando il proxy RPC IIS rileva una chiusura di sessione sul lato client o sul lato server, chiude il socket rimanente.
+Tutte le applicazioni client e server RPC possono supportare il protocollo **\_ HTTP ncacn** purché siano in rete a Internet Information Server. IIS contatta il server RPC e stabilisce un socket TCP/IP, che gestisce per il client. IIS negozia una connessione TCP/IP con il server RPC e al termine della negoziazione funge da proxy RPC, inoltrando i dati tra il socket TCP/IP sul lato client e il socket TCP/IP sul lato server. Quando il proxy RPC IIS rileva la chiusura di una sessione sul lato client o sul lato server, chiude il socket rimanente.
 
-L'applicazione client usa implicitamente l'associazione statica a IIS, ma il server può usare endpoint dinamici, con RPCSS (mapper di endpoint) del server che risolve la porta del server RPC. Se IIS si trova in un computer diverso da quello del server RPC, riceve la chiamata remota, contatta RPCSS nel computer server RPC per ottenere l'endpoint del processo server e quindi inoltra la chiamata al server RPC appropriato.
+L'applicazione client usa in modo implicito l'associazione statica a IIS, ma il server può usare endpoint dinamici, con RPCSS (mapper di endpoint) del server che risolve la porta del server RPC. Se IIS si trova in un computer diverso dal server RPC, IIS riceve la chiamata remota, contatta RPCSS nel computer server RPC per ottenere l'endpoint del processo server e quindi inoltra la chiamata al server RPC appropriato.
 
-Se Internet Explorer installato, il trasporto controlla il Registro di sistema per verificare se è presente una configurazione per un proxy HTTP. Se esiste un proxy, verrà utilizzato dal trasporto.
+Se Internet Explorer installato, il trasporto controlla il Registro di sistema per verificare se è presente una configurazione per un proxy HTTP. Se esiste un proxy, il trasporto lo userà.
 
 ## <a name="examples"></a>Esempi
 

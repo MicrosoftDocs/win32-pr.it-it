@@ -21,7 +21,7 @@ ms.locfileid: "118642967"
 ---
 # <a name="max_is-attribute"></a>attributo max \_ is
 
-**\[ L'attributo max \_ è \]** che definisce il valore massimo per un indice di matrice valido.
+**\[ L'attributo max \_ is \]** definisce il valore massimo per un indice di matrice valido.
 
 ``` syntax
 [max_is(limited-expression-list )]
@@ -34,17 +34,17 @@ ms.locfileid: "118642967"
 *limited-expression-list* 
 </dt> <dd>
 
-Specifica una o più espressioni in linguaggio C. Ogni espressione restituisce un intero che rappresenta l'indice di matrice valido più alto. Il compilatore MIDL supporta espressioni condizionali, espressioni logiche, espressioni relazionali ed espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento. Separare più espressioni con virgole.
+Specifica una o più espressioni in linguaggio C. Ogni espressione restituisce un intero che rappresenta l'indice di matrice valido più alto. Il compilatore MIDL supporta espressioni condizionali, logiche, relazionali ed aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento. Separare più espressioni con virgole.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**\[ L'attributo max \_ is \]** non corrisponde necessariamente al numero di elementi nella matrice. Per una matrice di dimensioni *n* in C, dove il primo elemento della matrice è il numero di elemento zero, il valore massimo per un indice di matrice valido *è n*-1.
+**\[ \_ L'attributo \] max** is non corrisponde necessariamente al numero di elementi nella matrice. Per una matrice di dimensioni *n* in C, dove il primo elemento della matrice è il numero di elemento zero, il valore massimo per un indice di matrice valido *è n*-1.
 
 **\[ L'attributo max \_ is \]** non può essere usato come attributo di campo contemporaneamente all'attributo **\[** [**\_ size.**](size-is.md) **\]**
 
-Anche se è legale usare **\[ l'attributo max \_ is \]** con un'espressione costante, questa operazione non è efficiente e non necessaria. Ad esempio, usare una matrice di dimensioni fisse:
+Sebbene sia valido usare l'attributo **\[ max \_ is \]** con un'espressione costante, questa operazione è inefficiente e non necessaria. Ad esempio, usare una matrice di dimensioni fisse:
 
 ``` syntax
 /* transmits values of a[0]... a[MAX_SIZE-1] */ 
@@ -82,7 +82,7 @@ HRESULT Proc2(
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**min \_ è**](min-is.md)
+[**min \_ is**](min-is.md)
 </dt> <dt>
 
 [**size \_ è**](size-is.md)

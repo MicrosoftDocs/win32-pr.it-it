@@ -3,7 +3,7 @@ title: WM/VideoFrameRate
 description: L'attributo WM/VideoFrameRate contiene la frequenza, in fotogrammi al secondo, del video in un flusso.
 ms.assetid: dcab75b3-6d08-4551-9145-c8307eb70557
 keywords:
-- WM/VideoFrameRate windows Media Format
+- Formato multimediale windows WM/VideoFrameRate
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ g \_ wszWMVideoFrameRate
 
 ## <a name="data-type"></a>Tipo di dati
 
-**DWORD \_ DI TIPO \_ WMT**
+**DWORD \_ DI \_ TIPO WMT**
 
 ## <a name="see-also"></a>Vedi anche
 

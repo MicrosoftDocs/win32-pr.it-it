@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8033f02d614ab7e5507c5982168e29d94271b87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d130cdfa6188c651c9948cf60af4032d44942aa38b6e3c870834371f6ccc301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486214"
 ---
 # <a name="jet_dbinfomisctostring-method"></a>JET_DBINFOMISC. Metodo ToString
 
-Ottiene una rappresentazione di stringa di questo oggetto.
+Ottiene una rappresentazione di stringa di questo oggetto .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 Rappresentazione in forma di stringa di questo oggetto.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
