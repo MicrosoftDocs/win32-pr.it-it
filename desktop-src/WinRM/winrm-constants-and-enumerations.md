@@ -1,6 +1,6 @@
 ---
-title: Costanti ed enumerazioni WinRM
-description: Windows Gestione remota dispone di flag di bit utilizzati nella creazione di sessioni ed enumerazioni e per i tipi di accesso e l'autenticazione a un server proxy.
+title: Costanti ed enumerazioni di WinRM
+description: Windows Gestione remota include flag di bit usati nella creazione di sessioni ed enumerazioni e per i tipi di accesso e l'autenticazione a un server proxy.
 ms.assetid: 17e59245-26a3-4383-a741-4a09f3cfcec6
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117742937"
 ---
-# <a name="winrm-constants-and-enumerations"></a>Costanti ed enumerazioni WinRM
+# <a name="winrm-constants-and-enumerations"></a>Costanti ed enumerazioni di WinRM
 
-Windows Gestione remota dispone di flag di bit utilizzati nella creazione di sessioni ed enumerazioni e per i tipi di accesso e l'autenticazione a un server proxy. Nell'elenco seguente sono elencati i diversi flag di bit.
+Windows Gestione remota include flag di bit usati nella creazione di sessioni ed enumerazioni e per i tipi di accesso e l'autenticazione a un server proxy. Nell'elenco seguente sono elencati i diversi flag di bit.
 
 <dl> <dt>
 
@@ -28,21 +28,21 @@ Flag usati nel *parametro flags* dei [**metodi WSMan.CreateSession**](wsman-crea
 <span id="Enumeration_Constants"></span><span id="enumeration_constants"></span><span id="ENUMERATION_CONSTANTS"></span>[**Costanti di enumerazione**](enumeration-constants.md)
 </dt> <dd>
 
-Flag usati nel *parametro flags* della chiamata [**a Session.Enumerate**](session-enumerate.md) o [**IWSManSession::Enumerate.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate)
+Flag utilizzati nel *parametro flags* della chiamata [**a Session.Enumerate**](session-enumerate.md) o [**IWSManSession::Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate).
 
 </dd> <dt>
 
 <span id="WSManProxyAuthenticationFlags"></span><span id="wsmanproxyauthenticationflags"></span><span id="WSMANPROXYAUTHENTICATIONFLAGS"></span>[**WSManProxyAuthenticationFlags**](/windows/desktop/api/WSManDisp/ne-wsmandisp-wsmanproxyauthenticationflags)
 </dt> <dd>
 
-Flag usati nel *parametro authenticationMechanism* della chiamata a [**IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
+Flag utilizzati nel *parametro authenticationMechanism* della chiamata a [**IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
 
 </dd> <dt>
 
 <span id="WSManProxyAccessTypeFlags"></span><span id="wsmanproxyaccesstypeflags"></span><span id="WSMANPROXYACCESSTYPEFLAGS"></span>[**WSManProxyAccessTypeFlags**](/windows/desktop/api/WSManDisp/ne-wsmandisp-wsmanproxyaccesstypeflags)
 </dt> <dd>
 
-Flag usati nel *parametro accessType* della chiamata a [**IWSManConnectionOptionsEx2::SetProxy.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy)
+Flag utilizzati nel *parametro accessType* della chiamata a [**IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
 
 </dd> </dl>
 

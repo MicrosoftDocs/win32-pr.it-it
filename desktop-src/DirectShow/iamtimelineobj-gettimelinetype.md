@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetTimelineType Recupera il tipo dell'oggetto.
+description: Il metodo GetTimelineType recupera il tipo dell'oggetto.
 ms.assetid: db46457f-25d0-4421-af73-426d65b720d3
-title: 'Metodo IAMTimelineObj:: GetTimelineType (qedit. h)'
+title: Metodo IAMTimelineObj::GetTimelineType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 76b9c2a847cc0d0150b21062810290aaaab702cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f9c69bcd6b14b489fab4caa399e481613bc7cbeeb30245e00ece480b97b31ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155335"
 ---
-# <a name="iamtimelineobjgettimelinetype-method"></a>Metodo IAMTimelineObj:: GetTimelineType
+# <a name="iamtimelineobjgettimelinetype-method"></a>Metodo IAMTimelineObj::GetTimelineType
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -45,26 +45,26 @@ HRESULT GetTimelineType(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Riceve un membro del tipo enumerato della [**sequenza temporale \_ principale \_**](timeline-major-type.md) , che indica il tipo di oggetto.
+Riceve un membro del tipo [**enumerato TIMELINE \_ MAJOR \_ TYPE,**](timeline-major-type.md) che indica il tipo di oggetto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

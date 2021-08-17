@@ -1,30 +1,30 @@
 ---
-title: Proprietà di ITSRemoteProgram2
+title: Proprietà ITSRemoteProgram2
 description: L'interfaccia ITSRemoteProgram2 espone le proprietà seguenti.
 ms.assetid: 0FFC56E2-D626-465D-8A29-5698B5AE2A69
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dd44f81a5bfb617e276a6ca6c010894f66f852c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 61f5b6b0e689cbafc1336539e297263ba202e9d4685b5d4e4628c271cdce09e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756783"
 ---
-# <a name="itsremoteprogram2-properties"></a>Proprietà di ITSRemoteProgram2
+# <a name="itsremoteprogram2-properties"></a>Proprietà ITSRemoteProgram2
 
-L'interfaccia [**ITSRemoteProgram2**](itsremoteprogram2.md) espone le proprietà seguenti.
+[**L'interfaccia ITSRemoteProgram2**](itsremoteprogram2.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà RemoteApplicationArgs**](itsremoteprogram2-remoteapplicationargs.md)
--   [**Proprietà RemoteApplicationName**](itsremoteprogram2-remoteapplicationname.md)
--   [**Proprietà RemoteApplicationProgram**](itsremoteprogram2-remoteapplicationprogram.md)
+-   [**RemoteApplicationArgs - proprietà**](itsremoteprogram2-remoteapplicationargs.md)
+-   [**RemoteApplicationName - proprietà**](itsremoteprogram2-remoteapplicationname.md)
+-   [**RemoteApplicationProgram - proprietà**](itsremoteprogram2-remoteapplicationprogram.md)
 
- 
+ 
 
- 
+ 
 
 
 

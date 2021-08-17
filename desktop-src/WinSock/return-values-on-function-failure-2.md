@@ -1,5 +1,5 @@
 ---
-description: La costante manifesto SOCKET \_ ERROR viene fornita per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'uso della costante SOCKET \_ ERROR.
+description: La costante manifesto SOCKET \_ ERROR viene fornita per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'utilizzo della costante SOCKET \_ ERROR.
 ms.assetid: b46203dc-5666-413b-90fe-8432318f3037
 title: Valori restituiti in caso di errore della funzione
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117740933"
 ---
 # <a name="return-values-on-function-failure"></a>Valori restituiti in caso di errore della funzione
 
-La costante manifesto **SOCKET \_ ERROR viene** fornita per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'uso della **costante SOCKET \_ ERROR.**
+La costante manifesto **SOCKET \_ ERROR viene fornita** per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'utilizzo della **costante SOCKET \_ ERROR.**
 
 Stile BSD tipico (non funziona in Windows)
 
@@ -55,7 +55,7 @@ Windows Stile
 [Codici di errore : errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
 </dt> <dt>
 
-[Gestione degli errori Winsock](handling-winsock-errors.md)
+[Gestione degli errori di Winsock](handling-winsock-errors.md)
 </dt> <dt>
 
 [Porting di applicazioni socket in Winsock](porting-socket-applications-to-winsock.md)

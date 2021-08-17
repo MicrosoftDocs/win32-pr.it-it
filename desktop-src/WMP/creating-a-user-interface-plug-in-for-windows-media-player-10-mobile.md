@@ -3,8 +3,8 @@ title: Creazione di Interfaccia utente plug-in per Windows Media Player 10 Mobil
 description: Creazione di Interfaccia utente plug-in per Windows Media Player 10 Mobile
 ms.assetid: 050418b7-d99c-49ab-8ce6-6511b194ffe6
 keywords:
-- Windows Media Player dispositivi mobili, plug-in
-- Windows Media Player Dispositivi mobili, plug-in dell'interfaccia utente
+- Windows Media Player Dispositivi mobili, plug-in
+- Windows Media Player Plug-in dell'interfaccia utente per dispositivi mobili
 - Windows Media Player Plug-in per dispositivi mobili
 - plug-in, interfaccia utente
 - plug-in, Windows Media Player Mobile
@@ -21,7 +21,7 @@ ms.locfileid: "117750478"
 ---
 # <a name="creating-a-user-interface-plug-in-for-windows-media-player-10-mobile"></a>Creazione di Interfaccia utente plug-in per Windows Media Player 10 Mobile
 
-Windows Media Player 10 Mobile usa lo stesso modello di plug-in dell'interfaccia utente del desktop Windows Media Player. Tuttavia, Windows Media Player 10 Mobile può interagire solo con i plug-in dell'interfaccia utente in background. A causa dei modelli di plug-in simili, le stesse chiamate API che si applicano ai plug-in dell'interfaccia utente in background sul desktop si applicano anche ai plug-in dell'interfaccia utente in background in un dispositivo Windows Mobile.
+Windows Media Player 10 Mobile usa lo stesso modello di plug-in dell'interfaccia utente del desktop Windows Media Player. Tuttavia, Windows Media Player 10 Mobile può interagire solo con i plug-in dell'interfaccia utente in background. A causa dei modelli di plug-in simili, le stesse chiamate API che si applicano ai plug-in dell'interfaccia utente in background sul desktop si applicano anche ai plug-in dell'interfaccia utente in background in un dispositivo Windows mobile.
 
 Le sezioni seguenti descrivono come creare un plug-in dell'interfaccia utente in background usando il codice generato dalla procedura guidata Windows Media Player creazione guidata plug-in.
 
@@ -29,8 +29,8 @@ Le sezioni seguenti descrivono come creare un plug-in dell'interfaccia utente in
 
 | Sezione                                                                | Descrizione                                                                                                                                            |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Per iniziare](getting-started.md)                                 | Descrive cosa è necessario installare e come usare la creazione guidata plug-in Windows Media Player per automatizzare la creazione di un plug-in dell'interfaccia utente in background.    |
-| [Modifica del codice generato dalla procedura guidata](modifying-wizard-generated-code.md) | Descrive gli elementi da modificare dal codice generato dalla procedura guidata creato nella sezione precedente in modo che funzioni con Windows Media Player 10 Mobile. |
+| [Per iniziare](getting-started.md)                                 | Descrive cosa è necessario installare e come usare la Windows Media Player guidata plug-in per automatizzare la creazione di un plug-in dell'interfaccia utente in background.    |
+| [Modifica del codice generato dalla procedura guidata](modifying-wizard-generated-code.md) | Descrive cosa è necessario modificare dal codice generato dalla procedura guidata creato nella sezione precedente in modo che funzioni con Windows Media Player 10 Mobile. |
 
 
 

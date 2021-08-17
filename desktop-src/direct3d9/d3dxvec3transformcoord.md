@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec3TransformCoord (D3dx9math.h): trasforma un vettore 3D in base a una determinata matrice, proiettando di nuovo il risultato in w = 1.'
+description: 'Funzione D3DXVec3TransformCoord (D3dx9math.h): trasforma un vettore 3D da una determinata matrice, proiettando il risultato in w = 1.'
 ms.assetid: 4075b067-1e64-46c9-be73-5fa765c9cb9d
 title: Funzione D3DXVec3TransformCoord (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4e3514d4717262a7afab7ae808d747de3a1b635
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 12cb5f1b41cc4450173c3a2fc35d01afb00e1cab9984edabfa3684ab33b8228d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730809"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx9mathh"></a>Funzione D3DXVec3TransformCoord (D3dx9math.h)
 
@@ -77,7 +77,7 @@ Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il v
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma il *vettore, pV* (x, y, z, 1), dalla matrice, *pM,* proiettando il risultato di nuovo in w=1.
+Questa funzione trasforma il *vettore, pV* (x, y, z, 1), dalla matrice, *pM,* proiettando il risultato in w=1.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3TransformCoord** può essere usata come parametro per un'altra funzione.
 

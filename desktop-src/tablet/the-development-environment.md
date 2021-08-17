@@ -46,18 +46,18 @@ Altri elementi necessari:
 
 I componenti della piattaforma Tablet PC possono essere installati Windows XP Professional con Service Pack 2 o Windows Server 2003. In questi sistemi operativi, l'applicazione può raccogliere input penna con la [**classe InkCollector**](inkcollector-class.md) e può essere testata e di cui è possibile eseguire il debug. Tuttavia, non è disponibile alcun riconoscimento a meno che non si installi anche Microsoft Windows XP Tablet PC Edition 2005 Recognizer Pack. È possibile scaricare tale pacchetto dall'Area download su MSDN.
 
-Dopo aver installato Windows SDK in un sistema Windows XP Professional o Windows Server 2003, saranno disponibili tutti i file di sviluppo necessari per compilare applicazioni ink, ad esempio msinkaut.h per uno sviluppatore COM. Tuttavia, non sarà possibile eseguire o eseguire il debug dell'applicazione in tale sistema fino a quando non si installano i file di runtime. Nel caso di uno sviluppatore COM, ad esempio, inkobj.dll essere installato e registrato. Poiché non si è in un sistema in cui sono presenti questi file della piattaforma, è necessario installare i componenti della piattaforma Tablet PC dal modulo unione ridistribuibile mstpcrt.msm per ottenere i file di runtime nel sistema.
+Dopo aver installato Windows SDK in un sistema Professional Professional o Windows Server 2003 di Windows XP, saranno disponibili tutti i file di sviluppo necessari per compilare applicazioni ink, ad esempio msinkaut.h per uno sviluppatore COM. Tuttavia, non sarà possibile eseguire o eseguire il debug dell'applicazione in tale sistema fino a quando non si installano i file di runtime. Ad esempio, nel caso di uno sviluppatore COM, inkobj.dll essere installato e registrato. Poiché non si è in un sistema in cui sono presenti questi file della piattaforma, è necessario installare i componenti della piattaforma Tablet PC dal modulo unione ridistribuibile mstpcrt.msm per ottenere i file di runtime nel sistema.
 
-Il modo più semplice per installare i runtime della piattaforma in un sistema Professional o Windows 2000 di Windows XP per scopi di sviluppo è compilare il progetto di installazione di esempio fornito con gli esempi di PC per dispositivi mobili e Tablet PC e distribuirlo nel computer di sviluppo.
+Il modo più semplice per installare i runtime della piattaforma in un sistema Windows XP Professional o Windows 2000 a scopo di sviluppo è compilare il progetto di installazione di esempio fornito con gli esempi di PC per dispositivi mobili e Tablet PC e distribuirlo nel computer di sviluppo.
 
 > [!Note]  
-> Windows Vista e Windows XP Tablet PC Edition 2005 hanno già installato i componenti della piattaforma, quindi non richiedono passaggi aggiuntivi per eseguire ed eseguire il debug di applicazioni Tablet PC.
+> Windows Vista e Windows XP Tablet PC Edition 2005 hanno già installato i componenti della piattaforma, quindi non richiedono passaggi aggiuntivi per l'esecuzione e il debug di applicazioni Tablet PC.
 
  
 
 I controlli [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) possono essere usati per raccogliere input penna in Windows 2000 con Service Pack 4 o Windows XP Professional con Service Pack 2 quando i componenti della piattaforma Tablet PC sono presenti installando Tablet PC SDK versione 1.7, ma non sono in grado di raccogliere input penna in sistemi non Tablet PC in cui non sono installati i componenti della piattaforma Tablet PC.
 
-L Windows SDK fornisce tutti i componenti necessari per sviluppare applicazioni Tablet PC in SKU non Tablet di Windows. Impostare la chiave **del Registro di sistema DWORD** seguente su 1 per raccogliere l'input penna su SKU non tablet di Windows:
+L Windows SDK fornisce tutti i componenti necessari per sviluppare applicazioni Tablet PC in SKU non Tablet di Windows. Impostare la chiave **del Registro di sistema DWORD** seguente su 1 per raccogliere input penna su SKU non Tablet Windows:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\TabletPC\Controls\EnableInkCollectionOnNonTablets`
 

@@ -1,5 +1,5 @@
 ---
-title: Valore (headerFieldType) (elemento)
+title: Elemento Value (headerFieldType)
 description: Contiene il valore di un campo di intestazione in un messaggio di posta elettronica.
 ms.assetid: 4518a924-e519-4e2b-ad8c-2c39b046b5c8
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50c90be3908da8e09726d6b812a533426faeefdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d346fbe0410a9085078f909dea5cef67788f5b1194e19be1bdb74529e4e56f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355364"
 ---
-# <a name="value-headerfieldtype-element"></a>Valore (headerFieldType) (elemento)
+# <a name="value-headerfieldtype-element"></a>Elemento Value (headerFieldType)
 
 Contiene il valore di un campo di intestazione in un messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene il valore di un campo di intestazione in un messaggio di posta elettron
  />
 ```
 
-L'elemento **value** è definito dal tipo complesso [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) .
+**L'elemento Value** è definito dal tipo complesso [**headerFieldType.**](taskschedulerschema-headerfieldtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -48,8 +48,8 @@ L'elemento **value** è definito dal tipo complesso [**headerFieldType**](tasksc
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

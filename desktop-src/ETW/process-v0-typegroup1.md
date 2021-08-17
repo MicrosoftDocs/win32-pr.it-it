@@ -1,5 +1,5 @@
 ---
-description: 'Process_V0_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi di processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_V0_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: fcf2897d-32b4-42b9-892c-f0106687d3c2
 title: Process_V0_TypeGroup1 classe
 ms.topic: reference
@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 524d3c7da9f8ff76608da120834c5365eb1deb41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0d42ed4704eafcbb335b29c2c2d8d83e2ea82591c75855a6da096cb1e11a7572
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394437"
 ---
 # <a name="process_v0_typegroup1-class"></a>Elaborare \_ la classe \_ TypeGroup1 V0
 
@@ -50,14 +50,14 @@ La **classe \_ \_ TypeGroup1 Process V0** ha questi tipi di membri:
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ TypeGroup1 Process V0** ha queste proprietà.
+La **classe \_ \_ TypeGroup1 process V0** ha queste proprietà.
 
 <dl> <dt>
 
 ImageFileName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -79,10 +79,10 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(2), Pointer
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
-Identificatore univoco del processo che crea un processo. I numeri di identificatore di processo vengono riutilizzati, quindi identificano solo un processo per la durata di tale processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
+Identificatore univoco del processo che crea un processo. I numeri di identificatore del processo vengono riutilizzati, quindi identificano un processo solo per la durata del processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
 
 </dd> <dt>
 
@@ -124,8 +124,8 @@ Identificatore di sicurezza (SID) per il contesto utente in cui si verifica l'ev
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

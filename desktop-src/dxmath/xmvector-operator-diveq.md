@@ -1,7 +1,7 @@
 ---
 description: Operatore di assegnazione di divisione.
 ms.assetid: 59dee8a1-48c5-4748-8eca-1d0939e90fe0
-title: operatori operator/=
+title: Operatori operator /=
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e4d0c20975a93215a62bdb6b08dedc839ca8d079
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab9b0b003b3edea331ae617948176c38a9c7b47eca0972e63d6b54873d2669e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118087127"
 ---
-# <a name="operator--operators"></a>operatori operator/=
+# <a name="operator--operators"></a>Operatori operator /=
 
 Operatore di assegnazione di divisione.
 
@@ -39,8 +39,8 @@ Operatore di assegnazione di divisione.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421377(v=vs.85)"><strong>XMVECTOR:: operator/= (XMVECTOR&, float)</strong></a></td>
-<td style="text-align: left;">Divide un' <code>XMVECTOR</code> istanza di in base a un valore a virgola mobile e restituisce un riferimento all'istanza aggiornata. <br/> <code>operator /=</code>Divide ogni componente dell'istanza corrente del <a href="xmvector-data-type.md"><strong>tipo di dati XMVECTOR</strong></a> in base a un valore a virgola mobile specificato, restituendo un riferimento all'istanza corrente aggiornata. <br/>
+<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421377(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,float)</strong></a></td>
+<td style="text-align: left;">Divide <code>XMVECTOR</code> un'istanza di per un valore a virgola mobile e restituisce un riferimento all'istanza aggiornata. <br/> divide ogni componente dell'istanza corrente del tipo di dati XMVECTOR per un valore a virgola mobile specificato, restituisce un riferimento <code>operator /=</code> all'istanza <a href="xmvector-data-type.md"><strong></strong></a> corrente aggiornata. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -48,8 +48,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421378(v=vs.85)"><strong>XMVECTOR:: operator/= (XMVECTOR&, XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Divide un' <code>XMVECTOR</code> istanza per una seconda istanza, restituendo un riferimento all'istanza iniziale aggiornata. <br/> <code>operator /=</code>Divide ogni componente dell'istanza corrente del <a href="xmvector-data-type.md"><strong>tipo di dati XMVECTOR</strong></a> in base al componente corrispondente in una seconda istanza specificata di <code>XMVECTOR</code> , restituendo un riferimento all'istanza iniziale aggiornata. <br/>
+<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421378(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,XMVECTOR)</strong></a></td>
+<td style="text-align: left;">Divide <code>XMVECTOR</code> un'istanza per una seconda istanza, restituisce un riferimento all'istanza iniziale aggiornata. <br/> divide ogni componente dell'istanza corrente del tipo di dati XMVECTOR per il componente corrispondente in una seconda istanza specificata di , restituisce un riferimento <code>operator /=</code> all'istanza iniziale <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> aggiornata. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.

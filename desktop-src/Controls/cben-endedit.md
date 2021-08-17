@@ -1,9 +1,9 @@
 ---
-title: CBEN_ENDEDIT di notifica (Commctrl.h)
+title: CBEN_ENDEDIT codice di notifica (Commctrl.h)
 description: Inviato quando l'utente ha terminato un'operazione all'interno della casella di modifica o ha selezionato un elemento dall'elenco a discesa del controllo. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: b6b50951-7304-4499-b57b-a5b592de2190
 keywords:
-- CBEN_ENDEDIT del codice di notifica Windows controlli
+- CBEN_ENDEDIT codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118413951"
 ---
-# <a name="cben_endedit-notification-code"></a>Codice di \_ notifica CBEN ENDEDIT
+# <a name="cben_endedit-notification-code"></a>Codice di notifica \_ CBEN ENDEDIT
 
-Inviato quando l'utente ha terminato un'operazione all'interno della casella di modifica o ha selezionato un elemento dall'elenco a discesa del controllo. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
+Inviato quando l'utente ha terminato un'operazione all'interno della casella di modifica o ha selezionato un elemento dall'elenco a discesa del controllo. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -57,8 +57,8 @@ Puntatore a una [**struttura NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-co
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) e **CBEN \_ ENDEDITA** (ANSI)<br/>                 |
 

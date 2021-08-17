@@ -1,30 +1,30 @@
 ---
-title: Problemi multithread
-description: Problemi multithread
+title: Problemi a più thread
+description: Problemi a più thread
 ms.assetid: 17e74d2a-af4f-4188-89fa-b4f50abc424f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0910e1602d00d3429bb9e4c7a1667bf8113cd659
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2ffd1dc3f73c33ca30ebee0072f1c5059c73f25e9e2318d384cd0c3d0dc7bc94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104397007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918531"
 ---
-# <a name="multi-threaded-issues"></a>Problemi multithread
+# <a name="multi-threaded-issues"></a>Problemi a più thread
 
-OLE fornisce supporto per le applicazioni multithreading, consentendo alle applicazioni di effettuare chiamate OLE da più thread. Questo supporto multithreading è denominato modello di Apartment, è importante che tutti i componenti OLE che usano più thread seguano questo modello. Il modello di Apartment richiede che i puntatori di interfaccia vengano sottoposti a marshalling (tramite [**CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface)e [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface)) quando vengono passati tra thread.
+OLE fornisce il supporto per le applicazioni multithreading, consentendo alle applicazioni di effettuare chiamate OLE da più thread. Questo supporto multithreading è denominato modello apartment. È importante che tutti i componenti OLE che usano più thread seguano questo modello. Il modello di apartment richiede il marshalling dei puntatori a interfaccia (tramite [**CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface)e [**CoUnmarshalInterface)**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface)quando vengono passati tra thread.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Processi, thread e Apartment](processes--threads--and-apartments.md)
+[Processi, thread e apartment](processes--threads--and-apartments.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

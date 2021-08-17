@@ -15,7 +15,7 @@ ms.locfileid: "117751143"
 
 Windows Vista introduce le modifiche seguenti al Servizio Copia Shadow del volume.
 
-Si noti che tutte le modifiche Windows Vista si applicano anche a Windows Server 2008 e Windows Vista con Service Pack 1 (SP1).
+Si noti che tutte le modifiche per Windows Vista si applicano anche a Windows Server 2008 e Windows Vista con Service Pack 1 (SP1).
 
 ## <a name="new-vss-interfaces"></a>Nuove interfacce vss
 
@@ -33,15 +33,15 @@ Si noti che tutte le modifiche Windows Vista si applicano anche a Windows Server
 
 [**CVssWriterEx**](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex)
 
-## <a name="new-vss-enumerations"></a>Nuove enumerazioni VSS
+## <a name="new-vss-enumerations"></a>Nuove enumerazioni vss
 
-[**TIPO \_ ROLLFORWARD VSS \_**](/windows/desktop/api/Vss/ne-vss-vss_rollforward_type)
+[**TIPO \_ ROLLFORWARD DI VSS \_**](/windows/desktop/api/Vss/ne-vss-vss_rollforward_type)
 
-## <a name="existing-vss-enumeration-modifications"></a>Modifiche all'enumerazione VSS esistente
+## <a name="existing-vss-enumeration-modifications"></a>Modifiche dell'enumerazione VSS esistenti
 
 <dl> <dt>
 
-<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VsS \_ Enumerazione BACKUP \_ SCHEMA**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)
+<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VSS \_ Enumerazione \_ BACKUP SCHEMA**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)
 </dt> <dd>
 
 <dl> <dt>
@@ -51,9 +51,9 @@ Si noti che tutte le modifiche Windows Vista si applicano anche a Windows Server
 
 RIPRISTINO \_ AUTOREVOLE DI VSS BS \_ \_
 
-STATO DEL SISTEMA \_ INDIPENDENTE DA VSS BS \_ \_ \_
+VSS \_ BS \_ INDEPENDENT \_ SYSTEM \_ STATE
 
-RIDENOMINAZIONE \_ DI VSS BS \_ RESTORE \_
+RIDENOMINAZIONE \_ DEL RIPRISTINO DI VSS BS \_ \_
 
 RIPRISTINO \_ \_ ROLLFORWARD DI VSS BS \_
 
@@ -61,7 +61,7 @@ RIPRISTINO \_ \_ ROLLFORWARD DI VSS BS \_
 
 <dl> <dt>
 
-<span id="VSS_COMPONENT_FLAGS_enumeration"></span><span id="vss_component_flags_enumeration"></span><span id="VSS_COMPONENT_FLAGS_ENUMERATION"></span>[**VsS \_ Enumerazione COMPONENT \_ FLAGS**](/windows/desktop/api/VsWriter/ne-vswriter-vss_component_flags)
+<span id="VSS_COMPONENT_FLAGS_enumeration"></span><span id="vss_component_flags_enumeration"></span><span id="VSS_COMPONENT_FLAGS_ENUMERATION"></span>[**VSS \_ Enumerazione \_ COMPONENT FLAGS**](/windows/desktop/api/VsWriter/ne-vswriter-vss_component_flags)
 </dt> <dd>
 
 <dl> <dt>
@@ -69,7 +69,7 @@ RIPRISTINO \_ \_ ROLLFORWARD DI VSS BS \_
 <span id="Added_values_"></span><span id="added_values_"></span><span id="ADDED_VALUES_"></span>Valori aggiunti:
 </dt> <dd>
 
-VSS \_ CF \_ NOT \_ SYSTEM \_ STATE
+VSS \_ CF NON STATO DEL \_ \_ \_ SISTEMA
 
 </dd> </dl> </dd> </dl>
 
@@ -85,20 +85,20 @@ VSS \_ CF \_ NOT \_ SYSTEM \_ STATE
 
 VSS \_ VOLSNAP \_ ATTR \_ NO \_ AUTORECOVERY
 
-VSS \_ VOLSNAP \_ ATTR \_ NOT \_ TRANSACTED
+VSS \_ VOLSNAP \_ ATTR \_ NON \_ TRANSAZIONATO
 
 </dd> </dl> </dd> </dl>
 
-## <a name="vss-event-tracing-and-logging"></a>Traccia e registrazione di eventi vss
+## <a name="vss-event-tracing-and-logging"></a>Traccia e registrazione degli eventi di VSS
 
--   Il file di traccia VSS può ora trovarsi in qualsiasi volume locale. Nelle versioni di Windows precedenti a Windows Vista, non è stato possibile trovare il file di traccia VSS in un volume che si trova nel set di copie shadow.
+-   Il file di traccia vss può ora trovarsi in qualsiasi volume locale. Nelle versioni di Windows precedenti Windows Vista, non è stato possibile trovare il file di traccia vss in un volume che si trova nel set di copie shadow.
 -   Molte voci del registro eventi sono state riformulate per renderle più chiare.
--   Tutte le voci del registro eventi vss contengono ora informazioni di contesto.
+-   Tutte le voci del registro eventi di VSS contengono ora informazioni sul contesto.
 
 ## <a name="vss-error-reporting"></a>Segnalazione errori VSS
 
--   È ora possibile recuperare le descrizioni di tutti i codici di errore vss chiamando la funzione [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con il flag FORMAT MESSAGE FROM HMODULE specificato \_ nel parametro \_ \_ *dwFlags.*
--   I messaggi di codice di errore vss sono contenuti in vsstrace.dll. È necessario specificare un handle per questo modulo nel *parametro lpSource.*
+-   Le descrizioni di tutti i codici di errore di VSS possono ora essere recuperate chiamando la funzione [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con il flag FORMAT MESSAGE FROM HMODULE specificato \_ nel parametro \_ \_ *dwFlags.*
+-   I messaggi del codice di errore vss sono contenuti in vsstrace.dll. È necessario specificare un handle per questo modulo nel *parametro lpSource.*
 
 ## <a name="excluding-files-from-shadow-copies"></a>Esclusione di file da copie shadow
 

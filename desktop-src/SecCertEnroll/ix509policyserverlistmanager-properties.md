@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IX509PolicyServerListManager espone le proprietà seguenti.
 ms.assetid: AAD75768-CAA6-4146-80B6-D25301348EEC
-title: Proprietà di IX509PolicyServerListManager
+title: Proprietà IX509PolicyServerListManager
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cae5e7c2f98b8dcba63adc40075689c00be681f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91a1c157354f9bf37872e7ed86dba5680470809704ec2fbbd824cabc5e592b4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117775092"
 ---
-# <a name="ix509policyserverlistmanager-properties"></a>Proprietà di IX509PolicyServerListManager
+# <a name="ix509policyserverlistmanager-properties"></a>Proprietà IX509PolicyServerListManager
 
-L'interfaccia [**IX509PolicyServerListManager**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509policyserverlistmanager) espone le proprietà seguenti.
+[**L'interfaccia IX509PolicyServerListManager**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509policyserverlistmanager) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

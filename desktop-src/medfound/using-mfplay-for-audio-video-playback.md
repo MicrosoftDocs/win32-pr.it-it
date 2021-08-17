@@ -4,29 +4,29 @@ ms.assetid: 6f143c51-ec46-46d4-9a1e-b04fcc0d8bea
 title: MFPlay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0231041afbb32025636ccb5c4738c3cce4cf0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f840888cd0b9f4941531664f811092b51a93eea69eff146afa93d80998a4d45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871324"
 ---
 # <a name="mfplay"></a>MFPlay
 
-\[MFPlay è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. \]
+\[MFPlay è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. \]
 
-MFPlay è un'API Microsoft Media Foundation per la creazione di applicazioni per la riproduzione di file multimediali in C++.
+MFPlay è un'API Microsoft Media Foundation per la creazione di applicazioni di riproduzione multimediale in C++.
 
 In questa sezione vengono trattati gli argomenti seguenti.
 
--   [Introduzione con MFPlay](getting-started-with-mfplay.md)
--   [Esercitazione su MFPlay: riproduzione video](mfplay-tutorial--video-playback.md)
+-   [Attività iniziali con MFPlay](getting-started-with-mfplay.md)
+-   [Esercitazione su MFPlay: Riproduzione di video](mfplay-tutorial--video-playback.md)
 -   [Gestione della sessione audio](managing-the-audio-session.md)
 -   [Come aggiungere effetti audio o video](how-to-add-audio-or-video-effects.md)
 -   [Come ottenere la durata della riproduzione](how-to-get-the-playback-duration.md)
--   [Come riprodurre una clip di file](how-to-play-a-file-clip.md)
+-   [Come riprodurre un clip file](how-to-play-a-file-clip.md)
 -   [Come riprodurre una sequenza di file](how-to-play-a-sequence-of-files.md)
--   [Modalità di ricerca durante la riproduzione](how-to-seek-during-playback.md)
+-   [Come eseguire la ricerca durante la riproduzione](how-to-seek-during-playback.md)
 
 ## <a name="requirements"></a>Requisiti
 

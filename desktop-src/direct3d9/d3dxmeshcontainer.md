@@ -1,7 +1,7 @@
 ---
 description: Incapsula un oggetto mesh in una gerarchia di frame di trasformazione.
 ms.assetid: 50e98230-7dc3-468a-92c4-8165e8fe242b
-title: Struttura D3DXMESHCONTAINER (D3dx9anim. h)
+title: Struttura D3DXMESHCONTAINER (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: f57daea26f42d8dd680d0259199b0df77badf510
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 192b60c34c8a15c34a759bda8fd4f3350956003914f40578bd9c5efa54c772df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731667"
 ---
 # <a name="d3dxmeshcontainer-structure"></a>Struttura D3DXMESHCONTAINER
 
@@ -53,7 +53,7 @@ Tipo: **LPSTR**
 
 </dd> <dd>
 
-Nome della rete.
+Nome della mesh.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Tipo: **[ **D3DXMESHDATA**](d3dxmeshdata.md)**
 
 </dd> <dd>
 
-Tipo di dati nella rete. Vedere [**D3DXMESHDATA**](d3dxmeshdata.md).
+Tipo di dati nella mesh. Vedere [**D3DXMESHDATA**](d3dxmeshdata.md).
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di materiali nella rete.
+Numero di materiali nella mesh.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
 </dd> <dd>
 
-Puntatore a una matrice di tre DWORD per triangolo della mesh che contiene informazioni adiacenza.
+Puntatore a una matrice di tre DWORD per triangolo della mesh che contiene informazioni di adipenza.
 
 </dd> <dt>
 
@@ -119,14 +119,14 @@ Tipo: **[ **LPD3DXSKININFO**](id3dxskininfo.md)**
 
 </dd> <dd>
 
-Puntatore all'interfaccia di informazioni sull'interfaccia personalizzata. Vedere [**ID3DXSkinInfo**](id3dxskininfo.md).
+Puntatore all'interfaccia di informazioni sull'interfaccia utente. Vedere [**ID3DXSkinInfo**](id3dxskininfo.md).
 
 </dd> <dt>
 
 **pNextMeshContainer**
 </dt> <dd>
 
-Tipo: * * * * D3DXMESHCONTAINER **\***
+Tipo: ****D3DXMESHCONTAINER **\***
 
 </dd> <dd>
 
@@ -144,7 +144,7 @@ Un'applicazione può derivare da questa struttura per aggiungere altri dati.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

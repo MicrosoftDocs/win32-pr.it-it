@@ -1,7 +1,7 @@
 ---
 description: Legge i dati binari. Deprecato.
 ms.assetid: 530552c5-bf05-4e86-836d-d25161832c6d
-title: 'Metodo IDirectXFileBinary:: Read (DXFile. h)'
+title: Metodo IDirectXFileBinary::Read (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 60548640fbbb0e67909eab1fed2df24a3465bf95
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2e0c926580df3471ae314d2c6127b38bf3c2231946010a0ab58500125edc6f39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728987"
 ---
-# <a name="idirectxfilebinaryread-method"></a>Metodo IDirectXFileBinary:: Read
+# <a name="idirectxfilebinaryread-method"></a>Metodo IDirectXFileBinary::Read
 
 Legge i dati binari. Deprecato.
 
@@ -42,25 +42,25 @@ HRESULT Read(
 
 <dl> <dt>
 
-*pvData* \[ out\]
+*pvData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore al buffer che riceve i dati che sono stati letti.
+Puntatore al buffer che riceve i dati letti.
 
 </dd> <dt>
 
-*cbSize* \[ in\]
+*cbSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Dimensioni del buffer a cui punta pvData in byte.
+Dimensioni del buffer a cui punta pvData, in byte.
 
 </dd> <dt>
 
-*pcbRead* \[ out\]
+*pcbRead* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDWORD**](../winprog/windows-data-types.md)**
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

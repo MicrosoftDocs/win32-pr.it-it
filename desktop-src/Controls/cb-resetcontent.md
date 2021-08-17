@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_RESETCONTENT (winuser. h)
-description: Rimuove tutti gli elementi dalla casella di riepilogo e il controllo di modifica di una casella combinata.
+title: CB_RESETCONTENT messaggio (Winuser.h)
+description: Rimuove tutti gli elementi dalla casella di riepilogo e dal controllo di modifica di una casella combinata.
 ms.assetid: 55203c34-87ca-46e9-a914-a480d43ccadd
 keywords:
-- Controlli di Windows Message CB_RESETCONTENT
+- CB_RESETCONTENT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3567f31ef98fffe42e53c4811acc786d41ae9f78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4918437d7b0d347e071386486b31e5f4b9d948b4ff55b4c6eea6e3afe93fb1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832249"
 ---
-# <a name="cb_resetcontent-message"></a>\_Messaggio ResetContent CB
+# <a name="cb_resetcontent-message"></a>Messaggio CB \_ RESETCONTENT
 
-Rimuove tutti gli elementi dalla casella di riepilogo e il controllo di modifica di una casella combinata.
+Rimuove tutti gli elementi dalla casella di riepilogo e dal controllo di modifica di una casella combinata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Rimuove tutti gli elementi dalla casella di riepilogo e il controllo di modifica
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Questo messaggio restituisce sempre CB \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Se si crea la casella combinata con uno stile disegnato dal proprietario ma senza lo stile [**CBS \_ HASSTRINGS**](combo-box-styles.md) , il proprietario della casella combinata riceve un messaggio [**WM \_ DeleteItem**](wm-deleteitem.md) per ogni elemento nella casella combinata.
+Se si crea la casella combinata con uno stile disegnato dal proprietario ma senza lo stile [**\_ CBS HASSTRINGS,**](combo-box-styles.md) il proprietario della casella combinata riceve un messaggio [**WM \_ DELETEITEM**](wm-deleteitem.md) per ogni elemento nella casella combinata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 [**CB \_ DELETESTRING**](cb-deletestring.md)
 </dt> <dt>
 
-[**\_DeleteItem WM**](wm-deleteitem.md)
+[**WM \_ DELETEITEM**](wm-deleteitem.md)
 </dt> </dl>
 
  

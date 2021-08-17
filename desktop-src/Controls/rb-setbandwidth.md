@@ -3,7 +3,7 @@ title: RB_SETBANDWIDTH messaggio (Commctrl.h)
 description: Imposta la larghezza per una banda ancorata.
 ms.assetid: dca9dfe9-3e5a-40bb-8de7-a296e6be7d06
 keywords:
-- RB_SETBANDWIDTH dei messaggi Windows controlli
+- RB_SETBANDWIDTH di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:

@@ -1,11 +1,11 @@
 ---
-title: Playlist. moveItem, metodo
+title: Metodo Playlist.moveItem
 description: Il metodo moveItem modifica la posizione di un elemento nella playlist.
 ms.assetid: 82a8de86-4419-48a7-89f8-f7b9084b51d4
 keywords:
 - Metodo moveItem Windows Media Player
-- Metodo moveItem Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo moveItem
+- Metodo moveItem Windows Media Player , classe Playlist
+- Classe playlist Windows Media Player metodo , moveItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e2e48b2987af4becd8c07357ff2eecf137f31d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a725ae53e38d1903d31dc47a3362f90c29fb064e3a785b816de0d0b695998aee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746853"
 ---
-# <a name="playlistmoveitem-method"></a>Playlist. moveItem, metodo
+# <a name="playlistmoveitem-method"></a>Metodo Playlist.moveItem
 
-Il metodo **moveItem** modifica la posizione di un elemento nella playlist.
+Il **metodo moveItem** modifica la posizione di un elemento nella playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ Playlist.moveItem(
 
 <dl> <dt>
 
-*OldIndex* \[ in\]
+*oldIndex* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice precedente.
+**Numero** (**long**) contenente l'indice precedente.
 
 </dd> <dt>
 
-*newIndex* \[ in\]
+*newIndex* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che contiene il nuovo indice.
+**Numero** (**long**) contenente il nuovo indice.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Le playlist archiviate nella libreria possono essere modificate all'esterno del controllo. Assicurarsi di monitorare e gestire tutti gli eventi appropriati correlati alla playlist, in modo che l'ordine degli elementi nella playlist non venga modificato in modo imprevisto.
+Le playlist archiviate nella libreria possono cambiare all'esterno del controllo. Assicurarsi di monitorare e gestire tutti gli eventi appropriati correlati alle playlist in modo che l'ordine degli elementi nella playlist non cambi in modo imprevisto.
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -82,13 +82,13 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 <dl> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

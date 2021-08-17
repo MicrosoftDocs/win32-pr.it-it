@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.presetTitle
-description: Il metodo presetTitle Recupera il nome del set di impostazioni dell'equalizzatore con l'indice specificato.
+description: Il metodo presetTitle recupera il nome del set di impostazioni dell'equalizzatore con l'indice specificato.
 ms.assetid: 2f6da4ee-9515-49ee-b00f-ed78d7c116da
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. presetTitle
+- EQUALIZERSETTINGS.presetTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f46f1a97bc0fceb2671bb07b14ef62785c712f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1fbf0d36ebb8b0ec16c45afd2089f3ee72d647f692210d3e5b21c9ea411c2e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748723"
 ---
 # <a name="equalizersettingspresettitle"></a>EQUALIZERSETTINGS.presetTitle
 
-Il metodo **presetTitle** Recupera il nome del set di impostazioni dell'equalizzatore con l'indice specificato.
+Il **metodo presetTitle** recupera il nome del set di impostazioni dell'equalizzatore con l'indice specificato.
 
 ``` syntax
         elementID.presetTitle(index)
@@ -35,13 +35,13 @@ Il metodo **presetTitle** Recupera il nome del set di impostazioni dell'equalizz
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice del set di impostazioni.
+**Numero** (**long**) contenente l'indice dei set di impostazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa**.
+Questo metodo restituisce un **oggetto String**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Questo metodo restituisce una **stringa**.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

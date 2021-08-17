@@ -1,9 +1,9 @@
 ---
 title: PREVBUTTON
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | PREVBUTTON
+description: Si tratta di un elemento BUTTON predefinito con i valori predefiniti seguenti. | PREVBUTTON
 ms.assetid: 3beb8084-9edb-4ccd-b611-8365ddcbdff1
 keywords:
-- Media Player Windows PREVBUTTON
+- PREVBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0db4c997083a264eafe689d8c9fd2f58dc0681a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd628233e213849fa4e8689dd742b1da5932f87bfb5cffe61e414b375f09e83b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746813"
 ---
 # <a name="prevbutton"></a>PREVBUTTON
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **elemento BUTTON predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.controls.previous()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.previous"
 
 ## <a name="remarks"></a>Commenti
 
-Per eseguire l'override di tutte le proprietà di questo pulsante, è possibile specificarle in modo esplicito.
+È possibile eseguire l'override di tutte le proprietà di questo pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per eseguire l'override di tutte le proprietà di questo pulsante, è possibile 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

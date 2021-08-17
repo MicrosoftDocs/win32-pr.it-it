@@ -87,7 +87,7 @@ Nel metodo **LoadAssets creare** un heap per le query di occlusione.
 
 ## <a name="enable-alpha-blending"></a>Abilitare la fusione alfa
 
-Questo esempio disegna due quad e illustra una query di occlusione binaria. Il quad nella parte anteriore viene animato sullo schermo e quello posteriore occasionalmente viene occluded. Nel metodo **LoadAssets** la fusione alfa è abilitata per questo esempio in modo da poter vedere in quale punto D3D considera il quad in indietro occluded.
+Questo esempio disegna due quad e illustra una query di occlusione binaria. Il quad nella parte anteriore viene animato sullo schermo e quello nella parte posteriore viene occasionalmente occluded. Nel metodo **LoadAssets** la fusione alfa è abilitata per questo esempio in modo da poter vedere in quale punto D3D considera il quad in indietro occluded.
 
 ``` syntax
      // Enable alpha blending so we can visualize the occlusion query results.
@@ -349,7 +349,7 @@ Parzialmente occluso:
 
 <dl> <dt>
 
-[Procedura per il codice D3D12](d3d12-code-walk-throughs.md)
+[Analisi del codice D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
 [Predicazione](predication.md)

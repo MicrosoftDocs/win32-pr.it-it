@@ -5,8 +5,8 @@ ms.assetid: 3ffc5975-7acb-4844-89b0-bf245b3bd316
 keywords:
 - file multimediali I/O, file RIFF
 - I/O di file, file RIFF
-- input e output (I/O),file RIFF
-- I/O (input e output),file RIFF
+- input e output (I/O), file RIFF
+- I/O (input e output), file RIFF
 - resource interchange file format (RIFF)
 - RIFF (formato di file di interscambio di risorse)
 - RIFF I/O
@@ -23,7 +23,7 @@ ms.locfileid: "118372687"
 ---
 # <a name="performing-file-io-on-riff-files"></a>Esecuzione di operazioni di I/O su file RIFF
 
-L'esempio seguente illustra come aprire un file RIFF per le operazioni di I/O memorizzate nel buffer, nonché come decrescere, ascendere e leggere blocchi "RIFF".
+L'esempio seguente illustra come aprire un file RIFF per l'I/O memorizzato nel buffer, nonché come scendere, ascendere e leggere blocchi "RIFF".
 
 
 ```C++

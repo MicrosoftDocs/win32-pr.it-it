@@ -1,12 +1,12 @@
 ---
-title: Proprietà Session. timeout (WSManDisp. h)
-description: Imposta e ottiene la quantità massima di tempo, in millisecondi, di attesa dell'applicazione client Gestione remota Windows per completare le operazioni.
+title: Proprietà Session.Timeout (WSManDisp.h)
+description: Imposta e ottiene la quantità massima di tempo, in millisecondi, di attesa dell'applicazione client Windows gestione remota per completare le operazioni.
 ms.assetid: ca35722a-1fd3-48bf-a11b-4624cb81aae3
 ms.tgt_platform: multiple
 keywords:
-- Gestione remota Windows proprietà timeout
-- Gestione remota Windows proprietà timeout, oggetto sessione
-- Gestione remota Windows oggetto sessione, proprietà timeout
+- Proprietà Timeout Windows gestione remota
+- Proprietà Timeout Windows, oggetto Session di Gestione remota
+- Oggetto Session Windows proprietà Remote Management, Timeout
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6c28b5284d9061e1c80fb3c66193d394c347a18
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4731e4f76ee890bc925a14b69c8ffb3d50e47406939b76183359021242a5fadc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743242"
 ---
-# <a name="sessiontimeout-property"></a>Proprietà Session. timeout
+# <a name="sessiontimeout-property"></a>Session.Timeout - proprietà
 
-Imposta e ottiene la quantità massima di tempo, in millisecondi, di attesa dell'applicazione client Gestione remota Windows per completare le operazioni.
+Imposta e ottiene la quantità massima di tempo, in millisecondi, di attesa dell'applicazione client Windows gestione remota per completare le operazioni.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -47,11 +47,11 @@ Valore di timeout, in millisecondi. Quando viene superato il valore di timeout, 
 
 Il valore di timeout può essere impostato prima di ogni operazione eseguita dall'agente. Se non viene specificato un valore di timeout, l'agente imposta il valore di timeout.
 
-Durante un'operazione di enumerazione, il valore di timeout non può essere reimpostato mentre la risorsa viene enumerata.
+Durante un'operazione di enumerazione, il valore di timeout non può essere reimpostato durante l'enumerazione della risorsa.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene avviato un processo di Calc.exe utilizzando il metodo [**create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) della classe del [**\_ processo Win32**](/windows/desktop/CIMWin32Prov/win32-process) di WMI. Il parametro *strInputParameters* contiene i parametri di input in formato XML. Lo script specifica un timeout per la sessione.
+Nell'esempio di codice VBScript seguente viene avviato Calc.exe processo usando [**il metodo Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) della classe WMI [**Win32 \_ Process.**](/windows/desktop/CIMWin32Prov/win32-process) Il *parametro strInputParameters* contiene i parametri di input in formato XML. Lo script specifica un timeout per la sessione.
 
 
 ```VB
@@ -107,9 +107,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

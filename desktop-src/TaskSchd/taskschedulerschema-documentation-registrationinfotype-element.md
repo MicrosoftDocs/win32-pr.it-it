@@ -45,9 +45,9 @@ Specifica qualsiasi documentazione aggiuntiva per l'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Per le applicazioni di scripting, la documentazione aggiuntiva dell'attività viene specificata usando [**laRegistrationInfo.Doc**](registrationinfo-documentation.md) proprietà .
+Per le applicazioni di scripting, la documentazione aggiuntiva dell'attività viene specificata usando [**RegistrationInfo.Docproprietà .**](registrationinfo-documentation.md)
 
-Per le applicazioni C++, la documentazione aggiuntiva delle attività viene specificata usando la proprietà [**IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
+Per le applicazioni C++, la documentazione aggiuntiva dell'attività viene specificata usando la proprietà [**IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
 
 ## <a name="requirements"></a>Requisiti
 

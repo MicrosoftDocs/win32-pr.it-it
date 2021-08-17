@@ -1,12 +1,12 @@
 ---
-title: Metodo Session. Invoke (WSManDisp. h)
+title: Metodo Session.Invoke (WSManDisp.h)
 description: Richiama un metodo e restituisce i risultati della chiamata del metodo.
 ms.assetid: c83d0631-2efb-47d9-abcf-ab0c8de06c36
 ms.tgt_platform: multiple
 keywords:
-- Metodo Invoke Gestione remota Windows
-- Metodo Invoke Gestione remota Windows, oggetto Session
-- Gestione remota Windows oggetto sessione, metodo Invoke
+- Richiamare il metodo Windows gestione remota
+- Richiamare il metodo Windows gestione remota , oggetto Session
+- Oggetto session Windows gestione remota, metodo Invoke
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 117c688b616f377730524a09234b1dc38a4996c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac2afa20390890c53a7362d776c1df7c84d0a638e7fcb10269c901d194a50dea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743252"
 ---
-# <a name="sessioninvoke-method"></a>Metodo Session. Invoke
+# <a name="sessioninvoke-method"></a>Metodo Session.Invoke
 
 Richiama un metodo e restituisce i risultati della chiamata del metodo.
 
@@ -46,21 +46,21 @@ Session.Invoke( _
 
 <dl> <dt>
 
-*actionUri* \[ in\]
+*actionUri* \[ Pollici\]
 </dt> <dd>
 
 URI del metodo da richiamare.
 
 </dd> <dt>
 
-*resourceUri* \[ in\]
+*resourceUri* \[ Pollici\]
 </dt> <dd>
 
 Identificatore della risorsa da recuperare.
 
-Questo parametro può contenere uno dei seguenti elementi:
+Questo parametro può contenere uno degli elementi seguenti:
 
--   URI con o senza [*selettori*](windows-remote-management-glossary.md). Nell'esempio seguente Visual Basic Scripting Edition (VBScript) la chiave viene specificata da `Win32_Service?Name=winmgmt` .
+-   URI con o senza [*selettori*](windows-remote-management-glossary.md). Nell'esempio Visual Basic Scripting Edition (VBScript) seguente la chiave viene specificata da `Win32_Service?Name=winmgmt` .
 
     ```VB
     strResourceUri = "http://schemas.microsoft.com/wbem/wsman/1/" _ 
@@ -69,12 +69,12 @@ Questo parametro può contenere uno dei seguenti elementi:
 
     
 
--   Oggetto [**resourceLocator**](resourcelocator.md) che può contenere selettori, [*frammenti*](windows-remote-management-glossary.md)o [*Opzioni*](windows-remote-management-glossary.md).
--   Riferimento a endpoint [*WS-Addressing*](windows-remote-management-glossary.md) come descritto nello standard [protocollo WS-Management](ws-management-protocol.md) . Per ulteriori informazioni sulla specifica pubblica per il protocollo WS-Management, vedere la pagina relativa all' [Indice delle specifiche di gestione](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
+-   [**Oggetto ResourceLocator**](resourcelocator.md) che può contenere selettori, [*frammenti*](windows-remote-management-glossary.md)o [*opzioni*](windows-remote-management-glossary.md).
+-   [*Informazioni di riferimento sull'endpoint WS-Addressing,*](windows-remote-management-glossary.md) come descritto nella [protocollo WS-Management](ws-management-protocol.md) standard. Per altre informazioni sulla specifica pubblica per il protocollo WS-Management, vedere [Pagina di indice delle specifiche di gestione](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
 
 </dd> <dt>
 
-*parametri* \[ di in\]
+*parametri* \[ Pollici\]
 </dt> <dd>
 
 Rappresentazione XML dell'input per il metodo. Questa stringa deve essere specificata o questo metodo avrà esito negativo.
@@ -94,7 +94,7 @@ Rappresentazione XML dell'output del metodo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene avviato un processo di Calc.exe. Il parametro *strInputParameters* contiene i parametri di input in formato XML. L'unico parametro di input obbligatorio per il metodo [**create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) della classe [**di \_ processo WMI Win32**](/windows/desktop/CIMWin32Prov/win32-process) è la riga di comando da eseguire.
+Nell'esempio di codice VBScript seguente viene avviato Calc.exe processo. Il *parametro strInputParameters* contiene i parametri di input in formato XML. L'unico parametro di input obbligatorio [**per il metodo Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) della classe WMI [**Win32 \_ Process**](/windows/desktop/CIMWin32Prov/win32-process) è la riga di comando da eseguire.
 
 
 ```VB
@@ -139,7 +139,7 @@ End Sub
 
 
 
-Nell'esempio di codice VBScript seguente viene chiamato il metodo **Session. Invoke** per eseguire il metodo [**StopService**](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service) del [**\_ servizio Win32**](/windows/desktop/CIMWin32Prov/win32-service). Il metodo **StopService** non dispone di parametri di input. Tuttavia, il metodo **Invoke** richiede una stringa XML nel parametro *Parameters* .
+Nell'esempio di codice VBScript seguente viene chiamato **il metodo Session.Invoke** per eseguire il [**metodo StopService**](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service) del [**servizio Win32. \_**](/windows/desktop/CIMWin32Prov/win32-service) Il **metodo StopService** non dispone di parametri di input. Tuttavia, il **metodo Invoke** richiede una stringa XML nel *parametro parameters.*
 
 
 ```VB
@@ -203,9 +203,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c7bef8671b38ec2e8208a6de0ec7542cf28ffa44
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ef71912dd5c8efeb25f2ad30dd9746b1cb493aff2aa28dd2008ef764a1135ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731299"
 ---
 # <a name="d3dxquaternionsquad-function-d3dx9mathh"></a>Funzione D3DXQuaternionSquad (D3dx9math.h)
 
-Interpolazione tra quaternioni, usando l'interpolazione quadrangolare sferica.
+Interpola tra quaternioni, usando l'interpolazione quadrangolare sferica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ D3DXQUATERNION* D3DXQuaternionSquad(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che indica la distanza da interpolare tra i quaternioni.
+Parametro che indica la distanza di interpolazione tra i quaternioni.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risu
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione usa la sequenza seguente di operazioni di interpolazione lineare sferica:
+Questa funzione usa la sequenza seguente di operazioni di interpolazione lineare sferiche:
 
 
 ```
@@ -118,7 +118,7 @@ Slerp(Slerp(pQ1, pC, t), Slerp(pA, pB, t), 2t(1 - t))
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXQuaternionSquad** può essere usata come parametro per un'altra funzione.
 
-Per un esempio di interpolazione tra quaternioni, vedere l'esempio SkinnedMesh. È possibile ottenere questo esempio e ottenere informazioni da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
+Per un esempio di interpolazione tra quaternioni, vedere l'esempio SkinnedMesh. È possibile ottenere questo esempio e ottenere informazioni su di esso da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
 
 Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 

@@ -1,7 +1,7 @@
 ---
 description: La funzione GetFrameNumber restituisce il numero di un frame.
 ms.assetid: 97d343a3-2a1e-47d7-bfc2-b63f8d84b29d
-title: Funzione GetFrameNumber (Netmon. h)
+title: Funzione GetFrameNumber (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: de04fa513fab98b1a82d036f6f40a6c67cdda3ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a92f5818c9b7f89c73179abb70aa53e3639de9ab8da533489a1fdd7a5a05ddfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795649"
 ---
-# <a name="getframenumber-function"></a>GetFrameNumber (funzione)
+# <a name="getframenumber-function"></a>Funzione GetFrameNumber
 
-La funzione **GetFrameNumber** restituisce il numero di un frame.
+La **funzione GetFrameNumber** restituisce il numero di un frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ DWORD WINAPI GetFrameNumber(
 
 <dl> <dt>
 
-*hFrame* \[ in\]
+*hFrame* \[ Pollici\]
 </dt> <dd>
 
 Handle per il frame.
@@ -50,11 +50,11 @@ Handle per il frame.
 
 Se la funzione ha esito positivo, il valore restituito è un numero di frame in base zero.
 
-Se la funzione non ha esito positivo, il valore restituito è meno uno (-1).
+Se la funzione non riesce, il valore restituito è meno uno (-1).
 
 ## <a name="remarks"></a>Commenti
 
-Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFrameNumber** .
+[*Esperti*](e.md) e [*parser*](p.md) possono chiamare la **funzione GetFrameNumber.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFra
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IX509ExtensionTemplateName espone i metodi seguenti.
 ms.assetid: 9045207C-37EC-4CB3-A771-DA437E02AD04
-title: Metodi IX509ExtensionTemplateName
+title: Metodi di IX509ExtensionTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39d48824068d9f866b3edb217893fb6f90d01716
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d302f58972b81ed15a54448fa3d64c0954bc1c831206bdf4439c649f84226a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117775288"
 ---
-# <a name="ix509extensiontemplatename-methods"></a>Metodi IX509ExtensionTemplateName
+# <a name="ix509extensiontemplatename-methods"></a>Metodi di IX509ExtensionTemplateName
 
-L'interfaccia [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) espone i metodi seguenti.
+[**L'interfaccia IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -5,7 +5,7 @@ ms.assetid: eda4829a-4869-4557-8fe9-8061a1e0f586
 keywords:
 - Metodo getProxySettings Windows Media Player
 - Metodo getProxySettings Windows Media Player, interfaccia IWMPNetwork
-- Interfaccia IWMPNetwork Windows Media Player metodo , getProxySettings
+- Interfaccia IWMPNetwork Windows Media Player, metodo getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -56,19 +56,19 @@ Implements IWMPNetwork.getProxySettings
 *bstrProtocol* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**System.String che** rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Oggetto **System.Int32** che è uno dei valori seguenti.
+**System.Int32** che è uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | Un server proxy non è in uso.                                                |
+| 0     | Non è in uso un server proxy.                                                |
 | 1     | Vengono usate le impostazioni proxy per il browser corrente (valide solo per HTTP). |
 | 2     | Vengono usate le impostazioni proxy specificate manualmente.                            |
 | 3     | Le impostazioni proxy vengono rilevate automaticamente.                                      |
@@ -83,7 +83,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice seguente usa **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti di Player, in un'etichetta. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
+L'esempio di codice seguente usa **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti del lettore, in un'etichetta. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp

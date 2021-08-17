@@ -47,7 +47,7 @@ Dichiara un intervallo di registri a cui sarà possibile accedere in base all'in
 <td><span id="minRegisterM"></span><span id="minregisterm"></span><span id="MINREGISTERM"></span><em>minRegisterM</em><br/></td>
 <td>[in] Primo registro a cui accedere in base all'indice. <br/>
 <ul>
-<li><em>minRegister</em> è <strong>v</strong> per un vertice o un pixel shader di input oppure <strong>o per</strong> un registro di output del vertex shader.</li>
+<li><em>minRegister</em> è <strong>v</strong> per un vertice o un pixel shader di input oppure <strong>o per</strong> un registro di output di vertex shader.</li>
 <li><em>M</em> è un numero intero che indica il numero di registro.</li>
 </ul></td>
 </tr>

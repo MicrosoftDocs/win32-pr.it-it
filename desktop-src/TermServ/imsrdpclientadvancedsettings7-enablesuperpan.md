@@ -4,11 +4,11 @@ description: Specifica o recupera un valore booleano che indica se SuperPan è a
 ms.assetid: 0d0ef89e-75f5-460a-ad55-01f8d9478df5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà EnableSuperPan
-- Servizi Desktop remoto proprietà EnableSuperPan, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà EnableSuperPan
-- Servizi Desktop remoto proprietà EnableSuperPan, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà EnableSuperPan
+- Proprietà EnableSuperPan Servizi Desktop remoto
+- Proprietà EnableSuperPan Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà EnableSuperPan
+- Proprietà EnableSuperPan Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà EnableSuperPan
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21ac0664b99dc0533d3e26840445ef22c8c08385
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd48fbb42f65e42b0cdeee3560c93361c49283eecfa4ee3a792a19f6081b07b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757343"
 ---
-# <a name="imsrdpclientadvancedsettings7enablesuperpan-property"></a>Proprietà IMsRdpClientAdvancedSettings7:: EnableSuperPan
+# <a name="imsrdpclientadvancedsettings7enablesuperpan-property"></a>Proprietà IMsRdpClientAdvancedSettings7::EnableSuperPan
 
-Specifica o recupera un valore booleano che indica se SuperPan è abilitato o disabilitato. SuperPan è una funzionalità che consente a un utente di spostarsi facilmente in un desktop remoto in modalità schermo intero, quando le dimensioni del desktop remoto sono maggiori delle dimensioni della finestra client corrente. Anziché utilizzare le barre di scorrimento per spostarsi sul desktop, l'utente può puntare al bordo della finestra e il desktop remoto scorre automaticamente in tale direzione. SuperPan non supporta più di un monitor.
+Specifica o recupera un valore booleano che indica se SuperPan è abilitato o disabilitato. SuperPan è una funzionalità che consente a un utente di spostarsi facilmente in un desktop remoto in modalità schermo intero, quando le dimensioni del desktop remoto sono maggiori delle dimensioni della finestra del client corrente. Invece di usare le barre di scorrimento per spostarsi sul desktop, l'utente può puntare al bordo della finestra e il desktop remoto scorrerà automaticamente in tale direzione. SuperPan non supporta più monitor.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -54,7 +54,7 @@ HRESULT get_EnableSuperPan(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore **\_ bool Variant** che specifica se SuperPan è abilitato. Il valore **Variant \_ true** specifica che SuperPan è abilitato.
+Valore **VARIANT \_ BOOL** che specifica se SuperPan è abilitato. Il valore **VARIANT \_ TRUE specifica** che SuperPan è abilitato.
 
 ## <a name="requirements"></a>Requisiti
 

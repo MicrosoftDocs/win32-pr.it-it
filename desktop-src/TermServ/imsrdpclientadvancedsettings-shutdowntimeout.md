@@ -1,26 +1,26 @@
 ---
 title: Proprietà shutdownTimeout di IMsRdpClientAdvancedSettings
-description: Specifica il tempo di attesa, in secondi, per la risposta del server a una richiesta di disconnessione.
+description: Specifica il periodo di tempo, in secondi, per l'attesa che il server risponda a una richiesta di disconnessione.
 ms.assetid: 3fa935dc-d4b0-433b-ab67-a644fcf09006
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà shutdownTimeout
-- Servizi Desktop remoto proprietà shutdownTimeout, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà shutdownTimeout
+- proprietà shutdownTimeout Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà shutdownTimeout
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 868a011a0ce484f5bb2dd7d1ec610f4e3a436898
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b07af4f1292db7b11e0ae21a5a8fffdd680c60091379fb72128de97e5131b2fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757377"
 ---
-# <a name="imsrdpclientadvancedsettingsshutdowntimeout-property"></a>Proprietà IMsRdpClientAdvancedSettings:: shutdownTimeout
+# <a name="imsrdpclientadvancedsettingsshutdowntimeout-property"></a>Proprietà IMsRdpClientAdvancedSettings::shutdownTimeout
 
-Specifica il tempo di attesa, in secondi, per la risposta del server a una richiesta di disconnessione.
+Specifica il periodo di tempo, in secondi, per l'attesa che il server risponda a una richiesta di disconnessione.
 
-Se il server non risponde entro il tempo specificato, il controllo client si disconnette.
+Se il server non risponde entro l'ora specificata, il controllo client si disconnette.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -90,11 +90,11 @@ Nuova ora, in secondi. Il valore predefinito della proprietà è 10. Il valore m
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

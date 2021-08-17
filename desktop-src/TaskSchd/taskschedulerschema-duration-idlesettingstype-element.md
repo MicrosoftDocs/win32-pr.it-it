@@ -1,9 +1,9 @@
 ---
-title: Duration (idleSettingsType)-elemento
-description: Specifica per quanto tempo il computer deve trovarsi in uno stato di inattività prima dell'esecuzione dell'attività.
+title: Elemento Duration (idleSettingsType)
+description: Specifica per quanto tempo il computer deve essere inattivo prima dell'esecuzione dell'attività.
 ms.assetid: 89584694-0685-44e2-b8b7-69e47ee28d5d
 keywords:
-- Utilità di pianificazione elemento Duration
+- Elemento Duration Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 31ad092693c72dcc33357f4b7e21436e2cba8af8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46523caa10f96d7dd76947540932107106ad0d5c8a4b7f26fc6f6d5bebb40325
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356568"
 ---
-# <a name="duration-idlesettingstype-element"></a>Duration (idleSettingsType)-elemento
+# <a name="duration-idlesettingstype-element"></a>Elemento Duration (idleSettingsType)
 
-Specifica per quanto tempo il computer deve trovarsi in uno stato di inattività prima dell'esecuzione dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni,' t'è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Il valore minimo è di un minuto. Per ulteriori informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
+Specifica per quanto tempo il computer deve essere inattivo prima dell'esecuzione dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni, 'T' è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Il valore minimo è un minuto. Per altre informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
 
 ``` syntax
 <xs:element name="Duration"
@@ -41,7 +41,7 @@ Specifica per quanto tempo il computer deve trovarsi in uno stato di inattività
 </xs:element>
 ```
 
-L'elemento è definito dal tipo complesso [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) .
+L'elemento è definito dal tipo [**complesso idleSettingsType.**](taskschedulerschema-idlesettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -49,19 +49,19 @@ L'elemento è definito dal tipo complesso [**idleSettingsType**](taskschedulersc
 
 | Elemento                                                                       | Derivato da                                                                 | Descrizione                                                                                       |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Specifica il modo in cui il Utilità di pianificazione esegue le attività quando il computer si trova in uno stato inattivo.<br/> |
+| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Specifica il modo in cui Utilità di pianificazione le attività quando il computer è in uno stato di inattività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per la programmazione di script, questa impostazione di inattività viene specificata tramite la proprietà [**IdleSettings. IdleDuration**](idlesettings-idleduration.md) .
+Per la programmazione di script, questa impostazione di inattività viene specificata usando la [**proprietà IdleSettings.IdleDuration.**](idlesettings-idleduration.md)
 
-Per la programmazione in C++, questa impostazione di inattività viene specificata tramite la proprietà [**IIdleSettings:: IdleDuration**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_idleduration) .
+Per la programmazione C++, questa impostazione di inattività viene specificata usando la [**proprietà IIdleSettings::IdleDuration.**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_idleduration)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un'impostazione inattiva che consente 5 minuti per l'avvio dell'attività.
+Nel codice XML seguente viene definita un'impostazione di inattività che consente 5 minuti per l'avvio dell'attività.
 
 
 ```XML
@@ -78,8 +78,8 @@ Il codice XML seguente definisce un'impostazione inattiva che consente 5 minuti 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -87,7 +87,7 @@ Il codice XML seguente definisce un'impostazione inattiva che consente 5 minuti 
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

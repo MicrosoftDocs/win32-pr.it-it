@@ -4,12 +4,12 @@ description: Panoramica del ciclo di vita di un'istanza di virtualizzazione Proj
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/17/2018
 ms.topic: article
-ms.openlocfilehash: 567eff1f7b8acf330dba7c652e2e12b724072b9b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bbaaf5eca5481f3959e3e5afeb36a8cf6b264c939e8eb2cc9d84ba501d3c8530
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792385"
 ---
 # <a name="virtualization-instance-lifecycle"></a>Ciclo di vita dell'istanza di virtualizzazione
 
@@ -20,19 +20,19 @@ L'applicazione provider gestisce una o più istanze di virtualizzazione.  Ogni i
 3. Runtime
 4. Arresta
 
-Si noti che dopo l'arresto di un'istanza di virtualizzazione, il provider non deve ricrearlo per riutilizzarlo.  Può semplicemente riavviarlo.
+Si noti che dopo l'arresto di un'istanza di virtualizzazione il provider non deve ri-crearla per riusarla.  Può semplicemente avviarlo di nuovo.
 
-> **Nota**: in questa sezione vengono illustrati esempi di API ProjFS.  Ogni esempio ha lo scopo di illustrare l'utilizzo delle API di base.  Per la documentazione delle opzioni non usate in questi esempi, vedere le informazioni di [riferimento sull'API ProjFS](/windows/desktop/api/_projfs).
+> **Nota:** questa sezione mostra esempi di API ProjFS.  Ogni esempio ha lo scopo di illustrare l'utilizzo delle API di base.  Per la documentazione delle opzioni non utilizzate in questi esempi, vedere le informazioni di [riferimento sull'API ProjFS.](/windows/desktop/api/_projfs)
 
 ## <a name="creating-a-virtualization-root"></a>Creazione di una radice di virtualizzazione
 
-Prima che un provider possa avviare l'istanza di virtualizzazione che proietta gli elementi nel file system locale, deve creare la radice di virtualizzazione.  La radice di virtualizzazione è la directory in cui il provider proietta una struttura ad albero di directory e file.
+Prima che un provider possa avviare l'istanza di virtualizzazione che proietta gli elementi file system, deve creare la radice di virtualizzazione.  La radice di virtualizzazione è la directory in cui il provider proietta un albero di directory e file.
 
 Per creare una radice di virtualizzazione, il provider deve:
 
-1. Creare una directory che funga da radice di virtualizzazione.
+1. Creare una directory da utilizzare come radice di virtualizzazione.
 
-    Il provider crea una directory che funge da radice di virtualizzazione usando, ad esempio **[CreateDirectory](/windows/desktop/api/fileapi/nf-fileapi-createdirectoryw)**:
+    Il provider crea una directory da usare come radice di virtualizzazione usando, ad esempio **[CreateDirectory](/windows/desktop/api/fileapi/nf-fileapi-createdirectoryw)**:
 
     ```C++
     HRESULT hr;
@@ -47,7 +47,7 @@ Per creare una radice di virtualizzazione, il provider deve:
 
 1. Creare un ID istanza di virtualizzazione.
 
-    Ogni istanza di virtualizzazione ha un ID univoco denominato _ID istanza di virtualizzazione_.  Questo valore viene utilizzato dal sistema per identificare l'istanza di virtualizzazione a cui è associato il contenuto.
+    Ogni istanza di virtualizzazione ha un ID univoco denominato _ID istanza di virtualizzazione_.  Il sistema usa questo valore per identificare a quale istanza di virtualizzazione è associato il contenuto.
 
     ```C++
     GUID instanceId;
@@ -75,17 +75,17 @@ Per creare una radice di virtualizzazione, il provider deve:
     }
     ```
 
-Il provider deve solo creare la radice di virtualizzazione una sola volta per ogni istanza di virtualizzazione.  Una volta creata una radice, l'istanza associata può essere avviata ripetutamente e arrestata senza ricreare la radice.
+Il provider deve creare la radice di virtualizzazione una sola volta per ogni istanza di virtualizzazione.  Dopo aver creato una radice, l'istanza associata può essere avviata e arrestata ripetutamente senza ricreare la radice.
 
 ## <a name="starting-a-virtualization-instance"></a>Avvio di un'istanza di virtualizzazione
 
-Una volta creata la radice di virtualizzazione, il provider deve avviare l'istanza di virtualizzazione.  Questo segnala a ProjFS che il provider è pronto a ricevere i callback e a fornire i dati.
+Dopo aver creato la radice di virtualizzazione, il provider deve avviare l'istanza di virtualizzazione.  Ciò segnala a ProjFS che il provider è pronto per ricevere callback e fornire dati.
 
 Per avviare l'istanza di virtualizzazione, il provider deve:
 
 1. Configurare la tabella di callback.
 
-    ProjFS comunica con il provider richiamando le routine di callback implementate dal provider.  Il provider popola un [PRJ_CALLBACKS](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_callbacks) struct con i puntatori alle relative routine di callback.
+    ProjFS comunica con il provider richiamando le routine di callback implementate dal provider.  Il provider popola uno [struct PRJ_CALLBACKS](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_callbacks) con puntatori alle routine di callback.
 
     ```C++
     PRJ_CALLBACKS callbackTable;
@@ -103,9 +103,9 @@ Per avviare l'istanza di virtualizzazione, il provider deve:
     callbackTable.CancelCommandCallback = nullptr;
     ```
 
-1. Avviare l'istanza di.
+1. Avviare l'istanza di .
 
-    Il provider chiama **[PrjStartVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)** per avviare l'istanza di virtualizzazione.
+    Il provider chiama **[PrjStartVirtualizing per](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)** avviare l'istanza di virtualizzazione.
 
     ```C++
     PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT instanceHandle;
@@ -120,23 +120,23 @@ Per avviare l'istanza di virtualizzazione, il provider deve:
         return;
     }
     ```
-    Il parametro _InstanceHandle_ di **PrjStartVirtualizing** restituisce un handle per l'istanza di virtualizzazione.  Il provider usa questo handle quando chiamano altre API ProjFS.
+    Il parametro _instanceHandle_ di **PrjStartVirtualizing** restituisce un handle all'istanza di virtualizzazione.  Il provider usa questo handle quando chiama altre API ProjFS.
 
 ## <a name="virtualization-instance-runtime"></a>Runtime dell'istanza di virtualizzazione
 
-Una volta che la chiamata a **PrjStartVirtualizing** restituisce, ProjFS richiamerà le routine di callback del provider in risposta a file System operazioni nell'istanza di virtualizzazione.  Per informazioni sul modo in cui il provider è in grado di gestire diverse operazioni di file system, vedere le sezioni seguenti:
+Al termine della chiamata a **PrjStartVirtualizing,** ProjFS richiama le routine di callback del provider in risposta alle file system nell'istanza di virtualizzazione.  Per informazioni su come il provider può gestire varie operazioni file system, vedere le sezioni seguenti:
 
 * [Enumerazione di file e directory](enumerating-files-and-directories.md)
 * [Fornire dati di file](providing-file-data.md)
-* [Notifiche delle operazioni del file System](file-system-operation-notifications.md)
+* [Notifiche delle operazioni del file system](file-system-operation-notifications.md)
 * [Gestione delle modifiche della visualizzazione](handling-view-changes.md)
 
 ## <a name="shutting-down-a-virtualization-instance"></a>Arresto di un'istanza di virtualizzazione
 
-Per segnalare a ProjFS che il provider vuole arrestare la ricezione di callback e fornire dati, il provider deve arrestare l'istanza di virtualizzazione.  A tale scopo, il provider chiama **[PrjStopVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstopvirtualizing)**, passando l'handle all'istanza di virtualizzazione ricevuta dalla chiamata a **PrjStartVirtualizing**.
+Per segnalare a ProjFS che il provider vuole interrompere la ricezione di callback e fornire dati, il provider deve arrestare l'istanza di virtualizzazione.  A tale scopo, il provider chiama **[PrjStopVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstopvirtualizing)**, passando l'handle all'istanza di virtualizzazione ricevuta dalla chiamata a **PrjStartVirtualizing**.
 
 ```C++
 PrjStopVirtualizing(instanceHandle);
 ```
 
-Si noti che finché la chiamata non restituisce, ProjFS può continuare a richiamare le routine di callback del provider.
+Si noti che fino a quando questa chiamata non viene restituita, ProjFS può continuare a richiamare le routine di callback del provider.

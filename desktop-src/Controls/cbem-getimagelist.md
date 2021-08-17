@@ -1,9 +1,9 @@
 ---
-title: Messaggio CBEM_GETIMAGELIST (COMmctrl. h)
-description: Ottiene l'handle per un elenco di immagini assegnato a un controllo ComboBoxEx.
+title: CBEM_GETIMAGELIST messaggio (Commctrl.h)
+description: Ottiene l'handle a un elenco di immagini assegnato a un controllo ComboBoxEx.
 ms.assetid: d577f920-b8f7-4d51-9507-765b7f925408
 keywords:
-- Controlli di Windows Message CBEM_GETIMAGELIST
+- CBEM_GETIMAGELIST di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d143b8483fb5fb97ebd65fa2a98640089f6d548
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2564739a1904f93c9b1837a1afce2ae73645675ce04818fc9e76ea2ee38946f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414081"
 ---
-# <a name="cbem_getimagelist-message"></a>CBEM \_ messaggio GETimagine
+# <a name="cbem_getimagelist-message"></a>Messaggio CBEM \_ GETIMAGELIST
 
-Ottiene l'handle per un elenco di immagini assegnato a un controllo ComboBoxEx.
+Ottiene l'handle a un elenco di immagini assegnato a un controllo ComboBoxEx.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Ottiene l'handle per un elenco di immagini assegnato a un controllo ComboBoxEx.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per l'elenco di immagini assegnato al controllo, in caso di esito positivo; in caso contrario, **null** .
+Restituisce l'handle all'elenco di immagini assegnato al controllo in caso di esito positivo oppure **NULL in caso** contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'handle per l'elenco di immagini assegnato al controllo, in caso di
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

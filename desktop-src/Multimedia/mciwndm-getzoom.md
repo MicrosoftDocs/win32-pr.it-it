@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_GETZOOM messaggio (Vfw.h)
-description: Il messaggio MCIWNDM \_ GETZOOM recupera il valore di zoom corrente usato da un dispositivo MCI. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndGetZoom.
+description: Il messaggio MCIWNDM \_ GETZOOM recupera il valore di zoom corrente usato da un dispositivo MCI. È possibile inviare questo messaggio in modo esplicito o usando la macro MCIWndGetZoom.
 ms.assetid: 92db8df2-515a-4616-a0f5-245d466ba379
 keywords:
 - MCIWNDM_GETZOOM messaggio Windows Multimediali
@@ -23,7 +23,7 @@ ms.locfileid: "118374142"
 ---
 # <a name="mciwndm_getzoom-message"></a>Messaggio MCIWNDM \_ GETZOOM
 
-Il **messaggio MCIWNDM \_ GETZOOM** recupera il valore di zoom corrente usato da un dispositivo MCI. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndGetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom)
+Il **messaggio MCIWNDM \_ GETZOOM** recupera il valore di zoom corrente usato da un dispositivo MCI. È possibile inviare questo messaggio in modo esplicito o usando la macro [**MCIWndGetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce i valori più recenti usati con [**MCIWNDM \_ SETZOOM**](mciwndm-setzoom.md).
+Restituisce i valori più recenti usati con [**MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito 100 indica che l'immagine non è ingrandita. Il valore 200 indica che l'immagine viene ingrandita al doppio delle dimensioni originali. Il valore 50 indica che l'immagine è ridotta alla metà delle dimensioni originali.
+Un valore restituito pari a 100 indica che l'immagine non è ingrandita. Il valore 200 indica che l'immagine viene ingrandita al doppio delle dimensioni originali. Il valore 50 indica che l'immagine è ridotta a metà delle dimensioni originali.
 
 ## <a name="requirements"></a>Requisiti
 

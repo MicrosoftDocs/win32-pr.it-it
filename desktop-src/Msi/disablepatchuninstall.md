@@ -1,5 +1,5 @@
 ---
-description: Se questo criterio di sistema per computer è impostato su 1, le patch non possono essere rimosse dal computer da un utente o da un amministratore.
+description: Se questo criterio di sistema per computer è impostato su 1, le patch non possono essere rimosse dal computer da un utente o un amministratore.
 ms.assetid: e964cb2b-ceaa-4122-bf54-cf1eeab4bc25
 title: DisablePatchUninstall
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118378569"
 ---
 # <a name="disablepatchuninstall"></a>DisablePatchUninstall
 
-Se questo criterio di sistema [per](system-policy.md) computer è impostato su 1, le patch non possono essere rimosse dal computer da un utente o da un amministratore. Il Windows può comunque rimuovere una patch che non è più applicabile a un prodotto. Se questo criterio non è impostato, un utente può rimuovere una patch dal computer solo se all'utente sono stati concessi i privilegi per rimuovere la patch. Ciò può dipendere dal fatto che l'utente sia un amministratore, se sono impostate le impostazioni dei criteri [DisableMsi](disablemsi.md) e [AlwaysInstallElevated](alwaysinstallelevated.md) e se la patch è stata installata in un contesto gestito per utente, non gestito per utente o per computer.
+Se questo criterio di [sistema](system-policy.md) per computer è impostato su 1, le patch non possono essere rimosse dal computer da un utente o un amministratore. Il Windows installer può comunque rimuovere una patch che non è più applicabile a un prodotto. Se questo criterio non è impostato, un utente può rimuovere una patch dal computer solo se all'utente sono stati concessi privilegi per rimuovere la patch. Ciò può dipendere dal fatto che l'utente sia un amministratore, se le impostazioni dei criteri [DisableMsi](disablemsi.md) e [AlwaysInstallElevated](alwaysinstallelevated.md) siano impostate e se la patch è stata installata in un contesto gestito per utente, per utente non gestito o per computer.
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ Criteri \_ software del** \\ **computer** \\ **locale Programma** di installazione \\  \\ **Windows** \\ **Microsoft**
+**HKEY \_ Criteri \_ software di LOCAL MACHINE** \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo di dati
 

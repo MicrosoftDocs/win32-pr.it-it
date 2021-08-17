@@ -1,7 +1,7 @@
 ---
-description: Imposta o Recupera il valore di una proprietà condivisa.
+description: Imposta o recupera il valore di una proprietà condivisa.
 ms.assetid: 19ed8d50-3ac1-408e-9f25-09f284d025f1
-title: Classe SharedProperty (ComSvcs. h)
+title: Classe SharedProperty (ComSvcs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,22 +11,22 @@ api_name:
 - SharedProperty
 api_type:
 - COM
-ms.openlocfilehash: a7a7857ad280ad722601bdced6c25d04b03dc0b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b0daa74c7329f8dc9f2566852d863715d22fd556ce3d4674dfaf246c17504b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915772"
 ---
 # <a name="sharedproperty-class"></a>Classe SharedProperty
 
-Imposta o Recupera il valore di una proprietà condivisa.
+Imposta o recupera il valore di una proprietà condivisa.
 
-Per informazioni generali sull'utilizzo del Gestione proprietà condiviso in COM+, vedere [Gestione proprietà condiviso com+](com--shared-property-manager.md).
+Per informazioni generali sull'uso del Gestione proprietà condiviso in COM+, vedere [Com+ Shared Gestione proprietà](com--shared-property-manager.md).
 
 ## <a name="when-to-implement"></a>Quando implementare
 
-Questa classe è implementata da COM+.
+Questa classe viene implementata da COM+.
 
 
 
@@ -44,9 +44,9 @@ Usare questa classe per accedere ai metodi di [**ISharedProperty**](/windows/des
 
 ## <a name="remarks"></a>Commenti
 
-È possibile creare un oggetto **SharedProperty** usando i metodi [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) di [**ISharedPropertyGroup**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup).
+È possibile creare un **oggetto SharedProperty** usando i [**metodi CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) di [**ISharedPropertyGroup.**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup)
 
-Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferimento alla libreria dei tipi di servizi COM+. Viene creato un oggetto SharedProperty chiamando i metodi [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) dell'oggetto [**SharedPropertyGroup**](sharedpropertygroup.md) .
+Per usare questa classe da Microsoft Visual Basic, aggiungere un riferimento alla libreria dei tipi dei servizi COM+. Un oggetto SharedProperty viene creato chiamando i [**metodi CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) dell'oggetto [**SharedPropertyGroup.**](sharedpropertygroup.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferiment
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>ComSvcs. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>ComSvcs.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferiment
 [**SharedPropertyGroup**](sharedpropertygroup.md)
 </dt> <dt>
 
-[**SharedPropertyGroupManager**](sharedpropertygroupmanager.md)
+[**Sharedpropertygroupmanager**](sharedpropertygroupmanager.md)
 </dt> </dl>
 
  

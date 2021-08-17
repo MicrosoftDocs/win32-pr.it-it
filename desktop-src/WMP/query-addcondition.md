@@ -1,11 +1,11 @@
 ---
-title: Metodo query. addCondition
-description: Il metodo addCondition aggiunge una condizione all'oggetto query usando la logica AND.
+title: Metodo Query.addCondition
+description: Il metodo addCondition aggiunge una condizione all'oggetto Query usando la logica AND.
 ms.assetid: 29b5d372-eddf-4b70-882b-d2dde79d9287
 keywords:
 - Metodo addCondition Windows Media Player
-- Metodo addCondition Media Player Windows, classe query
-- Classe di query Windows Media Player, metodo addCondition
+- Metodo addCondition Windows Media Player , classe Query
+- Query class Windows Media Player , metodo addCondition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4035d2877cf0081e9153277c88feb545a529568d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53a3eed0a7923b93861eabc30d115a7726046d0595b7c57625d9a9afaf9c7523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746590"
 ---
-# <a name="queryaddcondition-method"></a>Metodo query. addCondition
+# <a name="queryaddcondition-method"></a>Metodo Query.addCondition
 
-Il metodo **addCondition** aggiunge una condizione all'oggetto **query** usando la logica and.
+Il **metodo addCondition** aggiunge una condizione all'oggetto **Query** usando la logica AND.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ Query.addCondition(
 
 <dl> <dt>
 
-*attributo* \[ in\]
+*attributo* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome dell'attributo.
 
 </dd> <dt>
 
-*operatore* \[ di in\]
+*operatore* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente l'operatore. Vedere la sezione Osservazioni per i valori supportati.
+**Stringa contenente** l'operatore . Vedere Osservazioni per i valori supportati.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il valore dell'attributo.
@@ -71,13 +71,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Le query composte con **query** non fanno distinzione tra maiuscole e minuscole
+Per le query composte che **usano Query non** viene eseguita la distinzione tra maiuscole e minuscole.
 
-Un elenco di valori per il parametro *attribute* è reperibile nella sezione [riferimento all'attributo alfabetico](alphabetical-attribute-reference.md) .
+Un elenco di valori per il parametro *attribute* è disponibile nella sezione Informazioni di riferimento [sull'attributo alfabetico.](alphabetical-attribute-reference.md)
 
-Le condizioni contenute in un oggetto **query** sono organizzate in gruppi di condizioni. Più condizioni all'interno di un gruppo di condizioni sono sempre concatenate usando e la logica. I gruppi di condizioni sono sempre concatenati l'uno all'altro usando la logica o. Per avviare un nuovo gruppo di condizioni, chiamare **query. beginNextGroup**.
+Le condizioni contenute in un **oggetto Query** sono organizzate in gruppi di condizioni. Più condizioni all'interno di un gruppo di condizioni vengono sempre concatenate usando la logica AND. I gruppi di condizioni vengono sempre concatenati tra loro usando la logica OR. Per avviare un nuovo gruppo di condizioni, chiamare **Query.beginNextGroup**.
 
-Nella tabella seguente sono elencati i valori supportati per *operator*.
+Nella tabella seguente sono elencati i valori supportati per *l'operatore*.
 
 
 
@@ -100,7 +100,7 @@ Nella tabella seguente sono elencati i valori supportati per *operator*.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente vengono utilizzati **query. addCondition** e **query. beginNextGroup** per eseguire una query di esempio.
+Nell'JScript seguente vengono utilizzati **Query.addCondition** e **Query.beginNextGroup** per eseguire una query di esempio.
 
 
 ```JScript
@@ -149,19 +149,19 @@ var Playlist = Player.mediaCollection.getPlaylistByQuery(
 
 <dl> <dt>
 
-[**Mediacollection. createQuery**](mediacollection-createquery.md)
+[**MediaCollection.createQuery**](mediacollection-createquery.md)
 </dt> <dt>
 
-[**Mediacollection. getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
+[**MediaCollection.getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
 </dt> <dt>
 
-[**Mediacollection. getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
+[**MediaCollection.getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
 </dt> <dt>
 
-[**Oggetto query**](query-object.md)
+[**Oggetto Query**](query-object.md)
 </dt> <dt>
 
-[**Query. beginNextGroup**](query-beginnextgroup.md)
+[**Query.beginNextGroup**](query-beginnextgroup.md)
 </dt> </dl>
 
  

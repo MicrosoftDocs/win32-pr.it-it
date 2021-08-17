@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.splineTension
-description: L'attributo splineTension specifica o recupera la tensione della spline per il controllo dell'equalizzatore.
+description: L'attributo splineTension specifica o recupera la tensione spline per il controllo equalizzatore.
 ms.assetid: bd208310-eb31-4787-8975-bca921db0aae
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. splineTension
+- EQUALIZERSETTINGS.splineTension Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 656e2a42504c87861f713a9e504a85a6727dff32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fa964380b669dd05006e2cca7b0877ca0a9d289e4a29c6e2ba17383e6145eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748676"
 ---
 # <a name="equalizersettingssplinetension"></a>EQUALIZERSETTINGS.splineTension
 
-L'attributo **splineTension** specifica o recupera la tensione della spline per il controllo dell'equalizzatore.
+**L'attributo splineTension** specifica o recupera la tensione spline per il controllo equalizzatore.
 
 ``` syntax
         elementID.splineTension
@@ -29,7 +29,7 @@ L'attributo **splineTension** specifica o recupera la tensione della spline per 
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**float**) compreso tra 0,0 (nessuna tensione) e 10,0 (tensione completa) e il valore predefinito è 3,0.
+Questo attributo è un numero di lettura/scrittura **(** **float**) compreso tra 0,0 (nessuna tensione) e 10,0 (tensione completa) con un valore predefinito di 3,0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**float**) compreso tra 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

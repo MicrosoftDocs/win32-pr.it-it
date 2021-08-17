@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture2DArray:: Load (int, int, uint)'
-description: "Legge i dati della trama e restituisce lo stato dell'operazione. | Funzione Texture2DArray:: Load (int, int, uint)"
+title: Funzione Texture2DArray::Load(int,int,uint)
+description: Legge i dati della trama e restituisce lo stato dell'operazione. | Funzione Texture2DArray::Load(int,int,uint)
 ms.assetid: 551EA931-6D24-478B-B741-3DD5B1E030E2
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0a1dd61506eba7ea6e334f2b3e3f89dd6bca5873
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0907ddb4f5100ae6bffc81214ed0bed0d7857462e12c4625f179d6b769915569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723586"
 ---
-# <a name="texture2darrayloadintintuint-function"></a>Funzione Texture2DArray:: Load (int, int, uint)
+# <a name="texture2darrayloadintintuint-function"></a>Funzione Texture2DArray::Load(int,int,uint)
 
 Legge i dati della trama e restituisce lo stato dell'operazione.
 
@@ -41,7 +41,7 @@ Legge i dati della trama e restituisce lo stato dell'operazione.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -50,21 +50,21 @@ Coordinate di trama.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Offset applicato alle coordinate di trama prima del campionamento.
+Offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
@@ -72,13 +72,13 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato; passar
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**Texture2DArray**](sm5-object-texture2darray.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto Texture2DArray.**](sm5-object-texture2darray.md)
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Metodi Load](texture2darray-load.md)
+[Metodi di caricamento](texture2darray-load.md)
 </dt> </dl>
 
  

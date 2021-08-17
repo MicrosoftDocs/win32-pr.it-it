@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.enableSplineTension
-description: L'attributo enableSplineTension specifica o recupera un valore che indica se la tensione spline è abilitata.
+description: L'attributo enableSplineTension specifica o recupera un valore che indica se è abilitata la spline.
 ms.assetid: ca52feac-3161-4fd0-976c-abbfb2a238f2
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. enableSplineTension
+- EQUALIZERSETTINGS.enableSplineTension Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34158d6f22710b1c9e87946624cbd0f1a00c53bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6dda8deec60b1b2427f046f50ca843f68272ed26cb71470674137491ac2db1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748848"
 ---
 # <a name="equalizersettingsenablesplinetension"></a>EQUALIZERSETTINGS.enableSplineTension
 
-L'attributo **enableSplineTension** specifica o recupera un valore che indica se la tensione spline è abilitata.
+**L'attributo enableSplineTension** specifica o recupera un valore che indica se è abilitata la spline.
 
 ``` syntax
         elementID.enableSplineTension
@@ -29,11 +29,11 @@ L'attributo **enableSplineTension** specifica o recupera un valore che indica se
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un valore **booleano** di lettura/scrittura e il valore predefinito è true.
+Questo attributo è un valore booleano **di** lettura/scrittura con valore predefinito true.
 
 ## <a name="remarks"></a>Commenti
 
-L'abilitazione della tensione spline consente all'utente di regolare più agevolmente le larghezze di banda dell'equalizzatore, in modo che non vi siano salti di grandi dimensioni tra i livelli di frequenza.
+L'abilitazione della limitazione della spline consente all'utente di regolare più agevolmente le larghezze di banda dell'equalizzatore, in modo che non siano presenti salti di grandi dimensioni tra i livelli di frequenza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ L'abilitazione della tensione spline consente all'utente di regolare più agevol
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

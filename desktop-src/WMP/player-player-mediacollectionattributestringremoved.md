@@ -46,7 +46,7 @@ Player.MediaCollectionAttributeStringRemoved(
 *bstrAttribName* 
 </dt> <dd>
 
-**Stringa** che specifica il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di riferimento Windows Media Player [attributi.](attribute-reference.md)
+**Stringa** che specifica il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di Windows Media Player [sugli attributi.](attribute-reference.md)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Questo evento non restituisce un valore.
 
 Quando un elemento multimediale viene rimosso dalla libreria, i relativi metadati vengono rimossi **dall'oggetto MediaCollection** e questo evento viene generato per ogni attributo rimosso.
 
-Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 

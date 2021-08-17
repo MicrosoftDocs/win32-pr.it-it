@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene usato solo quando si esegue la comunicazione remota del Windows Media Player remoto.
+Questo metodo viene usato solo quando si esegue la comunicazione remota Windows Media Player remoto.
 
 **Windows Media Player 10 Mobile:** Questo metodo non è supportato.
 
@@ -56,7 +56,7 @@ Questo metodo viene usato solo quando si esegue la comunicazione remota del Wind
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

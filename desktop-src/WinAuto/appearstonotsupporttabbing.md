@@ -23,14 +23,14 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-L'applicazione non supporta la navigazione da tastiera standard (TAB o MAIUSC+TAB).
+L'applicazione non supporta lo spostamento da tastiera standard (TAB o MAIUSC+TAB).
 
-Questo problema causa problemi di usabilità per gli utenti che si affidano a un'utilità per la lettura dello schermo o alla tastiera per la navigazione perché nessuno degli elementi nell'applicazione è individuabile.
+Questo problema causa problemi di usabilità per gli utenti che si basano su un'utilità per la lettura dello schermo o sulla tastiera per lo spostamento perché nessuno degli elementi nell'applicazione è individuabile.
 
 ## <a name="possible-causes"></a>Possibili cause
 
 -   Il framework dell'interfaccia utente dell'applicazione non supporta MSAA.
--   MSAA non viene implementato in alcun controllo nell'applicazione.
+-   MsAA non è implementato in alcun controllo nell'applicazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

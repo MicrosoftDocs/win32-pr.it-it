@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio seguente vengono illustrati gli aspetti dell'utilizzo dell'oggetto Store. Mostra gli archivi di apertura nell'archivio di \_ memoria CAPICOM \_ , l' \_ archivio utente corrente di CAPICOM \_ e i \_ percorsi di \_ \_ archiviazione del computer locale \_ di CAPICOM.
+description: L'esempio seguente illustra gli aspetti dell'uso dell'oggetto Store. Mostra l'apertura di archivi nei percorsi CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE e \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE.
 ms.assetid: bfb7ff48-1d6b-404f-9dd4-6de1898354b7
 title: Uso di archivi in posizioni diverse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e22fa4d4eca4748d6c4652a8b33d22a1db492a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e57e1c1584754f0b02b61438a7a6a83694c36cd77c633c52f6bec216721d7c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117971407"
 ---
 # <a name="using-stores-in-different-locations"></a>Uso di archivi in posizioni diverse
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Nell'esempio seguente vengono illustrati gli aspetti dell'utilizzo dell'oggetto [**Store**](store.md) . Mostra gli archivi di apertura nell'archivio di \_ memoria CAPICOM \_ , l' \_ archivio utente corrente di CAPICOM \_ e i \_ percorsi di \_ \_ archiviazione del computer locale \_ di CAPICOM.
+L'esempio seguente illustra gli aspetti dell'uso [**dell'oggetto**](store.md) Store. Mostra l'apertura di archivi nei percorsi CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE e \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE.
 
-Nell'esempio viene illustrata l'esportazione di [*certificati*](../secgloss/c-gly.md) da un [*Archivio*](../secgloss/c-gly.md)aperto, la scrittura dei certificati esportati in un file, la loro lettura e l'importazione in un altro archivio. I certificati appena importati vengono quindi enumerati e visualizzati.
+L'esempio illustra [*l'esportazione*](../secgloss/c-gly.md) di certificati da un archivio [*aperto,*](../secgloss/c-gly.md)la scrittura dei certificati esportati in un file, la lettura e l'importazione dei certificati in un archivio diverso. I certificati appena importati vengono quindi enumerati e visualizzati.
 
-In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **di Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
 
 ```VB

@@ -4,12 +4,12 @@ description: Nella tabella seguente sono elencati gli elementi dell'interfaccia 
 ms.assetid: c09c14bd-61c4-4d4a-895c-0eaa26be0998
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e68ecc782f7a30bc7e6019ca4ef08774e8974da
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 3d18b4a69ce0bb017bc1528f9e66ba7aff43b24d535e1115973076882678b786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744967"
 ---
 # <a name="user-interface-element-reference"></a>Interfaccia utente riferimento all'elemento
 
@@ -28,13 +28,13 @@ Nella tabella seguente sono elencati gli elementi dell'interfaccia utente fornit
 | [**Finestra del desktop**](desktop-window.md)           | [**Controllo dispositivo di scorrimento**](slider-control.md)             |
 | [**Finestra di dialogo**](dialog-box.md)                   | [**Testo statico**](static-text.md)                   |
 | [**Controllo Edit**](edit-control.md)               | [**Controllo barra di stato**](status-bar-control.md)     |
-| [**Controllo Intestazione**](header-control.md)           | [**Cambia finestra**](switch-window.md)               |
+| [**Controllo Header**](header-control.md)           | [**Cambia finestra**](switch-window.md)               |
 | [**Controllo del tasto di scelta rapida**](hot-key-control.md)         | [**Controllo Tab**](tab-control.md)                   |
 | [**Casella di riepilogo**](list-box.md)                       | [**Controllo Barra degli strumenti**](toolbar-control.md)           |
-| [**Controllo visualizzazione elenco**](list-view-control.md)     | [**Controllo Tooltip**](tooltip-control.md)           |
-| [**Finestra del client MDI**](mdi-client-window.md)     | [**Barra del titolo**](title-bar.md)                       |
+| [**Controllo visualizzazione elenco**](list-view-control.md)     | [**Controllo descrizione comando**](tooltip-control.md)           |
+| [**Finestra client MDI**](mdi-client-window.md)     | [**Barra del titolo**](title-bar.md)                       |
 | [**Barra dei menu**](menu-bar.md)                       | [**Controllo visualizzazione struttura ad albero**](tree-view-control.md)       |
-| [**Voce di menu**](menu-item.md)                     | [**Controllo di up-down**](up-down-control.md)           |
+| [**Voce di menu**](menu-item.md)                     | [**Controllo up-down**](up-down-control.md)           |
 | [**Controllo calendario mensile**](calendar-control.md) | [**Finestra**](window.md)                             |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Crea un nuovo elenco degli elementi usati più di recente.
+description: Crea un nuovo elenco MRU (Most Recently Used).
 title: Funzione CreateMRUListW
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: b2d9e3c7-8151-45ef-9658-bd33a87b4c9c
-ms.openlocfilehash: 34cd3dd9e5b9e62bbdd13b31d95e7205e4427de6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e5f97d1f50dae081eac00014415129d8a4c858a0e6e2c3406e1a6c4f6905c71c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861398"
 ---
 # <a name="createmrulistw-function"></a>Funzione CreateMRUListW
 
-Crea un nuovo elenco degli elementi usati più di recente.
+Crea un nuovo elenco MRU (Most Recently Used).
 
 ## <a name="syntax"></a>Sintassi
 

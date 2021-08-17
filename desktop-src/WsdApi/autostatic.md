@@ -1,19 +1,19 @@
 ---
-description: Indica se WsdCodeGen deve provare a contrassegnare automaticamente determinati campi generati come statici.
+description: Indica se WsdCodeGen deve tentare di contrassegnare automaticamente determinati campi generati come statici.
 ms.assetid: 0c858567-e17a-46a0-b3ff-a0dc8089b0cd
 title: Elemento autoStatic
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9414470f56021d475fb7cf52e570ac2793228445
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2f6b9a447e964c90354c909fc0399276d8ed69e7d1dfb3a493d5590a6470d0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738674"
 ---
 # <a name="autostatic-element"></a>Elemento autoStatic
 
-Indica se WsdCodeGen deve provare a contrassegnare automaticamente determinati campi generati come statici. Questo comportamento è abilitato per impostazione predefinita.
+Indica se WsdCodeGen deve tentare di contrassegnare automaticamente determinati campi generati come statici. Questo comportamento è abilitato per impostazione predefinita.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -49,7 +49,7 @@ I valori possibili sono 1 (abilitato, predefinito) e 0 (disabilitato). **L'abili
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

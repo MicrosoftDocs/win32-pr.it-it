@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/Mood
-description: L'attributo WM/mood è un nome di categoria per lo stato del contenuto.
+description: L'attributo WM/Mood è un nome di categoria per l'atmosfera del contenuto.
 ms.assetid: 06ba1a64-19e3-450b-bcd7-19df4da44554
 keywords:
-- Windows Media Player attributo WM/Mood
+- Attributi WM/Mood Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d81e2ac1cbf6645a3ce955f3045cfdf5c19b5d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 040a0e4d16d49e358979b460e55e51451d041dfbdc13dcd7129fda1767d62d19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332086"
 ---
 # <a name="wmmood-attribute"></a>Attributo WM/Mood
 
-L'attributo **WM/mood** è un nome di categoria per lo stato del contenuto.
+**L'attributo WM/Mood** è un nome di categoria per l'atmosfera del contenuto.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -34,9 +34,9 @@ Questo attributo viene archiviato solo nel file multimediale digitale.
 
 **Mood** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMMood.
+La Windows Media Format SDK per questo attributo è g \_ wszWMMood.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -52,7 +52,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: EQUALIZERSETTINGS.bypass
-description: L'attributo bypass specifica o recupera un valore che indica se il filtro equalizzatore viene ignorato nel grafico dei filtri.
+description: L'attributo bypass specifica o recupera un valore che indica se il filtro dell'equalizzatore viene ignorato nel grafico dei filtri.
 ms.assetid: b189a6f1-e0d0-4cfa-9a99-73d3ccd705e0
 keywords:
 - EQUALIZERSETTINGS.bypass Windows Media Player
@@ -21,7 +21,7 @@ ms.locfileid: "117748939"
 ---
 # <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS.bypass
 
-**L'attributo bypass** specifica o recupera un valore che indica se il filtro equalizzatore viene ignorato nel grafico dei filtri.
+**L'attributo bypass** specifica o recupera un valore che indica se il filtro dell'equalizzatore viene ignorato nel grafico dei filtri.
 
 ``` syntax
         elementID.bypass
@@ -35,8 +35,8 @@ Questo attributo è un valore booleano di **lettura/scrittura.**
 
 | Valore | Descrizione                                |
 |-------|--------------------------------------------|
-| true  | Valore predefinito. Il filtro equalizzatore viene ignorato. |
-| false | Viene usato il filtro equalizzatore.              |
+| true  | Valore predefinito. Il filtro equalizer viene ignorato. |
+| false | Viene usato il filtro equalizer.              |
 
 
 

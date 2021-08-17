@@ -7,16 +7,16 @@ MSHAttr:
 title: ModemDMConfigProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f4593d1b55b4c95a2ec185fe5545ad7eb04141
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b370c353cee43a001a35b8e5bd407547818d705e21334aff07d41e854f334cd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066361"
 ---
 # <a name="span-idwwan_profile_v4element_modemdmconfigprofilespanmodemdmconfigprofile"></a><span id="WWAN_profile_v4.element_ModemDMConfigProfile"></span>ModemDMConfigProfile
 
-Profilo di configurazione modem DM.
+Profilo di configurazione dm modem.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -52,7 +52,7 @@ Profilo di configurazione modem DM.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
@@ -70,15 +70,15 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><a href="element-1-adminenable.md">AdminEnable</a></td>
-<td><p>Specifica se il profilo è abilitato in amministrazione. Si tratta di un nuovo elemento per V4.</p></td>
+<td><p>Specifica se il profilo è abilitato a livello amministrativo. Si tratta di un nuovo elemento per la versione 4.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-adminroamcontrol.md">AdminRoamControl</a></td>
-<td><p>Specifica se il profilo è gestito dal roaming amministrativo. Questo elemento è nuovo per V4. Il valore di questo elemento è un valore <a href="simpletype-roamcontroltype.md"><strong>roamControlType</strong></a> . Si tratta di un elemento facoltativo. Se non viene specificato alcun valore, <strong>AllRoamAllowed</strong> è il valore predefinito.</p></td>
+<td><p>Specifica se il profilo è controllato dal roaming amministrativo. Questo elemento è nuovo per la versione 4. Il valore di questo elemento è un <a href="simpletype-roamcontroltype.md"><strong>valore roamControlType.</strong></a> Si tratta di un elemento facoltativo. se non viene specificato alcun valore, l'impostazione predefinita <strong>è AllRoamAllowed.</strong></p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-1-apnid.md">ApnID</a></td>
-<td><p>ID APN associato a questo profilo. Questo elemento è una novità di V4 ed è facoltativo.</p></td>
+<td><p>ID APN associato a questo profilo. Questo elemento è nuovo nella versione 4 ed è facoltativo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-context.md">Contesto</a></td>
@@ -86,24 +86,24 @@ Nessuna.
 </tr>
 <tr class="odd">
 <td><a href="element-1-name.md">Nome</a></td>
-<td><p>Nome del profilo. Per ulteriori informazioni, vedere la documentazione relativa all'elemento <a href="../mbn/schema-name-mbnprofile-element.md"><strong>nome</strong></a> V1.</p></td>
+<td><p>Nome del profilo. Per altre informazioni, vedere la documentazione per l'elemento <a href="../mbn/schema-name-mbnprofile-element.md"><strong>Nome</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-oemconnectionid.md">OemConnectionId</a></td>
-<td><p>ID di connessione OEM per la configurazione del modem DM.</p></td>
+<td><p>ID di connessione OEM per la configurazione dm del modem.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-1-profilecreationtype.md">ProfileCreationType (in ModemDMConfigProfile)</a></td>
-<td><p>Specifica il modo in cui è stato creato il profilo DM del modem.</p>
-<p>Questo valore viene usato per decidere se un utente può eliminare il profilo. Gli utenti possono eliminare solo i profili <strong>UserProvisioned</strong> .</p></td>
+<td><p>Specifica la modalità di creazione del profilo dm del modem.</p>
+<p>Questo valore viene usato per decidere se un utente può eliminare il profilo. Gli utenti possono eliminare <strong>solo i profili UserProvisioned.</strong></p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-roamapplicability.md">RoamApplicability</a></td>
-<td><p>Specifica che il profilo è attivo solo quando la condizione di roaming corrente è quella specificata. In caso contrario, il profilo non è applicabile e non può essere utilizzato per attivare un contesto del protocollo PDP (Packet Data Protocol). Il valore di questo elemento deve essere un valore <a href="simpletype-roamapplicabilitytype.md"><strong>roamApplicabilityType</strong></a> valido.</p></td>
+<td><p>Specifica che questo profilo è attivo solo quando la condizione di roaming corrente è quella specificata. In caso contrario, il profilo non è applicabile e non può essere usato per attivare un contesto PDP (Packet Data Protocol). Il valore di questo elemento deve essere un valore <a href="simpletype-roamapplicabilitytype.md"><strong>roamApplicabilityType</strong></a> valido.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-1-simiccid.md">SimIccID</a></td>
-<td><p>Numero di identifcation SIM per i dispositivi GSM. Per altri dettagli, vedere la documentazione per l'elemento V1 <a href="../mbn/schema-simiccid-mbnprofile-element.md"><strong>SimIccID</strong></a> .</p></td>
+<td><p>Numero di identificazione SIM per i dispositivi GSM. Per altre informazioni, vedere la documentazione per l'elemento <a href="../mbn/schema-simiccid-mbnprofile-element.md"><strong>SimIccID</strong></a> v1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +112,7 @@ Nessuna.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-Questo elemento (documento) più esterno potrebbe non essere contenuto da altri elementi.
+Questo elemento più esterno (documento) potrebbe non essere contenuto da altri elementi.
 
 ## <a name="requirements"></a>Requisiti
 

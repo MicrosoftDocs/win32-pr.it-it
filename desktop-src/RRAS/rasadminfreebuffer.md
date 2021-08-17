@@ -1,9 +1,9 @@
 ---
-title: Funzione RasAdminFreeBuffer (rassapi. h)
+title: Funzione RasAdminFreeBuffer (Rassapi.h)
 description: La funzione RasAdminFreeBuffer libera la memoria allocata da RAS per conto del chiamante.
 ms.assetid: 6dfbba22-3af1-4771-8c22-506996f30c6b
 keywords:
-- RAS funzione RasAdminFreeBuffer
+- Funzione RasAdminFreeBuffer RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf86a3005a2b865b2096eddc5ffa9c0c33f848a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9550c072840fabf5d862e32f3bbdc6c26d3b32faf9cf6bf6dcfeae1be400e0a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789096"
 ---
-# <a name="rasadminfreebuffer-function"></a>RasAdminFreeBuffer (funzione)
+# <a name="rasadminfreebuffer-function"></a>Funzione RasAdminFreeBuffer
 
-\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti di Windows NT Server 4,0. Restituisce la \_ chiamata \_ di errore non \_ implementata in Windows Server 2003. Le applicazioni devono utilizzare la funzione [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree) .\]
+\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti Windows NT Server 4.0. Restituisce ERROR \_ CALL NOT IMPLEMENTED in Windows Server \_ \_ 2003. Le applicazioni devono usare [**la funzione MprAdminBufferFree.**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree)\]
 
-La funzione **RasAdminFreeBuffer** libera la memoria allocata da RAS per conto del chiamante.
+La **funzione RasAdminFreeBuffer** libera la memoria allocata da RAS per conto del chiamante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ DWORD RasAdminFreeBuffer(
 
 <dl> <dt>
 
-*Puntatore* \[ in\]
+*Puntatore* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al buffer da liberare.
@@ -51,7 +51,7 @@ Puntatore al buffer da liberare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito può essere il codice di errore seguente.
 
@@ -59,17 +59,17 @@ Se la funzione ha esito negativo, il valore restituito può essere il codice di 
 
 | Valore                                                                                                    | Significato                                        |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**ERRORE \_ parametro non valido \_**</dt> </dl> | Il parametro del *puntatore* non è valido.<br/> |
+| <dl> <dt>**ERRORE \_ PARAMETRO NON \_ VALIDO**</dt> </dl> | Il *parametro Pointer* non è valido.<br/> |
 
 
 
  
 
-Non sono disponibili informazioni estese sull'errore per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Non sono disponibili informazioni estese sugli errori per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare la funzione **RasAdminFreeBuffer** per liberare i buffer allocati dalle funzioni [**RasAdminPortEnum**](rasadminportenum.md) e [**RasAdminPortGetInfo**](rasadminportgetinfo.md) .
+Usare la **funzione RasAdminFreeBuffer** per liberare i buffer allocati dalle funzioni [**RasAdminPortEnum**](rasadminportenum.md) [**e RasAdminPortGetInfo.**](rasadminportgetinfo.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Utilizzare la funzione **RasAdminFreeBuffer** per liberare i buffer allocati dal
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/> | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
-| Libreria<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
+| Intestazione<br/>                | <dl> <dt>Rassapi.h</dt> </dl>   |
+| Libreria<br/>               | <dl> <dt>Rassapi.lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
 
