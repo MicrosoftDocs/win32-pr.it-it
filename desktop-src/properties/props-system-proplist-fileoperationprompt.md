@@ -13,7 +13,7 @@ ms.locfileid: "118723003"
 ---
 # <a name="systemproplistfileoperationprompt"></a>System.PropList.FileOperationPrompt
 
-Elenco di proprietà da visualizzare nella finestra di dialogo di conferma dell'operazione su file. Le proprietà con valori vuoti non verranno visualizzate. Se questo elenco non viene specificato, viene invece usato l'elenco delle proprietà InfoTip. Eseguire la registrazione con il valore regvalue di "FileOperationPrompt".
+Elenco di proprietà da visualizzare nella finestra di dialogo di conferma dell'operazione su file. Le proprietà con valori vuoti non verranno visualizzate. Se questo elenco non viene specificato, viene usato l'elenco delle proprietà InfoTip. Eseguire la registrazione con il valore regvalue di "FileOperationPrompt".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

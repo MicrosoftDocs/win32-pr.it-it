@@ -1,5 +1,5 @@
 ---
-description: Il metodo Deliver recapita un campione multimediale al pin di input connesso.
+description: Il metodo Deliver recapita un campione di supporti al pin di input connesso.
 ms.assetid: b871df84-c69e-42eb-9da9-c25996bf08c3
 title: Metodo CBaseOutputPin.Deliver (Amfilter.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "119341381"
 ---
 # <a name="cbaseoutputpindeliver-method"></a>Metodo CBaseOutputPin.Deliver
 
-Il `Deliver` metodo recapita un campione multimediale al pin di input connesso.
+Il `Deliver` metodo recapita un campione di supporti al pin di input connesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -70,9 +70,9 @@ Questo metodo chiama il [**metodo IMemInputPin::Receive**](/windows/desktop/api/
 
 Rilasciare l'esempio dopo aver chiamato questo metodo. Il pin di input potrebbe contenere un conteggio dei riferimenti nell'esempio, quindi non riutilizzare l'esempio. Chiamare sempre il [**metodo CBaseOutputPin::GetDeliveryBuffer**](cbaseoutputpin-getdeliverybuffer.md) per ottenere un nuovo esempio.
 
-Mantenere la sezione critica del filtro prima di chiamare questo metodo. In caso contrario, il pin potrebbe essere disconnesso durante la chiamata al metodo . Se il filtro usa un thread di lavoro per recapitare i campioni, mantenere la sezione critica quando il filtro è pronto per la consegna di un campione. In caso contrario, è possibile mantenere la sezione critica nel metodo [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) del filtro, in cui il filtro elabora gli esempi.
+Mantenere la sezione critica del filtro prima di chiamare questo metodo. In caso contrario, il pin potrebbe essere disconnesso durante la chiamata al metodo. Se il filtro usa un thread di lavoro per distribuire gli esempi, mantenere la sezione critica quando il filtro è pronto per la consegna di un campione. In caso contrario, è possibile mantenere la sezione critica nel metodo [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) del filtro, in cui il filtro elabora gli esempi.
 
-I thread di lavoro possono creare un deadlock potenziale. Quando il thread contiene la sezione critica, potrebbe attendere una modifica dello stato nel filtro. Allo stesso tempo, la modifica dello stato potrebbe essere in attesa del completamento del thread. Per evitare questo problema, il codice di modifica dello stato deve segnalare un evento che termina il thread e quindi attendere che il thread segnali il completamento.
+I thread di lavoro possono creare un potenziale deadlock. Quando il thread contiene la sezione critica, potrebbe attendere una modifica dello stato nel filtro. Allo stesso tempo, la modifica dello stato potrebbe essere in attesa del completamento del thread. Per evitare questo problema, il codice di modifica dello stato deve segnalare un evento che termina il thread e quindi attendere che il thread segnali il completamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ I thread di lavoro possono creare un deadlock potenziale. Quando il thread conti
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ description: Di seguito sono riportati i tipi di enumerazione HTTP versione 2.0 
 ms.assetid: 849b88a1-e60b-4a1d-a660-cc3fe429d39f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 208c2f648208b04a1eb29634d883f2d41b08017d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 544318c419b215a49b070219175dd9c2d4fa44c6238fd4a5564135d56f47f9ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950760"
 ---
 # <a name="http-server-api-version-20-enumeration-types"></a>Tipi di enumerazione dell'API server HTTP versione 2.0
 
@@ -32,4 +32,4 @@ Di seguito sono riportati i tipi di enumerazione HTTP versione 2.0.
 -   [**TIPO \_ DI INFORMAZIONI SULLA RISPOSTA \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_response_info_type)
 -   [**PROPRIETÀ \_ SERVER \_ HTTP**](/windows/desktop/api/Http/ne-http-http_server_property)
 -   [**CHIAVE \_ DELLA CACHE DI CONFIGURAZIONE DEL SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_cache_key)
--   [**CHIAVE DI \_ TIMEOUT DELLA CONFIGURAZIONE DEL SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_timeout_key)
+-   [**CHIAVE \_ TIMEOUT CONFIGURAZIONE SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_timeout_key)

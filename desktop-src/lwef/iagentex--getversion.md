@@ -4,16 +4,16 @@ description: IAgentEx GetVersion
 ms.assetid: e5d55fcd-c1b4-4c9e-b3c7-4471af2f86af
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 359abb1d22e2cd34fb6b31d85012ac0110f14037
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ebec46a242dc18aa47dd1024c9a80856bdf7c000625d765a2a013af33b5ca2f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961541"
 ---
-# <a name="iagentexgetversion"></a>IAgentEx:: GetVersion
+# <a name="iagentexgetversion"></a>IAgentEx::GetVersion
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetVersion(
@@ -22,9 +22,9 @@ HRESULT GetVersion(
 );
 ```
 
-Recupera il numero di versione di Microsoft Agent Server.
+Recupera il numero di versione del server Microsoft Agent.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
@@ -42,9 +42,9 @@ Indirizzo di una variabile che riceve la versione secondaria.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

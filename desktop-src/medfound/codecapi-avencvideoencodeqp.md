@@ -1,17 +1,17 @@
 ---
 description: Specifica il parametro di quantizzazione (QP) per la codifica video.
 ms.assetid: 9E3B5E2D-3583-4C89-BC2A-4AC3C5545673
-title: Proprietà CODECAPI_AVEncVideoEncodeQP (codecapit. h)
+title: CODECAPI_AVEncVideoEncodeQP proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eec6c746f2f3c902ca416097571abaf5953956cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9ed7ba8e3cf522c1e3cfa07d22cf5e37639717c230ca571ffd89d9e1d513a0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974890"
 ---
-# <a name="codecapi_avencvideoencodeqp-property"></a>Proprietà AVEncVideoEncodeQP di codecapi \_
+# <a name="codecapi_avencvideoencodeqp-property"></a>CODECAPI \_ AVEncVideoEncodeQP - proprietà
 
 Specifica il parametro di quantizzazione (QP) per la codifica video.
 
@@ -21,24 +21,24 @@ Specifica il parametro di quantizzazione (QP) per la codifica video.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoEncodeQP**
+**CODECAPI \_ AVEncVideoEncodeQP**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Set di campi a 4 16 bit utilizzato per specificare il frame query al secondo nella codifica Fixed-QP.
+Set di quattro campi a 16 bit usati per specificare i QP dei frame nella codifica QP fissa.
 
 I campi sono:
 
--   BITS 0-15: QP predefinito
--   BITS 16-31: QP usato per I frame I
--   BITS 32-47: QP usato per i frame P
--   BITS 48-63: QP usato per i frame B
+-   Bit 0-15: QP predefinito
+-   Bit 16-31: QP usato per i fotogrammi I
+-   Bit 32-47: QP usato per i fotogrammi P
+-   Bit 48-63: QP usato per i fotogrammi B
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene usata anche con [codificatori della fotocamera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Questa proprietà viene usata anche con codificatori [di fotocamera H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
-Per garantire un utilizzo coerente tra codificatori diversi, è necessario presupporre che i codificatori considerino solo il QP predefinito e possano ignorare i valori QP per le immagini I/P/B.
+Per assicurare un utilizzo coerente tra codificatori diversi, è consigliabile presupporre che i codificatori animino solo il QP predefinito e possano ignorare i valori QP per le immagini I/P/B.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,9 +46,9 @@ Per garantire un utilizzo coerente tra codificatori diversi, è necessario presu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ Per garantire un utilizzo coerente tra codificatori diversi, è necessario presu
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

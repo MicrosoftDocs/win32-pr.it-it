@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo StartAt comunica al pin quando iniziare a consegnare i dati. Questo metodo implementa il metodo IAMStreamControl:: StartAt.'
+description: Il metodo StartAt indica al pin quando iniziare a recapitare i dati. Questo metodo implementa il metodo IAMStreamControl::StartAt.
 ms.assetid: fd2943e8-8d35-4122-a99e-96d12459b335
-title: Metodo CBaseStreamControl. StartAt (Strmctl. h)
+title: Metodo CBaseStreamControl.StartAt (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a7adcf7cbd435992333bb8ae59d5ab1674056223
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b40570933e7eed054694b2da927d71e077b86941aea816ff2ca6de5c91372b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814111"
 ---
-# <a name="cbasestreamcontrolstartat-method"></a>CBaseStreamControl. StartAt, metodo
+# <a name="cbasestreamcontrolstartat-method"></a>Metodo CBaseStreamControl.StartAt
 
-Il `StartAt` metodo informa il PIN quando iniziare a consegnare i dati. Questo metodo implementa il metodo [**IAMStreamControl:: startat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) .
+Il `StartAt` metodo indica al pin quando iniziare a recapitare i dati. Questo metodo implementa il [**metodo IAMStreamControl::StartAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT StartAt(
 *ptStart* 
 </dt> <dd>
 
-Puntatore a un valore di [**\_ ora di riferimento**](reference-time.md) che specifica quando il PIN deve iniziare a consegnare i dati.
+Puntatore a un [**valore \_ REFERENCE TIME**](reference-time.md) che specifica quando il pin deve iniziare a recapitare i dati.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Specifica un valore da inviare insieme alla notifica di avvio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce \_ OK.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Strmctl. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Strmctl.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

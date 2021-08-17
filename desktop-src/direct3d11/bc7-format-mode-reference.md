@@ -4,12 +4,12 @@ description: Questa documentazione contiene un elenco delle modalità a 8 blocch
 ms.assetid: B1CEB729-6694-49BF-ACB9-FD1EFAB0B0D1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9756582d7d5ac52d4c16b2f4734decebbd66ae8
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 2f96bfd9c90697b47587048684239ecf084dd43a76e0ef76b9717fe09d3b3630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126166"
 ---
 # <a name="bc7-format-mode-reference"></a>Informazioni di riferimento sulla modalità formato BC7
 
@@ -111,7 +111,7 @@ La modalità BC7 6 presenta le caratteristiche seguenti:
 
 -   Componenti combinati di colore e alfa
 -   Un subset per blocco
--   Endpoint rGBAP 7.7.7.7.1 a colori (e alfa) (bit P univoco per endpoint)
+-   Endpoint RGBAP 7.7.7.7.1 a colori (e alfa) (bit P univoco per endpoint)
 -   Indici a 16 x 4 bit
 
 ![modalità layout a 6 bit](images/bc7-mode6.png)
@@ -138,11 +138,11 @@ In BC7 è possibile codificare il componente alfa in uno dei modi seguenti:
 -   Tipi a blocchi con componenti di colore e alfa combinati. In questi blocchi, i valori dei colori dell'endpoint vengono specificati nel formato RGBA e i valori dei componenti alfa vengono interpolati insieme ai valori di colore.
 -   Tipi a blocchi con componenti di colore e alfa separati. In questi blocchi il colore e i valori alfa vengono specificati separatamente, ognuno con il proprio set di indici. Di conseguenza, hanno un vettore effettivo e un canale scalare codificati separatamente, in cui il vettore specifica in genere i canali di colore R, G, B e scalare specifica il canale alfa \[ \] A \[ \] . Per supportare questo approccio, nella codifica viene fornito un campo separato a 2 bit, che consente la specifica della codifica del canale separata come valore scalare. Di conseguenza, il blocco può avere una delle quattro diverse rappresentazioni seguenti di questa codifica alfa (come indicato dal campo a 2 bit):
     -   RGB \| A: canale alfa separato
-    -   AGB \| R: canale di colore "rosso" separato
+    -   AGB R: canale di \| colore "rosso" separato
     -   RAB \| G: canale di colore "verde" separato
     -   RGA B: canale a \| colori "blu" separato
 
-    Il decodificatore riordina l'ordine dei canali in RGBA dopo la decodifica, in modo che il formato del blocco interno non sia visibile allo sviluppatore. I blocchi con componenti alfa e di colore separati hanno anche due set di dati di indice: uno per il set vettoriale di canali e uno per il canale scalare. Nel caso della modalità 4, questi indici hanno larghezze diverse di 2 o \[ 3 \] bit. La modalità 4 contiene anche un selettore a 1 bit che specifica se il vettore o il canale scalare usa gli indici a 3 bit.
+    Il decodificatore riordina l'ordine dei canali a RGBA dopo la decodifica, in modo che il formato del blocco interno non sia visibile allo sviluppatore. I blocchi con componenti alfa e di colore separati hanno anche due set di dati di indice: uno per il set vettoriale di canali e uno per il canale scalare. Nel caso della modalità 4, questi indici hanno larghezze diverse di 2 o \[ 3 \] bit. La modalità 4 contiene anche un selettore a 1 bit che specifica se il vettore o il canale scalare usa gli indici a 3 bit.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

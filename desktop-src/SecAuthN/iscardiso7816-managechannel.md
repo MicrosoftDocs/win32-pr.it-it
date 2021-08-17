@@ -67,7 +67,7 @@ Per la funzione open (P1 = '00'), i bit b1 e b2 di P2 vengono usati per codifica
 
 Quando b1 e b2 di P2 sono **NULL,** la scheda assegna un numero di canale logico che verrà restituito nei bit b1 e b2 del campo dati.
 
-Quando b1 e/o b2 di P2 non sono **NULL,** codificano un numero di canale logico diverso da quello di base. quindi la scheda aprirà il numero di canale logico assegnato esternamente.
+Quando b1 e/o b2 di P2 non sono **NULL,** codificano un numero di canale logico diverso da quello di base. la scheda aprirà quindi il numero di canale logico assegnato esternamente.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Quando b1 e/o b2 di P2 non sono **NULL,** codificano un numero di canale logico 
 
 In input, puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-In caso di restituzione, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** un [*smart card*](../secgloss/s-gly.md) [**isCardCmd viene**](iscardcmd.md) creato internamente e restituito usando il *puntatore ppCmd.*
+In caso di restituzione, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** un [*smart card*](../secgloss/s-gly.md) [**isCardCmd**](iscardcmd.md) viene creato internamente e restituito usando il *puntatore ppCmd.*
 
 </dd> </dl>
 

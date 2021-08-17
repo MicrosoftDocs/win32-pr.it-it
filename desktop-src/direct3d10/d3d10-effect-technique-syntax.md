@@ -1,25 +1,25 @@
 ---
-description: Una tecnica degli effetti viene dichiarata con la sintassi seguente.
+description: Una tecnica di effetto viene dichiarata con la sintassi seguente.
 ms.assetid: 84f9b74d-8397-4cd5-91a0-7f910ba7b19e
 title: Sintassi della tecnica degli effetti (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f781a0e1ea247e9ffae02e6afc9de77c8e0c6b68
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e3c0ff0c0f1b5e9c1fac4cdb12aac21e42d89771c0eae89d1cd9538d0281acee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914486"
 ---
 # <a name="effect-technique-syntax-direct3d-10"></a>Sintassi della tecnica degli effetti (Direct3D 10)
 
-Una tecnica degli effetti viene dichiarata con la sintassi seguente.
+Una tecnica di effetto viene dichiarata con la sintassi seguente.
 
-annotazioni di technique10 *techniquename* \[  <  > \]
+technique10 *TechniqueName* \[  < *Annotations* > \]
 
 {
 
-<dl> passare *le* \[  < *annotazioni* passname > \]  
+<dl> Pass *PassName* \[  < *Annotations* > \]  
 {
 <dl> \[*SetStateGroup*; \] \[ *SetStateGroup*;\]  
 ...  
@@ -33,45 +33,45 @@ annotazioni di technique10 *techniquename* \[  <  > \]
 
 <dl> <dt>
 
-<span id="technique10"></span><span id="TECHNIQUE10"></span>technique10
+<span id="technique10"></span><span id="TECHNIQUE10"></span>tecnica10
 </dt> <dd>
 
-Parola chiave required.
+Parola chiave obbligatoria.
 
 </dd> <dt>
 
-<span id="TechniqueName"></span><span id="techniquename"></span><span id="TECHNIQUENAME"></span>*Techniquename*
+<span id="TechniqueName"></span><span id="techniquename"></span><span id="TECHNIQUENAME"></span>*TechniqueName*
 </dt> <dd>
 
-facoltativo. Stringa ASCII che identifica in modo univoco il nome della tecnica degli effetti.
+facoltativo. Stringa ASCII che identifica in modo univoco il nome della tecnica dell'effetto.
 
 </dd> <dt>
 
 <span id="Annotations"></span><span id="annotations"></span><span id="ANNOTATIONS"></span>*Annotazioni*
 </dt> <dd>
 
-\[in \] facoltativo. Una o più parti di informazioni (metadati) fornite dall'utente ignorate dal sistema di effetti. Per la sintassi, vedere [sintassi delle annotazioni (Direct3D 10)](d3d10-effect-annotation-syntax.md).
+\[in \] Facoltativo. Una o più informazioni fornite dall'utente (metadati) che vengono ignorate dal sistema di effetti. Per la sintassi, [vedere Sintassi delle annotazioni (Direct3D 10).](d3d10-effect-annotation-syntax.md)
 
 </dd> <dt>
 
-<span id="pass"></span><span id="PASS"></span>passare
+<span id="pass"></span><span id="PASS"></span>Passare
 </dt> <dd>
 
-Parola chiave required.
+Parola chiave obbligatoria.
 
 </dd> <dt>
 
-<span id="PassName"></span><span id="passname"></span><span id="PASSNAME"></span>*Passname*
+<span id="PassName"></span><span id="passname"></span><span id="PASSNAME"></span>*PassName*
 </dt> <dd>
 
-\[in \] facoltativo. Stringa ASCII che identifica in modo univoco il nome del passaggio.
+\[in \] Facoltativo. Stringa ASCII che identifica in modo univoco il nome del passaggio.
 
 </dd> <dt>
 
 <span id="SetStateGroup"></span><span id="setstategroup"></span><span id="SETSTATEGROUP"></span>*SetStateGroup*
 </dt> <dd>
 
-\[in \] impostare uno o più gruppi di stato, ad esempio:
+\[in \] Impostare uno o più gruppi di stati, ad esempio:
 
 
 
@@ -88,7 +88,7 @@ Parola chiave required.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Stato di Blend</td>
+<td>Stato blend</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
@@ -101,10 +101,10 @@ Parola chiave required.
 </tbody>
 </table>
 
-<p>Vedere [<strong>OMSetBlendState</strong>] (/Windows/Desktop/API/D3D10/NF-D3D10-id3d10device-omsetblendstate) per l'elenco di argomenti.</p></td>
+<p>Vedere [<strong>OMSetBlendState</strong>](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-omsetblendstate) per l'elenco di argomenti.</p></td>
 </tr>
 <tr class="even">
-<td>Stato stencil profondità</td>
+<td>Stato depth-stencil</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -119,7 +119,7 @@ Parola chiave required.
 </table>
 
 </div>
-<p>Vedere <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-omsetdepthstencilstate"><strong>OMSetDepthStencilState</strong></a> per l'elenco di argomenti.</p></td>
+<p>Vedere <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-omsetdepthstencilstate"><strong>OMSetDepthStencilState per</strong></a> l'elenco di argomenti.</p></td>
 </tr>
 <tr class="odd">
 <td>Stato rasterizzazione</td>
@@ -137,10 +137,10 @@ Parola chiave required.
 </table>
 
 </div>
-<p>Vedere [<strong>RSSetState</strong>] (/Windows/Desktop/API/D3D10/NF-D3D10-id3d10device-rssetstate) per l'elenco di argomenti.</p></td>
+<p>Vedere [<strong>RSSetState</strong>](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rssetstate) per l'elenco di argomenti.</p></td>
 </tr>
 <tr class="even">
-<td>Stato dello shader</td>
+<td>Stato shader</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -185,7 +185,7 @@ Parola chiave required.
 </table>
 
 </div>
-<p>SetXXXShader è uno dei <strong>SetVertexShader</strong>, <strong>SetGeometryShader</strong>o <strong>SetPixelShader</strong> , che sono simili ai metodi API <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader"><strong>VSSetShader</strong></a>, <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-gssetshader"><strong>GSSetShader</strong></a>e <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-pssetshader"><strong>PSSetShader</strong></a>.</p></td>
+<p>SetXXXShader è uno dei metodi <strong>SetVertexShader</strong>, <strong>SetGeometryShader</strong>o <strong>SetPixelShader</strong> (simili ai metodi API <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader"><strong>VSSetShader</strong></a>, <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-gssetshader"><strong>GSSetShader</strong></a>e <a href="/windows/desktop/api/D3D10/nf-d3d10-id3d10device-pssetshader"><strong>PSSetShader</strong></a>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -196,11 +196,11 @@ Parola chiave required.
 
 </dd> </dl>
 
-I gruppi di stati effetti sono elencati in [stato di effetto](d3d10-effect-states.md).
+I gruppi di stati dell'effetto sono elencati [nello stato di effetto](d3d10-effect-states.md).
 
 ## <a name="examples"></a>Esempio
 
-Questo esempio (dall' [esempio CubeMapGS](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)) imposta lo stato di fusione.
+Questo esempio [(dall'esempio CubeMapGS)](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)imposta lo stato di fusione.
 
 
 ```
@@ -223,7 +223,7 @@ technique10
 
 
 
-In questo esempio viene impostato lo stato di rasterizzazione per eseguire il rendering di un oggetto in wireframe.
+Questo esempio imposta lo stato del rasterizzatore per eseguire il rendering di un oggetto in wireframe.
 
 
 ```
@@ -243,7 +243,7 @@ technique10
 
 
 
-Questo esempio imposta lo stato dello shader (dall' [esempio BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)); che usa un vertice e pixel shader.
+Questo esempio imposta lo stato dello shader [(dall'esempio BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)); che usa un vertice e un pixel shader.
 
 
 ```

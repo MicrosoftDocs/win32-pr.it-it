@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVectorVariable SetBoolVector (D3dx11effect. h)
-description: Impostare un vettore a quattro componenti contenente dati booleani.
+title: Metodo ID3DX11EffectVectorVariable SetBoolVector (D3dx11effect.h)
+description: Impostare un vettore a quattro componenti che contiene dati booleani.
 ms.assetid: 2138eeb9-6aa0-43f5-852c-1ab9c8117a88
 keywords:
 - Metodo SetBoolVector Direct3D 11
 - Metodo SetBoolVector Direct3D 11, interfaccia ID3DX11EffectVectorVariable
-- Interfaccia ID3DX11EffectVectorVariable Direct3D 11, metodo SetBoolVector
+- ID3DX11EffectVectorVariable interface Direct3D 11 , Metodo SetBoolVector
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03cc5885353e59d3c95139dcd7d99ce39c6f1015
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2ec75ab46bcebb796680310b88897ac8519cdeeb640967e1ddd1a5f413e1a3af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734033"
 ---
-# <a name="id3dx11effectvectorvariablesetboolvector-method"></a>Metodo ID3DX11EffectVectorVariable:: SetBoolVector
+# <a name="id3dx11effectvectorvariablesetboolvector-method"></a>Metodo ID3DX11EffectVectorVariable::SetBoolVector
 
-Impostare un vettore a quattro componenti contenente dati booleani.
+Impostare un vettore a quattro componenti che contiene dati booleani.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT SetBoolVector(
 *pData* 
 </dt> <dd>
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)\***
 
 Puntatore al primo componente.
 
@@ -56,12 +56,12 @@ Puntatore al primo componente.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

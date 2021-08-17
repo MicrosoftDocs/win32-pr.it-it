@@ -4,22 +4,22 @@ ms.assetid: 11275C74-584E-42F2-BF4A-2FD95A62861E
 title: Proprietà degli attributi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ae1c7acb96a3a6b9b35fa2a39cb9e2e249a99f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e962dee31ea094db03756e1a8c909c70bcf00c1c167138bab9b4e93dcf5083e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117773236"
 ---
 # <a name="attributes-properties"></a>Proprietà degli attributi
 
-L'oggetto [**Attributes**](attributes.md) espone le proprietà seguenti.
+[**L'oggetto**](attributes.md) Attributes espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**\_Proprietà NewEnum**](attributes-newenum.md)
 -   [**Proprietà Count**](attributes-count.md)
--   [**Item (proprietà)**](attributes-item.md)
+-   [**Proprietà Item**](attributes-item.md)
 
  
 

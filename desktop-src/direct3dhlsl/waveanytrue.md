@@ -1,6 +1,6 @@
 ---
-title: WaveActiveAnyTrue (funzione)
-description: Restituisce true se l'espressione è true in una delle corsie attive nell'onda corrente.
+title: Funzione WaveActiveAnyTrue
+description: Restituisce true se l'espressione è true in una delle corsie attive nell'ondata corrente.
 ms.assetid: 203E2E1D-0AA2-4E4A-80F7-D1FE7579A742
 keywords:
 - Funzione WaveActiveAnyTrue HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 16801c4329f5bc0bf325d8bb67e8c0bb94887678
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 2c49c9727461d316d7d2c9d8f048971384e568476d1ca693aeec49cdf14a4795
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104993613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721731"
 ---
-# <a name="waveactiveanytrue-function"></a>WaveActiveAnyTrue (funzione)
+# <a name="waveactiveanytrue-function"></a>Funzione WaveActiveAnyTrue
 
-Restituisce true se l'espressione è true in una delle corsie attive nell'onda corrente.
+Restituisce true se l'espressione è true in una delle corsie attive nell'ondata corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ bool WaveActiveAnyTrue(
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione booleana da valutare.
@@ -45,11 +45,11 @@ Espressione booleana da valutare.
 
 ## <a name="return-value"></a>Valore restituito
 
-True se l'espressione è true in una corsia.
+True se l'espressione è true in qualsiasi corsia.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -59,7 +59,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

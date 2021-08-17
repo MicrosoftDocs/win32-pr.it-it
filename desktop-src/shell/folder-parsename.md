@@ -1,7 +1,7 @@
 ---
 description: Crea e restituisce un oggetto FolderItem che rappresenta un elemento specificato.
 ms.assetid: 3af7052c-fb81-4a96-9bf9-379b0365a376
-title: Metodo Folder. ParseName (shldisp. h)
+title: Metodo Folder.ParseName (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ea9a8090a794f23693ae4fef10556bc207f16531
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 582341c97b6373fa0c04abf69642930328a34223a7c7b0dbc7792d8c7aec4680
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093091"
 ---
-# <a name="folderparsename-method"></a>Folder. ParseName, metodo
+# <a name="folderparsename-method"></a>Metodo Folder.ParseName
 
-Crea e restituisce un oggetto [**FolderItem**](folderitem.md) che rappresenta un elemento specificato.
+Crea e restituisce un [**oggetto FolderItem**](folderitem.md) che rappresenta un elemento specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ retVal = Folder.ParseName(
 
 <dl> <dt>
 
-*bnome* \[ in\]
+*bName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -52,17 +52,17 @@ Stringa che specifica il nome dell'elemento.
 
 Tipo: **[ **FolderItem**](folderitem.md)\*\***
 
-Riferimento all'oggetto [**FolderItem**](folderitem.md) .
+Riferimento all'oggetto [**FolderItem.**](folderitem.md)
 
 ## <a name="remarks"></a>Commenti
 
-**ParseName** non deve essere usato per cartelle virtuali, ad esempio documenti.
+**ParseName** non deve essere usato per le cartelle virtuali, ad esempio Documenti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **ParseName** per creare un oggetto che rappresenta l'elemento della cartella Clock.avi nella \\ cartella C: Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato ParseName** per creare un oggetto che rappresenta l'elemento della Clock.avi nella cartella C: \\ Windows. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -89,7 +89,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -152,11 +152,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

@@ -7,12 +7,12 @@ keywords:
 - Flag di notifica delle modifiche
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e6d3015be29c84b6b93b47b373d05f96f4388b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f5311e3313bf23c92972395143d288483181e7a69212115082a2f150d7d1bb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117791835"
 ---
 # <a name="change-notification-flags"></a>Flag di notifica delle modifiche
 
@@ -20,19 +20,19 @@ ms.locfileid: "104330292"
 
 | Costante                         | Valore      | Descrizione                                                                                                                                                           |
 |----------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_tipi di \_ modifiche RTM num \_          | 3          | Specifica il numero di tipi di modifiche attualmente utilizzati da Gestione tabelle di routing.                                                                            |
-| \_tipo di modifica RTM \_ \_ All           | 0x0001     | Notifica al client qualsiasi modifica a una destinazione.                                                                                                                   |
-| \_tipo di modifica RTM \_ \_ migliore          | 0x0002     | Notifica al client le modifiche apportate alla route migliore o quando viene modificata la route migliore.                                                                                     |
-| \_avanzamento del \_ tipo di modifica RTM \_    | 0x0004     | Notifica al client eventuali modifiche della route migliori che interessano l'inoltro, ad esempio le modifiche all'hop successivo.                                                                      |
-| \_ \_ solo \_ \_ DestS contrassegnato per la notifica RTM | 0x00010000 | Notifica al client le modifiche apportate alle destinazioni contrassegnate dal client. Se questo flag non è specificato, vengono inviati i messaggi di notifica delle modifiche per tutte le destinazioni. |
+| TIPI DI \_ MODIFICA NUM \_ \_ RTM          | 3          | Specifica il numero di tipi di modifica attualmente utilizzati dal gestore tabelle di routing.                                                                            |
+| TIPO DI MODIFICA RTM \_ \_ \_ ALL           | 0x0001     | Notifica al client qualsiasi modifica apportata a una destinazione.                                                                                                                   |
+| TIPO DI MODIFICA RTM \_ \_ \_ MIGLIORE          | 0x0002     | Notifica al client le modifiche alla route migliore o quando cambia la route migliore.                                                                                     |
+| INOLTRO DEL TIPO DI \_ \_ MODIFICA \_ RTM    | 0x0004     | Notifica al client le modifiche di route migliori che influiscono sull'inoltro, ad esempio le modifiche dell'hop successivo.                                                                      |
+| RTM NOTIFY ONLY MARKED DESTS (NOTIFICA RTM \_ SOLO \_ \_ \_ DESTS CONTRASSEGNATI) | 0x00010000 | Notifica al client le modifiche apportate alle destinazioni contrassegnate dal client. Se questo flag non viene specificato, vengono inviati messaggi di notifica delle modifiche per tutte le destinazioni. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

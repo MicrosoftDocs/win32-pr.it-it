@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Membri ColumnInfo'
-title: Membri columnInfo
+title: Membri ColumnInfo
 TOCTitle: ColumnInfo members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.ColumnInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo_members(v=EXCHG.10)
@@ -14,10 +14,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119455131"
 ---
-# <a name="columninfo-members"></a>Membri columnInfo
+# <a name="columninfo-members"></a>Membri ColumnInfo
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Informazioni su una colonna Esent. Non si tratta di una classe di interoperabilità, ma viene usata dai metodi helper dei metadati.
 
@@ -41,7 +41,7 @@ Il [tipo ColumnInfo](./columninfo-class.md) espone i membri seguenti.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334134(v=exchg.10).md">Columnid</a></td>
+<td><a href="dn334134(v=exchg.10).md">Id colonna</a></td>
 <td>Ottiene l'ID della colonna.</td>
 </tr>
 <tr class="odd">
@@ -57,7 +57,7 @@ Il [tipo ColumnInfo](./columninfo-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334189(v=exchg.10).md">Grbit</a></td>
-<td>Ottiene le opzioni di colonna.</td>
+<td>Ottiene le opzioni della colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -93,7 +93,7 @@ Inizio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -114,7 +114,7 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334183(v=exchg.10).md">ToString</a></td>
-<td>Restituisce un <a href="/dotnet/api/system.string">oggetto String</a> che rappresenta l'oggetto <a href="dn334128(v=exchg.10).md">ColumnInfo corrente.</a> Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString()</a>.</td>
+<td>Restituisce un <a href="/dotnet/api/system.string">oggetto String</a> che rappresenta l'oggetto <a href="dn334128(v=exchg.10).md">ColumnInfo corrente.</a> Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString().</a></td>
 </tr>
 </tbody>
 </table>

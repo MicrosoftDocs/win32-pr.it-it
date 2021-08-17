@@ -1,24 +1,24 @@
 ---
-description: Notifica alle applicazioni che il sistema riprende la sospensione o l'ibernazione. Questo evento viene recapitato ogni volta che il sistema riprende e non indica se un utente è presente.
+description: Notifica alle applicazioni che il sistema sta riprendendo dalla sospensione o dall'ibernazione. Questo evento viene recapitato ogni volta che il sistema riprende e non indica se un utente è presente.
 ms.assetid: cd331f79-b64d-479e-aea8-5118ccc87224
-title: Evento PBT_APMRESUMEAUTOMATIC (WinUser. h)
+title: PBT_APMRESUMEAUTOMATIC evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7a481dee356c85b3831fcace0c1ff127b0b276
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43e66fcd2201e9fb3c4feeb135843e92a350303b89a5c5045836428b9a326a30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143344"
 ---
-# <a name="pbt_apmresumeautomatic-event"></a>\_Evento APMRESUMEAUTOMATIC PBT
+# <a name="pbt_apmresumeautomatic-event"></a>Evento PBT \_ APMRESUMEAUTOMATIC
 
-Notifica alle applicazioni che il sistema riprende la sospensione o l'ibernazione. Questo evento viene recapitato ogni volta che il sistema riprende e non indica se un utente è presente.
+Notifica alle applicazioni che il sistema sta riprendendo dalla sospensione o dall'ibernazione. Questo evento viene recapitato ogni volta che il sistema riprende e non indica se un utente è presente.
 
-Una finestra riceve questo evento tramite il messaggio [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) . I parametri *wParam* e *lParam* sono impostati come descritto di seguito.
+Una finestra riceve questo evento tramite il [**messaggio WM \_ POWERBROADCAST.**](wm-powerbroadcast.md) I *parametri wParam* *e lParam* vengono impostati come descritto di seguito.
 
 > [!Note]  
-> Nei sistemi Windows 10, versione 1507 o versioni successive, se il sistema riprende dalla modalità di sospensione solo per entrare immediatamente in ibernazione, questo evento non viene recapitato. In questo caso non viene inviato un messaggio [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) .
+> In Windows 10 versione 1507 o successiva, se il sistema riprende dalla sospensione solo per entrare immediatamente in ibernazione, questo evento non viene recapitato. In questo caso, non viene inviato un messaggio [**WM \_ POWERBROADCAST.**](wm-powerbroadcast.md)
 
  
 
@@ -38,7 +38,7 @@ WindowProc( HWND hwnd,      // handle to window
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -68,7 +68,7 @@ Handle per la finestra.
 *lParam* 
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Se il sistema rileva qualsiasi attività utente dopo la trasmissione \_ di PBT APMRESUMEAUTOMATIC, trasmette un evento [PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md) per consentire alle applicazioni di essere in grado di riprendere l'interazione completa con l'utente.
+Se il sistema rileva un'attività utente dopo la trasmissione di PBT \_ APMRESUMEAUTOMATIC, trasmetterà un evento [ \_ PBT APMRESUMESUSPEND](pbt-apmresumesuspend.md) per invii alle applicazioni la possibilità di riprendere l'interazione completa con l'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,9 +86,9 @@ Se il sistema rileva qualsiasi attività utente dopo la trasmissione \_ di PBT A
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinUser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>WinUser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ Se il sistema rileva qualsiasi attività utente dopo la trasmissione \_ di PBT A
 [Eventi di risparmio energia](power-management-events.md)
 </dt> <dt>
 
-[\_APMRESUMESUSPEND PBT](pbt-apmresumesuspend.md)
+[PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)
 </dt> <dt>
 
-[**\_POWERBROADCAST WM**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

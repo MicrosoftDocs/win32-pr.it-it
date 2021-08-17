@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetOpenFile'
+description: Altre informazioni sulla funzione JetOpenFile
 title: Funzione JetOpenFile
 TOCTitle: JetOpenFile Function
 ms:assetid: 52f69050-ca1c-4a6b-a188-22bd7cb96bf5
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2996ffc46e2f6b37cdfec12cd4ee2fc62efa188a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b83f48f024ba79eaa55ad4ae333e8f093cd307e5508e0bb8338ce9bbc4a1bef7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615061"
 ---
 # <a name="jetopenfile-function"></a>Funzione JetOpenFile
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetopenfile-function"></a>Funzione JetOpenFile
 
-La funzione **JetOpenFile** apre un database collegato, un file di patch del database o un file di log delle transazioni di un'istanza attiva allo scopo di eseguire un backup fuzzy di streaming. I dati di questi file possono essere successivamente letti tramite l'handle restituito mediante [JetReadFile](./jetreadfile-function.md). L'handle restituito deve essere chiuso utilizzando [JetCloseFile](./jetclosefile-function.md). È necessario che un backup esterno dell'istanza sia stato avviato in precedenza utilizzando [JetBeginExternalBackup](./jetbeginexternalbackup-function.md).
+La **funzione JetOpenFile** apre un database collegato, un file di patch del database o un file di log delle transazioni di un'istanza attiva allo scopo di eseguire un backup fuzzy di flusso. I dati di questi file possono essere successivamente letti tramite l'handle restituito usando [JetReadFile.](./jetreadfile-function.md) L'handle restituito deve essere chiuso [utilizzando JetCloseFile.](./jetclosefile-function.md) Un backup esterno dell'istanza deve essere stato avviato in precedenza [tramite JetBeginExternalBackup.](./jetbeginexternalbackup-function.md)
 
 ```cpp
     JET_ERR JET_API JetOpenFile(
@@ -57,15 +57,15 @@ Buffer di output che riceve un handle per il file da leggere.
 
 *pulFileSizeLow*
 
-Il buffer di output che riceve i bit 32 meno significativi della dimensione del file.
+Buffer di output che riceve i 32 bit meno significativi delle dimensioni del file.
 
 *pulFileSizeHigh*
 
-Il buffer di output che riceve i 32 bit più significativi della dimensione del file.
+Buffer di output che riceve i 32 bit più significativi delle dimensioni del file.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -85,11 +85,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errBackupAbortByServer</p></td>
-<td><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup.</a> Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errFileAccessDenied</p></td>
@@ -101,7 +101,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidBackupSequence</p></td>
@@ -109,9 +109,9 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo problema può verificarsi per <strong>JetOpenFile</strong> quando:</p>
+<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questa operazione può verificarsi <strong>per JetOpenFile</strong> quando:</p>
 <ul>
-<li><p>L'handle dell'istanza specificato non è valido (Windows XP e versioni successive).</p></li>
+<li><p>L'handle di istanza specificato non è valido (Windows XP e versioni successive).</p></li>
 <li><p>Il parametro filename specificato è NULL o una stringa di lunghezza zero (Windows XP e versioni successive).</p></li>
 </ul></td>
 </tr>
@@ -121,7 +121,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errMissingFileToBackup</p></td>
-<td><p>Non è stato possibile aprire il file richiesto per il backup perché non è stato trovato. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>Impossibile aprire il file richiesto per il backup perché non è stato trovato. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoBackup</p></td>
@@ -133,35 +133,35 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errOutOfMemory</p></td>
-<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per il completamento. <strong>JetOpenFile</strong> restituirà JET_errOutOfMemory se viene effettuato un tentativo di aprire un altro file prima che il file precedente aperto utilizzando <strong>JetOpenFile</strong> sia stato chiuso da <a href="gg294127(v=exchg.10).md">JetCloseFile</a>. Attualmente è supportato un solo handle di file in attesa.</p></td>
+<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per completarla. <strong>JetOpenFile</strong> restituirà JET_errOutOfMemory se viene effettuato un tentativo di aprire un altro file prima che il file precedente aperto con <strong>JetOpenFile</strong> sia stato chiuso da <a href="gg294127(v=exchg.10).md">JetCloseFile</a>. Attualmente è supportato un solo handle di file in sospeso.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza quando sono già presenti più istanze.</p></td>
+<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata. JET_errRestoreInProgress non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione. JET_errRestoreInProgress non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza di associata alla sessione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In seguito all'esito positivo, verrà restituito un handle per il file richiesto. Se l'handle è per un file di database, il file di database verrà preparato per il backup di flusso, che può comportare la creazione di un file di patch del database nello stesso percorso del file di database. Il file di patch del database ha esattamente lo stesso percorso e il nome file del file di database, ma dispone di un. Estensione PAT. Verranno restituite anche le dimensioni del file.
+In caso di esito positivo, verrà restituito un handle per il file richiesto. Se l'handle è per un file di database, tale file di database verrà preparato per il backup di flusso che potrebbe comportare la creazione di un file di patch del database nello stesso percorso del file di database. Il file di patch del database ha esattamente lo stesso percorso e lo stesso nome file del file di database, ma ha un . Estensione PAT. Verranno restituite anche le dimensioni del file.
 
-In caso di errore, lo stato dei buffer di output sarà indefinito. Un file di patch del database può essere temporaneamente creato sul disco ed è possibile che qualsiasi file esistente nel percorso del file di patch venga eliminato. L'errore comporterà l'annullamento dell'intero processo di backup per l'istanza. In Windows XP e versioni successive, il backup non verrà annullato se è stato effettuato un tentativo di eseguire il backup di un database non collegato all'istanza al momento della chiamata.
+In caso di errore, lo stato dei buffer di output non sarà definito. Un file di patch del database può essere creato temporaneamente su disco ed è possibile eliminare qualsiasi file esistente nel percorso del file di patch. L'errore comporta l'annullamento dell'intero processo di backup per l'istanza. In Windows XP e versioni successive, il backup non verrà annullato se è stato effettuato un tentativo di backup di un database non collegato all'istanza al momento della chiamata.
 
-**Avviso**  di  Per motivi di sicurezza, è importante tenere presente che **JetOpenFile** non verifica che il percorso del file richiesto sia associato al set di file di cui eseguire il backup per l'istanza di. Di conseguenza, è possibile usare questa funzione per accedere a qualsiasi file che può essere aperto dal contesto di sicurezza corrente del thread. È fondamentale che l'applicazione limiti i percorsi passati a questa funzione a un set noto di percorsi di file validi oppure che sia possibile che si verifichi una divulgazione di attacchi informativi.
+**Avviso**  Per motivi di sicurezza, è importante notare che **JetOpenFile** non verifica che il percorso del file richiesto sia associato al set di file di cui eseguire il backup per l'istanza. Di conseguenza, è possibile usare questa funzione per accedere a qualsiasi file che può essere aperto dal contesto di sicurezza corrente del thread. È fondamentale che l'applicazione restringa i percorsi passati a questa funzione a un set noto di percorsi di file validi o potrebbe essere resa possibile la divulgazione di informazioni.
 
 #### <a name="remarks"></a>Commenti
 
-È necessario che siano presenti i buffer di output delle dimensioni del file e dell'handle. Se non sono presenti, il motore si arresterà in modo anomalo perché i parametri del buffer di output non vengono convalidati.
+I buffer di output dell'handle e delle dimensioni del file devono essere presenti. Se non sono presenti, il motore si arresterà in modo anomalo perché i parametri del buffer di output non vengono convalidati.
 
-A questo punto, è possibile aprire un solo file per il backup in qualsiasi momento.
+Al momento, è possibile aprire un solo file per il backup alla volta.
 
-**JetOpenFile** non dichiara il privilegio di backup prima di aprire il file richiesto.
+**JetOpenFile** non asserzione del privilegio di backup prima di aprire il file richiesto.
 
-La dimensione del file da leggere come indicato da questa funzione potrebbe non corrispondere a quella del file su disco. In Windows XP e versioni successive, le informazioni aggiuntive possono essere aggiunte a un file di database utilizzato dal motore di database durante un'operazione di ripristino. Di conseguenza, l'applicazione deve basarsi solo sulle dimensioni del file restituite da **JetOpenFile** o sul numero effettivo di byte di dati restituiti da [JetReadFile](./jetreadfile-function.md).
+Le dimensioni del file da leggere come segnalato da questa funzione potrebbero non corrispondere alle dimensioni del file su disco. In Windows XP e versioni successive, è possibile aggiungere informazioni aggiuntive a un file di database usato dal motore di database durante un'operazione di ripristino. Di conseguenza, l'applicazione deve basarsi solo sulle dimensioni del file restituite da **JetOpenFile** o sul numero effettivo di byte di dati restituiti [da JetReadFile.](./jetreadfile-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
@@ -181,11 +181,11 @@ La dimensione del file da leggere come indicato da questa funzione potrebbe non 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

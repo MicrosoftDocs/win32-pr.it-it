@@ -35,7 +35,7 @@ L'intervallo valido di questa proprietà è compreso tra 0 e 59, inclusi.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
 | Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 

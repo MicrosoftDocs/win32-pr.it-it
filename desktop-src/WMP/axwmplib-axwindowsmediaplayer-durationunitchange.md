@@ -1,9 +1,9 @@
 ---
 title: Evento DurationUnitChange dell'oggetto AxWindowsMediaPlayer
-description: L'evento DurationUnitChange è riservato per un utilizzo futuro.
+description: L'evento DurationUnitChange è riservato per un uso futuro.
 ms.assetid: d8d7da21-bc61-49f8-91bd-4c232295c1ac
 keywords:
-- Evento DurationUnitChange dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento DurationUnitChange dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f90aa052c61893d83683d10f482cd05841a49fab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1efa872389ad88a236808de64ed299dd3afc123cee59f39f1215f7a16bcb589f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136044"
 ---
 # <a name="durationunitchange-event-of-the-axwindowsmediaplayer-object"></a>Evento DurationUnitChange dell'oggetto AxWindowsMediaPlayer
 
-L'evento DurationUnitChange è riservato per un utilizzo futuro.
+L'evento DurationUnitChange è riservato per un uso futuro.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_DurationUnitChange(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_DurationUnitChangeEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà        | Descrizione                               |
 |-----------------|-------------------------------------------|
-| newDurationUnit | **System. Int32** Non supportato.<br/> |
+| newDurationUnit | **System.Int32** Non supportato.<br/> |
 
 
 
@@ -55,7 +55,7 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_DurationUnitCha
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è riservato per un utilizzo futuro.
+Questo evento è riservato per un uso futuro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo evento è riservato per un utilizzo futuro.
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

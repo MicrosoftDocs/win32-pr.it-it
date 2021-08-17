@@ -21,7 +21,7 @@ ms.locfileid: "119466281"
 ---
 # <a name="userplaycountafternoon-attribute"></a>Attributo UserPlaycountAfternoon
 
-**L'attributo UserPlaycountAfternoon** è il numero di volte in cui l'elemento è stato riprodotto tra le 12.00 e le 17.00 ora locale.
+**L'attributo UserPlaycountAfternoon** è il numero di volte in cui l'elemento è stato riprodotto tra le 12:00 e le 17:00 ora locale.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -32,7 +32,7 @@ ms.locfileid: "119466281"
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria .
+Questo attributo viene archiviato solo nella libreria.
 
 Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -50,7 +50,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento all'attributo**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Il metodo PutData costruisce un comando APDU (Application Protocol Data Unit) che archivia un singolo oggetto dati primitivo o il set di oggetti dati contenuti in un oggetto dati costruito, a seconda del file selezionato.
 ms.assetid: 6bad45fb-b202-4eb0-b2f4-fe0a6af64330
-title: Metodo ISCardISO7816::P utData (scardssp. h)
+title: Metodo ISCardISO7816::P utData (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 3c15239943a92067011011b6cedca191fa78c3a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66698db3c15223071167441fc37437bfa299baa100c58943a41cb4d774a8e17c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141114"
 ---
-# <a name="iscardiso7816putdata-method"></a>ISCardISO7816::P metodo utData
+# <a name="iscardiso7816putdata-method"></a>Metodo ISCardISO7816::P utData
 
-\[Il metodo **PutData** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo PutData** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **PutData** costruisce un comando APDU ( [*Application Protocol Data Unit*](../secgloss/a-gly.md) ) che archivia un singolo oggetto dati primitivo o il set di oggetti dati contenuti in un oggetto dati costruito, a seconda del file selezionato.
+Il **metodo PutData** costruisce un comando APDU [*(Application Protocol Data Unit)*](../secgloss/a-gly.md) che archivia un singolo oggetto dati primitivo o il set di oggetti dati contenuti in un oggetto dati costruito, a seconda del file selezionato.
 
-La modalità di archiviazione degli oggetti, ovvero la scrittura di una sola volta e/o l'aggiornamento e/o l'accodamento, dipende dalla definizione o dalla natura degli oggetti dati.
+La modalità di archiviazione degli oggetti (scrittura una sola volta e/o aggiornamento e/o aggiunta) dipende dalla definizione o dalla natura degli oggetti dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT PutData(
 
 <dl> <dt>
 
-*byP1* \[ in\]
+*byP1* \[ Pollici\]
 </dt> <dd>
 
 Codifica di P1-P2.
@@ -55,11 +55,11 @@ Codifica di P1-P2.
 
 | Valore                                                                                  | Significato                                          |
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>0000-003F</dt> </dl> | RFU<br/>                                   |
-| <dl> <dt>0040-00FF</dt> </dl> | Tag BER-TLV (1 byte) in P2<br/>            |
-| <dl> <dt>0100-01FF</dt> </dl> | Dati applicazione (codifica proprietaria)<br/> |
-| <dl> <dt>0200-02FF</dt> </dl> | SEMPLICE tag TLV in P2<br/>                  |
-| <dl> <dt>0300-03FF</dt> </dl> | RFU<br/>                                   |
+| <dl> <dt>0000 - 003F</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0040 - 00FF</dt> </dl> | BER-TLV tag (1 byte) in P2<br/>            |
+| <dl> <dt>0100 - 01FF</dt> </dl> | Dati dell'applicazione (codifica proprietaria)<br/> |
+| <dl> <dt>0200 - 02FF</dt> </dl> | SIMPLE-TLV tag in P2<br/>                  |
+| <dl> <dt>0300 - 03FF</dt> </dl> | Rfu<br/>                                   |
 | <dl> <dt>0400 - 04FF</dt> </dl> | Tag BER-TLV (2 byte) in P1-P2<br/>        |
 
 
@@ -68,7 +68,7 @@ Codifica di P1-P2.
 
 </dd> <dt>
 
-*byP2* \[ in\]
+*byP2* \[ Pollici\]
 </dt> <dd>
 
 Codifica di P1-P2.
@@ -77,11 +77,11 @@ Codifica di P1-P2.
 
 | Valore                                                                                  | Significato                                          |
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>0000-003F</dt> </dl> | RFU<br/>                                   |
-| <dl> <dt>0040-00FF</dt> </dl> | Tag BER-TLV (1 byte) in P2<br/>            |
-| <dl> <dt>0100-01FF</dt> </dl> | Dati applicazione (codifica proprietaria)<br/> |
-| <dl> <dt>0200-02FF</dt> </dl> | SEMPLICE tag TLV in P2<br/>                  |
-| <dl> <dt>0300-03FF</dt> </dl> | RFU<br/>                                   |
+| <dl> <dt>0000 - 003F</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0040 - 00FF</dt> </dl> | BER-TLV tag (1 byte) in P2<br/>            |
+| <dl> <dt>0100 - 01FF</dt> </dl> | Dati dell'applicazione (codifica proprietaria)<br/> |
+| <dl> <dt>0200 - 02FF</dt> </dl> | SIMPLE-TLV tag in P2<br/>                  |
+| <dl> <dt>0300 - 03FF</dt> </dl> | Rfu<br/>                                   |
 | <dl> <dt>0400 - 04FF</dt> </dl> | Tag BER-TLV (2 byte) in P1-P2<br/>        |
 
 
@@ -90,19 +90,19 @@ Codifica di P1-P2.
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a un buffer di byte che contiene i parametri e i dati da scrivere.
 
 </dd> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-In input, un puntatore a un oggetto di interfaccia [**ISCardCmd**](iscardcmd.md) o **null**.
+Nell'input, un puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al ritorno, viene compilato con il comando APDU creato da questa operazione. Se *ppCmd* è stato impostato su **null**, un oggetto [**ISCardCmd**](iscardcmd.md) della [*Smart Card*](../secgloss/s-gly.md) viene creato e restituito internamente utilizzando il puntatore *ppCmd* .
+Al ritorno, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** [**smart card'oggetto ISCardCmd**](iscardcmd.md) viene creato internamente e restituito usando il *puntatore ppCmd.* [](../secgloss/s-gly.md)
 
 </dd> </dl>
 
@@ -114,10 +114,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -125,35 +125,35 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il comando può essere eseguito solo se lo stato di sicurezza soddisfa le condizioni di sicurezza definite dall'applicazione nel [*contesto*](../secgloss/c-gly.md) per la funzione.
+Il comando può essere eseguito solo se lo stato di sicurezza soddisfa le condizioni di sicurezza definite dall'applicazione all'interno del [*contesto*](../secgloss/c-gly.md) per la funzione.
 
 <dl> <dt>
 
 <span id="Store_Application_Data"></span><span id="store_application_data"></span><span id="STORE_APPLICATION_DATA"></span>Archiviare i dati dell'applicazione
 </dt> <dd>
 
-Quando il valore di P1-P2 si trova nell'intervallo compreso tra 0100 e 01FF, il valore di P1-P2 deve essere un identificatore riservato per i test interni delle schede e per i servizi proprietari significativi all'interno di un determinato contesto dell'applicazione.
+Quando il valore di P1-P2 è compreso nell'intervallo da 0100 a 01FF, il valore di P1-P2 deve essere un identificatore riservato per i test interni delle schede e per i servizi proprietari significativi all'interno di un determinato contesto dell'applicazione.
 
 </dd> <dt>
 
 <span id="Store_Data_Objects"></span><span id="store_data_objects"></span><span id="STORE_DATA_OBJECTS"></span>Archiviare oggetti dati
 </dt> <dd>
 
-Quando il valore P1-P2 si trova nell'intervallo compreso tra 0040 e 00FF, il valore di P2 deve essere un tag BER-TLV su un solo byte. Il valore di 00FF è riservato per indicare che il campo dati contiene oggetti dati BER-TLV.
+Quando il valore P1-P2 è compreso nell'intervallo da 0040 a 00FF, il valore di P2 deve essere un tag BER-TLV su un singolo byte. Il valore 00FF è riservato per indicare che il campo dati contiene oggetti dati BER-TLV.
 
-Quando il valore di P1-P2 si trova nell'intervallo compreso tra 0200 e 02FF, il valore di P2 sarà un tag SIMPLE-TLV. Il valore 0200 è RFU. Il valore 02FF è riservato per indicare che il campo dati contiene oggetti dati SIMPLE-TLV.
+Quando il valore di P1-P2 è compreso nell'intervallo da 0200 a 02FF, il valore di P2 deve essere un tag SIMPLE-TLV. Il valore 0200 è RFU. Il valore 02FF è riservato per indicare che il campo dati contiene oggetti dati SIMPLE-TLV.
 
-Quando il valore di P1-P2 si trova nell'intervallo compreso tra 4000 e FFFF, il valore di P1-P2 deve essere un tag BER-TLV su due byte. I valori da 4000 a FFFF sono RFU.
+Quando il valore di P1-P2 è compreso nell'intervallo da 4000 a FFFF, il valore di P1-P2 deve essere un tag BER-TLV su due byte. I valori da 4000 a FFFF sono RFU.
 
-Quando viene fornito un oggetto dati primitivo, il campo dati del messaggio di comando deve contenere il valore dell'oggetto dati primitivo corrispondente.
+Quando viene fornito un oggetto dati primitivo, il campo dati del messaggio di comando conterrà il valore dell'oggetto dati primitivo corrispondente.
 
-Quando viene fornito un oggetto dati costruito, il campo dati del messaggio di comando deve contenere il valore dell'oggetto dati costruito, ovvero gli oggetti dati, inclusi il tag, la lunghezza e il valore.
+Quando viene fornito un oggetto dati costruito, il campo dati del messaggio di comando deve contenere il valore dell'oggetto dati costruito, ovvero gli oggetti dati, inclusi tag, lunghezza e valore.
 
 </dd> </dl>
 
-Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816**](iscardiso7816.md).
+Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816.**](iscardiso7816.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -161,12 +161,12 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 è definito come 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

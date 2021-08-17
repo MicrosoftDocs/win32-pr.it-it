@@ -1,21 +1,21 @@
 ---
-description: Quando si chiama il entryPoints di un assembly, è consigliabile usare lo stesso contesto di attivazione che era attivo durante la ricerca dell'assembly.
+description: Quando si chiama nei punti di ingresso di un assembly, è consigliabile usare lo stesso contesto di attivazione attivo durante la ricerca dell'assembly.
 ms.assetid: 8b2de5f5-ea95-441f-9345-b64de53ea05f
-title: Chiamata negli assembly
+title: Chiamata agli assembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03e4742b19ea47e03fac5f7d0318248ea167182e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae6f785c9d68aa0dbf4bec24927d9f2a1443aed1fb7fe65ec9244616fce8feec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142424"
 ---
-# <a name="calling-into-assemblies"></a>Chiamata negli assembly
+# <a name="calling-into-assemblies"></a>Chiamata agli assembly
 
-Quando si chiama il entryPoints di un assembly, è consigliabile usare lo stesso contesto di attivazione che era attivo durante la ricerca dell'assembly. Assicurarsi almeno che il componente che carica l'assembly non ottenga accidentalmente il contesto di attivazione usato dall'applicazione. La perdita del contesto di attivazione tra i limiti DLL può causare dipendenze impreviste. Questo non è un problema se l'applicazione compila l'isolamento \_ \_ abilitato perché in tal caso non è attivo alcun contesto di attivazione per impostazione predefinita. Se non si esegue la compilazione con \_ l' \_ Abilitazione dell'isolamento abilitata, è necessario attivare il contesto di attivazione **null** o lo stesso contesto di attivazione usato per caricare l'assembly.
+Quando si chiama nei punti di ingresso di un assembly, è consigliabile usare lo stesso contesto di attivazione attivo durante la ricerca dell'assembly. Assicurarsi almeno che il componente che carica l'assembly non otterrà accidentalmente il contesto di attivazione utilizzato dall'applicazione. La perdita del contesto di attivazione attraverso i limiti della DLL può causare dipendenze impreviste. Questo non è un problema se l'applicazione compila ISOLATION AWARE ENABLED perché in questo caso non è attivo alcun contesto di attivazione \_ \_ per impostazione predefinita. Se non si esegue la compilazione con l'opzione ISOLATION AWARE ENABLED definita, è necessario attivare il contesto di attivazione NULL o lo stesso contesto di attivazione utilizzato per \_ \_ caricare l'assembly. 
 
-Nell'esempio seguente si garantisce che la DLL ospitata venga eseguita in un contesto riconosciuto:
+L'esempio seguente assicura che la DLL ospitata venga eseguita in un contesto riconosciuto:
 
 ``` syntax
 ULONG_PTR ulpCookie;

@@ -1,7 +1,7 @@
 ---
 description: Crea un oggetto dati. Deprecato.
 ms.assetid: bb0ef2cf-db76-40f6-968f-3599c58459a7
-title: 'Metodo IDirectXFileSaveObject:: CreateDataObject (DXFile. h)'
+title: Metodo IDirectXFileSaveObject::CreateDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 7c5a67a72f6ff5a63730167d2fe2d12213a9ab72
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1497ad06919833e0ba716877dc81b8df51a99361a49e43fa9a0f756e296040c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728913"
 ---
-# <a name="idirectxfilesaveobjectcreatedataobject-method"></a>Metodo IDirectXFileSaveObject:: CreateDataObject
+# <a name="idirectxfilesaveobjectcreatedataobject-method"></a>Metodo IDirectXFileSaveObject::CreateDataObject
 
 Crea un oggetto dati. Deprecato.
 
@@ -45,7 +45,7 @@ HRESULT CreateDataObject(
 
 <dl> <dt>
 
-*rguidTemplate* \[ in\]
+*rguidTemplate* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[REFGUID](/openspecs/windows_protocols/ms-oaut/6e7d7108-c213-40bc-8294-ac13fe68fd50)**
@@ -54,25 +54,25 @@ GUID che rappresenta il modello dell'oggetto dati.
 
 </dd> <dt>
 
-*szName* \[ in\]
+*szName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore al nome dell'oggetto dati. Specificare **null** se l'oggetto non ha un nome.
+Puntatore al nome dell'oggetto dati. Specificare **NULL** se l'oggetto non ha un nome.
 
 </dd> <dt>
 
-*pguid* \[ in\]
+*pguid* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**GUID**](guid.md) \* const**
+Tipo: **[**CONST GUID**](guid.md) \***
 
-Puntatore a un GUID che rappresenta l'oggetto dati. Specificare **null** se l'oggetto non dispone di un GUID.
+Puntatore a un GUID che rappresenta l'oggetto dati. Specificare **NULL** se l'oggetto non dispone di un GUID.
 
 </dd> <dt>
 
-*cbSize* \[ in\]
+*cbSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -81,12 +81,12 @@ Dimensioni dell'oggetto dati, in byte.
 
 </dd> <dt>
 
-*pvData* \[ in\]
+*pvData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un buffer contenente tutti i dati del membro richiesti.
+Puntatore a un buffer contenente tutti i dati necessari del membro.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntatore a un buffer contenente tutti i dati del membro richiesti.
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**IDirectXFileData**](idirectxfiledata.md) , che rappresenta l'oggetto dati del file creato.
+Indirizzo di un puntatore a [**un'interfaccia IDirectXFileData**](idirectxfiledata.md) che rappresenta l'oggetto dati del file creato.
 
 </dd> </dl>
 
@@ -107,11 +107,11 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 ## <a name="remarks"></a>Commenti
 
-Se un oggetto riferimento ai dati fa riferimento all'oggetto dati, il parametro szName o pguid deve essere non **null**.
+Se un oggetto riferimento ai dati farà riferimento all'oggetto dati, il parametro szName o pguid deve essere diverso da **NULL.**
 
-Salvare i modelli usando il metodo [**IDirectXFileSaveObject:: SaveTemplates**](idirectxfilesaveobject--savetemplates.md) prima di salvare i dati creati da questo metodo. Salvare i dati creati usando il metodo [**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md) .
+Salvare i modelli usando il [**metodo IDirectXFileSaveObject::SaveTemplates**](idirectxfilesaveobject--savetemplates.md) prima di salvare i dati creati da questo metodo. Salvare i dati creati usando il [**metodo IDirectXFileSaveObject::SaveData.**](idirectxfilesaveobject--savedata.md)
 
-Se è necessario salvare i dati facoltativi, usare il metodo [**IDirectXFileData:: AddDataObject**](idirectxfiledata--adddataobject.md) dopo aver usato questo metodo e prima di usare [**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md). Se l'oggetto dispone di oggetti figlio, aggiungerli prima di chiamare **IDirectXFileSaveObject:: SaveData**.
+Se è necessario salvare dati facoltativi, usare il metodo [**IDirectXFileData::AddDataObject**](idirectxfiledata--adddataobject.md) dopo aver utilizzato questo metodo e prima di [**usare IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md). Se l'oggetto ha oggetti figlio, aggiungerli prima di chiamare **IDirectXFileSaveObject::SaveData**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -119,8 +119,8 @@ Se è necessario salvare i dati facoltativi, usare il metodo [**IDirectXFileData
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Se è necessario salvare i dati facoltativi, usare il metodo [**IDirectXFileData
 [**IDirectXFileData::AddDataObject**](idirectxfiledata--adddataobject.md)
 </dt> <dt>
 
-[**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md)
+[**IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md)
 </dt> <dt>
 
 [**IDirectXFileSaveObject::SaveTemplates**](idirectxfilesaveobject--savetemplates.md)

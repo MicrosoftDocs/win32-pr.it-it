@@ -4,9 +4,9 @@ description: Imposta il valore della proprietà VirtualIPActive.
 ms.assetid: e485aeb1-afdf-4572-bac7-daa80d903edc
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetVirtualIPActive
-- Metodo SetVirtualIPActive Servizi Desktop remoto, classe Win32_TSVirtualIP
-- Classe Win32_TSVirtualIP Servizi Desktop remoto, metodo SetVirtualIPActive
+- Metodo SetVirtualIPActive Servizi Desktop remoto
+- Metodo SetVirtualIPActive Servizi Desktop remoto , Win32_TSVirtualIP classe
+- Win32_TSVirtualIP classe Servizi Desktop remoto , metodo SetVirtualIPActive
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06534c967c5d86a7a19c060254b3b988ff98b17e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ab43a007a2a8b04e91d5225e648d5667a87c468cbd52c005d85f4ba6496c919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850920"
 ---
-# <a name="setvirtualipactive-method-of-the-win32_tsvirtualip-class"></a>Metodo SetVirtualIPActive della \_ classe TSVirtualIP Win32
+# <a name="setvirtualipactive-method-of-the-win32_tsvirtualip-class"></a>Metodo SetVirtualIPActive della classe \_ Win32 TSVirtualIP
 
-Imposta il valore della proprietà **VirtualIPActive** .
+Imposta il **valore della proprietà VirtualIPActive.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,12 +43,12 @@ uint32 SetVirtualIPActive(
 
 <dl> <dt>
 
-*VirtualIPActive* \[ in\]
+*VirtualIPActive* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Specifica se la virtualizzazione IP è attiva sul server. Può corrispondere a uno dei valori seguenti.
+Specifica se la virtualizzazione IP è attiva nel server. Può essere uno dei valori seguenti.
 
 <dt>
 
@@ -68,9 +68,9 @@ La virtualizzazione IP è attiva.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,7 +81,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_TSVirtualIP Win32**](win32-tsvirtualip.md)
+[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

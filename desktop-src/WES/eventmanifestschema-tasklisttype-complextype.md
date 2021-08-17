@@ -3,7 +3,7 @@ title: Tipo complesso TaskListType
 description: Definisce un elenco di attività utilizzate per identificare i componenti di un'applicazione.
 ms.assetid: 41a46967-7c5b-4555-9f65-bd9582c0c492
 keywords:
-- Log eventi di tipo complesso TaskListType
+- EventLog di tipo complesso TaskListType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ad427743242ada8901e904fc4e03620ccc72f405
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d59457aaeeefeec4b490b4c399a2faafb4f62c22e67a600f741ccc16b3abcaad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750907"
 ---
 # <a name="tasklisttype-complex-type"></a>Tipo complesso TaskListType
 
@@ -42,7 +42,7 @@ Definisce un elenco di attività utilizzate per identificare i componenti di un'
 
 | Elemento                                                       | Tipo                                                         | Descrizione                                                       |
 |---------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|
-| [**attività**](eventmanifestschema-task-tasklisttype-element.md) | [**TaskType**](eventmanifestschema-tasktype-complextype.md) | Definisce un componente o un sottocomponente di un'applicazione.<br/> |
+| [**Attività**](eventmanifestschema-task-tasklisttype-element.md) | [**Tipo di attività**](eventmanifestschema-tasktype-complextype.md) | Definisce un componente o un sottocomponente di un'applicazione.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Definisce un elenco di attività utilizzate per identificare i componenti di un'
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

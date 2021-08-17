@@ -13,14 +13,14 @@ ms.locfileid: "119452381"
 ---
 # <a name="about-clipping"></a>Informazioni sul ritaglio
 
-Il ritaglio viene usato dalle applicazioni in diversi modi. Le applicazioni di elaborazione di testo e fogli di calcolo ritagliano l'input da tastiera per evitare che venga visualizzato nei margini di una pagina o di un foglio di calcolo. Le applicazioni CAD (Computer-Aided Design) e di disegno ritagliano l'output grafico per evitare che sovrascriva i bordi di un disegno o di un'immagine.
+Il ritaglio viene usato dalle applicazioni in diversi modi. Le applicazioni di elaborazione di testo e fogli di calcolo ritagliano l'input da tastiera per evitare che venga visualizzato nei margini di una pagina o di un foglio di calcolo. Le applicazioni CAD (Computer-Aided Design) e drawing applications ritagliano l'output grafico per evitare che sovrascriva i bordi di un disegno o di un'immagine.
 
-*Un'area di ritaglio* è un'area con bordi che sono linee rette o curve. Un *tracciato di* ritaglio è un'area con bordi che sono linee rette, curve di Bézier o combinazioni di entrambi. Per altre informazioni sulle aree, vedere [Aree.](regions.md) Per altre informazioni sui percorsi, vedere [Percorsi.](paths.md)
+*Un'area di ritaglio* è un'area con bordi che sono linee rette o curve. Un *tracciato di ritaglio* è un'area con bordi che sono linee rette, curve di Bézier o combinazioni di entrambi. Per altre informazioni sulle aree, vedere [Aree](regions.md). Per altre informazioni sui percorsi, vedere [Percorsi](paths.md).
 
 Questa panoramica illustra gli argomenti seguenti:
 
 -   [Aree di ritaglio](clipping-regions.md)
--   [Tracciati di ritaglio](clip-paths.md)
+-   [Percorsi di ritaglio](clip-paths.md)
 
  
 

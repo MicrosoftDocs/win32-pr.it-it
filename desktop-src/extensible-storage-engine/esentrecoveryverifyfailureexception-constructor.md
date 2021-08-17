@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentRecoveryVerifyFailureException'
+description: 'Altre informazioni: Costruttore EsentRecoveryVerifyFailureException'
 title: Costruttore EsentRecoveryVerifyFailureException
 TOCTitle: 'EsentRecoveryVerifyFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecoveryVerifyFailureException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3eac27a26787b1efaa6b09c79de3d67976694e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce3d7e0693385e91271538f7351b0ba60c8bb5ec79b791f10a0bc1d11976103e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971121"
 ---
 # <a name="esentrecoveryverifyfailureexception-constructor"></a>Costruttore EsentRecoveryVerifyFailureException
 
 Inizializza una nuova istanza della classe EsentRecoveryVerifyFailureException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentRecoveryVerifyFailureException()
 
 [Membri di EsentRecoveryVerifyFailureException](./esentrecoveryverifyfailureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

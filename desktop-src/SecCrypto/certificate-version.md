@@ -1,7 +1,7 @@
 ---
 description: La proprietà Version recupera il numero di versione del certificato.
 ms.assetid: 7f135a1a-ca77-4ff1-9437-532e468c6b41
-title: Proprietà Certificate.Version
+title: Certificate.Version - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117771041"
 ---
-# <a name="certificateversion-property"></a>Proprietà Certificate.Version
+# <a name="certificateversion-property"></a>Certificate.Version - proprietà
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
 La **proprietà Version** recupera il numero di versione del certificato.
 

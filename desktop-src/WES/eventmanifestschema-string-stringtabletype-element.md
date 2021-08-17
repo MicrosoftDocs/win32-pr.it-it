@@ -1,9 +1,9 @@
 ---
-title: Elemento String (StringTableType)
+title: Elemento string (StringTableType)
 description: Definisce una stringa localizzata.
 ms.assetid: 845476a9-bcf4-4821-824c-06c9a9f64649
 keywords:
-- EventLog elemento stringa
+- Elemento string EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c46fc43366d6472e8047b529d847eefd5369c263
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82eae0fa7007790995617b2c26bc5aff2bca720fb689b9ac468ef551d3400e05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136174"
 ---
-# <a name="string-stringtabletype-element"></a>Elemento String (StringTableType)
+# <a name="string-stringtabletype-element"></a>Elemento string (StringTableType)
 
 Definisce una stringa localizzata.
 
@@ -43,7 +43,7 @@ Definisce una stringa localizzata.
 </xs:element>
 ```
 
-L'elemento **String** è definito dal tipo complesso [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) .
+**L'elemento** stringa è definito dal [**tipo complesso StringTableType.**](eventmanifestschema-stringtabletype-complextype.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -51,7 +51,7 @@ L'elemento **String** è definito dal tipo complesso [**StringTableType**](event
 
 | Nome       | Tipo   | Descrizione                                                                           |
 |------------|--------|---------------------------------------------------------------------------------------|
-| id         | string | Identificatore che identifica in modo univoco la stringa nella tabella di stringhe.<br/> |
+| id         | string | Identificatore che identifica in modo univoco la stringa all'interno della tabella di stringhe.<br/> |
 | stringType | string | Non usato.<br/>                                                                  |
 | Valore      | string | Stringa localizzata.<br/>                                                      |
 
@@ -63,8 +63,8 @@ L'elemento **String** è definito dal tipo complesso [**StringTableType**](event
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ L'elemento **String** è definito dal tipo complesso [**StringTableType**](event
 **Elemento padre**
 </dt> <dt>
 
-[**Un'StringTable (LocalizationType)**](eventmanifestschema-stringtable-localizationtype-element.md)
+[**stringTable (LocalizationType)**](eventmanifestschema-stringtable-localizationtype-element.md)
 </dt> </dl>
 
  

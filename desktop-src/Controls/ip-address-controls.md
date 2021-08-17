@@ -25,7 +25,7 @@ Windows Internet Explorer versione 4.0 introduce il controllo degli indirizzi IP
 
 ![diagramma che mostra i valori in ognuno dei quattro campi di un controllo degli indirizzi IP](images/ipa-scrn.png)
 
-Il controllo consente di immettere solo testo numerico in ognuno dei campi. Dopo aver immesso tre cifre in un determinato campo, lo stato attivo della tastiera viene automaticamente spostato nel campo successivo. Se l'applicazione non compila l'intero campo, l'utente può immettere meno di tre cifre. Ad esempio, se il campo deve contenere solo il numero 21, digitando "21" e premendo il tasto l'utente verrà visualizzato il campo successivo.
+Il controllo consente di immettere solo testo numerico in ognuno dei campi. Dopo aver immesso tre cifre in un determinato campo, lo stato attivo della tastiera viene automaticamente spostato nel campo successivo. Se l'applicazione non deve compilare l'intero campo, l'utente può immettere meno di tre cifre. Ad esempio, se il campo deve contenere solo il numero 21, digitando "21" e premendo il tasto l'utente verrà visualizzato il campo successivo.
 
 L'intervallo predefinito per ogni campo è compreso tra 0 e 255, ma l'applicazione può impostare l'intervallo su qualsiasi valore compreso tra questi limiti con il [**messaggio \_ IPM SETRANGE.**](ipm-setrange.md)
 
@@ -50,7 +50,7 @@ Un controllo indirizzo IP non è un controllo di modifica e non risponde ai mess
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [EN \_ SETFOCUS](en-setfocus.md)   | Inviato quando il controllo dell'indirizzo IP ottiene lo stato attivo della tastiera.                                                                                                                                              |
 | [EN \_ KILLFOCUS](en-killfocus.md) | Inviato quando il controllo dell'indirizzo IP perde lo stato attivo della tastiera.                                                                                                                                              |
-| [MODIFICA \_ EN](en-change.md)       | Inviato quando viene modificato un campo nel controllo dell'indirizzo IP. Analogamente alla [notifica EN \_ CHANGE](en-change.md) da un controllo di modifica standard, questa notifica viene ricevuta dopo l'aggiornamento della schermata. |
+| [EN \_ CHANGE](en-change.md)       | Inviato quando viene modificato un campo nel controllo dell'indirizzo IP. Analogamente alla [notifica EN \_ CHANGE](en-change.md) da un controllo di modifica standard, questa notifica viene ricevuta dopo l'aggiornamento della schermata. |
 
 
 

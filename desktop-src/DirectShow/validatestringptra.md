@@ -25,7 +25,7 @@ ms.locfileid: "119432101"
 Verifica che il processo chiamante abbia accesso in lettura a una stringa ANSI. In caso contrario, la macro chiama la macro [**DbgBreak.**](dbgbreak.md)
 
 > [!Note]  
-> Questa macro è deprecata. Nell'SDK Windows per Windows Vista (e versioni successive) questa macro non esegue alcun'operazione.
+> Questa macro è deprecata. In Windows SDK per Windows Vista (e versioni successive) questa macro non esegue alcun'operazione.
 
  
 

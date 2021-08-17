@@ -1,9 +1,9 @@
 ---
-title: Funzione RasAdminUserGetInfo (rassapi. h)
-description: La funzione RasAdminUserGetInfo ottiene le informazioni relative al numero di telefono di callback e alle autorizzazioni RAS per un utente specificato.
+title: Funzione RasAdminUserGetInfo (Rassapi.h)
+description: La funzione RasAdminUserGetInfo ottiene le autorizzazioni RAS e le informazioni sul numero di telefono di callback per un utente specificato.
 ms.assetid: 178ff775-9cd2-43f0-9a9a-dbae337c5fe8
 keywords:
-- RAS funzione RasAdminUserGetInfo
+- Funzione RasAdminUserGetInfo RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89fe08a918a958ffb5a656ce2c76cecec31cbb61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4cda41447af832bd4ae04a14c6f8038fee4b61a17ac98c919c0b085261b242d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788690"
 ---
-# <a name="rasadminusergetinfo-function"></a>RasAdminUserGetInfo (funzione)
+# <a name="rasadminusergetinfo-function"></a>Funzione RasAdminUserGetInfo
 
-\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti di Windows NT Server 4,0. Restituisce la \_ chiamata \_ di errore non \_ implementata in Windows Server 2003. Le applicazioni devono utilizzare la funzione [**MprAdminUserGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminusergetinfo) .\]
+\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti Windows NT Server 4.0. Restituisce ERROR \_ CALL NOT IMPLEMENTED in Windows Server \_ \_ 2003. Le applicazioni devono usare [**la funzione MprAdminUserGetInfo.**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminusergetinfo)\]
 
-La funzione **RasAdminUserGetInfo** ottiene le informazioni relative al numero di telefono di callback e alle autorizzazioni RAS per un utente specificato.
+La **funzione RasAdminUserGetInfo** ottiene le autorizzazioni RAS e le informazioni sul numero di telefono di callback per un utente specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,30 +44,30 @@ DWORD RasAdminUserGetInfo(
 
 <dl> <dt>
 
-*lpszUserAccountServer* \[ in\]
+*lpszUserAccountServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome del controller di dominio primario o di backup con il database degli account utente. Utilizzare la funzione [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) per ottenere il nome del server.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome del controller di dominio primario o di backup con il database dell'account utente. Usare la [**funzione RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) per ottenere il nome del server.
 
 </dd> <dt>
 
-*lpszUser* \[ in\]
+*lpszUser* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome dell'utente per il quale ottenere le informazioni RAS.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome dell'utente per cui ottenere informazioni RAS.
 
 </dd> <dt>
 
 *pRasUser0* 
 </dt> <dd>
 
-Puntatore alla struttura [**dell' \_ utente RAS \_ 0**](ras-user-0-str.md) che riceve i dati RAS per l'utente specificato.
+Puntatore alla [**struttura \_ RAS USER \_ 0**](ras-user-0-str.md) che riceve i dati RAS per l'utente specificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito può essere il codice di errore seguente.
 
@@ -75,13 +75,13 @@ Se la funzione ha esito negativo, il valore restituito può essere il codice di 
 
 | Valore                                                                                            | Significato                                                  |
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**\_BUFTOOSMALL Nerr**</dt> </dl> | Memoria insufficiente per eseguire questa funzione.<br/> |
+| <dl> <dt>**NERR \_ BufTooSmall**</dt> </dl> | Memoria insufficiente per eseguire questa funzione.<br/> |
 
 
 
  
 
-Non sono disponibili informazioni estese sull'errore per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Non sono disponibili informazioni estese sugli errori per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Non sono disponibili informazioni estese sull'errore per questa funzione. non ch
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/> | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
-| Libreria<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
+| Intestazione<br/>                | <dl> <dt>Rassapi.h</dt> </dl>   |
+| Libreria<br/>               | <dl> <dt>Rassapi.lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
 
@@ -107,7 +107,7 @@ Non sono disponibili informazioni estese sull'errore per questa funzione. non ch
 [Funzioni di amministrazione del server RAS](ras-server-administration-functions.md)
 </dt> <dt>
 
-[**\_Utente RAS \_ 0**](ras-user-0-str.md)
+[**UTENTE \_ RAS \_ 0**](ras-user-0-str.md)
 </dt> <dt>
 
 [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md)

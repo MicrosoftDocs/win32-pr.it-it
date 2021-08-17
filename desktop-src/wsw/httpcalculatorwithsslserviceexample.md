@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithSslServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice su HTTP, con la sicurezza del trasporto SSL.
+description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL.
 ms.assetid: 15e61f32-73b5-4359-957d-9694fe947b1e
 keywords:
-- HttpCalculatorWithSslServiceExample native-servizi Web
+- HttpCalculatorWithSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9222fc6ffb95e294858b2aca54e4f7450c61232c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ace02b58f075121613a07845237ddc2e0c20934c2b4fd865180a8900a8001eb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344921"
 ---
 # <a name="httpcalculatorwithsslserviceexample"></a>HttpCalculatorWithSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice su HTTP, con la sicurezza del trasporto SSL.
+Questo esempio illustra come usare l'host del servizio per ospitare un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL.
 
--   [HttpCalculatorServiceWithSsl. cpp](#httpcalculatorservicewithsslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [HttpCalculatorServiceWithSsl.cpp](#httpcalculatorservicewithsslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorservicewithsslcpp"></a>HttpCalculatorServiceWithSsl. cpp
+## <a name="httpcalculatorservicewithsslcpp"></a>HttpCalculatorServiceWithSsl.cpp
 
 
 ```C++
@@ -266,7 +266,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -396,9 +396,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

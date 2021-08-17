@@ -17,7 +17,7 @@ Gestione autorizzazioni fornisce un'infrastruttura flessibile per l'integrazione
 
 Le applicazioni di Gestione autorizzazioni consentono di archiviare criteri di autorizzazione in formato di archivi autorizzazioni che vengono archiviati in file XML o Active Directory e consentono di applicare criteri di autorizzazione in fase di esecuzione.
 
-Le applicazioni chiamano quindi un metodo di controllo dell'accesso in fase di esecuzione che controlla l'accesso rispetto alle informazioni sui criteri nell'archivio autorizzazioni.
+Le applicazioni chiamano quindi un metodo di controllo di accesso in fase di esecuzione che controlla l'accesso alle informazioni sui criteri nell'archivio autorizzazioni.
 
 I criteri di autorizzazione includono le parti seguenti:
 

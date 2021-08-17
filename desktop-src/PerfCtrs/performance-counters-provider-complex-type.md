@@ -1,5 +1,5 @@
 ---
-description: Definisce un provider e i contatori che fornisce.
+description: Definisce un provider e i contatori forniti.
 ms.assetid: 85299b01-5679-40f8-8aec-5c2ff8d7cfc8
 title: Tipo complesso provider
 ms.topic: reference
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6eec52139710d0ffafe06f22504a735e59312818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4470754e710faf9f7abe5a94cfb2e08e6e79c1b0415110b96dbac35807556911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061068"
 ---
 # <a name="provider-complex-type"></a>Tipo complesso provider
 
-Definisce un provider e i contatori che fornisce.
+Definisce un provider e i contatori forniti.
 
 ``` syntax
 <xs:complexType name="provider">
@@ -159,7 +159,7 @@ Definisce un provider e i contatori che fornisce.
 
 | Elemento        | Tipo                                                                   | Descrizione                                                                                 |
 |----------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **counterSet** | [**uomo: contatore**](performance-counters-counterset-complex-type.md) | Identifica l'insieme di contatori che contiene uno o più contatori correlati logicamente.<br/> |
+| **Counterset** | [**man:counterSet**](performance-counters-counterset-complex-type.md) | Identifica l'insieme di contatori che contiene uno o più contatori correlati logicamente.<br/> |
 
 
 
@@ -182,29 +182,29 @@ Definisce un provider e i contatori che fornisce.
 </thead>
 <tbody>
 <tr class="odd">
-<td>applicationIdentity</td>
+<td>Applicationidentity</td>
 <td><strong>xs:string</strong></td>
-<td>Nome del file binario che contiene le stringhe di risorsa localizzate, ovvero un file con estensione exe o dll (non includere il percorso del file binario).<br/> L'utilità Lodctr.exe usa il percorso dal parametro facoltativo [<em>path</em>] per cercare il file binario. Ad esempio, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>path</em>]]. Se non si include il parametro [<em>path</em>], Lodctr.exe Cerca nella cartella che contiene il manifesto.<br/></td>
+<td>Nome del file binario che contiene le stringhe di risorse localizzate, un file .exe o .dll (non includere il percorso del file binario).<br/> LLodctr.exe utilità usa il percorso del parametro facoltativo [<em>path</em>] per cercare il file binario. Ad esempio, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>percorso</em>]]. Se non si include il parametro [<em>path</em>], Lodctr.exe cerca nella cartella che contiene il manifesto.<br/></td>
 </tr>
 <tr class="even">
 <td>callback</td>
 
-<td>Questo attributo indica che si desidera ricevere una notifica quando un consumer esegue determinate azioni. <br/> Se si include questo attributo, lo strumento CTRPP usa la firma della funzione <a href="counterinitialize.md"><strong>CounterInitialize</strong></a> alternativa, che viene usata per passare il nome della funzione che implementa la funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback</strong></a> .<br/> In alternativa alla specifica di questo attributo, è possibile usare l'argomento <strong>-NotificationCallback</strong><a href="ctrpp.md">CTRPP</a> .<br/> <strong>Windows Vista:</strong> L'unico valore valido per questo attributo è &quot; Custom &quot; . L'utilità <a href="ctrpp.md">CTRPP</a> genera il modello per una funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback</strong></a> . Il modello è incluso nel file con estensione c generato da CTRPP. <br/> <br/></td>
+<td>Questo attributo indica che si desidera ricevere una notifica quando un consumer esegue determinate azioni. <br/> Se si include questo attributo, lo strumento CTRPP usa la firma della funzione <a href="counterinitialize.md"><strong>CounterInitialize</strong></a> alternativa, che consente di passare il nome della funzione che implementa la funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a><br/> In alternativa alla specifica di questo attributo, è possibile usare l'argomento<a href="ctrpp.md">CTRPP</a> <strong>-NotificationCallback.</strong><br/> <strong>Windows Vista:</strong> L'unico valore valido per questo attributo è &quot; &quot; personalizzato. <a href="ctrpp.md">L'utilità CTRPP</a> genera il modello per una funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a> Il modello è incluso nel file CTRPP generato da CTRPP. <br/> <br/></td>
 </tr>
 <tr class="odd">
-<td>providerGuid</td>
-<td><a href="performance-counters-guidtype-simple-type.md"><strong>uomo: GUIDType</strong></a></td>
-<td>GUID di stringa che identifica in modo univoco il provider nel manifesto. Il GUID deve essere univoco all'interno del manifesto.<br/> È necessario fornire un nuovo GUID solo quando cambia la versione dell'applicazione (se si supportano installazioni affiancate).<br/></td>
+<td>guida provider</td>
+<td><a href="performance-counters-guidtype-simple-type.md"><strong>man:GUIDType</strong></a></td>
+<td>GUID stringa che identifica in modo univoco il provider nel manifesto. Il GUID deve essere univoco all'interno del manifesto.<br/> È necessario specificare un nuovo GUID solo quando viene modificata la versione dell'applicazione (se si supportano installazioni side-by-side).<br/></td>
 </tr>
 <tr class="even">
 <td>providerName</td>
 <td><strong>xs:string</strong></td>
-<td>Nome utilizzato per creare il nome della classe WMI Win32_PerfRawData. Se non si specifica un nome, i &quot; contatori &quot; vengono usati come nome della classe.<br/></td>
+<td>Nome utilizzato per creare il nome della Win32_PerfRawData WMI. Se non si specifica un nome, &quot; counters &quot; viene utilizzato come nome della classe.<br/></td>
 </tr>
 <tr class="odd">
-<td>providerType</td>
+<td>Providertype</td>
 
-<td>Indica se il provider è un provider in modalità utente, un provider in modalità kernel o un provider di driver. I valori possibili sono i seguenti.<br/> 
+<td>Identifica se il provider è un provider in modalità utente, un provider in modalità kernel o un provider di driver. I valori possibili sono i seguenti.<br/> 
 <table>
 <thead>
 <tr class="header">
@@ -214,12 +214,12 @@ Definisce un provider e i contatori che fornisce.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="userMode"></span><span id="usermode"></span><span id="USERMODE"></span>userMode<br/></td>
-<td>Specificare questa modalità per un componente in modalità utente, ad esempio un'applicazione, una DLL o un driver in modalità utente. Le estensioni tipiche per i componenti in modalità utente sono exe o dll. Questo è il valore predefinito.<br/></td>
+<td><span id="userMode"></span><span id="usermode"></span><span id="USERMODE"></span>Usermode<br/></td>
+<td>Specificare questa modalità per un componente in modalità utente, ad esempio un'applicazione, una DLL o un driver in modalità utente. Le estensioni tipiche per i componenti in modalità utente sono .exe o .dll. Questo è il valore predefinito.<br/></td>
 </tr>
 <tr class="even">
-<td><span id="kernel"></span><span id="KERNEL"></span>kernel<br/></td>
-<td>Specificare questa modalità per un componente in modalità kernel, ad esempio un driver WDM o CDR. L'estensione tipica per i componenti in modalità kernel è. sys.<br/> <strong>Windows Vista e Windows Server 2008:</strong> Questo valore non è supportato fino a Windows 7 e Windows Server 2008 R2.<br/></td>
+<td><span id="kernel"></span><span id="KERNEL"></span>Kernel<br/></td>
+<td>Specificare questa modalità per un componente in modalità kernel, ad esempio un driver WDM o WDF. L'estensione tipica per i componenti in modalità kernel è .sys.<br/> <strong>Windows Vista e Windows Server 2008:</strong> Questo valore non è supportato fino Windows 7 e Windows Server 2008 R2.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -228,14 +228,14 @@ Definisce un provider e i contatori che fornisce.
 </tr>
 <tr class="even">
 <td>resourceBase</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>uomo: UInt32Type</strong></a></td>
-<td><p>Definisce il valore di indice della risorsa iniziale utilizzato da <a href="ctrpp.md">CTRPP</a> per generare gli identificatori di risorsa.</p></td>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td><p>Definisce il valore iniziale dell'indice delle risorse <a href="ctrpp.md">utilizzato da CTRPP</a> per generare gli identificatori di risorsa.</p></td>
 </tr>
 <tr class="odd">
 <td>simbolo</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>uomo: CSymbolType</strong></a></td>
-<td><p>Nome simbolico che identifica il provider. Lo strumento <a href="ctrpp.md">CTRPP</a> crea una variabile handle che è possibile usare quando si chiamano funzioni che richiedono un handle per il provider (ad esempio, <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>PerfSetULongCounterValue</strong></a>). Il nome simbolico è il nome della variabile.</p>
-<p>Se si include l'argomento <strong>-Prefix</strong> quando si chiama <a href="ctrpp.md">CTRPP</a>, la stringa di prefisso viene aggiunta all'inizio del nome simbolico.</p></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td><p>Nome simbolico che identifica il provider. Lo <a href="ctrpp.md">strumento CTRPP</a> crea una variabile HANDLE che è possibile usare quando si chiamano funzioni che richiedono un handle per il provider ( ad <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>esempio, PerfSetULongCounterValue</strong></a>). Il nome simbolico è il nome della variabile.</p>
+<p>Se si include <strong>l'argomento -prefix</strong> quando si chiama <a href="ctrpp.md">CTRPP,</a>la stringa di prefisso viene aggiunta all'inizio del nome simbolico.</p></td>
 </tr>
 </tbody>
 </table>
@@ -248,8 +248,8 @@ Definisce un provider e i contatori che fornisce.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

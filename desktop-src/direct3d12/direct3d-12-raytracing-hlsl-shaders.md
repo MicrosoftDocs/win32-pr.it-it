@@ -1,20 +1,20 @@
 ---
-title: Shader HLSL Raytracing Direct3D 12
-description: Visualizzare i collegamenti agli articoli che descrivono gli shader HLSL (High-Level Shader Language) che supportano la pipeline di raytracing Direct3D 12.
+title: Shader HLSL Direct3D 12 Raytracing
+description: Visualizzare i collegamenti ad articoli che descrivono shader HLSL (High-Level Shader Language) che supportano la pipeline di raytracing Direct3D 12.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ca19081b1ea963851e82d18912153434c3e38d1
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: cfc2321511be2ef912a6dce6710b233cb59dcc7712e9e8f63db890d8707822c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733774"
 ---
-# <a name="direct3d-12-raytracing-hlsl-shaders"></a>Shader HLSL Raytracing Direct3D 12
+# <a name="direct3d-12-raytracing-hlsl-shaders"></a>Shader HLSL Direct3D 12 Raytracing
 
-Gli shader HLSL seguenti supportano la pipeline di raytracing Direct3D 12. Questi shader sono funzioni compilate in una libreria, con modello di destinazione lib_6_3 e identificati da un attributo *[shader("shadertype")]* nella funzione shader. Vedere **Intrinseci e** **valori di sistema** per vedere cosa è consentito per ogni tipo di shader.
+Gli shader HLSL seguenti supportano la pipeline di raytracing Direct3D 12. Questi shader sono funzioni compilate in una libreria, con modello di destinazione lib_6_3 e identificate da un attributo *[shader("shadertype")]* nella funzione shader. Vedere **Intrinseci e** **Valori di sistema** per vedere cosa è consentito per ogni tipo di shader.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,12 +22,12 @@ Gli shader HLSL seguenti supportano la pipeline di raytracing Direct3D 12. Quest
 
 | Argomento                                                                                                       | Descrizione                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Qualsiasi hit shader**](any-hit-shader.md)<br/>                              | Shader richiamato quando le intersezioni dei raggi non sono opache.<br/>                                                                                                                                                                                                                                              |
+| [**Qualsiasi hit shader**](any-hit-shader.md)<br/>                              | Shader richiamato quando le intersezioni di raggi non sono opache.<br/>                                                                                                                                                                                                                                              |
 | [**Shader chiamabile**](callable-shader.md)<br/>                              | Shader richiamato da un altro shader con la funzione **intrinseca CallShader.**<br/>                                                                                                                                                                                                                                              |
-| [**Hit shader più vicino**](closest-hit-shader.md)<br/>                              | Shader richiamato quando è abilitato ed è stato determinato l'hit più vicino o è terminata la ricerca di intersezione dei raggi.<br/>                                                                                                                                                                                                                                              |
-| [**Intersection Shader**](intersection-shader.md)<br/>                              | Shader usato per implementare primitive di intersezione personalizzate per i raggi che intersecano un volume di delimitazione associato (rettangolo di selezione).<br/>                                                                                                                                                                                                                                              |
+| [**Hit Shader più vicino**](closest-hit-shader.md)<br/>                              | Shader richiamato quando è abilitato ed è stato determinato l'hit più vicino o la ricerca dell'intersezione dei raggi è terminata.<br/>                                                                                                                                                                                                                                              |
+| [**Shader di intersezione**](intersection-shader.md)<br/>                              | Shader usato per implementare primitive di intersezione personalizzate per i raggi che intersecano un volume di delimitazione associato (rettangolo di selezione).<br/>                                                                                                                                                                                                                                              |
 | [**Miss Shader**](miss-shader.md)<br/>                              | Shader richiamato quando non vengono trovate o accettate intersezioni di raggi.<br/>                                                                                                                                                                                                                                              |
-| [**Ray Generation Shader**](ray-generation-shader.md)<br/>                              | Shader che chiama [**TraceRay per**](traceray-function.md) generare raggi.<br/>                                                                                                                                                                                                                                              |
+| [**Shader di generazione di raggi**](ray-generation-shader.md)<br/>                              | Shader che chiama [**TraceRay per**](traceray-function.md) generare raggi.<br/>                                                                                                                                                                                                                                              |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
