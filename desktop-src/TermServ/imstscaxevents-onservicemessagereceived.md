@@ -4,7 +4,7 @@ description: Chiamato quando il client riceve un messaggio di sistema.
 ms.assetid: 9D230AA3-30F8-4BDF-89D6-D33AF42D0E85
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnServiceMessageReceived
+- Metodo OnServiceMessageReceived Servizi Desktop remoto
 - Metodo OnServiceMessageReceived Servizi Desktop remoto, interfaccia IMsTscAxEvents
 - Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnServiceMessageReceived
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a26b78fa31667fb550848d4edd7918aa2bde3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ca511710834f8aa9fdda02565c33c4732e4cba9300e74ad3b48276d74890bc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757249"
 ---
-# <a name="imstscaxeventsonservicemessagereceived-method"></a>Metodo IMsTscAxEvents:: OnServiceMessageReceived
+# <a name="imstscaxeventsonservicemessagereceived-method"></a>Metodo IMsTscAxEvents::OnServiceMessageReceived
 
 Chiamato quando il client riceve un messaggio di sistema.
 
@@ -43,7 +43,7 @@ void OnServiceMessageReceived(
 
 <dl> <dt>
 
-*serviceMessage* \[ in\]
+*serviceMessage* \[ Pollici\]
 </dt> <dd>
 
 Specifica il messaggio di sistema.
@@ -56,7 +56,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sui messaggi di sistema, vedere [configurare la messaggistica per un server Gateway Desktop remoto](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd834700(v=ws.11)).
+Per altre informazioni sui messaggi di sistema, vedere [Configure Messaging for a Desktop remoto Gateway Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd834700(v=ws.11)).
 
 ## <a name="requirements"></a>Requisiti
 

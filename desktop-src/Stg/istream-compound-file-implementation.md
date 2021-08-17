@@ -1,28 +1,28 @@
 ---
-title: Implementazione del file composto IStream
-description: L'interfaccia IStream supporta la lettura e la scrittura di dati negli oggetti flusso. In un oggetto di archiviazione strutturato gli oggetti flusso contengono i dati e le archiviazioni forniscono la struttura.
+title: IStream - Implementazione di file composti
+description: L'interfaccia IStream supporta la lettura e la scrittura di dati in oggetti flusso. In un oggetto di archiviazione strutturata gli oggetti flusso contengono i dati e le risorse di archiviazione forniscono la struttura.
 ms.assetid: 52474e37-0e14-4dcc-8e04-4442cfd26eb3
 keywords:
-- IStream Strctd STG, implementazione del file composto
+- IStream Strctd Stg , implementazione di file composti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d15e671521f4a1e81b78579bc1225eccb48898
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: a57a974e44e66d8709a002f9635c41f751e80ab1d3f3875f8eb129cef2b14847
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "106320215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117961209"
 ---
-# <a name="istream---compound-file-implementation"></a>Implementazione del file composto IStream
+# <a name="istream---compound-file-implementation"></a>IStream - Implementazione di file composti
 
-L'interfaccia [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) supporta la lettura e la scrittura di dati negli oggetti flusso. In un oggetto di archiviazione strutturato gli oggetti flusso contengono i dati e le archiviazioni forniscono la struttura. I dati semplici possono essere scritti direttamente in un flusso, ma con maggiore frequenza, i flussi sono elementi annidati all'interno di un oggetto di archiviazione. Sono simili ai file standard.
+[**L'interfaccia IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) supporta la lettura e la scrittura di dati in oggetti flusso. In un oggetto di archiviazione strutturata gli oggetti flusso contengono i dati e le risorse di archiviazione forniscono la struttura. I dati semplici possono essere scritti direttamente in un flusso, ma più spesso i flussi sono elementi annidati all'interno di un oggetto di archiviazione. Sono simili ai file standard.
 
-La specifica di [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) definisce più funzionalità rispetto a quelle supportate dall'implementazione com. Ad esempio, l'interfaccia **IStream** definisce i flussi fino a 2 ⁶ ⁴ byte di lunghezza che richiedono un puntatore di ricerca a 64 bit. Tuttavia, l'implementazione COM supporta solo flussi fino a 2 ³ ² di lunghezza (4 GB), mentre le operazioni di lettura e scrittura sono sempre limitate a 2 ³ ² byte alla volta. Anche l'implementazione COM non supporta la transazione di flusso o il blocco dell'area.
+La specifica di [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) definisce più funzionalità di quelle supportate dall'implementazione COM. Ad esempio, **l'interfaccia IStream** definisce flussi di lunghezza massima di 2⁶⁴ byte che richiedono un puntatore di ricerca a 64 bit. Tuttavia, l'implementazione COM supporta solo flussi di lunghezza massima di 2 mb (4 GB) e le operazioni di lettura e scrittura sono sempre limitate a 2 mb alla volta. L'implementazione COM inoltre non supporta la transazione di flusso o il blocco dell'area.
 
-Per creare un flusso semplice basato sulla memoria globale, ottenere un puntatore [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) chiamando la funzione API [**CreateStreamOnHGlobal**](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal). Per ottenere un puntatore **IStream** in un oggetto file composto, chiamare [**StgCreateDocFile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) o [**StgOpenStorage**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage). Queste funzioni recuperano un puntatore [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) , con cui è possibile chiamare [**CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) o [**OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) per un puntatore **IStream** . In entrambi i casi, viene usato lo stesso codice di implementazione di **IStream** .
+Per creare un flusso semplice basato sulla memoria globale, ottenere un [**puntatore IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) chiamando la funzione API [**CreateStreamOnHGlobal.**](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal) Per ottenere un **puntatore IStream** all'interno di un oggetto file composto, chiamare [**StgCreateDocfile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) [**o StgOpenStorage**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage). Queste funzioni recuperano un [**puntatore IStorage,**](/windows/desktop/api/Objidl/nn-objidl-istorage) con cui è quindi possibile chiamare [**CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) [**o OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) per un **puntatore IStream.** In entrambi i casi, viene usato lo stesso codice di implementazione **di IStream.**
 
 > [!Note]  
-> L'implementazione del file composto di archiviazione strutturata non ha esito positivo su un metodo [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per [**ISequentialStream**](/windows/desktop/api/Objidl/nn-objidl-isequentialstream), ma include i metodi [**Read**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-read) e [**Write**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-write) tramite il puntatore all'interfaccia [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) .
+> L'implementazione di file composti dell'archiviazione strutturata non riesce in un metodo [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per [**ISequentialStream,**](/windows/desktop/api/Objidl/nn-objidl-isequentialstream)ma include i metodi [**Read**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-read) e [**Write**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-write) tramite il puntatore di [**interfaccia IStream.**](/windows/desktop/api/Objidl/nn-objidl-istream)
 
  
 
@@ -30,16 +30,16 @@ Per creare un flusso semplice basato sulla memoria globale, ottenere un puntator
 
 Chiamare i metodi di [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) per leggere e scrivere dati in un flusso.
 
-Poiché è possibile effettuare il marshalling di oggetti flusso ad altri processi, le applicazioni possono condividere i dati negli oggetti di archiviazione senza dover usare la memoria globale. Nell'implementazione del file composto COM di oggetti Stream, le funzionalità di marshalling personalizzate in COM creano una versione remota dell'oggetto originale nel nuovo processo quando i due processi hanno accesso a memoria condivisa. Quindi, non è necessario che la versione remota comunichi con il processo originale per eseguire le relative funzioni.
+Poiché è possibile effettuare il marshalling degli oggetti flusso in altri processi, le applicazioni possono condividere i dati negli oggetti di archiviazione senza dover usare la memoria globale. Nell'implementazione di file composti COM di oggetti flusso, le funzionalità di marshalling personalizzate in COM creano una versione remota dell'oggetto originale nel nuovo processo quando i due processi hanno accesso in memoria condivisa. Non è quindi necessario che la versione remota comunichi con il processo originale per eseguire le funzioni.
 
-La versione remota dell'oggetto flusso condivide lo stesso puntatore di ricerca del flusso originale. Se non si desidera condividere il puntatore Seek, utilizzare il metodo [**IStream:: Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone) per fornire una copia dell'oggetto flusso per il processo remoto.
+La versione remota dell'oggetto flusso condivide lo stesso puntatore di ricerca del flusso originale. Se non si vuole condividere il puntatore di ricerca, usare il metodo [**IStream::Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone) per fornire una copia dell'oggetto flusso per il processo remoto.
 
 > [!Note]
-> Se si crea un oggetto flusso di dimensioni maggiori dell'heap nella memoria del computer e si usa un handle **HGLOBAL** per un oggetto memoria globale, l'oggetto flusso chiama il metodo [**GlobalReAlloc**](/windows/desktop/api/winbase/nf-winbase-globalrealloc) internamente, in modo che richieda più memoria. Poiché **GlobalReAlloc** copia sempre i dati dall'origine alla destinazione, l'aumento di un oggetto flusso da 20 MB a 25 MB, ad esempio, richiede una notevole quantità di tempo. Ciò è dovuto alla dimensione degli incrementi copiati e viene peggiorata se nel computer sono presenti meno di 45 MB di memoria a causa dello scambio del disco.
+> Se si crea un oggetto flusso di dimensioni maggiori dell'heap nella memoria del computer e si usa un handle **HGLOBAL** per un oggetto di memoria globale, l'oggetto flusso chiama internamente il metodo [**GlobalRealloc.**](/windows/desktop/api/winbase/nf-winbase-globalrealloc) Poiché **GlobalRealloc** copia sempre i dati dall'origine alla destinazione, l'aumento di un oggetto flusso da 20 MB a 25 MB, ad esempio, richiede una notevole quantità di tempo. Ciò è dovuto alle dimensioni degli incrementi copiati e peggiora se nel computer è presente meno di 45 MB di memoria a causa dello scambio del disco.
 >
-> La soluzione migliore consiste nell'implementare un metodo [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) che utilizza la memoria allocata da [**VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) anziché [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc). Questo può riservare una grande quantità di spazio degli indirizzi virtuali e quindi eseguire il commit della memoria all'interno di tale spazio di indirizzi in modo obbligatorio. Non viene eseguita la copia dei dati e viene eseguito il commit della memoria solo se necessario.
+> La soluzione preferita consiste nell'implementare [**un metodo IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) che usa la memoria allocata da [**VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) invece di [**GlobalAlloc.**](/windows/desktop/api/winbase/nf-winbase-globalalloc) In questo modo è possibile riservare un grande blocco di spazio degli indirizzi virtuali e quindi eseguire il commit della memoria all'interno di tale spazio indirizzi in base alle esigenze. Non viene eseguita alcuna copia dei dati e viene eseguito il commit della memoria solo come richiesto.
 >
-> Un'alternativa a [**GlobalReAlloc**](/windows/desktop/api/winbase/nf-winbase-globalrealloc) consiste nel chiamare il metodo [**IStream:: sesize**](/windows/desktop/api/Objidl/nf-objidl-istream-setsize) sull'oggetto Stream per aumentare in anticipo l'allocazione di memoria. Questa operazione non è tuttavia efficace quanto l'utilizzo di [**VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc), come descritto in precedenza.
+> Un'alternativa [**a GlobalRealloc**](/windows/desktop/api/winbase/nf-winbase-globalrealloc) consiste nel chiamare il metodo [**IStream::SetSize**](/windows/desktop/api/Objidl/nf-objidl-istream-setsize) sull'oggetto flusso per aumentare in anticipo l'allocazione di memoria. Questa operazione, tuttavia, non è efficiente quanto [**l'uso di VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc), come descritto in precedenza.
 
  
 
@@ -47,79 +47,79 @@ La versione remota dell'oggetto flusso condivide lo stesso puntatore di ricerca 
 
 <dl> <dt>
 
-<span id="ISequentialStream__Read"></span><span id="isequentialstream__read"></span><span id="ISEQUENTIALSTREAM__READ"></span>[**ISequentialStream:: Read**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-read)
+<span id="ISequentialStream__Read"></span><span id="isequentialstream__read"></span><span id="ISEQUENTIALSTREAM__READ"></span>[**ISequentialStream::Read**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-read)
 </dt> <dd>
 
-Legge un numero specificato di byte dall'oggetto flusso in memoria a partire dal puntatore di posizionamento corrente. Questa implementazione restituisce \_ OK se è stata raggiunta la fine del flusso durante la lettura. Questo comportamento è identico a quello del "fine del file" trovato nella file system FAT di MS-DOS.
+Legge un numero specificato di byte dall'oggetto flusso in memoria a partire dal puntatore di posizionamento corrente. Questa implementazione restituisce S \_ OK se è stata raggiunta la fine del flusso durante la lettura. Si tratta dello stesso comportamento della "fine del file" presente nella cartella FAT di MS-DOS file system.
 
 </dd> <dt>
 
-<span id="ISequentialStream__Write"></span><span id="isequentialstream__write"></span><span id="ISEQUENTIALSTREAM__WRITE"></span>[**ISequentialStream:: Write**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-write)
+<span id="ISequentialStream__Write"></span><span id="isequentialstream__write"></span><span id="ISEQUENTIALSTREAM__WRITE"></span>[**ISequentialStream::Write**](/windows/desktop/api/Objidl/nf-objidl-isequentialstream-write)
 </dt> <dd>
 
 Scrive un numero specificato da byte nell'oggetto flusso a partire dal puntatore di ricerca corrente. In questa implementazione gli oggetti flusso non sono di tipo sparse. Tutti i byte di riempimento vengono infine allocati sul disco e assegnati al flusso.
 
 </dd> <dt>
 
-<span id="IStream__Seek"></span><span id="istream__seek"></span><span id="ISTREAM__SEEK"></span>[**IStream:: Seek**](/windows/desktop/api/Objidl/nf-objidl-istream-seek)
+<span id="IStream__Seek"></span><span id="istream__seek"></span><span id="ISTREAM__SEEK"></span>[**IStream::Seek**](/windows/desktop/api/Objidl/nf-objidl-istream-seek)
 </dt> <dd>
 
 Sposta il puntatore di posizionamento su un nuovo percorso relativo all'inizio del flusso, alla fine del flusso o al puntatore di posizionamento corrente.
 
 </dd> <dt>
 
-<span id="IStream__SetSize"></span><span id="istream__setsize"></span><span id="ISTREAM__SETSIZE"></span>[**IStream:: sesize**](/windows/desktop/api/Objidl/nf-objidl-istream-setsize)
+<span id="IStream__SetSize"></span><span id="istream__setsize"></span><span id="ISTREAM__SETSIZE"></span>[**IStream::SetSize**](/windows/desktop/api/Objidl/nf-objidl-istream-setsize)
 </dt> <dd>
 
-Modifica la dimensione dell'oggetto flusso. In questa implementazione, non vi è alcuna garanzia che lo spazio allocato sarà contiguo.
+Modifica la dimensione dell'oggetto flusso. In questa implementazione non è garantito che lo spazio allocato sarà contiguo.
 
 </dd> <dt>
 
-<span id="IStream__CopyTo"></span><span id="istream__copyto"></span><span id="ISTREAM__COPYTO"></span>[**IStream:: CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istream-copyto)
+<span id="IStream__CopyTo"></span><span id="istream__copyto"></span><span id="ISTREAM__COPYTO"></span>[**IStream::CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istream-copyto)
 </dt> <dd>
 
 Copia un numero specificato di byte dal puntatore di posizionamento corrente nel flusso al puntatore di posizionamento corrente in un altro flusso.
 
 </dd> <dt>
 
-<span id="IStream__Commit"></span><span id="istream__commit"></span><span id="ISTREAM__COMMIT"></span>[**IStream:: commit**](/windows/desktop/api/Objidl/nf-objidl-istream-commit)
+<span id="IStream__Commit"></span><span id="istream__commit"></span><span id="ISTREAM__COMMIT"></span>[**IStream::Commit**](/windows/desktop/api/Objidl/nf-objidl-istream-commit)
 </dt> <dd>
 
-L'implementazione del file composto di [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) supporta l'apertura dei flussi solo in modalità diretta, non in modalità transazionale. Pertanto, il metodo non ha alcun effetto quando viene chiamato diverso da per svuotare tutti i buffer di memoria al livello di archiviazione successivo.
+L'implementazione di file composti [**di IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) supporta l'apertura di flussi solo in modalità diretta, non in modalità transazione. Pertanto, il metodo non ha alcun effetto quando viene chiamato se non per scaricare tutti i buffer di memoria al livello di archiviazione successivo.
 
-In questa implementazione, non è importante se si esegue il commit delle modifiche nei flussi, è necessario eseguire solo le modifiche di commit per gli oggetti di archiviazione.
+In questa implementazione non è importante se si esegue il commit delle modifiche ai flussi, ma è necessario eseguire il commit solo delle modifiche per gli oggetti di archiviazione.
 
 </dd> <dt>
 
-<span id="IStream__Revert"></span><span id="istream__revert"></span><span id="ISTREAM__REVERT"></span>[**IStream:: Revert**](/windows/desktop/api/Objidl/nf-objidl-istream-revert)
+<span id="IStream__Revert"></span><span id="istream__revert"></span><span id="ISTREAM__REVERT"></span>[**IStream::Revert**](/windows/desktop/api/Objidl/nf-objidl-istream-revert)
 </dt> <dd>
 
-Questa implementazione non supporta i flussi transazionali, pertanto una chiamata a questo metodo non ha alcun effetto.
+Questa implementazione non supporta i flussi transazionati, quindi una chiamata a questo metodo non ha alcun effetto.
 
 </dd> <dt>
 
-<span id="IStream__LockRegion"></span><span id="istream__lockregion"></span><span id="ISTREAM__LOCKREGION"></span>[**IStream:: LockRegion**](/windows/desktop/api/Objidl/nf-objidl-istream-lockregion)
+<span id="IStream__LockRegion"></span><span id="istream__lockregion"></span><span id="ISTREAM__LOCKREGION"></span>[**IStream::LockRegion**](/windows/desktop/api/Objidl/nf-objidl-istream-lockregion)
 </dt> <dd>
 
-Il blocco dell'intervallo non è supportato da questa implementazione, quindi una chiamata a questo metodo non ha alcun effetto.
+Il blocco di intervallo non è supportato da questa implementazione, quindi una chiamata a questo metodo non ha alcun effetto.
 
 </dd> <dt>
 
-<span id="IStream__UnlockRegion"></span><span id="istream__unlockregion"></span><span id="ISTREAM__UNLOCKREGION"></span>[**IStream:: UnlockRegion**](/windows/desktop/api/Objidl/nf-objidl-istream-unlockregion)
+<span id="IStream__UnlockRegion"></span><span id="istream__unlockregion"></span><span id="ISTREAM__UNLOCKREGION"></span>[**IStream::UnlockRegion**](/windows/desktop/api/Objidl/nf-objidl-istream-unlockregion)
 </dt> <dd>
 
-Rimuove la restrizione di accesso in un intervallo di byte precedentemente limitati con [**IStream:: LockRegion**](/windows/desktop/api/Objidl/nf-objidl-istream-lockregion).
+Rimuove la restrizione di accesso per un intervallo di byte precedentemente limitato con [**IStream::LockRegion.**](/windows/desktop/api/Objidl/nf-objidl-istream-lockregion)
 
 </dd> <dt>
 
-<span id="IStream__Stat"></span><span id="istream__stat"></span><span id="ISTREAM__STAT"></span>[**IStream:: stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat)
+<span id="IStream__Stat"></span><span id="istream__stat"></span><span id="ISTREAM__STAT"></span>[**IStream::Stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat)
 </dt> <dd>
 
-Recupera la struttura [**STATSTG**](/windows/win32/api/objidl/ns-objidl-statstg) per questo flusso
+Recupera la [**struttura STATSTG**](/windows/win32/api/objidl/ns-objidl-statstg) per questo flusso
 
 </dd> <dt>
 
-<span id="IStream__Clone"></span><span id="istream__clone"></span><span id="ISTREAM__CLONE"></span>[**IStream:: Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone)
+<span id="IStream__Clone"></span><span id="istream__clone"></span><span id="ISTREAM__CLONE"></span>[**IStream::Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone)
 </dt> <dd>
 
 Crea un nuovo oggetto flusso con il proprio puntatore di posizionamento che fa riferimento agli stessi byte del flusso originale.
@@ -128,18 +128,18 @@ Crea un nuovo oggetto flusso con il proprio puntatore di posizionamento che fa r
 
 Un [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) in modalità semplice è soggetto ai vincoli seguenti.
 
--   Un flusso è una modalità semplice se è stato creato o aperto da un'archiviazione in modalità semplice. Un archivio è una modalità semplice se viene creato o aperto con il \_ flag semplice STGM impostato nel parametro *grfMode* .
--   I metodi [**Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone) e [**CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istream-copyto) non sono supportati.
--   Il metodo [**Stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat) è supportato, ma è \_ necessario specificare il valore StatFlag Noname.
+-   Un flusso è una modalità semplice se è stato creato o aperto da un archivio in modalità semplice. Una modalità di archiviazione è semplice se viene creata o aperta con il flag STGM \_ SIMPLE impostato nel parametro *grfMode.*
+-   I [**metodi Clone**](/windows/desktop/api/Objidl/nf-objidl-istream-clone) e [**CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istream-copyto) non sono supportati.
+-   Il [**metodo Stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat) è supportato, ma è necessario specificare il valore STATFLAG \_ NONAME.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream)
+[**Istream**](/windows/desktop/api/Objidl/nn-objidl-istream)
 </dt> <dt>
 
-[**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
+[**Istorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
 </dt> <dt>
 
 [**CreateStreamOnHGlobal**](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal)

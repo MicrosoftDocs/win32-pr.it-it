@@ -4,16 +4,16 @@ description: Questo articolo offre una panoramica generale di come usare al megl
 ms.assetid: 7ce0c9c7-485c-8d72-0353-27fd2e369a7c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd9935c490204736995e17e3c8013ce56f57624b
-ms.sourcegitcommit: 4c71a269e3a114c72dd9eb31ccb4948a32beaa5b
+ms.openlocfilehash: cdabd1a99f203adb2422cc4bbc71c3fb2f6108a0a3869077e97683bdcf830100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114662261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070561"
 ---
 # <a name="debugging-with-symbols"></a>Debug con simboli
 
-Questo articolo offre una panoramica generale di come usare al meglio i simboli nel processo di debug. Illustra come usare il server di simboli Microsoft e come configurare e usare il proprio server di simboli privato. Queste procedure consigliate consentono di aumentare l'efficacia e la possibilità di eseguire il debug dei problemi, anche nei casi in cui tutti i simboli e i file eseguibili correlati a un problema non si trovano nel computer.
+Questo articolo offre una panoramica generale di come usare al meglio i simboli nel processo di debug. Spiega come usare il server di simboli Microsoft e come configurare e usare il proprio server di simboli privato. Queste procedure consigliate consentono di aumentare l'efficacia e la possibilità di eseguire il debug dei problemi, anche nei casi in cui tutti i simboli e i file eseguibili correlati a un problema non si trovano nel computer.
 
 -   [Symbols](#debugging-with-symbols)
 -   [Uso dei simboli per il debug](#using-symbols-for-debugging)
@@ -30,21 +30,21 @@ Questo articolo offre una panoramica generale di come usare al meglio i simboli 
 
 ## <a name="symbols"></a>Simboli
 
-Per il debug sono disponibili diversi tipi di simboli. Includono simboli CodeView, COFF, DBG, SYM, PDB e anche simboli di esportazione generati da una tabella di esportazione di file binari. In white paper vengono illustrati VS.NET e i simboli di formato PDB, perché sono il formato preferito più recente. Vengono generati per impostazione predefinita per i progetti compilati usando Visual Studio.
+Per il debug sono disponibili diversi tipi di simboli. Includono simboli CodeView, COFF, DBG, SYM, PDB e anche simboli di esportazione generati da una tabella di esportazione di file binari. Questo white paper illustra solo i VS.NET e i simboli di formato PDB, perché sono il formato preferito più recente. Vengono generati per impostazione predefinita per i progetti compilati usando Visual Studio.
 
-La generazione di file PDB per i file eseguibili di rilascio non influisce sulle ottimizzazioni o modifica in modo significativo le dimensioni dei file generati. In genere, l'unica differenza è il percorso e il nome file del file PDB è incorporato nel file eseguibile. Per questo motivo, è consigliabile produrre sempre file PDB, anche se non si vuole spedirli con il file eseguibile.
+La generazione di file PDB per i file eseguibili di versione non influisce sulle ottimizzazioni o modifica significativamente le dimensioni dei file generati. In genere, l'unica differenza è il percorso e il nome file del file PDB è incorporato nel file eseguibile. Per questo motivo, è consigliabile produrre sempre file PDB, anche se non si vuole spedirli con l'eseguibile.
 
-I file PDB vengono generati se un progetto viene compilato usando l'opzione del compilatore **/Zi** o **/ZI** (Produce informazioni PDB), insieme all'opzione del linker **/DEBUG** (Genera informazioni di debug). I file PDB generati dal compilatore vengono combinati e scritti in un singolo file PDB che si trova nella stessa directory del file eseguibile.
+I file PDB vengono generati se un progetto viene compilato usando l'opzione del compilatore **/Zi** o **/ZI** (Produce PDB Information), insieme all'opzione del linker **/DEBUG** (Genera informazioni di debug). I file PDB generati dal compilatore vengono combinati e scritti in un singolo file PDB che si trova nella stessa directory del file eseguibile.
 
 Per impostazione predefinita, i file PDB contengono le informazioni seguenti:
 
--   Simboli pubblici (in genere tutte le funzioni, le variabili statiche e globali)
+-   Simboli pubblici (in genere tutte le funzioni, variabili statiche e globali)
 -   Elenco di file oggetto responsabili di sezioni di codice nel file eseguibile
 -   Informazioni sull'ottimizzazione del puntatore ai frame (FPO)
 -   Informazioni sul nome e sul tipo per le variabili locali e le strutture di dati
 -   Informazioni sul file di origine e sul numero di riga
 
-Se si è interessati all'uso delle informazioni sul file PDB per il reverse engineer dell'eseguibile, è anche possibile generare file PDB con striping usando l'opzione del linker **/PDBSTRIPPED:filename.** Se sono disponibili file PDB da cui si desidera rimuovere informazioni private, è possibile usare uno strumento denominato pdbcopy, che fa parte degli strumenti di debug per Windows.
+Se si è interessati a utenti che usano le informazioni sul file PDB per eseguire il reverse engineer dell'eseguibile, è anche possibile generare file PDB con striping usando l'opzione del linker **/PDBSTRIPPED:filename.** Se si dispone di file PDB esistenti da cui si desidera rimuovere informazioni private, è possibile usare uno strumento denominato pdbcopy, che fa parte degli strumenti di debug per Windows.
 
 Per impostazione predefinita, i file PDB con striped contengono le informazioni seguenti:
 
@@ -52,13 +52,13 @@ Per impostazione predefinita, i file PDB con striped contengono le informazioni 
 -   Elenco di file oggetto responsabili di sezioni di codice nel file eseguibile
 -   Informazioni sull'ottimizzazione del puntatore ai frame (FPO)
 
-Si tratta delle informazioni minime necessarie per consentire il debug affidabile. Le informazioni minime rendono anche difficile ottenere informazioni aggiuntive sul codice sorgente originale. Poiché vengono generati sia un file PDB striped che un normale file PDB, è possibile fornire la versione striped agli utenti che potrebbero avere bisogno di funzionalità di debug limitate, ma che mantengono riservati i file PDB completi. Si noti **che /PDBSTRIPPED** genera un secondo file PDB più piccolo, quindi assicurarsi di usare il file PDB corretto quando si generano compilazioni per la distribuzione su vasta scala. Per un progetto tipico, un PDB normale può avere dimensioni di pochi megabyte, ma una versione con striped del PDB può essere di pochi centinaia di kilobyte.
+Si tratta delle informazioni minime necessarie per consentire il debug affidabile. Le informazioni minime rendono anche difficile ottenere informazioni aggiuntive sul codice sorgente originale. Poiché vengono generati sia un file PDB con striped che un normale file PDB, è possibile fornire la versione stripped agli utenti che potrebbero richiedere capacità di debug limitate, ma mantenere riservati i file PDB completi. Si noti **che /PDBSTRIPPED** genera un secondo file PDB più piccolo, quindi assicurarsi di usare il file PDB corretto quando si generano compilazioni per la distribuzione a livello generale. Per un progetto tipico, un PDB normale può avere dimensioni di pochi megabyte, ma una versione del PDB spogliata può essere di poche centinaia di kilobyte.
 
 ## <a name="using-symbols-for-debugging"></a>Uso dei simboli per il debug
 
-Quando si esegue il debug di un'applicazione che si è verificata in modo anomalo, il debugger tenta di visualizzare le funzioni nello stack che hanno causato l'arresto anomalo. Senza un file PDB, il debugger non può risolvere i nomi delle funzioni, i relativi parametri o le variabili locali archiviate nello stack. Se si esegue il debug di file eseguibili a 32 bit, in alcune situazioni non è possibile ottenere analisi dello stack affidabili senza simboli. In alcuni casi è possibile esaminare i valori non elaborati nello stack e determinare quali valori possono essere indirizzi restituiti, ma questi possono essere facilmente confusi con i riferimenti o i dati delle funzioni.
+Quando si esegue il debug di un'applicazione che si è verificata in modo anomalo, il debugger tenta di visualizzare le funzioni nello stack che hanno causato l'arresto anomalo del sistema. Senza un file PDB, il debugger non può risolvere i nomi delle funzioni, i relativi parametri o le variabili locali archiviate nello stack. Se si esegue il debug di file eseguibili a 32 bit, in alcune situazioni non è possibile ottenere tracce dello stack affidabili senza simboli. In alcuni casi è possibile esaminare i valori non elaborati nello stack e determinare quali valori possono essere indirizzi restituiti, ma questi possono essere facilmente confusi con i riferimenti alle funzioni o i dati.
 
-Se le funzioni nello stack corrente sono state compilate usando l'ottimizzazione Ometti puntatori ai frame (**/Oy**) e se i simboli non sono presenti, il debugger non è in grado di determinare in modo affidabile quale funzione ha chiamato la funzione corrente. Ciò è dovuto al fatto che senza le informazioni FPO (Frame Pointer Optimization) contenute nei PDB, il debugger non può basarsi sul registro dei puntatori ai frame (EBP) per puntare al puntatore ai frame precedente salvato e all'indirizzo mittente della funzione padre. In alternativa, può indovinare. In alcuni casi è la scelta giusta. Tuttavia, spesso si tratta di un errore, che può essere fuorviante. Se viene visualizzato un avviso relativo a simboli mancanti o nessun simbolo caricato, come nell'esempio seguente, non considerare attendibile lo stack da quel punto in basso.
+Se le funzioni nello stack corrente sono state compilate usando l'ottimizzazione Omit Frame Pointers (**/Oy**) e se i simboli non sono presenti, il debugger non può determinare in modo affidabile quale funzione ha chiamato la funzione corrente. Ciò è dovuto al fatto che senza le informazioni FPO (Frame Pointer Optimization) contenute nei PDB, il debugger non può basarsi sul registro dei puntatori ai frame (EBP) per puntare al puntatore ai frame precedente salvato e all'indirizzo restituito della funzione padre. In alternativa, si può indovinare. A volte si ottiene il giusto. Tuttavia, spesso si sbaglia, il che può essere fuorviante. Se viene visualizzato un avviso relativo ai simboli mancanti o nessun simbolo caricato, come nell'esempio seguente, non considerare attendibile lo stack da quel punto in basso.
 
 ``` syntax
 SWPerfTest.exe!TextFunction(... ...)    Line 59    C++
@@ -70,30 +70,30 @@ kernel32.dll!@BaseThreadInitThunk@12() + 0x12 bytes
 ntdll.dll!__RtlUserThreadStart@8() + 0x27 bytes
 ```
 
-In molti casi, è possibile continuare il debug senza simboli, perché il problema si trova in una posizione con simboli accurati e non è necessario esaminare le funzioni più avanti nello stack di chiamate. Anche se una libreria che si trova nello stack di chiamate non dispone di PDB disponibili, purché siano stati compilati con puntatori ai frame, il debugger dovrebbe essere in grado di indovinare correttamente le funzioni padre. A partire da Windows XP Service Pack 2, tutti i file dll Windows e i file eseguibili vengono compilati con FPO disabilitato, perché rende il debug più accurato. La disabilitazione di FPO consente inoltre ai profiler di campionamento di eseguire lo stack durante la fase di esecuzione, con un impatto minimo sulle prestazioni. Nelle versioni di Windows precedenti Windows XP SP2, tutti i file binari del sistema operativo richiedono file di simboli corrispondenti contenenti informazioni FPO, per consentire il debug e la profilatura accurati.
+In molti casi, è possibile continuare il debug senza simboli, perché il problema si trova in una posizione con simboli accurati e non è necessario esaminare le funzioni più avanti nello stack di chiamate. Anche se in una libreria che si trova nello stack di chiamate non sono disponibili PDB, purché siano stati compilati con puntatori a frame, il debugger dovrebbe essere in grado di indovinare correttamente le funzioni padre. A partire da Windows XP Service Pack 2, tutti Windows FILE DLL e file eseguibili vengono compilati con FPO disabilitato, perché rende il debug più accurato. La disabilitazione di FPO consente inoltre ai profiler di campionamento di eseguire lo stack durante la fase di esecuzione, con un impatto minimo sulle prestazioni. Nelle versioni di Windows precedenti Windows XP SP2, tutti i file binari del sistema operativo richiedono file di simboli corrispondenti che contengono informazioni FPO, per consentire un debug e una profilatura accurati.
 
-Se si esegue il debug di file eseguibili nativi a 64 bit, non sono necessari file di simboli per produrre analisi dello stack valide, perché i sistemi operativi e i compilatori x64 sono progettati per non richiederli. Tuttavia, sono comunque necessari file di simboli per recuperare i nomi delle funzioni, i parametri di chiamata e le variabili locali.
+Se si esegue il debug di file eseguibili nativi a 64 bit, non sono necessari file di simboli per produrre tracce dello stack valide, perché i sistemi operativi e i compilatori x64 sono progettati per non richiederli. Tuttavia, sono comunque necessari file di simboli per recuperare i nomi delle funzioni, i parametri di chiamata e le variabili locali.
 
-Tuttavia, in alcuni casi è particolarmente difficile eseguire il debug senza simboli. Ad esempio, se si esegue il debug di un programma per cui è stato compilato un file PDB e si verifica un arresto anomalo in un callback da una funzione in una DLL per cui non sono presenti simboli, non sarà possibile vedere quale funzione ha causato il callback, perché non sarà possibile decodificare lo stack. Ciò si verifica spesso nelle librerie di terze parti, se non vengono forniti PDB o nei componenti del sistema operativo precedenti, se i PDB non sono disponibili. I callback si verificano spesso durante il passaggio di messaggi, l'enumerazione, l'allocazione di memoria o la gestione delle eccezioni. Il debug di queste funzioni senza uno stack accurato può essere frustrante.
+Tuttavia, in alcuni casi è particolarmente difficile eseguire il debug senza simboli. Ad esempio, se si esegue il debug di un programma per cui è stato compilato un file PDB e si arresta in modo anomalo in un callback da una funzione in una DLL per cui non sono presenti simboli, non sarà possibile vedere quale funzione ha causato il callback, perché non sarà possibile decodificare lo stack. Questo problema si verifica spesso nelle librerie di terze parti, se non vengono forniti PDB o nei componenti del sistema operativo precedenti, se i PDB non sono disponibili. I callback si verificano spesso durante il passaggio del messaggio, l'enumerazione, l'allocazione di memoria o la gestione delle eccezioni. Il debug di queste funzioni senza uno stack accurato può essere frustrante.
 
-Per eseguire in modo affidabile il debug di minidump generati in un computer diverso o che si sono arrestati in modo anomalo in codice di cui non si è proprietari, è importante essere in grado di accedere a tutti i simboli e i file binari per i file eseguibili a cui si fa riferimento nel minidump. Se i simboli e i file binari sono disponibili da un server di simboli, vengono ottenuti automaticamente dal debugger. Per altre informazioni sui minidump, vedere analisi dei dump di [arresto](/windows/desktop/DxTechArts/crash-dump-analysis) anomalo del white paper.
+Per eseguire in modo affidabile il debug di mini dump generati in un computer diverso o che si sono arrestati in modo anomalo nel codice di cui non si è proprietari, è importante poter accedere a tutti i simboli e i file binari per i file eseguibili a cui viene fatto riferimento nel minidump. Se i simboli e i file binari sono disponibili da un server di simboli, vengono ottenuti automaticamente dal debugger. Per altre informazioni sui minidump, vedere l'white paper. [](/windows/desktop/DxTechArts/crash-dump-analysis)
 
 ## <a name="getting-the-symbols-you-need"></a>Ottenere i simboli necessari
 
-Visual Studio e altri debugger Microsoft, ad esempio WinDbg, sono in genere impostati per funzionare solo se si compila un'applicazione ed esegue il debug nel proprio computer. Se è necessario assegnare l'eseguibile a un altro utente, se si dispone di più versioni di una DLL o di un file .exe nel computer o se si vuole eseguire in modo accurato il debug di un'applicazione che usa Windows o altre librerie, ad esempio DirectX, è necessario comprendere in che modo i debugger trovano e caricano i simboli. Il debugger usa il percorso di ricerca dei simboli specificato dall'utente, disponibile in Opzioni simboli di debug in Visual Studio, o la variabile di ambiente \\ \\ NT SYMBOL \_ \_ \_ PATH. In genere, il debugger cerca i file PDB corrispondenti nei percorsi seguenti:
+Visual Studio e altri debugger Microsoft, ad esempio WinDbg, sono in genere impostati per funzionare solo se si compila un'applicazione e si esegue il debug nel proprio computer. Se è necessario fornire l'eseguibile a un altro utente, se si dispone di più versioni di una DLL o di un file .exe nel computer o se si vuole eseguire il debug accurato di un'applicazione che usa Windows o altre librerie, ad esempio DirectX, è necessario comprendere come i debugger trovano e caricano i simboli. Il debugger usa il percorso di ricerca dei simboli specificato dall'utente, disponibile in Simboli di debug delle opzioni in Visual Studio, o la variabile di ambiente \\ \\ NT SYMBOL \_ \_ \_ PATH. In genere, il debugger cerca i PDB corrispondenti nei percorsi seguenti:
 
 -   Percorso specificato nella DLL o nel file eseguibile.
 
     Se nel computer è stata compilata una DLL o un file eseguibile, per impostazione predefinita il linker inserisce il percorso completo e il nome del file PDB associato all'interno della DLL o del file eseguibile. Quando si esegue il debug, il debugger verifica innanzitutto se il file di simboli esiste nel percorso specificato all'interno della DLL o del file eseguibile. Ciò è utile perché sono sempre disponibili simboli per il codice compilato nel computer.
 
--   File PDB che possono essere presenti nella stessa cartella della DLL o del file eseguibile.
+-   PDB che possono essere presenti nella stessa cartella della DLL o del file eseguibile.
 -   Qualsiasi cartella della cache di simboli locale.
 -   Qualsiasi server di simboli di condivisione file di rete locale.
--   Tutti i server di simboli Internet, ad esempio il server di simboli Microsoft.
+-   Qualsiasi server di simboli Internet, ad esempio il server di simboli Microsoft.
 
-Per assicurarsi di avere tutti i file PDB necessari per un debug accurato, installare gli strumenti di debug per Windows. Le versioni a 32 e a 64 bit sono disponibili in [Strumenti di debug per Windows](/windows-hardware/drivers/debugger/).
+Per assicurarsi di avere tutti i PDB necessari per un debug accurato, installare gli strumenti di debug per Windows. Le versioni a 32 e 64 bit sono disponibili in Strumenti di [debug per Windows](/windows-hardware/drivers/debugger/).
 
-Un utile strumento installato con questo pacchetto è symchk.exe. Può essere utile per identificare i simboli mancanti o non corretti. Questo strumento ha un numero elevato di potenziali opzioni della riga di comando. Di seguito sono due dei più utili e di uso comune.
+Un utile strumento installato con questo pacchetto è symchk.exe. Può essere utile per identificare simboli mancanti o non corretti. Questo strumento ha un numero elevato di potenziali opzioni della riga di comando. Ecco due delle più utili e usate di frequente.
 
 ### <a name="check-if-a-given-dll-or-exe-file-and-pdb-in-the-same-folder-match"></a>Controllare se una DETERMINATA DLL o .exe file e PDB nella stessa cartella corrispondono
 
@@ -112,13 +112,13 @@ SYMCHK: PASSED + IGNORED files = 1
 "c:\Program Files\Debugging Tools for Windows\symchk" *.* /r
 ```
 
-**L'opzione /r** imposta **symchk** per attraversare in modo ricorsivo le cartelle, per verificare che tutti i file eseguibili hanno file PDB corrispondenti. Senza **l'opzione /s,** **symchk** usa il percorso NT SYMBOL corrente per cercare i simboli in qualsiasi server privato o locale o nei \_ server di simboli \_ \_ Microsoft. Lo **strumento symchk** cerca solo i simboli per i file eseguibili (.exe, .dll e simili). Non è possibile usare caratteri jolly per cercare i simboli per i file non eseguibili.
+**L'opzione /r** imposta **symchk** per attraversare in modo ricorsivo le cartelle, per verificare che tutti i file eseguibili hanno PDB corrispondenti. Senza **l'opzione /s,** **symchk** usa il percorso NT SYMBOL corrente per cercare simboli in qualsiasi server privato o locale o nei \_ server di simboli \_ \_ Microsoft. Lo **strumento symchk** cerca solo i simboli per i file eseguibili (.exe, .dll e simili). Non è possibile usare caratteri jolly per cercare simboli per file non eseguibili.
 
 ### <a name="how-symchk-works"></a>Funzionamento di symchk
 
-Quando il linker genera .dll, eseguibili e PDB, archivia GUID identici in ogni file. Il GUID viene usato dagli strumenti per determinare se un determinato file PDB corrisponde a una DLL o a un file eseguibile. Se si modifica una DLL o un file eseguibile, usando un editor di risorse o la codifica di protezione della copia o modificando le informazioni sulla versione, il GUID viene aggiornato e il debugger non può caricare il file PDB. Per questo motivo, è molto importante evitare di modificare la DLL o il file eseguibile dopo che è stato creato dal linker.
+Quando il linker genera .dll file eseguibili e PDB, archivia GUID identici in ogni file. Il GUID viene usato dagli strumenti per determinare se un determinato file PDB corrisponde a una DLL o a un file eseguibile. Se si modifica una DLL o un file eseguibile, usando un editor di risorse o la codifica di protezione della copia o modificando le informazioni sulla versione, il GUID viene aggiornato e il debugger non può caricare il file PDB. Per questo motivo, è molto importante evitare di modificare la DLL o il file eseguibile dopo che è stato creato dal linker.
 
-È anche possibile usare l'utilità DUMPBIN fornita con VS.NET per visualizzare i percorsi dei simboli in cui viene ricercata e per verificare se vengono trovati file di simboli che corrispondono a una determinata DLL o file eseguibile. Ad esempio:
+È anche possibile usare l'utilità DUMPBIN fornita con VS.NET per visualizzare i percorsi dei simboli cercati e per verificare se vengono trovati file di simboli che corrispondono a una determinata DLL o file eseguibile. Esempio:
 
 ``` syntax
 DUMPBIN /PDBPATH:VERBOSE filename.exe
@@ -147,7 +147,7 @@ Il server di simboli Microsoft consente di ottenere tutti i simboli più recenti
 -   Immettere direttamente l'indirizzo del server. Nel Visual Studio scegliere Opzioni dal **menu** Strumenti **,** quindi **Debug** e infine **Simboli**.
 -   Usare la variabile di ambiente \_ NT \_ SYMBOL \_ PATH. È consigliabile adottare questa soluzione.
 
-    Viene usato da tutti gli strumenti di debug. Viene usato anche da Visual Studio e viene letto e decodificato quando Visual Studio si apre. Pertanto, se si modifica, è necessario riavviare il Visual Studio.
+    Viene usato da tutti gli strumenti di debug. Viene usato anche da Visual Studio e viene letto e decodificato quando Visual Studio si apre. Pertanto, se si modifica, è necessario riavviare Visual Studio.
 
     Questa variabile di ambiente consente di specificare più server di simboli, ad esempio un server di simboli privato interno. Consente inoltre di specificare una directory della cache locale per archiviare i PDB per tutti i simboli cercati dai server di simboli, sia internamente che tramite Internet.
 
@@ -167,13 +167,13 @@ Per usare solo il server di simboli Microsoft insieme a una cache locale di simb
 srv*c:\symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-Altre opzioni per NT SYMBOL PATH sono disponibili nel file della Guida installato con \_ Microsoft Debugging Tools for Windows \_ \_ package.
+Altre opzioni per NT SYMBOL PATH sono disponibili nel file della Guida installato con gli strumenti di debug \_ \_ Microsoft Windows \_ pacchetto.
 
 I file eseguibili senza simboli possono aumentare il tempo necessario per avviare un debugger se si usa un server di simboli. Questo perché il debugger esegue una query sul server di simboli ogni volta che tenta di caricare l'eseguibile. Per questo motivo, è meglio richiedere sempre simboli per tutti i componenti.
 
 Potrebbe non essere possibile richiedere simboli per ogni componente, ad esempio i driver video potrebbero avere DLL nello spazio del processo e i file PDB necessari sono disponibili nel server di simboli Microsoft. In questo caso, si verifica un piccolo ritardo quando si avvia una sessione di debug.
 
-Per evitare questo piccolo ritardo, è possibile eseguire il debugger una sola volta per memorizzare nella cache tutti i simboli in locale dal server di simboli Microsoft. Modificare quindi NT \_ SYMBOL PATH per rimuovere il server di simboli \_ \_ Microsoft. A meno che i file eseguibili non cambino, i controlli per i file eseguibili che non dispongono di simboli non richiederanno una query su Internet, perché sono disponibili copie locali memorizzate nella cache di tutti i simboli necessari dal server di simboli Microsoft.
+Per evitare questo piccolo ritardo, è possibile eseguire il debugger una sola volta per memorizzare nella cache tutti i simboli in locale dal server di simboli Microsoft. Modificare quindi NT \_ SYMBOL PATH per rimuovere il server di simboli \_ \_ Microsoft. A meno che i file eseguibili non cambino, i controlli per i file eseguibili che non dispongono di simboli non richiederanno una query su Internet, perché si dispone di copie locali memorizzate nella cache di tutti i simboli necessari dal server di simboli Microsoft.
 
 ## <a name="getting-symbols-manually"></a>Recupero manuale dei simboli
 
@@ -189,11 +189,11 @@ Lo **strumento symchk** ha molti altri usi. Per informazioni dettagliate, **vede
 
 La configurazione di un server di simboli è molto semplice. È utile per i motivi seguenti:
 
--   Per risparmiare larghezza di banda o per velocizzare la risoluzione dei simboli per l'azienda, il team o il prodotto. Un server di simboli interno in una condivisione file locale nella rete memorizza nella cache tutti i riferimenti a server di simboli esterni, ad esempio il server di simboli Microsoft. Un server di simboli locale o interno è accessibile rapidamente da più persone contemporaneamente. Di conseguenza, consente di risparmiare larghezza di banda e la latenza che le richieste di simboli duplicati possono creare.
--   Per archiviare i simboli per le build, le versioni o le versioni esterne precedenti dell'applicazione. Archiviando i simboli per queste compilazioni in un server di simboli a cui è possibile accedere facilmente, è possibile eseguire il debug di arresti anomali e problemi in queste compilazioni in qualsiasi computer che dispone di un debugger e di una connessione al server di simboli locale. Ciò è particolarmente utile se si esegue il debug di mini dump generati da file eseguibili non compilati manualmente, ovvero compilazioni generate da un altro programmatore o da un computer di compilazione. Se i simboli per queste compilazioni sono archiviati nel server di simboli, si avrà un debug affidabile e accurato.
+-   Per risparmiare larghezza di banda o per velocizzare la risoluzione dei simboli per l'azienda, il team o il prodotto. Un server di simboli interno in una condivisione file locale nella rete memorizza nella cache tutti i riferimenti a server di simboli esterni, ad esempio il server di simboli Microsoft. Un server di simboli locale o interno è accessibile rapidamente da più persone contemporaneamente. Di conseguenza, consente di risparmiare larghezza di banda e la latenza che possono essere create da richieste di simboli duplicate.
+-   Per archiviare i simboli per le build, le versioni o le versioni esterne precedenti dell'applicazione. Archiviando i simboli per queste compilazioni in un server di simboli a cui è possibile accedere facilmente, è possibile eseguire il debug di arresti anomali e problemi in queste compilazioni in qualsiasi computer che dispone di un debugger e di una connessione al server di simboli locale. Ciò è particolarmente utile se si esegue il debug di minidump generati da file eseguibili non compilati manualmente, ovvero compilazioni generate da un altro programmatore o da un computer di compilazione. Se i simboli per queste compilazioni sono archiviati nel server di simboli, si avrà un debug affidabile e accurato.
 -   Per mantenere aggiornati i simboli. Quando i componenti vengono aggiornati, ad esempio i componenti del sistema operativo modificati da Windows Update o da DirectX SDK, è comunque possibile eseguire il debug usando tutti i simboli più recenti.
 
-La configurazione di un server di simboli nella rete locale è semplice come creare una condivisione file in un server e concedere agli utenti le autorizzazioni complete per accedere alla condivisione, per creare file e cartelle. Questa condivisione deve essere creata in un sistema operativo server, ad esempio Windows Server 2003, in modo che il numero di utenti che possono accedere alla condivisione contemporaneamente non sia limitato.
+La configurazione di un server di simboli nella propria rete locale è semplice come creare una condivisione file in un server e concedere agli utenti le autorizzazioni complete per accedere alla condivisione, per creare file e cartelle. Questa condivisione deve essere creata in un sistema operativo server, ad esempio Windows Server 2003, in modo che il numero di utenti che possono accedere alla condivisione contemporaneamente non sia limitato.
 
 Ad esempio, se si configura una condivisione file nei simboli mainserver, i membri del team impostano \\ \\ NT SYMBOL PATH su \\ \_ quanto \_ \_ segue:
 
@@ -207,7 +207,7 @@ Questo è in genere tutto ciò che riguarda la configurazione e l'uso del propri
 
 ## <a name="adding-symbols-to-a-symbol-server"></a>Aggiunta di simboli a un server di simboli
 
-Per aggiungere, eliminare o modificare file in una condivisione del server di simboli, usare lo strumento symstore.exe simboli. Questo strumento fa parte di Microsoft Debugging Tools per Windows pacchetto. La documentazione completa sui server di simboli, lo strumento symstore e i simboli di indicizzazione è inclusa nel pacchetto Debugging Tools for Windows.
+Per aggiungere, eliminare o modificare file in una condivisione del server di simboli, usare lo strumento symstore.exe simboli. Questo strumento fa parte degli strumenti di debug Microsoft per Windows pacchetto. La documentazione completa sui server di simboli, lo strumento symstore e i simboli di indicizzazione è inclusa nel pacchetto Debugging Tools for Windows.
 
 È possibile aggiungere simboli direttamente al proprio server di simboli, come parte di un processo di compilazione, o rendere disponibili simboli all'intero team per librerie o strumenti di terze parti. Il processo di aggiunta di un simbolo a una condivisione file del server di simboli è detto simboli di indicizzazione. Esistono due modi comuni per indicizzare i simboli. Un file di simboli può essere copiato nel server di simboli. In caso contrario, è possibile copiare un puntatore al percorso del simbolo nel server di simboli. Se si dispone di una cartella di archivio che contiene le compilazioni precedente, è possibile indicizzare i puntatori ai file PDB già presenti nella condivisione, anziché duplicare i simboli. Poiché i simboli possono talvolta avere dimensioni di decine di megabyte, è buona idea pianificare in anticipo la quantità di spazio necessario per archiviare tutte le compilazioni del progetto durante lo sviluppo. Se si indicizzano solo i puntatori ai simboli, potrebbero verificarsi problemi se si rimuovono compilazioni meno comuni o si modifica il nome di una condivisione file.
 

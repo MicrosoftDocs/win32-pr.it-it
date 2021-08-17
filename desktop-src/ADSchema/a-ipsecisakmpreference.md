@@ -1,10 +1,10 @@
 ---
-title: IPsec-ISAKMP-attributo di riferimento
-description: L'attributo IPsec-ISAKMP-Reference è solo per uso interno.
+title: Attributo Ipsec-ISAKMP-Reference
+description: L'attributo Ipsec-ISAKMP-Reference è solo per uso interno.
 ms.assetid: a21513e8-9ae5-4690-a7a3-c1caaf9579cc
 ms.tgt_platform: multiple
 keywords:
-- IPsec-ISAKMP-attributo di riferimento-schema AD
+- Schema AD dell'attributo Ipsec-ISAKMP-Reference
 - Schema AD dell'attributo ipsecISAKMPReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0afa1f753fe86f5953d805610c0d60c721c60abe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3ba959bf501fa2954671c5474347ff75a8cb21fa4a3e578161ade403a43d7467
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322541"
 ---
-# <a name="ipsec-isakmp-reference-attribute"></a>IPsec-ISAKMP-attributo di riferimento
+# <a name="ipsec-isakmp-reference-attribute"></a>Attributo Ipsec-ISAKMP-Reference
 
-L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
+**L'attributo Ipsec-ISAKMP-Reference** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | IPsec-ISAKMP-riferimento                  |
-| LDAP-Display-Name | ipsecISAKMPReference                    |
+| CN                | Informazioni di riferimento su Ipsec-ISAKMP                  |
+| Ldap-Display-Name | ipsecISAKMPReference                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.626                  |
-| System-ID-GUID    | b40ff820-427a-11d1-a9c2-0000f80367c1    |
+| System-Id-Guid    | b40ff820-427a-11d1-a9c2-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPsec-ISAKMP-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 

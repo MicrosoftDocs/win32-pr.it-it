@@ -32,7 +32,7 @@ Attributo di collegamento indietro [**per ms-DS-NC-RO-Replica-Locations**](a-msd
 | CN                | ms-DS-NC-RO-Replica-Locations-BL        |
 | Ldap-Display-Name | msDS-NC-RO-Replica-Locations-BL         |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1968                 |
 | System-Id-Guid    | f547511c-5b2a-44cc-8358-992a88258164    |

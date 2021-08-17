@@ -1,6 +1,6 @@
 ---
-title: Registro profondità output
-description: Il registro di profondità dell'output pixel shader (oDepth) è un registro scalare di sola scrittura con l'intervallo \ 0.. 1 \ che restituisce un nuovo valore di profondità per un test di profondità sul buffer di stencil di profondità.
+title: Output Depth Register
+description: Il registro di profondità di output di pixel shader (oDepth) è un registro scalare di sola scrittura con l'intervallo \ 0..1\ che restituisce un nuovo valore di profondità per un test di profondità rispetto al buffer depth-stencil.
 ms.assetid: 47b9afd9-4520-480d-b4a2-3d9a5569defb
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9be825d6117cf1cc14464973146dbe176d696d25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 041ffccb3301831c91554ef3cda835d3f2e79204730e838b25f26660e76d9a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119725"
 ---
-# <a name="output-depth-register"></a>Registro profondità output
+# <a name="output-depth-register"></a>Output Depth Register
 
-Il registro di profondità dell'output pixel shader (oDepth) è un registro scalare di sola scrittura con l'intervallo \[ 0.. 1 \] che restituisce un nuovo valore di profondità per un test di profondità sul buffer dello stencil di profondità.
+Il registro di profondità di output di pixel shader (oDepth) è un registro scalare di sola scrittura con intervallo 0..1 che restituisce un nuovo valore di profondità per un test di profondità rispetto al \[ \] buffer depth-stencil.
 
 Sintassi
 
@@ -29,7 +29,7 @@ Sintassi
 
 
 
- 
+ 
 
 Dove:
 
@@ -37,34 +37,34 @@ Dove:
 
 | Nome   | Descrizione                                                       |
 |--------|-------------------------------------------------------------------|
-| oDepth | Nuovo valore di profondità per un test di profondità sul buffer di stencil Depth |
+| oDepth | Nuovo valore di profondità per un test di profondità rispetto al buffer depth-stencil |
 
 
 
- 
+ 
 
-È importante tenere presente che la scrittura in oDepth causa la perdita di tutti gli algoritmi di ottimizzazione del buffer di profondità specifici dell'hardware (ovvero la Z gerarchica) che accelerano le prestazioni dei test di profondità.
+È importante tenere presente che la scrittura in oDepth causa la perdita di qualsiasi algoritmo di ottimizzazione del buffer di profondità specifico dell'hardware (ad esempio Z gerarchico) che accelera le prestazioni dei test di profondità.
 
-La replica di swizzle di origine (con estensione x. \| \| z. \| w) è obbligatoria quando si scrive in oDepth. Non sono consentite maschere di scrittura esplicite.
+Lo swizzle di origine di replica (.x \| \| .y .z \| .w) è obbligatorio durante la scrittura in oDepth. Le maschere di scrittura esplicite non sono consentite.
 
-La scrittura nel registro oDepth sostituisce il valore di profondità interpolata (ignorando eventuali distorsioni di profondità/slopescale renderstates). Se non è stato creato o collegato alcun buffer di profondità al dispositivo, la scrittura in oDepth viene ignorata.
+La scrittura nel registro oDepth sostituisce il valore di profondità interpolata e ignora eventuali stati di rendering di distorsione/inclinazione della profondità. Se non è stato creato alcun buffer di profondità o collegato al dispositivo, la scrittura in oDepth viene ignorata.
 
-Se si esegue il campionamento multiplo e si scrive in oDepth, poiché il pixel shader viene eseguito una sola volta per pixel, il valore di profondità viene replicato per tutte le posizioni sottocampionate coperte. Il test di profondità si verifica ancora per campione, ma non è presente un valore di profondità per campione che entra nel confronto dal pixel shader come se non fosse stato scritto oDepth.
+Se si esegue il multicampionamento e si scrive in oDepth, poiché il pixel shader viene eseguito solo una volta per pixel, il valore di profondità viene replicato per tutte le posizioni di sottocampionamento coperte. Il test di profondità viene comunque eseguito per ogni campione, ma non si ha un valore di profondità per campione nel confronto dal pixel shader come si farebbe se non si scrivesse oDepth.
 
-Se un'applicazione dispone di un w-buffer impostato come buffer di profondità, è necessario prenderlo in considerazione durante la scrittura in oDepth. Potrebbe potenzialmente dover inviare informazioni di intervallo w al pixel shader e calcolare l'intervallo w per ridimensionare i valori w scritti in oDepth.
+Se un'applicazione ha un buffer w impostato come buffer di profondità, è necessario prenderne in considerazione durante la scrittura in oDepth. È potenzialmente necessario inviare informazioni w-range al pixel shader e calcolare l'intervallo w per ridimensionare i valori w scritti in oDepth.
 
-### <a name="ps_2_0-and-ps_2_x-restrictions"></a>\_restrizioni PS 2 \_ 0 e PS \_ 2 \_ x
+### <a name="ps_2_0-and-ps_2_x-restrictions"></a>ps \_ 2 \_ 0 e ps \_ 2 \_ x Restrizioni
 
--   oDepth può essere scritto solo con l'istruzione [MOV-PS](mov---ps.md) e può essere eseguito solo una volta.
--   Non è consentito alcun modificatore di origine durante la scrittura in oDepth.
--   Nessun modificatore di istruzione consentito durante la scrittura in oDepth.
--   Nessuna scrittura in oDepth dall'interno di un costrutto di controllo di flusso o quando si usa predicazione.
+-   oDepth può essere scritto solo con [l'istruzione mov - ps](mov---ps.md) e può essere eseguito una sola volta.
+-   Durante la scrittura in oDepth non è consentito alcun modificatore di origine.
+-   Durante la scrittura in oDepth non è consentito alcun modificatore di istruzione.
+-   Nessuna scrittura in oDepth dall'interno di un costrutto di controllo di flusso o quando si usa la predicazione.
 
-### <a name="ps_3_0-restrictions"></a>Restrizioni di PS \_ 3 \_ 0
+### <a name="ps_3_0-restrictions"></a>Ps \_ 3 \_ 0 Restrizioni
 
--   Per PS \_ 3 \_ 0, i registri di output OC # e od \# possono essere scritti un numero qualsiasi di volte. L'output del pixel shader deriva dal contenuto dei registri di output alla fine dell'esecuzione dello shader. Se non si verifica una scrittura in un registro di output, probabilmente a causa del controllo di flusso o se lo shader non lo scrive, non viene aggiornata anche la destinazione di rendering corrispondente. Se viene scritto un subset dei canali in un registro di output, i valori non definiti verranno scritti nei canali rimanenti.
--   È possibile scrivere in oDepth all'interno del controllo di flusso o predicazione a condizione che tutti i percorsi possibili vengano scritti nel registro.
--   Non è possibile eseguire alcun calcolo sfumato (o operazioni che richiamano in modo implicito i calcoli delle sfumature, ad esempio [texld-PS \_ 2 \_ 0 e up](texld---ps-2-0.md), [texldb-PS](texldb---ps.md), [texldp-PS](texldp---ps.md)) all'interno delle istruzioni di controllo di flusso le cui condizioni di diramazione variano in base alle primitive (ad esempio, istruzioni di controllo dinamico del flusso). L'istruzione predicazione non è considerata il controllo dinamico del flusso.
+-   Per ps \_ 3 \_ 0, i registri di output oC# e oD \# possono essere scritti un numero qualsiasi di volte. L'output del pixel shader deriva dal contenuto dei registri di output alla fine dell'esecuzione dello shader. Se non si verifica una scrittura in un registro di output, ad esempio a causa del controllo di flusso o se lo shader non lo ha appena scritto, anche la destinazione di rendering corrispondente non viene aggiornata. Se viene scritto un subset dei canali in un registro di output, i valori non definiti verranno scritti nei canali rimanenti.
+-   È possibile scrivere in oDepth all'interno del controllo di flusso o della predicazione, purché tutti i percorsi possibili scrivono nel registro.
+-   Non è possibile eseguire calcoli delle sfumature (o operazioni che richiamano in modo implicito i calcoli delle sfumature, ad esempio [texld - ps \_ 2 \_ 0](texld---ps-2-0.md)e up , [texldb - ps](texldb---ps.md), [texldp - ps](texldp---ps.md)) all'interno di istruzioni di controllo di flusso le cui condizioni di diramazione variano in base alle primitive (ad esempio, istruzioni di controllo dinamico del flusso). Il predicato dell'istruzione non è considerato controllo dinamico del flusso.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -73,9 +73,9 @@ Se un'applicazione dispone di un w-buffer impostato come buffer di profondità, 
 [Registri](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

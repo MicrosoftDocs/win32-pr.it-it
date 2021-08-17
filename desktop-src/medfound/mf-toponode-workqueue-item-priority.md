@@ -1,17 +1,17 @@
 ---
 description: Specifica la priorità dell'elemento di lavoro per un ramo della topologia.
 ms.assetid: B2FA1151-08D3-46F9-A38D-AC8908EFA6A2
-title: Attributo MF_TOPONODE_WORKQUEUE_ITEM_PRIORITY (Mfidl. h)
+title: MF_TOPONODE_WORKQUEUE_ITEM_PRIORITY attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5f7df6630e41a32eeb069c2a07b8030da79929
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff67e48bda6ac00baeab9418b80d366c23808713b4689a013949b364f09b6e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739835"
 ---
-# <a name="mf_toponode_workqueue_item_priority-attribute"></a>\_ \_ \_ Attributo priorità elemento WORKQUEUE MF TOPONODE \_
+# <a name="mf_toponode_workqueue_item_priority-attribute"></a>Attributo MF \_ TOPONODE \_ WORKQUEUE \_ ITEM \_ PRIORITY
 
 Specifica la priorità dell'elemento di lavoro per un ramo della topologia.
 
@@ -21,11 +21,11 @@ Specifica la priorità dell'elemento di lavoro per un ramo della topologia.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di origine (**\_ \_ \_ nodo SOURCESTREAM topologia MF**). L'attributo è facoltativo.
+Questo attributo si applica ai nodi di origine (**MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**). L'attributo è facoltativo.
 
-Questo attributo richiede l'attributo [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) nello stesso nodo.
+Questo attributo richiede [l'attributo \_ MF TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) nello stesso nodo.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del nodo della topologia](topology-node-attributes.md)
@@ -58,7 +58,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**\_ \_ ID WORKQUEUE MF \_ TOPONODE**](mf-toponode-workqueue-id-attribute.md)
+[**ID DELLA \_ CODA DI LAVORO \_ TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
 </dt> </dl>
 
  

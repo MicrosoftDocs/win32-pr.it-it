@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7a833d2a58db0f434f836126926e461cd2ee3ea0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa40476bdd1f65dddf0f78b57cfca2b20ac7bd8186eaf78546ddda9b3fa8771a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096596"
 ---
 # <a name="d3dxattributeweights-structure"></a>Struttura D3DXATTRIBUTEWEIGHTS
 
@@ -64,7 +64,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Spessore della blend.
+Spessore della fusione.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Binormale.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura descrive in che modo un'operazione di semplificazione considererà i dati dei vertici durante il calcolo dei costi relativi tra gli bordi che comprimono. Ad esempio, se il campo Normale è 0,0, l'operazione di semplificazione ignorerà il componente normale del vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo Normal è 1.0, l'operazione di semplificazione userà il componente normale del vertice. Se il campo Normale è 2,0, raddoppiare la quantità di errori. se il campo Normal è 4.0, quadruplicare il numero di errori e così via.
+Questa struttura descrive in che modo un'operazione di semplificazione considererà i dati dei vertici durante il calcolo dei costi relativi tra i bordi di compressione. Ad esempio, se il campo Normale è 0,0, l'operazione di semplificazione ignorerà il componente normale del vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo Normale è 1.0, l'operazione di semplificazione userà il componente normale dei vertici. Se il campo Normale è 2.0, raddoppiare la quantità di errori. se il campo Normale è 4.0, quindi quadruplicare il numero di errori e così via.
 
 Il tipo LPD3DXATTRIBUTEWEIGHTS è definito come puntatore alla **struttura D3DXATTRIBUTEWEIGHTS.**
 

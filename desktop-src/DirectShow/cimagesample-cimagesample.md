@@ -1,5 +1,5 @@
 ---
-description: Costruttore CImageSample.CImageSample - Metodo costruttore.
+description: 'Costruttore CImageSample.CImageSample : metodo costruttore.'
 ms.assetid: d7550c38-d728-41b2-80a6-20728abf6012
 title: Costruttore CImageSample.CImageSample (Winutil.h)
 ms.topic: reference
@@ -70,7 +70,7 @@ Ignorato.
 *pBuffer* 
 </dt> <dd>
 
-Puntatore a un buffer di memoria allocato dal chiamante di lunghezza *.* Il buffer deve contenere una bitmap GDI indipendente dal dispositivo (DIB).
+Puntatore a un buffer di memoria allocato dal chiamante, di lunghezza *.* Il buffer deve contenere una bitmap GDI indipendente dal dispositivo (DIB).
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Lunghezza del buffer.
 
 ## <a name="remarks"></a>Commenti
 
-La [**classe CImageAllocator**](cimageallocator.md) crea un DIB usando un oggetto di mapping dei file supportato dal file di paging del sistema operativo. L'handle per l'oggetto di mapping dei file viene archiviato nel **membro hMapping** della **struttura \_ DibData m.**
+La [**classe CImageAllocator**](cimageallocator.md) crea un DIB usando un oggetto di mapping di file supportato dal file di paging del sistema operativo. L'handle per l'oggetto di mapping dei file viene archiviato nel **membro hMapping** della **struttura \_ DibData m.**
 
 ## <a name="requirements"></a>Requisiti
 

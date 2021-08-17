@@ -1,5 +1,5 @@
 ---
-description: "Metodo IFeedbackHubAppInfo::GetAumidFromAppListEntry: questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
+description: "Metodo IFeedbackHubAppInfo::GetAumidFromAppListEntry: questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
 ms.assetid: F205911F-7AA3-464F-A408-3BF549E1112A
 title: Metodo IFeedbackHubAppInfo::GetAumidFromAppListEntry
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2da6b428db156ddf18483951701216942aebbeaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ac5609ecee2be86f5cc3600147e90ebcd9087b181a02fcbf09a539d32d14b338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404547"
 ---
 # <a name="ifeedbackhubappinfogetaumidfromapplistentry-method"></a>Metodo IFeedbackHubAppInfo::GetAumidFromAppListEntry
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ virtual void GetAumidFromAppListEntry(
 *appListEntry* \[ in, facoltativo\]
 </dt> <dd>
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 </dd> <dt>
 
 *value* \[ out, facoltativo\]
 </dt> <dd>
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2016 \[\]<br/> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>          |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/> |
 
 
 

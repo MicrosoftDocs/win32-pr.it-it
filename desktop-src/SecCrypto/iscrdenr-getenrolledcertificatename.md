@@ -1,7 +1,7 @@
 ---
-description: 'Recupera il nome del certificato risultante da una chiamata precedente riuscita a ISCrdEnr:: registra.'
+description: Recupera il nome del certificato risultante da una precedente chiamata riuscita a ISCrdEnr::enroll.
 ms.assetid: e33b217a-b717-49bd-b0f3-3ba9229a0696
-title: 'Metodo ISCrdEnr:: getEnrolledCertificateName'
+title: Metodo ISCrdEnr::getEnrolledCertificateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: e3c9640e7719d2b5ac0e576384246cda5e1b2bfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79158a5c10cee2f4f38163c5a657199415568b36076b9e84f2a54020d1be42a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409491"
 ---
-# <a name="iscrdenrgetenrolledcertificatename-method"></a>Metodo ISCrdEnr:: getEnrolledCertificateName
+# <a name="iscrdenrgetenrolledcertificatename-method"></a>Metodo ISCrdEnr::getEnrolledCertificateName
 
-Il metodo **getEnrolledCertificateName** Recupera il nome del certificato risultante da una chiamata precedente riuscita a [**ISCrdEnr:: registra**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85)).
+Il **metodo getEnrolledCertificateName** recupera il nome del certificato risultante da una precedente chiamata riuscita a [**ISCrdEnr::enroll.**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85))
 
-Questo metodo può essere utilizzato anche per visualizzare il certificato in una finestra di dialogo. Questo metodo chiama la [](../secgloss/c-gly.md) funzione CryptoAPI [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+Questo metodo può essere utilizzato anche per visualizzare il certificato in una finestra di dialogo. Questo metodo chiama la [*funzione CryptoAPI*](../secgloss/c-gly.md) [**CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,14 +54,14 @@ SCrdEnr.getEnrolledCertificateName( _
 
 <dl> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore che determina se il certificato viene visualizzato in una finestra di dialogo. Se questo valore viene spaventato \_ \_ \_ , nessun \_ certificato di visualizzazione (definito come 0x01), il certificato registrato non viene visualizzato. eventuali altri valori determinano la visualizzazione del certificato registrato nella finestra di dialogo **certificato** .
+Valore che determina se il certificato viene visualizzato in una finestra di dialogo. Se questo valore è SCARD \_ ENROLL \_ NO DISPLAY \_ \_ CERT (definito  come 0x01), il certificato registrato non viene visualizzato. Qualsiasi altro valore determina la visualizzazione del certificato registrato nella finestra di dialogo Certificato.
 
 </dd> <dt>
 
-*pBstrCertName* \[ out\]
+*pBstrCertName* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una stringa che restituisce il nome del certificato recuperato.
@@ -74,7 +74,7 @@ Puntatore a una stringa che restituisce il nome del certificato recuperato.
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](common-hresult-values.md)
 
 ### <a name="vb"></a>VB
 
@@ -82,9 +82,9 @@ Stringa che rappresenta il nome del certificato recuperato.
 
 ## <a name="remarks"></a>Commenti
 
-Poiché questo metodo agisce su un certificato esistente, è necessario avere chiamato correttamente [**ISCrdEnr:: registra**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85)) prima di poter chiamare **getEnrolledCertificateName**.
+Poiché questo metodo opera su un certificato esistente, è necessario aver chiamato [**correttamente ISCrdEnr::enroll**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85)) prima di poter chiamare **getEnrolledCertificateName**.
 
-Il metodo **getEnrolledCertificateName** chiama la funzione [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) per recuperare il nome del certificato in base alla sequenza descritta per il nome del certificato \_ \_ \_ \_ del tipo di visualizzazione semplice del parametro *dwType* di **CertGetNameString**.
+Il **metodo getEnrolledCertificateName** chiama la funzione [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) per recuperare il nome del certificato in base alla sequenza descritta per il valore CERT NAME SIMPLE DISPLAY TYPE del parametro \_ \_ \_ \_ *dwType* di **CertGetNameString.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,9 +93,9 @@ Il metodo **getEnrolledCertificateName** chiama la funzione [**CertGetNameString
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
@@ -106,7 +106,7 @@ Il metodo **getEnrolledCertificateName** chiama la funzione [**CertGetNameString
 [**ISCrdEnr**](iscrdenr.md)
 </dt> <dt>
 
-[**ISCrdEnr:: registra**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85))
+[**ISCrdEnr::enroll**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85))
 </dt> </dl>
 
  

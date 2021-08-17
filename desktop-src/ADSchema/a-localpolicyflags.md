@@ -1,6 +1,6 @@
 ---
 title: Attributo Local-Policy-Flags
-description: Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
+description: Flag che determinano dove un computer ottiene i criteri. Riferimento ai criteri locali.
 ms.assetid: 1f2fa723-507a-4e27-a325-8bd6f6cb6bd6
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ ms.locfileid: "119301851"
 ---
 # <a name="local-policy-flags-attribute"></a>Attributo Local-Policy-Flags
 
-Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
+Flag che determinano dove un computer ottiene i criteri. Riferimento ai criteri locali.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Flag di criteri locali                   |
+| CN                | Flag dei criteri locali                   |
 | Ldap-Display-Name | localPolicyFlags                     |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.56                |
 | System-Id-Guid    | bf96799e-0de6-11d0-a285-00aa003049e2 |
@@ -58,7 +58,7 @@ Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| Is-Single-Valued       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
@@ -79,7 +79,7 @@ Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| Is-Single-Valued       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
@@ -100,7 +100,7 @@ Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| Is-Single-Valued       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |

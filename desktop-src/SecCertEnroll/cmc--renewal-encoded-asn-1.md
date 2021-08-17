@@ -1,5 +1,5 @@
 ---
-description: L'esempio seguente contiene una richiesta di rinnovo CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe seguenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
+description: L'esempio seguente contiene una richiesta di rinnovo CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 ms.assetid: acb0fdeb-3d7b-4598-bb7a-df97e200984b
 title: Rinnovo CMC codificato ASN.1
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118902074"
 ---
 # <a name="cmc-renewal-encoded-asn1"></a>Rinnovo CMC codificato ASN.1
 
-L'esempio seguente contiene una richiesta di rinnovo CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe seguenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
+L'esempio seguente contiene una richiesta di rinnovo CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 
 ``` syntax
 [NewRequest]

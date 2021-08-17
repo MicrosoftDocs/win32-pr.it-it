@@ -5,7 +5,7 @@ ms.assetid: baea6575-80d3-4f69-8e98-47f4a5941388
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DFSR-DirectoryFilter
-- Schema AD dell'attributo msDFSR-DirectoryFilter
+- Attributo msDFSR-DirectoryFilter Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ Contiene la stringa di filtro applicata alle directory.
 | CN                | ms-DFSR-DirectoryFilter                     |
 | Ldap-Display-Name | msDFSR-DirectoryFilter                      |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.13                  |
 | System-Id-Guid    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |

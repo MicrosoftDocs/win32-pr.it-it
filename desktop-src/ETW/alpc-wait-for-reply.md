@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per ALPC in attesa di eventi di risposta. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi wait for reply di ALPC. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 9aaa2c93-41cc-4025-80f9-b7740a37c4d8
-title: Classe ALPC_Wait_For_Reply
+title: ALPC_Wait_For_Reply classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 898077511db25ec7f53bc075ecb845d04e540626
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05b2f2e867e3e95e8ba0916ad288363db7ad8b6a7753f956df5415529d8ec5e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070311"
 ---
-# <a name="alpc_wait_for_reply-class"></a>ALPC \_ attendere \_ la \_ classe Reply
+# <a name="alpc_wait_for_reply-class"></a>Classe ALPC \_ Wait \_ For \_ Reply
 
-Questa classe è la classe del tipo di evento per ALPC in attesa di eventi di risposta.
+Questa classe è la classe del tipo di evento per gli eventi wait for reply di ALPC.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -38,20 +38,20 @@ class ALPC_Wait_For_Reply : ALPC
 
 ## <a name="members"></a>Members
 
-La classe **ALPC \_ Wait \_ for \_ Reply** presenta questi tipi di membri:
+La **classe ALPC \_ Wait For \_ \_ Reply** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ALPC \_ Wait \_ for \_ Reply** presenta queste proprietà.
+La **classe ALPC \_ Wait For \_ \_ Reply** ha queste proprietà.
 
 <dl> <dt>
 
 **MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -67,8 +67,8 @@ Identificatore del messaggio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

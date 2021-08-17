@@ -3,7 +3,7 @@ title: TB_SETHOTITEM2 messaggio (Commctrl.h)
 description: "TB_SETHOTITEM2 messaggio: imposta l'elemento di accesso rapido in una barra degli strumenti."
 ms.assetid: 43666b1d-1197-452f-aa79-eb0a1a23e5b7
 keywords:
-- TB_SETHOTITEM2 messaggio Controlli Windows
+- TB_SETHOTITEM2 dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7daf67839837adccfbec99bf03fc4dfff97738db
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8f4bb1e560e2be2b6952406d548215d60f2c2974e57b2388580da7453b51c184
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318821"
 ---
 # <a name="tb_sethotitem2-message"></a>TB \_ SETHOTITEM2 message
 
@@ -45,7 +45,7 @@ Restituisce l'indice dell'elemento a caldo precedente oppure -1 se non è presen
 
 ## <a name="remarks"></a>Commenti
 
-Il comportamento di questo messaggio non è definito per le barre degli strumenti che non hanno lo [**stile TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md)
+Il comportamento di questo messaggio non è definito per le barre degli strumenti che non hanno lo stile [**TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ Il comportamento di questo messaggio non è definito per le barre degli strument
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

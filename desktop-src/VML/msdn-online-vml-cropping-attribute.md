@@ -1,41 +1,41 @@
 ---
-title: Attributo di ritaglio la
-description: Attributo di ritaglio la
+title: Attributo di ritaglio VML
+description: Attributo di ritaglio VML
 ms.assetid: f6b8853b-a26e-43e4-a976-7125ac0d5423
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf7ffb9d31d8093005f04fd9ff48e9858218d039
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2de3e6afac6c2df0deb6e1fbd50af12a99fb2a5a0b51ded44dfdff70c471ad06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754797"
 ---
-# <a name="vml-cropping-attribute"></a>Attributo di ritaglio la
+# <a name="vml-cropping-attribute"></a>Attributo di ritaglio VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina se l'operazione di ritaglio sarà consentita in un editor. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se il ritaglio sarà consentito in un editor. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [Locks](msdn-online-vml-locks-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *elemento* ritaglio = " *espressione* " >
+<o: *elemento* ritaglio=" *espressione* ">
 
 **Osservazioni:**
 
-Se **true**, il ritaglio non sarà consentito in un editor grafico. Il valore predefinito è **False**.
+Se **True,** il ritaglio non sarà consentito in un editor grafico. Il valore predefinito è **False**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

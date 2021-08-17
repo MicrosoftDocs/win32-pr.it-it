@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. RemoteStreamingUrls
+title: BasicDevice.RemoteStreamingUrls - proprietà
 description: Ottiene un vettore di URL di streaming remoto.
 ms.assetid: E0F05E04-FED0-42E7-BC42-AFFA9780C366
 keywords:
-- API di streaming multimediale della proprietà RemoteStreamingUrls
-- API di streaming multimediale della proprietà RemoteStreamingUrls, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà RemoteStreamingUrls
+- RemoteStreamingUrls - proprietà API Streaming multimediale
+- Proprietà RemoteStreamingUrls API Streaming multimediale, interfaccia BasicDevice
+- BasicDevice interface Media Streaming API , proprietà RemoteStreamingUrls
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca1d5695c22c8b514475c6336c29ee70caa01f93
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f708c3f230b0345a9799abd617205864ec737f1bb2fb2a448fd3ba639d5bacb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104473006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736217"
 ---
-# <a name="basicdeviceremotestreamingurls-property"></a>Proprietà BasicDevice. RemoteStreamingUrls
+# <a name="basicdeviceremotestreamingurls-property"></a>BasicDevice.RemoteStreamingUrls - proprietà
 
 Ottiene un vettore di URL di streaming remoto.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_RemoteStreamingUrls(
-  [out] IVector< HSTRING > **value
+  [out] IVector< HSTRING > **value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_RemoteStreamingUrls(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Raccolta enumerabile di puntatori agli URL di streaming remoto.
+Raccolta enumerabile di puntatori a URL di streaming remoti.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,6 +50,6 @@ Raccolta enumerabile di puntatori agli URL di streaming remoto.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

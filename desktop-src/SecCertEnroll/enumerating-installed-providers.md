@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene illustrato come utilizzare l'API di registrazione del certificato per enumerare i provider installati in un computer.
+description: L'esempio seguente illustra come usare l'API di registrazione certificati per enumerare i provider installati in un computer.
 ms.assetid: d7fa03d5-775c-41f3-9fef-8929bd25ed92
 title: Enumerazione dei provider installati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cddefe6cb85bc57c42313693ac86f4e2ea763d45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcc29e017e78ecda9c8f3bf12ac0b9925c1817dee3de836b5cf6091bbe6ec3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117779891"
 ---
 # <a name="enumerating-installed-providers"></a>Enumerazione dei provider installati
 
-Nell'esempio seguente viene illustrato come utilizzare l'API di registrazione del certificato per enumerare i provider installati in un computer.
+L'esempio seguente illustra come usare l'API di registrazione certificati per enumerare i provider installati in un computer.
 
 ``` syntax
 // enumeratinginstalledproviders.cpp : Defines the entry point for the console application.
@@ -118,7 +118,7 @@ HRESULT enumProviders(void)
 
 <dl> <dt>
 
-[Informazioni sui provider di crittografia](understanding-cryptographic-providers.md)
+[Informazioni sui provider del servizio di crittografia](understanding-cryptographic-providers.md)
 </dt> </dl>
 
  

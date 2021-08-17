@@ -1,10 +1,10 @@
 ---
-title: Interfaccia IWMPMedia3 (VB e C) (WMP. h)
+title: Interfaccia IWMPMedia3 (VB e C) (Wmp.h)
 description: Fornisce metodi aggiuntivi per accedere alle proprietà di un elemento multimediale.
 ms.assetid: e16aa5e2-ae44-41c2-8c61-fb688c2e89e2
 keywords:
 - Interfaccia IWMPMedia3 (VB e C) Windows Media Player
-- Interfaccia IWMPMedia3 (VB e C) Windows Media Player, descritta
+- Interfaccia IWMPMedia3 (VB e C) Windows Media Player , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edb5438ad4d80031d5b45c738c6b6cc9335018af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d536f792f0acc8003669be05448ec1f68f82830ccbadf75483bbbc6b84610ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415922"
 ---
 # <a name="iwmpmedia3-vb-and-c-interface"></a>Interfaccia IWMPMedia3 (VB e C#)
 
@@ -28,13 +28,13 @@ Fornisce metodi aggiuntivi per accedere alle proprietà di un elemento multimedi
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMPMedia3 (VB e C#)** presenta questi tipi di membri:
+**L'interfaccia IWMPMedia3 (VB e C#)** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMPMedia3 (VB e C#)** presenta questi metodi.
+**L'interfaccia IWMPMedia3 (VB e C#)** ha questi metodi.
 
 
 
@@ -47,13 +47,13 @@ L'interfaccia **IWMPMedia3 (VB e C#)** presenta questi metodi.
 
  
 
-Ottenere un'interfaccia **IWMPMedia3** eseguendo il cast del valore restituito da uno dei metodi o delle proprietà seguenti a cui si accede tramite l'oggetto o l'interfaccia seguente.
+Ottenere **un'interfaccia IWMPMedia3** eseguendo il cast del valore restituito da una delle proprietà o dei metodi seguenti a cui si accede tramite l'oggetto o l'interfaccia seguente.
 
 
 
 | Oggetto o interfaccia                                               | Proprietà o metodo                                                                                                                |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [IWMPControls](iwmpcontrols--vb-and-c.md)                        | [currentItem](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)                                                          |
+| [IWMPControls](iwmpcontrols--vb-and-c.md)                        | [Currentitem](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)                                                          |
 | [AxWindowsMediaPlayer](axwindowsmediaplayer-object--vb-and-c.md) | [currentMedia](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md) , [newMedia](axwmplib-axwindowsmediaplayer-newmedia.md) |
 | [IWMPPlaylist](iwmpplaylist--vb-and-c.md)                        | [Item](iwmpplaylist-item--vb-and-c.md) ( **get \_ Item** in C#)                                                                   |
 
@@ -67,7 +67,7 @@ Ottenere un'interfaccia **IWMPMedia3** eseguendo il cast del valore restituito d
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

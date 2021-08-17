@@ -1,7 +1,7 @@
 ---
-description: '\_Struttura D3DXSHADER CONSTANTINFO'
+description: Struttura D3DXSHADER \_ CONSTANTINFO
 ms.assetid: 0c42cea7-559e-4475-b66a-e932a9cb42de
-title: Struttura D3DXSHADER_CONSTANTINFO (D3dx9shader. h)
+title: D3DXSHADER_CONSTANTINFO struttura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: e90c0085035e78b9bc3ce1c48642157d8badc924
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 34a9238ac7ab401a25874d65390ccfacb4dba68a9ccc4438500a1171e25e5e13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122831"
 ---
-# <a name="d3dxshader_constantinfo-structure"></a>\_Struttura D3DXSHADER CONSTANTINFO
+# <a name="d3dxshader_constantinfo-structure"></a>Struttura D3DXSHADER \_ CONSTANTINFO
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,25 +50,25 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset dall'inizio della struttura, in byte, alla stringa che contiene le informazioni sulle costanti.
+Offset dall'inizio di questa struttura, in byte, alla stringa che contiene le informazioni sulle costanti.
 
 </dd> <dt>
 
-**Registro**
+**RegisterSet**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Set di registrazione. Vedere [**D3DXREGISTER \_ set**](./d3dxregister-set.md).
+Set di registri. Vedere [**D3DXREGISTER \_ SET**](./d3dxregister-set.md).
 
 </dd> <dt>
 
 **RegisterIndex**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -79,7 +79,7 @@ Indice del registro.
 **RegisterCount**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -90,7 +90,7 @@ Numero di registri.
 **Reserved**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -98,14 +98,14 @@ Riservato.
 
 </dd> <dt>
 
-**TypeInfo**
+**Typeinfo**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset dall'inizio della struttura, in byte, alla stringa che contiene le informazioni di [**\_ TYPEINFO D3DXSHADER**](d3dxshader-typeinfo.md) .
+Offset dall'inizio di questa struttura, in byte, alla stringa che contiene le informazioni [**\_ TYPEINFO D3DXSHADER.**](d3dxshader-typeinfo.md)
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset dall'inizio della struttura, in byte, alla stringa che contiene il valore predefinito.
+Offset dall'inizio di questa struttura, in byte, alla stringa che contiene il valore predefinito.
 
 </dd> </dl>
 
@@ -126,7 +126,7 @@ Offset dall'inizio della struttura, in byte, alla stringa che contiene il valore
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 

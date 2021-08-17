@@ -1,5 +1,5 @@
 ---
-description: 'Process_V2 classe : questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_V2: questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 75596278-43cc-4040-a43d-6958d0935b68
 title: Process_V2 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 77d700e7847d0ad19a019985a4e19343ce8f383d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8b5ac8c1e8dd09b8f3a1078abde39523487afbe901d1e3013eade82170e4af11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069941"
 ---
 # <a name="process_v2-class"></a>Classe \_ Process V2
 
@@ -54,15 +54,15 @@ I consumer di traccia eventi possono implementare un'elaborazione speciale per g
 | **EVENTO \_ TRACE \_ TYPE \_ START**(il valore del tipo di evento è 1)<br/> | Evento di avvio del processo. La [**classe \_ MOF Process TypeGroup1**](process-typegroup1.md) definisce i dati dell'evento per questo evento.                                                                                                        |
 | Valore del tipo di evento, 3                                             | Evento di avvio del processo di raccolta dati. Enumera i processi attualmente in esecuzione al momento dell'avvio della sessione del kernel. La [**classe \_ MOF Process TypeGroup1**](process-typegroup1.md) definisce i dati dell'evento per questo evento. |
 | Valore del tipo di evento, 4                                             | Evento del processo di raccolta dati finale. Enumera i processi attualmente in esecuzione al termine della sessione del kernel. La [**classe \_ MOF Process TypeGroup1**](process-typegroup1.md) definisce i dati dell'evento per questo evento.     |
-| Valore del tipo di evento, 32                                            | Evento dei contatori delle prestazioni. La [**classe \_ MOF Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) definisce i dati dell'evento per questo evento.                                                                                          |
-| Valore del tipo di evento, 33                                            | Rundown dei contatori delle prestazioni all'inizio della sessione. La [**classe \_ MOF Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) definisce i dati dell'evento per questo evento.                                                     |
-| Valore del tipo di evento, 39                                            | Evento del processo non in corso. La [**classe \_ MOF Process TypeGroup1**](process-typegroup1.md) definisce i dati dell'evento per questo evento.                                                                                                      |
+| Valore del tipo di evento, 32                                            | Evento dei contatori delle prestazioni. La [**classe MOF \_ Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) definisce i dati dell'evento per questo evento.                                                                                          |
+| Valore del tipo di evento, 33                                            | Rundown dei contatori delle prestazioni all'inizio della sessione. La [**classe MOF \_ Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) definisce i dati dell'evento per questo evento.                                                     |
+| Valore del tipo di evento, 39                                            | Evento di processo inevaso. La [**classe \_ MOF Process TypeGroup1**](process-typegroup1.md) definisce i dati dell'evento per questo evento.                                                                                                      |
 
 
 
  
 
-Gli eventi di avvio del processo e del thread possono essere registrati nel contesto del processo o del thread padre. Di conseguenza, i **membri ProcessId** e **ThreadId** di [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) potrebbero non corrispondere al processo e al thread da creare. Questo è il motivo per cui questi eventi contengono gli identificatori di processo e thread nei dati dell'evento (oltre a quelli nell'intestazione dell'evento).
+Gli eventi di avvio di processi e thread possono essere registrati nel contesto del processo o del thread padre. Di conseguenza, i **membri ProcessId** e **ThreadId** di [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) potrebbero non corrispondere al processo e al thread da creare. Questo è il motivo per cui questi eventi contengono gli identificatori di processo e thread nei dati dell'evento (oltre a quelli nell'intestazione dell'evento).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Gli eventi di avvio del processo e del thread possono essere registrati nel cont
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista \[ \| app UWP\]<br/>       |
-| Server minimo supportato<br/> | App UWP per app desktop di Windows Server 2008 \[ \|\]<br/> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>       |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/> |
 
 
 

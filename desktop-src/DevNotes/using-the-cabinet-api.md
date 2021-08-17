@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sull'uso dell'API Cabinet
+description: "Altre informazioni su: Uso dell'API Cabinet"
 ms.assetid: facbcbee-46c2-4fb5-85f9-5d08244dcf86
 title: Uso dell'API Cabinet
 ms.topic: article

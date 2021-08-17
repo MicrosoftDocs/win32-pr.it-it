@@ -1,7 +1,7 @@
 ---
 description: Genera una mesh con visi e vertici riordinati per ottimizzare le prestazioni del disegno. Questo metodo riordina la mesh esistente.
 ms.assetid: 2cdaf627-d1d3-44f0-a5ae-9023d4b0de45
-title: 'Metodo ID3DXMesh:: OptimizeInplace (D3DX9Mesh. h)'
+title: Metodo ID3DXMesh::OptimizeInplace (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f889e0d3754cc1321ffa59eba294038b87991489
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0075e7a0b823f0d747859a4717a440e0c244fde76076e4b285c7d1b2a7e78d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120805"
 ---
-# <a name="id3dxmeshoptimizeinplace-method"></a>Metodo ID3DXMesh:: OptimizeInplace
+# <a name="id3dxmeshoptimizeinplace-method"></a>Metodo ID3DXMesh::OptimizeInplace
 
 Genera una mesh con visi e vertici riordinati per ottimizzare le prestazioni del disegno. Questo metodo riordina la mesh esistente.
 
@@ -44,48 +44,48 @@ HRESULT OptimizeInplace(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag [**D3DXMESHOPT**](./d3dxmeshopt.md) , che specifica il tipo di ottimizzazione da eseguire.
+Combinazione di uno o [**più flag D3DXMESHOPT,**](./d3dxmeshopt.md) specificando il tipo di ottimizzazione da eseguire.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ in\]
+*pAdjacencyIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh di origine. Se il bordo non ha visi adiacenti, il valore è 0xFFFFFFFF.
+Puntatore a una matrice di tre DWORD per ogni viso che specifica i tre elementi adiacenti per ogni viso nella mesh di origine. Se il bordo non ha visi adiacenti, il valore è 0xffffffff.
 
 </dd> <dt>
 
-*pAdjacencyOut* \[ out\]
+*pAdjacencyOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh ottimizzata. Se il bordo non ha visi adiacenti, il valore è 0xFFFFFFFF. Se il valore specificato per questo argomento è **null**, i dati adiacenza non vengono restituiti.
+Puntatore a una matrice di tre DWORD per viso che specifica i tre elementi adiacenti per ogni viso nella mesh ottimizzata. Se il bordo non ha visi adiacenti, il valore è 0xffffffff. Se il valore fornito per questo argomento è **NULL,** i dati di adienza non vengono restituiti.
 
 </dd> <dt>
 
-*pFaceRemap* \[ out\]
+*pFaceRemap* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Matrice di DWORD, una per ogni volto, che identifica la faccia mesh originale che corrisponde a ogni face nella mesh ottimizzata. Se il valore fornito per questo argomento è **null**, non vengono restituiti i dati di riassociazione della faccia.
+Matrice di DWORD, uno per ogni viso, che identifica il viso della mesh originale corrispondente a ogni viso nella mesh ottimizzata. Se il valore fornito per questo argomento è **NULL,** i dati di modifica del mapping dei visi non vengono restituiti.
 
 </dd> <dt>
 
-*ppVertexRemap* \[ out\]
+*ppVertexRemap* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXBuffer**](id3dxbuffer.md) , che contiene un valore DWORD per ogni vertice che specifica la modalità di mapping dei nuovi vertici ai vertici precedenti. Questo mapping è utile se è necessario modificare i dati esterni in base al nuovo mapping dei vertici. Se il valore specificato per questo argomento è **null**, i dati di riassociazione dei vertici non vengono restituiti.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer,**](id3dxbuffer.md) che contiene un valore DWORD per ogni vertice che specifica il mapping dei nuovi vertici ai vertici vecchi. Questo nuovo mapping è utile se è necessario modificare i dati esterni in base al nuovo mapping dei vertici. Se il valore fornito per questo argomento è **NULL,** i dati di ridefinizione dei vertici non vengono restituiti.
 
 </dd> </dl>
 
@@ -93,14 +93,14 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXBuffer**](id3dxbuffer.md) , c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di eseguire **ID3DXMesh:: OptimizeInplace**, un'applicazione deve generare un buffer adiacenza chiamando [**ID3DXBaseMesh:: GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). Il buffer adiacenza contiene dati adiacenza, ad esempio un elenco di bordi e i visi adiacenti.
+Prima di **eseguire ID3DXMesh::OptimizeInplace,** un'applicazione deve generare un buffer di adiacenza chiamando [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). Il buffer di adienza contiene dati di adicenza, ad esempio un elenco di bordi e visi adiacenti.
 
 > [!Note]  
-> Questo metodo avrà esito negativo se la mesh sta condividendo il buffer dei vertici con un'altra mesh, a meno che D3DXMESHOPT \_ IGNOREVERTS non sia impostato nei flag.
+> Questo metodo avrà esito negativo se la mesh condivide il buffer dei vertici con un'altra mesh, a meno che D3DXMESHOPT IGNOREVERTS non sia \_ impostato in Flag.
 
  
 
@@ -110,8 +110,8 @@ Prima di eseguire **ID3DXMesh:: OptimizeInplace**, un'applicazione deve generare
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -122,7 +122,7 @@ Prima di eseguire **ID3DXMesh:: OptimizeInplace**, un'applicazione deve generare
 [ID3DXMesh](id3dxmesh.md)
 </dt> <dt>
 
-[**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md)
+[**ID3DXMesh::Optimize**](id3dxmesh--optimize.md)
 </dt> </dl>
 
  

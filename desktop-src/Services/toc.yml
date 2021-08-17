@@ -5,7 +5,7 @@
       href: what-s-new-in-services-for-windows-8.md
     - name: Novità dei servizi per Windows 7
       href: what-s-new-in-services.md
-    - name: Modifiche ai servizi per Windows Vista
+    - name: Modifiche al servizio per Windows Vista
       href: service-changes-for-windows-vista.md
     - name: Informazioni sui servizi
       href: about-services.md
@@ -17,9 +17,9 @@
               href: database-of-installed-services.md
             - name: Avvio automatico dei servizi
               href: automatically-starting-services.md
-            - name: Avvio dei servizi su richiesta
+            - name: Avvio di servizi su richiesta
               href: starting-services-on-demand.md
-            - name: Elenco di record di servizio
+            - name: Elenco dei record di servizio
               href: service-record-list.md
             - name: Handle SCM
               href: scm-handles.md
@@ -32,13 +32,13 @@
               href: service-servicemain-function.md
             - name: Funzione Handler di controllo dei servizi
               href: service-control-handler-function.md
-            - name: Transizioni di stato del servizio
+            - name: Transizioni dello stato del servizio
               href: service-status-transitions.md
             - name: Ricezione di eventi in un servizio
               href: receiving-events-in-a-service.md
             - name: Servizi multithreading
               href: multithreaded-services.md
-            - name: Servizi e registro di sistema
+            - name: Servizi e Registro di sistema
               href: services-and-the-registry.md
             - name: Servizi e unità reindirizzate
               href: services-and-redirected-drives.md
@@ -47,11 +47,11 @@
         - name: Programmi di configurazione del servizio
           href: service-configuration-programs.md
           items:
-            - name: 'Installazione, rimozione ed enumerazione del servizio'
+            - name: 'Installazione, rimozione ed enumerazione dei servizi'
               href: service-installation-removal-and-enumeration.md
             - name: Service Configuration
               href: service-configuration.md
-            - name: Configurazione di un servizio con SC
+            - name: Configurazione di un servizio tramite SC
               href: configuring-a-service-using-sc.md
         - name: Programmi di controllo del servizio
           href: service-control-programs.md
@@ -60,16 +60,16 @@
               href: service-startup.md
             - name: Richieste di controllo del servizio
               href: service-control-requests.md
-            - name: Controllo di un servizio con SC
+            - name: Controllo di un servizio tramite SC
               href: controlling-a-service-using-sc.md
         - name: Account utente del servizio
           href: service-user-accounts.md
           items:
-            - name: Account LocalService
+            - name: LocalService Account
               href: localservice-account.md
-            - name: Account NetworkService
+            - name: NetworkService Account
               href: networkservice-account.md
-            - name: Account LocalSystem
+            - name: LocalSystem Account
               href: localsystem-account.md
         - name: Servizi interattivi
           href: interactive-services.md
@@ -79,15 +79,15 @@
           href: debugging-a-service.md
         - name: Eventi trigger del servizio
           href: service-trigger-events.md
-        - name: Protezione dei servizi anti-malware
+        - name: Protezione dei servizi antimalware
           href: protecting-anti-malware-services-.md
     - name: Uso dei servizi
       href: using-services.md
       items:
-        - name: Attività del programma del servizio
+        - name: Attività del programma di servizio
           href: service-program-tasks.md
           items:
-            - name: Scrittura della funzione principale di un programma del servizio
+            - name: Scrittura della funzione principale di un programma di servizio
               href: writing-a-service-program-s-main-function.md
             - name: Scrittura di una funzione ServiceMain
               href: writing-a-servicemain-function.md
@@ -122,17 +122,17 @@
               href: svc-cpp.md
             - name: SvcConfig.cpp
               href: svcconfig-cpp.md
-            - name: SvcControl. cpp
+            - name: SvcControl.cpp
               href: svccontrol-cpp.md
-    - name: Riferimento al servizio
+    - name: Informazioni di riferimento sul servizio
       href: service-reference.md
       items:
-        - name: Enumerazioni servizio
+        - name: Enumerazioni di servizi
           href: service-enumerations.md
           items:
             - name: SC_EVENT_TYPE
               href: sc-event-type.md
-        - name: Funzioni di servizio
+        - name: Funzioni del servizio
           href: service-functions.md
           items:
             - name: ChangeServiceConfig
@@ -173,7 +173,7 @@
               href: /windows/desktop/api/Winsvc/nf-winsvc-notifyservicestatuschangea
             - name: OpenSCManager
               href: /windows/desktop/api/Winsvc/nf-winsvc-openscmanagera
-            - name: OpenService
+            - name: Openservice
               href: /windows/desktop/api/Winsvc/nf-winsvc-openservicea
             - name: QueryServiceConfig
               href: /windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga
@@ -199,7 +199,7 @@
               href: /windows/desktop/api/Winsvc/nf-winsvc-setservicestatus
             - name: StartService
               href: /windows/desktop/api/Winsvc/nf-winsvc-startservicea
-            - name: Impossibile eseguire StartServiceCtrlDispatcher
+            - name: StartServiceCtrlDispatcher
               href: /windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera
             - name: SubscribeServiceChangeNotifications
               href: subscribeservicechangenotifications.md
@@ -207,7 +207,7 @@
               href: /windows/desktop/api/Winsvc/nf-winsvc-unlockservicedatabase
             - name: UnsubscribeServiceChangeNotifications
               href: unsubscribeservicechangenotifications.md
-        - name: Strutture di servizi
+        - name: Strutture del servizio
           href: service-structures.md
           items:
             - name: ENUM_SERVICE_STATUS

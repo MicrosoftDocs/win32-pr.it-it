@@ -1,26 +1,26 @@
 ---
-title: Proprietà ShadowBitmap di IMsRdpClientAdvancedSettings
-description: Specifica se devono essere utilizzate le bitmap Shadow.
+title: Proprietà ShadowBitmap IMsRdpClientAdvancedSettings
+description: Specifica se usare bitmap ombreggiate.
 ms.assetid: b329e367-7579-466d-877a-16253f85e5a2
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, Proprietà ShadowBitmap
-- Servizi Desktop remoto Proprietà ShadowBitmap, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, Proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ShadowBitmap
+- Proprietà ShadowBitmap Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ShadowBitmap
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6c43862b498fe5828d2746666c5e414de4c71e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d04e41845bc3c7ebb32b5b6300c5ccd1bc9d1444ef86497e613bc833c220cec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757438"
 ---
-# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>Proprietà IMsRdpClientAdvancedSettings:: ShadowBitmap
+# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>Proprietà IMsRdpClientAdvancedSettings::ShadowBitmap
 
-\[Questa proprietà non è supportata. A partire da Windows Server 2008 e Windows 7, le chiamate a **ShadowBitmap** restituiscono sempre **S \_ false**.\]
+\[Questa proprietà non è supportata. A partire Windows Server 2008 e Windows 7, le chiamate a **ShadowBitmap** restituiscono **sempre S \_ FALSE.**\]
 
-Specifica se devono essere utilizzate le bitmap Shadow.
+Specifica se usare bitmap ombreggiate.
 
-Le bitmap Shadow sono sempre disabilitate in modalità schermo intero, pertanto questa proprietà non ha alcun effetto in modalità schermo intero.
+Le bitmap ombreggiate sono sempre disabilitate in modalità schermo intero, pertanto questa proprietà non ha alcun effetto in modalità schermo intero.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -88,11 +88,11 @@ HRESULT get_ShadowBitmap(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la funzionalità o un valore diverso da zero per abilitare la funzionalità. La disabilitazione di questa funzionalità consente in genere di migliorare le prestazioni, ma può generare artefatti quando si disegnano schermate.
+Impostare questo parametro su 0 per disabilitare la funzionalità o su un valore diverso da zero per abilitarla. La disabilitazione di questa funzionalità in genere migliora le prestazioni, ma può comportare artefatti durante il disegno delle schermate.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
