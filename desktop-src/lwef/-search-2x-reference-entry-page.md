@@ -14,7 +14,7 @@ ms.locfileid: "119451090"
 # <a name="wds-2x-reference"></a>Informazioni di riferimento su WDS 2.x
 
 > [!NOTE]
-> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive, usare [Windows ricerca.](../search/-search-3x-wds-overview.md)
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows ricerca.](../search/-search-3x-wds-overview.md)
 
 
 [Costanti ed enumerazioni di WDS 2.x](-search-2x-constants-and-enumerations-entry-page.md)

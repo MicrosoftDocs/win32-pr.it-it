@@ -1,10 +1,10 @@
 ---
-description: Ottiene l'indirizzo dell'endpoint di un motore remoto.
+description: Ottiene l'indirizzo endpoint di un motore remoto.
 MS-HAID: vspixengine.IPeerToPeerEngine\_GetPlaybackEndpoint\_BOOL\_BSTR\_ptr\_BSTR\_ptr\_RemotingVersion\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPeerToPeerEngine:: GetPlaybackEndpoint'
+title: Metodo IPeerToPeerEngine::GetPlaybackEndpoint
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 3B391048-E7F7-4DA7-96A3-05875B170DCA
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f6ee25dbd456086227e88fcb8bf7708a39e26eb7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6b8d099762da58cefaaa208026c9b60fc5103f4e6b2551ba679da83a76f2f8bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094791"
 ---
-# <a name="span-idvspixengineipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptrspanipeertopeerenginegetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptr"></span>Metodo IPeerToPeerEngine:: GetPlaybackEndpoint
+# <a name="span-idvspixengineipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptrspanipeertopeerenginegetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptr"></span>Metodo IPeerToPeerEngine::GetPlaybackEndpoint
 
-Ottiene l'indirizzo dell'endpoint di un motore remoto.
+Ottiene l'indirizzo endpoint di un motore remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ HRESULT GetPlaybackEndpoint(
 ## <a name="parameters"></a>Parametri
 
 *bUseAuthentication*   
-true se il motore remoto utilizza l'autenticazione di. in caso contrario, false.
+true se il motore remoto utilizza l'autenticazione; in caso contrario, false.
 
 *pEndpoint*   
-Al ritorno, una stringa COM contenente l'indirizzo dell'endpoint del computer di riproduzione remoto.
+Al ritorno, una stringa COM contenente l'indirizzo endpoint del computer di riproduzione remota.
 
 *sessionKey*   
-Al ritorno, una stringa COM contenente la chiave di sessione utilizzata per la crittografia.
+In caso di restituzione, stringa COM contenente la chiave di sessione utilizzata per la crittografia.
 
 *pRemoteVersion*   
 Al ritorno, la versione del motore remoto.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

@@ -98,7 +98,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Is-Deleted**](a-isdeleted.md)                                                            | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Is-Member-Of-DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Titolare di privilegi is**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Is-Recycled**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                               | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Oggetti gestiti**](a-managedobjects.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>  |
@@ -154,7 +154,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                                   | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Vero      | [**In alto**](c-top.md)<br/>  |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Categoria di oggetti**](a-objectcategory.md)                                                  | Vero      | [**In alto**](c-top.md)<br/>  |
@@ -192,7 +192,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Oggetti noti**](a-wellknownobjects.md)                                             | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Quando viene modificato**](a-whenchanged.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Quando creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Quando viene creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>  |
 

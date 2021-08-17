@@ -1,12 +1,12 @@
 ---
-title: Proprietà TargetName di ITsSbSession
+title: Proprietà ITsSbSession TargetName
 description: Recupera il nome della destinazione in cui è stata creata la sessione.
 ms.assetid: 5ab4cdd6-9f5f-4253-9b80-6cc35cff8b79
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà TargetName
-- Servizi Desktop remoto proprietà TargetName, interfaccia ITsSbSession
-- Interfaccia ITsSbSession Servizi Desktop remoto, proprietà TargetName
+- Proprietà TargetName Servizi Desktop remoto
+- Proprietà TargetName Servizi Desktop remoto,interfaccia ITsSbSession
+- Interfaccia ITsSbSession Servizi Desktop remoto proprietà , TargetName
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc703a32faedd250115da0b95215e620a8c15e19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cfbc1e26aa4bf55a59b6405921d49e6b1aafa14e63a1e487caca9a7c036b1524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138314"
 ---
-# <a name="itssbsessiontargetname-property"></a>Proprietà ITsSbSession:: TargetName
+# <a name="itssbsessiontargetname-property"></a>Proprietà ITsSbSession::TargetName
 
 Recupera il nome della destinazione in cui è stata creata la sessione.
 
@@ -44,7 +44,7 @@ HRESULT get_TargetName(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a una variabile **BSTR** che riceve il nome della destinazione in cui è stata creata la sessione.
+Puntatore a una **variabile BSTR** che riceve il nome della destinazione in cui è stata creata la sessione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Puntatore a una variabile **BSTR** che riceve il nome della destinazione in cui 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                            |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

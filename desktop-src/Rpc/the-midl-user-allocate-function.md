@@ -11,25 +11,25 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118924250"
 ---
-# <a name="the-midl_user_allocate-function"></a>Funzione di allocazione \_ dell'utente midl \_
+# <a name="the-midl_user_allocate-function"></a>Funzione di allocazione \_ utente \_ midl
 
-La **funzione midl \_ user \_ allocate** è una procedura che deve essere fornita dagli sviluppatori di applicazioni RPC. Alloca memoria per gli stub RPC e le routine della libreria. La **funzione di \_ allocazione \_ dell'utente midl** deve corrispondere al prototipo seguente:
+La **funzione midl \_ user \_ allocate** è una procedura che deve essere fornita dagli sviluppatori di applicazioni RPC. Alloca memoria per gli stub RPC e le routine della libreria. La **funzione di \_ \_ allocazione utente midl** deve corrispondere al prototipo seguente:
 
 ``` syntax
 void __RPC_FAR * __RPC_USER midl_user_allocate (size_t cBytes);
 ```
 
-Il *parametro cBytes* specifica il numero di byte da allocare. Sia le applicazioni client che le applicazioni server devono implementare la funzione **midl \_ user \_ allocate,** a meno che la compilazione non sia in modalità di compatibilità OSF (/osf). Le applicazioni e gli stub generati chiamano **l'utente midl \_ \_ allocare** direttamente o indirettamente per gestire gli oggetti allocati. Esempio:
+Il *parametro cBytes* specifica il numero di byte da allocare. Sia le applicazioni client che le applicazioni server devono implementare la funzione di allocazione utente **midl, \_ \_** a meno che non si esezioni in modalità di compatibilità OSF (/osf). Le applicazioni e gli stub generati chiamano **l'utente midl \_ \_ allocare** direttamente o indirettamente per gestire gli oggetti allocati. Esempio:
 
 -   Le applicazioni client e server chiamano **midl \_ user \_ allocate** per allocare memoria per l'applicazione, ad esempio quando si crea un nuovo nodo in un albero o in un elenco collegato.
--   Lo stub del server chiama **midl \_ user allocate \_ durante** l'unmarsshaling dei dati nello spazio degli indirizzi del server.
--   Lo stub client chiama **midl \_ user \_ allocate** quando si esegue l'unmarshaling dei dati dal server a cui fa riferimento un \[ puntatore \] out. Si noti che per in , out e puntatori univoci, lo stub del client chiama midl user allocate solo se il valore del puntatore univoco è Null nell'input e viene modificato in un valore non Null durante la \[ \] \[ \] \[ \] **\_ \_** \[ \] chiamata. Se il \[ \] puntatore univoco è diverso da Null nell'input, lo stub del client scrive i dati associati nella memoria esistente.
+-   Lo stub del server chiama **l'allocazione utente midl \_ \_** durante l'unmarshaling dei dati nello spazio degli indirizzi del server.
+-   Lo stub client chiama **l'allocazione \_ \_ utente midl** durante l'annullamento delmarsaling dei dati dal server a cui fa riferimento un \[ puntatore \] out. Si noti che per i puntatori in , out e \[ \] \[ univoci, lo stub client chiama \] \[ \] **\_ \_ l'allocazione** utente midl \[ solo se il valore univoco del puntatore è \] Null nell'input e viene modificato in un valore non Null durante la chiamata. Se il \[ \] puntatore univoco non è Null nell'input, lo stub client scrive i dati associati nella memoria esistente.
 
-Se **midl \_ user allocate \_ non** riesce ad allocare memoria, deve restituire un puntatore Null.
+Se **midl \_ user allocate \_ non** riesce a allocare memoria, deve restituire un puntatore Null.
 
 La **funzione midl \_ user \_ allocate** deve restituire un puntatore allineato a 8 byte.
 
-Ad esempio, i programmi di esempio forniti con Platform Software Development Kit (SDK) implementano l'allocazione **utente midl \_ \_** in termini di funzione C [**malloc**](pointers-and-memory-allocation.md):
+Ad esempio, i programmi di esempio forniti con Platform Software Development Kit (SDK) implementano l'allocazione utente **midl \_ \_** in termini di funzione C [**malloc**](pointers-and-memory-allocation.md):
 
 
 ```C++
@@ -42,7 +42,7 @@ void __RPC_FAR * __RPC_USER midl_user_allocate(size_t cBytes)
 
 
 > [!Note]  
-> Se il pacchetto RpcSs è abilitato( ad esempio, come risultato dell'uso dell'attributo \[ [**enable \_ allocate),**](/windows/desktop/Midl/enable-allocate) usare \] [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) per allocare memoria sul lato server. Per altre informazioni \[ **sull'abilitazione \_ dell'allocazione,** \] vedere [MIDL Reference (Informazioni di riferimento su MIDL).](/windows/desktop/Midl/midl-language-reference)
+> Se il pacchetto RpcSs è abilitato(ad esempio, come risultato dell'uso dell'attributo \[ [**\_ enable allocate),**](/windows/desktop/Midl/enable-allocate) usare \] [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) per allocare memoria sul lato server. Per altre informazioni \[ **sull'abilitazione \_ dell'allocazione,** \] vedere [MidL Reference](/windows/desktop/Midl/midl-language-reference).
 
  
 

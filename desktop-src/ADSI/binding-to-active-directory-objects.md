@@ -1,44 +1,44 @@
 ---
 title: Associazione a oggetti Active Directory
-description: Prima di continuare con questo scenario, è necessario comprendere in che modo gli oggetti ADSI vengono denominati in Active Directory e come associarli. Il binding di un oggetto ADSI connette l'oggetto al servizio directory e consente di accedere ai metodi dell'oggetto.
+description: Prima di continuare con questo scenario, è necessario comprendere come vengono denominati gli oggetti ADSI in Active Directory e come associarli. L'associazione di un oggetto ADSI connette l'oggetto al servizio directory e consente di accedere ai metodi dell'oggetto.
 ms.assetid: 0d8d8f1c-786f-4d87-977c-91a167bcf118
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fa54f2015e0d5663db2917eb27b250f39eb4c0c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a0b473c9e3370c3d1739fc904b8c6409d756f62b5c358db200c3de821f55349f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962260"
 ---
 # <a name="binding-to-active-directory-objects"></a>Associazione a oggetti Active Directory
 
-Prima di continuare con questo scenario, è necessario comprendere in che modo gli oggetti ADSI vengono denominati in Active Directory e come associarli. Il binding di un oggetto ADSI connette l'oggetto al servizio directory e consente di accedere ai metodi dell'oggetto.
+Prima di continuare con questo scenario, è necessario comprendere come vengono denominati gli oggetti ADSI in Active Directory e come associarli. L'associazione di un oggetto ADSI connette l'oggetto al servizio directory e consente di accedere ai metodi dell'oggetto.
 
 ## <a name="adspath"></a>ADsPath
 
-Un oggetto ADSI viene identificato in modo univoco dalla relativa stringa di associazione, definita anche ADsPath. Un ADsPath è una combinazione di un identificatore a livello di codice (progID) del provider ADSI e del nome distinto (DN) dell'oggetto.
+Un oggetto ADSI viene identificato in modo univoco dalla relativa stringa di associazione, detta anche ADsPath. ADsPath è una combinazione di un identificatore programmatico (progID) del provider ADSI e del nome distinto (DN) dell'oggetto.
 
-Ecco il formato di un ADsPath:
+Ecco il formato di ADsPath:
 
 "progID://DN"
 
 -   pogID: identificatore a livello di codice del provider ADSI, ad esempio LDAP o WinNT.
 
--   ://-separa il progID dal DN.
+-   :// : separa il progID dal DN.
 
--   DN: nome distinto dell'oggetto ADSI, ovvero il percorso completo dell'oggetto, in cui il percorso è costituito da nomi distinti relativi (RDNs).
+-   DN: nome distinto dell'oggetto ADSI, ovvero il percorso completo dell'oggetto, in cui il percorso è costituito da nomi distinti relativi (RDN).
 
-Un RDN è il nome dell'oggetto senza il percorso ed è univoco dagli oggetti di pari livello. Un RDN è costituito da un ID e un valore di attributo, ad esempio "DC = Fabrikam", dove DC è l'attributo e Fabrikam è il valore. Il controller di dominio è un ID di attributo RDN che corrisponde al componente di dominio.
+Un RDN è il nome dell'oggetto senza il percorso ed è univoco dai relativi oggetti di pari livello. Un RDN è costituito da un ID attributo e un valore, ad esempio "DC=Fabrikam", dove DC è l'attributo e Fabrikam è il valore. DC è un ID attributo RDN che sta per componente di dominio.
 
-Di seguito è riportato un esempio di ADsPath:
+Ecco un esempio di ADsPath:
 
-"LDAP://DC = Fabrikam, DC = com"
+"LDAP://DC=Fabrikam,DC=Com"
 
 ## <a name="binding-the-object"></a>Associazione dell'oggetto
 
-Ecco come è possibile associare l'oggetto dominio in questo scenario:
+Ecco come associare l'oggetto dominio in questo scenario:
 
 
 ```VB
@@ -47,9 +47,9 @@ Set dom = GetObject("LDAP://DC=Fabrikam,DC=Com")
 
 
 
-Quando si esegue questo esempio di codice, ADSI usa il DN per determinare gli oggetti ADSI da associare. Dopo aver associato tali oggetti, è possibile accedere ai relativi metodi. Nell'esempio di codice precedente viene associato un oggetto di dominio a [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) e [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer). È ora possibile usare metodi su tali interfacce, ad esempio [**Get**](/windows/desktop/api/Iads/nf-iads-iads-get), [**put**](/windows/desktop/api/Iads/nf-iads-iads-put), [**create**](/windows/desktop/api/Iads/nf-iads-iadscontainer-create), [**Delete**](/windows/desktop/api/Iads/nf-iads-iadscontainer-delete)e [**MoveHere**](/windows/desktop/api/Iads/nf-iads-iadscontainer-movehere).
+Quando si esegue questo esempio di codice, ADSI usa il DN per determinare gli oggetti ADSI da associare. Dopo che ADSI ha associato questi oggetti, è possibile accedere ai relativi metodi. L'esempio di codice precedente associa un oggetto dominio a [**IAD**](/windows/desktop/api/Iads/nn-iads-iads) [**e IADsContainer.**](/windows/desktop/api/Iads/nn-iads-iadscontainer) È ora possibile usare metodi su tali interfacce, ad esempio [**Get,**](/windows/desktop/api/Iads/nf-iads-iads-get) [**Put,**](/windows/desktop/api/Iads/nf-iads-iads-put) [**Create,**](/windows/desktop/api/Iads/nf-iads-iadscontainer-create) [**Delete**](/windows/desktop/api/Iads/nf-iads-iadscontainer-delete)e [**MoveHere.**](/windows/desktop/api/Iads/nf-iads-iadscontainer-movehere)
 
-Dopo aver associato un oggetto di dominio, è possibile stampare alcuni degli attributi:
+Dopo aver associato un oggetto di dominio, è possibile stamparne alcuni attributi:
 
 
 ```VB
@@ -59,7 +59,7 @@ Debug.Print dom.Get("whenCreated")
 
 
 
-Per ulteriori informazioni su ADsPath, vedere [Binding String](binding-string.md). Per ulteriori informazioni sull'associazione, vedere [associazione a un oggetto ADSI](binding-to-an-adsi-object.md).
+Per altre informazioni su ADsPath, vedere [Stringa di associazione.](binding-string.md) Per altre informazioni sull'associazione, vedere [Associazione a un oggetto ADSI.](binding-to-an-adsi-object.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -68,9 +68,9 @@ Per ulteriori informazioni su ADsPath, vedere [Binding String](binding-string.md
 [Creazione di un'unità organizzativa](creating-an-organizational-unit.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

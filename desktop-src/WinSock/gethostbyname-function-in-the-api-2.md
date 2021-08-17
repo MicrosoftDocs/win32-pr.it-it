@@ -1,24 +1,24 @@
 ---
-description: Funzione gethostbyname nell'API Winsock.
+description: Funzione Gethostbyname nell'API Winsock.
 ms.assetid: 015637ed-7a3e-49eb-96ef-8fe82d2902f5
 title: Funzione gethostbyname nell'API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3881897a0c971c48ca9a02e6205ec1cae0476f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a63bf7884cd170721de9b7d5009ed53c7bcb60bb36869986862f5e81e03215b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132304"
 ---
 # <a name="gethostbyname-function-in-the-api"></a>Funzione gethostbyname nell'API
 
-La funzione [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) usa la funzione [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) per eseguire una query su SVCID \_ inet \_ HOSTADDRBYNAME come GUID della classe del servizio. Il nome host viene fornito nel membro **lpszServiceInstanceName** della struttura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) passato alla funzione **WSALookupServiceBegin** . Il \_32.dll WS2 specifica il \_ BLOB restituito LUP \_ e il provider del servizio nome inserisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) nel BLOB (usando gli offset invece dei puntatori come descritto in precedenza). I provider di servizi dei nomi devono rispettare \_ anche questi altri flag restituiti LUP \_ \* .
+La [**funzione gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) usa la funzione [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) per eseguire una query su SVCID \_ INET \_ HOSTADDRBYNAME come GUID della classe del servizio. Il nome host viene fornito nel membro **lpszServiceInstanceName** nella struttura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) passata alla **funzione WSALookupServiceBegin.** L'32.dll Ws2 specifica LUP RETURN BLOB e il provider di servizi dei nomi inserisce una struttura HOSTENT nel BLOB (usando offset anziché puntatori come descritto \_ \_ in \_ precedenza). [](/windows/desktop/api/winsock/ns-winsock-hostent) I provider di servizi dei nomi devono rispettare anche questi altri \_ flag LUP \_ \* RETURN.
 
 | Flag              | Descrizione                                                                                                                                                                                                                                            |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_nome restituito \_ LUP | Restituisce il membro del **\_ nome h** dalla struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) in *lpszServiceInstanceName*.                                                                                                                                           |
-| LUP \_ restituire \_ addr | Restituisce le informazioni di indirizzamento da [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) nelle strutture delle [**\_ informazioni di CSADDR**](/windows/win32/api/ws2def/ns-ws2def-csaddr_info) . il valore predefinito per le informazioni sulla porta è zero. Si noti che questa routine non risolve i nomi host che sono costituiti da un indirizzo IPv4 punteggiato. |
+| NOME \_ RESTITUITO \_ LUP | Restituisce il **membro \_ h name** dalla struttura [**HOSTENT**](/windows/desktop/api/winsock/ns-winsock-hostent) in *lpszServiceInstanceName*.                                                                                                                                           |
+| LUP \_ RETURN \_ ADDR | Restituisce informazioni di indirizzamento da [**HOSTENT**](/windows/desktop/api/winsock/ns-winsock-hostent) nelle [**strutture CSADDR \_ INFO,**](/windows/win32/api/ws2def/ns-ws2def-csaddr_info) le informazioni sulla porta vengono visualizzate per impostazione predefinita su zero. Si noti che questa routine non risolve i nomi host costituiti da un indirizzo IPv4 punteggiato. |
 
 
 
@@ -28,7 +28,7 @@ La funzione [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostb
 
 <dl> <dt>
 
-[Risoluzione dei nomi compatibile per TCP/IP nell'API Windows Sockets 1,1](compatible-name-resolution-for-tcp-ip-in-the-windows-sockets-1-1-api-2.md)
+[Risoluzione dei nomi compatibile per TCP/IP nell'API Windows Sockets 1.1](compatible-name-resolution-for-tcp-ip-in-the-windows-sockets-1-1-api-2.md)
 </dt> <dt>
 
 [Risoluzione dei nomi indipendente dal protocollo](protocol-independent-name-resolution-2.md)

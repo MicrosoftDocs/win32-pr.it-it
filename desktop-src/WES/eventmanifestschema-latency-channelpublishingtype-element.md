@@ -1,9 +1,9 @@
 ---
-title: Elemento latence (ChannelPublishingType)
-description: Tempo di attesa prima dello scaricamento dei buffer, in millisecondi.
+title: Elemento latency (ChannelPublishingType)
+description: Tempo di attesa prima dello scaricamento dei buffer, espresso in millisecondi.
 ms.assetid: 7ca6a0f8-3d4c-41e8-a998-0e34d2df4a2f
 keywords:
-- EventLog elemento latenza
+- Elemento latency EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0d48a98f2f319ec08d2fc1325728f798c5ec96e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8dcb2e7469f9a6b2171a4427128640bb3c3681421d946757fb52442b45363616
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136404"
 ---
-# <a name="latency-channelpublishingtype-element"></a>Elemento latence (ChannelPublishingType)
+# <a name="latency-channelpublishingtype-element"></a>Elemento latency (ChannelPublishingType)
 
-Tempo di attesa prima dello scaricamento dei buffer, in millisecondi.
+Tempo di attesa prima dello scaricamento dei buffer, espresso in millisecondi.
 
 ``` syntax
 <xs:element name="latency"
@@ -30,7 +30,7 @@ Tempo di attesa prima dello scaricamento dei buffer, in millisecondi.
  />
 ```
 
-L'elemento **latenza** è definito dal tipo complesso [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+**L'elemento latency** è definito dal tipo complesso [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **latenza** è definito dal tipo complesso [**ChannelPublishingType**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **latenza** è definito dal tipo complesso [**ChannelPublishingType**
 **Elemento padre**
 </dt> <dt>
 
-[**pubblicazione (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
+[**publishing (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
 </dt> </dl>
 
  

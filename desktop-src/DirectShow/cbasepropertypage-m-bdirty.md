@@ -1,7 +1,7 @@
 ---
-description: Il \_ flag m bDirty indica se una o più proprietà sono state modificate. Impostare questo flag su TRUE se l'utente modifica le proprietà tramite i controlli della finestra di dialogo.
+description: Il \_ flag m bDirty indica se una delle proprietà è stata modificata. Impostare questo flag su TRUE se l'utente modifica le proprietà tramite i controlli della finestra di dialogo.
 ms.assetid: 7455a45b-4d6d-410a-aed6-7003d4ed2183
-title: 'Membro CBasePropertyPage:: m_bDirty (Cprop. h)'
+title: Membro CBasePropertyPage::m_bDirty (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85e3481c66925b667e8791328c84afeb18fe90e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd6737b7317c5bd86e756bfbd45d9d69e461f92ecc007d739203519170ee57f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955040"
 ---
-# <a name="cbasepropertypagem_bdirty-member"></a>Membro bDirty di CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_bdirty-member"></a>Membro CBasePropertyPage::m \_ bDirty
 
-Il flag **m \_ bDirty** indica se una o più proprietà sono state modificate. Impostare questo flag su **true** se l'utente modifica le proprietà tramite i controlli della finestra di dialogo.
+Il flag **\_ m bDirty** indica se una delle proprietà è stata modificata. Impostare questo flag su **TRUE se** l'utente modifica le proprietà tramite i controlli della finestra di dialogo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bDirty;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

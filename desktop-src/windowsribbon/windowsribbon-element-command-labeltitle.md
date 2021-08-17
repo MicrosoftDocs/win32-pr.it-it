@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. LabelTitle
+title: Command.LabelTitle - proprietà
 description: Rappresenta il titolo di un'etichetta.
 ms.assetid: 97378ec3-7988-4e39-9cf5-c382b246c5c9
 keywords:
-- Barra multifunzione di Windows Command. LabelTitle
+- Proprietà Command.LabelTitle Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6d6c72ddd60cca63834fdcf21cf8f8b726ad22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c44995d3f17b165c38f9fe7490a33e5d140c8d2b375d5d6b625bb00e3228b21e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810791"
 ---
-# <a name="commandlabeltitle-property"></a>Proprietà Command. LabelTitle
+# <a name="commandlabeltitle-property"></a>Command.LabelTitle - proprietà
 
 Rappresenta il titolo di un'etichetta.
 
@@ -61,25 +61,25 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-**Command. LabelTitle** può contenere un valore di tipo *xs: String* vincolato a qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.
+**Command.LabelTitle** può contenere un valore di tipo *xs:string* vincolato a qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.
 
 > [!Note]  
-> Usare il riferimento al carattere XML UCS (Universal Character Set) `&#xA;` per specificare un'interruzioni di riga.
+> Usare il riferimento ai caratteri XML del set di caratteri universali (UCS) `&#xA;` per specificare un'interruzione di riga.
 
  
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
-Se non viene specificato alcun valore per **Command. LabelTitle**, l'elemento figlio [**stringa**](windowsribbon-element-string.md) è obbligatorio.
+Se non viene specificato alcun valore per **Command.LabelTitle**, [**l'elemento**](windowsribbon-element-string.md) figlio String è obbligatorio.
 
 > [!Note]  
-> Se **Command. LabelTitle** contiene sia un elemento Value che un elemento figlio [**String**](windowsribbon-element-string.md) , la **stringa** avrà la precedenza.
+> Se **Command.LabelTitle contiene** sia un valore che un elemento figlio [**String,**](windowsribbon-element-string.md) **String** ha la precedenza.
 
  
 
-**Command. LabelTitle** supporta solo l'allineamento a sinistra.
+**Command.LabelTitle** supporta solo l'allineamento a sinistra.
 
-Se un comando viene esposto tramite una voce di menu e il valore di **Command. LabelTitle** o dell' [ \_ \_ etichetta pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-label.md) contiene una lettera preceduta da una e commerciale, come illustrato nell'esempio seguente, questa lettera viene considerata come un tasto di scelta rapida e un tasto di scelta rapida per tale comando dal framework della barra multifunzione.
+Se un comando viene esposto tramite una voce di menu e il valore di **Command.LabelTitle** o [UI \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md) contiene una lettera preceduta da una e commerciale, come illustrato nell'esempio seguente, questa lettera viene considerata sia come suggerimento tasto di scelta che come tasto di scelta rapida per tale comando dal framework della barra multifunzione.
 
 
 ```XML
@@ -92,7 +92,7 @@ Se un comando viene esposto tramite una voce di menu e il valore di **Command. L
 
 
 
-Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della designazione del carattere speciale con una doppia e commerciale ( `&&` ), come illustrato nell'esempio seguente.
+Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della designazione del carattere speciale con una doppia e commerciale ( ) come `&&` illustrato nell'esempio seguente.
 
 
 ```XML
@@ -107,7 +107,7 @@ Per visualizzare una e commerciale in un'etichetta, eseguire l'escape della desi
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](windowsribbon-element-command.md) con una Dichiarazione **Command. LabelTitle** .
+L'esempio seguente illustra il markup per [**un elemento Command**](windowsribbon-element-command.md) con una dichiarazione **Command.LabelTitle.**
 
 
 ```XML
@@ -137,8 +137,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -146,7 +146,7 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 <dl> <dt>
 
-[\_Etichetta pkey dell'interfaccia utente \_](windowsribbon-reference-properties-uipkey-label.md)
+[Etichetta \_ PKEY \_ dell'interfaccia utente](windowsribbon-reference-properties-uipkey-label.md)
 </dt> </dl>
 
  

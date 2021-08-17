@@ -1,5 +1,5 @@
 ---
-description: Recupera le informazioni relative alle applicazioni in esecuzione.
+description: Recupera informazioni relative all'esecuzione di applicazioni.
 ms.assetid: 148e42aa-e99e-4fa2-8b74-a7ebf82b99d0
 title: Raccolta ApplicationInstances
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 56680a81cc564466dc3586bf0381cf4db97f914b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 957fe3fa556a3e41e2484116ff2c9242fd63efa1469a4a6040f31aa04a3627e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129383"
 ---
 # <a name="applicationinstances-collection"></a>Raccolta ApplicationInstances
 
-Recupera le informazioni relative alle applicazioni in esecuzione.
+Recupera informazioni relative all'esecuzione di applicazioni.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **ApplicationInstances** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta ApplicationInstances** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -44,13 +44,13 @@ La raccolta **ApplicationInstances** eredita dall'interfaccia [**IUnknown**](/wi
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [Applicazione](#applicationinstances-collection)
 -   [HasRecycled](#hasrecycled)
 -   [InstanceID](#instanceid)
 -   [IsPaused](#ispaused)
--   [PartitionID](#partitionid)
+-   [Partitionid](#partitionid)
 -   [ProcessID](#processid)
 
 ### <a name="application"></a>Applicazione
@@ -62,7 +62,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | ID per l'applicazione in esecuzione. |
 | Access         | ReadOnly                            |
 | Type           | string                              |
-| Predefinito        | N/D                                 |
+| Predefinito        | N/A                                 |
 | Sistema minimo | Windows XP                          |
 
 
@@ -94,7 +94,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Identificatore univoco globale per l'istanza dell'applicazione. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                                                                                            |
 | Type           | string                                                                                                                                                                                                                              |
-| Predefinito        | N/D                                                                                                                                                                                                                                 |
+| Predefinito        | N/A                                                                                                                                                                                                                                 |
 | Sistema minimo | Windows XP                                                                                                                                                                                                                          |
 
 
@@ -117,16 +117,16 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
  
 
-### <a name="partitionid"></a>PartitionID
+### <a name="partitionid"></a>Partitionid
 
 
 
 | Voce | Valore |
 |----------------|-------------------------------------------------|
-| Descrizione    | ID di partizione usato dall'applicazione. |
+| Descrizione    | ID di partizione utilizzato dall'applicazione. |
 | Access         | ReadOnly                                        |
 | Type           | string                                          |
-| Predefinito        | N/D                                             |
+| Predefinito        | N/A                                             |
 | Sistema minimo | Windows XP                                      |
 
 
@@ -139,10 +139,10 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|---------------------------------------------|
-| Descrizione    | ID del processo dell'istanza dell'applicazione. |
+| Descrizione    | ID processo dell'istanza dell'applicazione. |
 | Access         | ReadOnly                                    |
 | Type           | string                                      |
-| Predefinito        | N/D                                         |
+| Predefinito        | N/A                                         |
 | Sistema minimo | Windows XP                                  |
 
 

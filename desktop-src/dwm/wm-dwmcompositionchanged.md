@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DWMCOMPOSITIONCHANGED (winuser. h)
-description: Informa tutte le finestre di primo livello che Gestione finestre desktop la composizione (DWM) è stata abilitata o disabilitata.
+title: WM_DWMCOMPOSITIONCHANGED messaggio (Winuser.h)
+description: Informa tutte le finestre di primo livello che Gestione finestre desktop (DWM) è stata abilitata o disabilitata.
 ms.assetid: VS|winui|~\winui\windowsuserinterface\windowing\windows\windowreference\windowmessages\wm_dwmcompositionchanged.htm
 keywords:
-- Messaggio WM_DWMCOMPOSITIONCHANGED Gestione finestre desktop
+- WM_DWMCOMPOSITIONCHANGED messaggio Gestione finestre desktop
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ec25f740e1a5d002edec2c1faeaaf068190583c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9973c69e114882041fc300ca6dee9c96efe121ee7bbf10875ed58ed3c269772c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118795"
 ---
-# <a name="wm_dwmcompositionchanged-message"></a>\_Messaggio DWMCOMPOSITIONCHANGED WM
+# <a name="wm_dwmcompositionchanged-message"></a>Messaggio \_ WM DWMCOMPOSITIONCHANGED
 
-Informa tutte le finestre di primo livello che Gestione finestre desktop la composizione (DWM) è stata abilitata o disabilitata.
+Informa tutte le finestre di primo livello che Gestione finestre desktop (DWM) è stata abilitata o disabilitata.
 
 > [!Note]  
-> A partire da Windows 8, la composizione di DWM è sempre abilitata, quindi questo messaggio non viene inviato indipendentemente dalle modifiche della modalità video.
+> Al Windows 8, la composizione DWM è sempre abilitata, quindi questo messaggio non viene inviato indipendentemente dalle modifiche della modalità video.
 
  
 
@@ -50,13 +50,13 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-La funzione [**DwmIsCompositionEnabled**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmiscompositionenabled) può essere utilizzata per determinare lo stato di composizione corrente.
+La [**funzione DwmIsCompositionEnabled**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmiscompositionenabled) può essere usata per determinare lo stato di composizione corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ La funzione [**DwmIsCompositionEnabled**](/windows/desktop/api/Dwmapi/nf-dwmapi-
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

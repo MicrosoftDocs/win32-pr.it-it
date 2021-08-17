@@ -1,5 +1,5 @@
 ---
-title: Metodo IVMHardDiskConnection SetBusLocation (VPCCOMInterfaces. h)
+title: Metodo IVMHardDiskConnection SetBusLocation (VPCCOMInterfaces.h)
 description: Imposta la posizione del bus a cui è collegato il disco rigido.
 ms.assetid: 0aa303ae-d8bf-4d38-94ab-bdbb4e744c7b
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61de0f595bc06d497e7f5913da9173ccb3bf1ad2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8f2ff59b0318c321d1fb5ce75bac8c5604c5e96474c52565732ec3794b4aab0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974351"
 ---
-# <a name="ivmharddiskconnectionsetbuslocation-method"></a>Metodo IVMHardDiskConnection:: SetBusLocation
+# <a name="ivmharddiskconnectionsetbuslocation-method"></a>Metodo IVMHardDiskConnection::SetBusLocation
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Imposta la posizione del bus a cui è collegato il disco rigido.
 
@@ -45,14 +45,14 @@ HRESULT SetBusLocation(
 
 <dl> <dt>
 
-*vmBusNumber* \[ in\]
+*vmBusNumber* \[ Pollici\]
 </dt> <dd>
 
 Numero del bus da usare.
 
 </dd> <dt>
 
-*vmDeviceNumber* \[ in\]
+*vmDeviceNumber* \[ Pollici\]
 </dt> <dd>
 
 Numero di dispositivo da usare.
@@ -68,12 +68,12 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                               | Descrizione                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                     | L'operazione è stata completata.<br/>                                                                    |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>                    | Il percorso del bus specificato non è valido.<br/>                                                         |
-| <dl> <dt>**Macchina virtuale \_ \_Macchina virtuale di e \_ in esecuzione \_ o \_ salvata**</dt> <dt>0xA004020B</dt> </dl>    | Non è stato possibile impostare il percorso del bus perché lo stato della macchina virtuale è in esecuzione o salvato.<br/>    |
-| <dl> <dt>**Macchina virtuale \_ E \_ la \_ \_ loc \_ del bus di unità in \_ use**</dt> <dt>0xA00400503</dt> </dl> | Non è stato possibile impostare il percorso del bus perché un altro dispositivo è attualmente collegato a questo percorso.<br/> |
-| <dl> <dt>**Macchina virtuale \_ Unità E 0xA0040502 \_ \_ non valide**</dt> <dt></dt> </dl>            | L'unità corrente non è valida.<br/>                                                                  |
-| <dl> <dt>**Macchina virtuale \_ 0xA0040207 E \_ VM \_ sconosciute**</dt> <dt></dt> </dl>               | La macchina virtuale corrente non è valida.<br/>                                                        |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl>               | Si è verificato un errore imprevisto.<br/>                                                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                    | La posizione del bus specificata non è valida.<br/>                                                         |
+| <dl> <dt>**Macchina virtuale \_ E \_ MACCHINA VIRTUALE IN ESECUZIONE O SALVATA \_ \_ \_ 0XA004020B**</dt> <dt></dt> </dl>    | Non è stato possibile impostare la posizione del bus perché la macchina virtuale è in esecuzione o è in stato salvato.<br/>    |
+| <dl> <dt>**Macchina virtuale \_ E \_ UNITÀ \_ BUS \_ LOC IN USO \_ \_ 0XA00400503**</dt> <dt></dt> </dl> | Non è stato possibile impostare la posizione del bus perché un altro dispositivo è attualmente collegato a questa posizione.<br/> |
+| <dl> <dt>**Macchina virtuale \_ E \_ UNITÀ \_ NON VALIDA**</dt> <dt>0xA0040502</dt> </dl>            | L'unità corrente non è valida.<br/>                                                                  |
+| <dl> <dt>**Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA**</dt> <dt>0xA0040207</dt> </dl>               | La macchina virtuale corrente non è valida.<br/>                                                        |
+| <dl> <dt>**DISP \_ E \_ ECCEZIONE**</dt> <dt>0x80020009</dt> </dl>               | Si è verificato un errore imprevisto.<br/>                                                                |
 
 
 
@@ -85,12 +85,12 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHardDiskconnection è definito come aefa36a5-463A-46AE-9E6C-a1fb4e12e671<br/>      |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMHardDiskconnection è definito come aefa36a5-463a-46ae-9e6c-a1fb4e12e671<br/>      |
 
 
 

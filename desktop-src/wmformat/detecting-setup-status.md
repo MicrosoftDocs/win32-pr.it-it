@@ -1,44 +1,44 @@
 ---
-title: Rilevamento dello stato di installazione
-description: Rilevamento dello stato di installazione
+title: Rilevamento dello stato dell'installazione
+description: Rilevamento dello stato dell'installazione
 ms.assetid: d502a5d6-798b-4269-aef3-1412fc379819
 keywords:
 - Windows Media Format SDK, ridistribuzione software
-- ASF (Advanced Systems Format), ridistribuzione del software
-- ASF (formato avanzato dei sistemi), ridistribuzione del software
+- Advanced Systems Format (ASF), ridistribuzione software
+- ASF (Advanced Systems Format),ridistribuzione software
 - Windows Media Format SDK, ridistribuzione
-- ASF (Advanced Systems Format), ridistribuzione
-- ASF (formato avanzato dei sistemi), ridistribuzione
-- ridistribuzione del software, rilevamento dello stato di installazione
-- ridistribuzione, rilevamento dello stato di installazione
+- Advanced Systems Format (ASF), ridistribuzione
+- ASF (Advanced Systems Format),ridistribuzione
+- ridistribuzione del software, rilevamento dello stato dell'installazione
+- ridistribuzione, rilevamento dello stato dell'installazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6add696f2b2989de1e77d48504a1d540634213d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 250ab87fd81592b868e1dbf13106577f83e680796310aff246f0c1483fa847cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931392"
 ---
-# <a name="detecting-setup-status"></a>Rilevamento dello stato di installazione
+# <a name="detecting-setup-status"></a>Rilevamento dello stato dell'installazione
 
-Quando il file eseguibile di ridistribuzione viene eseguito in un computer, registra lo stato di installazione nel registro di sistema come valore **HRESULT** . Lo stato dell'installazione viene archiviato nella voce del registro di sistema **InstallResult** nella sottochiave seguente:
+Quando il file eseguibile di ridistribuzione viene eseguito in un computer, registra lo stato di installazione nel Registro di sistema come **valore HRESULT.** Lo stato dell'installazione viene archiviato nella **voce del Registro di sistema InstallResult** nella sottochiave seguente:
 
-**Programma \_ di \_ \\ installazione di \\ Microsoft \\ MediaPlayer \\ per HKEY software utente corrente**
+**HKEY \_ CURRENT USER Software Installazione di Microsoft \_ \\ \\ \\ MediaPlayer \\**
 
-La voce del registro di sistema **InstallResult** ha il formato seguente.
+La voce del Registro di sistema **InstallResult** ha il formato seguente.
 
 
 
 | Nome              | Type           | valore                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| **InstallResult** | **REG \_ DWORD** | **HRESULT** che indica se l'installazione di Windows Media Player è stata completata e se è necessario un riavvio. |
+| **InstallResult** | **REG \_ DWORD** | Valore **HRESULT che** indica se l Windows Media Player installazione è riuscita e se è necessario un riavvio. |
 
 
 
- 
+ 
 
-Il codice seguente imposta le variabili *fSucess* e *fRebootNeeded* su **true** o **false**, a seconda dei casi, in base al valore **HRESULT** scritto dal programma di installazione di Windows Media nel pacchetto di ridistribuzione dei componenti.
+Il codice seguente imposterà le variabili *fSucess* e *fRebootNeeded* su **True** o **False,** in base al valore **HRESULT** scritto dal programma di installazione di Windows Media nel pacchetto di ridistribuzione dei componenti.
 
 
 ```C++
@@ -122,9 +122,9 @@ int main( void )
 [**Ridistribuzione del software**](software-redistribution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

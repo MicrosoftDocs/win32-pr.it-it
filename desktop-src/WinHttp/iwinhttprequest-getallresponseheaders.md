@@ -1,7 +1,7 @@
 ---
 description: Recupera tutte le intestazioni di risposta HTTP.
 ms.assetid: 68b13d4c-5afd-486d-8b78-a7eef0f59a24
-title: 'Metodo IWinHttpRequest:: GetAllResponseHeaders'
+title: Metodo IWinHttpRequest::GetAllResponseHeaders
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 74c113216cf41e2f9816176dd28ba5e84208c635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d853cfd80038081865eeefbbc456f470485b69a2dae02384e91e8b4d78d90810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133104"
 ---
-# <a name="iwinhttprequestgetallresponseheaders-method"></a>Metodo IWinHttpRequest:: GetAllResponseHeaders
+# <a name="iwinhttprequestgetallresponseheaders-method"></a>Metodo IWinHttpRequest::GetAllResponseHeaders
 
-Il metodo **GetAllResponseHeaders** recupera tutte le intestazioni di risposta http.
+Il **metodo GetAllResponseHeaders** recupera tutte le intestazioni di risposta HTTP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ HRESULT GetAllResponseHeaders(
 
 <dl> <dt>
 
-*Intestazioni* \[ di out, retval\]
+*Intestazioni* \[ out, retval\]
 </dt> <dd>
 
 Riceve le informazioni di intestazione risultanti.
@@ -49,20 +49,20 @@ Riceve le informazioni di intestazione risultanti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce tutte le intestazioni contenute nella risposta server più recente. Le singole intestazioni sono delimitate da una combinazione di ritorno a capo e avanzamento riga (ASCII 13 e 10). L'ultima voce è seguita da due delimitatori (13, 10, 13, 10). Richiamare questo metodo solo dopo la chiamata del metodo [**Send**](iwinhttprequest-send.md) .
+Questo metodo restituisce tutte le intestazioni contenute nella risposta più recente del server. Le singole intestazioni sono delimitate da una combinazione di ritorno a capo e avanzamento riga (ASCII 13 e 10). L'ultima voce è seguita da due delimitatori (13, 10, 13, 10). Richiamare questo metodo solo dopo che [**è stato**](iwinhttprequest-send.md) chiamato il metodo Send.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la [sezione Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere tutte le intestazioni dalla risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
+L'esempio seguente illustra come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere tutte le intestazioni dalla risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
 
 
 ```C++
@@ -154,7 +154,7 @@ int main(int argc, char* argv[])
 
 
 
-Nell'esempio di script seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere tutte le intestazioni dalla risposta.
+Nell'esempio di scripting seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere tutte le intestazioni dalla risposta.
 
 
 ```JScript
@@ -179,11 +179,11 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -201,7 +201,7 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 [**GetResponseHeader**](iwinhttprequest-getresponseheader.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

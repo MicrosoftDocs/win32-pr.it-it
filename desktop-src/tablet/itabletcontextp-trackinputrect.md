@@ -1,7 +1,7 @@
 ---
-description: Aggiorna il digitalizzatore del Tablet alle coordinate del mapping della posizione della finestra.
+description: Aggiorna il digitalizzatore tablet alle coordinate di mapping della posizione della finestra.
 ms.assetid: 2984b87b-620e-4e5d-a3cc-4c3f4c89bae3
-title: 'Metodo ITabletContextP:: TrackInputRect'
+title: Metodo ITabletContextP::TrackInputRect
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: 4529263b81933651db35b88262b11e979d39e6f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 400055247583ec0bd2095d5d6f68d8481c69fd6bb4e7f7730344120203655ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350571"
 ---
-# <a name="itabletcontextptrackinputrect-method"></a>Metodo ITabletContextP:: TrackInputRect
+# <a name="itabletcontextptrackinputrect-method"></a>Metodo ITabletContextP::TrackInputRect
 
-Aggiorna il digitalizzatore del Tablet alle coordinate del mapping della posizione della finestra.
+Aggiorna il digitalizzatore tablet alle coordinate di mapping della posizione della finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT TrackInputRect(
 
 <dl> <dt>
 
-*prcInput* \[ out\]
+*prcInput* \[ Cambio\]
 </dt> <dd>
 
-Nuovo rettangolo della finestra di input dopo l'aggiornamento del mapping tra le coordinate della finestra e del digitalizzatore.
+Nuovo rettangolo della finestra di input dopo l'aggiornamento del mapping tra la finestra e le coordinate del digitalizzatore.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo ogni volta che viene modificata la posizione della finestra sullo schermo.
+Chiamare questo metodo ogni volta che cambia la posizione della finestra sullo schermo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Chiamare questo metodo ogni volta che viene modificata la posizione della finest
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

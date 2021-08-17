@@ -1,24 +1,24 @@
 ---
-title: Impostazioni di rete predefinite
-description: Impostazioni di rete predefinite
+title: Impostazioni di rete Impostazioni
+description: Impostazioni di rete Impostazioni
 ms.assetid: 07464107-9cf7-4ed0-a76b-17ea153399a1
 keywords:
 - Windows Media Format SDK, impostazioni di rete predefinite
+- Advanced Systems Format (ASF), impostazioni di rete predefinite
 - ASF (Advanced Systems Format), impostazioni di rete predefinite
-- ASF (formato avanzato dei sistemi), impostazioni di rete predefinite
-- Windows Media Format SDK, impostazioni di rete
+- Windows MEDIA Format SDK, impostazioni di rete
+- Advanced Systems Format (ASF), impostazioni di rete
 - ASF (Advanced Systems Format), impostazioni di rete
-- ASF (formato avanzato dei sistemi), impostazioni di rete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f4f219a60d9211b63eb124500c014452a0143d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 591bf4aa2154d5cc04a8a17b5fc75f290a8493a39d530d4246bc0338c2424e62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931421"
 ---
-# <a name="default-networking-settings"></a>Impostazioni di rete predefinite
+# <a name="default-networking-settings"></a>Impostazioni di rete Impostazioni
 
 Le tabelle seguenti descrivono le impostazioni predefinite dei parametri di rete in Windows Media Format SDK, raggruppate per interfaccia.
 
@@ -29,9 +29,9 @@ Le tabelle seguenti descrivono le impostazioni predefinite dei parametri di rete
 | Tempo di memorizzazione nel buffer                        | 5 secondi                    |
 | UseFixedUDPPort                       | FALSE                        |
 | FixedUDPPort                          | 0 (non valido)                |
-| ProxySetting: HTTP                    | \_ \_ browser impostazioni proxy \_ WMT |
-| ProxySetting: MMS                     | \_impostazione del proxy WMT \_ \_ None    |
-| ProxySetting: RTSP                    | \_impostazione del proxy WMT \_ \_ None    |
+| ProxySetting: HTTP                    | BROWSER DELLE IMPOSTAZIONI PROXY WMT \_ \_ \_ |
+| ProxySetting: MMS                     | IMPOSTAZIONE PROXY WMT \_ \_ \_ NONE    |
+| ProxySetting: RTSP                    | IMPOSTAZIONE PROXY WMT \_ \_ \_ NONE    |
 | ProxyHostName (HTTP, MMS, RTSP)       | ""                           |
 | ProxyPort: HTTP                       | 80                           |
 | ProxyPort: MMS                        | 1755                         |
@@ -43,50 +43,50 @@ Le tabelle seguenti descrivono le impostazioni predefinite dei parametri di rete
 | EnableHTTP                            | true                         |
 | EnableTCP                             | true                         |
 | EnableUDP                             | true                         |
-| Larghezza di banda di connessione                  | 0 (rilevamento automatico)              |
+| Larghezza di banda della connessione                  | 0 (rilevamento automatico)              |
 
 
 
- 
+ 
 
 
 
 | IWMReaderNetworkConfig2        | Impostazione predefinita        |
 |--------------------------------|------------------------|
-| Durata flusso accelerato | 100 milioni (10 secondi) |
-| Abilita Caching contenuto         | true                   |
-| Abilita cache veloce              | true                   |
-| Abilita reinvii                 | true                   |
-| Abilita l'assottigliamento del contenuto        | true                   |
-| Limite riconnessione                | 25                     |
+| Durata dello streaming accelerato | 100000000 (10 secondi) |
+| Abilitare la memorizzazione nella cache del contenuto         | true                   |
+| Abilitare la cache veloce              | true                   |
+| Abilitare i reinvii                 | true                   |
+| Abilitare il thinning del contenuto        | true                   |
+| Limite di riconnessione                | 25                     |
 
 
 
- 
+ 
 
 
 
 | IWMWriterNetworkSink | Impostazione predefinita         |
 |----------------------|-------------------------|
 | Numero massimo di client      | 5                       |
-| Protocollo di rete     | 0 ( \_ protocollo \_ http WMT) |
-| URL host             | 0 (non valido)           |
+| Protocollo di rete     | 0 (PROTOCOLLO WMT \_ \_ HTTP) |
+| Host URL             | 0 (non valido)           |
 
 
 
- 
+ 
 
 
 
 | IWMWriterAdvanced2  | Impostazione predefinita             |
 |---------------------|-----------------------------|
-| Dimensioni massime pacchetto | 1400                        |
-| ID client di log       | FALSE                       |
-| Modalità di riproduzione           | \_ \_ \_ selezione autoselezione modalità di riproduzione WMT |
+| Dimensioni massime del pacchetto | 1400                        |
+| Log client ID       | FALSE                       |
+| Modalità di riproduzione           | SELEZIONE AUTOMATICA \_ DELLA \_ MODALITÀ DI RIPRODUZIONE WMT \_ |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -95,9 +95,9 @@ Le tabelle seguenti descrivono le impostazioni predefinite dei parametri di rete
 [**Implementazione della funzionalità di rete**](implementing-network-functionality.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

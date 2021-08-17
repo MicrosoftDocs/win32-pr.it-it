@@ -1,19 +1,19 @@
 ---
 title: Esempio di ContextPopup
-description: Questo esempio di codice illustra il markup e il codice necessari per implementare un'Windows ribbon con ContextPopups.
+description: Questo esempio di codice illustra il markup e il codice necessari per implementare un'applicazione Windows ribbon con ContextPopups.
 ms.assetid: f334dbfc-710a-4652-b914-a668ae36aecd
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: 5f469ac892f063fbd6c8beb0fe8af0c054216dbc
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: f0c739e368a26b2664b71efd4ff7cd8c3e7f8490ef7df8ccbe8ec6ace18af115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964390"
 ---
 # <a name="contextpopup-sample"></a>Esempio di ContextPopup
 
-Questo esempio di codice illustra il markup e il codice necessari per implementare un'Windows ribbon con ContextPopups.
+Questo esempio di codice illustra il markup e il codice necessari per implementare un'applicazione Windows ribbon con ContextPopups.
 
 - [Utilizzo](#usage)
   - [Compilazione dell'esempio](#building-the-sample)
@@ -26,7 +26,7 @@ Questo esempio di codice illustra il markup e il codice necessari per implementa
 
 Gli Windows di framework della barra multifunzione possono essere scaricati come progetti Microsoft Visual Studio autonomi dall'Area download [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o installati come parte di [Windows Software Development Kit (SDK).](https://developer.microsoft.com/windows/downloads/sdk-archive/)
 
-- Windows Software Development Kit (SDK) (percorso di installazione standard): %ProgramFiles% Microsoft SDK Windows numero di versione \\ \\ Esempi \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ ContextPopup
+- Windows Software Development Kit (SDK) (percorso di installazione standard): %ProgramFiles% \\ Microsoft SDKs Windows numero di versione \\ Esempi \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ ContextPopup
 
 ### <a name="building-the-sample"></a>Compilazione dell'esempio
 
@@ -46,7 +46,7 @@ Per eseguire l'esempio compilato con il debug in Visual Studio, premere F5.
 
 ## <a name="support"></a>Supporto
 
-Il [Windows forum sullo sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni Windows ribbon.
+Il [Windows di sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni Windows ribbon.
 
 ## <a name="minimum-requirements"></a>Requisiti minimi
 

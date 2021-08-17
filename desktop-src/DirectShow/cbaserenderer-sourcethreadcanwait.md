@@ -1,7 +1,7 @@
 ---
-description: Il metodo SourceThreadCanWait include o rilascia il thread di streaming.
+description: Il metodo SourceThreadCanWait contiene o rilascia il thread di streaming.
 ms.assetid: f68f5f0b-ef5b-49a9-a768-c4cc065c0cb3
-title: Metodo CBaseRenderer. SourceThreadCanWait (Renbase. h)
+title: Metodo CBaseRenderer.SourceThreadCanWait (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f01be304ec2b5f845ea61c9609808c6e2f39fca9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6ba9f8e202d7c98bfea5d7068fa63a8d889d88fb10b4c6a7cb3516fadbca7ebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954770"
 ---
-# <a name="cbaserenderersourcethreadcanwait-method"></a>CBaseRenderer. SourceThreadCanWait, metodo
+# <a name="cbaserenderersourcethreadcanwait-method"></a>Metodo CBaseRenderer.SourceThreadCanWait
 
-Il `SourceThreadCanWait` metodo include o rilascia il thread di streaming.
+Il `SourceThreadCanWait` metodo contiene o rilascia il thread di streaming.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ virtual HRESULT SourceThreadCanWait(
 *bCanWait* 
 </dt> <dd>
 
-Valore booleano che indica se mantenere il thread di streaming. Se **true**, il thread di streaming viene bloccato mentre il filtro attende il rendering degli esempi successivi. Se **false**, il thread di streaming viene rilasciato.
+Valore booleano che indica se contenere il thread di streaming. Se **TRUE,** il thread di streaming viene bloccato durante l'attesa del filtro per il rendering degli esempi successivi. Se **FALSE,** il thread di streaming viene rilasciato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-La chiamata al `SourceThreadCanWait` metodo con il valore **false** impone il ritorno del filtro da una chiamata [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) bloccata. Quando il filtro è in esecuzione, blocca le chiamate di **ricezione** fino al momento della presentazione del campione corrente. Quando il filtro è sospeso, blocca la **ricezione** delle chiamate a tempo indefinito. Questo comportamento regola il flusso di dati nel flusso. Quando il filtro viene arrestato o scaricato, tuttavia, non deve essere bloccato.
+La chiamata al metodo con il valore FALSE forza la restituzione del filtro `SourceThreadCanWait` da una chiamata [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) bloccata.  Quando il filtro è in esecuzione, blocca le **chiamate Receive** fino all'ora di presentazione dell'esempio corrente. Quando il filtro viene sospeso, blocca le **chiamate Receive** per un periodo illimitato. Questo comportamento regola il flusso di dati nel flusso. Quando il filtro viene arrestato o scaricato, tuttavia, non deve bloccarsi.
 
-Il blocco è controllato dal metodo [**CBaseRenderer:: WaitForRenderTime**](cbaserenderer-waitforrendertime.md) , che attende due eventi: [**CBaseRenderer:: m \_ RenderEvent**](cbaserenderer-m-renderevent.md) e [**CBaseRenderer:: m \_ ThreadSignal**](cbaserenderer-m-threadsignal.md). L' **evento \_ RenderEvent m** viene segnalato all'arrivo dell'ora di presentazione. L' **evento \_ ThreadSignal m** viene segnalato quando `SourceThreadCanWait` viene chiamato con il valore **false**. Se viene chiamato `SourceThreadCanWait` con il valore **true** , viene reimpostato l'evento.
+Il blocco è controllato dal metodo [**CBaseRenderer::WaitForRenderTime,**](cbaserenderer-waitforrendertime.md) che attende due eventi: [**CBaseRenderer::m \_ RenderEvent**](cbaserenderer-m-renderevent.md) e [**CBaseRenderer::m \_ ThreadSignal**](cbaserenderer-m-threadsignal.md). **\_ L'evento m RenderEvent** viene segnalato all'arrivo dell'ora di presentazione. **\_ L'evento m ThreadSignal** viene segnalato quando `SourceThreadCanWait` viene chiamato con il valore **FALSE.** Se `SourceThreadCanWait` si chiama con il valore **TRUE,** l'evento viene reimpostato.
 
-I metodi [**CBaseRenderer:: Stop**](cbaserenderer-stop.md) e [**CBaseRenderer:: BeginFlush**](cbaserenderer-beginflush.md) chiamano `SourceThreadCanWait` con il valore **false** (che rilascia il thread di streaming). I metodi [**CBaseRenderer::P ause**](cbaserenderer-pause.md), [**CBaseRenderer:: Run**](cbaserenderer-run.md)e [**CBaseRenderer:: EndFlush**](cbaserenderer-endflush.md) chiamano `SourceThreadCanWait` con il valore **true**.
+I [**metodi CBaseRenderer::Stop**](cbaserenderer-stop.md) e [**CBaseRenderer::BeginFlush**](cbaserenderer-beginflush.md) chiamano con il valore `SourceThreadCanWait` **FALSE** (rilascio del thread di streaming). I metodi [**CBaseRenderer::P ause**](cbaserenderer-pause.md), [**CBaseRenderer::Run**](cbaserenderer-run.md)e [**CBaseRenderer::EndFlush**](cbaserenderer-endflush.md) chiamano con il `SourceThreadCanWait` valore **TRUE**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ I metodi [**CBaseRenderer:: Stop**](cbaserenderer-stop.md) e [**CBaseRenderer:: 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -26,7 +26,7 @@ ms.locfileid: "119351061"
 ---
 # <a name="guidfromstring-function"></a>Funzione GUIDFromString
 
-\[**GUIDFromString** è disponibile tramite Windows XP con Service Pack 2 (SP2) o Windows Vista. Potrebbe essere modificato o non disponibile nelle versioni successive. Le applicazioni devono [**usare CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) o [**IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) al posto di questa funzione.\]
+\[**GUIDFromString** è disponibile tramite Windows XP con Service Pack 2 (SP2) o Windows Vista. Potrebbe essere stato modificato o non disponibile nelle versioni successive. Le applicazioni devono [**usare CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) o [**IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) al posto di questa funzione.\]
 
 Converte una stringa in un GUID.
 
@@ -62,7 +62,7 @@ Puntatore alla stringa con terminazione Null da convertire. La stringa deve esse
 
 Tipo: **LPGUID**
 
-Puntatore a un buffer per ricevere il GUID quando questo metodo viene restituito.
+Puntatore a un buffer per ricevere il GUID quando viene restituito questo metodo.
 
 </dd> </dl>
 
@@ -74,9 +74,9 @@ Tipo: **BOOL**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non viene dichiarata in un'intestazione o esportata in base al nome da un file .dll file. Deve essere caricato da un Shell32.dll come numero ordinale 703 per **GUIDFromStringA** e 704 per **GUIDFromStringW.**
+Questa funzione non è dichiarata in un'intestazione o esportata in base al nome da .dll file. Deve essere caricato da Shell32.dll come ordinale 703 per **GUIDFromStringA** e 704 per **GUIDFromStringW.**
 
-È anche possibile accedervi da Shlwapi.dll come numero ordinale 269 per **GUIDFromStringA** e 270 per **GUIDFromStringW.**
+È anche possibile accedervi da Shlwapi.dll come numero ordinale 269 per **GUIDFromStringA** e 270 ordinale per **GUIDFromStringW.**
 
 ## <a name="requirements"></a>Requisiti
 

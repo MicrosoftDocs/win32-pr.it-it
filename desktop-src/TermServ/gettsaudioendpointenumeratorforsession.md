@@ -1,6 +1,6 @@
 ---
 title: Funzione di callback GetTSAudioEndpointEnumeratorForSession
-description: Restituisce un riferimento a un enumeratore di endpoint audio per l'ID sessione specificato.
+description: Restituisce un riferimento a un enumeratore endpoint audio per l'ID sessione specificato.
 ms.assetid: 9dd95ef7-f83f-43be-a8b2-e2b0e4a47a42
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d6c09896fc4b35fcb0b6a01a7d592421dd5d5654
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f64af1d7e886b418ac87cd360302101a60d746d707652f605a648e9812a5547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059589"
 ---
 # <a name="gettsaudioendpointenumeratorforsession-callback-function"></a>Funzione di callback GetTSAudioEndpointEnumeratorForSession
 
-Restituisce un riferimento a un enumeratore di endpoint audio per l'ID sessione specificato. I consumer di questo enumeratore di endpoint audio, ad esempio MMDevAPI.dll, chiamano questa funzione per recuperare un enumeratore di endpoint audio in una sessione di Servizi Desktop remoto.
+Restituisce un riferimento a un enumeratore endpoint audio per l'ID sessione specificato. I consumer di questo enumeratore dell'endpoint audio, ad esempio MMDevAPI.dll, chiamano questa funzione per recuperare un enumeratore dell'endpoint audio in una Servizi Desktop remoto sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,17 +41,17 @@ HRESULT GetTSAudioEndpointEnumeratorForSession(
 
 <dl> <dt>
 
-*ID sessione* \[ in\]
+*SessionId* \[ Pollici\]
 </dt> <dd>
 
-Identificatore della sessione di Servizi Desktop remoto.
+Identificatore dell'Servizi Desktop remoto sessione.
 
 </dd> <dt>
 
-*ppEndpointEnumerator* \[ out\]
+*PpEndpointEnumerator* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un puntatore a un'interfaccia [**IMMDeviceEnumerator**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) .
+Indirizzo di un puntatore a [**un'interfaccia IMMDeviceEnumerator.**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator)
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Se il metodo ha esito positivo, restituisce **S \_ OK**.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non è definita in un file di intestazione. È necessario implementare ed esportare questa funzione nell'enumeratore dell'endpoint personalizzato e utilizzare la firma mostrata nel blocco della sintassi più indietro in questo argomento.
+Questa funzione non è definita in un file di intestazione. È necessario implementare ed esportare questa funzione nell'enumeratore dell'endpoint personalizzato e usare la firma illustrata nel blocco di sintassi più indietro in questo argomento.
 
 ## <a name="requirements"></a>Requisiti
 

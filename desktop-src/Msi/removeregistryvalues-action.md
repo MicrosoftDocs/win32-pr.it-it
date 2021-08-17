@@ -13,7 +13,7 @@ ms.locfileid: "119339661"
 ---
 # <a name="removeregistryvalues-action"></a>Azione RemoveRegistryValues
 
-L'azione RemoveRegistryValues può rimuovere solo i valori dal Registro di sistema creati nella tabella [Del](registry-table.md) Registro di sistema o [nella tabella RemoveRegistry](removeregistry-table.md). Questa azione rimuove un valore del Registro di sistema creato nella tabella Registro di sistema se il componente associato è stato installato localmente o come eseguito dall'origine ed è ora impostato per la disinstallazione. Questa azione rimuove un valore del Registro di sistema creato nella tabella RemoveRegistry se il componente associato è impostato per l'installazione locale o l'esecuzione dall'origine.
+L'azione RemoveRegistryValues può rimuovere solo i valori dal Registro di sistema creati nella tabella [Del](registry-table.md) Registro di sistema o [nella tabella RemoveRegistry](removeregistry-table.md). Questa azione rimuove un valore del Registro di sistema creato nella tabella Del Registro di sistema se il componente associato è stato installato localmente o come eseguito dall'origine ed è ora impostato per la disinstallazione. Questa azione rimuove un valore del Registro di sistema creato nella tabella RemoveRegistry se il componente associato è impostato per l'installazione locale o l'esecuzione dall'origine.
 
 ## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 

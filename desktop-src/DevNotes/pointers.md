@@ -1,17 +1,17 @@
 ---
 description: Usare queste risorse per ottenere informazioni sui puntatori, ad esempio DecodePointer, DecodeRemotePointer ed EncodePointer.
 ms.assetid: C7A3753E-072D-41B6-A445-FA7F270A7D44
-title: Puntatori (note per sviluppatori)
+title: Puntatori (note per gli sviluppatori)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aff7c8d3257830defd6e6c307f050f081b9158ca
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 59be208d3ad55f9c96cacb4e72aba03caca5e5f4be164072c03be96a7606cb30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955710"
 ---
-# <a name="pointers-developer-notes"></a>Puntatori (note per sviluppatori)
+# <a name="pointers-developer-notes"></a>Puntatori (note per gli sviluppatori)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

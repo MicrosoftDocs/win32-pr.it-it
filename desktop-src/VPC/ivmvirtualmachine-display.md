@@ -1,10 +1,10 @@
 ---
-title: Proprietà Display di IVMVirtualMachine (VPCCOMInterfaces.h)
+title: Proprietà Display IVMVirtualMachine (VPCCOMInterfaces.h)
 description: Recupera la visualizzazione video per la macchina virtuale.
 ms.assetid: ca5a433d-4613-4b6d-9de7-d9c6a2038e38
 keywords:
-- Proprietà di visualizzazione Virtual PC
-- Proprietà di visualizzazione Virtual PC, interfaccia IVMVirtualMachine
+- Proprietà Display Virtual PC
+- Proprietà display Virtual PC, interfaccia IVMVirtualMachine
 - Interfaccia IVMVirtualMachine Virtual PC, proprietà Display
 topic_type:
 - apiref
@@ -56,7 +56,7 @@ Oggetto [**IVMDisplay.**](ivmdisplay.md)
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
 | <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione è sconosciuta.<br/>     |
-| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -69,7 +69,7 @@ Oggetto [**IVMDisplay.**](ivmdisplay.md)
 | Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 

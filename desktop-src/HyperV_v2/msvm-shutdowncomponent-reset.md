@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Reset della classe Msvm_ShutdownComponent : richiede una reimpostazione.'
+description: 'Metodo Reset della classe Msvm_ShutdownComponent: richiede una reimpostazione.'
 ms.assetid: cdd14090-4ea1-4547-b8a5-fd40f7e494f5
 title: Metodo Reset della classe Msvm_ShutdownComponent
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 77c651ce429764edba069be21b246a8623cd0e76
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39142fbc4596c44b8d6b028656ac172b78b66f8fc31590e49b0b666ccd64d528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950390"
 ---
 # <a name="reset-method-of-the-msvm_shutdowncomponent-class"></a>Metodo Reset della classe Msvm \_ ShutdownComponent
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -1,53 +1,53 @@
 ---
-description: Le \_ costanti del flag di bit LINEGATHERTERM descrivono le condizioni in base alle quali viene terminata la raccolta dei numeri memorizzati nel buffer.
+description: Le costanti del flag di bit LINEGATHERTERM descrivono le condizioni in cui viene terminata la raccolta di cifre \_ memorizzate nel buffer.
 ms.assetid: 409e1984-e5a4-4636-ab53-5973fe7b78ea
-title: Costanti LINEGATHERTERM_ (TAPI. h)
+title: LINEGATHERTERM_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 968492a584024c7750b417a9fd03b68ac1df42ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8a6d5952ac4f69d11fd499df63554d6fda7dca76e46e4aad1a01ae326f363a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140034"
 ---
-# <a name="linegatherterm_-constants"></a>\_Costanti LINEGATHERTERM
+# <a name="linegatherterm_-constants"></a>Costanti LINEGATHERTERM \_
 
-Le costanti del flag di bit **LINEGATHERTERM \_** descrivono le condizioni in base alle quali viene terminata la raccolta dei numeri memorizzati nel buffer.
+Le costanti del flag di bit **LINEGATHERTERM \_** descrivono le condizioni in cui viene terminata la raccolta di cifre memorizzate nel buffer.
 
 <dl> <dt>
 
-<span id="LINEGATHERTERM_BUFFERFULL"></span><span id="linegatherterm_bufferfull"></span>**\_BUFFERFULL LINEGATHERTERM**
+<span id="LINEGATHERTERM_BUFFERFULL"></span><span id="linegatherterm_bufferfull"></span>**LINEGATHERTERM \_ BUFFERFULL**
 </dt> <dd> <dl> <dt>
 
 
 
-Il numero di cifre richiesto è stato raccolto. Il buffer è pieno.
+È stato raccolto il numero di cifre richiesto. Il buffer è pieno.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEGATHERTERM_CANCEL"></span><span id="linegatherterm_cancel"></span>**\_annullamento LINEGATHERTERM**
+<span id="LINEGATHERTERM_CANCEL"></span><span id="linegatherterm_cancel"></span>**LINEGATHERTERM \_ CANCEL**
 </dt> <dd> <dl> <dt>
 
 
 
-La richiesta è stata annullata dall'applicazione, da un'altra applicazione o perché la chiamata è stata terminata.
+La richiesta è stata annullata da questa applicazione, da un'altra applicazione o perché la chiamata è terminata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEGATHERTERM_FIRSTTIMEOUT"></span><span id="linegatherterm_firsttimeout"></span>**\_FIRSTTIMEOUT LINEGATHERTERM**
+<span id="LINEGATHERTERM_FIRSTTIMEOUT"></span><span id="linegatherterm_firsttimeout"></span>**LINEGATHERTERM \_ FIRSTTIMEOUT**
 </dt> <dd> <dl> <dt>
 
 
 
-Timeout della prima cifra scaduto. Il buffer non contiene cifre.
+Il timeout della prima cifra è scaduto. Il buffer non contiene cifre.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEGATHERTERM_INTERTIMEOUT"></span><span id="linegatherterm_intertimeout"></span>**intertimeout LINEGATHERTERM \_**
+<span id="LINEGATHERTERM_INTERTIMEOUT"></span><span id="linegatherterm_intertimeout"></span>**LINEGATHERTERM \_ INTERTIMEOUT**
 </dt> <dd> <dl> <dt>
 
 
@@ -57,7 +57,7 @@ Timeout tra cifre scaduto. Il buffer contiene almeno una cifra.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEGATHERTERM_TERMDIGIT"></span><span id="linegatherterm_termdigit"></span>**\_TERMDIGIT LINEGATHERTERM**
+<span id="LINEGATHERTERM_TERMDIGIT"></span><span id="linegatherterm_termdigit"></span>**LINEGATHERTERM \_ TERMDIGIT**
 </dt> <dd> <dl> <dt>
 
 
@@ -69,7 +69,7 @@ Una delle cifre di terminazione corrisponde a una cifra ricevuta. La cifra di te
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Nessuna estensibilità. Tutti i 32 bit sono riservati.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

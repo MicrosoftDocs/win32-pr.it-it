@@ -1,7 +1,7 @@
 ---
-description: Sezione critica che protegge lo stato del flusso. Per ulteriori informazioni, vedere flusso di dati per gli sviluppatori di filtri.
+description: Sezione critica che protegge lo stato di streaming. Per altre informazioni, vedere Data Flow for Filter Developers.For more information, see Data Flow for Filter Developers.
 ms.assetid: f77c3129-ca25-47b8-8a6e-3a07169701af
-title: 'Membro CTransformFilter:: m_csReceive (Transfrm. h)'
+title: Membro CTransformFilter::m_csReceive (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 542f108cee8dbe761040ef8474ae7cec565e0b52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5166b91c62828718d34a0e8063098b1fc3b326adc115a9f78912961ec7ce3f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953560"
 ---
-# <a name="ctransformfilterm_csreceive-member"></a>Membro csReceive di CTransformFilter:: m \_
+# <a name="ctransformfilterm_csreceive-member"></a>Membro CTransformFilter::m \_ csReceive
 
-Sezione critica che protegge lo stato del flusso. Per ulteriori informazioni, vedere [flusso di dati per gli sviluppatori di filtri](data-flow-for-filter-developers.md).
+Sezione critica che protegge lo stato di streaming. Per altre informazioni, vedere [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CCritSec m_csReceive;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

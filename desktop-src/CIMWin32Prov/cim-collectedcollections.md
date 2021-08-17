@@ -1,5 +1,5 @@
 ---
-description: La classe CIM CollectedCollections è un'associazione di aggregazione che rappresenta una raccolta di elementi del sistema \_ gestito (MSE) contenuti in una raccolta di mse.
+description: La classe CIM CollectedCollections è un'associazione di aggregazione che rappresenta una raccolta di elementi di sistema \_ gestiti (MSE) contenuti in una raccolta di MSE.
 ms.assetid: 7baaf429-1211-4545-ace2-c6312d53c0f6
 ms.tgt_platform: multiple
 title: CIM_CollectedCollections classe
@@ -25,10 +25,10 @@ ms.locfileid: "119322291"
 ---
 # <a name="cim_collectedcollections-class"></a>Classe CIM \_ CollectedCollections
 
-La **classe CIM \_ CollectedCollections** è un'associazione di aggregazione che rappresenta una raccolta di elementi del sistema gestito (MSE) contenuti in una raccolta di mse.
+La **classe CIM \_ CollectedCollections** è un'associazione di aggregazione che rappresenta una raccolta di elementi di sistema gestiti (MSE) contenuti in una raccolta di MSE.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -86,7 +86,7 @@ Riferimento all'insieme **"collected".**
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

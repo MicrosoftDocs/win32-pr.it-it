@@ -1,6 +1,6 @@
 ---
 title: Controllo di flusso
-description: La maggior parte dell'hardware è progettata per eseguire il codice dello shader riga per riga, eseguendo ogni istruzione HLSL una sola volta.
+description: La maggior parte dell'hardware è progettata per eseguire codice shader riga per riga, eseguendo ogni istruzione HLSL una sola volta.
 ms.assetid: 94f22e39-8e71-424b-8ca1-bafc843f843f
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 70bb7706e520818c86286947acfba6cae0759b4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4aebaf63613aeb3a1d14607971db16602745883ab6b7b9db4723dfa2367f9bd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120285"
 ---
 # <a name="flow-control"></a>Controllo di flusso
 
-La maggior parte dell'hardware è progettata per eseguire il codice dello shader riga per riga, eseguendo ogni istruzione HLSL una sola volta. Un'istruzione di controllo di flusso determina in fase di esecuzione il blocco di istruzioni HLSL da eseguire successivamente. Usando un'istruzione di controllo del flusso, uno shader può scorrere un set di istruzioni o passare a un'istruzione diversa da quella nella riga successiva. Alcune istruzioni di controllo del flusso supportano il controllo statico specificato in fase di compilazione. altri offrono un controllo predicato che è una decisione per componente effettuata in fase di esecuzione e altri ancora supportano il controllo dinamico che è una decisione presa in fase di esecuzione in base al contenuto di una variabile.
+La maggior parte dell'hardware è progettata per eseguire codice shader riga per riga, eseguendo ogni istruzione HLSL una sola volta. Un'istruzione di controllo del flusso determina in fase di esecuzione quale blocco di istruzioni HLSL eseguire successivamente. Usando un'istruzione di controllo di flusso, uno shader può scorrere in ciclo un set di istruzioni o passare (ramo) a un'istruzione diversa da quella nella riga successiva. Alcune istruzioni di controllo di flusso supportano il controllo statico specificato in fase di compilazione. altri offrono un controllo predicato che è una decisione per componente presa in fase di esecuzione e altri ancora supportano il controllo dinamico che è una decisione presa in fase di esecuzione in base al contenuto di una variabile.
 
-HLSL supporta le seguenti istruzioni di controllo del flusso.
+HLSL supporta le istruzioni di controllo di flusso seguenti.
 
 -   [break](dx-graphics-hlsl-break.md)
--   [continuare](dx-graphics-hlsl-continue.md)
--   [rimuovere](dx-graphics-hlsl-discard.md)
+-   [Continuare](dx-graphics-hlsl-continue.md)
+-   [Scartare](dx-graphics-hlsl-discard.md)
 -   [do](dx-graphics-hlsl-do.md)
 -   [for](dx-graphics-hlsl-for.md)
 -   [if](dx-graphics-hlsl-if.md)
 -   [switch](dx-graphics-hlsl-switch.md)
--   [mentre](dx-graphics-hlsl-while.md)
+-   [Mentre](dx-graphics-hlsl-while.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -38,9 +38,9 @@ HLSL supporta le seguenti istruzioni di controllo del flusso.
 [Sintassi del linguaggio (DirectX HLSL)](dx-graphics-hlsl-language-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

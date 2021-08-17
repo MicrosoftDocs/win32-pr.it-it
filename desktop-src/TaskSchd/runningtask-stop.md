@@ -1,10 +1,10 @@
 ---
-title: Metodo RunningTask. Stop
+title: Metodo RunningTask.Stop
 description: Per lo scripting, arresta questa istanza dell'attività.
 ms.assetid: 2692f72c-efdc-4496-b19e-717d211a2b93
 keywords:
-- Metodo Stop Utilità di pianificazione
-- Metodo Stop Utilità di pianificazione, oggetto RunningTask
+- Arrestare il metodo Utilità di pianificazione
+- Metodo Stop Utilità di pianificazione , oggetto RunningTask
 - Oggetto RunningTask Utilità di pianificazione, metodo Stop
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f655001684cb51de525ebc6ac852fbd478ca08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3428e523ca4ea997c5f8d2e21ed4d678856c602e19dae864a452efce177f1761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975011"
 ---
-# <a name="runningtaskstop-method"></a>Metodo RunningTask. Stop
+# <a name="runningtaskstop-method"></a>Metodo RunningTask.Stop
 
 Per lo scripting, arresta questa istanza dell'attività.
 
@@ -50,9 +50,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

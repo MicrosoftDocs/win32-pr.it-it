@@ -1,21 +1,21 @@
 ---
-description: Trasferimento di un'immagine o di un file musicale al dispositivo
+description: Trasferimento di un'immagine o Musica file al dispositivo
 ms.assetid: bace274c-512a-46da-80a7-84734ee880b7
-title: Trasferimento di un'immagine o di un file musicale al dispositivo
+title: Trasferimento di un'immagine o Musica file al dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f3308212825f6c67ea79a40873fc466164d62f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44cf16c4c95080b5479825bbc4a0f8dcfd131fdb603821edab0a2e9df4d03c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928061"
 ---
-# <a name="transferring-an-image-or-music-file-to-the-device"></a>Trasferimento di un'immagine o di un file musicale al dispositivo
+# <a name="transferring-an-image-or-music-file-to-the-device"></a>Trasferimento di un'immagine o Musica file al dispositivo
 
-Una delle operazioni più comuni eseguite da un'applicazione è il trasferimento di contenuto a un dispositivo connesso.
+Una delle operazioni più comuni eseguite da un'applicazione è il trasferimento del contenuto a un dispositivo connesso.
 
-I trasferimenti di contenuto vengono eseguiti usando le interfacce descritte nella tabella seguente.
+I trasferimenti di contenuto vengono e completati usando le interfacce descritte nella tabella seguente.
 
 
 
@@ -30,9 +30,9 @@ I trasferimenti di contenuto vengono eseguiti usando le interfacce descritte nel
 
  
 
-La `TransferContentToDevice` funzione nel modulo ContentTransfer. cpp dell'applicazione di esempio illustra come un'applicazione può trasferire il contenuto da un PC a un dispositivo connesso. In questo particolare esempio, il contenuto trasferito può essere un file contenente un'immagine, una musica o informazioni di contatto.
+La `TransferContentToDevice` funzione nel modulo ContentTransfer.cpp dell'applicazione di esempio illustra come un'applicazione può trasferire contenuto da un PC a un dispositivo connesso. In questo particolare esempio il contenuto trasferito può essere un file contenente un'immagine, una musica o informazioni di contatto.
 
-La prima attività eseguita dalla `TransferContentToDevice` funzione consiste nel richiedere all'utente di immettere un identificatore di oggetto, che identifica l'oggetto da trasferire.
+La prima attività eseguita dalla funzione è richiedere all'utente di immettere un identificatore di oggetto, che identifica `TransferContentToDevice` l'oggetto da trasferire.
 
 
 ```C++
@@ -57,7 +57,7 @@ if (FAILED(hr))
 
 
 
-La seconda attività eseguita dalla `TransferContentToDevice` funzione consiste nel creare un oggetto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) chiamando il metodo [**IPortableDevice:: content**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content) .
+La seconda attività eseguita dalla funzione è creare un oggetto `TransferContentToDevice` [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) chiamando il [**metodo IPortableDevice::Content.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content)
 
 
 ```C++
@@ -73,7 +73,7 @@ if (SUCCEEDED(hr))
 
 
 
-L'attività successiva eseguita dalla `TransferContentToDevice` funzione è la creazione di una finestra di dialogo **FileOpen** con la quale l'utente può specificare il percorso e il nome del file da trasferire.
+L'attività successiva eseguita dalla funzione è la creazione di una finestra di dialogo FileApri con cui l'utente può specificare il percorso e il nome `TransferContentToDevice` del file da trasferire. 
 
 
 ```C++
@@ -100,9 +100,9 @@ if (SUCCEEDED(hr))
 
 
 
-La `TransferContentToDevice` funzione passa una stringa di filtro ( `wszFileTypeFilter` ) al metodo GetOpenFilename, che determina il tipo di file che l'utente può scegliere. `DoMenu`Per esempi dei tre diversi filtri consentiti dall'esempio, vedere la funzione nel modulo WpdApiSample. cpp.
+La funzione passa una stringa di filtro ( ) al `TransferContentToDevice` metodo GetOpenFileName, che determina il tipo di `wszFileTypeFilter` file che l'utente può scegliere. Fare riferimento `DoMenu` alla funzione nel modulo WpdApiSample.cpp per esempi dei tre diversi filtri consentiti dall'esempio.
 
-Dopo che l'utente ha identificato un determinato file per il trasferimento al dispositivo, la `TransferContentToDevice` funzione apre il file come oggetto IStream e recupera le proprietà necessarie per completare il trasferimento.
+Dopo che l'utente ha identificato un determinato file da trasferire al dispositivo, la funzione apre il file come oggetto IStream e recupera le proprietà necessarie per `TransferContentToDevice` completare il trasferimento.
 
 
 ```C++
@@ -135,21 +135,21 @@ if (SUCCEEDED(hr))
 
 
 
-Le proprietà obbligatorie vengono recuperate chiamando la `GetRequiredPropertiesForContentType` funzione helper, che agisce sull'oggetto IStream. La `GetRequiredPropertiesForContentType` funzione helper crea un oggetto [**IPortableDeviceValues**](iportabledevicevalues.md) , recupera le proprietà nell'elenco seguente e le aggiunge all'oggetto.
+Le proprietà obbligatorie vengono recuperate chiamando `GetRequiredPropertiesForContentType` la funzione helper, che opera sull'oggetto IStream. La `GetRequiredPropertiesForContentType` funzione helper crea un oggetto [**IPortableDeviceValues,**](iportabledevicevalues.md) recupera le proprietà nell'elenco seguente e le aggiunge a questo oggetto.
 
--   Identificatore oggetto padre
+-   Identificatore dell'oggetto padre
 -   Dimensioni del flusso in byte
 -   Nome file di contenuto
--   Nome del contenuto (il nome del file senza estensione)
+-   Nome del contenuto (nome file senza estensione)
 -   Tipo di contenuto (immagine, audio o contatto)
 -   Formato del contenuto (JFIF, WMA o vCard2)
 
 L'applicazione di esempio usa le proprietà recuperate per creare il nuovo contenuto nel dispositivo. Questa operazione viene eseguita in tre fasi:
 
-1.  L'applicazione chiama il metodo [**IPortableDeviceContent:: CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata) per creare un nuovo oggetto IStream sul dispositivo.
-2.  L'applicazione usa questo oggetto per ottenere un oggetto [**IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) dal driver WPD.
-3.  L'applicazione usa il nuovo oggetto **IPortableDeviceDataStream** per scrivere il contenuto nel dispositivo (tramite la funzione helper StreamCopy). La funzione helper scrive i dati dal file di origine nel flusso restituito da [**IPortableDeviceContent:: CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata).
-4.  L'applicazione completa l'operazione chiamando il metodo commit nel flusso di destinazione.
+1.  L'applicazione [**chiama il metodo IPortableDeviceContent::CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata) per creare un nuovo oggetto IStream nel dispositivo.
+2.  L'applicazione usa questo oggetto per ottenere un [**oggetto IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) dal driver WPD.
+3.  L'applicazione usa il **nuovo oggetto IPortableDeviceDataStream** per scrivere il contenuto nel dispositivo (tramite la funzione helper StreamCopy). La funzione helper scrive i dati dal file di origine nel flusso restituito da [**IPortableDeviceContent::CreateObjectWithPropertiesAndData.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata)
+4.  L'applicazione completa l'operazione chiamando il metodo Commit nel flusso di destinazione.
 
 
 ```C++

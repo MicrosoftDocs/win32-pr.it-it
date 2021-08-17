@@ -1,9 +1,9 @@
 ---
 title: Compilatore di messaggi (MC.exe)
-description: Usato per compilare manifesti di strumentazione e file di testo dei messaggi.
+description: Usato per compilare i manifesti di strumentazione e i file di testo dei messaggi.
 ms.assetid: f9de35f1-6d31-4f4b-b2c4-8474d6fce9e0
 keywords:
-- EventLog del compilatore di messaggi (MC.exe)
+- EventLog del compilatore MC.exe messaggi
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "119470941"
 ---
 # <a name="message-compiler-mcexe"></a>Compilatore di messaggi (MC.exe)
 
-Usato per compilare manifesti di strumentazione e file di testo dei messaggi. Il compilatore genera i file di risorse del messaggio a cui si collega l'applicazione.
+Usato per compilare i manifesti di strumentazione e i file di testo dei messaggi. Il compilatore genera i file di risorse del messaggio a cui si collega l'applicazione.
 
 ``` syntax
 MC [-?aAbcdnouUv] [-m <length>] [-h <path>] [-e <extension>] [-r <path>]
@@ -31,12 +31,12 @@ MC [-?aAbcdnouUv] [-m <length>] [-h <path>] [-e <extension>] [-r <path>]
    [<filename.man>] [<filename.mc>]
 ```
 
--   [Argomenti comuni ai file di testo dei messaggi e ai file manifesto](#arguments-common-to-both-message-text-files-and-manifest-files)
+-   [Argomenti comuni sia ai file di testo dei messaggi che ai file manifesto](#arguments-common-to-both-message-text-files-and-manifest-files)
 -   [Argomenti specifici dei file manifesto](#arguments-specific-to-manifest-files)
 -   [Argomenti specifici per la generazione di codice che il provider userebbe per registrare gli eventi](#arguments-specific-to-generating-code-that-your-provider-would-use-to-log-events)
--   [Argomenti specifici per i file di testo dei messaggi](#arguments-specific-to-message-text-files)
+-   [Argomenti specifici dei file di testo dei messaggi](#arguments-specific-to-message-text-files)
 
-## <a name="arguments-common-to-both-message-text-files-and-manifest-files"></a>Argomenti comuni ai file di testo dei messaggi e ai file manifesto
+## <a name="arguments-common-to-both-message-text-files-and-manifest-files"></a>Argomenti comuni sia ai file di testo dei messaggi che ai file manifesto
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ Visualizza le informazioni sull'utilizzo per il compilatore di messaggi.
 <span id="-c"></span><span id="-C"></span>**-c**
 </dt> <dd>
 
-Usare questo argomento per fare in modo che il compilatore abbia impostato il bit del cliente (bit 28) in tutti gli ID messaggio. Per informazioni sul bit del cliente, vedere winerror.h.
+Usare questo argomento per fare in modo che il compilatore imposta il bit del cliente (bit 28) in tutti gli ID messaggio. Per informazioni sul bit del cliente, vedere winerror.h.
 
 </dd> <dt>
 
@@ -64,21 +64,21 @@ Usare questo argomento per specificare la codifica dei caratteri usata per tutti
 <span id="-e_extension"></span><span id="-E_EXTENSION"></span>**Estensione -e** 
 </dt> <dd>
 
-Usare questo argomento per specificare l'estensione da utilizzare per il file di intestazione. È possibile specificare fino a un'estensione di tre caratteri, senza includere il punto. Il valore predefinito è .h.
+Usare questo argomento per specificare l'estensione da usare per il file di intestazione. È possibile specificare fino a un'estensione di tre caratteri, senza includere il punto. Il valore predefinito è .h.
 
 </dd> <dt>
 
-<span id="-h_path"></span><span id="-H_PATH"></span>**-h** *percorso*
+<span id="-h_path"></span><span id="-H_PATH"></span>**-h** *path*
 </dt> <dd>
 
-Usare questo argomento per specificare la cartella in cui si vuole che il compilatore inseri il file di intestazione generato. Il valore predefinito è la directory corrente.
+Usare questo argomento per specificare la cartella in cui il compilatore deve inserire il file di intestazione generato. Il valore predefinito è la directory corrente.
 
 </dd> <dt>
 
-<span id="-m_length"></span><span id="-M_LENGTH"></span>**-m** *lunghezza*
+<span id="-m_length"></span><span id="-M_LENGTH"></span>**Lunghezza -m** 
 </dt> <dd>
 
-Usare questo argomento per fare in modo che il compilatore generi un avviso se il messaggio supera *i caratteri di* lunghezza.
+Usare questo argomento per fare in modo che il compilatore generi un avviso se il messaggio supera i *caratteri di* lunghezza.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Usare questo argomento per specificare la cartella in cui si vuole che il compil
 
 </dd> <dt>
 
-<span id="-z_name"></span><span id="-Z_NAME"></span>**-z** *nome*
+<span id="-z_name"></span><span id="-Z_NAME"></span>**-z** *name*
 </dt> <dd>
 
 Usare questo argomento per eseguire l'override del nome di base predefinito utilizzato dal compilatore per i file generati. Per impostazione predefinita, viene utilizzato il nome di base del file di input *del* nome file.
@@ -99,7 +99,7 @@ Usare questo argomento per eseguire l'override del nome di base predefinito util
 <span id="filename"></span><span id="FILENAME"></span>*Filename*
 </dt> <dd>
 
-File manifesto di strumentazione o file di testo del messaggio. Il file deve esistere nella directory corrente. È possibile specificare un file manifesto, un file di testo del messaggio o entrambi. Il nome file deve includere l'estensione . La convenzione è l'uso di un'estensione man per i file manifesto e di un'estensione mc per i file di testo dei messaggi.
+File manifesto di strumentazione o file di testo del messaggio. Il file deve esistere nella directory corrente. È possibile specificare un file manifesto, un file di testo del messaggio o entrambi. Il nome del file deve includere l'estensione . La convenzione è l'uso di un'estensione .man per i file manifesto e di un'estensione mc per i file di testo dei messaggi.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ File manifesto di strumentazione o file di testo del messaggio. Il file deve esi
 
 <dl> <dt>
 
-<span id="-s_path"></span><span id="-S_PATH"></span>**-s** *percorso*
+<span id="-s_path"></span><span id="-S_PATH"></span>**-s** *path*
 </dt> <dd>
 
 Usare questo argomento per creare una baseline della strumentazione. Specificare il percorso della cartella che contiene i file manifesto della baseline. Per le versioni successive, usare quindi l'argomento **-t** per verificare la presenza di problemi di compatibilità nel nuovo manifesto rispetto alla baseline.
@@ -116,7 +116,7 @@ Usare questo argomento per creare una baseline della strumentazione. Specificare
 
 </dd> <dt>
 
-<span id="-t_path"></span><span id="-T_PATH"></span>**-t** *percorso*
+<span id="-t_path"></span><span id="-T_PATH"></span>**-t** *path*
 </dt> <dd>
 
 Usare questo argomento quando si crea una nuova versione del manifesto e si vuole verificarne la compatibilità dell'applicazione rispetto alla baseline creata usando **l'argomento -s.** Il percorso deve puntare alla cartella che contiene . File BIN creati dall'operazione di base (vedere **l'opzione -s).**
@@ -125,7 +125,7 @@ Usare questo argomento quando si crea una nuova versione del manifesto e si vuol
 
 </dd> <dt>
 
-<span id="-w_path"></span><span id="-W_PATH"></span>**-w** *percorso*
+<span id="-w_path"></span><span id="-W_PATH"></span>**-w** *path*
 </dt> <dd>
 
 Il compilatore ignora questo argomento e convalida automaticamente il manifesto.
@@ -137,15 +137,15 @@ Il compilatore ignora questo argomento e convalida automaticamente il manifesto.
 <span id="-W_path"></span><span id="-w_path"></span><span id="-W_PATH"></span>**Percorso -W** 
 </dt> <dd>
 
-Questo argomento viene ignorato dal compilatore.
+Il compilatore ignora questo argomento.
 
-**Prima di MC versione 1.12.7051:** Usare questo argomento per specificare la cartella che contiene il Winmeta.xml file. Il Winmeta.xml file contiene i tipi di input e output riconosciuti, nonché i canali, i livelli e i codici opcode predefiniti. L Windows SDK include il file Winmeta.xml nella \\ cartella Include.
+**Prima di MC versione 1.12.7051:** Usare questo argomento per specificare la cartella che contiene il Winmeta.xml file. Il file Winmeta.xml contiene i tipi di input e output riconosciuti, nonché i canali, i livelli e i codici operativo predefiniti. L Windows SDK include il file Winmeta.xml nella \\ cartella Include.
 
 </dd> </dl>
 
 ### <a name="arguments-specific-to-generating-code-that-your-provider-would-use-to-log-events"></a>Argomenti specifici per la generazione di codice che il provider userebbe per registrare gli eventi
 
-È possibile usare gli argomenti del compilatore seguenti per generare codice in modalità kernel o in modalità utente che è possibile usare per registrare gli eventi. È anche possibile richiedere che il compilatore generi codice per supportare la scrittura di eventi nei computer prima Windows Vista. Se l'applicazione è scritta in C#, il compilatore può generare una classe C# che è possibile usare per registrare gli eventi. Questi argomenti sono disponibili a partire da MC versione 1.12.7051 fornita con la versione Windows 7 di Window SDK.
+È possibile usare gli argomenti del compilatore seguenti per generare codice in modalità kernel o in modalità utente che è possibile usare per registrare gli eventi. È anche possibile richiedere al compilatore di generare codice per supportare la scrittura di eventi nei computer prima di Windows Vista. Se l'applicazione è scritta in C#, il compilatore può generare una classe C# che è possibile usare per registrare gli eventi. Questi argomenti sono disponibili a partire da MC versione 1.12.7051 fornita con la versione Windows 7 di Window SDK.
 
 <dl> <dt>
 
@@ -167,11 +167,11 @@ pFnUserFunction(
 
 
 
-È anche necessario includere la direttiva seguente nel codice.
+È inoltre necessario includere la direttiva seguente nel codice.
 
 `#define MCGEN_CALLOUT pFnUserFunction`
 
-È consigliabile mantenere il più breve possibile l'implementazione per evitare problemi di registrazione. il servizio non logerà più gli eventi finché la funzione non viene restituita.
+È consigliabile mantenere l'implementazione il più breve possibile per evitare problemi di registrazione. Il servizio non registra più gli eventi fino a quando la funzione non viene restituita.
 
 È possibile usare questo argomento con **l'argomento -km** o **-um.**
 
@@ -194,14 +194,14 @@ Usare questo argomento per fare in modo che il compilatore generi una classe C# 
 <span id="-km"></span><span id="-KM"></span>**-km**
 </dt> <dd>
 
-Usare questo argomento per fare in modo che il compilatore generi il codice in modalità kernel che verrà utilizzato per registrare gli eventi definiti nel manifesto.
+Usare questo argomento per fare in modo che il compilatore generi il codice in modalità kernel da usare per registrare gli eventi definiti nel manifesto.
 
 </dd> <dt>
 
 <span id="-mof"></span><span id="-MOF"></span>**-mof**
 </dt> <dd>
 
-Deprecato. Usare questo argomento per fare in modo che il compilatore generi codice che è possibile usare per registrare gli eventi nei computer prima di Windows Vista. Questa opzione crea anche un file MOF che contiene le classi MOF per ogni evento definito nel manifesto. Per registrare le classi nel file MOF in modo che i consumer possano decodificare gli eventi, usare il compilatore MOF (Mofcomp.exe). Per informazioni dettagliate sull'uso del compilatore MOF, [vedere Managed Object Format](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Deprecato. Usare questo argomento per fare in modo che il compilatore generi codice che è possibile usare per registrare eventi nei computer prima di Windows Vista. Questa opzione crea anche un file MOF che contiene le classi MOF per ogni evento definito nel manifesto. Per registrare le classi nel file MOF in modo che i consumer possano decodificare gli eventi, usare il compilatore MOF (Mofcomp.exe). Per informazioni dettagliate sull'uso del compilatore MOF, [vedere Managed Object Format](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 Per usare questa opzione, è necessario rispettare le restrizioni seguenti:
 
@@ -210,8 +210,8 @@ Per usare questa opzione, è necessario rispettare le restrizioni seguenti:
 -   I dati del modello a cui fa riferimento l'evento non possono contenere:
     -   Elementi di dati che specificano i tipi di input win:Binary o win:SYSTEMTIME
     -   Strutture
-    -   Matrici con dimensioni variabili; È tuttavia possibile specificare matrici a lunghezza fissa
-    -   I tipi di dati string non possono specificare l'attributo length
+    -   Matrici di dimensioni variabili; È tuttavia possibile specificare matrici a lunghezza fissa
+    -   I tipi di dati stringa non possono specificare l'attributo length
 
 È necessario usare questo argomento con **l'argomento -um**, **-cs**, **-css** o **-km**
 
@@ -240,19 +240,19 @@ Il nome predefinito per una macro di registrazione è EventWrite *SymbolName*, d
 <span id="-um"></span><span id="-UM"></span>**-um**
 </dt> <dd>
 
-Usare questo argomento per fare in modo che il compilatore generi il codice in modalità utente da usare per registrare gli eventi definiti nel manifesto.
+Usare questo argomento per fare in modo che il compilatore generi il codice in modalità utente che verrà utilizzato per registrare gli eventi definiti nel manifesto.
 
 </dd> </dl>
 
-Per fare in modo che il compilatore generi il codice di registrazione, è necessario specificare l'argomento **-um**, **-cs**, **-css** o **-km.** Questi argomenti si escludono a vicenda.
+Per fare in modo che il compilatore generi il codice di registrazione, è necessario specificare l'argomento **-um**, **-cs**, **-css** o **-km.** questi argomenti si escludono a vicenda.
 
 Per specificare dove inserire i file con estensione h, cs e mof generati dal compilatore, usare **l'argomento -h.** Se non si specifica **l'argomento -h,** i file vengono inseriti nella cartella corrente.
 
-Per specificare dove inserire il file RC e i file binari (che contengono le risorse di metadati) generati dal compilatore, usare **l'argomento -r.** Se non si specifica **l'argomento -r,** i file vengono inseriti nella cartella corrente.
+Per specificare dove inserire il file RC e i file binari (che contengono le risorse dei metadati) generati dal compilatore, usare **l'argomento -r.** Se non si specifica **l'argomento -r,** i file vengono inseriti nella cartella corrente.
 
 Il compilatore usa il nome di base del file di input come nome di base dei file generati. Per specificare un nome di base, usare **l'argomento -z.**
 
-### <a name="arguments-specific-to-message-text-files"></a>Argomenti specifici dei file di testo dei messaggi
+### <a name="arguments-specific-to-message-text-files"></a>Argomenti specifici per i file di testo dei messaggi
 
 <dl> <dt>
 
@@ -273,21 +273,21 @@ Deprecato. Usare questo argomento per specificare che i messaggi nel file bin di
 <span id="-b"></span><span id="-B"></span>**-b**
 </dt> <dd>
 
-Usare questo argomento per fare in modo che il compilatore usi il nome di base *del* file di input del nome del file con estensione bin. L'impostazione predefinita è l'uso di "MSG".
+Usare questo argomento per fare in modo che il compilatore usi il nome di base del file di *input* del nome file per i nomi di file con estensione bin. L'impostazione predefinita è l'uso di "MSG".
 
 </dd> <dt>
 
 <span id="-d"></span><span id="-D"></span>**-d**
 </dt> <dd>
 
-Usare questo argomento per usare valori decimali per le costanti Severity e Facility nel file di intestazione anziché valori esadecimali.
+Usare questo argomento per usare valori decimali per le costanti Severity e Facility nel file di intestazione anziché per i valori esadecimali.
 
 </dd> <dt>
 
 <span id="-n"></span><span id="-N"></span>**-n**
 </dt> <dd>
 
-Utilizzare questo argomento per specificare che i messaggi terminano immediatamente dopo il corpo del messaggio. L'impostazione predefinita è terminare il corpo del messaggio con un CR/LF.
+Usare questo argomento per specificare che i messaggi terminino immediatamente dopo il corpo del messaggio. L'impostazione predefinita è terminare il corpo del messaggio con CR/LF.
 
 </dd> <dt>
 
@@ -315,14 +315,14 @@ Usare questo argomento per specificare che i messaggi nel file bin di output dev
 <span id="-v"></span><span id="-V"></span>**-v**
 </dt> <dd>
 
-Usare questo argomento per generare output dettagliato.
+Usare questo argomento per generare un output dettagliato.
 
 </dd> <dt>
 
 <span id="-x_path"></span><span id="-X_PATH"></span>**-x** *path*
 </dt> <dd>
 
-Usare questo argomento per specificare la cartella in cui il compilatore deve inserire il file di inclusione C con estensione dbg. Il file con estensione dbg esegue il mapping degli ID messaggio ai relativi nomi simbolici.
+Usare questo argomento per specificare la cartella in cui si vuole che il compilatore inseri il file di inclusione C con estensione dbg. Il file con estensione dbg esegue il mapping degli ID messaggio ai relativi nomi simbolici.
 
 </dd> </dl>
 
@@ -336,9 +336,9 @@ Il compilatore accetta come input un file manifesto (con estensione man) o un fi
 
     File di intestazione C/C++ che contiene i descrittori di evento, il GUID del provider e i nomi dei simboli a cui si fa riferimento nell'applicazione.
 
--   *nome file* TEMP.bin
+-   *filename* TEMP.bin
 
-    File di risorse binario che contiene i metadati del provider e dell'evento. Si tratta della risorsa modello, che è identificato dal suffisso TEMP del nome di base del file.
+    File di risorse binario che contiene i metadati del provider e dell'evento. Si tratta della risorsa modello, che è contrassegnata dal suffisso TEMP del nome di base del file.
 
 -   Msg00001.bin
 
@@ -346,7 +346,7 @@ Il compilatore accetta come input un file manifesto (con estensione man) o un fi
 
 -   *filename*.rc
 
-    Script del compilatore di risorse che contiene le istruzioni per includere ogni file con estensione bin come risorsa.
+    Script del compilatore di risorse che contiene le istruzioni per includere ogni file bin come risorsa.
 
 Per gli argomenti che accettano un percorso, il percorso può essere assoluto, relativo o UNC e può contenere variabili di ambiente.
 
@@ -356,7 +356,7 @@ L Windows SDK include il compilatore (mc.exe) nella \\ cartella Bin.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente compila un manifesto usando le impostazioni predefinite del compilatore.
+Nell'esempio seguente viene compilato un manifesto usando le impostazioni predefinite del compilatore.
 
 ``` syntax
 mc spooler.man

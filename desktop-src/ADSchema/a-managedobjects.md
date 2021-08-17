@@ -59,7 +59,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -122,7 +122,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -143,7 +143,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -164,7 +164,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -185,7 +185,7 @@ Contiene l'elenco di oggetti gestiti dall'utente. Gli oggetti elencati sono quel
 | ID collegamento                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

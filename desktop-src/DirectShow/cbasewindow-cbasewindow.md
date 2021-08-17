@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 05205750810294076bf005d0e5b73fda6b2143d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d8873ee896d910d1596138a8d116c93ae0190534bac48b6ceb19165074f07b72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016749"
 ---
 # <a name="cbasewindowcbasewindow-constructor"></a>Costruttore CBaseWindow.CBaseWindow
 
@@ -61,7 +61,7 @@ Valore booleano che specifica la [**variabile membro CBaseWindow::m \_ bDoPostTo
 
 Dopo aver creato l'oggetto, chiamare il metodo [**CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) per creare la finestra. **PrepareWindow** è un metodo virtuale. Chiama [**CBaseWindow::InitialiseWindow**](cbasewindow-initialisewindow.md), anche un metodo virtuale. Questi metodi sono separati dal costruttore in modo che le classi derivate possano eseguirne l'override, se necessario.
 
-Se il valore del *parametro bDoGetDC* è **TRUE,** l'oggetto recupera un handle per il contesto di dispositivo della finestra e lo archivia nella variabile membro `CBaseWindow` [**CBaseWindow::m \_ hdc.**](cbasewindow-m-hdc.md) L'oggetto crea anche un controller di dominio di memoria compatibile, archiviato nella variabile membro [**CBaseWindow::m \_ MemoryDC.**](cbasewindow-m-memorydc.md) Queste azioni si verificano **nel metodo InitialiseWindow.**
+Se il valore del parametro *bDoGetDC* è **TRUE,** l'oggetto recupera un handle per il contesto di dispositivo della finestra e lo archivia nella variabile membro `CBaseWindow` [**CBaseWindow::m \_ hdc.**](cbasewindow-m-hdc.md) L'oggetto crea anche un controller di dominio di memoria compatibile, archiviato nella variabile membro [**CBaseWindow::m \_ MemoryDC.**](cbasewindow-m-memorydc.md) Queste azioni si verificano **nel metodo InitialiseWindow.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ Se il valore del *parametro bDoGetDC* è **TRUE,** l'oggetto recupera un handle 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 4c42f638-e909-4e40-bd35-572910294e4d
 title: Campi BoundingFrustum
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 121bbc72fd665e0c96c4db76811e95949891c905
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b8939cfd950ea2571043f67b30563ec1d9bbf5013d274b5d8031ade9611901d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118548"
 ---
 # <a name="boundingfrustum-fields"></a>Campi BoundingFrustum
 
@@ -17,15 +17,15 @@ ms.locfileid: "106309423"
 
 | Campo                                                            | Descrizione                                                                                                  |
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**BottomSlope**](boundingfrustum-bottomslope.md)<br/>    | Pendenza della parte inferiore del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                        |
-| [**\_conteggio angoli**](boundingfrustum-corner-count.md)<br/> | Numero di angoli che definiscono [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                    |
-| [**Far**](boundingfrustum-far.md)<br/>                    | Distanza del piano lontano dall'origine del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>  |
-| [**LeftSlope**](boundingfrustum-leftslope.md)<br/>        | Pendenza del lato sinistro del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                     |
-| [**Quasi**](boundingfrustum-near.md)<br/>                  | Distanza del piano vicino di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) dalla relativa origine.<br/> |
-| [**Orientamento**](boundingfrustum-orientation.md)<br/>    | Orientamento del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                |
-| [**Origine**](boundingfrustum-origin.md)<br/>              | Origine del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                     |
-| [**RightSlope**](boundingfrustum-rightslope.md)<br/>      | Pendio del lato destro di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                    |
-| [**Inclinazione**](boundingfrustum-topslope.md)<br/>          | Pendenza della parte superiore di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                           |
+| [**BottomSlope**](boundingfrustum-bottomslope.md)<br/>    | Pendenza della parte inferiore di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                        |
+| [**CONTEGGIO \_ DEGLI ANGOLI**](boundingfrustum-corner-count.md)<br/> | Numero di angoli che definiscono [**l'oggetto BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>                    |
+| [**Far**](boundingfrustum-far.md)<br/>                    | Distanza del piano lontano dall'origine di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>  |
+| [**LeftSlope**](boundingfrustum-leftslope.md)<br/>        | Pendenza del lato sinistro di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                     |
+| [**Vicino**](boundingfrustum-near.md)<br/>                  | Distanza del piano vicino di [**BoundingFrustum dalla**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) relativa origine.<br/> |
+| [**Orientamento**](boundingfrustum-orientation.md)<br/>    | Orientamento dell'oggetto [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>                                |
+| [**Origine**](boundingfrustum-origin.md)<br/>              | Origine dell'oggetto [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>                                     |
+| [**RightSlope**](boundingfrustum-rightslope.md)<br/>      | Pendenza del lato destro di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                    |
+| [**TopSlope**](boundingfrustum-topslope.md)<br/>          | Pendenza della parte superiore di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                           |
 
 
 
@@ -35,7 +35,7 @@ ms.locfileid: "106309423"
 
 <dl> <dt>
 
-[BoundingFrustum](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
+[Boundingfrustum](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSVirtualDesktopServerSettings
-description: Contiene informazioni di configurazione per un server di Host di virtualizzazione Desktop remoto (host di virtualizzazione Desktop remoto).
+title: Win32_TSVirtualDesktopServerSettings classe
+description: Contiene informazioni di configurazione per Desktop remoto server Host di virtualizzazione Desktop remoto.
 ms.assetid: 749018aa-a8aa-433e-985b-40b44ef8aa7f
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSVirtualDesktopServerSettings Servizi Desktop remoto
-- Classe Win32_TSVirtualDesktopServerSettings Servizi Desktop remoto, descritta
+- Win32_TSVirtualDesktopServerSettings classe Servizi Desktop remoto
+- Win32_TSVirtualDesktopServerSettings classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c39635aee7b32430ace0ead0e3b007051a3c049d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f40e7d51ee0c92e50afca023629bb92de9f506b3e47ee9e520aa16c09640375b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137464"
 ---
-# <a name="win32_tsvirtualdesktopserversettings-class"></a>Win32 \_ TSVirtualDesktopServerSettings (classe)
+# <a name="win32_tsvirtualdesktopserversettings-class"></a>Classe \_ Win32 TSVirtualDesktopServerSettings
 
-Contiene informazioni di configurazione per un server di Host di virtualizzazione Desktop remoto (host di virtualizzazione Desktop remoto).
+Contiene informazioni di configurazione per Desktop remoto server Host di virtualizzazione Desktop remoto.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -46,26 +46,26 @@ class Win32_TSVirtualDesktopServerSettings
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSVirtualDesktopServerSettings** presenta questi tipi di membri:
+La **classe \_ Win32 TSVirtualDesktopServerSettings** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSVirtualDesktopServerSettings** dispone di queste proprietà.
+La **classe \_ Win32 TSVirtualDesktopServerSettings** ha queste proprietà.
 
 <dl> <dt>
 
 **Concorrenza**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Il numero massimo consentito di richieste di provisioning simultanee per questo server desktop virtuale.
+Numero massimo di richieste di provisioning simultanee consentite per questo server Desktop virtuale.
 
 </dd> <dt>
 
@@ -78,20 +78,20 @@ Tipo di dati: **sint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se impostato su 0, indica che la proprietà **SessionBrokerName** è configurata dal server. Se impostato su 1, indica che la proprietà **SessionBrokerName** è configurata da criteri di gruppo.
+Se impostato su 0, indica che la **proprietà SessionBrokerName** è configurata dal server. Se impostato su 1, indica che la **proprietà SessionBrokerName** è configurata da criteri di gruppo.
 
 </dd> <dt>
 
 **SessionBrokerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Nome distinto completo del broker di sessione per il server host di virtualizzazione Desktop remoto.
+Nome distinto completo del broker di sessione per il server Host di virtualizzazione Desktop remoto.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Nome distinto completo del broker di sessione per il server host di virtualizzaz
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                             |
 | Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 

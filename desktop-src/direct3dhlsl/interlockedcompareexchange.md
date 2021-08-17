@@ -1,6 +1,6 @@
 ---
-title: Funzione InterlockedCompareExchange (riferimento HLSL)
-description: Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input. Il valore originale è impostato sul valore originale della destinazione.
+title: Funzione InterlockedCompareExchange (informazioni di riferimento su HLSL)
+description: Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input. Il valore originale viene impostato sul valore originale della destinazione.
 ms.assetid: 85d1ba58-8e79-41cd-abd6-7ffff59839c7
 keywords:
 - Funzione InterlockedCompareExchange HLSL
@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74bc189996752d754599bf4547e8baa4d9fb74cc
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: 46cf8c3fb0e3bc0b21c5bf8bc3d946851ce213b765731518d252495250071228
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104993317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119255"
 ---
-# <a name="interlockedcompareexchange-function-hlsl-reference"></a>Funzione InterlockedCompareExchange (riferimento HLSL)
+# <a name="interlockedcompareexchange-function-hlsl-reference"></a>Funzione InterlockedCompareExchange (informazioni di riferimento su HLSL)
 
-Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input. Il valore originale è impostato sul valore originale della destinazione.
+Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input. Il valore originale viene impostato sul valore originale della destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void InterlockedCompareExchange(
-  in  R dest,
-  in  T compare_value,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T compare_value,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -39,7 +39,7 @@ void InterlockedCompareExchange(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **R**
@@ -48,7 +48,7 @@ Indirizzo di destinazione.
 
 </dd> <dt>
 
-*Confronta \_ valore* \[ in\]
+*confrontare \_ il valore* \[ in\]
 </dt> <dd>
 
 Tipo: **T**
@@ -57,7 +57,7 @@ Valore di confronto.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **T**
@@ -66,7 +66,7 @@ Valore di input.
 
 </dd> <dt>
 
-*\_ valore originale* in \[ uscita\]
+*valore \_ originale* \[ out\]
 </dt> <dd>
 
 Tipo: **T**
@@ -81,14 +81,14 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Confronta in modo atomico il valore a cui fa *riferimento dest* con *\_ valore di confronto*, archivia il *valore* nella posizione a cui fa riferimento *dest* se i valori corrispondono, restituisce il valore originale di *dest* nel *\_ valore originale*. Questa operazione può essere eseguita solo su risorse tipizzate **int** o **uint** e variabili di memoria condivisa. Esistono due possibili usi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul Registro di memoria condiviso a cui fa riferimento *dest*. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento *dest*. Questa operazione è disponibile solo se R è leggibile e scrivibile.
+Confronta atomicamente il valore a cui fa  riferimento *dest* con il valore *compare \_*, archivia il valore nella posizione a cui fa riferimento *dest* se i valori corrispondono, restituisce il valore originale *di dest* nel *valore \_ originale.* Questa operazione può essere eseguita solo su **risorse tipiche int** o **uint** e variabili di memoria condivisa. Questa funzione può essere utilizzata in due modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento *dest*. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento *dest*. Questa operazione è disponibile solo quando R è leggibile e scrivibile.
 
 > [!Note]  
-> Se si chiama **InterlockedCompareExchange** in un ciclo [**for**](dx-graphics-hlsl-for.md) o [**while**](dx-graphics-hlsl-while.md) compute shader, per la corretta compilazione è necessario usare l'attributo **\[ allow \_ \_ Condition \] UAV** in quel ciclo.
+> Se si chiama **InterlockedCompareExchange** in un ciclo [**for**](dx-graphics-hlsl-for.md) o [**while**](dx-graphics-hlsl-while.md) compute shader, per compilare correttamente, è necessario usare l'attributo **\[ allow \_ uav \_ condition \]** in tale ciclo.
 
- 
+ 
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -96,23 +96,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -121,12 +121,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

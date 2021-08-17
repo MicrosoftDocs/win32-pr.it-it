@@ -5,12 +5,12 @@ ms.assetid: F670D15D-BC0F-4F90-99C1-A35192FE8980
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5371926b38415a84803155c67ea70ed902b915
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 2b8d6e9b4d7ae9ad4b93bae5cf29749c293bf7f55ea7fa35a1e1ca71040218e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123512"
 ---
 # <a name="volume-tiled-resources-direct3d-12"></a>Risorse affiancate del volume (Direct3D 12)
 
@@ -20,7 +20,7 @@ Le trame di volume (3D) possono essere usate come risorse affiancate, notando ch
 
 Le risorse affiancate disaccoccollano un oggetto risorsa Direct3D dalla memoria di backup (le risorse in passato avevano una relazione 1:1 con la memoria di backup). Ciò consente un'ampia gamma di scenari interessanti, ad esempio lo streaming dei dati di trama e il riutilizzo o la riduzione dell'utilizzo della memoria.
 
-Le risorse affiancate di trama 2D sono supportate in Direct3D 11.2. Il supporto facoltativo per le trame affiancate 3D è disponibile per Direct3D 12 e Direct3D 11.3 (vedere [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier)).
+Le risorse affiancate con trama 2D sono supportate in Direct3D 11.2. Il supporto facoltativo per le trame affiancate 3D è disponibile per Direct3D 12 e Direct3D 11.3 (vedere [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier)).
 
 Le dimensioni tipiche delle risorse usate nella affiancamento sono 4 x 4 riquadri per le trame 2D e 4 x 4 x 4 riquadri per le trame 3D.
 
@@ -155,7 +155,7 @@ Metodi
 * [**ID3D12GraphicsCommandList::CopyTiles:**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytiles) copia i riquadri dal buffer alla risorsa affiancata o viceversa.
 * [**ID3D12CommandQueue::UpdateTileMappings:**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings) aggiorna i mapping delle posizioni dei riquadri nelle risorse affiancate alle posizioni di memoria in un heap delle risorse.
 * [**ID3D12CommandQueue::CopyTileMappings:**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-copytilemappings) copia i mapping da una risorsa affiancata di origine a una risorsa affiancata di destinazione.
-* [**ID3D12Device::GetResourceTiling:**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) ottiene informazioni su come una risorsa affiancata viene suddivisa in riquadri.
+* [**ID3D12Device::GetResourceTiling:**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) ottiene informazioni sul modo in cui una risorsa affiancata viene suddivisa in riquadri.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

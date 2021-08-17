@@ -1,19 +1,19 @@
 ---
 title: Esempio di codice C/C++ avvio di un'attività
-description: In questo esempio si tenta di eseguire un'attività esistente. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+description: Questo esempio tenta di eseguire un'attività esistente. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: e4f38f8a-3488-4802-913b-f627ecca8bb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c9fa9ba112b642aa5e14abc3b408c1536c527d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e11abcbd4581db306b8ca60f478e9b2927e531b7dd2fd8461742f4dc1c93a169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139624"
 ---
 # <a name="cc-code-example-starting-a-task"></a>Esempio di codice C/C++: avvio di un'attività
 
-In questo esempio si tenta di eseguire un'attività esistente. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio tenta di eseguire un'attività esistente. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -101,12 +101,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

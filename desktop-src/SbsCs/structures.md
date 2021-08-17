@@ -4,12 +4,12 @@ ms.assetid: e35ca5c8-74bc-4c79-9813-24ff3b4ea631
 title: Strutture di assembly side-by-side
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7983df818f5c4828670567d423d67d2eedefa527
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: f29b77ee729d630eb0d0d50caa89c8ef4f8af0de1f991d163807ba88fcd58c36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141794"
 ---
 # <a name="side-by-side-assembly-structures"></a>Strutture di assembly side-by-side
 

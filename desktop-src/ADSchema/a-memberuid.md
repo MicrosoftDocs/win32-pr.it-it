@@ -118,7 +118,7 @@ Contiene i nomi degli account di accesso dei membri di un gruppo.
 | ID collegamento                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| A valore singolo       | Falso                                         |
+| Is-Single-Valued       | Falso                                         |
 | Indicizzato             | Falso                                         |
 | Nel catalogo globale      | Falso                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                  |

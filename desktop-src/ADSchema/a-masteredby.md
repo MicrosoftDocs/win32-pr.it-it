@@ -122,7 +122,7 @@ Collegamento all'indietro per l'attributo Has-Master-NCs. Nome distinto per i re
 | ID collegamento                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -143,7 +143,7 @@ Collegamento all'indietro per l'attributo Has-Master-NCs. Nome distinto per i re
 | ID collegamento                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -164,7 +164,7 @@ Collegamento all'indietro per l'attributo Has-Master-NCs. Nome distinto per i re
 | ID collegamento                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -185,7 +185,7 @@ Collegamento all'indietro per l'attributo Has-Master-NCs. Nome distinto per i re
 | ID collegamento                | 77                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

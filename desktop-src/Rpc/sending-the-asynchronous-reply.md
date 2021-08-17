@@ -13,12 +13,12 @@ ms.locfileid: "118925579"
 ---
 # <a name="sending-the-asynchronous-reply"></a>Invio della risposta asincrona
 
-Al termine della chiamata asincrona, il server invia una risposta al client chiamando la [**funzione RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) e passando l'handle asincrono. Questa chiamata è necessaria anche se la chiamata asincrona ha un valore restituito void e nessun \[ parametro \] out. Se la funzione ha un valore restituito, viene passata per riferimento a **RpcAsyncCompleteCall**.
+Al termine della chiamata asincrona, il server invia una risposta al client chiamando la [**funzione RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) e passando l'handle asincrono. Questa chiamata è necessaria anche se la chiamata asincrona ha un valore restituito void e nessun \[ parametro \] out. Se la funzione ha un valore restituito, viene passata per riferimento a **RpcAsyncCompleteCall.**
 
-Quando il server chiama [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) o **RpcAsyncAbortCall** o una chiamata viene completata perché è stata generata un'eccezione nella routine di gestione server, la libreria di runtime RPC elimina automaticamente l'handle asincrono del server.
+Quando il server chiama [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) o **RpcAsyncAbortCall** oppure una chiamata viene completata perché è stata generata un'eccezione nella routine server-manager, la libreria di runtime RPC elimina automaticamente l'handle asincrono del server.
 
 > [!Note]  
-> Il server deve completare l'aggiornamento dei \[ parametri in, out \] e out prima di chiamare \[ \] **RpcAsyncCompleteCall**. Non è possibile apportare modifiche a tali parametri o all'handle asincrono dopo la chiamata **a RpcAsyncCompleteCall.** Se la **chiamata di funzione RpcAsyncCompleteCall** ha esito negativo, il runtime RPC libera i parametri.
+> Il server deve completare l'aggiornamento \[ dei parametri in, out \] e out prima di chiamare \[ \] **RpcAsyncCompleteCall.** Non è possibile apportare modifiche a tali parametri o all'handle asincrono dopo **la chiamata a RpcAsyncCompleteCall.** Se la **chiamata alla funzione RpcAsyncCompleteCall** ha esito negativo, il runtime RPC libera i parametri.
 
  
 
@@ -88,10 +88,10 @@ void AsyncFunc(IN PRPC_ASYNC_STATE pAsync,
 
 
 
-Per motivi di semplicità, questa routine server asincrona non elabora i dati effettivi. Si limita a mettere in sospensione per un po'.
+Per semplicità, questa routine asincrona del server non elabora i dati effettivi. Si limita a mettere in sospensione per un po' di tempo.
 
 > [!Note]  
-> La **funzione RpcAsyncCompleteCall** può essere chiamata sul thread che ha ricevuto la chiamata o su qualsiasi altro thread del processo. Se tutti i dati necessari per completare la chiamata sono immediatamente disponibili, il server può compilarli nello stesso thread e chiamare **RpcAsyncCompleteCall** nello stesso thread. Questo approccio consente di risparmiare un certo cambio di contesto e migliora le prestazioni. Tali chiamate vengono chiamate in modo opportunistico asincrono.
+> La **funzione RpcAsyncCompleteCall** può essere chiamata sul thread che ha ricevuto la chiamata o su qualsiasi altro thread del processo. Se tutti i dati necessari per completare la chiamata sono immediatamente disponibili, il server può compilarli nello stesso thread e chiamare **RpcAsyncCompleteCall** sullo stesso thread. Questo approccio consente di risparmiare alcuni cambio di contesto e migliora le prestazioni. Tali chiamate vengono chiamate in modo opportunistico asincrono.
 
  
 

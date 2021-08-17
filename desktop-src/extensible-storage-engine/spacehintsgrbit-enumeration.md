@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione SpaceHintsGrbit'
+description: Altre informazioni sull'enumerazione SpaceHintsGrbit
 title: Enumerazione SpaceHintsGrbit
 TOCTitle: SpaceHintsGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SpaceHintsGrbit
@@ -44,21 +44,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ffc78aab444c73f7ff0eae7ff0eaa84e134ee9bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a2ee172355b48e64f62f2b18477373269d81ae060460ad34ff45dbad33a91b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978531"
 ---
 # <a name="spacehintsgrbit-enumeration"></a>Enumerazione SpaceHintsGrbit
 
-Opzioni per [JET_SPACEHINTS](./jet-spacehints-class.md).
+Opzioni [per](./jet-spacehints-class.md)JET_SPACEHINTS .
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -94,17 +94,17 @@ public enum SpaceHintsGrbit
 <tr class="even">
 <td></td>
 <td>SpaceHintUtilizeParentSpace</td>
-<td>In questo modo vengono modificati i criteri di allocazione interni per ottenere lo spazio gerarchicamente dall'elemento padre diretto di un albero B.</td>
+<td>Questo modifica i criteri di allocazione interna per ottenere spazio gerarchicamente dall'elemento padre diretto di un albero B.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CreateHintAppendSequential</td>
-<td>Questo bit consente di aumentare il comportamento di suddivisione in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</td>
+<td>Questo bit consentirà l'aumento del comportamento di divisione append in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CreateHintHotpointSequential</td>
-<td>Questo bit consente di aumentare il comportamento di suddivisione Hotpoint in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</td>
+<td>Questo bit consentirà l'aumento del comportamento di suddivisione hotpoint in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -114,12 +114,12 @@ public enum SpaceHintsGrbit
 <tr class="even">
 <td></td>
 <td>RetrieveHintTableScanForward</td>
-<td>Impostando questo valore, il client indica che l'analisi sequenziale in base è il modello di utilizzo predominante della tabella.</td>
+<td>Impostando questo valore, il client indica che l'analisi sequenziale in avanti è il modello di utilizzo predominante di questa tabella.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveHintTableScanBackward</td>
-<td>Impostando questo valore, il client indica che l'analisi sequenziale all'indietro è il modello di utilizzo predominante della tabella.</td>
+<td>Impostando questo valore, il client indica che l'analisi sequenziale all'indietro è il modello di utilizzo predominante di questa tabella.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -134,7 +134,7 @@ public enum SpaceHintsGrbit
 <tr class="even">
 <td></td>
 <td>DeleteHintTableSequential</td>
-<td>L'applicazione prevede che la tabella venga pulita in modo sequenziale (dalla chiave più bassa alla chiave più alta).</td>
+<td>L'applicazione prevede che la tabella sia pulita in ordine sequenziale (dalla chiave più bassa alla chiave più alta).</td>
 </tr>
 </tbody>
 </table>
@@ -144,4 +144,4 @@ public enum SpaceHintsGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

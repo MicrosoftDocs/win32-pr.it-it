@@ -1,7 +1,7 @@
 ---
-description: Risolvere una stringa host nell'indirizzo IP
+description: Risolvere una stringa host nel relativo indirizzo IP
 ms.assetid: 32d70f10-803b-484d-a9e0-d4c61a8d897f
-title: dnsResolveEx (funzione)
+title: Funzione dnsResolveEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,22 +12,22 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1c63ba3e20653c41864394d9c563c851f2aab5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0f0100367d4fad6d6e0b013e5d552f733086e6ddd5bc720779ef1fb5b65cdce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133224"
 ---
-# <a name="dnsresolveex-function"></a>dnsResolveEx (funzione)
+# <a name="dnsresolveex-function"></a>Funzione dnsResolveEx
 
-Risolvere una stringa host nell'indirizzo IP
+Risolvere una stringa host nel relativo indirizzo IP
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*host* 
+*Host* 
 </dt> <dd>
 
 Stringa contenente l'host HTTP fornito a FindProxyForUrl.
@@ -40,7 +40,7 @@ Stringa delimitata da punto e virgola contenente indirizzi IPv6 e IPv4 o una str
 
 ## <a name="remarks"></a>Commenti
 
-Gli implementatori di FindProxyforURLEx devono aggiungere codice che suddivide la stringa di indirizzi IP delimitati da punto e virgola in indirizzi distinti.
+Gli implementatori di FindProxyforURLEx devono aggiungere codice che suddivide la stringa di indirizzi IP delimitati da punto e virgola in indirizzi separati.
 
 ## <a name="examples"></a>Esempi
 
@@ -53,7 +53,7 @@ dnsResolveEx("testmachine1");
 
 <dl> <dt>
 
-[Definizioni API helper proxy compatibili con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definizioni dell'API helper proxy con supporto IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
 [Estensioni IPv6 per il formato di file di configurazione automatica dello strumento di navigazione](ipv6-extensions-to-navigator-auto-config-file-format.md)

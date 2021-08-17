@@ -1,5 +1,5 @@
 ---
-description: La tabella InstallExecuteSequence elenca le azioni eseguite quando il programma di installazione esegue l'azione INSTALL di primo livello. Vedere Installation Procedure Tables Group, Using a Sequence Table (Gruppo di tabelle delle procedure di installazione), Using a Sequence Table (Uso di una tabella di sequenza) e Sequence Table Detailed Example (Esempio dettagliato della tabella sequence).
+description: La tabella InstallExecuteSequence elenca le azioni eseguite quando il programma di installazione esegue l'azione INSTALL di primo livello. Vedere Installation Procedure Tables Group, Using a Sequence Table e l'esempio dettagliato della tabella sequence.
 ms.assetid: cdd4f02a-cfe6-4a23-9fc2-f4cb810379aa
 title: Importazione di InstallExecuteSequence
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "119430771"
 ---
 # <a name="importing-the-installexecutesequence"></a>Importazione di InstallExecuteSequence
 
-La [tabella InstallExecuteSequence](installexecutesequence-table.md) elenca le azioni eseguite quando il programma di installazione esegue l'azione [INSTALL di primo livello.](install-action.md) Vedere [Installation Procedure Tables Group](installation-procedure-tables-group.md), Using a Sequence [Table](using-a-sequence-table.md)e Sequence [Table Detailed Example](sequence-table-detailed-example.md).
+La [tabella InstallExecuteSequence](installexecutesequence-table.md) elenca le azioni eseguite quando il programma di installazione esegue l'azione [INSTALL di primo livello.](install-action.md) Vedere [Installation Procedure Tables Group](installation-procedure-tables-group.md), Using a Sequence [Table](using-a-sequence-table.md)e Sequence [Table Detailed Example.](sequence-table-detailed-example.md)
 
-Se nella sezione Importazione di un [database](importing-a-blank-database.md) vuoto è stato usato uisample.msi da Windows Installer SDK, le tabelle di sequenza nella copia di MNP2000.msi contengono già le sequenze di azione suggerite descritte in [Uso](using-a-sequence-table.md)di una tabella di sequenza . Non sono necessarie modifiche a queste sequenze per creare il Blocco note di installazione.
+Se nella sezione Importazione di un [database](importing-a-blank-database.md) vuoto è stato usato uisample.msi da Windows Installer SDK, le tabelle di sequenza nella copia di MNP2000.msi contengono già le sequenze di azione suggerite descritte in [Uso](using-a-sequence-table.md)di una tabella di sequenza. Non sono necessarie modifiche a queste sequenze per creare il Blocco note di installazione.
 
 Usare l'editor di database per MNP2000.msi e immettere i dati seguenti nella tabella InstallExecuteSequence.
 
@@ -43,7 +43,7 @@ Usare l'editor di database per MNP2000.msi e immettere i dati seguenti nella tab
 | InstallODBC              |               | 5400     |
 | InstallServices          | VersionNT     | 5800     |
 | InstallValidate          |               | 1400     |
-| LaunchConditions         |               | 100      |
+| Condizioni di avvio         |               | 100      |
 | MigrateFeatureStates     |               | 1200     |
 | MoveFiles                |               | 3800     |
 | PatchFiles               |               | 4090     |
@@ -78,10 +78,10 @@ Usare l'editor di database per MNP2000.msi e immettere i dati seguenti nella tab
 | UnpublishComponents      |               | 1700     |
 | UnpublishFeatures        |               | 1800     |
 | UnregisterClassInfo      |               | 2700     |
-| UnregisterComPlus        |               | 2100     |
+| Annullare la registrazione diComPlus        |               | 2100     |
 | UnregisterExtensionInfo  |               | 2800     |
 | UnregisterFonts          |               | 2500     |
-| UnregisterMIMEInfo       |               | 3000     |
+| Annullare la registrazione diMIMEInfo       |               | 3000     |
 | UnregisterProgIdInfo     |               | 2900     |
 | UnregisterTypeLibraries  |               | 2300     |
 | ValidateProductID        |               | 700      |

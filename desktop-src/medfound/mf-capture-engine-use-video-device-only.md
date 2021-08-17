@@ -1,5 +1,5 @@
 ---
-description: Specifica se il motore di acquisizione acquisisce video ma non l'audio.
+description: Specifica se il motore di acquisizione acquisisce video ma non audio.
 ms.assetid: B0B7A7F2-02F9-46A6-954F-D6E9C3B73A29
 title: MF_CAPTURE_ENGINE_USE_VIDEO_DEVICE_ONLY attributo (Mfcaptureengine.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973970"
 ---
-# <a name="mf_capture_engine_use_video_device_only-attribute"></a>MF \_ CAPTURE ENGINE USE VIDEO DEVICE ONLY \_ \_ \_ \_ \_ ATTRIBUTE
+# <a name="mf_capture_engine_use_video_device_only-attribute"></a>Attributo USE VIDEO DEVICE ONLY DEL MOTORE \_ \_ \_ DI \_ \_ ACQUISIZIONE \_ MF
 
-Specifica se il motore di acquisizione acquisisce video ma non l'audio.
+Specifica se il motore di acquisizione acquisisce video ma non audio.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Specifica se il motore di acquisizione acquisisce video ma non l'audio.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è **TRUE,** il motore di acquisizione non seleziona o usa un dispositivo di acquisizione audio. Impostare questo attributo su **TRUE** se si vuole acquisire video senza audio. Il valore predefinito è **FALSE.**
+Se questo attributo è **TRUE,** il motore di acquisizione non seleziona né usa un dispositivo di acquisizione audio. Impostare questo attributo su **TRUE se** si vuole acquisire video senza audio. Il valore predefinito è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Se questo attributo è **TRUE,** il motore di acquisizione non seleziona o usa u
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del motore di acquisizione](capture-engine-attributes.md)

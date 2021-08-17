@@ -1,11 +1,11 @@
 ---
-title: Proprietà MonthlyTrigger. DaysOfMonth
-description: Per gli script, ottiene o imposta i giorni del mese durante i quali viene eseguita l'attività.
+title: MonthlyTrigger.DaysOfMonth - proprietà
+description: Per lo scripting, ottiene o imposta i giorni del mese durante i quali viene eseguita l'attività.
 ms.assetid: 4da80d0f-ae0c-4e56-b51b-6ee6ab309d7c
 keywords:
-- Utilità di pianificazione proprietà DaysOfMonth
-- Utilità di pianificazione proprietà DaysOfMonth, oggetto MonthlyTrigger
-- Oggetto MonthlyTrigger Utilità di pianificazione, proprietà DaysOfMonth
+- Proprietà DaysOfMonth Utilità di pianificazione
+- Proprietà DaysOfMonth Utilità di pianificazione , oggetto MonthlyTrigger
+- Oggetto MonthlyTrigger Utilità di pianificazione proprietà , DaysOfMonth
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a3bd671266cfbe459218367fadf20fd52f94a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b256295b98105f79b144285d4aec77768f0648fc327be8be29d3f203586fe484
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139404"
 ---
-# <a name="monthlytriggerdaysofmonth-property"></a>Proprietà MonthlyTrigger. DaysOfMonth
+# <a name="monthlytriggerdaysofmonth-property"></a>MonthlyTrigger.DaysOfMonth - proprietà
 
-Per gli script, ottiene o imposta i giorni del mese durante i quali viene eseguita l'attività.
+Per lo scripting, ottiene o imposta i giorni del mese durante i quali viene eseguita l'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -83,7 +83,7 @@ Maschera bit per bit che indica i giorni del mese durante i quali viene eseguita
 
  
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, i giorni del mese vengono specificati utilizzando l'elemento [**DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML personalizzato per un'attività, i giorni del mese vengono specificati usando l'elemento [**DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,9 +91,9 @@ Durante la lettura o la scrittura di un codice XML personalizzato per un'attivit
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
 title: Elenco di controllo dell'esperienza utente per le applicazioni desktop
-description: Ecco una raccolta di alcune importanti linee guida nella Guida all'esperienza utente. È possibile usarlo come elenco di controllo per assicurarsi che l'interfaccia utente del programma osevi questi elementi importanti.
+description: Ecco una raccolta di alcune delle linee guida importanti della Guida all'esperienza utente. È possibile usarlo come elenco di controllo per assicurarsi che l'interfaccia utente del programma osevi questi elementi importanti.
 ms.assetid: 4705a807-5949-4957-8ea6-70871beaf8e0
 ms.topic: article
 ms.date: 10/20/2020
@@ -14,50 +14,50 @@ ms.locfileid: "119332471"
 # <a name="ux-checklist-for-desktop-applications"></a>Elenco di controllo dell'esperienza utente per le applicazioni desktop
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-Ecco una raccolta di alcune importanti linee guida nella Guida all'esperienza utente. È possibile usarlo come elenco di controllo per assicurarsi che l'interfaccia utente del programma osevi questi elementi importanti.
+Ecco una raccolta di alcune delle linee guida importanti della Guida all'esperienza utente. È possibile usarlo come elenco di controllo per assicurarsi che l'interfaccia utente del programma osevi questi elementi importanti.
 
 ## <a name="windows"></a>Windows
 
--   **Supportare la risoluzione Windows effettiva di 800 x 600 pixel.** Per le interfacce utente critiche che devono funzionare in modalità [](glossary.md) provvisoria, supportare una risoluzione effettiva di 640x480 pixel. Assicurarsi di usare lo spazio usato dalla barra delle applicazioni [](glossary.md) riservando 48 pixel verticali relativi per le finestre visualizzate con la barra delle applicazioni.
--   **Ottimizzare i layout delle finestre ridimensionabili per una risoluzione effettiva di 1024 x 768 pixel.** Ridimensionare automaticamente queste finestre per le risoluzioni dello schermo inferiori in modo che sia ancora funzionante.
--   **Assicurarsi di testare le finestre in modalità 96 punti per pollice (dpi) (a 800 x 600 pixel), 120 dpi (a 1024 x 768 pixel) e 144 dpi (a 1200 x 900 pixel).** Verificare la presenza di problemi di layout, ad esempio il ritaglio di controlli, testo e finestre e l'estensione di icone e bitmap.
--   **Per i programmi con scenari di uso touch e mobile, ottimizzare per 120 dpi.** Gli schermi ad alta risoluzione sono attualmente prevalenti nei PC touch e per dispositivi mobili.
--   **Se una finestra è una finestra di proprietà, inizialmente la visualizza "centrata" nella parte superiore della finestra proprietaria.** Mai sotto. Per la visualizzazione successiva, è consigliabile visualizzarla nell'ultima posizione (rispetto alla finestra del proprietario) se questa operazione è più comoda.
--   **Se una finestra è contestuale, visualizzarla sempre accanto all'oggetto da cui è stata avviata.** Tuttavia, posizionarlo fuori strada (preferibilmente offset verso il basso e a destra) in modo che l'oggetto non sia coperto dalla finestra.
+-   **Supporta la risoluzione effettiva Windows minima di 800x600 pixel.** Per le interfacce utente critiche che devono funzionare in modalità [](glossary.md) sicura, supporta una risoluzione effettiva di 640x480 pixel. Assicurarsi di fare attenzione allo spazio usato dalla barra delle [](glossary.md) applicazioni riservando 48 pixel relativi verticali per le finestre visualizzate con la barra delle applicazioni.
+-   **Ottimizzare i layout delle finestre ridimensionabili per una risoluzione effettiva di 1024x768 pixel.** Ridimensionare automaticamente queste finestre per le risoluzioni dello schermo inferiori in modo che sia ancora funzionante.
+-   **Assicurarsi di testare le finestre in modalità 96 punti per pollice (dpi) (a 800x600 pixel), 120 dpi (a 1024 x 768 pixel) e 144 dpi (a 1200x900 pixel).** Verificare la presenza di problemi di layout, ad esempio il ritaglio di controlli, testo e finestre e l'estensione di icone e bitmap.
+-   **Per i programmi con scenari di uso tocco e per dispositivi mobili, ottimizzare per 120 dpi.** Gli schermi con valori dpi alti sono attualmente prevalenti nei PC a tocco e per dispositivi mobili.
+-   **Se una finestra è una finestra di proprietà, inizialmente la visualizza "centrata" nella parte superiore della finestra proprietaria.** Mai sotto. Per la visualizzazione successiva, è consigliabile visualizzarla nell'ultima posizione (relativa alla finestra del proprietario) se questa operazione è probabilmente più pratica.
+-   **Se una finestra è contestuale, visualizzarla sempre accanto all'oggetto da cui è stata avviata.** Tuttavia, posizionarlo fuori dalla modalità (preferibilmente con offset verso il basso e verso destra) in modo che l'oggetto non sia coperto dalla finestra.
 
 ## <a name="layout"></a>Layout
 
--   **Ridimensionare i controlli e i riquadri all'interno di una finestra in modo che corrispondano al contenuto tipico.** Evitare il testo troncato e i puntini di sospensione associati. Gli utenti non devono mai interagire con una finestra per visualizzare il contenuto tipico, riservando il ridimensionamento e lo scorrimento per contenuti insolitamente grandi. Controllare in particolare:
-    -   **Dimensioni dei controlli.** Ridimensionare i controlli in base al contenuto tipico, rendendo i controlli più ampi, più alti o multilinea, se necessario. Controlli delle dimensioni per eliminare o ridurre lo scorrimento nelle finestre con molto spazio disponibile. Inoltre, non dovrebbero mai essere presenti etichette troncate o testo troncato all'interno di finestre con molto spazio disponibile. Tuttavia, per semplificare la lettura del testo, è consigliabile limitare la larghezza delle righe a 65 caratteri.
-    -   **Larghezze delle colonne.** Assicurarsi che le dimensioni predefinite, minime e massime delle colonne della visualizzazione elenco siano adatte. Scegliere le visualizzazioni elenco larghezze predefinite delle colonne che non comportano il troncamento del testo, soprattutto se è disponibile spazio all'interno della visualizzazione elenco.
-    -   **Bilanciamento del layout.** Il layout di una finestra dovrebbe essere approssimativamente bilanciato. Se il layout sembra molto pesante a sinistra, è consigliabile rendere i controlli più ampi e spostare alcuni controlli più a destra.
-    -   **Ridimensionamento del layout.** Quando una finestra è ridimensionabile e i dati vengono troncati, assicurarsi che le dimensioni della finestra più grandi mostrino più dati. Quando i dati vengono troncati, gli utenti prevedono che le finestre di ridimensionamento mostrino altre informazioni.
+-   **Ridimensionare i controlli e i riquadri all'interno di una finestra in modo che corrispondano al contenuto tipico.** Evitare il testo troncato e i puntini di sospensione associati. Gli utenti non devono mai interagire con una finestra per visualizzarne il contenuto tipico, riservando il ridimensionamento e lo scorrimento per contenuti insolitamente grandi. Controllare in modo specifico:
+    -   **Dimensioni dei controlli.** Ridimensionare i controlli in base al contenuto tipico, rendendo i controlli più larghi, più alti o multilinea, se necessario. Ridimensionare i controlli per eliminare o ridurre lo scorrimento nelle finestre con molto spazio disponibile. Inoltre, non dovrebbero mai essere presenti etichette troncate o testo troncato all'interno di finestre che dispongono di molto spazio disponibile. Tuttavia, per semplificare la lettura del testo, è consigliabile limitare la larghezza delle righe a 65 caratteri.
+    -   **Larghezze delle colonne.** Assicurarsi che le dimensioni predefinite, minime e massime delle colonne della visualizzazione elenco siano adatte. Scegliere le visualizzazioni elenco larghezze di colonna predefinite che non comportano il troncamento del testo, soprattutto se è disponibile spazio all'interno della visualizzazione elenco.
+    -   **Bilanciamento del layout.** Il layout di una finestra dovrebbe essere approssimativamente bilanciato. Se il layout sembra carico a sinistra, è consigliabile rendere i controlli più larghi e spostare alcuni controlli più a destra.
+    -   **Ridimensionamento del layout.** Quando una finestra è ridimensionabile e i dati vengono troncati, assicurarsi che le dimensioni della finestra più grandi mostrino più dati. Quando i dati vengono troncati, gli utenti si aspettano che le finestre di ridimensionamento mostrino altre informazioni.
 -   **Impostare una dimensione minima della finestra se è presente una dimensione inferiore alla quale il contenuto non è più utilizzabile.** Per i controlli ridimensionabili, impostare le dimensioni minime degli elementi ridimensionabili sulle dimensioni funzionali più piccole, ad esempio la larghezza minima delle colonne funzionali nelle visualizzazioni elenco.
 
 ## <a name="text"></a>Testo
 
--   **Quando è possibile, usare termini comuni e conversazionali.** Concentrarsi sugli obiettivi dell'utente, non sulla tecnologia. Ciò è particolarmente efficace se si illustra un concetto o un'azione tecnica complessa. Imagine'utente e spiega come eseguire l'attività.
--   **Essere educati, di supporto e incoraggianti.** L'utente non deve mai essere incolpato, incolpato o intimidato.
--   **Rimuovere il testo ridondante.** Cercare testo ridondante nei titoli delle finestre, nelle istruzioni principali, nelle istruzioni supplementari, nelle aree di contenuto, nei collegamenti ai comandi e nei pulsanti di commit. In genere, lasciare il testo completo nelle istruzioni principali e nei controlli interattivi e rimuovere la ridondanza dalle altre posizioni.
--   **Usare l'uso di maiuscole e minuscole in stile titolo per i titoli e l'uso di maiuscole e minuscole in stile frase per tutti gli altri elementi dell'interfaccia utente.** In questo modo è più appropriato per il Windows tono.
-    -   **Eccezione:** Per le applicazioni legacy, è possibile usare l'uso di maiuscole e minuscole per i pulsanti di comando, i menu e le intestazioni di colonna, se necessario, per evitare di combinare gli stili di combinazione di maiuscole e minuscole.
--   **Per i nomi delle funzionalità e delle tecnologie, è necessario essere conservativi nell'applicazione di maiuscole e minuscole.** In genere, solo i componenti principali devono essere in maiuscolo (usando l'uso di maiuscole e minuscole in stile titolo).
--   **Per i nomi delle funzionalità e delle tecnologie, è necessario essere coerenti nell'in maiuscolo.** Se il nome viene visualizzato più di una volta in una schermata dell'interfaccia utente, dovrebbe sempre apparire nello stesso modo. Analogamente, in tutte le schermate dell'interfaccia utente del programma, il nome deve essere presentato in modo coerente.
--   **Non convertire in maiuscolo i nomi degli elementi dell'interfaccia utente generici,** ad esempio barra degli strumenti, menu, barra di scorrimento, pulsante e icona.
+-   **Quando possibile, usare termini comuni e colloquiali.** Concentrarsi sugli obiettivi dell'utente, non sulla tecnologia. Ciò è particolarmente efficace se si spiega un concetto tecnico complesso o un'azione. Imagine a guardare la testa dell'utente e spiegare come eseguire l'attività.
+-   **Essere cortesi, supportare e incoraggiare.** L'utente non deve mai essere condescendato, incolpato o danneggiato.
+-   **Rimuovere il testo ridondante.** Cercare testo ridondante nei titoli delle finestre, nelle istruzioni principali, nelle istruzioni supplementari, nelle aree di contenuto, nei collegamenti ai comandi e nei pulsanti di commit. In genere, lasciare il testo completo nelle istruzioni principali e nei controlli interattivi e rimuovere qualsiasi ridondanza dalle altre posizioni.
+-   **Usare l'uso di maiuscole e minuscole in stile titolo per i titoli e l'uso di maiuscole/minuscole in stile frase per tutti gli altri elementi dell'interfaccia utente.** In questo modo è più appropriato per il Windows tono.
+    -   **Eccezione:** Per le applicazioni legacy, è possibile usare la combinazione di maiuscole e minuscole in stile titolo per i pulsanti di comando, i menu e le intestazioni di colonna, se necessario, per evitare di combinare stili di combinazione di maiuscole e minuscole.
+-   **Per i nomi di funzionalità e tecnologie, è necessario essere conservativi nell'applicazione di maiuscole e minuscole.** In genere, solo i componenti principali devono essere in maiuscolo (usando l'uso di maiuscole/minuscole in stile titolo).
+-   **Per i nomi di funzionalità e tecnologie, essere coerenti nell'applicazione delle maiuscole e minuscole.** Se il nome viene visualizzato più di una volta in una schermata dell'interfaccia utente, dovrebbe sempre apparire nello stesso modo. Analogamente, in tutte le schermate dell'interfaccia utente del programma, il nome deve essere presentato in modo coerente.
+-   **Non convertire in maiuscolo i nomi degli elementi generici** dell'interfaccia utente, ad esempio barra degli strumenti, menu, barra di scorrimento, pulsante e icona.
     -   **Eccezioni:** Barra degli indirizzi, barra dei collegamenti, barra multifunzione.
 -   **Non usare tutte le lettere maiuscole per i tasti della tastiera.** Seguire invece le maiuscole usate dalle tastiere standard o lettere minuscole se il tasto non è etichettato sulla tastiera.
--   **I puntini di sospensione significano incompletezza.** Usare i puntini di sospensione nel testo dell'interfaccia utente come segue:
-    -   **Comandi.** Indicare che un comando richiede informazioni aggiuntive. Non usare i puntini di sospensione ogni volta che un'azione visualizza un'altra finestra, solo quando sono necessarie informazioni aggiuntive. I comandi il cui verbo implicito è mostrare un'altra finestra non accettano puntini di sospensione, ad esempio Avanzate, Guida, Opzioni, Proprietà o Impostazioni.
-    -   **Dati.** Indicare che il testo viene troncato.
-    -   **Etichette.** Indicare che un'attività è in corso, ad esempio "Ricerca in corso".
+-   **I puntini di sospensione sono incompleti.** Usare i puntini di sospensione nel testo dell'interfaccia utente come indicato di seguito:
+    -   **Comandi.** Indica che un comando necessita di informazioni aggiuntive. Non usare i puntini di sospensione ogni volta che un'azione visualizza un'altra finestra, solo quando sono necessarie informazioni aggiuntive. I comandi il cui verbo implicito deve mostrare un'altra finestra non accettano i puntini di sospensione, ad esempio Avanzate, Guida, Opzioni, Proprietà o Impostazioni.
+    -   **Dati.** Indica che il testo è troncato.
+    -   **Etichette.** Indicare che è in corso un'attività, ad esempio "Ricerca in corso".
 
 **Suggerimento:** Il testo troncato in una finestra o in una pagina con spazio inutilizzato indica un layout insufficiente o dimensioni della finestra predefinite troppo piccole. Cercare layout e dimensioni predefinite delle finestre che eliminano o riducono la quantità di testo troncato. Per altre informazioni, vedere [Layout](vis-layout.md).
 
--   **Non usare testo blu che non sia un collegamento, perché gli utenti possono presupporre che si tratta di un collegamento.** Usare il grassetto o una sfumatura di grigio in caso contrario si userebbe testo colorato.
--   **Usare il grassetto con parsimonio per attirare l'attenzione sul testo che gli utenti devono leggere.**
--   **Usare l'istruzione principale per spiegare in modo conciso le attività che gli utenti devono eseguire in una determinata finestra o pagina.** Le buone istruzioni principali comunicano l'obiettivo dell'utente anziché concentrarsi solo sulla modifica dell'interfaccia utente.
+-   **Non usare testo blu che non sia un collegamento, perché gli utenti potrebbero presupporre che si tratta di un collegamento.** Usare il grassetto o una sfumatura di grigio in cui altrimenti si userebbe testo colorato.
+-   **Usare il grassetto con parsimonie per attirare l'attenzione sul testo che gli utenti devono leggere.**
+-   **Usare l'istruzione principale per spiegare in modo conciso le attività che gli utenti devono eseguire in una determinata finestra o pagina.** Le istruzioni principali di buona qualità comunicano l'obiettivo dell'utente anziché concentrarsi solo sulla manipolazione dell'interfaccia utente.
 -   **Esprimere l'istruzione principale sotto forma di una direzione imperativa o di una domanda specifica.**
 -   **Non inserire punti alla fine delle etichette di controllo o delle istruzioni principali.**
 -   **Usare uno spazio tra le frasi.** Non due.
@@ -66,11 +66,11 @@ Ecco una raccolta di alcune importanti linee guida nella Guida all'esperienza ut
 
 -   **Generale**
     -   **Etichettare ogni controllo o gruppo di controlli. Eccezioni:**
-        -   Le caselle di testo e gli elenchi a discesa possono essere etichettati usando i prompt.
+        -   Le caselle di testo e gli elenchi a discesa possono essere etichettati tramite prompt.
         -   I controlli subordinati usano l'etichetta del controllo associato. I controlli di selezione sono sempre controlli subordinati.
-    -   **Per tutti i controlli, selezionare il valore più sicuro (per evitare la perdita di dati o l'accesso al sistema), il valore più sicuro per impostazione predefinita.** Se la sicurezza e la sicurezza non sono fattori, selezionare il valore più probabile o conveniente.
-    -   **Preferisce i controlli vincolati.** Usare controlli vincolati come elenchi e dispositivi di scorrimento quando possibile, anziché controlli non vincolati come caselle di testo, per ridurre la necessità di input di testo.
-    -   **Riconsiderare i controlli disabilitati.** I controlli disabilitati possono essere difficili da usare perché gli utenti devono letteralmente dedurre perché sono disabilitati. Disabilitare un controllo quando gli utenti si aspettano che sia applicato e possono dedurre facilmente il motivo per cui il controllo è disabilitato. Rimuovere il controllo quando gli utenti non possono abilitarlo o non si aspettano che sia applicato o lasciarlo abilitato, ma fornire un messaggio di errore quando viene usato in modo non corretto.
+    -   **Per tutti i controlli, selezionare il valore più sicuro per impostazione predefinita( per evitare la perdita di dati o l'accesso al sistema).** Se la sicurezza e la sicurezza non sono fattori, selezionare il valore più probabile o conveniente.
+    -   **Preferisce i controlli vincolati.** Usare controlli vincolati come elenchi e dispositivi di scorrimento quando possibile, anziché controlli non vincolati come le caselle di testo, per ridurre la necessità di input di testo.
+    -   **Riconsiderare i controlli disabilitati.** I controlli disabilitati possono essere difficili da usare perché gli utenti devono dedurre letteralmente il motivo per cui sono disabilitati. Disabilitare un controllo quando gli utenti si aspettano che sia applicato e possono dedurre facilmente il motivo per cui il controllo è disabilitato. Rimuovere il controllo quando gli utenti non possono abilitarlo o non si aspettano che sia applicato o lasciarlo abilitato, ma fornire un messaggio di errore quando viene usato in modo non corretto.
         -   **Suggerimento:** Se non si è certi che sia necessario disabilitare un controllo o fornire un messaggio di errore, iniziare componendo il messaggio di errore che è possibile fornire. Se il messaggio di errore contiene informazioni utili che gli utenti di destinazione probabilmente non deducono rapidamente, lasciare il controllo abilitato e specificare l'errore. In caso contrario, disabilitare il controllo .
 -   **Pulsanti di comando**
     -   **Preferire etichette specifiche a quelle generiche.** Idealmente, gli utenti non devono leggere altro per comprendere l'etichetta. È molto più probabile che gli utenti leggono le etichette dei pulsanti di comando rispetto al testo statico.
@@ -81,7 +81,7 @@ Ecco una raccolta di alcune importanti linee guida nella Guida all'esperienza ut
 -   **Collegamenti di comando**
     -   **Presentare sempre i collegamenti di comando in un set di due o più elementi.** Logicamente, non c'è alcun motivo per porre una domanda che abbia una sola risposta.
     -   **Specificare un pulsante Annulla esplicito.** Non usare un collegamento di comando a questo scopo. Spesso gli utenti si rendono conto di non voler eseguire un'attività. L'uso di un collegamento di comando per annullare richiederebbe agli utenti di leggere attentamente tutti i collegamenti di comando per determinare quale significa annullare. La presenza di un pulsante Annulla esplicito consente agli utenti di annullare un'attività in modo efficiente.
-    -   **Se specificando un pulsante Annulla esplicito si lascia un singolo collegamento di comando, specificare sia un collegamento di comando da annullare che un pulsante Annulla.** In questo modo è chiaro che gli utenti hanno la possibilità di scegliere. Formulare questo collegamento di comando in termini di differenza rispetto alla prima risposta, anziché semplicemente "Cancel" o alcune variazioni.
+    -   **Se si specifica un pulsante Annulla esplicito, lasciare un singolo collegamento di comando, fornire un collegamento di comando per annullare e un pulsante Annulla.** In questo modo è chiaro che gli utenti hanno la possibilità di scegliere. Formulare questo collegamento di comando in termini di differenza rispetto alla prima risposta, anziché semplicemente "Cancel" o alcune variazioni.
 -   **Caselle di controllo "Non visualizzare \<item\> più questo messaggio"**
     -   **È consigliabile usare un'opzione "Non visualizzare più questo messaggio" per consentire agli utenti di eliminare una finestra di dialogo ricorrente, solo se non esiste \<item\> un'alternativa migliore.** È sempre meglio visualizzare la finestra di dialogo se gli utenti ne hanno effettivamente bisogno o semplicemente eliminarla in caso contrario.
     -   **Sostituire \<item\> con l'elemento specifico.** Ad esempio, Non visualizzare più questo promemoria. Quando si fa riferimento a una finestra di dialogo in generale, usare Non visualizzare più questo messaggio.
@@ -119,74 +119,74 @@ Ecco una raccolta di alcune importanti linee guida nella Guida all'esperienza ut
     -   **Usare un prompt quando lo spazio sullo schermo** è così elevato che l'uso di un'etichetta o di un'istruzione è indesiderato, ad esempio su una barra degli strumenti.
     -   **La richiesta è principalmente per identificare lo scopo della casella di testo o della casella combinata in modo compatto.** Non devono essere informazioni cruciali che l'utente deve visualizzare durante l'uso del controllo .
     -   **Il testo della richiesta non deve essere confuso con il testo reale.** Per eseguire questa operazione:
-        -   Disegnare il testo di richiesta in grigio corsivo e il testo di input effettivo in nero.
-        -   Il testo del prompt non deve essere modificabile e deve scomparire quando gli utenti fa clic o compaiono nella casella di testo.
+        -   Disegnare il testo della richiesta in grigio corsivo e il testo di input effettivo in nero romano.
+        -   Il testo della richiesta non deve essere modificabile e deve scomparire quando gli utenti selezionano o compaiono nella casella di testo.
             -   **Eccezione:** Se la casella di testo ha lo stato attivo per l'input predefinito, la richiesta viene visualizzata e scompare quando l'utente inizia a digitare.
     -   Non usare la punteggiatura finale o i puntini di sospensione.
 -   **Notifications**
-    -   **Usare le notifiche per gli eventi che non sono correlati all'attività utente corrente, non richiedono un'azione immediata dell'utente e gli utenti possono ignorare liberamente.**
-    -   **Non utilizzare le notifiche in modo improprio:**
-        -   **Usare le notifiche solo se necessario.** Quando si visualizza una notifica, si potrebbero interrompere gli utenti o addirittura disturbarli. Assicurarsi che l'interruzione sia giustificata.
-        -   **Usare le notifiche per eventi non critici o situazioni che non richiedono un'azione immediata dell'utente.** Per eventi critici o situazioni che richiedono un'azione immediata dell'utente, usare un elemento alternativo dell'interfaccia utente, ad esempio una finestra di dialogo modale.
+    -   **Usare le notifiche per gli eventi non correlati all'attività utente corrente, che non richiedono un intervento immediato da parte dell'utente e che gli utenti possono ignorare liberamente.**
+    -   **Non fare uso improprio delle notifiche:**
+        -   **Usare le notifiche solo se necessario.** Quando si visualizza una notifica, è possibile che gli utenti interrompano o addirittura li infastidino. Assicurarsi che l'interruzione sia giustificata.
+        -   **Usare le notifiche per eventi non critici o situazioni che non richiedono un intervento immediato da parte dell'utente.** Per eventi critici o situazioni che richiedono un'azione immediata da parte dell'utente, usare un elemento alternativo dell'interfaccia utente, ad esempio una finestra di dialogo modale.
         -   **Non usare le notifiche per gli annunci di funzionalità.**
 
 ## <a name="keyboard"></a>Tastiera
 
--   **Assegnare lo stato attivo per l'input** iniziale al controllo con cui è più probabile che gli utenti interagiscano per primi, che spesso è il primo controllo interattivo. Se il primo controllo interattivo non è una scelta ottimale, è consigliabile modificare il layout della finestra.
+-   **Assegnare lo stato attivo per l'input** iniziale al controllo con cui è più probabile che gli utenti interagiscano per primi, che spesso è il primo controllo interattivo. Se il primo controllo interattivo non è una scelta ottimale, valutare la possibilità di modificare il layout della finestra.
 -   **Assegnare tabulazioni a tutti i controlli interattivi, incluse le caselle di modifica di sola lettura. Eccezioni:**
-    -   Raggruppare set di controlli correlati che si comportano come un singolo controllo, ad esempio i pulsanti di opzione. Tali gruppi hanno una singola tabulazione.
+    -   Raggruppare set di controlli correlati che si comportano come un singolo controllo, ad esempio pulsanti di opzione. Tali gruppi hanno una sola tabulazione.
     -   Contenere correttamente i gruppi in modo che i tasti di direzione esercitino il ciclo avanti e indietro all'interno del gruppo e rimangano all'interno del gruppo.
--   **L'ordine di tabulazione deve scorrere da sinistra a destra, dall'alto verso il basso.** In genere, l'ordine di tabulazione deve seguire l'ordine di lettura. Prendere in considerazione la possibilità di creare eccezioni per i controlli di uso comune inserendoli in precedenza nell'ordine di tabulazione. Tab deve scorrere tutte le tabulazioni in entrambe le direzioni senza arrestarsi. All'interno di un gruppo, l'ordine di tabulazione deve essere in ordine sequenziale, senza eccezioni.
+-   **L'ordine di tabulazione deve scorrere da sinistra a destra, dall'alto verso il basso.** In genere, l'ordine di tabulazione deve seguire l'ordine di lettura. È consigliabile creare eccezioni per i controlli di uso comune inserendoli in precedenza nell'ordine di tabulazione. Tab deve scorrere tutte le tabulazioni in entrambe le direzioni senza arrestarsi. All'interno di un gruppo, l'ordine di tabulazione deve essere in ordine sequenziale, senza eccezioni.
 -   **All'interno di una tabulazione, l'ordine dei tasti di** direzione deve scorrere da sinistra a destra, dall'alto verso il basso, senza eccezioni. I tasti di direzione devono scorrere tutti gli elementi in entrambe le direzioni senza arrestarsi.
 -   **Presentare i pulsanti di commit nell'ordine seguente:**
-    -   OK/ \[ Eseguire \] l'operazione /Sì
+    -   OK/ \[ Do it \] /Yes
     -   \[Non eseguire questa operazione \] /No
     -   Annulla
     -   Applica (se presente)
 
 dove \[ Do it e \] \[ Don't do it \] sono risposte specifiche all'istruzione principale.
 
--   **Non confondere i tasti di scelta rapida con i tasti di scelta rapida.** I tasti di scelta rapida e i tasti di scelta rapida forniscono l'accesso tramite tastiera all'interfaccia utente, ma hanno scopi e linee guida diversi.
--   **Quando possibile, assegnare chiavi di accesso univoche a tutti i controlli interattivi o alle relative etichette.** [Le caselle di testo di sola](ctrl-text-boxes.md) lettura sono controlli interattivi (perché gli utenti possono scorrerle e copiare testo), quindi traggono vantaggio dai tasti di scelta. **Non assegnare chiavi di accesso a:**
-    -   Pulsanti OK, Annulla e Chiudi. I tasti invio e ESC vengono usati per le chiavi di accesso. Tuttavia, assegnare sempre un tasto di scelta a un controllo che indica OK o Annulla, ma con un'etichetta diversa.
+-   **Non confondere i tasti di scelta con i tasti di scelta rapida.** Anche se sia i tasti di scelta che i tasti di scelta rapida forniscono l'accesso tramite tastiera all'interfaccia utente, hanno scopi e linee guida diversi.
+-   **Quando possibile, assegnare chiavi di accesso univoche a tutti i controlli interattivi o alle relative etichette.** [Le caselle di testo di sola](ctrl-text-boxes.md) lettura sono controlli interattivi(perché gli utenti possono scorrerle e copiare il testo), quindi traggono vantaggio dai tasti di scelta. **Non assegnare chiavi di accesso a:**
+    -   PULSANTI OK, Annulla e Chiudi. Per le chiavi di accesso vengono usati i tasti invio e ESC. Tuttavia, assegnare sempre un tasto di scelta a un controllo che indica OK o Annulla, ma ha un'etichetta diversa.
 -   **Assegnare i tasti di scelta rapida ai comandi usati più di frequente.** I programmi e le funzionalità usati raramente non necessitano di tasti di scelta rapida perché gli utenti possono usare i tasti di scelta.
--   **Non creare un tasto di scelta rapida come unico modo per eseguire un'attività.** Gli utenti devono anche essere in grado di usare il mouse o la tastiera con tab, freccia e tasti di scelta.
+-   **Non creare un tasto di scelta rapida come unico modo per eseguire un'attività.** Gli utenti devono anche essere in grado di usare il mouse o la tastiera con TAB, freccia e tasti di scelta.
 -   **Non assegnare significati diversi a tasti di scelta rapida noti.** Poiché sono memorizzati, significati incoerenti per le scelte rapide note sono frustranti e erre.
 -   **Non provare ad assegnare tasti di scelta rapida del programma a livello di sistema.** I tasti di scelta rapida del programma avranno effetto solo quando il programma ha lo stato attivo per l'input.
 
 ## <a name="mouse"></a>Mouse
 
 -   **Non richiedere mai agli utenti di fare clic su un oggetto per determinare se è selezionabile.** Gli utenti devono essere in grado di determinare la possibilità di fare clic solo tramite l'ispezione visiva.
-    -   L'interfaccia utente primaria, ad esempio i pulsanti di commit, deve avere un'opzione click affordance statica. Gli utenti non devono passare il mouse per individuare l'interfaccia utente primaria.
-    -   L'interfaccia utente secondaria, ad esempio comandi secondari o controlli di divulgazione progressiva, può visualizzare il proprio clic al passaggio del mouse.
-    -   I collegamenti di testo dovrebbero suggerire in modo statico il testo del collegamento e quindi visualizzare il relativo clic (sottolineatura o altra modifica della presentazione, con il puntatore a forma di mano) al passaggio del mouse.
-    -   I collegamenti grafici visualizzano solo un puntatore a forma di mano al passaggio del mouse.
--   **Usare il puntatore a forma di mano (o "selezione collegamento") solo per i collegamenti di testo e di grafica.** In caso contrario, gli utenti devono fare clic sugli oggetti per determinare se sono collegamenti.
+    -   L'interfaccia utente principale, ad esempio i pulsanti di commit, deve avere un affordance di clic statico. Gli utenti non devono passare il puntatore del mouse per individuare l'interfaccia utente primaria.
+    -   L'interfaccia utente secondaria, ad esempio i comandi secondari o i controlli di divulgazione progressiva, può visualizzare l'affordance del clic al passaggio del mouse.
+    -   I collegamenti di testo dovrebbero suggerire in modo statico il testo del collegamento e quindi visualizzare l'affordance del clic (sottolineatura o altra modifica della presentazione, con il puntatore del mouse) al passaggio del mouse.
+    -   I collegamenti grafici visualizzano solo un puntatore del mouse al passaggio del mouse.
+-   **Usare il puntatore della mano (o "selezione collegamento") solo per i collegamenti di testo e grafici.** In caso contrario, gli utenti devono fare clic sugli oggetti per determinare se sono collegamenti.
 
 ## <a name="dialog-boxes"></a>Finestre di dialogo
 
--   **Le finestre di dialogo modali richiedono l'interazione, quindi usarle per gli elementi a cui gli utenti devono rispondere prima di continuare con l'attività.** Assicurarsi che l'interruzione sia giustificata, ad esempio per attività critiche o poco frequenti che richiedono il completamento. In caso contrario, prendere in considerazione alternative non modali.
--   **Le finestre di dialogo non modali non richiedono l'interazione, quindi usarle quando gli utenti devono passare da una finestra di dialogo a una finestra di dialogo e dalla finestra proprietaria.** Sono più usati per attività frequenti, ripetitive o in corso. Tuttavia, le barre multifunzione, le barre degli strumenti e le finestre della tavolozza sono spesso alternative migliori.
+-   **Le finestre di dialogo modali richiedono l'interazione, quindi è necessario usarle per gli elementi a cui gli utenti devono rispondere prima di continuare con l'attività.** Assicurarsi che l'interruzione sia giustificata, ad esempio per le attività critiche o non frequenti che richiedono il completamento. In caso contrario, prendere in considerazione alternative non modali.
+-   **Le finestre di dialogo non modali non richiedono l'interazione, quindi è necessario usarle quando gli utenti devono passare da una finestra di dialogo alla finestra proprietaria.** Sono più usati per attività frequenti, ripetitive o in corso. Tuttavia, le barre multifunzione, le barre degli strumenti e le finestre della tavolozza sono spesso alternative migliori.
 
 ## <a name="property-sheets"></a>Finestre delle proprietà
 
--   **Assicurarsi che le proprietà siano necessarie.** Non ingombrare le pagine delle proprietà con proprietà non necessarie solo per evitare decisioni di progettazione difficili.
--   **Presentare le proprietà in termini di obiettivi utente anziché di tecnologia.** Solo perché una proprietà configura una tecnologia specifica non significa che è necessario presentare la proprietà in termini di tale tecnologia.
-    -   Se è necessario presentare le impostazioni in termini di tecnologia (ad esempio perché gli utenti riconoscono il nome della tecnologia), includere una breve descrizione del vantaggio utente.
--   **Usare etichette di tabulazione specifiche e significative.** Evitare etichette di tabulazione generiche che potrebbero essere applicate a qualsiasi scheda, ad esempio Generale, Avanzate o Impostazioni.
+-   **Assicurarsi che le proprietà siano necessarie.** Non ingombrare le pagine delle proprietà con proprietà non necessarie solo per evitare di prendere decisioni di progettazione.
+-   **Presentare le proprietà in termini di obiettivi utente anziché di tecnologia.** Il fatto che una proprietà configura una tecnologia specifica non significa che è necessario presentare la proprietà in termini di tale tecnologia.
+    -   Se è necessario presentare le impostazioni in termini di tecnologia (ad esempio perché gli utenti riconoscono il nome della tecnologia), includere una breve descrizione del vantaggio dell'utente.
+-   **Usare etichette di scheda specifiche e significative.** Evitare etichette di scheda generiche che possono essere applicate a qualsiasi scheda, ad esempio Generale, Avanzate o Impostazioni.
 -   **Evitare le pagine Generali.** Non è necessario avere una pagina Generale. Usare una pagina Generale solo se:
     -   Le proprietà si applicano a diverse attività e sono significative per la maggior parte degli utenti. Non inserire proprietà specializzate o avanzate in una pagina Generale, ma è possibile renderle accessibili tramite un pulsante di comando nella pagina Generale.
     -   Le proprietà non rientrano in una categoria più specifica. In caso contrario, usare tale nome per la pagina.
--   **Evitare pagine avanzate.** Usare una pagina Avanzate solo se:
-    -   Le proprietà si applicano ad attività non comuni e sono significative principalmente per gli utenti avanzati.
+-   **Evitare le pagine avanzate.** Usare una pagina Avanzate solo se:
+    -   Le proprietà si applicano alle attività non comuni e sono significative principalmente per gli utenti avanzati.
     -   Le proprietà non rientrano in una categoria più specifica. In caso contrario, usare tale nome per la pagina.
--   **Non usare le schede se una finestra delle proprietà ha una sola scheda e non è estendibile.** Usare una normale finestra di dialogo con OK, Annulla e un pulsante Applica facoltativo. Tuttavia, le finestre delle proprietà estensibili (che possono essere estese da terze parti) devono usare schede.
+-   **Non usare le schede se una finestra delle proprietà ha una sola scheda e non è estendibile.** Usare invece una finestra di dialogo normale con OK, Annulla e un pulsante Applica facoltativo. Tuttavia, le finestre delle proprietà estendibili (che possono essere estese da terze parti) devono usare le schede.
 
 ## <a name="wizards"></a>Procedure guidate
 
--   **Considerare prima di tutto alternative leggere, ad esempio finestre di dialogo, riquadri attività o singole pagine.** Le procedure guidate sono un'interfaccia utente pesante, usata meglio per attività in più passaggi e eseguite raramente. Non è necessario usare le procedure guidate. È possibile fornire informazioni e assistenza utili in qualsiasi interfaccia utente.
--   **Usare Avanti solo quando si avanza alla pagina successiva senza impegno.** L'avanzamento alla pagina successiva viene considerato un impegno quando il relativo effetto non può essere annullato facendo clic su Indietro o Annulla.
--   **Usare Indietro solo per correggere gli errori.** Oltre a correggere gli errori, gli utenti non devono fare clic su Indietro per eseguire lo stato di un'attività.
+-   **Considerare prima di tutto alternative leggere, ad esempio finestre di dialogo, riquadri attività o singole pagine.** Le procedure guidate sono un'interfaccia utente pesante, usata in modo ottimale per attività eseguite raramente in più passaggi. Non è necessario usare le procedure guidate: è possibile fornire informazioni utili e assistenza in qualsiasi interfaccia utente.
+-   **Usare Avanti solo quando si avanza alla pagina successiva senza impegno.** L'avanzamento alla pagina successiva viene considerato un impegno quando l'effetto non può essere annullato facendo clic su Indietro o Annulla.
+-   **Usare Indietro solo per correggere gli errori.** Oltre a correggere gli errori, gli utenti non devono fare clic su Indietro per avanzamento in un'attività.
 -   **Quando gli utenti emettono il commit in un'attività, usare un pulsante di commit che rappresenta una risposta specifica all'istruzione principale, ad esempio Stampa, Connessione o Avvia.** Non usare etichette generiche come Next (che non implica l'impegno) o Finish (che non è specifico) per il commit di un'attività. Le etichette su questi pulsanti di commit dovrebbero avere senso da soli. Avviare sempre le etichette dei pulsanti di commit con un verbo. **Eccezioni:**
     -   Usare Fine quando le risposte specifiche sono ancora generiche, ad esempio Salva, Seleziona, Scegli o Ottieni.
     -   Usare Fine per modificare un'impostazione specifica o una raccolta di impostazioni.
@@ -198,7 +198,7 @@ dove \[ Do it e \] \[ Don't do it \] sono risposte specifiche all'istruzione pri
 
 ## <a name="wizard-pages"></a>Pagine della procedura guidata
 
--   **Concentrarsi sul processo decisionale efficiente.** Ridurre il numero di pagine per concentrarsi sulle informazioni di base. Consolidare le pagine correlate e prendere le pagine facoltative dal flusso principale. Fare in modo che gli utenti possano fare clic su Avanti completamente tramite la procedura guidata all'inizio può sembrare una buona esperienza, ma se gli utenti non devono mai modificare le impostazioni predefinite, le pagine probabilmente non sono necessarie.
+-   **Concentrarsi sul processo decisionale efficiente.** Ridurre il numero di pagine per concentrarsi sulle informazioni di base. Consolidare le pagine correlate e prendere le pagine facoltative dal flusso principale. Fare clic su Avanti per completare la procedura guidata può sembrare un'esperienza ottimale all'inizio, ma se gli utenti non devono mai modificare le impostazioni predefinite, le pagine probabilmente non sono necessarie.
 -   **Non usare le pagine di benvenuto: rendere la prima pagina funzionante quando possibile.** Usare una pagina Attività iniziali facoltativa solo quando:
     -   La procedura guidata presenta i prerequisiti necessari per completare correttamente la procedura guidata.
     -   Gli utenti potrebbero non comprendere lo scopo della procedura guidata in base alla prima pagina Scelta e non c'è spazio per altre spiegazioni.
@@ -258,15 +258,15 @@ Se un problema combina tipi di messaggio diversi, concentrarsi sull'aspetto più
 -   **Le icone devono sempre corrispondere all'istruzione principale o a un altro testo corrispondente.**
 -   **Le icone di errore non sono necessarie per i problemi di input utente non critici.** Tuttavia, le icone sono necessarie per gli errori sul posto, perché in caso contrario tale feedback contestuale sarebbe troppo facile da tralasciare.
 -   **Non usare icone di avviso per "attenuare" gli errori non critici.** Gli errori non sono avvisi. Applicare invece le linee guida per le icone di errore.
--   **Per le finestre di dialogo delle domande, usare le icone di avviso solo per le domande con conseguenze significative.** Non usare icone di avviso per le domande di routine.
+-   **Per le finestre di dialogo delle domande, usare le icone di avviso solo per le domande con conseguenze significative.** Non usare icone di avviso per domande di routine.
 
 ## <a name="help"></a>Help
 
--   **Collegamento ad argomenti specifici della Guida pertinenti.** Non collegarsi alla guida home page, al sommario, a un elenco di risultati della ricerca o a una pagina che si collega solo ad altre pagine. Evitare il collegamento a pagine strutturate come un ampio elenco di domande frequenti, perché impone agli utenti di cercare quella corrispondente al collegamento su cui hanno fatto clic. Non collegare argomenti della Guida specifici che non sono rilevanti e utili per l'attività in fase di esecuzione. Non collegarsi mai a pagine vuote.
--   **Non inserire collegamenti alla Guida in ogni finestra o pagina per motivi di coerenza.** Fornire un collegamento alla Guida in un'unica posizione non significa che è necessario fornirli ovunque.
--   **Quando possibile, la guida alle frasi collega il testo in termini di domanda principale a cui risponde il contenuto della Guida.** Non usare la formulazione "Altre informazioni su" o "Ottenere assistenza per questo".
--   **Usare l'intero collegamento alla Guida per il testo del collegamento,** non solo le parole chiave.
+-   **Collegamento ad argomenti della Guida specifici e pertinenti.** Non creare un collegamento alla guida home page, al sommario, a un elenco di risultati della ricerca o a una pagina che si collega solo ad altre pagine. Evitare il collegamento a pagine strutturate come un ampio elenco di domande frequenti, perché impone agli utenti di cercare quella che corrisponde al collegamento su cui hanno fatto clic. Non creare collegamenti ad argomenti della Guida specifici che non sono rilevanti e utili per l'attività in fase di esecuzione. Non collegarsi mai a pagine vuote.
+-   **Non inserire collegamenti alla Guida in ogni finestra o pagina per motivi di coerenza.** Fornire un collegamento alla Guida in un'unica posizione non significa che sia necessario fornirli ovunque.
+-   **Quando possibile, la frase Guida collega il testo in termini di domanda principale a cui risponde il contenuto della Guida.** Non usare la formulazione "Altre informazioni su" o "Ottieni assistenza con questo".
+-   **Usare l'intero collegamento alla Guida per il testo del collegamento, non** solo le parole chiave.
 -   **Usare frasi complete.**
 -   **Non usare la punteggiatura finale o i puntini di sospensione, ad eccezione dei punti interrogativi.**
--   **Se il contenuto della Guida è online, renderlo chiaro nel testo del collegamento.** Questa operazione consente di rendere prevedibile il risultato dei collegamenti.
+-   **Se il contenuto della Guida è online, deselezionare questa opzione nel testo del collegamento.** In questo modo è possibile rendere prevedibile il risultato dei collegamenti.
 

@@ -1,5 +1,5 @@
 ---
-description: 'Registry_V0_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Registry_V0_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 93031f3e-963f-46a6-9355-988eefd94836
 title: Registry_V0_TypeGroup1 classe
 ms.topic: reference
@@ -16,14 +16,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 86f6d695afa2e05c87a076cf88ed8023e9416beb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18b85c95121513057aad24fd4534a552cdb219973ea46a9a3360870dabc39ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069781"
 ---
-# <a name="registry_v0_typegroup1-class"></a>Classe \_ \_ TypeGroup1 registry V0
+# <a name="registry_v0_typegroup1-class"></a>Classe \_ TypeGroup1 del Registro di sistema V0 \_
 
 Questa classe è la classe del tipo di evento per gli eventi del Registro di sistema.
 
@@ -44,13 +44,13 @@ class Registry_V0_TypeGroup1 : Registry_V0
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ TypeGroup1 Registry V0** ha questi tipi di membri:
+La **classe \_ \_ TypeGroup1 del Registro** di sistema V0 ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ TypeGroup1 Registry V0** ha queste proprietà.
+La **classe \_ \_ TypeGroup1 del Registro** di sistema V0 ha queste proprietà.
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(2), Pointer
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
 Handle per la chiave del Registro di sistema.
@@ -89,7 +89,7 @@ Handle per la chiave del Registro di sistema.
 KeyName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -124,8 +124,8 @@ Valore NTSTATUS dell'operazione del Registro di sistema.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

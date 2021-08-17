@@ -1,5 +1,5 @@
 ---
-description: Ottiene le interfacce di estensione che potrebbero essere associate a un driver di Windows Image Acquisition (WIA) 2.0.
+description: Ottiene le interfacce di estensione che possono essere associate a un driver Windows image acquisition (WIA) 2.0.
 ms.assetid: 70f20f33-905c-4a88-8065-1cf876e98302
 title: Metodo IWiaItem2::GetExtension (Wia.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119450416"
 ---
 # <a name="iwiaitem2getextension-method"></a>Metodo IWiaItem2::GetExtension
 
-Ottiene le interfacce di estensione che potrebbero essere associate a un driver di Windows Image Acquisition (WIA) 2.0.
+Ottiene le interfacce di estensione che possono essere associate a un driver Windows image acquisition (WIA) 2.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -103,7 +103,7 @@ Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api
 
 ## <a name="examples"></a>Esempio
 
-CreateSegmentationFilter crea un'istanza del filtro di segmentazione del driver ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)) chiamando **IWiaItem2::GetExtension** sull'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) passata.
+CreateSegmentationFilter crea un'istanza del filtro di segmentazione del driver ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)) chiamando **IWiaItem2::GetExtension** sull'interfaccia [**IWiaItem2 passata.**](-wia-iwiaitem2.md)
 
 
 ```C++
@@ -156,8 +156,8 @@ CreateSegmentationFilter(
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 

@@ -1,5 +1,5 @@
 ---
-description: Callback per restituire i dati stack.
+description: Callback per restituire i dati di callstack.
 MS-HAID: vspixengine.ICallStackCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: db6b2aa72008d11891c211512308290a3393ee49
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6e39b2a66bda3345d505d48d0bf7953787d40b34413c231158e5afb9e72f03c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094901"
 ---
 # <a name="span-idvspixengineicallstackcallbackspanicallstackcallback-interface"></a><span id="vspixengine.icallstackcallback"></span>Interfaccia ICallStackCallback
 
-Callback per restituire i dati stack.
+Callback per restituire i dati di callstack.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ICallStackCallback** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ICallStackCallback** dispone anche di questi tipi di membri:
+**L'interfaccia ICallStackCallback** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ICallStackCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **ICallStackCallback** dispone di questi metodi.
+**L'interfaccia ICallStackCallback** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host le informazioni sullo stack di chiamate.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host le informazioni sullo stack di chiamate.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

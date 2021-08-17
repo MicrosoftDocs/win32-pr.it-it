@@ -24,7 +24,7 @@ ms.locfileid: "118742917"
 
 Contiene la risposta a una query [**D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.**](d3dauthenticatedquery-restrictedsharedresourceprocess.md)
 
-Per inviare questa query, [**chiamare IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,11 +54,11 @@ Struttura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ OUTPUT**](d3dauthenticatedchann
 **ProcessIndex**
 </dt> <dd>
 
-Indice del processo nell'elenco dei processi.
+Indice del processo nell'elenco di processi.
 
 </dd> <dt>
 
-**Identifer processo**
+**ProcessIdentifer**
 </dt> <dd>
 
 Valore [**D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE**](d3dauthenticatedchannel-processidentifiertype.md) che specifica il tipo di processo.
@@ -68,13 +68,13 @@ Valore [**D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE**](d3dauthenticatedch
 **ProcessHandle**
 </dt> <dd>
 
-Handle di processo. Se il **membro ProcessIdentifier** è uguale a **PROCESSDTYPE \_ HANDLE,** il **membro ProcessHandle** contiene un handle valido per un processo. In caso contrario, questo membro viene ignorato.
+Handle di processo. Se il **membro ProcessIdentifier** è uguale a **PROCESSIDTYPE \_ HANDLE,** il membro **ProcessHandle** contiene un handle valido per un processo. In caso contrario, questo membro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il Gestione finestre desktop (DWM) viene identificato impostando **ProcessIdentifier** su **PROCESSIDTYPE \_ DWM**. Gli altri processi vengono identificati impostando l'handle di processo in **ProcessHandle** e **impostando ProcessIdentifier** su **PROCESSIDTYPE \_ HANDLE**.
+Il processo Gestione finestre desktop (DWM) viene identificato impostando **ProcessIdentifier** uguale a **PROCESSIDTYPE \_ DWM**. Altri processi vengono identificati impostando l'handle del processo in **ProcessHandle** e **impostando ProcessIdentifier** su **PROCESSIDTYPE \_ HANDLE**.
 
 ## <a name="requirements"></a>Requisiti
 

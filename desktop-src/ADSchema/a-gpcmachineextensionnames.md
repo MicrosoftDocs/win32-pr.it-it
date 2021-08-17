@@ -1,11 +1,11 @@
 ---
 title: Attributo GPC-Machine-Extension-Names
-description: Usato dall'oggetto Criteri di gruppo per i criteri del computer.
+description: Utilizzato dall'oggetto Criteri di gruppo per i criteri computer.
 ms.assetid: a5e00bf6-d311-4ccd-a2cf-4f7506fec419
 ms.tgt_platform: multiple
 keywords:
-- Attributo GPC-Machine-Extension-Names Schema di AD
-- Attributo AD Schema gPCMachineExtensionNames
+- Attributo AD Schema GPC-Machine-Extension-Names
+- Attributo gPCMachineExtensionNames Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ ms.locfileid: "119305601"
 ---
 # <a name="gpc-machine-extension-names-attribute"></a>Attributo GPC-Machine-Extension-Names
 
-Usato dall'oggetto Criteri di gruppo per i criteri del computer.
+Utilizzato dall'oggetto Criteri di gruppo per i criteri computer.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | GPC-Machine-Extension-Names                                                     |
+| CN                | GpC-Machine-Extension-Names                                                     |
 | Ldap-Display-Name | gPCMachineExtensionNames                                                        |
-| Dimensione              | Dipende dal numero di estensioni lato client che dispongono di criteri in questo oggetto Criteri di gruppo. |
-| Privilegio di aggiornamento  | Amministratore di dominio o criteri.                                                 |
+| Dimensione              | Dipende dal numero di estensioni lato client che dispongono di un criterio in questo oggetto Criteri di gruppo. |
+| Aggiorna privilegio  | Amministratore di dominio o criteri.                                                 |
 | Frequenza di aggiornamento  | Ogni volta che un oggetto Criteri di gruppo viene aggiornato tramite l'oggetto Criteri di gruppo.                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1348                                                         |
 | System-Id-Guid    | 32ff8ecc-783f-11d2-9916-0000f87a57d4                                            |
@@ -129,7 +129,7 @@ Usato dall'oggetto Criteri di gruppo per i criteri del computer.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Usato dall'oggetto Criteri di gruppo per i criteri del computer.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Usato dall'oggetto Criteri di gruppo per i criteri del computer.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

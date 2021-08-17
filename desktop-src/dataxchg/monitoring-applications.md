@@ -1,48 +1,48 @@
 ---
 title: Monitoraggio di applicazioni
-description: In questo argomento viene illustrato come è possibile utilizzare gli elementi della libreria di gestione Dynamic Data Exchange per creare un'applicazione che monitora l'attività di scambio di dati dinamici nel sistema.
+description: In questo argomento viene illustrato come utilizzare gli elementi di Dynamic Data Exchange Management Library per creare un'applicazione che monitora l'attività di scambio dinamico dei dati nel sistema.
 ms.assetid: 6705dc8e-d1e9-4057-9fa2-42cd5cf818af
 keywords:
-- Interfaccia utente di Windows, Dynamic Data Exchange (DDE)
+- Windows Interfaccia utente,Dynamic Data Exchange (DDE)
 - Dynamic Data Exchange (DDE), monitoraggio delle applicazioni
-- DDE (Dynamic Data Exchange), monitoraggio delle applicazioni
+- DDE (Dynamic Data Exchange),monitoraggio delle applicazioni
 - scambio di dati, Dynamic Data Exchange (DDE)
-- Interfaccia utente di Windows, libreria di gestione Dynamic Data Exchange (DDEML)
-- Libreria di gestione Dynamic Data Exchange (DDEML), monitoraggio delle applicazioni
-- DDEML (libreria di gestione Dynamic Data Exchange), monitoraggio delle applicazioni
-- scambio di dati, libreria di gestione Dynamic Data Exchange (DDEML)
+- Windows Interfaccia utente,Dynamic Data Exchange Management Library (DDEML)
+- Dynamic Data Exchange Management Library (DDEML), monitoraggio delle applicazioni
+- DDEML (Dynamic Data Exchange Management Library), monitoraggio delle applicazioni
+- scambio di dati, Dynamic Data Exchange Management Library (DDEML)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f75685d4caa15e519485b2d8b37983faa35366
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8fbf6db1faa765378ea2b22b1146de770e9c94b14cf7e9e511ab862be48369c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128553"
 ---
 # <a name="monitoring-applications"></a>Monitoraggio di applicazioni
 
-Gli elementi API della libreria di gestione Dynamic Data Exchange (DDEML) possono essere usati per creare un'applicazione che monitora l'attività di Dynamic Data Exchange (DDE) nel sistema. Come qualsiasi applicazione DDEML, un'applicazione di monitoraggio DDE contiene una funzione di callback DDE. DDEML notifica a una funzione di callback DDE di un'applicazione di monitoraggio ogni volta che si verifica un evento DDE, passando le informazioni sull'evento alla funzione di callback. L'applicazione in genere Visualizza le informazioni in una finestra o le scrive in un file.
+Gli elementi API di Dynamic Data Exchange Management Library (DDEML) possono essere usati per creare un'applicazione che monitora l'attività di Dynamic Data Exchange (DDE) nel sistema. Come qualsiasi applicazione DDEML, un'applicazione di monitoraggio DDE contiene una funzione di callback DDE. DDEML invia una notifica alla funzione di callback DDE di un'applicazione di monitoraggio ogni volta che si verifica un evento DDE, passando informazioni sull'evento alla funzione di callback. L'applicazione visualizza in genere le informazioni in una finestra o le scrive in un file.
 
-Per ricevere notifiche da DDEML, un'applicazione deve essere registrata come monitoraggio DDE specificando il \_ flag di monitoraggio APPCLASS in una chiamata alla funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) . In questa stessa chiamata, l'applicazione può specificare uno o più flag di monitoraggio per indicare i tipi di eventi per i quali DDEML invia una notifica alla funzione di callback dell'applicazione. I flag di monitoraggio seguenti possono essere specificati da un'applicazione:
+Per ricevere notifiche da DDEML, un'applicazione deve essere registrata come monitoraggio DDE specificando il flag APPCLASS MONITOR in una chiamata alla \_ [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) In questa stessa chiamata, l'applicazione può specificare uno o più flag di monitoraggio per indicare i tipi di eventi per i quali DDEML deve notificare la funzione di callback dell'applicazione. Un'applicazione può specificare i flag di monitoraggio seguenti:
 
 
 
 | Flag          | Descrizione                                                                                                                                                                                                                                         |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_callback MF | Notifica alla funzione di callback ogni volta che una transazione viene inviata a qualsiasi funzione di callback DDE nel sistema.                                                                                                                                           |
-| MF \_ conv      | Notifica alla funzione di callback ogni volta che una conversazione viene stabilita o terminata.                                                                                                                                                                |
-| \_errori MF    | Notifica alla funzione di callback ogni volta che si verifica un errore DDEML.                                                                                                                                                                                       |
-| \_info MF HSZ \_ | Notifica la funzione di callback ogni volta che un'applicazione DDEML crea, libera o incrementa il conteggio di utilizzo di un handle di stringa o ogni volta che un handle di stringa viene liberato in seguito a una chiamata alla funzione [**DdeUninitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize) . |
-| \_collegamenti MF     | Notifica alla funzione di callback ogni volta che viene avviato o terminato un ciclo di notifica.                                                                                                                                                                         |
+| CALLBACK MF \_ | Notifica alla funzione di callback ogni volta che una transazione viene inviata a qualsiasi funzione di callback DDE nel sistema.                                                                                                                                           |
+| MF \_ CONV      | Notifica alla funzione di callback ogni volta che viene stabilita o terminata una conversazione.                                                                                                                                                                |
+| ERRORI \_ MF    | Notifica alla funzione di callback ogni volta che si verifica un errore DDEML.                                                                                                                                                                                       |
+| MF \_ HSZ \_ INFO | Notifica alla funzione di callback ogni volta che un'applicazione DDEML crea, libera o incrementa il conteggio di utilizzo di un handle di stringa o ogni volta che un handle di stringa viene liberato in seguito a una chiamata alla [**funzione DdeUninitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize) |
+| COLLEGAMENTI \_ MF     | Notifica alla funzione di callback ogni volta che viene avviato o terminato un ciclo di consulenza.                                                                                                                                                                         |
 | MF \_ POSTMSGS  | Notifica alla funzione di callback ogni volta che il sistema o un'applicazione invia un messaggio DDE.                                                                                                                                                           |
-| MF \_ SENDMSGS  | Notifica la funzione di callback ogni volta che il sistema o un'applicazione invia un messaggio DDE.                                                                                                                                                           |
+| MF \_ SENDMSGS  | Notifica alla funzione di callback ogni volta che il sistema o un'applicazione invia un messaggio DDE.                                                                                                                                                           |
 
 
 
- 
+ 
 
-Nell'esempio seguente viene illustrato come registrare un'applicazione di monitoraggio DDE in modo che la funzione di callback DDE riceva le notifiche di tutti gli eventi DDE.
+Nell'esempio seguente viene illustrato come registrare un'applicazione di monitoraggio DDE in modo che la relativa funzione di callback DDE riceva le notifiche di tutti gli eventi DDE.
 
 
 ```
@@ -69,7 +69,7 @@ if (DdeInitialize(
 
 
 
-DDEML informa un'applicazione di monitoraggio di un evento DDE inviando una transazione di [**monitoraggio \_ XTYP**](xtyp-monitor.md) alla funzione di callback DDE dell'applicazione. Durante questa transazione, DDEML passa un flag di monitoraggio che specifica il tipo di evento DDE che si è verificato e un handle a un oggetto DDE che contiene informazioni dettagliate sull'evento. DDEML fornisce un set di strutture che possono essere utilizzate dall'applicazione per estrarre le informazioni dall'oggetto DDE. Esiste una struttura corrispondente per ogni tipo di evento DDE.
+DDEML informa un'applicazione di monitoraggio di un evento DDE inviando una transazione [**\_ MONITOR XTYP**](xtyp-monitor.md) alla funzione di callback DDE dell'applicazione. Durante questa transazione, DDEML passa un flag di monitoraggio che specifica il tipo di evento DDE che si è verificato e un handle a un oggetto DDE che contiene informazioni dettagliate sull'evento. DDEML fornisce un set di strutture che l'applicazione può usare per estrarre le informazioni dall'oggetto DDE. Esiste una struttura corrispondente per ogni tipo di evento DDE.
 
 
 
@@ -78,15 +78,15 @@ DDEML informa un'applicazione di monitoraggio di un evento DDE inviando una tran
 | [**MONCBSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-moncbstruct)     | Contiene informazioni su una transazione.                         |
 | [**MONCONVSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monconvstruct) | Contiene informazioni su una conversazione.                        |
 | [**MONERRSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monerrstruct)   | Contiene informazioni sull'errore DDE più recente.                  |
-| [**MONLINKSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monlinkstruct) | Contiene informazioni su un ciclo di notifica.                        |
+| [**MONLINKSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monlinkstruct) | Contiene informazioni su un ciclo di consulenza.                        |
 | [**MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa)   | Contiene informazioni su un handle di stringa.                       |
 | [**MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct)   | Contiene informazioni su un messaggio DDE inviato o inviato. |
 
 
 
- 
+ 
 
-Nell'esempio seguente viene illustrata la funzione di callback DDE di un'applicazione di monitoraggio DDE che formatta le informazioni relative a ogni evento di handle di stringa e quindi Visualizza le informazioni in una finestra. La funzione utilizza la struttura [**MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) per estrarre le informazioni dall'oggetto DDE.
+L'esempio seguente illustra la funzione di callback DDE di un'applicazione di monitoraggio DDE che formatta le informazioni su ogni evento di handle di stringa e quindi visualizza le informazioni in una finestra. La funzione usa la [**struttura MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) per estrarre le informazioni dall'oggetto DDE.
 
 
 ```
@@ -189,9 +189,9 @@ DWORD dwData2;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

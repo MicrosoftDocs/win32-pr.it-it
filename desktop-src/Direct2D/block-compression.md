@@ -14,19 +14,19 @@ ms.locfileid: "119331765"
 ---
 # <a name="block-compression"></a>Compressione a blocchi
 
-A partire da Windows 8.1, Direct2D supporta diversi formati pixel compressi in blocchi. Inoltre, Windows 8.1 un nuovo codec DDS Windows Imaging Component (WIC) per abilitare il caricamento e l'archiviazione di immagini compresse a blocchi nel formato di file DDS. La compressione a blocchi è una tecnica per ridurre la quantità di memoria grafica utilizzata dal contenuto bitmap. Usando la compressione a blocchi, l'app può ridurre il consumo di memoria e i tempi di caricamento per le stesse immagini di risoluzione. In caso contrario, l'app può usare più immagini con risoluzione superiore pur continuando a usare lo stesso footprint di memoria GPU.
+A partire Windows 8.1, Direct2D supporta diversi formati di pixel compressi a blocchi. Inoltre, Windows 8.1 contiene un nuovo codec DDS wic (Windows Imaging Component) per consentire il caricamento e l'archiviazione di immagini compresse a blocchi nel formato di file DDS. La compressione a blocchi è una tecnica per ridurre la quantità di memoria grafica utilizzata dal contenuto bitmap. Usando la compressione a blocchi, l'app può ridurre il consumo di memoria e i tempi di caricamento per le stesse immagini di risoluzione. In caso contrario, l'app può usare più immagini con risoluzione maggiore o superiore pur continuando a usare lo stesso footprint di memoria GPU.
 
 La compressione a blocchi è stata usata da molto tempo dalle applicazioni Direct3D e con Windows 8.1 è disponibile anche per gli sviluppatori di applicazioni Mainstream e Direct2D.
 
-Questo argomento descrive il funzionamento della compressione dei blocchi e come usarla in WIC e Direct2D.
+Questo argomento descrive il funzionamento della compressione a blocchi e come usarla in WIC e Direct2D.
 
-## <a name="about-block-compression"></a>Informazioni sulla compressione dei blocchi
+## <a name="about-block-compression"></a>Informazioni sulla compressione a blocchi
 
-[La compressione a](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) blocchi (BC) si riferisce a una classe di tecniche di compressione per ridurre le dimensioni delle trame. Direct3D 11 supporta fino a 7 formati BC diversi a seconda del livello di funzionalità. In Windows 8.1 Direct2D introduce il supporto per i formati BC1, BC2 e BC3 disponibili in tutti i livelli di funzionalità.
+[Per compressione a](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) blocchi si intende una classe di tecniche di compressione per ridurre le dimensioni delle trame. Direct3D 11 supporta fino a 7 formati BC diversi a seconda del livello di funzionalità. In Windows 8.1 Direct2D introduce il supporto per i formati BC1, BC2 e BC3 disponibili in tutti i livelli di funzionalità.
 
 ### <a name="how-block-compression-works"></a>Funzionamento della compressione a blocchi
 
-I formati compressi a blocchi usano tutti la stessa tecnica di base per ridurre lo spazio utilizzato dai dati di colore. Questa sezione riepiloga l'algoritmo più semplice, BC1. Per una spiegazione più dettagliata, vedere [Compressione blocchi](/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11).
+I formati compressi a blocchi usano tutti la stessa tecnica di base per ridurre lo spazio utilizzato dai dati di colore. Questa sezione riepiloga l'algoritmo più semplice, BC1. Per una spiegazione più dettagliata, vedere [Compressione a blocchi.](/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11)
 
 In primo luogo, l'immagine è divisa in blocchi di 4 per 4 pixel. Ogni blocco viene compresso separatamente.
 
@@ -39,79 +39,79 @@ Questa immagine di esempio mostra un blocco di 4x4 pixel all'interno di un'immag
 
 ![Un'immagine di esempio mostra un blocco di 4x4 pixel all'interno di un'immagine.](images/dds1.png)
 
-Successivamente, all'interno di un blocco 4 per 4, vengono selezionati due colori "riferimento" e vengono codificati come due valori a 16 bit (5 bit rosso, 6 bit verde, 5 bit blu). La scelta di questi colori influisce in modo significativo sulla qualità dell'immagine e non è un'operazione di questo tipo. Due colori intermedi vengono calcolati tramite l'interpolazione lineare tra i due colori di riferimento nello spazio colori RGB. Ciò produce un totale di 4 diversi colori possibili. a ogni colore viene assegnato un valore di indice a due bit. Si noti tuttavia che solo i due colori dell'endpoint devono essere archiviati quando l'interpolazione è fissa.
+Successivamente, all'interno di un blocco 4 per 4, vengono selezionati due colori di "riferimento" e vengono codificati come due valori a 16 bit (rosso a 5 bit, verde a 6 bit, blu a 5 bit). La scelta di questi colori influisce in modo significativo sulla qualità dell'immagine ed è nontriviale. Due colori intermedi vengono calcolati tramite l'interpolazione lineare tra i due colori di riferimento nello spazio colore RGB. Ciò produce un totale di 4 diversi colori possibili. a ogni colore viene assegnato un valore di indice a due bit. Si noti tuttavia che solo i due colori dell'endpoint devono essere archiviati perché l'interpolazione è fissa.
 
-In questa figura i colori 0 e 3 vengono selezionati come colori di riferimento per il blocco, mentre i colori 1 e 2 vengono calcolati usando l'interpolazione lineare.
+In questa figura i colori 0 e 3 vengono selezionati come colori di "riferimento" per il blocco, mentre i colori 1 e 2 vengono calcolati usando l'interpolazione lineare.
 
 ![Diagramma che mostra il calcolo di 4 valori di colore per rappresentare il blocco.](images/dds2.png)
 
-Infine, ogni pixel nel blocco viene mappato a uno dei quattro colori calcolati in precedenza e ogni pixel viene codificato usando il valore di indice a due bit.
+Infine, viene eseguito il mapping di ogni pixel del blocco a uno dei quattro colori calcolati in precedenza e ogni pixel viene codificato usando il valore di indice a due bit.
 
-La quantità totale di dati usati per rappresentare questi 16 pixel è:
+La quantità totale di dati usata per rappresentare questi 16 pixel è:
 
 `16 bits [to define a reference color] * 2 + 2 bits * 16 [number of pixels]  = 64 bits`
 
-Ciò comporta una densità media di 4 bit per pixel. Per il confronto, il formato pixel DXGI \_ FORMAT \_ B8G8R8A8 UNORM usa \_ 32 bit per pixel.
+Il risultato è una densità media di 4 bit per pixel. Per il confronto, il formato pixel DXGI \_ FORMAT \_ B8G8R8A8 UNORM comune utilizza \_ 32 bit per pixel.
 
-Questo diagramma mostra che ogni pixel è codificato come indice a 2 bit. L'intero blocco è codificato a 64 bit.
+Questo diagramma mostra che ogni pixel è codificato come indice a 2 bit. L'intero blocco viene codificato a 64 bit.
 
 ![calcolando 4 valori di colore per rappresentare il blocco.](images/dds3.png)
 
-Esistono variazioni per supportare i dati alfa e un numero variabile di canali di colore. BC6H e BC7 usano algoritmi significativamente diversi per supportare il contenuto HDR (High Dynamic Range) e aumentare rispettivamente la qualità delle immagini.
+Sono disponibili varianti per supportare i dati alfa e un numero variabile di canali di colore. BC6H e BC7 usano algoritmi significativamente diversi per supportare il contenuto HDR (High Dynamic Range) e aumentare rispettivamente la qualità delle immagini.
 
-### <a name="directdraw-surface-dds-file-format"></a>Formato di file DirectDraw Surface (DDS)
+### <a name="directdraw-surface-dds-file-format"></a>Formato di file DDS (DirectDraw Surface)
 
-I dati compressi a blocchi vengono in genere archiviati in [file DDS (DirectDraw Surface).](/windows/desktop/direct3ddds/dx-graphics-dds-reference) È possibile avere familiarità con i file DDS se si è uno sviluppatore Direct3D. Si noti che Direct2D supporta solo determinate funzionalità DDS. Per altre informazioni, vedere [Requisiti DDS](#dds-requirements).
+I dati compressi a blocchi vengono in genere archiviati in file [DDS (DirectDraw Surface).](/windows/desktop/direct3ddds/dx-graphics-dds-reference) È possibile che si abbia familiarità con i file DDS se si è uno sviluppatore Direct3D. Si noti che Direct2D supporta solo determinate funzionalità DDS. Per altre informazioni, vedere [Requisiti DDS.](#dds-requirements)
 
-### <a name="advantages-of-block-compression"></a>Vantaggi della compressione dei blocchi
+### <a name="advantages-of-block-compression"></a>Vantaggi della compressione a blocchi
 
-I formati compressi a blocchi differiscono dai formati comuni di compressione delle immagini del settore, ad esempio JPEG, in quanto i formati BC sono supportati in modo nativo dalle GPU moderne. Ciò significa che è possibile caricare direttamente un'immagine compressa in blocchi nella GPU senza decodifica o decompressione. I formati BC utilizzano in media da 4 a 8 bit per pixel; se confrontato con una tipica bitmap BGRA a 32 bit per pixel non compressa, ciò comporta un risparmio di memoria dal 75% all'87,5%. Inoltre, poiché non è presente alcun passaggio di decodifica, il tempo necessario per caricare un'immagine BC è significativamente ridotto rispetto a formati come JPEG.
+I formati compressi a blocchi differiscono dai formati comuni di compressione delle immagini del settore, ad esempio JPEG, in quanto i formati BC sono supportati in modo nativo dalle GPU moderne. Ciò significa che è possibile caricare direttamente un'immagine compressa in blocchi nella GPU senza decodifica o decompressione. I formati BC utilizzano in media da 4 a 8 bit per pixel; Rispetto a una tipica bitmap BGRA a 32 bit per pixel non compressa, ciò comporta un risparmio di memoria dal 75% all'87,5%. Inoltre, poiché non è presente alcun passaggio di decodifica, il tempo necessario per caricare un'immagine BC è notevolmente ridotto rispetto ai formati come JPEG.
 
 ### <a name="when-to-use-block-compression"></a>Quando usare la compressione a blocchi
 
-È consigliabile usare immagini compresse a blocchi nell'app anziché altri formati, ad esempio JPEG, se si vuole ridurre il consumo di memoria delle bitmap o ridurre i tempi di decodifica e caricamento.
+È consigliabile usare immagini compresse a blocchi nell'app invece di altri formati, ad esempio JPEG, se si vuole ridurre il consumo di memoria delle bitmap o ridurre i tempi di decodifica e caricamento.
 
-Tuttavia, la compressione dei blocchi non è appropriata per tutti i casi e richiede alcuni compromessi. In primo luogo, gli algoritmi di compressione dei blocchi sono in perdita. La compressione a blocchi funziona bene con il contenuto fotografico naturale, ma può introdurre artefatti visivi indesiderati in immagini con limiti a contrasto elevato e acuti, ad esempio screenshot generati dal computer. È necessario assicurarsi che gli asset di immagini compresse in blocchi siano di qualità dell'immagine accettabile prima di usarli.
+Tuttavia, la compressione dei blocchi non è appropriata per tutti i casi e richiede alcuni compromessi. In primo luogo, gli algoritmi di compressione a blocchi sono persi. La compressione a blocchi funziona bene con contenuto naturale, ma può introdurre artefatti visivi indesiderati in immagini con limiti a contrasto elevato e appuntiti, ad esempio screenshot generati dal computer. Prima di usarle, è necessario assicurarsi che gli asset di immagini compresse in blocchi siano di qualità accettabile.
 
-In secondo piano, i file DDS compressi a blocchi in genere utilizzano più spazio su disco rispetto alle immagini JPEG simili. Questo a sua volta aumenterà le dimensioni del pacchetto dell'app e i requisiti di larghezza di banda di rete.
+In secondo piano, i file DDS compressi in blocchi in genere utilizzano più spazio su disco rispetto alle immagini JPEG confrontabili. Ciò aumenterà a sua volta le dimensioni del pacchetto dell'app e i requisiti di larghezza di banda di rete.
 
-## <a name="using-block-compression"></a>Uso della compressione dei blocchi
+## <a name="using-block-compression"></a>Uso della compressione a blocchi
 
 Questa sezione illustra come generare e usare asset compressi a blocchi in un'app Direct2D.
 
 ### <a name="overview"></a>Panoramica
 
-I file DDS compressi a blocchi sono un formato ottimizzato per il runtime, ovvero sono ottimizzati in modo specifico per prestazioni ottimali in fase di esecuzione dell'app. È consigliabile continuare a usare la pipeline di creazione e modifica di asset esistente e di eseguire la conversione in un formato compresso a blocchi solo quando vengono importati nel progetto dell'applicazione o in fase di compilazione.
+I file DDS compressi a blocchi sono un formato ottimizzato per il runtime, ovvero sono ottimizzati in modo specifico per prestazioni ottimali in fase di esecuzione dell'app. È consigliabile continuare a usare la pipeline di creazione e modifica di asset esistente e convertire in un formato compresso a blocchi solo quando vengono importati nel progetto dell'applicazione o in fase di compilazione.
 
-### <a name="dds-requirements"></a>Requisiti di DDS
+### <a name="dds-requirements"></a>Requisiti DDS
 
 Il formato di file DDS è stato progettato per supportare un'ampia gamma di funzionalità usate in Direct3D. Direct2D usa solo un subset di queste funzionalità. Pertanto, quando si creano immagini DDS da usare con Direct2D, è necessario tenere presenti le restrizioni seguenti:
 
--   Sono consentiti [**solo i valori DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) seguenti:
-    -   DXGI \_ FORMAT \_ BC1 \_ UNORM
-    -   DXGI \_ FORMAT \_ BC2 \_ UNORM
-    -   DXGI \_ FORMAT \_ BC3 \_ UNORM
--   È necessario usare dati alfa premoltilied. Sono inclusi i file DDS legacy che usano formati che definiscono in modo esplicito il valore alfa premoltilied (DXT1, DXT2, DXT4), nonché i file DDS che usano la struttura DDS HEADER DX10 con i valori \_ \_ \_ DDS ALPHA \_ MODE OPAQUE e \_ DDS ALPHA MODE \_ \_ \_ PREMULTIPLIED.
--   Le dimensioni X e Y devono essere multiple di 4 pixel.
--   Non sono consentite trame di volume, mappe cubi, mipmap o matrici di trame. È consigliabile usare solo immagini di origine con frame singolo.
+-   Sono consentiti [**solo i valori \_ DXGI FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) seguenti:
+    -   FORMATO DXGI \_ \_ BC1 \_ UNORM
+    -   FORMATO DXGI \_ \_ BC2 \_ UNORM
+    -   FORMATO DXGI \_ \_ BC3 \_ UNORM
+-   È necessario usare dati alfa premoltiliati. Sono inclusi i file DDS legacy che usano formati che definiscono in modo esplicito i valori alfa premoltilied (DXT1, DXT2, DXT4), nonché i file DDS che usano la struttura DDS HEADER DX10 con i valori \_ \_ \_ DDS ALPHA \_ MODE OPAQUE e \_ DDS ALPHA MODE \_ \_ \_ PREMULTIPLIED.
+-   Le dimensioni X e Y devono essere multipli di 4 pixel.
+-   Le trame di volume, le mappe cubi, le mipmap o le matrici di trame non sono consentite. È consigliabile usare solo immagini di origine con frame singolo.
 
-### <a name="generating-block-compressed-assets"></a>Generazione di asset compressi a blocchi
+### <a name="generating-block-compressed-assets"></a>Generazione di asset compressi in blocchi
 
-Sono disponibili diversi strumenti di creazione DDS per creare o convertire file DDS compressi in blocchi. Si noti che non tutti gli strumenti supportano i requisiti per l'uso di file DDS con Direct2D, come descritto nella sezione precedente.
+Sono disponibili diversi strumenti di creazione DDS per creare o convertire file DDS compressi a blocchi. Si noti che non tutti gli strumenti supportano i requisiti per l'uso di file DDS con Direct2D, come descritto nella sezione precedente.
 
-A partire da Visual Studio 2013, è possibile convertire Visual Studio asset visivi esistenti, ad esempio JPEG e PNG, nel formato compresso a blocchi DDS corretto come parte automatica del processo di compilazione. Questa operazione viene eseguita usando l'istruzione di compilazione personalizzata Attività contenuto immagine.
+A partire da Visual Studio 2013, è possibile fare in modo che Visual Studio gli asset visivi esistenti, ad esempio JPEG e PNG, nel formato compresso a blocchi DDS corretto come parte automatica del processo di compilazione. Questa operazione viene eseguita usando l'istruzione di compilazione personalizzata Attività Contenuto immagine.
 
-Per informazioni su come configurare questa funzionalità per il progetto, vedere Procedura: Esportare una trama da usare con [Direct2D o Javascipt Apps.](/previous-versions/visualstudio/visual-studio-2013/dn392693(v=vs.120))
+Per informazioni su come configurare questa funzionalità per il progetto, vedere Procedura: Esportare una trama per l'uso con [App Direct2D o Java.](/previous-versions/visualstudio/visual-studio-2013/dn392693(v=vs.120))
 
 ### <a name="direct2d-apis"></a>API Direct2D
 
 Direct2D viene aggiornato in Windows 8.1 per supportare i formati pixel seguenti:
 
--   DXGI \_ FORMAT \_ BC1 \_ UNORM
--   DXGI \_ FORMAT \_ BC2 \_ UNORM
--   DXGI \_ FORMAT \_ BC3 \_ UNORM
+-   FORMATO DXGI \_ \_ BC1 \_ UNORM
+-   FORMATO DXGI \_ \_ BC2 \_ UNORM
+-   FORMATO DXGI \_ \_ BC3 \_ UNORM
 
-Per i formati precedenti, è necessario usare il carattere alfa premoltilied. Inoltre, questi formati sono validi solo per l'uso come origine, non come destinazione. Ciò significa, ad esempio, che è possibile creare una bitmap Direct2D usando BC1, ma non un contesto di dispositivo.
+Per i formati precedenti, è necessario usare alfa premoltilied. Inoltre, questi formati sono validi solo per l'uso come origine, non come destinazione. Ciò significa, ad esempio, che è possibile creare una bitmap Direct2D usando BC1, ma non un contesto di dispositivo.
 
 I metodi seguenti vengono aggiornati in Windows 8.1 per supportare i formati BC:
 
@@ -124,7 +124,7 @@ I metodi seguenti vengono aggiornati in Windows 8.1 per supportare i formati BC:
 -   [**ID2D1Bitmap::CopyFromBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1bitmap-copyfrombitmap)
 -   [**ID2D1Bitmap1::GetSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getsurface)
 
-Si noti [**che CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) accetta [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) come interfaccia. Tuttavia, Windows 8.1 WIC non supporta l'ottenimento di dati compressi in blocchi da **IWICBitmapSource** e non esiste alcun formato pixel WIC corrispondente a DXGI \_ FORMAT BC1 UNORM e così \_ \_ via. **CreateBitmapFromWicBitmap** determina invece se **IWICBitmapSource** è un [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) DDS valido e carica direttamente i dati compressi in blocchi. È possibile specificare in modo esplicito il formato pixel nello struct [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) oppure consentire a Direct2D di determinare automaticamente il formato corretto.
+Si noti [**che CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) accetta [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) come interfaccia. tuttavia in Windows 8.1 WIC non supporta il recupero di dati compressi in blocchi da **IWICBitmapSource** e non esiste alcun formato pixel WIC corrispondente a DXGI \_ FORMAT BC1 UNORM e così \_ \_ via. **CreateBitmapFromWicBitmap** determina invece se **IWICBitmapSource** è un [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) DDS valido e carica direttamente i dati compressi del blocco. È possibile specificare in modo esplicito il formato pixel nello struct [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) o consentire a Direct2D di determinare automaticamente il formato corretto.
 
 ### <a name="windows-imaging-component-apis"></a>Windows API del componente di creazione dell'immagine
 

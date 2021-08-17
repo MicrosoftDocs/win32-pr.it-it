@@ -1,28 +1,28 @@
 ---
-description: La formula del \_ tipo di contatore di intervallo Cooker Mostra la differenza tra i valori minimo e massimo per un set di osservazioni non elaborate di una proprietà in un'istanza di Win32 \_ PerfRawData.
+description: La formula del tipo di contatore COOKER RANGE mostra la differenza tra i valori Min e Max per un set di osservazioni non elaborate di una proprietà in un'istanza \_ di \_ Win32 PerfRawData.
 ms.assetid: 4173ca74-e982-4c94-9d78-613797eaec36
 ms.tgt_platform: multiple
 title: COOKER_RANGE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a6e6295f0f255db66d9a753c437382057db0f62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55480269fb1dd40e8901836d54081d68879ac48e1ad7a564629d18daf178d51b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131493"
 ---
-# <a name="cooker_range"></a>intervallo di cottura \_
+# <a name="cooker_range"></a>INTERVALLO DI \_ COOKER
 
-La formula del \_ tipo di contatore di intervallo Cooker Mostra la differenza tra i valori [minimo](cooker-min.md) e [massimo](cooker-max.md) per un set di osservazioni non elaborate di una proprietà in un'istanza di [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) . Questo tipo di contatore viene definito solo all'interno di WMI e non è disponibile per le tecnologie di monitoraggio delle prestazioni, ad esempio i [contatori delle prestazioni versione 6,0](/windows/desktop/PerfCtrs/performance-counters-portal).
+La formula del tipo di contatore COOKER RANGE mostra la differenza tra i valori Min e Max per un set di osservazioni non elaborate di una proprietà in un'istanza \_ [**di Win32 \_ PerfRawData.**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) [](cooker-min.md) [](cooker-max.md) Questo tipo di contatore è definito solo in WMI e non è disponibile per le tecnologie di monitoraggio delle prestazioni, ad esempio i contatori delle prestazioni [versione 6.0.](/windows/desktop/PerfCtrs/performance-counters-portal)
 
-Per ulteriori informazioni sulla formula del tipo di contatore, vedere [tipi di contatori](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
+Per altre informazioni sulla formula del tipo di contatore, vedere [Tipi di contatore](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
 
-Per ulteriori informazioni sui provider a prestazioni elevate e sullo scripting, vedere [tipi di contatori delle prestazioni WMI](wmi-performance-counter-types.md).
+Per altre informazioni sui provider a prestazioni elevate e sugli script, vedere [Tipi di contatori delle prestazioni WMI](wmi-performance-counter-types.md).
 
 ## <a name="example-code"></a>Codice di esempio
 
-Per esempi di codice, vedere [ottenere dati statistici sulle prestazioni](obtaining-statistical-performance-data.md).
+Per esempi di codice, vedere [Recupero di dati statistici sulle prestazioni](obtaining-statistical-performance-data.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,23 +1,23 @@
 ---
-title: Errore di tabella dati ARIA
-description: Errore di tabella dati ARIA
+title: Errore della tabella dati ARIA
+description: Errore della tabella dati ARIA
 ms.assetid: 3D0448BB-50DC-4C85-93BD-D8E626475AB0
 keywords:
 - AriaDataTableErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3286f88a0b3a0d962fd6ac45581f94bc351cb507
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 025443ab452ff0103c8808c27dce834a03cb8c96e0d9106a7abb4409b64a0697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104399844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133974"
 ---
-# <a name="aria-data-table-error"></a>Errore di tabella dati ARIA
+# <a name="aria-data-table-error"></a>Errore della tabella dati ARIA
 
 ## <a name="text"></a>Testo
 
-La tabella contiene dati ma non ha un markup accessibile definito anche se **aria-label**, **aria-labelledby**, **titolo**, **didascalia** **o elementi** .
+La tabella contiene dati, ma non dispone di markup accessibile definito anche se **aria-label**, **aria-labelledby,** **title,** **caption** o **th** elementi.
 
 ## <a name="type"></a>Tipo
 
@@ -27,9 +27,9 @@ Errore
 
 Questo errore si applica alle tabelle HTML con più di una cella. Questo errore non si applica alle tabelle con `role="presentation"` perché sono considerate tabelle di layout.
 
-Questo errore indica che una tabella dati non ha un nome accessibile o informazioni di intestazione.
+Questo errore indica che una tabella dati non dispone di un nome o di un'intestazione accessibile.
 
-Per correggere l'errore, definire un nome accessibile usando il tag [**Caption**](https://developer.mozilla.org/docs/Web/HTML/Element/caption) oppure gli attributi [**aria-labelledby**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-label**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)o [**title**](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/title) . Se nella tabella mancano informazioni di intestazione, utilizzare i tag [**thead**](https://developer.mozilla.org/docs/Web/HTML/Element/thead) per contrassegnare le celle di intestazione.
+Per correggere l'errore, definire un nome accessibile usando il tag [**CAPTION**](https://developer.mozilla.org/docs/Web/HTML/Element/caption) o gli attributi [**aria-labelledby,**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) [**aria-label**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)o [**title.**](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/title) Se nella tabella mancano informazioni di intestazione, usare [**i tag THead**](https://developer.mozilla.org/docs/Web/HTML/Element/thead) per contrassegnare le celle di intestazione.
 
 ## <a name="example"></a>Esempio
 
@@ -58,9 +58,9 @@ Per correggere l'errore, definire un nome accessibile usando il tag [**Caption**
 
 
 
- 
+ 
 
- 
+ 
 
 
 

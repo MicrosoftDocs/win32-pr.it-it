@@ -4,7 +4,7 @@ description: Recupera una raccolta enumerabile di unità CD e DVD collegate alla
 ms.assetid: e9e7d912-568f-4a3d-85cf-63f6fa99cb19
 keywords:
 - Proprietà DVDROMDrives Virtual PC
-- Proprietà DVDROMDrives Virtual PC , interfaccia IVMVirtualMachine
+- Proprietà DVDROMDrives Virtual PC, interfaccia IVMVirtualMachine
 - Interfaccia IVMVirtualMachine Virtual PC, proprietà DVDROMDrives
 topic_type:
 - apiref
@@ -56,7 +56,7 @@ Oggetto [**IVMDVDDriveCollection.**](ivmdvddrivecollection.md)
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
 | <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione è sconosciuta.<br/>     |
-| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -69,7 +69,7 @@ Oggetto [**IVMDVDDriveCollection.**](ivmdvddrivecollection.md)
 | Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 

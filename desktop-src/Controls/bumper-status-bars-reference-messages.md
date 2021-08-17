@@ -4,34 +4,34 @@ description: Messaggi della barra di stato
 ms.assetid: 7e1e3c8d-2ed8-4cd7-aa17-733e2c8c5ff1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fafb64a76766632cf51d4041de1c2a628387b61
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4eddb6d30cb755ca8fc1dfda083f4dd95b68c23d1599486248e4c5810904d302
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969851"
 ---
 # <a name="status-bar-messages"></a>Messaggi della barra di stato
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**SB \_ GETborders**](sb-getborders.md)
--   [**SB \_ GETicon**](sb-geticon.md)
--   [**SB \_ GETparts**](sb-getparts.md)
--   [**SB \_ GETrect**](sb-getrect.md)
--   [**SB \_ GETtext**](sb-gettext.md)
--   [**\_GETTEXTLENGTH SB**](sb-gettextlength.md)
--   [**\_GETTIPTEXT SB**](sb-gettiptext.md)
--   [**\_GETUNICODEFORMAT SB**](sb-getunicodeformat.md)
--   [**\_semplice SB**](sb-issimple.md)
--   [**\_SETBKCOLOR SB**](sb-setbkcolor.md)
--   [**\_icona SB**](sb-seticon.md)
--   [**\_SETMINHEIGHT SB**](sb-setminheight.md)
--   [**sottoparti SB \_**](sb-setparts.md)
--   [**\_testo SB**](sb-settext.md)
--   [**\_SETTIPTEXT SB**](sb-settiptext.md)
--   [**\_SETUNICODEFORMAT SB**](sb-setunicodeformat.md)
--   [**\_semplice SB**](sb-simple.md)
+-   [**SB \_ GETBORDERS**](sb-getborders.md)
+-   [**SB \_ GETICON**](sb-geticon.md)
+-   [**SB \_ GETPARTS**](sb-getparts.md)
+-   [**SB \_ GETRECT**](sb-getrect.md)
+-   [**SB \_ GETTEXT**](sb-gettext.md)
+-   [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md)
+-   [**SB \_ GETTIPTEXT**](sb-gettiptext.md)
+-   [**SB \_ GETUNICODEFORMAT**](sb-getunicodeformat.md)
+-   [**SB \_ ISSIMPLE**](sb-issimple.md)
+-   [**SB \_ SETBKCOLOR**](sb-setbkcolor.md)
+-   [**SB \_ SETICON**](sb-seticon.md)
+-   [**SB \_ SETMINHEIGHT**](sb-setminheight.md)
+-   [**SB \_ SETPARTS**](sb-setparts.md)
+-   [**SB \_ SETTEXT**](sb-settext.md)
+-   [**SB \_ SETTIPTEXT**](sb-settiptext.md)
+-   [**SB \_ SETUNICODEFORMAT**](sb-setunicodeformat.md)
+-   [**SB \_ SIMPLE**](sb-simple.md)
 
  
 

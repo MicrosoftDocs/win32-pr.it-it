@@ -1,7 +1,7 @@
 ---
-description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità di IAzScopes.
+description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità IAzScopes.
 ms.assetid: 1b80b1c0-58a9-401b-9ddb-bd6eb146751e
-title: Interfaccia Microsoft. Interop. Security. AzRoles. IAzScopes
+title: Interfaccia Microsoft.Interop.Security.AzRoles.IAzScopes
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,33 +23,33 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 44fffcd99c0e48c0b6cda19fd76ad7bbc12929ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c81db0964820a7c5034ec4cb5417a58396bdc9a361f1d3a403cfaf80abbf7d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118912549"
 ---
-# <a name="microsoftinteropsecurityazrolesiazscopes-interface"></a>Interfaccia Microsoft. Interop. Security. AzRoles. IAzScopes
+# <a name="microsoftinteropsecurityazrolesiazscopes-interface"></a>Interfaccia Microsoft.Interop.Security.AzRoles.IAzScopes
 
-I metodi e le proprietà del wrapper di interoperabilità **Microsoft. Interop. Security. azroles. IAzScopes** sono documentati nella versione com del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
+I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Security.Azroles.IAzScopes** sono documentati nella versione COM del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzScopes** include questi tipi di membri:
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzScopes** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzScopes** ha questi metodi.
+Questi metodi sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzScopes.**
 
 
 
 | Metodo                                                         | Descrizione                                                  |
 |:---------------------------------------------------------------|:-------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzScopes. GetEnumerator** | [**IAzScopes:: \_ NewEnum**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get__newenum)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzScopes.GetEnumerator** | [**IAzScopes:: \_ NewEnum**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get__newenum)<br/> |
 
 
 
@@ -57,14 +57,14 @@ L'interfaccia **Microsoft. Interop. Security. azroles. IAzScopes** ha questi met
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzScopes** dispone di queste proprietà.
+Queste proprietà sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzScopes.**
 
 
 
 | Proprietà                                                          | Tipo di accesso          | Descrizione                                                       |
 |:------------------------------------------------------------------|:---------------------|:------------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzScopes. Count**<br/> | Sola lettura<br/> | [**Proprietà Count di IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_count)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzScopes. Item**<br/>  | Sola lettura<br/> | [**Proprietà Item di IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_item)<br/>   |
+| **Microsoft.Interop.Security.Azroles.IAzScopes.Count**<br/> | Sola lettura<br/> | [**Proprietà Count di IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_count)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzScopes.Item**<br/>  | Sola lettura<br/> | [**Proprietà Item di IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_item)<br/>   |
 
 
 

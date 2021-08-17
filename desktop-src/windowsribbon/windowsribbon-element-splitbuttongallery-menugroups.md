@@ -23,7 +23,7 @@ ms.locfileid: "119441720"
 
 Rappresenta un contenitore per un set di voci di menu a discesa in [**un controllo SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <SplitButtonGallery.MenuGroups>

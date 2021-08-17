@@ -1,51 +1,51 @@
 ---
 description: Un URL è una rappresentazione compatta del percorso e del metodo di accesso per una risorsa che si trova su Internet.
 ms.assetid: 940c414d-274f-475c-a50e-7a0853c3c26b
-title: Uniform Resource Locator (URL) in WinHTTP
+title: URL (Uniform Resource Locators) in WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 486ed3b17e2cf205f6ac815e87617a84e0ccc4cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 798d18dd2e3d2095e175904fcc2f3a332d618100174f174510c98780b06a57ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133009"
 ---
-# <a name="uniform-resource-locators-urls-in-winhttp"></a>Uniform Resource Locator (URL) in WinHTTP
+# <a name="uniform-resource-locators-urls-in-winhttp"></a>URL (Uniform Resource Locators) in WinHTTP
 
-Un URL è una rappresentazione compatta del percorso e del metodo di accesso per una risorsa che si trova su Internet. Ogni URL è costituito da uno schema (HTTP, HTTPS, FTP o gopher) e da una stringa specifica dello schema. Questa stringa può includere anche una combinazione di percorso di directory, stringa di ricerca o nome della risorsa. Le funzioni dei servizi HTTP di Microsoft Windows (WinHTTP) offrono la possibilità di creare, combinare, suddividere e Canonicalize URL. Per altre informazioni, vedere [rfc 1738](https://www.ietf.org/rfc/rfc1738.txt), [Uniform Resource Locators](https://www.ietf.org/rfc/rfc1738.txt) e [RFC 2396](https://www.ietf.org/rfc/rfc2396.txt), [Uniform Resource Identifier (URI): sintassi generica](https://www.ietf.org/rfc/rfc1738.txt).
+Un URL è una rappresentazione compatta del percorso e del metodo di accesso per una risorsa che si trova su Internet. Ogni URL è costituito da uno schema (HTTP, HTTPS, FTP o Gopher) e da una stringa specifica dello schema. Questa stringa può includere anche una combinazione di un percorso di directory, una stringa di ricerca o un nome della risorsa. Le funzioni microsoft Windows servizi HTTP (WinHTTP) consentono di creare, combinare, suddividere e canonizzare gli URL. Per altre informazioni, vedere [RFC 1738](https://www.ietf.org/rfc/rfc1738.txt), [Uniform Resource Locators](https://www.ietf.org/rfc/rfc1738.txt) e [RFC 2396](https://www.ietf.org/rfc/rfc2396.txt), [URI (Uniform Resource Identifier): Sintassi generica](https://www.ietf.org/rfc/rfc1738.txt).
 
-## <a name="what-is-a-canonicalized-url"></a>Che cos'è un URL in formato canonico?
+## <a name="what-is-a-canonicalized-url"></a>Che cos'è un URL canonico?
 
-La sintassi e la semantica specificate degli URL lasciano spazio per la variazione e l'errore. La canonizzazione è il processo di normalizzare un URL effettivo in un formato corretto, standard, "canonical".
+La sintassi e la semantica degli URL specificati lasciano spazio alla variazione e all'errore. La canonizzazione è il processo di normalizzazione di un URL effettivo in una forma corretta, standard e "canonica".
 
-Questa operazione implica la codifica di alcuni caratteri come sequenze di escape. I caratteri alfanumerici US-ASCII non devono essere codificati (le cifre 0-9, le lettere maiuscole A-Z e le lettere minuscole a-z). La maggior parte degli altri caratteri deve essere preceduto da un carattere di escape, inclusi i caratteri di controllo, lo spazio, il segno di percentuale, "caratteri unsafe" (<, >, ", \# , {,}, \| , \\ , ^, ~, \[ , \] è) e tutti i caratteri con un punto di codice superiore a 127.
+Ciò comporta la codifica di alcuni caratteri come "sequenze di escape". I caratteri US-ASCII alfanumerici non devono essere codificati (le cifre da 0 a 9, le lettere maiuscole A-Z e le lettere minuscole a-z). La maggior parte degli altri caratteri deve essere preceduta da caratteri di escape, inclusi i caratteri di controllo, lo spazio, il segno di percentuale, i "caratteri non sicuri" ( <, >, ", {, }, , ^, ~, , e ' ) e tutti i caratteri con un punto di codice superiore \# \| a \\ \[ \] 127.
 
-## <a name="using-the-winhttp-functions-to-handle-urls"></a>Uso delle funzioni WinHTTP per la gestione degli URL
+## <a name="using-the-winhttp-functions-to-handle-urls"></a>Uso delle funzioni WinHTTP per gestire gli URL
 
-WinHTTP fornisce due funzioni per la gestione degli URL. [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) separa un URL nelle relative parti componente e [**WINHTTPCREATEURL**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl) crea un URL dai componenti.
+WinHTTP offre due funzioni per la gestione degli URL. [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) separa un URL nelle parti del componente e [**WinHttpCreateUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl) crea un URL dai componenti.
 
 ### <a name="separating-urls"></a>Separazione degli URL
 
-La funzione [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) separa un URL nelle relative parti componente e restituisce i componenti indicati dalla struttura dei [**\_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) passati alla funzione.
+La [**funzione WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) separa un URL nelle relative parti del componente e restituisce i componenti indicati dalla struttura [**\_ COMPONENTS dell'URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) passata alla funzione.
 
-I componenti che costituiscono la struttura [**dei \_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) sono il numero di schema, il nome host, il numero di porta, il nome utente, la password, il percorso URL e altre informazioni, ad esempio i parametri di ricerca. Ogni componente, ad eccezione dello schema e dei numeri di porta, dispone di un membro di stringa che contiene le informazioni e un membro che contiene la lunghezza del membro della stringa. Lo schema e i numeri di porta hanno solo un membro che archivia il valore corrispondente. per tutte le chiamate riuscite a [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl)vengono restituiti sia lo schema che i numeri di porta.
+I componenti che costituiscono la struttura [**COMPONENTI URL \_**](/windows/win32/api/winhttp/ns-winhttp-url_components) sono il numero dello schema, il nome host, il numero di porta, il nome utente, la password, il percorso URL e informazioni aggiuntive, ad esempio i parametri di ricerca. Ogni componente, ad eccezione dello schema e dei numeri di porta, ha un membro stringa che contiene le informazioni e un membro che contiene la lunghezza del membro stringa. Lo schema e i numeri di porta hanno solo un membro che archivia il valore corrispondente. Sia lo schema che i numeri di porta vengono restituiti in tutte le chiamate riuscite a [**WinHttpCrackUrl.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl)
 
-Per recuperare il valore di un particolare componente nella struttura [**dei \_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) , il membro che archivia la lunghezza di stringa di tale componente deve essere impostato su un valore diverso da zero. Il membro della stringa può essere un puntatore a un buffer o **null**.
+Per recuperare il valore di un componente specifico nella struttura [**\_ COMPONENTS dell'URL,**](/windows/win32/api/winhttp/ns-winhttp-url_components) il membro che archivia la lunghezza della stringa di tale componente deve essere impostato su un valore diverso da zero. Il membro stringa può essere un puntatore a un buffer o **NULL.**
 
-Se il membro del puntatore contiene un puntatore a un buffer, il membro della lunghezza della stringa deve contenere la dimensione del buffer. La funzione [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) restituisce le informazioni sul componente come stringa nel buffer e archivia la lunghezza della stringa nel membro della lunghezza della stringa.
+Se il membro puntatore contiene un puntatore a un buffer, il membro di lunghezza della stringa deve contenere le dimensioni di tale buffer. La [**funzione WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) restituisce le informazioni sul componente come stringa nel buffer e archivia la lunghezza della stringa nel membro di lunghezza della stringa.
 
-Se il membro del puntatore è impostato su **null**, il membro della lunghezza della stringa può essere impostato su un valore diverso da zero. La funzione [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) archivia un puntatore al primo carattere della stringa dell'URL che contiene le informazioni sul componente e imposta la lunghezza della stringa sul numero di caratteri nella parte rimanente della stringa dell'URL che riguarda il componente.
+Se il membro puntatore è impostato su **NULL,** il membro di lunghezza della stringa può essere impostato su qualsiasi valore diverso da zero. La [**funzione WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) archivia un puntatore al primo carattere della stringa URL che contiene le informazioni sul componente e imposta la lunghezza della stringa sul numero di caratteri nella parte rimanente della stringa URL relativa al componente.
 
-Tutti i membri del puntatore impostati su **null** con un membro di lunghezza diverso da zero puntano al punto di partenza appropriato nella stringa dell'URL. La lunghezza archiviata nel membro length deve essere utilizzata per determinare la fine delle informazioni del singolo componente.
+Tutti i membri puntatore impostati su **NULL** con un membro di lunghezza diversa da zero puntano al punto iniziale appropriato nella stringa URL. La lunghezza archiviata nel membro length deve essere usata per determinare la fine delle informazioni del singolo componente.
 
-Per completare l'inizializzazione corretta della struttura dei [**\_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) , è necessario impostare il membro **dwStructSize** sulla dimensione della struttura dei [**\_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) .
+Per completare correttamente l'inizializzazione della struttura [**\_ COMPONENTS dell'URL,**](/windows/win32/api/winhttp/ns-winhttp-url_components) il membro **dwStructSize** deve essere impostato sulla dimensione della struttura [**COMPONENTS \_ dell'URL.**](/windows/win32/api/winhttp/ns-winhttp-url_components)
 
 ### <a name="creating-urls"></a>Creazione di URL
 
-La funzione [**WinHttpCreateUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl) usa le informazioni contenute nella struttura dei [**\_ componenti URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) descritti in precedenza per creare un URL.
+La [**funzione WinHttpCreateUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl) usa le informazioni nella struttura [**\_ COMPONENTI URL**](/windows/win32/api/winhttp/ns-winhttp-url_components) descritta in precedenza per creare un URL.
 
-Per ogni componente richiesto, il membro del puntatore deve contenere un puntatore al buffer che contiene le informazioni. Il membro length deve essere impostato su zero se il membro del puntatore contiene un puntatore a una stringa con terminazione zero. il membro length deve essere impostato sulla lunghezza della stringa se il membro del puntatore contiene un puntatore a una stringa senza terminazione zero. Il membro del puntatore di tutti i componenti non necessari deve essere impostato su **null**.
+Per ogni componente richiesto, il membro puntatore deve contenere un puntatore al buffer che contiene le informazioni. Il membro length deve essere impostato su zero se il membro puntatore contiene un puntatore a una stringa con terminazione zero. Il membro length deve essere impostato sulla lunghezza della stringa se il membro puntatore contiene un puntatore a una stringa che non ha terminazione zero. Il membro puntatore di tutti i componenti non necessari deve essere impostato su **NULL.**
 
 ### <a name="sample-code"></a>Codice di esempio
 

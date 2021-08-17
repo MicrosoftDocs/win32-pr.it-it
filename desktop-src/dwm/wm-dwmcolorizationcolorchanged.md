@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DWMCOLORIZATIONCOLORCHANGED (winuser. h)
+title: WM_DWMCOLORIZATIONCOLORCHANGED messaggio (Winuser.h)
 description: Informa tutte le finestre di primo livello che il colore di colorazione è stato modificato.
 ms.assetid: 6118d41b-f0b4-4034-aa98-d8757f18ca0d
 keywords:
-- Messaggio WM_DWMCOLORIZATIONCOLORCHANGED Gestione finestre desktop
+- WM_DWMCOLORIZATIONCOLORCHANGED messaggio Gestione finestre desktop
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc99d42fe2d4af77fa4534945a3396dda9c02b25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bdbb854821f2a25565241700d28964b2d32319bccb8226c3d7d789c0e457fff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094591"
 ---
-# <a name="wm_dwmcolorizationcolorchanged-message"></a>\_Messaggio DWMCOLORIZATIONCOLORCHANGED WM
+# <a name="wm_dwmcolorizationcolorchanged-message"></a>Messaggio WM \_ DWMCOLORIZATIONCOLORCHANGED
 
 Informa tutte le finestre di primo livello che il colore di colorazione è stato modificato.
 
@@ -39,19 +39,19 @@ Specifica il nuovo colore di colorazione. Il formato del colore è 0xAARRGGBB.
 *lParam* 
 </dt> <dd>
 
-Specifica se il nuovo colore viene mescolato con l'opacità.
+Specifica se il nuovo colore viene misto con l'opacità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-[**DwmGetColorizationColor**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetcolorizationcolor) viene usato per determinare il valore del colore corrente.
+[**DwmGetColorizationColor viene**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetcolorizationcolor) usato per determinare il valore del colore corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

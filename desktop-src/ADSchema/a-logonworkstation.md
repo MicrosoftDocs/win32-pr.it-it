@@ -1,11 +1,11 @@
 ---
 title: Logon-Workstation attributo
-description: Questo attributo non viene usato. | Logon-Workstation attributo
+description: Questo attributo non viene utilizzato. | Logon-Workstation attributo
 ms.assetid: a4f43f60-5897-4d45-8d47-54dfe3b11c76
 ms.tgt_platform: multiple
 keywords:
 - Logon-Workstation schema AD dell'attributo
-- Schema AD dell'attributo logonWorkstation
+- Attributo logonWorkstation Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119301551"
 ---
 # <a name="logon-workstation-attribute"></a>Logon-Workstation attributo
 
-Questo attributo non viene usato. Vedere [**l'attributo User-Workstations.**](a-userworkstations.md)
+Questo attributo non viene utilizzato. Vedere [**l'attributo User-Workstations.**](a-userworkstations.md)
 
 
 
@@ -32,7 +32,7 @@ Questo attributo non viene usato. Vedere [**l'attributo User-Workstations.**](a-
 | CN                | Logon-Workstation                                     |
 | Ldap-Display-Name | logonWorkstation                                      |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.65                                 |
 | System-Id-Guid    | bf9679ac-0de6-11d0-a285-00aa003049e2                  |
@@ -121,7 +121,7 @@ Questo attributo non viene usato. Vedere [**l'attributo User-Workstations.**](a-
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -142,7 +142,7 @@ Questo attributo non viene usato. Vedere [**l'attributo User-Workstations.**](a-
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -163,7 +163,7 @@ Questo attributo non viene usato. Vedere [**l'attributo User-Workstations.**](a-
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |

@@ -4,23 +4,23 @@ description: Specifica lo stato della barra di connessione dell'interfaccia uten
 ms.assetid: b1f9cb02-3ee3-4574-a874-2584b0d5b47e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà PinConnectionBar
-- Servizi Desktop remoto proprietà PinConnectionBar, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà PinConnectionBar
+- Proprietà PinConnectionBar Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà PinConnectionBar
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0da294d933026194d7307a7fa0a175575761809e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b2b16f5a1aedac7a7baa099e8586439b005842d7c1bdc11958d51def8fb45fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058989"
 ---
-# <a name="imsrdpclientadvancedsettingspinconnectionbar-property"></a>IMsRdpClientAdvancedSettings::P proprietà inConnectionBar
+# <a name="imsrdpclientadvancedsettingspinconnectionbar-property"></a>Proprietà IMsRdpClientAdvancedSettings::P inConnectionBar
 
 Specifica lo stato della barra di connessione dell'interfaccia utente.
 
-Questa proprietà restituisce **E \_ NOTIMPL** se il contenitore chiama il metodo [**IObjectSafety:: SetInterfaceSafetyOptions**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225(v=vs.85)) .
+Questa proprietà restituisce **E \_ NOTIMPL** se il contenitore chiama il [**metodo IObjectSafety::SetInterfaceSafetyOptions.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225(v=vs.85))
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -86,15 +86,15 @@ HRESULT get_PinConnectionBar(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostando questa proprietà su **Variant \_ true** , lo stato viene impostato su "abbassato", ovvero invisibile per l'utente e non disponibile per l'input. **Variante \_ FALSE** imposta lo stato su "Raised" e disponibile per l'input dell'utente.
+L'impostazione di questa proprietà su **VARIANT \_ TRUE** imposta lo stato su "lowered", cio' invisibile all'utente e non disponibile per l'input. **VARIANT \_ FALSE** imposta lo stato su "raised" e disponibile per l'input dell'utente.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Imposta la modalità di elaborazione per il DSP di acquisizione voce.
+description: Imposta la modalità di elaborazione per il provider di servizi di acquisizione vocale.
 ms.assetid: 479b3525-5beb-4c6b-b1ad-8fa72c0d0fd0
 title: MFPKEY_WMAAECMA_SYSTEM_MODE proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "118973270"
 ---
 # <a name="mfpkey_wmaaecma_system_mode-property"></a>Proprietà MFPKEY \_ WMAAECMA \_ SYSTEM \_ MODE
 
-Imposta la modalità di elaborazione per il DSP di acquisizione voce.
+Imposta la modalità di elaborazione per il provider di servizi di acquisizione vocale.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Voice Capture DSP](voicecapturedmo.md)
+-   [Provider di servizi di acquisizione vocale](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,16 +37,16 @@ La proprietà deve essere uno dei valori seguenti.
 
 | Valore | Descrizione                                 |
 |-------|---------------------------------------------|
-| 0     | Modalità solo di annullamento dell'eco audio (AEC)     |
+| 0     | Modalità di annullamento dell'eco audio (AEC)     |
 | 2     | Modalità solo elaborazione matrice microfono (MAP) |
 | 4     | Modalità AEC e MAP                            |
-| 5     | Né la modalità AEC né map                    |
+| 5     | Né AEC né modalità MAP                    |
 
 
 
  
 
-È necessario impostare questa proprietà prima di usare il DSP di acquisizione vocale. Dopo aver impostato questa proprietà, è possibile usare il provider di servizi di configurazione con le impostazioni predefinite o impostare proprietà aggiuntive.
+È necessario impostare questa proprietà prima di usare voice capture DSP. Dopo aver impostato questa proprietà, è possibile usare DSP con le impostazioni predefinite o impostare proprietà aggiuntive.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La proprietà deve essere uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
@@ -67,7 +67,7 @@ La proprietà deve essere uno dei valori seguenti.
 [Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[Voice Capture DSP](voicecapturedmo.md)
+[Provider di servizi di acquisizione vocale](voicecapturedmo.md)
 </dt> </dl>
 
  

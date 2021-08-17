@@ -1,12 +1,12 @@
 ---
-title: Proprietà IsCompositeDevice di IMsRdpDeviceV2
+title: Proprietà IMsRdpDeviceV2 IsCompositeDevice
 description: Specifica se il dispositivo è un dispositivo composito.
 ms.assetid: cc54f3f0-de0b-4f75-b5a1-4f061ac95ab5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà IsCompositeDevice
-- Servizi Desktop remoto proprietà IsCompositeDevice, interfaccia IMsRdpDeviceV2
-- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto, proprietà IsCompositeDevice
+- Proprietà IsCompositeDevice Servizi Desktop remoto
+- Proprietà IsCompositeDevice Servizi Desktop remoto , interfaccia IMsRdpDeviceV2
+- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto , proprietà IsCompositeDevice
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2341544543f436272486a839ffdd3ee68a4a4478
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c271c78eabd007641033d7171edc4b4ced1a70b9f18eb366fb30a8bac75254f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138554"
 ---
-# <a name="imsrdpdevicev2iscompositedevice-property"></a>Proprietà IMsRdpDeviceV2:: IsCompositeDevice
+# <a name="imsrdpdevicev2iscompositedevice-property"></a>Proprietà IMsRdpDeviceV2::IsCompositeDevice
 
 Specifica se il dispositivo è un dispositivo composito.
 
