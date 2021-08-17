@@ -1,6 +1,6 @@
 ---
-title: Architettura mixer
-description: Architettura mixer
+title: Mixer Architettura
+description: Mixer Architettura
 ms.assetid: 11d650bf-c258-4818-88b7-9fdc71a8d859
 keywords:
 - audio multimediale, architettura mixer
@@ -9,31 +9,31 @@ keywords:
 - mixer audio, linee audio
 - linee audio
 - mixer audio, controlli
-- audio multimediale, controlli Mixer
-- audio, controlli Mixer
+- audio multimediale, controlli mixer
+- audio, controlli mixer
 - mixer, linee audio
 - mixer, architettura
 - mixer, controlli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 447b0cdc44a33237aa7e0c726a5eb533b3bc7d0e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3f435396dd2a8d5983f596628711dfd01afe7111e75af1dc2060f5c6c4ef0a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065611"
 ---
-# <a name="mixer-architecture"></a>Architettura mixer
+# <a name="mixer-architecture"></a>Mixer Architettura
 
-L'elemento di base dell'architettura del mixer è una *linea audio*. Una linea audio è costituita da uno o più canali di dati originati da una singola origine o da una risorsa di sistema. Una linea audio stereo, ad esempio, ha due canali di dati, ma viene considerata come una singola riga audio, perché ha origine da un'unica origine.
+L'elemento di base dell'architettura del mixer è una *linea audio*. Una linea audio è costituita da uno o più canali di dati provenienti da una singola origine o da una risorsa di sistema. Ad esempio, una linea audio stereo ha due canali di dati, ma è considerata una singola linea audio perché ha origine da una singola origine.
 
-L'architettura del mixer fornisce servizi di routing per gestire le linee audio in un computer. È possibile utilizzare i servizi di routing se sono installati dispositivi hardware e driver software appropriati. L'architettura del mixer consente di eseguire il mapping di diverse righe di origine audio a una singola riga audio di destinazione.
+L'architettura del mixer fornisce servizi di routing per gestire le linee audio in un computer. È possibile usare i servizi di routing se sono installati dispositivi hardware e driver software adeguati. L'architettura del mixer consente a diverse linee di origine audio di eseguire il mapping a una singola linea audio di destinazione.
 
-A ogni linea audio possono essere associati controlli mixer. Un controllo mixer può eseguire un numero qualsiasi di funzioni, ad esempio il volume di controllo, a seconda delle caratteristiche della linea audio associata.
+A ogni linea audio possono essere associati controlli mixer. Un controllo mixer può eseguire qualsiasi numero di funzioni (ad esempio il volume di controllo), a seconda delle caratteristiche della linea audio associata.
 
- 
+ 
 
- 
+ 
 
 
 

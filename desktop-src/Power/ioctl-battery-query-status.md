@@ -1,7 +1,7 @@
 ---
 description: Recupera lo stato corrente della batteria.
 ms.assetid: 7a7bf429-9b2c-4faf-9f27-fb5fd8dd18df
-title: Codice di controllo IOCTL_BATTERY_QUERY_STATUS (Poclass. h)
+title: IOCTL_BATTERY_QUERY_STATUS codice di controllo (Poclass.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Poclass.h
 - BatClass.h
-ms.openlocfilehash: e2de9d3ab48aec13a9a5c1957a5f98aefbe6a09f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29d8b33238fa8daa463c007fa9d65cba9c6fb72ef13f0f68587a1452f3dabb0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143536"
 ---
-# <a name="ioctl_battery_query_status-control-code"></a>\_Codice di \_ \_ controllo stato query IOCTL Battery
+# <a name="ioctl_battery_query_status-control-code"></a>Codice di controllo STATO \_ \_ QUERY IOCTL BATTERY \_
 
 Recupera lo stato corrente della batteria.
 
-Per eseguire questa operazione, chiamare la funzione [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
+Per eseguire questa operazione, chiamare la [**funzione DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
 
 
 ```C++
@@ -50,35 +50,35 @@ BOOL DeviceIoControl(
 *hDevice* 
 </dt> <dd>
 
-Handle per la batteria da cui devono essere restituite le informazioni. Per recuperare un handle di dispositivo, chiamare la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) .
+Handle della batteria da cui devono essere restituite le informazioni. Per recuperare un handle di dispositivo, chiamare la [**funzione CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
 </dd> <dt>
 
 *dwIoControlCode* 
 </dt> <dd>
 
-Codice di controllo per l'operazione. Questo valore identifica l'operazione specifica da eseguire e il tipo di dispositivo su cui eseguirla. Usare **\_ \_ \_ lo stato di query della batteria IOCTL** per questa operazione.
+Codice di controllo per l'operazione. Questo valore identifica l'operazione specifica da eseguire e il tipo di dispositivo in cui eseguirla. Usare **IOCTL \_ BATTERY QUERY STATUS \_ \_ per** questa operazione.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ \_ stato di attesa della batteria**](battery-wait-status-str.md) .
+Puntatore a una [**struttura BATTERY \_ WAIT \_ STATUS.**](battery-wait-status-str.md)
 
 </dd> <dt>
 
 *nInBufferSize* 
 </dt> <dd>
 
-Dimensioni in byte del buffer di input.
+Dimensioni del buffer di input, in byte.
 
 </dd> <dt>
 
 *lpOutBuffer* 
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ stato della batteria**](battery-status-str.md) .
+Puntatore a una [**struttura BATTERY \_ STATUS.**](battery-status-str.md)
 
 </dd> <dt>
 
@@ -92,24 +92,24 @@ Dimensioni in byte del buffer di output.
 *lpBytesReturned* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve la dimensione dei dati restituiti nel buffer *lpOutBuffer* , in byte.
+Puntatore a una variabile che riceve le dimensioni dei dati restituiti nel buffer *lpOutBuffer,* in byte.
 
-Se il buffer di output è troppo piccolo per restituire i dati, la chiamata ha esito negativo, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce il **\_ \_ buffer insufficiente** nell'errore del codice di errore e il numero di byte restituito è zero.
+Se il buffer di output è troppo piccolo per restituire dati, la chiamata ha esito negativo, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce il codice di errore **ERROR INSUFFICIENT \_ \_ BUFFER** e il numero di byte restituiti è zero.
 
-Se *lpOverlapped* è **null** (I/O non sovrapposti), *lpBytesReturned* non può essere **null**.
+Se *lpOverlapped* è **NULL** (I/O non sovrapposto), *lpBytesReturned* non può essere **NULL.**
 
-Se *lpOverlapped* non è **null** (I/O sovrapposto), *lpBytesReturned* può essere **null**. Se si tratta di un'operazione sovrapposta, è possibile recuperare il numero di byte restituiti chiamando la funzione [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) . Se *hDevice* è associato a una porta di completamento di I/O, è possibile ottenere il numero di byte restituiti chiamando la funzione [**GetQueuedCompletionStatus**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Se *lpOverlapped* non è **NULL** (I/O sovrapposto), *lpBytesReturned* può essere **NULL.** Se si tratta di un'operazione sovrapposta, è possibile recuperare il numero di byte restituiti chiamando la [**funzione GetOverlappedResult.**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Se *hDevice è* associato a una porta di completamento I/O, è possibile ottenere il numero di byte restituiti chiamando la [**funzione GetQueuedCompletionStatus.**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
 *lpOverlapped* 
 </dt> <dd>
 
-Puntatore a una struttura [**sovrapposta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Puntatore a una [**struttura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Se *hDevice* è stato aperto con il flag **\_ \_ OVERLAPPED del flag file** , *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) valida. In questo caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) viene eseguito come operazione sovrapposta (asincrona). Se il dispositivo è stato aperto con il flag **file \_ \_ sovrapposto** e *lpOverlapped* è **null**, la funzione avrà esito negativo in modi imprevedibili.
+Se *hDevice è* stato aperto con il flag **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) valida. In questo caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) viene eseguito come operazione sovrapposta (asincrona). Se il dispositivo è stato aperto con il flag **FILE \_ FLAG \_ OVERLAPPED** e *lpOverlapped* è **NULL,** la funzione ha esito negativo in modi imprevedibili.
 
-Se *hDevice* è stato aperto senza specificare il flag **\_ \_ OVERLAPPED del flag file** , *lpOverlapped* viene ignorato e la funzione [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) non viene restituita fino al completamento dell'operazione o fino a quando non si verifica un errore.
+Se *hDevice* è stato aperto senza specificare il flag **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* viene ignorato e la funzione [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) non viene restituita fino al completamento dell'operazione o fino a quando non si verifica un errore.
 
 </dd> </dl>
 
@@ -121,17 +121,17 @@ Se l'operazione ha esito negativo o è in sospeso, [**DeviceIoControl**](/window
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa batteria IOCTL recupera lo stato della batteria al momento della restituzione dell'operazione. La struttura del parametro di input, [**\_ \_ stato di attesa della**](battery-wait-status-str.md)batteria, indica quando lo stato della batteria deve essere elaborato e restituito.
+Questa batteria IOCTL recupera lo stato della batteria al momento del ritorno dell'operazione. La struttura del parametro di input [**BATTERY \_ WAIT \_ STATUS**](battery-wait-status-str.md)indica quando lo stato della batteria deve essere elaborato e restituito.
 
-Le richieste di stato della batteria possono essere per la restituzione immediata oppure possono essere impostate per attendere una determinata condizione prima del completamento. Ad esempio, è possibile effettuare una richiesta di informazioni sulla batteria per attendere che la capacità della batteria raggiunga un punto specificato o che lo stato della batteria venga modificato.
+Le richieste di stato della batteria possono essere restituite immediatamente o possono essere impostate in modo da attendere una determinata condizione prima del completamento. Ad esempio, è possibile eseguire una richiesta di informazioni sulla batteria che attende che la capacità della batteria raggiunga un punto specificato o che lo stato della batteria cambi.
 
-Tutte le richieste di informazioni sulla batteria vengono completate con lo stato del **file di errore \_ \_ non \_ trovato** ogni volta che l'elemento **BatteryTag** della richiesta non corrisponde a quello del tag della batteria corrente. Per ulteriori informazioni, vedere la pagina relativa ai [tag della batteria](battery-information.md) . Viene usato per garantire che le informazioni della batteria restituita corrispondano a quelle della batteria richiesta.
+Tutte le richieste di informazioni sulla batteria verranno completate con lo stato **\_ ERROR FILE NOT \_ \_ FOUND** ogni volta che l'elemento **BatteryTag** della richiesta non corrisponde a quello del tag della batteria corrente. Per altre [informazioni, vedere Tag](battery-information.md) della batteria. Viene usato per garantire che le informazioni sulla batteria restituite corrispondano a quella della batteria richiesta.
 
-Per le implicazioni dell'I/O sovrapposto in questa operazione, vedere la sezione Osservazioni dell'argomento [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) .
+Per informazioni sulle implicazioni dell'I/O sovrapposto su questa operazione, vedere la sezione Osservazioni [**dell'argomento DeviceIoControl.**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio, vedere [enumerazione dei dispositivi a batteria](enumerating-battery-devices.md).
+Per un esempio, vedere [Enumerazione dei dispositivi a batteria](enumerating-battery-devices.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,9 +139,9 @@ Per un esempio, vedere [enumerazione dei dispositivi a batteria](enumerating-bat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                                                                                                                                                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                                                                                                                                                                                |
-| Intestazione<br/>                   | <dl> <dt>Poclass. h; </dt> <dt>BatClass. h in Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows server 2003 e Windows XP</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                                                                                                                                                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                                                                                                                                                                                |
+| Intestazione<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>BatClass.h in Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP</dt> </dl> |
 
 
 
@@ -152,25 +152,25 @@ Per un esempio, vedere [enumerazione dei dispositivi a batteria](enumerating-bat
 [Informazioni sulla batteria](battery-information.md)
 </dt> <dt>
 
-[Codici di controllo del risparmio energia](power-management-control-codes.md)
+[Codici di controllo per il risparmio energia](power-management-control-codes.md)
 </dt> <dt>
 
-[**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
+[**Deviceiocontrol**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
 </dt> <dt>
 
-[**stato della batteria \_**](battery-status-str.md)
+[**STATO \_ DELLA BATTERIA**](battery-status-str.md)
 </dt> <dt>
 
-[**\_stato di attesa della batteria \_**](battery-wait-status-str.md)
+[**STATO \_ DI ATTESA DELLA \_ BATTERIA**](battery-wait-status-str.md)
 </dt> <dt>
 
-[**\_ \_ informazioni sulle query della batteria IOCTL \_**](ioctl-battery-query-information.md)
+[**INFORMAZIONI SULLE \_ QUERY SULLA \_ BATTERIA IOCTL \_**](ioctl-battery-query-information.md)
 </dt> <dt>
 
-[**\_tag di \_ query della batteria IOCTL \_**](ioctl-battery-query-tag.md)
+[**TAG DI QUERY DELLA BATTERIA IOCTL \_ \_ \_**](ioctl-battery-query-tag.md)
 </dt> <dt>
 
-[**\_ \_ informazioni sui set di batterie IOCTL \_**](ioctl-battery-set-information.md)
+[**INFORMAZIONI SUL \_ SET DI \_ BATTERIA IOCTL \_**](ioctl-battery-set-information.md)
 </dt> </dl>
 
  

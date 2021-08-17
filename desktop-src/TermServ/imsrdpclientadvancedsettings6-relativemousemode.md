@@ -1,16 +1,16 @@
 ---
-title: Proprietà RelativeMouseMode di IMsRdpClientAdvancedSettings6
+title: Proprietà RelativeMouseMode IMsRdpClientAdvancedSettings6
 description: Specifica se il mouse deve utilizzare la modalità relativa.
 ms.assetid: 29ae9575-ce60-4999-9601-18413ae739e6
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RelativeMouseMode
-- Servizi Desktop remoto proprietà RelativeMouseMode, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RelativeMouseMode
-- Servizi Desktop remoto proprietà RelativeMouseMode, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RelativeMouseMode
-- Servizi Desktop remoto proprietà RelativeMouseMode, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RelativeMouseMode
+- Proprietà RelativeMouseMode Servizi Desktop remoto
+- Proprietà RelativeMouseMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , RelativeMouseMode
+- Proprietà RelativeMouseMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , RelativeMouseMode
+- Proprietà RelativeMouseMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , RelativeMouseMode
 topic_type:
 - apiref
 api_name:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31c575acefbfef54dc4c858f465f0cdde2ce8bc7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9cfe0551cf02f94f3494fde5ebf49ffb60c2bd4a966db1efb5f0dfeb3bd9e4bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138814"
 ---
-# <a name="imsrdpclientadvancedsettings6relativemousemode-property"></a>Proprietà IMsRdpClientAdvancedSettings6:: RelativeMouseMode
+# <a name="imsrdpclientadvancedsettings6relativemousemode-property"></a>Proprietà IMsRdpClientAdvancedSettings6::RelativeMouseMode
 
-Specifica se il mouse deve utilizzare la modalità relativa. Contiene la **variante \_ true** se il mouse è in modalità relativa o **Variant \_ false** se il mouse è in modalità Absolute.
+Specifica se il mouse deve utilizzare la modalità relativa. Contiene **VARIANT \_ TRUE se** il mouse è in modalità relativa o VARIANT **\_ FALSE** se il mouse è in modalità assoluta.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -63,7 +63,7 @@ Contiene il nuovo valore della proprietà.
 
 ## <a name="remarks"></a>Commenti
 
-La modalità mouse indica il modo in cui il controllo ActiveX calcola le coordinate del mouse inviate al server host sessione Desktop remoto (host sessione Desktop remoto). Quando il mouse è in modalità relativa, il controllo ActiveX calcola le coordinate del mouse in relazione all'ultima posizione del mouse. Quando il mouse è in modalità assoluta, il controllo ActiveX calcola le coordinate del mouse relative al desktop del server Host sessione Desktop remoto.
+La modalità mouse indica il modo in cui il ActiveX calcola le coordinate del mouse che invia al server host sessione Desktop remoto (Host sessione Desktop remoto). Quando il mouse è in modalità relativa, il ActiveX calcola le coordinate del mouse rispetto all'ultima posizione del mouse. Quando il mouse è in modalità assoluta, il ActiveX calcola le coordinate del mouse rispetto al desktop del server Host sessione Desktop remoto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ La modalità mouse indica il modo in cui il controllo ActiveX calcola le coordin
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                   |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 è definito come 222c4b5d-45D9-4DF0-a7c6-60cf9089d285<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 è definito come 222c4b5d-45d9-4df0-a7c6-60cf9089d285<br/> |
 
 
 

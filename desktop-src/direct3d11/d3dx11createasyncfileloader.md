@@ -1,6 +1,6 @@
 ---
 title: Funzione D3DX11CreateAsyncFileLoader (D3DX11async.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Vedere la sezione Osservazioni. Creare un caricatore di file asincrono.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni. Creare un caricatore di file asincrono.
 ms.assetid: ee24ac00-3636-4900-9b8a-27778c9a2152
 keywords:
 - Funzione D3DX11CreateAsyncFileLoader Direct3D 11
@@ -25,7 +25,7 @@ ms.locfileid: "119124866"
 # <a name="d3dx11createasyncfileloader-function"></a>Funzione D3DX11CreateAsyncFileLoader
 
 > [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Vedere la sezione Osservazioni.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni.
 
  
 
@@ -61,7 +61,7 @@ Nome del file da caricare. Se le impostazioni del compilatore richiedono Unicode
 
 Tipo: **[ **ID3DX11DataLoader**](id3dx11dataloader.md)\*\***
 
-Indirizzo di un puntatore al caricatore di dati asincroni (vedere [**Interfaccia ID3DX11DataLoader).**](id3dx11dataloader.md)
+Indirizzo di un puntatore al caricatore di dati asincroni (vedere [**l'interfaccia ID3DX11DataLoader**](id3dx11dataloader.md)).
 
 </dd> </dl>
 
@@ -69,15 +69,15 @@ Indirizzo di un puntatore al caricatore di dati asincroni (vedere [**Interfaccia
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 Non esiste alcuna implementazione del caricatore asincrono al di fuori di D3DX 10 e D3DX 11.
 
-Per Windows Store, gli esempi di DirectX (ad esempio, l'esempio di esercitazione [Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) includono il modulo **BasicLoader** che usa il modello di programmazione asincrona di Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Per Windows app di Store, gli esempi DirectX (ad esempio, l'esempio di esercitazione [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)includono il modulo **BasicLoader** che usa il modello di programmazione asincrona Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
 
-Per le app desktop Win32, è possibile usare il runtime di concorrenza per implementare un elemento simile al modello di programmazione asincrona Windows Runtime. [](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100))
+Per le app desktop Win32, è possibile usare il runtime di concorrenza [per](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementare qualcosa di simile al modello di programmazione asincrona Windows Runtime.
 
 ## <a name="requirements"></a>Requisiti
 

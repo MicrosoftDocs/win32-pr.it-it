@@ -1,10 +1,10 @@
 ---
 title: Struttura READERMODEINFO
-description: Contiene informazioni necessarie per inizializzare la funzione DoReaderMode.
+description: Contiene le informazioni necessarie per inizializzare la funzione DoReaderMode.
 ms.assetid: 7b9c73bc-b093-4592-befd-67508fb86fe0
 keywords:
-- Controlli di Windows della struttura READERMODEINFO
-- Controlli Windows del puntatore alla struttura PREADERMODEINFO
+- Struttura READERMODEINFO Windows controlli
+- Puntatore alla struttura PREADERMODEINFO Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2dacf0fc59ef62447ca12b7a470689e13967d687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 510dc7a763d50b42f06b2510e609e0bc7c3c6f31fa1f4c08393964cef75487fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169121"
 ---
 # <a name="readermodeinfo-structure"></a>Struttura READERMODEINFO
 
-\[**READERMODEINFO** è supportato tramite Windows XP con Service Pack 2 (SP2). Potrebbe non essere supportata nelle versioni successive.\]
+\[**READERMODEINFO** è supportato tramite Windows XP con Service Pack 2 (SP2). Potrebbe non essere supportato nelle versioni successive.\]
 
-Contiene informazioni necessarie per inizializzare la funzione [**DoReaderMode**](doreadermode.md) .
+Contiene le informazioni necessarie per inizializzare [**la funzione DoReaderMode.**](doreadermode.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,22 +51,22 @@ typedef struct tagReaderModeInfo {
 **cbSize**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Obbligatorio. Dimensioni, in byte, della struttura. Impostare questo parametro su **sizeof (READERMODE)** prima di chiamare [**DoReaderMode**](doreadermode.md).
+Obbligatorio. Dimensioni della struttura, in byte. Impostare questo parametro su **sizeof(READERMODE)** prima di chiamare [**DoReaderMode.**](doreadermode.md)
 
 </dd> <dt>
 
-**HWND**
+**Hwnd**
 </dt> <dd>
 
 Tipo: **[ **HWND**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Obbligatorio. Handle della finestra da utilizzare per la modalità Reader.
+Obbligatorio. Handle della finestra da utilizzare per la modalità lettore.
 
 </dd> <dt>
 
@@ -77,15 +77,15 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Flag che personalizzano la funzionalità della finestra modalità lettore. Questo parametro può essere 0. in caso contrario, uno o più dei valori seguenti.
+Flag che personalizzano la funzionalità della finestra in modalità lettore. Questo parametro può essere 0. in caso contrario, uno o più dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                  | Significato                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RMF_ZEROCURSOR"></span><span id="rmf_zerocursor"></span><dl> <dt>**RMF \_**</dt> <dt>0x01</dt> ZEROCURSOR </dl>             | Imposta il cursore al centro dell'area specificata nella **Repubblica popolare cinese**. Se questo flag non è specificato, la posizione del cursore rimane invariata.<br/> |
-| <span id="RMF_VERTICALONLY"></span><span id="rmf_verticalonly"></span><dl> <dt>**RMF \_**</dt> <dt>0x02</dt> VERTICALONLY </dl>       | Consente solo lo scorrimento verticale.<br/>                                                                                                       |
-| <span id="RMF_HORIZONTALONLY"></span><span id="rmf_horizontalonly"></span><dl> <dt>**RMF \_**</dt> <dt>0x04</dt> HORIZONTALONLY </dl> | Consente solo lo scorrimento orizzontale.<br/>                                                                                                     |
+| <span id="RMF_ZEROCURSOR"></span><span id="rmf_zerocursor"></span><dl> <dt>**RMF \_ ZEROCURSOR**</dt> <dt>0x01</dt> </dl>             | Imposta il cursore al centro dell'area specificata in **prc**. Se questo flag non viene specificato, la posizione del cursore rimane invariata.<br/> |
+| <span id="RMF_VERTICALONLY"></span><span id="rmf_verticalonly"></span><dl> <dt>**RMF \_ VERTICALONLY**</dt> <dt>0x02</dt> </dl>       | Consente solo lo scorrimento verticale.<br/>                                                                                                       |
+| <span id="RMF_HORIZONTALONLY"></span><span id="rmf_horizontalonly"></span><dl> <dt>**RMF \_ HORIZONTALONLY**</dt> <dt>0x04</dt> </dl> | Consente solo lo scorrimento orizzontale.<br/>                                                                                                     |
 
 
 
@@ -93,14 +93,14 @@ Flag che personalizzano la funzionalità della finestra modalità lettore. Quest
 
 </dd> <dt>
 
-**PRC**
+**Rpc**
 </dt> <dd>
 
-Tipo: **lpRect**
+Tipo: **LPRECT**
 
 </dd> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che specifica l'area di scorrimento nella finestra modalità lettore. Se questo membro è **null**, viene utilizzata l'intera finestra come area di scorrimento.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che specifica l'area di scorrimento nella finestra della modalità lettore. Se questo membro è **NULL,** come area di scorrimento viene usata l'intera finestra.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo: **PFNREADERSCROLL**
 
 </dd> <dd>
 
-Puntatore a una funzione di callback [*ReaderScroll*](readerscroll.md) definita dall'applicazione utilizzata per notificare all'applicazione che è necessario scorrere la finestra in una direzione specifica.
+Puntatore a una funzione di callback [*ReaderScroll*](readerscroll.md) definita dall'applicazione usata per notificare all'applicazione che è necessario scorrere la finestra in una direzione specifica.
 
 </dd> <dt>
 
@@ -122,18 +122,18 @@ Tipo: **PFNREADERTRANSLATEDISPATCH**
 
 </dd> <dd>
 
-Puntatore a una funzione di callback [*TranslateDispatch*](translatedispatch.md) definita dall'applicazione utilizzata per ottenere la prima notifica di tutti i messaggi inviati alla finestra modalità lettore.
+Puntatore a una funzione di callback [*TranslateDispatch*](translatedispatch.md) definita dall'applicazione usata per ottenere la prima notifica di tutti i messaggi inviati alla finestra della modalità lettore.
 
 </dd> <dt>
 
 **lParam**
 </dt> <dd>
 
-Tipo: **[ **lParam**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **LPARAM**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Informazioni aggiuntive necessarie per l'applicazione, lette dal chiamante nella funzione di callback [*ReaderScroll*](readerscroll.md) .
+Informazioni aggiuntive necessarie per l'applicazione, lette dal chiamante nella funzione di callback [*ReaderScroll.*](readerscroll.md)
 
 </dd> </dl>
 
@@ -147,8 +147,8 @@ Questa struttura non è dichiarata in alcuna intestazione pubblica. Per usarlo, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, \[ solo app desktop di Windows Vista\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>          |
+| Client minimo supportato<br/> | Windows Vista, Windows solo \[ app desktop Vista\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>          |
 
 
 

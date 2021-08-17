@@ -1,5 +1,5 @@
 ---
-description: Restituisce gli identificatori di tratto associati a questo oggetto IAnalysisAlternate.
+description: Restituisce gli identificatori dei tratti associati all'oggetto IAnalysisAlternate.
 ms.assetid: 495d485f-0d16-4085-9213-cc55f3f259f0
 title: Metodo IAnalysisAlternate::GetStrokeIds (IACom.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118967500"
 ---
 # <a name="ianalysisalternategetstrokeids-method"></a>Metodo IAnalysisAlternate::GetStrokeIds
 
-Restituisce gli identificatori dei tratti associati a questo [**oggetto IAnalysisAlternate.**](ianalysisalternate.md)
+Restituisce gli identificatori dei tratti associati a [**questo oggetto IAnalysisAlternate.**](ianalysisalternate.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT GetStrokeIds(
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Puntatore a **un ULONG** impostato sul numero di identificatori di tratto associati a [**questo oggetto IAnalysisAlternate.**](ianalysisalternate.md)
+Puntatore a **un ULONG** impostato sul numero di identificatori di tratto associati all'oggetto [**IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> <dt>
 
@@ -52,13 +52,13 @@ Puntatore a **un ULONG** impostato sul numero di identificatori di tratto associ
 
 \[out, size \_ is( \* *pulStrokeIdsCount* \* sizeof(LONG))\]
 
-Matrice di **long di** lunghezza *pulStrokeIdsCount* impostata per gli identificatori di tratto associati a questo oggetto [**IAnalysisAlternate.**](ianalysisalternate.md)
+Matrice long di **lunghezza** *pulStrokeIdsCount* impostata su identificatori di tratti associati a [**questo oggetto IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
@@ -73,7 +73,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
@@ -87,7 +87,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 [**IAnalysisAlternate**](ianalysisalternate.md)
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

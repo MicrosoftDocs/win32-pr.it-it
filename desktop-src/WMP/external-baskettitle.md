@@ -1,9 +1,9 @@
 ---
-title: External. basketTitle
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. basketTitle
+title: External.basketTitle
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | External.basketTitle
 ms.assetid: 528b7d8e-7702-4139-b2bd-a06c7f15cb87
 keywords:
-- Media Player di Windows External. basketTitle
+- External.basketTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 610ce5ecf054d6ab1edba4e0aab5f2eff3a969fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f20b01fd9b0185dcd1d20a2d063f464699d51e51d54560dfc43f87da21dc9c44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649531"
 ---
-# <a name="externalbaskettitle"></a>External. basketTitle
+# <a name="externalbaskettitle"></a>External.basketTitle
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **basketTitle** Recupera il titolo del pulsante nel riquadro dell'elenco (chiamato anche basket) in Windows Media Player.
+La **proprietà basketTitle** recupera il titolo del pulsante nel riquadro elenco (detto anche carrello) in Windows Media Player.
 
 ``` syntax
 window.external.basketTitle
@@ -37,7 +37,7 @@ window.external.basketTitle
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,13 +54,13 @@ Questa proprietà è una **stringa** di sola lettura.
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. addToBasket**](external-addtobasket.md)
+[**External.addToBasket**](external-addtobasket.md)
 </dt> <dt>
 
-[**External. Task**](external-task.md)
+[**External.task**](external-task.md)
 </dt> </dl>
 
  

@@ -23,7 +23,7 @@ ms.locfileid: "119128360"
 ---
 # <a name="id3dx10dataloader-interface"></a>Interfaccia ID3DX10DataLoader
 
-Oggetto di caricamento dati usato [**dall'interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md) per il caricamento asincrono dei dati.
+Oggetto di caricamento dati usato [**dall'interfaccia ID3DX10ThreadPump per**](id3dx10threadpump.md) il caricamento asincrono dei dati.
 
 ## <a name="members"></a>Membri
 
@@ -39,9 +39,9 @@ Oggetto di caricamento dati usato [**dall'interfaccia ID3DX10ThreadPump**](id3dx
 
 | Metodo                                             | Descrizione                                                                                                                                                                                                                        |
 |:---------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Decomprimere**](id3dx10dataloader-decompress.md) | Usato per decomprimere i dati codificati. In genere viene usato per caricare le risorse dai file system, ad esempio i file ZIP. Quando si carica da una risorsa non compressa, la fase di decompressione non deve eseguire alcuna operazione.<br/> |
+| [**Decomprimere**](id3dx10dataloader-decompress.md) | Usato per decomprimere i dati codificati. In genere viene usato per caricare le risorse dai file system, ad esempio i file ZIP. Durante il caricamento da una risorsa non compressa, la fase di decompressione non deve eseguire alcuna operazione.<br/> |
 | [**Distruggere**](id3dx10dataloader-destroy.md)       | Usato da [**un'interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md) per eliminare il caricatore dopo il completamento di un elemento di lavoro.<br/>                                                                                                   |
-| [**Caricamento**](id3dx10dataloader-load.md)             | Usato da [**un'interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md) per caricare dati da un disco.<br/>                                                                                                                            |
+| [**Caricamento**](id3dx10dataloader-load.md)             | Usato da [**un'interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md) per caricare i dati da un disco.<br/>                                                                                                                            |
 
 
 
@@ -49,7 +49,7 @@ Oggetto di caricamento dati usato [**dall'interfaccia ID3DX10ThreadPump**](id3dx
 
 ## <a name="remarks"></a>Commenti
 
-Questo oggetto può essere ereditato e i relativi membri vengono ridefiniti. In questo modo è possibile personalizzare l'API per il caricamento e la decompressione dei formati di file personalizzati.
+Questo oggetto può essere ereditato e i relativi membri possono essere ridefinito. In questo modo sarà possibile personalizzare l'API per il caricamento e la decompressione di formati di file personalizzati.
 
 ## <a name="requirements"></a>Requisiti
 

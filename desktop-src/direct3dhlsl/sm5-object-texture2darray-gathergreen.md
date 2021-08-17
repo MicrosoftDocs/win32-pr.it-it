@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GatherGreen (S, float, int)'
-description: "Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Funzione Texture2DArray:: GatherGreen (S, float, int)"
+title: Funzione Texture2DArray::GatherGreen(S,float,int)
+description: Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Funzione Texture2DArray::GatherGreen(S,float,int)
 ms.assetid: bfe9ab9f-64f7-4a50-aa46-2ec6effebce2
 keywords:
 - Funzione GatherGreen HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 48a5d968ffe5eeb12fdb0240d1823a9b1834ae19
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4fab908d7c8b0ed97a99aa04b8557e1008235cb91597ab00bdc90912e83e9627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724582"
 ---
-# <a name="texture2darraygathergreensfloatint-function"></a>Funzione Texture2DArray:: GatherGreen (S, float, int)
+# <a name="texture2darraygathergreensfloatint-function"></a>Funzione Texture2DArray::GatherGreen(S,float,int)
 
-Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ TemplateType GatherGreen(
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **Sampler**
+Tipo: **sampler**
 
 Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*posizione* \[ in\]
+*location* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*offset* \[ in\]
+*offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
@@ -69,7 +69,7 @@ Offset applicato alla coordinata di trama prima del campionamento.
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -79,7 +79,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -94,7 +94,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi GatherGreen](texture2darray-gathergreen.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

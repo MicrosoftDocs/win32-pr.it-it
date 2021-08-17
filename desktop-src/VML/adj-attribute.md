@@ -1,48 +1,48 @@
 ---
-title: ADJ (attributo)
-description: ADJ (attributo)
+title: Attributo Adj
+description: Attributo Adj
 ms.assetid: f0f31e6c-9dde-4082-88a2-da2d0012b9ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff83371cbca29ee687875343976b312466d6a78c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 85869500cc3e9f86e0f48e67f63cfd9e6ed2cff5580caa04994169a9e4b50df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137144"
 ---
-# <a name="adj-attribute"></a>ADJ (attributo)
+# <a name="adj-attribute"></a>Attributo Adj
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Specifica un valore di regolazione utilizzato per definire i valori per una formula. Proprietà di lettura/scrittura. **Stringa**.
+Specifica un valore di rettifica utilizzato per definire i valori per una formula. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* ADJ = " *Expression* " >
+<v: *element* adj=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . ADJ = "*Expression*"
+*element* .adj="*expression*"
 
-*espressione* = *elemento*. ADJ
+*expression* = *elemento*.adj
 
 **Osservazioni:**
 
-**ADJ** viene usato per fornire punti regolabili per una formula. Se usato nei tag, **ADJ** è una stringa delimitata da virgole con un massimo di 8 valori. Alcuni valori possono essere omessi. Ad esempio, "0, 1, 2,, 4, 5,, 7" è una stringa valida, ma il quarto e il settimo elemento non contengono valori (gli elementi vengono conteggiati a partire da 0).
+**Adj** viene usato per fornire punti regolabili per una formula. Se usato nei tag, **Adj** è una stringa delimitata da virgole con un massimo di 8 valori. Alcuni valori possono essere omessi. Ad esempio, "0,1,2,,4,5,7" sarebbe una stringa valida, ma il quarto e il settimo elemento non avrebbero valori (gli elementi vengono conteggiati a partire da 0).
 
-Per gli script, **ADJ** usa il tipo di dati [IVgAdjustments](msdn-online-vml-ivgadjustments-data-type.md) .
+Per lo scripting, **Adj** usa il tipo di dati [IVgAdjustments.](msdn-online-vml-ivgadjustments-data-type.md)
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Vedere anche**
 
@@ -50,7 +50,7 @@ Per gli script, **ADJ** usa il tipo di dati [IVgAdjustments](msdn-online-vml-ivg
 
 **Esempio**
 
-Un quadrato semplice viene creato con le regolazioni. Viene creata prima di tutto la stringa **ADJ** per definire otto valori di regolazione. Quindi, a ogni valore di regolazione viene fatto riferimento da una delle otto formule, con ogni valore di regolazione precedute da un simbolo di cancelletto ( \# ). Infine, un percorso è definito da una stringa che fa riferimento alle formule, con ogni formula precedute dal simbolo "chiocciola" (@).
+Viene creato un quadrato semplice con modifiche. Prima viene creata la stringa **Adj** per definire otto valori di rettifica. A ogni valore di rettifica viene fatto riferimento da una delle otto formule, con ogni valore di rettifica precetto da un simbolo di numero ( \# ). Infine, un percorso è definito da una stringa che fa riferimento alle formule, con ogni formula precescita dal simbolo "at" (@).
 
 
 ```HTML
@@ -75,8 +75,8 @@ Un quadrato semplice viene creato con le regolazioni. Viene creata prima di tutt
 
 
 
-[Esempio di attributo ADJ](/previous-versions/bb229662(v=vs.85)) (richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo Adj](/previous-versions/bb229662(v=vs.85)) (richiede Microsoft Internet Explorer 5 o versione successiva).
 
- 
+ 
 
- 
+ 

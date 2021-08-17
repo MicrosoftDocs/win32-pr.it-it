@@ -1,5 +1,5 @@
 ---
-description: L Windows intervazione WIA (Device Image Acquisition) è sia un'API che un'interfaccia DDI (Device Driver Interface).
+description: L'Windows di acquisizione di immagini (WIA) è sia un'API che un'interfaccia DDI (Device Driver Interface).
 ms.assetid: 725543f8-6e33-4e22-904c-95cbec0388c8
 title: Informazioni Windows'acquisizione di immagini
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119451301"
 ---
 # <a name="about-windows-image-acquisition"></a>Informazioni Windows'acquisizione di immagini
 
-L Windows intervazione WIA (Device Image Acquisition) è sia un'API che un'interfaccia DDI (Device Driver Interface). L'API WIA è progettata per consentire alle applicazioni di:
+L'Windows di acquisizione di immagini (WIA) è sia un'API che un'interfaccia DDI (Device Driver Interface). L'API WIA è progettata per consentire alle applicazioni di:
 
 -   Eseguire in un ambiente solido e stabile.
 -   Ridurre al minimo i problemi di interoperabilità.
@@ -36,7 +36,7 @@ Questa sezione presenta una breve panoramica dell'interfaccia WIA nelle aree seg
 -   [Compatibilità sti](-wia-sti-compatibility.md)
 -   [Compatibilità con TWAIN](-wia-twain-compatibility.md)
 -   [Gestione dispositivi WIA](-wia-wia-device-manager.md)
--   [Libreria del servizio minidriver WIA](-wia-wia-minidriver-service-library.md)
+-   [Libreria del servizio WiA Minidriver](-wia-wia-minidriver-service-library.md)
 -   [WIA Minidriver](-wia-wia-minidriver.md)
 
  

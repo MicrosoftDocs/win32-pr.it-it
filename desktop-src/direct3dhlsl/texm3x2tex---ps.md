@@ -1,6 +1,6 @@
 ---
-title: texm3x2tex-PS
-description: Esegue la riga finale di una matrice 3x2 moltiplicata e utilizza il risultato per eseguire una ricerca di trama. texm3x2tex deve essere usato in combinazione con l'istruzione texm3x2pad-PS.
+title: texm3x2tex - ps
+description: Esegue la riga finale di una moltiplicazione di matrice 3x2 e usa il risultato per eseguire una ricerca trame. texm3x2tex deve essere usato insieme all'istruzione texm3x2pad - ps.
 ms.assetid: c6cfbf75-4a63-4c82-9fb6-286b51b7f883
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 62206bc4ef1e1b64ec760a240a087ec13526d896
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9653325098b05959fcbd9e7a838801652a532d936bdaebc829055b717a49096f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723019"
 ---
-# <a name="texm3x2tex---ps"></a>texm3x2tex-PS
+# <a name="texm3x2tex---ps"></a>texm3x2tex - ps
 
-Esegue la riga finale di una matrice 3x2 moltiplicata e utilizza il risultato per eseguire una ricerca di trama. texm3x2tex deve essere usato in combinazione con l'istruzione [texm3x2pad-PS](texm3x2pad---ps.md) .
+Esegue la riga finale di una moltiplicazione di matrice 3x2 e usa il risultato per eseguire una ricerca trame. texm3x2tex deve essere usato insieme all'istruzione [texm3x2pad - ps.](texm3x2pad---ps.md)
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| texm3x2tex DST, src |
+| texm3x2tex dst, src |
 |---------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src è un registro di origine.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texm3x2tex            | x    | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-L'istruzione viene utilizzata come una delle due istruzioni che rappresentano un'operazione di moltiplicazione della matrice 3x2. Questa istruzione deve essere usata con l'istruzione [texm3x2pad-PS](texm3x2pad---ps.md) .
+L'istruzione viene usata come una delle due istruzioni che rappresentano un'operazione di moltiplicazione di matrice 3x2. Questa istruzione deve essere usata con [l'istruzione texm3x2pad - ps.](texm3x2pad---ps.md)
 
 Quando si usano queste due istruzioni, i registri di trama devono usare la sequenza seguente.
 
@@ -66,23 +66,23 @@ texm3x2tex  t(m+1), t(n)      // Perform second row of matrix multiply
 
 
 
-Ecco altri dettagli sul modo in cui viene eseguita la moltiplicazione 3x2.
+Di seguito sono fornite informazioni più dettagliate sul modo in cui viene eseguita la moltiplicazione 3x2.
 
-L'istruzione texm3x2pad esegue la prima riga dell'istruzione Multiply per<sup>Find u.</sup>
+L'istruzione texm3x2pad esegue la prima riga della moltiplicazione per trovare u<sup>'</sup>.
 
-u<sup>'</sup> = t (n)<sub>RGB</sub> \* TextureCoordinates (fase m)<sub>UVW</sub>
+u<sup>'</sup> = t(n)<sub>RGB</sub> \* TextureCoordinates(stage m)<sub>UVW</sub>
 
-L'istruzione texm3x2tex esegue la seconda riga della moltiplicazione per trovare la<sup>v.</sup>
+L'istruzione texm3x2tex esegue la seconda riga della moltiplicazione per trovare v<sup>'</sup>.
 
-v<sup>'</sup> = t (n)<sub>RGB</sub> \* TextureCoordinates (stage m + 1)<sub>UVW</sub>
+v<sup>'</sup> = t(n)<sub>RGB</sub> \* TextureCoordinates(stage m+1)<sub>UVW</sub>
 
-L'istruzione texm3x2tex esegue il campionamento della trama sulla fase (m + 1) con (u<sup>'</sup>, v<sup>'</sup>) e archivia il risultato in t (m + 1).
+L'istruzione texm3x2tex campione la trama sullo stage (m+1) con (u<sup>'</sup>,v<sup>'</sup>) e archivia il risultato in t(m+1).
 
-t (m + 1)<sub>RGB</sub> = TextureSample (stage m + 1)<sub>RGB</sub> using (u<sup>'</sup>, v<sup>'</sup> ) As coordinates
+t(m+1)<sub>RGB</sub> = TextureSample(stage m+1)<sub>RGB</sub> usando (u<sup>'</sup>, v<sup>'</sup> ) come coordinate
 
 ## <a name="examples"></a>Esempio
 
-Di seguito è riportato un esempio di shader con le mappe di trama e le fasi di trama identificate.
+Ecco un esempio di shader con le mappe trame e le fasi della trama identificate.
 
 
 ```
@@ -96,22 +96,22 @@ mov r0, t2            // Output result
 
 
 
-Questo esempio richiede le seguenti trame nelle fasi di trama seguenti.
+Questo esempio richiede le trame seguenti nelle fasi di trama seguenti.
 
--   La fase 0 accetta una mappa con i dati di perturbazione (x, y, z).
--   La fase 1 include le coordinate di trama. Non è necessaria alcuna trama nella fase della trama.
--   La fase 2 include entrambe le coordinate di trama e un set di trame 2D in quella fase della trama.
+-   La fase 0 accetta una mappa con i dati di perturbazione (x,y,z).
+-   La fase 1 contiene le coordinate della trama. Nella fase della trama non è necessaria alcuna trama.
+-   La fase 2 contiene sia le coordinate della trama che una trama 2D impostata in tale fase della trama.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

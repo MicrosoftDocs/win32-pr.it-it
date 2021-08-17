@@ -32,7 +32,7 @@ Se l'app accede direttamente file system, l'app può sfruttare i file segnaposto
 
 ## <a name="solution"></a>Soluzione
 
--   I segnaposto vengono nascosti per convenzione in base agli attributi
+-   I segnaposto sono nascosti per convenzione in base agli attributi
 -   Identificare i segnaposto usando l'ID del tag reparse IO \_ REPARSE \_ TAG FILE \_ \_ PLACEHOLDER
 
 Usare il modello di dati della shell per un comportamento facile:

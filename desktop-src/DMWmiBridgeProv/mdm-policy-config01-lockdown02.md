@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_LockDown02
-description: La \_ classe Lockdown02 dei criteri MDM \_ Config01 \_ rappresenta i criteri di blocco disponibili.
+title: MDM_Policy_Config01_LockDown02 classe
+description: La classe MDM \_ Policy \_ Config01 \_ Lockdown02 rappresenta i criteri di blocco disponibili.
 ms.assetid: 1d744400-70db-4f6b-97d0-7799fdfda44f
 keywords:
-- Classe MDM_Policy_Config01_LockDown02
-- Classe MDM_Policy_Config01_LockDown02, descritta
+- MDM_Policy_Config01_LockDown02 classe
+- MDM_Policy_Config01_LockDown02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cf9914573c1a3f693d88da8b35b2d577e1f21f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4794b085d5e2374756759055b6426ca3ca56c5562518e5a43715acd372d6c75c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527571"
 ---
-# <a name="mdm_policy_config01_lockdown02-class"></a>\_ \_ Classe Config01 LockDown02 di criteri \_ MDM
+# <a name="mdm_policy_config01_lockdown02-class"></a>Classe Mdm \_ Policy \_ Config01 \_ LockDown02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ Lockdown02 dei criteri MDM Config01** rappresenta i criteri di blocco disponibili.
+La **classe MDM Policy \_ \_ Config01 \_ Lockdown02** rappresenta i criteri di blocco disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_LockDown02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ LockDown02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Config01 \_ LockDown02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ LockDown02 dei criteri MDM Config01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Config01 \_ LockDown02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La **classe \_ \_ \_ LockDown02 dei criteri MDM Config01** ha queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,32 +70,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Lockdown".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Lockdown".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Config"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -105,11 +105,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>File mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

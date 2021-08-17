@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974790"
 ---
-# <a name="d3daes_ctr_iv-structure"></a>Struttura \_ CTR IV D3DAES \_
+# <a name="d3daes_ctr_iv-structure"></a>Struttura IV CTR D3DAES \_ \_
 
 Contiene un vettore di inizializzazione (IV) per la crittografia a blocchi Advanced Encryption Standard CTR (AES-CTR) a 128 bit.
 
@@ -50,13 +50,13 @@ Vettore di inizializzazione, in formato big-endian.
 **Count**
 </dt> <dd>
 
-Numero di blocchi, in formato big-endian.
+Conteggio dei blocchi, in formato big-endian.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **struttura \_ CTR \_ IV D3DAES** e la struttura [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) sono equivalenti.
+La **struttura IV di \_ CTR D3DAES \_** e la [**struttura IV \_ \_ CTR \_ DXVA2 AES**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) sono equivalenti.
 
 Per informazioni dettagliate, vedere [**DXVA2 \_ AES \_ CTR \_ IV.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv)
 

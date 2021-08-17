@@ -3,32 +3,32 @@ title: Elementi obbligatori
 description: Elementi obbligatori
 ms.assetid: 6aabbdcc-f834-4908-b25a-1dfce038132a
 keywords:
-- Interfacce di Windows Media Player Mobile, elementi
-- interfacce, elementi
-- file di definizione dell'interfaccia, elementi
+- Windows Media Player Interfaccia per dispositivi mobili, elementi
+- skins,elements
+- file di definizione dell'interfaccia utente,elementi
 - elementi, file di definizione dell'interfaccia
 - elementi, Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e1f05ba51b83fad6585d24c3ad19830598b8975
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18433e20c914cdc4b276857f97aab6a692d1d11c811660c73620b09a5b9a0f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746310"
 ---
 # <a name="required-elements"></a>Elementi obbligatori
 
-È necessario specificare gli elementi seguenti nel file di definizione dell'interfaccia utente:
+È necessario specificare gli elementi seguenti nel file di definizione dell'interfaccia:
 
--   **Intestazione.** L'intestazione del file di definizione dell'interfaccia principale è obbligatoria. Per informazioni sulla versione dell'intestazione, vedere la tabella nella sezione [creazione di un file di definizione dell'interfaccia](creating-a-skin-definition-file.md) .
--   **Sezione Descrizione.** La sezione Descrizione è obbligatoria per la creazione di interfacce per Windows Media Player 9 serie per Windows Mobile. Deve essere la prima sezione del file di definizione dell'interfaccia e deve specificare valori validi per le dimensioni. La specifica di un valore per l'orientamento è facoltativa.
--   **Sezione bitmap.** La sezione bitmap è obbligatoria. Inoltre, la sezione bitmap deve specificare nomi validi per i file di sfondo, disabilitato, push, area e immagine superata.
--   **file di immagine.** Come parte dell'interfaccia, è necessario fornire i file di sfondo, disabilitato, di push, di area e di immagine con privilegi avanzati. Se si creano interfacce per Windows Media Player 10 mobile o versioni successive, non è necessario includere i file di area o di immagine super.
+-   **Intestazione.** L'intestazione del file di definizione dell'interfaccia principale è obbligatoria. Per informazioni sulla versione dell'intestazione, vedere la tabella nella [sezione Creazione di un file di definizione dell'interfaccia](creating-a-skin-definition-file.md) utente.
+-   **Sezione Descrizione.** La sezione Descrizione è obbligatoria quando si creano le interfaccia per Windows Media Player serie 9 per Windows Mobile. Deve essere la prima sezione del file di definizione dell'interfaccia e deve specificare valori validi per Dimensions. Specificare un valore per Orientation è facoltativo.
+-   **Sezione Bitmap.** La sezione Bitmaps è obbligatoria. Inoltre, la sezione Bitmaps deve specificare nomi validi per i file di immagine Background, Disabled, Pushed, Region e Super.
+-   **file di immagine.** È necessario specificare i file di immagine Background, Disabled, Pushed, Region e Super come parte dell'interfaccia. Se si creano le interfaccia per Windows Media Player 10 Mobile o versione successiva, non è necessario includere file di immagine Region o Super.
 
-Se si crea un'interfaccia con solo immagini definite, l'interfaccia sarà visibile, ma non offrirà alcuna funzionalità significativa all'utente. Se si decide di creare un'interfaccia senza pulsanti, ad esempio per impedire all'utente di ignorare un determinato contenuto, tenere presente che potrebbe essere ancora possibile eseguire il mapping delle funzionalità ai pulsanti hardware del dispositivo.
+Se si crea un'interfaccia con solo immagini definite, l'interfaccia sarà visibile, ma non offrirà alcuna funzionalità significativa all'utente. Se si decide di creare un'interfaccia senza pulsanti, ad esempio per impedire all'utente di ignorare determinati contenuti, tenere presente che potrebbe essere comunque possibile eseguire il mapping delle funzionalità ai pulsanti hardware nel dispositivo.
 
-I file Thumb sono obbligatori e i TrackBar non possono essere usati senza Thumb.
+I file thumb sono necessari e i trackbar non possono essere usati senza il cursore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -37,9 +37,9 @@ I file Thumb sono obbligatori e i TrackBar non possono essere usati senza Thumb.
 [**File di definizione dell'interfaccia**](skin-definition-file-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

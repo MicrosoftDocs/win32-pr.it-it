@@ -31,7 +31,7 @@ ms.locfileid: "119977801"
 
 La funzione JetSetColumn modifica un singolo valore di colonna in un record modificato da inserire o aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore long (una colonna di tipo [LongText](./jet-coltyp-enumeration.md) [o LongBinary).](./jet-coltyp-enumeration.md)
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -124,7 +124,7 @@ public static JET_wrn JetSetColumn(
   - grbit  
     Tipo: [Microsoft.Isam.Esent.Interop.SetColumnGrbit](./setcolumngrbit-enumeration.md)  
     
-    Opzioni di SetColumn.
+    Opzioni SetColumn.
 
 <!-- end list -->
 
@@ -140,7 +140,7 @@ Valore di avviso.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di una versione solo interna dell'API che accetta un buffer di dati e un offset nel buffer.
+Si tratta di una versione dell'API solo interna che accetta un buffer di dati e un offset nel buffer.
 
 ## <a name="see-also"></a>Vedi anche
 

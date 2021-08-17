@@ -3,7 +3,7 @@ title: CBN_EDITUPDATE codice di notifica (Winuser.h)
 description: Inviato quando la parte di controllo di modifica di una casella combinata sta per visualizzare il testo modificato.
 ms.assetid: cae9cbf5-d420-4dfb-a46f-8c1a77de6ecf
 keywords:
-- CBN_EDITUPDATE del codice di notifica Windows controlli
+- CBN_EDITUPDATE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-Se la casella combinata ha lo stile [**CBS \_ DROPDOWNLIST,**](combo-box-styles.md) questo codice di notifica non viene inviato.
+Se la casella combinata ha lo [**stile CBS \_ DROPDOWNLIST,**](combo-box-styles.md) questo codice di notifica non viene inviato.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_RemoteWipe
-description: La \_ classe MDM RemoteWipe consente la cancellazione remota di un dispositivo.
+title: MDM_RemoteWipe classe
+description: La classe \_ RemoteWipe MDM consente una cancellazione remota di un dispositivo.
 ms.assetid: 8c7c8705-8694-4ce3-ba21-ca610fe1f547
 keywords:
-- Classe MDM_RemoteWipe
-- Classe MDM_RemoteWipe, descritta
+- MDM_RemoteWipe classe
+- MDM_RemoteWipe classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ece626fca573e34cf938105f5e59b61e0585fd3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 800d59ad1b2bc281027e3181faa7ff33103bd1e934584bbc91e3d34bd7cea5d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587831"
 ---
-# <a name="mdm_remotewipe-class"></a>MDM \_ RemoteWipe (classe)
+# <a name="mdm_remotewipe-class"></a>Classe \_ RemoteWipe MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ RemoteWipe** consente la cancellazione remota di un dispositivo.
+La **classe \_ RemoteWipe MDM** consente una cancellazione remota di un dispositivo.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -45,14 +45,14 @@ class MDM_RemoteWipe
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ RemoteWipe** presenta questi tipi di membri:
+La **classe \_ RemoteWipe MDM** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **MDM \_ RemoteWipe** ha questi metodi.
+La **classe \_ RemoteWipe MDM** ha questi metodi.
 
 
 
@@ -66,14 +66,14 @@ La classe **MDM \_ RemoteWipe** ha questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ RemoteWipe** ha queste proprietà.
+La **classe \_ RemoteWipe MDM** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -82,14 +82,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "RemoteWipe".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "RemoteWipe".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -98,16 +98,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/"
 
 </dd> </dl>
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare RemoteWipe e richiamare doWipeMethod.
+L'esempio seguente illustra come usare RemoteWipe e richiamare doWipeMethod.
 
 > [!Note]  
-> Questo esempio deve essere eseguito con l'utente di sistema locale. A tale scopo, scaricare lo strumento PsExec da <https://technet.microsoft.com/sysinternals/bb897553.aspx> ed eseguire `psexec.exe -i -s cmd.exe` da un prompt dei comandi di amministrazione con privilegi elevati.
+> Questo esempio deve essere eseguito con l'utente del sistema locale. A tale scopo, scaricare lo strumento psexec da <https://technet.microsoft.com/sysinternals/bb897553.aspx> ed eseguire da un prompt dei comandi amministratore con privilegi `psexec.exe -i -s cmd.exe` elevati.
 
  
 
@@ -139,10 +139,10 @@ catch [Exception]
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -151,7 +151,7 @@ catch [Exception]
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

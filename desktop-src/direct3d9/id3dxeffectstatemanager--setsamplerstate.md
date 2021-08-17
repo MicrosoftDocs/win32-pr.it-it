@@ -1,7 +1,7 @@
 ---
 description: Funzione di callback che deve essere implementata da un utente per impostare un campionatore.
 ms.assetid: 1e19e8cd-341d-4372-9182-8b3c82155407
-title: 'Metodo ID3DXEffectStateManager:: SetSamplerState (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetSamplerState (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: bba12db8dbc1902adc5c64b4cc1726e081dfea70
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0227335c2110590439873b965b2d1393a42dd575bf530ce83aae5228547fda26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121477"
 ---
-# <a name="id3dxeffectstatemanagersetsamplerstate-method"></a>Metodo ID3DXEffectStateManager:: SetSamplerState
+# <a name="id3dxeffectstatemanagersetsamplerstate-method"></a>Metodo ID3DXEffectStateManager::SetSamplerState
 
 Funzione di callback che deve essere implementata da un utente per impostare un campionatore.
 
@@ -42,16 +42,16 @@ HRESULT SetSamplerState(
 
 <dl> <dt>
 
-*Campionatore* \[ in\]
+*Campionatore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero di campionatore in base zero.
+Numero del campionatore in base zero.
 
 </dd> <dt>
 
-*Tipo* \[ di in\]
+*Tipo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)**
@@ -60,12 +60,12 @@ Identifica lo stato del campionatore, che può specificare il filtro, l'indirizz
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Valore di uno dei tipi di stato del campionatore nel tipo.
+Valore di uno dei tipi di stato del campionatore in Type.
 
 </dd> </dl>
 
@@ -73,10 +73,10 @@ Valore di uno dei tipi di stato del campionatore nel tipo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo durante l'impostazione dello stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate), avrà esito negativo.
+-   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico ( [**ad esempio IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

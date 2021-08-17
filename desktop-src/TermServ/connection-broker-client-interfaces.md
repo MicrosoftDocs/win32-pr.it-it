@@ -1,6 +1,6 @@
 ---
-title: interfacce client di Connessione Desktop remoto Broker
-description: L Connessione Desktop remoto API client di Service Broker definisce le interfacce seguenti.
+title: Connessione Desktop remoto interfacce client di Broker
+description: L Connessione Desktop remoto API client di Broker definisce le interfacce seguenti.
 ms.assetid: BC7AF6B4-BA1B-464C-849C-40ACB2BC7E37
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -12,9 +12,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119308950"
 ---
-# <a name="remote-desktop-connection-broker-client-interfaces"></a>interfacce client di Connessione Desktop remoto Broker
+# <a name="remote-desktop-connection-broker-client-interfaces"></a>Connessione Desktop remoto interfacce client di Broker
 
-L Connessione Desktop remoto API client di Service Broker definisce le interfacce seguenti.
+L Connessione Desktop remoto API client di Broker definisce le interfacce seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

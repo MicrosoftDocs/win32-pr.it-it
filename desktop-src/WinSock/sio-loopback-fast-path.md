@@ -19,7 +19,7 @@ ms.locfileid: "117740410"
 
 ## <a name="description"></a>Descrizione
 
-Il codice di controllo **\_ SIO LOOPBACK \_ FAST \_ di** controllo PATH configura un socket TCP per una latenza inferiore e operazioni più veloci sull'interfaccia di loopback.
+Il codice di controllo **\_ SIO LOOPBACK \_ FAST \_ path** configura un socket TCP per una latenza inferiore e operazioni più veloci sull'interfaccia di loopback.
 
 **Importante**  **L'istruzione \_ SIO LOOPBACK \_ FAST \_ PATH** è deprecata e non è consigliabile usare nel codice.
 
@@ -91,7 +91,7 @@ Puntatore a una variabile che riceve le dimensioni, in byte, dei dati archiviati
 
 Se il buffer di output è troppo piccolo, la chiamata ha esito negativo, [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) restituisce [**WSAEINVAL**](windows-sockets-error-codes-2.md)e il parametro *lpcbBytesReturned* punta a un valore **DWORD** pari a zero.
 
-Se *lpOverlapped* è **NULL,** il valore **DWORD** a cui punta il *parametro lpcbBytesReturned* restituito in una chiamata riuscita non può essere zero.
+Se *lpOverlapped* è **NULL,** il **valore DWORD** a cui punta il *parametro lpcbBytesReturned* restituito in una chiamata riuscita non può essere zero.
 
 Se il *parametro lpOverlapped* non è **NULL** per i socket sovrapposti, le operazioni che non possono essere completate immediatamente verranno avviate e il completamento verrà indicato in un secondo momento.
 Il **valore DWORD** a cui punta il *parametro lpcbBytesReturned* restituito può essere zero perché le dimensioni dei dati archiviati non possono essere determinate fino al completamento dell'operazione sovrapposta.
@@ -117,7 +117,7 @@ Puntatore alla routine di completamento chiamata quando l'operazione è stata co
 
 ### <a name="lpthreadid"></a>lpThreadId
 
-Puntatore a una [**struttura WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) che deve essere utilizzata dal provider in una chiamata successiva a [**WPUQueueApc.**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc)
+Puntatore a una [**struttura WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) che deve essere utilizzata dal provider in una chiamata successiva a [**WPUQueueApc**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc).
 Il provider deve archiviare la struttura [**WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) a cui si fa riferimento (non il puntatore allo stesso) fino a quando non viene restituita [**la funzione WPUQueueApc.**](/windows/desktop/api/ws2spi/nf-ws2spi-wpuqueueapc)
 
 **Nota**  Questo parametro si applica solo alla **funzione WSPIoctl.**
@@ -143,10 +143,10 @@ Per ottenere informazioni estese sugli errori, chiamare [**WSAGetLastError**](/w
 | **WSAEFAULT** | Il sistema ha rilevato un indirizzo puntatore non valido durante il tentativo di usare un argomento puntatore in una chiamata. Questo errore viene restituito dal parametro *lpvInBuffer*, *lpvoutBuffer*, *lpcbBytesReturned*, *lpOverlapped* o *lpCompletionRoutine* non è completamente contenuto in una parte valida dello spazio indirizzi utente. |
 | **WSAEINPROGRESS** | È in corso un'operazione di blocco. Questo errore viene restituito se la funzione viene richiamata quando è in corso un callback. |
 | **WSAEINTR** | Un'operazione di blocco è stata interrotta da una chiamata a [**WSACancelBlockingCall.**](/windows/desktop/api/winsock2/nf-winsock2-wsacancelblockingcall) Questo errore viene restituito se un'operazione di blocco è stata interrotta. |
-| **WSAEINVAL** | Argomento fornito non valido. Questo errore viene restituito se il *parametro dwIoControlCode* non è un comando valido o se un parametro di input specificato non è accettabile oppure il comando non è applicabile al tipo di socket specificato. |
+| **WSAEINVAL** | Argomento fornito non valido. Questo errore viene restituito se il *parametro dwIoControlCode* non è un comando valido o se un parametro di input specificato non è accettabile o il comando non è applicabile al tipo di socket specificato. |
 | **WSAENETDOWN** | Rete inattiva rilevata durante l'operazione del socket. Questo errore viene restituito se il sottosistema di rete ha avuto esito negativo. |
 | **Wsaenotsock** | È stata tentata un'operazione su un oggetto che non è un socket. Questo errore viene restituito se il descrittore *s* non è un socket. |
-| **WSAEOPNOTSUPP** | L'operazione tentata non è supportata per il tipo di oggetto a cui si fa riferimento. Questo errore viene restituito se il comando IOCTL specificato non è supportato. Questo errore viene restituito anche se **\_ \_ l'FAST IOCTL \_ SIO LOOPBACK non** è supportato dal provider di trasporto. |
+| **WSAEOPNOTSUPP** | L'operazione tentata non è supportata per il tipo di oggetto a cui si fa riferimento. Questo errore viene restituito se il comando IOCTL specificato non è supportato. Questo errore viene restituito anche se **l'FAST \_ IOCTL \_ \_ SIO LOOPBACK** non è supportato dal provider di trasporto. |
 
 ## <a name="remarks"></a>Commenti
 
@@ -169,18 +169,18 @@ Dopo che un'applicazione ha stabilito la connessione in un'interfaccia di loopba
 
 Questa ottimizzazione del loopback TCP comporta pacchetti che passano attraverso il livello di trasporto (TL) anziché il loopback tradizionale attraverso il livello di rete.
 Questa ottimizzazione migliora la latenza per i pacchetti di loopback.
-Quando un'applicazione acconsente esplicitamente a un'impostazione a livello di connessione per usare il percorso rapido di loopback, tutti i pacchetti seguiranno il percorso di loopback.
+Quando un'applicazione acconsente esplicitamente a un'impostazione del livello di connessione per usare il percorso rapido di loopback, tutti i pacchetti seguiranno il percorso di loopback.
 Per le comunicazioni di loopback, la congestione e la perdita di pacchetti non sono previste.
 La nozione di controllo della congestione e recapito affidabile in TCP non sarà necessaria.
 Questo, tuttavia, non è vero per il controllo di flusso.
-Senza il controllo di flusso, il mittente può sovraccaricare il buffer di ricezione, causando un comportamento di loopback TCP non corretto.
+Senza controllo di flusso, il mittente può sovraccaricare il buffer di ricezione, causando un comportamento di loopback TCP erro.
 Il controllo di flusso nel percorso di loopback ottimizzato per TCP viene mantenuto inserendo le richieste di invio in una coda.
 Quando il buffer di ricezione è pieno, lo stack TCP/IP garantisce che gli invii non saranno completati fino a quando la coda non viene inviata mantenendo il controllo di flusso.
 
-Le connessioni tcp fast path loopback in presenza di un callout Windows Filtering Platform (WFP) per i dati di connessione devono adottare il percorso lento non ottimizzato per il loopback.
+Le connessioni di loopback del percorso rapido TCP in presenza di un callout di Windows Filtering Platform (WFP) per i dati di connessione devono prendere il percorso lento non ottimizzato per il loopback.
 I filtri WFP impediranno quindi l'uso di questo nuovo percorso rapido di loopback.
-Quando è abilitato un filtro PAM, il sistema userà il percorso lento anche se è stato impostato **LOOPBACK SIO \_ \_ FAST \_ PATH** IOCTL.
-In questo modo si garantisce che le applicazioni in modalità utente siano in grado di garantire la funzionalità di sicurezza COMPLETA DI WINDOWS.
+Quando un filtro WFP è abilitato, il sistema userà il percorso lento anche se è stato impostato l'FAST **\_ \_ \_ SIO LOOPBACK FAST PATH** IOCTL.
+In questo modo si garantisce che le applicazioni in modalità utente siano in grado di garantire la funzionalità di sicurezza completa del WFP.
 
 Per impostazione predefinita, **SIO \_ LOOPBACK \_ FAST \_ PATH** è disabilitato.
 
@@ -192,24 +192,24 @@ L'elenco delle opzioni supportate include quanto segue:
 * **\_HOP UNICAST IPV6 \_**
 * **IPV6 \_ UNICAST \_ IF**
 * **IPV6 \_ V6ONLY**
-* **ACCETTARE \_ QUINDI \_ L'ACCETTAZIONE CONDIZIONALE**
+* **ACCETTARE \_ QUINDI LA CONDIZIONE \_**
 * **SO \_ EXCLUSIVEADDRUSE**
 * **SCALABILITÀ \_ \_ DELLE PORTE**
 * **SO \_ RCVBUF**
-* **\_RIUTILIZZOADDR**
-* **TCP \_ BSDENTENT**
+* **QUINDI \_ REUSEADDR**
+* **TCP \_ BSDURGENT**
 
 ## <a name="see-also"></a>Vedi anche
 
-[**IPPROTO_IP socket di rete**](/windows/desktop/winsock/ipproto-ip-socket-options)
+[**IPPROTO_IP Socket Options**](/windows/desktop/winsock/ipproto-ip-socket-options)
 
-[**IPPROTO_IPV6 socket di rete**](/windows/desktop/winsock/ipproto-ipv6-socket-options)
+[**IPPROTO_IPV6 Socket Options**](/windows/desktop/winsock/ipproto-ipv6-socket-options)
 
-[**IPPROTO_TCP socket di rete**](/windows/desktop/winsock/ipproto-tcp-socket-options)
+[**IPPROTO_TCP Socket Options**](/windows/desktop/winsock/ipproto-tcp-socket-options)
 
 [**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket)
 
-[**SOL_SOCKET socket di rete**](/windows/desktop/winsock/sol-socket-socket-options)
+[**SOL_SOCKET Socket Options**](/windows/desktop/winsock/sol-socket-socket-options)
 
 [**WSAGetLastError**](/windows/desktop/api/winsock2/nf-winsock2-wsagetlasterror)
 

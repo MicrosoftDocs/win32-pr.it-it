@@ -21,11 +21,11 @@ ms.locfileid: "119444391"
 ---
 # <a name="cfolderitemsfdf-class"></a>Classe CFolderItemsFDF
 
-**CFolderItemsFDF è** una raccolta di [**FolderItems.**](folderitems.md) Implementa [**l'interfaccia IInsertItem.**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem)
+**CFolderItemsFDF** è una raccolta [**di FolderItems**](folderitems.md). Implementa [**l'interfaccia IInsertItem.**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem)
 
 ## <a name="members"></a>Membri
 
-La **classe CFolderItemsFDF** eredita da [**CFolderItems,**](class-cfolderitems-class.md) ma non dispone di membri aggiuntivi.
+La **classe CFolderItemsFDF** eredita [**da CFolderItems,**](class-cfolderitems-class.md) ma non dispone di membri aggiuntivi.
 
 ## <a name="remarks"></a>Commenti
 

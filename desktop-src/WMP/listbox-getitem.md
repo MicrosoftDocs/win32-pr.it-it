@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. GetItem
-description: Il metodo GetItem recupera il testo per l'elemento con l'indice specificato.
+title: LISTBOX.getItem
+description: Il metodo getItem recupera il testo per l'elemento con l'indice specificato.
 ms.assetid: fc4b1b4b-bd4d-4263-a83f-99c406d0ef61
 keywords:
-- Media Player di Windows LISTBOX. GetItem
+- ListBOX.getItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2c6bd930fabfe29e50bf8eb8265beb6d1abea7f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05c4043462aa1013df46039bb2d4524ba3b17b4d937a9b8145d46cf181ff246f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996461"
 ---
-# <a name="listboxgetitem"></a>LISTBOX. GetItem
+# <a name="listboxgetitem"></a>LISTBOX.getItem
 
-Il metodo **GetItem** Recupera il testo per l'elemento con l'indice specificato.
+Il **metodo getItem** recupera il testo per l'elemento con l'indice specificato.
 
 ``` syntax
         elementID.getItem(index)
@@ -35,13 +35,13 @@ Il metodo **GetItem** Recupera il testo per l'elemento con l'indice specificato.
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice della riga da recuperare.
+**Numero** (**long**) contenente l'indice della riga da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa**.
+Questo metodo restituisce un **oggetto String.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Questo metodo restituisce una **stringa**.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -57,7 +57,7 @@ Questo metodo restituisce una **stringa**.
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

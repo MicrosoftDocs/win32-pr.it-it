@@ -6,18 +6,18 @@ keywords:
 - AriaContainerRoleErrorMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eede416392e8b4cb644938242a9975238118ff07
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 0cebaa2e6f4526d0a1e820e60adc1d28439d3f361c7ffb58a0c4d855861ea46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104399864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133994"
 ---
 # <a name="aria-role-error-for-elements-with-event-handlers"></a>Errore del ruolo ARIA per gli elementi con gestori eventi
 
 ## <a name="text"></a>Testo
 
-L'elemento ha un gestore eventi ma il ruolo WAI-ARIA valido non è definito.
+L'elemento ha un gestore eventi, ma il ruolo WAI-ARIA valido non è definito.
 
 ## <a name="type"></a>Tipo
 
@@ -25,13 +25,13 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Questo errore si verifica per gli elementi che non dispongono di un ruolo di applicazioni Internet (WAI-ARIA) accessibile da Web Accessibility Initiative.
+Questo errore si applica agli elementi che non hanno un ruolo IMPLICIT WEB Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA).
 
-Questo errore indica che un elemento ha un gestore eventi mouse o tastiera (**clic**, **MouseDown**, **MouseUp**, **MouseMove**, **mouse**, **MouseOver**, **KeyUp**, **KeyDown** o **KeyPress**), ma non ha l'attributo [**Role**](https://developer.mozilla.org/docs/Web/HTML/Reference) impostato e non è uno dei tag HTML con un ruolo Wai-aria implicito (ad esempio, **un** **pulsante**, **IMG**, **input**, **Select** e così via).
+Questo errore indica che un elemento ha un gestore eventi del mouse o della tastiera **(clic,** **mousedown,** **mouseup, mousemove,** [](https://developer.mozilla.org/docs/Web/HTML/Reference) **mouseout,** **mouseover, keyup,** **keydown** o **keypress),** ma non ha l'attributo role impostato e non è uno dei tag HTML con un ruolo WAI-ARIA implicito (ad **esempio,**, un pulsante **,** **img**, **input**, **select** e così via). 
 
-È necessario impostare l'attributo [**Role**](https://developer.mozilla.org/docs/Web/HTML/Reference) per gli elementi interattivi che non dispongono di un ruolo implicito, ad esempio un tag **div** , per esporre i modelli di comportamento dell'elemento alle utilità per la lettura dello schermo e ad altre tecnologie per l'accesso facilitato.
+L'impostazione dell'attributo role per gli elementi interattivi che non hanno un ruolo implicito ,ad esempio un tag **div,** è necessaria per esporre i modelli di comportamento dell'elemento alle utilità per la lettura dello schermo e ad altre tecnologie di assistive technology. [](https://developer.mozilla.org/docs/Web/HTML/Reference)
 
-Per correggere l'errore, impostare l'attributo [**Role**](https://developer.mozilla.org/docs/Web/HTML/Reference) su un ruolo Wai-aria valido che meglio si adatta ai modelli di comportamento di questo elemento e agli attributi obbligatori. Se, ad esempio, un tag **div** funziona come un pulsante, impostare l'attributo Role su "button".
+Per correggere l'errore, impostare l'attributo [**role**](https://developer.mozilla.org/docs/Web/HTML/Reference) su un ruolo WAI-ARIA valido più adatto ai modelli di comportamento di questo elemento e agli attributi obbligatori. Ad esempio, se un tag **div** funziona come pulsante, impostare l'attributo role su "button".
 
 ## <a name="example"></a>Esempio
 
@@ -43,9 +43,9 @@ Per correggere l'errore, impostare l'attributo [**Role**](https://developer.mozi
 
 
 
- 
+ 
 
- 
+ 
 
 
 

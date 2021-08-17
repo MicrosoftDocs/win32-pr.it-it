@@ -62,8 +62,8 @@ La **classe SystemRestore** include questi metodi.
 | [**CreateRestorePoint**](createrestorepoint-systemrestore.md)     | Crea un punto di ripristino.<br/>                         |
 | [**Disabilita**](disable-systemrestore.md)                           | Disabilita il monitoraggio in una determinata unità.<br/>       |
 | [**Abilita**](enable-systemrestore.md)                             | Abilita il monitoraggio in una determinata unità.<br/>        |
-| [**GetLastRestoreStatus**](getlastrestorestatus-systemrestore.md) | Recupera lo stato dell'ultimo ripristino di sistema.<br/> |
-| [**Restore**](restore-systemrestore.md)                           | Avvia un ripristino di sistema.<br/>                      |
+| [**GetLastRestoreStatus**](getlastrestorestatus-systemrestore.md) | Recupera lo stato dell'ultimo ripristino del sistema.<br/> |
+| [**Restore**](restore-systemrestore.md)                           | Avvia un ripristino del sistema.<br/>                      |
 
 
 
@@ -78,10 +78,10 @@ La **classe SystemRestore** ha queste proprietà.
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Stringa**
+Tipo di dati: **String**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Ora in cui si è verificata la modifica dello stato.
@@ -91,13 +91,13 @@ Ora in cui si è verificata la modifica dello stato.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Stringa**
+Tipo di dati: **String**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Descrizione da visualizzare in modo che l'utente possa identificare facilmente un punto di ripristino. La lunghezza massima di una stringa ANSI è MAX \_ DESC. La lunghezza massima di una stringa Unicode è MAX \_ DESC \_ W. Per altre informazioni, vedere [Testo della descrizione del punto di ripristino](restore-point-description-text.md).
+Descrizione da visualizzare in modo che l'utente possa identificare facilmente un punto di ripristino. La lunghezza massima di una stringa ANSI è MAX \_ DESC. La lunghezza massima di una stringa Unicode è MAX \_ DESC \_ W. Per altre informazioni, vedere [Testo della descrizione del punto di ripristino.](restore-point-description-text.md)
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Descrizione da visualizzare in modo che l'utente possa identificare facilmente u
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Tipo di evento. Questo membro può essere uno dei valori seguenti.
@@ -118,8 +118,8 @@ Tipo di evento. Questo membro può essere uno dei valori seguenti.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="BEGIN_NESTED_SYSTEM_CHANGE"></span><span id="begin_nested_system_change"></span><dl> <dt>**BEGIN \_ MODIFICA \_ DI \_ SISTEMA ANNIDATA**</dt> <dt>102</dt> </dl> | È stata avviata una modifica del sistema. Una chiamata annidata successiva non crea un nuovo punto di ripristino. <br/> Le chiamate successive devono usare END \_ NESTED \_ SYSTEM \_ CHANGE, non END SYSTEM \_ \_ CHANGE.<br/> |
 | <span id="BEGIN_SYSTEM_CHANGE"></span><span id="begin_system_change"></span><dl> <dt>**BEGIN \_ MODIFICA \_ DI SISTEMA**</dt> <dt>100</dt> </dl>                       | È stata avviata una modifica del sistema.<br/>                                                                                                                                                           |
-| <span id="END_NESTED_SYSTEM_CHANGE"></span><span id="end_nested_system_change"></span><dl> <dt>**END \_ MODIFICA \_ DI SISTEMA \_ ANNIDATA**</dt> <dt>103</dt> </dl>       | Una modifica del sistema è stata terminata.<br/>                                                                                                                                                           |
-| <span id="END_SYSTEM_CHANGE"></span><span id="end_system_change"></span><dl> <dt>**END \_ MODIFICA \_ DEL SISTEMA**</dt> <dt>101</dt> </dl>                             | Una modifica del sistema è stata terminata.<br/>                                                                                                                                                           |
+| <span id="END_NESTED_SYSTEM_CHANGE"></span><span id="end_nested_system_change"></span><dl> <dt>**END \_ MODIFICA \_ DI \_ SISTEMA ANNIDATA**</dt> <dt>103</dt> </dl>       | È stata terminata una modifica di sistema.<br/>                                                                                                                                                           |
+| <span id="END_SYSTEM_CHANGE"></span><span id="end_system_change"></span><dl> <dt>**END \_ MODIFICA \_ DI SISTEMA**</dt> <dt>101</dt> </dl>                             | È stata terminata una modifica di sistema.<br/>                                                                                                                                                           |
 
 
 
@@ -133,7 +133,7 @@ Tipo di evento. Questo membro può essere uno dei valori seguenti.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Tipo di punto di ripristino. Questo membro può essere uno dei valori seguenti.
@@ -144,7 +144,7 @@ Tipo di punto di ripristino. Questo membro può essere uno dei valori seguenti.
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="APPLICATION_INSTALL"></span><span id="application_install"></span><dl> <dt>**APPLICAZIONE \_ INSTALLARE**</dt> <dt>0</dt> </dl>         | È stata installata un'applicazione.<br/>                                                                                                                 |
 | <span id="APPLICATION_UNINSTALL"></span><span id="application_uninstall"></span><dl> <dt>**APPLICAZIONE \_ DISINSTALLARE**</dt> <dt>1</dt> </dl>   | Un'applicazione è stata disinstallata.<br/>                                                                                                               |
-| <span id="CANCELLED_OPERATION"></span><span id="cancelled_operation"></span><dl> <dt>**ANNULLATO \_ OPERAZIONE**</dt> <dt>13</dt> </dl>        | Un'applicazione deve eliminare il punto di ripristino creato. Ad esempio, un'applicazione userebbe questo flag quando un utente annulla un'installazione. <br/> |
+| <span id="CANCELLED_OPERATION"></span><span id="cancelled_operation"></span><dl> <dt>**CANCELLED \_ OPERAZIONE**</dt> <dt>13</dt> </dl>        | Un'applicazione deve eliminare il punto di ripristino creato. Ad esempio, un'applicazione userebbe questo flag quando un utente annulla un'installazione. <br/> |
 | <span id="DEVICE_DRIVER_INSTALL"></span><span id="device_driver_install"></span><dl> <dt>**DISPOSITIVO \_ INSTALLAZIONE \_ DRIVER**</dt> <dt>10</dt> </dl> | È stato installato un driver di dispositivo.<br/>                                                                                                                |
 | <span id="MODIFY_SETTINGS"></span><span id="modify_settings"></span><dl> <dt>**MODIFY \_ IMPOSTAZIONI**</dt> <dt>12</dt> </dl>                    | In un'applicazione sono state aggiunte o rimosse funzionalità.<br/>                                                                                                  |
 
@@ -160,10 +160,10 @@ Tipo di punto di ripristino. Questo membro può essere uno dei valori seguenti.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Numero di sequenza del punto di ripristino.
@@ -172,7 +172,7 @@ Numero di sequenza del punto di ripristino.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile ottenere un elenco di punti di ripristino usando il [**metodo SWbemServices.InstancesOf**](/windows/desktop/WmiSdk/swbemservices-instancesof) per recuperare una raccolta di **oggetti SystemRestore.** È possibile usare le proprietà della classe per identificare il punto di ripristino.
+È possibile ottenere un elenco di punti di ripristino usando il [**metodo SWbemServices.InstancesOf**](/windows/desktop/WmiSdk/swbemservices-instancesof) per recuperare una raccolta **di oggetti SystemRestore.** È possibile usare le proprietà della classe per identificare il punto di ripristino.
 
 ## <a name="examples"></a>Esempio
 
@@ -201,7 +201,7 @@ next
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                         |
-| Spazio dei nomi<br/>                | Impostazione \\ predefinita radice<br/>                                                          |
+| Spazio dei nomi<br/>                | Root \\ Default<br/>                                                          |
 | MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 

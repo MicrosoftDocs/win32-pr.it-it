@@ -29,7 +29,7 @@ ICE97 invia gli avvisi seguenti.
 
  
 
-Ad esempio, Component1 e Component2, che condividono ComponentShared, vengono installati nella stessa directory. Entrambi specificano ComponentShared come componente isolato. A causa dell'isolamento, i file in ComponentShared vengono copiati due volte nel riferimento alla directory \_ per Component1 e Component2. I componenti hanno ora un conteggio dei riferimenti per la copia dei file. Si tratta di una violazione delle regole del componente installer. Se Component1 viene disinstallato, i file dei componenti isolati vengono rimossi e Component2 viene interrotto.
+Ad esempio, Component1 e Component2, che condividono ComponentShared, vengono installati nella stessa directory. Entrambi specificano ComponentShared come componente isolato. A causa dell'isolamento, i file in ComponentShared vengono copiati due volte nel riferimento alla directory \_ per Component1 e Component2. I componenti hanno ora un conteggio dei riferimenti per la copia dei file. Si tratta di una violazione delle regole del componente Installer. Se Component1 viene disinstallato, i file dei componenti isolati vengono rimossi e Component2 viene interrotto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
