@@ -3,28 +3,28 @@ title: Implementazione di CEchoPropPage Apply
 description: Implementazione di CEchoPropPage Apply
 ms.assetid: e887b851-e623-4ec4-8d8b-165e4b21e116
 keywords:
-- Plug-in di Windows Media Player, pagine delle proprietà di esempio Echo
+- Windows Media Player plug-in, pagine delle proprietà di esempio Echo
 - plug-in, pagine delle proprietà di esempio Echo
-- plug-in di elaborazione dei segnali digitali, pagine delle proprietà di esempio Echo
+- plug-in di elaborazione del segnale digitale,pagine delle proprietà di esempio Echo
 - Plug-in DSP, pagine delle proprietà di esempio Echo
 - Esempio di plug-in Echo DSP, pagine delle proprietà
-- Esempio di plug-in Echo DSP, metodo CEchoPropPage Apply
+- Esempio di plug-in Echo DSP, metodo Apply CEchoPropPage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bdca8a771d3e3e26923567f25bf7d19e968595e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a53d05bee90908f766034c300c99bcfa8d529b06e6713c803bd99bcf042b579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135624"
 ---
-# <a name="implementing-cechoproppageapply"></a>Implementazione di CEchoPropPage:: Apply
+# <a name="implementing-cechoproppageapply"></a>Implementazione di CEchoPropPage::Apply
 
-Il metodo CEchoPropPage:: Apply è implementato in EchoPropPage. cpp. Viene eseguito quando l'utente fa clic su **applica** nella finestra di dialogo della pagina delle proprietà di Windows Media Player. Il codice di esempio della procedura guidata plug-in fornisce un'implementazione di per gestire una singola proprietà. È possibile modificare questo codice per una delle proprietà di esempio Echo, quindi aggiungere il codice per archiviare l'altro valore della proprietà.
+Il metodo CEchoPropPage::Apply viene implementato in EchoPropPage.cpp. Viene eseguito quando l'utente fa clic **su Applica** nella finestra di dialogo della pagina delle proprietà Windows Media Player. Il codice di esempio della procedura guidata plug-in fornisce un'implementazione per gestire una singola proprietà. È possibile modificare questo codice per una delle proprietà di esempio Echo e quindi aggiungere codice per archiviare l'altro valore della proprietà.
 
 ## <a name="declaring-the-apply-method-variables"></a>Dichiarazione delle variabili del metodo Apply
 
-In primo luogo, è necessario rimuovere la dichiarazione di fScaleFactor. Aggiungere quindi le dichiarazioni di variabili necessarie. Nell'esempio seguente vengono illustrate le dichiarazioni di variabile completate:
+Prima di tutto, è necessario rimuovere la dichiarazione di fScaleFactor. Aggiungere quindi le dichiarazioni di variabile necessarie. L'esempio seguente illustra le dichiarazioni di variabili completate:
 
 
 ```
@@ -38,7 +38,7 @@ double  fWetmix = 0.50;      // Initialize a double for effect level.
 
 ## <a name="retrieving-the-values-from-the-property-page"></a>Recupero dei valori dalla pagina delle proprietà
 
-È necessario implementare il codice per recuperare e convalidare l'input dell'utente. L'esempio di codice seguente recupera il valore di tempo di ritardo dalla \_ casella di modifica IDC DELAYTIME, quindi verifica che il valore si trovi all'interno di un intervallo specificato:
+È necessario implementare il codice per recuperare e convalidare l'input dell'utente. L'esempio di codice seguente recupera il valore del tempo di ritardo dalla casella di modifica IDC DELAYTIME e quindi verifica che il valore sia compreso \_ in un intervallo specificato:
 
 
 ```
@@ -61,9 +61,9 @@ if ((dwDelayTime < 10) || (dwDelayTime > 2000))
 
 
 
-Se l'input dell'utente non è compreso nell'intervallo specificato, il codice visualizza una finestra di messaggio. Si noti l'uso della risorsa di stringa creata in precedenza per il messaggio di errore.
+Se l'input dell'utente non è compreso nell'intervallo specificato, nel codice viene visualizzata una finestra di messaggio. Si noti l'uso della risorsa stringa creata in precedenza per il messaggio di errore.
 
-Nell'esempio seguente viene recuperato il livello di effetto dalla \_ casella di modifica IDC WETMIX, quindi viene verificato che il valore si trovi all'interno di un intervallo specificato:
+L'esempio seguente recupera il livello di effetto dalla casella di modifica IDC WETMIX e quindi verifica che il valore sia compreso \_ in un intervallo specificato:
 
 
 ```
@@ -86,9 +86,9 @@ if ((dwWetmix < 0) || (dwWetmix > 100))
 
 
 
-## <a name="storing-the-property-values-in-the-registry"></a>Archiviazione dei valori delle proprietà nel registro di sistema
+## <a name="storing-the-property-values-in-the-registry"></a>Archiviazione dei valori delle proprietà nel Registro di sistema
 
-Successivamente, il codice deve salvare i nuovi valori delle proprietà nel registro di sistema. Il codice seguente archivia entrambi i valori delle proprietà:
+Successivamente, il codice deve rendere persistenti i nuovi valori delle proprietà nel Registro di sistema. Il codice seguente archivia entrambi i valori delle proprietà:
 
 
 ```
@@ -115,7 +115,7 @@ if (ERROR_SUCCESS == lResult)
 
 ## <a name="updating-the-echo-plug-in-property-values"></a>Aggiornamento dei valori delle proprietà del plug-in Echo
 
-Il metodo **Apply** deve informare il plug-in echo che i valori della proprietà sono stati modificati. Il codice seguente chiama il metodo Put della proprietà per ogni proprietà usando il puntatore a interfaccia recuperato in CEchoPropPage:: setpropertys:
+Il **metodo Apply** deve informare il plug-in Echo che i valori delle proprietà sono stati modificati. Il codice seguente chiama il metodo property put per ogni proprietà usando il puntatore a interfaccia recuperato in CEchoPropPage::SetObjects:
 
 
 ```
@@ -132,11 +132,11 @@ if (m_spEcho)
 
 
 
-Si noti che il valore Wet Mix viene convertito in virgola mobile prima del passaggio al plug-in.
+Si noti che il valore della combinazione di umidità viene convertito in virgola mobile prima di essere passato al plug-in.
 
-## <a name="disabling-the-apply-button"></a>Disabilitazione del pulsante applica
+## <a name="disabling-the-apply-button"></a>Disabilitazione del pulsante Applica
 
-Come passaggio finale, il codice deve disabilitare applica nella finestra di dialogo della pagina delle proprietà come segnale all'utente che i valori sono stati aggiornati correttamente. Questa operazione richiede la riga di codice seguente:
+Come passaggio finale, il codice deve disabilitare Applica nella finestra di dialogo della pagina delle proprietà come segnale all'utente che i valori sono stati aggiornati correttamente. Questa operazione richiede la singola riga di codice seguente:
 
 
 ```
@@ -149,12 +149,12 @@ m_bDirty = FALSE; // Tell the property page to disable Apply.
 
 <dl> <dt>
 
-[**Modifica della pagina delle proprietà di esempio Echo**](modifying-the-echo-sample-property-page.md)
+[**Modifica della pagina delle proprietà Echo Sample**](modifying-the-echo-sample-property-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

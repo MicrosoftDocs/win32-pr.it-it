@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7143b55ae59c8fca845d256ddc1f79e69672364b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b1380a44d2985b75e77dced43878c85e38d6a21b877fe06d9cdc7c10a8a2002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090331"
 ---
 # <a name="ishelldispatch2showbrowserbar-method"></a>Metodo IShellDispatch2.ShowBrowserBar
 
@@ -56,7 +56,7 @@ IShellDispatch2.ShowBrowserBar( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **String** contenente il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto barra di Explorer con una categoria di \_ componenti CATID InfoBand. Per altre informazioni, vedere [Creating Custom Explorer Bars, Tool Bands, and Desk Bands](band-objects.md).
+Stringa **contenente** il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto barra di Explorer con una categoria di componenti \_ CATID InfoBand. Per altre informazioni, vedere [Creazione di barre di Esplorazione personalizzate, bande degli strumenti e fasce da tavolo.](band-objects.md)
 
 </dd> <dt>
 
@@ -75,13 +75,13 @@ Impostare su **true per** visualizzare la barra del browser o **su false** per n
 
 Tipo: **\* Variante**
 
-Restituisce **true se** ha esito positivo; in caso contrario, **false.**
+Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
 
 ### <a name="vb"></a>VB
 
 Tipo: **\* Variante**
 
-Restituisce **true se** ha esito positivo; in caso contrario, **false.**
+Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -106,9 +106,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di ShowBrowserBar** per visualizzare la **barra del** browser Preferiti. L'utilizzo è illustrato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso **di ShowBrowserBar** per visualizzare la **barra del** browser Preferiti. L'utilizzo viene visualizzato per JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -151,8 +151,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

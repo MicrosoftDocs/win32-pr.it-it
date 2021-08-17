@@ -1,5 +1,5 @@
 ---
-description: Rappresenta un'impostazione dell'ambiente o dell'ambiente di sistema in Windows computer.
+description: Rappresenta un ambiente o un'impostazione dell'ambiente di sistema in un Windows computer.
 ms.assetid: da7ee891-c759-4046-a9d8-d3caf66ab5a9
 ms.tgt_platform: multiple
 title: Win32_Environment classe
@@ -29,9 +29,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119391751"
 ---
-# <a name="win32_environment-class"></a>Classe Ambiente Win32 \_
+# <a name="win32_environment-class"></a>Classe Ambiente \_ Win32
 
-La **classe \_ WMI Ambiente Win32** rappresenta un ambiente o un'impostazione dell'ambiente di sistema in un Windows computer. [](/windows/desktop/WmiSdk/retrieving-a-class) L'esecuzione di query su questa classe restituisce le variabili di ambiente disponibili in:
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Ambiente Win32** rappresenta un ambiente o un'impostazione dell'ambiente di sistema in un Windows computer. L'esecuzione di query su questa classe restituisce le variabili di ambiente disponibili in:
 
 **HKEY \_ Ambiente \_** \\  \\ sessionmanager **del controllo CurrentControlSet** \\  \\ **del sistema** \\  LOCAL MACHINE
 
@@ -136,7 +136,7 @@ Tipo di accesso: Lettura/Scrittura
 Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Stringa di caratteri che specifica il nome di una variabile Windows di ambiente basata su criteri. Specificando il nome di una variabile che non esiste ancora, un'applicazione crea una nuova variabile di ambiente.
+Stringa di caratteri che specifica il nome di una Windows di ambiente basata Windows. Specificando il nome di una variabile che non esiste ancora, un'applicazione crea una nuova variabile di ambiente.
 
 Esempio: "Path"
 
@@ -259,7 +259,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session Manager \\ \\ \\ \\ Environment")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
 Indica se la variabile è una variabile di sistema. Una variabile di sistema viene impostata dal sistema operativo ed è indipendente dalle impostazioni dell'ambiente utente.
@@ -275,10 +275,10 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session Manager \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nome del proprietario dell'impostazione dell'ambiente. È impostato su per le impostazioni specifiche del sistema basato su Windows (anziché per un utente specifico) e per le <SYSTEM> <DEFAULT> impostazioni utente predefinite.
+Nome del proprietario dell'impostazione dell'ambiente. È impostato su per le impostazioni specifiche del sistema basato su Windows (anziché per un utente specifico) e per <SYSTEM> <DEFAULT> le impostazioni utente predefinite.
 
 Esempio: "JSmith"
 
@@ -293,7 +293,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session Manager \\ \\ \\ \\ Environment")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
 Variabile segnaposto di una Windows di ambiente basata su valori. Informazioni come la file system directory possono cambiare da computer a computer. Il sistema operativo sostituisce i segnaposto.
@@ -312,11 +312,11 @@ e
 
 **HKEY \_ Utenti** \\ **< *-* >** \\ **Ambiente utente**
 
-Il processo chiamante che usa questa classe deve avere il edizione Standard **\_ RESTORE \_ NAME** nel computer in cui si trova il Registro di sistema. Ad esempio, se si enumera questa classe nel computer locale, l'account con cui viene eseguita l'applicazione deve avere questo privilegio. Per altre informazioni, vedere [Esecuzione di operazioni con privilegi](/windows/desktop/WmiSdk/executing-privileged-operations).
+Il processo chiamante che usa questa classe deve avere il edizione Standard **\_ RESTORE \_ NAME** nel computer in cui si trova il Registro di sistema. Ad esempio, se si enumera questa classe nel computer locale, l'account con cui viene eseguita l'applicazione deve disporre di questo privilegio. Per altre informazioni, vedere [Esecuzione di operazioni con privilegi](/windows/desktop/WmiSdk/executing-privileged-operations).
 
 ## <a name="examples"></a>Esempio
 
-[L'esempio List Environment Variables on a Computer](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) Perl usa WMI per restituire informazioni su tutte le variabili di ambiente in un computer.
+[L'esempio Elenca variabili di ambiente](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) in un computer perl usa WMI per restituire informazioni su tutte le variabili di ambiente in un computer.
 
 Nell'esempio di codice VBScript seguente vengono enumerate le variabili di ambiente nel computer locale.
 
@@ -336,7 +336,7 @@ Next
 
 
 
-Nell'esempio di codice VBScript seguente viene modificata una variabile di ambiente denominata BUILD \_ TYPE in un input di valore da parte dell'utente. Lo script presuppone che la variabile BUILD \_ TYPE esista già. Se non esiste, lo script termina. Il valore di input viene controllato: deve essere "Build1", "Build2" o "Build3" e non vengono accettati altri valori. La funzione [VBScript UCase](https://msdn.microsoft.com/library/aa902519.aspx) rende l'input senza distinzione tra maiuscole e minuscole. Se ciò che viene digitato non è uno dei tre valori accettabili, lo script termina.
+L'esempio di codice VBScript seguente modifica una variabile di ambiente denominata BUILD \_ TYPE in un input di valore da parte dell'utente. Lo script presuppone che la variabile BUILD \_ TYPE esista già. Se non esiste, lo script termina. Il valore di input è selezionato: deve essere "Build1", "Build2" o "Build3" e non vengono accettati altri valori. La funzione [UCase di](https://msdn.microsoft.com/library/aa902519.aspx) VBScript rende l'input senza distinzione tra maiuscole e minuscole. Se ciò che viene digitato in non è uno dei tre valori accettabili, lo script termina.
 
 
 ```VB

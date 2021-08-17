@@ -1,9 +1,9 @@
 ---
-title: attributo ncadg_ip_udp
-description: La \_ \_ parola chiave UDP IP di ncadg identifica la versione del datagramma di TCP/IP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+title: ncadg_ip_udp attributo
+description: La parola chiave ncadg \_ ip udp identifica la versione del \_ datagramma di TCP/IP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 ms.assetid: c9133fcc-6dc2-49da-9c6f-5ce3c51090d5
 keywords:
-- attributo ncadg_ip_udp MIDL
+- ncadg_ip_udp attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 173ccd0b81eb5fa7d84a6fa4d2821162b852303d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f91db32fd7636f956e64dafc0db15efb520e643b435995dd977db7a631a20c78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067061"
 ---
-# <a name="ncadg_ip_udp-attribute"></a>\_ \_ attributo UDP IP ncadg
+# <a name="ncadg_ip_udp-attribute"></a>Attributo ncadg \_ ip \_ udp
 
-La parola chiave **\_ \_ UDP IP di ncadg** identifica la versione del datagramma di TCP/IP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+La **parola chiave ncadg \_ ip \_ udp** identifica la versione del datagramma di TCP/IP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 
 ``` syntax
 endpoint("ncadg_ip_udp:server-name[port-name]")
@@ -31,28 +31,28 @@ endpoint("ncadg_ip_udp:server-name[port-name]")
 
 <dl> <dt>
 
-*nome server* 
+*nome-server* 
 </dt> <dd>
 
-Specifica il nome o l'indirizzo Internet per il server, o host, computer. Il nome è una stringa di caratteri e può essere un nome di dominio completo. L'indirizzo Internet è una nota comune di indirizzo Internet.
+Specifica il nome o l'indirizzo Internet per il server, o host, computer. Il nome è una stringa di caratteri e può essere un nome di dominio completo. L'indirizzo Internet è una notazione di indirizzo Internet comune.
 
 </dd> <dt>
 
-*nome porta* 
+*port-name* 
 </dt> <dd>
 
-Specifica un numero facoltativo a 16 bit. I valori minori di 1024 sono generalmente riservati. Se non viene specificato alcun valore, il servizio di mapping degli endpoint seleziona un valore valido per il *nome di porta* .
+Specifica un numero a 16 bit facoltativo. I valori minori di 1024 sono in genere riservati. Se non viene specificato alcun valore, il servizio di mapping degli endpoint seleziona un valore *di nome di porta* valido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Si applicano le restrizioni seguenti ai protocolli di datagramma, [**ncadg \_ IPX**](ncadg-ipx.md) e **ncadg \_ IP \_ UDP**:
+Le restrizioni seguenti si applicano ai protocolli di datagramma, [**ncadg \_ ipx**](ncadg-ipx.md) e **ncadg \_ ip \_ udp:**
 
--   Non supportano i callback. Tutte le funzioni che utilizzano l'attributo di **\[** [**callback**](callback.md) **\]** avranno esito negativo.
--   Non supportano l'uso del costruttore del tipo di [**pipe**](pipe.md) .
+-   Non supportano i callback. Tutte le funzioni che usano **\[** [**l'attributo di callback**](callback.md) **\]** avranno esito negativo.
+-   Non supportano l'uso del costruttore [**del tipo di pipe.**](pipe.md)
 
-La sintassi della stringa della porta di trasporto TCP/IP, come tutte le stringhe di porta, viene definita indipendentemente dalla specifica IDL. Il compilatore esegue alcune verifiche della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. È possibile che alcuni errori vengano segnalati in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa della porta di trasporto TCP/IP, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue alcuni controlli della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
 
 ## <a name="examples"></a>Esempi
 
@@ -82,48 +82,48 @@ interface iface2
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ in \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ at \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ DNET \_ NSP**](ncacn-dnet-nsp.md)
+[**ncacn \_ dnet \_ nsp**](ncacn-dnet-nsp.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ IPX**](ncacn-nb-ipx.md)
+[**ncacn \_ nb \_ ipx**](ncacn-nb-ipx.md)
 </dt> <dt>
 
-[**\_SPX ncacn**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ NB**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**\_NP ncacn**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**ncacn \_ le reti virtuali \_ spp**](ncacn-vns-spp.md)
+[**ncacn \_ vns \_ spp**](ncacn-vns-spp.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
-[Associazione stringa](/windows/desktop/Rpc/string-binding)
+[Associazione di stringhe](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

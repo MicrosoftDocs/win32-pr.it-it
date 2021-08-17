@@ -1,30 +1,30 @@
 ---
-description: Windows invia a tutte le finestre di primo livello un set di \_ messaggi WM DEVICECHANGE predefiniti quando vengono aggiunti nuovi dispositivi o supporti, ad esempio un CD o un DVD, che diventano disponibili e quando vengono rimossi i dispositivi o i supporti esistenti.
+description: Windows invia a tutte le finestre di primo livello un set di messaggi DEVICECHANGE WM predefiniti quando nuovi dispositivi o supporti (ad esempio un CD o DVD) vengono aggiunti e diventano disponibili e quando i dispositivi o i supporti esistenti vengono \_ rimossi.
 ms.assetid: 26baa3aa-e54d-42fe-b2b2-a3fcca6dee91
-title: Rilevamento dell'inserimento o della rimozione dei supporti
+title: Rilevamento dell'inserimento o della rimozione di supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e6cfd4539d6f2ce5eac41e355f56a5a87835505
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3f3f6d579ed654ae2d2f77d00f70b88dc1441d03bbce59c0f8cb39ca6800c6af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104132170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318351"
 ---
-# <a name="detecting-media-insertion-or-removal"></a>Rilevamento dell'inserimento o della rimozione dei supporti
+# <a name="detecting-media-insertion-or-removal"></a>Rilevamento dell'inserimento o della rimozione di supporti
 
-Windows invia a tutte le finestre di primo livello un set di messaggi [**WM \_ DEVICECHANGE**](wm-devicechange.md) predefiniti quando vengono aggiunti nuovi dispositivi o supporti, ad esempio un CD o un DVD, che diventano disponibili e quando vengono rimossi i dispositivi o i supporti esistenti. Non è necessario eseguire la registrazione per ricevere questi messaggi predefiniti. Vedere la sezione Osservazioni in [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) per informazioni dettagliate sui messaggi inviati per impostazione predefinita. I messaggi nell'esempio di codice seguente sono tra i messaggi predefiniti.
+Windows invia a tutte le finestre di primo livello un set di messaggi [**\_ DEVICECHANGE WM**](wm-devicechange.md) predefiniti quando nuovi dispositivi o supporti (ad esempio un CD o DVD) vengono aggiunti e diventano disponibili e quando i dispositivi o i supporti esistenti vengono rimossi. Non è necessario registrarsi per ricevere questi messaggi predefiniti. Per informazioni dettagliate sui messaggi inviati per impostazione predefinita, vedere la sezione Osservazioni in [**RegisterDeviceNotification.**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) I messaggi nell'esempio di codice seguente sono tra i messaggi predefiniti.
 
 > [!Note]  
-> Windows invia solo i messaggi [**WM \_ DEVICECHANGE**](wm-devicechange.md) per gli eventi multimediali di CD o DVD alle finestre di primo livello di proprietà delle applicazioni eseguite nella sessione della console attiva. Le finestre di primo livello di proprietà delle applicazioni eseguite in una sessione Desktop remoto non ricevono messaggi [**WM \_ DEVICECHANGE**](wm-devicechange.md) per eventi multimediali CD o DVD.
+> Windows invia solo messaggi [**\_ DEVICECHANGE WM**](wm-devicechange.md) per eventi multimediali CD o DVD alle finestre di primo livello di proprietà delle applicazioni eseguite nella sessione della console attiva. Le finestre di primo livello di proprietà delle applicazioni eseguite in una sessione desktop remoto non ricevono messaggi [**\_ DEVICECHANGE WM**](wm-devicechange.md) per eventi multimediali CD o DVD.
 
  
 
-A ogni messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) è associato un evento che descrive la modifica e una struttura che fornisce informazioni dettagliate sulla modifica. La struttura è costituita da un'intestazione indipendente dall'evento, [**dev \_ broadcast \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr), seguita da membri dipendenti dall'evento. I membri dipendenti dall'evento descrivono il dispositivo a cui si applica l'evento. Per usare questa struttura, le applicazioni devono innanzitutto determinare il tipo di evento e il tipo di dispositivo. Quindi, possono utilizzare la struttura corretta per eseguire l'azione appropriata.
+A [**ogni messaggio WM \_ DEVICECHANGE**](wm-devicechange.md) è associato un evento che descrive la modifica e una struttura che fornisce informazioni dettagliate sulla modifica. La struttura è costituita da un'intestazione indipendente dagli eventi, [**DEV \_ BROADCAST \_ HDR,**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)seguita da membri dipendenti dall'evento. I membri dipendenti dall'evento descrivono il dispositivo a cui si applica l'evento. Per usare questa struttura, le applicazioni devono prima determinare il tipo di evento e il tipo di dispositivo. Possono quindi usare la struttura corretta per eseguire le azioni appropriate.
 
-Quando l'utente inserisce un nuovo CD o DVD in un'unità, le applicazioni ricevono un messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) con un evento [DBT \_ DEVICEARRIVAL](dbt-devicearrival.md) . L'applicazione deve controllare l'evento per verificare che il tipo di dispositivo in arrivo sia un volume (il membro **dbch \_ DeviceType** è **DBT \_ DEVTYP \_ volume**) e che la modifica influisca sul supporto (il membro dei **\_ flag dbcv** è un **\_ supporto DBTF**).
+Quando l'utente inserisce un nuovo CD o DVD in un'unità, le applicazioni ricevono un messaggio [**\_ DEVICECHANGE WM**](wm-devicechange.md) con un evento [ \_ DBT DEVICEARRIVAL.](dbt-devicearrival.md) L'applicazione deve controllare l'evento per assicurarsi che il tipo di dispositivo in arrivo sia un volume (il membro **dbch \_ devicetype** è **DBT \_ DEVTYP \_ VOLUME**) e che la modifica influisca sul supporto (il membro **\_ flag dbcv** è **DBTF \_ MEDIA**).
 
-Quando l'utente rimuove un CD o un DVD da un'unità, le applicazioni ricevono un messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) con un evento [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md) . Anche in questo caso, l'applicazione deve controllare l'evento per verificare che il dispositivo rimosso sia un volume e che la modifica influisca sul supporto.
+Quando l'utente rimuove un CD o DVD da un'unità, le applicazioni ricevono un [**messaggio \_ DEVICECHANGE WM**](wm-devicechange.md) con un [evento \_ DBT DEVICEREMOVECOMPLETE.](dbt-deviceremovecomplete.md) Anche in questo caso, l'applicazione deve controllare l'evento per assicurarsi che il dispositivo rimosso sia un volume e che la modifica influisca sul supporto.
 
 Il codice seguente illustra come verificare l'inserimento o la rimozione di un CD o DVD.
 
@@ -129,7 +129,7 @@ char FirstDriveFromMask( ULONG unitmask )
 
 <dl> <dt>
 
-[Eventi dispositivo](device-events.md)
+[Eventi del dispositivo](device-events.md)
 </dt> </dl>
 
  

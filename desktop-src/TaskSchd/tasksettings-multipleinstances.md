@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskSettings. MultipleInstances
-description: Per gli script, ottiene o imposta i criteri che definiscono il modo in cui il Utilità di pianificazione gestisce più istanze dell'attività.
+title: TaskSettings.MultipleInstances - proprietà
+description: Per lo scripting, ottiene o imposta i criteri che definiscono il modo in cui il Utilità di pianificazione gestisce più istanze dell'attività.
 ms.assetid: a25be615-fbb9-47fe-805a-5b93eab95f47
 keywords:
-- Utilità di pianificazione proprietà MultipleInstances
-- Utilità di pianificazione proprietà MultipleInstances, oggetto TaskSettings
-- Oggetto TaskSettings Utilità di pianificazione, proprietà MultipleInstances
+- Proprietà MultipleInstances Utilità di pianificazione
+- Proprietà MultipleInstances Utilità di pianificazione , oggetto TaskSettings
+- Oggetto TaskSettings Utilità di pianificazione proprietà , MultipleInstances
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 794ea07f1c01dabe957181bd327f8787f873917b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ff0091b9051840fea4c37869b51902f0c5f4c7cfed43a47c4f3924b398fe3e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059689"
 ---
-# <a name="tasksettingsmultipleinstances-property"></a>Proprietà TaskSettings. MultipleInstances
+# <a name="tasksettingsmultipleinstances-property"></a>TaskSettings.MultipleInstances - proprietà
 
-Per gli script, ottiene o imposta i criteri che definiscono il modo in cui il Utilità di pianificazione gestisce più istanze dell'attività.
+Per lo scripting, ottiene o imposta i criteri che definiscono il modo in cui il Utilità di pianificazione gestisce più istanze dell'attività.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -40,16 +40,16 @@ TaskSettings.MultipleInstances As Integer
 
 ## <a name="property-value"></a>Valore proprietà
 
-[**Attività \_ Costanti dei \_ criteri delle istanze**](/windows/desktop/api/taskschd/ne-taskschd-task_instances_policy) .
+[**ATTIVITÀ \_ Costanti \_ DI INSTANCES POLICY.**](/windows/desktop/api/taskschd/ne-taskschd-task_instances_policy)
 
 
 
 | Valore                                                                                                                                                                                                                                                               | Significato                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <span id="TASK_INSTANCES_PARALLEL"></span><span id="task_instances_parallel"></span><dl> <dt>**Attività \_ ISTANZE \_ parallele**</dt> <dt>0</dt> </dl>                 | Avvia una nuova istanza di mentre è in esecuzione un'istanza esistente dell'attività.<br/>              |
-| <span id="TASK_INSTANCES_QUEUE"></span><span id="task_instances_queue"></span><dl> <dt>**Attività \_ \_Coda istanze**</dt> <dt>1</dt> </dl>                          | Avvia una nuova istanza dell'attività dopo il completamento di tutte le altre istanze dell'attività.<br/> |
-| <span id="TASK_INSTANCES_IGNORE_NEW"></span><span id="task_instances_ignore_new"></span><dl> <dt>**Attività \_ ISTANZE \_ ignorate \_ nuovo**</dt> <dt>2</dt> </dl>          | Non avvia una nuova istanza di se è in esecuzione un'istanza esistente dell'attività.<br/>         |
-| <span id="TASK_INSTANCES_STOP_EXISTING"></span><span id="task_instances_stop_existing"></span><dl> <dt>**Attività \_ Le \_ istanze \_ arrestano**</dt> <dt>3</dt> esistente </dl> | Arresta un'istanza esistente dell'attività prima di avviare una nuova istanza.<br/>                 |
+| <span id="TASK_INSTANCES_PARALLEL"></span><span id="task_instances_parallel"></span><dl> <dt>**ATTIVITÀ \_ ISTANZE \_ PARALLEL**</dt> <dt>0</dt> </dl>                 | Avvia una nuova istanza mentre è in esecuzione un'istanza esistente dell'attività.<br/>              |
+| <span id="TASK_INSTANCES_QUEUE"></span><span id="task_instances_queue"></span><dl> <dt>**ATTIVITÀ \_ CODA \_ ISTANZE**</dt> <dt>1</dt> </dl>                          | Avvia una nuova istanza dell'attività al termine di tutte le altre istanze dell'attività.<br/> |
+| <span id="TASK_INSTANCES_IGNORE_NEW"></span><span id="task_instances_ignore_new"></span><dl> <dt>**ATTIVITÀ \_ LE ISTANZE \_ \_ IGNORANO IL NUOVO**</dt> <dt>2</dt> </dl>          | Non avvia una nuova istanza se è in esecuzione un'istanza esistente dell'attività.<br/>         |
+| <span id="TASK_INSTANCES_STOP_EXISTING"></span><span id="task_instances_stop_existing"></span><dl> <dt>**ATTIVITÀ \_ LE ISTANZE \_ \_ INTERROMPINO 3**</dt> <dt></dt> </dl> | Arresta un'istanza esistente dell'attività prima di avviare la nuova istanza.<br/>                 |
 
 
 
@@ -57,7 +57,7 @@ TaskSettings.MultipleInstances As Integer
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata [**nell'elemento MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md) dello schema Utilità di pianificazione schema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -76,7 +76,7 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 <dl> <dt>
 
-[**\_criteri istanze \_ attività**](/windows/desktop/api/taskschd/ne-taskschd-task_instances_policy)
+[**CRITERI \_ DELLE ISTANZE DI \_ ATTIVITÀ**](/windows/desktop/api/taskschd/ne-taskschd-task_instances_policy)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

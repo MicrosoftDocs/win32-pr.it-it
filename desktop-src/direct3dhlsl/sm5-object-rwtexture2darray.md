@@ -1,9 +1,9 @@
 ---
 title: RWTexture2DArray
-description: Una risorsa di lettura/scrittura. | RWTexture2DArray
+description: Risorsa di lettura/scrittura. | RWTexture2DArray
 ms.assetid: 6a6f3655-f1c0-4d5b-91a2-d79da65858b8
 keywords:
-- HLSL RWTexture2DArray
+- RWTexture2DArray HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5ada0fcaba729eff37f41f1ae7666841175689ff
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e9ae4d4c7c47012b71a70916f5861975176b86e6612cb2a4fec3ea6c9c6e17cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095131"
 ---
 # <a name="rwtexture2darray"></a>RWTexture2DArray
 
-Una risorsa di lettura/scrittura.
+Risorsa di lettura/scrittura.
 
 
 
 | Metodo                                                             | Descrizione                   |
 |--------------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-rwtexture2darray-getdimensions.md) | Ottiene le dimensioni della risorsa. |
-| [**Caricamento**](rwtexture2darray-load.md)                              | Legge i dati della trama.           |
+| [**Caricamento**](rwtexture2darray-load.md)                              | Legge i dati delle trame.           |
 | [**Operatore\[\]**](sm5-object-rwtexture2darray-operatorindex.md)  | Ottiene una variabile di risorsa.     |
 
 
 
  
 
-È possibile anteporre gli oggetti **RWTexture2DArray** alla classe di archiviazione **globallycoherent**. Questa classe di archiviazione causa barriere e sincronizzazioni di memoria per scaricare i dati nell'intera GPU, in modo che altri gruppi possano visualizzare le Scritture. Senza questo identificatore, una barriera di memoria o una sincronizzazione Scarica un UAV solo all'interno del gruppo corrente.
+È possibile aggiungere come **prefisso gli oggetti RWTexture2DArray** alla classe di archiviazione **globalmentecoherent**. Questa classe di archiviazione fa sì che le barriere di memoria e le sincronizzazioni scaricano i dati nell'intera GPU in modo che altri gruppi possano visualizzare le scritture. Senza questo identificatore, una barriera di memoria o una sincronizzazione scarica un UAV solo all'interno del gruppo corrente.
 
-Un oggetto **RWTexture2DArray** richiede un tipo di elemento in un'istruzione di dichiarazione per l'oggetto. Ad esempio, la dichiarazione seguente è corretta:
+Un **oggetto RWTexture2DArray** richiede un tipo di elemento in un'istruzione di dichiarazione per l'oggetto. Ad esempio, la dichiarazione seguente è corretta:
 
 
 ```
@@ -47,16 +47,16 @@ RWTexture2DArray<float> tex;
 
 
 
-Poiché un oggetto **RWTexture2DArray** è un oggetto di tipo UAV, le relative proprietà differiscono da un oggetto tipo di visualizzazione risorse shader (SRV), ad esempio un oggetto [**Texture2DArray**](sm5-object-texture2darray.md) . Ad esempio, è possibile leggere e scrivere in un oggetto **RWTexture2DArray** , ma è possibile leggere solo da un oggetto **Texture2DArray** .
+Poiché un **oggetto RWTexture2DArray** è un oggetto di tipo UAV, le relative proprietà differiscono da un oggetto di tipo SRV (Shader Resource View), ad esempio un oggetto [**Texture2DArray.**](sm5-object-texture2darray.md) Ad esempio, è possibile leggere e scrivere in un **oggetto RWTexture2DArray,** ma è possibile leggere solo da un **oggetto Texture2DArray.**
 
-Un oggetto **RWTexture2DArray** non può usare i metodi di un oggetto [**Texture2DArray**](sm5-object-texture2darray.md) , ad esempio [Sample](dx-graphics-hlsl-to-sample.md). Tuttavia, poiché è possibile creare più tipi di visualizzazione per la stessa risorsa, è possibile dichiarare più tipi di trama come una singola trama in più shader. Ad esempio, è possibile dichiarare e usare un oggetto **RWTexture2DArray** come *Tex* in un compute shader e quindi dichiarare e usare un oggetto **Texture2DArray** come *Tex* in una pixel shader.
+Un **oggetto RWTexture2DArray** non può usare metodi di un [**oggetto Texture2DArray,**](sm5-object-texture2darray.md) ad esempio [Sample.](dx-graphics-hlsl-to-sample.md) Tuttavia, poiché è possibile creare più tipi di visualizzazione per la stessa risorsa, è possibile dichiarare più tipi di trama come singola trama in più shader. Ad esempio, è possibile dichiarare e usare un **oggetto RWTexture2DArray** come *tex* in un compute shader e quindi dichiarare e usare un oggetto **Texture2DArray** come *tex* in un pixel shader.
 
 > [!Note]  
-> Il Runtime impone determinati modelli di utilizzo quando si creano più tipi di visualizzazione nella stessa risorsa. Il runtime, ad esempio, non consente di avere un mapping UAV per una risorsa e un mapping SRV per la stessa risorsa attiva allo stesso tempo.
+> Il runtime applica determinati modelli di utilizzo quando si creano più tipi di visualizzazione per la stessa risorsa. Ad esempio, il runtime non consente di avere contemporaneamente attivo sia un mapping UAV per una risorsa che un mapping SRV per la stessa risorsa.
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questo oggetto è supportato nei modelli shader seguenti.
 
@@ -64,7 +64,7 @@ Questo oggetto è supportato nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
@@ -74,7 +74,7 @@ Questo oggetto è supportato per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -86,7 +86,7 @@ Questo oggetto è supportato per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Oggetti Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Oggetti modello shader 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
  

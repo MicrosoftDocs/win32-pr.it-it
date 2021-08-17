@@ -1,19 +1,19 @@
 ---
-description: Nella tabella riportata in questo argomento vengono visualizzati i valori per le proprietà del sistema operativo selezionate Windows Installer.
+description: Nella tabella di questo argomento vengono visualizzati i valori per le Windows del sistema operativo del programma di installazione.
 ms.assetid: 4f516cf0-d5b3-4df6-b171-54bbafc0ef93
 title: Valori delle proprietà del sistema operativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5747d5be27566bbdb5ec1e7e9208ac5ffbf6f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 461419a29bc62b9aa51e76fe2a471f4c6ef9a079767f40cbeaab397358a10ec8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145554"
 ---
 # <a name="operating-system-property-values"></a>Valori delle proprietà del sistema operativo
 
-Nella tabella riportata in questo argomento vengono visualizzati i valori per le [proprietà del sistema operativo](property-reference.md)selezionate Windows Installer.
+Nella tabella di questo argomento vengono visualizzati i valori per le Windows del sistema operativo del programma [di installazione.](property-reference.md)
 
 
 
@@ -46,7 +46,7 @@ Nella tabella riportata in questo argomento vengono visualizzati i valori per le
 
  
 
-Per ulteriori informazioni, vedere [versioni rilasciate di Windows Installer](released-versions-of-windows-installer.md), [**VersionNT**](versionnt.md), [**WindowsBuild**](windowsbuild.md)e [**ServicePackLevel**](servicepacklevel.md).
+Per altre informazioni, vedere [Versioni rilasciate di Windows,](released-versions-of-windows-installer.md) [**VersionNT,**](versionnt.md) [**WindowsBuild**](windowsbuild.md)e [**ServicePackLevel.**](servicepacklevel.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -55,7 +55,7 @@ Per ulteriori informazioni, vedere [versioni rilasciate di Windows Installer](re
 [Informazioni sulle proprietà](about-properties.md)
 </dt> <dt>
 
-[Riferimento alla proprietà](property-reference.md)
+[Informazioni di riferimento sulla proprietà](property-reference.md)
 </dt> <dt>
 
 [Utilizzo delle proprietà](using-properties.md)

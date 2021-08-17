@@ -1,7 +1,7 @@
 ---
 description: Questa applicazione è basata sull'oggetto InkCollector e illustra la raccolta di input penna.
 ms.assetid: e799fb16-5a1e-4d57-a033-554f72e2e685
-title: Esempio di raccolta ink
+title: Esempio di raccolta input penna
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9e5f568abf38abfa31d9374a7a1874f9f73481a799a740c402f3e8f168963c3e
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118718260"
 ---
-# <a name="ink-collection-sample"></a>Esempio di raccolta ink
+# <a name="ink-collection-sample"></a>Esempio di raccolta input penna
 
-Questa applicazione è basata [sull'oggetto InkCollector](/previous-versions/ms836493(v=msdn.10)) e illustra la raccolta di input penna. L'applicazione crea una finestra, allega un oggetto InkCollector e fornisce all'utente opzioni di menu che possono essere usate per modificare il colore dell'input penna, la larghezza dell'input penna e abilitare e disabilitare la raccolta di input penna.
+Questa applicazione è basata [sull'oggetto InkCollector](/previous-versions/ms836493(v=msdn.10)) e illustra la raccolta di input penna. L'applicazione crea una finestra, allega un oggetto InkCollector e fornisce all'utente opzioni di menu che possono essere usate per modificare il colore dell'input penna, la larghezza dell'input penna e abilitare e disabilitare la raccolta input penna.
 
 > [!Note]  
 > La versione descritta in questa sezione è Visual Basic .NET. I concetti sono gli stessi tra le altre versioni del linguaggio nella libreria di esempi.
@@ -22,7 +22,7 @@ Questa applicazione è basata [sull'oggetto InkCollector](/previous-versions/ms8
 
 ## <a name="declaring-the-inkcollector"></a>Dichiarazione di InkCollector
 
-L'applicazione importa prima di tutto lo [spazio dei nomi Microsoft.Ink.](/previous-versions/ms826516(v=msdn.10)) L'applicazione dichiara quindi `myInkCollector` , che contiene [l'oggetto InkCollector](/previous-versions/ms836493(v=msdn.10)) per il form.
+L'applicazione importa innanzitutto lo [spazio dei nomi Microsoft.Ink.](/previous-versions/ms826516(v=msdn.10)) L'applicazione dichiara quindi `myInkCollector` , che contiene [l'oggetto InkCollector](/previous-versions/ms836493(v=msdn.10)) per il form.
 
 
 ```C++
@@ -36,7 +36,7 @@ Public Class InkCollection
 
 
 
-## <a name="setting-things-up"></a>Configurazione di elementi
+## <a name="setting-things-up"></a>Impostazione delle impostazioni
 
 Il metodo del `InkCollection_Load` form gestisce l'evento [Load del](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) form. Crea un [oggetto InkCollector](/previous-versions/ms836493(v=msdn.10)) assegnato al form modifica la proprietà [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) dell'oggetto InkCollector e abilita l'oggetto InkCollector.
 
@@ -63,11 +63,11 @@ End Sub
 
 [InkCollector](/previous-versions/ms836493(v=msdn.10)) viene assegnato alla finestra del form assegnando l'handle della finestra del form alla proprietà [Handle](/previous-versions/ms836504(v=msdn.10)) dell'oggetto InkCollector. La raccolta input penna viene attivata impostando la proprietà [Enabled](/previous-versions/ms836503(v=msdn.10)) dell'oggetto InkCollector su **TRUE.**
 
-La proprietà [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) dell'oggetto [InkCollector](/previous-versions/ms836493(v=msdn.10)) imposta gli attributi predefiniti assegnati a un nuovo cursore. Per impostare attributi diversi in un nuovo cursore, usare la [proprietà DrawingAttributes](/previous-versions/ms839523(v=msdn.10)) dell'oggetto [Cursor.](/previous-versions/ms839521(v=msdn.10)) Per modificare gli attributi di disegno di un singolo tratto, usa la [proprietà DrawingAttributes](/previous-versions/ms827846(v=msdn.10)) dell'oggetto [Stroke.](/previous-versions/ms827842(v=msdn.10))
+La proprietà [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) dell'oggetto [InkCollector](/previous-versions/ms836493(v=msdn.10)) imposta gli attributi predefiniti assegnati a un nuovo cursore. Per impostare attributi diversi su un nuovo cursore, usare la [proprietà DrawingAttributes](/previous-versions/ms839523(v=msdn.10)) dell'oggetto [Cursor.](/previous-versions/ms839521(v=msdn.10)) Per modificare gli attributi di disegno di un singolo tratto, usare la [proprietà DrawingAttributes](/previous-versions/ms827846(v=msdn.10)) dell'oggetto [Stroke.](/previous-versions/ms827842(v=msdn.10))
 
 ## <a name="changing-the-properties"></a>Modifica delle proprietà
 
-Il resto di questa semplice applicazione è costituito da gestori per le varie selezioni di menu che l'utente può effettuare. Ad esempio, quando l'utente sceglie di modificare il colore dell'input penna in rosso scegliendo Rosso dal menu Input penna, il colore viene modificato usando la proprietà [Color](/previous-versions/ms837933(v=msdn.10)) della proprietà [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) dell'oggetto [InkCollector](/previous-versions/ms836493(v=msdn.10)) nel gestore eventi per il menu.
+Il resto di questa semplice applicazione è costituito da gestori per le varie selezioni di menu che l'utente può effettuare. Ad esempio, quando l'utente sceglie di modificare il colore dell'input penna in rosso scegliendo Rosso dal menu Input penna, il colore viene modificato usando la proprietà [Color](/previous-versions/ms837933(v=msdn.10)) nella proprietà [DefaultDrawingAttributes](/previous-versions/ms836500(v=msdn.10)) dell'oggetto [InkCollector](/previous-versions/ms836493(v=msdn.10)) nel gestore eventi per il menu.
 
 
 ```C++

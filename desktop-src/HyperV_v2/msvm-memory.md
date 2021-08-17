@@ -91,18 +91,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0ec6b287f3281fd0224e9c2efc39391781bd7f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d149c733bfc9ccf408b7798a37a762b947eac23b25888beeda375e77c60417f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148354"
 ---
-# <a name="msvm_memory-class"></a>\_Classe di memoria MSVM
+# <a name="msvm_memory-class"></a>Classe Di memoria \_ Msvm
 
 Rappresenta la memoria attualmente allocata a una macchina virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -187,14 +187,14 @@ class Msvm_Memory : CIM_Memory
 
 ## <a name="members"></a>Members
 
-La classe di **\_ memoria MSVM** dispone di questi tipi di membri:
+La **classe \_ Msvm Memory** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe di **\_ memoria MSVM** dispone di questi metodi.
+La **classe \_ Msvm Memory** include questi metodi.
 
 
 
@@ -215,111 +215,111 @@ La classe di **\_ memoria MSVM** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ memoria MSVM** dispone di queste proprietà.
+La **classe \_ Msvm Memory** ha queste proprietà.
 
 <dl> <dt>
 
 **Accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive le proprietà di lettura/scrittura del supporto. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è impostata su 3 (lettura/scrittura supportata) per impostazione predefinita.
+Descrive le proprietà di lettura/scrittura dei supporti. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e viene impostata su 3 (lettura/scrittura supportata) per impostazione predefinita.
 
 </dd> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su 6 (non applicabile).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e viene impostata su 6 (Non applicabile).
 
 </dd> <dt>
 
 **AdditionalErrorData**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **Disponibilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica i valori possibili per il parametro *RequestedState* del metodo **RequestStateChange** . Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Indica i valori possibili per il *parametro RequestedState* del **metodo RequestStateChange.** Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensione, in byte, dei blocchi che formano l'extent di archiviazione. Se la dimensione del blocco di variabili è, è necessario specificare la dimensione massima del blocco in byte. Se le dimensioni del blocco sono sconosciute o se un concetto di blocco non è valido, ad esempio per extent di aggregazione, memoria o dischi logici, immettere 1 (uno). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 1048576.
+Dimensione, in byte, dei blocchi che formano l'extent di archiviazione. Se la dimensione del blocco variabile è variabile, è necessario specificare la dimensione massima in byte del blocco. Se le dimensioni del blocco sono sconosciute o se un concetto di blocco non è valido (ad esempio, per extent aggregati, memoria o dischi logici), immettere un valore 1 (uno). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e viene sempre impostata su 1048576.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la possibilità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -329,7 +329,7 @@ Indica la capacità della strumentazione di comunicare con l'elemento gestito so
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**Non disponibile** (1)
 </dt> <dt>
 
-<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicazione ok** (2)
+<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicazione OK** (2)
 </dt> <dt>
 
 <span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Comunicazione persa** (3)
@@ -349,104 +349,104 @@ Indica la capacità della strumentazione di comunicare con l'elemento gestito so
 **ConsumableBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero massimo di blocchi, di dimensioni **blockSize**, che sono disponibili per l'utilizzo quando si esegue il layering degli extent di archiviazione utilizzando l'associazione BasedOn. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **null**.
+Numero massimo di blocchi, di dimensioni **BlockSize**, disponibili per l'utilizzo quando si esegue il layering degli extent di archiviazione usando l'associazione BasedOn. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **CorrectableError**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di un'istanza di. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
-**Dataorganization**
+**DataOrganization**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di organizzazione dati utilizzato. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 2.
+Tipo di organizzazione dati usato. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 2.
 
 </dd> <dt>
 
-**Ridondanza dataridondanza**
+**Ridondanza dei dati**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di copie complete dei dati attualmente gestiti. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 1.
+Numero di copie complete dei dati attualmente gestiti. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e viene sempre impostata su 1.
 
 </dd> <dt>
 
 **DeltaReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore corrente per la prenotazione Delta. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 0.
+Valore corrente per la prenotazione differenziale. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 0.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Aggiunge un complimento alla proprietà **PrimaryStatus** con ulteriori dettagli sullo stato. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Completa la **proprietà PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -456,13 +456,13 @@ Aggiunge un complimento alla proprietà **PrimaryStatus** con ulteriori dettagli
 <span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Nessuna informazione aggiuntiva** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Sottolineato** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Stressato** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Errore predittivo** (3)
 </dt> <dt>
 
-<span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Errore irreversibile** (4)
+<span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Errore non ripristinabile** (4)
 </dt> <dt>
 
 <span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entità di supporto in errore** (5)
@@ -476,71 +476,71 @@ Aggiunge un complimento alla proprietà **PrimaryStatus** con ulteriori dettagli
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Un indirizzo o altre informazioni di identificazione per assegnare un nome univoco al dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Indirizzo o altre informazioni di identificazione per assegnare un nome univoco al dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Configurazione predefinita o di avvio di un amministratore per lo stato abilitato di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Configurazione predefinita o di avvio di un amministratore per lo stato abilitato di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stati abilitati e disabilitati di un elemento. Può inoltre indicare le transizioni tra questi stati richiesti. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Stati abilitati e disabilitati di un elemento. Può anche indicare le transizioni tra questi stati richiesti. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
 | Valore                                                                                                                                                                                                                                                                       | Significato                                                                                                                                                                                                                |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | Non è stato possibile determinare lo stato dell'elemento.<br/>                                                                                                                                                           |
-| <span id="Other"></span><span id="other"></span><span id="OTHER"></span><dl> <dt>**Altro**</dt> <dt>1</dt> </dl>                                                         |                                                                                                                                                                                                                        |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | Impossibile determinare lo stato dell'elemento.<br/>                                                                                                                                                           |
+| <span id="Other"></span><span id="other"></span><span id="OTHER"></span><dl> <dt>**Altri**</dt> <dt>1</dt> </dl>                                                         |                                                                                                                                                                                                                        |
 | <span id="Enabled"></span><span id="enabled"></span><span id="ENABLED"></span><dl> <dt>**Abilitato**</dt> <dt>2</dt> </dl>                                                 | L'elemento è in esecuzione.<br/>                                                                                                                                                                                     |
 | <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span><dl> <dt>**Disabilitato**</dt> <dt>3</dt> </dl>                                             | L'elemento è disattivato.<br/>                                                                                                                                                                                  |
-| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Chiusura**</dt> di <dt>4</dt> </dl>                         | L'elemento è in corso di passaggio a uno stato disabilitato.<br/>                                                                                                                                                 |
-| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Non applicabile**</dt> <dt>5</dt> </dl>                     | L'elemento non supporta l'abilitazione o la disabilitazione.<br/>                                                                                                                                                     |
-| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Abilitato ma offline**</dt> <dt>6</dt> </dl> | L'elemento potrebbe essere il completamento dei comandi e verranno eliminate tutte le nuove richieste.<br/>                                                                                                                                |
-| <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span><dl> <dt>**Nel test**</dt> <dt>7</dt> </dl>                                                 | L'elemento si trova in uno stato di test.<br/>                                                                                                                                                                             |
-| <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span><dl> <dt>**Posticipato**</dt> <dt>8</dt> </dl>                                             | È possibile che l'elemento stia completando i comandi, ma verrà accodato qualsiasi nuova richiesta.<br/>                                                                                                                               |
-| <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span><dl> <dt>**Mettere in stato**</dt> <dt>9</dt> </dl>                                                 | L'elemento è abilitato, ma è in modalità con restrizioni. Il comportamento dell'elemento è simile allo stato abilitato (2), ma elabora solo un set di comandi limitato. Tutte le altre richieste vengono accodate.<br/> |
-| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**A partire**</dt> da <dt>10</dt> </dl>                                            | L'elemento è in corso di attivazione dello stato abilitato (2). Le nuove richieste vengono accodate.<br/>                                                                                                                    |
+| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Arresto 4**</dt> <dt></dt> </dl>                         | L'elemento sta per essere disabilitato.<br/>                                                                                                                                                 |
+| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Non applicabile**</dt> <dt>5</dt> </dl>                     | L'elemento non supporta l'a abilitato o disabilitato.<br/>                                                                                                                                                     |
+| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Abilitato ma offline**</dt> <dt>6</dt> </dl> | L'elemento potrebbe completare i comandi e elimina eventuali nuove richieste.<br/>                                                                                                                                |
+| <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span><dl> <dt>**Nel test**</dt> <dt>7</dt> </dl>                                                 | L'elemento è in uno stato di test.<br/>                                                                                                                                                                             |
+| <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span><dl> <dt>**Posticipato**</dt> <dt>8</dt> </dl>                                             | L'elemento potrebbe completare i comandi, ma accoderà tutte le nuove richieste.<br/>                                                                                                                               |
+| <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span><dl> <dt>**Disattivazione**</dt> <dt>9</dt> </dl>                                                 | L'elemento è abilitato, ma è in modalità con restrizioni. Il comportamento dell'elemento è simile allo stato Abilitato (2), ma elabora solo un set limitato di comandi. Tutte le altre richieste vengono accodati.<br/> |
+| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**A partire**</dt> <dt>da 10</dt> </dl>                                            | L'elemento è in corso di attivazione dello stato Abilitato (2). Le nuove richieste vengono accodati.<br/>                                                                                                                    |
 
 
 
@@ -551,215 +551,215 @@ Stati abilitati e disabilitati di un elemento. Può inoltre indicare le transizi
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo finale del blocco di memoria contigua. Poiché la proprietà **IndirizzoIniziale** è sempre 0, questo valore riflette sempre la quantità totale di memoria nella macchina virtuale.
+Indirizzo finale del blocco di memoria contiguo. Poiché la **proprietà StartingAddress** è sempre 0, questo valore riflette sempre la quantità totale di memoria nella macchina virtuale.
 
 </dd> <dt>
 
 **ErrorAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
-**ErrorData**
+**Errordata**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorDataOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
-**ErrorInfo**
+**Errorinfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorMethodology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive il tipo di rilevamento e correzione degli errori supportato da questo extent di archiviazione. Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory)ed è sempre impostata su **null**.
+Stringa che descrive il tipo di rilevamento e correzione degli errori supportati da questo extent di archiviazione. Questa proprietà viene ereditata dalla [**memoria CIM \_**](/windows/desktop/CIMWin32Prov/cim-memory)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **ErrorResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ErrorTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory) ma non usata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory) ma non viene usata.
 
 </dd> <dt>
 
-**ErrorTransferSize**
+**Errortransfersize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **ExtentStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Gli extent di archiviazione hanno informazioni di stato aggiuntive oltre a quelle acquisite in **OperationalStatus** e altre proprietà ereditate da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement). Queste informazioni aggiuntive (ad esempio, "Protection Disabled", value = 9) vengono acquisite nella proprietà **VolumeStatus** . Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 2 (nessuna/non applicabile).
+Archiviazione extent hanno informazioni di stato aggiuntive oltre a quella acquisita in **OperationalStatus** e altre proprietà ereditate da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) Queste informazioni aggiuntive, ad esempio "Protezione disabilitata", valore=9, vengono acquisite nella **proprietà VolumeStatus.** Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 2 (Nessuno/Non applicabile).
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente dell'elemento. Questo attributo esprime lo stato di integrità di questo elemento ma non necessariamente dei relativi sottocomponenti. I valori possibili sono compresi tra 0 e 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento è completamente non funzionale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ed è sempre impostata su 5.
+Integrità corrente dell'elemento. Questo attributo esprime l'integrità di questo elemento, ma non necessariamente quella dei relativi sottocomponenti. I valori possibili sono da 0 a 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento non è completamente funzionante. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e viene sempre impostata su 5.
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su **null**.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e viene impostata su **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora di creazione della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Data e ora di creazione della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -768,69 +768,69 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**IsBasedOnUnderlyingRedundancy**
+**Ridondanza IsBasedOnUnderlying**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se gli extent di archiviazione sottostanti fanno parte di un gruppo di ridondanza di archiviazione. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **false**.
+**True** se gli extent di archiviazione sottostanti fanno parte di un Archiviazione di ridondanza. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **False.**
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (1024), **override** ("Name")
+Qualificatori: **MaxLen** (1024), **Override** ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su "*GUID*".
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override per essere una proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su "*GUID*".
 
 </dd> <dt>
 
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -843,7 +843,7 @@ Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop
 **NameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -856,39 +856,39 @@ Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop
 **NoSinglePointOfFailure**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se non esiste alcun singolo punto di errore. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **false**.
+**True** se non esiste alcun singolo punto di errore. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **False.**
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore calcolato che rappresenta la quantità totale di memoria divisa dal **blockSize**. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Valore calcolato che rappresenta la quantità totale di memoria divisa per **BlockSize.** Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere utilizzato per fornire maggiori dettagli rispetto al valore della proprietà **EnabledState** . Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere usato per fornire maggiori dettagli rispetto al valore della **proprietà EnabledState.** Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -901,10 +901,10 @@ Fornisce informazioni sullo stato corrente per la condizione operativa dell'elem
 <span id="Servicing"></span><span id="servicing"></span><span id="SERVICING"></span>**Manutenzione** (2)
 </dt> <dt>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Avvio** (3)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A partire** da (3)
 </dt> <dt>
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Arresto** in corso (4)
+<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Arresto** (4)
 </dt> <dt>
 
 <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Arrestato** (5)
@@ -913,7 +913,7 @@ Fornisce informazioni sullo stato corrente per la condizione operativa dell'elem
 <span id="Aborted"></span><span id="aborted"></span><span id="ABORTED"></span>**Interrotto** (6)
 </dt> <dt>
 
-<span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span>**Inattivo** (7)
+<span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span>**Inattiva** (7)
 </dt> <dt>
 
 <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span>**Completato** (8)
@@ -922,16 +922,16 @@ Fornisce informazioni sullo stato corrente per la condizione operativa dell'elem
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migrazione** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrazione** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Ing** (10)
 </dt> <dt>
 
-<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Migrazione** in corso (11)
+<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Cheng** (11)
 </dt> <dt>
 
-<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Istantanee** (12)
+<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Creazione di snapshot** (12)
 </dt> <dt>
 
-<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Arresto** in corso (13)
+<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Arresto in fase di** arresto (13)
 </dt> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**In test** (14)
@@ -940,10 +940,10 @@ Fornisce informazioni sullo stato corrente per la condizione operativa dell'elem
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transizione** (15)
 </dt> <dt>
 
-<span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**Nel servizio** (16)
+<span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**In servizio** (16)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 </dt> <dt>
 
 <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornitore riservato** (0x8000.. )
@@ -954,143 +954,143 @@ Fornisce informazioni sullo stato corrente per la condizione operativa dell'elem
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stati correnti dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Stati correnti dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OtherEnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato abilitato o disabilitato dell'elemento quando la proprietà **EnabledState** è impostata su 1 (other). Questa proprietà deve essere impostata su **null** quando **EnabledState** è un valore diverso da 1. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))ed è sempre impostata su **null**.
+Stato abilitato o disabilitato dell'elemento quando la **proprietà EnabledState** è impostata su 1 (Altro). Questa proprietà deve essere impostata **su Null** quando **EnabledState** è un valore diverso da 1. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **OtherErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su **null**.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su **Null.**
 
 </dd> <dt>
 
 **OtherNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Spazio dei nomi della proprietà **Name** quando la proprietà **NameFormat** include il valore 1 (other "). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **null**.
+Spazio dei nomi della **proprietà Name** quando la **proprietà NameFormat** include il valore 1 (Other"). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **OtherNameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Spazio dei nomi della proprietà **Name** quando la proprietà **NameNamespace** include il valore 1 (other). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **null**.
+Spazio dei nomi della **proprietà Name** quando la **proprietà NameNamespace** include il valore 1 (Other). Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
-**PackageRedundancy**
+**Ridondanza dei pacchetti**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di pacchetti fisici che attualmente possono avere esito negativo senza perdita di dati. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 0.
+Numero di pacchetti fisici che possono attualmente avere esito negativo senza perdita di dati. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su 0.
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
-**PrimaryStatus**
+**Stato primario**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere utilizzata in combinazione con la proprietà **DetailedStatus** per fornire lo stato di integrità di livello elevato e dettagliato dell'elemento e dei relativi sottocomponenti. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni generali sullo stato. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire lo stato di integrità generale e dettagliato dell'elemento e dei relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -1106,7 +1106,7 @@ Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Errore** (3)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 </dt> <dt>
 
 <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornitore riservato** (0x8000.. )
@@ -1117,201 +1117,201 @@ Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere
 **Originale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se il sistema che lo contiene non è in grado di creare o eliminare questo elemento operativo. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+**True** se il sistema contenitore non è in grado di creare o eliminare questo elemento operativo. Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
 **Scopo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive i supporti e il relativo utilizzo. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su "System Memory".
+Stringa che descrive il supporto e il relativo utilizzo. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su "System Memory".
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ultimo stato richiesto o desiderato per l'elemento. Lo stato effettivo dell'elemento è rappresentato da **EnabledState**. Questa proprietà viene fornita per confrontare l'ultimo stato richiesto e corrente abilitato o disabilitato. Una particolare istanza di [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) potrebbe non supportare il metodo **RequestStateChange** . In tal caso, viene utilizzato il valore 12 (non applicabile). Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElement**.
+Ultimo stato richiesto o desiderato per l'elemento. Lo stato effettivo dell'elemento è rappresentato da **EnabledState.** Questa proprietà viene fornita per confrontare l'ultimo stato richiesto e quello corrente abilitato o disabilitato. Una particolare istanza di [**CIM \_ EnabledLogicalElement potrebbe**](/previous-versions//cc136818(v=vs.85)) non supportare il **metodo RequestStateChange.** In questo caso, viene usato il valore 12 (Non applicabile). Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElement.**
 
 </dd> <dt>
 
 **SequentialAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se l'accesso all'archiviazione viene eseguito in modo sequenziale da un dispositivo di accesso multimediale. Una partizione nastro è un esempio di un extent di archiviazione a cui si accede in modo sequenziale. I volumi di archiviazione, le partizioni disco e i dischi logici rappresentano extent ad accesso casuale. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **false**.
+**True** se l'accesso alla memoria viene eseguito in sequenza da un dispositivo di accesso ai supporti. Una partizione nastro è un esempio di extent di archiviazione a cui si accede in sequenza. Archiviazione volumi, partizioni del disco e dischi logici rappresentano extent ad accesso casuale. Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)ed è sempre impostata su **False.**
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo iniziale a cui fa riferimento un'applicazione o un sistema operativo e mappato da un controller di memoria per questo oggetto memoria. Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory)ed è sempre impostata su 0.
+Indirizzo iniziale a cui fa riferimento un'applicazione o un sistema operativo e mappato da un controller di memoria per questo oggetto di memoria. Questa proprietà viene ereditata dalla [**memoria CIM \_**](/windows/desktop/CIMWin32Prov/cim-memory)e viene sempre impostata su 0.
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ma non viene usata.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringhe che descrivono i vari valori della matrice **OperationalStatus** . Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Stringhe che descrivono i vari valori della matrice **OperationalStatus.** Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **SystemLevelAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory), ma non viene utilizzata.
+Questa proprietà viene ereditata dalla [**memoria CIM, \_**](/windows/desktop/CIMWin32Prov/cim-memory)ma non viene usata.
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore univoco per la macchina virtuale di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Identificatore univoco per la macchina virtuale di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data o ora dell'Ultima modifica dello stato abilitato dell'elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))ed è sempre impostata su "null".
+Data o ora dell'ultima modifica dello stato abilitato dell'elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e viene sempre impostata su "NULL".
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
-**TransitioningToState**
+**Transizione a Uno stato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica lo stato di destinazione a cui è in corso la transizione dell'istanza. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Indica lo stato di destinazione a cui l'istanza sta per eseguire la transizione. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **Volatile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la memoria è volatile. Questa proprietà viene ereditata [**dalla \_ memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory)ed è sempre impostata su **true**.
+Indica se la memoria è volatile. Questa proprietà viene ereditata dalla [**memoria CIM \_**](/windows/desktop/CIMWin32Prov/cim-memory)ed è sempre impostata su **True.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla classe di **\_ memoria MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ Memory** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1319,10 +1319,10 @@ L'accesso alla classe di **\_ memoria MSVM** potrebbe essere limitato dal filtra
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1331,10 +1331,10 @@ L'accesso alla classe di **\_ memoria MSVM** potrebbe essere limitato dal filtra
 
 <dl> <dt>
 
-[**\_Memoria CIM**](cim-memory.md)
+[**Memoria \_ CIM**](cim-memory.md)
 </dt> <dt>
 
-[**\_Memoria CIM**](/windows/desktop/CIMWin32Prov/cim-memory)
+[**Memoria \_ CIM**](/windows/desktop/CIMWin32Prov/cim-memory)
 </dt> <dt>
 
 [Classi di memoria](memory-classes.md)

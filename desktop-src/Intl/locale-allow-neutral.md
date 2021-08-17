@@ -1,19 +1,19 @@
 ---
-description: impostazioni locali \_ Consenti \_ neutre
+description: IMPOSTAZIONI LOCALI \_ - CONSENTI \_ NEUTRO
 ms.assetid: 7e51d290-bcc1-44ba-a968-0d04438c69b5
 title: LOCALE_ALLOW_NEUTRAL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f062ce697a388625cebc88fee2a359d7b279e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d16fd5ee432ed581ecdc989f2bf0fb4646e8031da30cd2808ec3df36ae95060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147504"
 ---
-# <a name="locale_allow_neutral"></a>impostazioni locali \_ Consenti \_ neutre
+# <a name="locale_allow_neutral"></a>IMPOSTAZIONI LOCALI \_ - CONSENTI \_ NEUTRO
 
-**Solo Windows Vista:** Considerare valide le impostazioni locali non associate ad alcun paese.
+**Windows Solo Vista:** Considerare le impostazioni locali neutre come valide.
 
  
 

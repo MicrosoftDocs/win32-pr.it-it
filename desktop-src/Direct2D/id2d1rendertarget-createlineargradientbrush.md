@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateLinearGradientBrush di ID2D1RenderTarget (D2d1. h)
-description: Crea un oggetto ID2D1LinearGradientBrush per le aree di disegno con una sfumatura lineare.
+title: Metodi ID2D1RenderTarget CreateLinearGradientBrush (D2d1.h)
+description: Crea un oggetto ID2D1LinearGradientBrush per disegnare aree con una sfumatura lineare.
 ms.assetid: dc07113f-ff93-4b0f-8328-02dd481dccb0
 keywords:
-- Metodo CreateLinearGradientBrush Direct2D
+- Metodi CreateLinearGradientBrush Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 428fcb44ddf50af7b3e78c28e359430bceee2f79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 74e3ba102b24b330f176189a66eae7ac9cd74ece194900f3d8997675bf486641
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966871"
 ---
-# <a name="id2d1rendertargetcreatelineargradientbrush-methods"></a>Metodi ID2D1RenderTarget:: CreateLinearGradientBrush
+# <a name="id2d1rendertargetcreatelineargradientbrush-methods"></a>Metodi ID2D1RenderTarget::CreateLinearGradientBrush
 
-Crea un oggetto [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) per le aree di disegno con una sfumatura lineare.
+Crea un [**oggetto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) per disegnare aree con una sfumatura lineare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,15 +29,15 @@ Crea un oggetto [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-i
 
 | Metodo                                                                                                                                                                                                                       | Descrizione                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateLinearGradientBrush ( \_ proprietà del \_ pennello sfumatura lineare d2d1 \_ \_&, ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))                            | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati, non ha alcuna trasformazione e ha un'opacità di base 1,0. <br/> |
-| [**CreateLinearGradientBrush ( \_ proprietà del \_ pennello sfumatura lineare d2d1 \_ \_&, \_ proprietà del pennello d2d1 \_&, ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))   | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati e presenta la trasformazione e l'opacità di base specificate. <br/> |
-| [**CreateLinearGradientBrush ( \_ proprietà del \_ pennello sfumatura lineare d2d1 \_ \_ \* , \_ proprietà del pennello d2d1 \_ \* , ID2D1GradientStopCollection \* , ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)) | Crea un [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati e presenta la trasformazione e l'opacità di base specificate. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_&,ID2D1GradientStopCollection \* ,ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))                            | Crea un [**oggetto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati, non ha alcuna trasformazione e ha un'opacità di base di 1,0. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1GradientStopCollection \* ,ID2D1LinearGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush))   | Crea un [**oggetto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati e ha la trasformazione e l'opacità di base specificate. <br/> |
+| [**CreateLinearGradientBrush(D2D1 \_ LINEAR GRADIENT BRUSH PROPERTIES \_ \_ \_ \* ,D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1GradientStopCollection,ID2D1LinearGradientBrush \* \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)) | Crea un [**oggetto ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) che contiene i cursori sfumatura specificati e ha la trasformazione e l'opacità di base specificate. <br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio che illustra come creare una raccolta di arresti sfumatura e usarla per definire una sfumatura lineare, vedere [How to create a linear gradient brush](how-to-create-a-linear-gradient-brush.md).
+Per un esempio che illustra come creare una raccolta di cursori sfumatura e usarla per definire una sfumatura lineare, vedere [How to Create a Linear Gradient Brush](how-to-create-a-linear-gradient-brush.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,8 +45,8 @@ Per un esempio che illustra come creare una raccolta di arresti sfumatura e usar
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -70,7 +70,7 @@ Per un esempio che illustra come creare una raccolta di arresti sfumatura e usar
 [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)
 </dt> <dt>
 
-[Come creare un pennello sfumato lineare](how-to-create-a-linear-gradient-brush.md)
+[Come creare un pennello sfumatura lineare](how-to-create-a-linear-gradient-brush.md)
 </dt> <dt>
 
 [Panoramica dei pennelli](direct2d-brushes-overview.md)

@@ -50,13 +50,13 @@ Nome dell'hint per il quale eseguire la ricerca.
 *ppAnalysisHints* \[ Cambio\]
 </dt> <dd>
 
-Gli oggetti [**IContextNode dell'hint**](icontextnode.md) di analisi [**nell'interfaccia IInkAnalyzer**](iinkanalyzer.md) con il nome specificato.
+Gli oggetti [**IContextNode**](icontextnode.md) dell'hint di analisi in [**IInkAnalyzer**](iinkanalyzer.md) con il nome specificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input](classes-and-interfaces---ink-analysis.md) penna valori restituiti.
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input](classes-and-interfaces---ink-analysis.md) penna.
 
 ## <a name="remarks"></a>Commenti
 
@@ -67,9 +67,9 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 
 Questo metodo restituisce una raccolta vuota se tali nodi hint di analisi non sono collegati a [**IInkAnalyzer.**](iinkanalyzer.md)
 
-Un nodo hint di analisi è [**un elemento IContextNode**](icontextnode.md) con un tipo di nodo di contesto AnalysisHint (vedere [**IContextNode::GetType**](icontextnode-gettype.md) e Tipi [di nodo di contesto).](context-node-types.md)
+Un nodo hint di analisi è [**un IContextNode**](icontextnode.md) con un tipo di nodo di contesto AnalysisHint (vedere [**IContextNode::GetType**](icontextnode-gettype.md) e [Tipi di nodo di contesto).](context-node-types.md)
 
-Per aggiungere informazioni di contesto all'hint, usare [**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md) con il parametro *pPropertyDataId* impostato su [](analysis-hint-properties.md) uno degli identificatori univoci globali (GUID) nelle costanti di Proprietà hint di analisi.
+Per aggiungere informazioni di contesto all'hint, usare [**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md) con il *parametro pPropertyDataId* impostato su [](analysis-hint-properties.md) uno degli identificatori univoci globali (GUID) nelle costanti di Proprietà hint di analisi.
 
 Per trovare i valori delle proprietà impostati in un nodo di contesto, usare [**IContextNode::GetPropertyDataIds**](icontextnode-getpropertydataids.md). Per trovare il valore di una proprietà, usare [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md).
 
@@ -79,7 +79,7 @@ Per trovare i valori delle proprietà impostati in un nodo di contesto, usare [*
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
@@ -105,7 +105,7 @@ Per trovare i valori delle proprietà impostati in un nodo di contesto, usare [*
 [**Metodo IInkAnalyzer::GetAnalysisHints**](iinkanalyzer-getanalysishints.md)
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

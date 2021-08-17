@@ -3,7 +3,7 @@ title: Elemento HeaderField (headerFieldsType)
 description: Contiene un campo per un'intestazione in un messaggio di posta elettronica.
 ms.assetid: ec6fc593-8798-4dd0-b589-48657b7cdeb1
 keywords:
-- Utilità di pianificazione elemento HeaderField
+- Elemento HeaderField Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f7ac79a16bb0464f6e81d90eba38384a3c2b483
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 918e432ce7a8ea2d43769b9d9ee1315a4b35bce6f2c0cb23f1153ec7afe1a599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139214"
 ---
 # <a name="headerfield-headerfieldstype-element"></a>Elemento HeaderField (headerFieldsType)
 
@@ -30,7 +30,7 @@ Contiene un campo per un'intestazione in un messaggio di posta elettronica.
  />
 ```
 
-L'elemento **HeaderField** è definito dal tipo complesso [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) .
+**L'elemento HeaderField** è definito dal [**tipo complesso headerFieldsType.**](taskschedulerschema-headerfieldstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,7 +38,7 @@ L'elemento **HeaderField** è definito dal tipo complesso [**headerFieldsType**]
 
 | Elemento                                                                        | Derivato da                                                                 | Descrizione                                                                                      |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Specifica i campi di intestazione e i relativi valori usati nell'intestazione del messaggio di posta elettronica.<br/> |
+| [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Specifica i campi di intestazione e i relativi valori utilizzati nell'intestazione del messaggio di posta elettronica.<br/> |
 
 
 
@@ -55,9 +55,9 @@ L'elemento **HeaderField** è definito dal tipo complesso [**headerFieldsType**]
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà HeaderFields di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields).
+Per lo sviluppo in C++, vedere [**Proprietà HeaderFields di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields)
 
-Per lo sviluppo di script, vedere [**EmailAction. HeaderFields**](emailaction-headerfields.md).
+Per lo sviluppo di script, [**vedere EmailAction.HeaderFields.**](emailaction-headerfields.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Per lo sviluppo di script, vedere [**EmailAction. HeaderFields**](emailaction-he
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

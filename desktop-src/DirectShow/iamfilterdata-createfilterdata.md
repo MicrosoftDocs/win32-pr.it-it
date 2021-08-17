@@ -27,9 +27,9 @@ ms.locfileid: "119428671"
 
  
 
-Il `CreateFilterData` metodo crea dati binari del Registro di sistema per un filtro. Questi dati possono essere scritti nel Registro di sistema come sottochiave REG \_ BINARY denominata FilterData, nella chiave CLSID del filtro.
+Il `CreateFilterData` metodo crea dati binari del Registro di sistema per un filtro. Questi dati possono essere scritti nel Registro di sistema come sottochiave REG BINARY denominata FilterData, sotto la chiave \_ CLSID del filtro.
 
-In genere non esiste alcun motivo per cui un'applicazione chiami questo metodo. Il [**metodo IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automaticamente i dati binari e li aggiunge al percorso corretto nel Registro di sistema. Per altre informazioni, vedere [How to Register DirectShow Filters](how-to-register-directshow-filters.md).
+In genere non esiste alcun motivo per cui un'applicazione chiami questo metodo. Il [**metodo IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automaticamente i dati binari e li aggiunge al percorso corretto nel Registro di sistema. Per altre informazioni, vedere [Come registrare DirectShow filtri](how-to-register-directshow-filters.md).
 
 ## <a name="syntax"></a>Sintassi
 

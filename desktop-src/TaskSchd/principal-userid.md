@@ -1,11 +1,11 @@
 ---
-title: Proprietà Principal. UserId
-description: Per gli script, ottiene o imposta l'identificatore utente necessario per eseguire le attività associate all'entità.
+title: Principal.UserId - proprietà
+description: Per lo scripting, ottiene o imposta l'identificatore utente necessario per eseguire le attività associate all'entità.
 ms.assetid: 57a34d7b-70b2-4156-b525-befecbaf070d
 keywords:
-- Utilità di pianificazione proprietà UserId
-- Utilità di pianificazione proprietà UserId, oggetto Principal
-- Utilità di pianificazione oggetto Principal, Proprietà UserId
+- Proprietà UserId Utilità di pianificazione
+- Proprietà UserId Utilità di pianificazione , oggetto Principal
+- Proprietà UserId Utilità di pianificazione dell'oggetto Principal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6fce7fcfdf235ba8a83f262161c2e0f2afc71c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9501184f3316e464aa26f42d51e0b4c27eccaeb72d447faa91edaa33b0b4774c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060029"
 ---
-# <a name="principaluserid-property"></a>Proprietà Principal. UserId
+# <a name="principaluserid-property"></a>Principal.UserId - proprietà
 
-Per gli script, ottiene o imposta l'identificatore utente necessario per eseguire le attività associate all'entità.
+Per lo scripting, ottiene o imposta l'identificatore utente necessario per eseguire le attività associate all'entità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,9 +42,9 @@ Identificatore utente necessario per eseguire l'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Non impostare questa proprietà se nella proprietà [**GroupID**](principal-groupid.md) viene specificato un identificatore di gruppo.
+Non impostare questa proprietà se viene specificato un identificatore di gruppo nella [**proprietà GroupId.**](principal-groupid.md)
 
-Durante la lettura o la scrittura di codice XML per un'attività, l'identificatore utente per l'entità viene specificato utilizzando l'elemento [**userid**](taskschedulerschema-userid-principaltype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, l'identificatore utente per l'entità viene specificato usando [**l'elemento UserId**](taskschedulerschema-userid-principaltype-element.md) dello schema Utilità di pianificazione schema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, l'identificato
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -69,7 +69,7 @@ Durante la lettura o la scrittura di codice XML per un'attività, l'identificato
 [**Principale**](principal.md)
 </dt> <dt>
 
-[**Entità. GroupId**](principal-groupid.md)
+[**Principal.GroupId**](principal-groupid.md)
 </dt> </dl>
 
  

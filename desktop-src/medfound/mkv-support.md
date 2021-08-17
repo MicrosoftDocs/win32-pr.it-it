@@ -1,28 +1,28 @@
 ---
-description: Questa sezione descrive il supporto Media Foundation per i file MKV (Matroska Media Container).
+description: Questa sezione descrive il supporto Media Foundation per i file di Matroska Media Container (MKV).
 title: Supporto di Matroska Media Container (MKV)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd860f58087bc8a0f3fe95d278bfa81edc412d0
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: aceb7a836b4a0409af3c359c8d81a0f232e6eb61082960cfb2b0705531de199c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110154216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102141"
 ---
 # <a name="matroska-media-container-mkv-support"></a>Supporto di Matroska Media Container (MKV)
 
-Questa sezione descrive il supporto Media Foundation per i file MKV (Matroska Media Container).
+Questa sezione descrive il supporto Media Foundation per i file di Matroska Media Container (MKV).
 
-Il formato MKV può supportare più codec video e audio, ad esempio audio H.264 e AAC. In generale, i contenitori descrivono come vengono disposti i dati video e audio e quali informazioni supplementari vengono usate per descrivere i flussi A/V. I contenitori possono anche includere dati che integrano flussi A/V, ad esempio titolo, lingue dei flussi audio, tracce sottotitoli o sottotitoli, tipi di carattere per sottotitoli, immagini, informazioni sui capitoli e menu. MKV è un formato altamente flessibile che supporta molte di queste funzionalità del contenitore. Per altre informazioni sul formato MKV, vedere [https://matroska.org](https://matroska.org/)
+Il formato MKV può supportare più codec video e audio, ad esempio audio H.264 e AAC. In generale, i contenitori descrivono come vengono disposti i dati audio e video e quali informazioni supplementari vengono usate per descrivere tali flussi A/V. I contenitori possono anche includere dati che integrano flussi A/V, ad esempio titolo, lingue dei flussi audio, tracce di sottotitoli o sottotitoli, tipi di carattere per tali sottotitoli, immagini, informazioni sui capitoli e menu. MKV è un formato altamente flessibile che supporta molte di queste funzionalità del contenitore. Per altre informazioni sul formato MKV, vedere [https://matroska.org](https://matroska.org/)
 
 
-## <a name="mkv-container-feature-support"></a>Supporto della funzionalità contenitore MKV
-Le funzionalità del contenitore MKV sono supportate nel Media Foundation nei modi seguenti:
+## <a name="mkv-container-feature-support"></a>Supporto delle funzionalità dei contenitori MKV
+Le funzionalità del contenitore MKV sono supportate in Media Foundation nei modi seguenti:
 - Se sono presenti una o più tracce video, verrà riprodotta la prima traccia.
 - Se sono presenti una o più tracce audio, verrà riprodotta la prima traccia.
-- Le tracce dei sottotitoli sono supportate, ma non sono selezionate (riprodotte) per impostazione predefinita.
-- Se sono presenti uno o più tipi di carattere o immagini, il rendering di didascalie e immagini non verrà eseguito, anche se il file verrà caricato e riprodotto.
+- Le tracce didascalia sono supportate, ma non sono selezionate (riprodotte) per impostazione predefinita.
+- Se sono presenti uno o più tipi di carattere o immagini, non verrà eseguito il rendering di didascalie e immagini, anche se il file verrà caricato e riprodotto.
 - Le informazioni sul menu non sono supportate e non verranno visualizzate, ma il file verrà caricato e riprodotto.
 - Se i file con capitoli fanno riferimento a file supplementari, i file supplementari non verranno riprodotti.
 - Le immagini di anteprima sono disponibili quando si esplorano i file nelle unità USB usando il browser di file.
@@ -65,7 +65,7 @@ ID Matroska: V_MPEG4/ISO/ASP
 
 ID Matroska: V_MS/VFW/FOURCC
 
-- Descrizione: esegue il mapping a diversi codec in genere supportati nel formato AVI disponibili nella console.
+- Descrizione: Mappe a diversi codec in genere supportati nel formato AVI disponibili nella console.
 
 ID Matroska: V_THEORA
 
@@ -82,7 +82,7 @@ ID Matroska: V_MPEG4/ISO/SP
 ID Matroska: V_MPEG4/ISO/AP
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP4V
-- Descrizione: profilo semplice avanzato MPEG4 ISO (DivX5, XviD, FFMPEG)
+- Descrizione: profilo semplice avanzato ISO MPEG4 (DivX5, MigrazioniD, FFMPEG)
 - Identificatori FourCC o WAV: MP4V
 
 
@@ -90,7 +90,7 @@ ID Matroska: V_MPEGH/ISO/HEVC
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_HEVC
 - Descrizione: HEVC/H.265
-- Identificatori FourCC o WAV: 
+- Quattro identificatori CC o WAV: 
 
 ID Matroska: V_VP8
 
@@ -145,26 +145,26 @@ ID Matroska: A_MPEG/L1
 ID Matroska: A_PCM/INT/BIG
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_PCM
-- Descrizione: Audio PCM non compresso
+- Descrizione: audio PCM non compresso
 - Identificatori FourCC o WAV: WAVE_FORMAT_PCM
 
 ID Matroska: A_PCM/INT/LIT
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_PCM
-- Descrizione: Audio PCM non compresso
+- Descrizione: audio PCM non compresso
 - Identificatori FourCC o WAV: WAVE_FORMAT_PCM
 
 ID Matroska: A_PCM/FLOAT/IEEE
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Float
-- Descrizione: audio a virgola mobile IEEE non compresso
+- Descrizione: Audio a virgola mobile IEEE non compresso
 - Identificatori FourCC o WAV: WAVE_FORMAT_IEEE_FLOAT
 
 ID Matroska: A_ALAC
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_ALAC
-- Descrizione: Codec audio apple senza perdita di dati
-- Quattro identificatori CC o WAV: 
+- Descrizione: Codec audio senza perdita di Apple
+- Identificatori FourCC o WAV: 
 
 ID Matroska: A_MPEG/L2
 
@@ -175,7 +175,7 @@ ID Matroska: A_MPEG/L2
 ID Matroska: A_DTS
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MEDIASUBTYPE_DTS_HD
-- Descrizione: Digital Digital Esere System
+- Descrizione: Digital Theater System
 - Identificatori FourCC o WAV: WAVE_FORMAT_DTS
 
 ID Matroska: A_OPUS
@@ -205,7 +205,7 @@ ID Matroska: A_AAC/MAIN
 ID Matroska: A_EAC3
 
 - MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Dolby_DDPlus
-- Descrizione: Ac-3 avanzato
+- Descrizione: Ac-3 migliorato
 - Identificatori FourCC o WAV: 
 
 ID Matroska: A_TRUEHD
@@ -216,10 +216,10 @@ ID Matroska: A_TRUEHD
 
 ID Matroska: A_MS/ACM
 
-- MSFT Media Foundation MF_MT_SUBTYPE: esegue il mapping a WAVE_FORMAT tipi audio definiti in mmreg.h
+- MSFT Media Foundation MF_MT_SUBTYPE: Mappe a diversi WAVE_FORMAT audio definiti in mmreg.h
 
 
-### <a name="subtitles-codec-support-for-mkv"></a>Supporto del codec sottotitoli per MKV
+### <a name="subtitles-codec-support-for-mkv"></a>Supporto dei codec sottotitoli per MKV
 
 ID Matroska: S_TEXT/ASCII
 
@@ -268,7 +268,7 @@ Per informazioni tecniche sui codec, vedere quanto segue.
 [Formati multimediali supportati in Media Foundation](supported-media-formats-in-media-foundation.md)
 </dt> <dt>
 
-[Media Foundation guida per programmatori](media-foundation-programming-guide.md)
+[Media Foundation di programmazione](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

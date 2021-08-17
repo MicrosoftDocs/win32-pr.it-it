@@ -1,19 +1,19 @@
 ---
-description: Costanti nome delle impostazioni locali \_ \*
+description: Costanti \_ LOCALE NAME \*
 ms.assetid: 63e2e368-af2f-4af0-bbea-2b27d1939394
-title: Costanti LOCALE_NAME *
+title: LOCALE_NAME* Costanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aaaba8665c729a047be6a7e3a3d6b3239c81af7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f0c9c7afc7b03cd085a4121b61064f7cabb199534e41f98748a56682ab27817
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147394"
 ---
-# <a name="locale_name-constants"></a>Costanti nome delle impostazioni locali \_ \*
+# <a name="locale_name-constants"></a>Costanti \_ LOCALE NAME \*
 
-Questo argomento definisce le costanti del nome delle impostazioni locali \_ \* usate da NLS.
+Questo argomento definisce le costanti LOCALE \_ NAME \* usate da NLS.
 
 
 
@@ -31,14 +31,14 @@ Questo argomento definisce le costanti del nome delle impostazioni locali \_ \* 
 <tbody>
 <tr class="odd">
 <td>LOCALE_NAME_INVARIANT</td>
-<td>Nome di impostazioni locali invariabili che forniscono dati locali e di calendario stabili.</td>
+<td>Nome di un'impostazione locale invariante che fornisce impostazioni locali stabili e dati del calendario.</td>
 </tr>
 <tr class="even">
 <td>LOCALE_NAME_MAX_LENGTH</td>
-<td>Lunghezza massima del nome delle impostazioni locali. Il numero massimo di caratteri consentiti per questa stringa è 85, incluso un carattere di terminazione null.
+<td>Lunghezza massima di un nome delle impostazioni locali. Il numero massimo di caratteri consentiti per questa stringa è 85, incluso un carattere Null di terminazione.
 <blockquote>
 [!Note]<br />
-L'applicazione deve usare la costante per la lunghezza massima del nome delle impostazioni locali, anziché impostare come hardcoded il valore &quot; 85 &quot; .
+L'applicazione deve usare la costante per la lunghezza massima del nome delle impostazioni locali, anziché impostare come hard-coding il valore &quot; 85 &quot; .
 </blockquote>
 <br/></td>
 </tr>
@@ -48,7 +48,7 @@ L'applicazione deve usare la costante per la lunghezza massima del nome delle im
 </tr>
 <tr class="even">
 <td>LOCALE_NAME_USER_DEFAULT</td>
-<td>Nome delle impostazioni locali dell'utente correnti, che corrispondono al set di preferenze nella parte opzioni internazionali e della lingua del pannello di controllo. Le impostazioni locali possono essere diverse dalle impostazioni locali per la lingua dell'interfaccia utente corrente.</td>
+<td>Nome delle impostazioni locali dell'utente correnti, corrispondenti alla preferenza impostata nella parte delle opzioni internazionali e della lingua Pannello di controllo. Queste impostazioni locali possono essere diverse dalle impostazioni locali per la lingua dell'interfaccia utente corrente.</td>
 </tr>
 </tbody>
 </table>

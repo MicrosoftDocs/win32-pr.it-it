@@ -1,5 +1,5 @@
 ---
-title: Proprietà IVMAccountant DiskBytesRead (VPCCOMInterfaces. h)
+title: Proprietà IVMAccountant DiskBytesRead (VPCCOMInterfaces.h)
 description: Numero totale di byte letti da tutti i controller di archiviazione per questa macchina virtuale.
 ms.assetid: cf2c1a58-2261-496d-b8e2-a0d5285c16ab
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2dec370a9669ee5f43ae67f8d47c153c342a53d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e8c9513517250614da812f9c1d602a2a92b9dce1d7bc0c2b25db100016a5084
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473871"
 ---
-# <a name="ivmaccountantdiskbytesread-property"></a>IVMAccountant::D Proprietà iskBytesRead
+# <a name="ivmaccountantdiskbytesread-property"></a>Proprietà IVMAccountant::D iskBytesRead
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera il numero totale di byte letti da tutti i controller di archiviazione per questa macchina virtuale.
 
@@ -45,7 +45,7 @@ HRESULT get_DiskBytesRead(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Numero totale di byte. Questi dati vengono restituiti come **Variant** di tipo **\_ decimale VT**.
+Numero totale di byte. Questi dati vengono restituiti come **VARIANT di** tipo **VT \_ DECIMAL.**
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,15 +54,15 @@ Numero totale di byte. Questi dati vengono restituiti come **Variant** di tipo *
 | Nome/valore                                                                                                                                                    | Significato                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>       |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>          |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>          |
 | <dl> <dt>S \_ FALSE</dt> <dt>1</dt> </dl>                    | La macchina virtuale non è in esecuzione.<br/> |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/>   |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>   |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che le statistiche di I/O su disco vengono reimpostate su zero quando una macchina virtuale viene accesa, reimpostata o ripristinata dallo stato salvato.
+Si noti che le statistiche di I/O su disco vengono reimpostate su zero quando una macchina virtuale viene spenta, reimpostata o ripristinata dallo stato salvato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,12 +70,12 @@ Si noti che le statistiche di I/O su disco vengono reimpostate su zero quando un
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMAccountant è definito come 6376c067-7f57-4D63-b754-06e2e4f51d73<br/>              |
+| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMAccountant è definito come \_ 6376c067-7f57-4d63-b754-06e2e4f51d73<br/>              |
 
 
 

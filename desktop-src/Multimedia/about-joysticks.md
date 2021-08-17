@@ -1,33 +1,33 @@
 ---
-title: Informazioni sui joystick
-description: Informazioni sui joystick
+title: Informazioni sui levetti
+description: Informazioni sui levetti
 ms.assetid: 0cfff45b-48d4-4e0c-addf-e131d3a31187
 keywords:
-- Multimedia di Windows, joystick
-- Multimedia, joystick
-- input multimediale, joystick
-- joystick, informazioni
-- joystick, spostamento a due assi
-- joystick, spostamento a tre assi
-- joystick, pulsanti
+- Windows multimediali, levette
+- multimediali, levette
+- input multimediale, levette
+- sticks, about
+- grissini, spostamento a due assi
+- grissini, spostamento a tre assi
+- tasti di scelta, pulsanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21a5b2c890e64e397887d89eb5d632b6c4b63689
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 465aacd077dfb8e0a08973bf7b4b0de9aaccdb1e86f983d5e2cb9287c51e79e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065681"
 ---
-# <a name="about-joysticks"></a>Informazioni sui joystick
+# <a name="about-joysticks"></a>Informazioni sui levetti
 
-Il joystick è un dispositivo di input ausiliario per le applicazioni che forniscono alternative all'uso della tastiera e del mouse. Il joystick fornisce informazioni posizionali all'interno di un sistema di coordinate con valori massimi e minimi assoluti in ogni asse dello spostamento.
+Il levetto è un dispositivo di input accessorio per le applicazioni che offrono alternative all'uso della tastiera e del mouse. Il levetto fornisce informazioni sulla posizione all'interno di un sistema di coordinate con valori massimi e minimi assoluti in ogni asse di spostamento.
 
-I servizi joystick vengono caricati all'avvio del sistema operativo. I servizi joystick possono monitorare contemporaneamente due joystick, ognuno con un movimento di due o tre assi. Ogni joystick può avere fino a quattro pulsanti. È possibile usare le funzioni del joystick per determinare le funzionalità dei joystick e del driver del joystick. È inoltre possibile elaborare le informazioni posizionali e dei pulsanti di un joystick eseguendo direttamente una query sul joystick oppure acquisendo il joystick ed elaborando i messaggi. Il secondo metodo è più semplice perché l'applicazione non deve eseguire manualmente query sul joystick o tenere traccia del tempo necessario per generare query a intervalli regolari.
+I servizi a levetta vengono caricati all'avvio del sistema operativo. I servizi a levetta possono monitorare contemporaneamente due levette, ognuna con un movimento a due o tre assi. Ogni levetta può avere fino a quattro pulsanti. È possibile usare le funzioni a levetta per determinare le funzionalità dei levette e del driver a levetta. Inoltre, è possibile elaborare le informazioni sulla posizione e sul pulsante di un levetta tramite query direttamente o acquisendo il levetta ed elaborando i messaggi da esso. Quest'ultimo metodo è più semplice perché l'applicazione non deve eseguire manualmente una query sulstick o tenere traccia del tempo necessario per generare query a intervalli regolari.
 
- 
+ 
 
- 
+ 
 
 
 

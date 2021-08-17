@@ -1,50 +1,50 @@
 ---
-title: Attributo StrokeOK di la
-description: Attributo StrokeOK di la
+title: Attributo StrokeOK di VML
+description: Attributo StrokeOK di VML
 ms.assetid: f150f87b-1ed9-4c53-bf7f-ebe1e81642fd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7a2875e3e6e8374238340ff2a596852e5ebce7c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5051f3a2d5e7ac8e4d509d8b8f65182f86799db41bbd8a4d71741961c3a1e406
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475221"
 ---
-# <a name="vml-strokeok-attribute"></a>Attributo StrokeOK di la
+# <a name="vml-strokeok-attribute"></a>Attributo StrokeOK di VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se un tratto verrà visualizzato. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se verrà visualizzato un tratto. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* strokeok = " *Expression* " >
+<v: *elemento* strokeok=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . strokeok = "*Expression*"
+*element* .strokeok="*expression*"
 
-*espressione* = *elemento*. strokeok
+*expression* = *elemento*.strokeok
 
 **Osservazioni:**
 
-Se **false**, non è possibile tracciare il percorso. Il valore predefinito è **True**. Questo attributo esegue l'override di tutti gli altri attributi Stroke nell'elemento padre o **Stroke** .
+Se **False,** il percorso non può essere tracciato. Il valore predefinito è **True**. Questo attributo esegue l'override di tutti gli altri attributi del tratto nell'elemento padre o **Stroke.**
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Il percorso non verrà tracciato.
+Il tracciato non verrà tracciato.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Il percorso non verrà tracciato.
 
 
 
- 
+ 
 
- 
+ 

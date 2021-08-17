@@ -4,8 +4,8 @@ description: Per lo scripting, ottiene o imposta i mesi dell'anno durante i qual
 ms.assetid: cf26a815-7f4f-4b7a-8db8-a4bd9b77cf49
 keywords:
 - Proprietà MonthsOfYear Utilità di pianificazione
-- Proprietà MonthsOfYear Utilità di pianificazione , oggetto MonthlyTrigger
-- Oggetto MonthlyTrigger Utilità di pianificazione proprietà , MonthsOfYear
+- Proprietà MonthsOfYear Utilità di pianificazione, oggetto MonthlyTrigger
+- Proprietà MonthlyTrigger Utilità di pianificazione , MonthsOfYear
 topic_type:
 - apiref
 api_name:
@@ -65,7 +65,7 @@ Nella tabella seguente viene illustrato il mapping della maschera bit per bit ut
 
  
 
-Durante la lettura o la scrittura di codice XML personalizzato per un'attività, i mesi dell'anno vengono specificati usando l'elemento [**Months**](taskschedulerschema-months-monthlyscheduletype-element.md) dello schema Utilità di pianificazione dati.
+Durante la lettura o la scrittura di codice XML personalizzato per un'attività, i mesi dell'anno vengono specificati usando l'elemento [**Months**](taskschedulerschema-months-monthlyscheduletype-element.md) Utilità di pianificazione schema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Durante la lettura o la scrittura di codice XML personalizzato per un'attività,
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

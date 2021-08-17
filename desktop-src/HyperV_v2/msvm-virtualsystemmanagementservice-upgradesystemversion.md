@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4c34b33da14d8718f2c2414de3aea3079672bbb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64146c146bfd2c05d96e11d5193e246c76a6d1eb247d240b712cb46367a698c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148014"
 ---
-# <a name="upgradesystemversion-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo UpgradeSystemVersion della classe MSVM \_ VirtualSystemManagementService
+# <a name="upgradesystemversion-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo UpgradeSystemVersion della classe Msvm \_ VirtualSystemManagementService
 
 Aggiorna il sistema virtuale.
 
-Quando applicato alle impostazioni di sistema di una configurazione di sistema virtuale "corrente"
+Se applicato alle impostazioni di sistema di una configurazione del sistema virtuale "corrente"
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,21 +43,21 @@ uint32 UpgradeSystemVersion(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un [**\_ ComputerSystem CIM**](cim-computersystem.md) che rappresenta il sistema di computer virtuale da aggiornare.
+Riferimento a un [**\_ ComputerSystem CIM**](cim-computersystem.md) che rappresenta il sistema di computer virtuali da aggiornare.
 
 </dd> <dt>
 
-*UpgradeSettingData* \[ in\]
+*UpgradeSettingData* \[ Pollici\]
 </dt> <dd>
 
-Dati dell'impostazione dell'aggiornamento.
+Dati delle impostazioni di aggiornamento.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -66,7 +66,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce un valore 0 o 4096. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -76,13 +76,13 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -94,13 +94,13 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -109,10 +109,10 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,7 +121,7 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

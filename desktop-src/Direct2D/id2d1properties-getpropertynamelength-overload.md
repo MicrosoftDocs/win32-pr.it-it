@@ -1,9 +1,9 @@
 ---
-title: Metodi GetPropertyNameLength di ID2D1Properties
-description: Ottiene il numero di caratteri per il nome di proprietà specificato.
+title: Metodi ID2D1Properties GetPropertyNameLength
+description: Ottiene il numero di caratteri per il nome della proprietà specificato.
 ms.assetid: EA0B4C07-AD15-42C3-9300-26E51E310420
 keywords:
-- Metodi di overload GetPropertyNameLength metodi Direct2D
+- Metodi di overload GetPropertyNameLength Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 4465c2aa1f05ff2da3c2fb007f9b345a82ed3c24
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 00d7e7bf726219a80fa3d72ef0a539a917899a6fb4e6ed7f98487315becb7f9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342711"
 ---
-# <a name="id2d1propertiesgetpropertynamelength-methods"></a>Metodi ID2D1Properties:: GetPropertyNameLength
+# <a name="id2d1propertiesgetpropertynamelength-methods"></a>Metodi ID2D1Properties::GetPropertyNameLength
 
-Ottiene il numero di caratteri per il nome di proprietà specificato.
+Ottiene il numero di caratteri per il nome della proprietà specificato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Ottiene il numero di caratteri per il nome di proprietà specificato.
 
 | Metodo                                                                         | Descrizione                                                                                        |
 |:-------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**GetPropertyNameLength (U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(u))     | Ottiene il numero di caratteri per il nome di proprietà specificato. Si tratta di un overload del modello.<br/> |
-| [**GetPropertyNameLength (UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(uint32)) | Ottiene il numero di caratteri per il nome di proprietà specificato.<br/>                              |
+| [**GetPropertyNameLength(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(u))     | Ottiene il numero di caratteri per il nome della proprietà specificato. Si tratta di un overload del modello.<br/> |
+| [**GetPropertyNameLength(UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(uint32)) | Ottiene il numero di caratteri per il nome della proprietà specificato.<br/>                              |
 
 
 

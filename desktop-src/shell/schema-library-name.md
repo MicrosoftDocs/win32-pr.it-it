@@ -1,19 +1,19 @@
 ---
-description: L' <name> elemento specifica il nome della libreria. Questo elemento è obbligatorio e non dispone di attributi o elementi figlio.
+description: <name>L'elemento specifica il nome di questa libreria. Questo elemento è obbligatorio e non ha attributi o elementi figlio.
 ms.assetid: 1F433405-5943-4579-BDAD-423C4E1A6E76
-title: Elemento Name (schema della libreria)
+title: Elemento name (schema di libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54d38baa32587ee04c62c8c3086d5353e8eed9e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 179d8b4a1f4358ccb441cc38c6c0765a6dc4d9ade8b3c32a1504be2151cfedaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883941"
 ---
-# <a name="name-element-library-schema"></a>Elemento Name (schema della libreria)
+# <a name="name-element-library-schema"></a>Elemento name (schema di libreria)
 
-L' <name> elemento specifica il nome della libreria. Questo elemento è obbligatorio e non dispone di attributi o elementi figlio.
+<name>L'elemento specifica il nome di questa libreria. Questo elemento è obbligatorio e non ha attributi o elementi figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ L' <name> elemento specifica il nome della libreria. Questo elemento è obbligat
 
 ## <a name="remarks"></a>Commenti
 
-Il nome è il nome descrittivo della libreria visualizzato in Esplora risorse. Il nome può essere specificato in un <dllname> <index> formato, come nell'esempio seguente.
+Il nome è il nome descrittivo della libreria visualizzato in Windows Explorer. Il nome può essere specificato in un formato <dllname> <index> , come nell'esempio seguente.
 
 
 ```
@@ -61,7 +61,7 @@ Il nome è il nome descrittivo della libreria visualizzato in Esplora risorse. I
 [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](../search/search-sconn-desc-schema-entry.md)
+[Schema di descrizione del connettore di ricerca](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

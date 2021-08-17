@@ -1,5 +1,5 @@
 ---
-description: "Metodo IShellDispatch3.AddToRecent: aggiunge un file all'elenco degli elementi usati più di recente."
+description: "Metodo IShellDispatch3.AddToRecent: aggiunge un file all'elenco degli ultimi elementi usati."
 ms.assetid: aa5aef31-7f3f-4cc4-949d-1484de243ef3
 title: Metodo IShellDispatch3.AddToRecent (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8d31d05e9eef889d9018e4806cf4c882dba3060e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8f5507755a6929cee9811f1f935e93b347aed9ebe57f2e0237365cdfbbf4b109
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090321"
 ---
 # <a name="ishelldispatch3addtorecent-method"></a>Metodo IShellDispatch3.AddToRecent
 
-Aggiunge un file all'elenco degli elementi usati più di recente.
+Aggiunge un file all'elenco MRU (Most Recently Used).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,11 +54,11 @@ IShellDispatch3.AddToRecent( _
 *varFile* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Valore **String** contenente il percorso del file da aggiungere all'elenco dei documenti usati di recente.
+Valore **String** che contiene il percorso del file da aggiungere all'elenco di documenti usati di recente.
 
-**Windows Vista:** impostare questo parametro su **null per** cancellare la cartella dei documenti recenti.
+**Windows Vista:** impostare questo parametro su **Null per** cancellare la cartella documenti recenti.
 
 </dd> <dt>
 
@@ -83,9 +83,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di AddToRecent** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **AddToRecent** per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -180,8 +180,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni su un processore.
 ms.assetid: fa8c533c-3a54-4eb5-893f-649dfd8b4609
-title: Struttura PROCESSOR_POWER_INFORMATION
+title: PROCESSOR_POWER_INFORMATION struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 500a346080d7bf0c44d392a63a71310db74225a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bdb6a3bb8ae5b768c42609817c76934c203989ba6dea665fc6cc0a6896659de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143334"
 ---
-# <a name="processor_power_information-structure"></a>\_ \_ Struttura delle informazioni sul risparmio di energia del processore
+# <a name="processor_power_information-structure"></a>Struttura DELLE \_ INFORMAZIONI \_ SULL'ALIMENTAZIONE DEL PROCESSORE
 
 Contiene informazioni su un processore.
 
@@ -46,7 +46,7 @@ typedef struct _PROCESSOR_POWER_INFORMATION {
 **Number**
 </dt> <dd>
 
-Numero di processori del sistema.
+Numero del processore di sistema.
 
 </dd> <dt>
 
@@ -60,14 +60,14 @@ Frequenza di clock massima specificata del processore di sistema, in megahertz.
 **CurrentMhz**
 </dt> <dd>
 
-Frequenza di clock del processore, in megahertz. Questo numero è la frequenza di clock del processore massima specificata moltiplicata per la limitazione del processore corrente.
+Frequenza del clock del processore, in megahertz. Questo numero è la frequenza di clock massima specificata del processore moltiplicata per la limitazione del processore corrente.
 
 </dd> <dt>
 
 **MhzLimit**
 </dt> <dd>
 
-Limite sulla frequenza di clock del processore, in megahertz. Questo numero è la frequenza di clock del processore massima specificata moltiplicata per il limite di limitazione termica del processore corrente.
+Limite di frequenza del clock del processore, in megahertz. Questo numero è la frequenza di clock massima specificata del processore moltiplicata per il limite di velocità termica del processore corrente.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Stato di inattività corrente del processore.
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questa definizione di struttura è stata accidentalmente omessa da WinNT. h. Questo errore verrà corretto in futuro. Nel frattempo, per compilare l'applicazione, includere la definizione della struttura contenuta in questo argomento nel codice sorgente.
+Si noti che questa definizione di struttura è stata accidentalmente omessa da WinNT.h. Questo errore verrà corretto in futuro. Nel frattempo, per compilare l'applicazione, includere la definizione della struttura contenuta in questo argomento nel codice sorgente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Si noti che questa definizione di struttura è stata accidentalmente omessa da W
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

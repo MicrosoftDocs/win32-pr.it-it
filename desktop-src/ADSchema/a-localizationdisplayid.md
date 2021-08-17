@@ -1,10 +1,10 @@
 ---
-title: Localizzazione-attributo display-ID
-description: Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName localizzato per gli oggetti per finalità dell'interfaccia utente.
+title: Attributo Localization-Display-Id
+description: Usato per indicizzare nel file Extrts.mc per ottenere il displayName localizzato per gli oggetti ai fini dell'interfaccia utente.
 ms.assetid: ed99d499-0064-4832-81ad-75fb3c8c548d
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo Localization-display-ID
+- Schema AD dell'attributo Localization-Display-Id
 - Schema AD dell'attributo localizationDisplayId
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4d9453b04bd5c944784b68ff5e4442f00bf65f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 995a51d1d07409aa7b284e23d0ce72f182482a6a78e7dda4b89d2ed5113b33e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301881"
 ---
-# <a name="localization-display-id-attribute"></a>Localizzazione-attributo display-ID
+# <a name="localization-display-id-attribute"></a>Attributo Localization-Display-Id
 
-Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName localizzato per gli oggetti per finalità dell'interfaccia utente.
+Usato per indicizzare nel file Extrts.mc per ottenere il displayName localizzato per gli oggetti ai fini dell'interfaccia utente.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Localization-display-ID              |
-| LDAP-Display-Name | localizationDisplayId                |
+| CN                | Localization-Display-ID              |
+| Ldap-Display-Name | localizationDisplayId                |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Amministratore schema                 |
+| Privilegio di aggiornamento  | Amministratore dello schema                 |
 | Frequenza di aggiornamento  | Un ID non deve mai essere modificato.       |
 | Attribute-Id      | 1.2.840.113556.1.4.1353              |
-| System-ID-GUID    | a746f0d1-78d0-11d2-9916-0000f87a57d4 |
+| System-Id-Guid    | a746f0d1-78d0-11d2-9916-0000f87a57d4 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Utilizzato per indicizzare nel file Extrts.mc per ottenere il displayName locali
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 

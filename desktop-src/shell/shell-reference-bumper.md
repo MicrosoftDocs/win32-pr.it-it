@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b3b9ab1fa1b9e2568c4c731ce89599654eec3158
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18a80060bc935ac1671f0a10de87c56506587cfb70ec63f57a09683446b8aee7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090151"
 ---
 # <a name="shell-reference"></a>Informazioni di riferimento sulla shell
 
@@ -23,7 +23,7 @@ ms.locfileid: "108104169"
 -   [Funzioni shell](functions.md)
 -   [Funzioni di callback della shell](callbacks.md)
 -   [Costanti, enumerazioni e flag della shell](consts-enums-flags.md)
--   [Funzioni di utilità shell Lightweight](shlwapi.md)
+-   [Funzioni dell'utilità Shell Lightweight](shlwapi.md)
 -   [Macro della shell](macros.md)
 -   [Messaggi e notifiche della shell](messages.md)
 -   [Oggetti shell per script e Microsoft Visual Basic](objects.md)

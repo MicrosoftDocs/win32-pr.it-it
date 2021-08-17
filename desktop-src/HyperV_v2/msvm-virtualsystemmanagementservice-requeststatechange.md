@@ -1,5 +1,5 @@
 ---
-description: 'Metodo RequestStateChange della classe Msvm_VirtualSystemManagementService : richiede una modifica dello stato.'
+description: 'Metodo RequestStateChange della classe Msvm_VirtualSystemManagementService: richiede una modifica dello stato.'
 ms.assetid: 3dafc143-4033-4137-9e90-2965c59d9a79
 title: Metodo RequestStateChange della classe Msvm_VirtualSystemManagementService
 ms.topic: reference

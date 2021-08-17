@@ -1,9 +1,9 @@
 ---
-title: Funzione GetRequiredIntermediateSize (D3dx12. h)
+title: Funzione GetRequiredIntermediateSize (D3dx12.h)
 description: Restituisce le dimensioni richieste di un buffer da utilizzare per il caricamento dei dati.
 ms.assetid: 424B52E9-DE52-40D2-B8B0-C27FD3D3C298
 keywords:
-- GetRequiredIntermediateSize (funzione)
+- Funzione GetRequiredIntermediateSize
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15293ce1588704d55f41c364c35db57cbf4c869d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e2f6fe927d49bb50d6bdea2889d946c5d9c60b1b703299c2717b881afe1aa7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124179"
 ---
-# <a name="getrequiredintermediatesize-function"></a>GetRequiredIntermediateSize (funzione)
+# <a name="getrequiredintermediatesize-function"></a>Funzione GetRequiredIntermediateSize
 
 Restituisce le dimensioni richieste di un buffer da utilizzare per il caricamento dei dati.
 
@@ -43,36 +43,36 @@ UINT64 inline GetRequiredIntermediateSize(
 
 <dl> <dt>
 
-*pDestinationResource* \[ in\]
+*pDestinationResource* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)\***
 
-Puntatore all'interfaccia [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) che rappresenta la risorsa di destinazione.
+Puntatore [**all'interfaccia ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) che rappresenta la risorsa di destinazione.
 
 </dd> <dt>
 
-*FirstSubresource* \[ in\]
+*FirstSubresource* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice della prima sottorisorsa nella risorsa. L'intervallo di valori validi è compreso tra 0 e D3D12 le \_ \_ sottorisorse di req.
+Indice della prima sottorisorsa nella risorsa. L'intervallo di valori validi è compreso tra 0 e D3D12 \_ REQ \_ SUBRESOURCES.
 
 </dd> <dt>
 
-*NumSubresources* \[ in\]
+*NumSubresources* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Numero di sottorisorse nella risorsa. L'intervallo di valori validi è compreso tra 0 e (D3D12 \_ req Resources \_ - *FirstSubresource*).
+Numero di sottorisorse nella risorsa. L'intervallo di valori validi è compreso tra 0 e (D3D12 \_ REQ \_ SUBRESOURCES - *FirstSubresource).*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **UInt64**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT64**](/windows/desktop/WinProg/windows-data-types)**
 
 Dimensioni del buffer, in byte.
 
@@ -82,8 +82,8 @@ Dimensioni del buffer, in byte.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

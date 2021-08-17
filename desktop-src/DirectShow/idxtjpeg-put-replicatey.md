@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put replicate specifica il numero di volte in cui il modello di cancellazione viene replicato verticalmente.
+description: Il metodo put ReplicateY specifica il numero di volte in cui \_ il modello di cancellazione viene replicato verticalmente.
 ms.assetid: f27e0d54-1d0f-42fe-9638-39f68b97f9c7
-title: 'IDxtJpeg: metodo:p ut_ReplicateY (qedit. h)'
+title: Metodo IDxtJpeg::p ut_ReplicateY (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1ac5016635cb8e6f5b81b99f1ea67f0282878d8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03c7f35ca5b12817045b537d45cc1abe71f3e8d5136b1db4ee7b46884ad5a568
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316281"
 ---
-# <a name="idxtjpegput_replicatey-method"></a>IDxtJpeg: metodo di \_ replica ut:p
+# <a name="idxtjpegput_replicatey-method"></a>Metodo ReplicateY IDxtJpeg::p ut \_
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -45,26 +45,26 @@ HRESULT put_ReplicateY(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
-Il numero di volte in cui il modello di cancellazione viene replicato verticalmente.
+Numero di volte in cui il modello di cancellazione viene replicato verticalmente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Informazioni sulla gestione dei server DNS. Un server DNS è un com
 ms.assetid: 9ac68e35-112a-44d3-918d-2caea47b6e52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d797e05bc326b35e48173082d9b36a2b334fd9
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: ccce0b6c4a292e2fe46ec8584a601deee9267d2c5f1bfdeebaefa05db630f437
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433381"
 ---
 # <a name="managing-dns-servers"></a>Gestione dei server DNS
 

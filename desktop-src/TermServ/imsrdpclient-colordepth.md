@@ -1,30 +1,30 @@
 ---
-title: Proprietà ColorDepth di IMsRdpClient
-description: Profondità di colore (in bit per pixel) per la connessione del controllo.
+title: Proprietà IMsRdpClient ColorDepth
+description: Profondità del colore (in bit per pixel) per la connessione del controllo.
 ms.assetid: 9ba4d8fe-20cd-40e9-a71a-0dce0ddd29fc
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà ColorDepth
-- Servizi Desktop remoto proprietà ColorDepth, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà ColorDepth
+- Proprietà ColorDepth Servizi Desktop remoto , interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto , proprietà ColorDepth
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5099deff3913d23173a466245cbf08fd5b95a6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 995509385cabc18a7768300e29482b00f674ce347463b0b8aeb2c3af7e6a209b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475751"
 ---
-# <a name="imsrdpclientcolordepth-property"></a>Proprietà IMsRdpClient:: ColorDepth
+# <a name="imsrdpclientcolordepth-property"></a>Proprietà IMsRdpClient::ColorDepth
 
-Profondità di colore (in bit per pixel) per la connessione del controllo.
+Profondità del colore (in bit per pixel) per la connessione del controllo.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,13 +98,13 @@ Profondità del colore. I valori includono 8, 15, 16, 24 e 32 bit per pixel.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se i metodi hanno esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se i metodi hanno esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata quando il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,7 +116,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient è definito come 92b4a539-7115-4B7C-a5a9-e5d9efc2780a<br/>        |
+| IID<br/>                      | IMsRdpClient IID è definito come \_ 92b4a539-7115-4b7c-a5a9-e5d9efc2780a<br/>        |
 
 
 

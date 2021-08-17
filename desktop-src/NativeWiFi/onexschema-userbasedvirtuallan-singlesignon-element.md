@@ -1,5 +1,5 @@
 ---
-description: Specifica se la LAN virtuale (VLAN) usata dal dispositivo viene modificata in base alle credenziali dell'utente.
+description: Specifica se la LAN virtuale (VLAN) usata dal dispositivo cambia in base alle credenziali dell'utente.
 ms.assetid: 4ac92954-adb2-4b0c-9c4e-81f772ea03ed
 title: Elemento userBasedVirtualLan (singleSignOn)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6ef421e35f7fa121c31e58cfeba4eee969a1b6fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9272f61e7efeaf90ba68b1577af9b0062e507984372f7f09ebdbfc15e4ac6fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064971"
 ---
 # <a name="userbasedvirtuallan-singlesignon-element"></a>Elemento userBasedVirtualLan (singleSignOn)
 
-L'elemento userBasedVirtualLan (singleSignOn) specifica se la LAN virtuale (VLAN) usata dal dispositivo viene modificata in base alle credenziali dell'utente. Alcuni dispositivi NAS (Network Access Server) modificano la VLAN dopo l'autenticazione dell'utente. Quando userBasedVirtualLan è TRUE, il NAS può modificare la VLAN di un dispositivo dopo l'autenticazione dell'utente.
+L'elemento userBasedVirtualLan (singleSignOn) specifica se la LAN virtuale (VLAN) usata dal dispositivo cambia in base alle credenziali dell'utente. Alcuni dispositivi nas (Network Access Server) modificano la VLAN dopo l'autenticazione di un utente. Quando userBasedVirtualLan è TRUE, il NAS può modificare la VLAN di un dispositivo dopo l'autenticazione di un utente.
 
-Questo elemento è facoltativo. Quando userBasedVirtualLan non viene specificato in un profilo, viene usato il valore FALSE.
+Questo elemento è facoltativo. Quando userBasedVirtualLan non è specificato in un profilo, viene usato il valore FALSE.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -34,11 +34,11 @@ Questo elemento è facoltativo. Quando userBasedVirtualLan non viene specificato
  />
 ```
 
-L'elemento **userBasedVirtualLan** è definito dall'elemento [**singleSignOn**](onexschema-singlesignon-onex-element.md) .
+**L'elemento userBasedVirtualLan** è definito dall'elemento [**singleSignOn.**](onexschema-singlesignon-onex-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo parametro può essere impostato dalla riga di comando tramite il comando **netsh wlan set profileparameter** . Per ulteriori informazioni, vedere [comandi Netsh per WLAN (wireless local area network)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10)).
+Questo parametro può essere impostato dalla riga di comando usando il **comando netsh wlan set profileparameter.** Per altre informazioni, vedere [Comandi Netsh per la rete locale wireless (wlan).](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Questo parametro può essere impostato dalla riga di comando tramite il comando 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

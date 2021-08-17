@@ -1,12 +1,12 @@
 ---
-title: Metodo ReinstallOpenPurchaseLicenseKeyPack della classe Win32_TSLicenseKeyPack
-description: Reinstalla un Key Pack per licenze Open License Servizi Desktop remoto.
+title: Metodo ReinstallOpenPurchaseLicenseKeyPack Win32_TSLicenseKeyPack classe
+description: Reinstalla un Key Pack Servizi Desktop remoto licenza Open License.
 ms.assetid: 3E70711E-284A-466E-A733-1219F5E0B741
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo ReinstallOpenPurchaseLicenseKeyPack
-- Metodo ReinstallOpenPurchaseLicenseKeyPack Servizi Desktop remoto, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Servizi Desktop remoto, metodo ReinstallOpenPurchaseLicenseKeyPack
+- Metodo ReinstallOpenPurchaseLicenseKeyPack Servizi Desktop remoto
+- Metodo ReinstallOpenPurchaseLicenseKeyPack Servizi Desktop remoto , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Servizi Desktop remoto , metodo ReinstallOpenPurchaseLicenseKeyPack
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1eae765b74feed98760ef30c2b89a1090c4200
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6519e6eedc187b6db2ee93a776843b0f305430df7ae55e4356ebce4de5ad31d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137824"
 ---
-# <a name="reinstallopenpurchaselicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo ReinstallOpenPurchaseLicenseKeyPack della \_ classe TSLicenseKeyPack Win32
+# <a name="reinstallopenpurchaselicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo ReinstallOpenPurchaseLicenseKeyPack della classe \_ Win32 TSLicenseKeyPack
 
-Reinstalla un Key Pack per licenze Open License Servizi Desktop remoto.
+Reinstalla un Key Pack Servizi Desktop remoto licenza Open License.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ uint32 ReinstallOpenPurchaseLicenseKeyPack(
 
 <dl> <dt>
 
-*sLicenseNumber* \[ in\]
+*sLicenseNumber* \[ Pollici\]
 </dt> <dd>
 
-stringa numerica a 8 caratteri fornita con il Key Pack per le licenze. Il parametro *sLicenseNumber* non può contenere trattini.
+Stringa numerica di 8 caratteri fornita con il key pack di licenza. Il *parametro sLicenseNumber* non può contenere trattini.
 
 </dd> <dt>
 
-*sAuthorizationNumber* \[ in\]
+*sAuthorizationNumber* \[ Pollici\]
 </dt> <dd>
 
-stringa alfanumerica a 15 caratteri fornita con il codice di licenza. Il parametro *sAuthorizationNumber* non può contenere trattini.
+Stringa alfanumerica di 15 caratteri fornita con il codice di licenza. Il *parametro sAuthorizationNumber* non può contenere trattini.
 
 </dd> <dt>
 
-*ProductVersion* \[ in\]
+*ProductVersion* \[ Pollici\]
 </dt> <dd>
 
 Versione del prodotto.
@@ -90,7 +90,7 @@ Windows Server 2008
 
 </dd> </dl> </dd> <dt>
 
-*ProductType* \[ in\]
+*ProductType* \[ Pollici\]
 </dt> <dd>
 
 Tipo di prodotto.
@@ -100,14 +100,14 @@ Tipo di prodotto.
 0
 </dt> <dd>
 
-Il tipo di prodotto Servizi Desktop remoto License Key Pack è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve disporre di una licenza.
+Il Servizi Desktop remoto prodotto key pack di licenza è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve avere una licenza.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Il tipo di prodotto Servizi Desktop remoto License Key Pack è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve disporre di una licenza.
+Il Servizi Desktop remoto prodotto key pack di licenza è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve avere una licenza.
 
 </dd> <dt>
 
@@ -118,23 +118,23 @@ Questo tipo di prodotto non è valido.
 
 </dd> </dl> </dd> <dt>
 
-*LicenseCount* \[ in\]
+*LicenseCount* \[ Pollici\]
 </dt> <dd>
 
 Numero di licenze da installare.
 
 </dd> <dt>
 
-*KeyPackId* \[ out\]
+*KeyPackId* \[ Cambio\]
 </dt> <dd>
 
-Riceve l'identificatore del Key Pack.
+Riceve l'identificatore del key pack.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -145,7 +145,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -154,7 +154,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ ms.assetid: 275fda71-61ef-4b50-96fe-bdc0c0266646
 title: Specifica delle informazioni client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f6ca094b627b6c2cee16ec587a8c850cd17f78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b437c4d0c0ce9d04f55bb00a1fd4b666d30cf29228050151072e43f87edb11a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119445501"
 ---
 # <a name="specifying-client-information"></a>Specifica delle informazioni client
 
-Le informazioni sul client fornite nel secondo argomento vengono usate da alcuni driver di dispositivo per ottimizzare le prestazioni del dispositivo. Come minimo, l'applicazione deve fornire una stringa contenente il nome, un numero di versione principale, un numero di versione secondario e un numero di revisione. Questi sono i campi forniti dall'applicazione di esempio.
+Le informazioni client fornite nel secondo argomento vengono usate da alcuni driver di dispositivo per ottimizzare le prestazioni del dispositivo. Come minimo, l'applicazione deve fornire una stringa contenente il nome, un numero di versione principale, un numero di versione secondaria e un numero di revisione. Questi sono i campi forniti dall'applicazione di esempio.
 
 
 ```C++
@@ -25,7 +25,7 @@ Le informazioni sul client fornite nel secondo argomento vengono usate da alcuni
 
 
 
-La `GetClientInformation` funzione nell'applicazione di esempio crea e popola un'interfaccia **IPortableDeviceValues** con le informazioni sul client. Questa funzione è costituita da due parti primarie. La prima parte crea un'istanza di un oggetto di valori di dispositivo portabile chiamando la funzione CoCreateInstance.
+La `GetClientInformation` funzione nell'applicazione di esempio crea e popola **un'interfaccia IPortableDeviceValues** con le informazioni del client. Questa funzione ha due parti principali. La prima parte crea un'istanza di un oggetto device-values portabile chiamando la funzione CoCreateInstance.
 
 
 ```C++
@@ -37,7 +37,7 @@ HRESULT hr = CoCreateInstance(CLSID_PortableDeviceValues,
 
 
 
-La seconda parte consente di impostare le informazioni sul client nell'oggetto Device-values portatile.
+La seconda parte imposta le informazioni sul client nell'oggetto device-values portabile.
 
 
 ```C++

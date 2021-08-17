@@ -1,5 +1,5 @@
 ---
-description: Il metodo Reset della classe HeatPipe CIM \_ richiede una reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe \_ CIM HeatPipe richiede una reimpostazione del dispositivo logico.
 ms.assetid: 25153ec2-ecf8-4cf7-a650-03e5c5459445
 ms.tgt_platform: multiple
 title: Metodo Reset della classe CIM_HeatPipe
@@ -21,12 +21,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119218061"
 ---
-# <a name="reset-method-of-the-cim_heatpipe-class"></a>Metodo Reset della classe \_ HeatPipe CIM
+# <a name="reset-method-of-the-cim_heatpipe-class"></a>Metodo Reset della classe \_ CIM HeatPipe
 
-Il **metodo Reset** della classe HeatPipe CIM richiede una \_ reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Il **metodo Reset** della classe \_ CIM HeatPipe richiede una reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

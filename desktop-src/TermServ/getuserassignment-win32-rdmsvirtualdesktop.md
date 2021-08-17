@@ -4,9 +4,9 @@ description: Recupera il nome utente e il nome di dominio dell'utente assegnato 
 ms.assetid: 1887c49d-85df-4fb4-9b40-42fb7763bf95
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetUserAssignment
-- Metodo GetUserAssignment Servizi Desktop remoto, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Servizi Desktop remoto, metodo GetUserAssignment
+- Metodo GetUserAssignment Servizi Desktop remoto
+- Metodo GetUserAssignment Servizi Desktop remoto , Win32_RDMSVirtualDesktop classe
+- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto metodo , GetUserAssignment
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87293a471bb4f69b3f4c57de0f964fa0daa043cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ff3d63179ec68c38ada5738390979e4844ff2950f91decf82245a6b164dbab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059559"
 ---
-# <a name="getuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo GetUserAssignment della \_ classe RDMSVirtualDesktop Win32
+# <a name="getuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo GetUserAssignment della classe \_ RDMSVirtualDesktop Win32
 
 Recupera il nome utente e il nome di dominio dell'utente assegnato al desktop virtuale.
 
@@ -44,14 +44,14 @@ uint32 GetUserAssignment(
 
 <dl> <dt>
 
-*Nome utente* \[ out\]
+*UserName* \[ Cambio\]
 </dt> <dd>
 
 Riceve il nome utente.
 
 </dd> <dt>
 
-*UserDomain* \[ out\]
+*UserDomain* \[ Cambio\]
 </dt> <dd>
 
 Riceve il nome di dominio.
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

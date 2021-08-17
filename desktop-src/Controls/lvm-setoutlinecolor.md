@@ -3,7 +3,7 @@ title: LVM_SETOUTLINECOLOR messaggio (Commctrl.h)
 description: Imposta il colore del bordo di un controllo visualizzazione elenco se lo stile della finestra estesa LVS \_ EX \_ BORDERSELECT è impostato.
 ms.assetid: c2b606fa-8d47-4192-94b7-d01c3cfdc514
 keywords:
-- LVM_SETOUTLINECOLOR controlli Windows messaggio
+- LVM_SETOUTLINECOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119217391"
 ---
-# <a name="lvm_setoutlinecolor-message"></a>Messaggio \_ LVM SETOUTLINECOLOR
+# <a name="lvm_setoutlinecolor-message"></a>Messaggio LVM \_ SETOUTLINECOLOR
 
 Imposta il colore del bordo di un controllo visualizzazione elenco se lo stile della finestra estesa [**LVS \_ EX \_ BORDERSELECT**](extended-list-view-styles.md) è impostato.
 
@@ -42,7 +42,7 @@ Restituisce **la struttura COLORREF** che contiene il colore del contorno.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -52,8 +52,8 @@ Restituisce **la struttura COLORREF** che contiene il colore del contorno.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

@@ -46,7 +46,7 @@ HRESULT GetVector(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Se il vettore di destinazione è più grande del vettore di origine, verranno riempiti solo i componenti iniziali del vettore di destinazione e i componenti rimanenti verranno impostati su zero.
+Se il vettore di destinazione è maggiore del vettore di origine, verranno riempiti solo i componenti iniziali del vettore di destinazione e i componenti rimanenti verranno impostati su zero.
 
 ## <a name="requirements"></a>Requisiti
 

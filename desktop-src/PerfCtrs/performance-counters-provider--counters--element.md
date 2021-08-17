@@ -1,7 +1,7 @@
 ---
-description: Identifica il provider e i contatori che fornisce.
+description: Identifica il provider e i contatori forniti.
 ms.assetid: 54a8b293-8e35-4b15-901a-e0cf608595d3
-title: Elemento provider (contatori)
+title: Elemento provider (counters)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bec1c1cccd46290ea9336f3e2a3055a5a2eece61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc6b1ee4d5f20c0d91c996e20844d3f1a356aeef59f779c110af9c0718ca59ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061059"
 ---
-# <a name="provider-counters-element"></a>Elemento provider (contatori)
+# <a name="provider-counters-element"></a>Elemento provider (counters)
 
-Identifica il provider e i contatori che fornisce.
+Identifica il provider e i contatori forniti.
 
 ``` syntax
 <xs:element name="provider"
@@ -26,7 +26,7 @@ Identifica il provider e i contatori che fornisce.
  />
 ```
 
-L'elemento **provider** è definito dal tipo complesso dei [**contatori**](performance-counters-counters-complex-type.md) .
+**L'elemento** provider è definito dal tipo [**complesso counters.**](performance-counters-counters-complex-type.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,8 +34,8 @@ L'elemento **provider** è definito dal tipo complesso dei [**contatori**](perfo
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -46,7 +46,7 @@ L'elemento **provider** è definito dal tipo complesso dei [**contatori**](perfo
 **Elementi padre**
 </dt> <dt>
 
-[**contatori**](performance-counters-counters-element.md)
+[**Contatori**](performance-counters-counters-element.md)
 </dt> </dl>
 
  

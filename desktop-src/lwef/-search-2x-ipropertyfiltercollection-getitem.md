@@ -3,9 +3,9 @@ title: Proprietà IPropertyFilterCollection GetITem (WdsSharedIDL.h)
 description: Restituisce un filtro specifico all'interno dell'insieme.
 ms.assetid: 72a35d98-b2d8-4dfb-84a7-365a3778fc85
 keywords:
-- Proprietà GetITem Funzionalità dell Windows legacy
+- Proprietà GetITem Funzionalità dell'Windows legacy
 - Proprietà GetITem Legacy Windows Environment Features , interfaccia IPropertyFilterCollection
-- Interfaccia IPropertyFilterCollection Legacy Windows dell'ambiente , proprietà GetITem
+- Interfaccia IPropertyFilterCollection Legacy Windows Environment Features , proprietà GetITem
 topic_type:
 - apiref
 api_name:

@@ -52,7 +52,7 @@ La somma delle differenze assolute è un metodo più veloce ma meno accurato ris
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 

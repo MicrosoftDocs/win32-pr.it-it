@@ -1,19 +1,19 @@
 ---
-description: Specifica la velocità in bit per la codifica audio per la presentazione, in bit al secondo. Questo attributo si applica ai descrittori di presentazione.
+description: Specifica la velocità in bit di codifica audio per la presentazione, in bit al secondo. Questo attributo si applica ai descrittori di presentazione.
 ms.assetid: 700f61f4-a0d7-4b69-ace5-356e4e29b93d
-title: Attributo MF_PD_AUDIO_ENCODING_BITRATE (Mfidl. h)
+title: MF_PD_AUDIO_ENCODING_BITRATE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49566ecb225482ef6513e056de8ba11763de603e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 041e92eb71621d1f42d2b800557d204215bbca40f346a2afa4627863fc1a2206
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102878"
 ---
-# <a name="mf_pd_audio_encoding_bitrate-attribute"></a>\_ \_ \_ Attributo velocità in bit codifica audio MF PD \_
+# <a name="mf_pd_audio_encoding_bitrate-attribute"></a>Attributo MF \_ PD \_ AUDIO ENCODING \_ \_ BITRATE
 
-Specifica la velocità in bit per la codifica audio per la presentazione, in bit al secondo. Questo attributo si applica ai descrittori di presentazione.
+Specifica la velocità in bit di codifica audio per la presentazione, in bit al secondo. Questo attributo si applica ai descrittori di presentazione.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,16 +21,16 @@ Specifica la velocità in bit per la codifica audio per la presentazione, in bit
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo è facoltativo. Per alcuni formati sono disponibili schemi di codifica più complessi che non possono essere riepilogati utilizzando questo attributo. Per i file di formato Advanced Systems (ASF), i seguenti attributi descrivono collettivamente la velocità in bit di codifica:
+L'attributo è facoltativo. Alcuni formati hanno schemi di codifica più complessi che non possono essere riepilogati usando questo attributo. Per i file ASF (Advanced Systems Format), gli attributi seguenti descrivono collettivamente la velocità in bit di codifica:
 
--   [**\_velocità in \_ \_ \_ bit max PD ASF FileProperties \_**](mf-pd-asf-fileproperties-max-bitrate-attribute.md)
--   [**\_velocità in \_ \_ \_ \_ bit dei dati media \_ di MF SD ASF EXTSTRMPROP**](mf-sd-asf-extstrmprop-avg-data-bitrate-attribute.md)
--   [**\_velocità in \_ \_ \_ \_ bit massima dei dati di EXTSTRMPROP \_ MF SD ASF**](mf-sd-asf-extstrmprop-max-data-bitrate-attribute.md)
--   [**\_velocità in bit MF SD \_ ASF \_ STREAMBITRATES \_**](mf-sd-asf-streambitrates-bitrate-attribute.md)
+-   [**FILE \_ ASF PD \_ \_ MFPROPRIETÀ \_ VELOCITÀ \_ IN BIT MASSIMA**](mf-pd-asf-fileproperties-max-bitrate-attribute.md)
+-   [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ AVG \_ DATA \_ BITRATE**](mf-sd-asf-extstrmprop-avg-data-bitrate-attribute.md)
+-   [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ MAX \_ DATA \_ BITRATE**](mf-sd-asf-extstrmprop-max-data-bitrate-attribute.md)
+-   [**MF \_ SD \_ ASF \_ STREAMBITRATES \_ BITRATES**](mf-sd-asf-streambitrates-bitrate-attribute.md)
 
 I formati di terze parti potrebbero usare altri attributi personalizzati.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,9 +38,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -48,19 +48,19 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> </dl>
 
  

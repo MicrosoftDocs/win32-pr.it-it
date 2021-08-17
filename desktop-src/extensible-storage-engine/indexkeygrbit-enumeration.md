@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione IndexKeyGrbit'
+description: Altre informazioni sull'enumerazione IndexKeyGrbit
 title: Enumerazione IndexKeyGrbit
 TOCTitle: IndexKeyGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IndexKeyGrbit
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f28a3f0c7d69f8ce7e8e688b6fb7b2fecafcce44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff5ea8eecefdbc68a07fef0dd51776428f2b8ef159b89b7d6d4ecd5deb49a2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093631"
 ---
 # <a name="indexkeygrbit-enumeration"></a>Enumerazione IndexKeyGrbit
 
-Definizione della chiave grbits. Utilizzato durante il recupero di informazioni su un indice.
+Grbit di definizione della chiave. Utilizzato durante il recupero di informazioni su un indice.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,12 +73,12 @@ public enum IndexKeyGrbit
 <tr class="odd">
 <td></td>
 <td>Crescente</td>
-<td>Il segmento di chiave è in ordine crescente.</td>
+<td>Il segmento chiave è crescente.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Decrescente</td>
-<td>Il segmento di chiave è decrescente.</td>
+<td>Il segmento chiave è decrescente.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum IndexKeyGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

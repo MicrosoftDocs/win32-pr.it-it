@@ -1,41 +1,41 @@
 ---
-title: Attributo la MSO-Fit-Text-to-Shape
-description: Attributo la MSO-Fit-Text-to-Shape
+title: Attributo VML MSO-Fit-Text-To-Shape
+description: Attributo VML MSO-Fit-Text-To-Shape
 ms.assetid: efe08106-e72b-48c1-865b-79843c11c15f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b843fe2ebe849e4842642fb7d072954b8906926f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 868f607eb7347eb18a30b64a6244259edfbef336e73bbe078c3584bdfb0f530f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057809"
 ---
-# <a name="vml-mso-fit-text-to-shape-attribute"></a>Attributo la MSO-Fit-Text-to-Shape
+# <a name="vml-mso-fit-text-to-shape-attribute"></a>Attributo VML MSO-Fit-Text-To-Shape
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce se il testo si estenderà per adattarsi alla forma. Proprietà di lettura/scrittura. **VgTriState**.
+Definisce se il testo verrà adattato alla forma. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [TextBox](msdn-online-vml-textbox-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "MSO-Fit-Text-to-Shape: *Expression* " >
+<v: *element* style="mso-fit-text-to-shape: *expression* ">
 
 **Osservazioni:**
 
-Se **true**, il testo verrà allungato per adattarsi alla forma. L'impostazione predefinita è **False**.
+Se **True,** il testo verrà allungato per adattarlo alla forma. L'impostazione predefinita è **False**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

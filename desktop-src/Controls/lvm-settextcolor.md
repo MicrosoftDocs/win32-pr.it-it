@@ -1,9 +1,9 @@
 ---
 title: LVM_SETTEXTCOLOR messaggio (Commctrl.h)
-description: Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView SetTextColor.
+description: Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro ListView SetTextColor.
 ms.assetid: ff90c18b-0cd7-4331-bcd8-61044e891d1f
 keywords:
-- LVM_SETTEXTCOLOR dei messaggi Windows controllo
+- LVM_SETTEXTCOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119217371"
 ---
 # <a name="lvm_settextcolor-message"></a>Messaggio LVM \_ SETTEXTCOLOR
 
-Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView SetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
+Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ ListView SetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
 
 ## <a name="parameters"></a>Parametri
 

@@ -1,6 +1,6 @@
 ---
-title: Riferimento alla configurazione del feedback di input
-description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per la configurazione del feedback di input.
+title: Informazioni di riferimento sulla configurazione dei commenti e suggerimenti sull'input
+description: Gli argomenti di questa sezione forniscono le specifiche di riferimento per Input Feedback Configuration.
 ms.assetid: 0C28CE75-9DD2-403C-A805-88B525765A54
 keywords:
 - interazione dell'utente
@@ -12,16 +12,16 @@ keywords:
 - stilo
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 8cd3814fcdb4fce74ea8734f43b74d1c212b27de
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1779bba1d244dbb451ce03c51bec322ebb0cf58c701c40f1fe34478b1517c2c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466661"
 ---
-# <a name="input-feedback-configuration-reference"></a>Riferimento alla configurazione del feedback di input
+# <a name="input-feedback-configuration-reference"></a>Informazioni di riferimento sulla configurazione dei commenti e suggerimenti sull'input
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per la [configurazione del feedback di input](input-feedback-configuration-portal.md).
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [Input Feedback Configuration](input-feedback-configuration-portal.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -29,9 +29,9 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 | Argomento                                       | Descrizione                                                                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Costanti**](constants.md)<br/>   | In questa sezione vengono fornite le specifiche di riferimento per le costanti di [configurazione del feedback di input](input-feedback-configuration-portal.md) .<br/>                 |
-| [Enumerazioni](enumerations.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni di [configurazione del feedback di input](input-feedback-configuration-portal.md) .<br/> |
-| [Funzioni](functions.md)<br/>       | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le funzioni di [configurazione del feedback di input](input-feedback-configuration-portal.md) .<br/>    |
+| [**Costanti**](constants.md)<br/>   | Questa sezione fornisce le specifiche di riferimento per le [costanti input feedback configuration.](input-feedback-configuration-portal.md)<br/>                 |
+| [Enumerazioni](enumerations.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [enumerazioni input feedback configuration.](input-feedback-configuration-portal.md)<br/> |
+| [Funzioni](functions.md)<br/>       | Gli argomenti di questa sezione forniscono le specifiche di riferimento per le funzioni [input feedback configuration.](input-feedback-configuration-portal.md)<br/>    |
 
 
 
@@ -41,10 +41,10 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 <dl> <dt>
 
-[Configurazione feedback input](input-feedback-configuration-portal.md)
+[Configurazione dei commenti e suggerimenti sull'input](input-feedback-configuration-portal.md)
 </dt> <dt>
 
-[**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
+[**Systemparametersinfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
 </dt> </dl>
 
  

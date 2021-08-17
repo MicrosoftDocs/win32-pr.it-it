@@ -1,6 +1,6 @@
 ---
-title: attributo labeledURI
-description: Uniform Resource Identifier seguito da un'etichetta.
+title: Attributo labeledURI
+description: Un Uniform Resource Identifier seguito da un'etichetta.
 ms.assetid: 214b5b4b-7389-4801-977c-24ffc2e025bd
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bcfae6b1d2029fd916cf2e796e611a6b76318bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a3455529afd0b2fe9125410becb8f46ca75c4ec23a08ddd157ef0ecebfb9daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322191"
 ---
-# <a name="labeleduri-attribute"></a>attributo labeledURI
+# <a name="labeleduri-attribute"></a>Attributo labeledURI
 
-Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzata per descrivere la risorsa a cui punta l'URI ed è destinata a essere un nome visualizzato leggibile.
+Un Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene usata per descrivere la risorsa a cui punta l'URI ed è destinata a un nome visualizzato leggibile dall'utente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | labeledURI                                  |
-| LDAP-Display-Name | labeledURI                                  |
+| Ldap-Display-Name | labeledURI                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.3.6.1.4.1.250.1.57                        |
-| System-ID-GUID    | c569bb46-c680-44bc-a273-e6c227d71b45        |
+| System-Id-Guid    | c569bb46-c680-44bc-a273-e6c227d71b45        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzat
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario posta**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzat
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario posta**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzat
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario posta**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzat
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario posta**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Uniform Resource Identifier seguito da un'etichetta. L'etichetta viene utilizzat
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario posta**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

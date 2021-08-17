@@ -1,12 +1,12 @@
 ---
-title: Proprietà BandwidthDetection di IMsRdpClientAdvancedSettings8
-description: Specifica se le modifiche della larghezza di banda vengono rilevate automaticamente.
+title: Proprietà BandwidthDetection IMsRdpClientAdvancedSettings8
+description: Specifica se vengono rilevate automaticamente modifiche alla larghezza di banda.
 ms.assetid: 30b2b7b3-9050-4a11-9929-2ad1dbf5ed2d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BandwidthDetection
-- Servizi Desktop remoto proprietà BandwidthDetection, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà BandwidthDetection
+- Proprietà BandwidthDetection Servizi Desktop remoto
+- Proprietà BandwidthDetection Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BandwidthDetection
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1f915aeff1159e675026cfc13906e69c96208f29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab6fbe8291c0318e378add8041d0e2d2d0f30b6ee1e298c3a43a6a0ccd430c31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138784"
 ---
-# <a name="imsrdpclientadvancedsettings8bandwidthdetection-property"></a>Proprietà IMsRdpClientAdvancedSettings8:: BandwidthDetection
+# <a name="imsrdpclientadvancedsettings8bandwidthdetection-property"></a>Proprietà IMsRdpClientAdvancedSettings8::BandwidthDetection
 
-Specifica se le modifiche della larghezza di banda vengono rilevate automaticamente.
+Specifica se vengono rilevate automaticamente modifiche alla larghezza di banda.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -44,7 +44,7 @@ HRESULT get_BandwidthDetection(
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Variante \_ TRUE** se le modifiche della larghezza di banda vengono rilevate automaticamente o **Variant \_ false** in alternativa.
+**VARIANT \_ TRUE se** le modifiche alla larghezza di banda vengono rilevate automaticamente o **VARIANT FALSE in \_ caso** contrario.
 
 ## <a name="requirements"></a>Requisiti
 

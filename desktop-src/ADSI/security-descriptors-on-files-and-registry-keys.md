@@ -1,92 +1,92 @@
 ---
-title: Descrittori di sicurezza su file e chiavi del registro di sistema
-description: Active Directory Service Interfaces (ADSI) può essere utilizzato per gestire e proteggere i file System all'interno di un'organizzazione, inclusa la possibilità di impostare o modificare gli ACL per file o condivisioni file creati dagli utenti.
+title: Descrittori di sicurezza per file e chiavi del Registro di sistema
+description: Active Directory Service Interfaces (ADSI) può essere usato per gestire e proteggere i file system all'interno di un'organizzazione, inclusa la possibilità di impostare o modificare gli ACL su file o condivisioni file creati dagli utenti.
 ms.assetid: 7233a82f-fc38-4718-b674-4e6a00666184
 ms.tgt_platform: multiple
 keywords:
-- Descrittori di sicurezza su file e chiavi del registro di sistema ADSI
+- Descrittori di sicurezza su file e chiavi del Registro di sistema ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11600a495b9a70513b9bd401777e9cdd61449ede
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ae567e9550989153f0b85207be49a729bc0499c320f410c92fc993269d997da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119333221"
 ---
-# <a name="security-descriptors-on-files-and-registry-keys"></a>Descrittori di sicurezza su file e chiavi del registro di sistema
+# <a name="security-descriptors-on-files-and-registry-keys"></a>Descrittori di sicurezza per file e chiavi del Registro di sistema
 
-Active Directory Service Interfaces (ADSI) può essere utilizzato per gestire e proteggere i file System all'interno di un'organizzazione, inclusa la possibilità di impostare o modificare gli ACL per file o condivisioni file creati dagli utenti. Le interfacce di sicurezza, ad esempio [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) , impostano ACL in Active Directory, Exchange, file, condivisione file o oggetti chiave del registro di sistema. Prima di utilizzare queste interfacce, potrebbe essere necessario modificare il descrittore di sicurezza se si utilizza un formato diverso rispetto all'interfaccia o se non si dispone dei diritti di accesso all'elenco SACL del descrittore di sicurezza perché non si è membri del gruppo di amministratori della sicurezza.
+Active Directory Service Interfaces (ADSI) può essere usato per gestire e proteggere i file system all'interno di un'organizzazione, inclusa la possibilità di impostare o modificare gli ACL su file o condivisioni file creati dagli utenti. Le interfacce di sicurezza, ad esempio [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) impostano gli ACL in Active Directory, Exchange, file, condivisione file o oggetti chiave del Registro di sistema. Prima di usare queste interfacce, potrebbe essere necessario modificare il descrittore di sicurezza se usa un formato diverso dall'interfaccia o se non si dispone dei diritti di accesso al SACL del descrittore di sicurezza perché non si è membri del gruppo di amministratori della sicurezza.
 
-Per ottenere, impostare o modificare il descrittore di sicurezza, utilizzare l'interfaccia [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) . Questa interfaccia consente di recuperare un descrittore di sicurezza da varie risorse nel formato originale, ad esempio il formato ADSI [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), un descrittore di sicurezza non elaborato o come stringa esadecimale utilizzata in Exchange 5,5. Quando viene recuperato, è possibile convertirlo in un altro formato, ad esempio, da un descrittore di sicurezza non elaborato a **IADsSecurityDescriptor**. È quindi possibile scrivere nuovamente il nuovo formato nella risorsa.
+Per ottenere, impostare o modificare il descrittore di sicurezza, usare [**l'interfaccia IADsSecurityUtility.**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) Questa interfaccia consente di recuperare un descrittore di sicurezza da varie risorse nel formato originale, ad esempio il formato ADSI [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)un descrittore di sicurezza non elaborato o come stringa esadecimale usata in Exchange 5.5. Una volta recuperato, è possibile convertirlo in un altro formato, ad esempio da un descrittore di sicurezza non elaborato a **IADsSecurityDescriptor**. È quindi possibile scrivere di nuovo il nuovo formato nella risorsa.
 
-Alcuni dei valori della proprietà [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) , ad esempio [**accessMask**](iadsaccesscontrolentry-property-methods.md) e **AceFlags**, saranno diversi per i diversi tipi di oggetto. Un oggetto Active Directory, ad esempio, utilizzerà il membro Rights **\_ \_ \_ Read generico Read** dell'enumerazione [**Ads \_ Rights \_ enum**](/windows/win32/api/iads/ne-iads-ads_rights_enum) per la proprietà **IADsAccessControlEntry. AccessMask** , ma il diritto di accesso equivalente per un oggetto file è **file \_ \_ Read generico**. Non è sicuro presupporre che tutti i valori delle proprietà siano gli stessi per gli oggetti Active Directory e gli oggetti non Active Directory. Nell'elenco seguente vengono illustrate le proprietà di **IADsAccessControlEntry** che differiscono per gli oggetti non Active Directory e in cui è possibile ottenere i valori appropriati.
+Alcuni dei valori [**della proprietà IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) ad esempio [**AccessMask**](iadsaccesscontrolentry-property-methods.md) e **AceFlags,** saranno diversi per tipi di oggetto diversi. Ad esempio, un oggetto Active Directory userà il membro **ADS \_ RIGHT GENERIC \_ \_ READ** dell'enumerazione [**ADS RIGHTS \_ \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_rights_enum) per la proprietà **IADsAccessControlEntry.AccessMask,** ma il diritto di accesso equivalente per un oggetto file è **FILE GENERIC \_ \_ READ**. Non è sicuro presupporre che tutti i valori delle proprietà siano gli stessi per gli oggetti di Active Directory e gli oggetti non Active Directory. L'elenco seguente mostra **le proprietà IADsAccessControlEntry** che differiscono per gli oggetti non Active Directory e in cui è possibile ottenere i valori appropriati.
 
 <dl> <dt>
 
-<span id="AccessMask"></span><span id="accessmask"></span><span id="ACCESSMASK"></span>[**AccessMask**](iadsaccesscontrolentry-property-methods.md)
+<span id="AccessMask"></span><span id="accessmask"></span><span id="ACCESSMASK"></span>[**Accessmask**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Per ulteriori informazioni e per un elenco di valori possibili per oggetti condivisione file o file, vedere [sicurezza dei file e diritti di accesso](/windows/desktop/FileIO/file-security-and-access-rights).
+Per altre informazioni e un elenco dei valori possibili per gli oggetti di condivisione file o file, vedere Sicurezza dei [file e diritti di accesso](/windows/desktop/FileIO/file-security-and-access-rights).
 
-Per ulteriori informazioni e un elenco di valori possibili per gli oggetti del registro di sistema, vedere [sicurezza e diritti di accesso della chiave del registro di sistema](/windows/desktop/SysInfo/registry-key-security-and-access-rights).
+Per altre informazioni e un elenco dei valori possibili per gli oggetti del Registro di sistema, vedere Sicurezza e diritti di accesso delle chiavi [del Registro di sistema](/windows/desktop/SysInfo/registry-key-security-and-access-rights).
 
 </dd> <dt>
 
 <span id="AceType"></span><span id="acetype"></span><span id="ACETYPE"></span>[**AceType**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Per ulteriori informazioni, vedere il membro **AceType** della struttura [**dell' \_ intestazione ACE**](/windows/desktop/api/winnt/ns-winnt-ace_header) .
+Per altre informazioni, vedere il **membro AceType** della [**struttura ACE \_ HEADER.**](/windows/desktop/api/winnt/ns-winnt-ace_header)
 
 </dd> <dt>
 
 <span id="AceFlags"></span><span id="aceflags"></span><span id="ACEFLAGS"></span>[**AceFlags**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Per ulteriori informazioni, vedere il membro **AceFlags** della struttura [**dell' \_ intestazione ACE**](/windows/desktop/api/winnt/ns-winnt-ace_header) .
+Per altre informazioni, vedere il **membro AceFlags** della [**struttura ACE \_ HEADER.**](/windows/desktop/api/winnt/ns-winnt-ace_header)
 
 </dd> <dt>
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>[**Bandiere**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più dei seguenti valori di WinNT. h.
+Contiene zero o una combinazione di uno o più dei valori seguenti di WinNT.h.
 
 <dl> <dt>
 
-<span id="ACE_OBJECT_TYPE_PRESENT__1_"></span><span id="ace_object_type_present__1_"></span>**ACE \_ Tipo di oggetto \_ \_ presente** (1)
+<span id="ACE_OBJECT_TYPE_PRESENT__1_"></span><span id="ace_object_type_present__1_"></span>**ACE \_ TIPO \_ DI \_ OGGETTO PRESENT** (1)
 </dt> <dd>
 
 [**ObjectType**](iadsaccesscontrolentry-property-methods.md) contiene un valore valido.
 
 </dd> <dt>
 
-<span id="ACE_INHERITED_OBJECT_TYPE_PRESENT__2_"></span><span id="ace_inherited_object_type_present__2_"></span>**ACE \_ \_Tipo di oggetto ereditato \_ \_ presente** (2)
+<span id="ACE_INHERITED_OBJECT_TYPE_PRESENT__2_"></span><span id="ace_inherited_object_type_present__2_"></span>**ACE \_ TIPO DI \_ OGGETTO \_ \_ EREDITATO PRESENTE** (2)
 </dt> <dd>
 
 [**InheritedObjectType**](iadsaccesscontrolentry-property-methods.md) contiene un valore valido.
 
 </dd> </dl> </dd> <dt>
 
-<span id="ObjectType"></span><span id="objecttype"></span><span id="OBJECTTYPE"></span>[**ObjectType**](iadsaccesscontrolentry-property-methods.md)
+<span id="ObjectType"></span><span id="objecttype"></span><span id="OBJECTTYPE"></span>[**Objecttype**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Per ulteriori informazioni, vedere il membro **ObjectType** della [**\_ \_ \_ voce ACE negata**](/windows/desktop/api/winnt/ns-winnt-access_denied_object_ace), [**accesso \_ consentito \_ \_**](/windows/desktop/api/winnt/ns-winnt-access_allowed_object_ace)e strutture simili. Questa proprietà non deve essere impostata o modificata per gli oggetti non Active Directory.
+Per altre informazioni, vedere il membro **ObjectType** delle [**\_ \_ \_ ACE ACCESS DENIED OBJECT,**](/windows/desktop/api/winnt/ns-winnt-access_denied_object_ace) [**ACCESS ALLOWED OBJECT \_ \_ \_ ACE**](/windows/desktop/api/winnt/ns-winnt-access_allowed_object_ace)e strutture simili. Questa proprietà non deve essere impostata o modificata per gli oggetti non Active Directory.
 
 </dd> <dt>
 
 <span id="InheritedObjectType"></span><span id="inheritedobjecttype"></span><span id="INHERITEDOBJECTTYPE"></span>[**InheritedObjectType**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Per ulteriori informazioni, vedere il membro **InheritedObjectType** della [**\_ \_ \_ voce ACE negata**](/windows/desktop/api/winnt/ns-winnt-access_denied_object_ace), [**accesso \_ consentito \_ \_**](/windows/desktop/api/winnt/ns-winnt-access_allowed_object_ace)e strutture simili. Questa proprietà non deve essere impostata o modificata per gli oggetti non Active Directory.
+Per altre informazioni, vedere il membro **InheritedObjectType** di [**ACCESS \_ DENIED \_ OBJECT \_ ACE,**](/windows/desktop/api/winnt/ns-winnt-access_denied_object_ace) [**ACCESS ALLOWED OBJECT \_ \_ \_ ACE**](/windows/desktop/api/winnt/ns-winnt-access_allowed_object_ace)e strutture simili. Questa proprietà non deve essere impostata o modificata per gli oggetti non Active Directory.
 
 </dd> </dl>
 
-In genere, [**IADsSecurityUtility. GetSecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-getsecuritydescriptor) recupererà tutte le parti del descrittore di sicurezza, ad esempio Owner, Group, SACL o DACL. Analogamente, [**IADsSecurityUtility. SetSecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-setsecuritydescriptor) sovrascrive tutte le parti del descrittore di sicurezza per impostazione predefinita. È possibile utilizzare la proprietà [**IADsSecurityUtility. SecurityMask**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-get_securitymask) per specificare singole parti del descrittore di sicurezza da recuperare o impostare. Ad esempio, è possibile impostare **SecurityMask** su [**Ads \_ Security \_ info \_ DACL**](/windows/win32/api/iads/ne-iads-ads_security_info_enum) prima di chiamare **GetSecurityDescriptor** per recuperare solo l'elenco DACL senza recuperare le altre parti del descrittore di sicurezza.
+In [**genere, IADsSecurityUtility.GetSecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-getsecuritydescriptor) recupererà tutte le parti del descrittore di sicurezza, ad esempio proprietario, gruppo, SACL o DACL. Analogamente, [**IADsSecurityUtility.SetSecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-setsecuritydescriptor) sovrascriverà tutte le parti del descrittore di sicurezza per impostazione predefinita. È possibile usare la [**proprietà IADsSecurityUtility.SecurityMask**](/windows/desktop/api/Iads/nf-iads-iadssecurityutility-get_securitymask) per specificare singole parti del descrittore di sicurezza da recuperare o impostare. Ad esempio, è possibile impostare **SecurityMask** su [**ADS \_ SECURITY INFO \_ \_ DACL**](/windows/win32/api/iads/ne-iads-ads_security_info_enum) prima di chiamare **GetSecurityDescriptor** per recuperare solo l'elenco DACL senza recuperare le altre parti del descrittore di sicurezza.
 
-Per ulteriori informazioni e un esempio di codice in cui viene utilizzata l'interfaccia [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) per aggiungere una voce ACE a un file, vedere il [codice di esempio per l'aggiunta di una voce ACE a un file](example-code-for-adding-an-ace-to-a-file.md).
+Per altre informazioni e un esempio di codice che usa [**l'interfaccia IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) per aggiungere una ACE a un file, vedere Codice di esempio per l'aggiunta di una [ACE a un file](example-code-for-adding-an-ace-to-a-file.md).
 
-Il codice di esempio seguente fornisce gli identificatori di costanti per file, condivisione file e oggetti del registro di sistema per le proprietà [**accessMask**](iadsaccesscontrolentry-property-methods.md), **AceType**, **AceFlags** e **Flags** da usare con Visual Basic e Microsoft Visual Basic Scripting Edition.
+Il codice di esempio seguente fornisce gli identificatori costanti per gli oggetti file, condivisione file e Registro di sistema per le proprietà [**AccessMask**](iadsaccesscontrolentry-property-methods.md), **AceType**, **AceFlags** e **Flags** da usare con Visual Basic e Microsoft Visual Basic Scripting Edition.
 
 
 ```VB
@@ -183,6 +183,6 @@ Const ACE_INHERITED_OBJECT_TYPE_PRESENT = 2
 
 
 
- 
+ 
 
- 
+ 

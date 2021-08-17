@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 58ad88c9f975455bdd2d77a0ef8ee028d9027d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6adaa0f4884ad275137a6c949dbc466416006f33bb6603dc61e87153d9b23361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065101"
 ---
 # <a name="lanprofile-element"></a>Elemento LANProfile
 
@@ -76,16 +76,16 @@ Lo spazio dei nomi di destinazione per l'elemento LANProfile è `https://www.mic
 
 | Elemento                                                                 | Tipo    | Descrizione                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MSM**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene le impostazioni CSM (media-Specific Module). <br/>                                                                               |
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Specifica se il servizio di configurazione automatica per reti cablate tenterà l'autenticazione della porta tramite 802.1 X. <br/>      |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Specifica se il servizio di configurazione automatica per reti cablate richiede l'utilizzo di 802.1 X per l'autenticazione della porta. <br/> |
-| [**sicurezza**](lan-profileschema-security-msm-element.md)              |         | Contiene le impostazioni di sicurezza. <br/>                                                                                                  |
+| [**MSM**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene le impostazioni del modulo MSM (Media Specific Module). <br/>                                                                               |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Specifica se il servizio di configurazione automatica per le reti cablate tenterà l'autenticazione della porta tramite 802.1X. <br/>      |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Specifica se il servizio di configurazione automatica per le reti cablate richiede l'uso di 802.1X per l'autenticazione delle porte. <br/> |
+| [**Sicurezza**](lan-profileschema-security-msm-element.md)              |         | Contiene le impostazioni di sicurezza. <br/>                                                                                                  |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per visualizzare l'elenco di elementi figlio in una struttura simile a un albero, [vedere \_ elementi dello schema del profilo LAN](lan-profileschema-elements.md).
+Per visualizzare l'elenco degli elementi figlio in una struttura ad albero, vedere Elementi dello [ \_ schema del profilo LAN.](lan-profileschema-elements.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,8 +93,8 @@ Per visualizzare l'elenco di elementi figlio in una struttura simile a un albero
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

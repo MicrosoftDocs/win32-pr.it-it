@@ -1,9 +1,9 @@
 ---
-title: Metodi SetNibTransform di ID2D1InkStyle (D2d1 \_ 3. h)
-description: Imposta la trasformazione da applicare alla forma del pennino di questo stile.
+title: Metodi Id2D1InkStyle SetNibTransform (D2d1 \_ 3.h)
+description: Imposta la trasformazione da applicare alla forma a nib di questo stile.
 ms.assetid: e2caee05-192c-1ea5-103c-e1d44e8c30a8
 keywords:
-- Metodo SetNibTransform Direct2D
+- Metodi SetNibTransform Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 981711e4ae40affb54eccc73ec12471ae4cd4156
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab44baf88ee9511679210177989a0cfb495d113f98a18b14ce65c67f1d6950c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317951"
 ---
-# <a name="id2d1inkstylesetnibtransform-methods"></a>Metodi ID2D1InkStyle:: SetNibTransform
+# <a name="id2d1inkstylesetnibtransform-methods"></a>Metodi ID2D1InkStyle::SetNibTransform
 
-Imposta la trasformazione da applicare alla forma del pennino di questo stile.
+Imposta la trasformazione da applicare alla forma a nib di questo stile.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta la trasformazione da applicare alla forma del pennino di questo stile.
 
 | Metodo                                                                             | Descrizione                                                       |
 |:-----------------------------------------------------------------------------------|:------------------------------------------------------------------|
-| [**SetNibTransform (D2D1 \_ Matrix \_ 3x2 \_ F \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f))  | Imposta la trasformazione da applicare alla forma del pennino di questo stile.<br/> |
-| [**SetNibTransform (D2D1 \_ Matrix \_ 3X2 \_ F&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f_)) | Imposta la trasformazione da applicare alla forma del pennino di questo stile.<br/> |
+| [**SetNibTransform (D2D1 \_ MATRIX \_ 3X2 \_ F \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f))  | Imposta la trasformazione da applicare alla forma a nib di questo stile.<br/> |
+| [**SetNibTransform (D2D1 \_ MATRIX \_ 3X2 \_ F&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f_)) | Imposta la trasformazione da applicare alla forma a nib di questo stile.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Imposta la trasformazione da applicare alla forma del pennino di questo stile.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1 \_ 3. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1 \_ 3.h</dt> </dl> |
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: ICEM02 verifica che tutte le dipendenze ed esclusioni dei moduli siano correlate al modulo corrente.
+description: ICEM02 verifica che tutte le dipendenze e le esclusioni del modulo siano correlate al modulo corrente.
 ms.assetid: c7d77cb6-0ee6-4857-a749-7908e1c5fcda
 title: ICEM02
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9a976132dbfad42e95f4141bc00adb48a544c1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 332ad83ba753984d752a78bebc19bc17e3b5d25ef8b580f9f105a9577d016318
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430821"
 ---
 # <a name="icem02"></a>ICEM02
 
-ICEM02 verifica che tutte le dipendenze ed esclusioni dei moduli siano correlate al modulo corrente.
+ICEM02 verifica che tutte le dipendenze e le esclusioni del modulo siano correlate al modulo corrente.
 
-I moduli CIEM di tipo merge vengono archiviati in un file con estensione cub del modulo merge denominato Mergemod. cub e non nel file con estensione cub contenente i ghiacci utilizzati per la convalida del pacchetto.
+Gli ICE del modulo unione vengono archiviati in un file CUB del modulo merge denominato Mergemod.cub e non nel file con estensione cub contenente gli ICO usati per la convalida dei pacchetti.
 
 ## <a name="result"></a>Risultato
 
-ICEM02 invia messaggi di errore se il database del modulo tenta di specificare dipendenze o esclusioni che non sono correlate al modulo corrente. ICEM02 Invia un messaggio di errore se il database del modulo tenta di specificare il modulo corrente come dipendente o escluso da solo.
+ICEM02 invia messaggi di errore se il database del modulo tenta di specificare dipendenze o esclusioni non correlate al modulo corrente. ICEM02 invia un messaggio di errore se il database del modulo tenta di specificare il modulo corrente come dipendente o come escluso da se stesso.
 
 ## <a name="example"></a>Esempio
 
-ICEM02 invierà i messaggi di errore seguenti per un modulo contenente le voci di database indicate di seguito.
+ICEM02 pubblica i messaggi di errore seguenti per un modulo contenente le voci di database illustrate di seguito.
 
 ``` syntax
 The dependency OtherModule.GUID2.1033.OtherModule.GUID3.0 in the 
@@ -43,9 +43,9 @@ This module excludes itself from the target database!
 
 
 
-| ModuleID         | Linguaggio | Versione |
+| ModuleID         | Lingua | Versione |
 |------------------|----------|---------|
-| MyModule. *Guid1* | 1033     | 1.0     |
+| MyModule. *GUID1* | 1033     | 1.0     |
 
 
 
@@ -55,10 +55,10 @@ This module excludes itself from the target database!
 
 
 
-| ModuleID            | ModuleLanguage | RequiredID          | RequiredLanguage | RequiredVersion |
+| ModuleID            | ModuleLanguage | Id obbligatorio          | RequiredLanguage | RequiredVersion |
 |---------------------|----------------|---------------------|------------------|-----------------|
-| OtherModule. *Guid2* | 1033           | OtherModule. *GUID3* | 0                | 1.0             |
-| MyModule. *Guid1*    | 1033           | MyModule. *Guid1*    | 1033             | 1.2             |
+| OtherModule. *GUID2* | 1033           | OtherModule. *GUID3* | 0                | 1.0             |
+| MyModule. *GUID1*    | 1033           | MyModule. *GUID1*    | 1033             | 1.2             |
 
 
 
@@ -68,28 +68,28 @@ This module excludes itself from the target database!
 
 
 
-| ModuleID            | ModuleLanguage | ExcludedID          | ExcludedLanguage |
+| ModuleID            | ModuleLanguage | ExcludedID          | Lingua esclusa |
 |---------------------|----------------|---------------------|------------------|
-| OtherModule. *Guid2* | 1033           | OtherModule. *GUID3* | 0                |
-| MyModule. *Guid1*    | 1033           | MyModule. *Guid1*    | 1033             |
+| OtherModule. *GUID2* | 1033           | OtherModule. *GUID3* | 0                |
+| MyModule. *GUID1*    | 1033           | MyModule. *GUID1*    | 1033             |
 
 
 
  
 
-Il modulo merge ICE registra il primo errore perché la della prima riga nella tabella ModuleDependency, che non specifica una dipendenza obbligatoria per il modulo corrente specificato nella tabella ModuleSignature. Le dipendenze di un modulo possono essere specificate solo nella propria tabella ModuleDependency. Se OtherModule. *GUID3* è richiesto dal modulo corrente, sostituire le prime due colonne della riga con i dati della tabella ModuleSignature. Se OtherModule. *GUID3* non è richiesto da questo modulo, eliminare questa riga.
+Il modulo di merge ICE pubblica il primo errore perché della prima riga della tabella ModuleDependency, che non specifica una dipendenza necessaria per il modulo corrente specificato nella tabella ModuleSignature. Le dipendenze di un modulo possono essere specificate solo nella propria tabella ModuleDependency. Se OtherModule. *GUID3* è richiesto dal modulo corrente. Sostituire le prime due colonne della riga con i dati della tabella ModuleSignature. Se OtherModule. *GUID3* non è richiesto da questo modulo. Eliminare questa riga.
 
-Il modulo merge ICE registra il secondo errore perché un modulo non può specificare una dipendenza su se stesso.
+Il modulo unione ICE pubblica il secondo errore perché un modulo non può specificare una dipendenza su se stesso.
 
-Il modulo merge ICE inserisce il terzo errore a causa della prima riga nella tabella ModuleExclusion, che non specifica un'esclusione obbligatoria per il modulo corrente specificato nella tabella ModuleSignature. Le esclusioni di un modulo possono essere specificate solo nella propria tabella ModuleExclusion. Se il modulo corrente esclude OtherModule. *GUID3*, sostituire le prime due colonne della riga con i dati della tabella ModuleSignature. Se il modulo corrente non esclude OtherModule. *GUID3*, eliminare questa riga.
+Il modulo unione ICE pubblica il terzo errore a causa della prima riga nella tabella ModuleExclusion, che non specifica un'esclusione obbligatoria per il modulo corrente specificato nella tabella ModuleSignature. Le esclusioni di un modulo possono essere specificate solo nella relativa tabella ModuleExclusion. Se il modulo corrente esclude OtherModule. *GUID3*, sostituire le prime due colonne della riga con i dati della tabella ModuleSignature. Se il modulo corrente non esclude OtherModule. *GUID3*, eliminare questa riga.
 
-Il modulo merge ICE inserisce il quarto errore perché un modulo non è in grado di specificare che escluda se stesso.
+Il modulo di merge ICE pubblica il quarto errore perché un modulo non può specificare di escludersi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio del modulo merge](merge-module-ice-reference.md)
+[Informazioni di riferimento su ICE del modulo merge](merge-module-ice-reference.md)
 </dt> </dl>
 
  

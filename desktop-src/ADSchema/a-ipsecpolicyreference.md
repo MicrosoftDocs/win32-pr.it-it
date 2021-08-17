@@ -1,10 +1,10 @@
 ---
-title: IPSec-attributo di riferimento ai criteri
-description: Nome distinto del criterio IPsec (Internet Protocol Security correlato).
+title: Attributo Ipsec-Policy-Reference
+description: Nome distinto del criterio IPsec (Internet Protocol Security) correlato.
 ms.assetid: e5b96402-3bf8-4268-981d-53ead4455fc3
 ms.tgt_platform: multiple
 keywords:
-- IPSec-criteri-riferimento attributo AD schema
+- Schema AD dell'attributo Ipsec-Policy-Reference
 - Schema AD dell'attributo ipsecPolicyReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54d66417d126d787ff75bb7f02620f27a9fa5593
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 22976883dc6f8b01282e3b774bad42ce5e719f67cce4e3507bea1e423feaf093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322491"
 ---
-# <a name="ipsec-policy-reference-attribute"></a>IPSec-attributo di riferimento ai criteri
+# <a name="ipsec-policy-reference-attribute"></a>Attributo Ipsec-Policy-Reference
 
-Nome distinto del criterio IPsec (Internet Protocol Security correlato).
+Nome distinto del criterio IPsec (Internet Protocol Security) correlato.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-criteri-riferimento                  |
-| LDAP-Display-Name | ipsecPolicyReference                    |
+| CN                | Informazioni di riferimento su Ipsec-Policy                  |
+| Ldap-Display-Name | ipsecPolicyReference                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.517                  |
-| System-ID-GUID    | b7b13118-b82e-11d0-afee-0000f80367c1    |
+| System-Id-Guid    | b7b13118-b82e-11d0-afee-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome distinto del criterio IPsec (Internet Protocol Security correlato).
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
