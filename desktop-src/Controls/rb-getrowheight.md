@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETROWHEIGHT (COMmctrl. h)
-description: Recupera l'altezza di una riga specificata in un controllo Rebar.
+title: RB_GETROWHEIGHT messaggio (Commctrl.h)
+description: Recupera l'altezza di una riga specificata in un controllo rebar.
 ms.assetid: 1ff6a32e-b344-4dbc-b4a4-fb13f11a9d8c
 keywords:
-- Controlli di Windows Message RB_GETROWHEIGHT
+- RB_GETROWHEIGHT dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27ce137eef6168d95abfe493a6f22ab66d58460b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ac650fb50f1b6594964ec0bf10d23a8c8b6b75ff82e14af44bb63e2c9cf8af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409415"
 ---
-# <a name="rb_getrowheight-message"></a>\_Messaggio GETROWHEIGHT RB
+# <a name="rb_getrowheight-message"></a>Messaggio \_ RB GETROWHEIGHT
 
-Recupera l'altezza di una riga specificata in un controllo Rebar.
+Recupera l'altezza di una riga specificata in un controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,11 +41,11 @@ Indice in base zero di una banda. Verrà recuperata l'altezza della riga che con
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **uint** che rappresenta l'altezza della riga, in pixel.
+Restituisce un **valore UINT** che rappresenta l'altezza della riga, in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il numero di righe in un controllo Rebar, utilizzare il messaggio [**RB \_ GetRowCount**](rb-getrowcount.md) .
+Per recuperare il numero di righe in un controllo rebar, usare il [**messaggio RB \_ GETROWCOUNT.**](rb-getrowcount.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Per recuperare il numero di righe in un controllo Rebar, utilizzare il messaggio
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

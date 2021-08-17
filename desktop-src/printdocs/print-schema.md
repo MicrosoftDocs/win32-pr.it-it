@@ -4,12 +4,12 @@ ms.assetid: d746bdd1-96c2-41f5-ad99-0b51c8ee8731
 title: Riferimento allo schema di stampa legacy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a8f417d20913563cfd4a52ba51d21b516e73f0
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 540496004534dff3e66ce1c30415ccec14c6d7b31c59ecf2f79905c25d5e7861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470858"
 ---
 # <a name="legacy-print-schema-reference"></a>Riferimento allo schema di stampa legacy
 
@@ -23,7 +23,7 @@ Lo schema di stampa è un termine generico che include due componenti, Print Sch
 
 Le parole chiave dello schema di stampa e il framework dello schema di stampa sono alla base di due tecnologie correlate allo schema di stampa, lo schema PrintCapabilities e lo schema PrintTicket.
 
-È importante tenere presente che uno degli obiettivi dello schema di stampa è il supporto delle estensioni dello schema da parte dei provider. Ciò significa che i provider non sono limitati all'uso solo delle istanze Property, Feature, Option o ParameterInit definite nelle parole chiave dello schema di stampa nelle tecnologie compilate in Print Schema Framework. Le istanze di elemento specifiche del provider possono essere liberamente intercambiate all'interno di istanze di elemento definite nelle parole chiave dello schema di stampa. L'unico requisito è che le istanze di proprietà specifiche del provider (ovvero private) appartengano a uno spazio dei nomi chiaramente associato al provider.
+È importante tenere presente che uno degli obiettivi dello schema di stampa è supportare le estensioni dello schema da parte dei provider. Ciò significa che i provider non sono limitati all'uso solo delle istanze Property, Feature, Option o ParameterInit definite nelle parole chiave dello schema di stampa nelle tecnologie create in Print Schema Framework. Le istanze di elemento specifiche del provider possono essere liberamente intercambiate all'interno di istanze di elemento definite nelle parole chiave dello schema di stampa. L'unico requisito è che le istanze di proprietà specifiche del provider (ovvero private) appartengano a uno spazio dei nomi chiaramente associato al provider.
 
 -   [Stampare lo sfondo dello schema](print-schema-background.md)
 

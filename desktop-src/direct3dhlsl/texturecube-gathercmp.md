@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCube:: TextureCube GatherCmp'
-description: 'Campiona e confronta una trama e restituisce tutti i componenti. | Metodi di TextureCube:: TextureCube GatherCmp'
+title: Metodi TextureCube::TextureCube GatherCmp
+description: Campione e confronta una trama e restituisce tutti i componenti. | Metodi TextureCube::TextureCube GatherCmp
 ms.assetid: EEC90CF8-9479-45D7-A9CE-74FC8DC3B1B5
 keywords:
 - Metodi GatherCmp HLSL
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: bbd3bc4c6a69c5ea708447904581c82ee60e773e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 712773239b8c444cbd3e0b97408e681cfbd80e9ead3b7dd76ff962a28897b27c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722381"
 ---
-# <a name="texturecubegathercmp-methods"></a>Metodi TextureCube:: GatherCmp
+# <a name="texturecubegathercmp-methods"></a>Metodi TextureCube::GatherCmp
 
-Per quattro valori Texel di un [**TextureCube**](texturecube.md) che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto rispetto a un valore di confronto.
+Per quattro valori texel di [**textureCube**](texturecube.md) che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto con un valore di confronto.
 
-Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, vedere la documentazione su [gather4_c](./gather4-c--sm5---asm-.md) .
+Per altre informazioni che [descrivono l'istruzione](./gather4-c--sm5---asm-.md) DXBC sottostante, vedere la documentazione su gather4_c.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, v
 
 | Metodo                                                                       | Descrizione                                                                                                      |
 |:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmp (S, float, float, uint)**](tcube-gathercmp-s-float-float-uint-.md) | Campiona e confronta una trama e restituisce tutti e quattro i componenti insieme allo stato dell'operazione.<br/> |
+| [**GatherCmp(S,float,float,uint)**](tcube-gathercmp-s-float-float-uint-.md) | Esempi e confronta una trama e restituisce tutti e quattro i componenti insieme allo stato dell'operazione.<br/> |
 
 
 

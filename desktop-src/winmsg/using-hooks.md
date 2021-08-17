@@ -1,28 +1,28 @@
 ---
-description: 'Altre informazioni su: uso di hook'
+description: Altre informazioni sull'uso degli hook
 ms.assetid: f0ca9e41-a9f7-435f-a601-f0959adcb514
 title: Uso di hook
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d65d457b4549601aa89c3dae5b6e05c1fe0afed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34539855a30a67964acfe671c29de3cacdf23314cbb51bb80027d4b388e47b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849631"
 ---
 # <a name="using-hooks"></a>Uso di hook
 
 Gli esempi di codice seguenti illustrano come eseguire le attività seguenti associate agli hook:
 
--   [Installazione e rilascio di procedure Hook](#installing-and-releasing-hook-procedures)
+-   [Installazione e rilascio di routine hook](#installing-and-releasing-hook-procedures)
 -   [Monitoraggio degli eventi di sistema](#monitoring-system-events)
 
-## <a name="installing-and-releasing-hook-procedures"></a>Installazione e rilascio di procedure Hook
+## <a name="installing-and-releasing-hook-procedures"></a>Installazione e rilascio di routine hook
 
-È possibile installare una routine hook chiamando la funzione [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) e specificando il tipo di hook che chiama la procedura, se la routine deve essere associata a tutti i thread nello stesso desktop del thread chiamante o con un thread particolare e un puntatore al punto di ingresso della routine.
+È possibile installare una routine hook chiamando la funzione [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) e specificando il tipo di hook che chiama la procedura, se la procedura deve essere associata a tutti i thread nello stesso desktop del thread chiamante o con un thread specifico e un puntatore al punto di ingresso della procedura.
 
-È necessario inserire una routine hook globale in una DLL separata dall'applicazione che installa la routine hook. Per poter installare la routine hook, l'applicazione di installazione deve disporre dell'handle per il modulo DLL. Per recuperare un handle per il modulo DLL, chiamare la funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome della dll. Una volta ottenuto l'handle, è possibile chiamare la funzione [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per recuperare un puntatore alla routine hook. Infine, usare [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) per installare l'indirizzo della procedura di hook nella catena di hook appropriata. **SetWindowsHookEx** passa l'handle del modulo, un puntatore al punto di ingresso della routine di hook e 0 per l'identificatore del thread, a indicare che la routine hook deve essere associata a tutti i thread nello stesso desktop del thread chiamante. Questa sequenza è illustrata nell'esempio seguente.
+È necessario inserire una routine hook globale in una DLL separata dall'applicazione che installa la procedura hook. L'applicazione che esegue l'installazione deve avere l'handle per il modulo DLL prima di poter installare la procedura hook. Per recuperare un handle per il modulo DLL, chiamare la [**funzione LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome della DLL. Dopo aver ottenuto l'handle, è possibile chiamare la [**funzione GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per recuperare un puntatore alla routine hook. Usare infine [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) per installare l'indirizzo della procedura hook nella catena di hook appropriata. **SetWindowsHookEx** passa l'handle del modulo, un puntatore al punto di ingresso della procedura hook e 0 per l'identificatore del thread, a indicare che la routine hook deve essere associata a tutti i thread nello stesso desktop del thread chiamante. Questa sequenza è illustrata nell'esempio seguente.
 
 ``` syntax
 HOOKPROC hkprcSysMsg;
@@ -39,25 +39,25 @@ hhookSysMsg = SetWindowsHookEx(
                     0); 
 ```
 
-È possibile rilasciare una routine hook specifica del thread, ovvero rimuovere il relativo indirizzo dalla catena di hook, chiamando la funzione [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) , specificando l'handle per la procedura di hook da rilasciare. Rilasciare una procedura hook non appena l'applicazione non è più necessaria.
+È possibile rilasciare una routine hook specifica del thread (rimuoverne l'indirizzo dalla catena di hook) chiamando la funzione [**UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) specificando l'handle per la procedura hook da rilasciare. Rilasciare una procedura hook non appena l'applicazione non ne ha più bisogno.
 
-È possibile rilasciare una routine hook globale usando [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex), ma questa funzione non libera la DLL contenente la procedura di hook. Ciò è dovuto al fatto che le routine hook globali vengono chiamate nel contesto del processo di ogni applicazione sul desktop, causando una chiamata implicita alla funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) per tutti questi processi. Poiché non è possibile effettuare una chiamata alla funzione [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) per un altro processo, non esiste alcun modo per liberare la dll. Il sistema infine libera la DLL dopo che tutti i processi collegati in modo esplicito alla DLL sono stati terminati o sono denominati **FreeLibrary** e tutti i processi che hanno chiamato la routine hook hanno ripreso l'elaborazione all'esterno della dll.
+È possibile rilasciare una routine hook globale usando [**UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex)ma questa funzione non libera la DLL contenente la procedura hook. Ciò è dovuto al fatto che le routine hook globali vengono chiamate nel contesto del processo di ogni applicazione nel desktop, causando una chiamata implicita alla funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) per tutti questi processi. Poiché non è possibile eseguire una chiamata alla funzione [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) per un altro processo, non è possibile liberare la DLL. Il sistema libera infine la DLL dopo che tutti i processi collegati in modo esplicito alla DLL sono stati terminati o chiamati **FreeLibrary** e tutti i processi che hanno chiamato la routine hook hanno ripreso l'elaborazione all'esterno della DLL.
 
-Un metodo alternativo per l'installazione di una procedura di hook globale è fornire una funzione di installazione nella DLL, insieme alla routine hook. Con questo metodo, l'applicazione di installazione non necessita dell'handle per il modulo DLL. Tramite il collegamento con la DLL, l'applicazione ottiene l'accesso alla funzione di installazione. La funzione di installazione può fornire l'handle del modulo DLL e altri dettagli nella chiamata a [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa). La DLL può inoltre contenere una funzione che rilascia la routine hook globale; l'applicazione può chiamare questa funzione di rilascio hook quando viene terminata.
+Un metodo alternativo per l'installazione di una procedura hook globale consiste nel fornire una funzione di installazione nella DLL, insieme alla procedura hook. Con questo metodo, l'applicazione di installazione non richiede l'handle per il modulo DLL. Tramite il collegamento alla DLL, l'applicazione ottiene l'accesso alla funzione di installazione. La funzione di installazione può fornire l'handle del modulo DLL e altri dettagli nella chiamata a [**SetWindowsHookEx.**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) La DLL può anche contenere una funzione che rilascia la routine hook globale. L'applicazione può chiamare questa funzione di rilascio dell'hook al termine.
 
 ## <a name="monitoring-system-events"></a>Monitoraggio degli eventi di sistema
 
-Nell'esempio seguente vengono utilizzate diverse procedure Hook specifiche dei thread per monitorare il sistema per gli eventi che interessano un thread. Viene illustrato come elaborare gli eventi per i tipi di routine hook seguenti:
+Nell'esempio seguente viene utilizzata un'ampia gamma di routine hook specifiche del thread per monitorare il sistema per gli eventi che interessano un thread. Viene illustrato come elaborare gli eventi per i tipi di routine hook seguenti:
 
--   **CALLWNDPROC di WH \_**
--   **\_CBT WH**
--   **DEBUG di WH \_**
--   **WH \_ GETmessage**
--   **\_tastiera WH**
--   **\_mouse WH**
--   **MSGFILTER di WH \_**
+-   **WH \_ CALLWNDPROC**
+-   **WH \_ CBT**
+-   **WH \_ DEBUG**
+-   **WH \_ GETMESSAGE**
+-   **TASTIERA \_ WH**
+-   **WH \_ MOUSE**
+-   **WH \_ MSGFILTER**
 
-L'utente può installare e rimuovere una procedura di hook usando il menu. Quando viene installata una procedura hook e viene eseguito un evento monitorato dalla procedura, la procedura scrive le informazioni sull'evento nell'area client della finestra principale dell'applicazione.
+L'utente può installare e rimuovere una procedura hook usando il menu . Quando viene installata una routine hook e si verifica un evento monitorato dalla procedura, la procedura scrive informazioni sull'evento nell'area client della finestra principale dell'applicazione.
 
 
 ```

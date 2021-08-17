@@ -24,7 +24,7 @@ Le sezioni seguenti descrivono i passaggi rimanenti per la creazione di un'appli
 
 ## <a name="complete-server-source-code"></a>Completare il codice sorgente del server
 
--   [Codice server completo](complete-server-code.md)
+-   [Completare il codice del server](complete-server-code.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

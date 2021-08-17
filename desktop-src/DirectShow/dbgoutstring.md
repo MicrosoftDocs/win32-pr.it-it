@@ -1,7 +1,7 @@
 ---
-description: La funzione DbgOutString invia una stringa al percorso di output di debug. Ignorato nelle compilazioni al dettaglio.
+description: La funzione DbgOutString invia una stringa al percorso di output di debug. Ignorato nelle build per la vendita al dettaglio.
 ms.assetid: 644bf4f7-ec2d-466e-85c6-690dd44da702
-title: Funzione DbgOutString (Wxdebug. h)
+title: Funzione DbgOutString (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bdc12d4b73080f00a3d32c80074a801146ea4a74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6d8b74b5f0643f619a58beeea2dcd5526889d1a65de4815b06d2d6047777d90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821559"
 ---
-# <a name="dbgoutstring-function"></a>DbgOutString (funzione)
+# <a name="dbgoutstring-function"></a>Funzione DbgOutString
 
-La funzione **DbgOutString** invia una stringa al percorso di output di debug. Ignorato nelle compilazioni al dettaglio.
+La **funzione DbgOutString** invia una stringa al percorso di output di debug. Ignorato nelle build per la vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ void DbgOutString(
 
 <dl> <dt>
 
-*PSZ* 
+*Psz* 
 </dt> <dd>
 
-Stringa da restituire.
+Stringa da visualizzare nell'output.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle build di debug questa funzione restituisce sempre la stringa, indipendentemente dai livelli di output di debug correnti. Per un controllo più preciso sull'output, usare la macro [**DbgLog**](dbglog.md) .
+Nelle build di debug questa funzione restituisce sempre la stringa, indipendentemente dal livello di output di debug corrente. Per un controllo più dettagliato sull'output, usare la macro [**DbgLog.**](dbglog.md)
 
 ## <a name="examples"></a>Esempio
 
@@ -72,8 +72,8 @@ DbgOutString("Creating the filter graph...\n");
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura Printer enum \_ values specifica il nome del valore, il tipo e i dati per un valore di configurazione della stampante restituito dalla funzione EnumPrinterDataEx.
+description: La struttura PRINTER ENUM VALUES specifica il nome del valore, il tipo e i dati per un valore di configurazione della stampante restituito \_ \_ dalla funzione EnumPrinterDataEx.
 ms.assetid: 87eb1452-0d9d-46bd-8af8-0542a11a929b
-title: Struttura PRINTER_ENUM_VALUES (winspool. h)
+title: PRINTER_ENUM_VALUES struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: ea73318db7a91fa4d422624b1c3c0c6f09d97cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2b6fd8e548353dbede634d7b3bbaa08023d5e7bc2c8bc4cefbe37f7aba494ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470578"
 ---
-# <a name="printer_enum_values-structure"></a>\_ \_ Struttura dei valori enum della stampante
+# <a name="printer_enum_values-structure"></a>Struttura PRINTER \_ ENUM \_ VALUES
 
-La struttura **Printer \_ enum \_ values** specifica il nome del valore, il tipo e i dati per un valore di configurazione della stampante restituito dalla funzione [**EnumPrinterDataEx**](enumprinterdataex.md) .
+La **struttura PRINTER \_ ENUM \_ VALUES** specifica il nome del valore, il tipo e i dati per un valore di configurazione della stampante restituito dalla [**funzione EnumPrinterDataEx.**](enumprinterdataex.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ typedef struct _PRINTER_ENUM_VALUES {
 **pValueName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del valore recuperato.
+Puntatore a una stringa con terminazione Null che specifica il nome del valore recuperato.
 
 </dd> <dt>
 
 **cbValueName**
 </dt> <dd>
 
-Numero di byte nel membro **pValueName** , incluso il carattere null di terminazione.
+Numero di byte nel membro **pValueName,** incluso il carattere NULL di terminazione.
 
 </dd> <dt>
 
 **dwType**
 </dt> <dd>
 
-Codice che indica il tipo di dati a cui fa riferimento il membro **pData** . Per un elenco dei possibili codici di tipo, vedere [tipi di valore del registro di sistema](/windows/desktop/SysInfo/registry-value-types).
+Codice che indica il tipo di dati a cui punta il **membro pData.** Per un elenco dei codici di tipo possibili, vedere Tipi [di valori del Registro di sistema](/windows/desktop/SysInfo/registry-value-types).
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntatore a un buffer contenente i dati per il valore recuperato.
 **cbData**
 </dt> <dd>
 
-Numero di byte recuperati nel buffer **pData** .
+Numero di byte recuperati nel buffer **pData.**
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ Numero di byte recuperati nel buffer **pData** .
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ Printer \_ enum \_ VALUESW** (Unicode) e **\_ Printer \_ enum \_ values** (ANSI)<br/>                 |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ PRINTER \_ ENUM \_ VALUESW** (Unicode) e **\_ PRINTER \_ ENUM \_ VALUESA** (ANSI)<br/>                 |
 
 
 
@@ -100,7 +100,7 @@ Numero di byte recuperati nel buffer **pData** .
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrinterDataEx**](enumprinterdataex.md)

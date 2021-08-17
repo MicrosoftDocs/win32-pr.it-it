@@ -1,9 +1,9 @@
 ---
-title: Elemento to (sendEmailType)
+title: Elemento To (sendEmailType)
 description: Contiene gli indirizzi di posta elettronica a cui verrà inviato il messaggio di posta elettronica.
 ms.assetid: bf3aa878-967b-4ebd-9397-a2a499686a9f
 keywords:
-- All'elemento Utilità di pianificazione
+- A elemento Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b9e0643220915ecb1c8f2cd1fe842e0dc3f21d8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2367686e308eb33287dafc3ce274d039b71534048fea07bc313e0542af4e2041
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355641"
 ---
-# <a name="to-sendemailtype-element"></a>Elemento to (sendEmailType)
+# <a name="to-sendemailtype-element"></a>Elemento To (sendEmailType)
 
 Contiene gli indirizzi di posta elettronica a cui verrà inviato il messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene gli indirizzi di posta elettronica a cui verrà inviato il messaggio di
  />
 ```
 
-L'elemento **to** è definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento To** è definito dal tipo complesso [**sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **to** è definito dal tipo complesso [**sendEmailType**](taskschedul
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**to property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_to).
+Per lo sviluppo C++, vedere [**Proprietà To di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_to).
 
-Per lo sviluppo di script, vedere [**EmailAction.to**](emailaction-to.md).
+Per lo sviluppo di script, [**vedere EmailAction.To**](emailaction-to.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**EmailAction.to**](emailaction-to.md).
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Interfacce di gestione del trasporto WDS
+title: Interfacce Transport Management WDS
 ms.assetid: b86df804-f8d3-4267-9ee9-0a539068cfb2
-description: 'Altre informazioni su: interfacce di gestione del trasporto WDS'
+description: 'Altre informazioni su: WDS Transport Management Interfaces'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f1cb6148994962b451b443ba6a7b80430f93ef7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b8874d762691cc83d4bac445e75e5fd477ad330e46fddf97533ea4c13f51cb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745497"
 ---
-# <a name="wds-transport-management-interfaces"></a>Interfacce di gestione del trasporto WDS
+# <a name="wds-transport-management-interfaces"></a>Interfacce Transport Management WDS
 
-La gestione del trasporto di servizi di distribuzione Windows (WDS) utilizza le interfacce seguenti:
+Windows Servizi di distribuzione (WDS) Transport Management le interfacce seguenti:
 
 -   [**IWdsTransportCacheable**](/windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportcacheable)
 -   [**IWdsTransportClient**](/windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportclient)

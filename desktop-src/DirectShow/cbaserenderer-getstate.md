@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetState recupera lo stato dei filtri (in esecuzione, arrestato o sospeso).
 ms.assetid: 5d35824c-2509-499a-bbb1-1fb916b51808
-title: Metodo CBaseRenderer. GetState (Renbase. h)
+title: Metodo CBaseRenderer.GetState (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 451078a6167ff7ca89ad4153c416826af8ac6d05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 532a41bb9e39f844b3a485fc236ae8d03450d45cdcb45d92c8cfa94d9af4a4bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403410"
 ---
-# <a name="cbaserenderergetstate-method"></a>Metodo CBaseRenderer. GetState
+# <a name="cbaserenderergetstate-method"></a>Metodo CBaseRenderer.GetState
 
-Il `GetState` metodo recupera lo stato dei filtri (in esecuzione, arrestato o sospeso).
+Il metodo recupera lo stato dei filtri `GetState` (in esecuzione, arrestato o sospeso).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ HRESULT GetState(
 *dwMilliSecsTimeout* 
 </dt> <dd>
 
-Intervallo di timeout, in millisecondi.
+Intervallo di timeout, espresso in millisecondi.
 
 </dd> <dt>
 
 *State* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un membro del tipo enumerato [**\_ dello stato del filtro**](/windows/win32/api/strmif/ne-strmif-filter_state) , che indica lo stato del filtro.
+Puntatore a una variabile che riceve un membro del tipo enumerato [**FILTER \_ STATE,**](/windows/win32/api/strmif/ne-strmif-filter_state) che indica lo stato del filtro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                    |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                                            |
-| <dl> <dt>**\_ \_ stato \_ INTERmedio di VFW**</dt> </dl> | Il filtro sta passando allo stato indicato.<br/> |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                  | Argomento puntatore **null** .<br/>                          |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                                            |
+| <dl> <dt>**VFW \_ S \_ STATE \_ INTERMEDIATE**</dt> </dl> | Il filtro sta per passare allo stato indicato.<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>                  | Argomento del puntatore **NULL.**<br/>                          |
 
 
 
@@ -75,7 +75,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseFilter:: GetState**](cbasefilter-getstate.md) . Quando il renderer viene sospeso, non viene completata la transizione di stato fino a quando non viene ricevuto un campione per il rendering. Se il timeout scade prima del completamento della transizione di stato, il metodo restituisce l' \_ \_ intermediario dello stato VFW S \_ .
+Questo metodo esegue l'override [**del metodo CBaseFilter::GetState.**](cbasefilter-getstate.md) Quando il renderer viene sospeso, non completa la transizione di stato fino a quando non riceve un campione di cui eseguire il rendering. Se il timeout scade prima del completamento della transizione dello stato, il metodo restituisce VFW \_ S \_ STATE \_ INTERMEDIATE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Questo metodo esegue l'override del metodo [**CBaseFilter:: GetState**](cbasefil
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

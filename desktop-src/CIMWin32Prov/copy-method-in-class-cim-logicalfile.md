@@ -1,5 +1,5 @@
 ---
-description: "Metodo Copy della classe CIM_LogicalFile: il metodo Copy copia il file logico (o la directory) specificato nel percorso dell'oggetto nel percorso specificato dal parametro di input."
+description: "Metodo Copy della CIM_LogicalFile: il metodo Copy copia il file logico (o la directory) specificato nel percorso dell'oggetto nel percorso specificato dal parametro di input."
 ms.assetid: 643946e4-5d32-4839-ae1f-80ec7cede429
 ms.tgt_platform: multiple
 title: Metodo Copy della classe CIM_LogicalFile
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 10ba9c28bde9d909d947e5a73241ce1aa8f1e956
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9decb093a78817e36dbaed1e904406c73b3b66fb0c6c3bfb7701ecdf44986b8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419817"
 ---
-# <a name="copy-method-of-the-cim_logicalfile-class"></a>Metodo Copy della classe \_ CiM LogicalFile
+# <a name="copy-method-of-the-cim_logicalfile-class"></a>Metodo Copy della classe \_ CIM LogicalFile
 
 Il **metodo Copy** copia il file logico (o la directory) specificato nel percorso dell'oggetto nel percorso specificato dal parametro di input.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -50,7 +50,7 @@ uint32 Copy(
 *FileName* \[ Pollici\]
 </dt> <dd>
 
-Nome completo del file o della directory di destinazione.
+Nome completo del file di destinazione (o directory).
 
 Esempio: "c: \\ temp \\ newdirectory"
 
@@ -183,7 +183,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

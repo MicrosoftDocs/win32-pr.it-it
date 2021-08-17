@@ -24,7 +24,7 @@ I writer e i richiedenti archiviano le informazioni sui componenti separatamente
 Le informazioni sui componenti nei documenti dei metadati del writer includono quanto segue:
 
 -   Informazioni di un solo writer in ogni documento
--   Tutti i componenti del writer, indipendentemente dal fatto che possano essere inclusi in modo esplicito o che siano inclusi [*in modo implicito*](vssgloss-i.md) in un'operazione di backup o ripristino [](vssgloss-e.md)
+-   Tutti i componenti del writer, che [](vssgloss-e.md) possono essere inclusi in modo esplicito o devono essere [*inclusi in modo implicito*](vssgloss-i.md) in un'operazione di backup o ripristino
 -   [*Informazioni sul percorso*](vssgloss-l.md) logico usate per associare un componente selezionabile per il backup a particolari componenti non selezionabili per il backup, formando così un set di componenti
 -   Informazioni [*sul set*](vssgloss-f.md) di file, ovvero percorso, specifica del file e flag di ricorsione, gestite per ogni componente
 
@@ -36,7 +36,7 @@ Le informazioni sui componenti nei documenti dei componenti di backup includono 
 -   Informazioni sui metadati a livello di writer, ad esempio mapping di percorsi alternativi e ripristino
 -   Informazioni sullo stato che descrivono un'operazione di backup o ripristino
 
-I documenti dei componenti di backup non contengono informazioni sui [*set di file dei componenti.*](vssgloss-f.md) I documenti dei componenti di backup non sono di sola lettura e possono essere modificati dal writer. L'interfaccia per accedere a queste informazioni è [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent).
+I documenti dei componenti di backup non contengono informazioni sui set [*di file dei componenti.*](vssgloss-f.md) I documenti dei componenti di backup non sono di sola lettura e possono essere modificati dal writer. L'interfaccia per accedere a queste informazioni è [**IVssComponent**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent).
 
 Il ciclo di vita e la relazione tra le due espressioni di un componente possono essere compresi come segue:
 
@@ -49,7 +49,7 @@ Il ciclo di vita e la relazione tra le due espressioni di un componente possono 
 Per eseguire correttamente le operazioni di backup e ripristino, sia il writer che il componente delle versioni richiedenti devono essere archiviate con tutti i dati di cui è stato eseguito il backup:
 
 -   [Tipi di componenti](component-types.md)
--   [Definizione di componenti da parte di writer](definition-of-components-by-writers.md)
+-   [Definizione di componenti di writer](definition-of-components-by-writers.md)
 -   [Uso dei componenti da parte del richiedente](use-of-components-by-the-requestor.md)
 
  

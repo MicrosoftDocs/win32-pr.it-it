@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c68e1e763a3b6d04dbcd8c8afec8d29ccc136954
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4a74e811a3edab92a2c7a17f14f1fbd65ea8abe46176cd121e6f182621db035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333037"
 ---
 # <a name="videoformat-attribute"></a>Attributo VideoFormat
 
-L'attributo **VideoFormat** è un codice FourCC che identifica il formato video dell'elemento.
+**L'attributo VideoFormat** è un codice FourCC che identifica il formato video dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -29,7 +29,7 @@ L'attributo **VideoFormat** è un codice FourCC che identifica il formato video 
 
 ## <a name="remarks"></a>Commenti
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

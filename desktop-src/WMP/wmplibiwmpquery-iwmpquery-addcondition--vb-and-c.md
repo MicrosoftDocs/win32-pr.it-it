@@ -5,7 +5,7 @@ ms.assetid: 4594ee6f-b153-4d53-b3ee-cd1718a4d5dc
 keywords:
 - Metodo addCondition Windows Media Player
 - Metodo addCondition Windows Media Player, interfaccia IWMPQuery
-- Interfaccia IWMPQuery Windows Media Player, metodo addCondition
+- Interfaccia IWMPQuery Windows Media Player , metodo addCondition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9de3015ef0389fef82934cbd8e9326b6f9ec2307
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe85999c60364827d483f81d14ff88602c9b2831c16e7cff8a3e17076b77671d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745706"
 ---
-# <a name="iwmpqueryaddcondition-method"></a>Metodo IWMPQuery:: addCondition
+# <a name="iwmpqueryaddcondition-method"></a>Metodo IWMPQuery::addCondition
 
-Il metodo **addCondition** aggiunge una condizione alla query composta usando la logica **and** .
+Il **metodo addCondition** aggiunge una condizione alla query composta usando la **logica AND.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,24 +57,24 @@ Implements IWMPQuery.addCondition
 
 <dl> <dt>
 
-*bstrAttribute* \[ in\]
+*bstrAttribute* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo da aggiungere alla query.
+Oggetto **System.String** che rappresenta il nome dell'attributo da aggiungere alla query.
 
 </dd> <dt>
 
-*bstrOperator* \[ in\]
+*bstrOperator* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta l'operatore. Vedere la sezione Osservazioni per i valori supportati.
+Oggetto **System.String** che rappresenta l'operatore . Vedere Osservazioni per i valori supportati.
 
 </dd> <dt>
 
-*bstrValue* \[ in\]
+*bstrValue* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che corrisponde al valore dell'attributo.
+Oggetto **System.String** che rappresenta il valore dell'attributo.
 
 </dd> </dl>
 
@@ -84,11 +84,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Le condizioni contenute in una query composta sono organizzate in gruppi di condizioni. Più condizioni all'interno di un gruppo di condizioni sono sempre concatenate usando **e** la logica. I gruppi di condizioni sono sempre concatenati tra loro tramite **o** la logica. Per avviare un nuovo gruppo di condizioni, chiamare [IWMPQuery. beginNextGroup](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md).
+Le condizioni contenute in una query composta sono organizzate in gruppi di condizioni. Più condizioni all'interno di un gruppo di condizioni vengono sempre concatenate usando la **logica AND.** I gruppi di condizioni vengono sempre concatenati tra loro usando la **logica OR.** Per avviare un nuovo gruppo di condizioni, chiamare [IWMPQuery.beginNextGroup](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md).
 
-Le query composte con **IWMPQuery** non fanno distinzione tra maiuscole e minuscole
+Per le query composte **che usano IWMPQuery** non viene fatto distinzione tra maiuscole e minuscole.
 
-È possibile trovare un elenco di valori per il parametro *bstrAttribute* in [riferimento all'attributo alfabetico](alphabetical-attribute-reference.md).
+Un elenco di valori per il *parametro bstrAttribute* è disponibile in [Informazioni di riferimento per gli attributi alfabetici.](alphabetical-attribute-reference.md)
 
 Nella tabella seguente sono elencati i valori supportati per *bstrOperator*.
 
@@ -113,7 +113,7 @@ Nella tabella seguente sono elencati i valori supportati per *bstrOperator*.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creata una query, vengono aggiunte due condizioni e viene utilizzata la query per estrarre i risultati della query come raccolta di stringhe. I risultati vengono quindi visualizzati in una casella di riepilogo. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente crea una query, aggiunge due condizioni e la usa per estrarre i risultati della query come raccolta di stringhe. I risultati vengono quindi visualizzati in una casella di riepilogo. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -181,16 +181,16 @@ Next i
 
 <dl> <dt>
 
-[**Riferimento alfabetico agli attributi**](alphabetical-attribute-reference.md)
+[**Informazioni di riferimento su attributi alfabetici**](alphabetical-attribute-reference.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPQuery**](iwmpquery--vb-and-c.md)

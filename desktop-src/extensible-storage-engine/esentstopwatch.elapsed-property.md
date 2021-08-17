@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà EsentStopwatch. trascorsi'
-title: Proprietà EsentStopwatch. trascorse
+description: Altre informazioni sulla proprietà EsentStopwatch.Elapsed
+title: Proprietà EsentStopwatch.Elapsed
 TOCTitle: 'Elapsed property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentStopwatch.Elapsed
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.elapsed(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5609d22ec8702bcf02ff36857e469a0426558e90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02d60a19f799d5470711e9479b7ce0b28e190cdc63a23f853aa45a02d60aa70d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490498"
 ---
-# <a name="esentstopwatchelapsed-property"></a>Proprietà EsentStopwatch. trascorse
+# <a name="esentstopwatchelapsed-property"></a>Proprietà EsentStopwatch.Elapsed
 
 Ottiene il tempo totale trascorso misurato dall'istanza corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ public TimeSpan Elapsed { get; private set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. TimeSpan](/dotnet/api/system.timespan)  
+Tipo: [System.TimeSpan](/dotnet/api/system.timespan)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,4 +70,4 @@ Tipo: [System. TimeSpan](/dotnet/api/system.timespan)
 
 [Membri di EsentStopwatch](./esentstopwatch-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

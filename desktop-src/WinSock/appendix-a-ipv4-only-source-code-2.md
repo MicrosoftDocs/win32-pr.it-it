@@ -13,14 +13,14 @@ ms.locfileid: "118560637"
 ---
 # <a name="appendix-a-ipv4-only-source-code"></a>Appendice A: Codice sorgente solo IPv4
 
-Questa appendice fornisce il codice sorgente per gli esempi di Platform Software Development Kit (SDK) Simplec.c e Simples.c, usati in questa guida IPv6 come esempi:
+Questa appendice fornisce il codice sorgente per gli esempi di Platform Software Development Kit (SDK) Simplec.c e Simples.c, che vengono usati in questa guida IPv6 come esempi:
 
 -   [Codice client solo IPv4](ipv4-only-client-code-2.md)
 -   [Codice server solo IPv4](ipv4-only-server-code-2.md)
 
 > [!WARNING]
 >
-> Questo codice è incluso in questa guida per contrapporre il codice indipendente dalla versione IP fornito nell'appendice B. Questo codice di esempio viene fornito a scopo di confronto e per fornire un riferimento chiaro e immediatamente disponibile durante la lettura di questa guida IPv6. Una versione IP indipendente da questo codice sorgente è disponibile [nell'Appendice B: Codice sorgente Agnostico](appendix-b-ip-version-agnostic-source-code-2.md)versione IP .
+> Questo codice è incluso in questa guida per contrapporre il codice indipendente dalla versione IP fornito nell'Appendice B. Questo codice di esempio viene fornito a scopo di confronto e per fornire un riferimento chiaro e immediatamente disponibile durante la lettura di questa guida IPv6. Una versione IP indipendente da questo codice sorgente è disponibile [nell'Appendice B: Codice sorgente indipendente dalla](appendix-b-ip-version-agnostic-source-code-2.md)versione IP .
 
  
 

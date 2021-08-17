@@ -1,5 +1,5 @@
 ---
-description: Aggiunge una stringa all'inizio dell'elenco MRU (Most Recently Used).
+description: Aggiunge una stringa all'inizio dell'elenco degli elementi usati più di recente.
 title: Funzione AddMRUStringW
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: ad94a442-8492-412c-a4f2-ac6e7c5327d7
-ms.openlocfilehash: b62e23cd0604273559e36e561970dd62f117c11d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4ac72c44b670466f10cd708b81b1a84f93a349afcb0d81473ed5e6578c20617a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861593"
 ---
 # <a name="addmrustringw-function"></a>Funzione AddMRUStringW
 
-\[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere stato modificato o non disponibile nelle versioni successive di Windows. \]
+\[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows. \]
 
 Aggiunge una stringa all'inizio dell'elenco degli elementi usati più di recente.
 
@@ -57,7 +57,7 @@ Handle dell'elenco MRU.
 
 Tipo: **LPCTSTR**
 
-Puntatore ai dati. Può trattarsi di una stringa o, se l'elenco MRU è stato creato con il flag **\_ BINARY MRU,** dati binari. Nel caso di dati binari, il primo **valore DWORD** ne indica le dimensioni.
+Puntatore ai dati. Può trattarsi di una stringa o, se l'elenco MRU è stato creato con il flag **BINARY MRU, \_** dati binari. Nel caso di dati binari, il primo **valore DWORD** ne indica le dimensioni.
 
 </dd> </dl>
 

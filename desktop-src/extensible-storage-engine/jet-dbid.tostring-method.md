@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 97fb6b251ca369adcdd55e6b5ead4d36624b6d6e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 8051840b178d70e204c7a6f88cc575b7e1ab7b18301ba7900073d001dcb15d70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486361"
 ---
 # <a name="jet_dbidtostring-method-overload-list"></a>JET_DBID. Elenco di overload del metodo ToString
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -40,11 +40,11 @@ Includi membri ereditati
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="hh596160(v=exchg.10).md">ToString()</a></td>
-<td>Genera una rappresentazione di stringa della struttura. Esegue l'override di <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>.</td>
+<td>Generare una rappresentazione di stringa della struttura . Esegue l'override <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">di ValueType.ToString().</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh557823(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557823(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Formatta il valore dell'istanza corrente usando il formato specificato.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_DBID](./jet-dbid-structure.md)
+[JET_DBID struttura](./jet-dbid-structure.md)
 
-[Membri JET_DBID](./jet-dbid-members.md)
+[JET_DBID membri](./jet-dbid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,21 +1,21 @@
 ---
-title: Lettura di flussi da un file AVI
-description: Lettura di flussi da un file AVI
+title: Lettura Flussi da un file AVI
+description: Lettura Flussi da un file AVI
 ms.assetid: fa17cac4-bc6f-48ef-8960-286386b43c82
 keywords:
-- AVIStreamInfo (funzione)
+- Funzione AVIStreamInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edbea431a5a5f08602b026e26fd15dfe684c555d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84d42c4682c1875fffbea079ab9ef55d954f15d3e9d49c2da1309504da68aa92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371516"
 ---
-# <a name="reading-streams-from-an-avi-file"></a>Lettura di flussi da un file AVI
+# <a name="reading-streams-from-an-avi-file"></a>Lettura Flussi da un file AVI
 
-La subroutine seguente ottiene informazioni sul flusso da un file AVI e determina il tipo di flusso dalla struttura [**AVISTREAMINFO**](/windows/desktop/api/Vfw/ns-vfw-avistreaminfoa) restituita dalla funzione [**AVISTREAMINFO**](/windows/desktop/api/Vfw/nf-vfw-avistreaminfoa) .
+La subroutine seguente ottiene informazioni sul flusso da un file AVI e determina il tipo di flusso dalla [**struttura AVISTREAMINFO**](/windows/desktop/api/Vfw/ns-vfw-avistreaminfoa) restituita dalla [**funzione AVIStreamInfo.**](/windows/desktop/api/Vfw/nf-vfw-avistreaminfoa)
 
 
 ```C++
@@ -60,9 +60,9 @@ void StreamTypes(HWND hwnd)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

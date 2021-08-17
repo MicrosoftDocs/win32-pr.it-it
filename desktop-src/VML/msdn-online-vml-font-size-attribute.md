@@ -1,50 +1,50 @@
 ---
-title: Attributo Font-Size la
-description: Attributo Font-Size la
+title: Attributo vml Font-Size
+description: Attributo vml Font-Size
 ms.assetid: 49394cd5-3009-424a-97d3-28c85d874bc4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c02b2df8fb0076ed6df6342e40b980ed8aa248e5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 401d66668b0a86b92e453ac2e4a8a9adb96411131cc90f7bf14bd22be67e6775
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104474179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346578"
 ---
-# <a name="vml-font-size-attribute"></a>Attributo Font-Size la
+# <a name="vml-font-size-attribute"></a>Attributo vml Font-Size
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce la dimensione del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
+Definisce le dimensioni del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Percorso di testo](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "font-size: *Expression* " >
+<v: *element* style="font-size: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. FontSize = "*Expression*"
+*element* .style.fontsize="*expression*"
 
-*espressione* = *element*. Style. FontSize
+*expression* = *elemento*.style.fontsize
 
 **Osservazioni:**
 
-Le dimensioni del carattere sono definite in punti. I valori corrispondono agli attributi di stile HTML standard.
+La dimensione del carattere è definita in punti. I valori sono gli stessi degli attributi di stile HTML standard.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La dimensione del carattere è 36 punti.
+La dimensione del carattere è di 36 punti.
 
 
 ```HTML
@@ -58,6 +58,6 @@ La dimensione del carattere è 36 punti.
 
 
 
- 
+ 
 
- 
+ 

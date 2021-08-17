@@ -1,19 +1,19 @@
 ---
 title: Come usare il Servizio di memorizzazione nella cache
-description: Questo argomento contiene codice di esempio che illustra come usare le funzionalità di memorizzazione nella cache (o recupero bulk) dell'albero di automazione interfaccia utente Microsoft.
+description: Questo argomento contiene codice di esempio che illustra come usare le funzionalità di memorizzazione nella cache (o recupero bulk) di Microsoft Automazione interfaccia utente albero.
 ms.assetid: d72fa637-35ca-4c28-922d-263f469cb1c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8758621a8499202b820a6ffc3459fade57c2a485
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a020f200384f88e1e4f06f9418676e8fc567851424ed03b1c36e2e6299f98e45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133254"
 ---
 # <a name="how-to-use-caching"></a>Come usare il Servizio di memorizzazione nella cache
 
-Questo argomento contiene codice di esempio che illustra come usare le funzionalità di memorizzazione nella cache (o recupero bulk) dell'albero di automazione interfaccia utente Microsoft. Vengono illustrati gli argomenti seguenti:
+Questo argomento contiene codice di esempio che illustra come usare le funzionalità di memorizzazione nella cache (o recupero bulk) di Microsoft Automazione interfaccia utente albero. Vengono illustrati gli argomenti seguenti:
 
 -   [Recupero di proprietà e pattern di controllo nella cache](#fetching-properties-and-control-patterns-into-the-cache)
 -   [Recupero di proprietà e pattern di controllo dalla cache](#retrieving-properties-and-control-patterns-from-the-cache)
@@ -21,7 +21,7 @@ Questo argomento contiene codice di esempio che illustra come usare le funzional
 
 ## <a name="fetching-properties-and-control-patterns-into-the-cache"></a>Recupero di proprietà e pattern di controllo nella cache
 
-Nell'esempio di codice seguente viene illustrata una funzione che recupera gli elementi da un controllo elenco e memorizza nella cache il pattern di controllo SelectionItem e la proprietà Name per ogni elemento. Per impostazione predefinita, gli elementi dell'elenco vengono restituiti con un riferimento completo, in modo che tutte le proprietà correnti siano ancora disponibili.
+Nell'esempio di codice seguente viene illustrata una funzione che recupera elementi da un controllo elenco e memorizza nella cache il pattern di controllo SelectionItem e la proprietà Name per ogni elemento. Per impostazione predefinita, gli elementi dell'elenco vengono restituiti con un riferimento completo, in modo che tutte le proprietà correnti siano ancora disponibili.
 
 
 ```C++
@@ -69,7 +69,7 @@ cleanup:
 
 ## <a name="retrieving-properties-and-control-patterns-from-the-cache"></a>Recupero di proprietà e pattern di controllo dalla cache
 
-Il codice seguente illustra come recuperare le proprietà e i pattern di controllo dalla cache. Recupera il pattern di controllo SelectionItem e la proprietà Name per un elemento elenco.
+Nel codice seguente viene illustrato come recuperare proprietà e pattern di controllo dalla cache. Recupera il pattern di controllo SelectionItem e la proprietà Name per un elemento dell'elenco.
 
 
 ```C++
@@ -127,15 +127,15 @@ HRESULT GetCachedListItem(IUIAutomationElement* pItem)
 **Informazioni concettuali**
 </dt> <dt>
 
-[Memorizzare nella cache le proprietà e i pattern di controllo di automazione interfaccia utente](uiauto-cachingforclients.md)
+[Caching Automazione interfaccia utente proprietà e pattern di controllo](uiauto-cachingforclients.md)
 </dt> <dt>
 
-[Procedure per i client di automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-clients.md)
+[Procedure per i Automazione interfaccia utente client](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

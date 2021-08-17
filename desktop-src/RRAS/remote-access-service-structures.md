@@ -4,20 +4,20 @@ description: Usare le strutture seguenti per implementare la funzionalità RAS.
 ms.assetid: c20e8892-7c5e-48cc-939a-9b747fefe09d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc836f8759f522f0fede724db3738e7906448e00
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 006e887126ae68c36aa902674f7b8a4f7a101e0e71630323251afbb78c5b90c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788350"
 ---
 # <a name="remote-access-service-structures"></a>Strutture del servizio di accesso remoto
 
 Usare le strutture seguenti per implementare la funzionalità RAS.
 
-[**\_informazioni sulla proiezione RAS \_**](/windows/desktop/api/Ras/ns-ras-ras_projection_info)
+[**INFORMAZIONI \_ SULLA PROIEZIONE \_ RAS**](/windows/desktop/api/Ras/ns-ras-ras_projection_info)
 
-[**\_statistiche RAS**](/windows/desktop/api/Ras/ns-ras-ras_stats)
+[**STATISTICHE \_ RAS**](/windows/desktop/api/Ras/ns-ras-ras_stats)
 
 [**RASADPARAMS**](/previous-versions/windows/desktop/legacy/aa376719(v=vs.85))
 
@@ -59,7 +59,7 @@ Usare le strutture seguenti per implementare la funzionalità RAS.
 
 [**RASENTRYNAME**](/previous-versions/windows/desktop/legacy/aa377267(v=vs.85))
 
-[**\_Informazioni sulla proiezione RASIKEV2 \_**](/windows/desktop/api/ras/ns-ras-rasikev2_projection_info)
+[**INFORMAZIONI SULLA PROIEZIONE RASIKEV2 \_ \_**](/windows/desktop/api/ras/ns-ras-rasikev2_projection_info)
 
 [**RASIPADDR**](/previous-versions/windows/desktop/legacy/aa377578(v=vs.85))
 
@@ -71,7 +71,7 @@ Usare le strutture seguenti per implementare la funzionalità RAS.
 
 [**RASPBDLG**](/previous-versions/windows/desktop/legacy/aa377607(v=vs.85))
 
-[**\_informazioni sulla proiezione RASPPP \_**](/windows/desktop/api/Ras/ns-ras-rasppp_projection_info)
+[**INFORMAZIONI SULLA \_ PROIEZIONE \_ RASPPP**](/windows/desktop/api/Ras/ns-ras-rasppp_projection_info)
 
 [**RASPPPCCP**](/previous-versions/windows/desktop/legacy/aa377620(v=vs.85))
 
@@ -85,7 +85,7 @@ Usare le strutture seguenti per implementare la funzionalità RAS.
 
 [**RASPPPNBF**](/previous-versions/windows/desktop/legacy/aa377642(v=vs.85))
 
-[**\_tipo di informazioni RASPROJECTION \_**](/windows/desktop/api/ras/ne-ras-rasprojection_info_type)
+[**TIPO DI INFORMAZIONI \_ \_ RASPROJECTION**](/windows/desktop/api/ras/ne-ras-rasprojection_info_type)
 
 [**RASSLIP**](/previous-versions/windows/desktop/legacy/aa377836(v=vs.85))
 
@@ -95,6 +95,6 @@ Usare le strutture seguenti per implementare la funzionalità RAS.
 
 [**RASUPDATECONN**](/previous-versions/windows/desktop/legacy/dd408110(v=vs.85))
 
- 
+ 
 
- 
+ 

@@ -13,13 +13,13 @@ ms.locfileid: "118564419"
 ---
 # <a name="state-property"></a>Proprietà State
 
-La **proprietà State** descrive lo stato di un oggetto in un momento specifico. Tutti gli oggetti supportano la **proprietà** State.
+La **proprietà State** descrive lo stato di un oggetto in un momento specifico. Tutti gli oggetti supportano **la proprietà** State.
 
 La **proprietà State** viene recuperata chiamando [**IAccessible::get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate).
 
-Microsoft Active Accessibility fornisce [costanti di stato](object-state-constants.md)dell'oggetto, definite in oleacc.h, combinate per identificare lo stato di un oggetto. È consigliabile che gli sviluppatori di server usino questi valori di stato predefiniti. Se vengono restituiti valori di stato predefiniti, i client usano [**GetStateText**](/windows/desktop/api/Oleacc/nf-oleacc-getstatetexta) per recuperare una stringa localizzata che descrive lo stato.
+Microsoft Active Accessibility fornisce [costanti di stato](object-state-constants.md)dell'oggetto , definite in oleacc.h, che vengono combinate per identificare lo stato di un oggetto. È consigliabile che gli sviluppatori di server usino questi valori di stato predefiniti. Se vengono restituiti valori di stato predefiniti, i client usano [**GetStateText**](/windows/desktop/api/Oleacc/nf-oleacc-getstatetexta) per recuperare una stringa localizzata che descrive lo stato.
 
-La grafica animata occasionalmente deve avere la **proprietà State** impostata su STATE [**SYSTEM \_ \_ ANIMATED**](object-state-constants.md) e [**la proprietà Role**](role-property.md) impostata su ROLE SYSTEM [**\_ \_ GRAPHIC.**](object-roles.md)
+La grafica a cui viene occasionalmente animata la proprietà **State** deve essere impostata su [**STATE SYSTEM \_ \_ ANIMATED**](object-state-constants.md) e la [**proprietà Role**](role-property.md) su ROLE [**SYSTEM \_ \_ GRAPHIC.**](object-roles.md)
 
  
 

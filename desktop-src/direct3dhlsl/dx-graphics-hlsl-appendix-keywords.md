@@ -16,7 +16,7 @@ keywords:
 - DepthStencilState, parola chiave HLSL
 - DepthStencilView, parola chiave HLSL
 - Discard, parola chiave HLSL
-- Do, parola chiave HLSL
+- Parola chiave Do, HLSL
 - Double, parola chiave HLSL
 - Else, parola chiave HLSL
 - Export, parola chiave HLSL
@@ -103,15 +103,15 @@ Microsoft High Level Shader Language (HLSL) riconosce le parole in questa sezion
 
 - [**AppendStructuredBuffer**](sm5-object-appendstructuredbuffer.md), asm, frammento \_ asm
 - BlendState, [bool](dx-graphics-hlsl-scalar.md), [break](dx-graphics-hlsl-break.md), [**Buffer**](dx-graphics-hlsl-buffer.md), [**ByteAddressBuffer**](sm5-object-byteaddressbuffer.md)
-- case, [cbuffer](dx-graphics-hlsl-constants.md), [centroid](dx-graphics-hlsl-struct.md), [class](overviews-direct3d-11-hlsl-dynamic-linking-class.md), column [ \_ major](dx-graphics-hlsl-variable-syntax.md), [compile](dx-graphics-hlsl-shader.md), [**compile \_ fragment**](fragment-declaration-syntax.md), **CompileShader**, const, [continue](dx-graphics-hlsl-continue.md), ComputeShader, [**ConsumeStructuredBuffer**](sm5-object-consumestructuredbuffer.md)
-- default, DepthStencilState, DepthStencilView, [discard](dx-graphics-hlsl-discard.md), [do](dx-graphics-hlsl-do.md), [double](dx-graphics-hlsl-scalar.md), [DomainShader](dx-graphics-hlsl-shader.md), dword
+- case, [cbuffer](dx-graphics-hlsl-constants.md), [centroid](dx-graphics-hlsl-struct.md), [class](overviews-direct3d-11-hlsl-dynamic-linking-class.md), [column \_ major](dx-graphics-hlsl-variable-syntax.md), [compile](dx-graphics-hlsl-shader.md), [**compile \_ fragment**](fragment-declaration-syntax.md), **CompileShader**, const, [continue](dx-graphics-hlsl-continue.md), ComputeShader, [**ConsumeStructuredBuffer**](sm5-object-consumestructuredbuffer.md)
+- default, DepthStencilState, DepthStencilView, [discard](dx-graphics-hlsl-discard.md), [do](dx-graphics-hlsl-do.md), [double](dx-graphics-hlsl-scalar.md), [DomainShader,](dx-graphics-hlsl-shader.md)dword
 - [else](dx-graphics-hlsl-if.md), [export](#export), [extern](dx-graphics-hlsl-variable-syntax.md)
 - false, [float](dx-graphics-hlsl-scalar.md), [per](dx-graphics-hlsl-for.md), fxgroup
 - [GeometryShader](dx-graphics-hlsl-shader.md), [groupshared](dx-graphics-hlsl-variable-syntax.md)
 - [half](dx-graphics-hlsl-scalar.md), [Hullshader](dx-graphics-hlsl-shader.md)
-- [se](dx-graphics-hlsl-if.md), [in](dx-graphics-hlsl-function-parameters.md), [inline](dx-graphics-hlsl-function-syntax.md), [inout](dx-graphics-hlsl-function-parameters.md), [**InputPatch**](sm5-object-inputpatch.md), [int](dx-graphics-hlsl-scalar.md), [interface](overviews-direct3d-11-hlsl-dynamic-linking-class.md)
-- [line, lineadj](dx-graphics-hlsl-geometry-shader.md), [linear](dx-graphics-hlsl-struct.md), [LineStream](dx-graphics-hlsl-so-type.md)
-- [matrix](dx-graphics-hlsl-matrix.md), [min16float](dx-graphics-hlsl-scalar.md), [min10float](dx-graphics-hlsl-scalar.md), [min16int](dx-graphics-hlsl-scalar.md), [min12int](dx-graphics-hlsl-scalar.md), [min16uint](dx-graphics-hlsl-scalar.md)
+- [se](dx-graphics-hlsl-if.md), [in](dx-graphics-hlsl-function-parameters.md), [inline](dx-graphics-hlsl-function-syntax.md), [inout](dx-graphics-hlsl-function-parameters.md), [**InputPatch**](sm5-object-inputpatch.md), [int](dx-graphics-hlsl-scalar.md), [interfaccia](overviews-direct3d-11-hlsl-dynamic-linking-class.md)
+- [line, lineadj,](dx-graphics-hlsl-geometry-shader.md) [lineare,](dx-graphics-hlsl-struct.md) [LineStream](dx-graphics-hlsl-so-type.md)
+- [matrix,](dx-graphics-hlsl-matrix.md) [min16float,](dx-graphics-hlsl-scalar.md) [min10float,](dx-graphics-hlsl-scalar.md) [min16int,](dx-graphics-hlsl-scalar.md) [min12int,](dx-graphics-hlsl-scalar.md) [min16uint](dx-graphics-hlsl-scalar.md)
 - namespace, [nointerpolation](dx-graphics-hlsl-struct.md), [noperspective](dx-graphics-hlsl-struct.md), NULL
 - [out](dx-graphics-hlsl-function-parameters.md), [ **OutputPatch**](sm5-object-outputpatch.md)
 - [**packoffset**](dx-graphics-hlsl-variable-packoffset.md), pass, [pixelfragment](fragment-declaration-syntax.md), [PixelShader](dx-graphics-hlsl-shader.md), [point](dx-graphics-hlsl-geometry-shader.md), [PointStream](dx-graphics-hlsl-so-type.md), [precise](dx-graphics-hlsl-variable-syntax.md)

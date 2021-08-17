@@ -19,7 +19,7 @@ La **proprietà DefaultAction** viene recuperata chiamando [**IAccessible::get \
 
 Per eseguire l'azione predefinita di un oggetto, i client chiamano [**IAccessible::accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction).
 
-Non tutti gli oggetti hanno azioni predefinite e alcuni oggetti hanno un'azione predefinita correlata alla relativa proprietà [**Value,**](value-property.md) come negli esempi seguenti:
+Non tutti gli oggetti hanno azioni predefinite e alcuni oggetti hanno un'azione predefinita correlata alla relativa proprietà [**Value,**](value-property.md) ad esempio negli esempi seguenti:
 
 -   Una casella di controllo selezionata ha un'azione predefinita "Deseleziona" e il valore "Checked".
 -   Una casella di controllo deselezionata ha un'azione predefinita "Check" e il valore "Unchecked".

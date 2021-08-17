@@ -3,20 +3,20 @@ title: Strutture di compressione video
 description: Strutture di compressione video
 ms.assetid: 129a65a7-cac3-47e0-9e9c-6e5a4a260c73
 keywords:
-- Strutture di video for Windows (VFW), VCM
-- VFW (video per Windows), strutture VCM
+- Video per Windows (VFW), strutture di VCM
+- VFW (Video per Windows),strutture di VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f42a01af4ab49b7470568ab931c95072b786251
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4e447e87a689df068d7f1df5956c76a0e4d5f39b8d4ba3f58592f1d1e33c7fca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370060"
 ---
 # <a name="video-compression-structures"></a>Strutture di compressione video
 
-Con la compressione video vengono utilizzate le strutture seguenti.
+Le strutture seguenti vengono usate con la compressione video.
 
 -   [**COMPVARS**](/windows/desktop/api/Vfw/ns-vfw-compvars)
 -   [**ICCOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-iccompress)
@@ -34,12 +34,12 @@ Con la compressione video vengono utilizzate le strutture seguenti.
 
 <dl> <dt>
 
-[Guida di riferimento a Gestione compressione video](video-compression-manager-reference.md)
+[Informazioni di riferimento su Gestione compressione video](video-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

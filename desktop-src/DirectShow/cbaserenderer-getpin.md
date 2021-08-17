@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b7c30767b7cba68931bc1ddde4905c9b7bc2bc29
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7c85b1a33abec4dfd10cf093e8673e270e7df02533846791a5d5d37702b51313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822702"
 ---
 # <a name="cbaserenderergetpin-method"></a>Metodo CBaseRenderer.GetPin
 
-Il `GetPin` metodo recupera un pin.
+Il `GetPin` metodo recupera un segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Numero del pin specificato. Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il [**puntatore CBaseRenderer::m \_ pInputPin.**](cbaserenderer-m-pinputpin.md)
+Restituisce il [**puntatore \_ pInputPin CBaseRenderer::m.**](cbaserenderer-m-pinputpin.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo implementa il [**metodo CBaseFilter::GetPin,**](cbasefilter-getpin.md) che è virtuale puro nella **classe CBaseFilter.** Il filtro supporta esattamente un pin (il pin di input). La prima volta che questo metodo viene chiamato, crea il segnaposto come nuovo [**oggetto CRendererInputPin.**](crendererinputpin.md)
+Questo metodo implementa il [**metodo CBaseFilter::GetPin,**](cbasefilter-getpin.md) che è virtuale puro nella **classe CBaseFilter.** Il filtro supporta esattamente un pin (pin di input). La prima volta che questo metodo viene chiamato, crea il segnaposto come nuovo [**oggetto CRendererInputPin.**](crendererinputpin.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo metodo implementa il [**metodo CBaseFilter::GetPin,**](cbasefilter-getpin
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
 description: Il metodo SetResizerGUID specifica il CLSID di un filtro di ridimensionamento video personalizzato.
 ms.assetid: 709a6e7f-64ae-406d-bb6d-29f6c65b63a8
-title: 'Metodo IRenderEngine2:: SetResizerGUID (qedit. h)'
+title: Metodo IRenderEngine2::SetResizerGUID (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 864053c2c5def6ef1b23ca2c2ee712664e132079
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e650a250333ac784e599d0bce820ef390a937f49bff2371b1b7a52b18d9d0ad6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818536"
 ---
-# <a name="irenderengine2setresizerguid-method"></a>Metodo IRenderEngine2:: SetResizerGUID
+# <a name="irenderengine2setresizerguid-method"></a>Metodo IRenderEngine2::SetResizerGUID
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `SetResizerGUID` metodo specifica il CLSID di un filtro di ridimensionamento video personalizzato. Chiamare questo metodo per sostituire il filtro di ridimensionamento predefinito utilizzato dai servizi di modifica DirectShow. Il filtro deve essere registrato come oggetto COM nel sistema dell'utente e deve supportare l'interfaccia [**IResize**](iresize.md) .
+Il `SetResizerGUID` metodo specifica il CLSID di un filtro di ridimensionamento video personalizzato. Chiamare questo metodo per sostituire il filtro di ridimensionamento predefinito usato DirectShow Servizi di modifica. Il filtro deve essere registrato come oggetto COM nel sistema dell'utente e deve supportare [**l'interfaccia IResize.**](iresize.md)
 
-Chiamare questo metodo prima di chiamare [**IRenderEngine:: ConnectFrontEnd**](irenderengine-connectfrontend.md).
+Chiamare questo metodo prima di [**chiamare IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT SetResizerGUID(
 
 <dl> <dt>
 
-*ResizerGuid* \[ in\]
+*ResizerGuid* \[ Pollici\]
 </dt> <dd>
 
 CLSID del filtro.
@@ -56,11 +56,11 @@ CLSID del filtro.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Per ripristinare il valore predefinito DES Resizer, usare il CLSID seguente:
+Per ripristinare il ridimensionamento DES predefinito, usare il CLSID seguente:
 
 
 ```C++
@@ -72,12 +72,12 @@ DEFINE_GUID(CLSID_Resize,
 
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -87,9 +87,9 @@ DEFINE_GUID(CLSID_Resize,
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

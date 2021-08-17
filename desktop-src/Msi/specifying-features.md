@@ -13,7 +13,7 @@ ms.locfileid: "118624695"
 ---
 # <a name="specifying-features"></a>Specifica delle funzionalità
 
-Il programma di installazione Microsoft consente agli utenti di installare e rimuovere blocchi di funzionalità dell'applicazione definiti Windows [funzionalità del programma di installazione.](windows-installer-features.md) In questa sezione si aggiungono al database di installazione informazioni sulle funzionalità disponibili per l'Blocco note esempio. Per altre informazioni, vedere [Core Tables Group](core-tables-group.md) and Components and [Features](components-and-features.md).
+Microsoft Installer consente agli utenti di installare e rimuovere blocchi di funzionalità dell'applicazione definiti Windows [funzionalità del programma di installazione.](windows-installer-features.md) In questa sezione si aggiungono informazioni al database di installazione sulle funzionalità disponibili per l'Blocco note esempio. Per altre informazioni, vedere [Gruppo](core-tables-group.md) e componenti e funzionalità delle [tabelle principali](components-and-features.md).
 
 L Blocco note di esempio installa le funzionalità in una gerarchia di funzionalità padre e figlio. Nell'elenco seguente le funzionalità figlio vengono rientrate rispetto alla relativa funzionalità padre. Le funzionalità devono essere visualizzate in questo ordine nel [controllo SelectionTree dell'interfaccia](selectiontree-control.md) utente.
 
@@ -41,20 +41,20 @@ Usare un editor di database per aprire MNP2000.msi e immettere i dati seguenti n
 
 
 
-| Funzionalità  | Elemento padre \_ della funzionalità | Titolo         | Descrizione                | Visualizza | Level | Directory\_ | Attributi |
+| Funzionalità  | Elemento \_ padre della funzionalità | Titolo         | Descrizione                | Visualizza | Level | Directory\_ | Attributi |
 |----------|-----------------|---------------|----------------------------|---------|-------|-------------|------------|
-| Arti     |                 | Arti          | Eventi di rito al Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
-| Baseball | Sport           | Baseball      | Baseball Games             | 17      | 3     | SPORTDIR    | 32         |
-| Concerto  | Arti            | Concerto       | Eventi di concertare al Red Park | 21      | 3     | DIRDIR     | 2          |
-| Danza    | Arti            | Danza         | Eventi di musica classica al Red Park   | 23      | 3     | DIRDIR     | 2          |
-| Calcio | Sport           | Calcio      | Giochi di football             | 19      | 3     | SPORTDIR    | 2          |
+| Arti     |                 | Arti          | Eventi di arti a Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
+| Baseball | Sport           | Baseball      | Giochi di baseball             | 17      | 3     | SPORTDIR    | 32         |
+| Concerto  | Arti            | Concerto       | Eventi di concerto a Red Park | 21      | 3     | ARTODIR     | 2          |
+| Danza    | Arti            | Danza         | Eventi di danze a Red Park   | 23      | 3     | ARTODIR     | 2          |
+| Calcio | Sport           | Calcio      | Giochi di calcio             | 19      | 3     | SPORTDIR    | 2          |
 | Cancello     |                 | Cancello          | Ammissioni di Red Park      | 6       | 3     | NOTEPADDIR  | 0          |
 | Help     | Blocco note         | Help          | File della Guida.                 | 5       | 3     | NOTEPADDIR  | 1          |
-| January  | Cancello            | January       | Ammissioni di gennaio         | 10      | 3     | CHER      | 2          |
-| NewYears | January         | New Years Day | New Years Day Admissions   | 11      | 3     | HOLDIR      | 2          |
+| January  | Cancello            | January       | Ammissioni di gennaio         | 10      | 3     | MONDIR      | 2          |
+| NewYears | January         | Giorno del nuovo anno | Ammissioni per il giorno del nuovo anno   | 11      | 3     | HOLDIR      | 2          |
 | Blocco note  |                 | Blocco note       | Blocco note Editore             | 1       | 3     | NOTEPADDIR  | 0          |
 | File Leggimi   | Blocco note         | File Leggimi        | File Leggimi                | 3       | 3     | NOTEPADDIR  | 0          |
-| Sport    |                 | Eventi di sport  | Eventi di sport a Red Park   | 14      | 3     | NOTEPADDIR  | 0          |
+| Sport    |                 | Eventi di sport  | Eventi sport al Red Park   | 14      | 3     | NOTEPADDIR  | 0          |
 
 
 

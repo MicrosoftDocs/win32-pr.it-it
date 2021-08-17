@@ -1,7 +1,7 @@
 ---
-description: Deprecato. Specifica le unità di data per modificare la struttura CALDATETIME.
+description: Deprecato. Specifica le unità di data per la regolazione della struttura CALDATETIME.
 ms.assetid: 20d0cd7a-6e6b-4c82-9cfa-e4f4315d6362
-title: Enumerazione CALDATETIME_DATEUNIT
+title: CALDATETIME_DATEUNIT enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6ce1f8929dd6e2f7de59d32d66229f73c062505c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f73aeebe738a631bff95a07beaa0b5928d3d1935ac7b400ed5fa333e79c1f044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118391601"
 ---
-# <a name="caldatetime_dateunit-enumeration"></a>\_Enumerazione CALDATETIME DATEUNIT
+# <a name="caldatetime_dateunit-enumeration"></a>Enumerazione CALDATETIME \_ DATEUNIT
 
-Deprecato. Specifica le unità di data per modificare la struttura [**CALDATETIME**](caldatetime.md) .
+Deprecato. Specifica le unità di data per la regolazione della [**struttura CALDATETIME.**](caldatetime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,49 +64,49 @@ Unità di data e ora dell'anno.
 <span id="MonthUnit"></span><span id="monthunit"></span><span id="MONTHUNIT"></span>**MonthUnit**
 </dt> <dd>
 
-Unità di data/ora del mese.
+Unità di data e ora del mese.
 
 </dd> <dt>
 
 <span id="WeekUnit"></span><span id="weekunit"></span><span id="WEEKUNIT"></span>**WeekUnit**
 </dt> <dd>
 
-Unità di data/ora della settimana.
+Unità di data e ora della settimana.
 
 </dd> <dt>
 
 <span id="DayUnit"></span><span id="dayunit"></span><span id="DAYUNIT"></span>**DayUnit**
 </dt> <dd>
 
-Unità di data/ora del giorno.
+Unità di data e ora del giorno.
 
 </dd> <dt>
 
 <span id="HourUnit"></span><span id="hourunit"></span><span id="HOURUNIT"></span>**HourUnit**
 </dt> <dd>
 
-Unità di data e ora.
+Unità di data e ora dell'ora.
 
 </dd> <dt>
 
 <span id="MinuteUnit"></span><span id="minuteunit"></span><span id="MINUTEUNIT"></span>**MinuteUnit**
 </dt> <dd>
 
-Unità di data/ora di minuti.
+Unità di data e ora dei minuti.
 
 </dd> <dt>
 
 <span id="SecondUnit"></span><span id="secondunit"></span><span id="SECONDUNIT"></span>**SecondUnit**
 </dt> <dd>
 
-Seconda unità di data/ora.
+Seconda unità di data e ora.
 
 </dd> <dt>
 
 <span id="TickUnit"></span><span id="tickunit"></span><span id="TICKUNIT"></span>**TickUnit**
 </dt> <dd>
 
-Unità di data e ora del segno di selezione.
+Unità di tempo della data del tick.
 
 </dd> </dl>
 
@@ -116,8 +116,8 @@ Unità di data e ora del segno di selezione.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -125,7 +125,7 @@ Unità di data e ora del segno di selezione.
 
 <dl> <dt>
 
-[Tipi di enumerazione del supporto linguistico nazionale](national-language-support-enumeration-types.md)
+[Tipi di enumerazione per il supporto del linguaggio nazionale](national-language-support-enumeration-types.md)
 </dt> </dl>
 
  

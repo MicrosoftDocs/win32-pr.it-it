@@ -1,5 +1,5 @@
 ---
-description: Vengono descritti gli operatori WQL utilizzati nella clausola WHERE o nell'istruzione SELECT.
+description: Descrive gli operatori WQL usati nella clausola WHERE o nell'istruzione SELECT.
 ms.assetid: a62de66d-d5ba-49a1-8262-bfa10ac2db75
 ms.tgt_platform: multiple
 title: Operatori WQL
@@ -14,7 +14,7 @@ ms.locfileid: "118553088"
 ---
 # <a name="wql-operators"></a>Operatori WQL
 
-Il Windows WQL (Windows Management Instrumentation Query Language) supporta un set di operatori standard utilizzati nella clausola [WHERE](where-clause.md) di un'istruzione SELECT, come indicato di seguito.
+Il Windows Management Instrumentation Query Language (WQL) supporta un set di operatori standard usati nella clausola [WHERE](where-clause.md) di un'istruzione SELECT, come indicato di seguito.
 
 
 
@@ -57,7 +57,7 @@ Per altre informazioni sulla sintassi e sull'uso di questo operatore, vedere gli
 
 -   [Operatore ISA per query di dati](isa-operator-for-data-queries.md)
 -   [Operatore ISA per query di eventi](isa-operator-for-event-queries.md)
--   [Operatore ISA per query sullo schema](isa-operator-for-schema-queries.md)
+-   [Operatore ISA per query di schema](isa-operator-for-schema-queries.md)
 
 L'operatore LIKE è valido nella clausola WHERE e viene usato per determinare se una determinata stringa di caratteri corrisponde a un criterio specificato. Ad esempio, la query seguente restituisce tutte le istanze delle classi \_ Win32.
 
@@ -68,7 +68,7 @@ SELECT * FROM Meta_Class WHERE __Class LIKE "%Win32%"
 
 
 
-Per altre informazioni sulla sintassi e sull'uso di questo operatore, vedere [Operatore LIKE.](like-operator.md)
+Per altre informazioni sulla sintassi e sull'uso di questo operatore, vedere [Operatore LIKE](like-operator.md).
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Se questa proprietà è true, il dispositivo è un dispositivo condiviso.
 ms.assetid: d1da0747-ad07-49e5-8082-5f39bf0a84d8
-title: System. Devices. transshared
+title: System.Devices.IsShared
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f41cf4f6ad2988a21e30c0c67101b2582699704
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4f305381d43eb0d5f4305d2a838561883182a3855d63fcc23b97a128a5c0def
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118467523"
 ---
-# <a name="systemdevicesisshared"></a>System. Devices. transshared
+# <a name="systemdevicesisshared"></a>System.Devices.IsShared
 
 Se questa proprietà è true, il dispositivo è un dispositivo condiviso.
 
@@ -73,7 +73,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -88,13 +88,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -103,7 +103,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

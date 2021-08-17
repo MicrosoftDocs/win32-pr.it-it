@@ -1,61 +1,61 @@
 ---
-title: Messaggi casella di riepilogo
-description: Messaggi casella di riepilogo
+title: Messaggi della casella di riepilogo
+description: Messaggi della casella di riepilogo
 ms.assetid: 6594bfd1-550f-47ba-9b92-551f2a5c08a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 344e08b3fa34969d1602f730e41400bc02ef19ab
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71bdcbac0af6473d872e8260946280c25d24dc424a5b6a5c66013788157e5dd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833392"
 ---
-# <a name="list-box-messages"></a>Messaggi casella di riepilogo
+# <a name="list-box-messages"></a>Messaggi della casella di riepilogo
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_AddFile lb**](lb-addfile.md)
--   [**\_ADDSTRING lb**](lb-addstring.md)
--   [**\_DELETESTRING lb**](lb-deletestring.md)
--   [**\_dir lb**](lb-dir.md)
--   [**\_FindString lb**](lb-findstring.md)
--   [**\_FINDEXACTSTRING lb**](lb-findstringexact.md)
--   [**\_GETANCHORINDEX lb**](lb-getanchorindex.md)
--   [**\_GETCARETINDEX lb**](lb-getcaretindex.md)
--   [**CONTEGGIO di LB \_**](lb-getcount.md)
--   [**LB \_ GETcursel**](lb-getcursel.md)
--   [**\_GETHORIZONTALEXTENT lb**](lb-gethorizontalextent.md)
--   [**\_GETITEMDATA lb**](lb-getitemdata.md)
--   [**\_GETITEMHEIGHT lb**](lb-getitemheight.md)
--   [**\_GETITEMRECT lb**](lb-getitemrect.md)
--   [**\_GETLISTBOXINFO lb**](lb-getlistboxinfo.md)
--   [**LB \_ GETlocale**](lb-getlocale.md)
--   [**\_GETSEL lb**](lb-getsel.md)
--   [**\_GETSELCOUNT lb**](lb-getselcount.md)
--   [**\_GETSELITEMS lb**](lb-getselitems.md)
--   [**GetText LB \_**](lb-gettext.md)
--   [**\_GETTEXTLEN lb**](lb-gettextlen.md)
--   [**\_GETTOPINDEX lb**](lb-gettopindex.md)
--   [**\_INITSTORAGE lb**](lb-initstorage.md)
--   [**\_INSERTSTRING lb**](lb-insertstring.md)
--   [**\_ITEMFROMPOINT lb**](lb-itemfrompoint.md)
--   [**\_ResetContent lb**](lb-resetcontent.md)
--   [**\_SELECTSTRING lb**](lb-selectstring.md)
--   [**\_SELITEMRANGE lb**](lb-selitemrange.md)
--   [**\_SELITEMRANGEEX lb**](lb-selitemrangeex.md)
--   [**\_SETANCHORINDEX lb**](lb-setanchorindex.md)
--   [**\_SETCARETINDEX lb**](lb-setcaretindex.md)
--   [**\_SETCOLUMNWIDTH lb**](lb-setcolumnwidth.md)
--   [**\_conteggio lb**](lb-setcount.md)
--   [**di \_ lb**](lb-setcursel.md)
--   [**\_SETHORIZONTALEXTENT lb**](lb-sethorizontalextent.md)
--   [**\_SETITEMDATA lb**](lb-setitemdata.md)
--   [**\_SETITEMHEIGHT lb**](lb-setitemheight.md)
--   [**\_impostazioni locali lb**](lb-setlocale.md)
--   [**\_SETSEL lb**](lb-setsel.md)
--   [**\_SETTABSTOPS lb**](lb-settabstops.md)
--   [**\_SETTOPINDEX lb**](lb-settopindex.md)
+-   [**LB \_ ADDFILE**](lb-addfile.md)
+-   [**LB \_ ADDSTRING**](lb-addstring.md)
+-   [**LB \_ DELETESTRING**](lb-deletestring.md)
+-   [**LB \_ DIR**](lb-dir.md)
+-   [**LB \_ FINDSTRING**](lb-findstring.md)
+-   [**LB \_ FINDSTRINGEXACT**](lb-findstringexact.md)
+-   [**LB \_ GETANCHORINDEX**](lb-getanchorindex.md)
+-   [**LB \_ GETCARETINDEX**](lb-getcaretindex.md)
+-   [**LB \_ GETCOUNT**](lb-getcount.md)
+-   [**LB \_ GETCURSEL**](lb-getcursel.md)
+-   [**LB \_ GETHORIZONTALEXTENT**](lb-gethorizontalextent.md)
+-   [**LB \_ GETITEMDATA**](lb-getitemdata.md)
+-   [**LB \_ GETITEMHEIGHT**](lb-getitemheight.md)
+-   [**LB \_ GETITEMRECT**](lb-getitemrect.md)
+-   [**LB \_ GETLISTBOXINFO**](lb-getlistboxinfo.md)
+-   [**LB \_ GETLOCALE**](lb-getlocale.md)
+-   [**LB \_ GETSEL**](lb-getsel.md)
+-   [**LB \_ GETSELCOUNT**](lb-getselcount.md)
+-   [**LB \_ GETSELITEMS**](lb-getselitems.md)
+-   [**LB \_ GETTEXT**](lb-gettext.md)
+-   [**LB \_ GETTEXTLEN**](lb-gettextlen.md)
+-   [**LB \_ GETTOPINDEX**](lb-gettopindex.md)
+-   [**LB \_ INITSTORAGE**](lb-initstorage.md)
+-   [**LB \_ INSERTSTRING**](lb-insertstring.md)
+-   [**LB \_ ITEMFROMPOINT**](lb-itemfrompoint.md)
+-   [**LB \_ RESETCONTENT**](lb-resetcontent.md)
+-   [**LB \_ SELECTSTRING**](lb-selectstring.md)
+-   [**LB \_ SELITEMRANGE**](lb-selitemrange.md)
+-   [**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md)
+-   [**LB \_ SETANCHORINDEX**](lb-setanchorindex.md)
+-   [**LB \_ SETCARETINDEX**](lb-setcaretindex.md)
+-   [**LB \_ SETCOLUMNWIDTH**](lb-setcolumnwidth.md)
+-   [**LB \_ SETCOUNT**](lb-setcount.md)
+-   [**LB \_ SETCURSEL**](lb-setcursel.md)
+-   [**LB \_ SETHORIZONTALEXTENT**](lb-sethorizontalextent.md)
+-   [**LB \_ SETITEMDATA**](lb-setitemdata.md)
+-   [**LB \_ SETITEMHEIGHT**](lb-setitemheight.md)
+-   [**LB \_ SETLOCALE**](lb-setlocale.md)
+-   [**LB \_ SETSEL**](lb-setsel.md)
+-   [**LB \_ SETTABSTOPS**](lb-settabstops.md)
+-   [**LB \_ SETTOPINDEX**](lb-settopindex.md)
 
  
 

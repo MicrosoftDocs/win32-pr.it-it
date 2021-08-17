@@ -4,20 +4,20 @@ ms.assetid: f7d5aa66-3b8e-496a-a7fd-209f7334a868
 title: Australia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d00d98e13e2e0b8ea326a0e1e831b02553f8917
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f25b95b9ac5e6936fd38cf910f87357834f73dd72bc582c5e3dbdf7c8282f1e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104048945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824241"
 ---
 # <a name="australia"></a>Australia
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Gli indici di frequenza nella tabella Australia non sono adatti per l'uso come numeri di canale. Si noti inoltre che i canali 3, 4, 5 e 5A vengono eliminati gradualmente per altri usi.
+Gli indici di frequenza nella tabella Australia non sono adatti per l'uso come numeri di canale. Si noti anche che i canali 3, 4, 5 e 5A vengono gradualmente sfasati per altri usi.
 
-### <a name="australia-broadcast-assignments"></a>Assegnazioni broadcast in Australia
+### <a name="australia-broadcast-assignments"></a>Assegnazioni di trasmissioni in Australia
 
 
 ```C++
@@ -82,7 +82,7 @@ Gli indici di frequenza nella tabella Australia non sono adatti per l'uso come n
 
 
 
-### <a name="australia-cable-assignments"></a>Assegnazioni di cavi Australia
+### <a name="australia-cable-assignments"></a>Assegnazioni di cavi in Australia
 
 
 ```C++
@@ -151,7 +151,7 @@ Gli indici di frequenza nella tabella Australia non sono adatti per l'uso come n
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analoga internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

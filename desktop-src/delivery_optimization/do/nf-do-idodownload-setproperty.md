@@ -23,7 +23,7 @@ ms.locfileid: "118543900"
 ---
 # <a name="idodownloadsetproperty-method"></a>Metodo IDODownload::SetProperty
 
-Imposta una proprietà di download. Il metodo accetta un puntatore a **UN VARIANT** che contiene una proprietà specifica da applicare al download.
+Imposta una proprietà di download. Il metodo accetta un puntatore a **un variant** che contiene una proprietà specifica da applicare al download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,19 +38,19 @@ HRESULT SetProperty(
 
 `propId`
 
-ID di proprietà obbligatorio da impostare (di tipo **DODownloadProperty**).
+ID di proprietà obbligatorio da impostare (di **tipo DODownloadProperty).**
 
 `propVal`
 
-Valore della proprietà da impostare, archiviato in un **elemento VARIANT.**
+Valore della proprietà da impostare, archiviato in un **variant.**
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [.](/windows/desktop/com/com-error-codes-10)
+Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [](/windows/desktop/com/com-error-codes-10).
 
 |Valore restituito|Descrizione|
 |-|-|
-|DO_E_UNKNOWN_PROPERTY_ID|*propId* sconosciuto.|
+|DO_E_UNKNOWN_PROPERTY_ID|*propId* è sconosciuto.|
 |DO_E_INVALID_STATE|Il download non è attualmente in uno stato che consente l'impostazione delle proprietà.|
 
 ## <a name="requirements"></a>Requisiti
@@ -58,5 +58,5 @@ Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, resti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
-| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
 | **Intestazione** | Do.h |

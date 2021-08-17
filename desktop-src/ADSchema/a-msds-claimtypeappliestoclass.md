@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Claim-Type-si applica a class
-description: Per un oggetto tipo di attestazione, questo attributo collegato punta alle classi di entità di sicurezza di Active Directory per le quali devono essere emesse attestazioni. (Ad esempio, un collegamento alla classe User).
+title: Attributo ms-DS-Claim-Type-Applies-To-Class
+description: Per un oggetto tipo di attestazione, questo attributo collegato punta alle classi dell'entità di sicurezza di Active Directory per cui devono essere rilasciate le attestazioni. Ad esempio, un collegamento alla classe utente.
 ms.assetid: 2323b120-c7b4-41ea-a04f-5791d6b55813
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Claim-Type-si applica alla classe schema AD dell'attributo
-- attributo msDS-ClaimTypeAppliesToClass-schema AD
+- Schema AD dell'attributo ms-DS-Claim-Type-Applies-To-Class
+- Schema AD dell'attributo msDS-ClaimTypeAppliesToClass
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72b5d440b492f5a9b120420bddba31375aec877b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 55c9bf9b622c1a52b1476b83b659c685d2b4e9c207e156a3028b0487b2b6c17a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014911"
 ---
-# <a name="ms-ds-claim-type-applies-to-class-attribute"></a>attributo ms-DS-Claim-Type-si applica a class
+# <a name="ms-ds-claim-type-applies-to-class-attribute"></a>Attributo ms-DS-Claim-Type-Applies-To-Class
 
-Per un oggetto tipo di attestazione, questo attributo collegato punta alle classi di entità di sicurezza di Active Directory per le quali devono essere emesse attestazioni. (Ad esempio, un collegamento alla classe User).
+Per un oggetto tipo di attestazione, questo attributo collegato punta alle classi dell'entità di sicurezza di Active Directory per cui devono essere rilasciate le attestazioni. Ad esempio, un collegamento alla classe utente.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Claim-Type-si applica alla classe       |
-| LDAP-Display-Name | msDS-ClaimTypeAppliesToClass            |
+| CN                | ms-DS-Claim-Type-Applies-To-Class       |
+| Ldap-Display-Name | msDS-ClaimTypeAppliesToClass            |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2100                 |
-| System-ID-GUID    | 6afb0e4c-d876-437c-aeb6-c3e41454c272    |
+| System-Id-Guid    | 6afb0e4c-d876-437c-aeb6-c3e41454c272    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -53,15 +53,15 @@ Per un oggetto tipo di attestazione, questo attributo collegato punta alle class
 | ID collegamento                | 2176                                                    |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| A valore singolo       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
+| Classi usate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
 
 
 

@@ -1,21 +1,21 @@
 ---
 description: "Il tipo di enumerazione seguente viene usato con la tipografia Uniscribe e l'elaborazione di script complessi:"
 ms.assetid: e2f4e7ee-ee46-4daa-a599-c5da9d133ccf
-title: Tipi di enumerazione Uniscribe
+title: Annullare la sottoscrizione dei tipi di enumerazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dcf94c54e58c6c7c7fc1199bf08f5b9c10782db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c68359ddacb276d49d97594bdd6bdcd6b485b4dedca1606577e746ebe2fa5f54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389958"
 ---
-# <a name="uniscribe-enumeration-types"></a>Tipi di enumerazione Uniscribe
+# <a name="uniscribe-enumeration-types"></a>Annullare la sottoscrizione dei tipi di enumerazione
 
 Il tipo di enumerazione seguente viene usato con la tipografia Uniscribe e l'elaborazione di script complessi:
 
-[**\_giustifica script**](/windows/win32/api/usp10/ne-usp10-script_justify)
+[**GIUSTIFICAZIONE DELLO \_ SCRIPT**](/windows/win32/api/usp10/ne-usp10-script_justify)
 
  
 

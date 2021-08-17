@@ -1,6 +1,6 @@
 ---
 title: Proprietà di SystemMonitor
-description: La classe SystemMonitor dispone delle proprietà seguenti
+description: La classe SystemMonitor ha le proprietà seguenti
 ms.assetid: 37f8179a-50f8-481c-ae5e-d4081387eea0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16cee42f76a1fc448698ce7245e688279d8624a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17c4a26028219ebf4c1e3a8024493432c30e4c550c5d5e087ddf21a864d5ad27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882984"
 ---
 # <a name="systemmonitor-properties"></a>Proprietà di SystemMonitor
 
-La classe [**SystemMonitor**](systemmonitor.md) ha le proprietà seguenti:
+La [**classe SystemMonitor**](systemmonitor.md) ha le proprietà seguenti:
 
 -   [**Aspetto**](systemmonitor-appearance.md)
--   [**BackColor**](systemmonitor-backcolor.md)
+-   [**Backcolor**](systemmonitor-backcolor.md)
 -   [**BackColorCtl**](systemmonitor-backcolorctl.md)
 -   [**BorderStyle**](systemmonitor-borderstyle.md)
 -   [**ChartScroll**](systemmonitor-chartscroll.md)
@@ -31,7 +31,7 @@ La classe [**SystemMonitor**](systemmonitor.md) ha le proprietà seguenti:
 -   [**DisplayType**](systemmonitor-displaytype.md)
 -   [**EnableDigitGrouping**](systemmonitor-enabledigitgrouping.md)
 -   [**EnableToolTips**](systemmonitor-enabletooltips.md)
--   [**Carattere**](systemmonitor-font.md)
+-   [**Font**](systemmonitor-font.md)
 -   [**ColorePrimoPiano**](systemmonitor-forecolor.md)
 -   [**GraphTitle**](systemmonitor-graphtitle.md)
 -   [**GridColor**](systemmonitor-gridcolor.md)
@@ -52,7 +52,7 @@ La classe [**SystemMonitor**](systemmonitor.md) ha le proprietà seguenti:
 -   [**ShowLegend**](systemmonitor-showlegend.md)
 -   [**ShowScaleLabels**](systemmonitor-showscalelabels.md)
 -   [**ShowTimeAxisLabels**](systemmonitor-showtimeaxislabels.md)
--   [**MostraBarraStrumenti**](systemmonitor-showtoolbar.md)
+-   [**Mostrabarrastrumenti**](systemmonitor-showtoolbar.md)
 -   [**ShowValueBar**](systemmonitor-showvaluebar.md)
 -   [**ShowVerticalGrid**](systemmonitor-showverticalgrid.md)
 -   [**SqlDsnName**](systemmonitor-sqldsnname.md)
@@ -61,9 +61,9 @@ La classe [**SystemMonitor**](systemmonitor.md) ha le proprietà seguenti:
 -   [**UpdateInterval**](systemmonitor-updateinterval.md)
 -   [**YAxisLabel**](systemmonitor-yaxislabel.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture1D:: operator'
-description: 'Restituisce una variabile di risorsa. | Funzione RWTexture1D:: operator'
+title: Funzione RWTexture1D::Operator
+description: Restituisce una variabile di risorsa. | Funzione RWTexture1D::Operator
 ms.assetid: 16e62879-8ed3-4b17-9124-9da41c41af4f
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca44252a99e8b8e373cf109341c8c200636d8cf7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a6f338efd27573a86c661df36f9fc0e9906814bf15c1cc5d2d6c478a17f83a6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104530613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724852"
 ---
-# <a name="rwtexture1doperator--function"></a>Funzione RWTexture1D:: operator
+# <a name="rwtexture1doperator--function"></a>Funzione RWTexture1D::Operator
 
 Restituisce una variabile di risorsa.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture1D](sm5-object-rwtexture1d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

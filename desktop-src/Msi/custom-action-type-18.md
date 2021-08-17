@@ -1,15 +1,15 @@
 ---
-description: Gli sviluppatori di Windows Installer pacchetti possono scegliere di utilizzare un tipo di azione personalizzato 18 quando le azioni standard non sono sufficienti per eseguire l'installazione.
+description: Gli sviluppatori Windows pacchetti del programma di installazione possono scegliere di usare un'azione personalizzata di tipo 18 quando le azioni standard non sono sufficienti per eseguire l'installazione.
 ms.assetid: 8a7311a6-41c6-431e-982d-60bacf06454e
 title: Tipo di azione personalizzata 18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48a669fe3caa532b3a365f1056ca2b36f490ab95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b3befbb614e9ee78961cf5b8ef969bdb3d6e7b6c0cb713a267cab3d09b4588d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379277"
 ---
 # <a name="custom-action-type-18"></a>Tipo di azione personalizzata 18
 
@@ -17,11 +17,11 @@ Questa azione personalizzata chiama un eseguibile avviato con una riga di comand
 
 ## <a name="source"></a>Source (Sorgente)
 
-Il file eseguibile viene generato da un file installato con l'applicazione. Il campo di origine della [tabella CustomAction](customaction-table.md) contiene una chiave per la [tabella dei file](file-table.md). Il percorso del codice dell'azione personalizzata è determinato dalla risoluzione del percorso di destinazione per il file. Pertanto, questa azione personalizzata deve essere chiamata dopo l'installazione del file e prima della rimozione.
+L'eseguibile viene generato da un file installato con l'applicazione. Il campo Source della [tabella CustomAction](customaction-table.md) contiene una chiave per la [tabella File](file-table.md). Il percorso del codice di azione personalizzata è determinato dalla risoluzione del percorso di destinazione per questo file. pertanto questa azione personalizzata deve essere chiamata dopo l'installazione del file e prima della rimozione.
 
-## <a name="type-value"></a>Valore tipo
+## <a name="type-value"></a>Valore del tipo
 
-Includere il valore seguente nella colonna Type della [tabella CustomAction](customaction-table.md) per specificare il tipo numerico di base.
+Includere il valore seguente nella colonna Tipo della tabella [CustomAction per](customaction-table.md) specificare il tipo numerico di base.
 
 
 
@@ -35,39 +35,39 @@ Includere il valore seguente nella colonna Type della [tabella CustomAction](cus
 
 ## <a name="target"></a>Destinazione
 
-La colonna di destinazione della [tabella CustomAction](customaction-table.md) contiene la stringa della riga di comando per il file eseguibile identificato nella colonna di origine.
+La colonna Target della [tabella CustomAction contiene](customaction-table.md) la stringa della riga di comando per il file eseguibile identificato nella colonna Source.
 
 ## <a name="return-processing-options"></a>Opzioni di elaborazione restituite
 
-Includere i bit di flag facoltativi nella colonna Type della [tabella CustomAction](customaction-table.md) per specificare le opzioni di elaborazione della restituzione. Per una descrizione delle opzioni e dei valori, vedere [Opzioni di elaborazione della restituzione di un'azione personalizzata](custom-action-return-processing-options.md).
+Includere i bit di flag facoltativi nella colonna Tipo della [tabella CustomAction per](customaction-table.md) specificare le opzioni di elaborazione restituite. Per una descrizione delle opzioni e dei valori, vedere [Custom Action Return Processing Options](custom-action-return-processing-options.md).
 
 ## <a name="execution-scheduling-options"></a>Opzioni di pianificazione dell'esecuzione
 
-Includere i bit di flag facoltativi nella colonna Type della [tabella CustomAction](customaction-table.md) per specificare le opzioni di pianificazione dell'esecuzione. Queste opzioni controllano la multipla esecuzione di azioni personalizzate. Per una descrizione delle opzioni, vedere [Opzioni di pianificazione dell'esecuzione dell'azione personalizzata](custom-action-execution-scheduling-options.md).
+Includere bit di flag facoltativi nella colonna Tipo della [tabella CustomAction per](customaction-table.md) specificare le opzioni di pianificazione dell'esecuzione. Queste opzioni controllano l'esecuzione multipla di azioni personalizzate. Per una descrizione delle opzioni, vedere [Opzioni di pianificazione dell'esecuzione di azioni personalizzate](custom-action-execution-scheduling-options.md).
 
-## <a name="in-script-execution-options"></a>Opzioni di esecuzione In-Script
+## <a name="in-script-execution-options"></a>In-Script opzioni di esecuzione
 
-Includere i bit di flag facoltativi nella colonna Type della [tabella CustomAction](customaction-table.md) per specificare un'opzione di esecuzione in-script. Queste opzioni copiano il codice dell'azione nello script di esecuzione, rollback o commit. Per una descrizione delle opzioni, vedere [azione personalizzata In-Script opzioni di esecuzione](custom-action-in-script-execution-options.md).
+Includere bit di flag facoltativi nella colonna Tipo della [tabella CustomAction per](customaction-table.md) specificare un'opzione di esecuzione nello script. Queste opzioni copiano il codice azione nello script di esecuzione, rollback o commit. Per una descrizione delle opzioni, vedere [Custom Action In-Script Execution Options](custom-action-in-script-execution-options.md).
 
 ## <a name="return-values"></a>Valori restituiti
 
-Per l'esito positivo, le azioni personalizzate che sono [file eseguibili](executable-files.md) devono restituire un valore pari a 0. Il programma di installazione interpreta qualsiasi altro valore restituito come errore. Per ignorare i valori restituiti, impostare il flag di bit **msidbCustomActionTypeContinue** nel campo Type della tabella CustomAction.
+Le azioni personalizzate che sono [file eseguibili](executable-files.md) devono restituire il valore 0 per l'esito positivo. Il programma di installazione interpreta qualsiasi altro valore restituito come errore. Per ignorare i valori restituiti, impostare il flag di bit **msidbCustomActionTypeContinue** nel campo Tipo della tabella CustomAction.
 
 ## <a name="remarks"></a>Commenti
 
-Un'azione personalizzata che avvia un file eseguibile accetta una riga di comando, che in genere contiene proprietà designate dinamicamente. Se si tratta anche di un' [azione personalizzata di esecuzione posticipata](deferred-execution-custom-actions.md), il programma di installazione utilizza [**CreateProcessAsUser ha**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) per creare il processo quando viene richiamata l'azione personalizzata dallo script di installazione.
+Un'azione personalizzata che avvia un eseguibile accetta una riga di comando, che in genere contiene proprietà designate dinamicamente. Se si tratta [](deferred-execution-custom-actions.md)anche di un'azione personalizzata di esecuzione posticipata, il programma di installazione usa [**CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) per creare il processo quando l'azione personalizzata viene richiamata dallo script di installazione.
 
 Le azioni personalizzate che fanno riferimento a un file installato come origine, ad esempio il tipo di azione personalizzata 18 (EXE), devono rispettare le restrizioni di sequenziazione seguenti:
 
--   L'azione personalizzata deve essere sequenziata dopo l' [azione CostFinalize secondo](costfinalize-action.md). In questo modo l'azione personalizzata può risolvere il percorso necessario per individuare il file EXE.
--   Se il file di origine non è già installato nel computer, le azioni personalizzate posticipate (in-script) di questo tipo devono essere sequenziate dopo l' [azione InstallFiles](installfiles-action.md).
--   Se il file di origine non è già installato nel computer, le azioni personalizzate non posticipate di questo tipo devono essere sequenziate dopo l' [azione InstallFinalize](installfinalize-action.md).
+-   L'azione personalizzata deve essere sequenziata dopo [l'azione CostFinalize](costfinalize-action.md). In questo modo l'azione personalizzata può risolvere il percorso necessario per individuare il file EXE.
+-   Se il file di origine non è già installato nel computer, le azioni personalizzate posticipate (nello script) di questo tipo devono essere sequenziate dopo [l'azione InstallFiles](installfiles-action.md).
+-   Se il file di origine non è già installato nel computer, le azioni personalizzate non posticipate di questo tipo devono essere sequenziate dopo [l'azione InstallFinalize](installfinalize-action.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[\_Azioni personalizzate](custom-actions.md)
+[Azioni \_ personalizzate](custom-actions.md)
 </dt> <dt>
 
 [File eseguibili](executable-files.md)

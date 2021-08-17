@@ -1,5 +1,5 @@
 ---
-description: EnableIPSec&\# 8194; Il metodo della classe WMI Abilita Internet Protocol Security (IPsec) su una scheda di rete abilitata per TCP/IP.
+description: Il&EnableIPSec \# 8194; Il metodo della classe WMI abilita IPsec (Internet Protocol Security) su una scheda di rete abilitata per TCP/IP.
 ms.assetid: 0a45d864-606d-4adb-9b51-62d46a0d68b1
 ms.tgt_platform: multiple
 title: Metodo EnableIPSec della classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6988d68f9939752e3c8c2c9ace063b895a2d3720
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a4b13d7cdd083fd5b343741823c8a7136ce1603941ba525978ecec4f73e4b1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419489"
 ---
-# <a name="enableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableIPSec della \_ classe NetworkAdapterConfiguration Win32
+# <a name="enableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableIPSec della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableIPSec** Abilita Internet Protocol Security (IPSec) su una scheda di rete abilitata per TCP/IP.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableIPSec** abilita IPsec (Internet Protocol Security) su una scheda di rete abilitata per TCP/IP.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ uint32 EnableIPSec(
 
 <dl> <dt>
 
-*IPSecPermitTCPPorts* \[ in\]
+*IPSecPermitTCPPorts* \[ Pollici\]
 </dt> <dd>
 
-Elenco di porte a cui concedere l'autorizzazione di accesso per TCP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una matrice vuota indica che a nessuna porta devono essere concesse le autorizzazioni di accesso.
+Elenco di porte a cui concedere l'autorizzazione di accesso per TCP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una matrice vuota indica che a nessuna porta deve essere concessa l'autorizzazione di accesso.
 
 </dd> <dt>
 
-*IPSecPermitUDPPorts* \[ in\]
+*IPSecPermitUDPPorts* \[ Pollici\]
 </dt> <dd>
 
-Elenco di porte a cui concedere l'autorizzazione di accesso per UDP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una matrice vuota indica che a nessuna porta devono essere concesse le autorizzazioni di accesso.
+Elenco di porte a cui concedere l'autorizzazione di accesso per UDP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una matrice vuota indica che a nessuna porta deve essere concessa l'autorizzazione di accesso.
 
 </dd> <dt>
 
-*IPSecPermitIPProtocols* \[ in\]
+*IPSecPermitIPProtocols* \[ Pollici\]
 </dt> <dd>
 
-Elenco di protocolli di cui è consentita l'esecuzione su IP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutti i protocolli. Una matrice vuota indica che ai protocolli non è stata concessa l'autorizzazione di accesso.
+Elenco di protocolli che possono essere eseguiti sull'IP. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutti i protocolli. Una matrice vuota indica che a nessun protocollo viene concessa l'autorizzazione di accesso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero in caso di errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, riavvio non necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, riavvio non necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito. È necessario riavviare il computer.
 
 </dd> <dt>
 
@@ -107,12 +107,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -152,7 +152,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -161,12 +161,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -251,12 +251,12 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
@@ -274,11 +274,11 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato sulla scheda.
+IP non abilitato nella scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -287,12 +287,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti dei numeri di rete/frame**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di rete o del frame.
 
 </dd> <dt>
 
@@ -323,12 +323,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro fuori dai limiti.
 
 </dd> <dt>
 
@@ -364,20 +364,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -404,12 +404,12 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
 
-DHCP non abilitato nell'adapter.
+DHCP non abilitato sulla scheda.
 
 </dd> <dt>
 
@@ -422,11 +422,11 @@ DHCP non abilitato nell'adapter.
 
 ## <a name="remarks"></a>Commenti
 
-Le porte sono protette solo quando la proprietà **IPFilterSecurityEnabled** in [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) è **true**.
+Le porte sono protette solo quando la **proprietà IPFilterSecurityEnabled** in [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) è **true.**
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Enable IPSec on a Network Adapter](https://Gallery.TechNet.Microsoft.Com/ff821218-c392-42fb-a77c-c3eab899587c) VBScript, sulla raccolta TechNet, USA **EnableIPSec** per abilitare la sicurezza IP per una scheda di rete.
+L'esempio Di abilitare [IPSec in](https://Gallery.TechNet.Microsoft.Com/ff821218-c392-42fb-a77c-c3eab899587c) una scheda di rete VBScript in TechNet Gallery usa **EnableIPSec** per abilitare la sicurezza IP per una scheda di rete.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -437,7 +437,7 @@ L'esempio [Enable IPSec on a Network Adapter](https://Gallery.TechNet.Microsoft.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -446,19 +446,19 @@ L'esempio [Enable IPSec on a Network Adapter](https://Gallery.TechNet.Microsoft.
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
-[Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
+[Supporto IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
 </dt> </dl>
 
  

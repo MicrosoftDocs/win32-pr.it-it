@@ -26,7 +26,7 @@ ms.locfileid: "117745031"
 
 I provider Automazione interfaccia utente Microsoft espongono proprietà Automazione interfaccia utente elementi. Le proprietà consentono alle applicazioni client di recuperare informazioni sui controlli.
 
-Automazione interfaccia utente due tipi diversi di proprietà: le proprietà degli elementi *di automazione* e *il pattern di controllo appropriato.* Le proprietà degli elementi di automazione sono costituite da un set comune di proprietà, ad esempio Name, AcceleratorKey e ClassName, esposte da tutti gli elementi Automazione interfaccia utente, indipendentemente dal tipo di controllo. La maggior parte delle proprietà degli elementi di automazione sono valori statici.
+Automazione interfaccia utente due tipi diversi di proprietà: le proprietà degli elementi di *automazione* e il *pattern di controllo appropriato.* Le proprietà degli elementi di automazione sono costituite da un set comune di proprietà, ad esempio Name, AcceleratorKey e ClassName, esposte da tutti gli elementi Automazione interfaccia utente, indipendentemente dal tipo di controllo. La maggior parte delle proprietà degli elementi di automazione sono valori statici.
 
 Le proprietà del pattern di controllo sono quelle esposte da un controllo che supporta un pattern di controllo specifico. Ogni pattern di controllo ha un set corrispondente di proprietà del pattern di controllo che il controllo deve esporre. Ad esempio, un controllo che supporta il pattern di controllo [Grid](uiauto-implementinggrid.md) espone le proprietà ColumnCount e RowCount. La maggior parte delle proprietà del pattern di controllo sono valori dinamici.
 
@@ -39,7 +39,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="property-identifiers"></a>Identificatori di proprietà
 
-Ogni proprietà è identificata da un valore numerico **PROPERTYID** denominato *identificatore* di proprietà (ID). I provider e i client usano gli ID numerici nelle chiamate al metodo, ad esempio [**IRawElementProviderAdviseEvents::AdviseEventAdded**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventadded) e [**IUIAutomationElement::GetCachedPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpropertyvalue) per identificare le richieste di proprietà. Per una descrizione dettagliata di ogni Automazione interfaccia utente proprietà, inclusi il tipo di dati e il valore predefinito di ogni proprietà, vedere [Identificatori di proprietà](uiauto-entry-propids.md).
+Ogni proprietà è identificata da un valore numerico **PROPERTYID** denominato identificatore di *proprietà* (ID). I provider e i client usano gli ID numerici nelle chiamate al metodo, ad esempio [**IRawElementProviderAdviseEvents::AdviseEventAdded**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventadded) e [**IUIAutomationElement::GetCachedPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpropertyvalue) per identificare le richieste di proprietà. Per una descrizione dettagliata di ogni Automazione interfaccia utente proprietà, inclusi il tipo di dati e il valore predefinito di ogni proprietà, vedere [Identificatori di proprietà](uiauto-entry-propids.md).
 
 ## <a name="property-values"></a>Valori della proprietà
 

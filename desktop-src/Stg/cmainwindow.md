@@ -6,24 +6,24 @@ keywords:
 - CMainWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3e9cb538246dfa6931a2f036ba75cab5e962a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45f67fd2a00bb6f3ab082499e5ca2a4a991a9fb33159a4f43c05923ae393efcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117962468"
 ---
 # <a name="cmainwindow"></a>CMainWindow
 
-Il sistema operativo Microsoft Windows converte le seguenti azioni utente in messaggi della finestra standard e le invia alla procedura principale nell'applicazione **StoClien** :
+Microsoft Windows sistema operativo converte le azioni utente seguenti in messaggi finestra standard e le invia alla procedura principale **nell'applicazione StoClien:**
 
--   L'utente fa clic con il pulsante sinistro del mouse o con l'opzione della punta della penna nei dispositivi tablet per avviare una sequenza di disegno di linea.
--   L'utente fa clic e lo gestisce e sposta il mouse per creare una riga.
+-   L'utente fa clic sul pulsante sinistro del mouse o sull'interruttore di punta della penna nei dispositivi tablet per avviare una sequenza di disegno di linee.
+-   L'utente fa clic e tiene premuto il pulsante e sposta il mouse per disegnare una linea.
 -   La sequenza viene terminata quando viene rilasciato il pulsante sinistro del mouse.
 
 Nell'esempio di codice seguente viene illustrata questa procedura.
 
-## <a name="cmainwindowwindowproc-stocliencpp"></a>CMainWindow:: WindowProc (STOCLIEN. CPP
+## <a name="cmainwindowwindowproc-stocliencpp"></a>CMainWindow::WindowProc (STOCLIEN. CPP)
 
 
 ```C++
@@ -122,17 +122,17 @@ LRESULT CMainWindow::WindowProc(
 
 
 
-Viene avviata una sequenza di disegno di linee quando il \_ messaggio WM LBUTTONDOWN recapita dati sulla posizione del mouse.
+Una sequenza di disegno linea inizia quando il messaggio \_ WM LBUTTONDOWN recapita i dati sulla posizione del mouse.
 
-CMainWindow dispone di un puntatore all'oggetto CGuiPaper e chiama il metodo [**CGuiPaper:: InkStart**](cguipaper-methods.md) per avviare la sequenza di disegno della linea.
+CMainWindow ha un puntatore all'oggetto CGuiPaper e chiama il metodo [**CGuiPaper::InkStart**](cguipaper-methods.md) per avviare la sequenza di disegno della linea.
 
-Quando il mouse viene spostato nell'oggetto di estrazione, viene fornita una sequenza di messaggi **WM di WM \_** separati che contengono dati sulla posizione del mouse al metodo [CGuiPaper:: InkDraw](cguipaper-methods.md) .
+Quando il mouse viene spostato per disegnare, al metodo [CGuiPaper::InkDraw](cguipaper-methods.md) viene fornita una sequenza di messaggi **\_ WM MOUSEMOVE** separati contenenti dati sulla posizione del mouse.
 
-Quando viene rilasciato il pulsante sinistro del mouse, viene ricevuto il messaggio **WM \_ LBUTTONUP** . Il metodo [CGuiPaper:: InkStop](cguipaper-methods.md) arresta la sequenza di disegno della linea.
+Quando viene rilasciato il pulsante sinistro del mouse, viene ricevuto il messaggio **\_ WM LBUTTONUP.** Il [metodo CGuiPaper::InkStop](cguipaper-methods.md) arresta la sequenza di disegno della linea.
 
- 
+ 
 
- 
+ 
 
 
 

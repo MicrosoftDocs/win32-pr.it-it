@@ -1,20 +1,20 @@
 ---
-title: Proprietà AuthenticationLevel di IMsRdpClientAdvancedSettings4
+title: Proprietà AuthenticationLevel IMsRdpClientAdvancedSettings4
 description: Specifica il livello di autenticazione da utilizzare per la connessione.
 ms.assetid: 09ff1508-f13d-4bb0-8458-6f5a5e099bae
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AuthenticationLevel
-- Servizi Desktop remoto proprietà AuthenticationLevel, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà AuthenticationLevel
-- Servizi Desktop remoto proprietà AuthenticationLevel, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà AuthenticationLevel
-- Servizi Desktop remoto proprietà AuthenticationLevel, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà AuthenticationLevel
-- Servizi Desktop remoto proprietà AuthenticationLevel, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà AuthenticationLevel
-- Servizi Desktop remoto proprietà AuthenticationLevel, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà AuthenticationLevel
+- Proprietà AuthenticationLevel Servizi Desktop remoto
+- Proprietà AuthenticationLevel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà AuthenticationLevel
+- Proprietà AuthenticationLevel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà AuthenticationLevel
+- Proprietà AuthenticationLevel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà AuthenticationLevel
+- Proprietà AuthenticationLevel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà AuthenticationLevel
+- Proprietà AuthenticationLevel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà AuthenticationLevel
 topic_type:
 - apiref
 api_name:
@@ -39,14 +39,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c748416650ec7e6ec3d26fe6236a254eb012d67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f01bed28e22f22e1dd14da4941027d5a99550cee49a45f40bf887ab27d7b940d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352568"
 ---
-# <a name="imsrdpclientadvancedsettings4authenticationlevel-property"></a>Proprietà IMsRdpClientAdvancedSettings4:: AuthenticationLevel
+# <a name="imsrdpclientadvancedsettings4authenticationlevel-property"></a>Proprietà IMsRdpClientAdvancedSettings4::AuthenticationLevel
 
 Specifica il livello di autenticazione da utilizzare per la connessione.
 
@@ -69,7 +69,7 @@ HRESULT get_AuthenticationLevel(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore della proprietà **AuthenticationLevel** .
+Valore della proprietà **AuthenticationLevel.**
 
 <dt>
 
@@ -83,24 +83,24 @@ Nessuna autenticazione del server.
 1
 </dt> <dd>
 
-L'autenticazione server è obbligatoria e deve essere completata correttamente affinché la connessione continui.
+L'autenticazione server è necessaria e deve essere completata correttamente per poter continuare la connessione.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Tentativo di autenticazione del server. Se l'autenticazione non riesce, all'utente verrà richiesto di annullare la connessione o di procedere senza l'autenticazione del server.
+Tentare l'autenticazione del server. Se l'autenticazione non riesce, all'utente verrà chiesto di annullare la connessione o di continuare senza l'autenticazione del server.
 
 </dd> </dl>
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

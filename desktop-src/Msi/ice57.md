@@ -1,5 +1,5 @@
 ---
-description: ICE57 verifica che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
+description: ICE57 convalida che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
 ms.assetid: 3c82efa7-9cf3-4bcd-8ec4-b81d1d7aa0a6
 title: ICE57
 ms.topic: article
@@ -13,19 +13,19 @@ ms.locfileid: "118635162"
 ---
 # <a name="ice57"></a>ICE57
 
-ICE57 verifica che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
+ICE57 convalida che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
 
-La combinazione di dati per utente e per computer nello stesso componente può comportare solo l'installazione parziale del componente per alcuni utenti in un ambiente multi-utente.
+La combinazione di dati per utente e per computer nello stesso componente potrebbe comportare solo l'installazione parziale del componente per alcuni utenti in un ambiente multi-utente.
 
 Vedere la [**proprietà ALLUSERS.**](allusers.md)
 
 ## <a name="result"></a>Risultato
 
-ICE57 invia un errore se trova un componente che contiene sia voci del Registro di sistema per computer che per utente, file, percorsi delle chiavi di directory o collegamenti non annunciati.
+ICE57 invia un errore se trova un componente che contiene voci del Registro di sistema per computer e per utente, file, percorsi delle chiavi di directory o collegamenti non annunciati.
 
 ## <a name="example"></a>Esempio
 
-ICE57report gli errori seguenti per l'esempio illustrato.
+ICE57reporta gli errori seguenti per l'esempio illustrato.
 
 ``` syntax
 Component 'Component1' has both per-user and per-machine 
@@ -90,7 +90,7 @@ Component 'Component4' has both per-user data and
 
 
 
-| Directory  | Directory \_ Parent | DefaultDir |
+| Directory  | Padre \_ della directory | DefaultDir |
 |------------|-------------------|------------|
 | Targetdir  |                   | SourceDir  |
 | DirectoryA | Targetdir         | DirectoryA |
@@ -99,9 +99,9 @@ Component 'Component4' has both per-user data and
 
  
 
-Per correggere gli errori, riorganizzare l'applicazione in modo che ogni componente contenga solo risorse per utente o per computer e non entrambe.
+Per correggere gli errori, riorganizzare l'applicazione in modo che ogni componente contenga solo risorse per utente o per computer e non per entrambe.
 
-Il primo messaggio di errore viene inviato perché Component1 contiene FileA (per computer) e la chiave del Registro di sistema HKCU RegKeyA (per utente).
+Il primo messaggio di errore viene pubblicato perché Component1 contiene FileA (per computer) e la chiave del Registro di sistema HKCU RegKeyA (per utente).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

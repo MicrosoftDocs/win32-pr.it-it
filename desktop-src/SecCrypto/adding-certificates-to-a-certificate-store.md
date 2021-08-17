@@ -1,31 +1,31 @@
 ---
-description: I certificati possono essere aggiunti o rimossi dagli archivi certificati se l'archivio viene aperto con l'autorizzazione di lettura/scrittura.
+description: I certificati possono essere aggiunti o rimossi dagli archivi certificati se l'archivio viene aperto con autorizzazione di lettura/scrittura.
 ms.assetid: a1cb6e1e-0702-4f73-827e-3f9e9237b4b6
 title: Aggiunta di certificati a un archivio certificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6f4c018be697f48e40d52480f49694762fb956f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e3c4b2fafbcd11bf2d984dfd5b5a575f67dc4f6d3c70337de399ca6076029ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774036"
 ---
 # <a name="adding-certificates-to-a-certificate-store"></a>Aggiunta di certificati a un archivio certificati
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-I [*certificati*](../secgloss/c-gly.md) possono essere aggiunti o rimossi dagli [*archivi certificati*](../secgloss/c-gly.md) se l'archivio viene aperto con l'autorizzazione di lettura/scrittura. L'autorizzazione di lettura/scrittura non è concessa per gli archivi Active Directory. Mentre i certificati possono essere aggiunti o rimossi dagli archivi di memoria, le modifiche negli archivi di memoria non vengono rese permanente tra le sessioni.
+[*I*](../secgloss/c-gly.md) certificati possono essere aggiunti o rimossi dagli archivi [*certificati se*](../secgloss/c-gly.md) l'archivio viene aperto con autorizzazione di lettura/scrittura. L'autorizzazione di lettura/scrittura non viene concessa agli archivi di Active Directory. Anche se i certificati possono essere aggiunti o rimossi dagli archivi di memoria, le modifiche negli archivi di memoria non vengono rese persistenti tra le sessioni.
 
-I certificati possono essere aggiunti a un archivio certificati aperto con l'autorizzazione di lettura/scrittura tramite il metodo **Add** . È possibile rimuovere un certificato da un archivio certificati aperto con l'autorizzazione di lettura/scrittura tramite il metodo **Remove** . I nuovi archivi possono essere creati e salvati nell' \_ \_ Archivio dell'utente corrente di CAPICOM e nei percorsi di \_ \_ \_ archiviazione del computer locale \_ . Gli archivi appena creati in uno di questi percorsi possono essere aperti con l'autorizzazione di lettura/scrittura.
+I certificati possono essere aggiunti a un archivio certificati aperto con autorizzazione di lettura/scrittura tramite il **metodo Add.** Un certificato può essere rimosso da un archivio certificati aperto con autorizzazione di lettura/scrittura tramite il **metodo Remove.** È possibile creare e salvare nuovi archivi nei percorsi CAPICOM \_ CURRENT USER STORE e \_ \_ CAPICOM LOCAL MACHINE \_ \_ \_ STORE. Gli archivi appena creati in uno di questi percorsi possono essere aperti con l'autorizzazione di lettura/scrittura.
 
-Nell'esempio seguente vengono aperti due archivi certificati. I certificati di oggetti con i cognomi che iniziano con F vengono recuperati dall'archivio Active Directory. L'archivio dell' \_ utente corrente di CAPICOM \_ , l' \_ Archivio dell' \_ archivio CA CAPICOM \_ viene quindi aperto come archivio di lettura/scrittura e il primo certificato della raccolta di certificati nell'archivio Active Directory viene aggiunto ai certificati nell' \_ Archivio della CA CAPICOM \_ .
+Nell'esempio seguente vengono aperti due archivi certificati. I certificati degli oggetti con cognome che iniziano con F vengono recuperati dall'archivio di Active Directory. L'archivio CAPICOM CURRENT USER STORE, CAPICOM CA STORE viene quindi aperto come archivio di lettura/scrittura e il primo certificato dalla raccolta di certificati nell'archivio di Active Directory viene aggiunto ai certificati \_ \_ nell'archivio CA \_ \_ \_ \_ \_ CAPICOM.
 
-A scopo dimostrativo, l'esempio mostra l'apertura di archivi nell'archivio di \_ memoria CAPICOM \_ , l' \_ \_ Archivio dell'utente corrente di CAPICOM e i percorsi di \_ \_ \_ archiviazione del computer locale \_ di CAPICOM. Nell'esempio viene illustrata l'esportazione di tutti i certificati da un archivio aperto, la scrittura dei certificati esportati in un file, la relativa lettura e l'importazione in un altro archivio. I certificati appena importati vengono enumerati e visualizzati.
+A scopo dimostrativo, l'esempio mostra l'apertura di archivi nei percorsi CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE e \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. L'esempio mostra l'esportazione di tutti i certificati da un archivio aperto, la scrittura dei certificati esportati in un file, la lettura e l'importazione in un archivio diverso. I certificati appena importati vengono enumerati e visualizzati.
 
-In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
-Nell'esempio seguente viene illustrata l'apertura di archivi certificati mediante associazione anticipata nella dichiarazione degli oggetti **Archivio** e nella creazione di un'istanza di tali oggetti.
+L'esempio seguente illustra l'apertura di archivi certificati usando l'associazione anticipata nella dichiarazione degli oggetti **Store** e nella creazione di un'istanza di tali oggetti.
 
 
 ```VB

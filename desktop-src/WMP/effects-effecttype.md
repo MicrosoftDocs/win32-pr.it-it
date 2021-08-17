@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectType
-description: Il metodo effectType Recupera il nome del registro di sistema della visualizzazione con l'indice del registro di sistema specificato. Questo nome è un ID univoco definito dall'autore della visualizzazione.
+title: EFFECTS.effectType
+description: Il metodo effectType recupera il nome del registro della visualizzazione con l'indice del registro specificato. Questo nome è un ID univoco definito dall'autore della visualizzazione.
 ms.assetid: 47da4f3f-8552-4404-ad46-5dc6afca849a
 keywords:
-- EFFECTs. effectType Windows Media Player
+- EFFECTS.effectType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3eda9cbd1a4634062683536f1f132393a2874691
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a452f9218c7004d1078ae6b9e878421a7cad301f3ee913ef6296aaa1c681b736
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749233"
 ---
-# <a name="effectseffecttype"></a>EFFECTs. effectType
+# <a name="effectseffecttype"></a>EFFECTS.effectType
 
-Il metodo **effectType** Recupera il nome del registro di sistema della visualizzazione con l'indice del registro di sistema specificato. Questo nome è un ID univoco definito dall'autore della visualizzazione.
+Il **metodo effectType** recupera il nome del registro della visualizzazione con l'indice del registro specificato. Questo nome è un ID univoco definito dall'autore della visualizzazione.
 
 ``` syntax
         elementID.effectType(index)
@@ -35,17 +35,17 @@ Il metodo **effectType** Recupera il nome del registro di sistema della visualiz
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice del registro di sistema di una visualizzazione.
+**Numero** (**long**) contenente l'indice del Registro di sistema di una visualizzazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa**.
+Questo metodo restituisce un **oggetto String.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è utile per passare da una visualizzazione all'altra nello script. Un'interfaccia utente può visualizzare il set di titoli, ma quando l'utente ne seleziona uno, lo script deve usare **currentEffectType** per cambiare le visualizzazioni.
+Questo metodo è utile per passare da una visualizzazione all'altra nello script. Un'interfaccia utente potrebbe visualizzare il set di titoli, ma quando l'utente ne seleziona uno, lo script deve usare **currentEffectType** per cambiare visualizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ Questo metodo è utile per passare da una visualizzazione all'altra nello script
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -61,10 +61,10 @@ Questo metodo è utile per passare da una visualizzazione all'altra nello script
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectType**](effects-currenteffecttype.md)
+[**EFFECTS.currentEffectType**](effects-currenteffecttype.md)
 </dt> </dl>
 
  

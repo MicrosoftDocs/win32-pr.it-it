@@ -27,7 +27,7 @@ L'azione RemoveIniValues rimuove le .ini file specificate per la rimozione nella
 |-------|-------------------------------|
 | \[1\] | Identificatore del .ini file.      |
 | \[2\] | Sezione .ini chiave del file di configurazione.     |
-| \[3\] | Elemento rimosso dal file .ini.  |
+| \[3\] | Elemento rimosso da .ini file.  |
 | \[4\] | Valore rimosso dal file .ini. |
 
 

@@ -5,7 +5,7 @@ ms.assetid: 26f004c0-de46-4792-8212-9d4ac749bb21
 keywords:
 - Metodo getByAlbum Windows Media Player
 - Metodo getByAlbum Windows Media Player, interfaccia IWMPMediaCollection
-- Interfaccia IWMPMediaCollection Windows Media Player, metodo getByAlbum
+- Interfaccia IWMPMediaCollection Windows Media Player metodo , getByAlbum
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c455e9bd61038a4d72bb6537d7c62b30a5d0b733
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07137068961447b9f311dbdb765d34fbf2689ca80fd2035e8a60ebe27e4037bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117929764"
 ---
-# <a name="iwmpmediacollectiongetbyalbum-method"></a>Metodo IWMPMediaCollection:: getByAlbum
+# <a name="iwmpmediacollectiongetbyalbum-method"></a>Metodo IWMPMediaCollection::getByAlbum
 
-Il metodo **getByAlbum** restituisce un'interfaccia **IWMPPlaylist** che fornisce l'accesso agli elementi multimediali dall'album specificato.
+Il **metodo getByAlbum** restituisce **un'interfaccia IWMPPlaylist** che fornisce l'accesso agli elementi multimediali dall'album specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByAlbum
 
 <dl> <dt>
 
-*bstrAlbum* \[ in\]
+*bstrAlbum* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il titolo dell'album.
+**System.String** che rappresenta il titolo dell'album.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPPlaylist** per gli elementi multimediali recuperati.
+Interfaccia **WMPLib.IWMPPlaylist** per gli elementi multimediali recuperati.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
-Esistono due modi per recuperare un'interfaccia **IWMPMediaCollection** e il comportamento del metodo **getByAlbum** dipende da quali di questi due modi si usano. Se si recupera l'interfaccia chiamando [AxWindowsMediaPlayer. mediacollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), il metodo **getByAlbum** restituisce tutti gli elementi multimediali nella libreria. Tuttavia, se si recupera l'interfaccia chiamando [IWMPLibrary. mediacollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il metodo **getByAlbum** restituisce solo gli elementi audio della libreria che appartengono all'album specificato.
+Esistono due modi per recuperare **un'interfaccia IWMPMediaCollection** e il comportamento del metodo **getByAlbum** dipende dal modo in cui si usa. Se si recupera l'interfaccia chiamando [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), il **metodo getByAlbum** restituisce tutti gli elementi multimediali nella libreria. Tuttavia, se si recupera l'interfaccia chiamando [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il **metodo getByAlbum** restituisce solo gli elementi audio nella libreria che appartengono all'album specificato.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **getByAlbum** per creare una playlist di elementi multimediali quando l'utente fa clic su un pulsante. La playlist contiene elementi con l'album specificato dall'utente in una casella di testo. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **getByAlbum** per creare una playlist di elementi multimediali quando l'utente fa clic su un pulsante. La playlist contiene gli elementi con l'album specificato dall'utente in una casella di testo. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -126,7 +126,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

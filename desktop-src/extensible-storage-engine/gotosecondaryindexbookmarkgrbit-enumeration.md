@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione GotoSecondaryIndexBookmarkGrbit'
+description: Altre informazioni sull'enumerazione GotoSecondaryIndexBookmarkGrbit
 title: Enumerazione GotoSecondaryIndexBookmarkGrbit
 TOCTitle: GotoSecondaryIndexBookmarkGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.GotoSecondaryIndexBookmarkGrbit
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f38b5f26abc4dfafb95d5560b3ff1def4267527c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 733647a8cf53fa93c9779674890005de4ead1aa57f15853c255c5ac5a8e13904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487981"
 ---
 # <a name="gotosecondaryindexbookmarkgrbit-enumeration"></a>Enumerazione GotoSecondaryIndexBookmarkGrbit
 
-Opzioni per [JetGotoSecondaryIndexBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
+Opzioni per [JetGotoSecondaryIndexBookmark(JET_SESID, JET_TABLEID, , \[ \] Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ public enum GotoSecondaryIndexBookmarkGrbit
 <tr class="even">
 <td></td>
 <td>BookmarkPermitVirtualCurrency</td>
-<td>Nel caso in cui non sia più possibile trovare la voce di indice, il cursore viene lasciato posizionato in corrispondenza del punto in cui è stata trovata in precedenza la voce di indice. L'operazione avrà comunque esito negativo con JET_errRecordDeleted; Tuttavia, sarà possibile passare alla voce di indice successiva o precedente relativa alla voce di indice mancante.</td>
+<td>Nel caso in cui non sia più possibile trovare la voce di indice, il cursore verrà posizionato a sinistra nel punto in cui tale voce di indice è stata trovata in precedenza. L'operazione avrà comunque esito negativo con JET_errRecordDeleted; Sarà tuttavia possibile passare alla voce di indice successiva o precedente rispetto alla voce di indice mancante.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum GotoSecondaryIndexBookmarkGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,17 +1,17 @@
 ---
 description: Paese dell'indirizzo aziendale del contatto.
 ms.assetid: 6893d687-29ee-4f24-8f3f-13222a035686
-title: System. Contact. BusinessAddressCountry
+title: System.Contact.BusinessAddressCountry
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f24a6e22de54de534e43a54bc45071dd71eb1c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fd81b9f8145f3def80487c4437f62af8bced0b24a025fbc7b38a139b1b3aed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468406"
 ---
-# <a name="systemcontactbusinessaddresscountry"></a>System. Contact. BusinessAddressCountry
+# <a name="systemcontactbusinessaddresscountry"></a>System.Contact.BusinessAddressCountry
 
 Paese dell'indirizzo aziendale del contatto.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -51,11 +51,11 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante su una punta della penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Un pulsante su un barile è in alto quando il pulsante non viene premuto.
+Un pulsante sulla punta di una penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Quando il pulsante non è premuto, è disponibile un pulsante su una freccia verso l'alto.
 
-Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due **eventi CursorButtonUp,** uno per il pulsante destro verso l'alto e uno per il pulsante sinistro verso l'alto.
+Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due eventi **CursorButtonUp:** uno per il pulsante destro verso l'alto e uno per il pulsante sinistro in alto.
 
-Questo metodo di evento è definito nelle interfacce **\_ dispatch IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID ICECursorButtonUp.
+Questo metodo di evento è definito nelle interfacce dispatch **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID ICECursorButtonUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce **\_ dispatch IInkCollector
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

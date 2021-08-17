@@ -43,23 +43,23 @@ Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) c
 *Tratti* \[ Pollici\]
 </dt> <dd>
 
-Raccolta [IInkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) restituita dal riconoscimento come movimento.
+Raccolta [IInkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) restituita dal riconoscitore come movimento.
 
 </dd> <dt>
 
 *Movimenti* \[ Pollici\]
 </dt> <dd>
 
-Matrice di [**oggetti IInkGesture,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) in ordine di confidenza, dal sistema di riconoscimento.
+Matrice di [**oggetti IInkGesture,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) in ordine di attendibilità, dal sistema di riconoscimento.
 
-Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> <dt>
 
 *Annulla* \[ in, out\]
 </dt> <dd>
 
-**VARIANT \_ TRUE** se questo evento deve essere annullato, ad esempio per non cancellare l'input penna e per la generazione [**dell'evento Stroke.**](inkpicture-stroke.md) In caso contrario, **VARIANT \_ FALSE.**
+**VARIANT \_ TRUE** se questo evento deve essere annullato, ad esempio per non cancellare l'input penna e per genera [**l'evento Stroke.**](inkpicture-stroke.md) In caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
@@ -69,19 +69,19 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ ICEGesture DISPID.
+Questo metodo di evento è definito nelle interfacce **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ ICEGesture DISPID.
 
-Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) è impostata su [**GestureOnly**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode), il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento **Gesture** è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento del movimento è più **veloce in modalità InkAndGesture.**
+Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) è impostata su [**GestureOnly,**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento **Gesture** è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento dei movimenti è più **veloce in modalità InkAndGesture.**
 
 Per impedire la raccolta di input penna in [**modalità InkAndGesture:**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
 
--   Impostare [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) su [**InkAndGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
+-   Impostare [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) su [**InkAndGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode).
 -   Eliminare il tratto [**nell'evento Stroke.**](inkpicture-stroke.md)
 -   Elaborare il movimento **nell'evento Gesture.**
 
-Per impedire il flusso dell'input penna durante l'inserimento, [**impostare la proprietà DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_dynamicrendering) su **FALSE.**
+Per evitare il flusso dell'input penna durante la gestione, impostare [**la proprietà DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_dynamicrendering) su **FALSE.**
 
-Oltre a quando si inserisce l'input penna, l'evento **Gesture** viene generato in modalità di selezione o cancellazione. L'utente è responsabile del rilevamento della modalità di modifica e deve essere a conoscenza della modalità prima di interpretare l'evento.
+Oltre a quando si inserisce l'input penna, **l'evento Gesture** viene generato quando è in modalità di selezione o cancellazione. L'utente è responsabile del rilevamento della modalità di modifica e deve essere a conoscenza della modalità prima di interpretare l'evento.
 
 > [!Note]  
 > Per riconoscere i movimenti, è necessario usare un oggetto o un controllo in grado di raccogliere input penna.
@@ -90,9 +90,9 @@ Oltre a quando si inserisce l'input penna, l'evento **Gesture** viene generato i
 
 I movimenti dell'applicazione sono definiti come movimenti supportati all'interno dell'applicazione.
 
-Perché questo evento si verifichi, l'oggetto o il controllo deve essere interessato a un set di movimenti dell'applicazione. Per impostare l'interesse degli oggetti o dei controlli in un set di movimenti, chiamare il [**metodo SetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setgesturestatus) dell'oggetto o del controllo.
+Per il verificarsi di questo evento, l'oggetto o il controllo deve avere interesse per un set di movimenti dell'applicazione. Per impostare gli oggetti o i controlli interessati a un set di movimenti, chiamare il [**metodo SetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setgesturestatus) dell'oggetto o del controllo.
 
-Per un elenco di movimenti specifici dell'applicazione, vedere il [**tipo di enumerazione InkApplicationGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture)
+Per un elenco di movimenti specifici dell'applicazione, vedere il tipo di enumerazione [**InkApplicationGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,7 +100,7 @@ Per un elenco di movimenti specifici dell'applicazione, vedere il [**tipo di enu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

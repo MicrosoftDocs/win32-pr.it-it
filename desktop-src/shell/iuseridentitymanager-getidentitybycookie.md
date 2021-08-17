@@ -1,7 +1,7 @@
 ---
-description: GetIdentityByCookie non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.
+description: GetIdentityByCookie non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: c2f549ac-e13d-4198-864f-7f5fbec30c72
-title: 'Metodo IUserIdentityManager:: GetIdentityByCookie (Msident. h)'
+title: Metodo IUserIdentityManager::GetIdentityByCookie (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: eb4e5ad5bda349a5b1650b090abc44a9fd1e6332
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a077f3e6a65a04e4c018198dde39b80c5a6e5acbee282c9e2cc282642526894b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678155"
 ---
-# <a name="iuseridentitymanagergetidentitybycookie-method"></a>Metodo IUserIdentityManager:: GetIdentityByCookie
+# <a name="iuseridentitymanagergetidentitybycookie-method"></a>Metodo IUserIdentityManager::GetIdentityByCookie
 
-\[**GetIdentityByCookie** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**GetIdentityByCookie** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio utente rapido e Desktop remoto](fastuserswitching.md).\]
 
-Ottiene un'identità utente specifica dal cookie usato per identificarla in modo univoco.
+Ottiene un'identità utente specifica dal cookie utilizzato per identificarla in modo univoco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT GetIdentityByCookie(
 
 <dl> <dt>
 
-*uidCookie* \[ in\]
+*uidCookie* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
-Indirizzo di un valore _ *GUID** che rappresenta il cookie per l'identità che si vuole recuperare.
+Indirizzo di un **valore GUID** che rappresenta il cookie per l'identità che si desidera recuperare.
 
 </dd> <dt>
 
-*ppIdentity* \[ out\]
+*ppIdentity* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IUserIdentity**](iuseridentity.md)\*\***
@@ -70,8 +70,8 @@ Risultato della richiesta di recupero. Se ha esito positivo, restituisce S \_ OK
 
 | Codice restituito                                                                                            | Descrizione                                               |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <dl> <dt>**\_identità E \_ non \_ trovate**</dt> </dl> | Impossibile trovare l'identità richiesta.<br/>     |
-| <dl> <dt>**\_identità E \_ disabilitate**</dt> </dl> | Gestione identità è disabilitato nel sistema.<br/> |
+| <dl> <dt>**E \_ IDENTITÀ \_ NON \_ TROVATA**</dt> </dl> | Impossibile trovare l'identità richiesta.<br/>     |
+| <dl> <dt>**IDENTITÀ E \_ \_ DISABILITATE**</dt> </dl> | La gestione delle identità è disabilitata nel sistema.<br/> |
 
 
 
@@ -87,8 +87,8 @@ Risultato della richiesta di recupero. Se ha esito positivo, restituisce S \_ OK
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/>    | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

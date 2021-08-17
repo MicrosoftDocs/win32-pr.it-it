@@ -1,24 +1,24 @@
 ---
-title: Proprietà BinaryPassword di IMsTscNonScriptable
-description: Questa proprietà non è più disponibile per l'utilizzo. | Proprietà BinaryPassword di IMsTscNonScriptable
+title: Proprietà BinaryPassword IMsTscNonScriptable
+description: Questa proprietà non è più disponibile per l'uso. | Proprietà BinaryPassword IMsTscNonScriptable
 ms.assetid: b3be7323-a75f-4ec2-9d58-e8ff3338d6ff
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsTscNonScriptable
-- Interfaccia IMsTscNonScriptable Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, oggetto MsTscAx
-- Oggetto MsTscAx Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsRdpClientNonScriptable
-- Interfaccia IMsRdpClientNonScriptable Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsRdpClientNonScriptable2
-- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà BinaryPassword
-- Servizi Desktop remoto proprietà BinaryPassword, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsTscNonScriptable
+- Interfaccia IMsTscNonScriptable Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, oggetto MsTscAx
+- Oggetto MsTscAx Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable
+- Interfaccia IMsRdpClientNonScriptable Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable2
+- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà BinaryPassword
+- Proprietà BinaryPassword Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà BinaryPassword
 topic_type:
 - apiref
 api_name:
@@ -47,16 +47,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d6eab2a3902968ef4d4c953a8da8b9c884a497
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3aef3cb62a6ab2c72d39a79ee4cd6e5d64192ae24bc8ef201da603cdbc528859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757127"
 ---
-# <a name="imstscnonscriptablebinarypassword-property"></a>Proprietà IMsTscNonScriptable:: BinaryPassword
+# <a name="imstscnonscriptablebinarypassword-property"></a>Proprietà IMsTscNonScriptable::BinaryPassword
 
-Questa proprietà non è più disponibile per l'utilizzo.
+Questa proprietà non è più disponibile per l'uso.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -77,11 +77,11 @@ HRESULT get_BinaryPassword(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuova parte della password, in formato con codifica binaria.
+Nuova parte della password, in formato codificato binario.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **E \_ NOTIMPL**.
+Restituisce **E \_ NOTIMPL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,7 +95,7 @@ Restituisce **E \_ NOTIMPL**.
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                              |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable è definito come c1e6743a-41C1-4a74-832a-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable è definito come c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 

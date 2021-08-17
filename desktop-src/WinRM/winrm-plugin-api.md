@@ -14,7 +14,7 @@ ms.locfileid: "117742778"
 ---
 # <a name="winrm-plug-in-api"></a>WinRM Plug-in API
 
-Windows I plug-in di gestione remota sono librerie a collegamento dinamico nativo (DLL) che collegano ed estendono la funzionalità di Gestione remota Windows. L'API (Application Programming Interface) del plug-in WinRM offre funzionalità che consentono a un utente di scrivere plug-in implementando determinate API per gli URI e le operazioni [*delle*](windows-remote-management-glossary.md) risorse supportate. Dopo aver configurato i plug-in per il servizio WinRM o Internet Information Services (IIS), vengono caricati rispettivamente nell'host WinRM o nell'host IIS. Le richieste remote vengono indirizzate a questi punti di ingresso del plug-in per eseguire operazioni.
+Windows I plug-in di gestione remota sono librerie a collegamento dinamico nativo (DLL) che collegano ed estendono le funzionalità di Gestione remota Windows. L'API (Application Programming Interface) del plug-in WinRM offre funzionalità che consentono a un [](windows-remote-management-glossary.md) utente di scrivere plug-in implementando determinate API per gli URI e le operazioni delle risorse supportate. Dopo aver configurato i plug-in per il servizio WinRM o Internet Information Services (IIS), vengono caricati rispettivamente nell'host WinRM o nell'host IIS. Le richieste remote vengono indirizzate a questi punti di ingresso del plug-in per eseguire operazioni.
 
 La sezione di riferimento sull'API plug-in WinRM contiene informazioni dettagliate sugli elementi API seguenti:
 

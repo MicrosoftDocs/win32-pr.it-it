@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetCountOfType Recupera il numero di oggetti del tipo specificato contenuti in un gruppo specificato e in tutti i relativi elementi figlio.
+description: Il metodo GetCountOfType recupera il numero di oggetti del tipo specificato contenuti in un gruppo specificato e in tutti i relativi elementi figlio.
 ms.assetid: f3571fa5-8020-4079-ab7e-ba9ff280c0c5
-title: 'Metodo IAMTimeline:: GetCountOfType (qedit. h)'
+title: Metodo IAMTimeline::GetCountOfType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f0636eac7c651ed003c618e258f7dbf2bdd60996
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e9eb896f00752c5d9369cf494e7b1426347f82a7ebe2aac74f7822a936c2ffb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401062"
 ---
-# <a name="iamtimelinegetcountoftype-method"></a>Metodo IAMTimeline:: GetCountOfType
+# <a name="iamtimelinegetcountoftype-method"></a>Metodo IAMTimeline::GetCountOfType
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetCountOfType` metodo recupera il numero di oggetti del tipo specificato contenuti in un gruppo specificato e in tutti i relativi elementi figlio.
+Il metodo recupera il numero di oggetti del tipo specificato contenuti `GetCountOfType` in un gruppo specificato e in tutti i relativi elementi figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Numero di indice del gruppo per il quale recuperare il conteggio.
 
 </dd> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
 Riceve il numero di oggetti del tipo specificato contenuti nel gruppo e in tutte le relative tracce virtuali, in modo ricorsivo.
@@ -65,28 +65,28 @@ Riceve il numero di oggetti del tipo specificato contenuti nel gruppo e in tutte
 *pValWithComps* 
 </dt> <dd>
 
-Riceve il conteggio restituito in *pval* più il numero di composizioni ricercate, incluso quello.
+Riceve il conteggio restituito in *pVal* più il numero di composizioni ricercate, inclusa questa.
 
 </dd> <dt>
 
 *MajorType* 
 </dt> <dd>
 
-Membro del tipo enumerato della [**sequenza temporale \_ principale \_**](timeline-major-type.md) , che specifica il tipo di oggetto da contare.
+Membro del tipo [**enumerato TIMELINE \_ MAJOR \_ TYPE,**](timeline-major-type.md) che specifica il tipo di oggetto da contare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** .
+Restituisce uno dei valori **HRESULT** seguenti.
 
 
 
 | Codice restituito                                                                                  | Descrizione                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Esito positivo.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Numero di gruppo non valido.<br/>      |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Argomento puntatore **null** .<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | Argomento del puntatore **NULL.**<br/> |
 
 
 
@@ -94,17 +94,17 @@ Restituisce uno dei seguenti valori **HRESULT** .
 
 ## <a name="remarks"></a>Commenti
 
-La chiamata a questo metodo equivale alla chiamata di [**IAMTimelineComp:: GetCountOfType**](iamtimelinecomp-getcountoftype.md) nel gruppo specificato. Per ulteriori informazioni, vedere la sezione Osservazioni di tale metodo.
+Chiamare questo metodo equivale a chiamare [**IAMTimelineComp::GetCountOfType**](iamtimelinecomp-getcountoftype.md) nel gruppo specificato. Per altre informazioni, vedere la sezione Osservazioni di tale metodo.
 
 In genere, un'applicazione non chiamerà questo metodo. Viene chiamato internamente dal motore di rendering.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -114,8 +114,8 @@ In genere, un'applicazione non chiamerà questo metodo. Viene chiamato intername
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

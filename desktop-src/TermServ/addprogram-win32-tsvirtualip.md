@@ -1,12 +1,12 @@
 ---
-title: Metodo AddProgram della classe Win32_TSVirtualIP (Bdaiface. h)
-description: Aggiunge un programma all'elenco di programmi che utilizzano la virtualizzazione IP.
+title: Metodo AddProgram della Win32_TSVirtualIP classe (Bdaiface.h)
+description: Aggiunge un programma all'elenco di programmi che usano la virtualizzazione IP.
 ms.assetid: 4d142774-fa7a-4cfb-9305-5a61b0ef5438
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo AddProgram
-- Metodo AddProgram Servizi Desktop remoto, classe Win32_TSVirtualIP
-- Classe Win32_TSVirtualIP Servizi Desktop remoto, metodo AddProgram
+- Metodo AddProgram Servizi Desktop remoto
+- Metodo AddProgram Servizi Desktop remoto , Win32_TSVirtualIP classe
+- Win32_TSVirtualIP classe Servizi Desktop remoto , metodo AddProgram
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4de573e8d04500917ed44d5a0453005b3aa691bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d2f78cb461a61467867a544e954a71c23d59432e29450a7b0f35184f0edec57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757860"
 ---
-# <a name="addprogram-method-of-the-win32_tsvirtualip-class"></a>Metodo AddProgram della \_ classe TSVirtualIP Win32
+# <a name="addprogram-method-of-the-win32_tsvirtualip-class"></a>Metodo AddProgram della classe \_ Win32 TSVirtualIP
 
-Aggiunge un programma all'elenco di programmi che utilizzano la virtualizzazione IP.
+Aggiunge un programma all'elenco di programmi che usano la virtualizzazione IP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ uint32 AddProgram(
 
 <dl> <dt>
 
-*ProgramPath* \[ in\]
+*ProgramPath* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
-Il percorso e il nome file del programma da aggiungere all'elenco.
+Percorso e nome file del programma da aggiungere all'elenco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>Bdaiface. h</dt> </dl>   |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Bdaiface.h</dt> </dl>   |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_TSVirtualIP Win32**](win32-tsvirtualip.md)
+[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

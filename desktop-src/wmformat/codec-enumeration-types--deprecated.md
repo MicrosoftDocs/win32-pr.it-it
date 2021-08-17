@@ -1,9 +1,9 @@
 ---
 title: Tipi di enumerazione codec
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | Tipi di enumerazione codec
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Tipi di enumerazione codec
 ms.assetid: 7a6a0a56-7927-431f-a33c-626075b16de6
 keywords:
-- Tipi di enumerazione codec windows Media Format
+- Codec Enumeration Types windows Media Format
 topic_type:
 - apiref
 api_name:
