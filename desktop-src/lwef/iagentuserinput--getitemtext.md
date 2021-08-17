@@ -22,7 +22,7 @@ HRESULT GetItemText(
 );
 ```
 
-Recupera il testo vocale per [**un'alternativa Command**](command-event.md) passata al callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
+Recupera il testo vocale per un'alternativa [**Command**](command-event.md) passata al callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
 -   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
@@ -38,15 +38,15 @@ Indice di un'alternativa [**Command**](command-event.md) passata al callback [**
 <span id="pbszText"></span><span id="pbsztext"></span><span id="PBSZTEXT"></span>*pbszText*
 </dt> <dd>
 
-Indirizzo di un BSTR che riceve il valore del testo vocale per il [**comando**](command-event.md).
+Indirizzo di un BSTR che riceve il valore del testo vocale per [**il comando**](command-event.md).
 
 </dd> </dl>
 
-Se l'input vocale non è l'origine del comando, ad esempio se l'utente ha selezionato il [](command-event.md)comando dal menu a comparsa del carattere, il server restituisce **NULL** per il testo vocale del comando.
+Se [**l'input**](command-event.md)vocale non è l'origine del comando, ad esempio se l'utente ha selezionato il comando dal menu a comparsa del carattere, il server restituisce **NULL** per il testo vocale del comando.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentUserInput::GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput::GetItemID**](iagentuserinput--getitemid.md), [**IAgentUserInput::GetAllItemData**](iagentuserinput--getallitemdata.md)
+[**IAgentUserInput::GetItemConfidence,**](iagentuserinput--getitemconfidence.md) [**IAgentUserInput::GetItemID,**](iagentuserinput--getitemid.md) [**IAgentUserInput::GetAllItemData**](iagentuserinput--getallitemdata.md)
 
 
  

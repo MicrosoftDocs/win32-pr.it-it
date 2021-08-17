@@ -13,9 +13,9 @@ ms.locfileid: "118957100"
 ---
 # <a name="image-integrity-functions"></a>Funzioni di integrità delle immagini
 
-Le funzioni di integrità delle immagini gestiscono il set di certificati in un file di immagine. Vengono fornite routine per aggiungere, rimuovere ed eseguire query sui certificati. È anche disponibile una funzione per ottenere il flusso di byte di un file di immagine necessario per calcolare un digest del messaggio del file di immagine. Questa operazione è necessaria per creare certificati di firma.
+Le funzioni di integrità delle immagini gestiscono il set di certificati in un file di immagine. Vengono fornite routine per aggiungere, rimuovere ed eseguire query sui certificati. È disponibile anche una funzione per ottenere il flusso di byte di un file di immagine necessario per calcolare un digest del messaggio del file di immagine. Questa operazione è necessaria per creare certificati di firma.
 
-Ogni certificato in un file ha un indice che può cambiare quando i certificati vengono rimossi. I nuovi certificati verranno sempre aggiunti "alla fine" dell'elenco di certificati esistenti. In altre informazioni, verranno assegnati indici maggiori di qualsiasi indice attualmente in uso. In generale, un'applicazione non deve presupporre che un determinato certificato abbia lo stesso indice dell'ultima volta a cui è stato fatto riferimento.
+Ogni certificato in un file ha un indice che può cambiare quando i certificati vengono rimossi. I nuovi certificati verranno sempre aggiunti "alla fine" dell'elenco dei certificati esistenti. In altre informazioni, verranno assegnati indici maggiori di qualsiasi indice attualmente in uso. In generale, un'applicazione non deve presupporre che un determinato certificato abbia lo stesso indice dell'ultima volta in cui è stato fatto riferimento.
 
 -   [**DigestFunction**](/windows/desktop/api/Imagehlp/nc-imagehlp-digest_function)
 -   [**ImageAddCertificate**](/windows/desktop/api/Imagehlp/nf-imagehlp-imageaddcertificate)

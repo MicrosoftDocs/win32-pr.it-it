@@ -1,5 +1,5 @@
 ---
-description: Il metodo GetGuidValue recupera un valore GUID (CLSID VT \_ di tipo) specificato da una chiave.
+description: Il metodo GetGuidValue recupera un valore GUID (tipo \_ CLSID VT) specificato da una chiave.
 ms.assetid: 1cfa75e8-2c3b-4893-954e-dae25a6b8220
 title: Metodo IPortableDeviceValues::GetGuidValue (PortableDeviceTypes.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118963680"
 ---
 # <a name="iportabledevicevaluesgetguidvalue-method"></a>Metodo IPortableDeviceValues::GetGuidValue
 
-Il **metodo GetGuidValue** recupera un **valore GUID** (CLSID VT di \_ tipo) specificato da una chiave.
+Il **metodo GetGuidValue** recupera un **valore GUID** (CLSID di tipo VT) specificato da una \_ chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,15 +57,15 @@ Puntatore al valore **GUID** recuperato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                          |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                     |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata dalla *chiave* non è di **tipo GUID.**<br/>   |
-| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nella raccolta.<br/> |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *key* non è un **tipo GUID.**<br/>   |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nell'insieme.<br/> |
 
 
 
@@ -96,7 +96,7 @@ Per un esempio di come usare questo metodo, vedere [Recupero di metodi di serviz
 [**IPortableDeviceValues::SetGuidValue**](iportabledevicevalues-setguidvalue.md)
 </dt> <dt>
 
-[Recupero dei metodi di servizio supportati](retrieving-supported-methods.md)
+[Recupero di metodi di servizio supportati](retrieving-supported-methods.md)
 </dt> <dt>
 
 [Recupero delle funzionalità di rendering supportate da un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)

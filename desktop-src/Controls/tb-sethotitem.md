@@ -3,7 +3,7 @@ title: TB_SETHOTITEM messaggio (Commctrl.h)
 description: "TB_SETHOTITEM: imposta l'elemento di scelta rapida in una barra degli strumenti."
 ms.assetid: 15005741-29d2-48c6-b5f0-15178a49b917
 keywords:
-- TB_SETHOTITEM di Windows messaggi
+- TB_SETHOTITEM controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

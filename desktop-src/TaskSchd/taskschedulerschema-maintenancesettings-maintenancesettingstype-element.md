@@ -1,9 +1,9 @@
 ---
 title: Elemento MaintenanceSettings (maintenanceSettingsType)
-description: Specifica il modo in cui Utilità di pianificazione attività durante la manutenzione automatica.
+description: Specifica il modo in cui Utilità di pianificazione le attività durante la manutenzione automatica.
 ms.assetid: 6A204980-851D-4487-A6CC-01BE262A517A
 keywords:
-- Elemento MaintenanceSettings Utilità di pianificazione
+- Elementi MaintenanceSettings Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "119309341"
 ---
 # <a name="maintenancesettings-maintenancesettingstype-element"></a>Elemento MaintenanceSettings (maintenanceSettingsType)
 
-Specifica il modo in cui Utilità di pianificazione attività durante la manutenzione automatica.
+Specifica il modo in cui Utilità di pianificazione le attività durante la manutenzione automatica.
 
 ``` syntax
 <xs:element name="MaintenanceSettings"
@@ -57,11 +57,11 @@ Specifica il modo in cui Utilità di pianificazione attività durante la manuten
 
 ## <a name="remarks"></a>Commenti
 
-Per la programmazione C++, questa impostazione di inattività viene specificata usando la [**proprietà ITaskSettings3::MaintenanceSettings.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)
+Per la programmazione C++, questa impostazione inattiva viene specificata tramite la [**proprietà ITaskSettings3::MaintenanceSettings.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento settings che indica a Utilità di pianificazione di eseguire l'attività una volta ogni 5 giorni durante la normale manutenzione automatica e, in caso di esito negativo per 15 giorni, avviare il tentativo di eseguire l'attività durante la manutenzione automatica di emergenza.
+Il codice XML seguente definisce un elemento settings che indica a Utilità di pianificazione di eseguire l'attività una volta ogni 5 giorni durante la normale manutenzione automatica e, in caso di esito negativo per 15 giorni, iniziare a tentare l'attività durante la manutenzione automatica di emergenza.
 
 
 ```XML
@@ -90,7 +90,7 @@ Nel codice XML seguente viene definito un elemento settings che indica a Utilit�
 
 <dl> <dt>
 
-[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

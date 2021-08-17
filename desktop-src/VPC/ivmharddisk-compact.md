@@ -62,9 +62,9 @@ Questo metodo può restituire uno di questi valori.
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                                    | L'operazione è stata completata.<br/>                                                                                                        |
 | <dl> <dt>**DISP \_ E \_ ECCEZIONE**</dt> <dt>0x80020009</dt> </dl>                              | Si è verificato un errore imprevisto.<br/>                                                                                                    |
 | <dl> <dt>**E \_ Puntatore**</dt> <dt>0x80004003</dt> </dl>                                      | Il parametro è **NULL.**<br/>                                                                                                           |
-| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ SHARING \_ VIOLATION)**</dt> <dt>0x80070020</dt> </dl> | L'immagine del disco rigido virtuale a cui fa [**riferimento questo oggetto IVMHardDisk**](ivmharddisk.md) è in uso.<br/>                                  |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ SHARING \_ VIOLATION)**</dt> <dt>0X80070020</dt> </dl> | L'immagine del disco rigido virtuale a cui fa [**riferimento questo oggetto IVMHardDisk**](ivmharddisk.md) è in uso.<br/>                                  |
 | <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ DISK \_ FULL)**</dt> <dt>0x80070070</dt> </dl>         | Il volume host non dispone di spazio sufficiente per creare un file temporaneo necessario per la compattazione di questa immagine del disco rigido virtuale.<br/>     |
-| <dl> <dt>**Macchina virtuale \_ E \_ ARRESTO \_ DELL'APP \_ 0XA0040209**</dt> <dt></dt> </dl>                      | L'immagine del disco rigido virtuale non può essere compattata perché l'applicazione è in fase di arresto.<br/>                                            |
+| <dl> <dt>**Macchina virtuale \_ E \_ APP \_ SHUTTING \_ DOWN**</dt> <dt>0xA0040209</dt> </dl>                      | L'immagine del disco rigido virtuale non può essere compattata perché l'applicazione è in fase di arresto.<br/>                                            |
 | <dl> <dt>**Macchina virtuale \_ E \_ FILE \_ READ \_ ONLY**</dt> <dt>0xA004067A</dt> </dl>                         | L'immagine del disco rigido virtuale a cui fa [**riferimento questo oggetto IVMHardDisk**](ivmharddisk.md) è contrassegnata come di sola lettura.<br/>                     |
 | <dl> <dt>**Macchina virtuale \_ E \_ TIPO DI IMMAGINE HD \_ \_ \_ ERRATO**</dt> <dt>0XA004067B</dt> </dl>                   | L'immagine del disco rigido virtuale a cui fa riferimento questo [**oggetto IVMHardDisk**](ivmharddisk.md) deve essere un **tipo di immagine vmDiskTypeDynamic.**<br/> |
 | <dl> <dt>**Macchina virtuale \_ E \_ FILE HD NON \_ \_ VALIDO**</dt> <dt>0xA0040682</dt> </dl>                        | L'immagine del disco rigido virtuale a cui fa riferimento questo [**oggetto IVMHardDisk**](ivmharddisk.md) non sembra essere un'immagine valida.<br/>          |
@@ -86,7 +86,7 @@ Per compattare un'immagine del disco rigido a espansione dinamica, è prima nece
 | Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMHardDisk è definito come ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
 

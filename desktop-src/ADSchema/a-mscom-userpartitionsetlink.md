@@ -32,7 +32,7 @@ Collegamento usato per associare un utente a un partitionSet COM+.
 | CN                | ms-COM-UserPartitionSetLink             |
 | Ldap-Display-Name | msCOM-UserPartitionSetLink              |
 | Dimensione              | \-                                      |
-| Aggiorna privilegio  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1426                 |
 | System-Id-Guid    | 8e940c8a-e477-4367-b08d-ff2ff942dcd7    |
@@ -57,7 +57,7 @@ Collegamento usato per associare un utente a un partitionSet COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| A valore singolo       | Vero                                                                                             |
+| Is-Single-Valued       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
@@ -78,7 +78,7 @@ Collegamento usato per associare un utente a un partitionSet COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| A valore singolo       | Vero                                                                                             |
+| Is-Single-Valued       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
@@ -99,7 +99,7 @@ Collegamento usato per associare un utente a un partitionSet COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| A valore singolo       | Vero                                                                                             |
+| Is-Single-Valued       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |

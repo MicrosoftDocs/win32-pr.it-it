@@ -1,7 +1,7 @@
 ---
 description: Carica una superficie da un file.
 ms.assetid: cbd360b6-6cee-418b-8c45-506e190eb2f6
-title: Funzione D3DXLoadSurfaceFromFile (D3dx9tex. h)
+title: Funzione D3DXLoadSurfaceFromFile (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f53343e436ac78b93bcee30c7da5c9d8eb2dc415
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44c06f0d88558fcb7692218cfe5aa98a2483fd1881dcab2f1d75f2c251bffb91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123059"
 ---
-# <a name="d3dxloadsurfacefromfile-function"></a>D3DXLoadSurfaceFromFile (funzione)
+# <a name="d3dxloadsurfacefromfile-function"></a>Funzione D3DXLoadSurfaceFromFile
 
 Carica una superficie da un file.
 
@@ -47,75 +47,75 @@ HRESULT D3DXLoadSurfaceFromFile(
 
 <dl> <dt>
 
-*pDestSurface* \[ in\]
+*pDestSurface* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
 
-Puntatore a un'interfaccia [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) . Specifica la superficie di destinazione che riceve l'immagine.
+Puntatore a [**un'interfaccia IDirect3DSurface9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) Specifica la superficie di destinazione, che riceve l'immagine.
 
 </dd> <dt>
 
-*pDestPalette* \[ in\]
+*pDestPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la tavolozza di destinazione di 256 colori o **null**.
+Puntatore a [**una struttura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la tavolozza di destinazione di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*pDestRect* \[ in\]
+*pDestRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Specifica il rettangolo di destinazione. Impostare questo parametro su **null** per specificare l'intera superficie.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Specifica il rettangolo di destinazione. Impostare questo parametro su **NULL per** specificare l'intera superficie.
 
 </dd> <dt>
 
-*pSrcFile* \[ in\]
+*pSrcFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome del file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati String viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pSrcRect* \[ in\]
+*pSrcRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Specifica il rettangolo di origine. Impostare questo parametro su **null** per specificare l'intera immagine.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Specifica il rettangolo di origine. Impostare questo parametro su **NULL per** specificare l'intera immagine.
 
 </dd> <dt>
 
-*Filtro* \[ di in\]
+*Filtro* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più [ \_ filtri D3DX](d3dx-filter.md) che controllano il modo in cui l'immagine viene filtrata. Specificare \_ il valore predefinito di D3DX per questo parametro equivale a specificare \_ il \_ \| \_ dithering del filtro D3DX del triangolo di filtro D3DX \_ .
+Combinazione di uno o più [filtri D3DX \_ che](d3dx-filter.md) controllano la modalità di filtro dell'immagine. Specificare D3DX DEFAULT per questo parametro equivale a specificare \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER.
 
 </dd> <dt>
 
-*ColorKey* \[ in\]
+*ColorKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-Valore [**D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare il colorkey. Si tratta sempre di un colore ARGB a 32 bit, indipendente dal formato di immagine di origine. Alfa è significativo e in genere deve essere impostato su FF per le chiavi di colore opache, quindi, per il nero opaco, il valore è uguale a 0xFF000000.
+[**Valore D3DCOLOR**](d3dcolor.md) da sostituire con nero trasparente oppure 0 per disabilitare la chiave di colore. Si tratta sempre di un colore ARGB a 32 bit, indipendentemente dal formato dell'immagine di origine. Alpha è significativo e in genere deve essere impostato su FF per le chiavi di colore opaco. Pertanto, per il nero opaco, il valore sarebbe uguale a 0xFF000000.
 
 </dd> <dt>
 
-*pSrcInfo* \[ in uscita\]
+*pSrcInfo* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ info**](d3dximage-info.md)\***
+Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntatore a una struttura di [**\_ informazioni D3DXIMAGE**](d3dximage-info.md) per la compilazione di una descrizione dei dati nel file di immagine di origine o **null**.
+Puntatore a [**una struttura D3DXIMAGE \_ INFO**](d3dximage-info.md) da riempire con una descrizione dei dati nel file di immagine di origine oppure **NULL.**
 
 </dd> </dl>
 
@@ -127,11 +127,11 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXLoadSurfaceFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXLoadSurfaceFromFileA perché vengono utilizzate le stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXLoadSurfaceFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXLoadSurfaceFromFileA perché vengono usate stringhe ANSI.
 
-Questa funzione gestisce la conversione da e verso formati di trama compressi e supporta i formati di file seguenti: BMP, DDS, DIB, HDR, jpg, PFM, PNG, ppm e TGA. Vedere [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Questa funzione gestisce la conversione da e verso formati di trama compressi e supporta i formati di file seguenti: .bmp, dds, dib, hdr, .jpg, pfm, .png, ppm e tga. Vedere [**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md).
 
-La scrittura in una superficie non di livello zero non comporterà l'aggiornamento del rettangolo modificato. Se viene chiamato **D3DXLoadSurfaceFromFile** e la superficie non è già sporca (si tratta di un problema improbabile in scenari di utilizzo normali), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla superficie.
+La scrittura in una superficie non di livello zero non causerà l'aggiornamento del rettangolo dirty. Se viene chiamato **D3DXLoadSurfaceFromFile** e la superficie non era già dirty (questo è improbabile nei normali scenari di utilizzo), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla superficie.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,8 +139,8 @@ La scrittura in una superficie non di livello zero non comporterà l'aggiornamen
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

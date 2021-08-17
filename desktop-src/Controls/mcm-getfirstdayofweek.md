@@ -1,9 +1,9 @@
 ---
 title: MCM_GETFIRSTDAYOFWEEK messaggio (Commctrl.h)
-description: Recupera il primo giorno della settimana per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la macro MonthCal \_ GetFirstDayOfWeek.
+description: Recupera il primo giorno della settimana per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la macro MonthCal \_ GetFirstDayOfWeek.
 ms.assetid: bbbc1c45-5693-4a79-908a-ec6e8ef8b218
 keywords:
-- MCM_GETFIRSTDAYOFWEEK dei messaggi Windows controlli
+- MCM_GETFIRSTDAYOFWEEK controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119319651"
 ---
 # <a name="mcm_getfirstdayofweek-message"></a>Messaggio \_ MCM GETFIRSTDAYOFWEEK
 
-Recupera il primo giorno della settimana per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MonthCal \_ GetFirstDayOfWeek.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getfirstdayofweek)
+Recupera il primo giorno della settimana per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la macro [**MonthCal \_ GetFirstDayOfWeek.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getfirstdayofweek)
 
 ## <a name="parameters"></a>Parametri
 

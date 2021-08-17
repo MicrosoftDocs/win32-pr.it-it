@@ -1,50 +1,50 @@
 ---
-description: In questo argomento viene descritto quando e come usare un remux MFT e un sink MP4 H. 264/AVC.
+description: Questo argomento descrive quando e come usare un sink H.264/AVC Remux MFT e MP4.
 ms.assetid: 1DD236D9-775B-4417-BC49-BF52A6B3C8AD
-title: Quando e come usare H. 264/AVC remux MFT e MP4 sink
+title: Quando e come usare il sink H.264/AVC Remux MFT e MP4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 132c582fa16eae56c4fec8809caa4bd501469e16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6ce5b6d63a21e7a9d6b75acd29690cdeaeba5b0105dcf8d45fe0c93e6b768f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119357951"
 ---
-# <a name="when-and-how-to-use-h264avc-remux-mft-and-mp4-sink"></a>Quando e come usare H. 264/AVC remux MFT e MP4 sink
+# <a name="when-and-how-to-use-h264avc-remux-mft-and-mp4-sink"></a>Quando e come usare il sink H.264/AVC Remux MFT e MP4
 
-In questo argomento viene descritto quando e come usare un remux MFT e un sink MP4 H. 264/AVC.
+Questo argomento descrive quando e come usare un sink H.264/AVC Remux MFT e MP4.
 
-## <a name="when-to-use-h264avc-remux-mft"></a>Quando usare H. 264/AVC remux MFT
+## <a name="when-to-use-h264avc-remux-mft"></a>Quando usare H.264/AVC Remux MFT
 
-Il formato di file MPEG-4 richiede che ogni esempio compresso contenga un'immagine principale con unità NAL nell'ordine corretto. (Fare riferimento alla definizione dell'immagine principale e dell'ordine di unità NAL obbligatorie nella sezione 7.4.1.2.3, **ordine di unità NAL e immagini codificate e associazione alle unità di accesso**, della specifica AVC H. 264). Richiede anche che ogni campione compresso sia associato a un timestamp di presentazione, alla decodifica del timestamp e alla durata del campione.
+Il formato di file MPEG-4 richiede che ogni esempio compresso contenga un'immagine primaria con unità NAL nell'ordine corretto. Vedere la definizione dell'immagine primaria e dell'ordine delle unità NAL obbligatorie nella sezione 7.4.1.2.3, Ordine delle unità **NAL** e immagini codificate e associazione per accedere alle unità , della specifica H.264 AVC. Richiede anche che ogni esempio compresso sia associato a un timestamp di presentazione, a un timestamp di decodifica e a una durata del campione.
 
-In molti scenari in cui le applicazioni devono registrare video H. 264/AVC in un contenitore di file MPEG-4, l'esempio compresso potrebbe non soddisfare i requisiti precedenti. Un esempio compresso, ad esempio, potrebbe non contenere un'immagine principale completa o potrebbe non essere associato a un timestamp di presentazione appropriato. Alcuni esempi di applicazioni sono:
+In molti scenari in cui le applicazioni devono registrare video H.264/AVC in un contenitore di file MPEG-4, l'esempio compresso potrebbe non soddisfare i requisiti precedenti. Ad esempio, un esempio compresso potrebbe non contenere un'immagine primaria completa o non avere un timestamp di presentazione corretto associato. Di seguito sono riportati alcuni esempi di applicazioni:
 
--   Scrivere il video elementare di streaming H. 264/AVC nel contenitore di file MPEG-4.
--   Registrare il video elementare H. 264/AVC della fotocamera nel contenitore di file MPEG-4.
--   Registrare la conferenza video H. 264/AVC nel contenitore di file MPEG-4.
--   Concatenare due video H. 264/AVC in MPEG-2 TS o MP4 e scrivere nel contenitore di file MPEG-4 con timestamp corretti.
--   Video remux H. 264/AVC dal formato di file AVCHD, MPEG-2 TS/PS al formato di file MPEG-4.
--   Tagliare il file video H. 264/AVC senza transcodifica.
+-   Scrivere video elementare di streaming H.264/AVC nel contenitore di file MPEG-4.
+-   Registrare il video elementare H.264/AVC acquisito dalla fotocamera nel contenitore di file MPEG-4.
+-   Registrare la videoconferenza H.264/AVC nel contenitore di file MPEG-4.
+-   Concatenare due video H.264/AVC in MPEG-2 TS o MP4 e scrivere nel contenitore di file MPEG-4 con timestamp corretti.
+-   Remux video H.264/AVC dal formato di file AVCHD, MPEG-2 TS/PS al formato di file MPEG-4.
+-   Tagliare il file video H.264/AVC senza transcodico.
 
-In questa situazione, l'applicazione deve usare una remux MFT H. 264/AVC per convertire gli esempi compressi che non contengono un'immagine principale completa prima che vengano scritti nel contenitore di file MPEG-4.
+In questo caso, l'applicazione deve usare un MFT remux H.264/AVC per convertire gli esempi compressi che non contengono un'immagine primaria completa prima che siano scritti nel contenitore di file MPEG-4.
 
-## <a name="how-to-use-h264avc-remux-mft-and-mp4-sink"></a>Come usare H. 264/AVC remux MFT e MP4 sink
+## <a name="how-to-use-h264avc-remux-mft-and-mp4-sink"></a>Come usare il sink H.264/AVC Remux MFT e MP4
 
-Impostare il tipo di supporto di output di origine su **MFVideoFormat \_ H264 \_ es**, che indica che ogni campione potrebbe non contenere un'immagine principale completa. Impostare il tipo di supporto di input MP4 sink su **MFVideoFormat \_ H264**. Il tipo di supporto di input di H. 264/AVC remux MFT è quindi **MFVideoFormat \_ H264 \_ es** e il tipo di supporto di output di h. 264/AVC remux MFT è **MFVideoFormat \_ H264**, che verrà inserito automaticamente nel resolver della topologia.
+Impostare il tipo di supporto di output di origine su **MFVideoFormat \_ H264 \_ ES,** che indica che ogni esempio potrebbe non contenere un'immagine primaria completa. Impostare il tipo di supporto di input del sink MP4 su **MFVideoFormat \_ H264**. Il tipo di supporto di input del MFT remux H.264/AVC è **MFVideoFormat \_ H264 \_ ES** e il tipo di supporto di output del MFT remux H.264/AVC è **MFVideoFormat \_ H264,** che verrà inserito automaticamente nel sistema di risoluzione della topologia.
 
-La durata del campione viene ignorata dal remux H. 264/AVC, perché la durata del campione per un campione che non contiene un'immagine primaria completa non ha un significato chiaro. La durata del campione viene invece calcolata dalla frequenza dei fotogrammi. La frequenza dei fotogrammi viene calcolata dal parametro Sequence. Se le informazioni non sono presenti nel parametro Sequence, la frequenza dei fotogrammi viene calcolata in base ai parametri nel tipo di supporto di input. Se non sono disponibili informazioni sulla frequenza dei fotogrammi, viene utilizzata la frequenza dei fotogrammi predefinita 29,97 fps.
+La durata del campione viene ignorata dal remux H.264/AVC, perché la durata del campione per un campione che non contiene un'immagine primaria completa non ha un significato chiaro. Al contrario, la durata del campione viene calcolata dalla frequenza dei fotogrammi. La frequenza dei fotogrammi viene calcolata dal parametro sequence. Se le informazioni non esistono nel parametro sequence, la frequenza dei fotogrammi viene calcolata dai parametri nel tipo di supporto di input. Se le informazioni sulla frequenza dei fotogrammi non sono disponibili, viene usata la frequenza fotogrammi predefinita di 29,97 fps.
 
-H. 264/AVC remux MFT esegue l'interpolazione lineare dei timestamp di decodifica (DTS) per ogni immagine compressa in base alla frequenza dei fotogrammi. H. 264/AVC remux MFT rispetta i timestamp di presentazione dell'input (PTS) negli esempi di input e li passa all'output se esistono. Esegue l'interpolazione PTS in base alla frequenza dei fotogrammi, ai punti precedenti e all'ordine di output dell'immagine tramite il processo di ingrandimento del buffering delle immagini decodificato (DBP), come specificato nel processo di ingrandimento **4.5.3** della specifica H. 264 AVC. Ogni esempio di output di H. 264/AVC remux MFT deve avere PTS, DTS e la durata del campione. H. 264/AVC remux MFT identifica anche le immagini IDR nel bitstream e le imposta come punto di pulizia con l'attributo MF di [MFSampleExtension \_ CleanPoint](mfsampleextension-cleanpoint-attribute.md).
+H.264/AVC remux MFT interpola in modo lineare i timestamp di decodifica (DTS) per ogni immagine compressa in base alla frequenza dei fotogrammi. H.264/AVC remux MFT rispetta i timestamp di presentazione di input (PTS) negli esempi di input e li passa all'output, se presenti. Esegue l'interpolazione PTS in base alla frequenza dei fotogrammi, al PTS precedente e all'ordine di output dell'immagine tramite il processo di bumping DBP (Decoded Picture Buffering), come specificato nell'allegato **C.4.5.3 Bumping process** della specifica H.264 AVC. Ogni esempio di output della MFT remux H.264/AVC deve avere durata PTS, DTS e campione. H.264/AVC remux MFT identifica anche le immagini IDR nel flusso di bit e le imposta come punto pulito con l'attributo MF di [MFSampleExtension \_ CleanPoint](mfsampleextension-cleanpoint-attribute.md).
 
-Attualmente il remux MFT di H. 264/AVC può gestire un massimo di 64 di frame riordinato. Se il numero di fotogrammi riordinati supera 64 con un frame di riferimento a lungo termine, l'remux MFT di H. 264/AVC eseguirà l'interpolazione di un PTS errato per quel frame e l'output del frame in un momento errato.
+Attualmente il remux MFT H.264/AVC può gestire un massimo di 64 fotogrammi riordinati. Se il numero di fotogrammi riordinati supera 64 con un frame di riferimento a lungo termine presente, la MFT remux H.264/AVC interpolerà un PTS errato per tale frame e restituisce tale frame in un momento errato.
 
-Per creare un'istanza di un remux MFT H. 264/AVC, impostare i tipi di supporti di input e di output corretti nella MFT remux H. 264/AVC, impostare il tipo di supporto di input per il sink MP4 e risolvere la topologia.
+Per creare un'istanza di H.264/AVC remux MFT, impostare i tipi di supporti di input e output corretti in H.264/AVC remux MFT, impostare il tipo di supporto di input per il sink MP4 e risolvere la topologia.
 
-Il codice di esempio seguente illustra come inizializzare le remux MFT e MP4 del sink H. 264/AVC.
+Il codice di esempio seguente illustra come inizializzare il sink H.264/AVC remux MFT e MP4.
 
-Per la remux MFT H. 264/AVC,
+Per H.264/AVC remux MFT,
 
 
 ```C++

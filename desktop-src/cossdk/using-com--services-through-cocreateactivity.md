@@ -17,7 +17,7 @@ La [**funzione CoCreateActivity**](/windows/desktop/api/ComSvcs/nf-comsvcs-cocre
 
 I servizi COM+ desiderati vengono configurati tramite un [**oggetto CServiceConfig**](cserviceconfig.md) passato alla funzione. La funzione crea un oggetto attività e restituisce [**l'interfaccia IServiceActivity**](/windows/desktop/api/ComSvcs/nn-comsvcs-iserviceactivity) di tale oggetto. Il lavoro batch può essere inviato in modo sincrono o asincrono, usando rispettivamente i metodi [**SynchronousCall**](/windows/desktop/api/ComSvcs/nf-comsvcs-iserviceactivity-synchronouscall) o [**AsynchronousCall**](/windows/desktop/api/ComSvcs/nf-comsvcs-iserviceactivity-asynchronouscall) **di IServiceActivity.** Un puntatore a [**un'interfaccia IServiceCall**](/windows/desktop/api/ComSvcs/nn-comsvcs-iservicecall) viene passato a ognuno di questi metodi e il lavoro batch viene implementato dallo sviluppatore nel metodo [**OnCall**](/windows/desktop/api/ComSvcs/nf-comsvcs-iservicecall-oncall) **dell'interfaccia IServiceCall.**
 
-## <a name="component-services-administrative-tool"></a>Strumento amministrativo servizi componenti
+## <a name="component-services-administrative-tool"></a>Strumento di amministrazione di Servizi componenti
 
 Non è valida.
 

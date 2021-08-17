@@ -1,23 +1,23 @@
 ---
-description: Una funzione di aggregazione esegue un calcolo su un set di valori e restituisce un valore. In questo modo è possibile generare statistiche di riepilogo per i gruppi a più livelli con un sovraccarico ridotto.
+description: Una funzione di aggregazione esegue un calcolo su un set di valori e restituisce un valore. In questo modo è possibile generare statistiche di riepilogo per i gruppi multi-livello con un sovraccarico minimo.
 ms.assetid: 82a93f57-8273-45bf-81d7-50a673845ae1
 title: Funzioni di aggregazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da68ad1104c93e8ae04f7ec37cbbde5020109336
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30d504a9343116bc23e847728716eeaa79fc2d26d993e962dd81ccd43669e22a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104562917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094957"
 ---
 # <a name="aggregate-functions"></a>Funzioni di aggregazione
 
-Una funzione di aggregazione esegue un calcolo su un set di valori e restituisce un valore. In questo modo è possibile generare statistiche di riepilogo per i gruppi a più livelli con un sovraccarico ridotto.
+Una funzione di aggregazione esegue un calcolo su un set di valori e restituisce un valore. In questo modo è possibile generare statistiche di riepilogo per i gruppi multi-livello con un sovraccarico minimo.
 
 ## <a name="about-aggregate-functions"></a>Informazioni sulle funzioni di aggregazione
 
-Le funzioni di aggregazione in Windows Search Structured Query Language (SQL) hanno la sintassi seguente:
+Le funzioni di aggregazione Windows ricerca Structured Query Language (SQL) hanno la sintassi seguente:
 
 
 ```
@@ -26,22 +26,22 @@ AGGREGATE <function> [AS <label>] [,<function> [AS <label>]]*
 
 
 
-La parte della funzione può includere le funzioni e la sintassi seguenti:
+La parte della funzione può includere una delle funzioni e della sintassi seguenti:
 
 
 
 | Funzione                                                              | Descrizione                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AVG ( <column> )                                                   | Restituisce la media dei valori in un gruppo. Si applica solo ai numeri.                                                                                                                                      |
-| BYFREQUENCY ( <column> , <N> )                                | Restituisce i valori di colonna N più frequenti dai risultati nel gruppo. Include inoltre un conteggio del numero di volte in cui ogni valore si è verificato e degli identificatori del documento per i risultati che contengono ogni valore restituito. |
-| CHILDCOUNT ()                                                          | Restituisce il numero di elementi in un gruppo (esclusi i sottogruppi). Se sono presenti più livelli di raggruppamento, restituisce il numero di gruppi figlio immediati.                                                  |
-| CONTEGGIO ()                                                               | Restituisce il numero di elementi in un gruppo e in tutti i sottogruppi.                                                                                                                                                   |
-| DATERANGE ( <column> )                                             | Restituisce i limiti inferiore e superiore dei valori di colonna trovati nel gruppo di risultati del gruppo. Valido solo per le proprietà FILETIME.                                                                               |
-| PRIMO ( <column> , <N> )                                      | Restituisce i primi valori di colonna N dai risultati foglia trovati in un gruppo.                                                                                                                                       |
-| MAX ( <column> )                                                   | Restituisce il valore massimo dell'espressione. Si applica solo a numeri o date.                                                                                                                              |
-| MIN ( <column> )                                                   | Restituisce il valore minimo nell'espressione. Si applica solo a numeri o date.                                                                                                                              |
-| REPRESENTATIVEOF ( <column> , <idRepresentative> , <N> ) | Restituisce N valori idRepresentative, ognuno selezionato da uno dei subset di risultati con un valore di colonna univoco. Ogni valore viene restituito anche con un identificatore del documento con il valore idRepresentative. |
-| SUM ( <column> )                                                   | Restituisce la somma dei valori in un gruppo. Si applica solo ai numeri.                                                                                                                                          |
+| AVG( <column> )                                                   | Restituisce la media dei valori in un gruppo. Si applica solo ai numeri.                                                                                                                                      |
+| BYFREQUENCY( <column> , <N> )                                | Restituisce i valori di colonna N più frequenti dai risultati nel gruppo. Include anche il numero di volte in cui si è verificato ogni valore e gli identificatori di documento per i risultati che contengono ogni valore restituito. |
+| CHILDCOUNT()                                                          | Restituisce il numero di elementi in un gruppo (esclusi i sottogruppi). Se sono presenti più livelli di raggruppamento, viene restituito il numero di gruppi figlio immediati.                                                  |
+| COUNT()                                                               | Restituisce il numero di elementi in un gruppo e in tutti i sottogruppi.                                                                                                                                                   |
+| DATERANGE( <column> )                                             | Restituisce i limiti inferiore e superiore dei valori di colonna trovati nel gruppo di risultati del gruppo. Valido solo per le proprietà filetime.                                                                               |
+| FIRST( <column> , <N> )                                      | Restituisce i primi N valori di colonna dai risultati foglia trovati in un gruppo.                                                                                                                                       |
+| MAX( <column> )                                                   | Restituisce il valore massimo dell'espressione. Si applica solo a numeri o date.                                                                                                                              |
+| MIN( <column> )                                                   | Restituisce il valore minimo nell'espressione. Si applica solo a numeri o date.                                                                                                                              |
+| REPRESENTATIVEOF( <column> , <idRepresentative> , <N> ) | Restituisce N valori idRepresentative, ognuno selezionato da uno dei subset di risultati con un valore di colonna univoco. Ogni valore viene restituito anche con un identificatore di documento con il valore idRepresentative. |
+| SUM( <column> )                                                   | Restituisce la somma dei valori in un gruppo. Si applica solo ai numeri.                                                                                                                                          |
 
 
 
@@ -50,21 +50,21 @@ La parte della funzione può includere le funzioni e la sintassi seguenti:
  
 
 > [!Note]  
-> Le aggregazioni vengono restituite come singole colonne. Sono principalmente tipi semplici, ad eccezione di ByFrequency, First, DateRange e RepresentativeOf, che vengono restituiti come tipi composti.
+> Le aggregazioni vengono restituite come singole colonne. Sono per lo più tipi semplici, ad eccezione di ByFrequency, First, DateRange e RepresentativeOf, che vengono restituiti come tipi composti.
 
  
 
-È possibile utilizzare qualsiasi colonna numerica o data per le aggregazioni e non solo quelle presenti nella clausola SELECT. Tuttavia, non è possibile raggruppare le aggregazioni. Se l'argomento della colonna passato non è un tipo numerico o di data, viene restituito un errore di sintassi.
+È possibile utilizzare qualsiasi colonna numerica o di data per le aggregazioni e non solo quelle presenti nella clausola SELECT. Non è tuttavia possibile eseguire il raggruppamento in base alle aggregazioni. Se l'argomento di colonna passato non è di tipo numerico o di data, viene restituito un errore di sintassi.
 
-La parte dell'etichetta è facoltativa e fornisce un alias più leggibile per l'etichetta. Se non si include un'etichetta alias, Windows Search trasforma il nome della funzione e della colonna in un'etichetta. Ad esempio, MAX (System.Document. WordCount) diventa il numero massimo di \_ SystemDocumentWordCount.
+La parte dell'etichetta è facoltativa e fornisce un alias più leggibile per l'etichetta. Se non si include un'etichetta alias, Windows ricerca trasforma la funzione e il nome della colonna in un'etichetta. Ad esempio, MAX(System.Document. WordCount) diventa MAX \_ SystemDocumentWordCount.
 
-## <a name="multi-level-groups-and-counting"></a>Gruppi e conteggio a più livelli
+## <a name="multi-level-groups-and-counting"></a>Gruppi e conteggi multi-livello
 
-Le aggregazioni sono definite sulle foglie e vengono duplicate. Un'aggregazione accetta come input le foglie del gruppo che lo definisce (Documents), anziché i sottogruppi dei relativi elementi figlio. Questa funzionalità viene definita raggruppamento a più livelli.
+Le aggregazioni vengono definite su foglia e vengono duplicate. Un'aggregazione accetta come input le foglia del gruppo che lo definisce (documenti), anziché i sottogruppi dei relativi elementi figlio. Questa funzionalità è detta raggruppamento multi-livello.
 
-Oltre ad aggregazioni definite su foglie e duplicate, vengono conteggiate una sola volta. Sebbene lo stesso documento possa essere rappresentato più volte in un gruppo, le aggregazioni lo considerano una sola volta. Questo concetto è illustrato nell'immagine seguente.
+Oltre a essere definite su foglia e duplicate, le aggregazioni vengono conteggiate una sola volta. Anche se lo stesso documento può essere rappresentato più volte in un gruppo, le aggregazioni lo considererebbe una sola volta. Il grafico seguente illustra questo concetto.
 
-![diagramma che mostra che le aggregazioni sono definite sulle foglie e duplicate e vengono conteggiate una sola volta](images/aggregates.png)
+![diagramma che mostra che le aggregazioni sono definite su foglia e duplicate e vengono conteggiate una sola volta](images/aggregates.png)
 
 ## <a name="aggregate-examples"></a>Esempi di aggregazione
 
@@ -105,7 +105,7 @@ GROUP ON System.author
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un VARIANT trovato nel set di righe come proprietà personalizzata, come alias specificati o come "aggregazioni" se non è specificata alcuna etichetta alias.
+Il valore restituito è una variante trovata nel set di righe come proprietà personalizzata, come alias specificati o come "Aggregates" se non viene specificata alcuna etichetta alias.
 
  
 

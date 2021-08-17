@@ -1,20 +1,20 @@
 ---
-title: Codice di esempio per la creazione di un controllo di accesso a destra
-description: Questo argomento include un esempio di codice che consente di creare un oggetto controlAccessRight nel contenitore Extended-Rights.
+title: Codice di esempio per la creazione di un diritto di accesso di controllo
+description: Questo argomento include un esempio di codice che crea un oggetto controlAccessRight nel Extended-Rights contenitore.
 ms.assetid: b1b644ee-c38a-47da-8a0a-31a06361f35a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41410a16da7566fd71052d9cc33d9f11fa0112e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 86720df8ac16b298cc35ba4d816fb3ec1f7f87d024588791cc1bfe138e2a7d55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962410"
 ---
-# <a name="example-code-for-creating-a-control-access-right"></a>Codice di esempio per la creazione di un controllo di accesso a destra
+# <a name="example-code-for-creating-a-control-access-right"></a>Codice di esempio per la creazione di un diritto di accesso di controllo
 
-Nell'esempio di Visual Basic seguente viene creato un oggetto **controlAccessRight** nel contenitore Extended-Rights.
+Nell'esempio Visual Basic seguente viene creato **un oggetto controlAccessRight** nel Extended-Rights contenitore.
 
 
 ```VB
@@ -62,7 +62,7 @@ CleanUp:
 
 
 
-Il seguente esempio di codice C++ è una funzione che crea un oggetto **controlAccessRight** nel contenitore Extended-Rights. Quando si chiama questa funzione, usare il formato seguente per specificare la stringa GUID per il parametro *pszRightsGUID* .
+L'esempio di codice C++ seguente è una funzione che crea un oggetto **controlAccessRight** nel Extended-Rights contenitore. Quando si chiama questa funzione, usare il formato seguente per specificare la stringa GUID per il *parametro pszRightsGUID.*
 
 
 ```C++
@@ -71,7 +71,7 @@ L"b7b13123-b82e-11d0-afee-0000f80367c1"
 
 
 
-La matrice **ADSVALUE** per la proprietà **appliesTo** usa lo stesso formato GUID e imposta il membro **dwType** su **ADSTYPE \_ case \_ Ignore \_ String**.
+La **matrice ADSVALUE** per la **proprietà appliesTo** usa lo stesso formato GUID e imposta il membro **dwType** **su ADSTYPE \_ CASE IGNORE \_ \_ STRING.**
 
 
 ```C++
@@ -241,7 +241,7 @@ return hr;
 
 
 
-Questa funzione di esempio **CreateExtendedRight** può essere chiamata con l'esempio di codice seguente.
+Questa **funzione di esempio CreateExtendedRight** può essere chiamata con l'esempio di codice seguente.
 
 
 ```C++
@@ -258,9 +258,9 @@ hr = CreateExtendedRight(L"myexright", L"My Extended Right",
 
 
 
- 
+ 
 
- 
+ 
 
 
 

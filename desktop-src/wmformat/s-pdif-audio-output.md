@@ -1,39 +1,39 @@
 ---
-title: Output audio S/PDIF
-description: Output audio S/PDIF
+title: S/PDIF Audio Output
+description: S/PDIF Audio Output
 ms.assetid: 958c4be7-5e53-47fc-96e9-fcf182d27c55
 keywords:
 - Windows Media Format SDK, output audio S/PDIF
 - Windows Media Format SDK, supporto audio
-- Windows Media Format SDK, formato di interconnessione digitale Sony/Philips (S/PDIF)
+- Windows Media Format SDK,Sony/Philips Digital Interconnect Format (S/PDIF)
 - codec, output audio S/PDIF
 - codec, supporto audio
-- codec, formato di interconnessione digitale Sony/Philips (S/PDIF)
-- Formato di interconnessione digitale Sony/Philips (S/PDIF), output audio
-- S/PDIF (formato di interconnessione digitale Sony/Philips), output audio
+- codecs,Formato di interconnessione digitale Disas/Philips (S/PDIF)
+- S/PDIF (Digital Interconnect Format) di Sony/Philips), output audio
+- S/PDIF (Formato di interconnessione digitale Di Sony/Philips), output audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b06a8fb124476660e983ecc7e04c99d0d7f5a816
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cd31f4f7d5057edc9e3bcde8259cb2bb62f7ff0d22601798e2a3e2181554277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084468"
 ---
-# <a name="spdif-audio-output"></a>Output audio S/PDIF
+# <a name="spdif-audio-output"></a>S/PDIF Audio Output
 
-Alcuni dispositivi audio usano il formato di interconnessione digitale (S/PDIF) Sony/Philips per il trasporto di dati audio. È ora possibile decodificare l'audio in S/PDIF da audio codificato con il codec Windows Media Professional.
+Alcuni dispositivi audio usano il formato S/PDIF (Digital Interconnect Format) di Sony/Philips per il trasporto dei dati audio. È ora possibile decodificare l'audio in S/PDIF dall'audio codificato con il codec Windows Media Professional.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità di codec**](codec-features.md)
+[**Funzionalità dei codec**](codec-features.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Associa un servizio al relativo computer di hosting.
 ms.assetid: 888ABA71-6D67-4933-89E6-40F731AA7153
-title: Classe Msvm_HostedService
+title: Msvm_HostedService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 284254d32e788e374d56b3822f5c00868552e1f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ab9ddb6326d594253ab1ef7f810140ac463c32fcb62367b03b656004b861e4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014509"
 ---
-# <a name="msvm_hostedservice-class"></a>\_Classe MSVM servizio ospitato
+# <a name="msvm_hostedservice-class"></a>Classe Msvm \_ HostedService
 
-Associa un servizio al relativo computer di hosting. Le istanze di [**MSVM \_ VirtualizationManagementService**](msvm-virtualsystemmanagementservice.md) possono essere individuate tramite la relativa associazione a un host.
+Associa un servizio al relativo computer di hosting. Le istanze [**di Msvm \_ VirtualizationManagementService**](msvm-virtualsystemmanagementservice.md) possono essere individuate tramite la relativa associazione a un host.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,49 +41,49 @@ class Msvm_HostedService : CIM_HostedService
 
 ## <a name="members"></a>Members
 
-La **classe \_ servizio ospitato di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ HostedService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ servizio ospitato di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ HostedService** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)**
+Tipo di dati: **[ **CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento al sistema del computer host. Questa proprietà viene ereditata da [**CIM \_ servizio ospitato**](/windows/desktop/CIMWin32Prov/cim-hostedservice).
+Riferimento al computer host. Questa proprietà viene ereditata da [**CIM \_ HostedService.**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **\_ servizio CIM**](/windows/desktop/CIMWin32Prov/cim-service)**
+Tipo di dati: **[ **servizio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento al servizio ospitato. Questa proprietà viene ereditata da [**CIM \_ servizio ospitato**](/windows/desktop/CIMWin32Prov/cim-hostedservice).
+Riferimento al servizio ospitato. Questa proprietà viene ereditata da [**CIM \_ HostedService.**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ servizio ospitato di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ HostedService** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.md).
+Vedere [Esecuzione di query sugli oggetti di rete.](querying-networking-objects.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,10 +91,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -103,10 +103,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 <dl> <dt>
 
-[**\_Servizio ospitato CIM**](cim-hostedservice.md)
+[**CIM \_ HostedService**](cim-hostedservice.md)
 </dt> <dt>
 
-[**\_Servizio ospitato CIM**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
+[**CIM \_ HostedService**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
 </dt> <dt>
 
 [Classi di gestione del sistema virtuale](virtual-system-management-classes.md)

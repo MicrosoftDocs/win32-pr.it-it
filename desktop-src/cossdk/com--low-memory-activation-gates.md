@@ -1,28 +1,28 @@
 ---
-description: Controlli di attivazione Low-Memory COM+
+description: Com+ Low-Memory di attivazione
 ms.assetid: 9805dc94-da38-4b2c-b18c-5f494b49691b
-title: Controlli di attivazione Low-Memory COM+
+title: Com+ Low-Memory di attivazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad955cb1ed47008f52f1cf9b17edfc43b92aa674
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bfa35b162b760c818436b62e889277e374d416e2d75292192b2a639d8609390c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129163"
 ---
-# <a name="com-low-memory-activation-gates"></a>Controlli di attivazione Low-Memory COM+
+# <a name="com-low-memory-activation-gates"></a>Com+ Low-Memory di attivazione
 
-Il servizio COM+ per l'attivazione della memoria insufficiente controlla automaticamente la memoria prima della creazione di un oggetto o di un server COM+. Se la percentuale di memoria virtuale disponibile per l'applicazione scende al di sotto di una soglia fissa, l'attivazione avrà esito negativo prima della creazione dell'oggetto. In questo modo, il servizio Gates per l'attivazione di memoria bassa migliora significativamente l'affidabilità del sistema.
+Il servizio di controllo dell'attivazione con memoria insufficiente COM+ controlla automaticamente la memoria prima che venga creato un server o un oggetto COM+. Se la percentuale di memoria virtuale disponibile per l'applicazione scende sotto una soglia fissa, l'attivazione non riesce prima della creazione dell'oggetto. In questo modo, il servizio gate di attivazione a memoria insufficiente migliora notevolmente l'affidabilità del sistema.
 
-Negli argomenti seguenti vengono fornite informazioni di base e attività sul servizio COM+ per l'attivazione di memoria insufficiente.
+Negli argomenti seguenti vengono fornite informazioni generali e sulle attività relative al servizio di controllo dell'attivazione con memoria insufficiente com+.
 
 
 
 | Argomento                                                                                                 | Descrizione                                                                            |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Concetti di COM+ Low-Memory Activation Gates](com--low-memory-activation-gates-concepts.md)<br/> | Viene fornita una panoramica del servizio COM+ per l'attivazione a memoria insufficiente.<br/>       |
-| [Attività di controllo di attivazione Low-Memory COM+](com--low-memory-activation-gates-tasks.md)<br/>       | Questa funzionalità non è configurabile, quindi non sono presenti attività associate.<br/> |
+| [Concetti relativi alle Low-Memory di attivazione COM+](com--low-memory-activation-gates-concepts.md)<br/> | Viene fornita una panoramica del servizio di controllo dell'attivazione con memoria insufficiente COM+.<br/>       |
+| [Attività di controllo Low-Memory COM+](com--low-memory-activation-gates-tasks.md)<br/>       | Questa funzionalità non è configurabile, quindi non vi sono attività associate.<br/> |
 
 
 

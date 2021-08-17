@@ -1,24 +1,24 @@
 ---
-title: Esecuzione forzata dell'eliminazione del filtro
-description: Nell'esempio di codice riportato di seguito viene illustrato come rendere un utente con il privilegio TakeOwnership in grado di eliminare un filtro.
+title: Forzare l'eliminazione del filtro
+description: Il codice di esempio seguente illustra come rendere un utente con il privilegio TakeOwnership in grado di eliminare un filtro.
 ms.assetid: f0a3de8e-6d3f-45d3-af42-b8ae62278667
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d05c1b75b41c6f71abe508e53e478f4978f50bd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37410958c0f602b929ff319b98faa4f88074a94f760508bac473bbf348f0ff3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069311"
 ---
-# <a name="forcing-filter-deletion"></a>Esecuzione forzata dell'eliminazione del filtro
+# <a name="forcing-filter-deletion"></a>Forzare l'eliminazione del filtro
 
-Nell'esempio di codice seguente viene illustrato come rendere un utente con il privilegio TakeOwnership in grado di eliminare un filtro.
+Il codice di esempio seguente illustra come rendere un utente con il privilegio TakeOwnership in grado di eliminare un filtro.
 
 > [!Note]  
-> Un'applicazione di installazione può utilizzare questa funzionalità durante una disinstallazione per assicurarsi che tutti gli oggetti vengano eliminati correttamente.
+> Un'applicazione di installazione potrebbe usare questa funzionalità durante una disinstallazione per assicurarsi che tutti gli oggetti siano stati eliminati correttamente.
 
- 
+ 
 
 
 ```C++
@@ -249,9 +249,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,22 +1,22 @@
 ---
-description: "Negli argomenti seguenti sono contenuti esempi che illustrano l'utilizzo dell'API di risparmio energia:"
+description: "Gli argomenti seguenti contengono esempi che illustrano l'uso dell'API di risparmio energia:"
 ms.assetid: 0f039ce4-fc55-4fd6-a40b-44b22a15370a
 title: Uso del risparmio energia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9271a5d6bf86f2bf7923f7da75c7f753df1b1b6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5745f14391b4e977e785335581172ac06b724cf41a3d7ea92b2d06ae23578e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143214"
 ---
 # <a name="using-power-management"></a>Uso del risparmio energia
 
-Negli argomenti seguenti sono contenuti esempi che illustrano l'utilizzo dell'API di risparmio energia:
+Gli argomenti seguenti contengono esempi che illustrano l'uso dell'API di risparmio energia:
 
--   [Enumerazione dei dispositivi della batteria](enumerating-battery-devices.md)
--   [Uso dell'API per la potenza del dispositivo](using-the-device-power-api.md)
+-   [Enumerazione dei dispositivi a batteria](enumerating-battery-devices.md)
+-   [Uso dell'API Power Device](using-the-device-power-api.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -17,7 +17,7 @@ BITS garantisce che la versione del file che trasferisce sia coerente in base al
 
 Per i download, se le dimensioni del file o il timestamp cambiano durante il trasferimento del file, BITS riavvia solo il trasferimento di tale file. Ad esempio, se il processo di download contiene due file e i file vengono aggiornati nel server mentre BITS trasferisce il secondo file, BITS riavvia solo il trasferimento del secondo file. Il primo file, che è già stato trasferito correttamente, non viene aggiornato per riflettere le nuove modifiche.
 
-Si noti che se si è proprietari del file scaricato dal server, è necessario creare un nuovo URL per ogni nuova versione del file. Se si usa lo stesso URL per le nuove versioni del file, alcuni server proxy potrebbero gestire dati non obsoleti dalla cache perché non verificano con il server originale se il file non è obsoleto.
+Si noti che se si è proprietari del file scaricato dal server, è necessario creare un nuovo URL per ogni nuova versione del file. Se si usa lo stesso URL per le nuove versioni del file, alcuni server proxy possono gestire dati non obsoleti dalla cache perché non verificano con il server originale se il file è obsoleto.
 
 Per i caricamenti, se le dimensioni del file o il timestamp cambiano durante il trasferimento del file, BITS genera un errore e il processo viene inserito nello stato BG \_ JOB \_ STATE \_ ERROR.
 

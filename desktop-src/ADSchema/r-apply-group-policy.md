@@ -1,5 +1,5 @@
 ---
-title: Applica-Criteri di gruppo - Diritto esteso
+title: Diritto esteso Apply-Group-Policy
 description: Diritto esteso usato dal motore Criteri di gruppo per determinare se un oggetto Criteri di gruppo si applica a un utente o a un computer.
 ms.assetid: f6b09ecc-0fcd-409b-adeb-a8744f811427
 ms.tgt_platform: multiple
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118959510"
 ---
-# <a name="apply-group-policy-extended-right"></a>Applica-Criteri di gruppo - Diritto esteso
+# <a name="apply-group-policy-extended-right"></a>Diritto esteso Apply-Group-Policy
 
 Diritto esteso usato dal motore Criteri di gruppo per determinare se un oggetto Criteri di gruppo si applica a un utente o a un computer.
 
@@ -28,8 +28,8 @@ Diritto esteso usato dal motore Criteri di gruppo per determinare se un oggetto 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Applica-Criteri di gruppo                   |
-| Display-Name | Applicare Criteri di gruppo                   |
+| CN           | Applica criteri di gruppo                   |
+| Display-Name | Applica Criteri di gruppo                   |
 | Rights-GUID  | edacfd8f-ffb3-11d1-b41d-00a0c968f939 |
 
 

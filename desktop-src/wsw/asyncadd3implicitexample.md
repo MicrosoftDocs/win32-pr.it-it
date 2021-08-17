@@ -1,9 +1,9 @@
 ---
 title: AsyncAdd3ImplicitExample
-description: Questo esempio illustra l'implementazione di una funzione asincrona complessa tramite WsAsyncExecute.
+description: Questo esempio illustra l'implementazione di una funzione asincrona complessa usando WsAsyncExecute.
 ms.assetid: f84de03f-ecfb-494e-9a1d-a96d399a41c0
 keywords:
-- AsyncAdd3ImplicitExample Web Services for Windows
+- Servizi Web AsyncAdd3ImplicitExample per Windows
 - WWSAPI
 - Wws
 ms.topic: article
@@ -17,9 +17,9 @@ ms.locfileid: "118963440"
 ---
 # <a name="asyncadd3implicitexample"></a>AsyncAdd3ImplicitExample
 
-Questo esempio illustra l'implementazione di una funzione asincrona complessa [**tramite WsAsyncExecute.**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute)
+Questo esempio illustra l'implementazione di una funzione asincrona complessa [**usando WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).
 
-L'esempio implementa una funzione asincrona 'AddThree' che somma tre numeri interi compilando una funzione Add esistente che può aggiungere due numeri interi in modo asincrono.
+L'esempio implementa una funzione asincrona 'AddThree' che aggiunge tre numeri interi creando una funzione Add esistente che può aggiungere due numeri interi in modo asincrono.
 
 ## <a name="asyncadd3implicitcpp"></a>AsyncAdd3Implicit.cpp
 

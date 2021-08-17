@@ -1,5 +1,5 @@
 ---
-description: Elementi usati nella gestione dei volumi.
+description: Elementi utilizzati nella gestione dei volumi.
 ms.assetid: 9b805586-5c4a-4562-8571-345e8fe0c62b
 title: Informazioni di riferimento sulla gestione dei volumi
 ms.topic: article
@@ -24,7 +24,7 @@ Gli elementi seguenti vengono usati nella gestione dei volumi.
 | [Codici di controllo della gestione del volume](volume-management-control-codes.md)<br/> | Codici di controllo usati nella gestione dei volumi.<br/>         |
 | [Enumerazioni di gestione dei volumi](volume-management-enumerations.md)<br/>   | I tipi di enumerazione vengono usati nella gestione dei volumi:<br/> |
 | [Funzioni di gestione dei volumi](volume-management-functions.md)<br/>         | Funzioni usate nella gestione dei volumi.<br/>             |
-| [Strutture di gestione dei volumi](volume-management-structures.md)<br/>       | Strutture usate nella gestione dei volumi.<br/>            |
+| [Strutture di gestione dei volumi](volume-management-structures.md)<br/>       | Strutture utilizzate nella gestione dei volumi.<br/>            |
 
 
 

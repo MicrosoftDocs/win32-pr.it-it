@@ -1,5 +1,5 @@
 ---
-description: Informazioni sul metodo IShellDispatch.RefreshMenu, che aggiorna il contenuto del menu Start. Utilizzato solo con sistemi che precedono Windows XP.
+description: Informazioni sul metodo IShellDispatch.RefreshMenu, che aggiorna il contenuto del menu Start. Usato solo con i sistemi che precedono Windows XP.
 ms.assetid: D36FA5A0-AF03-4627-86E0-869BF1440958
 title: Metodo IShellDispatch.RefreshMenu (Shldisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118969060"
 ---
 # <a name="ishelldispatchrefreshmenu-method"></a>Metodo IShellDispatch.RefreshMenu
 
-Aggiorna il contenuto del menu **Start.** Utilizzato solo con sistemi che precedono Windows XP.
+Aggiorna il contenuto del menu **Start.** Usato solo con i sistemi che precedono Windows XP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ La funzionalità fornita **da RefreshMenu** viene gestita automaticamente in Win
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di RefreshMenu** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **RefreshMenu** in JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -121,7 +121,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

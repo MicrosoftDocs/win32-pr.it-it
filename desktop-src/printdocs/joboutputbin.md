@@ -13,9 +13,9 @@ ms.locfileid: "119447461"
 ---
 # <a name="joboutputbin"></a>JobOutputBin
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il bin di output installato in un dispositivo o l'elenco completo dei contenitori supportati per un dispositivo. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda solo in un documento PrintTicket o Funzionalità di stampa.
+Descrive il bin di output installato in un dispositivo o l'elenco completo dei bin supportati per un dispositivo. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda solo se ne deve essere specificata una in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -67,10 +67,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                   | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
+| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | MailBox, Sorter, Stacker, Finisher, None.<br/>                                                                                                                                  | Specifica il tipo generale del contenitore.<br/>                                   |
-| \_MediaSheetCapacityValue\_<br/> | numero intero<br/> | Fogli<br/>     | Vincolo integer massimo consentito dal dispositivo.<br/>                                                                                                                              | Specifica la capacità media in numero di pagine (livello completo) del contenitore.<br/> |
+| \_MediaSheetCapacityValue\_<br/> | numero intero<br/> | Fogli<br/>     | Vincolo integer massimo consentito dal dispositivo.<br/>                                                                                                                              | Specifica la capacità multimediale in numero di pagine (livello completo) del contenitore.<br/> |
 
 
 
@@ -78,7 +78,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobOutputBin">

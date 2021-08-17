@@ -1,11 +1,11 @@
 ---
-title: Proprietà Action.Id
+title: Action.Id proprietà
 description: Per lo scripting, ottiene o imposta l'identificatore dell'azione.
 ms.assetid: 76601f33-9bf5-4263-ae72-6c1bb7af2e5e
 keywords:
-- ID Utilità di pianificazione proprietà
-- ID Utilità di pianificazione proprietà, oggetto azione
-- Utilità di pianificazione oggetto azione, proprietà ID
+- Proprietà Id Utilità di pianificazione
+- Proprietà Id Utilità di pianificazione, oggetto Action
+- Oggetto Action Utilità di pianificazione proprietà , Id
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17d621afb1363864dc5ad36182dd189f5e8eeb90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fba5c0cf3c92fd7ee3902375678fdf04aec08c06fc21ea895ca387ad3b491fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139694"
 ---
-# <a name="actionid-property"></a>Proprietà Action.Id
+# <a name="actionid-property"></a>Action.Id proprietà
 
 Per lo scripting, ottiene o imposta l'identificatore dell'azione.
 
@@ -38,11 +38,11 @@ Action.Id As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Identificatore definito dall'utente per l'azione. Questo identificatore viene utilizzato dal Utilità di pianificazione a scopo di registrazione.
+Identificatore definito dall'utente per l'azione. Questo identificatore viene usato dal Utilità di pianificazione ai fini della registrazione.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sul funzionamento combinato di azioni e attività, vedere [azioni attività](task-actions.md).
+Per informazioni sul funzionamento di azioni e attività, vedere [Azioni attività.](task-actions.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Per informazioni sul funzionamento combinato di azioni e attività, vedere [azio
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

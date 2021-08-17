@@ -1,5 +1,5 @@
 ---
-description: "Evento InkPicture.SelectionResizing: si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà Selection."
+description: "Evento InkPicture.SelectionResizing: si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure di taglia e incolla o la proprietà Selection."
 ms.assetid: da708712-2773-45f5-9d9b-49fabe7fdb5a
 title: Evento InkPicture.SelectionResizing (Msinkaut.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118966960"
 ---
-# <a name="inkpictureselectionresizing-event"></a>InkPicture.SelectionResizing - evento
+# <a name="inkpictureselectionresizing-event"></a>Evento InkPicture.SelectionResizing
 
-Si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+Si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, alle procedure taglia e incolla o [**alla proprietà Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ DISPID IOESelectionResizing.
+Questo metodo di evento è definito nelle interfacce dispatch (dispatchinterface) **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID IOESelectionResizing.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkOver
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

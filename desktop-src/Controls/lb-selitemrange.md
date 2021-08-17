@@ -3,7 +3,7 @@ title: LB_SELITEMRANGE messaggio (Winuser.h)
 description: Seleziona o deseleziona uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
 ms.assetid: 817d62df-98a3-40b3-8d62-86bf07ad797f
 keywords:
-- LB_SELITEMRANGE di controllo Windows messaggio
+- LB_SELITEMRANGE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118958600"
 ---
-# <a name="lb_selitemrange-message"></a>Messaggio LB \_ SELITEMRANGE
+# <a name="lb_selitemrange-message"></a>Messaggio \_ LB SELITEMRANGE
 
 Seleziona o deseleziona uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
 
@@ -39,7 +39,7 @@ Seleziona o deseleziona uno o più elementi consecutivi in una casella di riepil
 *lParam* 
 </dt> <dd>
 
-La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica l'indice in base zero del primo elemento da selezionare. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) l'indice in base zero dell'ultimo elemento da selezionare.
+LoWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) l'indice in base zero del primo elemento da selezionare. La [**parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica l'indice in base zero dell'ultimo elemento da selezionare.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo messaggio può selezionare un intervallo solo all'interno dei primi 65.53
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

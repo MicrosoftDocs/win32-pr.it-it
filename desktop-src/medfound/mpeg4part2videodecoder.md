@@ -15,11 +15,11 @@ ms.locfileid: "118973020"
 
 Il decodificatore MPEG4 Part 2 Video decodifica i flussi video codificati in base agli standard MPEG4 Part 2.
 
-È possibile creare un'istanza del decodificatore MPEG4 Part 2 Video chiamando **CoCreateInstance.** Per creare un'istanza del decodificatore che si comporta come un oggetto multimediale DirectX (DMO), usare l'identificatore di classe **CLSID \_ CMpeg4sDecMediaObject**. Per creare un'istance del decodificatore che si comporta come una trasformazione Media Foundation (MFT), usare l'identificatore di classe **CLSID \_ CMpeg4sDecMFT**.
+È possibile creare un'istanza del decodificatore video MPEG4 Part 2 chiamando **CoCreateInstance**. Per creare un'istanza del decodificatore che si comporta come directx media object (DMO), usare l'identificatore di classe **CLSID \_ CMpeg4sDecMediaObject**. Per creare un'istance del decodificatore che si comporta come una trasformazione Media Foundation (MFT), usare l'identificatore di classe **CLSID \_ CMpeg4sDecMFT**.
 
 ## <a name="input-types"></a>Tipi di input
 
-Il decodificatore MPEG4 Part 2 Video supporta i tipi di supporti di input seguenti.
+Il decodificatore video MPEG4 parte 2 supporta i tipi di supporti di input seguenti.
 
 -   MEDIASUBTYPE \_ M4S2
 -   MEDIASUBTYPE \_ m4s2
@@ -44,14 +44,14 @@ Il decodificatore MPEG4 Part 2 Video supporta i sottotipi multimediali di output
 -   MEDIASUBTYPE \_ RGB555
 -   MEDIASUBTYPE \_ RGB8
 
-Il decodificatore MPEG4 Part 2 Video supporta i sottotipi multimediali di output seguenti quando funge da MFT.
+Il decodificatore video MPEG4 part 2 supporta i sottotipi di supporti di output seguenti quando funge da MFT.
 
 -   MEDIASUBTYPE \_ NV12
 -   MEDIASUBTYPE \_ YV12
 
 ## <a name="formats"></a>Formati
 
-Il decodificatore MPEG4 Part 2 Video accetta i formati seguenti.
+Il decodificatore video MPEG4 parte 2 accetta i formati seguenti.
 
 -   [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader)
 -   [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) (VIH2)
@@ -62,35 +62,35 @@ Il decodificatore MPEG4 Part 2 Video accetta i formati seguenti.
 
 Se si crea un'istanza del decodificatore MPEG4 Part 2 Video come DMO, il decodificatore espone le interfacce seguenti.
 
--   [**Oggetto IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject)
+-   [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject)
 -   [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi)
 
-È possibile ottenere [**un'interfaccia IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) chiamando **CoCreateInstance** ed è possibile ottenere [**un'interfaccia ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) chiamando **QueryInterface.**
+È possibile ottenere [**un'interfaccia IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) chiamando **CoCreateInstance** ed è possibile ottenere [**un'interfaccia ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) chiamando **QueryInterface**.
 
 ## <a name="interfaces-for-the-mft"></a>Interfacce per MFT
 
-Se si crea un'istanza del decodificatore MPEG2 Part 2 Video come MFT, il decodificatore espone le interfacce seguenti.
+Se si crea un'istanza del decodificatore video MPEG2 part 2 come MFT, il decodificatore espone le interfacce seguenti.
 
 -   [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
--   [**Attributi IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+-   [**Attributi IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 -   [**IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise)
 -   [**IMFQualityAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2)
 -   [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol)
 -   [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport)
 
-È possibile ottenere un puntatore all'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) chiamando **CoCreateInstance** ed è possibile ottenere un puntatore all'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) chiamando [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes). È possibile ottenere un puntatore [**all'interfaccia IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise) o [**IMFQualityAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2) chiamando **QueryInterface** su MFT. È possibile ottenere un puntatore [**all'interfaccia IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) o [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) chiamando [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) e passando l'identificatore del servizio **MF \_ RATE CONTROL \_ \_ SERVICE.**
+È possibile ottenere un puntatore [**all'interfaccia IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) chiamando **CoCreateInstance** ed è possibile ottenere un puntatore all'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) chiamando [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes). È possibile ottenere un [**puntatore all'interfaccia IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise) o [**IMFQualityAdvise2**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2) chiamando **QueryInterface** su MFT. È possibile ottenere un puntatore [**all'interfaccia IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) o [**IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) chiamando [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) e passando l'identificatore del servizio **MF \_ RATE CONTROL \_ \_ SERVICE.**
 
 ## <a name="profiles-and-levels"></a>Profili e livelli
 
-La specifica MPEG4 definisce diversi profili, ognuno dei quali specifica gli strumenti che un codificatore può usare per generare un flusso codificato. MpEG4 Part2 Video Decoder supporta due di questi profili: Simple Visual Profile (Profilo visivo semplice) e Advanced Simple Profile (Profilo semplice avanzato). In altre parole, il decodificatore MPEG4 Part 2 Video può decodificare i flussi codificati in base a Simple Visual Profile o Advanced Simple Profile.
+La specifica MPEG4 definisce diversi profili, ognuno dei quali specifica gli strumenti che un codificatore può usare per generare un flusso codificato. Il decodificatore video MPEG4 Part2 supporta due di questi profili: Simple Visual Profile e Advanced Simple Profile. In altre parole, il decodificatore MPEG4 Part 2 Video può decodificare i flussi codificati in base al profilo visivo semplice o al profilo semplice avanzato.
 
-Simple Visual Profile supporta la trasmissione di base di video a bassa velocità in bit in modalità progressiva. Supporta solo immagini Intra e Prediction. Supporta anche la modalità intestazione breve, compatibile con le versioni precedenti del profilo di base H.263. A partire da Windows 10, MPEG-4 Part 2 Video Decoder supporta anche H.263v2 (H.263+) che supporta dimensioni di immagine personalizzate.
+Simple Visual Profile supporta la trasmissione di base di video a bassa velocità in bit in modalità progressiva. Supporta solo immagini Intra e Prediction. Supporta anche la modalità intestazione breve, compatibile con le versioni precedenti con il profilo di base H.263. A partire da Windows 10, il decodificatore video MPEG-4 parte 2 supporta anche H.263v2 (H.263+) che supporta dimensioni di immagini personalizzate.
 
 Advanced Simple Profile supporta tutti gli strumenti di Simple Visual Profile e, inoltre, supporta video interlacciati, fotogrammi B, compensazione del movimento trimestrale, tabelle di quantizzazione aggiuntive e compensazione del movimento globale.
 
-La specifica MPEG4 definisce anche diversi livelli, ognuno dei quali specifica i vincoli sul flusso di output generato da un codificatore.
+La specifica MPEG4 definisce anche diversi livelli, ognuno dei quali specifica vincoli sul flusso di output generato da un codificatore.
 
-La tabella seguente illustra i profili e i livelli, insieme alle risoluzioni tipiche, supportati dal decodificatore VIDEO MPEG4 parte 2.
+La tabella seguente illustra i profili e i livelli, insieme alle risoluzioni tipiche, supportate dal decodificatore video MPEG4 Part 2.
 
 
 
@@ -102,11 +102,11 @@ La tabella seguente illustra i profili e i livelli, insieme alle risoluzioni tip
 | Oggetto visivo semplice   | 3     | 352 x 288          |
 | SimpleVisual    | 4a    | 640 x 480          |
 | Oggetto visivo semplice   | 5     | 720 x 576          |
-| Advanced Simple | 0     | 176 x 144          |
-| Advanced Simple | 1     | 176 x 144          |
-| Advanced Simple | 2     | 352 x 288          |
-| Advanced Simple | 3     | 352 x 288          |
-| Advanced Simple | 3b    | 352 x 288          |
+| Semplice avanzato | 0     | 176 x 144          |
+| Semplice avanzato | 1     | 176 x 144          |
+| Semplice avanzato | 2     | 352 x 288          |
+| Semplice avanzato | 3     | 352 x 288          |
+| Semplice avanzato | 3b    | 352 x 288          |
 | Semplice avanzato | 4     | 352 x 756          |
 | Semplice avanzato | 5     | 720 x 576          |
 
@@ -116,7 +116,7 @@ La tabella seguente illustra i profili e i livelli, insieme alle risoluzioni tip
 
 Per altre informazioni sui profili e i livelli, vedere la specifica MPEG4 Part 2 (ISO/IEC 14496-2): Information technology -- Coding of audio-visual objects -- Part 2: Visual(ISO/IEC 14496-2): Information technology -- Coding of audio-visual objects -- Part 2: Visual (Specifica MPEG4 parte 2: oggetto visivo).
 
-## <a name="decoder-properties"></a>Proprietà decodificatore
+## <a name="decoder-properties"></a>Proprietà del decodificatore
 
 Per impostare le proprietà nel decodificatore video MPEG4 part 2, usare [**l'interfaccia ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) o [**L'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 

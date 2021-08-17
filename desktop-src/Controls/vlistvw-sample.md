@@ -1,5 +1,5 @@
 ---
-title: Esempio VListVW
+title: Esempio di VListVW
 ms.assetid: 5e1d13a6-ae11-4729-b0fc-0a1620cf0738
 description: 'Altre informazioni su: Esempio VListVW'
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118957560"
 ---
-# <a name="vlistvw-sample"></a>Esempio VListVW
+# <a name="vlistvw-sample"></a>Esempio di VListVW
 
 Questo argomento descrive l'esempio di codice di esempio VListVW. Contiene le sezioni seguenti:
 
@@ -23,7 +23,7 @@ Questo argomento descrive l'esempio di codice di esempio VListVW. Contiene le se
 
 ## <a name="description"></a>Descrizione
 
-L'esempio VListVW illustra come implementare un semplice controllo di visualizzazione elenco virtuale in un'applicazione. Un controllo visualizzazione elenco virtuale è un controllo visualizzazione elenco standard con lo stile **LVS \_ OWNERDATA.** Questo esempio crea un controllo visualizzazione elenco che contiene "virtualmente" 100.000 elementi. Gli elementi non vengono mai effettivamente aggiunti. Al controllo visualizzazione elenco virtuale viene invece "specificato" il numero di elementi in esso contenuti con il messaggio [**\_ LVM SETITEMCOUNT.**](lvm-setitemcount.md) Quando è necessario disegnare un elemento, il controllo visualizzazione elenco esegue una query nella finestra padre per ottenere informazioni di visualizzazione con la notifica [ \_ LVN GETDISPINFO.](lvn-getdispinfo.md)
+L'esempio VListVW illustra come implementare un controllo visualizzazione elenco virtuale semplice in un'applicazione. Un controllo visualizzazione elenco virtuale è un controllo visualizzazione elenco standard con lo stile **LVS \_ OWNERDATA.** In questo esempio viene creato un controllo visualizzazione elenco che contiene "virtualmente" 100.000 elementi. Gli elementi non vengono mai effettivamente aggiunti. Al controllo di visualizzazione elenco virtuale viene invece "detto" il numero di elementi contenuti con il messaggio [**LVM \_ SETITEMCOUNT.**](lvm-setitemcount.md) Quando è necessario disegnare un elemento, il controllo visualizzazione elenco esegue una query nella finestra padre per visualizzare informazioni con la notifica [ \_ LVN GETDISPINFO.](lvn-getdispinfo.md)
 
 ## <a name="minimum-requirements"></a>Requisiti minimi
 
@@ -40,7 +40,7 @@ L'esempio VListVW illustra come implementare un semplice controllo di visualizza
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-L'esempio VListVW è disponibile in github nel [repository Windows esempi classici.](https://github.com/microsoft/Windows-classic-samples) Gli esempi di elementi del controllo visualizzazione elenco sono disponibili [qui](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/controls/common/vlistvw)
+L'esempio VListVW è disponibile in github nel [repository Windows esempi classici](https://github.com/microsoft/Windows-classic-samples). Gli esempi di elementi del controllo visualizzazione elenco sono disponibili [qui](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/controls/common/vlistvw)
 
  
 
@@ -61,7 +61,7 @@ Per compilare l'esempio usando Visual Studio:
 
 <dl> <dt>
 
-[Informazioni sui List-View personalizzati](list-view-controls-overview.md)
+[Informazioni List-View seguenti](list-view-controls-overview.md)
 </dt> </dl>
 
  

@@ -4,7 +4,7 @@ description: Riservato per utilizzi futuri. | Attributo ms-net-ieee-8023-GP-Poli
 ms.assetid: 387a43d4-8f7f-4540-9ead-838f890f40ef
 ms.tgt_platform: multiple
 keywords:
-- Ms-net-ieee-8023-GP-PolicyReserved attribute AD Schema
+- Schema AD ms-net-ieee-8023-GP-PolicyReserved
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Riservato per utilizzi futuri.
 | CN                | ms-net-ieee-8023-GP-PolicyReserved                    |
 | Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyReserved                    |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1956                               |
 | System-Id-Guid    | d3c527c7-2606-4deb-8cfd-18426feec8ce                  |
@@ -54,7 +54,7 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
@@ -75,7 +75,7 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
@@ -96,7 +96,7 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| A valore singolo       | Vero                                                                              |
+| Is-Single-Valued       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |

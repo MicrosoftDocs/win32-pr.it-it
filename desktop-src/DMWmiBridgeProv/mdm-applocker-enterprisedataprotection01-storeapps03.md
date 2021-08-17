@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_AppLocker_EnterpriseDataProtection01_StoreApps03
-description: La \_ classe MDM AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03 acquisisce l'elenco di app di Windows a cui è consentito gestire i dati aziendali. Deve essere usato in combinazione con le impostazioni in./Vendor/MSFT/Policy/ConfigSource/DataProtection.
+title: MDM_AppLocker_EnterpriseDataProtection01_StoreApps03 classe
+description: La classe MDM \_ AppLocker \_ EnterpriseDataProtection01 StoreApps03 acquisisce l'elenco delle app Windows a cui è consentito gestire \_ i dati aziendali. Deve essere usato insieme alle impostazioni in ./Vendor/MSFT/Policy/ConfigSource/DataProtection .
 ms.assetid: f37fe52d-dbe1-45b7-acd5-5047c46d9bd0
 keywords:
-- Classe MDM_AppLocker_EnterpriseDataProtection01_StoreApps03
-- Classe MDM_AppLocker_EnterpriseDataProtection01_StoreApps03, descritta
+- MDM_AppLocker_EnterpriseDataProtection01_StoreApps03 classe
+- MDM_AppLocker_EnterpriseDataProtection01_StoreApps03 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 240f641e542bbbe0c71fd686e2d9df3908b9bab3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf5b0c3af455e501695cb7a2093b841159f5755ac54e1de97a370c7dc7f2d6fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077413"
 ---
-# <a name="mdm_applocker_enterprisedataprotection01_storeapps03-class"></a>MDM \_ AppLocker \_ EnterpriseDataProtection01 \_ classe StoreApps03
+# <a name="mdm_applocker_enterprisedataprotection01_storeapps03-class"></a>Classe \_ Mdm AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** acquisisce l'elenco di app di Windows a cui è consentito gestire i dati aziendali. Deve essere usato in combinazione con le impostazioni in./Vendor/MSFT/Policy/ConfigSource/DataProtection.
+La **classe MDM \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** acquisisce l'elenco delle app Windows a cui è consentito gestire i dati aziendali. Deve essere usato insieme alle impostazioni in ./Vendor/MSFT/Policy/ConfigSource/DataProtection .
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,55 +46,55 @@ class MDM_AppLocker_EnterpriseDataProtection01_StoreApps03
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** include questi tipi di membri:
+La **classe Mdm \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** dispone di queste proprietà.
+La **classe Mdm \_ AppLocker \_ EnterpriseDataProtection01 \_ StoreApps03** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Definisce le restrizioni per l'esecuzione di app da Windows Store.
+Definisce le restrizioni per l'esecuzione di app Windows Store.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "*grouping*./Vendor/MSFT/AppLocker/EnterpriseDataProtection/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/AppLocker/EnterpriseDataProtection/*Grouping*"
 
 </dd> <dt>
 
 [**Criteri**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

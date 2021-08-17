@@ -4,7 +4,7 @@ description: Recupera una matrice di pixel che rappresenta un'immagine di antepr
 ms.assetid: e7b57f16-eec1-4461-acfb-742976eff14a
 keywords:
 - Proprietà Thumbnail Virtual PC
-- Proprietà Thumbnail Virtual PC, interfaccia IVMDisplay
+- Proprietà anteprima Virtual PC, interfaccia IVMDisplay
 - Interfaccia IVMDisplay Virtual PC, proprietà Thumbnail
 topic_type:
 - apiref
@@ -55,13 +55,13 @@ Variante di tipo VT ARRAY VT VARIANT contenente voci di tipo \_ \| \_ VT \_ UI4,
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
-| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questa interfaccia restituisce l'anteprima in modo meno efficiente rispetto [**\_ al metodo GenerateThumbnail,**](ivmdisplay--generatethumbnail.md) ma è utilizzabile dai client di scripting. L'anteprima ha sempre una larghezza di 64 pixel per 48 pixel di altezza. Ogni pixel è di 32 bit. I primi 64 elementi nella matrice sono la prima riga di pixel nell'anteprima, i 64 elementi successivi sono la seconda riga e così via.
+Questa interfaccia restituisce l'anteprima in modo meno efficiente rispetto [**\_ al metodo GenerateThumbnail,**](ivmdisplay--generatethumbnail.md) ma è utilizzabile dai client di scripting. L'anteprima è sempre di 64 pixel di larghezza per 48 pixel di altezza. Ogni pixel è a 32 bit. I primi 64 elementi nella matrice sono la prima riga di pixel nell'anteprima, i 64 elementi successivi sono la seconda riga e così via.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Questa interfaccia restituisce l'anteprima in modo meno efficiente rispetto [**\
 | Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMDisplay è definito come 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
+| IID<br/>                      | IID IVMDisplay è definito come \_ 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
 
 
 

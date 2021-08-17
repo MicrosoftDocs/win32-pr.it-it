@@ -4,16 +4,16 @@ ms.assetid: 4c3f76a3-e9f5-4d73-b5ef-eabfa9d6e4d4
 title: Creazione di processi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75606a3006bf63359b3e52cf2172b8bc2d77ed56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be8e5e4340f5c956e964b74ab134a7618a4c4bf0fa44eee1989a0457741d7bc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143104"
 ---
 # <a name="creating-processes"></a>Creazione di processi
 
-La funzione [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) crea un nuovo processo, che viene eseguito indipendentemente dal processo di creazione. Per semplicità, tuttavia, la relazione viene definita relazione padre-figlio.
+La [**funzione CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) crea un nuovo processo, che viene eseguito indipendentemente dal processo di creazione. Per semplicità, tuttavia, la relazione viene definita relazione padre-figlio.
 
 Nel codice seguente viene illustrato come creare un processo.
 
@@ -66,9 +66,9 @@ void _tmain( int argc, TCHAR *argv[] )
 
 
 
-Se [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) ha esito positivo, restituisce una struttura di [**\_ informazioni sul processo**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) contenente handle e identificatori per il nuovo processo e il relativo thread primario. Gli handle di thread e di processo vengono creati con diritti di accesso completi, sebbene l'accesso possa essere limitato se si specificano descrittori di sicurezza. Quando questi handle non sono più necessari, chiuderli usando la funzione [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) .
+Se [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) ha esito positivo, restituisce una [**struttura PROCESS \_ INFORMATION**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) contenente handle e identificatori per il nuovo processo e il relativo thread primario. Gli handle di thread e processi vengono creati con diritti di accesso completi, anche se l'accesso può essere limitato se si specificano descrittori di sicurezza. Quando questi handle non sono più necessari, chiuderli usando la [**funzione CloseHandle.**](/windows/desktop/api/handleapi/nf-handleapi-closehandle)
 
-È anche possibile creare un processo usando la funzione [**CreateProcessAsUser ha**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcessWithLogonW**](/windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw) . In questo modo è possibile specificare il contesto di sicurezza dell'account utente in cui verrà eseguito il processo.
+È anche possibile creare un processo usando [**la funzione CreateProcessAsUser**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) [**o CreateProcessWithLogonW.**](/windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw) In questo modo è possibile specificare il contesto di sicurezza dell'account utente in cui verrà eseguito il processo.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Campo VistaColtyp.LongLong'
+description: Altre informazioni sul campo VistaColtyp.LongLong
 title: Campo VistaColtyp.LongLong (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LongLong field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.LongLong

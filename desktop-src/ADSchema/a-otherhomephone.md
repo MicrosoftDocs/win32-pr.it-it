@@ -1,11 +1,11 @@
 ---
 title: Telefono-Home-Other
-description: Elenco di numeri di telefono della casa alternativi.
+description: Elenco di numeri di telefono di casa alternativi.
 ms.assetid: 502e0a9d-301c-4c2e-98c3-8efe75c8b0cf
 ms.tgt_platform: multiple
 keywords:
 - Telefono-Home-Other attributo AD Schema
-- Schema AD dell'attributo otherHomePhone
+- Attributo otherHomePhone Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118960150"
 ---
 # <a name="phone-home-other-attribute"></a>Telefono-Home-Other
 
-Elenco di numeri di telefono della casa alternativi.
+Elenco di numeri di telefono di casa alternativi.
 
 
 
@@ -32,7 +32,7 @@ Elenco di numeri di telefono della casa alternativi.
 | CN                | Telefono-Home-Other                                                                 |
 | Ldap-Display-Name | otherHomePhone                                                                   |
 | Dimensione              | \-                                                                               |
-| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                           |
 | Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.2.277                                                           |
 | System-Id-Guid    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |

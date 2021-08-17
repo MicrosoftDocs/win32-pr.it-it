@@ -1,5 +1,5 @@
 ---
-description: 'TcpIp_V0_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi TCP/IP. La sintassi seguente è semplificata dal codice MOF.'
+description: 'TcpIp_V0_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi TCP/IP. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 007f0744-8b74-4c57-85bc-f6bdb20bffa7
 title: TcpIp_V0_TypeGroup1 classe
 ms.topic: reference
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 96df2214aff9b5be6f10a1f08f6e6ea2e015c6b5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29211ae7a5aca5abc33af545ba581c4baf82f1dac51c72b910f8251560ea92d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069571"
 ---
-# <a name="tcpip_v0_typegroup1-class"></a>Classe \_ TypeGroup1 TcpIp V0 \_
+# <a name="tcpip_v0_typegroup1-class"></a>Classe \_ \_ TypeGroup1 TcpIp V0
 
 Questa classe è la classe del tipo di evento per gli eventi TCP/IP.
 
@@ -58,7 +58,7 @@ La **classe \_ \_ TypeGroup1 TcpIp V0** ha queste proprietà.
 
 <dl> <dt>
 
-tasdr
+daddr
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **object**
@@ -160,7 +160,7 @@ Numero di porta di origine.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

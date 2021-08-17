@@ -10,7 +10,7 @@ keywords:
 - digital rights management (DRM), chiavi di sessione
 - DRM (digital rights management), chiavi di sessione
 - digital rights management (DRM), chiavi di contenuto
-- DRM (digital rights management),chiavi del contenuto
+- DRM (digital rights management),chiavi di contenuto
 - digital rights management (DRM), codice di esempio
 - DRM (digital rights management),codice di esempio
 - digital rights management (DRM), esempi di codice

@@ -24,7 +24,7 @@ ms.locfileid: "119428491"
 # <a name="iamtimelinegroupgetoutputbuffering-method"></a>Metodo IAMTimelineGroup::GetOutputBuffering
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 

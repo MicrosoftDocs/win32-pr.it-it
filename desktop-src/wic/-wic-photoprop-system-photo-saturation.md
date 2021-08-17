@@ -1,23 +1,23 @@
 ---
-description: Criteri di metadati della foto per la proprietà System. Photo. saturation.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.Saturation.
 ms.assetid: 1dbb7515-7022-404c-928a-9eb09e43e7a7
-title: Criteri dei metadati Photo System. Photo. Saturation
+title: Criteri dei metadati delle foto di System.Photo.Saturation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcb2b199458f063f2c28d7f6780a6ea907f76f90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1be1c5be7a0663d5f57823dcb704b843f56e6076713de3682e4b12d6b533ff48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087014"
 ---
-# <a name="systemphotosaturation-photo-metadata-policy"></a>Criteri dei metadati Photo System. Photo. Saturation
+# <a name="systemphotosaturation-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.Photo.Saturation
 
-Criteri di metadati della foto per la proprietà [System. Photo. Saturation](../properties/props-system-photo-saturation.md) .
+Criteri dei metadati delle foto [per la proprietà System.Photo.Saturation.](../properties/props-system-photo-saturation.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_ \_ Saturazione foto pkey
+\_Saturazione foto PKEY \_
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI4 VT
+VT \_ UI4
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,18 +37,18 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41993} | ushort      |
-| 2     | /XMP/EXIF: saturazione          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41993} | ushort      |
+| 2     | /xmp/exif:Saturation          | unicode     |
 
 
 
@@ -60,8 +60,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41993} | ushort      |
-| 2     | /XMP/EXIF: saturazione          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41993} | ushort      |
+| 2     | /xmp/exif:Saturation          | unicode     |
 
 
 
@@ -73,8 +73,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41993} |
-| 2     | /XMP/EXIF: saturazione          |
+| 1     | /app1/ifd/exif/{ushort=41993} |
+| 2     | /xmp/exif:saturation          |
 
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41993} | ushort      |
-| 2     | /IFD/XMP/EXIF: saturazione | unicode     |
+| 1     | /ifd/exif/{ushort=41993} | ushort      |
+| 2     | /ifd/xmp/exif:Saturazione | unicode     |
 
 
 
@@ -101,8 +101,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41993} | ushort      |
-| 2     | /IFD/XMP/EXIF: saturazione | unicode     |
+| 1     | /ifd/exif/{ushort=41993} | ushort      |
+| 2     | /ifd/xmp/exif:Saturazione | unicode     |
 
 
 
@@ -114,8 +114,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{ushort = 41993} |
-| 2     | /IFD/XMP/EXIF: saturazione |
+| 1     | /ifd/exif/{ushort=41993} |
+| 2     | /ifd/xmp/exif:saturazione |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. saturazione](../properties/props-system-photo-saturation.md)
+[System.Photo.Saturation](../properties/props-system-photo-saturation.md)
 </dt> </dl>
 
  

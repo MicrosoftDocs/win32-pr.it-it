@@ -1,5 +1,5 @@
 ---
-description: Per aggiornare le proprietà di una sessione di traccia eventi, chiamare la funzione ControlTrace usando il codice di \_ controllo UPDATE di EVENT TRACE \_ \_ CONTROL.
+description: Per aggiornare le proprietà di una sessione di traccia eventi, chiamare la funzione ControlTrace usando il codice di controllo \_ \_ EVENT TRACE CONTROL \_ UPDATE.
 ms.assetid: 1496bf88-a989-4fa1-888a-90385c4ca8ee
 title: Aggiornamento di una sessione di traccia eventi
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119383341"
 ---
 # <a name="updating-an-event-tracing-session"></a>Aggiornamento di una sessione di traccia eventi
 
-Per aggiornare le proprietà di una sessione di traccia eventi, chiamare la funzione [**ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) usando il **codice di controllo UPDATE di EVENT TRACE \_ \_ CONTROL. \_** È possibile specificare la sessione da aggiornare usando un handle di sessione ottenuto da una chiamata precedente a [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea)o un nome di sessione. Le proprietà della sessione di traccia eventi vengono aggiornate utilizzando i valori specificati nella [**struttura EVENT \_ TRACE \_ PROPERTIES.**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) È possibile aggiornare solo un subset delle proprietà. Per un elenco delle proprietà che è possibile aggiornare, vedere il *parametro Properties* della **funzione ControlTrace.**
+Per aggiornare le proprietà di una sessione di traccia eventi, chiamare la [**funzione ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) usando il codice di controllo **EVENT TRACE CONTROL \_ \_ \_ UPDATE.** È possibile specificare la sessione da aggiornare usando un handle di sessione ottenuto da una chiamata precedente a [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea)o un nome di sessione. Le proprietà della sessione di traccia eventi vengono aggiornate usando i valori specificati nella [**struttura EVENT \_ TRACE \_ PROPERTIES.**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) È possibile aggiornare solo un subset delle proprietà. Per un elenco delle proprietà che è possibile aggiornare, vedere il *parametro Properties* della **funzione ControlTrace.**
 
 Se la [**chiamata a ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) ha esito positivo, la [**struttura EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) viene aggiornata in modo da riflettere i nuovi valori delle proprietà. La struttura conterrà anche le nuove statistiche di esecuzione per la sessione di traccia eventi.
 

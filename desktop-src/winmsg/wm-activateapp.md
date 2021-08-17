@@ -1,21 +1,21 @@
 ---
-description: Inviato quando una finestra appartenente a un'applicazione diversa da quella della finestra attiva sta per essere attivata. Il messaggio viene inviato all'applicazione la cui finestra viene attivata e all'applicazione la cui finestra viene disattivata.
+description: Inviato quando una finestra appartenente a un'applicazione diversa da quella attiva sta per essere attivata. Il messaggio viene inviato all'applicazione la cui finestra viene attivata e all'applicazione la cui finestra viene disattivata.
 ms.assetid: fc3626ac-8f19-4aa6-8fe9-5020d00c09db
-title: Messaggio WM_ACTIVATEAPP (winuser. h)
+title: WM_ACTIVATEAPP messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee2d64b90426e004a3c18fdc60538fd21862c42f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9afeabe12dfcc36ae7bf2403a7757004847bcf58370f4a0a0904c9bf008e6c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931891"
 ---
-# <a name="wm_activateapp-message"></a>\_Messaggio ACTIVATEAPP WM
+# <a name="wm_activateapp-message"></a>Messaggio \_ WM ACTIVATEAPP
 
-Inviato quando una finestra appartenente a un'applicazione diversa da quella della finestra attiva sta per essere attivata. Il messaggio viene inviato all'applicazione la cui finestra viene attivata e all'applicazione la cui finestra viene disattivata.
+Inviato quando una finestra appartenente a un'applicazione diversa da quella attiva sta per essere attivata. Il messaggio viene inviato all'applicazione la cui finestra viene attivata e all'applicazione la cui finestra viene disattivata.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,14 +31,14 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica se la finestra viene attivata o disattivata. Questo parametro è **true** se è in corso l'attivazione della finestra; è **false** se la finestra è in fase di disattivazione.
+Indica se la finestra viene attivata o disattivata. Questo parametro è **TRUE se** la finestra viene attivata; è **FALSE se** la finestra viene disattivata.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificatore del thread. Se il parametro *wParam* è **true**, *lParam* è l'identificatore del thread a cui appartiene la finestra da disattivare. Se *wParam* è **false**, *lParam* è l'identificatore del thread a cui appartiene la finestra attivata.
+Identificatore del thread. Se il *parametro wParam* è **TRUE,** *lParam* è l'identificatore del thread proprietario della finestra disattivata. Se *wParam* è **FALSE,** *lParam* è l'identificatore del thread proprietario della finestra attivata.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Identificatore del thread. Se il parametro *wParam* è **true**, *lParam* è l'i
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Se un'applicazione elabora il messaggio, deve restituire zero.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Se un'applicazione elabora il messaggio, deve restituire zero.
 **Riferimento**
 </dt> <dt>
 
-[**\_attivazione WM**](../inputdev/wm-activate.md)
+[**WM \_ ACTIVATE**](../inputdev/wm-activate.md)
 </dt> <dt>
 
 **Informazioni concettuali**

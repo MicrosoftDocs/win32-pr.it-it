@@ -1,9 +1,9 @@
 ---
-title: Uso di dati privati del codec video (Windows Media Format 11 SDK)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Uso di dati privati del codec video (Windows Media Format 11 SDK)
+title: Uso dei dati privati del codec video (Windows Media Format 11 SDK)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Uso dei dati privati del codec video (Windows Media Format 11 SDK)
 ms.assetid: 75dda656-8f5e-4677-9a9b-a80b34aea507
 keywords:
-- Uso del formato multimediale Windows Per dati privati del codec video
+- Uso del formato multimediale windows media codec video privato
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118963900"
 ---
-# <a name="using-video-codec-private-data-windows-media-format-11-sdk"></a>Uso di dati privati del codec video (Windows Media Format 11 SDK)
+# <a name="using-video-codec-private-data-windows-media-format-11-sdk"></a>Uso dei dati privati del codec video (Windows Media Format 11 SDK)
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

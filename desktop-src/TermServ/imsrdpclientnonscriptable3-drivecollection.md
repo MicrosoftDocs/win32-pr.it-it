@@ -1,26 +1,26 @@
 ---
-title: Proprietà di IMsRdpClientNonScriptable3 Drivecollection
+title: Proprietà DriveCollection IMsRdpClientNonScriptable3
 description: Recupera la raccolta di oggetti unità da reindirizzare.
 ms.assetid: 5aaac605-584b-442e-9d67-1cb8213a70b3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà di drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, oggetto MsRdpClient5
-- Servizi Desktop remoto oggetto MsRdpClient5, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, oggetto MsRdpClient6
-- Servizi Desktop remoto oggetto MsRdpClient6, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, oggetto MsRdpClient7
-- Servizi Desktop remoto oggetto MsRdpClient7, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, oggetto MsRdpClient8
-- Servizi Desktop remoto oggetto MsRdpClient8, proprietà Drivecollection
-- Servizi Desktop remoto proprietà di drivecollection, oggetto MsRdpClient9
-- Servizi Desktop remoto oggetto MsRdpClient9, proprietà Drivecollection
+- Proprietà DriveCollection Servizi Desktop remoto
+- Proprietà DriveCollection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà , DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , DriveCollection
+- Proprietà DriveCollection Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , DriveCollection
 topic_type:
 - apiref
 api_name:
@@ -41,14 +41,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37d4bfcaa52d483adc8b0d0885d8316f10ce01d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95cc25d53014936e3adab4f12d5c92cfcbb7b35c7b663c4a2c1f7f77fb467fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001141"
 ---
-# <a name="imsrdpclientnonscriptable3drivecollection-property"></a>IMsRdpClientNonScriptable3::D Proprietà rivecollection
+# <a name="imsrdpclientnonscriptable3drivecollection-property"></a>Proprietà IMsRdpClientNonScriptable3::D riveCollection
 
 Recupera la raccolta di oggetti unità da reindirizzare.
 
@@ -67,7 +67,7 @@ HRESULT get_DriveCollection(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Recupera la raccolta di oggetti unità di tipo [**IMSRdpDrive**](imsrdpdrive.md).
+Recupera la raccolta di oggetti unità di tipo [**IMSRdpDrive.**](imsrdpdrive.md)
 
 ## <a name="requirements"></a>Requisiti
 

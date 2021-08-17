@@ -21,7 +21,7 @@ Per rendere le applicazioni COM+ disponibili per gli utenti di dominio, un ammin
 
 ## <a name="on-the-domain-controller"></a>Nel controller di dominio
 
-L'amministratore crea prima una partizione all'interno di Active Directory. La creazione di una partizione COM+ viene eseguita tramite l'uso dello strumento amministrativo Utenti e computer di Active Directory o a livello di codice tramite Active Directory Services Interface (ADSI).
+L'amministratore crea innanzitutto una partizione all'interno di Active Directory. La creazione di una partizione COM+ viene eseguita tramite l'uso dello strumento Utenti e computer di Active Directory amministrativo o a livello di codice tramite Active Directory Services Interface (ADSI).
 
 Dopo aver creato la partizione in Active Directory, l'amministratore crea un set di partizioni. Nella creazione di un set di partizioni, l'amministratore definisce le partizioni incluse in tale set. La creazione di un set di partizioni COM+ viene eseguita tramite l'uso dello strumento amministrativo Utenti e computer di Active Directory o a livello di codice tramite l'interfaccia ADSI (Active Directory Services Interface).
 
@@ -29,7 +29,7 @@ Infine, l'amministratore esegue il mapping di utenti di dominio o unità organiz
 
 ## <a name="on-the-com-application-server"></a>Nel server applicazioni COM+
 
-L'amministratore crea una nuova partizione, specificando lo stesso nome della partizione e lo stesso ID di partizione (GUID) della partizione creata in Active Directory nel controller di dominio. Questa operazione viene eseguita usando la **cartella Partizioni COM+ all'interno** dello strumento amministrativo Servizi componenti. Per semplificare questa attività, lo strumento Servizi componenti consente all'amministratore di esplorare Active Directory per selezionare la partizione desiderata e il relativo GUID.
+L'amministratore crea una nuova partizione, specificando lo stesso nome di partizione e lo stesso ID di partizione (GUID) della partizione creata all'interno di Active Directory nel controller di dominio. Questa operazione viene eseguita usando la **cartella Partizioni COM+** all'interno dello strumento amministrativo Servizi componenti. Per semplificare questa attività, lo strumento Servizi componenti consente all'amministratore di esplorare Active Directory per selezionare la partizione desiderata e il relativo GUID.
 
 Dopo la creazione della partizione di dominio nel server applicazioni, la partizione predefinita di un utente diventa la partizione predefinita del set di partizioni in Active Directory. Infine, l'amministratore può installare l'applicazione COM+ nella partizione appena creata nel server applicazioni.
 
@@ -45,7 +45,7 @@ Per altre informazioni sull'amministrazione delle partizioni per l'accesso da pa
 
 Per associare partizioni a set di partizioni all'interno di Active Directory e per eseguire il mapping di utenti e unità organizzative a tali set di partizioni, gli amministratori usano gli strumenti di amministrazione Utenti e computer di Active Directory e Servizi componenti. Quando viene creata una partizione all'interno di Active Directory, un amministratore deve configurare localmente la partizione nel computer in cui deve essere installata l'applicazione COM+ pertinente. Questa configurazione locale delle partizioni create all'interno di Active Directory viene eseguita tramite lo strumento amministrativo Servizi componenti.
 
-Se non è stato eseguito il mapping di un'identità utente di dominio a un set di partizioni, all'utente viene concesso l'accesso dall'unità organizzativa dell'utente, di cui è stato eseguito il mapping alla partizione. Se l'unità organizzativa dell'utente non è mappata a un set di partizioni, ma la successiva unità organizzativa più alta nella gerarchia viene mappata a tale set di partizioni, l'utente può accedere alla partizione.
+Se non viene eseguito il mapping di un'identità utente di dominio a un set di partizioni, all'utente viene concesso l'accesso dall'unità organizzativa dell'utente, di cui è stato eseguito il mapping alla partizione. Se l'unità organizzativa dell'utente non è mappata a un set di partizioni, ma la successiva unità organizzativa più alta nella gerarchia viene mappata a tale set di partizioni, l'utente può accedere alla partizione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

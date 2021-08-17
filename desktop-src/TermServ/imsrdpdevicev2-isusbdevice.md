@@ -1,12 +1,12 @@
 ---
-title: Proprietà IsUSBDevice di IMsRdpDeviceV2
+title: IMsRdpDeviceV2 - proprietà IsUSBDevice
 description: Specifica se il dispositivo è per il reindirizzamento USB.
 ms.assetid: df4c9764-ad96-4f35-9537-3890293a944c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà IsUSBDevice
-- Servizi Desktop remoto proprietà IsUSBDevice, interfaccia IMsRdpDeviceV2
-- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto, proprietà IsUSBDevice
+- Proprietà IsUSBDevice Servizi Desktop remoto
+- Proprietà IsUSBDevice Servizi Desktop remoto, interfaccia IMsRdpDeviceV2
+- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto , proprietà IsUSBDevice
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3741972fdd81887713e75ed5b596e0ba1a10fd3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e03e2572912487cb924f65350dbdd7818d07d2a7b172d18cb28fab87335a00dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138564"
 ---
-# <a name="imsrdpdevicev2isusbdevice-property"></a>Proprietà IMsRdpDeviceV2:: IsUSBDevice
+# <a name="imsrdpdevicev2isusbdevice-property"></a>Proprietà IMsRdpDeviceV2::IsUSBDevice
 
 Specifica se il dispositivo è per il reindirizzamento USB.
 

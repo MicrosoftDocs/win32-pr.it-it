@@ -1,22 +1,22 @@
 ---
-description: Dopo aver creato o individuato un'istanza di una classe, è probabile che si desideri modificare l'istanza.
+description: Dopo aver creato o individuato un'istanza di una classe, è probabile che si voglia modificare l'istanza.
 ms.assetid: c0041274-5fcd-4108-961f-aeda6cb5fce8
 ms.tgt_platform: multiple
-title: Modifica di una proprietà dell'istanza
+title: Modifica di una proprietà di istanza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f5ea7d18713be0c06b932643d3884128308bac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc803bd952ab0957d473f7d5a6a81d8ecfe3c898c52161f461dd001d3456134e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131083"
 ---
-# <a name="modifying-an-instance-property"></a>Modifica di una proprietà dell'istanza
+# <a name="modifying-an-instance-property"></a>Modifica di una proprietà di istanza
 
-Dopo aver creato o individuato un'istanza di una classe, è probabile che si desideri modificare l'istanza. È ad esempio possibile modificare il nome del nome di sistema archiviato nell'istanza locale della classe [**Win32 \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/win32-computersystem) . Il modo più comune per aggiornare un'istanza di consiste nell'aggiornare l'intera istanza. Per ulteriori informazioni, vedere [aggiornamento di un'intera istanza](updating-an-entire-instance.md). La seconda opzione consiste nell'aggiornare solo una parte dell'istanza. Per ulteriori informazioni, vedere [aggiornamento della parte di un'istanza](updating-part-of-an-instance.md).
+Dopo aver creato o individuato un'istanza di una classe, è probabile che si voglia modificare l'istanza. Ad esempio, è possibile modificare il nome del sistema archiviato nell'istanza locale della [**classe \_ ComputerSystem Win32.**](/windows/desktop/CIMWin32Prov/win32-computersystem) Il modo più comune per aggiornare un'istanza è aggiornare l'intera istanza. Per altre informazioni, vedere [Aggiornamento di un'intera istanza.](updating-an-entire-instance.md) La seconda opzione consente di aggiornare solo una parte dell'istanza. Per altre informazioni, vedere [Aggiornamento di una parte di un'istanza](updating-part-of-an-instance.md)di .
 
-Per ulteriori informazioni sull'utilizzo delle classi, vedere [modifica delle informazioni sulle classi e sulle istanze](manipulating-class-and-instance-information.md).
+Per altre informazioni sull'uso delle classi, vedere [Modifica delle informazioni su classi e istanze.](manipulating-class-and-instance-information.md)
 
  
 

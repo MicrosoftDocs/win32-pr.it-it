@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_CAN_RECORD messaggio (Vfw.h)
-description: Il messaggio MCIWNDM \_ CAN RECORD determina se un dispositivo \_ MCI supporta la registrazione. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndCanRecord.
+description: Il messaggio CAN RECORD MCIWNDM \_ determina se un dispositivo \_ MCI supporta la registrazione. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndCanRecord.
 ms.assetid: b5a789fa-6a88-487d-a374-8f4798ee5a62
 keywords:
 - MCIWNDM_CAN_RECORD messaggio Windows Multimediali
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119429651"
 ---
-# <a name="mciwndm_can_record-message"></a>MESSAGGIO CAN \_ RECORD MCIWNDM \_
+# <a name="mciwndm_can_record-message"></a>MESSAGGIO CAN RECORD MCIWNDM \_ \_
 
-Il **messaggio MCIWNDM \_ CAN \_ RECORD** determina se un dispositivo MCI supporta la registrazione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndCanRecord.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanrecord)
+Il **messaggio CAN \_ \_ RECORD MCIWNDM** determina se un dispositivo MCI supporta la registrazione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndCanRecord.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanrecord)
 
 
 ```C++

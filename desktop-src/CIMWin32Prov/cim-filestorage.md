@@ -1,5 +1,5 @@
 ---
-description: L'associazione \_ CiM FileStorage collega il file system e i file logici a cui viene fatto file system.
+description: L'associazione CIM \_ FileStorage collega il file system e i file logici indirizzati tramite il file system.
 ms.assetid: 1d0b698b-4c57-4a1c-8b00-0a6079be8dcc
 ms.tgt_platform: multiple
 title: CIM_FileStorage classe
@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119321037"
 ---
-# <a name="cim_filestorage-class"></a>Classe \_ CiM FileStorage
+# <a name="cim_filestorage-class"></a>Classe CiM \_ FileStorage
 
-**L'associazione \_ CiM FileStorage** collega il file system e i file logici a cui viene fatto file system.
+**L'associazione CIM \_ FileStorage** collega il file system e i file logici indirizzati tramite l'file system.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_FileStorage : CIM_Component
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM FileStorage** ha questi tipi di membri:
+La **classe CIM \_ FileStorage** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CiM FileStorage** ha queste proprietà.
+La **classe CIM \_ FileStorage** ha queste proprietà.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Un [**file system CIM \_ che**](cim-filesystem.md) descrive il file system.
+FileSystem [**CIM \_ che**](cim-filesystem.md) descrive il file system.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo di dati: **CIM \_ LogicalFile**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 LogicalFile [**CIM \_ che**](cim-logicalfile.md) descrive il file logico archiviato nel contesto del file system.
@@ -93,7 +93,7 @@ LogicalFile [**CIM \_ che**](cim-logicalfile.md) descrive il file logico archivi
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
