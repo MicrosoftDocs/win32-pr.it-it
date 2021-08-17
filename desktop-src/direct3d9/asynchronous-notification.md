@@ -1,25 +1,25 @@
 ---
-description: Sono disponibili numerose query interessanti su un driver che un'applicazione può eseguire se non si verifica alcun costo in termini di prestazioni.
+description: Esistono un numero di query interessanti su un driver che un'applicazione può eseguire se non sono presenti costi per le prestazioni.
 ms.assetid: 81e1c5c5-03bc-4598-814e-14e56513e221
 title: Notifica asincrona (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8aee8acb791e2e1e2de7eb305cc19df4e7711e2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dbd23a64e613bbbae56154dc35c05bcf08b75c4c91f306360153e775e12c40ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123418"
 ---
 # <a name="asynchronous-notification-direct3d-9"></a>Notifica asincrona (Direct3D 9)
 
-Sono disponibili numerose query interessanti su un driver che un'applicazione può eseguire se non si verifica alcun costo in termini di prestazioni. In Direct3D 7 e Direct3D 8, un meccanismo di query sincrono, GetInfo, funziona bene per elementi come le statistiche, ma non sono state aggiunte query critiche per le prestazioni. Sono presenti altri elementi, come le barriere, intrinsecamente asincroni. Si tratta di un'API semplice per eseguire query sia sincrone che asincrone. GetInfo verrà ritirato in Direct3D 9.
+Esistono un numero di query interessanti su un driver che un'applicazione può eseguire se non sono presenti costi per le prestazioni. In Direct3D 7 e Direct3D 8, un meccanismo di query sincrono, GetInfo, funzionava bene per operazioni come le statistiche, ma non sono state aggiunte query critiche per le prestazioni. Esistono altri elementi (ad esempio recinti) intrinsecamente asincroni. Si tratta di un'API semplice per eseguire query sincrone e asincrone. GetInfo verrà ritirato in Direct3D 9.
 
-Creare una query usando [**IDirect3DDevice9:: CreateQuery**](/windows/desktop/api). Questo metodo accetta D3DQUERYTYPE, che definisce il tipo di query da creare e restituisce un puntatore a un oggetto [**IDirect3DQuery9**](/windows/desktop/api) . Se il tipo di query non è supportato, la chiamata restituisce un errore D3DERR \_ NOTAVAILABLE. Utilizzando l'oggetto query, l'applicazione invia la query al runtime utilizzando [**IDirect3DQuery9:: Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue)ed esegue il polling dello stato della query utilizzando [**IDirect3DQuery9:: GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata). Se il risultato della query è disponibile, viene \_ restituito s OK. in caso contrario, \_ viene restituito s false. Si prevede che l'applicazione passi un buffer di dimensioni appropriate per i risultati della query.
+Creare una query [**usando IDirect3DDevice9::CreateQuery**](/windows/desktop/api). Questo metodo accetta un oggetto D3DQUERYTYPE, che definisce il tipo di query da eseguire e restituisce un puntatore a [**un oggetto IDirect3DQuery9.**](/windows/desktop/api) Se il tipo di query non è supportato, la chiamata restituisce un errore D3DERR \_ NOTAVAILABLE. Usando l'oggetto query, l'applicazione invia la query al runtime usando [**IDirect3DQuery9::Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue)ed esegue il polling dello stato della query [**usando IDirect3DQuery9::GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata). Se il risultato della query è disponibile, viene restituito S \_ OK. In caso contrario, viene restituito S \_ FALSE. È previsto che l'applicazione passi un buffer di dimensioni appropriate per i risultati della query.
 
-L'applicazione ha un'opzione che consente di forzare il runtime a scaricare la query fino al driver usando D3DGETDATA \_ Flush con [**IDirect3DQuery9:: GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata). Causa uno scaricamento, forzando il driver a visualizzare la query. In questo caso, \_ viene restituito D3DERR DEVICELOST se il dispositivo viene perso.
+L'applicazione può forzare il runtime a scaricare la query nel driver usando D3DGETDATA \_ FLUSH con [**IDirect3DQuery9::GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata). Causa uno scaricamento, forzando il driver a visualizzare la query. In questo caso, viene restituito D3DERR \_ DEVICELOST se il dispositivo viene perso.
 
-Tutte le query vengono perse quando il dispositivo viene perso, l'applicazione deve crearle nuovamente. Se il dispositivo non supporta la query e pQueryID è **null**, la creazione della query avrà esito negativo con D3DERR \_ INVALIDCALL.
+Tutte le query vengono perse quando il dispositivo viene perso e l'applicazione deve ri-crearle. Se il dispositivo non supporta la query e pQueryID è **NULL,** la creazione della query avrà esito negativo con D3DERR \_ INVALIDCALL.
 
 Nella tabella seguente vengono riepilogate informazioni importanti su ogni tipo di query.
 
@@ -27,17 +27,17 @@ Nella tabella seguente vengono riepilogate informazioni importanti su ogni tipo 
 
 | QuertyType                    | Flag di problema valido              | Buffer GetData              | Runtime      | Inizio implicito della query |
 |-------------------------------|-------------------------------|-----------------------------|--------------|-----------------------------|
-| \_VCACHE D3DQUERYTYPE          | \_Fine D3DISSUE                 | \_VCACHE D3DDEVINFO          | Vendita al dettaglio/debug | CreateDevice                |
-| \_RESOURCEMANAGER D3DQUERYTYPE | \_Fine D3DISSUE                 | \_RESOURCEMANAGER D3DDEVINFO | Solo debug   | Presente                     |
-| \_VERTEXSTATS D3DQUERYTYPE     | \_Fine D3DISSUE                 | \_D3DVERTEXSTATS D3DDEVINFO  | Solo debug   | Presente                     |
-| \_Evento D3DQUERYTYPE           | \_Fine D3DISSUE                 | BOOL                        | Vendita al dettaglio/debug | CreateDevice                |
-| \_Occlusione D3DQUERYTYPE       | D3DISSUE \_ Begin, D3DISSUE \_ end | DWORD                       | Vendita al dettaglio/debug | N/D                         |
+| D3DQUERYTYPE \_ VCACHE          | D3DISSUE \_ END                 | D3DDEVINFO \_ VCACHE          | Vendita al dettaglio/debug | CreateDevice                |
+| D3DQUERYTYPE \_ ResourceManager | D3DISSUE \_ END                 | D3DDEVINFO \_ ResourceManager | Solo debug   | Presente                     |
+| D3DQUERYTYPE \_ VERTEXSTATS     | D3DISSUE \_ END                 | D3DDEVINFO \_ D3DVERTEXSTATS  | Solo debug   | Presente                     |
+| EVENTO D3DQUERYTYPE \_           | D3DISSUE \_ END                 | BOOL                        | Vendita al dettaglio/debug | CreateDevice                |
+| OCCLUSIONE D3DQUERYTYPE \_       | D3DISSUE \_ BEGIN,D3DISSUE \_ END | DWORD                       | Vendita al dettaglio/debug | N/A                         |
 
 
 
  
 
-Campo Flags per [**IDirect3DQuery9:: Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue):
+Campo Flags per [**IDirect3DQuery9::Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue):
 
 
 ```
@@ -57,7 +57,7 @@ Campo Flags per [**IDirect3DQuery9:: Issue**](/windows/win32/api/d3d9helper/nf-d
 
 
 
-Campo Flags per [**IDirect3DQuery9:: GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata):
+Campo Flags per [**IDirect3DQuery9::GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata):
 
 
 ```
@@ -72,7 +72,7 @@ Campo Flags per [**IDirect3DQuery9:: GetData**](/windows/win32/api/d3d9helper/nf
 
 <dl> <dt>
 
-[Suggerimenti per la programmazione](programming-tips.md)
+[Programmazione Suggerimenti](programming-tips.md)
 </dt> </dl>
 
  

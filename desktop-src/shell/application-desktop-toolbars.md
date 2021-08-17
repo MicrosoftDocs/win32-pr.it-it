@@ -1,95 +1,95 @@
 ---
-description: Una barra degli strumenti del desktop dell'applicazione (detta anche AppBar) è una finestra simile alla barra delle applicazioni di Windows.
+description: Una barra degli strumenti del desktop dell'applicazione (denominata anche barra delle applicazioni) è una finestra simile alla barra Windows barra delle applicazioni.
 ms.assetid: d9f63cb1-e2cc-4a3b-a3b8-de028e0f0123
-title: Uso delle barre degli strumenti del desktop applicazione
+title: Uso delle barre degli strumenti del desktop dell'applicazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 140ef94c1daeb571cd0d766dfbd4dc28b7991efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3c8604136040f5f3a1b4c1e9fcecb3b0c26b087724f477e592857ca4046d3a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119351451"
 ---
-# <a name="using-application-desktop-toolbars"></a>Uso delle barre degli strumenti del desktop applicazione
+# <a name="using-application-desktop-toolbars"></a>Uso delle barre degli strumenti del desktop dell'applicazione
 
-Una *barra degli strumenti del desktop dell'applicazione* (detta anche AppBar) è una finestra simile alla barra delle applicazioni di Windows. È ancorato a un bordo dello schermo e contiene in genere pulsanti che consentono all'utente di accedere rapidamente ad altre applicazioni e finestre. Il sistema impedisce ad altre applicazioni di utilizzare l'area desktop utilizzata da un AppBar. Sul desktop può esistere un numero qualsiasi di AppBar in un determinato momento.
+Una *barra degli strumenti del desktop* dell'applicazione (denominata anche barra delle applicazioni) è una finestra simile alla barra Windows barra delle applicazioni. È ancorato a un bordo dello schermo e in genere contiene pulsanti che consentono all'utente di accedere rapidamente ad altre applicazioni e finestre. Il sistema impedisce ad altre applicazioni di usare l'area del desktop usata da una barra delle app. Sul desktop può esistere un numero qualsiasi di barre delle app in qualsiasi momento.
 
 In questo argomento sono contenute le sezioni seguenti.
 
--   [Informazioni sulle barre degli strumenti del desktop applicazione](#about-application-desktop-toolbars)
+-   [Informazioni sulle barre degli strumenti di Application Desktop](#about-application-desktop-toolbars)
     -   [sending messages](#sending-messages)
     -   [Registrazione](#registration)
-    -   [Dimensioni e posizione AppBar](#appbar-size-and-position)
+    -   [Dimensioni e posizione della barra delle app](#appbar-size-and-position)
     -   [Nascondi automaticamente le barre degli strumenti del desktop dell'applicazione](#autohide-application-desktop-toolbars)
-    -   [Messaggi di notifica AppBar](#appbar-notification-messages)
--   [Registrazione di una barra degli strumenti del desktop dell'applicazione](#registering-an-application-desktop-toolbar)
--   [Impostazione delle dimensioni e della posizione del AppBar](#setting-the-appbar-size-and-position)
--   [Elaborazione dei messaggi di notifica AppBar](#processing-appbar-notification-messages)
+    -   [Messaggi di notifica di Appbar](#appbar-notification-messages)
+-   [Registrazione di una barra degli strumenti desktop dell'applicazione](#registering-an-application-desktop-toolbar)
+-   [Impostazione delle dimensioni e della posizione di Appbar](#setting-the-appbar-size-and-position)
+-   [Elaborazione dei messaggi di notifica di Appbar](#processing-appbar-notification-messages)
 
-## <a name="about-application-desktop-toolbars"></a>Informazioni sulle barre degli strumenti del desktop applicazione
+## <a name="about-application-desktop-toolbars"></a>Informazioni sulle barre degli strumenti di Application Desktop
 
-Windows fornisce un'API che consente di sfruttare i vantaggi offerti dai servizi AppBar forniti dal sistema. I servizi consentono di garantire che i AppBar definiti dall'applicazione funzionino senza problemi tra loro e con la barra delle applicazioni. Il sistema mantiene le informazioni su ogni AppBar e invia i messaggi AppBar per notificare gli eventi che possono influire sulle dimensioni, sulla posizione e sull'aspetto.
+Windows un'API che consente di sfruttare i servizi appbar forniti dal sistema. I servizi consentono di garantire che le barre delle app definite dall'applicazione funzionino senza problemi tra loro e con la barra delle applicazioni. Il sistema gestisce le informazioni su ogni barra delle app e invia i messaggi di appbars per notificare gli eventi che possono influire su dimensioni, posizione e aspetto.
 
 ### <a name="sending-messages"></a>sending messages
 
-Un'applicazione usa uno speciale set di messaggi, denominati messaggi AppBar, per aggiungere o rimuovere un AppBar, impostare le dimensioni e la posizione di AppBar e recuperare le informazioni sulle dimensioni, sulla posizione e sullo stato della barra delle applicazioni. Per inviare un messaggio AppBar, un'applicazione deve usare la funzione [**SHAppBarMessage**](/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage) . I parametri della funzione includono un identificatore del messaggio, ad esempio [**ABM \_ New**](abm-new.md), e l'indirizzo di una struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) . I membri della struttura contengono informazioni necessarie al sistema per elaborare il messaggio specificato.
+Un'applicazione usa un set speciale di messaggi, denominati messaggi della barra delle applicazioni, per aggiungere o rimuovere una barra delle app, impostare le dimensioni e la posizione di una barra delle applicazioni e recuperare informazioni su dimensioni, posizione e stato della barra delle applicazioni. Per inviare un messaggio di appbar, un'applicazione deve usare la [**funzione SHAppBarMessage.**](/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage) I parametri della funzione includono un identificatore di messaggio, ad esempio [**ABM \_ NEW,**](abm-new.md)e l'indirizzo di una [**struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) I membri della struttura contengono informazioni necessarie al sistema per elaborare il messaggio specificato.
 
-Per ogni messaggio AppBar, il sistema usa alcuni membri della struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) e ignora gli altri. Tuttavia, il sistema usa sempre i membri **cbSize** e **HWND** , quindi un'applicazione deve compilare tali membri per ogni messaggio di AppBar. Il membro **cbSize** specifica le dimensioni della struttura e il membro **HWND** è l'handle per la finestra di AppBar.
+Per qualsiasi messaggio appbar specificato, il sistema usa alcuni membri della [**struttura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) e ignora gli altri. Tuttavia, il sistema usa sempre i **membri cbSize** e **hWnd,** quindi un'applicazione deve riempire questi membri per ogni messaggio della barra delle app. Il **membro cbSize** specifica le dimensioni della struttura e il membro **hWnd** è l'handle per la finestra della barra dell'app.
 
-Alcuni messaggi AppBar richiedono informazioni dal sistema. Durante l'elaborazione di questi messaggi, il sistema copia le informazioni richieste nella struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) .
+Alcuni messaggi della barra delle app richiedono informazioni dal sistema. Durante l'elaborazione di questi messaggi, il sistema copia le informazioni richieste nella [**struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata)
 
 ### <a name="registration"></a>Registrazione
 
-Il sistema mantiene un elenco interno di AppBar e gestisce le informazioni su ogni barra dell'elenco. Il sistema utilizza le informazioni per gestire AppBar, per eseguirne i servizi e per inviare messaggi di notifica.
+Il sistema mantiene un elenco interno di barre delle app e mantiene le informazioni su ogni barra nell'elenco. Il sistema usa le informazioni per gestire le barre delle app, eseguire i relativi servizi e inviare loro messaggi di notifica.
 
-Un'applicazione deve registrare un AppBar (ovvero aggiungerlo all'elenco interno) prima di poter ricevere i servizi AppBar dal sistema. Per registrare un AppBar, un'applicazione invia il [**\_ nuovo messaggio ABM**](abm-new.md) . La struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) associata include l'handle per la finestra di AppBar e un identificatore di messaggio definito dall'applicazione. Il sistema utilizza l'identificatore del messaggio per inviare messaggi di notifica alla routine della finestra AppBar. Per ulteriori informazioni, vedere AppBar Notification messages.
+Un'applicazione deve registrare un'appbar, ovvero aggiungerla all'elenco interno, prima di poter ricevere i servizi appbar dal sistema. Per registrare un'appbar, un'applicazione invia il [**messaggio ABM \_ NEW.**](abm-new.md) La struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) corrispondente include l'handle per la finestra della barra dell'app e un identificatore di messaggio definito dall'applicazione. Il sistema usa l'identificatore del messaggio per inviare messaggi di notifica alla procedura della finestra della barra delle app. Per altre informazioni, vedere Messaggi di notifica di Appbar.
 
-Un'applicazione annulla la registrazione di un AppBar inviando il messaggio di [**\_ rimozione di ABM**](abm-remove.md) . L'annullamento della registrazione di un AppBar lo rimuove dall'elenco interno del sistema di AppBar. Il sistema non invia più messaggi di notifica a AppBar o impedisce ad altre applicazioni di utilizzare l'area dello schermo utilizzata dal AppBar. Un'applicazione deve sempre inviare **la \_ rimozione di ABM** prima di eliminare un AppBar.
+Un'applicazione annulla la registrazione di una barra delle app inviando il [**messaggio ABM \_ REMOVE.**](abm-remove.md) L'annullamento della registrazione di una barra delle app la rimuove dall'elenco interno delle barre delle app del sistema. Il sistema non invia più messaggi di notifica alla barra delle app o impedisce ad altre applicazioni di usare l'area dello schermo usata dalla barra delle app. Un'applicazione deve sempre inviare **ABM \_ REMOVE** prima di eliminare un'appbar.
 
-### <a name="appbar-size-and-position"></a>Dimensioni e posizione AppBar
+### <a name="appbar-size-and-position"></a>Dimensioni e posizione della barra delle app
 
-Un'applicazione deve impostare le dimensioni e la posizione di un AppBar in modo che non interferisca con altri AppBar o la barra delle applicazioni. Ogni AppBar deve essere ancorato a un bordo particolare dello schermo e più AppBar possono essere ancorati a un bordo. Tuttavia, se un AppBar è ancorato allo stesso bordo della barra delle applicazioni, il sistema garantisce che la barra delle applicazioni si trovi sempre sul bordo più esterno.
+Un'applicazione deve impostare le dimensioni e la posizione di una barra delle applicazioni in modo che non interferisca con altre barre delle applicazioni o con la barra delle applicazioni. Ogni barra delle app deve essere ancorata a un bordo specifico dello schermo e più barre delle app possono essere ancorate a un bordo. Tuttavia, se una barra delle applicazioni è ancorata allo stesso bordo della barra delle applicazioni, il sistema garantisce che la barra delle applicazioni sia sempre sul bordo più esterno.
 
-Per impostare le dimensioni e la posizione di un AppBar, un'applicazione propone prima di tutto un bordo dello schermo e un rettangolo di delimitazione per il AppBar inviando il messaggio di [**\_ QUERYPOS ABM**](abm-querypos.md) . Il sistema determina se una parte dell'area dello schermo all'interno del rettangolo proposto viene utilizzata dalla barra delle applicazioni o da un altro AppBar, regola il rettangolo (se necessario) e restituisce il rettangolo modificato per l'applicazione.
+Per impostare le dimensioni e la posizione di una barra delle app, un'applicazione propone innanzitutto un bordo dello schermo e un rettangolo di delimitazione per la barra dell'app inviando il [**messaggio \_ QUERYPOS ABM.**](abm-querypos.md) Il sistema determina se qualsiasi parte dell'area dello schermo all'interno del rettangolo proposto viene usata dalla barra delle applicazioni o da un'altra barra delle applicazioni, regola il rettangolo (se necessario) e restituisce il rettangolo regolato all'applicazione.
 
-Successivamente, l'applicazione invia il [**messaggio \_ SETPOS di ABM**](abm-setpos.md) per impostare il nuovo rettangolo di delimitazione per il AppBar. Anche in questo caso, il sistema può regolare il rettangolo prima di restituirlo all'applicazione. Per questo motivo, l'applicazione deve usare il rettangolo modificato restituito da **ABM \_ SETPOS** per impostare le dimensioni e la posizione finali. L'applicazione può usare la funzione [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostare il AppBar in posizione.
+Successivamente, l'applicazione invia il [**messaggio ABM \_ SETPOS**](abm-setpos.md) per impostare il nuovo rettangolo di delimitazione per la barra dell'app. Anche in questo caso, il sistema può regolare il rettangolo prima di restituirlo all'applicazione. Per questo motivo, l'applicazione deve usare il rettangolo regolato restituito da **ABM \_ SETPOS** per impostare le dimensioni e la posizione finali. L'applicazione può usare la [**funzione MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostare la barra dell'app in posizione.
 
-Utilizzando un processo in due passaggi per impostare le dimensioni e la posizione, il sistema consente all'applicazione di fornire feedback intermedio all'utente durante l'operazione di spostamento. Se, ad esempio, l'utente trascina un AppBar, l'applicazione potrebbe visualizzare un rettangolo ombreggiato che indica la nuova posizione prima che il AppBar venga effettivamente spostato.
+Usando un processo in due passaggi per impostare le dimensioni e la posizione, il sistema consente all'applicazione di fornire un feedback intermedio all'utente durante l'operazione di spostamento. Ad esempio, se l'utente trascina una barra dell'app, l'applicazione potrebbe visualizzare un rettangolo ombreggiato che indica la nuova posizione prima che la barra dell'app venga effettivamente spostata.
 
-Un'applicazione deve impostare la dimensione e la posizione del relativo AppBar dopo la registrazione e ogni volta che il AppBar riceve il messaggio di notifica [**\_ POSCHANGED di ABN**](abn-poschanged.md) . Un AppBar riceve questo messaggio di notifica ogni volta che si verifica una modifica nella dimensione, nella posizione o nello stato di visibilità della barra delle applicazioni e ogni volta che un altro AppBar sullo stesso lato dello schermo viene ridimensionato, aggiunto o rimosso.
+Un'applicazione deve impostare le dimensioni e la posizione della relativa barra delle app dopo la registrazione e ogni volta che la barra dell'app riceve il messaggio di notifica [**ABN \_ POSCHANGED.**](abn-poschanged.md) Una barra delle app riceve questo messaggio di notifica ogni volta che si verifica una modifica nello stato di visibilità, posizione o dimensione della barra delle applicazioni e ogni volta che un'altra barra delle app sullo stesso lato dello schermo viene ridimensionata, aggiunta o rimossa.
 
-Ogni volta che un AppBar riceve il \_ messaggio di attivazione WM, deve inviare il messaggio di [**\_ attivazione di ABM**](abm-activate.md) . Analogamente, quando un AppBar riceve un \_ messaggio WM WINDOWPOSCHANGED, deve chiamare [**ABM \_ WINDOWPOSCHANGED**](abm-windowposchanged.md). L'invio di questi messaggi garantisce che il sistema imposti correttamente lo z-order di qualsiasi AppBar di Nascondi automaticamente sullo stesso perimetro.
+Ogni volta che un appbar riceve il messaggio WM \_ ACTIVATE, deve inviare il [**messaggio ABM \_ ACTIVATE.**](abm-activate.md) Analogamente, quando un'appbar riceve un messaggio WM \_ WINDOWPOSCHANGED, deve chiamare [**ABM \_ WINDOWPOSCHANGED**](abm-windowposchanged.md). L'invio di questi messaggi garantisce che il sistema imposta correttamente l'ordine z di tutte le barre delle app con rilevamento automatico sullo stesso bordo.
 
 ### <a name="autohide-application-desktop-toolbars"></a>Nascondi automaticamente le barre degli strumenti del desktop dell'applicazione
 
-Un AppBar di Nascondi automaticamente è uno che in genere è nascosto ma diventa visibile quando l'utente sposta il cursore del mouse sul bordo dello schermo a cui è associato il AppBar. Il AppBar si nasconde nuovamente quando l'utente sposta il cursore del mouse fuori dal rettangolo di delimitazione della barra.
+Una barra dell'app con nascondimento automatico è normalmente nascosta, ma diventa visibile quando l'utente sposta il cursore del mouse sul bordo dello schermo a cui è associata la barra dell'app. La barra dell'app si nasconde di nuovo quando l'utente sposta il cursore del mouse fuori dal rettangolo di delimitazione della barra.
 
-Sebbene il sistema consenta un numero di AppBar diversi in un determinato momento, consente solo un AppBar di Nascondi alla volta per ogni bordo dello schermo in base alla prima, prima di tutto. Il sistema mantiene automaticamente l'ordine z di un AppBar di Nascondi automaticamente (solo all'interno del gruppo z order).
+Anche se il sistema consente una serie di appbar diverse in un determinato momento, consente una sola barra dell'app con rilevamento automatico alla volta per ogni bordo dello schermo in base al primo utilizzo. Il sistema mantiene automaticamente l'ordine z di una barra dell'app con nascondimento automatico (solo all'interno del relativo gruppo di ordine z).
 
-Un'applicazione usa il [**messaggio \_ SETAUTOHIDEBAR di ABM**](abm-setautohidebar.md) per registrare o annullare la registrazione di un AppBar di Nascondi automaticamente. Il messaggio specifica il bordo per AppBar e un flag che specifica se il AppBar deve essere registrato o annullato. Il messaggio ha esito negativo se un AppBar di Nascondi automaticamente viene registrato, ma ne è già associato uno al bordo specificato. Un'applicazione può recuperare l'handle per il AppBar di Nascondi automaticamente associato a un bordo inviando il messaggio di [**\_ GETAUTOHIDEBAR ABM**](abm-getautohidebar.md) .
+Un'applicazione usa il [**messaggio ABM \_ SETAUTOHIDEBAR**](abm-setautohidebar.md) per registrare o annullare la registrazione di una barra delle app con rilevamento automatico. Il messaggio specifica il bordo per la barra delle app e un flag che specifica se la barra dell'app deve essere registrata o annullata. Il messaggio ha esito negativo se è in corso la registrazione di una barra dell'app con rilevamento automatico, ma ne è già associata una al bordo specificato. Un'applicazione può recuperare l'handle alla barra dell'app di rilevamento automatico associata a un bordo inviando il [**messaggio ABM \_ GETAUTOHIDEBAR.**](abm-getautohidebar.md)
 
-Non è necessario che un AppBar di Nascondi automaticamente si registri come AppBar normali; Ciò significa che non è necessario registrarlo inviando il nuovo messaggio [**ABM \_**](abm-new.md) . Un AppBar non registrato da **ABM \_ New** si sovrappone a qualsiasi AppBar ancorato sullo stesso bordo dello schermo.
+Non è necessario registrare una barra delle app con rilevamento automatico come normale barra dell'app. ciò significa che non è necessario registrarlo inviando il [**messaggio ABM \_ NEW.**](abm-new.md) Una barra delle app non registrata da **ABM \_ NEW** si sovrappone alle barre delle app ancorate sullo stesso bordo dello schermo.
 
-### <a name="appbar-notification-messages"></a>Messaggi di notifica AppBar
+### <a name="appbar-notification-messages"></a>Messaggi di notifica di Appbar
 
-Il sistema invia messaggi per notificare a un AppBar gli eventi che possono influire sulla posizione e sull'aspetto. I messaggi vengono inviati nel contesto di un messaggio definito dall'applicazione. L'applicazione specifica l'identificatore del messaggio quando invia il nuovo messaggio [**ABM \_**](abm-new.md) per registrare il AppBar. Il codice di notifica si trova nel parametro *wParam* del messaggio definito dall'applicazione.
+Il sistema invia messaggi per notificare a una barra delle app gli eventi che possono influire sulla posizione e sull'aspetto. I messaggi vengono inviati nel contesto di un messaggio definito dall'applicazione. L'applicazione specifica l'identificatore del messaggio quando invia il messaggio [**ABM \_ NEW**](abm-new.md) per registrare l'appbar. Il codice di notifica si trova nel *parametro wParam* del messaggio definito dall'applicazione.
 
-Un AppBar riceve il messaggio di notifica [**\_ POSCHANGED di ABN**](abn-poschanged.md) quando cambia la dimensione, la posizione o lo stato di visibilità della barra delle applicazioni, quando un altro AppBar viene aggiunto allo stesso bordo dello schermo o quando un altro AppBar sullo stesso bordo dello schermo viene ridimensionato o rimosso. Un AppBar deve rispondere a questo messaggio di notifica inviando i messaggi [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS**](abm-setpos.md) . Se la posizione di un AppBar è cambiata, deve chiamare la funzione [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostarsi alla nuova posizione.
+Una barra delle app riceve il messaggio di notifica [**ABN \_ POSCHANGED**](abn-poschanged.md) quando le dimensioni, la posizione o lo stato di visibilità della barra delle applicazioni cambiano, quando un'altra barra delle app viene aggiunta allo stesso bordo dello schermo o quando un'altra barra delle app sullo stesso bordo dello schermo viene ridimensionata o rimossa. Un'appbar deve rispondere a questo messaggio di notifica inviando messaggi [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS.**](abm-setpos.md) Se la posizione di una barra delle app è cambiata, deve chiamare la [**funzione MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostarsi nella nuova posizione.
 
-Il sistema invia il messaggio di notifica [**\_ STATECHANGE di ABN**](abn-statechange.md) ogni volta che lo stato di Nascondi automaticamente o sempre in primo piano della barra delle applicazioni è cambiato, ovvero quando l'utente seleziona o deseleziona la casella di controllo **Always on top** o **Nascondi automaticamente** nella finestra delle proprietà della barra delle applicazioni. Un AppBar può utilizzare questo messaggio di notifica per impostare lo stato di conformità a quello della barra delle applicazioni, se lo si desidera.
+Il sistema invia il messaggio di notifica [**ABN \_ STATECHANGE**](abn-statechange.md) ogni volta che viene modificato lo stato di rilevamento automatico  o sempre  attivo della barra delle applicazioni, ovvero quando l'utente seleziona o deseleziona la casella di controllo Sempre in alto o Nascondi automaticamente nella finestra delle proprietà della barra delle applicazioni. Una barra delle applicazioni può usare questo messaggio di notifica per impostarne lo stato in modo che sia conforme a quello della barra delle applicazioni, se necessario.
 
-Quando viene avviata un'applicazione a schermo intero o quando viene chiusa l'ultima applicazione a schermo intero, un AppBar riceve il messaggio di notifica [**\_ FULLSCREENAPP di ABN**](abn-fullscreenapp.md) . Il parametro *lParam* indica se l'applicazione a schermo intero è in apertura o in chiusura. Se si apre, il AppBar deve essere rilasciato nella parte inferiore dello z-order. Il AppBar deve ripristinare la posizione dell'ordine z quando l'ultima applicazione a schermo intero è stata chiusa.
+Quando un'applicazione a schermo intero viene avviata o quando viene chiusa l'ultima applicazione a schermo intero, una barra delle app riceve il messaggio di notifica [**ABN \_ FULLSCREENAPP.**](abn-fullscreenapp.md) Il *parametro lParam* indica se l'applicazione a schermo intero si sta aprendo o chiudendo. Se si apre, la barra dell'app deve essere in fondo all'ordine z. La barra delle app deve ripristinare la posizione nell'ordine z quando l'ultima applicazione a schermo intero è stata chiusa.
 
-Un AppBar riceve il messaggio di notifica [**\_ WINDOWARRANGE di ABN**](abn-windowarrange.md) quando l'utente seleziona il comando Cascade, affianca orizzontalmente o Affianca verticalmente dal menu di scelta rapida della barra delle applicazioni. Il sistema invia il messaggio due volte, prima di ridisporre le finestre (*lParam* è **true**) e dopo la disposizione di Windows (*lParam* è **false**).
+Una barra delle app riceve il messaggio di notifica [**ABN \_ WINDOWARRANGE**](abn-windowarrange.md) quando l'utente seleziona il comando Cascade, Tile Horizontally o Tile Vertically dal menu di scelta rapida della barra delle applicazioni. Il sistema invia il messaggio due volte, prima di riorganizzare le finestre (*lParam* è **TRUE**) e dopo aver organizzato le finestre (*lParam* è **FALSE**).
 
-Un AppBar può usare i messaggi [**\_ WINDOWARRANGE di ABN**](abn-windowarrange.md) per escludere se stesso dall'operazione Cascade o Tile. Per escludere se stesso, AppBar deve nascondersi quando *lParam* è **true** e mostrarsi quando *lParam* è **false**. Se un AppBar si nasconde in risposta a questo messaggio, non è necessario inviare i messaggi [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS**](abm-setpos.md) in risposta all'operazione Cascade o Tile.
+Una barra delle app può usare [**i messaggi ABN \_ WINDOWARRANGE**](abn-windowarrange.md) per escludersi dall'operazione a catena o riquadro. Per escludersi, la barra dell'app deve nascondersi quando *lParam* è **TRUE** e mostrarsi quando *lParam* è **FALSE.** Se una barra delle app si nasconde in risposta a questo messaggio, non è necessario inviare i messaggi [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS**](abm-setpos.md) in risposta all'operazione a catena o al riquadro.
 
-## <a name="registering-an-application-desktop-toolbar"></a>Registrazione di una barra degli strumenti del desktop dell'applicazione
+## <a name="registering-an-application-desktop-toolbar"></a>Registrazione di una barra degli strumenti desktop dell'applicazione
 
-Un'applicazione deve registrare un AppBar inviando il [**\_ nuovo messaggio ABM**](abm-new.md) . La registrazione di un AppBar lo aggiunge all'elenco interno del sistema e fornisce al sistema un identificatore di messaggio da usare per inviare messaggi di notifica al AppBar. Prima di uscire, un'applicazione deve annullare la registrazione del AppBar inviando il messaggio di [**\_ rimozione di ABM**](abm-remove.md) . L'annullamento della registrazione rimuove il AppBar dall'elenco interno del sistema e impedisce alla barra di ricevere messaggi di notifica AppBar.
+Un'applicazione deve registrare un'appbar inviando il [**messaggio ABM \_ NEW.**](abm-new.md) La registrazione di un'appbar la aggiunge all'elenco interno del sistema e fornisce al sistema un identificatore di messaggio da usare per inviare messaggi di notifica alla barra delle app. Prima di uscire, un'applicazione deve annullare la registrazione della barra delle app inviando il [**messaggio ABM \_ REMOVE.**](abm-remove.md) L'annullamento della registrazione rimuove la barra delle app dall'elenco interno del sistema e impedisce alla barra di ricevere messaggi di notifica della barra delle app.
 
-La funzione nell'esempio seguente registra o Annulla la registrazione di un AppBar, a seconda del valore di un parametro del flag booleano.
+La funzione nell'esempio seguente registra o annulla la registrazione di una barra dell'app, a seconda del valore di un parametro flag booleano.
 
 
 ```C++
@@ -140,13 +140,13 @@ BOOL RegisterAccessBar(HWND hwndAccessBar, BOOL fRegister)
 
 
 
-## <a name="setting-the-appbar-size-and-position"></a>Impostazione delle dimensioni e della posizione del AppBar
+## <a name="setting-the-appbar-size-and-position"></a>Impostazione delle dimensioni e della posizione di Appbar
 
-Un'applicazione deve impostare le dimensioni e la posizione di un AppBar dopo la registrazione del AppBar, dopo che l'utente ha spostato o ridimensionato il AppBar e ogni volta che il AppBar riceve il messaggio di notifica [**\_ POSCHANGED di ABN**](abn-poschanged.md) . Prima di impostare le dimensioni e la posizione del AppBar, l'applicazione esegue una query sul sistema per un rettangolo di delimitazione approvato inviando il messaggio di [**\_ QUERYPOS ABM**](abm-querypos.md) . Il sistema restituisce un rettangolo di delimitazione che non interferisce con la barra delle applicazioni o con altri AppBar. Il sistema regola il rettangolo esclusivamente in base alla sottrazione del rettangolo. non è possibile mantenere le dimensioni iniziali del rettangolo. Per questo motivo, il AppBar deve modificare il rettangolo, se necessario, dopo l'invio **di \_ QUERYPOS ABM**.
+Un'applicazione deve impostare le dimensioni e la posizione di una barra delle app dopo la registrazione della barra dell'app, dopo che l'utente ha spostato o ridimensionato la barra dell'app e ogni volta che la barra dell'app riceve il messaggio di notifica [**ABN \_ POSCHANGED.**](abn-poschanged.md) Prima di impostare le dimensioni e la posizione della barra dell'app, l'applicazione esegue una query sul sistema per cercare un rettangolo di delimitazione approvato inviando il [**messaggio \_ QUERYPOS ABM.**](abm-querypos.md) Il sistema restituisce un rettangolo di delimitazione che non interferisce con la barra delle applicazioni o con qualsiasi altra barra delle applicazioni. Il sistema regola il rettangolo esclusivamente in base alla sottrazione di rettangoli; non fa alcuno sforzo per mantenere le dimensioni iniziali del rettangolo. Per questo motivo, la barra dell'app deve regolare il rettangolo, se necessario, dopo l'invio **di \_ QUERYPOS ABM.**
 
-Successivamente, l'applicazione passa di nuovo il rettangolo di delimitazione al sistema tramite il [**messaggio \_ SETPOS di ABM**](abm-setpos.md) . Chiama quindi la funzione [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostare il AppBar in posizione.
+Successivamente, l'applicazione passa di nuovo il rettangolo di delimitazione al sistema usando il [**messaggio \_ SETPOS ABM.**](abm-setpos.md) Chiama quindi la funzione [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) per spostare la barra dell'app nella posizione .
 
-Nell'esempio seguente viene illustrato come impostare le dimensioni e la posizione di un AppBar.
+L'esempio seguente mostra come impostare le dimensioni e la posizione di una barra dell'app.
 
 
 ```C++
@@ -219,9 +219,9 @@ void PASCAL AppBarQuerySetPos(UINT uEdge, LPRECT lprc, PAPPBARDATA pabd)
 
 
 
-## <a name="processing-appbar-notification-messages"></a>Elaborazione dei messaggi di notifica AppBar
+## <a name="processing-appbar-notification-messages"></a>Elaborazione dei messaggi di notifica di Appbar
 
-Un AppBar riceve un messaggio di notifica quando viene modificato lo stato della barra delle applicazioni, quando viene avviata un'applicazione a schermo intero (o l'ultimo si chiude) o quando si verifica un evento che può influire sulle dimensioni e la posizione di AppBar. Nell'esempio seguente viene illustrato come elaborare i vari messaggi di notifica.
+Una barra delle app riceve un messaggio di notifica quando lo stato della barra delle applicazioni cambia, quando un'applicazione a schermo intero viene avviata (o l'ultima si chiude) o quando si verifica un evento che può influire sulle dimensioni e sulla posizione della barra delle applicazioni. Nell'esempio seguente viene illustrato come elaborare i vari messaggi di notifica.
 
 
 ```C++
@@ -288,7 +288,7 @@ void AppBarCallback(HWND hwndAccessBar, UINT uNotifyMsg,
 
 
 
-La funzione seguente regola il rettangolo di delimitazione di un AppBar e quindi chiama la funzione AppBarQuerySetPos definita dall'applicazione (inclusa nella sezione precedente) per impostare di conseguenza le dimensioni e la posizione della barra.
+La funzione seguente regola il rettangolo di delimitazione di una barra dell'app e quindi chiama la funzione AppBarQuerySetPos definita dall'applicazione (inclusa nella sezione precedente) per impostare le dimensioni e la posizione della barra di conseguenza.
 
 
 ```C++

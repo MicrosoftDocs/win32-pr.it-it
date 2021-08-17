@@ -1,7 +1,7 @@
 ---
-description: Connette l'oggetto scheda a un handle di smart card aperto e configurato.
+description: Associa l'oggetto ISCard a un handle di smart card aperto e configurato.
 ms.assetid: e735d33d-a337-404e-a760-4cf8f19d172a
-title: 'Metodo IsValid:: AttachByHandle (Scardmgr. h)'
+title: Metodo ISCard::AttachByHandle (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: e72ce215b373ef8bd48921f796083e9bc5e801be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cf8cf536baab0cef4cd76828ecdf0c594b1fcc7206a73a793c579b9871f242b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482271"
 ---
-# <a name="iscardattachbyhandle-method"></a>Metodo IsValid:: AttachByHandle
+# <a name="iscardattachbyhandle-method"></a>Metodo ISCard::AttachByHandle
 
-\[Il metodo **AttachByHandle** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo AttachByHandle** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **AttachByHandle** connette l'oggetto di [**scheda**](iscard.md) a un handle di [*Smart Card*](../secgloss/s-gly.md) aperto e configurato.
+Il **metodo AttachByHandle** collega l'oggetto [**ISCard**](iscard.md) a un handle di smart card aperto [*e*](../secgloss/s-gly.md) configurato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ HRESULT AttachByHandle(
 
 <dl> <dt>
 
-*hCard* \[ in\]
+*hCard* \[ Pollici\]
 </dt> <dd>
 
-Handle per una connessione aperta a una smart card.
+Handle a una connessione aperta a un smart card.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata correttamente.<br/>   |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *hCard* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata correttamente.<br/>   |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro hCard* non è valido.<br/> |
 
 
 
@@ -65,13 +65,13 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
-Al termine dell'utilizzo dell'handle, rilasciare l'allegato chiamando il metodo [**etach::D**](iscard-detach.md) .
+Al termine dell'uso dell'handle, rilasciare l'allegato chiamando il metodo [**ISCard::D etach.**](iscard-detach.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata la connessione a un handle di smart card.
+Nell'esempio seguente viene illustrata la connessione a un handle smart card comando.
 
 
 ```C++
@@ -96,14 +96,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID ISCard è definito come \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -114,13 +114,13 @@ if (FAILED(hr))
 [**AttachByReader**](iscard-attachbyreader.md)
 </dt> <dt>
 
-[**Scollegare**](iscard-detach.md)
+[**Detach**](iscard-detach.md)
 </dt> <dt>
 
-[**ottenere \_ CardHandle**](iscard-get-cardhandle.md)
+[**get \_ CardHandle**](iscard-get-cardhandle.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
 [**Ricollegare**](iscard-reattach.md)

@@ -1,7 +1,7 @@
 ---
 description: Il metodo UpdateColourTable aggiorna la tabella dei colori con una nuova tavolozza.
 ms.assetid: 61ad98c6-a526-4aac-ad68-d44fadc668de
-title: Metodo CDrawImage. UpdateColourTable (Winutil. h)
+title: Metodo CDrawImage.UpdateColourTable (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fcffdf9e7deaaac5a01f6559ee557c978fcda88f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a53413cd1aaf60c17031f126f0a158629f5c41f8ca94981d293f003afadda8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119384031"
 ---
-# <a name="cdrawimageupdatecolourtable-method"></a>CDrawImage. UpdateColourTable, metodo
+# <a name="cdrawimageupdatecolourtable-method"></a>Metodo CDrawImage.UpdateColourTable
 
 Il `UpdateColourTable` metodo aggiorna la tabella dei colori con una nuova tavolozza.
 
@@ -43,17 +43,17 @@ void UpdateColourTable(
 
 <dl> <dt>
 
-*HDC* 
+*Hdc* 
 </dt> <dd>
 
-Contesto di dispositivo che contiene l'immagine.
+Contesto di dispositivo contenente l'immagine.
 
 </dd> <dt>
 
 *pbmi* 
 </dt> <dd>
 
-Puntatore a una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) contenente la nuova tavolozza.
+Puntatore a una [**struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) contenente la nuova tavolozza.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

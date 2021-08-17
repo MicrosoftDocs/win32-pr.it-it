@@ -3,9 +3,9 @@ title: Metodo WebViewFolderContents.SelectItem (Shldisp.h)
 description: 'Metodo WebViewFolderContents.SelectItem: imposta lo stato di selezione di un elemento nella visualizzazione.'
 ms.assetid: c0e163ee-1951-476c-807a-781e26766d99
 keywords:
-- Metodo SelectItem Funzionalità legacy dell'ambiente Windows
-- Metodo SelectItem Funzionalità legacy dell'ambiente Windows, oggetto WebViewFolderContents
-- Oggetto WebViewFolderContents Funzionalità legacy dell'ambiente Windows, metodo SelectItem
+- Metodo SelectItem Funzionalità dell'Windows legacy
+- Metodo SelectItem Legacy Windows Environment Features , oggetto WebViewFolderContents
+- Oggetto WebViewFolderContents Legacy Windows Environment Features , metodo SelectItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66e2d05c010199f05826df7ed4591e8c7c1723e2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d144801e62962f4071b6c8e60147326908a9b4f7787e0d4ac549be9c51fa3c97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960621"
 ---
 # <a name="webviewfoldercontentsselectitem-method"></a>Metodo WebViewFolderContents.SelectItem
 
@@ -46,7 +46,7 @@ WebViewFolderContents.SelectItem(
 *vItem* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\* Variant**
+Tipo: **\* Variante**
 
 Oggetto [**FolderItem**](../shell/folderitem.md) per il quale verrà impostato lo stato di selezione.
 
@@ -112,7 +112,7 @@ Deselezionare tutti gli elementi, ad esempio l'elemento specificato.
 
 </dt> <dd>
 
-Verificare che l'elemento sia visualizzato nella visualizzazione.
+Assicurarsi che l'elemento sia visualizzato nella visualizzazione.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Verificare che l'elemento sia visualizzato nella visualizzazione.
 
 </dt> <dd>
 
-Assegnare all'elemento lo stato attivo.
+Assegnare lo stato attivo all'elemento.
 
 </dd> </dl> </dd> </dl>
 
@@ -133,7 +133,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript incorporato in HTML.
+L'esempio seguente illustra l'uso corretto di questo metodo per JScript incorporato in HTML.
 
 
 ```HTML
@@ -173,7 +173,7 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

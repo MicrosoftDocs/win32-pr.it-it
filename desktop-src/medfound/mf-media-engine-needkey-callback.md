@@ -1,17 +1,17 @@
 ---
 description: Attributo passato in IMFMediaEngineNeedKeyNotify al motore multimediale al momento della creazione.
 ms.assetid: B9625B3C-00AC-4F46-BD76-5C77822F5829
-title: Attributo MF_MEDIA_ENGINE_NEEDKEY_CALLBACK
+title: MF_MEDIA_ENGINE_NEEDKEY_CALLBACK attributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3de502bbe1d7f83dfd8ee7478e20786244f654e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3bec8dd3b802d9fc378d43648ad1d29dd30b6573881a044cc9f0d3aba2015cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956311"
 ---
-# <a name="mf_media_engine_needkey_callback-attribute"></a>\_Attributo di \_ \_ callback NEEDKEY del motore multimediale MF \_
+# <a name="mf_media_engine_needkey_callback-attribute"></a>Attributo DI \_ CALLBACK \_ \_ NEEDKEY del MOTORE \_ MULTIMEDIALE MF
 
 Attributo passato in [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) al motore multimediale al momento della creazione.
 
@@ -21,13 +21,13 @@ Attributo passato in [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfme
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: seunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un puntatore all'interfaccia [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) , implementata dall'applicazione.
+Il valore di questo attributo è un puntatore [**all'interfaccia IMFMediaEngineNeedKeyNotify,**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) implementata dall'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Il valore di questo attributo è un puntatore all'interfaccia [**IMFMediaEngineN
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Il valore di questo attributo è un puntatore all'interfaccia [**IMFMediaEngineN
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

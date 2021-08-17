@@ -1,10 +1,10 @@
 ---
-title: Attributo OMT-Guid
-description: Identificatore univoco per una voce di tabella link-Track-Object-Move.
+title: OMT-Guid attributo
+description: Identificatore univoco per una voce di tabella Link-Track-Object-Move.
 ms.assetid: c8266178-4d0d-46d6-8fd9-d0c11c11c036
 ms.tgt_platform: multiple
 keywords:
-- Schema AD OMT-Guid attribute
+- OMT-Guid schema AD dell'attributo
 - Schema AD dell'attributo oMTGuid
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379cdf49a6ee1a467a0e5120e841e4d2179447be
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e6aee5dd8a93611cf485286b4f833257a9e2525c96ed476ab55e7da32c645ccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442141"
 ---
-# <a name="omt-guid-attribute"></a>Attributo OMT-Guid
+# <a name="omt-guid-attribute"></a>OMT-Guid attributo
 
-Identificatore univoco per una voce di tabella link-Track-Object-Move.
+Identificatore univoco per una voce di tabella Link-Track-Object-Move.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | OMT-Guid                                              |
-| LDAP-Display-Name | oMTGuid                                               |
+| Ldap-Display-Name | oMTGuid                                               |
 | Dimensione              | 16 byte                                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
-| Frequenza di aggiornamento  | Ogni volta che viene modificato il collegamento per un file.                 |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Frequenza di aggiornamento  | Ogni volta che il collegamento per un file cambia.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.505                                |
-| System-ID-GUID    | ddac0cf3-af8f-11d0-afeb-00c04fd930c9                  |
+| System-Id-Guid    | ddac0cf3-af8f-11d0-afeb-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Identificatore univoco per una voce di tabella link-Track-Object-Move.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 

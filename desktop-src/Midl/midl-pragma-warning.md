@@ -1,9 +1,9 @@
 ---
-title: midl_pragma attributo di avviso
-description: Usare l' \_ opzione MIDL pragma warning per eseguire temporaneamente l'override del comportamento del messaggio di avviso di MIDL in fase di compilazione.
+title: midl_pragma di avviso
+description: Usare l'opzione pragma warning midl per eseguire temporaneamente l'override del comportamento dei messaggi di avviso \_ midl in fase di compilazione.
 ms.assetid: d32a3d3f-5c4d-4f93-a72a-2224ceed0012
 keywords:
-- attributo MIDL di avviso midl_pragma
+- midl_pragma'attributo di avviso MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b7e1e2c2a1d818216245e45a9129018a3ba2e1c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0ae8e902d1e58ff216f36ae8003dc8f3f553a32005136ef2a86201bd17279107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067091"
 ---
-# <a name="midl_pragma-warning-attribute"></a>\_attributo pragma warning di MIDL
+# <a name="midl_pragma-warning-attribute"></a>Attributo pragma warning midl \_
 
-Usare l'opzione **MIDL \_ pragma warning** per eseguire temporaneamente l'override del comportamento del messaggio di avviso di MIDL in fase di compilazione.
+Usare **l'opzione pragma \_ warning midl** per eseguire temporaneamente l'override del comportamento dei messaggi di avviso midl in fase di compilazione.
 
 ``` syntax
 midl_pragma warning ( warning_option : message_list )
@@ -31,14 +31,14 @@ midl_pragma warning ( warning_option : message_list )
 
 <dl> <dt>
 
-*\_opzione warning* 
+*opzione \_ warning* 
 </dt> <dd>
 
-L'opzione di avviso può essere una delle seguenti: Disabilita, Abilita, valore predefinito.
+L'opzione warning può essere una delle seguenti: disable, enable, default.
 
 </dd> <dt>
 
-*\_elenco messaggi* 
+*elenco \_ di messaggi* 
 </dt> <dd>
 
 Elenco di numeri di messaggio separati da spazi.
@@ -47,7 +47,7 @@ Elenco di numeri di messaggio separati da spazi.
 
 ## <a name="remarks"></a>Commenti
 
-Il pragma può essere usato come un pragma del compilatore C. Ovvero Disabilita, Abilita o restituisce il comportamento predefinito per un determinato avviso MIDL.
+Il pragma può essere usato come un pragma del compilatore C. Ciò significa che disabilita, abilita o torna al comportamento predefinito per un determinato avviso MIDL.
 
 ## <a name="examples"></a>Esempi
 
@@ -64,9 +64,9 @@ midl_pragma warning( disable: 2007 )   // file already imported midl_pragma warn
 [**pragma**](pragma.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione PdhVbGetOneCounterPath Visualizza una finestra di dialogo che consente all'utente di visualizzare i contatori delle prestazioni disponibili e di selezionare un contatore.
+description: La funzione PdhVbGetOneCounterPath visualizza una finestra di dialogo che consente all'utente di esplorare i contatori delle prestazioni disponibili e selezionare un contatore.
 ms.assetid: a42406ef-70e0-464d-90f8-fef9e1c3471d
-title: PdhVbGetOneCounterPath (funzione)
+title: Funzione PdhVbGetOneCounterPath
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 980665372d49f483e3fb59b7571ec38fa9c2851a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da6cc5b476373a55135d91d21163f15cb04379fff9d7c7c2cf1342451a5a201d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061159"
 ---
-# <a name="pdhvbgetonecounterpath-function"></a>PdhVbGetOneCounterPath (funzione)
+# <a name="pdhvbgetonecounterpath-function"></a>Funzione PdhVbGetOneCounterPath
 
-La funzione **PdhVbGetOneCounterPath** Visualizza una finestra di dialogo che consente all'utente di visualizzare i contatori delle prestazioni disponibili e di selezionare un contatore. Il contatore selezionato viene restituito nella variabile *PathString* . La variabile *PathString* deve essere dimensionata e inizializzata prima che questa funzione venga chiamata e la dimensione dimensione deve essere indicata dalla variabile *PathLength* .
+La **funzione PdhVbGetOneCounterPath** visualizza una finestra di dialogo che consente all'utente di esplorare i contatori delle prestazioni disponibili e selezionare un contatore. Il contatore selezionato viene restituito nella *variabile PathString.* La *variabile PathString* deve essere dimensionata e inizializzata prima che venga chiamata questa funzione e le dimensioni ridimensionate devono essere indicate dalla *variabile PathLength.*
 
 > [!IMPORTANT]
-> La funzione descritta in questo argomento può essere modificata o non disponibile in futuro. Microsoft consiglia invece di utilizzare le funzioni descritte in [funzioni dei contatori delle prestazioni](performance-counters-functions.md).
+> La funzione descritta in questo argomento potrebbe essere modificata o non disponibile in futuro. Microsoft consiglia invece di usare le funzioni descritte in [Funzioni dei contatori delle prestazioni](performance-counters-functions.md).
 
-Funzione PdhVbGetOneCounterPath ( \_ ByVal PathString As String, \_ ByVal PathLength As Long, \_ ByVal DetailLevel Long, \_ ByVal CaptionString As String \_ ) Long
+Funzione PdhVbGetOneCounterPath( \_ ByVal PathString as String, \_ ByVal PathLength As Long, \_ ByVal DetailLevel As Long, \_ ByVal CaptionString as String \_ ) As Long
 
 ## <a name="parameters"></a>Parametri
 
@@ -36,14 +36,14 @@ Funzione PdhVbGetOneCounterPath ( \_ ByVal PathString As String, \_ ByVal PathLe
 *PathString* 
 </dt> <dd>
 
-Variabile di stringa inizializzata utilizzata per ricevere il percorso del contatore selezionato dall'utente.
+Variabile stringa inizializzata utilizzata per ricevere il percorso del contatore selezionato dall'utente.
 
 </dd> <dt>
 
 *PathLength* 
 </dt> <dd>
 
-Lunghezza del PathString inizializzato.
+Lunghezza dell'oggetto PathString inizializzato.
 
 </dd> <dt>
 
@@ -56,10 +56,10 @@ Tipi di contatori da visualizzare nella finestra di dialogo. Questo parametro pu
 
 | Valore                                                                                                                                                                               | Significato                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**\_dettaglio prestazioni \_ avanzato**</dt> </dl> | Contatori che l'utente avanzato è in grado di comprendere, oltre ai contatori degli utenti meno esperti.<br/>                                            |
-| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**\_esperto Dettagli \_ prestazioni**</dt> </dl>       | Contatori che l'utente esperto e lo sviluppatore di software possono conoscere, oltre ai contatori per gli utenti principianti e avanzati.<br/> |
-| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**dettaglio prestazioni- \_ \_ novizio**</dt> </dl>       | Solo i contatori che è probabile che l'utente del novizio possa comprendere.<br/>                                                                                  |
-| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**\_ \_ procedura guidata Dettagli prestazioni**</dt> </dl>       | Tutti i contatori nel sistema.<br/>                                                                                                                  |
+| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**PERF \_ DETAIL \_ ADVANCED**</dt> </dl> | Contatori che è probabile che l'utente avanzato comprendi, oltre ai contatori per utenti principianti.<br/>                                            |
+| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**ESPERTO DEI DETTAGLI DI PERF \_ \_**</dt> </dl>       | Contatori che l'utente esperto e lo sviluppatore di software probabilmente comprenderanno, oltre ai contatori per gli utenti principianti e avanzati.<br/> |
+| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**NOVIZIO DETTAGLI \_ \_ PERF**</dt> </dl>       | Solo i contatori che l'utente alle prime informazioni è probabilmente in grado di comprendere.<br/>                                                                                  |
+| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**PROCEDURA GUIDATA DETTAGLI \_ PERF \_**</dt> </dl>       | Tutti i contatori nel sistema.<br/>                                                                                                                  |
 
 
 
@@ -70,13 +70,13 @@ Tipi di contatori da visualizzare nella finestra di dialogo. Questo parametro pu
 *CaptionString* 
 </dt> <dd>
 
-Variabile di stringa che contiene il testo che verrà visualizzato nella barra del titolo della finestra di dialogo.
+Variabile stringa che contiene il testo che verrà visualizzato nella barra della didascalia della finestra di dialogo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce il numero di caratteri scritti nel buffer *PathString* .
+La funzione restituisce il numero di caratteri scritti nel buffer *PathString.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,9 +84,9 @@ La funzione restituisce il numero di caratteri scritti nel buffer *PathString* .
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Libreria<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Libreria<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Proprietà DropDownGallery. MenuGroups
-description: Rappresenta un contenitore per un set di voci di menu a discesa in un controllo raccolta Drop-Down.
+title: Proprietà DropDownGallery.MenuGroups
+description: Rappresenta un contenitore per un set di voci di menu a discesa in un controllo Drop-Down Gallery.
 ms.assetid: 594f6ae5-760e-456d-98cd-04ecae0bae99
 keywords:
-- Barra multifunzione di Windows DropDownGallery. MenuGroups
+- Proprietà DropDownGallery.MenuGroups Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67fcaeb81020cf4c317bf065c25a770d2a77e21f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffdc52877884ac3a6407a0c7ed9f511cf78f8bcb5c125beb5f2ed19e651b83da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119393051"
 ---
-# <a name="dropdowngallerymenugroups-property"></a>Proprietà DropDownGallery. MenuGroups
+# <a name="dropdowngallerymenugroups-property"></a>Proprietà DropDownGallery.MenuGroups
 
-Rappresenta un contenitore per un set di voci di menu a discesa in un controllo [raccolta a discesa](windowsribbon-controls-dropdowngallery.md) .
+Rappresenta un contenitore per un set di voci di menu a discesa in [un controllo Raccolta a](windowsribbon-controls-dropdowngallery.md) discesa.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                         | Descrizione                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -59,13 +59,13 @@ Non ci sono attributi.
 
 Obbligatorio.
 
-Deve essere eseguita esattamente una volta per ogni elemento [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Deve verificarsi esattamente una volta per [**ogni elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per l'elemento **DropDownGallery. MenuGroups** .
+Nell'esempio seguente viene illustrato il markup di base per **l'elemento DropDownGallery.MenuGroups.**
 
-Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery. MenuGroups** in uno spazio dei comandi della [raccolta a discesa](windowsribbon-controls-dropdowngallery.md) .
+Questa sezione di codice mostra la dichiarazione del controllo **DropDownGallery.MenuGroups** in uno spazio [dei comandi della raccolta](windowsribbon-controls-dropdowngallery.md) a discesa.
 
 
 ```XML
@@ -102,8 +102,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -111,7 +111,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery.
 
 <dl> <dt>
 
-[**Controllo raccolta a discesa**](windowsribbon-element-dropdowngallery.md)
+[**Controllo Raccolta a discesa**](windowsribbon-element-dropdowngallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

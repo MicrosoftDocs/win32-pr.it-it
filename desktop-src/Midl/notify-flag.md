@@ -1,9 +1,9 @@
 ---
-title: attributo notify_flag
-description: L'attributo \ Notify \_ flag \ fornisce una notifica che identifica se viene chiamata una routine del server.
+title: notify_flag attributo
+description: L'attributo \ notify \_ flag\ fornisce una notifica che identifica se viene chiamata una routine del server.
 ms.assetid: a40b7114-d2e3-40c1-a0b1-599428188611
 keywords:
-- attributo notify_flag MIDL
+- notify_flag attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af61999f0527b599cf358c38288a8c67473445a9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e9fb7479667fb9757924dcba765c34138cf01c1ad6645ce7bfdc525be393e77f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066873"
 ---
-# <a name="notify_flag-attribute"></a>notifica \_ flag-attributo
+# <a name="notify_flag-attribute"></a>Attributo \_ del flag notify
 
-L'attributo **\[ Notify \_ flag \]** fornisce una notifica che identifica se viene chiamata una routine del server.
+**\[ L'attributo del \_ flag \]** di notifica fornisce una notifica che identifica se viene chiamata una routine del server.
 
 ``` syntax
 [notify_flag] procedure-name();
@@ -31,30 +31,30 @@ L'attributo **\[ Notify \_ flag \]** fornisce una notifica che identifica se vie
 
 <dl> <dt>
 
-*nome procedura* 
+*procedure-name* 
 </dt> <dd>
 
-Nome della procedura remota a cui \_ è associata la procedura relativa al flag di notifica.
+Nome della procedura remota a cui è associata la \_ procedura del flag di notifica.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ Notify \_ flag \]** è simile nell'utilizzo dell'attributo **\[ Notify \]** .
+**\[ L'attributo del \_ flag \]** di notifica è simile nell'utilizzo all'attributo **\[ \] notify.**
 
-Il nome della procedura del **\[ \_ flag \] di notifica** è il nome della procedura remota con suffisso per **\_ notifica \_ flag**. La procedura di **\_ notifica del \_ flag** non richiede alcun parametro e non restituisce alcun risultato. Nel file di intestazione viene anche generato un prototipo di questa procedura. Ad esempio, se il file IDL contiene quanto segue:
+Il **\[ nome della stored \_ procedure \]** del flag di notifica è il nome della procedura remota suffissa dal **\_ flag di \_ notifica**. La **\_ procedura del \_ flag** di notifica non richiede parametri e non restituisce un risultato. Nel file di intestazione viene generato anche un prototipo di questa procedura. Ad esempio, se il file IDL contiene quanto segue:
 
 ``` syntax
 MyProcedure([in] short S);
 ```
 
-Specificare quanto segue in ACF per MIDL per generare la chiamata al **\_ \_ flag di notifica** :
+Specificare quanto segue in ACF per MIDL per generare la **\_ chiamata del \_ flag di** notifica:
 
 ``` syntax
 [notify_flag] MyProcedure();
 ```
 
-Il compilatore MIDL genererà il codice stub del server che contiene la chiamata seguente alla procedura relativa al **\_ \_ flag di notifica** :
+Il compilatore MIDL genererà codice stub del server che contiene la chiamata seguente alla **\_ procedura del \_ flag di** notifica:
 
 ``` syntax
 MyProcedure_notify_flag();
@@ -66,7 +66,7 @@ Il file di intestazione conterrà un prototipo:
 void MyProcedure_notify_flag(boolean __MIDL_NotifyFlag);
 ```
 
-**\_ MIDL \_ PARETE NOTIFYFLAG** è **true** se viene chiamata la routine del server.
+**\_ MIDL \_ NotifyFlag** è **TRUE se** viene chiamata la routine del server.
 
 ## <a name="examples"></a>Esempi
 
@@ -78,12 +78,12 @@ void MyProcedure_notify_flag(boolean __MIDL_NotifyFlag);
 
 <dl> <dt>
 
-[**comunica**](notify.md)
+[**Notificare**](notify.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

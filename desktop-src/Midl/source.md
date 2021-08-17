@@ -1,6 +1,6 @@
 ---
 title: source (attributo)
-description: L'attributo \ source \ indica che un membro di una coclasse, di una proprietà o di un metodo è un'origine di eventi. Per un membro di una coclasse, questo attributo indica che il membro viene chiamato anziché implementato.
+description: L'attributo \ source\ indica che un membro di una coclasse, una proprietà o un metodo è un'origine di eventi. Per un membro di una coclasse, questo attributo indica che il membro viene chiamato anziché implementato.
 ms.assetid: fbd5411a-e614-4643-810a-f3765e7ec16d
 keywords:
 - attributo di origine MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 621e97fd20b6b96d275044dc7cbe701faee29712
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 08f7039505846d7a35bbd0e077456905c0d29ad13be398fe673ca5c1f8da25e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066681"
 ---
 # <a name="source-attribute"></a>source (attributo)
 
-L'attributo di **\[ origine \]** indica che un membro di una [**coclasse**](coclass.md), di una proprietà o di un metodo è un'origine di eventi. Per un membro di una **coclasse**, questo attributo indica che il membro viene chiamato anziché implementato.
+**\[ \] L'attributo** di origine indica che un membro di [**una coclasse,**](coclass.md)una proprietà o un metodo è un'origine di eventi. Per un membro di una **coclasse**, questo attributo indica che il membro viene chiamato anziché implementato.
 
 ``` syntax
 [
@@ -40,21 +40,21 @@ coclass coclass-name
 
 <dl> <dt>
 
-*coclass-attributi* 
+*attributi di coclasse* 
 </dt> <dd>
 
 Zero o più attributi che verranno applicati alla [**coclasse**](coclass.md).
 
 </dd> <dt>
 
-*coclass-nome* 
+*coclass-name* 
 </dt> <dd>
 
 Identificatore del nome della [**coclasse**](coclass.md).
 
 </dd> <dt>
 
-*facoltativo-attributi* 
+*attributi facoltativi* 
 </dt> <dd>
 
 Zero o più attributi MIDL.
@@ -64,45 +64,45 @@ Zero o più attributi MIDL.
 *tipo di istruzione* 
 </dt> <dd>
 
-Può essere [**Interface**](interface.md) o [**Dispatch**](dispinterface.md).
+Può essere [**un'interfaccia**](interface.md) [**o un'interfaccia dispatch.**](dispinterface.md)
 
 </dd> <dt>
 
-*nome istruzione* 
+*statement-name* 
 </dt> <dd>
 
-Nome dell' [**interfaccia**](interface.md) o dell'interfaccia [**Dispatch**](dispinterface.md).
+Nome [**dell'interfaccia o**](interface.md) [**dell'interfaccia dispatch.**](dispinterface.md)
 
 </dd> <dt>
 
-*tipo oggetto* 
+*object-type* 
 </dt> <dd>
 
 Tipo dell'oggetto restituito dal metodo. Questo oggetto è un'origine di eventi.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
-Nome di un metodo in un'interfaccia o in un' [**interfaccia**](interface.md) [**Dispatch**](dispinterface.md).
+Nome di un metodo in [**un'interfaccia o**](interface.md) [**interfaccia dispatch.**](dispinterface.md)
 
 </dd> <dt>
 
-*facoltativo-parameter-list* 
+*optional-parameter-list* 
 </dt> <dd>
 
-Zero o più parametri del metodo.
+Zero o più parametri di metodo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-In una proprietà o un metodo l'attributo di **\[ origine \]** indica che il membro restituisce un oggetto o una variante che è un'origine di eventi. L'oggetto implementa **IConnectionPointContainer**.
+In una proprietà o in un metodo, **\[ \] l'attributo** di origine indica che il membro restituisce un oggetto o VARIANT che è un'origine di eventi. L'oggetto implementa **IConnectionPointContainer.**
 
 ### <a name="flags"></a>Flags
 
-IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ source, FUNCFLAG \_ source
+IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ SOURCE, FUNCFLAG \_ SOURCE
 
 ## <a name="examples"></a>Esempi
 
@@ -124,18 +124,18 @@ IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ source, FUNCFLAG \_ source
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaccia**](interface.md)
+[**Interfaccia**](interface.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

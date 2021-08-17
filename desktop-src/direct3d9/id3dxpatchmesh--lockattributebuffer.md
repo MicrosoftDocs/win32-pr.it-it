@@ -1,7 +1,7 @@
 ---
 description: Blocca il buffer dell'attributo.
 ms.assetid: 6e05e613-ca93-41b0-a3b3-a9564ada3b0c
-title: 'Metodo ID3DXPatchMesh:: LockAttributeBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::LockAttributeBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71e50fdc27f3f50b560324c74f5a1609f900772d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b3c550037e156ea5584b65af6d6adb1cb666614de257c590a8d4944283ebdfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120765"
 ---
-# <a name="id3dxpatchmeshlockattributebuffer-method"></a>Metodo ID3DXPatchMesh:: LockAttributeBuffer
+# <a name="id3dxpatchmeshlockattributebuffer-method"></a>Metodo ID3DXPatchMesh::LockAttributeBuffer
 
 Blocca il buffer dell'attributo.
 
@@ -41,17 +41,17 @@ HRESULT LockAttributeBuffer(
 
 <dl> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Combinazione di zero o più flag di blocco che descrivono il tipo di blocco da eseguire. Per questo metodo, i flag validi sono:
 
--   Eliminazione di D3DLOCK \_
--   D3DLOCK \_ nessun \_ \_ aggiornamento Dirty
--   \_NOSYSLOCK D3DLOCK
--   D3DLOCK \_ ReadOnly
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
+-   D3DLOCK \_ NOSYSLOCK
+-   D3DLOCK \_ READONLY
 
 Per una descrizione dei flag, vedere [D3DLOCK](d3dlock.md).
 
@@ -62,7 +62,7 @@ Per una descrizione dei flag, vedere [D3DLOCK](d3dlock.md).
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\*\***
 
-Indirizzo di un puntatore a un buffer contenente un valore DWORD per ogni viso della mesh.
+Indirizzo di un puntatore a un buffer contenente un valore DWORD per ogni viso nella mesh.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Indirizzo di un puntatore a un buffer contenente un valore DWORD per ogni viso d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -82,8 +82,8 @@ Il buffer dell'attributo viene in genere bloccato, scritto e quindi sbloccato pe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

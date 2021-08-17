@@ -1,21 +1,21 @@
 ---
-description: Negli argomenti di questa sezione vengono descritti brevemente i programmi di esempio per la ricerca che accompagnano Microsoft Windows Software Development Kit (SDK) per Windows 7.
+description: Negli argomenti di questa sezione vengono brevemente descritti i programmi di esempio per la ricerca che accompagnano Microsoft Windows Software Development Kit (SDK) per Windows 7.
 ms.assetid: 9cd35360-dee5-433e-9576-dbe39bd34cbb
-title: Esempi di codice di Windows Search
+title: Windows Esempi di codice di ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bd67fd8bcb5599be1aa29c1c3ac574a1deb8438
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d70c87999273671ebe4b6f0ac8c00bd0d4b43978705908f132e504c143831b08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094903"
 ---
-# <a name="windows-search-code-samples"></a>Esempi di codice di Windows Search
+# <a name="windows-search-code-samples"></a>Windows Esempi di codice di ricerca
 
-Negli argomenti di questa sezione vengono descritti brevemente i programmi di esempio per la ricerca che ha accompagnato Microsoft Windows Software Development Kit (SDK) per Windows 7. Questi esempi possono essere eseguiti anche in Windows 10, usando Windows 10 SDK.
+Gli argomenti di questa sezione descrivono brevemente i programmi di esempio per la ricerca che accompagnano Microsoft Windows Software Development Kit (SDK) per Windows 7. Questi esempi possono essere eseguiti anche in Windows 10, usando Windows 10 SDK.
 
-Negli argomenti seguenti vengono descritti gli esempi di API di ricerca forniti.
+Gli argomenti seguenti descrivono gli esempi dell'API di ricerca forniti.
 
 - [CrawlScopeCommandLine](-search-sample-crawlscopecommandline.md)
 - [DSearch](-search-sample-dsearch.md)
@@ -23,7 +23,7 @@ Negli argomenti seguenti vengono descritti gli esempi di API di ricerca forniti.
 - [OpenSearch](-search-sample-opensearch.md)
 - [PropertyEdit](-search-sample-propertyedit.md)
 - [ReindexMatchingUrls](-search-sample-reindexmatchingurls.md)
-- [SearchEvents](-search-sample-searchevents.md)
+- [Eventi di ricerca](-search-sample-searchevents.md)
 - [StructuredQuerySample](-search-sample-structuredquerysample.md)
 - [WSFromScript](-search-sample-wsfromscript.md)
 - [WSOleDB](-search-sample-wsoledb.md)
@@ -34,11 +34,11 @@ Negli argomenti seguenti vengono descritti gli esempi di API di ricerca forniti.
 
 [Panoramica di Windows Search](-search-3x-wds-overview.md)
 
-[Guida per gli sviluppatori di Windows Search](-search-developers-guide-entry-page.md)
+[Windows Guida per gli sviluppatori di ricerca](-search-developers-guide-entry-page.md)
 
-[Informazioni di riferimento su Windows Search](-search-reference-entry-page.md)
+[Windows Informazioni di riferimento sulla ricerca](-search-reference-entry-page.md)
 
-[Esempi di codice di Windows Search](-search-samples-ovw.md)
+[Windows Esempi di codice di ricerca](-search-samples-ovw.md)
 
 [Ricerca federata in Windows](-search-federated-search-overview.md)
 

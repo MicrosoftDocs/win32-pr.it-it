@@ -1,17 +1,17 @@
 ---
-description: System.Document. Conteggio caratteri
+description: System.Document. CharacterCount
 ms.assetid: bfe0d23d-18fa-4438-96af-da5d44a76b34
-title: System.Document. Conteggio caratteri
+title: System.Document. CharacterCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53312b9c008ea3c6b7b125e3b5d3a8ad8cb9bfd4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8ee4bb5713d1646362b0407026d7edccde0ef7c1684508795efaac957c2e7d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119352961"
 ---
-# <a name="systemdocumentcharactercount"></a>System.Document. Conteggio caratteri
+# <a name="systemdocumentcharactercount"></a>System.Document. CharacterCount
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

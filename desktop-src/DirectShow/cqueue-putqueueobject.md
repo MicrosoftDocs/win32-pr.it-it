@@ -1,7 +1,7 @@
 ---
 description: Inserisce un elemento nella coda.
 ms.assetid: 8ac41d80-e7d5-4b3f-9f09-c3d39c94c490
-title: Metodo CQueue. PutQueueObject (Wxutil. h)
+title: Metodo CQueue.PutQueueObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5371c843bb348f50539535a3df9a0f6aed00893e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e6e3539b12f81421e90de1f8311210aa2acb77173be2991bd6f15a1c84d39ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539011"
 ---
-# <a name="cqueueputqueueobject-method"></a>CQueue. PutQueueObject, metodo
+# <a name="cqueueputqueueobject-method"></a>Metodo CQueue.PutQueueObject
 
 Inserisce un elemento nella coda.
 
@@ -63,8 +63,8 @@ Questo metodo si blocca fino a quando non è presente spazio nella coda per l'el
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

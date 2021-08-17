@@ -1,5 +1,5 @@
 ---
-title: Funzione InterlockedCompareStore (riferimento HLSL)
+title: Funzione InterlockedCompareStore (informazioni di riferimento su HLSL)
 description: Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input.
 ms.assetid: eaf7e669-5240-40c9-9840-f4e7916e51b4
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df3ffb51bbe8fe8150d19a390e62640e64ded5c9
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: 7dbf13629b9c3b9b38cc3bd72a8a992ab40bd09c0333c155a7c109f71466f23b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104398469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119245"
 ---
-# <a name="interlockedcomparestore-function-hlsl-reference"></a>Funzione InterlockedCompareStore (riferimento HLSL)
+# <a name="interlockedcomparestore-function-hlsl-reference"></a>Funzione InterlockedCompareStore (informazioni di riferimento su HLSL)
 
 Confronta in modo atomico la destinazione con il valore di confronto. Se sono identici, la destinazione viene sovrascritta con il valore di input.
 
@@ -28,9 +28,9 @@ Confronta in modo atomico la destinazione con il valore di confronto. Se sono id
 
 ``` syntax
 void InterlockedCompareStore(
-  in R dest,
-  in T compare_value,
-  in T value
+  in R dest,
+  in T compare_value,
+  in T value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedCompareStore(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ Indirizzo di destinazione.
 
 </dd> <dt>
 
-*Confronta \_ valore* \[ in\]
+*confrontare \_ il valore* \[ in\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ Valore di confronto.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,9 +71,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Confronta in modo atomico il valore a cui fa riferimento *dest* con *\_ valore di confronto* e archivia il *valore* nella posizione a cui fa riferimento *dest* se i valori corrispondono. Questa operazione può essere eseguita solo su risorse tipizzate **int** o **uint** e variabili di memoria condivisa. Esistono due possibili usi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul Registro di memoria condiviso a cui fa riferimento *dest*. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento *dest*.
+Confronta atomicamente il valore a cui fa riferimento *dest* con il valore *compare \_* e archivia *il* valore nella posizione a cui fa riferimento *dest* se i valori corrispondono. Questa operazione può essere eseguita solo su **risorse tipiche int** o **uint** e variabili di memoria condivisa. Questa funzione può essere utilizzata in due modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento *dest*. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento *dest*.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -81,23 +81,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |  x     | x    |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -106,12 +106,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

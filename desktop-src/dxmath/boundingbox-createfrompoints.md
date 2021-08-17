@@ -1,7 +1,7 @@
 ---
-description: Crea un BoundingBox da punti.
+description: Crea un oggetto BoundingBox dai punti.
 ms.assetid: 3963b11a-2ade-4174-a5ff-fa57eb4d2f50
-title: Metodi BoundingBox. CreateFromPoints
+title: Metodi boundingBox.CreateFromPoints
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c86b04b56c61d394df856b9eb5a96a5946b2e3be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6627cea6876cbec7c5ec4a3f37453d5d7e2025672cd1c738cdf3730505d24a40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118598"
 ---
-# <a name="boundingboxcreatefrompoints-methods"></a>Metodi BoundingBox. CreateFromPoints
+# <a name="boundingboxcreatefrompoints-methods"></a>Metodi boundingBox.CreateFromPoints
 
-Crea un BoundingBox da punti.
+Crea un oggetto BoundingBox dai punti.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -28,8 +28,8 @@ Crea un BoundingBox da punti.
 
 | Metodo                                                                                                                  | Descrizione                                             |
 |:------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
-| [**BoundingBox:: CreateFromPoints (BoundingBox&, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints)                | Crea un BoundingBox da due punti.<br/>       |
-| [**BoundingBox:: CreateFromPoints (BoundingBox&, Size \_ t, const XMFLOAT3 \* , Size \_ t)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints(boundingbox__size_t_constxmfloat3_size_t)) | Crea un oggetto BoundingBox da un elenco di punti.<br/> |
+| [**BoundingBox::CreateFromPoints (BoundingBox&,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints)                | Crea un oggetto BoundingBox da due punti.<br/>       |
+| [**BoundingBox::CreateFromPoints (BoundingBox&,size \_ t,const XMFLOAT3,size \* \_ t)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints(boundingbox__size_t_constxmfloat3_size_t)) | Crea un oggetto BoundingBox da un elenco di punti.<br/> |
 
 
 
@@ -43,7 +43,7 @@ Crea un BoundingBox da punti.
 **Riferimento**
 </dt> <dt>
 
-[**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  

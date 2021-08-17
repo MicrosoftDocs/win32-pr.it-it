@@ -1,11 +1,11 @@
 ---
-title: Proprietà RegistrationInfo. Version
+title: RegistrationInfo.Version - proprietà
 description: Per lo scripting, ottiene o imposta il numero di versione dell'attività.
 ms.assetid: 5f200948-b4ff-495c-9578-2a93b34fd75b
 keywords:
-- Utilità di pianificazione della proprietà Version
-- Utilità di pianificazione proprietà versione, oggetto RegistrationInfo
-- Oggetto RegistrationInfo Utilità di pianificazione, proprietà Version
+- Proprietà Version Utilità di pianificazione
+- Proprietà Version Utilità di pianificazione , oggetto RegistrationInfo
+- Oggetto RegistrationInfo Utilità di pianificazione proprietà , Version
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c312878383c5361317a765cbf84a503244c188a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b08ef170004b7c9791f18cf65360c2446d5c87a6b835fb6fbcb048f47892c470
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059989"
 ---
-# <a name="registrationinfoversion-property"></a>Proprietà RegistrationInfo. Version
+# <a name="registrationinfoversion-property"></a>RegistrationInfo.Version - proprietà
 
 Per lo scripting, ottiene o imposta il numero di versione dell'attività.
 
@@ -42,7 +42,7 @@ Numero di versione dell'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, il numero di versione dell'attività viene specificato utilizzando l'elemento [**Version**](taskschedulerschema-version-registrationinfotype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, il numero di versione dell'attività viene specificato usando l'elemento [**Version**](taskschedulerschema-version-registrationinfotype-element.md) dello schema Utilità di pianificazione attività.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, il numero di v
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

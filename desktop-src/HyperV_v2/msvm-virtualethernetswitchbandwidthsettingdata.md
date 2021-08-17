@@ -1,7 +1,7 @@
 ---
-description: Rappresenta le impostazioni della larghezza di banda per un commutire virtuale.
+description: Rappresenta le impostazioni della larghezza di banda per un commutatore virtuale.
 ms.assetid: bc6f8cd3-f74a-4f4a-9ffe-a88def3966d9
-title: Classe Msvm_VirtualEthernetSwitchBandwidthSettingData
+title: Msvm_VirtualEthernetSwitchBandwidthSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec94409366761ee208d3e8a6af59a4d07527d82f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b176cb09efdcb701cdf9cd2c4c85bda54c4ebb03712568b5e1c8240d41277c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148164"
 ---
-# <a name="msvm_virtualethernetswitchbandwidthsettingdata-class"></a>\_Classe MSVM VirtualEthernetSwitchBandwidthSettingData
+# <a name="msvm_virtualethernetswitchbandwidthsettingdata-class"></a>Classe Msvm \_ VirtualEthernetSwitchBandwidthSettingData
 
-Rappresenta le impostazioni della larghezza di banda per un commutire virtuale.
+Rappresenta le impostazioni della larghezza di banda per un commutatore virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,100 +49,100 @@ class Msvm_VirtualEthernetSwitchBandwidthSettingData : Msvm_EthernetSwitchFeatur
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualEthernetSwitchBandwidthSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualEthernetSwitchBandwidthSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualEthernetSwitchBandwidthSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualEthernetSwitchBandwidthSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata dalla classe [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) ed è sempre impostata su "Ethernet Switch Bandwidth Settings".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata dalla [**classe \_ CIM ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) ed è sempre impostata su "Ethernet Switch Bandwidth Impostazioni".
 
 </dd> <dt>
 
 **DefaultFlowReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **UINT64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Specifica la prenotazione di larghezza di banda assoluta per i flussi non classificati nell'adapter sottostante.
+Specifica la prenotazione della larghezza di banda assoluta per i flussi non classificati nella scheda sottostante.
 
 </dd> <dt>
 
 **DefaultFlowWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **UINT64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Specifica la prenotazione di larghezza di banda in peso per i flussi non classificati nell'adapter sottostante.
+Specifica la prenotazione della larghezza di banda in peso per i flussi non classificati nella scheda sottostante.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "rappresenta le impostazioni della larghezza di banda del Commuter".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta le impostazioni della larghezza di banda del commutatore".
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))ed è sempre impostata su "Ethernet Switch Bandwidth Settings".
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))ed è sempre impostata su "Ethernet Switch Bandwidth Impostazioni".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) ed è sempre impostata su "Microsoft: Definition \\ *GUID* \\ default".
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) ed è sempre impostata su "Microsoft:Definition \\ *GUID* \\ Default".
 
 </dd> </dl>
 
@@ -152,10 +152,10 @@ Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -7,13 +7,13 @@
       href: direct3d-9ex-improvements.md
     - name: Condivisione della superficie tra le API di grafica Windows
       href: surface-sharing-between-windows-graphics-apis.md
-    - name: Guida di Windows Advanced Rasterizzation Platform (WARP)
+    - name: Windows Guida di Advanced Rasterization Platform (WARP)
       href: directx-warp.md
     - name: API grafiche in Windows
       href: graphics-apis-in-windows-vista.md
-    - name: Distribuzione di Direct3D 11 per sviluppatori di giochi
+    - name: Distribuzione direct3D 11 per sviluppatori di giochi
       href: direct3d11-deployment.md
-    - name: 'Infrastruttura grafica DirectX (DXGI): procedure consigliate'
+    - name: 'DirectX Graphic Infrastructure (DXGI): Procedure consigliate'
       href: dxgi-best-practices.md
-    - name: Visualizzazioni con intervallo dinamico elevato e colore avanzato
+    - name: Display a intervalli dinamici elevati e colori avanzati
       href: high-dynamic-range.md

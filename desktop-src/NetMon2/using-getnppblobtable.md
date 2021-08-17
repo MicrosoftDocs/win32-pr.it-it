@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene illustrato come utilizzare la funzione GetNPPBlobTable per recuperare una tabella BLOB NPP che rappresenta le schede di interfaccia di rete registrate nel computer locale.
+description: L'esempio seguente illustra come usare la funzione GetNPPBlobTable per recuperare una tabella BLOB NPP che rappresenta le schede di interfaccia di rete registrate nel computer locale.
 ms.assetid: 7267f658-103d-4290-8ebf-b78866bd1fe8
 title: Uso di GetNPPBlobTable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8432f0f3c2cb23056eee4a94b75da5de85cd6c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d5b31031ad18930c44bffe1efd980834f6c854b144f718891b66bd7df31b3f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962791"
 ---
 # <a name="using-getnppblobtable"></a>Uso di GetNPPBlobTable
 
-Nell'esempio seguente viene illustrato come utilizzare la funzione [**GetNPPBlobTable**](getnppblobtable.md) per recuperare una tabella BLOB NPP che rappresenta le schede di interfaccia di rete registrate nel computer locale.
+L'esempio seguente illustra come usare la [**funzione GetNPPBlobTable**](getnppblobtable.md) per recuperare una tabella BLOB NPP che rappresenta le schede di interfaccia di rete registrate nel computer locale.
 
 
 ```C++

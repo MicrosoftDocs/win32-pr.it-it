@@ -5,7 +5,7 @@ ms.assetid: 805754AA-B62A-4324-B289-503C42BEFA49
 ms.tgt_platform: multiple
 keywords:
 - Creare il metodo Servizi Desktop remoto
-- Creare il metodo Servizi Desktop remoto , Win32_Service classe
+- Creare il Servizi Desktop remoto , Win32_Service classe
 - Win32_Service classe Servizi Desktop remoto metodo , Create
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14b776d3e451d84c63be5bb61b98ed22081e1a29
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 911ecec0c0ad2cc248bcfdfa2b4e475538d6eff35e8d7bd568df29302b610ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137884"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo Create della classe Win32_Service (Servizi Desktop remoto)
 
@@ -177,7 +177,7 @@ Il sistema tenta di iniziare con una configurazione valida.
 *StartMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
@@ -256,13 +256,13 @@ Matrice di gruppi di ordinamento del carico che devono essere avviati prima di q
 *Dipendenze dei servizi* \[ Pollici\]
 </dt> <dd>
 
-Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento nella matrice è delimitato da **NULL** e l'elenco termina con due **valori NULL.** In Visual Basic o script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o se punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che il servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
+Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic o nello script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che questo servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -283,7 +283,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non aveva l'accesso necessario.
+L'utente non dispone dell'accesso necessario.
 
 </dd> <dt>
 
@@ -304,7 +304,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio (proprietà **State** della [**classe \_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio (proprietà **State** della classe [**\_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -395,14 +395,14 @@ Il servizio non ha thread di esecuzione.
 **18**
 </dt> <dd>
 
-Il servizio presenta dipendenze circolari all'avvio.
+Il servizio ha dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio viene eseguito con lo stesso nome.
+Un servizio è in esecuzione con lo stesso nome.
 
 </dd> <dt>
 
@@ -443,13 +443,13 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-I servizi vengono in genere installati in uno dei due modi seguenti: come parte dell'installazione del sistema operativo o tramite un programma di installazione fornito dallo sviluppatore del servizio. Tuttavia, alcuni servizi, in particolare quelli creati all'interno di , potrebbero non avere un programma di installazione. In questi casi, è possibile usare il **metodo Create per** installare i servizi a livello di codice.
+I servizi vengono in genere installati in uno dei due modi seguenti: come parte dell'installazione del sistema operativo o tramite un programma di installazione fornito dallo sviluppatore del servizio. Tuttavia, alcuni servizi, in particolare quelli creati all'interno, potrebbero non avere un programma di installazione. In questi casi, è possibile usare il **metodo Create per** installare i servizi a livello di codice.
 
-Nonostante il nome, il metodo Create non crea effettivamente un servizio. si limita a installare un servizio esistente. Per usare questo comando, è necessario copiare il file eseguibile del servizio in un computer e quindi usare **Crea** per installare il servizio.
+Nonostante il nome, il metodo Create non crea effettivamente un servizio. installa semplicemente un servizio esistente. Per usare questo comando, è necessario copiare il file eseguibile del servizio in un computer e quindi usare **Crea** per installare il servizio.
 
 Il **metodo Create** è simile al metodo [**Change.**](win32-terminalservice-change.md) In entrambi i casi, le proprietà del servizio vengono passate come parametri al metodo . Come per i parametri usati con il **metodo Change,** l'ordine in cui questi parametri vengono passati è molto importante.
 
-Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo di ordini di carico, in quanto i servizi dipendono l'uno dall'altro. Per il corretto funzionamento di questi servizi dipendenti è necessaria la presenza dei servizi antecenti.
+Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo di ordini di caricamento, in quanto i servizi dipendono l'uno dall'altro. Questi servizi dipendenti richiedono la presenza dei servizi di riferimento per il corretto funzionamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -459,7 +459,7 @@ Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistem
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

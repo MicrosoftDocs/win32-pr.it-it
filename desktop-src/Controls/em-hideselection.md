@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_HIDESELECTION (RichEdit. h)
-description: Il \_ messaggio HIDESELECTION em nasconde o Mostra la selezione in un controllo Rich Edit.
+title: EM_HIDESELECTION messaggio (Richedit.h)
+description: Il messaggio EM \_ HIDESELECTION nasconde o mostra la selezione in un controllo Rich Edit.
 ms.assetid: 1245618f-c9e6-4876-9133-6009370cdb97
 keywords:
-- Controlli di Windows Message EM_HIDESELECTION
+- EM_HIDESELECTION dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a5690e52c2a25f5a359de205ac1584e1ef45ed4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d9e33ba0fd8f9a97dcc7ef9ba0a76acfd76110a4d718fa282f3ba66d8f1ef6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437931"
 ---
-# <a name="em_hideselection-message"></a>\_Messaggio HIDESELECTION em
+# <a name="em_hideselection-message"></a>MESSAGGIO \_ EM HIDESELECTION
 
-Il **messaggio \_ HIDESELECTION em** nasconde o Mostra la selezione in un controllo Rich Edit.
+Il **messaggio EM \_ HIDESELECTION** nasconde o mostra la selezione in un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Il **messaggio \_ HIDESELECTION em** nasconde o Mostra la selezione in un contro
 *wParam* 
 </dt> <dd>
 
-Valore che specifica se nascondere o mostrare la selezione. Se questo parametro è zero, viene visualizzata la selezione. In caso contrario, la selezione sarà nascosta.
+Valore che specifica se nascondere o visualizzare la selezione. Se questo parametro è zero, viene visualizzata la selezione. In caso contrario, la selezione è nascosta.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Questo messaggio non restituisce alcun valore.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: NoCode (attributo)
-description: L'attributo \ NoCode \ viene usato nelle intestazioni ACF o con singole funzioni per impedire la generazione di codice stub del client.
+title: Attributo nocode
+description: L'attributo \ nocode\ viene usato nelle intestazioni ACF o con singole funzioni per impedire la generazione di codice stub client.
 ms.assetid: d3b6e4c8-103c-4ea2-8748-11d844fdda97
 keywords:
-- NoCode (attributo MIDL)
+- Attributo nocode MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f5138dc1794e9b2714e5f64762c1af17b47fb2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 86ec4612bc1bd5db1a8cdcbecdced51911591cdf5c482c83381f86deafd66a9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104333575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066961"
 ---
-# <a name="nocode-attribute"></a>NoCode (attributo)
+# <a name="nocode-attribute"></a>Attributo nocode
 
-L'attributo **\[ NoCode \]** viene usato nelle intestazioni ACF o con singole funzioni per impedire la generazione di codice stub del client.
+**\[ L'attributo \] nocode** viene usato nelle intestazioni ACF o con singole funzioni per impedire la generazione di codice stub client.
 
 ``` syntax
 [ 
@@ -44,86 +44,86 @@ interface interface-name
 
 <dl> <dt>
 
-*Attributi di interfaccia ACF* 
+*ACF-interface-attributes* 
 </dt> <dd>
 
-Specifica un elenco di uno o più attributi che si applicano all'interfaccia nel suo complesso. Gli attributi validi includono **\[** [**\_ handle automatico**](auto-handle.md) **\]** o **\[** [**\_ handle implicito**](implicit-handle.md) **\]** e **\[** [**codice**](code.md) **\]** o **\[ NoCode \]**. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
+Specifica un elenco di uno o più attributi che si applicano all'intera interfaccia. Gli attributi validi includono **\[** [**\_ l'handle automatico o**](auto-handle.md) **\]** **\[** [**\_ l'handle implicito**](implicit-handle.md) **\]** e il **\[** [**codice**](code.md) **\]** o **\[ nocode \]**. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
-Specifica il nome dell'interfaccia. In modalità di compatibilità DCE, il nome dell'interfaccia deve corrispondere al nome dell'interfaccia specificata nel file IDL. Quando si usa l'opzione del compilatore MIDL [**/ACF**](-acf.md), il nome dell'interfaccia in ACF e il nome dell'interfaccia nel file IDL possono essere diversi.
+Specifica il nome dell'interfaccia. In modalità di compatibilità DCE, il nome dell'interfaccia deve corrispondere al nome dell'interfaccia specificata nel file IDL. Quando si usa l'opzione del compilatore MIDL [**/acf**](-acf.md), il nome dell'interfaccia in ACF e il nome dell'interfaccia nel file IDL possono essere diversi.
 
 </dd> <dt>
 
-*elenco filename* 
+*filename-list* 
 </dt> <dd>
 
-Specifica un elenco di uno o più nomi di file di intestazione del linguaggio C, separati da virgole. È necessario specificare il nome completo del file, inclusa l'estensione.
+Specifica un elenco di uno o più nomi di file di intestazione del linguaggio C, separati da virgole. È necessario specificare il nome file completo, inclusa l'estensione.
 
 </dd> <dt>
 
-*tipo-Attribute-List* 
+*type-attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di uno o più attributi, separati da virgole, che si applicano al tipo specificato. Gli attributi di tipo validi includono **\[** [**allocate**](allocate.md) **\]** .
+Specifica un elenco di uno o più attributi, separati da virgole, che si applicano al tipo specificato. Gli attributi di tipo validi includono **\[** [**allocare**](allocate.md) **\]** .
 
 </dd> <dt>
 
-*typeName* 
+*Typename* 
 </dt> <dd>
 
 Specifica un tipo definito nel file IDL. Gli attributi di tipo in ACF possono essere applicati solo ai tipi definiti in precedenza nel file IDL.
 
 </dd> <dt>
 
-*ACF-Function-Attributes* 
+*ACF-function-attributes* 
 </dt> <dd>
 
-Specifica gli attributi che si applicano alla funzione nel suo complesso, ad esempio **\[** [**\_ lo stato della comunicazione**](comm-status.md) **\]** . Gli attributi della funzione sono racchiusi tra parentesi quadre. Separare più attributi di funzione con virgole.
+Specifica gli attributi applicabili all'intera funzione, ad esempio **\[** [**comm \_ status**](comm-status.md) **\]** . Gli attributi della funzione sono racchiusi tra parentesi quadre. Separare più attributi di funzione con virgole.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Specifica il nome della funzione come definito nel file IDL.
 
 </dd> <dt>
 
-*ACF-parametri-attributi* 
+*ACF-parameter-attributes* 
 </dt> <dd>
 
-Specifica gli attributi ACF che si applicano a un parametro. Si noti che è possibile applicare zero o più attributi al parametro. Separare più attributi di parametro con virgole. Gli attributi del parametro ACF sono racchiusi tra parentesi quadre.
+Specifica gli attributi ACF che si applicano a un parametro. Si noti che è possibile applicare zero o più attributi al parametro . Separare più attributi di parametro con virgole. Gli attributi dei parametri ACF sono racchiusi tra parentesi quadre.
 
 </dd> <dt>
 
-*Nome parametro* 
+*parameter-name* 
 </dt> <dd>
 
-Specifica un parametro della funzione come definito nel file IDL. Ogni parametro per la funzione deve essere specificato nella stessa sequenza e utilizzando lo stesso nome definito nel file IDL.
+Specifica un parametro della funzione come definito nel file IDL. Ogni parametro per la funzione deve essere specificato nella stessa sequenza e usando lo stesso nome definito nel file IDL.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ NoCode \]** può essere visualizzato nell'intestazione ACF oppure può essere applicato a una singola funzione.
+**\[ L'attributo \] nocode** può essere visualizzato nell'intestazione ACF oppure può essere applicato a una singola funzione.
 
-Quando l'attributo **\[ \] NoCode** viene visualizzato nell'intestazione ACF, il codice stub del client non viene generato per alcuna funzione remota a meno che non disponga dell'attributo della funzione di **\[** [**codice**](code.md) **\]** . È possibile eseguire l'override dell'attributo **\[ NoCode \]** nell'intestazione per una singola funzione specificando l'attributo **\[ Code \]** come attributo della funzione.
+Quando **\[ l'attributo \] nocode** viene visualizzato nell'intestazione ACF, il codice stub client non viene generato per qualsiasi funzione remota, a meno che non abbia l'attributo **\[** [**della**](code.md) funzione **\]** di codice. È possibile eseguire **\[ l'override dell'attributo nocode \]** nell'intestazione per una singola funzione specificando l'attributo **\[ code \]** come attributo di funzione.
 
-Quando l'attributo **\[ NoCode \]** viene visualizzato nell'elenco di attributi della funzione, per la funzione non viene generato alcun codice stub client.
+Quando **\[ l'attributo nocode \]** viene visualizzato nell'elenco di attributi della funzione, non viene generato alcun codice stub client per la funzione.
 
 Il codice stub client non viene generato quando:
 
--   L'intestazione ACF include l'attributo **\[ NoCode \]** .
--   L'attributo **\[ NoCode \]** viene applicato alla funzione.
--   L' **\[** attributo [**local**](local.md) **\]** si applica alla funzione nel file di interfaccia.
+-   L'intestazione ACF include **\[ l'attributo \] nocode.**
+-   **\[ L'attributo \] nocode** viene applicato alla funzione.
+-   **\[** [**L'attributo**](local.md) **\]** locale si applica alla funzione nel file di interfaccia.
 
-Il **\[** [**codice**](code.md) **\]** o **\[ NoCode \]** può essere visualizzato nell'elenco di attributi di una funzione e quello scelto può essere visualizzato esattamente una volta.
+Il **\[** [**codice**](code.md) **\]** o **\[ \] nocode** può essere visualizzato nell'elenco di attributi di una funzione e quello scelto può essere visualizzato esattamente una volta.
 
-L'attributo **\[ NoCode \]** viene ignorato quando vengono generati stub server. Non è possibile applicarlo quando si generano stub server in modalità di compatibilità DCE.
+**\[ L'attributo \] nocode** viene ignorato quando vengono generati stub del server. Non è possibile applicarlo durante la generazione di stub del server in modalità di compatibilità DCE.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -135,24 +135,24 @@ L'attributo **\[ NoCode \]** viene ignorato quando vengono generati stub server.
 [**/acf**](-acf.md)
 </dt> <dt>
 
-[**allocare**](allocate.md)
+[**Allocare**](allocate.md)
 </dt> <dt>
 
-[**\_handle automatico**](auto-handle.md)
+[**handle \_ automatico**](auto-handle.md)
 </dt> <dt>
 
-[**codice**](code.md)
+[**Codice**](code.md)
 </dt> <dt>
 
-[**stato di comunicazione \_**](comm-status.md)
+[**Stato \_ comm**](comm-status.md)
 </dt> <dt>
 
-[**handle implicito \_**](implicit-handle.md)
+[**handle \_ implicito**](implicit-handle.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

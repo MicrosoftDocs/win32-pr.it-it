@@ -1,21 +1,21 @@
 ---
-title: Parametri dell'attività di impostazione dell'esempio di codice C/C++
-description: In questo esempio vengono cancellati tutti i parametri della riga di comando associati a un'attività nota. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ che imposta i parametri dell'attività
+description: Questo esempio cancella tutti i parametri della riga di comando associati a un'attività nota. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: cd71379a-7eb2-4966-a28b-5b7d31d60c16
 keywords:
-- impostazione delle proprietà dell'attività Utilità di pianificazione, parametri
+- impostazione delle proprietà dell'attività Utilità di pianificazione parametri ,
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 509776aa87d414cb1cb4c590c2be2c0ea3912269
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a1932126f09969ce733c9f411de0db8baedfdf821079700d71c337561354cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060189"
 ---
-# <a name="cc-code-example-setting-task-parameters"></a>Esempio di codice C/C++: impostazione dei parametri delle attività
+# <a name="cc-code-example-setting-task-parameters"></a>Esempio di codice C/C++: impostazione dei parametri dell'attività
 
-In questo esempio vengono cancellati tutti i parametri della riga di comando associati a un'attività nota. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio cancella tutti i parametri della riga di comando associati a un'attività nota. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -136,12 +136,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

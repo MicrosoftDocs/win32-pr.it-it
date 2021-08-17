@@ -1,7 +1,7 @@
 ---
-description: 'Metodo RemoveBootSourceSettings della classe Msvm_VirtualSystemManagementService : rimuove le impostazioni delle risorse virtuali da una configurazione di sistema virtuale.'
+description: 'Metodo RemoveBootSourceSettings della classe Msvm_VirtualSystemManagementService: rimuove le impostazioni delle risorse virtuali da una configurazione del sistema virtuale.'
 ms.assetid: 0deb7719-e605-4ba5-9bb2-037d0cafee24
-title: Metodo RemoveBootSourceSettings della Msvm_VirtualSystemManagementService classe
+title: Metodo RemoveBootSourceSettings della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5407e56b761dd545d20b89e0a28742f9c542b15a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e0b73626cb12d384b2c2b0269acc09cc44e2a506835d6cc9fca3990b4d8d670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148044"
 ---
 # <a name="removebootsourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo RemoveBootSourceSettings della classe Msvm \_ VirtualSystemManagementService
 
-Rimuove le impostazioni delle risorse virtuali da una configurazione di sistema virtuale.
+Rimuove le impostazioni delle risorse virtuali da una configurazione del sistema virtuale.
 
-Se applicato a parti di una configurazione di sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere rimosse.
+Se applicato a parti di una configurazione del sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere rimosse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ uint32 RemoveBootSourceSettings(
 *BootSourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a una matrice di [**CIM \_ SettingData**](cim-settingdata.md) che descrivono le impostazioni dell'origine di avvio da rimuovere.
+Riferimento a una matrice di [**CIM \_ SettingData che**](cim-settingdata.md) descrivono le impostazioni dell'origine di avvio da rimuovere.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -74,16 +74,16 @@ Questo metodo restituisce uno dei valori seguenti:
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
 </dt> <dt>
 
-**DmTF Reserved** (..)
+**DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Metodo riservato** (4097..32767)
@@ -98,7 +98,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

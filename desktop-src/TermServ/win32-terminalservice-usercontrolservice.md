@@ -1,11 +1,11 @@
 ---
 title: Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto)
-description: "Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto): tenta di inviare un codice di controllo definito dall'utente al servizio a cui si fa riferimento."
+description: "Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto): tenta di inviare un codice di controllo definito dall'utente al servizio di riferimento."
 ms.assetid: 7B9020C1-2183-4FC4-ABCF-CE34111FF5D3
 ms.tgt_platform: multiple
 keywords:
 - Metodo UserControlService Servizi Desktop remoto
-- Il metodo UserControlService Servizi Desktop remoto , Win32_Service classe
+- Metodo UserControlService Servizi Desktop remoto , Win32_Service classe
 - Win32_Service classe Servizi Desktop remoto , metodo UserControlService
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e71a33056f596afaf577968a5c725b3f64f79b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7098f8f79212ed52d52ed408795284725735a1a7092988f35e416636675538fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422051"
 ---
 # <a name="usercontrolservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto)
 
@@ -45,16 +45,16 @@ uint32 UserControlService(
 
 <dl> <dt>
 
-*Codice di controllo* \[ Pollici\]
+*ControlCode* \[ Pollici\]
 </dt> <dd>
 
-Specifica i valori definiti (da 128 a 255) che forniscono comandi di controllo specifici per un utente.
+Specifica valori definiti (da 128 a 255) che forniscono comandi di controllo specifici per un utente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -75,7 +75,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non aveva l'accesso necessario.
+L'utente non dispone dell'accesso necessario.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State)** è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 

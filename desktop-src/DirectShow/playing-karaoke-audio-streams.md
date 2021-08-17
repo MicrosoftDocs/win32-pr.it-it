@@ -1,28 +1,28 @@
 ---
-description: Riproduzione di flussi audio karaoke
+description: Riproduzione di contenuti audio per il Flussi
 ms.assetid: 1a8d0f42-35b8-4743-9ae7-619b99936f76
-title: Riproduzione di flussi audio karaoke
+title: Riproduzione di contenuti audio per il Flussi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 907bfa3e359915cf537de75cdc739630fe607d97
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b10912761034feb9ed82c85625324cd3091514b2c492c66b4e49af711d7d2152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119213301"
 ---
-# <a name="playing-karaoke-audio-streams"></a>Riproduzione di flussi audio karaoke
+# <a name="playing-karaoke-audio-streams"></a>Riproduzione di contenuti audio per il Flussi
 
-Il navigatore DVD può riprodurre DVD-Video dischi con flussi audio karaoke, ma la riproduzione karaoke richiede anche un decodificatore che supporta la combinazione di karaoke multicanale. In particolare, il decodificatore deve supportare il [**set di proprietà DVD karaoke**](dvd-karaoke-property-set.md) (AM \_ Property \_ DVDKARAOKE).
+Lo strumento di navigazione DVD può riprodurre DVD-Video dischi con flussi audio di tipo stereo, ma per la riproduzione del tutto stereo è necessario anche un decodificatore che supporti la combinazione multicanale per il mixaggio per il tutto multicanale. In particolare, il decodificatore deve supportare il set di proprietà [**DVD Karaoke**](dvd-karaoke-property-set.md) (AM PROPERTY \_ \_ DVDKARAOKE).
 
-I dischi Karaoke sono un tipo di DVD-Video disco e hanno la stessa struttura di navigazione. I brani vengono in genere formattati come titoli e i titoli possono essere raggruppati in set di titoli in base all'esecutore, allo stile musicale o ad altri criteri. La differenza principale tra il karaoke e altri tipi di DVD-Videos è il flusso audio. I dischi Karaoke contengono tutti audio multicanale, in genere Dolby AC-3. I canali 0 e 1 contengono sempre la musica strumentale in background, mentre i canali da 2 a 5 possono contenere qualsiasi combinazione di voce di guida, melodie e effetti audio. Un'applicazione Karaoke può controllare l'altoparlante del volume e della destinazione per ogni canale ausiliario.
+I dischi Disassato sono un tipo DVD-Video disco e hanno la stessa struttura di navigazione. I brani sono in genere formattati come titoli e i titoli possono essere raggruppati in set di titoli in base all'esecutore, allo stile musicale o ad altri criteri. La differenza principale tra il karaoke e altri tipi di DVD-Videos è il flusso audio. I dischi Disaborso contengono tutti audio multicanale, in genere Dolby AC-3. I canali 0 e 1 contengono sempre la musica strumentale di sottofondo, mentre i canali da 2 a 5 possono contenere ogni combinazione di guide vocali, linee guida ed effetti sonori. Un'applicazione per il mirroring può controllare il volume e l'altoparlante di destinazione per ogni canale ausiliario.
 
-Quando il navigatore DVD rileva il contenuto del karaoke su un disco e passa alla modalità karaoke, informa il decodificatore, che dovrebbe quindi disattivare i tre canali più alti (i canali ausiliari) finché nessuno o tutti questi non vengono attivati in modo esplicito da un'applicazione. Le attività di base di un'applicazione karaoke sono:
+Quando lo strumento di spostamento DVD rileva il contenuto di un disco e passa alla modalità di visualizzazione del contenuto, informa il decodificatore, che dovrebbe disattivare i tre canali superiori (i canali ausiliari) fino a quando uno o tutti i canali non vengono attivati in modo esplicito da un'applicazione. Le attività di base di un'applicazione di questo tipo sono:
 
-1.  Determinare il numero di canali ausiliari e il relativo contenuto usando i metodi [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) .
-2.  Fornire un'interfaccia utente che Visualizza il contenuto del canale e consente agli utenti di attivare o disattivare qualsiasi canale ausiliario in qualsiasi momento usando [**IDVDControl2:: SelectKaraokeAudioPresentationMode**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-selectkaraokeaudiopresentationmode).
+1.  Determinare il numero di canali ausiliari e il relativo contenuto [**usando i metodi IDvdInfo2.**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2)
+2.  Fornire un'interfaccia utente che visualizza il contenuto del canale e consente agli utenti di attivare o disattivare qualsiasi canale ausiliario in qualsiasi momento, usando [**IDvdControl2::SelectKaraokeAudioPresentationMode**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-selectkaraokeaudiopresentationmode).
 
-Questi passaggi sono illustrati nell'applicazione di esempio DVD in DVDCore. cpp nel metodo **GetAudioAttributes** .
+Questi passaggi sono illustrati nell'applicazione DVD Sample in DVDCore.cpp nel **metodo GetAudioAttributes.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 

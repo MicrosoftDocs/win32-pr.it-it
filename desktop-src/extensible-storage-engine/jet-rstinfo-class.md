@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_RSTINFO Class'
-title: Classe JET_RSTINFO
+description: 'Altre informazioni su: JET_RSTINFO classe'
+title: JET_RSTINFO classe
 TOCTitle: JET_RSTINFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RSTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 964f1cb335fd0adf1a38759c4ec0aa243f1df506
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 002c54dd1631a8e9edbf5397c69ea7d7dc684dd7507b2fb6c3c0961d51b228a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473481"
 ---
-# <a name="jet_rstinfo-class"></a>Classe JET_RSTINFO
+# <a name="jet_rstinfo-class"></a>JET_RSTINFO classe
 
 Contiene parametri di input e output facoltativi per JetRetrieveColumn.
 
@@ -40,8 +40,8 @@ Contiene parametri di input e output facoltativi per JetRetrieveColumn.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RSTINFO  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,6 +68,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO membri](./jet-rstinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

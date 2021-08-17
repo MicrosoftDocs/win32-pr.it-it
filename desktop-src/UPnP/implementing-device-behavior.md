@@ -1,21 +1,21 @@
 ---
 title: Implementazione del comportamento del dispositivo
-description: Il comportamento di un dispositivo viene definito dai servizi esposti.
+description: Il comportamento di un dispositivo è definito dai servizi esposti.
 ms.assetid: 5b352870-6de1-42f2-a178-ed7036b7afc9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb702adf3ccb0f21bc71f08e98427cca15495f3b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: fce2857c11a02ef5eeebe7b2cd5e75ee76138929e5bd95a2e3bdfa7ffd2c71dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137264"
 ---
 # <a name="implementing-device-behavior"></a>Implementazione del comportamento del dispositivo
 
-Il comportamento di un dispositivo viene definito dai servizi esposti. Ogni servizio dispone di una descrizione del servizio che ne elenca le azioni e le variabili di stato. Insieme, queste descrizioni del servizio costituiscono l'interfaccia del servizio, che definisce il modo in cui un punto di controllo può interagire con un servizio. Ogni servizio deve avere almeno un'azione.
+Il comportamento di un dispositivo è definito dai servizi esposti. Ogni servizio dispone di una descrizione del servizio che elenca le azioni e le variabili di stato. Nel loro insieme, queste descrizioni del servizio costituiscono l'interfaccia del servizio, che definisce il modo in cui un punto di controllo può interagire con un servizio. Ogni servizio deve avere almeno un'azione.
 
-Per implementare un servizio, un dispositivo ospitato deve fornire un oggetto Component Object Model (COM) che espone l'interfaccia per il servizio. Nella descrizione del servizio, le interfacce del servizio sono specificate in UPnP Template Language (UTL); Tuttavia, le interfacce oggetto COM vengono in genere specificate in IDL (Interface Definition Language). È inoltre possibile specificare l'interfaccia COM in una libreria dei tipi o in un file di intestazione. Il Software Development Kit (SDK) della piattaforma include lo strumento Utl2idl, che converte una descrizione del servizio in UTL in un'interfaccia COM in IDL.
+Per implementare un servizio, un dispositivo ospitato deve fornire un oggetto Component Object Model (COM) che espone l'interfaccia per il servizio. Nella descrizione del servizio le interfacce del servizio sono specificate in UPnP Template Language (UTL); Tuttavia, le interfacce degli oggetti COM vengono in genere specificate nel linguaggio IDL (Interface Definition Language). È anche possibile specificare l'interfaccia COM in una libreria dei tipi o in un file di intestazione. Platform Software Development Kit (SDK) include lo strumento Utl2idl, che converte una descrizione del servizio in UTL in un'interfaccia COM in IDL.
 
 Gli esempi seguenti illustrano questo processo di conversione. La descrizione del servizio viene fornita dallo sviluppatore del dispositivo ed è scritta in UTL.
 
@@ -94,7 +94,7 @@ Gli esempi seguenti illustrano questo processo di conversione. La descrizione de
 </scpd>
 ```
 
-Il passaggio successivo consiste nell'eseguire lo strumento Utl2idl. Produce il file IDL che contiene l'interfaccia COM. Per ulteriori informazioni sui file IDL e sulla parola chiave **Interface** , vedere [**l'interfaccia e**](/windows/desktop/Midl/interface) il file di definizione dell' [interfaccia (IDL)](/windows/desktop/Midl/interface-definition-idl-file) in riferimento a MIDL.
+Il passaggio successivo consiste nell'eseguire lo strumento Utl2idl. Produce il file IDL che contiene l'interfaccia COM. Per altre informazioni sui file IDL e sulla parola chiave **interface,** vedere [Interface Definition (IDL) File](/windows/desktop/Midl/interface-definition-idl-file) and [**interface**](/windows/desktop/Midl/interface) (File e interfaccia di definizione dell'interfaccia) in MIDL reference (Informazioni di riferimento su MIDL).
 
 ``` syntax
 #include <windows.h>
@@ -149,7 +149,7 @@ interface IUPnPService_scpd : IUnknown
 ```
 
 > [!Note]
-> Il valore restituito è il primo \[ \] parametro out nell'elenco di argomenti nella descrizione del servizio. Tuttavia, viene elencato come ultimo parametro dopo la conversione.
+> Il valore restituito è il primo parametro out nell'elenco di argomenti nella descrizione del servizio, ma viene elencato come \[ ultimo parametro dopo la \] conversione.
 > 
 > Tutti gli altri parametri rimangono nello stesso ordine.
 
@@ -159,33 +159,33 @@ Per fornire la funzionalità del servizio, implementare questa interfaccia COM.
 
 ## <a name="obtaining-information-about-an-endpoint"></a>Recupero di informazioni su un endpoint
 
-Nel framework UPnP, le informazioni sull'endpoint includono informazioni su una richiesta e la relativa origine. Un dispositivo può esaminare queste informazioni per prendere una decisione sulla richiesta.
+Nel framework UPnP le informazioni sull'endpoint includono informazioni su una richiesta e la relativa origine. Un dispositivo può esaminare queste informazioni per prendere una decisione sulla richiesta.
 
-Facoltativamente, le informazioni sull'endpoint sono disponibili per il servizio implementato. L'host del dispositivo ha accesso alle informazioni sull'endpoint; Tuttavia, per impostazione predefinita, l'host del dispositivo non comunica le informazioni al servizio implementato. È possibile abilitare l'host del dispositivo a condividere le informazioni sull'endpoint con il servizio implementato modificando l'interfaccia COM nel file IDL (prodotto dallo strumento Utl2idl). È possibile aggiungere un \[ \] parametro in a ogni metodo che richiede informazioni sull'endpoint. Il \[ parametro in aggiuntivo \] deve essere il primo nell'elenco di argomenti, un puntatore a un'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e denominato in modo esplicito **punkRemoteEndpointInfo**. Le modifiche al codice XML del servizio non sono necessarie o sono consigliate. Nell'esempio seguente viene illustrata la nuova definizione del metodo **PowerOn** quando viene modificata in modo da ricevere informazioni sull'endpoint:
+Le informazioni sull'endpoint sono facoltativamente disponibili per il servizio implementato. L'host del dispositivo ha accesso alle informazioni sull'endpoint. Tuttavia, l'host del dispositivo non comunica le informazioni al servizio implementato per impostazione predefinita. È possibile abilitare l'host del dispositivo per condividere le informazioni sull'endpoint con il servizio implementato modificando l'interfaccia COM nel file IDL (prodotto dallo strumento Utl2idl). È possibile aggiungere un \[ parametro in a ogni metodo che richiede informazioni \] sull'endpoint. L'elemento aggiuntivo nel parametro deve essere il primo nell'elenco di argomenti, un puntatore \[ a \] [**un'interfaccia IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e denominato in modo esplicito **namedremoteEndpointInfo.** Le modifiche al codice XML del servizio non sono obbligatorie o consigliate. L'esempio seguente illustra la nuova definizione del metodo **PowerOn** quando viene modificato in modo che riceva le informazioni sull'endpoint:
 
-"HRESULT PowerOn ( \[ in \] IUnknown \* punkRemoteEndpointInfo);"
+"HRESULT PowerOn( \[ in \] IUnknown \* remotingRemoteEndpointInfo);"
 
-Un puntatore a un oggetto informazioni endpoint, un'interfaccia [**IUPnPRemoteEndpointInfo**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpremoteendpointinfo) , viene passato tramite questo nuovo parametro dall'host del dispositivo. L'interfaccia **IUPnPRemoteEndpointInfo** fornisce tre metodi per l'accesso alle informazioni sull'endpoint. È necessario chiamare il metodo appropriato per ottenere le informazioni sull'endpoint richieste dall'implementazione del servizio.
+Un puntatore a un oggetto informazioni sull'endpoint, [**un'interfaccia IUPnPRemoteEndpointInfo,**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpremoteendpointinfo) viene passato tramite questo nuovo parametro dall'host del dispositivo. **L'interfaccia IUPnPRemoteEndpointInfo** fornisce tre metodi per accedere alle informazioni sull'endpoint. È necessario chiamare il metodo appropriato per ottenere le informazioni sull'endpoint richieste dall'implementazione del servizio.
 
-In alternativa alla modifica manuale dell'interfaccia COM, è possibile usare lo strumento Utl2idl con l'opzione **-ci** . Questa opzione consente allo strumento di aggiungere il parametro informazioni endpoint a ognuno dei metodi dell'interfaccia COM. L'uso dell'opzione **-ci** non semplifica la modifica dei singoli metodi. Se le informazioni sull'endpoint non sono necessarie per tutti i metodi di un'interfaccia, è necessario aggiungere il parametro manualmente per produrre le implementazioni più efficienti.
+In alternativa alla modifica manuale dell'interfaccia COM, è possibile usare lo strumento Utl2idl con **l'opzione -ci.** Questa opzione fa sì che lo strumento abiliti il parametro delle informazioni sull'endpoint a ognuno dei metodi nell'interfaccia COM. **L'uso dell'opzione -ci** non facilita la modifica dei singoli metodi. Se le informazioni sull'endpoint non sono necessarie per tutti i metodi di un'interfaccia, è necessario aggiungere manualmente il parametro per produrre le implementazioni più efficienti.
 
 ## <a name="implementing-a-service-object"></a>Implementazione di un oggetto servizio
 
-È necessario usare lo strumento Utl2idl per tradurre la descrizione di ogni servizio di un dispositivo.
+È necessario usare lo strumento Utl2idl per tradurre ogni descrizione del servizio di un dispositivo.
 
-Un oggetto che fornisce la funzionalità per un servizio viene definito [*oggetto servizio*](s-gly.md). Oltre a fornire la funzionalità del servizio, gli oggetti servizio gestiscono gli errori usando l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . Per altre informazioni, vedere [uso dell'API host del dispositivo con la tecnologia UPnP](using-the-device-host-api-with-upnp-technology.md).
+Un oggetto che fornisce la funzionalità per un servizio viene definito oggetto [*servizio*](s-gly.md). Oltre a fornire funzionalità del servizio, gli oggetti servizio gestiscono gli errori tramite [**l'interfaccia IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Per altre informazioni, vedere [Using the Device Host API with UPnP Technology (Uso dell'API host dei dispositivi con la tecnologia UPnP).](using-the-device-host-api-with-upnp-technology.md)
 
-Per garantire la compatibilità con Visual Basic, che non supporta \[ \] i parametri out, i parametri **/Direction** della **direzione** out nella descrizione del servizio vengono convertiti in \[ parametri out in \] IDL. Il server deve liberarsi \[ nei parametri out \] .
+Per garantire la compatibilità con Visual Basic, che non supporta i parametri out, i parametri direction out /direction nella descrizione del servizio vengono convertiti in parametri \[ \] in out in  \[ \] IDL. Il server deve liberare questi \[ parametri in, \] out.
 
 ## <a name="implementing-a-device-control-object"></a>Implementazione di un oggetto controllo dispositivo
 
-Oltre a implementare oggetti servizio, è necessario implementare un [*oggetto controllo dispositivo*](d-gly.md). Un oggetto controllo dispositivo è il punto centrale di gestione e controllo per gli oggetti servizio del dispositivo. Al momento della registrazione, l'oggetto controllo dispositivo viene passato all'host del dispositivo. Quando viene ricevuta una sottoscrizione o una richiesta di controllo di un evento per uno dei servizi del dispositivo, l'host del dispositivo chiama questo oggetto controllo dispositivo per ottenere l'oggetto servizio pertinente. A questo punto, l'oggetto controllo dispositivo crea un'istanza dell'oggetto servizio o restituisce l'interfaccia di un'istanza esistente dell'oggetto servizio.
+Oltre a implementare oggetti servizio, è necessario implementare un oggetto [*controllo dispositivo*](d-gly.md). Un oggetto controllo dispositivo è il punto centrale di gestione e controllo per gli oggetti servizio del dispositivo. Al momento della registrazione, l'oggetto controllo dispositivo viene passato all'host del dispositivo. Quando arriva una sottoscrizione di eventi o una richiesta di controllo per uno dei servizi del dispositivo, l'host del dispositivo chiama questo oggetto controllo dispositivo per ottenere l'oggetto servizio pertinente. A quel punto, l'oggetto controllo dispositivo crea un'istanza dell'oggetto servizio o restituisce l'interfaccia di un'istanza esistente dell'oggetto servizio.
 
-È possibile registrare una descrizione del dispositivo su più computer o più volte nello stesso computer. Poiché il nome univoco del dispositivo (UDN) deve essere diverso per ogni istanza del dispositivo, l'host del dispositivo genera un UDN univoco per ogni dispositivo e dispositivo incorporato ogni volta che il dispositivo viene registrato. Usare il UDN specificato nel modello di descrizione del dispositivo per ottenere il UDN effettivo generato dall'host del dispositivo e associato al dispositivo. Per annullare la registrazione di un dispositivo, è necessario usare l'ID fornito dal framework UPnP quando il dispositivo è stato registrato.
+È possibile registrare una descrizione del dispositivo in più computer o più volte nello stesso computer. Poiché il nome UDN (Unique Device Name) deve essere diverso per ogni istanza del dispositivo, l'host del dispositivo genera una rete definita dall'utente univoca per ogni dispositivo e dispositivo incorporato ogni volta che il dispositivo viene registrato. Usare la rete definita dall'utente specificata nel modello di descrizione del dispositivo per ottenere la rete definita dall'utente effettiva generata dall'host del dispositivo e associata al dispositivo. Per annullare la registrazione di un dispositivo, è necessario usare l'ID fornito dal framework UPnP quando il dispositivo è stato registrato.
 
-Gli oggetti controllo dispositivo devono implementare l'interfaccia [**IUPnPDeviceControl**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpdevicecontrol) . L'host del dispositivo richiama il metodo [**IUPnPDeviceControl:: Initialize**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-initialize) dell'oggetto controllo del dispositivo, passando la descrizione del dispositivo basata su UPnP che l'host del dispositivo ha pubblicato in precedenza per il dispositivo e una stringa di inizializzazione specificata in fase di registrazione. vedere [registrazione di un dispositivo ospitato con l'host del dispositivo](registering-a-hosted-device-with-the-device-host.md). Da questa descrizione del dispositivo, l'oggetto controllo dispositivo legge il UDNs assegnato a ognuno dei dispositivi nell'albero del dispositivo. Per ottenere queste informazioni, è anche possibile usare il metodo [**IUPnPRegistrar:: GetUniqueDeviceName**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-getuniquedevicename) .
+Gli oggetti controllo dispositivo devono implementare [**l'interfaccia IUPnPDeviceControl.**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpdevicecontrol) L'host del dispositivo richiama il metodo [**IUPnPDeviceControl::Initialize**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-initialize) dell'oggetto controllo dispositivo, passando la descrizione del dispositivo basata su UPnP pubblicata in precedenza per il dispositivo e una stringa di inizializzazione specificata al momento della registrazione (vedere Registrazione di un dispositivo ospitato con [l'host del dispositivo).](registering-a-hosted-device-with-the-device-host.md) Da questa descrizione del dispositivo, l'oggetto controllo dispositivo legge i nomi definiti dall'utente assegnati a ognuno dei dispositivi nell'albero dei dispositivi. È anche possibile usare il [**metodo IUPnPRegistrar::GetUniqueDeviceName**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-getuniquedevicename) per ottenere queste informazioni.
 
-Quando l'host del dispositivo richiede un puntatore a un oggetto servizio che implementa un determinato servizio, richiama il metodo [**IUPnPDeviceControl:: GetServiceObject**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-getserviceobject) sull'oggetto controllo dispositivo. L'host del dispositivo passa il UDN e l'ID del servizio per il quale richiede un oggetto servizio e l'indirizzo di un puntatore [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) in corrispondenza del quale si prevede che il metodo restituisca un puntatore all'oggetto servizio. Il parametro UDN è necessario perché l'oggetto controllo dispositivo gestisce i servizi per l'intero albero dei dispositivi, inclusi i dispositivi annidati. Se l'host del dispositivo richiede un dispositivo annidato, **GetServiceObject** usa il UDN per identificarlo.
+Quando l'host del dispositivo richiede un puntatore a un oggetto servizio che implementa un particolare servizio, richiama il metodo [**IUPnPDeviceControl::GetServiceObject**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpdevicecontrol-getserviceobject) sull'oggetto controllo dispositivo. L'host del dispositivo passa la rete definita dall'utente e l'ID servizio del servizio per cui richiede un oggetto servizio e l'indirizzo di un puntatore [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) in corrispondenza del quale si prevede che il metodo restituirà un puntatore all'oggetto servizio. Il parametro UDN è necessario perché l'oggetto controllo dispositivo gestisce i servizi per l'intero albero dei dispositivi, inclusi i dispositivi annidati. Se l'host del dispositivo richiede un dispositivo annidato, **GetServiceObject** usa la rete definita dall'utente per identificarlo.
 
  
 

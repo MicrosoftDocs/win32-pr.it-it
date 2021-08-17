@@ -1,26 +1,26 @@
 ---
-title: Effetto trasferimento lineare
-description: Usare l'effetto di trasferimento lineare per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione lineare creata da un elenco di valori forniti per ogni canale.
+title: Effetto di trasferimento lineare
+description: Usare l'effetto di trasferimento lineare per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione lineare creata da un elenco di valori specificati per ogni canale.
 ms.assetid: 22DC496E-2958-4726-A74D-B3DE934F507C
 keywords:
-- effetto trasferimento lineare
+- effetto di trasferimento lineare
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfedbb79f057ee871ce23cc086034afc3e6cdda0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7dcb2bb688d1e8ebf4b1b1ebfdd531d900755b46840bada2bade49d957ed0f6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119385296"
 ---
-# <a name="linear-transfer-effect"></a>Effetto trasferimento lineare
+# <a name="linear-transfer-effect"></a>Effetto di trasferimento lineare
 
-Usare l'effetto di trasferimento lineare per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione lineare creata da un elenco di valori forniti per ogni canale.
+Usare l'effetto di trasferimento lineare per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione lineare creata da un elenco di valori specificati per ogni canale.
 
 Il CLSID per questo effetto è CLSID \_ D2D1LinearTransfer.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
@@ -30,9 +30,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1LinearTransfer.
 
 | Prima                                                          |
 |-----------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)      |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)      |
 | After                                                           |
-| ![immagine dopo la trasformazione.](images/13-lineartransfer.png) |
+| ![l'immagine dopo la trasformazione.](images/13-lineartransfer.png) |
 
 
 
@@ -57,37 +57,37 @@ m_d2dContext->EndDraw();
 
 
 
-La funzione di trasferimento lineare viene creata in base alla inclinazione e all'intercettazione y per ogni canale specificato. L'intensità del pixel di output C viene calcolata con l'equazione: C'= mC + B, dove m è la pendenza della funzione lineare e B è l'intercetta Y della funzione lineare.
+La funzione di trasferimento lineare viene creata in base al inclinazione e all'intercetta y per ogni canale specificato. L'intensità in pixel di output C viene calcolata con l'equazione: C' = mC + B, dove m è il inclinazione della funzione lineare e B è l'intercetta Y della funzione lineare.
 
-Questo effetto funziona su immagini alfa diritte e premoltiplicate. L'effetto restituisce bitmap alfa premoltiplicate.
+Questo effetto funziona su immagini alfa rette e premoltiliate. L'effetto restituisce bitmap alfa premoltiliate.
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 > [!Note]  
 > Per tutti i canali delle proprietà di trasferimento lineare:
 >
-> -   L'intercetta Y non è vincolata e non è unita.
-> -   La pendenza non è vincolata ed è senza unità.
+> -   L'intercetta Y non è delimitata ed è senza unità.
+> -   Il inclinazione non è delimitato ed è senza unità.
 
  
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                                    | Tipo e valore predefinito           | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Enumerazione del nome visualizzato e dell'indice                                                    | Tipo e valore predefinito           | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RedYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Red \_ Y \_ Interceptor<br/>     | FLOAT<br/> 0,0 f<br/> | L'intersezione Y della funzione lineare per il canale rosso.                                                                                                                                                                                                                                                                                                                                                                                                   |
-| RedSlope<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Red \_ Slope<br/>                 | FLOAT<br/> 1,0 f<br/> | Pendenza della funzione lineare per il canale rosso.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| RedDisable<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Red \_ Disable<br/>             | BOOL<br/> FALSE<br/> | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale rosso. Se si imposta questa opzione su FALSE, l'effetto applica la funzione RedLinearTransfer al canale rosso.                                                                                                                                                                                                                                                                    |
-| GreenYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ - \_ \_ intersezione Y \_ verde<br/> | FLOAT<br/> 0,0 f<br/> | L'intersezione Y della funzione lineare per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| GreenSlope<br/> \_ \_ Inclinazione verde della prop d2d1 LINEARTRANSFER \_ \_<br/>             | FLOAT<br/> 1,0 f<br/> | Pendenza della funzione lineare per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                                       |
-| GreenDisable<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Green \_ Disable<br/>         | BOOL<br/> FALSE<br/> | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa opzione su FALSE, viene applicata la funzione GreenLinearTransfer al canale verde.                                                                                                                                                                                                                                                                      |
-| BlueYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ ( \_ \_ intercetta Y \_ blu)<br/>   | FLOAT<br/> 0,0 f<br/> | L'intersezione Y della funzione lineare per il canale blu.                                                                                                                                                                                                                                                                                                                                                                                                  |
-| BlueSlope<br/> D2D1 \_ LINEARTRANSFER \_ della \_ \_ pendenza blu<br/>               | FLOAT<br/> 1,0 f<br/> | Pendenza della funzione lineare per il canale blu.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| BlueDisable<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Blue \_ Disable<br/>           | BOOL<br/> FALSE<br/> | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale blu. Se si imposta questa opzione su FALSE, viene applicata la funzione BlueLinearTransfer al canale blu.                                                                                                                                                                                                                                                                         |
-| AlphaYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Alpha \_ Y \_ intercetta<br/> | FLOAT<br/> 0,0 f<br/> | L'intersezione Y della funzione lineare per il canale alfa.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| AlphaSlope<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Alpha \_ Slope<br/>             | FLOAT<br/> 0,0 f<br/> | Pendenza della funzione lineare per il canale alfa.                                                                                                                                                                                                                                                                                                                                                                                                       |
-| AlphaDisable<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ Alpha \_ Disable<br/>         | BOOL<br/> FALSE<br/> | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale alfa. Se si imposta questa opzione su FALSE, viene applicata la funzione AlphaLinearTransfer al canale alfa.                                                                                                                                                                                                                                                                      |
-| ClampOutput<br/> D2D1 \_ LINEARTRANSFER \_ prop \_ \_ output Clamp<br/>           | BOOL<br/> FALSE<br/> | Indica se l'effetto fissa i valori dei colori a un valore compreso tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto blocca i valori prima di premoltiplicare l'alfa.<br/> Se si imposta questa impostazione su TRUE, i valori vengono bloccati dall'effetto. Se si imposta questa proprietà su FALSE, l'effetto non blocca i valori dei colori, mentre altri effetti e la superficie di output possono bloccare i valori se non hanno una precisione sufficientemente elevata.<br/> |
+| RedYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ RED \_ Y \_ INTERCEPT<br/>     | FLOAT<br/> 0,0f<br/> | Intercetta Y della funzione lineare per il canale Rosso.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| RedSlope<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ RED \_ SLOPE<br/>                 | FLOAT<br/> 1.0f<br/> | Inclinazione della funzione lineare per il canale Rosso.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| RedDisable<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ RED \_ DISABLE<br/>             | BOOL<br/> FALSE<br/> | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Rosso. Se si imposta questa proprietà su FALSE, l'effetto applica la funzione RedLinearTransfer al canale Red.                                                                                                                                                                                                                                                                    |
+| GreenYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ GREEN \_ Y \_ INTERCEPT<br/> | FLOAT<br/> 0,0f<br/> | Intercetta Y della funzione lineare per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| GreenSlope<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ GREEN \_ SLOPE<br/>             | FLOAT<br/> 1.0f<br/> | Inclinazione della funzione lineare per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| GreenDisable<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ GREEN \_ DISABLE<br/>         | BOOL<br/> FALSE<br/> | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa proprietà su FALSE, la funzione GreenLinearTransfer viene applicata al canale Verde.                                                                                                                                                                                                                                                                      |
+| BlueYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ BLUE \_ Y \_ INTERCEPT<br/>   | FLOAT<br/> 0,0f<br/> | Intercetta Y della funzione lineare per il canale Blu.                                                                                                                                                                                                                                                                                                                                                                                                  |
+| BlueSlope<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ BLUE \_ SLOPE<br/>               | FLOAT<br/> 1.0f<br/> | Inclinazione della funzione lineare per il canale Blu.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| BlueDisable<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ BLUE \_ DISABLE<br/>           | BOOL<br/> FALSE<br/> | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Blu. Se si imposta questa proprietà su FALSE, la funzione BlueLinearTransfer viene applicata al canale Blue.                                                                                                                                                                                                                                                                         |
+| AlphaYIntercept<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ ALPHA \_ Y \_ INTERCEPT<br/> | FLOAT<br/> 0,0f<br/> | Intercetta Y della funzione lineare per il canale Alfa.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| AlphaSlope<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ ALPHA \_ SLOPE<br/>             | FLOAT<br/> 0,0f<br/> | Inclinazione della funzione lineare per il canale Alfa.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| AlphaDisable<br/> D2D1 \_ LINEARTRANSFER \_ PROP \_ ALPHA \_ DISABLE<br/>         | BOOL<br/> FALSE<br/> | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Alfa. Se si imposta questa opzione su FALSE, la funzione AlphaLinearTransfer viene applicata al canale Alfa.                                                                                                                                                                                                                                                                      |
+| ClampOutput<br/> OUTPUT DI D2D1 \_ LINEARTRANSFER \_ PROP \_ CLAMP \_<br/>           | BOOL<br/> FALSE<br/> | Indica se l'effetto stringe i valori di colore tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto stringe i valori prima di premultiplare il valore alfa .<br/> Se si imposta questa opzione su TRUE, l'effetto stringerà i valori. Se si imposta questa proprietà su FALSE, l'effetto non stringerà i valori di colore, ma altri effetti e la superficie di output potrebbero stringere i valori se non hanno una precisione sufficientemente elevata.<br/> |
 
 
 
@@ -99,10 +99,10 @@ Questo effetto funziona su immagini alfa diritte e premoltiplicate. L'effetto re
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

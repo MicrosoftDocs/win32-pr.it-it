@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_GETPOS (COMmctrl. h)
+title: PBM_GETPOS messaggio (Commctrl.h)
 description: Recupera la posizione corrente dell'indicatore di stato.
 ms.assetid: 76f49ec6-f2e1-4486-be8a-7dfd49f8b82c
 keywords:
-- Controlli di Windows Message PBM_GETPOS
+- PBM_GETPOS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e23078a75cfaf3a9002a9a5da79752965cbd620
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4b32ce5c18554ed8eb59c970e48a8ffd8f7991cf7dd85c59458460968a766dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433531"
 ---
-# <a name="pbm_getpos-message"></a>\_Messaggio GETPOS PBM
+# <a name="pbm_getpos-message"></a>Messaggio \_ GETPOS PBM
 
 Recupera la posizione corrente dell'indicatore di stato.
 
@@ -37,7 +37,7 @@ Recupera la posizione corrente dell'indicatore di stato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **uint** che rappresenta la posizione corrente dell'indicatore di stato.
+Restituisce un **valore UINT** che rappresenta la posizione corrente dell'indicatore di stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore **uint** che rappresenta la posizione corrente dell'indica
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

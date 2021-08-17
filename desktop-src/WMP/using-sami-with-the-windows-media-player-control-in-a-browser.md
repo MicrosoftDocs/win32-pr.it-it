@@ -1,35 +1,35 @@
 ---
-title: Uso di SAMI con il controllo Media Player Windows in un browser
-description: Uso di SAMI con il controllo Media Player Windows in un browser
+title: Uso di SAMI con il Windows Media Player in un browser
+description: Uso di SAMI con il Windows Media Player in un browser
 ms.assetid: 41906e57-adaa-4df7-86ba-19b8a757e216
 keywords:
-- Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- Modello a oggetti di Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- modello a oggetti, interscambio multimediale accessibile sincronizzato (SAMI)
-- Windows Media Player Mobile, Media Interchange accessibile sincronizzato (SAMI)
-- Controllo ActiveX Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- Windows Media Player Mobile ActiveX Control, Synchronized Accessible Media Interchange (SAMI)
-- Controllo ActiveX, interscambio multimediale accessibile sincronizzato (SAMI)
+- Windows Media Player,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player a oggetti, Synchronized Accessible Media Interchange (SAMI)
+- modello a oggetti, SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player Dispositivi mobili, SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player ActiveX controllo, Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player Controllo ActiveX mobile,Synchronized Accessible Media Interchange (SAMI)
+- ActiveX,Synchronized Accessible Media Interchange (SAMI)
+- Synchronized Accessible Media Interchange (SAMI),files
 - SAMI (Synchronized Accessible Media Interchange), file
-- SAMI (interscambio multimediale accessibile sincronizzato), file
+- Synchronized Accessible Media Interchange (SAMI), codice di esempio
 - SAMI (Synchronized Accessible Media Interchange), codice di esempio
-- SAMI (interscambio multimediale accessibile sincronizzato), codice di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b651c3af117942d56ffc5334323913d26cdf6f99
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d277f2849e6036d85bc8c03940a7dbd59df8b81083ca88240ebd68be768fde9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134344"
 ---
-# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Uso di SAMI con il controllo Media Player Windows in un browser
+# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Uso di SAMI con il Windows Media Player in un browser
 
-Anziché creare un file SAMI per ogni lingua o stile del tipo di carattere, è possibile dichiarare classi di stile diverse in un file usando gli script di base e il modello a oggetti del controllo Media Player di Windows. È possibile creare controlli personalizzati che consentono all'utente di scegliere tra le diverse opzioni relative allo stile e alla lingua. Inoltre, si ha il controllo completo sulla progettazione dell'interfaccia del lettore e sulla personalizzazione di ogni funzione.
+Anziché creare un file SAMI per ogni stile o linguaggio del carattere, è possibile dichiarare classi di stile diverse in un unico file usando script di base e il modello a oggetti Windows Media Player di controllo. È possibile creare controlli personalizzati che consentono all'utente di scegliere tra le diverse opzioni di stile e lingua. Inoltre, hai il controllo completo sulla progettazione dell'interfaccia del lettore e sulla personalizzazione di ogni funzione.
 
-Per informazioni dettagliate sull'incorporamento del controllo Windows Media Player in una pagina Web, vedere [semplice esempio di scripting in una pagina Web](simple-example-of-scripting-in-a-web-page.md).
+Per informazioni dettagliate sull'incorporamento del controllo Windows Media Player in una pagina Web, vedere Esempio semplice di [scripting in una pagina Web.](simple-example-of-scripting-in-a-web-page.md)
 
-Nell'esempio di codice seguente viene illustrato come utilizzare sottotitoli con il controllo Media Player Windows incorporato in una pagina Web. Include i controlli che consentono all'utente di selezionare lo stile e la lingua del tipo di carattere.
+Il codice di esempio seguente illustra come usare i sottotitoli codificati con il Windows Media Player incorporato in una pagina Web. Include controlli che consentono all'utente di selezionare lo stile e la lingua del carattere.
 
 
 ```C++
@@ -116,12 +116,12 @@ Nell'esempio di codice seguente viene illustrato come utilizzare sottotitoli con
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati a supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

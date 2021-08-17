@@ -1,24 +1,24 @@
 ---
-title: Attributo OrientationAngle di la
-description: Attributo OrientationAngle di la
+title: Attributo VML OrientationAngle
+description: Attributo VML OrientationAngle
 ms.assetid: 9fb355e0-d73c-4e16-8f24-772c8ce1533b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc190fa44b014b4bd00d4e84546736a788c5bdd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a40afed5f07f1c3ff639fa761a0376a4d6dbc363882bf1e9037bb57ec014e552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136974"
 ---
-# <a name="vml-orientationangle-attribute"></a>Attributo OrientationAngle di la
+# <a name="vml-orientationangle-attribute"></a>Attributo VML OrientationAngle
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'angolo di rotazione di un'estrusione intorno all'orientamento. Proprietà di lettura/scrittura. **VgAngle**.
 
@@ -26,22 +26,22 @@ Definisce l'angolo di rotazione di un'estrusione intorno all'orientamento. Propr
 
 [Estrusione](msdn-online-vml-extrusion-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* OrientationAngle = " *Expression* " >
+<o: orientamento dell'elementoangle=" *espressione* "> 
 
 **Sintassi dello script**
 
-*element* . OrientationAngle = "*Expression*"
+*element* .orientationangle="*expression*"
 
-*espressione* = *elemento*. OrientationAngle
+*expression* = *elemento*.orientationangle
 
 **Osservazioni:**
 
-L' [orientamento](msdn-online-vml-orientation-attribute.md) è il vettore intorno al quale una forma estrusa ruota. Il valore predefinito è 0 gradi.
+[L'orientamento](msdn-online-vml-orientation-attribute.md) è il vettore intorno al quale ruota una forma estruso. Il valore predefinito è 0 gradi.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

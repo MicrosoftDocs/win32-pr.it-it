@@ -41,8 +41,8 @@ Il formato della struttura dipende dal valore di *colorType*.
 <dl>
 
 [**TIPO DI COLORE XPS \_ \_ \_ SRGB**](/previous-versions/windows/desktop/dd372944(v=vs.85))  
-[**TIPO DI COLORE XPS \_ \_ \_ SCRGB**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
-[**CONTESTO DEL TIPO DI COLORE XPS \_ \_ \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
+[**TIPO DI \_ COLORE \_ \_ XPS SCRGB**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
+[**CONTESTO DEL TIPO \_ DI \_ COLORE \_ XPS**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
 </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -51,8 +51,8 @@ Il formato della struttura dipende dal valore di *colorType*.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma per app desktop Windows Vista \[ \| app UWP\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per app desktop Windows Server 2008 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma per Windows app desktop di Vista \[ \| app UWP\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per Windows app desktop di Windows Server 2008 \[ app desktop \| UWP\]<br/> |
 | Intestazione<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                              |
 | Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                            |
 

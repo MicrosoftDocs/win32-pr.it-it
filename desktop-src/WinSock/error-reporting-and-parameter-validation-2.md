@@ -1,21 +1,21 @@
 ---
 description: Lo schema per la segnalazione degli errori è diverso tra le interfacce SPI e API.
 ms.assetid: f4a4b406-3e3a-444f-b75a-0cf51bded1bc
-title: Segnalazione errori e convalida parametri
+title: Segnalazione errori e convalida dei parametri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 291fa2ed950d916be39b1a696f5fe8ad6f07280c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5fdec1ee6a4cd7d052ba9f94cdf62ce7de70969a521a7023a5ca41e37f6a931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132614"
 ---
-# <a name="error-reporting-and-parameter-validation"></a>Segnalazione errori e convalida parametri
+# <a name="error-reporting-and-parameter-validation"></a>Segnalazione errori e convalida dei parametri
 
-Lo schema per la segnalazione degli errori è diverso tra le interfacce SPI e API. I provider di servizi Windows Sockets segnalano gli errori insieme alla funzione che restituisce, anziché l'approccio basato sui singoli thread usato nell'API. Il \_32.dll WS2 usa il codice di errore per funzione del provider di servizi per aggiornare il valore di errore per thread ottenuto tramite la funzione API [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) . Tuttavia, i provider di servizi sono ancora necessari per gestire l'errore basato sui socket, che può essere recuperato tramite l' \_ opzione del socket di errore so.
+Lo schema per la segnalazione degli errori è diverso tra le interfacce SPI e API. Windows I provider di servizi Sockets segnalano errori insieme alla funzione restituita, anziché l'approccio basato su thread utilizzato nell'API. L'32.dll Ws2 usa il codice di errore per funzione del provider di servizi per aggiornare il valore di errore per thread ottenuto tramite la funzione \_ API [**WSAGetLastError.**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) I provider di servizi sono comunque necessari per mantenere l'errore basato su socket che può essere recuperato tramite l'opzione socket SO \_ ERROR.
 
-Il \_32.dll WS2 esegue la convalida dei parametri solo per le chiamate di funzione implementate interamente all'interno di se stesso. I provider di servizi sono responsabili dell'esecuzione di tutta la relativa convalida dei parametri.
+L'32.dll Ws2 esegue la convalida dei parametri solo per le chiamate \_ di funzione implementate interamente all'interno di se stessa. I provider di servizi sono responsabili dell'esecuzione di tutte le proprie operazioni di convalida dei parametri.
 
  
 

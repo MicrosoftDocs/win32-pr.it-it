@@ -1,19 +1,19 @@
 ---
-description: Elenco di proprietà da visualizzare in infotip quando l'elemento si trova in una rete lenta.
+description: Elenco di proprietà da visualizzare nella descrizione comandi quando l'elemento si trova in una rete lenta.
 ms.assetid: 4ebc928c-3f31-4322-8c0b-ee0eb2bf5a0f
-title: System. Propin. QuickTip
+title: System.PropList.QuickTip
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 784320c7ef30a1a5babe411fdb9f79825d6995f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2ccb648f3882247b6b4216f41aa711daf2bb29589a60634160129766f93a4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095833"
 ---
-# <a name="systemproplistquicktip"></a>System. Propin. QuickTip
+# <a name="systemproplistquicktip"></a>System.PropList.QuickTip
 
-Elenco di proprietà da visualizzare in infotip quando l'elemento si trova in una rete lenta. Le proprietà con valori vuoti non verranno visualizzate. Eseguire la registrazione in RegValue di "QuickTip".
+Elenco di proprietà da visualizzare nella descrizione comandi quando l'elemento si trova in una rete lenta. Le proprietà con valori vuoti non verranno visualizzate. Eseguire la registrazione nel regvalue di "QuickTip".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

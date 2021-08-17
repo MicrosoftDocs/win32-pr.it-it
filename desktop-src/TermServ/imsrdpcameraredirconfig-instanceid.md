@@ -1,11 +1,11 @@
 ---
 title: Proprietà InstanceId IMsRdpCameraRedirConfig
-description: Ottiene l'ID dell'istanza della fotocamera.
+description: Ottiene l'ID istanza della fotocamera.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà InstanceId
-- Servizi Desktop remoto proprietà InstanceId, interfaccia IMsRdpCameraRedirConfig
-- Interfaccia IMsRdpCameraRedirConfig Servizi Desktop remoto, proprietà InstanceId
+- Proprietà InstanceId Servizi Desktop remoto
+- Proprietà InstanceId Servizi Desktop remoto, interfaccia IMsRdpCameraRedirConfig
+- Interfaccia IMsRdpCameraRedirConfig Servizi Desktop remoto , proprietà InstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 42654e84f64b25a051a78963339ca95d4ebf760f
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 621c865f9727cf484430d00609dcfcfac2431a514cf2bade714fdd4d81b0408c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104225291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119401001"
 ---
-# <a name="imsrdpcameraredirconfiginstanceid-property"></a>Proprietà IMsRdpCameraRedirConfig:: InstanceId
+# <a name="imsrdpcameraredirconfiginstanceid-property"></a>Proprietà IMsRdpCameraRedirConfig::InstanceId
 
-Ottiene l'ID dell'istanza della fotocamera.
+Ottiene l'ID istanza della fotocamera.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ HRESULT get_InstanceId(
 
 ## <a name="property-value"></a>Valore proprietà
 
-ID dell'istanza della fotocamera.
+ID istanza della fotocamera.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ ID dell'istanza della fotocamera.
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfig è definito come 09750604-D625-47C1-9FCD-F09F735705D7            |
+| IID                      | IMsRdpCameraRedirConfig IID è definito come \_ 09750604-D625-47C1-9FCD-F09F735705D7            |
 
 ## <a name="see-also"></a>Vedi anche
 

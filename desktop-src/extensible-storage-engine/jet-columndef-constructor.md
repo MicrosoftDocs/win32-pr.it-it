@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Costruttore JET_COLUMNDEF'
-title: Costruttore JET_COLUMNDEF
+description: 'Altre informazioni su: costruttore JET_COLUMNDEF'
+title: JET_COLUMNDEF costruttore
 TOCTitle: 'JET_COLUMNDEF constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef.jet_columndef(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3f88ea8190a58c6bf9d20154fcf2a9f8c9f40af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 376a4c31d13ced5d6de78774134ed58bb35b74290ea382273164802531aa84da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475389"
 ---
-# <a name="jet_columndef-constructor"></a>Costruttore JET_COLUMNDEF
+# <a name="jet_columndef-constructor"></a>JET_COLUMNDEF costruttore
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,8 +54,8 @@ public JET_COLUMNDEF()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNDEF](./jet-columndef-class.md)
+[JET_COLUMNDEF classe](./jet-columndef-class.md)
 
-[Membri JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF membri](./jet-columndef-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-approx-immed-subordinates
-description: Il valore restituito da questo attributo è basato sulle dimensioni degli indici. Questa operazione può essere disattivata da +/\ 8211; 10 su contenitori di grandi dimensioni e l'errore è teoricamente non associato, ma l'utilizzo di questo attributo consente all'interfaccia utente di visualizzare il contenuto di un contenitore.
+title: Attributo ms-DS-Approx-Immed-Subordinates
+description: Il valore restituito da questo attributo è basato sulle dimensioni dell'indice. Questa opzione può essere disattivata di +/ \ 8211;10 in contenitori di grandi dimensioni e l'errore è teoricamente non associato, ma l'uso di questo attributo consente all'interfaccia utente di visualizzare il contenuto di un contenitore.
 ms.assetid: 0d6e3b53-dfad-49ac-bbb3-e53c33ea9cd8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-approx-immed-subordinates
-- msDS-approx-immed-subordinates-schema AD
+- Schema AD dell'attributo ms-DS-Approx-Immed-Subordinates
+- Schema AD dell'attributo msDS-Approx-Immed-Subordinates
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb51ef642c216d8e41b774ffc596a8f3d4feb28
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2291cf5dc669d0f0cac64de8ab9cbfc128ecbdd99153c5f96b1cf07a44d9a02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442721"
 ---
-# <a name="ms-ds-approx-immed-subordinates-attribute"></a>attributo ms-DS-approx-immed-subordinates
+# <a name="ms-ds-approx-immed-subordinates-attribute"></a>Attributo ms-DS-Approx-Immed-Subordinates
 
-Il valore restituito da questo attributo è basato sulle dimensioni degli indici. Questa operazione può essere disattivata da +/10% nei contenitori di grandi dimensioni e l'errore è teoricamente non associato, ma l'utilizzo di questo attributo consente all'interfaccia utente di visualizzare il contenuto di un contenitore.
+Il valore restituito da questo attributo è basato sulle dimensioni dell'indice. Questa opzione può essere disattivata del +/ 10% nei contenitori di grandi dimensioni e l'errore è teoricamente non associato, ma l'uso di questo attributo consente all'interfaccia utente di visualizzare il contenuto di un contenitore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-approx-immed-subordinates      |
-| LDAP-Display-Name | msDS-approx-immed-subordinati       |
+| CN                | ms-DS-Approx-Immed-Subordinates      |
+| Ldap-Display-Name | msDS-Approx-Immed-Subordinates       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1669              |
-| System-ID-GUID    | e185d243-f6ce-4adb-b496-b0c005d7823c |
+| System-Id-Guid    | e185d243-f6ce-4adb-b496-b0c005d7823c |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il valore restituito da questo attributo è basato sulle dimensioni degli indici
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

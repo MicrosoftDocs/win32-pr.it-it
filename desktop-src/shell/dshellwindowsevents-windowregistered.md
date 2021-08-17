@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shdocvw.dll
 ms.assetid: 7faf758a-daa0-47f5-9f95-61fe3d8286ea
-ms.openlocfilehash: 64bf83a88584c5d97994726696d4fb3a1e971bdf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7ad7270f9054b875eabcb1fd9f5a7ab2e299a5916d55ef4630988921b6b2f4ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455571"
 ---
 # <a name="dshellwindowseventswindowregistered-method"></a>Metodo DShellWindowsEvents.WindowRegistered
 
@@ -62,7 +62,7 @@ A una finestra viene concesso un cookie quando viene registrato come finestra sh
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Prodotto<br/> | Internet Explorer 5<br/>                                                                                           |
+| Product<br/> | Internet Explorer 5<br/>                                                                                           |
 | DLL<br/>     | <dl> <dt>Shdocvw.dll (versione 5.00.2014.0216 o successiva)</dt> </dl> |
 
 

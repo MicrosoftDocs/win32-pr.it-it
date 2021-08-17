@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_OLEOPFAILED (RichEdit. h)
-description: Notifica alla finestra padre di un controllo Rich Edit che un'azione dell'utente su un oggetto Component Object Model (COM) ha avuto esito negativo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un \_ messaggio di notifica WM.
+title: EN_OLEOPFAILED di notifica (Richedit.h)
+description: Notifica alla finestra padre di un controllo Rich Edit che un'azione dell'utente su un oggetto Component Object Model (COM) non è riuscita. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: b674c36f-2454-473e-8e1c-368c0afd8c34
 keywords:
-- Controlli di Windows per il codice di notifica EN_OLEOPFAILED
+- EN_OLEOPFAILED codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 139c51642c8cb6d5efd369cf6b373068604439b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a0391bfc61ff9350758ac81ff6f54fb1cff61d0dd1ebbcb2b8ef02ada9fe3fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436681"
 ---
-# <a name="en_oleopfailed-notification-code"></a>\_Codice di notifica en OLEOPFAILED
+# <a name="en_oleopfailed-notification-code"></a>Codice \_ di notifica EN OLEOPFAILED
 
-Notifica alla finestra padre di un controllo Rich Edit che un'azione dell'utente su un oggetto Component Object Model (COM) ha avuto esito negativo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo Rich Edit che un'azione dell'utente su un oggetto Component Object Model (COM) non è riuscita. Un controllo Rich Edit invia questo codice di notifica sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Questo codice di notifica restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-La finestra padre otterrà sempre un messaggio [**di \_ notifica WM**](wm-notify.md) per questo evento, ma non richiede una maschera di notifica inviata con [**em \_ SETEVENTMASK**](em-seteventmask.md).
+La finestra padre riceverà sempre un [**messaggio WM \_ NOTIFY**](wm-notify.md) per questo evento, non richiede una maschera di notifica inviata con [**EM \_ SETEVENTMASK**](em-seteventmask.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ La finestra padre otterrà sempre un messaggio [**di \_ notifica WM**](wm-notify
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
