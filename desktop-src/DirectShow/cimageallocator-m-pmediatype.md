@@ -1,5 +1,5 @@
 ---
-description: 'Membro CImageAllocator::m_pMediaType : la variabile membro m pMediaType è un puntatore \_ al tipo di supporto corrente.'
+description: 'Membro CImageAllocator::m_pMediaType: la variabile membro m pMediaType è un puntatore \_ al tipo di supporto corrente.'
 ms.assetid: a41e938f-5f01-4fd0-99d7-65d3a93822a5
 title: Membro CImageAllocator::m_pMediaType (Winutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7056b6bf4ea2b36f60ddc586e3ba528ca190a3e7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 38c83e212696e665e7bb6c78337c32157e0393174b9e729232cdd728a082560f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074165"
 ---
 # <a name="cimageallocatorm_pmediatype-member"></a>Membro CImageAllocator::m \_ pMediaType
 
@@ -42,7 +42,7 @@ CMediaType *m_pMediaType;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

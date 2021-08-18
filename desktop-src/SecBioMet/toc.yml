@@ -1,28 +1,28 @@
 - name: Windows Biometric Framework
   href: biometric-service-api-portal.md
   items:
-    - name: Panoramica di Biometric Framework
+    - name: Panoramica del framework biometrico
       href: biometric-framework-overview.md
       items:
-        - name: Terminologia di Framework biometrico
+        - name: Terminologia del framework biometrico
           href: biometric-framework-terminology.md
-        - name: Sicurezza del Framework
+        - name: Sicurezza del framework
           href: framework-security.md
           items:
             - name: Requisiti dei sensori per la biometria sicura
               href: sensor-requirements-for-secure-biometrics.md
-        - name: Architettura plug-in
+        - name: Architettura del plug-in
           href: plug-in-architecture.md
-    - name: Creazione di plug-in di adapter
+    - name: Creare plug-in dell'adapter
       href: creating-adapter-plug-ins.md
       items:
-        - name: Flusso di lavoro adapter
+        - name: Flusso di lavoro dell'adapter
           href: adapter-workflow.md
-        - name: Creazione di un adattatore del motore
+        - name: Creazione di un adattatore motore
           href: creating-an-engine-adapter.md
-        - name: Creazione di un adattatore del sensore
+        - name: Creazione di un adattatore sensore
           href: creating-a-sensor-adapter.md
-        - name: Creazione di un adattatore di archiviazione
+        - name: Creazione di un Archiviazione adapter
           href: creating-a-storage-adapter.md
     - name: Creazione di un pool di sensori privato
       href: creating-a-private-sensor-pool.md
@@ -36,17 +36,17 @@
               href: system-sensor-pool.md
             - name: Comportamento del pool di sistema
               href: system-pool-behavior.md
-        - name: Impostazione del pool privato
+        - name: Configurazione del pool privato
           href: private-pool-setup.md
         - name: Identità del pool privato
           href: private-pool-identity.md
         - name: Registrazione del pool privato
           href: private-pool-enrollment.md
-        - name: Funzioni di supporto del pool privato
+        - name: Funzioni helper del pool privato
           href: private-pool-helper-functions.md
         - name: Creare applicazioni client
           href: creating-client-applications.md
-    - name: Informazioni di riferimento sull'API Windows Biometric Framework
+    - name: Windows Informazioni di riferimento sulle API del framework biometrico
       href: biometric-service-api-reference.md
       items:
         - name: Riferimento all'applicazione client
@@ -217,7 +217,7 @@
                   href: winbio-unit-schema.md
                 - name: WINBIO_VERSION
                   href: winbio-version.md
-            - name: Enumerazioni delle applicazioni client
+            - name: Enumerazioni di applicazioni client
               href: client-application-enumerations.md
               items:
                 - name: WINBIO_ANTI_SPOOF_POLICY_ACTION
@@ -240,93 +240,93 @@
             - name: Costanti dell'applicazione client
               href: client-application-constants.md
               items:
-                - name: Costanti BIO_UNIT
+                - name: BIO_UNIT costanti
                   href: bio-unit-constants.md
-                - name: Codici di errore client
+                - name: Codici di errore del client
                   href: client-error-codes.md
                 - name: Costanti generali
                   href: general-constants.md
-                - name: Costanti WINBIO_ANSI_381_FORMAT
+                - name: WINBIO_ANSI_381_FORMAT costanti
                   href: winbio-ansi-381-format-constants.md
-                - name: Costanti WINBIO_ANSI_381_IMG
+                - name: costanti WINBIO_ANSI_381_IMG
                   href: winbio-ansi-381-img-constants.md
-                - name: Costanti WINBIO_ANSI_381_IMG_ACQ
+                - name: WINBIO_ANSI_381_IMG_ACQ costanti
                   href: winbio-ansi-381-img-acq-constants.md
-                - name: Costanti WINBIO_ANSI_381_IMP_TYPE
+                - name: WINBIO_ANSI_381_IMP_TYPE costanti
                   href: winbio-ansi-381-imp-type-constants.md
-                - name: Costanti WINBIO_ANSI_381_PIXELS
+                - name: WINBIO_ANSI_381_PIXELS costanti
                   href: winbio-ansi-381-pixels-constants.md
-                - name: Costanti impronta digitale WINBIO_ANSI_381_POS
+                - name: WINBIO_ANSI_381_POS costanti per le impronte digitali
                   href: winbio-ansi-381-pos-fingerprint-constants.md
-                - name: Costanti WINBIO_ANSI_381_POS Palm
+                - name: WINBIO_ANSI_381_POS Palm Constants
                   href: winbio-ansi-381-pos-palm-constants.md
-                - name: Costanti WINBIO_ANSI_385_FACE
+                - name: WINBIO_ANSI_385_FACE costanti
                   href: winbio-ansi-385-face-constants.md
-                - name: Costanti WINBIO_BIOMETRIC_SENSOR_SUBTYPE
+                - name: WINBIO_BIOMETRIC_SENSOR_SUBTYPE costanti
                   href: winbio-biometric-sensor-subtype-constants.md
-                - name: Costanti WINBIO_BIOMETRIC_SUBTYPE
+                - name: WINBIO_BIOMETRIC_SUBTYPE costanti
                   href: winbio-biometric-subtype-constants.md
-                - name: Costanti WINBIO_BIOMETRIC_TYPE
+                - name: WINBIO_BIOMETRIC_TYPE costanti
                   href: winbio-biometric-type-constants.md
-                - name: Costanti WINBIO_BIR_DATA_FLAGS
+                - name: WINBIO_BIR_DATA_FLAGS costanti
                   href: winbio-bir-data-flags-constants.md
-                - name: Costanti WINBIO_BIR_FIELD
+                - name: WINBIO_BIR_FIELD costanti
                   href: winbio-bir-field-constants.md
-                - name: Costanti WINBIO_BIR_PURPOSE
+                - name: WINBIO_BIR_PURPOSE costanti
                   href: winbio-bir-purpose-constants.md
-                - name: Costanti WINBIO_BIR_QUALITY
+                - name: WINBIO_BIR_QUALITY costanti
                   href: winbio-bir-quality-constants.md
-                - name: Costanti WINBIO_BIR_VERSION
+                - name: WINBIO_BIR_VERSION costanti
                   href: winbio-bir-version-constants.md
-                - name: Costanti WINBIO_CAPABILITY
+                - name: costanti WINBIO_CAPABILITY
                   href: winbio-capability-constants.md
-                - name: Costanti WINBIO_COMPONENT
+                - name: WINBIO_COMPONENT costanti
                   href: winbio-component-constants.md
-                - name: Costanti WINBIO_DATABASE_TYPE
+                - name: WINBIO_DATABASE_TYPE costanti
                   href: winbio-database-type-constants.md
-                - name: Costanti WINBIO_DB
+                - name: costanti WINBIO_DB
                   href: winbio-db-constants.md
-                - name: Costanti WINBIO_ENG_CAP
+                - name: costanti WINBIO_ENG_CAP
                   href: winbio-eng-cap-constants.md
-                - name: Costanti WINBIO_EVENT
+                - name: WINBIO_EVENT costanti
                   href: winbio-event-constants.md
-                - name: Costanti WINBIO_FLAG
+                - name: WINBIO_FLAG costanti
                   href: winbio-flag-constants.md
-                - name: Costanti WINBIO_FRAMEWORK_CHANGE
+                - name: WINBIO_FRAMEWORK_CHANGE costanti
                   href: winbio-framework-change-constants.md
-                - name: Costanti WINBIO_IDENTITY_TYPE
+                - name: costanti WINBIO_IDENTITY_TYPE
                   href: winbio-identity-type-constants.md
-                - name: Costanti WINBIO_INDICATOR_STATUS
+                - name: WINBIO_INDICATOR_STATUS costanti
                   href: winbio-indicator-status-constants.md
-                - name: Costanti WINBIO_NO_FORMAT
+                - name: WINBIO_NO_FORMAT costanti
                   href: winbio-no-format-constants.md
-                - name: Costanti WINBIO_IRIS
+                - name: WINBIO_IRIS costanti
                   href: winbio-iris-constants.md
-                - name: Costanti WINBIO_OPERATION_TYPE
+                - name: WINBIO_OPERATION_TYPE costanti
                   href: winbio-operation-type-constants.md
-                - name: Costanti WINBIO_ORIENTATION
+                - name: WINBIO_ORIENTATION costanti
                   href: winbio-orientation-constants.md
-                - name: Costanti WINBIO_POOL
+                - name: WINBIO_POOL costanti
                   href: winbio-pool-constants.md
-                - name: Costanti WINBIO_PRESENCE_CHANGE
+                - name: WINBIO_PRESENCE_CHANGE costanti
                   href: winbio-presence-change-constants.md
-                - name: Costanti WINBIO_PROPERTY
+                - name: WINBIO_PROPERTY costanti
                   href: winbio-property-constants.md
-                - name: Costanti WINBIO_PROPERTY_TYPE
+                - name: costanti WINBIO_PROPERTY_TYPE
                   href: winbio-property-type-constants.md
-                - name: Costanti WINBIO_REJECT_DETAIL
+                - name: WINBIO_REJECT_DETAIL costanti
                   href: winbio-reject-detail-constants.md
-                - name: Costanti WINBIO_SENSOR_MODE
+                - name: WINBIO_SENSOR_MODE costanti
                   href: winbio-sensor-mode-constants.md
-                - name: Costanti WINBIO_SETTING_SOURCE
+                - name: WINBIO_SETTING_SOURCE costanti
                   href: winbio-setting-source-constants.md
-        - name: Riferimento al plug-in
+        - name: Informazioni di riferimento sul plug-in
           href: plug-in-reference.md
           items:
             - name: Funzioni plug-in
               href: plug-in-functions.md
               items:
-                - name: Funzioni dell'adattatore del motore
+                - name: Funzioni dell'adattatore motore
                   href: engine-adapter-functions.md
                   items:
                     - name: EngineAdapterCreateKey
@@ -405,7 +405,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_verify_feature_set_fn
                     - name: WbioQueryEngineInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioqueryengineinterface
-                - name: Funzioni Adattatore sensore
+                - name: Funzioni dell'adattatore sensore
                   href: sensor-adapter-functions.md
                   items:
                     - name: SensorAdapterAcceptCalibrationData
@@ -458,7 +458,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_start_capture_fn
                     - name: WbioQuerySensorInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioquerysensorinterface
-                - name: Funzioni adattatore di archiviazione
+                - name: Archiviazione Funzioni dell'adapter
                   href: storage-adapter-functions.md
                   items:
                     - name: StorageAdapterActivate
@@ -535,9 +535,9 @@
             - name: Funzioni wrapper plug-in
               href: plug-in-wrapper-functions.md
               items:
-                - name: Wrapper dell'adattatore del motore
+                - name: Wrapper dell'adapter del motore
                   href: engine-adapter-wrappers.md
-                - name: Wrapper adattatore sensore
+                - name: Wrapper dell'adattatore del sensore
                   href: sensor-adapter-wrappers.md
-                - name: Wrapper dell'adattatore di archiviazione
+                - name: Archiviazione Wrapper dell'adapter
                   href: storage-adapter-wrappers.md

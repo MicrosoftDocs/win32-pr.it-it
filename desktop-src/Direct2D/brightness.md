@@ -1,26 +1,26 @@
 ---
 title: Effetto luminosità
-description: Usare l'effetto di luminosità per controllare la luminosità dell'immagine.
+description: Usare l'effetto luminosità per controllare la luminosità dell'immagine.
 ms.assetid: 5088D4D4-DFC8-45D3-B1C3-D576742D931C
 keywords:
 - effetto luminosità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88dd9797aa125e7099ba4a706bac730a30715f6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f88b67615948cbea74333605e900de194c0eeeb3d747d83af5eae8a750e6f135
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104552095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119215399"
 ---
 # <a name="brightness-effect"></a>Effetto luminosità
 
-Usare l'effetto di luminosità per controllare la luminosità dell'immagine.
+Usare l'effetto luminosità per controllare la luminosità dell'immagine.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Brightness.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Bitmap di output](#output-bitmap)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
@@ -31,9 +31,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1Brightness.
 
 | Prima                                                      |
 |-------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)  |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)  |
 | After                                                       |
-| ![immagine dopo la trasformazione.](images/34-brightness.png) |
+| ![l'immagine dopo la trasformazione.](images/34-brightness.png) |
 
 
 
@@ -53,43 +53,43 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato proprietà                                                 | Tipo e valore predefinito                              | Descrizione                                                                                                                                                                                                                                                                 |
+| Nome visualizzato della proprietà                                                 | Tipo e valore predefinito                              | Descrizione                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WhitePoint<br/> \_ \_ \_ Punto bianco prop luminosità \_ d2d1<br/> | D2D1 \_ vector \_ 2F<br/> {1.0 f, 1.0 f}<br/> | Parte superiore della curva di trasferimento della luminosità. Il punto bianco regola l'aspetto delle parti più luminose dell'immagine. Questa proprietà è per il valore x e il valore y, in questo ordine. Ognuno dei valori di questa proprietà è compreso tra 0 e 1 inclusi. |
-| BlackPoint<br/> \_ \_ Punto nero della prop d2d1 brightness \_ \_<br/> | D2D1 \_ vector \_ 2F<br/> {0,0 f, 0,0 f}<br/> | Parte inferiore della curva di trasferimento della luminosità. Il punto nero regola l'aspetto delle parti più scure dell'immagine. Questa proprietà è per il valore x e il valore y, in questo ordine. Ognuno dei valori di questa proprietà è compreso tra 0 e 1 inclusi.   |
+| WhitePoint<br/> PUNTO BIANCO DELLA PROPRIETÀ \_ DI \_ LUMINOSITÀ \_ D2D1 \_<br/> | D2D1 \_ VECTOR \_ 2F<br/> {1.0f, 1.0f}<br/> | Parte superiore della curva di trasferimento della luminosità. Il punto bianco regola l'aspetto delle parti più luminosi dell'immagine. Questa proprietà è per il valore x e il valore y, in questo ordine. Ognuno dei valori di questa proprietà è compreso tra 0 e 1, inclusi. |
+| BlackPoint<br/> PUNTO NERO DELLA PROPRIETÀ \_ DI \_ LUMINOSITÀ \_ D2D1 \_<br/> | D2D1 \_ VECTOR \_ 2F<br/> {0.0f, 0.0f}<br/> | Parte inferiore della curva di trasferimento della luminosità. Il punto nero regola l'aspetto delle parti più scure dell'immagine. Questa proprietà è per il valore x e il valore y, in questo ordine. Ognuno dei valori di questa proprietà è compreso tra 0 e 1, inclusi.   |
 
 
 
  
 
-Questo effetto utilizza i punti bianco e nero specificati per generare una funzione di trasferimento utilizzata per modificare la bitmap. L'equazione successiva descrive la funzione di trasferimento. Le intensità di input sono definite tra 0 e 1.
+Questo effetto usa i punti bianco e nero specificati per generare una funzione di trasferimento usata per regolare la bitmap. L'equazione successiva descrive la funzione di trasferimento. Le intensità di input sono definite tra 0 e 1.
 
-![algoritmo di luminosità](images/brightness-formula1.png)
+![Algoritmo di luminosità](images/brightness-formula1.png)
 
-L'algoritmo Effect implementa un'equazione che crea la funzione di trasferimento. Questa funzione viene usata per modificare i pixel dell'immagine. I valori x e y del punto nero e del punto bianco sono le coordinate in due dimensioni connesse alla trasformazione. Ogni parte dell'equazione di output finale:
+L'algoritmo dell'effetto implementa un'equazione che crea la funzione di trasferimento. Questa funzione viene utilizzata per regolare i pixel dell'immagine. I valori x e y del punto nero e del punto bianco sono le coordinate in due dimensioni connesse per formare la trasformazione. Ogni parte dell'equazione di output finale:
 
-1.  Converte i dati dell'immagine dallo spazio lineare allo spazio non lineare utilizzando questa equazione:![funzione helper 1](images/brightness-formula2.png)
+1.  Converte i dati dell'immagine dallo spazio lineare allo spazio non lineare usando questa equazione:![Funzione helper 1](images/brightness-formula2.png)
 
-2.  Regola l'immagine in base a questi valori:
-    -   *input* è il valore di intensità pixel dell'immagine di input compreso tra 0 e 1.
+2.  Regola l'immagine in base ai valori seguenti:
+    -   *input* è il valore di intensità pixel dell'immagine di input da 0 a 1.
 
-    -   *PT bianco. (x, y)* posizione della curva di trasformazione per le intensità dei pixel più brillanti.
+    -   *Bianco Pt. (x, y)* posizione della curva di trasformazione per intensità pixel più brillanti.
 
-    -   *Black pt. (x, y)* è la posizione della curva di trasformazione per le intensità dei pixel dimmer.
+    -   *Black Pt. (x, y)* è la posizione della curva di trasformazione per le intensità dei pixel dimmer.
 
-3.  Converte nuovamente i dati dell'immagine nello spazio lineare usando questa equazione: ![funzione helper 2](images/brightness-formula3.png)
+3.  Converte nuovamente i dati dell'immagine nello spazio lineare usando questa equazione: ![Funzione helper 2](images/brightness-formula3.png)
 
-L'equazione di output finale e le parti del componente sono illustrate di seguito.
+L'equazione di output finale e le parti del componente sono mostrate qui.
 
 ![calcoli completi per la regolazione della luminosità](images/brightness-formula4.png)
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
+Le dimensioni della bitmap di output sono le stesse delle dimensioni della bitmap di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,10 +97,10 @@ La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

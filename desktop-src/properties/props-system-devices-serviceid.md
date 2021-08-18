@@ -1,17 +1,17 @@
 ---
 description: Identificatore del servizio del dispositivo.
 ms.assetid: d21c0e16-403b-45f0-a9a8-2aa4d7f79cc7
-title: System. Devices. ServiceId
+title: System.Devices.ServiceId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2428c148ae2a66319b01102e21bfad6d277edbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59b80d756fb33bd23c6d16b158da190b58c7552224d796a816f4fb626dee8396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097180"
 ---
-# <a name="systemdevicesserviceid"></a>System. Devices. ServiceId
+# <a name="systemdevicesserviceid"></a>System.Devices.ServiceId
 
 Identificatore del servizio del dispositivo.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

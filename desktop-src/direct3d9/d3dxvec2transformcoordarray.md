@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 257cb77ba97396170f221cff1c512a73eb84179c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3bf8ecfe1eeefa6e7d9af3a01d3a3e222f003b77a16e3d25f200e221c041983d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374281"
 ---
 # <a name="d3dxvec2transformcoordarray-function-d3dx9mathh"></a>Funzione D3DXVec2TransformCoordArray (D3dx9math.h)
 
@@ -77,7 +77,7 @@ Puntatore alla matrice [**D3DXVECTOR2 di**](d3dxvector2.md) origine.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra vettori nel flusso di dati di input.
+Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 

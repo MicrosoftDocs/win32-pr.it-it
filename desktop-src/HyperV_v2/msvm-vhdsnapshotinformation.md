@@ -1,7 +1,7 @@
 ---
-description: Fornisce informazioni su uno snapshot in un file di set VHD.
+description: Fornisce informazioni su uno snapshot all'interno di un file di set di dischi rigidi virtuali.
 ms.assetid: 922bf0b8-523d-488e-9a41-1a27594e2e44
-title: Classe Msvm_VHDSnapshotInformation
+title: Msvm_VHDSnapshotInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1a1e2a573546d62d79170f15abddd8d5c17e30f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c256ee2d3fb277fc98fa440403cf385377d7f64160267ff39a2d905c59f9d3ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068451"
 ---
-# <a name="msvm_vhdsnapshotinformation-class"></a>\_Classe MSVM VHDSnapshotInformation
+# <a name="msvm_vhdsnapshotinformation-class"></a>Classe Msvm \_ VHDSnapshotInformation
 
-Fornisce informazioni su uno snapshot in un file di set VHD
+Fornisce informazioni su uno snapshot all'interno di un file di set di dischi rigidi virtuali
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -49,91 +49,91 @@ class Msvm_VHDSnapshotInformation
 
 ## <a name="members"></a>Members
 
-La **classe \_ VHDSnapshotInformation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VHDSnapshotInformation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VHDSnapshotInformation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VHDSnapshotInformation** ha queste proprietà.
 
 <dl> <dt>
 
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora della creazione dello snapshot.
+Data e ora di creazione dello snapshot.
 
 </dd> <dt>
 
-**FilePath**
+**Filepath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso del file di set VHD.
+Percorso del file del set di dischi rigidi virtuali.
 
 </dd> <dt>
 
 **ParentPathsList**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di percorsi di file che rappresentano tutti i file da cui dipende questo snapshot. Questo campo sarà vuoto a meno che non sia richiesto in modo specifico. La prima voce è l'elemento padre diretto del file, con l'ultima voce che corrisponde alla radice.
+Elenco di percorsi di file che rappresentano tutti i file da cui dipende lo snapshot. Questo campo sarà vuoto, a meno che non sia stato richiesto in modo specifico. La prima voce è l'elemento padre diretto del file, con l'ultima voce che rappresenta la radice.
 
 </dd> <dt>
 
 **ResilientChangeTrackingId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-ID di rilevamento delle modifiche resiliente, se presente, associato a questo snapshot.
+ID del rilevamento delle modifiche resiliente, se presente, associato a questo snapshot.
 
 </dd> <dt>
 
 **SnapshotId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-GUID che identifica in modo univoco questo snapshot all'interno del file di set VHD.
+GUID che identifica in modo univoco lo snapshot all'interno del file del set di dischi rigidi virtuali.
 
 </dd> <dt>
 
 **SnapshotPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso del file rappresentato da questo snapshot. Questo campo può essere vuoto se non è presente alcun file associato a questo snapshot.
+Percorso del file rappresentato da questo snapshot. Questo campo può essere vuoto se a questo snapshot non è associato alcun file.
 
 </dd> </dl>
 
@@ -143,10 +143,10 @@ Percorso del file rappresentato da questo snapshot. Questo campo può essere vuo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

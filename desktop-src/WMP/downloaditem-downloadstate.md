@@ -1,9 +1,9 @@
 ---
 title: DownloadItem.downloadState
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. La proprietà downloadState recupera lo stato del download.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. La proprietà downloadState recupera lo stato del download.
 ms.assetid: dde27f43-40ee-4eb9-b316-42312ee937d0
 keywords:
-- Media Player Windows DownloadItem. downloadState
+- DownloadItem.downloadState Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd2af2fab2ecb69df5b4695b227631b5be2dd96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3f2f1d7338370aaa5132c479d155ffbfc4282a686d082df37446be053efab3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997051"
 ---
 # <a name="downloaditemdownloadstate"></a>DownloadItem.downloadState
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-La proprietà **downloadState** recupera lo stato del download.
+La **proprietà downloadState** recupera lo stato del download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura contenente uno dei valori seguenti.
+Questa proprietà è un numero di sola **lettura** contenente uno dei valori seguenti.
 
 
 
@@ -61,7 +61,7 @@ Questa proprietà è un **numero** di sola lettura contenente uno dei valori seg
 
 ## <a name="remarks"></a>Commenti
 
-Gli Stati di download possono essere eseguiti in qualsiasi ordine. Non scrivere codice che dipende dall'occorrenza di un particolare stato di download.
+Gli stati di download possono verificarsi in qualsiasi ordine. Non scrivere codice che dipende dall'occorrenza di uno stato di download specifico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ Gli Stati di download possono essere eseguiti in qualsiasi ordine. Non scrivere 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

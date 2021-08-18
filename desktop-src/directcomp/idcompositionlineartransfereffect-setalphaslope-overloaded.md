@@ -1,6 +1,6 @@
 ---
-title: Metodi SetAlphaSlope di idcompositionlineartransfereffect (Dcomp. h)
-description: Imposta la pendenza della funzione lineare per il canale alfa.
+title: Metodi setAlphaSlope idcompositionlineartransfereffect (Dcomp.h)
+description: Imposta l'inclinazione della funzione lineare per il canale alfa.
 ms.assetid: 1de76dcb-9fcb-ddda-0a98-be151ff869ff
 keywords:
 - Metodi SetAlphaSlope DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: f72b1c1afb7946f60c13d8ac9426dfa081d9e1d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ac81b48aa46c9e4222c6c71d5b40ed52447212c0bc44db1b457fc959117e323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118995"
 ---
-# <a name="idcompositionlineartransfereffectsetalphaslope-methods"></a>Metodi idcompositionlineartransfereffect:: SetAlphaSlope
+# <a name="idcompositionlineartransfereffectsetalphaslope-methods"></a>Metodi idcompositionlineartransfereffect::SetAlphaSlope
 
-Imposta la pendenza della funzione lineare per il canale alfa.
+Imposta l'inclinazione della funzione lineare per il canale alfa.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta la pendenza della funzione lineare per il canale alfa.
 
 | Metodo                                                                                                 | Descrizione                                                             |
 |:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------|
-| [**SetAlphaSlope**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphaslope(float))                               | Imposta la pendenza della funzione lineare per il canale alfa.<br/> |
-| [**SetAlphaSlope (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphaslope(idcompositionanimation)) | Imposta la pendenza della funzione lineare per il canale alfa.<br/> |
+| [**SetAlphaSlope**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphaslope(float))                               | Imposta l'inclinazione della funzione lineare per il canale alfa.<br/> |
+| [**SetAlphaSlope (IDCompositionAnimation) \***](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphaslope(idcompositionanimation)) | Imposta l'inclinazione della funzione lineare per il canale alfa.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Imposta la pendenza della funzione lineare per il canale alfa.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

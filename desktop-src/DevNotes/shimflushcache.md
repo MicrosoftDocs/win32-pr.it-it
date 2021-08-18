@@ -1,7 +1,7 @@
 ---
-description: Svuota la cache del database shim. Questa funzione deve essere chiamata dopo l'installazione di un nuovo database shim.
+description: Scarica la cache del database shim. Questa funzione deve essere chiamata dopo l'installazione di un nuovo database shim.
 ms.assetid: 7e5bbdca-7b58-4c51-9cd1-105b05ee7fbe
-title: ShimFlushCache (funzione)
+title: Funzione ShimFlushCache
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 35e279c5036142ec87c5bad6d7c512388033bc94
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ecf1291b7fdcfb43170ec7e269fa140c321fafdbc09989fc7ee2b392f11c1160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075915"
 ---
-# <a name="shimflushcache-function"></a>ShimFlushCache (funzione)
+# <a name="shimflushcache-function"></a>Funzione ShimFlushCache
 
-Svuota la cache del database shim. Questa funzione deve essere chiamata dopo l'installazione di un nuovo database shim.
+Scarica la cache del database shim. Questa funzione deve essere chiamata dopo l'installazione di un nuovo database shim.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ BOOL WINAPI ShimFlushCache(
 
 <dl> <dt>
 
-*HWND* \[ in, facoltativo\]
+*hwnd* \[ in, facoltativo\]
 </dt> <dd>
 
-Inutilizzati deve essere 0.
+Non usato; deve essere 0.
 
 </dd> <dt>
 
-*HINSTANCE* \[ in, facoltativo\]
+*hInstance* \[ in, facoltativo\]
 </dt> <dd>
 
-Inutilizzati deve essere 0.
+Non usato; deve essere 0.
 
 </dd> <dt>
 
 *lpszCmdLine* \[ in, facoltativo\]
 </dt> <dd>
 
-Inutilizzati deve essere 0.
+Non usato; deve essere 0.
 
 </dd> <dt>
 
-*nCmdShow* \[ in\]
+*nCmdShow* \[ Pollici\]
 </dt> <dd>
 
-Inutilizzati deve essere 0.
+Non usato; deve essere 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
@@ -84,8 +84,8 @@ Il chiamante deve essere un amministratore.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

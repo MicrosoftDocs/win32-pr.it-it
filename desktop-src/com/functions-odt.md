@@ -1,25 +1,25 @@
 ---
-title: Funzioni (OLE e Trasferimento dati)
-description: Le funzioni seguenti vengono utilizzate per implementare documenti composti ed eseguire il trasferimento dei dati tra le applicazioni.
+title: Funzioni (OLE e trasferimento di dati)
+description: Le funzioni seguenti vengono usate per implementare documenti composti ed eseguire il trasferimento dei dati tra applicazioni.
 ms.assetid: cab450bb-13d8-4a5f-b8f3-ad68a483afbb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c578d18b54547cf5639faa1ea2f84cc5cfa126b1
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 71267809dfbc1601a4e8a1529dcf3852eecead1db829922c14cb6dd1a3433f68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462521"
 ---
-# <a name="functions-ole-and-data-transfer"></a>Funzioni (OLE e Trasferimento dati)
+# <a name="functions-ole-and-data-transfer"></a>Funzioni (OLE e trasferimento di dati)
 
-Le funzioni seguenti vengono utilizzate per implementare documenti composti ed eseguire il trasferimento dei dati tra le applicazioni.
+Le funzioni seguenti vengono usate per implementare documenti composti ed eseguire il trasferimento dei dati tra applicazioni.
 
 -   [**CreateDataAdviseHolder**](/windows/win32/api/ole2/nf-ole2-createdataadviseholder)
 -   [**CreateDataCache**](/windows/desktop/api/ObjBase/nf-objbase-createdatacache)
 -   [**CreateFormatEnumerator**](/windows/desktop/api/Urlmon/nf-urlmon-createformatenumerator)
 -   [**CreateOleAdviseHolder**](/windows/desktop/api/Ole2/nf-ole2-createoleadviseholder)
--   [**DoDragDrop**](/windows/desktop/api/Ole2/nf-ole2-dodragdrop)
+-   [**Dodragdrop**](/windows/desktop/api/Ole2/nf-ole2-dodragdrop)
 -   [**OleCreate**](/windows/desktop/api/OleCtl/nf-olectl-olecreatepropertyframe)
 -   [**OleCreateDefaultHandler**](/windows/desktop/api/Ole2/nf-ole2-olecreatedefaulthandler)
 -   [**OleCreateEmbeddingHelper**](/windows/desktop/api/Ole2/nf-ole2-olecreateembeddinghelper)
@@ -78,7 +78,7 @@ Le funzioni seguenti vengono utilizzate per implementare documenti composti ed e
 -   [**OleUIUpdateLinks**](/windows/desktop/api/OleDlg/nf-oledlg-oleuiupdatelinksa)
 -   [**OleUninitialize**](/windows/desktop/api/Ole2/nf-ole2-oleuninitialize)
 -   [**RegisterDragDrop**](/windows/desktop/api/Ole2/nf-ole2-registerdragdrop)
--   [**ReleaseStgMedium**](/windows/desktop/api/Ole2/nf-ole2-releasestgmedium)
+-   [**Releasestgmedium**](/windows/desktop/api/Ole2/nf-ole2-releasestgmedium)
 -   [**RevokeDragDrop**](/windows/desktop/api/Ole2/nf-ole2-revokedragdrop)
 
  

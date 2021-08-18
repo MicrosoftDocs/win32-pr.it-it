@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_FRAMEWORK_CHANGE (tipi WinBio \_ . h)
-description: Identificare il tipo di modifica che si è verificata nel Framework.
+title: WINBIO_FRAMEWORK_CHANGE costanti (Winbio \_ types.h)
+description: Identificare il tipo di modifica che si è verificata nel framework.
 ms.assetid: 826CE4D7-236D-42ED-9888-3898A5057032
 topic_type:
 - apiref
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d15a736a6eb889aec96d55a72fce38edadf98347
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98b9041794506ec631776827a9cee3574bf60101f3c3db6f320c14bc2b39de00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910267"
 ---
-# <a name="winbio_framework_change-constants"></a>Costanti di modifica di WINBIO \_ Framework \_
+# <a name="winbio_framework_change-constants"></a>Costanti CHANGE di WINBIO \_ FRAMEWORK \_
 
-Nella funzione [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges) è possibile utilizzare le costanti seguenti per identificare il tipo di modifica apportata nel Framework.
+Le costanti seguenti possono essere usate nella funzione [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges) per identificare il tipo di modifica che si è verificata nel framework.
 
 <dl> <dt>
 
-<span id="WINBIO_FRAMEWORK_CHANGE_UNIT"></span><span id="winbio_framework_change_unit"></span>**\_unità di \_ modifica WINBIO Framework \_**
+<span id="WINBIO_FRAMEWORK_CHANGE_UNIT"></span><span id="winbio_framework_change_unit"></span>**UNITÀ DI MODIFICA DEL FRAMEWORK WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -44,9 +44,9 @@ Un'unità biometrica è stata collegata o scollegata dal computer.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

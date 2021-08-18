@@ -1,11 +1,11 @@
 ---
-title: Proprietà MonthlyDOWTrigger. MonthsOfYear
-description: Per gli script, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività. | Proprietà MonthlyDOWTrigger. MonthsOfYear
+title: MonthlyDOWTrigger.MonthsOfYear - proprietà
+description: Per lo scripting, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività. | MonthlyDOWTrigger.MonthsOfYear - proprietà
 ms.assetid: 4ab7ab43-9c9b-4cd3-be8f-1989b83e8cf3
 keywords:
-- Utilità di pianificazione Proprietà MonthsOfYear
-- Utilità di pianificazione Proprietà MonthsOfYear, oggetto MonthlyDOWTrigger
-- Oggetto MonthlyDOWTrigger Utilità di pianificazione, Proprietà MonthsOfYear
+- Proprietà MonthsOfYear Utilità di pianificazione
+- Proprietà MonthsOfYear Utilità di pianificazione , oggetto MonthlyDOWTrigger
+- Oggetto MonthlyDOWTrigger Utilità di pianificazione proprietà , MonthsOfYear
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c345cd3de12d7dba3450f62bdb18bfdcee496b13
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f8dc9752cf241218a95a9816824bc6ccf560f47c3445df9e5f40406381de3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253821"
 ---
-# <a name="monthlydowtriggermonthsofyear-property"></a>Proprietà MonthlyDOWTrigger. MonthsOfYear
+# <a name="monthlydowtriggermonthsofyear-property"></a>MonthlyDOWTrigger.MonthsOfYear - proprietà
 
-Per gli script, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività.
+Per lo scripting, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,7 +65,7 @@ Nella tabella seguente viene illustrato il mapping della maschera bit per bit ut
 
  
 
-Durante la lettura o la scrittura di codice XML per un'attività, i mesi dell'anno di un calendario giornaliero settimanale sono specificati dall'elemento [**months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) dello schema utilità di pianificazione.
+Durante la lettura o la scrittura di codice XML per un'attività, i mesi dell'anno di un calendario mensile del giorno della settimana vengono specificati dall'elemento [**Months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, i mesi dell'an
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

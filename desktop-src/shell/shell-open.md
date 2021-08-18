@@ -52,17 +52,17 @@ Shell.Open( _
 *vDir* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variante**
+Tipo: **Variant**
 
-Stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
+Stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
-Se *vDir è* impostato su uno di [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, questa funzione creerà la cartella.
+Se *vDir* è impostato su uno dei [**shellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, questa funzione creerà la cartella.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra **Open** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
+L'esempio seguente mostra **l'opzione Apri** in uso. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
 JScript:
 

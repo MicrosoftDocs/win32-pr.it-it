@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_LGPOS'
-title: Struttura JET_LGPOS
+description: 'Altre informazioni su: JET_LGPOS struttura'
+title: JET_LGPOS struttura
 TOCTitle: JET_LGPOS Structure
 ms:assetid: dbce1a60-b32b-40c1-a215-e93bb77cd8c1
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294113(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25f00c73a4bb922a8152335babe222b539c70ade
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abf3ca2996e75d2abfe6fc766ec6f5bbd30054eeb9dd8406fe2747307a00c4a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109258"
 ---
-# <a name="jet_lgpos-structure"></a>Struttura JET_LGPOS
+# <a name="jet_lgpos-structure"></a>JET_LGPOS struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_lgpos-structure"></a>Struttura JET_LGPOS
+## <a name="jet_lgpos-structure"></a>JET_LGPOS struttura
 
-La struttura **JET_LGPOS** include i dati interni al meccanismo di registrazione del motore di database. Questa struttura è considerata interna.
+La **JET_LGPOS** contiene dati interni al meccanismo di registrazione del motore di database. Questa struttura è considerata interna.
 
 ```cpp
     typedef struct {
@@ -41,17 +41,17 @@ La struttura **JET_LGPOS** include i dati interni al meccanismo di registrazione
 
 ### <a name="members"></a>Membri
 
-**IB**
+**Ib**
 
-Supporta l'infrastruttura ESE e non può essere utilizzata dal codice.
+Supporta l'infrastruttura ESE e non può essere usato dal codice.
 
-**ISEC**
+**Isec**
 
-Supporta l'infrastruttura ESE e non può essere utilizzata dal codice.
+Supporta l'infrastruttura ESE e non può essere usato dal codice.
 
-**lGeneration**
+**lGenerazione**
 
-Supporta l'infrastruttura ESE e non può essere utilizzata dal codice.
+Supporta l'infrastruttura ESE e non può essere usato dal codice.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Supporta l'infrastruttura ESE e non può essere utilizzata dal codice.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

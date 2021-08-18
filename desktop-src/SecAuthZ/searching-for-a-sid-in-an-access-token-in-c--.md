@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente vengono usate le funzioni OpenProcessToken e GetTokenInformation per ottenere l'appartenenza a un gruppo in un token di accesso.
+description: L'esempio seguente usa le funzioni OpenProcessToken e GetTokenInformation per ottenere le appartenenze ai gruppi in un token di accesso.
 ms.assetid: f895dfef-75ad-419c-95d0-6480bdf9c769
 title: Ricerca di un SID in un token di accesso in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 713f69511f780898641e65f22503e595706307ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 942b3609064b51a299d4bd679b5cafe0e1f2b592298fe3a83cfb183ede959823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911921"
 ---
 # <a name="searching-for-a-sid-in-an-access-token-in-c"></a>Ricerca di un SID in un token di accesso in C++
 
-Nell'esempio seguente vengono usate le funzioni [**OpenProcessToken**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) e [**GetTokenInformation**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-gettokeninformation) per ottenere l'appartenenza a un gruppo in un [*token di accesso*](/windows/desktop/SecGloss/a-gly). USA quindi la funzione [**AllocateAndInitializeSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid) per creare un SID che identifichi il SID noto del gruppo Administrator per il computer locale. USA quindi la funzione [**EqualSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalsid) per confrontare il SID noto con i SID del gruppo dal token di accesso. Se il SID è presente nel token, la funzione controlla gli attributi del SID per determinare se è abilitato.
+L'esempio seguente usa le [**funzioni OpenProcessToken**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) e [**GetTokenInformation**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-gettokeninformation) per ottenere le appartenenze ai gruppi in un [*token di accesso*](/windows/desktop/SecGloss/a-gly). Usa quindi la [**funzione AllocateAndInitializeSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid) per creare un SID che identifica il SID noto del gruppo di amministratori per il computer locale. Usa quindi la funzione [**EqualSid**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalsid) per confrontare il SID noto con i SID del gruppo del token di accesso. Se il SID è presente nel token, la funzione controlla gli attributi del SID per determinare se è abilitato.
 
-La funzione [**CheckTokenMembership**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-checktokenmembership) deve essere utilizzata per determinare se un SID specificato è presente e abilitato in un token di accesso. Questa funzione Elimina le potenziali interpretazioni errate dell'appartenenza al gruppo attivo.
+La [**funzione CheckTokenMembership**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-checktokenmembership) deve essere usata per determinare se un SID specificato è presente e abilitato in un token di accesso. Questa funzione elimina le possibili interpretazione erre dell'appartenenza al gruppo attiva.
 
 
 ```C++

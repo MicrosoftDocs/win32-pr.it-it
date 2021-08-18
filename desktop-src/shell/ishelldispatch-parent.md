@@ -49,11 +49,11 @@ Variabile di tipo [**IDispatch che**](/windows/win32/api/oaidl/nn-oaidl-idispatc
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene implementata e accessibile tramite la [**proprietà Shell.Parent.**](shell-parent.md)
+Questa proprietà viene implementata e vi si accede tramite la [**proprietà Shell.Parent.**](shell-parent.md)
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso di Parent in **JScript,** VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **Parent** in JScript, VBScript e Visual Basic.
 
 JScript:
 

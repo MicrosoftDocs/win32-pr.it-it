@@ -1,28 +1,28 @@
 ---
-description: Nell'esempio seguente viene illustrata la procedura descritta nella sezione precedente. In questo esempio viene creata una semplice richiesta di certificato con un solo firmatario, un singolo attributo relativo del nome distinto relativo (RDN) e nessun attributo generale.
+description: Nell'esempio seguente viene illustrata la procedura descritta nella sezione precedente. In questo esempio viene creata una semplice richiesta di certificato con un solo firmatario, un singolo attributo RDN (Relative Distinguished Name) e nessun attributo generale.
 ms.assetid: bd3d0259-f0e8-460e-9f18-95d2492da3d8
-title: 'Esempio di programma C: creazione di una richiesta di certificato'
+title: 'Programma C di esempio: creazione di una richiesta di certificato'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e02d9faa51d405f02bb46729621f65d43c7ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c4417eca6a6cc7537b4c284cfc5d37aeb6d0ed69d9d0a00bd6cb06efe6cb387
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140894"
 ---
-# <a name="example-c-program-making-a-certificate-request"></a>Esempio di programma C: creazione di una richiesta di certificato
+# <a name="example-c-program-making-a-certificate-request"></a>Programma C di esempio: creazione di una richiesta di certificato
 
-Nell'esempio seguente viene illustrata la procedura descritta nella sezione precedente. In questo esempio viene creata una semplice [*richiesta di certificato*](../secgloss/c-gly.md) con un solo firmatario, un singolo attributo [*relativo del nome distinto relativo*](../secgloss/r-gly.md) (RDN) e nessun [*attributo*](../secgloss/a-gly.md)generale.
+Nell'esempio seguente viene illustrata la procedura descritta nella sezione precedente. In questo esempio viene [*creata*](../secgloss/c-gly.md) una semplice richiesta di certificato con [](../secgloss/a-gly.md)un solo firmatario, un singolo attributo RDN [*(Relative Distinguished Name)*](../secgloss/r-gly.md) e nessun attributo generale.
 
-In questo esempio vengono illustrate le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
 -   [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject)
--   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   [**Cryptacquirecontext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   [**CryptExportPublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportpublickeyinfo)
 -   [**CryptSignAndEncodeCertificate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignandencodecertificate)
 
-Questo esempio usa anche le funzioni [**ByteToStr**](bytetostr.md) e [**MyHandleError**](myhandleerror.md). Il codice per queste funzioni è incluso nell'esempio. [Per utilizzo generico Functions](general-purpose-functions.md) elenca il codice per queste e altre funzioni ausiliarie.
+Questo esempio usa anche le funzioni [**ByteToStr**](bytetostr.md) e [**MyHandleError**](myhandleerror.md). Il codice per queste funzioni è incluso nell'esempio. [per utilizzo generico funzioni elenca](general-purpose-functions.md) il codice per queste e altre funzioni ausiliarie.
 
 
 ```C++

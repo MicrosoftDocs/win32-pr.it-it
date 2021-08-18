@@ -1,28 +1,28 @@
 ---
-title: Esempio di Windows Touch temporanei (C++)
-description: Nell'esempio Windows Touch temporanei viene illustrato come utilizzare i messaggi Windows Touch per tracciare le tracce dei punti di tocco in una finestra.
+title: Windows Esempio di Touch Scratchpad (C++)
+description: L'Windows touch scratchpad illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra.
 ms.assetid: 6c4b4595-1e95-499c-b045-b5ae01aa5a6e
 keywords:
-- Windows Touch, esempi di codice
-- Windows Touch, codice di esempio
-- Windows Touch, esempi temporanei
-- Esempi di temporanei
+- Windows Tocco, esempi di codice
+- Windows Tocco, codice di esempio
+- Windows Esempi di Touch,Scratchpad
+- Esempi di Scratchpad
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: afdd39e886d97671942b4ff67a74c0da75924fbb
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 7f3be8c120a935bc1a8d65dfdd8c7ab9894e0360d3415e8c645e5b3afae87012
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104047562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086252"
 ---
-# <a name="windows-touch-scratchpad-sample-c"></a>Esempio di Windows Touch temporanei (C++)
+# <a name="windows-touch-scratchpad-sample-c"></a>Windows Esempio di Touch Scratchpad (C++)
 
-Nell' [esempio Windows Touch temporanei](https://github.com/MicrosoftDocs/win32-pr/blob/master/desktop-src/wintouch/windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) viene illustrato come utilizzare i messaggi Windows Touch per tracciare le tracce dei punti di tocco in una finestra. La traccia del dito principale, quella che è stata inserita prima sul digitalizzatore, viene disegnata in nero. Le dita secondarie sono disegnate in sei colori: rosso, verde, blu, ciano, magenta e giallo. Nell'immagine seguente viene illustrato l'aspetto dell'applicazione durante l'esecuzione.
+[L'Windows touch scratchpad](https://github.com/MicrosoftDocs/win32-pr/blob/master/desktop-src/wintouch/windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra. La traccia del dito principale, quella che è stata inserita per prima sul digitalizzatore, viene disegnata in nero. Le dita secondarie vengono disegnate in altri sei colori: rosso, verde, blu, ciano, magenta e giallo. L'immagine seguente mostra l'aspetto dell'applicazione durante l'esecuzione.
 
-![screenshot che mostra il temporanei Windows Touch con controllo ortografia durante rosso e nero sullo schermo](images/mtscratchpadwmtouch.png)
+![Screenshot che mostra il touch scratchpad di Windows, con linee a righe rosse e nere sullo schermo](images/mtscratchpadwmtouch.png)
 
-Per questa applicazione, la finestra viene registrata come finestra di tocco, i messaggi di tocco vengono interpretati per aggiungere punti di tocco agli oggetti Stroke e il rendering dei tratti di input penna viene eseguito sullo schermo nel gestore di messaggi **WM_PAINT** .
+Per questa applicazione, la finestra viene registrata come finestra di tocco, i messaggi di tocco vengono interpretati per aggiungere punti tocco agli oggetti tratto e viene eseguito il rendering dei tratti input penna sullo schermo nel gestore di messaggi **WM_PAINT.**
 
 Il codice seguente illustra come la finestra viene registrata come finestra di tocco.
 
@@ -35,7 +35,7 @@ Il codice seguente illustra come la finestra viene registrata come finestra di t
     }
 ```
 
-Il codice seguente illustra come vengono usati i messaggi di tocco per aggiungere punti di tocco ai tratti di input penna.
+Il codice seguente illustra come vengono usati i messaggi di tocco per aggiungere punti di tocco ai tratti input penna.
 
 ```C++
         // WM_TOUCH message handlers
@@ -78,7 +78,7 @@ Il codice seguente illustra come vengono usati i messaggi di tocco per aggiunger
             break;
 ```
 
-Nel codice seguente viene illustrato come vengono disegnati i tratti di input penna sullo schermo nel gestore di messaggi **WM_PAINT** .
+Il codice seguente illustra come i tratti input penna vengono disegnati sullo schermo nel **WM_PAINT** di messaggi.
 
 ```C++
         case WM_PAINT:
@@ -91,7 +91,7 @@ Nel codice seguente viene illustrato come vengono disegnati i tratti di input pe
             break;
 ```
 
-Il codice seguente mostra come l'oggetto Stroke esegue il rendering dei tratti sullo schermo.
+Il codice seguente illustra come l'oggetto stroke esegue il rendering dei tratti sullo schermo.
 
 ```C++
 void CStroke::Draw(HDC hDC) const
@@ -111,4 +111,4 @@ void CStroke::Draw(HDC hDC) const
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Windows Touch temporanei Sample (C#)](windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md), [applicazione temporanei multitocco (WM_TOUCH/c #)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [applicazione temporanei multitocco (WM_TOUCH/C + +)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), esempi di [Windows Touch](windows-touch-samples.md)
+[Windows Touch Scratchpad (C#)](windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md), [Multi-Touch Scratchpad Application (WM_TOUCH/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [Multi-Touch Scratchpad Application (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows Touch Samples](windows-touch-samples.md)

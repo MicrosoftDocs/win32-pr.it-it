@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Collegamento di classi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c36956d20d9390462577332e7ac7b644d4ffc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da48ab6b816eece1184915026ca32ed152b896f0555ca6c546d0b8ed4d6a7640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131223"
 ---
 # <a name="linking-classes-together"></a>Collegamento di classi
 
-I provider WMI sono in genere progettati per fornire informazioni su un oggetto gestito specifico in un singolo computer. Se è presente una proprietà comune che può fungere da chiave per identificare in modo univoco tutte le istanze di origine diverse, utilizzare il [provider di visualizzazione](view-provider.md) per combinare le proprietà di classi, spazi dei nomi o computer diversi in una singola classe.
+I provider WMI sono in genere progettati per fornire informazioni su un oggetto gestito specifico in un singolo computer. Se è presente una proprietà comune che può essere utilizzata come chiave per [](view-provider.md) identificare in modo univoco tutte le diverse istanze di origine, usare il provider di visualizzazione per combinare le proprietà di classi, spazi dei nomi o computer diversi in un'unica classe.
 
-È necessario prima [registrare il provider di visualizzazione](registering-the-view-provider.md). Dopo la registrazione, è possibile creare i seguenti tipi di classi di visualizzazione:
+È innanzitutto necessario [registrare il provider di visualizzazione](registering-the-view-provider.md). Dopo la registrazione, è possibile creare i tipi di classi di visualizzazione seguenti:
 
 -   [Visualizzazione join](creating-a-new-instance-from-old-properties.md)
 
@@ -24,11 +24,11 @@ I provider WMI sono in genere progettati per fornire informazioni su un oggetto 
 
 -   [Visualizzazione associazione](associating-instances-between-namespaces.md)
 
-    Viste delle classi di associazione esistenti attraverso il limite dello spazio dei nomi.
+    Visualizzazioni delle classi di associazione esistenti attraverso il limite dello spazio dei nomi.
 
 -   [Visualizzazione Unione](creating-a-union-view-class.md)
 
-    Unione di una o più istanze.
+    Unione di una o più istanze di .
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetSetCursorFilter'
-title: JetSetCursorFilter (funzione)
+description: Altre informazioni sulla funzione JetSetCursorFilter
+title: Funzione JetSetCursorFilter
 TOCTitle: JetSetCursorFilter Function
 ms:assetid: 3cea5beb-2cf8-4053-8e7f-7b8645580ef0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835040(v=EXCHG.10)
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad589fecb190ad0f0676325b78adc7c96028a3fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76e92f768fd99cdd755e435caf4ba24dbbba0e3b0ee6338ffe7f49c2f506f2f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978801"
 ---
-# <a name="jetsetcursorfilter-function"></a>JetSetCursorFilter (funzione)
+# <a name="jetsetcursorfilter-function"></a>Funzione JetSetCursorFilter
 
 
 _**Si applica a:** Windows | Windows Server_
 
-La funzione **JetSetCursorFilter** imposta una matrice di filtri semplici per la funzione [JetMove](./jetmove-function.md) .
+La **funzione JetSetCursorFilter** imposta una matrice di filtri semplici per la [funzione JetMove.](./jetmove-function.md)
 
-La funzione **JetSetCursorFilter** è stata introdotta nel sistema operativo Windows 8.
+La **funzione JetSetCursorFilter** è stata introdotta nel Windows 8 operativo.
 
 ``` c++
 JET_ERR JET_API JetSetCursorFilter(
@@ -51,13 +51,13 @@ JET_ERR JET_API JetSetCursorFilter(
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*TableID*
+*tableid*
 
 Cursore da posizionare.
 
-*rgFilters*
+*Filtri rgFilter*
 
-Filtri dei record semplici.
+Filtri di record semplici.
 
 *cFilters*
 
@@ -89,7 +89,7 @@ Gruppo di bit che specifica zero o più opzioni di spostamento elencate nella ta
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei codici restituiti elencati nella tabella seguente. Per ulteriori informazioni sui possibili errori di Extensible Storage Engine (ESE), vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE [(Extensible](./extensible-storage-engine-errors.md) Archiviazione Engine), vedere Extensible Archiviazione Engine Errors and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -129,11 +129,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

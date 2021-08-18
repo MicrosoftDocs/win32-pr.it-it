@@ -1,11 +1,11 @@
 ---
 title: DailyTrigger.RandomDelay - proprietà
-description: Per lo scripting, ottiene o imposta un ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger. | DailyTrigger.RandomDelay - proprietà
+description: Per lo scripting, ottiene o imposta un tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. | DailyTrigger.RandomDelay - proprietà
 ms.assetid: 0494a963-bdaf-4f3f-a2e3-9482409ecda4
 keywords:
 - Proprietà RandomDelay Utilità di pianificazione
 - Proprietà RandomDelay Utilità di pianificazione , oggetto DailyTrigger
-- Oggetto DailyTrigger Utilità di pianificazione , proprietà RandomDelay
+- Proprietà DailyTrigger Utilità di pianificazione , RandomDelay
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 303192d578a2681e250784c1e1eb2831c98482cc
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: bbc3bfec997b50a1f9d802191387a2186576532ca027e1086fc311b31f0da5d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139474"
 ---
 # <a name="dailytriggerrandomdelay-property"></a>DailyTrigger.RandomDelay - proprietà
 
-Per lo scripting, ottiene o imposta un ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger.
+Per lo scripting, ottiene o imposta un tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,8 +46,8 @@ Tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. Il form
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

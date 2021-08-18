@@ -1,7 +1,7 @@
 ---
 description: Annulla l'associazione di un oggetto ID3DXTextureGutterHelper associato all'oggetto ID3DXPRTBuffer.
 ms.assetid: 0bd8322a-8af1-4173-bbe3-9134c831cf3a
-title: 'Metodo ID3DXPRTBuffer:: ReleaseGH (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTBuffer::ReleaseGH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e9fb7a68f11d21065d6b4911b9ee7f58920aeb25
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5691fc2601624733bb8d41b63140b694bd78027e0f6d548b02984bbc12406a47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120535"
 ---
-# <a name="id3dxprtbufferreleasegh-method"></a>Metodo ID3DXPRTBuffer:: ReleaseGH
+# <a name="id3dxprtbufferreleasegh-method"></a>Metodo ID3DXPRTBuffer::ReleaseGH
 
-Annulla l'associazione di un oggetto [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) associato all'oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) .
+Annulla l'associazione di un [**oggetto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) associato all'oggetto [**ID3DXPRTBuffer.**](id3dxprtbuffer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo rilascia il puntatore all'interfaccia [**ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) .
+Questo metodo rilascia il puntatore [**all'interfaccia ID3DXTextureGutterHelper.**](id3dxtexturegutterhelper.md)
 
-È necessario assicurarsi che il numero di chiamate a [**ID3DXPRTBuffer:: AttachGH**](id3dxprtbuffer--attachgh.md) corrisponda al numero di chiamate a **ID3DXPRTBuffer:: ReleaseGH** . Dopo la chiamata a **ID3DXPRTBuffer:: ReleaseGH**, il puntatore PGH restituito da **ID3DXPRTBuffer:: AttachGH** non deve più essere utilizzato.
+È necessario assicurarsi che il numero di [**chiamate ID3DXPRTBuffer::AttachGH**](id3dxprtbuffer--attachgh.md) corrisponda al numero di **chiamate ID3DXPRTBuffer::ReleaseGH.** Dopo aver **chiamato ID3DXPRTBuffer::ReleaseGH,** il puntatore pGH restituito da **ID3DXPRTBuffer::AttachGH** non deve più essere usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Questo metodo rilascia il puntatore all'interfaccia [**ID3DXTextureGutterHelper*
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

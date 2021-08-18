@@ -1,23 +1,23 @@
 ---
 title: Scadenza account (provider LDAP)
-description: Per impostare la data di scadenza dell'account, impostare la proprietà IADsUser. AccountExpirationDate sul valore di data desiderato.
+description: Per impostare la data di scadenza dell'account, impostare la proprietà IADsUser.AccountExpirationDate sul valore di data desiderato.
 ms.assetid: d0b90bb3-ad7c-4394-956d-061a915f210d
 ms.tgt_platform: multiple
 keywords:
-- ADSI scadenza account, provider LDAP
-- Provider LDAP ADSI, esempi di gestione degli utenti, scadenza dell'account
+- Scadenza account ADSI , provider LDAP
+- Provider LDAP ADSI, esempi di gestione utenti,Scadenza account
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c03ea33d8d5abb219c2b562aa05058b5dec45919
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 645ce5e2e1ae72ace0a8a642642eb5c15e7eabd63d51dba3f03596869bfb9efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024069"
 ---
 # <a name="account-expiration-ldap-provider"></a>Scadenza account (provider LDAP)
 
-Per impostare la data di scadenza dell'account, impostare la proprietà [**IADsUser. AccountExpirationDate**](iadsuser-property-methods.md) sul valore di data desiderato. Per disabilitare la data di scadenza dell'account, impostare l'attributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) su zero. Negli esempi di codice seguenti viene illustrato come impostare la data di scadenza.
+Per impostare la data di scadenza dell'account, impostare la proprietà [**IADsUser.AccountExpirationDate**](iadsuser-property-methods.md) sul valore di data desiderato. Per disabilitare la data di scadenza dell'account, impostare [**l'attributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) su zero. Negli esempi di codice seguenti viene illustrato come impostare la data di scadenza.
 
 
 ```VB
@@ -84,10 +84,10 @@ HRESULT SetUserAccountExpirationDate(IADsUser *pUser, DATE date)
 
 
 > [!Note]  
-> L'attributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contiene la data di scadenza dell'account. Lo snap-in MMC utenti e computer Active Directory Visualizza la data in cui l'account scadrà alla fine di. Lo snap-in di MMC utenti e computer Active Directory visualizzerà quindi la data di scadenza dell'account come un giorno prima della data inclusa nell'attributo **accountExpires** .
+> [**L'attributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contiene la data di scadenza dell'account. Lo Utenti e computer di Active Directory snap-in MMC visualizza la data di scadenza dell'account alla fine di . In altri Utenti e computer di Active Directory snap-in MMC verrà visualizzata la data di scadenza dell'account come un giorno precedente alla data contenuta **nell'attributo accountExpires.**
 
- 
+ 
 
- 
+ 
 
- 
+ 

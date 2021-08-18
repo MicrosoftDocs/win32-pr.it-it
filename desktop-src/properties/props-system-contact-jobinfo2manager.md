@@ -4,12 +4,12 @@ ms.assetid: 15ef60f8-3fa7-4a8b-ba6f-6c32cea4aea8
 title: System.Contact.JobInfo2Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ac597bd270a87f7b5a0a4e6cc4fb2408aad7bdf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6aa863243174bcdce2e8680ed09bc4ed4f6c12708aa19fbcccd5e7c3e206f297
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341581"
 ---
 # <a name="systemcontactjobinfo2manager"></a>System.Contact.JobInfo2Manager
 

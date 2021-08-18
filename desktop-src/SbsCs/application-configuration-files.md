@@ -1,23 +1,23 @@
 ---
-description: Un file di configurazione dell'applicazione è un file XML utilizzato per controllare l'associazione di assembly.
+description: Un file di configurazione dell'applicazione è un file XML usato per controllare l'associazione di assembly.
 ms.assetid: b7453f2b-52a4-4af9-8410-ebbb430ada67
 title: File di configurazione dell'applicazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b1a2e0f6b493c217aded9e11507f660d517b400
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cf4b22d3710c0dd38e83f827a175ad591309f22ab8ac2d81e93438f27d07dc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142524"
 ---
 # <a name="application-configuration-files"></a>File di configurazione dell'applicazione
 
-Un file di configurazione dell'applicazione è un file XML utilizzato per controllare l'associazione di assembly. Può reindirizzare un'applicazione utilizzando una versione di un assembly affiancato a un'altra versione dello stesso assembly. Questa operazione viene definita [configurazione per ogni applicazione](per-application-configuration.md). Un file di configurazione dell'applicazione si applica solo a uno specifico manifesto dell'applicazione e ad assembly dipendenti. Per i componenti isolati compilati con un \_ manifesto di ID risorsa manifesto ISOLATIONAWARE incorporato è \_ \_ necessario un file di configurazione dell'applicazione separato. I manifesti gestiti con [**CreateActCtx**](/windows/desktop/api/Winbase/nf-winbase-createactctxa) richiedono un file di configurazione dell'applicazione separato.
+Un file di configurazione dell'applicazione è un file XML usato per controllare l'associazione di assembly. Può reindirizzare un'applicazione dall'uso di una versione di un assembly side-by-side a un'altra versione dello stesso assembly. Questa operazione è denominata [configurazione per applicazione.](per-application-configuration.md) Un file di configurazione dell'applicazione si applica solo a un manifesto dell'applicazione specifico e ad assembly dipendenti. I componenti isolati compilati con un manifesto DI RISORSA MANIFESTO ISOLATIONAWARE incorporato \_ richiedono un file di configurazione \_ \_ dell'applicazione separato. I manifesti gestiti con [**CreateActCtx**](/windows/desktop/api/Winbase/nf-winbase-createactctxa) richiedono un file di configurazione dell'applicazione separato.
 
-Il reindirizzamento specificato da un file di configurazione dell'applicazione può sostituire le versioni degli assembly specificate dai [manifesti dell'applicazione](application-manifests.md) e dai [file di configurazione del server di pubblicazione](publisher-configuration-files.md). Se, ad esempio, un file di configurazione del server di pubblicazione specifica che tutti i riferimenti a un assembly vengono reindirizzati dalla versione 1.0.0.0 a 1.1.0.0, è possibile usare un file di configurazione dell'applicazione per reindirizzare un'applicazione specifica per l'uso della versione 1.0.0.0. Un file di configurazione dell'applicazione si applica solo al manifesto dell'applicazione e agli assembly dipendenti specificati.
+Il reindirizzamento specificato da un file di configurazione dell'applicazione può eseguire l'override delle versioni dell'assembly specificate dai [manifesti dell'applicazione](application-manifests.md) e dai file di configurazione [dell'editore.](publisher-configuration-files.md) Ad esempio, se un file di configurazione dell'editore specifica che tutti i riferimenti a un assembly devono essere reindirizzati dalla versione 1.0.0.0 alla 1.1.0.0, è possibile usare un file di configurazione dell'applicazione per reindirizzare una particolare applicazione per l'uso della versione 1.0.0.0. Un file di configurazione dell'applicazione si applica solo al manifesto dell'applicazione e agli assembly dipendenti specificati.
 
-Per un elenco completo dei XML Schema, vedere [schema del file di configurazione dell'applicazione](application-configuration-file-schema.md).
+Per un elenco completo dello schema XML, vedere [Schema del file di configurazione dell'applicazione](application-configuration-file-schema.md).
 
 I file di configurazione dell'applicazione hanno gli elementi e gli attributi illustrati nella tabella seguente.
 
@@ -27,21 +27,21 @@ I file di configurazione dell'applicazione hanno gli elementi e gli attributi il
 |-----------------------|---------------------------|----------|
 | **configurazione**     |                           | Sì      |
 | **windows**           |                           | Sì      |
-| **publisherPolicy apply**   |                           | Sì      |
-|                       | **applicare**                 | Sì      |
-| **runtime**           |                           | No       |
+| **publisherPolicy**   |                           | Sì      |
+|                       | **Applicare**                 | Sì      |
+| **Runtime**           |                           | No       |
 | **assemblyBinding**   |                           | Sì      |
-| **sondaggio**           |                           | No       |
+| **Sondaggio**           |                           | No       |
 |                       | **privatePath**           | Sì      |
-| **dipendenza**        |                           | No       |
+| **Dipendenza**        |                           | No       |
 | **dependentAssembly** |                           | Sì      |
-| **assemblyIdentity**  |                           | Sì      |
+| **Assemblyidentity**  |                           | Sì      |
 |                       | **type**                  | Sì      |
 |                       | **nome**                  | Sì      |
 |                       | **language**              | No       |
 |                       | **processorArchitecture** | Sì      |
 |                       | **version**               | Sì      |
-|                       | **publicKeyToken**        | No       |
+|                       | **Publickeytoken**        | No       |
 | **bindingRedirect**   |                           | Sì      |
 |                       | **oldVersion**            | Sì      |
 |                       | **newVersion**            | Sì      |
@@ -52,27 +52,27 @@ I file di configurazione dell'applicazione hanno gli elementi e gli attributi il
 
 ## <a name="file-location"></a>Percorso file
 
-I file di configurazione dell'applicazione devono essere installati nello stesso percorso del [manifesto](application-manifests.md)dell'applicazione.
+I file di configurazione dell'applicazione devono essere installati nello stesso percorso del manifesto [dell'applicazione.](application-manifests.md)
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file
 
-Il nome di un file di configurazione dell'applicazione è il nome dell'eseguibile dell'applicazione seguito da. config.
+Il nome di un file di configurazione dell'applicazione è il nome del file eseguibile dell'applicazione seguito da .config.
 
-Ad esempio, un file di configurazione dell'applicazione che fa riferimento a Example.exe o Example.dll utilizzerà la sintassi del nome file illustrata nell'esempio seguente. È possibile omettere il campo per <*ID risorsa*> se si installa il file di configurazione come file separato o se l'ID risorsa è 1.
+Ad esempio, un file di configurazione dell'applicazione che fa riferimento Example.exe o Example.dll usa la sintassi del nome file illustrata nell'esempio seguente. È possibile omettere il campo per <*ID* risorsa> se si installa il file di configurazione come file separato o se l'ID risorsa è 1.
 
-**example.exe. <*ID risorsa* # C1.config**
+**example.exe.<*risorsa>.config***
 
-**example.dll. <*ID risorsa* # C1.config**
+**example.dll.<*risorsa>.config***
 
 ## <a name="elements"></a>Elementi
 
-I nomi degli elementi e degli attributi distinguono tra maiuscole e minuscole. I valori degli elementi e degli attributi non fanno distinzione tra maiuscole e minuscole, ad eccezione del valore dell'attributo Type.
+Per i nomi di elementi e attributi viene fatto distinzione tra maiuscole e minuscole. Per i valori di elementi e attributi non viene fatta distinzione tra maiuscole e minuscole, ad eccezione del valore dell'attributo type.
 
 <span id="configuration"></span><span id="CONFIGURATION"></span>
 
 ### <a name="configuration"></a>configurazione
 
-Elemento contenitore per gli elementi **Windows** e **Runtime** di un file di configurazione dell'applicazione. Obbligatorio.
+Elemento contenitore per gli elementi **windows e** **runtime** di un file di configurazione dell'applicazione. Obbligatorio.
 
 <span id="windows"></span><span id="WINDOWS"></span>
 
@@ -81,21 +81,21 @@ Elemento contenitore per gli elementi **Windows** e **Runtime** di un file di co
 Include le parti del file di configurazione dell'applicazione che si applicano al reindirizzamento degli assembly Win32.
 
 > [!Note]  
-> L'autore di un'applicazione non deve includere un file di configurazione con un sottoelemento **Windows** come parte dell'applicazione. Questo può essere consentito se l'unico scopo del file di configurazione è abilitare la funzionalità **privatePath** di un elemento **Probe** . L'elemento **Probe** non è disponibile nei sistemi precedenti a windows Server 2008 R2 e Windows 7.
+> L'autore di un'applicazione non deve includere un file di configurazione con un sottoelemento **di Windows** come parte dell'applicazione. Questa operazione può essere consentita se l'unico scopo del file di configurazione è abilitare la **funzionalità privatePath** di un elemento **di probe.** **L'elemento di** probe non è disponibile nei sistemi precedenti Windows Server 2008 R2 e Windows 7.
 
 <span id="publisherPolicy"></span><span id="publisherpolicy"></span><span id="PUBLISHERPOLICY"></span>
 
-### <a name="publisherpolicy"></a>publisherPolicy apply
+### <a name="publisherpolicy"></a>publisherPolicy
 
 Specifica se applicare i criteri dell'editore.
 
-Questo elemento ha gli attributi mostrati nella tabella seguente.
+Questo elemento ha gli attributi illustrati nella tabella seguente.
 
 
 
 | Attributo | Descrizione                                                                                                                     |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|
-| **applicare** | Il valore "Yes" applica i criteri dell'editore. Si tratta dell'impostazione predefinita. Il valore "No" non applica i criteri dell'editore. |
+| **Applicare** | Il valore "yes" applica i criteri dell'editore. Si tratta dell'impostazione predefinita. Il valore "no" non applica i criteri dell'editore. |
 
 <span id="runtime"></span><span id="RUNTIME"></span>
 
@@ -107,26 +107,26 @@ Include le parti del file di configurazione dell'applicazione che si applicano a
 
 ### <a name="assemblybinding"></a>assemblyBinding
 
-Include le informazioni di reindirizzamento per l'applicazione e l'assembly interessato da questo file di configurazione dell'applicazione. Il primo sottoelemento di **assembly** deve essere un **assemblyIdentity** che identifica l'applicazione.
+Include le informazioni di reindirizzamento per l'applicazione e l'assembly interessato da questo file di configurazione dell'applicazione. Il primo sottoelemento **di assemblyBinding** deve essere **un elemento assemblyIdentity** che identifica l'applicazione.
 
-A partire da Windows Server 2008 R2 e Windows 7 un elemento **assembly** può includere un sottoelemento **Probe** .
+A partire da Windows Server 2008 R2 e Windows 7 un **elemento assemblyBinding** può includere un **sottoelemento di** probe.
 
 <span id="probing"></span><span id="PROBING"></span>
 
 ### <a name="probing"></a>esecuzione del probe
 
-Sottoelemento facoltativo di un elemento **assembler** che estende la ricerca di assembly in directory aggiuntive. Non è necessario che le directory aggiuntive siano sottodirectory della directory dell'assembly.
+Sottoelemento facoltativo di **un elemento assemblyBinding** che estende la ricerca di assembly in directory aggiuntive. Le directory aggiuntive non devono essere sottodirectory della directory dell'assembly.
 
 > [!Note]  
-> Questo elemento non è disponibile nei sistemi precedenti a Windows Server 2008 R2 e Windows 7 e può essere utilizzato solo all'interno di un elemento di **Windows** .
+> Questo elemento non è disponibile nei sistemi precedenti Windows Server 2008 R2 e Windows 7 e può essere usato solo all'interno di un **elemento windows.**
 
-Questo elemento ha gli attributi mostrati nella tabella seguente.
+Questo elemento ha gli attributi illustrati nella tabella seguente.
 
 | Attributo       | Descrizione                                                                                                                                                                                                                                   |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **privatePath** | Specifica i [percorsi relativi](/windows/desktop/FileIO/naming-a-file) delle sottodirectory della directory di base dell'applicazione che potrebbero contenere assembly. È possibile specificare un massimo di nove percorsi di sottodirectory. Delimita il percorso di ogni sottodirectory con un punto e virgola. |
+| **privatePath** | Specifica i [percorsi relativi](/windows/desktop/FileIO/naming-a-file) delle sottodirectory della directory di base dell'applicazione che potrebbero contenere assembly. È possibile specificare un massimo di nove percorsi di sottodirectory. Delimitare ogni percorso di sottodirectory con un punto e virgola. |
 
-È possibile utilizzare l'identificatore speciale a doppio punti in un percorso per indicare la directory padre della directory corrente. Non è possibile specificare più di due livelli al di sopra della directory corrente usando i doppi punti. Non usare i puntini di sospensione. Ad esempio, un'applicazione che usa l'elemento di **sondaggio** seguente controlla le directory aggiuntive per un assembly.
+È possibile usare l'identificatore speciale con due punti in un percorso per indicare la directory padre della directory corrente. Non è possibile specificare più di due livelli oltre la directory corrente usando due punti. Non usare tre punti. Ad esempio, un'applicazione che usa l'elemento **di probe seguente** verifica la presenza di un assembly in directory aggiuntive.
 
 ``` XML
 <probing privatePath="bin;..\bin2\subbin;bin3"/>
@@ -135,25 +135,25 @@ Questo elemento ha gli attributi mostrati nella tabella seguente.
 <span id="dependency"></span><span id="DEPENDENCY"></span>
 
 ### <a name="dependency"></a>dependency
-Elemento contenitore per almeno un **dependentAssembly**. Ogni **dependentAssembly** può trovarsi all'interno di una sola **dipendenza**. Questo elemento non ha attributi. facoltativo.
+Elemento contenitore per almeno un **dependentAssembly.** Ogni **dependentAssembly può** essere all'interno di una **sola dipendenza.** Questo elemento non ha attributi. facoltativo.
 
 <span id="dependentAssembly"></span><span id="dependentassembly"></span><span id="DEPENDENTASSEMBLY"></span>
 
 ### <a name="dependentassembly"></a>dependentAssembly
 
-Il primo sottoelemento deve essere un elemento **assemblyIdentity** che identifica l'assembly affiancato che viene reindirizzato dal file di configurazione dell'applicazione. Un **dependentAssembly** non ha attributi.
+Il primo sottoelemento deve essere un **elemento assemblyIdentity** che identifica l'assembly side-by-side reindirizzato dal file di configurazione dell'applicazione. Un **dependentAssembly** non ha attributi.
 
 <span id="assemblyIdentity"></span><span id="assemblyidentity"></span><span id="ASSEMBLYIDENTITY"></span>
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
 
-Come primo sottoelemento di un elemento **assembly** , **assemblyIdentity** descrive e identifica in modo univoco un'applicazione. Il file di configurazione dell'applicazione reindirizza l'associazione dell'applicazione agli assembly affiancati. Il seguente **assemblyIdentity** indica, ad esempio, che il file di configurazione dell'applicazione influisca sull'associazione dell'applicazione mysampleApp agli assembly affiancati. Gli assembly da reindirizzare verranno identificati in un **dependentAssembly**.
+Come primo sottoelemento di un **elemento assemblyBinding,** **assemblyIdentity** descrive e identifica in modo univoco un'applicazione. Il file di configurazione dell'applicazione reindirizza l'associazione di questa applicazione ad assembly side-by-side. Ad esempio, **l'elemento assemblyIdentity** seguente indica che il file di configurazione dell'applicazione influisce sull'associazione dell'applicazione mysampleApp agli assembly side-by-side. Gli assembly da reindirizzare verrebbero identificati in **un dependentAssembly.**
 
 ``` XML
 <assemblyIdentity processorArchitecture="X86" name="Microsoft.Windows.mysampleApp" type="win32" version="1.0.0.0"/>
 ```
 
-Come primo sottoelemento di un elemento **dependentAssembly** , **assemblyIdentity** descrive un assembly affiancato da cui dipende l'applicazione. Il file di configurazione dell'applicazione riconfigura l'identità dell'assembly richiesto. Ad esempio, i seguenti elementi **assemblyIdentity** e **bindingRedirect** riconfigurano una dipendenza in Microsoft. Windows. SampleAssembly dalla versione 2.0.0.0 alla versione 2.1.0.0.
+Come primo sottoelemento di un **elemento dependentAssembly,** **assemblyIdentity** descrive un assembly side-by-side da cui dipende l'applicazione. Il file di configurazione dell'applicazione riconfigura l'identità di questo assembly richiesto. Ad esempio, il **seguente assemblyIdentity** e **bindingRedirect** riconfigura una dipendenza da Microsoft. Windows. SampleAssembly dalla versione 2.0.0.0 alla versione 2.1.0.0.
 
 ``` XML
 <dependency>
@@ -167,35 +167,35 @@ Come primo sottoelemento di un elemento **dependentAssembly** , **assemblyIdenti
 </dependency>
 ```
 
-Si noti che ogni **assemblyIdentity** incluso in un **dependentAssembly** deve corrispondere esattamente a **assemblyIdentity** nel [manifesto](assembly-manifests.md)dell'assembly.
+Si noti che **ogni assemblyIdentity** incluso in **un dependentAssembly** deve corrispondere esattamente a **assemblyIdentity** nel manifesto dell'assembly. [](assembly-manifests.md)
 
-L'elemento **assemblyIdentity** ha gli attributi seguenti. Non contiene sottoelementi.
+**L'elemento assemblyIdentity** ha gli attributi seguenti. Non dispone di sottoelementi.
 
 | Attributo                 | Descrizione                                                                                                                                                                                                                                                                                                          |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**                  | Il valore deve essere Win32 (lettere minuscole). Obbligatorio.                                                                                                                                                                                                                                                                      |
-| **nome**                  | L'attributo Name identifica l'applicazione interessata dal file di configurazione dell'applicazione o dall'assembly da reindirizzare. Usare il formato seguente per il nome: Organization.Division.Name. Obbligatorio. Ad esempio: Microsoft. Windows. MysampleApp o Microsoft. Windows. MysampleAsm.<br/>            |
-| **language**              | Identifica la lingua. facoltativo. Per un oggetto **assemblyIdentity** che fa riferimento a un assembly, se l'assembly è specifico della lingua, specificare il codice della lingua DHTML. Se l'assembly è per l'uso in tutto il mondo (indipendente dalla lingua), impostare il valore come " \* ".<br/>                                                            |
+| **type**                  | Il valore deve essere win32 (minuscolo). Obbligatorio.                                                                                                                                                                                                                                                                      |
+| **nome**                  | L'attributo name identifica l'applicazione interessata dal file di configurazione dell'applicazione o dall'assembly da reindirizzare. Usare il formato seguente per il nome: Organization.Division.Name. Obbligatorio. Ad esempio: Microsoft. Windows. MysampleApp o Microsoft. Windows. MysampleAsm.<br/>            |
+| **language**              | Identifica la lingua. facoltativo. Per un **assemblyIdentity** che fa riferimento a un assembly, se l'assembly è specifico del linguaggio, specificare il codice del linguaggio DHTML. Se l'assembly è per l'uso in tutto il mondo (indipendente dalla lingua), impostare il valore su " \* ".<br/>                                                            |
 | **processorArchitecture** | Specifica il processore che esegue l'applicazione.                                                                                                                                                                                                                                                                     |
-| **version**               | Specifica la versione dell'applicazione o dell'assembly. Usare la sintassi di versione in quattro parti: mmmm. nnnn. oooo. pppp. Obbligatorio.                                                                                                                                                                                                   |
-| **publicKeyToken**        | Per un oggetto **assemblyIdentity** che fa riferimento a un assembly, una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica in cui è firmato l'assembly. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore. Obbligatorio per tutti gli assembly affiancati condivisi. |
+| **version**               | Specifica la versione dell'applicazione o dell'assembly. Usare la sintassi della versione in quattro parti: mmmm.nnnn.oooo.pppp. Obbligatorio.                                                                                                                                                                                                   |
+| **Publickeytoken**        | Per **un assemblyIdentity** che fa riferimento a un assembly, stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica con cui viene firmato l'assembly. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore. Obbligatorio per tutti gli assembly side-by-side condivisi. |
 
 <span id="bindingRedirect"></span><span id="bindingredirect"></span><span id="BINDINGREDIRECT"></span>
 
 ### <a name="bindingredirect"></a>bindingRedirect
 
-L'elemento **bindingRedirect** contiene informazioni di reindirizzamento per l'associazione dell'assembly. Ogni **bindingRedirect** deve essere incluso esattamente in un **dependentAssembly**. La sintassi di versione in quattro parti della nuova versione e della versione precedente deve specificare le stesse versioni principale e secondaria.
+**L'elemento bindingRedirect** contiene informazioni di reindirizzamento per l'associazione dell'assembly. Ogni **bindingRedirect** deve essere incluso esattamente in **un dependentAssembly.** La sintassi della versione in quattro parti della nuova versione e della versione precedente deve specificare le stesse versioni principali e secondarie.
 
-Questo elemento ha gli attributi mostrati nella tabella seguente.
+Questo elemento presenta gli attributi illustrati nella tabella seguente.
 
 | Attributo      | Descrizione                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **oldVersion** | Specifica la versione dell'assembly sottoposta a override e reindirizzato. Usare la sintassi di versione in quattro parti nnnnn. NNNNN. NNNNN. NNNNN. Specificare un intervallo di versioni di un trattino senza spazi. Ad esempio, 2.14.3.0 o 2.14.3.0 2.16.0.0. Obbligatorio. |
-| **newVersion** | Specifica la versione dell'assembly sostitutivo. Usare la sintassi di versione in quattro parti nnnnn. NNNNN. NNNNN. NNNNN.                                                                                                                                     |
+| **oldVersion** | Specifica la versione dell'assembly sottoposta a override e reindirizzata. Usare la sintassi della versione in quattro parti nnnnn.nnnnn.nnnnn.nnnnn. Specificare un intervallo di versioni con un trattino senza spazi. Ad esempio, 2.14.3.0 o 2.14.3.0 2.16.0.0. Obbligatorio. |
+| **newVersion** | Specifica la versione dell'assembly di sostituzione. Usare la sintassi della versione in quattro parti nnnnn.nnnnn.nnnnn.nnnnn.                                                                                                                                     |
 
 ## <a name="remarks"></a>Commenti
 
-I file di configurazione dell'applicazione non specificano i file.
+I file di configurazione dell'applicazione non specificano file.
 
 ## <a name="example"></a>Esempio
 

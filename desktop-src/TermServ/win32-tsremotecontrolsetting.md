@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSRemoteControlSetting
-description: Definisce le impostazioni di configurazione del controllo remoto per la \_ classe terminale Win32.
+title: Win32_TSRemoteControlSetting classe
+description: Definisce le impostazioni di configurazione del controllo remoto per la classe \_ Terminale Win32.
 ms.assetid: 2e23915e-ee1c-4e53-8d0d-4d3fc2fefce6
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSRemoteControlSetting Servizi Desktop remoto
-- Classe Win32_TSRemoteControlSetting Servizi Desktop remoto, descritta
+- Win32_TSRemoteControlSetting classe Servizi Desktop remoto
+- Win32_TSRemoteControlSetting classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96e327744ad864e14e1f2580b3b71116e448f36e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7544e61197fb61261ee4e117d5c10d00e342ee1202371147b7718b8f3f2fc3ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137624"
 ---
-# <a name="win32_tsremotecontrolsetting-class"></a>Win32 \_ TSRemoteControlSetting (classe)
+# <a name="win32_tsremotecontrolsetting-class"></a>Classe Win32 \_ TSRemoteControlSetting
 
-La classe WMI **Win32 \_ TSRemoteControlSetting** definisce le impostazioni di configurazione del controllo remoto per la classe [**\_ terminale Win32**](win32-terminal.md) .
+La classe WMI **Win32 \_ TSRemoteControlSetting** definisce le impostazioni di configurazione del controllo remoto per la [**classe \_ Terminale Win32.**](win32-terminal.md)
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi più avanti in questo argomento.
 
@@ -58,20 +58,20 @@ class Win32_TSRemoteControlSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSRemoteControlSetting** presenta questi tipi di membri:
+La **classe \_ Win32 TSRemoteControlSetting** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSRemoteControlSetting** presenta questi metodi.
+La **classe Win32 \_ TSRemoteControlSetting** dispone di questi metodi.
 
 
 
 | Metodo                                                              | Descrizione                                                    |
 |:--------------------------------------------------------------------|:---------------------------------------------------------------|
-| [**RemoteControl**](win32-tsremotecontrolsetting-remotecontrol.md) | Imposta la proprietà **LevelOfControl** di questa classe.<br/> |
+| [**Controllo remoto**](win32-tsremotecontrolsetting-remotecontrol.md) | Imposta la **proprietà LevelOfControl** di questa classe.<br/> |
 
 
 
@@ -79,32 +79,32 @@ La classe **Win32 \_ TSRemoteControlSetting** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSRemoteControlSetting** dispone di queste proprietà.
+La **classe Win32 \_ TSRemoteControlSetting** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -112,38 +112,38 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LevelOfControl**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Livello di controllo per la sessione, che specifica se la sessione verrà visualizzata solo dall'utente remoto oppure visualizzata e controllata tramite una tastiera e un mouse. Per ulteriori informazioni, vedere la sezione Osservazioni del metodo [**RemoteControl**](win32-tsremotecontrolsetting-remotecontrol.md) . Sono supportati i valori seguenti.
+Livello di controllo per la sessione, che specifica se la sessione verrà visualizzata solo dall'utente remoto o visualizzata e controllata tramite tastiera e mouse. Per altre informazioni, vedere la sezione Osservazioni del [**metodo RemoteControl.**](win32-tsremotecontrolsetting-remotecontrol.md) Sono supportati i valori seguenti.
 
 <dt>
 
@@ -165,7 +165,7 @@ Il controllo remoto è disabilitato.
 
 </dt> <dd>
 
-L'utente del controllo remoto dispone del controllo completo della sessione dell'utente, con l'autorizzazione dell'utente.
+L'utente del controllo remoto ha il controllo completo della sessione dell'utente, con l'autorizzazione dell'utente.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ L'utente del controllo remoto dispone del controllo completo della sessione dell
 
 </dt> <dd>
 
-L'utente del controllo remoto ha il controllo completo della sessione dell'utente. l'autorizzazione dell'utente non è obbligatoria.
+L'utente del controllo remoto ha il controllo completo della sessione dell'utente; L'autorizzazione dell'utente non è necessaria.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ L'utente del controllo remoto ha il controllo completo della sessione dell'utent
 
 </dt> <dd>
 
-L'utente del controllo remoto può visualizzare la sessione in modalità remota con l'autorizzazione dell'utente. l'utente remoto non è in grado di controllare attivamente la sessione.
+L'utente del controllo remoto può visualizzare la sessione in remoto, con l'autorizzazione dell'utente; l'utente remoto non può controllare attivamente la sessione.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ L'utente del controllo remoto può visualizzare la sessione in modalità remota 
 
 </dt> <dd>
 
-L'utente del controllo remoto può visualizzare la sessione in modalità remota, ma non controlla attivamente la sessione. l'autorizzazione dell'utente non è obbligatoria.
+L'utente del controllo remoto può visualizzare la sessione in remoto, ma non controllare attivamente la sessione; L'autorizzazione dell'utente non è necessaria.
 
 </dd> </dl>
 
@@ -207,7 +207,7 @@ L'utente del controllo remoto può visualizzare la sessione in modalità remota,
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -215,20 +215,20 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PolicySourceLevelOfControl**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **LevelOfControl** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà LevelOfControl** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -255,16 +255,16 @@ Predefinito
 
 </dd> <dt>
 
-**RemoteControlPolicy**
+**Criteri di controllo remoto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Il criterio utilizzato dal server per recuperare le impostazioni di controllo remoto.
+Criteri utilizzati dal server per recuperare le impostazioni di controllo remoto.
 
 <dt>
 
@@ -275,13 +275,13 @@ Il criterio utilizzato dal server per recuperare le impostazioni di controllo re
 
 </dt> <dd>
 
-Le impostazioni di controllo remoto dell'utente sono attive.
+Le impostazioni di controllo remoto dell'utente sono effettive.
 
 </dd> <dt>
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Server-override** (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Sostituzione server** (1)
 
 
 </dt> <dd>
@@ -295,18 +295,18 @@ Le impostazioni di controllo remoto dell'utente vengono sostituite dal server.
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -319,7 +319,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -340,14 +340,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -368,10 +368,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 </dd> <dt>
 
-**Terminale**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -379,13 +379,13 @@ Tipo di accesso: sola lettura
 
 Nome del terminale.
 
-Questa proprietà viene ereditata da [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Questa proprietà viene ereditata da [**\_ TerminalSetting Win32.**](win32-terminalsetting.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per connettersi allo \\ \\ \\ spazio dei nomi CIMV2 TerminalServices radice, il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_ privacy**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6. Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Per connettersi allo spazio \\ dei \\ nomi TerminalServices CIMV2 radice, il livello di autenticazione \\ deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione **di RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore 6. Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -396,7 +396,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -406,8 +406,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -416,10 +416,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_Terminale Win32**](win32-terminal.md)
+[**Terminale Win32 \_**](win32-terminal.md)
 </dt> <dt>
 
-[**\_TerminalSetting Win32**](win32-terminalsetting.md)
+[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
 </dt> </dl>
 
  

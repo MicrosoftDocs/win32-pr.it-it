@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 18f58ae22cee06c439b6238df4c2a147405f7aca
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8f2e3a721ab21bc28ed97505f80a2da68aaca7e71db0847f95c288d032520a1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119252741"
 ---
 # <a name="startservice-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo StartService della classe Msvm \_ CollectionManagementService
 
@@ -55,7 +55,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un error
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

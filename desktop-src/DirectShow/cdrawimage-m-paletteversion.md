@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro PaletteVersion m viene utilizzata per tenere traccia della modifica della tavolozza.
+description: La variabile membro m \_ PaletteVersion viene usata per tenere traccia di quando viene modificata la tavolozza.
 ms.assetid: 45cb6e62-48b4-4480-a3fa-0f790f3c725d
-title: 'Membro CDrawImage:: m_PaletteVersion (Winutil. h)'
+title: Membro CDrawImage::m_PaletteVersion (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: beb4102606dce2fbc89fdd9ac251b007c875d6e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76df4ea53eb7540fa8816b2dac9e9fe62e476a7db47bec979ee54d70624909a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074345"
 ---
-# <a name="cdrawimagem_paletteversion-member"></a>Membro PaletteVersion di CDrawImage:: m \_
+# <a name="cdrawimagem_paletteversion-member"></a>Membro CDrawImage::m \_ PaletteVersion
 
-La `m_PaletteVersion` variabile membro viene utilizzata per tenere traccia della modifica della tavolozza.
+La `m_PaletteVersion` variabile membro viene usata per rilevare quando cambia la tavolozza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ LONG m_PaletteVersion;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

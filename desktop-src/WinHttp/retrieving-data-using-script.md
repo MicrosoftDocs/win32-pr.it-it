@@ -1,5 +1,5 @@
 ---
-description: Questo argomento include un esempio di come scrivere uno script che ottiene i dati tramite i servizi HTTP di Microsoft Windows (WinHTTP) in modo sincrono o asincrono.
+description: Questo argomento include un esempio di come scrivere uno script che ottiene dati tramite Microsoft Windows HTTP Services (WinHTTP) in modo sincrono o asincrono.
 ms.assetid: 84b847f8-4d9e-4fea-9e87-df4c65b54a02
 title: Recupero di dati tramite script
 ms.topic: article
@@ -9,33 +9,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 734516cf75f92cc43ab4cb15f22bd97aa803ec33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e018aa680808feddc021c7c03937d085b0d0f787c3213720cbb5e94a46a85c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133064"
 ---
 # <a name="retrieving-data-using-script"></a>Recupero di dati tramite script
 
-Questo argomento include un esempio di come scrivere uno script che ottiene i dati tramite i servizi HTTP di Microsoft Windows (WinHTTP) in modo sincrono o asincrono. I concetti illustrati in questo esempio rappresentano la base per la scrittura di applicazioni server client o di livello intermedio che richiedono l'accesso ai dati tramite il protocollo HTTP.
+Questo argomento include un esempio di come scrivere uno script che ottiene dati tramite Microsoft Windows HTTP Services (WinHTTP) in modo sincrono o asincrono. I concetti illustrati in questo esempio forniscono la base per la scrittura di applicazioni server client o di livello intermedio che richiedono l'accesso ai dati tramite il protocollo HTTP.
 
 -   [Prerequisiti e requisiti](#prerequisites-and-requirements)
--   [Recupero dei dati in modo sincrono](#retrieving-data-synchronously)
--   [Recupero dei dati in modo asincrono](#retrieving-data-asynchronously)
+-   [Recupero sincrono dei dati](#retrieving-data-synchronously)
+-   [Recupero di dati in modo asincrono](#retrieving-data-asynchronously)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="prerequisites-and-requirements"></a>Prerequisiti e requisiti
 
 Oltre a una conoscenza approfondita di Microsoft JScript, questo esempio richiede quanto segue:
 
--   Versione corrente del Software Development Kit (SDK) di Microsoft Windows.
--   Lo strumento di configurazione proxy per stabilire le impostazioni proxy per i servizi HTTP di Microsoft Windows (WinHTTP), se la connessione a Internet avviene tramite un server proxy. Per ulteriori informazioni, vedere [ProxyCfg.exe, uno strumento di configurazione proxy](proxycfg-exe--a-proxy-configuration-tool.md).
--   Una certa familiarità con i concetti e la [terminologia di rete](network-terminology.md) .
+-   La versione corrente di Microsoft Windows Software Development Kit (SDK).
+-   Lo strumento di configurazione del proxy per stabilire le impostazioni proxy per i servizi HTTP di Microsoft Windows (WinHTTP), se la connessione a Internet viene stabilita tramite un server proxy. Per altre informazioni, vedere [ProxyCfg.exe, a Proxy Configuration Tool.](proxycfg-exe--a-proxy-configuration-tool.md)
+-   Conoscenza della terminologia [e dei concetti](network-terminology.md) relativi alla rete.
 
-## <a name="retrieving-data-synchronously"></a>Recupero dei dati in modo sincrono
+## <a name="retrieving-data-synchronously"></a>Recupero sincrono dei dati
 
-**Per creare uno script che ottenga il testo da una pagina Web in modo sincrono, eseguire le operazioni seguenti:**
+**Per creare uno script che ottiene il testo da una pagina Web in modo sincrono, eseguire le operazioni seguenti:**
 
 1.  Aprire un editor di testo.
 2.  Copiare il codice seguente nell'editor di testo.
@@ -77,12 +77,12 @@ Oltre a una conoscenza approfondita di Microsoft JScript, questo esempio richied
 
     
 
-3.  Salvare il file con il nome "Retrieve.js".
+3.  Salvare il file come "Retrieve.js".
 4.  Al prompt dei comandi digitare "cscript Retrieve.js" e premere INVIO.
 
-A questo punto si dispone di uno script che usa un oggetto [**WinHttpRequest**](winhttprequest.md) per ottenere il codice sorgente HTML per la pagina Web in https://www.microsoft.com . Potrebbe essere necessario attendere alcuni secondi prima che il codice venga visualizzato.
+È ora disponibile uno script che usa un [**oggetto WinHttpRequest**](winhttprequest.md) per ottenere il codice sorgente HTML per la pagina Web in https://www.microsoft.com . Potrebbe essere necessario attendere alcuni secondi per la visualizzazione del codice.
 
-L'applicazione contiene una sola funzione, "gettext". La prima riga dello script crea l'oggetto [**WinHttpRequest**](winhttprequest.md) .
+L'applicazione contiene una sola funzione, "getText". La prima riga dello script crea [**l'oggetto WinHttpRequest.**](winhttprequest.md)
 
 
 ```JScript
@@ -92,9 +92,9 @@ L'applicazione contiene una sola funzione, "gettext". La prima riga dello script
 
 
 
-Quando il motore JScript rileva questa riga, crea un'istanza di questo oggetto. Se viene visualizzato il messaggio di errore "componente ActiveX non è in grado di creare l'oggetto", in questa riga, probabilmente il WinHttp.dll non è stato registrato correttamente o non è presente nel sistema.
+Quando il JScript rileva questa riga, crea un'istanza di questo oggetto. Se viene visualizzato il messaggio di errore "ActiveX component can't create object", in questa riga, molto probabilmente il WinHttp.dll non è stato registrato correttamente o non è presente nel sistema.
 
-La riga successiva dello script chiama il metodo [**Open**](iwinhttprequest-open.md) .
+La riga successiva dello script chiama il [**metodo Open.**](iwinhttprequest-open.md)
 
 
 ```JScript
@@ -104,9 +104,9 @@ La riga successiva dello script chiama il metodo [**Open**](iwinhttprequest-open
 
 
 
-Tre parametri specificano il [*verbo http*](glossary.md) da usare, il nome della risorsa e se usare WinHTTP in modo sincrono o asincrono. In questo esempio, il metodo usa il *verbo http*"Get" per ottenere i dati da https://www.microsoft.com . Se si specifica **false** per l'ultimo parametro, viene determinato che la transazione viene eseguita in modo sincrono. Il metodo [**Open**](iwinhttprequest-open.md) non stabilisce una connessione alla risorsa come potrebbe implicare il nome. Ma Inizializza le strutture di dati interne che conservano le informazioni sulla sessione, sulla connessione e sulla richiesta.
+Tre parametri specificano [*quale verbo HTTP*](glossary.md) usare, il nome della risorsa e se usare WinHTTP in modo sincrono o asincrono. In questo esempio il metodo usa il *verbo HTTP*"GET" per ottenere dati da https://www.microsoft.com . Se si **specifica FALSE** per l'ultimo parametro, la transazione viene eseguita in modo sincrono. Il [**metodo Open**](iwinhttprequest-open.md) non stabilisce una connessione alla risorsa, come potrebbe implicare il nome. Inizializza invece le strutture di dati interne che gestiscono le informazioni sulla sessione, la connessione e la richiesta.
 
-Il metodo [**Send**](iwinhttprequest-send.md) assembla le intestazioni della richiesta e Invia la richiesta. Quando viene chiamato in modalità sincrona, il metodo [**Send**](iwinhttprequest-send.md) attende anche una risposta prima di consentire all'applicazione di continuare.
+Il [**metodo Send**](iwinhttprequest-send.md) assembla le intestazioni della richiesta e invia la richiesta. Quando viene chiamato in modalità sincrona, il [**metodo Send**](iwinhttprequest-send.md) attende anche una risposta prima di consentire all'applicazione di continuare.
 
 
 ```JScript
@@ -116,7 +116,7 @@ Il metodo [**Send**](iwinhttprequest-send.md) assembla le intestazioni della ric
 
 
 
-Dopo l'invio della richiesta, lo script restituisce il valore della proprietà [**ResponseText**](iwinhttprequest-responsetext.md) dell'oggetto [**WinHttpRequest**](winhttprequest.md) . Questa proprietà contiene il corpo dell'entità della risposta, in questo caso, l'origine di un documento.
+Dopo aver inviato la richiesta, lo script restituisce il valore [**della proprietà ResponseText**](iwinhttprequest-responsetext.md) dell'oggetto [**WinHttpRequest.**](winhttprequest.md) Questa proprietà contiene il corpo dell'entità della risposta, in questo caso l'origine di un documento.
 
 
 ```JScript
@@ -128,13 +128,13 @@ Dopo l'invio della richiesta, lo script restituisce il valore della proprietà [
 
 L'esecuzione dello script viene sospesa mentre viene recuperato l'intero testo della risorsa. Il testo della risorsa viene restituito dalla funzione e visualizzato.
 
-L'oggetto [**WinHttpRequest**](winhttprequest.md) garantisce che tutte le risorse interne allocate per la transazione HTTP vengano rilasciate.
+[**L'oggetto WinHttpRequest**](winhttprequest.md) garantisce il rilascio di tutte le risorse interne allocate per la transazione HTTP.
 
-## <a name="retrieving-data-asynchronously"></a>Recupero dei dati in modo asincrono
+## <a name="retrieving-data-asynchronously"></a>Recupero di dati in modo asincrono
 
-Il recupero dei dati in modo asincrono tramite WinHTTP è molto simile al recupero sincrono dei dati. Modificare lo script della sezione precedente facendo due piccole modifiche.
+Il recupero dei dati in modo asincrono tramite WinHTTP è molto simile al recupero sincrono dei dati. Modificare lo script della sezione precedente apportando due piccole modifiche.
 
-1.  Impostare il terzo parametro del metodo [**Open**](iwinhttprequest-open.md) su "true" invece di "false" per specificare che i metodi WinHTTP devono essere eseguiti in modo asincrono.
+1.  Impostare il terzo parametro del metodo [**Open**](iwinhttprequest-open.md) su "true" anziché su "false" per specificare che i metodi WinHTTP devono essere eseguiti in modo asincrono.
     ```JScript
        //  Create a HTTP request.
         var temp = WinHttpReq.Open("GET", strURL, true);
@@ -142,7 +142,7 @@ Il recupero dei dati in modo asincrono tramite WinHTTP è molto simile al recupe
 
     
 
-2.  Richiamare il metodo [**waitForResponse**](iwinhttprequest-waitforresponse.md) prima di accedere alla proprietà [**ResponseText**](iwinhttprequest-responsetext.md) per assicurarsi che sia stata ricevuta l'intera risposta.
+2.  Richiamare il [**metodo WaitForResponse**](iwinhttprequest-waitforresponse.md) prima di accedere alla [**proprietà ResponseText**](iwinhttprequest-responsetext.md) per assicurarsi che sia stata ricevuta l'intera risposta.
     ```JScript
         //  Send the HTTP request.
         WinHttpReq.Send();
@@ -156,9 +156,9 @@ Il recupero dei dati in modo asincrono tramite WinHTTP è molto simile al recupe
 
     
 
-Il vantaggio principale dell'uso di WinHTTP in modo asincrono nello script è che il metodo [**Send**](iwinhttprequest-send.md) restituisce immediatamente un risultato. La richiesta viene preparata e inviata da un thread di lavoro. Ciò consente all'applicazione di eseguire altre operazioni mentre è in attesa della risposta. Prima di tentare di accedere alla risposta, verificare che l'intera risposta sia stata ricevuta chiamando il metodo [**waitForResponse**](iwinhttprequest-waitforresponse.md) . In caso contrario, può verificarsi un errore.
+Il vantaggio principale dell'uso di WinHTTP in modo asincrono nello script è che il [**metodo Send**](iwinhttprequest-send.md) restituisce immediatamente un risultato. La richiesta viene preparata e inviata da un thread di lavoro. In questo modo l'applicazione può eseguire altre operazioni mentre è in attesa della risposta. Prima di tentare di accedere alla risposta, assicurarsi che l'intera risposta sia stata ricevuta chiamando il [**metodo WaitForResponse.**](iwinhttprequest-waitforresponse.md) In caso contrario, può verificarsi un errore.
 
-Il metodo [**waitForResponse**](iwinhttprequest-waitforresponse.md) può essere utilizzato anche per specificare un valore di timeout per la transazione. Un parametro facoltativo consente di specificare il valore di timeout in secondi.
+Il [**metodo WaitForResponse**](iwinhttprequest-waitforresponse.md) può essere usato anche per specificare un valore di timeout per la transazione. Un parametro facoltativo consente di specificare il valore di timeout in secondi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

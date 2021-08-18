@@ -1,7 +1,7 @@
 ---
-description: Imposta o recupera un valore di opzione per i servizi HTTP di Microsoft Windows (WinHTTP).
+description: Imposta o recupera un valore dell'opzione Microsoft Windows servizi HTTP (WinHTTP).
 ms.assetid: 913573e6-fad3-42a5-bb5d-25a3d2ac9616
-title: 'Proprietà IWinHttpRequest:: Option'
+title: Proprietà IWinHttpRequest::Option
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: c76df3f09871984da9f4bc093e9ac96d7484558f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05368f1a5179dcaa94bc07a32035e308e9848e867d89f42f4dffb94c765ee448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133094"
 ---
-# <a name="iwinhttprequestoption-property"></a>Proprietà IWinHttpRequest:: Option
+# <a name="iwinhttprequestoption-property"></a>Proprietà IWinHttpRequest::Option
 
-La proprietà **Option** imposta o recupera un valore di opzione per servizi HTTP di Microsoft Windows (WinHTTP).
+La **proprietà Option** imposta o recupera un valore dell'opzione Microsoft Windows servizi HTTP (WinHTTP).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -59,22 +59,22 @@ WinHttpRequest.Option = vtOption
 
 Valore **Variant** che contiene il valore dell'opzione.
 
-Il parametro *Option* specifica il [**WinHttpRequestOption**](winhttprequestoption.md) da impostare o recuperare.
+Il *parametro Option* specifica [**WinHttpRequestOption**](winhttprequestoption.md) da impostare o recuperare.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in** caso di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come impostare e visualizzare l'opzione della stringa [*agente utente*](glossary.md) e visualizzare diverse altre opzioni.
+L'esempio seguente illustra come impostare e visualizzare [*l'opzione della stringa agente*](glossary.md) utente e visualizzare varie altre opzioni.
 
 
 ```C++
@@ -207,7 +207,7 @@ int main()
 
 
 
-Nell'esempio di script seguente viene illustrato come impostare e visualizzare le opzioni.
+L'esempio di scripting seguente illustra come impostare e visualizzare le opzioni.
 
 
 ```JScript
@@ -246,11 +246,11 @@ WScript.Echo( 'Escape percents: '+
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -265,7 +265,7 @@ WScript.Echo( 'Escape percents: '+
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> <dt>
 
 [**WinHttpRequestOption**](winhttprequestoption.md)

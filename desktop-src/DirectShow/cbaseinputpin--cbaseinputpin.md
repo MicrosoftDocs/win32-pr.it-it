@@ -1,5 +1,5 @@
 ---
-description: Distruttore CBaseInputPin.~CBaseInputPin - Metodo distruttore.
+description: 'Distruttore CBaseInputPin.~CBaseInputPin : metodo del distruttore.'
 ms.assetid: e5a63ce5-d835-45eb-9b15-7d416d9ab734
 title: Distruttore CBaseInputPin.~CBaseInputPin (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b01732d1e2c653ced9eeb38ad74f33b61171ae1c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c8dd20ec3e22531a9425a2bbdde88ead1c4cf9ffe2501b7807adb019bcd6f6f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214341"
 ---
 # <a name="cbaseinputpincbaseinputpin-destructor"></a>Distruttore CBaseInputPin.~CBaseInputPin
 
@@ -42,7 +42,7 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 436aec48-518b-4759-b06a-d23b8e422ca8
 title: System.Sync.ConflictSecondLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fcbaf0a1a75ec1f1c42fef230037695afdeb13b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e87d67c69eb7e772f80e6d189b8b2d2afea5d2b6577664446751c38214c23cd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095488"
 ---
 # <a name="systemsyncconflictsecondlocation"></a>System.Sync.ConflictSecondLocation
 

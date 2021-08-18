@@ -1,44 +1,44 @@
 ---
-title: Attributo OnEd di la
-description: Attributo OnEd di la
+title: Attributo VML OnEd
+description: Attributo VML OnEd
 ms.assetid: d24137c3-73cb-4b92-bf25-ffe4aa8b0069
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1892d5ed185358c4abc5fa6fdaf6448ac5b6317c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 48ef444037a0cd05a7cfbed5a97bb93ed7e8236a9d9f66bf1f7bd77b92b82e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104339015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999151"
 ---
-# <a name="vml-oned-attribute"></a>Attributo OnEd di la
+# <a name="vml-oned-attribute"></a>Attributo VML OnEd
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se gli handle aggiuntivi di una forma sono nascosti. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se i punti di controllo aggiuntivi di una forma sono nascosti. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:oned = " *Expression* " >
+<v: *elemento* o:oned=" *espressione* ">
 
 **Osservazioni:**
 
-Nasconde tutti gli handle di forma ad eccezione della parte superiore sinistra e della parte inferiore destra; ovvero gli stessi handle utilizzati per un segmento di linea retta. Il valore predefinito è **False**.
+Nasconde tutti i quadratini di ridimensionamento della forma tranne quelli in alto a sinistra e in basso a destra. gli stessi handle usati per un segmento di linea retta. Il valore predefinito è **False**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
-Tutti gli handle, tranne quelli in alto a sinistra e in basso a destra, della forma sono nascosti.
+Tutti i punti di controllo della forma, ad esempio i punti di controllo superiore sinistro e inferiore destro, sono nascosti.
 
 
 ```HTML
@@ -52,6 +52,6 @@ Tutti gli handle, tranne quelli in alto a sinistra e in basso a destra, della fo
 
 
 
- 
+ 
 
- 
+ 

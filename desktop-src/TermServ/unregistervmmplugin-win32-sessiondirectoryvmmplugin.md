@@ -4,9 +4,9 @@ description: Annulla la registrazione del plug-in.
 ms.assetid: d5fec317-8277-4154-ae16-1203d4d15246
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo UnregisterVMMPlugin
-- Metodo UnregisterVMMPlugin Servizi Desktop remoto, classe Win32_SessionDirectoryVMMPlugin
-- Classe Win32_SessionDirectoryVMMPlugin Servizi Desktop remoto, metodo UnregisterVMMPlugin
+- Metodo UnregisterVMMPlugin Servizi Desktop remoto
+- Metodo UnregisterVMMPlugin Servizi Desktop remoto , Win32_SessionDirectoryVMMPlugin classe
+- Win32_SessionDirectoryVMMPlugin classe Servizi Desktop remoto metodo , UnregisterVMMPlugin
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa0ea4c37d83e8788b13b0469b808ab4de6b473
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 642eef115d2dbf0e752969128d5847797fb40278eb81999430b39cf6152c3e55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424031"
 ---
-# <a name="unregistervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo UnregisterVMMPlugin della \_ classe SessionDirectoryVMMPlugin Win32
+# <a name="unregistervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo UnregisterVMMPlugin della classe \_ Win32 SessionDirectoryVMMPlugin
 
 Annulla la registrazione del plug-in.
 
@@ -49,8 +49,8 @@ Questo metodo non presenta parametri.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -59,7 +59,7 @@ Questo metodo non presenta parametri.
 
 <dl> <dt>
 
-[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
+[**Win32 \_ SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md)
 </dt> </dl>
 
  

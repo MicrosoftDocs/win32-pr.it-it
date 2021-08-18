@@ -1,24 +1,24 @@
 ---
-title: Provider moniker
-description: Provider moniker
+title: Provider di moniker
+description: Provider di moniker
 ms.assetid: 4d4820d2-bf5f-4543-b318-59481dcc51de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fde584e12daddacbc940b23b21a0386aa37de2c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b8fab6c5a84d7020b8bcb02979471cb2fbd76df7e66fc9909eec2121926827df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130103"
 ---
-# <a name="moniker-providers"></a>Provider moniker
+# <a name="moniker-providers"></a>Provider di moniker
 
-In generale, un componente deve essere un provider del moniker quando consente l'accesso a uno dei relativi oggetti, controllando comunque l'archiviazione dell'oggetto. Se un componente distribuisce moniker che identificano gli oggetti, deve essere in grado di eseguire le attività seguenti:
+In generale, un componente deve essere un provider di moniker quando consente l'accesso a uno dei relativi oggetti, controllando comunque l'archiviazione dell'oggetto. Se un componente deve fornire moniker che identificano i relativi oggetti, deve essere in grado di eseguire le attività seguenti:
 
--   Su richiesta, creare un moniker che identifichi un oggetto.
--   Consente di associare il moniker quando un client chiama [**IMoniker:: BindToObject**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtoobject) .
+-   Su richiesta, creare un moniker che identifica un oggetto.
+-   Abilitare il moniker da associare quando un client chiama [**IMoniker::BindToObject**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtoobject) su di esso.
 
-Un provider del moniker deve creare un moniker di una *classe di moniker* appropriata per identificare un oggetto. La classe moniker si riferisce a un'implementazione specifica dell'interfaccia [**IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) che definisce il tipo di moniker creato. Sebbene sia possibile implementare **IMoniker** per creare una nuova classe moniker, spesso non è necessario perché OLE fornisce implementazioni di diverse classi moniker, ciascuna con il proprio CLSID. Vedere [implementazioni del moniker OLE](ole-moniker-implementations.md) per le descrizioni delle classi moniker fornite da OLE.
+Un provider di moniker deve creare un moniker di una classe *moniker appropriata* per identificare un oggetto. La classe moniker fa riferimento a un'implementazione specifica [**dell'interfaccia IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) che definisce il tipo di moniker creato. Sebbene sia possibile implementare IMoniker per creare una nuova classe moniker, spesso non è necessario perché OLE fornisce implementazioni di diverse classi di **moniker,** ognuna con il proprio CLSID. Per le descrizioni delle classi di moniker fornite da OLE, vedere Implementazioni di [moniker](ole-moniker-implementations.md) OLE.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -27,12 +27,12 @@ Un provider del moniker deve creare un moniker di una *classe di moniker* approp
 [Client moniker](moniker-clients.md)
 </dt> <dt>
 
-[Implementazioni del moniker OLE](ole-moniker-implementations.md)
+[Implementazioni di moniker OLE](ole-moniker-implementations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

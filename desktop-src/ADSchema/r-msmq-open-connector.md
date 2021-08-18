@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Open-Connector esteso a destra
+title: msmq-Open-Connector esteso a destra
 description: Consente di aprire la coda del connettore.
 ms.assetid: 5eb63190-5a64-4dad-a3bb-3fc317faabd7
 ms.tgt_platform: multiple
 keywords:
-- 'MSMQ: schema AD esteso a destra del connettore'
+- Schema AD esteso msmq-Open-Connector
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ea75f7148848fb5a9cecee4297679d28976d588
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: acfa52a3d2a227ad5bd5696ecbdf02a09f6b4b2840adaa29942c63ec6e038c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021649"
 ---
-# <a name="msmq-open-connector-extended-right"></a>MSMQ-Open-Connector esteso a destra
+# <a name="msmq-open-connector-extended-right"></a>msmq-Open-Connector esteso a destra
 
 Consente di aprire la coda del connettore.
 
@@ -28,8 +28,8 @@ Consente di aprire la coda del connettore.
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | MSMQ-connettore aperto                  |
-| Display-Name | Apri coda connettore                 |
+| CN           | msmq-Open-Connector                  |
+| Display-Name | Aprire la coda del connettore                 |
 | Rights-GUID  | b4e60130-df3f-11d1-9c86-006008764d0e |
 
 
@@ -50,7 +50,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -61,7 +61,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -72,7 +72,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -83,7 +83,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -94,7 +94,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -105,7 +105,7 @@ Consente di aprire la coda del connettore.
 | Voce | Valore |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sito**](c-site.md)<br/> |
-| Localization-display-ID | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 

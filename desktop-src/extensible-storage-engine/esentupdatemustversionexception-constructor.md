@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentUpdateMustVersionException'
+description: Altre informazioni sul costruttore EsentUpdateMustVersionException
 title: Costruttore EsentUpdateMustVersionException
 TOCTitle: 'EsentUpdateMustVersionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentUpdateMustVersionException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1f2763733e3e87862cfd1e411f3cbf1b79ac753c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e653f38dcb3867ef9ca6605b8553ad162d24e4cdf450ed6b4ab32c44115cc1a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112797"
 ---
 # <a name="esentupdatemustversionexception-constructor"></a>Costruttore EsentUpdateMustVersionException
 
 Inizializza una nuova istanza della classe EsentUpdateMustVersionException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentUpdateMustVersionException()
 
 [Membri di EsentUpdateMustVersionException](./esentupdatemustversionexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

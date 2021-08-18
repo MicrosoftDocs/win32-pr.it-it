@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentIOException'
+description: Altre informazioni sulla classe EsentIOException
 title: Classe EsentIOException
 TOCTitle: EsentIOException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentIOException
@@ -24,33 +24,33 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b5fbcbf38ae60ae17f74e650c403611a88d89662
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82c10cc71e7621aa5fb338acc8964a3e221af3cc068eafb1d32aab6273182501
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115951"
 ---
 # <a name="esentioexception-class"></a>Classe EsentIOException
 
-Classe di base per le eccezioni IO.
+Classe di base per le eccezioni di I/O.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. esent. Interop. EsentIOException  
-            [Microsoft. ISAM. esent. Interop. EsentDeleteBackupFileFailException](./esentdeletebackupfilefailexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentDiskIOException](./esentdiskioexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentLogWriteFailException](./esentlogwritefailexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentMakeBackupDirectoryFailException](./esentmakebackupdirectoryfailexception-class.md)  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentIOException  
+            [Microsoft.Isam.Esent.Interop.EsentDeleteBackupFileFailException](./esentdeletebackupfilefailexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDiskIOException](./esentdiskioexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLogWriteFailException](./esentlogwritefailexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMakeBackupDirectoryFailException](./esentmakebackupdirectoryfailexception-class.md)  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,4 +78,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentIOException](./esentioexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: g_wszWMACMixTable (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMACMixTable (Wmcodecdsp. h)
+title: g_wszWMACMixTable (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | g_wszWMACMixTable (Wmcodecdsp.h)
 ms.assetid: 83ce85ca-dbf7-4577-b280-d8d336e3faf9
 keywords:
-- g_wszWMACMixTable formato Windows Media
+- g_wszWMACMixTable Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 925e7f5092c51ae01f73a8e8675d748c165c6ceb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f947fe02076fe2fb74c71ddbb5f8d1c4e2546383d829d63555f34c95c3673d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085733"
 ---
 # <a name="g_wszwmacmixtable"></a>g \_ wszWMACMixTable
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

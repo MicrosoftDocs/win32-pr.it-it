@@ -1,7 +1,7 @@
 ---
-description: Estrae gli ID cluster per campione da un buffer di dati compresso ID3DXPRTCompBuffer.
+description: Estrae gli ID cluster per esempio da un buffer di dati compressi ID3DXPRTCompBuffer.
 ms.assetid: d78d82ab-58bc-4b73-9ca0-8b7f06867618
-title: 'Metodo ID3DXPRTCompBuffer:: ExtractClusterIDs (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTCompBuffer::ExtractClusterIDs (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ef68a972109e89e318adb83ab388c653c6a3deed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94cbf51aaedd8cc0d5505ca91663eb014e2a3d417a631e93d71b8a0ebc600ceb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987181"
 ---
-# <a name="id3dxprtcompbufferextractclusterids-method"></a>Metodo ID3DXPRTCompBuffer:: ExtractClusterIDs
+# <a name="id3dxprtcompbufferextractclusterids-method"></a>Metodo ID3DXPRTCompBuffer::ExtractClusterIDs
 
-Estrae gli ID cluster per campione da un buffer di dati compresso [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) .
+Estrae gli ID cluster per esempio da un buffer di dati [**compressi ID3DXPRTCompBuffer.**](id3dxprtcompbuffer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT ExtractClusterIDs(
 
 <dl> <dt>
 
-*pClusterIDs* \[ in uscita\]
+*pClusterIDs* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntatore alla posizione in memoria in cui vengono scritti gli ID. La lunghezza della memoria necessaria è il valore restituito da [**ID3DXPRTCompBuffer:: GetNumSamples**](id3dxprtcompbuffer--getnumsamples.md).
+Puntatore alla posizione in memoria in cui vengono scritti gli ID. La lunghezza della memoria richiesta è il valore restituito da [**ID3DXPRTCompBuffer::GetNumSamples**](id3dxprtcompbuffer--getnumsamples.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore alla posizione in memoria in cui vengono scritti gli ID. La lunghezza 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

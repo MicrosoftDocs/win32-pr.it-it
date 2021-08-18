@@ -1,19 +1,19 @@
 ---
-description: Questa sezione contiene argomenti concettuali e procedure che descrivono i codificatori bitmap di Windows Imaging Component (WIC) usati per codificare le immagini digitali.
+description: Questa sezione contiene argomenti concettuali e procedure che descrivono Windows codificatori bitmap WIC (Windows Imaging Component) usati per codificare immagini digitali.
 ms.assetid: 2B44570E-CB55-4898-9C77-B043493F8CAE
-title: Codifica dei dati dell'immagine
+title: Codifica dei dati immagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a02d20fc6e68da2f1240e0f2f84506bc28cc6b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd670afe87fce4507a24bdfa271a7e57354b0331723294b37aed170d9848fbf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086844"
 ---
-# <a name="encoding-image-data"></a>Codifica dei dati dell'immagine
+# <a name="encoding-image-data"></a>Codifica dei dati immagine
 
-Questa sezione contiene argomenti concettuali e procedure che descrivono i codificatori bitmap di Windows Imaging Component (WIC) usati per codificare le immagini digitali.
+Questa sezione contiene argomenti concettuali e procedure che descrivono Windows codificatori bitmap WIC (Windows Imaging Component) usati per codificare immagini digitali.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

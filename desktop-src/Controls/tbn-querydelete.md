@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_QUERYDELETE (COMmctrl. h)
-description: Notifica alla finestra padre della barra degli strumenti se un pulsante può essere eliminato da una barra degli strumenti mentre l'utente personalizza la barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_QUERYDELETE di notifica (Commctrl.h)
+description: Notifica alla finestra padre della barra degli strumenti se un pulsante può essere eliminato da una barra degli strumenti mentre l'utente sta personalizzando la barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: fa6a8fe4-a9a3-4c59-9237-d28bd34d664c
 keywords:
-- Controlli di Windows per il codice di notifica TBN_QUERYDELETE
+- TBN_QUERYDELETE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a416545ecf7ad8562c1327160d683a109eccb3b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a01d1322ce8461c5cdb53fc76cfc220bbb5d292dedbe589d8b6ada5a48756d55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077885"
 ---
-# <a name="tbn_querydelete-notification-code"></a>\_Codice di notifica QUERYDELETE di TBN
+# <a name="tbn_querydelete-notification-code"></a>Codice di notifica \_ TBN QUERYDELETE
 
-Notifica alla finestra padre della barra degli strumenti se un pulsante può essere eliminato da una barra degli strumenti mentre l'utente personalizza la barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre della barra degli strumenti se un pulsante può essere eliminato da una barra degli strumenti mentre l'utente sta personalizzando la barra degli strumenti. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ TBN_QUERYDELETE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) . Il membro **iItem** contiene l'indice in base zero del pulsante da eliminare.
+Puntatore a [**una struttura NMTOOLBAR.**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) Il membro **iItem** contiene l'indice in base zero del pulsante da eliminare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** per consentire l'eliminazione del pulsante o **false** per impedire che il pulsante venga eliminato.
+Restituisce **TRUE** per consentire l'eliminazione del pulsante o **FALSE** per impedire l'eliminazione del pulsante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce **true** per consentire l'eliminazione del pulsante o **false** per 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

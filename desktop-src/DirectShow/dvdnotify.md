@@ -1,15 +1,15 @@
 ---
-description: L'evento DVDNotify notifica a un'applicazione di molti eventi DVD e istruzioni per i dischi diversi.
+description: L'evento DVDNotify notifica a un'applicazione molti eventi DVD e istruzioni su disco diversi.
 ms.assetid: 8e7d85fb-95c0-472d-ab17-a82da303b68f
-title: DVDNotify (Segment. h)
+title: DVDNotify (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b31a2974bec428cb8ffe290edc9a384445e42070
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 988deaf53fb2b50555b4cf19a38684610aa0822a270dfba079defab92ce8aec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148704"
 ---
 # <a name="dvdnotify"></a>DVDNotify
 
@@ -18,7 +18,7 @@ ms.locfileid: "106329262"
 
  
 
-L' `DVDNotify` evento invia una notifica all'applicazione di molti eventi DVD e istruzioni per i dischi diversi.
+`DVDNotify`L'evento notifica a un'applicazione molti eventi DVD e istruzioni su disco diversi.
 
 ``` syntax
 DVDNotify(EventCode, Param1, Param2)
@@ -31,7 +31,7 @@ DVDNotify(EventCode, Param1, Param2)
 <span id="EventCode"></span><span id="eventcode"></span><span id="EVENTCODE"></span>*EventCode*
 </dt> <dd>
 
-Specifica il codice di notifica dell'evento DVD.
+Specifica il codice di notifica degli eventi DVD.
 
 </dd> <dt>
 
@@ -51,7 +51,7 @@ Può contenere informazioni aggiuntive correlate all'evento.
 
 ## <a name="remarks"></a>Commenti
 
-I [codici di notifica degli eventi DVD](dvd-notification-codes.md) forniscono una spiegazione completa di tutti i codici di notifica degli eventi DVD e dei relativi parametri.
+[Dvd Event Notification Codes (Codici](dvd-notification-codes.md) di notifica eventi DVD) fornisce una spiegazione completa di tutti i codici di notifica degli eventi DVD e dei relativi parametri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ I [codici di notifica degli eventi DVD](dvd-notification-codes.md) forniscono un
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

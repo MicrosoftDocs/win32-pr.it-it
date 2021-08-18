@@ -1,7 +1,7 @@
 ---
 description: Recupera la stringa di risultato migliore dell'operazione di riconoscimento per l'intero albero del nodo di contesto in IInkAnalyzer.
 ms.assetid: 4aa57f41-3122-47a9-a60d-4a229e23f63c
-title: 'Metodo IInkAnalyzer:: GetRecognizedString (IACom. h)'
+title: Metodo IInkAnalyzer::GetRecognizedString (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 67afe9909fcabb8df880706b2b077ea602ccade6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3defa68f68e0c2e81bdb093005db1e173442b9686ca4c98a4966c755b2fb52dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092249"
 ---
-# <a name="iinkanalyzergetrecognizedstring-method"></a>Metodo IInkAnalyzer:: GetRecognizedString
+# <a name="iinkanalyzergetrecognizedstring-method"></a>Metodo IInkAnalyzer::GetRecognizedString
 
-Recupera la stringa di risultato migliore dell'operazione di riconoscimento per l'intero albero del nodo di contesto in [**IInkAnalyzer**](iinkanalyzer.md).
+Recupera la stringa con il risultato migliore dell'operazione di riconoscimento per l'intero albero dei nodi di contesto in [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ HRESULT GetRecognizedString(
 
 <dl> <dt>
 
-*pbstrRecognizedString* \[ out\]
+*pbstrRecognizedString* \[ Cambio\]
 </dt> <dd>
 
-Stringa di risultato migliore dell'operazione di riconoscimento per l'intero albero del nodo di contesto in [**IInkAnalyzer**](iinkanalyzer.md).
+Stringa di risultato migliore dell'operazione di riconoscimento per l'intera struttura ad albero del nodo di contesto in [**IInkAnalyzer.**](iinkanalyzer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,14 +57,14 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
  
 
-Questo metodo restituisce lo stesso valore dei dati della proprietà del nodo radice per la stringa riconosciuta. (Vedere il [**Metodo IInkAnalyzer:: GetRootNode**](iinkanalyzer-getrootnode.md), [**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md)e le [proprietà del nodo di contesto](context-node-properties.md)).
+Questo metodo restituisce lo stesso valore dei dati delle proprietà del nodo radice per la stringa riconosciuta. Vedere [**Metodo IInkAnalyzer::GetRootNode**](iinkanalyzer-getrootnode.md), [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)e [Proprietà del nodo di contesto](context-node-properties.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che esamina l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore di input penna. Se il IInkAnlyzer non sta attualmente eseguendo l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
+L'esempio seguente illustra un metodo che illustra l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore input penna. Se IInkAnlyzer non esegue attualmente l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
 
--   Ottiene la stringa di riconoscimento superiore.
--   Ottiene il nodo radice dell'analizzatore di input penna.
+-   Ottiene la prima stringa di riconoscimento.
+-   Ottiene il nodo radice dell'analizzatore input penna.
 -   Chiama un metodo helper, `ExploreContextNode` , per esaminare il nodo radice e i relativi nodi figlio.
 
 
@@ -127,9 +127,9 @@ HRESULT CMyClass::ExploreAnalysisResults(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -141,7 +141,7 @@ HRESULT CMyClass::ExploreAnalysisResults(
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

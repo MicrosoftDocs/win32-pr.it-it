@@ -1,33 +1,33 @@
 ---
-title: Creare gli oggetti animazione principali
-description: Per utilizzare l'animazione Windows nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti animazione principali.
+title: Creare gli oggetti di animazione principali
+description: Per usare Windows'animazione nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti di animazione principali.
 ms.assetid: 4005819e-482c-4052-89f8-b8e457c0c3dc
 keywords:
-- Animazione Windows oggetti Animation Manager, creazione
-- animazione oggetti timer animazione Windows, creazione
-- oggetti libreria di transizione animazione Windows, creazione
+- oggetti di gestione animazione Windows Animation , creazione
+- oggetti timer di animazione Windows Animation , creazione
+- transition library objects Windows Animation ,creating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ccd1cab32e72bf1382469ada52abeecee47b6a1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b3023e5934581850bb6aa21e7d41d92642bb01fadfcf7531fcacabca74b411f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137404"
 ---
-# <a name="create-the-main-animation-objects"></a>Creare gli oggetti animazione principali
+# <a name="create-the-main-animation-objects"></a>Creare gli oggetti di animazione principali
 
-Per utilizzare l'animazione Windows nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti animazione principali.
+Per usare Windows'animazione nell'applicazione, il primo passaggio consiste nel creare un piccolo set di oggetti di animazione principali.
 
 ## <a name="overview"></a>Panoramica
 
-Utilizzare la funzione [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) per creare gli oggetti gestione animazioni, timer animazione e libreria di transizione.
+Usare la [**funzione CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) per creare il gestore dell'animazione, il timer di animazione e gli oggetti della libreria di transizione.
 
-Questi oggetti saranno necessari per creare e visualizzare le animazioni, quindi in genere non devono essere rilasciati fino a quando l'applicazione non viene arrestata. Se non è possibile che eventuali callback registrati abbiano creato un ciclo di riferimento, il rilascio degli oggetti è sufficiente per una pulizia corretta. In caso contrario, l'applicazione può essere pulita cancellando i callback (passando **null** al posto di ogni) o chiamando il metodo [**Shutdown**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) del gestore animazione.
+Questi oggetti saranno necessari per creare e visualizzare animazioni, quindi in genere non devono essere rilasciati fino a quando l'applicazione non viene arrestata. Se non è possibile che i callback registrati potrebbero aver creato un ciclo di riferimento, il rilascio degli oggetti è sufficiente per una pulizia corretta. In caso contrario, l'applicazione può eseguire la pulizia cancellando i callback (passando **NULL** al posto di ognuno) o chiamando il metodo [**Shutdown**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) del gestore dell'animazione.
 
 ## <a name="example-code"></a>Codice di esempio
 
-Il codice di esempio seguente viene tratto da MainWindow. cpp negli esempi di animazione Windows; vedere il metodo CMainWindow:: InitializeAnimation.
+Il codice di esempio seguente è tratto da MainWindow.cpp negli esempi Windows Animation; vedere il metodo CMainWindow::InitializeAnimation.
 
 
 ```C++
@@ -73,7 +73,7 @@ if (SUCCEEDED(hr))
 
 
 
-Si notino le seguenti definizioni da MainWindow. h.
+Si notino le definizioni seguenti di MainWindow.h.
 
 
 ```
@@ -99,13 +99,13 @@ private:
 
 ## <a name="next-step"></a>passaggio successivo
 
-Al termine di questo passaggio, il passaggio successivo è: [Create Animation Variables](create-animation-variables.md).
+Dopo aver completato questo passaggio, il passaggio successivo è: [Creare variabili di animazione](create-animation-variables.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)
+[**Cocreateinstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> <dt>
 
 [**IUIAnimationManager**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationmanager)
@@ -114,12 +114,12 @@ Al termine di questo passaggio, il passaggio successivo è: [Create Animation Va
 [**IUIAnimationTimer**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtimer)
 </dt> <dt>
 
-[**IUIAnimationTransitionLibrary**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
+[**Libreria IUIAnimationTransition**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
 </dt> <dt>
 
-[Cenni preliminari sull'animazione Windows](scenic-animation-api-overview.md)
+[Windows Cenni preliminari sull'animazione](scenic-animation-api-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

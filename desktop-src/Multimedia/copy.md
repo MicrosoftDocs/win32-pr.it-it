@@ -1,9 +1,9 @@
 ---
-title: Copy (comando)
-description: Il comando copy copia i dati negli Appunti. I dispositivi digitali video riconoscono questo comando.
+title: comando copy
+description: Il comando copy copia i dati negli Appunti. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: 4f7b5be6-12c3-43a0-bac9-19eb49384330
 keywords:
-- Copia comando Windows Multimedia
+- Comando copy Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f08c764cb12b1cdca4c1876e6a22220a5c7522
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d3d103aae14b9dc13bb0d7d210d0412db993210bc788fa7fedd1a48a7216d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144784"
 ---
-# <a name="copy-command"></a>Copy (comando)
+# <a name="copy-command"></a>comando copy
 
-Il comando copy copia i dati negli Appunti. I dispositivi digitali video riconoscono questo comando.
+Il comando copy copia i dati negli Appunti. I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,11 +55,11 @@ Uno dei flag seguenti che identifica l'elemento da copiare.
 
 | Valore                 | Significato                                                                                                                                                                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| al *rettangolo*        | Specifica la parte di ogni frame che verrà copiato. Se omesso, l'impostazione predefinita è l'intero frame.                                                                                                                             |
-| *flusso* del flusso audio | Specifica il flusso audio nell'area di lavoro interessata dal comando. Se si usa questo flag e si vuole anche copiare il video, è necessario usare anche il flag "flusso video". Se non viene specificato alcun flag, vengono copiati tutti i flussi audio e video. |
+| at *rectangle*        | Specifica la parte di ogni frame che verrà copiato. Se omesso, l'impostazione predefinita è l'intero frame.                                                                                                                             |
+| flusso  audio | Specifica il flusso audio nell'area di lavoro interessata dal comando . Se si usa questo flag e si vuole anche copiare il video, è necessario usare anche il flag "flusso video". Se non viene specificato alcun flag, vengono copiati tutti i flussi audio e video. |
 | dalla *posizione*       | Specifica l'inizio dell'intervallo copiato. Se omesso, l'impostazione predefinita è la posizione corrente.                                                                                                                                         |
-| *posizione*         | Specifica la fine dell'intervallo copiato. I dati audio e video copiati sono esclusivi di questa posizione. Se omesso, l'impostazione predefinita è la fine dell'area di lavoro.                                                                       |
-| *flusso* del flusso video | Specifica il flusso video nell'area di lavoro interessata dal comando. Se si usa questo flag e si vuole anche copiare l'audio, è necessario usare anche il flag "flusso audio". Se non viene specificato alcun flag, vengono copiati tutti i flussi audio e video. |
+| to *position*         | Specifica la fine dell'intervallo copiato. I dati audio e video copiati sono esclusivi di questa posizione. Se omesso, l'impostazione predefinita è la fine dell'area di lavoro.                                                                       |
+| flusso  video | Specifica il flusso video nell'area di lavoro interessata dal comando . Se si usa questo flag e si vuole anche copiare l'audio, è necessario usare anche il flag "flusso audio". Se non viene specificato alcun flag, vengono copiati tutti i flussi audio e video. |
 
 
 
@@ -70,13 +70,13 @@ Uno dei flag seguenti che identifica l'elemento da copiare.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify", "test" o una combinazione di questi. Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify", "test" o una combinazione di questi elementi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,7 +93,7 @@ Restituisce zero in caso di esito positivo o un errore.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

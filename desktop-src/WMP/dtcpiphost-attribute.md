@@ -1,6 +1,6 @@
 ---
 title: Attributo DTCPIPHost
-description: L'attributo DTCPIPHost è il nome o l'indirizzo IP del computer o del dispositivo che deve essere contattato per lo scambio di chiave autenticato di trasmissione digitale protezione del contenuto over Internet Protocol (DTCP-IP) per l'elemento multimediale.
+description: L'attributo DTCPIPHost è il nome o l'indirizzo IP del computer o del dispositivo che deve essere contattato per digital transmission protezione del contenuto over Internet Protocol (DTCP-IP) Authenticated Key Exchange (AKE) per l'elemento multimediale.
 ms.assetid: 61b7d6fb-c216-49ae-811a-8ce42fdb71e4
 keywords:
 - Attributo DTCPIPHost Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9983cac920f2d11b9040e03af30e10b9c0c3fbcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88eaa85b756a46b1333db2e5eabda9cbaf86a702f5ae9c8225d6f6d8928e2d2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996951"
 ---
 # <a name="dtcpiphost-attribute"></a>Attributo DTCPIPHost
 
-L'attributo **DTCPIPHost** è il nome o l'indirizzo IP del computer o del dispositivo che deve essere contattato per lo scambio di chiave autenticato di trasmissione digitale protezione del contenuto over Internet Protocol (DTCP-IP) per l'elemento multimediale.
+**L'attributo DTCPIPHost** è il nome o l'indirizzo IP del computer o del dispositivo che deve essere contattato per l'elemento multimediale Digital Transmission protezione del contenuto over Internet Protocol (DTCP-IP) Authenticated Key Exchange (AKE).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -32,9 +32,9 @@ L'attributo **DTCPIPHost** è il nome o l'indirizzo IP del computer o del dispos
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è disponibile, l'elemento multimediale viene protetto tramite DTCP-IP.
+Se questo attributo è disponibile, l'elemento multimediale è protetto tramite DTCP-IP.
 
-Questo attributo non è disponibile per gli elementi multimediali nella libreria locale dell'utente corrente. È disponibile solo per gli elementi multimediali che appartengono a una libreria remota; ovvero una libreria che è stata resa disponibile da un altro utente nella rete domestica. Per determinare se un catalogo multimediale è remoto, chiamare [**IWMPLibrary:: Get \_ Type**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_type).
+Questo attributo non è disponibile per gli elementi multimediali nella libreria locale dell'utente corrente. È disponibile solo per gli elementi multimediali che appartengono a una libreria remota. una libreria resa disponibile da un altro utente nella rete domestica. Per determinare se una libreria multimediale è remota, chiamare [**IWMPLibrary::get \_ di tipo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_type).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Questo attributo non è disponibile per gli elementi multimediali nella libreria
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

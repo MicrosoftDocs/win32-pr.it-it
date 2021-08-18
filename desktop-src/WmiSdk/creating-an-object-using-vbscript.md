@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6bfbb4753f19f8ed6f7a61d94ab1d9f03b57e091
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e86dbc649d5feab471485dbdf536cde911c139aeab3b6eb3323b24199438d1d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244571"
 ---
 # <a name="creating-an-object-using-vbscript"></a>Creazione di un oggetto tramite VBScript
 
@@ -25,29 +25,29 @@ ms.locfileid: "104485356"
 
 | Interfaccia                                        | ProgID                             |
 |--------------------------------------------------|------------------------------------|
-| [**SWbemDateTime**](swbemdatetime.md)           | "WbemScripting. SwbemDateTime"      |
-| [**SWbemLocator**](swbemlocator.md)             | "WbemScripting. SWbemLocator"       |
-| [**SWbemLastError**](swbemlasterror.md)         | "WbemScripting. SWbem. LastError"    |
-| [**SWbemObjectPath**](swbemobjectpath.md)       | "WbemScripting. SWbemObjectPath"    |
-| [**SWbemNamedValueSet**](swbemnamedvalueset.md) | "WbemScripting. SWbemNamedValueSet" |
-| [**SWbemRefresher**](swbemrefresher.md)         | "WbemScripting. SWbemRefresher"     |
-| [**SWbemSink**](swbemsink.md)                   | "WbemScripting. SWbemSink"          |
+| [**SWbemDateTime**](swbemdatetime.md)           | "WbemScripting.SwbemDateTime"      |
+| [**SWbemLocator**](swbemlocator.md)             | "WbemScripting.SWbemLocator"       |
+| [**SWbemLastError**](swbemlasterror.md)         | "WbemScripting.SWbem.LastError"    |
+| [**SWbemObjectPath**](swbemobjectpath.md)       | "WbemScripting.SWbemObjectPath"    |
+| [**SWbemNamedValueSet**](swbemnamedvalueset.md) | "WbemScripting.SWbemNamedValueSet" |
+| [**SWbemRefresher**](swbemrefresher.md)         | "WbemScripting.SWbemRefresher"     |
+| [**SWbemSink**](swbemsink.md)                   | "WbemScripting.SWbemSink"          |
 
 
 
  
 
-Nella procedura riportata di seguito viene descritto come creare un oggetto WMI utilizzando VBScript.
+Nella procedura seguente viene descritto come creare un oggetto WMI utilizzando VBScript.
 
 **Per creare un oggetto WMI utilizzando VBScript**
 
-1.  Connettersi a WMI utilizzando un moniker o un oggetto [**SWbemLocator**](swbemlocator.md) .
+1.  Connessione a WMI utilizzando un moniker o [**un oggetto SWbemLocator.**](swbemlocator.md)
 
-    Per ulteriori informazioni, vedere [creazione di uno script WMI](creating-a-wmi-script.md).
+    Per altre informazioni, vedere [Creazione di uno script WMI.](creating-a-wmi-script.md)
 
-2.  Effettuare una chiamata al metodo [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) di VBScript.
+2.  Effettuare una chiamata al metodo [VBScript CreateObject.](/previous-versions//xzysf6hc(v=vs.85))
 
-    Nell'esempio di codice seguente viene illustrato come creare un oggetto.
+    Nell'esempio di codice seguente viene illustrato come creare un oggetto .
 
     ```VB
     Set locator = CreateObject("WbemScripting.SWbemLocator")
@@ -55,7 +55,7 @@ Nella procedura riportata di seguito viene descritto come creare un oggetto WMI 
 
     
 
-    Se si usa un moniker nel passaggio 1, non è necessario chiamare di nuovo [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) .
+    Se si usa un moniker nel passaggio 1, non è necessario chiamare [nuovamente CreateObject.](/previous-versions//xzysf6hc(v=vs.85))
 
  
 

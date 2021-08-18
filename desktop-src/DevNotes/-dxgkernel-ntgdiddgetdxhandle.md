@@ -1,7 +1,7 @@
 ---
 description: Restituisce l'handle dell'API Microsoft DirectX in modalità kernel da usare nelle chiamate successive ai punti di ingresso in modalità kernel che controllano il meccanismo dell'API DirectX.
 ms.assetid: c95cb188-305f-4b60-be55-0511b57f0597
-title: Funzione NtGdiDdGetDxHandle (Ntgdi. h)
+title: Funzione NtGdiDdGetDxHandle (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: f1b304216c518765be73d9f3a3e63d39ec4b37fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 13234c7ebe350f096164f0a5de0bde7a60e819e80899aa87258a76727855b869
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331921"
 ---
-# <a name="ntgdiddgetdxhandle-function"></a>NtGdiDdGetDxHandle (funzione)
+# <a name="ntgdiddgetdxhandle-function"></a>Funzione NtGdiDdGetDxHandle
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Restituisce l'handle dell'API Microsoft DirectX in modalità kernel da usare nelle chiamate successive ai punti di ingresso in modalità kernel che controllano il meccanismo dell'API DirectX.
 
@@ -46,34 +46,34 @@ DWORD APIENTRY NtGdiDdGetDxHandle(
 
 <dl> <dt>
 
-*hDirectDraw* \[ in\]
+*hDirectDraw* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto DirectDraw proprietario della superficie. Questo parametro è facoltativo e può essere impostato su **null**.
+Handle all'oggetto DirectDraw proprietario dell'area. Questo parametro è facoltativo e può essere impostato su **NULL.**
 
 </dd> <dt>
 
-*hSurface* \[ in\]
+*hSurface* \[ Pollici\]
 </dt> <dd>
 
-Handle per la superficie per cui restituire un handle dell'API DirectX in modalità kernel. Questo parametro è facoltativo e può essere impostato su **null**.
+Handle alla superficie per cui restituire un handle dell'API DirectX in modalità kernel. Questo parametro è facoltativo e può essere impostato su **NULL.**
 
 </dd> <dt>
 
-*bRelease* \[ in\]
+*bRelease* \[ Pollici\]
 </dt> <dd>
 
-Impostare su **true** se l'interfaccia della modalità kernel dell'API DirectX deve essere rilasciata. In caso contrario, **false**.
+Impostare su **TRUE se** deve essere rilasciata l'interfaccia in modalità kernel dell'API DirectX. In caso contrario, **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Handle di API DirectX usato nei successivi punti di ingresso del kernel basati sull'API DirectX.
+Handle dell'API DirectX usato nei punti di ingresso del kernel orientati all'API DirectX successivi.
 
 ## <a name="remarks"></a>Commenti
 
-Se vengono specificati sia *hDirectDraw* che *hSurface* , *hSurface* viene ignorato.
+Se vengono *specificati sia hDirectDraw* che *hSurface,* *hSurface* viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Se vengono specificati sia *hDirectDraw* che *hSurface* , *hSurface* viene ignor
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Se vengono specificati sia *hDirectDraw* che *hSurface* , *hSurface* viene ignor
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

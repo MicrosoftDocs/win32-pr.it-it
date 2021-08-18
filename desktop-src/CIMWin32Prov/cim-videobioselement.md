@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM VideoBIOSElement rappresenta il software di basso livello che viene caricato in un archivio non volatile e utilizzato per configurare e accedere al controller video e alla visualizzazione di un sistema di computer.
+description: La classe CIM VideoBIOSElement rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un sistema \_ di computer.
 ms.assetid: f23d411f-4781-4727-abd1-61fe1a366bf0
 ms.tgt_platform: multiple
-title: Classe CIM_VideoBIOSElement
+title: CIM_VideoBIOSElement classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,23 +31,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4d873b17f0bf0ea123d988d281c0cab728dd50f2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4864e3787b00ca72f90d0c6d15c35049abd58acd04c3d221aa29436d8885a652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080255"
 ---
-# <a name="cim_videobioselement-class"></a>CIM \_ VideoBIOSElement (classe)
+# <a name="cim_videobioselement-class"></a>Classe CIM \_ VideoBIOSElement
 
-La classe **CIM \_ VideoBIOSElement** rappresenta il software di basso livello che viene caricato in un archivio non volatile e utilizzato per configurare e accedere al controller video e alla visualizzazione di un sistema di computer.
+La **classe CIM \_ VideoBIOSElement** rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un sistema di computer.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,74 +77,74 @@ class CIM_VideoBIOSElement : CIM_SoftwareElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VideoBIOSElement** presenta questi tipi di membri:
+La **classe CIM \_ VideoBIOSElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ VideoBIOSElement** dispone di queste proprietà.
+La **classe CIM \_ VideoBIOSElement** ha queste proprietà.
 
 <dl> <dt>
 
 **BuildNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul componente software DMTF \| 002,4 ")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.4")
 </dt> </dl>
 
 Identificatore interno per la compilazione di questo elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CodeSet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Set di codici utilizzato dall'elemento software.
+Set di codice usato dall'elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -155,168 +155,168 @@ Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("
 
 Descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**IdentificationCode**
+**Codice di identificazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul componente software DMTF \| 002,7 ")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.7")
 </dt> </dl>
 
-Identificatore del produttore per l'elemento software, ad esempio uno SKU o un numero di parte.
+Identificatore del produttore per l'elemento software, ad esempio un'unità di mantenimento delle scorte (SKU) o un numero di parte.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Ombreggiatura**
+**IsShadowed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| video BIOS \| 001,5 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video BIOS \| 001.5")
 </dt> </dl>
 
-Se **true**, il BIOS del video è nascosto.
+Se **TRUE,** il BIOS video viene ombreggiato.
 
 </dd> <dt>
 
 **LanguageEdition**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul componente software DMTF \| 002,6 ")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.6")
 </dt> </dl>
 
-Edizione del linguaggio dell'elemento software. I codici di lingua definiti in ISO 639 devono essere usati. Quando l'elemento software rappresenta una versione multilingue o internazionale di un prodotto, è necessario usare la stringa "Multilingual".
+Edizione del linguaggio dell'elemento software. È necessario usare i codici lingua definiti in ISO 639. Quando l'elemento software rappresenta una versione multilingue o internazionale di un prodotto, deve essere usata la stringa "Multilingual".
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,1 ")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.1")
 </dt> </dl>
 
-Produttore dell'elemento software questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Produttore dell'elemento software Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome usato per identificare l'elemento software questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Nome utilizzato per identificare l'elemento software Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **OtherTargetOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Produttore e tipo di sistema operativo per un elemento software quando la proprietà **TargetOperatingSystem** ha un valore 1 ("other"). Se il valore della proprietà **TargetOperatingSystem** è 1, questa proprietà deve avere un valore non null. Per tutti gli altri valori **TargetOperatingSystem** , questa proprietà è null. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Produttore e tipo di sistema operativo per un elemento software quando il valore della **proprietà TargetOperatingSystem** è 1 ("Altro"). Quando il valore della proprietà **TargetOperatingSystem** è 1, questa proprietà deve avere un valore diverso da Null. Per tutti gli **altri valori TargetOperatingSystem,** questa proprietà è Null. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,4 ")
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
-Il numero di serie dell'elemento software è stato assegnato.
+Numero di serie assegnato dell'elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificatore dell'elemento software progettato per essere utilizzato insieme ad altre chiavi per creare una rappresentazione univoca della classe [**CIM \_ SoftwareElement**](cim-softwareelement.md) .
+Identificatore dell'elemento software progettato per essere usato insieme ad altre chiavi per creare una rappresentazione univoca della [**classe CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -327,7 +327,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 Stato di un elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 <dt>
 
@@ -338,18 +338,18 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareel
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile, ovvero lo stato successivo.
+Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile ,ovvero lo stato successivo.
 
 </dd> <dt>
 
 <span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>
 
-<span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>**Installabile** (1)
+<span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>**Installable** (1)
 
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per l'installazione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile, ovvero lo stato successivo.
+Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile (ovvero lo stato successivo).
 
 </dd> <dt>
 
@@ -360,18 +360,18 @@ Vengono descritti i dettagli necessari per l'installazione corretta e i dettagli
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione, ovvero lo stato successivo.
+Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione ,ovvero lo stato successivo.
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In esecuzione** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In** esecuzione (3)
 
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per il monitoraggio e l'utilizzo di un elemento iniziale.
+Descrive i dettagli necessari per monitorare e operare su un elemento iniziale.
 
 </dd> </dl>
 
@@ -380,16 +380,16 @@ Vengono descritti i dettagli necessari per il monitoraggio e l'utilizzo di un el
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Stato corrente dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -404,77 +404,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -484,18 +484,18 @@ Ridotto **("danneggiato"** )
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| software Component Information \| 002,5 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
 </dt> </dl>
 
-Ambiente del sistema operativo. Il valore di questa proprietà non garantisce l'esecuzione binaria. La versione del sistema operativo deve essere specificata utilizzando il controllo della versione del sistema operativo. È necessario anche l'architettura in cui viene eseguito il sistema operativo. La combinazione di questi costrutti consente al provider di identificare chiaramente il livello di sistema operativo necessario per un particolare elemento software.
+Ambiente del sistema operativo. Il valore di questa proprietà non garantisce l'esecuzione binaria. La versione del sistema operativo deve essere specificata usando il controllo della versione del sistema operativo. È necessaria anche l'architettura in cui viene eseguito il sistema operativo. La combinazione di questi costrutti consente al provider di identificare chiaramente il livello del sistema operativo necessario per un particolare elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 <dt>
 
@@ -515,7 +515,7 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](cim-softwareel
 
 <span id="MACOS"></span><span id="macos"></span>
 
-<span id="MACOS"></span><span id="macos"></span>**MacOS** (2)
+<span id="MACOS"></span><span id="macos"></span>**MACOS** (2)
 
 
 </dt> <dd>
@@ -531,7 +531,7 @@ Mac OS
 
 </dt> <dd>
 
-UNIX ATT
+ATT UNIX
 
 </dd> <dt>
 
@@ -551,7 +551,7 @@ UNIX ATT
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**UNIX digitale** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -563,7 +563,7 @@ UNIX ATT
 
 </dt> <dd>
 
-Apri VM
+Aprire macchine virtuali
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ HP-UX
 
 <span id="AIX"></span><span id="aix"></span>
 
-<span id="AIX"></span><span id="aix"></span>**Aix** (9)
+<span id="AIX"></span><span id="aix"></span>**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -608,12 +608,12 @@ HP-UX
 
 <span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>
 
-<span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>**Javavm** (13)
+<span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>**JavaVM** (13)
 
 
 </dt> <dd>
 
-Macchina virtuale Microsoft (VM) per Java
+Microsoft Virtual Machine (VM) per Java
 
 </dd> <dt>
 
@@ -631,13 +631,13 @@ Macchina virtuale Microsoft (VM) per Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -648,7 +648,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -659,7 +659,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -670,7 +670,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -713,7 +713,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX Reliant** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -734,7 +734,7 @@ NCR 3000
 
 <span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>
 
-<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequent** (27)
+<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequenziante** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -785,7 +785,7 @@ Serie A
 
 </dt> <dd>
 
-NSK tandem
+Tandem NSK
 
 </dd> <dt>
 
@@ -796,7 +796,7 @@ NSK tandem
 
 </dt> <dd>
 
-NT tandem
+Tandem NT
 
 </dd> <dt>
 
@@ -813,7 +813,7 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -841,7 +841,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interattivo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -891,14 +891,14 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel MACH** (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Inferno** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ilva** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -933,7 +933,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -947,14 +947,14 @@ Mac OS 9
 
 <span id="HP_MPE"></span><span id="hp_mpe"></span>
 
-<span id="HP_MPE"></span><span id="hp_mpe"></span>**HP mpe** (54)
+<span id="HP_MPE"></span><span id="hp_mpe"></span>**HP MPE** (54)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>
 
-<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NeXTSTEP** (55)
+<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NextStep** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -1007,36 +1007,36 @@ Sistema operativo Palm
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,3 ")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione.
 
-La versione dell'operazione deve essere in uno dei seguenti formati:
+La versione dell'operazione deve essere in uno dei formati seguenti:
 
 -   <major>.<minor>.<revision>
 -   <major>.<minor><letter><revision>
 
-Questa proprietà viene ereditata dalla classe [**CIM \_ SoftwareElement**](cim-softwareelement.md) .
+Questa proprietà viene ereditata dalla [**classe CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ VideoBIOSElement** è derivata da [**CIM \_ SoftwareElement**](cim-softwareelement.md).
+La **classe CIM \_ VideoBIOSElement** è derivata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1047,7 +1047,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1056,7 +1056,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Software CIM**](cim-softwareelement.md)
+[**CIM \_ SoftwareElement**](cim-softwareelement.md)
 </dt> </dl>
 
  

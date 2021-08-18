@@ -1,19 +1,19 @@
 ---
-description: La \_ struttura della \_ struttura di riconoscimento del file System \_ , definita internamente da Windows e utilizzata da file System Recognition (FRS), contiene un valore di checksum che deve essere calcolato correttamente affinché il servizio FRS funzioni correttamente con una file System non riconosciuta specificata.
+description: La struttura FILE SYSTEM RECOGNITION STRUCTURE, definita internamente da Windows e usata dal riconoscimento \_ \_ file system (FRS), contiene un valore di checksum che deve essere calcolato correttamente per il corretto funzionamento di FRS con un file system \_ specificato.
 ms.assetid: 8f76784f-7d03-4874-ae7f-e8bdc42638c3
-title: Calcolo di un checksum di riconoscimento del file System
+title: Calcolo di un checksum di riconoscimento del file system
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74cac3975d4e1845dd1ff4aa218526e942fda152
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce146fda589668d39f1f7ff4158384986fb719f2bbbee6ce0584ad9f1e540b08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329181"
 ---
-# <a name="computing-a-file-system-recognition-checksum"></a>Calcolo di un checksum di riconoscimento del file System
+# <a name="computing-a-file-system-recognition-checksum"></a>Calcolo di un checksum di riconoscimento del file system
 
-La struttura della [**\_ struttura di \_ riconoscimento \_ del file System**](file-system-recognition-structure.md) , definita internamente da Windows e utilizzata da [file System Recognition](file-system-recognition.md) (FRS), contiene un valore di checksum che deve essere calcolato correttamente affinché il servizio FRS funzioni correttamente con una file System non riconosciuta specificata. Nell'esempio seguente viene eseguita questa operazione di calcolo.
+La struttura [**FILE \_ SYSTEM RECOGNITION \_ \_ STRUCTURE,**](file-system-recognition-structure.md) definita internamente da Windows e usata dal riconoscimento [file system](file-system-recognition.md) (FRS), contiene un valore di checksum che deve essere calcolato correttamente per il corretto funzionamento di FRS con un valore di file system specificato. L'esempio seguente consente di eseguire questo calcolo.
 
 
 ```C++
@@ -83,10 +83,10 @@ Return Value:
 
 <dl> <dt>
 
-[Riconoscimento del file System](file-system-recognition.md)
+[Riconoscimento del file system](file-system-recognition.md)
 </dt> <dt>
 
-[**struttura di riconoscimento del FILE \_ System \_ \_**](file-system-recognition-structure.md)
+[**STRUTTURA DI RICONOSCIMENTO DEL FILE \_ \_ \_ SYSTEM**](file-system-recognition-structure.md)
 </dt> </dl>
 
  

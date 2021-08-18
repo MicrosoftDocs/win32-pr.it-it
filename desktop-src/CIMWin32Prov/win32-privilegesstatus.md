@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ PrivilegesStatus&\# 8194; La classe WMI fornisce informazioni sui privilegi necessari per completare un'operazione. Può essere restituito quando un'operazione ha esito negativo o quando è stata restituita un'istanza parzialmente compilata.
+description: PrivilegesStatus Win32 \_&\# 8194; La classe WMI segnala informazioni sui privilegi necessari per completare un'operazione. Può essere restituito quando un'operazione non è riuscita o quando è stata restituita un'istanza parzialmente popolata.
 ms.assetid: 295ec2bd-7996-4031-8503-d4e869d8368d
 ms.tgt_platform: multiple
-title: Classe Win32_PrivilegesStatus (provider WMI CIMWin32)
+title: Win32_PrivilegesStatus classe (provider WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ab399ce08374a954b3bbc015cfee7b4d20167b70
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e2c2b2329884b22eecdc00a629abb8d05bc87435ce06d35e51907cb4095c8fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020089"
 ---
-# <a name="win32_privilegesstatus-class-cimwin32-wmi-providers"></a>Classe Win32_PrivilegesStatus (provider WMI CIMWin32)
+# <a name="win32_privilegesstatus-class-cimwin32-wmi-providers"></a>Win32_PrivilegesStatus classe (provider WMI CIMWin32)
 
-La  [classe WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ PrivilegesStatus** fornisce informazioni sui privilegi necessari per completare un'operazione. Può essere restituito quando un'operazione ha esito negativo o quando è stata restituita un'istanza parzialmente compilata.
+La classe  [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ PrivilegesStatus** segnala informazioni sui privilegi necessari per completare un'operazione. Può essere restituito quando un'operazione non è riuscita o quando è stata restituita un'istanza parzialmente popolata.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,20 +52,20 @@ class Win32_PrivilegesStatus : __ExtendedStatus
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ PrivilegesStatus** presenta questi tipi di membri:
+La **classe \_ PrivilegesStatus Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ PrivilegesStatus** dispone di queste proprietà.
+La **classe \_ PrivilegesStatus Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -73,44 +73,44 @@ Tipo di accesso: sola lettura
 
 Qualsiasi stringa definita dall'utente che descrive un errore o uno stato operativo.
 
-Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
+Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
 </dd> <dt>
 
 **Operazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Operazione che viene eseguita al momento di un errore o di un'anomalia. In genere, Strumentazione gestione Windows (WMI) imposta questa proprietà sul nome di un'API COM per un metodo WMI come il seguente: [**IWbemServices:: CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
+Operazione eseguita al momento di un errore o di un'anomalia. In genere, Windows Management Instrumentation (WMI) imposta questa proprietà sul nome di un'API COM per il metodo WMI, ad [**esempio: IWbemServices::CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
 
-Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
+Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
 </dd> <dt>
 
-**ParameterInfo**
+**Parameterinfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Parametri che coinvolgono un errore o una modifica dello stato. Se, ad esempio, un'applicazione tenta di recuperare una classe che non esiste, questa proprietà viene impostata sul nome della classe che ha causato l'errore.
+Parametri interessati da un errore o una modifica dello stato. Ad esempio, se un'applicazione tenta di recuperare una classe che non esiste, questa proprietà viene impostata sul nome della classe che ha commesso l'errore.
 
-Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
+Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
 </dd> <dt>
 
 **PrivilegesNotHeld**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -119,16 +119,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows NT Privileges")
 </dt> </dl>
 
-Elenco dei privilegi di accesso necessari mancanti per completare un'operazione. I tipi di privilegi di accesso sono disponibili con i privilegi di Windows.
+Elenco dei privilegi di accesso necessari mancanti per completare un'operazione. I tipi di privilegi di accesso sono disponibili nella Windows privilegi.
 
-Esempio: "SE \_ Shutdown \_ Name"
+Esempio: "edizione Standard \_ SHUTDOWN \_ NAME"
 
 </dd> <dt>
 
 **PrivilegesRequired**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -137,37 +137,37 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows NT Privileges")
 </dt> </dl>
 
-Elenco di tutti i privilegi necessari per eseguire un'operazione. Sono inclusi i valori della proprietà **PrivilegesNotHeld** .
+Elenco di tutti i privilegi necessari per eseguire un'operazione. Sono inclusi i valori della **proprietà PrivilegesNotHeld.**
 
-Esempio: "SE \_ Shutdown \_ Name"
+Esempio: "edizione Standard \_ SHUTDOWN \_ NAME"
 
 </dd> <dt>
 
 **ProviderName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica il provider che causa o segnala un errore o una modifica dello stato. Se un provider non è necessario, questa stringa è impostata su "Windows Management".
+Identifica il provider che causa o segnala un errore o una modifica dello stato. Se un provider non è coinvolto, questa stringa viene impostata su "Windows Management".
 
-Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
+Questa proprietà viene ereditata da [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
 </dd> <dt>
 
-**StatusCode**
+**Statuscode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Contiene un codice di errore o informazioni per un'operazione. Può trattarsi di qualsiasi valore definito dal provider, ma il valore 0 (zero) è in genere riservato per indicare l'esito positivo.
+Contiene un codice di errore o di informazioni per un'operazione. Può trattarsi di qualsiasi valore definito dal provider, ma il valore 0 (zero) è in genere riservato per indicare l'esito positivo.
 
 Questa proprietà viene ereditata da [**\_ \_ NotifyStatus**](../wmisdk/--notifystatus.md).
 
@@ -175,7 +175,7 @@ Questa proprietà viene ereditata da [**\_ \_ NotifyStatus**](../wmisdk/--notify
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ PrivilegesStatus** deriva da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
+La **classe \_ PrivilegesStatus Win32** deriva da [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -186,7 +186,7 @@ La classe **Win32 \_ PrivilegesStatus** deriva da [**\_ \_ ExtendedStatus**](../
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

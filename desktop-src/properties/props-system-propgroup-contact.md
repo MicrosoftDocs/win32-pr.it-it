@@ -1,19 +1,19 @@
 ---
-description: Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i contatti da altri tipi. Non usare questa proprietà per ottenere o impostare i valori. Questa proprietà è destinata solo a un marcatore.
+description: Separatore dei gruppi di proprietà usato negli elenchi di proprietà per separare i contatti da altri tipi. Non usare questa proprietà per ottenere o impostare valori. Questa proprietà è destinata solo a un marcatore.
 ms.assetid: fbeef429-e5e0-4fa4-9402-72e421ef4cbc
-title: System. PropGroup. Contact
+title: System.PropGroup.Contact
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfca8ad6a0c9409367fb8b9f74252dd15855c34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ffe5fe6d5d334007a7aa37dabe4200cb4238e5ef5210cf4c4ca86fda82ec0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095813"
 ---
-# <a name="systempropgroupcontact"></a>System. PropGroup. Contact
+# <a name="systempropgroupcontact"></a>System.PropGroup.Contact
 
-Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i contatti da altri tipi. Non usare questa proprietà per ottenere o impostare i valori. Questa proprietà è destinata solo a un marcatore.
+Separatore dei gruppi di proprietà usato negli elenchi di proprietà per separare i contatti da altri tipi. Non usare questa proprietà per ottenere o impostare valori. Questa proprietà è destinata solo a un marcatore.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

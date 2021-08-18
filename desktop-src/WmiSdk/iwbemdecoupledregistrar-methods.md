@@ -5,21 +5,21 @@ ms.tgt_platform: multiple
 title: Metodi IWbemDecoupledRegistrar
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e27752b1a5dc50954705873cc05049e264068eba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95b8d3c34bdcd9144145698e149cc3f2d8fb3db185813f6bdb3874c9de5b8ef3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103756980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131373"
 ---
 # <a name="iwbemdecoupledregistrar-methods"></a>Metodi IWbemDecoupledRegistrar
 
-L'interfaccia [**IWbemDecoupledRegistrar**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledregistrar) espone i metodi seguenti.
+[**L'interfaccia IWbemDecoupledRegistrar**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemdecoupledregistrar) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Register (metodo)**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register)
--   [**Annulla registrazione metodo**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-unregister)
+-   [**Metodo UnRegister**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-unregister)
 
  
 

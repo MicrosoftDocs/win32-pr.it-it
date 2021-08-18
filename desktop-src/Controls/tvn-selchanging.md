@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TVN_SELCHANGING (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione albero che la selezione sta per passare da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TVN_SELCHANGING codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione albero che la selezione sta per passare da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 53f24ee0-433c-4680-9075-5e2b21117ed9
 keywords:
-- Controlli di Windows per il codice di notifica TVN_SELCHANGING
+- TVN_SELCHANGING codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14de700bc058b8c6454a2f7e08fb9986697438fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b09933e1e4c7393521f298c60435efde76fbea23ef703f536fb241cc9f78610
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433481"
 ---
-# <a name="tvn_selchanging-notification-code"></a>\_Codice di notifica SELCHANGING di TVN
+# <a name="tvn_selchanging-notification-code"></a>Codice di notifica \_ TVN SELCHANGING
 
-Notifica alla finestra padre di un controllo di visualizzazione albero che la selezione sta per passare da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione albero che la selezione sta per passare da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,17 +43,17 @@ TVN_SELCHANGING
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) . I membri **itemOld** e **itemNew** contengono informazioni valide sull'elemento attualmente selezionato e sull'elemento appena selezionato. Il membro dell' **azione** indica se un'azione del mouse o della tastiera sta causando la modifica della selezione. Per un elenco di valori possibili, vedere la descrizione del codice di notifica di [TVN \_ SELCHANGED](tvn-selchanged.md) .
+Puntatore a [**una struttura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) **ItemOld** e **itemNew** members contengono informazioni valide sull'elemento attualmente selezionato e sull'elemento appena selezionato. Il **membro** dell'azione indica se un'azione del mouse o della tastiera sta causando la modifica della selezione. Per un elenco dei valori possibili, vedere la descrizione del codice di notifica [ \_ TVN SELCHANGED.](tvn-selchanged.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** per impedire la modifica della selezione.
+Restituisce **TRUE** per impedire la modifica della selezione.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si rispondo a questo codice di notifica, le applicazioni non devono eliminare gli elementi che stanno ottenendo o non hanno perso la selezione.
+Quando si risponde a questo codice di notifica, le applicazioni non devono eliminare gli elementi che stanno guadagnando o perdendo la selezione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Quando si rispondo a questo codice di notifica, le applicazioni non devono elimi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TVN \_ SELCHANGINGW** (Unicode) e **TVN \_ SELCHANGINGA** (ANSI)<br/>           |
 
 

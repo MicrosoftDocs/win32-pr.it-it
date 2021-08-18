@@ -4,9 +4,9 @@ description: Imposta la proprietà MaxXResolution.
 ms.assetid: c1e00bab-ab32-4cf6-8121-950184bd8a01
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetMaxXResolution
-- Metodo SetMaxXResolution Servizi Desktop remoto, classe Win32_TSClientSetting
-- Classe Win32_TSClientSetting Servizi Desktop remoto, metodo SetMaxXResolution
+- Metodo SetMaxXResolution Servizi Desktop remoto
+- Metodo SetMaxXResolution Servizi Desktop remoto , Win32_TSClientSetting classe
+- Win32_TSClientSetting classe Servizi Desktop remoto metodo SetMaxXResolution
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77ab911fd66c7cf6b4f657d8f9e060eccee80675
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 759a674e2b283d18caf1cc4d1b2f3e3ecae786dc76f9acc222f47dd8daf385de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000511"
 ---
-# <a name="setmaxxresolution-method-of-the-win32_tsclientsetting-class"></a>Metodo SetMaxXResolution della \_ classe TSClientSetting Win32
+# <a name="setmaxxresolution-method-of-the-win32_tsclientsetting-class"></a>Metodo SetMaxXResolution della classe \_ Win32 TSClientSetting
 
-Imposta la proprietà **MaxXResolution** .
+Imposta la **proprietà MaxXResolution.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 SetMaxXResolution(
 
 <dl> <dt>
 
-*MaxXResolution* \[ in\]
+*MaxXResolution* \[ Pollici\]
 </dt> <dd>
 
 Nuova risoluzione X massima supportata dal server. Il valore minimo è 200 e il valore massimo è 4096.
@@ -52,7 +52,7 @@ Nuova risoluzione X massima supportata dal server. Il valore minimo è 200 e il 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se le impostazioni di connessione dell'utente vengono sostituite dal server.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se le impostazioni di connessione dell'utente vengono sostituite dal server.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_TSClientSetting Win32**](win32-tsclientsetting.md)
+[**Win32 \_ TSClientSetting**](win32-tsclientsetting.md)
 </dt> </dl>
 
  

@@ -4,25 +4,25 @@ description: Esempio di individualizzazione DRM
 ms.assetid: 665a5005-d435-4783-b48e-2d8400aa7638
 keywords:
 - Windows Media Format SDK, individualizzazione DRM
-- Windows Media Format SDK, individualizzazione
-- Digital Rights Management (DRM), individualizzazione
-- DRM (Digital Rights Management), individualizzazione
-- Digital Rights Management (DRM), individualizzazione DRM
-- DRM (Digital Rights Management), individualizzazione DRM
+- Windows MEDIA Format SDK, individualizzazione
+- digital rights management (DRM), individualizzazione
+- DRM (digital rights management), individualizzazione
+- digital rights management (DRM), individualizzazione DRM
+- DRM (digital rights management), individualizzazione DRM
 - API estese del client DRM, individualizzazione
 - API estese client, individualizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1252fe951e306f837f2df95245b3cfc81dac03c2
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: 4eeb13f44eaa5fe3a3d67560d6fa7bb1e39250842ba0707ef62969b91fb50d47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "104398697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086000"
 ---
 # <a name="drm-individualization-example"></a>Esempio di individualizzazione DRM
 
-Il codice seguente è un esempio di individualizzazione forzata e Mostra anche come usare il modello di gestione degli eventi sincroni con gli eventi che hanno interfacce di stato associate.
+Il codice seguente è un esempio di individualizzazione forzata e illustra anche come usare il modello di gestione degli eventi sincrono con eventi a cui sono associate interfacce di stato.
 
 
 ```C++
@@ -178,12 +178,12 @@ HRESULT Individualize(IWMDRMSecurity* pSecurity)
 [**Esecuzione dell'individualizzazione DRM**](performing-drm-individualization.md)
 </dt> <dt>
 
-[**Uso del modello di eventi Media Foundation**](using-the-media-foundation-model.md)
+[**Uso del modello Media Foundation eventi**](using-the-media-foundation-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
