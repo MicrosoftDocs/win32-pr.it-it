@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8613a9d14c5e33b0f9f4e719a02ac9a6d70d1119
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8b22b0a4c094a47e412172807c42cf25dc3c89342cf8e7e4ece9e731d9014bd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731289"
 ---
 # <a name="d3dxquaterniontoaxisangle-function-d3dx9mathh"></a>Funzione D3DXQuaternionToAxisAngle (D3dx9math.h)
 

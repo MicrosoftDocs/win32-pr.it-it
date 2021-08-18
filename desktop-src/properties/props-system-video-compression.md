@@ -1,17 +1,17 @@
 ---
 description: Specifica il formato di compressione video.
 ms.assetid: fdd3fce9-f507-4581-bd68-74a854581200
-title: System. video. Compression
+title: System.Video.Compression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2bff7eb807d98f00115edd7956f9cdcfb43fb98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7494bc8d08a8c53081d18e28b2cb2b399ef15bf0cb81d97eded8a491476c478a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464459"
 ---
-# <a name="systemvideocompression"></a>System. video. Compression
+# <a name="systemvideocompression"></a>System.Video.Compression
 
 Specifica il formato di compressione video.
 
@@ -33,15 +33,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questa proprietà è una rappresentazione di stringa di un GUID in formato canonico: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". Il GUID specifica il formato video. Per i valori possibili, vedere [GUID del sottotipo video](../medfound/video-subtype-guids.md).
+Il valore di questa proprietà è una rappresentazione di stringa di un GUID in formato canonico: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". Il GUID specifica il formato video. Per i valori possibili, vedere [GUID del sottotipo video.](../medfound/video-subtype-guids.md)
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -50,13 +50,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -65,13 +65,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -40,21 +40,21 @@ Questa classe viene implementata da COM+.
 
 ## <a name="when-to-use"></a>Utilizzo
 
-Usare gli oggetti creati dalla **classe COMAdminCatalogObject** per modificare le proprietà degli elementi contenuti nelle raccolte nel catalogo COM+. Questi elementi corrispondono agli elementi visualizzati all'interno delle cartelle nell'albero della console dello strumento di amministrazione Servizi componenti. Le cartelle nello strumento di amministrazione Servizi componenti corrispondono alle raccolte nel catalogo, che è possibile rappresentare usando gli oggetti creati dalla [**classe COMAdminCatalogCollection.**](comadmincatalogcollection.md)
+Usare gli oggetti creati dalla **classe COMAdminCatalogObject** per modificare le proprietà degli elementi contenuti nelle raccolte nel catalogo COM+. Questi elementi corrispondono agli elementi visualizzati all'interno delle cartelle nell'albero della console dello strumento di amministrazione di Servizi componenti. Le cartelle nello strumento di amministrazione servizi componenti corrispondono alle raccolte nel catalogo, che è possibile rappresentare usando gli oggetti creati dalla [**classe COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-Non tutte le raccolte e gli elementi esposti tramite [**COMAdminCatalogCollection**](comadmincatalogcollection.md) e **COMAdminCatalogObject** sono disponibili nello strumento di amministrazione Servizi componenti.
+Non tutte le raccolte e gli elementi esposti tramite [**COMAdminCatalogCollection**](comadmincatalogcollection.md) e **COMAdminCatalogObject** sono disponibili nello strumento di amministrazione servizi componenti.
 
 Per informazioni su raccolte specifiche e sulle relative proprietà, vedere [Raccolte di amministrazione COM+.](com--administration-collections.md)
 
-Per un'introduzione all'amministrazione a livello di codice di COM+, vedere [Automazione dell'amministrazione COM+.](automating-com--administration.md)
+Per un'introduzione all'amministrazione a livello di codice di COM+, vedere [Automating COM+ Administration](automating-com--administration.md).
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile creare direttamente **un oggetto COMAdminCatalogObject.** Per usare i metodi di questo oggetto, è necessario creare un oggetto [**COMAdminCatalog,**](comadmincatalog.md) ottenere un riferimento a [**ICOMAdminCatalog**](/windows/desktop/api/ComAdmin/nn-comadmin-icomadmincatalog)e quindi usare [**ICOMAdminCatalog::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) per ottenere un riferimento a un'interfaccia [**ICatalogCollection**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection) che rappresenta una raccolta di primo livello oppure [**usare ICatalogCollection::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) per accedere a raccolte non di primo livello.
+Non è possibile creare direttamente un **oggetto COMAdminCatalogObject.** Per usare i metodi di questo oggetto, è necessario creare un oggetto [**COMAdminCatalog,**](comadmincatalog.md) ottenere un riferimento a [**ICOMAdminCatalog**](/windows/desktop/api/ComAdmin/nn-comadmin-icomadmincatalog)e quindi [**usare ICOMAdminCatalog::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) per ottenere un riferimento a un'interfaccia [**ICatalogCollection**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection) che rappresenta una raccolta di primo livello o [**usare ICatalogCollection::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) per accedere a raccolte non di primo livello.
 
 Dopo aver creato un riferimento all'interfaccia [**ICatalogCollection**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection) della raccolta a cui si è interessati, chiamare [**ICatalogCollection::P opulate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) per popolare la raccolta con tutti i relativi elementi. Scorrere ognuno degli elementi nella raccolta chiamando [**ICatalogCollection::get \_ Item**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get_item) per ottenere un riferimento a ogni [**interfaccia ICatalogObject.**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogobject) Quando si trova l'elemento di interesse, è possibile modificare le proprietà dell'elemento e uscire dall'iterazione. Se si apportano modifiche a qualsiasi elemento di una raccolta, è necessario chiamare [**ICatalogCollection::SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) per salvare le modifiche nel catalogo COM+.
 
-Come illustrato nell'esempio seguente, in cui "TopCollection" deve essere sostituito dal nome di una delle raccolte di amministrazione COM+ di primo livello; "ItemName" deve essere sostituito dal nome dell'elemento a cui si è interessati. "PropertyName" deve essere sostituito dal nome della proprietà che si sta modificando nell'elemento. e varNewProp devono essere sostituiti da un variant che contiene il nuovo valore per la proprietà.
+Questa operazione è illustrata nell'esempio seguente, in cui "TopCollection" deve essere sostituito dal nome di una delle raccolte di amministrazione COM+ di primo livello. "ItemName" deve essere sostituito dal nome dell'elemento a cui si è interessati. "PropertyName" deve essere sostituito dal nome della proprietà che si sta modificando nell'elemento. e varNewProp devono essere sostituiti da un elemento VARIANT che contiene il nuovo valore per la proprietà.
 
 
 ```C++
@@ -104,9 +104,9 @@ SysFreeString(bstrItemName);
 
 Per usare questa classe da Microsoft Visual Basic, aggiungere un riferimento alla libreria dei tipi di amministrazione COM+. È possibile creare un oggetto COMAdminCatalogCollection chiamando [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) su un [**oggetto COMAdminCatalog**](comadmincatalog.md) o [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-Chiamare il [**metodo Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) per popolare la raccolta con tutti i relativi elementi. Scorrere ognuno degli elementi nella raccolta. Quando si trova l'elemento di interesse, è possibile modificare le proprietà dell'elemento e uscire dall'iterazione. Se si apportano modifiche a qualsiasi elemento di una raccolta, è necessario chiamare il metodo [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) dell'oggetto **COMAdminCatalogCollection** per salvare le modifiche nel catalogo COM+.
+Chiamare il [**metodo Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) per popolare la raccolta con tutti gli elementi. Scorrere ognuno degli elementi nella raccolta. Quando si trova l'elemento di interesse, è possibile modificare le proprietà dell'elemento e uscire dall'iterazione. Se si apportano modifiche a qualsiasi elemento di una raccolta, è necessario chiamare il metodo [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) dell'oggetto **COMAdminCatalogCollection** per salvare le modifiche nel catalogo COM+.
 
-Come illustrato nell'esempio seguente, in cui "TopCollection" deve essere sostituito dal nome di una delle raccolte di amministrazione COM+ di primo livello; "ItemName" deve essere sostituito dal nome dell'elemento a cui si è interessati. "PropertyName" deve essere sostituito dal nome della proprietà che si sta modificando nell'elemento. e NewPropValue devono essere sostituiti dal nuovo valore per la proprietà .
+Questo è illustrato nell'esempio seguente, in cui "TopCollection" deve essere sostituito dal nome di una delle raccolte di amministrazione COM+ di primo livello. "ItemName" deve essere sostituito dal nome dell'elemento a cui si è interessati. "PropertyName" deve essere sostituito dal nome della proprietà che si sta modificando nell'elemento. e NewPropValue devono essere sostituiti dal nuovo valore per la proprietà .
 
 
 ```VB
@@ -137,7 +137,7 @@ objAppCollection.SaveChanges
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>ComAdmin.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>ComAdmin.idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>ComAdmin.Idl</dt> </dl> |
 
 
 

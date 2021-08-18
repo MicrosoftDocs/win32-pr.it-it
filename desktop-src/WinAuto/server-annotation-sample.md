@@ -13,7 +13,7 @@ ms.locfileid: "117745112"
 ---
 # <a name="server-annotation-sample"></a>Esempio di annotazione server
 
-Di seguito è riportato un esempio di annotazione server. Seguire le istruzioni nei commenti contrassegnati con / \* TODO \* /.
+Di seguito è riportato un esempio di annotazione server. Seguire le istruzioni nei commenti contrassegnati con \* /TODO \* /.
 
 
 ```C++

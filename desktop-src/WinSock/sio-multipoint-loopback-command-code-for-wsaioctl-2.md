@@ -1,19 +1,19 @@
 ---
-description: Quando si \_ usano i socket foglia d in un piano dati senza radice, è consigliabile che il traffico inviato venga restituito nello stesso socket. Il \_ codice del comando di loopback MultiPoint di sio \_ per WSAIoctl viene usato per abilitare o disabilitare il loopback del traffico multipoint.
+description: Quando i socket foglia d vengono usati in un piano dati non sradicato, è consigliabile ricevere il traffico inviato sullo \_ stesso socket. Il codice di comando SIO \_ MULTIPOINT LOOPBACK per WSAIoctl viene usato per abilitare o disabilitare \_ il loopback del traffico multipoint.
 ms.assetid: 5e267287-0ff5-4943-882f-5fe6687cca10
-title: Codice del comando SIO_MULTIPOINT_LOOPBACK per WSAIoctl
+title: SIO_MULTIPOINT_LOOPBACK codice di comando per WSAIoctl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc61e58a9f1db6f246e9e76ec527e57353bb35cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02842566c3fc863f7a32a15cd8e4efe5691bbcc172ef0db94e422b77e84ceec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118559709"
 ---
-# <a name="sio_multipoint_loopback-command-code-for-wsaioctl"></a>\_ \_ Codice di comando loopback MultiPoint di sio per WSAIoctl
+# <a name="sio_multipoint_loopback-command-code-for-wsaioctl"></a>Codice di \_ comando SIO MULTIPOINT \_ LOOPBACK per WSAIoctl
 
-Quando si \_ usano i socket foglia d in un piano dati senza radice, è consigliabile che il traffico inviato venga restituito nello stesso socket. Il \_ codice del comando di loopback MultiPoint di sio \_ per [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) viene usato per abilitare o disabilitare il loopback del traffico multipoint.
+Quando i socket foglia d vengono usati in un piano dati non sradicato, è consigliabile ricevere il traffico inviato sullo \_ stesso socket. Il codice di comando SIO \_ MULTIPOINT LOOPBACK per \_ [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) viene usato per abilitare o disabilitare il loopback del traffico multipoint.
 
  
 

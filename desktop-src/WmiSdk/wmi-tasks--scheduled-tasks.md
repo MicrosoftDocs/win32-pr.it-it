@@ -30,7 +30,7 @@ Nella procedura seguente viene descritto come eseguire uno script.
 
 1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non a .txt'estensione al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
-3.  Digitare **cscript filename.vbs** al prompt dei comandi.
+3.  Digitare **cscript filename.vbs** prompt dei comandi.
 4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da Controlli di accesso utente.
 
 > [!Note]  
@@ -56,7 +56,7 @@ Nella tabella seguente sono elencati esempi di script che possono essere utilizz
 <tbody>
 <tr class="odd">
 <td>... creare attività pianificate tramite script?</td>
-<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>metodo Create.</strong></a> Se si hanno difficoltà a eseguire questa attività in Windows 7 o versioni successive, vedere la sezione <strong>Win32_ScheduledJob</strong> note. probabilmente le impostazioni impediscono l'uso della classe .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>metodo Create.</strong></a> Se si hanno difficoltà a eseguire questa attività in Windows 7 o versioni successive, vedere la sezione Win32_ScheduledJob note. <strong></strong> probabilmente le impostazioni impediscono l'uso della classe .<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -85,7 +85,7 @@ End If</code></pre></td>
 </tbody>
 </table>
 
-<p>Nella stringa &quot; ********143000.000000-420 (usata nel valore del parametro StartTime del metodo &quot; <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create),</strong></a> <em></em> &quot; ********143000.0000000 specifica che l'attività inizia alle &quot; 14.30 (2:30 P.M.) e &quot; -420 &quot; specifica il fuso orario. Il numero di fuso orario è la distorsione corrente della conversione dell'ora locale. La differenza è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore in cui il fuso orario è avanti o indietro rispetto all'ora di Greenwich (GMT) per 60 (usare un numero positivo per il numero di ore se il fuso orario è superiore a GMT e un numero negativo se il fuso orario è indietro rispetto a GMT). Aggiungere altri 60 al calcolo se il fuso orario usa l'ora legale. Ad esempio, il fuso orario standard del Pacifico è otto ore indietro rispetto a GMT, pertanto la deviazione è uguale a -420 (-8 * 60 + 60) quando è in uso l'ora legale e -480 (-8 * 60) quando l'ora legale non è in uso. È anche possibile determinare il valore della distorsione tramite una query sulla proprietà bias della <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> classe .</p></td>
+<p>Nella stringa &quot; ********143000.000000-420 (usata nel valore del parametro StartTime del metodo &quot; <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create),</strong></a> <em></em> &quot; ********143000.0000000 specifica che l'attività inizia alle &quot; 14.30 (2:30 P.M.) e &quot; -420 &quot; specifica il fuso orario. Il numero di fuso orario è la distorsione corrente della conversione dell'ora locale. La differenza è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore in cui il fuso orario è avanti o indietro rispetto all'ora di Greenwich (GMT) per 60 (usare un numero positivo per il numero di ore se il fuso orario è superiore a GMT e un numero negativo se il fuso orario è indietro rispetto a GMT). Aggiungere altri 60 al calcolo se il fuso orario usa l'ora legale. Ad esempio, il fuso orario standard del Pacifico è otto ore indietro rispetto a GMT, pertanto la deviazione è uguale a -420 (-8 * 60 + 60) quando è in uso l'ora legale e -480 (-8 * 60) quando l'ora legale non è in uso. È anche possibile determinare il valore della distorsione tramite una query sulla proprietà bias <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>della Win32_TimeZone</strong></a> classe .</p></td>
 </tr>
 <tr class="even">
 <td>... restituire un elenco di tutte le attività pianificate in un computer?</td>

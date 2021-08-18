@@ -29,7 +29,7 @@ ms.locfileid: "118536570"
 
  
 
-Creare un processore di dati che carica una risorsa e quindi creare una vista shader-risorsa per essa. I data processor sono un componente della funzionalità di caricamento dati asincrono in D3DX11 che usa [**le pompe di thread**](id3dx11threadpump.md).
+Creare un processore di dati che carica una risorsa e quindi crea una visualizzazione shader-risorsa per essa. I processori di dati sono un componente della funzionalità di caricamento asincrono dei dati in D3DX11 che usa [**i thread pump.**](id3dx11threadpump.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ HRESULT D3DX11CreateAsyncShaderResourceViewProcessor(
 
 Tipo: **[ **ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)\***
 
-Puntatore al dispositivo Direct3D (vedere [**ID3D11Device)**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)che verrà usato per creare una risorsa e una visualizzazione shader-risorsa per tale risorsa.
+Puntatore al dispositivo Direct3D (vedere [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)) che verrà usato per creare una risorsa e una visualizzazione shader-risorsa per tale risorsa.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Puntatore al dispositivo Direct3D (vedere [**ID3D11Device)**](/windows/desktop/a
 
 Tipo: **[ **D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)\***
 
-facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)) quando viene creato il processore di dati. Impostare questo valore su **NULL** per leggere le caratteristiche di una trama quando la trama viene caricata.
+facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)) quando viene creato il processore di dati. Impostare questa proprietà su **NULL** per leggere le caratteristiche di una trama quando la trama viene caricata.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX11 \_ IMA
 
 Tipo: **[ **ID3DX11DataProcessor**](id3dx11dataprocessor.md)\*\***
 
-Indirizzo di un puntatore a un buffer che contiene il processore di dati creato (vedere [**ID3DX11DataProcessor Interface**](id3dx11dataprocessor.md)).
+Indirizzo di un puntatore a un buffer che contiene il processore di dati creato (vedere [**l'interfaccia ID3DX11DataProcessor).**](id3dx11dataprocessor.md)
 
 </dd> </dl>
 
@@ -79,15 +79,15 @@ Indirizzo di un puntatore a un buffer che contiene il processore di dati creato 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 Non esiste alcuna implementazione del caricatore asincrono al di fuori di D3DX 10 e D3DX 11.
 
-Per Windows app di Store, gli esempi DirectX (ad esempio, l'esempio di esercitazione [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)includono il modulo **BasicLoader** che usa il modello di programmazione asincrona Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Per Windows Store, gli esempi di DirectX (ad esempio, l'esempio di esercitazione [Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) includono il modulo **BasicLoader** che usa il modello di programmazione asincrona Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
 
-Per le app desktop Win32, è possibile usare il runtime di concorrenza [per](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementare qualcosa di simile al modello di programmazione asincrona Windows Runtime.
+Per le app desktop Win32, è possibile usare il runtime di concorrenza per implementare un elemento simile al modello di programmazione asincrona Windows Runtime. [](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100))
 
 ## <a name="requirements"></a>Requisiti
 

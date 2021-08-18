@@ -1,5 +1,5 @@
 ---
-description: Informazioni sulla gestione dell'Windows di ricerca con Gestione ricerche, Gestione cataloghi e Gestione ambito ricerca per indicizzazione.
+description: Informazioni sulla gestione dell'Windows di ricerca con Gestione ricerca, Gestione cataloghi e Gestione ambito ricerca per indicizzazione.
 ms.assetid: 345d1159-aa51-4a01-9831-216075a8fb78
 title: Gestione dell'indice
 ms.topic: article
@@ -13,22 +13,22 @@ ms.locfileid: "118463270"
 ---
 # <a name="managing-the-index"></a>Gestione dell'indice
 
-Windows La ricerca consente di gestire l'Windows di ricerca con tre componenti principali: Gestione ricerche, Gestione cataloghi e Gestione ambito ricerca per indicizzazione.
+Windows La ricerca consente di gestire l'Windows di ricerca con tre componenti principali: Gestione ricerca, Gestione cataloghi e Gestione ambito ricerca per indicizzazione.
 
 Questa sezione è organizzata come segue:
 
 - [Interfacce per la gestione dell'indice](interfaces-for-managing-the-index.md)
-- [Uso di Gestione ricerche](-search-3x-wds-mngidx-searchmanager.md)
+- [Uso di Gestione ricerca](-search-3x-wds-mngidx-searchmanager.md)
 - [Uso di Gestione cataloghi](-search-3x-wds-mngidx-catalog-manager.md)
 - [Uso del Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- Per le bacheche per domande e discussioni supportate dalla community sulle tecnologie di ricerca, vedere [forum MSDN: Windows Desktop Search Development](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads).
+- Per le bacheche di messaggi di domande e discussioni supportate dalla community sulle tecnologie di ricerca, vedere il [forum MSDN: Windows Desktop Search Development](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads).
 - Per scaricare gli esempi di codice dell'SDK di ricerca:
-  - [Windows Cercare esempi nella raccolta di codice](./-search-samples-ovw.md)
+  - [Windows Esempi di ricerca nella raccolta di codice](./-search-samples-ovw.md)
 - Per scaricare Windows SDK:
-  - Per Windows 10: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+  - Ad Windows 10: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
   - Per Windows 7: [Windows SDK per Windows 7 e .NET Framework](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
   - Per Windows Vista: [Windows SDK per Windows Vista e .NET Framework](https://www.microsoft.com/download/details.aspx?id=31950)
 

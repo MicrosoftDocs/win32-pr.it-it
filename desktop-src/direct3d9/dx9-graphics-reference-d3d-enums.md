@@ -1,21 +1,21 @@
 ---
-description: In questa sezione vengono descritti i tipi enumerati di Direct3D.
+description: Questa sezione descrive i tipi enumerati Direct3D.
 ms.assetid: ae64eb17-63a8-44c5-8d41-e021c49f338a
 title: Enumerazioni Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47c06f727e66e51d73eb217f73923979d56de0ae
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 480b5530fbe00339d2f4faf39e9c0b8d83acd3075e01a459ae9ce26e4d4875c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523422"
 ---
 # <a name="direct3d-enumerations"></a>Enumerazioni Direct3D
 
-In questa sezione vengono descritti i tipi enumerati di Direct3D.
+Questa sezione descrive i tipi enumerati Direct3D.
 
--   [**\_Tipo D3DBACKBUFFER**](./d3dbackbuffer-type.md)
+-   [**TIPO D3DBACKBUFFER \_**](./d3dbackbuffer-type.md)
 -   [**D3DBASISTYPE**](./d3dbasistype.md)
 -   [**D3DBLEND**](./d3dblend.md)
 -   [**D3DBLENDOP**](./d3dblendop.md)
@@ -24,13 +24,13 @@ In questa sezione vengono descritti i tipi enumerati di Direct3D.
 
     |                                                                                                                                                                                |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in 9Ex Direct3D.<br/>[**D3DCOMPOSERECTSOP**](./d3dcomposerectsop.md) |
+    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in Direct3D 9Ex.<br/>[**D3DCOMPOSERECTSOP**](./d3dcomposerectsop.md) |
 
     
 
      
 
--   [**D3DCUBEMAP \_ visi**](./d3dcubemap-faces.md)
+-   [**VISI D3DCUBEMAP \_**](./d3dcubemap-faces.md)
 -   [**D3DCULL**](./d3dcull.md)
 -   [**D3DDEBUGMONITORTOKENS**](./d3ddebugmonitortokens.md)
 -   [**D3DDECLMETHOD**](./d3ddeclmethod.md)
@@ -42,7 +42,7 @@ In questa sezione vengono descritti i tipi enumerati di Direct3D.
 
     |                                                                                                                                                                                  |
     |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in 9Ex Direct3D.<br/>[**D3DDISPLAYROTATION**](./d3ddisplayrotation.md) |
+    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in Direct3D 9Ex.<br/>[**D3DDISPLAYROTATION**](./d3ddisplayrotation.md) |
 
     
 
@@ -53,20 +53,20 @@ In questa sezione vengono descritti i tipi enumerati di Direct3D.
 -   [D3DFORMAT](d3dformat.md)
 -   [**D3DLIGHTTYPE**](./d3dlighttype.md)
 -   [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md)
--   [**\_Tipo D3DMULTISAMPLE**](./d3dmultisample-type.md)
+-   [**TIPO D3DMULTISAMPLE \_**](./d3dmultisample-type.md)
 -   [**D3DPATCHEDGESTYLE**](./d3dpatchedgestyle.md)
 -   [**D3DPOOL**](./d3dpool.md)
 -   [**D3DPRIMITIVETYPE**](./d3dprimitivetype.md)
 -   [**D3DQUERYTYPE**](./d3dquerytype.md)
 -   [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
--   [**D3DRESOURCETYPE**](./d3dresourcetype.md)
--   [**\_Tipo di trama D3DSAMPLER \_**](./d3dsampler-texture-type.md)
+-   [**D3dresourcetype**](./d3dresourcetype.md)
+-   [**TIPO DI TRAMA D3DSAMPLER \_ \_**](./d3dsampler-texture-type.md)
 -   [**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)
 -   
 
     |                                                                                                                                                                                    |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in 9Ex Direct3D.<br/>[**D3DSCANLINEORDERING**](./d3dscanlineordering.md) |
+    | Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa enumerazione è disponibile solo in Direct3D 9Ex.<br/>[**D3DSCANLINEORDERING**](./d3dscanlineordering.md) |
 
     
 
@@ -83,14 +83,14 @@ In questa sezione vengono descritti i tipi enumerati di Direct3D.
 -   [**D3DTEXTURETRANSFORMFLAGS**](./d3dtexturetransformflags.md)
 -   [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md)
 -   [**D3DVERTEXBLENDFLAGS**](./d3dvertexblendflags.md)
--   [**Valori restituiti D3DXFERR**](./d3dxferr-return-values.md)
+-   [**Valori restituiti da D3DXFERR**](./d3dxferr-return-values.md)
 -   [**D3DZBUFFERTYPE**](./d3dzbuffertype.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento a Direct3D](dx9-graphics-reference-d3d.md)
+[Informazioni di riferimento su Direct3D](dx9-graphics-reference-d3d.md)
 </dt> </dl>
 
  

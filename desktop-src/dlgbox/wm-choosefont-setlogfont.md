@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_CHOOSEFONT_SETLOGFONT (COMMDLG. h)
-description: Un'applicazione invia il \_ messaggio WM ChooseFont \_ SETLOGFONT a una finestra di dialogo tipo di carattere per impostare le informazioni correnti sui caratteri logici.
+title: WM_CHOOSEFONT_SETLOGFONT messaggio (Commdlg.h)
+description: Un'applicazione invia il messaggio WM CHOOSEFONT SETLOGFONT a una finestra di dialogo Tipo di \_ carattere per impostare le informazioni sul tipo di carattere logico \_ corrente.
 ms.assetid: ad169eca-a3ae-45bd-90df-821a93a7a764
 keywords:
-- Finestre di dialogo WM_CHOOSEFONT_SETLOGFONT messaggio
+- WM_CHOOSEFONT_SETLOGFONT finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6a588ebff7c8e56bb559a2cc9faa1d6290fbd8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d35c6f54679389b411417e5539382fd322c0873e6dba87fc90efb93b8be7ba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118503424"
 ---
-# <a name="wm_choosefont_setlogfont-message"></a>\_ \_ Messaggio SETLOGFONT di WM ChooseFont
+# <a name="wm_choosefont_setlogfont-message"></a>Messaggio \_ WM CHOOSEFONT \_ SETLOGFONT
 
-Un'applicazione invia il messaggio **WM \_ ChooseFont \_ SETLOGFONT** a una finestra di dialogo tipo di **carattere** per impostare le informazioni correnti sui caratteri logici.
+Un'applicazione invia il **messaggio \_ WM CHOOSEFONT \_ SETLOGFONT** a una finestra di dialogo **Tipo** di carattere per impostare le informazioni sul tipo di carattere logico corrente.
 
 
 ```C++
@@ -47,19 +47,19 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) che contiene informazioni sul tipo di carattere logico corrente.
+Puntatore a una [**struttura LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) che contiene informazioni sul tipo di carattere logico corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si chiama la funzione [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per creare una finestra di dialogo del **tipo di carattere** , è possibile usare il membro **LPLOGFONT** della struttura [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per specificare una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) contenente i valori iniziali per la finestra di dialogo. Usare il messaggio **WM \_ ChooseFont \_ SETLOGFONT** per specificare una struttura **LOGFONT** con valori diversi mentre è aperta la finestra di dialogo tipo di **carattere** .
+Quando si chiama la funzione [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per creare una finestra di dialogo **Tipo** di carattere, è possibile usare il membro **lpLogFont** della struttura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per specificare una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) contenente i valori iniziali per la finestra di dialogo. Usare il **messaggio WM \_ CHOOSEFONT \_ SETLOGFONT** per specificare una **struttura LOGFONT** con valori diversi mentre **la** finestra di dialogo Tipo di carattere è aperta.
 
-In genere, si invia il messaggio **WM \_ ChooseFont \_ SETLOGFONT** da una procedura di hook [**CFHookProc**](/windows/win32/api/commdlg/nc-commdlg-lpcfhookproc) . La procedura hook può anche inviare i messaggi [**WM \_ ChooseFont \_ GETLOGFONT**](wm-choosefont-getlogfont.md) e [**WM \_ ChooseFont \_**](wm-choosefont-setflags.md) .
+In genere, si invia il messaggio **WM \_ CHOOSEFONT \_ SETLOGFONT** da una procedura hook [**CFHookProc.**](/windows/win32/api/commdlg/nc-commdlg-lpcfhookproc) La routine hook può anche inviare i [**messaggi WM \_ CHOOSEFONT \_ GETLOGFONT**](wm-choosefont-getlogfont.md) e [**WM \_ CHOOSEFONT \_ SETFLAGS.**](wm-choosefont-setflags.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ In genere, si invia il messaggio **WM \_ ChooseFont \_ SETLOGFONT** da una proce
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -89,22 +89,22 @@ In genere, si invia il messaggio **WM \_ ChooseFont \_ SETLOGFONT** da una proce
 [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta)
 </dt> <dt>
 
-[**\_GETLOGFONT ChooseFont \_ WM**](wm-choosefont-getlogfont.md)
+[**WM \_ CHOOSEFONT \_ GETLOGFONT**](wm-choosefont-getlogfont.md)
 </dt> <dt>
 
-[**\_flag ChooseFont \_ WM**](wm-choosefont-setflags.md)
+[**WM \_ CHOOSEFONT \_ SETFLAGS**](wm-choosefont-setflags.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+[**Logfont**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 </dt> </dl>
 
  

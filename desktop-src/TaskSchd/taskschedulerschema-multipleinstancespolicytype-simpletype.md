@@ -54,9 +54,9 @@ Il **tipo semplice multipleInstancesPolicyType** definisce i valori seguenti.
 | Valore        | Descrizione                                                                                     |
 |--------------|-------------------------------------------------------------------------------------------------|
 | Parallelo     | Avvia una nuova istanza mentre è in esecuzione un'istanza esistente.<br/>                           |
-| Coda        | Avvia una nuova istanza dell'attività al termine di tutte le altre istanze dell'attività.<br/>      |
+| Coda        | Avvia una nuova istanza dell'attività dopo il completamento di tutte le altre istanze dell'attività.<br/>      |
 | IgnoreNew    | Valore predefinito. Non avvia una nuova istanza se è in esecuzione un'istanza esistente dell'attività.<br/> |
-| StopExisting | Arresta un'istanza esistente dell'attività prima di avviare la nuova istanza.<br/>                |
+| StopExisting | Arresta un'istanza esistente dell'attività prima di avviare una nuova istanza.<br/>                |
 
 
 
@@ -66,8 +66,8 @@ Il **tipo semplice multipleInstancesPolicyType** definisce i valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ Il **tipo semplice multipleInstancesPolicyType** definisce i valori seguenti.
 
 <dl> <dt>
 
-[Utilità di pianificazione tipi semplici dello schema](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione semplici dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

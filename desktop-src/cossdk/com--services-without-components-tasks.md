@@ -1,7 +1,7 @@
 ---
-description: Attività Servizi COM+ senza componenti
+description: Attività servizi COM+ senza componenti
 ms.assetid: 69001046-938b-4429-8a22-276185dba1a2
-title: Attività Servizi COM+ senza componenti
+title: Attività servizi COM+ senza componenti
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4e61ba9b9b12651e8f983a0600464f06d98c404a5cca33232162d2ca3ddc44a9
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118548578"
 ---
-# <a name="com-services-without-components-tasks"></a>Attività Servizi COM+ senza componenti
+# <a name="com-services-without-components-tasks"></a>Attività servizi COM+ senza componenti
 
-Negli argomenti seguenti di questa sezione vengono fornite istruzioni dettagliate per l'uso di servizi COM+ senza componenti.
+Negli argomenti seguenti di questa sezione vengono fornite istruzioni dettagliate per l'uso dei servizi COM+ senza componenti.
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Interfaccia IWMPCdromCollection (VB e C) (WMP. h)
-description: Fornisce un modo per organizzare e accedere a una raccolta di unità CD o DVD. L'interfaccia IWMPCdromCollection espone la proprietà seguente.
+title: Interfaccia IWMPCdromCollection (VB e C) (Wmp.h)
+description: Consente di organizzare e accedere a una raccolta di unità CD o DVD. L'interfaccia IWMPCdromCollection espone la proprietà seguente.
 ms.assetid: 60874603-d9c8-4ed1-a92a-bd069bd0c253
 keywords:
 - Interfaccia IWMPCdromCollection (VB e C) Windows Media Player
-- Interfaccia IWMPCdromCollection (VB e C) Windows Media Player, descritta
+- Interfaccia IWMPCdromCollection (VB e C) Windows Media Player , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,36 +15,36 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3fbc9c053c186b6d542e201f7bee5d2331b649
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c935d4875307c7712036ed51304996028db6ba2a88fc1d5e54c77b7948c72252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119300"
 ---
 # <a name="iwmpcdromcollection-vb-and-c-interface"></a>Interfaccia IWMPCdromCollection (VB e C#)
 
-Fornisce un modo per organizzare e accedere a una raccolta di unità CD o DVD.
+Consente di organizzare e accedere a una raccolta di unità CD o DVD.
 
-L'interfaccia **IWMPCdromCollection** espone la proprietà seguente.
+**L'interfaccia IWMPCdromCollection** espone la proprietà seguente.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMPCdromCollection (VB e C#)** presenta questi tipi di membri:
+**L'interfaccia IWMPCdromCollection (VB e C#)** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMPCdromCollection (VB e C#)** presenta questi metodi.
+Questi metodi sono disponibili **nell'interfaccia IWMPCdromCollection (VB e C#).**
 
 
 
 | Metodo                                                                                                     | Descrizione                                                                              |
 |:-----------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [**getByDriveSpecifier**](wmplibiwmpcdromcollection-iwmpcdromcollection-getbydrivespecifier--vb-and-c.md) | Restituisce un'interfaccia **IWMPCdrom** associata a una lettera di unità specifica.<br/> |
-| [**Elemento**](wmplibiwmpcdromcollection-iwmpcdromcollection-item--vb-and-c.md)                               | Restituisce un'interfaccia **IWMPCdrom** in corrispondenza dell'indice specificato.<br/>                        |
+| [**getByDriveSpecifier**](wmplibiwmpcdromcollection-iwmpcdromcollection-getbydrivespecifier--vb-and-c.md) | Restituisce **un'interfaccia IWMPCdrom** associata a una lettera di unità specifica.<br/> |
+| [**Elemento**](wmplibiwmpcdromcollection-iwmpcdromcollection-item--vb-and-c.md)                               | Restituisce **un'interfaccia IWMPCdrom** in corrispondenza dell'indice specificato.<br/>                        |
 
 
 
@@ -52,7 +52,7 @@ L'interfaccia **IWMPCdromCollection (VB e C#)** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IWMPCdromCollection (VB e C#)** presenta queste proprietà.
+**L'interfaccia IWMPCdromCollection (VB e C#)** ha queste proprietà.
 
 
 
@@ -64,13 +64,13 @@ L'interfaccia **IWMPCdromCollection (VB e C#)** presenta queste proprietà.
 
  
 
-Ottenere un'interfaccia **IWMPCdromCollection** usando la proprietà seguente.
+Ottenere **un'interfaccia IWMPCdromCollection** usando la proprietà seguente.
 
 
 
 | Oggetto                                                                   | Proprietà                                                                           |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Oggetto AxWindowsMediaPlayer](axwindowsmediaplayer-object--vb-and-c.md) | [**cdromcollection**](axwmplib-axwindowsmediaplayer-cdromcollection--vb-and-c.md) |
+| [Oggetto AxWindowsMediaPlayer](axwindowsmediaplayer-object--vb-and-c.md) | [**cdromCollection**](axwmplib-axwindowsmediaplayer-cdromcollection--vb-and-c.md) |
 
 
 
@@ -82,7 +82,7 @@ Ottenere un'interfaccia **IWMPCdromCollection** usando la proprietà seguente.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

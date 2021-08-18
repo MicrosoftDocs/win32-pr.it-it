@@ -4,22 +4,22 @@ description: Uso dell'annotazione diretta
 ms.assetid: d9d78e74-dcab-4974-945f-e8c5d42c04b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f0bdea5af896329b6836d21ca1dcee25bc2739
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3e8543b5aa4e6beb86b6119d13fe71ad45c1a34776e19095170cb48d8d9f48e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744886"
 ---
 # <a name="using-direct-annotation"></a>Uso dell'annotazione diretta
 
-**Per utilizzare l'annotazione diretta per eseguire l'override del valore di una proprietà**
+**Per usare l'annotazione diretta per eseguire l'override del valore di una proprietà**
 
-1.  Utilizzare la funzione [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) per creare l'oggetto [**IAccPropServices**](/windows/desktop/api/oleacc/nn-oleacc-iaccpropservices) .
-2.  Chiamare [**IAccPropServices:: SetHwndProp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndprop), passando **HWND**, ID oggetto, ID figlio, la proprietà di cui eseguire l'override e una [variante](/windows/win32/api/oaidl/ns-oaidl-variant) che contiene il nuovo valore della proprietà. Questo passaggio annota il valore.
-3.  Rilasciare i puntatori all'interfaccia e liberare la memoria.
+1.  Usare la [funzione CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) per creare [**l'oggetto IAccPropServices.**](/windows/desktop/api/oleacc/nn-oleacc-iaccpropservices)
+2.  Chiamare [**IAccPropServices::SetHwndProp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndprop), passando **HWND,** ID oggetto, ID figlio, proprietà da sottoporre a override e [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) contenente il nuovo valore della proprietà. Questo passaggio annota il valore.
+3.  Rilasciare i puntatori a interfaccia e liberare memoria.
 
-Nell'esempio seguente viene illustrato come annotare la proprietà [**Role**](role-property.md) di un controllo testo statico.
+Nell'esempio seguente viene illustrato come annotare la [**proprietà Role**](role-property.md) di un controllo testo statico.
 
 
 ```C++
@@ -55,27 +55,27 @@ HRESULT CMyTextControl::SetAccessibleProperties()
 
 ## <a name="properties-supported-when-specifying-a-value"></a>Proprietà supportate quando si specifica un valore
 
-Le seguenti proprietà di Microsoft Active Accessibility possono essere annotate quando si specifica un valore (il cui valore deve essere del tipo indicato) per l'annotazione diretta. Per eseguire l'override o aggiungere una proprietà di automazione interfaccia utente Microsoft a un controllo, è possibile specificare l'ID della proprietà di automazione interfaccia utente anziché l'ID della proprietà Microsoft Active Accessibility. Per un elenco di ID di automazione interfaccia utente, vedere [identificatori di proprietà](uiauto-entry-propids.md).
+Le proprietà Microsoft Active Accessibility seguenti possono essere annotate quando si specifica un valore (dove il valore deve essere del tipo annotato) per l'annotazione diretta. Per eseguire l'override o aggiungere una proprietà di Microsoft Automazione interfaccia utente a un controllo, è possibile specificare l'ID della proprietà Automazione interfaccia utente anziché l'ID Microsoft Active Accessibility proprietà. Per un elenco di ID Automazione interfaccia utente, vedere [Identificatori di proprietà.](uiauto-entry-propids.md)
 
 
 
 | Proprietà                      | Type     |
 |-------------------------------|----------|
-| \_nome ACC \_ propid             | \_BSTR VT |
-| \_Descrizione ACC \_ propid      | \_BSTR VT |
-| \_ruolo ACC \_ propid             | VT \_ I4   |
-| \_stato ACC \_ propid            | VT \_ I4   |
-| Guida di PROPID \_ ACC \_             | \_BSTR VT |
-| \_KEYBOARDSHORTCUT ACC \_ propid | \_BSTR VT |
-| \_DefaultAction propid ACC \_    | \_BSTR VT |
-| \_VALUEMAP ACC \_ propid         | \_BSTR VT |
-| \_ROLEMAP ACC \_ propid          | \_BSTR VT |
-| \_STATEMAP ACC \_ propid         | \_BSTR VT |
+| NOME ACC \_ \_ PROPID             | VT \_ BSTR |
+| DESCRIZIONE DI PROPID \_ ACC \_      | VT \_ BSTR |
+| RUOLO DI ACCESSO \_ \_ PROPID             | VT \_ I4   |
+| STATO DI \_ ACC \_ PROPID            | VT \_ I4   |
+| GUIDA DI PROPID \_ ACC \_             | VT \_ BSTR |
+| PROPID \_ ACC \_ KEYBOARDSHORTCUT | VT \_ BSTR |
+| PROPID \_ ACC \_ DEFAULTACTION    | VT \_ BSTR |
+| VALUEMAP \_ DI PROPID ACC \_         | VT \_ BSTR |
+| PROPID \_ ACC \_ ROLEMAP          | VT \_ BSTR |
+| PROPID \_ ACC \_ STATEMAP         | VT \_ BSTR |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

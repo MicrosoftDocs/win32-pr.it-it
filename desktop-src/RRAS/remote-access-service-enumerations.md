@@ -4,12 +4,12 @@ description: Usare i tipi di enumerazione seguenti per implementare la funzional
 ms.assetid: ce9849ec-eece-4b3e-8967-da573a37c02a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b21b7013ae2724273a58888d8b2ae4a41735e6a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c366d64bd3782e0259c17726661290ce6b986c060ae77c50a890138dbe83e8ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788441"
 ---
 # <a name="remote-access-service-enumerations"></a>Enumerazioni del servizio di accesso remoto
 
@@ -21,6 +21,6 @@ Usare i tipi di enumerazione seguenti per implementare la funzionalità RAS.
 
 [**RASPROJECTION**](/previous-versions/windows/desktop/legacy/aa377648(v=vs.85))
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Funzione RasAdminPortClearStatistics (rassapi. h)
-description: La funzione RasAdminPortClearStatistics Reimposta i contatori che rappresentano le varie statistiche restituite dalla funzione RasAdminPortGetInfo nella struttura delle \_ statistiche della porta RAS \_ . I contatori vengono reimpostati su zero e avviano l'accumulo.
+title: Funzione RasAdminPortClearStatistics (Rassapi.h)
+description: La funzione RasAdminPortClearStatistics reimposta i contatori che rappresentano le varie statistiche segnalate dalla funzione RasAdminPortGetInfo nella struttura RAS \_ PORT \_ STATISTICS. I contatori vengono reimpostati su zero e iniziano ad accumularsi.
 ms.assetid: d2ce4652-1034-4ded-aa26-2678c719d5b9
 keywords:
-- RAS funzione RasAdminPortClearStatistics
+- Funzione RasAdminPortClearStatistics RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57943fbefcba1625c7badff25827c62eaca8a8c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3da7d17516e7dd7708821a7c60c2d93db913f25c38471524367ae96494e41f38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788988"
 ---
-# <a name="rasadminportclearstatistics-function"></a>RasAdminPortClearStatistics (funzione)
+# <a name="rasadminportclearstatistics-function"></a>Funzione RasAdminPortClearStatistics
 
-\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti di Windows NT Server 4,0. Restituisce la \_ chiamata \_ di errore non \_ implementata in Windows Server 2003. Le applicazioni devono utilizzare la funzione [**MprAdminPortClearStats**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportclearstats) .\]
+\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti Windows NT Server 4.0. Restituisce ERROR \_ CALL NOT IMPLEMENTED in Windows Server \_ \_ 2003. Le applicazioni devono usare [**la funzione MprAdminPortClearStats.**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportclearstats)\]
 
-La funzione **RasAdminPortClearStatistics** Reimposta i contatori che rappresentano le varie statistiche restituite dalla funzione [**RasAdminPortGetInfo**](rasadminportgetinfo.md) nella struttura [**delle \_ \_ statistiche della porta RAS**](ras-port-statistics-str.md) . I contatori vengono reimpostati su zero e avviano l'accumulo.
+La **funzione RasAdminPortClearStatistics** reimposta i contatori che rappresentano le varie statistiche segnalate dalla funzione [**RasAdminPortGetInfo**](rasadminportgetinfo.md) nella [**struttura RAS PORT \_ \_ STATISTICS.**](ras-port-statistics-str.md) I contatori vengono reimpostati su zero e iniziano ad accumularsi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,23 +43,23 @@ DWORD RasAdminPortClearStatistics(
 
 <dl> <dt>
 
-*lpszServer* \[ in\]
+*lpszServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome del server RAS. Specificare il nome con i \\ \\ caratteri "" iniziali nel formato: \\ \\ *ServerName*.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome del server RAS. Specificare il nome con i caratteri \\ \\ " " iniziali, nel formato: \\ \\ *nomeserver*.
 
 </dd> <dt>
 
-*lpszPort* \[ in\]
+*lpszPort* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome della porta nel server.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome della porta nel server.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito può essere il codice di errore seguente.
 
@@ -67,19 +67,19 @@ Se la funzione ha esito negativo, il valore restituito può essere il codice di 
 
 | Valore                                                                                                 | Significato                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**ERRORE \_ dev \_ non \_ esiste**</dt> </dl> | La porta specificata non è valida.<br/> |
+| <dl> <dt>**ERRORE \_ SVILUPPO \_ \_ INESISTENTE**</dt> </dl> | La porta specificata non è valida.<br/> |
 
 
 
  
 
-Non sono disponibili informazioni estese sull'errore per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Non sono disponibili informazioni estese sugli errori per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **RasAdminPortClearStatistics** Cancella le statistiche sul server, non localmente all'interno dell'applicazione che effettua la chiamata. Ciò significa che le statistiche vengono reimpostate anche per qualsiasi altra applicazione che sta monitorando la porta specificata.
+La **funzione RasAdminPortClearStatistics** cancella le statistiche nel server, non localmente all'interno dell'applicazione che effettua la chiamata. Ciò significa che le statistiche vengono reimpostate anche per qualsiasi altra applicazione che monitora la porta specificata.
 
-Se la porta *lpszPort* fa parte di una connessione a più collegamenti, **RasAdminPortClearStatistics** Reimposta le statistiche per la porta specificata, la funzione Reimposta anche le statistiche cumulative per la connessione a più collegamenti. Tuttavia, la funzione non influisce sulle singole statistiche per le altre porte che fanno parte della connessione a più collegamenti.
+Se la porta *lpszPort* fa parte di una connessione multilink, **RasAdminPortClearStatistics** reimposta le statistiche per la porta specificata, la funzione reimposta anche le statistiche cumulative per la connessione multilink. Tuttavia, la funzione non influisce sulle singole statistiche per altre porte che fanno parte della connessione multilink.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Se la porta *lpszPort* fa parte di una connessione a più collegamenti, **RasAdm
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/> | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
-| Libreria<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
+| Intestazione<br/>                | <dl> <dt>Rassapi.h</dt> </dl>   |
+| Libreria<br/>               | <dl> <dt>Rassapi.lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
 
@@ -105,7 +105,7 @@ Se la porta *lpszPort* fa parte di una connessione a più collegamenti, **RasAdm
 [Funzioni di amministrazione del server RAS](ras-server-administration-functions.md)
 </dt> <dt>
 
-[**\_statistiche porta \_ RAS**](ras-port-statistics-str.md)
+[**STATISTICHE \_ PORTA \_ RAS**](ras-port-statistics-str.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

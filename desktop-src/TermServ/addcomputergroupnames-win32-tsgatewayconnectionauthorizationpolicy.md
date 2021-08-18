@@ -1,5 +1,5 @@
 ---
-title: Metodo AddComputerGroupNames della classe Win32_TSGatewayConnectionAuthorizationPolicy computer
+title: Metodo AddComputerGroupNames della classe Win32_TSGatewayConnectionAuthorizationPolicy
 description: Aggiunge i nomi dei gruppi di computer specificati alla proprietà ComputerGroupNames.
 ms.assetid: f0c440d6-0cc2-48b4-b656-65f12e652151
 ms.tgt_platform: multiple
@@ -46,21 +46,21 @@ uint32 AddComputerGroupNames(
 *ComputerGroupNames* \[ Pollici\]
 </dt> <dd>
 
-Elenco delimitato da punti e virgola di nomi di gruppi di computer da aggiungere alla **proprietà ComputerGroupNames.** I nomi dei gruppi di computer devono essere nel formato *\\ ComputerGruppo di dominioNomeGruppo.*
+Elenco delimitato da punto e virgola dei nomi dei gruppi di computer da aggiungere alla **proprietà ComputerGroupNames.** I nomi dei gruppi di computer devono essere nel formato *\\ DominioNomeGruppoComputer*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se nel parametro *ComputerGroupNames* sono presenti più nomi di gruppi di computer e uno dei nomi non può essere elaborato, non verrà elaborato nessuno dei nomi.
+Se nel parametro *ComputerGroupNames* sono presenti più nomi di gruppo di computer e uno dei nomi non può essere elaborato, non verrà elaborato nessuno dei nomi.
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Managed Object Format file MOF contengono le definizioni per le classi WMI (Wind
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

@@ -1,6 +1,6 @@
 ---
 title: WM_PSD_MINMARGINRECT messaggio (Commdlg.h)
-description: Notifica a una routine hook PagePaintHook le coordinate del rettangolo dei margini nella pagina di esempio. Una finestra di dialogo Imposta pagina invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
+description: Notifica a una procedura hook PagePaintHook le coordinate del rettangolo del margine nella pagina di esempio. La finestra di dialogo Imposta pagina invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
 ms.assetid: 14977b52-7a6f-4c55-956a-716398a71613
 keywords:
 - WM_PSD_MINMARGINRECT finestre di dialogo del messaggio
@@ -23,7 +23,7 @@ ms.locfileid: "118503316"
 ---
 # <a name="wm_psd_minmarginrect-message"></a>Messaggio \_ MINMARGINRECT DI WM PSD \_
 
-Notifica a una [*routine hook PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) le coordinate del rettangolo dei margini nella pagina di esempio. Una **finestra di dialogo** Imposta pagina invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
+Notifica a una [*procedura hook PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) le coordinate del rettangolo del margine nella pagina di esempio. La **finestra di dialogo** Imposta pagina invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
 
 
 ```C++
@@ -53,13 +53,13 @@ Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che 
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la routine hook restituisce **TRUE,** la finestra di dialogo non invia altri messaggi e non disegna nella pagina di esempio fino alla successiva modifica della pagina di esempio da parte del sistema.
+Se la routine hook restituisce **TRUE,** la finestra di dialogo non invia altri messaggi e non disegna nella pagina di esempio fino al successivo ridisegno della pagina di esempio da parte del sistema.
 
 Se la routine hook restituisce **FALSE,** la finestra di dialogo invia i messaggi rimanenti della sequenza di disegno.
 
 ## <a name="remarks"></a>Commenti
 
-La **finestra di dialogo** Imposta pagina include un'immagine di una pagina di esempio che mostra come le selezioni dell'utente influiscono sull'aspetto dell'output stampato. Quando si chiama la [**funzione PageSetupDlg,**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) è possibile fornire una routine hook [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) per personalizzare l'aspetto della pagina di esempio. Ogni volta che la finestra di dialogo sta per disegnare il contenuto della pagina di esempio, la finestra di dialogo invia una sequenza di messaggi alla procedura hook.
+La **finestra di dialogo** Imposta pagina include un'immagine di una pagina di esempio che mostra in che modo le selezioni dell'utente influiscono sull'aspetto dell'output stampato. Quando si chiama la [**funzione PageSetupDlg,**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) è possibile fornire una procedura hook [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) per personalizzare l'aspetto della pagina di esempio. Ogni volta che la finestra di dialogo sta per disegnare il contenuto della pagina di esempio, la finestra di dialogo invia una sequenza di messaggi alla procedura hook.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,13 +86,13 @@ La **finestra di dialogo** Imposta pagina include un'immagine di una pagina di e
 [**PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85))
 </dt> <dt>
 
-[**WM \_ PSD \_ PAGESETUPDLG**](wm-psd-pagesetupdlg.md)
+[**PAGINA \_ DI WM \_ PSDSETUPDLG**](wm-psd-pagesetupdlg.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 
  

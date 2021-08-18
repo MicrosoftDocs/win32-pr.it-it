@@ -44,7 +44,7 @@ Pronuncia il testo o il file audio specificato per il carattere specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Anche se *i parametri Text* e *Url* sono facoltativi, è necessario specificare uno di essi. Per usare questo metodo con un carattere configurato per parlare solo nel fumetto della parola o usando un motore di sintesi vocale (TTS), è sufficiente specificare il *parametro Text.* Includere uno spazio tra le parole per definire le interruzioni di parola appropriate nel fumetto, anche per le lingue che in genere non includono spazi.
+Anche se *i parametri Text* e *Url* sono facoltativi, è necessario specificare uno di essi. Per usare questo metodo con un carattere configurato per parlare solo nel fumetto di parole o usando un motore di sintesi vocale (TTS), è sufficiente specificare il *parametro Text.* Includere uno spazio tra le parole per definire le interruzioni di parola appropriate nel fumetto, anche per le lingue che in genere non includono spazi.
 
 È anche possibile includere caratteri a barre verticali ( ) nel parametro Text per designare stringhe alternative, in modo che il server scegli in modo casuale una stringa diversa ogni volta che \| elabora il metodo. 
 
@@ -100,13 +100,13 @@ Analogamente, se il carattere tenta di pronunciare un file audio e se il file no
 
 
 
-Per altre informazioni sul tag di riconoscimento vocale segnalibro, vedere [Tag di output del riconoscimento vocale.](mrk-tag.md)
+Per altre informazioni sul tag di riconoscimento vocale segnalibro, vedere [Tag di output vocale.](mrk-tag.md)
 
 Il **metodo Speak** usa l'ultima azione riprodotta per determinare l'animazione parlata da riprodurre. Ad esempio, se il comando **Speak** è stato preceduto da [**play**](play-method.md) "**GestureRight**", il server riprodurrà **GestureRight** e quindi l'animazione **GestureRight** speaking. Se l'ultima animazione riprodotta non ha un'animazione parlata, Agent riproduce l'animazione assegnata allo stato **Speaking del** carattere.
 
 Se si chiama **Parla** e il canale audio è occupato, l'output audio del carattere non verrà ascoltato, ma il testo verrà visualizzato nel fumetto della parola.
 
-L'interruzione automatica delle parole di Agent nel fumetto di parole interrompe le parole usando spazi vuoti,ad esempio Spazio o Tab. Tuttavia, se non è possibile, potrebbe interrompere una parola per adattarla al fumetto. In lingue come il giapponese, il cinese e il tailandese, in cui gli spazi non vengono usati per interrompere le parole, inserire uno spazio unicode a larghezza zero (0x200B) tra i caratteri per definire interruzioni di parola logiche.
+L'interruzione automatica delle parole di Agent nel fumetto di parole interrompe le parole usando spazi vuoti, ad esempio Spazio o Tab. Tuttavia, se non è possibile, potrebbe interrompere una parola per adattarla al fumetto. In lingue come il giapponese, il cinese e il tailandese, in cui gli spazi non vengono usati per interrompere le parole, inserire uno spazio unicode a larghezza zero (0x200B) tra i caratteri per definire interruzioni di parola logiche.
 
 > [!Note]  
 > Anche la proprietà [**Enabled del fumetto**](enabled-property.md) deve essere **Impostata** su True per visualizzare il testo.

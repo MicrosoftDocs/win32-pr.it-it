@@ -19,7 +19,7 @@ I passaggi seguenti illustrano una procedura generale per l'implementazione di u
 
 2.  Usare rispettivamente il file di intestazione e la libreria Mtxdm.h e Mtxdm.lib.
 
-3.  Compilare una DLL che implementa [**l'interfaccia IDispenserDriver**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispenserdriver) e l'API da esporre alle applicazioni.
+3.  Compilare una DLL che implementa [**l'interfaccia IDispenserDriver**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispenserdriver) e l'API che si vuole esporre alle applicazioni.
 
 4.  Nell'avvio ([*DllMain*](/windows/desktop/Dlls/dllmain) o prima chiamata all'API dispenser) chiamare la [**funzione GetDispenserManager.**](/windows/desktop/api/MtxDM/nf-mtxdm-getdispensermanager) Verrà restituito un puntatore all'interfaccia [**IDispenserManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispensermanager) del gestore di dispenser.
 

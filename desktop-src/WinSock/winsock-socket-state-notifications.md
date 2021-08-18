@@ -3,18 +3,18 @@ title: Notifiche sullo stato del socket Winsock
 description: Le API di notifica dello stato del socket offrono un modo scalabile ed efficiente per ottenere notifiche sulle modifiche dello stato del socket. Sono incluse notifiche su elementi quali lettura non bloccante, scrittura non bloccante, condizioni di errore e altre informazioni.
 ms.topic: article
 ms.date: 11/18/2020
-ms.openlocfilehash: 9ad7f7afcb3dda223b4d54af293bc9a4dd019758
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ed0bd6e37117377f91dc01cb56225b8c268cd87a0148d9ad05c2fd1a8f005f68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558714"
 ---
 # <a name="winsock-socket-state-notifications"></a>Notifiche sullo stato del socket Winsock
 
 ## <a name="introduction"></a>Introduzione
 
-Le API di notifica dello stato del socket nella tabella seguente offrono un modo scalabile ed efficiente per ottenere notifiche sulle modifiche dello stato del socket (efficienti sia in termini di CPU che di memoria). Sono incluse notifiche su elementi quali lettura non bloccante, scrittura non bloccante, condizioni di errore e altre informazioni.
+Le API di notifica dello stato del socket nella tabella seguente offrono un modo scalabile ed efficiente per ottenere notifiche sulle modifiche dello stato del socket (efficiente sia in termini di CPU che di memoria). Sono incluse notifiche su elementi quali lettura non bloccante, scrittura non bloccante, condizioni di errore e altre informazioni.
 
 |API|Descrizione|
 |-|-|
@@ -30,19 +30,19 @@ Queste API consentono di creare facilmente astrazioni indipendenti dalla piattaf
 
 Queste API offrono un'alternativa scalabile a [**WSAPoll**](/windows/win32/api/winsock2/nf-winsock2-wsapoll) e [**selezionano**](/windows/win32/api/winsock2/nf-winsock2-select) le API.
 
-Sono un'alternativa [all'I/O socket](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) sovrapposto usato con le porte di completamento [I/O](/windows/win32/fileio/i-o-completion-ports)ed evitano la necessità di buffer di I/O permanenti per socket. Ma in uno scenario in cui i buffer di I/O per socket non sono una considerazione importante (il numero di socket è relativamente basso o vengono usati costantemente), l'I/O del socket sovrapposto potrebbe avere un sovraccarico minore a causa di un numero inferiore di transizioni del kernel, nonché di un modello più semplice.
+Sono un'alternativa [all'I/O del socket](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) sovrapposto usato con le porte di completamento [dell'I/O](/windows/win32/fileio/i-o-completion-ports)ed evitano la necessità di buffer di I/O permanenti per socket. Ma in uno scenario in cui i buffer I/O per socket non sono una considerazione importante (il numero di socket è relativamente basso o vengono usati costantemente), l'I/O del socket sovrapposto potrebbe avere un sovraccarico minore a causa di un numero minore di transizioni del kernel, nonché di un modello più semplice.
 
 Un socket può essere associato a una sola porta di completamento I/O. Un socket può essere registrato con una porta di completamento I/O una sola volta. Per modificare le chiavi di completamento, annullare la registrazione della notifica, attendere il messaggio **SOCK_NOTIFY_EVENT_REMOVE** (vedere gli argomenti [**ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) e [**SocketNotificationRetrieveEvents)**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents) e quindi registrare nuovamente il socket.
 
-Per evitare di liberare memoria ancora in uso, è necessario liberare le strutture  di dati associate di una registrazione solo dopo aver ricevuto la notifica SOCK_NOTIFY_EVENT_REMOVE per la registrazione. Quando il descrittore del socket usato per la registrazione per le notifiche viene chiuso usando la [funzione closesocket,](/windows/win32/api/winsock/nf-winsock-closesocket) le relative notifiche vengono automaticamente annullate. È tuttavia possibile che le notifiche già accodate siano ancora recapitate. Una deregistrazione automatica tramite **closesocket** non genererà una **notifica** SOCK_NOTIFY_EVENT_REMOVE automatica.
+Per evitare di liberare memoria ancora in uso, è consigliabile liberare le strutture  di dati associate di una registrazione solo dopo aver ricevuto la notifica SOCK_NOTIFY_EVENT_REMOVE per la registrazione. Quando il descrittore del socket usato per la registrazione per le notifiche viene chiuso usando la [funzione closesocket,](/windows/win32/api/winsock/nf-winsock-closesocket) le relative notifiche vengono automaticamente annullate. È tuttavia possibile che le notifiche già in coda siano ancora recapitate. Un annullamento automatico della registrazione **tramite closesocket** non genererà **una** SOCK_NOTIFY_EVENT_REMOVE notifica.
 
-Se si vuole l'elaborazione multithread, è consigliabile usare una singola porta di completamento I/O con più thread che elaborano le notifiche. Ciò consente alla porta di completamento di I/O di aumentare il lavoro tra più thread, in base alle esigenze. Evitare di avere più porte di completamento di I/O ,ad esempio una per ogni thread, perché tale progettazione è vulnerabile al collo di bottiglia in un singolo thread mentre altre sono inattive.
+Se si vuole l'elaborazione multithread, è consigliabile usare una singola porta di completamento I/O con più thread che elaborano le notifiche. Ciò consente alla porta di completamento dell'I/O di aumentare il numero di istanze del lavoro tra più thread, in base alle esigenze. Evitare di avere più porte di completamento di I/O (ad esempio, una per ogni thread), perché tale progettazione è vulnerabile all'inattività di bottle in un singolo thread mentre altre sono inattive.
 
-Se più thread dequeuing pacchetti di notifica con notifiche attivate **a** livello, è necessario SOCK_NOTIFY_TRIGGER_ONESHOT per evitare che più thread ricevano notifiche per una modifica dello stato. Dopo l'elaborazione della notifica socket, è necessario registrare nuovamente la notifica.
+Se più thread stanno dequeuing pacchetti di notifica con notifiche attivate **a** livello, è necessario SOCK_NOTIFY_TRIGGER_ONESHOT per evitare che più thread ricevano notifiche per una modifica dello stato. Dopo l'elaborazione della notifica socket, è necessario registrare nuovamente la notifica.
 
-Se più thread stanno dequeuing dei pacchetti di notifica in una connessione orientata al flusso in cui i singoli messaggi devono essere elaborati in un singolo thread, valutare la possibilità di usare notifiche singole attivate a livello. In questo modo si riduce la probabilità che più thread ricevano frammenti di messaggi che devono essere riassemblati tra thread. 
+Se più thread stanno dequeuing dei pacchetti di notifica in una connessione orientata al flusso in cui i singoli messaggi devono essere elaborati in un singolo thread, valutare la possibilità di usare notifiche in un'unica esecuzione attivate a livello. In questo modo si riduce la probabilità che più thread ricevano frammenti di messaggi che devono essere riassemblati tra thread. 
 
-Se si usano notifiche attivate da edge, non è consigliabile eseguire notifiche una sola volta perché il socket deve essere svuotato dopo l'abilitazione delle registrazioni. Si tratta di un modello più complesso da implementare ed è più costoso perché richiede sempre una chiamata che restituisce **WSAEWOULDBLOCK**.
+Se si usano notifiche attivate da edge, non è consigliabile inviare notifiche una sola volta perché il socket deve essere svuotato dopo l'abilitazione delle registrazioni. Si tratta di un modello più complesso da implementare ed è più costoso perché richiede sempre una chiamata che restituisce **WSAEWOULDBLOCK**.
 
 Se si vuole aumentare il numero di richieste di accettazione della connessione in un singolo socket di ascolto, i server devono usare la funzione [AcceptEx](/windows/win32/api/mswsock/nf-mswsock-acceptex) invece di sottoscrivere le notifiche per le richieste di connessione. L'accettazione delle connessioni in risposta alle notifiche consente di limitazione implicita della frequenza di accettazione della connessione rispetto all'elaborazione delle richieste per le connessioni esistenti.
 
@@ -423,7 +423,7 @@ Questa è una semplice illustrazione dell'uso delle API con l'attivazione dei bo
 > [!IMPORTANT]
 > Il server deve continuare a ricevere fino a quando non riceve **un WSAEWOULDBLOCK**. In caso contrario, non è possibile essere certi che verrà osservato un bordo perimetrale. Di conseguenza, anche il socket del server deve essere non bloccante.
 
-Questo esempio usa UDP per dimostrare la mancanza di una **notifica HANGUP.** Se necessario, è necessario che gli helper comuni creino socket UDP.
+Questo esempio usa UDP per dimostrare la mancanza di una **notifica HANGUP.** L'ipotesi che gli helper comuni creino socket UDP, se necessario, richiede alcuni problemi.
 
 ```cpp
 // This example assumes that substantially similar helpers are available for UDP sockets.
@@ -588,9 +588,9 @@ Exit:
 
 Questo esempio illustra un modello di utilizzo multithreading più realistico che usa le funzionalità di scalabilità orizzontale della porta di completamento I/O per distribuire il lavoro tra più thread del server. Il server usa l'attivazione a livello singolo per evitare che più thread prelevino notifiche per lo stesso socket e per consentire a ogni thread di svuotare i dati ricevuti un blocco alla volta.
 
-Illustra anche alcuni modelli comuni usati con la porta di completamento. La chiave di completamento viene usata per fornire un puntatore di contesto per socket. Il puntatore di contesto ha un'intestazione che descrive il tipo di socket usato, in modo che più tipi di socket possano essere usati su una singola porta di completamento. I commenti nell'esempio evidenziano che i completamenti arbitrari possono essere accodati (come con la [**funzione GetQueuedCompletionStatusEx),**](/windows/win32/fileio/getqueuedcompletionstatusex-func) non solo le notifiche socket. [**L'API PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) viene usata per inviare messaggi ai thread e riattivarli senza dover attendere l'arrivo di una notifica socket.
+Illustra anche alcuni modelli comuni usati con la porta di completamento. La chiave di completamento viene usata per fornire un puntatore di contesto per socket. Il puntatore di contesto ha un'intestazione che descrive il tipo di socket usato, in modo che sia possibile usare più tipi di socket su una singola porta di completamento. I commenti nell'esempio evidenziano che i completamenti arbitrari possono essere accodati (come con la [**funzione GetQueuedCompletionStatusEx),**](/windows/win32/fileio/getqueuedcompletionstatusex-func) non solo le notifiche socket. [**L'API PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) viene usata per inviare messaggi ai thread e riattivarli senza dover attendere l'arrivo di una notifica socket.
 
-Infine, l'esempio illustra alcune delle complessità della corretta annullamento della registrazione e della pulizia dei contesti socket in un carico di lavoro a thread. In questo esempio il contesto del socket è di proprietà implicita del thread che riceve la notifica. Il thread mantiene la proprietà se non riesce a registrare la notifica.
+Infine, l'esempio illustra alcune delle complessità della corretta annullamento della registrazione e della pulizia dei contesti socket in un carico di lavoro a thread. In questo esempio il contesto del socket è implicitamente di proprietà del thread che riceve la notifica. Il thread mantiene la proprietà se non riesce a registrare la notifica.
 
 ```cpp
 #define CLIENT_THREAD_COUNT         100

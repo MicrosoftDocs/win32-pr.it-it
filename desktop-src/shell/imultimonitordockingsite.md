@@ -1,5 +1,5 @@
 ---
-description: Implementato dal browser. Espone metodi che gestiscono quale monitoraggio contiene la barra delle applicazioni di Windows in un sistema a più monitor.
+description: Implementato dal browser. Espone i metodi che gestiscono quale monitoraggio contiene il Windows barra delle applicazioni in un sistema a più monitor.
 title: Interfaccia IMultiMonitorDockingSite
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: af9a7a9e-bd7c-4b17-9cb6-008df5c820d8
-ms.openlocfilehash: 5ea3461d00c16f7384d7396e2f03946d517c460f
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a5a17e8206af8f0821833f4b2ea250606de29b6fbe74b7a29ced6c5b5dc13ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458221"
 ---
 # <a name="imultimonitordockingsite-interface"></a>Interfaccia IMultiMonitorDockingSite
 
-Implementato dal browser. Espone metodi che gestiscono quale monitoraggio contiene la barra delle applicazioni di Windows in un sistema a più monitor.
+Implementato dal browser. Espone i metodi che gestiscono quale monitoraggio contiene il Windows barra delle applicazioni in un sistema a più monitor.
 
 ## <a name="members"></a>Membri
 
@@ -55,8 +55,8 @@ In genere non si implementa **l'interfaccia IMultiMonitorDockingSite.** Il brows
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/> |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                   |
 
 
 

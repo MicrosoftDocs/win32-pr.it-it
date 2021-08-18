@@ -1,11 +1,11 @@
 ---
-title: Metodo Remove IWMPPlaylistCollection
-description: Il metodo Remove rimuove una playlist dalla libreria. | Metodo Remove IWMPPlaylistCollection
+title: Metodo remove IWMPPlaylistCollection
+description: Il metodo remove rimuove una playlist dalla libreria. | Metodo remove IWMPPlaylistCollection
 ms.assetid: 40c8ee1d-13fa-40d9-9532-4dc8383c4eb3
 keywords:
-- rimuovere il metodo Windows Media Player
-- Metodo Remove Media Player Windows, interfaccia IWMPPlaylistCollection
-- Interfaccia IWMPPlaylistCollection Windows Media Player, Remove (metodo)
+- Metodo remove Windows Media Player
+- Metodo remove Windows Media Player, interfaccia IWMPPlaylistCollection
+- Interfaccia IWMPPlaylistCollection Windows Media Player , metodo remove
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c99fbaa2f60c769599bd6173b8e38f4d99e9f42d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b342251bb1885b40d8cd225612ad68b1b54c6ca74cc29a9a934b1fa603837e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745716"
 ---
-# <a name="iwmpplaylistcollectionremove-method"></a>Metodo IWMPPlaylistCollection:: Remove
+# <a name="iwmpplaylistcollectionremove-method"></a>Metodo IWMPPlaylistCollection::remove
 
-Il metodo **Remove** rimuove una playlist dalla libreria.
+Il **metodo remove** rimuove una playlist dalla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,10 +53,10 @@ Implements IWMPPlaylistCollection.remove
 
 <dl> <dt>
 
-*pItem* \[ in\]
+*pItem* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPPlaylist** per la playlist che verrà rimossa da questo metodo.
+Interfaccia **WMPLib.IWMPPlaylist** per la playlist che verrà rimosso da questo metodo.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successiva.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che include le informazioni su qualsiasi trasformazione applicata a input penna.
+description: Definisce il tipo che contiene le informazioni su qualsiasi trasformazione applicata all'input penna.
 ms.assetid: e40954d0-31f1-42fd-8ad3-ace1a72ee0a7
 title: Tipo complesso ScalarTransformType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c6ed2635955e86bc1be1c56bd775205bd9db8b3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f13ff60f20fae850f4692ff4a052428ea06a41afe8825b608df4f076dc93de40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449311"
 ---
 # <a name="scalartransformtype-complex-type"></a>Tipo complesso ScalarTransformType
 
-Definisce il tipo che include le informazioni su qualsiasi trasformazione applicata a input penna.
+Definisce il tipo che contiene le informazioni su qualsiasi trasformazione applicata all'input penna.
 
 ``` syntax
 <xs:complexType name="ScalarTransformType" />
@@ -33,7 +33,7 @@ Definisce il tipo che include le informazioni su qualsiasi trasformazione applic
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

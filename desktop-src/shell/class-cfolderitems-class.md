@@ -21,7 +21,7 @@ ms.locfileid: "118460834"
 ---
 # <a name="cfolderitems-class"></a>Classe CFolderItems
 
-**CFolderItems** è una raccolta [**di FolderItems.**](folderitems.md) Implementa le interfacce seguenti: [**IPersistFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipersistfolder), [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), [**FolderItems3**](folderitems3-object.md), [**IObjectSafety**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224(v=vs.85)), [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch).
+**CFolderItems** è una raccolta [**di FolderItems.**](folderitems.md) Implementa le interfacce seguenti: [**IPersistFolder,**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipersistfolder) [**IObjectWithSite,**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) [**FolderItems3,**](folderitems3-object.md) [**IObjectSafety,**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224(v=vs.85)) [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 
 ## <a name="remarks"></a>Commenti
 

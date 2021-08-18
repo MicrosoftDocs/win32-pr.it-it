@@ -1,19 +1,19 @@
 ---
-description: La funzione ByteToStr converte una matrice di valori di BYTE in una stringa di caratteri esadecimali.
+description: La funzione ByteToStr converte una matrice di valori BYTE in una stringa di caratteri esadecimali.
 ms.assetid: b1320e0f-fb67-4ed8-af3c-8ca7f0145468
 title: ByteToStr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f6a4284a9ac56db9e7d74d27206c98d4db1894d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e231756725a697d933699af970b164869a973aa9ddb8199467bb6a9941313625
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772966"
 ---
 # <a name="bytetostr"></a>ByteToStr
 
-La funzione **ByteToStr** converte una matrice di valori di **byte** in una stringa di caratteri esadecimali.
+La **funzione ByteToStr** converte una matrice di valori **BYTE** in una stringa di caratteri esadecimali.
 
 
 ```C++

@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. backgroundColor
-description: L'attributo backgroundColor specifica o Recupera il colore di sfondo nel controllo casella di riepilogo.
+title: LISTBOX.backgroundColor
+description: L'attributo backgroundColor specifica o recupera il colore di sfondo nel controllo casella di riepilogo.
 ms.assetid: 1ffa51cc-6d28-4b83-8127-eb2a67d98c79
 keywords:
-- Media Player di Windows LISTBOX. backgroundColor
+- LISTBOX.backgroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 961a431f91d0ed16ce34593f6bef66a13981d850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37c170ee249e325aa9893515da94683703426327f0a556283125116e8c8d1522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118946"
 ---
-# <a name="listboxbackgroundcolor"></a>LISTBOX. backgroundColor
+# <a name="listboxbackgroundcolor"></a>LISTBOX.backgroundColor
 
-L'attributo **BackgroundColor** specifica o Recupera il colore di sfondo nel controllo casella di riepilogo.
+**L'attributo backgroundColor** specifica o recupera il colore di sfondo nel controllo casella di riepilogo.
 
 ``` syntax
         elementID.backgroundColor
@@ -29,7 +29,7 @@ L'attributo **BackgroundColor** specifica o Recupera il colore di sfondo nel con
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi valore di colore di Microsoft Internet Explorer oppure il valore "None". Il valore predefinito è uguale al colore di sfondo di Windows.
+Questo attributo è una  stringa di lettura/scrittura che contiene qualsiasi valore Internet Explorer colore di Microsoft o il valore "none". Ha un valore predefinito uguale al colore Windows sfondo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,13 +45,13 @@ Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi va
 
 <dl> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. foregroundColor**](listbox-foregroundcolor.md)
+[**LISTBOX.foregroundColor**](listbox-foregroundcolor.md)
 </dt> </dl>
 
  

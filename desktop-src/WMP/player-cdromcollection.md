@@ -27,15 +27,15 @@ La proprietà cdromCollection recupera **l'oggetto CdromCollection.**
 
 ## <a name="syntax"></a>Sintassi
 
-*lettore* . **cdromCollection**
+*lettore* . **CdromCollection**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un oggetto **CdromCollection di sola** lettura.
+Questa proprietà è un oggetto **CdromCollection di** sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 

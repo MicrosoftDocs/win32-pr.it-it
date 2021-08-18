@@ -1,6 +1,6 @@
 ---
-title: IP_NEXT_HOP_ADDRESS struttura (Rtm.h)
-description: La struttura IP \_ NEXT HOP ADDRESS contiene \_ \_ l'indirizzo per il router dell'hop successivo per una route IP.
+title: IP_NEXT_HOP_ADDRESS (Rtm.h)
+description: La struttura \_ INDIRIZZO HOP SUCCESSIVO IP contiene \_ \_ l'indirizzo per il router dell'hop successivo per una route IP.
 ms.assetid: a97b3995-dfaa-4e53-be86-3ad46b8be691
 keywords:
 - IP_NEXT_HOP_ADDRESS struttura RAS
@@ -24,9 +24,9 @@ ms.locfileid: "117790965"
 ---
 # <a name="ip_next_hop_address-structure"></a>Struttura \_ IP NEXT HOP \_ \_ ADDRESS
 
-\[Questa API è stata sostituita dall'API Gestione tabelle di [routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API Gestione tabelle di routing versione 2.\]
+\[Questa API è stata sostituita dall'API di Gestione tabelle di routing versione [2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API gestione tabelle di routing versione 2.\]
 
-La **struttura IP NEXT HOP \_ \_ \_ ADDRESS** contiene l'indirizzo per il router dell'hop successivo per una route IP.
+La **struttura INDIRIZZO HOP SUCCESSIVO \_ \_ \_ IP** contiene l'indirizzo per il router dell'hop successivo per una route IP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ Specifica l'indirizzo di rete IP espresso come indirizzo IP nell'ordine dei byte
 **N \_ NetMask**
 </dt> <dd>
 
-Specifica l'network mask. Applicare questa maschera all'indirizzo IP per estrarre l'indirizzo di rete. Il network mask è in ordine di byte del computer.
+Specifica la network mask. Applicare questa maschera all'indirizzo IP per estrarre l'indirizzo di rete. Il network mask è nell'ordine dei byte del computer.
 
 </dd> </dl>
 

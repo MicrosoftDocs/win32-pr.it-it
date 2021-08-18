@@ -44,8 +44,8 @@ Restituisce il tipo di finestra di Gestione file con lo stato attivo per l'input
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | <dl> <dt>**FMFOCUS \_ DIR**</dt> </dl>    | Parte della directory di una finestra della directory.<br/> |
 | <dl> <dt>**ALBERO \_ FMFOCUS**</dt> </dl>   | Parte dell'albero di una finestra della directory.<br/>      |
-| <dl> <dt>**UNITÀ \_ FMFOCUS**</dt> </dl> | Barra delle unità di una finestra della directory.<br/>         |
-| <dl> <dt>**RICERCA \_ FMFOCUS**</dt> </dl> | Finestra Risultati ricerca.<br/>                   |
+| <dl> <dt>**UNITÀ \_ FMFOCUS**</dt> </dl> | Barra dell'unità di una finestra della directory.<br/>         |
+| <dl> <dt>**FMFOCUS \_ SEARCH**</dt> </dl> | Finestra Risultati della ricerca.<br/>                   |
 
 
 

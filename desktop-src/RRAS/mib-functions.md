@@ -1,6 +1,6 @@
 ---
-title: Funzioni MIB di gestione router
-description: Usare le funzioni di gestione router seguenti per eseguire query e impostare le variabili MIB
+title: Funzioni MIB di Gestione router
+description: Usare le funzioni di gestione router seguenti per eseguire query e impostare variabili MIB
 ms.assetid: c911daa4-4f3d-4944-9dc0-695a4efbcb1b
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117790445"
 ---
-# <a name="router-management-mib-functions"></a>Funzioni MIB di gestione router
+# <a name="router-management-mib-functions"></a>Funzioni MIB di Gestione router
 
 Usare le funzioni di gestione router seguenti per eseguire query e impostare le variabili MIB:
 

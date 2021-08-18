@@ -109,7 +109,7 @@ void Scene::RenderScene()
 }
 ```
 
-È possibile scaricare il progetto di Visual Studio completo da [Esempio di orologio Direct2D.](direct2d-clock-sample.md) Solo per essere divertente, la versione di download aggiunge un gradimento radiale alla faccia dell'orologio.
+È possibile scaricare il progetto completo Visual Studio esempio di [orologio Direct2D.](direct2d-clock-sample.md) Solo per essere divertente, la versione di download aggiunge un gradimento radiale alla faccia dell'orologio.
 
 ## <a name="combining-transforms"></a>Combinazione di trasformazioni
 

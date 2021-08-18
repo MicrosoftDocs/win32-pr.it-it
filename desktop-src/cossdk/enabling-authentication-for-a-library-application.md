@@ -1,7 +1,7 @@
 ---
-description: Abilitazione dell'autenticazione per un'applicazione libreria
+description: Abilitazione dell'autenticazione per un'applicazione di libreria
 ms.assetid: 80c80c14-ceef-4a74-810d-6aa3cc320cef
-title: Abilitazione dell'autenticazione per un'applicazione libreria
+title: Abilitazione dell'autenticazione per un'applicazione di libreria
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bceb3d5799ee8fac1d8eb266e6513c4d2a759adb10b78b2117424b08f8c5d6ce
@@ -11,15 +11,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117736420"
 ---
-# <a name="enabling-authentication-for-a-library-application"></a>Abilitazione dell'autenticazione per un'applicazione libreria
+# <a name="enabling-authentication-for-a-library-application"></a>Abilitazione dell'autenticazione per un'applicazione di libreria
 
-Poiché le applicazioni di libreria COM+ sono ospitate da altri processi, i relativi requisiti di sicurezza possono essere diversi da quelli delle applicazioni server. Se l'applicazione libreria sarà ospitata da un browser, potrebbe essere necessario ricevere callback non autenticati.
+Poiché le applicazioni della libreria COM+ sono ospitate da altri processi, i requisiti di sicurezza possono essere diversi da quelli delle applicazioni server. Se l'applicazione di libreria sarà ospitata da un browser, potrebbe essere necessario ricevere callback non autenticati.
 
-Per risolvere questa esigenza, è possibile disabilitare l'autenticazione in modo che il processo di hosting non esezioni controlli di sicurezza per i chiamanti dell'applicazione libreria. Quando si disabilita l'autenticazione, le chiamate all'applicazione libreria vengono effettivamente non autenticate. Tutte le chiamate a questa funzione avranno esito positivo. Per altre informazioni, vedere [Sicurezza delle applicazioni della libreria.](library-application-security.md)
+Per risolvere questo problema, è possibile disabilitare l'autenticazione in modo che il processo di hosting non eserviti i controlli di sicurezza per i chiamanti dell'applicazione di libreria. Quando si disabilita l'autenticazione, le chiamate all'applicazione di libreria non vengono autenticate. Tutte le chiamate all'applicazione avranno esito positivo. Per altre informazioni, vedere Sicurezza [delle applicazioni della libreria.](library-application-security.md)
 
-**Per abilitare (o disabilitare) l'autenticazione per un'applicazione libreria**
+**Per abilitare (o disabilitare) l'autenticazione per un'applicazione di libreria**
 
-1.  Fare clic con il pulsante destro del mouse sull'applicazione COM+ per cui si sta abilitando o disabilitando l'autenticazione, quindi scegliere **Proprietà**.
+1.  Fare clic con il pulsante destro del mouse sull'applicazione COM+ per cui si sta abilitando o disabilitando l'autenticazione, quindi scegliere **Proprietà.**
 
 2.  Nella finestra di dialogo delle proprietà dell'applicazione fare clic **sulla scheda** Sicurezza .
 

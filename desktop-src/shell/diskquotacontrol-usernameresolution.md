@@ -1,5 +1,5 @@
 ---
-description: Imposta o ottiene un valore che controlla il modo in cui l'ID di sicurezza utente (SID) viene risolto in nomi utente.
+description: Imposta o ottiene un valore che controlla il modo in cui l'IDENTIFICATORE di sicurezza utente (SID) viene risolto in nomi utente.
 title: DiskQuotaControl.UserNameResolution - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
@@ -22,7 +22,7 @@ ms.locfileid: "118224614"
 ---
 # <a name="diskquotacontrolusernameresolution-property"></a>DiskQuotaControl.UserNameResolution - proprietà
 
-Imposta o ottiene un valore che controlla il modo in cui l'ID di sicurezza utente (SID) viene risolto in nomi utente.
+Imposta o ottiene un valore che controlla il modo in cui l'IDENTIFICATORE di sicurezza utente (SID) viene risolto in nomi utente.
 
 Si tratta di una proprietà di lettura/scrittura.
 

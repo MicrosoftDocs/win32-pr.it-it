@@ -3,23 +3,23 @@ title: Sezione bitmap di esempio
 description: Sezione bitmap di esempio
 ms.assetid: 51b84b34-3cbb-4863-b7dc-e33e80d6ba23
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, bitmap
-- interfacce, bitmap
-- informazioni di riferimento per interfacce, bitmap
-- bitmap in interfacce, sezione bitmap
-- file di definizione dell'interfaccia, sezione bitmap
+- Windows Media Player Interfaccia per dispositivi mobili, bitmap
+- interfaccia, bitmap
+- informazioni di riferimento per le interfaccia, bitmap
+- bitmap nelle interfaccia, sezione Bitmap
+- file di definizione dell'interfaccia utente, sezione Bitmaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00b05183be7ba56ed5b00a6bfd26ee6162e008cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: de401906896abcdda4728ff0984871ef4a399d3e223b36afd9d585eb0e4fce76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833395"
 ---
 # <a name="sample-bitmap-section"></a>Sezione bitmap di esempio
 
-Le righe seguenti mostrano una tipica sezione bitmap di un file di definizione dell'interfaccia personalizzata:
+Le righe seguenti mostrano una tipica sezione Bitmaps di un file di definizione dell'interfaccia:
 
 
 ```C++
@@ -38,12 +38,12 @@ Le righe seguenti mostrano una tipica sezione bitmap di un file di definizione d
 
 
 
-Definisce cinque bitmap che vengono usate per creare un'immagine di sfondo, immagini per i pulsanti disabilitati e di cui è stato eseguito il push, un'immagine di area per i pulsanti di area e un'immagine con privilegi avanzati per trackbars.
+In questo modo vengono definite cinque bitmap usate per creare un'immagine di sfondo, immagini per i pulsanti Disabilitato e Premuto, un'immagine region per i pulsanti dell'area e un'immagine Super per i trackbar.
 
 > [!Note]  
-> L'area e le bitmap con privilegi avanzati sono deprecate nelle interfacce per Windows Media Player 10 mobile o versioni successive.
+> Le bitmap Region e Super sono deprecate nelle interfaccia per Windows Media Player 10 Mobile o versioni successive.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -52,9 +52,9 @@ Definisce cinque bitmap che vengono usate per creare un'immagine di sfondo, imma
 [**Bitmap**](bitmaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

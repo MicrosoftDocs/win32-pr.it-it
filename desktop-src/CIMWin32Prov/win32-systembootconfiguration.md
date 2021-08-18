@@ -1,5 +1,5 @@
 ---
-description: La classe WMI di associazione \_ Win32 SystemBootConfiguration mette in relazione un sistema computer e la relativa configurazione di avvio.
+description: La classe WMI di associazione SystemBootConfiguration Win32 \_ mette in relazione un computer e la relativa configurazione di avvio.
 ms.assetid: 1c6bce81-84d9-4949-92da-6111b4ecc939
 ms.tgt_platform: multiple
 title: Win32_SystemBootConfiguration classe
@@ -25,7 +25,7 @@ ms.locfileid: "118416754"
 ---
 # <a name="win32_systembootconfiguration-class"></a>Classe \_ SystemBootConfiguration Win32
 
-La classe [WMI](../wmisdk/retrieving-a-class.md) di **associazione Win32 \_ SystemBootConfiguration** mette in relazione un sistema computer e la relativa configurazione di avvio.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **di associazione \_ SystemBootConfiguration Win32** mette in relazione un computer e la relativa configurazione di avvio.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
@@ -64,7 +64,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("ComputerSystem \| Win32 \_ WMI")
 </dt> </dl>
 
-Riferimento all'istanza che rappresenta il sistema del computer usando la configurazione di avvio.
+Riferimento all'istanza di che rappresenta il computer utilizzando la configurazione di avvio.
 
 </dd> <dt>
 
@@ -77,10 +77,10 @@ Tipo di dati: **Win32 \_ BootConfiguration**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ BootConfiguration")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ BootConfiguration")
 </dt> </dl>
 
-Riferimento all'istanza che rappresenta la configurazione di avvio per il sistema del computer.
+Riferimento all'istanza di che rappresenta la configurazione di avvio per il computer.
 
 </dd> </dl>
 

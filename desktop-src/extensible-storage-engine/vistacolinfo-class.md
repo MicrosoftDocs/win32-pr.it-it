@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: classe VistaColInfo'
-title: Classe VistaColInfo (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Classe VistaColInfo'
+title: Classe VistaColInfo (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaColInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacolinfo(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5319a763c657988cb6cd58d0fc7aca7e89a65a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d2603b792d2003fb2a69e866c9752b975ca7b916e062e9e6aa1a45b2a24690c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889863"
 ---
 # <a name="vistacolinfo-class"></a>Classe VistaColInfo
 
-Livelli di informazioni sulle colonne aggiunti alla versione di vista di ESENT.
+Livelli di informazioni sulle colonne aggiunti alla versione Vista di ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. vista. VistaColInfo  
+  Microsoft.Isam.Esent.Interop.Vista.VistaColInfo  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,4 +64,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

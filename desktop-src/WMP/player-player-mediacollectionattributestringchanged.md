@@ -1,10 +1,10 @@
 ---
-title: Evento Player. MediaCollectionAttributeStringChanged
-description: L'evento MediaCollectionAttributeStringChanged si verifica quando viene modificato un valore di attributo nella libreria. | Evento Player. MediaCollectionAttributeStringChanged
+title: Evento Player.MediaCollectionAttributeStringChanged
+description: L'evento MediaCollectionAttributeStringChanged si verifica quando viene modificato un valore di attributo nella libreria. | Evento Player.MediaCollectionAttributeStringChanged
 ms.assetid: 9bc81cf2-50a9-41cf-8eff-25c9395dfdac
 keywords:
-- Media Player di Windows Event MediaCollectionAttributeStringChanged
-- Windows Event MediaCollectionAttributeStringChanged Media Player, classe Player
+- Evento MediaCollectionAttributeStringChanged Windows Media Player
+- Classe di evento MediaCollectionAttributeStringChanged Windows Media Player , Player
 - Classe Player Windows Media Player, evento MediaCollectionAttributeStringChanged
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f92eba7f0f585b9bbff7a8eb52ab13ec0d74aaa5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9435be90761abf88927789fad4380172f0ef6f31427848195d3aa14ea4112cf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747397"
 ---
-# <a name="playermediacollectionattributestringchanged-event"></a>Evento Player. MediaCollectionAttributeStringChanged
+# <a name="playermediacollectionattributestringchanged-event"></a>Evento Player.MediaCollectionAttributeStringChanged
 
-L'evento **MediaCollectionAttributeStringChanged** si verifica quando viene modificato un valore di attributo nella libreria.
+**L'evento MediaCollectionAttributeStringChanged** si verifica quando viene modificato un valore di attributo nella libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Player.MediaCollectionAttributeStringChanged(
 *bstrAttribName* 
 </dt> <dd>
 
-**Stringa** che specifica il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere la Guida di [riferimento](attribute-reference.md)agli attributi di Windows Media Player.
+**Stringa** che specifica il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di Windows Media Player [sugli attributi.](attribute-reference.md)
 
 </dd> <dt>
 
@@ -71,9 +71,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un utente modifica i metadati della libreria, l'oggetto **mediacollection** viene aggiornato e questo evento viene generato per ogni attributo modificato.
+Quando un utente modifica i metadati della libreria, **l'oggetto MediaCollection** viene aggiornato e questo evento viene generato per ogni attributo modificato.
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 
@@ -83,7 +83,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -92,13 +92,13 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediacollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

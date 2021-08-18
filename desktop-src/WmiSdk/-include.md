@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5eb3d203cff5bca7e5096082cca7ba531580ae27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b7577639bd215fc051c2f1303e74fe946341a31c4b6708f881c3c9fabae2372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557778"
 ---
-# <a name="include"></a>' #include '
-/* Titolo: MyMof. mof                           *//*   title: MyMof2. mof */
+# <a name="include"></a>'#include'
+/* Titolo: MyMof.Mof//Title: MyMof2.Mof */ 
 
-Il \# comando Includi preprocessore include il contenuto di un file MOF in un altro file MOF. Nell'esempio di codice riportato di seguito viene illustrata la sintassi per il \# comando Includi.
+Il \# comando include preprocessore include il contenuto di un file MOF in un altro file MOF. Nell'esempio di codice seguente viene descritta la sintassi per il \# comando include.
 
 ``` syntax
 #include ("Moffile.mof")
 ```
 
-Nell'esempio precedente, Moffile. MOF è il nome del file MOF da includere.
+Nell'esempio precedente Moffile.mof è il nome del file MOF da includere.
 
-Nell'esempio seguente vengono illustrati due file MOF. Quando si compila il primo file MOF, il compilatore compila automaticamente il secondo file MOF (Mymof2. MOF) nel percorso in cui si inserisce l' \# istruzione include.
+Nell'esempio seguente vengono illustrati due file MOF. Quando si compila il primo file MOF, il compilatore compila automaticamente il secondo file MOF (Mymof2.mof) nel percorso in cui si posiziona \# l'istruzione include.
 
 ``` syntax
 /*   Title: MyMof.Mof                           */
@@ -53,7 +53,7 @@ instance of myclass1
 /*   End of MyMof.Mof                           */
 ```
 
-Il file MOF seguente è incluso nell'esempio precedente:
+Nell'esempio precedente è incluso il file MOF seguente:
 
 ``` syntax
 /*   Title: MyMof2.Mof                               */
@@ -77,7 +77,7 @@ instance of myclass2
 
 <dl> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

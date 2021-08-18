@@ -1,11 +1,11 @@
 ---
-title: Struttura TSMF_SUPPORT_NODEDATA_IN
-description: Usati all'interno del TSMF \_ supportano i \_ dati \_ nella struttura per contenere informazioni sui formati multimediali supportati.
+title: TSMF_SUPPORT_NODEDATA_IN struttura
+description: Usato all'interno della struttura TSMF \_ SUPPORT DATA IN per \_ \_ contenere informazioni sui formati multimediali supportati.
 ms.assetid: 9aee9d6d-2182-44ec-ba8b-d2747d3edf71
 ms.tgt_platform: multiple
 keywords:
-- Struttura TSMF_SUPPORT_NODEDATA_IN Servizi Desktop remoto
-- Puntatore alla struttura PTSMF_SUPPORT_NODEDATA_IN Servizi Desktop remoto
+- TSMF_SUPPORT_NODEDATA_IN struttura Servizi Desktop remoto
+- PTSMF_SUPPORT_NODEDATA_IN puntatore alla struttura Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c36d18ea0e97da8df60475855c93755727fa87d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e1920ca627a7da8aef2d49a6930b03f0906cfd912e2a2a584b20d8e8382b706
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755723"
 ---
-# <a name="tsmf_support_nodedata_in-structure"></a>TSMF \_ supporta \_ NODEDATA \_ nella struttura
+# <a name="tsmf_support_nodedata_in-structure"></a>Struttura \_ \_ NODEDATA DI SUPPORTO TSMF \_
 
-Usati all'interno del [**TSMF \_ supportano i \_ dati \_ nella**](tsmf-support-data-in.md) struttura per contenere informazioni sui formati multimediali supportati.
+Usato all'interno [**della struttura TSMF \_ SUPPORT DATA \_ \_ IN**](tsmf-support-data-in.md) per contenere informazioni sui formati multimediali supportati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ typedef struct tagTSMF_SUPPORT_NODEDATA_IN {
 
 <dl> <dt>
 
-**byteCount**
+**Bytecount**
 </dt> <dd>
 
-Dimensioni in byte della struttura.
+Dimensioni della struttura in byte.
 
 </dd> <dt>
 
-**nodeId**
+**Nodeid**
 </dt> <dd>
 
 Nodo.
@@ -61,16 +61,16 @@ Nodo.
 **numMediaTypes**
 </dt> <dd>
 
-Il numero di strutture di formato multimediale.
+Numero di strutture di formato multimediale.
 
 </dd> <dt>
 
 **...**
 </dt> <dd>
 
-Numero variabile di strutture che definiscono formati di supporti audio o video. **FormatType** è **formato \_ WAVEFORMATEX** per l'audio o il **formato \_ MFVideoFormat** per il video.
+Numero variabile di strutture che definiscono formati multimediali audio o video. FormatType **è** FORMAT **\_ WaveFormatEx per** audio o **FORMAT \_ MFVideoFormat** per il video.
 
-Per informazioni dettagliate su questa struttura, [vedere \_ struttura \_ del \_ tipo di supporto di Servizi terminal](/openspecs/windows_protocols/ms-rdpev/22a57950-042e-48bd-8135-3580f3a3f934).
+Per informazioni dettagliate su questa struttura, vedere [TS \_ AM MEDIA \_ TYPE \_ Structure](/openspecs/windows_protocols/ms-rdpev/22a57950-042e-48bd-8135-3580f3a3f934).
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Per informazioni dettagliate su questa struttura, [vedere \_ struttura \_ del \_
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**TSMF \_ supporta \_ i dati \_ in**](tsmf-support-data-in.md)
+[**DATI DI SUPPORTO TSMF \_ \_ \_ IN**](tsmf-support-data-in.md)
 </dt> </dl>
 
  

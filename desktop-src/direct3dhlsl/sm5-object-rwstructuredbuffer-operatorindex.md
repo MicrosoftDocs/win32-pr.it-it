@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWStructuredBuffer:: operator'
-description: 'Restituisce una variabile di risorsa. | Funzione RWStructuredBuffer:: operator'
+title: Funzione RWStructuredBuffer::Operator
+description: Restituisce una variabile di risorsa. | Funzione RWStructuredBuffer::Operator
 ms.assetid: e821b60e-38db-463f-b0c6-47f2a4c9ccee
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e915d7862f7994d3b438bf3255ee836ede4b3d7d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ad2e8085a52a920f7fe87a2820398877167a137c14c4ebe39bacd71ae2ba0324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104530631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509320"
 ---
-# <a name="rwstructuredbufferoperator--function"></a>Funzione RWStructuredBuffer:: operator
+# <a name="rwstructuredbufferoperator--function"></a>Funzione RWStructuredBuffer::Operator
 
 Restituisce una variabile di risorsa.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -59,7 +59,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -74,7 +74,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

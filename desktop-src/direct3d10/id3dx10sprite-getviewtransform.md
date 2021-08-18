@@ -1,7 +1,7 @@
 ---
-description: Ottenere la trasformazione visualizzazione che si applica a tutti gli sprite.
+description: Ottiene la trasformazione di visualizzazione che si applica a tutti gli sprite.
 ms.assetid: eba45c08-64cc-4119-83d4-50351fe21bea
-title: 'Metodo ID3DX10Sprite:: GetViewTransform (D3DX10. h)'
+title: Metodo ID3DX10Sprite::GetViewTransform (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 699a46e48545d58058fb1f2db2955b4a4f403a53
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 664cded793fff7b37c7d1218d8d87d50cc0bc57ac290a4bba07bff0cdf169050
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736029"
 ---
-# <a name="id3dx10spritegetviewtransform-method"></a>Metodo ID3DX10Sprite:: GetViewTransform
+# <a name="id3dx10spritegetviewtransform-method"></a>Metodo ID3DX10Sprite::GetViewTransform
 
-Ottenere la trasformazione visualizzazione che si applica a tutti gli sprite.
+Ottiene la trasformazione di visualizzazione che si applica a tutti gli sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetViewTransform(
 
 <dl> <dt>
 
-*pViewTransform* \[ out\]
+*pViewTransform* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sulla trasformazione dello sprite dallo spazio globale originale.
+Puntatore a [**un oggetto D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sulla trasformazione dello sprite dallo spazio mondiale originale.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sull
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

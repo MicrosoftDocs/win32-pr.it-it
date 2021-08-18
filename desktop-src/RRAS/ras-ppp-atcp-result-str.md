@@ -1,9 +1,9 @@
 ---
-title: Struttura RAS_PPP_ATCP_RESULT (rassapi. h)
-description: La struttura dei risultati di RAS \_ PPP \_ ATCP \_ viene utilizzata per segnalare il risultato di un'operazione di proiezione del protocollo AppleTalk per una porta.
+title: RAS_PPP_ATCP_RESULT struttura (Rassapi.h)
+description: La struttura RAS PPP ATCP RESULT viene usata per segnalare il risultato di un'operazione di proiezione \_ \_ del protocollo \_ AppleTalk per una porta.
 ms.assetid: ac9df618-f79c-4066-a37e-f92e64e951dd
 keywords:
-- RAS struttura RAS_PPP_ATCP_RESULT
+- RAS_PPP_ATCP_RESULT struttura RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66f3f950af9d5bdde8feef085457a895212ad04b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faa3122026613ba5012f950a98a615dbb8c9ef34133a2a24249fca545eaa2060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789635"
 ---
-# <a name="ras_ppp_atcp_result-structure"></a>\_Struttura di \_ \_ risultati ATCP di Ras PPP
+# <a name="ras_ppp_atcp_result-structure"></a>Struttura \_ RAS PPP \_ ATCP \_ RESULT
 
-\[La struttura dei **risultati di Ras \_ PPP \_ ATCP \_** non è supportata a partire da Windows Vista.\]
+\[La **struttura \_ RAS PPP \_ ATCP \_ RESULT** non è supportata a Windows Vista.\]
 
-La struttura dei **risultati di Ras \_ PPP \_ ATCP \_** viene utilizzata per segnalare il risultato di un'operazione di proiezione del protocollo AppleTalk per una porta.
+La **struttura RAS \_ PPP \_ ATCP \_ RESULT** viene usata per segnalare il risultato di un'operazione di proiezione del protocollo AppleTalk per una porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct _RAS_PPP_ATCP_RESULT {
 **dwError**
 </dt> <dd>
 
-Specifica un valore che indica i risultati dell'operazione di proiezione AppleTalk. Il valore nessun \_ errore indica l'esito positivo, nel qual caso il membro **wszAddress** è valido. Se l'operazione di proiezione ha esito negativo, **dwError** è un codice di errore di Winerror. h o Raserror. h.
+Specifica un valore che indica i risultati dell'operazione di proiezione AppleTalk. Il valore NO \_ ERROR indica l'esito positivo, nel qual caso il membro **wszAddress** è valido. Se l'operazione di proiezione non riesce, **dwError** è un codice di errore di Winerror.h o Raserror.h.
 
 </dd> <dt>
 
 **wszAddress**
 </dt> <dd>
 
-Specifica una stringa Unicode con terminazione null che specifica l'indirizzo IP assegnato al client remoto.
+Specifica una stringa Unicode con terminazione Null che specifica l'indirizzo IP assegnato al client remoto.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Specifica una stringa Unicode con terminazione null che specifica l'indirizzo IP
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Specifica una stringa Unicode con terminazione null che specifica l'indirizzo IP
 [Strutture di amministrazione del server RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_risultato della \_ proiezione \_ PPP RAS**](ras-ppp-projection-result-str.md)
+[**RISULTATO \_ DELLA PROIEZIONE PPP \_ \_ RAS**](ras-ppp-projection-result-str.md)
 </dt> </dl>
 
  

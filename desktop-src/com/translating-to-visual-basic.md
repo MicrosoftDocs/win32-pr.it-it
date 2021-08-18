@@ -13,20 +13,20 @@ ms.locfileid: "118550615"
 ---
 # <a name="translating-to-visual-basic"></a>Traduzione in Visual Basic
 
-È possibile aggiungere un oggetto COM al progetto Visual Basic come riferimento o come componente. Dopo aver aggiunto l'oggetto al progetto, l'applicazione può accedere alle classi e alle interfacce. È quindi possibile usare il visualizzatore Visual Basic oggetti per visualizzare le informazioni sulla libreria dei tipi dell'oggetto nella Visual Basic sintassi.
+È possibile aggiungere un oggetto COM al Visual Basic progetto come riferimento o come componente. Dopo aver aggiunto l'oggetto al progetto, l'applicazione può accedere alle relative classi e interfacce. È quindi possibile usare il visualizzatore Visual Basic oggetti per visualizzare le informazioni sulla libreria dei tipi dell'oggetto Visual Basic sintassi.
 
-In genere, i controlli vengono aggiunti a un progetto mentre i componenti e i controlli non vengono aggiunti come riferimenti. Quando un oggetto COM viene aggiunto come componente, viene visualizzato nella casella degli strumenti Visual Basic com. Le nuove istanze di tale oggetto vengono create trascinando l'icona dell'oggetto dalla casella degli strumenti in un form Visual Basic o un altro tipo di contenitore. Le nuove istanze di oggetti COM aggiunti come riferimenti vengono create usando la **parola chiave new.**
+In genere, i controlli vengono aggiunti a un progetto come componenti e i controlli non vengono aggiunti come riferimenti. Quando un oggetto COM viene aggiunto come componente, viene visualizzato nella casella Visual Basic strumenti. Le nuove istanze dell'oggetto vengono create trascinando l'icona dell'oggetto dalla casella degli strumenti Visual Basic form o un altro tipo di contenitore. Le nuove istanze di oggetti COM aggiunti come riferimenti vengono create usando la **parola chiave new.**
 
 La distinzione tra l'uso di una classe come riferimento rispetto a un componente è sottile ma importante. Quando si aggiunge un oggetto come riferimento, è possibile usare solo la libreria dei tipi fornita dal controllo o la libreria dei tipi "non elaborata".
 
-Se si aggiunge un controllo come componente, Visual Basic unisce le proprietà e i metodi dell'estensione del form in cui il controllo è incorporato nella libreria dei tipi del controllo, fornendo una versione estesa di cui è stato eseguito il wrapping della libreria dei tipi. Con questa versione della libreria dei tipi, è possibile usare le proprietà extender, ad esempio Top e Left, come se fossero parte del controllo, anziché il contenitore del controllo.
+Se si aggiunge un controllo come componente, Visual Basic unisce le proprietà e i metodi di estensione del form in cui il controllo è incorporato nella libreria dei tipi del controllo, fornendo in tal modo una versione estesa e incapsulata della libreria dei tipi. Con questa versione della libreria dei tipi, è possibile usare le proprietà di estensione, ad esempio Top e Left, come se fossero parte del controllo, anziché il contenitore del controllo.
 
 Visual Basic attualmente non supporta più librerie dei tipi incorporate in un singolo .dll file. Se si esegue una DLL che incorpora più librerie dei tipi, è necessario ottenere copie autonome delle librerie dei tipi dall'origine che ha fornito l'oggetto per usare l'oggetto con Visual Basic.
 
 Per altre informazioni, vedere i seguenti argomenti:
 
--   [Traduzione in Visual Basic da C++](translating-to-visual-basic-from-c--.md)
--   [Traduzione in Visual Basic da Java](translating-to-visual-basic-from-java.md)
+-   [Conversione in Visual Basic da C++](translating-to-visual-basic-from-c--.md)
+-   [Conversione in Visual Basic da Java](translating-to-visual-basic-from-java.md)
 -   [Aggiunta di un componente a un Visual Basic Project](adding-a-component-to-a-visual-basic-project.md)
 -   [Aggiunta di un riferimento a un Visual Basic Project](adding-a-reference-to-a-visual-basic-project.md)
 -   [Visual Basic Visualizzatore oggetti](visual-basic-object-browser.md)
@@ -35,7 +35,7 @@ Per altre informazioni, vedere i seguenti argomenti:
 
 <dl> <dt>
 
-[Traduzione in C++](translating-to-c--.md)
+[Conversione in C++](translating-to-c--.md)
 </dt> <dt>
 
 [Traduzione in Java](translating-to-java.md)

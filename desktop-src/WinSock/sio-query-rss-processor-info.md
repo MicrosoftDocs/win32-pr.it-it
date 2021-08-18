@@ -119,13 +119,13 @@ Puntatore alla routine di completamento chiamata quando l'operazione è stata co
 Puntatore a una [**struttura WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) che deve essere utilizzata dal provider in una chiamata successiva a [**WPUQueueApc.**](/windows/desktop/api/Ws2spi/nf-ws2spi-wpuqueueapc)
 Il provider deve archiviare la struttura [**WSATHREADID**](/windows/desktop/api/ws2spi/ns-ws2spi-wsathreadid) a cui si fa riferimento (non il puntatore allo stesso) fino a quando non viene restituita [**la funzione WPUQueueApc.**](/windows/desktop/api/Ws2spi/nf-ws2spi-wpuqueueapc)
 
-**Nota**  Questo parametro si applica solo alla **funzione WSPIoctl.**
+**Nota:**  Questo parametro si applica solo alla **funzione WSPIoctl.**
 
 ### <a name="lperrno"></a>lpErrno
 
 Puntatore al codice di errore.
 
-**Nota**  Questo parametro si applica solo alla **funzione WSPIoctl.**
+**Nota:**  Questo parametro si applica solo alla **funzione WSPIoctl.**
 
 ## <a name="return-value"></a>Valore restituito
 

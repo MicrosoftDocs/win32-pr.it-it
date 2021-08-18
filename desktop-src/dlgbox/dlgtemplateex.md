@@ -278,7 +278,7 @@ Dopo **l'intestazione DLGTEMPLATEEX** in un modello di finestra di dialogo estes
 
 Ogni [**struttura DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) nel modello deve essere allineata su un limite **DWORD.** Se il membro **di** stile specifica lo stile **DS \_ SETFONT** o **DS \_ SHELLFONT,** la prima struttura **DLGITEMTEMPLATEEX** inizia sul primo limite **DWORD** dopo la stringa **del** carattere tipografico. Se questi stili non vengono specificati, la prima struttura inizia sul primo limite **DWORD** dopo la **stringa del** titolo.
 
-Le **matrici** menu , **windowClass**, **title** e **typeface** devono essere allineate ai limiti **di WORD.**
+Le **matrici** di menu , **windowClass**, **title** e **typeface** devono essere allineate ai limiti **di WORD.**
 
 Se si specificano stringhe di caratteri nelle **matrici menu**, **windowClass**, **title** e **typeface,** è necessario usare stringhe Unicode. Usare la [**funzione MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) per generare queste stringhe Unicode da stringhe ANSI.
 

@@ -1,9 +1,9 @@
 ---
 title: SEEKSLIDER
-description: Si tratta di un dispositivo di scorrimento predefinito con i seguenti valori predefiniti. | SEEKSLIDER
+description: Si tratta di un dispositivo di scorrimento predefinito con i valori predefiniti seguenti. | SEEKSLIDER
 ms.assetid: 9fdb0f70-e5ce-4dbc-aeba-44fa0e2c9b3c
 keywords:
-- Media Player Windows SEEKSLIDER
+- SEEKSLIDER Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 59808fa7c41acfcc28b715362b8724c7f113faee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a294eede05ec2b2f0f84e925aa299c9bcb2388ee2151385e48f2c68e6b4c1328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833340"
 ---
 # <a name="seekslider"></a>SEEKSLIDER
 
-Si tratta di un **dispositivo di scorrimento** predefinito con i seguenti valori predefiniti.
+Si tratta di un dispositivo **di scorrimento predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 toolTip="Seek"
@@ -36,7 +36,7 @@ useForegroundProgress="true"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo **dispositivo di scorrimento** che cerca il file multimediale in qualsiasi posizione. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo **dispositivo di scorrimento** , è possibile specificarle in modo esplicito.
+Verrà creato un **controllo SLIDER** che cerca il file multimediale in qualsiasi posizione. Le descrizioni comandi sono localizzate. È possibile eseguire l'override di tutte le proprietà di **questo slider** specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Viene creato un controllo **dispositivo di scorrimento** che cerca il file multi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

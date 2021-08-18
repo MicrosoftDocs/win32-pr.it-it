@@ -1,19 +1,19 @@
 ---
-description: Descrive un vettore 4D composto da un intero con segno, a 8 bit (1 byte) di lunghezza.
+description: Descrive un vettore 4D costituito da un intero con segno con lunghezza di 8 bit (1 byte).
 ms.assetid: 771479f4-0819-48e3-afae-a79ee2c502b6
 title: Estensioni XMBYTE4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46ca0b85625ebaaeb6aac58b68a76af4b8ec15f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e683eca6c9477edfe7009b615eada7727fb82b58fc671294427eca4a51fa51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501637"
 ---
 # <a name="xmbyte4-extensions"></a>Estensioni XMBYTE4
 
-Descrive un vettore 4D composto da un intero con segno, a 8 bit (1 byte) di lunghezza.
+Descrive un vettore 4D costituito da un intero con segno con lunghezza di 8 bit (1 byte).
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

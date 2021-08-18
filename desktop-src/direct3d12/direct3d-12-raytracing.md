@@ -1,26 +1,26 @@
 ---
-title: Direct3D 12 raytracing
-description: Questo articolo fornisce un elenco della documentazione disponibile per Direct3D raytracing.
+title: Direct3D 12 Raytracing
+description: Questo articolo fornisce un elenco della documentazione disponibile per il raytracing Direct3D.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45d7896153f37a776faeddd00d78fbe0c1f3a120
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2b36f4473c5bbac08246b4b61fc853c50d3699b64e92dbe74428f312c843d8ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529761"
 ---
-# <a name="direct3d-12-raytracing"></a>Direct3D 12 raytracing
+# <a name="direct3d-12-raytracing"></a>Direct3D 12 Raytracing
 
-Questo articolo fornisce un elenco della documentazione disponibile per Direct3D raytracing.
+Questo articolo fornisce un elenco della documentazione disponibile per il raytracing Direct3D.
 
-## <a name="c-raytracing-reference"></a>Riferimenti per C++ raytracing
+## <a name="c-raytracing-reference"></a>Informazioni di riferimento sul raytracing C++
 
-Questa sezione contiene collegamenti alle API C++ usate per implementare Direct3D 12 raytracing.
+Questa sezione contiene collegamenti alle API C++ usate per implementare il raytracing Direct3D 12.
 
-### <a name="c-raytracing-interfaces"></a>Interfacce C++ raytracing
+### <a name="c-raytracing-interfaces"></a>Interfacce di raytracing C++
 
 * [ID3D12Device5](/windows/desktop/api/d3d12/nn-d3d12-id3d12device5)
 * [ID3D12GraphicsCommandList4](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist4)
@@ -28,7 +28,7 @@ Questa sezione contiene collegamenti alle API C++ usate per implementare Direct3
 * [ID3D12StateObjectProperties](/windows/desktop/api/d3d12/nn-d3d12-id3d12stateobjectproperties)
 
 
-### <a name="c-raytracing-structures"></a>Strutture C++ raytracing
+### <a name="c-raytracing-structures"></a>Strutture di raytracing C++
 
 
 * [D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC](/windows/desktop/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_desc)
@@ -68,7 +68,7 @@ Questa sezione contiene collegamenti alle API C++ usate per implementare Direct3
 * [D3D12_SUBOBJECT_TO_EXPORTS_ASSOCIATION](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subobject_to_exports_association)
  
 
-### <a name="c-raytracing-enumerations"></a>Enumerazioni C++ raytracing
+### <a name="c-raytracing-enumerations"></a>Enumerazioni di raytracing C++
 
 * [D3D12_DRIVER_MATCHING_IDENTIFIER_STATUS](/windows/desktop/api/d3d12/ne-d3d12-d3d12_driver_matching_identifier_status)
 * [D3D12_ELEMENTS_LAYOUT](/windows/desktop/api/d3d12/ne-d3d12-d3d12_elements_layout)
@@ -84,18 +84,18 @@ Questa sezione contiene collegamenti alle API C++ usate per implementare Direct3
 * [D3D12_RAYTRACING_INSTANCE_FLAGS](/windows/desktop/api/d3d12/ne-d3d12-d3d12_raytracing_instance_flags)
 * [D3D12_RAYTRACING_TIER](/windows/desktop/api/d3d12/ne-d3d12-d3d12_raytracing_tier)
 
-## <a name="hlsl-raytracing-reference"></a>Informazioni di riferimento su HLSL raytracing
+## <a name="hlsl-raytracing-reference"></a>Informazioni di riferimento sul raytracing HLSL
 
-Per informazioni sui costrutti HLSL usati per implementare Direct3D 12 raytracing, vedere la Guida di [riferimento a Direct3D 12 RAYTRACING HLSL](direct3d-12-raytracing-hlsl-reference.md).
+Per informazioni sui costrutti HLSL usati per implementare il raytracing Direct3D 12, vedere Informazioni di riferimento su [Direct3D 12 Raytracing HLSL.](direct3d-12-raytracing-hlsl-reference.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento principale](direct3d-12-core-reference.md)
+[Informazioni di riferimento di base](direct3d-12-core-reference.md)
 </dt> <dt>
 
-[Guida di riferimento a Direct3D 12](direct3d-12-reference.md)
+[Informazioni di riferimento su Direct3D 12](direct3d-12-reference.md)
 </dt> </dl>
 
  

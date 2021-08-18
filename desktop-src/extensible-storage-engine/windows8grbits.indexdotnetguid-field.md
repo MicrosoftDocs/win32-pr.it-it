@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul campo Windows8Grbits.IndexDotNetGuid
+description: 'Altre informazioni su: Campo Windows8Grbits.IndexDotNetGuid'
 title: Campo Windows8Grbits.IndexDotNetGuid (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: IndexDotNetGuid field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.IndexDotNetGuid
@@ -35,7 +35,7 @@ ms.locfileid: "117889288"
 
 Se si specifica questo flag, l'ordinamento dei GUID verrà modificato .NET Framework standard.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

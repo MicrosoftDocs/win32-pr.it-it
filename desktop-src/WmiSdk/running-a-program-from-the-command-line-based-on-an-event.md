@@ -10,53 +10,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: de7f4fb5e679a6b5767635c70e2ffb5eda3ba800
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c499713b3c6496759d94229e291138b0cb07de9e9f35d116eb19b4a7aeb3829
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553970"
 ---
 # <a name="running-a-program-from-the-command-line-based-on-an-event"></a>Esecuzione di un programma dalla riga di comando in base a un evento
 
-La classe [**CommandLineEventConsumer**](commandlineeventconsumer.md) esegue un programma eseguibile specificato da una riga di comando quando si verifica un evento specificato. Questa classe è un consumer di eventi standard fornito da WMI.
+La [**classe CommandLineEventConsumer**](commandlineeventconsumer.md) esegue un programma eseguibile specificato da una riga di comando quando si verifica un evento specificato. Questa classe è un consumer di eventi standard fornito da WMI.
 
-Quando si usa [**CommandLineEventConsumer**](commandlineeventconsumer.md), è necessario proteggere il file eseguibile che si vuole avviare. Se il file eseguibile non si trova in una posizione sicura o non è protetto con un elenco di controllo di accesso (ACL) sicuro, un utente senza privilegi di accesso può sostituire l'eseguibile con un file eseguibile diverso. È possibile utilizzare le classi [**Win32 \_ LogicalFileSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting) o [**Win32 \_ LogicalShareSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalsharesecuritysetting) per modificare a livello di codice la sicurezza di un file o di una condivisione. Per ulteriori informazioni, vedere [creazione di un descrittore di sicurezza per un nuovo oggetto in C++](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+Quando si usa [**CommandLineEventConsumer**](commandlineeventconsumer.md), è necessario proteggere l'eseguibile da avviare. Se l'eseguibile non si trova in una posizione sicura o non è protetto con un elenco di controllo di accesso sicuro , un utente senza privilegi di accesso può sostituire l'eseguibile con un file eseguibile diverso. È possibile usare le [**classi \_ LogicalFileSecuritySetting Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting) o [**\_ Win32 LogicalShareSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalsharesecuritysetting) per modificare a livello di codice la sicurezza di un file o di una condivisione. Per altre informazioni, vedere [Creazione di un descrittore di sicurezza per un nuovo oggetto in C++.](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--)
 
-La procedura di base per l'uso di consumer standard è sempre la stessa e si trova nel [monitoraggio e nella risposta agli eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md). La procedura seguente aggiunge alla procedura di base, è specifica della classe [**CommandLineEventConsumer**](commandlineeventconsumer.md) e descrive come creare un consumer di eventi che esegue un programma.
+La procedura di base per usare i consumer standard è sempre la stessa e si trova in Monitoraggio e risposta [agli eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md). La procedura seguente aggiunge alla routine di base, è specifica della classe [**CommandLineEventConsumer**](commandlineeventconsumer.md) e descrive come creare un consumer di eventi che esegue un programma.
 
 > [!Caution]
 >
-> La classe [**CommandLineEventConsumer**](commandlineeventconsumer.md) presenta vincoli di sicurezza speciali. Questo consumer standard deve essere configurato da un membro locale del gruppo Administrators nel computer locale. Se si utilizza un account di dominio per creare la sottoscrizione, è necessario che l'account LocalSystem disponga delle autorizzazioni necessarie per il dominio per verificare che il creatore sia un membro del gruppo Administrators locale.
+> La [**classe CommandLineEventConsumer**](commandlineeventconsumer.md) ha vincoli di sicurezza speciali. Questo consumer standard deve essere configurato da un membro locale del gruppo Administrators nel computer locale. Se si usa un account di dominio per creare la sottoscrizione, l'account LocalSystem deve disporre delle autorizzazioni necessarie per il dominio per verificare che l'autore sia membro del gruppo Administrators locale.
 >
-> Non è possibile usare [**CommandLineEventConsumer**](commandlineeventconsumer.md) per avviare un processo che viene eseguito in modo interattivo.
+> [**CommandLineEventConsumer**](commandlineeventconsumer.md) non può essere usato per avviare un processo eseguito in modo interattivo.
 
  
 
-Nella procedura seguente viene descritto come creare un consumer di eventi che esegue un processo da una riga di comando.
+La procedura seguente descrive come creare un consumer di eventi che esegue un processo da una riga di comando.
 
 **Per creare un consumer di eventi che esegue un processo da una riga di comando**
 
-1.  Nel file Managed Object Format (MOF) creare un'istanza di [**CommandLineEventConsumer**](commandlineeventconsumer.md) per ricevere gli eventi richiesti nella query. Per ulteriori informazioni, vedere [progettazione di classi Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
-2.  Creare un'istanza di [**\_ \_ EventFilter**](--eventfilter.md) e assegnarle un nome.
-3.  Creare una query per specificare il tipo di evento. Per ulteriori informazioni, vedere [esecuzione di query con WQL](querying-with-wql.md).
-4.  Creare un'istanza di [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) per associare il filtro all'istanza di [**CommandLineEventConsumer**](commandlineeventconsumer.md).
-5.  Compilare il file MOF usando [**Mofcomp.exe**](mofcomp.md).
+1.  Nel file Managed Object Format (MOF) creare un'istanza di [**CommandLineEventConsumer**](commandlineeventconsumer.md) per ricevere gli eventi richiesta nella query. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](designing-managed-object-format--mof--classes.md)
+2.  Creare un'istanza di [**\_ \_ EventFilter**](--eventfilter.md) e assegnargli un nome.
+3.  Creare una query per specificare il tipo di evento. Per altre informazioni, vedere [Esecuzione di query con WQL.](querying-with-wql.md)
+4.  Creare [**\_ \_ un'istanza di FilterToConsumerBinding**](--filtertoconsumerbinding.md) per associare il filtro all'istanza di [**CommandLineEventConsumer**](commandlineeventconsumer.md).
+5.  Compilare il file MOF [**usando**](mofcomp.md)Mofcomp.exe.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice seguente viene creata una nuova classe denominata "MyCmdLineConsumer" per generare eventi quando viene creata un'istanza della nuova classe alla fine di un file MOF. L'esempio è nel codice MOF, ma è possibile creare le istanze a livello di programmazione usando l' [API di scripting per WMI](scripting-api-for-wmi.md) o l' [API com per WMI](com-api-for-wmi.md).
+Nell'esempio di codice seguente viene creata una nuova classe denominata "MyCmdLineConsumer" per generare eventi quando viene creata un'istanza della nuova classe alla fine di un file MOF. L'esempio è in codice MOF, ma è possibile creare le istanze a livello di codice usando [l'API scripting](scripting-api-for-wmi.md) per WMI o [l'API COM per WMI](com-api-for-wmi.md).
 
-Nella procedura seguente viene descritto come creare una nuova classe denominata MyCmdLineConsumer.
+La procedura seguente descrive come creare una nuova classe denominata MyCmdLineConsumer.
 
 **Per creare una nuova classe denominata MyCmdLineConsumer**
 
-1.  Creare il \\ \_ file ditest.bat c: cmdline con un comando che esegue un programma visibile, ad esempio "calc.exe".
-2.  Copiare il file MOF in un file di testo e salvarlo con un'estensione MOF.
-3.  In una finestra di comando compilare il file MOF usando il comando seguente: **mofcomp nomefile. mof**.
+1.  Creare il file c: cmdlinetest.bat con un comando che esegue un programma visibile, ad esempio \\ \_ "calc.exe".
+2.  Copiare il file MOF in un file di testo e salvarlo con estensione mof.
+3.  In un finestra di comando compilare il file MOF usando il comando seguente: **Mofcomp filename.mof**.
 
 > [!Note]  
-> Il programma specificato in cmdline \_test.bat deve essere eseguito.
+> Il programma specificato nella riga di comando \_test.bat deve essere eseguito.
 
  
 

@@ -429,7 +429,7 @@ Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro
 
 </dt> <dd>
 
-Il driver per il dispositivo richiede una risorsa che Windows non può gestire.
+Il driver per il dispositivo richiede una risorsa che non Windows gestire.
 
 </dd> <dt>
 
@@ -794,7 +794,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Interfaccia SMBIOS \| di tipo 21") \|
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Interfaccia di tipo SMBIOS \| 21") \|
 </dt> </dl>
 
 Tipo di interfaccia usata per il dispositivo di puntamento.
@@ -831,14 +831,14 @@ Tipo di interfaccia usata per il dispositivo di puntamento.
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**A lor** (5)
+**A infrarossi** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HP-HIL"></span><span id="hp-hil"></span>
 
-**HP-PF** (6)
+**HP-HIL** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -852,21 +852,21 @@ Tipo di interfaccia usata per il dispositivo di puntamento.
 
 <span id="ADB__Apple_Desktop_Bus_"></span><span id="adb__apple_desktop_bus_"></span><span id="ADB__APPLE_DESKTOP_BUS_"></span>
 
-**ADB (Apple Desktop Bus)** (8)
+**ADB (Bus desktop Apple)** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bus_mouse_DB-9"></span><span id="bus_mouse_db-9"></span><span id="BUS_MOUSE_DB-9"></span>
 
-**Bus mouse DB-9** (160)
+**Mouse bus DB-9** (160)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bus_mouse_micro-DIN"></span><span id="bus_mouse_micro-din"></span><span id="BUS_MOUSE_MICRO-DIN"></span>
 
-**Micro-DIN del mouse bus** (161)
+**Micro-DIN** del mouse bus (161)
 
 
 </dt> <dd></dd> <dt>
@@ -889,10 +889,10 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Functions \| SystemParametersInfo"), [**Units**](../wmisdk/standard-qualifiers.md) ("punti")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Functions \| SystemParametersInfo"), [**Units**](../wmisdk/standard-qualifiers.md) ("mickeys")
 </dt> </dl>
 
-Uno dei due valori di accelerazione. La sensibilità del dispositivo di puntamento raddoppia (passa dal primo al secondo valore) quando il dispositivo di puntamento si sposta a una distanza maggiore di questo valore soglia.
+Uno dei due valori di accelerazione. La sensibilità del dispositivo di puntamento raddoppia (passa dal primo al secondo valore) quando il dispositivo di puntamento sposta una distanza maggiore di questo valore soglia.
 
 </dd> <dt>
 
@@ -914,13 +914,13 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Altre informazioni sull'errore registrato in **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite.
+Altre informazioni sull'errore registrato in **LastErrorCode** e su eventuali azioni correttive che possono essere eseguite.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -957,7 +957,7 @@ Questa proprietà viene ereditata da [**CIM \_ PointingDevice.**](cim-pointingde
 
 <span id="Right_Handed_Operation"></span><span id="right_handed_operation"></span><span id="RIGHT_HANDED_OPERATION"></span>
 
-<span id="Right_Handed_Operation"></span><span id="right_handed_operation"></span><span id="RIGHT_HANDED_OPERATION"></span>**Operazione con la mano destra** (2)
+<span id="Right_Handed_Operation"></span><span id="right_handed_operation"></span><span id="RIGHT_HANDED_OPERATION"></span>**Operazione con mano destra** (2)
 
 
 </dt> <dd>
@@ -979,10 +979,10 @@ Left-Handed operazione
 
 </dd> <dt>
 
-**Tipo di hardware**
+**HardwareType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1000,7 +1000,7 @@ Esempio: "MICROSOFT PS2 MOUSE"
 **InfFileName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1018,7 +1018,7 @@ Esempio: "ab.inf"
 **InfSection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1082,7 +1082,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1100,7 +1100,7 @@ Esempio: "GenuineSilicon"
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1109,7 +1109,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. In caso di sottoclasse, è possibile eseguire l'override della proprietà come proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, la proprietà può essere sottoposta a override per essere una proprietà chiave.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1135,16 +1135,16 @@ Esempio: 2
 **PNPDeviceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Qualificatori: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Windows Plug and Play dispositivo del dispositivo logico.
+Windows Plug and Play identificatore di dispositivo del dispositivo logico.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -1358,7 +1358,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Functions \| SystemParametersInfo"), [**Units**](../wmisdk/standard-qualifiers.md) ("punti")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Funzioni \| SystemParametersInfo"), [**Unità**](../wmisdk/standard-qualifiers.md) ("punti")
 </dt> </dl>
 
 Uno dei due valori di soglia di accelerazione. Il sistema raddoppia la velocità di spostamento del puntatore quando il dispositivo si sposta a una distanza maggiore di questo valore. Poiché questo aumento di velocità si verifica dopo che è stato raggiunto il valore **DoubleSpeedThreshold,** l'indicatore di misura si sposta in modo efficace a una velocità quattro volte maggiore della velocità originale.

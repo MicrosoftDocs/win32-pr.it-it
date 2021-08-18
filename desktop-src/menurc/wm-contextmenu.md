@@ -23,7 +23,7 @@ ms.locfileid: "118472506"
 ---
 # <a name="wm_contextmenu-message"></a>Messaggio \_ WM CONTEXTMENU
 
-Notifica a una finestra che l'utente desidera visualizzare un menu di scelta rapida.  L'utente potrebbe aver fatto clic con il pulsante destro del mouse (con il pulsante destro del mouse) nella finestra, premuto MAIUSC+F10 o premuto il tasto applicazioni (tasto del menu di scelta rapida) disponibile in alcune tastiere.
+Notifica a una finestra che l'utente desidera visualizzare un menu di scelta rapida.  L'utente potrebbe aver fatto clic con il pulsante destro del mouse (clic con il pulsante destro del mouse) nella finestra, premuto MAIUSC+F10 o premuto il tasto applicazioni (tasto del menu di scelta rapida) disponibile in alcune tastiere.
 
 
 ```C++
@@ -39,7 +39,7 @@ Notifica a una finestra che l'utente desidera visualizzare un menu di scelta rap
 *wParam* 
 </dt> <dd>
 
-Handle della finestra in cui l'utente ha fatto clic con il pulsante destro del mouse. Può trattarsi di una finestra figlio della finestra che riceve il messaggio. Per altre informazioni sull'elaborazione di questo messaggio, vedere la sezione Osservazioni.
+Handle per la finestra in cui l'utente ha fatto clic con il pulsante destro del mouse. Può trattarsi di una finestra figlio della finestra che riceve il messaggio. Per altre informazioni sull'elaborazione di questo messaggio, vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Se una finestra non visualizza un menu di scelta rapida, deve passare questo messaggio alla [**funzione DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Se una finestra è una finestra figlio, **DefWindowProc** invia il messaggio all'elemento padre. In caso **contrario, DefWindowProc** visualizza un menu di scelta rapida predefinito se la posizione specificata si trova nella didascalia della finestra.
+Se una finestra non visualizza un menu di scelta rapida, questo messaggio deve essere passato alla [**funzione DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Se una finestra è una finestra figlio, **DefWindowProc** invia il messaggio all'elemento padre. In caso **contrario, DefWindowProc** visualizza un menu di scelta rapida predefinito se la posizione specificata si trova nella didascalia della finestra.
 
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) genera il **messaggio WM \_ CONTEXTMENU** quando elabora il messaggio [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup) o [**WM \_ NCRBUTTONUP**](/windows/desktop/inputdev/wm-ncrbuttonup) o quando l'utente preme MAIUSC+F10. Il **messaggio WM \_ CONTEXTMENU** viene generato anche quando l'utente preme e rilascia il [**tasto VK \_ APPS.**](/windows/desktop/inputdev/virtual-key-codes)
 

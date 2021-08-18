@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ccc155c04c6c25f38050bd37827eb0c2e2e0e73e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ad63096e34283ae6ea763690045072b5d2e5579ce1f459bcc7c7bc92d671e0db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118420159"
 ---
 # <a name="compressex-method-of-the-cim_datafile-class"></a>Metodo CompressEx della classe \_ CiM DataFile
 
@@ -30,7 +30,7 @@ Il **metodo CompressEx** usa la compressione NTFS per comprimere il file logico 
 
  
 
-Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,13 +68,13 @@ Se *si usa StartFileName,* *anche Recursive* deve essere impostato su true.
 *Ricorsivo* \[ Pollici\]
 </dt> <dd>
 
-Se **TRUE,** il metodo viene applicato in modo ricorsivo anche ai file e alle directory all'interno della directory specificata [**dall'istanza di CIM \_ DataFile.**](cim-datafile.md) Per le istanze di file, questo parametro viene ignorato.
+Se **TRUE,** il metodo viene applicato anche in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di CIM \_ DataFile.**](cim-datafile.md) Per le istanze di file, questo parametro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -130,7 +130,7 @@ Piattaforma non Windows.
 **13**
 </dt> <dd>
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -171,9 +171,9 @@ Parametro non valido.
 
 ## <a name="remarks"></a>Commenti
 
-Il **metodo CompressEx** in [**CIM \_ DataFile**](cim-datafile.md) viene implementato da WMI.
+Il **metodo CompressEx** in [**CIM \_ DataFile viene**](cim-datafile.md) implementato da WMI.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -202,7 +202,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 [Attività WMI: File e cartelle](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
 </dt> <dt>
 
-[**Costanti dei diritti di accesso a file e directory**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)
+[**Costanti per i diritti di accesso a file e directory**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)
 </dt> </dl>
 
  

@@ -3,16 +3,16 @@ title: Registrazione dei dati del flusso
 description: Registrazione dei dati del flusso
 ms.assetid: c902a755-afdd-4dea-bc3e-036555fdff10
 keywords:
-- Playlist Windows Media Metafile, registrazione dei dati del flusso
-- playlist, dati del flusso di registrazione
-- playlist di metafile, dati del flusso di registrazione
-- Playlist Windows Media Metafile, registrazione dati di flusso
+- Windows playlist metafile multimediali,registrazione dei dati di flusso
+- playlist, registrazione dei dati di flusso
+- playlist di metafile, registrazione dei dati del flusso
+- Windows Playlist di metafile multimediali, registrazione dei dati di flusso
 - playlist, registrazione dei dati di flusso
 - playlist di metafile, registrazione dei dati di flusso
 - registrazione dei dati del flusso
-- registrazione dati di flusso
-- Media Player di Windows, registrazione dei dati del flusso
-- Windows Media Player, registrazione dati di flusso
+- registrazione dei dati di flusso
+- Windows Media Player,registrazione dei dati del flusso
+- Windows Media Player,trasmettere la registrazione dei dati
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -20,20 +20,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f234851cabf071ed2308fb5c96df2b53b60b9d45
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0a2ae6fe4b647e8a5c19fc6f30562973b3280f37cd3af3a1b9d9093771959de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118865"
 ---
 # <a name="logging-stream-data"></a>Registrazione dei dati del flusso
 
-Le informazioni registrate possono essere acquisite e usate per determinare il comportamento del visualizzatore, ad esempio la frequenza di visualizzazione di un flusso o se un utente specifico ha visualizzato un flusso e per quanto tempo la qualità.
+Le informazioni registrate possono essere acquisite e usate per determinare il comportamento del visualizzatore, ad esempio la frequenza di visualizzazione di un flusso o se un utente specifico ha visualizzato un flusso e per quanto tempo è determinato dalla qualità.
 
-Le informazioni di registrazione vengono inviate automaticamente al server da cui ha avuto origine la playlist. È inoltre possibile inviare le informazioni di registrazione a server aggiuntivi, inclusi i server Web utilizzati esclusivamente per la registrazione. A tale scopo, usare l'elemento **LogURL** , specificando un URL valido per l'attributo **href** . È possibile includere elementi **LogURL** come elementi figlio dell'elemento **ASX** e come elementi figlio dei singoli elementi di **immissione** . Quando la playlist viene aperta per la prima volta, le informazioni di registrazione vengono inviate al server di origine e a ogni URL specificato in **LogURL** Children dell'elemento **ASX** . Quindi, quando viene raggiunta ogni voce, le informazioni di registrazione specifiche di tale voce vengono inviate a ogni URL specificato in **LogURL** Children dell'elemento **entry** .
+Le informazioni di registrazione vengono inviate automaticamente al server da cui ha avuto origine la playlist. È anche possibile inviare informazioni di registrazione ad altri server, inclusi i server Web utilizzati esclusivamente per la registrazione. A tale scopo, usare **l'elemento LOGURL,** specificando un URL valido per **l'attributo HREF.** È possibile includere **gli elementi LOGURL** come elementi figlio dell'elemento **ASX** e come elementi figlio di **singoli elementi ENTRY.** Quando la playlist viene aperta per la prima volta, le informazioni di registrazione vengono inviate al server di origine e a ogni URL specificato negli elementi figlio **LOGURL** **dell'elemento ASX.** Quando viene raggiunta ogni voce, le informazioni di registrazione specifiche di tale voce vengono quindi inviate a ogni URL specificato negli elementi figlio **LOGURL** **dell'elemento ENTRY.**
 
-Windows Media Format SDK supporta l'elemento **LogURL** tramite l'interfaccia **IWMSReaderNetworkConfig** e i metodi seguenti:
+L Windows Media Format SDK supporta **l'elemento LOGURL** tramite l'interfaccia **IWMSReaderNetworkConfig** e i metodi seguenti:
 
 
 ```XML
@@ -46,9 +46,9 @@ HRESULT ResetLoggingUrlList();
 
 
 
-Oltre alle informazioni registrate automaticamente, una playlist di metafile può registrare informazioni personalizzate mediante l'uso dell'elemento **param** . Per utilizzare l'elemento **param** in questo modo, impostare l'attributo **Name** su "log:" seguito da un nome di campo di log e da uno spazio dei nomi XML facoltativo separato dal nome del campo da altri due punti (":"). Ogni elemento dopo i due due punti viene considerato come uno spazio dei nomi, quindi il nome del campo non deve contenere i due punti.
+Oltre alle informazioni registrate automaticamente, una playlist di metafile può registrare informazioni personalizzate tramite l'uso **dell'elemento PARAM.** Per usare l'elemento **PARAM** in questo modo, impostare l'attributo **NAME** su "log:" seguito da un nome di campo del log e da uno spazio dei nomi XML facoltativo separato dal nome del campo da altri due punti (":"). Tutti gli elementi dopo i secondi due punti vengono considerati come spazio dei nomi, quindi il nome del campo non deve contenere due punti.
 
-Il campo di log specificato nell'attributo **Name** viene impostato sul valore dell'attributo **value** . Se il log non contiene ancora un campo con il nome specificato, verrà aggiunto.
+Il campo del log specificato **nell'attributo NAME** viene impostato sul valore dell'attributo **VALUE.** Se il log non contiene già un campo con il nome specificato, verrà aggiunto.
 
 **Codice di esempio**
 
@@ -79,15 +79,15 @@ Il campo di log specificato nell'attributo **Name** viene impostato sul valore d
 
 <dl> <dt>
 
-[**Playlist di metafile**](metafile-playlists.md)
+[**Playlist metafile**](metafile-playlists.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

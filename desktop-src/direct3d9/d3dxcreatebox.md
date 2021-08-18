@@ -1,7 +1,7 @@
 ---
-description: Usa un sistema di coordinate a sinistra per creare una mesh contenente una casella allineata asse.
+description: Usa un sistema di coordinate a sinistra per creare una mesh contenente una casella allineata all'asse.
 ms.assetid: 396ef0f7-65d5-46f9-9b97-e6471f2fb5fe
-title: Funzione D3DXCreateBox (D3dx9shape. h)
+title: Funzione D3DXCreateBox (D3dx9shape.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 187c389dd2d90b4457237540026a63edc4ab4f4c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 66afc489611936a122e05e8a797997d11e5073429834f8f1b534b03b02c2de4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526545"
 ---
-# <a name="d3dxcreatebox-function"></a>D3DXCreateBox (funzione)
+# <a name="d3dxcreatebox-function"></a>Funzione D3DXCreateBox
 
-Usa un sistema di coordinate a sinistra per creare una mesh contenente una casella allineata asse.
+Usa un sistema di coordinate a sinistra per creare una mesh contenente una casella allineata all'asse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ HRESULT D3DXCreateBox(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla Mesh Box creata.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla mesh box creata.
 
 </dd> <dt>
 
-*Larghezza* \[ in\]
+*Larghezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Larghezza della casella lungo l'asse x.
 
 </dd> <dt>
 
-*Altezza* \[ in\]
+*Altezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altezza della casella lungo l'asse y.
 
 </dd> <dt>
 
-*Profondità* \[ in\]
+*Profondità* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Profondità della casella lungo l'asse z.
 
 </dd> <dt>
 
-*ppMesh* \[ out\]
+*ppMesh* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Indirizzo di un puntatore alla forma di output, un'interfaccia [**ID3DXMesh**](id3dxmesh.md) .
+Indirizzo di un puntatore alla forma di output, [**un'interfaccia ID3DXMesh.**](id3dxmesh.md)
 
 </dd> <dt>
 
-*ppAdjacency* \[ out\]
+*ppAdjacency* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXBuffer**](id3dxbuffer.md) . Quando il metodo restituisce un risultato, questo parametro viene riempito con una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh. È possibile specificare **null** .
+Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer.**](id3dxbuffer.md) Quando il metodo viene restituito, questo parametro viene riempito con una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh. È possibile specificare **NULL.**
 
 </dd> </dl>
 
@@ -103,13 +103,13 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXBuffer**](id3dxbuffer.md) . Q
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-La casella creata è centrata all'origine.
+La casella creata è centrata in corrispondenza dell'origine.
 
-Questa funzione crea una mesh con l' \_ opzione di creazione gestita D3DXMESH e [D3DFVF \_ xyz \| D3DFVF \_ Normal](d3dfvf.md) Flexible Vertex Format (FVF).
+Questa funzione crea una mesh con l'opzione di creazione gestita D3DXMESH e \_ [D3DFVF \_ XYZ \| D3DFVF \_ NORMAL](d3dfvf.md) flexible vertex format (FVF).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -117,8 +117,8 @@ Questa funzione crea una mesh con l' \_ opzione di creazione gestita D3DXMESH e 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9shape. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>    |
+| Intestazione<br/>  | <dl> <dt>D3dx9shape.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>    |
 
 
 
@@ -126,7 +126,7 @@ Questa funzione crea una mesh con l' \_ opzione di creazione gestita D3DXMESH e 
 
 <dl> <dt>
 
-[Funzioni di disegno di forme](dx9-graphics-reference-d3dx-functions-shape.md)
+[Funzioni di disegno delle forme](dx9-graphics-reference-d3dx-functions-shape.md)
 </dt> </dl>
 
  

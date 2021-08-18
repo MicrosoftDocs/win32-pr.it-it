@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb77fd3ff1510f9b18fd5632e64bf499bacbc3e3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 545ed92345a1b9dfce2072e8a0917660bc36afe2c89e47cb6c0f2f1e50520bf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746320"
 ---
 # <a name="requeststate-attribute"></a>Attributo RequestState
 
-L'attributo **RequestState** è lo stato della richiesta di informazioni multimediali.
+**L'attributo RequestState** è lo stato della richiesta di informazioni multimediali.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,7 +31,7 @@ L'attributo **RequestState** è lo stato della richiesta di informazioni multime
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

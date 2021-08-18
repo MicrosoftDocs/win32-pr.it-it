@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e2d3ea263d7ad8bc50b936fd1010c352c0c01783
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85dbd46233176d65e7e7abbf0eb266c81868ceba7e67e3257bf902d1775d6a90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731154"
 ---
 # <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Funzione D3DXSphereBoundProbe (D3DX9Mesh.h)
 
@@ -83,7 +83,7 @@ Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che specifica la di
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **TRUE** se il raggio interseca il volume del rettangolo di selezione della sfera. In caso contrario, **restituisce FALSE.**
+Restituisce **TRUE** se il raggio interseca il volume del rettangolo di selezione della sfera. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 

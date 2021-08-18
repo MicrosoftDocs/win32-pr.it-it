@@ -4,12 +4,12 @@ ms.assetid: fc89dd2d-9a5d-400b-aee9-a1e4cf7d83da
 title: Supporto delle versioni dello schema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eac627d3dd711bc952d881efd393720af128e7f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 0af6b3116115a4ce302a006311e7f85afc63cd9e5c415d2135cc2d88d948f574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470113"
 ---
 # <a name="supporting-schema-versions"></a>Supporto delle versioni dello schema
 

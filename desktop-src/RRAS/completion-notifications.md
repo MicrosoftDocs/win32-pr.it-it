@@ -1,6 +1,6 @@
 ---
 title: Notifiche di completamento
-description: Il servizio di Gestione connessioni continua le notifiche di stato fino al completamento dell'operazione di connessione.
+description: Il servizio di accesso Gestione connessioni continua le notifiche di stato fino al completamento dell'operazione di connessione.
 ms.assetid: 2c3b0d03-1cb7-4fa4-a7fa-bcfe623b791f
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117791605"
 ---
 # <a name="completion-notifications"></a>Notifiche di completamento
 
-Il servizio di Gestione connessioni continua le notifiche di stato fino al completamento dell'operazione di connessione. Ciò si verifica nelle situazioni seguenti:
+Il servizio di accesso Gestione connessioni continua le notifiche di stato fino al completamento dell'operazione di connessione. Ciò si verifica nelle situazioni seguenti:
 
 -   Il gestore riceve una notifica RASCS \_ Connected o RASCS \_ Disconnected. L'applicazione client RAS può uscire senza interrompere alcuna connessione stabilita.
 -   Si verifica un errore. Il gestore riceve una notifica che indica l'errore e lo stato della connessione quando si è verificato l'errore. L'applicazione client RAS può essere chiusa.

@@ -35,7 +35,7 @@ ms.locfileid: "118452976"
 
 | Elemento padre                                                               | Elementi figlio                                                   |
 |------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md) | [Elemento property (schema della libreria)](schema-library-property.md) |
+| [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md) | [Elemento property (schema di libreria)](schema-library-property.md) |
 
 
 

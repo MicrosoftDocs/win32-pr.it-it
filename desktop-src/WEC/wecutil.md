@@ -1,6 +1,6 @@
 ---
 title: Wecutil.exe
-description: Wecutil.exe è un'utilità raccolta eventi di Windows che consente a un amministratore di creare e gestire le sottoscrizioni agli eventi da origini eventi remote che supportano il protocollo di WS-Management.
+description: Wecutil.exe è un'Windows agente di raccolta eventi che consente a un amministratore di creare e gestire sottoscrizioni a eventi inoltrati da origini eventi remote che supportano il protocollo WS-Management.
 ms.assetid: 93ce25df-f829-43b9-96f2-7f2f291d100e
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf6f74007b56cff85c28c4106fd4345c5627d4e
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 6e93e09bc4eed51448b686f0d18f00ecacaacd31d063c4905757d0185128ee64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104353981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750971"
 ---
 # <a name="wecutilexe"></a>Wecutil.exe
 
-Wecutil.exe è un'utilità raccolta eventi di Windows che consente a un amministratore di creare e gestire le sottoscrizioni agli eventi da origini eventi remote che supportano il protocollo di WS-Management. I comandi, le opzioni e i valori di opzione non fanno distinzione tra maiuscole e minuscole per questa utilità.
+Wecutil.exe è un'Windows agente di raccolta eventi che consente a un amministratore di creare e gestire sottoscrizioni a eventi inoltrati da origini eventi remote che supportano il protocollo WS-Management. Per questa utilità, per i comandi, le opzioni e i valori delle opzioni non viene fatto distinzione tra maiuscole e minuscole.
 
-Se viene visualizzato un messaggio che indica che il server RPC non è disponibile o che l'interfaccia è sconosciuta, quando si tenta di eseguire wecutil, è necessario avviare il servizio raccolta eventi Windows (wecsvc). Per avviare wecsvc, a un prompt dei comandi con privilegi elevati, digitare **net start wecsvc**.
+Se viene visualizzato il messaggio "Il server RPC non è disponibile" o "L'interfaccia è sconosciuta" quando si tenta di eseguire wecutil, è necessario avviare il servizio agente di raccolta eventi di Windows (wecsvc). Per avviare wecsvc, al prompt dei comandi con privilegi elevati digitare **net start wecsvc**.
 
 ## <a name="list-existing-subscriptions"></a>Elencare le sottoscrizioni esistenti
 
-La sintassi seguente consente di elencare le sottoscrizioni di eventi remoti esistenti.
+La sintassi seguente viene usata per elencare le sottoscrizioni di eventi remoti esistenti.
 
 ``` syntax
 wecutil { es | enum-subscription }
 ```
 
-Se si usa uno script per ottenere i nomi delle sottoscrizioni dall'output, sarà necessario ignorare i caratteri DBA UTF-8 nella prima riga dell'output. Nello script seguente viene illustrato un esempio di come è possibile ignorare i caratteri DBA.
+Se si usa uno script per ottenere i nomi delle sottoscrizioni dall'output, sarà necessario ignorare i caratteri UTF-8 BOM nella prima riga dell'output. Lo script seguente mostra un esempio di come ignorare i caratteri BOM.
 
 ``` syntax
 setlocal enabledelayedexpansion
@@ -55,7 +55,7 @@ endlocal
 
 ## <a name="get-subscription-configuration"></a>Ottenere la configurazione della sottoscrizione
 
-La sintassi seguente consente di visualizzare i dati di configurazione della sottoscrizione di eventi remoti.
+La sintassi seguente viene usata per visualizzare i dati di configurazione della sottoscrizione di eventi remoti.
 
 ``` syntax
 wecutil { gs | get-subscription } SUBSCRIPTION_ID [/f:VALUE 
@@ -66,48 +66,48 @@ wecutil { gs | get-subscription } SUBSCRIPTION_ID [/f:VALUE
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID sottoscrizione**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID SOTTOSCRIZIONE**
 </dt> <dd>
 
-Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato nell'elemento **SubscriptionId** nel file di configurazione XML utilizzato per creare la sottoscrizione.
+Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato **nell'elemento SubscriptionId** del file di configurazione XML usato per creare la sottoscrizione.
 
 </dd> <dt>
 
-<span id="_f_VALUE"></span><span id="_f_value"></span><span id="_F_VALUE"></span>**VALORE/f: ****
+<span id="_f_VALUE"></span><span id="_f_value"></span><span id="_F_VALUE"></span>**/f:*VALUE***
 </dt> <dd>
 
-Valore che specifica l'output dei dati di configurazione della sottoscrizione. Il valore può essere "XML" o "conciso" e il *valore* predefinito è "conciso". Se il *valore* è "XML", l'output viene stampato in formato "XML". Se il *valore* è "conciso", l'output viene stampato in coppie nome-valore.
+Valore che specifica l'output dei dati di configurazione della sottoscrizione. *VALUE* può essere "XML" o "Terse" e il valore predefinito è "Terse". Se *VALUE* è "XML", l'output viene stampato in formato "XML". Se *VALUE* è "Terse", l'output viene stampato in coppie nome-valore.
 
 </dd> <dt>
 
-<span id="_u_VALUE"></span><span id="_u_value"></span><span id="_U_VALUE"></span>**/u: *valore***
+<span id="_u_VALUE"></span><span id="_u_value"></span><span id="_U_VALUE"></span>**/u: *VALUE***
 </dt> <dd>
 
-Valore che specifica se l'output è in formato Unicode. Il *valore* può essere "true" o "false". Se il *valore* è "true", l'output è in formato Unicode e se *value* è "false", l'output non è in formato Unicode.
+Valore che specifica se l'output è in formato Unicode. *VALUE* può essere "true" o "false". Se *VALUE* è "true", l'output è in formato Unicode e se *VALUE* è "false", l'output non è in formato Unicode.
 
 </dd> </dl>
 
 ## <a name="get-subscription-runtime-status"></a>Ottenere lo stato di runtime della sottoscrizione
 
-La sintassi seguente consente di visualizzare lo stato di runtime della sottoscrizione.
+La sintassi seguente viene usata per visualizzare lo stato di runtime della sottoscrizione.
 
 ``` syntax
 wecutil { gr | get-subscriptionruntimestatus } SUBSCRIPTION_ID
  [EVENT_SOURCE [EVENT_SOURCE] ...]
 ```
 
-## <a name="get-status-parameters"></a>Ottieni parametri di stato
+## <a name="get-status-parameters"></a>Ottenere i parametri di stato
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID sottoscrizione**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID SOTTOSCRIZIONE**
 </dt> <dd>
 
-Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato nell'elemento **SubscriptionId** nel file di configurazione XML utilizzato per creare la sottoscrizione.
+Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato **nell'elemento SubscriptionId** del file di configurazione XML usato per creare la sottoscrizione.
 
 </dd> <dt>
 
-<span id="EVENT_SOURCE"></span><span id="event_source"></span>**\_origine evento**
+<span id="EVENT_SOURCE"></span><span id="event_source"></span>**ORIGINE \_ EVENTO**
 </dt> <dd>
 
 Valore che identifica un computer che rappresenta un'origine evento per una sottoscrizione di eventi. Questo valore può essere il nome di dominio completo per il computer, il nome NetBIOS o l'indirizzo IP.
@@ -116,7 +116,7 @@ Valore che identifica un computer che rappresenta un'origine evento per una sott
 
 ## <a name="set-subscription-configuration-information"></a>Impostare le informazioni di configurazione della sottoscrizione
 
-La sintassi seguente viene utilizzata per impostare i dati di configurazione della sottoscrizione modificando i parametri di sottoscrizione dalla riga di comando o utilizzando un file di configurazione XML.
+La sintassi seguente viene utilizzata per impostare i dati di configurazione della sottoscrizione modificando i parametri della sottoscrizione dalla riga di comando o usando un file di configurazione XML.
 
 ``` syntax
 wecutil { ss | set_subscription } SUBSCRIPTION_ID [/e:VALUE] 
@@ -134,248 +134,236 @@ wecutil {ss | set_subscription } /c:CONGIG_FILE [/cun:USERNAME]
 
 ### <a name="remarks"></a>Commenti
 
-Quando si specifica un nome utente o una password non corretta nel comando **wecutil SS** , non viene segnalato alcun errore fino a quando non si visualizza lo stato di runtime della sottoscrizione usando il comando **wecutil gr** .
+Quando si specifica un nome utente o una password non corretta nel comando **wecutil ss,** non viene segnalato alcun errore finché non si visualizza lo stato di runtime della sottoscrizione usando il **comando wecutil gr.**
 
-## <a name="set-configuration-parameters"></a>Imposta parametri di configurazione
+## <a name="set-configuration-parameters"></a>Impostare i parametri di configurazione
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID sottoscrizione**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID SOTTOSCRIZIONE**
 </dt> <dd>
 
-Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato nell'elemento **SubscriptionId** nel file di configurazione XML utilizzato per creare la sottoscrizione.
+Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato **nell'elemento SubscriptionId** del file di configurazione XML usato per creare la sottoscrizione.
 
 </dd> <dt>
 
-<span id="_c_CONGIG_FILE"></span><span id="_c_congig_file"></span><span id="_C_CONGIG_FILE"></span>**/c: *\_ file CONGIG***
+<span id="_c_CONGIG_FILE"></span><span id="_c_congig_file"></span><span id="_C_CONGIG_FILE"></span>**/c: *FILE \_ CONGIG***
 </dt> <dd>
 
-Valore che specifica il percorso del file XML che contiene le informazioni di configurazione della sottoscrizione. Il percorso può essere assoluto o relativo alla directory corrente. Questo parametro può essere utilizzato solo con i parametri facoltativi/CUS e/Cup e si escludono a vicenda con tutti gli altri parametri.
+Valore che specifica il percorso del file XML che contiene le informazioni di configurazione della sottoscrizione. Il percorso può essere assoluto o relativo alla directory corrente. Questo parametro può essere usato solo con i parametri facoltativi /cus e /cup e si escludono a vicenda con tutti gli altri parametri.
 
 </dd> <dt>
 
-<span id="_e_VALUE"></span><span id="_e_value"></span><span id="_E_VALUE"></span>**/e: *valore***
+<span id="_e_VALUE"></span><span id="_e_value"></span><span id="_E_VALUE"></span>**/e: *VALUE***
 </dt> <dd>
 
-Valore che determina se abilitare o disabilitare la sottoscrizione. Il valore può essere true o false. Il valore predefinito è true, che Abilita la sottoscrizione.
+Valore che determina se abilitare o disabilitare la sottoscrizione. VALUE può essere true o false. Il valore predefinito è true, che abilita la sottoscrizione.
 
 > [!Note]  
-> Quando si disabilita una sottoscrizione avviata dall'agente di raccolta, l'origine evento diventa inattiva invece che disabilitata. In una sottoscrizione avviata dall'agente di raccolta è possibile disabilitare un'origine evento indipendente dalla sottoscrizione.
+> Quando si disabilita una sottoscrizione avviata dall'agente di raccolta, l'origine evento diventa inattiva anziché disabilitata. In una sottoscrizione avviata dall'agente di raccolta è possibile disabilitare un'origine evento indipendentemente dalla sottoscrizione.
 
  
 
 </dd> <dt>
 
-<span id="_d_DESCRIPTION"></span><span id="_d_description"></span><span id="_D_DESCRIPTION"></span>**/d: *Descrizione***
+<span id="_d_DESCRIPTION"></span><span id="_d_description"></span><span id="_D_DESCRIPTION"></span>**/d: *DESCRIPTION***
 </dt> <dd>
 
 Valore che specifica una descrizione per la sottoscrizione di eventi.
 
 </dd> <dt>
 
-<span id="_ex_DATE_TIME"></span><span id="_ex_date_time"></span><span id="_EX_DATE_TIME"></span>**/ex: *data e \_ ora***
+<span id="_ex_DATE_TIME"></span><span id="_ex_date_time"></span><span id="_EX_DATE_TIME"></span>**/ex: *DATE \_ TIME***
 </dt> <dd>
 
-Valore che specifica l'ora di scadenza della sottoscrizione. *Data di scadenza \_ TIME* è un valore specificato nel formato di data e ora standard XML o ISO8601: "aaaa-mm-ggThh: mm: SS \[ . sss \] \[ Z \] " dove "T" è il separatore dell'ora e "Z" indica l'ora UTC. Se, ad esempio, *data e \_ ora* è "2007-01-12T01:20:00", l'ora di scadenza della sottoscrizione è il 12 gennaio 2007, 01:20.
+Valore che specifica l'ora di scadenza della sottoscrizione. *DATE \_ TIME* è un valore specificato nel formato di data/ora XML standard o ISO8601: "aaaa-MM-ggThh:mm:ss \[ .sss Z", dove "T" è il separatore dell'ora e \] \[ \] "Z" indica l'ora UTC. Ad esempio, se *DATE \_ TIME* è "2007-01-12T01:20:00", l'ora di scadenza della sottoscrizione è il 12 gennaio 2007, 01:20.
 
 </dd> <dt>
 
-<span id="_uri_URI"></span><span id="_uri_uri"></span><span id="_URI_URI"></span>**/URI: *URI***
+<span id="_uri_URI"></span><span id="_uri_uri"></span><span id="_URI_URI"></span>**/uri: *URI***
 </dt> <dd>
 
-Valore che specifica il tipo di eventi utilizzati dalla sottoscrizione. L'indirizzo del computer di origine evento insieme all'URI (Uniform Resource Identifier) identifica in modo univoco l'origine degli eventi. La stringa URI è utilizzata per tutti gli indirizzi di origine evento nella sottoscrizione.
+Valore che specifica il tipo di eventi utilizzati dalla sottoscrizione. L'indirizzo del computer di origine eventi insieme all'URI (Uniform Resource Identifier) identifica in modo univoco l'origine degli eventi. La stringa URI è utilizzata per tutti gli indirizzi di origine evento nella sottoscrizione.
 
 </dd> <dt>
 
-<span id="_cm_CONFIGURATION_MODE"></span><span id="_cm_configuration_mode"></span><span id="_CM_CONFIGURATION_MODE"></span>**/cm: *\_ modalità di configurazione***
+<span id="_cm_CONFIGURATION_MODE"></span><span id="_cm_configuration_mode"></span><span id="_CM_CONFIGURATION_MODE"></span>**/cm: *MODALITÀ DI \_ CONFIGURAZIONE***
 </dt> <dd>
 
-Valore che specifica la modalità di configurazione della sottoscrizione di eventi. *Configurazione \_ di La modalità* può essere una delle seguenti stringhe: "Normal", "Custom", "MinLatency" o "MinBandwidth". L'enumerazione della [**\_ modalità di \_ configurazione \_ della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_configuration_mode) definisce le modalità di configurazione. È possibile specificare i parametri/DM,/DMI,/Hi e/DMLT solo se la modalità di configurazione è impostata su Custom.
+Valore che specifica la modalità di configurazione della sottoscrizione di eventi. *CONFIGURAZIONE \_ MODE* può essere una delle stringhe seguenti: "Normal", "Custom", "MinLatency" o "MinBandwidth". [**L'enumerazione EC SUBSCRIPTION CONFIGURATION \_ \_ \_ MODE**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_configuration_mode) definisce le modalità di configurazione. I parametri /dm, /dmi, /hi e /dmlt possono essere specificati solo se la modalità di configurazione è impostata su Personalizzata.
 
 </dd> <dt>
 
-<span id="_q_QUERY"></span><span id="_q_query"></span><span id="_Q_QUERY"></span>**/q: *query***
+<span id="_q_QUERY"></span><span id="_q_query"></span><span id="_Q_QUERY"></span>**/q: *QUERY***
 </dt> <dd>
 
-Valore che specifica la stringa di query per la sottoscrizione. Il formato di questa stringa può essere diverso per i diversi valori URI e si applica a tutte le origini eventi nella sottoscrizione.
+Valore che specifica la stringa di query per la sottoscrizione. Il formato di questa stringa può essere diverso per valori URI diversi e si applica a tutte le origini evento nella sottoscrizione.
 
 </dd> <dt>
 
-<span id="_dia_DIALECT"></span><span id="_dia_dialect"></span><span id="_DIA_DIALECT"></span>**/dia: *dialetto***
+<span id="_dia_DIALECT"></span><span id="_dia_dialect"></span><span id="_DIA_DIALECT"></span>**/dia: *DIALECT***
 </dt> <dd>
 
 Valore che specifica il dialetto utilizzato dalla stringa di query.
 
 </dd> <dt>
 
-<span id="_cf_FORMAT"></span><span id="_cf_format"></span><span id="_CF_FORMAT"></span>**/CF: *Format***
+<span id="_cf_FORMAT"></span><span id="_cf_format"></span><span id="_CF_FORMAT"></span>**/cf: *FORMAT***
 </dt> <dd>
 
-Valore che specifica il formato degli eventi restituiti. *Format* può essere "Events" o "informazioni sulla". Quando il valore è "informazioni sulla", gli eventi vengono restituiti con le stringhe localizzate, ad esempio le stringhe di descrizione evento, associate agli eventi. Il valore predefinito di *Format* è "informazioni sulla".
+Valore che specifica il formato degli eventi restituiti. *FORMAT* può essere "Events" o "RenderedText". Quando il valore è "RenderedText", gli eventi vengono restituiti con le stringhe localizzate ,ad esempio le stringhe di descrizione degli eventi, associate agli eventi. Il valore predefinito di *FORMAT* è "RenderedText".
 
 </dd> <dt>
 
-<span id="_l_LOCALE"></span><span id="_l_locale"></span><span id="_L_LOCALE"></span>**/l: *impostazioni locali***
+<span id="_l_LOCALE"></span><span id="_l_locale"></span><span id="_L_LOCALE"></span>**/l: *LOCALE***
 </dt> <dd>
 
-Valore che specifica le impostazioni locali per il recapito delle stringhe localizzate nel formato di testo di cui è stato eseguito il rendering. Le *impostazioni locali* sono un identificatore di lingua/paese, ad esempio, "en-US". Questo parametro è valido solo quando il parametro/CF è impostato su "informazioni sulla".
+Valore che specifica le impostazioni locali per il recapito delle stringhe localizzate in formato testo sottoposto a rendering. *LOCALE* è un identificatore di impostazioni cultura di lingua/paese, ad esempio "EN-us". Questo parametro è valido solo quando il /cf parametro è impostato su "RenderedText".
 
 </dd> <dt>
 
-<span id="_ree__VALUE_"></span><span id="_ree__value_"></span><span id="_REE__VALUE_"></span>**/Ree: \[ *valore*\]**
+<span id="_ree__VALUE_"></span><span id="_ree__value_"></span><span id="_REE__VALUE_"></span>**/ree: \[ *VALUE*\]**
 </dt> <dd>
 
-Valore che specifica gli eventi da recapitare per la sottoscrizione. Il *valore* può essere true o false. Quando *value* è true, tutti gli eventi esistenti vengono letti dalle origini eventi della sottoscrizione. Quando *value* è false, vengono recapitati solo gli eventi future (in arrivo). Il valore predefinito è true se/Ree viene specificato senza un valore e il valore predefinito è false se/Ree non è specificato.
+Valore che specifica quali eventi devono essere recapitati per la sottoscrizione. *VALUE* può essere true o false. Quando *VALUE* è true, tutti gli eventi esistenti vengono letti dalle origini eventi della sottoscrizione. Quando *VALUE* è false, vengono recapitati solo gli eventi futuri (in arrivo). Il valore predefinito è true quando /ree viene specificato senza un valore e il valore predefinito è false se /ree non è specificato.
 
 </dd> <dt>
 
-<span id="_lf_FILENAME"></span><span id="_lf_filename"></span><span id="_LF_FILENAME"></span>**/LF: *nomefile***
+<span id="_lf_FILENAME"></span><span id="_lf_filename"></span><span id="_LF_FILENAME"></span>**/lf: *FILENAME***
 </dt> <dd>
 
-Valore che specifica il registro eventi locale utilizzato per archiviare gli eventi ricevuti dalla sottoscrizione dell'evento.
+Valore che specifica il registro eventi locale utilizzato per archiviare gli eventi ricevuti dalla sottoscrizione di eventi.
 
 </dd> <dt>
 
-<span id="_pn_PUBLISHER"></span><span id="_pn_publisher"></span><span id="_PN_PUBLISHER"></span>**/PN: *server di pubblicazione***
+<span id="_pn_PUBLISHER"></span><span id="_pn_publisher"></span><span id="_PN_PUBLISHER"></span>**/pn: *PUBLISHER***
 </dt> <dd>
 
-Valore che specifica il nome dell'autore di eventi (provider). Deve essere un server di pubblicazione che possiede o importa il log specificato dal parametro/LF.
+Valore che specifica il nome dell'autore (provider) dell'evento. Deve essere un server di pubblicazione proprietario o importato del log specificato dal parametro /lf.
 
 </dd> <dt>
 
-<span id="_dm_MODE"></span><span id="_dm_mode"></span><span id="_DM_MODE"></span>**/DM: *modalità***
+<span id="_dm_MODE"></span><span id="_dm_mode"></span><span id="_DM_MODE"></span>**/dm: *MODE***
 </dt> <dd>
 
-Valore che specifica la modalità di recapito della sottoscrizione. La *modalità* può essere push o pull. Questa opzione è valida solo se il parametro/cm è impostato su Custom.
+Valore che specifica la modalità di recapito della sottoscrizione. *MODE* può essere push o pull. Questa opzione è valida solo se il /cm parametro è impostato su Personalizzato.
 
 </dd> <dt>
 
-<span id="_dmi_NUMBER"></span><span id="_dmi_number"></span><span id="_DMI_NUMBER"></span>**/DMI: *numero***
+<span id="_dmi_NUMBER"></span><span id="_dmi_number"></span><span id="_DMI_NUMBER"></span>**/dmi: *NUMBER***
 </dt> <dd>
 
-Valore che specifica il numero massimo di elementi per il recapito in batch nella sottoscrizione dell'evento. Questa opzione è valida solo se il parametro/cm è impostato su Custom.
+Valore che specifica il numero massimo di elementi per il recapito in batch nella sottoscrizione di eventi. Questa opzione è valida solo se il /cm parametro è impostato su Personalizzato.
 
 </dd> <dt>
 
-<span id="_dmlt_MS"></span><span id="_dmlt_ms"></span><span id="_DMLT_MS"></span>**/DMLT: *MS***
+<span id="_dmlt_MS"></span><span id="_dmlt_ms"></span><span id="_DMLT_MS"></span>**/dmlt: *MS***
 </dt> <dd>
 
-Valore che specifica la latenza massima consentita per la distribuzione di un batch di eventi. MS è il numero di millisecondi consentiti. Questo parametro è valido solo se il parametro/cm è impostato su Custom.
+Valore che specifica la latenza massima consentita per il recapito di un batch di eventi. MS è il numero di millisecondi consentiti. Questo parametro è valido solo se il /cm parametro è impostato su Personalizzato.
 
 </dd> <dt>
 
-<span id="_hi_MS"></span><span id="_hi_ms"></span><span id="_HI_MS"></span>**/Hi: *MS***
+<span id="_hi_MS"></span><span id="_hi_ms"></span><span id="_HI_MS"></span>**/hi: *MS***
 </dt> <dd>
 
-Valore che specifica l'intervallo di heartbeat per la sottoscrizione. *MS* è il numero di millisecondi utilizzati nell'intervallo. Questo parametro è valido solo se il parametro/cm è impostato su Custom.
+Valore che specifica l'intervallo di heartbeat per la sottoscrizione. *MS* è il numero di millisecondi utilizzati nell'intervallo. Questo parametro è valido solo se il /cm parametro è impostato su Personalizzato.
 
 </dd> <dt>
 
-<span id="_tn_TRANSPORTNAME"></span><span id="_tn_transportname"></span><span id="_TN_TRANSPORTNAME"></span>**/TN: *TRANSportaname***
+<span id="_tn_TRANSPORTNAME"></span><span id="_tn_transportname"></span><span id="_TN_TRANSPORTNAME"></span>**/tn: *TRANSPORTNAME***
 </dt> <dd>
 
-Valore che specifica il nome del trasporto utilizzato per la connessione al computer di origine dell'evento remoto.
+Valore che specifica il nome del trasporto utilizzato per connettersi al computer di origine eventi remoto.
 
 </dd> <dt>
 
-<span id="_esa_EVENT_SOURCE"></span><span id="_esa_event_source"></span><span id="_ESA_EVENT_SOURCE"></span>**/ESA: *\_ origine evento***
+<span id="_esa_EVENT_SOURCE"></span><span id="_esa_event_source"></span><span id="_ESA_EVENT_SOURCE"></span>**/esa: *ORIGINE \_ EVENTO***
 </dt> <dd>
 
-Valore che specifica l'indirizzo di un computer di origine evento. *Evento \_ SOURCE* è una stringa che identifica un computer di origine evento utilizzando il nome di dominio completo per il computer, il nome NetBIOS o l'indirizzo IP. Questo parametro può essere utilizzato con i parametri/ESE,/AES,/res o/un e/up.
+Valore che specifica l'indirizzo di un computer di origine eventi. *EVENTO \_ SOURCE* è una stringa che identifica un computer di origine eventi utilizzando il nome di dominio completo per il computer, il nome NetBIOS o l'indirizzo IP. Questo parametro può essere usato con i parametri /ese, /aes, /res o /un e /up.
 
 </dd> <dt>
 
-<span id="_ese_VALUE"></span><span id="_ese_value"></span><span id="_ESE_VALUE"></span>**/ESE: *valore***
+<span id="_ese_VALUE"></span><span id="_ese_value"></span><span id="_ESE_VALUE"></span>**/ese: *VALUE***
 </dt> <dd>
 
-Valore che determina se abilitare o disabilitare un'origine evento. Il *valore* può essere true o false. Il valore predefinito è true, che Abilita l'origine evento. Questo parametro viene usato solo se viene usato il parametro/ESA.
+Valore che determina se abilitare o disabilitare un'origine evento. *VALUE* può essere true o false. Il valore predefinito è true, che abilita l'origine evento. Questo parametro viene usato solo se si usa il parametro /esa.
 
 </dd> <dt>
 
 <span id="_aes"></span><span id="_AES"></span>**/aes**
 </dt> <dd>
 
-Valore che aggiunge l'origine evento specificata dal parametro/ESA se l'origine evento non fa già parte della sottoscrizione di eventi. Se il computer specificato dal parametro/ESA fa già parte della sottoscrizione, viene visualizzato un errore. Questo parametro è consentito solo se viene usato il parametro/ESA.
+Valore che aggiunge l'origine evento specificata dal parametro /esa se l'origine evento non fa già parte della sottoscrizione di eventi. Se il computer specificato dal /esa parametro fa già parte della sottoscrizione, viene visualizzato un errore. Questo parametro è consentito solo se viene usato il parametro /esa.
 
 </dd> <dt>
 
 <span id="_res"></span><span id="_RES"></span>**/res**
 </dt> <dd>
 
-Valore che rimuove l'origine evento specificata dal parametro/ESA se l'origine evento fa già parte della sottoscrizione di eventi. Se il computer specificato dal parametro/ESA non fa parte della sottoscrizione, viene visualizzato un errore. Questo parametro è consentito solo se viene usato il parametro/ESA.
+Valore che rimuove l'origine evento specificata dal parametro /esa se l'origine evento fa già parte della sottoscrizione di eventi. Se il computer specificato dal /esa parametro non fa parte della sottoscrizione, viene visualizzato un errore. Questo parametro è consentito solo se viene usato il parametro /esa.
 
 </dd> <dt>
 
-<span id="_un_USERNAME"></span><span id="_un_username"></span><span id="_UN_USERNAME"></span>**/un: *nomeutente***
+<span id="_un_USERNAME"></span><span id="_un_username"></span><span id="_UN_USERNAME"></span>**/un: *NOME UTENTE***
 </dt> <dd>
 
-Valore che specifica il nome utente utilizzato nelle credenziali per la connessione all'origine evento specificata nel parametro/ESA. Questo parametro è consentito solo se viene usato il parametro/ESA.
+Valore che specifica il nome utente utilizzato nelle credenziali per connettersi all'origine evento specificata nel parametro /esa. Questo parametro è consentito solo se viene usato il parametro /esa.
 
 </dd> <dt>
 
-<span id="_up_PASSWORD"></span><span id="_up_password"></span><span id="_UP_PASSWORD"></span>**/up: *password***
+<span id="_up_PASSWORD"></span><span id="_up_password"></span><span id="_UP_PASSWORD"></span>**/up: *PASSWORD***
 </dt> <dd>
 
-Valore che specifica la password per il nome utente specificato nel parametro/un. Le credenziali relative al nome utente e alla password vengono usate per connettersi all'origine evento specificata nel parametro/ESA. Questo parametro è consentito solo se viene usato il parametro/un.
+Valore che specifica la password per il nome utente specificato nel parametro /un. Le credenziali del nome utente e della password vengono usate per connettersi all'origine evento specificata nel parametro /esa. Questo parametro è consentito solo se viene usato il parametro /un.
 
 </dd> <dt>
 
-<span id="_tp_TRANSPORTPORT"></span><span id="_tp_transportport"></span><span id="_TP_TRANSPORTPORT"></span>**/TP: *TRANSPORTPORT***
+<span id="_tp_TRANSPORTPORT"></span><span id="_tp_transportport"></span><span id="_TP_TRANSPORTPORT"></span>**/tp: *TRANSPORTPORT***
 </dt> <dd>
 
-Valore che specifica il numero di porta utilizzato dal trasporto quando ci si connette a un computer di origine evento remoto.
+Valore che specifica il numero di porta utilizzato dal trasporto per la connessione a un computer di origine eventi remoto.
 
 </dd> <dt>
 
-<span id="_hn_NAME"></span><span id="_hn_name"></span><span id="_HN_NAME"></span>**/HN: *nome***
+<span id="_hn_NAME"></span><span id="_hn_name"></span><span id="_HN_NAME"></span>**/hn: *NAME***
 </dt> <dd>
 
-Valore che specifica il nome DNS del computer locale. Questo nome viene utilizzato dalle origini eventi Remote per eseguire il push degli eventi e deve essere utilizzato solo per le sottoscrizioni push.
+Valore che specifica il nome DNS del computer locale. Questo nome viene usato dalle origini eventi remote per eseguire il push degli eventi e deve essere usato solo per le sottoscrizioni push.
 
 </dd> <dt>
 
-<span id="_ct_TYPE"></span><span id="_ct_type"></span><span id="_CT_TYPE"></span>**/CT: *tipo***
+<span id="_ct_TYPE"></span><span id="_ct_type"></span><span id="_CT_TYPE"></span>**/ct: *TYPE***
 </dt> <dd>
 
-Valore che specifica il tipo di credenziale utilizzato per l'accesso alle origini eventi remote. *Type* può essere "default", "Negotiate", "digest", "Basic" o "LocalMachine". Il valore predefinito è "default". Questi valori sono definiti nell'enumerazione [**del \_ \_ \_ tipo di credenziali della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_credentials_type) .
+Valore che specifica il tipo di credenziale utilizzato per accedere alle origini eventi remote. *TYPE* può essere "default", "negotiate", "digest", "basic" o "localmachine". Il valore predefinito è "default". Questi valori sono definiti [**nell'enumerazione EC SUBSCRIPTION \_ \_ CREDENTIALS \_ TYPE.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_credentials_type)
 
 </dd> <dt>
 
-<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *nomeutente***
+<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *USERNAME***
 </dt> <dd>
 
-Valore che imposta le credenziali utente condivise utilizzate per le origini eventi che non dispongono di credenziali utente personalizzate.
+Valore che imposta le credenziali utente condivise utilizzate per le origini evento che non dispongono delle proprie credenziali utente.
 
 > [!Note]  
-> Se questo parametro viene utilizzato con l'opzione/c, le impostazioni relative a nome utente e password per le singole origini eventi del file di configurazione verranno ignorate. Se si desidera utilizzare credenziali diverse per un'origine evento specifica, è possibile eseguire l'override di questo valore specificando i parametri/un e/up per un'origine evento specifica nella riga di comando di un altro comando set-Subscription.
+> Se questo parametro viene usato con l'opzione /c , le impostazioni relative a nome utente e password per le singole origini evento del file di configurazione vengono ignorate. Se si desidera utilizzare credenziali diverse per un'origine evento specifica, è possibile eseguire l'override di questo valore specificando i parametri /un e /up per un'origine evento specifica nella riga di comando di un altro comando set-subscription.
 
  
 
 </dd> <dt>
 
-<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/Cup: *password***
+<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/cup: *PASSWORD***
 </dt> <dd>
 
-Valore che imposta la password utente per le credenziali utente condivise. Quando la *password* è impostata su \* (asterisco), la password viene letta dalla console. Questa opzione è valida solo quando viene specificato il parametro/CUN.
+Valore che imposta la password utente per le credenziali utente condivise. Quando *l'opzione PASSWORD* è \* impostata su (asterisco), la password viene letta dalla console. Questa opzione è valida solo quando viene specificato il parametro /cun.
 
 </dd> <dt>
 
-<span id="_ica_THUMBPRINTS"></span><span id="_ica_thumbprints"></span><span id="_ICA_THUMBPRINTS"></span>**/ICA: *identificazione personale***
+<span id="_ica_THUMBPRINTS"></span><span id="_ica_thumbprints"></span><span id="_ICA_THUMBPRINTS"></span>**/ica: *IDENTIFICAZIONI PERSONALE***
 </dt> <dd>
 
-Valore che imposta l'elenco di stampe Thumb del certificato dell'autorità emittente, in un elenco delimitato da virgole.
-
-> [!Note]  
-> Questa opzione è specifica solo per le sottoscrizioni avviate dall'origine.
-
- 
-
-</dd> <dt>
-
-<span id="_as_ALLOWED"></span><span id="_as_allowed"></span><span id="_AS_ALLOWED"></span>**/As: *consentito***
-</dt> <dd>
-
-Valore che imposta un elenco delimitato da virgole di stringa che specifica i nomi DNS dei computer non di dominio a cui è consentito avviare le sottoscrizioni. I nomi possono essere specificati utilizzando caratteri jolly, ad esempio " \* . mydomain.com". Per impostazione predefinita, tale elenco è vuoto.
+Valore che imposta l'elenco di stampe del certificato dell'autorità di certificazione, in un elenco delimitato da virgole.
 
 > [!Note]  
 > Questa opzione è specifica solo per le sottoscrizioni avviate dall'origine.
@@ -384,10 +372,10 @@ Valore che imposta un elenco delimitato da virgole di stringa che specifica i no
 
 </dd> <dt>
 
-<span id="_ds_DENIED"></span><span id="_ds_denied"></span><span id="_DS_DENIED"></span>**/DS: *negato***
+<span id="_as_ALLOWED"></span><span id="_as_allowed"></span><span id="_AS_ALLOWED"></span>**/as: *ALLOWED***
 </dt> <dd>
 
-Valore che imposta un elenco delimitato da virgole di stringa che specifica i nomi DNS dei computer non di dominio che non sono autorizzati ad avviare le sottoscrizioni. I nomi possono essere specificati utilizzando caratteri jolly, ad esempio " \* . mydomain.com". Per impostazione predefinita, tale elenco è vuoto.
+Valore che imposta un elenco delimitato da virgole di stringhe che specificano i nomi DNS dei computer non di dominio a cui è consentito avviare sottoscrizioni. I nomi possono essere specificati usando caratteri jolly, ad esempio \* ".mydomain.com". Per impostazione predefinita, tale elenco è vuoto.
 
 > [!Note]  
 > Questa opzione è specifica solo per le sottoscrizioni avviate dall'origine.
@@ -396,10 +384,22 @@ Valore che imposta un elenco delimitato da virgole di stringa che specifica i no
 
 </dd> <dt>
 
-<span id="_adc_SDDL"></span><span id="_adc_sddl"></span><span id="_ADC_SDDL"></span>**/ADC: *SDDL***
+<span id="_ds_DENIED"></span><span id="_ds_denied"></span><span id="_DS_DENIED"></span>**/ds: *DENIED***
 </dt> <dd>
 
-Valore che imposta una stringa, in formato SDDL, che specifica quali computer del dominio sono consentiti o meno per avviare le sottoscrizioni. Il valore predefinito è consentire a tutti i computer del dominio di avviare le sottoscrizioni.
+Valore che imposta un elenco delimitato da virgole di stringhe che specificano i nomi DNS dei computer non di dominio a cui non è consentito avviare sottoscrizioni. I nomi possono essere specificati usando caratteri jolly, ad esempio \* ".mydomain.com". Per impostazione predefinita, tale elenco è vuoto.
+
+> [!Note]  
+> Questa opzione è specifica solo per le sottoscrizioni avviate dall'origine.
+
+ 
+
+</dd> <dt>
+
+<span id="_adc_SDDL"></span><span id="_adc_sddl"></span><span id="_ADC_SDDL"></span>**/adc: *SDDL***
+</dt> <dd>
+
+Valore che imposta una stringa, in formato SDDL, che specifica quali computer di dominio sono autorizzati o meno ad avviare sottoscrizioni. L'impostazione predefinita consente a tutti i computer di dominio di avviare le sottoscrizioni.
 
 > [!Note]  
 > Questa opzione è specifica solo per le sottoscrizioni avviate dall'origine.
@@ -410,7 +410,7 @@ Valore che imposta una stringa, in formato SDDL, che specifica quali computer de
 
 ## <a name="create-a-new-subscription"></a>Creare una nuova sottoscrizione
 
-La sintassi seguente consente di creare una sottoscrizione di eventi per gli eventi in un computer remoto.
+La sintassi seguente viene usata per creare una sottoscrizione di eventi per gli eventi in un computer remoto.
 
 ``` syntax
 wecutil {cs | create-subscription } CONFIGURATION_FILE [/cun:USERNAME]
@@ -419,18 +419,18 @@ wecutil {cs | create-subscription } CONFIGURATION_FILE [/cun:USERNAME]
 
 ### <a name="remarks"></a>Commenti
 
-Quando si specifica un nome utente o una password non corretta nel comando **wecutil CS** , non viene segnalato alcun errore fino a quando non si visualizza lo stato di runtime della sottoscrizione usando il comando **wecutil gr** .
+Quando viene specificato un nome utente o una password non corretta nel comando **wecutil cs,** non viene segnalato alcun errore fino a quando non si visualizza lo stato di runtime della sottoscrizione usando il **comando wecutil gr.**
 
 ## <a name="creation-parameters"></a>Parametri di creazione
 
 <dl> <dt>
 
-<span id="CONFIGURATION_FILE"></span><span id="configuration_file"></span>**FILE di configurazione \_**
+<span id="CONFIGURATION_FILE"></span><span id="configuration_file"></span>**FILE DI \_ CONFIGURAZIONE**
 </dt> <dd>
 
 Valore che specifica il percorso del file XML che contiene le informazioni di configurazione della sottoscrizione. Il percorso può essere assoluto o relativo alla directory corrente.
 
-Il codice XML seguente è un esempio di file di configurazione della sottoscrizione che crea una sottoscrizione avviata dall'agente di raccolta per l'invio di eventi dal registro eventi dell'applicazione di un computer remoto al log ForwardedEvents.
+Il codice XML seguente è un esempio di file di configurazione della sottoscrizione che crea una sottoscrizione avviata dall'agente di raccolta per inoltrare gli eventi dal registro eventi dell'applicazione di un computer remoto al log ForwardedEvents.
 
 
 ```XML
@@ -485,7 +485,7 @@ Il codice XML seguente è un esempio di file di configurazione della sottoscrizi
 
 
 
-Il codice XML seguente è un esempio di file di configurazione della sottoscrizione che consente di creare una sottoscrizione avviata dall'origine per l'invio di eventi dal registro eventi dell'applicazione di un computer remoto al log ForwardedEvents.
+Il codice XML seguente è un esempio di file di configurazione della sottoscrizione che crea una sottoscrizione avviata dall'origine per inoltrare gli eventi dal registro eventi dell'applicazione di un computer remoto al log ForwardedEvents.
 
 
 ```XML
@@ -534,34 +534,34 @@ Il codice XML seguente è un esempio di file di configurazione della sottoscrizi
 
 
 > [!Note]  
-> Quando si crea una sottoscrizione avviata dall'origine, se **AllowedSourceDomainComputers**, **AllowedSourceNonDomainComputers** / **IssuerCAList**, **AllowedSubjectList** e **DeniedSubjectList** sono tutti vuoti, viene fornito un valore predefinito per **AllowedSourceDomainComputers** -"O:NSG: NSD: (a;; GA;;;D C) (A;; GA;;; NS) ". Questa impostazione predefinita SDDL concede i membri del gruppo di dominio computer del dominio, nonché il gruppo di servizi di rete locale (per il server d'invio locale), la possibilità di generare eventi per questa sottoscrizione.
+> Quando si crea una sottoscrizione avviata dall'origine, se **AllowedSourceDomainComputers**, **AllowedSourceNonDomainComputers** IssuerCAList, AllowedSubjectList e DeniedSubjectList sono tutti vuoti, verrà fornito un valore predefinito per /  **AllowedSourceDomainComputers** - "O:NSG:NSD:(A;;  GA; ; ;D C)(A;; GA;;; NS)". Questo SDDL concede ai membri del gruppo di dominio Domain Computers, nonché al gruppo di servizi di rete locale (per il server d'inoltro locale), la possibilità di generare eventi per questa sottoscrizione.
 
  
 
 </dd> <dt>
 
-<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *nomeutente***
+<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *USERNAME***
 </dt> <dd>
 
-Valore che imposta le credenziali utente condivise utilizzate per le origini eventi che non dispongono di credenziali utente personalizzate. Questo valore si applica solo alle sottoscrizioni avviate dall'agente di raccolta.
+Valore che imposta le credenziali utente condivise utilizzate per le origini evento che non dispongono delle proprie credenziali utente. Questo valore si applica solo alle sottoscrizioni avviate dall'agente di raccolta.
 
 > [!Note]  
-> Se si specifica questo parametro, le impostazioni relative a nome utente e password per le singole origini eventi del file di configurazione verranno ignorate. Se si desidera utilizzare credenziali diverse per un'origine evento specifica, è possibile eseguire l'override di questo valore specificando i parametri/un e/up per un'origine evento specifica nella riga di comando di un altro comando set-Subscription.
+> Se questo parametro viene specificato, le impostazioni relative a nome utente e password per le singole origini evento del file di configurazione vengono ignorate. Se si desidera utilizzare credenziali diverse per un'origine evento specifica, è possibile eseguire l'override di questo valore specificando i parametri /un e /up per un'origine evento specifica nella riga di comando di un altro comando set-subscription.
 
  
 
 </dd> <dt>
 
-<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/Cup: *password***
+<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/cup: *PASSWORD***
 </dt> <dd>
 
-Valore che imposta la password utente per le credenziali utente condivise. Quando la *password* è impostata su " \* " (asterisco), la password viene letta dalla console. Questa opzione è valida solo quando viene specificato il parametro/CUN.
+Valore che imposta la password utente per le credenziali utente condivise. Quando *PASSWORD* è impostato su " \* " (asterisco), la password viene letta dalla console. Questa opzione è valida solo quando viene specificato il parametro /cun.
 
 </dd> </dl>
 
 ## <a name="delete-a-subscription"></a>Eliminare una sottoscrizione
 
-La sintassi seguente consente di eliminare una sottoscrizione di eventi.
+La sintassi seguente viene usata per eliminare una sottoscrizione di eventi.
 
 ``` syntax
 wecutil { ds | delete-subscription } SUBSCRIPTION_ID
@@ -571,16 +571,16 @@ wecutil { ds | delete-subscription } SUBSCRIPTION_ID
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID sottoscrizione**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID SOTTOSCRIZIONE**
 </dt> <dd>
 
-Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato nell'elemento **SubscriptionId** nel file di configurazione XML utilizzato per creare la sottoscrizione. La sottoscrizione identificata in questo parametro verrà eliminata.
+Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato **nell'elemento SubscriptionId** del file di configurazione XML usato per creare la sottoscrizione. La sottoscrizione identificata in questo parametro verrà eliminata.
 
 </dd> </dl>
 
 ## <a name="retry-a-subscription"></a>Ritentare una sottoscrizione
 
-La sintassi seguente consente di ritentare una sottoscrizione inattiva tentando di riattivare tutte o origini eventi specificate stabilendo una connessione a ogni origine evento e inviando una richiesta di sottoscrizione remota all'origine evento. Le origini evento disabilitate non vengono ritentate.
+La sintassi seguente viene usata per ritentare una sottoscrizione inattiva provando a riattivare tutte le origini eventi o specificate stabilendo una connessione a ogni origine evento e inviando una richiesta di sottoscrizione remota all'origine evento. Le origini evento disabilitate non vengono ritentate.
 
 ``` syntax
 wecutil { rs | retry-subscription } SUBSCRIPTION_ID 
@@ -591,28 +591,28 @@ wecutil { rs | retry-subscription } SUBSCRIPTION_ID
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID sottoscrizione**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**\_ID SOTTOSCRIZIONE**
 </dt> <dd>
 
-Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato nell'elemento **SubscriptionId** nel file di configurazione XML utilizzato per creare la sottoscrizione. Verrà eseguito un nuovo tentativo di sottoscrizione identificata in questo parametro.
+Stringa che identifica in modo univoco una sottoscrizione. Questo identificatore viene specificato **nell'elemento SubscriptionId** del file di configurazione XML usato per creare la sottoscrizione. La sottoscrizione identificata in questo parametro verrà ritentata.
 
 </dd> <dt>
 
-<span id="EVENT_SOURCE"></span><span id="event_source"></span>**\_origine evento**
+<span id="EVENT_SOURCE"></span><span id="event_source"></span>**ORIGINE \_ EVENTO**
 </dt> <dd>
 
 Valore che identifica un computer che rappresenta un'origine evento per una sottoscrizione di eventi. Questo valore può essere il nome di dominio completo per il computer, il nome NetBIOS o l'indirizzo IP.
 
 </dd> </dl>
 
-## <a name="configure-the-windows-event-collector-service"></a>Configurare il servizio raccolta eventi di Windows
+## <a name="configure-the-windows-event-collector-service"></a>Configurare il servizio Windows agente di raccolta eventi
 
-La sintassi seguente viene utilizzata per configurare il servizio raccolta eventi di Windows per garantire che le sottoscrizioni di eventi possano essere create e sostenute attraverso il riavvio del computer. Sono incluse le procedure seguenti:
+La sintassi seguente viene usata per configurare il Windows agente di raccolta eventi per garantire che le sottoscrizioni di eventi possano essere create e sostenute tramite riavvii del computer. È inclusa la procedura seguente:
 
-**Per configurare il servizio raccolta eventi di Windows**
+**Per configurare il Windows agente di raccolta eventi**
 
 1.  Attivare il canale ForwardedEvents se è disabilitato.
-2.  Ritardare l'avvio del servizio raccolta eventi di Windows.
+2.  Ritardare l'avvio del Windows agente di raccolta eventi.
 3.  Se non è in esecuzione, avviare il servizio Raccolta eventi Windows.
 
 ``` syntax
@@ -623,10 +623,10 @@ wecutil { qc | quick-config } /q:VALUE
 
 <dl> <dt>
 
-<span id="_q_VALUE"></span><span id="_q_value"></span><span id="_Q_VALUE"></span>**/q: *valore***
+<span id="_q_VALUE"></span><span id="_q_value"></span><span id="_Q_VALUE"></span>**/q: *VALUE***
 </dt> <dd>
 
-Valore che determina se il comando di configurazione rapida richiederà una conferma. Il valore può essere true o false. Se il valore è true, il comando richiederà una conferma. Il valore predefinito è false.
+Valore che determina se il comando quick-config richiederà la conferma. VALUE può essere true o false. Se VALUE è true, il comando richiederà la conferma. Il valore predefinito è false.
 
 </dd> </dl>
 

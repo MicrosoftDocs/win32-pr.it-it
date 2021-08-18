@@ -1,5 +1,5 @@
 ---
-description: Indica la velocità dei dati in \# &0034;bit al secondo&\# 0034; per il flusso video. &\#0034;DataRate&\# 0034;.
+description: Indica la velocità dei dati in &\# 0034;bit al secondo&\# 0034; per il flusso video. &\#0034;DataRate&\# 0034;.
 ms.assetid: 2465dd92-6ab4-4a1f-abd4-1d2abca6f9ce
 title: System.Video.EncodingBitrate
 ms.topic: article
@@ -54,7 +54,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -84,7 +84,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

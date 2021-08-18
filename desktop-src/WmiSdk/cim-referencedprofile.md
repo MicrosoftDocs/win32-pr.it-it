@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118556813"
 ---
-# <a name="cim_referencedprofile-class"></a>Classe CIM \_ ReferencedProfile
+# <a name="cim_referencedprofile-class"></a>Classe \_ ReferencedProfile CIM
 
 Usato per associare [**un'istanza di CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a un'istanza di **CIM \_ RegisteredProfile** di un altro profilo che fa riferimento al profilo dipendente come profilo correlato.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -66,7 +66,7 @@ Tipo di dati: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=v
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica [**l'istanza CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a cui fa riferimento il **profilo** dipendente.
+Specifica [**l'istanza CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a cui fa riferimento il **profilo Dipendente.**
 
 </dd> <dt>
 
@@ -85,9 +85,9 @@ Specifica [**un'istanza CIM \_ RegisteredProfile**](/previous-versions//ee309375
 
 ## <a name="remarks"></a>Commenti
 
-L'uso delle proprietà **Dependent** e **Antecedent** nell'associazione **CIM \_ ReferencedProfile** viene definito in modo che il profilo a cui si fa riferimento sia l'attività precedente e che il profilo che fa riferimento sia il dipendente.
+L'uso delle proprietà **Dependent** e **Antecedent** nell'associazione **CIM \_ ReferencedProfile** è definito in modo che il profilo a cui viene fatto riferimento sia l'antecedente e che il profilo che effettua il riferimento sia il dipendente.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

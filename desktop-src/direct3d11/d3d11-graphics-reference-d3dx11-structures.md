@@ -46,7 +46,7 @@ Questa sezione contiene informazioni sulle strutture D3DX 11.
 [!Note]<br />
 La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 </blockquote>
-<br/> Facoltativamente, fornire informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. Un valore di D3DX11_DEFAULT per uno di questi parametri farà sì che D3DX usi automaticamente il valore del file di origine.<br/></td>
+<br/> Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11_DEFAULT per uno di questi parametri farà sì che D3DX usi automaticamente il valore del file di origine.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="d3dx11-image-load-info.md"><strong>D3DX11_IMAGE_LOAD_INFO</strong></a><br/></td>
@@ -54,7 +54,7 @@ La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Window
 [!Note]<br />
 La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 </blockquote>
-<br/> Facoltativamente, fornire informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. Un valore di D3DX11_DEFAULT per uno di questi parametri farà sì che D3DX usi automaticamente il valore del file di origine.<br/></td>
+<br/> Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11_DEFAULT per uno di questi parametri farà sì che D3DX usi automaticamente il valore del file di origine.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="d3dx11-texture-load-info.md"><strong>D3DX11_TEXTURE_LOAD_INFO</strong></a><br/></td>

@@ -37,7 +37,7 @@ Certificates._NewEnum As IUnknown
 
 ## <a name="property-value"></a>Valore proprietà
 
-Interfaccia [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere utilizzata per enumerare la raccolta.
+Interfaccia [**IEnumVARIANT su**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un oggetto che può essere utilizzata per enumerare la raccolta.
 
 ## <a name="remarks"></a>Commenti
 

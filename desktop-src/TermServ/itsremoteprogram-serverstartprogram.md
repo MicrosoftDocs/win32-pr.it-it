@@ -4,7 +4,7 @@ description: Specifica un programma RemoteApp da avviare nella sessione remota.
 ms.assetid: 5fb251bf-4832-4e35-b372-23418c280350
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo ServerStartProgram
+- Metodo ServerStartProgram Servizi Desktop remoto
 - Metodo ServerStartProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram
 - Interfaccia ITSRemoteProgram Servizi Desktop remoto, metodo ServerStartProgram
 - Metodo ServerStartProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram2
@@ -23,16 +23,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f18917eeb2eb3c60c1a35683b20f7e4604eddde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c789a9963086128e93546415247cfb3db69afe59c67a445b851ee5cf3687d16c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756857"
 ---
-# <a name="itsremoteprogramserverstartprogram-method"></a>Metodo ITSRemoteProgram:: ServerStartProgram
+# <a name="itsremoteprogramserverstartprogram-method"></a>Metodo ITSRemoteProgram::ServerStartProgram
 
-Specifica un programma RemoteApp da avviare nella sessione remota. Questa funzione deve essere richiamata in una sessione connessa (dopo che la notifica connessa alla sessione viene ricevuta dal client). Un numero qualsiasi di programmi RemoteApp può essere avviato in una sessione. Si verifica il timeout di una sessione RemoteApp se nessun programma RemoteApp viene avviato nella sessione entro il limite di timeout, che è di due minuti per Windows Server 2008.
+Specifica un programma RemoteApp da avviare nella sessione remota. Questa funzione deve essere richiamata in una sessione connessa (dopo la ricezione della notifica di connessione della sessione nel client). Un numero qualsiasi di programmi RemoteApp può essere avviato in una sessione. Si verifica il timeout di una sessione di RemoteApp se non viene avviato alcun programma RemoteApp nella sessione entro il limite di timeout, ovvero due minuti per Windows Server 2008.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,51 +54,51 @@ HRESULT ServerStartProgram(
 
 <dl> <dt>
 
-*bstrExecutablePath* \[ in\]
+*bstrExecutablePath* \[ Pollici\]
 </dt> <dd>
 
 Percorso del file eseguibile del programma RemoteApp nel server.
 
 </dd> <dt>
 
-*bstrFilePath* \[ in\]
+*bstrFilePath* \[ Pollici\]
 </dt> <dd>
 
-Percorso di un file da aprire sul server tramite un'associazione di file, ad esempio "C: \\ \\ documents \\ \\MyReport.docx". Se si specifica *bstrFilePath*, non è necessario specificare il parametro *bstrExecutablePath* e viceversa. È necessario specificare solo uno dei parametri.
+Percorso di un file da aprire nel server tramite un'associazione di file, ad esempio "C: \\ \\ Documents \\ \\MyReport.docx". Se si specifica *bstrFilePath*, non è necessario specificare il *parametro bstrExecutablePath* e viceversa. È necessario specificare solo uno dei parametri.
 
 </dd> <dt>
 
-*bstrWorkingDirectory* \[ in\]
+*bstrWorkingDirectory* \[ Pollici\]
 </dt> <dd>
 
-Directory di lavoro sul server per il programma RemoteApp.
+Directory di lavoro nel server per il programma RemoteApp.
 
 </dd> <dt>
 
-*vbExpandEnvVarInWorkingDirectoryOnServer* \[ in\]
+*vbExpandEnvVarInWorkingDirectoryOnServer* \[ Pollici\]
 </dt> <dd>
 
-Indica se il server deve espandere le variabili di ambiente nel percorso della directory di lavoro. Impostare questo parametro su **Variant \_ true** se il percorso della directory di lavoro contiene le variabili di ambiente oppure **Variant \_ false** se il percorso della directory di lavoro non contiene variabili di ambiente.
+Indica se il server deve espandere le variabili di ambiente nel percorso della directory di lavoro. Impostare questo parametro su **VARIANT \_ TRUE se** il percorso della directory di lavoro contiene variabili di ambiente oppure su VARIANT **\_ FALSE** se il percorso della directory di lavoro non contiene variabili di ambiente.
 
 </dd> <dt>
 
-*bstrArguments* \[ in\]
+*bstrArguments* \[ Pollici\]
 </dt> <dd>
 
-Argomenti della riga di comando per il programma RemoteApp specificati in *bstrExecutablePath*. Impostare su **null** se *bstrExecutablePath* non è specificato.
+Argomenti della riga di comando per il programma RemoteApp specificati in *bstrExecutablePath*. Impostare questa proprietà **su NULL** se *bstrExecutablePath* non è specificato.
 
 </dd> <dt>
 
-*vbExpandEnvVarInArgumentsOnServer* \[ in\]
+*vbExpandEnvVarInArgumentsOnServer* \[ Pollici\]
 </dt> <dd>
 
-Indica se il server deve espandere le variabili di ambiente negli argomenti della riga di comando. Impostare questo parametro su **Variant \_ true** se gli argomenti contengono variabili di ambiente o **Variant \_ false** se gli argomenti non contengono variabili di ambiente.
+Indica se il server deve espandere le variabili di ambiente negli argomenti della riga di comando. Impostare questo parametro su **VARIANT \_ TRUE se** gli argomenti contengono variabili di ambiente oppure SU VARIANT **\_ FALSE** se gli argomenti non contengono variabili di ambiente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,7 +110,7 @@ Restituisce **\_ OK** se ha esito positivo.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ITSRemoteProgram è definito come FDD029F9-467a-4c49-8529-64B521DBD1B4<br/>    |
+| IID<br/>                      | IID \_ ITSRemoteProgram è definito come FDD029F9-467A-4c49-8529-64B521DBD1B4<br/>    |
 
 
 

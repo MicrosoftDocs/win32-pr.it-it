@@ -1,14 +1,14 @@
 ---
-title: ItsRemoteProgram2 RemoteApplicationName - proprietà
+title: ITSRemoteProgram2 RemoteApplicationName - proprietà
 description: Nome di RemoteApp.
 ms.assetid: e6bde351-dd4c-4b14-bb11-f155c526aced
 ms.tgt_platform: multiple
 keywords:
 - Proprietà RemoteApplicationName Servizi Desktop remoto
-- Proprietà RemoteApplicationName Servizi Desktop remoto , interfaccia ITSRemoteProgram2
+- Proprietà RemoteApplicationName Servizi Desktop remoto, interfaccia ITSRemoteProgram2
 - Interfaccia ITSRemoteProgram2 Servizi Desktop remoto proprietà RemoteApplicationName
 - Proprietà RemoteApplicationName Servizi Desktop remoto, interfaccia ITSRemoteProgram3
-- ItsRemoteProgram3 interface Servizi Desktop remoto , RemoteApplicationName property
+- Interfaccia ITSRemoteProgram3 Servizi Desktop remoto proprietà RemoteApplicationName
 topic_type:
 - apiref
 api_name:

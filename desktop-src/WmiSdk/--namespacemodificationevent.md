@@ -66,7 +66,7 @@ Tipo di dati: **\_ \_ Spazio dei nomi**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Copia della versione originale di un'istanza [**\_ \_ dello spazio dei**](--namespace.md) nomi. La **proprietà Name** di questa istanza identifica lo spazio dei nomi modificato.
+Copia della versione originale di un'istanza dello [**\_ \_ spazio dei**](--namespace.md) nomi. La **proprietà Name** di questa istanza identifica lo spazio dei nomi modificato.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Tipo di accesso: sola lettura
 Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere un evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
 > [!Note]  
-> Un **elenco di** controllo di accesso (ACL) NULL nel [**DESCRITTOre DI SICUREZZA \_**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede sempre l'accesso illimitato a tutti gli utenti. Per altre informazioni, vedere [Creazione di un descrittore di sicurezza per un nuovo oggetto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+> Un **elenco di** controllo di accesso (ACL) NULL in SECURITY [**\_ DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede sempre l'accesso illimitato a tutti gli utenti. Per altre informazioni, vedere [Creazione di un descrittore di sicurezza per un nuovo oggetto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
 
  
 
@@ -123,19 +123,19 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui viene generato un evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
+Valore univoco che indica l'ora in cui viene generato un evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe NamespaceModificationEvent** è derivata da [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).
+La **\_ \_ classe NamespaceModificationEvent** è derivata da [**\_ \_ NamespaceOperationEvent.**](--namespaceoperationevent.md)
 
-Le uniche differenze tra lo spazio dei nomi di destinazione e lo spazio dei nomi precedente sono i qualificatori e le proprietà tranne [**Name**](--namespace.md).
+Le uniche differenze tra lo spazio dei nomi di destinazione e lo spazio dei nomi precedente sono i qualificatori e le proprietà ad eccezione [**di Name**](--namespace.md).
 
-Si noti che la [**proprietà Name**](--namespace.md) di **\_ \_ un'istanza namespace** non può cambiare perché gli spazi dei nomi non possono essere rinominati. Per modificare il nome di uno spazio dei nomi, l'istanza **\_ \_ dello** spazio dei nomi deve essere eliminata e ri-creata con un nuovo nome. Di conseguenza, gli eventi di modifica dello spazio dei nomi vengono generati quando si verifica una modifica a qualificatori e proprietà diversi da **Name**. Un evento di modifica dello spazio dei nomi non viene generato quando si verifica qualsiasi tipo di modifica all'interno dello spazio dei nomi. Un evento di modifica dello spazio dei nomi viene generato solo quando viene modificata un'istanza dello spazio dei nomi.
+Si noti che la [**proprietà Name**](--namespace.md) di **\_ \_ un'istanza namespace** non può essere cambiata perché gli spazi dei nomi non possono essere rinominati. Per modificare il nome di uno spazio dei nomi, l'istanza **\_ \_ dello** spazio dei nomi deve essere eliminata e ri-creata con un nuovo nome. Di conseguenza, gli eventi di modifica dello spazio dei nomi vengono generati quando si verifica una modifica a qualificatori e proprietà diversi da **Name**. Un evento di modifica dello spazio dei nomi non viene generato quando si verifica qualsiasi tipo di modifica all'interno dello spazio dei nomi. Un evento di modifica dello spazio dei nomi viene generato solo quando viene modificata un'istanza dello spazio dei nomi.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,5 +1,5 @@
 ---
-description: Determina se al certificato è associata una chiave privata. Il metodo determina questo problema controllando se la proprietà \_ CERT KEY \_ PROV \_ INFO PROP ID \_ è \_ presente.
+description: Determina se al certificato è associata una chiave privata. Il metodo determina questa situazione controllando se la proprietà \_ CERT KEY \_ PROV \_ INFO PROP ID \_ è \_ presente.
 ms.assetid: 80478956-1ed7-4c25-9ae3-d7176649e6d7
 title: Metodo ICertificate2::HasPrivateKey
 ms.topic: reference
@@ -24,9 +24,9 @@ ms.locfileid: "117771538"
 ---
 # <a name="icertificate2hasprivatekey-method"></a>Metodo ICertificate2::HasPrivateKey
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-Il **metodo HasPrivateKey** determina se [*al certificato*](../secgloss/c-gly.md) è associata una chiave privata. [](../secgloss/p-gly.md) Il metodo determina questo problema controllando se la proprietà \_ CERT KEY \_ PROV \_ INFO PROP ID \_ è \_ presente.
+Il **metodo HasPrivateKey** determina se al [*certificato*](../secgloss/c-gly.md) è associata una [*chiave*](../secgloss/p-gly.md) privata. Il metodo determina questa situazione controllando se la proprietà \_ CERT KEY \_ PROV \_ INFO PROP ID \_ è \_ presente.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXFillCubeTextureTX: usa una funzione HLSL (High Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.'
+description: 'Funzione D3DXFillCubeTextureTX: usa una funzione HLSL (High-Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.'
 ms.assetid: a0c36967-57e6-4771-8e9f-f32949c12001
 title: Funzione D3DXFillCubeTextureTX (D3dx9tex.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 95c6d054900f3f4c4710e22c54759161800137c2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: afdf80cf1557f8b08709536ef49b08206873f5758c4b02a12008b27b4413a116
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731799"
 ---
 # <a name="d3dxfillcubetexturetx-function"></a>Funzione D3DXFillCubeTextureTX
 
@@ -46,7 +46,7 @@ HRESULT D3DXFillCubeTextureTX(
 
 Tipo: **[ **LPDIRECT3DCUBETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9)**
 
-Puntatore a [**un oggetto IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) che rappresenta la trama da riempire.
+Puntatore a [**un oggetto IDirect3DCubeTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) che rappresenta la trama da riempire.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Puntatore a [**un oggetto IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper
 
 Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**
 
-Puntatore a un oggetto shader con trama [**ID3DXTextureShader.**](id3dxtextureshader.md)
+Puntatore a un oggetto shader di trama [**ID3DXTextureShader.**](id3dxtextureshader.md)
 
 </dd> </dl>
 
