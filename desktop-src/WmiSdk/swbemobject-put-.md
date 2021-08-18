@@ -1,5 +1,5 @@
 ---
-description: Il metodo Put di SWbemObject crea o aggiorna un'istanza o un oggetto classe per Windows \_ strumentazione di gestione (WMI). È possibile usare questo metodo dopo aver modificato le proprietà o i metodi in un oggetto SWbemObject e le modifiche vengono scritte in WMI.
+description: Il metodo Put di SWbemObject crea o aggiorna un'istanza o un oggetto classe per Windows \_ Management Instrumentation (WMI). È possibile usare questo metodo dopo aver modificato le proprietà o i metodi in un oggetto SWbemObject e le modifiche vengono scritte in WMI.
 ms.assetid: c636ff95-9f3e-4ba9-adf3-30b981be02a4
 ms.tgt_platform: multiple
 title: SWbemObject.Put_ metodo (Wbemdisp.h)
@@ -25,7 +25,7 @@ ms.locfileid: "118991971"
 ---
 # <a name="swbemobjectput_-method"></a>Metodo SWbemObject.Put \_
 
-Il **\_ metodo Put** di [**SWbemObject**](swbemobject.md) crea o aggiorna un'istanza o un oggetto classe per Windows Management Instrumentation (WMI). È possibile usare questo metodo dopo aver modificato le proprietà o i metodi in **un oggetto SWbemObject** e le modifiche vengono scritte in WMI.
+Il **\_ metodo Put** di [**SWbemObject**](swbemobject.md) crea o aggiorna un'istanza o un oggetto classe Windows Management Instrumentation (WMI). È possibile usare questo metodo dopo aver modificato le proprietà o i metodi in **un oggetto SWbemObject** e le modifiche vengono scritte in WMI.
 
 Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 

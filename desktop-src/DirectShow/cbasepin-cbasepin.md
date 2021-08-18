@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f11dea6bd5bc3f766e5f93a04022dab5ba6e51a5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cbeead09843aa8bf66471caeaabbdb42ee8d97d01cdaa9a54809f35c437b52d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916901"
 ---
 # <a name="cbasepincbasepin-constructor"></a>Costruttore CBasePin.CBasePin
 
@@ -50,7 +50,7 @@ CBasePin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug per l'oggetto . Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
+Stringa contenente il nome di debug per l'oggetto . Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntatore al filtro che ha creato questo segnaposto.
 *Plock* 
 </dt> <dd>
 
-Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato. Può essere la stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) usato per serializzare le modifiche dello stato. Può essere la stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
@@ -78,20 +78,20 @@ Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito po
 *Pname* 
 </dt> <dd>
 
-Stringa di caratteri wide contenente il nome del segnaposto. Per altre informazioni, vedere [**CBasePin::QueryPinInfo.**](cbasepin-querypininfo.md)
+Stringa di caratteri wide contenente il nome del segnaposto. Per altre informazioni, vedere [**CBasePin::QueryPinInfo**](cbasepin-querypininfo.md).
 
 </dd> <dt>
 
 *dir* 
 </dt> <dd>
 
-Membro [**dell'enumerazione \_ DIRECTION del PIN**](/windows/win32/api/strmif/ne-strmif-pin_direction) che specifica la direzione del segnaposto.
+Membro [**dell'enumerazione \_ PIN DIRECTION**](/windows/win32/api/strmif/ne-strmif-pin_direction) che specifica la direzione del pin.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La sezione critica specificata da *pLock* serializza lo stato del pin, inclusi lo stato della connessione, la scelta dell'allocatore, il tipo di supporto e lo stato delle operazioni di scaricamento. Non usare questa sezione critica per serializzare le operazioni di streaming. Per altre informazioni, vedere [Flusso di dati in Filter Graph](data-flow-in-the-filter-graph.md).
+La sezione critica specificata da *pLock* serializza lo stato del pin, inclusi lo stato della connessione, la scelta dell'allocatore, il tipo di supporto e lo stato delle operazioni di scaricamento. Non usare questa sezione critica per serializzare le operazioni di streaming. Per altre informazioni, vedere [Data Flow in Filter Graph](data-flow-in-the-filter-graph.md).
 
 Un filtro potrebbe creare pin nel metodo del costruttore, pertanto a questo punto il puntatore *pFilter* potrebbe non fare riferimento a un oggetto valido. Archiviare il puntatore, ma non dereferenziarlo all'interno del costruttore del segnaposto.
 
@@ -101,7 +101,7 @@ Un filtro potrebbe creare pin nel metodo del costruttore, pertanto a questo punt
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

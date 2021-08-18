@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 08d38691d0e780e49293149bdb7a08b1ea0ef1fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14f8bb3d75d1a949919d401babb47987fbb88a7cac82f017947f069df4b99e6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497864"
 ---
 # <a name="d3dxvec3unproject-function-d3dx10mathh"></a>Funzione D3DXVec3Unproject (D3DX10Math.h)
 
-Proietta un vettore dallo spazio dello schermo nello spazio dell'oggetto.
+Proietta un vettore dallo spazio dello schermo allo spazio dell'oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -94,7 +94,7 @@ Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di visualizzazio
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
+Puntatore a una struttura D3DXMATRIX che rappresenta la matrice globale.
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta il vettore proiettato dallo spazio dello schermo allo spazio oggetto.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta il vettore proiettato dallo spazio dello schermo allo spazio dell'oggetto.
 
 ## <a name="remarks"></a>Commenti
 

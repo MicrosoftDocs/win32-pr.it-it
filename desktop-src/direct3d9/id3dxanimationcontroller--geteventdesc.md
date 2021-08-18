@@ -55,7 +55,7 @@ Handle di evento per un evento di animazione da descrivere.
 
 Tipo: **[ **LPD3DXEVENT \_ DESC**](d3dxevent-desc.md)**
 
-Puntatore a una [**struttura \_ DESC D3DXEVENT**](d3dxevent-desc.md) che contiene una descrizione dell'evento di animazione.
+Puntatore a [**una struttura \_ DESC D3DXEVENT**](d3dxevent-desc.md) che contiene una descrizione dell'evento di animazione.
 
 </dd> </dl>
 

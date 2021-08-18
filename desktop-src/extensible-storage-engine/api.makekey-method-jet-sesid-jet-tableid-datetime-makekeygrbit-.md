@@ -29,9 +29,9 @@ ms.locfileid: "118983081"
 ---
 # <a name="apimakekey-method-jet_sesid-jet_tableid-datetime-makekeygrbit"></a>Metodo Api.MakeKey (JET_SESID, JET_TABLEID, DateTime, MakeKeyGrbit)
 
-Costruisce una chiave di ricerca che può essere usata da [JetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).
+Costruisce una chiave di ricerca che può quindi essere usata da [JetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit).](./api.jetsetindexrange-method.md)
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -66,7 +66,7 @@ public static void MakeKey(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 

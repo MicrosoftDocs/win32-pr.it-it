@@ -1,9 +1,9 @@
 ---
 title: Elemento IdleSettings (settingsType)
-description: Specifica il modo in cui il Utilità di pianificazione esegue le attività quando il computer si trova in uno stato inattivo.
+description: Specifica il modo in cui Utilità di pianificazione le attività quando il computer è in stato di inattività.
 ms.assetid: 23d57417-95a9-42e3-904c-7f0859fcda7c
 keywords:
-- Utilità di pianificazione elemento IdleSettings
+- Elemento IdleSettings Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5ae8b7953f31d7e9c6f01387d3136f01d8ab697a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc0a4c3fc978c93d13be8faa62012d3928d47da5b5a214ce50f5506992f1fc8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991220"
 ---
 # <a name="idlesettings-settingstype-element"></a>Elemento IdleSettings (settingsType)
 
-Specifica il modo in cui il Utilità di pianificazione esegue le attività quando il computer si trova in uno stato inattivo. Per informazioni sulle condizioni di inattività, vedere [condizioni](task-idle-conditions.md)di inattività.
+Specifica il modo in cui Utilità di pianificazione le attività quando il computer è in stato di inattività. Per informazioni sulle condizioni di inattività, vedere [Condizioni di inattività delle attività](task-idle-conditions.md).
 
 ``` syntax
 <xs:element name="IdleSettings"
@@ -31,7 +31,7 @@ Specifica il modo in cui il Utilità di pianificazione esegue le attività quand
  />
 ```
 
-L'elemento **IdleSettings** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento IdleSettings** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -42,24 +42,24 @@ L'elemento **IdleSettings** è definito dal tipo complesso [**settingsType**](ta
 ## <a name="child-elements"></a>Elementi figlio
 
 > [!NOTE]
-> Le impostazioni *Duration* e *WaitTimeout* sono deprecate. Sono ancora presenti nel Utilità di pianificazione interfaccia utente e i relativi metodi di interfaccia possono comunque restituire valori validi, ma non vengono più usati.
+> Le *impostazioni Duration* e *WaitTimeout* sono deprecate. Sono ancora presenti nell'interfaccia Utilità di pianificazione utente e i relativi metodi di interfaccia possono comunque restituire valori validi, ma non vengono più usati.
 
 | Elemento                                                                                  | Tipo     | Descrizione                                                                                                              |
 |------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| [**RestartOnIdle**](taskschedulerschema-restartonidle-idlesettingstype-element.md)      | boolean  | Specifica se l'attività viene riavviata quando il computer scorre una condizione di inattività più volte.<br/>       |
-| [**StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) | boolean  | Specifica che il Utilità di pianificazione arresterà l'attività se la condizione di inattività termina prima del completamento dell'attività.<br/> |
-| **Deprecato**: [ **durata**](taskschedulerschema-duration-idlesettingstype-element.md)                | duration | Specifica per quanto tempo il computer deve trovarsi in uno stato di inattività prima dell'esecuzione dell'attività.<br/>                              |
-| **Deprecato**: [ **WaitTimeout**](taskschedulerschema-waittimeout-idlesettingstype-element.md)          | duration | Specifica la quantità di tempo per cui il Utilità di pianificazione attenderà che si verifichi una condizione di inattività.<br/>                |
+| [**RestartOnIdle**](taskschedulerschema-restartonidle-idlesettingstype-element.md)      | boolean  | Specifica se l'attività viene riavviata quando il computer entra in una condizione di inattività più di una volta.<br/>       |
+| [**StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) | boolean  | Specifica che l'Utilità di pianificazione interromperà l'attività se la condizione di inattività termina prima del completamento dell'attività.<br/> |
+| **Deprecato:** [ **Durata**](taskschedulerschema-duration-idlesettingstype-element.md)                | duration | Specifica per quanto tempo il computer deve essere inattivo prima dell'esecuzione dell'attività.<br/>                              |
+| **Deprecato:** [ **WaitTimeout**](taskschedulerschema-waittimeout-idlesettingstype-element.md)          | duration | Specifica il periodo di tempo in cui il Utilità di pianificazione attenderà che si verifichi una condizione di inattività.<br/>                |
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, le impostazioni di inattività vengono specificate utilizzando la proprietà [**TaskSettings. IdleSettings**](tasksettings-idlesettings.md) .
+Per lo sviluppo di script, le impostazioni inattive vengono specificate tramite la [**proprietà TaskSettings.IdleSettings.**](tasksettings-idlesettings.md)
 
-Per lo sviluppo in C++, le impostazioni di inattività vengono specificate usando la proprietà [**ITaskSettings:: IdleSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings) .
+Per lo sviluppo C++, le impostazioni inattive vengono specificate usando la [**proprietà ITaskSettings::IdleSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un elemento Settings che consente Utilità di pianificazione di attendere 24 ore per una condizione di inattività e quindi consente solo 10 minuti {IdleDuration) di avviare l'attività.
+Il codice XML seguente definisce un elemento settings che consente Utilità di pianificazione di attendere 24 ore per una condizione di inattività e quindi consente solo 10 minuti {IdleDuration) per avviare l'attività.
 
 ```XML
 <Settings>
@@ -77,11 +77,11 @@ Il codice XML seguente definisce un elemento Settings che consente Utilità di p
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 ## <a name="see-also"></a>Vedi anche
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

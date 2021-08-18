@@ -1,25 +1,25 @@
 ---
 title: XmlBufferExample
-description: In questo esempio viene illustrato l'utilizzo delle API del buffer XML.
+description: Questo esempio illustra un uso delle API del buffer XML.
 ms.assetid: cf4530c7-48f4-4a76-bd3d-1f21b5469902
 keywords:
-- XmlBufferExample native-servizi Web
+- XmlBufferExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc290509ad44264ce6986e07792170b3e230b51
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f02f68864ba46e3c70523423e0c0c552f66228e7ef00ed9d9acdf8f4e94f1d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707171"
 ---
 # <a name="xmlbufferexample"></a>XmlBufferExample
 
-In questo esempio viene illustrato l'utilizzo delle API del buffer XML.
+Questo esempio illustra un uso delle API del buffer XML.
 
-## <a name="xmlbuffercpp"></a>XmlBuffer. cpp
+## <a name="xmlbuffercpp"></a>XmlBuffer.cpp
 
 
 ```C++
@@ -335,9 +335,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

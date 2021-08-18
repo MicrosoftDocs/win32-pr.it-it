@@ -1,19 +1,19 @@
 ---
-description: 'Versione utilizzabile del metodo IMFMediaEventGenerator:: EndGetEvent.'
+description: Versione remota del metodo IMFMediaEventGenerator::EndGetEvent.
 ms.assetid: 5b793760-546c-43d4-8251-d89d8d7152ad
-title: RemoteEndGetEvent (Mfobjects. h)
+title: RemoteEndGetEvent (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66f3c4a5fe87dddf5fc1d256d61d8c863c2f1d9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 709cb65280e32c1aa662c5dfbec851b24d353370853db1742814a4ba5daf61de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034899"
 ---
 # <a name="remoteendgetevent"></a>RemoteEndGetEvent
 
-Versione utilizzabile del metodo [**IMFMediaEventGenerator:: EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) .
+Versione remota del metodo [**IMFMediaEventGenerator::EndGetEvent.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent)
 
 ``` syntax
 [call_as(EndGetEvent)]
@@ -26,7 +26,7 @@ HRESULT RemoteEndGetEvent(
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato in vtable per l'interfaccia. Se [**EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) viene chiamato tra i limiti del processo, la Media Foundation DLL di proxy/stub converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
+Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato nella tabella vtable per l'interfaccia . Se [**EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) viene chiamato oltre i limiti del processo, la DLL proxy/stub di Media Foundation converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,10 +34,10 @@ Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti no
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                                                    |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                                              |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mfuuid. lib</dt> </dl>                    |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                                                    |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                                              |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 
 
 

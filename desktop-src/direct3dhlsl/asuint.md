@@ -1,9 +1,9 @@
 ---
-title: asuint (funzione)
-description: Reinterpreta lo schema di bit di un valore a 64 bit come due interi senza segno a 32 bit.
+title: Funzione asuint
+description: Reinterpreta il modello di bit di un valore a 64 bit come due interi senza segno a 32 bit.
 ms.assetid: 29671661-4fec-46e5-9b6f-56fba8e1d756
 keywords:
-- funzione asuint HLSL
+- Funzione asuint HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c54ed89e112482df4a54f35e24a04694e88fa490
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 02f0df4d31ca978b8b58b50cd0c91710056aa9ac0f3cac1ae370a4edba6a9edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626591"
 ---
-# <a name="asuint-function"></a>asuint (funzione)
+# <a name="asuint-function"></a>Funzione asuint
 
-Reinterpreta lo schema di bit di un valore a 64 bit come due interi senza segno a 32 bit.
+Reinterpreta il modello di bit di un valore a 64 bit come due interi senza segno a 32 bit.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void asuint(
-  in  double value,
-  out uint lowbits,
-  out uint highbits
+  in  double value,
+  out uint lowbits,
+  out uint highbits
 );
 ```
 
@@ -38,30 +38,30 @@ void asuint(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valore di input.
 
 </dd> <dt>
 
-*lowbits* \[ out\]
+*lowbit* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Modello a 32 bit basso di *value*.
+Modello a 32 bit basso del *valore*.
 
 </dd> <dt>
 
-*highbits* \[ out\]
+*highbits* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Modello a 32 bit elevato di *value*.
+Modello a 32 bit alto del *valore*.
 
 </dd> </dl>
 
@@ -71,9 +71,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è una versione alternativa della funzione intrinseca [**asuint**](dx-graphics-hlsl-asuint.md) disponibile nei modelli shader precedenti ed è stata introdotta per il modello di shader 5. La funzione originale, riconosciuta nel compilatore HLSL con la firma diversa, rimane disponibile per il modello di shader 5.
+Questa funzione è una versione alternativa della [**funzione intrinseca asuint**](dx-graphics-hlsl-asuint.md) disponibile nei modelli shader precedenti ed è stata introdotta per Shader Model 5. La funzione originale (riconosciuta nel compilatore HLSL dalla firma diversa) rimane disponibile per Shader Model 5.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -81,23 +81,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -109,12 +109,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [**asuint (DirectX HLSL)**](dx-graphics-hlsl-asuint.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

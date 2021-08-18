@@ -48,13 +48,13 @@ Dove:
 
  
 
--   [Loop Counter Register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) contiene il conteggio del ciclo corrente e può essere usato per l'indirizzamento relativo in Constant Integer [Register](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (c) o \# Output [Registers](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o ) all'interno del blocco \# del ciclo.
+-   [Loop Counter Register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) contiene il conteggio del ciclo corrente e può essere usato per l'indirizzamento relativo in Constant Integer [Register](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (c) o \# Output [Registers](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o ) all'interno del blocco \# di ciclo.
 -   i \# .x specifica il conteggio delle iterazioni. L'intervallo valido \[ è 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# .x.
 -   i \# .y specifica il valore iniziale del registro [loop counter register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL). L'intervallo valido \[ è 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# .y.
 -   i \# .z specifica le dimensioni di step/stride. L'intervallo valido \[ è -128, 127. \]
 -   i \# .w non viene usato e deve essere impostato su 0.
 -   I blocchi di ciclo possono essere annidati. Vedere [Flow limiti di annidamento del controllo](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
--   Quando è annidato, il valore di [Loop Counter Register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) fa riferimento al blocco di ciclo di inclusione immediato.
+-   Quando è annidato, il valore del [registro](dx9-graphics-reference-asm-vs-registers-loop-counter.md) contatori del ciclo (aL) fa riferimento al blocco di ciclo di inclusione immediato.
 -   I blocchi di ciclo possono essere completamente all'interno di un blocco if \* o che lo circondano completamente. Non è consentito alcun intervallo.
 
 ## <a name="example"></a>Esempio

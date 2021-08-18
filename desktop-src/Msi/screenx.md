@@ -1,19 +1,19 @@
 ---
 description: Il programma di installazione imposta la proprietà ScreenX sulla larghezza dello schermo in pixel.
 ms.assetid: 7b3a3247-43a8-4b15-9561-84f19657bab5
-title: Proprietà ScreenX
+title: ScreenX - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab311830fd8cd8adc7fe3a94707d688f9eba1195
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1de9367e3488a6d6471845b0edc96f49ace097adb2b3ff18ab3e1703101157bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996249"
 ---
-# <a name="screenx-property"></a>Proprietà ScreenX
+# <a name="screenx-property"></a>ScreenX - proprietà
 
-Il programma di installazione imposta la proprietà **screenX** sulla larghezza dello schermo in pixel.
+Il programma di installazione **imposta la proprietà ScreenX** sulla larghezza dello schermo in pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ Il programma di installazione imposta la proprietà **screenX** sulla larghezza 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

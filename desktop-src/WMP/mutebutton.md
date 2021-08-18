@@ -1,9 +1,9 @@
 ---
 title: MUTEBUTTON
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | MUTEBUTTON
+description: Si tratta di un elemento BUTTON predefinito con i valori predefiniti seguenti. | MUTEBUTTON
 ms.assetid: eee00161-c0c4-4e26-a7d2-6357034fcdfd
 keywords:
-- Media Player Windows MUTEBUTTON
+- MUTEBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: faa89e7a4497500076bea8a31d7b803dff9a379e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f23cea94bfbc6e57807df26512423b530c826411aadd2cd8466b54230d9c23b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996131"
 ---
 # <a name="mutebutton"></a>MUTEBUTTON
 
-Si tratta di un pulsante predefinito con i seguenti valori predefiniti.
+Si tratta di un elemento BUTTON predefinito con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.settings.mute=down;"
@@ -34,7 +34,7 @@ sticky="true"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo **Button** che consente di disattivare e disattivare l'audio. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+Verrà creato un **controllo BUTTON** che consente di disattivare e disattivare l'audio. Le descrizioni comandi sono localizzate. È possibile eseguire l'override di tutte le proprietà di **questo** pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Viene creato un controllo **Button** che consente di disattivare e disattivare l
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

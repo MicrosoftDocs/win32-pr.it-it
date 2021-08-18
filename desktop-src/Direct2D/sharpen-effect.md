@@ -1,17 +1,17 @@
 ---
-title: Effetto Nitidezza
+title: Effetto di nitidezza
 description: Affila l'immagine.
 ms.assetid: 1eb12d1e-83c1-ba13-33be-df2078f3ccb8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f54203cfeb786204500c905e2ff4cfc83bf9719e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b74d95f7305dd6d44eb4dfbe2707f9e636e2ce704af2dc02fcf55477dbf2222d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873766"
 ---
-# <a name="sharpen-effect"></a>Effetto Nitidezza
+# <a name="sharpen-effect"></a>Effetto di nitidezza
 
 Affila l'immagine.
 
@@ -19,13 +19,13 @@ Il CLSID per questo effetto è CLSID \_ D2D1Sharpen.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/sharpen-effect.png)
+![esempio di output dell'effetto](images/sharpen-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -47,9 +47,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto di nitidezza sono definite dall'enumerazione [**d2d1 \_ Sharpe \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_sharpen_prop) .
+Le proprietà per l'effetto di nitidezza sono definite [**dall'enumerazione D2D1 \_ SHARPEN \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_sharpen_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,10 +57,10 @@ Le proprietà per l'effetto di nitidezza sono definite dall'enumerazione [**d2d1
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Argomenti correlati

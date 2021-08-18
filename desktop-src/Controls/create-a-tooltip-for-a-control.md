@@ -1,36 +1,36 @@
 ---
 title: Come creare una descrizione comando per un controllo
-description: La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID di risorsa viene passato.
+description: La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID risorsa viene passato.
 ms.assetid: FDA3B2A0-1256-4DAC-86CF-8F123894E760
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f341c1be1e749c4e0d6f18caf97a3f897cf429e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9883dc90e8a150c7cc863b59e8388df676ed0f1663aaea7b356cb45292a6c8c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826571"
 ---
 # <a name="how-to-create-a-tooltip-for-a-control"></a>Come creare una descrizione comando per un controllo
 
-La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID di risorsa viene passato.
+La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID risorsa viene passato.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="create-a-tooltip-for-a-control"></a>Creare una descrizione comando per un controllo
 
-La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID di risorsa viene passato.
+La funzione di esempio seguente crea una descrizione comando e la associa al controllo il cui ID risorsa viene passato.
 
 
 ```C++
@@ -84,12 +84,12 @@ HWND CreateToolTip(int toolID, HWND hDlg, PTSTR pszText)
 
 <dl> <dt>
 
-[Uso di controlli ToolTip](using-tooltip-contro.md)
+[Uso dei controlli descrizione comando](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

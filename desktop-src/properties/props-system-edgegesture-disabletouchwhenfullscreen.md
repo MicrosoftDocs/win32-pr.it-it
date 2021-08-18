@@ -1,19 +1,19 @@
 ---
-description: Impedisce comportamenti dei movimenti di bordo quando una finestra dell'applicazione è attiva e in modalità schermo intero (oppure è attiva una finestra di proprietà).
+description: Impedisce i comportamenti del movimento del bordo quando una finestra dell'applicazione è attiva e in modalità schermo intero (o una finestra di proprietà è attiva).
 ms.assetid: F4242C05-181B-44FC-BE6C-8ABB76079981
-title: System. EdgeGesture. DisableTouchWhenFullscreen
+title: System.EdgeGesture.DisableTouchWhenFullscreen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 208962f11b96420a8e0ef771ada846a3f802e815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13132ba30fd3f1e594ec54966dfe2268ce66d570b66ca6d34b1c63b03bfc0c75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845121"
 ---
-# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System. EdgeGesture. DisableTouchWhenFullscreen
+# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System.EdgeGesture.DisableTouchWhenFullscreen
 
-Impedisce comportamenti dei movimenti di bordo quando una finestra dell'applicazione è attiva e in modalità schermo intero (oppure è attiva una finestra di proprietà).
+Impedisce i comportamenti del movimento del bordo quando una finestra dell'applicazione è attiva e in modalità schermo intero (o una finestra di proprietà è attiva).
 
 > [!Note]  
 > In modalità schermo intero, le dimensioni della finestra dell'applicazione corrispondono alla risoluzione dello schermo.
@@ -37,15 +37,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-In Windows 8 le interazioni utente con i bordi dello schermo visualizzano l'interfaccia utente del sistema, ad esempio le barre dell'app, gli accessi e le app in esecuzione.
+In Windows 8, le interazioni dell'utente con i bordi dell'interfaccia utente del sistema di visualizzazione dello schermo, ad esempio le barre dell'app, gli accessi e le app in esecuzione.
 
 Per le applicazioni remote a schermo intero, questo comportamento dell'interfaccia utente nel computer locale potrebbe sostituire e interferire con l'interfaccia utente della sessione remota. Questa proprietà consente a un'applicazione di disabilitare l'interfaccia utente perimetrale nel computer locale.
 
-Per disabilitare l'interfaccia utente di Edge, impostare questa proprietà su VARIANT \_ true. Il valore predefinito è VARIANT \_ false.
+Per disabilitare l'interfaccia utente perimetrale, impostare questa proprietà su VARIANT \_ TRUE. Il valore predefinito è VARIANT \_ FALSE.
 
-Questa proprietà non ha alcun effetto sulle app di Windows Store.
+Questa proprietà non ha alcun effetto sulle Windows Store.
 
-Nell'esempio seguente viene illustrato come impostare i comportamenti dell'interfaccia utente di Edge.
+L'esempio seguente illustra come impostare i comportamenti dell'interfaccia utente perimetrali.
 
 
 ```
@@ -71,13 +71,13 @@ HRESULT SetTouchDisableProperty(HWND hwnd, BOOL fDisableTouch)
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Specifica l'ID fornitore per un'istanza basata su hardware Microsoft Media Foundation.
+description: Specifica l'ID fornitore per un dispositivo basato su hardware Microsoft Media Foundation.
 ms.assetid: AA31639F-EF70-4454-AC61-60755CAA684A
 title: MFT_ENUM_HARDWARE_VENDOR_ID_Attribute attributo
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118973100"
 ---
 # <a name="mft_enum_hardware_vendor_id_attribute-attribute"></a>Attributo ID FORNITORE \_ HARDWARE MFT ENUM \_ \_ \_ \_
 
-Specifica l'ID fornitore per una trasformazione Microsoft Media Foundation basata su hardware (MFT).
+Specifica l'ID fornitore per una trasformazione di Microsoft Media Foundation basata su hardware (MFT).
 
 ## <a name="data-type"></a>Tipo di dati
 

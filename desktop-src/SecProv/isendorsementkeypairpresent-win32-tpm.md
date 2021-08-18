@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsEndorsementKeyPairPresent della \_ classe TPM Win32 indica se la coppia di chiavi di verifica dell'autenticità esiste nel dispositivo.
+description: Il metodo IsEndorsementKeyPairPresent della classe Win32 Tpm indica se la coppia di chiavi di approvazione \_ esiste nel dispositivo.
 ms.assetid: c36cd0b5-1ac2-4fcf-b140-c5ecb0b3b211
-title: Metodo IsEndorsementKeyPairPresent della classe Win32_Tpm
+title: Metodo IsEndorsementKeyPairPresent Win32_Tpm classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 63561a4971523fd1554e1d973861c3f0737df2ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcbc0c4877aae2db0e94d42838100720ee0ae0dcbdcc33f52cf70d2e23327e9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004469"
 ---
-# <a name="isendorsementkeypairpresent-method-of-the-win32_tpm-class"></a>Metodo IsEndorsementKeyPairPresent della \_ classe TPM Win32
+# <a name="isendorsementkeypairpresent-method-of-the-win32_tpm-class"></a>Metodo IsEndorsementKeyPairPresent della classe Tpm Win32 \_
 
-Il metodo **IsEndorsementKeyPairPresent** della classe [**\_ TPM Win32**](win32-tpm.md) indica se la coppia di chiavi di verifica dell'autenticità esiste nel dispositivo. La coppia di chiavi di verifica dell'autenticità è obbligatoria prima che il dispositivo possa essere proprietario. Questa coppia di chiavi può essere creata dal metodo [**CreateEndorsementKeyPair**](createendorsementkeypair-win32-tpm.md) .
+Il **metodo IsEndorsementKeyPairPresent** della classe [**\_ Win32 Tpm**](win32-tpm.md) indica se la coppia di chiavi di approvazione esiste nel dispositivo. La coppia di chiavi di approvazione è necessaria prima che il dispositivo possa essere di proprietà. Questa coppia di chiavi può essere creata dal [**metodo CreateEndorsementKeyPair.**](createendorsementkeypair-win32-tpm.md)
 
-Il dispositivo deve essere abilitato e attivato affinché questo metodo abbia esito positivo. Per abilitare e attivare un dispositivo senza proprietario, vedere il metodo [**SetPhysicalPresenceRequest**](setphysicalpresencerequest-win32-tpm.md) .
+Il dispositivo deve essere abilitato e attivato perché questo metodo riesca. Per abilitare e attivare un dispositivo senzawned, vedere il [**metodo SetPhysicalPresenceRequest.**](setphysicalpresencerequest-win32-tpm.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,20 +41,20 @@ uint32 IsEndorsementKeyPairPresent(
 
 <dl> <dt>
 
-*IsEndorsementKeyPairPresent* \[ out\]
+*IsEndorsementKeyPairPresent* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Se true, la coppia di chiavi di **Verifica dell'autenticità** esiste nel dispositivo.
+Se **true,** la coppia di chiavi di approvazione esiste nel dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici dei servizi di base TPM.
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi di base TPM.
 
 I codici restituiti comuni sono elencati di seguito.
 
@@ -70,7 +70,7 @@ I codici restituiti comuni sono elencati di seguito.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,11 +78,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                            |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                      |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> <dt>
 
 [**CreateEndorsementKeyPair**](createendorsementkeypair-win32-tpm.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_INSERTCOLUMN (COMmctrl. h)
+title: LVM_INSERTCOLUMN messaggio (Commctrl.h)
 description: Inserisce una nuova colonna in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro InsertColumn di ListView.
 ms.assetid: 1326e38e-bb45-4d0d-b5bc-ec684b3b92ef
 keywords:
-- Controlli di Windows Message LVM_INSERTCOLUMN
+- LVM_INSERTCOLUMN controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8be89ff0b4ef417a715085582544112cb90cb6b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5c2316ed2a74c82cd4530eff2d71d4771f4042b903c7ee17fc62886009ed5b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019239"
 ---
-# <a name="lvm_insertcolumn-message"></a>\_Messaggio INSERTCOLUMN LVM
+# <a name="lvm_insertcolumn-message"></a>Messaggio \_ INSERTCOLUMN di LVM
 
-Inserisce una nuova colonna in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ InsertColumn di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) .
+Inserisce una nuova colonna in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ InsertColumn di ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,17 +39,17 @@ Indice della nuova colonna.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) che contiene gli attributi della nuova colonna.
+Puntatore a [**una struttura LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) che contiene gli attributi della nuova colonna.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice della nuova colonna se ha esito positivo oppure-1 in caso contrario.
+Restituisce l'indice della nuova colonna in caso di esito positivo oppure -1 in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Le colonne sono visibili solo nella visualizzazione report (Dettagli).
+Le colonne sono visibili solo nella visualizzazione report (dettagli).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Le colonne sono visibili solo nella visualizzazione report (Dettagli).
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

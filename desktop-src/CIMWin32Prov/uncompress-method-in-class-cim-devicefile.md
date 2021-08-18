@@ -1,8 +1,8 @@
 ---
-description: Decompresso il file o la directory del dispositivo logico specificato nel percorso dell'oggetto. Questo metodo viene ereditato da \_ LOGICALFILE CIM.
+description: Decompresso il file del dispositivo logico (o directory) specificato nel percorso dell'oggetto. Questo metodo viene ereditato da CIM \_ LogicalFile.
 ms.assetid: a9b5e9bc-1c31-4518-ade4-8e9a0106608e
 ms.tgt_platform: multiple
-title: Metodo Decompress della classe CIM_DeviceFile
+title: Decomprimere il metodo della CIM_DeviceFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8bc7bd0a9759a3eb02d1faee6b6fb669cde4dba8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 55b1fd961084014e8fede4a992d76103eafcdd965c2ce25f491b4984bab23674
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918221"
 ---
-# <a name="uncompress-method-of-the-cim_devicefile-class"></a>Metodo Decompress della classe CIM \_ DeviceFile
+# <a name="uncompress-method-of-the-cim_devicefile-class"></a>Metodo Uncompress della classe \_ CiM DeviceFile
 
-Il metodo **Decompress** ha decompresso il file o la directory del dispositivo logico specificato nel percorso dell'oggetto. Questo metodo viene ereditato da [**\_ LogicalFile CIM**](cim-logicalfile.md).
+Il **metodo Uncompress** consente di decomprimere il file (o la directory) del dispositivo logico specificato nel percorso dell'oggetto. Questo metodo viene ereditato da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,14 +47,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-Esito positivo.
+Operazione completata.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Oggetto già esistente.
 **11**
 </dt> <dd>
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Piattaforma non Windows.
 **13**
 </dt> <dd>
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -157,7 +157,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -166,10 +166,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_DEVICEFILE CIM](uncompress-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](uncompress-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_DEVICEFILE CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

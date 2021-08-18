@@ -1,17 +1,17 @@
 ---
 description: Descrizione comando per lo stato della connessione.
 ms.assetid: 84D7657E-026E-4eb7-8A61-172563A09EAB
-title: System. Devices. NetworkedTooltip
+title: System.Devices.NetworkedTooltip
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 545ae6f02783b4cd763c0c685097ebac67231cb8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1edbf560c701cfbfac18e87699a01ec87c559210a70c606ade13492f51496a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845581"
 ---
-# <a name="systemdevicesnetworkedtooltip"></a>System. Devices. NetworkedTooltip
+# <a name="systemdevicesnetworkedtooltip"></a>System.Devices.NetworkedTooltip
 
 Descrizione comando per lo stato della connessione.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

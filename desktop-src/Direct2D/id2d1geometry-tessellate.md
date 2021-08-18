@@ -1,9 +1,9 @@
 ---
-title: Metodi conteggiarla suddividerla di ID2D1Geometry
+title: METODI TESSELLATI ID2D1Geometry
 description: Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata.
 ms.assetid: 4e0af188-d14b-43c0-be11-16577f054b90
 keywords:
-- Metodo conteggiarla suddividerla Direct2D
+- Metodi a tessellate Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 060fc42dddd7642f021d073b8addbe089d031393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b40602fb38ec2a0834ba202252114f7c0c34a4948e4473703ff4daf8bf2ee97a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917891"
 ---
-# <a name="id2d1geometrytessellate-methods"></a>Metodi ID2D1Geometry:: conteggiarla suddividerla
+# <a name="id2d1geometrytessellate-methods"></a>Metodi ID2D1Geometry::Tessellate
 
 Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata.
 
@@ -30,16 +30,16 @@ Crea un set di triangoli in senso orario che analizza la geometria dopo che è s
 
 | Metodo                                                                                                                                                    | Descrizione                                                                                                                                                                          |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Conteggiarla suddividerla (D2D1 \_ Matrix \_ 3x2 \_ F \* , ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un set di triangoli della ferita in senso orario che coprono la geometria dopo che è stata trasformata utilizzando la matrice specificata e appiattita utilizzando la tolleranza predefinita. <br/>   |
-| [**Conteggiarla suddividerla (D2D1 \_ Matrix \_ 3X2 \_ F&, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un set di triangoli della ferita in senso orario che coprono la geometria dopo che è stata trasformata utilizzando la matrice specificata e appiattita utilizzando la tolleranza predefinita. <br/>   |
-| [**Conteggiarla suddividerla (D2D1 \_ Matrix \_ 3x2 \_ F \* , float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata. <br/> |
-| [**Conteggiarla suddividerla (D2D1 \_ Matrix \_ 3X2 \_ F&, float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata.<br/>  |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ \* F,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un set di triangoli a scorrimento in senso orario che coprono la geometria dopo che è stata trasformata usando la matrice specificata e appiattita usando la tolleranza predefinita. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un set di triangoli a scorrimento in senso orario che coprono la geometria dopo che è stata trasformata usando la matrice specificata e appiattita usando la tolleranza predefinita. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ \* F,FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata. <br/> |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Crea un set di triangoli in senso orario che analizza la geometria dopo che è stata trasformata utilizzando la matrice specificata e resa bidimensionale utilizzando la tolleranza specificata.<br/>  |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato come utilizzare conteggiarla suddividerla per creare un set di triangoli con ferita in senso orario che coprono la geometria.
+Nell'esempio di codice seguente viene illustrato come usare Tessellate per creare un set di triangoli in senso orario che coprono la geometria.
 
 
 ```C++
@@ -98,7 +98,7 @@ Nell'esempio di codice seguente viene illustrato come utilizzare conteggiarla su
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

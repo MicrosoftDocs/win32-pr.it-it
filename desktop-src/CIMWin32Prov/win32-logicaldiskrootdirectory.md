@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione LogicalDiskRootDirectory Win32 mette in correlazione un disco logico e la relativa struttura di directory.
+description: La classe WMI di associazione LogicalDiskRootDirectory Win32 mette \_ in relazione un disco logico e la relativa struttura di directory.
 ms.assetid: 860cd28a-2a59-4ce3-be26-8fdc869c70d1
 ms.tgt_platform: multiple
-title: Classe Win32_LogicalDiskRootDirectory
+title: Win32_LogicalDiskRootDirectory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e4b015891a37c5cc92bbf102482f48306d537bb6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a1ec5bdbe5ab91b14c294f715aa4fc4fe26ad2a42cd63892f60288456af10505
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973391"
 ---
-# <a name="win32_logicaldiskrootdirectory-class"></a>Win32 \_ LogicalDiskRootDirectory (classe)
+# <a name="win32_logicaldiskrootdirectory-class"></a>Classe \_ LogicalDiskRootDirectory Win32
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ LogicalDiskRootDirectory Win32** mette in correlazione un disco logico e la relativa struttura di directory.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **di associazione \_ LogicalDiskRootDirectory Win32** mette in relazione un disco logico e la relativa struttura di directory.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,26 +42,26 @@ class Win32_LogicalDiskRootDirectory : CIM_Component
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ LogicalDiskRootDirectory** presenta questi tipi di membri:
+La **classe \_ LogicalDiskRootDirectory Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ LogicalDiskRootDirectory** dispone di queste proprietà.
+La **classe \_ LogicalDiskRootDirectory Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ disco logico**
+Tipo di dati: **\_ LogicalDisk Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ disco logico")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LogicalDisk")
 </dt> </dl>
 
 Riferimento all'istanza di che rappresenta le proprietà del disco logico.
@@ -71,22 +71,22 @@ Riferimento all'istanza di che rappresenta le proprietà del disco logico.
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ directory Win32**
+Tipo di dati: **\_ Directory Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| directory Win32 WMI \_ ")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ Directory")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta le proprietà della struttura di directory di file.
+Riferimento all'istanza di che rappresenta le proprietà della struttura di directory dei file.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ LogicalDiskRootDirectory** è derivata dal [**\_ componente CIM**](cim-component.md).
+La **classe \_ LogicalDiskRootDirectory Win32** deriva dal [**componente CIM \_**](cim-component.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ LogicalDiskRootDirectory** è derivata dal [**\_ componente
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ LogicalDiskRootDirectory** è derivata dal [**\_ componente
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -31,7 +31,7 @@ ms.locfileid: "119977501"
 
 Imposta le opzioni di configurazione del database.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -79,7 +79,7 @@ public static JET_wrn JetSetSystemParameter(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 
@@ -100,7 +100,7 @@ public static JET_wrn JetSetSystemParameter(
   - paramString  
     Tipo: [System.String](/dotnet/api/system.string)  
     
-    Valore del parametro da impostare, se il parametro è di tipo stringa.
+    Valore del parametro da impostare, se il parametro è un tipo stringa.
 
 #### <a name="return-value"></a>Valore restituito
 

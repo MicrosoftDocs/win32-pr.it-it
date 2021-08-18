@@ -1,6 +1,6 @@
 ---
 title: Strutture comuni dell'API EAPHost
-description: Informazioni sulle strutture comuni dell'API EAPHost. Vedere un elenco di strutture usate da tutte le tecnologie EAPHost.
+description: Informazioni sulle strutture comuni dell'API EAPHost. Vedere un elenco delle strutture usate da tutte le tecnologie EAPHost.
 ms.assetid: f6f3b909-1e89-47f8-853c-c0f3f2414817
 ms.topic: article
 ms.date: 05/31/2018

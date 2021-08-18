@@ -1,9 +1,9 @@
 ---
-title: Enumerazione VMDisplayVideoMode (VPCCOMInterfaces. h)
+title: Enumerazione VMDisplayVideoMode (VPCCOMInterfaces.h)
 description: Specifica la modalità video di visualizzazione.
 ms.assetid: 9ffd1bb5-115d-4554-92c6-5dcf86f904a5
 keywords:
-- VMDisplayVideoMode enumerazione PC virtuale
+- VMDisplayVideoMode enumeration Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b159a8c251c83643ae9897842b313ea9be567e4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76cc5ef5a82ab7a8a74f7613cb6a775f1a8c52210ff937108a58a735f5fa8620
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056429"
 ---
 # <a name="vmdisplayvideomode-enumeration"></a>Enumerazione VMDisplayVideoMode
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Specifica la modalità video di visualizzazione.
 
@@ -45,28 +45,28 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmVideoMode_TextMode"></span><span id="vmvideomode_textmode"></span><span id="VMVIDEOMODE_TEXTMODE"></span>**TextMode vmVideoMode \_**
+<span id="vmVideoMode_TextMode"></span><span id="vmvideomode_textmode"></span><span id="VMVIDEOMODE_TEXTMODE"></span>**VmVideoMode \_ TextMode**
 </dt> <dd>
 
 Modalità testo.
 
 </dd> <dt>
 
-<span id="vmVideoMode_CGAMode"></span><span id="vmvideomode_cgamode"></span><span id="VMVIDEOMODE_CGAMODE"></span>**\_CGAMode vmVideoMode**
+<span id="vmVideoMode_CGAMode"></span><span id="vmvideomode_cgamode"></span><span id="VMVIDEOMODE_CGAMODE"></span>**VmVideoMode \_ CGAMode**
 </dt> <dd>
 
 Modalità CGA.
 
 </dd> <dt>
 
-<span id="vmVideoMode_VGAMode"></span><span id="vmvideomode_vgamode"></span><span id="VMVIDEOMODE_VGAMODE"></span>**\_VGAMode vmVideoMode**
+<span id="vmVideoMode_VGAMode"></span><span id="vmvideomode_vgamode"></span><span id="VMVIDEOMODE_VGAMODE"></span>**VGAMode vmVideoMode \_**
 </dt> <dd>
 
 Modalità VGA.
 
 </dd> <dt>
 
-<span id="vmVideoMode_SVGAMode"></span><span id="vmvideomode_svgamode"></span><span id="VMVIDEOMODE_SVGAMODE"></span>**\_SVGAMode vmVideoMode**
+<span id="vmVideoMode_SVGAMode"></span><span id="vmvideomode_svgamode"></span><span id="VMVIDEOMODE_SVGAMODE"></span>**vmVideoMode \_ SVGAMode**
 </dt> <dd>
 
 Modalità SVGA.
@@ -79,11 +79,11 @@ Modalità SVGA.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Modalità SVGA.
 
 <dl> <dt>
 
-[**IVMDisplay:: VideoMode**](ivmdisplay-videomode.md)
+[**IVMDisplay::VideoMode**](ivmdisplay-videomode.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero del tempo di MostRecentRun dell'attività
-description: Questo esempio recupera l'ora dell'ultima esecuzione dell'attività e la Visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ Recupero dell'attività MostRecentRun Time
+description: Questo esempio recupera l'ora dell'ultima esecuzione dell'attività e la visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 683ff1e1-1cb0-4ef7-bca2-9c3a2b4d1bd0
 keywords:
-- recupero del tempo di esecuzione più recente dell'attività Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, esecuzione più recente dell'attività
+- recupero dell'attività più recente in fase di Utilità di pianificazione
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione, fase di esecuzione più recente dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8cae40de306d79628fa10230091c571e776c5e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70e8a49372a082567f5f454cfd01a84239ff622f7ab6121fa07a1f557976c4de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738571"
 ---
-# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Esempio di codice C/C++: recupero del tempo di MostRecentRun dell'attività
+# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Esempio di codice C/C++: recupero dell'attività MostRecentRun Time
 
-Questo esempio recupera l'ora dell'ultima esecuzione dell'attività e la Visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio recupera l'ora dell'ultima esecuzione dell'attività e la visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

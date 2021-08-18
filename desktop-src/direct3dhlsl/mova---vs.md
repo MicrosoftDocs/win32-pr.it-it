@@ -18,7 +18,7 @@ ms.locfileid: "118986331"
 ---
 # <a name="mova---vs"></a>mova - vs
 
-Spostare i dati da un registro a virgola mobile al registro [indirizzi](dx9-graphics-reference-asm-vs-registers-address.md), a0.
+Spostare i dati da un registro a virgola mobile al [registro indirizzi](dx9-graphics-reference-asm-vs-registers-address.md), a0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ dove
 
 
 
-| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | Mova                   |      | x    | x    | x     | x    | x     |
 
@@ -52,7 +52,7 @@ Sposta i dati a virgola mobile in un registro integer. I valori vengono converti
 
 Il registro indirizzi è l'unico registro di destinazione consentito.
 
-Il frammento di codice seguente illustra le operazioni eseguite.
+Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
 
 
 ```
@@ -69,7 +69,7 @@ else
 
 
 
-Per le versioni 2 \_ x e successive, il registro indirizzi è un vettore di componenti. Pertanto, qualsiasi maschera di scrittura è consentita.
+Per le versioni 2 \_ x e successive, il registro degli indirizzi è un vettore componente. Pertanto, è consentita qualsiasi maschera di scrittura.
 
 
 ```

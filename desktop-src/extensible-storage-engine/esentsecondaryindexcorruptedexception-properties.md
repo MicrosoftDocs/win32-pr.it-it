@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentSecondaryIndexCorruptedException'
+description: Altre informazioni sulle proprietà di EsentSecondaryIndexCorruptedException
 title: Proprietà di EsentSecondaryIndexCorruptedException
 TOCTitle: EsentSecondaryIndexCorruptedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSecondaryIndexCorruptedException
@@ -17,7 +17,7 @@ ms.locfileid: "118981731"
 # <a name="esentsecondaryindexcorruptedexception-properties"></a>Proprietà di EsentSecondaryIndexCorruptedException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentSecondaryIndexCorruptedException](./esentsecondaryindexcorruptedexception-class.md) espone i membri seguenti.
 

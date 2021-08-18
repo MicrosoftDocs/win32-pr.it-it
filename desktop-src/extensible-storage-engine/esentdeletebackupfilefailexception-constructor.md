@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDeleteBackupFileFailException'
+description: Altre informazioni sul costruttore EsentDeleteBackupFileFailException
 title: Costruttore EsentDeleteBackupFileFailException
 TOCTitle: 'EsentDeleteBackupFileFailException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDeleteBackupFileFailException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ace5e669ea243198e8234e85e9820ca65f1ba6e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f012c5b702d2c2809e51287d7dd7c9dfc4255aaa11d0dfc4ba18609ab3522d8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974211"
 ---
 # <a name="esentdeletebackupfilefailexception-constructor"></a>Costruttore EsentDeleteBackupFileFailException
 
 Inizializza una nuova istanza della classe EsentDeleteBackupFileFailException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDeleteBackupFileFailException()
 
 [Membri di EsentDeleteBackupFileFailException](./esentdeletebackupfilefailexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

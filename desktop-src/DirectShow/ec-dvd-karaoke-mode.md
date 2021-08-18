@@ -1,7 +1,7 @@
 ---
-description: Indica che il navigatore DVD ha iniziato a riprodurre i dati del karaoke o ha terminato la riproduzione.
+description: Indica che lo strumento di spostamento DVD ha iniziato o terminato la riproduzione dei dati del DVD.
 ms.assetid: 910bf809-a56a-4d02-9c7e-429769a4ec2b
-title: EC_DVD_KARAOKE_MODE (Dvdevcode. h)
+title: EC_DVD_KARAOKE_MODE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: fb83bc1de9c2933b53935c056b192eca74c4245c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4edbdb337c4b57a7ed09bd63a8ed4fb0d1946b289b369badab64b561000d3e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928571"
 ---
-# <a name="ec_dvd_karaoke_mode"></a>\_ \_ modalità Karaoke DVD \_ EC
+# <a name="ec_dvd_karaoke_mode"></a>EC \_ DVD \_ DVD \_ MODALITÀ
 
-Indica che il [navigatore DVD](data-flow-in-the-dvd-navigator.md) ha iniziato a riprodurre i dati del karaoke o ha terminato la riproduzione.
+Indica che lo strumento di spostamento [DVD ha](data-flow-in-the-dvd-navigator.md) iniziato o terminato la riproduzione dei dati del DVD.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Indica che il [navigatore DVD](data-flow-in-the-dvd-navigator.md) ha iniziato a 
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-. Se **true**, viene riprodotta una traccia del karaoke. In caso contrario, non viene eseguita alcuna traccia del karaoke.
+. Se **TRUE,** viene riprodotta una traccia di tipo "a". In caso contrario, non viene riprodotta alcuna traccia Disa.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Questo evento viene generato in tutti i domini DVD.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

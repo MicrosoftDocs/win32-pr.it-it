@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973420"
 ---
-# <a name="mfpkey_resize_panscanapy-property"></a>Proprietà MFPKEY \_ RESIZE \_ PANSCANAPY
+# <a name="mfpkey_resize_panscanapy-property"></a>Proprietà \_ PANSCANAPY MFPKEY RESIZE \_
 
 Specifica la coordinata y dell'angolo superiore sinistro dell'area di panoramica/analisi.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -29,7 +29,7 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-Il valore è un numero reale a virgola fissa. La parte intera del numero viene archiviata nei 2 byte superiori e la parte frazionaria viene archiviata nei 2 byte inferiori.
+Il valore è un numero reale a virgola fissa. La parte intera del numero viene archiviata nei 2 byte più alti e la parte frazionaria viene archiviata nei 2 byte inferiori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,7 +38,7 @@ Il valore è un numero reale a virgola fissa. La parte intera del numero viene a
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 

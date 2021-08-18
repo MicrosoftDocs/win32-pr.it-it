@@ -1,15 +1,15 @@
 ---
-description: "Evento InkOverlay.Stroke: si verifica quando l'utente disegna un nuovo tratto su qualsiasi tablet."
+description: "Evento InkOverlay.Stroke: si verifica quando l'utente disegna un nuovo tratto su un tablet."
 ms.assetid: 315155ec-0de1-4052-ae7c-51bc3127fbbf
 title: Evento InkOverlay.Stroke (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 408c44cf47ecfbf3ea0cfd0f8306be61efb0f8e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e2836699591b4f1a87ce3d206a795eb13be188def28ea3eadef687a1d96024ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712631"
 ---
 # <a name="inkoverlaystroke-event"></a>Evento InkOverlay.Stroke
 
@@ -74,7 +74,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
@@ -91,7 +91,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 [**Raccolta StrokesAdded Event \[ InkStrokes\]**](inkstrokes-strokesadded.md)
 </dt> <dt>
 
-[**Classe \[ InkOverlay dell'evento StrokesDeleted\]**](inkoverlay-strokesdeleted.md)
+[**Classe InkOverlay dell'evento \[ StrokesDeleted\]**](inkoverlay-strokesdeleted.md)
 </dt> <dt>
 
 [**Interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)

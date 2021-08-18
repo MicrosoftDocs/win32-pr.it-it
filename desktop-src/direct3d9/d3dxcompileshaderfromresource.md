@@ -26,7 +26,7 @@ ms.locfileid: "118988680"
 Compilare un file shader.
 
 > [!Note]  
-> Anziché usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando Fxc.exe compilatore da riga di comando o l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
+> Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe della riga di comando o l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
@@ -77,7 +77,7 @@ Puntatore a una stringa che specifica il nome della risorsa.
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa **con terminazione NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
+Matrice facoltativa con terminazione **NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Matrice facoltativa **con terminazione NULL** di [**strutture D3DXMACRO.**](d3dx
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione \# delle direttive include. Se questo valore è **NULL,** include verrà rispettato durante la compilazione da un file o verrà generato un errore durante la compilazione \# da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o restituiranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usar
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore alla funzione del punto di ingresso dello shader in cui inizia l'esecuzione.
+Puntatore alla funzione del punto di ingresso dello shader da cui ha inizio l'esecuzione.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Puntatore alla funzione del punto di ingresso dello shader in cui inizia l'esecu
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a un profilo shader che determina il set di istruzioni shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile.**](d3dxgetpixelshaderprofile.md)
+Puntatore a un profilo shader che determina il set di istruzioni dello shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile.**](d3dxgetpixelshaderprofile.md)
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice shader compilato, nonché le informazioni sulle tabelle di debug e simboli incorporate.
+Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice dello shader compilato, nonché tutte le informazioni incorporate sulla tabella di debug e simboli.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Restituisce un buffer contenente un elenco di errori e avvisi rilevati durante l
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione come a conoscenza di indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante dello shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
+Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione con informazioni su indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
 
 </dd> </dl>
 

@@ -48,7 +48,7 @@ Abilitare il monitoraggio del debug.
 
 </dd> <dt>
 
-<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT \_ DISABLE**
+<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**DISABILITAZIONE D3DDMT \_**
 </dt> <dd>
 
 Disabilitare il monitoraggio del debug.

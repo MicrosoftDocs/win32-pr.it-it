@@ -1,19 +1,19 @@
 ---
-description: Specifica la luminanza massima della visualizzazione in cui è stato creato il contenuto, in nit. Questo attributo ha la stessa semantica della luminosità minima dello \_ schermo \_ \_ , come definito nello standard CEA-861,3.
+description: Specifica la luminazione massima della visualizzazione in cui è stato creato il contenuto, in Nits. Questo attributo ha la stessa semantica della luminance min display mastering definita nello \_ \_ standard \_ CEA-861.3.
 ms.assetid: 222EBA58-AEF6-4E59-BB5F-64A21A2C0E3C
-title: Attributo MF_MT_MIN_MASTERING_LUMINANCE (Mfapi. h)
+title: MF_MT_MIN_MASTERING_LUMINANCE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b631cac19328c1e4298a8e37cb9e2fcdbec0923b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7017a55416b24684ed2b1a260510051e7217d7ae88ece496d3ee78cde2b69071
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714451"
 ---
-# <a name="mf_mt_min_mastering_luminance-attribute"></a>\_Attributo di \_ \_ \_ luminanza master per MF mt min
+# <a name="mf_mt_min_mastering_luminance-attribute"></a>Attributo MF \_ MT \_ MIN \_ MASTERING \_ LUMINANCE
 
-Specifica la luminanza massima della visualizzazione in cui è stato creato il contenuto, in nit. Questo attributo ha la stessa semantica della **\_ \_ \_ luminosità minima dello schermo** , come definito nello standard CEA-861,3.
+Specifica la luminazione massima della visualizzazione in cui è stato creato il contenuto, in Nits. Questo attributo ha la stessa semantica della **\_ \_ \_ luminance min display mastering** definita nello standard CEA-861.3.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ Specifica la luminanza massima della visualizzazione in cui è stato creato il c
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mfapi. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Uso di due sessioni di codifica
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | Uso di due sessioni di codifica
+title: Uso di due passaggi di codifica
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Uso di due passaggi di codifica
 ms.assetid: 953313d4-4a37-4064-b4c3-b7479c87207b
 keywords:
-- L'uso di due codifiche passa il formato Windows Media
+- Uso di due passaggi di codifica in formato windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d09d5617e2aa9e4c455f214dc38e3ecf729e3f6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: cdaed5adc5c584bd16289f67ecbf55821994dc0e3c2c0af9224ca2b5c1d6a301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707381"
 ---
-# <a name="using-two-encoding-passes"></a>Uso di due sessioni di codifica
+# <a name="using-two-encoding-passes"></a>Uso di due passaggi di codifica
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

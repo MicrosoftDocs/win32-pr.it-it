@@ -1,25 +1,25 @@
 ---
-description: L'oggetto criteri è un oggetto contenitore.
+description: L'oggetto Policy è un oggetto contenitore.
 ms.assetid: ba8c4f61-8cbc-4a36-8336-8a84d84b46e4
-title: Tipo di oggetto Criteri
+title: Tipo di oggetto criteri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d916cf03a20edd3e6445b9a7b23219aed862e4da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5d443af280b2c9cf118f18135aa51a498886a48b6ed3f1632a37e6b771687f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004849"
 ---
-# <a name="the-policy-object-type"></a>Tipo di oggetto Criteri
+# <a name="the-policy-object-type"></a>Tipo di oggetto criteri
 
-L'oggetto [**criteri**](policy-object.md) è un oggetto contenitore. I tipi di oggetti seguenti possono trovarsi all'interno di questo contenitore:
+[**L'oggetto**](policy-object.md) Policy è un oggetto contenitore. I tipi di oggetto seguenti possono risiedere all'interno di questo contenitore:
 
--   Oggetti [**account**](account-object.md)
--   Oggetto [**trustedDomain**](trusteddomain-object.md)
--   Oggetto Secret
+-   [**Oggetti account**](account-object.md)
+-   [**Oggetto TrustedDomain**](trusteddomain-object.md)
+-   Oggetto segreto
 
-È presente una sola istanza dell'oggetto [**policy**](policy-object.md) . Non può essere né creato né eliminato definitivamente.
+Esiste una sola istanza [**dell'oggetto**](policy-object.md) Policy. Non può essere né creata né distrutta.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IAMSetErrorLog imposta o recupera un log degli errori in servizi di modifica DirectShow (DES).
+description: L'interfaccia IAMSetErrorLog imposta o recupera un log degli errori in DirectShow Editing Services (DES).
 ms.assetid: ce658533-eacf-4b5d-9910-dca918de09e7
-title: Interfaccia IAMSetErrorLog (qedit. h)
+title: Interfaccia IAMSetErrorLog (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,40 +14,40 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c0a24d29625bf08bc2f4c728a61f5188e8bec211
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a16e56de7f350b30c1b92c0c94ff3e3e06afc31b363c0b3a6e98017ce483aec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756401"
 ---
 # <a name="iamseterrorlog-interface"></a>Interfaccia IAMSetErrorLog
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `IAMSetErrorLog` interfaccia imposta o recupera un log degli errori in [servizi di modifica DirectShow](directshow-editing-services.md) (des). L'oggetto sequenza temporale implementa questa interfaccia. Le applicazioni possono utilizzare questa interfaccia per registrare gli errori di rendering in fase di esecuzione. Implementare l'interfaccia [**IAMErrorLog**](iamerrorlog.md) nell'applicazione, quindi chiamare il metodo [**IAMSetErrorLog::p log degli \_ errori UT**](iamseterrorlog-put-errorlog.md) nella sequenza temporale.
+`IAMSetErrorLog`L'interfaccia imposta o recupera un log degli errori in DirectShow Editing [Services](directshow-editing-services.md) (DES). L'oggetto sequenza temporale implementa questa interfaccia. Le applicazioni possono usare questa interfaccia per registrare gli errori di rendering in fase di esecuzione. Implementare [**l'interfaccia IAMErrorLog**](iamerrorlog.md) nell'applicazione e quindi chiamare il metodo [**IAMSetErrorLog::p ut \_ ErrorLog**](iamseterrorlog-put-errorlog.md) nella sequenza temporale.
 
-Per ulteriori informazioni sull'utilizzo di questa interfaccia, vedere [registrazione degli errori](logging-errors.md).
+Per altre informazioni sull'uso di questa interfaccia, vedere [Registrazione degli errori](logging-errors.md).
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IAMSetErrorLog** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IAMSetErrorLog** dispone anche di questi tipi di membri:
+**L'interfaccia IAMSetErrorLog** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMSetErrorLog** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IAMSetErrorLog** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IAMSetErrorLog.**
 
 
 
 | Metodo                                               | Descrizione                                                 |
 |:-----------------------------------------------------|:------------------------------------------------------------|
-| [**Ottieni \_ log degli errori**](iamseterrorlog-get-errorlog.md) | Recupera il log degli errori corrente per questo oggetto.<br/> |
-| [**Inserisci \_ log degli errori**](iamseterrorlog-put-errorlog.md) | Specifica un log degli errori per l'oggetto.<br/>           |
+| [**get \_ ErrorLog**](iamseterrorlog-get-errorlog.md) | Recupera il log degli errori corrente per questo oggetto .<br/> |
+| [**put \_ ErrorLog**](iamseterrorlog-put-errorlog.md) | Specifica un log degli errori per l'oggetto .<br/>           |
 
 
 
@@ -56,12 +56,12 @@ L'interfaccia **IAMSetErrorLog** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -71,8 +71,8 @@ L'interfaccia **IAMSetErrorLog** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

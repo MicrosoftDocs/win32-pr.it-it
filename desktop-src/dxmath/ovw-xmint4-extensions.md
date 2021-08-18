@@ -4,12 +4,12 @@ ms.assetid: bbe13052-f07d-488f-b643-535195d4e9ea
 title: Estensioni XMINT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaa8736b53760c533c711d1f72c6246690073d77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77eda262c884b2beee59022a5369ae58719b64ca01b2f1c38a0faaa751391d31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841511"
 ---
 # <a name="xmint4-extensions"></a>Estensioni XMINT4
 

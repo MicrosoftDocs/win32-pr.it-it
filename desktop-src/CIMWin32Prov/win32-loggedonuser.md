@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione LoggedOnUser Win32 mette in relazione una sessione e un account utente.
+description: La classe WMI di associazione Win32 \_ LoggedOnUser mette in relazione una sessione e un account utente.
 ms.assetid: b1233f90-4898-4ced-84d2-0858027e935a
 ms.tgt_platform: multiple
-title: Classe Win32_LoggedOnUser
+title: Win32_LoggedOnUser classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0f851c85563095a66197b0dde8e6cbddc9581f07
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 73cb34246f7b31393527aef053c0cb8cbd12702217dd7113d5714ac022bc3716
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973446"
 ---
-# <a name="win32_loggedonuser-class"></a>Win32 \_ LoggedOnUser (classe)
+# <a name="win32_loggedonuser-class"></a>Classe Win32 \_ LoggedOnUser
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ LoggedOnUser Win32** mette in relazione una sessione e un account utente.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di **associazione Win32 \_ LoggedOnUser** mette in relazione una sessione e un account utente.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,29 +42,29 @@ class Win32_LoggedOnUser : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ LoggedOnUser** presenta questi tipi di membri:
+La **classe Win32 \_ LoggedOnUser** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ LoggedOnUser** dispone di queste proprietà.
+La **classe Win32 \_ LoggedOnUser** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ account Win32**
+Tipo di dati: **\_ Account Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) (precedente), [**chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (Antecedent), [**chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-[**\_ Account Win32**](win32-account.md) che descrive l'account utilizzato nell'avvio della sessione. L'account può essere un account utente o un account di sistema.
+Account [**Win32 \_ che**](win32-account.md) descrive l'account usato nell'avvio della sessione. L'account può essere un account utente o un account di sistema.
 
 </dd> <dt>
 
@@ -77,20 +77,20 @@ Tipo di dati: **Win32 \_ LogonSession**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) (dipendente), [**chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (dipendente), [**chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-[**\_ LogonSession Win32**](win32-logonsessionmappeddisk.md) che descrive la sessione attualmente utilizzata dall'account.
+Oggetto [**\_ LogonSession Win32**](win32-logonsessionmappeddisk.md) che descrive la sessione attualmente in uso dall'account.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ LoggedOnUser** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe Win32 \_ LoggedOnUser** è derivata da [**CIM \_ Dependency**](cim-dependency.md).
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di PowerShell per la [funzione Get-loggedonuser](https://Gallery.TechNet.Microsoft.Com/scriptcenter/0e43993a-895a-4afe-a2b2-045a5146048a) ottiene gli utenti connessi in un computer locale o remoto, con le informazioni sulla sessione.
+L'esempio di funzione [get-loggedonuser](https://Gallery.TechNet.Microsoft.Com/scriptcenter/0e43993a-895a-4afe-a2b2-045a5146048a) di PowerShell ottiene gli utenti connessi in un computer locale o remoto, con le informazioni di sessione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ L'esempio di PowerShell per la [funzione Get-loggedonuser](https://Gallery.TechN
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -110,7 +110,7 @@ L'esempio di PowerShell per la [funzione Get-loggedonuser](https://Gallery.TechN
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

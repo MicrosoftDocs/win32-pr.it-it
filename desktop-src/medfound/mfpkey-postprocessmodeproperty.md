@@ -33,16 +33,16 @@ Impostare questa proprietà su uno dei valori seguenti.
 |-------|----------------------------------------------------------------------------------------|
 | -1    | Il decodificatore imposta la modalità di post-elaborazione in modo adattivo in base alle risorse della CPU disponibili. |
 | 0     | Il decodificatore non esegue alcuna post-elaborazione.                                               |
-| 1     | fIl decodificatore esegue lo sblocco rapido.                                                 |
-| 2     | Il decodificatore esegue lo sblocco completo.                                                  |
-| 3     | Il decodificatore esegue operazioni veloci di deblocking e derivazione.                                    |
-| 4     | Il decodificatore esegue il deblocking e la derivazione completi.                                    |
+| 1     | fIl decodificatore esegue la deblocking veloce.                                                 |
+| 2     | Il decodificatore esegue il deblocking completo.                                                  |
+| 3     | Il decodificatore esegue la deblocking e la derivazione veloci.                                    |
+| 4     | Il decodificatore esegue il deblocking completo e la derivazione.                                    |
 
 
 
  
 
-Poiché il valore di questa proprietà va da 0 a 4, aumentano la complessità di decodifica, l'uso delle risorse della CPU e la qualità dell'immagine.
+Con il valore di questa proprietà compreso tra 0 e 4, aumentano la complessità di decodifica, l'uso delle risorse della CPU e la qualità dell'immagine.
 
 ## <a name="requirements"></a>Requisiti
 

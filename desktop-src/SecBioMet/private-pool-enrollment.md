@@ -1,27 +1,27 @@
 ---
 title: Registrazione del pool privato
-description: Contiene il progetto della console di registrazione.
+description: Contiene il progetto console di registrazione.
 ms.assetid: 666CD6FF-A6A2-4992-81EB-F520C8FE5D95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 418b601653b16aba60efdd747f7e5f26150e9d56
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a3c4ae86ac04190f1bf8e6fde8bf57b4fc0d0208ad4a03bafaf0de2a8f4502a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977061"
 ---
 # <a name="private-pool-enrollment"></a>Registrazione del pool privato
 
 Le sezioni seguenti contengono il codice necessario per la registrazione del pool di sensori privati.
 
--   [Targetver. h](#targetverh)
--   [Stdafx. h](#stdafxh)
--   [PrivatePoolEnroll. cpp](#privatepoolenrollcpp)
+-   [Targetver.h](#targetverh)
+-   [Stdafx.h](#stdafxh)
+-   [PrivatePoolEnroll.cpp](#privatepoolenrollcpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni successive.
+Questo esempio è stato creato per Windows 7 e versioni successive.
 
 
 ```C++
@@ -65,7 +65,7 @@ Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni succ
 
 
 
-## <a name="privatepoolenrollcpp"></a>PrivatePoolEnroll. cpp
+## <a name="privatepoolenrollcpp"></a>PrivatePoolEnroll.cpp
 
 
 ```C++
@@ -472,9 +472,9 @@ static void displayIdentity(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

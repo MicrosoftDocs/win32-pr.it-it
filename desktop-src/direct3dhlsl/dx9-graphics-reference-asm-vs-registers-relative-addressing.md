@@ -1,6 +1,6 @@
 ---
-title: Indirizzamento relativo (informazioni di riferimento su HLSL VS)
-description: Per i vertex shader, la sintassi \ \ può essere usata solo nei tipi di registro che possono essere relativamente indirizzati in determinati modelli shader.
+title: Indirizzamento relativo (informazioni di riferimento su Visual Studio HLSL)
+description: Per i vertex shader, la sintassi \ \ può essere usata solo in tipi di registro che possono essere relativamente gestiti in determinati modelli di shader.
 ms.assetid: 9f9d2499-73a5-4c9d-9dce-94c914933334
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2bbba694878ba84ac3c2fa9c4e8058bb0d91830e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 82fe97a6b78a2257208f3072d5932523d5cd04ba1d044b8a57fad5f3c212b94d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744341"
 ---
-# <a name="relative-addressing-hlsl-vs-reference"></a>Indirizzamento relativo (informazioni di riferimento su HLSL VS)
+# <a name="relative-addressing-hlsl-vs-reference"></a>Indirizzamento relativo (informazioni di riferimento su Visual Studio HLSL)
 
-La \[ \] sintassi può essere usata solo nei tipi di registro che possono essere relativamente indirizzati in determinati modelli shader. Le forme di \[ \] sintassi supportate sono elencate di seguito:
+La \[ \] sintassi può essere usata solo in tipi di registro che possono essere relativamente gestiti in determinati modelli di shader. Le forme di \[ \] sintassi supportate sono elencate di seguito:
 
 Dove:
 
@@ -32,7 +32,7 @@ Dove:
 |-------------------------------------------|---------------------------------------|----------------------------------|
 | R \[ A + m0 + ... + mj \]                  | A + m0 + ... + mj                     | c \[ a0.x + 3 + 7 \]              |
 | R \[ k ( = \] Rk )                         | k                                     | c \[ 10 \] ( = c10 )              |
-| R \[ A \]                                  | Una                                     | c \[ a0.y \]                      |
+| R \[ A \]                                  | A                                     | c \[ a0.y \]                      |
 | Rk \[ n0 + ... + ni + A + m0 + ... + mj \] | A + k + n0 + ... + ni + m0 + ... + mj | c8 \[ 3 + 2 + a0.w + 5 + 6 + 1 \] |
 | R \[ n0 + ... + ni + A + m0 + ... + mj \]  | A + n0 + ... + ni + m0 + ... + mj     | c \[ 2 + 1 + aL + 3 + 4 + 5 \]    |
 | Rk \[ A \]                                 | A + k                                 | c12 \[ aL \] , c0 \[ a0.z \]        |
@@ -48,7 +48,7 @@ I registri sono disponibili nelle versioni seguenti:
 
 
 
-| Tipo di registrazione | Versioni di Vertex Shader |
+| Tipo di registro | Versioni vertex shader |
 |---------------|------------------------|
 | a0            | Tutti                    |
 | aL            | vs \_ 2 \_ 0 e versioni successive    |

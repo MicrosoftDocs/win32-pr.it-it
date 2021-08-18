@@ -1,12 +1,12 @@
 ---
-title: Metodo SetColorDepth della classe Win32_TSClientSetting
+title: Metodo SetColorDepth della Win32_TSClientSetting classe
 description: Il metodo SetColorDepth imposta la proprietà ColorDepth per la classe.
 ms.assetid: 1ab8ac41-cbbf-4077-b91e-692856ccba42
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetColorDepth
-- Metodo SetColorDepth Servizi Desktop remoto, classe Win32_TSClientSetting
-- Classe Win32_TSClientSetting Servizi Desktop remoto, metodo SetColorDepth
+- Metodo SetColorDepth Servizi Desktop remoto
+- Metodo SetColorDepth Servizi Desktop remoto , Win32_TSClientSetting classe
+- Win32_TSClientSetting classe Servizi Desktop remoto metodo SetColorDepth
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f2b05c6b8ff02b78f48ff45751bdc8e57ef46a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da2c7f31ef04fdfb9dcbfee5e1ca3dcec1386a7dbd0c20824b00bdfe41ac6d48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999861"
 ---
-# <a name="setcolordepth-method-of-the-win32_tsclientsetting-class"></a>Metodo SetColorDepth della \_ classe TSClientSetting Win32
+# <a name="setcolordepth-method-of-the-win32_tsclientsetting-class"></a>Metodo SetColorDepth della classe \_ Win32 TSClientSetting
 
-Il metodo **SetColorDepth** imposta la proprietà **ColorDepth** per la classe.
+Il **metodo SetColorDepth** imposta la **proprietà ColorDepth** per la classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ uint32 SetColorDepth(
 
 <dl> <dt>
 
-*ColorDepth* \[ in\]
+*ColorDepth* \[ Pollici\]
 </dt> <dd>
 
-Nuovo valore per la proprietà **ColorDepth** .
+Nuovo valore per la **proprietà ColorDepth.**
 
 <dt>
 
@@ -107,11 +107,11 @@ Nuovo valore per la proprietà **ColorDepth** .
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce Success in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto codici di errore del provider WMI,](terminal-services-wmi-provider-error-codes.md) vedere . Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,8 +121,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -131,7 +131,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSClientSetting Win32**](win32-tsclientsetting.md)
+[**Win32 \_ TSClientSetting**](win32-tsclientsetting.md)
 </dt> </dl>
 
  

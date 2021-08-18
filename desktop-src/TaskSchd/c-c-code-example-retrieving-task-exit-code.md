@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero del codice di uscita dell'attività
-description: In questo esempio viene recuperato l'ultimo codice di uscita restituito da un'attività nota. Il valore restituito \ 0034; 0 \ 0034; indica che l'attività non è mai stata eseguita. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ recupero del codice di uscita dell'attività
+description: In questo esempio viene recuperato l'ultimo codice di uscita restituito da un'attività nota. Il valore restituito \ 0034;0 \ 0034 indica che l'attività non è mai stata eseguita. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: e7bfe645-7f4c-4700-9adf-c581e6895aec
 keywords:
 - recupero del commento dell'attività Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, commento dell'attività
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione , commento dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5911cad3831dc8da04e44f161a644bda9742bd33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0908ae8fc15e3ae34c06f02267e9bad396956181fa058c0bf757b8f8486783d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738851"
 ---
 # <a name="cc-code-example-retrieving-task-exit-code"></a>Esempio di codice C/C++: recupero del codice di uscita dell'attività
 
-In questo esempio viene recuperato l'ultimo codice di uscita restituito da un'attività nota. Un valore restituito pari a "0" indica che l'attività non è mai stata eseguita. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+In questo esempio viene recuperato l'ultimo codice di uscita restituito da un'attività nota. Il valore restituito "0" indica che l'attività non è mai stata eseguita. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -113,12 +113,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

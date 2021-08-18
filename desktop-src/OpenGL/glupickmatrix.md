@@ -54,7 +54,7 @@ Coordinata x della finestra di un'area di selezione.
 *y* 
 </dt> <dd>
 
-Coordinata y della finestra di un'area di selezione.
+Coordinata della finestra y di un'area di selezione.
 
 </dd> <dt>
 
@@ -87,22 +87,22 @@ Questa funzione non restituisce un valore.
 
 La **funzione gluPickMatrix** crea una matrice di proiezione che è possibile usare per limitare il disegno a una piccola area del viewport.
 
-1.  Usare **gluPickMatrix per limitare** il disegno a una piccola area intorno al cursore.
+1.  Usare **gluPickMatrix** per limitare il disegno a una piccola area intorno al cursore.
 2.  Immettere la modalità di selezione [**(con glRenderMode**](glrendermode.md)) e quindi eseguire nuovamente il rerender della scena.
 
-    Tutte le primitive disegnate accanto al cursore vengono identificate e archiviate nel buffer di selezione.
+    Tutte le primitive disegnate vicino al cursore vengono identificate e archiviate nel buffer di selezione.
 
-La matrice creata **da gluPickMatrix** viene moltiplicata per la matrice corrente come se [**glMultMatrix**](glmultmatrix.md) fosse stato chiamato con la matrice generata.
+La matrice creata da **gluPickMatrix** viene moltiplicata per la matrice corrente come se [**glMultMatrix**](glmultmatrix.md) fosse chiamato con la matrice generata.
 
-1.  Chiamare [**glLoadIdentity per**](glloadidentity.md) caricare una matrice di identità nello stack della matrice prospettica.
-2.  Chiamare **gluPickMatrix.**
-3.  Chiamare una funzione (ad esempio [**gluPerspective)**](gluperspective.md)per moltiplicare la matrice prospettica per la matrice di selezione.
+1.  Chiamare [**glLoadIdentity**](glloadidentity.md) per caricare una matrice di identità nello stack della matrice prospettica.
+2.  Chiamare **gluPickMatrix**.
+3.  Chiamare una funzione ( ad esempio [**gluPerspective**](gluperspective.md)) per moltiplicare la matrice prospettica per la matrice di selezione.
 
-Quando si **usa gluPickMatrix** per selezionare B-Spline razionale non uniforme [(NURBS),](using-nurbs-curves-and-surfaces.md)prestare attenzione a disattivare la proprietà NURBS, GLU \_ AUTO LOAD \_ \_ MATRIX. Se GLU AUTO LOAD MATRIX non è disattivata, qualsiasi superficie NURBS sottoposta a rendering viene suddivisa in modo diverso con la matrice di selezione rispetto a come è stata suddivisa senza la matrice \_ \_ di \_ selezione.
+Quando si **usa gluPickMatrix** per selezionare B-Spline razionale non uniforme [(NURBS),](using-nurbs-curves-and-surfaces.md)prestare attenzione a disattivare la proprietà NURBS GLU \_ AUTO LOAD \_ \_ MATRIX. Se GLU AUTO LOAD MATRIX non è disattivato, qualsiasi superficie NURBS sottoposta a rendering viene suddivisa in modo diverso con la matrice di selezione da come è stata suddivisa senza la matrice \_ \_ di \_ selezione.
 
 ## <a name="examples"></a>Esempio
 
-Quando si esegue il rendering di una scena come segue:
+Quando si esegue il rendering di una scena, seguire questa procedura:
 
 
 ```
@@ -115,7 +115,7 @@ glMatrixMode(GL_MODELVIEW);
 
 
 
-Il codice seguente seleziona una parte del riquadro di visualizzazione:
+Il codice seguente seleziona una parte del viewport:
 
 
 ```

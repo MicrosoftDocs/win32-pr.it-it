@@ -1,6 +1,6 @@
 ---
 description: Altre informazioni sulla proprietà ColumnStream.Position
-title: ColumnStream.Position - proprietà
+title: Proprietà ColumnStream.Position
 TOCTitle: 'Position property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnStream.Position
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.position(v=EXCHG.10)
@@ -33,11 +33,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118982631"
 ---
-# <a name="columnstreamposition-property"></a>ColumnStream.Position - proprietà
+# <a name="columnstreamposition-property"></a>Proprietà ColumnStream.Position
 
 Ottiene o imposta la posizione corrente nel flusso.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

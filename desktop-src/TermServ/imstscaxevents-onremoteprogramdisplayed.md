@@ -4,9 +4,9 @@ description: Chiamato quando viene visualizzato un programma RemoteApp.
 ms.assetid: 24f5ea52-0c13-4024-9448-5c2c1896ca8b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnRemoteProgramDisplayed
+- Metodo OnRemoteProgramDisplayed Servizi Desktop remoto
 - Metodo OnRemoteProgramDisplayed Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnRemoteProgramDisplayed
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto metodo , OnRemoteProgramDisplayed
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 584e54c487ec24a3c165fdd5eb8e22f243e07f23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df50f9a536b367b203f395d9c856562b8967d8a5830704a2e9bbb4c69152f202
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058819"
 ---
-# <a name="imstscaxeventsonremoteprogramdisplayed-method"></a>Metodo IMsTscAxEvents:: OnRemoteProgramDisplayed
+# <a name="imstscaxeventsonremoteprogramdisplayed-method"></a>Metodo IMsTscAxEvents::OnRemoteProgramDisplayed
 
 Chiamato quando viene visualizzato un programma RemoteApp.
 
@@ -44,23 +44,23 @@ VOID OnRemoteProgramDisplayed(
 
 <dl> <dt>
 
-*vbDisplayed* \[ in\]
+*vbDisplayed* \[ Pollici\]
 </dt> <dd>
 
 Indica se il programma RemoteApp è visualizzato o nascosto.
 
 </dd> <dt>
 
-*uDisplayInformation* \[ in\]
+*uDisplayInformation* \[ Pollici\]
 </dt> <dd>
 
-Informazioni di visualizzazione.
+Informazioni visualizzate.
 
 <dt>
 
 <span id="RAIL_APPDISPLAY_AUTORECONNECT"></span><span id="rail_appdisplay_autoreconnect"></span>
 
-<span id="RAIL_APPDISPLAY_AUTORECONNECT"></span><span id="rail_appdisplay_autoreconnect"></span>**\_AUTORECONNECT APPDISPLAY \_ Rail**
+<span id="RAIL_APPDISPLAY_AUTORECONNECT"></span><span id="rail_appdisplay_autoreconnect"></span>**RAIL \_ APPDISPLAY \_ AUTORECONNECT**
 
 
 </dt> <dd>
@@ -71,12 +71,12 @@ Informazioni di visualizzazione.
 
 <span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>
 
-<span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>**\_DESKTOPHOOKED APPDISPLAY \_ Rail**
+<span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>**RAIL \_ APPDISPLAY \_ DESKTOPHOOKED**
 
 
 </dt> <dd>
 
-Il numero di RemoteApp è stato appena passato a zero.
+Il conteggio di RemoteApp è appena passato a zero.
 
 </dd> </dl> </dd> </dl>
 
@@ -86,7 +86,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Implementare questo metodo nel sink di evento per ricevere una notifica che RemoteApp è stato visualizzato.
+Implementare questo metodo nel sink di evento per ricevere la notifica che è stata visualizzata una remoteapp.
 
 ## <a name="requirements"></a>Requisiti
 

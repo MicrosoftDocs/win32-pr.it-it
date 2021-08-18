@@ -1,7 +1,7 @@
 - name: Servizio Copia Shadow del volume
   href: volume-shadow-copy-service-portal.md
   items:
-    - name: Panoramica di Servizio Copia Shadow del volume
+    - name: Servizio Copia Shadow del volume panoramica
       href: volume-shadow-copy-service-overview.md
       items:
         - name: Novità di VSS
@@ -21,7 +21,7 @@
                       href: porting-backup-applications.md
                     - name: Backup e ripristino dello stato del sistema
                       href: locating-additional-system-files.md
-                    - name: Utilizzo delle funzionalità di sicurezza e file System
+                    - name: Uso del file system e delle funzionalità di sicurezza
                       href: working-with-file-system-and-security-features.md
                     - name: Punti di giunzione
                       href: junction-points.md
@@ -36,21 +36,21 @@
                   href: new-functionality-available-in-the-current-release.md
                 - name: Funzionalità rimosse da Windows Server 2003
                   href: functionality-removed-from-the-current-release.md
-                - name: Modifiche semantiche di Windows Server 2003
+                - name: Modifiche semantiche a Windows Server 2003
                   href: semantic-changes-to-the-current-release.md
-                - name: Limitazioni in Windows Server 2003
+                - name: Restrizioni in Windows Server 2003
                   href: restrictions-in-the-current-release-of-vss.md
         - name: Informazioni sul Servizio Copia Shadow del volume
           href: about-the-volume-shadow-copy-service.md
           items:
-            - name: Problemi comuni di backup del volume
+            - name: Problemi comuni di backup dei volumi
               href: common-volume-backup-issues.md
             - name: Modello VSS
               href: the-vss-model.md
-            - name: Concetti di base su VSS
+            - name: Concetti di base di VSS
               href: basic-vss-concepts.md
               items:
-                - name: Servizio Copia Shadow del volume
+                - name: Oggetto Servizio Copia Shadow del volume
                   href: the-volume-shadow-copy-service.md
                 - name: Copie shadow e set di copie shadow
                   href: shadow-copies-and-shadow-copy-sets.md
@@ -62,7 +62,7 @@
                   href: writers.md
             - name: VSS writer inclusi
               href: in-box-vss-writers.md
-        - name: Uso della Servizio Copia Shadow del volume
+        - name: Uso del Servizio Copia Shadow del volume
           href: using-the-volume-shadow-copy-service.md
           items:
             - name: Compatibilità delle applicazioni VSS
@@ -70,9 +70,9 @@
             - name: Configurazione di VSS
               href: configuring-vss.md
               items:
-                - name: Configurazioni del contesto per copie shadow
+                - name: Configurazioni del contesto della copia shadow
                   href: shadow-copy-context-configurations.md
-                - name: Configurazioni del backup VSS
+                - name: Configurazioni di backup vss
                   href: vss-backup-configurations.md
                   items:
                     - name: Stato backup VSS
@@ -81,62 +81,62 @@
                       href: writer-backup-schema-support.md
                     - name: Supporto dello schema a livello di file
                       href: file-level-schema-support.md
-                - name: Configurazioni del ripristino VSS
+                - name: Configurazioni di ripristino vss
                   href: vss-restore-configurations.md
                   items:
-                    - name: Stato ripristino VSS
+                    - name: Stato di ripristino vss
                       href: vss-restore-state.md
-                    - name: Impostazione di metodi di ripristino VSS
+                    - name: Impostazione dei metodi di ripristino vss
                       href: setting-vss-restore-methods.md
-                    - name: Impostazione delle destinazioni di ripristino VSS
+                    - name: Impostazione delle destinazioni di ripristino vss
                       href: setting-vss-restore-targets.md
-                    - name: Impostazione delle opzioni di ripristino VSS
+                    - name: Impostazione delle opzioni di ripristino vss
                       href: setting-vss-restore-options.md
-            - name: Metadati VSS
+            - name: Metadati di VSS
               href: vss-metadata.md
               items:
-                - name: Utilizzo del documento di metadati del writer
+                - name: Uso del documento dei metadati del writer
                   href: working-with-the-writer-metadata-document.md
                   items:
                     - name: Ciclo di vita del documento dei metadati del writer
                       href: writer-metadata-document-life-cycle.md
                     - name: Contenuto del documento dei metadati del writer
                       href: writer-metadata-document-contents.md
-                - name: Utilizzo del documento componenti di backup
+                - name: Uso del documento Componenti di backup
                   href: working-with-the-backup-components-document.md
                   items:
-                    - name: Ciclo di vita del documento dei componenti di backup
+                    - name: Ciclo di vita dei documenti dei componenti di backup
                       href: backup-components-document-life-cycle.md
-                    - name: Contenuto del documento dei componenti di backup
+                    - name: Contenuto del documento componenti di backup
                       href: backup-components-document-contents.md
-                - name: Componenti dei metadati VSS
+                - name: Componenti dei metadati di VSS
                   href: vss-metadata-components.md
                   items:
                     - name: Tipi di componenti
                       href: component-types.md
-                    - name: Definizione dei componenti per Writer
+                    - name: Definizione di componenti di writer
                       href: definition-of-components-by-writers.md
                     - name: Uso dei componenti da parte del richiedente
                       href: use-of-components-by-the-requestor.md
-            - name: Uso della selezione e dei percorsi logici
+            - name: Uso della selezionabilità e dei percorsi logici
               href: working-with-selectability-and-logical-paths.md
               items:
                 - name: Percorso logico dei componenti
                   href: logical-pathing-of-components.md
-                - name: Utilizzo della selezione per il backup
+                - name: Uso della selezionabilità per il backup
                   href: working-with-selectability-for-backup.md
-                - name: Utilizzo della selezione per il ripristino e i sottocomponenti
+                - name: Uso della selezionabilità per il ripristino e i sottocomponenti
                   href: working-with-selectability-for-restore-and-subcomponents.md
-                - name: Selezione e utilizzo delle proprietà dei componenti
+                - name: Selezionabilità e uso delle proprietà dei componenti
                   href: selectability-and-working-with-component-properties.md
-                - name: Dipendenze tra componenti gestiti da Writer diversi
+                - name: Dipendenze tra componenti gestiti da writer diversi
                   href: dependencies-between-components-managed-by-different-writers.md
-            - name: Cenni preliminari sull'elaborazione di un backup in VSS
+            - name: Panoramica dell'elaborazione di un backup in VSS
               href: overview-of-processing-a-backup-under-vss.md
               items:
                 - name: Panoramica dell'inizializzazione del backup
                   href: overview-of-backup-initialization.md
-                - name: Panoramica della fase di individuazione del backup
+                - name: Panoramica della fase di individuazione dei backup
                   href: overview-of-the-backup-discovery-phase.md
                 - name: Panoramica delle attività di pre-backup
                   href: overview-of-pre-backup-tasks.md
@@ -151,32 +151,32 @@
                   href: overview-of-restore-initialization.md
                 - name: Panoramica della preparazione per il ripristino
                   href: overview-of-preparing-for-restore.md
-                - name: Panoramica del ripristino dei file effettivi
+                - name: Panoramica del ripristino effettivo dei file
                   href: overview-of-actual-file-restoration.md
-                - name: Panoramica della pulizia e della chiusura del ripristino
+                - name: Panoramica della pulizia e della terminazione del ripristino
                   href: overview-of-restore-clean-up-and-termination.md
-            - name: Sviluppo di provider hardware VSS
+            - name: Sviluppo di provider di hardware VSS
               href: developing-vss-hardware-providers.md
               items:
                 - name: Registrazione e caricamento del provider di copie shadow
                   href: shadow-copy-provider-registration-and-loading.md
-                - name: Creazione di copie shadow per i provider
+                - name: Creazione della copia shadow per i provider
                   href: shadow-copy-creation-for-providers.md
-                - name: Interazioni e comportamenti del provider hardware
+                - name: Interazioni e comportamenti del provider di hardware
                   href: hardware-provider-interactions-and-behaviors.md
                   items:
                     - name: Processo di creazione della copia shadow
                       href: the-shadow-copy-creation-process.md
-                    - name: Comportamenti necessari per i provider di copie shadow
+                    - name: Comportamenti obbligatori per i provider di copie shadow
                       href: required-behaviors-for-shadow-copy-providers.md
                     - name: Transizioni di stato nei provider di copie shadow
                       href: state-transitions-in-shadow-copy-providers.md
                     - name: Gestione degli errori nei provider di copie shadow
                       href: error-handling-in-shadow-copy-providers.md
-        - name: Dettagli di implementazione VSS
+        - name: Dettagli sull'implementazione di VSS
           href: vss-implementation-details.md
           items:
-            - name: Dettagli di implementazione per i backup VSS
+            - name: Dettagli di implementazione per i backup vss
               href: implementation-details-for-vss-backups.md
               items:
                 - name: Generazione di un set di backup
@@ -184,135 +184,135 @@
                 - name: Backup incrementali e differenziali
                   href: incremental-and-differential-backups.md
                   items:
-                    - name: Ruolo writer nei backup incrementali e differenziali VSS
+                    - name: Ruolo writer nei backup incrementali e differenziali di VSS
                       href: writer-role-in-vss-incremental-and-differential-backups.md
-                    - name: Ruolo del richiedente nei backup incrementali e differenziali VSS
+                    - name: Ruolo richiedente nei backup incrementali e differenziali di VSS
                       href: requestor-role-in-vss-incremental-and-differential-backups.md
-                    - name: Ruolo di writer per il backup di archivi complessi
+                    - name: Ruolo writer nel backup di archivi complessi
                       href: writer-role-in-backing-up-complex-stores.md
-                    - name: Ruolo del richiedente nel backup di archivi complessi
+                    - name: Ruolo richiedente nel backup di archivi complessi
                       href: requestor-role-in-backing-up-complex-stores.md
-                - name: Backup senza partecipazione del writer
+                - name: Backup senza partecipazione al writer
                   href: backups-without-writer-participation.md
-                - name: Uso delle cartelle e dei reparse point montati
+                - name: Uso di cartelle montate e reparse point
                   href: working-with-reparse-and-mount-points.md
-            - name: Dettagli di implementazione per i ripristini VSS
+            - name: Dettagli di implementazione per i ripristini vss
               href: implementation-details-for-vss-restores.md
               items:
                 - name: Generazione di un set di ripristino
                   href: generating-a-restore-set.md
                 - name: Ripristino di backup incrementali e differenziali
                   href: restoring-incremental-and-differential-backups.md
-                - name: Ripristini senza partecipazione del writer
+                - name: Ripristini senza partecipazione al writer
                   href: restores-without-writer-participation.md
             - name: Percorsi di backup e ripristino non predefiniti
               href: non-default-backup-and-restore-locations.md
               items:
-                - name: Utilizzo di percorsi alternativi durante il backup
+                - name: Uso di percorsi alternativi durante il backup
                   href: working-with-alternate-paths-during-backup.md
-                - name: Utilizzo di percorsi alternativi durante il ripristino
+                - name: Uso di percorsi alternativi durante il ripristino
                   href: working-with-alternate-locations-during-restore.md
-                - name: Utilizzo di nuove destinazioni durante il ripristino
+                - name: Uso di nuove destinazioni durante il ripristino
                   href: working-with-new-targets-during-restore.md
-                - name: Utilizzo di file parziali
+                - name: Uso di file parziali
                   href: working-with-partial-files.md
-                - name: Utilizzo di destinazioni dirette
+                - name: Uso di destinazioni indirizzate
                   href: working-with-directed-targets.md
             - name: Dettagli di implementazione per la creazione di copie shadow
               href: implementation-details-for-creating-shadow-copies.md
               items:
-                - name: Creazione di copie shadow semplici per il backup
+                - name: Creazione di una copia shadow semplice per il backup
                   href: simple-shadow-copy-creation-for-backup.md
                 - name: Dettagli creazione copia shadow
                   href: shadow-copy-creation-details.md
-                - name: Esclusione di file dalle copie shadow
+                - name: Esclusione di file da copie shadow
                   href: excluding-files-from-shadow-copies.md
-                - name: Selezione di provider
+                - name: Selezione dei provider
                   href: selecting-providers.md
-            - name: Dettagli di implementazione per l'utilizzo di copie shadow
+            - name: Dettagli di implementazione per l'uso di copie shadow
               href: implementation-details-for-using-shadow-copies.md
               items:
-                - name: Accesso del richiedente ai dati copiati in Shadow
+                - name: Accesso del richiedente ai dati copiati shadow
                   href: requestor-access-to-shadow-copied-data.md
-                - name: Importazione di volumi di copie shadow trasportabili
+                - name: Importazione di volumi copiati shadow trasportabili
                   href: importing-transportable-shadow-copied-volumes.md
                   items:
-                    - name: Ripristino rapido tramite volumi di copie shadow trasportabili
+                    - name: Ripristino rapido tramite volumi copiati shadow trasportabili
                       href: fast-recovery-using-transportable-shadow-copied-volumes.md
-                - name: Esposizione ed emersione di volumi copiati Shadow
+                - name: Esposizione e esposizione di volumi shadow copiati
                   href: exposing-and-surfacing-shadow-copied-volumes.md
-                - name: Suddivisione delle copie shadow
+                - name: Copie shadow di rilievo
                   href: breaking-shadow-copies.md
         - name: Risoluzione dei problemi relativi alle applicazioni VSS
           href: troubleshooting-vss-applications.md
           items:
-            - name: Gestione degli eventi e degli errori in VSS
+            - name: Gestione di eventi ed errori in VSS
               href: event-and-error-handling-under-vss.md
               items:
                 - name: Determinazione dello stato del writer
                   href: determining-writer-status.md
-                - name: Registrazione degli errori VSS
+                - name: Registrazione degli errori di VSS
                   href: vss-error-logging.md
-                - name: Errori e veto del writer
+                - name: Errori e veti del writer
                   href: writer-errors-and-vetoes.md
-                - name: Interruzione delle operazioni VSS
+                - name: Interruzione delle operazioni vss
                   href: aborting-vss-operations.md
                 - name: Gestione degli eventi BackupShutdown
                   href: handling-backupshutdown-events.md
-            - name: Problemi di sicurezza VSS
+            - name: Problemi di sicurezza di VSS
               href: vss-security-issues.md
               items:
                 - name: Considerazioni sulla sicurezza per i writer
                   href: security-considerations-for-writers.md
                 - name: Considerazioni sulla sicurezza per i richiedenti
                   href: security-considerations-for-requestors.md
-            - name: Casi di utilizzo VSS speciali
+            - name: Casi di utilizzo speciali di VSS
               href: special-vss-usage-cases.md
               items:
-                - name: Arresto dei servizi per il ripristino da richiedenti
+                - name: Arresto dei servizi per il ripristino da parte dei richiedenti
                   href: stopping-services-for-restore-by-requestors.md
                 - name: Backup e ripristino dello stato del sistema in Windows Server 2003 R2 e Windows Server 2003 SP1
                   href: backing-up-and-restoring-system-state-under-vss.md
-                - name: Uso del ripristino automatico del sistema VSS per il ripristino di emergenza
+                - name: Uso di VSS Automated Ripristino di sistema per il ripristino di emergenza
                   href: using-vss-automated-system-recovery-for-disaster-recovery.md
                   items:
-                    - name: Uso degli strumenti di traccia con le applicazioni ASR
+                    - name: Uso degli strumenti di traccia con le applicazioni asr
                       href: using-tracing-tools-with-vss-asr-applications.md
                 - name: Backup e ripristini personalizzati
                   href: custom-backups-and-restores.md
                   items:
-                    - name: Backup e ripristino del servizio Copia Shadow del volume del Active Directory
+                    - name: Backup e ripristino vss di Active Directory
                       href: vss-backup-and-restore-of-the-active-directory.md
-                    - name: Backup e ripristino di una cartella FRS-Replicated SYSVOL
+                    - name: Backup e ripristino di una FRS-Replicated SYSVOL
                       href: backing-up-and-restoring-an-frs-replicated-sysvol-folder.md
-                    - name: Backup e ripristini VSS del database cluster
+                    - name: Backup e ripristini vss del database del cluster
                       href: vss-backups-and-restores-of-the-cluster-database.md
-                    - name: Operazioni di backup e ripristino del registro di sistema in VSS
+                    - name: Operazioni di backup e ripristino del Registro di sistema in VSS
                       href: registry-backup-and-restore-operations-under-vss.md
-                    - name: Backup e ripristino del database di registrazione della classe COM+ in VSS
+                    - name: Backup e ripristino del database di registrazione delle classi COM+ in VSS
                       href: backing-up-and-restoring-the-com-class-registration-database-under-vss.md
-        - name: Strumenti e esempi VSS
+        - name: Strumenti ed esempi di VSS
           href: vss-tools-and-samples.md
           items:
             - name: Uso degli strumenti di traccia con VSS
               href: using-tracing-tools-with-vss.md
-            - name: Uso della diagnostica VSS
+            - name: Uso di Diagnostica VSS
               href: using-vss-diagnostics.md
-            - name: Strumento VssSampleProvider ed esempio
+            - name: Strumento e esempio vssSampleProvider
               href: vsssampleprovider-tool-and-sample.md
-            - name: Strumento VShadow ed esempio
+            - name: Strumento ed esempio VShadow
               href: vshadow-tool-and-sample.md
               items:
                 - name: Esempi di strumenti VShadow
                   href: vshadow-tool-examples.md
-            - name: Strumento di test
+            - name: Strumento BETest
               href: betest-tool.md
-            - name: Strumento writer di test VSS
+            - name: Strumento vss test writer
               href: vss-test-writer-tool.md
-    - name: Riferimento copia shadow del volume
+    - name: Informazioni di riferimento sulla copia shadow del volume
       href: volume-shadow-copy-reference.md
       items:
-        - name: Classi API copia shadow del volume
+        - name: Classi DELL'API Copia Shadow del volume
           href: volume-shadow-copy-api-classes.md
           items:
             - name: CVssWriter
@@ -320,7 +320,7 @@
               items:
                 - name: Metodo CVssWriter
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-cvsswriter
-                - name: ~ CVssWriter (metodo)
+                - name: Metodo ~CVssWriter
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-~cvsswriter
                 - name: Metodo AreComponentsSelected
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-arecomponentsselected
@@ -350,7 +350,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispartialfilesupportenabled
                 - name: Metodo IsPathAffected
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispathaffected
-                - name: OnAbort (metodo)
+                - name: Metodo OnAbort
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onabort
                 - name: Metodo OnBackOffIOOnVolume
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackoffioonvolume
@@ -360,9 +360,9 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupcomplete
                 - name: Metodo OnBackupShutdown
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupshutdown
-                - name: Metodo onFreeze
+                - name: Metodo OnFreeze
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onfreeze
-                - name: Onidentifi (metodo)
+                - name: Metodo OnIdentify
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify
                 - name: Metodo OnPostRestore
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpostrestore
@@ -374,7 +374,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparesnapshot
                 - name: Metodo OnPreRestore
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onprerestore
-                - name: Onscongelate (metodo)
+                - name: Metodo OnThaw
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onthaw
                 - name: Metodo OnVSSApplicationStartup
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onvssapplicationstartup
@@ -382,9 +382,9 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onvssshutdown
                 - name: Metodo SetWriterFailure
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-setwriterfailure
-                - name: Subscribe (metodo)
+                - name: Metodo Subscribe
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-subscribe
-                - name: Annulla sottoscrizione (metodo)
+                - name: Metodo Unsubscribe
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-unsubscribe
             - name: CVssWriterEx
               href: /windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex
@@ -400,15 +400,15 @@
             - name: CVssWriterEx2
               href: /windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex2
               items:
-                - name: Metodo GetSessionID
+                - name: Metodo GetSessionId
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-getsessionid
                 - name: Metodo IsWriterShuttingDown
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-iswritershuttingdown
                 - name: Metodo SetWriterFailureEx
                   href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-setwriterfailureex
-        - name: Tipi di dati dell'API copia shadow del volume
+        - name: Tipi di dati dell'API Copia Shadow del volume
           href: volume-shadow-copy-api-data-types.md
-        - name: Enumerazioni API copia shadow del volume
+        - name: Enumerazioni dell'API Copia Shadow del volume
           href: volume-shadow-copy-api-enumeration-types.md
           items:
             - name: VSS_ALTERNATE_WRITER_STATE
@@ -471,7 +471,7 @@
               href: /windows/win32/api/Vss/ne-vss-vss_writer_state
             - name: VSS_WRITERRESTORE_ENUM
               href: /windows/desktop/api/VsWriter/ne-vswriter-vss_writerrestore_enum
-        - name: Funzioni API copia shadow del volume
+        - name: Funzioni dell'API Copia Shadow del volume
           href: volume-shadow-copy-api-functions.md
           items:
             - name: CreateVssBackupComponents
@@ -490,7 +490,7 @@
               href: /windows/desktop/api/VsBackup/nf-vsbackup-shouldblockrevert
             - name: VssFreeSnapshotProperties
               href: /windows/desktop/api/VsBackup/nf-vsbackup-vssfreesnapshotproperties
-        - name: Interfacce API copia shadow del volume
+        - name: Interfacce DELL'API Copia Shadow del volume
           href: volume-shadow-copy-api-interfaces.md
           items:
             - name: IVssAdmin
@@ -630,7 +630,7 @@
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-prefastrecovery
                 - name: Metodo SetAuthoritativeRestore
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setauthoritativerestore
-                - name: Metodo serestore
+                - name: Metodo SetRestoreName
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrestorename
                 - name: Metodo SetRollForward
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrollforward
@@ -641,11 +641,11 @@
               items:
                 - name: Metodo AddSnapshotToRecoverySet
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-addsnapshottorecoveryset
-                - name: Metodo GetSessionID
+                - name: Metodo GetSessionId
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-getsessionid
                 - name: Metodo GetWriterStatusEx
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-getwriterstatusex
-                - name: Metodo recovert
+                - name: Metodo RecoverSet
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-recoverset
             - name: IVssBackupComponentsEx4
               href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex4
@@ -677,7 +677,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupstamp
                 - name: Metodo GetBackupSucceeded
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded
-                - name: GetComponentName (metodo)
+                - name: Metodo GetComponentName
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getcomponentname
                 - name: Metodo GetComponentType
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getcomponenttype
@@ -740,7 +740,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getpostsnapshotfailuremsg
                 - name: Metodo GetPrepareForBackupFailureMsg
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getprepareforbackupfailuremsg
-                - name: Metodo getrestore
+                - name: Metodo GetRestoreName
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getrestorename
                 - name: Metodo GetRollForward
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getrollforward
@@ -751,9 +751,9 @@
             - name: IVssComponentEx2
               href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscomponentex2
               items:
-                - name: Metodo getfailure
+                - name: Metodo GetFailure
                   href: /windows/desktop/api/vswriter/nf-vswriter-ivsscomponentex2-getfailure
-                - name: Metodo sefailure
+                - name: Metodo SetFailure
                   href: /windows/desktop/api/vswriter/nf-vswriter-ivsscomponentex2-setfailure
             - name: IVssCreateExpressWriterMetadata
               href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscreateexpresswritermetadata
@@ -872,7 +872,7 @@
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping
                 - name: Metodo GetBackupSchema
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema
-                - name: GetComponent (metodo)
+                - name: Metodo GetComponent
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getcomponent
                 - name: Metodo GetDocument
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getdocument
@@ -886,7 +886,7 @@
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getincludefile
                 - name: Metodo GetRestoreMethod
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getrestoremethod
-                - name: LoadFromXML (metodo)
+                - name: Metodo LoadFromXML
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-loadfromxml
                 - name: Metodo SaveAsXML
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-saveasxml
@@ -911,9 +911,9 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-createmetadata
                 - name: Metodo LoadMetadata
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-loadmetadata
-                - name: Register (metodo)
+                - name: Metodo Register
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-register
-                - name: Annulla registrazione metodo
+                - name: Metodo Unregister
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-unregister
             - name: IVssFileShareSnapshotProvider
               href: /windows/desktop/api/VsProv/nn-vsprov-ivssfilesharesnapshotprovider
@@ -930,7 +930,7 @@
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-ispathsupported
                 - name: Metodo di query
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-query
-                - name: Metodo secontext
+                - name: Metodo SetContext
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-setcontext
                 - name: Metodo SetSnapshotProperty
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-setsnapshotproperty
@@ -980,9 +980,9 @@
             - name: IVssProviderNotifications
               href: /windows/desktop/api/VsProv/nn-vsprov-ivssprovidernotifications
               items:
-                - name: OnLoad (metodo)
+                - name: Metodo OnLoad
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidernotifications-onload
-                - name: OnUnload (metodo)
+                - name: Metodo OnUnload
                   href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidernotifications-onunload
             - name: IVssSnapshotMgmt
               href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivsssnapshotmgmt
@@ -1032,7 +1032,7 @@
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdatabasefile
                 - name: Metodo GetDatabaseLogFile
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdatabaselogfile
-                - name: Getdependency (metodo)
+                - name: Metodo GetDependency
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency
                 - name: Metodo GetFile
                   href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getfile
@@ -1043,7 +1043,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getwriterid
                 - name: Metodo GetLogicalPath
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getlogicalpath
-                - name: GetComponentName (metodo)
+                - name: Metodo GetComponentName
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getcomponentname
             - name: IVssWMFiledesc
               href: /windows/desktop/api/VsWriter/nl-vswriter-ivsswmfiledesc
@@ -1054,14 +1054,14 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask
                 - name: Metodo GetFilespec
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getfilespec
-                - name: GetPath (metodo)
+                - name: Metodo GetPath
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getpath
-                - name: Metodo getricorsivation
+                - name: Metodo GetRecursive
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getrecursive
             - name: IVssWriterComponents
               href: /windows/desktop/api/VsWriter/nl-vswriter-ivsswritercomponents
               items:
-                - name: GetComponent (metodo)
+                - name: Metodo GetComponent
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getcomponent
                 - name: Metodo GetComponentCount
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getcomponentcount
@@ -1069,7 +1069,7 @@
                   href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getwriterinfo
             - name: IVssWriterComponentsExt
               href: /windows/desktop/api/vsbackup/nl-vsbackup-ivsswritercomponentsext
-        - name: Strutture API copia shadow del volume
+        - name: Strutture dell'API Copia Shadow del volume
           href: volume-shadow-copy-api-structures.md
           items:
             - name: VSS_COMPONENTINFO
@@ -1094,7 +1094,7 @@
               href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_volume_prop
             - name: VSS_VOLUME_PROTECTION_INFO
               href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_volume_protection_info
-    - name: Glossario copia shadow del volume
+    - name: Glossario della Copia Shadow del volume
       href: volume-shadow-copy-glossary.md
       items:
         - name: A
