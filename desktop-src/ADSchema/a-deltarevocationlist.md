@@ -1,10 +1,10 @@
 ---
-title: Attributo Delta-revoca-List
-description: Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
+title: Attributo Delta-Revocation-List
+description: Elenco di certificati revocati dall'ultimo aggiornamento differenziale.
 ms.assetid: fc755c22-6d4f-4509-abb8-47c4f2f37545
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD Attribute di elenco di revoche Delta
+- Schema AD dell'attributo Delta-Revocation-List
 - Schema AD dell'attributo deltaRevocationList
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e866090dfb754c11fb4a25bbe904d5922a8fafd6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a23cc8c5c01195429ba126632ed6c888354c66a4bc5d3cede75d28126fbafba7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961740"
 ---
-# <a name="delta-revocation-list-attribute"></a>Attributo Delta-revoca-List
+# <a name="delta-revocation-list-attribute"></a>Attributo Delta-Revocation-List
 
-Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
+Elenco di certificati revocati dall'ultimo aggiornamento differenziale.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Elenco di revoche Delta                                 |
-| LDAP-Display-Name | deltaRevocationList                                   |
+| CN                | Elenco di revoche differenziali                                 |
+| Ldap-Display-Name | deltaRevocationList                                   |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.53                                              |
-| System-ID-GUID    | 167757b5-47f3-11d1-a9c3-0000f80367c1                  |
+| System-Id-Guid    | 167757b5-47f3-11d1-a9c3-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di certificati che sono stati revocati dall'ultimo aggiornamento Delta.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La struttura di intervallo definisce un intervallo di valori di proprietà validi.
+description: La struttura RANGE definisce un intervallo di valori di proprietà validi.
 ms.assetid: 7bd14410-f5c1-487b-8776-405567991e5a
-title: Struttura RANGE (Netmon. h)
+title: Struttura RANGE (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: bf465636f315e60e43350bb370e2002b8a96e635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e0135a6210aebbca38bfdede00231315dd2680461f366930b24925eda830604
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063721"
 ---
-# <a name="range-structure"></a>Struttura di intervallo
+# <a name="range-structure"></a>Struttura RANGE
 
-La struttura di **intervallo** definisce un intervallo di valori di proprietà validi.
+La **struttura RANGE** definisce un intervallo di valori di proprietà validi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ typedef struct range {
 
 <dl> <dt>
 
-**MinValue**
+**Minvalue**
 </dt> <dd>
 
 Valore minimo possibile in un intervallo.
 
 </dd> <dt>
 
-**MaxValue**
+**Maxvalue**
 </dt> <dd>
 
 Valore massimo possibile in un intervallo.
@@ -56,7 +56,7 @@ Valore massimo possibile in un intervallo.
 
 ## <a name="remarks"></a>Commenti
 
-La struttura di **intervallo** viene utilizzata per specificare un intervallo di numeri validi per una proprietà del protocollo. Se il membro **dataqualifier** della struttura **PropertyInfo** è impostato su **prop \_ qual \_ Range**, il membro **lpRange** della struttura [PropertyInfo](propertyinfo.md) deve fornire un puntatore a una struttura di **intervallo** .
+La **struttura RANGE** viene usata per specificare un intervallo di numeri valido per una proprietà del protocollo. Se il **membro DataQualifier** della struttura **PROPERTYINFO** è impostato su **PROP QUAL \_ \_ RANGE,** il membro **lpRange** della [struttura PROPERTYINFO](propertyinfo.md) deve fornire un puntatore a una **struttura RANGE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ La struttura di **intervallo** viene utilizzata per specificare un intervallo di
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ La struttura di **intervallo** viene utilizzata per specificare un intervallo di
 
 <dl> <dt>
 
-[PROPERTYINFO](propertyinfo.md)
+[Propertyinfo](propertyinfo.md)
 </dt> </dl>
 
  

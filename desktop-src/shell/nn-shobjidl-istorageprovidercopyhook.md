@@ -1,5 +1,5 @@
 ---
-description: Definisce un metodo che determina se la shell sarà consentita per lo spostamento, la copia, l'eliminazione o la ridenominazione di una cartella nella radice di sincronizzazione di un provider di cloud.
+description: Definisce un metodo che determina se la shell sarà autorizzata a spostare, copiare, eliminare o rinominare una cartella nella radice di sincronizzazione di un provider di servizi cloud.
 title: Interfaccia IStorageProviderCopyHook
 ms.topic: reference
 ms.date: 11/11/2020
@@ -12,32 +12,32 @@ api_type:
 - COM
 api_location:
 - shobjidl.h
-ms.openlocfilehash: 52f2a7fb7c8d7b37fc27fd1e91c93d716bc92086
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa26a329bd80295a6a46a1bb11d1dc651baf1ea71975576ed704b29a7fee8b57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968870"
 ---
 # <a name="istorageprovidercopyhook-interface"></a>Interfaccia IStorageProviderCopyHook
 
-Espone un metodo che determina se la shell sarà consentita per lo spostamento, la copia, l'eliminazione o la ridenominazione di una cartella nella radice di sincronizzazione di un provider di cloud.
+Espone un metodo che determina se la shell sarà autorizzata a spostare, copiare, eliminare o rinominare una cartella nella radice di sincronizzazione di un provider di servizi cloud.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IStorageProviderCopyHook** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IStorageProviderCopyHook** dispone anche di questi tipi di membri:
+**L'interfaccia IStorageProviderCopyHook** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IStorageProviderCopyHook** include anche questi tipi di membri:
 
 - [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IStorageProviderCopyHook** dispone di questi metodi.
+**L'interfaccia IStorageProviderCopyHook** include questi metodi.
 
 
 
 | Metodo                                           | Descrizione                                                                                               |
 |:-------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| [**CopyCallback**](nf-shobjidl-istorageprovidercopyhook-copycallback.md)               |  Determina se la shell sarà autorizzata a spostare, copiare, eliminare o rinominare una cartella nella radice di sincronizzazione di un provider cloud.                                                           |
+| [**CopyCallback**](nf-shobjidl-istorageprovidercopyhook-copycallback.md)               |  Determina se la shell sarà autorizzata a spostare, copiare, eliminare o rinominare una cartella nella radice di sincronizzazione di un provider di servizi cloud.                                                           |
 
 
 ## <a name="requirements"></a>Requisiti
@@ -45,4 +45,4 @@ L'interfaccia **IStorageProviderCopyHook** dispone di questi metodi.
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato | Windows 10 Insider Preview Build 19624                                                |
-| Intestazione<br/>                   | ShObjIdl. h   |
+| Intestazione<br/>                   | shobjidl.h   |

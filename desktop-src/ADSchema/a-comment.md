@@ -1,11 +1,11 @@
 ---
-title: Attributo User-Comment
+title: User-Comment attributo
 description: Commenti dell'utente.
 ms.assetid: 7c22084e-f713-4e0d-b8d1-e3c59cad6115
 ms.tgt_platform: multiple
 keywords:
-- Schema AD User-Comment attribute
-- Schema AD dell'attributo comment
+- User-Comment schema AD dell'attributo
+- comment attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f367b0159a28e5276e09a0b585cea7f04f6e447
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ad501be055b89132a22eb3fddae83d6ba689e39f2347155d462e1b6bed7c031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961820"
 ---
-# <a name="user-comment-attribute"></a>Attributo User-Comment
+# <a name="user-comment-attribute"></a>User-Comment attributo
 
 Commenti dell'utente.
 
@@ -30,12 +30,12 @@ Commenti dell'utente.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | User-Comment                                |
-| LDAP-Display-Name | comment                                     |
+| Ldap-Display-Name | comment                                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.      |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.      |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.156                      |
-| System-ID-GUID    | bf967a6a-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a6a-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Commenti dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Restituisce un handle per l'hash di handshake.
+description: Restituisce un handle per l'hash dell'handshake.
 ms.assetid: c0f20084-c863-42cf-afdf-298c5a96eed9
-title: Funzione SslHashHandshake (Sslprovider. h)
+title: Funzione SslHashHandshake (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 1dbfdbceb4242d389669a3eebf14260a3bb396fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a21bdb3fd655e5c3b39249937f04a4122c64e6c6176c0d39ae1164e48863edb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906099"
 ---
-# <a name="sslhashhandshake-function"></a>SslHashHandshake (funzione)
+# <a name="sslhashhandshake-function"></a>Funzione SslHashHandshake
 
-La funzione **SslHashHandshake** restituisce un handle per l'hash di handshake.
+La **funzione SslHashHandshake** restituisce un handle per l'hash dell'handshake.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ SECURITY_STATUS WINAPI SslHashHandshake(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'istanza del provider di protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+Handle per [*l'istanza Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) protocol (SSL).
 
 </dd> <dt>
 
-*hHandshakeHash* \[ in uscita\]
+*hHandshakeHash* \[ in, out\]
 </dt> <dd>
 
 Handle per l'oggetto hash.
 
 </dd> <dt>
 
-*pbInput* \[ out\]
+*pbInput* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di un buffer che contiene i dati di cui eseguire l'hashing.
 
 </dd> <dt>
 
-*cbInput* \[ in\]
+*cbInput* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pbInput* .
+Dimensione, in byte, del buffer *pbInput.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -84,11 +84,11 @@ Se la funzione ha esito positivo, restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **SslHashHandshake** è una delle tre funzioni usate per generare un hash da usare durante l'handshake SSL.
+La **funzione SslHashHandshake** è una delle tre funzioni usate per generare un hash da usare durante l'handshake SSL.
 
-1.  Viene chiamata la funzione [**SslCreateHandshakeHash**](sslcreatehandshakehash.md) per ottenere un handle hash.
-2.  La funzione **SslHashHandshake** viene chiamata un numero qualsiasi di volte con l'handle hash per aggiungere dati all'hash.
-3.  La funzione [**SslComputeFinishedHash**](sslcomputefinishedhash.md) viene chiamata con l'handle hash per ottenere il digest dei dati con hash.
+1.  La [**funzione SslCreateHandshakeHash**](sslcreatehandshakehash.md) viene chiamata per ottenere un handle hash.
+2.  La **funzione SslHashHandshake** viene chiamata un numero qualsiasi di volte con l'handle hash per aggiungere dati all'hash.
+3.  La [**funzione SslComputeFinishedHash**](sslcomputefinishedhash.md) viene chiamata con l'handle hash per ottenere il digest dei dati con hash.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,9 +96,9 @@ La funzione **SslHashHandshake** è una delle tre funzioni usate per generare un
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

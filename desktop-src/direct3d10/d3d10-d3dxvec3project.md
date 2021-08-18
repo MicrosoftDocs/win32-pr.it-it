@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: f4a2cffa77b2a66267daf0a67a59698ae3e3b8eb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5b15d8c711813251c7ad2593939a2d3284f79acaa4a3204ea89cb59bc26ce23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990581"
 ---
 # <a name="d3dxvec3project-function-d3dx10mathh"></a>Funzione D3DXVec3Project (D3DX10Math.h)
 
@@ -94,7 +94,7 @@ Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di visualizzazio
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
+Puntatore a una struttura D3DXMATRIX che rappresenta la matrice globale.
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta il vettore proiettato dallo spazio oggetto allo spazio dello schermo.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta il vettore proiettato dallo spazio dell'oggetto allo spazio dello schermo.
 
 ## <a name="remarks"></a>Commenti
 

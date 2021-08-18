@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 58b02abc49b695169674a2579b73dc2359801a73
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28f170814988317cd1cdf3300e4cbb3c2a97fa0fac7a43b2231767914a9b103a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988721"
 ---
 # <a name="d3dxcolor-structure-d3dx9mathh"></a>Struttura D3DXCOLOR (D3dx9math.h)
 
@@ -88,7 +88,7 @@ Componente alfa del colore.
 
 ## <a name="remarks"></a>Commenti
 
-I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXCOLOR**](d3dxcolor-extensions.md), che implementano costruttori di overload, nonché operatori di assegnazione, unario e binario (inclusa l'uguaglianza).
+I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXCOLOR,**](d3dxcolor-extensions.md)che implementano costruttori di overload, nonché operatori di assegnazione, unari e binari (inclusa l'uguaglianza).
 
 ## <a name="requirements"></a>Requisiti
 

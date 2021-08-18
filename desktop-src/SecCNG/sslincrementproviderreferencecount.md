@@ -1,7 +1,7 @@
 ---
-description: Incrementa il conteggio dei riferimenti a un'istanza del provider SSL (Secure Sockets Layer Protocol).
+description: Incrementa il conteggio dei riferimenti a un'istanza Secure Sockets Layer protocol (SSL).
 ms.assetid: 67e7b8b4-b073-4936-b1e0-3fc7c1c011a2
-title: Funzione SslIncrementProviderReferenceCount (Sslprovider. h)
+title: Funzione SslIncrementProviderReferenceCount (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 862697035d978db082c303c6e1df6f2a444d8be3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a177d4142d304834aea773e56a09703bc4d56e6b479a2f005f00e3b692980c72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906001"
 ---
-# <a name="sslincrementproviderreferencecount-function"></a>SslIncrementProviderReferenceCount (funzione)
+# <a name="sslincrementproviderreferencecount-function"></a>Funzione SslIncrementProviderReferenceCount
 
-La funzione **SslIncrementProviderReferenceCount** incrementa il conteggio dei riferimenti a un'istanza del provider SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslIncrementProviderReferenceCount** incrementa il conteggio dei riferimenti a [*un'istanza*](/windows/desktop/SecGloss/s-gly) del provider SSL (Secure Sockets Layer Protocol).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ SECURITY_STATUS WINAPI SslIncrementProviderReferenceCount(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'istanza del provider del protocollo SSL.
@@ -52,13 +52,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Handle *hSslProvider* non valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | *L'handle hSslProvider* non è valido.<br/> |
 
 
 
@@ -70,9 +70,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

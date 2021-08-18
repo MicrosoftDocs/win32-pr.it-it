@@ -1,31 +1,31 @@
 ---
-description: Crea, firma e busta un messaggio.
+description: Crea, firma e invierà un messaggio.
 ms.assetid: 1d9d8a7a-0088-41a7-98fe-4f0e9cb21f31
-title: 'Esempio di programma C: codifica di un messaggio firmato in busta'
+title: 'Programma C di esempio: codifica di un messaggio in busta, firmato'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5ae8008794dc7f8fa32f39543cf2ddc61827bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da56213c11d0cd6d7241ff60c1f77252f1e21682feff9f5913e0a43fdaf3034b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007739"
 ---
-# <a name="example-c-program-encoding-an-enveloped-signed-message"></a>Esempio di programma C: codifica di un messaggio firmato in busta
+# <a name="example-c-program-encoding-an-enveloped-signed-message"></a>Programma C di esempio: codifica di un messaggio in busta, firmato
 
-Nell'esempio seguente vengono creati, firmati e busti un messaggio e vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Nell'esempio seguente viene creato, firmato e in busta un messaggio e vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Acquisizione dell'handle di un CSP con [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Apertura di un archivio di sistema tramite [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Trovare un firmatario e i certificati del destinatario usando [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Inizializzazione delle strutture di dati appropriate per la firma di un messaggio in busta.
--   Ricerca della lunghezza del messaggio in busta con [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
--   Creazione e firma del messaggio tramite [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Inviluppo del messaggio firmato e codificato per un ricevitore usando [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Acquisizione dell'handle di un CSP [**tramite CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   Apertura di un archivio di sistema [**tramite CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Ricerca di certificati del firmatario e del [**destinatario tramite CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
+-   Inizializzazione di strutture di dati appropriate per la firma di un messaggio in busta.
+-   Ricerca della lunghezza del messaggio in busta usando [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
+-   Creazione e firma del messaggio [**tramite CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Enveloping del messaggio firmato e codificato per un ricevitore tramite [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
 
-Questo esempio avrà esito negativo se non esiste una chiave privata utilizzabile nel [*contenitore di chiavi*](../secgloss/k-gly.md)predefinito. Se la chiave privata necessaria non è disponibile, è possibile usare il codice che usa [**CryptAcquireCertificatePrivateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey), come illustrato nell'esempio di codice [C programma: invio e ricezione di un messaggio firmato e crittografato](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md).
+Questo esempio avrà esito negativo se non esiste una chiave privata utilizzabile nel contenitore [*di chiavi predefinito*](../secgloss/k-gly.md). Se la chiave privata necessaria non è disponibile, è possibile usare il codice che usa [**CryptAcquireCertificatePrivateKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey)come illustrato nell'esempio di codice Programma [C:](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md)Invio e ricezione di un messaggio firmato e crittografato.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

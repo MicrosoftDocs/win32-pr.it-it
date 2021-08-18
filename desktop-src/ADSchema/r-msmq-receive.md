@@ -1,10 +1,10 @@
 ---
-title: MSMQ-ricezione estesa a destra
+title: msmq-Receive extended right
 description: Consente la ricezione di messaggi dalla coda.
 ms.assetid: 8c889542-f30a-4580-8dfb-96594f7d6ad6
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-ricezione dello schema AD esteso a destra
+- msmq-Receive extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7984a2517bce5e30ac1ee48dc5523e4de5a84b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3f403de565e7e976f16d2e0c016ae8651fe2bc1c6481b76ff4f6caae68350f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021659"
 ---
-# <a name="msmq-receive-extended-right"></a>MSMQ-ricezione estesa a destra
+# <a name="msmq-receive-extended-right"></a>msmq-Receive extended right
 
 Consente la ricezione di messaggi dalla coda.
 
@@ -28,8 +28,8 @@ Consente la ricezione di messaggi dalla coda.
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | MSMQ-ricezione                         |
-| Display-Name | Ricevi messaggio                      |
+| CN           | msmq-Receive                         |
+| Display-Name | Ricevere un messaggio                      |
 | Rights-GUID  | 06bd3200-df3e-11d1-9c86-006008764d0e |
 
 
@@ -50,7 +50,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -61,7 +61,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -72,7 +72,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -83,7 +83,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -94,7 +94,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -105,7 +105,7 @@ Consente la ricezione di messaggi dalla coda.
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-display-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 

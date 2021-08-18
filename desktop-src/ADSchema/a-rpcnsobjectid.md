@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-Object-ID
+title: Attributo rpc-Ns-Object-ID
 description: ID oggetto esportati da un determinato server.
 ms.assetid: bfe61b2f-36f5-49fd-861e-71829f44f50d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-Object-ID
+- Schema AD dell'attributo rpc-Ns-Object-ID
 - Schema AD dell'attributo rpcNsObjectID
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30aa2ceefb95edb0f70be3cabbea8b76a4863337
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30aed84b3a25041cf10525310682b3f04eb84abdf232391f98614f44e085ca77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022259"
 ---
-# <a name="rpc-ns-object-id-attribute"></a>attributo RPC-NS-Object-ID
+# <a name="rpc-ns-object-id-attribute"></a>Attributo rpc-Ns-Object-ID
 
 ID oggetto esportati da un determinato server.
 
@@ -29,13 +29,13 @@ ID oggetto esportati da un determinato server.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-Object-ID                            |
-| LDAP-Display-Name | rpcNsObjectID                               |
+| CN                | rpc-Ns-Object-ID                            |
+| Ldap-Display-Name | rpcNsObjectID                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.312                      |
-| System-ID-GUID    | 29401c48-7a27-11d0-afd6-00c04fd930c9        |
+| System-Id-Guid    | 29401c48-7a27-11d0-afd6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| A valore singolo       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| A valore singolo       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| A valore singolo       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| Is-Single-Valued       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| Is-Single-Valued       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ID oggetto esportati da un determinato server.
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Falso                                                                                   |
+| Is-Single-Valued       | Falso                                                                                   |
 | Indicizzato             | Vero                                                                                    |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 

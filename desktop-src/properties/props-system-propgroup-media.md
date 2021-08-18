@@ -4,12 +4,12 @@ ms.assetid: ac3a5951-d3eb-4862-be1b-de9f12bc887b
 title: System.PropGroup.Media
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ba33be9057aef8e3222a4ed8d152bb2f47ed5b1
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a617121a5bdee49990e865b21f57369df4703d69cbe3ae12fc66affd55c1c815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095843"
 ---
 # <a name="systempropgroupmedia"></a>System.PropGroup.Media
 

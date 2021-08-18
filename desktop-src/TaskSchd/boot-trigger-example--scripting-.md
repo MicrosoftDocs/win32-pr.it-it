@@ -1,6 +1,6 @@
 ---
 title: Esempio di trigger di avvio (scripting)
-description: Questo esempio di scripting Mostra come creare un'attività pianificata per l'esecuzione del blocco note al momento dell'avvio del sistema.
+description: Questo esempio di scripting illustra come creare un'attività pianificata per l'Blocco note all'avvio del sistema.
 ms.assetid: 73ae9cc4-ef89-4390-ac05-8a773f45fa46
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72b7735c607dfc39b848532a70e4d24b1a14d346
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff02bef70b4003c4e7b6e9aff03e2d615f24d7e15707cddcae3a4637ff2b11f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002519"
 ---
 # <a name="boot-trigger-example-scripting"></a>Esempio di trigger di avvio (scripting)
 
-Questo esempio di scripting Mostra come creare un'attività pianificata per l'esecuzione del blocco note al momento dell'avvio del sistema. L'attività contiene un trigger di avvio che specifica un limite iniziale e un tempo di ritardo per l'avvio dell'attività dopo l'avvio del sistema. L'attività contiene anche un'azione che specifica l'attività per l'esecuzione del blocco note. L'attività viene registrata utilizzando l'account del servizio locale come contesto di sicurezza per l'esecuzione dell'attività.
+Questo esempio di scripting illustra come creare un'attività pianificata per l'Blocco note all'avvio del sistema. L'attività contiene un trigger di avvio che specifica un limite di avvio e un tempo di ritardo per l'avvio dell'attività dopo l'avvio del sistema. L'attività contiene anche un'azione che specifica l'attività da eseguire Blocco note. L'attività viene registrata usando l'account del servizio locale come contesto di sicurezza per eseguire l'attività.
 
-Nella procedura riportata di seguito viene descritto come pianificare un eseguibile, ad esempio Blocco note, da avviare al momento dell'avvio del sistema.
+La procedura seguente descrive come pianificare un eseguibile, ad esempio Blocco note per l'avvio del sistema.
 
-**Per pianificare l'avvio del blocco note al momento dell'avvio del sistema**
+**Per pianificare Blocco note'avvio del sistema**
 
-1.  Creare un oggetto [**TaskService**](taskservice.md) . Questo oggetto consente di creare l'attività in una cartella specificata.
-2.  Ottenere una cartella attività e creare un'attività. Usare il metodo [**TaskService. GetFolder**](taskservice-getfolder.md) per ottenere la cartella in cui è archiviata l'attività e il metodo [**TaskService. newTask**](taskservice-newtask.md) per creare l'oggetto [**TaskDefinition**](taskdefinition.md) che rappresenta l'attività.
-3.  Definire le informazioni sull'attività usando l'oggetto [**TaskDefinition**](taskdefinition.md) . Utilizzare la proprietà [**TaskDefinition. Settings**](taskdefinition-settings.md) per definire le impostazioni che determinano il modo in cui il servizio Utilità di pianificazione esegue l'attività e la proprietà [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) per definire le informazioni che descrivono l'attività.
-4.  Creare un trigger LOGON usando la proprietà [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Questa proprietà fornisce l'accesso all'oggetto [**TriggerCollection**](triggercollection.md) . Usare il metodo [**TriggerCollection. Create**](triggercollection-create.md) (specificando il tipo di trigger che si vuole creare) per creare un trigger di avvio. Quando si crea il trigger, impostare le proprietà [**StartBoundary**](trigger-startboundary.md) e [**EndBoundary**](trigger-endboundary.md) del trigger per attivare e disattivare il trigger. È anche possibile specificare un valore per la proprietà [**delay**](boottrigger-delay.md) del trigger di avvio.
-5.  Creare un'azione per l'attività da eseguire usando la proprietà [**TaskDefinition. Actions**](taskdefinition-actions.md) . Questa proprietà consente di accedere all'oggetto [**ActionCollection**](actioncollection.md) . Utilizzare il metodo [**ActionCollection. Create**](actioncollection-create.md) per specificare il tipo di azione che si desidera creare. Questo esempio usa un oggetto [**ExecAction**](execaction.md) , che rappresenta un'azione che avvia un eseguibile.
-6.  Registrare l'attività usando il metodo [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . L'attività viene registrata utilizzando l'account del servizio locale come contesto di sicurezza per l'esecuzione dell'attività.
+1.  Creare un [**oggetto TaskService.**](taskservice.md) Questo oggetto consente di creare l'attività in una cartella specificata.
+2.  Ottenere una cartella di attività e creare un'attività. Usare il [**metodo TaskService.GetFolder**](taskservice-getfolder.md) per ottenere la cartella in cui è archiviata l'attività e il metodo [**TaskService.NewTask**](taskservice-newtask.md) per creare l'oggetto [**TaskDefinition**](taskdefinition.md) che rappresenta l'attività.
+3.  Definire le informazioni sull'attività usando [**l'oggetto TaskDefinition.**](taskdefinition.md) Usare la [**proprietà TaskDefinition.Impostazioni**](taskdefinition-settings.md) per definire le impostazioni che determinano come il servizio Utilità di pianificazione esegue l'attività e la [**proprietà TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) per definire le informazioni che descrivono l'attività.
+4.  Creare un trigger di accesso usando la [**proprietà TaskDefinition.Triggers.**](taskdefinition-triggers.md) Questa proprietà fornisce l'accesso [**all'oggetto TriggerCollection.**](triggercollection.md) Usare il [**metodo TriggerCollection.Create**](triggercollection-create.md) (che specifica il tipo di trigger da creare) per creare un trigger di avvio. Quando si crea il trigger, impostare le [**proprietà StartBoundary**](trigger-startboundary.md) [**ed EndBoundary**](trigger-endboundary.md) del trigger per attivare e disattivare il trigger. È anche possibile specificare un valore per la [**proprietà Delay**](boottrigger-delay.md) del trigger di avvio.
+5.  Creare un'azione per l'esecuzione dell'attività usando la [**proprietà TaskDefinition.Actions.**](taskdefinition-actions.md) Questa proprietà fornisce l'accesso [**all'oggetto ActionCollection.**](actioncollection.md) Usare il [**metodo ActionCollection.Create**](actioncollection-create.md) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato [**un oggetto ExecAction,**](execaction.md) che rappresenta un'azione che avvia un eseguibile.
+6.  Registrare l'attività usando il [**metodo TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) L'attività viene registrata usando l'account del servizio locale come contesto di sicurezza per eseguire l'attività.
 
-Nell'esempio VBScript seguente viene illustrato come pianificare un'attività per eseguire il blocco note 30 secondi dopo l'avvio del sistema.
+L'esempio VBScript seguente illustra come pianificare l'esecuzione di un'attività Blocco note 30 secondi dopo l'avvio del sistema.
 
 
 ```VB
@@ -125,12 +125,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

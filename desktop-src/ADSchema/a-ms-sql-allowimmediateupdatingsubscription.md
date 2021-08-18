@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-SQL-AllowImmediateUpdatingSubscription
-description: True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle transazioni sincronizzate.
+description: True se la pubblicazione consente sottoscrizioni ad aggiornamento delle transazioni sincronizzate.
 ms.assetid: 7efa4b8f-77ad-4f68-9852-7dac9f922d95
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fed7970aa4b4f26a7221ea9a0c3d4e279ddc5db1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1f6442d5a719595c0e99e495f4fa4c969c24995aa29ed70ca7db779d4c9a21e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961160"
 ---
 # <a name="ms-sql-allowimmediateupdatingsubscription-attribute"></a>Attributo MS-SQL-AllowImmediateUpdatingSubscription
 
-True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle transazioni sincronizzate.
+True se la pubblicazione consente sottoscrizioni ad aggiornamento delle transazioni sincronizzate.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------|
 | CN                | MS-SQL-AllowImmediateUpdatingSubscription |
-| LDAP-Display-Name | mS-SQL-AllowImmediateUpdatingSubscription |
+| Ldap-Display-Name | mS-SQL-AllowImmediateUpdatingSubscription |
 | Dimensione              | 4 byte                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.          |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.          |
 | Frequenza di aggiornamento  | Quando la replica è impostata.                |
 | Attribute-Id      | 1.2.840.113556.1.4.1404                   |
-| System-ID-GUID    | c4186b6e-d34b-11d2-999a-0000f87a57d4      |
+| System-Id-Guid    | c4186b6e-d34b-11d2-999a-0000f87a57d4      |
 | Sintassi            | [**Boolean**](s-boolean.md)              |
 
 
@@ -58,15 +58,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ True se la pubblicazione consente le sottoscrizioni ad aggiornamento delle trans
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

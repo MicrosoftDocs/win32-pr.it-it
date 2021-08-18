@@ -1,20 +1,20 @@
 ---
 title: ODJ_PROVISION_DATA
-description: Definizione di ODJ_PROVISION_DATA IDL
+description: ODJ_PROVISION_DATA definizione IDL
 ms.assetid: ff623d04-ad3f-4846-b9de-aaa280713018
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f07d8c200103fa21afc080c60157645fe6730766
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 02762a80be9bd60b7f9c8648c9bfb848f3d76184f249567c9e9522189692e0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "106300656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064351"
 ---
-# <a name="odj_provision_data-structure"></a>Struttura ODJ_PROVISION_DATA
+# <a name="odj_provision_data-structure"></a>ODJ_PROVISION_DATA struttura
 
-Specifica la struttura di serializzazione più esterna utilizzata dalle API di aggiunta al dominio offline.
+Specifica la struttura di serializzazione più esterna utilizzata dalle API di aggiunta a un dominio offline.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,12 +39,12 @@ Deve essere impostato sul numero di elementi nella matrice pBlobs.
 
 ### <a name="pblobs"></a>pBlobs
 
-Punta a una matrice di strutture di ODJ_BLOB.
+Punta a una matrice di ODJ_BLOB struttura .
 
 ## <a name="see-also"></a>Vedi anche
 
-[**Definizioni IDL di aggiunta al dominio offline**](odj-idl.md)
+[**Definizioni IDL di aggiunta a un dominio offline**](odj-idl.md)
 
-[**\_BLOB ODJ**](odj-odj_blob.md)
+[**ODJ \_ BLOB**](odj-odj_blob.md)
 
 

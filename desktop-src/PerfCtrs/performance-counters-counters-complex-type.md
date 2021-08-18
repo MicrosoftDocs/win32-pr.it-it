@@ -1,7 +1,7 @@
 ---
-description: Definisce la sezione del manifesto di strumentazione che identifica il provider e i contatori che forniscono.
+description: Definisce la sezione del manifesto di strumentazione che identifica il provider e i contatori forniti.
 ms.assetid: c661f1af-ebe8-4f8a-b77e-a2229f45facd
-title: Tipi complessi di contatori
+title: Tipo complesso counters
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ad87b79175b0cecdec17ad081340fa0be2b90b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14630fa4e0e9461e59d377b4defc3edacee8dca9560d1f7eb42acb317ffd1f57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143964"
 ---
-# <a name="counters-complex-type"></a>Tipi complessi di contatori
+# <a name="counters-complex-type"></a>Tipo complesso counters
 
-Definisce la sezione del manifesto di strumentazione che identifica il provider e i contatori che forniscono.
+Definisce la sezione del manifesto di strumentazione che identifica il provider e i contatori forniti.
 
 ``` syntax
 <xs:complexType name="counters">
@@ -52,7 +52,7 @@ Definisce la sezione del manifesto di strumentazione che identifica il provider 
 
 | Elemento      | Tipo                                                               | Descrizione                                              |
 |--------------|--------------------------------------------------------------------|----------------------------------------------------------|
-| **provider** | [**uomo: provider**](performance-counters-provider-complex-type.md) | Identifica un provider che fornisce contatori.<br/> |
+| **Provider** | [**man:provider**](performance-counters-provider-complex-type.md) | Identifica un provider che fornisce contatori.<br/> |
 
 
 
@@ -72,8 +72,8 @@ Definisce la sezione del manifesto di strumentazione che identifica il provider 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 862d64df-cbea-4b0a-9603-a60ca972a792
 title: System.Note.Color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03ad36b5db79eba7a9b765c338b86a5109c6f50a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9992f820b6b190f2e9a96bd07030dd59b8430b779c5afe20cee10e71ee1a1e89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096013"
 ---
 # <a name="systemnotecolor"></a>System.Note.Color
 

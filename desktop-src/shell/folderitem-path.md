@@ -1,7 +1,7 @@
 ---
-description: Contiene il nome e il percorso completo dell'elemento.
+description: Contiene il percorso completo e il nome dell'elemento.
 ms.assetid: c94c7c1c-9dc9-4bb8-b7ec-01541baa2924
-title: Proprietà FolderItem. Path (shldisp. h)
+title: Proprietà FolderItem.Path (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a9562fc94cc0d4253ce80f6bd494c818689c71a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e1761d0f3d846e44746bbb213233bd846ddd56de3b5ef16cd99b2dce5b4fabf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093115"
 ---
-# <a name="folderitempath-property"></a>Proprietà FolderItem. Path
+# <a name="folderitempath-property"></a>FolderItem.Path - proprietà
 
-Contiene il nome e il percorso completo dell'elemento.
+Contiene il percorso completo e il nome dell'elemento.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ strPath = FolderItem.Path
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) che riceve il nome e il percorso completo dell'elemento.
+Variabile di tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) che riceve il percorso completo e il nome dell'elemento.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **path** per recuperare il percorso della cartella di Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato Path** per recuperare il percorso della Windows cartella. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

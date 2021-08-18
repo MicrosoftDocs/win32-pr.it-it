@@ -1,24 +1,24 @@
 ---
 description: Prestazioni
 ms.assetid: a0d5c4ae-e0a3-466b-bf43-6bf7cda7aa21
-title: Prestazioni (componente Windows Imaging)
+title: Prestazioni (Windows imaging)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997c6c5da78567642a29ecc7ac88f6b66c3fb0b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a3fedd9ed83e30316dfac260b2dbb9a15e326e576146739b866369f2a5ddb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086874"
 ---
-# <a name="performance-windows-imaging-component"></a>Prestazioni (componente Windows Imaging)
+# <a name="performance-windows-imaging-component"></a>Prestazioni (Windows imaging)
 
-L'obiettivo Microsoft è che le prestazioni dell'elaborazione non ELABORAta tramite l'interfaccia di Windows Imaging Component (WIC) siano equivalenti agli strumenti e alle applicazioni di elaborazione RAW leader del settore. Per fornire indicazioni sulle prestazioni, è stato eseguito un set di test completi che confrontano le prestazioni degli strumenti di flusso di lavoro RAW più diffusi. I test includono le versioni del sistema operativo Windows e Apple Macintosh dei prodotti di elaborazione non ELABORAti, i file non ELABORAti di esempio delle fotocamere reflex (Single-Lens Reflex) correnti e una serie di funzioni che rappresentano passaggi comuni del flusso di lavoro.
+L'obiettivo Di Microsoft è che le prestazioni dell'elaborazione RAW tramite l'interfaccia wic (Windows Imaging Component) siano equivalenti alle applicazioni e agli strumenti di elaborazione RAW leader del settore. Per fornire indicazioni sulle prestazioni, è stato eseguito un set di test completi che confrontano le prestazioni dei più diffusi strumenti del flusso di lavoro RAW. I test includevano le versioni del sistema operativo Windows e Apple Macintosh dei prodotti di elaborazione RAW, i file RAW di esempio delle fotocamere SLR (Single-Lens Reflex) correnti e una serie di funzioni che rappresentano passaggi comuni del flusso di lavoro.
 
-In base a questi risultati, Microsoft suggerisce le raccomandazioni seguenti ai partner per le prestazioni di elaborazione non ELABORAte:
+In base a questi risultati, Microsoft suggerisce ai partner le raccomandazioni seguenti per le prestazioni di elaborazione RAW:
 
--   Le prestazioni di base devono essere uguali o migliori rispetto ai tempi di elaborazione degli strumenti e delle applicazioni di elaborazione RAW fornite dal produttore corrente.
--   Gli obiettivi di prestazioni ottimali devono corrispondere o superare l'applicazione con le prestazioni più elevate senza sacrificare la qualità (in questi test, la fotocamera Photoshop RAW ha eseguito in genere più velocemente).
+-   Le prestazioni di base devono essere uguali o migliori rispetto ai tempi di elaborazione delle applicazioni e degli strumenti di elaborazione RAW forniti dal produttore corrente.
+-   Gli obiettivi di prestazioni ottimali devono corrispondere o superare l'applicazione con le prestazioni più elevate senza alcun sacrificio di qualità (in questi test, la raw camera di Photoshop ha in genere prestazioni più veloci).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -27,13 +27,13 @@ In base a questi risultati, Microsoft suggerisce le raccomandazioni seguenti ai 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Linee guida per WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
+[Linee guida WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

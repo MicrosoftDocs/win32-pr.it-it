@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETIMEMODEBIAS (RichEdit. h)
-description: Recupera la distorsione della modalità IME (Input Method Editor) per un controllo Rich Edit di Microsoft.
+title: EM_GETIMEMODEBIAS messaggio (Richedit.h)
+description: Recupera la distorsione della modalità Input Method Editor (IME) per un controllo Microsoft Rich Edit.
 ms.assetid: e8ca899f-3423-4814-86e9-133dfd11f9a6
 keywords:
-- Controlli di Windows Message EM_GETIMEMODEBIAS
+- EM_GETIMEMODEBIAS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea13e151ae9d487340ee440e3b123ae70b437a02
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 49ad5504ca2e5ac1a332657c4f539c9f983292617b6e74b949598488ceb38dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019539"
 ---
-# <a name="em_getimemodebias-message"></a>\_Messaggio GETIMEMODEBIAS em
+# <a name="em_getimemodebias-message"></a>Messaggio \_ EM GETIMEMODEBIAS
 
-Recupera la distorsione della modalità IME (Input Method Editor) per un controllo Rich Edit di Microsoft.
+Recupera la distorsione della modalità Input Method Editor (IME) per un controllo Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,26 +32,26 @@ Recupera la distorsione della modalità IME (Input Method Editor) per un control
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio restituisce l'impostazione di distorsione della modalità IME corrente.
+Questo messaggio restituisce l'impostazione corrente di distorsione della modalità IME.
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere la distorsione della modalità del Framework dei servizi di testo, usare [**em \_ GETCTFMODEBIAS**](em-getctfmodebias.md).
+Per ottenere la distorsione Framework servizi di testo, usare [**EM \_ GETCTFMODEBIAS.**](em-getctfmodebias.md)
 
-Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**](em-isime.md) .
+L'applicazione deve [**chiamare \_ l'ISIME EM**](em-isime.md) prima di chiamare questa funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP1 \[\]<br/>                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP solo con \[ app desktop SP1\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**
 **Riferimento**
 </dt> <dt>
 
-[**\_ISIME em**](em-isime.md)
+[**EM \_ ISIME**](em-isime.md)
 </dt> <dt>
 
-[**\_GETCTFMODEBIAS em**](em-getctfmodebias.md)
+[**EM \_ GETCTFMODEBIAS**](em-getctfmodebias.md)
 </dt> </dl>
 
  

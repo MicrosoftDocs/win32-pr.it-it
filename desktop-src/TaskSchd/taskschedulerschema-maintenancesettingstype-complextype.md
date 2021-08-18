@@ -3,7 +3,7 @@ title: Tipo complesso maintenanceSettingsType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento MaintenanceSettings.
 ms.assetid: CA4C452E-CA25-4E2D-B5E2-ED64C59AB3AD
 keywords:
-- Utilità di pianificazione di tipo complesso maintenanceSettingsType
+- tipo complesso maintenanceSettingsType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f261e84fe2af1239cce1bbd377e991ede6e8506
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0733d16ec929b4e67774fc436c1530b67d70392b2655525b2aaaa642c2ea346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139204"
 ---
 # <a name="maintenancesettingstype-complex-type"></a>Tipo complesso maintenanceSettingsType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento MaintenanceSettings.**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md)
 
 ``` syntax
 <xs:complexType name="maintenanceSettingsType">
@@ -70,8 +70,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Elemento                                                                        | Tipo    | Descrizione                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Scadenza**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) |         | Specifica il periodo di tempo dopo il quale l'utilità di pianificazione tenterà di avviare l'attività durante la manutenzione automatica di emergenza, se non è stata completata durante la normale manutenzione.<br/> |
-| **Exclusive**                                                                  | boolean | Se è impostato su true, l'attività verrà avviata esclusivamente tra le altre attività di manutenzione.<br/>                                                                                                 |
+| [**Scadenza**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) |         | Specifica l'intervallo di tempo dopo il quale l'Utilità di pianificazione tenterà di avviare l'attività durante la manutenzione automatica di emergenza, se non è stato possibile completarla durante la manutenzione regolare.<br/> |
+| **Exclusive**                                                                  | boolean | Se impostato su true, l'attività verrà avviata esclusivamente tra le altre attività di manutenzione.<br/>                                                                                                 |
 | [**Periodo**](taskschedulerschema-daysinterval-dailyscheduletype-element.md)   |         | Specifica la frequenza con cui l'attività deve essere avviata durante la manutenzione automatica.<br/>                                                                                                      |
 
 
@@ -82,8 +82,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/> |
 
 
 
@@ -91,7 +91,7 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

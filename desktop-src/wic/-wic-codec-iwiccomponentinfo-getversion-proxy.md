@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetVersion.
 ms.assetid: b064b065-bc02-4943-b208-ce5e40c12aa2
-title: Funzione IWICComponentInfo_GetVersion_Proxy
+title: IWICComponentInfo_GetVersion_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: bad3677068802861bce9c0c7d0c1b03e5d06d0db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a781aacbe0b5b9dd35a94c2ce906ee546e0b1da6b426a6848b6aafed2721cb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965220"
 ---
-# <a name="iwiccomponentinfo_getversion_proxy-function"></a>IWICComponentInfo \_ \_ funzione proxy GetVersion
+# <a name="iwiccomponentinfo_getversion_proxy-function"></a>Funzione proxy IWICComponentInfo \_ GetVersion \_
 
-Funzione proxy per il metodo [**GetVersion**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getversion) .
+Funzione proxy per il [**metodo GetVersion.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getversion)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT IWICComponentInfo_GetVersion_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Puntatore a questo oggetto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Puntatore a [**questo oggetto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchVersion* \[ in\]
+*cchVersion* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni del buffer *wzVersion* .
+Dimensioni del buffer *wzVersion.*
 
 </dd> <dt>
 
-*wzVersion* \[ in uscita\]
+*wzVersion* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntatore che riceve una stringa invariante delle impostazioni cultura della versione del componente.
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntatore che riceve la lunghezza effettiva della versione del componente.
 
@@ -81,9 +81,9 @@ Puntatore che riceve la lunghezza effettiva della versione del componente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -93,9 +93,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

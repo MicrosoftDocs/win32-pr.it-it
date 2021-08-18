@@ -1,8 +1,8 @@
 ---
-description: Indica al compilatore MOF di separare un file MOF in versioni indipendenti dalla lingua e dal linguaggio.
+description: Indica al compilatore MOF di separare un file MOF in versioni indipendenti dalla lingua e specifiche del linguaggio.
 ms.assetid: c1aec33c-b936-4cca-8fcd-7bd088af7116
 ms.tgt_platform: multiple
-title: modifica pragma
+title: pragma amendment
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,27 +13,27 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1269ac1a96617b72852e687b2a38ce8d331ab3e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6204ac7f3cd78de8d2eed9740fc165475d387e65284bcbf6be1ea10ed91a0926
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992731"
 ---
-# <a name="pragma-amendment"></a>modifica pragma
+# <a name="pragma-amendment"></a>pragma amendment
 
-Il comando per il preprocessore **pragma emendamento** indica al compilatore MOF di separare un file MOF in versioni indipendenti dalla lingua e dal linguaggio. Il file MOF specifico del linguaggio sposta i qualificatori modificati in uno spazio dei nomi per le impostazioni locali specifiche. Compilare quindi i file MOF specifici della lingua e della lingua per archiviare le informazioni sulle classi nel repository WMI.
+Il **comando del** preprocessore pragma amendment indica al compilatore MOF di separare un file MOF in versioni indipendenti dal linguaggio e specifiche del linguaggio. Il file MOF specifico della lingua sposta i qualificatori modificati in uno spazio dei nomi per impostazioni locali specifiche. Compilare quindi i file MOF specifici del linguaggio e indipendenti dalla lingua per archiviare le informazioni sulle classi nel repository WMI.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come creare un file MOF che contiene qualificatori modificati. È quindi possibile compilare il codice MOF con il comando seguente:
+Nell'esempio seguente viene illustrato come creare un file MOF contenente qualificatori modificati. È quindi possibile compilare il codice MOF con il comando seguente:
 
-**mofcomp** **-MOF: Lnmof. mof** **-MFL: Lsmof. mfl** **Mastermof. mof**
+**mofcomp** **-MOF:Lnmof.mof** **-MFL:Lsmof.mfl** **Mastermof.mof**
 
-Il comando indica al compilatore MOF di produrre due file MOF dal file Mastermof. mof originale. Il compilatore MOF produce una versione indipendente dal linguaggio del file MOF, denominata Lnmof. mof, con tutti gli elementi specifici della lingua rimossi. Il compilatore crea anche un secondo file MOF specifico del linguaggio denominato Lsmof. mfl che contiene solo gli elementi che è necessario localizzare.
+Il comando indica al compilatore MOF di produrre due file MOF dal file Mastermof.mof originale. Il compilatore MOF produce una versione indipendente dal linguaggio del file MOF, denominata Lnmof.mof, con tutti gli elementi specifici del linguaggio rimossi. Il compilatore crea anche un secondo file MOF specifico del linguaggio denominato Lsmof.mfl che contiene solo gli elementi che è necessario localizzare.
 
 > [!Note]  
-> Quando si suddivide un file MOF con il qualificatore della **modifica** o il comando **pragma emendation** , è necessario specificare le opzioni **-MOF** e **-MFL** . In caso contrario, il compilatore non genera alcun file di output. È quindi necessario compilare i due file di output per rendere disponibili le informazioni sulla classe per WMI.
+> Quando si suddivide un file MOF con il qualificatore di modifica o il **comando pragma amendment,** è necessario specificare le opzioni **-MOF** e **-MFL.**  In caso contrario, il compilatore non genera alcun file di output. È quindi necessario compilare i due file di output per rendere disponibili le informazioni sulla classe per WMI.
 
  
 
@@ -77,7 +77,7 @@ Class myclass
 
 <dl> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

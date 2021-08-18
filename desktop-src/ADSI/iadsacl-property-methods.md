@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsAcl (IADs. h)
-description: Il metodo Property dell'interfaccia IADsAcl imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsAcl (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsAcl imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: eb4786d7-d366-4924-8255-dc28ea47a246
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsAcl ADSI
+- Metodi della proprietà IADsAcl ADSI
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9d8afb1ba3cbf7749ad8e3d14fa970662715909
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bebe534df506bcf25aa618213a4e274500035c8ea8b21941ae4e57a784d26c30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961930"
 ---
-# <a name="iadsacl-property-methods"></a>Metodi di proprietà IADsAcl
+# <a name="iadsacl-property-methods"></a>Metodi della proprietà IADsAcl
 
-Il metodo Property dell'interfaccia [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -46,10 +46,10 @@ Impostazioni dei privilegi.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -74,10 +74,10 @@ Nome di un attributo protetto.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -102,10 +102,10 @@ Nome dell'oggetto.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -133,9 +133,9 @@ HRESULT put_SubjectName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsAcl è definito come 8452D3AB-0869-11D1-A377-00C04FB950DC<br/>              |
+| IID<br/>                      | IADsAcl IID è definito come \_ 8452D3AB-0869-11D1-A377-00C04FB950DC<br/>              |
 
 
 

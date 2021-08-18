@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCDefaultCrisp (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMVCDefaultCrisp (Wmcodecdsp. h)
+title: g_wszWMVCDefaultCrisp (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | g_wszWMVCDefaultCrisp (Wmcodecdsp.h)
 ms.assetid: af6d1816-c365-4e2e-9a00-9374a7030543
 keywords:
-- g_wszWMVCDefaultCrisp formato Windows Media
+- g_wszWMVCDefaultCrisp Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a40fe640a3194c0d554f15c0723056e143a19854
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdba67341a4c4d25b1a9210d7a8085b6d654f3ff4d00f7cf4da164abb00998f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964120"
 ---
 # <a name="g_wszwmvcdefaultcrisp"></a>g \_ wszWMVCDefaultCrisp
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

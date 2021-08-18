@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_RECPOS Class'
-title: Classe JET_RECPOS
+description: 'Altre informazioni su: JET_RECPOS classe'
+title: JET_RECPOS classe
 TOCTitle: JET_RECPOS class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RECPOS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09fce4bf1d73ad1b9767e39ae5c90b25eccdea73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c25fd9cb9af531f134627ffcc54cd9fa5d37a33b340c53129a83c6538b33b1f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107520"
 ---
-# <a name="jet_recpos-class"></a>Classe JET_RECPOS
+# <a name="jet_recpos-class"></a>JET_RECPOS classe
 
 Rappresenta una posizione frazionaria all'interno di un indice. Viene usato da JetGotoPosition e JetGetRecordPosition.
 
@@ -40,8 +40,8 @@ Rappresenta una posizione frazionaria all'interno di un indice. Viene usato da J
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RECPOS  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,6 +68,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_RECPOS](./jet-recpos-members.md)
+[JET_RECPOS membri](./jet-recpos-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

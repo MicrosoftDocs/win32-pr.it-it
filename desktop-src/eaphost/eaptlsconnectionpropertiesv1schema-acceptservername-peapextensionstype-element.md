@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 886f1ab2a6f00a4a8a9d530fa41865b2fd0cf0b8
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 245fcac23de64c6f392cccfbacf1def48fc6465c0f1fbaf7fc004ac628f5864c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984201"
 ---
 # <a name="tlsextensions-v1-schema"></a>TLSExtensions (schema v1)
 
-L'elemento **TLSExtensions (EapType)** consente miglioramenti futuri allo schema.
+**L'elemento TLSExtensions (EapType)** consente miglioramenti futuri dello schema.
 
 ``` syntax
 <xs:element
@@ -33,20 +33,20 @@ L'elemento **TLSExtensions (EapType)** consente miglioramenti futuri allo schema
  />
 ```
 
-L'elemento è definito dall'elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+L'elemento è definito [**dall'elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **TLSExtensions** è facoltativo.
+**L'elemento TLSExtensions** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -60,7 +60,7 @@ L'elemento **TLSExtensions** è facoltativo.
 [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
@@ -69,7 +69,7 @@ L'elemento **TLSExtensions** è facoltativo.
 
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)

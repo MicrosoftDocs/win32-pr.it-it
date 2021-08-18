@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8c4f167f769a1ed46404028916477d6784e4a436
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e43422e5872708a61b5f066725e61c16e55d04dd94f5c8527c7b86e1f7a543c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128333"
 ---
 # <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h)
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiunge la rotazione allo stack matrice con la matrice di rotazione calcolata simile alla seguente:
+Questo metodo aggiunge la rotazione allo stack di matrici con la matrice di rotazione calcolata simile alla seguente:
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentUnloadableOSFunctionalityException'
+description: Altre informazioni sul costruttore EsentUnloadableOSFunctionalityException
 title: Costruttore EsentUnloadableOSFunctionalityException
 TOCTitle: 'EsentUnloadableOSFunctionalityException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentUnloadableOSFunctionalityException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d00544cf398784db30f2c37c5eea14c0f631fe79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 661cc01002ee8b63ceb17dbc2aef52bb35a935c7efe55c273ae55bb90fb8bc3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112810"
 ---
 # <a name="esentunloadableosfunctionalityexception-constructor"></a>Costruttore EsentUnloadableOSFunctionalityException
 
 Inizializza una nuova istanza della classe EsentUnloadableOSFunctionalityException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentUnloadableOSFunctionalityException()
 
 [Membri di EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

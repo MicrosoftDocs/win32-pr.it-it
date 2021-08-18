@@ -1,21 +1,21 @@
 ---
-title: Interfacce specializzate (Direct3D 11)
-description: ID3DX11EffectVariable dispone di diversi metodi per eseguire il cast dell'interfaccia in un particolare tipo di interfaccia necessaria.
+title: Specializzazione delle interfacce (Direct3D 11)
+description: ID3DX11EffectVariable include diversi metodi per eseguire il cast dell'interfaccia nel tipo specifico di interfaccia necessario.
 ms.assetid: 20892af0-7d4a-4a89-b8d7-4ef225400697
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cb9f8adb5a5bb184473ff5679df99f0b71557fa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d6e4cff9c74f7a4b4034578b7ddeec2c388f0f953534393ac27778c31ed3856c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126075"
 ---
-# <a name="specializing-interfaces-direct3d-11"></a>Interfacce specializzate (Direct3D 11)
+# <a name="specializing-interfaces-direct3d-11"></a>Specializzazione delle interfacce (Direct3D 11)
 
-[**ID3DX11EffectVariable**](id3dx11effectvariable.md) dispone di diversi metodi per eseguire il cast dell'interfaccia in un particolare tipo di interfaccia necessaria. I metodi sono nel formato *AsType* e includono un metodo per ogni tipo di variabile di effetto, ad esempio AsBlend, AsConstantBuffer e così via.
+[**ID3DX11EffectVariable**](id3dx11effectvariable.md) include diversi metodi per eseguire il cast dell'interfaccia nel tipo specifico di interfaccia necessario. I metodi hanno il formato *AsType* e includono un metodo per ogni tipo di variabile di effetto (ad esempio AsBlend, AsConstantBuffer e così via).
 
-Si supponga, ad esempio, di avere un effetto con due variabili globali: ora e trasformazione mondiale.
+Si supponga, ad esempio, di avere un effetto con due variabili globali: time e world transform.
 
 
 ```
@@ -25,7 +25,7 @@ float4x4 g_mWorld;
 
 
 
-Di seguito è riportato un esempio che ottiene le variabili seguenti:
+Ecco un esempio che ottiene queste variabili:
 
 
 ```
@@ -51,7 +51,7 @@ g_pfTime = (g_pEffect11->GetVariableByName("g_fTime"))->AsScalar();
 
 
 
-Anche le interfacce che ereditano da [**ID3DX11EffectVariable**](id3dx11effectvariable.md) dispongono di questi metodi, ma sono state progettate per restituire oggetti non validi; solo le chiamate da **ID3DX11EffectVariable** restituiscono oggetti validi. Le applicazioni possono testare l'oggetto restituito per verificare se è valido chiamando [**ID3DX11EffectVariable:: IsValid**](id3dx11effectvariable-isvalid.md).
+Anche le interfacce che ereditano da [**ID3DX11EffectVariable**](id3dx11effectvariable.md) hanno questi metodi, ma sono state progettate per restituire oggetti non validi. Solo le chiamate **da ID3DX11EffectVariable restituiscono** oggetti validi. Le applicazioni possono testare l'oggetto restituito per verificare se è valido chiamando [**ID3DX11EffectVariable::IsValid**](id3dx11effectvariable-isvalid.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -60,9 +60,9 @@ Anche le interfacce che ereditano da [**ID3DX11EffectVariable**](id3dx11effectva
 [Effetti (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

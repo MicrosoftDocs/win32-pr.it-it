@@ -1,9 +1,9 @@
 ---
-title: Body (elemento)
-description: L'elemento Body contiene gli elementi che definiscono il contenuto di una playlist.
+title: Elemento body
+description: L'elemento body contiene gli elementi che definiscono il contenuto di una playlist.
 ms.assetid: 96d09635-c360-4a36-a56e-6cecbbd4ff30
 keywords:
-- Finestra elementi corpo Media Player
+- Elemento body Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb30885efe9e018bf8792b38facdc086c5473b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c785b7db7b44177469596450ee75a460e2bc6224b191a2811baf95380bea25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135954"
 ---
-# <a name="body-element"></a>Body (elemento)
+# <a name="body-element"></a>Elemento body
 
-L'elemento **Body** contiene gli elementi che definiscono il contenuto di una playlist.
+**L'elemento** body contiene gli elementi che definiscono il contenuto di una playlist.
 
 ``` syntax
 <body>
@@ -39,7 +39,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia | Elementi                 |
 |-----------|--------------------------|
-| Padre    | [SMIL](smil-element.md) |
+| Padre    | [Smil](smil-element.md) |
 | Figlio     | [Seq](seq-element.md)   |
 
 
@@ -48,7 +48,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Commenti
 
-Il contenuto di una playlist è organizzato all'interno di un elemento **Seq** contenuto all'interno dell'elemento **Body** . In genere è presente un elemento **Seq** che definisce un set statico di elementi multimediali e contiene elementi **multimediali** oppure ne esiste uno che definisce un set dinamico di elementi multimediali e contiene un elemento **smartPlaylist** .
+Il contenuto di una playlist è organizzato all'interno di **un elemento seq** contenuto all'interno dell'elemento **body.** In genere è presente un elemento **seq** che definisce  un set statico di elementi multimediali e contiene elementi multimediali oppure un elemento che definisce un set dinamico di elementi multimediali e contiene un **elemento smartPlaylist.**
 
 ## <a name="examples"></a>Esempio
 
@@ -77,7 +77,7 @@ Il contenuto di una playlist è organizzato all'interno di un elemento **Seq** c
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/> |
 
 
 
@@ -85,7 +85,7 @@ Il contenuto di una playlist è organizzato all'interno di un elemento **Seq** c
 
 <dl> <dt>
 
-[**Elemento multimediale**](media-element.md)
+[**Elemento media**](media-element.md)
 </dt> <dt>
 
 [**Elemento seq**](seq-element.md)
@@ -97,7 +97,7 @@ Il contenuto di una playlist è organizzato all'interno di un elemento **Seq** c
 [**Elemento smil**](smil-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

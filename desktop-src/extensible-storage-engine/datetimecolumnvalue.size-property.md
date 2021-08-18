@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà DateTimeColumnValue. size'
-title: Proprietà DateTimeColumnValue. size
+description: Altre informazioni sulla proprietà DateTimeColumnValue.Size
+title: Proprietà DateTimeColumnValue.Size
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.DateTimeColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.datetimecolumnvalue.size(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a006cafa81f46ca36d5bb76aa678122c2c6eab66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2aab09b2a758527944a901046403c4cc59efaa7de8e6a901984471edd5527b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982491"
 ---
-# <a name="datetimecolumnvaluesize-property"></a>Proprietà DateTimeColumnValue. size
+# <a name="datetimecolumnvaluesize-property"></a>Proprietà DateTimeColumnValue.Size
 
-Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.
+Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe DateTimeColumnValue](./datetimecolumnvalue-class.md)
 
-[Membri di DateTimeColumnValue](./datetimecolumnvalue-members.md)
+[Membri dateTimeColumnValue](./datetimecolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: attributo GECOS
+title: Attributo gecos
 description: Contiene le informazioni archiviate nel campo GECOS.
 ms.assetid: 017884a5-697f-481d-b119-075deb96fd6f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo GECOS
+- Schema AD dell'attributo gecos
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37847f13f7b0d168907f11307b57e893949cc83b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fad96c4e73808608a6175e42ba81b5115b6a84fe9daf2048b4d3d0fefdf8eb05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961370"
 ---
-# <a name="gecos-attribute"></a>attributo GECOS
+# <a name="gecos-attribute"></a>Attributo gecos
 
 Contiene le informazioni archiviate nel campo GECOS.
 
@@ -28,13 +28,13 @@ Contiene le informazioni archiviate nel campo GECOS.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | GECOS                                |
-| LDAP-Display-Name | GECOS                                |
+| CN                | gecos                                |
+| Ldap-Display-Name | gecos                                |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.2                      |
-| System-ID-GUID    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
+| System-Id-Guid    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene le informazioni archiviate nel campo GECOS.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene le informazioni archiviate nel campo GECOS.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene le informazioni archiviate nel campo GECOS.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -118,21 +118,21 @@ Contiene le informazioni archiviate nel campo GECOS.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il campo GECOS è un campo facoltativo utilizzato per archiviare varie informazioni, ad esempio il nome completo dell'utente.
+Il campo GECOS è un campo facoltativo usato per archiviare varie informazioni, ad esempio il nome completo dell'utente.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,23 +1,23 @@
 ---
-description: Con le costanti, le trame e lo stato dello shader dichiarati e inizializzati, l'unica cosa che rimane da fare è impostare lo stato dell'effetto nel dispositivo.
+description: Con le costanti, le trame e lo stato dello shader dichiarati e inizializzati, l'unica cosa da fare è impostare lo stato dell'effetto nel dispositivo.
 ms.assetid: b6c88fa1-53d4-40dc-803d-5d1cdfe4777b
 title: Applicare una tecnica (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfb7cc48c9115dfb81c1688a3a499e24d46cc563
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b4c920cbc7323ba42f3b099688a962674e3f5c2305746df7a56d1e158330919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128413"
 ---
 # <a name="apply-a-technique-direct3d-10"></a>Applicare una tecnica (Direct3D 10)
 
-Con le costanti, le trame e lo stato dello shader dichiarati e inizializzati, l'unica cosa che rimane da fare è impostare lo stato dell'effetto nel dispositivo.
+Con le costanti, le trame e lo stato dello shader dichiarati e inizializzati, l'unica cosa da fare è impostare lo stato dell'effetto nel dispositivo.
 
-## <a name="set-non-shader-state-in-the-device"></a>Impostare lo stato non dello shader nel dispositivo
+## <a name="set-non-shader-state-in-the-device"></a>Impostare lo stato non shader nel dispositivo
 
-Uno stato della pipeline non è impostato da un effetto. Ad esempio, la cancellazione di una destinazione di rendering prepara la destinazione di rendering per i dati. Prima di impostare lo stato dell'effetto nel dispositivo, di seguito è riportato un esempio di cancellazione dei buffer di output.
+Alcuni stati della pipeline non sono impostati da un effetto. Ad esempio, la cancellazione di una destinazione di rendering prepara la destinazione di rendering per i dati. Prima di impostare lo stato dell'effetto nel dispositivo, ecco un esempio di cancellazione dei buffer di output.
 
 
 ```
@@ -33,7 +33,7 @@ Uno stato della pipeline non è impostato da un effetto. Ad esempio, la cancella
 
 ## <a name="set-effect-state-in-the-device"></a>Impostare lo stato dell'effetto nel dispositivo
 
-L'impostazione dello stato dell'effetto viene eseguita applicando lo stato dell'effetto all'interno del ciclo di rendering. Questa operazione viene eseguita dall'esterno di. Ovvero selezionare una tecnica, quindi impostare lo stato per ogni passaggio (a seconda del risultato desiderato).
+L'impostazione dello stato dell'effetto viene eseguita applicando lo stato dell'effetto all'interno del ciclo di rendering. Questa operazione viene eseguita dall'esterno in . Ovvero, selezionare una tecnica e quindi impostare lo stato per ogni passaggio (a seconda del risultato desiderato).
 
 
 ```
@@ -52,7 +52,7 @@ L'impostazione dello stato dell'effetto viene eseguita applicando lo stato dell'
 
 
 
-Un effetto non esegue alcun rendering, ma imposta semplicemente lo stato dell'effetto sul dispositivo. Il codice di rendering viene chiamato dopo che lo stato dell'effetto aggiorna lo stato del dispositivo. In questo esempio, la chiamata a DrawIndexed esegue il rendering.
+Un effetto non esegue il rendering di alcun elemento, ma imposta semplicemente lo stato dell'effetto sul dispositivo. Il codice di rendering viene chiamato dopo che lo stato dell'effetto aggiorna lo stato del dispositivo. In questo esempio la chiamata DrawIndexed esegue il rendering.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -4,12 +4,12 @@ ms.assetid: 288eabb9-9591-4fb2-8b34-182c3ea1f0a1
 title: System.Contact.HomeAddress1Street
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6388f89d079b19d8e9827260ac11f92655210ea0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77074131ed98e69b9521750bb57ae5a4b095be1184a304d24d0d54ed569173d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098280"
 ---
 # <a name="systemcontacthomeaddress1street"></a>System.Contact.HomeAddress1Street
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

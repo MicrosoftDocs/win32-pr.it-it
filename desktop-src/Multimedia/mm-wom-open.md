@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_WOM_OPEN (mmsystem. h)
-description: Il \_ \_ messaggio di apertura mm WOM viene inviato a una finestra quando viene aperto il dispositivo di output della forma d'onda specificata.
+title: MM_WOM_OPEN messaggio (Mmsystem.h)
+description: Il messaggio MM \_ WOM OPEN viene inviato a una finestra quando viene aperto il dispositivo di output \_ audio-forma d'onda specificato.
 ms.assetid: 1b0366de-61cd-4203-9173-ababaefdb153
 keywords:
-- MM_WOM_OPEN messaggi multimediali di Windows
+- MM_WOM_OPEN messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 783910389f2b9be9193c8f7bb0722f70261f5fce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e770d03b847352152846d1095bc528bff8e8eacbcdbb1c9fc46450d21dc185bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065401"
 ---
-# <a name="mm_wom_open-message"></a>MM \_ WOM \_ messaggio aperto
+# <a name="mm_wom_open-message"></a>Messaggio MM \_ WOM \_ OPEN
 
-Il messaggio di **\_ \_ apertura mm WOM** viene inviato a una finestra quando viene aperto il dispositivo di output della forma d'onda specificata.
+Il **messaggio MM \_ WOM \_ OPEN** viene inviato a una finestra quando viene aperto il dispositivo di output audio-forma d'onda specificato.
 
 
 ```C++
@@ -41,20 +41,20 @@ lParam = reserved
 <span id="hOutputDev"></span><span id="houtputdev"></span><span id="HOUTPUTDEV"></span>*hOutputDev*
 </dt> <dd>
 
-Handle per il dispositivo che è stato aperto.
+Handle per il dispositivo aperto.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Questo messaggio non restituisce alcun valore.
 
 <dl> <dt>
 
-[Audio Waveform](waveform-audio.md)
+[Waveform Audio](waveform-audio.md)
 </dt> <dt>
 
-[Messaggi di forma d'onda](waveform-messages.md)
+[Messaggi Waveform](waveform-messages.md)
 </dt> </dl>
 
  

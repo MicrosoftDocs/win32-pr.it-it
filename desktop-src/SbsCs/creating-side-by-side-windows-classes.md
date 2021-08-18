@@ -1,21 +1,21 @@
 ---
-description: I contesti di applicazione possono essere usati per creare classi di Windows affiancate.
+description: I contesti dell'applicazione possono essere usati per creare classi Windows side-by-side.
 ms.assetid: 4941ae1b-f9c6-45ff-b39b-a4078a12a58c
-title: Creazione di classi di Windows affiancate
+title: Creazione di classi Windows side-by-side
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 161732522a12fb6924a2850031d77cff53e44eeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8317712b333963f9864e195bb1c5f18896dcd73eec059c9c4ae670ff2fb6a4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142344"
 ---
-# <a name="creating-side-by-side-windows-classes"></a>Creazione di classi di Windows affiancate
+# <a name="creating-side-by-side-windows-classes"></a>Creazione di classi Windows side-by-side
 
-I contesti di applicazione possono essere usati per creare classi di Windows affiancate. Con le classi Windows affiancate, l'applicazione può avere versioni diverse di una classe attiva contemporaneamente in una finestra padre solitaria. Per creare una classe Windows affiancata, l'applicazione deve attivare un contesto di attivazione prima di chiamare [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) per ottenere un handle per la nuova finestra.
+I contesti dell'applicazione possono essere usati per creare classi Windows side-by-side. Usando le classi di Windows side-by-side, l'applicazione può avere versioni diverse di una classe attive contemporaneamente in una sola finestra padre. Per creare una classe Windows side-by-side, l'applicazione deve attivare un contesto di attivazione prima di chiamare [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) per ottenere un handle per la nuova finestra.
 
-I controlli comuni di Windows versione 5,82 e la versione 6,0 hanno ad esempio un controllo di modifica. Per impostazione predefinita, Windows utilizza il controllo di modifica della versione 5,82. Per ottenere una finestra affiancata con il controllo di modifica della versione 6,0, prima di chiamare [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) come di consueto, l'applicazione può fare riferimento a un assembly che espone le classi finestra denominate e quindi attivare il contesto di attivazione che fa riferimento ai controlli della versione 6,0.
+Ad esempio, Windows i controlli comuni versione 5.82 e 6.0 avevano entrambi un controllo Edit. Windows usa per impostazione predefinita il controllo Edit versione 5.82. Per ottenere una finestra affiancata con il controllo Edit versione 6.0, prima di chiamare [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) come di consueto, l'applicazione può fare riferimento a un assembly che espone classi di finestre denominate e quindi attivare il contesto di attivazione che fa riferimento ai controlli della versione 6.0.
 
  
 

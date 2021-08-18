@@ -1,7 +1,7 @@
 ---
-description: Applica un modello stipple alla riga.
+description: Applica un criterio di punta alla linea.
 ms.assetid: 53548a9f-cf09-4ab9-9327-d5053645fc1b
-title: 'Metodo ID3DXLine:: sepattern (D3dx9core. h)'
+title: Metodo ID3DXLine::SetPattern (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 80a0485991bc06bdb9fcd3280017d4cc60b492ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 502fcbc8c3d8a8160ce3390330511d47165493a2bd4cc9a312e5203de7424e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120875"
 ---
-# <a name="id3dxlinesetpattern-method"></a>Metodo ID3DXLine:: sepattern
+# <a name="id3dxlinesetpattern-method"></a>Metodo ID3DXLine::SetPattern
 
-Applica un modello stipple alla riga.
+Applica un criterio di punta alla linea.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetPattern(
 
 <dl> <dt>
 
-*dwPattern* \[ in\]
+*dwPattern* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Descrive il modello Stipple: 1 è opaco, 0 è trasparente.
+Descrive il modello di puntamento: 1 è opaco, 0 è trasparente.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

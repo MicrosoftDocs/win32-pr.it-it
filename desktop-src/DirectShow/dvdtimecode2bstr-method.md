@@ -1,15 +1,15 @@
 ---
-description: Il metodo DVDTimeCode2bstr recupera una stringa che indica l'ora corrente del disco.
+description: Il metodo DVDTimeCode2bstr recupera una stringa che indica l'ora corrente sul disco.
 ms.assetid: 0a477274-ac56-4f46-8461-53411362b33e
 title: Metodo DVDTimeCode2bstr
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 042c6889fd2d5ee76aa42fc4e92f1c2754a5c95d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 90bda68bafa462af5d425c62368b51f8b4b08ce2dfc310276e8f26b7c4601fa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148604"
 ---
 # <a name="dvdtimecode2bstr-method"></a>Metodo DVDTimeCode2bstr
 
@@ -31,13 +31,13 @@ Il `DVDTimeCode2bstr` metodo recupera una stringa che indica l'ora corrente sul 
 <span id="sTimeCode"></span><span id="stimecode"></span><span id="STIMECODE"></span>*sTimeCode*
 </dt> <dd>
 
-Specifica l'ora corrente del disco rispetto all'inizio del titolo come numero ottenuto tramite l'evento di [**\_ \_ \_ \_ ora HMSF corrente del DVD EC**](ec-dvd-current-hmsf-time.md) .
+Specifica l'ora corrente sul disco relativa all'inizio del titolo come numero ottenuto tramite l'evento [**\_ EC DVD CURRENT \_ \_ HMSF \_ TIME.**](ec-dvd-current-hmsf-time.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce una stringa di 11 caratteri nel formato "HH: mm: SS: FF" che rappresenta le ore, i minuti, i secondi e i frame che definiscono l'ora corrente.
+Restituisce una stringa di 11 caratteri nel formato "hh:mm:ss:ff" che rappresenta le ore, i minuti, i secondi e i fotogrammi che definiscono l'ora corrente.
 
 ## <a name="remarks"></a>Commenti
 

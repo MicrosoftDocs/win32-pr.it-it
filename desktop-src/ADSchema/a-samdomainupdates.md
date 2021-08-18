@@ -1,10 +1,10 @@
 ---
 title: Attributo SAM-Domain-Updates
-description: Contiene una maschera di maschera di operazioni SAM eseguite in Active Directory.
+description: Contiene una maschera di bit delle operazioni SAM eseguite in Active Directory.
 ms.assetid: cafef47d-4923-4ee6-92bc-764301506cfe
 ms.tgt_platform: multiple
 keywords:
-- Schema AD degli attributi SAM-Domain-Updates
+- Schema AD dell'attributo SAM-Domain-Updates
 - Schema AD dell'attributo samDomainUpdates
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812a1995ec89f3827b7fcfd984edb2de164d0bd3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d2c2bb6bc23e04874221fa65486247b1ed0dfd28f208ca41329b8528e558b257
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022209"
 ---
 # <a name="sam-domain-updates-attribute"></a>Attributo SAM-Domain-Updates
 
-Contiene una maschera di maschera di operazioni SAM eseguite in Active Directory.
+Contiene una maschera di bit delle operazioni SAM eseguite in Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | SAM-Domain-aggiornamenti                                    |
-| LDAP-Display-Name | samDomainUpdates                                      |
+| CN                | SAM-Domain-Updates                                    |
+| Ldap-Display-Name | samDomainUpdates                                      |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1969                               |
-| System-ID-GUID    | 04d2d114-f799-4e9b-bcdc-90e8f5ba7ebe                  |
+| System-Id-Guid    | 04d2d114-f799-4e9b-bcdc-90e8f5ba7ebe                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,15 +55,15 @@ Contiene una maschera di maschera di operazioni SAM eseguite in Active Directory
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server Sam**](c-samserver.md)<br/> |
+| Classi usate in        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene una maschera di maschera di operazioni SAM eseguite in Active Directory
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server Sam**](c-samserver.md)<br/> |
+| Classi usate in        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene una maschera di maschera di operazioni SAM eseguite in Active Directory
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server Sam**](c-samserver.md)<br/> |
+| Classi usate in        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 

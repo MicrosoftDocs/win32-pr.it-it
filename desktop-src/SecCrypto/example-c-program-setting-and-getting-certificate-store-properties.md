@@ -1,34 +1,34 @@
 ---
-description: Nell'esempio seguente viene impostata e ottenuta una proprietà dell'archivio certificati, il nome dell'archivio localizzato. Questa proprietà non viene resa permanente quando l'archivio viene chiuso.
+description: Nell'esempio seguente viene impostata e recuperata una proprietà dell'archivio certificati, il nome dell'archivio localizzato. Questa proprietà non viene mantenuta quando l'archivio viene chiuso.
 ms.assetid: 9fb368c9-a0d7-4c5f-9a38-7ef8f7283354
-title: "Esempio di programma C: impostazione e recupero delle proprietà dell'archivio certificati"
+title: "Programma C di esempio: impostazione e recupero delle proprietà dell'archivio certificati"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7337027c265376f9145ef7b68f359250223d20f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59d65eeb0ee667b1dbce5a1df6c9c73d1849ef2524ecc3d0674d6fa7a5225fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007529"
 ---
-# <a name="example-c-program-setting-and-getting-certificate-store-properties"></a>Esempio di programma C: impostazione e recupero delle proprietà dell'archivio certificati
+# <a name="example-c-program-setting-and-getting-certificate-store-properties"></a>Programma C di esempio: impostazione e recupero delle proprietà dell'archivio certificati
 
-Nell'esempio seguente viene impostata e ottenuta una proprietà dell'archivio certificati, il nome dell'archivio localizzato. Questa proprietà non viene resa permanente quando l'archivio viene chiuso.
+Nell'esempio seguente viene impostata e recuperata una proprietà dell'archivio certificati, il nome dell'archivio localizzato. Questa proprietà non viene mantenuta quando l'archivio viene chiuso.
 
-In questo esempio vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le attività seguenti e le [*funzioni CryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura di un archivio certificati utilizzando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Impostazione del nome localizzato dell'archivio con [**CertSetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetstoreproperty).
--   Recupero del nome localizzato dell'archivio con [**CertGetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetstoreproperty).
--   Recupero del nome di archivio localizzato predefinito utilizzando [**CryptFindLocalizedName**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindlocalizedname).
--   Salvare l'archivio certificati come messaggio [*PKCS \# 7*](../secgloss/p-gly.md) in un file usando [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
--   Salvare l'archivio certificati in un [*BLOB*](../secgloss/b-gly.md) di memoria usando [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
--   Determinare il numero di firmatari del \# messaggio PKCS 7 utilizzando [**CryptGetMessageSignercount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount).
--   Aprire un archivio certificati da un \# messaggio PKCS 7 in memoria usando [**CryptGetMessageCertificates**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagecertificates).
--   Inizializzare le strutture di dati dell' [**\_ \_ identificatore dell'algoritmo crypt**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) e del [**\_ \_ messaggio \_ hash**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) di crittografia necessario per eseguire l' [*hashing*](../secgloss/h-gly.md) del messaggio
+-   Apertura di un archivio certificati [**tramite CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Impostazione del nome localizzato dell'archivio [**tramite CertSetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetstoreproperty).
+-   Recupero del nome localizzato dell'archivio tramite [**CertGetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetstoreproperty).
+-   Recupero del nome dell'archivio localizzato predefinito [**tramite CryptFindLocalizedName**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindlocalizedname).
+-   Salvare l'archivio certificati come [*messaggio PKCS \# 7*](../secgloss/p-gly.md) in un file usando [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
+-   Salvare l'archivio certificati in un [*BLOB di memoria*](../secgloss/b-gly.md) usando [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
+-   Determinare il numero di firmatari del messaggio PKCS \# 7 [**usando CryptGetMessageSignercount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount).
+-   Aprire un archivio certificati da un messaggio PKCS \# 7 in memoria [**usando CryptGetMessageCertificates**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagecertificates).
+-   Inizializzare le strutture di dati [**CRYPT \_ ALGORITHM \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) e [**CRYPT \_ HASH MESSAGE \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) necessarie per l'hashing del messaggio [](../secgloss/h-gly.md)
 -   Hash e codifica del messaggio usando [**CryptHashMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashmessage).
--   Determinare se sono state apportate modifiche a un archivio certificati aperto e sincronizzare l'archivio se necessario usando [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore).
--   Chiusura di un archivio certificati utilizzando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con il \_ flag di chiusura dell'archivio del certificato \_ \_ \_ .
+-   Determinare se sono state apportate modifiche a un archivio certificati aperto e, se necessario, sincronizzare l'archivio [**usando CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore).
+-   Chiusura di un archivio certificati [**tramite CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con CERT \_ CLOSE STORE FORCE \_ \_ \_ FLAG.
 
 
 ```C++
