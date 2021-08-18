@@ -1,23 +1,23 @@
 ---
-description: Criteri di metadati della foto per la proprietà System. Photo. Contrast.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.Contrast.
 ms.assetid: c5e2589d-507c-4b92-9ada-7d64e7c45dd8
-title: Criteri dei metadati della foto System. Photo. Contrast
+title: Criteri dei metadati delle foto System.Photo.Contrast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d6ed34854b525e9eaac2ff5ac7339a75ad10e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4a9309ecab96a2244e08ebf05ff8896c792f7366c9db21d41072d2d94aacf47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087097"
 ---
-# <a name="systemphotocontrast-photo-metadata-policy"></a>Criteri dei metadati della foto System. Photo. Contrast
+# <a name="systemphotocontrast-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Photo.Contrast
 
-Criteri di metadati della foto per la proprietà [System. Photo. Contrast](../properties/props-system-photo-contrast.md) .
+Criteri dei metadati delle foto per [la proprietà System.Photo.Contrast.](../properties/props-system-photo-contrast.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_Contrasto foto \_ pkey
+PKEY \_ Photo \_ Contrast
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI4 VT
+VT \_ UI4
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,18 +37,18 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41992} | ushort      |
-| 2     | /XMP/EXIF: contrasto            | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | unicode     |
 
 
 
@@ -60,8 +60,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41992} | ushort      |
-| 2     | /XMP/EXIF: contrasto            | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | unicode     |
 
 
 
@@ -73,8 +73,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41992} |
-| 2     | /XMP/EXIF: contrasto            |
+| 1     | /app1/ifd/exif/{ushort=41992} |
+| 2     | /xmp/exif:contrast            |
 
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41992} | ushort      |
-| 2     | /IFD/XMP/EXIF: contrasto   | unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | unicode     |
 
 
 
@@ -101,8 +101,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41992} | ushort      |
-| 2     | /IFD/XMP/EXIF: contrasto   | unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | unicode     |
 
 
 
@@ -114,8 +114,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{ushort = 41992} |
-| 2     | /IFD/XMP/EXIF: contrasto   |
+| 1     | /ifd/exif/{ushort=41992} |
+| 2     | /ifd/xmp/exif:contrast   |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. Contrast](../properties/props-system-photo-contrast.md)
+[System.Photo.Contrast](../properties/props-system-photo-contrast.md)
 </dt> </dl>
 
  

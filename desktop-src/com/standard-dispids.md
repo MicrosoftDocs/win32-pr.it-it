@@ -1,46 +1,46 @@
 ---
 title: DISPID standard
-description: Per la specifica dei controlli è stato definito un numero di DISPID standard.
+description: Per la specifica dei controlli sono stati definiti diversi dispid standard.
 ms.assetid: f938b64f-5d45-40e7-ad02-665ce9c86a70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 657a7cd12ac92504bb5d63dcd486b6a45da47310
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af35ce4e4cad884b54bb0982037721608364a0249d3be6dd566f3aac766bb1f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129783"
 ---
 # <a name="standard-dispids"></a>DISPID standard
 
-Per la specifica dei controlli è stato definito un numero di DISPID standard.
+Per la specifica dei controlli sono stati definiti diversi dispid standard.
 
 ## <a name="dispid_mousepointer"></a>DISPID \_ MOUSEPOINTER
 
-Proprietà di tipo Integer.
+Proprietà di tipo integer.
 
 ``` syntax
 #define DISPID_MOUSEPOINTER            -521
 ```
 
-La proprietà MousePointer identifica le icone del mouse standard.
+La proprietà Mousepointer identifica le icone standard del mouse.
 
 
 
 | Valore         | Descrizione                                                                |
 |---------------|----------------------------------------------------------------------------|
-| 0<br/>  | Predefinita Forma determinata dall'oggetto.<br/>                       |
+| 0<br/>  | (Impostazione predefinita) Forma determinata dall'oggetto .<br/>                       |
 | 1<br/>  | Freccia<br/>                                                           |
-| 2<br/>  | Cross (puntatore tra i capelli)<br/>                                      |
-| 3<br/>  | Beam I<br/>                                                          |
-| 4<br/>  | Icona (quadrato piccolo all'interno di un quadrato)<br/>                             |
-| 5<br/>  | Size (freccia a quattro punte che punta a nord, Sud, est e ovest)<br/> |
-| 6<br/>  | Size NE SW (doppia freccia che indica nordest e sud-ovest)<br/>      |
-| 7<br/>  | Size N S (doppia freccia che punta verso nord e Sud)<br/>                |
-| 8<br/>  | Dimensioni NW, SE<br/>                                                     |
-| 9<br/>  | Size E W (doppia freccia che punta verso est e ovest)<br/>                  |
+| 2<br/>  | Cross (puntatore a forma di croce)<br/>                                      |
+| 3<br/>  | I Beam<br/>                                                          |
+| 4<br/>  | Icona (piccolo quadrato all'interno di un quadrato)<br/>                             |
+| 5<br/>  | Dimensioni (freccia a quattro punte che punta a nord, sud, est e ovest)<br/> |
+| 6<br/>  | Dimensioni NE SW (doppia freccia che punta a nord-est e sud-ovest)<br/>      |
+| 7<br/>  | Dimensioni N S (doppia freccia che punta a nord e sud)<br/>                |
+| 8<br/>  | Dimensioni NW, edizione Standard<br/>                                                     |
+| 9<br/>  | Dimensione E W (doppia freccia che punta a est e a ovest)<br/>                  |
 | 10<br/> | Freccia SU<br/>                                                        |
-| 11<br/> | Clessidra (attesa)<br/>                                                |
+| 11<br/> | Hourglass (attesa)<br/>                                                |
 | 12<br/> | Nessuna eliminazione<br/>                                                         |
 | 13<br/> | Freccia e clessidra<br/>                                             |
 | 14<br/> | Freccia e punto interrogativo<br/>                                         |
@@ -53,21 +53,21 @@ La proprietà MousePointer identifica le icone del mouse standard.
 
 ## <a name="dispid_mouseicon"></a>DISPID \_ MOUSEICON
 
-Proprietà di tipo immagine.
+Proprietà di tipo picture.
 
 ``` syntax
 #define DISPID_MOUSEICON               -522
 ```
 
-## <a name="dispid_picture"></a>\_immagine DISPID
+## <a name="dispid_picture"></a>IMMAGINE \_ DISPID
 
-Proprietà di tipo immagine.
+Proprietà di tipo picture.
 
 ``` syntax
 #define DISPID_PICTURE                 -523
 ```
 
-## <a name="dispid_valid"></a>DISPID \_ valido
+## <a name="dispid_valid"></a>DISPID \_ VALIDO
 
 Utilizzato per determinare se il controllo dispone o meno di dati validi.
 
@@ -77,9 +77,9 @@ Proprietà di tipo BOOL.
 #define DISPID_VALID                   -524
 ```
 
-## <a name="dispid_-ambient_palette"></a>\_ \_ tavolozza ambiente DISPID
+## <a name="dispid_-ambient_palette"></a>RIQUADRO DI AMBIENTE \_ DISPID \_
 
-Usato per consentire al controllo di ottenere il HPAL del contenitore. Se il contenitore fornisce una tavolozza di ambiente, si tratta dell'unica tavolozza che può essere realizzata in primo piano. I controlli che vogliono realizzare le proprie tavolozze devono eseguire questa operazione in background. Se non è presente alcuna tavolozza di ambiente fornita dal contenitore, il controllo attivo può realizzare la relativa tavolozza in primo piano. La gestione della tavolozza viene ulteriormente discussa nel comportamento della tavolozza per i controlli OLE presenti in ActiveX SDK.
+Usato per consentire al controllo di ottenere hpAL del contenitore. Se il contenitore fornisce un riquadro ambiente, questa è l'unica tavolozza che può essere realizzata in primo piano. I controlli che vogliono realizzare le proprie tavolozze devono eseguire questa operazione in background. Se il contenitore non ha alcun riquadro di ambiente, il controllo attivo può realizzare la tavolozza in primo piano. La gestione del riquadro è descritta più avanti in Comportamento del riquadro per i controlli OLE, disponibile in ActiveX SDK.
 
 ``` syntax
 #define DISPID_AMBIENT_PALETTE         -726

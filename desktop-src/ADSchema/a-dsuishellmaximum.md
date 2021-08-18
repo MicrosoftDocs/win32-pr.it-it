@@ -1,10 +1,10 @@
 ---
-title: DS-UI-Shell-attributo massimo
-description: Questo è il numero massimo predefinito di oggetti da visualizzare in un contenitore dall'interfaccia utente della shell.
+title: Attributo DS-UI-Shell-Maximum
+description: Si tratta del numero massimo predefinito di oggetti che devono essere visualizzati in un contenitore dall'interfaccia utente della shell.
 ms.assetid: 133626f1-6006-4e0f-bf00-4fa98f2ed273
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-Shell-schema AD attributo massimo
+- Schema AD dell'attributo DS-UI-Shell-Maximum
 - Schema AD dell'attributo dSUIShellMaximum
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7086a49d920caf5bbddd075437648701f4067ea8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5ef3fca13afac0642bccca1e278a63a79e4728cc74430fde1db02e5aa47efa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961570"
 ---
-# <a name="ds-ui-shell-maximum-attribute"></a>DS-UI-Shell-attributo massimo
+# <a name="ds-ui-shell-maximum-attribute"></a>Attributo DS-UI-Shell-Maximum
 
-Questo è il numero massimo predefinito di oggetti da visualizzare in un contenitore dall'interfaccia utente della shell.
+Si tratta del numero massimo predefinito di oggetti che devono essere visualizzati in un contenitore dall'interfaccia utente della shell.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | DS-UI-Shell-massimo                  |
-| LDAP-Display-Name | dSUIShellMaximum                     |
+| CN                | DS-UI-Shell-Maximum                  |
+| Ldap-Display-Name | dSUIShellMaximum                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1345              |
-| System-ID-GUID    | fcca766a-6f91-11d2-9905-0000f87a57d4 |
+| System-Id-Guid    | fcca766a-6f91-11d2-9905-0000f87a57d4 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| A valore singolo       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| A valore singolo       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo è il numero massimo predefinito di oggetti da visualizzare in un conteni
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| A valore singolo       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 

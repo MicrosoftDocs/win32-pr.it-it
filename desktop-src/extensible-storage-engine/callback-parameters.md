@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: parametri di callback'
+description: 'Altre informazioni su: Parametri di callback'
 title: Parametri di callback
 TOCTitle: Callback Parameters
 ms:assetid: 7f3cdc13-ffbd-4e5a-b650-1c6388e784dc
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4e06ed65bbeae195060e4de10424a76a4228f20f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9c14940ee98d4f664914794cd4ff6185b78dd04f438b982179a7ab3c5eb6504
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982811"
 ---
 # <a name="callback-parameters"></a>Parametri di callback
 
@@ -34,7 +34,7 @@ Questo argomento contiene i parametri usati per i callback.
 *JET_paramDisableCallbacks*  
 65  
 
-Questo parametro Disabilita tutti i callback del motore di database alle funzioni fornite dall'applicazione. È progettato principalmente per supportare le utilità del motore di database e non può essere utilizzato nell'applicazione.
+Questo parametro disabilita tutti i callback del motore di database per le funzioni fornite dall'applicazione. È destinato principalmente a supportare le utilità del motore di database e non deve essere usato nell'applicazione.
 
 <table>
 <colgroup>
@@ -63,23 +63,23 @@ Questo parametro Disabilita tutti i callback del motore di database alle funzion
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
+<td><p>Influisce sul layout fisico:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
+<td><p>Influisce sull'affidabilità:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
+<td><p>Influisce sulle prestazioni:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
+<td><p>Influisce sulle risorse:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -93,7 +93,7 @@ Questo parametro Disabilita tutti i callback del motore di database alle funzion
 *JET_paramEnablePersistedCallbacks*  
 156  
 
-Questo parametro consente di utilizzare callback permanenti nel database. Nelle versioni precedenti a Windows Vista, l'utilizzo di callback permanenti è stato abilitato per impostazione predefinita. Le applicazioni devono ora abilitare in modo esplicito l'utilizzo di callback permanenti in fase di esecuzione utilizzando questo parametro. Se questo parametro non è impostato, tutte le operazioni di database che richiedono la chiamata di un callback avranno esito negativo con JET_errCallbackFailed. Questo parametro non influisce sui callback specificati in fase di esecuzione con i meccanismi seguenti: JET_paramRuntimeCallback, [JetRegisterCallback](./jetregistercallback-function.md)o un parametro di callback esplicito a un'API Jet. È comunque possibile creare elementi dello schema che contengono callback permanenti anche quando l'uso di tali callback permanenti non è consentito. Se questo parametro è impostato su false, sostituisce JET_paramDisableCallbacks.
+Questo parametro consente l'uso di callback persistenti nel database. Nelle versioni precedenti a Windows Vista, l'uso di callback persistenti era abilitato per impostazione predefinita. Le applicazioni devono ora abilitare in modo esplicito l'uso di callback persistenti in fase di esecuzione usando questo parametro. Se questo parametro non è impostato, qualsiasi operazione di database che richiede la chiamata di un callback avrà esito negativo JET_errCallbackFailed. Questo parametro non influisce sui callback specificati in fase di esecuzione con i meccanismi seguenti: JET_paramRuntimeCallback, [JetRegisterCallback](./jetregistercallback-function.md)o un parametro di callback esplicito a un'API JET. È comunque possibile creare elementi dello schema che contengono callback persistenti anche quando l'uso di tali callback persistenti non è consentito. Quando questo parametro è impostato su false, esegue l'override JET_paramDisableCallbacks.
 
 <table>
 <colgroup>
@@ -122,23 +122,23 @@ Questo parametro consente di utilizzare callback permanenti nel database. Nelle 
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
+<td><p>Influisce sul layout fisico:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
+<td><p>Influisce sull'affidabilità:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
+<td><p>Influisce sulle prestazioni:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
+<td><p>Influisce sulle risorse:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -152,7 +152,7 @@ Questo parametro consente di utilizzare callback permanenti nel database. Nelle 
 *JET_paramRuntimeCallback*  
 73  
 
-Questo parametro configura il motore con una funzione di callback di runtime che implementa l'interfaccia [JET_CALLBACK](./jet-callback-callback-function.md) . Questo callback può essere chiamato per i motivi seguenti: [JET_cbtypFreeCursorLS](./jet-cbtyp.md), [JET_cbtypFreeTableLS](./jet-cbtyp.md)o [JET_cbtypNull](./jet-cbtyp.md). Per ulteriori informazioni, vedere [JetSetLS](./jetsetls-function.md) .
+Questo parametro configura il motore con una [](./jet-callback-callback-function.md) funzione di callback di runtime che implementa l JET_CALLBACK intervazione. Questo callback può essere chiamato per i motivi seguenti: [JET_cbtypFreeCursorLS](./jet-cbtyp.md), [JET_cbtypFreeTableLS](./jet-cbtyp.md)o [JET_cbtypNull](./jet-cbtyp.md). Per altre [informazioni, vedere JetSetLS.](./jetsetls-function.md)
 
 <table>
 <colgroup>
@@ -181,23 +181,23 @@ Questo parametro configura il motore con una funzione di callback di runtime che
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
+<td><p>Influisce sul layout fisico:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
+<td><p>Influisce sull'affidabilità:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
+<td><p>Influisce sulle prestazioni:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
+<td><p>Influisce sulle risorse:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -226,7 +226,7 @@ Questo parametro configura il motore con una funzione di callback di runtime che
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

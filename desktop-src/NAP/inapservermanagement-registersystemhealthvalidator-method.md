@@ -1,6 +1,6 @@
 ---
 title: Metodo INapServerManagement RegisterSystemHealthValidator (NapServerManagement.h)
-description: Registra un shv.
+description: Registra un'istanza shv.
 ms.assetid: 23f147d5-3c4e-48ca-940a-c4350ad6ecb3
 keywords:
 - Metodo RegisterSystemHealthValidator NAP
@@ -30,7 +30,7 @@ ms.locfileid: "119012569"
 
  
 
-Il **metodo INapServerManagement::RegisterSystemHealthValidator** registra un shv.
+Il **metodo INapServerManagement::RegisterSystemHealthValidator** registra un'istanza shv.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,8 +71,8 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Codice restituito                                                                                            | Descrizione                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>        | Errore di autorizzazione, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>        | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 | <dl> <dt>**ID \_ IN CONFLITTO DI PROTEZIONE ACCESSO ALLA RETE \_ \_ E**</dt> </dl> | L'ID SHV è già registrato.<br/>                           |
 
 
@@ -86,7 +86,7 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                               |
 | Intestazione<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |

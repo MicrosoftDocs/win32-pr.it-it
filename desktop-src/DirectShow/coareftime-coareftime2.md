@@ -1,7 +1,7 @@
 ---
-description: Informazioni sul metodo del costruttore COARefTime. COARefTime (Ctlutil. h). Questo metodo usa il parametro ' CRT '.
+description: Informazioni sul metodo del costruttore COARefTime.COARefTime (Ctlutil.h). Questo metodo usa il parametro 'crt'.
 ms.assetid: 06a3b452-b5cb-46da-b60e-83d687b386f6
-title: Costruttore COARefTime. COARefTime (Ctlutil. h)-parametro CRT
+title: Costruttore COARefTime.COARefTime (Ctlutil.h) - parametro crt
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3fe94393dcbd00daaa860264754fe391f1c1fb25
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 52339f35bd903dbfbf84f4cdb027085bab7a971ac04bd0cf388b0b2baeb03b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954370"
 ---
-# <a name="coareftimecoareftime-constructor-ctlutilh---crt-parameter"></a>Costruttore COARefTime. COARefTime (Ctlutil. h)-parametro CRT
+# <a name="coareftimecoareftime-constructor-ctlutilh---crt-parameter"></a>Costruttore COARefTime.COARefTime (Ctlutil.h) - parametro crt
 
 Metodo del costruttore.
 
@@ -45,7 +45,7 @@ COARefTime(
 *crt* 
 </dt> <dd>
 
-Oggetto [**CRefTime**](creftime.md) che specifica l'ora di riferimento.
+[**Oggetto CRefTime**](creftime.md) che specifica l'ora di riferimento.
 
 </dd> </dl>
 
@@ -53,8 +53,8 @@ Oggetto [**CRefTime**](creftime.md) che specifica l'ora di riferimento.
 
 | Requisito                   | Valore                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione  | Ctlutil. h (include Streams. h)                                                                                   |
-| Libreria | Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione  | Ctlutil.h (include Flussi.h)                                                                                   |
+| Libreria | Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

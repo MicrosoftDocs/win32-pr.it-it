@@ -1,7 +1,7 @@
 ---
 description: Criteri dei metadati delle foto per la proprietà System.GPS.ImgDirection.
 ms.assetid: c9a0f5de-4010-4251-a5d5-8728b7ae6d33
-title: Criteri dei metadati delle foto di System.GPS.ImgDirection
+title: Criteri dei metadati delle foto system.GPS.ImgDirection
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 43544458c4b6a64df1d396426ebbe487d80324d24dd10c2f8f6f0e548d9eca99
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710671"
 ---
-# <a name="systemgpsimgdirection-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.ImgDirection
+# <a name="systemgpsimgdirection-photo-metadata-policy"></a>Criteri dei metadati delle foto system.GPS.ImgDirection
 
 Criteri dei metadati delle foto per [la proprietà System.GPS.ImgDirection.](../properties/props-system-gps-imgdirection.md)
 

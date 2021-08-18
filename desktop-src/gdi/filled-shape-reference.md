@@ -1,21 +1,21 @@
 ---
-description: 'Gli elementi seguenti vengono utilizzati con forme piene:'
+description: 'Gli elementi seguenti vengono usati con forme riempite:'
 ms.assetid: 9acef1c8-61ce-4d9a-9973-d07963c37c5c
-title: Riferimento a forme piene
+title: Informazioni di riferimento sulla forma riempita
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 610451a9d12817057470da62e3b02d85a2a43ae8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f7197b769946c3ee5a5865ad0d73f01189cf69f52116c2d7fc100a2d6f4991f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037976"
 ---
-# <a name="filled-shape-reference"></a>Riferimento a forme piene
+# <a name="filled-shape-reference"></a>Informazioni di riferimento sulla forma riempita
 
-Gli elementi seguenti vengono utilizzati con forme piene:
+Gli elementi seguenti vengono usati con forme riempite:
 
--   [Funzioni di forma riempite](filled-shape-functions.md)
+-   [Funzioni con forme riempite](filled-shape-functions.md)
 
  
 

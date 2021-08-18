@@ -1,25 +1,25 @@
 ---
-title: Sezione stato di esempio
-description: Sezione stato di esempio
+title: Sezione relativa allo stato di esempio
+description: Sezione relativa allo stato di esempio
 ms.assetid: b19c8b74-f474-47ee-a8be-68b855bc7486
 keywords:
-- Interfacce di Windows Media Player Mobile, visualizzazione dello stato
-- interfacce, visualizzazione stato
-- informazioni di riferimento per Skins, status display
-- visualizzazione dello stato in interfacce, sezione stato
-- file di definizione dell'interfaccia, sezione stato
+- Windows Media Player Interfaccia per dispositivi mobili, visualizzazione dello stato
+- interfaccia, visualizzazione dello stato
+- informazioni di riferimento per le interfaccia, visualizzazione dello stato
+- visualizzazione dello stato nelle interfaccia, sezione Stato
+- file di definizione dell'interfaccia utente, sezione Status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7868b44f0c3014d82ef4fa9ae1f80e30bdf2d6be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bac02a4784f2198dd51372a8afc405684ae16b2882c6176c4fe2d77e7af42732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995481"
 ---
-# <a name="sample-status-section"></a>Sezione stato di esempio
+# <a name="sample-status-section"></a>Sezione relativa allo stato di esempio
 
-Le righe seguenti mostrano una sezione di stato tipica di un file di definizione dell'interfaccia personalizzata:
+Le righe seguenti mostrano una tipica sezione Status di un file di definizione dell'interfaccia:
 
 
 ```C++
@@ -40,9 +40,9 @@ Le righe seguenti mostrano una sezione di stato tipica di un file di definizione
 [**Stato**](status.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

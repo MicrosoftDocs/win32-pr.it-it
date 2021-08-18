@@ -1,19 +1,19 @@
 ---
-description: Quando l'utente fa clic su clip dal menu, l'applicazione usa le coordinate del rettangolo creato dall'utente per definire un'area di ridimensionamento.
+description: Dopo che l'utente ha fatto clic su Clip dal menu, l'applicazione usa le coordinate del rettangolo creato dall'utente per definire un'area di ritaglio.
 ms.assetid: 5ae60181-c72e-4a28-99eb-e23d35c46685
-title: Ritaglio dell'output
+title: Output di ritaglio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdc0181340b03421815ebe0f5cd8328d4793a406
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7a683fd276165b8c4556881f6aab47931978048b4699496a0f996abd888dbab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038139"
 ---
-# <a name="clipping-output"></a>Ritaglio dell'output
+# <a name="clipping-output"></a>Output di ritaglio
 
-Quando l'utente fa clic su clip dal menu, l'applicazione usa le coordinate del rettangolo creato dall'utente per definire un'area di ridimensionamento. Dopo aver definito l'area di ridimensionamento e averlo selezionato nel contesto di dispositivo dell'applicazione, l'applicazione ridisegni l'immagine bitmap. L'applicazione esegue queste attività, come indicato di seguito.
+Dopo che l'utente ha fatto clic su Clip dal menu, l'applicazione usa le coordinate del rettangolo creato dall'utente per definire un'area di ritaglio. Dopo aver definito l'area di ritaglio e aver selezionato l'area nel contesto di dispositivo dell'applicazione, l'applicazione ridisegna l'immagine bitmap. L'applicazione esegue queste attività, come indicato di seguito.
 
 
 ```C++

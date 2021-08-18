@@ -1,7 +1,7 @@
 ---
-description: Indica se l'elemento può essere ospitato all'interno di un browser o di un frame di Esplora risorse.
+description: Indica se l'elemento può essere ospitato all'interno di un browser o Windows Explorer.
 ms.assetid: 472e0906-9561-4390-a503-c5e490245ea0
-title: Proprietà FolderItem. navigable (shldisp. h)
+title: Proprietà FolderItem.IsBrowsable (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d7c5f7a9cbde54647c299646bb6350c3be6aa2a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c417b3a225ba7d9f39329fe274d99ee09c3a98353a9822d1047ea426610411c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093087"
 ---
-# <a name="folderitemisbrowsable-property"></a>Proprietà FolderItem. navigable
+# <a name="folderitemisbrowsable-property"></a>FolderItem.IsBrowsable - proprietà
 
-Indica se l'elemento può essere ospitato all'interno di un browser o di un frame di Esplora risorse.
+Indica se l'elemento può essere ospitato all'interno di un browser o Windows Explorer.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ bIsBrowsable = FolderItem.IsBrowsable
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Valore booleano** che riceve **true** se l'elemento può essere esplorato o **false** in caso contrario.
+Valore **booleano** che riceve **true se** l'elemento può essere visualizzato o false **in** caso contrario.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato l'oggetto **navigable** per determinare lo stato esplorabile della cartella Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa IsBrowsable** per determinare lo stato esplorabile della Windows cartella. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

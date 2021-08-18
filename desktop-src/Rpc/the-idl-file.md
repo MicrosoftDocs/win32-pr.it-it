@@ -1,25 +1,25 @@
 ---
-title: File IDL
-description: Il file IDL è costituito da una o più definizioni di interfaccia, ognuna delle quali dispone di un'intestazione e di un corpo.
+title: The IDL File
+description: Il file IDL è costituito da una o più definizioni di interfaccia, ognuna delle quali ha un'intestazione e un corpo.
 ms.assetid: 64a30a12-a53e-4c53-b8cf-7af85ffd0a94
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 862adfad2a43f10dac3598279554fd6e1f00a302
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 88f46a92fe5967dca1faeca1d658cf398fb0baf6ebd9160c3a736747de324e9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924415"
 ---
-# <a name="the-idl-file"></a>File IDL
+# <a name="the-idl-file"></a>The IDL File
 
-Il file IDL è costituito da una o più definizioni di interfaccia, ognuna delle quali dispone di un'intestazione e di un corpo. L'intestazione contiene informazioni che si applicano all'intera interfaccia, ad esempio l'UUID. Queste informazioni sono racchiuse tra parentesi quadre ed è seguita dall' **interfaccia** della parola chiave e dal nome dell'interfaccia. Il corpo contiene le definizioni del tipo di dati C e i prototipi di funzione, integrati con attributi che descrivono in che modo i dati vengono trasmessi in rete.
+Il file IDL è costituito da una o più definizioni di interfaccia, ognuna delle quali ha un'intestazione e un corpo. L'intestazione contiene informazioni che si applicano all'intera interfaccia, ad esempio l'UUID. Queste informazioni sono racchiuse tra parentesi quadre ed è seguita dalla parola chiave **interface** e dal nome dell'interfaccia. Il corpo contiene definizioni di tipi di dati di tipo C e prototipi di funzione, arricchiti con attributi che descrivono come i dati vengono trasmessi in rete.
 
-In questo esempio, l'intestazione dell'interfaccia contiene solo l'UUID e il numero di versione. Il numero di versione garantisce che, in presenza di più versioni di un'interfaccia RPC, verranno connesse solo le versioni compatibili del client e del server.
+In questo esempio l'intestazione dell'interfaccia contiene solo l'UUID e il numero di versione. Il numero di versione garantisce che quando sono presenti più versioni di un'interfaccia RPC, verranno connesse solo le versioni compatibili del client e del server.
 
-Il corpo dell'interfaccia contiene il prototipo di funzione per **HelloProc**. In questo prototipo, il parametro della funzione pszString ha gli attributi **\[** [**in**](/windows/desktop/Midl/in) **\]** e **\[** [**String**](/windows/desktop/Midl/string) **\]** . L'attributo **\[ in \]** indica alla libreria di runtime che il parametro viene passato solo dal client al server. L'attributo **\[ String \]** specifica che lo stub deve considerare il parametro come una stringa di caratteri di tipo C.
+Il corpo dell'interfaccia contiene il prototipo di funzione **per HelloProc.** In questo prototipo il parametro della funzione pszString ha gli attributi **\[** [**in**](/windows/desktop/Midl/in) **\]** e la **\[** [**stringa**](/windows/desktop/Midl/string) **\]** . **\[ L'attributo in \]** indica alla libreria di runtime che il parametro viene passato solo dal client al server. **\[ L'attributo \]** string specifica che lo stub deve considerare il parametro come stringa di caratteri di tipo C.
 
-L'applicazione client deve essere in grado di arrestare l'applicazione server, quindi l'interfaccia contiene un prototipo per un'altra funzione remota,**Shutdown** , che verrà implementata più avanti in questa esercitazione.
+L'applicazione client deve essere in grado di arrestare l'applicazione server, in modo che l'interfaccia contenga un prototipo per un'altra funzione remota,**Shutdown** , che verrà implementata più avanti in questa esercitazione.
 
 ``` syntax
 //file hello.idl
@@ -34,6 +34,6 @@ interface hello
 }
 ```
 
- 
+ 
 
- 
+ 

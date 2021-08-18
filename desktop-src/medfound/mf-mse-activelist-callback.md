@@ -1,19 +1,19 @@
 ---
-description: Contiene un puntatore all'interfaccia di callback delle applicazioni per l'interfaccia IMFBufferListNotify per l'elenco dei buffer attivi.
+description: Contiene un puntatore all'interfaccia di callback delle applicazioni per l'interfaccia IMFBufferListNotify per l'elenco di buffer attivo.
 ms.assetid: 703A7BF0-A89F-40E9-9440-B8C8E03FDE1A
-title: Attributo MF_MSE_ACTIVELIST_CALLBACK (Mfidl. h)
+title: MF_MSE_ACTIVELIST_CALLBACK attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d449e6c4237f51950e82d75165022313b09d04cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b321eb494454c303ba6a7c88781415b9b302972ef82f41116d5801b96d73017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104607"
 ---
-# <a name="mf_mse_activelist_callback-attribute"></a>\_ \_ Attributo callback di activet di MF MSE \_
+# <a name="mf_mse_activelist_callback-attribute"></a>Attributo \_ CALLBACK MSE \_ ACTIVELIST MF \_
 
-Contiene un puntatore all'interfaccia di callback dell'applicazione per l'interfaccia [**IMFBufferListNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify) per l'elenco dei buffer attivi.
+Contiene un puntatore all'interfaccia di callback dell'applicazione per [**l'interfaccia IMFBufferListNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify) per l'elenco di buffer attivo.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Contiene un puntatore all'interfaccia di callback dell'applicazione per l'interf
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                       |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Contiene un puntatore all'interfaccia di callback dell'applicazione per l'interf
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

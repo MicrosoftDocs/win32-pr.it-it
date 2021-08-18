@@ -1,9 +1,9 @@
 ---
 title: NEXTELEMENT
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | NEXTELEMENT
+description: Si tratta di un ELEMENTO BUTTONELEMENT predefinito con i valori predefiniti seguenti. | NEXTELEMENT
 ms.assetid: 8dcf9031-febc-459f-b781-8ee2f93580c8
 keywords:
-- SUCCESSIVA Media Player di Windows
+- NEXTELEMENT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f8583e868fa1e4ddbf3d5b347b0a45926b4eb60e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dc89b62e21702bda6348b050eb40b79c3c70117b1a56e71a7de03d1cd844c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996071"
 ---
 # <a name="nextelement"></a>NEXTELEMENT
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **ELEMENTO BUTTONELEMENT predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.controls.next()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.next"
 
 ## <a name="remarks"></a>Commenti
 
-Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+È possibile eseguire l'override di tutte le proprietà di **buttonELEMENT** specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 <dl> <dt>
 
-[**BUTTONelement (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

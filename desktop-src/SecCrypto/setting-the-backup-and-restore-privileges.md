@@ -4,16 +4,16 @@ ms.assetid: 409a9fad-7141-4ba8-ab3d-fb590366001e
 title: Impostazione dei privilegi di backup e ripristino
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dd70c3726c435efa1f000add101bbf50b725bb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 990f1009ec5b57d6dcc9f11ef505e705fb483362518d6e54f5d0c9a0167cc211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900311"
 ---
 # <a name="setting-the-backup-and-restore-privileges"></a>Impostazione dei privilegi di backup e ripristino
 
-Per chiamare correttamente l'API di backup e ripristino di Servizi certificati, il token del chiamante deve includere i [*privilegi*](../secgloss/p-gly.md)di backup e ripristino. Questi privilegi possono essere impostati a livello di codice e l'esempio seguente può essere usato per impostare o rimuovere questi privilegi. I privilegi di backup e ripristino sono necessari per tutte le applicazioni di backup e ripristino, non solo per il backup e il ripristino di Servizi certificati. Per informazioni sulle implicazioni di sicurezza relative alla modifica dei privilegi, vedere [esecuzione con privilegi speciali](../secbp/running-with-special-privileges.md).
+Per chiamare correttamente l'API di backup e ripristino di Servizi certificati, il token del chiamante deve includere i privilegi di backup [*e ripristino*](../secgloss/p-gly.md). Questi privilegi possono essere impostati a livello di codice e l'esempio seguente può essere usato per impostare o rimuovere questi privilegi. I privilegi di backup e ripristino sono necessari per tutte le applicazioni di backup e ripristino, non solo per il backup e il ripristino di Servizi certificati. Per informazioni sulle implicazioni di sicurezza della modifica dei privilegi, vedere [Esecuzione con privilegi speciali](../secbp/running-with-special-privileges.md).
 
 
 ```C++

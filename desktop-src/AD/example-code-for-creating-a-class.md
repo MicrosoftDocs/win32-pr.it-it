@@ -5,23 +5,23 @@ ms.assetid: 021a0c7b-0e08-4d7a-af9a-9e3e868b90b6
 ms.tgt_platform: multiple
 keywords:
 - Codice di esempio per la creazione di una classe
-- Creazione di una classe, ad esempio codice AD
+- Creazione di una classe, esempio di codice AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cef1ca029bd9e53a6fee401168a83294eb2b2915
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5a53b1cebfb443e1fa258c80a2e74bb0634496c13a5f3cca3f6c1667aeada141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104117558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962450"
 ---
 # <a name="example-code-for-creating-a-class"></a>Codice di esempio per la creazione di una classe
 
-Nell'esempio di codice C e C++ riportato di seguito viene illustrato come creare un oggetto [**classSchema**](/windows/desktop/ADSchema/c-classschema) nella cache ADSI.
+Nell'esempio di codice C e C++ seguente viene illustrato come creare un [**oggetto classSchema**](/windows/desktop/ADSchema/c-classschema) nella cache ADSI.
 
-La funzione di esempio **CreateClass** Mostra come creare l'oggetto [**classSchema**](/windows/desktop/ADSchema/c-classschema) e restituisce un puntatore [**IADs**](/windows/desktop/api/iads/nn-iads-iads) al nuovo oggetto. Tenere presente che **CreateClass** non chiama [**IADs:: SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) per eseguire il commit del nuovo oggetto **classSchema** nella directory. Il chiamante deve effettuare la chiamata utilizzando il puntatore restituito.
+La **funzione di esempio CreateClass** illustra come creare l'oggetto [**classSchema**](/windows/desktop/ADSchema/c-classschema) e restituisce un [**puntatore IAD**](/windows/desktop/api/iads/nn-iads-iads) al nuovo oggetto. Tenere presente che **CreateClass** non chiama [**IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) per eseguire il commit del nuovo **oggetto classSchema** nella directory. Il chiamante deve effettuare la chiamata usando il puntatore restituito.
 
-Nell'esempio di codice **BytesToVariantArray** seguente viene illustrata una funzione di utilità che include una stringa ottetto in una matrice Variant.
+Nell'esempio **di codice BytesToVariantArray** seguente viene illustrata una funzione di utilità che racchiude una stringa di ottetti in una matrice variant.
 
 
 ```C++
@@ -390,6 +390,6 @@ HRESULT BytesToVariantArray(
 
 
 
- 
+ 
 
- 
+ 

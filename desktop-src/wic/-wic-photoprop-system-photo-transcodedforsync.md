@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. TranscodedForSync.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.TranscodedForSync.
 ms.assetid: 1869d845-6264-425a-ab3e-e0a9f942961a
-title: Criteri per i metadati delle foto di System. Photo. TranscodedForSync
+title: Criteri metadati foto System.Photo.TranscodedForSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5884ad469fcf7b5dffc8c4ad14f0ee5ff90cd07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34e78086284e1ca13b01c5e7cd188b761afe7eeba8acb5f2bca103234f80955b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964760"
 ---
-# <a name="systemphototranscodedforsync-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. TranscodedForSync
+# <a name="systemphototranscodedforsync-photo-metadata-policy"></a>Criteri metadati foto System.Photo.TranscodedForSync
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. TranscodedForSync](../properties/props-system-photo-transcodedforsync.md) .
+Criteri dei metadati delle foto [per la proprietà System.Photo.TranscodedForSync.](../properties/props-system-photo-transcodedforsync.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ TranscodedForSync
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_bool VT
+VT \_ BOOL
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ Proprietà di tipo Boolean.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                  | Formato disco  |
 |-------|---------------------------------------|--------------|
-| 1     | /App1/IFD/{ushort = 18248}              | ushort di bool \_ |
+| 1     | /app1/ifd/{ushort=18248}              | bool \_ ushort |
 | 2     | /xmp/MicrosoftPhoto:TranscodedForSync |              |
 
 
@@ -60,7 +60,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                  | Formato disco  |
 |-------|---------------------------------------|--------------|
-| 1     | /App1/IFD/{ushort = 18248}              | ushort di bool \_ |
+| 1     | /app1/ifd/{ushort=18248}              | bool \_ ushort |
 | 2     | /xmp/MicrosoftPhoto:TranscodedForSync |              |
 
 
@@ -73,7 +73,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                  |
 |-------|---------------------------------------|
-| 1     | /App1/IFD/{ushort = 18248}              |
+| 1     | /app1/ifd/{ushort=18248}              |
 | 2     | /xmp/microsoftphoto:transcodedforsync |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                      | Formato disco  |
 |-------|-------------------------------------------|--------------|
-| 1     | /IFD/{ushort = 18248}                       | ushort di bool \_ |
+| 1     | /ifd/{ushort=18248}                       | bool \_ ushort |
 | 2     | /ifd/xmp/MicrosoftPhoto:TranscodedForSync |              |
 
 
@@ -101,7 +101,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                      | Formato disco  |
 |-------|-------------------------------------------|--------------|
-| 1     | /IFD/{ushort = 18248}                       | ushort di bool \_ |
+| 1     | /ifd/{ushort=18248}                       | bool \_ ushort |
 | 2     | /ifd/xmp/MicrosoftPhoto:TranscodedForSync |              |
 
 
@@ -114,7 +114,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                      |
 |-------|-------------------------------------------|
-| 1     | /IFD/{ushort = 18248}                       |
+| 1     | /ifd/{ushort=18248}                       |
 | 2     | /ifd/xmp/microsoftphoto:transcodedforsync |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. TranscodedForSync](../properties/props-system-photo-transcodedforsync.md)
+[System.Photo.TranscodedForSync](../properties/props-system-photo-transcodedforsync.md)
 </dt> </dl>
 
  

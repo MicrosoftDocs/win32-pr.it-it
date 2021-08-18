@@ -1,23 +1,23 @@
 ---
-title: RPC Microsoft
-description: RPC Microsoft
+title: Microsoft RPC
+description: Microsoft RPC
 ms.assetid: a9ca629a-2766-43d5-89da-73d0628b3c5e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53be9d46368ae01aee25815327aafeaf7f44525b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ed515b1ca8e58e8e9daaa2bb037dbb9c33ad1d6bb15bd7dc42abd52771e8267a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130173"
 ---
-# <a name="microsoft-rpc"></a>RPC Microsoft
+# <a name="microsoft-rpc"></a>Microsoft RPC
 
-Microsoft RPC è un modello per la programmazione in un ambiente di elaborazione distribuito. L'obiettivo di RPC è fornire la comunicazione trasparente, in modo che il client sembri comunicare direttamente con il server. L'implementazione di RPC di Microsoft è compatibile con la RPC Open Software Foundation (OSF) Distributed Computing Environment (DCE).
+Microsoft RPC è un modello per la programmazione in un ambiente di elaborazione distribuita. L'obiettivo di RPC è fornire una comunicazione trasparente in modo che il client sembra comunicare direttamente con il server. L'implementazione di RPC da parte di Microsoft è compatibile con LA RPC (Distributed Computing Environment) OSF (Open Software Foundation).
 
-È possibile configurare RPC per l'utilizzo di uno o più trasporti, uno o più servizi dei nomi e uno o più server di sicurezza. Le interfacce a tali provider sono gestite da RPC. Poiché Microsoft RPC è progettato per funzionare con più provider, è possibile scegliere i provider che funzionano meglio per la rete. Il trasporto è responsabile della trasmissione dei dati attraverso la rete. Il servizio nome accetta un nome di oggetto, ad esempio un moniker, e ne trova la posizione sulla rete. Il server di sicurezza offre alle applicazioni la possibilità di negare l'accesso a utenti e/o gruppi specifici. Per informazioni più dettagliate sulla sicurezza delle applicazioni, vedere [regole di progettazione dell'interfaccia](interface-design-rules.md) .
+È possibile configurare RPC per l'utilizzo di uno o più trasporti, uno o più servizi dei nomi e uno o più server di sicurezza. Le interfacce per tali provider vengono gestite da RPC. Poiché RPC Microsoft è progettato per funzionare con più provider, è possibile scegliere i provider più adatta alla propria rete. Il trasporto è responsabile della trasmissione dei dati attraverso la rete. Il servizio dei nomi accetta un nome di oggetto, ad esempio un moniker, e ne trova la posizione nella rete. Il server di sicurezza offre alle applicazioni la possibilità di negare l'accesso a utenti e/o gruppi specifici. Per [informazioni più dettagliate sulla](interface-design-rules.md) sicurezza delle applicazioni, vedere Interface Design Rules (Regole di progettazione dell'interfaccia).
 
-Oltre alle librerie di runtime RPC, Microsoft RPC include il linguaggio di definizione dell'interfaccia (IDL) e il relativo compilatore. Sebbene il file IDL sia una parte standard di RPC, Microsoft lo ha migliorato per estendere le funzionalità per supportare interfacce COM personalizzate. Il compilatore Microsoft Interface Definition Language (MIDL) utilizza il file IDL che descrive l'interfaccia personalizzata per generare più file descritti in [compilazione e registrazione di una DLL proxy](building-and-registering-a-proxy-dll.md).
+Oltre alle librerie di runtime RPC, Microsoft RPC include il linguaggio IDL (Interface Definition Language) e il relativo compilatore. Anche se il file IDL è una parte standard di RPC, Microsoft lo ha migliorato per estendere le funzionalità per supportare le interfacce COM personalizzate. Il compilatore Microsoft Interface Definition Language (MIDL) usa il file IDL che descrive l'interfaccia personalizzata per generare diversi file descritti in Compilazione e registrazione di [una DLL proxy.](building-and-registering-a-proxy-dll.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -38,9 +38,9 @@ Oltre alle librerie di runtime RPC, Microsoft RPC include il linguaggio di defin
 [Stub](stub.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

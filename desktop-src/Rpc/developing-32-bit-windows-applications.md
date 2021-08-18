@@ -68,7 +68,7 @@ Le librerie RPC seguenti sono incluse per il supporto di livello inferiore.
 
  
 
-Sarà necessario anche il compilatore Microsoft Interface Definition Language (MIDL). Per altre informazioni, vedere [Uso del compilatore MIDL.](/windows/desktop/Midl/using-the-midl-compiler-2)
+Sarà necessario anche il compilatore Microsoft Interface Definition Language (MIDL). Per altre informazioni, vedere [Uso del compilatore MIDL](/windows/desktop/Midl/using-the-midl-compiler-2).
 
  
 

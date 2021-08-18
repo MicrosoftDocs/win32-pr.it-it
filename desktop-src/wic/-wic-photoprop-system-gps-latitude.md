@@ -1,7 +1,7 @@
 ---
 description: Criteri dei metadati delle foto per la proprietà System.GPS.Latitude.
 ms.assetid: 0f8cea07-da96-4d2a-8444-6073b51e1236
-title: Criteri dei metadati delle foto di System.GPS.Latitude
+title: Criteri dei metadati foto di System.GPS.Latitude
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 41dd1eb0ee21ab02eeb8c83d5ea84f28c07c2811929f2b8c973cace4a4a06fd7
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710625"
 ---
-# <a name="systemgpslatitude-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.Latitude
+# <a name="systemgpslatitude-photo-metadata-policy"></a>Criteri dei metadati foto di System.GPS.Latitude
 
 Criteri dei metadati delle foto per [la proprietà System.GPS.Latitude.](../properties/props-system-gps-latitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 \_Latitudine GPS \_ PKEY
 
@@ -63,7 +63,7 @@ Questo valore può essere scritto in System.GPS.LatitudeNumerator e System.GPS.L
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 
@@ -104,7 +104,7 @@ Questo valore può essere scritto in System.GPS.LatitudeNumerator e System.GPS.L
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 

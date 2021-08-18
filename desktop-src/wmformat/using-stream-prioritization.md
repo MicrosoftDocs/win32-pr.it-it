@@ -1,27 +1,27 @@
 ---
-title: Uso della priorità di flusso
-description: Uso della priorità di flusso
+title: Uso della priorità del flusso
+description: Uso della priorità del flusso
 ms.assetid: 5fff212e-b47b-49a6-817f-f0e09c895b3a
 keywords:
-- Windows Media Format SDK, assegnazione di priorità al flusso
-- profili, assegnazione di priorità al flusso
-- flussi, priorità
+- Windows MEDIA Format SDK, definizione della priorità dei flussi
+- profili,definizione della priorità dei flussi
+- flussi, assegnazione di priorità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99a6b0bd3d49db9523ef9ea5585803b4c703c279
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3db00466eb27685a33851f7bffa5133e1d94a203985b1a0a56b110a09ad88ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103956169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963950"
 ---
-# <a name="using-stream-prioritization"></a>Uso della priorità di flusso
+# <a name="using-stream-prioritization"></a>Uso della priorità del flusso
 
-La definizione delle priorità del flusso consente di avere un maggiore controllo sulla riproduzione del contenuto consentendo di specificare l'ordine di priorità per i flussi in un profilo. Quando il lettore e il server di streaming riscontrano una carenza di larghezza di banda durante la riproduzione, potrebbe essere necessario eliminare alcuni esempi per fornire la riproduzione senza interruzioni. Se si specifica un ordine di priorità con un oggetto di assegnazione di priorità del flusso nel profilo, gli esempi verranno eliminati prima dei flussi con priorità più bassa.
+La priorità dei flussi consente di avere un maggiore controllo sulla riproduzione del contenuto consentendo di specificare l'ordine di priorità per i flussi in un profilo. Quando il lettore e il server di streaming riscontrano una mancanza di larghezza di banda durante la riproduzione, potrebbe essere necessario eliminare i campioni per fornire una riproduzione ininterrotta. Se si specifica un ordine di priorità con un oggetto di priorità del flusso nel profilo, gli esempi verranno eliminati prima dai flussi con priorità più bassa.
 
-Diversamente dalla condivisione della larghezza di banda e dagli oggetti di esclusione reciproca, un oggetto di assegnazione di priorità del flusso non usa l'interfaccia [**IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) per tenere traccia dell'elenco dei flussi. È invece necessario usare una matrice di strutture [**di \_ \_ \_ record di priorità di flusso WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) . Le strutture devono essere organizzate nella matrice in ordine decrescente di priorità. Oltre a contenere un numero di flusso, la struttura di priorità del flusso consente inoltre di specificare se un flusso è obbligatorio. I flussi obbligatori non verranno eliminati, indipendentemente dalla loro posizione nell'elenco.
+A differenza degli oggetti di condivisione della larghezza di banda e di esclusione reciproca, un oggetto di priorità del flusso non usa [**l'interfaccia IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) per tenere traccia dell'elenco di flussi. È invece necessario usare una matrice di [**strutture WM STREAM PRIORITY \_ \_ \_ RECORD.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) Le strutture devono essere organizzate nella matrice in ordine di priorità decrescente. Oltre a contenere un numero di flusso, la struttura di priorità del flusso consente anche di specificare se un flusso è obbligatorio. I flussi obbligatori non verranno eliminati, indipendentemente dalla posizione nell'elenco.
 
-Nell'esempio di codice seguente viene illustrato come includere una priorità di flusso in un profilo. Questo profilo è per una presentazione in aula, con un flusso audio del docente, un flusso video del docente e un flusso video che acquisisce le diapositive della presentazione. Il flusso audio è il più importante e sarà obbligatorio. Le diapositive della presentazione avranno la priorità più bassa in quanto l'immagine sarà piuttosto costante, quindi alcuni frame andranno persi e non ci sarà molta differenza.
+Il codice di esempio seguente illustra come includere una priorità del flusso in un profilo. Questo profilo è per una presentazione in classe, con un flusso audio del docente che parla, un flusso video del docente e un flusso video che acquisisce le diapositive di presentazione. Il flusso audio è il più importante e sarà obbligatorio. Le diapositive della presentazione avranno la priorità più bassa perché l'immagine sarà piuttosto costante, quindi alcuni fotogrammi andranno persi qui e non vi sarà molta differenza.
 
 
 ```C++
@@ -128,12 +128,12 @@ pProfileMgr = NULL;
 
 <dl> <dt>
 
-[**Utilizzo dei profili**](working-with-profiles.md)
+[**Uso dei profili**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

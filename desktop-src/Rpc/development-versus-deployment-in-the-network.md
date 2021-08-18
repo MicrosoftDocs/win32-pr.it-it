@@ -1,25 +1,25 @@
 ---
-title: Sviluppo rispetto alla distribuzione in rete
-description: La maggior parte degli sviluppatori scrive e testa il software in una LAN affidabile veloce.
+title: Sviluppo e distribuzione in rete
+description: La maggior parte degli sviluppatori scrive e testa il proprio software su una rete LAN veloce e affidabile.
 ms.assetid: 9458162c-1046-4554-bafa-b455f2957d58
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a83210db66133329d6c6b38b67ec7ecb29c0595
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70ff9da31ecd80b9e0a699d9ec0eb450e885a423b9380b85e2015e9ef7c1af7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930621"
 ---
-# <a name="development-vs-deployment-in-the-network"></a>Sviluppo rispetto alla distribuzione in rete
+# <a name="development-vs-deployment-in-the-network"></a>Sviluppo e distribuzione in rete
 
-La maggior parte degli sviluppatori scrive e testa il software in una LAN affidabile veloce. Il client e il server sono spesso nello stesso segmento di rete. In questi casi la rete non risponde raramente e la connettività si interrompe raramente. Quando vengono distribuiti in un ambiente cliente, tuttavia, il client e il server si trovano spesso in segmenti di rete diversi, possibilmente geograficamente remoti, e il server viene caricato molto con altri client. In altre parole, non è possibile presupporre la velocità di risposta della rete.
+La maggior parte degli sviluppatori scrive e testa il proprio software su una rete LAN veloce e affidabile. Il client e il server si trovano spesso nello stesso segmento di rete. In tali circostanze la rete raramente non risponde e la connettività raramente si perde. Quando vengono distribuiti in un ambiente del cliente, tuttavia, client e server si trovano spesso in segmenti di rete diversi, possibilmente geograficamente remoti, e il server è molto caricato con altri client. In altre parole, non è possibile presunirsi la velocità di risposta della rete.
 
-In questo articolo viene illustrato come costruire solide architetture client/server in presenza di incertezze introdotte da una rete intrinsecamente inaffidabile e da server potenzialmente non disponibili.
+Questo articolo illustra come costruire architetture client/server affidabili di fronte all'incertezza introdotta da una rete intrinsecamente inaffidabile e da server potenzialmente non disponibili.
 
- 
+ 
 
- 
+ 
 
 
 

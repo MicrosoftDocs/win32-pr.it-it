@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCLiveEncode (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMVCLiveEncode (Wmcodecdsp. h)
+title: g_wszWMVCLiveEncode (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | g_wszWMVCLiveEncode (Wmcodecdsp.h)
 ms.assetid: 63fe2783-08a2-44f0-a301-d5a6c030a90c
 keywords:
-- g_wszWMVCLiveEncode formato Windows Media
+- g_wszWMVCLiveEncode windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2255ee7f53ce39564007fc03e8fd2b1638b41de9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b4daf20bf9c74015d4f19cde50c7e3f60ce07b27b6de994ed41bec8f99a81b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085137"
 ---
 # <a name="g_wszwmvcliveencode"></a>g \_ wszWMVCLiveEncode
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

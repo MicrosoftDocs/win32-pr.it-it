@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà ColumnStream. ITag'
-title: Proprietà ColumnStream. ITag
+description: Altre informazioni sulla proprietà ColumnStream.Itag
+title: ColumnStream.Itag - proprietà
 TOCTitle: 'Itag property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnStream.Itag
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.itag(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4ea3a6cab067665ec1aa69a6f473d82ab1c656f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 426dc67c40dfd14773bfb2c0d09e0d1be019921501e0908c1a38e6d330e2925b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982661"
 ---
-# <a name="columnstreamitag-property"></a>Proprietà ColumnStream. ITag
+# <a name="columnstreamitag-property"></a>ColumnStream.Itag - proprietà
 
-Ottiene o imposta il ITag della colonna.
+Ottiene o imposta l'itag della colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int Itag { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe ColumnStream](./columnstream-class.md)
 
-[Membri di ColumnStream](./columnstream-members.md)
+[Membri ColumnStream](./columnstream-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

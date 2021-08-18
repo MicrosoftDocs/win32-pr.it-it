@@ -1,9 +1,9 @@
 ---
-title: Metodo INapEnforcementClientCallback NotifySoHChange (NapEnforcementClient. h)
-description: Viene usato da NapAgent per informare il client di imposizione delle modifiche del rapporto di integrità.
+title: Metodo INapEnforcementClientCallback NotifySoHChange (NapEnforcementClient.h)
+description: Viene usato da NapAgent per informare il client di imposizione delle modifiche SoH.
 ms.assetid: da8b9238-6371-4a6a-a9e7-ab791391ffc2
 keywords:
-- NAP metodo NotifySoHChange
+- Metodo NotifySoHChange NAP
 - Metodo NotifySoHChange NAP, interfaccia INapEnforcementClientCallback
 - Interfaccia INapEnforcementClientCallback NAP, metodo NotifySoHChange
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b405bca5ae27a68eea780dfcb922d1f986f475c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9011db09b698f886bd10ad19298a104668d038cc2bb11136b6e4ac58035e3425
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940135"
 ---
-# <a name="inapenforcementclientcallbacknotifysohchange-method"></a>Metodo INapEnforcementClientCallback:: NotifySoHChange
+# <a name="inapenforcementclientcallbacknotifysohchange-method"></a>Metodo INapEnforcementClientCallback::NotifySoHChange
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo di callback **INapEnforcementClientCallback:: NotifySoHChange** viene usato da napagent per informare il client di imposizione delle modifiche del rapporto di integrità.
+Il metodo di callback **INapEnforcementClientCallback::NotifySoHChange** viene usato da NapAgent per informare il client di imposizione delle modifiche soH.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,8 +53,8 @@ Questo metodo di callback deve restituire uno dei codici di errore seguenti.
 
 | Codice restituito                                                                                                | Descrizione                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Restituisce questo valore se l'operazione ha esito positivo.<br/>                                                                                                                                                              |
-| <dl> <dt>**\_server RPC \_ non \_ disponibile**</dt> </dl> | Se si restituisce questo valore, l'imposizione viene rimossa dall'elenco associato-SHA e viene scaricata la voce della cache NapAgent corrispondente. L'SHA in errore può quindi reinizializzarsi con NapAgent.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Restituisce questo valore se l'operazione ha avuto esito positivo.<br/>                                                                                                                                                              |
+| <dl> <dt>**RPC \_ S \_ SERVER \_ UNAVAILABLE**</dt> </dl> | Se si restituisce questo valore, l'applicazione viene rimossa dall'elenco bound-SHA e la voce della cache NapAgent corrispondente viene scaricata. L'sha con errori può quindi inizializzarsi nuovamente con NapAgent.<br/> |
 
 
 
@@ -62,9 +62,9 @@ Questo metodo di callback deve restituire uno dei codici di errore seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il completamento della correzione del sistema è un evento di modifica dell'integrità di sistema. Ciò significa che è necessario chiamare **NotifySoHChange** quando una notifica [**INapSystemHealthAgentCallback:: GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) indica che il client è fisso. Quando un client viene risolto, il membro di **stato** della struttura [**FixupInfo**](/windows/win32/api/naptypes/ns-naptypes-fixupinfo) restituito da **GetFixupInfo** ha il valore **fixupStateSuccess**.
+Il completamento della correzione del sistema è un evento di modifica dell'integrità del sistema. Ciò significa che è necessario chiamare **NotifySoHChange** quando una notifica [**INapSystemHealthAgentCallback::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) indica che il client è fisso. Quando un client è  fisso, il membro di stato della struttura [**FixupInfo**](/windows/win32/api/naptypes/ns-naptypes-fixupinfo) restituito da **GetFixupInfo** ha il valore **fixupStateSuccess**.
 
-Dopo essere stato chiamato da NapAgent tramite questo callback, l'agente di imposizione deve quindi chiamare [**INapEnforcementClientBinding:: GetSoHRequest**](inapenforcementclientbinding-getsohrequest-method.md) per recuperare la nuova richiesta. Questa chiamata può essere eseguita sullo stesso thread di **INapEnforcementClientCallback:: NotifySoHChange**.
+Dopo essere stato chiamato da NapAgent tramite questo callback, l'agente di imposizione deve chiamare [**INapEnforcementClientBinding::GetSoHRequest**](inapenforcementclientbinding-getsohrequest-method.md) per recuperare la nuova richiesta. Questa chiamata può essere effettuata sullo stesso thread di **INapEnforcementClientCallback::NotifySoHChange.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,10 +72,10 @@ Dopo essere stato chiamato da NapAgent tramite questo callback, l'agente di impo
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 
 
 

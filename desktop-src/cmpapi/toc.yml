@@ -8,7 +8,7 @@
           href: using-the-compression-api-in-buffer-mode.md
         - name: Uso dell'API di compressione in modalità blocco
           href: using-the-compression-api-in-block-mode.md
-    - name: Funzioni API di compressione
+    - name: Funzioni dell'API di compressione
       href: compression-api-functions.md
       items:
         - name: CloseCompressor
@@ -40,7 +40,7 @@
       items:
         - name: COMPRESS_ALLOCATION_ROUTINES
           href: /windows/win32/api/compressapi/ns-compressapi-compress_allocation_routines
-    - name: Enumerazioni API di compressione
+    - name: Enumerazioni dell'API di compressione
       href: compression-api-enumerations.md
       items:
         - name: COMPRESS_INFORMATION_CLASS

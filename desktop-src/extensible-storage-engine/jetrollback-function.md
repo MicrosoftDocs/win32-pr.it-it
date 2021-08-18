@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetRollback'
-title: JetRollback (funzione)
+description: 'Altre informazioni su: Funzione JetRollback'
+title: Funzione JetRollback
 TOCTitle: JetRollback Function
 ms:assetid: 685c51f4-8fe4-47cc-8a8e-c42014431b8b
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269273(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eda0c8947e9609717bbb3f1a16999b450d7e4882
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e96e28924578945685c58b3bd0a1fa1380e8abd330b546678cfe1ff1af47c666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978831"
 ---
-# <a name="jetrollback-function"></a>JetRollback (funzione)
+# <a name="jetrollback-function"></a>Funzione JetRollback
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetrollback-function"></a>JetRollback (funzione)
+## <a name="jetrollback-function"></a>Funzione JetRollback
 
-La funzione **JetRollback** Annulla le modifiche apportate allo stato del database e torna all'ultimo punto di salvataggio. **JetRollback** chiuderà anche tutti i cursori aperti durante il punto di salvataggio. Se il punto di salvataggio più esterno è annullato, la sessione uscirà dalla transazione.
+La **funzione JetRollback** annulla le modifiche apportate allo stato del database e torna all'ultimo punto di salvataggio. **JetRollback chiuderà** anche tutti i cursori aperti durante il punto di salvataggio. Se il punto di salvataggio più esterno viene annullato, la sessione chiuderà la transazione.
 
 ```cpp
     JET_ERR JET_API JetRollback(
@@ -49,7 +49,7 @@ Sessione da utilizzare per questa chiamata.
 
 *grbit*
 
-Gruppo di bit che contiene le opzioni da utilizzare per la chiamata, che includono zero o più degli elementi seguenti:
+Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più degli elementi seguenti:
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ Gruppo di bit che contiene le opzioni da utilizzare per la chiamata, che includo
 <tbody>
 <tr class="odd">
 <td><p>JET_bitRollbackAll</p></td>
-<td><p>Questa opzione richiede che vengano annullate tutte le modifiche apportate allo stato del database durante tutti i punti di salvataggio. Di conseguenza, la sessione uscirà dalla transazione.</p></td>
+<td><p>Questa opzione richiede che tutte le modifiche apportate allo stato del database durante tutti i punti di salvataggio siano annullate. Di conseguenza, la sessione chiuderà la transazione.</p></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ Gruppo di bit che contiene le opzioni da utilizzare per la chiamata, che includo
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -93,11 +93,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInitialized</p></td>
@@ -105,11 +105,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errNotInTransaction</p></td>
-<td><p>Operazione non riuscita perché la sessione specificata non è in una transazione.</p></td>
+<td><p>L'operazione non è riuscita perché la sessione specificata non è in una transazione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errRollbackError</p></td>
@@ -117,25 +117,25 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In caso di esito positivo, tutte le modifiche apportate al database durante il punto di salvataggio corrente per la sessione specificata verranno annullate e il punto di salvataggio verrà terminato. Se l'ultimo punto di salvataggio per la sessione è stato terminato, la sessione uscirà dalla transazione.
+In caso di esito positivo, tutte le modifiche apportate al database durante il punto di salvataggio corrente per la sessione specificata verranno annullate e tale punto di salvataggio verrà terminato. Se l'ultimo punto di salvataggio per la sessione è stato terminato, la sessione terminerà la transazione.
 
-In caso di errore, lo stato transazionale della sessione rimarrà invariato. Non si verificherà alcuna modifica allo stato del database. Un errore durante il rollback viene considerato un errore irreversibile del database.
+In caso di errore, lo stato transazionale della sessione rimarrà invariato. Non verrà apportata alcuna modifica allo stato del database. Un errore durante il rollback è considerato un errore irreversibile del database.
 
 #### <a name="remarks"></a>Commenti
 
-È necessario che una chiamata a [JetCommitTransaction](./jetcommittransaction-function.md) o **JetRollback** corrisponda a ogni chiamata a [JetBeginTransaction](./jetbegintransaction-function.md) per una determinata sessione.
+Deve essere presente una chiamata a [JetCommitTransaction](./jetcommittransaction-function.md) o **JetRollback** in modo che corrisponda a ogni chiamata a [JetBeginTransaction](./jetbegintransaction-function.md) per una determinata sessione.
 
-Se, ad esempio, sono stati aperti cursori (usando [JetOpenTable](./jetopentable-function.md)) durante un punto di salvataggio di cui viene eseguito il rollback, il cursore verrà chiuso.
+Se sono stati aperti cursori (ad esempio [tramite JetOpenTable)](./jetopentable-function.md)durante un punto di salvataggio di cui viene eseguito il rollback, il cursore verrà chiuso.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -155,11 +155,11 @@ Se, ad esempio, sono stati aperti cursori (usando [JetOpenTable](./jetopentable-
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

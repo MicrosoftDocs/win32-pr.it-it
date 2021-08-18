@@ -3,25 +3,25 @@ title: Attributi di ascolto
 description: Attributi di ascolto
 ms.assetid: 51b10507-5c2e-49ca-b560-6db6a1a7ee87
 keywords:
-- Interfacce di Media Player Windows, attributi in ascolto
-- interfacce, attributi di ascolto
-- riferimento per le interfacce, gli attributi di ascolto
+- Windows Media Player, attributi di ascolto
+- skin, attributi di ascolto
+- informazioni di riferimento per le skin, attributi di ascolto
 - attributi di ascolto
 - attributi, ascolto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 349a549966f7fba5ea152f8f0bb002a92f6dfb8e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8cceb9a8721995c494b5e4366291353376a2569c045e41eb41c1418e2f4d5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996411"
 ---
 # <a name="listening-attributes"></a>Attributi di ascolto
 
-Un attributo in ascolto viene usato per connettere un attributo a un altro, in modo che il valore venga modificato ogni volta che il valore dell'altro attributo viene modificato.
+Un attributo di ascolto viene usato per connettere un attributo a un altro in modo che il relativo valore cambi ogni volta che cambia il valore dell'altro attributo.
 
-L'attributo listening **wmpprop:** è il più utile. Se il valore di un attributo viene specificato come **wmpprop:** di un secondo attributo, il primo valore verrà aggiornato automaticamente in modo da riflettere il secondo valore ogni volta che viene modificato il secondo valore.
+L'attributo di **ascolto wmpprop:** è il più utile. Se il valore di un attributo viene specificato come **wmpprop:** di un secondo attributo, il primo valore verrà aggiornato automaticamente per riflettere il secondo valore ogni volta che il secondo valore cambia.
 
 **Esempio:**
 
@@ -35,9 +35,9 @@ L'attributo listening **wmpprop:** è il più utile. Se il valore di un attribut
 
 
 
-In questo modo, il valore di caslider, illustrato dalla posizione del controllo dispositivo di scorrimento, può essere visualizzato anche come numero in una casella di testo.
+In questo modo, il valore di mySlider, indicato dalla posizione del dispositivo di scorrimento, può essere visualizzato anche come numero all'interno di una casella di testo.
 
-Gli altri due attributi di ascolto, **wmpenabled:** e **wmpdisabled:**, possono essere usati per modificare l'attributo **Enabled** di un controllo a seconda che la funzionalità sia attualmente disponibile nel lettore. Questi attributi possono restare in ascolto solo dei metodi dell'oggetto **Controls** .
+Gli altri due attributi di ascolto, **wmpenabled:** e **wmpdisabled:**, possono essere usati per modificare l'attributo abilitato di un controllo a seconda che la relativa funzionalità sia attualmente disponibile nel lettore.  Questi attributi possono restare in ascolto solo dei metodi **dell'oggetto** Controls.
 
 **Esempio:**
 
@@ -59,9 +59,9 @@ Gli altri due attributi di ascolto, **wmpenabled:** e **wmpdisabled:**, possono 
 [**Varie**](miscellaneous.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

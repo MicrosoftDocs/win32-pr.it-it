@@ -1,40 +1,40 @@
 ---
-description: L'API DRT (Distributed routing table) consente alle applicazioni di pubblicare e risolvere chiavi numeriche in una rete peer.
+description: L'API DRT (Distributed Routing Table) consente alle applicazioni di pubblicare e risolvere chiavi numeriche in una rete peer.
 ms.assetid: 17422d71-4c6d-458b-87b6-b31fc2b5bda5
-title: API Tabella di routing distribuito
+title: Routing distribuito API Tabella
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9f8c2b435e1c0c813fb279c40b9bbfa9afb6b23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9adabac4e2e885a7ac635daf5de2dfbacc94dafd4972a6b35f1f4649c3428e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104050025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011609"
 ---
-# <a name="distributed-routing-table-api"></a>API Tabella di routing distribuito
+# <a name="distributed-routing-table-api"></a>Routing distribuito API Tabella
 
-L'API DRT (Distributed routing table) consente alle applicazioni di pubblicare e risolvere chiavi numeriche in una rete peer.
+L'API DRT (Distributed Routing Table) consente alle applicazioni di pubblicare e risolvere chiavi numeriche in una rete peer.
 
-Un'applicazione che utilizza DRT può eseguire le operazioni seguenti:
+Un'applicazione che usa DRT può eseguire le operazioni seguenti:
 
--   Creazione di tabelle di routing distribuite specifiche dell'applicazione.
+-   Creare tabelle di routing distribuito specifiche dell'applicazione.
 -   Registrare le chiavi e associarle agli indirizzi IP e ai dati dell'applicazione.
--   Cercare le chiavi e recuperare gli indirizzi IP e i dati dell'applicazione associati. Questa funzionalità può essere utilizzata per costruire tabelle hash distribuite (DHT), sistemi di risoluzione dei nomi senza server e reti mesh sovrapposte di molte topologie.
+-   Cercare le chiavi e recuperare gli indirizzi IP e i dati dell'applicazione associati. Questa funzionalità può essere usata per costruire DHT (Distributed Hash Table), sistemi di risoluzione dei nomi serverless e reti mesh sovrapposte di molte topologie.
 
 > [!Note]  
-> Gli amministratori e gli utenti di applicazioni abilitate per DRT devono fare in modo che gli utenti finali delle proprie applicazioni riconoscano le informazioni pubblicate. I server Microsoft non sono utilizzati da questa tecnologia e le informazioni non vengono inviate a Microsoft.
+> Gli amministratori e gli utenti delle applicazioni abilitate per DRT devono rendere noti agli utenti finali delle proprie applicazioni le informazioni pubblicate. I server Microsoft non vengono utilizzati da questa tecnologia e le informazioni non vengono inviate a Microsoft.
 
  
 
-La documentazione fornita per questa API è divisa in tre sezioni.
+La documentazione fornita per questa API è suddivisa in tre sezioni.
 
 
 
 | Sezione                                                                                | Descrizione                                                                                                          |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Informazioni sulle tabelle di routing distribuite](about-distributed-routing-tables.md)               | Informazioni che descrivono in dettaglio il ciclo di vita e le modifiche di stato dell'API DRT.<br/>                                    |
-| [Uso del API Tabella di routing distribuito](using-the-distributed-routing-table-api.md) | Informazioni che descrivono in dettaglio l'utilizzo generale dell'API DRT.<br/>                                                   |
-| [Riferimento API Tabella routing distribuito](distributed-routing-table-api-reference.md) | Informazioni che descrivono in dettaglio le funzioni, le strutture di dati e le costanti enumerate che comprendono l'API DRT.<br/> |
+| [Informazioni sulle tabelle di routing distribuito](about-distributed-routing-tables.md)               | Informazioni che dettaglino il ciclo di vita e le modifiche di stato dell'API DRT.<br/>                                    |
+| [Uso del routing distribuito API Tabella](using-the-distributed-routing-table-api.md) | Informazioni che dettaglino l'utilizzo generale dell'API DRT.<br/>                                                   |
+| [Informazioni di riferimento API Tabella routing distribuito](distributed-routing-table-api-reference.md) | Informazioni dettagliate sulle funzioni, le strutture di dati e le costanti enumerate che costituiscono l'API DRT.<br/> |
 
 
 

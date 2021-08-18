@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentRunningInMultiInstanceModeException'
+description: Altre informazioni sul costruttore EsentRunningInMultiInstanceModeException
 title: Costruttore EsentRunningInMultiInstanceModeException
 TOCTitle: 'EsentRunningInMultiInstanceModeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRunningInMultiInstanceModeException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 780b16b3f2b9c26984710f6eb7105fd6bda1316e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0cd653ada5aea96a13bbebc109593c73686cbbb334f29543036e7ee15bbbf427
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981821"
 ---
 # <a name="esentrunninginmultiinstancemodeexception-constructor"></a>Costruttore EsentRunningInMultiInstanceModeException
 
 Inizializza una nuova istanza della classe EsentRunningInMultiInstanceModeException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentRunningInMultiInstanceModeException()
 
 [Membri di EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancemodeexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

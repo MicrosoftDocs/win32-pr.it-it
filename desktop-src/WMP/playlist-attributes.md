@@ -3,39 +3,39 @@ title: Attributi della playlist
 description: Attributi della playlist
 ms.assetid: 2f2224ad-a1de-4f88-9166-8c00137a3695
 keywords:
-- Media Player di Windows, playlist
-- Modello a oggetti di Windows Media Player, playlist
+- Windows Media Player,playlist
+- Windows Media Player a oggetti, playlist
 - modello a oggetti, playlist
-- Windows Media Player Mobile, playlist
-- Controllo ActiveX di Windows Media Player, playlist
-- Controllo ActiveX Windows Media Player Mobile, playlist
-- Controllo ActiveX, playlist
+- Windows Media Player Dispositivi mobili, playlist
+- Windows Media Player ActiveX controllo, playlist
+- Windows Media Player Controllo ActiveX per dispositivi mobili, playlist
+- ActiveX, playlist
 - playlist, attributi
 - playlist di metafile, attributi
-- Elenchi di canzoni di Windows Media Metafile, attributi
+- Windows playlist metafile multimediali,attributi
 - attributi, playlist
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 669d3203fdb703099a7089e2165f31fd5bb326bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d00416f641fac89c707405c03dc70af0497b34d4cf646aa44fad5124f97f09a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995711"
 ---
 # <a name="playlist-attributes"></a>Attributi della playlist
 
-Le playlist hanno informazioni sui metadati denominate attributi, così come gli elementi multimediali hanno attributi. È possibile recuperare i nomi e i valori degli attributi della playlist e visualizzarli nell'interfaccia utente oppure il codice può eseguire azioni in base al valore di un attributo.
+Le playlist hanno informazioni sui metadati denominate attributi, proprio come gli elementi multimediali hanno attributi. È possibile recuperare i nomi e i valori degli attributi della playlist e visualizzarli nell'interfaccia utente oppure il codice può eseguire azioni in base al valore di un attributo.
 
-Le playlist sono definite nei file organizzati in un formato XML e particolari elementi nel file definiscono gli attributi della playlist. Alcuni elementi attribute sono ben noti; L'autore del metafile può anche definire attributi arbitrari. Per ulteriori informazioni sugli elementi attributo nei file della playlist, vedere [recupero di metadati](retrieving-metadata.md).
+Le playlist sono definite in file organizzati in formato XML e determinati elementi nel file definiscono gli attributi della playlist. Alcuni elementi di attributo sono noti. L'autore del metafile può anche definire attributi arbitrari. Per altre informazioni sugli elementi attributo nei file di playlist, vedere [Recupero di metadati](retrieving-metadata.md).
 
-La libreria può fornire attributi aggiuntivi della playlist, ad esempio **SourceURL** o **UserLastPlayedTime**. Per ulteriori informazioni sugli attributi della playlist della libreria, vedere le informazioni di [riferimento](attribute-reference.md)sugli attributi di Windows Media Player.
+La libreria può fornire attributi di playlist aggiuntivi, ad esempio **SourceURL** o **UserLastPlayedTime.** Per altre informazioni sugli attributi della playlist della libreria, vedere le informazioni di Windows Media Player [sugli attributi](attribute-reference.md).
 
-*Playlist*. la proprietà **attributeCount** Recupera il numero di attributi associati alla playlist. *Playlist*. la proprietà **attributeName** Recupera il nome di un attributo in base al relativo indice e alla *playlist*. il metodo **GetItemInfo** Recupera il valore di un attributo in base al nome.
+Playlist . **la proprietà attributeCount** recupera il numero di attributi associati alla playlist. Playlist . **la proprietà attributeName** recupera il nome di un attributo in base al relativo indice e la *playlist*. **Il metodo getItemInfo** recupera il valore di un attributo in base al nome.
 
-È possibile modificare il valore di un attributo della playlist corrente con la *playlist*. metodo **setItemInfo** .
+È possibile modificare il valore di un attributo della playlist corrente con *playlist*. **Metodo setItemInfo.**
 
-Un uso speciale del metodo **setItemInfo** consiste nell'ordinare gli elementi nella playlist usando l'attributo **SortAttribute** . Nell'esempio C# seguente viene ordinata una playlist in base ai valori dell'attributo **UserLastPlayedTime** . La variabile *playlist* è un riferimento a un oggetto **playlist** .
+Un uso speciale del **metodo setItemInfo** è quello di ordinare gli elementi nella playlist usando l'attributo **SortAttribute.** Nell'esempio C# seguente una playlist viene ordinata in base ai valori **dell'attributo UserLastPlayedTime.** La variabile *Playlist* è un riferimento a un **oggetto Playlist.**
 
 
 ```C++
@@ -45,7 +45,7 @@ Playlist.setItemInfo("SortAttribute", "UserLastPlayedTime");
 
 
 
-In questo argomento, l'oggetto **Player** è stato definito nel modo seguente:
+In questo argomento **l'oggetto Player** è stato definito nel modo seguente:
 
 
 ```C++
@@ -56,7 +56,7 @@ using WMPLib;
 
 
 
-Il codice di esempio C# seguente illustra il recupero degli attributi della playlist. La prima funzione, ShowPlaylists, compila un controllo ListBox con i nomi delle playlist disponibili. La seconda parte è il gestore eventi della casella di riepilogo. Quando l'utente fa clic sul nome di una playlist, questo codice recupera gli attributi per la playlist e visualizza tali attributi in una seconda casella di riepilogo.
+Il codice di esempio C# seguente illustra il recupero degli attributi della playlist. La prima funzione, ShowPlaylists, popola un controllo ListBox con i nomi delle playlist disponibili. La seconda parte è il gestore dell'evento della casella di riepilogo. Quando l'utente fa clic sul nome di una playlist, questo codice recupera gli attributi per tale playlist e visualizza tali attributi in una seconda casella di riepilogo.
 
 
 ```C++
@@ -90,7 +90,7 @@ private void ShowPlaylists()
 
 
 
-L'evento SelectedIndexChanged per il controllo ListBox viene chiamato ogni volta che l'utente seleziona un nome della playlist. Il gestore eventi seguente riempie una seconda casella di riepilogo con i nomi degli attributi e i valori corrispondenti alla selezione dell'utente.
+L'evento SelectedIndexChanged per il controllo ListBox viene chiamato ogni volta che l'utente seleziona un nome di playlist. Il gestore eventi seguente riempie una seconda casella di riepilogo con i nomi degli attributi e i valori corrispondenti alla selezione dell'utente.
 
 
 ```C++
@@ -121,15 +121,15 @@ private void lstPlaylist_SelectedIndexChanged(object sender, System.EventArgs e)
 [**Gestione delle playlist**](managing-playlists.md)
 </dt> <dt>
 
-[**Attributi elemento multimediale**](media-item-attributes.md)
+[**Attributi dell'elemento multimediale**](media-item-attributes.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

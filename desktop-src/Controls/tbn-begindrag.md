@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_BEGINDRAG (COMmctrl. h)
-description: Notifica alla finestra padre di una barra degli strumenti che l'utente ha iniziato a trascinare un pulsante in una barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_BEGINDRAG di notifica (Commctrl.h)
+description: Notifica alla finestra padre di una barra degli strumenti che l'utente ha iniziato a trascinare un pulsante in una barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 244406e5-e13d-4c80-81fa-81b018b29ec1
 keywords:
-- Controlli di Windows per il codice di notifica TBN_BEGINDRAG
+- TBN_BEGINDRAG del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72cfa7325d1a8e1eab27383d7df918c8896933bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5283b2853709742713f79afb761cc39739f6df7467a1de869c545c705c8488ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077975"
 ---
-# <a name="tbn_begindrag-notification-code"></a>\_Codice di notifica BEGINDRAG di TBN
+# <a name="tbn_begindrag-notification-code"></a>Codice di notifica \_ TBN BEGINDRAG
 
-Notifica alla finestra padre di una barra degli strumenti che l'utente ha iniziato a trascinare un pulsante in una barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di una barra degli strumenti che l'utente ha iniziato a trascinare un pulsante in una barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TBN_BEGINDRAG
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) . Il membro **iItem** contiene l'identificatore di comando del pulsante trascinato.
+Puntatore a una [**struttura NMTOOLBAR.**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) Il **membro iItem** contiene l'identificatore di comando del pulsante trascinato.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

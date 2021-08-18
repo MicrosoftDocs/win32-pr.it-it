@@ -1,7 +1,7 @@
 ---
 description: Imposta o ottiene il nome dell'elemento.
 ms.assetid: 079efc8d-3d08-48b1-bdb1-83f4b89fd633
-title: Proprietà FolderItem.Name (shldisp. h)
+title: FolderItem.Name proprietà (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5f5eb757455b8bbbd4161eae477ca4677eef4fc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42f5a111d5ef992635d03be8c4b67a5c50bd22df4298ac7412a98f0ba8d6fb83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093067"
 ---
-# <a name="folderitemname-property"></a>Proprietà FolderItem.Name
+# <a name="folderitemname-property"></a>FolderItem.Name proprietà
 
 Imposta o ottiene il nome dell'elemento.
 
@@ -42,9 +42,9 @@ Variabile di tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) ch
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato il **nome** per recuperare il nome del file di Autoexec.bat, quindi reimpostare il nome su Test.bat. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa Name** per recuperare il nome del file Autoexec.bat, quindi reimposta il nome su Test.bat. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -147,11 +147,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

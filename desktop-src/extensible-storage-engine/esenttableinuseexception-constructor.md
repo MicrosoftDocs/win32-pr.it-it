@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentTableInUseException'
+description: Altre informazioni sul costruttore EsentTableInUseException
 title: Costruttore EsentTableInUseException
 TOCTitle: 'EsentTableInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTableInUseException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 291db699df12fd2692a3a5130a70d2dfdf241e10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b640676817388b8ba450df02adc3d32afd0b7ff7fb8c710a35b3c35692090423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981071"
 ---
 # <a name="esenttableinuseexception-constructor"></a>Costruttore EsentTableInUseException
 
 Inizializza una nuova istanza della classe EsentTableInUseException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentTableInUseException()
 
 [Membri di EsentTableInUseException](./esenttableinuseexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

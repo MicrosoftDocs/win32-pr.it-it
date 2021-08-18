@@ -1,19 +1,19 @@
 ---
-description: In questo argomento vengono elencati i metodi SetCenterPoint della classe PathGradientBrush. Per un elenco completo dei metodi per la classe PathGradientBrush, vedere Metodi PathGradientBrush.
+description: Questo argomento elenca i metodi SetCenterPoint della classe PathGradientBrush. Per un elenco completo dei metodi per la classe PathGradientBrush, vedi Metodi PathGradientBrush.
 ms.assetid: 41765887-b1de-4259-95af-a1ef8c84d01a
-title: Metodi PathGradientBrush. SetCenterPoint (Gdipluspath. h)
+title: Metodi PathGradientBrush.SetCenterPoint (Gdipluspath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a810f8fc9579ed12f24a25477859826eecc32998
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9f335735e60f1b7ef767a2827c3cd1461e4fef52650bf976295ad2e9492bb27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104996513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977841"
 ---
-# <a name="pathgradientbrushsetcenterpoint-methods"></a>Metodi PathGradientBrush. SetCenterPoint
+# <a name="pathgradientbrushsetcenterpoint-methods"></a>Metodi PathGradientBrush.SetCenterPoint
 
-In questo argomento vengono elencati i metodi SetCenterPoint della classe [**PathGradientBrush**](/windows/win32/api/gdipluspath/nl-gdipluspath-pathgradientbrush) . Per un elenco completo dei metodi per la classe **PathGradientBrush** , vedere [Metodi PathGradientBrush](-gdiplus-class-pathgradientbrush-methods.md).
+Questo argomento elenca i metodi SetCenterPoint della [**classe PathGradientBrush.**](/windows/win32/api/gdipluspath/nl-gdipluspath-pathgradientbrush) Per un elenco completo dei metodi per la **classe PathGradientBrush,** vedi [Metodi PathGradientBrush.](-gdiplus-class-pathgradientbrush-methods.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,8 +21,8 @@ In questo argomento vengono elencati i metodi SetCenterPoint della classe [**Pat
 
 | Metodo                                                                                           | Descrizione                                                                                                                                                                                                                                                                                                                                    |
 |:-------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetCenterPoint (punto&)**](/windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcenterpoint(inconstpoint_))   | Il metodo [**PathGradientBrush:: SetCenterPoint**](/windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcenterpoint(inconstpoint_)) imposta il punto centrale del pennello sfumatura del percorso. Per impostazione predefinita, il punto centrale si trova al centro del percorso limite del pennello, ma è possibile impostare il punto centrale su qualsiasi posizione all'interno o all'esterno del percorso.<br/>  |
-| [**SetCenterPoint (PointF&)**](/previous-versions//ms535095(v=vs.85)) | Il metodo [**PathGradientBrush:: SetCenterPoint**](/previous-versions//ms535095(v=vs.85)) imposta il punto centrale del pennello sfumatura del percorso. Per impostazione predefinita, il punto centrale si trova al centro del percorso limite del pennello, ma è possibile impostare il punto centrale su qualsiasi posizione all'interno o all'esterno del percorso.<br/> |
+| [**SetCenterPoint(Point&)**](/windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcenterpoint(inconstpoint_))   | Il [**metodo PathGradientBrush::SetCenterPoint**](/windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcenterpoint(inconstpoint_)) imposta il punto centrale di questo pennello sfumatura percorso. Per impostazione predefinita, il punto centrale si trova al centro del percorso limite del pennello, ma è possibile impostare il punto centrale su qualsiasi posizione all'interno o all'esterno del tracciato.<br/>  |
+| [**SetCenterPoint(PointF&)**](/previous-versions//ms535095(v=vs.85)) | Il [**metodo PathGradientBrush::SetCenterPoint**](/previous-versions//ms535095(v=vs.85)) imposta il punto centrale di questo pennello sfumatura percorso. Per impostazione predefinita, il punto centrale si trova al centro del percorso limite del pennello, ma è possibile impostare il punto centrale su qualsiasi posizione all'interno o all'esterno del tracciato.<br/> |
 
 
 
@@ -32,7 +32,7 @@ In questo argomento vengono elencati i metodi SetCenterPoint della classe [**Pat
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Gdipluspath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Gdipluspath.h</dt> </dl> |
 
 
 

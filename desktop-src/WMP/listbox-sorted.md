@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. ordinato
-description: L'attributo sorted specifica o recupera un valore che indica se il controllo casella di riepilogo è ordinato in ordine alfabetico. Può essere impostato solo in fase di progettazione.
+title: LISTBOX.sorted
+description: L'attributo ordinato specifica o recupera un valore che indica se il controllo casella di riepilogo è ordinato alfabeticamente. Può essere impostato solo in fase di progettazione.
 ms.assetid: f07bf9bf-fe01-4d7c-a630-075ea809fd32
 keywords:
-- LISTBOX. ordinato Media Player Windows
+- LISTBOX.sorted Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc0f6ca663d3bd5b934208061b0d7cd7b19a267d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa099c6164478a30ae87fc5415327a2c8643935ef70cd8a1d236b9a2217082b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996431"
 ---
-# <a name="listboxsorted"></a>LISTBOX. ordinato
+# <a name="listboxsorted"></a>LISTBOX.sorted
 
-L'attributo **sorted** specifica o recupera un valore che indica se il controllo casella di riepilogo è ordinato in ordine alfabetico. Può essere impostato solo in fase di progettazione.
+**L'attributo ordinato** specifica o recupera un valore che indica se il controllo casella di riepilogo è ordinato alfabeticamente. Può essere impostato solo in fase di progettazione.
 
 ``` syntax
         elementID.sorted
@@ -29,13 +29,13 @@ L'attributo **sorted** specifica o recupera un valore che indica se il controllo
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                                 |
 |-------|-------------------------------------------------------------|
-| true  | Il controllo casella di riepilogo viene ordinato in ordine alfabetico.              |
+| true  | Il controllo casella di riepilogo è ordinato alfabeticamente.              |
 | false | Valore predefinito. Il controllo casella di riepilogo non è ordinato alfabeticamente. |
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -56,7 +56,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

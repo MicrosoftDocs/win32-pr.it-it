@@ -5,24 +5,24 @@ ms.assetid: 19ef4569-e6fc-480a-8659-98df3d36d05f
 keywords:
 - audio multimediale, strutture ACM
 - audio, strutture ACM
-- Gestione compressione audio (ACM), strutture
-- ACM (Gestione compressione audio), strutture
-- Riferimenti di ACM, strutture
+- gestione compressione audio(ACM), strutture
+- ACM (gestione compressione audio),strutture
+- Informazioni di riferimento su ACM, strutture
 - informazioni di riferimento per ACM, strutture
 - Strutture di ACM
 - compressione audio, strutture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cdbdb992778881ac26e606649bee1eab0bb457c
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: 8ac8d53d84ccf36cd99ad9c3a307c0fc3bb34ed0c3110014ad512a71bebf5f25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "103956235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941799"
 ---
 # <a name="audio-compression-structures"></a>Strutture di compressione audio
 
-Con la compressione audio vengono utilizzate le strutture seguenti.
+Le strutture seguenti vengono usate con la compressione audio.
 
 -   [**ACMDRIVERDETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
 -   [**ACMFILTERCHOOSE**](/windows/win32/api/msacm/ns-msacm-acmfilterchoose)
@@ -40,9 +40,9 @@ Con la compressione audio vengono utilizzate le strutture seguenti.
 [Informazioni di riferimento su Gestione compressione audio](audio-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

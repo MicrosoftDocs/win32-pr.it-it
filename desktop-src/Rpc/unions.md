@@ -1,26 +1,26 @@
 ---
-title: parola chiave Union (RPC)
-description: Le unioni richiedono parole chiave MIDL speciali per supportarne l'uso con RPC (Remote Procedure Call).
+title: Parola chiave union (RPC)
+description: Le unioni richiedono parole chiave MIDL speciali per supportare l'uso con RPC (Remote Procedure Call).
 ms.assetid: e7c8296c-893d-4df7-913a-f969733e1917
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c562815d78ab931bd4d6590b5465647e72f4bf6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5fde18cca09f4db81af8eada2ae102a1bea373ed7859b3a7fc2bb9637f28d584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011009"
 ---
-# <a name="union-keyword-rpc"></a>parola chiave Union (RPC)
+# <a name="union-keyword-rpc"></a>Parola chiave union (RPC)
 
-Alcune funzionalità del linguaggio C, ad esempio le unioni, richiedono parole chiave MIDL speciali per supportarne l'utilizzo nelle chiamate a procedure remote. Un'Unione nel linguaggio C è una variabile che include oggetti di dimensioni e tipi diversi. Lo sviluppatore in genere crea una variabile per tenere traccia dei tipi archiviati nell'Unione. Per funzionare correttamente in un ambiente distribuito, è necessario che la variabile che indica il tipo di Unione, o *discriminante*, sia disponibile anche per il computer remoto. MIDL fornisce il \[ [**\_ tipo di Commuter**](/windows/desktop/Midl/switch-type) \] e \[ [**Switch \_ è**](/windows/desktop/Midl/switch-is) \] keywords per identificare il tipo e il nome discriminante.
+Alcune funzionalità del linguaggio C, ad esempio le unioni, richiedono parole chiave MIDL speciali per supportare l'uso nelle chiamate di procedura remota. Un'unione nel linguaggio C è una variabile che contiene oggetti di tipi e dimensioni diversi. Lo sviluppatore crea in genere una variabile per tenere traccia dei tipi archiviati nell'unione. Per funzionare correttamente in un ambiente distribuito, anche la variabile che indica il tipo di unione o il *discriminante* deve essere disponibile per il computer remoto. MIDL fornisce il \[ [**tipo di \_ opzione**](/windows/desktop/Midl/switch-type) e switch è parole chiave per identificare il tipo e il \] nome non \[ [**\_**](/windows/desktop/Midl/switch-is) \] conformi.
 
-MIDL richiede che il discriminante venga trasmesso con l'Unione in uno dei due modi seguenti:
+MIDL richiede che il discriminante sia trasmesso con l'unione in uno dei due modi seguenti:
 
--   L'Unione e discriminante devono essere specificati come parametri.
--   L'Unione e discriminante devono essere inclusi in un pacchetto in una struttura.
+-   L'unione e la discriminante devono essere fornite come parametri.
+-   L'unione e la discriminante devono essere in pacchetto in una struttura .
 
-Due tipi fondamentali di unioni discriminate vengono forniti da MIDL: [**unincapsulated \_**](/windows/desktop/Midl/nonencapsulated-unions) Union e incapsulated [**\_ Union**](/windows/desktop/Midl/encapsulated-unions). Il discriminante di un'Unione non incapsulata è un altro parametro se l'Unione è un parametro. Si tratta di un altro campo se l'Unione è un campo di una struttura. La definizione di un'Unione incapsulata viene trasformata in una definizione di struttura il cui primo campo è discriminante e il cui secondo e l'ultimo campo sono l'Unione. Nell'esempio seguente viene illustrato come fornire i parametri Union e discriminante:
+MIDL fornisce due tipi fondamentali di unioni discriminanti: unione non incapsulata e [**\_**](/windows/desktop/Midl/nonencapsulated-unions) [**unione \_ incapsulata.**](/windows/desktop/Midl/encapsulated-unions) Il discriminante di un'unione non incapsulata è un altro parametro se l'unione è un parametro. È un altro campo se l'unione è un campo di una struttura. La definizione di un'unione incapsulata viene trasformata in una definizione di struttura il cui primo campo è il discriminante e il cui secondo e l'ultimo campo sono l'unione. L'esempio seguente illustra come fornire l'unione e la discriminante come parametri:
 
 ``` syntax
 typedef [switch_type(short)] union 
@@ -36,11 +36,11 @@ short UnionParamProc(
     [in] short sUtype);
 ```
 
-L'Unione nell'esempio precedente può contenere un solo valore, ovvero **short**, **float** o **char**. La definizione del tipo per l'Unione include l'attributo del **\_ tipo di opzione** MIDL che specifica il tipo di discriminante. Qui, \[ Switch \_ Type (Short) \] specifica che discriminante è di tipo **short**. L'opzione deve essere un tipo Integer.
+L'unione nell'esempio precedente può contenere un singolo valore: **short**, **float** o **char**. La definizione del tipo per l'unione include l'attributo del tipo **switch \_** MIDL che specifica il tipo di discriminante. In questo \[ caso, \_ switch type(short) \] specifica che il discriminante è di tipo **short.** L'opzione deve essere di tipo Integer.
 
-Se l'Unione è un membro di una struttura, discriminante deve essere un membro della stessa struttura. Se l'Unione è un parametro, discriminante deve essere un altro parametro. Il prototipo per la funzione **UnionParamProc** nell'esempio precedente mostra discriminante *sUtype* come ultimo parametro della chiamata. (Discriminante può essere visualizzato in qualsiasi posizione nella chiamata). Il tipo del parametro specificato nell' **\[ opzione \_ è \]** l'attributo deve corrispondere al tipo specificato nell'attributo **\[ Switch \_ Type \]** .
+Se l'unione è un membro di una struttura , il discriminante deve essere un membro della stessa struttura. Se l'unione è un parametro, il discriminante deve essere un altro parametro. Il prototipo per **la funzione UnionParamProc** nell'esempio precedente mostra lo *sUtype* discriminante come ultimo parametro della chiamata. Il discriminante può essere visualizzato in qualsiasi posizione nella chiamata. Il tipo del parametro specificato **\[ nell'opzione è l'attributo \_ \]** deve corrispondere al tipo specificato **\[ nell'attributo del \_ tipo di \]** opzione.
 
-Nell'esempio seguente viene illustrato l'utilizzo di una singola struttura che fornisce il pacchetto di discriminante con l'Unione:
+L'esempio seguente illustra l'uso di una singola struttura che consente di creare un pacchetto del discriminante con l'unione:
 
 ``` syntax
 typedef struct 
@@ -59,8 +59,8 @@ short UnionStructProc(
     [in] DISCRIM_UNION_STRUCT_TYPE u1);
 ```
 
-Il compilatore MIDL Microsoft RPC consente le dichiarazioni Union all'esterno dei costrutti [**typedef**](/windows/desktop/Midl/typedef) . Questa funzionalità è un'estensione di DCE IDL. Per ulteriori informazioni, vedere [**Unione**](/windows/desktop/Midl/union).
+Il compilatore MIDL RPC Microsoft consente dichiarazioni di unione all'esterno di [**costrutti typedef.**](/windows/desktop/Midl/typedef) Questa funzionalità è un'estensione di DCE IDL. Per altre informazioni, vedere [**union**](/windows/desktop/Midl/union).
 
- 
+ 
 
- 
+ 

@@ -1,17 +1,17 @@
 ---
 description: Contiene l'ora di inizio in cui un'origine multimediale viene riavviata dalla posizione corrente.
 ms.assetid: b598b4d1-40e1-4282-b312-5aa6ca3a6733
-title: Attributo MF_EVENT_SOURCE_ACTUAL_START (Mfapi. h)
+title: MF_EVENT_SOURCE_ACTUAL_START attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0132fd8fc50f4e71a3b5bb334bc528d86c04e50c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46ce39e8a9f90ad0cd7f0cbd590b32719ab10dbd8e498c396e86772ce333e94c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104837"
 ---
-# <a name="mf_event_source_actual_start-attribute"></a>\_ \_ \_ Attributo iniziale effettivo origine evento MF \_
+# <a name="mf_event_source_actual_start-attribute"></a>Attributo \_ MF EVENT \_ SOURCE \_ ACTUAL \_ START
 
 Contiene l'ora di inizio in cui un'origine multimediale viene riavviata dalla posizione corrente.
 
@@ -19,17 +19,17 @@ Contiene l'ora di inizio in cui un'origine multimediale viene riavviata dalla po
 
 **UINT64**
 
-Considera come valore **LONGLONG** .
+Considera come **valore LONGLONG.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene utilizzato con l'evento [MESourceStarted](mesourcestarted.md) . L'attributo è pertinente quando i dati dell'evento sono vuoti (**VT \_ vuoto**), che indica che l'origine multimediale è stata avviata dalla posizione di riproduzione corrente. In tal caso, l' **attributo \_ \_ \_ \_ Start effettivo dell'origine eventi MF** specifica l'ora di inizio effettiva. Se i dati dell'evento sono **VT \_ vuoti** e questo attributo non è impostato, si presuppone che l'ora di inizio sia zero.
+Questo attributo viene usato con [l'evento MESourceStarted.](mesourcestarted.md) L'attributo è rilevante quando i dati dell'evento sono vuoti (**VT \_ EMPTY**), che indica che l'origine multimediale è stata avviata dalla posizione di riproduzione corrente. In tal caso, **l'attributo \_ MF EVENT \_ SOURCE ACTUAL \_ \_ START** specifica l'ora di inizio effettiva. Se i dati dell'evento **sono VT \_ EMPTY** e questo attributo non è impostato, si presuppone che l'ora di inizio sia zero.
 
-Quando i dati dell'evento [MESourceStarted](mesourcestarted.md) contengono l'ora di inizio (**VT \_ i8**), questo attributo non deve essere impostato.
+Quando i [dati dell'evento MESourceStarted](mesourcestarted.md) contengono l'ora di inizio (**VT \_ I8),** questo attributo non deve essere impostato.
 
-Questo attributo è un valore con segno, sebbene venga archiviato come **UInt64**.
+Questo attributo è un valore con segno, anche se viene archiviato come **UINT64.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,16 +47,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

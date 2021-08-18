@@ -4,7 +4,7 @@ description: Recupera le opzioni impostate per un canale virtuale.
 ms.assetid: d2ec9fb2-c0dc-49f1-a86b-d7abca13a322
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetVirtualChannelOptions
+- Metodo GetVirtualChannelOptions Servizi Desktop remoto
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient
 - Interfaccia IMsRdpClient Servizi Desktop remoto, metodo GetVirtualChannelOptions
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient2
@@ -16,7 +16,7 @@ keywords:
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient5
 - Interfaccia IMsRdpClient5 Servizi Desktop remoto, metodo GetVirtualChannelOptions
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, metodo GetVirtualChannelOptions
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto metodo , GetVirtualChannelOptions
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient7
 - Interfaccia IMsRdpClient7 Servizi Desktop remoto, metodo GetVirtualChannelOptions
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient8
@@ -24,7 +24,7 @@ keywords:
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient9
 - Interfaccia IMsRdpClient9 Servizi Desktop remoto, metodo GetVirtualChannelOptions
 - Metodo GetVirtualChannelOptions Servizi Desktop remoto, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, metodo GetVirtualChannelOptions
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto metodo , GetVirtualChannelOptions
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71548002ebc67dae8dc1a49e8144da3de608afb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70d51ad6ccd1924c78817f76f385d65e1963b68c1b1329c3d6ba924f25a827a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059089"
 ---
-# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>Metodo IMsRdpClient:: GetVirtualChannelOptions
+# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>Metodo IMsRdpClient::GetVirtualChannelOptions
 
 Recupera le opzioni impostate per un canale virtuale.
 
@@ -71,27 +71,27 @@ HRESULT GetVirtualChannelOptions(
 
 <dl> <dt>
 
-*Channame* \[ in\]
+*ChanName* \[ Pollici\]
 </dt> <dd>
 
-Nome di un canale virtuale specificato nella chiamata al metodo [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .
+Nome di un canale virtuale specificato nella chiamata al [**metodo CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 </dd> <dt>
 
-*pChanOptions* \[ out\]
+*pChanOptions* \[ Cambio\]
 </dt> <dd>
 
-Opzioni impostate per il canale virtuale specificato dal parametro *channame* . Per una descrizione delle possibili opzioni, vedere [**Channel \_ def**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def).
+Opzioni impostate per il canale virtuale specificato dal *parametro ChanName.* Per una descrizione delle opzioni possibili, vedere [**CHANNEL \_ DEF.**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,7 +103,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient è definito come 92b4a539-7115-4B7C-a5a9-e5d9efc2780a<br/>        |
+| IID<br/>                      | IID \_ IMsRdpClient è definito come 92b4a539-7115-4b7c-a5a9-e5d9efc2780a<br/>        |
 
 
 
@@ -141,7 +141,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 [**IMsRdpClient10**](imsrdpclient10.md)
 </dt> <dt>
 
-[**\_def canale**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
+[**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
 </dt> <dt>
 
 [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)

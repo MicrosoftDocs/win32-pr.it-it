@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixLookAtLH (D3dx9math.h): compila una matrice di tipo left-handed e look-at.'
+description: 'Funzione D3DXMatrixLookAtLH (D3dx9math.h): crea una matrice di tipo left-handed e look-at.'
 ms.assetid: bf34d3d8-725d-4fc1-b4c8-6c98f9dac329
 title: Funzione D3DXMatrixLookAtLH (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 94a423e700c4a42e2ae7f7e522d83a5a4bd9bf3a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32907d972a9f53eafeea4183d7c7152a922f589ec75bd9a1d378a2ed433f02f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044839"
 ---
 # <a name="d3dxmatrixlookatlh-function-d3dx9mathh"></a>Funzione D3DXMatrixLookAtLH (D3dx9math.h)
 
-Compila una matrice di tipo left-handed e look-at.
+Compila una matrice di tipo left-handed.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risu
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punto dell'occhio. Questo valore viene usato nella conversione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punto dell'occhio. Questo valore viene usato nella traduzione.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punt
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di ricerca della fotocamera.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di sguardo della fotocamera.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la dest
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il mondo corrente verso l'alto, in genere \[ 0, 1, \] 0.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce l'oggetto corrente, in genere \[ 0, 1, \] 0.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il mond
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è una matrice di tipo left-handed.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta una matrice di tipo left-handed.
 
 ## <a name="remarks"></a>Commenti
 

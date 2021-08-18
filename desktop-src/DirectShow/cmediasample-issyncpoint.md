@@ -1,7 +1,7 @@
 ---
-description: "Il metodo IsSyncPoint determina se l'inizio dell'esempio è un punto di sincronizzazione. Questo metodo implementa il metodo IMediaSample:: IsSyncPoint."
+description: Il metodo IsSyncPoint determina se l'inizio dell'esempio è un punto di sincronizzazione. Questo metodo implementa il metodo IMediaSample::IsSyncPoint.
 ms.assetid: e57f78f4-7bb9-4e23-bcb4-55ad7ab5482c
-title: Metodo CMediaSample. IsSyncPoint (Amfilter. h)
+title: Metodo CMediaSample.IsSyncPoint (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b8cc93c03ce3b864e1c1b0a5794d711b1b0c3d68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00d238bb9289ba71237bfdf8e72acde384430f72470f16211093cb2ece8d68f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074005"
 ---
-# <a name="cmediasampleissyncpoint-method"></a>CMediaSample. IsSyncPoint, metodo
+# <a name="cmediasampleissyncpoint-method"></a>Metodo CMediaSample.IsSyncPoint
 
-Il `IsSyncPoint` metodo determina se l'inizio dell'esempio è un punto di sincronizzazione. Questo metodo implementa il metodo [**IMediaSample:: IsSyncPoint**](/windows/desktop/api/Strmif/nf-strmif-imediasample-issyncpoint) .
+Il `IsSyncPoint` metodo determina se l'inizio dell'esempio è un punto di sincronizzazione. Questo metodo implementa il [**metodo IMediaSample::IsSyncPoint.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-issyncpoint)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se l'esempio è un punto di sincronizzazione, oppure S \_ false in caso contrario.
+Restituisce S \_ OK se l'esempio è un punto di sincronizzazione oppure S \_ FALSE in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) specifica questa proprietà.
+La [**variabile membro CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) specifica questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-fonetica-Last-Name
-description: Contiene il Cognome fonetico della persona.
+title: Attributo ms-DS-Phonetic-Last-Name
+description: Contiene il cognome fonetico della persona.
 ms.assetid: 43c98f1c-b72c-4f59-a6a0-d2083bd8f1bb
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-fonetico-Last-Name
-- attributo msDS-PhoneticLastName-schema AD
+- Attributo ms-DS-Phonetic-Last-Name Schema di AD
+- Schema AD dell'attributo msDS-PhoneticLastName
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e99efd849cb61dd31c3f0ea09f052133950188eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aa71a7cdfe4ca08f5a43f40f45ca2d29fddcea527610d3903aa096af053a1982
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960640"
 ---
-# <a name="ms-ds-phonetic-last-name-attribute"></a>attributo ms-DS-fonetica-Last-Name
+# <a name="ms-ds-phonetic-last-name-attribute"></a>Attributo ms-DS-Phonetic-Last-Name
 
-Contiene il Cognome fonetico della persona.
+Contiene il cognome fonetico della persona.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-fonetica-ultimo nome                    |
-| LDAP-Display-Name | msDS-PhoneticLastName                       |
+| CN                | ms-DS-Phonetic-Last-Name                    |
+| Ldap-Display-Name | msDS-PhoneticLastName                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1943                     |
-| System-ID-GUID    | f217e4ec-0836-4b90-88af-2f5d4bbda2bc        |
+| System-Id-Guid    | f217e4ec-0836-4b90-88af-2f5d4bbda2bc        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Contiene il Cognome fonetico della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il Cognome fonetico della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il Cognome fonetico della persona.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

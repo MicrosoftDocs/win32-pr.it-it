@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi del contatore di processi. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi del contatore del processo. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 7f1fa1c4-a2ff-4a1c-ac9d-e922a13c99a1
-title: Classe Process_V2_TypeGroup2
+title: Process_V2_TypeGroup2 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,16 +27,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 284b77da03b53f9c2662c8729a7bf6606c45630a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51c24e12ed423b6240daeefee0b69a40f9b14b86813ca83cb09f74f807e24429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069951"
 ---
-# <a name="process_v2_typegroup2-class"></a>\_ \_ Classe TypeGroup2 del processo V2
+# <a name="process_v2_typegroup2-class"></a>Elaborare \_ la classe \_ TypeGroup2 V2
 
-Questa classe è la classe del tipo di evento per gli eventi del contatore di processi.
+Questa classe è la classe del tipo di evento per gli eventi del contatore del processo.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -66,42 +66,42 @@ class Process_V2_TypeGroup2 : Process_V2
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ TypeGroup2 del processo v2** presenta questi tipi di membri:
+La **classe \_ \_ TypeGroup2 process V2** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Process \_ v2 \_ TypeGroup2** ha queste proprietà.
+La **classe \_ \_ TypeGroup2 process V2** ha queste proprietà.
 
 <dl> <dt>
 
 **HandleCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Conteggio degli handle utilizzati.
+Numero di handle usati.
 
 </dd> <dt>
 
 **PageFaultCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Numero di errori di pagina.
@@ -111,173 +111,173 @@ Numero di errori di pagina.
 **PagefileUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (12), estensione ("SizeT")
+Qualificatori: WmiDataId(12), Extension("SizeT")
 </dt> </dl>
 
-Utilizzo del file di paging corrente.
+Utilizzo corrente del file di pagina.
 
 </dd> <dt>
 
 **PeakPagefileUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7), estensione ("SizeT")
+Qualificatori: WmiDataId(7), Extension("SizeT")
 </dt> </dl>
 
-Dimensioni massime del file di paging utilizzate.
+Dimensioni massime del file di pagina usate.
 
 </dd> <dt>
 
 **PeakVirtualSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), estensione ("SizeT")
+Qualificatori: WmiDataId(5), Extension("SizeT")
 </dt> </dl>
 
-Dimensioni massime della pagina virtuale utilizzate.
+Dimensioni della pagina virtuale più grandi usate.
 
 </dd> <dt>
 
 **PeakWorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), estensione ("SizeT")
+Qualificatori: WmiDataId(6), Extension("SizeT")
 </dt> </dl>
 
-Dimensioni massime working set utilizzate.
+Dimensioni working set dimensioni usate.
 
 </dd> <dt>
 
 **PrivatePageCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (15), estensione ("SizeT")
+Qualificatori: WmiDataId(15), Extension("SizeT")
 </dt> </dl>
 
-Conteggio delle pagine fisiche private correnti.
+Numero corrente di pagine fisiche private.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Format ("x")
+Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificatore di processo globale che è possibile utilizzare per identificare un processo. Il valore è valido dal momento in cui un processo viene creato fino a quando non viene terminato.
+Identificatore di processo globale che è possibile usare per identificare un processo. Il valore è valido dal momento in cui un processo viene creato fino a quando non viene terminato.
 
 </dd> <dt>
 
 **QuotaNonPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (14), estensione ("SizeT")
+Qualificatori: WmiDataId(14), Extension("SizeT")
 </dt> </dl>
 
-Utilizzo di memoria non di paging corrente.
+Utilizzo corrente della memoria non di pagine di cui è stato eseguito il commit.
 
 </dd> <dt>
 
 **QuotaPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (13), estensione ("SizeT")
+Qualificatori: WmiDataId(13), Extension("SizeT")
 </dt> </dl>
 
-Utilizzo corrente della memoria di paging vincolato.
+Utilizzo corrente della memoria di pagine di cui è stato eseguito il commit.
 
 </dd> <dt>
 
 **QuotaPeakNonPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (9), estensione ("SizeT")
+Qualificatori: WmiDataId(9), Extension("SizeT")
 </dt> </dl>
 
-Memoria non di paging più grande utilizzata.
+Memoria non di pagina di cui è stato eseguito il commit più grande usata.
 
 </dd> <dt>
 
 **QuotaPeakPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8), estensione ("SizeT")
+Qualificatori: WmiDataId(8), Extension("SizeT")
 </dt> </dl>
 
-Memoria di paging più grande utilizzata.
+Memoria di pagine di cui è stato eseguito il commit maggiore usata.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
 Riservato.
@@ -287,13 +287,13 @@ Riservato.
 **VirtualSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (10), estensione ("SizeT")
+Qualificatori: WmiDataId(10), Extension("SizeT")
 </dt> </dl>
 
 Dimensioni correnti della pagina virtuale.
@@ -303,22 +303,22 @@ Dimensioni correnti della pagina virtuale.
 **WorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (11), estensione ("SizeT")
+Qualificatori: WmiDataId(11), Extension("SizeT")
 </dt> </dl>
 
-Dimensioni correnti del working set.
+Dimensioni working set corrente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questi eventi vengono registrati al termine del processo. L'evento indica il modo in cui un processo ha gestito l'utilizzo della memoria.
+Questi eventi vengono registrati al termine del processo. L'evento indica come un processo ha gestito l'utilizzo della memoria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -326,8 +326,8 @@ Questi eventi vengono registrati al termine del processo. L'evento indica il mod
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -335,7 +335,7 @@ Questi eventi vengono registrati al termine del processo. L'evento indica il mod
 
 <dl> <dt>
 
-[**Processo \_ v2**](process-v2.md)
+[**Processo \_ V2**](process-v2.md)
 </dt> </dl>
 
  

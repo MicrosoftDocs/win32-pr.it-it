@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetAddColumn'
+description: Altre informazioni sulla funzione JetAddColumn
 title: Funzione JetAddColumn
 TOCTitle: JetAddColumn Function
 ms:assetid: e146f784-2cbd-42c0-bf64-b37dc6f9ee43
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1b8c3eac113daeae43ec4a8e62b7fcda9ddbf9f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c1c70ab6510d2e63cc1b59e94ae058565937e854968b7ba05e2710ba22aa6af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979051"
 ---
 # <a name="jetaddcolumn-function"></a>Funzione JetAddColumn
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetaddcolumn-function"></a>Funzione JetAddColumn
 
-La funzione **JetAddColumn** aggiunge una nuova colonna a una tabella esistente in un database ESE.
+La **funzione JetAddColumn** aggiunge una nuova colonna a una tabella esistente in un database ESE.
 
 ```cpp
     JET_ERR JET_API JetAddColumn(
@@ -54,43 +54,43 @@ La funzione **JetAddColumn** aggiunge una nuova colonna a una tabella esistente 
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*TableID*
+*tableid*
 
-Tabella alla quale aggiungere la colonna.
+Tabella a cui aggiungere la colonna.
 
 *szColumnName*
 
 Nome della colonna da aggiungere. Il nome deve soddisfare i criteri seguenti:
 
-  - Deve avere una lunghezza inferiore a JET_cbNameMost caratteri, escluso il carattere **null** di terminazione.
+  - La lunghezza deve essere inferiore JET_cbNameMost caratteri, senza includere l'oggetto NULL di **terminazione.**
 
-  - Deve contenere solo caratteri dei set seguenti: da 0 a 9, da A A Z, da a a z e da tutti gli altri segni di punteggiatura, ad eccezione di punto esclamativo ( \! ), virgola (,), parentesi quadra aperta ( \[ ) e parentesi quadra chiusa ( \] ), ovvero caratteri ASCII 0x20, 0x22 tramite 0x2D, 0x2F tramite 0x5A, 0x5c e 0x5D tramite 0x7F.
+  - Deve contenere caratteri solo dai set seguenti: da 0 a 9, da A a Z, da a a z e da tutti gli altri segni di punteggiatura ad eccezione del punto esclamativo ( ), della virgola (,), della parentesi di apertura ( ) e della parentesi di chiusura ( ), ovvero i caratteri ASCII 0x20, 0x22 fino a 0x2d, da 0x2f a 0x5a, 0x5c e 0x5d tramite \! \[ \] 0x7f.
 
   - Non può iniziare con uno spazio.
 
-  - Deve contenere almeno un carattere diverso dallo spazio.
+  - Deve contenere almeno un carattere non spazio.
 
 *pcolumndef*
 
-Puntatore a una struttura [JET_COLUMNDEF](./jet-columndef-structure.md) , che definisce i dati che possono essere archiviati in una colonna.
+Puntatore a una [JET_COLUMNDEF](./jet-columndef-structure.md) struttura che definisce i dati che possono essere archiviati in una colonna.
 
 *pvDefault*
 
-Puntatore a un buffer che contiene il valore predefinito per la colonna. La lunghezza del buffer è **cbDefault**. Se non è disponibile alcun valore predefinito, impostare **pvDefault** su **null** e **cbDefault** su zero. I valori predefiniti non possono essere maggiori di JET_cbColumnMost byte per le colonne fisse o JET_cbLVDefaultValueMost byte per i valori Long. Se un valore predefinito è maggiore, verrà troncato automaticamente.
+Puntatore a un buffer che contiene il valore predefinito per la colonna. La lunghezza del buffer è **cbDefault**. Se non è presente alcun valore predefinito, impostare **pvDefault** su **NULL** e **cbDefault** su zero. I valori predefiniti non possono essere maggiori di JET_cbColumnMost byte per le colonne fisse o JET_cbLVDefaultValueMost byte per i valori long. Se un valore predefinito è maggiore di questo, verrà troncato automaticamente.
 
-Se *grbit* ha JET_bitColumnUserDefinedDefault set, **pvDefault** verrà interpretato come un puntatore a una struttura di [JET_USERDEFINEDDEFAULT](./jet-userdefineddefault-structure.md) .
+Se *grbit* ha JET_bitColumnUserDefinedDefault impostato, **pvDefault** verrà interpretato come puntatore a una [JET_USERDEFINEDDEFAULT](./jet-userdefineddefault-structure.md) struttura.
 
 *cbDefault*
 
-Dimensione, in byte, del buffer specificato in **pvDefault**.
+Dimensione, in byte, del buffer specificato in **pvDefault.**
 
-*pColumnID*
+*pcolumnid*
 
-Puntatore a una struttura [JET_COLUMNID](./jet-columnid.md) , che, in esito positivo, riceverà l'identificatore della colonna appena creata. In caso di errore, il valore non è definito.
+Puntatore a una [JET_COLUMNID](./jet-columnid.md) struttura che, in caso di esito positivo, riceverà l'identificatore della colonna appena creata. In caso di errore, il valore non è definito.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Errori del motore Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -114,15 +114,15 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Un parametro non valido è stato passato nell'API. Alcuni esempi di parametri non validi sono:</p>
+<td><p>Nell'API è stato passato un parametro non valido. Di seguito sono riportati alcuni esempi di parametri non validi:</p>
 <ul>
-<li><p>Il passaggio della dimensione non corretta della struttura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> nel membro <em>cbStruct</em> .</p></li>
-<li><p>Passando JET_bitColumnUserDefinedDefault, ma non impostando <strong>cbDefault</strong> su sizeof (<a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a>).</p></li>
+<li><p>Passaggio delle dimensioni erre della <a href="gg294130(v=exchg.10).md">struttura JET_COLUMNDEF</a> nel relativo <em>membro cbStruct.</em></p></li>
+<li><p>Passando JET_bitColumnUserDefinedDefault, ma non impostando <strong>cbDefault</strong> su sizeof(<a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a>).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInTransaction</p></td>
-<td><p>È stato effettuato un tentativo di aggiungere una colonna con il bit JET_bitColumnUnversioned set, ma la sessione è attualmente in una transazione.</p></td>
+<td><p>È stato effettuato un tentativo di aggiungere una colonna con JET_bitColumnUnversioned bit impostato, ma la sessione è attualmente in una transazione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errColumnDuplicate</p></td>
@@ -130,93 +130,93 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errTableNotEmpty</p></td>
-<td><p>La tabella contiene dati. Una colonna di aggiornamento del deposito può essere aggiunta solo a una tabella vuota.</p></td>
+<td><p>La tabella contiene dati. Una colonna Escrow Update può essere aggiunta solo a una tabella vuota.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errRecordTooBig</p></td>
-<td><p>Il record è troppo grande. La somma del parametro <strong>cbMax</strong> per le colonne fisse non deve superare un determinato valore.</p></td>
+<td><p>Il record è troppo grande. La somma del <strong>parametro cbMax</strong> per le colonne fisse non deve superare un determinato valore.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTooManyColumns</p></td>
-<td><p>È stato effettuato un tentativo di aggiungere un numero eccessivo di colonne alla tabella. Una tabella non può contenere più di JET_ccolFixedMost colonne fisse, non più di JET_ccolVarMost colonne a lunghezza variabile e non più di JET_ccolTaggedMost colonne con tag.</p></td>
+<td><p>È stato effettuato un tentativo di aggiungere troppe colonne alla tabella. Una tabella non può avere più di JET_ccolFixedMost fisse, non più di JET_ccolVarMost colonne a lunghezza variabile e non più di JET_ccolTaggedMost colonne con tag.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errColumnRedundant</p></td>
-<td><p>È stato effettuato un tentativo di aggiungere una colonna ridondante. Non deve essere presente più di una colonna AutoIncrement e non più di una colonna versione per tabella.</p></td>
+<td><p>È stato effettuato un tentativo di aggiungere una colonna ridondante. Non deve essere presente più di una colonna di ridimensionamento automatico e non più di una colonna di versione per ogni tabella.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errCallbackNotResolved</p></td>
-<td><p>Non è stato possibile risolvere la funzione di callback. È possibile che la DLL non sia stata trovata o che la funzione nella DLL non sia stata trovata. Se è abilitata la registrazione sufficiente, nel registro eventi vengono forniti ulteriori dettagli.</p></td>
+<td><p>Impossibile risolvere la funzione di callback. È possibile che la DLL non sia stata trovata o che la funzione nella DLL non sia stata trovata. Il registro eventi fornirà altri dettagli se è abilitata una registrazione sufficiente.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_wrnColumnMaxTruncated</p></td>
-<td><p>Avviso che indica che la lunghezza massima (<strong>cbMax</strong>) di una colonna fissa o variabile è maggiore della JET_cbColumnMost. Questo limite non si applica ai valori Long (ovvero <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> e <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></td>
+<td><p>Avviso che indica che la lunghezza massima (<strong>cbMax</strong>) di una colonna fissa o variabile è maggiore di JET_cbColumnMost. Questo limite non si applica ai valori long ( ovvero JET_coltypLongBinary <a href="gg269213(v=exchg.10).md">e</a> <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidName</p></td>
-<td><p>Un nome non valido è stato passato come <strong>szColumnName</strong>. Per ulteriori informazioni sulle restrizioni, vedere i criteri per <strong>szColumnName</strong>.</p></td>
+<td><p>È stato passato un nome non valido <strong>come szColumnName</strong>. Per altre informazioni sulle restrizioni, vedere i criteri per <strong>szColumnName</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidColumnType</p></td>
-<td><p>Il campo <strong>coltyp</strong> non è stato impostato su un tipo di colonna valido.</p></td>
+<td><p>Il <strong>campo coltyp</strong> non è stato impostato su un tipo di colonna valido.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidCodePage</p></td>
-<td><p>Il parametro <strong>CP</strong> della struttura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> non è stato impostato su una tabella codici valida. Gli unici valori validi per le colonne di testo sono English (1252) e Unicode (1200). Il valore 0 indica che verrà utilizzata l'impostazione predefinita (inglese, 1252).</p></td>
+<td><p>Il <strong>parametro cp</strong> della struttura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> non è stato impostato su una tabella codici valida. Gli unici valori validi per le colonne di testo sono Inglese (1252) e Unicode (1200). Il valore 0 indica che verrà usato il valore predefinito (inglese, 1252).</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTaggedNotNULL</p></td>
-<td><p>Non è possibile usare JET_bitColumnNotNULL con colonne con tag, Long Value o SLV.</p></td>
+<td><p>JET_bitColumnNotNULL non può essere usato con colonne con tag, valore lungo o SLV.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidgrbit</p></td>
-<td><p>È stata specificata una combinazione non valida di <em>grbits</em> . Di seguito sono riportati alcuni dei motivi di questo errore:</p>
+<td><p>È stata specificata una combinazione <em>di grbit non</em> valida. Alcuni dei motivi di questo errore sono:</p>
 <ul>
-<li><p>JET_bitColumnFixed è stato utilizzato in una colonna con tag, Long Value o SLV.</p></li>
-<li><p>JET_bitColumnEscrowUpdate è stato utilizzato in una colonna non di tipo <a href="gg269213(v=exchg.10).md">JET_coltypLong</a>.</p></li>
-<li><p>JET_bitColumnEscrowUpdate è stato utilizzato in una colonna versione (JET_bitColumnVersion).</p></li>
-<li><p>JET_bitColumnEscrowUpdate è stato usato in una colonna AutoIncrememnt (JET_bitColumnAutoincrement).</p></li>
-<li><p>JET_bitColumnEscrowUpdate è stato utilizzato in una colonna che non disponeva di un valore predefinito (<strong>cbDefault</strong> era uguale a zero).</p></li>
-<li><p>JET_bitColumnFinalize è stato utilizzato in una colonna che non è una colonna di aggiornamento del deposito (JET_bitColumnEscrowUpdate non è stato impostato).</p></li>
-<li><p>JET_bitColumnDeleteOnZero è stato utilizzato in una colonna che non è una colonna di aggiornamento del deposito (JET_bitColumnEscrowUpdate non è stato impostato).</p></li>
-<li><p>JET_bitColumnAutoincrement è stato utilizzato in una colonna che non è stata <a href="gg269213(v=exchg.10).md">JET_coltypLong</a>.</p>
-<p><strong>Windows 2000:  </strong> Questo motivo del codice di errore viene usato solo in Windows 2000.</p>
-<p>JET_bitColumnAutoincrement è stato utilizzato in una colonna non <a href="gg269213(v=exchg.10).md">JET_coltypLong</a> né <a href="gg269213(v=exchg.10).md">JET_coltypCurrencyta</a>.</p>
-<p><strong>Windows XP:  </strong> Questo motivo del codice di errore viene utilizzato in Windows XP e nei sistemi operativi successivi.</p></li>
-<li><p>JET_bitColumnVersion è stato utilizzato in una colonna che non è stata <a href="gg269213(v=exchg.10).md">JET_coltypLong</a>.</p></li>
-<li><p>JET_bitColumnVersion è stato utilizzato in una colonna AutoIncrement.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnFixed.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnNotNULL.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnVersion.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnAutoincrement.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnUpdatable.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnEscrowUpdate.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnFinalize.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnDeleteOnZero.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault utilizzata insieme a JET_bitColumnMaybeNull.</p></li>
-<li><p>JET_bitColumnUserDefinedDefault è stato utilizzato in una colonna non contrassegnata (che è fissa o variabile).</p></li>
+<li><p>JET_bitColumnFixed usato in una colonna con tag, valore lungo o SLV.</p></li>
+<li><p>JET_bitColumnEscrowUpdate usato in una colonna che non era di tipo <a href="gg269213(v=exchg.10).md">JET_coltypLong</a>.</p></li>
+<li><p>JET_bitColumnEscrowUpdate usato in una colonna Versione (JET_bitColumnVersion).</p></li>
+<li><p>JET_bitColumnEscrowUpdate usato in una colonna AutoIncrememnt (JET_bitColumnAutoincrement).</p></li>
+<li><p>JET_bitColumnEscrowUpdate usato in una colonna che non ha un valore predefinito (<strong>cbDefault</strong> è uguale a zero).</p></li>
+<li><p>JET_bitColumnFinalize è stato usato in una colonna che non era una colonna Escrow Update (JET_bitColumnEscrowUpdate non è stata impostata).</p></li>
+<li><p>JET_bitColumnDeleteOnZero è stato usato in una colonna che non era una colonna Escrow Update (JET_bitColumnEscrowUpdate non è stata impostata).</p></li>
+<li><p>JET_bitColumnAutoincrement usato in una colonna non JET_coltypLong <a href="gg269213(v=exchg.10).md">.</a></p>
+<p><strong>Windows 2000:</strong> Questo motivo per il codice di errore viene usato solo in Windows 2000.</p>
+<p>JET_bitColumnAutoincrement usato in una colonna che non era né JET_coltypLong <a href="gg269213(v=exchg.10).md">né</a> <a href="gg269213(v=exchg.10).md">JET_coltypCurrency</a>.</p>
+<p><strong>Windows XP:</strong> Questo motivo per il codice di errore viene usato in Windows XP e nei sistemi operativi successivi.</p></li>
+<li><p>JET_bitColumnVersion usato in una colonna non JET_coltypLong <a href="gg269213(v=exchg.10).md">.</a></p></li>
+<li><p>JET_bitColumnVersion usato in una colonna di ridimensionamento automatico.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnFixed.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnNotNULL.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnVersion.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnAutoincrement.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnUpdatable.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnEscrowUpdate.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnFinalize.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnDeleteOnZero.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault usato in combinazione con JET_bitColumnMaybeNull.</p></li>
+<li><p>JET_bitColumnUserDefinedDefault è stato usato in una colonna senza tag (che è fissa o variabile).</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errMultiValuedColumnMustBeTagged</p></td>
-<td><p>Una colonna multivalore (JET_bitColumnMultiValued) può essere utilizzata solo in una colonna con tag o valori Long (<a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></td>
+<td><p>Una colonna multivalore (JET_bitColumnMultiValued) può essere usata solo in una colonna con tag o valore lungo (<a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> <a href="gg269213(v=exchg.10).md">o JET_coltypLongText</a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errCannotBeTagged</p></td>
-<td><p>Si è tentato di usare una colonna con tag quando è possibile che la colonna non sia contrassegnata con tag. Alcuni dei vincoli per la disabilitazione delle colonne con tag sono:</p>
+<td><p>È stato effettuato un tentativo di usare una colonna con tag quando la colonna potrebbe non essere contrassegnata. Alcuni dei vincoli per non consentire le colonne con tag sono:</p>
 <ul>
-<li><p>Una colonna di aggiornamento del deposito (JET_bitColumnEscrowUpdate) non può essere usata in una colonna con tag o valori Long (<a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></li>
-<li><p>Una colonna AutoIncrement potrebbe non essere contrassegnata con tag.</p></li>
-<li><p>Una colonna versione potrebbe non essere contrassegnata con tag.</p></li>
+<li><p>Non è possibile usare una colonna escrow update (JET_bitColumnEscrowUpdate) in una colonna con tag o long value<a href="gg269213(v=exchg.10).md">(JET_coltypLongBinary</a> <a href="gg269213(v=exchg.10).md">o JET_coltypLongText</a>).</p></li>
+<li><p>Una colonna diincremento automatico potrebbe non essere contrassegnata.</p></li>
+<li><p>Una colonna Versione potrebbe non essere contrassegnata.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errExclusiveTableLockRequired</p></td>
-<td><p>Per questa operazione è necessario un blocco esclusivo sulla tabella.</p></td>
+<td><p>Per questa operazione era necessario un blocco esclusivo sulla tabella.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_wrnColumnMaxTruncated</p></td>
-<td><p>Avviso che indica che la lunghezza massima (<em>cbMax</em>) di una colonna fissa o variabile è maggiore della JET_cbColumnMost. Questo limite non si applica ai valori Long (ovvero <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> e <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></td>
+<td><p>Avviso che indica che la lunghezza massima (<em>cbMax</em>) di una colonna fissa o variabile è maggiore di JET_cbColumnMost. Questo limite non si applica ai valori long ( ovvero JET_coltypLongBinary <a href="gg269213(v=exchg.10).md">e</a> <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -240,11 +240,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

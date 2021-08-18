@@ -3,19 +3,19 @@ title: IUniversalOrchestrator::WorkCompleted
 description: Chiama Universal Orchestrator per indicare che il lavoro è stato completato
 ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: e36a3ba744df807abbebc6332ac8433010afd667
-ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
+ms.openlocfilehash: 5094ae864b4df9a3dd53b90c3b7d099a206a0ad8db1d1176b603b5ba45ca8194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966075"
 ---
 # <a name="iuniversalorchestratorworkcompleted-method"></a>Metodo IUniversalOrchestrator::WorkCompleted
 
 > [!NOTE] 
 > Questa API appartiene all'API Universal Orchestrator.
 
-Consente ai client di informare Universal Orchestrator che il lavoro pianificato in precedenza è stato completato e di arrestare i callback per l'esecuzione del lavoro fino alla successiva chiamata ScheduleWork riuscita.
+Consente ai client di informare Universal Orchestrator che il lavoro pianificato in precedenza è stato completato e di arrestare i callback per eseguire il lavoro fino alla successiva chiamata scheduleWork riuscita.
 
 ## <a name="syntax"></a>Sintassi
 

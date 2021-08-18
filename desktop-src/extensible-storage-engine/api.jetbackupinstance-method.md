@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetBackupInstance'
-title: API. JetBackupInstance, metodo
+description: 'Altre informazioni su: Metodo Api.JetBackupInstance'
+title: Metodo Api.JetBackupInstance
 TOCTitle: 'JetBackupInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetBackupInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String,Microsoft.Isam.Esent.Interop.BackupGrbit,Microsoft.Isam.Esent.Interop.JET_PFNSTATUS)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetbackupinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 73c5b44f1f0b69aaed6066635ad4e82690bc3c37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a4b9ef9fbedce13b9c68940fc45204a35c1113e9551034fa57ed6948f4fa5e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983651"
 ---
-# <a name="apijetbackupinstance-method"></a>API. JetBackupInstance, metodo
+# <a name="apijetbackupinstance-method"></a>Metodo Api.JetBackupInstance
 
-Esegue un backup di flusso di un'istanza, inclusi tutti i database collegati, in una directory. Con più metodi di backup supportati dal motore di, questa è la funzione più semplice e incapsulata.
+Esegue un backup di flusso di un'istanza di , inclusi tutti i database collegati, in una directory. Con più metodi di backup supportati dal motore, questa è la funzione più semplice e incapsulata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,30 +68,30 @@ public static void JetBackupInstance(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     Istanza di di cui eseguire il backup.
 
 <!-- end list -->
 
   - destination  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Directory in cui deve essere archiviato il backup. Se il percorso di backup è null per usare la funzione, i log vengono troncati, se possibile.
+    Directory in cui deve essere archiviato il backup. Se il percorso di backup è Null per usare la funzione, i log verranno troncati, se possibile.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. BackupGrbit](./backupgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.BackupGrbit](./backupgrbit-enumeration.md)  
     
     Opzioni di backup.
 
 <!-- end list -->
 
-  - statusCallback  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
+  - StatusCallback  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
     
-    Callback facoltativo della notifica di stato.
+    Callback di notifica dello stato facoltativo.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -99,6 +99,6 @@ public static void JetBackupInstance(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

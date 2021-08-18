@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_SNPROG. Equals (metodo)'
-title: JET_SNPROG. Equals (metodo)
+description: 'Altre informazioni su: JET_SNPROG. Metodo Equals'
+title: JET_SNPROG. Metodo Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_SNPROG.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snprog.equals(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3c4523385ecf425fe63a0b1b6235182d917bbc94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 070652336c264af1d4e091889ed7159b89411010347ae0042ecaca8633afc24c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979281"
 ---
-# <a name="jet_snprogequals-method"></a>JET_SNPROG. Equals (metodo)
+# <a name="jet_snprogequals-method"></a>JET_SNPROG. Metodo Equals
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn351052(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object. Equals (Object)</a>.</td>
+<td><a href="dn351052(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di . Esegue l'override <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">di Object.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn351091(v=exchg.10).md">Uguale a (JET_SNPROG)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
+<td><a href="dn351091(v=exchg.10).md">Equals(JET_SNPROG)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .</td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_SNPROG](./jet-snprog-class.md)
+[JET_SNPROG classe](./jet-snprog-class.md)
 
-[Membri JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG membri](./jet-snprog-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

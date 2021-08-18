@@ -1,37 +1,37 @@
 ---
-title: Uso di gestione riavvio con un programma di installazione secondario
-description: Nella procedura riportata di seguito viene descritto l'utilizzo di gestione riavvio con i programmi di installazione primari e secondari.
+title: Uso di Gestione riavvio con un programma di installazione secondario
+description: La procedura seguente descrive l'uso di Gestione riavvio con i programmi di installazione primari e secondari.
 ms.assetid: aa55ab09-206b-49ed-8cb4-e311c1ed2d9d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb44105d9f3d391bb2ed793aca8a6da2c330b30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aefb1f9658752677e7850e939fcb6a3c4c6047c5efc2dc0ceb06ec0f51900ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009989"
 ---
-# <a name="using-restart-manager-with-a-secondary-installer"></a>Uso di gestione riavvio con un programma di installazione secondario
+# <a name="using-restart-manager-with-a-secondary-installer"></a>Uso di Gestione riavvio con un programma di installazione secondario
 
-Nella procedura riportata di seguito viene descritto l'utilizzo di gestione riavvio con i programmi di installazione primari e secondari.
+La procedura seguente descrive l'uso di Gestione riavvio con i programmi di installazione primari e secondari.
 
-Quando si usano programmi di installazione primari e secondari, il programma di installazione principale controlla l'interfaccia utente.
+Quando si usano programmi di installazione primari e secondari, il programma di installazione primario controlla l'interfaccia utente.
 
-**Per usare Gestione riavvio con i programmi di installazione primari e secondari**
+**Per usare Gestione riavvio con programmi di installazione primari e secondari**
 
-1.  Il programma di installazione principale chiama la funzione [**RmStartSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession) per avviare la sessione di gestione riavvio e ottenere un handle di sessione e una chiave.
-2.  Il programma di installazione primario avvia o Contatta il programma di installazione secondario e lo fornisce alla chiave di sessione ottenuta nel passaggio precedente.
-3.  Il programma di installazione secondario chiama la funzione [**RmJoinSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmjoinsession) con la chiave della sessione per partecipare alla sessione di gestione riavvio. Un programma di installazione secondario può partecipare a una sessione avviata dal programma di installazione primario solo quando entrambi i programmi di installazione vengono eseguiti nello stesso contesto utente.
-4.  I programmi di installazione primari e secondari chiamano la funzione [**RmRegisterResources**](/windows/desktop/api/RestartManager/nf-restartmanager-rmregisterresources) per registrare le risorse. Gestione riavvio può utilizzare solo le risorse registrate per determinare quali applicazioni e servizi devono essere arrestati e riavviati. Tutte le risorse che possono essere interessate dall'installazione devono essere registrate con la sessione. Le risorse possono essere identificate in base al nome file, al nome breve del servizio o a una struttura di [**\_ \_ processo univoca RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process) .
-5.  Il programma di installazione principale chiama la funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) per ottenere una matrice di strutture di [**\_ \_ informazioni del processo RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info) che elenca tutte le applicazioni e i servizi che devono essere arrestati e riavviati.
+1.  Il programma di installazione primario chiama la [**funzione RmStartSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession) per avviare la sessione di Gestione riavvio e ottenere un handle di sessione e una chiave.
+2.  Il programma di installazione primario avvia o contatta il programma di installazione secondario e lo fornisce con la chiave di sessione ottenuta nel passaggio precedente.
+3.  Il programma di installazione secondario chiama la [**funzione RmJoinSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmjoinsession) con la chiave di sessione per partecipare alla sessione di Gestione riavvio. Un programma di installazione secondario può partecipare a una sessione avviata dal programma di installazione primario solo quando entrambi i programmi di installazione vengono eseguiti nello stesso contesto utente.
+4.  I programmi di installazione primario e secondario chiamano la [**funzione RmRegisterResources**](/windows/desktop/api/RestartManager/nf-restartmanager-rmregisterresources) per registrare le risorse. Gestione riavvio può usare solo le risorse registrate per determinare quali applicazioni e servizi devono essere arrestati e riavviati. Tutte le risorse che possono essere interessate dall'installazione devono essere registrate con la sessione. Le risorse possono essere identificate in base al nome file, al nome breve del servizio o a [**una struttura RM \_ UNIQUE \_ PROCESS.**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)
+5.  Il programma di installazione primario chiama la funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) per ottenere una matrice di [**strutture RM \_ PROCESS \_ INFO**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info) che elenca tutte le applicazioni e i servizi che devono essere arrestati e riavviati.
 
-    Se il valore del parametro *lpdwRebootReason* restituito dalla funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) è diverso da zero, gestione riavvio non è in grado di liberare una risorsa registrata dalla chiusura di un'applicazione o di un servizio. In questo caso, è necessario arrestare e riavviare il sistema per continuare l'installazione. Il programma di installazione principale deve richiedere all'utente un'azione, arrestare programmi o servizi oppure pianificare un arresto e un riavvio del sistema.
+    Se il valore del parametro *lpdwRebootReason* restituito dalla funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) è diverso da zero, Gestione riavvio non è in grado di liberare una risorsa registrata dall'arresto di un'applicazione o di un servizio. In questo caso, è necessario un arresto e un riavvio del sistema per continuare l'installazione. Il programma di installazione primario deve richiedere un'azione all'utente, arrestare programmi o servizi o pianificare l'arresto e il riavvio del sistema.
 
-    Se il valore del parametro *lpdwRebootReason* restituito dalla funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) è zero, il programma di installazione deve chiamare la funzione [**RmShutdown**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) . Questa operazione arresta i servizi e le applicazioni che usano risorse registrate. I programmi di installazione primari e secondari devono quindi eseguire le modifiche di sistema necessarie per completare l'installazione. Infine, il programma di installazione principale deve chiamare la funzione [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) in modo che la gestione riavvio possa riavviare le applicazioni arrestate e registrate per il riavvio.
+    Se il valore del *parametro lpdwRebootReason* restituito dalla funzione [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) è zero, il programma di installazione deve chiamare la funzione [**RmShutdown.**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) In questo modo vengono arrestati i servizi e le applicazioni che usano risorse registrate. I programmi di installazione primario e secondario devono quindi eseguire le modifiche di sistema necessarie per completare l'installazione. Infine, il programma di installazione primario deve chiamare la funzione [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) in modo che Gestione riavvii possa riavviare le applicazioni arrestate e registrate per un riavvio.
 
-6.  Il programma di installazione primario e secondario chiama la funzione [**RmEndSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmendsession) per chiudere la sessione di gestione riavvio.
+6.  Il programma di installazione primario e secondario chiamano la [**funzione RmEndSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmendsession) per chiudere la sessione di Gestione riavvio.
 
-Il frammento di codice seguente mostra un esempio di un programma di installazione primario che inizia e usa una sessione di gestione riavvio. L'esempio richiede Windows 7 o Windows Server 2008 R2. In Windows Vista o Windows Server 2008, l'applicazione del calcolatore viene arrestata ma non viene riavviata. Questo esempio Mostra come un programma di installazione primario può usare Gestione riavvio per arrestare e riavviare un processo. Nell'esempio si presuppone che il calcolatore sia già in esecuzione prima di avviare la sessione di gestione riavvio.
+Il frammento di codice seguente illustra un esempio di programma di installazione primario che avvia e usa una sessione di Gestione riavvio. L'esempio richiede Windows 7 o Windows Server 2008 R2. In Windows Vista o Windows Server 2008, l'applicazione Calculator viene arrestata ma non riavviata. Questo esempio illustra come un programma di installazione primario può usare Gestione riavvio per arrestare e riavviare un processo. Nell'esempio si presuppone che calculator sia già in esecuzione prima di avviare la sessione di Gestione riavvio.
 
 
 ```C++
@@ -238,7 +238,7 @@ int _cdecl wmain()
 
 
 
-Il frammento di codice seguente mostra un esempio di aggiunta di un programma di installazione secondario alla sessione di gestione riavvio esistente. L'esempio richiede Windows Vista o Windows Server 2008. Il programma di installazione secondario ottiene la chiave della sessione dal programma di installazione principale e la usa per partecipare alla sessione.
+Il frammento di codice seguente illustra un esempio di aggiunta di un programma di installazione secondario alla sessione di Gestione riavvio esistente. L'esempio richiede Windows Vista o Windows Server 2008. Il programma di installazione secondario ottiene la chiave di sessione dal programma di installazione primario e la usa per partecipare alla sessione.
 
 
 ```C++
@@ -321,9 +321,9 @@ int _cdecl wmain()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

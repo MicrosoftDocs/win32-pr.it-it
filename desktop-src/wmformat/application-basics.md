@@ -1,41 +1,41 @@
 ---
-title: Nozioni fondamentali sulle applicazioni
-description: Nozioni fondamentali sulle applicazioni
+title: Nozioni di base dell'applicazione
+description: Nozioni di base dell'applicazione
 ms.assetid: 5593d27e-e97d-4f03-99ff-aee856abec8e
 keywords:
-- Windows Media Format SDK, nozioni fondamentali sulle applicazioni DRM
-- Digital Rights Management (DRM), nozioni fondamentali sulle applicazioni
-- DRM (Digital Rights Management), nozioni fondamentali sulle applicazioni
-- Digital Rights Management (DRM), funzione WMDRMStartup
-- DRM (Digital Rights Management), funzione WMDRMStartup
+- Windows Sdk di formato multimediale, nozioni di base dell'applicazione DRM
+- digital rights management (DRM), nozioni di base dell'applicazione
+- DRM (digital rights management), nozioni di base dell'applicazione
+- digital rights management (DRM), funzione WMDRMStartup
+- DRM (digital rights management),funzione WMDRMStartup
 - WMDRMStartup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 182a9e54e077c174c4f4cbe74ba392aa44ce5112
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8356160565754764ac71cb152799a0fd9d1530e6e6969dc7a56e203b7504645d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086207"
 ---
-# <a name="application-basics"></a>Nozioni fondamentali sulle applicazioni
+# <a name="application-basics"></a>Nozioni di base dell'applicazione
 
-È necessario eseguire alcune operazioni di elaborazione aggiuntive per tutte le applicazioni che usano le API estese del client Windows Media DRM. In questo argomento vengono descritti i requisiti per una semplice applicazione.
+È necessario eseguire un'ulteriore elaborazione per qualsiasi applicazione che usa le API estese Windows client DRM media. Questo argomento descrive i requisiti per una semplice applicazione.
 
-Per prima cosa, è necessario inizializzare le API estese del client Windows Media DRM chiamando la funzione [**WMDRMStartup**](wmdrmstartup.md) . Gli oggetti dell'SDK sono oggetti COM, ma non è necessario chiamare **CoIntialize**, perché la funzione **WMDRMStatup** Inizializza com.
+Per prima cosa, è necessario inizializzare Windows API estese del client DRM multimediale chiamando la [**funzione WMDRMStartup.**](wmdrmstartup.md) Gli oggetti dell'SDK sono oggetti COM, ma non è necessario chiamare **CoIntialize**, perché la funzione **WMDRMStatup** inizializza AUTOMATICAMENTe COM.
 
 > [!Note]  
-> Windows Media Format SDK utilizza solo un subset di COM, pertanto se si utilizzano oggetti COM diversi da quelli nell'API Windows Media DRM client Extended, è comunque necessario chiamare **CoInitialize**.
+> L Windows Media Format SDK usa solo un subset di COM, pertanto se si usano oggetti COM diversi da quelli nell'API estesa client di Windows Media DRM, è comunque necessario chiamare **CoInitialize**.
 
- 
+ 
 
-Tutti gli oggetti delle API estese del client Windows Media DRM vengono creati usando funzioni e metodi helper. Non è mai necessario chiamare **CoCreateInstance** per creare un oggetto. La prima interfaccia di cui creare un'istanza per qualsiasi applicazione che usa l'SDK è [**IWMDRMProvider**](iwmdrmprovider.md), che è possibile usare per creare un'istanza di tutte le altre interfacce di base. Per ottenere un'istanza di **IWMDRMProvider**, è necessario chiamare [**WMDRMCreateProvider**](wmdrmcreateprovider.md) o [**WMDRMCreateProtectedProvider**](wmdrmcreateprotectedprovider.md). La differenza tra queste funzioni è che **WMDRMCreateProvider** crea un oggetto che può a sua volta creare solo oggetti che non supportano metodi che richiedono la libreria stub.
+Tutti gli oggetti delle API estese Windows client DRM media vengono creati usando funzioni e metodi helper. Non è mai necessario chiamare **CoCreateInstance** per creare un oggetto. La prima interfaccia di cui creare un'istanza per qualsiasi applicazione che usa l'SDK è [**IWMDRMProvider,**](iwmdrmprovider.md)che è possibile usare per creare un'istanza di tutte le altre interfacce di base. Per ottenere un'istanza di **IWMDRMProvider,** è necessario chiamare [**WMDRMCreateProvider**](wmdrmcreateprovider.md) o [**WMDRMCreateProtectedProvider**](wmdrmcreateprotectedprovider.md). La differenza tra queste funzioni è che **WMDRMCreateProvider** crea un oggetto che a sua volta può creare solo oggetti che non supportano metodi che richiedono la libreria stub.
 
-Dopo avere creato un'istanza di **IWMDRMProvider**, è possibile creare gli altri oggetti necessari chiamando [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md).
+Dopo aver creato un'istanza di **IWMDRMProvider,** è possibile creare gli altri oggetti necessari chiamando [**IWMDRMProvider::CreateObject**](iwmdrmprovider-createobject.md).
 
-Quando si è pronti per uscire dall'applicazione, è necessario rilasciare le risorse del sottosistema DRM chiamando la funzione [**WMDRMShutdown**](wmdrmshutdown.md) . Questa funzione arresta anche COM.
+Quando si è pronti per uscire dall'applicazione, è necessario rilasciare le risorse del sottosistema DRM chiamando la funzione [**WMDRMShutdown.**](wmdrmshutdown.md) Questa funzione arresta anche COM automaticamente.
 
-Nell'esempio di codice riportato di seguito viene illustrato come inizializzare e concludere un'applicazione che utilizza le API estese del client Windows Media DRM.
+L'esempio di codice seguente illustra come inizializzare e concludere un'applicazione che usa le API estese del client DRM Windows media.
 
 
 ```C++
@@ -88,12 +88,12 @@ void main(void)
 
 <dl> <dt>
 
-[**Introduzione**](drm-getting-started.md)
+[**Attività iniziali**](drm-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

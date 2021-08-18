@@ -1,29 +1,29 @@
 ---
 title: MulticastUdpServerExample6
-description: Questo esempio mostra un server UDP che è in ascolto su un indirizzo multicast e risponde alle richieste inviate a tale indirizzo. In questo esempio viene usato IPv6.
+description: Questo esempio mostra un server UDP in ascolto su un indirizzo multicast e risponde alle richieste inviate a tale indirizzo. Questo esempio usa IPv6.
 ms.assetid: 9e2a254c-dbfc-4b73-a1a5-6a1db1ac5921
 keywords:
-- MulticastUdpServerExample6 native-servizi Web
+- MulticastUdpServerExample6 Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25faf8a622af36e925d766a4754f38e0984a3830
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b39bce9a80bc230e1bf4ec6aa32281369dc53add173b9da099c71622c4972b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963090"
 ---
 # <a name="multicastudpserverexample6"></a>MulticastUdpServerExample6
 
-Questo esempio mostra un server UDP che è in ascolto su un indirizzo multicast e risponde alle richieste inviate a tale indirizzo. In questo esempio viene usato IPv6.
+Questo esempio mostra un server UDP in ascolto su un indirizzo multicast e risponde alle richieste inviate a tale indirizzo. Questo esempio usa IPv6.
 
--   [MulticastUdpServer6. cpp](#multicastudpserver6cpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [MulticastUdpServer6.cpp](#multicastudpserver6cpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="multicastudpserver6cpp"></a>MulticastUdpServer6. cpp
+## <a name="multicastudpserver6cpp"></a>MulticastUdpServer6.cpp
 
 
 ```C++
@@ -478,7 +478,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -622,9 +622,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

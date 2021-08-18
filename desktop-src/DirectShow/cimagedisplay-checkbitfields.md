@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckBitFields convalida le maschere dei colori in una struttura VIDEOINFO.
+description: Il metodo CheckBitFields convalida le maschere di colore in una struttura VIDEOINFO.
 ms.assetid: b03455aa-8d90-4fab-999d-7408d8417021
-title: Metodo CImageDisplay. CheckBitFields (Winutil. h)
+title: Metodo CImageDisplay.CheckBitFields (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ade581dad5e53c2454df52e387653e44d6d4ad2f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 44e60b6693dde202cd458cd09495dce9e4bea52ed96a468a8d3dcb6b2370eac4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074175"
 ---
-# <a name="cimagedisplaycheckbitfields-method"></a>CImageDisplay. CheckBitFields, metodo
+# <a name="cimagedisplaycheckbitfields-method"></a>Metodo CImageDisplay.CheckBitFields
 
-Il `CheckBitFields` metodo convalida le maschere dei colori in una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) .
+Il `CheckBitFields` metodo convalida le maschere di colore in una struttura [**VIDEOINFO.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ BOOL CheckBitFields(
 *pInput* 
 </dt> <dd>
 
-Puntatore a una struttura **VIDEOINFO** .
+Puntatore a una **struttura VIDEOINFO.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se le maschere dei colori sono valide o **false** in caso contrario.
+Restituisce **TRUE se** le maschere di colore sono valide oppure FALSE in caso **contrario.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo verifica che la maschera di colore per ogni componente del colore sia compresa tra uno e otto bit e che ogni maschera di colore sia una sequenza di bit contigua. Chiamare questo metodo solo quando il membro di **biCompression** è impostato su bi \_ campi.
+Questo metodo verifica che la maschera colori per ogni componente di colore sia lunga da uno a otto bit e che ogni maschera colori sia una sequenza contigua di bit. Chiamare questo metodo solo quando il **membro biCompression** è impostato su BI \_ BITFIELDS.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo verifica che la maschera di colore per ogni componente del colore 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
