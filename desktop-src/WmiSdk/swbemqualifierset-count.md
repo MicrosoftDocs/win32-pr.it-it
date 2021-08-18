@@ -1,8 +1,8 @@
 ---
-description: La proprietà Count dell'oggetto dell'SWbemQualifierSet contiene il numero di elementi in una raccolta dell'SWbemQualifierSet. Questa proprietà è di sola lettura.
+description: La proprietà Count dell'oggetto SWbemQualifierSet contiene il numero di elementi in una raccolta SWbemQualifierSet. Questa proprietà è di sola lettura.
 ms.assetid: a381916a-a1e2-4b9a-8162-777a04824291
 ms.tgt_platform: multiple
-title: Proprietà dell'SWbemQualifierSet. Count (wbemdisp. h)
+title: Proprietà SWbemQualifierSet.Count (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 6c7823cecd91035cd5e78970af981cfd9d15c092
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a296343b53ebf57be1b25547f1a7ece02793dcabc7e364f2c5f508c23fa454c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991801"
 ---
-# <a name="swbemqualifiersetcount-property"></a>Proprietà dell'SWbemQualifierSet. Count
+# <a name="swbemqualifiersetcount-property"></a>Proprietà SWbemQualifierSet.Count
 
-La proprietà **count** dell'oggetto [**dell'SWbemQualifierSet**](swbemqualifierset.md) contiene il numero di elementi in una raccolta **dell'SWbemQualifierSet** . Questa proprietà è di sola lettura.
+La **proprietà Count** dell'oggetto [**SWbemQualifierSet**](swbemqualifierset.md) contiene il numero di elementi in una **raccolta SWbemQualifierSet.** Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemQualifierSet.Count As Integer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_Dell'SWBEMQUALIFIERSET CLSID<br/>                                                     |
-| IID<br/>                      | \_ISWBEMQUALIFIERSET IID<br/>                                                      |
+| CLSID<br/>                    | CLSID \_ SWbemQualifierSet<br/>                                                     |
+| IID<br/>                      | IID \_ ISWbemQualifierSet<br/>                                                      |
 
 
 
@@ -62,7 +62,7 @@ SWbemQualifierSet.Count As Integer
 
 <dl> <dt>
 
-[**Dell'SWbemQualifierSet**](swbemqualifierset.md)
+[**SWbemQualifierSet**](swbemqualifierset.md)
 </dt> </dl>
 
  

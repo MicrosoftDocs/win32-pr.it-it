@@ -1,19 +1,19 @@
 ---
-title: UI_ANIMATION_SECONDS (UIAnimation. h)
+title: UI_ANIMATION_SECONDS (UIAnimation.h)
 description: Unità di tempo usata per tutte le animazioni.
 ms.assetid: 0745b227-61c4-462e-8529-9402c9eaa70a
 keywords:
 - UI_ANIMATION_SECONDS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea7cdf5b487138f68dac90f1d4f4bd9afcd1e73b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c21b6fbdb053fa46423bf1e29b92d59b9cf6d4007bc46fa739614b21c12d09ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999661"
 ---
-# <a name="ui_animation_seconds"></a>\_secondi animazione interfaccia utente \_
+# <a name="ui_animation_seconds"></a>SECONDI DI \_ ANIMAZIONE \_ INTERFACCIA UTENTE
 
 Unità di tempo usata per tutte le animazioni.
 
@@ -30,10 +30,10 @@ typedef DOUBLE UI_ANIMATION_SECONDS;
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista e aggiornamento della piattaforma per app desktop di Windows Vista \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7, Windows Vista e l'aggiornamento della piattaforma per Windows app \[ desktop \| UWP di Vista\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                              |
-| Intestazione<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>               |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl>             |
+| Intestazione<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>               |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl>             |
 
 
 
@@ -56,7 +56,7 @@ typedef DOUBLE UI_ANIMATION_SECONDS;
 [**IUIAnimationTransition**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransition)
 </dt> <dt>
 
-[**IUIAnimationTransitionLibrary**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
+[**Libreria IUIAnimationTransition**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
 </dt> </dl>
 
  

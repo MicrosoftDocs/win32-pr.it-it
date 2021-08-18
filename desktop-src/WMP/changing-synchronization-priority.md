@@ -3,26 +3,26 @@ title: Modifica della priorità di sincronizzazione
 description: Modifica della priorità di sincronizzazione
 ms.assetid: 992781cb-5018-4b88-aa93-2f8a86468a42
 keywords:
-- Media Player di Windows, playlist di sincronizzazione
-- Modello a oggetti di Windows Media Player, playlist di sincronizzazione
+- Windows Media Player, playlist di sincronizzazione
+- Windows Media Player a oggetti, playlist di sincronizzazione
 - modello a oggetti, playlist di sincronizzazione
-- Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX di Windows Media Player, playlist di sincronizzazione
-- Controllo ActiveX Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX, playlist di sincronizzazione
+- Windows Media Player Dispositivi mobili, playlist di sincronizzazione
+- Windows Media Player ActiveX, playlist di sincronizzazione
+- Windows Media Player Controllo ActiveX per dispositivi mobili, playlist di sincronizzazione
+- ActiveX, playlist di sincronizzazione
 - playlist, sincronizzazione
 - playlist di metafile, sincronizzazione
-- Playlist di Windows Media Metafile, sincronizzazione
+- Windows playlist metafile multimediali,sincronizzazione
 - dispositivi portatili, modifica delle priorità della playlist di sincronizzazione
 - playlist di sincronizzazione, priorità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327f211282e2e3b35c21dce721a17f99dcb6583d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 1513679bcde31893cd7c4f456bc0e99404bb5dc66de37976f2053ae1559a4cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103723607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997661"
 ---
 # <a name="changing-synchronization-priority"></a>Modifica della priorità di sincronizzazione
 
@@ -94,9 +94,9 @@ void CSyncSettings::SetPriorities()
 [**Gestione delle playlist di sincronizzazione**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

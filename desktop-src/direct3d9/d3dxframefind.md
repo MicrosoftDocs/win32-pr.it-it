@@ -1,7 +1,7 @@
 ---
 description: Trova il frame figlio di un frame radice.
 ms.assetid: 211e117a-9707-459a-a6a1-b3e78bdad6e2
-title: Funzione D3DXFrameFind (D3dx9anim. h)
+title: Funzione D3DXFrameFind (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 82b8c56c93f19c99441b93707fac2a0c150e0c38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4f62cacabbf020d1fe9ff9e83c47acc6c58e52c4ab6be031586bda365745f595
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027661"
 ---
-# <a name="d3dxframefind-function"></a>D3DXFrameFind (funzione)
+# <a name="d3dxframefind-function"></a>Funzione D3DXFrameFind
 
 Trova il frame figlio di un frame radice.
 
@@ -41,21 +41,21 @@ LPD3DXFRAME D3DXFrameFind(
 
 <dl> <dt>
 
-*pFrameRoot* \[ in\]
+*pFrameRoot* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFRAME**](d3dxframe.md) \***
 
-Puntatore al frame radice. Vedere [**D3DXFRAME**](d3dxframe.md).
+Puntatore al frame radice. Vedere [**D3DXFRAME.**](d3dxframe.md)
 
 </dd> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome del fotogramma figlio da trovare.
+Nome del frame figlio da trovare.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Nome del fotogramma figlio da trovare.
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
 
-Restituisce il frame figlio se viene trovato; in caso contrario, **null** . Vedere [**D3DXFRAME**](d3dxframe.md).
+Restituisce il frame figlio se viene trovato oppure **NULL in caso contrario.** Vedere [**D3DXFRAME.**](d3dxframe.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Restituisce il frame figlio se viene trovato; in caso contrario, **null** . Vede
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

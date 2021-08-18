@@ -1,7 +1,7 @@
 ---
-description: Shader richiamato quando non vengono rilevate o accettate intersezioni di raggio.
+description: Shader richiamato quando non vengono trovate o accettate intersezioni di raggi.
 ms.assetid: ''
-title: Lo shader manca
+title: Miss Shader
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,21 +12,21 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: fe8e2ec9cdbb8ef7567b9327ae5af1128597a601
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 30f7ce32e66a19984ce43737d9fc9cae83652c851174d7db350ca34628a33033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850824"
 ---
-# <a name="miss-shader"></a>Lo shader manca
+# <a name="miss-shader"></a>Miss Shader
 
-Shader richiamato quando non vengono rilevate o accettate intersezioni di raggio. Questa operazione è utile per l'ombreggiatura di background o Sky.  Lo shader mancante può usare [**CallShader**](callshader-function.md) e **TraceRay** per pianificare altre operazioni.
+Shader richiamato quando non vengono trovate o accettate intersezioni di raggi. Ciò è utile per l'ombreggiatura dello sfondo o del cielo.  Lo shader miss può usare [**CallShader**](callshader-function.md) e **TraceRay** per pianificare più lavoro.
 
-Il mancato shader deve includere un parametro di payload tipizzato della struttura definito dall'utente corrispondente a quello fornito a [**TraceRay**](traceray-function.md).
+Lo shader miss deve includere un parametro di payload tipico della struttura definito dall'utente corrispondente a quello fornito a [**TraceRay.**](traceray-function.md)
 
 
-## <a name="shader-type-attribute"></a>Attributo di tipo shader
+## <a name="shader-type-attribute"></a>Attributo Tipo shader
 
 
 ```

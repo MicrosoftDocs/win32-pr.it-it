@@ -1,28 +1,28 @@
 ---
-description: Uso di .NET Framework 4 con applicazioni compilate in versioni precedenti
+description: Uso .NET Framework 4 con applicazioni compilate in versioni precedenti
 ms.assetid: 287E25AD-A560-40DA-A4E6-C46A3123914E
-title: Uso di .NET Framework 4 con applicazioni compilate in versioni precedenti
+title: Uso .NET Framework 4 con applicazioni compilate in versioni precedenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b30eb8f4be1c50904b8d5760f456f3fe20bdd3da
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: c400f38efe93d2fc77d5de1f700b550f455f3e29db8ba96ef778771d82158c76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994571"
 ---
-# <a name="using-net-framework-4-with-applications-built-on-earlier-versions"></a>Uso di .NET Framework 4 con applicazioni compilate in versioni precedenti
+# <a name="using-net-framework-4-with-applications-built-on-earlier-versions"></a>Uso .NET Framework 4 con applicazioni compilate in versioni precedenti
 
 ## <a name="platform"></a>Piattaforma
 
- **Client** -Windows XP, Windows Vista, Windows 7  
-**Server** : windows Server 2003, windows Server 2008, windows Server 2008 R2  
+ **Client** - Windows XP, Windows Vista, Windows 7  
+**Server** - Windows Server 2003, Windows Server 2008, Windows Server 2008 R2  
 
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
- **Gravità** -bassa  
-**Frequenza** -alta  
+ **Gravità** - Bassa  
+**Frequenza** - Alta  
 
 
 
@@ -31,34 +31,34 @@ ms.locfileid: "107314944"
 
 ## <a name="description"></a>Descrizione
 
-Il .NET Framework 4 è altamente compatibile con le applicazioni compilate utilizzando versioni di .NET Framework precedenti. Le principali modifiche apportate al .NET Framework 4 sono migliorare la sicurezza, la conformità agli standard, la correttezza, l'affidabilità e le prestazioni.
+La .NET Framework 4 è altamente compatibile con le applicazioni compilate usando versioni .NET Framework precedenti. Le principali modifiche di .NET Framework 4 sono il miglioramento della sicurezza, della conformità degli standard, della correttezza, dell'affidabilità e delle prestazioni.
 
-Tuttavia, .NET Framework 4 non utilizza automaticamente la versione del Common Language Runtime (CLR) per eseguire le applicazioni compilate utilizzando versioni precedenti del .NET Framework.
+Tuttavia, .NET Framework 4 non usa automaticamente la versione di Common Language Runtime (CLR) per eseguire applicazioni compilate con versioni precedenti del .NET Framework.
 
 ## <a name="manifestation"></a>Manifestazione
 
-Se un'applicazione è stata compilata utilizzando una .NET Framework precedente e un utente apre tale applicazione in un computer in cui sono presenti sia .NET Framework 4 che la versione precedente del .NET Framework installata, l'applicazione utilizzerà la versione CLR precedente.
+Se è stata compilata un'applicazione usando un .NET Framework precedente e un utente apre l'applicazione in un computer in cui sono installati sia .NET Framework 4 che la versione precedente del .NET Framework, l'applicazione usa la versione precedente di CLR.
 
-Tuttavia, se il .NET Framework 4 è l'unica versione runtime installata nel computer, l'applicazione genera un'eccezione e chiede all'utente di installare la versione di runtime in cui è stata compilata l'applicazione.
+Tuttavia, se la .NET Framework 4 è l'unica versione di runtime installata nel computer, l'applicazione genera un'eccezione e chiede all'utente di installare la versione di runtime su cui è stata compilata l'applicazione.
 
 ## <a name="solution"></a>Soluzione
 
-Per eseguire applicazioni compilate con versioni precedenti di .NET Framework con .NET Framework 4, è necessario compilare l'applicazione in modo che abbia come destinazione la versione .NET Framework 4 specificando il valore nelle proprietà del progetto in Microsoft Visual Studio oppure è possibile specificare .NET Framework 4 nell' [**<supportedRuntime> elemento**](/previous-versions/dotnet/netframework-1.1/w4atty68(v=vs.71)) in un file di configurazione dell'applicazione.
+Per eseguire applicazioni compilate con versioni precedenti di .NET Framework con .NET Framework 4, è necessario compilare l'applicazione per la versione .NET Framework 4 specificandola nelle proprietà del progetto [**<supportedRuntime>**](/previous-versions/dotnet/netframework-1.1/w4atty68(v=vs.71)) in Microsoft Visual Studio oppure è possibile specificare .NET Framework 4 nell'elemento in un file di configurazione dell'applicazione.
 
-Per ulteriori informazioni su come eseguire la migrazione a .NET Framework 4, vedere la [Guida alla migrazione per la .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ff657133(v=vs.100)) e la [compatibilità tra le versioni nella .NET Framework](/previous-versions/dotnet/netframework-4.0/ff602939(v=vs.100)).
+Per altre informazioni su come eseguire la migrazione a .NET Framework 4, vedere Migration [Guide to the .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ff657133(v=vs.100)) and Version Compatibility in the [.NET Framework](/previous-versions/dotnet/netframework-4.0/ff602939(v=vs.100)).
 
 ## <a name="compatibility-tests"></a>Test di compatibilità
 
-Dopo avere apportato le modifiche, testare l'applicazione per assicurarsi che venga eseguita correttamente. È possibile testare la compatibilità come descritto nell'argomento relativo alla [compatibilità delle applicazioni .NET Framework 4](/previous-versions/dd889541(v=msdn.10)) .
+Dopo aver apportato le modifiche, testare l'applicazione per assicurarsi che venga eseguita correttamente. È possibile testare la compatibilità come descritto nell'argomento [Compatibilità .NET Framework 4](/previous-versions/dd889541(v=msdn.10)) applicazioni.
 
-Se l'applicazione o il componente non funziona dopo l'installazione di .NET Framework 4, inviare un bug tramite il sito Web [Microsoft Connect](https://connect.microsoft.com/visualstudio) .
+Se l'applicazione o il componente non funziona dopo l'.NET Framework 4, inviare un bug tramite il sito Web [microsoft Connessione.](https://connect.microsoft.com/visualstudio)
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [**<supportedRuntime> elemento**](/previous-versions/dotnet/netframework-1.1/w4atty68(v=vs.71))
+-   [**<supportedRuntime> Elemento**](/previous-versions/dotnet/netframework-1.1/w4atty68(v=vs.71))
 -   [Guida di migrazione a .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ff657133(v=vs.100))
 -   [Compatibilità tra le versioni in .NET Framework](/previous-versions/dotnet/netframework-4.0/ff602939(v=vs.100))
--   **Procedura dettagliata per la compatibilità delle applicazioni .NET Framework 4 RTM:**<https://msdn.microsoft.com/library/dd889541.aspx>
+-   **.NET Framework 4 compatibilità delle applicazioni RTM:**<https://msdn.microsoft.com/library/dd889541.aspx>
 -   [Microsoft Connect](https://connect.microsoft.com/)
 
  

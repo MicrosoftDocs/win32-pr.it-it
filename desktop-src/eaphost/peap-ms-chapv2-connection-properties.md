@@ -1,19 +1,19 @@
 ---
-title: Proprietà di connessione MS-CHAPv2 PEAP
+title: Proprietà connessione MS-CHAPv2 PEAP
 description: Informazioni sulle proprietà di connessione MS-CHAPv2 PEAP. Vedere un esempio che è un'istanza dello schema legacy mschapv2connectionpropertiesv1.
 ms.assetid: a289343a-b702-4be2-baf5-2d004a8a8fea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcac1210eb0fb1606600366618b28c0a4276fa80
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: f55ce0f6b561fe32169768452d409cb7d51084589b0f3a3dca49ff9022fffb45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104474534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983911"
 ---
-# <a name="peap-ms-chapv2-connection-properties"></a>Proprietà di connessione MS-CHAPv2 PEAP
+# <a name="peap-ms-chapv2-connection-properties"></a>Proprietà connessione MS-CHAPv2 PEAP
 
-Questo esempio è un'istanza dello schema legacy [mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-schema.md) .
+Questo esempio è un'istanza dello schema legacy [mschapv2connectionpropertiesv1.](mschapv2connectionpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -55,15 +55,15 @@ Questo esempio è un'istanza dello schema legacy [mschapv2connectionpropertiesv1
 
 <dl> <dt>
 
-[Proprietà di connessione](connection-profiles.md)
+[Proprietà connessione](connection-profiles.md)
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

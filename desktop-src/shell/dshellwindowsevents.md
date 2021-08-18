@@ -1,7 +1,7 @@
 ---
 description: Riceve gli eventi di registrazione della finestra IShellWindows.
 ms.assetid: c340296d-f8eb-43a1-809d-912ea7412fe2
-title: Oggetto DShellWindowsEvents (Exdisp. h)
+title: Oggetto DShellWindowsEvents (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,26 +13,26 @@ api_type:
 - COM
 api_location:
 - Shdocvw.dll
-ms.openlocfilehash: 7df1571556b5f2942f181b4c88b22ff3bc83f273
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13335268b892e4ac95520221fcd2e413c9c255225ccd8fc36c3c73cbf8c327a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104983014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009541"
 ---
 # <a name="dshellwindowsevents-object"></a>Oggetto DShellWindowsEvents
 
-Riceve gli eventi di registrazione della finestra [**ishellwindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows) .
+Riceve gli [**eventi di registrazione della finestra IShellWindows.**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows)
 
 ## <a name="members"></a>Membri
 
-L'oggetto **dshellwindowsevents** dispone di questi tipi di membri:
+**L'oggetto DShellWindowsEvents** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **dshellwindowsevents** dispone di questi metodi.
+**L'oggetto DShellWindowsEvents** dispone di questi metodi.
 
 
 
@@ -47,7 +47,7 @@ L'oggetto **dshellwindowsevents** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Usare **dshellwindowsevents** per monitorare la registrazione o la revoca di una finestra della shell. Per ulteriori informazioni, vedere [**ishellwindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows).
+Usare **DShellWindowsEvents per** monitorare quando una finestra della shell viene registrata o revocata. Per altre informazioni, vedere [**IShellWindows.**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Usare **dshellwindowsevents** per monitorare la registrazione o la revoca di una
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Prodotto<br/> | Internet Explorer 5<br/>                                                                                           |
-| Intestazione<br/>  | <dl> <dt>Exdisp. h</dt> </dl>                                      |
+| Intestazione<br/>  | <dl> <dt>Exdisp.h</dt> </dl>                                      |
 | DLL<br/>     | <dl> <dt>Shdocvw.dll (versione 5.00.2014.0216 o successiva)</dt> </dl> |
-| IID<br/>     | \_ISHELLWINDOWS IID<br/>                                                                                            |
+| IID<br/>     | IID \_ IShellWindows<br/>                                                                                            |
 
 
 

@@ -4,26 +4,26 @@ ms.assetid: 8c1c6582-b58c-4008-9ce5-208acc191d9f
 title: Unicode e set di caratteri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2de963c417d4fb538aaae4dd5daa0d78d5d36e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 725f7126cfdfcbd62d12a19ca0b00fd00a214edab9f7900f55df3b11f25f6ad4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764901"
 ---
 # <a name="unicode-and-character-sets"></a>Unicode e set di caratteri
 
-Microsoft Windows fornisce il supporto per le diverse lingue scritte del Marketplace internazionale tramite i set di caratteri [Unicode](unicode.md) e tradizionali.
+Microsoft Windows supporto per le numerose lingue scritte del marketplace internazionale tramite [Unicode](unicode.md) e set di caratteri tradizionali.
 
-Unicode è uno standard di codifica dei caratteri in tutto il mondo che fornisce un numero univoco per rappresentare ogni carattere usato nell'elaborazione moderna, inclusi i simboli tecnici e i caratteri speciali usati per la pubblicazione. Unicode è richiesto dagli standard moderni, ad esempio XML e ECMAScript (JavaScript), ed è il meccanismo ufficiale per implementare ISO/IEC 10646. È supportato da molti sistemi operativi, da tutti i browser moderni e da molti altri prodotti. Le nuove applicazioni Windows devono utilizzare Unicode per evitare le incoerenze di diverse tabelle codici e per semplificare la localizzazione.
+Unicode è uno standard di codifica dei caratteri globale che fornisce un numero univoco per rappresentare ogni carattere usato nel calcolo moderno, inclusi i simboli tecnici e i caratteri speciali usati nella pubblicazione. Unicode è richiesto dagli standard moderni, ad esempio XML ed ECMAScript (JavaScript), ed è il meccanismo ufficiale per l'implementazione di ISO/IEC 10646. È supportato da molti sistemi operativi, da tutti i browser moderni e da molti altri prodotti. Le Windows devono usare Unicode per evitare le incoerenze di diverse code pages e semplificare la localizzazione.
 
-I set di caratteri tradizionali sono gli standard di codifica dei caratteri precedenti, ad esempio le [tabelle codici](code-pages.md) di Windows che usano valori di codice a 8 bit o combinazioni di valori a 8 bit per rappresentare i caratteri usati in una lingua o un'area geografica specifica.
+I set di caratteri tradizionali sono gli standard di codifica dei caratteri precedenti, ad esempio Windows code [pages](code-pages.md) che usano valori di codice a 8 bit o combinazioni di valori a 8 bit per rappresentare i caratteri usati in una lingua o in un'area geografica specifica.
 
 Questa panoramica descrive le funzioni del set di caratteri e spiega come usarle nelle applicazioni.
 
 -   [Informazioni sui set di caratteri e Unicode](about-unicode-and-character-sets.md)
--   [Utilizzo di set di caratteri e Unicode](using-unicode-and-character-sets.md)
--   [Riferimento al set di caratteri e Unicode](unicode-and-character-set-reference.md)
+-   [Uso di unicode e set di caratteri](using-unicode-and-character-sets.md)
+-   [Informazioni di riferimento su Unicode e set di caratteri](unicode-and-character-set-reference.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -32,7 +32,7 @@ Questa panoramica descrive le funzioni del set di caratteri e spiega come usarle
 [Gestione dei nomi di dominio internazionalizzati (IDN)](handling-internationalized-domain-names--idns.md)
 </dt> <dt>
 
-[Uso della normalizzazione Unicode per rappresentare le stringhe](using-unicode-normalization-to-represent-strings.md)
+[Uso della normalizzazione Unicode per rappresentare stringhe](using-unicode-normalization-to-represent-strings.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Identifica il tipo di host del chiamante WLDP.
 ms.assetid: E8E603CC-9CB2-4C3B-9F06-9B06C7B5D752
-title: Enumerazione WLDP_HOST_ID (Wldp. h)
+title: WLDP_HOST_ID enumerazione (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - wldp.h
-ms.openlocfilehash: 8914f93ff5936451b71b855473a09cb1d06584b4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fa52bc6259c75d5bb0929cb25610beb2b143515e2874b09bf04c454397a909e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104522922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758381"
 ---
-# <a name="wldp_host_id-enumeration"></a>\_ \_ Enumerazione ID host WLDP
+# <a name="wldp_host_id-enumeration"></a>Enumerazione DELL'ID HOST WLDP \_ \_
 
 Identifica il tipo di host del chiamante WLDP.
 
@@ -46,56 +46,56 @@ typedef enum _WLDP_HOST_ID {
 
 <dl> <dt>
 
-<span id="_WLDP_HOST_ID_UNKNOWN_"></span><span id="_wldp_host_id_unknown_"></span>**WLDP \_ \_ID host \_ sconosciuto** 
+<span id="_WLDP_HOST_ID_UNKNOWN_"></span><span id="_wldp_host_id_unknown_"></span>**WLDP \_ ID \_ HOST \_ SCONOSCIUTO** 
 </dt> <dd>
 
 Il tipo di host è sconosciuto.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_GLOBAL"></span><span id="_wldp_host_id_global"></span>**WLDP \_ \_ID host \_ globale**
+<span id="_WLDP_HOST_ID_GLOBAL"></span><span id="_wldp_host_id_global"></span>**WLDP \_ HOST \_ ID \_ GLOBAL**
 </dt> <dd>
 
 Il tipo di host è criteri globali.
 
 </dd> <dt>
 
-<span id="WLDP_HOST_ID_VBA"></span><span id="wldp_host_id_vba"></span>**\_ID host \_ WLDP \_ VBA**
+<span id="WLDP_HOST_ID_VBA"></span><span id="wldp_host_id_vba"></span>**WLDP \_ HOST \_ ID \_ VBA**
 </dt> <dd>
 
 Il tipo di host è VBScript.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_WSH"></span><span id="_wldp_host_id_wsh"></span>**WLDP \_ \_ID host \_ WSH**
+<span id="_WLDP_HOST_ID_WSH"></span><span id="_wldp_host_id_wsh"></span>**WLDP \_ HOST \_ ID \_ WSH**
 </dt> <dd>
 
-Il tipo di host è Windows script host.
+Il tipo di host è Windows Host script.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_POWERSHELL"></span><span id="_wldp_host_id_powershell"></span>**WLDP \_ \_ID host \_ PowerShell**
+<span id="_WLDP_HOST_ID_POWERSHELL"></span><span id="_wldp_host_id_powershell"></span>**WLDP \_ POWERSHELL \_ CON ID \_ HOST**
 </dt> <dd>
 
-Il tipo di host è Windows PowerShell.
+Il tipo di host Windows PowerShell.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_IE"></span><span id="_wldp_host_id_ie"></span>**WLDP \_ \_ID host \_ IE**
+<span id="_WLDP_HOST_ID_IE"></span><span id="_wldp_host_id_ie"></span>**WLDP \_ HOST \_ ID \_ IE**
 </dt> <dd>
 
 Il tipo di host è Internet Explorer.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_MSI"></span><span id="_wldp_host_id_msi"></span>**WLDP \_ \_ID host \_ MSI**
+<span id="_WLDP_HOST_ID_MSI"></span><span id="_wldp_host_id_msi"></span>**WLDP \_ ID \_ HOST \_ MSI**
 </dt> <dd>
 
-Il tipo di host è il Microsoft Windows Installer.
+Il tipo di host è Microsoft Windows Installer.
 
 </dd> <dt>
 
-<span id="_WLDP_HOST_ID_MAX__"></span><span id="_wldp_host_id_max__"></span>**WLDP \_ \_ID host \_ Max** 
+<span id="_WLDP_HOST_ID_MAX__"></span><span id="_wldp_host_id_max__"></span>**WLDP \_ NUMERO \_ MASSIMO DI ID \_ HOST** 
 </dt> <dd>
 
 Valore massimo dell'enumerazione.
@@ -108,9 +108,9 @@ Valore massimo dell'enumerazione.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Wldp. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                        |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Wldp.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Costanti di errore e informazioni correlate a EAP (Eaphosterror. h)
+title: Costanti relative a errori e informazioni EAP (Eaphosterror.h)
 description: Singoli gruppi di costanti di errore e informazioni correlate a EAP comuni a tutte le tecnologie API EAPHost.
 ms.assetid: 081b7a72-abe3-4cbb-9b6c-07bb6717fbfe
 topic_type:
@@ -58,20 +58,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bd7b829cd4c5ba550fd88242ffb8c34572648d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc4140444d1b5c3ae99c90c2447e165a4143b042dcc7567104e4b5f0063b645b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984241"
 ---
-# <a name="eap-related-error-and-information-constants"></a>Costanti di errore e informazioni correlate a EAP
+# <a name="eap-related-error-and-information-constants"></a>Costanti relative a errori e informazioni EAP
 
 Singoli gruppi di costanti di errore e informazioni correlate a EAP comuni a tutte le tecnologie API EAPHost.
 
 <dl> <dt>
 
-<span id="EAP_E_EAPHOST_FIRST"></span><span id="eap_e_eaphost_first"></span>**\_prima EAP E \_ EAPHost \_**
+<span id="EAP_E_EAPHOST_FIRST"></span><span id="eap_e_eaphost_first"></span>**EAP \_ E \_ EAPHOST \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x80420000L
@@ -79,12 +79,12 @@ Singoli gruppi di costanti di errore e informazioni correlate a EAP comuni a tut
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo a EAPHost tra **EAP e \_ \_ EAPHost \_ prima** e **EAP e EAPHost per \_ \_ \_ ultimo**.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato a EAPHost si verificherà tra **EAP \_ \_ EAPHOST \_ FIRST** e **EAP \_ \_ EAP EAPHOST \_ LAST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_LAST___"></span><span id="eap_e_eaphost_last___"></span>**EAP \_ E \_ EAPHOST per \_ ultimi** 
+<span id="EAP_E_EAPHOST_LAST___"></span><span id="eap_e_eaphost_last___"></span>**EAP \_ E \_ EAPHOST \_ LAST** 
 </dt> <dd> <dl> <dt>
 
 0x804200FFL
@@ -92,12 +92,12 @@ Definisce il limite dei report di errore. si verificherà un errore relativo a E
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo a EAPHost tra **EAP e \_ \_ EAPHost \_ prima** e **EAP e EAPHost per \_ \_ \_ ultimo**.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato a EAPHost si verificherà tra **EAP \_ \_ EAPHOST \_ FIRST** e **EAP \_ \_ EAP EAPHOST \_ LAST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_EAPHOST_FIRST_"></span><span id="eap_i_eaphost_first_"></span>**EAP \_ I \_ EAPHost \_ prima** 
+<span id="EAP_I_EAPHOST_FIRST_"></span><span id="eap_i_eaphost_first_"></span>**EAP \_ I \_ EAPHOST \_ FIRST** 
 </dt> <dd> <dl> <dt>
 
 0x80420000L
@@ -105,12 +105,12 @@ Definisce il limite dei report di errore. si verificherà un errore relativo a E
 
 
 
-Definisce il limite dei report informazioni; eventuali registrazioni di eventi informativi correlati a EAPHost si verificheranno **prima tra EAP \_ i \_ EAPHost \_** e **EAP \_ i \_ EAPHost \_**.
+Definisce il limite dei report di informazioni. qualsiasi registrazione degli eventi in informazioni correlata a EAPHost verrà eseguita tra **EAP \_ I \_ EAPHOST \_ FIRST** e **EAP \_ I \_ EAPHOST \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_EAPHOST_LAST"></span><span id="eap_i_eaphost_last"></span>**EAP \_ I \_ EAPHost per \_ ultimi**
+<span id="EAP_I_EAPHOST_LAST"></span><span id="eap_i_eaphost_last"></span>**EAP \_ I \_ EAPHOST \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804200FFL
@@ -118,12 +118,12 @@ Definisce il limite dei report informazioni; eventuali registrazioni di eventi i
 
 
 
-Definisce il limite dei report informazioni; eventuali registrazioni di eventi informativi correlati a EAPHost si verificheranno **prima tra EAP \_ i \_ EAPHost \_** e **EAP \_ i \_ EAPHost \_**.
+Definisce il limite dei report di informazioni. qualsiasi registrazione degli eventi in informazioni correlata a EAPHost verrà eseguita tra **EAP \_ I \_ EAPHOST \_ FIRST** e **EAP \_ I \_ EAPHOST \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_CERT_STORE_INACCESSIBLE"></span><span id="eap_e_cert_store_inaccessible"></span>**\_archivio certificati EAP E non \_ \_ \_ accessibile**
+<span id="EAP_E_CERT_STORE_INACCESSIBLE"></span><span id="eap_e_cert_store_inaccessible"></span>**ARCHIVIO \_ CERTIFICATI EAP E \_ \_ \_ INACCESSIBILE**
 </dt> <dd> <dl> <dt>
 
 0x80420011
@@ -131,12 +131,12 @@ Definisce il limite dei report informazioni; eventuali registrazioni di eventi i
 
 
 
-L'autenticatore o il peer non è in grado di accedere all'archivio certificati.
+Né l'autenticatore né il peer possono accedere all'archivio certificati.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_METHOD_NOT_INSTALLED"></span><span id="eap_e_eaphost_method_not_installed"></span>**\_metodo EAP \_ E \_ EAPHost \_ non \_ installato**
+<span id="EAP_E_EAPHOST_METHOD_NOT_INSTALLED"></span><span id="eap_e_eaphost_method_not_installed"></span>**METODO \_ \_ EAP EAPHOST \_ \_ NON \_ INSTALLATO**
 </dt> <dd> <dl> <dt>
 
 0x80420011
@@ -149,7 +149,7 @@ Il metodo EAP richiesto non è installato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_THIRDPARTY_METHOD_HOST_RESET"></span><span id="eap_e_eaphost_thirdparty_method_host_reset"></span>**\_reimpostazione \_ \_ \_ host metodo thirdparty \_ EAP E EAPHOST \_**
+<span id="EAP_E_EAPHOST_THIRDPARTY_METHOD_HOST_RESET"></span><span id="eap_e_eaphost_thirdparty_method_host_reset"></span>**REIMPOSTAZIONE \_ DELL'HOST DEL METODO \_ EAP EAPHOST \_ THIRDPARTY \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80420012
@@ -162,7 +162,7 @@ L'host del metodo di terze parti non risponde ed è stato riavviato automaticame
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_EAPQEC_INACCESSIBLE"></span><span id="eap_e_eaphost_eapqec_inaccessible"></span>**\_EAPQEC EAP \_ E \_ EAPHOST \_ inaccessibili**
+<span id="EAP_E_EAPHOST_EAPQEC_INACCESSIBLE"></span><span id="eap_e_eaphost_eapqec_inaccessible"></span>**EAP \_ \_ EAPHOST \_ EAPQEC \_ INACCESSIBILE**
 </dt> <dd> <dl> <dt>
 
 0x80420013
@@ -170,12 +170,12 @@ L'host del metodo di terze parti non risponde ed è stato riavviato automaticame
 
 
 
-EAPHost non è in grado di comunicare con il [client di imposizione di quarantena](/windows/desktop/NAP/nap-client-architecture) EAP (QeC) in un client abilitato per [Protezione accesso alla rete](/windows/desktop/NAP/network-access-protection-start-page) (NAP).
+EAPHost non è in grado di comunicare con il [](/windows/desktop/NAP/network-access-protection-start-page) [client](/windows/desktop/NAP/nap-client-architecture) di imposizione quarantena EAP (QEC) in un client abilitato per Protezione accesso alla rete.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_IDENTITY_UNKNOWN"></span><span id="eap_e_eaphost_identity_unknown"></span>**\_identità EAP \_ E \_ EAPHOST \_ sconosciuta**
+<span id="EAP_E_EAPHOST_IDENTITY_UNKNOWN"></span><span id="eap_e_eaphost_identity_unknown"></span>**IDENTITÀ \_ \_ EAPHOST \_ \_ SCONOSCIUTA**
 </dt> <dd> <dl> <dt>
 
 0x80420014
@@ -183,12 +183,12 @@ EAPHost non è in grado di comunicare con il [client di imposizione di quaranten
 
 
 
-EAPHost restituisce questo errore se l'autenticatore non riesce a eseguire l'autenticazione dopo l'invio dell'identità peer.
+EAPHost restituisce questo errore se l'autenticatore non riesce l'autenticazione dopo l'invio dell'identità peer.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_AUTHENTICATION_FAILED"></span><span id="eap_e_authentication_failed"></span>**\_autenticazione EAP \_ E \_ non riuscita**
+<span id="EAP_E_AUTHENTICATION_FAILED"></span><span id="eap_e_authentication_failed"></span>**AUTENTICAZIONE \_ EAP E \_ NON \_ RIUSCITA**
 </dt> <dd> <dl> <dt>
 
 0x80420015 
@@ -201,7 +201,7 @@ EAPHost restituisce questo errore in caso di errore di autenticazione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_EAPHOST_EAP_NEGOTIATION_FAILED"></span><span id="eap_i_eaphost_eap_negotiation_failed"></span>**\_ \_ \_ negoziazione EAP EAP EAPHost \_ \_ non riuscita**
+<span id="EAP_I_EAPHOST_EAP_NEGOTIATION_FAILED"></span><span id="eap_i_eaphost_eap_negotiation_failed"></span>**NEGOZIAZIONE \_ \_ EAPHOST \_ EAP IAP NON \_ \_ RIUSCITA**
 </dt> <dd> <dl> <dt>
 
 0x40420016
@@ -209,12 +209,12 @@ EAPHost restituisce questo errore in caso di errore di autenticazione.
 
 
 
-EAPHost registra questo evento informativo quando il client e il server non sono configurati con tipi EAP compatibili.
+EAPHost registra questo evento di informazioni quando il client e il server non sono configurati con tipi EAP compatibili.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_METHOD_INVALID_PACKET"></span><span id="eap_e_eaphost_method_invalid_packet"></span>**\_ \_ \_ \_ pacchetto non valido nel metodo EAP E EAPHost \_**
+<span id="EAP_E_EAPHOST_METHOD_INVALID_PACKET"></span><span id="eap_e_eaphost_method_invalid_packet"></span>**PACCHETTO \_ NON \_ VALIDO PER IL METODO EAPHOST \_ EAPHOST \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80420017
@@ -222,12 +222,12 @@ EAPHost registra questo evento informativo quando il client e il server non sono
 
 
 
-Un metodo EAP ha ricevuto un pacchetto EAP che non può essere elaborato. Un altro nome per il **\_ pacchetto EAP E \_ EAPHOST \_ Method \_ non valido \_** è il **\_ \_ \_ pacchetto EAP non valido**.
+Un metodo EAP ha ricevuto un pacchetto EAP che non può essere elaborato. Un altro nome per IL METODO **\_ \_ EAP EAPHOST \_ NON VALIDO \_ \_ PACKET** è **EAP METHOD INVALID \_ \_ \_ PACKET**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_REMOTE_INVALID_PACKET"></span><span id="eap_e_eaphost_remote_invalid_packet"></span>**\_ \_ pacchetto remoto EAP E EAPHost \_ \_ non valido \_**
+<span id="EAP_E_EAPHOST_REMOTE_INVALID_PACKET"></span><span id="eap_e_eaphost_remote_invalid_packet"></span>**PACCHETTO \_ EAP \_ EAPHOST \_ REMOTO \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x80420018
@@ -235,12 +235,12 @@ Un metodo EAP ha ricevuto un pacchetto EAP che non può essere elaborato. Un alt
 
 
 
-EAPHost ha ricevuto un pacchetto che non può essere elaborato. Un altro nome per **EAP \_ E \_ EAPHOST \_ Remote \_ \_ Packet** è un **\_ \_ pacchetto EAP non valido**.
+EAPHost ha ricevuto un pacchetto che non può essere elaborato. Un altro nome **per EAP \_ \_ EAP EAPHOST \_ REMOTE INVALID PACKET \_ \_ è** **EAP INVALID \_ \_ PACKET**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_XML_MALFORMED_"></span><span id="eap_e_eaphost_xml_malformed_"></span>**\_ \_ formato XML EAP E EAPHost non \_ \_ valido** 
+<span id="EAP_E_EAPHOST_XML_MALFORMED_"></span><span id="eap_e_eaphost_xml_malformed_"></span>**XML \_ \_ EAPHOST \_ EAPHOST \_ IN FORMATO NON VALIDO** 
 </dt> <dd> <dl> <dt>
 
 0x80420019
@@ -253,7 +253,7 @@ Convalida dello schema di configurazione EAPHost non riuscita.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_METHOD_CONFIG_DOES_NOT_SUPPORT_SSO"></span><span id="eap_e_method_config_does_not_support_sso"></span>**\_la configurazione del metodo EAP E non \_ \_ \_ \_ \_ supporta \_ SSO**
+<span id="EAP_E_METHOD_CONFIG_DOES_NOT_SUPPORT_SSO"></span><span id="eap_e_method_config_does_not_support_sso"></span>**LA CONFIGURAZIONE \_ DEL METODO EAP \_ NON SUPPORTA \_ \_ \_ \_ \_ L'ACCESSO SSO**
 </dt> <dd> <dl> <dt>
 
 0x8042001A
@@ -261,12 +261,12 @@ Convalida dello schema di configurazione EAPHost non riuscita.
 
 
 
-Windows 7 o versioni successive: il metodo EAP non supporta Single Sign-on (SSO) per la configurazione specificata.
+Windows 7 o versione successiva: il metodo EAP non supporta l'accesso Single Sign-On (SSO) per la configurazione fornita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_METHOD_OPERATION_NOT_SUPPORTED"></span><span id="eap_e_eaphost_method_operation_not_supported"></span>**\_operazione del metodo EAP E \_ EAPHost \_ \_ \_ non \_ supportata**
+<span id="EAP_E_EAPHOST_METHOD_OPERATION_NOT_SUPPORTED"></span><span id="eap_e_eaphost_method_operation_not_supported"></span>**OPERAZIONE \_ DEL METODO \_ EAPHOST EAPHOST \_ \_ NON \_ \_ SUPPORTATA**
 </dt> <dd> <dl> <dt>
 
 0x80420020
@@ -279,7 +279,7 @@ EAPHost restituisce questo errore quando un metodo EAP configurato non supporta 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_FIRST"></span><span id="eap_e_user_first"></span>**\_ \_ prima utente EAP \_ E**
+<span id="EAP_E_USER_FIRST"></span><span id="eap_e_user_first"></span>**EAP \_ E \_ USER \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x80420100L
@@ -287,12 +287,12 @@ EAPHost restituisce questo errore quando un metodo EAP configurato non supporta 
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore correlato all'utente tra il **\_ \_ \_ primo utente** e EAP e **\_ \_ \_ l'** utente.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato all'utente si verificherà tra **EAP \_ E USER \_ \_ FIRST** e **EAP E USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_LAST_"></span><span id="eap_e_user_last_"></span>**\_ \_ ultimo utente EAP \_ E** 
+<span id="EAP_E_USER_LAST_"></span><span id="eap_e_user_last_"></span>**EAP \_ E \_ USER \_ LAST** 
 </dt> <dd> <dl> <dt>
 
 0x804201FFL
@@ -300,12 +300,12 @@ Definisce il limite dei report di errore. si verificherà un errore correlato al
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore correlato all'utente tra il **\_ \_ \_ primo utente** e EAP e **\_ \_ \_ l'** utente.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato all'utente si verificherà tra **EAP \_ E USER \_ \_ FIRST** e **EAP E USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_USER_FIRST"></span><span id="eap_i_user_first"></span>**\_ \_ prima utente EAP \_ I**
+<span id="EAP_I_USER_FIRST"></span><span id="eap_i_user_first"></span>**EAP \_ I \_ USER \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x40420100L
@@ -313,12 +313,12 @@ Definisce il limite dei report di errore. si verificherà un errore correlato al
 
 
 
-Definisce il limite dei report informazioni; eventuali registrazioni di eventi informativi correlati a EAP si verificheranno tra l' **\_ \_ utente EAP \_ prima** e **\_ \_ \_ l'ultimo utente EAP i**.
+Definisce il limite dei report di informazioni; qualsiasi registrazione degli eventi in informazioni EAP correlata verrà eseguita tra **EAP \_ I USER \_ \_ FIRST** e **EAP I USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_USER_LAST"></span><span id="eap_i_user_last"></span>**\_ \_ ultimo utente EAP \_ I**
+<span id="EAP_I_USER_LAST"></span><span id="eap_i_user_last"></span>**EAP \_ I \_ USER \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x404201FFL
@@ -326,12 +326,12 @@ Definisce il limite dei report informazioni; eventuali registrazioni di eventi i
 
 
 
-Definisce il limite dei report informazioni; eventuali registrazioni di eventi informativi correlati a EAP si verificheranno tra l' **\_ \_ utente EAP \_ prima** e **\_ \_ \_ l'ultimo utente EAP i**.
+Definisce il limite dei report di informazioni; qualsiasi registrazione degli eventi in informazioni EAP correlata verrà eseguita tra **EAP \_ I USER \_ \_ FIRST** e **EAP I USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_NOT_FOUND"></span><span id="eap_e_user_cert_not_found"></span>**\_ \_ certificato utente EAP \_ E \_ non \_ trovato**
+<span id="EAP_E_USER_CERT_NOT_FOUND"></span><span id="eap_e_user_cert_not_found"></span>**CERTIFICATO \_ UTENTE EAP E \_ \_ NON \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 0x80420100
@@ -339,12 +339,12 @@ Definisce il limite dei report informazioni; eventuali registrazioni di eventi i
 
 
 
-EAPHost non è riuscito a trovare un certificato utente per l'autenticazione.
+EAPHost non è stato in grado di trovare un certificato utente per l'autenticazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_INVALID"></span><span id="eap_e_user_cert_invalid"></span>**\_ \_ certificato utente EAP \_ E \_ non valido**
+<span id="EAP_E_USER_CERT_INVALID"></span><span id="eap_e_user_cert_invalid"></span>**CERTIFICATO \_ UTENTE EAP \_ \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x80420101
@@ -352,12 +352,12 @@ EAPHost non è riuscito a trovare un certificato utente per l'autenticazione.
 
 
 
-Per il certificato utente utilizzato per l'autenticazione non è impostato l'utilizzo chiavi avanzato (EKU) appropriato.
+Per il certificato utente utilizzato per l'autenticazione non è impostato un utilizzo delle chiavi esteso (EKU) appropriato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_EXPIRED"></span><span id="eap_e_user_cert_expired"></span>**\_ \_ certificato utente EAP \_ E \_ scaduto**
+<span id="EAP_E_USER_CERT_EXPIRED"></span><span id="eap_e_user_cert_expired"></span>**CERTIFICATO \_ UTENTE EAP E \_ \_ \_ SCADUTO**
 </dt> <dd> <dl> <dt>
 
 0x80420102
@@ -365,12 +365,12 @@ Per il certificato utente utilizzato per l'autenticazione non è impostato l'uti
 
 
 
-EAPhost ha rilevato un certificato utente scaduto.
+EAPhost ha trovato un certificato utente scaduto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_REVOKED"></span><span id="eap_e_user_cert_revoked"></span>**\_ \_ certificato utente EAP \_ E \_ revocato**
+<span id="EAP_E_USER_CERT_REVOKED"></span><span id="eap_e_user_cert_revoked"></span>**CERTIFICATO \_ UTENTE EAP E \_ \_ \_ REVOCATO**
 </dt> <dd> <dl> <dt>
 
 0x80420103
@@ -383,7 +383,7 @@ Il certificato utente usato per l'autenticazione è stato revocato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_OTHER_ERROR"></span><span id="eap_e_user_cert_other_error"></span>**\_errore del \_ \_ certificato utente \_ EAP \_ E**
+<span id="EAP_E_USER_CERT_OTHER_ERROR"></span><span id="eap_e_user_cert_other_error"></span>**EAP \_ E \_ USER \_ CERT \_ OTHER \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x80420104
@@ -391,12 +391,12 @@ Il certificato utente usato per l'autenticazione è stato revocato.
 
 
 
-Si è verificato un errore sconosciuto con la certificazione utente utilizzata per l'autenticazione.
+Si è verificato un errore sconosciuto con la certificazione utente usata per l'autenticazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_REJECTED_"></span><span id="eap_e_user_cert_rejected_"></span>**\_ \_ certificato utente EAP \_ E \_ rifiutato** 
+<span id="EAP_E_USER_CERT_REJECTED_"></span><span id="eap_e_user_cert_rejected_"></span>**CERTIFICATO \_ UTENTE EAP \_ \_ E \_ RIFIUTATO** 
 </dt> <dd> <dl> <dt>
 
 0x80420105
@@ -409,7 +409,7 @@ L'autenticatore ha rifiutato la certificazione utente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_USER_ACCOUNT_OTHER_ERROR"></span><span id="eap_i_user_account_other_error"></span>**\_ \_ \_ errore dell'account utente \_ EAP I \_**
+<span id="EAP_I_USER_ACCOUNT_OTHER_ERROR"></span><span id="eap_i_user_account_other_error"></span>**EAP \_ I \_ USER \_ ACCOUNT \_ OTHER \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x40420110
@@ -417,12 +417,12 @@ L'autenticatore ha rifiutato la certificazione utente.
 
 
 
-Si è verificato un errore EAP dopo uno scambio di identità, che indica la probabilità di un problema con l'account dell'utente che esegue l'autenticazione.
+È stato ricevuto un errore EAP dopo uno scambio di identità, che indica la probabilità di un problema con l'account dell'utente di autenticazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CREDENTIALS_REJECTED"></span><span id="eap_e_user_credentials_rejected"></span>**\_ \_ credenziali utente EAP \_ E \_ rifiutate**
+<span id="EAP_E_USER_CREDENTIALS_REJECTED"></span><span id="eap_e_user_credentials_rejected"></span>**CREDENZIALI \_ UTENTE EAP E \_ \_ \_ RIFIUTATE**
 </dt> <dd> <dl> <dt>
 
 0x80420111
@@ -435,7 +435,7 @@ L'autenticatore ha rifiutato le credenziali utente per l'autenticazione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_NAME_PASSWORD_REJECTED"></span><span id="eap_e_user_name_password_rejected"></span>**\_ \_ password nome utente EAP E \_ \_ \_ rifiutata**
+<span id="EAP_E_USER_NAME_PASSWORD_REJECTED"></span><span id="eap_e_user_name_password_rejected"></span>**PASSWORD \_ DEL NOME UTENTE EAP \_ E \_ \_ \_ RIFIUTATA**
 </dt> <dd> <dl> <dt>
 
 0x80420112
@@ -443,12 +443,12 @@ L'autenticatore ha rifiutato le credenziali utente per l'autenticazione.
 
 
 
-Windows 7 o versioni successive: autenticazione non riuscita. L'autenticatore ha rifiutato le credenziali utente.
+Windows 7 o versione successiva: autenticazione non riuscita. L'autenticatore ha rifiutato le credenziali utente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_NO_SMART_CARD_READER"></span><span id="eap_e_no_smart_card_reader"></span>**EAP \_ E \_ nessun \_ lettore di Smart \_ card \_**
+<span id="EAP_E_NO_SMART_CARD_READER"></span><span id="eap_e_no_smart_card_reader"></span>**EAP \_ E \_ NO \_ SMART \_ CARD \_ READER**
 </dt> <dd> <dl> <dt>
 
 0x80420113
@@ -456,12 +456,12 @@ Windows 7 o versioni successive: autenticazione non riuscita. L'autenticatore ha
 
 
 
-Windows 7 o versioni successive: non è stato trovato alcun lettore di smart card.
+Windows 7 o versione successiva: non è stato trovato smart card lettore.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_FIRST"></span><span id="eap_e_server_first"></span>**\_server EAP \_ E \_ prima**
+<span id="EAP_E_SERVER_FIRST"></span><span id="eap_e_server_first"></span>**EAP \_ E \_ SERVER \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x80420200L
@@ -469,12 +469,12 @@ Windows 7 o versioni successive: non è stato trovato alcun lettore di smart car
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo al server tra il **\_ \_ \_ primo** e il server EAP e il server per **\_ \_ \_ ultimo**.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al server si verificherà tra **EAP \_ E SERVER \_ \_ FIRST** e **EAP E SERVER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_LAST"></span><span id="eap_e_server_last"></span>**\_ \_ ultimo server EAP \_ E**
+<span id="EAP_E_SERVER_LAST"></span><span id="eap_e_server_last"></span>**EAP \_ E \_ SERVER \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804202FFL
@@ -482,12 +482,12 @@ Definisce il limite dei report di errore. si verificherà un errore relativo al 
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo al server tra il **\_ \_ \_ primo** e il server EAP e il server per **\_ \_ \_ ultimo**.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al server si verificherà tra **EAP \_ E SERVER \_ \_ FIRST** e **EAP E SERVER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_NOT_FOUND"></span><span id="eap_e_server_cert_not_found"></span>**\_ \_ certificato server EAP \_ E \_ non \_ trovato**
+<span id="EAP_E_SERVER_CERT_NOT_FOUND"></span><span id="eap_e_server_cert_not_found"></span>**CERTIFICATO SERVER EAP \_ \_ E NON \_ \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 0x80420200
@@ -500,7 +500,7 @@ EAPHost non è stato in grado di trovare il certificato del server per l'autenti
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_INVALID"></span><span id="eap_e_server_cert_invalid"></span>**\_ \_ certificato server EAP \_ E \_ non valido**
+<span id="EAP_E_SERVER_CERT_INVALID"></span><span id="eap_e_server_cert_invalid"></span>**CERTIFICATO DEL SERVER EAP \_ \_ E NON \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x80420201
@@ -508,12 +508,12 @@ EAPHost non è stato in grado di trovare il certificato del server per l'autenti
 
 
 
-Il certificato del server utilizzato per l'autenticazione non dispone di un set di utilizzo chiavi avanzato (EKU) appropriato.
+Per il certificato del server utilizzato per l'autenticazione non è impostato un utilizzo chiavi esteso (EKU) appropriato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_EXPIRED"></span><span id="eap_e_server_cert_expired"></span>**\_ \_ certificato server EAP \_ E \_ scaduto**
+<span id="EAP_E_SERVER_CERT_EXPIRED"></span><span id="eap_e_server_cert_expired"></span>**CERTIFICATO SERVER EAP \_ \_ \_ \_ SCADUTO**
 </dt> <dd> <dl> <dt>
 
 0x80420202
@@ -526,7 +526,7 @@ EAPhost ha rilevato un certificato server scaduto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_REVOKED"></span><span id="eap_e_server_cert_revoked"></span>**\_ \_ certificato server EAP \_ E \_ revocato**
+<span id="EAP_E_SERVER_CERT_REVOKED"></span><span id="eap_e_server_cert_revoked"></span>**CERTIFICATO SERVER EAP \_ \_ E \_ \_ REVOCATO**
 </dt> <dd> <dl> <dt>
 
 0x80420203
@@ -534,12 +534,12 @@ EAPhost ha rilevato un certificato server scaduto.
 
 
 
-Il certificato server usato per l'autenticazione è stato revocato.
+Il certificato del server usato per l'autenticazione è stato revocato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_OTHER_ERROR"></span><span id="eap_e_server_cert_other_error"></span>**\_errore del \_ certificato del server EAP E \_ \_ altro \_**
+<span id="EAP_E_SERVER_CERT_OTHER_ERROR"></span><span id="eap_e_server_cert_other_error"></span>**ALTRO \_ ERRORE DEL \_ CERTIFICATO DEL SERVER \_ \_ \_ EAP E**
 </dt> <dd> <dl> <dt>
 
 0x80420204
@@ -552,7 +552,7 @@ Si è verificato un errore sconosciuto con il certificato del server.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_FIRST"></span><span id="eap_e_user_root_cert_first"></span>**\_ \_ \_ \_ primo certificato radice utente EAP E \_**
+<span id="EAP_E_USER_ROOT_CERT_FIRST"></span><span id="eap_e_user_root_cert_first"></span>**EAP \_ E \_ USER \_ ROOT \_ CERT \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x80420300L
@@ -560,12 +560,12 @@ Si è verificato un errore sconosciuto con il certificato del server.
 
 
 
-Definisce il limite dei report di errore. qualsiasi errore relativo al certificato radice utente si verificherà prima tra il certificato **\_ \_ \_ radice utente \_ \_ EAP** e e il certificato **\_ \_ \_ radice \_ \_ utente EAP** e.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al certificato radice dell'utente si verificherà tra **EAP \_ E USER ROOT \_ \_ \_ CERT \_ FIRST** e **EAP E USER ROOT \_ \_ \_ \_ CERT \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_LAST"></span><span id="eap_e_user_root_cert_last"></span>**\_ \_ \_ \_ ultimo certificato radice utente EAP E \_**
+<span id="EAP_E_USER_ROOT_CERT_LAST"></span><span id="eap_e_user_root_cert_last"></span>**EAP \_ E \_ USER \_ ROOT \_ CERT \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804203FFL
@@ -573,12 +573,12 @@ Definisce il limite dei report di errore. qualsiasi errore relativo al certifica
 
 
 
-Definisce il limite dei report di errore. qualsiasi errore relativo al certificato radice utente si verificherà prima tra il certificato **\_ \_ \_ radice utente \_ \_ EAP** e e il certificato **\_ \_ \_ radice \_ \_ utente EAP** e.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al certificato radice dell'utente si verificherà tra **EAP \_ E USER ROOT \_ \_ \_ CERT \_ FIRST** e **EAP E USER ROOT \_ \_ \_ \_ CERT \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_user_root_cert_not_found"></span>**\_ \_ certificato radice utente EAP E \_ \_ \_ non \_ trovato**
+<span id="EAP_E_USER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_user_root_cert_not_found"></span>**CERTIFICATO RADICE UTENTE EAP \_ E \_ NON \_ \_ \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 0x80420300
@@ -586,12 +586,12 @@ Definisce il limite dei report di errore. qualsiasi errore relativo al certifica
 
 
 
-EAPHost non è riuscito a trovare un certificato in un archivio certificati radice attendibile per la convalida della certificazione utente.
+EAPHost non è stato in grado di trovare un certificato in un archivio certificati radice attendibile per la convalida della certificazione utente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_INVALID"></span><span id="eap_e_user_root_cert_invalid"></span>**\_ \_ certificato radice utente EAP E \_ \_ \_ non valido**
+<span id="EAP_E_USER_ROOT_CERT_INVALID"></span><span id="eap_e_user_root_cert_invalid"></span>**CERTIFICATO RADICE UTENTE EAP \_ \_ E NON \_ \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x80420301
@@ -599,12 +599,12 @@ EAPHost non è riuscito a trovare un certificato in un archivio certificati radi
 
 
 
-L'autenticazione non è riuscita perché il certificato radice usato per la rete non è valido.
+L'autenticazione non è riuscita perché il certificato radice usato per questa rete non è valido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_EXPIRED"></span><span id="eap_e_user_root_cert_expired"></span>**\_ \_ \_ certificato radice utente EAP \_ E \_ scaduto**
+<span id="EAP_E_USER_ROOT_CERT_EXPIRED"></span><span id="eap_e_user_root_cert_expired"></span>**CERTIFICATO RADICE UTENTE EAP \_ \_ E \_ \_ \_ SCADUTO**
 </dt> <dd> <dl> <dt>
 
 0x80420302
@@ -617,7 +617,7 @@ Il certificato radice attendibile necessario per la convalida del certificato ut
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_FIRST"></span><span id="eap_e_server_root_cert_first"></span>**\_ \_ \_ \_ primo certificato radice del server EAP E \_**
+<span id="EAP_E_SERVER_ROOT_CERT_FIRST"></span><span id="eap_e_server_root_cert_first"></span>**EAP \_ E \_ SERVER \_ ROOT \_ CERT \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x80420400L
@@ -625,12 +625,12 @@ Il certificato radice attendibile necessario per la convalida del certificato ut
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo al certificato radice del server tra il certificato **radice del server EAP e \_ \_ \_ \_ \_ prima** e il certificato **\_ \_ \_ radice \_ \_** del server EAP e.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al certificato radice del server si verificherà tra **EAP \_ E SERVER \_ ROOT \_ \_ CERT \_ FIRST** **e EAP E SERVER ROOT \_ \_ \_ \_ CERT \_ FIRST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_LAST"></span><span id="eap_e_server_root_cert_last"></span>**\_ \_ \_ \_ ultimo certificato radice server EAP E \_**
+<span id="EAP_E_SERVER_ROOT_CERT_LAST"></span><span id="eap_e_server_root_cert_last"></span>**EAP \_ E \_ SERVER \_ ROOT \_ CERT \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804204FFL
@@ -638,12 +638,12 @@ Definisce il limite dei report di errore. si verificherà un errore relativo al 
 
 
 
-Definisce il limite dei report di errore. si verificherà un errore relativo al certificato radice del server tra il certificato **radice del server EAP e \_ \_ \_ \_ \_ prima** e il certificato **\_ \_ \_ radice \_ \_** del server EAP e.
+Definisce il limite delle segnalazioni errori. qualsiasi errore correlato al certificato radice del server si verificherà tra **EAP \_ E SERVER \_ ROOT \_ \_ CERT \_ FIRST** **e EAP E SERVER ROOT \_ \_ \_ \_ CERT \_ FIRST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_server_root_cert_not_found"></span>**\_ \_ certificato radice del server EAP E \_ \_ \_ non \_ trovato**
+<span id="EAP_E_SERVER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_server_root_cert_not_found"></span>**CERTIFICATO RADICE DEL SERVER EAP \_ E \_ NON \_ \_ \_ \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 0x80420400
@@ -651,12 +651,12 @@ Definisce il limite dei report di errore. si verificherà un errore relativo al 
 
 
 
-EAPHost non è riuscito a trovare un certificato radice in un archivio certificati radice attendibile per la convalida della certificazione server.
+EAPHost non è stato in grado di trovare un certificato radice in un archivio certificati radice attendibile per la convalida della certificazione server.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_INVALID__________"></span><span id="eap_e_server_root_cert_invalid__________"></span>**\_ \_ certificato radice del server EAP E \_ \_ \_ non valido** 
+<span id="EAP_E_SERVER_ROOT_CERT_INVALID__________"></span><span id="eap_e_server_root_cert_invalid__________"></span>**CERTIFICATO RADICE DEL SERVER EAP \_ E \_ NON \_ \_ \_ VALIDO** 
 </dt> <dd> <dl> <dt>
 
 0x80420401
@@ -664,12 +664,12 @@ EAPHost non è riuscito a trovare un certificato radice in un archivio certifica
 
 
 
-L'autenticazione non è riuscita perché il certificato server richiesto per la rete nel computer server non è valido.
+L'autenticazione non è riuscita perché il certificato del server necessario per questa rete nel computer server non è valido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_NAME_REQUIRED"></span><span id="eap_e_server_root_cert_name_required"></span>**\_ \_ \_ nome certificato radice server EAP E \_ \_ \_ obbligatorio**
+<span id="EAP_E_SERVER_ROOT_CERT_NAME_REQUIRED"></span><span id="eap_e_server_root_cert_name_required"></span>**NOME CERTIFICATO RADICE SERVER EAP \_ \_ \_ \_ \_ \_ EAP OBBLIGATORIO**
 </dt> <dd> <dl> <dt>
 
 0x80420406
@@ -677,7 +677,7 @@ L'autenticazione non è riuscita perché il certificato server richiesto per la 
 
 
 
-L'autenticazione non è riuscita perché il certificato nel computer server non ha un nome di server specificato.
+L'autenticazione non è riuscita perché per il certificato nel computer server non è specificato un nome di server.
 
 
 </dt> </dl> </dd> </dl>
@@ -686,8 +686,8 @@ L'autenticazione non è riuscita perché il certificato nel computer server non 
 
 Esistono nomi alternativi per determinati errori:
 
--   Un altro nome per il **\_ pacchetto EAP E \_ EAPHOST \_ Method \_ non valido \_** è il **\_ \_ \_ pacchetto EAP non valido**.
--   Un altro nome per **EAP \_ E \_ EAPHOST \_ Remote \_ \_ Packet** è un **\_ \_ pacchetto EAP non valido**.
+-   Un altro nome per **IL \_ METODO \_ EAP EAPHOST \_ PACCHETTO NON \_ \_ VALIDO** è **METODO EAP PACCHETTO NON \_ \_ \_ VALIDO**.
+-   Un altro nome **per EAP \_ \_ EAPHOST \_ REMOTE INVALID \_ \_ PACKET** è **EAP INVALID \_ \_ PACKET**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -695,9 +695,9 @@ Esistono nomi alternativi per determinati errori:
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Intestazione<br/>                   | <dl> <dt>Eaphosterror. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                      |
+| Intestazione<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
 
 
 

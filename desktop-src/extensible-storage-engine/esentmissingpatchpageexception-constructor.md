@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMissingPatchPageException'
+description: 'Altre informazioni: Costruttore EsentMissingPatchPageException'
 title: Costruttore EsentMissingPatchPageException
 TOCTitle: 'EsentMissingPatchPageException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingPatchPageException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b52ead7fcdac3e9ea1c61cfc9de59a652b27cd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca165bebaf44611cdf20dc0e70794462f756231f805d08c2a14ce2e9c368492d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734241"
 ---
 # <a name="esentmissingpatchpageexception-constructor"></a>Costruttore EsentMissingPatchPageException
 
 Inizializza una nuova istanza della classe EsentMissingPatchPageException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMissingPatchPageException()
 
 [Membri di EsentMissingPatchPageException](./esentmissingpatchpageexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

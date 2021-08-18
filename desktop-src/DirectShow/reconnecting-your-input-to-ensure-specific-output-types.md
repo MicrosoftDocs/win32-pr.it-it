@@ -4,23 +4,23 @@ ms.assetid: c83d002e-59bf-4d03-9917-e39ceab9a4ce
 title: Riconnessione dell'input per garantire tipi di output specifici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d74d6914989231542ddfea9f97e93ce860d34eb4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 299d8aa400619043cc0d79242e35065ac4fc8490aad4972a33be6aea8fc4e7b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747311"
 ---
 # <a name="reconnecting-your-input-to-ensure-specific-output-types"></a>Riconnessione dell'input per garantire tipi di output specifici
 
-I filtri implementano il metodo [**IAMStreamConfig:: Seformatt**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) per impostare il formato audio o video prima che i pin del filtro siano connessi. Se il pin di output è già connesso ed è possibile specificare un nuovo tipo, riconnettere il PIN, ma solo se l'altro filtro può accettare il nuovo tipo. Se l'altro filtro non è in grado di accettare il tipo di supporto, non riuscire a eseguire la chiamata a **Seformatt** e lasciare solo la connessione.
+I filtri implementano il metodo [**IAMStreamConfig::SetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) per impostare il formato audio o video prima che i pin del filtro siano connessi. Se il pin di output è già connesso ed è possibile specificare un nuovo tipo, riconnettere il pin, ma solo se l'altro filtro può accettare il nuovo tipo. Se l'altro filtro non può accettare il tipo di supporto, non riesce la chiamata a **SetFormat** e lascia sola la connessione.
 
-Un filtro di trasformazione non può avere tipi di output preferiti, a meno che il pin di input non sia connesso. In tal caso, i metodi **Seformatt** e [**IAMStreamConfig:: GETSTREAMCAPS**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) devono restituire VFW \_ e \_ non \_ connessi fino a quando il pin di input non è connesso. In caso contrario, questi metodi possono funzionare come di consueto.
+Un filtro di trasformazione potrebbe non avere tipi di output preferiti a meno che il pin di input non sia connesso. In tal caso, i **metodi SetFormat** e [**IAMStreamConfig::GetStreamCaps**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) devono restituire VFW E NOT CONNECTED fino a quando non viene connesso il \_ pin di \_ \_ input. In caso contrario, questi metodi possono funzionare come di consueto.
 
-In alcuni casi è utile riconnettere i pin quando si offre un formato in una connessione stabilita. Si supponga, ad esempio, che un filtro possa comprimere video RGB a 24 bit nel formato X e che sia in grado di comprimere il video RGB a 8 bit nel formato Y. Il pin di output può eseguire una delle operazioni seguenti:
+In alcuni casi è utile riconnettere i pin quando si offre un formato in una connessione stabilita. Si supponga, ad esempio, che un filtro possa comprimere video RGB a 24 bit nel formato X e che possa comprimere video RGB a 8 bit nel formato Y. Il pin di output può eseguire una delle operazioni seguenti:
 
--   Offrire sempre entrambe le opzioni X e Y in **GetStreamCaps** e accettare sempre le opzioni x e y in **seformatt**.
--   Offrire e accettare solo il formato X se il tipo di input è RGB a 24 bit. Offrire e accettare solo il formato Y se il tipo di input è RGB a 8 bit. Interrompere entrambi i metodi se il pin di input non è connesso.
+-   Offrire sempre X e Y in **GetStreamCaps** e accettare sempre sia X che Y in **SetFormat**.
+-   Offrire e accettare solo il formato X se il tipo di input è RGB a 24 bit. Offrire e accettare solo il formato Y se il tipo di input RGB a 8 bit. Eseguire l'esito negativo di entrambi i metodi se il pin di input non è connesso.
 
 In entrambi i casi, sarà necessario un codice di riconnessione simile al seguente:
 

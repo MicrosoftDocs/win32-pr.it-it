@@ -1,6 +1,6 @@
 ---
 title: Esempio di trigger di registrazione (scripting)
-description: Questo esempio di scripting Mostra come creare un'attività pianificata per l'esecuzione del blocco note quando un'attività viene registrata.
+description: Questo esempio di scripting illustra come creare un'attività pianificata per l'Blocco note quando viene registrata un'attività.
 ms.assetid: 956b3a21-7d36-4d06-be84-690884ba653a
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,34 +9,34 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bce6271927e74e31f25b3ac86783b35899bbd862
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f036d4772c98392881f254e07e192c970a2cb407727294c7f196c9c15cb9e11f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011321"
 ---
 # <a name="registration-trigger-example-scripting"></a>Esempio di trigger di registrazione (scripting)
 
-Questo esempio di scripting Mostra come creare un'attività pianificata per l'esecuzione del blocco note quando un'attività viene registrata. L'attività contiene un trigger di registrazione che specifica un limite iniziale e un limite finale per l'attività. Il limite iniziale specifica quando viene attivato il trigger. L'attività contiene anche un'azione che specifica l'attività per l'esecuzione del blocco note.
+Questo esempio di scripting illustra come creare un'attività pianificata per l'Blocco note quando viene registrata un'attività. L'attività contiene un trigger di registrazione che specifica un limite iniziale e un limite finale per l'attività. Il limite iniziale specifica quando viene attivato il trigger. L'attività contiene anche un'azione che specifica l'attività da eseguire Blocco note.
 
 > [!Note]  
-> Quando si aggiorna un'attività con un trigger di registrazione, l'attività verrà eseguita dopo l'aggiornamento.
+> Quando un'attività con un trigger di registrazione viene aggiornata, l'attività verrà eseguita dopo l'aggiornamento.
 
- 
+ 
 
-Nella procedura riportata di seguito viene descritto come pianificare un eseguibile, ad esempio Blocco note, da avviare quando viene registrata un'attività.
+La procedura seguente descrive come pianificare un eseguibile, ad esempio Blocco note per l'avvio quando viene registrata un'attività.
 
-**Per pianificare l'avvio del blocco note quando viene registrata un'attività**
+**Per pianificare Blocco note l'avvio quando un'attività viene registrata**
 
-1.  Creare un oggetto [**TaskService**](taskservice.md) . Questo oggetto consente di creare l'attività in una cartella specificata.
-2.  Ottenere una cartella attività e creare un'attività. Usare il metodo [**TaskService. GetFolder**](taskservice-getfolder.md) per ottenere la cartella in cui è archiviata l'attività e il metodo [**TaskService. newTask**](taskservice-newtask.md) per creare l'oggetto [**TaskDefinition**](taskdefinition.md) che rappresenta l'attività.
-3.  Definire le informazioni sull'attività usando l'oggetto [**TaskDefinition**](taskdefinition.md) . Utilizzare la proprietà [**TaskDefinition. Settings**](taskdefinition-settings.md) per definire le impostazioni che determinano il modo in cui il servizio Utilità di pianificazione esegue l'attività e la proprietà [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) per definire le informazioni che descrivono l'attività.
-4.  Creare un trigger di registrazione usando la proprietà [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Questa proprietà fornisce l'accesso all'oggetto [**TriggerCollection**](triggercollection.md) . Usare il metodo [**TriggerCollection. Create**](triggercollection-create.md) (specificando il tipo di trigger che si vuole creare) per creare un trigger di registrazione.
-5.  Creare un'azione per l'attività da eseguire usando la proprietà [**TaskDefinition. Actions**](taskdefinition-actions.md) . Questa proprietà consente di accedere all'oggetto [**ActionCollection**](actioncollection.md) . Utilizzare il metodo [**ActionCollection. Create**](actioncollection-create.md) per specificare il tipo di azione che si desidera creare. Questo esempio usa un oggetto [**ExecAction**](execaction.md) , che rappresenta un'azione che avvia un eseguibile.
-6.  Registrare l'attività usando il metodo [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) .
+1.  Creare un [**oggetto TaskService.**](taskservice.md) Questo oggetto consente di creare l'attività in una cartella specificata.
+2.  Ottenere una cartella di attività e creare un'attività. Usare il [**metodo TaskService.GetFolder**](taskservice-getfolder.md) per ottenere la cartella in cui è archiviata l'attività e il metodo [**TaskService.NewTask**](taskservice-newtask.md) per creare l'oggetto [**TaskDefinition**](taskdefinition.md) che rappresenta l'attività.
+3.  Definire le informazioni sull'attività usando [**l'oggetto TaskDefinition.**](taskdefinition.md) Usare la [**proprietà TaskDefinition.Impostazioni**](taskdefinition-settings.md) per definire le impostazioni che determinano come il servizio Utilità di pianificazione esegue l'attività e la [**proprietà TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) per definire le informazioni che descrivono l'attività.
+4.  Creare un trigger di registrazione usando la [**proprietà TaskDefinition.Triggers.**](taskdefinition-triggers.md) Questa proprietà fornisce l'accesso [**all'oggetto TriggerCollection.**](triggercollection.md) Usare il [**metodo TriggerCollection.Create**](triggercollection-create.md) (che specifica il tipo di trigger che si vuole creare) per creare un trigger di registrazione.
+5.  Creare un'azione per l'esecuzione dell'attività usando la [**proprietà TaskDefinition.Actions.**](taskdefinition-actions.md) Questa proprietà fornisce l'accesso [**all'oggetto ActionCollection.**](actioncollection.md) Usare il [**metodo ActionCollection.Create**](actioncollection-create.md) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato [**un oggetto ExecAction,**](execaction.md) che rappresenta un'azione che avvia un eseguibile.
+6.  Registrare l'attività usando il [**metodo TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md)
 
-Nell'esempio VBScript seguente viene illustrato come creare un'attività per la pianificazione del blocco note da eseguire quando l'attività è registrata.
+L'esempio VBScript seguente illustra come creare un'attività che pianifica Blocco note'esecuzione quando l'attività viene registrata.
 
 
 ```VB
@@ -119,12 +119,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

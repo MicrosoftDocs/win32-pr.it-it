@@ -1,9 +1,9 @@
 ---
-title: funzione glDisable (GL. h)
-description: Le funzioni glEnable e glDisable abilitano o disabilitano le funzionalità di OpenGL. | funzione glDisable (GL. h)
+title: Funzione glDisable (Gl.h)
+description: Le funzioni glEnable e glDisable abilitano o disabilitano le funzionalità OpenGL. | Funzione glDisable (Gl.h)
 ms.assetid: 094f730e-5e2b-485e-8d9d-fee2902d3d5f
 keywords:
-- funzione glDisable OpenGL
+- Funzione glDisable OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eff5c12e53eb060777f75ad537bed265401a7a26
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a124421684fc2e1b5826e149b90f9d249a6236c792f3830fa2a10e29793d0935
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625731"
 ---
-# <a name="gldisable-function"></a>glDisable (funzione)
+# <a name="gldisable-function"></a>Funzione glDisable
 
-Le funzioni [**glEnable**](glenable.md) e **glDisable** abilitano o disabilitano le funzionalità di OpenGL.
+Le [**funzioni glEnable**](glenable.md) e **glDisable** abilitano o disabilitano le funzionalità OpenGL.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ void WINAPI glDisable(
 
 <dl> <dt>
 
-*limite* 
+*Cap* 
 </dt> <dd>
 
 Costante simbolica che indica una funzionalità OpenGL.
 
-Per informazioni sui valori che possono essere accettati da *Cap* , vedere la sezione Osservazioni riportata di seguito.
+Per informazioni sul limite *di valori* che può essere preso, vedere la sezione Osservazioni seguente.
 
 </dd> </dl>
 
@@ -55,76 +55,76 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Cap* non è uno dei valori elencati nella sezione Osservazioni precedente.<br/>                                                   |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ \_ NON VALIDA**</dt> </dl>      | *cap* non è uno dei valori elencati nella sezione Osservazioni precedente.<br/>                                                   |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Le funzioni [**glEnable**](glenable.md) e **glDisable** abilitano e disabilitano diverse funzionalità grafiche OpenGL. Usare [**glIsEnabled**](glisenabled.md) o [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) per determinare l'impostazione corrente di tutte le funzionalità.
+Le [**funzioni glEnable**](glenable.md) e **glDisable** abilitano e disabilitano varie funzionalità grafiche OpenGL. Usare [**glIsEnabled**](glisenabled.md) o [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) per determinare l'impostazione corrente di qualsiasi funzionalità.
 
-Sia [**glEnable**](glenable.md) che **glDisable** accettano un solo argomento, *Cap*, che può assumere uno dei valori seguenti:
+Sia [**glEnable che**](glenable.md) **glDisable** accettano un solo argomento, *cap*, che può assumere uno dei valori seguenti:
 
 
 
 | Valore                       | Significato                                                                                                                                                                                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_test GL Alpha \_             | Se abilitata, eseguire il test alfa. Vedere [**glAlphaFunc**](glalphafunc.md).                                                                                                                                                                                       |
-| GL \_ auto \_ normale            | Se abilitata, calcola i vettori normali della superficie di calcolo in modo analitico quando i \_ vertici di GL map2 \_ Vertex \_ 3 o GL \_ map2 \_ sono stati \_ generati. Vedere [**glMap2**](glmap2.md).                                                                                        |
-| \_Blend GL                   | Se abilitata, combina i valori dei colori RGBA in ingresso con i valori nei buffer dei colori. Vedere [**glBlendFunc**](glblendfunc.md).                                                                                                                              |
-| \_Piano di ritaglio GL \_ *i*          | Se abilitata, ritagliare la geometria rispetto *al piano di* ritaglio definito dall'utente. Vedere [**glClipPlane**](glclipplane.md).                                                                                                                                                  |
-| \_operazione di \_ logica \_ colori GL        | Se abilitata, applicare l'operazione logica corrente ai valori del buffer dei colori e del colore RGBA in ingresso. Vedere [**glLogicOp**](gllogicop.md).                                                                                                                     |
-| \_materiale colore \_ GL         | Se abilitata, avere uno o più parametri Material tenere traccia del colore corrente. Vedere [**glColorMaterial**](glcolormaterial.md).                                                                                                                                   |
-| superficie di selezione GL \_ \_              | Se abilitata, i poligoni vengono raccolti in base al relativo avvolgimento nelle coordinate della finestra. Vedere [**glCullFace**](glcullface.md).                                                                                                                                               |
-| \_test di profondità GL \_             | Se abilitata, eseguire confronti di profondità e aggiornare il buffer di profondità. Vedere [**glDepthFunc**](gldepthfunc.md) e [**glDepthRange**](gldepthrange.md).                                                                                                              |
-| \_dithering GL                  | Se abilitata, i componenti di colore o gli indici di dithering prima che vengano scritti nel buffer dei colori.                                                                                                                                                                 |
-| \_nebbia GL                     | Se abilitata, fondere un colore di nebbia al colore di post-texturing. Vedere [**glFog**](glfog.md).                                                                                                                                                                    |
-| \_ \_ operazione logica indice \_ GL        | Se abilitata, applicare l'operazione logica corrente agli indici indici in ingresso e al buffer dei colori. Vedere [**glLogicOp**](gllogicop.md).                                                                                                                         |
-| GL \_ Light *i*                | Se abilitata, includere la luce *i* nella valutazione dell'equazione di illuminazione. Vedere [**glLightModel**](gllightmodel-functions.md) e [**glLight**](gllight-functions.md).                                                                                      |
-| \_illuminazione GL                | Se abilitata, usare i parametri di illuminazione correnti per calcolare il colore o l'indice del vertice. Se disabilitato, associare il colore o l'indice corrente a ogni vertice. Vedere [**glMaterial**](glmaterial-functions.md), **glLightModel** e **glLight**.                |
-| \_linea GL \_ smussata            | Se abilitata, creare linee con filtri corretti. Se è disabilitata, creare linee con alias. Vedere [**glLineWidth**](gllinewidth.md).                                                                                                                                     |
-| \_stipple linea \_ GL           | Se abilitata, usare il modello stipple di riga corrente quando si disegnano le linee. Vedere [**glLineStipple**](gllinestipple.md).                                                                                                                                            |
-| \_op logica \_ GL               | Se abilitata, applicare l'operazione logica attualmente selezionata agli indici del buffer di colore e in ingresso. Vedere [**glLogicOp**](gllogicop.md).                                                                                                                    |
-| \_Mappa1 \_ colore \_ 4 GL          | Se abilitata, le chiamate a [**glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano valori RGBA. Vedere anche [**glMap1**](glmap1.md).                                           |
-| \_Indice MAPPA1 \_ GL             | Se abilitata, le chiamate a **glEvalCoord1**, **glEvalMesh1** e **glEvalPoint1** generano indici colori. Vedere anche **glMap1**.                                                                                                                                   |
-| \_Normale MAPPA1 \_ GL            | Se abilitata, le chiamate a [**glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano normali. Vedere anche [**glMap1**](glmap1.md).                                               |
-| \_Trama GL \_ Mappa1 \_ Coord \_ 1 | Se abilitata, le chiamate a **glEvalCoord1**, **glEvalMesh1** e **glEvalPoint1** generano le coordinate di trama *s* . Vedere anche **glMap1**.                                                                                                                         |
-| \_ \_ Coord trama GL \_ Mappa1 \_ 2 | Se abilitata, le chiamate a [**glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano le coordinate di trama *s* e *t* . Vedere anche [**glMap1**](glmap1.md).                       |
-| \_Trama GL \_ Mappa1 \_ Coord \_ 3 | Se abilitata, le chiamate a **glEvalCoord1**, **glEvalMesh1** e **glEvalPoint1** generano le coordinate di trama *s*, *t* e *r* . Vedere anche **glMap1**.                                                                                                           |
-| \_Trama GL \_ Mappa1 \_ Coord \_ 4 | Se abilitata, le chiamate a [glEvalCoord1](glevalcoord-functions.md), [glEvalMesh1](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano le coordinate di trama *s*, *t*, *r* e *q* . Vedere anche [**glMap1**](glmap1.md).                    |
-| \_Vertice GL \_ Mappa1 \_ 3         | Se abilitata, le chiamate a **glEvalCoord1**, **glEvalMesh1** e **glEvalPoint1** generano coordinate di vertice *x*, *y* e *z* . Vedere anche **glMap1**.                                                                                                            |
-| \_Mappa1 \_ Vertex \_ 4         | Se abilitate, le chiamate a [**glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano coordinate di vertice *x*, *y*, *z* e *w* omogenee. Vedere anche [**glMap1**](glmap1.md). |
-| \_Map2 \_ colore \_ 4 GL          | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano valori RGBA. Vedere anche [**glMap2**](glmap2.md).                                           |
-| \_Indice map2 \_ GL             | Se abilitata, le chiamate a **glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano indici colori. Vedere anche **glMap2**.                                                                                                                                   |
-| \_Normale map2 \_ GL            | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano normali. Vedere anche [**glMap2**](glmap2.md).                                               |
-| \_Trama GL \_ map2 \_ Coord \_ 1 | Se abilitata, le chiamate a **glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano le coordinate di trama *s* . Vedere anche **glMap2**.                                                                                                                         |
-| \_ \_ Coord trama GL \_ map2 \_ 2 | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano le coordinate di trama *s* e *t* . Vedere anche [**glMap2**](glmap2.md).                       |
-| \_Trama GL \_ map2 \_ Coord \_ 3 | Se abilitata, le chiamate a **glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano le coordinate di trama *s*, *t* e *r* . Vedere anche **glMap2**.                                                                                                           |
-| \_Trama GL \_ map2 \_ Coord \_ 4 | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano le coordinate di trama *s*, *t*, *r* e *q* . Vedere anche [**glMap2**](glmap2.md).            |
-| \_Vertice GL \_ map2 \_ 3         | Se abilitata, le chiamate a **glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano coordinate di vertice *x*, *y* e *z* . Vedere anche **glMap2**.                                                                                                            |
-| \_Map2 \_ Vertex \_ 4         | Se abilitate, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano coordinate di vertice *x*, *y*, *z* e *w* omogenee. Vedere anche [**glMap2**](glmap2.md). |
-| \_normalizzare GL               | Se abilitata, i vettori normali specificati con **glNormal** vengono ridimensionati alla lunghezza dell'unità dopo la trasformazione. Vedere [**glNormal**](glnormal-functions.md).                                                                                                          |
-| \_punto GL \_ smussato           | Se abilitata, creare punti con filtro appropriato. Se disabilitato, creare punti con alias. Vedere [**glPointSize**](glpointsize.md).                                                                                                                                    |
-| \_riempimento offset poligono GL \_ \_   | Se abilitata e se viene eseguito il rendering del poligono in \_ modalità di riempimento GL, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto di profondità. Vedere [**glPolygonOffset**](glpolygonoffset.md)**.**                                      |
-| \_linea offset poligono GL \_ \_   | Se abilitata e se viene eseguito il rendering del poligono in \_ modalità linea GL, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto di profondità. Vedere **glPolygonOffset**.                                                                 |
-| \_punto di offset del poligono GL \_ \_  | Se abilitata, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto di profondità, se il poligono viene sottoposto a rendering in \_ modalità punto GL. Vedere [**glPolygonOffset**](glpolygonoffset.md).                                             |
-| \_poligono GL \_ smussato         | Se abilitata, creare poligoni con filtri appropriati. Se disabilitato, creare poligoni con alias. Vedere [**glPolygonMode**](glpolygonmode.md).                                                                                                                            |
-| \_stipple poligono GL \_        | Se abilitata, usare il modello stipple del poligono corrente durante il rendering dei poligoni. Vedere [**glPolygonStipple**](glpolygonstipple.md).                                                                                                                              |
-| \_test della forbice GL \_           | Se abilitata, eliminare i frammenti esterni al rettangolo a forbice. Vedere [**glScissor**](glscissor.md).                                                                                                                                                   |
-| \_test stencil \_ GL           | Se abilitata, eseguire il test dello stencil e aggiornare il buffer dello stencil. Vedere [**glStencilFunc**](glstencilfunc.md) e [**glStencilOp**](glstencilop.md).                                                                                                            |
-| \_Trama GL \_ 1D             | Se abilitata, viene eseguita la texturing unidimensionale (a meno che non sia abilitata anche la texturing bidimensionale). Vedere [**glTexImage1D**](glteximage1d.md).                                                                                                            |
-| \_Trama GL \_ 2D             | Se abilitata, viene eseguita la texturing bidimensionale. Vedere [**glTexImage2D**](glteximage2d.md).                                                                                                                                                               |
-| \_generazione trama \_ GL \_ Q         | Se abilitata, la coordinata di trama *q* viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). In caso contrario, viene utilizzata la coordinata di trama *q* corrente.                                                        |
-| \_generazione trama \_ GL \_ R         | Se abilitata, la coordinata di trama *r* viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). Se è disabilitata, viene utilizzata la coordinata di trama *r* corrente.                                                      |
-| \_generazione trama \_ GL \_         | Se abilitata, la coordinata di trama *s* viene calcolata usando la funzione di generazione della trama definita con **glTexGen**. Se è disabilitata, viene utilizzata la coordinata *di trama corrente* .                                                                                |
-| \_gen trama \_ GL \_ T         | Se abilitata, la coordinata di trama *t* viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). Se è disabilitata, viene utilizzata la coordinata di trama *t* corrente.                                                      |
+| GL \_ ALPHA \_ TEST             | Se abilitata, eseguire test alfa. Vedere [**glAlphaFunc.**](glalphafunc.md)                                                                                                                                                                                       |
+| GL \_ AUTO \_ NORMAL            | Se abilitata, i vettori normali della superficie di calcolo vengono calcolati analiticamente quando GL \_ MAP2 \_ VERTEX 3 o \_ GL \_ MAP2 \_ VERTEX \_ 4 ha generato vertici. Vedere [**glMap2.**](glmap2.md)                                                                                        |
+| GL \_ BLEND                   | Se abilitata, unire i valori dei colori RGBA in ingresso con i valori nei buffer dei colori. Vedere [**glBlendFunc.**](glblendfunc.md)                                                                                                                              |
+| GL \_ CLIP \_ PLANE *i*          | Se abilitata, ritagliare la geometria rispetto al piano di ritaglio definito *dall'utente i*. Vedere [**glClipPlane.**](glclipplane.md)                                                                                                                                                  |
+| GL \_ COLOR \_ LOGIC \_ OP        | Se abilitata, applicare l'operazione logica corrente ai valori del buffer colore e colore RGBA in ingresso. Vedere [**glLogicOp.**](gllogicop.md)                                                                                                                     |
+| MATERIALE COLORE GL \_ \_         | Se abilitata, fare in modo che uno o più parametri materiale monitorino il colore corrente. Vedere [**glColorMaterial.**](glcolormaterial.md)                                                                                                                                   |
+| GL \_ CULL \_ FACE              | Se abilitata, consente di ullare i poligoni in base alla loro avvolgimento nelle coordinate della finestra. Vedere [**glCullFace.**](glcullface.md)                                                                                                                                               |
+| TEST DI PROFONDITÀ GL \_ \_             | Se abilitata, eseguire confronti di profondità e aggiornare il buffer di profondità. Vedere [**glDepthFunc**](gldepthfunc.md) e [**glDepthRange.**](gldepthrange.md)                                                                                                              |
+| GL \_ DITHER                  | Se abilitata, i componenti o gli indici dei colori dithering prima che siano scritti nel buffer dei colori.                                                                                                                                                                 |
+| GL \_ PIÙ TEMPO                     | Se abilitata, sfuma un colore color color post-texturing. Vedere [**glFog**](glfog.md).                                                                                                                                                                    |
+| GL \_ INDEX \_ LOGIC \_ OP        | Se abilitata, applicare l'operazione logica corrente agli indici in ingresso dell'indice e del buffer dei colori. Vedere [**glLogicOp.**](gllogicop.md)                                                                                                                         |
+| GL \_ LIGHT *i*                | Se abilitata, includere la luce *i* nella valutazione dell'equazione di illuminazione. Vedere [**glLightModel**](gllightmodel-functions.md) e [**glLight.**](gllight-functions.md)                                                                                      |
+| ILLUMINAZIONE \_ GL                | Se abilitata, usare i parametri di illuminazione correnti per calcolare il colore o l'indice del vertice. Se disabilitato, associare il colore o l'indice corrente a ogni vertice. Vedere [**glMaterial,**](glmaterial-functions.md) **glLightModel** e **glLight.**                |
+| GL \_ LINE \_ SMOOTH            | Se abilitata, disegnare linee con il filtro corretto. Se disabilitata, disegnare linee con alias. Vedere [**glLineWidth.**](gllinewidth.md)                                                                                                                                     |
+| GL \_ LINE \_ STIPPLE           | Se abilitata, usare il modello di stipple di riga corrente quando si disegnano linee. Vedere [**glLineStipple.**](gllinestipple.md)                                                                                                                                            |
+| GL \_ LOGIC \_ OP               | Se abilitata, applicare l'operazione logica attualmente selezionata agli indici in ingresso e del buffer dei colori. Vedere [**glLogicOp.**](gllogicop.md)                                                                                                                    |
+| GL \_ MAP1 \_ COLOR \_ 4          | Se abilitata, le chiamate [**a glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano valori RGBA. Vedere anche [**glMap1.**](glmap1.md)                                           |
+| GL \_ MAP1 \_ INDEX             | Se abilitata, le chiamate **a glEvalCoord1**, **glEvalMesh1** e **glEvalPoint1** generano indici dei colori. Vedere anche **glMap1.**                                                                                                                                   |
+| GL \_ MAP1 \_ NORMAL            | Se abilitata, le chiamate [**a glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano valori normali. Vedere anche [**glMap1.**](glmap1.md)                                               |
+| GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1 | Se abilitata, le chiamate **a glEvalCoord1,** **glEvalMesh1** e **glEvalPoint1** generano *le coordinate di* trama. Vedere anche **glMap1.**                                                                                                                         |
+| GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2 | Se abilitata, le chiamate [**a glEvalCoord1**](glevalcoord-functions.md), [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano *coordinate di* trama s e *t.* Vedere anche [**glMap1.**](glmap1.md)                       |
+| GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3 | Se abilitata, le chiamate a **glEvalCoord1,** **glEvalMesh1** e **glEvalPoint1** generano le coordinate di trama *s*, *t* e *r.* Vedere anche **glMap1.**                                                                                                           |
+| GL \_ MAP1 \_ TEXTURE \_ COORD \_ 4 | Se abilitata, le chiamate a [glEvalCoord1](glevalcoord-functions.md), [glEvalMesh1](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano le coordinate di trama *s*, *t*, *r* e *q.* Vedere anche [**glMap1.**](glmap1.md)                    |
+| GL \_ MAP1 \_ VERTEX \_ 3         | Se abilitata, le chiamate a **glEvalCoord1,** **glEvalMesh1** e **glEvalPoint1** generano le coordinate dei vertici *x*, *y* e *z.* Vedere anche **glMap1.**                                                                                                            |
+| VERTICE \_ \_ 4 GL MAP1 \_         | Se abilitata, le chiamate a [**glEvalCoord1,**](glevalcoord-functions.md) [**glEvalMesh1**](glevalmesh-functions.md)e [**glEvalPoint1**](glevalpoint.md) generano coordinate dei vertici *x,* *y,* *z* *e w* omogenee. Vedere anche [**glMap1**](glmap1.md). |
+| GL \_ MAP2 \_ COLOR \_ 4          | Se abilitata, le chiamate [**a glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano valori RGBA. Vedere anche [**glMap2**](glmap2.md).                                           |
+| INDICE \_ GL MAP2 \_             | Se abilitata, le chiamate **a glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano indici dei colori. Vedere anche **glMap2**.                                                                                                                                   |
+| GL \_ MAP2 \_ NORMAL            | Se abilitata, le chiamate [**a glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano valori normali. Vedere anche [**glMap2**](glmap2.md).                                               |
+| GL \_ MAP2 \_ TEXTURE \_ COORD \_ 1 | Se abilitata, le chiamate **a glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano coordinate di trama *s.* Vedere anche **glMap2**.                                                                                                                         |
+| GL \_ MAP2 \_ TEXTURE \_ COORD \_ 2 | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano *coordinate di* trama s e *t.* Vedere anche [**glMap2**](glmap2.md).                       |
+| GL \_ MAP2 \_ TEXTURE \_ COORD \_ 3 | Se abilitata, le chiamate a **glEvalCoord2**, **glEvalMesh2** e **glEvalPoint2** generano le coordinate *di* trama s , *t* e *r.* Vedere anche **glMap2**.                                                                                                           |
+| GL \_ MAP2 \_ TEXTURE \_ COORD \_ 4 | Se abilitata, le chiamate a [**glEvalCoord2**](glevalcoord-functions.md), [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano le coordinate della trama *s*, *t*, *r* *e q.* Vedere anche [**glMap2**](glmap2.md).            |
+| VERTICE \_ GL MAP2 \_ \_ 3         | Se abilitata, le chiamate a **glEvalCoord2,** **glEvalMesh2** e **glEvalPoint2** generano le coordinate dei vertici *x,* *y* e *z.* Vedere anche **glMap2**.                                                                                                            |
+| VERTICE \_ GL MAP2 \_ \_ 4         | Se abilitata, le chiamate a [**glEvalCoord2,**](glevalcoord-functions.md) [**glEvalMesh2**](glevalmesh-functions.md)e [**glEvalPoint2**](glevalpoint.md) generano coordinate dei vertici *x,* *y,* *z* *e w* omogenee. Vedere anche [**glMap2**](glmap2.md). |
+| GL \_ NORMALIZE               | Se abilitata, i vettori normali specificati con **glNormal** vengono ridimensionati in base alla lunghezza unità dopo la trasformazione. Vedere [**glNormal**](glnormal-functions.md).                                                                                                          |
+| ARROTONDAMENTO DEL PUNTO GL \_ \_           | Se abilitata, disegnare punti con un filtro appropriato. Se disabilitata, disegnare punti con alias. Vedere [**glPointSize**](glpointsize.md).                                                                                                                                    |
+| RIEMPIMENTO \_ OFFSET \_ POLIGONO GL \_   | Se abilitata e se il rendering del poligono viene eseguito in modalità GL FILL, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto \_ della profondità. Vedere [**glPolygonOffset**](glpolygonoffset.md)**.**                                      |
+| LINEA DI \_ \_ OFFSET POLIGONO GL \_   | Se abilitata e se il rendering del poligono viene eseguito in modalità GL LINE, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto \_ della profondità. Vedere **glPolygonOffset**.                                                                 |
+| PUNTO DI \_ \_ OFFSET POLIGONO GL \_  | Se abilitata, viene aggiunto un offset ai valori di profondità dei frammenti di un poligono prima che venga eseguito il confronto della profondità, se il rendering del poligono viene eseguito in modalità PUNTO \_ GL. Vedere [**glPolygonOffset**](glpolygonoffset.md).                                             |
+| ARROTONDAMENTO \_ POLIGONO GL \_         | Se abilitata, disegnare poligoni con un filtro appropriato. Se disabilitato, disegnare poligoni con alias. Vedere [**glPolygonMode**](glpolygonmode.md).                                                                                                                            |
+| \_ \_ STIPPLE POLIGONO GL        | Se abilitata, usare il modello di punta del poligono corrente durante il rendering dei poligoni. Vedere [**glPolygonStipple**](glpolygonstipple.md).                                                                                                                              |
+| TEST \_ DI SCISSOR \_ GL           | Se abilitata, rimuovere i frammenti esterni al rettangolo della forbice. Vedere [**glScissor**](glscissor.md).                                                                                                                                                   |
+| TEST DI STENCIL GL \_ \_           | Se abilitata, eseguire il test degli stencil e aggiornare il buffer degli stencil. Vedere [**glStencilFunc**](glstencilfunc.md) e [**glStencilOp**](glstencilop.md).                                                                                                            |
+| TRAMA \_ GL \_ 1D             | Se abilitata, viene eseguita la texturing unidimensionale (a meno che non sia abilitata anche la texturing bidimensionale). Vedere [**glTexImage1D**](glteximage1d.md).                                                                                                            |
+| GL \_ TEXTURE \_ 2D             | Se abilitata, viene eseguita la texturing bidimensionale. Vedere [**glTexImage2D**](glteximage2d.md).                                                                                                                                                               |
+| GL \_ TEXTURE \_ GEN \_ Q         | Se abilitata, la coordinata di trama *q* viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). In caso contrario, viene usata la coordinata di trama *q* corrente.                                                        |
+| GL \_ TEXTURE \_ GEN \_ R         | Se abilitata, la *coordinata* della trama r viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). Se disabilitata, viene usata la *coordinata* di trama r corrente.                                                      |
+| GL \_ TEXTURE \_ GEN \_ S         | Se abilitata, la *coordinata* di trama s viene calcolata usando la funzione di generazione della trama definita con **glTexGen**. Se disabilitata, viene usata *la* coordinata di trama corrente.                                                                                |
+| GL \_ TEXTURE \_ GEN \_ T         | Se abilitata, la *coordinata* della trama t viene calcolata usando la funzione di generazione della trama definita con [**glTexGen**](gltexgen-functions.md). Se disabilitata, viene usata la *coordinata* di trama t corrente.                                                      |
 
 
 
@@ -138,8 +138,8 @@ Sia [**glEnable**](glenable.md) che **glDisable** accettano un solo argomento, *
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -187,7 +187,7 @@ Sia [**glEnable**](glenable.md) che **glDisable** accettano un solo argomento, *
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glEvalCoord1**](glevalcoord-functions.md)

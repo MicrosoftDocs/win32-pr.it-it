@@ -1,10 +1,10 @@
 ---
-title: Attributo Mscope-Id
-description: Indica che è presente un ambito multicast sul server DHCP specificato.
+title: Mscope-Id attributo
+description: Indica che è presente un ambito multicast nel server DHCP specificato.
 ms.assetid: 376e3699-d261-4278-a073-0cf2e5b8193b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Mscope-Id attribute
+- Mscope-Id schema AD dell'attributo
 - Schema AD dell'attributo mscopeId
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6437e273fdc93137c7fe99047524e6b2475265d7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0042646ea27cb69f935f4ad8b867aa3930060550c0ecd30b71aafaad8624e2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705181"
 ---
-# <a name="mscope-id-attribute"></a>Attributo Mscope-Id
+# <a name="mscope-id-attribute"></a>Mscope-Id attributo
 
-Indica che è presente un ambito multicast sul server DHCP specificato.
+Indica che è presente un ambito multicast nel server DHCP specificato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Mscope-Id                            |
-| LDAP-Display-Name | mscopeId                             |
+| Ldap-Display-Name | mscopeId                             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.716               |
-| System-ID-GUID    | 963d2751-48be-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 963d2751-48be-11d1-a9c3-0000f80367c1 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -58,15 +58,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica che è presente un ambito multicast sul server DHCP specificato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 

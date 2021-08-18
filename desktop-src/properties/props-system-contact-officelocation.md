@@ -1,19 +1,19 @@
 ---
-description: Posizione dell'ufficio del contatto.
+description: Office posizione del contatto.
 ms.assetid: 2141d58a-30e8-4364-9d48-f9b2c11d5ed7
-title: System. Contact. OfficeLocation
+title: System.Contact.OfficeLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 236e3e9dfd5f8e41066342abecf61400ed4075b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90f4ebe7cc97938e17e5f78a961be17e036607520f002cd951b249b8b5b4826e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011161"
 ---
-# <a name="systemcontactofficelocation"></a>System. Contact. OfficeLocation
+# <a name="systemcontactofficelocation"></a>System.Contact.OfficeLocation
 
-Posizione dell'ufficio del contatto.
+Office posizione del contatto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

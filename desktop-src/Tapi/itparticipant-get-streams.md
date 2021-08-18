@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Get Streams crea una raccolta di flussi associati al partecipante corrente.
+description: Il metodo \_ get Flussi crea una raccolta di flussi associati al partecipante corrente.
 ms.assetid: 9ab05b14-8ef8-4e7f-b598-05795011e35d
-title: 'Metodo ITParticipant:: get_Streams (Ipmsp. h)'
+title: Metodo ITParticipant::get_Streams (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a920929c71e01632edcd8c4c78029b479d8b250
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b66447cd320110db45e1624d677c9b76e518f926da341805bd7de992d0e0eec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003289"
 ---
-# <a name="itparticipantget_streams-method"></a>Metodo ITParticipant:: Get \_ Streams
+# <a name="itparticipantget_streams-method"></a>Metodo ITParticipant::get \_ Flussi
 
-\[**ottenere \_ I flussi** non sono disponibili per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[**get \_ Flussi** non è disponibile per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **get \_ Streams** crea una raccolta di flussi associati al partecipante corrente. Questo metodo viene fornito per le applicazioni client di automazione, ad esempio quelle scritte in Visual Basic. Le applicazioni C e C++ devono usare il metodo [**EnumerateStreams**](itparticipant-enumeratestreams.md) .
+Il **metodo \_ get Flussi** crea una raccolta di flussi associati al partecipante corrente. Questo metodo viene fornito per le applicazioni client di automazione, ad esempio quelle scritte in Visual Basic. Le applicazioni C e C++ devono usare il [**metodo EnumerateStreams.**](itparticipant-enumeratestreams.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT get_Streams(
 
 <dl> <dt>
 
-*pVariant* \[ out\]
+*pVariant* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a **Variant** contenente un [**ITCollection**](/windows/desktop/api/tapi3if/nn-tapi3if-itcollection) di puntatori dell'interfaccia [**ITStream**](/windows/win32/api/tapi3if/nn-tapi3if-itstream) .
+Puntatore **a VARIANT** contenente un oggetto [**ITCollection di**](/windows/desktop/api/tapi3if/nn-tapi3if-itcollection) [**puntatori a interfaccia ITStream.**](/windows/win32/api/tapi3if/nn-tapi3if-itstream)
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                         | Significato                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *pVariant* non è un puntatore valido.<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro pVariant* non è un puntatore valido.<br/>     |
 
 
 
@@ -57,7 +57,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-TAPI chiama il metodo **AddRef** sull'interfaccia [**ITStream**](/windows/win32/api/tapi3if/nn-tapi3if-itstream) restituita dai **\_ flussi ITParticipant:: Get**. L'applicazione deve chiamare **Release** sull'interfaccia **ITStream** per liberare risorse associate.
+TAPI chiama **il metodo AddRef** sull'interfaccia [**ITStream**](/windows/win32/api/tapi3if/nn-tapi3if-itstream) restituita da **ITParticipant::get \_ Flussi**. L'applicazione deve **chiamare Release** **sull'interfaccia ITStream** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ TAPI chiama il metodo **AddRef** sull'interfaccia [**ITStream**](/windows/win32/
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

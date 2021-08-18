@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXQuaternionSquadSetup (D3DX10Math.h): configura i punti di controllo per l'interpolazione quadrangolare sferica."
+description: "Funzione D3DXQuaternionSquadSetup (D3DX10Math.h): imposta i punti di controllo per l'interpolazione quadrangolare sferica."
 ms.assetid: c66227bd-8cc1-4173-9dc2-5aab9d57301e
 title: Funzione D3DXQuaternionSquadSetup (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8d8a778473c0b07ef984facce9c42f947755a74a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 94f6c3fbfa72a46132efe0b9a8057983728d161cc06ba0364019f9d39b4635fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990981"
 ---
 # <a name="d3dxquaternionsquadsetup-function-d3dx10mathh"></a>Funzione D3DXQuaternionSquadSetup (D3DX10Math.h)
 
-Imposta i punti di controllo per l'interpolazione quadrangola sferica.
+Imposta i punti di controllo per l'interpolazione quadrangolare sferica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -174,7 +174,7 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 > [!Note]
 >
 > -   C è +/- Q2 a seconda del risultato della funzione.
-> -   Qt è il risultato della funzione .
+> -   Qt è il risultato della funzione.
 >
 > Il risultato è una rotazione di 45 gradi intorno all'asse z per il tempo = 0,5.
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Trust-POSIX-offset
+title: Attributo Trust-Posix-Offset
 description: Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 ms.assetid: a1263f9f-1577-44b8-b7cc-317a8ecb37f1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Trust-POSIX-offset
+- Schema AD dell'attributo Trust-Posix-Offset
 - Schema AD dell'attributo trustPosixOffset
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de8f3dca090d44ea545dcc290b04d99131d50dc7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b2f4529c2f3aeef1098d444501a87ed3e45ec39fb2ca6311f9cf017762f091c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022019"
 ---
-# <a name="trust-posix-offset-attribute"></a>Attributo Trust-POSIX-offset
+# <a name="trust-posix-offset-attribute"></a>Attributo Trust-Posix-Offset
 
 Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 
@@ -29,13 +29,13 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Trust-POSIX-offset                   |
-| LDAP-Display-Name | trustPosixOffset                     |
+| CN                | Trust-Posix-Offset                   |
+| Ldap-Display-Name | trustPosixOffset                     |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
-| Frequenza di aggiornamento  | Quando viene creata una nuova relazione di trust.         |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Frequenza di aggiornamento  | Quando viene creato un nuovo trust.         |
 | Attribute-Id      | 1.2.840.113556.1.4.134               |
-| System-ID-GUID    | bf967a5e-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a5e-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Offset POSIX (Portable Operating System Interface) per il dominio trusted.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Comprime i dati di partizionamento mesh in un Atlante.
+description: Creare un pacchetto di dati di partizionamento mesh in un atlas.
 ms.assetid: 4da85626-c36c-44d9-990b-0db80ed04423
-title: Funzione D3DXUVAtlasPack (D3DX9Mesh. h)
+title: Funzione D3DXUVAtlasPack (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 31de326160120fe14a71841cb5f2d18e1c8d4e57
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6990d6fbc114c874b31d0035a2415d48161d3065718efce3783a041a2097e96f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749661"
 ---
-# <a name="d3dxuvatlaspack-function"></a>D3DXUVAtlasPack (funzione)
+# <a name="d3dxuvatlaspack-function"></a>Funzione D3DXUVAtlasPack
 
-Comprime i dati di partizionamento mesh in un Atlante.
+Creare un pacchetto di dati di partizionamento mesh in un atlas.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,48 +50,48 @@ HRESULT D3DXUVAtlasPack(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh di input (vedere [**ID3DXMesh**](id3dxmesh.md)) che contiene la geometria dell'oggetto per il calcolo dell'Atlante. Come minimo, la mesh deve contenere dati sulla posizione e coordinate di trama 2D.
+Puntatore a una mesh di input (vedere [**ID3DXMesh)**](id3dxmesh.md)che contiene la geometria dell'oggetto per il calcolo dell'at atlas. Come minimo, la mesh deve contenere dati di posizione e coordinate di trama 2D.
 
 </dd> <dt>
 
-*dwWidth* \[ in\]
+*dwWidth* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Spessore trama.
+Larghezza della trama.
 
 </dd> <dt>
 
-*dwHeight* \[ in\]
+*dwHeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Altezza trama.
+Altezza della trama.
 
 </dd> <dt>
 
-*fGutter* \[ in\]
+*fGutter* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distanza minima, in Texel, tra due grafici nell'Atlante. La gronda viene sempre ridimensionata in base alla larghezza; Se quindi si usa una gronda di 2,5 su una trama 512x512, la distanza minima tra due grafici è 2,5/512,0 Texels.
+Distanza minima, in texel, tra due grafici sull'at atlas. La barra di margine viene sempre ridimensionata in base alla larghezza; Pertanto, se viene usato un margine di 2,5 su una trama 512x512, la distanza minima tra due grafici è 2,5 / 512,0 texel.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ in\]
+*dwTextureIndex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice di coordinate di trama in base zero che identifica il set di coordinate di trama da usare.
+Indice delle coordinate della trama in base zero che identifica il set di coordinate di trama da usare.
 
 </dd> <dt>
 
@@ -100,52 +100,52 @@ Indice di coordinate di trama in base zero che identifica il set di coordinate d
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh. Deve derivare da ppPartitionResultAdjacency restituito da [**D3DXUVAtlasPartition**](d3dxuvatlaspartition.md). Questo valore non può essere **null**, perché Pack deve sapere dove sono stati tagliati i grafici nel passaggio della partizione per trovare i bordi di ogni grafico.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh. Deve essere derivato da ppPartitionResultAdjacency restituito da [**D3DXUVAtlasPartition.**](d3dxuvatlaspartition.md) Questo valore non può **essere NULL** perché Pack deve sapere dove sono stati tagliati i grafici nel passaggio della partizione per trovare i bordi di ogni grafico.
 
 </dd> <dt>
 
-*pCallback* \[ in\]
+*pCallback* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntatore a una funzione di callback (vedere [LPD3DXUVATLASCB](lpd3dxuvatlascb.md)) utile per il monitoraggio dello stato di avanzamento.
+Puntatore a una funzione di callback (vedere [LPD3DXUVATLASCB)](lpd3dxuvatlascb.md)utile per monitorare lo stato di avanzamento.
 
 </dd> <dt>
 
-*fCallbackFrequency* \[ in\]
+*fCallbackFrequency* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Specificare la frequenza con cui D3DX chiamerà il callback; un valore predefinito ragionevole è 0,0001 f.
+Specificare la frequenza con cui D3DX chiamerà il callback. un valore predefinito ragionevole è 0,0001f.
 
 </dd> <dt>
 
-*pUserContent* \[ in\]
+*pUserContent* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore void da passare di nuovo alla funzione di callback.
+Puntatore void da passare nuovamente alla funzione di callback.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Questo parametro di opzioni è attualmente riservato.
+Questo parametro options è attualmente riservato.
 
 </dd> <dt>
 
-*pFacePartitioning* \[ in\]
+*pFacePartitioning* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)**
 
-Puntatore a un [**ID3DXBuffer**](id3dxbuffer.md) contenente la matrice del partizionamento finale della faccia. Ogni elemento contiene un valore DWORD per ogni faccia.
+Puntatore a un [**OGGETTO ID3DXBuffer**](id3dxbuffer.md) contenente la matrice del partizionamento viso finale. Ogni elemento contiene un valore DWORD per ogni viso.
 
 </dd> </dl>
 
@@ -153,7 +153,7 @@ Puntatore a un [**ID3DXBuffer**](id3dxbuffer.md) contenente la matrice del parti
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso contrario, il valore è D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contrario, il valore \_ è D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -161,8 +161,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso con
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

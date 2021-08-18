@@ -1,29 +1,29 @@
 ---
 description: Contiene le proprietà di configurazione per un codificatore.
 ms.assetid: f9bd8a50-e43e-4668-86a0-c9d5f517f4cf
-title: Attributo MFT_PREFERRED_ENCODER_PROFILE (Mftransform. h)
+title: MFT_PREFERRED_ENCODER_PROFILE attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfdc85ead0fe813215b3edaea14833400df5445d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85acf742e518d91c6512b2b887cca910c3b19d21180500bd1180e6972255e54f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722506"
 ---
-# <a name="mft_preferred_encoder_profile-attribute"></a>\_ \_ Attributo profilo del codificatore preferito MFT \_
+# <a name="mft_preferred_encoder_profile-attribute"></a>Attributo MFT \_ PREFERRED \_ ENCODER \_ PROFILE
 
 Contiene le proprietà di configurazione per un codificatore.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**[](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) IMFAttributes \** _ archiviato come _*IUnknown \**_
+**[**Attributi IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) \* *_ archiviato come _* Iunknown\***
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [_ *IMFAttributes:: getunknown* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: seunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes:: seunknown**](/window
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo può essere impostato sull'oggetto attivazione restituito dalla funzione [**MFCreateTransformActivate**](/windows/desktop/api/mftransform/nf-mftransform-mfcreatetransformactivate) . L'attributo viene applicato solo quando l'oggetto di attivazione è configurato per la creazione di un codificatore. Il valore dell'attributo è un puntatore a un archivio di attributi, che a sua volta contiene le proprietà da impostare sul codificatore.
+Questo attributo può essere impostato sull'oggetto attivazione restituito dalla [**funzione MFCreateTransformActivate.**](/windows/desktop/api/mftransform/nf-mftransform-mfcreatetransformactivate) L'attributo si applica solo quando l'oggetto attivazione è configurato per creare un codificatore. Il valore dell'attributo è un puntatore a un archivio di attributi, che contiene le proprietà da impostare nel codificatore.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**MFCreateTransformActivate**](/windows/desktop/api/mftransform/nf-mftransform-mfcreatetransformactivate)

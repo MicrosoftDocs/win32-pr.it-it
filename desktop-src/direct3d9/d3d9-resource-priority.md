@@ -1,7 +1,7 @@
 ---
-description: Costanti utilizzate per impostare la priorità di una risorsa in priorità.
+description: Costanti usate per impostare la priorità di una risorsa in SetPriority.
 ms.assetid: 98886349-883f-41c3-870b-e4a639977760
-title: D3D9_RESOURCE_PRIORITY (D3d9types. h)
+title: D3D9_RESOURCE_PRIORITY (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,34 +17,34 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 1ae5a54c7645db63b1023c3571f8181f4ee2daec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 367d50292b283cc7a0dcdef42b2e2c270099e314dc61c8d590e7ef2a1091a4f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751331"
 ---
-# <a name="d3d9_resource_priority"></a>\_Priorità delle risorse d3d9 \_
+# <a name="d3d9_resource_priority"></a>PRIORITÀ DELLE RISORSE D3D9 \_ \_
 
-Costanti utilizzate per impostare la priorità di una risorsa in [**priorità**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-setpriority).
+Costanti utilizzate per impostare la priorità di una risorsa in [**SetPriority.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-setpriority)
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                     | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="D3D9_RESOURCE_PRIORITY_MINIMUM"></span><span id="d3d9_resource_priority_minimum"></span><dl> <dt>**D3d9 \_ 0x28000000 \_ priorità \_ minima risorsa**</dt> <dt></dt> </dl> | La risorsa ha la priorità più bassa possibile. Questa costante contrassegna la risorsa come inutilizzata e per la rimozione. La risorsa deve essere rimossa non appena un'altra risorsa richiede lo spazio di memoria occupato dalla risorsa.<br/>                                                                                                                                                                                                              |
-| <span id="D3D9_RESOURCE_PRIORITY_LOW"></span><span id="d3d9_resource_priority_low"></span><dl> <dt>**D3d9 \_ \_Priorità \_ bassa della risorsa**</dt> <dt>0x50000000</dt> </dl>             | La risorsa è pianificata con priorità bassa. Il posizionamento della risorsa non è critico e il sistema operativo esegue un lavoro minimo per trovare una posizione per la risorsa. Contrassegnare una risorsa come priorità bassa consente ad altre risorse più importanti di occupare la memoria più veloce.<br/>                                                                                                                                                      |
-| <span id="D3D9_RESOURCE_PRIORITY_NORMAL"></span><span id="d3d9_resource_priority_normal"></span><dl> <dt>**D3d9 \_ 0x78000000 \_ \_ normale priorità risorsa**</dt> <dt></dt> </dl>    | La risorsa è pianificata con priorità normale. La posizione della risorsa è importante per le prestazioni, ma non è fondamentale. Il sistema operativo deve provare a collocare la risorsa contrassegnata come normale nella posizione preferita della risorsa invece che in una risorsa con priorità bassa. In genere, le trame sono contrassegnate come normali.<br/>                                                                                                     |
-| <span id="D3D9_RESOURCE_PRIORITY_HIGH"></span><span id="d3d9_resource_priority_high"></span><dl> <dt>**D3d9 \_ Priorità di risorsa \_ \_ elevata**</dt> <dt>0xA0000000</dt> </dl>          | La risorsa è pianificata con priorità alta. La posizione della risorsa è essenziale per le prestazioni. Il sistema operativo tenta sempre di collocare la risorsa contrassegnata come elevata nella posizione preferita della risorsa invece che con una risorsa con priorità bassa o con priorità normale. In genere, le destinazioni di rendering sono contrassegnate come High.<br/>                                                                                                         |
-| <span id="D3D9_RESOURCE_PRIORITY_MAXIMUM"></span><span id="d3d9_resource_priority_maximum"></span><dl> <dt>**D3d9 \_ 0xc8000000 \_ priorità \_ massima risorsa**</dt> <dt></dt> </dl> | La risorsa ha la massima priorità possibile. Questa costante contrassegna la priorità della risorsa come aggiunta temporaneamente. Una risorsa aggiunta temporaneamente viene rimossa dalla memoria solo se non è possibile risolvere il requisito di memoria di un buffer DMA. Il sistema operativo tenta di suddividere un buffer DMA fino alla dimensione minima e di rimuovere tutte le altre risorse che non sono bloccate e non aggiunte temporaneamente prima di rimuovere una risorsa aggiunta temporaneamente. <br/> |
+| <span id="D3D9_RESOURCE_PRIORITY_MINIMUM"></span><span id="d3d9_resource_priority_minimum"></span><dl> <dt>**D3D9 \_ RESOURCE \_ PRIORITY \_ MINIMUM**</dt> <dt>0x28000000</dt> </dl> | La risorsa ha la priorità più bassa possibile. Questa costante contrassegna la risorsa come inutilizzata e per la rimuovere. La risorsa deve essere sgomberata non appena un'altra risorsa richiede lo spazio di memoria che la risorsa occupa.<br/>                                                                                                                                                                                                              |
+| <span id="D3D9_RESOURCE_PRIORITY_LOW"></span><span id="d3d9_resource_priority_low"></span><dl> <dt>**D3D9 \_ PRIORITÀ \_ DELLE RISORSE BASSA \_ 0x50000000**</dt> <dt></dt> </dl>             | La risorsa è pianificata con priorità bassa. La posizione della risorsa non è critica e il sistema operativo esegue un lavoro minimo per trovare una posizione per la risorsa. Contrassegnare una risorsa come con priorità bassa consente ad altre risorse più critiche di occupare la memoria più veloce.<br/>                                                                                                                                                      |
+| <span id="D3D9_RESOURCE_PRIORITY_NORMAL"></span><span id="d3d9_resource_priority_normal"></span><dl> <dt>**D3D9 \_ PRIORITÀ \_ \_ DELLE**</dt> <dt>RISORSE NORMALE 0x78000000</dt> </dl>    | La risorsa è pianificata con priorità normale. La posizione della risorsa è importante per le prestazioni, ma non è fondamentale. Il sistema operativo deve provare a inserire la risorsa contrassegnata come normale nella posizione preferita della risorsa anziché una risorsa con priorità bassa. In genere, le trame sono contrassegnate come normali.<br/>                                                                                                     |
+| <span id="D3D9_RESOURCE_PRIORITY_HIGH"></span><span id="d3d9_resource_priority_high"></span><dl> <dt>**D3D9 \_ PRIORITÀ \_ DELLE RISORSE ALTA \_ 0xa0000000**</dt> <dt></dt> </dl>          | La risorsa è pianificata con priorità alta. Il posizionamento della risorsa è fondamentale per le prestazioni. Il sistema operativo tenta sempre di inserire la risorsa contrassegnata come alta nella posizione preferita della risorsa anziché una risorsa con priorità bassa o con priorità normale. In genere, le destinazioni di rendering sono contrassegnate come elevate.<br/>                                                                                                         |
+| <span id="D3D9_RESOURCE_PRIORITY_MAXIMUM"></span><span id="d3d9_resource_priority_maximum"></span><dl> <dt>**D3D9 \_ VALORE MASSIMO \_ \_ PRIORITÀ RISORSA**</dt> <dt>0xc8000000</dt> </dl> | La risorsa ha la priorità massima possibile. Questa costante contrassegna la priorità della risorsa come aggiunta in modo pinned. Una risorsa aggiunta in modo soft viene rimosso dalla memoria solo se non esiste un altro modo per risolvere il requisito di memoria di un buffer DMA. Il sistema operativo tenta di suddividere un buffer DMA in base alle dimensioni minime e di eviti tutte le altre risorse non bloccate e non bloccate in modo soft prima che venga esenti da una risorsa bloccata in modo soft. <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Valori diversi dalla **\_ priorità della risorsa d3d9 \_ \_ Minimum** e la **\_ \_ priorità \_ massima della risorsa d3d9** vengono considerati come hint dall'utilità di pianificazione.
+I valori diversi **da D3D9 \_ RESOURCE PRIORITY \_ \_ MINIMUM** e **D3D9 \_ RESOURCE PRIORITY \_ \_ MAXIMUM** vengono considerati hint dall'utilità di pianificazione.
 
-È possibile utilizzare livelli di priorità diversi dai valori definiti in precedenza in questo argomento. Ad esempio, contrassegnare una risorsa con un livello di priorità di 0x78000001 indica che la priorità delle risorse è leggermente superiore al normale.
+È possibile utilizzare livelli di priorità diversi da quelli definiti in precedenza in questo argomento. Ad esempio, contrassegnare una risorsa con un livello di priorità 0x78000001 indica che la priorità della risorsa è leggermente superiore alla normale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Valori diversi dalla **\_ priorità della risorsa d3d9 \_ \_ Minimum** e la **\_
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

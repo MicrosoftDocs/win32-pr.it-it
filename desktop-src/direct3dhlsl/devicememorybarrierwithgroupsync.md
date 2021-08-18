@@ -1,6 +1,6 @@
 ---
-title: DeviceMemoryBarrierWithGroupSync (funzione)
-description: Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria del dispositivo non sono stati completati e tutti i thread del gruppo hanno raggiunto questa chiamata.
+title: Funzione DeviceMemoryBarrierWithGroupSync
+description: Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria del dispositivo non sono stati completati e tutti i thread nel gruppo non hanno raggiunto questa chiamata.
 ms.assetid: 77c54064-a996-4c51-84b5-7da60e884c4f
 keywords:
 - Funzione DeviceMemoryBarrierWithGroupSync HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a7a4a27b3256fb78c7b60b960fc5383cfd5b5d4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2567a209b86481cd0f25922e8e3b1cf947196a2c799344089591cf70fa3624fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625821"
 ---
-# <a name="devicememorybarrierwithgroupsync-function"></a>DeviceMemoryBarrierWithGroupSync (funzione)
+# <a name="devicememorybarrierwithgroupsync-function"></a>Funzione DeviceMemoryBarrierWithGroupSync
 
-Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria del dispositivo non sono stati completati e tutti i thread del gruppo hanno raggiunto questa chiamata.
+Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria del dispositivo non sono stati completati e tutti i thread nel gruppo non hanno raggiunto questa chiamata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -48,23 +48,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -73,12 +73,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

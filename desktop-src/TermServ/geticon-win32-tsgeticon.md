@@ -1,12 +1,12 @@
 ---
-title: Metodo GetIcon della classe Win32_TSGetIcon
+title: Metodo GetIcon della Win32_TSGetIcon classe
 description: Restituisce il contenuto dell'icona specificata.
 ms.assetid: 9448181c-27b8-40eb-9369-8abe1422243b
 ms.tgt_platform: multiple
 keywords:
 - Metodo GetIcon Servizi Desktop remoto
-- Metodo GetIcon Servizi Desktop remoto, classe Win32_TSGetIcon
-- Classe Win32_TSGetIcon Servizi Desktop remoto, Metodo GetIcon
+- Metodo GetIcon Servizi Desktop remoto , Win32_TSGetIcon classe
+- Win32_TSGetIcon classe Servizi Desktop remoto , metodo GetIcon
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92cd20cad668b0e3a6bba191c83ecdca2934ca17
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 305316d66ce95659210396a10f22366d64ebdd2b410b056aa3c398cf65edbbf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001539"
 ---
-# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Metodo GetIcon della classe Win32 \_ TSGetIcon
+# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Metodo GetIcon della classe \_ Win32 TSGetIcon
 
 Restituisce il contenuto dell'icona specificata.
 
@@ -45,24 +45,24 @@ uint32 GetIcon(
 
 <dl> <dt>
 
-*FilePath* \[ in\]
+*FilePath* \[ Pollici\]
 </dt> <dd>
 
-Specifica il percorso del file che contiene l'icona.
+Specifica il percorso del file che contiene l'icona
 
 </dd> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
 Specifica l'indice dell'icona nel file.
 
 </dd> <dt>
 
-*IconContents* \[ out\]
+*IconContents* \[ Cambio\]
 </dt> <dd>
 
-Al termine, contiene il contenuto dell'icona.
+Al completamento, contiene il contenuto dell'icona.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Al termine, contiene il contenuto dell'icona.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TsAllow. mof</dt> </dl>  |
+| MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ Al termine, contiene il contenuto dell'icona.
 
 <dl> <dt>
 
-[**\_TSGetIcon Win32**](win32-tsgeticon.md)
+[**Win32 \_ TSGetIcon**](win32-tsgeticon.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5d976c29d370887362e46899c7fb2a654d6e2cc7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 37e09bab2473ace06b9e0fa803db523453ccff4796693d9faa1d410f5a6630f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748201"
 ---
 # <a name="id3dxfontonresetdevice-method"></a>Metodo ID3DXFont::OnResetDevice
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-**OnResetDevice deve** essere chiamato ogni volta che il dispositivo viene reimpostato (tramite [**Reset),**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)prima di chiamare qualsiasi altro metodo. Si tratta di un buon punto in cui è possibile acquisire nuovamente le risorse di memoria video e acquisire blocchi di stato.
+**OnResetDevice** deve essere chiamato ogni volta che il dispositivo viene reimpostato (usando [**Reset**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)), prima che venga chiamato qualsiasi altro metodo. Si tratta di un buon punto per acquisire nuovamente le risorse di memoria video e acquisire blocchi di stato.
 
 ## <a name="requirements"></a>Requisiti
 

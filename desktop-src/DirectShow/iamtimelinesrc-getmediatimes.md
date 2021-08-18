@@ -1,5 +1,5 @@
 ---
-description: Il metodo GetMediaTimes recupera le ore di avvio e arresto dei supporti.
+description: Il metodo GetMediaTimes recupera l'ora di inizio e di arresto dei supporti.
 ms.assetid: c6a7d992-ceb5-4378-aee2-f2d778b41516
 title: Metodo IAMTimelineSrc::GetMediaTimes (Qedit.h)
 ms.topic: reference
@@ -24,11 +24,11 @@ ms.locfileid: "119756041"
 # <a name="iamtimelinesrcgetmediatimes-method"></a>Metodo IAMTimelineSrc::GetMediaTimes
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `GetMediaTimes` metodo recupera i tempi di avvio e arresto dei supporti.
+Il `GetMediaTimes` metodo recupera l'ora di inizio e di arresto dei supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,14 +49,14 @@ HRESULT GetMediaTimes(
 *Pstart* 
 </dt> <dd>
 
-Riceve l'ora di inizio del supporto, in unità da 100 nanosecondi.
+Riceve l'ora di inizio del supporto, in unità di 100 nanosecondi.
 
 </dd> <dt>
 
 *pStop* 
 </dt> <dd>
 
-Riceve il tempo di arresto dei supporti, in unità da 100 nanosecondi.
+Riceve l'ora di arresto multimediale, in unità di 100 nanosecondi.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-I tempi dei supporti sono relativi al file multimediale originale. Per altre informazioni, vedere [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
+I tempi dei supporti sono relativi al file multimediale originale. Per altre informazioni, vedere [Time in DirectShow Editing Services.](time-in-directshow-editing-services.md)
 
 > [!Note]  
 > Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
@@ -74,7 +74,7 @@ I tempi dei supporti sono relativi al file multimediale originale. Per altre inf
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

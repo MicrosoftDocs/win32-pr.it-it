@@ -1,9 +1,9 @@
 ---
 title: Enumerazione ViewContents
-description: Utilizzato dal contenuto IResultsViewer per indicare o impostare il modo in cui viene visualizzato il set restituito della query corrente.
+description: Usato da IResultsViewer Contents per indicare o impostare la modalità di visualizzazione del set restituito della query corrente.
 ms.assetid: aebcbcac-4c45-4097-91a1-5e00611c152c
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione ViewContents
+- Enumerazione ViewContents Funzionalità dell'Windows legacy
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f465b16ef81dd71695f8de0b04b6d7567480f4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2070b68ec62a8dd6ca86758b98a6399ee41180eaad24613d17d0825a927b1871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829111"
 ---
 # <a name="viewcontents-enumeration"></a>Enumerazione ViewContents
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Usato da [**IResultsViewer:: Contents**](-search-2x-iresultsviewer-contents.md) per indicare o impostare il modo in cui viene visualizzato il set restituito della query corrente.
+Usato da [**IResultsViewer::Contents**](-search-2x-iresultsviewer-contents.md) per indicare o impostare la modalità di visualizzazione del set restituito della query corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ typedef enum ViewContentsEnum {
 
 <dl> <dt>
 
-<span id="ResultsDisplayed"></span><span id="resultsdisplayed"></span><span id="RESULTSDISPLAYED"></span>**ResultsDisplayed**
+<span id="ResultsDisplayed"></span><span id="resultsdisplayed"></span><span id="RESULTSDISPLAYED"></span>**RisultatiVisualizzazione**
 </dt> <dd>
 
-Indica il tipo di contenuto visualizzato nella visualizzazione dei risultati.
+Indica il tipo di contenuto visualizzato nella visualizzazione risultati.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Indica che il tipo di contenuto visualizzato nella visualizzazione risultati è 
 <span id="WebBrowserDisplayed"></span><span id="webbrowserdisplayed"></span><span id="WEBBROWSERDISPLAYED"></span>**WebBrowserDisplayed**
 </dt> <dd>
 
-Indica che il tipo di contenuto visualizzato nella visualizzazione dei risultati è attualmente impostato sulla visualizzazione del browser.
+Indica che il tipo di contenuto visualizzato nella visualizzazione risultati è attualmente impostato sulla visualizzazione del browser.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Indica che il tipo di contenuto visualizzato nella visualizzazione dei risultati
 
 | Requisito | Valore |
 |----------------|----------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>WdsView. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>WdsView.idl</dt> </dl> |
 
 
 

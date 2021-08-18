@@ -1,9 +1,9 @@
 ---
-title: TEXT. fontStyle
-description: L'attributo fontStyle specifica o recupera lo stile del carattere per il controllo di testo.
+title: TEXT.fontStyle
+description: L'attributo fontStyle specifica o recupera lo stile del carattere per il controllo Text.
 ms.assetid: 1bb99305-dccc-489d-9a02-7cb306f0d47d
 keywords:
-- Media Player di Windows TEXT. fontStyle
+- Text.fontStyle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab6ddfb3ff31cba50027c010ed10c2129d45134
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fbdbe021890b3a76fbae3838cbebe958956af82ff468f990fe6fd9e91345a48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762901"
 ---
-# <a name="textfontstyle"></a>TEXT. fontStyle
+# <a name="textfontstyle"></a>TEXT.fontStyle
 
-L'attributo **FontStyle** specifica o recupera lo stile del carattere per il controllo di testo.
+**L'attributo fontStyle** specifica o recupera lo stile del carattere per il controllo Text.
 
 ``` syntax
         elementID.fontStyle
@@ -29,16 +29,16 @@ L'attributo **FontStyle** specifica o recupera lo stile del carattere per il con
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente uno o più dei valori seguenti.
+Questo attributo è una stringa di **lettura/scrittura** contenente uno o più dei valori seguenti.
 
 
 
 | Valore     | Descrizione                 |
 |-----------|-----------------------------|
-| Grassetto      | Stile del carattere in grassetto.            |
+| Bold      | Stile carattere grassetto.            |
 | Corsivo    | Stile del carattere corsivo.          |
-| Sottolineato | Stile del carattere sottolineato.       |
-| Barrato | Stile del carattere di attacco.       |
+| Sottolineato | Stile del carattere di sottolineatura.       |
+| Barrato | Stile del carattere barrato.       |
 | Normale    | Valore predefinito. Stile del carattere normale. |
 
 
@@ -47,9 +47,9 @@ Questo attributo è una **stringa** di lettura/scrittura contenente uno o più d
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare qualsiasi combinazione di valori, separati da spazi. Lo stile normale ha la priorità su tutti gli altri valori, mentre quelli specificati insieme al normale verranno ignorati.
+È possibile usare qualsiasi combinazione di valori, separati da spazi. Lo stile Normale ha la priorità su tutti gli altri valori e tutti gli altri specificati insieme a Normal verranno ignorati.
 
-Vedere l'attributo [value](text-value.md) per un esempio che illustra la modalità di utilizzo degli attributi dell'elemento di **testo** .
+Vedere [l'attributo value](text-value.md) per un esempio che illustra come vengono usati gli attributi dell'elemento **TEXT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Vedere l'attributo [value](text-value.md) per un esempio che illustra la modalit
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

@@ -35,7 +35,7 @@ Utilizzato per impostare e recuperare le proprietà denominate per il controllo 
 
 ### <a name="properties"></a>Proprietà
 
-Queste **proprietà sono disponibili nell'interfaccia IMsRdpExtendedSettings.**
+Queste proprietà sono disponibili nell'interfaccia **IMsRdpExtendedSettings.**
 
 
 
@@ -58,7 +58,7 @@ Queste **proprietà sono disponibili nell'interfaccia IMsRdpExtendedSettings.**
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                               |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                               |
 | CLSID<br/>                    | CLSID \_ MsRdpClient10NotSafeForScripting è definito come A0C63C30-F08D-4AB4-907C-34905D770C7D<br/> CLSID \_ MsRdpClient7NotSafeForScripting è definito come 54d38bf7-b1ef-4479-9674-1bd6ea465258<br/> CLSID \_ MsRdpClient8NotSafeForScripting è definito come A3BC03A0-041D-42E3-AD22-882B7865C9C5<br/> CLSID \_ MsRdpClient9NotSafeForScripting è definito come 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> |
-| IID<br/>                      | IID \_ IMsRdpExtendedSettings è definito come 302D8188-0052-4807-806A-362B628F9AC5<br/>                                                                                                                                                                                                                                                                                                                            |
+| IID<br/>                      | IMsRdpExtendedSettings IID è definito come \_ 302D8188-0052-4807-806A-362B628F9AC5<br/>                                                                                                                                                                                                                                                                                                                            |
 
 
 

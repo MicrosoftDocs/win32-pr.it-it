@@ -1,7 +1,7 @@
 ---
-description: Copia l'unità dati del protocollo dell'applicazione (APDU) dall'oggetto IByteBuffer (IStream) in APDU di cui è stato eseguito il wrapper in questo oggetto interfaccia.
+description: Copia l'unità APDU (Application Protocol Data Unit) dall'oggetto IByteBuffer (IStream) nell'APDU di cui è stato eseguito il wrapping in questo oggetto di interfaccia.
 ms.assetid: 28dac222-ee7a-40aa-903b-e9c0b7757c9c
-title: 'ISCardCmd: metodo:p ut_Apdu (Scarddat. h)'
+title: Metodo ISCardCmd::p ut_Apdu (Scarddat.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: ee615e7f2e8d7555cfed276658e8de1a97ddf73a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: feb9b5230564122ac3bed3c34271f0c608924babbbc2c263e10425931fb62337
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014615"
 ---
-# <a name="iscardcmdput_apdu-method"></a>ISCardCmd::p UT \_ APDU metodo
+# <a name="iscardcmdput_apdu-method"></a>Metodo ISCardCmd::p ut \_ Apdu
 
-\[Il metodo **put \_ APDU** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo \_ Put Apdu** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il **metodo Put \_ APDU** copia l' [*unità dati del protocollo dell'applicazione*](../secgloss/a-gly.md) (APDU) dall'oggetto [**IByteBuffer**](ibytebuffer.md) (**IStream**) nel APDU di cui è stato eseguito il wrapper in questo oggetto interfaccia.
+Il **metodo \_ put Apdu** copia l'unità dati del protocollo dell'applicazione (APDU) dall'oggetto [](../secgloss/a-gly.md) [**IByteBuffer**](ibytebuffer.md) (**IStream**) nell'APDU di cui è stato eseguito il wrapping in questo oggetto di interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ HRESULT put_Apdu(
 
 <dl> <dt>
 
-*pApdu* \[ in\]
+*pApdu* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al APDU ISO 7816-4 da copiare in.
+Puntatore all'APDU ISO 7816-4 in cui copiare.
 
 </dd> </dl>
 
@@ -56,10 +56,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                     |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/>    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro *pApdu* non è valido.<br/>  |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un puntatore errato è stato passato in *pApdu*.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/>    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro pApdu* non è valido.<br/>  |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido in *pApdu.*<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                       |
 
 
 
@@ -67,15 +67,15 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il APDU non elaborato dal buffer di byte mappato tramite un **IStream** che contiene il messaggio APDU, chiamare [**get \_ APDU**](iscardcmd-get-apdu.md).
+Per recuperare l'APDU non elaborato dal buffer di byte mappato tramite **un IStream che** contiene il messaggio APDU, chiamare [**get \_ Apdu**](iscardcmd-get-apdu.md).
 
-Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardCmd**](iscardcmd.md).
+Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardCmd.**](iscardcmd.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della [*Smart Card*](../secgloss/s-gly.md) se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore [*smart card*](../secgloss/s-gly.md) se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come copiare un APDU da un oggetto [**IByteBuffer**](ibytebuffer.md) (**IStream**) in APDU di cui è stato eseguito il wrapper in un oggetto di interfaccia. Nell'esempio si presuppone che pIByteApdu sia un puntatore valido a un'istanza di **IByteBuffer** e che pISCardCmd sia un puntatore valido a un'istanza dell'interfaccia [**ISCardCmd**](iscardcmd.md) .
+L'esempio seguente illustra come copiare un'APDU da un [**oggetto IByteBuffer**](ibytebuffer.md) (**IStream**) nell'APDU di cui è stato eseguito il wrapping in un oggetto di interfaccia. Nell'esempio si presuppone che pIByteApdu sia un puntatore valido a un'istanza di **IByteBuffer** e che pISCardCmd sia un puntatore valido a un'istanza [**dell'interfaccia ISCardCmd.**](iscardcmd.md)
 
 
 ```C++
@@ -99,12 +99,12 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardCmd è definito come D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
@@ -114,7 +114,7 @@ if (FAILED(hr))
 
 <dl> <dt>
 
-[**ottenere \_ APDU**](iscardcmd-get-apdu.md)
+[**get \_ Apdu**](iscardcmd-get-apdu.md)
 </dt> <dt>
 
 [**ISCardCmd**](iscardcmd.md)

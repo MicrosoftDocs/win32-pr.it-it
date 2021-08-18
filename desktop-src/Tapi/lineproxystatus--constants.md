@@ -1,35 +1,35 @@
 ---
-description: Le \_ costanti LINEPROXYSTATUS indicano lo stato del proxy su una linea attualmente aperta dall'applicazione.
+description: Le costanti LINEPROXYSTATUS \_ indicano lo stato del proxy in una riga attualmente aperta per l'applicazione.
 ms.assetid: a5cf3512-ee42-4f64-8fe3-73a14589f78c
-title: Costanti LINEPROXYSTATUS_ (TAPI. h)
+title: LINEPROXYSTATUS_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e21eaf2708b92448c877230a3be82a6003c9ad9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b49c3e787451024254a25959cdf2e0a8240cba4453c8b888665d14a2aa220e93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003029"
 ---
-# <a name="lineproxystatus_-constants"></a>\_Costanti LINEPROXYSTATUS
+# <a name="lineproxystatus_-constants"></a>Costanti \_ LINEPROXYSTATUS
 
-Le **\_ costanti LINEPROXYSTATUS** indicano lo stato del proxy su una linea attualmente aperta dall'applicazione.
+Le **costanti LINEPROXYSTATUS \_ indicano** lo stato del proxy in una riga attualmente aperta nell'applicazione.
 
-Per un elenco e una descrizione di tutti i possibili valori di richiesta proxy, vedere [**\_ costanti LINEPROXYREQUEST**](lineproxyrequest--constants.md) .
+Per [**un elenco e una \_ descrizione di tutti**](lineproxyrequest--constants.md) i possibili valori di richiesta proxy, vedere Costanti LINEPROXYREQUEST.
 
 <dl> <dt>
 
-<span id="LINEPROXYSTATUS_ALLOPENFORACD"></span><span id="lineproxystatus_allopenforacd"></span>**\_ALLOPENFORACD LINEPROXYSTATUS**
+<span id="LINEPROXYSTATUS_ALLOPENFORACD"></span><span id="lineproxystatus_allopenforacd"></span>**LINEPROXYSTATUS \_ ALLOPENFORACD**
 </dt> <dd> <dl> <dt>
 
 
 
-La riga dispone ora di proxy aperti per tutti i tipi di richiesta proxy richiesti per le operazioni di ACD dalla versione 3,0 e successive.
+La riga contiene ora proxy aperti per tutti i tipi di richiesta proxy richiesti per le operazioni ACD da TAPI versione 3.0 e successive.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEPROXYSTATUS_CLOSE"></span><span id="lineproxystatus_close"></span>**chiusura di LINEPROXYSTATUS \_**
+<span id="LINEPROXYSTATUS_CLOSE"></span><span id="lineproxystatus_close"></span>**LINEPROXYSTATUS \_ CLOSE**
 </dt> <dd> <dl> <dt>
 
 
@@ -39,12 +39,12 @@ Un proxy è stato chiuso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEPROXYSTATUS_OPEN"></span><span id="lineproxystatus_open"></span>**LINEPROXYSTATUS \_ aperto**
+<span id="LINEPROXYSTATUS_OPEN"></span><span id="lineproxystatus_open"></span>**LINEPROXYSTATUS \_ OPEN**
 </dt> <dd> <dl> <dt>
 
 
 
-Un nuovo proxy è stato aperto.
+È stato aperto un nuovo proxy.
 
 
 </dt> </dl> </dd> </dl>
@@ -55,8 +55,8 @@ Un nuovo proxy è stato aperto.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

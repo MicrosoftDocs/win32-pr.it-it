@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM ProductSoftwareFeatures identifica le funzionalità software per un determinato prodotto.
+description: L'associazione CIM \_ ProductSoftwareFeatures identifica le funzionalità software per un determinato prodotto.
 ms.assetid: cd6190f8-d86e-44c8-b506-48016a7c22e1
 ms.tgt_platform: multiple
-title: Classe CIM_ProductSoftwareFeatures
+title: CIM_ProductSoftwareFeatures classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2d891d9465688d92c016217cecd8324588026535
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2ef1ff2bf8f203f2407d8ec7c4cc2e0dc07e086d4cce1058a84adf7afc8f19c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820101"
 ---
-# <a name="cim_productsoftwarefeatures-class"></a>CIM \_ ProductSoftwareFeatures (classe)
+# <a name="cim_productsoftwarefeatures-class"></a>Classe CIM \_ ProductSoftwareFeatures
 
-L'associazione **CIM \_ ProductSoftwareFeatures** identifica le funzionalità software per un determinato prodotto.
+**L'associazione CIM \_ ProductSoftwareFeatures** identifica le funzionalità software per un determinato prodotto.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_ProductSoftwareFeatures
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ProductSoftwareFeatures** presenta questi tipi di membri:
+La **classe CIM \_ ProductSoftwareFeatures** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ProductSoftwareFeatures** dispone di queste proprietà.
+La **classe CIM \_ ProductSoftwareFeatures** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Tipo di dati: **CIM \_ SoftwareFeature**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (false), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (FALSE), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Riferimento al componente.
@@ -76,13 +76,13 @@ Riferimento al componente.
 **Prodotto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ prodotto CIM**
+Tipo di dati: **PRODOTTO \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (false), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (FALSE), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Riferimento al prodotto.
@@ -91,9 +91,9 @@ Riferimento al prodotto.
 
 ## <a name="remarks"></a>Commenti
 
-WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ ProductSoftwareFeatures**, vedere [Win32 Classes](win32-provider.md).
+WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ ProductSoftwareFeatures**, vedere [Classi Win32.](win32-provider.md)
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

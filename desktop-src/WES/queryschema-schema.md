@@ -1,7 +1,7 @@
 ---
-title: Schema di query
+title: Query Schema
 ms.assetid: 5710231b-5195-413e-8953-e47a411897a6
-description: 'Altre informazioni su: schema di query'
+description: 'Altre informazioni su: Schema di query'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,30 +9,30 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: aa9b6c842ff7acd874e8e467d07c31e298a63564
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14beeaf8c4d739e490de972107fedf279e16e75b5401f63a709d43b03c338c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005171"
 ---
-# <a name="query-schema"></a>Schema di query
+# <a name="query-schema"></a>Query Schema
 
-Lo schema della query definisce gli elementi e i tipi seguenti che è possibile utilizzare per scrivere una query XML strutturata per recuperare eventi da un canale o un file di log:
+Lo schema di query definisce gli elementi e i tipi seguenti che è possibile usare per scrivere una query XML strutturata per recuperare eventi da un canale o da un file di log:
 
 -   [Elementi QuerySchema](queryschema-elements.md)
 -   [Tipi complessi QuerySchema](queryschema-complex-types.md)
 
-La sezione Elements contiene i nomi degli elementi utilizzati nella query. Tuttavia, per ottenere i dettagli per ogni elemento, vedere il tipo complesso che contiene l'elemento.
+La sezione elements contiene i nomi degli elementi utilizzati nella query. Tuttavia, per ottenere i dettagli per ogni elemento, vedere il tipo complesso che contiene l'elemento.
 
-Una query può contenere una o più espressioni XPath utilizzate per includere o escludere l'evento nel set di risultati della query. È possibile eseguire una query per gli eventi da più canali o file di log, ma non è possibile combinare canali e file di log. È possibile utilizzare una query in qualsiasi funzione che accetta un XPath (ad esempio, le funzioni [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) o [**EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) ). Ogni XPath specificato è limitato a 32 espressioni. Per un esempio, vedere [utilizzo degli eventi](consuming-events.md).
+Una query può contenere una o più espressioni XPath usate per includere o escludere eventi nel set di risultati della query. È possibile eseguire query per gli eventi da più canali o file di log, ma non è possibile combinare canali e file di log. È possibile usare una query in qualsiasi funzione che accetta un XPath,ad esempio le funzioni [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) o [**EvtSubscribe.**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) Ogni XPath specificato è limitato a 32 espressioni. Per un esempio, vedere [Utilizzo di eventi](consuming-events.md).
 
-Il Windows SDK include lo schema nel \\ file di inclusione \\ query. xsd.
+L Windows SDK include lo schema nel \\ \\ file Include Query.xsd.
 
-Oltre allo schema di query, nel registro eventi di Windows vengono definiti anche gli schemi seguenti:
+Oltre allo schema query, il Windows eventi definisce anche gli schemi seguenti:
 
--   [Schema EventManifest](eventmanifestschema-schema.md): definisce gli elementi e i tipi utilizzati per scrivere un manifesto di strumentazione.
--   [Schema dell'evento](eventschema-schema.md): definisce gli elementi e i tipi utilizzati per il rendering di un evento.
+-   [Schema EventManifest:](eventmanifestschema-schema.md)definisce gli elementi e i tipi usati per scrivere un manifesto di strumentazione.
+-   [Schema eventi:](eventschema-schema.md)definisce gli elementi e i tipi usati per eseguire il rendering di un evento.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

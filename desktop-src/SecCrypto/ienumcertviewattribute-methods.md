@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IEnumCERTVIEWATTRIBUTE espone i metodi seguenti.
 ms.assetid: 54CAB546-5695-4276-9E9B-4DE3EFEFE7A0
-title: Metodi IEnumCERTVIEWATTRIBUTE
+title: Metodi di IEnumCERTVIEWATTRIBUTE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b35fdbd2b8ec23c364c18af5c4dc452b5a1411cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7798e218c9bad1076cb922297279e1250d6e3aa057ab0c5be9e1ee0becc2bc6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005429"
 ---
-# <a name="ienumcertviewattribute-methods"></a>Metodi IEnumCERTVIEWATTRIBUTE
+# <a name="ienumcertviewattribute-methods"></a>Metodi di IEnumCERTVIEWATTRIBUTE
 
-L'interfaccia [**IEnumCERTVIEWATTRIBUTE**](/windows/desktop/api/Certview/nn-certview-ienumcertviewattribute) espone i metodi seguenti.
+[**L'interfaccia IEnumCERTVIEWATTRIBUTE**](/windows/desktop/api/Certview/nn-certview-ienumcertviewattribute) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

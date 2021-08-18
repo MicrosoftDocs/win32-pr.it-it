@@ -1,5 +1,5 @@
 ---
-description: Fornisce l'accesso al contesto di un oggetto chain di capico. Questo contesto consente l'uso della catena di certificati del certificato CAPICOM in altre derivazioni di CryptoAPI.
+description: Fornisce l'accesso al contesto di un oggetto CAPICOM Chain. Questo contesto consente l'uso della catena di attendibilità dei certificati CAPICOM in altre derivazioni di CryptoAPI.
 ms.assetid: ee258586-028e-486e-8129-07f43b6cc468
 title: Interfaccia IChainContext
 ms.topic: reference
@@ -13,39 +13,39 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 34ba471c50ceb9475121139c3ecb997cf1d26f2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a3ac2f2234c986c9a86073e25e1277fa1af4f10f2809e013bc65849120b90c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005439"
 ---
 # <a name="ichaincontext-interface"></a>Interfaccia IChainContext
 
 \[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP.\]
 
-L'interfaccia **IChainContext** fornisce l'accesso al contesto di un oggetto [**Chain**](chain.md) di capico. Questo contesto consente l'uso della catena di certificati del certificato CAPICOM in altre derivazioni di CryptoAPI.
+**L'interfaccia IChainContext** fornisce l'accesso al contesto di un oggetto [**CAPICOM Chain.**](chain.md) Questo contesto consente l'uso della catena di attendibilità dei certificati CAPICOM in altre derivazioni di CryptoAPI.
 
 ## <a name="when-to-use"></a>Utilizzo
 
-Usare questa interfaccia quando è necessario usare un oggetto [**catena**](chain.md) di CAPICOM in un'altra derivazione di CryptoAPI.
+Usare questa interfaccia quando è necessario usare un oggetto [**CapiCOM Chain**](chain.md) in un'altra derivazione di CryptoAPI.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IChainContext** presenta questi tipi di membri:
+**L'interfaccia IChainContext** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IChainContext** dispone di questi metodi.
+**L'interfaccia IChainContext** include questi metodi.
 
 
 
 | Metodo                                           | Descrizione                                                                                                                    |
 |:-------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| [**FreeContext**](ichaincontext-freecontext.md) | Rilascia un \_ \_ contesto della catena PCCERT acquisito tramite la proprietà [**chainContext**](ichaincontext-chaincontext.md) .<br/> |
+| [**FreeContext**](ichaincontext-freecontext.md) | Rilascia un contesto PCCERT \_ CHAIN acquisito tramite la proprietà \_ [**ChainContext.**](ichaincontext-chaincontext.md)<br/> |
 
 
 
@@ -53,13 +53,13 @@ L'interfaccia **IChainContext** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IChainContext** ha queste proprietà.
+**L'interfaccia IChainContext** ha queste proprietà.
 
 
 
 | Proprietà                                                      | Tipo di accesso           | Descrizione                                                               |
 |:--------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------|
-| [**ChainContext**](ichaincontext-chaincontext.md)<br/> | Lettura/Scrittura<br/> | Imposta o Recupera il \_ \_ contesto della catena PCCERT di un certificato.<br/> |
+| [**ChainContext**](ichaincontext-chaincontext.md)<br/> | Lettura/Scrittura<br/> | Imposta o recupera l'oggetto PCCERT \_ CHAIN CONTEXT di un \_ certificato.<br/> |
 
 
 
@@ -71,7 +71,7 @@ L'interfaccia **IChainContext** ha queste proprietà.
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

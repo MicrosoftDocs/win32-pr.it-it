@@ -1,9 +1,9 @@
 ---
-title: Evento di buffering dell'oggetto AxWindowsMediaPlayer
-description: L'evento di buffering si verifica quando il controllo Media Player Windows inizia o termina il buffering o il download. | Evento di buffering dell'oggetto AxWindowsMediaPlayer
+title: Evento di memorizzazione nel buffer dell'oggetto AxWindowsMediaPlayer
+description: L'evento Buffering si verifica quando il controllo Windows Media Player inizia o termina il buffering o il download. | Evento di memorizzazione nel buffer dell'oggetto AxWindowsMediaPlayer
 ms.assetid: ad152c4d-1c91-4da1-bec0-46f89f3b8c79
 keywords:
-- Evento di buffering dell'oggetto AxWindowsMediaPlayer Windows Media Player
+- Evento di memorizzazione nel buffer dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af595443d78a311510df6a7e06b2e716da22ecae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 30cca5d7ebe91859162bd729cc32cc03f36f9e3c59ba4474d41311befcce1d21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765251"
 ---
-# <a name="buffering-event-of-the-axwindowsmediaplayer-object"></a>Evento di buffering dell'oggetto AxWindowsMediaPlayer
+# <a name="buffering-event-of-the-axwindowsmediaplayer-object"></a>Evento di memorizzazione nel buffer dell'oggetto AxWindowsMediaPlayer
 
-L'evento di buffering si verifica quando il controllo Media Player Windows inizia o termina il buffering o il download.
+L'evento Buffering si verifica quando il controllo Windows Media Player inizia o termina il buffering o il download.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_Buffering(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_BufferingEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ BufferingEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ BufferingEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ BufferingEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà | Descrizione                                                                                                                                                         |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Inizia    | System. BooleanSpecifies se la memorizzazione nel buffer è iniziata o terminata. Il valore true indica che è iniziata. il valore false indica che è terminato.<br/> |
+| Inizia    | System.BooleanSpecifica se la memorizzazione nel buffer è iniziata o terminata. Il valore true indica che è iniziata. Il valore false indica che è stato terminato.<br/> |
 
 
 
@@ -55,7 +55,7 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_BufferingEventH
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo evento per determinare quando viene avviata o arrestata la memorizzazione nel buffer o il download. È possibile usare lo stesso blocco di eventi per entrambi i casi e *IWMPNetwork* di test. **bufferingProgress** e *IWMPNetwork*. **downloadProgress** per determinare se Windows Media Player sta attualmente memorizzando nel buffer o scaricando il contenuto.
+Usare questo evento per determinare quando il buffering o il download viene avviato o arrestato. È possibile usare lo stesso blocco di eventi per entrambi i casi e testare *IWMPNetwork*. **bufferingProgress** e *IWMPNetwork*. **downloadProgress** per determinare se Windows Media Player sta attualmente memorizzata nel buffer o scaricando il contenuto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Utilizzare questo evento per determinare quando viene avviata o arrestata la mem
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -76,10 +76,10 @@ Utilizzare questo evento per determinare quando viene avviata o arrestata la mem
 [**Oggetto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. bufferingProgress (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-bufferingprogress--vb-and-c.md)
+[**IWMPNetwork.bufferingProgress (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-bufferingprogress--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. downloadProgress (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-downloadprogress--vb-and-c.md)
+[**IWMPNetwork.downloadProgress (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-downloadprogress--vb-and-c.md)
 </dt> </dl>
 
  

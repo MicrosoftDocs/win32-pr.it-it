@@ -1,7 +1,7 @@
 ---
-description: Ottenere un puntatore a interfaccia del dispositivo Direct3D 10,1 da un puntatore a interfaccia Direct3D 10,0.
+description: Ottenere un puntatore a interfaccia di dispositivo Direct3D 10.1 da un puntatore a interfaccia Direct3D 10.0.
 ms.assetid: cf31a67f-0493-4e79-8e73-0297ab93bbae
-title: Funzione D3DX10GetFeatureLevel1 (D3DX10Core. h)
+title: Funzione D3DX10GetFeatureLevel1 (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: 817eb4dd68ce797da76c0609e2ead01a21b5b270
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c6511e0d3963e21f8950529b32cf8c3b414cc00b0625b97b2a9d569d1523c326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753171"
 ---
-# <a name="d3dx10getfeaturelevel1-function"></a>D3DX10GetFeatureLevel1 (funzione)
+# <a name="d3dx10getfeaturelevel1-function"></a>Funzione D3DX10GetFeatureLevel1
 
-Ottenere un puntatore a interfaccia del dispositivo Direct3D 10,1 da un puntatore a interfaccia Direct3D 10,0.
+Ottenere un puntatore a interfaccia di dispositivo Direct3D 10.1 da un puntatore a interfaccia Direct3D 10.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ HRESULT D3DX10GetFeatureLevel1(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Puntatore al dispositivo Direct3D 10,0 (vedere l'interfaccia [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) ).
+Puntatore al dispositivo Direct3D 10.0 (vedere [**l'interfaccia ID3D10Device).**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)
 
 </dd> <dt>
 
-*ppDevice* \[ out\]
+*ppDevice* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device1**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1)\*\***
 
-Puntatore al dispositivo Direct3D 10,1 (vedere l'interfaccia [**ID3D10Device1**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1) ).
+Puntatore al dispositivo Direct3D 10.1 (vedere [**l'interfaccia ID3D10Device1).**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1)
 
 </dd> </dl>
 
@@ -62,13 +62,13 @@ Puntatore al dispositivo Direct3D 10,1 (vedere l'interfaccia [**ID3D10Device1**]
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Questa funzione restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md). Se è possibile acquisire un'interfaccia del dispositivo Direct3D 10,1, questa funzione ha esito positivo e passa un puntatore all'interfaccia 10,1 usando il parametro *ppDevice* . Se non è possibile acquisire un'interfaccia del dispositivo Direct3D 10,1, questa funzione restituisce E ha \_ esito negativo e non restituisce alcun valore per il parametro *ppDevice* .
+Questa funzione restituisce uno dei seguenti [codici restituiti di Direct3D 10.](d3d10-graphics-reference-returnvalues.md) Se è possibile acquisire un'interfaccia di dispositivo Direct3D 10.1, questa funzione ha esito positivo e passa un puntatore all'interfaccia 10.1 usando il *parametro ppDevice.* Se non è possibile acquisire un'interfaccia di dispositivo Direct3D 10.1, questa funzione restituisce E FAIL e non restituisce alcun valore \_ per il *parametro ppDevice.*
 
 ## <a name="remarks"></a>Commenti
 
-Affinché questa funzione abbia esito positivo, è necessario avere acquisito il puntatore [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) fornito utilizzando una chiamata alla funzione [**D3DX10CreateDevice**](d3dx10createdevice.md) , la funzione [**D3DX10CreateDeviceAndSwapChain**](d3dx10createdeviceandswapchain.md) , la funzione [**D3D10CreateDevice1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdevice1) o la funzione [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1) .
+Perché questa funzione abbia esito positivo, è necessario aver acquisito il puntatore [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) fornito usando una chiamata alla funzione [**D3DX10CreateDevice,**](d3dx10createdevice.md) alla funzione [**D3DX10CreateDeviceAndSwapChain,**](d3dx10createdeviceandswapchain.md) alla funzione [**D3D10CreateDevice1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdevice1) o alla funzione [**D3D10CreateDeviceAndSwapChain1.**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1)
 
-È possibile creare un dispositivo Direct3D 10,1 solo nei computer che eseguono Windows Vista Service Pack 1 o versione successiva e con l'hardware compatibile con Direct3D 10,1 installato. Questa funzione restituirà E avrà \_ esito negativo in tutti i computer che non soddisfano questi requisiti. Tuttavia, è possibile chiamare questa funzione in qualsiasi versione di Windows in cui è installata la DLL D3DX10.
+È possibile creare un dispositivo Direct3D 10.1 solo in computer che eseguono Windows Vista Service Pack 1 o versione successiva e con hardware compatibile con Direct3D 10.1 installato. Questa funzione restituirà E \_ FAIL in tutti i computer che non soddisfare questi requisiti. È tuttavia possibile chiamare questa funzione in qualsiasi versione di Windows in cui è installata la DLL D3DX10.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Affinché questa funzione abbia esito positivo, è necessario avere acquisito il
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Affinché questa funzione abbia esito positivo, è necessario avere acquisito il
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

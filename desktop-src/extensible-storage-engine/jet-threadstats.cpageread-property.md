@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_THREADSTATS. cPageRead'
-title: Proprietà JET_THREADSTATS. cPageRead (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_THREADSTATS.cPageRead'
+title: JET_THREADSTATS.cPageRead (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cPageRead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.cPageRead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.cpageread(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4c5a8ed28a4f45abe57ca71eff89ab2ce374bf0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc2dbc98adb0299cc5d409e4bbb278a9a82ac51d2f19121d8f6d46b0371e6927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832631"
 ---
-# <a name="jet_threadstatscpageread-property"></a>Proprietà JET_THREADSTATS. cPageRead
+# <a name="jet_threadstatscpageread-property"></a>JET_THREADSTATS.cPageRead
 
-Ottiene il numero totale di pagine del database recuperate dal disco dal motore di database sul thread corrente.
+Ottiene il numero totale di pagine di database recuperate dal disco dal motore di database nel thread corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int cPageRead { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS struttura](./jet-threadstats-structure2.md)
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

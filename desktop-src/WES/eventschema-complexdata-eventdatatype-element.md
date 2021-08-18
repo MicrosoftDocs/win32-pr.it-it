@@ -3,7 +3,7 @@ title: Elemento ComplexData (EventDataType)
 description: Struttura definita nel modello per l'evento.
 ms.assetid: 4869e269-fae1-48bc-912f-db1e9e9b9fb9
 keywords:
-- EventLog elemento ComplexData
+- Elemento ComplexData EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3f9734c936c502b4c72b783c91d03e58de231f08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e06673c426fcd201a37a7a02c7a3fb27a0dd67a7558267d4ae3c3df70baed06a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005551"
 ---
 # <a name="complexdata-eventdatatype-element"></a>Elemento ComplexData (EventDataType)
 
@@ -30,7 +30,7 @@ Struttura definita nel modello per l'evento.
  />
 ```
 
-L'elemento **ComplexData** è definito dal tipo complesso [**EventDataType**](eventschema-eventdatatype-complextype.md) .
+**L'elemento ComplexData** è definito dal [**tipo complesso EventDataType.**](eventschema-eventdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **ComplexData** è definito dal tipo complesso [**EventDataType**](ev
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

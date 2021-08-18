@@ -1,17 +1,17 @@
 ---
-title: Come creare un collegamento di comando
+title: Come creare un collegamento a un comando
 description: In questo argomento viene descritto un modo per creare un collegamento di comando.
 ms.assetid: F342075B-2D3B-40E0-B657-E1C57EDC2E3A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8024a7f060a7bae3779b9ec9ebec40bd81c74bb
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 9c61888921f06e017ec1ea625730c3cc52de5ab364db22fc01fd021ce5629c63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920901"
 ---
-# <a name="how-to-create-a-command-link"></a>Come creare un collegamento di comando
+# <a name="how-to-create-a-command-link"></a>Come creare un collegamento a un comando
 
 In questo argomento viene descritto un modo per creare un collegamento di comando.
 
@@ -19,18 +19,18 @@ In questo argomento viene descritto un modo per creare un collegamento di comand
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-an-instance-of-the-command-link-button"></a>Passaggio 1: creare un'istanza del pulsante di collegamento al comando.
+### <a name="step-1-create-an-instance-of-the-command-link-button"></a>Passaggio 1: Creare un'istanza del pulsante di collegamento al comando.
 
-Nell'esempio di codice C++ riportato di seguito, la costante di stile [**BS \_ COMMANDLINK**](button-styles.md) specifica il pulsante come pulsante di collegamento del comando.
+Nell'esempio di codice C++ seguente la costante di stile [**BS \_ COMMANDLINK**](button-styles.md) specifica il pulsante come pulsante di collegamento di comando.
 
 
 ```C++
@@ -50,9 +50,9 @@ HWND hwndCommandLink = CreateWindow(
 
 
 
-### <a name="step-2-set-the-command-link-label-and-explanation-text"></a>Passaggio 2: impostare l'etichetta del collegamento del comando e il testo della spiegazione
+### <a name="step-2-set-the-command-link-label-and-explanation-text"></a>Passaggio 2: Impostare l'etichetta del collegamento al comando e il testo della spiegazione
 
-Utilizzare la funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) per impostare l'etichetta del collegamento del comando e il testo supplementare rispettivamente tramite il messaggio [**WM \_ SetText**](/windows/desktop/winmsg/wm-settext) e il messaggio di [**\_ Nota BCM**](bcm-setnote.md) .
+Usare la [**funzione SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) per impostare l'etichetta del collegamento al comando e il testo supplementare rispettivamente tramite il messaggio [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) e il messaggio [**\_ BCM SETNOTE.**](bcm-setnote.md)
 
 
 ```C++
@@ -69,15 +69,15 @@ SendMessage(hwndCommandLink, BCM_SETNOTE, 0, (LPARAM)L"with note");
 [Informazioni sui pulsanti](about-buttons.md)
 </dt> <dt>
 
-[Riferimento al controllo Button](bumper-button-button-control-reference.md)
+[Informazioni di riferimento sul controllo Button](bumper-button-button-control-reference.md)
 </dt> <dt>
 
-[Uso di pulsanti](using-buttons.md)
+[Uso dei pulsanti](using-buttons.md)
 </dt> <dt>
 
 [Button](buttons.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

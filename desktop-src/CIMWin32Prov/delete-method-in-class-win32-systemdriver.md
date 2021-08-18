@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e1b7435a1bca561b19e7d85299413f88f1ae76c3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6422da3de5549f7100caaa3d47d9aaf055f9208a1fd56188d837627b852222e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020519"
 ---
 # <a name="delete-method-of-the-win32_systemdriver-class"></a>Metodo Delete della classe SystemDriver Win32 \_
 
-Il **metodo delete** della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servizio esistente.
+Il **metodo Elimina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servizio esistente.
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 

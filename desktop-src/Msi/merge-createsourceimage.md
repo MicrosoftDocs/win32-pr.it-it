@@ -1,7 +1,7 @@
 ---
-description: Il metodo CreateSourceImage dell'oggetto merge consente al client di estrarre i file da un modulo in un'immagine di origine su disco dopo un'operazione di merge, tenendo conto delle modifiche apportate al modulo che potrebbero essere state apportate durante la configurazione del modulo.
+description: Il metodo CreateSourceImage dell'oggetto Merge consente al client di estrarre i file da un modulo a un'immagine di origine su disco dopo un'unione, tenendo conto delle modifiche al modulo che potrebbero essere state apportate durante la configurazione del modulo.
 ms.assetid: c3e3465a-d5a7-4fcc-b26a-5a8c763c23d9
-title: Metodo merge. CreateSourceImage (Mergemod. h)
+title: Metodo Merge.CreateSourceImage (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: e8d9365a69ff6f33c2989e9102bac7c9c22166aa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3e50fca7adaeced7f6f2130aeb86cf1ee74db18ae505575c8ce37b1bb85a4010
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926641"
 ---
-# <a name="mergecreatesourceimage-method"></a>Merge. CreateSourceImage, metodo
+# <a name="mergecreatesourceimage-method"></a>Metodo Merge.CreateSourceImage
 
-Il metodo **CreateSourceImage** dell'oggetto [**merge**](merge-object.md) consente al client di estrarre i file da un modulo in un'immagine di origine su disco dopo un'operazione di merge, tenendo conto delle modifiche apportate al modulo che potrebbero essere state apportate durante la configurazione del modulo. L'elenco di file da estrarre viene ricavato dalla tabella file del modulo durante il processo di merge. L'elenco dei file è costituito da tutti i file copiati correttamente dalla tabella file del modulo al database di destinazione. Le voci della tabella di file non copiate a causa di conflitti di chiave primaria con le righe esistenti nel database non fanno parte di questo elenco. Al momento della creazione dell'immagine, la directory per ognuno di questi file deriva dal database aperto (post-merge). Il percorso specificato nel parametro *path* è la radice dell'immagine di origine per l'installazione. *fLongFileNames* determina se i nomi di file lunghi vengono usati sia per i segmenti di percorso che per i nomi di file finali. La funzione ha esito negativo se non è aperto alcun database, non è aperto alcun modulo oppure non è stata eseguita alcuna operazione di merge.
+Il **metodo CreateSourceImage** dell'oggetto [**Merge**](merge-object.md) consente al client di estrarre i file da un modulo a un'immagine di origine su disco dopo un'unione, tenendo conto delle modifiche al modulo che potrebbero essere state apportate durante la configurazione del modulo. L'elenco dei file da estrarre viene ricavato dalla tabella file del modulo durante il processo di unione. L'elenco di file è costituito da ogni file copiato correttamente dalla tabella file del modulo al database di destinazione. Le voci della tabella file che non sono state copiate a causa di conflitti di chiave primaria con le righe esistenti nel database non fanno parte di questo elenco. Al momento della creazione dell'immagine, la directory per ognuno di questi file proviene dal database aperto (post-unione). Il percorso specificato nel *parametro Path* è la radice dell'immagine di origine per l'installazione. *fLongFileNames* determina se i nomi di file lunghi vengono usati sia per i segmenti di percorso che per i nomi di file finali. La funzione ha esito negativo se non è aperto alcun database, non è aperto alcun modulo o non è stato eseguito alcun merge.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,11 +69,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i file nella directory di destinazione con lo stesso nome verranno sovrascritti. Il percorso viene creato se non esiste già.
+Tutti i file nella directory di destinazione con lo stesso nome vengono sovrascritti. Il percorso viene creato se non esiste già.
 
 ### <a name="c"></a>C++
 
-Vedere funzione [**CreateSourceImage**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-createsourceimage) .
+Vedere [**La funzione CreateSourceImage.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-createsourceimage)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Vedere funzione [**CreateSourceImage**](/windows/desktop/api/Mergemod/nf-mergemo
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

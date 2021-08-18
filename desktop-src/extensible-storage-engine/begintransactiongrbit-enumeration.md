@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione BeginTransactionGrbit'
+description: Altre informazioni sull'enumerazione BeginTransactionGrbit
 title: Enumerazione BeginTransactionGrbit
 TOCTitle: BeginTransactionGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BeginTransactionGrbit
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5f407c54b7b6e76ab63dcfb97d1307458ba15277
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8bbbba69a6768f37e816030f63aa00e5ed05f2133b62f1047b0c7cbe58d55ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982841"
 ---
 # <a name="begintransactiongrbit-enumeration"></a>Enumerazione BeginTransactionGrbit
 
-Opzioni per [JetBeginTransaction2 (JET_SESID, BeginTransactionGrbit)](./api.jetbegintransaction2-method.md).
+Opzioni per [JetBeginTransaction2(JET_SESID, BeginTransactionGrbit)](./api.jetbegintransaction2-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ public enum BeginTransactionGrbit
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>Il database non viene modificato dalla transazione. Se si tenta di eseguire un aggiornamento, l'operazione avrà esito negativo con <a href="hh564840(v=exchg.10).md">transreadonly</a>. Questa opzione viene ignorata a meno che non venga richiesta quando la sessione specificata non è già presente in una transazione.</td>
+<td>La transazione non modificherà il database. Se si tenta di eseguire un aggiornamento, l'operazione avrà esito negativo <a href="hh564840(v=exchg.10).md">con TransReadOnly</a>. Questa opzione viene ignorata a meno che non venga richiesta quando la sessione specificata non è già in una transazione.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum BeginTransactionGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

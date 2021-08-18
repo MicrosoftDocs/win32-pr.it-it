@@ -1,19 +1,19 @@
 ---
-description: XMDEC4describes un vettore 4D con i componenti x, y e z rappresentati come valori interi con segno a 10 bit e il componente w come valore intero con segno a 2 bit.
+description: XMDEC4describes a 4D vector with x-,y-, and z- components represented as 10 bit signed integer values, and the w-component as a 2 bit signed integer value.
 ms.assetid: 7b4a8d01-af7a-4dad-98c2-f81d8a16fb42
 title: Estensioni XMDEC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ff1fccaaf1a14a507e18a38f09146c42df8847
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b33bef0ff4c2bf44b9d022085468ab032cdbe53d9c3eea48635cfe0ce1f71ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740671"
 ---
 # <a name="xmdec4-extensions"></a>Estensioni XMDEC4
 
-[**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)descrive un vettore 4D con i componenti x, y e z rappresentati come valori interi con segno a 10 bit e il componente w come valore intero con segno a 2 bit.
+[**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)descrive un vettore 4D con componenti x-, y-e z- rappresentati come valori interi con segno a 10 bit e il componente w come valore intero con segno a 2 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.
