@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be63845f389936656172b4cbb4e42de659bbf0e1
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 372163b39ea788b5c03bd25aedcc44aee172d58080fb94e3333a029a514962a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104118443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119404591"
 ---
 # <a name="innereapoptional-eaptype-element"></a>Elemento InnerEapOptional (EapType)
 
-L'elemento **InnerEapOptional (EapType)** indica se eseguire l'accesso guest.
+**L'elemento InnerEapOptional (EapType)** indica se eseguire l'accesso GUEST.
 
 ``` syntax
 <xs:element name="InnerEapOptional"
@@ -31,20 +31,20 @@ L'elemento **InnerEapOptional (EapType)** indica se eseguire l'accesso guest.
  />
 ```
 
-L'elemento **InnerEapOptional** è definito dall'elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+**L'elemento InnerEapOptional** è definito dall'elemento [**EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento **InnerEapOptional** è true, è necessario che l'elemento [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md) sia presente e descriva il metodo interno e la relativa configurazione. Se FALSE, PEAP eseguirà l'accesso GUEST. L'elemento **InnerEapOptional** è facoltativo.
+Se **l'elemento InnerEapOptional** è TRUE, [**l'elemento Eap**](baseeapconnectionpropertiesv1schema-eap-element.md) deve essere presente e descrivere il metodo interno e la configurazione. se FALSE, PEAP eseguirà l'accesso GUEST. **L'elemento InnerEapOptional** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

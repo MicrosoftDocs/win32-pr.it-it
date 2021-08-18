@@ -1,10 +1,10 @@
 ---
-title: Assoc-NT-attributo account
-description: Account Windows NT applicabile a questo oggetto.
+title: Attributo Assoc-NT-Account
+description: Account Windows NT che si applica a questo oggetto.
 ms.assetid: 58aa877d-a627-48e9-8137-9dc7cd9b8ada
 ms.tgt_platform: multiple
 keywords:
-- Assoc-NT-schema AD dell'attributo dell'account
+- Schema AD dell'attributo Assoc-NT-Account
 - Schema AD dell'attributo assocNTAccount
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 868e0caaedb446cdbaf1cd598ce54e25fc1fc599
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 16ef122d9f76e8a449f78e875223bc31a6584203d00f363cb69883433f2f5eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443121"
 ---
-# <a name="assoc-nt-account-attribute"></a>Assoc-NT-attributo account
+# <a name="assoc-nt-account-attribute"></a>Attributo Assoc-NT-Account
 
-Account Windows NT applicabile a questo oggetto.
+Account Windows NT che si applica a questo oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Assoc-NT-account                                      |
-| LDAP-Display-Name | assocNTAccount                                        |
+| CN                | Assoc-NT-Account                                      |
+| Ldap-Display-Name | assocNTAccount                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1213                               |
-| System-ID-GUID    | 398f63c0-ca60-11d1-bbd1-0000f81f10c0                  |
+| System-Id-Guid    | 398f63c0-ca60-11d1-bbd1-0000f81f10c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -79,15 +79,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ Account Windows NT applicabile a questo oggetto.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

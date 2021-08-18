@@ -1,6 +1,6 @@
 ---
-title: attributo ipServiceProtocol
-description: Contiene la sezione della mappa dei servizi che archivia il numero di protocollo per un servizio UNIX.
+title: Attributo ipServiceProtocol
+description: Contiene la sezione della mappa dei servizi che archivia il numero di protocollo per un UNIX servizio.
 ms.assetid: 44ab7637-c9c0-4d7c-898c-a9de45f75ccb
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874b08d687ac621e15ae9b2268dcabef21e4c2aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4951a8927671edd569f91b51449e4f0d4ff6f326da35a138681626f96852abf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322381"
 ---
-# <a name="ipserviceprotocol-attribute"></a>attributo ipServiceProtocol
+# <a name="ipserviceprotocol-attribute"></a>Attributo ipServiceProtocol
 
-Contiene la sezione della mappa dei servizi che archivia il numero di protocollo per un servizio UNIX.
+Contiene la sezione della mappa dei servizi che archivia il numero di protocollo per un UNIX servizio.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ipServiceProtocol                    |
-| LDAP-Display-Name | ipServiceProtocol                    |
+| Ldap-Display-Name | ipServiceProtocol                    |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.16                     |
-| System-ID-GUID    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
+| System-Id-Guid    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene la sezione della mappa dei servizi che archivia il numero di protocollo
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Vero                                        |
+| Is-Single-Valued       | Vero                                        |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipService**](c-ipservice.md)<br/> |
+| Classi usate in        | [**ipService**](c-ipservice.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene la sezione della mappa dei servizi che archivia il numero di protocollo
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipService**](c-ipservice.md)<br/> |
+| Classi usate in        | [**ipService**](c-ipservice.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene la sezione della mappa dei servizi che archivia il numero di protocollo
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipService**](c-ipservice.md)<br/> |
+| Classi usate in        | [**ipService**](c-ipservice.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene la sezione della mappa dei servizi che archivia il numero di protocollo
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipService**](c-ipservice.md)<br/> |
+| Classi usate in        | [**ipService**](c-ipservice.md)<br/> |
 
 
 

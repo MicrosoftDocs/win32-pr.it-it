@@ -4,12 +4,12 @@ ms.assetid: 38fb3b72-4648-4c44-ad58-af81a5de5623
 title: Elementi TAPI per versione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 006b511656f0150f652c44896d7297fe20279d82
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 59fb0033dc5d6fcfb63e7b5f7790fa39b6967284d7c44013d29245532b018841
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002779"
 ---
 # <a name="tapi-elements-by-version"></a>Elementi TAPI per versione
 
@@ -27,7 +27,7 @@ Le tabelle seguenti sono un elenco alfabetico di riferimento rapido delle funzio
 | [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) | 1.3, 1.4, 2.0, 2.1, 2.2 |
-| [**Finestra di dialogo lineConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialog) | 1.3, 1.4, 2.0, 2.1, 2.2 |
+| [**LineConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialog) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**lineConfigDialogEdit**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialogedit) | 1.4, 2.0, 2.1, 2.2 |
 | [**lineConfigProvider**](/windows/desktop/api/Tapi/nf-tapi-lineconfigprovider) | 1.4, 2.0, 2.1, 2.2 |
 | [**lineCreateAgent**](/windows/desktop/api/Tapi/nf-tapi-linecreateagenta) | 2.2 |

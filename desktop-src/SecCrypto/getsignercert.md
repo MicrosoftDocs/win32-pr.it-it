@@ -1,25 +1,25 @@
 ---
-description: La funzione GetSignerCert passa attraverso (enumera) i certificati in un archivio certificati finché non viene trovato un certificato con una chiave di firma.
+description: La funzione GetSignerCert passa attraverso (enumera) i certificati in un archivio certificati fino a quando non viene trovato un certificato con una chiave di firma.
 ms.assetid: a3279492-a154-418d-ab25-45ec458ad483
 title: GetSignerCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beff3e220fc8f0c95992c4a14a3dc8b5f5d19fab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7288ed92ace5cf6982402a9b449c1bb91170d617604fab061f1836756ef1ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006638"
 ---
 # <a name="getsignercert"></a>GetSignerCert
 
-La funzione **GetSignerCert** passa attraverso (enumera) i certificati in un [*archivio certificati*](../secgloss/c-gly.md) finché non viene trovato un certificato con una chiave di firma. Se viene trovato un certificato, viene restituito un puntatore al certificato. Questo codice illustra:
+La **funzione GetSignerCert** passa attraverso (enumera) [](../secgloss/c-gly.md) i certificati in un archivio certificati fino a quando non viene trovato un certificato con una chiave di firma. Se viene trovato un certificato, viene restituito un puntatore al certificato. Questo codice illustra:
 
--   Ricerca di un certificato con una proprietà Certificate.
--   Verifica della proprietà.
--   Restituzione di un puntatore [**al \_ contesto del certificato**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) in cui è stato trovato l'attributo.
+-   Ricerca di un certificato con una proprietà del certificato.
+-   Controllo della proprietà.
+-   Restituzione di un puntatore a [**CERT \_ CONTEXT in**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) cui è stato trovato l'attributo.
 
-Questo codice usa un gestore errori denominato **MyHandleError**. Per visualizzare l'implementazione di questo gestore errori, vedere l'argomento [**MyHandleError**](myhandleerror.md) .
+Questo codice usa un gestore degli errori denominato **MyHandleError.** Per visualizzare l'implementazione per questo gestore degli errori, vedere [**l'argomento MyHandleError.**](myhandleerror.md)
 
 
 ```C++

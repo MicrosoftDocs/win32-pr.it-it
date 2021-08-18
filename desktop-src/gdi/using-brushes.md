@@ -1,27 +1,27 @@
 ---
-description: È possibile utilizzare un pennello per disegnare l'interno di praticamente qualsiasi forma utilizzando una funzione GDI (Graphics Device Interface).
+description: È possibile usare un pennello per disegnare l'interno di praticamente qualsiasi forma usando una funzione GDI (Graphics Device Interface).
 ms.assetid: 64cd6e82-7a0d-4b5e-b491-450f37eea43a
 title: Uso di pennelli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b65ad4b14ba445642f224b0002eb1e7517c1008b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c42e09dc5731ceba7961dfd66b296df531897f2915cff53ccdacf1b5b5740160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037499"
 ---
 # <a name="using-brushes"></a>Uso di pennelli
 
-È possibile utilizzare un pennello per disegnare l'interno di praticamente qualsiasi forma utilizzando una funzione GDI (Graphics Device Interface). Sono inclusi gli interni di rettangoli, ellissi, poligoni e percorsi. A seconda dei requisiti dell'applicazione, è possibile usare un pennello a tinta unita di un colore specificato, un pennello azionario, un pennello di tratteggio o un pennello per motivi.
+È possibile usare un pennello per disegnare l'interno di praticamente qualsiasi forma usando una funzione GDI (Graphics Device Interface). Sono inclusi gli interni di rettangoli, ellissi, poligoni e tracciati. A seconda dei requisiti dell'applicazione, è possibile usare un pennello a tinta unita di un colore specificato, un pennello predefinito, un pennello tratteggiato o un pennello motivo.
 
-Questa sezione contiene esempi di codice che illustrano la creazione di una finestra di dialogo personalizzata per il pennello. La finestra di dialogo contiene una griglia che rappresenta la bitmap utilizzata dal sistema come pennello. Un utente può usare questa griglia per creare una bitmap del pennello per i modelli e quindi visualizzare il modello personalizzato facendo clic sul pulsante del **modello di test** .
+Questa sezione contiene esempi di codice che illustrano la creazione di una finestra di dialogo pennello personalizzata. La finestra di dialogo contiene una griglia che rappresenta la bitmap utilizzata dal sistema come pennello. Un utente può usare questa griglia per creare una bitmap del pennello a pattern e quindi visualizzare il criterio personalizzato facendo clic sul **pulsante Test Pattern (Modello di** test).
 
-Nella figura seguente viene illustrato un modello creato tramite la finestra di dialogo **personalizzata del pennello** .
+La figura seguente mostra un modello creato usando la finestra **di dialogo Pennello** personalizzato.
 
-![screenshot della finestra di dialogo del pennello personalizzato](images/custbrush.png)
+![Screenshot della finestra di dialogo del pennello personalizzato](images/custbrush.png)
 
-Per visualizzare una finestra di dialogo, è prima necessario creare un modello di finestra di dialogo. Il modello di finestra di dialogo seguente definisce la finestra di dialogo del **pennello personalizzato** .
+Per visualizzare una finestra di dialogo, è innanzitutto necessario creare un modello di finestra di dialogo. Il modello di finestra di dialogo seguente definisce la **finestra di dialogo Pennello** personalizzato.
 
 
 ```C++
@@ -42,9 +42,9 @@ END
 
 
 
-La finestra di dialogo del **pennello personalizzato** contiene cinque controlli: una finestra della griglia bitmap, una finestra di visualizzazione dei modelli e tre pulsanti di push, etichettato **test pattern**, **OK** e **Cancel**. Il pulsante di push **pattern test** consente all'utente di visualizzare il modello. Il modello di finestra di dialogo Specifica le dimensioni complessive della finestra di dialogo, assegna un valore a ogni controllo, specifica la posizione di ogni controllo e così via. Per ulteriori informazioni, vedere [finestre di dialogo](../dlgbox/dialog-boxes.md).
+La **finestra di dialogo** Pennello personalizzato contiene cinque controlli: una finestra griglia bitmap, una finestra di visualizzazione pattern e tre pulsanti di comando, con etichetta Test **Pattern**, **OK** e **Cancel.** Il **pulsante di push** Modello di test consente all'utente di visualizzare il modello. Il modello di finestra di dialogo specifica le dimensioni complessive della finestra di dialogo, assegna un valore a ogni controllo, specifica la posizione di ogni controllo e così via. Per altre informazioni, vedere [Finestre di dialogo.](../dlgbox/dialog-boxes.md)
 
-I valori di controllo nel modello di finestra di dialogo sono costanti definiti come indicato di seguito nel file di intestazione dell'applicazione.
+I valori dei controlli nel modello della finestra di dialogo sono costanti definite come indicato di seguito nel file di intestazione dell'applicazione.
 
 
 ```C++
@@ -57,7 +57,7 @@ I valori di controllo nel modello di finestra di dialogo sono costanti definiti 
 
 
 
-Dopo aver creato un modello di finestra di dialogo e averlo incluso nel file di definizione delle risorse dell'applicazione, è necessario scrivere una routine della finestra di dialogo. Questa procedura consente di elaborare i messaggi inviati dal sistema alla finestra di dialogo. Il seguente estratto del codice sorgente di un'applicazione mostra la procedura della finestra di dialogo per la finestra di dialogo del **pennello personalizzato** e le due funzioni definite dall'applicazione da essa chiamate.
+Dopo aver creato un modello di finestra di dialogo e averlo incluso nel file di definizione delle risorse dell'applicazione, è necessario scrivere una routine della finestra di dialogo. Questa procedura elabora i messaggi inviati dal sistema alla finestra di dialogo. L'estratto seguente del codice sorgente di un'applicazione  mostra la procedura della finestra di dialogo per la finestra di dialogo Pennello personalizzato e le due funzioni definite dall'applicazione chiamate.
 
 
 ```C++
@@ -291,26 +291,26 @@ DWORD RetrieveWidth(LPTSTR cArray, int iLength)
 
 
 
-La procedura della finestra di dialogo per la finestra di dialogo **pennello personalizzato** elabora quattro messaggi, come descritto nella tabella seguente.
+La procedura della finestra di dialogo **per la** finestra di dialogo Pennello personalizzato elabora quattro messaggi, come descritto nella tabella seguente.
 
 
 
 | Message                                          | Azione                                                                                                                                                                                                                                                                                                     |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_INITDIALOG WM**](../dlgbox/wm-initdialog.md)   | Recupera un handle di finestra e le dimensioni per i controlli della finestra griglia e del pennello del pattern, calcola le dimensioni di una singola cella nel controllo della finestra della griglia e Inizializza una matrice di coordinate della cella della griglia.                                                                                           |
-| [**\_disegno WM**](wm-paint.md)                    | Disegna il motivo della griglia nel controllo della finestra della griglia.                                                                                                                                                                                                                                                         |
-| [**\_LBUTTONDOWN WM**](../inputdev/wm-lbuttondown.md) | Determina se il cursore si trova all'interno del controllo della finestra della griglia quando l'utente preme il pulsante sinistro del mouse. In tal caso, la routine della finestra di dialogo inverte la cella della griglia appropriata e registra lo stato della cella in una matrice di bit utilizzata per creare la bitmap per il pennello personalizzato.              |
-| [**\_comando WM**](../menurc/wm-command.md)         | Elabora l'input per i tre controlli pulsante di comando. Se l'utente fa clic sul pulsante **test pattern** , la procedura della finestra di dialogo disegna il controllo pattern di test con il nuovo modello di pennello personalizzato. Se l'utente fa clic sul pulsante **OK** o **Annulla** , la routine della finestra di dialogo esegue le azioni di conseguenza. |
+| [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md)   | Recupera un handle di finestra e le dimensioni per i controlli griglia e pennello a linee, calcola le dimensioni di una singola cella nel controllo della finestra della griglia e inizializza una matrice di coordinate della cella della griglia.                                                                                           |
+| [**WM \_ PAINT**](wm-paint.md)                    | Disegna il modello griglia nel controllo della finestra della griglia.                                                                                                                                                                                                                                                         |
+| [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) | Determina se il cursore si trova all'interno del controllo della finestra della griglia quando l'utente preme il pulsante sinistro del mouse. In questo caso, la routine della finestra di dialogo inverte la cella della griglia appropriata e registra lo stato di tale cella in una matrice di bit utilizzata per creare la bitmap per il pennello personalizzato.              |
+| [**COMANDO \_ WM**](../menurc/wm-command.md)         | Elabora l'input per i tre controlli pulsante di comando. Se l'utente fa clic sul **pulsante Modello di test,** la routine della finestra di dialogo disegna il controllo Test Pattern con il nuovo modello di pennello personalizzato. Se l'utente fa clic sul **pulsante OK** **o Annulla,** la procedura della finestra di dialogo esegue le azioni di conseguenza. |
 
 
 
  
 
-Per ulteriori informazioni sui messaggi e sull'elaborazione dei messaggi, vedere [messaggi e code](../winmsg/messages-and-message-queues.md)di messaggi.
+Per altre informazioni sui messaggi e sull'elaborazione dei messaggi, [vedere Messaggi e code di messaggi.](../winmsg/messages-and-message-queues.md)
 
-Dopo aver scritto la routine della finestra di dialogo, includere la definizione di funzione per la procedura nel file di intestazione dell'applicazione e quindi chiamare la routine della finestra di dialogo nel punto appropriato nell'applicazione.
+Dopo aver scritto la routine della finestra di dialogo, includere la definizione della funzione per la procedura nel file di intestazione dell'applicazione e quindi chiamare la routine della finestra di dialogo nel punto appropriato dell'applicazione.
 
-Il seguente estratto dal file di intestazione dell'applicazione mostra la definizione di funzione per la routine della finestra di dialogo e le due funzioni da essa chiamate.
+L'estratto seguente del file di intestazione dell'applicazione mostra la definizione della funzione per la routine della finestra di dialogo e le due funzioni chiamate.
 
 
 ```C++
@@ -321,7 +321,7 @@ DWORD RetrieveWidth(LPTSTR, int);
 
 
 
-Infine, il codice seguente illustra come viene chiamata la routine della finestra di dialogo dal file del codice sorgente dell'applicazione.
+Infine, il codice seguente illustra come viene chiamata la routine della finestra di dialogo dal file di codice sorgente dell'applicazione.
 
 
 ```C++
@@ -333,7 +333,7 @@ Infine, il codice seguente illustra come viene chiamata la routine della finestr
 
 
 
-Questa chiamata viene in genere effettuata in risposta all'utente che sceglie un'opzione dal menu dell'applicazione.
+Questa chiamata viene in genere effettuata in risposta alla scelta da parte dell'utente di un'opzione dal menu dell'applicazione.
 
  
 

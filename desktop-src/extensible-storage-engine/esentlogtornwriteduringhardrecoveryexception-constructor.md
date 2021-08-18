@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentLogTornWriteDuringHardRecoveryException'
+description: Altre informazioni sul costruttore EsentLogTornWriteDuringHardRecoveryException
 title: Costruttore EsentLogTornWriteDuringHardRecoveryException
 TOCTitle: 'EsentLogTornWriteDuringHardRecoveryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogTornWriteDuringHardRecoveryException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d4fef3d3ea69d158ab7db0d2a543a80cad4e3a22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fac94eaaedc1c6d3f7000ebade9ec6630870a0796d96fb0aa48f3351a214012
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040859"
 ---
 # <a name="esentlogtornwriteduringhardrecoveryexception-constructor"></a>Costruttore EsentLogTornWriteDuringHardRecoveryException
 
 Inizializza una nuova istanza della classe EsentLogTornWriteDuringHardRecoveryException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentLogTornWriteDuringHardRecoveryException()
 
 [Membri di EsentLogTornWriteDuringHardRecoveryException](./esentlogtornwriteduringhardrecoveryexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

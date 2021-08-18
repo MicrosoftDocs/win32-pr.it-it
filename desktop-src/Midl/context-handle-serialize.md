@@ -1,9 +1,9 @@
 ---
-title: attributo context_handle_serialize
-description: L'attributo \ Context \_ handle \_ Serialize \ ACF garantisce che un handle di contesto venga sempre serializzato, indipendentemente dal comportamento predefinito dell'applicazione.
+title: context_handle_serialize attributo
+description: L'attributo \ context handle serialize\ ACF garantisce che un handle di contesto verrà sempre serializzato, indipendentemente dal comportamento predefinito \_ \_ dell'applicazione.
 ms.assetid: e2f48582-228a-4725-9543-1e638d86ff6b
 keywords:
-- attributo context_handle_serialize MIDL
+- context_handle_serialize attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c74e364c3ae8bf0439e50ae53130542762f37484
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c91bf9ab1610585001b1380b15ba5a89433f80194596e26cbae84692ff3a872a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013959"
 ---
-# <a name="context_handle_serialize-attribute"></a>\_attributo di serializzazione dell'handle di contesto \_
+# <a name="context_handle_serialize-attribute"></a>Attributo di \_ \_ serializzazione dell'handle di contesto
 
-L' **\[ handle del contesto \_ \_ serializzare \]** l'attributo ACF garantisce che un handle di contesto venga sempre serializzato, indipendentemente dal comportamento predefinito dell'applicazione.
+L'attributo ACF **\[ \_ \_ di serializzazione \]** dell'handle di contesto garantisce che un handle di contesto sia sempre serializzato, indipendentemente dal comportamento predefinito dell'applicazione.
 
 ``` syntax
 typedef [context_handle_serialize [ , type-acf-attribute-list ] ] context-handle-type;
@@ -36,42 +36,42 @@ function-name(
 
 <dl> <dt>
 
-*tipo-ACF-Attribute-List* 
+*type-acf-attribute-list* 
 </dt> <dd>
 
-Qualsiasi altro attributo ACF applicabile al tipo.
+Qualsiasi altro attributo ACF che si applica al tipo.
 
 </dd> <dt>
 
-*context-handle-tipo* 
+*context-handle-type* 
 </dt> <dd>
 
-Identificatore che specifica il tipo di handle del contesto, come definito in una Dichiarazione [**typedef**](typedef.md) . Si tratta del tipo che riceve l'attributo di **\[ \_ \_ serializzazione \] dell'handle del contesto** nel file IDL.
+Identificatore che specifica il tipo di handle di contesto, come definito in una [**dichiarazione typedef.**](typedef.md) Si tratta del tipo che riceve **\[ l'attributo di \_ \_ serializzazione \] dell'handle** di contesto nel file IDL.
 
 </dd> <dt>
 
-*funzione-ACF-Attribute-List* 
+*function-acf-attribute-list* 
 </dt> <dd>
 
 Eventuali attributi ACF aggiuntivi che si applicano alla funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Nome della funzione come definito nel file IDL.
 
 </dd> <dt>
 
-*parametro-ACF-Attribute-List* 
+*parameter-acf-attribute-list* 
 </dt> <dd>
 
-Qualsiasi altro attributo ACF applicabile al parametro.
+Qualsiasi altro attributo ACF che si applica al parametro .
 
 </dd> <dt>
 
-*nome param* 
+*param-name* 
 </dt> <dd>
 
 Nome del parametro come definito nel file IDL.
@@ -80,13 +80,13 @@ Nome del parametro come definito nel file IDL.
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo di **\[ \_ \_ serializzazione \] dell'handle di contesto** identifica un handle di associazione che mantiene le informazioni sul contesto o sullo stato sul server tra le chiamate a procedure remote. L'attributo può essere visualizzato come un attributo di tipo [**typedef**](typedef.md) IDL, come attributo di tipo restituito della funzione o come attributo di parametro.
+**\[ L'attributo di \_ \_ serializzazione dell'handle \]** di contesto identifica un handle di associazione che gestisce informazioni sul contesto o sullo stato nel server tra chiamate di procedura remota. L'attributo può essere visualizzato come attributo di [**tipo typedef**](typedef.md) IDL, come attributo del tipo restituito della funzione o come attributo di parametro.
 
-Per impostazione predefinita, le chiamate agli handle di contesto vengono serializzate, ma un'applicazione può chiamare [**RpcSsDontSerializeContext**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcssdontserializecontext) per eseguire l'override di questo comportamento predefinito. L'utilizzo dell'attributo di **\[ \_ \_ serializzazione \] dell'handle di contesto** in un file ACF garantisce che le chiamate su questo particolare handle di contesto verranno serializzate, anche se l'applicazione chiamante ha eseguito l'override della serializzazione predefinita. Una routine di rundown del contesto è facoltativa.
+Per impostazione predefinita, le chiamate sugli handle di contesto vengono serializzate, ma un'applicazione può chiamare [**RpcSsDontSerializeContext**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcssdontserializecontext) per eseguire l'override di questo comportamento predefinito. L'uso dell'attributo **\[ \_ di \_ serializzazione \] dell'handle** di contesto in un file ACF garantisce che le chiamate a questo handle di contesto specifico vengano serializzate, anche se l'applicazione chiamante ha eseguito l'override della serializzazione predefinita. Una routine di rundown del contesto è facoltativa.
 
-Questo attributo è disponibile nella versione MIDL 5,0.
+Questo attributo è disponibile in MIDL versione 5.0.
 
-**Windows server 2003 e Windows XP o versione successiva:** Una singola interfaccia può supportare sia gli handle di contesto serializzati che quelli non serializzati, consentendo a un metodo su un'interfaccia di accedere a un handle di contesto esclusivamente (serializzato), mentre altri metodi accedono a tale handle di contesto in modalità condivisa (non serializzato). Queste funzionalità di accesso sono confrontabili con i meccanismi di blocco in lettura/scrittura; i metodi che usano un handle di contesto serializzato sono utenti esclusivi (writer), mentre i metodi che usano un handle di contesto non serializzato sono utenti condivisi (lettori). I metodi che eliminano o modificano lo stato di un handle di contesto devono essere serializzati. I metodi che non modificano lo stato di un handle di contesto, ad esempio i metodi che leggono semplicemente da un handle di contesto, possono essere non serializzati. Si noti che i metodi di creazione vengono serializzati in modo implicito.
+**Windows Server 2003 e Windows XP o versioni successive:** Una singola interfaccia può contenere handle di contesto serializzati e non serializzati, consentendo a un metodo in un'interfaccia di accedere esclusivamente a un handle di contesto (serializzato), mentre altri metodi accedono a tale handle di contesto in modalità condivisa (non serializzata). Queste funzionalità di accesso sono paragonabili ai meccanismi di blocco in lettura/scrittura. I metodi che usano un handle di contesto serializzato sono utenti esclusivi (writer), mentre i metodi che usano un handle di contesto non serializzato sono utenti condivisi (lettori). I metodi che eliminano o modificano lo stato di un handle di contesto devono essere serializzati. I metodi che non modificano lo stato di un handle di contesto, ad esempio i metodi che leggono semplicemente da un handle di contesto, possono essere nonserializzati. Si noti che i metodi di creazione vengono serializzati in modo implicito.
 
 ## <a name="examples"></a>Esempi
 
@@ -105,10 +105,10 @@ HRESULT RemoteFunc([context_handle_serialize] pCxHandle);
 [Attributi ACF](acf-attributes.md)
 </dt> <dt>
 
-[**gestore del contesto \_ \_ noserialize**](context-handle-noserialize.md)
+[**context \_ handle \_ noserialize**](context-handle-noserialize.md)
 </dt> <dt>
 
-[**handle di contesto \_**](context-handle.md)
+[**handle di \_ contesto**](context-handle.md)
 </dt> <dt>
 
 [Handle di contesto](/windows/desktop/Rpc/context-handles)
@@ -123,9 +123,9 @@ HRESULT RemoteFunc([context_handle_serialize] pCxHandle);
 [Client multithreading e handle di contesto](/windows/desktop/Rpc/multithreaded-clients-and-context-handles)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

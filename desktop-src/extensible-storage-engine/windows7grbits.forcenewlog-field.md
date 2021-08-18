@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Grbits. ForceNewLog'
-title: Campo Windows7Grbits. ForceNewLog (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Campo Windows7Grbits.ForceNewLog'
+title: Campo Windows7Grbits.ForceNewLog (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: ForceNewLog field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.ForceNewLog
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits.forcenewlog(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca2810b1ae273ddfde3c2490d5a4b2b31bce197d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc51e7b7881a4b297ae5125ae71e96a98e67a04297984d212517e7e3d587c606
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038599"
 ---
-# <a name="windows7grbitsforcenewlog-field"></a>Campo Windows7Grbits. ForceNewLog
+# <a name="windows7grbitsforcenewlog-field"></a>Campo Windows7Grbits.ForceNewLog
 
-Forza la creazione di un nuovo file di log. Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.
+Forzare la creazione di un nuovo file di log. Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const CommitTransactionGrbit ForceNewLog
 
 [Membri di Windows7Grbits](./windows7grbits-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

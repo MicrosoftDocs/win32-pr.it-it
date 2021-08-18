@@ -1,11 +1,11 @@
 ---
 title: Attributo FRS-Service-Command-Status
-description: Risposta dall'ultimo comando emesso a un membro.
+description: Risposta dell'ultimo comando eseguito a un membro.
 ms.assetid: 96938191-7460-4ac3-b33d-534e76d4b8df
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-Service-Command-Status
-- Schema AD dell'attributo fRSServiceCommandStatus
+- Attributo AD Schema FRS-Service-Command-Status
+- Attributo fRSServiceCommandStatus Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9c7fdad2518ee5c55a2e0f5a0ffc3c011d30e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30e09f85f5e9f057a3f74826f32fd9783466a72e4d5a76201fec80db866fb113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323491"
 ---
 # <a name="frs-service-command-status-attribute"></a>Attributo FRS-Service-Command-Status
 
-Risposta dall'ultimo comando emesso a un membro.
+Risposta dell'ultimo comando eseguito a un membro.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | FRS-Service-Command-Status                  |
-| LDAP-Display-Name | fRSServiceCommandStatus                     |
+| Ldap-Display-Name | fRSServiceCommandStatus                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.879                      |
-| System-ID-GUID    | 2a132582-9373-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | 2a132582-9373-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Risposta dall'ultimo comando emesso a un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

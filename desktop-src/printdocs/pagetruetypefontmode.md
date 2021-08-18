@@ -4,12 +4,12 @@ ms.assetid: 36b1de5d-8575-42cf-b158-dcf7705ec157
 title: PageTrueTypeFontMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf30af3684693f594f497dbad95d4f9a7743d624
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: e22765acba62747c26544739c85d0709250463d130ec09ff6c66ca25e472cf7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112281"
 ---
 # <a name="pagetruetypefontmode"></a>PageTrueTypeFontMode
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageTrueTypeFontMode">

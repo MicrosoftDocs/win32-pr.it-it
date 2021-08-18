@@ -1,7 +1,7 @@
 ---
-description: Definisce un elenco di strutture che contengono valori dei contatori.
+description: Definisce un elenco di strutture che contengono valori del contatore.
 ms.assetid: 6f6b33ed-6440-456c-8379-61a37798c95f
-title: Tipo complesso struct
+title: Tipo complesso structs
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c36de698d1e0eb136f17034e0740851fc751d157
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0dfa7f72ee537d857f19301aa4df906d94b0bf7ba9e3f7a76bdb6ab82c84dfd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314421"
 ---
-# <a name="structs-complex-type"></a>Tipo complesso struct
+# <a name="structs-complex-type"></a>Tipo complesso structs
 
-Definisce un elenco di strutture che contengono valori dei contatori.
+Definisce un elenco di strutture che contengono valori del contatore.
 
 ``` syntax
 <xs:complexType name="structs">
@@ -39,7 +39,7 @@ Definisce un elenco di strutture che contengono valori dei contatori.
 
 | Elemento    | Tipo                                                           | Descrizione                                                      |
 |------------|----------------------------------------------------------------|------------------------------------------------------------------|
-| **struct** | [**uomo: struct**](performance-counters-struct-complex-type.md) | Nome di una struttura che contiene i valori del contatore.<br/> |
+| **Struct** | [**man:struct**](performance-counters-struct-complex-type.md) | Nome di una struttura che contiene i valori del contatore.<br/> |
 
 
 
@@ -49,8 +49,8 @@ Definisce un elenco di strutture che contengono valori dei contatori.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

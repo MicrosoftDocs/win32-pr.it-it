@@ -3,7 +3,7 @@ title: Elemento Row
 description: Rappresenta una riga di controlli in un modello di layout SizeDefinition personalizzato.
 ms.assetid: c3dac35f-3537-4eb7-b378-501ea88813f5
 keywords:
-- Barra multifunzione di Windows dell'elemento Row
+- Elemento Row Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d59913d8a733e4186f2c00e35431d68ebdea839e67103a46873e6f3f64f3a72b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111445022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449561"
 ---
 # <a name="row-element"></a>Elemento Row
 
 Rappresenta una riga di controlli in un modello di layout SizeDefinition personalizzato.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <Row>

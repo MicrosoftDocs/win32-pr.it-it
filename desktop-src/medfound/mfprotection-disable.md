@@ -1,17 +1,17 @@
 ---
 description: Specifica che la protezione è disabilitata.
 ms.assetid: 1ED6587A-8880-4DC7-90DA-D6AC9EDFEEB5
-title: Attributo MFPROTECTION_DISABLE (Mfidl. h)
+title: MFPROTECTION_DISABLE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1b2c8b5fa90218ef58300ccfdcd77f465f0685d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 698bf0da67b825d3a6eaf319ac0a6bb4d6d5eaa0413d53861c7f847a6922abdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973200"
 ---
-# <a name="mfprotection_disable-attribute"></a>\_Attributo disable MFPROTECTION
+# <a name="mfprotection_disable-attribute"></a>Attributo MFPROTECTION \_ DISABLE
 
 Specifica che la protezione è disabilitata.
 
@@ -25,9 +25,9 @@ Specifica che la protezione è disabilitata.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica che la protezione è disabilitata.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

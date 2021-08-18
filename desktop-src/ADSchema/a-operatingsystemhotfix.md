@@ -1,10 +1,10 @@
 ---
-title: Sistema operativo-attributo hotfix
-description: Livello di hotfix del sistema operativo.
+title: Attributo Operating-System-Hotfix
+description: Livello hotfix del sistema operativo.
 ms.assetid: 46fc7eb2-9e68-4036-be71-2d38766f8b4b
 ms.tgt_platform: multiple
 keywords:
-- Sistema operativo-schema AD dell'attributo hotfix
+- Schema AD dell'attributo Operating-System-Hotfix
 - Schema AD dell'attributo operatingSystemHotfix
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c32ced3ea760eab9d97828369b51ec596d561ebd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ece851b703c543740716ec042331c4ede69aa79b7dc06b4ee9fdce8c974c4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442151"
 ---
-# <a name="operating-system-hotfix-attribute"></a>Sistema operativo-attributo hotfix
+# <a name="operating-system-hotfix-attribute"></a>Attributo Operating-System-Hotfix
 
-Livello di hotfix del sistema operativo.
+Livello hotfix del sistema operativo.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Sistema operativo-hotfix                     |
-| LDAP-Display-Name | operatingSystemHotfix                       |
+| CN                | Hotfix del sistema operativo                     |
+| Ldap-Display-Name | operatingSystemHotfix                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.415                      |
-| System-ID-GUID    | bd951b3c-9c96-11d0-afdd-00c04fd930c9        |
+| System-Id-Guid    | bd951b3c-9c96-11d0-afdd-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| Is-Single-Valued       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| Is-Single-Valued       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| Is-Single-Valued       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Livello di hotfix del sistema operativo.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

@@ -4,24 +4,24 @@ ms.assetid: c8b960db-fb8b-4c32-99c3-9d83432574cc
 title: Panoramica della notifica degli eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c60c3251a74606f07f25ab6870cfd1f333ecbbd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 90ca5e6ffb4737054f773fc5be35d56939e711442a3b31761cd23c144ed00ac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148534"
 ---
 # <a name="overview-of-event-notification"></a>Panoramica della notifica degli eventi
 
-Un filtro notifica a Filter Graph Manager informazioni su un evento pubblicando una notifica degli eventi. Potrebbe trattarsi di un evento previsto, ad esempio la fine di un flusso, oppure potrebbe rappresentare un errore, ad esempio un errore di rendering di un flusso. Il gestore del grafico del filtro gestisce alcuni eventi di filtro in modo autonomo e ne lascia gli altri per la gestione dell'applicazione. Se il gestore del grafico del filtro non gestisce un evento di filtro, inserisce la notifica degli eventi in una coda. Il grafico del filtro può anche accodare le proprie notifiche degli eventi per l'applicazione.
+Un filtro invia una notifica a Filter Graph Manager su un evento inviando una notifica dell'evento. L'evento potrebbe essere un evento previsto, ad esempio la fine di un flusso, oppure può rappresentare un errore, ad esempio un errore durante il rendering di un flusso. Gestione filtri Graph gestisce alcuni eventi di filtro da solo e ne lascia altri che l'applicazione deve gestire. Se Filter Graph Manager non gestisce un evento di filtro, inserisce la notifica dell'evento in una coda. Il grafico dei filtri può anche accodarne le notifiche degli eventi per l'applicazione.
 
-Un'applicazione recupera gli eventi dalla coda e li risponde in base al tipo di evento. La notifica degli eventi in DirectShow è pertanto simile allo schema di Accodamento messaggi di Microsoft Windows. Un'applicazione può inoltre annullare il comportamento predefinito di Filter Graph Manager per un determinato tipo di evento. Il gestore del grafico dei filtri inserisce quindi tali eventi direttamente nella coda affinché l'applicazione venga gestita.
+Un'applicazione recupera gli eventi dalla coda e risponde a essi in base al tipo di evento. La notifica degli eventi DirectShow è pertanto simile allo schema di accodamento messaggi Windows microsoft. Un'applicazione può anche annullare il comportamento Graph di Gestione filtri per un determinato tipo di evento. Gestione Graph filtra quindi inserisce tali eventi direttamente nella coda per la gestione da parte dell'applicazione.
 
-Questo meccanismo Abilita
+Questo meccanismo abilita
 
--   Gestore del grafico di filtro per comunicare con l'applicazione.
--   Filtra per comunicare con l'applicazione e con il gestore del grafo dei filtri.
--   Applicazione per determinare il livello di coinvolgimento nella gestione degli eventi.
+-   Il filtro Graph Manager per comunicare con l'applicazione.
+-   Filtri per comunicare sia con l'applicazione che con Filter Graph Manager.
+-   Applicazione per determinarne il grado di coinvolgimento nella gestione degli eventi.
 
  
 

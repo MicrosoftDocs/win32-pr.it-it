@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bda6fe36d1168045ea9f8d331ff334920ed1dd19
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 07245e97e091f607d142de57c00109d3671bd81b5f34b9062681229090ff6b50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439401"
 ---
-# <a name="setshareinfo-method-of-the-win32_clustershare-class"></a>Metodo SetShareInfo della \_ classe ClusterShare Win32
+# <a name="setshareinfo-method-of-the-win32_clustershare-class"></a>Metodo SetShareInfo della classe ClusterShare Win32 \_
 
 Imposta i parametri della risorsa condivisa.
 
@@ -45,21 +45,21 @@ uint32 SetShareInfo(
 *MaximumAllowed* \[ in, facoltativo\]
 </dt> <dd>
 
-Limite per il numero massimo di utenti che possono usare questa risorsa contemporaneamente.
+Limite al numero massimo di utenti autorizzati a usare questa risorsa contemporaneamente.
 
 </dd> <dt>
 
-*Descrizione* \[ di in, facoltativo\]
+*Descrizione* \[ in, facoltativo\]
 </dt> <dd>
 
 Descrive la risorsa condivisa.
 
 </dd> <dt>
 
-*Accesso* \[ a in, facoltativo\]
+*Accesso* \[ in, facoltativo\]
 </dt> <dd>
 
-Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descrittore di sicurezza contiene informazioni sulle funzionalità di autorizzazione, proprietario e accesso della risorsa. Per ulteriori informazioni, vedere [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descrittore di sicurezza contiene informazioni sulle funzionalità di autorizzazione, proprietario e accesso della risorsa. Per altre informazioni, vedere [**Descrittore di sicurezza Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descritto
 | Client minimo supportato<br/> | Windows 7<br/>                                                                    |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descritto
 
 <dl> <dt>
 
-[**\_ClusterShare Win32**](win32-clustershare.md)
+[**Condivisione cluster \_ Win32**](win32-clustershare.md)
 </dt> </dl>
 
  

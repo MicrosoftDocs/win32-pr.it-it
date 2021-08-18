@@ -1,27 +1,27 @@
 ---
-description: Nell'esempio seguente viene illustrato l'utilizzo delle funzioni CertOIDToAlgId e CertCompareIntegerBlob.
+description: L'esempio seguente illustra l'uso delle funzioni CertOIDToAlgId e CertCompareIntegerBlob.
 ms.assetid: 89186d98-80a9-460a-be2b-3e328675c485
-title: 'Esempio di programma C: uso di CertOIDToAlgId e CertCompareIntegerBlob'
+title: 'Programma C di esempio: uso di CertOIDToAlgId e CertCompareIntegerBlob'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd7239dc8872d1330cfd0dc96b00bcc201f94e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b40bfcc8758c634a17747f58687d0382fc13f503b391b27514cc50577768d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007449"
 ---
-# <a name="example-c-program-using-certoidtoalgid-and-certcompareintegerblob"></a>Esempio di programma C: uso di CertOIDToAlgId e CertCompareIntegerBlob
+# <a name="example-c-program-using-certoidtoalgid-and-certcompareintegerblob"></a>Programma C di esempio: uso di CertOIDToAlgId e CertCompareIntegerBlob
 
-Nell'esempio seguente viene illustrato l'utilizzo delle funzioni [**CertOIDToAlgId**](/windows/desktop/api/Wincrypt/nf-wincrypt-certoidtoalgid) e [**CertCompareIntegerBlob**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcompareintegerblob) .
+L'esempio seguente illustra l'uso delle [**funzioni CertOIDToAlgId**](/windows/desktop/api/Wincrypt/nf-wincrypt-certoidtoalgid) e [**CertCompareIntegerBlob.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcompareintegerblob)
 
-Per prima cosa, tutti i OID disponibili vengono enumerati usando [**CryptEnumOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidinfo). Il codice usato con questa funzione illustra anche l'uso di una funzione di callback. La funzione di callback Mostra la logica di interruzione per sospendere tra ogni gruppo OID e dopo aver presentato le informazioni su un numero set di OID.
+In primo luogo, tutti gli OID disponibili vengono enumerati [**usando CryptEnumOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidinfo). Il codice usato con questa funzione illustra anche l'uso di una funzione di callback. La funzione di callback illustra la logica di interruzione da sospendere tra ogni gruppo OID e dopo la presentazione di informazioni su un numero impostato di OID.
 
-In secondo luogo, tre stringhe dell' [*identificatore di oggetto*](../secgloss/o-gly.md) (OID) vengono convertite in integer con identificatore di algoritmo **DWORD** usando [**CertOIDToAlgId**](/windows/desktop/api/Wincrypt/nf-wincrypt-certoidtoalgid). Il codice dimostra anche che tutte le stringhe OID non hanno identificatori di algoritmo correlati.
+In secondo piano, [*tre stringhe*](../secgloss/o-gly.md) di identificatore di oggetto (OID) vengono convertite in **numeri interi dell'identificatore** dell'algoritmo DWORD [**usando CertOIDToAlgId**](/windows/desktop/api/Wincrypt/nf-wincrypt-certoidtoalgid). Il codice dimostra anche che tutte le stringhe OID non hanno identificatori di algoritmo correlati.
 
-Infine, nell'esempio viene illustrato il confronto dei BLOB di interi. In questo esempio viene illustrato il troncamento di 0x00's iniziali da numeri positivi e 0xFF's iniziali da numeri negativi.
+Infine, nell'esempio viene illustrato il confronto di BLOB interi. In questo esempio viene illustrato il troncamento dei valori iniziali 0x00 numeri positivi e delle 0xFF iniziali da numeri negativi.
 
-Mostra anche che i numeri interi vengono confrontati come se fossero archiviati in formato [*Little-Endian*](../secgloss/l-gly.md) con le cifre più significative a destra.
+Mostra anche che i numeri interi vengono confrontati come se fossero archiviati in formato [*little-endian*](../secgloss/l-gly.md) con le cifre più significative a destra.
 
 
 ```C++

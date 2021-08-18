@@ -1,9 +1,9 @@
 ---
-title: funzione glColor4b (GL. h)
-description: Imposta il colore corrente. | funzione glColor4b (GL. h)
+title: Funzione glColor4b (Gl.h)
+description: Imposta il colore corrente. | Funzione glColor4b (Gl.h)
 ms.assetid: 50d829f2-f336-40be-8598-a255c86f0722
 keywords:
-- funzione glColor4b OpenGL
+- Funzione glColor4b OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd16d3bb752b5e640e86636929de9d8706ab49a9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e7cddf33fa16b0ffa6607610b9194a8518cbb31bc06e05cd335710605fa258c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061859"
 ---
-# <a name="glcolor4b-function"></a>glColor4b (funzione)
+# <a name="glcolor4b-function"></a>Funzione glColor4b
 
 Imposta il colore corrente.
 
@@ -43,21 +43,21 @@ void WINAPI glColor4b(
 
 <dl> <dt>
 
-*Red* 
+*Rosso* 
 </dt> <dd>
 
 Nuovo valore rosso per il colore corrente.
 
 </dd> <dt>
 
-*verde* 
+*Verde* 
 </dt> <dd>
 
 Nuovo valore verde per il colore corrente.
 
 </dd> <dt>
 
-*blu* 
+*Blu* 
 </dt> <dd>
 
 Nuovo valore blu per il colore corrente.
@@ -77,13 +77,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-GL archivia sia un indice dei colori a valore singolo corrente sia un colore corrente RGBA a quattro valori. **glcolor** imposta un nuovo colore RGBA a quattro valori. **glcolor** presenta due varianti principali: **glcolor3** e **glcolor4**. le varianti **glcolor3** specificano i nuovi valori rosso, verde e blu in modo esplicito e impostano in modo implicito il valore alfa corrente su 1,0 (intensità completa). le varianti **glcolor4** specificano tutti e quattro i componenti colore in modo esplicito.
+Il gl archivia sia un indice colori a valore singolo corrente che un colore RGBA a quattro valori corrente. **glcolor** imposta un nuovo colore RGBA a quattro valori. **glcolor** ha due varianti principali: **glcolor3** e **glcolor4.** **Le varianti glcolor3** specificano i nuovi valori rosso, verde e blu in modo esplicito e impostano in modo implicito il valore alfa corrente su 1,0 (intensità completa). **Le varianti glcolor4** specificano tutti e quattro i componenti di colore in modo esplicito.
 
-**glcolor3b**, **glcolor4b**, **glcolor3s**, **glcolor4s**, **glcolor3i** e **glcolor4i** accettano gli Integer a tre o quattro byte con segno, short o long come argomenti. Quando v viene aggiunto al nome, i comandi color possono assumere un puntatore a una matrice di tali valori.
+**glcolor3b**, **glcolor4b**, **glcolor3s**, **glcolor4s**, **glcolor3i e** **glcolor4i** accettano tre o quattro signed byte, short o long integer come argomenti. Quando v viene aggiunto al nome, i comandi color possono prendere un puntatore a una matrice di tali valori.
 
-I valori dei colori correnti vengono archiviati in formato a virgola mobile, con dimensioni mantissa e esponenti non specificate. I componenti dei colori integer senza segno, se specificati, vengono mappati in modo lineare ai valori a virgola mobile in modo che il valore rappresentabile più grande sia mappato a 1,0 (intensità completa) e 0 sia mappato a 0,0 (intensità zero). I componenti di colore integer con segno, se specificati, vengono mappati in modo lineare ai valori a virgola mobile in modo che il valore rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo sia mappato a-1,0. Si noti che questo mapping non converte 0 esattamente in 0,0. Ai valori a virgola mobile viene eseguito il mapping diretto.
+I valori dei colori correnti vengono archiviati in formato a virgola mobile, con dimensioni mantissa ed esponente non specificati. I componenti di colore di interi senza segno, se specificati, vengono mappati in modo lineare a valori a virgola mobile in modo che il valore rappresentabile più grande sia mappato a 1,0 (intensità completa) e 0 a 0,0 (intensità zero). Se specificato, i componenti di colore di interi con segno vengono mappati in modo lineare ai valori a virgola mobile in modo che il valore rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo a -1,0. Si noti che questo mapping non converte 0 esattamente in 0.0. I valori a virgola mobile vengono mappati direttamente.
 
-Nessun valore a virgola mobile né Signed Integer viene fissato all'intervallo \[ 0, 1 \] prima che venga aggiornato il colore corrente. Tuttavia, i componenti dei colori vengono fissati a questo intervallo prima che vengano interpolati o scritti in un buffer dei colori.
+Né i valori a virgola mobile né i valori interi con segno vengono definiti nell'intervallo \[ 0,1 \] prima dell'aggiornamento del colore corrente. Tuttavia, i componenti di colore vengono fissati a questo intervallo prima di essere interpolati o scritti in un buffer dei colori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,8 +93,8 @@ Nessun valore a virgola mobile né Signed Integer viene fissato all'intervallo \
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ Nessun valore a virgola mobile né Signed Integer viene fissato all'intervallo \
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGetBooleanv, glGetDoublev, glGetFloatv, glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)

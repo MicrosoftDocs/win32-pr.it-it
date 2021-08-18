@@ -1,17 +1,17 @@
 ---
 description: Indica se il contenitore dell'endpoint di associazione del dispositivo supporta SupportsNetworking.
 ms.assetid: 83d18f28-fa2b-496c-b9e4-ceacd268724b
-title: System. Devices. AepContainer. SupportsNetworking
+title: System.Devices.AepContainer.SupportsNetworking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a96b7a4fc29b8ef9f34d7e72bc4e734c33455d73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9206b300ecb47af30547df7692ea2e8bae755af55065d5b31535352566ed45c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775801"
 ---
-# <a name="systemdevicesaepcontainersupportsnetworking"></a>System. Devices. AepContainer. SupportsNetworking
+# <a name="systemdevicesaepcontainersupportsnetworking"></a>System.Devices.AepContainer.SupportsNetworking
 
 Indica se il contenitore dell'endpoint di associazione del dispositivo supporta SupportsNetworking
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

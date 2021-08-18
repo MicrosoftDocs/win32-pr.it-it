@@ -4,16 +4,16 @@ ms.assetid: A7BA0AE0-D251-4813-B301-B5588615B6F5
 title: Metodi IEnumCERTVIEWCOLUMN
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd71addbf4067ef8d44a0e67baec0437f0b2bab1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8db48700f3a553d6ba9d98f38850d74a34ef945d9d0213d800367981c7485c4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005419"
 ---
 # <a name="ienumcertviewcolumn-methods"></a>Metodi IEnumCERTVIEWCOLUMN
 
-L'interfaccia [**IEnumCERTVIEWCOLUMN**](/windows/desktop/api/Certview/nn-certview-ienumcertviewcolumn) espone i metodi seguenti.
+[**L'interfaccia IEnumCERTVIEWCOLUMN**](/windows/desktop/api/Certview/nn-certview-ienumcertviewcolumn) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ L'interfaccia [**IEnumCERTVIEWCOLUMN**](/windows/desktop/api/Certview/nn-certvie
 -   [**Metodo GetName**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-getname)
 -   [**Metodo GetType**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-gettype)
 -   [**Metodo GetValue**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-getvalue)
--   [**Metodo di indicizzazione**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-isindexed)
+-   [**Metodo IsIndexed**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-isindexed)
 -   [**Metodo Next**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-next)
 -   [**Metodo Reset**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-reset)
 -   [**Metodo Skip**](/windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-skip)

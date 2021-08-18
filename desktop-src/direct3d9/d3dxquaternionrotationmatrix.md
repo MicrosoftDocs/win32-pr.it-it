@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9b0ff8529f32d398ac208cff3214fccfdb2ade81
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fb3ad57cc34a7b16b15c49195e39004094a33e2a168c7a3ff2f5f7eb77c267dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988451"
 ---
 # <a name="d3dxquaternionrotationmatrix-function-d3dx9mathh"></a>Funzione D3DXQuaternionRotationMatrix (D3dx9math.h)
 

@@ -4,12 +4,12 @@ ms.assetid: b3951c03-e869-42ae-82d3-2616861ce361
 title: System.Document. HiddenSlideCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e20a168e7ae37f3a390b73d0f539c663511493
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 691abf62a8fa974f8f660747df62f98b0c6096de480bef936106a12d122064bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119445251"
 ---
 # <a name="systemdocumenthiddenslidecount"></a>System.Document. HiddenSlideCount
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

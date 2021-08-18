@@ -4,7 +4,7 @@ description: Riservato per utilizzi futuri. | Attributo MS-TS-Property02
 ms.assetid: 4d96a949-96f6-4208-b6a0-903122ca7ae7
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TS-Property02-schema AD
+- Schema AD dell'attributo MS-TS-Property02
 - Schema AD dell'attributo msTSProperty02
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e2c5658fcb8a6bd042723c87704227f131c625
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4fe3cf124ae363ab23268370ae9bc59f73c051ead9c5305cef2bd04b76358be4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507881"
 ---
 # <a name="ms-ts-property02-attribute"></a>Attributo MS-TS-Property02
 
@@ -30,12 +30,12 @@ Riservato per utilizzi futuri.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-Property02                            |
-| LDAP-Display-Name | msTSProperty02                              |
+| Ldap-Display-Name | msTSProperty02                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1992                     |
-| System-ID-GUID    | 3586f6ac-51b7-4978-ab42-f936463198e7        |
+| System-Id-Guid    | 3586f6ac-51b7-4978-ab42-f936463198e7        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Falso                                                                       |
-| È a valore singolo       | Falso                                                                       |
+| Is-Single-Valued       | Falso                                                                       |
 | Indicizzato             | Vero                                                                        |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Falso                                                                       |
-| È a valore singolo       | Falso                                                                       |
+| Is-Single-Valued       | Falso                                                                       |
 | Indicizzato             | Vero                                                                        |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Riservato per utilizzi futuri.
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Falso                                                                       |
-| È a valore singolo       | Falso                                                                       |
+| Is-Single-Valued       | Falso                                                                       |
 | Indicizzato             | Vero                                                                        |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

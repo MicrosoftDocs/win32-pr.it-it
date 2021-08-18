@@ -1,31 +1,31 @@
 ---
 title: Esempio di funzione asincrona
-description: In questo esempio viene illustrata l'implementazione e la chiamata di funzioni asincrone.
+description: Questo esempio illustra l'implementazione e la chiamata di funzioni asincrone.
 ms.assetid: e71bd231-c69c-409f-874c-a0798b844ee6
 keywords:
 - Servizi Web AsyncModelExample per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbfc0963ef1f62a5458f9353245e96959be2f32d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c2c5470596bf34a2d0d0e96311445de262f68c13f2684a26bac7f773cd2959f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444761"
 ---
 # <a name="asynchronous-function-example"></a>Esempio di funzione asincrona
 
-In questo esempio viene illustrata l'implementazione e la chiamata di funzioni asincrone.
+Questo esempio illustra l'implementazione e la chiamata di funzioni asincrone.
 
 L'esempio è costituito dalle parti seguenti:
 
--   Funzione Add che consente di aggiungere due numeri in modo sincrono o asincrono. Viene creato un thread come dettaglio di implementazione per il case asincrono.
--   La funzione CallAddSync richiama in modo sincrono le funzioni Add.
+-   Funzione Add che aggiungerà due numeri in modo sincrono o asincrono. Crea un thread come dettaglio di implementazione per il caso asincrono.
+-   La funzione CallAddSync richiama le funzioni Add in modo sincrono.
 -   La funzione CallAddAsync richiama le funzioni Add in modo asincrono.
 
-## <a name="asyncmodelcpp"></a>AsyncModel. cpp
+## <a name="asyncmodelcpp"></a>AsyncModel.cpp
 
 
 ```C++
@@ -383,9 +383,9 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

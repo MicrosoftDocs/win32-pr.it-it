@@ -1,21 +1,21 @@
 ---
-description: Il metodo Delete Elimina un componente ITTime.
+description: Il metodo Delete elimina un componente ITTime.
 ms.assetid: 0445d659-7b83-4462-b199-511fd8270f32
-title: Metodo ITTimeCollection::D Elimina (sdpblb. h)
+title: Metodo ITTimeCollection::D elete (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9aad562660a2d563193e5074b52f4d1a513bb39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6376f3f91728a0cd0c8a66003ac53c55414bedbc29bddb6e6eddcde6c7c80e52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060769"
 ---
-# <a name="ittimecollectiondelete-method"></a>ITTimeCollection::D Metodo Elimina
+# <a name="ittimecollectiondelete-method"></a>Metodo ITTimeCollection::D elete
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **Delete** Elimina un componente [**ITTime**](ittime.md) .
+Il **metodo Delete** elimina un componente [**ITTime.**](ittime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT Delete(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
-Indice del componente [**ITTime**](ittime.md) da eliminare. La matrice di indici è in base uno.
+Indice del [**componente ITTime**](ittime.md) da eliminare. La matrice di indici è in base uno.
 
 </dd> </dl>
 
@@ -47,10 +47,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                         | Significato                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro di *Indice* non è valido.<br/>                  |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro Index* non è valido.<br/>                  |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -63,9 +63,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

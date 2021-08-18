@@ -1,42 +1,42 @@
 ---
-description: hashing e codifica un messaggio di testo, quindi decodifica e verifica il messaggio.
+description: esegue l'hashing e codifica un SMS, quindi decodifica e verifica il messaggio.
 ms.assetid: effe4080-63c1-4f35-a5e3-e7e60754b28f
-title: 'Esempio di programma C: codifica e decodifica di un messaggio con hash'
+title: 'Programma C di esempio: codifica e decodifica di un messaggio con hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5904a684d02a81acba1502162c779b9f124d3dbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1119ff8c54e0a181e5b99cdb70b6a3a62825a7d2b05879a85547bee4bcb7c310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007719"
 ---
-# <a name="example-c-program-encoding-and-decoding-a-hashed-message"></a>Esempio di programma C: codifica e decodifica di un messaggio con hash
+# <a name="example-c-program-encoding-and-decoding-a-hashed-message"></a>Programma C di esempio: codifica e decodifica di un messaggio con hash
 
-Nell'esempio seguente viene eseguito l' [*hashing*](../secgloss/h-gly.md) e viene codificato un messaggio di testo, quindi viene decodificato e verificato il messaggio.
+Nell'esempio [*seguente viene eseguito l'hashing*](../secgloss/h-gly.md) e la codifica di un SMS, quindi viene decodificato e verificato il messaggio.
 
-Sebbene, per semplicità, le due funzioni diverse siano state combinate in questo esempio, in un'impostazione più realistica le due parti verrebbero utilizzate separatamente.
+Anche se, per semplicità, le due diverse funzioni sono state combinate in questo esempio, in un'impostazione più realistica le due parti verranno usate separatamente.
 
-In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Questo esempio illustra le attività seguenti e le funzioni CryptoAPI:
 
--   Chiamata di [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) per acquisire un provider CSP.
--   Utilizzo di [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) per calcolare la lunghezza del messaggio codificato.
--   Allocazione della memoria per un buffer per memorizzare i dati codificati.
--   Apertura di un messaggio da codificare tramite [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
--   Aggiunta di contenuto al messaggio da codificare tramite [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Utilizzo di [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per copiare il messaggio codificato nel buffer allocato.
--   Apertura di un messaggio da decodificare con [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
--   Aggiunta del messaggio codificato al messaggio da decodificare con [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Creazione di un puntatore duplicato al messaggio mediante [**CryptMsgDuplicate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgduplicate).
--   Verifica del tipo di messaggio con [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Utilizzo di [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per decodificare il messaggio.
--   Verifica dell'hash con [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol).
--   Utilizzo di [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) per rilasciare l'handle del messaggio.
--   Uso di [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) per rilasciare il CSP.
+-   Chiamata [**di CryptAcquireContext per**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) acquisire un provider CSP.
+-   Uso [**di CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) per calcolare la lunghezza del messaggio codificato.
+-   Allocazione di memoria per un buffer per contenere i dati codificati.
+-   Apertura di un messaggio da codificare [**tramite CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
+-   Aggiunta di contenuto al messaggio da codificare [**tramite CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Uso [**di CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per copiare il messaggio codificato nel buffer allocato.
+-   Apertura di un messaggio da decodificare [**tramite CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
+-   Aggiunta del messaggio codificato al messaggio da decodificare tramite [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Creazione di un puntatore duplicato al [**messaggio tramite CryptMsgDuplicate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgduplicate).
+-   Controllo del tipo di messaggio [**con CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Uso [**di CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per decodificare il messaggio.
+-   Verifica dell'hash [**tramite CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol).
+-   Uso [**di CryptMsgClose per**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) rilasciare l'handle del messaggio.
+-   Uso [**di CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) per rilasciare il provider di servizi di configurazione.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
 
-Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

@@ -1,11 +1,11 @@
 ---
-title: Proprietà Trigger.Id
+title: Trigger.Id proprietà
 description: Per lo scripting, ottiene o imposta l'identificatore per il trigger.
 ms.assetid: 15dd3aaa-f3ee-459d-a0bd-327c7a4beb03
 keywords:
-- ID Utilità di pianificazione proprietà
-- ID Utilità di pianificazione proprietà, oggetto trigger
-- Trigger Utilità di pianificazione oggetto, proprietà ID
+- Proprietà Id Utilità di pianificazione
+- Proprietà Id Utilità di pianificazione, oggetto Trigger
+- Attivare l'oggetto Utilità di pianificazione proprietà , Id
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91a3868f76368b19e6a316b222b8ddaf4cbbff96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e2c9ff851eab7b5e9cfb124bf03c83986d24b391d5ea109865ff2d59e2e33536
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002159"
 ---
-# <a name="triggerid-property"></a>Proprietà Trigger.Id
+# <a name="triggerid-property"></a>Trigger.Id proprietà
 
 Per lo scripting, ottiene o imposta l'identificatore per il trigger.
 
@@ -38,11 +38,11 @@ Trigger.Id As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Identificatore del trigger. Questo identificatore viene utilizzato dal Utilità di pianificazione a scopo di registrazione.
+Identificatore del trigger. Questo identificatore viene usato dal Utilità di pianificazione ai fini della registrazione.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, l'identificatore del trigger viene specificato nell'attributo ID dei singoli elementi trigger (ad esempio, l'attributo ID dell'elemento [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) ) dello schema utilità di pianificazione.
+Durante la lettura o la scrittura di codice XML per un'attività, l'identificatore del trigger viene specificato nell'attributo Id dei singoli elementi trigger (ad esempio, l'attributo Id dell'elemento [**BootTrigger)**](taskschedulerschema-boottrigger-triggergroup-element.md) dello schema Utilità di pianificazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, l'identificato
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-title: Tag LST
-description: Tag LST
+title: Lst Tag
+description: Lst Tag
 ms.assetid: 82246675-9aa1-4603-a8f7-a5fd7b3f6be2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf13da7bf0267941939ec22c12706ed8c75c27e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ad70173ef3919ae2291204745f727961165a83f4f0fad0ad310003b997a5565e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114591"
 ---
-# <a name="lst-tag"></a>Tag LST
+# <a name="lst-tag"></a>Lst Tag
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,17 +27,17 @@ Ripete l'ultima istruzione pronunciata per il carattere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-\\**LST**\\
+\\**Lst**\\
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Commenti
 
-Questo tag consente a un carattere di ripetere l'ultima istruzione pronunciata. Questo tag deve essere visualizzato da solo nel metodo [**Speak**](speak-method.md) ; non è possibile includere altri parametri o testo. Quando il testo parlato viene ripetuto, tutti gli altri tag inclusi nel testo originale vengono ripetuti, ad eccezione dei segnalibri. Qualsiasi. WAV e. Vengono ripetuti anche i file LWV inclusi nel testo.
+Questo tag consente a un carattere di ripetere l'ultima istruzione pronunciata. Questo tag deve essere visualizzato da solo nel [**metodo Speak.**](speak-method.md) Non è possibile includere altri parametri o testo. Quando il testo parlato viene ripetuto, tutti gli altri tag inclusi nel testo originale vengono ripetuti, ad eccezione dei segnalibri. Qualsiasi. WAV e . Vengono ripetuti anche i file LWV inclusi nel testo.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo criteri a livello di computer
-description: Utilizzato per replicare i criteri estendibili dall'utente ai client.
+title: Attributo Machine-Wide-Policy
+description: Usato per replicare i criteri estendibili dall'utente nei client.
 ms.assetid: e8ce40b8-7658-4e4b-b0e1-b68031811dd1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo criteri a livello di computer
+- Schema AD dell'attributo Machine-Wide-Policy
 - Schema AD dell'attributo machineWidePolicy
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd3af77dfb501000369b3c4ae23b3f5f64f0da9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7300cdf104c8024bae822aa3801bd7de380102e5f27a7abcfeffb1c7442ed5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705621"
 ---
-# <a name="machine-wide-policy-attribute"></a>Attributo criteri a livello di computer
+# <a name="machine-wide-policy-attribute"></a>Attributo Machine-Wide-Policy
 
-Utilizzato per replicare i criteri estendibili dall'utente ai client.
+Usato per replicare i criteri estendibili dall'utente nei client.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Criteri a livello di computer                                   |
-| LDAP-Display-Name | machineWidePolicy                                     |
+| Ldap-Display-Name | machineWidePolicy                                     |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.459                                |
-| System-ID-GUID    | 80a67e4f-9f22-11d0-afdd-00c04fd930c9                  |
+| System-Id-Guid    | 80a67e4f-9f22-11d0-afdd-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -79,15 +79,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato per replicare i criteri estendibili dall'utente ai client.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

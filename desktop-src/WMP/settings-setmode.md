@@ -1,11 +1,11 @@
 ---
-title: Metodo Settings. semode
-description: Il metodo semode imposta varie modalità su attivo o inattivo.
+title: Impostazioni.setMode
+description: Il metodo setMode imposta varie modalità su attiva o inattiva.
 ms.assetid: 9ab88aeb-53f6-4798-9299-14961e373ca6
 keywords:
-- Metodo di Media Player di Windows
-- Metodo di Media Player Windows, classe Settings
-- Classe Settings Media Player Windows, metodo semode
+- Metodo setMode Windows Media Player
+- Metodo setMode Windows Media Player , Impostazioni classe
+- Impostazioni classe Windows Media Player, metodo setMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5740bf5638ce34e161414ac96eaa0fc80fcdb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f504fe429dddf1b3db191545e2f34a3605a8fc390346c8f00afe8c3d005f0277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995321"
 ---
-# <a name="settingssetmode-method"></a>Metodo Settings. semode
+# <a name="settingssetmode-method"></a>Impostazioni.setMode
 
-Il metodo **semode** imposta varie modalità su attivo o inattivo.
+Il **metodo setMode** imposta varie modalità su attiva o inattiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Settings.setMode(
 
 <dl> <dt>
 
-*modeName* \[ in\]
+*modeName* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** che specifica il nome della modalità da modificare, contenente uno dei valori seguenti.
@@ -52,7 +52,7 @@ Settings.setMode(
 
 | string     | Descrizione                                                                                                                                                       |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| riavvolgimento rapido | Modalità che indica se le tracce vengono riferite all'inizio dopo la riproduzione fino alla fine. Lo stato predefinito è true.                                                  |
+| riavvolgimento automatico | Modalità che indica se le tracce vengono riassolite all'inizio dopo la riproduzione fino alla fine. Lo stato predefinito è true.                                                  |
 | loop       | Modalità che indica se la sequenza di tracce si ripete. Lo stato predefinito è false.                                                                            |
 | showFrame  | Modalità che indica se il fotogramma chiave video più vicino viene visualizzato nella posizione corrente quando non viene riprodotto. Lo stato predefinito è false. Non ha alcun effetto sulle tracce audio. |
 | shuffle    | Modalità che indica se le tracce vengono riprodotte in ordine casuale. Lo stato predefinito è false.                                                                            |
@@ -63,10 +63,10 @@ Settings.setMode(
 
 </dd> <dt>
 
-*stato* \[ di in\]
+*state* \[ Pollici\]
 </dt> <dd>
 
-**Valore booleano** che specifica se la nuova modalità specificata è attiva o meno.
+**Valore** booleano che specifica se la nuova modalità specificata è attiva o meno.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la modalità showFrame è attiva, il lettore deve accedere al contenuto della traccia per recuperare il frame video. A causa delle considerazioni sulla larghezza di banda, usare questa modalità con cautela quando si giocano contenuti non locali.
+Quando la modalità showFrame è attiva, il lettore deve accedere al contenuto della traccia per recuperare il fotogramma video. Per considerazioni sulla larghezza di banda, usare questa modalità con cautela durante la riproduzione di contenuto non locale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Quando la modalità showFrame è attiva, il lettore deve accedere al contenuto d
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Per le modalità ciclo e riproduzione casuale, Windows Media Player versione 7,0 o successiva. Per le modalità AutoRewind e showFrame, Windows Media Player 9 Series o versione successiva.<br/> |
+| Versione<br/> | Per le modalità loop e shuffle, Windows Media Player versione 7.0 o successiva. Per le modalità autoRewind e showFrame, Windows Media Player serie 9 o successive.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                            |
 
 
@@ -93,10 +93,10 @@ Quando la modalità showFrame è attiva, il lettore deve accedere al contenuto d
 
 <dl> <dt>
 
-[**Oggetto Settings**](settings-object.md)
+[**Impostazioni Oggetto**](settings-object.md)
 </dt> <dt>
 
-[**Settings. getMode**](settings-getmode.md)
+[**Impostazioni.getMode**](settings-getmode.md)
 </dt> </dl>
 
  

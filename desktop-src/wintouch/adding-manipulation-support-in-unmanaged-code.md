@@ -1,52 +1,52 @@
 ---
 title: Aggiunta del supporto per la manipolazione nel codice non gestito
-description: In questa sezione viene illustrato come aggiungere il supporto per la manipolazione a codice non gestito implementando un sink di evento per l' \_ interfaccia IManipulationEvents.
+description: Questa sezione illustra come aggiungere il supporto della manipolazione al codice non gestito implementando un sink di evento per \_ l'interfaccia IManipulationEvents.
 ms.assetid: 7d8c6230-eaca-43c7-ad2f-651851b69d7f
 keywords:
-- Windows Touch, modifiche
-- Windows Touch, interfaccia _IManipulationEvents
-- Windows Touch, interfaccia IManipulationProcessor
-- manipolazioni, aggiunta del supporto nel codice non gestito
-- manipolazioni, supporto del codice non gestito
+- Windows Tocco, manipolazioni
+- Windows Interfaccia touch,_IManipulationEvents
+- Windows Tocco, interfaccia IManipulationProcessor
+- manipolazioni, aggiunta di supporto nel codice non gestito
+- manipolazioni, supporto di codice non gestito
 - manipolazioni, supporto nel codice non gestito
-- manipolazioni, interfaccia _IManipulationEvents
+- manipolazioni, _IManipulationEvents interfaccia
 - manipolazioni, interfaccia IManipulationProcessor
-- Interfaccia _IManipulationEvents, supporto di manipolazione nel codice non gestito
+- _IManipulationEvents,supporto della manipolazione nel codice non gestito
 - Interfaccia IManipulationProcessor, supporto della manipolazione nel codice non gestito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a2e000b6d3518c4e90eb5ae03b581e81037edf9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7ff526c128b6da83fae3a74b88cd3bb21bc3a81c507c0a76a7c70dbddc5f76d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710001"
 ---
 # <a name="adding-manipulation-support-in-unmanaged-code"></a>Aggiunta del supporto per la manipolazione nel codice non gestito
 
-In questa sezione viene illustrato come aggiungere il supporto per la manipolazione a codice non gestito implementando un sink di evento per l'interfaccia [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
+Questa sezione illustra come aggiungere il supporto della manipolazione al codice non gestito implementando un sink di evento per [**\_ l'interfaccia IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
 
-Nell'immagine seguente viene illustrata l'architettura di manipolazione.
+L'immagine seguente illustra l'architettura di manipolazione.
 
-![illustrazione che mostra i messaggi di Windows Touch passati al processore di manipolazione di un oggetto, che gestisce gli eventi con l' \- interfaccia IManipulationEvents](images/manipulation-arch.png)
+![illustrazione che mostra i messaggi di tocco di Windows passati al processore di manipolazione di un oggetto, che gestisce gli eventi con \- l'interfaccia imanipulationevents](images/manipulation-arch.png)
 
-I dati di tocco ricevuti dai messaggi [**WM \_ touch**](wm-touchdown.md) vengono passati al [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) insieme all'ID contatto dal messaggio di tocco. In base alla sequenza di messaggi, l'interfaccia **IManipulationProcessor** calcolerà il tipo di trasformazione che viene eseguito e i valori associati a questa trasformazione. **IManipulationProcessor** genererà [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) che vengono gestite da un sink di evento. Il sink di evento può quindi utilizzare questi valori per eseguire operazioni personalizzate sull'oggetto trasformato.
+I dati di tocco ricevuti dai [**messaggi TOUCH WM \_**](wm-touchdown.md) vengono passati a [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) insieme all'ID contatto dal messaggio di tocco. In base alla sequenza di messaggi, l'interfaccia **IManipulationProcessor** calcolerà il tipo di trasformazione in esecuzione e i valori associati a questa trasformazione. **IManipulationProcessor** genererà quindi [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) che vengono gestiti da un sink di evento. Il sink di evento può quindi usare questi valori per eseguire operazioni personalizzate sull'oggetto da trasformare.
 
-Per aggiungere il supporto per la manipolazione all'applicazione, è necessario attenersi alla procedura seguente:
+Per aggiungere il supporto per la manipolazione all'applicazione, è necessario seguire questa procedura:
 
-1.  Implementare un sink di evento per l'interfaccia [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
-2.  Creare un'istanza di un'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) .
+1.  Implementare un sink di evento per [**\_ l'interfaccia IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
+2.  Creare un'istanza di [**un'interfaccia IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor)
 3.  Creare un'istanza del sink di evento e configurare gli eventi di tocco.
-4.  Inviare i dati dell'evento Touch al processore di manipolazione.
+4.  Inviare i dati degli eventi di tocco al processore di manipolazione.
 
-In questa sezione vengono illustrati i passaggi da seguire per aggiungere il supporto per la modifica all'applicazione. Il codice viene fornito a ogni passaggio per iniziare.
+Questa sezione illustra i passaggi da seguire per aggiungere il supporto per la manipolazione all'applicazione. Il codice viene fornito in ogni passaggio per iniziare.
 
 > [!Note]  
-> Non è possibile utilizzare le modifiche e i movimenti allo stesso tempo perché i messaggi di movimento e tocco si escludono a vicenda.
+> Non è possibile usare manipolazioni e movimenti contemporaneamente perché i messaggi di movimento e tocco si escludono a vicenda.
 
-### <a name="implement-an-event-sink-for-_imanipualtionevents-interface"></a>Implementare un sink di evento per l' \_ interfaccia IManipualtionEvents
+### <a name="implement-an-event-sink-for-_imanipualtionevents-interface"></a>Implementare un sink di evento \_ per l'interfaccia IManipualtionEvents
 
-Prima di poter creare un'istanza del sink di evento, è necessario creare una classe che implementi l'interfaccia [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) per la gestione degli eventi. Si tratta del sink di evento. Gli eventi generati dall'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) vengono gestiti dal sink di evento. Nel codice seguente viene illustrata un'intestazione di esempio per una classe che eredita l'interfaccia **\_ IManipulationEvents** .
+Prima di poter creare un'istanza del sink di evento, è necessario creare una classe che implementi [**\_ l'interfaccia IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) per l'evento. Si tratta del sink di evento. Gli eventi generati [**dall'interfaccia IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) vengono gestiti dal sink di evento. Il codice seguente illustra un'intestazione di esempio per una classe che eredita **\_ l'interfaccia IManipulationEvents.**
 
 ```C++
 // Manipulation Header Files
@@ -122,7 +122,7 @@ private:
 };     
 ```
 
-Data l'intestazione, è necessario creare un'implementazione dell'interfaccia eventi in modo che la classe esegua le azioni che si desidera vengano eseguite dal processore di manipolazione. Il codice seguente è un modello che implementa la funzionalità minima di un sink di evento per l'interfaccia [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
+Data l'intestazione , è necessario creare un'implementazione dell'interfaccia degli eventi in modo che la classe esegua le azioni che il processore di manipolazione deve eseguire. Il codice seguente è un modello che implementa la funzionalità minima di un sink di evento per [**\_ l'interfaccia IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
 
 ```C++
 #include "stdafx.h"
@@ -299,11 +299,11 @@ HRESULT CManipulationEventSink::QueryInterface(REFIID riid, LPVOID *ppvObj)
 }         
 ```
 
-Prestare particolare attenzione alle implementazioni dei metodi [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted), [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta)e [**ManipulationCompleted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted) nella classe. Questi sono i metodi più probabili nell'interfaccia che richiedono l'esecuzione di operazioni in base alle informazioni di manipolazione passate nell'evento. Si noti inoltre che il secondo parametro del costruttore è l'oggetto utilizzato nelle manipolazioni degli eventi. Nel codice usato per produrre l'esempio, hWnd per l'applicazione viene inviato al costruttore in modo che possa essere riposizionato e ridimensionato.
+Prestare particolare attenzione alle implementazioni [**dei metodi ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted), [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta)e [**ManipulationCompleted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted) nella classe . Questi sono i metodi più probabili nell'interfaccia che richiedono l'esecuzione di operazioni in base alle informazioni di manipolazione passate nell'evento. Si noti anche che il secondo parametro nel costruttore è l'oggetto usato nelle modifiche degli eventi. Nel codice usato per la produzione dell'esempio, l'oggetto hWnd per l'applicazione viene inviato al costruttore in modo che possa essere riposizionato e ridimensionato.
 
 ### <a name="create-an-instance-of-an-imanipulationprocessor-interface"></a>Creare un'istanza di un'interfaccia IManipulationProcessor
 
-Nel codice in cui si utilizzeranno le modifiche, è necessario creare un'istanza di un'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Per prima cosa, è necessario aggiungere il supporto per la classe Manipulation. Il codice seguente illustra come è possibile eseguire questa operazione nella classe.
+Nel codice in cui si useranno le modifiche, è necessario creare un'istanza di [**un'interfaccia IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Prima di tutto è necessario aggiungere il supporto per la classe manipulations. Il codice seguente illustra come eseguire questa operazione nella classe .
 
 ```C++
 //Include windows.h for touch events
@@ -316,7 +316,7 @@ Nel codice in cui si utilizzeranno le modifiche, è necessario creare un'istanza
 IManipulationProcessor* g_pIManipProc;     
 ```
 
-Quando si dispone della variabile per il processore di manipolazione e sono state incluse le intestazioni per le modifiche, è necessario creare un'istanza dell'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Si tratta di un oggetto COM. Pertanto, è necessario chiamare [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance), quindi creare un'istanza del riferimento a **IManipulationProcessor**. Nel codice seguente viene illustrato come è possibile creare un'istanza di questa interfaccia.
+Dopo aver creato la variabile per il processore di manipolazione e aver incluso le intestazioni per le modifiche, è necessario creare un'istanza [**dell'interfaccia IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Si tratta di un oggetto COM. È quindi necessario chiamare [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)e quindi creare un'istanza del riferimento a **IManipulationProcessor.** Nel codice seguente viene illustrato come creare un'istanza di questa interfaccia.
 
 ```C++
    HRESULT hr = CoInitialize(0);
@@ -331,7 +331,7 @@ Quando si dispone della variabile per il processore di manipolazione e sono stat
 
 ### <a name="create-an-instance-of-your-event-sink-and-set-up-touch-events"></a>Creare un'istanza del sink di evento e configurare gli eventi di tocco
 
-Includere la definizione per la classe sink di evento nel codice e quindi aggiungere una variabile per la classe sink dell'evento di manipolazione. Nell'esempio di codice seguente è inclusa l'intestazione per l'implementazione della classe e viene impostata una variabile globale per archiviare il sink di evento.
+Includere la definizione per la classe del sink di evento nel codice e quindi aggiungere una variabile per la classe del sink di evento di manipolazione. L'esempio di codice seguente include l'intestazione per l'implementazione della classe e configura una variabile globale per archiviare il sink di evento.
 
 ```C++
 //Include your definition of the event sink, CManipulationEventSink.h in this case
@@ -341,7 +341,7 @@ Includere la definizione per la classe sink di evento nel codice e quindi aggiun
 CManipulationEventSink* g_pManipulationEventSink;   
 ```
 
-Dopo aver creato la variabile e avere incluso la definizione per la nuova classe sink di evento, è possibile creare la classe usando il processore di manipolazione configurato nel passaggio precedente. Il codice seguente illustra come creare un'istanza di questa classe da **OnInitDialog**.
+Dopo aver creato la variabile e aver incluso la definizione per la nuova classe di sink di evento, è possibile costruire la classe usando il processore di manipolazione configurato nel passaggio precedente. Nel codice seguente viene illustrato come creare un'istanza di questa classe da **OnInitDialog.**
 
 ```C++
    g_pManipulationEventSink = new CManipulationEventSink(g_pIManipProc, hWnd);
@@ -351,16 +351,16 @@ Dopo aver creato la variabile e avere incluso la definizione per la nuova classe
 ```
 
 > [!Note]  
-> La modalità di creazione di un'istanza del sink di evento dipende da ciò che si sta eseguendo con i dati di manipolazione. Nella maggior parte dei casi, si creerà un sink di evento del processore di manipolazione che non ha lo stesso costruttore di questo esempio.
+> Il modo in cui si crea un'istanza del sink di evento dipende dalle operazioni che si stanno eseguendo con i dati di manipolazione. Nella maggior parte dei casi, si creerà un sink di evento del processore di manipolazione che non ha lo stesso costruttore di questo esempio.
 
-### <a name="send-touch-event-data-to-the-manipulation-processor"></a>Inviare i dati dell'evento Touch al processore di manipolazione
+### <a name="send-touch-event-data-to-the-manipulation-processor"></a>Inviare i dati degli eventi di tocco al processore di manipolazione
 
-Ora che il processore di manipolazione e il sink di evento sono stati impostati, è necessario inviare i dati di tocco al processore di manipolazione per attivare gli eventi di manipolazione.
+Ora che il processore di manipolazione e il sink di eventi sono stati impostati, è necessario fornire i dati di tocco al processore di manipolazione per attivare gli eventi di manipolazione.
 
 > [!Note]  
-> Si tratta della stessa procedura descritta in [Introduzione con i messaggi di Windows Touch](getting-started-with-multi-touch-messages.md).
+> Si tratta della stessa procedura descritta in Attività iniziali [con Windows touch.](getting-started-with-multi-touch-messages.md)
 
-Innanzitutto, si creerà del codice per decodificare i messaggi [**WM \_ touch**](wm-touchdown.md) e inviarli all'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) per generare eventi. Nel codice seguente viene illustrata un'implementazione di esempio chiamata dal metodo **WndProc** e viene restituito un **LRESULT** per la messaggistica.
+In primo luogo, si creerà codice per decodificare i messaggi [**WM \_ TOUCH**](wm-touchdown.md) e inviarli [**all'interfaccia IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) per generare eventi. Il codice seguente illustra un'implementazione di esempio che viene chiamata dal **metodo WndProc** e restituisce un **LRESULT** per la messaggistica.
 
 ```C++
 LRESULT OnTouch(HWND hWnd, WPARAM wParam, LPARAM lParam )
@@ -408,7 +408,7 @@ LRESULT OnTouch(HWND hWnd, WPARAM wParam, LPARAM lParam )
 }
 ```
 
-Ora che è disponibile un metodo di utilità per la decodifica del messaggio [**WM \_ touch**](wm-touchdown.md) , è necessario passare i messaggi **WM \_ touch** alla funzione di utilità dal metodo **WndProc** . Il codice seguente illustra come è possibile eseguire questa operazione.
+Ora che è disponibile un metodo di utilità per decodificare il messaggio [**WM \_ TOUCH,**](wm-touchdown.md) è necessario passare i messaggi **WM \_ TOUCH** alla funzione di utilità dal **metodo WndProc.** Il codice seguente illustra come eseguire questa operazione.
 
 ```C++
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -452,7 +452,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 ```
 
-I metodi personalizzati implementati nel sink di evento dovrebbero ora funzionare. In questo esempio, il tocco della finestra lo sposta.
+I metodi personalizzati implementati nel sink di evento dovrebbero ora funzionare. In questo esempio, toccando la finestra verrà spostata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -462,4 +462,4 @@ I metodi personalizzati implementati nel sink di evento dovrebbero ora funzionar
 </dt> </dl>
 
 
- 
+ 

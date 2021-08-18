@@ -3,15 +3,15 @@ title: Compilazione offline
 description: Lo strumento compilatore di effetti (fxc.exe) è progettato per la compilazione offline di shader HLSL.
 ms.assetid: 56806335-a0c7-4247-b40d-ba93486a88ac
 keywords:
-- FXC, compilazione offline
+- fxc, compilazione offline
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7c2bf96a24cb586a5d229a395cbf6dc0cb9ee1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 88a15d3a71dbfb79541a75bd38cb28140d832b45e75a88a52b2d0c8988865f12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406331"
 ---
 # <a name="offline-compiling"></a>Compilazione offline
 
@@ -19,37 +19,37 @@ Lo strumento compilatore di effetti (fxc.exe) è progettato per la compilazione 
 
 ## <a name="compiling-with-the-current-compiler"></a>Compilazione con il compilatore corrente
 
-I modelli shader supportati dal compilatore corrente sono visualizzati nei [profili](dx-graphics-tools-fxc-syntax.md). Questo esempio compila un pixel shader per la destinazione del modello shader 5,1.
+I modelli di shader supportati dal compilatore corrente sono visualizzati in [Profili.](dx-graphics-tools-fxc-syntax.md) In questo esempio viene compilato un pixel shader per la destinazione del modello shader 5.1.
 
 ```
 fxc /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
 ```
 
-In questo esempio:
+Esempio:
 
--   PS \_ 5 \_ 1 è il profilo di destinazione.
--   PixelShader1. fxc è il file oggetto di output contenente lo shader compilato.
--   PixelShader1. HLSL è l'origine.
+-   ps \_ 5 \_ 1 è il profilo di destinazione.
+-   PixelShader1.fxc è il file dell'oggetto di output contenente lo shader compilato.
+-   PixelShader1.hlsl è l'origine.
 
 ```
 fxc /Od /Zi /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
 ```
 
-Le opzioni di debug includono opzioni aggiuntive per disabilitare le ottimizzazioni del compilatore (od) e abilitare le informazioni di debug (Zi), ad esempio i numeri di riga e i simboli.
+Le opzioni di debug includono opzioni aggiuntive per disabilitare le ottimizzazioni del compilatore (Od) e abilitare le informazioni di debug (Zi), ad esempio i numeri di riga e i simboli.
 
-Per un elenco completo delle opzioni della riga di comando, vedere la pagina relativa alla [sintassi](dx-graphics-tools-fxc-syntax.md) .
+Per un elenco completo delle opzioni della riga di comando, vedere la [pagina Sintassi.](dx-graphics-tools-fxc-syntax.md)
 
 ## <a name="compiling-with-the-legacy-compiler"></a>Compilazione con il compilatore legacy
 
-A partire da Direct3D 10, alcuni modelli di shader non sono più supportati. Sono inclusi pixel shader modelli: PS \_ 1 \_ 1, PS \_ 1 \_ 2, PS \_ 1 \_ 3 e PS \_ 1 \_ 4 che supportano risorse molto limitate e che dipendono da hardware. Il compilatore è stato riprogettato con il modello di shader 2 (o versione successiva), che consente una maggiore efficienza con la compilazione. Naturalmente, sarà necessario che l'utente sia in esecuzione su hardware che supporta i modelli shader 2 e versioni successive.
+A partire da Direct3D 10, alcuni modelli di shader non sono più supportati. Sono inclusi pixel shader seguenti: ps \_ \_ 1 1, ps \_ 1 \_ 2, ps \_ 1 3 e ps 1 4 che \_ \_ supportano risorse molto limitate e dipendono \_ dall'hardware. Il compilatore è stato riprogettato con il modello shader 2 (o versione successiva) che consente maggiore efficienza con la compilazione. Ciò richiede naturalmente l'esecuzione su hardware che supporta i modelli di shader 2 e superiori.
 
-Si noti inoltre che è necessario consultare le note sulla versione dell'SDK associate alla versione del compilatore FXC per il comportamento interessato dall'opzione/GEC.
+Si noti anche che è consigliabile consultare le note sulla versione dell'SDK associate alla versione del compilatore FXC per il comportamento interessato dall'opzione /Gec.
 
-## <a name="using-the-effect-compiler-tool-in-a-subprocess"></a>Uso dello strumento di compilazione degli effetti in un sottoprocesso
+## <a name="using-the-effect-compiler-tool-in-a-subprocess"></a>Uso dello strumento effect-compiler in un sottoprocesso
 
-Se fxc.exe viene generato come sottoprocesso da un'applicazione, è importante assicurarsi che l'applicazione controlli e legga tutti i dati nelle pipe di output o di errore passati alla funzione CreateProcess. Se l'applicazione attende solo il completamento del sottoprocesso e una delle pipe diventa completa, il sottoprocesso non viene mai completato.
+Se fxc.exe viene generato come sottoprocesso da un'applicazione, è importante assicurarsi che l'applicazione controlli e letta i dati nelle pipe di output o di errore passate alla funzione CreateProcess. Se l'applicazione attende solo il completamento del sottoprocesso e una delle pipe diventa piena, il sottoprocesso non verrà mai completato.
 
-Nell'esempio di codice seguente viene illustrato l'attesa di un sottoprocesso e la lettura delle pipe di output e di errore associate al sottoprocesso. Il contenuto della `WaitHandles` matrice corrisponde agli handle per il sottoprocesso, alla pipe per stdout e alla pipe per stderr.
+Nell'esempio di codice seguente viene illustrata l'attesa di un sottoprocesso e la lettura delle pipe di output e di errore collegate al sottoprocesso. Il contenuto della matrice corrisponde agli handle per il sottoprocesso, alla pipe per `WaitHandles` stdout e alla pipe per stderr.
 
 ```cpp
 HANDLE WaitHandles[] = {
@@ -83,8 +83,8 @@ while (1)
 }
 ```
 
-Per ulteriori informazioni sulla generazione di un processo, vedere la pagina di riferimento per [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+Per altre informazioni sulla generazione di un processo, vedere la pagina di riferimento per [**CreateProcess.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [Effect-strumento compilatore](fxc.md)
+* [Strumento compilatore effetti](fxc.md)

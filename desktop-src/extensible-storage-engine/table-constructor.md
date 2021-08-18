@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore di tabelle'
+description: 'Altre informazioni su: Costruttore di tabella'
 title: Costruttore di tabella
 TOCTitle: 'Table constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Table.#ctor(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,Microsoft.Isam.Esent.Interop.OpenTableGrbit)
@@ -72,7 +72,7 @@ public Table(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 

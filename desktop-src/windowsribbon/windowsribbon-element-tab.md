@@ -1,9 +1,9 @@
 ---
 title: Elemento Tab
-description: Rappresenta una scheda principale o contestuale.
+description: Rappresenta una scheda di base o contestuale.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
-- Elemento Scheda Barra multifunzione di Windows
+- Elemento Tab Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 410326961df84f6ae62d3c43bee3e651c9533066
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 64f5bffb6a81a1efd112c3f52f5d1276f893e9cfb059a5f240a6c8c73b990c3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441641"
 ---
 # <a name="tab-element"></a>Elemento Tab
 
-Rappresenta una scheda [principale](windowsribbon-controls-tab.md) o [contestuale.](windowsribbon-controls-tabgroup.md)
+Rappresenta una scheda [di base](windowsribbon-controls-tab.md) [o contestuale.](windowsribbon-controls-tabgroup.md)
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <Tab
@@ -59,7 +59,7 @@ Rappresenta una scheda [principale](windowsribbon-controls-tab.md) o [contestual
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa contenente un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
@@ -177,7 +177,7 @@ Questa sezione di codice illustra le **dichiarazioni di comando** tab per una **
 
 
 
-Questa sezione di codice illustra le **dichiarazioni del** controllo Tab.
+Questa sezione di codice illustra le dichiarazioni del controllo **Tab.**
 
 
 ```XML

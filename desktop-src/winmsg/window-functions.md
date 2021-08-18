@@ -4,19 +4,19 @@ description: Funzioni finestra
 ms.assetid: 6303b0c8-5172-41d7-bd0e-40d3a7d024ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 108fcfc6bc99a99e4edc727023974f2ffa7f7b71
-ms.sourcegitcommit: 57e91b10658c36e28dd8ebe3e77d5b9bec4fbcc2
+ms.openlocfilehash: 1157bb0026405d9d9491795d11978be60edd9b9b9109eb2b871812211b203f1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "107509830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449081"
 ---
 # <a name="window-functions"></a>Funzioni finestra
 
 * [**AdjustWindowRect**](/windows/win32/api/winuser/nf-winuser-adjustwindowrect)
 * [**AdjustWindowRectEx**](/windows/win32/api/winuser/nf-winuser-adjustwindowrectex)
 * [**AllowSetForegroundWindow**](/windows/win32/api/winuser/nf-winuser-allowsetforegroundwindow)
-* [**Finestra AnimateWindow**](/windows/win32/api/winuser/nf-winuser-animatewindow)
+* [**AnimateWindow**](/windows/win32/api/winuser/nf-winuser-animatewindow)
 * [**AnyPopup**](/windows/win32/api/winuser/nf-winuser-anypopup)
 * [**ArrangeIconicWindows**](/windows/win32/api/winuser/nf-winuser-arrangeiconicwindows)
 * [**BeginDeferWindowPos**](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos)

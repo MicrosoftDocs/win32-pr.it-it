@@ -1,44 +1,44 @@
 ---
-title: Configurazione del monitoraggio (configurazione del monitoraggio)
+title: Monitorare la configurazione (configurazione del monitoraggio)
 description: Monitora configurazione
 ms.assetid: 8439ca75-dd31-42a8-afd6-e1f7a867d17c
 keywords:
-- monitoraggio, informazioni
-- monitoraggio, DDC/CI
+- monitor,about
+- monitor,DDC/CI
 - monitoraggio, modifica delle impostazioni
-- monitorare, visualizzare l'interfaccia del comando del canale dati
-- Interfaccia del comando Visualizza canale dati
+- monitor,Display Data Channel Command Interface
+- Interfaccia dei comandi di Display Data Channel
 - DDC/CI
-- configurare il monitoraggio, visualizzare l'interfaccia del comando del canale dati
-- configurazione del monitoraggio, informazioni
-- configurazione del monitoraggio, DDC/CI
-- configurazione del monitoraggio, modifica delle impostazioni
-- modifica delle impostazioni di monitoraggio
+- monitor configuration,Display Data Channel Command Interface
+- monitorare la configurazione, informazioni
+- monitorare la configurazione, DDC/CI
+- monitorare la configurazione, modificare le impostazioni
+- modifica delle impostazioni del monitoraggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e03917f63f31099ebc79776bcbee37f4ef0205
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 749b985dad92dc41f7c145662234e6efe1947145dedc5251dd587ffba734d46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103739418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013379"
 ---
-# <a name="monitor-configuration-monitor-configuration"></a>Configurazione del monitoraggio (configurazione del monitoraggio)
+# <a name="monitor-configuration-monitor-configuration"></a>Monitorare la configurazione (configurazione del monitoraggio)
 
-È possibile utilizzare le funzioni di configurazione del monitoraggio per ottenere informazioni da un monitoraggio e per modificare le impostazioni di un monitoraggio. È possibile utilizzare queste funzioni per:
+È possibile usare le funzioni di configurazione del monitoraggio per ottenere informazioni da un monitoraggio e per modificare le impostazioni di un monitoraggio. È possibile usare queste funzioni per :
 
--   Modificare le impostazioni di geometria di un monitoraggio, ad esempio la larghezza e l'altezza dello schermo.
+-   Modificare le impostazioni geometriche di un monitor, ad esempio la larghezza e l'altezza dello schermo.
 -   Modificare le impostazioni dell'immagine, ad esempio luminosità e contrasto.
 -   Ripristinare le impostazioni predefinite di un monitoraggio.
--   Degauss del monitoraggio.
+-   Degauss il monitoraggio.
 
-Internamente, le funzioni di configurazione del monitoraggio utilizzano l'interfaccia del comando Visualizza canale dati (DDC/CI) per inviare comandi al monitoraggio.
+Internamente, le funzioni di configurazione del monitoraggio usano l'interfaccia DDC/CI (Display Data Channel Command Interface) per inviare comandi al monitoraggio.
 
 Le funzioni di configurazione del monitoraggio sono documentate nelle sezioni seguenti:
 
 -   [Informazioni sulla configurazione del monitoraggio](about-monitor-configuration.md)
--   [Uso della configurazione di monitoraggio](using-monitor-configuration.md)
--   [Riferimento alla configurazione del monitoraggio](monitor-configuration-reference.md)
+-   [Uso della configurazione del monitoraggio](using-monitor-configuration.md)
+-   [Informazioni di riferimento sulla configurazione del monitoraggio](monitor-configuration-reference.md)
 
  
 

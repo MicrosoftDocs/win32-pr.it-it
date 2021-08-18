@@ -7,29 +7,29 @@ keywords:
 - jaggies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d9c898697d13b5a6e59e44ded64ad17d6e217bc
-ms.sourcegitcommit: fdd00b445ee88366e9cdd1eed0cb3e42e2a73eca
+ms.openlocfilehash: f2c71773d538b3da755a9a2682355b5b5012cea5d608c31c0291e46b11f442bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104398399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061449"
 ---
 # <a name="j-k"></a>J K
 
-[A](a.md) [B](b.md) [C](c.md) [d](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [i](i.md) J K [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) J K [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) T [U](t.md) [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
 <span id="opengl_jaggies"></span><span id="OPENGL_JAGGIES"></span>**jaggies**
 </dt> <dd>
 
-Elementi del rendering con alias. I bordi delle primitive di cui viene eseguito il rendering con aliasing sono irregolari anziché smussati. Una linea con alias quasi orizzontale, ad esempio, viene sottoposta a rendering come un set di linee orizzontali in righe di pixel adiacenti, anziché come una linea continua e uniforme.
+Artifacts del rendering con alias. I bordi delle primitive di cui viene eseguito il rendering con aliasing sono frastagliati anziché uniformi. Il rendering di una linea con alias quasi orizzontale, ad esempio, viene eseguito come un set di linee orizzontali su righe di pixel adiacenti, anziché come linea continua e uniforme.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
