@@ -23,7 +23,7 @@ ms.locfileid: "118987981"
 ---
 # <a name="id3dxanimationcallbackhandler-interface"></a>Interfaccia ID3DXAnimationCallbackHandler
 
-Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazioni generati dalle chiamate a [**ID3DXAnimationController::AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
+Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazioni generati dalle chiamate a [**ID3DXAnimationController::AdvanceTime**](id3dxanimationcontroller--advancetime.md).
 
 ## <a name="members"></a>Membri
 
@@ -39,7 +39,7 @@ Un'applicazione implementa questa interfaccia per gestire i callback nei set di 
 
 | Metodo                                                                  | Descrizione                                                                                                                                                                                                                                        |
 |:------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**HandleCallback**](id3dxanimationcallbackhandler--handlecallback.md) | L'applicazione implementa questo metodo. Questo metodo viene chiamato quando si verifica un callback per un set di animazioni in una delle tracce durante una chiamata a [**ID3DXAnimationController::AdvanceTime.**](id3dxanimationcontroller--advancetime.md)<br/> |
+| [**HandleCallback**](id3dxanimationcallbackhandler--handlecallback.md) | L'applicazione implementa questo metodo. Questo metodo viene chiamato quando si verifica un callback per un set di animazioni in una delle tracce durante una chiamata a [**ID3DXAnimationController::AdvanceTime**](id3dxanimationcontroller--advancetime.md).<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SCROLL (COMmctrl. h)
-description: Scorre il contenuto di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro di scorrimento ListView.
+title: LVM_SCROLL messaggio (Commctrl.h)
+description: Scorre il contenuto di un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro ListView \_ Scroll.
 ms.assetid: 4bf6b74e-8fea-48ca-a151-8fd649fc50f8
 keywords:
-- Controlli di Windows Message LVM_SCROLL
+- LVM_SCROLL dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c05c3ed991cfc933a4436baf332b49c67a907b11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 604ef35b6d7e62e626aa7cbee32c1563224794781275c470a1b3cd1727b926bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019229"
 ---
-# <a name="lvm_scroll-message"></a>\_Messaggio di scorrimento LVM
+# <a name="lvm_scroll-message"></a>Messaggio LVM \_ SCROLL
 
-Scorre il contenuto di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro di [**\_ scorrimento ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_scroll) .
+Scorre il contenuto di un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ListView \_ Scroll.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_scroll)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Scorre il contenuto di un controllo visualizzazione elenco. È possibile inviare
 *wParam* 
 </dt> <dd>
 
-Valore di tipo **int** che specifica la quantità di scorrimento orizzontale, in pixel, rispetto alla posizione corrente del contenuto della visualizzazione elenco. Se il controllo visualizzazione elenco è in visualizzazione elenco, questo valore viene arrotondato per eccesso al numero di pixel più vicino che formano una colonna intera.
+Valore di tipo **int** che specifica la quantità di scorrimento orizzontale, in pixel, rispetto alla posizione corrente del contenuto della visualizzazione elenco. Se il controllo visualizzazione elenco è in visualizzazione elenco, questo valore viene arrotondato per es.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Valore di tipo **int** che specifica la quantità di scorrimento verticale, in p
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo; in caso contrario, **false**.
+Restituisce **TRUE se** l'operazione ha esito positivo. in caso contrario, **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Quando il controllo elenco-visualizzazione è in visualizzazione report, è possibile scorrere il controllo verticalmente solo in incrementi di riga interi. Pertanto, il parametro *lParam* verrà arrotondato al numero di pixel più vicino che formano un incremento di riga intero. Se, ad esempio, l'altezza di una linea è 16 pixel e 8 viene passato per *lParam*, l'elenco verrà spostato di 16 pixel (1 riga). Se viene passato 7 per *lParam*, l'elenco verrà spostato di 0 pixel (0 righe).
+Quando il controllo visualizzazione elenco è in visualizzazione report, è possibile scorrere il controllo solo verticalmente con incrementi di riga interi. Di conseguenza, il *parametro lParam* verrà arrotondato al numero più vicino di pixel che formano un incremento di riga intero. Ad esempio, se l'altezza di una riga è di 16 pixel e viene passato 8 per *lParam*, l'elenco verrà scorrendo di 16 pixel (1 riga). Se viene passato 7 per *lParam*, l'elenco verrà scorrendo di 0 pixel (0 righe).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Quando il controllo elenco-visualizzazione è in visualizzazione report, è poss
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

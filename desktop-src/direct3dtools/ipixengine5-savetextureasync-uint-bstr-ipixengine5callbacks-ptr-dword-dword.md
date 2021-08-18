@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine5\_SaveTextureAsync\_UINT\_BSTR\_IPixEngine5Callb
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine5:: SaveTextureAsync'
+title: Metodo IPixEngine5::SaveTextureAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 6F08F49E-6FFD-4A9B-86F5-8CB499947F57
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2590f793d0ba05af1ccf9e10ba04fa8b6aa2421b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: de57a071c4f471bf0234f9eb0d7cbbd36d017d2bfa5ef7e5dec35816999f665e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623851"
 ---
-# <a name="span-idvspixengineipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5savetextureasync-method"></a><span id="vspixengine.ipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5:: SaveTextureAsync
+# <a name="span-idvspixengineipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5savetextureasync-method"></a><span id="vspixengine.ipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5::SaveTextureAsync
 
 Salva una trama.
 
@@ -46,25 +46,25 @@ HRESULT SaveTextureAsync(
 *textureId*   
 ID della trama da salvare.
 
-*fileName*   
+*Filename*   
 Stringa COM contenente il percorso della trama salvata.
 
-*callback*   
+*Callback*   
 Indirizzo di un oggetto che fornisce l'interfaccia di callback IPixEngine5.
 
 *requestCookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

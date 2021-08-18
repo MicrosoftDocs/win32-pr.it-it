@@ -1,9 +1,9 @@
 ---
-title: Credentials (EapHostUserCredentials)-elemento
-description: Viene usato quando la configurazione del metodo è in formato testo XML anziché come BLOB binario.
+title: Elemento Credentials (EapHostUserCredentials)
+description: Viene usato quando la configurazione del metodo è in formato testo XML anziché in un BLOB binario.
 ms.assetid: 9c350891-bf40-430d-837a-f2e58bde41fc
 keywords:
-- Elemento credentials EAPHost
+- Elemento Credentials EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 043b82d5fb1ebc89f454ff6680672bda19e1c01e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e47e63dd6c29d4fbd85111cc5821688610d72c3f2858a371c392e16bee75207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984211"
 ---
-# <a name="credentials-eaphostusercredentials-element"></a>Credentials (EapHostUserCredentials)-elemento
+# <a name="credentials-eaphostusercredentials-element"></a>Elemento Credentials (EapHostUserCredentials)
 
-L'elemento **Credentials (EapHostUserCredentials)** viene usato quando la configurazione del metodo è in formato testo XML anziché come BLOB binario.
+**L'elemento Credentials (EapHostUserCredentials)** viene usato quando la configurazione del metodo è in formato testo XML anziché in un BLOB binario.
 
 ``` syntax
 <xs:element name="Credentials"
@@ -31,7 +31,7 @@ L'elemento **Credentials (EapHostUserCredentials)** viene usato quando la config
  />
 ```
 
-L'elemento **Credentials** viene definito dall'elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
+**L'elemento Credentials** è definito dall'elemento [**EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **Credentials** viene definito dall'elemento [**EapHostUserCredential
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

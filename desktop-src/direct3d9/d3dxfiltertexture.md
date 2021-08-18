@@ -1,7 +1,7 @@
 ---
-description: Filtra i livelli di mipmap di una trama.
+description: Filtra i livelli mipmap di una trama.
 ms.assetid: bfeae9b0-9480-4a26-a225-4a34780546ce
-title: Funzione D3DXFilterTexture (D3dx9tex. h)
+title: Funzione D3DXFilterTexture (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e8a0d1c211b50379451c8b04830e9c97fe988137
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc07336edb5f7bb8672fbbec415b0a3b312335a3a3a4b0de32aec4fdde558363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988501"
 ---
-# <a name="d3dxfiltertexture-function"></a>D3DXFilterTexture (funzione)
+# <a name="d3dxfiltertexture-function"></a>Funzione D3DXFilterTexture
 
-Filtra i livelli di mipmap di una trama.
+Filtra i livelli mipmap di una trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT D3DXFilterTexture(
 
 <dl> <dt>
 
-*pBaseTexture* \[ in\]
+*pBaseTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9) che rappresenta l'oggetto trama da filtrare.
+Puntatore a [**un'interfaccia IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9) che rappresenta l'oggetto trama da filtrare.
 
 </dd> <dt>
 
-*pPalette* \[ out\]
+*pPalette* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) che rappresenta una tavolozza dei colori 256 da compilare o **null** per i formati nonpalettized. Se non si specifica una tavolozza, viene fornita la tavolozza Direct3D predefinita, ovvero una tavolozza bianca completamente opaca. Vedere la sezione Osservazioni.
+Puntatore a [**una struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) che rappresenta una tavolozza di 256 colori da compilare o **NULL** per i formati non apalettizzati. Se non viene specificata una tavolozza, viene fornita la tavolozza Direct3D predefinita ,ovvero una tavolozza bianca opaca. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*SrcLevel* \[ in\]
+*SrcLevel* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Livello la cui immagine viene utilizzata per generare i livelli successivi. Specificare \_ il valore predefinito di D3DX per questo parametro equivale a specificare 0.
+Livello la cui immagine viene usata per generare i livelli successivi. Specificare D3DX \_ DEFAULT per questo parametro equivale a specificare 0.
 
 </dd> <dt>
 
-*MipFilter* \[ in\]
+*MipFilter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più [ \_ filtri D3DX](d3dx-filter.md) che controllano la modalità di filtraggio del mipmap. Specificare \_ il valore predefinito di D3DX per questo parametro equivale a specificare la \_ casella di filtro D3DX \_ se la dimensione della trama è una potenza di due e la \_ casella di filtro D3DX \_ \| D3DX \_ filtrare \_ in altro modo.
+Combinazione di uno o più [filtri D3DX \_ che](d3dx-filter.md) controllano la modalità di filtro della mappa mipmap. Specificare D3DX DEFAULT per questo parametro equivale a specificare D3DX FILTER BOX se le dimensioni della trama sono due \_ \_ e \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER \_ in caso contrario.
 
 </dd> </dl>
 
@@ -89,13 +89,13 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 Un filtro viene applicato in modo ricorsivo a ogni livello di trama per generare il livello di trama successivo.
 
-Se si scrive in una superficie non di livello zero della trama, il rettangolo modificato non verrà aggiornato. Se viene chiamato **D3DXFilterTexture** e la superficie non è già sporca (si tratta di un problema improbabile in scenari di utilizzo normali), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla trama.
+La scrittura in una superficie non di livello zero della trama non causerà l'aggiornamento del rettangolo dirty. Se viene chiamato **D3DXFilterTexture** e la superficie non era già dirty (questo è improbabile nei normali scenari di utilizzo), l'applicazione deve chiamare in modo esplicito [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) sulla trama.
 
-Le trame create nel pool predefinito ( \_ impostazione predefinita D3DPOOL) non possono essere usate con **D3DXFilterTexture** (a meno che non vengano create con D3DUSAGE \_ Dynamic) perché è necessaria un'operazione di blocco sull'oggetto. Si noti che i blocchi non sono consentiti nelle trame del pool predefinito (a meno che non siano dinamici).
+Le trame create nel pool predefinito (D3DPOOL DEFAULT) non possono essere usate con \_ **D3DXFilterTexture** (a meno che non siano state create con D3DUSAGE DYNAMIC) perché è necessaria un'operazione di blocco \_ sull'oggetto. Si noti che i blocchi non sono consentiti per le trame nel pool predefinito (a meno che non siano dinamici).
 
-Per informazioni dettagliate su [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry), vedere Platform SDK. Si noti che, a partire da DirectX 8,0, il membro peFlags della struttura **PaletteEntry** non funziona come documentato in Platform SDK. Il membro peFlags è ora il canale alfa per i formati pallettizzati a 8 bit.
+Per informazioni [**dettagliate su PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)vedere Platform SDK. Si noti che a data di DirectX 8.0, il membro peFlags della struttura **PALETTEENTRY** non funziona come documentato in Platform SDK. Il membro peFlags è ora il canale alfa per i formati con palettizzazione a 8 bit.
 
-Esiste una sola funzione di filtro di trama, ma due macro che chiamano questo metodo.
+Esiste una sola funzione di filtro trame, ma due macro che chiamano questo metodo.
 
 
 ```
@@ -111,8 +111,8 @@ Esiste una sola funzione di filtro di trama, ma due macro che chiamano questo me
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

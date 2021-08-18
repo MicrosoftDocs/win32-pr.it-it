@@ -1,5 +1,5 @@
 ---
-description: Inviato da un'estensione di File Manager per recuperare le informazioni su un file selezionato dalla finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca).
+description: Inviato da un'estensione di File Manager per recuperare informazioni su un file selezionato dalla finestra di Gestione file attiva (finestra della directory o finestra Risultati ricerca).
 title: FM_GETFILESEL messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: c2b4aac6-165b-4eba-b012-ee7a20481cd3
-ms.openlocfilehash: 2da95a39f8e84215640e926ae21a043865223665
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a801b22fd23b4a67eaf01efbbef574e24a74a2e1304f3a65678c4197517a4a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094186"
 ---
 # <a name="fm_getfilesel-message"></a>Messaggio \_ FM GETFILESEL
 
-Inviato da un'estensione di File Manager per recuperare le informazioni su un file selezionato dalla finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca).
+Inviato da un'estensione di File Manager per recuperare informazioni su un file selezionato dalla finestra di Gestione file attiva (finestra della directory o finestra Risultati ricerca).
 
 ## <a name="parameters"></a>Parametri
 
@@ -48,7 +48,7 @@ Restituisce l'indice in base zero del file selezionato recuperato.
 
 ## <a name="remarks"></a>Commenti
 
-Un'estensione può usare il [**messaggio FM \_ GETSELCOUNT**](fm-getselcount.md) per recuperare il conteggio dei file selezionati.
+Un'estensione può usare il [**messaggio FM \_ GETSELCOUNT**](fm-getselcount.md) per recuperare il numero di file selezionati.
 
 ## <a name="requirements"></a>Requisiti
 

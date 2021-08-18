@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d49ed42d58db6d56e4fd2e24217b32726dcfbf07
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 62ecd7906ed5717937902bb259cb2858ef79cd5e0b1a8c3dc91bfeecd69a16b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844751"
 ---
 # <a name="span-idvspixengineofflineanalysissourcespanofflineanalysissource-enumeration"></a><span id="vspixengine.offlineanalysissource"></span>Enumerazione OFFLINEANALYSISSOURCE
 
@@ -37,12 +37,12 @@ Enumerazione utilizzata per indicare l'origine delle informazioni grafiche per l
 
 ## <a name="constants"></a>Costanti
 
-<span id="OfflineAnalysisSource_Cache"></span><span id="offlineanalysissource_cache"></span><span id="OFFLINEANALYSISSOURCE_CACHE"></span>**\_Cache OfflineAnalysisSource**  
+<span id="OfflineAnalysisSource_Cache"></span><span id="offlineanalysissource_cache"></span><span id="OFFLINEANALYSISSOURCE_CACHE"></span>**OfflineAnalysisSource \_ Cache**  
 Le informazioni grafiche provengono da un file di log di grafica.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

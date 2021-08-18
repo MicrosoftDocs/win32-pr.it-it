@@ -1,6 +1,6 @@
 ---
 title: WM_DWMSENDICONICLIVEPREVIEWBITMAP messaggio (Dwmapi.h)
-description: Indica a una finestra di fornire una bitmap statica da usare come anteprima dinamica (nota anche come anteprima Di anteprima) di tale finestra.
+description: Indica a una finestra di fornire una bitmap statica da usare come anteprima live (nota anche come anteprima di anteprima) di tale finestra.
 ms.assetid: 24bf3b42-a850-4aa5-966a-29baab6b4d21
 keywords:
 - WM_DWMSENDICONICLIVEPREVIEWBITMAP messaggio Gestione finestre desktop
@@ -23,7 +23,7 @@ ms.locfileid: "118985247"
 ---
 # <a name="wm_dwmsendiconiclivepreviewbitmap-message"></a>Messaggio WM \_ DWMSENDICONICLIVEPREVIEWBITMAP
 
-Indica a una finestra di fornire una bitmap statica da usare come anteprima dinamica *(nota* anche come anteprima Di *anteprima)* di tale finestra.
+Indica a una finestra di fornire una bitmap statica da usare come anteprima *live* (nota anche come anteprima di *anteprima)* di tale finestra.
 
 ## <a name="parameters"></a>Parametri
 
@@ -49,19 +49,19 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un utente sposta il puntatore del mouse sull'anteprima della finestra nella barra delle applicazioni o assegna lo stato attivo all'anteprima nella finestra ALT+TAB, viene visualizzata un'anteprima dinamica *(nota* anche come anteprima di anteprima). Questa visualizzazione è un'anteprima a dimensioni complete della finestra e può essere uno snapshot live o una rappresentazione simbolica.
+Quando un utente sposta il puntatore del mouse sull'anteprima della finestra nella barra delle applicazioni o assegna lo stato attivo all'anteprima nella finestra ALT+TAB, viene visualizzata un'anteprima dinamica *(nota* anche come anteprima di anteprima). Questa visualizzazione è un'anteprima a dimensione intera della finestra e può essere uno snapshot live o una rappresentazione simbolica.
 
 Gestione finestre desktop (DWM) invia questo messaggio a una finestra se si verificano tutte le situazioni seguenti:
 
--   L'anteprima dinamica è stata richiamata nella finestra.
--   [**L'attributo DWMWA \_ HAS ICONIC \_ \_ BITMAP**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) è impostato nella finestra.
--   Una rappresentazione icona è l'unica esistente per questa finestra.
+-   L'anteprima live è stata richiamata nella finestra.
+-   L'attributo BITMAP HAS BITMAP di [**DWMWA \_ \_ \_**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) è impostato nella finestra.
+-   Una rappresentazione simbolica è l'unica esistente per questa finestra.
 
-La finestra che riceve questo messaggio deve rispondere generando una bitmap su larga scala. La finestra chiama quindi la [**funzione DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) per impostare l'anteprima dinamica. Se la finestra non imposta una bitmap in un determinato periodo di tempo, DWM usa la propria rappresentazione icona predefinita per la finestra.
+La finestra che riceve questo messaggio deve rispondere generando una bitmap a scalabilità completa. La finestra chiama quindi la [**funzione DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) per impostare l'anteprima live. Se la finestra non imposta una bitmap in un determinato periodo di tempo, DWM usa la propria rappresentazione simbolica predefinita per la finestra.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra una risposta al **messaggio WM \_ DWMSENDICONICLIVEPREVIEWBITMAP.** L'esempio chiama la funzione [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) con un handle per una bitmap personalizzata indipendente dal dispositivo da usare come rappresentazione della finestra.
+L'esempio seguente illustra una risposta al **messaggio WM \_ DWMSENDICONICLIVEPREVIEWBITMAP.** L'esempio chiama [**la funzione DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) con un handle per una bitmap personalizzata e indipendente dal dispositivo da usare come rappresentazione della finestra.
 
 
 ```C++
@@ -88,7 +88,7 @@ L'esempio seguente illustra una risposta al **messaggio WM \_ DWMSENDICONICLIVEP
 
 
 
-Per il codice completo, vedere l'esempio [Personalizzare un'anteprima icona e una bitmap di anteprima](dwm-sample-customizethumbnail.md) dinamica.
+Per il codice completo, vedere [l'esempio Customize an Preview Thumbnail and a Live Preview Bitmap](dwm-sample-customizethumbnail.md) (Personalizzare un'anteprima di anteprima e una bitmap in anteprima live).
 
 ## <a name="requirements"></a>Requisiti
 

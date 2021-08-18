@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateTransformedGeometry di ID2D1Factory (D2d1. h)
+title: Metodi ID2D1Factory CreateTransformedGeometry (D2d1.h)
 description: Trasforma la geometria specificata e archivia il risultato come oggetto ID2D1TransformedGeometry.
 ms.assetid: 71f26200-0f35-49d7-951d-2962768d16bc
 keywords:
-- Metodo CreateTransformedGeometry Direct2D
+- Metodi CreateTransformedGeometry Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5da3b548c3118209c915714e03fe9e4061c77e96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8216b5b63951e3f393dc1c8a204a4a4e38ee652d79eb795ba4f4e97041aff3f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832851"
 ---
-# <a name="id2d1factorycreatetransformedgeometry-methods"></a>Metodi ID2D1Factory:: CreateTransformedGeometry
+# <a name="id2d1factorycreatetransformedgeometry-methods"></a>Metodi ID2D1Factory::CreateTransformedGeometry
 
-Trasforma la geometria specificata e archivia il risultato come oggetto [**ID2D1TransformedGeometry**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) .
+Trasforma la geometria specificata e archivia il risultato come [**oggetto ID2D1TransformedGeometry.**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85))
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,20 +29,20 @@ Trasforma la geometria specificata e archivia il risultato come oggetto [**ID2D1
 
 | Metodo                                                                                                                                                                                                                  | Descrizione                                                                                                                                    |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateTransformedGeometry (ID2D1Geometry \* , D2D \_ Matrix \_ 3x2 \_ F \* , ID2D1TransformedGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) | Trasforma la geometria specificata e archivia il risultato come oggetto [**ID2D1TransformedGeometry**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) . <br/> |
-| [**CreateTransformedGeometry (ID2D1Geometry \* , D2D \_ Matrix \_ 3x2 \_ F&, ID2D1TransformedGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createtransformedgeometry(id2d1geometry_constd2d1_matrix_3x2_f__id2d1transformedgeometry))  | Trasforma la geometria specificata e archivia il risultato come oggetto [**ID2D1TransformedGeometry**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) . <br/> |
+| [**CreateTransformedGeometry(ID2D1Geometry,D2D \* \_ MATRIX \_ 3X2 \_ \* F,ID2D1TransformedGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) | Trasforma la geometria specificata e archivia il risultato come [**oggetto ID2D1TransformedGeometry.**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) <br/> |
+| [**CreateTransformedGeometry(ID2D1Geometry,D2D \* \_ MATRIX \_ 3X2 \_ F&,ID2D1TransformedGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createtransformedgeometry(id2d1geometry_constd2d1_matrix_3x2_f__id2d1transformedgeometry))  | Trasforma la geometria specificata e archivia il risultato come [**oggetto ID2D1TransformedGeometry.**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)) <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Analogamente ad altre risorse, una geometria trasformata eredita lo spazio delle risorse e i criteri di threading della factory che lo hanno creato. Questo oggetto non è modificabile.
+Analogamente ad altre risorse, una geometria trasformata eredita lo spazio delle risorse e i criteri di threading della factory che l'ha creata. Questo oggetto non è modificabile.
 
-Quando si accarezza una geometria trasformata con il metodo [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) , la larghezza del tratto non è interessata dalla trasformazione applicata alla geometria. La larghezza del tratto è interessata solo dalla trasformazione globale.
+Quando si accarezza una geometria trasformata con il [**metodo DrawGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) la larghezza del tratto non viene influenzata dalla trasformazione applicata alla geometria. La larghezza del tratto è interessata solo dalla trasformazione del mondo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un [**ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)), quindi viene disegnato senza trasformarlo. Produce l'output mostrato nella figura seguente.
+Nell'esempio seguente viene creato [**un ID2D1RectangleGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry))quindi viene disezionato senza trasformarlo. Produce l'output illustrato nella figura seguente.
 
 ![illustrazione di un rettangolo](images/transformedgeometry2-step1.png)
 
@@ -56,9 +56,9 @@ hr = m_pD2DFactory->CreateRectangleGeometry(
 
 
 
-Nell'esempio seguente viene usata la destinazione di rendering per ridimensionare la geometria in base a un fattore 3, quindi viene disegnata. Nella figura seguente viene illustrato il risultato della creazione del rettangolo senza la trasformazione e con la trasformazione; Si noti che il tratto è più spessa dopo la trasformazione, anche se lo spessore del tratto è 1.
+L'esempio successivo usa la destinazione di rendering per ridimensionare la geometria di un fattore di 3 e quindi la disegna. La figura seguente mostra il risultato del disegno del rettangolo senza la trasformazione e con la trasformazione . nota che il tratto è più spesso dopo la trasformazione, anche se lo spessore del tratto è 1.
 
-![illustrazione di un rettangolo più piccolo all'interno di un rettangolo più grande con un tratto più spessa](images/transformedgeometry2-step2.png)
+![Illustrazione di un rettangolo più piccolo all'interno di un rettangolo più grande con un tratto più spesso](images/transformedgeometry2-step2.png)
 
 
 ```C++
@@ -74,7 +74,7 @@ m_pRenderTarget->DrawGeometry(m_pRectangleGeometry, m_pBlackBrush, 1);
 
 
 
-Nell'esempio seguente viene usato il metodo **CreateTransformedGeometry** per ridimensionare la geometria per un fattore 3, quindi viene disegnata. Produce l'output mostrato nella figura seguente. Si noti che, anche se il rettangolo è più grande, il relativo tratto non è aumentato.
+L'esempio successivo usa **il metodo CreateTransformedGeometry** per ridimensionare la geometria di un fattore di 3 e quindi la disegna. Produce l'output illustrato nella figura seguente. Si noti che, anche se il rettangolo è più grande, il tratto non è aumentato.
 
 ![illustrazione di un rettangolo più piccolo all'interno di un rettangolo più grande con lo stesso tratto](images/transformedgeometry2-step3.png)
 
@@ -111,8 +111,8 @@ m_pRenderTarget->DrawGeometry(m_pTransformedGeometry, m_pBlackBrush, 1);
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

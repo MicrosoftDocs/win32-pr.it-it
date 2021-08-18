@@ -1,5 +1,5 @@
 ---
-description: Costruisce modelli di bit usati per identificare i formati delle coordinate della trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
+description: Costruisce modelli di bit usati per identificare i formati delle coordinate di trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
 ms.assetid: c3076d7c-7935-40ee-b513-7ff6551a535f
 title: D3DFVF_TEXCOORDSIZEN (D3d9types.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118988911"
 ---
 # <a name="d3dfvf_texcoordsizen"></a>D3DFVF \_ TEXCOORDSIZEN
 
-Costruisce modelli di bit usati per identificare i formati delle coordinate della trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
+Costruisce modelli di bit usati per identificare i formati delle coordinate di trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
 
 ``` syntax
 #define D3DFVF_TEXCOORDSIZEN(CoordIndex) 
@@ -38,7 +38,7 @@ Costruisce modelli di bit usati per identificare i formati delle coordinate dell
 
 | Parametro                                                                                                    | Descrizione                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valore che identifica il set di coordinate di trama a cui si applica la dimensione delle coordinate della trama (1, 2, 3 o 4dimensionale). <br/> |
+| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valore che identifica il set di coordinate della trama in corrispondenza del quale vengono applicate le dimensioni delle coordinate della trama (1, 2, 3 o 4Dimensional). <br/> |
 
 
 
@@ -58,7 +58,7 @@ Le macro **D3DFVF \_ TEXCOORDSIZEN** usano le costanti seguenti.
 
 
 
-La descrizione FVF seguente identifica un formato vertice con una posizione. un normale; colori diffusi e speculari; e due set di coordinate di trama. Il primo set di coordinate di trama include un singolo elemento e il secondo include due elementi:
+La descrizione FVF seguente identifica un formato vertice con una posizione; un normale; colori diffusi e speculari; e due set di coordinate di trama. Il primo set di coordinate di trama include un singolo elemento e il secondo set include due elementi:
 
 
 ```C++

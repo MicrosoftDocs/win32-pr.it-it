@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_RETINFO'
-title: Struttura JET_RETINFO
+description: 'Altre informazioni su: JET_RETINFO struttura'
+title: JET_RETINFO struttura
 TOCTitle: JET_RETINFO Structure
 ms:assetid: a47a7902-3ecd-4d42-941f-89d25d78eb4c
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294049(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3452c4fab7155ea33b556ac7aa2c777b11a3f954
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a04ee087f036bf0d6a9e0bb4c9c558dbfe3ae5a8fc8e875973ef2930e7ba911a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038729"
 ---
-# <a name="jet_retinfo-structure"></a>Struttura JET_RETINFO
+# <a name="jet_retinfo-structure"></a>JET_RETINFO struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_retinfo-structure"></a>Struttura JET_RETINFO
+## <a name="jet_retinfo-structure"></a>JET_RETINFO struttura
 
-La struttura **JET_RETINFO** contiene parametri di input e output facoltativi per [JetRetrieveColumn](./jetretrievecolumn-function.md). Un puntatore null può essere passato dove un puntatore a questa struttura verrebbe altrimenti passato. Il passaggio di un puntatore null equivale a passare **JET_RETINFO** con **cbStruct** impostato su sizeof (JET_RETINFO), **ibLongValue** impostato su 0 (zero) e **itagSequence** impostato su 1.
+La **JET_RETINFO** contiene parametri di input e output facoltativi [per JetRetrieveColumn](./jetretrievecolumn-function.md). In caso contrario, è possibile passare un puntatore Null in cui verrebbe passato un puntatore a questa struttura. Il passaggio di un puntatore Null equivale **a** passare JET_RETINFO con **cbStruct** impostato su sizeof(JET_RETINFO), **ibLongValue** impostato su 0 (zero) e **itagSequence** impostato su 1.
 
 ```cpp
     typedef struct {
@@ -44,21 +44,21 @@ La struttura **JET_RETINFO** contiene parametri di input e output facoltativi pe
 
 **cbStruct**
 
-Deve essere impostato sulla dimensione della struttura di **JET_RETINFO** , in byte, e serve per confermare la presenza dei campi seguenti.
+Deve essere impostato sulla dimensione della struttura **JET_RETINFO,** in byte, e serve per confermare la presenza dei campi seguenti.
 
 **ibLongValue**
 
-Offset al primo byte da recuperare da una colonna di tipo [JET_coltypLongBinary](./jet-coltyp.md)o [JET_coltypLongText](./jet-coltyp.md). Si noti che la quantità di dati recuperati da questo offset è inferiore alle dimensioni del buffer di output e alla dimensione dei dati nel valore effettivo dopo questo offset.
+Offset del primo byte da recuperare da una colonna di tipo [JET_coltypLongBinary](./jet-coltyp.md)o [JET_coltypLongText](./jet-coltyp.md). Si noti che la quantità di dati recuperati da questo offset è inferiore alla dimensione del buffer di output e alle dimensioni dei dati nel valore effettivo dopo questo offset.
 
 **itagSequence**
 
-Descrive il numero di sequenza del valore in una colonna multivalore. Si noti che la matrice di valori è in base uno. Il primo valore è Sequence 1, not 0. Se la colonna record ha un solo valore, è necessario passare 1 come **itagSequence**
+Descrive il numero di sequenza del valore in una colonna multivalore. Si noti che la matrice di valori è basata su uno. Il primo valore è la sequenza 1, non 0. Se la colonna del record ha un solo valore, è necessario passare 1 come **itagSequence**
 
-Con una colonna che può contenere più valori, è possibile usare un numero di sequenza maggiore di 1 in [JetSetColumn](./jetsetcolumn-function.md) e [JetRetrieveColumn](./jetretrievecolumn-function.md) o 0 in [JetSetColumn](./jetsetcolumn-function.md). Nell'implementazione corrente del motore, qualsiasi colonna creata con JET_bitColumnTagged può contenere più valori. Le colonne create con JET_bitColumnMultiValued differiscono dalle colonne con tag multivalore solo nel modo in cui vengono indicizzate. Per ulteriori informazioni, vedere [JET_INDEXCREATE](./jet-indexcreate-structure.md) .
+Con una colonna che può contenere più valori, è possibile usare solo un numero di sequenza maggiore di 1 in [JetSetColumn](./jetsetcolumn-function.md) e [JetRetrieveColumn](./jetretrievecolumn-function.md) o 0 in [JetSetColumn](./jetsetcolumn-function.md). Nell'implementazione corrente del motore, qualsiasi colonna creata con JET_bitColumnTagged può contenere più valori. Le colonne create con JET_bitColumnMultiValued differiscono dalle colonne con tag multivalore solo nel modo in cui vengono indicizzate. Per [altre JET_INDEXCREATE,](./jet-indexcreate-structure.md) vedere JET_INDEXCREATE.
 
 **columnidNextTagged**
 
-Restituisce l'ColumnID della colonna con tag, multivalore o di tipo sparse recuperata quando tutte le colonne con tag vengono recuperate passando 0 come ColumnID a [JetRetrieveColumn](./jetretrievecolumn-function.md).
+Restituisce il columnid della colonna con tag, multivalore o sparse recuperata quando tutte le colonne con tag vengono recuperate passando 0 come columnid [a JetRetrieveColumn](./jetretrievecolumn-function.md).
 
 ### <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Restituisce l'ColumnID della colonna con tag, multivalore o di tipo sparse recup
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

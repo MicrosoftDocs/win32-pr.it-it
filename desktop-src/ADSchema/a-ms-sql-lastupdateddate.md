@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-SQL-LastUpdatedDate
-description: Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Directory.
+description: Questo valore rappresenta l'ora dell SQL'ultimo aggiornamento di Active Directory.
 ms.assetid: 74b7a14b-3e6b-49c8-9ce8-78579a77a5fd
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2d0272967d9d7b7a4ed49d9d1efe657ed684f4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44aba3985380b1996dcf0cec71234b01198dfb65268aabd31c8b7705971c52dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705281"
 ---
 # <a name="ms-sql-lastupdateddate-attribute"></a>Attributo MS-SQL-LastUpdatedDate
 
-Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Directory.
+Questo valore rappresenta l'ora dell SQL'ultimo aggiornamento di Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-LastUpdatedDate                      |
-| LDAP-Display-Name | mS-SQL-LastUpdatedDate                      |
+| Ldap-Display-Name | mS-SQL-LastUpdatedDate                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
-| Frequenza di aggiornamento  | All'avvio del sistema o quando Active Directory viene aggiornato.    |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
+| Frequenza di aggiornamento  | All'avvio del sistema o quando AD viene aggiornato.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1381                     |
-| System-ID-GUID    | 9fcc43d4-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 9fcc43d4-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo valore rappresenta l'ora dell'ultimo aggiornamento di SQL Active Director
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 

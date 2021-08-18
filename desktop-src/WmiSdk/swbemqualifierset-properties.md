@@ -1,20 +1,20 @@
 ---
-description: L'oggetto dell'SWbemQualifierSet espone le proprietà seguenti.
+description: L'oggetto SWbemQualifierSet espone le proprietà seguenti.
 ms.assetid: E97C815F-C984-477F-9FE0-71C2A3E6CC67
 ms.tgt_platform: multiple
-title: Proprietà di dell'SWbemQualifierSet
+title: Proprietà di SWbemQualifierSet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd3c95779da7c1864b6cd7b285370548849d4244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 737cbfd89be775d3b04d4d602733da31b7e80683852e10cceb4c332156b95011
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897761"
 ---
-# <a name="swbemqualifierset-properties"></a>Proprietà di dell'SWbemQualifierSet
+# <a name="swbemqualifierset-properties"></a>Proprietà di SWbemQualifierSet
 
-L'oggetto [**dell'SWbemQualifierSet**](swbemqualifierset.md) espone le proprietà seguenti.
+[**L'oggetto SWbemQualifierSet**](swbemqualifierset.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

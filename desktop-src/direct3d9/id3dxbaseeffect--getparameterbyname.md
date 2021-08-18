@@ -1,7 +1,7 @@
 ---
 description: Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercandone il nome.
 ms.assetid: fb03685e-e512-4293-80d7-6c2c0fc9ebfd
-title: 'Metodo ID3DXBaseEffect:: GetParameterByName (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetParameterByName (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f9f7457ffa3bba867d03cceb3521664fecc9d67d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 30a1e585cbbbaee4891e3e7dc2cd4e3d3c871fd33fe36daa51c9137c26bfdc7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848681"
 ---
-# <a name="id3dxbaseeffectgetparameterbyname-method"></a>Metodo ID3DXBaseEffect:: GetParameterByName
+# <a name="id3dxbaseeffectgetparameterbyname-method"></a>Metodo ID3DXBaseEffect::GetParameterByName
 
 Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercandone il nome.
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetParameterByName(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle del parametro o **null** per i parametri di primo livello. Vedere [handle (Direct3D 9)](handles.md).
+Handle del parametro o **NULL per i** parametri di primo livello. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Stringa contenente il nome del parametro.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce l'handle del parametro specificato o **null** se l'indice non è valido. Vedere [handle (Direct3D 9)](handles.md).
+Restituisce l'handle del parametro specificato oppure **NULL se** l'indice non è valido. Vedere [Handle (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Restituisce l'handle del parametro specificato o **null** se l'indice non è val
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

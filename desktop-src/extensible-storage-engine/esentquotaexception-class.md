@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentQuotaException'
+description: Altre informazioni sulla classe EsentQuotaException
 title: Classe EsentQuotaException
 TOCTitle: EsentQuotaException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentQuotaException
@@ -24,33 +24,33 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53b108a4d55553788a6c2d316f93f4f8efc76035
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6350dfa9cbdddcf935b4f87fab964d40c1fc65765a254219c542d29b676fed36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782271"
 ---
 # <a name="esentquotaexception-class"></a>Classe EsentQuotaException
 
-Classe di base per le eccezioni di quota.
+Classe di base per le eccezioni quota.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentQuotaException  
-              [Microsoft. ISAM. esent. Interop. EsentOutOfDatabaseSpaceException](./esentoutofdatabasespaceexception-class.md)  
-              [Microsoft. ISAM. esent. Interop. EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.md)  
-              [Microsoft. ISAM. esent. Interop. EsentTooManyOpenTablesException](./esenttoomanyopentablesexception-class.md)  
-              [Microsoft. ISAM. esent. Interop. EsentVersionStoreOutOfMemoryException](./esentversionstoreoutofmemoryexception-class.md)  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentQuotaException  
+              [Microsoft.Isam.Esent.Interop.EsentOutOfDatabaseSpaceException](./esentoutofdatabasespaceexception-class.md)  
+              [Microsoft.Isam.Esent.Interop.EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.md)  
+              [Microsoft.Isam.Esent.Interop.EsentTooManyOpenTablesException](./esenttoomanyopentablesexception-class.md)  
+              [Microsoft.Isam.Esent.Interop.EsentVersionStoreOutOfMemoryException](./esentversionstoreoutofmemoryexception-class.md)  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,4 +78,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentQuotaException](./esentquotaexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

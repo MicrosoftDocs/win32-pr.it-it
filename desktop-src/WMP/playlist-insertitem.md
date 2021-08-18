@@ -5,7 +5,7 @@ ms.assetid: c186abc4-0a15-49d2-bbc4-5660e8cc0a4b
 keywords:
 - Metodo insertItem Windows Media Player
 - Metodo insertItem Windows Media Player , classe Playlist
-- Classe Playlist Windows Media Player metodo insertItem
+- Classe Playlist Windows Media Player , metodo insertItem
 topic_type:
 - apiref
 api_name:
@@ -50,7 +50,7 @@ Playlist.insertItem(
 
 </dd> <dt>
 
-*elemento* \[ Pollici\]
+*item* \[ Pollici\]
 </dt> <dd>
 
 **Oggetto** multimediale da inserire.
@@ -63,9 +63,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti gli elementi dopo l'elemento inserito avranno i relativi numeri di indice aumentati di uno.
+I numeri di indice di tutti gli elementi dopo l'elemento inserito saranno aumentati di uno.
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 

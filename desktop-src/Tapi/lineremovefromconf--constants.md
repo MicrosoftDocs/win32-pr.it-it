@@ -1,55 +1,55 @@
 ---
-description: Le \_ costanti scalari LINEREMOVEFROMCONF descrivono in che modo le parti che partecipano a una chiamata di conferenza possono essere rimosse da una chiamata di conferenza.
+description: Le costanti scalari LINEREMOVEFROMCONF descrivono come le parti che partecipano a una conferenza telefonica possono \_ essere rimosse da una conferenza telefonica.
 ms.assetid: fa1b36de-8be3-48ae-a58b-800f30259041
-title: Costanti LINEREMOVEFROMCONF_ (TAPI. h)
+title: LINEREMOVEFROMCONF_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51fbb3c6261addf28f1bb9b101b29882d2c00218
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 917cfdd27500a45689df036ff094334f862d889abe9bb8acccaeb5113773c175
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002999"
 ---
-# <a name="lineremovefromconf_-constants"></a>\_Costanti LINEREMOVEFROMCONF
+# <a name="lineremovefromconf_-constants"></a>Costanti LINEREMOVEFROMCONF \_
 
-Le costanti scalari **LINEREMOVEFROMCONF \_** descrivono in che modo le parti che partecipano a una chiamata di conferenza possono essere rimosse da una chiamata di conferenza.
+Le **costanti scalari \_ LINEREMOVEFROMCONF** descrivono come le parti che partecipano a una conferenza telefonica possono essere rimosse da una conferenza telefonica.
 
 <dl> <dt>
 
-<span id="LINEREMOVEFROMCONF_ANY"></span><span id="lineremovefromconf_any"></span>**LINEREMOVEFROMCONF \_ any**
+<span id="LINEREMOVEFROMCONF_ANY"></span><span id="lineremovefromconf_any"></span>**LINEREMOVEFROMCONF \_ ANY**
 </dt> <dd> <dl> <dt>
 
 
 
-Qualsiasi parte partecipante può essere rimossa dalla chiamata di conferenza.
+Qualsiasi parte partecipante può essere rimossa dalla conferenza telefonica.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEREMOVEFROMCONF_LAST"></span><span id="lineremovefromconf_last"></span>**LINEREMOVEFROMCONF \_ ultimo**
+<span id="LINEREMOVEFROMCONF_LAST"></span><span id="lineremovefromconf_last"></span>**LINEREMOVEFROMCONF \_ LAST**
 </dt> <dd> <dl> <dt>
 
 
 
-Dalla chiamata di conferenza è possibile rimuovere solo l'entità aggiunta più di recente
+Solo l'entità aggiunta più di recente può essere rimossa dalla conferenza telefonica
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEREMOVEFROMCONF_NONE"></span><span id="lineremovefromconf_none"></span>**LINEREMOVEFROMCONF \_ None**
+<span id="LINEREMOVEFROMCONF_NONE"></span><span id="lineremovefromconf_none"></span>**LINEREMOVEFROMCONF \_ NONE**
 </dt> <dd> <dl> <dt>
 
 
 
-Impossibile rimuovere entità dalla chiamata di conferenza.
+Le parti non possono essere rimosse dalla conferenza telefonica.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,8 +57,8 @@ Nessuna estensibilità. Tutti i 32 bit sono riservati.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

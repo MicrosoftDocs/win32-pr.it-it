@@ -1,5 +1,5 @@
 ---
-description: Specifica l'altezza dell'apertura minima dello schermo, in pixel.
+description: Specifica l'altezza dell'apertura di visualizzazione minima, in pixel.
 ms.assetid: dddae10f-3ed2-4444-af5b-f2cf46c52e7c
 title: MFPKEY_RESIZE_MINAPHEIGHT proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118973430"
 ---
 # <a name="mfpkey_resize_minapheight-property"></a>Proprietà MFPKEY \_ RESIZE \_ MINAPHEIGHT
 
-Specifica l'altezza dell'apertura minima dello schermo, in pixel.
+Specifica l'altezza dell'apertura di visualizzazione minima, in pixel.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ tipo di enumerazione WPD bitrate \_ types descrive un tipo di compressione di file audio.
+description: Il tipo di enumerazione WPD \_ BITRATE \_ TYPES descrive un tipo di compressione di file audio.
 ms.assetid: 9905b189-00c5-469b-ae48-10c79b9ac903
-title: Enumerazione WPD_BITRATE_TYPES (PortableDevice. h)
+title: WPD_BITRATE_TYPES enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 2597af21c5655c3c12c0ca29f097d0eba2bb8d54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b50b56222014119a50c9d4ecb0fd7eb96694b30f35fbcbb72dc6550fdf88606
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704051"
 ---
-# <a name="wpd_bitrate_types-enumeration"></a>\_Enumerazione tipi a bitrate WPD \_
+# <a name="wpd_bitrate_types-enumeration"></a>Enumerazione WPD \_ BITRATE \_ TYPES
 
-Il tipo di enumerazione **WPD \_ bitrate \_ types** descrive il tipo di compressione di un file audio.
+Il **tipo di enumerazione WPD \_ BITRATE \_ TYPES** descrive il tipo di compressione di un file audio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ typedef enum WPD_BITRATE_TYPES {
 
 <dl> <dt>
 
-<span id="WPD_BITRATE_TYPE_UNUSED"></span><span id="wpd_bitrate_type_unused"></span>**\_tipo di bitrate WPD \_ \_ inutilizzato**
+<span id="WPD_BITRATE_TYPE_UNUSED"></span><span id="wpd_bitrate_type_unused"></span>**TIPO DI \_ VELOCITÀ IN BIT \_ WPD NON \_ USATO**
 </dt> <dd>
 
 Questo valore non è stato specificato.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_DISCRETE"></span><span id="wpd_bitrate_type_discrete"></span>**\_tipo di bitrate WPD \_ \_ discreto**
+<span id="WPD_BITRATE_TYPE_DISCRETE"></span><span id="wpd_bitrate_type_discrete"></span>**TIPO DI \_ VELOCITÀ IN BIT WPD \_ \_ DISCRETO**
 </dt> <dd>
 
-Compressione della velocità in bit costante.
+Compressione costante della velocità in bit.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_VARIABLE"></span><span id="wpd_bitrate_type_variable"></span>**\_variabile di \_ tipo BITRAte WPD \_**
+<span id="WPD_BITRATE_TYPE_VARIABLE"></span><span id="wpd_bitrate_type_variable"></span>**VARIABILE DI TIPO \_ BITRATE \_ \_ WPD**
 </dt> <dd>
 
-Compressione della velocità in bit variabile.
+Compressione a velocità in bit variabile.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_FREE"></span><span id="wpd_bitrate_type_free"></span>**\_ \_ tipo gratuito a BITRAte WPD \_**
+<span id="WPD_BITRATE_TYPE_FREE"></span><span id="wpd_bitrate_type_free"></span>**WPD \_ BITRATE \_ TYPE \_ FREE**
 </dt> <dd>
 
-Velocità in bit in formato libero. Si tratta di una velocità in bit costante inferiore alla velocità in bit massima consentita.
+Velocità in bit del formato libero. Si tratta di una velocità in bit costante inferiore alla velocità in bit massima consentita.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Velocità in bit in formato libero. Si tratta di una velocità in bit costante i
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

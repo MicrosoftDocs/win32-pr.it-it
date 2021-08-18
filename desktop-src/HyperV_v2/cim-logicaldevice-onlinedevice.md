@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 56e5fae557198a713aec338f92ad8f2865b2c351
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f34d08ad72bd04cd94e35ac229fde82ca4847ec13410e35d57d0de0778d50af2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695511"
 ---
-# <a name="onlinedevice-method-of-the-cim_logicaldevice-class"></a>Metodo OnlineDevice della classe CIM \_ LogicalDevice
+# <a name="onlinedevice-method-of-the-cim_logicaldevice-class"></a>Metodo OnlineDevice della classe \_ CiM LogicalDevice
 
-Il metodo **OnlineDevice** è stato deprecato al posto del metodo **RequestStateChange** più generale che si sovrappone direttamente alla funzionalità fornita da questo metodo.
+Il **metodo OnlineDevice** è stato deprecato al posto del metodo **RequestStateChange** più generale che si sovrappone direttamente alla funzionalità fornita da questo metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ uint32 OnlineDevice(
 
 <dl> <dt>
 
-In *linea* \[ in\]
+*Online* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, portare il dispositivo online, se **false**, portare il dispositivo offline.
+Se **TRUE,** portare il dispositivo online, se **FALSE,** portare il dispositivo offline.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -68,7 +68,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

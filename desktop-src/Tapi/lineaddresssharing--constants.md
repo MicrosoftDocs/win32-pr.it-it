@@ -1,77 +1,77 @@
 ---
-description: Le \_ costanti del flag di bit LINEADDRESSSHARING descrivono i vari modi in cui un indirizzo può essere condiviso tra le linee.
+description: Le costanti del flag di bit LINEADDRESSSHARING descrivono vari modi in cui un \_ indirizzo può essere condiviso tra le righe.
 ms.assetid: f37ba549-c8dc-4a7c-bfe6-8e5f733d9750
-title: Costanti LINEADDRESSSHARING_ (TAPI. h)
+title: LINEADDRESSSHARING_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 785c7e924ffc958d3fe14b739bb2eb28dec322a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4fe92c92efd75a4f6e731944c487acff2ffd70e173dd04b03244ec9d55e8aba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003129"
 ---
-# <a name="lineaddresssharing_-constants"></a>\_Costanti LINEADDRESSSHARING
+# <a name="lineaddresssharing_-constants"></a>Costanti \_ LINEADDRESSSHARING
 
-Le costanti del flag di bit **LINEADDRESSSHARING \_** descrivono i vari modi in cui un indirizzo può essere condiviso tra le linee.
+Le costanti del flag di bit **LINEADDRESSSHARING \_** descrivono vari modi in cui un indirizzo può essere condiviso tra le righe.
 
 <dl> <dt>
 
-<span id="LINEADDRESSSHARING_PRIVATE"></span><span id="lineaddresssharing_private"></span>**LINEADDRESSSHARING \_ privato**
+<span id="LINEADDRESSSHARING_PRIVATE"></span><span id="lineaddresssharing_private"></span>**LINEADDRESSSHARING \_ PRIVATE**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo è privato per la riga dell'utente; non viene assegnato ad altre stazioni.
+L'indirizzo è privato per la riga dell'utente. non viene assegnato ad altre stazioni.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSSHARING_BRIDGEDEXCL"></span><span id="lineaddresssharing_bridgedexcl"></span>**\_BRIDGEDEXCL LINEADDRESSSHARING**
+<span id="LINEADDRESSSHARING_BRIDGEDEXCL"></span><span id="lineaddresssharing_bridgedexcl"></span>**LINEADDRESSSHARING \_ BRIDGEDEXCL**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo viene colmato a una o più stazioni. La prima riga per attivare una chiamata sulla riga avrà accesso esclusivo all'indirizzo e alle chiamate che possono esistere. Altre righe non saranno in grado di usare l'indirizzo con Bridge mentre è in uso.
+L'indirizzo viene con bridge a una o più stazioni. La prima riga per attivare una chiamata sulla riga avrà accesso esclusivo all'indirizzo e alle chiamate che possono esistere su di essa. Altre righe non saranno in grado di usare l'indirizzo con bridge mentre è in uso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSSHARING_BRIDGEDNEW"></span><span id="lineaddresssharing_bridgednew"></span>**\_BRIDGEDNEW LINEADDRESSSHARING**
+<span id="LINEADDRESSSHARING_BRIDGEDNEW"></span><span id="lineaddresssharing_bridgednew"></span>**LINEADDRESSSHARING \_ BRIDGEDNEW**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo viene colmato con una o più stazioni. La prima riga per attivare una chiamata sulla riga avrà accesso esclusivo solo alla chiamata corrispondente. Altre applicazioni che usano l'indirizzo genereranno un aspetto di chiamata nuovo e separato.
+L'indirizzo è con bridge con una o più altre stazioni. La prima riga per attivare una chiamata sulla riga avrà accesso esclusivo solo alla chiamata corrispondente. Altre applicazioni che usano l'indirizzo avranno un aspetto di chiamata nuovo e separato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSSHARING_BRIDGEDSHARED"></span><span id="lineaddresssharing_bridgedshared"></span>**\_BRIDGEDSHARED LINEADDRESSSHARING**
+<span id="LINEADDRESSSHARING_BRIDGEDSHARED"></span><span id="lineaddresssharing_bridgedshared"></span>**LINEADDRESSSHARING \_ BRIDGEDSHARED**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo viene colmato con una o più righe. Tutte le parti con bridging possono condividere chiamate sull'indirizzo, che quindi funge da conferenza.
+L'indirizzo è con bridge con una o più altre righe. Tutte le parti con bridge possono condividere le chiamate sull'indirizzo, che quindi funziona come conferenza.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSSHARING_MONITORED"></span><span id="lineaddresssharing_monitored"></span>**LINEADDRESSSHARING \_ monitorato**
+<span id="LINEADDRESSSHARING_MONITORED"></span><span id="lineaddresssharing_monitored"></span>**LINEADDRESSSHARING \_ MONITORATO**
 </dt> <dd> <dl> <dt>
 
 
 
-Si tratta di un indirizzo il cui stato di inattività è reso disponibile a questa riga.
+Si tratta di un indirizzo il cui stato di inattività/occupato viene reso disponibile per questa riga.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
-Il modo in cui un indirizzo viene condiviso tra le righe può influire sul comportamento di tale indirizzo. [**Riga \_ di**](line-callstate.md) I messaggi CALLSTATE e [**line \_ ADDRESSSTATE**](line-addressstate.md) vengono inviati all'applicazione in risposta alle attività da parte delle stazioni di bridging. Attraverso questi messaggi, un'applicazione può tenere traccia dello stato dell'indirizzo.
+Il modo in cui un indirizzo viene condiviso su più righe può influire sul comportamento di tale indirizzo. [**LINE \_ I messaggi CALLSTATE**](line-callstate.md) [**e LINE \_ ADDRESSSTATE**](line-addressstate.md) vengono inviati all'applicazione in risposta alle attività delle stazioni di bridging. È tramite questi messaggi che un'applicazione può tenere traccia dello stato dell'indirizzo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Il modo in cui un indirizzo viene condiviso tra le righe può influire sul compo
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ Il modo in cui un indirizzo viene condiviso tra le righe può influire sul compo
 
 <dl> <dt>
 
-[**LINEA \_ ADDRESSSTATE**](line-addressstate.md)
+[**LINE \_ ADDRESSSTATE**](line-addressstate.md)
 </dt> <dt>
 
-[**LINEA \_ CALLSTATE**](line-callstate.md)
+[**LINE \_ CALLSTATE**](line-callstate.md)
 </dt> </dl>
 
  

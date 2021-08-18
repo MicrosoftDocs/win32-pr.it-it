@@ -1,5 +1,5 @@
 ---
-description: Unisce due colori.
+description: Combina due colori.
 ms.assetid: deff70c7-2359-48b2-ab40-8c418acf5a07
 title: Funzione D3DXColorModulate (D3dx9math.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118988711"
 ---
 # <a name="d3dxcolormodulate-function"></a>Funzione D3DXColorModulate
 
-Unisce due colori.
+Combina due colori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ D3DXCOLOR* D3DXColorModulate(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 

@@ -3,8 +3,8 @@ title: Proprietà IVMVirtualPC MaximumNumberOfIDEBuses (VPCCOMInterfaces.h)
 description: Recupera il numero massimo di bus consentiti per l'IDE.
 ms.assetid: 7b88eda4-0f66-4e26-96cb-1e9ebef9d0b8
 keywords:
-- Proprietà MaximumNumberOfIDEBuses Virtual PC
-- Proprietà MaximumNumberOfIDEBuses Virtual PC, interfaccia IVMVirtualPC
+- MaximumNumberOfIDEBuses - proprietà Virtual PC
+- MaximumNumberOfIDEBuses - proprietà Virtual PC , interfaccia IVMVirtualPC
 - Interfaccia IVMVirtualPC Virtual PC, proprietà MaximumNumberOfIDEBuses
 topic_type:
 - apiref
@@ -55,8 +55,8 @@ Numero massimo di bus consentiti per l'IDE.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                              | L'operazione è stata completata.<br/>                                                        |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>                                | Il parametro è **NULL.**<br/>                                                           |
-| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
-| <dl> <dt>Macchina virtuale \_ E \_ \_ VIRTUALIZZAZIONE HARDWARE \_ DISABILITATA</dt> <dt>0XA0040951</dt> </dl> | Il processore non supporta le estensioni haV (Hardware Accelerated Virtualization).<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
+| <dl> <dt>Macchina virtuale \_ E \_ \_ VIRTUALIZZAZIONE HARDWARE \_ DISABILITATA</dt> <dt>0xA0040951</dt> </dl> | Il processore non supporta le estensioni haV (Hardware Accelerated Virtualization).<br/> |
 
 
 
@@ -71,7 +71,7 @@ Numero massimo di bus consentiti per l'IDE.
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID IVMVirtualPC è definito come \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
+| IID<br/>                      | IID \_ IVMVirtualPC è definito come 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

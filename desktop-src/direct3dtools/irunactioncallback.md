@@ -38,7 +38,7 @@ Non usato. In precedenza un callback per rispondere all'evento "capture frame".
 
 **L'interfaccia IRunActionCallback** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactioncallback-requestresult-iunknown-ptr"><strong>RequestResult</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host i risultati di un'azione (ad esempio, acquisire un frame) richiesta.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactioncallback-requestresult-iunknown-ptr"><strong>RequestResult</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host i risultati di un'azione ,ad esempio l'acquisizione di un frame, richiesta.</p></td></tr></tbody></table>
 
  
 

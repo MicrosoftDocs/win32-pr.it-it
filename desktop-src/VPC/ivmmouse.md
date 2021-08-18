@@ -45,7 +45,7 @@ Controlla il dispositivo mouse all'interno di una macchina virtuale. **L'oggetto
 |:----------------------------------------|:-----------------------------------------------------------------------------------|
 | [**Clic**](ivmmouse-click.md)         | Simula il clic di un pulsante del mouse.<br/>                                         |
 | [**GetButton**](ivmmouse-getbutton.md) | Recupera lo stato corrente (verso l'alto o verso il basso) del pulsante del mouse specificato.<br/> |
-| [**SetButton**](ivmmouse-setbutton.md) | Imposta lo stato corrente (su o giù) del pulsante del mouse specificato.<br/>      |
+| [**SetButton**](ivmmouse-setbutton.md) | Imposta lo stato corrente (verso l'alto o verso il basso) del pulsante del mouse specificato.<br/>      |
 
 
 

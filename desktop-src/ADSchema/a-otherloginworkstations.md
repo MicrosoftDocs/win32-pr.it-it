@@ -1,10 +1,10 @@
 ---
-title: Other-login-attributo Workstations
-description: Non \ 8211; Workstation Windows NT o LAN Manager da cui un utente può effettuare l'accesso.
+title: Attributo Other-Login-Workstations
+description: Non \ 8211; Windows NT workstation o LAN Manager da cui un utente può accedere.
 ms.assetid: feaa1ade-f340-4bca-8787-5ae5aa10d51c
 ms.tgt_platform: multiple
 keywords:
-- Other-login-workstation attributo AD schema
+- Schema AD per l'attributo Other-Login-Workstations
 - Schema AD dell'attributo otherLoginWorkstations
 topic_type:
 - apiref
@@ -14,19 +14,19 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b71032e96de9ac8d323da8a94e4c50c5cace27c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e0cad2ce47be17ff969b237cf48255d3a668bbfc4c64f6144ec9d630fc938593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704471"
 ---
-# <a name="other-login-workstations-attribute"></a>Other-login-attributo Workstations
+# <a name="other-login-workstations-attribute"></a>Attributo Other-Login-Workstations
 
-Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'accesso.
+Workstation Windows NT o LAN Manager da cui un utente può accedere.
 
 > [!Note]  
-> Active Directory non utilizza o popola questo campo.
+> Active Directory non usa o popola questo campo.
 
  
 
@@ -34,13 +34,13 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Other-login-workstation                    |
-| LDAP-Display-Name | otherLoginWorkstations                      |
+| CN                | Altre workstation di accesso                    |
+| Ldap-Display-Name | otherLoginWorkstations                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.91                       |
-| System-ID-GUID    | bf9679f1-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf9679f1-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -63,15 +63,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -84,15 +84,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -105,15 +105,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -126,15 +126,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -147,15 +147,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -168,15 +168,15 @@ Workstation non Windows NT o LAN Manager da cui un utente può effettuare l'acce
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

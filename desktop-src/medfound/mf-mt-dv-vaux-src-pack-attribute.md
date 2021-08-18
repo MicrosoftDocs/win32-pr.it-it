@@ -1,17 +1,17 @@
 ---
 description: Pacchetto di origine video ausiliario (VAUX) in un tipo di supporto video digitale (DV).
 ms.assetid: 4263032f-9093-4c7a-9ca0-14f8dc0d1aef
-title: Attributo MF_MT_DV_VAUX_SRC_PACK (Mfapi. h)
+title: MF_MT_DV_VAUX_SRC_PACK attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0db4d10c7603a2374366fce83cd6f541e4637ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d0b79e0ba124e0ce3b196c8753777e6fe01b061aefe7c7d1d6b1cb4459deada
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714651"
 ---
-# <a name="mf_mt_dv_vaux_src_pack-attribute"></a>\_Attributo dell' \_ src del pacchetto MF mt DV \_ Vaux \_ \_
+# <a name="mf_mt_dv_vaux_src_pack-attribute"></a>Attributo \_ MF MT \_ DV \_ VAUX \_ SRC \_ PACK
 
 Pacchetto di origine video ausiliario (VAUX) in un tipo di supporto video digitale (DV).
 
@@ -21,9 +21,9 @@ Pacchetto di origine video ausiliario (VAUX) in un tipo di supporto video digita
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **dwDVVAuxSrc** della struttura DirectShow [**DVinfo**](/windows/win32/api/strmif/ns-strmif-dvinfo) .
+Questo attributo corrisponde al **membro dwDVVAuxSrc** della DirectShow [**DVINFO.**](/windows/win32/api/strmif/ns-strmif-dvinfo)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

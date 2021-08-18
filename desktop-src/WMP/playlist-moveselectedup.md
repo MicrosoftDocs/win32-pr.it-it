@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. moveSelectedUp
+title: PLAYLIST.moveSelectedUp
 description: Il metodo moveSelectedUp sposta l'elemento selezionato verso l'alto di una posizione nell'elenco.
 ms.assetid: 2d942cb8-b09d-486a-80a5-fac9f172cef3
 keywords:
-- PLAYLIST. moveSelectedUp Windows Media Player
+- PLAYLIST.moveSelectedUp Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 680889442035886ed1110426f45d7031ce0a4c09
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 568629cf08405e92738ad06cb84bda06f0b5f37d10c6d20c1fbc43aa67cfa105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735901"
 ---
-# <a name="playlistmoveselectedup"></a>PLAYLIST. moveSelectedUp
+# <a name="playlistmoveselectedup"></a>PLAYLIST.moveSelectedUp
 
-Il metodo **moveSelectedUp** sposta l'elemento selezionato verso l'alto di una posizione nell'elenco.
+Il **metodo moveSelectedUp** sposta l'elemento selezionato verso l'alto di una posizione nell'elenco.
 
 ``` syntax
         elementID.moveSelectedUp()
@@ -42,7 +42,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -50,10 +50,10 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. moveSelectedDown**](playlist-moveselecteddown.md)
+[**PLAYLIST.moveSelectedDown**](playlist-moveselecteddown.md)
 </dt> </dl>
 
  

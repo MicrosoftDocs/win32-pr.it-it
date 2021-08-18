@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_RECSIZE. Metodo Equals (Object)'
-title: JET_RECSIZE. Metodo Equals (Object) (Microsoft. ISAM. esent. Interop. vista)
+title: JET_RECSIZE. Metodo Equals (Object) (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 72e9b597d51026e1fea66746272e245f29bd8d7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91e85edfab964581164bd233fb5c9450086546eecbcc37b5df05986c58d68931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730001"
 ---
 # <a name="jet_recsizeequals-method-object"></a>JET_RECSIZE. Metodo Equals (Object)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Oggetto da confrontare con l'istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
 [Confronta l'overload](./jet-recsize.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

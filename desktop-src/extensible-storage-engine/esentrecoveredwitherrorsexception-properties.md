@@ -17,7 +17,7 @@ ms.locfileid: "118982071"
 # <a name="esentrecoveredwitherrorsexception-properties"></a>Proprietà di EsentRecoveredWithErrorsException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md) espone i membri seguenti.
 

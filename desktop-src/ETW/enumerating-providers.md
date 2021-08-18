@@ -1,19 +1,19 @@
 ---
-description: Per recuperare un elenco di provider che hanno installato le classi manifest o MOF nel computer, chiamare la funzione TdhEnumerateProviders.
+description: Per recuperare un elenco di provider che hanno installato il manifesto o le classi MOF nel computer, chiamare la funzione TdhEnumerateProviders.
 ms.assetid: 79a29a55-e211-4921-ac78-a21ef8ef238f
 title: Enumerazione dei provider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f12ba5ad17816ada25bcaffd169e89acca8868
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: a1b93bcecbd1713a2945ea97703a77ab33629987f989505dea9498d03b7cb17c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104234538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755071"
 ---
 # <a name="enumerating-providers"></a>Enumerazione dei provider
 
-Per recuperare un elenco di provider che hanno installato le classi manifest o MOF nel computer, chiamare la funzione [**TdhEnumerateProviders**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders) .
+Per recuperare un elenco di provider che hanno installato il manifesto o le classi MOF nel computer, chiamare la [**funzione TdhEnumerateProviders.**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders)
 
 Nell'esempio seguente viene illustrato come enumerare i provider.
 

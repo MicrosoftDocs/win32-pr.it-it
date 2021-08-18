@@ -1,6 +1,6 @@
 ---
 title: DownloadCollection.count
-description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di un negozio online non è supportato. La proprietà count recupera il numero di download in sospeso nella raccolta.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. La proprietà count recupera il numero di download in sospeso nella raccolta.
 ms.assetid: 8f9245aa-6d92-4dd3-9b45-97ee37de680d
 keywords:
 - DownloadCollection.count Windows Media Player
@@ -24,7 +24,7 @@ ms.locfileid: "118997091"
 # <a name="downloadcollectioncount"></a>DownloadCollection.count
 
 > [!Note]  
-> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di un negozio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 

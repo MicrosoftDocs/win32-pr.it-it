@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetPlayerParentalCountry Recupera il paese/area geografica corrente come impostato nell'oggetto MSWebDVD.
+description: Il metodo GetPlayerParentalCountry recupera il paese/area geografica corrente come impostato nell'oggetto MSWebDVD.
 ms.assetid: 9404c6b7-9157-4366-be3a-ed65ef260f12
 title: Metodo GetPlayerParentalCountry
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b20cd0a36da5e30cbd5b2a8da71b05433801a61f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: af4338531bd54056c9601d37b87b93bbbdb5f7c711306f34a6374a4d429ba861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756571"
 ---
 # <a name="getplayerparentalcountry-method"></a>Metodo GetPlayerParentalCountry
 
@@ -18,7 +18,7 @@ ms.locfileid: "103876014"
 
  
 
-Il `GetPlayerParentalCountry` metodo recupera il paese/area geografica corrente come impostato nell'oggetto **mswebdvd** .
+Il `GetPlayerParentalCountry` metodo recupera il paese o l'area geografica corrente come impostato nell'oggetto **MSWebDVD.**
 
 ``` syntax
 [ iCountryCode = ] MSWebDVD.GetPlayerParentalCountry()
@@ -26,7 +26,7 @@ Il `GetPlayerParentalCountry` metodo recupera il paese/area geografica corrente 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore integer con il codice paese/area geografica.
+Restituisce un valore intero con il codice paese/area geografica.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,7 +38,7 @@ Restituisce un valore integer con il codice paese/area geografica.
 [**GetTitleParentalLevels**](gettitleparentallevels-method.md)
 </dt> <dt>
 
-[**SelectParentalCountry**](selectparentalcountry-method.md)
+[**SelezionareParentalCountry**](selectparentalcountry-method.md)
 </dt> <dt>
 
 [**SelectParentalLevel**](selectparentallevel-method.md)

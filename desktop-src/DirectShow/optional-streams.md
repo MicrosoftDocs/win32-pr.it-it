@@ -1,30 +1,30 @@
 ---
-description: Flussi facoltativi
+description: Facoltativo Flussi
 ms.assetid: 94477a71-c267-4602-893b-1bd1256b34ef
-title: Flussi facoltativi
+title: Facoltativo Flussi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 940be49196396aa2d1fa71502213b0d4fbacb5ea
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b7d7c30f783a8c13b00020c2dac62cd11e2a79d6f2ea66af01f715c3cb389853
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830971"
 ---
-# <a name="optional-streams"></a>Flussi facoltativi
+# <a name="optional-streams"></a>Facoltativo Flussi
 
-Un DMO può designare alcuni dei flussi di output come facoltativi. Un flusso facoltativo genera dati che l'applicazione può rimuovere, completamente o in caso di esempi occasionali. Ad esempio, un flusso facoltativo potrebbe contenere informazioni aggiuntive su un flusso primario.
+Un DMO può designare alcuni dei flussi di output come facoltativi. Un flusso facoltativo produce dati che l'applicazione può eliminare, completamente o su campioni occasionali. Ad esempio, un flusso facoltativo potrebbe contenere informazioni aggiuntive su un flusso primario.
 
-Per eseguire una query sull'eventuale presenza di un flusso facoltativo, chiamare il metodo [**IMediaObject:: GetOutputStreamInfo**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getoutputstreaminfo) e controllare il parametro *pdwFlags* . I flussi facoltativi restituiscono il \_ flag di output DMO \_ STREAMF \_ o il \_ \_ flag STREAMF facoltativo di output DMO \_ . Questi flag indicano quasi la stessa cosa. una differenza secondaria tra di essi verrà illustrata a breve.
+Per verificare se un flusso è facoltativo, chiamare il metodo [**IMediaObject::GetOutputStreamInfo**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getoutputstreaminfo) e controllare il *parametro pdwFlags.* I flussi facoltativi restituiscono il flag DMO OUTPUT STREAMF DISCARDABLE o il \_ \_ flag DMO OUTPUT \_ \_ \_ STREAMF \_ OPTIONAL. Questi flag hanno quasi lo stesso significato. una piccola differenza tra di essi verrà illustrata a breve.
 
-Se un flusso è facoltativo, il client può indicare a DMO di rimuovere i dati dal flusso quando elabora l'output. A tale scopo, chiamare il metodo [**IMediaObject::P rocessoutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) e impostare il buffer di output su **null** per ogni flusso che si desidera eliminare. Il buffer di output viene specificato nel membro **pbuffer** del [**\_ \_ \_ buffer dei dati di output DMO**](/previous-versions/windows/desktop/api/Mediaobj/ns-mediaobj-dmo_output_data_buffer). Impostare anche l' \_ output del processo DMO \_ \_ \_ se \_ non è presente alcun \_ flag del buffer nel parametro *dwFlags* .
+Se un flusso è facoltativo, il client può indicare al DMO di rimuovere i dati da tale flusso quando elabora l'output. A tale scopo, chiamare il [**metodo IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) e impostare il buffer di output su **NULL** per ogni flusso che si vuole rimuovere. Il buffer di output è specificato nel **membro pBuffer** dell'DMO [**OUTPUT DATA \_ \_ \_ BUFFER.**](/previous-versions/windows/desktop/api/Mediaobj/ns-mediaobj-dmo_output_data_buffer) Impostare anche il DMO \_ PROCESS OUTPUT DISCARD WHEN NO BUFFER nel parametro \_ \_ \_ \_ \_ *dwFlags.*
 
-Per ogni flusso in cui il puntatore *pbuffer* è **null**, DMO tenterà di eliminare i dati. Se il flusso è facoltativo, è garantito che l'oggetto DMO elimini i dati. Se il flusso non è facoltativo, DMO Elimina i dati quando possibile, ma non è garantito. Se non è possibile rimuovere i dati, imposta il \_ flag di output DMO \_ \_ BUFFERF data \_ . Se si imposta un puntatore *pbuffer* su **null** ma non si imposta l'output del processo DMO per l' \_ \_ \_ eliminazione \_ quando non è \_ presente alcun \_ flag del buffer, DMO non rimuove i dati. In tal caso, l'oggetto DMO memorizza nel buffer l'output internamente o semplicemente non riesce a eseguire la chiamata **ProcessOutput** .
+Per ogni flusso in cui il *puntatore pBuffer* è **NULL,** DMO tenterà di rimuovere i dati. Se il flusso è facoltativo, DMO è garantito che scarti i dati. Se il flusso non è facoltativo, DMO elimina i dati quando possibile, ma non è garantito. Se non è in grado di rimuovere i dati, imposta DMO \_ flag OUTPUT \_ DATA \_ BUFFERF \_ INCOMPLETE. Se si imposta un *puntatore pBuffer* su **NULL** ma non si imposta il flag DMO PROCESS OUTPUT DISCARD WHEN NO BUFFER, il DMO non rimuove \_ i \_ \_ \_ \_ \_ dati. In tal caso, il DMO buffer l'output internamente o semplicemente non riesce la **chiamata a ProcessOutput.**
 
-L'unica differenza funzionale tra il \_ \_ flag STREAMF di output DMO \_ e il flag di \_ output DMO STREAMF facoltativo \_ \_ è la seguente:
+L'unica differenza funzionale tra il flag DMO OUTPUT STREAMF OPTIONAL e il \_ \_ flag DMO OUTPUT \_ \_ \_ STREAMF \_ DISCARDABLE è la seguente:
 
--   Il \_ flag di output DMO \_ STREAMF \_ facoltativo indica che il client non deve impostare un tipo di supporto su tale flusso. Tuttavia, se il client inizia a elaborare i dati senza impostare il tipo di supporto per il flusso, deve eliminare i dati dal flusso per l'intera durata del flusso. Se si desidera rimuovere gli esempi in modo selettivo, è necessario impostare il tipo di supporto.
--   Il \_ flag di output DMO \_ STREAMF \_ indica che, anche se il flusso è facoltativo, richiede sempre un tipo di supporto.
+-   Il flag DMO OUTPUT STREAMF OPTIONAL indica che il client non deve impostare un tipo di supporto \_ \_ in tale \_ flusso. Tuttavia, se il client inizia a elaborare i dati senza impostare il tipo di supporto per tale flusso, deve rimuovere i dati da tale flusso per l'intera durata del flusso. Se si desidera eliminare i campioni in modo selettivo, è necessario impostare il tipo di supporto.
+-   Il flag DMO OUTPUT STREAMF DISCARDABLE indica che, anche se il flusso è facoltativo, richiede \_ sempre un tipo di \_ \_ supporto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Source-Object-DN
+title: Attributo ms-DS-Source-Object-DN
 description: Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'altra foresta che corrisponde a questo oggetto.
 ms.assetid: 2955c6ed-068a-47bb-aabc-e335f5ad7709
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-Source-Object-DN
-- attributo msDS-SourceObjectDN-schema AD
+- Schema AD dell'attributo msDS-SourceObjectDN
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9853dd37ead84e638f9ccb5e928b6d86bc9f5ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d47c347edf85cf5d5db330ed14a97bad7464571e74469d3c06608d20e544397a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544431"
 ---
-# <a name="ms-ds-source-object-dn-attribute"></a>attributo ms-DS-Source-Object-DN
+# <a name="ms-ds-source-object-dn-attribute"></a>Attributo ms-DS-Source-Object-DN
 
 Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'altra foresta che corrisponde a questo oggetto.
 
@@ -30,12 +30,12 @@ Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'alt
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Source-Object-DN                      |
-| LDAP-Display-Name | msDS-SourceObjectDN                         |
+| Ldap-Display-Name | msDS-SourceObjectDN                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1879                     |
-| System-ID-GUID    | 773e93af-d3b4-48d4-b3f9-06457602d3d0        |
+| System-Id-Guid    | 773e93af-d3b4-48d4-b3f9-06457602d3d0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'alt
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -77,15 +77,15 @@ Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'alt
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -98,15 +98,15 @@ Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'alt
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -119,15 +119,15 @@ Contiene la rappresentazione di stringa del nome distinto dell'oggetto in un'alt
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 10240        |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

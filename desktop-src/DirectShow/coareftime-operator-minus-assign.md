@@ -1,7 +1,7 @@
 ---
 description: Questo operatore sottrae un'ora di riferimento da un'altra e imposta questo oggetto sul risultato.
 ms.assetid: 573b6f6b-7634-4e78-872c-f869b59a75e2
-title: Metodo COARefTime. Operator-= (Ctlutil. h)
+title: Metodo COARefTime.operator-= (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 29afc98da01351f63df45997b8cc338e17a1234c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fd8e567933cf9061b6add3b3f756baec3120fdaeb1ffa0d71d4278e4221829f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757101"
 ---
-# <a name="coareftimeoperator--method"></a>Metodo COARefTime. operator-=
+# <a name="coareftimeoperator--method"></a>Metodo COARefTime.operator-=
 
 Questo operatore sottrae un'ora di riferimento da un'altra e imposta questo oggetto sul risultato.
 
@@ -42,16 +42,16 @@ COARefTime& operator-=(
 
 <dl> <dt>
 
-*RT* \[ Ref\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Riferimento all'oggetto **COARefTime** da sottrarre.
+Riferimento **all'oggetto COARefTime** da sottrarre.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un riferimento all'oggetto.
+Restituisce un riferimento all'oggetto .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un riferimento all'oggetto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

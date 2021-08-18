@@ -3,11 +3,11 @@ title: Elemento CONTROLS
 description: Elemento CONTROLS
 ms.assetid: 5f988a85-55dd-4b23-a15c-a55e5ca14429
 keywords:
-- Windows Media Player skin, elemento CONTROLS
-- skins,elemento CONTROLS
-- Elemento CONTROLS
-- riferimento per le skin, elemento CONTROLS
-- elementi,CONTROLLI
+- Windows Media Player, elemento CONTROLS
+- skins,CONTROLS - elemento
+- Controls - elemento
+- informazioni di riferimento per le interfaccia, elemento CONTROLS
+- elementi,CONTROLS
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8b0d4cd5da8d29e84506899f14209d276d6c2bfda407fa45a2372cd81d0d7ee8
@@ -30,7 +30,7 @@ ms.locfileid: "118997511"
 | [Currentitem](controls-currentitem.md)                             | Specifica o recupera l'elemento multimediale corrente.                                                  |
 | [currentMarker](controls-currentmarker.md)                         | Specifica o recupera il numero del marcatore corrente.                                               |
 | [currentPosition](controls-currentposition.md)                     | Specifica o recupera la posizione corrente del clip in secondi dall'inizio.          |
-| [currentPositionTimecode](controls-currentpositiontimecode.md)     | Specifica o recupera la posizione corrente nell'elemento multimediale corrente usando un time code formato. |
+| [currentPositionTimecode](controls-currentpositiontimecode.md)     | Specifica o recupera la posizione corrente nell'elemento multimediale corrente utilizzando un formato time code corrente. |
 
 
 

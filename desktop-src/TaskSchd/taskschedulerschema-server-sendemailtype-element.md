@@ -1,9 +1,9 @@
 ---
-title: Elemento server (sendEmailType)
+title: Elemento Server (sendEmailType)
 description: Contiene il server di posta elettronica utilizzato per inviare il messaggio di posta elettronica.
 ms.assetid: 4c6084d1-70c5-4d8b-8fcb-ab4cd8aab441
 keywords:
-- Utilità di pianificazione elemento server
+- Elemento Server Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5fc57ddf5deee52ff9b118a8267eec4069108030
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6052ebb5e648c040c321a311a6ba18313244ab20340d5a7f6c4185e3d35f5df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002249"
 ---
-# <a name="server-sendemailtype-element"></a>Elemento server (sendEmailType)
+# <a name="server-sendemailtype-element"></a>Elemento Server (sendEmailType)
 
 Contiene il server di posta elettronica utilizzato per inviare il messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene il server di posta elettronica utilizzato per inviare il messaggio di p
  />
 ```
 
-L'elemento **Server** è definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento Server** è definito dal [**tipo complesso sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **Server** è definito dal tipo complesso [**sendEmailType**](tasksch
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**Proprietà server di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_server).
+Per lo sviluppo in C++, vedere [**Proprietà Server di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_server)
 
-Per lo sviluppo di script, vedere [**EmailAction. Server**](emailaction-server.md).
+Per lo sviluppo di script, [**vedere EmailAction.Server.**](emailaction-server.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**EmailAction. Server**](emailaction-server.m
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

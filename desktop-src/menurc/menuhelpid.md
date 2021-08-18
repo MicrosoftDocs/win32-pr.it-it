@@ -1,9 +1,9 @@
 ---
 title: Struttura MENUHELPID
-description: Contiene i dati finali scritti nella risorsa di \_ menu RT per un menu o un sottomenu se il membro resInfo della struttura POPUPMENUITEM è impostato su un \_ popup fabbisogno.
+description: Contiene i dati finali scritti nella risorsa RT MENU per un menu o un sottomenu se il membro resInfo della struttura \_ POPUPMENUITEM è impostato su MFR \_ POPUP.
 ms.assetid: f17fdaaa-b37c-4902-bad4-a1181ffee9f9
 keywords:
-- Menu struttura MENUHELPID e altre risorse
+- Struttura MENUHELPID Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b90b5a4745433c92a859a168611aa1c14f1fa45
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4831074d5e7b663210f880bf6684cbc6484ad3487a0c6c9e5be308aebc66291a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825951"
 ---
 # <a name="menuhelpid-structure"></a>Struttura MENUHELPID
 
-Contiene i dati finali scritti nella risorsa [**di \_ menu RT**](/windows/desktop/menurc/resource-types) per un menu o un sottomenu se il membro **resInfo** della struttura [**POPUPMENUITEM**](popupmenuitem.md) è impostato su **un \_ popup fabbisogno**. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
+Contiene i dati finali scritti nella risorsa [**RT \_ MENU**](/windows/desktop/menurc/resource-types) per un menu o un sottomenu se il membro **resInfo** della struttura [**POPUPMENUITEM**](popupmenuitem.md) è impostato su **MFR \_ POPUP**. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Identificatore usato per identificare il menu durante l'elaborazione della [**\_ Guida di WM**](/windows/desktop/shell/wm-help) .
+Identificatore utilizzato per identificare il menu durante [**l'elaborazione di WM \_ HELP.**](/windows/desktop/shell/wm-help)
 
 </dd> </dl>
 

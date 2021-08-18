@@ -1,6 +1,6 @@
 ---
 title: Tipo complesso PeapExtensionsType (proprietà di connessione)
-description: Informazioni sul tipo complesso PeapExtensionsType. Questo tipo consente miglioramenti futuri allo schema.
+description: Informazioni sul tipo complesso PeapExtensionsType. Questo tipo consente miglioramenti futuri dello schema.
 ms.assetid: d4f7784d-d426-4da6-bf81-40716f185416
 keywords:
 - Tipo complesso PeapExtensionsType EAPHost
@@ -48,8 +48,8 @@ Il **tipo complesso PeapExtensionsType** è facoltativo.
 
 | Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -57,7 +57,7 @@ Il **tipo complesso PeapExtensionsType** è facoltativo.
 
 <dl> <dt>
 
-[Schema EAPHost e legacy](eaphost-schemas.md)
+[EAPHost e schema legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md)

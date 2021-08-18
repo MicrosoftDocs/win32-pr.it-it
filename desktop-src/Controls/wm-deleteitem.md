@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DELETEITEM (winuser. h)
-description: Inviato al proprietario di una casella di riepilogo o di una casella combinata quando la casella di riepilogo o la casella combinata viene distrutta o quando gli elementi vengono rimossi dal \_ messaggio lb DELETESTRING, lb \_ ResetContent, CB \_ DELETESTRING o CB \_ ResetContent.
+title: WM_DELETEITEM messaggio (Winuser.h)
+description: Inviato al proprietario di una casella di riepilogo o di una casella combinata quando la casella di riepilogo o la casella combinata viene eliminata definitivamente o quando gli elementi vengono rimossi dal messaggio \_ LB DELETESTRING, LB \_ RESETCONTENT, CB DELETESTRING o \_ CB \_ RESETCONTENT.
 ms.assetid: c3adf8fb-45f2-44f1-8821-6ffa7d76dc78
 keywords:
-- Controlli di Windows Message WM_DELETEITEM
+- WM_DELETEITEM di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf37f8a367d23353903bd3cda85b573f6884ff2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f461b63d751822d9a4c602993314bf0677cff754881269ab44458ab17f3a439
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018539"
 ---
-# <a name="wm_deleteitem-message"></a>\_Messaggio DeleteItem WM
+# <a name="wm_deleteitem-message"></a>Messaggio \_ WM DELETEITEM
 
-Inviato al proprietario di una casella di riepilogo o di una casella combinata quando la casella di riepilogo o la casella combinata viene distrutta o quando gli elementi vengono rimossi dal messaggio [**lb \_ DELETESTRING**](lb-deletestring.md), [**lb \_ ResetContent**](lb-resetcontent.md), [**CB \_ DELETESTRING**](cb-deletestring.md)o [**CB \_ ResetContent**](cb-resetcontent.md) . Il sistema invia un messaggio **WM \_ DeleteItem** per ogni elemento eliminato. Il sistema invia il messaggio **WM \_ DeleteItem** per qualsiasi casella di riepilogo o casella combinata eliminata con dati di elementi diversi da zero.
+Inviato al proprietario di una casella di riepilogo o di una casella combinata quando la casella di riepilogo o la casella combinata viene eliminata definitivamente o quando gli elementi vengono rimossi dal messaggio [**LB \_ DELETESTRING**](lb-deletestring.md), [**LB \_ RESETCONTENT**](lb-resetcontent.md), [**CB \_ DELETESTRING**](cb-deletestring.md)o [**CB \_ RESETCONTENT.**](cb-resetcontent.md) Il sistema invia un **messaggio \_ DELETEITEM WM** per ogni elemento eliminato. Il sistema invia il messaggio **WM \_ DELETEITEM** per qualsiasi casella di riepilogo o elemento della casella combinata eliminato con dati diversi da zero.
 
 
 ```C++
@@ -42,26 +42,26 @@ WM_DELETEITEM
 *wParam* 
 </dt> <dd>
 
-Specifica l'identificatore del controllo che ha inviato il messaggio **WM \_ DeleteItem** .
+Specifica l'identificatore del controllo che ha inviato il **messaggio \_ DELETEITEM WM.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**DELETEITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-deleteitemstruct) che contiene informazioni sull'elemento eliminato da una casella di riepilogo.
+Puntatore a [**una struttura DELETEITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-deleteitemstruct) che contiene informazioni sull'elemento eliminato da una casella di riepilogo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Un'applicazione deve restituire **true** se elabora questo messaggio.
+Un'applicazione deve **restituire TRUE** se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Microsoft Windows NT e versioni successive: Windows invia un messaggio **WM \_ DeleteItem** solo per gli elementi eliminati da una casella di riepilogo creata dal proprietario (con lo [**stile \_ OwnerDrawVariable**](list-box-styles.md) [**lbs \_ OwnerDrawFixed**](list-box-styles.md) o lbs) o una casella combinata creata dal proprietario (con lo stile [**CBS \_ OwnerDrawFixed**](combo-box-styles.md) o [**CBS \_ OwnerDrawVariable**](combo-box-styles.md) ).
+Microsoft Windows NT e versioni successive: Windows invia un messaggio **\_ DELETEITEM WM** solo per gli elementi eliminati da una casella di riepilogo disegnata dal proprietario (con lo stile [**LBS \_ OWNERDRAWFIXED**](list-box-styles.md) o [**LBS \_ OWNERDRAWVARIABLE)**](list-box-styles.md) o da una casella combinata disegnata dal proprietario (con lo stile [**CBS \_ OWNERDRAWFIXED**](combo-box-styles.md) o [**CBS \_ OWNERDRAWVARIABLE).**](combo-box-styles.md)
 
-Windows 95: Windows invia il messaggio **WM \_ DeleteItem** per qualsiasi casella di riepilogo o casella combinata eliminata con dati di elementi diversi da zero.
+Windows 95: Windows invia il messaggio **\_ DELETEITEM WM** per qualsiasi elemento di casella di riepilogo o casella combinata eliminato con dati di elemento diversi da zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,9 +69,9 @@ Windows 95: Windows invia il messaggio **WM \_ DeleteItem** per qualsiasi casell
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -85,16 +85,16 @@ Windows 95: Windows invia il messaggio **WM \_ DeleteItem** per qualsiasi casell
 [**CB \_ DELETESTRING**](cb-deletestring.md)
 </dt> <dt>
 
-[**CB \_ ResetContent**](cb-resetcontent.md)
+[**CB \_ RESETCONTENT**](cb-resetcontent.md)
 </dt> <dt>
 
 [**DELETEITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-deleteitemstruct)
 </dt> <dt>
 
-[**\_DELETESTRING lb**](lb-deletestring.md)
+[**LB \_ DELETESTRING**](lb-deletestring.md)
 </dt> <dt>
 
-[**\_ResetContent lb**](lb-resetcontent.md)
+[**LB \_ RESETCONTENT**](lb-resetcontent.md)
 </dt> </dl>
 
  

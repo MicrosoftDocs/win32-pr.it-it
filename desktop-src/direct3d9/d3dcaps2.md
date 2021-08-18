@@ -56,7 +56,7 @@ Flag di funzionalità del driver.
 <tr class="odd">
 <td>D3DCAPS2_CANMANAGERESOURCE</td>
 <td>0x10000000L</td>
-<td>Il driver è in grado di gestire le risorse. In questi driver, D3DPOOL_MANAGED risorse verranno gestite dal driver. Per fare in modo che Direct3D ese sostituisca il driver in modo che Direct3D gestirà le risorse, usare il flag D3DCREATE_DISABLE_DRIVER_MANAGEMENT quando si chiama <a href="/windows/desktop/api"><strong>CreateDevice</strong></a>.</td>
+<td>Il driver è in grado di gestire le risorse. In questi driver, D3DPOOL_MANAGED risorse verranno gestite dal driver. Per fare in modo che Direct3D ese sostituisca il driver in modo che Direct3D gestirà le risorse, usare il flag D3DCREATE_DISABLE_DRIVER_MANAGEMENT quando si <a href="/windows/desktop/api"><strong>chiama CreateDevice</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_DYNAMICTEXTURES</td>

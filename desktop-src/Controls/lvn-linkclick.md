@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_LINKCLICK (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che è stato fatto clic su un collegamento. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_LINKCLICK di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che è stato fatto clic su un collegamento. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: de8f40d6-b79e-4324-af67-9a3c0915609d
 keywords:
-- Controlli di Windows per il codice di notifica LVN_LINKCLICK
+- LVN_LINKCLICK del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd69fb463e71523fcbd4eeb65a6a718d27847c09
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e89db641bc17e8c3d9d548bdf502e077c88dfc6c7452f8059b085c3432d23bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019069"
 ---
-# <a name="lvn_linkclick-notification-code"></a>\_Codice di notifica LINKCLICK di LVN
+# <a name="lvn_linkclick-notification-code"></a>Codice di notifica LVN \_ LINKCLICK
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che è stato fatto clic su un collegamento. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che è stato fatto clic su un collegamento. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_LINKCLICK
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLVLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlvlink) . L'identificatore del gruppo contenente il collegamento si trova nel membro **iSubItem** .
+Puntatore a [**una struttura NMLVLINK.**](/windows/win32/api/commctrl/ns-commctrl-nmlvlink) L'identificatore del gruppo contenente il collegamento si trova nel **membro iSubItem.**
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio seguente viene illustrato il modo in cui un'applicazione può rispondere a questo codice di notifica nel gestore di messaggi di [**\_ notifica WM**](wm-notify.md) . Nell'esempio viene attivato o disattivato lo stato compresso del gruppo e viene impostato il testo del collegamento appropriato.
+L'esempio seguente mostra come un'applicazione potrebbe rispondere a questo codice di notifica nel gestore [**di messaggi WM \_ NOTIFY.**](wm-notify.md) Nell'esempio viene attivato o disattivato lo stato compresso del gruppo e viene impostato il testo del collegamento appropriato.
 
 ``` syntax
 case LVN_LINKCLICK:
@@ -83,9 +83,9 @@ case LVN_LINKCLICK:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

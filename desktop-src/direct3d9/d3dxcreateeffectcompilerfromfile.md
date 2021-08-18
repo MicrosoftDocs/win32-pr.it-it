@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0c054b31b1ab70d1378c794be13058204b994ee2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f955c62bed0e449ddc2f9c9b1e4d7fe1c57df388f7ae99647a6b6cbce9d4fa48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857261"
 ---
 # <a name="d3dxcreateeffectcompilerfromfile-function"></a>Funzione D3DXCreateEffectCompilerFromFile
 
@@ -68,7 +68,7 @@ Matrice facoltativa **con terminazione NULL** di [**strutture D3DXMACRO**](d3dxm
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione \# delle direttive include. Se questo valore è **NULL,** include verrà rispettato durante la compilazione da un file o causerà un errore durante la compilazione \# da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione \# delle direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usar
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di compilazione identificate da vari flag (vedere [Flag D3DXSHADER](d3dxshader-flags.md)). Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Effect-Compiler Tool](../direct3dtools/fxc.md) .
+Opzioni di compilazione identificate da vari flag (vedere [Flag D3DXSHADER](d3dxshader-flags.md)). Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Strumento di compilazione effetti.](../direct3dtools/fxc.md)
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati LPCTSTR viene risolto in LPCSTR.
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXCreateEffectCompilerFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateEffectCompilerFromFileA perché vengono usate stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXCreateEffectCompilerFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateEffectCompilerFromFileA perché vengono usate stringhe ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -126,7 +126,7 @@ L'impostazione del compilatore determina anche la versione della funzione. Se è
 
 <dl> <dt>
 
-[Funzioni di effetto](dx9-graphics-reference-effects-functions.md)
+[Funzioni degli effetti](dx9-graphics-reference-effects-functions.md)
 </dt> <dt>
 
 [**D3DXCreateEffectCompiler**](d3dxcreateeffectcompiler.md)

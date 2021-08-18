@@ -1,5 +1,5 @@
 ---
-description: Richiede che lo stato della macchina virtuale venga modificato in un valore specificato.
+description: Richiede che lo stato della macchina virtuale sia impostato sul valore specificato.
 ms.assetid: 87BE4C7D-604B-4F8D-B4DC-89BD563E3999
 title: Metodo RequestStateChange della classe Msvm_ComputerSystem
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 291d72797b1ee765507a3d23921cd518cf605354
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3851d32b43bc7ebd170a1179ecda1e25f86e43ddaf819453a4af6998e2f7efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014349"
 ---
-# <a name="requeststatechange-method-of-the-msvm_computersystem-class"></a>Metodo RequestStateChange della classe MSVM \_ ComputerSystem
+# <a name="requeststatechange-method-of-the-msvm_computersystem-class"></a>Metodo RequestStateChange della classe Msvm \_ ComputerSystem
 
-Richiede che lo stato della macchina virtuale venga modificato in un valore specificato. Richiamando il metodo **RequestStateChange** più volte, le richieste precedenti potrebbero essere sovrascritte o perse. Questo metodo è supportato solo per le istanze della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) che rappresentano una macchina virtuale.
+Richiede che lo stato della macchina virtuale sia impostato sul valore specificato. Se si richiama **il metodo RequestStateChange** più volte, le richieste precedenti potrebbero essere sovrascritte o perse. Questo metodo è supportato solo per le istanze della [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) che rappresentano una macchina virtuale.
 
-Mentre è in corso la modifica dello stato, la proprietà **RequestedState** viene modificata nel valore del parametro *RequestedState* .
+Mentre è in corso la modifica dello stato, la **proprietà RequestedState** viene impostata sul valore del *parametro RequestedState.*
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt16**
+Tipo: **uint16**
 
-Nuovo stato. I valori maggiori di 32767 sono valori **DMTF** proposti e sono soggetti a modifiche.
+Nuovo stato. I valori maggiori di 32767 sono valori **proposti da DMTF** e sono soggetti a modifiche.
 
-I valori possibili sono i seguenti:
+Ecco i valori possibili:
 
 <dt>
 
@@ -61,7 +61,7 @@ I valori possibili sono i seguenti:
 
 </dt> <dd>
 
-Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = other.
+Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Other.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = Enabled.
+Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Enabled.
 
 </dd> <dt>
 
@@ -83,18 +83,18 @@ Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = disabled.
+Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Disabled.
 
 </dd> <dt>
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-<span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>**Arresto** (4)
+<span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>**Arresta** (4)
 
 
 </dt> <dd>
 
-Valido solo nella versione 1 (V1) di Hyper-V. La macchina virtuale verrà arrestata tramite il servizio di arresto. Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = ShuttingDown.
+Valido solo nella versione 1 (V1) di Hyper-V. La macchina virtuale viene arrestata tramite il servizio di arresto. Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = ShuttingDown.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Valido solo nella versione 1 (V1) di Hyper-V. La macchina virtuale verrà arrest
 
 </dt> <dd>
 
-Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = Enabled ma offline.
+Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Abilitato ma offline.
 
 </dd> <dt>
 
@@ -125,12 +125,12 @@ Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Mettere in stato** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Inattiva** (9)
 
 
 </dt> <dd>
 
-Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = mettere in stato, abilitato ma sospeso.
+Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Inattivo, Abilitato ma sospeso.
 
 </dd> <dt>
 
@@ -141,18 +141,18 @@ Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Transizione di stato da **disattivata** o **salvata** in **esecuzione**.
+Transizione di stato da **Disattivato** o **Salvato a** **In esecuzione.**
 
 </dd> <dt>
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Reimposta** (11)
+<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Reset** (11)
 
 
 </dt> <dd>
 
-Ripristinare la macchina virtuale. Corrisponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = reset.
+Reimpostare la macchina virtuale. Corrisponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Reset.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Ripristinare la macchina virtuale. Corrisponde a [**CIM \_ EnabledLogicalElement
 
 </dt> <dd>
 
-Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateSaving**.
+Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateSaving.**
 
 </dd> <dt>
 
@@ -174,18 +174,18 @@ Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateSaving**.
 
 </dt> <dd>
 
-Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStatePausing**.
+Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStatePausing.**
 
 </dd> <dt>
 
 <span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>
 
-<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Ripresa** in (32777)
+<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Ripresa** (32777)
 
 
 </dt> <dd>
 
-Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateResuming**. Transizione di stato da **sospesa** a **in esecuzione**.
+Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateResuming**. Transizione di stato da **Sospeso a** **In esecuzione.**
 
 </dd> <dt>
 
@@ -196,7 +196,7 @@ Nella versione 1 (V1) di Hyper-V corrisponde a **EnabledStateResuming**. Transiz
 
 </dt> <dd>
 
-Corrisponde a **EnabledStateFastSuspend**.
+Corrisponde a **EnabledStateFastSuspend.**
 
 </dd> <dt>
 
@@ -207,11 +207,11 @@ Corrisponde a **EnabledStateFastSuspend**.
 
 </dt> <dd>
 
-Corrisponde a **EnabledStateFastSuspending**. Transizione di stato dall' **esecuzione** a **FastSaved**.
+Corrisponde a **EnabledStateFastSuspending.** Transizione di stato **da In esecuzione** a **FastSaved.**
 
 </dd> </dl>
 
-Questi valori rappresentano stati critici:
+Questi valori rappresentano gli stati critici:
 
 <dt>
 
@@ -299,19 +299,19 @@ Questi valori rappresentano stati critici:
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Riferimento facoltativo a un oggetto [**MSVM \_ ConcreteJob**](msvm-concretejob.md) restituito se l'operazione viene eseguita in modo asincrono. Se presente, il riferimento restituito può essere usato per monitorare lo stato di avanzamento e ottenere il risultato del metodo.
+Riferimento facoltativo a un [**oggetto Msvm \_ ConcreteJob**](msvm-concretejob.md) restituito se l'operazione viene eseguita in modo asincrono. Se presente, il riferimento restituito può essere utilizzato per monitorare lo stato di avanzamento e ottenere il risultato del metodo .
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **DateTime**
+Tipo: **datetime**
 
 Questo parametro non viene usato.
 
@@ -319,7 +319,7 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei valori seguenti.
 
@@ -327,8 +327,8 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Codice/valore restituito                                                                                                                                                                       | Descrizione                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**Completato senza errori**</dt> <dt>0</dt> </dl>                           | Esito positivo.<br/>                                                                |
-| <dl> <dt>**Parametri del metodo controllati-transizione avviata**</dt> <dt>4096</dt> </dl> | La transizione è asincrona.<br/>                                         |
+| <dl> <dt>**Completata senza errori**</dt> <dt>0</dt> </dl>                           | Operazione completata.<br/>                                                                |
+| <dl> <dt>**Parametri del metodo verificati - Transizione avviata**</dt> <dt>4096</dt> </dl> | La transizione è asincrona.<br/>                                         |
 | <dl> <dt>**Accesso negato**</dt> <dt>32769</dt> </dl>                                 | Accesso negato.<br/>                                                          |
 | <dl> <dt></dt><dt>32768</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32770</dt> </dl>                                                  |                                                                                    |
@@ -336,7 +336,7 @@ Questo metodo restituisce uno dei valori seguenti.
 | <dl> <dt></dt><dt>32772</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32773</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32774</dt> </dl>                                                  |                                                                                    |
-| <dl> <dt>**Stato non valido per l'operazione**</dt> <dt>32775</dt> </dl>              | Il valore specificato nel parametro *RequestedState* non è supportato.<br/> |
+| <dl> <dt>**Stato non valido per questa operazione**</dt> <dt>32775</dt> </dl>              | Il valore specificato nel *parametro RequestedState* non è supportato.<br/> |
 | <dl> <dt></dt><dt>32776</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32777</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32778</dt> </dl>                                                  |                                                                                    |
@@ -347,14 +347,14 @@ Questo metodo restituisce uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ ComputerSystem di MSVM**](msvm-computersystem.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio C# seguente viene avviata o disabilitata una macchina virtuale. Le utilità a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+L'esempio C# seguente avvia o disabilita una macchina virtuale. Le utilità a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Per funzionare correttamente, il codice seguente deve essere eseguito sul server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
+> Per funzionare correttamente, il codice seguente deve essere eseguito nel server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
 
  
 
@@ -449,10 +449,10 @@ namespace HyperVSamples
 
 
 
-Nell'esempio seguente Visual Basic Scripting Edition (VBScript) viene avviata o disabilitata una macchina virtuale.
+Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene avviata o disabilitata una macchina virtuale.
 
 > [!IMPORTANT]
-> Per funzionare correttamente, il codice seguente deve essere eseguito sul server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
+> Per funzionare correttamente, il codice seguente deve essere eseguito nel server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
 
  
 
@@ -630,10 +630,10 @@ End Function
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -642,7 +642,7 @@ End Function
 
 <dl> <dt>
 
-[**\_ComputerSystem MSVM**](msvm-computersystem.md)
+[**Msvm \_ ComputerSystem**](msvm-computersystem.md)
 </dt> </dl>
 
  

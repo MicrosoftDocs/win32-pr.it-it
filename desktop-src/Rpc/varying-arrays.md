@@ -1,21 +1,21 @@
 ---
 title: Matrici variabili
-description: In MIDL, le matrici variabili hanno dimensioni fisse. Consentono ai client di passare parti diverse di matrici dai client ai server. La dimensione della parte della matrice può variare dalla chiamata alla chiamata. Tuttavia, la dimensione della matrice complessiva è fissa.
+description: In MIDL le dimensioni delle matrici variabili sono fisse. Consentono ai client di passare parti diverse di matrici dai client ai server. Le dimensioni della parte della matrice possono variare da una chiamata all'altro. Tuttavia, le dimensioni della matrice complessiva sono fisse.
 ms.assetid: 31c4bc63-de55-4937-832e-8dde9bcc47b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b2d79ee37f3e366bbf232b362306f78ca6ada4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3919eed28ef7a9c888d7c23e4ebe12a1db39c97b18fa325c6daf8a4cd62d6554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010549"
 ---
 # <a name="varying-arrays"></a>Matrici variabili
 
-In MIDL, le matrici variabili hanno dimensioni fisse. Consentono ai client di passare parti diverse di matrici dai client ai server. La dimensione della parte della matrice può variare dalla chiamata alla chiamata. Tuttavia, la dimensione della matrice complessiva è fissa.
+In MIDL le dimensioni delle matrici variabili sono fisse. Consentono ai client di passare parti diverse di matrici dai client ai server. Le dimensioni della parte della matrice possono variare da una chiamata all'altro. Tuttavia, le dimensioni della matrice complessiva sono fisse.
 
-Ad esempio, nell'esempio seguente viene illustrata la definizione di una procedura remota in un'interfaccia in un file MIDL. La dimensione della matrice che il client passa al server è fissata dalle dimensioni della matrice di costanti \_ . L'interfaccia specifica la parte della matrice che il client passa al server nei parametri FirstElement e chunkSize.
+Ad esempio, nell'esempio seguente viene illustrata la definizione di una procedura remota in un'interfaccia in un file MIDL. La dimensione della matrice che il client passa al server è fissata dalla costante ARRAY \_ SIZE. L'interfaccia specifica la parte della matrice che il client passa al server nei parametri firstElement e chunkSize.
 
 ``` syntax
 [
@@ -36,9 +36,9 @@ interface MyInterface
 }
 ```
 
-La definizione dell'interfaccia USA prima l'attributo MIDL \[ [**\_**](/windows/desktop/Midl/first-is) \] per specificare il numero di indice del primo elemento nella parte della matrice che il client passa al server. L' \[ [**attributo \_ length**](/windows/desktop/Midl/length-is) indica \] il numero totale di elementi della matrice passati dal client. Per altre informazioni su questi attributi MIDL, vedere [attributi di matrice](array-attributes.md).
+La definizione dell'interfaccia usa prima l'attributo MIDL per specificare il numero di indice del primo elemento nella parte della matrice che il client passa al \[ [**\_**](/windows/desktop/Midl/first-is) \] server. \[ [**\_ L'attributo length**](/windows/desktop/Midl/length-is) è che specifica il numero totale di elementi della matrice passati dal \] client. Per altre informazioni su questi attributi MIDL, vedere [Attributi di matrice.](array-attributes.md)
 
-Nel frammento di codice seguente viene illustrato come un client può richiamare la procedura remota definita nel file MIDL precedente.
+Il frammento di codice seguente illustra come un client può richiamare la procedura remota definita nel file MIDL precedente.
 
 
 ```C++
@@ -64,8 +64,8 @@ MyRemoteProc(
 
 
 
-Questo frammento chiama due volte la procedura remota MyRemoteProc. Alla prima chiamata passa gli elementi della matrice numerati da 20 a 119, come indicato dai valori nelle variabili firstArrayElementNumber e totalElementsPassed. Alla seconda chiamata, il client passa gli elementi della matrice numerati da 120 a 319.
+Questo frammento chiama la procedura remota MyRemoteProc due volte. Alla prima chiamata passa gli elementi della matrice numerati da 20 a 119, come indicato dai valori nelle variabili firstArrayElementNumber e totalElementsPassed. Nella seconda chiamata, il client passa gli elementi della matrice numerati da 120 a 319.
 
- 
+ 
 
- 
+ 

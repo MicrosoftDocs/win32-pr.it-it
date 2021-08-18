@@ -1,19 +1,19 @@
 ---
-description: Il messaggio di riga \_ AGENTSESSIONSTATUS viene inviato quando lo stato di una sessione dell'agente ACD viene modificato in un gestore dell'agente per il quale l'applicazione dispone attualmente di una linea aperta. Questo messaggio viene generato tramite la funzione lineProxyMessage.
+description: Il messaggio LINE AGENTSESSIONSTATUS viene inviato quando lo stato di una sessione dell'agente ACD cambia in un gestore dell'agente per cui l'applicazione ha \_ attualmente una riga aperta. Questo messaggio viene generato usando la funzione lineProxyMessage.
 ms.assetid: bb9d2292-8c41-4557-989e-6c5eb785313f
-title: Messaggio di LINE_AGENTSESSIONSTATUS (TAPI. h)
+title: LINE_AGENTSESSIONSTATUS messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d53c14290dfb6bda3889e7d2b87d8d3ca5e651c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 25209abda7cfec3864c45bfd58a35a9fad21a1aa5e5645669a7fdad6ec907d5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003219"
 ---
-# <a name="line_agentsessionstatus-message"></a>\_Messaggio linea AGENTSESSIONSTATUS
+# <a name="line_agentsessionstatus-message"></a>MESSAGGIO \_ LINE AGENTSESSIONSTATUS
 
-Il messaggio di **riga \_ AGENTSESSIONSTATUS** viene inviato quando lo stato di una sessione dell'agente ACD viene modificato in un gestore dell'agente per il quale l'applicazione dispone attualmente di una linea aperta. Questo messaggio viene generato tramite la funzione [**lineProxyMessage**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage) .
+Il **messaggio LINE \_ AGENTSESSIONSTATUS** viene inviato quando lo stato di una sessione dell'agente ACD cambia in un gestore dell'agente per cui l'applicazione ha attualmente una riga aperta. Questo messaggio viene generato usando la [**funzione lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
 
 ```C++
@@ -29,7 +29,7 @@ Il messaggio di **riga \_ AGENTSESSIONSTATUS** viene inviato quando lo stato di 
 *dwDevice* 
 </dt> <dd>
 
-Handle dell'applicazione per il dispositivo della linea in cui è stato modificato lo stato della sessione dell'agente.
+Handle dell'applicazione per il dispositivo linea in cui è stato modificato lo stato della sessione dell'agente.
 
 </dd> <dt>
 
@@ -43,23 +43,23 @@ Istanza di callback fornita all'apertura della riga.
 *dwParam1* 
 </dt> <dd>
 
-Handle della sessione di Agent il cui stato è stato modificato.
+Handle della sessione dell'agente il cui stato è stato modificato.
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Specifica lo stato della sessione dell'agente che è stato modificato. Può essere una o più **righe \_ AGENTSESSIONSTATUS**.
+Specifica lo stato della sessione dell'agente che è stato modificato. Può essere uno o più di **LINE \_ AGENTSESSIONSTATUS**.
 
 </dd> <dt>
 
 *dwParam3* 
 </dt> <dd>
 
-Se *dwParam2* include il \_ bit di stato LINEAGENTSTATUSEX, *dwParam3* indica il nuovo valore dello stato dell'agente, che corrisponde a una [**delle \_ costanti LINEAGENTSTATEEX**](lineagentstateex--constants.md).
+Se *dwParam2* include il bit LINEAGENTSTATUSEX \_ STATE, *dwParam3* indica il nuovo valore dello stato dell'agente, che è una delle costanti [**\_ LINEAGENTSTATEEX**](lineagentstateex--constants.md).
 
-In caso contrario, *dwParam3* è impostato su zero.
+In caso contrario, *dwParam3* viene impostato su zero.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ In caso contrario, *dwParam3* è impostato su zero.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Avviare il rendering di una mappa dell'ambiente parabolica.
+description: Avviare il rendering di una mappa dell'ambiente parabolico.
 ms.assetid: 80456084-f5f5-4dfe-805a-7eaaf7f7cb2a
-title: 'Metodo ID3DXRenderToEnvMap:: BeginParabolic (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::BeginParabolic (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5a818abb424fa55bc01eca7ce9f64bc5629a7d50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7954c112c9d8f660bb328a05b259f188d144801adeacd41e29e1a179acdc8414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628941"
 ---
-# <a name="id3dxrendertoenvmapbeginparabolic-method"></a>Metodo ID3DXRenderToEnvMap:: BeginParabolic
+# <a name="id3dxrendertoenvmapbeginparabolic-method"></a>Metodo ID3DXRenderToEnvMap::BeginParabolic
 
-Avviare il rendering di una mappa dell'ambiente parabolica.
+Avviare il rendering di una mappa dell'ambiente parabolico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT BeginParabolic(
 
 <dl> <dt>
 
-*pTexZPos* \[ in\]
+*pTexZPos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama di rendering positiva.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama di rendering positiva.
 
 </dd> <dt>
 
-*pTexZNeg* \[ in\]
+*pTexZNeg* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama di rendering negativa.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama di rendering negativa.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL. E \_ non riescono
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL. E \_ FAIL
 
 ## <a name="remarks"></a>Commenti
 
-Per creare le facce, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvmap--face.md) .
+Vedere [**ID3DXRenderToEnvMap::Face**](id3dxrendertoenvmap--face.md) per disegnare i visi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Per creare le facce, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvmap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -87,7 +87,7 @@ Per creare le facce, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvmap
 [ID3DXRenderToEnvMap](id3dxrendertoenvmap.md)
 </dt> <dt>
 
-[**ID3DXRenderToEnvMap:: end**](id3dxrendertoenvmap--end.md)
+[**ID3DXRenderToEnvMap::End**](id3dxrendertoenvmap--end.md)
 </dt> </dl>
 
  

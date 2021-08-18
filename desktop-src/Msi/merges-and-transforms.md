@@ -1,49 +1,49 @@
 ---
-description: Il Windows Installer conserva tutte le informazioni sull'installazione di in un database relazionale. È possibile modificare il database e, di conseguenza, l'installazione utilizzando le trasformazioni e le unioni.
+description: Il Windows installer mantiene tutte le informazioni sull'installazione in un database relazionale. È possibile modificare questo database e quindi l'installazione usando trasformazioni e unioni.
 ms.assetid: 32163e06-d03d-4b65-b744-62f306f2100d
 title: Unioni e trasformazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aec6314e81afb5afa9d74346b64fe3129ba5ed30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9779cd901df349b80dba84f056104c316810f8a3f67b19cdd4622dd68480ce1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012979"
 ---
 # <a name="merges-and-transforms"></a>Unioni e trasformazioni
 
-Il Windows Installer conserva tutte le informazioni sull'installazione di in un database relazionale. È possibile modificare il database e, di conseguenza, l'installazione utilizzando le trasformazioni e le unioni.
+Il Windows installer mantiene tutte le informazioni sull'installazione in un database relazionale. È possibile modificare questo database e quindi l'installazione usando trasformazioni e unioni.
 
 ## <a name="transforms"></a>Trasformazioni
 
-Una [trasformazione del database](database-transforms.md) aggiunge o sostituisce gli elementi nel database originale. Una trasformazione, ad esempio, può modificare tutto il testo dell'interfaccia utente di un'applicazione da Francese a inglese.
+Una [trasformazione del database](database-transforms.md) aggiunge o sostituisce gli elementi nel database originale. Ad esempio, una trasformazione può modificare tutto il testo nell'interfaccia utente di un'applicazione dal francese all'inglese.
 
-Gli utilizzi primari per le trasformazioni includono:
+Gli usi primari per le trasformazioni includono:
 
 -   Personalizzazione dei pacchetti di installazione di base per determinati gruppi di utenti.
 
-    Le trasformazioni possono essere utilizzate per incapsulare le varie personalizzazioni di un singolo pacchetto di base richieste da gruppi di utenti diversi. Ad esempio, questa operazione è utile nelle organizzazioni in cui i reparti del supporto Finance e del personale richiedono installazioni diverse di un determinato prodotto. Il pacchetto di base di un prodotto può essere disponibile per tutti gli utenti in un punto di installazione amministrativa con personalizzazioni appropriate distribuite a ogni gruppo di utenti separatamente.
+    Le trasformazioni possono essere usate per incapsulare le varie personalizzazioni di un singolo pacchetto di base richieste da diversi gruppi di utenti. Ad esempio, ciò è utile nelle organizzazioni in cui i reparti di supporto finanziario e del personale richiedono installazioni diverse di un determinato prodotto. Il pacchetto di base di un prodotto può essere disponibile a tutti gli utenti in un unico punto di installazione amministrativa con personalizzazioni appropriate distribuite separatamente a ogni gruppo di utenti.
 
--   Sincronizzazione di applicazioni in più lingue.
+-   Sincronizzazione delle applicazioni tra più lingue.
 
-    Le trasformazioni sono utili per mantenere i pacchetti creati in posizioni ampiamente separate sincronizzate durante la creazione. Se, ad esempio, un aggiornamento viene sviluppato per la prima volta in una versione in lingua inglese di un'applicazione presente in inglese e francese, è possibile applicare una trasformazione alla versione in lingua inglese aggiornata che la converte in una versione francese aggiornata.
+    Le trasformazioni sono utili per mantenere sincronizzati i pacchetti creati in posizioni ampiamente separate durante la creazione. Ad esempio, se un aggiornamento viene sviluppato per la prima volta per una versione inglese di un'applicazione esistente in inglese e francese, è possibile applicare una trasformazione alla versione inglese aggiornata che la converte in una versione francese aggiornata.
 
-    È possibile applicare più trasformazioni a un pacchetto di base e quindi applicarle in tempo reale durante l'installazione. Questo consente di estendere le funzionalità del programma di installazione per creare pacchetti personalizzati e fornisce un meccanismo per assegnare in modo efficiente le installazioni più appropriate a diversi gruppi di utenti.
+    È possibile applicare più trasformazioni a un pacchetto di base e quindi applicarsi in tempo reale durante l'installazione. In questo modo si estendono le funzionalità del programma di installazione per creare pacchetti personalizzati e viene fornito un meccanismo per assegnare in modo efficiente le installazioni più appropriate a gruppi diversi di utenti.
 
--   Applicazione di patch.
+-   Applicazione di patch alle applicazioni.
 
-    Le trasformazioni possono essere utilizzate per applicare una correzione secondaria a un'applicazione che non richiede un aggiornamento importante. Per ulteriori informazioni sulle patch, vedere la pagina relativa ai [pacchetti di patch](patch-packages.md).
+    Le trasformazioni possono essere usate per applicare una correzione secondaria a un'applicazione che non richiede un aggiornamento importante. Per altre informazioni sulle patch, vedere [Patch Packages](patch-packages.md).
 
 ## <a name="merges"></a>Unioni
 
-Un'Unione combina due database in un unico database e aggiunge, anziché sostituire, le informazioni. Se le stesse informazioni sono presenti in entrambi i database, si verifica un conflitto di merge. Le unioni sono utili per i team di sviluppo perché consentono a un'applicazione di grandi dimensioni di essere divisa in parti che possono essere ricombinate in un secondo momento. Ad esempio, gli elementi del database per l'installazione di un nuovo componente possono essere sviluppati separatamente e successivamente Uniti nel database di installazione principale. Per altre informazioni, vedere [merge modules](merge-modules.md).
+Un'unione combina due database in un unico database e aggiunge, anziché sostituire, informazioni. Se in entrambi i database sono presenti le stesse informazioni, si verifica un conflitto di merge. Le unioni sono utili per i team di sviluppo perché consentono di suddividere un'applicazione di grandi dimensioni in parti che possono essere ricombinate in un secondo momento. Ad esempio, gli elementi del database per l'installazione di un nuovo componente possono essere sviluppati separatamente e successivamente uniti nel database di installazione principale. Per altre informazioni, vedere [Merge Modules](merge-modules.md).
 
-Un team di sviluppo può applicare un'operazione di Unione nel modo seguente:
+Un team di sviluppo potrebbe applicare un'operazione di unione nel modo seguente:
 
-1.  Separa i gruppi e lavora simultaneamente su componenti diversi di un'applicazione di grandi dimensioni.
-2.  Ogni gruppo di sviluppo compila quindi un database con le informazioni di installazione per il proprio componente, senza preoccuparsi degli altri componenti dell'applicazione.
-3.  Una volta completato lo sviluppo di un componente, il database del componente può essere Unito nel database di installazione principale per l'intera applicazione.
+1.  Separare in gruppi e lavorare contemporaneamente su componenti diversi di un'applicazione di grandi dimensioni.
+2.  Ogni gruppo di sviluppo popola quindi un database con le informazioni di installazione per il proprio componente, senza preoccuparsi degli altri componenti dell'applicazione.
+3.  Al termine dello sviluppo di un componente, il database di tale componente può essere unito al database di installazione principale per l'intera applicazione.
 
  
 

@@ -46,7 +46,7 @@ HRESULT GetPassDesc(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Passare l'handle. Vedere [Handle (Direct3D 9)](handles.md).
+Handle di passaggio. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Passare l'handle. Vedere [Handle (Direct3D 9)](handles.md).
 
 Tipo: **[ **D3DXPASS \_ DESC**](d3dxpass-desc.md)\***
 
-Restituisce una descrizione del passaggio specificato. Vedere [**D3DXPASS \_ DESC**](d3dxpass-desc.md).
+Restituisce una descrizione del passaggio specificato. Vedere [**D3DXPASS \_ DESC.**](d3dxpass-desc.md)
 
 </dd> </dl>
 

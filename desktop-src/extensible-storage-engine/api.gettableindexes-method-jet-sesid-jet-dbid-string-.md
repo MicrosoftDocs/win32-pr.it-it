@@ -66,7 +66,7 @@ public static IEnumerable<IndexInfo> GetTableIndexes(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 

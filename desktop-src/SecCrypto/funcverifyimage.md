@@ -1,7 +1,7 @@
 ---
 description: Utilizzato da un provider del servizio di crittografia (CSP) per verificare la firma di una DLL.
 ms.assetid: 477a6c9f-05ac-485a-8b27-5605fc11c1d6
-title: Puntatore a funzione CRYPT_VERIFY_IMAGE (Cspdk. h)
+title: CRYPT_VERIFY_IMAGE puntatore a funzione (Cspdk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - UserDefined
 api_location:
 - Cspdk.h
-ms.openlocfilehash: e95414d09a7869aa4a2ef512fcff2765ba4491bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b33e6e627c87840e4adb7615f7e3ca5932a7402a3b3ae7110be51c0847a5f67f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006679"
 ---
-# <a name="crypt_verify_image-function-pointer"></a>\_Puntatore alla \_ funzione di verifica immagine Crypt
+# <a name="crypt_verify_image-function-pointer"></a>Puntatore a funzione CRYPT \_ VERIFY \_ IMAGE
 
-La funzione di callback **FuncVerifyImage** viene utilizzata da un [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) per verificare la firma di una dll.
+La funzione di callback **FuncVerifyImage** viene usata da un [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) per verificare la firma di una DLL.
 
-Tutte le DLL ausiliarie in cui un CSP effettua chiamate di funzione devono essere firmate nello stesso modo (e con la stessa chiave) della DLL CSP primaria. Per garantire la firma, le DLL ausiliarie devono essere caricate in modo dinamico tramite la funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) . Ma prima del caricamento della DLL, è necessario verificare la firma della DLL. Il CSP esegue questa verifica chiamando la funzione **FuncVerifyImage** , come illustrato nell'esempio riportato di seguito.
+Tutte le DLL ausiliarie in cui un CSP effettua chiamate di funzione devono essere firmate nello stesso modo (e con la stessa chiave) della DLL CSP primaria. Per garantire questa firma, le DLL ausiliarie devono essere caricate dinamicamente usando la [**funzione LoadLibrary.**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) Prima del caricamento della DLL, tuttavia, è necessario verificare la firma della DLL. Il CSP esegue questa verifica chiamando la **funzione FuncVerifyImage,** come illustrato nell'esempio seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,27 +44,27 @@ typedef BOOL ( WINAPI *CRYPT_VERIFY_IMAGE)(
 
 <dl> <dt>
 
-*lpszImage* \[ in\]
+*lpszImage* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo di una stringa con terminazione null che contiene il percorso e il nome file della DLL per cui verificare la firma.
+Indirizzo di una stringa con terminazione Null contenente il percorso e il nome file della DLL per cui verificare la firma.
 
 </dd> <dt>
 
-*pbSigData* \[ in\]
+*pbSigData* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo di un buffer contenente la firma.
+Indirizzo di un buffer che contiene la firma.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo, **false** in caso di esito negativo.
+Restituisce **TRUE** se la funzione ha esito positivo, **FALSE** se ha esito negativo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare la funzione di callback **FuncVerifyImage** per verificare la firma di una dll prima che venga caricata da un CSP.
+Nell'esempio seguente viene illustrato come usare la funzione di callback **FuncVerifyImage** per verificare la firma di una DLL prima che venga caricata da un CSP.
 
 
 ```C++
@@ -103,9 +103,9 @@ if(RCRYPT_FAILED(ProvVerifyImage
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Cspdk. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Cspdk.h</dt> </dl> |
 
 
 

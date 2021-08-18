@@ -1,6 +1,6 @@
 ---
 title: WeeklyTrigger.RandomDelay - proprietà
-description: Per lo scripting, ottiene o imposta un tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger. | WeeklyTrigger.RandomDelay - proprietà
+description: Per lo scripting, ottiene o imposta un tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. | WeeklyTrigger.RandomDelay - proprietà
 ms.assetid: 711b188d-b283-4c99-b43d-644f39a31cdc
 keywords:
 - Proprietà RandomDelay Utilità di pianificazione
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b320b0def6f8e9cb0dabff9ff04bdfea3d858e
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: bc17260b33b4f5ca833ae0f2e322a99205b690ad8d54779ea6471db246cc056b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001779"
 ---
 # <a name="weeklytriggerrandomdelay-property"></a>WeeklyTrigger.RandomDelay - proprietà
 
-Per lo scripting, ottiene o imposta un tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger.
+Per lo scripting, ottiene o imposta un tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,8 +46,8 @@ Tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. Il form
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

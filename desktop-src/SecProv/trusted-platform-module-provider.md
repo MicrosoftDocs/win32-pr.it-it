@@ -1,19 +1,19 @@
 ---
-description: Il provider Trusted Platform Module viene utilizzato per gestire un Trusted Platform Module (TPM).
+description: Il provider Trusted Platform Module viene usato per gestire un Trusted Platform Module (TPM).
 ms.assetid: ed230fee-03d4-4430-bba8-454d5da050dd
-title: Provider di Trusted Platform Module
+title: Trusted Platform Module Provider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c09afe272a1017d04e2bd868323b6773ec1b9fe5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b32d847d4144d22fb50ad5674110a33f4cc9f68e18d102ce9e820fa032b907ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004239"
 ---
-# <a name="trusted-platform-module-provider"></a>Provider di Trusted Platform Module
+# <a name="trusted-platform-module-provider"></a>Trusted Platform Module Provider
 
-Il provider Trusted Platform Module viene utilizzato per gestire un Trusted Platform Module (TPM).
+Il provider Trusted Platform Module viene usato per gestire un Trusted Platform Module (TPM).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Il provider Trusted Platform Module viene utilizzato per gestire un Trusted Plat
 
 | Argomento                                      | Descrizione                                                                                                                            |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_TPM Win32**](win32-tpm.md)<br/> | rappresenta il Trusted Platform Module (TPM), un chip di sicurezza hardware che fornisce una radice di attendibilità per un sistema di computer.<br/> |
+| [**Win32 \_ Tpm**](win32-tpm.md)<br/> | rappresenta il Trusted Platform Module (TPM), un chip di sicurezza hardware che fornisce una radice di attendibilità per un computer.<br/> |
 
 
 
