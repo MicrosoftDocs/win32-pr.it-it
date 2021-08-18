@@ -1,10 +1,10 @@
 ---
-title: Struttura MPCLEAN_PRECHECK_DATA (MpClient. h)
-description: Dati di notifica passati per pulire la funzione di callback di verifica.
+title: MPCLEAN_PRECHECK_DATA (MpClient.h)
+description: Dati di notifica passati alla funzione di callback di controllo preliminare pulita.
 ms.assetid: 65B3B116-6E83-46F5-AE2B-92A41AE39480
 keywords:
-- Struttura MPCLEAN_PRECHECK_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPCLEAN_PRECHECK_DATA
+- MPCLEAN_PRECHECK_DATA funzionalità dell'ambiente Windows legacy
+- PMPCLEAN_PRECHECK_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3d67e0c71c95db49b633feeb3048cc9f104b2f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc272ed230a67811497f0eebb99624d74369c8c55419fba970f326fba502e8b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747927"
 ---
-# <a name="mpclean_precheck_data-structure"></a>\_Struttura dei dati di PREVERIFICA MPCLEAN \_
+# <a name="mpclean_precheck_data-structure"></a>Struttura MPCLEAN \_ PRECHECK \_ DATA
 
-Dati di notifica passati per pulire la funzione di callback di verifica.
+Dati di notifica passati alla funzione di callback di controllo preliminare pulita.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ typedef struct tagMPCLEAN_PRECHECK_DATA {
 **BlockedResourceInfo**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Informazioni sulle risorse per la risorsa bloccata. Ad esempio, quando lo stato di avanzamento è **MPNOTIFY la \_ Preverifica della \_ risorsa \_ bloccata**. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
+Informazioni sulla risorsa bloccata. Ad esempio, quando lo stato di avanzamento **è MPNOTIFY \_ PRECHECK \_ RESOURCE \_ BLOCKED**. Vedere [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> <dt>
 
-**\_informazioni PMPRESOURCE**
+**PMPRESOURCE \_ INFO**
 </dt> <dd>
 
 Tipo: **BlockingResourceInfo**
 
 </dd> <dd>
 
-Informazioni sulle risorse che stanno bloccando. Ad esempio, quando lo stato di avanzamento è **MPNOTIFY la \_ Preverifica della \_ risorsa \_ bloccata**. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
+Informazioni sulle risorse bloccate. Ad esempio, quando lo stato di avanzamento **è MPNOTIFY \_ PRECHECK \_ RESOURCE \_ BLOCKED**. Vedere [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Informazioni sulle risorse che stanno bloccando. Ad esempio, quando lo stato di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Informazioni sulle risorse che stanno bloccando. Ad esempio, quando lo stato di 
 
 <dl> <dt>
 
-[**\_informazioni MPRESOURCE**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> </dl>
 
  

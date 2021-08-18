@@ -1,25 +1,25 @@
 ---
-description: Di seguito è riportato un esempio di file di messaggio che può essere utilizzato per creare una DLL di sole risorse da utilizzare con l'esempio di servizio durante la scrittura di eventi nel registro eventi.
+description: Di seguito è riportato un file di messaggio di esempio che può essere usato per compilare una DLL di sola risorsa da usare con l'esempio di servizio durante la scrittura di eventi nel registro eventi.
 ms.assetid: d0d46041-5608-4abf-b833-7aae1744ef60
 title: Sample.mc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b34c87fad27b08671de57d7e329073df5a48579
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9244ce043f8c3696efd46866dd7f29246d13553a5bc9a4ec05281fd56dbc60d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889199"
 ---
 # <a name="samplemc"></a>Sample.mc
 
-Di seguito è riportato un esempio di file di messaggio che può essere utilizzato per creare una DLL di sole risorse da utilizzare con l'esempio di servizio durante la scrittura di eventi nel registro eventi.
+Di seguito è riportato un file di messaggio di esempio che può essere usato per compilare una DLL di sola risorsa da usare con l'esempio di servizio durante la scrittura di eventi nel registro eventi.
 
-Per compilare la DLL, attenersi alla procedura seguente:
+Per compilare la DLL, seguire questa procedura:
 
-1.  **MC-U sample.mc**
-2.  **esempio RC-r. RC**
-3.  **link-DLL-NOENTRY -out:sample.dll Sample. res**
+1.  **mc -U sample.mc**
+2.  **rc -r sample.rc**
+3.  **link -dll -noentry -out:sample.dll sample.res**
 
 ``` syntax
 MessageIdTypedef=DWORD

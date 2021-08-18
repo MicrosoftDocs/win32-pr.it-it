@@ -1,6 +1,6 @@
 ---
 title: Opzione /rpcss
-description: L'opzione /rpcss, se specificata, funziona come se fosse stato specificato l'attributo \_ enable allocate in tutte le operazioni dell'interfaccia. L'utilizzo di questo attributo non è consigliato.
+description: L'opzione /rpcss, se specificata, agisce come se l'attributo enable allocate fosse specificato \_ in tutte le operazioni dell'interfaccia. L'utilizzo di questo attributo non è consigliato.
 ms.assetid: a4507779-7d07-4517-8592-39f0d9460bc3
 keywords:
 - Opzione /rpcss MIDL
@@ -21,19 +21,19 @@ ms.locfileid: "118643741"
 ---
 # <a name="rpcss-switch"></a>Opzione /rpcss
 
-**L'opzione /rpcss,** se specificata, funziona come se fosse stato specificato l'attributo [**enable \_ allocate**](enable-allocate.md) in tutte le operazioni dell'interfaccia. L'utilizzo di questo attributo non è consigliato.
+**L'opzione /rpcss,** se specificata, agisce come se l'attributo [**enable \_ allocate**](enable-allocate.md) fosse specificato in tutte le operazioni dell'interfaccia. L'utilizzo di questo attributo non è consigliato.
 
 ``` syntax
 midl /rpcss
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-In modalità predefinita, il pacchetto RpcSs è abilitato solo se la procedura o l'interfaccia ha l'attributo [**enable \_ allocate**](enable-allocate.md) o se l'opzione **/rpcss** è specificata nella riga di comando. In **modalità /osf** lo stub sul lato server abilita il pacchetto di allocazione RpcSs.
+In modalità predefinita, il pacchetto RpcSs è abilitato solo se la procedura o l'interfaccia ha l'attributo [**enable \_ allocate**](enable-allocate.md) o l'opzione **/rpcss** è specificata nella riga di comando. In **modalità /osf,** lo stub sul lato server abilita il pacchetto di allocazione RpcSs.
 
 ## <a name="examples"></a>Esempio
 
@@ -43,7 +43,7 @@ In modalità predefinita, il pacchetto RpcSs è abilitato solo se la procedura o
 
 <dl> <dt>
 
-[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
+[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)

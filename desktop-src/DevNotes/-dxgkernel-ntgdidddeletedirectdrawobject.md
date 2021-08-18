@@ -1,7 +1,7 @@
 ---
 description: Elimina un oggetto dispositivo Microsoft DirectDraw in modalità kernel creato in precedenza.
 ms.assetid: 0b2e1bae-8291-4fe4-9528-980680906e0a
-title: Funzione NtGdiDdDeleteDirectDrawObject (Ntgdi. h)
+title: Funzione NtGdiDdDeleteDirectDrawObject (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 9ac10798f83fe7e1a07a0803dd29cfa9cd8b1c98
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 866624e35c5c05afa14692a2e83d1c15293af9435aa68deddf9c602b80820708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104125937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956550"
 ---
-# <a name="ntgdidddeletedirectdrawobject-function"></a>NtGdiDdDeleteDirectDrawObject (funzione)
+# <a name="ntgdidddeletedirectdrawobject-function"></a>Funzione NtGdiDdDeleteDirectDrawObject
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece il DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Elimina un oggetto dispositivo Microsoft DirectDraw in modalità kernel creato in precedenza.
 
@@ -53,11 +53,11 @@ Handle per l'oggetto dispositivo DirectDraw in modalità kernel.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'esito è positivo, la funzione restituisce **true**. in caso contrario, restituisce **false**.
+Se ha esito positivo, questa funzione restituisce **TRUE;** In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le API DirectDraw e [Direct3D](../direct3d10/d3d10-graphics-reference.md) . Questi costrutti astraggono il processo di creazione del dispositivo in modo semplificato e indipendente dal sistema operativo.
+È consigliabile che le applicazioni usino le API DirectDraw e [Direct3D](../direct3d10/d3d10-graphics-reference.md) per creare e gestire oggetti dispositivo grafico. Questi costrutti astrarno il processo di creazione del dispositivo in modo semplificato e indipendente dal sistema operativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le A
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le A
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> <dt>
 
 [**NtGdiDdCreateDirectDrawObject**](-dxgkernel-ntgdiddcreatedirectdrawobject.md)

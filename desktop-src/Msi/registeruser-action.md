@@ -15,7 +15,7 @@ ms.locfileid: "118626716"
 
 L'azione RegisterUser registra le informazioni utente con il programma di installazione per identificare l'utente di un prodotto.
 
-## <a name="sequence-restrictions"></a>Restrizioni di sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
 Non sono presenti restrizioni di sequenza.
 
@@ -25,7 +25,7 @@ Non sono presenti restrizioni di sequenza.
 
 | Campo | Descrizione dei dati dell'azione   |
 |-------|------------------------------|
-| \[1\] | Informazioni utente registrate. |
+| \[1\] | Informazioni sull'utente registrato. |
 
 
 
@@ -33,7 +33,7 @@ Non sono presenti restrizioni di sequenza.
 
 ## <a name="remarks"></a>Commenti
 
-L'azione RegisterUser non viene eseguita durante un'installazione amministrativa. Se l'identificatore di prodotto immesso dall'utente non è stato convalidato dall'azione [ValidateProductID](validateproductid-action.md), la [**proprietà ProductID**](productid.md) non viene impostata e questa azione non esegue alcuna operazione.
+L'azione RegisterUser non viene eseguita durante un'installazione amministrativa. Se l'identificatore di prodotto immesso dall'utente non è stato convalidato dall'azione [ValidateProductID](validateproductid-action.md), la proprietà [**ProductID**](productid.md) non è impostata e questa azione non esegue alcuna operazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

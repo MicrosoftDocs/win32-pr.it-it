@@ -1,6 +1,6 @@
 ---
 title: NM_NCHITTEST di notifica (rebar) (Commctrl.h)
-description: 'NM_NCHITTEST codice di notifica (rebar): inviato da un controllo rebar quando il controllo riceve un messaggio \_ WM NCHITTEST. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.'
+description: 'NM_NCHITTEST di notifica (rebar): inviato da un controllo Rebar quando il controllo riceve un messaggio \_ WM NCHITTEST. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.'
 ms.assetid: b345d83e-682d-4067-a783-689d64f9b7bc
 keywords:
 - NM_NCHITTEST di notifica (rebar) Windows controlli
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118410702"
 ---
-# <a name="nm_nchittest-rebar-notification-code"></a>Codice di notifica NM \_ NCHITTEST (rebar)
+# <a name="nm_nchittest-rebar-notification-code"></a>Codice \_ di notifica NM NCHITTEST (rebar)
 
-Inviato da un controllo rebar quando il controllo riceve un [**messaggio WM \_ NCHITTEST.**](/windows/desktop/inputdev/wm-nchittest) Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Inviato da un controllo Rebar quando il controllo riceve un [**messaggio \_ WM NCHITTEST.**](/windows/desktop/inputdev/wm-nchittest) Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_NCHITTEST
 *lParam* 
 </dt> <dd>
 
-Puntatore a [**una struttura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) che contiene informazioni sul codice di notifica. Il **membro dwItemSpec** contiene l'indice della banda su cui si è verificato il messaggio di hit test e il membro **pt** contiene le coordinate del mouse del messaggio di hit test.
+Puntatore a una [**struttura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) che contiene informazioni sul codice di notifica. Il **membro dwItemSpec contiene** l'indice della banda su cui si è verificato il messaggio di hit test e il membro **pt** contiene le coordinate del mouse del messaggio di hit test.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituire zero per consentire all'oggetto rebar di eseguire l'elaborazione predefinita del messaggio di hit test o restituire uno dei valori HT documentati in \* [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) per eseguire l'override dell'elaborazione dell'hit test predefinita.
+Restituire zero per consentire all'oggetto Rebar di eseguire l'elaborazione predefinita del messaggio di hit test oppure restituire uno dei valori HT documentati in \* [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) per eseguire l'override dell'elaborazione dell'hit test predefinita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Restituire zero per consentire all'oggetto rebar di eseguire l'elaborazione pred
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

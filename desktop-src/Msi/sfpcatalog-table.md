@@ -1,5 +1,5 @@
 ---
-description: La tabella SFPCatalog contiene i cataloghi usati da Windows Me.
+description: La tabella SFPCatalog contiene i cataloghi usati da Windows me.
 ms.assetid: e9dc65a9-4ec9-4310-b03a-a2c38720ca8c
 title: Tabella SFPCatalog
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118624892"
 ---
 # <a name="sfpcatalog-table"></a>Tabella SFPCatalog
 
-La tabella SFPCatalog contiene i cataloghi usati da Windows Me.
+La tabella SFPCatalog contiene i cataloghi usati da Windows me.
 
 La tabella SFPCatalog include le colonne seguenti.
 
@@ -36,7 +36,7 @@ La tabella SFPCatalog include le colonne seguenti.
 <span id="SFPCatalog"></span><span id="sfpcatalog"></span><span id="SFPCATALOG"></span>SFPCatalog
 </dt> <dd>
 
-Nome file breve per il catalogo. Poiché i cataloghi non hanno alcuna versione, il catalogo specificato in questa colonna può sovrascrivere un catalogo con lo stesso nome ed è già installato nel sistema locale. Vedere l'argomento relativo al controllo delle versioni dei [file Nessuno dei due file ha una versione](neither-file-has-a-version.md).
+Nome file breve per il catalogo. Poiché i cataloghi non hanno una versione, il catalogo specificato in questa colonna può sovrascrivere un catalogo con lo stesso nome ed è già installato nel sistema locale. Vedere l'argomento relativo al controllo delle versioni [dei file Nessuno dei due file ha una versione](neither-file-has-a-version.md).
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Dati binari per il catalogo.
 <span id="Dependency"></span><span id="dependency"></span><span id="DEPENDENCY"></span>Dipendenza
 </dt> <dd>
 
-Il catalogo specificato in questo campo è l'elemento padre del catalogo dipendente specificato nel campo SFPCatalog. Immettere il nome file breve del catalogo padre nel campo Dipendenza. Questo campo è una chiave nella colonna SFPCatalog. La corrispondenza delle dipendenze fa distinzione tra maiuscole e minuscole.
+Il catalogo specificato in questo campo è l'elemento padre del catalogo dipendente specificato nel campo SFPCatalog. Immettere il nome breve del file del catalogo padre nel campo Dipendenza. Questo campo è una chiave nella colonna SFPCatalog. La corrispondenza delle dipendenze fa distinzione tra maiuscole e minuscole.
 
 Se il campo Dipendenza fa riferimento a un altro record in questa tabella SFPCatalog, il catalogo padre viene installato prima del catalogo dipendente.
 
@@ -60,7 +60,7 @@ Se il campo Dipendenza fa riferimento a un catalogo padre non presente nel campo
 
 ## <a name="remarks"></a>Commenti
 
-[L'azione InstallSFPCatalogFile](installsfpcatalogfile-action.md) esegue una query sulla tabella [Component](component-table.md), sulla tabella [File](file-table.md), sulla [tabella FileSFPCatalog](filesfpcatalog-table.md) e sulla tabella SFPCatalog.
+[L'azione InstallSFPCatalogFile](installsfpcatalogfile-action.md) esegue query sulla tabella [Component](component-table.md), sulla tabella [File](file-table.md), sulla tabella [FileSFPCatalog](filesfpcatalog-table.md) e sulla tabella SFPCatalog.
 
 ## <a name="validation"></a>Convalida
 

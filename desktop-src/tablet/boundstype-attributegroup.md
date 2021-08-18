@@ -1,19 +1,19 @@
 ---
-description: Definisce un gruppo di attributi utilizzato da un'ampia gamma di elementi in un file XML journal. Contiene gli attributi usati per definire i limiti (sinistro, superiore, altezza e larghezza) di un elemento nel documento.
+description: Definisce un gruppo di attributi utilizzato da un'ampia gamma di elementi in un file XML journal. Contiene gli attributi usati per definire i limiti (sinistra, superiore, altezza e larghezza) di un elemento nel documento.
 ms.assetid: 7841aa65-fb35-4909-a34e-3c883555f764
 title: Gruppo di attributi BoundsType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78c51fcb9bc0041bbc030f2c67e434a964212562
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: aba91269660875e55b92797609969ebee38d221016914d9473cd5eddd245cfc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967770"
 ---
 # <a name="boundstype-attribute-group"></a>Gruppo di attributi BoundsType
 
-Definisce un gruppo di attributi utilizzato da un'ampia gamma di elementi in un file XML journal. Contiene gli attributi usati per definire i limiti (sinistro, superiore, altezza e larghezza) di un elemento nel documento.
+Definisce un gruppo di attributi utilizzato da un'ampia gamma di elementi in un file XML journal. Contiene gli attributi usati per definire i limiti (sinistra, superiore, altezza e larghezza) di un elemento nel documento.
 
 ## <a name="definition"></a>Definizione
 
@@ -36,10 +36,10 @@ Nessuno.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                                        | Valori possibili                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento.<br/> | Qualsiasi numero intero.<br/>              |
-| **Top**    | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto più in alto nel rettangolo di selezione per l'elemento.<br/>  | Qualsiasi numero intero.<br/>              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.<br/>                                          | Qualsiasi numero intero non negativo.<br/> |
-| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.<br/>                                         | Qualsiasi numero intero non negativo.<br/> |
+| **Sinistra**   | **xs:integer**            | Necessario | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento.<br/> | Qualsiasi numero intero.<br/>              |
+| **Top**    | **xs:integer**            | Necessario | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.<br/>  | Qualsiasi numero intero.<br/>              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di selezione per l'elemento.<br/>                                          | Qualsiasi numero intero non negativo.<br/> |
+| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di selezione per l'elemento.<br/>                                         | Qualsiasi numero intero non negativo.<br/> |
 
 
 

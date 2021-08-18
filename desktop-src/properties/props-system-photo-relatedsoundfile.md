@@ -1,5 +1,5 @@
 ---
-description: Nome file di un file di annotazione audio associato alla foto.
+description: Nome file di un file di annotazioni audio associato alla foto.
 ms.assetid: 9654303b-8483-4691-820a-4bfd440f2e93
 title: System.Photo.RelatedSoundFile
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118723671"
 ---
 # <a name="systemphotorelatedsoundfile"></a>System.Photo.RelatedSoundFile
 
-Nome file di un file di annotazione audio associato alla foto.
+Nome file di un file di annotazioni audio associato alla foto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -3,16 +3,16 @@ title: Funzioni WGL
 description: Di seguito sono riportate le funzioni WGL associate a OpenGL
 ms.assetid: 52053370-d88b-4faf-bdcd-4663c6d5270d
 keywords:
-- OpenGL, funzioni WGL
-- Riferimento WGL OpenGL, funzioni
+- Funzioni OpenGL,WGL
+- Informazioni di riferimento su WGL OpenGL, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 150871ed1e059a5a7711c5921c43860a309c4367
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ece9b08b165a820bab43da6ecfc1de5c1ce98f63b7a3d4ce7775627765a1365a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932791"
 ---
 # <a name="wgl-functions"></a>Funzioni WGL
 
@@ -35,9 +35,9 @@ Di seguito sono riportate le funzioni WGL associate a OpenGL:
 -   [**wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa)
 -   [**wglUseFontOutlines**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa)
 
- 
+ 
 
- 
+ 
 
 
 

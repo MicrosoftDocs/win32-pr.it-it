@@ -70,7 +70,7 @@ Puntatore a una stringa con terminazione Null contenente l'URL della risposta di
 **dwHTTPRequest**
 </dt> <dd>
 
-**Valore DWORD** che indica il numero di round trip HTTP al servizio di individualizzazione completati.
+**DWORD** che indica il numero di round trip HTTP al servizio di individualizzazione completati.
 
 </dd> <dt>
 
@@ -84,14 +84,14 @@ Valore del tipo [**di enumerazione \_ DRM HTTP \_ STATUS.**](drm-http-status.md)
 **dwHTTPReadProgress**
 </dt> <dd>
 
-**Valore DWORD** contenente il numero di byte scaricati fino a questo momento.
+**DWORD** contenente il numero di byte scaricati fino a questo momento.
 
 </dd> <dt>
 
 **dwHTTPReadTotal**
 </dt> <dd>
 
-**Valore DWORD** contenente il numero totale di byte da scaricare. Usare questo valore e **dwHTTPReadProgress** per visualizzare un'interfaccia utente che indica la quantità di download completata e quanto rimane da eseguire.
+**DWORD** contenente il numero totale di byte da scaricare. Usare questo valore e **dwHTTPReadProgress** per visualizzare un'interfaccia utente che indica la quantità di download completata e il numero di operazioni da eseguire.
 
 </dd> </dl>
 

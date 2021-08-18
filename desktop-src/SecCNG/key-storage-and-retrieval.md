@@ -26,7 +26,7 @@ CNG fornisce un modello per l'archiviazione con chiave privata che consente di a
 
 Per soddisfare i requisiti di criteri comuni, le chiavi di lunga durata devono essere isolate in modo che non siano mai presenti nel processo dell'applicazione. CNG attualmente supporta l'archiviazione di chiavi private asimmetriche usando il KSP software Microsoft incluso in Windows Server 2008 e Windows Vista e installato per impostazione predefinita.
 
-L'isolamento delle chiavi è abilitato per impostazione predefinita in Windows Server 2008 e Windows Vista. La funzionalità di isolamento delle chiavi non è disponibile nelle piattaforme precedenti a queste. Inoltre, i KSP di terze parti non vengono caricati nel servizio di isolamento delle chiavi (processo LSA). Nel servizio di isolamento della chiave viene caricato solo Microsoft KSP.
+L'isolamento delle chiavi è abilitato per impostazione predefinita in Windows Server 2008 e Windows Vista. La funzionalità di isolamento delle chiavi non è disponibile nelle piattaforme precedenti a queste. Inoltre, i KSP di terze parti non vengono caricati nel servizio di isolamento delle chiavi (processo LSA). Nel servizio di isolamento delle chiavi viene caricato solo Microsoft KSP.
 
 Il processo LSA viene usato come processo di isolamento della chiave per ottimizzare le prestazioni. Tutti gli accessi alle chiavi private passano attraverso il router di archiviazione delle chiavi, che espone un set completo di funzioni per la gestione e l'uso delle chiavi private.
 
@@ -54,7 +54,7 @@ CNG supporta gli algoritmi di chiave seguenti.
 |-----------|------------------------------------|
 | RSA       | Da 512 a 16384, in incrementi a 64 bit |
 | Dh        | Da 512 a 16384, in incrementi a 64 bit |
-| DSA       | Da 512 a 1024, in incrementi di 64 bit  |
+| DSA       | Da 512 a 1024, in incrementi a 64 bit  |
 | Ecdsa     | P-256, P-384, P-521 (curve NIST)  |
 | ECDH      | P-256, P-384, P-521 (curve NIST)  |
 | MD2       | 128                                |
@@ -77,7 +77,7 @@ I CSP CryptoAPI legacy Microsoft archiviano le chiavi private nelle directory se
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Privato dell'utente            | SID utente RSA %APPDATA% \\ Microsoft \\ Crypto \\ \\ \\<br/>%APPDATA% \\ \\ SID utente Microsoft Crypto \\ \\ *DSS*\\<br/>                                                   |
 | Sistema locale privato    | %ALLUSERSPROFILE% \\ Application Data Microsoft Crypto RSA \\ \\ \\ \\ S-1-5-18\\<br/>%ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto \\ \\ \\ DSS \\ S-1-5-18\\<br/>   |
-| Servizio locale privato   | %ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto RSA \\ \\ \\ \\ S-1-5-19\\<br/>%ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto \\ \\ \\ DSS \\ S-1-5-19\\<br/>   |
+| Servizio locale privato   | %ALLUSERSPROFILE% \\ Application Data Microsoft Crypto RSA \\ \\ \\ \\ S-1-5-19\\<br/>%ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto \\ \\ \\ DSS \\ S-1-5-19\\<br/>   |
 | Servizio di rete privato | %ALLUSERSPROFILE% \\ Application Data Microsoft Crypto RSA \\ \\ \\ \\ S-1-5-20\\<br/>%ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto \\ \\ \\ DSS \\ S-1-5-20\\<br/>   |
 | Privato condiviso          | %ALLUSERSPROFILE% \\ Application Data Microsoft Crypto RSA \\ \\ \\ \\ MachineKeys<br/>%ALLUSERSPROFILE% \\ Dati applicazione Microsoft Crypto \\ \\ \\ DSS \\ MachineKeys<br/> |
 
@@ -105,14 +105,14 @@ Di seguito sono riportate alcune delle differenze tra i contenitori di chiavi Cr
 -   CNG supporta completamente i nomi dei contenitori di chiavi Unicode. CNG usa un hash del nome del contenitore Unicode, mentre CryptoAPI usa un hash del nome del contenitore ANSI.
 -   CNG è più flessibile per quanto riguarda le coppie di chiavi RSA. CNG, ad esempio, supporta esponenti pubblici di lunghezza superiore a 32 bit e chiavi in cui p e q hanno lunghezze diverse.
 -   In CryptoAPI il file del contenitore di chiavi viene archiviato in una directory il cui nome è l'equivalente testuale del SID dell'utente. Questo non è più il caso in CNG, che elimina la difficoltà di spostare gli utenti da un dominio a un altro senza perdere tutte le chiavi private.
--   I nomi di chiavi e KSP CNG sono limitati ai caratteri Unicode **MAX \_ PATH.** Il provider di servizi di configurazione CryptoAPI e i nomi delle chiavi sono limitati ai caratteri ANSI **\_ MAX PATH.**
--   CNG offre la funzionalità di proprietà chiave definite dall'utente. Gli utenti possono creare e associare proprietà personalizzate alle chiavi e archiviarle con chiavi persistenti.
+-   I nomi di chiave e KSP CNG sono limitati ai caratteri Unicode **MAX \_ PATH.** I nomi di chiave e CSP CryptoAPI sono limitati ai caratteri ANSI **\_ MAX PATH.**
+-   CNG offre la funzionalità delle proprietà chiave definite dall'utente. Gli utenti possono creare e associare proprietà personalizzate alle chiavi e archiviarle con chiavi persistenti.
 
-Quando si rende persistente una chiave, CNG può creare due file. Il primo file contiene la chiave privata nel nuovo formato CNG e viene sempre creato. Questo file non può essere utilizzato dai CSP CryptoAPI legacy. Il secondo file contiene la stessa chiave privata nel contenitore di chiavi CryptoAPI legacy. Il secondo file è conforme al formato e al percorso usati da Rsaenh.dll. La creazione del secondo file viene eseguita solo se viene specificato il flag **NCRYPT \_ WRITE KEY TO LEGACY STORE \_ \_ \_ \_ \_ FLAG** quando viene chiamata la funzione [**NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) per finalizzare una chiave RSA. Questa funzionalità non è supportata per le chiavi DSA e DH.
+Quando si rende persistente una chiave, CNG può creare due file. Il primo file contiene la chiave privata nel nuovo formato CNG e viene sempre creato. Questo file non è utilizzabile dai CSP CryptoAPI legacy. Il secondo file contiene la stessa chiave privata nel contenitore di chiavi CryptoAPI legacy. Il secondo file è conforme al formato e alla posizione usati da Rsaenh.dll. La creazione del secondo file viene eseguita solo se viene specificato il flag **FLAG NCRYPT \_ WRITE KEY TO LEGACY STORE \_ \_ \_ \_ \_ quando** viene chiamata la funzione [**NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) per finalizzare una chiave RSA. Questa funzionalità non è supportata per le chiavi DSA e DH.
 
-Quando un'applicazione tenta di aprire una chiave persistente esistente, CNG tenta prima di tutto di aprire il file CNG nativo. Se questo file non esiste, CNG tenta di individuare una chiave corrispondente nel contenitore di chiavi CryptoAPI legacy.
+Quando un'applicazione tenta di aprire una chiave persistente esistente, CNG tenta innanzitutto di aprire il file CNG nativo. Se questo file non esiste, CNG tenta di individuare una chiave corrispondente nel contenitore di chiavi CryptoAPI legacy.
 
-Quando si spostano o si copiano chiavi CryptoAPI da un computer di origine a un computer di destinazione con Windows Utilità di migrazione stato utente (USMT), CNG non riuscirà ad accedere alle chiavi nel computer di destinazione. Per accedere a tali chiavi migrate, è necessario usare CryptoAPI.
+Quando si spostano o copiano chiavi CryptoAPI da un computer di origine a un computer di destinazione con Windows Utilità di migrazione stato utente (USMT), CNG non riuscirà ad accedere alle chiavi nel computer di destinazione. Per accedere a tali chiavi migrate, è necessario usare CryptoAPI.
 
  
 

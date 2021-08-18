@@ -1,21 +1,21 @@
 ---
 description: 'Altre informazioni su: OPM_GET_ACP_AND_CGMSA_SIGNALING'
 ms.assetid: d477fe3e-4498-450b-93b7-ce74ae9ed005
-title: OPM_GET_ACP_AND_CGMSA_SIGNALING (Opmapi. h)
+title: OPM_GET_ACP_AND_CGMSA_SIGNALING (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bf6294c3f1d90ac8a2292c65b3c1b8558e69220
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6c06da78ea9ae1a4f0ea58f0fb8770dffadff6a34d577fd2328816ffc100e4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102065"
 ---
-# <a name="opm_get_acp_and_cgmsa_signaling"></a>\_per la \_ \_ segnalazione di ACP e \_ CGMSA \_
+# <a name="opm_get_acp_and_cgmsa_signaling"></a>OPM \_ GET \_ ACP E \_ \_ CGMSA \_ SIGNALING
 
 Restituisce le informazioni seguenti su un output video:
 
--   Elenco di standard di protezione della televisione supportati dal driver.
+-   Elenco di standard di protezione della tv supportati dal driver.
 -   Standard attualmente attivo.
 -   Proporzioni correnti o altri dati di segnalazione.
 
@@ -23,9 +23,9 @@ Restituisce le informazioni seguenti su un output video:
 
 | Requisito | Valore |
 |--------------|-------------------------------------------------------------------------------------|
-| GUID richiesta | \_per la \_ \_ segnalazione di ACP e \_ CGMSA \_                                                |
-| Dati di input   | nessuno                                                                                |
-| Restituisce i dati  | Struttura [**di \_ \_ \_ \_ segnalazione ACP e CGMSA di OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_acp_and_cgmsa_signaling) |
+| GUID della richiesta | OPM \_ GET \_ ACP E \_ \_ CGMSA \_ SIGNALING                                                |
+| Dati di input   | Nessuno                                                                                |
+| Restituisce i dati  | Struttura [**OPM \_ ACP \_ E \_ CGMSA \_ SIGNALING**](/windows/desktop/api/opmapi/ns-opmapi-opm_acp_and_cgmsa_signaling) |
 
 
 
@@ -33,7 +33,7 @@ Restituisce le informazioni seguenti su un output video:
 
 ## <a name="remarks"></a>Commenti
 
-Questa query equivale alla \_ query DXVA COPPQuerySignaling utilizzata in Certified Output Protocol (Copp).
+Questa query equivale alla query DXVA \_ COPPQuerySignaling usata nel protocollo COPP (Certified Output Protection Protocol).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ Questa query equivale alla \_ query DXVA COPPQuerySignaling utilizzata in Certif
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
@@ -51,13 +51,13 @@ Questa query equivale alla \_ query DXVA COPPQuerySignaling utilizzata in Certif
 
 <dl> <dt>
 
-[**IOPMVideoOutput:: COPPCompatibleGetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-coppcompatiblegetinformation)
+[**IOPMVideoOutput::COPPCompatibleGetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-coppcompatiblegetinformation)
 </dt> <dt>
 
-[**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation)
+[**IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation)
 </dt> <dt>
 
-[Richieste di stato di OPM](opm-status-requests.md)
+[Richieste di stato OPM](opm-status-requests.md)
 </dt> </dl>
 
  

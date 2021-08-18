@@ -1,11 +1,11 @@
 ---
-title: Metodo INapSystemHealthAgentCallback CompareSoHRequests (NapSystemHealthAgent.h)
+title: Metodo CompareSoHRequests INapSystemHealthAgentCallback (NapSystemHealthAgent.h)
 description: Viene usato dall'SHA per confrontare le richieste SoH.
 ms.assetid: 14ba189a-e745-44b0-b729-522087d4e08b
 keywords:
-- Metodo CompareSoHRequests NAP
-- Metodo CompareSoHRequests NAP, interfaccia INapSystemHealthAgentCallback
-- Interfaccia INapSystemHealthAgentCallback NAP, metodo CompareSoHRequests
+- Metodo CompareSoHRequests nap
+- Metodo CompareSoHRequests NAP , interfaccia INapSystemHealthAgentCallback
+- Interfaccia INapSystemHealthAgentCallback nap , metodo CompareSoHRequests
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118939436"
 
  
 
-Il **metodo INapSystemHealthAgentCallback::CompareSoHRequests** viene usato da SHA per confrontare le richieste SoH.
+Il **metodo INapSystemHealthAgentCallback::CompareSoHRequests** viene usato dall'SHA per confrontare le richieste SoH.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +66,7 @@ Puntatore a [**SoHRequest a**](/windows/win32/api/naptypes/ns-naptypes-soh) dest
 *isEqual* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore BOOL** **true se** *lhs* e *rhs* sono semanticamente uguali e **FALSE in caso contrario.**
+Puntatore a un **oggetto BOOL** **che è TRUE se** *lhs* e *rhs* sono semanticamente uguali e **FALSE in caso contrario.**
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Questo metodo può restituire uno di questi valori.
 | Codice restituito                                                                               | Descrizione                                           |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Indica l'esito positivo dell'operazione.<br/>                         |
-| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Il metodo non è stato implementato dall'sha.<br/> |
+| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Il metodo non è stato implementato dall'SHA.<br/> |
 
 
 
@@ -87,13 +87,13 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di callback viene dichiarato dal sistema nap e deve essere implementato dal writer SHA.
+Questo metodo di callback viene dichiarato dal sistema di Protezione accesso alla rete e deve essere implementato dal writer SHA.
 
-L'SHA deve confrontare i soh e restituire **TRUE** se i soh sono semanticamente uguali. NapAgent usa queste informazioni per determinare se deve essere avviato uno scambio soh a causa della modifica dello stato del computer client.
+L'SHA deve confrontare i soh e restituire **TRUE** se i soh sono semanticamente uguali. NapAgent usa queste informazioni per determinare se deve essere avviato uno scambio SoH a causa della modifica dello stato del computer client.
 
-Se gli sha hanno inserito ID incrementali o timestamp nel proprio soH, i file soh possono essere semanticamente uguali (ad esempio possono comunicare le stesse informazioni sull'integrità), ma possono essere diversi a livello di byte. Gli SHA devono implementare questa funzione per verificare l'uguaglianza semantica dei file con estensione soh.
+Se gli SHA hanno inserito ID incrementali o timestamp nel proprio soH, i file SoH possono essere semanticamente uguali (ad esempio, possono trasmettere le stesse informazioni sull'integrità), ma possono essere disuguali a livello di byte. Gli SHA devono implementare questa funzione per verificare l'uguaglianza semantica dei soh.
 
-Se gli sha non hanno inserito timestamp o ID nei relativi soh, possono scegliere di non implementare questa funzione e restituire **E \_ NOTIMPL.** In questo caso, NapAgent esegue un confronto byte per byte su [**SoHRequests.**](/windows/win32/api/naptypes/ns-naptypes-soh)
+Se gli SHA non hanno inserito timestamp o ID nei relativi soH, possono scegliere di non implementare questa funzione e restituire **E \_ NOTIMPL**. In questo caso, NapAgent esegue un confronto byte per byte su [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Se gli sha non hanno inserito timestamp o ID nei relativi soh, possono scegliere
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
 | Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 

@@ -22,7 +22,7 @@ ms.locfileid: "118939028"
 ---
 # <a name="expertframedescriptor-structure"></a>Struttura EXPERTFRAMEDESCRIPTOR
 
-La **struttura EXPERTFRAMEDESCRIPTOR** contiene informazioni su un frame. Quando l'esperto [**chiama correttamente la funzione ExpertGetFrame,**](expertgetframe.md) Network Monitor passa di nuovo la struttura **EXPERTFRAMEDESCRIPTOR** all'esperto.
+La **struttura EXPERTFRAMEDESCRIPTOR** contiene informazioni su un frame. Quando l'esperto [**chiama correttamente la funzione ExpertGetFrame,**](expertgetframe.md) Network Monitor la struttura **EXPERTFRAMEDESCRIPTOR** all'esperto.
 
 ## <a name="syntax"></a>Sintassi
 

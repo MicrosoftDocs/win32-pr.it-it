@@ -1,5 +1,5 @@
 ---
-description: Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste dell'utente di cambiare l'identità utente corrente.
+description: Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste utente di cambiare l'identità utente corrente.
 ms.assetid: 09903aa6-62bf-4820-9a09-79956d775441
 title: Interfaccia IIdentityChangeNotify (Msident.h)
 ms.topic: reference
@@ -22,9 +22,9 @@ ms.locfileid: "118721909"
 ---
 # <a name="iidentitychangenotify-interface"></a>Interfaccia IIdentityChangeNotify
 
-\[**L'interfaccia IIdentityChangeNotify** è disponibile per l'uso in Windows 2000. In Windows XP questa funzionalità è stata sostituita dagli account utente con cambio rapido utente [e Desktop remoto](fastuserswitching.md)e potrebbe essere modificata o non disponibile nelle versioni successive.\]
+\[**L'interfaccia IIdentityChangeNotify** è disponibile per l'uso in Windows 2000. In Windows XP questa funzionalità è stata sostituita dagli account utente con cambio utente rapido e [Desktop remoto](fastuserswitching.md)e potrebbe essere modificata o non disponibile nelle versioni successive.\]
 
-Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste dell'utente di cambiare l'identità utente corrente.
+Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste utente di cambiare l'identità utente corrente.
 
 ## <a name="members"></a>Membri
 
@@ -40,9 +40,9 @@ Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistem
 
 | Metodo                                                                                 | Descrizione                                                                                                                           |
 |:---------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
-| [**IdentityInformationChanged**](iidentitychangenotify-identityinformationchanged.md) | Deprecato. Chiamato quando le informazioni su un'identità utente sono state modificate o quando un'identità utente è stata aggiunta o eliminata.<br/>  |
-| [**QuerySwitchIdentities**](iidentitychangenotify-queryswitchidentities.md)           | Deprecato. Chiamato quando l'utente corrente ha richiesto di cambiare l'identità utente, ma prima che si verifichi il passaggio.<br/> |
-| [**SwitchIdentities**](iidentitychangenotify-switchidentities.md)                     | Deprecato. Chiamato quando vengono cambiate le identità utente.<br/>                                                                      |
+| [**IdentityInformationChanged**](iidentitychangenotify-identityinformationchanged.md) | Deprecato. Chiamato quando le informazioni su un'identità utente vengono modificate o quando un'identità utente è stata aggiunta o eliminata.<br/>  |
+| [**QuerySwitchIdentities**](iidentitychangenotify-queryswitchidentities.md)           | Deprecato. Chiamato quando l'utente corrente ha richiesto il cambio di identità dell'utente, ma prima che si verifichi il cambio.<br/> |
+| [**SwitchIdentities**](iidentitychangenotify-switchidentities.md)                     | Deprecato. Chiamato quando le identità utente vengono cambiate.<br/>                                                                      |
 
 
 
@@ -50,7 +50,7 @@ Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistem
 
 ## <a name="remarks"></a>Commenti
 
-Per implementare le notifiche, un'interfaccia derivata deve connettersi a [**IUserIdentityManager**](iuseridentitymanager.md) chiamando [**IConnectionPoint::Advise e**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) passando un puntatore all'interfaccia.
+Per implementare le notifiche, un'interfaccia derivata deve connettersi a [**IUserIdentityManager**](iuseridentitymanager.md) chiamando [**IConnectionPoint::Advise e**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) passando un puntatore all'interfaccia .
 
 ## <a name="requirements"></a>Requisiti
 

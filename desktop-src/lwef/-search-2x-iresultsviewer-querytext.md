@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer QueryText (WdsView. h)
+title: Proprietà QueryText IResultsViewer (WdsView.h)
 description: Ottiene o imposta il testo della query corrente.
 ms.assetid: 3d6b31fa-3f17-45de-a91a-f24a6b076099
 keywords:
-- Funzionalità dell'ambiente Windows legacy della Proprietà QueryText
-- Proprietà QueryText caratteristiche dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, Proprietà QueryText
+- Proprietà QueryText Funzionalità dell'Windows legacy
+- Proprietà QueryText Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà QueryText
 topic_type:
 - apiref
 api_name:
@@ -18,17 +18,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98450114ad64ec0209b14041b8f2516dc6884b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5522419d14bf27a1e836c9caa16e9dabf5a122e4566fd19c868a1f72e3f61d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753586"
 ---
-# <a name="iresultsviewerquerytext-property"></a>Proprietà IResultsViewer:: QueryText
+# <a name="iresultsviewerquerytext-property"></a>Proprietà IResultsViewer::QueryText
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 Ottiene o imposta il testo della query corrente.
 
@@ -59,10 +59,10 @@ Imposta il testo della query corrente.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

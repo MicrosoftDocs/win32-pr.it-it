@@ -1,10 +1,10 @@
 ---
-title: Struttura MPCOMPONENT_VERSION (MpClient. h)
-description: Tempo di aggiornamento e versione per un singolo componente.
+title: MPCOMPONENT_VERSION (MpClient.h)
+description: Versione e ora di aggiornamento per un singolo componente.
 ms.assetid: 43468230-EE13-4630-8C09-F8DF983EF748
 keywords:
-- Struttura MPCOMPONENT_VERSION le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPCOMPONENT_VERSION
+- MPCOMPONENT_VERSION funzionalità dell'ambiente Windows legacy
+- PMPCOMPONENT_VERSION puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a1d4b5011bb185dc8ca0892e0a0e65bc4a7d8b2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6092fe2f3ec7ba921b1ef3adfc9355feeeae67f2381836056f2af65b276921cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976071"
 ---
-# <a name="mpcomponent_version-structure"></a>Struttura della versione di MPCOMPONENT \_
+# <a name="mpcomponent_version-structure"></a>Struttura MPCOMPONENT \_ VERSION
 
-Tempo di aggiornamento e versione per un singolo componente.
+Versione e ora di aggiornamento per un singolo componente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ typedef struct tagMPCOMPONENT_VERSION {
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
 Tipo: **ULONGLONG**
 
 </dd> <dd>
 
-Campo della versione. Ogni **parola** rappresenta Major, minor, Build e Revision.
+Campo Versione. Ogni **parola** rappresenta principale, secondaria, build e revisione.
 
 </dd> <dt>
 
 **UpdateTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
-Ora dell'ultimo aggiornamento del componente, nel formato **FILETIME** .
+Ora dell'ultimo aggiornamento del componente, in **formato FILETIME.**
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Ora dell'ultimo aggiornamento del componente, nel formato **FILETIME** .
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

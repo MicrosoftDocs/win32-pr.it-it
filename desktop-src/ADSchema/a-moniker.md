@@ -32,7 +32,7 @@ Nome o percorso di un oggetto COM.
 | CN                | Moniker                                               |
 | Ldap-Display-Name | moniker                                               |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.82                                 |
 | System-Id-Guid    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
@@ -58,7 +58,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -79,7 +79,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -100,7 +100,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -121,7 +121,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -142,7 +142,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -163,7 +163,7 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |

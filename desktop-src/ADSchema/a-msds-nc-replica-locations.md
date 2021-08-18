@@ -58,7 +58,7 @@ Elenco di server che corrispondono al set di repliche per il contesto dei nomi n
 | ID collegamento                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| A valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |
@@ -79,7 +79,7 @@ Elenco di server che corrispondono al set di repliche per il contesto dei nomi n
 | ID collegamento                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| A valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |
@@ -100,7 +100,7 @@ Elenco di server che corrispondono al set di repliche per il contesto dei nomi n
 | ID collegamento                | 1044                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| A valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                               |

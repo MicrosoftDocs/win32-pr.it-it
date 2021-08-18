@@ -1,5 +1,5 @@
 ---
-description: Indica le unità di risoluzione. Usato per le immagini con proporzioni non quadrate, ma senza dimensioni assolute significative. 1 = Nessuna unità di misura assoluta. 2 = Pollici. 3 = Centimetri. Il valore predefinito è 2 (pollici).
+description: Indica le unità di risoluzione. Usato per le immagini con proporzioni non quadrate, ma senza dimensioni assolute significative. 1 = Nessuna unità di misura assoluta. 2 = pollici. 3 = Centimetri. Il valore predefinito è 2 (pollici).
 ms.assetid: ff10ed8a-d73b-4d9b-b224-9ecfcc37d5af
 title: System.Image.ResolutionUnit
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118726499"
 ---
 # <a name="systemimageresolutionunit"></a>System.Image.ResolutionUnit
 
-Indica le unità di risoluzione. Usato per le immagini con proporzioni non quadrate, ma senza dimensioni assolute significative. 1 = Nessuna unità di misura assoluta. 2 = Pollici. 3 = Centimetri. Il valore predefinito è 2 (pollici).
+Indica le unità di risoluzione. Usato per le immagini con proporzioni non quadrate, ma senza dimensioni assolute significative. 1 = Nessuna unità di misura assoluta. 2 = pollici. 3 = Centimetri. Il valore predefinito è 2 (pollici).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

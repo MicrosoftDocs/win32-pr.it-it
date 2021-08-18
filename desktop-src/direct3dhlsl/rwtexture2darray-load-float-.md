@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture2DArray:: Load (int)'
-description: 'Legge i dati della trama. | Funzione RWTexture2DArray:: Load (int)'
+title: Funzione RWTexture2DArray::Load(int)
+description: Legge i dati della trama. | Funzione RWTexture2DArray::Load(int)
 ms.assetid: BC247B2A-1744-4E37-A501-22E4A592A32D
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b23439d471f4d22c807c8d45bb00c23a7d814e3f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7459e0bfacda9075fd587be69f8a3d69adbefb855608e5f949e250d0e35de786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790837"
 ---
-# <a name="rwtexture2darrayloadint-function"></a>Funzione RWTexture2DArray:: Load (int)
+# <a name="rwtexture2darrayloadint-function"></a>Funzione RWTexture2DArray::Load(int)
 
 Legge i dati della trama.
 
@@ -39,7 +39,7 @@ Legge i dati della trama.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,7 +52,7 @@ Posizione della trama.
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWTexture2DArray**](sm5-object-rwtexture2darray.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWTexture2DArray.**](sm5-object-rwtexture2darray.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,7 +60,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwtexture2darray-load.md)
+[Metodi di caricamento](rwtexture2darray-load.md)
 </dt> </dl>
 
  

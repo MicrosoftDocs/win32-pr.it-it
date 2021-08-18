@@ -1,9 +1,9 @@
 ---
 title: Elaborazione di esempi
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Elaborazione di esempi
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Elaborazione di esempi
 ms.assetid: e1a803dd-fbc8-4edb-8836-cc702ab7a8de
 keywords:
-- Esempi di elaborazione di Windows Media Format
+- Elaborazione di esempi in formato Windows Media
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118700189"
 ---
 # <a name="processing-samples"></a>Elaborazione di esempi
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

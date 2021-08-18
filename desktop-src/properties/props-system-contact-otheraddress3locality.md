@@ -4,12 +4,12 @@ ms.assetid: 0e7bd69f-41ac-45d2-8190-ebe52d6bcf03
 title: System.Contact.OtherAddress3Locality
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de4762c34936ef4ffd09b22b968afc289e509789
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 422664764d715be848b92820264e441a923994b7ae3d81215c4fdc5c34da94d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118729152"
 ---
 # <a name="systemcontactotheraddress3locality"></a>System.Contact.OtherAddress3Locality
 

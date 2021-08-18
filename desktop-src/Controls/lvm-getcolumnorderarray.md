@@ -3,7 +3,7 @@ title: LVM_GETCOLUMNORDERARRAY messaggio (Commctrl.h)
 description: Ottiene l'ordine corrente da sinistra a destra delle colonne in un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetColumnOrderArray.
 ms.assetid: d4636aa8-c61e-4467-abc7-eea897bf370e
 keywords:
-- LVM_GETCOLUMNORDERARRAY dei messaggi Windows controlli
+- LVM_GETCOLUMNORDERARRAY controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -39,13 +39,13 @@ Numero di colonne nel controllo visualizzazione elenco.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di interi che riceve i valori di indice delle colonne nel controllo visualizzazione elenco. La matrice deve essere sufficientemente grande da contenere *gli elementi wParam.*
+Puntatore a una matrice di interi che riceve i valori di indice delle colonne nel controllo di visualizzazione elenco. La matrice deve essere sufficientemente grande da contenere *gli elementi wParam.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce un valore diverso da zero e il buffer in *lParam* riceve l'indice di colonna di ogni colonna nel controllo nell'ordine in cui vengono visualizzate da sinistra a destra. In caso contrario, il valore restituito è zero.
+Se ha esito positivo, restituisce un valore diverso da zero e il buffer in corrispondenza di *lParam* riceve l'indice di colonna di ogni colonna nel controllo nell'ordine in cui sono visualizzate da sinistra a destra. In caso contrario, il valore restituito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ In caso di esito positivo, restituisce un valore diverso da zero e il buffer in 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

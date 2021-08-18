@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b26cf058b31d1016c68cccf3dde6ade9f84cde1d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 20075c0e30985ab4f5c7c691b40caf302db98d6b5c8cf863fd9c57fca895ee40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802794"
 ---
 # <a name="id3dxfileenumobjectgetchild-method"></a>Metodo ID3DXFileEnumObject::GetChild
 
-Recupera un oggetto figlio in questo oggetto dati file.
+Recupera un oggetto figlio in questo oggetto dati del file.
 
 ## <a name="syntax"></a>Sintassi
 

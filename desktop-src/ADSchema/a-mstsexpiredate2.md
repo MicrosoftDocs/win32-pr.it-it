@@ -1,10 +1,10 @@
 ---
 title: Attributo MS-TS-ExpireDate2
-description: Data di scadenza del secondo CAL per utente di Servizi terminal.
+description: Data di scadenza della seconda licenza CAL di Servizi terminal per utente.
 ms.assetid: d594dbcf-249a-4d72-a9fa-06a4c62fc895
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TS-ExpireDate2-schema AD
+- Schema AD dell'attributo MS-TS-ExpireDate2
 - Schema AD dell'attributo msTSExpireDate2
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af30b760485b519770ec1014dc12148fd5340850
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 32afe84d3bbda149b8fa4e65746e06b6b2cf0f975a316076ac6cbf77ef58d31f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960170"
 ---
 # <a name="ms-ts-expiredate2-attribute"></a>Attributo MS-TS-ExpireDate2
 
-Data di scadenza del secondo CAL per utente di Servizi terminal.
+Data di scadenza della seconda licenza CAL di Servizi terminal per utente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------|
 | CN                | MS-TS-ExpireDate2                                             |
-| LDAP-Display-Name | msTSExpireDate2                                               |
+| Ldap-Display-Name | msTSExpireDate2                                               |
 | Dimensione              | \-                                                            |
-| Privilegio aggiornamento  | \-                                                            |
+| Privilegio di aggiornamento  | \-                                                            |
 | Frequenza di aggiornamento  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.2000                                       |
-| System-ID-GUID    | 54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925                          |
+| System-Id-Guid    | 54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925                          |
 | Sintassi            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
@@ -55,15 +55,15 @@ Data di scadenza del secondo CAL per utente di Servizi terminal.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -76,15 +76,15 @@ Data di scadenza del secondo CAL per utente di Servizi terminal.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -97,15 +97,15 @@ Data di scadenza del secondo CAL per utente di Servizi terminal.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

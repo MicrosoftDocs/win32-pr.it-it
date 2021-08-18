@@ -58,7 +58,7 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -79,7 +79,7 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -100,7 +100,7 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |

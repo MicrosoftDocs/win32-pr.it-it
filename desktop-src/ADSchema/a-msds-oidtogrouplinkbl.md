@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-DS-OIDToGroup-Link-BL
-description: Collegamento all'indietro per ms-DS-OIDToGroup-Link. Identifica i criteri di rilascio, rappresentati da un oggetto OID, di cui è stato eseguito il mapping a questo gruppo.
+description: Collegamento indietro per ms-DS-OIDToGroup-Link. Identifica i criteri di rilascio, rappresentati da un oggetto OID, di cui è stato eseguito il mapping a questo gruppo.
 ms.assetid: e8c52b91-faba-4b8e-a378-70b92e2aa6cb
 ms.tgt_platform: multiple
 keywords:
@@ -32,7 +32,7 @@ Collegamento all'indietro [**per ms-DS-OIDToGroup-Link**](a-msds-oidtogrouplink.
 | CN                | ms-DS-OIDToGroup-Link-BL                |
 | Ldap-Display-Name | msDS-OIDToGroupLinkBl                   |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2052                 |
 | System-Id-Guid    | 1a3d0d20-5844-4199-ad25-0f5039a76ada    |

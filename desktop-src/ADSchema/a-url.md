@@ -59,7 +59,7 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

@@ -4,24 +4,24 @@ ms.assetid: c1570669-6e9c-4614-af4d-2a148f12e36f
 title: Attributi ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5ccf09542c8b96cc262cbe029111d3cb74e5b53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: babbb8697126ae6882c11526ed9e6cb31e2233b81685c820d200fbd21bab08c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975030"
 ---
 # <a name="asf-attributes"></a>Attributi ASF
 
 ### <a name="profile-attributes"></a>Attributi del profilo
 
-Ai profili ASF si applicano gli attributi seguenti.
+Gli attributi seguenti si applicano ai profili ASF.
 
 
 
 | Attributo                                                                      | Descrizione                                                  |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**MF \_ ASFPROFILE \_ MAXPACKETSIZE**](mf-asfprofile-maxpacketsize-attribute.md) | Specifica la dimensione massima del pacchetto per un file ASF, in byte. |
+| [**MF \_ ASFPROFILE \_ MAXPACKETSIZE**](mf-asfprofile-maxpacketsize-attribute.md) | Specifica le dimensioni massime del pacchetto per un file ASF, in byte. |
 | [**MF \_ ASFPROFILE \_ MINPACKETSIZE**](mf-asfprofile-minpacketsize-attribute.md) | Specifica le dimensioni minime del pacchetto per un file ASF, in byte. |
 
 
@@ -36,8 +36,8 @@ Gli attributi seguenti si applicano all'oggetto di configurazione del flusso ASF
 
 | Attributo                                                                              | Descrizione                                                                   |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md) | Imposta i parametri medi "bucket Leak" per la codifica di un file di Windows Media. |
-| [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET2**](mf-asfstreamconfig-leakybucket2-attribute.md) | Imposta il picco dei parametri "leaky bucket" per la codifica di un file di Windows Media.    |
+| [**PERDITA \_ DI MF ASFSTREAMCONFIGYBUCKET1 \_**](mf-asfstreamconfig-leakybucket1-attribute.md) | Imposta i parametri medi "leaky bucket" per la codifica di Windows file multimediale. |
+| [**PERDITA \_ DI MF ASFSTREAMCONFIGYBUCKET2 \_**](mf-asfstreamconfig-leakybucket2-attribute.md) | Imposta i parametri di picco "bucket di perdita" per la codifica di Windows file multimediale.    |
 
 
 
@@ -51,15 +51,15 @@ Gli attributi seguenti si applicano ai buffer multimediali per i pacchetti ASF.
 
 | Attributo                                                                          | Descrizione                                                                               |
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [**\_limite pacchetto \_ MFASFSPLITTER**](mfasfsplitter-packet-boundary-attribute.md) | Specifica se un buffer contiene l'inizio di un pacchetto ASF (Advanced Systems Format). |
+| [**LIMITE DEL PACCHETTO MFASFSPLITTER \_ \_**](mfasfsplitter-packet-boundary-attribute.md) | Specifica se un buffer contiene l'inizio di un pacchetto ASF (Advanced Systems Format). |
 
 
 
  
 
-### <a name="presentation-descriptor-attributes"></a>Attributi del descrittore della presentazione
+### <a name="presentation-descriptor-attributes"></a>Attributi del descrittore di presentazione
 
-Per un elenco degli attributi applicabili ai descrittori di presentazione ASF, vedere la pagina relativa agli [attributi del descrittore di presentazione](presentation-descriptor-attributes.md).
+Per un elenco degli attributi applicabili ai descrittori di presentazione di ASF, vedere [Attributi del descrittore di presentazione](presentation-descriptor-attributes.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -71,7 +71,7 @@ Per un elenco degli attributi applicabili ai descrittori di presentazione ASF, v
 [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
 </dt> <dt>
 
-[Attributi di Media Foundation](media-foundation-attributes.md)
+[Media Foundation attributi](media-foundation-attributes.md)
 </dt> </dl>
 
  

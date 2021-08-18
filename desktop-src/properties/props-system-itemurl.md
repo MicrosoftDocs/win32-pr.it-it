@@ -1,17 +1,17 @@
 ---
 description: Rappresenta un URL ben formato che punta all'elemento.
 ms.assetid: d592f12b-f8c2-406f-a031-eeb8212e64f7
-title: System. ItemUrl
+title: System.ItemUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d02beb9629661a052d2ec1fae7c7a34e999e777e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79fe179849c7991a65db5412543815d78ac8dc21682511e27d6251253b3b1366
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970370"
 ---
-# <a name="systemitemurl"></a>System. ItemUrl
+# <a name="systemitemurl"></a>System.ItemUrl
 
 Rappresenta un URL ben formato che punta all'elemento.
 
@@ -33,9 +33,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Per fare riferimento agli elementi dello spazio dei nomi della shell tramite le API della shell, usare [System. ParsingPath](./props-system-parsingpath.md).
+Per fare riferimento agli elementi dello spazio dei nomi shell tramite le API shell, [usare System.ParsingPath](./props-system-parsingpath.md).
 
 Valori di esempio
 
@@ -43,8 +43,8 @@ Valori di esempio
 
 | Tipo di elemento | Esempio                        |
 |-----------|--------------------------------|
-| File      | hello.txt file:///c:/mydir/bar/ |
-| File      | CSC:///{GUID}/...               |
+| File      | file:///c:/mydir/bar/hello.txt |
+| File      | csc://{GUID}/...               |
 | Message   | mapi://...                     |
 
 
@@ -64,13 +64,13 @@ Valori di esempio
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -79,7 +79,7 @@ Valori di esempio
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

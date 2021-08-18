@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETAUTOCORRECTPROC (RichEdit. h)
-description: Definisce la procedura di callback di correzione automatica corrente.
+title: EM_SETAUTOCORRECTPROC messaggio (Richedit.h)
+description: Definisce la routine di callback di correzione automatica corrente.
 ms.assetid: 2FA48CFC-0D7C-41EF-8207-5EDC644FF3BC
 keywords:
-- Controlli di Windows Message EM_SETAUTOCORRECTPROC
+- EM_SETAUTOCORRECTPROC di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7359c86c3fdabe4c410f600d0af3100dde4c4ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b46e838cf18a345272b7983de1522a0c55a2565c5df3e11e3c89cd820653fb73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958720"
 ---
-# <a name="em_setautocorrectproc-message"></a>\_Messaggio SETAUTOCORRECTPROC em
+# <a name="em_setautocorrectproc-message"></a>Messaggio EM \_ SETAUTOCORRECTPROC
 
-Definisce la procedura di callback di correzione automatica corrente.
+Definisce la routine di callback di correzione automatica corrente.
 
 
 ```C++
@@ -39,20 +39,20 @@ Definisce la procedura di callback di correzione automatica corrente.
 *wParam* 
 </dt> <dd>
 
-Funzione di callback [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc) .
+Funzione di callback [*AutoCorrectProc.*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero
+Non usato; deve essere zero
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, il valore restituito è zero. Se l'operazione ha esito negativo, il valore restituito è un valore diverso da zero.
+Se l'operazione ha esito positivo, il valore restituito è zero. Se l'operazione non riesce, il valore restituito è un valore diverso da zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Se l'operazione ha esito positivo, il valore restituito è zero. Se l'operazione
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -73,10 +73,10 @@ Se l'operazione ha esito positivo, il valore restituito è zero. Se l'operazione
 [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc)
 </dt> <dt>
 
-[**\_CALLAUTOCORRECTPROC em**](em-callautocorrectproc.md)
+[**EM \_ CALLAUTOCORRECTPROC**](em-callautocorrectproc.md)
 </dt> <dt>
 
-[**\_GETAUTOCORRECTPROC em**](em-getautocorrectproc.md)
+[**EM \_ GETAUTOCORRECTPROC**](em-getautocorrectproc.md)
 </dt> </dl>
 
  

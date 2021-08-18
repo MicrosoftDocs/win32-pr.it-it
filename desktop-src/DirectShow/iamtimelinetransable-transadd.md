@@ -1,7 +1,7 @@
 ---
-description: Il metodo TransAdd aggiunge una transizione all'oggetto. Un oggetto può avere più transizioni, ma non devono sovrapporsi nel tempo. Le transizioni devono rientrare nei limiti temporali dell'oggetto.
+description: Il metodo TransAdd aggiunge una transizione all'oggetto . Un oggetto può avere più transizioni, ma non devono sovrapporsi nel tempo. Le transizioni devono rientrare nei limiti di tempo dell'oggetto.
 ms.assetid: 2c3f923f-c754-4cc8-82ca-d3979d4bda07
-title: 'Metodo IAMTimelineTransable:: TransAdd (qedit. h)'
+title: Metodo IAMTimelineTransable::TransAdd (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2636922549635c4a1c5e6e0b36f308f62328dc60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 930c3ff43e11cfb71ffce6c7257d0124fe87aeaaf4ae065433f11b860020eeaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952750"
 ---
-# <a name="iamtimelinetransabletransadd-method"></a>Metodo IAMTimelineTransable:: TransAdd
+# <a name="iamtimelinetransabletransadd-method"></a>Metodo IAMTimelineTransable::TransAdd
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `TransAdd` metodo aggiunge una transizione all'oggetto. Un oggetto può avere più transizioni, ma non devono sovrapporsi nel tempo. Le transizioni devono rientrare nei limiti temporali dell'oggetto.
+Il `TransAdd` metodo aggiunge una transizione all'oggetto . Un oggetto può avere più transizioni, ma non devono sovrapporsi nel tempo. Le transizioni devono rientrare nei limiti di tempo dell'oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ HRESULT TransAdd(
 *pTrans* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IAMTimelineObj**](iamtimelineobj.md) della transizione da aggiungere.
+Puntatore [**all'interfaccia IAMTimelineObj**](iamtimelineobj.md) della transizione da aggiungere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** :
+Restituisce uno dei valori **HRESULT** seguenti:
 
 
 
 | Codice restituito                                                                                   | Descrizione                                           |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Impossibile inserire la transizione.<br/>              |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl> | *pTrans* non è un puntatore a una transizione.<br/> |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | *pTrans* non è un puntatore a una transizione.<br/> |
 
 
 
@@ -73,12 +73,12 @@ Restituisce uno dei seguenti valori **HRESULT** :
 Se la transizione si sovrappone a una transizione esistente, il metodo restituisce E \_ INVALIDARG.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -88,8 +88,8 @@ Se la transizione si sovrappone a una transizione esistente, il metodo restituis
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

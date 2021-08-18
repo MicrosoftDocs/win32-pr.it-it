@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_ENUMCOLUMNVALUE Class'
-title: Classe JET_ENUMCOLUMNVALUE
+description: 'Altre informazioni su: JET_ENUMCOLUMNVALUE classe'
+title: JET_ENUMCOLUMNVALUE classe
 TOCTitle: JET_ENUMCOLUMNVALUE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNVALUE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnvalue(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2066e6b4b3039ba150f17630afaef967c215823d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c584347c88c5da4959694bb9ce0be9404d107027fc8e53ac1eec618102b76090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765977"
 ---
-# <a name="jet_enumcolumnvalue-class"></a>Classe JET_ENUMCOLUMNVALUE
+# <a name="jet_enumcolumnvalue-class"></a>JET_ENUMCOLUMNVALUE classe
 
-Enumera i valori di colonna di un record utilizzando la funzione JetEnumerateColumns. [JetEnumerateColumns (JET_SESID, JET_TABLEID, Int32, \[ \] , int32, \[ \] , JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit)](./api.jetenumeratecolumns-method.md) restituisce una matrice di strutture JET_ENUMCOLUMNVALUE. La matrice viene restituita nella memoria allocata utilizzando il callback fornito a tale funzione.
+Enumera i valori di colonna di un record usando la funzione JetEnumerateColumns. [JetEnumerateColumns(JET_SESID, JET_TABLEID, Int32, \[ \] , Int32, \[ \] , JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit)](./api.jetenumeratecolumns-method.md) restituisce una matrice di strutture JET_ENUMCOLUMNVALUE. La matrice viene restituita in memoria allocata usando il callback fornito a tale funzione.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNVALUE  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-members.md)
+[JET_ENUMCOLUMNVALUE membri](./jet-enumcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

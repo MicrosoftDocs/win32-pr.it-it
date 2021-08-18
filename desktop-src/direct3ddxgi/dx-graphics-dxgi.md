@@ -13,11 +13,11 @@ ms.locfileid: "118796615"
 ---
 # <a name="dxgi"></a>DXGI
 
-Microsoft DirectX Graphic Infrastructure (DXGI) gestisce l'enumerazione delle schede grafiche, l'enumerazione delle modalità di visualizzazione, la selezione dei formati di buffer, la condivisione di risorse tra processi (ad esempio, tra applicazioni e Gestione finestre desktop (DWM) e la presentazione di fotogrammi sottoposti a rendering in una finestra o in un monitor per la visualizzazione.
+Microsoft DirectX Graphic Infrastructure (DXGI) gestisce l'enumerazione delle schede grafiche, l'enumerazione delle modalità di visualizzazione, la selezione dei formati di buffer, la condivisione delle risorse tra processi (ad esempio, tra le applicazioni e il Gestione finestre desktop (DWM) e la presentazione dei fotogrammi sottoposti a rendering in una finestra o in un monitor per la visualizzazione.
 
 DXGI viene usato da Direct3D 10, Direct3D 11 e Direct3D 12.
 
-Anche se la maggior parte della programmazione grafica viene eseguita con Direct3D, è possibile usare DXGI per presentare fotogrammi a una finestra, a un monitor o a un altro componente grafico per la composizione e la visualizzazione finale. È anche possibile usare DXGI per leggere il contenuto in un monitor.
+Anche se la maggior parte della programmazione grafica viene eseguita con Direct3D, è possibile usare DXGI per presentare frame a una finestra, a un monitor o a un altro componente grafico per la composizione e la visualizzazione finale. È anche possibile usare DXGI per leggere il contenuto su un monitor.
 
 Questo set di documentazione contiene informazioni sulla programmazione con DXGI.
 
@@ -32,7 +32,7 @@ Questo set di documentazione contiene informazioni sulla programmazione con DXGI
 
 
 
--   [Guida per programmatori per DXGI](dx-graphics-dxgi-overviews.md)
+-   [Guida di programmazione per DXGI](dx-graphics-dxgi-overviews.md)
 -   [Informazioni di riferimento su DXGI](d3d10-graphics-reference-dxgi.md)
 
  

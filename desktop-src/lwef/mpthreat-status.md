@@ -1,9 +1,9 @@
 ---
 title: MPTHREAT_STATUS enumerazione (MpClient.h)
-description: Possibile stato di minaccia.
+description: Possibile stato della minaccia.
 ms.assetid: 64B57C8B-231B-4A2C-BF2E-45DB62B8350E
 keywords:
-- MPTHREAT_STATUS funzionalità dell'ambiente Windows legacy
+- MPTHREAT_STATUS di enumerazione Legacy Windows Environment Features
 - PMPTHREAT_STATUS puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.locfileid: "118476263"
 ---
 # <a name="mpthreat_status-enumeration"></a>Enumerazione MPTHREAT \_ STATUS
 
-Possibile stato di minaccia.
+Possibile stato della minaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,10 +53,10 @@ typedef enum tagMPTHREAT_STATUS {
 
 <dl> <dt>
 
-<span id="MP_THREAT_STATUS_UNKNOWN"></span><span id="mp_threat_status_unknown"></span>**MP \_ THREAT STATUS UNKNOWN (STATO MINACCIA MP \_ \_ SCONOSCIUTO)**
+<span id="MP_THREAT_STATUS_UNKNOWN"></span><span id="mp_threat_status_unknown"></span>**STATO \_ DELLA MINACCIA MP \_ \_ SCONOSCIUTO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_DETECTED"></span><span id="mp_threat_status_detected"></span>**RILEVATO \_ STATO DI MINACCIA DEL \_ MP \_**
+<span id="MP_THREAT_STATUS_DETECTED"></span><span id="mp_threat_status_detected"></span>**RILEVATO \_ STATO DELLA MINACCIA \_ \_ MP**
 </dt> <dd></dd> <dt>
 
 <span id="MP_THREAT_STATUS_CLEANED"></span><span id="mp_threat_status_cleaned"></span>**MP \_ THREAT \_ STATUS \_ CLEANED**
@@ -65,31 +65,31 @@ typedef enum tagMPTHREAT_STATUS {
 <span id="MP_THREAT_STATUS_QUARANTINED"></span><span id="mp_threat_status_quarantined"></span>**MP \_ THREAT \_ STATUS \_ QUARANTINED**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**MP \_ THREAT \_ STATUS \_ REMOVED**
+<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**STATO \_ DELLA MINACCIA MP \_ \_ RIMOSSO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ALLOWED"></span><span id="mp_threat_status_allowed"></span>**MP \_ THREAT \_ STATUS \_ ALLOWED**
+<span id="MP_THREAT_STATUS_ALLOWED"></span><span id="mp_threat_status_allowed"></span>**STATO \_ DELLE MINACCE MP \_ \_ CONSENTITO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_BLOCKED"></span><span id="mp_threat_status_blocked"></span>**MP \_ THREAT \_ STATUS \_ BLOCKED**
+<span id="MP_THREAT_STATUS_BLOCKED"></span><span id="mp_threat_status_blocked"></span>**STATO \_ DELLA MINACCIA MP \_ \_ BLOCCATO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_CLEAN_FAILED"></span><span id="mp_threat_status_clean_failed"></span>**\_PULITURA DELLO STATO DELLE MINACCE DEL MP NON \_ \_ \_ RIUSCITA**
+<span id="MP_THREAT_STATUS_CLEAN_FAILED"></span><span id="mp_threat_status_clean_failed"></span>**\_PULITURA DELLO STATO DELLE MINACCE MP NON \_ \_ \_ RIUSCITA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**QUARANTENA \_ STATO MINACCIA MP NON \_ \_ \_ RIUSCITA**
+<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**QUARANTENA \_ DELLO STATO DELLE MINACCE MP NON \_ \_ \_ RIUSCITA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**RIMOZIONE \_ DELLO STATO DI MINACCIA DEL MP NON \_ \_ \_ RIUSCITA**
+<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**RIMOZIONE \_ DELLO STATO DELLA MINACCIA MP NON \_ \_ \_ RIUSCITA**
 </dt> <dd></dd> <dt>
 
 <span id="MP_THREAT_STATUS_ALLOW_FAILED"></span><span id="mp_threat_status_allow_failed"></span>**MP \_ THREAT \_ STATUS \_ ALLOW \_ FAILED**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ABANDONED"></span><span id="mp_threat_status_abandoned"></span>**MP \_ THREAT \_ STATUS \_ ABANDONED**
+<span id="MP_THREAT_STATUS_ABANDONED"></span><span id="mp_threat_status_abandoned"></span>**STATO \_ DELLA MINACCIA MP \_ \_ ABBANDONATO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_BLOCK_FAILED"></span><span id="mp_threat_status_block_failed"></span>**BLOCCO STATO \_ MINACCIA \_ MP NON \_ \_ RIUSCITO**
+<span id="MP_THREAT_STATUS_BLOCK_FAILED"></span><span id="mp_threat_status_block_failed"></span>**BLOCCO DI \_ STATO DELLE MINACCE MP NON \_ \_ \_ RIUSCITO**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisiti

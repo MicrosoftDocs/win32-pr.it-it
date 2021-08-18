@@ -13,7 +13,7 @@ ms.locfileid: "118913764"
 ---
 # <a name="directory-services-access-rights"></a>Diritti di accesso ai servizi directory
 
-A ogni oggetto di Active Directory è assegnato un [*descrittore*](/windows/desktop/SecGloss/s-gly) di sicurezza. È possibile impostare un set di diritti fiduciari specifici per gli oggetti del servizio directory all'interno di questi descrittori di sicurezza. Questi diritti sono elencati nella tabella seguente. Per altre informazioni, vedere [Controllare i diritti di accesso.](/windows/desktop/AD/control-access-rights)
+A ogni oggetto di Active Directory è [*assegnato un descrittore*](/windows/desktop/SecGloss/s-gly) di sicurezza. È possibile impostare un set di diritti fiduciari specifici per gli oggetti del servizio directory all'interno di questi descrittori di sicurezza. Questi diritti sono elencati nella tabella seguente. Per altre informazioni, vedere [Controllare i diritti di accesso.](/windows/desktop/AD/control-access-rights)
 
 
 

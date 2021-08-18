@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getMediaAtom, metodo
-description: Il metodo getMediaAtom recupera l'indice in corrispondenza del quale si trova un attributo specificato all'interno del set di attributi disponibili.
+title: Metodo MediaCollection.getMediaAtom
+description: Il metodo getMediaAtom recupera l'indice in corrispondenza del quale risiede un attributo specificato all'interno del set di attributi disponibili.
 ms.assetid: 17501a95-1196-43ff-9a4e-a78cf28e7a2d
 keywords:
 - Metodo getMediaAtom Windows Media Player
-- Metodo getMediaAtom Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getMediaAtom
+- Metodo getMediaAtom Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player, metodo getMediaAtom
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16728b20c26b90c10f144f278f7dec24195b536a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f537b759516d5fa0f382d0c72aabbc0edb836ad8e4ae6d7f210d012fa19ea60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837204"
 ---
-# <a name="mediacollectiongetmediaatom-method"></a>Mediacollection. getMediaAtom, metodo
+# <a name="mediacollectiongetmediaatom-method"></a>Metodo MediaCollection.getMediaAtom
 
-Il metodo **getMediaAtom** recupera l'indice in corrispondenza del quale si trova un attributo specificato all'interno del set di attributi disponibili.
+Il **metodo getMediaAtom** recupera l'indice in corrispondenza del quale risiede un attributo specificato all'interno del set di attributi disponibili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,22 +42,22 @@ retVal = MediaCollection.getMediaAtom(
 
 <dl> <dt>
 
-*attributo* \[ in\]
+*attributo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere la Guida di [riferimento](attribute-reference.md)agli attributi di Windows Media Player.
+**Stringa contenente** il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di riferimento Windows Media Player [attributi.](attribute-reference.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-Il numero di indice recuperato con questo metodo può essere passato al *supporto*. metodo **getItemInfoByAtom** per accedere ai valori di attributo. Questa tecnica è in genere più efficiente quando si lavora con playlist di grandi dimensioni anziché accedere a un valore di attributo in base al nome tramite *supporti*. **GetItemInfo** o *supporti*. **getItemInfoByType**.
+Il numero di indice recuperato con questo metodo può essere passato all'oggetto *Media.* **Metodo getItemInfoByAtom** per accedere ai valori degli attributi. Questa tecnica è in genere più efficiente quando si lavora con playlist di grandi dimensioni rispetto all'accesso a un valore di attributo in base al nome tramite *Media*. **getItemInfo** o *Media.* **getItemInfoByType**.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,22 +74,22 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 
 <dl> <dt>
 
-[**Media. getItemInfo**](media-getiteminfo.md)
+[**Media.getItemInfo**](media-getiteminfo.md)
 </dt> <dt>
 
-[**Media. getItemInfoByAtom**](media-getiteminfobyatom.md)
+[**Media.getItemInfoByAtom**](media-getiteminfobyatom.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

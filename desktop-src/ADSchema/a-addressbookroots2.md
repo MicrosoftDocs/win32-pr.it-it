@@ -1,6 +1,6 @@
 ---
 title: Attributo Address-Book-Roots2
-description: Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange Config elenca le radici degli alberi dei contenitori della rubrica. | Attributo Address-Book-Roots2
+description: Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange config elenca le radici degli alberi dei contenitori della rubrica. | Attributo Address-Book-Roots2
 ms.assetid: 1ca41a60-b8ba-4489-9238-b469811d68ac
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118688944"
 ---
 # <a name="address-book-roots2-attribute"></a>Attributo Address-Book-Roots2
 
-Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange Config elenca le radici degli alberi dei contenitori della rubrica.
+Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange config elenca le radici degli alberi dei contenitori della rubrica.
 
 
 
@@ -32,7 +32,7 @@ Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualiz
 | CN                | Address-Book-Roots2                     |
 | Ldap-Display-Name | addressBookRoots2                       |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2046                 |
 | System-Id-Guid    | 508ca374-a511-4e4e-9f4f-856f61a6b7e4    |
@@ -55,7 +55,7 @@ Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualiz
 | ID collegamento                | 2122                                                                                 |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| Is-Single-Valued       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
@@ -76,7 +76,7 @@ Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualiz
 | ID collegamento                | 2122                                                                                 |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| Is-Single-Valued       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
@@ -97,7 +97,7 @@ Usato da Exchange. Exchange gli alberi dei contenitori della rubrica da visualiz
 | ID collegamento                | 2122                                                                                 |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| Is-Single-Valued       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |

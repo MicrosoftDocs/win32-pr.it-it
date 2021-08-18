@@ -1,7 +1,7 @@
 ---
-description: Il metodo UsingDifferentAllocators determina se i pin di input e di output utilizzano allocatori diversi.
+description: Il metodo UsingDifferentAllocators determina se i pin di input e di output usano allocatori diversi.
 ms.assetid: 75feaa6e-6395-4d47-ae92-10a857f8764b
-title: Metodo CTransInPlaceFilter. UsingDifferentAllocators (Transip. h)
+title: Metodo CTransInPlaceFilter.UsingDifferentAllocators (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f20802836adb665614e2bbfb8cb79bdccd5a36ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0033c0f5ded1fe741d27397078367049d72061c40a993833f714686d9f8a96fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953420"
 ---
-# <a name="ctransinplacefilterusingdifferentallocators-method"></a>CTransInPlaceFilter. UsingDifferentAllocators, metodo
+# <a name="ctransinplacefilterusingdifferentallocators-method"></a>Metodo CTransInPlaceFilter.UsingDifferentAllocators
 
-Il `UsingDifferentAllocators` metodo determina se i pin di input e di output utilizzano allocatori diversi.
+Il `UsingDifferentAllocators` metodo determina se i pin di input e output usano allocatori diversi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se i pin di input e di output utilizzano allocatori diversi. in caso contrario, **false** .
+Restituisce **TRUE se** i pin di input e output usano allocatori diversi oppure FALSE in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se i pin di input e di output utilizzano allocatori diversi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

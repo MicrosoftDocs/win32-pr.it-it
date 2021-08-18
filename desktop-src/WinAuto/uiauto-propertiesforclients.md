@@ -11,7 +11,7 @@ keywords:
 - Automazione interfaccia utente,recupero di elementi
 - Automazione interfaccia utente,elements
 - Automazione interfaccia utente,properties
-- Automazione interfaccia utente,recupero di proprietà
+- Automazione interfaccia utente, recupero di proprietà
 - recupero di proprietà
 ms.topic: article
 ms.date: 05/31/2018
@@ -24,11 +24,11 @@ ms.locfileid: "118564372"
 ---
 # <a name="retrieving-properties-from-ui-automation-elements"></a>Recupero di proprietà da Automazione interfaccia utente elementi
 
-Le proprietà degli [**oggetti IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) contengono informazioni sugli elementi dell'interfaccia utente, in genere i controlli. Le proprietà di un elemento sono generiche. che non è specifico di un tipo di controllo. Le proprietà specifiche del controllo di un elemento vengono esposte dalle interfacce del pattern di controllo.
+Le proprietà degli [**oggetti IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) contengono informazioni sugli elementi dell'interfaccia utente, in genere i controlli. Le proprietà di un elemento sono generiche. ciò significa che non è specifico di un tipo di controllo. Le proprietà specifiche del controllo di un elemento vengono esposte dalle relative interfacce del pattern di controllo.
 
 Le Automazione interfaccia utente microsoft sono di sola lettura. Per impostare le proprietà di un controllo, è necessario usare i metodi del pattern di controllo appropriato. Ad esempio, usare [**IUIAutomationScrollPattern::Scroll**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-scroll) per modificare i valori di posizione di una finestra di scorrimento.
 
-Per migliorare le prestazioni, i valori delle proprietà dei controlli e dei pattern di controllo possono essere memorizzati nella cache quando vengono recuperati gli elementi. Per altre informazioni, vedere Proprietà [Caching Automazione interfaccia utente e Pattern di controllo](uiauto-cachingforclients.md).
+Per migliorare le prestazioni, i valori delle proprietà dei controlli e dei pattern di controllo possono essere memorizzati nella cache quando vengono recuperati gli elementi. Per altre informazioni, vedere [Proprietà Caching Automazione interfaccia utente e Pattern di controllo.](uiauto-cachingforclients.md)
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="property-ids"></a>ID di proprietà
 
-Gli identificatori di proprietà sono definiti in Uiautomationclient.h. Vengono usate per specificare le proprietà quando si sottoscriveno eventi di proprietà modificate, si recuperano i valori delle proprietà e si creano condizioni di proprietà. Gli identificatori di proprietà identificano anche la proprietà modificata quando viene chiamato [**IUIAutomationPropertyChangedEventHandler::HandlePropertyChangedEvent.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationpropertychangedeventhandler-handlepropertychangedevent)
+Gli identificatori di proprietà sono definiti in Uiautomationclient.h. Vengono usate per specificare le proprietà quando si sottoscriveno eventi di modifica delle proprietà, si recuperano i valori delle proprietà e si creano condizioni di proprietà. Gli identificatori di proprietà identificano anche la proprietà modificata quando viene chiamato [**IUIAutomationPropertyChangedEventHandler::HandlePropertyChangedEvent.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationpropertychangedeventhandler-handlepropertychangedevent)
 
-Per un elenco di Automazione interfaccia utente proprietà, vedere [Identificatori di proprietà](uiauto-entry-propids.md).
+Per un elenco di identificatori Automazione interfaccia utente proprietà, vedere [Identificatori di proprietà.](uiauto-entry-propids.md)
 
 ## <a name="property-conditions"></a>Condizioni della proprietà
 
-Gli ID proprietà vengono usati nella costruzione di [**oggetti IUIAutomationPropertyCondition**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertycondition) usati per trovare Automazione interfaccia utente elementi. Ad esempio, potrebbe essere necessario trovare un elemento con un determinato nome o tutti i controlli abilitati. Ogni condizione di proprietà specifica un identificatore di proprietà e il valore che la proprietà deve corrispondere.
+Gli ID proprietà vengono usati nella costruzione di oggetti [**IUIAutomationPropertyCondition**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertycondition) usati per trovare Automazione interfaccia utente elementi. Ad esempio, potrebbe essere necessario trovare un elemento con un determinato nome o tutti i controlli abilitati. Ogni condizione di proprietà specifica un identificatore di proprietà e il valore che la proprietà deve corrispondere.
 
 Per altre informazioni, vedere gli argomenti di riferimento riportati di seguito:
 
@@ -57,7 +57,7 @@ Per altre informazioni, vedere gli argomenti di riferimento riportati di seguito
 
 ## <a name="retrieving-properties"></a>Recupero di proprietà
 
-Alcune proprietà generiche e tutte le proprietà del pattern di controllo sono disponibili come proprietà [**nell'interfaccia IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) o del pattern di controllo e possono essere recuperate tramite una funzione di accesso, ad esempio [**IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CachedDockPosition.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_cacheddockposition)
+Alcune proprietà generiche e tutte le proprietà del pattern di controllo sono disponibili come proprietà [**nell'interfaccia IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) o del pattern di controllo e possono essere recuperate usando una funzione di accesso, ad esempio [**IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CachedDockPosition.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_cacheddockposition)
 
 Inoltre, qualsiasi proprietà corrente o memorizzata nella cache (diversa dalle proprietà del pattern di controllo) può essere recuperata usando uno dei metodi seguenti:
 
@@ -66,11 +66,11 @@ Inoltre, qualsiasi proprietà corrente o memorizzata nella cache (diversa dalle 
 -   [**Getcachedpropertyvalue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpropertyvalue)
 -   [**GetCachedPropertyValueEx**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpropertyvalueex)
 
-Questi metodi offrono prestazioni leggermente migliori e l'accesso all'intera gamma di proprietà. Tuttavia, i valori vengono restituiti nelle [**strutture VARIANT,**](/windows/win32/api/oaidl/ns-oaidl-variant) mentre le singole funzioni di accesso alle proprietà esere il cast del valore al tipo appropriato.
+Questi metodi offrono prestazioni leggermente migliori e l'accesso alla gamma completa di proprietà. Tuttavia, i valori vengono restituiti nelle [**strutture VARIANT,**](/windows/win32/api/oaidl/ns-oaidl-variant) mentre le singole funzioni di accesso alle proprietà ese ciascuna esegue il cast del valore al tipo appropriato.
 
 ## <a name="default-property-values"></a>Valori di proprietà predefiniti
 
-Se un provider Automazione interfaccia utente non implementa una proprietà, Automazione interfaccia utente può fornire un valore predefinito. Ad esempio, se il provider per un controllo non supporta la proprietà identificata da [**UIA \_ HelpTextPropertyId,**](uiauto-automation-element-propids.md)Automazione interfaccia utente restituisce una stringa vuota. Analogamente, se il provider non supporta la proprietà identificata da [**UIA \_ IsDockPatternAvailablePropertyId,**](uiauto-control-pattern-availability-propids.md)Automazione interfaccia utente restituisce **FALSE.**
+Se un provider Automazione interfaccia utente non implementa una proprietà, Automazione interfaccia utente può fornire un valore predefinito. Ad esempio, se il provider per un controllo non supporta la proprietà identificata da [**\_ UIA HelpTextPropertyId,**](uiauto-automation-element-propids.md)Automazione interfaccia utente restituisce una stringa vuota. Analogamente, se il provider non supporta la proprietà identificata da [**\_ UIA IsDockPatternAvailablePropertyId**](uiauto-control-pattern-availability-propids.md), Automazione interfaccia utente restituisce **FALSE.**
 
 La differenza tra [**IUIAutomationElement::GetCurrentPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue) e [**GetCurrentPropertyValueEx**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalueex) (e tra coppie simili di metodi) è che il metodo "Ex" può specificare che non deve essere restituito alcun valore predefinito. In questo caso, il valore restituito è una costante univoca speciale, che indica che la proprietà non è supportata. Quando riceve questo valore, l'applicazione può fornire il proprio valore o semplicemente ignorare la proprietà .
 

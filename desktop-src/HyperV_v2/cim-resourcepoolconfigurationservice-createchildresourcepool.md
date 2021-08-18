@@ -57,7 +57,7 @@ Stringa contenente una rappresentazione di [**un'istanza \_ CIM SettingData**](c
 
 </dd> <dt>
 
-*ParentPool* \[ Pollici\]
+*Pool padre* \[ Pollici\]
 </dt> <dd>
 
 Pool [**di risorse CIM \_**](cim-resourcepool.md) da cui creare il nuovo pool.

@@ -1,7 +1,7 @@
 ---
 description: La tabella Control definisce i controlli visualizzati in ogni finestra di dialogo.
 ms.assetid: cbe7acd6-b916-45f3-b694-d2345c5a892a
-title: Tabella dei controlli
+title: Tabella di controllo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d2e1832a2cb600e8d7a27b43bc28c94836396d74a50a90b44d0e5013bde973c1
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118638533"
 ---
-# <a name="control-table"></a>Tabella dei controlli
+# <a name="control-table"></a>Tabella di controllo
 
 La tabella Control definisce i controlli visualizzati in ogni finestra di dialogo.
 
@@ -52,7 +52,7 @@ Chiave esterna alla prima colonna della tabella [Dialog](dialog-table.md), il no
 <span id="Control"></span><span id="control"></span><span id="CONTROL"></span>Controllo
 </dt> <dd>
 
-Nome del controllo. Questo nome deve essere univoco all'interno di una finestra di dialogo, ma può essere ripetuto in finestre di dialogo diverse. La colonna Control combinata con la colonna Dialog \_ forma la chiave primaria per questa tabella.
+Nome del controllo. Questo nome deve essere univoco all'interno di una finestra di dialogo, ma può essere ripetuto in finestre di dialogo diverse. La colonna Control combinata con la colonna Dialog \_ forma la chiave primaria di questa tabella.
 
 </dd> <dt>
 
@@ -66,51 +66,51 @@ Tipo del controllo. Per un elenco dei tipi di controllo, vedere [Controlli](cont
 <span id="X"></span><span id="x"></span>X
 </dt> <dd>
 
-Coordinata orizzontale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
+Coordinata orizzontale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Attributo position control](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Y"></span><span id="y"></span>Y
 </dt> <dd>
 
-Coordinata verticale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
+Coordinata verticale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Attributo position control](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Width"></span><span id="width"></span><span id="WIDTH"></span>Larghezza
 </dt> <dd>
 
-Larghezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
+Larghezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Attributo position control](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Height"></span><span id="height"></span><span id="HEIGHT"></span>Altezza
 </dt> <dd>
 
-Altezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
+Altezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Attributo position control](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 </dt> <dd>
 
-Parola a 32 bit che specifica i flag di bit da applicare a questo controllo. Deve essere un numero non negativo e i valori consentiti dipendono dal tipo di controllo. Per un elenco di tutti gli attributi del controllo e il valore da immettere in questo campo, vedere [Attributi di controllo.](control-attributes.md)
+Parola a 32 bit che specifica i flag di bit da applicare a questo controllo. Deve essere un numero non negativo e i valori consentiti dipendono dal tipo di controllo. Per un elenco di tutti gli attributi del controllo e il valore da immettere in questo campo, vedere [Attributi di controllo](control-attributes.md).
 
 </dd> <dt>
 
 <span id="Property"></span><span id="property"></span><span id="PROPERTY"></span>Proprietà
 </dt> <dd>
 
-Nome di una proprietà definita da collegare a questo controllo. I valori dei pulsanti di opzione, delle caselle di riepilogo e delle caselle combinate sono collegati a un gruppo tramite il collegamento alla stessa proprietà. Questa colonna è obbligatoria per i controlli attivi.
+Nome di una proprietà definita da collegare a questo controllo. I valori di pulsante di opzione, casella di riepilogo e casella combinata vengono associati a un gruppo tramite il collegamento alla stessa proprietà. Questa colonna è obbligatoria per i controlli attivi.
 
 </dd> <dt>
 
 <span id="Text"></span><span id="text"></span><span id="TEXT"></span>Testo
 </dt> <dd>
 
-Stringa localizzabile utilizzata per impostare il testo iniziale contenuto in un controllo . La stringa può anche contenere proprietà incorporate. Per la sintassi di una stringa formattata contenente proprietà, vedere la [**funzione MsiFormatRecord.**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) Specificare le dimensioni, il tipo di carattere e il colore del testo antendo alla stringa di testo { style}, dove style è uno stile di testo creato nella colonna TextStyle della tabella \\ [TextStyle](textstyle-table.md). La stringa di testo viene troncata se è troppo lunga per adattarsi al controllo. La stringa di testo può essere vuota.
+Stringa localizzabile utilizzata per impostare il testo iniziale contenuto in un controllo . La stringa può contenere anche proprietà incorporate. Per la sintassi di una stringa formattata contenente proprietà, vedere la [**funzione MsiFormatRecord.**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) Specificare le dimensioni, il tipo di carattere e il colore del testo antefissendo la stringa di testo con { style}, dove style è uno stile di testo creato nella colonna TextStyle della \\ [tabella TextStyle](textstyle-table.md). La stringa di testo viene troncata se è troppo lunga per adattarsi al controllo. La stringa di testo può essere vuota.
 
-La creazione speciale [](formatted.md) della stringa di testo formattata in questo campo è [](text-control.md) necessaria se il testo deve essere visualizzato da un controllo Testo che si trova in una finestra di dialogo con l'attributo TrackDiskpace. Questo è il caso specificato dal bit di stile della finestra di [dialogo TrackDiskSpace](trackdiskspace-dialog-style-bit.md) visualizzato negli attributi della [tabella Dialog](dialog-table.md). In questo caso, se la stringa formattata nella colonna Text della tabella Control inizia con " " e termina con " ", è necessario aggiungere uno spazio alla fine \[ \] della stringa. Ad esempio, se DlgTextFont è una proprietà che verrà impostata su "{ DlgFontBold}" la stringa formattata \\ " \[ DlgTextFont \] MyText ProductName " richiede lo spazio alla fine dopo la parentesi di \[ \] chiusura. Questo spazio aggiuntivo è necessario al programma di installazione per visualizzare correttamente il testo nel controllo Text.
+La creazione speciale [](formatted.md) della stringa di testo formattata in questo campo è [](text-control.md) necessaria se il testo deve essere visualizzato da un controllo di testo che si trova in una finestra di dialogo con l'attributo TrackDiskpace. Questo è il caso specificato da [TrackDiskSpace Dialog Style Bit](trackdiskspace-dialog-style-bit.md) visualizzato negli attributi della [tabella Dialog](dialog-table.md). In questo caso, se la stringa formattata nella colonna Text della tabella Control inizia con " " e termina con " ", è necessario aggiungere uno spazio alla fine \[ \] della stringa. Ad esempio, se DlgTextFont è una proprietà che verrà impostata su "{ DlgFontBold}" la stringa formattata \\ " \[ DlgTextFont \] MyText ProductName " richiede lo spazio alla fine dopo la parentesi di \[ \] chiusura. Questo spazio aggiuntivo è necessario al programma di installazione per visualizzare correttamente il testo nel controllo Text.
 
 È possibile immettere una breve stringa di testo descrittiva per i controlli [VolumeCostList](volumecostlist-control.md), [ListView](listview-control.md), [DirectoryList](directorylist-control.md)e [SelectionTree](selectiontree-control.md). Questo testo non viene visualizzato dall'utente, ma può essere letto dalle utilità per la lettura dello schermo come descrizione del controllo.
 

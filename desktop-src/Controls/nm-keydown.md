@@ -1,9 +1,9 @@
 ---
-title: NM_KEYDOWN codice di notifica (Commctrl.h)
-description: "NM_KEYDOWN codice di notifica: inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio WM \\_ NOTIFY."
+title: NM_KEYDOWN di notifica (Commctrl.h)
+description: "NM_KEYDOWN di notifica: inviato da un controllo quando il controllo ha lo stato attivo e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio WM \\_ NOTIFY."
 ms.assetid: e3b38096-797d-4948-9595-a252cf33dcdd
 keywords:
-- NM_KEYDOWN codice di notifica controlli Windows
+- NM_KEYDOWN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce595378995e41fd8a0f481d7470c8cf791f6379
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2c68dd0eaa82d8a8687aaadaa195e4fba121e7db84031eefe1404ad387748580
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958100"
 ---
 # <a name="nm_keydown-notification-code"></a>Codice \_ di notifica NM KEYDOWN
 
-Inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Inviato da un controllo quando il controllo ha lo stato attivo e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntatore a una [**struttura NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nm
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero per impedire al controllo di elaborare la chiave oppure zero in caso contrario.
+Restituisce un valore diverso da zero per impedire al controllo di elaborare il tasto oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Restituisce un valore diverso da zero per impedire al controllo di elaborare la 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

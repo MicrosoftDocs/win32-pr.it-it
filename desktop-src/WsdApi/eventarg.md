@@ -15,7 +15,7 @@ ms.locfileid: "118552422"
 
 Specifica se gli argomenti di evento correlati vengono inclusi nelle funzioni generate.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <eventArg/>

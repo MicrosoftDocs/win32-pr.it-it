@@ -1,26 +1,26 @@
 ---
-description: Le enumerazioni seguenti vengono utilizzate dal provider della funzione di accesso Update.
+description: Le enumerazioni seguenti vengono usate dal provider della funzione di accesso Update.
 ms.assetid: CFE20D9D-26E1-4376-A7C5-E901E0ADD1B9
-title: Aggiorna enumerazioni del valutatore
+title: Aggiornare le enumerazioni dei valutatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f7005686c34d353f811dba5e19f4442ccf288fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87a0be6ff52c5e42dae763624f4ef6b62573c36cf1f394ce56df254b5ddb5cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884492"
 ---
-# <a name="update-assessor-enumerations"></a>Aggiorna enumerazioni del valutatore
+# <a name="update-assessor-enumerations"></a>Aggiornare le enumerazioni dei valutatori
 
-Le enumerazioni seguenti vengono utilizzate dal provider della funzione di accesso Update.
+Le enumerazioni seguenti vengono usate dal provider della funzione di accesso Update.
 
 
 
 | Funzione                                                 | Descrizione                                                                    |
 |----------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**UpdateAssessmentStatus**](updateassessmentstatus.md) | Viene descritto come aggiornare il sistema operativo in un dispositivo.                                |
-| [**UpdateImpactLevel**](updateimpactlevel.md)           | Indica un effetto elevato, medio o basso di un dispositivo che esegue un sistema operativo non aggiornato. |
+| [**UpdateAssessmentStatus**](updateassessmentstatus.md) | Descrive quanto è aggiornato il sistema operativo in un dispositivo.                                |
+| [**UpdateImpactLevel**](updateimpactlevel.md)           | Indica un impatto alto, medio o basso di un dispositivo che esegue un sistema operativo non aggiornato. |
 
 
 

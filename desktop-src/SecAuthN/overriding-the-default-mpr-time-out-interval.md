@@ -1,25 +1,25 @@
 ---
-description: Il router multi-provider (MPR) chiama NPGetCaps per scoprire quando vengono avviati i provider di rete (nIndex è impostato su WNNC \_ Start).
+description: Il router a più provider chiama NPGetCaps per individuare quando verranno avviati i provider di rete (nIndex è impostato su WNNC \_ START).
 ms.assetid: f57bd8ff-647d-42f8-abaf-7937b24416dd
-title: Sostituzione dell'intervallo di timeout predefinito di MPR
+title: Override dell'intervallo di timeout MPR predefinito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4308d94f4b16a7f67786c8a0856f23922e6f25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c51c2c9db2fb892b7c2fc9646a9328fb9de4b7f9782ff5204ed261b16471ca4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118921135"
 ---
-# <a name="overriding-the-default-mpr-time-out-interval"></a>Sostituzione dell'intervallo di timeout predefinito di MPR
+# <a name="overriding-the-default-mpr-time-out-interval"></a>Override dell'intervallo di timeout MPR predefinito
 
-Il [*router multi-provider*](../secgloss/m-gly.md) (MPR) chiama [**NPGetCaps**](/windows/desktop/api/Npapi/nf-npapi-npgetcaps) per scoprire quando vengono avviati i provider di rete (*nIndex* è impostato su WNNC \_ Start). Il MPR attende quindi il periodo di timeout più lungo specificato da tutti i provider di rete prima di presentare la rete consolidata all'utente. Se uno dei provider di rete non è a conoscenza del momento in cui viene avviato, MPR utilizza un timeout predefinito di 60 secondi per il provider.
+Il [*router a più provider*](../secgloss/m-gly.md) chiama [**NPGetCaps**](/windows/desktop/api/Npapi/nf-npapi-npgetcaps) per individuare quando verranno avviati i provider di rete (*nIndex* è impostato su WNNC \_ START). L'MPR attende quindi il periodo di timeout più lungo specificato da tutti i provider di rete prima di presentarla all'utente. Se uno dei provider di rete non sa quando verrà avviato, MPR usa un timeout predefinito di 60 secondi per tale provider.
 
-Se necessario, l'amministratore può eseguire l'override del timeout predefinito creando il seguente timeout del registro di sistema **reg \_ DWORD** , dove *n* è l'intervallo di timeout in millisecondi:
+Se necessario, l'amministratore può eseguire l'override del timeout predefinito creando il timeout del Registro di sistema **\_ REG DWORD** seguente, dove *n* è l'intervallo di timeout in millisecondi:
 
-**HKEY \_ \_Computer locale** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **NetworkProvider** \\ **RestoreTimeout**  =  *n*
+**HKEY \_ LOCAL \_ MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Control** \\ **NetworkProvider** \\ **RestoreTimeout**  =  *n*
 
-Lo pseudocodice seguente illustra il flusso di logica completo per la gestione del timeout da parte di MPR.
+Lo pseudocodice seguente illustra il flusso logico completo per la gestione del timeout da parte della richiesta di ripristino di microsoft.
 
 
 ```C++

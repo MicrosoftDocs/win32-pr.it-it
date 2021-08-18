@@ -3,7 +3,7 @@ title: Metodo ISearchResult ThumbnailState
 description: Riservato. | Metodo ISearchResult ThumbnailState
 ms.assetid: b91727a6-a193-4767-a8ff-05ac64f1f27f
 keywords:
-- Metodo ThumbnailState Legacy Windows Environment Features
+- Metodo ThumbnailState Funzionalità dell'Windows legacy
 - Metodo ThumbnailState Legacy Windows Environment Features , interfaccia ISearchResult
 - Interfaccia ISearchResult Legacy Windows Environment Features , metodo ThumbnailState
 ms.topic: reference

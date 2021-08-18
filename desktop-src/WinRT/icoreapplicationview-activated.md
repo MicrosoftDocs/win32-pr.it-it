@@ -1,5 +1,5 @@
 ---
-description: Si verifica quando viene Windows'app dello Store.
+description: Si verifica quando viene Windows'app di Store.
 ms.assetid: CA0DB2D4-3417-48F5-8455-D87D0F323A1E
 title: Evento ICoreApplicationView::Activated (Windows. ApplicationModel.Core.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118560995"
 ---
 # <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView::Activated
 
-Si verifica quando viene Windows'app dello Store.
+Si verifica quando viene Windows'app di Store.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Non chiamare il metodo [**Exit**](/previous-versions//hh438368(v=vs.85)) dall'interno *del gestore*.
+Non chiamare il metodo [**Exit dall'interno**](/previous-versions//hh438368(v=vs.85)) del *gestore*.
 
 ## <a name="requirements"></a>Requisiti
 

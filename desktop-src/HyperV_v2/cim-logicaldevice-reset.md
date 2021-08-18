@@ -1,7 +1,7 @@
 ---
 description: Richiede una reimpostazione di LogicalDevice.
 ms.assetid: f7655825-3de5-421f-a3e9-97d2f605affd
-title: Metodo Reset della classe CIM_LogicalDevice (gestione Hyper-V)
+title: Metodo Reset della classe CIM_LogicalDevice (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648536"
 ---
-# <a name="reset-method-of-the-cim_logicaldevice-class-hyper-v-management"></a>Metodo Reset della classe CIM_LogicalDevice (gestione Hyper-V)
+# <a name="reset-method-of-the-cim_logicaldevice-class-hyper-v-management"></a>Metodo Reset della classe CIM_LogicalDevice (gestione di Hyper-V)
 
-Richiede una reimpostazione di LogicalDevice. In una sottoclasse è possibile impostare il set di possibili codici restituiti usando un qualificatore ValueMap nel metodo . Le stringhe in cui il contenuto di ValueMap viene "tradotto" possono essere specificate anche nella sottoclasse come qualificatore di matrice Values.
+Richiede una reimpostazione di LogicalDevice. In una sottoclasse è possibile specificato il set di codici restituiti possibili, usando un qualificatore ValueMap nel metodo. Le stringhe in cui il contenuto di ValueMap viene 'convertito' possono essere specificate anche nella sottoclasse come qualificatore di matrice Values.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 

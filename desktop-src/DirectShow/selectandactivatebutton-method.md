@@ -4,12 +4,12 @@ ms.assetid: fa6239ea-0478-41f1-9515-d67a7fad11db
 title: Metodo SelectAndActivateButton
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 717af00becd5f00f55b166353246f92ea7dfd1bd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d141616356db5daf2ebcb19579b924f6d4cab956e03d876d0254666d55b5702b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951910"
 ---
 # <a name="selectandactivatebutton-method"></a>Metodo SelectAndActivateButton
 
@@ -28,10 +28,10 @@ MSWebDVD.SelectAndActivateButton(iButton)
 
 <dl> <dt>
 
-<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*iButton*
+<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*Ibutton*
 </dt> <dd>
 
-Specifica il pulsante come intero.
+Specifica il pulsante come integer.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo quando si implementa la gestione personalizzata del mouse dopo l'impostazione di [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true**.
+Usare questo metodo quando si implementa la gestione personalizzata del mouse dopo l'impostazione [**di DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true.**
 
 Questo metodo evidenzia il pulsante specificato e lo attiva automaticamente.
 
@@ -49,7 +49,7 @@ Questo metodo evidenzia il pulsante specificato e lo attiva automaticamente.
 
 <dl> <dt>
 
-[**ButtonsAvailable**](buttonsavailable-property.md)
+[**PulsantiDisponibili**](buttonsavailable-property.md)
 </dt> <dt>
 
 [**CurrentButton**](currentbutton-property.md)

@@ -164,7 +164,7 @@ Stato dell'opzione **Mostra unità di rete mappa nella barra degli** strumenti. 
 
 </dt> <dd>
 
-Stato dell'opzione visualizza Cestino di conferma **dell'eliminazione** della finestra di dialogo.
+Stato della finestra di dialogo Cestino visualizza **la finestra di dialogo di conferma dell'eliminazione.**
 
 </dd> <dt>
 
@@ -318,7 +318,7 @@ Non usato.
 
 </dt> <dd>
 
-Lo stato dell'Windows di visualizzazione XP, che consente di selezionare tra lo Windows stile XP e lo stile classico. A Windows Vista, questa opzione non è più disponibile.
+Lo stato dell'Windows di visualizzazione XP, che consente di selezionare tra lo stile Windows XP e lo stile classico. A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 

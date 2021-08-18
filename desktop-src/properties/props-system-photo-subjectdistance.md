@@ -1,19 +1,19 @@
 ---
-description: Distanza al soggetto in metri. Calcolato da PKEY \_ Photo \_ SUBJECTDISTANCENUMERATOR e PKEY \_ Photo \_ SubjectDistanceDenominator.
+description: Distanza dell'oggetto in metri. Calcolato da PKEY \_ Photo \_ SubjectDistanceNumerator e PKEY \_ Photo \_ SubjectDistanceDenominator.
 ms.assetid: 41d48485-9317-4eb2-ab3f-e0c5d3c690bc
-title: System. Photo. SubjectDistance
+title: System.Photo.SubjectDistance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4286352fb357b5e97d4cb7ec0da078cda967646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a03c306fe1917126786ee8a4bc24a4794f13a49eda2299386b27d3428b223aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465844"
 ---
-# <a name="systemphotosubjectdistance"></a>System. Photo. SubjectDistance
+# <a name="systemphotosubjectdistance"></a>System.Photo.SubjectDistance
 
-Distanza al soggetto in metri. Calcolato da PKEY \_ Photo \_ SUBJECTDISTANCENUMERATOR e PKEY \_ Photo \_ SubjectDistanceDenominator.
+Distanza dell'oggetto in metri. Calcolato da PKEY \_ Photo \_ SubjectDistanceNumerator e PKEY \_ Photo \_ SubjectDistanceDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,16 +33,16 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Exchangeable Image File Format per fotocamere digitali ancora: EXIF versione 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -51,13 +51,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -66,13 +66,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

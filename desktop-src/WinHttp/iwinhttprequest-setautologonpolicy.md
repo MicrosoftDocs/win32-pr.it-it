@@ -49,7 +49,7 @@ Specifica i criteri di accesso automatico correnti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
+Il valore restituito è **S \_ OK in** caso di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
@@ -90,7 +90,7 @@ HttpReq.Send();
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con app desktop SP3 \[\]<br/>         |
 | Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |

@@ -32,7 +32,7 @@ Nome visualizzato per un moniker.
 | CN                | Moniker-Display-Name                        |
 | Ldap-Display-Name | monikerDisplayName                          |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.83                       |
 | System-Id-Guid    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
@@ -66,7 +66,7 @@ Nome visualizzato per un moniker.
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Nome visualizzato per un moniker.
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ Nome visualizzato per un moniker.
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -142,7 +142,7 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -163,7 +163,7 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| A valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |

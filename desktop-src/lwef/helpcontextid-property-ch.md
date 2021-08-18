@@ -20,14 +20,14 @@ ms.locfileid: "118478718"
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce o imposta un numero di contesto associato per il carattere. Utilizzato per fornire la Guida sensibile al contesto per il carattere.
+Restituisce o imposta un numero di contesto associato per il carattere. Usato per fornire la Guida sensibile al contesto per il carattere.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agent.***Characters("**_CharacterID_*_"). HelpContextID_ *  \[  =  *Number*\]
+*agent.***Characters("**_CharacterID_*_"). Numero_ *  \[  =  *HelpContextID*\]
 
 
 
@@ -43,12 +43,12 @@ Restituisce o imposta un numero di contesto associato per il carattere. Utilizza
 
 ## <a name="remarks"></a>Commenti
 
-Per supportare la Guida sensibile al contesto per il carattere, assegnare il numero di contesto al carattere utilizzato per l'argomento della Guida associato quando si compila il file della Guida. Questa proprietà si applica solo al client del carattere. L'impostazione non influisce sugli altri client del carattere o di altri caratteri del client.
+Per supportare la Guida sensibile al contesto per il carattere, assegnare il numero di contesto al carattere utilizzato per l'argomento della Guida associato quando si compila il file della Guida. Questa proprietà si applica solo al client del carattere. l'impostazione non influisce sugli altri client del carattere o di altri caratteri del client.
 
-Se è stato creato un file della Guida Windows per l'applicazione e si è impostata la proprietà [**HelpFile**](helpfile-property.md) del carattere, Agent chiama automaticamente help quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente fa clic sul carattere. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property.md), Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il carattere.
+Se è stato creato un file della Guida Windows per l'applicazione e si imposta la proprietà [**HelpFile**](helpfile-property.md) del carattere, Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente fa clic sul carattere. Se è presente un numero di contesto in [**HelpContextID,**](helpcontextid-property.md)Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il carattere.
 
 > [!Note]  
-> Per compilare un file della Guida è necessario il compilatore della Guida Windows Microsoft.
+> La compilazione di un file della Guida richiede il compilatore della Guida Windows Microsoft.
 
  
 
