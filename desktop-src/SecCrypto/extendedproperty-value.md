@@ -1,7 +1,7 @@
 ---
 description: Imposta o recupera i dati delle proprietà estese.
 ms.assetid: 115bb52a-e64d-4d84-a491-35f6dba25a58
-title: Proprietà ExtendedProperty. Value
+title: ExtendedProperty.Value - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ebbd977a107d92661110ceff02f3a5bb0bea191e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2210457bc984aca561a87424edd8496d5913190910f898654cd10955314e6f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007069"
 ---
-# <a name="extendedpropertyvalue-property"></a>Proprietà ExtendedProperty. Value
+# <a name="extendedpropertyvalue-property"></a>ExtendedProperty.Value - proprietà
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece i servizi PInvoke (Platform Invocation Services) per chiamare la funzione API Win32 [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) e ottenere le proprietà. Per informazioni su PInvoke, vedere l' [esercitazione Platform Invoke](https://msdn.microsoft.com/library/aa288468.aspx). Può essere utile anche [.NET e CryptoAPI tramite p/invoke: parte 1](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) e [.NET e CryptoAPI tramite p/invoke: parte 2](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) sottosezioni di [estensione della crittografia .NET con CAPICOM e P/Invoke](/previous-versions/ms867087(v=msdn.10)) .\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece Platform Invocation Services (PInvoke) per chiamare la funzione api Win32 [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) e ottenere le proprietà. Per informazioni su PInvoke, vedere [Esercitazione su Platform Invoke.](https://msdn.microsoft.com/library/aa288468.aspx) Possono essere utili anche .NET e [CryptoAPI tramite P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) parte 1 e .NET e [CryptoAPI tramite P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) parte 2 delle sottosezioni estensione della crittografia .NET con CAPICOM e [P/Invoke.](/previous-versions/ms867087(v=msdn.10))\]
 
-La proprietà **value** imposta o recupera i dati delle proprietà estese.
+La **proprietà Value** imposta o recupera i dati delle proprietà estese.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ ExtendedProperty.Value( _
 
 ## <a name="property-value"></a>Valore proprietà
 
-Dati della proprietà estesa, nel formato specificato da *EncodingType*.
+Dati delle proprietà estese, nel formato specificato da *EncodingType.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Dati della proprietà estesa, nel formato specificato da *EncodingType*.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

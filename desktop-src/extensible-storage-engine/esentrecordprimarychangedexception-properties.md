@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulle proprietà di EsentRecordPrimaryChangedException
+description: 'Altre informazioni su: Proprietà di EsentRecordPrimaryChangedException'
 title: Proprietà di EsentRecordPrimaryChangedException
 TOCTitle: EsentRecordPrimaryChangedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentRecordPrimaryChangedException
@@ -17,7 +17,7 @@ ms.locfileid: "119477931"
 # <a name="esentrecordprimarychangedexception-properties"></a>Proprietà di EsentRecordPrimaryChangedException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentRecordPrimaryChangedException](./esentrecordprimarychangedexception-class.md) espone i membri seguenti.
 

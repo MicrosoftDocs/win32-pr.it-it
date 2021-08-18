@@ -1,25 +1,25 @@
 ---
-description: Questo esempio illustra l'uso della funzione GetProcessHeaps per recuperare gli handle per l'heap di processo predefinito e per eventuali heap privati attivi per il processo corrente.
+description: Questo esempio illustra l'uso della funzione GetProcessHeaps per recuperare gli handle per l'heap del processo predefinito ed eventuali heap privati attivi per il processo corrente.
 ms.assetid: 00f69593-f03b-4f30-aeec-db3fda0ac356
-title: Recupero degli heap del processo
+title: Recupero degli heap dei processi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caffc8dcc69b02ab671b379dbb5e133e65f8d448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52b055bd558d12506d5a900c369365cb497e3817dbfa1fd53dd6506f6a919eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067841"
 ---
-# <a name="getting-process-heaps"></a>Recupero degli heap del processo
+# <a name="getting-process-heaps"></a>Recupero degli heap dei processi
 
-Questo esempio illustra l'uso della funzione [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) per recuperare gli handle per l'heap di processo predefinito e per eventuali heap privati attivi per il processo corrente.
+Questo esempio illustra l'uso della funzione [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) per recuperare gli handle per l'heap del processo predefinito ed eventuali heap privati attivi per il processo corrente.
 
-Nell'esempio viene chiamato due volte [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) , prima per calcolare le dimensioni del buffer necessarie e di nuovo per recuperare gli handle nel buffer. Il buffer viene allocato dall'heap di processo predefinito, usando l'handle restituito da [**GetProcessHeap**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap). Nell'esempio l'indirizzo iniziale di ogni heap viene stampato nella console. USA quindi la funzione [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) per liberare la memoria allocata per il buffer.
+L'esempio [**chiama GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) due volte, prima per calcolare le dimensioni del buffer necessario e di nuovo per recuperare gli handle nel buffer. Il buffer viene allocato dall'heap del processo predefinito, usando l'handle restituito da [**GetProcessHeap.**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap) L'esempio stampa l'indirizzo iniziale di ogni heap nella console. Usa quindi la funzione [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) per liberare la memoria allocata per il buffer.
 
-Il numero di heap in un processo può variare. Un processo ha sempre almeno un heap, ovvero l'heap del processo predefinito, e potrebbe avere uno o più heap privati creati dall'applicazione o da DLL caricate nello spazio degli indirizzi del processo.
+Il numero di heap in un processo può variare. Un processo ha sempre almeno un heap, ovvero l'heap del processo predefinito, e può avere uno o più heap privati creati dall'applicazione o dalle DLL caricate nello spazio degli indirizzi del processo.
 
-Si noti che un'applicazione deve chiamare funzioni heap solo nell'heap dei processi predefinito o negli heap privati creati dall'applicazione. la chiamata di funzioni heap in un heap privato di proprietà di un altro componente può causare un comportamento non definito.
+Si noti che un'applicazione deve chiamare le funzioni heap solo nell'heap del processo predefinito o negli heap privati creati dall'applicazione. La chiamata di funzioni heap su un heap privato di proprietà di un altro componente può causare un comportamento indefinito.
 
 
 ```C++

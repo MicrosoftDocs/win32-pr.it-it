@@ -1,10 +1,10 @@
 ---
-title: Transport-DLL-Name (attributo)
+title: Attributo Transport-DLL-Name
 description: Nome della DLL che gestirà un trasporto.
 ms.assetid: a6b078ec-8738-4c57-9d94-05a96dbc645b
 ms.tgt_platform: multiple
 keywords:
-- Trasporto-nome-DLL-schema di AD
+- Schema AD dell'attributo Transport-DLL-Name
 - Schema AD dell'attributo transportDLLName
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c118a2f7553c86de4b3c36b2904a3b7d75518a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2520eb57be8b14f33314192cb6347d85ca3a0ad8a1fc1818b53e5da52099d33d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022009"
 ---
-# <a name="transport-dll-name-attribute"></a>Transport-DLL-Name (attributo)
+# <a name="transport-dll-name-attribute"></a>Attributo Transport-DLL-Name
 
 Nome della DLL che gestirà un trasporto.
 
@@ -29,13 +29,13 @@ Nome della DLL che gestirà un trasporto.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Transport-nome-DLL                          |
-| LDAP-Display-Name | transportDLLName                            |
+| CN                | Transport-DLL-Name                          |
+| Ldap-Display-Name | transportDLLName                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
-| Frequenza di aggiornamento  | Quando si connettono i siti.                      |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Frequenza di aggiornamento  | Quando si connettono siti.                      |
 | Attribute-Id      | 1.2.840.113556.1.4.789                      |
-| System-ID-GUID    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
+| System-Id-Guid    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Nome della DLL che gestirà un trasporto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome della DLL che gestirà un trasporto.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> |
 
 
 

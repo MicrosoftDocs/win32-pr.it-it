@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni: Costruttore UInt32ColumnValue'
+description: Altre informazioni sul costruttore UInt32ColumnValue
 title: Costruttore UInt32ColumnValue
 TOCTitle: 'UInt32ColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.UInt32ColumnValue.#ctor

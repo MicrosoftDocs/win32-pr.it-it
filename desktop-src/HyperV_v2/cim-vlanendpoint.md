@@ -1,7 +1,7 @@
 ---
-description: Un endpoint su un'opzione o una stazione finale assegnata a una VLAN oppure accetta il traffico da una o più VLAN.
+description: Endpoint in un commutatore o stazione finale assegnato a una VLAN o che accetta il traffico da una o più VLAN.
 ms.assetid: 20943be3-35c3-4bf5-8f1a-d4095fa6897e
-title: Classe CIM_VLANEndpoint
+title: CIM_VLANEndpoint classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0f7b0d1318e4c24ab7381032877d16a8ea83868b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caaedae456ded5b918a19b09f18ebcf7f32c0edf2c0eff6c16d8ff98519b1dd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068501"
 ---
-# <a name="cim_vlanendpoint-class"></a>CIM \_ VLANEndpoint (classe)
+# <a name="cim_vlanendpoint-class"></a>Classe CIM \_ VLANEndpoint
 
-Un endpoint su un'opzione o una stazione finale assegnata a una VLAN oppure accetta il traffico da una o più VLAN.
+Endpoint in un commutatore o stazione finale assegnato a una VLAN o che accetta il traffico da una o più VLAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,29 +49,29 @@ class CIM_VLANEndpoint : CIM_ProtocolEndpoint
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VLANEndpoint** presenta questi tipi di membri:
+La **classe CIM \_ VLANEndpoint** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ VLANEndpoint** dispone di queste proprietà.
+La **classe CIM \_ VLANEndpoint** ha queste proprietà.
 
 <dl> <dt>
 
 **DesiredEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OperationalEndpointMode**","**CIM \_ VLANEndpoint**.**OtherEndpointMode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OperationalEndpointMode**", "**CIM \_ VLANEndpoint**.**OtherEndpointMode**")
 </dt> </dl>
 
-La modalità VLAN richiesta per l'endpoint.
+Modalità VLAN richiesta per l'endpoint.
 
 <dt>
 
@@ -98,14 +98,14 @@ La modalità VLAN richiesta per l'endpoint.
 
 <span id="Dynamic_Auto"></span><span id="dynamic_auto"></span><span id="DYNAMIC_AUTO"></span>
 
-**Auto dinamica** (3)
+**Auto dinamico** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dynamic_Desirable"></span><span id="dynamic_desirable"></span><span id="DYNAMIC_DESIRABLE"></span>
 
-**Auspicabile dinamico** (4)
+**Desiderabile** dinamico (4)
 
 
 </dt> <dd></dd> <dt>
@@ -119,14 +119,14 @@ La modalità VLAN richiesta per l'endpoint.
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Tunnel Dot1Q** (6)
+**Dot1Q Tunnel** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (7.. 32767)
+**DmTF riservato** (7..32767)
 
 
 </dt> <dd></dd> <dt>
@@ -143,19 +143,19 @@ La modalità VLAN richiesta per l'endpoint.
 **DesiredVLANTrunkEncapsulation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VLANEndpointCapabilities. SupportsTrunkEncapsulationNegotiation", "**CIM \_ VLANEndpoint**.**OperationalVLANTrunkEncapsulation**","**CIM \_ VLANEndpoint**.**OtherTrunkEncapsulation**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VLANEndpointCapabilities.SupportsTrunkEncapsulationNegotiation", "**CIM \_ VLANEndpoint**.**OperationalVLANTrunkEncapsulation**", "**CIM \_ VLANEndpoint**.**OtherTrunkEncapsulation**")
 </dt> </dl>
 
 Tipo di incapsulamento VLAN richiesto.
 
 > [!Note]  
-> Questa proprietà viene usata solo quando l'endpoint VLAN è in modalità trunk.
+> Questa proprietà viene usata solo quando l'endpoint VLAN è in modalità trunking.
 
  
 
@@ -184,7 +184,7 @@ Tipo di incapsulamento VLAN richiesto.
 
 <span id="802.1q"></span><span id="802.1Q"></span>
 
-**802.1 q** (3)
+**802.1q** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -198,21 +198,21 @@ Tipo di incapsulamento VLAN richiesto.
 
 <span id="Negotiate"></span><span id="negotiate"></span><span id="NEGOTIATE"></span>
 
-**Negoziazione** (5)
+**Negotiate** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (6.. 32767)
+**DmTF riservato** (6..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768...)
+**Fornitore riservato** (32768..)
 
 
 </dt> <dd></dd> </dl>
@@ -222,19 +222,19 @@ Tipo di incapsulamento VLAN richiesto.
 **GVRPStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OperationalEndpointMode**, CIM \_ VLANEndpointCapabilities. Dot1QTagging ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OperationalEndpointMode**, CIM \_ VLANEndpointCapabilities.Dot1QTagging")
 </dt> </dl>
 
-Indica se il protocollo di registrazione VLAN GARP (GVRP) è abilitato o disabilitato nell'endpoint del trunk.
+Indica se GARP VLAN Registration Protocol (GVRP) è abilitato o disabilitato nell'endpoint trunk.
 
 > [!Note]  
-> Questa proprietà viene utilizzata solo quando GVRP è supportato dall'endpoint e la modalità di trunking è abilitata.
+> Questa proprietà viene usata solo quando GVRP è supportato dall'endpoint e la modalità trunking è abilitata.
 
  
 
@@ -273,16 +273,16 @@ Indica se il protocollo di registrazione VLAN GARP (GVRP) è abilitato o disabil
 **OperationalEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredEndpointMode**","**CIM \_ VLANEndpoint**.**OtherEndpointMode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredEndpointMode**", "**CIM \_ VLANEndpoint**.**OtherEndpointMode**")
 </dt> </dl>
 
-La modalità VLAN corrente per l'endpoint.
+Modalità VLAN corrente per l'endpoint.
 
 <dt>
 
@@ -309,14 +309,14 @@ La modalità VLAN corrente per l'endpoint.
 
 <span id="Dynamic_Auto"></span><span id="dynamic_auto"></span><span id="DYNAMIC_AUTO"></span>
 
-**Auto dinamica** (3)
+**Auto dinamico** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dynamic_Desirable"></span><span id="dynamic_desirable"></span><span id="DYNAMIC_DESIRABLE"></span>
 
-**Auspicabile dinamico** (4)
+**Desiderabile** dinamico (4)
 
 
 </dt> <dd></dd> <dt>
@@ -330,14 +330,14 @@ La modalità VLAN corrente per l'endpoint.
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Tunnel Dot1Q** (6)
+**Dot1Q Tunnel** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (7.. 32767)
+**DmTF riservato** (7..32767)
 
 
 </dt> <dd></dd> <dt>
@@ -354,19 +354,19 @@ La modalità VLAN corrente per l'endpoint.
 **OperationalVLANTrunkEncapsulation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OtherTrunkEncapsulation**","**CIM \_ VLANEndpoint**.**DesiredVLANTrunkEncapsulation**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**OtherTrunkEncapsulation**", "**CIM \_ VLANEndpoint**.**DesiredVLANTrunkEncapsulation**")
 </dt> </dl>
 
 Tipo di incapsulamento VLAN corrente.
 
 > [!Note]  
-> Questa proprietà viene usata solo quando l'endpoint VLAN è in modalità trunk.
+> Questa proprietà viene usata solo quando l'endpoint VLAN è in modalità trunking.
 
  
 
@@ -395,7 +395,7 @@ Tipo di incapsulamento VLAN corrente.
 
 <span id="802.1q"></span><span id="802.1Q"></span>
 
-**802.1 q** (3)
+**802.1q** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -416,14 +416,14 @@ Tipo di incapsulamento VLAN corrente.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (6.. 32767)
+**DmTF riservato** (6..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768...)
+**Fornitore riservato** (32768..)
 
 
 </dt> <dd></dd> </dl>
@@ -433,32 +433,32 @@ Tipo di incapsulamento VLAN corrente.
 **OtherEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredEndpointMode**","**CIM \_ VLANEndpoint**.**OperationalEndpointMode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredEndpointMode**", "**CIM \_ VLANEndpoint**.**OperationalEndpointMode**")
 </dt> </dl>
 
-Tipo di modello di endpoint VLAN supportato da VLANEndpoint quando il valore di **DesiredEndpointMode** è impostato su "1" (other); in caso contrario, **null**.
+Tipo di modello di endpoint VLAN supportato da VLANEndpoint quando il valore di **DesiredEndpointMode** è impostato su "1" (altro); in caso contrario, **NULL.**
 
 </dd> <dt>
 
 **OtherTrunkEncapsulation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredVLANTrunkEncapsulation**","**CIM \_ VLANEndpoint**.**OperationalVLANTrunkEncapsulation**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VLANEndpoint**.**DesiredVLANTrunkEncapsulation**", "**CIM \_ VLANEndpoint**.**OperationalVLANTrunkEncapsulation**")
 </dt> </dl>
 
-Tipo di incapsulamento VLAN supportato dall'endpoint VLAN quando il valore della proprietà **DesiredVLANTrunkEncapsulation** è impostato su 1 (other); in caso contrario, **null**.
+Tipo di incapsulamento VLAN supportato dall'endpoint VLAN quando il valore della proprietà **DesiredVLANTrunkEncapsulation** è impostato su 1 (altro); in caso contrario, **NULL.**
 
 </dd> </dl>
 
@@ -470,8 +470,8 @@ Tipo di incapsulamento VLAN supportato dall'endpoint VLAN quando il valore della
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -480,7 +480,7 @@ Tipo di incapsulamento VLAN supportato dall'endpoint VLAN quando il valore della
 
 <dl> <dt>
 
-[**\_PROTOCOLENDPOINT CIM**](cim-protocolendpoint.md)
+[**Protocollo \_ CIMEndpoint**](cim-protocolendpoint.md)
 </dt> </dl>
 
  

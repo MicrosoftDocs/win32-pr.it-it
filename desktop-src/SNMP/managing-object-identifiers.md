@@ -15,15 +15,15 @@ ms.locfileid: "119009419"
 
 L'API WinSNMP offre diverse funzioni di utilità [WinSNMP](winsnmp-functions.md) che semplificano la manipolazione degli identificatori di oggetto per le applicazioni WinSNMP.
 
-La [**funzione SnmpOidToStr**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr) converte la rappresentazione binaria interna di un identificatore di oggetto nel formato di stringa numerico tratteggiato. Quando si chiama [**SnmpOidToStr,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr)specificare un buffer di stringa di lunghezza MAXOBJIDSTRSIZE (1408 byte) per assicurarsi che il buffer di output sia sufficientemente grande da contenere la stringa convertita. Per convertire un identificatore di oggetto dal formato di stringa numerica tratteggiata alla relativa rappresentazione binaria interna, chiamare [**la funzione SnmpStrToOid.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtooid)
+La [**funzione SnmpOidToStr**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr) converte la rappresentazione binaria interna di un identificatore di oggetto nel formato di stringa numerica tratteggiata. Quando si chiama [**SnmpOidToStr,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr)specificare un buffer di stringa di lunghezza MAXOBJIDSTRSIZE (1408 byte) per assicurarsi che il buffer di output sia sufficientemente grande da contenere la stringa convertita. Per convertire un identificatore di oggetto dal formato di stringa numerica punteggiata alla relativa rappresentazione binaria interna, chiamare la [**funzione SnmpStrToOid.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtooid)
 
-Per copiare un identificatore di oggetto SNMP, chiamare [**la funzione SnmpOidCopy.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcopy) Questa funzione alloca la memoria necessaria per il nuovo identificatore di oggetto.
+Per copiare un identificatore di oggetto SNMP, chiamare la [**funzione SnmpOidCopy.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcopy) Questa funzione alloca la memoria necessaria per il nuovo identificatore di oggetto.
 
-Un'applicazione WinSNMP deve chiamare la funzione [**SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor) per liberare le risorse allocate per il membro **ptr** della struttura [**smiOID**](/windows/desktop/api/Winsnmp/ns-winsnmp-smioid) specificata dalle funzioni [**SnmpStrToOid**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtooid) e [**SnmpOidCopy.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcopy)
+Un'applicazione WinSNMP deve chiamare la [**funzione SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor) per liberare le risorse allocate per il membro **ptr** della struttura [**smiOID**](/windows/desktop/api/Winsnmp/ns-winsnmp-smioid) specificata dalle [**funzioni SnmpStrToOid**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtooid) e [**SnmpOidCopy.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcopy)
 
-La [**funzione SnmpOidCompare**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcompare) confronta due identificatori di oggetto SNMP. L'applicazione WinSNMP può specificare il numero di sottoidentificatori da confrontare. Chiamare **SnmpOidCompare per** determinare se due identificatori di oggetto hanno prefissi comuni.
+La [**funzione SnmpOidCompare**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidcompare) confronta due identificatori di oggetto SNMP. L'applicazione WinSNMP può specificare il numero di sottoidentificatori da confrontare. Chiamare **SnmpOidCompare** per determinare se due identificatori di oggetto hanno prefissi comuni.
 
-Per altre informazioni sulla gestione della memoria allocata per gli identificatori di oggetto, vedere Allocazione di oggetti di memoria [WinSNMP.](allocating-winsnmp-memory-objects.md)
+Per altre informazioni sulla gestione della memoria allocata per gli identificatori di oggetto, vedere [Allocazione di oggetti di memoria WinSNMP](allocating-winsnmp-memory-objects.md).
 
  
 

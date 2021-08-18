@@ -1,25 +1,25 @@
 ---
-description: L'installazione di nuove funzionalità in memoria può migliorare le prestazioni. Le funzioni CryptoAPI eseguono ricerche nella memoria per la funzionalità prima di cercare la DLL nel registro di sistema. Prima di installare la funzionalità, è necessario caricare la DLL.
+description: L'installazione di nuove funzionalità in memoria può migliorare le prestazioni. Le funzioni CryptoAPI cercano la funzionalità nella memoria prima di cercare la DLL nel Registro di sistema. La DLL deve essere caricata prima di installare la funzionalità.
 ms.assetid: f6e5fc6a-a186-4648-af63-0555307f53d8
 title: Installazione della nuova funzionalità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7147a1a70ffe57f4948d7db94aab0184d29e5dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3c71167f8226ad78f449b3f529e2e22bdb060bc0c5d984671cf4c5a30cc6f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005299"
 ---
 # <a name="installing-the-new-functionality"></a>Installazione della nuova funzionalità
 
-L'installazione di nuove funzionalità in memoria può migliorare le prestazioni. Le funzioni [*CryptoAPI*](../secgloss/c-gly.md) eseguono ricerche nella memoria per la funzionalità prima di cercare la dll nel registro di sistema. Prima di installare la funzionalità, è necessario caricare la DLL.
+L'installazione di nuove funzionalità in memoria può migliorare le prestazioni. [*Le funzioni CryptoAPI*](../secgloss/c-gly.md) cercano la funzionalità nella memoria prima di cercare la DLL nel Registro di sistema. La DLL deve essere caricata prima di installare la funzionalità.
 
-[**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress) installa l'indirizzo della nuova funzionalità. Deve essere inserita nella funzione **DllMain** della dll.
+[**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress) installa l'indirizzo della nuova funzionalità. Deve essere inserito nella **funzione DllMain** della DLL.
 
-Se *hmodule* viene passato a [**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress), una volta installato, la dll non viene scaricata finché il Crypt32.dll non viene scaricato.
+Se *hModule viene* passato a [**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress), dopo l'installazione, la DLL non viene scaricata fino a quando Crypt32.dll non viene scaricato.
 
-Nell'esempio seguente viene chiamata la funzione [**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress) .
+Nell'esempio seguente viene chiamata [**la funzione CryptInstallOIDFunctionAddress.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress)
 
 
 ```C++

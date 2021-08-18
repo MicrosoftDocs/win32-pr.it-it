@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ISCardDatabase espone i metodi seguenti.
 ms.assetid: CE2BF60E-CBD3-445E-8F09-63BA6C39D538
-title: Metodi ISCardDatabase
+title: Metodi di ISCardDatabase
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8634592871d8be9f7a6e488b2c094c159e547b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61ad8034855ea5242ad7ab1d7d5ad20287529a4a644a048aaad449502e8c7c6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008069"
 ---
-# <a name="iscarddatabase-methods"></a>Metodi ISCardDatabase
+# <a name="iscarddatabase-methods"></a>Metodi di ISCardDatabase
 
-L'interfaccia [**ISCardDatabase**](iscarddatabase.md) espone i metodi seguenti.
+[**L'interfaccia ISCardDatabase**](iscarddatabase.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,7 +1,7 @@
 ---
-description: Ottiene un handle per un provider del servizio di crittografia (CSP) e una specifica della chiave per un contesto del certificato.
+description: Ottiene un handle per un provider del servizio di crittografia (CSP) e una specifica della chiave per un contesto di certificato.
 ms.assetid: ff72231f-e10f-49d2-b0e0-0008923803cc
-title: GetCryptProvFromCert (funzione)
+title: Funzione GetCryptProvFromCert
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: bcd396c45333dee42bae4cb8bdfdd52792f1bdd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c885c439014a26bafba3be8614981c67d200e9f87cd4e3c4f03e8cbcc1b77e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006659"
 ---
-# <a name="getcryptprovfromcert-function"></a>GetCryptProvFromCert (funzione)
+# <a name="getcryptprovfromcert-function"></a>Funzione GetCryptProvFromCert
 
 > [!IMPORTANT]
-> Questa API è deprecata. Microsoft può rimuovere questa API nelle versioni future.
+> Questa API è deprecata. Microsoft potrebbe rimuovere questa API nelle versioni future.
 
  
 
-La funzione **GetCryptProvFromCert** ottiene un handle per un [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) e una specifica della chiave per un contesto del [*certificato*](../secgloss/c-gly.md) . Usare questa funzione per ottenere l'accesso alla [*chiave privata*](../secgloss/p-gly.md) dell'autorità emittente del certificato.
+La **funzione GetCryptProvFromCert** ottiene un handle per un [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) e una specifica della chiave per un [*contesto di*](../secgloss/c-gly.md) certificato. Usare questa funzione per ottenere l'accesso alla [*chiave privata*](../secgloss/p-gly.md) dell'autorità emittente del certificato.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mssign32.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Mssign32.dll.
 
  
 
@@ -56,35 +56,35 @@ BOOL WINAPI GetCryptProvFromCert(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
-Handle della finestra da utilizzare come proprietario di tutte le finestre di dialogo visualizzate. Questo membro non è attualmente in uso e viene ignorato. È possibile passare il **valore null** per questo parametro.
+Handle della finestra da utilizzare come proprietario di tutte le finestre di dialogo visualizzate. Questo membro non è attualmente usato e viene ignorato. È sicuro passare **NULL per** questo parametro.
 
 </dd> <dt>
 
-*pCert* \[ in\]
+*pCert* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**del \_ contesto**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) del certificato per il certificato.
+Puntatore a una [**struttura CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) per il certificato.
 
 </dd> <dt>
 
-*phCryptProv* \[ out\]
+*phCryptProv* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**HCRYPTPROV**](hcryptprov.md) che rappresenta un handle per il CSP.
+Puntatore a una [**struttura HCRYPTPROV**](hcryptprov.md) che è un handle per CSP.
 
 </dd> <dt>
 
-*pdwKeySpec* \[ out\]
+*pdwKeySpec* \[ Cambio\]
 </dt> <dd>
 
-Specifica della chiave privata da recuperare. I valori possibili sono **in fase di \_ scambio** o **di \_ firma**.
+Specifica della chiave privata da recuperare. I valori possibili **includono AT \_ KEYEXCHANGE** o **AT \_ SIGNATURE.**
 
 </dd> <dt>
 
-*pfDidCryptAcquire* \[ in\]
+*pfDidCryptAcquire* \[ Pollici\]
 </dt> <dd>
 
 Valore che specifica se la funzione ha acquisito l'handle del provider in base al certificato.
@@ -94,35 +94,35 @@ Valore che specifica se la funzione ha acquisito l'handle del provider in base a
 *ppwszTmpContainer* \[ out, facoltativo\]
 </dt> <dd>
 
-Indirizzo di un puntatore a una stringa con terminazione null per il nome del contenitore di chiavi temporaneo. La funzione **GetCryptProvFromCert** fornisce e inizializza il contenitore temporaneo. Quando si chiama **GetCryptProvFromCert**, l'indirizzo deve puntare a un valore **null** .
+Indirizzo di un puntatore a una stringa con terminazione Null per il nome del contenitore di chiavi temporaneo. La **funzione GetCryptProvFromCert** fornisce e inizializza il contenitore temporaneo. Quando si **chiama GetCryptProvFromCert,** l'indirizzo deve puntare a un **valore NULL.**
 
 </dd> <dt>
 
 *ppwszProviderName* \[ out, facoltativo\]
 </dt> <dd>
 
-Indirizzo di un puntatore a una stringa con terminazione null per il nome del provider. La funzione **GetCryptProvFromCert** restituisce il nome del provider. Quando si chiama **GetCryptProvFromCert**, l'indirizzo deve puntare a un valore **null** .
+Indirizzo di un puntatore a una stringa con terminazione Null per il nome del provider. La **funzione GetCryptProvFromCert** restituisce il nome del provider. Quando si **chiama GetCryptProvFromCert,** l'indirizzo deve puntare a un **valore NULL.**
 
 </dd> <dt>
 
-*pdwProviderType* \[ out\]
+*pdwProviderType* \[ Cambio\]
 </dt> <dd>
 
-Specifica il tipo CSP. Può essere zero o uno dei tipi di [provider di crittografia](cryptographic-provider-types.md). Se questo membro è zero, il contenitore di chiavi è uno dei provider di archiviazione delle chiavi CNG.
+Specifica il tipo CSP. Può essere zero o uno dei tipi [di provider di crittografia](cryptographic-provider-types.md). Se questo membro è zero, il contenitore di chiavi è uno dei provider di archiviazione chiavi CNG.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Al termine dell'operazione, la funzione restituisce **true**. Se l'operazione ha esito negativo, la funzione **GetCryptProvFromCert** restituisce **false** .
+In caso di esito positivo, questa funzione restituisce **TRUE.** La **funzione GetCryptProvFromCert** restituisce **FALSE in** caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Lo strumento [Makecert](makecert.md) chiama **GetCryptProvFromCert** quando viene richiamato usando l'opzione della riga di comando **-is** .
+Lo [strumento MakeCert](makecert.md) chiama **GetCryptProvFromCert** quando lo si richiama usando l'opzione della riga di comando **-is.**
 
-Se il parametro *pfDidCryptAcquire* è impostato su **true**, la funzione imposta i parametri *phCryptProv*, *pdwKeySpec* e *pdwProviderType* sui valori del provider.
+Se il *parametro pfDidCryptAcquire* è impostato su **TRUE,** la funzione imposta i parametri *phCryptProv*, *pdwKeySpec* e *pdwProviderType* sui valori del provider.
 
-Al termine dell'utilizzo del CSP, liberarlo chiamando la funzione [**FreeCryptProvFromCert**](freecryptprovfromcert.md) .
+Al termine dell'uso del provider di servizi di configurazione, liberarlo chiamando la [**funzione FreeCryptProvFromCert.**](freecryptprovfromcert.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -130,8 +130,8 @@ Al termine dell'utilizzo del CSP, liberarlo chiamando la funzione [**FreeCryptPr
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

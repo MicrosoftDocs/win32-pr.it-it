@@ -1,7 +1,7 @@
 ---
-description: Rende un file (EF o DF) precedentemente reso non valido utilizzando il metodo Invalidate, accessibile dall'applicazione.
+description: Rende accessibile dall'applicazione un file (EF o DF) precedentemente reso non valido tramite il metodo Invalidate.
 ms.assetid: 1906fcc5-ae76-4950-b2eb-e5ce1882637f
-title: 'Metodo ISCardFileAccess:: recovere'
+title: Metodo ISCardFileAccess::Rehabilitate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7ed02131de08104dab8aff23ee9054659fd4cd63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ffe504237172d40cfc862ed3a7b287c93fdb116e7ce21ab823ac195cde9fd7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007959"
 ---
-# <a name="iscardfileaccessrehabilitate-method"></a>Metodo ISCardFileAccess:: recovere
+# <a name="iscardfileaccessrehabilitate-method"></a>Metodo ISCardFileAccess::Rehabilitate
 
-\[Il metodo di **ripristino** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo Rehabilitate** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il **Metodo** Recoverable rende un file (EF o DF) precedentemente reso non valido tramite il metodo [**Invalidate**](iscardfileaccess-invalidate.md) , accessibile dall'applicazione.
+Il **metodo Rehabilitate** rende accessibile dall'applicazione un file (EF o DF) precedentemente non valido tramite il metodo [**Invalidate.**](iscardfileaccess-invalidate.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT Rehabilitate(
 
 <dl> <dt>
 
-*bstrPathSpec* \[ in\]
+*bstrPathSpec* \[ Pollici\]
 </dt> <dd>
 
-File da ripristinare.
+File da riabilitare.
 
 </dd> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
-Specifica se utilizzare la messaggistica protetta.
+Specifica se deve essere utilizzata la messaggistica protetta.
 
 <dl><span id="SC_FL_SECURE_MESSAGING"></span><span id="sc_fl_secure_messaging"></span><dt>
 
-**\_ \_ messaggistica protetta SC \_ FL**
+**SC \_ FL \_ SECURE \_ MESSAGING**
 </dt> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
@@ -66,9 +66,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Un parametro non è valido.<br/>         |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -76,9 +76,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di tutti i metodi definiti da questa interfaccia, vedere [**ISCardFileAccess**](iscardfileaccess.md).
+Per un elenco di tutti i metodi definiti da questa interfaccia, vedere [**ISCardFileAccess.**](iscardfileaccess.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della [*Smart Card*](../secgloss/s-gly.md) se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore [*smart card*](../secgloss/s-gly.md) se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 
@@ -97,7 +97,7 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 <dl> <dt>
 
-[**Invalidate**](iscardfileaccess-invalidate.md)
+[**Invalidare**](iscardfileaccess-invalidate.md)
 </dt> <dt>
 
 [**ISCardFileAccess**](iscardfileaccess.md)

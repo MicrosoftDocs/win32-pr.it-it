@@ -13,7 +13,7 @@ ms.locfileid: "118988301"
 ---
 # <a name="defining-a-simple-cube-direct3d-9"></a>Definizione di un cubo semplice (Direct3D 9)
 
-Il file seguente definisce un cubo semplice con quattro lati rossi e due lati verdi. In questo file vengono usate informazioni facoltative per aggiungere informazioni all'oggetto dati definito [**dal**](mesh.md) modello Mesh.
+Il file seguente definisce un cubo semplice con quattro lati rossi e due lati verdi. In questo file vengono usate informazioni facoltative per aggiungere informazioni all'oggetto dati definito dal modello [**Mesh.**](mesh.md)
 
 
 ```
@@ -122,7 +122,7 @@ MeshTextureCoords {
 
 <dl> <dt>
 
-[File X (legacy)](x-files--legacy-.md)
+[X File (legacy)](x-files--legacy-.md)
 </dt> </dl>
 
  

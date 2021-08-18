@@ -1,10 +1,10 @@
 ---
-title: Attributo UPN-Suffixes
-description: Elenco di suffissi di nome dell'entità utente per un dominio.
+title: UPN-Suffixes attributo
+description: Elenco di suffissi User-Principal-Name per un dominio.
 ms.assetid: ad861d2d-b643-468c-a346-36ad6a828359
 ms.tgt_platform: multiple
 keywords:
-- Schema AD UPN-Suffixes attribute
+- UPN-Suffixes schema AD dell'attributo
 - Schema AD dell'attributo uPNSuffixes
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4aa5fb9398478e4b91fb8f36b8cf96a244935fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ff893bdd3fa5ec5b9a42c02dfe6d3bd994e7d8fc9e680d3162c49f07c1c5ec8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021979"
 ---
-# <a name="upn-suffixes-attribute"></a>Attributo UPN-Suffixes
+# <a name="upn-suffixes-attribute"></a>UPN-Suffixes attributo
 
-Elenco di suffissi di nome dell'entità utente per un dominio.
+Elenco di suffissi User-Principal-Name per un dominio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | UPN-Suffixes                                |
-| LDAP-Display-Name | uPNSuffixes                                 |
+| Ldap-Display-Name | uPNSuffixes                                 |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Privilegio di aggiornamento  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.890                      |
-| System-ID-GUID    | 032160bf-9824-11d1-aec0-0000f80367c1        |
+| System-Id-Guid    | 032160bf-9824-11d1-aec0-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di suffissi di nome dell'entità utente per un dominio.
 | ID collegamento                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| È a valore singolo       | Falso                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: Nell'esempio seguente viene implementata la procedura descritta nella procedura per la firma dei dati.
+description: Nell'esempio seguente viene implementata la procedura descritta in Procedura per la firma dei dati.
 ms.assetid: beaf3d67-de2b-4b30-812f-1659386a1bfc
-title: 'Esempio di programma C: firma di un messaggio e verifica della firma di un messaggio'
+title: 'Programma C di esempio: firma di un messaggio e verifica della firma di un messaggio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9022b165f586fb293b4de12ec7a8e9f00680b691
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 363b5accb301bc4a3bf46d5f9e6d1fa00fe4f2e52b2e130a543f38ce271b254e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007459"
 ---
-# <a name="example-c-program-signing-a-message-and-verifying-a-message-signature"></a>Esempio di programma C: firma di un messaggio e verifica della firma di un messaggio
+# <a name="example-c-program-signing-a-message-and-verifying-a-message-signature"></a>Programma C di esempio: firma di un messaggio e verifica della firma di un messaggio
 
-Nell'esempio seguente viene implementata la procedura descritta nella [procedura per la firma dei dati](procedure-for-signing-data.md). Per informazioni generali, vedere la pagina relativa ai [messaggi semplificati](simplified-messages.md). Per informazioni dettagliate sulle funzioni e sulle strutture, vedere funzioni di [crittografia di base](cryptography-functions.md), [funzioni di messaggio semplificate](cryptography-functions.md)e [strutture CryptoAPI](cryptography-structures.md).
+Nell'esempio seguente viene implementata la procedura descritta in [Procedura per la firma dei dati](procedure-for-signing-data.md). Per informazioni generali, vedere [Messaggi semplificati.](simplified-messages.md) Per informazioni dettagliate su funzioni e strutture, vedere Funzioni di crittografia di [base,](cryptography-functions.md)Funzioni messaggi [semplificate](cryptography-functions.md)e [Strutture CryptoAPI.](cryptography-structures.md)
 
-Questo esempio include anche il codice per verificare la firma del messaggio creata. Questo codice si trova in genere in un programma separato, ma è incluso qui per motivi di completezza e chiarezza.
+Questo esempio include anche il codice per verificare la firma del messaggio creata. Questo codice si trova in genere in un programma separato, ma è incluso qui per completezza e chiarezza.
 
-In questo esempio vengono illustrate le funzioni CryptoAPI seguenti:
+Questo esempio illustra le funzioni CryptoAPI seguenti:
 
 -   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage)
@@ -25,11 +25,11 @@ In questo esempio vengono illustrate le funzioni CryptoAPI seguenti:
 -   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-La firma del messaggio può essere eseguita solo con l'accesso a un certificato con una [*chiave privata*](../secgloss/p-gly.md)disponibile. La verifica del messaggio può essere eseguita solo con l'accesso alla chiave pubblica relativa alla chiave privata usata per firmare il certificato. L'utente può modificare l'istruzione **\# define** sul nome del soggetto da uno dei certificati personali dell'utente.
+La firma del messaggio può essere eseguita solo con l'accesso a un certificato con una [*chiave privata disponibile.*](../secgloss/p-gly.md) La verifica del messaggio può essere eseguita solo con l'accesso alla chiave pubblica correlata alla chiave privata usata per firmare il certificato. L'utente può modificare **\# l'istruzione define** con il nome del soggetto da uno dei certificati personali dell'utente.
 
-In questo esempio viene inoltre illustrata l'inizializzazione del messaggio di firma di CRYPT \_ \_ e della \_ crypt \_ Verify \_ message \_ para Structures necessarie per le chiamate a [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) e [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature).
+Questo esempio illustra anche l'inizializzazione delle strutture CRYPT SIGN MESSAGE PARA e CRYPT VERIFY MESSAGE PARA necessarie per le chiamate a \_ \_ \_ \_ \_ \_ [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) e [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature).
 
-Questo esempio usa anche la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nel programma di esempio e può essere visualizzato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+Questo esempio usa anche la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nel programma di esempio e può essere visualizzato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

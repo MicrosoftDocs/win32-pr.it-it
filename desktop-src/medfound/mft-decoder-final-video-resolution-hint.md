@@ -1,5 +1,5 @@
 ---
-description: Specifica la risoluzione di output finale dell'immagine decodificata, dopo l'elaborazione video.
+description: Specifica la risoluzione finale dell'output dell'immagine decodificata, dopo l'elaborazione video.
 ms.assetid: 067867D8-155C-4406-BE07-720016B2AEBC
 title: MFT_DECODER_FINAL_VIDEO_RESOLUTION_HINT attributo (Mftransform.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118973140"
 ---
 # <a name="mft_decoder_final_video_resolution_hint-attribute"></a>Attributo MFT \_ DECODER \_ FINAL VIDEO RESOLUTION \_ \_ \_ HINT
 
-Specifica la risoluzione di output finale dell'immagine decodificata, dopo l'elaborazione video.
+Specifica la risoluzione finale dell'output dell'immagine decodificata, dopo l'elaborazione video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,13 +21,13 @@ Specifica la risoluzione di output finale dell'immagine decodificata, dopo l'ela
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è supportato da alcuni decodificatori video. Un'applicazione può impostare questo attributo per indicare la larghezza e l'altezza dell'immagine dopo l'elaborazione video. Il decodificatore può usare queste informazioni per ottimizzare il processo di decodifica, soprattutto se le dimensioni dell'immagine finale sono molto inferiori a quelle dell'immagine nativa. Ad esempio, il decodificatore potrebbe ignorare un filtro out-of-loop.
+Questo attributo è supportato da alcuni decodificatori video. Un'applicazione può impostare questo attributo per indicare la larghezza e l'altezza dell'immagine dopo l'elaborazione video. Il decodificatore può usare queste informazioni per ottimizzare il processo di decodifica, soprattutto se le dimensioni dell'immagine finale sono molto inferiori alle dimensioni dell'immagine nativa. Ad esempio, il decodificatore potrebbe ignorare un filtro out-of-loop.
 
 I 32 bit superiori contengono la larghezza e i 32 bit inferiori contengono l'altezza.
 
 Per impostare questo attributo:
 
-1.  Chiamare [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) sul decodificatore per ottenere un [**puntatore IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+1.  Chiamare [**IMFTransform::GetAttributes sul**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) decodificatore per ottenere un [**puntatore IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 2.  Chiamare [**MFSetAttributeSize per**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributesize) aggiungere l'attributo.
 
 ## <a name="requirements"></a>Requisiti
@@ -46,7 +46,7 @@ Per impostare questo attributo:
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

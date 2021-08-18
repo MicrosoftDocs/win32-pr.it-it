@@ -1,7 +1,7 @@
 ---
-description: Eseguire il skining del software su una matrice di vertici.
+description: Eseguire la skinning del software su una matrice di vertici.
 ms.assetid: 6c1a713f-4ae7-4ee2-afa6-079dd8354fe7
-title: Metodo ID3DX10SkinInfo::D oSoftwareSkinning (D3DX10. h)
+title: Metodo ID3DX10SkinInfo::D oSoftwareSkinning (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 54dfe909e36be0273e0679a824ff0674b0e3b38c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 20f68f51d6886d53d74cd31691e52c362c60d2bf9be2beb0656564cb20fcb80a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729811"
 ---
-# <a name="id3dx10skininfodosoftwareskinning-method"></a>ID3DX10SkinInfo::D Metodo oSoftwareSkinning
+# <a name="id3dx10skininfodosoftwareskinning-method"></a>Metodo ID3DX10SkinInfo::D oSoftwareSkinning
 
-Eseguire il skining del software su una matrice di vertici.
+Eseguire la skinning del software su una matrice di vertici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,93 +49,93 @@ HRESULT DoSoftwareSkinning(
 
 <dl> <dt>
 
-*StartVertex* \[ in\]
+*StartVertex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Un indice in base 0 in pSrcVertices.
+Indice in base 0 in pSrcVertices.
 
 </dd> <dt>
 
-*VertexCount* \[ in\]
+*VertexCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di vertici da trasformare.
 
 </dd> <dt>
 
-*pSrcVertices* \[ in\]
+*pSrcVertices* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
 Puntatore a una matrice di vertici da trasformare.
 
 </dd> <dt>
 
-*SrcStride* \[ in\]
+*SrcStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Dimensione, in byte, di un vertice in pSrcVertices.
 
 </dd> <dt>
 
-*pDestVertices* \[ in uscita\]
+*pDestVertices* \[ in, out\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Puntatore a una matrice di vertici, che verrà riempito con i vertici trasformati.
+Puntatore a una matrice di vertici, che verrà riempita con i vertici trasformati.
 
 </dd> <dt>
 
-*DestStride* \[ in\]
+*DestStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Dimensione, in byte, di un vertice in pDestVertices.
 
 </dd> <dt>
 
-*pBoneMatrices* \[ in\]
+*pBoneMatrices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Matrice di matrici che verrà usata per trasformare i punti di cui è stato eseguito il mapping a ogni osso, in modo che i vertici mappati a Bone \[ i \] verranno trasformati da pBoneMatrices \[ i \] . Questa matrice verrà utilizzata per trasformare le matrici solo se il valore di pChannelDescs è impostato su **false**. in caso contrario, verrà utilizzato pInverseTransposeBoneMatrices.
+Matrice di matrici che verrà utilizzata per trasformare i punti mappati a ogni osso, in modo che i vertici mappati all'osso i verranno trasformati da \[ \] pBoneMatrices \[ i \] . Questa matrice verrà usata per trasformare le matrici solo se il valore IsNormal in pChannelDescs è impostato su **FALSE,** in caso contrario verrà usato pInverseTransposeBoneMatrices.
 
 </dd> <dt>
 
-*pInverseTransposeBoneMatrices* \[ in\]
+*pInverseTransposeBoneMatrices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Se questo valore è **null**, verrà impostato su un valore uguale a pBoneMatrices. Questa matrice di matrici verrà utilizzata per trasformare i vertici solo se il valore di pChannelDescs è impostato su **true**; in caso contrario, verrà utilizzato pBoneMatrices.
+Se questo valore è **NULL,** verrà impostato su pBoneMatrices. Questa matrice di matrici verrà usata per trasformare i vertici solo se il valore IsNormal in pChannelDescs è impostato su **TRUE,** in caso contrario verrà usato pBoneMatrices.
 
 </dd> <dt>
 
-*pChannelDescs* \[ in\]
+*pChannelDescs* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Skin \_ Channel**](d3dx10-skinning-channel.md)\***
+Tipo: **[ **D3DX10 \_ SKINNING \_ CHANNEL**](d3dx10-skinning-channel.md)\***
 
-Puntatore a una \_ struttura del canale di skinning di d3dx10 \_ , che determina il membro del vertice decl in cui verrà eseguita la skining del software.
+Puntatore a una struttura D3DX10 SKINNING CHANNEL, che determina il membro del vertice che declerà l'interfaccia software su cui \_ \_ verrà eseguita l'interfaccia.
 
 </dd> <dt>
 
-*NumChannels* \[ in\]
+*NumChannels* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Il numero di strutture del canale di D3DX10 \_ Skinning \_ in pChannelDescs.
+Numero di strutture D3DX10 \_ SKINNING \_ CHANNEL in pChannelDescs.
 
 </dd> </dl>
 
@@ -143,11 +143,11 @@ Il numero di strutture del canale di D3DX10 \_ Skinning \_ in pChannelDescs.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ INVALIDARG.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere E \_ INVALIDARG.
 
 ## <a name="remarks"></a>Commenti
 
-Di seguito è riportato un esempio di come usare la skining del software:
+Di seguito è riportato un esempio di come usare la skinning del software:
 
 
 ```
@@ -203,8 +203,8 @@ pSkinInfo->DoSoftwareSkinning(0, numVertices,
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

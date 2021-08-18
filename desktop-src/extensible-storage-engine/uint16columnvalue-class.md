@@ -33,7 +33,7 @@ ms.locfileid: "117890169"
 ---
 # <a name="uint16columnvalue-class"></a>Classe UInt16ColumnValue
 
-Valore [della colonna UInt16.](/dotnet/api/system.uint16)
+Valore [di colonna UInt16.](/dotnet/api/system.uint16)
 
 Questa API non è conforme a CLS. 
 
@@ -71,6 +71,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di UInt16ColumnValue](./uint16columnvalue-members.md)
+[Membri UInt16ColumnValue](./uint16columnvalue-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,29 +1,29 @@
 ---
-description: Sebbene i provider siano invitati a usare nomi di istanza univoci, non tutti i provider lo eseguono.
+description: Anche se i provider sono invitati a usare nomi di istanza univoci, non tutti i provider lo fanno.
 ms.assetid: 3c8fcb8d-2ea4-4b24-b649-7bd375c1133d
 title: Gestione dei nomi di istanza duplicati
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 220e5d7d0181a79c1d1415486cc946d484e11952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f58f6ed11951c7b66951f5154009127c5029de3760a9419a7c9716781be8234f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144004"
 ---
 # <a name="handling-duplicate-instance-names"></a>Gestione dei nomi di istanza duplicati
 
-Sebbene i provider siano fortemente invitati a usare nomi di istanza univoci, non tutti i provider lo eseguono. La convenzione per la visualizzazione di nomi di istanza duplicati consiste nell'accodare un `#` carattere e un numero di serie al nome dell'istanza, ad eccezione della prima occorrenza del nome. Se, ad esempio, sono presenti tre istanze di `svchost` in un campione, i tre nomi vengono visualizzati come `svchost` , `svchost#1` e `svchost#2` .
+Anche se i provider sono fortemente invitati a usare nomi di istanza univoci, non tutti i provider lo fanno. La convenzione per la visualizzazione di nomi di istanza duplicati è l'aggiunta di un carattere e di un numero di serie al nome dell'istanza, ad eccezione della prima `#` occorrenza del nome. Ad esempio, se in un esempio sono presenti tre istanze di , i tre nomi vengono `svchost` visualizzati come , e `svchost` `svchost#1` `svchost#2` .
 
-Sfortunatamente, questa convenzione non risolve completamente il problema. I numeri di serie vengono assegnati in base all'ordine in cui un determinato nome di istanza viene visualizzato in un campione e questo ordine potrebbe non essere coerente da esempio a campione. Ad esempio, l'esempio A può vedere `svchost` (pid 100), `svchost#1` (PID 200) e `svchost#2` (PID 300). Se quindi il svchost con PID 100 si arresta, l'esempio seguente visualizzerà `svchost` (pid 200) e `svchost#1` (PID 300). La logica di corrispondenza di base tenterà di trovare una corrispondenza tra le statistiche di esempio `svchost#1` (da pid 200) e le statistiche di esempio b `svchost#1` (dal PID 300), ottenendo risultati non validi per l'esempio B. gli errori si verificano quando una nuova istanza non univoca viene visualizzata in un campione o quando un'istanza non univoca smette di essere visualizzata in un campione (a meno che l'istanza aggiunta
+Sfortunatamente, questa convenzione non risolve completamente il problema. I numeri di serie vengono assegnati in base all'ordine in cui un determinato nome di istanza viene visualizzato in un campione e questo ordine può essere incoerente da un campione all'altro. Ad esempio, l'esempio A potrebbe visualizzare `svchost` (PID 100), `svchost#1` (PID 200) e `svchost#2` (PID 300). Quindi, se svchost con PID 100 si arresta, l'esempio successivo visualizza `svchost` (PID 200) e `svchost#1` (PID 300). La logica di corrispondenza di base tenterebbe di trovare una corrispondenza tra le statistiche del campione A (dal PID 200) e le statistiche del campione `svchost#1` B `svchost#1` (dal PID 300), causando risultati non validi per il campione B. Gli errori si verificano quando viene visualizzata una nuova istanza non univoca in un campione o quando un'istanza non univoca smette di essere visualizzata in un esempio (a meno che l'istanza aggiunta/rimossa non sia l'ultima).
 
-## <a name="process-counterset"></a>Contatore processi
+## <a name="process-counterset"></a>Counterset del processo
 
-Questo problema è particolarmente problematico per il `Process` contatore perché usa solo il nome dell'exe del processo come nome dell'istanza anche se il nome dell'exe non è univoco. `Process`Non è possibile modificare il comportamento predefinito del contatore in Windows a causa di problemi di compatibilità.
+Questo problema è particolarmente problematico per l'insieme di contatori perché usa solo il nome EXE del processo come nome dell'istanza anche se il nome `Process` EXE non è univoco. Il comportamento predefinito del contatore `Process` in Windows non può essere modificato a causa di problemi di compatibilità.
 
-È possibile modificare il comportamento di `Process` e `Thread` CounterSet in modo da utilizzare nomi di istanza univoci impostando i valori del registro di sistema `ProcessNameFormat` o `ThreadNameFormat` nella chiave del registro di `HKLM\System\CurrentControlSet\Services\Perfproc\Performance` sistema.
+È possibile modificare il comportamento dei contatori e in modo da usare nomi di istanza univoci impostando i valori del Registro di sistema o `Process` nella chiave del Registro di sistema `Thread` `ProcessNameFormat` `ThreadNameFormat` `HKLM\System\CurrentControlSet\Services\Perfproc\Performance` .
 
 > [!CAUTION]
-> L'abilitazione di nomi di istanza univoci per il `Process` contatore può causare un comportamento non corretto di alcuni programmi, poiché molti programmi prevedono il modello di denominazione non univoco. Ad esempio, un programma che cerca un'istanza con un nome di EXE noto specifico non sarà più in grado di trovare tale istanza dopo aver abilitato i nomi di istanza univoci.
+> L'abilitazione di nomi di istanza univoci per il contatore può causare un comportamento non corretto di alcuni programmi, poiché molti programmi prevedono il modello di denominazione `Process` non univoco. Ad esempio, un programma che cerca un'istanza con un nome EXE noto specifico non sarà più in grado di trovare tale istanza dopo l'abilitazione di nomi di istanza univoci.
 
-Il tipo di registro per questi valori è `REG_DWORD` . Impostando il valore su `2` , l'identificatore di processo (PID) viene aggiunto al nome dell'istanza del processo e all'identificatore del thread (TID) al nome dell'istanza del thread. Per disabilitare questa funzionalità, impostare il valore su 1 o eliminare il valore.
+Il tipo di Registro di sistema per questi valori è `REG_DWORD` . Se si imposta il valore su , l'identificatore del processo (PID) viene aggiunto al nome dell'istanza del processo e l'identificatore di `2` thread (TID) al nome dell'istanza del thread. Per disabilitare questa funzionalità, impostare il valore su 1 o eliminare il valore.

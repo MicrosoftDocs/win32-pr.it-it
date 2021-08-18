@@ -1,5 +1,5 @@
 ---
-description: Specifica il livello di volume medio del contenuto audio.
+description: Specifica il livello medio di volume del contenuto audio.
 ms.assetid: eabb36ff-300f-4ed1-aca3-9415627ac1a7
 title: MFPKEY_WMADRC_AVGREF proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973240"
 ---
-# <a name="mfpkey_wmadrc_avgref-property"></a>Proprietà AVGREF MFPKEY \_ \_ WMADRC
+# <a name="mfpkey_wmadrc_avgref-property"></a>Proprietà AVGREF MFPKEY \_ WMADRC \_
 
-Specifica il livello di volume medio del contenuto audio.
+Specifica il livello medio di volume del contenuto audio.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -25,9 +25,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-È possibile ottenere questo valore dal codificatore dopo l'elaborazione del contenuto. Questo valore può essere impostato anche nel decodificatore ai fini del controllo di intervallo dinamico, ma avrà effetto solo se è impostata la proprietà [MFPKEY \_ WMADEC \_ DRCMODE.](mfpkey-wmadec-drcmodeproperty.md)
+È possibile ottenere questo valore dal codificatore dopo l'elaborazione del contenuto. Questo valore può essere impostato anche nel decodificatore ai fini del controllo a intervalli dinamici, ma avrà effetto solo se è impostata la proprietà [MFPKEY \_ WMADEC \_ DRCMODE.](mfpkey-wmadec-drcmodeproperty.md)
 
-Per altre informazioni sul controllo dinamico degli intervalli, vedere l'articolo Web [Windows Audio multimediale Professional codec.](/previous-versions/ms867218(v=msdn.10))
+Per altre informazioni sul controllo intervallo dinamico, vedere l'articolo Web [Windows Media Audio Professional Codec Features](/previous-versions/ms867218(v=msdn.10)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,7 +36,7 @@ Per altre informazioni sul controllo dinamico degli intervalli, vedere l'articol
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 

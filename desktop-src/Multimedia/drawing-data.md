@@ -1,27 +1,27 @@
 ---
-title: Disegno di dati
-description: Disegno di dati
+title: Dati di disegno
+description: Dati di disegno
 ms.assetid: cc4f383d-54d4-4027-ad6a-da19bb07c17f
 keywords:
-- Gestione compressione video (VCM), disegno
-- VCM (Video Compression Manager), disegno
-- ICDraw (funzione)
-- ICDrawStart (macro)
-- ICDrawStop (macro)
-- ICDrawFlush (macro)
-- ICDrawEnd (macro)
+- gestione compressione video(VCM), disegno
+- VCM (Gestione compressione video),disegno
+- Funzione ICDraw
+- Macro ICDrawStart
+- Macro ICDrawStop
+- Macro ICDrawFlush
+- Macro ICDrawEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f598ef47bbbf6b8f53c7fb2639c9ddff1390ab
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6dcbb9f0c9c39da17c4f60af3dfb9c3a7e0179ebf4c8ed6e5bcac4cdc6f24828
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496711"
 ---
-# <a name="drawing-data"></a>Disegno di dati
+# <a name="drawing-data"></a>Dati di disegno
 
-Nell'esempio seguente vengono usate la funzione [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) e le macro [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush)e [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) per creare dati sullo schermo.
+L'esempio seguente usa la funzione [**ICDraw**](/windows/desktop/api/Vfw/nf-vfw-icdraw) e le macro [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart), [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop), [**ICDrawFlush**](/windows/desktop/api/Vfw/nf-vfw-icdrawflush)e [**ICDrawEnd**](/windows/desktop/api/Vfw/nf-vfw-icdrawend) per disegnare dati sullo schermo.
 
 
 ```C++
@@ -55,9 +55,9 @@ ICDrawEnd(hIC);    // ends decompression
 
 
 
- 
+ 
 
- 
+ 
 
 
 

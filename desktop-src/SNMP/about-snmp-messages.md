@@ -13,9 +13,9 @@ ms.locfileid: "119009949"
 ---
 # <a name="about-snmp-messages"></a>Informazioni sui messaggi SNMP
 
-Il Simple Network Management Protocol usa i messaggi per comunicare e scambiare informazioni tra entità SNMP remote. I messaggi SNMP contengono unità dati del protocollo (PTU) e altri elementi di intestazione del messaggio definiti dalla RFC pertinente. Una PDU è un pacchetto di dati che contiene componenti di dati SNMP (o campi).
+Il Simple Network Management Protocol usa i messaggi per comunicare e scambiare informazioni tra entità SNMP remote. I messaggi SNMP contengono unità dati del protocollo (PTU) più elementi di intestazione dei messaggi aggiuntivi definiti dalla RFC pertinente. Una PDU è un pacchetto di dati che contiene componenti di dati SNMP (o campi).
 
-Il formato di un messaggio SNMP è lo stesso per SNMPv1 e SNMPv2C. Tuttavia, SNMPv2C supporta tipi di PDU aggiuntivi. Ad esempio, supporta il tipo di richiesta [SNMP \_ PDU \_ GETBULK,](snmp-variable-types-and-request-pdu-types.md) che consente a un'applicazione di recuperare in modo efficiente grandi blocchi di dati dalle entità di destinazione.
+Il formato di un messaggio SNMP è lo stesso sia per SNMPv1 che per SNMPv2C. Tuttavia, SNMPv2C supporta tipi di PDU aggiuntivi. Ad esempio, supporta il tipo di richiesta [SNMP \_ PDU \_ GETBULK,](snmp-variable-types-and-request-pdu-types.md) che consente a un'applicazione di recuperare in modo efficiente grandi blocchi di dati dalle entità di destinazione.
 
  
 

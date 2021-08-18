@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put WindowState imposta lo stato della finestra.
+description: Il metodo put \_ WindowState imposta lo stato della finestra.
 ms.assetid: 0d22fa84-17bc-4228-b86e-d31857156802
-title: Metodo CBaseControlWindow.put_WindowState (Ctlutil. h)
+title: CBaseControlWindow.put_WindowState metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1944e9bd39816cd1f022296b69fdac60d0779f1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4769aff01c251017734fd7152fa703cd51064db11fb91851fd0b8fed76fc3d96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635701"
 ---
-# <a name="cbasecontrolwindowput_windowstate-method"></a>CBaseControlWindow. put \_ WindowState (metodo)
+# <a name="cbasecontrolwindowput_windowstate-method"></a>Metodo CBaseControlWindow.put \_ WindowState
 
 Il `put_WindowState` metodo imposta lo stato della finestra.
 
@@ -42,7 +42,7 @@ HRESULT put_WindowState(
 
 <dl> <dt>
 
-*WindowState* 
+*Windowstate* 
 </dt> <dd>
 
 Nuovo stato della finestra.
@@ -51,11 +51,11 @@ Nuovo stato della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro accetta gli stessi parametri della funzione **ShowWindow** di Microsoft Win32 (ad esempio, WS \_ SHOWNORMAL, WS \_ SHOWMINNOACTIVATE e WS \_ SHOWMAXIMIZED).
+Questa funzione membro accetta gli stessi parametri della funzione Microsoft Win32 **ShowWindow** ,ad esempio WS \_ SHOWNORMAL, WS \_ SHOWMINNOACTIVATE e WS \_ SHOWMAXIMIZED.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro accetta gli stessi parametri della funzione **ShowWindow*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,37 +1,37 @@
 ---
-description: Nell'esempio seguente viene firmato un messaggio utilizzando la chiave privata di un mittente e viene crittografato il messaggio firmato utilizzando la chiave pubblica di un destinatario.
+description: L'esempio seguente firma un messaggio usando la chiave privata di un mittente e crittografa il messaggio firmato usando la chiave pubblica di un ricevitore.
 ms.assetid: f2863e4a-d22a-4ff0-91d8-052eeaade14e
-title: 'Esempio di programma C: invio e ricezione di un messaggio firmato e crittografato'
+title: 'Programma C di esempio: invio e ricezione di un messaggio firmato e crittografato'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c2ce7c5ba04d6fb57afbb0c15e32c115dcbd5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac7bdfdfd664d278fe72d81743e7116eb64a11099ef37b43200d55378472c383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007539"
 ---
-# <a name="example-c-program-sending-and-receiving-a-signed-and-encrypted-message"></a>Esempio di programma C: invio e ricezione di un messaggio firmato e crittografato
+# <a name="example-c-program-sending-and-receiving-a-signed-and-encrypted-message"></a>Programma C di esempio: invio e ricezione di un messaggio firmato e crittografato
 
-Nell'esempio seguente viene firmato un messaggio utilizzando la [*chiave privata*](../secgloss/p-gly.md) di un mittente e viene crittografato il messaggio firmato utilizzando la [*chiave pubblica*](../secgloss/p-gly.md)di un destinatario. Nell'esempio viene quindi decrittografato il messaggio utilizzando la chiave privata del destinatario e viene verificata la firma utilizzando la chiave pubblica del mittente. Il certificato del mittente contenente la chiave pubblica necessaria è incluso nel messaggio crittografato. Questo esempio scrive anche il messaggio firmato e crittografato in un file. Per ulteriori informazioni, vedere [esempio C Program: ricezione di un messaggio firmato e crittografato](example-c-program-receiving-a-signed-and-encrypted-message.md).
+L'esempio seguente firma un messaggio [](../secgloss/p-gly.md) usando la chiave privata di un mittente e crittografa il messaggio firmato usando la [*chiave pubblica di un ricevitore.*](../secgloss/p-gly.md) L'esempio decrittografa quindi il messaggio usando la chiave privata del ricevitore e verifica la firma usando la chiave pubblica del mittente. Il certificato del mittente contenente la chiave pubblica necessaria è incluso nel messaggio crittografato. Questo esempio scrive anche il messaggio firmato e crittografato in un file. Per altre informazioni, vedere [Esempio di programma C: Ricezione di un messaggio firmato e crittografato](example-c-program-receiving-a-signed-and-encrypted-message.md).
 
-Per firmare il messaggio, è necessario che la chiave privata del firmatario e il certificato del firmatario siano disponibili. Per crittografare il messaggio firmato, è necessario che sia disponibile un certificato del ricevitore che includa la chiave pubblica del destinatario.
+Per firmare il messaggio, la chiave privata del firmatario e il certificato del firmatario devono essere disponibili. Per crittografare il messaggio firmato, è necessario che sia disponibile un certificato del ricevitore che include la chiave pubblica del ricevitore.
 
-Per decrittografare il messaggio, è necessario che sia disponibile la chiave privata del destinatario. Dopo la decrittografia del messaggio, la firma viene verificata utilizzando la chiave pubblica del certificato incluso nel messaggio crittografato.
+Per decrittografare il messaggio, la chiave privata del ricevitore deve essere disponibile. Dopo la decrittografia del messaggio, la firma viene verificata usando la chiave pubblica del certificato incluso nel messaggio crittografato.
 
 > [!Note]  
-> Non tutti i certificati in un [*archivio certificati*](../secgloss/c-gly.md) forniscono l'accesso alla [*chiave privata*](../secgloss/p-gly.md) associata al certificato. Quando il messaggio viene firmato e crittografato, è necessario usare un certificato che appartiene al firmatario con accesso alla chiave privata del firmatario. Inoltre, il ricevitore del messaggio deve avere accesso alla chiave privata associata alla chiave pubblica usata per crittografare il messaggio.
+> Non tutti i certificati in un archivio [*certificati*](../secgloss/c-gly.md) forniscono l'accesso alla [*chiave privata*](../secgloss/p-gly.md) associata al certificato. Quando il messaggio viene firmato e crittografato, deve essere usato un certificato appartenente al firmatario con accesso alla chiave privata del firmatario. Inoltre, il destinatario del messaggio deve avere accesso alla chiave privata associata alla chiave pubblica usata per crittografare il messaggio.
 
  
 
 In questo esempio vengono illustrate le attività seguenti:
 
--   Apertura e chiusura di archivi certificati di sistema.
--   Ricerca di certificati per un mittente e un ricevitore di messaggi negli archivi certificati aperti.
--   Ricerca e stampa del nome del soggetto dai certificati.
--   Inizializzazione di strutture di dati necessarie per firmare, crittografare, decrittografare e verificare un messaggio.
--   Chiamata di una funzione CryptoAPI per individuare le dimensioni richieste di un buffer, allocando il buffer della dimensione richiesta e richiamando la funzione CryptoAPI per riempire il buffer. Per altre informazioni, vedere [recupero di dati di lunghezza sconosciuta](retrieving-data-of-unknown-length.md).
--   Visualizzazione di parte del contenuto crittografato di un buffer. La funzione locale inclusa, **ShowBytes**, Visualizza i caratteri nel buffer con valori compresi tra' 0' è z '. Tutti gli altri caratteri vengono visualizzati come carattere "-".
+-   Apertura e chiusura degli archivi certificati di sistema.
+-   Ricerca di certificati per un mittente e un destinatario di messaggi negli archivi certificati aperti.
+-   Ricerca e stampa del nome soggetto dai certificati.
+-   Inizializzazione delle strutture di dati necessarie per firmare, crittografare, decrittografare e verificare un messaggio.
+-   Chiamata di una funzione CryptoAPI per trovare le dimensioni richieste di un buffer, allocando il buffer delle dimensioni richieste e chiamando di nuovo la funzione CryptoAPI per riempire il buffer. Per altre informazioni, vedere [Recupero di dati di lunghezza sconosciuta.](retrieving-data-of-unknown-length.md)
+-   Visualizzazione di parte del contenuto crittografato di un buffer. La funzione locale inclusa, **ShowBytes**, visualizza i caratteri nel buffer con valori compresi tra '0' e 'z'. Tutti gli altri caratteri vengono visualizzati come carattere '-'.
 
 In questo esempio vengono utilizzate le funzioni CryptoAPI seguenti:
 
@@ -44,7 +44,7 @@ In questo esempio vengono utilizzate le funzioni CryptoAPI seguenti:
 -   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-Questo esempio usa funzioni separate per visualizzare il processo di firma/crittografia e il processo di decrittografia/verifica della firma. USA anche [**MyHandleError**](myhandleerror.md) per uscire normalmente dal programma in caso di errore. Il codice **MyHandleError** è incluso nell'esempio e può anche essere trovato insieme ad altre funzioni ausiliarie in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio vengono utilizzate funzioni separate per mostrare il processo di firma/crittografia e il processo di decrittografia/verifica della firma. Usa anche [**MyHandleError**](myhandleerror.md) per uscire normalmente dal programma in caso di errore. Il codice **MyHandleError** è incluso nell'esempio e può essere trovato insieme ad altre funzioni ausiliarie in [per utilizzo generico Funzioni](general-purpose-functions.md).
 
 
 ```C++

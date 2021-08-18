@@ -1,7 +1,7 @@
 ---
 description: Richiede la deallocazione di un oggetto frame.
 ms.assetid: b2793744-1bba-4a2b-938c-44ed316358fd
-title: Metodo ID3DXAllocateHierarchy::D estroyFrame (D3dx9anim. h)
+title: Metodo ID3DXAllocateHierarchy::D estroyFrame (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4a394501b9967d3f7cb6d3f6b2f30db168438278
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f9e827a2bc53c5b87478cceadec5f56e5d41c4ecfd76a0dddf1bac0ee964128
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987971"
 ---
-# <a name="id3dxallocatehierarchydestroyframe-method"></a>ID3DXAllocateHierarchy::D Metodo estroyFrame
+# <a name="id3dxallocatehierarchydestroyframe-method"></a>Metodo ID3DXAllocateHierarchy::D estroyFrame
 
 Richiede la deallocazione di un oggetto frame.
 
@@ -40,7 +40,7 @@ HRESULT DestroyFrame(
 
 <dl> <dt>
 
-*pFrameToFree* \[ in\]
+*pFrameToFree* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
@@ -53,7 +53,7 @@ Puntatore al frame da deallocare.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da D3DERR o D3DXERR, in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da D3DERR o D3DXERR, perché in questo modo anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Oggetto ClosedCaption
-description: L'oggetto ClosedCaption fornisce un modo per includere le didascalie con una clip multimediale. Il testo della didascalia si trova in un file di interscambio multimediale accessibile sincronizzato (SAMI).
+description: L'oggetto ClosedCaption consente di includere didascalie con un clip multimediale. Il testo dei sottotitoli si trova in un file SAMI (Synchronized Accessible Media Interchange).
 ms.assetid: 5e192aa4-0ecd-4bda-8dad-1750039c7898
 keywords:
-- Media Player di Windows oggetto ClosedCaption
+- Oggetto ClosedCaption Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,35 +13,35 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 85e53468e8d5cc2694555b9a05d8b207d1660618
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 10ae51af31e724bd066dbbb9e826569da40159460eb1e7bf570aea331dff86be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104045959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119595"
 ---
 # <a name="closedcaption-object"></a>Oggetto ClosedCaption
 
-L'oggetto **ClosedCaption** fornisce un modo per includere le didascalie con una clip multimediale. Il testo della didascalia si trova in un file di interscambio multimediale accessibile sincronizzato (SAMI).
+**L'oggetto ClosedCaption** consente di includere didascalie con un clip multimediale. Il testo dei sottotitoli si trova in un file SAMI (Synchronized Accessible Media Interchange).
 
-L'oggetto **ClosedCaption** supporta le proprietà seguenti.
+**L'oggetto ClosedCaption** supporta le proprietà seguenti.
 
 
 
 | Proprietà                                           | Descrizione                                                                                          |
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [captioningID](closedcaption-captioningid.md)     | Specifica o Recupera il nome del frame o del controllo che visualizza la didascalia.                   |
-| [SAMIFileName](closedcaption-samifilename.md)     | Specifica o Recupera il nome del file contenente le informazioni necessarie per la didascalia chiusa. |
-| [SAMILang](closedcaption-samilang.md)             | Specifica o recupera la lingua visualizzata per la didascalia chiusa.                                 |
+| [captioningID](closedcaption-captioningid.md)     | Specifica o recupera il nome del frame o del controllo che visualizza la didascalia.                   |
+| [SAMIFileName](closedcaption-samifilename.md)     | Specifica o recupera il nome del file contenente le informazioni necessarie per i sottotitoli codificati. |
+| [SAMILang](closedcaption-samilang.md)             | Specifica o recupera la lingua visualizzata per i sottotitoli codificati.                                 |
 | [SAMILangCount](closedcaption-samilangcount.md)   | Recupera il numero di lingue supportate dal file SAMI corrente.                                |
-| [SAMIStyle](closedcaption-samistyle.md)           | Specifica o recupera lo stile dei sottotitoli codificati.                                                  |
+| [SAMIStyle](closedcaption-samistyle.md)           | Specifica o recupera lo stile di sottotitoli codificati.                                                  |
 | [SAMIStyleCount](closedcaption-samistylecount.md) | Recupera il numero di stili supportati dal file SAMI corrente.                                   |
 
 
 
- 
+ 
 
-L'oggetto **ClosedCaption** supporta i metodi seguenti.
+**L'oggetto ClosedCaption** supporta i metodi seguenti.
 
 
 
@@ -53,9 +53,9 @@ L'oggetto **ClosedCaption** supporta i metodi seguenti.
 
 
 
- 
+ 
 
-È possibile accedere all'oggetto **ClosedCaption** tramite la proprietà seguente.
+**L'oggetto ClosedCaption** è accessibile tramite la proprietà seguente.
 
 
 
@@ -65,21 +65,21 @@ L'oggetto **ClosedCaption** supporta i metodi seguenti.
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati ai supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Riferimento del modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
+[**Informazioni di riferimento sul modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

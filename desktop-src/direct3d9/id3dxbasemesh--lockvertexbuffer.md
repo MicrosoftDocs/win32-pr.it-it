@@ -1,7 +1,7 @@
 ---
-description: Blocca un buffer dei vertici e ottiene un puntatore alla memoria del buffer del vertice.
+description: Blocca un buffer dei vertici e ottiene un puntatore alla memoria del buffer dei vertici.
 ms.assetid: afcd479c-b268-4720-b26c-88b82f1aab08
-title: 'Metodo ID3DXBaseMesh:: LockVertexBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::LockVertexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2e93e59715d9f262d7693f2bef652f8be63337f7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5bb0cd8539a996b66ccf9f413e57ebf1d213fe6372e56b50b35abc5e210595f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987611"
 ---
-# <a name="id3dxbasemeshlockvertexbuffer-method"></a>Metodo ID3DXBaseMesh:: LockVertexBuffer
+# <a name="id3dxbasemeshlockvertexbuffer-method"></a>Metodo ID3DXBaseMesh::LockVertexBuffer
 
-Blocca un buffer dei vertici e ottiene un puntatore alla memoria del buffer del vertice.
+Blocca un buffer dei vertici e ottiene un puntatore alla memoria del buffer dei vertici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,18 +41,18 @@ HRESULT LockVertexBuffer(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Combinazione di zero o più flag di blocco che descrivono il tipo di blocco da eseguire. Per questo metodo, i flag validi sono:
 
--   Eliminazione di D3DLOCK \_
--   D3DLOCK \_ nessun \_ \_ aggiornamento Dirty
--   \_NOSYSLOCK D3DLOCK
--   D3DLOCK \_ ReadOnly
--   Nosovrascrive D3DLOCK \_
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
+-   D3DLOCK \_ NOSYSLOCK
+-   D3DLOCK \_ READONLY
+-   D3DLOCK \_ NOOVERWRITE
 
 Per una descrizione dei flag, vedere [D3DLOCK](d3dlock.md).
 
@@ -63,7 +63,7 @@ Per una descrizione dei flag, vedere [D3DLOCK](d3dlock.md).
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
 
-\*Puntatore void a un buffer contenente i dati del vertice.
+Puntatore VOID \* a un buffer contenente i dati del vertice.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Quando si utilizzano i buffer dei vertici, è possibile effettuare più chiamate di blocco; Tuttavia, è necessario assicurarsi che il numero di chiamate di blocco corrisponda al numero di chiamate di sblocco. Le chiamate DrawPrimitive non riusciranno con il conteggio dei blocchi in attesa su qualsiasi buffer vertex attualmente impostato.
+Quando si lavora con i buffer dei vertici, è possibile effettuare più chiamate di blocco. Tuttavia, è necessario assicurarsi che il numero di chiamate di blocco corrisponda al numero di chiamate di sblocco. Le chiamate DrawPrimitive non avranno esito positivo con il conteggio dei blocchi in sospeso su qualsiasi buffer dei vertici attualmente impostato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Quando si utilizzano i buffer dei vertici, è possibile effettuare più chiamate
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

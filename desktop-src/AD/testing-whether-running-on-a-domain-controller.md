@@ -1,20 +1,20 @@
 ---
-title: Verifica dell'esecuzione in un controller di dominio
-description: Il codice seguente usa la funzione VerifyVersionInfo per determinare se il processo chiamante è in esecuzione in un controller di dominio di Windows 2000 Server.
+title: Test dell'esecuzione in un controller di dominio
+description: Il codice seguente usa la funzione VerifyVersionInfo per determinare se il processo chiamante è in esecuzione in un controller di dominio Windows 2000 Server.
 ms.assetid: 1cef6478-5503-467c-9b82-830d17018b19
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8aeb73af18be9f0c787c2ee30b150689d760aec
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: bb49577994716598bb730fcc7e86a9cce76a2835e8cfa1558b7d608b9cbc5ea2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104117522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024589"
 ---
-# <a name="testing-whether-running-on-a-domain-controller"></a>Verifica dell'esecuzione in un controller di dominio
+# <a name="testing-whether-running-on-a-domain-controller"></a>Test dell'esecuzione in un controller di dominio
 
-Il codice seguente usa la funzione [**VerifyVersionInfo**](/windows/desktop/api/winbase/nf-winbase-verifyversioninfoa) per determinare se il processo chiamante è in esecuzione in un controller di dominio di Windows 2000 Server. Il programma di installazione del servizio può utilizzare questo test prima di installare un servizio con l'account LocalSystem. Se il test indica che è in esecuzione in un controller di dominio, è necessario installare il servizio per l'esecuzione con un account utente oppure visualizzare una finestra di dialogo di avviso dei pericoli in esecuzione come LocalSystem in un controller di dominio (ovvero il servizio avrebbe accesso illimitato a Active Directory Domain Services, un contesto di sicurezza estremamente potente che può danneggiare l'intera rete).
+Nel codice seguente viene utilizzata la [**funzione VerifyVersionInfo**](/windows/desktop/api/winbase/nf-winbase-verifyversioninfoa) per determinare se il processo chiamante è in esecuzione in un controller di dominio Windows 2000 Server. Il programma di installazione del servizio potrebbe usare questo test prima di installare un servizio con l'account LocalSystem. Se il test indica che l'esecuzione è in esecuzione in un controller di dominio, installare il servizio per l'esecuzione con un account utente oppure visualizzare una finestra di dialogo che segnala i rischi dell'esecuzione come LocalSystem in un controller di dominio, ovvero che il servizio avrebbe accesso illimitato a Active Directory Domain Services, un contesto di sicurezza estremamente potente che potrebbe danneggiare l'intera rete.
 
 
 ```C++
@@ -45,6 +45,6 @@ BOOL Is_Win2000_DomainController ()
 
 
 
- 
+ 
 
- 
+ 

@@ -13,21 +13,21 @@ ms.locfileid: "118994421"
 ---
 # <a name="windows-accessibility-features"></a>Funzionalità di accessibilità di Windows
 
-Windows L'accessibilità supporta due categorie di funzionalità per aiutare gli sviluppatori Windows a progettare applicazioni accessibili, gli sviluppatori di assistive technology creano strumenti come utilità per la lettura dello schermo e le lente di ingrandimento e i tecnici dei test software creano script automatizzati per il test Windows applicazioni.
+Windows L'accessibilità supporta due categorie di funzionalità che consentono agli sviluppatori Windows di progettare applicazioni accessibili, gli sviluppatori assistive technology creano strumenti come utilità per la lettura dello schermo e le lente di ingrandimento e i tecnici di test software creano script automatizzati per il test Windows applicazioni.
 
 ## <a name="settings"></a>Impostazioni
 
-Esistono due tipi di impostazioni disponibili per gli utenti (tramite il Centro accessibilità in Pannello di controllo) che vengono esposti anche agli sviluppatori:
+Esistono due tipi di impostazioni disponibili per gli utenti (tramite l'Centro accessibilità in Pannello di controllo) che vengono esposte anche agli sviluppatori:
 
-- [Parametri di accessibilità](accessibility-parameters.md). Se impostati, questi parametri indicano che le applicazioni devono modificare il comportamento predefinito. Le applicazioni possono controllare lo stato di un parametro di accessibilità per determinare se l'utente desidera un comportamento speciale che possa essere fornito in modo specifico dell'applicazione. Ad esempio, il parametro ShowSounds indica che anche un'applicazione che usa il suono per trasmettere informazioni importanti deve fornire visivamente le informazioni.
-- [Funzionalità di accessibilità incorporate.](built-in-accessibility-features.md) Queste funzionalità sono integrate nel sistema o fornite come estensione del sistema. Influiscono sul modo in cui l'utente fornisce input da tastiera e mouse al computer. Se abilitata, la funzionalità è disponibile indipendentemente dalle applicazioni in esecuzione. Un esempio è un filtro da tastiera che rende più semplice per gli utenti con problemi di spostamento digitare combinazioni di tasti, ad esempio CTRL+ALT+CANC.
+- [Parametri di accessibilità](accessibility-parameters.md). Se impostati, questi parametri indicano che le applicazioni devono modificare il comportamento predefinito. Le applicazioni possono controllare lo stato di un parametro di accessibilità per determinare se l'utente desidera un comportamento speciale che può essere fornito in modo specifico dell'applicazione. Ad esempio, il parametro ShowSounds indica che anche un'applicazione che in genere usa il suono per trasmettere informazioni importanti deve fornire le informazioni visivamente.
+- [Funzionalità di accessibilità incorporate.](built-in-accessibility-features.md) Queste funzionalità sono integrate nel sistema o fornite come estensione al sistema. Influiscono sul modo in cui l'utente fornisce input da tastiera e mouse al computer. Se abilitata, la relativa funzionalità è disponibile indipendentemente dalle applicazioni in esecuzione. Un esempio è un filtro da tastiera che semplifica la digitazione di combinazioni di tasti per gli utenti con problemi di spostamento, ad esempio CTRL+ALT+CANC.
 
 Ogni parametro di accessibilità e ogni funzionalità di accessibilità incorporata corrisponde a un parametro di sistema che può essere impostato o sottoposto a query con la [funzione SystemParametersInfo.](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
 
 ## <a name="win32-apis"></a>API Win32
 
-Le API Win32 offrono funzionalità di accessibilità e automazione che consentono agli sviluppatori di creare applicazioni e framework dell'interfaccia utente, fornitori di assistive technology di creare strumenti, tester che garantiscono implementazioni di qualità e utenti con disabilità usano i propri computer e dispositivi.
+Le API Win32 offrono funzionalità di accessibilità e automazione che consentono agli sviluppatori di creare applicazioni e framework dell'interfaccia utente, i fornitori di assistive technology compilano strumenti, i tester garantiscono implementazioni di qualità e gli utenti con disabilità usano i propri computer e dispositivi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Considerazioni sulla sicurezza per Assistive Technologies](uiauto-securityoverview.md)
+[Considerazioni sulla sicurezza per assistive Technologies](uiauto-securityoverview.md)

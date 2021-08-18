@@ -1,15 +1,15 @@
 ---
 title: Strutture dell'helper IP
-description: Pagina di spostamento Strutture helper IP.
+description: Pagina di navigazione Strutture helper IP.
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: d53c3821-00a0-4eaa-9a06-69ec7aa98d84
-ms.openlocfilehash: ac8a8f9a143cd661050204483d9dca9a66ce5255
-ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
+ms.openlocfilehash: a63c85c5cfe167aeb3bdf9d500979ece6ed8d24e5d7aa6235da0d82fed11dd0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114394208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146754"
 ---
 # <a name="ip-helper-structures"></a>Strutture dell'helper IP
 

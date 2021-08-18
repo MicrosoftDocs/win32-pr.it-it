@@ -1,7 +1,7 @@
 ---
 description: Descrive un'area rettangolare bloccata.
 ms.assetid: ee5d2ea6-bf98-4b09-bc67-b808ffcb23c6
-title: Struttura D3DLOCKED_RECT (D3D9Types. h)
+title: D3DLOCKED_RECT struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 9242a267085579cce52e66f2b9326a8e6298c87c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b419483329e5461de5bc98b3a37b556e37138a055932b1d6c80d3a19b13ae516
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104530955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988901"
 ---
-# <a name="d3dlocked_rect-structure"></a>\_Struttura Rect D3DLOCKED
+# <a name="d3dlocked_rect-structure"></a>Struttura D3DLOCKED \_ RECT
 
 Descrive un'area rettangolare bloccata.
 
@@ -43,7 +43,7 @@ typedef struct D3DLOCKED_RECT {
 **Passo**
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,17 +54,17 @@ Numero di byte in una riga della superficie.
 **pBits**
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
 </dd> <dd>
 
-Puntatore ai bit bloccati. Se è stato fornito un oggetto [**Rect**](/previous-versions//dd162897(v=vs.85)) alla chiamata [**LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect) , pBits verrà spostato in modo appropriato dall'inizio della superficie.
+Puntatore ai bit bloccati. Se è [**stato fornito**](/previous-versions//dd162897(v=vs.85)) un rect alla [**chiamata LockRect,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect) i pBit verranno offset in modo appropriato dall'inizio della superficie.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il pitch per i formati DXTn è diverso da quello restituito in DirectX 7. Fa ora riferimento al numero di byte in una riga di blocchi. Se, ad esempio, si dispone di una larghezza di 16, sarà presente un pitch di 4 blocchi (4 \* 8 per DXT1, 4 \* 16 per DXT2-5).
+Il passo per i formati DXTn è diverso da quello restituito in DirectX 7. Ora fa riferimento al numero di byte in una riga di blocchi. Ad esempio, se si ha una larghezza di 16, si avrà un passo di 4 blocchi (4 8 per \* DXT1, 4 \* 16 per DXT2-5).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Il pitch per i formati DXTn è diverso da quello restituito in DirectX 7. Fa ora
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Il pitch per i formati DXTn è diverso da quello restituito in DirectX 7. Fa ora
 [**IDirect3DCubeTexture9::LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-lockrect)
 </dt> <dt>
 
-[**IDirect3DSurface9:: LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect)
+[**IDirect3DSurface9::LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect)
 </dt> <dt>
 
 [**IDirect3DTexture9::LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-lockrect)

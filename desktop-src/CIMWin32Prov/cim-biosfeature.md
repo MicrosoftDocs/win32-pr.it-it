@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le funzionalità del software di basso livello utilizzato per avviare e configurare un computer.
+description: Rappresenta le funzionalità del software di basso livello usato per avviare e configurare un sistema di computer.
 ms.assetid: 54d03539-d908-4571-b8fd-934b972e8d84
 ms.tgt_platform: multiple
 title: CIM_BIOSFeature classe
@@ -34,10 +34,10 @@ ms.locfileid: "119218591"
 ---
 # <a name="cim_biosfeature-class"></a>Classe \_ CIM BIOSFeature
 
-La **classe \_ CIM BIOSFeature** rappresenta le funzionalità del software di basso livello usato per avviare e configurare un computer.
+La **classe \_ CIM BIOSFeature** rappresenta le funzionalità del software di basso livello usato per avviare e configurare un sistema informatico.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,7 +65,7 @@ class CIM_BIOSFeature : CIM_SoftwareFeature
 
 ## <a name="members"></a>Members
 
-La **classe \_ CIM BIOSFeature** include questi tipi di membri:
+La **classe \_ CIM BIOSFeature** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -78,7 +78,7 @@ La **classe \_ CIM BIOSFeature** ha queste proprietà.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -87,7 +87,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -102,13 +102,13 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| BIOS Characteristic \| 003.4"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ BIOSFeature**.**Caratteristiche**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| BIOS Characteristic \| 003.4"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ BIOSFeature**.**Caratteristiche**")
 </dt> </dl>
 
-Matrice di stringhe in formato libero che fornisce spiegazioni dettagliate delle funzionalità del BIOS indicate nella **matrice Characteristics.**
+Matrice di stringhe in formato libero che fornisce spiegazioni dettagliate delle funzionalità del BIOS indicate nella matrice **Characteristics.**
 
 > [!Note]  
-> Ogni voce di questa matrice è correlata alla voce nella matrice **Characteristics,** che si trova in corrispondenza dello stesso indice.
+> Ogni voce di questa matrice è correlata alla voce nella matrice **Characteristics,** che si trova nello stesso indice.
 
  
 
@@ -123,10 +123,10 @@ Tipo di dati: **matrice uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| BIOS Characteristic \| 003.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ BIOSFeature**.**CharacteristicDescriptions**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| BIOS Characteristic \| 003.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ BIOSFeature**.**CharacteristicDescriptions**")
 </dt> </dl>
 
-Matrice di numeri interi che specifica le funzionalità supportate dal BIOS. Il valore 3 non è valido nello schema CIM perché indica che non sono supportate funzionalità BIOS in DMI. In tal caso, non è necessario creare un'istanza di questo oggetto.
+Matrice di numeri interi che specifica le funzionalità supportate dal BIOS. Il valore 3 non è valido nello schema CIM perché rappresenta che non sono supportate funzionalità BIOS in DMI. In tal caso, non è necessario creare un'istanza di questo oggetto.
 
 <dt>
 
@@ -236,7 +236,7 @@ Supporto PnP.
 
 </dt> <dd>
 
-Supporto APM.
+Supporto di APM.
 
 </dd> <dt>
 
@@ -264,7 +264,7 @@ Shadowing BIOS consentito.
 
 <span id="VL_VESA_Support"></span><span id="vl_vesa_support"></span><span id="VL_VESA_SUPPORT"></span>
 
-<span id="VL_VESA_Support"></span><span id="vl_vesa_support"></span><span id="VL_VESA_SUPPORT"></span>**Supporto VL VESA** (13)
+<span id="VL_VESA_Support"></span><span id="vl_vesa_support"></span><span id="VL_VESA_SUPPORT"></span>**Supporto VESA VL** (13)
 
 
 </dt> <dd>
@@ -280,7 +280,7 @@ Supporto VL VESA.
 
 </dt> <dd>
 
-Supporto ESCD.
+Supporto escD.
 
 </dd> <dt>
 
@@ -291,7 +291,7 @@ Supporto ESCD.
 
 </dt> <dd>
 
-Supporto LS-120.
+Supporto di LS-120.
 
 </dd> <dt>
 
@@ -346,7 +346,7 @@ Supporto AGP.
 
 </dt> <dd>
 
-Scheda PC.
+SCHEDA PC.
 
 </dd> <dt>
 
@@ -385,7 +385,7 @@ I2C.
 
 <span id="Smart_Battery"></span><span id="smart_battery"></span><span id="SMART_BATTERY"></span>
 
-<span id="Smart_Battery"></span><span id="smart_battery"></span><span id="SMART_BATTERY"></span>**Smart Battery** (24)
+<span id="Smart_Battery"></span><span id="smart_battery"></span><span id="SMART_BATTERY"></span>**Batteria intelligente** (24)
 
 
 </dt> <dd>
@@ -410,7 +410,7 @@ PC-98.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -428,7 +428,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **IdentifyingNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -437,7 +437,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**PRODOTTO CIM \_**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
-Identificazione del prodotto, ad esempio un numero di serie sul software o un numero dae su un chip hardware.
+Identificazione del prodotto, ad esempio un numero di serie sul software o un numero da die su un chip hardware.
 
 Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
 
@@ -464,7 +464,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -473,16 +473,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-La proprietà Name definisce l'etichetta con cui l'oggetto è noto al mondo esterno al sistema di elaborazione dati. Questa etichetta è un nome leggibile che identifica in modo univoco l'elemento nel contesto dello spazio dei nomi dell'elemento.
+La proprietà Name definisce l'etichetta in base alla quale l'oggetto è noto al mondo esterno al sistema di elaborazione dati. Questa etichetta è un nome leggibile dall'utente che identifica in modo univoco l'elemento nel contesto dello spazio dei nomi dell'elemento.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
 **ProductName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -493,14 +493,14 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Nome del prodotto di uso comune.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -509,9 +509,9 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Danneggiato" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma prevede un errore , ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Degraded" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma sta stimando un errore (ad esempio, un disco rigido abilitato per SMART).
 
-Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". Il "servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". "Servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -528,14 +528,14 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("Error")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degraded** ("Degraded")
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -556,7 +556,7 @@ Sono inclusi i valori seguenti:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
@@ -608,25 +608,25 @@ Sono inclusi i valori seguenti:
 **Fornitore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**PRODOTTO CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**PRODOTTO CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
 </dt> </dl>
 
-Nome del fornitore del prodotto, che corrisponde alla proprietà **Vendor** nell'oggetto prodotto della soluzione DMTF Exchange Standard.
+Nome del fornitore del prodotto, che corrisponde alla **proprietà Vendor** nell'oggetto product della soluzione DMTF Exchange Standard.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
 **Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -635,19 +635,19 @@ Tipo di accesso: sola lettura
 Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**PRODOTTO CIM \_**](cim-product.md).**Versione**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
-Informazioni sulla versione del prodotto, che corrispondono alla **proprietà Version** nell'oggetto prodotto della soluzione DMTF Exchange Standard.
+Informazioni sulla versione del prodotto, che corrispondono alla **proprietà Version** nell'oggetto product della soluzione DMTF Exchange Standard.
 
-Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Questa proprietà viene ereditata da [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ CIM BIOSFeature** è derivata da [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+La **classe \_ CIM BIOSFeature** è derivata da [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

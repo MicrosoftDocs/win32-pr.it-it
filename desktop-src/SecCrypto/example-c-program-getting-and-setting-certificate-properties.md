@@ -1,27 +1,27 @@
 ---
-description: Ottiene e imposta le proprietà del certificato e illustra le seguenti attività e funzioni CryptoAPI.
+description: Ottiene e imposta le proprietà del certificato e illustra le attività e le funzioni CryptoAPI seguenti.
 ms.assetid: 4cc20a59-d8e9-4c9b-9438-21bccbbe4a64
-title: 'Esempio di programma C: recupero e impostazione delle proprietà di un certificato'
+title: 'Programma C di esempio: Recupero e impostazione delle proprietà del certificato'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99ac3d865eb90f57f1c687dbf58e89a2725066aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f4197d4ba716f780fec419aaf9588807d379ac85ccbfdb95535936539129dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007669"
 ---
-# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Esempio di programma C: recupero e impostazione delle proprietà di un certificato
+# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Programma C di esempio: Recupero e impostazione delle proprietà del certificato
 
-Nell'esempio seguente vengono recuperate e impostate le proprietà del certificato e vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti.
+L'esempio seguente ottiene e imposta le proprietà del certificato e illustra le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti.
 
--   Apertura di un archivio di sistema tramite [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Uso di [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) per elencare tutti i certificati nell'archivio aperto.
--   Recupero e stampa del nome del soggetto dal certificato tramite [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Impostazione della proprietà [*utilizzo chiavi avanzato*](../secgloss/e-gly.md) per i certificati tramite la funzione [**CertAddEnhancedKeyUsageIdentifier**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier) .
--   Impostazione della proprietà nome visualizzato sul certificato tramite [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
+-   Apertura di un archivio di sistema [**tramite CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Uso [**di CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) per elencare tutti i certificati nell'archivio aperto.
+-   Recupero e stampa del nome soggetto dal certificato tramite [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Impostazione della [*proprietà di utilizzo chiavi*](../secgloss/e-gly.md) avanzata sui certificati tramite la funzione [**CertAddEnhancedKeyUsageIdentifier.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier)
+-   Impostazione della proprietà del nome visualizzato nel certificato tramite [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
 -   Recupero delle proprietà di un certificato tramite [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty).
--   Chiusura di un archivio certificati utilizzando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con il \_ flag di controllo del contrassegno di chiusura dell' \_ archivio certificati \_ \_ .
+-   Chiusura di un archivio certificati tramite [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con il flag CERT \_ CLOSE STORE CHECK \_ \_ \_ FLAG.
 
 
 ```C++

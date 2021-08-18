@@ -1,34 +1,34 @@
 ---
-title: Operazioni del servizio sul lato client
+title: Operazioni del servizio lato client
 ms.assetid: 9d6e2441-91de-4108-b1c4-282fbca5fe7c
-description: 'Altre informazioni su: operazioni del servizio sul lato client'
+description: 'Altre informazioni su: Operazioni del servizio sul lato client'
 keywords:
-- Servizi Web per le operazioni del servizio sul lato client per Windows
+- Servizi Web delle operazioni sul lato client per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4cd00bfbd832db12a722363bf5b1af8f7298345
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e73ccbb0c742d0be09570b0959c9c1a663d7f4d0f054cc88070d842ac6d954ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657301"
 ---
-# <a name="client-side-service-operations"></a>Operazioni del servizio sul lato client
+# <a name="client-side-service-operations"></a>Operazioni del servizio lato client
 
-Di seguito è riportato il layout di un'operazione del servizio sul lato client:
+Di seguito è riportato il layout di un'operazione del servizio lato client:
 
--   [WS \_ \_Proxy del servizio](ws-service-proxy.md) \* serviceProxy: [proxy del servizio](service-proxy.md) per la chiamata.
--   [WS \_ Heap heap](ws-heap.md) \* : heap obbligatorio utilizzato per la serializzazione e la deserializzazione del corpo del [ \_ messaggio WS](ws-message.md).
--   Parametri delle operazioni di servizio: parametri relativi all'operazione del servizio.
--   [**Chiamare le proprietà e il relativo conteggio**](/windows/desktop/api/WebServices/ns-webservices-ws_call_property): una matrice di proprietà della chiamata.
--   [**Call**](/windows/desktop/api/WebServices/ns-webservices-ws_call_property) Property Count: numero di proprietà della chiamata.
--   [**WS \_ \_Contesto**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) asincrono asyncContext: contesto asincrono per l'esecuzione della chiamata in modo asincrono.
--   [WS \_ Errore:](ws-error.md) oggetto Rich Error.
+-   [WS \_ SERVICE \_ PROXY](ws-service-proxy.md) \* serviceProxy: [proxy del servizio](service-proxy.md) per la chiamata.
+-   [WS \_ Heap](ws-heap.md) HEAP: heap necessario utilizzato per la serializzazione del corpo e \* la deserializzazione del [messaggio WS. \_ ](ws-message.md)
+-   Parametri delle operazioni del servizio: parametri relativi all'operazione del servizio.
+-   [**Proprietà di chiamata e relativo conteggio:**](/windows/desktop/api/WebServices/ns-webservices-ws_call_property)matrice di proprietà di chiamata.
+-   [**Conteggio**](/windows/desktop/api/WebServices/ns-webservices-ws_call_property) delle proprietà di chiamata: numero di proprietà di chiamata.
+-   [**WS \_ ASYNC \_ CONTEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) asyncContext: contesto asincrono per l'esecuzione asincrona della chiamata.
+-   [WS \_ Errore](ws-error.md) DI ERRORE: oggetto errore rtf.
 
 
-### <a name="signature-for-client-side-service-operations"></a>Firma per le operazioni del servizio sul lato client
+### <a name="signature-for-client-side-service-operations"></a>Firma per le operazioni del servizio lato client
 
 ``` syntax
 typedef HRESULT(CALLBACK *ICalculator_Add)(WS_SERVICE_PROXY* serviceProxy, 
@@ -42,13 +42,13 @@ typedef HRESULT(CALLBACK *ICalculator_Add)(WS_SERVICE_PROXY* serviceProxy,
 
 ### <a name="memory-considerations-for-client-side-service-operations"></a>Considerazioni sulla memoria per le operazioni del servizio sul lato client
 
-La chiamata all'operazione del servizio accetta un [ \_ heap WS](ws-heap.md) \* come parametro. Si tratta di un parametro obbligatorio utilizzato per la serializzazione/deserializzazione di corpi dei messaggi nei parametri.
+La chiamata all'operazione del servizio accetta un [ \_ heap WS](ws-heap.md) \* come parametro. Si tratta di un parametro obbligatorio usato per la serializzazione/deserializzazione dei corpi dei messaggi nei parametri.
 
-L'applicazione deve chiamare [**WsResetHeap**](/windows/desktop/api/WebServices/nf-webservices-wsresetheap) se la chiamata ha avuto esito positivo o meno. Se la chiamata ha esito positivo e presenta parametri in uscita, l'applicazione deve chiamare **WsResetHeap** immediatamente dopo che è stata completata con i parametri in uscita.
+L'applicazione deve [**chiamare WsResetHeap indipendentemente**](/windows/desktop/api/WebServices/nf-webservices-wsresetheap) dal fatto che la chiamata sia riuscita o meno. Se la chiamata ha esito positivo e ha parametri in uscita, l'applicazione deve chiamare **WsResetHeap** immediatamente dopo il termine con i parametri in uscita.
 
-L'applicazione deve allocare memoria per i parametri in e out con [**WsAlloc**](/windows/desktop/api/WebServices/nf-webservices-wsalloc). Potrebbe essere necessario riallocare il proxy del servizio in modo che i puntatori forniti vengano sovrascritti. Un tentativo di liberare tale memoria provocherà l'arresto anomalo dell'applicazione.
+L'applicazione deve allocare memoria per i parametri in e out con [**WsAlloc**](/windows/desktop/api/WebServices/nf-webservices-wsalloc). Il proxy del servizio potrebbe dover riallocarli in modo che i puntatori forniti verranno sovrascritti. Un tentativo di liberare tale memoria causerà l'arresto anomalo dell'applicazione.
 
-### <a name="client-side-service-operation-and-ws_heap"></a>Operazione del servizio lato client e \_ heap WS
+### <a name="client-side-service-operation-and-ws_heap"></a>Operazione sul lato client del servizio e heap \_ WS
 
 ``` syntax
 HRESULT hr = IProcessOrder_ProcessOrder(serviceProxy, heap, orderNumber, &orderReceipt, NULL, 0, NULL, error);
@@ -67,16 +67,16 @@ if(FAILED(hr))
     goto error;
 ```
 
-### <a name="error-parameter"></a>Parametro error
+### <a name="error-parameter"></a>Parametro di errore
 
 L'applicazione deve sempre passare il parametro error a:
 
--   Ottenere informazioni dettagliate sugli errori se si verifica un errore durante la chiamata dell'operazione del servizio.
--   Ottenere l'oggetto errore se il servizio restituisce un errore. L'errore è contenuto nell'oggetto Error. In questo caso, il valore **HRESULT** restituito dall'operazione del servizio è **WS \_ E \_ endpoint \_ \_ received** (vedere [valori restituiti di servizi Web Windows](windows-web-services-return-values.md)).
+-   Ottenere informazioni dettagliate sugli errori se si verifica un errore durante la chiamata all'operazione del servizio.
+-   Ottenere l'oggetto errore se il servizio ha restituito un errore. L'errore è contenuto nell'oggetto errore. In questo caso, il **valore HRESULT** restituito dall'operazione del servizio è **WS \_ E ENDPOINT \_ FAULT \_ \_ RECEIVED** (vedere Windows [valori restituiti dei servizi Web).](windows-web-services-return-values.md)
 
 ### <a name="call-properties-for-client-side-service-operations"></a>Proprietà delle chiamate per le operazioni del servizio sul lato client
 
-Le proprietà di chiamata consentono a un'applicazione di specificare impostazioni personalizzate per una determinata chiamata. Attualmente, solo una proprietà di chiamata è disponibile con il modello di servizio, [**\_ \_ \_ \_ ID chiamata della proprietà WS Call**](/windows/desktop/api/WebServices/ne-webservices-ws_call_property_id).
+Le proprietà delle chiamate consentono a un'applicazione di specificare impostazioni personalizzate per una determinata chiamata. Attualmente è disponibile una sola proprietà call con il modello di [**servizio, WS \_ CALL PROPERTY CALL \_ \_ \_ ID**](/windows/desktop/api/WebServices/ne-webservices-ws_call_property_id).
 
 ``` syntax
 WS_CALL_PROPERTY callProperties[1] = {0};
@@ -102,34 +102,34 @@ hr = WsAbandonCall(serviceProxy, 5, error);
 
 ### <a name="abandoning-a-call"></a>Abbandono di una chiamata
 
-Spesso è preferibile abbandonare i risultati di una chiamata per restituire il controllo all'applicazione, in modo che il completamento effettivo della chiamata venga gestito dall'infrastruttura. Il proxy del servizio fornisce questa funzionalità tramite [**WsAbandonCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall).
+È spesso consigliabile abbandonare i risultati di una chiamata per rinunciare al controllo all'applicazione, in modo che il completamento effettivo della chiamata sia gestito dall'infrastruttura. Il proxy di servizio fornisce questa funzionalità [**tramite WsAbandonCall.**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall)
 
-Si noti che il controllo per il chiamante non può essere restituito immediatamente, l'unica garanzia che il runtime del proxy del servizio fornisce è che non attende il completamento di un'operazione di I/O, prima di restituire il controllo al chiamante.
+Si noti che il controllo al chiamante non può essere rimesso immediatamente, l'unica garanzia che il runtime del proxy del servizio garantisce è che non aspetterebbe il completamento di alcuna operazione associata all'I/O prima di dare il controllo al chiamante.
 
-Le chiamate su un'operazione del servizio lato client possono essere abbandonate tramite una chiamata a [**WsAbandonCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall). Accetta un proxy del servizio e un ID chiamata. Un ID chiamata viene fornito come parte di una proprietà di chiamata in un'operazione del servizio.
+Le chiamate a un'operazione del servizio lato client possono essere abbandonate tramite una chiamata a [**WsAbandonCall.**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall) Accetta un proxy del servizio e un ID chiamata. Un ID chiamata viene specificato come parte delle proprietà di una chiamata in un'operazione del servizio.
 
-Se l'ID chiamata è 0, il proxy del servizio abbandonerà tutte le chiamate in sospeso a tale istanza.
+Se l'ID chiamata è 0, il proxy del servizio abbandonerà tutte le chiamate in sospeso in tale istanza.
 
 ### <a name="call-timeouts"></a>Timeout delle chiamate
 
-Per impostazione predefinita, un proxy del servizio ha un timeout di 30 secondi per ogni chiamata. Il timeout di una chiamata può essere modificato dalla proprietà del proxy del servizio di [**timeout delle chiamate della \_ \_ Proprietà WS \_ \_ proxy**](/windows/desktop/api/WebServices/ne-webservices-ws_proxy_property_id) durante la creazione di un proxy del servizio tramite [**WsCreateServiceProxy**](/windows/desktop/api/WebServices/nf-webservices-wscreateserviceproxy).
+Per impostazione predefinita, un proxy del servizio ha un timeout di 30 secondi per ogni chiamata. Il timeout di una chiamata può essere modificato dalla proprietà proxy del servizio [**WS \_ PROXY CALL \_ \_ \_ TIMEOUT**](/windows/desktop/api/WebServices/ne-webservices-ws_proxy_property_id) durante la creazione di un proxy del servizio [**tramite WsCreateServiceProxy**](/windows/desktop/api/WebServices/nf-webservices-wscreateserviceproxy).
 
-Una volta raggiunto il timeout, la chiamata viene abbandonata.
+Dopo aver raggiunto un timeout, la chiamata viene abbandonata.
 
 ### <a name="return-values"></a>Valori restituiti
 
-Tutti i valori **HRESULT** di esito positivo devono essere considerati come esito positivo e tutti i valori di errore devono essere considerati come errori. Di seguito sono riportati alcuni dei valori **HRESULT** che un'applicazione può aspettarsi:
+Tutti i valori **HRESULT** di esito positivo devono essere considerati come esito positivo e tutti i valori di errore devono essere considerati come errori. Di seguito sono riportati alcuni dei **valori HRESULT** previsti da un'applicazione:
 
--   **WS \_ S \_ Async**: la chiamata verrà completata in modo asincrono.
--   NOERROR: la chiamata è stata completata correttamente.
--   **WS \_ \_Operazione E \_ abbandonata**: la chiamata è stata abbandonata. L'oggetto Error contiene il motivo dell'abbandono.
--   **WS \_ \_ \_ Operazione non valida**: il proxy del servizio non si trova in uno stato appropriato per effettuare una chiamata, controllare lo stato del proxy del servizio per determinare lo stato del proxy del servizio.
+-   **WS \_ S \_ ASYNC:** la chiamata verrà completata in modo asincrono.
+-   NOERROR: chiamata completata.
+-   **WS \_ E \_ OPERATION \_ ABANDONED:** la chiamata è stata abbandonata. L'oggetto errore contiene il motivo dell'abbandono.
+-   **WS \_ E \_ OPERAZIONE \_ NON VALIDA:** il proxy del servizio non è in uno stato appropriato per effettuare una chiamata, controllare lo stato del proxy del servizio per capire lo stato del proxy del servizio.
 
-Per un elenco completo dei valori restituiti, vedere [valori restituiti di servizi Web Windows](windows-web-services-return-values.md).
+Per un elenco completo dei valori restituiti, [Windows valori restituiti dei servizi Web](windows-web-services-return-values.md).
 
 ### <a name="code-examples"></a>Esempi di codice
 
-Per esempi di codice, vedere gli argomenti seguenti:
+Per esempi di codice, vedere quanto segue:
 
 -   [CallAbandonExample](callabandonexample.md)
 -   [**WsAbandonCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall)

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_DRAGOUT (COMmctrl. h)
-description: Inviato da un controllo Toolbar quando l'utente fa clic su un pulsante e quindi sposta il cursore dal pulsante. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_DRAGOUT di notifica (Commctrl.h)
+description: Inviato da un controllo barra degli strumenti quando l'utente fa clic su un pulsante e quindi sposta il cursore fuori dal pulsante. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 3566ad60-9744-494f-bb02-d30b41d06351
 keywords:
-- Controlli di Windows per il codice di notifica TBN_DRAGOUT
+- TBN_DRAGOUT del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54fa61ef183b56b882c6ecdcb9d0d59edbf13e80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad707fa357a487e271bbe03039745b97521542a1305f9745a71a56044060c950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077945"
 ---
-# <a name="tbn_dragout-notification-code"></a>Codice di notifica per il \_ trascinamento TBN
+# <a name="tbn_dragout-notification-code"></a>Codice di notifica \_ TBN DRAGOUT
 
-Inviato da un controllo Toolbar quando l'utente fa clic su un pulsante e quindi sposta il cursore dal pulsante. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo barra degli strumenti quando l'utente fa clic su un pulsante e quindi sposta il cursore fuori dal pulsante. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TBN_DRAGOUT
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) che contiene informazioni su questo codice di notifica. Per questo codice di notifica, sono validi solo i membri **HDR** e **iItem** di questa struttura. Il membro **iItem** della struttura contiene l'identificatore di comando del pulsante trascinato.
+Puntatore a una [**struttura NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) che contiene informazioni su questo codice di notifica. Per questo codice di notifica, sono validi solo i membri **hdr** e **iItem** di questa struttura. Il **membro iItem** di questa struttura contiene l'identificatore di comando del pulsante trascinato.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica consente a un'applicazione di implementare la funzionalità di trascinamento della selezione per i pulsanti della barra degli strumenti. Quando si elabora questo codice di notifica, l'applicazione avvierà l'operazione di trascinamento della selezione.
+Questo codice di notifica consente a un'applicazione di implementare la funzionalità di trascinamento della selezione per i pulsanti della barra degli strumenti. Durante l'elaborazione di questo codice di notifica, l'applicazione inizierà l'operazione di trascinamento della selezione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Questo codice di notifica consente a un'applicazione di implementare la funziona
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

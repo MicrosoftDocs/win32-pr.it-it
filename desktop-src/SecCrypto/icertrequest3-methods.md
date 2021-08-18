@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ICertRequest3 espone i metodi seguenti.
 ms.assetid: 62636EB3-42EC-41EF-87D3-D21E35C6D494
-title: Metodi ICertRequest3
+title: Metodi di ICertRequest3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81eec6c964617da2113fa231de4f430b51259e84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73e451a3d9d14e95d4dc87268b4d2f83f2153c12af3e8358539e5fa828903a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005699"
 ---
-# <a name="icertrequest3-methods"></a>Metodi ICertRequest3
+# <a name="icertrequest3-methods"></a>Metodi di ICertRequest3
 
-L'interfaccia [**ICertRequest3**](/windows/desktop/api/Certcli/nn-certcli-icertrequest3) espone i metodi seguenti.
+[**L'interfaccia ICertRequest3**](/windows/desktop/api/Certcli/nn-certcli-icertrequest3) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -32,8 +32,8 @@ L'interfaccia [**ICertRequest3**](/windows/desktop/api/Certcli/nn-certcli-icertr
 -   [**Metodo GetRequestId**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-getrequestid)
 -   [**Metodo GetRequestIdString**](/windows/desktop/api/Certcli/nf-certcli-icertrequest3-getrequestidstring)
 -   [**Metodo RetrievePending**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-retrievepending)
--   [**Metodo secredential**](/windows/desktop/api/Certcli/nf-certcli-icertrequest3-setcredential)
--   [**Submit (metodo)**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-submit)
+-   [**Metodo SetCredential**](/windows/desktop/api/Certcli/nf-certcli-icertrequest3-setcredential)
+-   [**Metodo Submit**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-submit)
 
  
 

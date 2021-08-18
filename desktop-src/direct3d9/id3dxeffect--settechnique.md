@@ -1,7 +1,7 @@
 ---
 description: Imposta la tecnica attiva.
 ms.assetid: 18f19773-a9f8-47f9-9334-acc95e0f0eb7
-title: 'Metodo ID3DXEffect:: setechnique (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::SetTechnique (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e93fbff9eb74e8885675b7ccf4ea69cc53d5da53
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7b10190df7c4527535a35c2c352933ec652452d51804e23b8aad338e6ca40522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987546"
 ---
-# <a name="id3dxeffectsettechnique-method"></a>Metodo ID3DXEffect:: setechnique
+# <a name="id3dxeffectsettechnique-method"></a>Metodo ID3DXEffect::SetTechnique
 
 Imposta la tecnica attiva.
 
@@ -40,12 +40,12 @@ HRESULT SetTechnique(
 
 <dl> <dt>
 
-*hTechnique* \[ in\]
+*hTechnique* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle univoco per la tecnica. Vedere [handle (Direct3D 9)](handles.md).
+Handle univoco per la tecnica. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Handle univoco per la tecnica. Vedere [handle (Direct3D 9)](handles.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXFillVolumeTextureTX: usa una funzione HLSL (High-Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.'
+description: 'Funzione D3DXFillVolumeTextureTX: usa una funzione HLSL (High Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.'
 ms.assetid: f082e1d2-c433-482c-9288-58e5c558cdc5
 title: Funzione D3DXFillVolumeTextureTX (D3dx9tex.h)
 ms.topic: reference
@@ -46,7 +46,7 @@ HRESULT D3DXFillVolumeTextureTX(
 
 Tipo: **[ **LPDIRECT3DVOLUMETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9)**
 
-Puntatore a [**un oggetto IDirect3DVolumeTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) che rappresenta la trama da riempire.
+Puntatore a [**un oggetto IDirect3DVolumeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) che rappresenta la trama da riempire.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Puntatore a [**un oggetto IDirect3DVolumeTexture9,**](/windows/win32/api/d3d9hel
 
 Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**
 
-Puntatore a un oggetto shader di trama [**ID3DXTextureShader.**](id3dxtextureshader.md)
+Puntatore a un oggetto shader con trama [**ID3DXTextureShader.**](id3dxtextureshader.md)
 
 </dd> </dl>
 

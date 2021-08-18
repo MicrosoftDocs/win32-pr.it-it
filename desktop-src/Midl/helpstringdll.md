@@ -1,9 +1,9 @@
 ---
-title: attributo helpstringdll
-description: L'attributo \ helpstringdll \ imposta il nome della DLL da usare per eseguire una ricerca di stringhe di documento.
+title: Attributo helpstringdll
+description: L'attributo \ helpstringdll\ imposta il nome della DLL da usare per eseguire una ricerca di stringhe di documento.
 ms.assetid: 1b9b962c-c355-4428-b5ea-dc7fd48b50a9
 keywords:
-- attributo MIDL di helpstringdll
+- Attributo helpstringdll MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dace4fb9ddc3908ce637cd2d8521a1ab4671d620
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f773ed18e72f184305275ce238ddf0576c81447181a0b7fb420c30341935f5e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067251"
 ---
-# <a name="helpstringdll-attribute"></a>attributo helpstringdll
+# <a name="helpstringdll-attribute"></a>Attributo helpstringdll
 
-L'attributo **\[ helpstringdll \]** imposta il nome della dll da usare per eseguire una ricerca di stringhe di documento.
+**\[ L'attributo helpstringdll \]** imposta il nome della DLL da usare per eseguire una ricerca di stringhe di documento.
 
 ``` syntax
 [
@@ -38,28 +38,28 @@ library library-name
 
 <dl> <dt>
 
-*Guida-testo-stringa* 
+*help-text-string* 
 </dt> <dd>
 
-Stringa di caratteri con terminazione zero che specifica il nome di file completo di una DLL.
+Stringa di caratteri con terminazione zero che specifica il nome file completo di una DLL.
 
 </dd> <dt>
 
-*facoltativo-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Altri attributi applicabili all'intera istruzione della libreria.
+Altri attributi applicabili all'intera istruzione library.
 
 </dd> <dt>
 
-*nome della libreria* 
+*library-name* 
 </dt> <dd>
 
-Identificatore che i componenti software utilizzeranno per indicare la [**libreria**](library.md).
+Identificatore che verrà utilizzato da componenti software per indicare questa [**libreria.**](library.md)
 
 </dd> <dt>
 
-*Library-Definition-Statements* 
+*library-definition-statements* 
 </dt> <dd>
 
 Una o più istruzioni MIDL che definiscono l'interfaccia della [**libreria**](library.md).
@@ -68,26 +68,26 @@ Una o più istruzioni MIDL che definiscono l'interfaccia della [**libreria**](li
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare l'attributo **\[ helpstringdll \]** in un'istruzione Library per specificare, come stringa di caratteri, il nome file completo di una libreria a collegamento dinamico. Questo consente a un utente di visualizzare una descrizione della DLL con il Visualizzatore oggetti.
+Usare **\[ l'attributo \] helpstringdll** in un'istruzione library per specificare, come stringa di caratteri, il nome file completo di una libreria a collegamento dinamico. Ciò consente a un utente di visualizzare una descrizione della DLL con il visualizzatore oggetti.
 
-Usare le funzioni **GetDocumentation2** nelle interfacce **ITypeLib2** e **ITypeInfo2** per recuperare la stringa della guida.
+Usare le **funzioni GetDocumentation2** nelle **interfacce ITypeLib2** e **ITypeInfo2** per recuperare la stringa della Guida.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**libreria**](library.md)
+[**Libreria**](library.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

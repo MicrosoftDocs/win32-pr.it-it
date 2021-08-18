@@ -1,32 +1,32 @@
 ---
-description: Nell'esempio seguente viene illustrata la creazione di una chiave crittografica della sessione dall'hash di una password, nonché l'utilizzo della funzione CryptDeriveKey e delle funzioni correlate.
+description: Nell'esempio seguente viene illustrata la creazione di una chiave crittografica di sessione dall'hash di una password, nonché l'uso della funzione CryptDeriveKey e delle funzioni correlate.
 ms.assetid: f4748725-2a47-487c-b18c-7b27112d1090
-title: 'Esempio di programma C: derivazione di una chiave della sessione da una password'
+title: 'Programma C di esempio: derivazione di una chiave di sessione da una password'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e46884fa40a3a5682ca21229048004314bf03609
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b33b43e69b9db2f77e04bad2f8941e6fc0c1bf4e30e5f1d0ff7a5e3bac5ce06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007839"
 ---
-# <a name="example-c-program-deriving-a-session-key-from-a-password"></a>Esempio di programma C: derivazione di una chiave della sessione da una password
+# <a name="example-c-program-deriving-a-session-key-from-a-password"></a>Programma C di esempio: derivazione di una chiave di sessione da una password
 
-Nell'esempio seguente viene illustrata la creazione di una [*chiave crittografica della sessione*](../secgloss/s-gly.md) dall' [*hash*](../secgloss/h-gly.md) di una password, nonché l'utilizzo della funzione [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey) e delle funzioni correlate.
+Nell'esempio seguente [](../secgloss/s-gly.md) viene illustrata la creazione di una chiave crittografica di sessione [*dall'hash*](../secgloss/h-gly.md) di una password, nonché l'uso della funzione [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey) e delle funzioni correlate.
 
-In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Questo esempio illustra le attività seguenti e le funzioni CryptoAPI:
 
--   Chiamata di [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) per acquisire un handle per il CSP predefinito e il [*contenitore di chiavi*](../secgloss/k-gly.md)predefinito.
--   Utilizzo di [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) per creare un oggetto hash vuoto.
--   Hashing del testo di una password con [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Derivare una chiave della sessione dalla password con hash usando [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
--   Eliminazione definitiva dell'hash e della password.
--   Uso di [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) per rilasciare il CSP.
+-   Chiamata [**di CryptAcquireContext all'acquisizione**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) di un handle per il provider di servizi di configurazione predefinito e il contenitore [*di chiavi predefinito.*](../secgloss/k-gly.md)
+-   Uso [**di CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) per creare un oggetto hash vuoto.
+-   Hashing del testo di una password [**tramite CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
+-   Derivazione di una chiave di sessione dalla password con hash [**tramite CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
+-   Eliminazione dell'hash e della password.
+-   Uso [**di CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) per rilasciare il provider di servizi di configurazione.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
 
-Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

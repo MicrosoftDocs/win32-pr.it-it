@@ -19,9 +19,9 @@ In Internet Explorer 8, Visualizzazione Compatibilità modifica il modo in cui i
 
 In un ambito aziendale, alcune aree presentano un rischio ridotto per quanto riguarda i problemi di compatibilità. Ad esempio, i siti Web dell'area Intranet utilizzano Visualizzazione Compatibilità per impostazione predefinita. Anche le applicazioni Web client di cui viene eseguito il rendering usando il controllo Web Browser o il motore di rendering WebOC (Internet Explorer) hanno un basso rischio per i problemi di compatibilità perché Internet Explorer 8 usa per impostazione predefinita una modalità di compatibilità per WebOC. Tuttavia, le impostazioni di configurazione predefinite per Visualizzazione Compatibilità potrebbero non garantire la compatibilità completa. Per determinare se un sito Web o un'applicazione Web è compatibile con Internet Explorer 8, è necessario testare il sito Web o l'applicazione Web.
 
-Per altre informazioni sulle differenze tra Internet Explorer 8 Visualizzazione Compatibilità e Internet Explorer 7, vedere il blog Site [Compatibility and Internet Explorer 8 (Compatibilità](/archive/blogs/ie/site-compatibility-and-ie8)del sito e Internet Explorer 8). Per un elenco degli elementi da controllare quando si esegue l'aggiornamento a Internet Explorer 8, vedere Internet Explorer [8 Readiness Toolkit](https://www.microsoft.com/windows/internet-explorer/readiness/developers.aspx).
+Per altre informazioni sulle differenze tra Internet Explorer 8 Visualizzazione Compatibilità e Internet Explorer 7, vedere il blog Site Compatibility and Internet Explorer 8 (Compatibilità del sito [e Internet Explorer 8).](/archive/blogs/ie/site-compatibility-and-ie8) Per un elenco degli elementi da controllare quando si esegue l'aggiornamento a Internet Explorer 8, vedere Internet Explorer [8 Readiness Toolkit](https://www.microsoft.com/windows/internet-explorer/readiness/developers.aspx).
 
-Per altre informazioni sui Visualizzazione Compatibilità, vedere il blog [del team Internet Explorer](/archive/blogs/ie/).
+Per altre informazioni sui Visualizzazione Compatibilità, vedere il blog [del team Internet Explorer.](/archive/blogs/ie/)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,7 +1,7 @@
 ---
-description: Trovare l'indice che indica la posizione in cui un vertice specificato si trova in un elenco di vertici influenzato di un dato osso.
+description: Trovare l'indice che indica dove si trova un vertice specificato nell'elenco di vertici influenzati di un determinato osso.
 ms.assetid: vs|directx_sdk|~\id3dx10skininfo_findboneinfluenceindex.htm
-title: 'Metodo ID3DX10SkinInfo:: FindBoneInfluenceIndex (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::FindBoneInfluenceIndex (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1468fed3c0cf999e7635ba0f5ae53cee72fe70c6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 85b68240a52ddf442d834a9acec919ea9c607f2dcbc43d2046a3d070aa9ddf84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634501"
 ---
-# <a name="id3dx10skininfofindboneinfluenceindex-method"></a>Metodo ID3DX10SkinInfo:: FindBoneInfluenceIndex
+# <a name="id3dx10skininfofindboneinfluenceindex-method"></a>Metodo ID3DX10SkinInfo::FindBoneInfluenceIndex
 
-Trovare l'indice che indica la posizione in cui un vertice specificato si trova in un elenco di vertici influenzato di un dato osso.
+Trovare l'indice che indica dove si trova un vertice specificato nell'elenco di vertici influenzati di un determinato osso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT FindBoneInfluenceIndex(
 
 <dl> <dt>
 
-*BoneIndex* \[ in\]
+*Indice Diosse* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice che specifica un osso esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Indice che specifica un oggetto esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo::GetNumBones**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*VertexIndex* \[ in\]
+*VertexIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice del vertice nel buffer del vertice.
+Indice del vertice nel vertex buffer.
 
 </dd> <dt>
 
-*pInfluenceIndex* \[ in\]
+*pInfluenceIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Indice del vertice nell'elenco dell'osso dei vertici influenzati.
+Indice del vertice nell'elenco dei vertici influenzati dell'osso.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Indice del vertice nell'elenco dell'osso dei vertici influenzati.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ INVALIDARG.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

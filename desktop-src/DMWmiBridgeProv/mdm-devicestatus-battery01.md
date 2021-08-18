@@ -1,10 +1,10 @@
 ---
 title: MDM_DeviceStatus_Battery01 classe
-description: La classe \_ MDM DeviceStatus Battery01 viene usata dall'azienda per eseguire query sullo stato di conformità della batteria dei dispositivi \_ con i criteri aziendali.
+description: La classe \_ Mdm DeviceStatus Battery01 viene usata dall'organizzazione per eseguire query sullo stato di conformità della batteria dei dispositivi \_ con i criteri aziendali.
 ms.assetid: f4e92e2a-e267-467a-9905-2539dcaf8d8c
 keywords:
 - MDM_DeviceStatus_Battery01 classe
-- MDM_DeviceStatus_Battery01 classe , descritta
+- MDM_DeviceStatus_Battery01 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119216401"
 ---
-# <a name="mdm_devicestatus_battery01-class"></a>Classe \_ Mdm DeviceStatus \_ Battery01
+# <a name="mdm_devicestatus_battery01-class"></a>Classe \_ DeviceStatus \_ Battery01 MDM
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ MDM DeviceStatus \_ Battery01** viene usata dall'azienda per eseguire query sullo stato di conformità della batteria dei dispositivi con i criteri aziendali.
+La **classe \_ Mdm DeviceStatus \_ Battery01** viene usata dall'azienda per eseguire query sullo stato di conformità della batteria dei dispositivi con i criteri aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,13 +48,13 @@ class MDM_DeviceStatus_Battery01
 
 ## <a name="members"></a>Members
 
-La **classe \_ MDM DeviceStatus \_ Battery01** ha questi tipi di membri:
+La **classe \_ Mdm DeviceStatus \_ Battery01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MDM DeviceStatus \_ Battery01** ha queste proprietà.
+La **classe \_ Mdm DeviceStatus \_ Battery01** ha queste proprietà.
 
 <dl> <dt>
 
@@ -64,7 +64,7 @@ La **classe \_ MDM DeviceStatus \_ Battery01** ha queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,7 +75,7 @@ Tipo di accesso: Lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -83,29 +83,29 @@ Tipo di accesso: Lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nodo per la query della batteria.
+Nodo per la query sulla batteria.
 
 </dd> <dt>
 
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/DeviceStatus"
@@ -118,7 +118,7 @@ Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -131,7 +131,7 @@ Tipo di accesso: Lettura/scrittura
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 

@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 727744445e952fa0135feff944c768aaba1aba36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69847ff648d11f13c87066f765fe92de7e92d831fd137a87bf1b61ebeafeed85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990571"
 ---
 # <a name="d3dxvec3unprojectarray-function-d3dx10mathh"></a>Funzione D3DXVec3UnprojectArray (D3DX10Math.h)
 
-Proietta una matrice (x, y, z, 0) dallo spazio dello schermo allo spazio dell'oggetto.
+Proietta una matrice (x, y, z, 0) dallo spazio dello schermo nello spazio dell'oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -97,7 +97,7 @@ Puntatore a [**un \_ VIEWPORT D3D10**](/windows/desktop/api/D3D10/ns-d3d10-d3d10
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a [**una struttura D3DXMATRIX,**](d3d10-d3dxmatrix.md) che rappresenta la matrice di proiezione.
+Puntatore a una [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta la matrice di proiezione.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Puntatore a [**una struttura D3DXMATRIX,**](d3d10-d3dxmatrix.md) che rappresenta
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice di visualizzazione.
+Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di visualizzazione.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice di visualizzazi
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
+Puntatore a una struttura D3DXMATRIX che rappresenta la matrice globale.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta la matrice proiettata dallo spazio dello schermo allo spazio oggetto.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta la matrice proiettata dallo spazio dello schermo allo spazio dell'oggetto.
 
 ## <a name="remarks"></a>Commenti
 

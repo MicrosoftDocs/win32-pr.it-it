@@ -1,11 +1,11 @@
 ---
-title: Metodo INapEnforcementClientConnection SetSoHResponse (NapEnforcementClient. h)
-description: Imposta il SoH-Response e viene utilizzato dal client di imposizione per la ricezione di un pacchetto.
+title: Metodo INapEnforcementClientConnection SetSoHResponse (NapEnforcementClient.h)
+description: Imposta il SoH-Response e viene utilizzato dal client di imposizione alla ricezione di un pacchetto.
 ms.assetid: 718669c7-73cf-44f4-8463-c59fdbe215cc
 keywords:
-- NAP metodo SetSoHResponse
-- Metodo SetSoHResponse NAP, interfaccia INapEnforcementClientConnection
-- Interfaccia INapEnforcementClientConnection NAP, metodo SetSoHResponse
+- Metodo SetSoHResponse nap
+- Metodo SetSoHResponse NAP , interfaccia INapEnforcementClientConnection
+- Interfaccia INapEnforcementClientConnection nap , metodo SetSoHResponse
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fdc403a1ff68e28f7d262e64ebe558226741b22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97a86c1a0fc86fcef9189f9d575063cee9abdf627e1cf3c58e68d669358142f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626231"
 ---
-# <a name="inapenforcementclientconnectionsetsohresponse-method"></a>Metodo INapEnforcementClientConnection:: SetSoHResponse
+# <a name="inapenforcementclientconnectionsetsohresponse-method"></a>Metodo INapEnforcementClientConnection::SetSoHResponse
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: SetSoHResponse** imposta il SoH-Response e viene utilizzato dal client di imposizione per la ricezione di un pacchetto.
+Il **metodo INapEnforcementClientConnection::SetSoHResponse** imposta il SoH-Response e viene usato dal client di imposizione alla ricezione di un pacchetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ HRESULT SetSoHResponse(
 
 <dl> <dt>
 
-*sohResponse* \[ in\]
+*sohResponse* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**NetworkSoHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh) univoca, ovvero un BLOB di dati opachi per l'applicazione.
+Puntatore a una [**struttura NetworkSoHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh) univoca, ovvero un BLOB di dati opaco per l'applicatore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Il pacchetto del rapporto di integrità è valido.<br/>                                |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Il pacchetto SoH è valido.<br/>                                |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Puntatore a una struttura [**NetworkSoHResponse**](/windows/win32/api/naptypes/n
 
 ## <a name="remarks"></a>Commenti
 
-Un pacchetto di dimensioni pari A zero è valido.
+Un pacchetto di dimensioni zero è valido.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,10 +80,10 @@ Un pacchetto di dimensioni pari A zero è valido.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

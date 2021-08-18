@@ -1,5 +1,5 @@
 ---
-description: Definisce un tipo di identificatore univoco globale nel formato del registro di sistema.
+description: Definisce un tipo di identificatore univoco globale, in formato Registro di sistema.
 ms.assetid: 2be73c57-b6b6-46ab-93e1-d70f8655c30e
 title: Tipo semplice GUIDType (contatori delle prestazioni)
 ms.topic: reference
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 758509a564c26db493fa2e9ed971aba71878cdbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 305195784a3578242caefc1fb7eb9bcd8dbd5b557d89d8752bc8242f648abbdc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119624921"
 ---
 # <a name="guidtype-simple-type-performance-counters"></a>Tipo semplice GUIDType (contatori delle prestazioni)
 
-Definisce un tipo di identificatore univoco globale nel formato del registro di sistema.
+Definisce un tipo di identificatore univoco globale, in formato Registro di sistema.
 
 ``` syntax
 <xs:simpleType name="GUIDType">
@@ -34,11 +34,11 @@ Definisce un tipo di identificatore univoco globale nel formato del registro di 
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **GUIDType** è **xs: String** limitato dal modello seguente:
+Il **tipo semplice GUIDType** è **un tipo xs:string** limitato dal modello seguente:
 
 -   `\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}`
 
-    Il valore deve essere un tipo di identificatore univoco globale nel formato del registro di sistema. Ad esempio, {5b2fc63a-8af4-44cb-960c-aefdced908d6}. Usare GUIDGen.exe o UUIDGen.exe per creare un GUID.
+    Il valore deve essere un tipo di identificatore univoco globale in formato Registro di sistema. Ad esempio, {5b2fc63a-8af4-44cb-960c-aefdced908d6}. Usare GUIDGen.exe o UUIDGen.exe per creare un GUID.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il tipo semplice **GUIDType** è **xs: String** limitato dal modello seguente:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

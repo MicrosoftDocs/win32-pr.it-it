@@ -1,6 +1,6 @@
 ---
 title: D3DX11_SAVE_TEXTURE_FLAG enumerazione (D3DX11tex.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Opzioni di salvataggio della trama.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Opzioni di salvataggio trame.
 ms.assetid: 9fee11c3-628f-4535-8e93-510fc77e1a3e
 keywords:
 - D3DX11_SAVE_TEXTURE_FLAG enumerazione Direct3D 11
@@ -21,14 +21,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118989911"
 ---
-# <a name="d3dx11_save_texture_flag-enumeration"></a>Enumerazione SAVE TEXTURE \_ \_ \_ FLAG D3DX11
+# <a name="d3dx11_save_texture_flag-enumeration"></a>Enumerazione D3DX11 \_ SAVE \_ TEXTURE \_ FLAG
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 
  
 
-Opzioni di salvataggio della trama.
+Opzioni di salvataggio trame.
 
 ## <a name="syntax"></a>Sintassi
 

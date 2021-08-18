@@ -1,7 +1,7 @@
 ---
-description: Impostare le informazioni di traduzione per un fotogramma chiave specifico nel set di animazioni.
+description: Impostare le informazioni di conversione per un fotogramma chiave specifico nel set di animazioni.
 ms.assetid: 4a926c0f-6d57-48d4-bb3b-60766fc78e40
-title: 'Metodo ID3DXKeyframedAnimationSet:: SetTranslationKey (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::SetTranslationKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5bdfb8fb02a2b06dc797317d35cc14e75bd6f221
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4f699a1988c53fc52b4ce413e4c0a655b7d943ddabc0c8e5fcb25ad627e32667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987341"
 ---
-# <a name="id3dxkeyframedanimationsetsettranslationkey-method"></a>Metodo ID3DXKeyframedAnimationSet:: SetTranslationKey
+# <a name="id3dxkeyframedanimationsetsettranslationkey-method"></a>Metodo ID3DXKeyframedAnimationSet::SetTranslationKey
 
-Impostare le informazioni di traduzione per un fotogramma chiave specifico nel set di animazioni.
+Impostare le informazioni di conversione per un fotogramma chiave specifico nel set di animazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT SetTranslationKey(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotogramma chiave.
 
 </dd> <dt>
 
-*pTranslationKey* \[ in\]
+*pTranslationKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntatore ai dati di traduzione. Vedere [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntatore ai dati di conversione. Vedere [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector3.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntatore ai dati di traduzione. Vedere [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

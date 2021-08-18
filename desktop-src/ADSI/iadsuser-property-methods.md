@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsUser (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsUser ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsUser (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsUser ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: 02d0e5f1-8bc9-4ef6-962d-432654ca8433
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsUser ADSI
+- Metodi della proprietà IADsUser ADSI
 topic_type:
 - apiref
 api_name:
@@ -150,16 +150,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6689776fe1ce9102ed4bb8ad97252be41901a0ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4cd41380e2c8ca58f5ce530f4c3024eb43522b474f128c3a296aaf5b4d84937f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082375"
 ---
-# <a name="iadsuser-property-methods"></a>Metodi di proprietà IADsUser
+# <a name="iadsuser-property-methods"></a>Metodi della proprietà IADsUser
 
-I metodi di proprietà dell'interfaccia [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -172,10 +172,10 @@ Flag che indica se l'account è o deve essere disabilitato.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **Boolean**
 </dt> <dt>
 
 
@@ -196,14 +196,14 @@ HRESULT put_AccountDisabled(
 **AccountExpirationDate**
 </dt> <dd> <dl>
 
-Data e ora in cui l'utente non può effettuare l'accesso.
+Data e ora dopo le quali l'utente non può accedere.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -224,7 +224,7 @@ HRESULT put_AccountExpirationDate(
 **BadLoginAddress**
 </dt> <dd> <dl>
 
-Ultimo nodo considerato un possibile intruso; Questa operazione è disponibile se è attivo il rilevamento di intrusi.
+L'ultimo nodo considerato un possibile intruso; questa opzione è disponibile se il rilevamento di intrusori è attivo.
 
 <dt>
 
@@ -256,7 +256,7 @@ Numero di tentativi di accesso non validi dall'ultima reimpostazione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -274,11 +274,11 @@ HRESULT get_BadLoginCount(
 **Reparto**
 </dt> <dd> <dl>
 
-Reparto, unità organizzativa, all'interno dell'azienda a cui appartiene l'utente.
+Il reparto, un'unità organizzativa (OU), all'interno della società a cui appartiene l'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -302,11 +302,11 @@ HRESULT put_Department(
 **Descrizione**
 </dt> <dd> <dl>
 
-Descrizione del testo dell'utente.
+Descrizione di testo dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -330,11 +330,11 @@ HRESULT put_Description(
 **Divisione**
 </dt> <dd> <dl>
 
-Divisione all'interno di una società o organizzazione.
+Divisione all'interno di una società o di un'organizzazione.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -362,7 +362,7 @@ Indirizzo di posta elettronica dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -390,7 +390,7 @@ Identificatore del dipendente dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -411,17 +411,17 @@ HRESULT put_EmployeeID(
 
 </dt> </dl> </dd> <dt>
 
-**NumeroFax**
+**Numero fax**
 </dt> <dd> <dl>
 
-Numero di fax, o numeri, dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice **Variant** ha un solo elemento.
+Numero di fax, o numeri, dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice **VARIANT** ha un elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -446,7 +446,7 @@ Nome dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -474,7 +474,7 @@ Nome completo dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -498,14 +498,14 @@ HRESULT put_FullName(
 **GraceLoginsAllowed**
 </dt> <dd> <dl>
 
-Il numero di volte in cui l'utente può accedere dopo la scadenza della password.
+Numero di volte in cui l'utente può accedere dopo la scadenza della password.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -526,14 +526,14 @@ HRESULT put_GraceLoginsAllowed(
 **GraceLoginsRemaining**
 </dt> <dd> <dl>
 
-Numero di accessi consentiti prima del blocco dell'account.
+Numero di accessi consentiti prima che l'account venga bloccato.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -554,11 +554,11 @@ HRESULT put_GraceLoginsRemaining(
 **HomeDirectory**
 </dt> <dd> <dl>
 
-La home directory dell'utente.
+Home directory dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -579,14 +579,14 @@ HRESULT put_HomeDirectory(
 
 </dt> </dl> </dd> <dt>
 
-**Home page**
+**Homepage**
 </dt> <dd> <dl>
 
-URL per il home page dell'utente.
+URL per l'home page dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -610,14 +610,14 @@ HRESULT put_HomePage(
 **IsAccountLocked**
 </dt> <dd> <dl>
 
-Flag che indica se l'account è bloccato a causa del rilevamento di intrusioni. Questa proprietà ha un utilizzo limitato quando viene usata con il provider ADSI LDAP. Per ulteriori informazioni su queste limitazioni, vedere [blocco degli account (provider LDAP)](ldap-account-lockout.md).
+Flag che indica se l'account è bloccato a causa del rilevamento di un intruso. Questa proprietà ha un utilizzo limitato se usata con il provider ADSI LDAP. Per altre informazioni su queste limitazioni, vedere [Blocco account (provider LDAP).](ldap-account-lockout.md)
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **Boolean**
 </dt> <dt>
 
 
@@ -638,14 +638,14 @@ HRESULT put_IsAccountLocked(
 **Linguaggi**
 </dt> <dd> <dl>
 
-Matrice di nomi di lingua **BSTR** per l'utente.
+Matrice di nomi **di linguaggiO BSTR** per l'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -666,14 +666,14 @@ HRESULT put_Languages(
 **LastFailedLogin**
 </dt> <dd> <dl>
 
-Data e ora dell'ultimo accesso di rete non riuscito.
+Data e ora dell'ultimo accesso alla rete non riuscito.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -691,14 +691,14 @@ HRESULT get_LastFailedLogin(
 **LastLogin**
 </dt> <dd> <dl>
 
-Data e ora dell'ultimo accesso di rete.
+Data e ora dell'ultimo accesso alla rete.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -723,7 +723,7 @@ Data e ora dell'ultima disconnessione di rete.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -745,7 +745,7 @@ Cognome dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -769,14 +769,14 @@ HRESULT put_LastName(
 **LoginHours**
 </dt> <dd> <dl>
 
-Periodi di tempo per ogni giorno della settimana durante i quali sono consentiti gli accessi per l'utente. Rappresentata come una tabella di valori booleani per la settimana, ognuno dei quali indica se lo slot di tempo è un orario di accesso valido. Tenere presente che la rappresentazione è specifica del provider e della directory.
+Periodi di tempo per ogni giorno della settimana durante i quali gli accessi sono consentiti per l'utente. Rappresentato come tabella di valori booleani per la settimana, ognuno dei quali indica se tale intervallo di tempo è un'ora di accesso valida. Tenere presente che la rappresentazione è specifica del provider e della directory.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -801,7 +801,7 @@ Percorso dello script di accesso.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -825,14 +825,14 @@ HRESULT put_LoginScript(
 **LoginWorkstations**
 </dt> <dd> <dl>
 
-Indirizzi o nomi di workstation, del tipo di dati **BSTR** , da cui l'utente può effettuare l'accesso.
+Indirizzi o nomi delle workstation, del **tipo di dati BSTR,** da cui l'utente può accedere.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -853,11 +853,11 @@ HRESULT put_LoginWorkstations(
 **Responsabile**
 </dt> <dd> <dl>
 
-Gestore dell'utente.
+Responsabile dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -885,10 +885,10 @@ Numero di sessioni di accesso simultanee consentite.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -909,14 +909,14 @@ HRESULT put_MaxLogins(
 **MaxStorage**
 </dt> <dd> <dl>
 
-Quantità massima di spazio su disco, espressa in kilobyte, che può essere utilizzata dall'utente.
+Quantità massima di spazio su disco, in kilobyte, che l'utente può usare.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -937,11 +937,11 @@ HRESULT put_MaxStorage(
 **NamePrefix**
 </dt> <dd> <dl>
 
-Prefisso del nome dell'utente, ad esempio "ms." o "Hon".
+Prefisso del nome dell'utente, ad esempio "Ms." o "Hon".
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -965,11 +965,11 @@ HRESULT put_NamePrefix(
 **NameSuffix**
 </dt> <dd> <dl>
 
-Suffisso del nome dell'utente, ad esempio "Jr." o "III".
+Suffisso del nome dell'utente, ad esempio "J." o "III".
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -993,14 +993,14 @@ HRESULT put_NameSuffix(
 **OfficeLocations**
 </dt> <dd> <dl>
 
-Posizione dell'ufficio come matrice **BSTR** per l'utente. Per Active Directory, questa proprietà è a valore singolo e la matrice contiene un elemento.
+Office posizione come matrice **BSTR** per l'utente. Per Active Directory, questa proprietà è a valore singolo e la matrice ha un elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1018,14 +1018,14 @@ HRESULT put_OfficeLocations(
 
 </dt> </dl> </dd> <dt>
 
-**UPN**
+**OtherName**
 </dt> <dd> <dl>
 
-Nome aggiuntivo, ad esempio, il secondo nome per l'utente.
+Un nome aggiuntivo, ad esempio il secondo nome, per l'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -1053,10 +1053,10 @@ Data e ora di scadenza della password.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -1077,14 +1077,14 @@ HRESULT put_PasswordExpirationDate(
 **PasswordLastChanged**
 </dt> <dd> <dl>
 
-Data e ora dell'Ultima modifica della password.
+Data e ora dell'ultima modifica della password.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **date**
+Tipo di dati di scripting: **DATE**
 </dt> <dt>
 
 
@@ -1106,10 +1106,10 @@ Lunghezza minima della password.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -1134,10 +1134,10 @@ Flag che indica se la password è obbligatoria.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **Boolean**
 </dt> <dt>
 
 
@@ -1162,10 +1162,10 @@ Matrice OctetString di byte in cui è archiviata un'immagine.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1186,14 +1186,14 @@ HRESULT put_Picture(
 **PostalAddresses**
 </dt> <dd> <dl>
 
-Indirizzo postale come matrice **BSTR** . Questa proprietà è multivalore per mantenere più di indirizzi dell'utente. Il formato interno di una PostalAddress deve essere conforme a CCITT F. 401 come a cui viene fatto riferimento in X. 521-1993, che definisce un PostalAddress come sei elementi di 30 byte ciascuno, che contiene un indirizzo via (facoltativamente) Post Office, città o località, stato o provincia, CAP e paese/area geografica.
+Indirizzo postale come **matrice BSTR.** Questa proprietà è multivalore per contenere più indirizzi dell'utente. Il formato interno di postalAddress deve essere conforme a CCITT F.401 come indicato in X.521-1993, che definisce un PostalAddress come sei elementi da 30 byte ciascuno, che contiene un indirizzo, (facoltativamente) Post Office Box, città o città, stato o provincia, codice postale e paese/area geografica.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1211,17 +1211,17 @@ HRESULT put_PostalAddresses(
 
 </dt> </dl> </dd> <dt>
 
-**PostalCodes**
+**Codici postali**
 </dt> <dd> <dl>
 
-Cap come matrice **BSTR** . I codici postali sono collegati in modo posizionale alla matrice **PostalAddresses** . In Active Directory, tuttavia, questa proprietà è a valore singolo e la matrice ha un singolo elemento.
+Codici postali come matrice **BSTR.** I codici postali sono collegati in modo posizionale alla matrice **PostalAddresses.** In Active Directory, tuttavia, questa proprietà è a valore singolo e la matrice ha un singolo elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1246,7 +1246,7 @@ Percorso del profilo utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -1270,14 +1270,14 @@ HRESULT put_Profile(
 **RequireUniquePassword**
 </dt> <dd> <dl>
 
-Flag che indica se una nuova password deve essere diversa da quelle note tramite una cronologia delle password.
+Flag che indica se una nuova password deve essere diversa da quella nota tramite una cronologia delle password.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **Boolean**
 </dt> <dt>
 
 
@@ -1298,14 +1298,14 @@ HRESULT put_RequireUniquePassword(
 **SeeAlso**
 </dt> <dd> <dl>
 
-Matrice di ADsPaths di altri oggetti correlati all'utente.
+Matrice di ADsPath di altri oggetti correlati all'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1323,17 +1323,17 @@ HRESULT put_SeeAlso(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneHome**
+**TelefonoHome**
 </dt> <dd> <dl>
 
-Una matrice di numeri di telefono di casa dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice contiene un elemento.
+Matrice di numeri di telefono dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice ha un elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1351,17 +1351,17 @@ HRESULT put_TelephoneHome(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneMobile**
+**TelefonoMobile**
 </dt> <dd> <dl>
 
-Una matrice di numeri di telefono cellulare dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice ha un solo elemento.
+Matrice di numeri di telefono cellulare dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice ha un solo elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1379,17 +1379,17 @@ HRESULT put_TelephoneMobile(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneNumber**
+**Numero di telefono**
 </dt> <dd> <dl>
 
-Matrice di numeri di telefono, in genere correlati al lavoro, associati all'utente. In Active Directory questa proprietà è a valore singolo e la matrice è di un singolo elemento.
+Matrice di numeri di telefono, in genere correlati all'ufficio, associati all'utente. In Active Directory questa proprietà è a valore singolo e la matrice è di un singolo elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1410,14 +1410,14 @@ HRESULT put_TelephoneNumber(
 **TelephonePager**
 </dt> <dd> <dl>
 
-Matrice di numeri di cercapersone dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice è di un singolo elemento.
+Matrice di numeri di pager dell'utente. In Active Directory questa proprietà è a valore singolo e la matrice è di un singolo elemento.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -1442,10 +1442,10 @@ Titolo dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -1467,9 +1467,9 @@ HRESULT put_Title(
 
 ## <a name="remarks"></a>Commenti
 
-Il provider WinNT fornito da Microsoft non supporta tutti i metodi di proprietà [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) , come illustrato in precedenza. Tuttavia, il provider supporta altre proprietà a cui è possibile accedere tramite il metodo [**IADs:: Get**](/windows/desktop/api/Iads/nf-iads-iads-get) o [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) . Per ulteriori informazioni e per un elenco di proprietà non supportate ed esempi di codice, vedere [oggetto utente WinNT](winnt-user-object.md) nel [provider ADSI WinNT](adsi-winnt-provider.md).
+Il provider WinNT fornito da Microsoft non supporta tutti i metodi di proprietà [**IADsUser,**](/windows/desktop/api/Iads/nn-iads-iadsuser) come illustrato in precedenza. Tuttavia, il provider supporta altre proprietà a cui è possibile accedere usando il metodo [**IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) [**o IADs::P ut.**](/windows/desktop/api/Iads/nf-iads-iads-put) Per altre informazioni e un elenco di proprietà non supportate ed esempi di codice, vedere [Oggetto utente WinNT](winnt-user-object.md) nel [provider ADSI WinNT.](adsi-winnt-provider.md)
 
-Per ulteriori informazioni sulle funzionalità specifiche del provider LDAP ADSI dell'oggetto classe utente, vedere [oggetto utente LDAP](ldap-user-object.md) nel [provider LDAP ADSI](adsi-ldap-provider.md). Questo argomento include [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser), oltre a esempi di codice per la gestione di un account utente.
+Per altre informazioni sulle funzionalità specifiche del provider LDAP ADSI dell'oggetto classe utente, vedere [Oggetto utente LDAP](ldap-user-object.md) nel provider LDAP [ADSI.](adsi-ldap-provider.md) L'argomento include [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser), nonché esempi di codice per la gestione di un account utente.
 
 ## <a name="examples"></a>Esempio
 
@@ -1521,9 +1521,9 @@ IADsUser *GetUserObject(LPWSTR uPath)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsUser è definito come 3E37E320-17E2-11CF-ABC4-02608C9E7553<br/>             |
+| IID<br/>                      | IADsUser IID è definito come \_ 3E37E320-17E2-11CF-ABC4-02608C9E7553<br/>             |
 
 
 
@@ -1534,25 +1534,25 @@ IADsUser *GetUserObject(LPWSTR uPath)
 [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser)
 </dt> <dt>
 
-[Metodi di proprietà dell'interfaccia](interface-property-methods.md)
+[Metodi delle proprietà dell'interfaccia](interface-property-methods.md)
 </dt> <dt>
 
-[**IADs:: Get**](/windows/desktop/api/Iads/nf-iads-iads-get)
+[**IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get)
 </dt> <dt>
 
-[**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put)
+[**IADs::P ut**](/windows/desktop/api/Iads/nf-iads-iads-put)
 </dt> <dt>
 
 [Oggetto utente WinNT](winnt-user-object.md)
 </dt> <dt>
 
-[Provider ADSI WinNT](adsi-winnt-provider.md)
+[ADSI WinNT Provider](adsi-winnt-provider.md)
 </dt> <dt>
 
 [Oggetto utente LDAP](ldap-user-object.md)
 </dt> <dt>
 
-[Provider LDAP ADSI](adsi-ldap-provider.md)
+[ADSI LDAP Provider](adsi-ldap-provider.md)
 </dt> </dl>
 
  

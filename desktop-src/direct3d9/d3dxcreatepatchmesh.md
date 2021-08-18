@@ -1,7 +1,7 @@
 ---
 description: Crea una mesh da una mesh di patch di controllo.
 ms.assetid: 50e4f7aa-a6b8-4a2b-9813-a9448f408d06
-title: Funzione D3DXCreatePatchMesh (D3DX9Mesh. h)
+title: Funzione D3DXCreatePatchMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 375052e240973f56af32825f74caccf6f9411d75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa4e1292f4b5c42515351d89dc7fc039f1f6f29201da72a78e07f447818e0f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988641"
 ---
-# <a name="d3dxcreatepatchmesh-function"></a>D3DXCreatePatchMesh (funzione)
+# <a name="d3dxcreatepatchmesh-function"></a>Funzione D3DXCreatePatchMesh
 
 Crea una mesh da una mesh di patch di controllo.
 
@@ -46,16 +46,16 @@ HRESULT D3DXCreatePatchMesh(
 
 <dl> <dt>
 
-*pInfo* \[ in\]
+*pInfo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPATCHINFO**](d3dxpatchinfo.md) \***
 
-Struttura delle informazioni sulla patch. Per ulteriori informazioni, vedere [**D3DXPATCHINFO**](d3dxpatchinfo.md).
+Struttura delle informazioni sulle patch. Per altre informazioni, vedere [**D3DXPATCHINFO.**](d3dxpatchinfo.md)
 
 </dd> <dt>
 
-*dwNumPatches* \[ in\]
+*dwNumPatches* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -64,7 +64,7 @@ Numero di patch.
 
 </dd> <dt>
 
-*dwNumVertices* \[ in\]
+*dwNumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -73,7 +73,7 @@ Numero di vertici di controllo nella patch.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -82,30 +82,30 @@ Non utilizzato. Riservato per un uso successivo.
 
 </dd> <dt>
 
-*pDecl* \[ in\]
+*pDecl* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , che descrive il formato del vertice per la mesh restituita.
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive il formato del vertice per la mesh restituita.
 
 </dd> <dt>
 
-*pD3DDevice* \[ in\]
+*pD3DDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore al dispositivo che crea la mesh della patch. Vedere [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9).
+Puntatore al dispositivo che crea la mesh patch. Vedere [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)
 
 </dd> <dt>
 
-*pPatchMesh* \[ out\]
+*pPatchMesh* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPATCHMESH**](id3dxpatchmesh.md)\***
 
-Puntatore all'oggetto [**ID3DXPatchMesh**](id3dxpatchmesh.md) creato.
+Puntatore [**all'oggetto ID3DXPatchMesh**](id3dxpatchmesh.md) creato.
 
 </dd> </dl>
 
@@ -113,11 +113,11 @@ Puntatore all'oggetto [**ID3DXPatchMesh**](id3dxpatchmesh.md) creato.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo accetta una mesh patch di input e la converte in una rete tassellati. Le mesh di patch utilizzano buffer di indice a 16 bit. Pertanto, gli indici per [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) sono a 16 bit.
+Questo metodo accetta una mesh di patch di input e la converte in una mesh a tesserla. Le mesh di patch usano buffer di indice a 16 bit. Pertanto, gli indici per [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) sono a 16 bit.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -125,8 +125,8 @@ Questo metodo accetta una mesh patch di input e la converte in una rete tassella
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
