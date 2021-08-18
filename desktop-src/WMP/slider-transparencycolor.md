@@ -1,9 +1,9 @@
 ---
-title: SLIDER. transparencyColor
-description: L'attributo transparencyColor specifica o Recupera il colore trasparente dello sfondo del controllo dispositivo di scorrimento e delle immagini in primo piano.
+title: SLIDER.transparencyColor
+description: L'attributo transparencyColor specifica o recupera il colore trasparente delle immagini di sfondo e primo piano del controllo dispositivo di scorrimento.
 ms.assetid: 857e3e48-bff2-4396-9f8c-c3d80b37c1d1
 keywords:
-- Media Player Windows SLIDER. transparencyColor
+- SLIDER.transparencyColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cda638e03b62ff81e6c9470239c71c441c755c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43e853a788c92fbbf3f5b9135918b3be53e21ad76f7b50270e46ba2f92ff6191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118649"
 ---
-# <a name="slidertransparencycolor"></a>SLIDER. transparencyColor
+# <a name="slidertransparencycolor"></a>SLIDER.transparencyColor
 
-L'attributo **transparencyColor** specifica o Recupera il colore trasparente dello sfondo del controllo dispositivo di scorrimento e delle immagini in primo piano.
+**L'attributo transparencyColor** specifica o recupera il colore trasparente delle immagini di sfondo e primo piano del controllo dispositivo di scorrimento.
 
 ``` syntax
         elementID.transparencyColor
@@ -29,13 +29,13 @@ L'attributo **transparencyColor** specifica o Recupera il colore trasparente del
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi valore di colore di Microsoft Internet Explorer. e non prevede alcun valore predefinito.
+Questo attributo è una  stringa di lettura/scrittura contenente qualsiasi valore di colore Internet Explorer Microsoft. e non prevede alcun valore predefinito.
 
 ## <a name="remarks"></a>Commenti
 
-Qualsiasi parte dell'immagine contenente **transparencyColor** consentirà di visualizzare lo sfondo.
+Qualsiasi parte dell'immagine contenente **transparencyColor** consentirà la visualizzazione dello sfondo.
 
-Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di colore impreviste, non sono consigliate quando si usa **transparencyColor** .
+Poiché i file JPG sono persi e pertanto soggetti a modifiche di colore impreviste, non sono consigliati quando si usa **transparencyColor.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,7 +54,7 @@ Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> </dl>
 
  

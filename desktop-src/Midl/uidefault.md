@@ -1,9 +1,9 @@
 ---
 title: uidefault (attributo)
-description: L'attributo \ uidefault \ indica che il membro delle informazioni sul tipo è il membro predefinito per la visualizzazione nell'interfaccia utente.
+description: L'attributo \uidefault\ indica che il membro delle informazioni sul tipo è il membro predefinito per la visualizzazione nell'interfaccia utente.
 ms.assetid: e789be38-a509-437d-89c9-ebbc830e5ae2
 keywords:
-- attributo MIDL di uidefault
+- Attributo uidefault MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcef39f36abad7c7cb5562b2d892761bd1bb7b5b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 891d37611eb931a8857157434419e5221e808710290f2e209f50c743bcb5b7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013479"
 ---
 # <a name="uidefault-attribute"></a>uidefault (attributo)
 
-L'attributo **\[ uidefault \]** indica che il membro Information del tipo è il membro predefinito per la visualizzazione nell'interfaccia utente.
+**\[ L'attributo \] uidefault** indica che il membro delle informazioni sul tipo è il membro predefinito per la visualizzazione nell'interfaccia utente.
 
 ``` syntax
 [method-attribute-list, uidefault]return-type method-name(method-parameter-list)
@@ -31,28 +31,28 @@ L'attributo **\[ uidefault \]** indica che il membro Information del tipo è il 
 
 <dl> <dt>
 
-*Method-Attribute-List* 
+*method-attribute-list* 
 </dt> <dd>
 
 Altri attributi che si applicano al metodo.
 
 </dd> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
 Tipo di dati che il metodo restituirà al termine dell'esecuzione.
 
 </dd> <dt>
 
-*Nome metodo* 
+*method-name* 
 </dt> <dd>
 
 Nome del metodo.
 
 </dd> <dt>
 
-*elenco di parametri di metodo* 
+*elenco dei parametri dei metodi* 
 </dt> <dd>
 
 Zero o più parametri per il metodo.
@@ -61,9 +61,9 @@ Zero o più parametri per il metodo.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione dell'attributo **\[ uidefault \]** a un membro di un'interfaccia o di un'interfaccia dispatch indica Visual Basic, in fase di progettazione, di visualizzare automaticamente questo evento o proprietà all'utente. Ciò significa che quando l'utente fa doppio clic su un oggetto, Visual Basic passa all'evento nell'interfaccia di origine predefinita con l'attributo **\[ uidefault \]** . Quando l'utente seleziona un oggetto, il Visualizzatore proprietà di Visual Basic Visualizza la proprietà nell'interfaccia di origine predefinita con questo attributo. Se nessun evento o proprietà ha l'attributo **\[ uidefault \]** , Visual Basic Visualizza il primo evento o proprietà elencato nell'interfaccia predefinita.
+L'applicazione dell'attributo **\[ uidefault \]** a un membro di un'interfaccia o a un'interfaccia dispatch indica Visual Basic, in fase di progettazione, di visualizzare automaticamente questo evento o proprietà all'utente. Ciò significa che quando l'utente fa doppio clic su un oggetto, Visual Basic passa all'evento nell'interfaccia di origine predefinita con **\[ l'attributo uidefault. \]** Quando l'utente seleziona un oggetto, Visual Basic del browser Proprietà visualizza la proprietà nell'interfaccia di origine predefinita con questo attributo. Se nessun evento o proprietà ha l'attributo **\[ uidefault, \]** Visual Basic visualizza il primo evento o proprietà elencato nell'interfaccia predefinita.
 
-### <a name="typeflag-representation"></a>Rappresentazione TYPEFLAG
+### <a name="typeflag-representation"></a>Rappresentazione del flag di tipo
 
 Presenza di FUNCFLAG \_ FUIDEFAULT o VARFLAG \_ FUIDEFAULT
 
@@ -111,12 +111,12 @@ coclass Form
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

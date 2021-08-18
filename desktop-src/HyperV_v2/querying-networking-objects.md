@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio C# seguente vengono recuperate e visualizzate informazioni sulla rete fisica e virtuale per l'opzione specificata.
+description: L'esempio C# seguente recupera e visualizza le informazioni sulla rete fisica e virtuale per il commutatore specificato.
 ms.assetid: 679168E2-C79F-4A7A-8C04-A309315CA670
 title: Esecuzione di query sugli oggetti di rete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df2bbf4fb86269ec07bb4015b00beda491ef3dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2eb962ee61532d4c5d5cf25f92dd3b94ddb96986228c2fa479da8cf50113ca8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014449"
 ---
 # <a name="querying-networking-objects"></a>Esecuzione di query sugli oggetti di rete
 
-Nell'esempio C# seguente vengono recuperate e visualizzate informazioni sulla rete fisica e virtuale per l'opzione specificata. Questo codice viene tratto dall' [esempio di rete Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Networking).
+L'esempio C# seguente recupera e visualizza le informazioni sulla rete fisica e virtuale per il commutatore specificato. Questo codice è tratto dall'esempio [di rete Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Networking).
 
 La sintassi della riga di comando per eseguire questo esempio è:
 
 **NetworkingSamples.exe EnumerateSwitch** *SwitchName*
 
-dove *SwitchName* è il nome dell'opzione per la quale visualizzare le informazioni. Il nome dell'opzione è contenuto nella proprietà [**MSVM \_ VirtualEthernetSwitch. ElementName**](msvm-virtualethernetswitch.md) .
+dove *SwitchName* è il nome dell'opzione per cui visualizzare le informazioni. Il nome dell'opzione è contenuto nella [**proprietà Msvm \_ VirtualEthernetSwitch.ElementName.**](msvm-virtualethernetswitch.md)
 
 
 ```CSharp

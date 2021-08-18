@@ -12,7 +12,7 @@ keywords:
 - Windows Media Player Mobile, libreria per il modello a oggetti
 - Windows Media Player libreria, informazioni su
 - library,about
-- metadati,Windows Media Player libreria
+- metadati, Windows Media Player libreria
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 63fdaa19fc8be11de1886074a21b0cc1fb6d4be7dde73faa05c67e1f496ac17c

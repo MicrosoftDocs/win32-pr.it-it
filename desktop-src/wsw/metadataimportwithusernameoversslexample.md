@@ -1,25 +1,25 @@
 ---
 title: MetadataImportWithUsernameOverSslExample
-description: In questo esempio viene illustrata l'importazione di metadati da un endpoint che supporta il \_ binding di sicurezza del messaggio WS nomeutente \_ \_ \_ con binding di sicurezza del trasporto di WS \_ SSL \_ \_ \_ .
+description: In questo esempio viene illustrata l'importazione di metadati da un endpoint che supporta WS \_ USERNAME MESSAGE SECURITY BINDING con \_ \_ \_ WS SSL TRANSPORT SECURITY \_ \_ \_ \_ BINDING.
 ms.assetid: 1bce97e2-a841-4c4b-af5e-f747c3fb6e8d
 keywords:
-- MetadataImportWithUsernameOverSslExample API per servizi Web Windows
+- MetadataImportWithUsernameOverSslExample Windows API dei servizi Web
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa0310932fa8f7b96190b1007b70fcd88c86e7d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 409178792df0c247e50d97a4d0039876a6dfb96419294f63841ec172ed596d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026359"
 ---
 # <a name="metadataimportwithusernameoversslexample"></a>MetadataImportWithUsernameOverSslExample
 
-In questo esempio viene illustrata l'importazione di metadati da un endpoint che supporta il [**\_ binding di sicurezza del \_ messaggio \_ \_ WS nomeutente**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding) con binding di sicurezza del [**trasporto di WS \_ SSL \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).
+In questo esempio viene illustrata l'importazione di metadati da un endpoint che supporta [**WS \_ USERNAME MESSAGE SECURITY \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding) con [**WS SSL TRANSPORT SECURITY \_ \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding).
 
-## <a name="metadataimportwithusernameoversslexamplecpp"></a>MetadataImportWithUsernameOverSslExample. cpp
+## <a name="metadataimportwithusernameoversslexamplecpp"></a>MetadataImportWithUsernameOverSslExample.cpp
 
 
 ```C++
@@ -582,15 +582,15 @@ Exit:
 
 <dl> <dt>
 
-[**\_binding di \_ \_ sicurezza messaggio WS nomeutente \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
+[**WS \_ USERNAME \_ MESSAGE \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
 </dt> <dt>
 
-[**\_binding di \_ sicurezza del trasporto \_ \_ di WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
+[**WS \_ SSL \_ TRANSPORT \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

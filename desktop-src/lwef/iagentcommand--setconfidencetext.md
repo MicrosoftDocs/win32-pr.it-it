@@ -21,7 +21,7 @@ HRESULT SetConfidenceText(
 );
 ```
 
-Imposta il valore del testo [](/windows/desktop/lwef/the-command-object)della descrizione comando.
+Imposta il valore del testo della descrizione [**comando.**](/windows/desktop/lwef/the-command-object)
 
 -   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 

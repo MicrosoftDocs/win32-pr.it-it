@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CMediaSample.CMediaSample : metodo del costruttore.'
+description: 'Costruttore CMediaSample.CMediaSample : metodo costruttore.'
 ms.assetid: 3ee67cfd-a968-4b7c-9c7b-1c28ddb9c343
 title: Costruttore CMediaSample.CMediaSample (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0fd2601b9f53e8f79d9231dd34054932bec4e671
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5baa5b791078eaf292b8da89fe50adaf7de9172185f8e6cab8745781030f401f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634691"
 ---
 # <a name="cmediasamplecmediasample-constructor"></a>Costruttore CMediaSample.CMediaSample
 
@@ -91,7 +91,7 @@ La classe base non modifica il **valore HRESULT** passato nel *parametro phr.*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,30 +1,30 @@
 ---
-title: Windows Media Format 9,5 SDK x64 Edition
-description: Windows Media Format 9,5 SDK x64 Edition
+title: Windows Formato multimediale 9.5 SDK x64 Edition
+description: Windows Formato multimediale 9.5 SDK x64 Edition
 ms.assetid: 7c282ee7-6829-4516-8874-2878598cc5d9
 keywords:
-- Windows Media Format SDK, x64 Edition
+- Windows Media Format SDK, edizione x64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16425d73584bef1e5b6db719b49ed6f7566ec29c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 79e3d5328eaa54ecabada41a3f7c5f3b1400ad470e1b99424c05f638b8050f15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027169"
 ---
-# <a name="windows-media-format-95-sdk-x64-edition"></a>Windows Media Format 9,5 SDK x64 Edition
+# <a name="windows-media-format-95-sdk-x64-edition"></a>Windows Formato multimediale 9.5 SDK x64 Edition
 
-Questa documentazione si applica al nuovo Windows Media Format 9,5 SDK x64 Edition, nonché alle versioni precedenti a 32 bit di Windows Media Format SDK.
+Questa documentazione si applica alla nuova Windows Media Format 9.5 SDK x64 Edition e alle versioni precedenti a 32 bit di Windows Media Format SDK.
 
-Nell'elenco seguente sono riepilogate le modifiche apportate all'SDK per la versione basata su x64:
+L'elenco seguente riepiloga le modifiche apportate all'SDK per la versione basata su x64:
 
--   Il DRM non è supportato. I file correlati a DRM (inclusi gli esempi) sono stati rimossi dall'installazione dell'SDK.
--   Windows Media Gestione dispositivi non fa parte dell'installazione di SDK basata su x64.
--   Gli esempi e le intestazioni che supportano le interfacce Windows Media Audio e codec video non fanno parte dell'installazione di SDK basata su x64.
--   I profili di sistema localizzati non fanno parte dell'installazione di SDK basata su x64.
+-   DRM non è supportato. I file correlati a DRM (inclusi gli esempi) sono stati rimossi dall'installazione dell'SDK.
+-   Windows Gestione dispositivi multimediali non fa parte dell'installazione dell'SDK basato su x64.
+-   Gli esempi e le intestazioni che supportano le Windows codec audio e video multimediali non fanno parte dell'installazione dell'SDK basato su x64.
+-   I profili di sistema localizzati non fanno parte dell'installazione dell'SDK basato su x64.
 
-Note nella sezione di riferimento per la programmazione di questa documentazione informazioni sulle funzionalità che non sono supportate nel formato Windows Media 9,5 SDK x64 Edition.
+Le note nella sezione Riferimenti per la programmazione di questa documentazione richiamano le funzionalità non supportate in Windows Media Format 9.5 SDK x64 Edition.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -33,9 +33,9 @@ Note nella sezione di riferimento per la programmazione di questa documentazione
 [**Informazioni su Windows Media Format SDK**](about-the-windows-media-format-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

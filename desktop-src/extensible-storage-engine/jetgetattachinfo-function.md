@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetGetAttachInfo'
+description: 'Altre informazioni su: Funzione JetGetAttachInfo'
 title: Funzione JetGetAttachInfo
 TOCTitle: JetGetAttachInfo Function
 ms:assetid: 6b1392f3-f40a-4eb0-aea8-1508b23ed649
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa1e51931c11e0fce0b18c0c102c4d54c0b47976
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f768ff08e8f84e3e0705d38c0f0d8eacdfa01e94e5f968e87f8dfdfbfa65b09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719181"
 ---
 # <a name="jetgetattachinfo-function"></a>Funzione JetGetAttachInfo
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetgetattachinfo-function"></a>Funzione JetGetAttachInfo
 
-La funzione **JetGetAttachInfo** viene utilizzata durante un backup avviato da [JetBeginExternalBackup](./jetbeginexternalbackup-function.md) per eseguire una query su un'istanza di per i nomi dei file di database che devono diventare parte del set di file di backup. Verranno considerati solo i database attualmente collegati all'istanza che usa [JetAttachDatabase](./jetattachdatabase-function.md) . Questi file possono essere successivamente aperti con [JetOpenFile](./jetopenfile-function.md) e letti usando [JetReadFile](./jetreadfile-function.md).
+La **funzione JetGetAttachInfo** viene usata durante un backup avviato da [JetBeginExternalBackup](./jetbeginexternalbackup-function.md) per eseguire una query su un'istanza per i nomi dei file di database che devono diventare parte del set di file di backup. Verranno considerati solo i database attualmente collegati all'istanza [tramite JetAttachDatabase.](./jetattachdatabase-function.md) Questi file possono essere successivamente aperti usando [JetOpenFile e](./jetopenfile-function.md) letti [tramite JetReadFile.](./jetreadfile-function.md)
 
 ```cpp
     JET_ERR JET_API JetGetAttachInfo(
@@ -46,9 +46,9 @@ La funzione **JetGetAttachInfo** viene utilizzata durante un backup avviato da [
 
 ### <a name="parameters"></a>Parametri
 
-*SZZ*
+*Szz*
 
-Buffer di output che riceve l'elenco di stringhe con terminazione null che descrivono il set di file di database che devono far parte del set di file di backup. L'elenco di stringhe restituite in questo buffer è nello stesso formato di un multistringhe utilizzato dal registro di sistema. Ogni stringa con terminazione null viene restituita in sequenza seguita da un terminatore null finale.
+Buffer di output che riceve l'elenco di stringhe con terminazione Null che descrivono il set di file di database che devono far parte del set di file di backup. L'elenco di stringhe restituito in questo buffer è nello stesso formato di una stringa multipla usata dal Registro di sistema. Ogni stringa con terminazione Null viene restituita in sequenza seguita da un terminatore Null finale.
 
 *cbMax*
 
@@ -60,7 +60,7 @@ Puntatore al buffer di output che ha ricevuto la quantità effettiva di dati str
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -80,15 +80,15 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errBackupAbortByServer</p></td>
-<td><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup.</a> Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono affatto in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidBackupSequence</p></td>
@@ -96,7 +96,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo problema può verificarsi per <strong>JetGetAttachInfo</strong> quando l'handle di istanza specificato non è valido (Windows XP e versioni successive).</p></td>
+<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questa operazione può verificarsi <strong>per JetGetAttachInfo</strong> quando l'handle di istanza specificato non è valido (Windows XP e versioni successive).</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoBackup</p></td>
@@ -108,27 +108,27 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza quando sono già presenti più istanze.</p></td>
+<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In caso di esito positivo, le informazioni richieste sul set di file di database che devono far parte del set di file di backup verranno inserite nei buffer di output specificati.
+In caso di esito positivo, le informazioni richieste sul set di file di database che devono far parte del set di file di backup verranno inserite nei buffer di output dove specificato.
 
-In caso di errore, lo stato dei buffer di output non è definito. L'errore comporterà l'annullamento dell'intero processo di backup per l'istanza.
+In caso di errore, lo stato dei buffer di output non è definito. L'errore comporta l'annullamento dell'intero processo di backup per l'istanza.
 
 #### <a name="remarks"></a>Commenti
 
-È importante notare che questa API non restituisce un errore o un avviso se il buffer di output è troppo piccolo per accettare l'elenco completo dei file che devono far parte del set di file di backup. L'applicazione deve sempre fornire un buffer per ricevere le dimensioni effettive dell'elenco e utilizzare tali informazioni per determinare se l'elenco è stato troncato.
+È importante notare che questa API non restituisce un errore o un avviso se il buffer di output è troppo piccolo per accettare l'elenco completo dei file che devono far parte del set di file di backup. L'applicazione deve sempre fornire un buffer per ricevere le dimensioni effettive di questo elenco e usare tali informazioni per determinare se l'elenco è stato troncato.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -148,11 +148,11 @@ In caso di errore, lo stato dei buffer di output non è definito. L'errore compo
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

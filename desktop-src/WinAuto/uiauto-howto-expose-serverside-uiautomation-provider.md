@@ -1,25 +1,25 @@
 ---
-title: Come esporre un provider di automazione interfaccia utente Server-Side
-description: Questo argomento contiene codice di esempio che illustra come esporre un provider di automazione interfaccia utente Microsoft sul lato server per un controllo personalizzato.
+title: Come esporre un provider di Server-Side Automazione interfaccia utente
+description: Questo argomento contiene codice di esempio che illustra come esporre un provider microsoft Automazione interfaccia utente sul lato server per un controllo personalizzato.
 ms.assetid: 68bf16c7-fbab-478a-97be-47d1195028f3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5af3fa9e663bc737df95015db94cdedc1073ab9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 771e81a058af16320673e46a7981cf49ee22105fa841807bc07e3a528ff223cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133314"
 ---
-# <a name="how-to-expose-a-server-side-ui-automation-provider"></a>Come esporre un provider di automazione interfaccia utente Server-Side
+# <a name="how-to-expose-a-server-side-ui-automation-provider"></a>Come esporre un provider di Server-Side Automazione interfaccia utente
 
-Questo argomento contiene codice di esempio che illustra come esporre un provider di automazione interfaccia utente Microsoft sul lato server per un controllo personalizzato.
+Questo argomento contiene codice di esempio che illustra come esporre un provider microsoft Automazione interfaccia utente sul lato server per un controllo personalizzato.
 
-Automazione interfaccia utente Microsoft invia il messaggio [**WM \_ GetObject**](wm-getobject.md) a un'applicazione provider per recuperare le informazioni su un oggetto accessibile supportato dal provider. Automazione interfaccia utente **Invia WM \_ GetObject** quando un client chiama [**IUIAutomation:: ElementFromHandle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfromhandle), [**ElementFromPoint**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompoint)e [**GetFocusedElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getfocusedelement)e quando gestisce gli eventi per i quali il client ha effettuato la registrazione.
+Microsoft Automazione interfaccia utente invia il [**messaggio WM \_ GETOBJECT**](wm-getobject.md) a un'applicazione provider per recuperare informazioni su un oggetto accessibile supportato dal provider. Automazione interfaccia utente invia **WM \_ GETOBJECT** quando un client chiama [**IUIAutomation::ElementFromHandle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfromhandle), [**ElementFromPoint**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompoint)e [**GetFocusedElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getfocusedelement)e quando gestisce gli eventi per cui il client ha registrato.
 
-Quando un provider riceve un messaggio [**WM \_ GetObject**](wm-getobject.md) , deve controllare se il parametro *lParam* è uguale a **UiaRootObjectId**. In tal caso, il provider deve restituire l'interfaccia [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) dell'oggetto. Il provider restituisce l'interfaccia chiamando la funzione [**UiaReturnRawElementProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiareturnrawelementprovider) .
+Quando un provider riceve un [**messaggio WM \_ GETOBJECT,**](wm-getobject.md) deve controllare se il *parametro lParam* è uguale a **UiaRootObjectId**. In caso contrario, il provider deve restituire [**l'interfaccia IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) dell'oggetto. Il provider restituisce l'interfaccia chiamando la [**funzione UiaReturnRawElementProvider.**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiareturnrawelementprovider)
 
-Nell'esempio seguente viene illustrato come rispondere a [**WM \_ GetObject**](wm-getobject.md).
+L'esempio seguente illustra come rispondere a [**WM \_ GETOBJECT**](wm-getobject.md).
 
 
 ```C++
@@ -56,18 +56,18 @@ Nell'esempio seguente viene illustrato come rispondere a [**WM \_ GetObject**](w
 **Informazioni concettuali**
 </dt> <dt>
 
-[Implementazione di un provider di automazione interfaccia utente Server-Side](uiauto-serversideprovider.md)
+[Implementazione di un provider di Server-Side Automazione interfaccia utente](uiauto-serversideprovider.md)
 </dt> <dt>
 
-[Messaggio WM \_ GETobject](the-wm-getobject-message.md)
+[Messaggio WM \_ GETOBJECT](the-wm-getobject-message.md)
 </dt> <dt>
 
-[Procedure per i provider di automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-providers.md)
+[Procedure per i provider di Automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

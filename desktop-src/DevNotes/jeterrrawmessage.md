@@ -1,7 +1,7 @@
 ---
-description: Recupera un identificatore del codice di errore (IDA) e una stringa di messaggio non formattato quando viene fornito un errore Jet.
+description: Recupera un identificatore di codice di errore (IDA) e una stringa di messaggio non formattata quando viene fornito un errore Jet.
 ms.assetid: f90b6986-a8d5-430e-94b3-176012c7e282
-title: JetErrRawMessage (funzione)
+title: Funzione JetErrRawMessage
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msjter40.dll
-ms.openlocfilehash: 1b52fa519bee3abacd0cd9bd7e8eaaa0676d007c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efc7332530b5b03b0c9150adb8b0e105d0e5d17eeae9bbc485fb073391de2cad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749681"
 ---
-# <a name="jeterrrawmessage-function"></a>JetErrRawMessage (funzione)
+# <a name="jeterrrawmessage-function"></a>Funzione JetErrRawMessage
 
-Recupera un identificatore del codice di errore (IDA) e una stringa di messaggio non formattato quando viene fornito un errore Jet.
+Recupera un identificatore di codice di errore (IDA) e una stringa di messaggio non formattata quando viene fornito un errore Jet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,10 +52,10 @@ Errore Jet che corrisponde alle informazioni ottenute.
 
 </dd> <dt>
 
-*pIda* 
+*Pida* 
 </dt> <dd>
 
-Puntatore a IDA.
+Puntatore all'IDA.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Puntatore al numero effettivo di byte letti.
 *pContextId* 
 </dt> <dd>
 
-Puntatore all'identificatore di contesto associato al file della guida.
+Puntatore all'identificatore di contesto associato al file della Guida.
 
 </dd> <dt>
 
@@ -96,11 +96,11 @@ Punta a un puntatore al file che spiega l'errore.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **Jet \_ errSuccess**. in caso contrario, restituisce un messaggio di errore non formattato che indica il motivo specifico dell'errore.
+Se la funzione ha esito positivo, restituisce **JET \_ errSuccess;** in caso contrario, restituisce un messaggio di errore non formattato che indica il motivo specifico dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

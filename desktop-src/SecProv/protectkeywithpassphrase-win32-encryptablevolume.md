@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ProtectKeyWithPassphrase della classe Win32_EncryptableVolume : usa la passphrase per ottenere la chiave derivata.'
+description: 'Metodo ProtectKeyWithPassphrase della Win32_EncryptableVolume: usa la passphrase per ottenere la chiave derivata.'
 ms.assetid: 62b070ec-4788-47cc-bfa4-6811a712ddbd
 title: Metodo ProtectKeyWithPassphrase della Win32_EncryptableVolume classe
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 2a7772b1b65890fedbdbb8dcced1ad851f3845b3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c0d87eb21ea505b13ce3aacfe8be6ff1fa9d266ba2a781d6b8e6fc4d77dac10b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004359"
 ---
 # <a name="protectkeywithpassphrase-method-of-the-win32_encryptablevolume-class"></a>Metodo ProtectKeyWithPassphrase della classe \_ EncryptableVolume Win32
 
@@ -81,16 +81,16 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 | Codice/valore restituito                                                                                                                                                                                        | Descrizione                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                                        | Il metodo è stato eseguito correttamente.<br/>                                                                                    |
-| <dl> <dt>**FVE \_ E \_ NON CONSENTITO IN MODALITÀ \_ \_ \_ \_ PROVVISORIA**</dt> <dt>2150694976 (0x80310040)</dt> </dl>         | Crittografia unità BitLocker può essere usato solo a scopo di ripristino quando viene usato in modalità provvisoria.<br/>                     |
-| <dl> <dt>**FVE \_ \_ \_ PASSPHRASE DEI CRITERI E NON \_ \_ CONSENTITA**</dt> <dt>2150695018 (0x8031006A)</dt> </dl>     | Criteri di gruppo non consente la creazione di una passphrase.<br/>                                                    |
-| <dl> <dt>**FVE \_ E \_ FIPS \_ IMPEDISCE LA \_ PASSPHRASE**</dt> <dt>2150695020 (0x8031006C)</dt> </dl>           | L'impostazione di Criteri di gruppo che richiede la conformità FIPS ha impedito la generazione o l'uso della passphrase.<br/> |
-| <dl> <dt>**FVE \_ E \_ CRITERIO \_ LUNGHEZZA \_ PASSPHRASE \_**</dt> NON VALIDA <dt>2150695040 (0x80310080)</dt> </dl>  | La passphrase specificata non soddisfa i requisiti di lunghezza minima o massima.<br/>                             |
-| <dl> <dt>**FVE \_ E \_ \_ PASSPHRASE \_ TROPPO \_ SEMPLICE**</dt> <dt>2150695041 (0x80310081)</dt> </dl>      | La passphrase non soddisfa i requisiti di complessità impostati dall'amministratore nei criteri di gruppo.<br/>            |
-| <dl> <dt>**FVE \_ E \_ VOLUME \_ BLOCCATO**</dt> <dt>2150694912 (0x80310000)</dt> </dl>                       | Il volume è già bloccato da Crittografia unità BitLocker. È necessario sbloccare l'unità Pannello di controllo.<br/>     |
-| <dl> <dt>**FVE \_ E \_ OVERLAPPED \_ UPDATE**</dt> <dt>2150694948 (0x80310024)</dt> </dl>                   | Il blocco di controllo per il volume crittografato è stato aggiornato da un altro thread.<br/>                                     |
-| <dl> <dt>**FVE \_ E \_ KEY \_ PROTECTOR NOT \_ \_ SUPPORTED**</dt> <dt>2150695017 (0X80310069)</dt> </dl>       | La protezione della chiave non è supportata dalla versione di Crittografia unità BitLocker attualmente nel volume.<br/>      |
-| <dl> <dt>**FVE \_ \_ \_ \_ PASSPHRASE \_ \_ DEL VOLUME**</dt> DEL SISTEMA OPERATIVO NON CONSENTITA <dt>2150695021 (0x8031006D)</dt> </dl> | La passphrase non può essere aggiunta al volume del sistema operativo. <br/>                                               |
-| <dl> <dt>**FVE \_ E \_ PROTECTOR \_ EXISTS**</dt> <dt>2150694960 (0x80310030)</dt> </dl>                    | La protezione della chiave specificata esiste già in questo volume.<br/>                                                     |
+| <dl> <dt>**FVE \_ E \_ NON CONSENTITO IN MODALITÀ \_ \_ \_ \_ PROVVISORIA**</dt> 2150694976 <dt>(0x80310040)</dt> </dl>         | Crittografia unità BitLocker può essere usato solo a scopo di ripristino quando viene usato in Cassaforte predefinita.<br/>                     |
+| <dl> <dt>**FVE \_ E \_ POLICY \_ PASSPHRASE \_ NOT ALLOWED \_ 2150695018**</dt> <dt>(0x8031006A)</dt> </dl>     | Criteri di gruppo non consente la creazione di una passphrase.<br/>                                                    |
+| <dl> <dt>**FVE \_ E \_ FIPS \_ IMPEDISCE \_ L'2150695020 PASSPHRASE**</dt> <dt>(0x8031006C)</dt> </dl>           | L'impostazione di Criteri di gruppo che richiede la conformità FIPS ha impedito la generazione o l'uso della passphrase.<br/> |
+| <dl> <dt>**FVE \_ E \_ CRITERIO \_ LUNGHEZZA \_ PASSPHRASE \_**</dt> NON VALIDA 2150695040 <dt>(0x80310080)</dt> </dl>  | La passphrase specificata non soddisfa i requisiti di lunghezza minima o massima.<br/>                             |
+| <dl> <dt>**FVE \_ E \_ POLICY \_ PASSPHRASE \_ TOO \_ SIMPLE**</dt> <dt>2150695041 (0x80310081)</dt> </dl>      | La passphrase non soddisfa i requisiti di complessità impostati dall'amministratore in Criteri di gruppo.<br/>            |
+| <dl> <dt>**FVE \_ E \_ BLOCCO \_ DEL VOLUME**</dt> 2150694912 <dt>(0x80310000)</dt> </dl>                       | Il volume è già bloccato da Crittografia unità BitLocker. È necessario sbloccare l'unità Pannello di controllo.<br/>     |
+| <dl> <dt>**FVE \_ E \_ OVERLAPPED \_ UPDATE 2150694948**</dt> <dt>(0x80310024)</dt> </dl>                   | Il blocco di controllo per il volume crittografato è stato aggiornato da un altro thread.<br/>                                     |
+| <dl> <dt>**FVE \_ E \_ PROTEZIONE CON CHIAVE NON \_ \_ \_ SUPPORTATA**</dt> <dt>2150695017 (0x80310069)</dt> </dl>       | La protezione con chiave non è supportata dalla versione di Crittografia unità BitLocker attualmente nel volume.<br/>      |
+| <dl> <dt>**FVE \_ PASSPHRASE DEL VOLUME DEL SISTEMA \_ \_ OPERATIVO NON \_ \_ \_ CONSENTITA**</dt> 2150695021 <dt>(0x8031006D)</dt> </dl> | Non è possibile aggiungere la passphrase al volume del sistema operativo. <br/>                                               |
+| <dl> <dt>**FVE \_ E \_ PROTECTOR \_ EXISTS 2150694960**</dt> <dt>(0x80310030)</dt> </dl>                    | La protezione con chiave specificata esiste già in questo volume.<br/>                                                     |
 
 
 
@@ -102,8 +102,8 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows 7 Enterprise, Windows solo app desktop Ultimate 7 \[\]<br/>                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
 | Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 

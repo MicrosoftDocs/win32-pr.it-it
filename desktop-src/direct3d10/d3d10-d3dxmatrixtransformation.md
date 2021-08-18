@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 10ed63b292dd69acb58d8567e6336b5aab4f7997
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a9f9b6679093ef1defb98289bbc1c0f70410a7ab6b1f4c7a5107012e16976a2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754311"
 ---
 # <a name="d3dxmatrixtransformation-function-d3dx10mathh"></a>Funzione D3DXMatrixTransformation (D3DX10Math.h)
 
@@ -78,7 +78,7 @@ Puntatore a [**un oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che specifi
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3, il vettore di ridimensionamento. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Ms.
+Puntatore a una struttura D3DXVECTOR3, il vettore di ridimensionamento. Se questo argomento è **NULL,** una matrice Identity Ms viene applicata alla formula in Osservazioni.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Puntatore a una struttura D3DXVECTOR3, il vettore di ridimensionamento. Se quest
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3, un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>rc.</sub>
+Puntatore a una struttura D3DXVECTOR3, un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** una matrice identity M <sub>rc</sub> viene applicata alla formula nelle osservazioni.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Puntatore a una struttura D3DXVECTOR3, un punto che identifica il centro di rota
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntatore a una struttura D3DXQUATERNION che specifica la rotazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>r.</sub>
+Puntatore a una struttura D3DXQUATERNION che specifica la rotazione. Se questo argomento è **NULL,** una matrice di identità M <sub>r</sub> viene applicata alla formula nelle osservazioni.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Puntatore a una struttura D3DXQUATERNION che specifica la rotazione. Se questo a
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3, che rappresenta la conversione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta la traslazione. Se questo argomento è **NULL,** viene applicata una matrice Identity Mt alla formula in Osservazioni.
 
 </dd> </dl>
 
@@ -117,17 +117,17 @@ Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di trasformazion
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione calcola la matrice di trasformazione con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
+Questa funzione calcola la matrice di trasformazione con la formula seguente, con la concatenazione di matrici valutata nell'ordine da sinistra a destra:
 
-M<sub>out</sub> = (M<sub>sc</sub>)⁻¹ \* (M<sub>sr</sub>)⁻¹ \* Ms \* M<sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻¹ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
+M<sub>out</sub> = (M<sub>sc</sub>)⁻ più \* (M<sub>sr</sub>)⁻ ms \* M \* <sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻⁻ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 dove:
 
 M<sub>out</sub> = matrice di output (pOut)
 
-M<sub>sc</sub> = scalabilità della matrice centrale (pScalingCenter)
+M<sub>sc</sub> = matrice del centro di ridimensionamento (pScalingCenter)
 
-M<sub>sr</sub> = scalare la matrice di rotazione (pScalingRotation)
+M<sub>sr</sub> = matrice di rotazione di ridimensionamento (pScalingRotation)
 
 Ms = matrice di ridimensionamento (pScaling)
 

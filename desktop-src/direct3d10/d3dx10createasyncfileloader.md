@@ -1,7 +1,7 @@
 ---
 description: Creare un caricatore di file asincrono.
 ms.assetid: 1b79fba5-e7f0-4160-9cec-ffea94f84fde
-title: Funzione D3DX10CreateAsyncFileLoader (D3DX10Async. h)
+title: Funzione D3DX10CreateAsyncFileLoader (D3DX10Async.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: e98bccf709fa4a6d921e266148b94fd8623429ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cfb30de406843831745ab56ced1f3dc0552536ea4a8d45c7f3da4ae078e036e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753391"
 ---
-# <a name="d3dx10createasyncfileloader-function"></a>D3DX10CreateAsyncFileLoader (funzione)
+# <a name="d3dx10createasyncfileloader-function"></a>Funzione D3DX10CreateAsyncFileLoader
 
 Creare un caricatore di file asincrono.
 
@@ -40,7 +40,7 @@ HRESULT D3DX10CreateAsyncFileLoader(
 
 <dl> <dt>
 
-*pFileName* \[ in\]
+*pFileName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
@@ -49,12 +49,12 @@ Nome del file da caricare. Se le impostazioni del compilatore richiedono Unicode
 
 </dd> <dt>
 
-*ppDataLoader* \[ out\]
+*ppDataLoader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\*\***
 
-Indirizzo di un puntatore al caricatore di dati asincrono (vedere [**interfaccia ID3DX10DataLoader**](id3dx10dataloader.md)).
+Indirizzo di un puntatore al caricatore di dati asincroni (vedere [**l'interfaccia ID3DX10DataLoader**](id3dx10dataloader.md)).
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Indirizzo di un puntatore al caricatore di dati asincrono (vedere [**interfaccia
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

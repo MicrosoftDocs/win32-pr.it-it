@@ -1,5 +1,5 @@
 ---
-description: Questa applicazione di esempio, che illustra il buffering basato su eventi, usa le API Audio core per eseguire il rendering dei dati audio in un dispositivo di output specificato dall'utente.
+description: Questa applicazione di esempio, che illustra il buffering basato su eventi, usa le API Audio di base per eseguire il rendering dei dati audio in un dispositivo di output specificato dall'utente.
 ms.assetid: 3a2e3fa6-2d6a-4ab0-a531-d1c968458e96
 title: RenderExclusiveEventDriven
 ms.topic: article
@@ -68,7 +68,7 @@ Per compilare l'esempio RenderExclusiveEventDriven, seguire questa procedura:
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-Se si compila correttamente l'applicazione demo, viene generato un file eseguibile, WASAPIRenderExclusiveEventDriven.exe, Per eseguirlo, digitare `WASAPIRenderExclusiveEventDriven` in una finestra di comando seguita da argomenti obbligatori o facoltativi. L'esempio seguente illustra come eseguire l'esempio specificando la durata della riproduzione nel dispositivo multimediale predefinito.
+Se si compila correttamente l'applicazione demo, viene generato un file eseguibile, WASAPIRenderExclusiveEventDriven.exe, Per eseguirlo, digitare `WASAPIRenderExclusiveEventDriven` in una finestra di comando seguita da argomenti obbligatori o facoltativi. Nell'esempio seguente viene illustrato come eseguire l'esempio specificando la durata della riproduzione nel dispositivo multimediale predefinito.
 
 `WASAPIRenderExclusiveEventDriven.exe -d 20 -multimedia`
 

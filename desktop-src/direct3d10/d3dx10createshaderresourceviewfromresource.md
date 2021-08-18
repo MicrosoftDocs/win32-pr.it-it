@@ -1,7 +1,7 @@
 ---
-description: Creare una visualizzazione risorse shader da una risorsa.
+description: Creare una visualizzazione shader-risorsa da una risorsa.
 ms.assetid: 207cda5f-5b7e-420a-988f-135cd2a04eb0
-title: Funzione D3DX10CreateShaderResourceViewFromResource (D3DX10Tex. h)
+title: Funzione D3DX10CreateShaderResourceViewFromResource (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 12de92153b6f812b4f014f53e918e7a97000eda6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f948e31c1218b095bda98c68a92abbb01d381d62c4acfed027be8b81701367e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634621"
 ---
-# <a name="d3dx10createshaderresourceviewfromresource-function"></a>D3DX10CreateShaderResourceViewFromResource (funzione)
+# <a name="d3dx10createshaderresourceviewfromresource-function"></a>Funzione D3DX10CreateShaderResourceViewFromResource
 
-Creare una visualizzazione risorse shader da una risorsa.
+Creare una visualizzazione shader-risorsa da una risorsa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,66 +46,66 @@ HRESULT D3DX10CreateShaderResourceViewFromResource(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Un puntatore al dispositivo (vedere [**interfaccia ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)) che utilizzerà la risorsa.
+Puntatore al dispositivo (vedere [**ID3D10 InterfaceDevice)**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)che userà la risorsa.
 
 </dd> <dt>
 
-*hSrcModule* \[ in\]
+*hSrcModule* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Handle per il modulo della risorsa che contiene la visualizzazione delle risorse dello shader. HMODULE può essere ottenuto con la [funzione GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Handle per il modulo di risorse contenente la visualizzazione shader-risorsa. È possibile ottenere HMODULE con [la funzione GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
 
 </dd> <dt>
 
-*pSrcResource* \[ in\]
+*pSrcResource* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nome della visualizzazione risorse dello shader in hSrcModule. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati viene risolto in LPCSTR.
+Nome della visualizzazione delle risorse shader in hSrcModule. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati viene risolto in LPCSTR.
 
 </dd> <dt>
 
-*pLoadInfo* \[ in\]
+*pLoadInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Image \_ Load \_ info**](d3dx10-image-load-info.md)\***
+Tipo: **[ **D3DX10 \_ IMAGE \_ LOAD \_ INFO**](d3dx10-image-load-info.md)\***
 
-facoltativo. Identifica le caratteristiche di una trama (vedere [**d3dx10 \_ Image \_ Load \_ info**](d3dx10-image-load-info.md)) quando viene creato il processore di dati; impostare questa proprietà su **null** per leggere le caratteristiche di una trama quando viene caricata la trama.
+facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX10 \_ IMAGE \_ LOAD \_ INFO**](d3dx10-image-load-info.md)) quando viene creato il processore di dati. Impostare questo valore su **NULL** per leggere le caratteristiche di una trama quando viene caricata la trama.
 
 </dd> <dt>
 
-*pPump* \[ in\]
+*pPump* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Puntatore a un'interfaccia della pompa di thread (vedere [**interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md)). Se viene specificato **null** , questa funzione verrà comportata in modo sincrono e non verrà restituita finché non viene completata.
+Puntatore a un'interfaccia thread pump (vedere [**ID3DX10ThreadPump Interface**](id3dx10threadpump.md)). Se si specifica **NULL,** questa funzione si comporterà in modo sincrono e non restituirà finché non viene completata.
 
 </dd> <dt>
 
-*ppShaderResourceView* \[ out\]
+*ppShaderResourceView* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview)\*\***
 
-Indirizzo di un puntatore alla visualizzazione risorse shader (vedere [**interfaccia ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview)).
+Indirizzo di un puntatore alla visualizzazione shader-risorsa (vedere [**l'interfaccia ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview)).
 
 </dd> <dt>
 
-*pHResult* \[ out\]
+*pHResult* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**, *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere un percorso di memoria valido fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -113,7 +113,7 @@ Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,8 +121,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 
@@ -133,7 +133,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 [Funzioni di trama in D3DX 10](d3d10-graphics-reference-d3dx10-functions-texturing.md)
 </dt> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

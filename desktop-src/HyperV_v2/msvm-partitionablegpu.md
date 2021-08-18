@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una GPU partizionabile. Ogni GPU può essere sezionata in una serie di partizioni GPU, che possono essere assegnate a una macchina virtuale come vGPU.
+description: Rappresenta una GPU partizionabile. Ogni GPU può essere suddivisa in una serie di partizioni GPU, che possono essere assegnate a una macchina virtuale come vGPU.
 ms.assetid: a32dfc03-6967-4fa3-ae32-bf074137740b
-title: Classe Msvm_PartitionableGpu
+title: Msvm_PartitionableGpu classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7f82904608a8e2ee4dfa13942066d57d35d511f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15ce369a0186ae6309f90a5b37a77a35cce90ae6997e3c8cbc7e968a0a0d0de0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148294"
 ---
-# <a name="msvm_partitionablegpu-class"></a>\_Classe MSVM PartitionableGpu
+# <a name="msvm_partitionablegpu-class"></a>Classe Msvm \_ PartitionableGpu
 
-Rappresenta una GPU partizionabile. Ogni GPU può essere sezionata in una serie di partizioni GPU, che possono essere assegnate a una macchina virtuale come vGPU.
+Rappresenta una GPU partizionabile. Ogni GPU può essere suddivisa in una serie di partizioni GPU, che possono essere assegnate a una macchina virtuale come vGPU.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -81,20 +81,20 @@ class Msvm_PartitionableGpu : CIM_ComputerSystem
 
 ## <a name="members"></a>Members
 
-La **classe \_ PartitionableGpu di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ PartitionableGpu** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ PartitionableGpu di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ PartitionableGpu** ha queste proprietà.
 
 <dl> <dt>
 
 **AvailableCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -107,20 +107,20 @@ Quantità disponibile di motori di calcolo che verranno visualizzati nella parti
 **AvailableDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di motori di decodifica disponibili che verranno visualizzati nella partizione GPU.
+Quantità disponibile di motori di decodifica che verranno visualizzati nella partizione GPU.
 
 </dd> <dt>
 
 **AvailableEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -133,20 +133,20 @@ Quantità disponibile di motori di codifica che verranno visualizzati nella part
 **AvailableVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di VRAM disponibile che verrà visualizzata nella partizione GPU.
+Quantità disponibile di VRAM che verrà visualizzata nella partizione GPU.
 
 </dd> <dt>
 
 **MaxPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -159,7 +159,7 @@ Quantità massima di motori di calcolo che verranno visualizzati nella partizion
 **MaxPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -172,7 +172,7 @@ Quantità massima di motori di decodifica che verranno visualizzati nella partiz
 **MaxPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -185,7 +185,7 @@ Quantità massima di motori di codifica che verranno visualizzati nella partizio
 **MaxPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -198,20 +198,20 @@ Quantità massima di VRAM che verrà visualizzata nella partizione GPU.
 **MinPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità minima di motori di calcolo che verranno visualizzati nella partizione GPU.
+Quantità minumum di motori di calcolo che verranno visualizzati nella partizione GPU.
 
 </dd> <dt>
 
 **MinPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -224,20 +224,20 @@ Quantità minima di motori di decodifica che verranno visualizzati nella partizi
 **MinPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità minima di motori di codifica che verranno visualizzati nella partizione GPU.
+Quantità minumum di motori di codifica che verranno visualizzati nella partizione GPU.
 
 </dd> <dt>
 
 **MinPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -250,7 +250,7 @@ Quantità minima di VRAM che verrà visualizzata nella partizione GPU.
 **OptimalPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -263,7 +263,7 @@ Quantità ottimale di motori di calcolo che verranno visualizzati nella partizio
 **OptimalPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -276,20 +276,20 @@ Quantità ottimale di motori di decodifica che verranno visualizzati nella parti
 **OptimalPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-La quantità ottimale di motori di codifica che verranno visualizzati nella partizione GPU.
+Quantità ottimale di motori di codifica che verranno visualizzati nella partizione GPU.
 
 </dd> <dt>
 
 **OptimalPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -302,20 +302,20 @@ Quantità ottimale di VRAM che verrà visualizzata nella partizione GPU.
 **PartitionCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Quantità di partizioni GPU in cui viene sezionata la GPU fisica.
+Quantità di partizioni GPU in cui viene suddivisa la GPU fisica.
 
 </dd> <dt>
 
 **TotalCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -328,7 +328,7 @@ Quantità totale di motori di calcolo che verranno visualizzati nella partizione
 **TotalDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -341,7 +341,7 @@ Quantità totale di motori di decodifica che verranno visualizzati nella partizi
 **TotalEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -354,7 +354,7 @@ Quantità totale di motori di codifica che verranno visualizzati nella partizion
 **TotalVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -367,10 +367,10 @@ Quantità totale di VRAM che verrà visualizzata nella partizione GPU.
 **ValidPartitionCounts**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Matrice di opzioni di partizione GPU valide in cui è possibile suddividere la GPU fisica.
@@ -383,10 +383,10 @@ Matrice di opzioni di partizione GPU valide in cui è possibile suddividere la G
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -395,7 +395,7 @@ Matrice di opzioni di partizione GPU valide in cui è possibile suddividere la G
 
 <dl> <dt>
 
-[**\_ComputerSystem CIM**](cim-computersystem.md)
+[**CIM \_ ComputerSystem**](cim-computersystem.md)
 </dt> </dl>
 
  

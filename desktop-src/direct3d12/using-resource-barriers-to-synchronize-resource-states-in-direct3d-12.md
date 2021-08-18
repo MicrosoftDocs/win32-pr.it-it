@@ -5,12 +5,12 @@ ms.assetid: 3AB3BF34-433C-400B-921A-55B23CCDA44F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df27e7997b4f3f56ae8e87688e5cc136dc7eb87d
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 04f79d5463c2f27560049f785b5cc32fe42ae33927cba7d039b90638f3946531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989431"
 ---
 # <a name="using-resource-barriers-to-synchronize-resource-states-in-direct3d-12"></a>Uso delle barriere delle risorse per sincronizzare gli stati delle risorse in Direct3D 12
 
@@ -34,25 +34,25 @@ Per ridurre l'utilizzo complessivo della CPU e abilitare il multithreading dei d
 
 ## <a name="using-the-resourcebarrier-api-to-manage-per-resource-state"></a>Uso dell'API ResourceBarrier per gestire lo stato per ogni risorsa
 
-[**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) notifica al driver di grafica le situazioni in cui il driver potrebbe dover sincronizzare più accessi alla memoria in cui è archiviata una risorsa. Il metodo viene chiamato con una o più strutture di descrizione della barriera delle risorse che indicano il tipo di barriera di risorse dichiarato.
+[**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) notifica al driver di grafica le situazioni in cui il driver potrebbe dover sincronizzare più accessi alla memoria in cui è archiviata una risorsa. Il metodo viene chiamato con una o più strutture di descrizione della barriera di risorse che indicano il tipo di barriera di risorse dichiarata.
 
-Esistono tre tipi di barriere alle risorse:
+Esistono tre tipi di barriere di risorse:
 
--   **Barriera di transizione:** una barriera di transizione indica che un set di sottorisorse esegue la transizione tra utilizzi diversi. Una [**struttura D3D12 \_ RESOURCE TRANSITION \_ \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) viene usata per specificare la sottorisorsa in fase di transizione, nonché gli stati *prima* e dopo della sottorisorsa. 
+-   **Barriera di transizione:** una barriera di transizione indica che un set di sottorisorse passa tra utilizzi diversi. Una [**struttura D3D12 \_ RESOURCE TRANSITION \_ \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_transition_barrier) viene usata per specificare la sottorisorsa in fase di transizione, nonché gli stati *before* e *after* della sottorisorsa.
 
     Il sistema verifica che le transizioni di sottorisorse in un elenco di comandi siano coerenti con le transizioni precedenti nello stesso elenco di comandi. Il livello di debug tiene inoltre traccia dello stato della sottorisorsa per trovare altri errori, ma questa convalida è conservativa e non esaustiva.
 
     Si noti che è possibile usare il flag D3D12 RESOURCE BARRIER ALL SUBRESOURCES per specificare che è in corso la transizione di tutte le \_ \_ \_ \_ sottorisorse all'interno di una risorsa.
 
--   **Barriera di aliasing:** una barriera di aliasing indica una transizione tra gli utilizzi di due risorse diverse che hanno mapping sovrapposti nello stesso heap. Questo vale sia per le risorse riservate che per le risorse inserite. Una [**struttura D3D12 \_ RESOURCE \_ ALIASING \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier) viene usata per specificare sia la risorsa *prima* che la *risorsa dopo.*
+-   **Barriera di aliasing:** una barriera di aliasing indica una transizione tra gli utilizzi di due risorse diverse che hanno mapping sovrapposti nello stesso heap. Questo vale sia per le risorse riservate che per le risorse posizionate. Una [**struttura D3D12 \_ RESOURCE \_ ALIASING \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier) viene usata per specificare sia la risorsa *before* che la *risorsa after.*
 
-    Si noti che una o entrambe le risorse possono essere NULL, a indicare che qualsiasi risorsa affiancata potrebbe causare l'aliasing. Per altre informazioni sull'uso delle risorse affiancate, vedere [Risorse affiancate](../direct3d11/tiled-resources.md) e [Risorse in riquadri del volume](volume-tiled-resources.md).
+    Si noti che una o entrambe le risorse possono essere NULL, a indicare che qualsiasi risorsa affiancata potrebbe causare l'aliasing. Per altre informazioni sull'uso delle risorse affiancate, vedere [Risorse affiancate](../direct3d11/tiled-resources.md) e [Risorse affiancate del volume.](volume-tiled-resources.md)
 
--   Barriera della visualizzazione di accesso non ordinato : una barriera di **UAV** indica che tutti gli accessi UAV, sia in lettura che in scrittura, a una determinata risorsa devono essere completati tra gli accessi UAV futuri, sia in lettura che in scrittura. Non è necessario che un'app metta una barriera UAV tra due chiamate di disegno o invio che leggono solo da un UAV. Inoltre, non è necessario inserire una barriera UAV tra due chiamate di disegno o invio che scrivono nello stesso UAV se l'applicazione sa che è sicuro eseguire l'accesso UAV in qualsiasi ordine. Una [**struttura D3D12 \_ RESOURCE \_ UAV \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_uav_barrier) viene usata per specificare la risorsa UAV a cui si applica la barriera. L'applicazione può specificare NULL per l'UAV della barriera, che indica che qualsiasi accesso UAV potrebbe richiedere la barriera.
+-   Barriera della visualizzazione di accesso non ordinato : una barriera **UAV** indica che tutti gli accessi UAV, sia in lettura che in scrittura, a una determinata risorsa devono essere completati tra eventuali accessi UAV futuri, sia di lettura che di scrittura. Non è necessario che un'app metta una barriera UAV tra due chiamate di disegno o invio che leggono solo da un UAV. Inoltre, non è necessario inserire una barriera UAV tra due chiamate di disegno o invio che scrivono nello stesso UAV se l'applicazione sa che è sicuro eseguire l'accesso UAV in qualsiasi ordine. Una [**struttura D3D12 \_ RESOURCE \_ UAV \_ BARRIER**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_uav_barrier) viene usata per specificare la risorsa UAV a cui si applica la barriera. L'applicazione può specificare NULL per l'UAV della barriera, che indica che qualsiasi accesso UAV potrebbe richiedere la barriera.
 
 Quando [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) viene chiamato con una matrice di descrizioni della barriera di risorse, l'API si comporta come se fosse stata chiamata una volta per ogni elemento, nell'ordine in cui sono stati forniti.
 
-In qualsiasi momento, una sottorisorsa si trova esattamente in uno stato, determinato dal set di flag [**D3D12 \_ RESOURCE \_ STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) forniti a [**ResourceBarrier.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) L'applicazione deve garantire che gli *stati prima* e *dopo* le chiamate consecutive a **ResourceBarrier siano d'accordo.**
+In qualsiasi momento, una sottorisorsa si trova esattamente in uno stato, determinato dal set di flag [**D3D12 \_ RESOURCE \_ STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) forniti a [**ResourceBarrier.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) L'applicazione deve garantire che *gli stati prima* e *dopo* le chiamate consecutive a **ResourceBarrier siano d'accordo.**
 
 > [!TIP]
 >
@@ -70,27 +70,27 @@ Per le barriere di suddivisione delle risorse, vedere [**anche D3D12 \_ RESOURCE
 
 Le risorse possono essere create con qualsiasi stato iniziale specificato dall'utente (valido per la descrizione della risorsa), con le eccezioni seguenti:
 
--   Gli heap di caricamento devono iniziare con lo stato D3D12 RESOURCE STATE GENERIC READ, che è una combinazione \_ OR bit per bit \_ \_ \_ di:
+-   Upload heap devono iniziare con lo stato D3D12 RESOURCE STATE GENERIC READ, che è una combinazione \_ OR bit per bit \_ \_ \_ di:
     -   VERTICE DELLO STATO DELLA RISORSA D3D12 \_ \_ E BUFFER \_ \_ \_ \_ COSTANTE
-    -   BUFFER DELL'INDICE DELLO \_ \_ STATO DELLA \_ RISORSA \_ D3D12
+    -   D3D12 \_ RESOURCE \_ STATE \_ INDEX \_ BUFFER
     -   ORIGINE COPIA STATO RISORSA D3D12 \_ \_ \_ \_
-    -   RISORSA D3D12 \_ RESOURCE STATE NON PIXEL \_ \_ \_ \_ \_ SHADER
+    -   RISORSA NON PIXEL SHADER DELLO STATO DELLA RISORSA D3D12 \_ \_ \_ \_ \_ \_
     -   RISORSA \_ \_ PIXEL \_ \_ SHADER \_ DELLO STATO DELLA RISORSA D3D12
-    -   ARGOMENTO INDIRETTO DELLO STATO DELLA RISORSA D3D12 \_ \_ \_ \_
--   Gli heap di readback devono essere avviati nello stato D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST.
--   I buffer back della catena di scambio vengono avviati automaticamente nello stato D3D12 \_ RESOURCE \_ STATE \_ COMMON.
+    -   ARGOMENTO INDIRETTO \_ \_ DELLO STATO DELLA RISORSA \_ D3D12 \_
+-   Gli heap di readback devono iniziare nello stato D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST.
+-   I buffer back della catena di scambio vengono avviati automaticamente nello stato COMUNE STATO RISORSA D3D12. \_ \_ \_
 
-Prima che un heap possa essere la destinazione di un'operazione di copia GPU, in genere l'heap deve essere passato allo stato D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST. Tuttavia, le risorse create negli heap UPLOAD devono iniziare in e non possono passare dallo stato GENERIC READ perché solo la CPU sta \_ eseguendo la scrittura. Al contrario, le risorse di cui è stato eseguito il commit create negli heap READBACK devono iniziare in e non possono cambiare dallo stato COPY \_ DEST.
+Prima che un heap possa essere la destinazione di un'operazione di copia GPU, in genere l'heap deve essere passato allo stato D3D12 \_ RESOURCE \_ STATE COPY \_ \_ DEST. Tuttavia, le risorse create negli heap UPLOAD devono iniziare in e non possono passare dallo stato GENERIC READ perché solo la CPU sta \_ eseguendo operazioni di scrittura. Al contrario, le risorse di cui è stato eseguito il commit create negli heap READBACK devono iniziare in e non possono passare dallo stato COPY \_ DEST.
 
-### <a name="readwrite-resource-state-restrictions"></a>Restrizioni relative allo stato delle risorse di lettura/scrittura
+### <a name="readwrite-resource-state-restrictions"></a>Restrizioni dello stato delle risorse di lettura/scrittura
 
-I bit di utilizzo dello stato della risorsa usati per descrivere uno stato della risorsa sono suddivisi in stati di sola lettura e di lettura/scrittura. L'argomento di riferimento [**per D3D12 \_ RESOURCE \_ STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) indica il livello di accesso in lettura/scrittura per ogni bit nell'enumerazione.
+I bit di utilizzo dello stato della risorsa usati per descrivere uno stato della risorsa sono suddivisi in stati di sola lettura e di lettura/scrittura. L'argomento di riferimento per [**D3D12 \_ RESOURCE \_ STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) indica il livello di accesso in lettura/scrittura per ogni bit nell'enumerazione .
 
 Al massimo, è possibile impostare un solo bit di lettura/scrittura per qualsiasi risorsa. Se è impostato un bit di scrittura, non è possibile impostare alcun bit di sola lettura per tale risorsa. Se non è impostato alcun bit di scrittura, è possibile impostare un numero qualsiasi di bit di lettura.
 
-### <a name="resource-states-for-presenting-back-buffers"></a>Stati delle risorse per la presentazione di buffer back
+### <a name="resource-states-for-presenting-back-buffers"></a>Stati delle risorse per la presentazione dei buffer nascosto
 
-Prima di presentare un buffer nascosto, deve essere nello stato D3D12 \_ RESOURCE \_ STATE \_ COMMON. Si noti che lo stato della risorsa D3D12 RESOURCE STATE PRESENT è un sinonimo di \_ \_ \_ D3D12 RESOURCE STATE COMMON ed entrambi hanno un valore \_ \_ pari a \_ 0. Se [**IDXGISwapChain::P resent**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) (o [**IDXGISwapChain1::P resent1**](/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1)) viene chiamato su una risorsa che non è attualmente in questo stato, viene generato un avviso del livello di debug.
+Prima che venga presentato, un buffer nascosto deve essere nello stato D3D12 \_ RESOURCE \_ STATE \_ COMMON. Si noti che lo stato della risorsa D3D12 RESOURCE STATE PRESENT è un sinonimo di \_ \_ \_ D3D12 RESOURCE STATE COMMON ed entrambi hanno \_ un valore pari a \_ \_ 0. Se [**IDXGISwapChain::P resent**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) (o [**IDXGISwapChain1::P resent1**](/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1)) viene chiamato su una risorsa che non si trova attualmente in questo stato, viene generato un avviso del livello di debug.
 
 ### <a name="discarding-resources"></a>Rimozione delle risorse
 
@@ -119,34 +119,34 @@ Le risorse possono essere promosse dallo stato COMMON in base alla tabella segue
 | DESTINAZIONE DI \_ RENDERING                | Sì                                          | No                                   |
 | ACCESSO NON \_ ORDINATO             | Sì                                          | No                                   |
 | SCRITTURA \_ PROFONDITÀ                  | No<sup>\*</sup>                              | No                                   |
-| LETTURA \_ DI PROFONDITÀ                   | No<sup>\*</sup>                              | No                                   |
-| RISORSA NON \_ PIXEL \_ \_ SHADER  | Sì                                          | Sì                                  |
+| LETTURA \_ PROFONDITÀ                   | No<sup>\*</sup>                              | No                                   |
+| RISORSA \_ NON PIXEL \_ \_ SHADER  | Sì                                          | Sì                                  |
 | RISORSA PIXEL \_ \_ SHADER       | Sì                                          | Sì                                  |
 | STREAM \_ OUT                   | Sì                                          | No                                   |
 | ARGOMENTO \_ INDIRETTO            | Sì                                          | No                                   |
-| COPIA \_ DEST                    | Sì                                          | Sì                                  |
-| COPIA \_ ORIGINE                  | Sì                                          | Sì                                  |
-| RISOLVERE \_ IL DEST                 | Sì                                          | No                                   |
-| RISOLVERE \_ L'ORIGINE               | Sì                                          | No                                   |
+| COPY \_ DEST                    | Sì                                          | Sì                                  |
+| COPY \_ SOURCE                  | Sì                                          | Sì                                  |
+| RISOLVERE IL \_ DEST                 | Sì                                          | No                                   |
+| RESOLVE \_ SOURCE               | Sì                                          | No                                   |
 | PREDICAZIONE                   | Sì                                          | No                                   |
 
 
 
  
 
-<sup>\*</sup>Le risorse depth-stencil devono essere trame di accesso non simultanee e pertanto non possono mai essere promosse in modo implicito.
+<sup>\*</sup>Le risorse depth-stencil devono essere trame ad accesso non simultaneo e pertanto non possono mai essere promosse in modo implicito.
 
-Quando si verifica questo accesso, la promozione agisce come una barriera di risorse implicita. Per gli accessi successivi, sarà necessario modificare lo stato della risorsa, se necessario. Si noti che la promozione da uno stato di lettura promosso a più stati di lettura è valida, ma questo non è il caso degli stati di scrittura.  
-Ad esempio, se una risorsa nello stato comune viene promossa a RISORSA PIXEL SHADER in una chiamata draw, può comunque essere promossa a NON_PIXEL \_ \_ RISORSA SHADER \_ \_ | RISORSA PIXEL \_ SHADER \_ in un'altra chiamata draw. Tuttavia, se viene usato in un'operazione di scrittura, ad esempio una destinazione di copia, una barriera di transizione dello stato della risorsa dagli stati di lettura alzati di livello combinati, NON_PIXEL \_ SHADER \_ RESOURCE | RISORSA PIXEL \_ \_ SHADER, per \_ copiare DEST è necessario.  
-Analogamente, se promosso da COMMON a COPY DEST, è comunque necessario un ostacolo per la transizione da \_ COPY \_ DEST a RENDER \_ TARGET.
+Quando si verifica questo accesso, la promozione agisce come una barriera di risorse implicita. Per gli accessi successivi, le barriere delle risorse saranno necessarie per modificare lo stato della risorsa, se necessario. Si noti che l'innalzamento di livello da uno stato di lettura promosso a più stati di lettura è valido, ma questo non è il caso per gli stati di scrittura.  
+Ad esempio, se una risorsa nello stato comune viene promossa a RISORSA PIXEL SHADER in una chiamata \_ di disegno, può comunque essere promossa a risorsa NON_PIXEL \_ \_ SHADER \_ | RISORSA PIXEL \_ SHADER \_ in un'altra chiamata di disegno. Tuttavia, se viene usato in un'operazione di scrittura, ad esempio una destinazione di copia, una barriera di transizione dello stato della risorsa dagli stati di lettura promossi combinati, qui NON_PIXEL \_ SHADER \_ RESOURCE | RISORSA PIXEL \_ \_ SHADER: è necessario \_ copiare DEST.  
+Analogamente, se promosso da COMMON a COPY DEST, è comunque necessaria una barriera per eseguire la transizione da \_ COPY DEST a \_ RENDER \_ TARGET.
 
-Si noti che la promozione dello stato comune è "gratuita" perché la GPU non deve eseguire attese di sincronizzazione. La promozione rappresenta il fatto che le risorse nello stato COMMON non devono richiedere operazioni aggiuntive sulla GPU o sul rilevamento dei driver per supportare determinati accessi.
+Si noti che la promozione dello stato comune è "gratuita" in quanto non è necessario che la GPU esegue le attese di sincronizzazione. La promozione rappresenta il fatto che le risorse nello stato COMMON non devono richiedere ulteriori operazioni gpu o rilevamento driver per supportare determinati accessi.
 
 ### <a name="state-decay-to-common"></a>Decadimento dello stato a comune
 
-Il lato opposto della promozione dello stato comune è il decadimento a D3D12 \_ RESOURCE \_ STATE \_ COMMON. Le risorse che soddisfano determinati requisiti sono considerate senza stato e tornano effettivamente allo stato comune quando la GPU termina l'esecuzione di [**un'operazione ExecuteCommandLists.**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) Il decadimento non si verifica tra gli elenchi di comandi eseguiti insieme nella stessa **chiamata a ExecuteCommandLists.**
+Il lato opposto della promozione dello stato comune è il decadimento a D3D12 \_ RESOURCE \_ STATE \_ COMMON. Le risorse che soddisfano determinati requisiti sono considerate senza stato e tornano effettivamente allo stato comune quando la GPU termina l'esecuzione di [**un'operazione ExecuteCommandLists.**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) Il decadimento non si verifica tra gli elenchi di comandi eseguiti insieme nella stessa **chiamata ExecuteCommandLists.**
 
-Quando un'operazione [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) viene completata nella GPU, le risorse seguenti verranno decadimento:
+Quando un'operazione [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) viene completata nella GPU, le risorse seguenti si decadono:
 
 -   Risorse a cui si accede in una coda di copia *o*
 -   Buffer delle risorse in qualsiasi tipo di coda *o*
@@ -155,23 +155,23 @@ Quando un'operazione [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12
 
 Come la promozione dello stato comune, il decadimento è gratuito perché non è necessaria alcuna sincronizzazione aggiuntiva. La combinazione di promozione e decadimento comuni dello stato consente di eliminare molte [**transizioni resourcebarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) non necessarie. In alcuni casi, ciò può offrire miglioramenti significativi delle prestazioni.
 
-I buffer e Simultaneous-Access risorse verranno decadimento allo stato comune indipendentemente dal fatto che siano state esplicitamente transizionate usando barriere di risorse o promosse in modo implicito.
+I buffer e Simultaneous-Access risorse verranno decadimento allo stato comune, indipendentemente dal fatto che siano state esplicitamente transizione usando barriere di risorse o promosse in modo implicito.
 
 ### <a name="performance-implications"></a>Implicazioni per le prestazioni
 
-Quando si registrano transizioni esplicite di [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) sulle risorse nello stato comune, è corretto usare D3D12 RESOURCE STATE COMMON o qualsiasi stato promobile come valore BeforeState nella struttura \_ \_ \_ D3D12 RESOURCE TRANSITION  \_ \_ \_ BARRIER. Ciò consente la gestione dello stato tradizionale che ignora il decadimento automatico dei buffer e delle trame ad accesso simultaneo. Questo potrebbe non essere consigliabile, tuttavia, poiché evitare chiamate **ResourceBarrier** di transizione con risorse note allo stato comune può migliorare significativamente le prestazioni. Le barriere delle risorse possono essere costose. Sono progettate per forzare lo scaricamento della cache, le modifiche al layout della memoria e altre operazioni di sincronizzazione che potrebbero non essere necessarie per le risorse già in stato comune. Un elenco di comandi che usa una barriera di risorse da uno stato non comune a un altro stato non comune in una risorsa attualmente nello stato comune può introdurre un sovraccarico non necessario.
+Quando si registrano transizioni esplicite di [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) sulle risorse nello stato comune, è corretto usare D3D12 RESOURCE STATE COMMON o qualsiasi stato promobile come valore BeforeState nella struttura \_ \_ \_ D3D12 RESOURCE TRANSITION  \_ \_ \_ BARRIER. Ciò consente la gestione dello stato tradizionale che ignora il decadimento automatico dei buffer e delle trame ad accesso simultaneo. Ciò potrebbe tuttavia non essere auspicabile, poiché evitare la transizione delle chiamate **di ResourceBarrier** con risorse note allo stato comune può migliorare significativamente le prestazioni. Le barriere delle risorse possono essere costose. Sono progettati per forzare scaricamenti della cache, modifiche del layout della memoria e altre sincronizzazioni che potrebbero non essere necessarie per le risorse già nello stato comune. Un elenco di comandi che usa una barriera di risorse da uno stato non comune a un altro stato non comune in una risorsa attualmente nello stato comune può introdurre un sovraccarico non necessario.
 
-Evitare inoltre transizioni esplicite di [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) a D3D12 RESOURCE STATE COMMON a meno che non sia assolutamente necessario \_ (ad esempio, l'accesso successivo si trova in una coda di comandi COPY che richiede che le risorse inizino \_ \_ nello stato comune). Le transizioni eccessive allo stato comune possono rallentare notevolmente le prestazioni della GPU.
+Evitare anche transizioni esplicite di [**ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) a D3D12 RESOURCE STATE COMMON a meno che non sia assolutamente necessario \_ (ad esempio, l'accesso successivo si trova in una coda di comandi COPY che richiede che le risorse inizino nello stato \_ \_ comune). Una transizione eccessiva allo stato comune può rallentare notevolmente le prestazioni della GPU.
 
-In breve, provare a fare affidamento sulla promozione dello stato comune e decadimento ogni volta che la semantica consente di uscire senza emettere chiamate [**a ResourceBarrier.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
+In breve, provare a fare affidamento sulla promozione e il decadimento dello stato comuni ogni volta che la semantica consente di uscire senza eseguire [**chiamate a ResourceBarrier.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
 
-## <a name="split-barriers"></a>Dividere le barriere
+## <a name="split-barriers"></a>Split Barriers
 
-Una barriera di transizione della risorsa con il flag D3D12 RESOURCE BARRIER FLAG BEGIN ONLY avvia una barriera di divisione e la barriera di transizione viene \_ \_ detto in \_ \_ \_ sospeso. Mentre la barriera è in sospeso, la risorsa (secondaria) non può essere letta o scritta dalla GPU. L'unica barriera di transizione legale che può essere applicata a una risorsa  (secondaria) con una barriera in sospeso è una con gli stessi stati *prima* e dopo e il flag D3D12 RESOURCE BARRIER FLAG END ONLY, che consente di completare la transizione in \_ \_ \_ \_ \_ sospeso.
+Una barriera di transizione delle risorse con il flag D3D12 RESOURCE BARRIER FLAG BEGIN ONLY avvia una barriera di divisione e la barriera di transizione viene \_ \_ detto in \_ \_ \_ sospeso. Mentre la barriera è in sospeso, la risorsa (secondaria) non può essere letta o scritta dalla GPU. L'unica barriera di transizione legale che può essere applicata a una  risorsa  (secondaria) con una barriera in sospeso è una con gli stessi stati prima e dopo e il flag D3D12 RESOURCE BARRIER FLAG END ONLY, che completa la transizione in \_ \_ \_ \_ \_ sospeso.
 
-Le barriere di divisione forniscono suggerimenti alla GPU che una risorsa nello stato *A* verrà usata successivamente nello stato *B.* In questo modo la GPU può ottimizzare il carico di lavoro di transizione, riducendo o eliminando i blocchi di esecuzione. L'emissione della barriera end-only garantisce che tutte le operazioni di transizione gpu vengono completate prima di passare al comando successivo.
+Le barriere di divisione forniscono alla GPU suggerimenti che una risorsa con stato *A* verrà usata successivamente nello stato *B.* In questo modo la GPU può ottimizzare il carico di lavoro di transizione, riducendo o eliminando i blocchi di esecuzione. L'emissione della barriera end-only garantisce che tutto il lavoro di transizione della GPU venga completato prima di passare al comando successivo.
 
-L'uso di barriere di divisione può contribuire a migliorare le prestazioni, in particolare in scenari con più motori o in cui le risorse sono in fase di transizione in lettura/scrittura in uno o più elenchi di comandi.
+L'uso di barriere di divisione può contribuire a migliorare le prestazioni, in particolare in scenari con più motori o in cui le risorse sono di lettura/scrittura con transizione di tipo sparse in uno o più elenchi di comandi.
 
 ## <a name="resource-barrier-example-scenario"></a>Scenario di esempio di barriera delle risorse
 

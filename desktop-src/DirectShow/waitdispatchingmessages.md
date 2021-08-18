@@ -1,7 +1,7 @@
 ---
-description: La funzione WaitDispatchingMessages attende che un oggetto venga segnalato, durante l'invio dei messaggi della finestra.
+description: La funzione WaitDispatchingMessages attende la segnalazione di un oggetto durante l'invio dei messaggi della finestra.
 ms.assetid: d15f6736-d141-47a3-b767-fbf774982fb4
-title: Funzione WaitDispatchingMessages (Wxutil. h)
+title: Funzione WaitDispatchingMessages (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9e509a081243f28293dc2d8abf8311f69eaf9a44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26442633d1a4d5187b5e53ae53e0a898f759f91dc3719f09715b570108b701f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071905"
 ---
-# <a name="waitdispatchingmessages-function"></a>WaitDispatchingMessages (funzione)
+# <a name="waitdispatchingmessages-function"></a>Funzione WaitDispatchingMessages
 
-La `WaitDispatchingMessages` funzione attende la segnalazione di un oggetto, durante l'invio dei messaggi della finestra.
+La `WaitDispatchingMessages` funzione attende che un oggetto sia segnalato durante l'invio dei messaggi della finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,17 +60,17 @@ Intervallo di timeout, in millisecondi.
 
 </dd> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle facoltativo per una finestra.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Messaggio finestra facoltativo che specifica un messaggio da inviare.
+Messaggio della finestra facoltativo, che specifica un messaggio da inviare.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ Handle facoltativo per un evento da attendere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore dalla funzione **WaitForMultipleObjects** .
+Restituisce il valore dalla **funzione WaitForMultipleObjects.**
 
 ## <a name="remarks"></a>Commenti
 
-Se un oggetto è proprietario di una finestra, deve inviare messaggi della finestra durante l'attesa. Questa funzione consente all'oggetto di attendere un evento, un semaforo o un altro oggetto di esclusione reciproca durante l'invio dei messaggi.
+Se un oggetto è proprietario di una finestra, deve inviare i messaggi della finestra durante l'attesa. Questa funzione consente all'oggetto di attendere un evento, un semaforo o un altro oggetto di esclusione reciproca durante l'invio di messaggi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Se un oggetto è proprietario di una finestra, deve inviare messaggi della fines
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

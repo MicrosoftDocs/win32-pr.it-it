@@ -1,10 +1,10 @@
 ---
-title: Attributo ACS-max-Duration-per-Flow
-description: Durata massima, in secondi, di un singolo flusso.
+title: Attributo ACS-Max-Duration-Per-Flow
+description: Durata massima, in secondi, di qualsiasi singolo flusso.
 ms.assetid: 070d3ffe-1d54-4f78-b5a7-3c8ef39d9346
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-max-Duration per flusso
+- Schema AD dell'attributo ACS-Max-Duration-Per-Flow
 - Schema AD dell'attributo aCSMaxDurationPerFlow
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db53a2116087cadb1e58af234a1741e144fbf916
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a8e65c08ba9176ece0a470008ca8a543905a1320af80c1fd5ea5fc6832f0700c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082095"
 ---
-# <a name="acs-max-duration-per-flow-attribute"></a>Attributo ACS-max-Duration-per-Flow
+# <a name="acs-max-duration-per-flow-attribute"></a>Attributo ACS-Max-Duration-Per-Flow
 
-Durata massima, in secondi, di un singolo flusso.
+Durata massima, in secondi, di qualsiasi singolo flusso.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-durata per flusso            |
-| LDAP-Display-Name | aCSMaxDurationPerFlow                |
+| CN                | ACS-Max-Duration-Per-Flow            |
+| Ldap-Display-Name | aCSMaxDurationPerFlow                |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.761               |
-| System-ID-GUID    | 7f56127e-5301-11d1-a9c5-0000f80367c1 |
+| System-Id-Guid    | 7f56127e-5301-11d1-a9c5-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Durata massima, in secondi, di un singolo flusso.
 | ID collegamento                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

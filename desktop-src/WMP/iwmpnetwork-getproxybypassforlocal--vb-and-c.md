@@ -5,7 +5,7 @@ ms.assetid: 150a05f3-6979-4a88-a617-472f07d38807
 keywords:
 - Metodo getProxyBypassForLocal Windows Media Player
 - Metodo getProxyBypassForLocal Windows Media Player, interfaccia IWMPNetwork
-- Interfaccia IWMPNetwork Windows Media Player, metodo getProxyBypassForLocal
+- Interfaccia IWMPNetwork Windows Media Player metodo , getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b87b1f00432ec91dd4379a9fa5e31664437afe0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50d23307ab8872fb49b2b4797d54b78a71a04adba350287fa23cb8e5ab90541c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996481"
 ---
-# <a name="iwmpnetworkgetproxybypassforlocal-method"></a>Metodo IWMPNetwork:: getProxyBypassForLocal
+# <a name="iwmpnetworkgetproxybypassforlocal-method"></a>Metodo IWMPNetwork::getProxyBypassForLocal
 
-Il metodo **getProxyBypassForLocal** restituisce un valore che indica se il server proxy viene ignorato se il server di origine si trova in una rete locale.
+Il **metodo getProxyBypassForLocal** restituisce un valore che indica se il server proxy viene ignorato se il server di origine si trova in una rete locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,13 +56,13 @@ Implements IWMPNetwork.getProxyBypassForLocal
 *bstrProtocol* 
 </dt> <dd>
 
-**System. String** che rappresenta il nome del protocollo.
+**System.String che** rappresenta il nome del protocollo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore **System. Boolean** che indica se il server proxy viene ignorato. Il valore è significativo solo quando **IWMPNetwork. getProxySettings** restituisce un valore pari a 2 (usare impostazioni manuali).
+Valore **System.Boolean** che indica se il server proxy viene ignorato. Il valore è significativo solo quando **IWMPNetwork.getProxySettings** restituisce il valore 2 (usare le impostazioni manuali).
 
 ## <a name="remarks"></a>Commenti
 
@@ -70,7 +70,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene usato **getProxyBypassForLocal** per visualizzare se Windows Media Player è impostato in modo da ignorare il server proxy per gli indirizzi locali. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio di codice seguente usa **getProxyBypassForLocal** per visualizzare se Windows Media Player è impostato per ignorare il server proxy per gli indirizzi locali. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```VB
@@ -137,7 +137,7 @@ proxyBypassText.Lines = proxyInfo;
 
 | Requisito | Valore |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                             |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                             |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                         |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll</dt> </dl> |
 
@@ -150,10 +150,10 @@ proxyBypassText.Lines = proxyInfo;
 [**Interfaccia IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxyBypassForLocal (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxybypassforlocal--vb-and-c.md)
+[**IWMPNetwork.setProxyBypassForLocal (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxybypassforlocal--vb-and-c.md)
 </dt> </dl>
 
  

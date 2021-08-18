@@ -4,45 +4,45 @@ ms.assetid: ae1ec184-afc3-4ec1-9b92-f53656293446
 title: Dati DV nel formato di file AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65f1393bfe4bbee4d080d90755f33cfa7f4a7fa4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0c048cb42fa3ba49457c115944075c064b9cfd4c31263519e9d5af3e5f0a268a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749111"
 ---
 # <a name="dv-data-in-the-avi-file-format"></a>Dati DV nel formato di file AVI
 
-Microsoft ha specificato il formato per l'archiviazione dei dati video digitali (DV) in file AVI. La conformità a questa specifica garantisce che i file AVI creati in questo formato saranno compatibili con le versioni future dell'architettura video digitale DirectShow per Windowsplatform.
+Microsoft ha specificato il formato per l'archiviazione dei dati video digitali (DV) nei file AVI. La conformità a questa specifica garantisce che i file AVI creati in questo formato siano compatibili con le versioni future dell'architettura video digitale di DirectShow per Windowsplatform.
 
-Questo articolo descrive il formato dei file AVI contenenti dati DV. Sono definiti FourCC specifici (codici a quattro caratteri) per i flussi di dati DV Interleaved e i gestori di flussi di Compressor/decompressore DV. La struttura del formato del flusso per i dati DV è definita. Vengono specificate le specifiche per due metodi di archiviazione dei dati DV nel formato di file AVI.
+Questo articolo descrive il formato dei file AVI contenenti dati DV. Sono definiti QUATTROCC (codici a quattro caratteri) specifici per i flussi di dati DV interleaved e i gestori di flussi di compressione/decompressione DV. La struttura del formato di flusso per i dati DV è definita. Vengono specificate le specifiche per due metodi di archiviazione dei dati DV nel formato di file AVI.
 
-Si presuppone che il lettore abbia familiarità con il formato di dati DV. Questo formato è definito nella *specifica dei VCR digitali utilizzati dall'utente*, noto anche come libro blu.
+Si presuppone che il lettore abbia familiarità con il formato dati DV. Questo formato è definito nella specifica dei videoregistratori digitali per uso *consumer,* denominata anche Blue Book.
 
-Sono disponibili due tipi di file AVI DV: file AVI contenenti un flusso di dati DV, denominati file di *tipo 1* ; e file AVI che contengono video DV come flusso "vids" e audio DV come flussi "Auds", denominati file di *tipo 2* .
+Esistono due tipi di file AVI DV: file AVI che contengono un flusso di dati DV, denominati *file di tipo 1;* e file AVI che contengono video DV come flusso "vids" e audio DV come flussi "auds", detti file *di tipo 2.*
 
-**File AVI contenenti un flusso di dati DV (tipo 1)**
+**File AVI contenenti un flusso di dati DV (tipo-1)**
 
-I dati DV con interfoliazione possono essere archiviati nel formato nativo come singolo flusso all'interno di un file con estensione AVI. Questo ha il vantaggio di usare la quantità minima di archiviazione dei dati per DV. Lo svantaggio principale è che questo formato di file non è compatibile con le versioni precedenti del video per Windows, perché non contiene un video ' vids ' o un flusso audio ' Auds '. Viene fornito supporto per il flusso DV con interfoliazione tramite i filtri [DV muxer](dv-muxer-filter.md) e [DV Splitter](dv-splitter-filter.md) forniti con DirectShow.
+I dati DV interleaved possono essere archiviati nel formato nativo come flusso singolo all'interno di un file RIFF AVI. Ciò ha il vantaggio di usare la quantità minima di archiviazione dei dati per DV. Lo svantaggio principale è che questo formato di file non è compatibile con le versioni precedenti di Video per Windows, perché non contiene un flusso video 'vids' o audio 'auds'. Viene fornito il supporto per il flusso DV interleaved tramite i filtri [DV Muxer](dv-muxer-filter.md) e [DV Splitter](dv-splitter-filter.md) forniti con DirectShow.
 
-I dati DV possono essere archiviati in un singolo flusso all'interno di un file AVI RIFF specificando ' iAVS ' (flusso audio e video con interfoliazione) FOURCC (codice a quattro caratteri) nel membro **fccType** e uno dei ' DVSD ',' DVHD ' o ' Dvsl ' FourCC nel membro **fccHandler** del blocco dell'intestazione del flusso ' Strh '. I frame al secondo del flusso video devono essere specificati nei membri **dwRate** e **dwScale** e il numero totale di blocchi video nel blocco ' movi ' del membro **dwLength** .
+I dati DV possono essere archiviati in un singolo flusso all'interno di un file RIFF AVI specificando "iavs" (flusso audio e video interleaved) FOURCC (codice a quattro caratteri) nel membro **fccType** e uno dei blocchi di intestazione del flusso 'dvsd', 'dvhd' o 'dvsl' FOURCC nel membro **fccHandler** del blocco di intestazione del flusso 'strh'. I fotogrammi al secondo del flusso video devono essere specificati nei membri **dwRate** e **dwScale** e il numero totale di blocchi video nel blocco 'movi' nel membro **dwLength.**
 
-Il gestore di flusso ' DVSD ' FOURCC specifica che i dati DV sono definiti nella parte 2 della *specifica dei VCR digitali usati dall'utente*. Il formato del video è 525 righe a 29,97 Hz (525-60) o 625 righe a 25,00 Hz (625-50).
+Il gestore di flusso "dvsd" FOURCC specifica che i dati DV sono definiti nella parte 2 della specifica dei videoregistratori digitali *consumer-use*. Il formato del video è di 525 righe a 29,97 Hz (525-60) o di 625 righe a 25,00 Hz (625-50).
 
-Il gestore di flusso ' DVHD ' FOURCC specifica che i dati DV sono definiti nella parte 3 della *specifica dei VCR digitali usati dall'utente*. Il formato del video è 1125 righe a 30,00 Hz (1125-60) o 1250 righe a 25,00 Hz (1250-50).
+Il gestore di flusso "dvhd" FOURCC specifica che i dati DV sono definiti nella parte 3 della specifica dei videoregistratori digitali *consumer-use*. Il formato del video è di 1125 righe a 30,00 Hz (1125-60) o di 1250 righe a 25,00 Hz (1250-50).
 
-Il gestore del flusso ' dvsl ' FOURCC specifica che i dati DV sono definiti nella parte 6 della *specifica dei VCR digitali usati dall'utente*. Il video è in formato SD (SDL) a compressione elevata.
+Il gestore di flusso "dvsl" FOURCC specifica che i dati DV sono definiti nella parte 6 della specifica dei videoregistratori digitali per uso *consumer.* Il formato del video è SD (SDL) a compressione elevata.
 
 > [!Note]  
-> Nella parte restante di questo articolo vengono fornite le definizioni per i flussi ' DVSD '.
+> Il resto di questo articolo fornisce le definizioni per i flussi 'dvsd'.
 
  
 
-Il blocco dell'intestazione del flusso deve essere seguito da un blocco di formato del flusso [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) .
+Il blocco di intestazione del flusso deve essere seguito da un blocco [**di formato di flusso DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo)
 
-I dati DV effettivi vengono archiviati come \# \# blocchi ' DC ' nel blocco ' movi ' (il \# \# nel formato rappresenta l'identificatore del flusso). Ogni blocco contiene un frame di dati, rispettivamente le sequenze 10 o 12 DV DIF per i sistemi 525-60 o 625-50. Il formato di sequenza DIF DV SD (' DVSD ') è definito nella parte 2 della *specifica dei VCR digitali con uso del consumer*.
+I dati DV effettivi vengono archiviati come blocchi 'dc' nel blocco \# \# 'movi' (nel formato rappresenta \# \# l'identificatore di flusso). Ogni blocco contiene un frame di dati, rispettivamente 10 o 12 sequenze DIF DV per 525-60 o 625-50 sistemi. Il formato di sequenza DIF DV SD ('dvsd') è definito nella parte 2 della specifica dei videoregistratori digitali *consumer-use*.
 
-L'esempio seguente mostra il formato di AIFF RIFF per un file AVI con un flusso di dati DV, espanso con blocchi di intestazione completati.
+L'esempio seguente mostra il modulo AIFF RIFF per un file AVI con un flusso di dati DV, espanso con blocchi di intestazione completati.
 
 
 ```C++
@@ -90,24 +90,24 @@ L'esempio seguente mostra il formato di AIFF RIFF per un file AVI con un flusso 
 
 
 
-**File AVI contenenti video DV e flussi audio DV (tipo 2)**
+**File AVI contenenti video DV e audio DV Flussi (tipo 2)**
 
-I dati DV con interfoliazione possono essere suddivisi in un flusso video e da uno a quattro flussi audio all'interno di un file con estensione AVI. Questo è il vantaggio di essere compatibile con le versioni precedenti del video per Windows, perché contiene un flusso video "vids" standard e almeno un flusso audio standard "Auds" lo svantaggio principale è che questo formato di file richiede che i dati audio siano archiviati in modo ridondante come flussi audio. Il flusso "video" è in realtà il flusso di dati DV Interleaved nativo. Tuttavia, come flusso "vids" standard con un tipo di gestore "dvsd", viene usato il [decodificatore video DV](dv-video-decoder-filter.md) . Questo formato richiede anche l'uso del filtro [splitter DV](dv-splitter-filter.md) per suddividere i file "acquisiti" prima di scriverli come file AVI.
+I dati DV interleaved possono essere suddivisi in un flusso video e da uno a quattro flussi audio all'interno di un file RIFF AVI. Questo ha il vantaggio di essere compatibile con le versioni precedenti di Video per Windows, perché contiene un flusso "vids" video standard e almeno un flusso "auds" audio standard Lo svantaggio principale è che questo formato di file richiede che i dati audio vengano archiviati in modo ridondante come flussi audio. Il flusso "video" è in realtà il flusso di dati DV interleaved nativo. Tuttavia, come flusso "vids" standard con un tipo di gestore "dvsd", viene usato il decodificatore [video DV.](dv-video-decoder-filter.md) Questo formato richiede anche l'uso del filtro [DV Splitter](dv-splitter-filter.md) per dividere i file "acquisiti" prima di scriverli come file AVI.
 
-I dati DV possono essere archiviati come flusso video con un numero separato di flussi audio in un file con estensione AVI. Il flusso video viene specificato con un'intestazione del flusso video standard (il valore del membro **fccType** è' vids '). Il membro **fccHandler** è specificato come ' DVSD ',' DVHD ' o ' dvsl '. I frame al secondo del flusso video devono essere specificati nei membri **dwRate** e **dwScale** e il numero totale di blocchi video nel blocco ' movi ' del membro **dwLength** .
+I dati DV possono essere archiviati come flusso video con un numero separato di flussi audio in un file RIFF AVI. Il flusso video viene specificato con un'intestazione di flusso video standard (il valore del membro **fccType** è 'vids'). Il **membro fccHandler** è specificato come 'dvsd', 'dvhd' o 'dvsl'. I fotogrammi al secondo del flusso video devono essere specificati nei membri **dwRate** e **dwScale** e il numero totale di blocchi video nel blocco 'movi' nel membro **dwLength.**
 
-In questo file AVI che contiene video DV come flusso "vids" e audio DV come flussi "Auds" di DV, il blocco del formato del flusso video è una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) standard. Il blocco di formato del flusso può essere esteso facoltativamente in modo da includere il blocco [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) , aumentando la dimensione del blocco del formato del flusso da 40 byte (dimensione della struttura **BITMAPINFOHEADER** ) a 72 byte (dimensioni di **BITMAPINFOHEADER** più strutture **DVinfo** ) e immediatamente dopo la struttura dei dati **BITMAPINFOHEADER** con una struttura di dati **DVinfo** .
+In questo file AVI contenente video DV come flusso "vids" e audio DV come flussi "auds" forma di DV, il blocco di formato del flusso video è una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) standard. Il blocco di formato del flusso può essere esteso facoltativamente per includere il blocco [**DVINFO,**](/windows/desktop/api/strmif/ns-strmif-dvinfo) aumentando le dimensioni del blocco del formato di flusso da 40 byte (dimensione della struttura **BITMAPINFOHEADER)** a 72 byte (dimensioni **delle strutture BITMAPINFOHEADER** e **DVINFO)** e immediatamente dopo la struttura di dati **BITMAPINFOHEADER** con una struttura di dati **DVINFO.**
 
-I flussi audio sono specificati con un'intestazione del flusso audio standard (il valore del membro **fccType** è' Auds '). Il membro **fccHandler** non viene usato per i flussi audio.
+I flussi audio vengono specificati con un'intestazione di flusso audio standard (il valore del membro **fccType** è 'auds'). Il **membro fccHandler** non viene usato per i flussi audio.
 
-I dati video DV vengono archiviati come \# \# blocchi ' DC ', come definito nella precedente descrizione di un file AVI con un solo dato DV e i dati audio vengono archiviati come \# \# blocchi ' WB ' nel blocco ' movi '.
+I dati video DV vengono archiviati come blocchi 'dc', come definito nella descrizione precedente di un file AVI con un dato DV, e i dati audio vengono archiviati come blocchi 'wb' nel blocco \# \# \# \# 'movi'.
 
 > [!Note]  
-> La *specifica dei VCR digitali per l'uso dei consumer* potrebbe non essere disponibile in alcune lingue e paesi.
+> La *specifica dei videoregistratori digitali per* uso consumer potrebbe non essere disponibile in alcune lingue e paesi.
 
  
 
-L'esempio seguente mostra il formato di AIFF RIFF per un file AVI che contiene video DV come flusso "vids" e audio DV come flussi "Auds" espansi con blocchi di intestazione completati (inclusi i dati [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) facoltativi che seguono il [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) nel sottoblocco "strF" per il flusso "vids").
+L'esempio seguente mostra il modulo AIFF RIFF per un file AVI contenente video DV come flusso "vids" e audio DV come flussi "auds" espansi con blocchi di intestazione completati (inclusi i dati [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) facoltativi che segue [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) nel sotto chunk 'strf' per il flusso 'vids').
 
 
 ```C++
@@ -194,7 +194,7 @@ L'esempio seguente mostra il formato di AIFF RIFF per un file AVI che contiene v
 
 <dl> <dt>
 
-[Formato file AVI](avi-file-format.md)
+[Formato di file AVI](avi-file-format.md)
 </dt> </dl>
 
  

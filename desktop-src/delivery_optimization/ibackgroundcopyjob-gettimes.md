@@ -1,11 +1,11 @@
 ---
-title: Metodo gettimes metodo ibackgroundcopyjob (Deliveryoptimization. h)
-description: Recupera i timestamp correlati al processo, ad esempio l'ora di creazione o dell'Ultima modifica del processo.
+title: Metodo GetTimes IBackgroundCopyJob (Deliveryoptimization.h)
+description: Recupera i timestamp relativi al processo, ad esempio l'ora di creazione o dell'ultima modifica del processo.
 ms.assetid: 9002FB8D-08CB-4878-980F-15FE0DC952A6
 keywords:
-- Metodo gettimes
-- Metodo gettimes, interfaccia metodo ibackgroundcopyjob
-- Interfaccia metodo ibackgroundcopyjob, metodo gettimes
+- Metodo GetTimes
+- Metodo GetTimes, interfaccia IBackgroundCopyJob
+- Interfaccia IBackgroundCopyJob, metodo GetTimes
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 04e779b59e0976e77b287bc575f3b08f8d39340a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3179342630fe932dd55efc4e75e15cd06a879d6cdc93005981cc7e0ebca7e05c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755211"
 ---
-# <a name="ibackgroundcopyjobgettimes-method"></a>Metodo metodo ibackgroundcopyjob:: gettimes
+# <a name="ibackgroundcopyjobgettimes-method"></a>Metodo IBackgroundCopyJob::GetTimes
 
-Recupera i timestamp correlati al processo, ad esempio l'ora di creazione o dell'Ultima modifica del processo.
+Recupera i timestamp relativi al processo, ad esempio l'ora di creazione o dell'ultima modifica del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ HRESULT GetTimes(
 
 <dl> <dt>
 
-*pTimes* \[ out\]
+*pTimes* \[ Cambio\]
 </dt> <dd>
 
-Contiene i timestamp relativi al processo. Per gli indicatori di tempo disponibili, vedere la struttura [**BG_JOB_TIMES**](bg-job-times.md) .
+Contiene timestamp correlati al processo. Per i timestamp disponibili, vedere la [**struttura BG_JOB_TIMES**](bg-job-times.md) dati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti e altri.
+Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
 
 
 
 | Codice restituito                                                                              | Descrizione                                         |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | Timestamp recuperati correttamente.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | I timestamp sono stati recuperati correttamente.<br/> |
 
 
 
@@ -70,13 +70,13 @@ Questo metodo restituisce i valori **HRESULT** seguenti e altri.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob viene definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
+| IID<br/>                      | IID_IBackgroundCopyJob è definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 
@@ -84,7 +84,7 @@ Questo metodo restituisce i valori **HRESULT** seguenti e altri.
 
 <dl> <dt>
 
-[**Metodo ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
 [**BG_JOB_TIMES**](bg-job-times.md)

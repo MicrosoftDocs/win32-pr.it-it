@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-sostituisce-Templates
-description: Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
+title: Attributo ms-PKI-Supersede-Templates
+description: Specifica i nomi dei modelli di certificato che vengono sostituiti dal modello corrente.
 ms.assetid: 4e247932-1c50-4bfb-b723-52b7c36a8571
 ms.tgt_platform: multiple
 keywords:
-- attributo di AD per l'attributo ms-PKI-sostituisce-Templates
-- msPKI-sostituisce lo schema AD dell'attributo Templates
+- Attributo ms-PKI-Supersede-Templates Schema di ACTIVE Directory
+- Attributo msPKI-Supersede-Templates Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd11ac2b96846912b0c6b1e8d01c6fd558f5f6db
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12fbda25794dfe75e7f75fce4c2796cabca00e26697f7321f9edec46276e874a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803061"
 ---
-# <a name="ms-pki-supersede-templates-attribute"></a>attributo ms-PKI-sostituisce-Templates
+# <a name="ms-pki-supersede-templates-attribute"></a>Attributo ms-PKI-Supersede-Templates
 
-Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
+Specifica i nomi dei modelli di certificato che vengono sostituiti dal modello corrente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | ms-PKI-sostituisce-modelli                                                                        |
-| LDAP-Display-Name | msPKI-sostituisce-modelli                                                                         |
+| CN                | ms-PKI-Supersede-Templates                                                                        |
+| Ldap-Display-Name | msPKI-Supersede-Templates                                                                         |
 | Dimensione              | 64 byte                                                                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                                                                              |
-| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-certificate-template) viene modificato, creato o clonato. |
+| Aggiorna privilegio  | Amministratore di dominio                                                                              |
+| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-Certificate-Template) viene modificato, creato o clonato. |
 | Attribute-Id      | 1.2.840.113556.1.4.1437                                                                           |
-| System-ID-GUID    | 9de8ae7d-7a5b-421d-b5e4-061f79dfd5d7                                                              |
+| System-Id-Guid    | 9de8ae7d-7a5b-421d-b5e4-061f79dfd5d7                                                              |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                       |
 
 
@@ -57,15 +57,15 @@ Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Specifica i nomi dei modelli di certificato sostituiti dal modello corrente.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Dimensioni del buffer, in byte.
 ms.assetid: 1df5baed-3f2e-4303-a4c2-721de2e2fb39
-title: 'Membro CMediaSample:: m_cbBuffer (Amfilter. h)'
+title: Membro CMediaSample::m_cbBuffer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6744d40cc4d518b2ae61ac58ed6fe163266d147
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e3f70e15120d4e2fa9796ab16ba6aee2edafc4e54d7c882d22165f972437ced
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634631"
 ---
-# <a name="cmediasamplem_cbbuffer-member"></a>Membro cbBuffer di CMediaSample:: m \_
+# <a name="cmediasamplem_cbbuffer-member"></a>Membro CMediaSample::m \_ cbBuffer
 
 Dimensioni del buffer, in byte.
 
@@ -42,8 +42,8 @@ LONG m_cbBuffer;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

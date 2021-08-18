@@ -1,19 +1,19 @@
 ---
-description: Nome dell'applicazione che ha creato il file o l'elemento. Non usare i numeri di versione per identificare la versione specifica dell'applicazione.
+description: Nome dell'applicazione che ha creato questo file o elemento. Non usare i numeri di versione per identificare la versione specifica dell'applicazione.
 ms.assetid: 872f1ccc-435a-4881-b283-ba4c8ddd3ac2
-title: System. ApplicationName
+title: System.ApplicationName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3850983d306dcafc9e66583785f647151d3b7b34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b96c6100c2634d51aa7f8e60e37713e27031ab9a4aa86a24090ace46d475908
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717911"
 ---
-# <a name="systemapplicationname"></a>System. ApplicationName
+# <a name="systemapplicationname"></a>System.ApplicationName
 
-Nome dell'applicazione che ha creato il file o l'elemento. Non usare i numeri di versione per identificare la versione specifica dell'applicazione.
+Nome dell'applicazione che ha creato questo file o elemento. Non usare i numeri di versione per identificare la versione specifica dell'applicazione.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

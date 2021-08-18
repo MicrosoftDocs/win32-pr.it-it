@@ -4,12 +4,12 @@ description: Calcola una divisione a precisione doppia per componente.
 ms.assetid: 0A67FC35-7F2F-4258-83CE-1CA398E57952
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81fc039b222b28a5fb1217d23c78470aff1739f7
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4730849b8ccc9070f538a58709bcd99fb9bfa552973c365fb3225806caf7aca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986661"
 ---
 # <a name="ddiv-sm5---asm"></a>ddiv (sm5 - asm)
 
@@ -40,7 +40,7 @@ Calcola una divisione a precisione doppia per componente.
 
 L'istruzione DDIV verrà generata dal compilatore HLSL ogni volta che l'operatore di divisione viene usato con valori double. L'accuratezza di questa istruzione deve essere 0,5 ULP.
 
-Gli shader che usano questa istruzione verranno contrassegnati con un flag shader che ne causerà l'associazione a meno che non vengano soddisfatte tutte le condizioni seguenti.
+Gli shader che usano questa istruzione verranno contrassegnati con un flag shader che ne causerà l'esito negativo, a meno che non vengano soddisfatte tutte le condizioni seguenti.
 
 -   Il sistema supporta DirectX 11.1.
 -   Il sistema include un driver WDDM 1.2.
@@ -66,7 +66,7 @@ In questa tabella F indica un numero finito-reale.
 
  
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
@@ -78,9 +78,9 @@ Questa istruzione si applica alle fasi di shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
-Questa istruzione è supportata nei modelli di shader seguenti:
+Questa istruzione è supportata nei modelli shader seguenti:
 
 
 

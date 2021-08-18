@@ -4,12 +4,12 @@ ms.assetid: d6698040-8fdd-40e6-a61a-402647d48dbc
 title: Funzioni mesh (grafica Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b74a35933fd9c6302b8c59ef1cd8ea62b4fac231
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 675f695dd16c1c0230c5b335f3cf11de28b62eced77af3611d88a7877d24b11f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856861"
 ---
 # <a name="mesh-functions-direct3d-9-graphics"></a>Funzioni mesh (grafica Direct3D 9)
 

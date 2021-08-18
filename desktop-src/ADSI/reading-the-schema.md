@@ -5,18 +5,18 @@ ms.assetid: cc35789e-5cfe-49e9-9fb3-489b949768c5
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2091d225c1be90d887f6994eda782ad7a7adb65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7566c78c5dce0b468814dad9c3483d1596c8a52446728b8969c629d19bec0b10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023269"
 ---
 # <a name="reading-the-schema"></a>Lettura dello schema
 
-La maggior parte dei provider supporta lo schema fornito con Active Directory. Lo schema contiene le definizioni di classi e attributi. ADSI estrae lo schema in "Provider://schema". Ogni oggetto contiene la posizione dello schema in cui è definita la relativa classe. Per ottenere queste informazioni, è possibile usare il metodo della proprietà [**IADs:: Get \_ Class**](iads-property-methods.md) .
+La maggior parte dei provider supporta lo schema fornito con Active Directory. Lo schema contiene definizioni di classi e attributi. ADSI astrae lo schema in "Provider://schema". Ogni oggetto contiene il percorso dello schema in cui è definita la relativa classe. È possibile usare il [**metodo \_ della proprietà Class IADs::get**](iads-property-methods.md) per ottenere queste informazioni.
 
-Per eseguire l'associazione al contenitore dello schema in un particolare dominio, effettuare le operazioni seguenti:
+Per eseguire l'associazione al contenitore dello schema in un dominio specifico, eseguire le operazioni seguenti:
 
 
 ```VB
@@ -34,7 +34,7 @@ hr = ADsGetObject(L&quot;LDAP://Fabrikam/Schema&quot;, IID_IADsContainer, (void*
 
 
 
-Per elencare le informazioni nel contenitore dello schema, associare al contenitore ed enumerare ogni oggetto nel contenitore come illustrato di seguito:
+Per elencare le informazioni nel contenitore dello schema, eseguire l'associazione al contenitore ed enumerare ogni oggetto nel contenitore, come illustrato di seguito:
 
 
 ```VB
@@ -113,7 +113,7 @@ IADsContainer *pSchema=NULL;
 
 
 
-È anche possibile eseguire l'associazione a un oggetto e ottenere la posizione dello schema, come illustrato di seguito:
+È anche possibile eseguire l'associazione a un oggetto e ottenere il percorso dello schema, come illustrato di seguito:
 
 
 ```VB
@@ -132,9 +132,9 @@ Next
 
 
 
- 
+ 
 
- 
+ 
 
 
 

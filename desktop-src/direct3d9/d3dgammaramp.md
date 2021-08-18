@@ -1,7 +1,7 @@
 ---
-description: Contiene dati di rampa rosso, verde e blu.
+description: Contiene i dati di rampa rossa, verde e blu.
 ms.assetid: c596f47a-6c09-4b97-ab2f-b1da3d851aa4
-title: Struttura D3DGAMMARAMP (D3D9Types. h)
+title: Struttura D3DGAMMARAMP (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 496885b8267d339c7617ec24b884fa193f8d9945
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fbd3acc35b7fd4998f5ba536c1fe4a28cf2a17153bf24aacde1f9f39bbbcd09e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751001"
 ---
 # <a name="d3dgammaramp-structure"></a>Struttura D3DGAMMARAMP
 
-Contiene dati di rampa rosso, verde e blu.
+Contiene i dati di rampa rossa, verde e blu.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,36 +41,36 @@ typedef struct D3DGAMMARAMP {
 
 <dl> <dt>
 
-**Red**
+**Rosso**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matrice di elementi di 256 parole che descrivono la rampa di gamma rossa.
+Matrice di 256 elementi WORD che descrive la rampa gamma rossa.
 
 </dd> <dt>
 
-**verde**
+**Verde**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matrice di elementi di 256 parole che descrivono la rampa gamma verde.
+Matrice di 256 elementi WORD che descrive la rampa gamma verde.
 
 </dd> <dt>
 
-**blu**
+**Blu**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matrice di elementi di 256 parole che descrivono la rampa di gamma blu.
+Matrice di 256 elementi WORD che descrive la rampa gamma blu.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Matrice di elementi di 256 parole che descrivono la rampa di gamma blu.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

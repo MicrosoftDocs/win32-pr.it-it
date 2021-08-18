@@ -1,26 +1,26 @@
 ---
-description: La \_ classe Win32 EncryptableVolume espone i metodi seguenti.
+description: La classe Win32 \_ EncryptableVolume espone i metodi seguenti.
 ms.assetid: C78E73E9-961D-45D5-A580-B8FDD001505D
-title: Metodi di Win32_EncryptableVolume
+title: metodi Win32_EncryptableVolume
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ad46bf4e221ba49f4bb9666608a4c45882da03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09067b1321e5ce03cabbba8d40294246a6f38d582579a3b571d81dcbc646a831
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004149"
 ---
-# <a name="win32_encryptablevolume-methods"></a>\_Metodi Win32 EncryptableVolume
+# <a name="win32_encryptablevolume-methods"></a>Metodi di \_ Win32 EncryptableVolume
 
-La classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) espone i metodi seguenti.
+La [**classe Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Metodo BackupRecoveryInformationToActiveDirectory**](backuprecoveryinformationtoactivedirectory-win32-encryptablevolume.md)
 -   [**Metodo ChangeExternalKey**](changeexternalkey-win32-encryptablevolume.md)
 -   [**Metodo ChangePassphrase**](changepassphrase-win32-encryptablevolume.md)
--   [**Metodo Changepin aggiorna**](changepin-win32-encryptablevolume.md)
+-   [**Metodo ChangePIN**](changepin-win32-encryptablevolume.md)
 -   [**Metodo ClearAllAutoUnlockKeys**](clearallautounlockkeys-win32-encryptablevolume.md)
 -   [**Metodo Decrypt**](decrypt-win32-encryptablevolume.md)
 -   [**Metodo DeleteKeyProtector**](deletekeyprotector-win32-encryptablevolume.md)
@@ -56,7 +56,7 @@ La classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) espone i 
 -   [**Metodo IsAutoUnlockKeyStored**](isautounlockkeystored-win32-encryptablevolume.md)
 -   [**Metodo IsKeyProtectorAvailable**](iskeyprotectoravailable-win32-encryptablevolume.md)
 -   [**Metodo IsNumericalPasswordValid**](isnumericalpasswordvalid-win32-encryptablevolume.md)
--   [**Lock (metodo)**](lock-win32-encryptablevolume.md)
+-   [**Metodo Lock**](lock-win32-encryptablevolume.md)
 -   [**Metodo PauseConversion**](pauseconversion-win32-encryptablevolume.md)
 -   [**Metodo PrepareVolume**](preparevolume-win32-encryptablevolume.md)
 -   [**Metodo ProtectKeyWithAdSid**](protectkeywithadsid-win32-encryptablevolume.md)

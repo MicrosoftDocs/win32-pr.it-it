@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXSHRotate (D3DX10.h): ruota il vettore armonico armonico sferico (SH) in base alla matrice specificata.'
+description: 'Funzione D3DXSHRotate (D3DX10.h): ruota il vettore sferico aricale (SH) in base alla matrice specificata.'
 ms.assetid: 22ed379a-ce08-46df-9cc1-8d5fde87c179
 title: Funzione D3DXSHRotate (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2f2af3fe59c57ba32bc03bb59233bec72722bbb5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ff63f6ad2fbbb75baaa32c4754a4cee3437ba34fe6dbd3b0412464deaf8fd71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990781"
 ---
 # <a name="d3dxshrotate-function-d3dx10h"></a>Funzione D3DXSHRotate (D3DX10.h)
 
-Ruota il vettore armonico armonico (SH) in base alla matrice specificata.
+Ruota il vettore sferico aricale (SH) in base alla matrice specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHRotate(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera coefficienti Order². Questo puntatore non deve essere associato a pIn. Vedere la sezione Osservazioni.
+Puntatore ai coefficienti di output sferici armonici (SH). La valutazione genera coefficienti Di ordine. Questo puntatore non deve creare un alias con pIn. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso nell'intervallo tra D3DXSH \_ MINORDER e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo da D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Ordine della valutazione SH. Deve essere compreso nell'intervallo tra D3DXSH \_ 
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla matrice di rotazione. La sottomatrici di rotazione deve essere ortogonale, con un determinante unità.
+Puntatore alla matrice di rotazione. La sottomatrici di rotazione deve essere ortogonale, con un'unità determinante.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria lÊ + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

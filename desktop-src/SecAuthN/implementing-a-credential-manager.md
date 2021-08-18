@@ -1,5 +1,5 @@
 ---
-description: Elenca le esportazioni DLL che devono essere implementate per creare un gestore di credenziali.
+description: Elenca le esportazioni dll che devono essere implementate per creare un gestore credenziali.
 ms.assetid: 8b176dd6-0e0b-4330-8889-f87384977ceb
 title: Implementazione di un Gestione credenziali
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119482661"
 ---
 # <a name="implementing-a-credential-manager"></a>Implementazione di un Gestione credenziali
 
-Per creare un gestore di credenziali, è necessario creare una DLL che esporta le funzioni seguenti:
+Per creare un gestore credenziali, è necessario creare una DLL che esporta le funzioni seguenti:
 
 -   [**NPLogonNotify**](/windows/desktop/api/Npapi/nf-npapi-nplogonnotify)
 -   [**NPPasswordChangeNotify**](/windows/desktop/api/Npapi/nf-npapi-nppasswordchangenotify)
@@ -31,9 +31,9 @@ HKEY_LOCAL_MACHINE
             SmartCardLogonNotify = 1
 ```
 
-**Windows Server 2003 e Windows XP:** La voce del Registro di sistema **SmartCardLogonNotify** non è necessaria.
+**Windows Server 2003 e Windows XP:** La **voce del Registro di sistema SmartCardLogonNotify** non è necessaria.
 
-Inoltre, i gestori di credenziali devono supportare anche la funzione [**NPGetCaps**](/windows/desktop/api/Npapi/nf-npapi-npgetcaps) per WNNC START (il supporto di altri indici non è necessario \_ per i gestori di credenziali). In questo modo viene indicato all'MPR quando verrà avviato un gestore di credenziali. Chiamando **NPGetCaps** con il parametro *nIndex* impostato su WNNC START, la MPR ottiene il tempo di attesa prima di chiamare le funzioni del punto di ingresso di gestione delle credenziali \_ del provider. E se la password mpr contiene queste informazioni, può inoltrarla al gestore di credenziali, impostando il timeout.
+Inoltre, i gestori delle credenziali devono supportare anche la funzione [**NPGetCaps**](/windows/desktop/api/Npapi/nf-npapi-npgetcaps) per WNNC START (il supporto di altri indici non è necessario \_ per i gestori delle credenziali). In questo modo viene indicato all'MPR quando verrà avviato un gestore delle credenziali. Chiamando **NPGetCaps** con il *parametro nIndex* impostato su WNNC START, la MPR ottiene il tempo di attesa prima di chiamare le funzioni del punto di ingresso di gestione \_ delle credenziali del provider. Se l'MPR ha queste informazioni, può inoltrarla al gestore delle credenziali, impostando il timeout.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Caricare i dati figlio della mesh da un file con estensione x.
+description: Caricare i dati figlio mesh da un file con estensione x.
 ms.assetid: 5ed338f9-48a6-44e6-95da-1bed9ecd6ebf
-title: 'Metodo ID3DXLoadUserData:: LoadMeshChildData (D3dx9anim. h)'
+title: Metodo ID3DXLoadUserData::LoadMeshChildData (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9960f47ac21dad2521f6272c9176e3d895bbd109
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd4aaa857ac89594b1114612c59f959f0d91b050f6f9c0f0c9290798acf829f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120825"
 ---
-# <a name="id3dxloaduserdataloadmeshchilddata-method"></a>Metodo ID3DXLoadUserData:: LoadMeshChildData
+# <a name="id3dxloaduserdataloadmeshchilddata-method"></a>Metodo ID3DXLoadUserData::LoadMeshChildData
 
-Caricare i dati figlio della mesh da un file con estensione x.
+Caricare i dati figlio mesh da un file con estensione x.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT LoadMeshChildData(
 
 <dl> <dt>
 
-*pMeshContainer* \[ in\]
+*pMeshContainer* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESHCONTAINER**](d3dxmeshcontainer.md)**
 
-Puntatore a un contenitore mesh. Vedere [**D3DXMESHCONTAINER**](d3dxmeshcontainer.md).
+Puntatore a un contenitore mesh. Vedere [**D3DXMESHCONTAINER.**](d3dxmeshcontainer.md)
 
 </dd> <dt>
 
-*pXofChildData* \[ in\]
+*pXofChildData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILEDATA**](id3dxfiledata.md)**
 
-Puntatore a una struttura di dati del file con estensione x. Questa operazione è definita in dxfile. h.
+Puntatore a una struttura di dati di file con estensione x. Questo valore è definito in Dxfile.h.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore a una struttura di dati del file con estensione x. Questa operazione �
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da D3DERR o D3DXERR, in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da D3DERR o D3DXERR, perché anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

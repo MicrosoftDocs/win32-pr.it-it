@@ -4,18 +4,18 @@ ms.assetid: e5136e15-3ae1-4e0a-ae97-fcf16203b21d
 title: Gestione delle operazioni asincrone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d220c5633f9ee044dbf9cdb6a63b563747620afd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 537a52a41e73bae7035789176bb65b125c105f691bf654ed3c0ded4e6a73f70d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999450"
 ---
 # <a name="managing-asynchronous-operations"></a>Gestione delle operazioni asincrone
 
-\[A partire da Windows 8 e Windows Server 2012, il [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituito dall' [API di gestione dell'archiviazione di Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partire Windows 8 e Windows Server 2012, il [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituito dal Windows Archiviazione API Gestione . [](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)\]
 
-Nell'esempio di codice seguente viene illustrato il funzionamento di un chiamante con un oggetto asincrono. In questo caso, la funzione **SynchronousCreateLun** chiama il metodo [**IVdsSubSystem:: CreateLun**](/windows/desktop/api/Vds/nf-vds-ivdssubsystem-createlun) asincrono usando i parametri specificati. La funzione attenderà l'oggetto asincrono per il completamento della chiamata asincrona al metodo **CreateLun** . Quando il metodo [**IVdsAsync:: wait**](/windows/desktop/api/Vds/nf-vds-ivdsasync-wait) restituisce, **SynchronousCreateLun** Ottiene l'interfaccia [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun) per il lun appena creato e lo restituisce come un argomento out.
+L'esempio di codice seguente illustra il funzionamento di un chiamante con un oggetto asincrono. In questo caso, la **funzione SynchronousCreateLun** chiama il metodo [**IVdsSubSystem::CreateLun**](/windows/desktop/api/Vds/nf-vds-ivdssubsystem-createlun) asincrono usando i parametri specificati. La funzione attenderà il completamento della chiamata al metodo **CreateLun** asincrona sull'oggetto asincrono. Quando il [**metodo IVdsAsync::Wait**](/windows/desktop/api/Vds/nf-vds-ivdsasync-wait) viene restituito, **SynchronousCreateLun** ottiene l'interfaccia [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun) per il LUN appena creato e la restituisce come argomento out.
 
 
 ```C++
@@ -107,7 +107,7 @@ HRESULT SynchronousCreateLun(
 [**IVdsSubSystem::CreateLun**](/windows/desktop/api/Vds/nf-vds-ivdssubsystem-createlun)
 </dt> <dt>
 
-[**IVdsAsync:: wait**](/windows/desktop/api/Vds/nf-vds-ivdsasync-wait)
+[**IVdsAsync::Wait**](/windows/desktop/api/Vds/nf-vds-ivdsasync-wait)
 </dt> <dt>
 
 [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun)

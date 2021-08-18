@@ -4,26 +4,26 @@ description: Questo argomento contiene esempi di codice C++ per l'uso dell'inter
 ms.assetid: 56bc87b4-f3cf-4177-90cb-e745889f8fef
 ms.tgt_platform: multiple
 keywords:
-- estensioni ADSI, IADsExtension
+- estensioni ADSI , IADsExtension
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a844d320b28548e9e9998881fd2a09815d1882e9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fbab6813a87701fe2d7e130a03540476412c9e13b9d5d3ca96bdd0e63b2dad54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023489"
 ---
 # <a name="iadsextension-usage"></a>Utilizzo di IADsExtension
 
-[**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) è un'interfaccia facoltativa implementata dal writer di estensione quando viene soddisfatta almeno una delle condizioni seguenti:
+[**IADsExtension è**](/windows/desktop/api/Iads/nn-iads-iadsextension) un'interfaccia facoltativa implementata dal writer di estensioni quando viene soddisfatta almeno una delle condizioni seguenti:
 
--   Il componente di estensione richiede una notifica di inizializzazione come definito da **ADSI \_ ext \_ * dwCode*** nel metodo [**opera**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) .
+-   Il componente di estensione richiede una notifica di inizializzazione come definito da **ADSI \_ EXT \_ *dwCode*** nel [**metodo Operate.**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate)
 -   L'estensione supporta un'interfaccia duale o dispatch.
 
-Se un componente di estensione supporta l'interfaccia [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) per il primo motivo, i metodi [**IADsExtension::P rivategetidsofnames**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) e [**IADsExtension::P rivateinvoke**](/windows/desktop/api/Iads/nf-iads-iadsextension-privateinvoke) possono restituire **E \_ NOTIMPL**. In alternativa, se un componente di estensione supporta un'interfaccia duale o dispatch, il metodo [**opera**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) può ignorare i dati e restituire un valore **HRESULT** di **e \_ NOTIMPL**.
+Se un componente di estensione supporta l'interfaccia [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) per il primo motivo, i metodi [**IADsExtension::P rivateGetIDsOfNames**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) e [**IADsExtension::P rivateInvoke**](/windows/desktop/api/Iads/nf-iads-iadsextension-privateinvoke) possono restituire **E \_ NOTIMPL.** In alternativa, se un componente di estensione supporta un'interfaccia duale o dispatch, il [**metodo Operate**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) può ignorare i dati e restituire **un HRESULT** **di E \_ NOTIMPL.**
 
-Nel codice seguente viene illustrata un'estensione che implementa [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
+Il codice seguente illustra un'estensione che implementa [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
 
 
 ```C++
@@ -67,9 +67,9 @@ STDMETHOD(PrivateInvoke)(DISPID dispidMember, REFIID riid, LCID lcid, WORD wFlag
 
 
 
- 
+ 
 
- 
+ 
 
 
 

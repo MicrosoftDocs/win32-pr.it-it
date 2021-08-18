@@ -1,7 +1,7 @@
 ---
-description: Il metodo Deactivate Elimina la finestra di dialogo. Questo metodo implementa il Metodo IPropertyPage::D ttiva.
+description: Il metodo Deactivate elimina la finestra di dialogo. Questo metodo implementa il metodo IPropertyPage::D eactivate.
 ms.assetid: f2d2f15f-15f6-4902-bafc-f58a684ff193
-title: Metodo CBasePropertyPage. Deactivate (Cprop. h)
+title: Metodo CBasePropertyPage.Deactivate (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63a843502fc735cc41ff3656e83ef3d6cb839a19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5acb906a28087464f349aff3fdcdf367d7e3bceaa5a29cfa1cad4143b80e10c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526771"
 ---
-# <a name="cbasepropertypagedeactivate-method"></a>Metodo CBasePropertyPage. Deactivate
+# <a name="cbasepropertypagedeactivate-method"></a>Metodo CBasePropertyPage.Deactivate
 
-Il `Deactivate` metodo elimina la finestra di dialogo. Questo metodo implementa il metodo **IPropertyPage::D ttiva** .
+Il `Deactivate` metodo elimina la finestra di dialogo. Questo metodo implementa il **metodo IPropertyPage::D eactivate.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                  | Descrizione                    |
 |----------------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Esito positivo.<br/>            |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl> | Errore imprevisto.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>            |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl> | Errore imprevisto.<br/> |
 
 
 
@@ -61,8 +61,8 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (include Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 [**Classe CBasePropertyPage**](cbasepropertypage.md)
 </dt> <dt>
 
-[**CBasePropertyPage:: OnDeactivate**](cbasepropertypage-ondeactivate.md)
+[**CBasePropertyPage::OnDeactivate**](cbasepropertypage-ondeactivate.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato destro di un segno di uguale. Sono disponibili molti tipi di espressioni.
+description: Le espressioni sono istruzioni matematiche o logiche usate sul lato destro di un segno di uguale. Esistono molti tipi di espressioni.
 ms.assetid: 642aa188-5dd7-49fc-b6cc-845f8fc22530
 title: Espressioni (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa574069094853eb506f7a1b38cdb6cd4379d3b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: daeffeb09a2c2f496f73d492581cb2b51ac2e518e176bbbc848889bef5716b25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985701"
 ---
 # <a name="expressions-direct3d-9"></a>Espressioni (Direct3D 9)
 
-Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato destro di un segno di uguale. Sono disponibili molti tipi di espressioni.
+Le espressioni sono istruzioni matematiche o logiche usate sul lato destro di un segno di uguale. Esistono molti tipi di espressioni.
 
 ## <a name="expressions"></a>Espressioni
 
-1.  Riferimento a una variabile
+1.  Informazioni di riferimento sulla variabile
     ```
     ( variable ) or<variable >
     ```
@@ -39,7 +39,7 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    Qui sono supportate tutte le espressioni HLL numeriche standard.
+    Tutte le espressioni HLL numeriche standard sono supportate qui.
 
 4.  Costruttore
     ```
@@ -57,7 +57,7 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    I valori scalari devono essere valori scalari letterali.
+    Gli scalari devono essere valori scalari letterali.
 
     Il numero di inizializzatori deve essere compatibile con la variabile (stato) sul lato sinistro del segno di uguale.
 
@@ -71,7 +71,7 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     I token devono essere compatibili con la variabile (stato) sul lato sinistro del segno di uguale.
 
-    I token non fanno distinzione tra maiuscole e minuscole.
+    Per i token non viene fatto distinzione tra maiuscole e minuscole.
 
 7.  NULL
 
@@ -81,9 +81,9 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    NULL può essere assegnato solo a uno shader, un campionatore o un oggetto trama.
+    NULL può essere assegnato solo a uno shader, a un campionatore o a un oggetto trama.
 
-8.  Blocco assembly
+8.  Blocco di assembly
 
     ```
     asm { code }
@@ -91,11 +91,11 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    È necessario assegnare i blocchi di assembly PS allo stato PIXELSHADER.
+    I blocchi di assembly PS devono essere assegnati allo stato PIXELSHADER.
 
-    I blocchi di assembly di Visual Studio devono essere assegnati allo stato VERTEXSHADER.
+    I blocchi di assembly vs devono essere assegnati allo stato VERTEXSHADER.
 
-9.  Blocco dello stato del campionatore
+9.  Blocco di stato del campionatore
 
     ```
     sampler_state { [ state = expression ; [ state = ... ] ] }
@@ -103,11 +103,11 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    I blocchi di stato del campionatore sono sequenze di assegnazioni di trame o stato della fase del campionatore non indicizzato.
+    I blocchi di stato del campionatore sono sequenze di stato della fase del campionatore non indicizzato o assegnazioni di trama.
 
-    I blocchi di stato del campionatore devono essere assegnati allo stato dell'effetto CAMPIONATOre.
+    I blocchi di stato del campionatore devono essere assegnati allo stato dell'effetto SAMPLER.
 
-10. Blocco dello stato di stato dell'effetto
+10. Blocco stato dell'effetto
 
     ```
     stateblock_state { [ state [ [index] ] = expression; 
@@ -128,9 +128,9 @@ Le espressioni sono istruzioni matematiche o logiche che vengono usate sul lato 
 
     
 
-    La destinazione vertex shader \_ e m \_ n indica D3DVS \_ versione (m, n) vertex shader Version. La destinazione pixel shader PS m n indica che la versione di \_ \_ D3DPS \_ (m, n) pixel shader.
+    La destinazione vertex shader e \_ m n indica la versione del \_ vertex shader D3DVS \_ VERSION(m, n). La pixel shader ps \_ m \_ n indica D3DPS \_ VERSION(m, n) pixel shader versione.
 
-    Le espressioni di compilazione del linguaggio di alto livello del vertex shader possono essere assegnate solo allo stato dell'effetto VERTEXSHADER. Le espressioni di compilazione del linguaggio di alto livello del pixel shader possono essere assegnate solo allo stato dell'effetto PIXELSHADER.
+    Le espressioni di compilazione del linguaggio di alto livello di vertex shader possono essere assegnate solo allo stato dell'effetto VERTEXSHADER. Le espressioni di compilazione del linguaggio di alto livello pixel shader possono essere assegnate solo allo stato dell'effetto PIXELSHADER.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

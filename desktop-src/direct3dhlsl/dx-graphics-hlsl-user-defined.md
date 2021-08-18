@@ -1,6 +1,6 @@
 ---
 title: Tipo definito dall'utente
-description: Utilizzare la sintassi seguente per dichiarare un tipo definito dall'utente.
+description: Usare la sintassi seguente per dichiarare un tipo definito dall'utente.
 ms.assetid: 8ef18864-f456-4b52-af83-f9b1050a0bba
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2107e3eb2b2dc2362776a1a9ecd50830519c6627
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ee73cd5afcda15bcc821d7fea5b648924829d483a33b9c67c140eed0b100e861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789311"
 ---
 # <a name="user-defined-type"></a>Tipo definito dall'utente
 
-Utilizzare la sintassi seguente per dichiarare un tipo definito dall'utente.
+Usare la sintassi seguente per dichiarare un tipo definito dall'utente.
 
 
 
 |                                           |
 |-------------------------------------------|
-| **\[ \] \[ indice \] del nome di tipo const** di typedef; |
+| typedef **\[ const \] Type Name \[ Index \]**; |
 
 
 
@@ -36,20 +36,20 @@ Utilizzare la sintassi seguente per dichiarare un tipo definito dall'utente.
 
 | Elemento                                                                                         | Descrizione                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="_const_"></span><span id="_CONST_"></span>**\[const\]**<br/>                 | facoltativo. Questa parola chiave contrassegna in modo esplicito il tipo come costante.<br/>             |
-| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Tipo**<br/>     | Identifica il tipo di dati. deve essere uno dei tipi di dati intrinseci HLSL.<br/>     |
+| <span id="_const_"></span><span id="_CONST_"></span>**\[Const\]**<br/>                 | facoltativo. Questa parola chiave contrassegna in modo esplicito il tipo come costante.<br/>             |
+| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**digitare**<br/>     | Identifica il tipo di dati. deve essere uno dei tipi di dati intrinseci HLSL.<br/>     |
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Stringa ASCII che identifica in modo univoco il nome della variabile.<br/>                 |
-| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>**Indice**<br/> | Dimensioni della matrice facoltative. Deve essere un Unsigned Integer compreso tra 1 e 4 inclusi.<br/> |
+| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>**Indice**<br/> | Dimensioni facoltative della matrice. Deve essere un intero senza segno compreso tra 1 e 4 inclusi.<br/> |
 
 
 
  
 
-Oltre ai tipi di dati intrinseci incorporati, HLSL supporta i tipi definiti dall'utente o personalizzati che seguono questa sintassi:
+Oltre ai tipi di dati intrinseci predefiniti, HLSL supporta tipi definiti dall'utente o personalizzati che seguono questa sintassi:
 
 ## <a name="remarks"></a>Commenti
 
-I tipi definiti dall'utente non fanno distinzione tra maiuscole e minuscole. Per praticità, i tipi seguenti vengono definiti automaticamente in ambito super-globale.
+Per i tipi definiti dall'utente non viene fatto distinzione tra maiuscole e minuscole. Per praticità, i tipi seguenti vengono definiti automaticamente nell'ambito super-globale.
 
 
 ```
@@ -70,9 +70,9 @@ typedef matrix <double, #, #> double#x#;
 
 
 
-Il segno di cancelletto ( \# ) rappresenta una cifra intera compresa tra 1 e 4.
+Il cancelletto ( \# ) rappresenta una cifra intera compresa tra 1 e 4.
 
-Per la compatibilità con gli effetti di DirectX 8, i tipi seguenti vengono definiti automaticamente in ambito super-globale:
+Per garantire la compatibilità con gli effetti directx 8, i tipi seguenti vengono definiti automaticamente nell'ambito super globale:
 
 
 ```

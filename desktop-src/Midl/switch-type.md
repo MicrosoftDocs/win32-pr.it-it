@@ -1,9 +1,9 @@
 ---
 title: switch_type (attributo)
-description: L'attributo \ Switch \_ Type \ identifica il tipo della variabile utilizzata come unione discriminante. Il tipo di opzione può essere un Integer, un carattere, un valore booleano o un tipo di enumerazione.
+description: L'attributo \ switch \_ type\ identifica il tipo della variabile usata come discriminante dell'unione. Il tipo switch può essere un integer, un carattere, un valore booleano o un tipo di enumerazione.
 ms.assetid: e4c6d33b-d4db-42b7-9d18-fd14bf1fb530
 keywords:
-- attributo switch_type MIDL
+- switch_type attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14184c5838d9f671f75536714d73c3f6ebf00a0a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8695a17c60f9785d7782d77db839499306a9577755e8a6838540f5a0fc2cea48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146234"
 ---
-# <a name="switch_type-attribute"></a>Switch \_ type-attributo
+# <a name="switch_type-attribute"></a>Attributo del \_ tipo di opzione
 
-L'attributo **\[ Switch \_ Type \]** identifica il tipo della variabile utilizzata come unione discriminante. Il tipo di opzione può essere un Integer, un carattere, un valore booleano o un tipo di enumerazione.
+**\[ \_ L'attributo \] switch** type identifica il tipo della variabile usata come discriminante dell'unione. Il tipo switch può essere un integer, un carattere, un valore booleano o un tipo di enumerazione.
 
 ``` syntax
 switch_type(switch-type-specifier)
@@ -34,15 +34,15 @@ switch_type(switch-type-specifier)
 *switch-type-specifier* 
 </dt> <dd>
 
-Specifica un tipo [**int**](int.md), [**char**](char-idl.md), [**Boolean**](boolean.md)o [**enum**](enum.md) o un identificatore di tale tipo.
+Specifica un [**tipo int**](int.md), [**char**](char-idl.md), [**Boolean**](boolean.md)o [**enum**](enum.md) o un identificatore di tale tipo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'attributo **\[ Switch \_ Type \]** identifica il tipo di variabile, l' **\[** [**opzione \_ is**](switch-is.md) **\]** attribute specifica il nome del parametro che rappresenta l'unione discriminante. L'attributo **\[ Switch \_ Type \]** si applica ai parametri o ai membri di strutture o unioni.
+Mentre **\[ \_ l'attributo del tipo \]** di opzione identifica il tipo di variabile, l'opzione è l'attributo che specifica il nome del parametro che rappresenta la **\[** [**\_**](switch-is.md) **\]** discriminante dell'unione. **\[ \_ L'attributo \] del** tipo switch si applica a parametri o membri di strutture o unioni.
 
-L'Unione e il relativo discriminante devono essere specificati allo stesso livello logico. Quando l'Unione è un parametro, il discriminante di Unione deve essere un altro parametro. Quando l'Unione è un campo di una struttura, discriminante deve essere un altro campo della struttura allo stesso livello del campo di Unione.
+L'unione e il relativo discriminante devono essere specificati allo stesso livello logico. Quando l'unione è un parametro, la discriminante dell'unione deve essere un altro parametro. Quando l'unione è un campo di una struttura, il discriminante deve essere un altro campo della struttura allo stesso livello del campo di unione.
 
 ## <a name="examples"></a>Esempi
 
@@ -71,33 +71,33 @@ typedef struct _WINNER_TYPE
 [**Boolean**](boolean.md)
 </dt> <dt>
 
-[**char**](char-idl.md)
+[**Char**](char-idl.md)
 </dt> <dt>
 
 [Unioni incapsulate](encapsulated-unions.md)
 </dt> <dt>
 
-[**enum**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**INT**](int.md)
+[**int**](int.md)
 </dt> <dt>
 
 [Unioni non incapsulate](nonencapsulated-unions.md)
 </dt> <dt>
 
-[**opzione \_**](switch-is.md)
+[**\_l'opzione è**](switch-is.md)
 </dt> <dt>
 
 [**Unione**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

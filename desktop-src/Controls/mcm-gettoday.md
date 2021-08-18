@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_GETTODAY (COMmctrl. h)
-description: Recupera le informazioni sulla data per la data specificata come \ 0034; Today \ 0034; per un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro MonthCal GetToday.
+title: MCM_GETTODAY messaggio (Commctrl.h)
+description: Recupera le informazioni sulla data per la data specificata come \ 0034;today \ 0034; per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetToday MonthCal.
 ms.assetid: a79feb57-6aa3-4c96-95f3-7018b6b8327f
 keywords:
-- Controlli di Windows Message MCM_GETTODAY
+- MCM_GETTODAY dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21538af3c573b3d972b7f16bfe024e0d36211644
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6925ff24a2d3e042a4f2c752d87642f74345116fc5cc7f94e00e811d453be4fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019029"
 ---
-# <a name="mcm_gettoday-message"></a>\_Messaggio MCM GETtoday
+# <a name="mcm_gettoday-message"></a>Messaggio \_ MCM GETTODAY
 
-Recupera le informazioni sulla data per la data specificata come "Today" per un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la macro [**MonthCal \_ GetToday**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_gettoday) .
+Recupera le informazioni sulla data per la data specificata come "today" per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetToday MonthCal.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_gettoday)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Recupera le informazioni sulla data per la data specificata come "Today" per un 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che riceverà le informazioni sulla data. Questo parametro deve essere un indirizzo valido e non può essere **null**.
+Puntatore a [**una struttura SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che riceverà le informazioni sulla data. Questo parametro deve essere un indirizzo valido e non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 <dl> <dt>
 
-[Orari del controllo calendario mensile](month-calendar-controls.md)
+[Ore nel controllo Calendario mensile](month-calendar-controls.md)
 </dt> </dl>
 
  

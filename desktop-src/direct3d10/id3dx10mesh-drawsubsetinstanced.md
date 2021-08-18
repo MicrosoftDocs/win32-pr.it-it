@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2e28d7a7d2c1d743090832d68793ec3743662308
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 41da932b5f9445df83c0783b7788b8a7079af2acb74643ea37111d8482e8e208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990431"
 ---
 # <a name="id3dx10meshdrawsubsetinstanced-method"></a>Metodo ID3DX10Mesh::D rawSubsetInstanced
 
@@ -56,7 +56,7 @@ Specifica il subset della mesh da disegnare. Questo valore viene usato per disti
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di istanze di cui eseguire il rendering.
+Numero di istanze di di cui eseguire il rendering.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Istanza da cui iniziare il recupero in ogni buffer contrassegnato come dati dell
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -93,7 +93,7 @@ Una mesh contiene una tabella di attributi. La tabella degli attributi può divi
 
 Le istanze possono estendere le prestazioni riutilizzando la stessa geometria per disegnare più oggetti in una scena. Un esempio di istanze può essere quello di disegnare lo stesso oggetto con posizioni e colori diversi. L'indicizzazione richiede più buffer dei vertici: almeno uno per i dati per vertice e un secondo buffer per i dati per istanza.
 
-Il disegno di istanze con DrawSubsetInstanced è molto simile al processo usato con [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) descritto in [Esempio](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx)di istanze. La differenza principale quando si usa DrawSubsetInstanced è che i buffer dei vertici e degli indici devono essere estratti dall'oggetto interfaccia [**ID3DX10Mesh**](id3dx10mesh.md) prima di poter combinare i dati di istanza.
+Il disegno di istanze con DrawSubsetInstanced è molto simile al processo usato con [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) descritto in [Esempio](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx)di istanze. La differenza principale quando si usa DrawSubsetInstanced è che i buffer dei vertici e degli indici devono essere estratti dall'oggetto [**interfaccia ID3DX10Mesh**](id3dx10mesh.md) prima di poter combinare i dati di istanza.
 
 Il codice seguente illustra l'estrazione dei buffer dei vertici e degli indici dall'oggetto mesh.
 

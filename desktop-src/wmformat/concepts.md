@@ -1,32 +1,32 @@
 ---
-title: Concetti di Windows Media Format SDK
-description: Informazioni sui concetti di Windows Media Format SDK, ad esempio i profili, i formati e la velocità in bit.
+title: Windows Concetti di Media Format SDK
+description: Informazioni sui Windows di Media Format SDK, ad esempio profili, formati e velocità in bit.
 ms.assetid: 02beae02-ee8e-40e0-b7c9-b17894c9627e
 keywords:
-- Windows Media Format SDK, concetti
+- Windows MEDIA Format SDK, concetti
 - Windows Media Format SDK, concetti chiave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90782514f767c2c50080a7d9ac329285afcdff6c
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 3d09b42ea43c79d4f1d247b8e3261064a649d4505206362888744619d172e56b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027959"
 ---
-# <a name="windows-media-format-sdk-concepts"></a>Concetti di Windows Media Format SDK
+# <a name="windows-media-format-sdk-concepts"></a>Windows Concetti di Media Format SDK
 
-In questa sezione vengono introdotti i concetti chiave di Windows Media Format SDK. Vengono illustrati gli argomenti seguenti.
+Questa sezione presenta i concetti chiave alla base di Windows Media Format SDK. Vengono trattati gli argomenti seguenti.
 
--   [File di formato Advanced Systems (ASF)](advanced-systems-format--asf--files.md)
+-   [File ASF (Advanced Systems Format)](advanced-systems-format--asf--files.md)
 -   [Profili](profiles.md)
 -   [Esempi di supporti](media-samples.md)
--   [Input, flussi e output](inputs-streams-and-outputs.md)
+-   [Input, Flussi e output](inputs-streams-and-outputs.md)
 -   [Formati](formats.md)
 -   [Velocità in bit](bit-rate.md)
 -   [Metadata](metadata.md)
 -   [Ora di presentazione](presentation-time.md)
--   [Contenuto del buffer](buffering-content.md)
+-   [Memorizzazione nel buffer del contenuto](buffering-content.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

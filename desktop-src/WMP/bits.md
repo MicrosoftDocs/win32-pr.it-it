@@ -3,25 +3,25 @@ title: BITS
 description: BITS
 ms.assetid: 67159ad9-e11b-4fea-bff2-468d5a7447be
 keywords:
-- Windows Media Player Online Stores, Servizio trasferimento intelligente in background (BITS)
-- archivi online, Servizio trasferimento intelligente in background (BITS)
-- digitare 2 archivi online, Servizio trasferimento intelligente in background (BITS)
+- Windows Media Player online store,Servizio trasferimento intelligente in background (BITS)
+- negozi online, Servizio trasferimento intelligente in background (BITS)
+- Tipo 2 di negozi online, Servizio trasferimento intelligente in background (BITS)
 - Servizio trasferimento intelligente in background (BITS)
 - BITS (Servizio trasferimento intelligente in background)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 527edf56e7505c64657d167e0210190e00d697d2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f6f1a9987ca50d659063e9689289334201b0121ccfe5257f71030536eee03a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135974"
 ---
 # <a name="bits"></a>BITS
 
-Il [servizio trasferimento intelligente in background](/windows/desktop/Bits/background-intelligent-transfer-service-portal) è una funzionalità del sistema operativo Windows. BITS trasferisce i file (download o caricamenti) tra un client e un server e fornisce informazioni sullo stato di avanzamento correlate ai trasferimenti. Se si desidera trasferire file usando il codice C++, BITS è la tecnologia corretta da usare. Se si desidera trasferire i file utilizzando il codice JScript nella pagina Web del negozio online, utilizzare invece gestione download.
+Il [Servizio trasferimento intelligente in background](/windows/desktop/Bits/background-intelligent-transfer-service-portal) è una funzionalità del Windows operativo. BITS trasferisce i file (download o caricamenti) tra un client e un server e fornisce informazioni sullo stato relative ai trasferimenti. Se si vogliono trasferire file usando codice C++, BITS è la tecnologia corretta da usare. Se si vuole trasferire i file usando JScript codice nella pagina Web del negozio online, usare download manager.
 
-Poiché Windows Media Player Download Manager USA BITS, è possibile eseguire le operazioni necessarie per configurare i processi di copia BITS in modo che Windows Media Player gestisca i processi. A tale scopo, è necessario seguire la convenzione descritta nella sezione relativa alla [convenzione dei processi BITS di Windows Media Player](windows-media-player-bits-job-convention.md) durante l'aggiunta dei processi alla coda di trasferimento BITS. Questa sezione descrive anche un meccanismo per il recupero di informazioni sui processi BITS dalla pagina Web dei negozi online.
+Poiché Windows Media Player Download Manager usa BITS, è possibile eseguire le operazioni necessarie per configurare i processi di copia BITS in modo che Windows Media Player gestirli automaticamente. A tale scopo, è necessario seguire la convenzione descritta nella sezione [Windows Media Player BitS Job Convention](windows-media-player-bits-job-convention.md) quando si aggiungono i processi alla coda di trasferimento BITS. Questa sezione descrive anche un meccanismo per recuperare informazioni sui processi BITS dalla pagina Web dei negozi online.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -33,6 +33,6 @@ Poiché Windows Media Player Download Manager USA BITS, è possibile eseguire le
 [**Informazioni sui negozi online di tipo 2**](about-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

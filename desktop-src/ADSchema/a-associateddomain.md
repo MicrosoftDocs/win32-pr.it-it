@@ -1,5 +1,5 @@
 ---
-title: attributo associatedDomain
+title: Attributo associatedDomain
 description: Il tipo di attributo associatedDomain specifica un dominio DNS associato a un oggetto.
 ms.assetid: 4ed5bb06-6f23-44ec-9589-d1bb59c65487
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8afa7e4c7457ab0f213b9a05dc33ac9bd372e0a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13c624bd590e386267d2e72dc4a070c9d7891c1958b8f058ee11aa04753eb07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022819"
 ---
-# <a name="associateddomain-attribute"></a>attributo associatedDomain
+# <a name="associateddomain-attribute"></a>Attributo associatedDomain
 
 Il tipo di attributo associatedDomain specifica un dominio DNS associato a un oggetto.
 
@@ -29,12 +29,12 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | associatedDomain                     |
-| LDAP-Display-Name | associatedDomain                     |
+| Ldap-Display-Name | associatedDomain                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 0.9.2342.19200300.100.1.37           |
-| System-ID-GUID    | 3320fc38-c379-4c17-a510-1bdf6133c5da |
+| System-Id-Guid    | 3320fc38-c379-4c17-a510-1bdf6133c5da |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -56,15 +56,15 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000000                                                      |
-| Classi utilizzate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
+| Classi usate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000000                                                      |
-| Classi utilizzate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
+| Classi usate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000000                                                      |
-| Classi utilizzate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
+| Classi usate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000000                                                      |
-| Classi utilizzate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
+| Classi usate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Il tipo di attributo associatedDomain specifica un dominio DNS associato a un og
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000000                                                      |
-| Classi utilizzate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
+| Classi usate in        | [**domainRelatedObject**](c-domainrelatedobject.md)<br/> |
 
 
 
