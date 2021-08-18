@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRendererFactory CreateMediaRendererAsync
-description: Crea in modo asincrono una nuova istanza di un oggetto che implementa l'interfaccia IMediaRenderer usando il nome univoco del dispositivo (UDN) specificato.
+description: Crea in modo asincrono una nuova istanza di un oggetto che implementa l'interfaccia IMediaRenderer usando il nome UDN (Unique Device Name) specificato.
 ms.assetid: FD1242F8-4C2E-4027-B1DE-5FD69557684C
 keywords:
-- API di streaming multimediale del metodo CreateMediaRendererAsync
-- API di streaming multimediale del metodo CreateMediaRendererAsync, interfaccia IMediaRendererFactory
-- API di streaming multimediale dell'interfaccia IMediaRendererFactory, metodo CreateMediaRendererAsync
+- Metodo CreateMediaRendererAsync API Streaming multimediale
+- Metodo CreateMediaRendererAsync API Streaming multimediale, interfaccia IMediaRendererFactory
+- Interfaccia IMediaRendererFactory API Streaming multimediale, metodo CreateMediaRendererAsync
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b152e5889ad83440a48e178be0b89a97d2a9f664
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3e459324d96f031ab3433f0d8bfe8ba5de562d76c95f51affd7b72d130655fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118735488"
 ---
-# <a name="imediarendererfactorycreatemediarendererasync-method"></a>Metodo IMediaRendererFactory:: CreateMediaRendererAsync
+# <a name="imediarendererfactorycreatemediarendererasync-method"></a>Metodo IMediaRendererFactory::CreateMediaRendererAsync
 
-Crea in modo asincrono una nuova istanza di un oggetto che implementa l'interfaccia [**IMediaRenderer**](imediarenderer.md) usando il nome univoco del dispositivo (UDN) specificato.
+Crea in modo asincrono una nuova istanza di un oggetto che implementa [**l'interfaccia IMediaRenderer**](imediarenderer.md) usando il nome UDN (Unique Device Name) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,29 +42,29 @@ HRESULT CreateMediaRendererAsync(
 
 <dl> <dt>
 
-*DeviceIdentifier* \[ in\]
+*deviceIdentifier* \[ Pollici\]
 </dt> <dd>
 
-Un HSTRING contenente un UDN che identifica il dispositivo ricevitore DLNA per cui verrà creata un'istanza di [**IMediaRenderer**](imediarenderer.md) .
+HSTRING contenente un UDN che identifica il dispositivo DLNA DMR per cui verrà creata un'istanza di [**IMediaRenderer.**](imediarenderer.md)
 
 </dd> <dt>
 
-*valore* \[ di out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Riceve un riferimento a un oggetto [**CreateMediaRendererOperation**](createmediarendereroperation.md) usato per ottenere risultati dall'operazione asincrona.
+Riceve un riferimento a un [**oggetto CreateMediaRendererOperation**](createmediarendereroperation.md) usato per ottenere risultati dall'operazione asincrona.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

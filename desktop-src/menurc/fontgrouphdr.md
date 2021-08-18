@@ -1,9 +1,9 @@
 ---
 title: Struttura FONTGROUPHDR
-description: Contiene le informazioni necessarie a un'applicazione per accedere a un tipo di carattere specifico. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
+description: Contiene le informazioni necessarie per un'applicazione per accedere a un tipo di carattere specifico. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 ms.assetid: 180b3dfd-3f20-4100-b45b-2f253b7c0582
 keywords:
-- Menu struttura FONTGROUPHDR e altre risorse
+- Struttura FONTGROUPHDR Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1d67d9ecfa451970422f21d05817f26170a9c8eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51b307b7f5798a57e344096fe46227edf97babbf3547c4c851d71fd8ecdc28da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734479"
 ---
 # <a name="fontgrouphdr-structure"></a>Struttura FONTGROUPHDR
 
-Contiene le informazioni necessarie a un'applicazione per accedere a un tipo di carattere specifico. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
+Contiene le informazioni necessarie per un'applicazione per accedere a un tipo di carattere specifico. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct {
 **NumberOfFonts**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -51,20 +51,20 @@ Numero di singoli tipi di carattere associati a questa risorsa.
 
 </dd> <dt>
 
-**DE**
+**De**
 </dt> <dd>
 
-Tipo: **[ **dirente**](direntry.md)**
+Tipo: **[ **DIRENTRY**](direntry.md)**
 
 </dd> <dd>
 
-Struttura che contiene un identificatore ordinale univoco per ogni tipo di carattere nella risorsa. Il membro **de** è un segnaposto per la matrice a lunghezza variabile delle strutture di [**dislocazione**](direntry.md) .
+Struttura che contiene un identificatore ordinale univoco per ogni tipo di carattere nella risorsa. Il **membro DE** è un segnaposto per la matrice a lunghezza variabile di strutture [**DIRENTRY.**](direntry.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura **FONTGROUPHDR** segue i dati per i singoli tipi di carattere in. File res. Il compilatore di risorse aggiunge automaticamente la struttura **FONTGROUPHDR** , in genere come ultima voce nel file.
+La **struttura FONTGROUPHDR** segue i dati per i singoli tipi di carattere in . File Res. Il compilatore di risorse aggiunge automaticamente la **struttura FONTGROUPHDR,** in genere come ultima voce nel file.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ La struttura **FONTGROUPHDR** segue i dati per i singoli tipi di carattere in. F
 **Riferimento**
 </dt> <dt>
 
-[**Diaffitto**](direntry.md)
+[**DIRENTRY**](direntry.md)
 </dt> <dt>
 
 [**FONTDIRENTRY**](fontdirentry.md)

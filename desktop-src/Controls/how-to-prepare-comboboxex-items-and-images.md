@@ -1,40 +1,40 @@
 ---
 title: Come preparare elementi e immagini ComboBoxEx
-description: In questo argomento viene illustrato come aggiungere elementi a un controllo ComboBoxEx.
+description: Questo argomento illustra come aggiungere elementi a un controllo ComboBoxEx.
 ms.assetid: 2603DFBE-9E7A-4B2F-BE33-418997D323B2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7474b46e5227d91b1cc2b51462a43a0fb75d8b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e0ea0b6defc7e99bd98c3dac551346280f0650da9e58a948e77ccc98aec81cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103872986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958700"
 ---
 # <a name="how-to-prepare-comboboxex-items-and-images"></a>Come preparare elementi e immagini ComboBoxEx
 
-In questo argomento viene illustrato come aggiungere elementi a un controllo ComboBoxEx.
+Questo argomento illustra come aggiungere elementi a un controllo ComboBoxEx.
 
-Per aggiungere un elemento a un controllo ComboBoxEx, definire innanzitutto una struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) . Impostare quindi il membro **mask** della struttura per indicare i membri che si desidera utilizzare per il controllo. Infine, impostare i membri specificati della struttura sui valori desiderati e inviare il messaggio [**CBEM \_ INSERTITEM**](cbem-insertitem.md) per aggiungere l'elemento al controllo.
+Per aggiungere un elemento a un controllo ComboBoxEx, definire prima una [**struttura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) Impostare quindi il **membro mask** della struttura per indicare i membri da usare per il controllo. Infine, impostare i membri specificati della struttura ai valori desiderati e inviare il messaggio [**\_ INSERTITEM CBEM**](cbem-insertitem.md) per aggiungere l'elemento al controllo.
 
-La seguente funzione definita dall'applicazione aggiunge 15 elementi a un controllo ComboBoxEx esistente.
+La funzione definita dall'applicazione seguente aggiunge 15 elementi a un controllo ComboBoxEx esistente.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="step-1"></a>Passaggio 1:
 
-Per aggiungere un elemento a un controllo ComboBoxEx, definire innanzitutto una struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) .
+Per aggiungere un elemento a un controllo ComboBoxEx, definire prima una [**struttura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema)
 
 
 ```C++
@@ -72,7 +72,7 @@ ITEMINFO IInf[ ] = {
 
 ### <a name="step-2"></a>Passaggio 2:
 
-Impostare il membro **mask** della struttura per indicare i membri che si desidera utilizzare per il controllo. Si noti che il membro **mask** della struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) include valori di flag che indicano al controllo di visualizzare le immagini per ogni elemento.
+Impostare il **membro mask** della struttura per indicare i membri da usare per il controllo. Si noti che **il membro mask** della struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) include valori flag che indicano al controllo di visualizzare le immagini per ogni elemento.
 
 
 ```C++
@@ -85,7 +85,7 @@ cbei.mask = CBEIF_TEXT | CBEIF_INDENT |
 
 ### <a name="step-3"></a>Passaggio 3:
 
-Impostare i membri specificati della struttura sui valori desiderati, quindi inviare il messaggio [**CBEM \_ INSERTITEM**](cbem-insertitem.md) per aggiungere l'elemento al controllo.
+Impostare i membri specificati della struttura su valori desiderati e quindi inviare il messaggio [**\_ INSERTITEM CBEM**](cbem-insertitem.md) per aggiungere l'elemento al controllo.
 
 
 ```C++
@@ -208,15 +208,15 @@ BOOL WINAPI AddItems(HWND hwndCB)
 [Informazioni sui controlli ComboBoxEx](comboboxex-controls.md)
 </dt> <dt>
 
-[Riferimento al controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
+[Informazioni di riferimento sul controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
+[Uso dei controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
 </dt> <dt>
 
 [ComboBoxEx](comboboxex-control-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

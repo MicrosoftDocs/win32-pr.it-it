@@ -1,7 +1,7 @@
 ---
 description: La proprietà ModuleTable di sola lettura restituisce il nome della tabella nel modulo che ha causato l'errore.
 ms.assetid: 390f5889-d638-4c1c-b95c-76d38c934e7c
-title: Proprietà Error. ModuleTable (Mergemod. h)
+title: Proprietà Error.ModuleTable (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 063898419596fc852d073bf83ce7504a7691a10e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47cd9bab5c12230a048da04e60169e1ad21195df2304642f6b656983539f3b57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947073"
 ---
-# <a name="errormoduletable-property"></a>Proprietà Error. ModuleTable
+# <a name="errormoduletable-property"></a>Error.ModuleTable - proprietà
 
-La proprietà **ModuleTable** di sola lettura restituisce il nome della tabella nel modulo che ha causato l'errore.
+La proprietà **ModuleTable di** sola lettura restituisce il nome della tabella nel modulo che ha causato l'errore.
 
 Questa proprietà è di sola lettura.
 
@@ -40,11 +40,11 @@ propVal = Error.ModuleTable
 
 ## <a name="remarks"></a>Commenti
 
-La raccolta è vuota se i valori non sono validi per il tipo di errore. È possibile determinare il tipo di errore chiamando la proprietà [**Type**](error-type.md) dell'oggetto [**Error**](error-object.md) .
+La raccolta è vuota se i valori non si applicano al tipo di errore. È possibile determinare il tipo di errore chiamando la [**proprietà Type**](error-type.md) dell'oggetto [**Error.**](error-object.md)
 
 ### <a name="c"></a>C++
 
-Vedere [**ottenere \_**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_moduletable) la funzione ModuleTable.
+Vedere [**la funzione get \_ ModuleTable.**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_moduletable)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ Vedere [**ottenere \_**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_m
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ description: Funzioni di stringa
 ms.assetid: 0249ea7a-84f1-4e25-9e80-0be5eb6c04ed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e03576724845dcf36c29826dfaba57b5f5a476b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3845bbb9375df726e411a80cd0dcd702db88f5c3409eb805657f38b89e44525b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733412"
 ---
 # <a name="string-functions"></a>Funzioni di stringa
 

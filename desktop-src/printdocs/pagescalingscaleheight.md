@@ -4,12 +4,12 @@ ms.assetid: ccc2ad1c-b0c2-4c45-bc95-7c15426c2534
 title: PageScalingScaleHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d51bdb5577b5e3863cfadab1fa9eb74ff40d54da
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 620f491a1bde41149dc8db4a63e41cc77ec1ba27e514a75d3c245e82d34c9879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731969"
 ---
 # <a name="pagescalingscaleheight"></a>PageScalingScaleHeight
 
@@ -73,13 +73,13 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Proprietà                | xsi:type           | Valore                      |
 |-------------------------|--------------------|----------------------------|
-| DataType<br/>     | Stringa<br/>  | xs:integer<br/>      |
+| DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | Intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | Integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | Stringa<br/>  | psk:Conditional<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | Multipli<br/>     | Integer<br/> | 1<br/>               |
-| UnitType<br/>     | Stringa<br/>  | percent<br/>         |
+| UnitType<br/>     | string<br/>  | percent<br/>         |
 
 
 

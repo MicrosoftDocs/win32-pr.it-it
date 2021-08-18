@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffectTitle
-description: L'attributo currentEffectTitle Recupera il titolo di visualizzazione della visualizzazione corrente.
+title: EFFECTS.currentEffectTitle
+description: L'attributo currentEffectTitle recupera il titolo visualizzato della visualizzazione corrente.
 ms.assetid: a6b5417c-e2a5-42fe-b25c-58c9590bbc88
 keywords:
-- EFFECTs. currentEffectTitle Windows Media Player
+- EFFECTS.currentEffectTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 348d8ae1eed421d9e5da594f34a9b10f5b439469
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a4cb48d92f7f4ad0eb801c90e46ad20f04a639b20550a1dbf910e93347e2429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996741"
 ---
-# <a name="effectscurrenteffecttitle"></a>EFFECTs. currentEffectTitle
+# <a name="effectscurrenteffecttitle"></a>EFFECTS.currentEffectTitle
 
-L'attributo **currentEffectTitle** Recupera il titolo di visualizzazione della visualizzazione corrente.
+**L'attributo currentEffectTitle** recupera il titolo visualizzato della visualizzazione corrente.
 
 ``` syntax
         elementID.currentEffectTitle
@@ -29,7 +29,7 @@ L'attributo **currentEffectTitle** Recupera il titolo di visualizzazione della v
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di sola lettura.
+Questo attributo è una stringa di sola **lettura.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è una **stringa** di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,13 +45,13 @@ Questo attributo è una **stringa** di sola lettura.
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffect**](effects-currenteffect.md)
+[**EFFECTS.currentEffect**](effects-currenteffect.md)
 </dt> <dt>
 
-[**EFFECTs. effectTitle**](effects-effecttitle.md)
+[**EFFECTS.effectTitle**](effects-effecttitle.md)
 </dt> </dl>
 
  

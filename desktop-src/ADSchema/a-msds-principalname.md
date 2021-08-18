@@ -32,7 +32,7 @@ Nome dell'account per l'entità di sicurezza (costruita).
 | CN                | ms-DS-Principal-Name                        |
 | Ldap-Display-Name | msDS-PrincipalName                          |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1865                     |
 | System-Id-Guid    | 564e9325-d057-c143-9e3b-4f9e5ef46f93        |
@@ -56,7 +56,7 @@ Nome dell'account per l'entità di sicurezza (costruita).
 | ID collegamento                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| A valore singolo       | Vero                                                    |
+| Is-Single-Valued       | Vero                                                    |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                            |
@@ -77,7 +77,7 @@ Nome dell'account per l'entità di sicurezza (costruita).
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -98,7 +98,7 @@ Nome dell'account per l'entità di sicurezza (costruita).
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -119,7 +119,7 @@ Nome dell'account per l'entità di sicurezza (costruita).
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

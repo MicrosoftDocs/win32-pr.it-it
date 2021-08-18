@@ -3,19 +3,19 @@ title: IUniversalOrchestrator::ScheduleWork
 description: Chiama Universal Orchestrator per pianificare il lavoro
 ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: 4c49d06a28497c33e86cc1e919fdb59f2363d1f5
-ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
+ms.openlocfilehash: bb2ecc67167e0651663856354a07ec86f985c664f1d2bccff98917adf72f054d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966086"
 ---
 # <a name="iuniversalorchestratorschedulework-method"></a>Metodo IUniversalOrchestrator::ScheduleWork
 
 > [!NOTE] 
 > Questa API appartiene all'API Universal Orchestrator.
 
-Consente ai client di informare Universal Orchestrator che il lavoro è in sospeso e di fornire un file binario che verrà chiamato da Universal Orchestrator per eseguire le operazioni di aggiornamento in un secondo momento.
+Consente ai client di informare Universal Orchestrator che il lavoro è in sospeso e di fornire un file binario che verrà chiamato da Universal Orchestrator per eseguire il lavoro di aggiornamento in un secondo momento.
 
 Il file binario di callback deve essere firmato con un certificato Microsoft valido e il chiamante deve richiamare la chiamata ScheduleWork dal contesto SYSTEM.
 
@@ -48,7 +48,7 @@ Parametri da passare al file binario di callback per indicare che è richiesto S
 *(facoltativo)* Parametri da passare al file binario di callback per indicare che è richiesta la sospensione.
 
 ## <a name="return-value"></a>Valore restituito
-Se questo metodo ha esito positivo, restituisce **S_OK**.  In caso contrario, restituisce un **codice di errore HRESULT.**
+Se questo metodo ha esito positivo, **restituisce** S_OK .  In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

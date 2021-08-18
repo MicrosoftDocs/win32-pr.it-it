@@ -1,25 +1,25 @@
 ---
-description: Per creare un dizionario applicazioni, è necessario impostare la proprietà WordList dell'oggetto RecognizerContext.
+description: Per creare un dizionario dell'applicazione, è necessario impostare la proprietà WordList dell'oggetto RecognizerContext.
 ms.assetid: 24dbf617-fa16-44f1-ba59-d4d99b8f1375
 title: Uso di un dizionario applicazioni con InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4bc919fc071f249611d42b8decb6ce4fb0b0f88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35b090b0822afba691012ef19d51068a18c3cf8d6c9afb9070f43f63cd86ef34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966640"
 ---
 # <a name="using-an-application-dictionary-with-inkedit"></a>Uso di un dizionario applicazioni con InkEdit
 
-Per creare un dizionario applicazioni, è necessario impostare la proprietà [**WordList**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist) dell'oggetto [**RecognizerContext**](inkrecognizercontext-class.md) . Il controllo [InkEdit](inkedit-control-reference.md) non espone l'oggetto **RecognizerContext** , pertanto non è possibile impostare direttamente la proprietà **WordList** dell'oggetto **RecognizerContext** del controllo InkEdit.
+Per creare un dizionario dell'applicazione, è necessario impostare la [**proprietà WordList**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist) dell'oggetto [**RecognizerContext.**](inkrecognizercontext-class.md) Il [controllo InkEdit](inkedit-control-reference.md) non espone l'oggetto **RecognizerContext,** pertanto non è possibile impostare direttamente la proprietà **WordList** dell'oggetto **RecognizerContext** del controllo InkEdit.
 
-Per usare un dizionario delle applicazioni con un controllo [InkEdit](inkedit-control-reference.md) , è necessario estrarre i tratti dal controllo InkEdit, passarli a un nuovo oggetto [**RecognizerContext**](inkrecognizercontext-class.md) con la proprietà [**WordList**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist) impostata su un oggetto [**WordList**](inkwordlist-class.md) contenente il dizionario dell'applicazione, archiviare i risultati di questo oggetto **RecognizerContext** , quindi passare di nuovo i risultati al controllo InkEdit.
+Per usare un dizionario dell'applicazione con un controllo [InkEdit,](inkedit-control-reference.md) è necessario prelevare i tratti dal controllo InkEdit, passarli a un nuovo oggetto [**RecognizerContext**](inkrecognizercontext-class.md) con la proprietà [**WordList**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist) impostata su [**un oggetto WordList**](inkwordlist-class.md) contenente il dizionario dell'applicazione, archiviare i risultati di questo oggetto **RecognizerContext** e quindi passare di nuovo i risultati al controllo InkEdit.
 
 ## <a name="example"></a>Esempio
 
-Il codice C seguente \# Mostra un esempio di questa tecnica.
+Il codice C \# seguente illustra un esempio di questa tecnica.
 
 
 ```C++
@@ -117,10 +117,10 @@ private void Form1_Closed(object sender, System.EventArgs e)
 [Controllo InkEdit](/previous-versions/ms552265(v=vs.100))
 </dt> <dt>
 
-[Classe Microsoft. Ink. RecognizerContext](/previous-versions/ms552546(v=vs.100))
+[Classe Microsoft.Ink.RecognizerContext](/previous-versions/ms552546(v=vs.100))
 </dt> <dt>
 
-[Classe Microsoft. Ink. WordList](/previous-versions/ms827589(v=msdn.10))
+[Classe Microsoft.Ink.Wordlist](/previous-versions/ms827589(v=msdn.10))
 </dt> </dl>
 
  

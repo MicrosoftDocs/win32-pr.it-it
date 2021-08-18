@@ -4,12 +4,12 @@ description: Notifiche di menu
 ms.assetid: 8ff5671e-a666-483c-9ac1-f8be6eb58ffa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f593e3007dff82241dc9e917a6cfa140cc443679
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e7370da93f430c62618b5d459e40bfa56cb7a9ff9f960f95eb6ce614cc7273e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734257"
 ---
 # <a name="menu-notifications"></a>Notifiche di menu
 
@@ -58,7 +58,7 @@ BOOL AboutDlg (
     return bRet;
 }
 ```
-Esempio tratto da [esempi classici di Windows](https://github.com/microsoft/Windows-classic-samples) su GitHub.
+Esempio tratto da [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples) in GitHub.
 
  
 

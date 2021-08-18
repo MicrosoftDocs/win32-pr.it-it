@@ -1,25 +1,25 @@
 ---
-description: Per la maggior parte delle funzioni dei criteri LSA è necessario un handle per l'oggetto criteri per il sistema in cui eseguire query o modifiche. Per ottenere un handle per un oggetto criteri, chiamare LsaOpenPolicy e specificare il nome del sistema a cui si desidera accedere e il set di autorizzazioni di accesso necessarie.
+description: La maggior parte delle funzioni criteri LSA richiede un handle per l'oggetto Criteri per il sistema per eseguire query o modificare. Per ottenere un handle per un oggetto Policy, chiamare LsaOpenPolicy e specificare il nome del sistema a cui si vuole accedere e il set di autorizzazioni di accesso necessarie.
 ms.assetid: 66fdc878-d9c4-421c-b79f-9df08984611c
-title: Apertura di un handle di oggetto Criteri
+title: Apertura di un handle di oggetto criteri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c187720692db4937b6e1299dd2bb63fac647852
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16baf2cf7e722faca1f0441505ec325b8e64c8aad95522e697b4905f566985af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894052"
 ---
-# <a name="opening-a-policy-object-handle"></a>Apertura di un handle di oggetto Criteri
+# <a name="opening-a-policy-object-handle"></a>Apertura di un handle di oggetto criteri
 
-Per la maggior parte delle funzioni dei criteri LSA è necessario un handle per l'oggetto [**criteri**](policy-object.md) per il sistema in cui eseguire query o modifiche. Per ottenere un handle per un oggetto **criteri** , chiamare [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy) e specificare il nome del sistema a cui si desidera accedere e il set di autorizzazioni di accesso necessarie.
+La maggior parte delle funzioni criteri LSA richiede un handle per [**l'oggetto Criteri**](policy-object.md) per il sistema per eseguire query o modificare. Per ottenere un handle per un **oggetto Policy,** chiamare [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy) e specificare il nome del sistema a cui si vuole accedere e il set di autorizzazioni di accesso necessarie.
 
-Le autorizzazioni di accesso necessarie per l'applicazione dipendono dalle azioni eseguite. Per informazioni dettagliate sulle autorizzazioni necessarie per ogni funzione, vedere la descrizione di tale funzione nelle [funzioni dei criteri LSA](management-functions.md).
+Le autorizzazioni di accesso necessarie per l'applicazione dipendono dalle azioni eseguite. Per informazioni dettagliate sulle autorizzazioni necessarie per ogni funzione, vedere la descrizione di tale funzione in [Funzioni dei criteri LSA.](management-functions.md)
 
-Se la chiamata a [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy) ha esito positivo, restituisce un handle all'oggetto [**criteri**](policy-object.md) per il sistema specificato. L'applicazione passa quindi questo handle nelle chiamate di funzione dei criteri LSA successive. Quando l'applicazione non necessita più dell'handle, deve chiamare [**LsaClose**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaclose) per liberarlo.
+Se la chiamata a [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy) ha esito positivo, restituisce un handle [**all'oggetto Policy**](policy-object.md) per il sistema specificato. L'applicazione passa quindi questo handle nelle chiamate di funzione criteri LSA successive. Quando l'applicazione non necessita più dell'handle, deve chiamare [**LsaClose**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaclose) per liberarlo.
 
-Nell'esempio seguente viene illustrato come aprire un handle di oggetto [**criteri**](policy-object.md) .
+Nell'esempio seguente viene illustrato come aprire un handle [**di**](policy-object.md) oggetto Policy.
 
 
 ```C++
@@ -66,9 +66,9 @@ LSA_HANDLE GetPolicyHandle()
 
 
 
-Nell'esempio precedente, l'applicazione ha richiesto ai criteri \_ tutti i \_ [*privilegi*](/windows/desktop/SecGloss/p-gly)di accesso. Per informazioni dettagliate sulle autorizzazioni che l'applicazione deve richiedere quando si chiama [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy), vedere le descrizioni delle funzioni a cui l'applicazione passerà l'handle dell'oggetto [**criteri**](policy-object.md) .
+Nell'esempio precedente l'applicazione ha richiesto i privilegi POLICY \_ ALL \_ ACCESS [](/windows/desktop/SecGloss/p-gly). Per informazioni dettagliate sulle autorizzazioni che l'applicazione deve richiedere quando chiama [**LsaOpenPolicy,**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy)vedere le descrizioni delle funzioni a cui l'applicazione passerà l'handle [**dell'oggetto**](policy-object.md) Policy.
 
-Per aprire un handle per l'oggetto [**criteri**](policy-object.md) di un dominio trusted, chiamare [**LsaCreateTrustedDomainEx**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsacreatetrusteddomainex) (per creare una nuova relazione di trust con un dominio) o chiamare [**LsaOpenTrustedDomainByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaopentrusteddomainbyname) (per accedere a un dominio trusted esistente). Entrambe queste funzioni impostano un puntatore a [**un \_ handle LSA**](lsa-handle.md), che è quindi possibile specificare nelle successive chiamate di funzione dei criteri LSA. Come per [**LsaOpenPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy), l'applicazione deve chiamare [**LsaClose**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaclose) quando non necessita più dell'handle per l'oggetto **criterio** del dominio attendibile.
+Per aprire un handle per l'oggetto [**Policy**](policy-object.md) di un dominio trusted, chiamare [**LsaCreateTrustedDomainEx**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsacreatetrusteddomainex) (per creare una nuova relazione di trust con un dominio) o [**chiamare LsaOpenTrustedDomainByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaopentrusteddomainbyname) (per accedere a un dominio trusted esistente). Entrambe queste funzioni impostano un puntatore a [**un \_ handle LSA**](lsa-handle.md), che è quindi possibile specificare nelle chiamate di funzione di criteri LSA successive. Come per [**LsaOpenPolicy,**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaopenpolicy)l'applicazione deve chiamare [**LsaClose**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaclose) quando non è più necessario l'handle per l'oggetto **Policy del dominio** trusted.
 
  
 

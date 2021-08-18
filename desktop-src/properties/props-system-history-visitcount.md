@@ -4,12 +4,12 @@ ms.assetid: 71043fd9-d128-4d2e-82b0-5d76107c2592
 title: System.History.VisitCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a8a07cf300c6187b48b046d5897c73837cbfcd3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6734861fa9f9881a86116e9be029e6b2052866c791cbc9efc4eb1993bd85de5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726937"
 ---
 # <a name="systemhistoryvisitcount"></a>System.History.VisitCount
 

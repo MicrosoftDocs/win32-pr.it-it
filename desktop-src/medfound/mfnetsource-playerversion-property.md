@@ -1,17 +1,17 @@
 ---
-description: Il valore del campo &\# 0034; c-playerversion&\# 0034; che l'origine di rete usa per la registrazione.
+description: Valore del campo &\# 0034;c-playerversion&\# 0034; utilizzato dall'origine di rete per la registrazione.
 ms.assetid: 7bc485de-345b-475c-bbae-0776aa63c93a
-title: Proprietà MFNETSOURCE_PLAYERVERSION (Mfidl. h)
+title: MFNETSOURCE_PLAYERVERSION proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ddaee0fe3e476b2b6e078551b1191fe9fc96cf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71828db44eca7c4318dbdb11e7934871911b06dbc4547f83723a9944f139ae26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738970"
 ---
-# <a name="mfnetsource_playerversion-property"></a>\_Proprietà PLAYERVERSION di MFNETSOURCE
+# <a name="mfnetsource_playerversion-property"></a>MFNETSOURCE \_ PLAYERVERSION - proprietà
 
 Valore del campo "c-playerversion" utilizzato dall'origine di rete per la registrazione. Le applicazioni possono impostare questa proprietà sul numero di versione dell'applicazione.
 
@@ -19,13 +19,13 @@ Valore del campo "c-playerversion" utilizzato dall'origine di rete per la regist
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 **LONGLONG**
 
-\_I8 VT
+VT \_ I8
 
 **hVal**
 
@@ -33,9 +33,9 @@ membro PROPVARIANT
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ PLAYERVERSION** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ PLAYERVERSION** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per ulteriori informazioni, vedere [resolver di origine](source-resolver.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Source Resolver](source-resolver.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 [Registrazione client](client-logging.md)
 </dt> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

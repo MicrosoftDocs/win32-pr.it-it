@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-IIS-FTP-Root
-description: Questo attributo determina la file server condivisione. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
+description: Questo attributo determina la condivisione file server dati. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
 ms.assetid: b86dcafb-0b0d-4225-924c-690f739092a8
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118682525"
 ---
 # <a name="ms-iis-ftp-root-attribute"></a>Attributo ms-IIS-FTP-Root
 
-Questo attributo determina la file server condivisione. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
+Questo attributo determina la condivisione file server dati. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
 
 
 
@@ -32,8 +32,8 @@ Questo attributo determina la file server condivisione. Viene usato insieme a ms
 | CN                | ms-IIS-FTP-Root                                                                                                                 |
 | Ldap-Display-Name | msIIS-FTPRoot                                                                                                                   |
 | Dimensione              | 30-50 caratteri (15-25 caratteri Unicode per ogni proprietà)                                                                   |
-| Privilegio di aggiornamento  | Amministratore di dominio & sistema locale                                                                                             |
-| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. Raramente cambierà dopo. |
+| Aggiorna privilegio  | Amministratore di dominio & sistema locale                                                                                             |
+| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. In seguito, raramente cambierà. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
 | System-Id-Guid    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
@@ -57,7 +57,7 @@ Questo attributo determina la file server condivisione. Viene usato insieme a ms
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Is-Single-Valued       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -78,7 +78,7 @@ Questo attributo determina la file server condivisione. Viene usato insieme a ms
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Is-Single-Valued       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -99,7 +99,7 @@ Questo attributo determina la file server condivisione. Viene usato insieme a ms
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Is-Single-Valued       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |

@@ -4,12 +4,12 @@ ms.assetid: d15f1a0b-de24-4af2-9482-fc829052dd6c
 title: System.PropGroup.Audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d884b37fb74c220caa8c40c578a22f56ad922e7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: f9bb966c09477cf11f3a618097611c6dafbeefbf13fab308340613566f50d438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723068"
 ---
 # <a name="systempropgroupaudio"></a>System.PropGroup.Audio
 

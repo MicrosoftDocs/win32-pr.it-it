@@ -1,7 +1,7 @@
 ---
-description: Blocca il buffer mesh che contiene i dati dell'attributo mesh e restituisce un puntatore.
+description: Blocca il buffer mesh che contiene i dati dell'attributo mesh e restituisce un puntatore a esso.
 ms.assetid: 17a321b8-bfb4-4018-869f-6b09e0a811eb
-title: 'Metodo ID3DXMesh:: LockAttributeBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXMesh::LockAttributeBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 901cb98a9d75d08b6412d6fdca841d403064354b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8ca767c6bc223c40d6013b93162de057aac9f4fb1b71303990f9128e4eca1ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802154"
 ---
-# <a name="id3dxmeshlockattributebuffer-method"></a>Metodo ID3DXMesh:: LockAttributeBuffer
+# <a name="id3dxmeshlockattributebuffer-method"></a>Metodo ID3DXMesh::LockAttributeBuffer
 
-Blocca il buffer mesh che contiene i dati dell'attributo mesh e restituisce un puntatore.
+Blocca il buffer mesh che contiene i dati dell'attributo mesh e restituisce un puntatore a esso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,28 +41,28 @@ HRESULT LockAttributeBuffer(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Combinazione di zero o più flag di blocco che descrivono il tipo di blocco da eseguire. Per questo metodo, i flag validi sono:
 
--   Eliminazione di D3DLOCK \_
--   D3DLOCK \_ nessun \_ \_ aggiornamento Dirty
--   \_NOSYSLOCK D3DLOCK
--   D3DLOCK \_ ReadOnly
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
+-   D3DLOCK \_ NOSYSLOCK
+-   D3DLOCK \_ READONLY
 
 Per una descrizione dei flag, vedere [D3DLOCK](d3dlock.md).
 
 </dd> <dt>
 
-*ppData* \[ out\]
+*ppData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\*\***
 
-Indirizzo di un puntatore a un buffer contenente un valore DWORD per ogni viso della mesh.
+Indirizzo di un puntatore a un buffer contenente un valore DWORD per ogni viso nella mesh.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Se è stato chiamato [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) , per la mesh sarà disponibile anche una tabella di attributi a cui è possibile accedere tramite il metodo [**ID3DXBaseMesh:: GetAttributeTable**](id3dxbasemesh--getattributetable.md) .
+Se è stato chiamato [**ID3DXMesh::Optimize,**](id3dxmesh--optimize.md) la mesh avrà anche una tabella di attributi accessibile tramite il metodo [**ID3DXBaseMesh::GetAttributeTable.**](id3dxbasemesh--getattributetable.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ Se è stato chiamato [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) , per la
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -94,13 +94,13 @@ Se è stato chiamato [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) , per la
 [ID3DXMesh](id3dxmesh.md)
 </dt> <dt>
 
-[**ID3DXMesh:: UnlockAttributeBuffer**](id3dxmesh--unlockattributebuffer.md)
+[**ID3DXMesh::UnlockAttributeBuffer**](id3dxmesh--unlockattributebuffer.md)
 </dt> <dt>
 
-[**ID3DXBaseMesh:: GetAttributeTable**](id3dxbasemesh--getattributetable.md)
+[**ID3DXBaseMesh::GetAttributeTable**](id3dxbasemesh--getattributetable.md)
 </dt> <dt>
 
-[**ID3DXMesh:: SetAttributeTable**](id3dxmesh--setattributetable.md)
+[**ID3DXMesh::SetAttributeTable**](id3dxmesh--setattributetable.md)
 </dt> </dl>
 
  

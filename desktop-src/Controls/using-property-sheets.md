@@ -1,19 +1,19 @@
 ---
-title: Utilizzo delle finestre delle proprietà
-description: In questa sezione sono contenuti argomenti che illustrano come creare e utilizzare le finestre delle proprietà.
+title: Uso delle finestre delle proprietà
+description: Questa sezione contiene argomenti che illustrano come creare e usare le finestre delle proprietà.
 ms.assetid: VS|Controls|~\controls\propsheet\usingpropsheet.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d6066fbaedb8ca66ff651e61c0a5680106e02b1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15827a8fac50877e7550e0096fc4631ab007924b79c3ef9e0f611b99c9b9860a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957670"
 ---
-# <a name="using-property-sheets"></a>Utilizzo delle finestre delle proprietà
+# <a name="using-property-sheets"></a>Uso delle finestre delle proprietà
 
-In questa sezione sono contenuti argomenti che illustrano come creare e utilizzare le finestre delle proprietà.
+Questa sezione contiene argomenti che illustrano come creare e usare le finestre delle proprietà.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,9 +21,9 @@ In questa sezione sono contenuti argomenti che illustrano come creare e utilizza
 
 | Argomento                                                                                | Descrizione                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Come creare una finestra delle proprietà](create-a-property-sheet.md)<br/>             | Nell'esempio riportato in questa sezione viene creata una finestra delle proprietà che contiene due pagine, una per l'impostazione delle proprietà del tipo di carattere di una cella in un foglio di calcolo e un'altra per l'impostazione delle proprietà del bordo della cella. <br/> |
-| [Come elaborare i messaggi di notifica](process-notification-messages.md)<br/> | Una finestra delle proprietà Invia messaggi [**WM \_ Notify**](wm-notify.md) per recuperare le informazioni dalle pagine e per notificare le pagine delle azioni dell'utente. <br/>                                                         |
-| [Come creare procedure guidate](wizards.md)<br/>                                      | Una procedura guidata è un tipo di finestra delle proprietà che fornisce un modo semplice e potente per guidare gli utenti attraverso una procedura. <br/>                                                                                        |
+| [Come creare una finestra delle proprietà](create-a-property-sheet.md)<br/>             | L'esempio in questa sezione crea una finestra delle proprietà contenente due pagine una per l'impostazione delle proprietà del carattere di una cella in un foglio di calcolo e un'altra per l'impostazione delle proprietà del bordo della cella. <br/> |
+| [Come elaborare i messaggi di notifica](process-notification-messages.md)<br/> | Una finestra delle proprietà invia [**messaggi WM \_ NOTIFY**](wm-notify.md) per recuperare informazioni dalle pagine e per notificare alle pagine le azioni dell'utente. <br/>                                                         |
+| [Come creare procedure guidate](wizards.md)<br/>                                      | Una procedura guidata è un tipo di finestra delle proprietà che offre un modo semplice e potente per guidare gli utenti attraverso una procedura. <br/>                                                                                        |
 
 
 

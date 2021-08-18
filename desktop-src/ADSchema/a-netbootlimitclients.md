@@ -1,6 +1,6 @@
 ---
 title: Attributo netboot-Limit-Clients
-description: L'attributo netboot-Limit-Clients è riservato per l'uso interno.
+description: L'attributo netboot-Limit-Clients è riservato per uso interno.
 ms.assetid: e39bed0f-44ff-47f3-a350-cc006c65881b
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118682422"
 ---
 # <a name="netboot-limit-clients-attribute"></a>Attributo netboot-Limit-Clients
 
-**L'attributo netboot-Limit-Clients** è riservato per l'uso interno.
+**L'attributo netboot-Limit-Clients** è riservato per uso interno.
 
 
 
@@ -32,7 +32,7 @@ ms.locfileid: "118682422"
 | CN                | netboot-Limit-Clients                |
 | Ldap-Display-Name | netbootLimitClients                  |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.850               |
 | System-Id-Guid    | 07383077-91df-11d1-aebc-0000f80367c1 |
@@ -58,7 +58,7 @@ ms.locfileid: "118682422"
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Is-Single-Valued       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
@@ -79,7 +79,7 @@ ms.locfileid: "118682422"
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Is-Single-Valued       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
@@ -100,7 +100,7 @@ ms.locfileid: "118682422"
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Is-Single-Valued       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |

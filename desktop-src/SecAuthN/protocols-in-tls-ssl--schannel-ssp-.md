@@ -1,24 +1,24 @@
 ---
-description: SSP schannel implementa le versioni dei protocolli TLS, DTLS e SSL. Versioni Windows supportano versioni del protocollo diverse.
+description: SSP schannel implementa le versioni dei protocolli TLS, DTLS e SSL. Versioni Windows supportano versioni di protocollo diverse.
 ms.assetid: FF716A4E-ABF2-4773-9588-9D200945A866
 title: Protocolli in TLS/SSL (SSP Schannel)
 ms.topic: article
 ms.date: 01/20/2021
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: 0aa3c3900a422a1460a2163043fb736e590ca2fe
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: a03264a40ab6d632165fe4cf75aa0dfd7ee85ac0474ef391c36a2b1980010422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920659"
 ---
 # <a name="protocols-in-tlsssl-schannel-ssp"></a>Protocolli in TLS/SSL (SSP Schannel)
 
-SSP Schannel implementa le versioni dei protocolli TLS, DTLS e SSL. Versioni Windows supportano versioni del protocollo diverse.
+SSP Schannel implementa le versioni dei protocolli TLS, DTLS e SSL. Versioni Windows supportano versioni di protocollo diverse.
 
 ## <a name="tls-protocol-version-support"></a>Supporto della versione del protocollo TLS
 
-La tabella seguente mostra il supporto del provider Microsoft Schannel per le versioni del protocollo TLS.
+Nella tabella seguente viene visualizzato il supporto del provider Schannel Microsoft per le versioni del protocollo TLS.
 
 > [!TIP]
 > Potrebbe essere necessario scorrere orizzontalmente per visualizzare tutte le colonne della tabella.
@@ -97,7 +97,7 @@ Di seguito è elencato il supporto del provider Microsoft Schannel per i protoco
 
 
 > [!IMPORTANT]
-> A partire da Windows 10 versione 1607 e Windows Server 2016, SSL 2.0 è stato rimosso e non è più supportato.
+> A partire Windows 10 versione 1607 e Windows Server 2016, SSL 2.0 è stato rimosso e non è più supportato.
 
 > [!TIP]  
-> Tutte le versioni Windows accettano un messaggio "ClientHello" in formato unificato anche quando SSL versione 2 è disabilitato o non è più supportato.
+> Tutte le versioni Windows accettano un messaggio in formato unificato "ClientHello" anche quando SSL versione 2 è disabilitato o non è più supportato.

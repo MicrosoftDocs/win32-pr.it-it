@@ -9,35 +9,35 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 3b5fbdaf0086f88fc4eed42ce47749a99ab07b40
-ms.sourcegitcommit: 8bfe4f468ee5de7bbe096e5db81e427db53d977c
+ms.openlocfilehash: cd44bfe1090f25cb93d8a6fa8162901eb730a53cfb9dfec7ae3f1986fa65e1db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720410"
 ---
 # <a name="known-folders"></a>Cartelle note
 
-Windows Vista introduce nuovi scenari di archiviazione e un nuovo spazio dei nomi del profilo utente. Per risolvere questi nuovi fattori, è stato sostituito il sistema precedente di riferimento alle cartelle standard da un [**valore CSIDL.**](csidl.md) A Windows Vista, a tali cartelle viene fatto riferimento da un nuovo set di valori GUID denominati ID cartella noti.
+Windows Vista introduce nuovi scenari di archiviazione e un nuovo spazio dei nomi del profilo utente. Per risolvere questi nuovi fattori, è stato sostituito il sistema precedente di riferimento alle cartelle standard con un [**valore CSIDL.**](csidl.md) Al Windows Vista, a tali cartelle viene fatto riferimento da un nuovo set di valori GUID denominato ID cartella nota.
 
-Il sistema di cartelle note offre questi vantaggi:
+Il sistema di cartelle note offre i vantaggi seguenti:
 
--   I fornitori di software indipendenti (ISV) possono estendere il set di ID cartella noti con i propri. Possono definire cartelle, assegnarle ID e registrarle nel sistema. Non è stato possibile estendere i valori CSIDL.
+-   I fornitori di software indipendenti (ISV) possono estendere il set di ID cartella noti con i propri. Possono definire le cartelle, assegnare loro GLI ID e registrarle con il sistema. Non è stato possibile estendere i valori CSIDL.
 -   È possibile enumerare tutte le cartelle note in un sistema. Nessuna API ha fornito questa funzionalità per i valori CSIDL. Per [**altre informazioni, vedere IKnownFolderManager::GetFolderIds.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfoldermanager-getfolderids)
--   Una cartella nota aggiunta da un ISV può aggiungere proprietà personalizzate che consentono di spiegarne lo scopo e l'uso previsto.
+-   Una cartella nota aggiunta da un ISV può aggiungere proprietà personalizzate che ne spiegano lo scopo e l'uso previsto.
 -   Molte cartelle note possono essere reindirizzate a nuovi percorsi, inclusi i percorsi di rete. Nel sistema CSIDL è possibile **reindirizzare solo Documenti** cartella.
 -   Le cartelle note possono avere gestori personalizzati da usare durante la creazione o l'eliminazione.
 
 Il sistema CSIDL e le API che usano i valori CSIDL sono ancora supportati per la compatibilità. Tuttavia, non è consigliabile usarli in qualsiasi nuovo sviluppo.
 
 
-Negli argomenti seguenti vengono illustrate le specifiche del sistema Cartelle note.
+Negli argomenti seguenti vengono illustrate le specifiche del sistema cartelle note.
 
 -   [Uso di cartelle note nelle applicazioni](working-with-known-folders.md)
 -   [Come estendere cartelle note con cartelle personalizzate](how-to-extend-known-folders-with-custom-folders.md)
 -   [**KNOWNFOLDERID**](knownfolderid.md)
 
-Le pagine di riferimento seguenti illustrano le funzioni di Cartelle note Win32, che possono essere usate per recuperare il percorso delle cartelle note o reindirizzarle a un nuovo percorso. Queste funzioni sostituiscono le funzioni Win32 precedenti. Le nuove funzioni vengono fornite per fornire un comportamento equivalente alle funzioni vecchie, ma ogni nuova funzione viene duplicata anche da un'API Component Object Model (COM).
+Le pagine di riferimento seguenti illustrano le funzioni di Cartelle note Win32, che possono essere usate per recuperare il percorso delle cartelle note o reindirizzarle a un nuovo percorso. Queste funzioni sostituiscono le funzioni Win32 precedenti. Le nuove funzioni vengono fornite per fornire un comportamento equivalente alle funzioni precedente, ma ogni nuova funzione viene duplicata anche da un'API Component Object Model (COM).
 
 
 
@@ -51,12 +51,12 @@ Le pagine di riferimento seguenti illustrano le funzioni di Cartelle note Win32,
 
  
 
-Le pagine di riferimento seguenti illustrano le API cartelle note COM, che forniscono tutte le funzionalità delle API Win32 elencate in precedenza, oltre a aggiungere la possibilità di enumerare tutte le cartelle note, accedere alle proprietà cartella nota ed estendere il set standard di cartelle note.
+Le pagine di riferimento seguenti illustrano le API delle cartelle note COM, che forniscono tutte le funzionalità delle API Win32 elencate in precedenza, oltre alla possibilità di enumerare tutte le cartelle note, accedere alle proprietà delle cartelle note ed estendere il set standard di cartelle note.
 
 -   [**IKnownFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfolder)
 -   [**IKnownFolderManager**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfoldermanager)
 
-Un esempio C++ che illustra le API cartella nota è incluso in Windows Software Development Kit (SDK). Dopo aver installato Windows SDK nel computer, l'esempio è disponibile in %ProgramFiles% \\ Microsoft SDKs \\ Windows v6.0 Samples WinUI Shell AppPlatform KnownFolders ( %ProgramFiles% Microsoft SDK Windows \\ v6.0 \\ Samples \\ WinUI Shell \\ \\ AppPlatform \\ KnownFolders).
+Un esempio C++ che illustra le API cartella nota è incluso in Windows Software Development Kit (SDK). Dopo aver installato Windows SDK nel computer, l'esempio è disponibile in %ProgramFiles% \\ Microsoft SDKs \\ Windows \\ v6.0 Samples WinUI Shell AppPlatform KnownFolders (%ProgramFiles% Microsoft SDK Windows v6.0 \\ Samples \\ WinUI Shell \\ \\ AppPlatform \\ KnownFolders).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

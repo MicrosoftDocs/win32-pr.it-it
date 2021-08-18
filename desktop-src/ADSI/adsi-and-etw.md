@@ -1,36 +1,36 @@
 ---
 title: Traccia eventi in ADSI
-description: Windows Server 2008 e Windows Vista introducono Event Tracing in Active Directory Service Interfaces (ADSI).
+description: Windows Server 2008 e Windows Vista introducono Traccia eventi in Active Directory Service Interfaces (ADSI).
 ms.assetid: 743aeeba-5b48-47c7-aaf5-0e9b48e206db
 ms.tgt_platform: multiple
 keywords:
-- event tracing ADSI
+- traccia eventi ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b26aee00404f5cf97d228698f64fec804c28e62
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: a59b2db3775c8c578ad361667a2d89c36240caf4b3bbb4bcd5cdd2798011514b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023979"
 ---
 # <a name="event-tracing-in-adsi"></a>Traccia eventi in ADSI
 
-Windows Server 2008 e Windows Vista introducono [Event Tracing](/windows/desktop/ETW/event-tracing-portal) in Active Directory [Service Interfaces](active-directory-service-interfaces-adsi.md) (ADSI). Alcune aree del provider LDAP ADSI hanno un'implementazione sottostante complessa o che prevede una sequenza di passaggi che rende difficile la diagnosi dei problemi. Per consentire agli sviluppatori di applicazioni di risolvere i problemi, Event Tracing è stato aggiunto alle aree seguenti:
+Windows Server 2008 e Windows Vista introducono [Traccia](/windows/desktop/ETW/event-tracing-portal) eventi in [Active Directory Service Interfaces](active-directory-service-interfaces-adsi.md) (ADSI). Alcune aree del provider LDAP ADSI hanno un'implementazione sottostante complessa o che prevede una sequenza di passaggi che rende difficile diagnosticare i problemi. Per consentire agli sviluppatori di applicazioni di risolvere i problemi, Traccia eventi è stato aggiunto alle aree seguenti:
 
 ## <a name="schema-parsing-and-downloading"></a>Analisi e download dello schema
 
-L'interfaccia IADs in ADSI richiede che lo schema LDAP venga memorizzato nella cache del client in modo che sia possibile effettuare correttamente il marshalling degli attributi (come descritto nel modello [di schema ADSI).](adsi-schema-model.md) A tale scopo, ADSI carica lo schema per ogni processo (e per ogni server/dominio LDAP) in memoria da un file di schema (con estensione sch) salvato sul disco locale o scaricarlo dal server LDAP. Processi diversi nello stesso computer client usano lo schema memorizzato nella cache su disco, se disponibile e applicabile.
+L'interfaccia IADs in ADSI richiede che lo schema LDAP venga memorizzato nella cache del client in modo che sia possibile effettuare correttamente il marshalling degli attributi ( come descritto nel modello [di schema ADSI](adsi-schema-model.md)). A tale scopo, ADSI carica lo schema per ogni processo (e per ogni server/dominio LDAP) in memoria da un file di schema (con estensione sch) salvato sul disco locale o scaricarlo dal server LDAP. Processi diversi nello stesso computer client usano lo schema memorizzato nella cache su disco, se disponibile e applicabile.
 
-Se non è possibile ottenere lo schema dal disco o dal server, ADSI usa uno schema predefinito hardcoded. In questo caso, non è possibile effettuare il marshalling degli attributi che non fanno parte di questo schema predefinito e ADSI restituisce un errore durante il recupero di questi attributi. Questo problema può essere causato da diversi fattori, tra cui problemi di analisi dello schema e privilegi insufficienti per scaricare lo schema. Spesso è difficile determinare il motivo per cui viene usato un determinato schema predefinito. L'uso di Traccia eventi in quest'area consente di diagnosticare più rapidamente il problema e risolverlo.
+Se non è possibile ottenere lo schema dal disco o dal server, ADSI usa uno schema predefinito hardcoded. In questo caso, non è possibile effettuare il marshalling degli attributi che non fanno parte di questo schema predefinito e ADSI restituisce un errore durante il recupero di questi attributi. Questa operazione può essere causata da diversi fattori, tra cui problemi di analisi dello schema e privilegi insufficienti per scaricare lo schema. Spesso è difficile determinare il motivo per cui viene usato un determinato schema predefinito. L'uso di Traccia eventi in questa area consente di diagnosticare più rapidamente il problema e risolverlo.
 
 ## <a name="changing-and-setting-the-password"></a>Modifica e impostazione della password
 
-[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) utilizzano più meccanismi per eseguire l'operazione richiesta in base alla configurazione disponibile( come descritto in Impostazione e modifica delle password utente con [il provider LDAP](setting-user-passwords-for-ldap-providers.md)). Quando **ChangePassword** e **SetPassword** hanno esito negativo, può essere difficile determinare esattamente il motivo e Traccia eventi consente di risolvere i problemi con questi metodi.
+[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) utilizzano più meccanismi per eseguire l'operazione richiesta in base alla configurazione disponibile , come descritto in Impostazione e modifica delle password utente [con il provider LDAP](setting-user-passwords-for-ldap-providers.md). Quando **ChangePassword** e **SetPassword** hanno esito negativo, può essere difficile determinare esattamente il motivo e Traccia eventi consente di risolvere i problemi con questi metodi.
 
 ## <a name="adsi-bind-cache"></a>Cache di binding ADSI
 
-ADSI tenta internamente di riutilizzare le connessioni LDAP quando possibile (vedere [Memorizzazione nella cache delle connessioni](connection-caching.md)). Durante la risoluzione dei problemi, è utile verificare se è stata aperta una nuova connessione per la comunicazione con il server o se è stata usata una connessione esistente. Può anche essere utile tracciare il ciclo di vita della cache di connessione (talvolta definita cache di binding) e la relativa creazione o chiusura e se è stata verificata una segnalazione di connessione. Nel caso di un binding [serverless,](/windows/desktop/AD/serverless-binding-and-rootdse)ADSI chiama il localizzatore DC per selezionare un server per il dominio del contesto dell'utente. ADSI gestisce quindi una cache del mapping dominio-server per le connessioni successive. Traccia eventi consente di tracciare la selezione del controller di dominio ed è quindi utile per la risoluzione dei problemi relativi alla connessione.
+ADSI tenta internamente di riutilizzare le connessioni LDAP quando possibile (vedere [Connessione Caching](connection-caching.md)). Durante la risoluzione dei problemi, è utile verificare se è stata aperta una nuova connessione per la comunicazione con il server o se è stata usata una connessione esistente. Può anche essere utile tracciare il ciclo di vita della cache di connessione (talvolta definita cache di binding) e la relativa creazione o chiusura e se è stata verificata una segnalazione di connessione. Nel caso di un'associazione [serverless,](/windows/desktop/AD/serverless-binding-and-rootdse)ADSI chiama il localizzatore dc per selezionare un server per il dominio del contesto dell'utente. ADSI gestisce quindi una cache del mapping dominio-server per le connessioni successive. Traccia eventi consente di tracciare la selezione del controller di dominio ed è quindi utile per la risoluzione dei problemi relativi alla connessione.
 
 ## <a name="enabling-tracing-and-starting-a-tracing-session"></a>Abilitazione della traccia e avvio di una sessione di traccia
 
@@ -50,8 +50,8 @@ Eseguire quindi il comando seguente:
 
 |         Flag                        |         valore              |
 |---------------------------------|-----------------------|
-| **DEBUG \_ SCHEMA**<br/>    | 0x00000001<br/> |
-| **DEBUG \_ CHANGEPWD**<br/> | 0x00000002<br/> |
+| **SCHEMA DI \_ DEBUG**<br/>    | 0x00000001<br/> |
+| **ESEGUIRE \_ IL DEBUG DI CHANGEPWD**<br/> | 0x00000002<br/> |
 | **DEBUG \_ SETPWD**<br/>    | 0x00000004<br/> |
 | **ESEGUIRE IL DEBUG \_ DI BINDCACHE**<br/> | 0x00000008<br/> |
 
@@ -141,8 +141,8 @@ Infine, il flag *traceLevel* deve essere uno dei valori seguenti:
 
 |      Flag                                    |       valore                |
 |------------------------------------------|-----------------------|
-| **ERRORE A \_ LIVELLO \_ DI TRACCIA**<br/>       | 0x00000002<br/> |
-| **INFORMAZIONI SUL \_ LIVELLO \_ DI TRACCIA**<br/> | 0x00000004<br/> |
+| **ERRORE \_ DEL LIVELLO DI \_ TRACCIA**<br/>       | 0x00000002<br/> |
+| **INFORMAZIONI \_ SUL LIVELLO DI \_ TRACCIA**<br/> | 0x00000004<br/> |
 
 
 
@@ -158,9 +158,9 @@ Nell'esempio precedente *sessionname* è lo stesso nome di quello fornito con il
 
 ## <a name="remarks"></a>Commenti
 
-È più efficace tracciare solo processi specifici specificando un PID specifico anziché tracciare tutti i processi in un computer. Se è necessario tracciare più applicazioni nello stesso computer, potrebbe verificarsi un impatto sulle prestazioni. È disponibile un output di debug sostanziale nelle sezioni del codice orientate alle prestazioni. Inoltre, gli amministratori devono prestare attenzione a impostare correttamente le autorizzazioni dei file di log durante la traccia di più processi. In caso contrario, qualsiasi utente potrebbe essere in grado di leggere i log di traccia e altri utenti saranno in grado di tracciare i processi che contengono informazioni protette.
+È più efficace tracciare solo processi specifici specificando un PID specifico piuttosto che tracciare tutti i processi in un computer. Se è necessario tracciare più applicazioni nello stesso computer, potrebbe verificarsi un impatto sulle prestazioni. è disponibile un output di debug sostanziale nelle sezioni del codice orientate alle prestazioni. Inoltre, gli amministratori devono prestare attenzione a impostare correttamente le autorizzazioni dei file di log durante la traccia di più processi. In caso contrario, qualsiasi utente potrebbe essere in grado di leggere i log di traccia e altri utenti saranno in grado di tracciare i processi che contengono informazioni protette.
 
-Si supponga, ad esempio, che l'amministratore configura la traccia per un'applicazione "Test.exe" e non specifica un PID nel Registro di sistema per tracciare più istanze del processo. Un altro utente vuole ora tracciare l'applicazione "Secure.exe". Se i file di log di traccia non sono limitati correttamente, l'utente deve solo rinominare "Secure.exe" in "Test.exe" e ne verrà tracciata la traccia. In generale, è meglio tracciare solo processi specifici durante la risoluzione dei problemi e rimuovere la chiave del Registro di sistema di traccia non appena viene eseguita la risoluzione dei problemi.
+Si supponga, ad esempio, che l'amministratore configura la traccia per un'applicazione "Test.exe" e non specifica un PID nel Registro di sistema per tracciare più istanze del processo. Ora un altro utente vuole tracciare l'applicazione "Secure.exe". Se i file di log di traccia non sono limitati correttamente, l'utente deve solo rinominare "Secure.exe" in "Test.exe" e ne verrà tracciata la traccia. In generale, è meglio tracciare solo processi specifici durante la risoluzione dei problemi e rimuovere la chiave del Registro di sistema di traccia non appena viene eseguita la risoluzione dei problemi.
 
 Poiché l'abilitazione di Traccia eventi produrrà file di log aggiuntivi, gli amministratori devono monitorare attentamente le dimensioni dei file di log. La mancanza di spazio su disco nel computer locale può causare una negazione del servizio.
 
@@ -188,7 +188,7 @@ Scenario 1: l'amministratore rileva un errore imprevisto in un'applicazione che 
 
     **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
-Scenario 2: l'amministratore vuole tracciare le operazioni di analisi e download dello schema in un'applicazione [ASP](https://msdn.microsoft.com/asp.net/default.aspx) denominata w3wp.exe già in esecuzione. A tale scopo, l'amministratore deve seguire questa procedura:
+Scenario 2: l'amministratore vuole tracciare le operazioni di analisi e download dello schema in un'applicazione [ASP](https://msdn.microsoft.com/asp.net/default.aspx) denominata w3wp.exe che è già in esecuzione. A tale scopo, l'amministratore deve seguire questa procedura:
 
 1.  Creare la chiave del Registro di sistema
 

@@ -1,7 +1,7 @@
 ---
-description: "Ora di inizio dell'esempio. Questo valore è valido solo se la variabile membro dwFlags CMediaSample:: m \\_ contiene il \\_ flag TIMEVALID di esempio AM \\_ ."
+description: Ora di inizio di esempio. Questo valore è valido solo se la variabile membro CMediaSample::m \_ dwFlags contiene il flag AM \_ SAMPLE \_ TIMEVALID.
 ms.assetid: 31af979b-4c10-4f15-aa8a-90807b5cc156
-title: 'Membro CMediaSample:: m_Start (Amfilter. h)'
+title: Membro CMediaSample::m_Start (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1c8be533c28a2b8a166d87d1751682cf6b09329b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3d441bcea087614626bc107283e4d4905442774df586e3f10df5b78f472da19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954430"
 ---
-# <a name="cmediasamplem_start-member"></a>Membro iniziale CMediaSample:: m \_
+# <a name="cmediasamplem_start-member"></a>Membro Start CMediaSample::m \_
 
-Ora di inizio dell'esempio. Questo valore è valido solo se la variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) contiene il \_ flag TIMEVALID di esempio AM \_ .
+Ora di inizio di esempio. Questo valore è valido solo se la variabile membro [**CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) contiene il flag AM \_ SAMPLE \_ TIMEVALID.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ REFERENCE_TIME m_Start;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

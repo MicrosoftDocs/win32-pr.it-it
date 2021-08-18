@@ -1,37 +1,37 @@
 ---
-description: Un valore del registro di sistema può archiviare i dati in vari formati.
+description: Un valore del Registro di sistema può archiviare i dati in vari formati.
 ms.assetid: 5fd828d6-4d62-4823-a2f1-15782b5cd28c
-title: Tipi di valore del registro di sistema
+title: Tipi di valori del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adc653e69c514bc77323704485e88f0a57eebaae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed2bc73e03d9aab8d39bdda31ab308af1749f22315a262ceb4ae28ec743c8c69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885014"
 ---
-# <a name="registry-value-types"></a>Tipi di valore del registro di sistema
+# <a name="registry-value-types"></a>Tipi di valori del Registro di sistema
 
-Un valore del registro di sistema può archiviare i dati in vari formati. Quando si archiviano dati sotto un valore del registro di sistema, ad esempio chiamando la funzione [**RegSetValueEx**](/windows/desktop/api/Winreg/nf-winreg-regsetvalueexa) , è possibile specificare uno dei valori seguenti per indicare il tipo di dati archiviati. Quando si recupera un valore del registro di sistema, le funzioni come [**RegQueryValueEx**](/windows/desktop/api/Winreg/nf-winreg-regqueryvalueexa) utilizzano questi valori per indicare il tipo di dati recuperati.
+Un valore del Registro di sistema può archiviare i dati in vari formati. Quando si archiviano dati in un valore del Registro di sistema, ad esempio chiamando la funzione [**RegSetValueEx,**](/windows/desktop/api/Winreg/nf-winreg-regsetvalueexa) è possibile specificare uno dei valori seguenti per indicare il tipo di dati archiviati. Quando si recupera un valore del Registro di sistema, funzioni come [**RegQueryValueEx**](/windows/desktop/api/Winreg/nf-winreg-regqueryvalueexa) usano questi valori per indicare il tipo di dati recuperati.
 
-I tipi di valore del registro di sistema seguenti sono definiti in Winnt. h.
+In Winnt.h sono definiti i tipi di valore del Registro di sistema seguenti.
 
 
 
 | Valore                                 | Tipo                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| REG \_ binario<br/>                | Dati binari in qualsiasi forma.<br/>                                                                                                                                                                                                                                                                                                                                                                                                     |
+| REG \_ BINARY<br/>                | Dati binari in qualsiasi forma.<br/>                                                                                                                                                                                                                                                                                                                                                                                                     |
 | REG \_ DWORD<br/>                 | Numero a 32 bit.<br/>                                                                                                                                                                                                                                                                                                                                                                                                             |
-| \_ \_ Little Endian reg \_ DWORD<br/> | Numero a 32 bit in formato little-endian.<br/> Windows è progettato per l'esecuzione in architetture di computer little-endian. Questo valore viene pertanto definito come REG \_ DWORD nei file di intestazione di Windows.<br/>                                                                                                                                                                                                                          |
-| REG \_ DWORD \_ Big \_ endian<br/>    | Un numero a 32 bit nel formato big-endian.<br/> Alcuni sistemi UNIX supportano le architetture big endian.<br/>                                                                                                                                                                                                                                                                                                                         |
-| REG \_ Espandi \_ SZ<br/>            | Stringa con terminazione null che contiene riferimenti non espansi a variabili di ambiente (ad esempio, "% PATH%"). Si tratta di una stringa Unicode o ANSI, a seconda che si usino le funzioni Unicode o ANSI. Per espandere i riferimenti alle variabili di ambiente, usare la funzione [**ExpandEnvironmentStrings**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa) .<br/>                                                                                 |
-| \_collegamento reg<br/>                  | Stringa Unicode con terminazione null che contiene il percorso di destinazione di un collegamento simbolico creato chiamando la funzione [**RegCreateKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regcreatekeyexa) con il \_ collegamento reg option \_ Create \_ .<br/>                                                                                                                                                                                                                          |
-| REG \_ - \_ SZ<br/>             | Sequenza di stringhe con terminazione null, terminata da una stringa vuota ( \\ 0).<br/> Di seguito è riportato un esempio:<br/> *String1* \\ 0 *string2* \\ 0 *string3* \\ 0 *LastString* \\ 0 \\ 0<br/> Il primo \\ 0 termina la prima stringa, il secondo all'ultimo \\ 0 termina l'ultima stringa e l'ultimo \\ 0 termina la sequenza. Si noti che è necessario fattorizzare il terminatore finale nella lunghezza della stringa.<br/> |
-| REG \_ None<br/>                  | Nessun tipo di valore definito.<br/>                                                                                                                                                                                                                                                                                                                                                                                                       |
+| REG \_ DWORD \_ LITTLE \_ ENDIAN<br/> | Numero a 32 bit in formato little-endian.<br/> Windows è progettato per l'esecuzione in architetture di computer little endian. Pertanto, questo valore è definito come REG DWORD nei \_ file di intestazione Windows file di intestazione.<br/>                                                                                                                                                                                                                          |
+| REG \_ DWORD \_ BIG \_ ENDIAN<br/>    | Numero a 32 bit in formato big endian.<br/> Alcuni UNIX supportano architetture big endian.<br/>                                                                                                                                                                                                                                                                                                                         |
+| REG \_ EXPAND \_ SZ<br/>            | Stringa con terminazione Null che contiene riferimenti non esplorati a variabili di ambiente, ad esempio "%PATH%". Sarà una stringa Unicode o ANSI a seconda che si usino le funzioni Unicode o ANSI. Per espandere i riferimenti alle variabili di ambiente, usare [**la funzione ExpandEnvironmentStrings.**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa)<br/>                                                                                 |
+| COLLEGAMENTO \_ REG<br/>                  | Stringa Unicode con terminazione Null che contiene il percorso di destinazione di un collegamento simbolico creato chiamando la funzione [**RegCreateKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regcreatekeyexa) con REG \_ OPTION CREATE \_ \_ LINK.<br/>                                                                                                                                                                                                                          |
+| REG \_ MULTI \_ SZ<br/>             | Sequenza di stringhe con terminazione Null, terminata da una stringa vuota \\ (0).<br/> Di seguito è riportato un esempio:<br/> *Stringa1* \\ 0 *String2* \\ 0 *String3* \\ 0 *LastString* \\ 0 \\ 0<br/> Il primo 0 termina la prima stringa, il secondo all'ultimo 0 termina l'ultima stringa e l'ultimo \\ \\ \\ 0 termina la sequenza. Si noti che il carattere di terminazione finale deve essere inserito nella lunghezza della stringa.<br/> |
+| REG \_ NONE<br/>                  | Nessun tipo di valore definito.<br/>                                                                                                                                                                                                                                                                                                                                                                                                       |
 | REG \_ QWORD<br/>                 | Numero a 64 bit.<br/>                                                                                                                                                                                                                                                                                                                                                                                                             |
-| REG \_ QWORD \_ Little \_ endian<br/> | Numero a 64 bit in formato little-endian.<br/> Windows è progettato per l'esecuzione in architetture di computer little-endian. Questo valore viene pertanto definito come REG \_ QWORD nei file di intestazione di Windows.<br/>                                                                                                                                                                                                                          |
-| REG \_ SZ<br/>                    | Specifica una stringa che termina con Null. Si tratta di una stringa Unicode o ANSI, a seconda che si utilizzino le funzioni Unicode o ANSI.<br/>                                                                                                                                                                                                                                                                                       |
+| REG \_ QWORD \_ LITTLE \_ ENDIAN<br/> | Numero a 64 bit in formato little endian.<br/> Windows è progettato per l'esecuzione in architetture di computer little endian. Pertanto, questo valore è definito come QWORD REG nei \_ file Windows di intestazione.<br/>                                                                                                                                                                                                                          |
+| REG \_ SZ<br/>                    | Specifica una stringa che termina con Null. Si tratta di una stringa Unicode o ANSI, a seconda che si usino le funzioni Unicode o ANSI.<br/>                                                                                                                                                                                                                                                                                       |
 
 
 
@@ -39,13 +39,13 @@ I tipi di valore del registro di sistema seguenti sono definiti in Winnt. h.
 
 ## <a name="string-values"></a>Valori stringa
 
-Se i dati includono il \_ tipo reg SZ, reg \_ \_ multisz o reg \_ expand \_ SZ, è possibile che la stringa non sia stata archiviata con i caratteri null di terminazione appropriati. Pertanto, durante la lettura di una stringa dal registro di sistema, è necessario verificare che la stringa sia terminata correttamente prima di utilizzarla. in caso contrario, potrebbe sovrascrivere un buffer. (Si noti che REG \_ Le \_ stringhe a più SZ devono avere due caratteri di terminazione null.
+Se i dati hanno il tipo REG SZ, REG MULTI SZ o REG EXPAND SZ, è possibile che la stringa non sia stata archiviata con i caratteri \_ \_ Null di \_ \_ \_ terminazione corretto. Pertanto, quando si legge una stringa dal Registro di sistema, è necessario assicurarsi che la stringa venga terminata correttamente prima di usarla. in caso contrario, potrebbe sovrascrivere un buffer. Si noti che REG \_ Le \_ stringhe MULTI SZ devono contenere due caratteri null di terminazione.
 
-Quando si scrive una stringa nel registro di sistema, è necessario specificare la lunghezza della stringa, incluso il carattere null di terminazione ( \\ 0). Un errore comune consiste nell'usare la funzione **strlen** per determinare la lunghezza della stringa, ma per dimenticare che **strlen** restituisce solo il numero di caratteri nella stringa, escluso il carattere null di terminazione. La lunghezza della stringa deve pertanto essere calcolata nel modo seguente: `strlen( string ) + 1`
+Quando si scrive una stringa nel Registro di sistema, è necessario specificare la lunghezza della stringa, incluso il carattere null di terminazione ( \\ 0). Un errore comune è l'uso della funzione **strlen** per determinare la lunghezza della stringa, ma è importante dimenticare che **strlen** restituisce solo il numero di caratteri nella stringa, senza includere il carattere Null di terminazione. Pertanto, la lunghezza della stringa deve essere calcolata come segue: `strlen( string ) + 1`
 
-Una \_ stringa reg \_ multisz termina con una stringa di lunghezza 0. Non è quindi possibile includere nella sequenza una stringa di lunghezza zero. Una sequenza vuota verrebbe definita come segue: \\ 0.
+Una stringa REG \_ MULTI \_ SZ termina con una stringa di lunghezza 0. Pertanto, non è possibile includere una stringa di lunghezza zero nella sequenza. Una sequenza vuota viene definita come segue: \\ 0.
 
-Nell'esempio seguente viene illustrata \_ una \_ stringa reg multisz.
+L'esempio seguente illustra una stringa REG \_ MULTI \_ SZ.
 
 
 ```C++
@@ -83,9 +83,9 @@ int __cdecl main(int argc, char **argv)
 
 ## <a name="byte-formats"></a>Formati di byte
 
-In *formato little-endian*, un valore a più byte viene archiviato in memoria dal byte più basso, ovvero "estremità minima", al byte più alto. Il valore 0x12345678., ad esempio, viene archiviato come (0x78 0x56 0x34 0x12) in formato little-endian.
+In *formato little-endian*, un valore multi-byte viene archiviato in memoria dal byte più basso (l'"estremità piccola") al byte più alto. Ad esempio, il valore 0x12345678 viene archiviato come (0x78 0x56 0x34 0x12) in formato little-endian.
 
-Nel *formato big-endian*, un valore a più byte viene archiviato in memoria dal byte più alto ("Big end") al byte più basso. Il valore 0x12345678., ad esempio, viene archiviato come (0x12 0x34 0x56 0x78) nel formato big-endian.
+In *formato big-endian,* un valore multi-byte viene archiviato in memoria dal byte più alto (big end) al byte più basso. Ad esempio, il valore 0x12345678 viene archiviato come (0x12 0x34 0x56 0x78) in formato big-endian.
 
  
 

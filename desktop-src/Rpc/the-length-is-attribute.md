@@ -1,21 +1,21 @@
 ---
 title: Attributo length_is
-description: L'attributo \ size \_ is \ consente di specificare la dimensione massima della matrice.
+description: L'attributo \ size \_ is\ consente di specificare le dimensioni massime della matrice.
 ms.assetid: 577a1efd-2d16-40d6-99bb-998d81ee2f8c
 keywords:
 - length_is
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f49ad63b2546d39dcc00d251f39143b7eec354c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 436559961d815adb417d83de5ffa8c06d8497fa0899644411d252c84d6e34ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924260"
 ---
-# <a name="the-length_is-attribute"></a>La \[ lunghezza \_ è \] attribute
+# <a name="the-length_is-attribute"></a>La \[ lunghezza \_ è \] Attribute
 
-La \[ [**dimensione \_ è**](/windows/desktop/Midl/size-is) \] attributo che consente di specificare la dimensione massima della matrice. Quando si tratta dell'unico attributo, vengono trasmessi tutti gli elementi della matrice. Anziché inviare tutti gli elementi della matrice, è possibile specificare gli elementi trasmessi utilizzando l'attributo \[ [**length \_**](/windows/desktop/Midl/length-is) \] , come indicato di seguito:
+\[ [**\_ L'attributo size**](/windows/desktop/Midl/size-is) è che consente di specificare le dimensioni \] massime della matrice. Quando questo è l'unico attributo, vengono trasmessi tutti gli elementi della matrice. Anziché inviare tutti gli elementi della matrice, è possibile specificare gli elementi trasmessi usando \[ [**l'attributo length \_ is,**](/windows/desktop/Midl/length-is) \] come indicato di seguito:
 
 ``` syntax
 /* IDL file */
@@ -32,8 +32,8 @@ interface arraytest
 }
 ```
 
-Dimensioni descrive l'allocazione mentre la lunghezza descrive la trasmissione. Il numero di elementi trasmessi deve sempre essere minore o uguale al numero di elementi allocati. Il valore associato a **length \_** è sempre minore o uguale a **size \_ è**.
+La dimensione descrive l'allocazione, mentre la lunghezza descrive la trasmissione. Il numero di elementi trasmessi deve essere sempre minore o uguale al numero di elementi allocati. Il valore associato a **length \_ è** sempre minore o uguale a **size \_ è**.
 
- 
+ 
 
- 
+ 

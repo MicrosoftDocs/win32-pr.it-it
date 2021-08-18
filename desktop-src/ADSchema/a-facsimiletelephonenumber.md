@@ -1,11 +1,11 @@
 ---
-title: Facsimile-attributo numero di telefono
-description: Contiene il numero di telefono del computer fax aziendale dell'utente.
+title: Attributo Facsimile-Telephone-Number
+description: Contiene il numero di telefono del fax aziendale dell'utente.
 ms.assetid: 3862b049-19f5-4067-941d-d1a3a049bc56
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Fax-Phone-Number
-- Schema AD dell'attributo facsimileTelephoneNumber
+- Schema AD dell'attributo Facsimile-Telephone-Number
+- FacsimileTelephoneNumber attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2686a355aedc12a37a12a218ab623e8b02e055d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8be5b6cbf85425b44f553fd8c79236c200f418f3079871b1ad10e2c4bd5fded2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961540"
 ---
-# <a name="facsimile-telephone-number-attribute"></a>Facsimile-attributo numero di telefono
+# <a name="facsimile-telephone-number-attribute"></a>Attributo Facsimile-Telephone-Number
 
-Contiene il numero di telefono del computer fax aziendale dell'utente.
+Contiene il numero di telefono del fax aziendale dell'utente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Fax-telefono-numero                  |
-| LDAP-Display-Name | facsimileTelephoneNumber                    |
+| CN                | Facsimile-Telephone-Number                  |
+| Ldap-Display-Name | facsimileTelephoneNumber                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.      |
-| Frequenza di aggiornamento  | Ogni volta che il numero di fax deve essere modificato.    |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.      |
+| Frequenza di aggiornamento  | Ogni volta che il numero di fax deve cambiare.    |
 | Attribute-Id      | 2.5.4.23                                    |
-| System-ID-GUID    | bf967974-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967974-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                               |
 | MAPI-Id                | 0x3A23                                                                                                           |
 | System-Only            | Falso                                                                                                            |
-| È a valore singolo       | Vero                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                             |
 | Indicizzato             | Falso                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                     |
 | Range-Lower            | 1                                                                                                                |
 | Range-Upper            | 64                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                       |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Contiene il numero di telefono del computer fax aziendale dell'utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x3A23                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 64                                                                                                                                                                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 

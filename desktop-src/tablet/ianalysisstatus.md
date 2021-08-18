@@ -1,7 +1,7 @@
 ---
-description: Rappresenta lo stato dell'operazione di analisi dell'input penna indicando se l'analisi è stata completata correttamente e se sono stati generati avvisi.
+description: Rappresenta lo stato dell'operazione di analisi input penna descrivendo se l'analisi è stata completata correttamente e se si sono verificati avvisi.
 ms.assetid: 57910a1d-3472-4689-ba0d-a220145e77c4
-title: Interfaccia IAnalysisStatus (IACom. h)
+title: Interfaccia IAnalysisStatus (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: e14f7fabea8090f5471513eca524f6fcdb939b2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 006b042981392ecdd52508181c7a5cde270d2e0195fe9c8b971c142361ab6081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719998"
 ---
 # <a name="ianalysisstatus-interface"></a>Interfaccia IAnalysisStatus
 
-Rappresenta lo stato dell'operazione di analisi dell'input penna indicando se l'analisi è stata completata correttamente e se sono stati generati avvisi.
+Rappresenta lo stato dell'operazione di analisi input penna descrivendo se l'analisi è stata completata correttamente e se si sono verificati avvisi.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IAnalysisStatus** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IAnalysisStatus** dispone anche di questi tipi di membri:
+**L'interfaccia IAnalysisStatus** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisStatus** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IAnalysisStatus** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IAnalysisStatus.**
 
 
 
 | Metodo                                                                     | Descrizione                                                                                                                                                                                    |
 |:---------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetAppliedChangesRegion**](ianalysisstatus-getappliedchangesregion.md) | Recupera l'area del documento che corrisponde alle modifiche apportate nell'albero del nodo di contesto dell'oggetto [**IInkAnalyzer**](iinkanalyzer.md) come risultato dell'analisi dell'input penna.<br/> |
-| [**GetWarnings**](ianalysisstatus-getwarnings.md)                         | Recupera una raccolta [**IAnalysisWarnings**](ianalysiswarnings.md) che descrive gli errori e gli avvisi generati dall'operazione di analisi.<br/>                                  |
+| [**GetAppliedChangesRegion**](ianalysisstatus-getappliedchangesregion.md) | Recupera l'area del documento che corrisponde alle modifiche apportate nell'albero dei nodi di contesto dell'oggetto [**IInkAnalyzer**](iinkanalyzer.md) come risultato dell'analisi dell'input penna.<br/> |
+| [**GetWarnings**](ianalysisstatus-getwarnings.md)                         | Recupera una raccolta [**IAnalysisWarnings**](ianalysiswarnings.md) che descrive eventuali errori e avvisi generati dall'operazione di analisi.<br/>                                  |
 | [**IsSuccessful**](ianalysisstatus-issuccessful.md)                       | Recupera un riepilogo booleano dei risultati dell'operazione di analisi.<br/>                                                                                                               |
 
 
@@ -48,7 +48,7 @@ L'interfaccia **IAnalysisStatus** dispone di questi metodi.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una struttura di un gestore eventi per l'evento [**\_ IAnalysisEvents:: results**](-ianalysisevents-results.md) . Il gestore verifica [**IAnalysisStatus:: con esito positivo**](ianalysisstatus-issuccessful.md). Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di oggetti [**IAnalysisWarning**](ianalysiswarning.md) .
+L'esempio seguente illustra una struttura di un gestore eventi per [**\_ l'evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) Il gestore controlla [**IAnalysisStatus::IsSuccessful**](ianalysisstatus-issuccessful.md). Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di [**oggetti IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -135,9 +135,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -146,13 +146,13 @@ STDMETHODIMP CMyClass::Results(
 
 <dl> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

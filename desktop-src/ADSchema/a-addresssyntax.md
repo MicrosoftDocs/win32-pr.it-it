@@ -32,7 +32,7 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione com
 | CN                | Address-Syntax                                        |
 | Ldap-Display-Name | addressSyntax                                         |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.255                                |
 | System-Id-Guid    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |

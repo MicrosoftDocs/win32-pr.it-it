@@ -3,15 +3,15 @@ title: Limitazioni
 description: Limitazioni
 ms.assetid: 5f41620d-dde0-4e82-92f0-ada9d4acf127
 keywords:
-- OpenGL per Windows, limitazioni
+- OpenGL in Windows,limitazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 478a139326f74c236ca0109fddbbc3d4ffb46e1a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d058570c049f471dcf6e92c4eb55eb1365948d581127c68a46deb8d863ccc34d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937418"
 ---
 # <a name="limitations"></a>Limitazioni
 
@@ -19,31 +19,31 @@ L'implementazione generica presenta le limitazioni seguenti:
 
 -   Stampa.
 
-    È possibile stampare un'immagine OpenGL direttamente in una stampante usando solo i metafile. Per altre informazioni, vedere [stampa di un'immagine OpenGL](printing-an-opengl-image.md).
+    È possibile stampare un'immagine OpenGL direttamente su una stampante usando solo metafile. Per altre informazioni, vedere [Stampa di un'immagine OpenGL.](printing-an-opengl-image.md)
 
--   Non è possibile combinare grafica OpenGL e GDI in una finestra con doppio buffer.
+-   Gli elementi grafici OpenGL e GDI non possono essere misti in una finestra con doppio buffer.
 
-    Un'applicazione può creare direttamente grafica OpenGL e grafica GDI in una finestra con singolo buffer, ma non in una finestra con doppio buffer.
+    Un'applicazione può disegnare direttamente grafica OpenGL e grafica GDI in una finestra a buffer singolo, ma non in una finestra a doppio buffer.
 
--   Non sono disponibili tavolozze dei colori hardware per ogni finestra.
+-   Non sono disponibili tavolozze colori hardware per finestra.
 
-    Windows ha una singola tavolozza dei colori hardware del sistema, applicabile all'intero schermo. Una finestra OpenGL non può avere una propria tavolozza hardware, ma può avere una propria tavolozza logica. A tale scopo, deve diventare un'applicazione in grado di riconoscere la tavolozza. Per ulteriori informazioni, vedere [modalità colori OpenGL e gestione tavolozza di Windows](opengl-color-modes-and-windows-palette-management.md).
+    Windows dispone di una singola tavolozza dei colori hardware di sistema, che si applica all'intero schermo. Una finestra OpenGL non può avere un proprio riquadro hardware, ma può avere un proprio riquadro logico. A tale scopo, deve diventare un'applicazione in grado di riconoscere il riquadro. Per altre informazioni, vedere [Modalità colori OpenGL e gestione Windows tavolozza](opengl-color-modes-and-windows-palette-management.md).
 
--   Non è disponibile alcun supporto diretto per gli appunti, DDE (Dynamic Data Exchange) o OLE.
+-   Non è disponibile alcun supporto diretto per Gli Appunti, DDE (Dynamic Data Exchange) o OLE.
 
-    Una finestra con grafica OpenGL non supporta direttamente queste funzionalità di Windows. Tuttavia, esistono soluzioni alternative per l'utilizzo degli Appunti. Per altre informazioni, vedere [copia di un'immagine OpenGL negli Appunti](copying-an-opengl-image-to-the-clipboard.md).
+    Una finestra con grafica OpenGL non supporta direttamente queste Windows funzionalità. Esistono tuttavia soluzioni alternative per l'uso degli Appunti. Per altre informazioni, vedere [Copia di un'immagine OpenGL negli Appunti.](copying-an-opengl-image-to-the-clipboard.md)
 
--   La libreria di classi di Inventory 2,0 C++ non è inclusa.
+-   La libreria di classi C++ di Inventor 2.0 non è inclusa.
 
-    La libreria di classi Inventory basata su OpenGL fornisce costrutti di livello superiore per la programmazione di grafica 3D. Non è incluso nella versione corrente dell'implementazione di Microsoft OpenGL per Windows.
+    La libreria di classi di Inventor, basata su OpenGL, fornisce costrutti di livello superiore per la programmazione di grafica 3D. Non è incluso nella versione corrente dell'implementazione microsoft di OpenGL per Windows.
 
--   Non è disponibile alcun supporto per le funzionalità di formato pixel seguenti: immagini stereoscopiche, alfa bitplane e buffer ausiliari.
+-   Non è disponibile alcun supporto per le funzionalità di formato pixel seguenti: immagini stereoscopiche, bitplani alfa e buffer ausiliari.
 
-    È tuttavia disponibile il supporto per diversi buffer ausiliari, tra cui il buffer dello stencil, il buffer di accumulo, il buffer nascosto (doppio buffer), il buffer del piano sottoposto a sovrapposizione e il buffer di profondità (asse z).
+    È tuttavia disponibile il supporto per diversi buffer accessori, tra cui buffer di stencil, buffer di accumulo, buffer nascosto (doppio buffer), buffer del piano di sovrapposizione e sottostante e buffer di profondità (asse z).
 
- 
+ 
 
- 
+ 
 
 
 

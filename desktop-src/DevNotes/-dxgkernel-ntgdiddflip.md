@@ -1,7 +1,7 @@
 ---
-description: Causa l'intercambio della memoria della superficie associata alla destinazione e alle superfici correnti.
+description: Fa sì che la memoria della superficie associata alle superfici di destinazione e correnti sia intercambiata.
 ms.assetid: 2c557393-079e-48e5-b3a6-1157265d88e3
-title: Funzione NtGdiDdFlip (Ntgdi. h)
+title: Funzione NtGdiDdFlip (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 1fd2d6f84f602fd07cc29a0efeae28209cb970a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 18113c841c22b31c9768d42491a63ead8cafee3c3b598bc46f442068592e67b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956490"
 ---
-# <a name="ntgdiddflip-function"></a>NtGdiDdFlip (funzione)
+# <a name="ntgdiddflip-function"></a>Funzione NtGdiDdFlip
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Causa l'intercambio della memoria della superficie associata alla destinazione e alle superfici correnti.
+Fa sì che la memoria della superficie associata alle superfici di destinazione e correnti sia intercambiata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,38 +48,38 @@ DWORD APIENTRY NtGdiDdFlip(
 
 <dl> <dt>
 
-*hSurfaceCurrent* \[ in\]
+*hSurfaceCurrent* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [struttura \_ \_ locale della superficie DD](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie corrente.
+Handle alla struttura [DD \_ SURFACE \_ LOCAL](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie corrente.
 
 </dd> <dt>
 
-*hSurfaceTarget* \[ in\]
+*hSurfaceTarget* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [struttura \_ \_ locale della superficie DD](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie di destinazione, ovvero l'area in cui il driver deve essere invertito.
+Handle alla struttura [DD \_ SURFACE \_ LOCAL](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie di destinazione, ovvero la superficie su cui il driver deve capovolgere.
 
 </dd> <dt>
 
-*hSurfaceCurrentLeft* \[ in\]
+*hSurfaceCurrentLeft* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [struttura \_ \_ locale della superficie DD](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie di sinistra corrente.
+Handle alla struttura [DD \_ SURFACE \_ LOCAL](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie sinistra corrente.
 
 </dd> <dt>
 
-*hSurfaceTargetLeft* \[ in\]
+*hSurfaceTargetLeft* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [struttura \_ \_ locale della superficie DD](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie di destinazione sinistra in cui eseguire il capovolgimento.
+Handle alla struttura [DD \_ SURFACE \_ LOCAL](https://msdn.microsoft.com/library/ms793861.aspx) che descrive la superficie di destinazione sinistra su cui capovolgere.
 
 </dd> <dt>
 
-*puFlipData* \[ in uscita\]
+*puFlipData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms794213.aspx) che contiene le informazioni necessarie per eseguire il capovolgimento.
+Puntatore a [una struttura \_ DD FLIPDATA](https://msdn.microsoft.com/library/ms794213.aspx) che contiene le informazioni necessarie per eseguire lo scorrimento.
 
 </dd> </dl>
 
@@ -91,8 +91,8 @@ Puntatore a una struttura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
 
 
 
@@ -106,7 +106,7 @@ Puntatore a una struttura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ Puntatore a una struttura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

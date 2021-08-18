@@ -1,26 +1,26 @@
 ---
-description: Il protocollo di record Transport Layer Security (TLS) protegge i dati delle applicazioni usando le chiavi create durante l'handshake.
+description: Il protocollo Transport Layer Security (TLS) Record protegge i dati dell'applicazione usando le chiavi create durante l'handshake.
 ms.assetid: 3ad4cbd9-ce7c-4882-9c53-c935068c0ba7
 title: Protocollo di record TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a53d41ad73dc9e1338f0cbff1bec5d6cd6a55e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce441de892367b49e1fd4aa285b5398dd5e7c1667d0ea785f6925995c89e1dfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915741"
 ---
 # <a name="tls-record-protocol"></a>Protocollo di record TLS
 
-Il protocollo di record [*Transport Layer Security*](../secgloss/t-gly.md) (TLS) protegge i dati delle applicazioni usando le chiavi create durante l' [handshake](tls-handshake-protocol.md). Il protocollo di record è responsabile della protezione dei dati dell'applicazione e della verifica dell' [*integrità*](../secgloss/i-gly.md) e dell'origine. Gestisce gli elementi seguenti:
+Il [*protocollo Transport Layer Security*](../secgloss/t-gly.md) (TLS) Record protegge i dati dell'applicazione usando le chiavi create durante [l'handshake.](tls-handshake-protocol.md) Il protocollo di registrazione è responsabile della protezione dei dati dell'applicazione e della verifica [*dell'integrità e*](../secgloss/i-gly.md) dell'origine. Gestisce gli elementi seguenti:
 
--   Dividere i messaggi in uscita in blocchi gestibili e riassemblare i messaggi in ingresso.
--   Compressione di blocchi in uscita e decompressione di blocchi in ingresso (facoltativo).
--   Applicare un [*Message Authentication Code*](../secgloss/m-gly.md) (Mac) ai messaggi in uscita e verificare i messaggi in arrivo tramite il Mac.
+-   Divisione dei messaggi in uscita in blocchi gestibili e riassemblamento dei messaggi in ingresso.
+-   Compressione dei blocchi in uscita e decompressione dei blocchi in ingresso (facoltativo).
+-   Applicazione di un [*Message Authentication Code*](../secgloss/m-gly.md) (MAC) ai messaggi in uscita e verifica dei messaggi in ingresso tramite MAC.
 -   Crittografia dei messaggi in uscita e decrittografia dei messaggi in ingresso.
 
-Una volta completato il protocollo di record, i dati crittografati in uscita vengono passati al livello Transmission Control Protocol (TCP) per il trasporto.
+Al termine del protocollo di registrazione, i dati crittografati in uscita vengono passati al livello Transmission Control Protocol (TCP) per il trasporto.
 
  
 

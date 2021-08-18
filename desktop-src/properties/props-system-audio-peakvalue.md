@@ -4,12 +4,12 @@ ms.assetid: 576070e9-8f7a-4df7-ba3a-0872aa96a0ab
 title: System.Audio.PeakValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 905236f61a86a41fb6034274e21b1d828c2b9989
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d28242ac01db0e96b5b1e9eb69948450534beff55d2354f613eb402a0c2a38a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970780"
 ---
 # <a name="systemaudiopeakvalue"></a>System.Audio.PeakValue
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

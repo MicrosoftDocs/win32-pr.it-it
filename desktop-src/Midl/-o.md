@@ -27,7 +27,7 @@ ms.locfileid: "118643903"
 midl /o outputfile
 ```
 
-## <a name="switch-options"></a>Opzioni di cambio
+## <a name="switch-options"></a>Opzioni switch
 
 <dl> <dt>
 
@@ -42,7 +42,7 @@ Specifica il nome del file a cui il compilatore MIDL reindirizza l'output, ad es
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

@@ -1,18 +1,18 @@
 ---
-description: Specifica se l'allocatore di esempio (SA) di MFT deve allocare la trama Direct3D sottostante usando il flag D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
+description: Specifica se l'allocatore di esempio (SA) MFT deve allocare la trama Direct3D sottostante usando il flag D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
 title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform.h)
 ms.topic: reference
 ms.date: 03/31/2018
-ms.openlocfilehash: fedcfbe98344dd9b424c1a8ce90e847e98f1af51
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: b039eff2c46281dcad4754d73f05ecd982f7fe3e75ed1aa9c8b576fe573f921c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102601"
 ---
 # <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a>Attributo MF \_ SA \_ D3D \_ ALLOCATE \_ DISPLAYABLE \_ RESOURCES
 
-Specifica se l'allocatore di esempio (SA) di MFT deve allocare la trama Direct3D sottostante usando il [flag](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE. 
+Specifica se l'allocatore di esempio (SA) MFT deve allocare la trama Direct3D sottostante usando il flag [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) 
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -20,16 +20,16 @@ Specifica se l'allocatore di esempio (SA) di MFT deve allocare la trama Direct3D
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è disponibile fissando Windows 10 build 20348. 
+Questo attributo è disponibile con la build Windows 10 20348. 
 
 > [!NOTE]
 > Il **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** membro dell'enumerazione [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) sarà disponibile in una versione futura dell'SDK.
 
-Il Media Foundation di piattaforma imposta **l'attributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** durante il rendering del video. Un'app può anche scegliere di impostare questo attributo se vuole implementare il proprio renderer video e usare le risorse visualizzabili D3D11. 
+Il Media Foundation della piattaforma imposta **l'attributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** durante il rendering del video. Un'app può anche scegliere di impostare questo attributo se vuole implementare il proprio renderer video e usare le risorse visualizzabili D3D11. 
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato l'utilizzo **dell'attributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES.**
+Nell'esempio di codice seguente viene illustrato l'utilizzo **dell'MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** attributo .
 
 ```cpp
 class DecoderMFT : public IMFAttributes, public IMFTransform 
@@ -141,7 +141,7 @@ private:
 
 <dl> <dt>
 
-[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)

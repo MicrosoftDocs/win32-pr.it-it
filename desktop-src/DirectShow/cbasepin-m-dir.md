@@ -1,7 +1,7 @@
 ---
-description: Direzione del PIN.
+description: Direzione del segnaposto.
 ms.assetid: 57c7e435-9db3-45ef-be83-52d65ff1f7a5
-title: 'Membro CBasePin:: m_dir (Amfilter. h)'
+title: Membro CBasePin::m_dir (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bedc18b4f3dae119d5ad553af18462344c70c484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d20961b8a9a76ad5733852bcc5ac735aac1612eea277ca18ceb2c3ce9934e6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955170"
 ---
-# <a name="cbasepinm_dir-member"></a>Membro dir CBasePin:: m \_
+# <a name="cbasepinm_dir-member"></a>Membro dir CBasePin::m \_
 
-Direzione del PIN.
+Direzione del segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ PIN_DIRECTION m_dir;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

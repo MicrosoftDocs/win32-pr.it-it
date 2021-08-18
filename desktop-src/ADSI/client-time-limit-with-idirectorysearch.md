@@ -1,27 +1,27 @@
 ---
-title: Limite di tempo client con IDirectorySearch
-description: Un client può imporre un limite di tempo per la restituzione del set di risultati da parte di un server. Quando il server non riesce a rispondere a una query entro il periodo di tempo specificato, il client può abbandonare la ricerca e riprovare più tardi.
+title: Limite di tempo del client con IDirectorySearch
+description: Un client può imporre un limite di tempo per la restituzione del set di risultati da parte di un server. Quando il server non risponde a una query entro il periodo di tempo specificato, il client può abbandonare la ricerca e riprovare più tardi.
 ms.assetid: fe8a8b08-b34d-4aa5-a925-bcda6e72d437
 ms.tgt_platform: multiple
 keywords:
-- Limite di tempo client con IDirectorySearch
-- ADSI, ricerca, IDirectorySearch, altre opzioni di ricerca, limite di tempo client
+- Limite di tempo del client con IDirectorySearch
+- ADSI, Ricerca, IDirectorySearch, Altre opzioni di ricerca, Limite di tempo client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed25bd8499f7166d7ea494f71e6f78193f9c778a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1798094a980c41de2e1902533415839020cfd690384f0e56a37bff918d4ecc2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118692510"
 ---
-# <a name="client-time-limit-with-idirectorysearch"></a>Limite di tempo client con IDirectorySearch
+# <a name="client-time-limit-with-idirectorysearch"></a>Limite di tempo del client con IDirectorySearch
 
-Un client può imporre un limite di tempo per la restituzione del set di risultati da parte di un server. Quando il server non riesce a rispondere a una query entro il periodo di tempo specificato, il client può abbandonare la ricerca e riprovare più tardi.
+Un client può imporre un limite di tempo per la restituzione del set di risultati da parte di un server. Quando il server non risponde a una query entro il periodo di tempo specificato, il client può abbandonare la ricerca e riprovare più tardi.
 
-La preferenza per il limite di tempo client è utile quando un client richiede una ricerca asincrona. In una ricerca asincrona, il client effettua una richiesta e quindi procede con altre attività in attesa che il server restituisca i risultati. È possibile che il server sia offline senza notificare al client. In questo caso, il client non avrà alcuna notifica se il server sta ancora elaborando la query o se non è più attiva. La preferenza per il limite di tempo client fornisce al client un controllo di situazioni come questa.
+La preferenza relativa al limite di tempo del client è utile quando un client richiede una ricerca asincrona. In una ricerca asincrona, il client effettua una richiesta e quindi procede con altre attività in attesa che il server restituirà i risultati. È possibile che il server possa passare alla modalità offline senza notificare il client. In questo caso, il client non dirà se il server sta ancora elaborando la query o se non è più in tempo reale. La preferenza relativa al limite di tempo del client offre al client il controllo di situazioni come questa.
 
-Il valore predefinito per il limite di tempo client non è limite. Per impostare un limite di tempo client, impostare un'opzione di ricerca **Ads \_ SEARCHPREF \_ timeout** con un valore **\_ Integer ADSTYPE** che contenga il limite di tempo client, espresso in secondi, nella matrice di [**\_ \_ informazioni SEARCHPREF ADS**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) passata al metodo [**IDirectorySearch:: SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) . Un limite di tempo del client pari a zero indica nessun limite di tempo.
+Il valore predefinito per il limite di tempo del client è nessun limite. Per impostare un limite di tempo client, impostare un'opzione di ricerca **ADS \_ SEARCHPREF \_ TIMEOUT** con un valore **INTEGER ADSTYPE \_** che contiene il limite di tempo del client, in secondi, nella matrice [**ADS \_ SEARCHPREF \_ INFO**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) passata al metodo [**IDirectorySearch::SetSearchPreference.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) Un limite di tempo client pari a zero indica nessun limite di tempo.
 
 Nell'esempio di codice seguente viene illustrato come impostare il limite di tempo del client.
 
@@ -35,9 +35,9 @@ SearchPref.vValue.Integer = 10;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

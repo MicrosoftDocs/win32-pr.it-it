@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EVENT ( \_ tipi WINBIO. h)
-description: Contiene informazioni sullo stato inviate alla routine di callback quando viene generata una notifica di evento.
+title: WINBIO_EVENT struttura (Winbio \_ types.h)
+description: Contiene informazioni sullo stato inviate alla routine di callback quando viene generato un avviso di evento.
 ms.assetid: f46df7ff-8197-49cb-b1f8-4e7e3288e3df
 keywords:
-- Struttura di WINBIO_EVENT Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EVENT
+- WINBIO_EVENT struttura Windows API Biometric Framework
+- PWINBIO_EVENT puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b6a8301ea5dab7d860e5bd7fb32c69277bad63
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e3baab16ee7c3f825f317d7aa2c585cb4d8ae7d6d030b6f59a1555b95343015
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910544"
 ---
-# <a name="winbio_event-structure"></a>\_Struttura dell'evento WINBIO
+# <a name="winbio_event-structure"></a>Struttura WINBIO \_ EVENT
 
-La struttura dell' **\_ evento WINBIO** contiene le informazioni sullo stato inviate alla routine di callback quando viene generata una notifica di evento.
+La **struttura \_ EVENT DI WINBIO** contiene informazioni sullo stato inviate alla routine di callback quando viene generato un avviso di evento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,91 +63,91 @@ Valore che specifica il tipo di avviso di evento del provider di servizi generat
 
 <dl> <dt>
 
-<span id="WINBIO_EVENT_FP_UNCLAIMED"></span><span id="winbio_event_fp_unclaimed"></span>**WINBIO \_ EVENTO \_ FP non \_ recuperato** (il sensore ha rilevato una swipe del dito non richiesto dall'applicazione o dalla finestra che attualmente ha lo stato attivo. Il Windows Biometric Framework chiama la funzione di callback per indicare che si è verificato un dito sfiorato ma non tenta di identificare l'impronta digitale.
+<span id="WINBIO_EVENT_FP_UNCLAIMED"></span><span id="winbio_event_fp_unclaimed"></span>**WINBIO \_ EVENTO \_ FP \_ UNCLAIMED** (Il sensore ha rilevato uno scorrimento rapido del dito che non è stato richiesto dall'applicazione o dalla finestra che ha attualmente lo stato attivo. Il Windows Biometric Framework chiama la funzione di callback per indicare che si è verificato uno scorrimento rapido del dito ma non tenta di identificare l'impronta digitale.
 </dt> <dt>
 
-<span id="WINBIO_EVENT_FP_UNCLAIMED_IDENTIFY"></span><span id="winbio_event_fp_unclaimed_identify"></span>**WINBIO \_ EVENTO \_ FP senza \_ attestazione \_** (il sensore ha rilevato una striscia di dita non richiesta dall'applicazione o dalla finestra che attualmente ha lo stato attivo. Il Windows Biometric Framework tenta di identificare l'impronta digitale e passa il risultato di tale processo alla funzione di callback.
+<span id="WINBIO_EVENT_FP_UNCLAIMED_IDENTIFY"></span><span id="winbio_event_fp_unclaimed_identify"></span>**WINBIO \_ EVENT \_ FP \_ UNCLAIMED \_ IDENTIFY** (IL sensore ha rilevato uno scorrimento rapido del dito che non è stato richiesto dall'applicazione o dalla finestra che ha attualmente lo stato attivo. Il Windows Biometric Framework tenta di identificare l'impronta digitale e passa il risultato di tale processo alla funzione di callback.
 </dt> </dl> </dd> <dt>
 
 **Parametri**
 </dt> <dd> <dl> <dt>
 
-**Richiesti**
+**Unclaimed**
 </dt> <dd>
 
-Struttura restituita per l'acquisizione di esempio biometrica.
+Struttura restituita per l'acquisizione di campioni biometrici.
 
 <dl> <dt>
 
 **UnitId**
 </dt> <dd>
 
-Unità biometrica che ha generato l'esempio.
+Unità biometrica che ha generato il campione.
 
 </dd> <dt>
 
 **RejectDetail**
 </dt> <dd>
 
-Valore **ULONG** che contiene informazioni aggiuntive sull'errore di acquisizione di un campione biometrico. Se un'acquisizione ha avuto esito positivo, questo parametro è impostato su zero. Per l'acquisizione di impronte digitali vengono definiti i valori seguenti:
+Valore **ULONG** che contiene informazioni aggiuntive relative alla mancata acquisizione di un campione biometrico. Se un'acquisizione ha esito positivo, questo parametro viene impostato su zero. Per l'acquisizione dell'impronta digitale vengono definiti i valori seguenti:
 
--   WINBIO \_ FP \_ troppo \_ alta
--   WINBIO \_ FP \_ troppo \_ basso
--   WINBIO \_ FP \_ troppo a \_ sinistra
--   WINBIO \_ FP \_ troppo a \_ destra
--   WINBIO \_ FP \_ troppo \_ veloce
--   WINBIO \_ FP \_ troppo \_ lento
--   WINBIO \_ FP \_ scarsa \_ qualità
--   WINBIO \_ FP \_ troppo \_ sbilanciato
--   WINBIO \_ FP \_ troppo \_ breve
--   \_errore di \_ merge WINBIO FP \_
+-   WINBIO \_ FP \_ TOO \_ HIGH
+-   FP WINBIO \_ \_ TROPPO \_ BASSO
+-   FP WINBIO \_ \_ TROPPO A \_ SINISTRA
+-   FP WINBIO \_ \_ TROPPO A \_ DESTRA
+-   WINBIO \_ FP \_ TOO \_ FAST
+-   FP WINBIO \_ \_ TROPPO \_ LENTO
+-   WINBIO \_ FP \_ POOR \_ QUALITY
+-   WINBIO \_ FP \_ TOO \_ SKEWED
+-   FP WINBIO \_ \_ TROPPO \_ BREVE
+-   ERRORE DI UNIONE \_ FP WINBIO \_ \_
 
 </dd> </dl> </dd> <dt>
 
 **UnclaimedIdentify**
 </dt> <dd>
 
-Struttura restituita per l'acquisizione e l'identificazione biometriche. L'identificazione determina se un campione può essere associato a un modello biometrico esistente.
+Struttura restituita per l'acquisizione e l'identificazione biometrica. L'identificazione determina se un campione può essere associato a un modello biometrico esistente.
 
 <dl> <dt>
 
 **UnitId**
 </dt> <dd>
 
-Unità biometrica che ha generato l'esempio.
+Unità biometrica che ha generato il campione.
 
 </dd> <dt>
 
 **Identità**
 </dt> <dd>
 
-Struttura [**di \_ identità WINBIO**](winbio-identity.md) che contiene il GUID o il SID dell'utente che fornisce l'esempio biometrico.
+Struttura [**WINBIO \_ IDENTITY**](winbio-identity.md) che contiene il GUID o il SID dell'utente che fornisce l'esempio biometrico.
 
 </dd> <dt>
 
-**Sottofattore**
+**SubFactor**
 </dt> <dd>
 
-Valore [**del \_ \_ SOTTOtipo biometrico WINBIO**](winbio-biometric-subtype-constants.md) che specifica il Sottofattore associato a un campione biometrico. Il Windows Biometric Framework (WBF) supporta attualmente solo l'acquisizione di impronte digitali e usa le costanti seguenti per rappresentare le informazioni sui sottotipi.
+Valore [**\_ SUBTYPE BIOMETRIC \_ WINBIO**](winbio-biometric-subtype-constants.md) che specifica il fattore secondario associato a un campione biometrico. Il Windows Biometric Framework (WBF) supporta attualmente solo l'acquisizione di impronte digitali e usa le costanti seguenti per rappresentare le informazioni sui sottotipi.
 
--   WINBIO \_ ANSI \_ 381 \_ POS \_ sconosciuta
--   WINBIO \_ ANSI \_ 381 \_ POS \_ \_ pollice RH
--   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ - \_ dito indice
--   WINBIO \_ ANSI \_ 381 \_ POS \_ \_ secondo \_ dito medio
--   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ \_ anulare
--   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ piccolo \_ dito
--   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ Thumb
--   WINBIO \_ ANSI \_ 381 \_ POS \_ - \_ dito indice LH \_
--   WINBIO \_ ANSI \_ 381 \_ POS \_ - \_ dito medio SX \_
--   WINBIO \_ ANSI \_ 381 \_ POS \_ - \_ \_ dito sinistro
--   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ Little \_ Finger
--   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ quattro \_ dita
--   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ quattro \_ dita
--   WINBIO \_ ANSI \_ 381 \_ POS \_ due \_ pollici
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ UNKNOWN
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ THUMB
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ INDEX \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ MIDDLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ RING \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ LITTLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ THUMB
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ INDEX \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ MIDDLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ RING \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ LITTLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS RH QUATTRO \_ \_ \_ DITA
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH QUATTRO \_ \_ DITA
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ TWO \_ THUMBS
 
 > [!IMPORTANT]
 >
-> Non tentare di convalidare il valore specificato per il valore del *Sottofattore* . Il servizio biometria di Windows convaliderà il valore fornito prima di passarlo all'implementazione. Se il valore è **WINBIO, non vi sono \_ \_ \_ informazioni** o **\_ sottotipi \_ di WINBIO**, quindi eseguire la convalida laddove appropriato.
+> Non tentare di convalidare il valore fornito per il *valore SubFactor.* Il Windows biometrica convalida il valore fornito prima di passarlo all'implementazione. Se il valore è **WINBIO \_ SUBTYPE \_ NO INFORMATION \_ o** **WINBIO \_ SUBTYPE \_ ANY,** convalidare dove appropriato.
 
  
 
@@ -156,38 +156,38 @@ Valore [**del \_ \_ SOTTOtipo biometrico WINBIO**](winbio-biometric-subtype-cons
 **RejectDetail**
 </dt> <dd>
 
-Valore **ULONG** che contiene informazioni aggiuntive sull'errore di acquisizione di un campione biometrico. Se l'acquisizione ha avuto esito positivo, questo parametro è impostato su zero. Per l'acquisizione di impronte digitali vengono definiti i valori seguenti:
+Valore **ULONG** che contiene informazioni aggiuntive sull'errore di acquisizione di un campione biometrico. Se l'acquisizione ha esito positivo, questo parametro è impostato su zero. Per l'acquisizione dell'impronta digitale vengono definiti i valori seguenti:
 
--   WINBIO \_ FP \_ troppo \_ alta
--   WINBIO \_ FP \_ troppo \_ basso
--   WINBIO \_ FP \_ troppo a \_ sinistra
--   WINBIO \_ FP \_ troppo a \_ destra
--   WINBIO \_ FP \_ troppo \_ veloce
--   WINBIO \_ FP \_ troppo \_ lento
--   WINBIO \_ FP \_ scarsa \_ qualità
--   WINBIO \_ FP \_ troppo \_ sbilanciato
--   WINBIO \_ FP \_ troppo \_ breve
--   \_errore di \_ merge WINBIO FP \_
+-   WINBIO \_ FP \_ TOO \_ HIGH
+-   FP WINBIO \_ \_ TROPPO \_ BASSO
+-   FP WINBIO \_ \_ TROPPO A \_ SINISTRA
+-   FP WINBIO \_ \_ TROPPO A \_ DESTRA
+-   WINBIO \_ FP \_ TOO \_ FAST
+-   FP WINBIO \_ \_ TROPPO \_ LENTO
+-   WINBIO \_ FP \_ POOR \_ QUALITY
+-   WINBIO \_ FP \_ TOO \_ SKEWED
+-   FP WINBIO \_ \_ TROPPO \_ BREVE
+-   ERRORE DI UNIONE \_ FP WINBIO \_ \_
 
 </dd> </dl> </dd> <dt>
 
 **Error (Errore) (Error (Errore)e)**
 </dt> <dd>
 
-Struttura che identifica l'esito positivo o negativo dell'operazione sottoposta a monitoraggio.
+Struttura che identifica l'esito positivo o negativo dell'operazione monitorata.
 
 <dl> <dt>
 
 **ErrorCode**
 </dt> <dd>
 
-Valore **HRESULT** che contiene S \_ OK o un codice di errore risultante da calcoli eseguiti dal Windows Biometric Framework.
+**Valore HRESULT** che contiene S OK o un codice di errore generato dai calcoli eseguiti da \_ Windows Biometric Framework.
 
 </dd> </dl> </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare la funzione [**WinBioRegisterEventMonitor**](/windows/desktop/api/Winbio/nf-winbio-winbioregistereventmonitor) per registrare una routine di callback per ricevere notifiche degli eventi dal Windows Biometric Framework. Il callback è una funzione personalizzata che è necessario definire per l'applicazione.
+Chiamare la [**funzione WinBioRegisterEventMonitor per**](/windows/desktop/api/Winbio/nf-winbio-winbioregistereventmonitor) registrare una routine di callback per ricevere notifiche degli eventi Windows Biometric Framework. Il callback è una funzione personalizzata che è necessario definire per l'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -195,9 +195,9 @@ Chiamare la funzione [**WinBioRegisterEventMonitor**](/windows/desktop/api/Winbi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

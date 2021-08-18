@@ -66,7 +66,7 @@ La **classe Msvm \_ VirtualSystemCollection** ha queste proprietà.
 **CollectionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -82,13 +82,13 @@ Identificazione univoca dell'oggetto raccolta.
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia univoco.
@@ -107,7 +107,7 @@ Tipo di accesso: sola lettura
 Tipo di failover eseguito per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -148,7 +148,7 @@ Tipo di accesso: sola lettura
 Livello di coerenza dell'ultimo delta applicato.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -174,7 +174,7 @@ L'ultimo delta applicato indica un punto nel tempo in cui il sistema virtuale er
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coerenza arresto anomalo** del sistema (2)
+<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coerente con l'arresto** anomalo del sistema (2)
 
 
 </dt> <dd>
@@ -185,7 +185,7 @@ L'ultimo delta applicato indica un punto nel tempo in cui il sistema virtuale er
 
 <span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>
 
-<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coerenza dell'arresto anomalo del** gruppo (3)
+<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coerenza arresto anomalo del** gruppo (3)
 
 
 </dt> <dd>
@@ -208,7 +208,7 @@ Tipo di accesso: sola lettura
 Ora in cui viene applicata l'ultima replica al ripristino per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -223,10 +223,10 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di ID macchina virtuale applicati correttamente nell'ultimo ciclo di applicazione.
+Matrice di ID macchina virtuale che sono stati applicati correttamente nell'ultimo ciclo di applicazione.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -244,7 +244,7 @@ Tipo di accesso: sola lettura
 Tipo di replica per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -273,14 +273,14 @@ Tipo di replica per la raccolta di sistemi virtuali.
 
 <span id="Test_Replica"></span><span id="test_replica"></span><span id="TEST_REPLICA"></span>
 
-**Replica di** test (3)
+**Replica di test** (3)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ReplicationState**
+**Stato replica**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -292,7 +292,7 @@ Tipo di accesso: sola lettura
 Stato della replica per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10 versione 1703.
+> Aggiunta in Windows 10, versione 1703.
 
  
 
@@ -335,14 +335,14 @@ Stato della replica per la raccolta di sistemi virtuali.
 
 <span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>
 
-**Recuperato** (5)
+**Ripristinato** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-**Commit** (6)
+**Commit** eseguito (6)
 
 
 </dt> <dd></dd> <dt>
@@ -377,7 +377,7 @@ Stato della replica per la raccolta di sistemi virtuali.
 
 <span id="Planned_failover_initiatedRepurpose_initiatedTest_failover_initiatedPartially_enabled"></span><span id="planned_failover_initiatedrepurpose_initiatedtest_failover_initiatedpartially_enabled"></span><span id="PLANNED_FAILOVER_INITIATEDREPURPOSE_INITIATEDTEST_FAILOVER_INITIATEDPARTIALLY_ENABLED"></span>
 
-**Failover pianificato avviatoRepurpose Failover** del test avviato Parzialmente abilitato (11)
+**Planned failover initiatedRepurpose initiatedTest failover initiatedPartially enabled** (11)
 
 
 </dt> <dd></dd> <dt>

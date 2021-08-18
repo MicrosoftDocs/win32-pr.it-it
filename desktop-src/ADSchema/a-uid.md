@@ -1,10 +1,10 @@
 ---
-title: attributo UID
+title: Attributo uid
 description: ID utente.
 ms.assetid: c6837343-2a3f-4b57-9477-2cbdc2f42cce
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo UID
+- Uid attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 001fa68e879e15f344fada57417bf38c65706f06
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 36be371b64c5186e9e53b9b42b5814ad0723ebeaa4ebb93d8c71fc932b29facb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021999"
 ---
-# <a name="uid-attribute"></a>attributo UID
+# <a name="uid-attribute"></a>Attributo uid
 
 ID utente.
 
@@ -29,12 +29,12 @@ ID utente.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | uid                                         |
-| LDAP-Display-Name | uid                                         |
+| Ldap-Display-Name | uid                                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.1                   |
-| System-ID-GUID    | 0bb0fca0-1e89-429f-901a-1413894d9f59        |
+| System-Id-Guid    | 0bb0fca0-1e89-429f-901a-1413894d9f59        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ ID utente.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000008                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Classi utilizzate in        | [**account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ ID utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                 |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                 |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000008                                                                                                                                                                                                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                            |
-| Classi utilizzate in        | [**account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**Account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ ID utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                 |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                 |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000008                                                                                                                                                                                                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                            |
-| Classi utilizzate in        | [**account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**Account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ ID utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                 |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                 |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000008                                                                                                                                                                                                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                            |
-| Classi utilizzate in        | [**account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**Account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ ID utente.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                 |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                 |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                    |
 | Search-Flags           | 0x00000008                                                                                                                                                                                                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                            |
-| Classi utilizzate in        | [**account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**Account**](c-account.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 

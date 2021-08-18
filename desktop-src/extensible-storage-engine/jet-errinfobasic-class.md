@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_ERRINFOBASIC Class'
-title: Classe JET_ERRINFOBASIC (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: JET_ERRINFOBASIC classe'
+title: JET_ERRINFOBASIC classe (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bfcfb43512b77fff6032c2910f5d4d5e6b668536
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93e37f1f7cbe3937b3d7222174753616ddd94c65662177c29ce1572bc9793d1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765871"
 ---
-# <a name="jet_errinfobasic-class"></a>Classe JET_ERRINFOBASIC
+# <a name="jet_errinfobasic-class"></a>JET_ERRINFOBASIC classe
 
 Contiene le informazioni su un errore.
 
@@ -40,8 +40,8 @@ Contiene le informazioni su un errore.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,6 +68,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_ERRINFOBASIC](./jet-errinfobasic-members.md)
+[JET_ERRINFOBASIC membri](./jet-errinfobasic-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,43 +1,43 @@
 ---
-description: I flag nella tabella seguente specificano i meccanismi di protezione dell'output per l'output Protection Manager (OPM).
+description: I flag nella tabella seguente specificano i meccanismi di protezione dell'output per Output Protection Manager (OPM).
 ms.assetid: 484dfea9-301d-4b2b-b5d1-d785ebaa8c8f
-title: Flag del tipo di protezione OPM (Opmapi. h)
+title: Flag del tipo di protezione OPM (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc8b30a18f5c7bf68fb01775751aa56e1e619f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ee61b17ee1708f8c2fc7e2f91b33d966b17f8fd2e198e2772c30ccccf837d04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119101890"
 ---
 # <a name="opm-protection-type-flags"></a>Flag del tipo di protezione OPM
 
-I flag nella tabella seguente specificano i meccanismi di protezione dell'output per l'output Protection Manager (OPM).
+I flag nella tabella seguente specificano i meccanismi di protezione dell'output per Output Protection Manager (OPM).
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                                                     | Descrizione                                                                                                                                                                                                                 |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="OPM_PROTECTION_TYPE_OTHER"></span><span id="opm_protection_type_other"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ altri**</dt> <dt>0x80000000</dt> </dl>                                                | Meccanismo di protezione sconosciuto.<br/>                                                                                                                                                                                    |
-| <span id="OPM_PROTECTION_TYPE_NONE"></span><span id="opm_protection_type_none"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ None**</dt> <dt>0x00000000</dt> </dl>                                                   | Nessun meccanismo di protezione.<br/>                                                                                                                                                                                        |
-| <span id="OPM_PROTECTION_TYPE_COPP_COMPATIBLE_HDCP"></span><span id="opm_protection_type_copp_compatible_hdcp"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ Copp \_ compatibile con 0x00000001 \_ HDCP**</dt> <dt></dt> </dl> | High-Bandwidth protezione del contenuto digitali (HDCP). Questo flag viene utilizzato per l'emulazione di COPP (Certified Output Protocol). Per altre informazioni, vedere la sezione Osservazioni. Questo flag non è supportato per la semantica di OPM.<br/> |
-| <span id="OPM_PROTECTION_TYPE_ACP"></span><span id="opm_protection_type_acp"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ ACP**</dt> <dt>0x00000002</dt> </dl>                                                      | Protezione copia analoga (ACP).<br/>                                                                                                                                                                                    |
-| <span id="OPM_PROTECTION_TYPE_CGMSA"></span><span id="opm_protection_type_cgmsa"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ CGMSA**</dt> <dt>0x00000004</dt> </dl>                                                | Sistema di gestione della generazione di copia: analogico (CGMS-A).<br/>                                                                                                                                                               |
-| <span id="OPM_PROTECTION_TYPE_HDCP"></span><span id="opm_protection_type_hdcp"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ HDCP**</dt> <dt>0x00000008</dt> </dl>                                                   | Protocollo HDCP. Questo flag viene usato quando l'oggetto OPM ha la semantica OPM. Non è supportata per la semantica COPP.<br/>                                                                                                           |
-| <span id="OPM_PROTECTION_TYPE_DPCP"></span><span id="opm_protection_type_dpcp"></span><dl> <dt>**OPM \_ Tipo di protezione \_ \_ DPCP**</dt> <dt>0x00000010</dt> </dl>                                                   | DisplayPort protezione del contenuto (DPCP).<br/>                                                                                                                                                                           |
+| <span id="OPM_PROTECTION_TYPE_OTHER"></span><span id="opm_protection_type_other"></span><dl> <dt>**OPM \_ PROTECTION \_ TYPE \_ OTHER**</dt> <dt>0x80000000</dt> </dl>                                                | Meccanismo di protezione sconosciuto.<br/>                                                                                                                                                                                    |
+| <span id="OPM_PROTECTION_TYPE_NONE"></span><span id="opm_protection_type_none"></span><dl> <dt>**OPM \_ TIPO \_ DI \_ PROTEZIONE NONE**</dt> <dt>0x00000000</dt> </dl>                                                   | Nessun meccanismo di protezione.<br/>                                                                                                                                                                                        |
+| <span id="OPM_PROTECTION_TYPE_COPP_COMPATIBLE_HDCP"></span><span id="opm_protection_type_copp_compatible_hdcp"></span><dl> <dt>**OPM \_ PROTECTION \_ TYPE \_ COPP \_ COMPATIBLE \_ HDCP**</dt> <dt>0x00000001</dt> </dl> | High-Bandwidth Digital protezione del contenuto (HDCP). Questo flag viene usato per l'emulazione del protocollo COPP (Certified Output Protection Protocol). Per altre informazioni, vedere la sezione Osservazioni. Questo flag non è supportato per la semantica OPM.<br/> |
+| <span id="OPM_PROTECTION_TYPE_ACP"></span><span id="opm_protection_type_acp"></span><dl> <dt>**OPM \_ PROTECTION \_ TYPE \_ ACP**</dt> <dt>0x00000002</dt> </dl>                                                      | Analog Copy Protection (ACP).<br/>                                                                                                                                                                                    |
+| <span id="OPM_PROTECTION_TYPE_CGMSA"></span><span id="opm_protection_type_cgmsa"></span><dl> <dt>**OPM \_ PROTECTION \_ TYPE \_ CGMSA**</dt> <dt>0x00000004</dt> </dl>                                                | Copy Generation Management System- Analog (CGMS-A).<br/>                                                                                                                                                               |
+| <span id="OPM_PROTECTION_TYPE_HDCP"></span><span id="opm_protection_type_hdcp"></span><dl> <dt>**OPM \_ TIPO \_ DI \_ PROTEZIONE HDCP**</dt> <dt>0x00000008</dt> </dl>                                                   | Hdcp. Questo flag viene usato quando l'oggetto OPM ha la semantica OPM. Non è supportata per la semantica COPP.<br/>                                                                                                           |
+| <span id="OPM_PROTECTION_TYPE_DPCP"></span><span id="opm_protection_type_dpcp"></span><dl> <dt>**OPM \_ TIPO \_ DI \_ PROTEZIONE DPCP**</dt> <dt>0x00000010</dt> </dl>                                                   | DisplayPort protezione del contenuto (DPCP).<br/>                                                                                                                                                                           |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questi flag vengono usati nei seguenti comandi e richieste di stato di OPM.
+Questi flag vengono usati nei comandi OPM e nelle richieste di stato seguenti.
 
--   [\_livello di \_ protezione \_ set OPM](opm-set-protection-level.md)
--   [\_livello di \_ \_ protezione virtuale \_ di OPM Get](opm-get-virtual-protection-level.md)
--   [OPM \_ ottenere \_ il \_ livello di protezione effettivo \_](opm-get-actual-protection-level.md)
+-   [OPM \_ SET \_ PROTECTION \_ LEVEL](opm-set-protection-level.md)
+-   [OPM \_ GET \_ VIRTUAL \_ PROTECTION \_ LEVEL](opm-get-virtual-protection-level.md)
+-   [OPM \_ GET \_ ACTUAL \_ PROTECTION \_ LEVEL](opm-get-actual-protection-level.md)
 
-### <a name="hdcp"></a>PROTOCOLLO HDCP
+### <a name="hdcp"></a>Hdcp
 
 I due flag seguenti sono definiti per HDCP.
 
@@ -45,8 +45,8 @@ I due flag seguenti sono definiti per HDCP.
 
 | Valore                                         | Descrizione                                                                                                                                                                    |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| tipo di protezione di OPM \_ \_ \_ HDCP                   | Usare questo flag se il puntatore [**IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) è stato creato con la semantica OPM.                                                                        |
-| \_tipo di protezione OPM \_ \_ Copp \_ compatibile con \_ HDCP | Utilizzare questo flag se il puntatore [**IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) è stato creato con la semantica di Copp. Questo flag corrisponde al flag COPP \_ ProtectionType \_ HDCP in copp. |
+| TIPO DI PROTEZIONE OPM \_ \_ \_ HDCP                   | Usare questo flag se il [**puntatore IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) è stato creato con la semantica OPM.                                                                        |
+| HDCP COMPATIBILE CON COPP DI TIPO \_ \_ PROTEZIONE \_ \_ \_ OPM | Usare questo flag se il [**puntatore IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) è stato creato con la semantica COPP. Questo flag corrisponde al \_ flag HDCP COPP ProtectionType \_ in COPP. |
 
 
 
@@ -54,15 +54,15 @@ I due flag seguenti sono definiti per HDCP.
 
 Entrambe le modalità (semantica OPM e semantica COPP) supportano le operazioni seguenti per HDCP:
 
--   Abilitare o disabilitare HDCP usando il comando [OPM \_ set \_ Protection \_ Level](opm-set-protection-level.md) .
--   Eseguire una query per verificare se la funzionalità HDCP è abilitata usando la richiesta di stato del livello di protezione ( [OPM \_ get \_ virtual \_ Protection \_ ](opm-get-virtual-protection-level.md) ) o [OPM \_ get \_ actual \_ \_ ](opm-get-actual-protection-level.md) .
+-   Abilitare o disabilitare HDCP usando il [comando OPM \_ SET PROTECTION \_ \_ LEVEL.](opm-set-protection-level.md)
+-   Eseguire una query per determinare se HDCP è abilitato usando la richiesta di stato [OPM \_ GET VIRTUAL PROTECTION \_ \_ \_ LEVEL](opm-get-virtual-protection-level.md) o [OPM GET ACTUAL PROTECTION \_ \_ \_ \_ LEVEL.](opm-get-actual-protection-level.md)
 
-La semantica di OPM supporta inoltre quanto segue:
+La semantica OPM supporta anche quanto segue:
 
--   Ripetitori HDCP. Un *Repeater HDCP* è un dispositivo HDCP che può ricevere contenuti HDCP e anche crittografare nuovamente e trasmettere lo stesso contenuto.
--   Revoca HDCP. Se un dispositivo HDCP revocato viene collegato all'output del video OPM, l'output del video non trasmette il video. Non è necessario che l'applicazione analizzi i messaggi di rinnovabilità del sistema HDCP (SRM) o determini se il dispositivo di output è stato revocato. Per altre informazioni, vedere il comando [**OPM \_ set \_ HDCP \_ MSR**](opm-set-hdcp-srm.md) .
+-   Ripetitori HDCP. Un *ripetitore HDCP è* un dispositivo HDCP che può ricevere contenuto HDCP e anche crittografare e trasmettere lo stesso contenuto.
+-   Revoca HDCP. Se un dispositivo HDCP revocato è collegato all'output video OPM, l'output video non trasmetterà il video. L'applicazione non deve analizzare i messaggi di rinnovo del sistema HDCP o determinare se il dispositivo di output è stato revocato. Per altre informazioni, vedere il [**comando OPM \_ SET \_ HDCP \_ SRM.**](opm-set-hdcp-srm.md)
 
-Quando si usano la semantica COPP, l'interfaccia [**IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) non supporta i ripetitori HDCP. Non gestisce inoltre la revoca HDCP. Al contrario, l'applicazione deve analizzare l'SRM per determinare se un dispositivo HDCP è stato revocato.
+Quando si usa la semantica COPP, [**l'interfaccia IOPMVideoOutput**](/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput) non supporta i ripetitori HDCP. Inoltre, non gestisce la revoca HDCP. Al contrario, l'applicazione deve analizzare SRM per determinare se un dispositivo HDCP è stato revocato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ Quando si usano la semantica COPP, l'interfaccia [**IOPMVideoOutput**](/windows/
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Quando si usano la semantica COPP, l'interfaccia [**IOPMVideoOutput**](/windows/
 
 <dl> <dt>
 
-[Enumerazioni di OPM](opm-enumerations.md)
+[Enumerazioni OPM](opm-enumerations.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Metodo CreateObject IWMDRMProvider (wmdrmsdk. h)
-description: Il metodo CreateObject recupera un puntatore a un'interfaccia specificata e, se necessario, crea l'oggetto di implementazione.
+title: Metodo IWMDRMProvider CreateObject (Wmdrmsdk.h)
+description: Il metodo CreateObject recupera un puntatore a un'interfaccia specificata, creando l'oggetto di implementazione, se necessario.
 ms.assetid: d408f7f3-9e49-4747-ac8f-d39db31d1240
 keywords:
-- Metodo CreateObject formato Windows Media
-- Metodo CreateObject formato Windows Media, interfaccia IWMDRMProvider
-- Interfaccia IWMDRMProvider-formato Windows Media, metodo CreateObject
+- Metodo CreateObject windows Media Format
+- Metodo CreateObject windows Media Format , interfaccia IWMDRMProvider
+- Interfaccia IWMDRMProvider windows Media Format, metodo CreateObject
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0422138391b0d6f5e38fbc81fd5141bd3d8535
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f50341e33092b33b19ec3f41d968e0a1b7bc883ae959b200f6c7062e4c69996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700777"
 ---
-# <a name="iwmdrmprovidercreateobject-method"></a>Metodo IWMDRMProvider:: CreateObject
+# <a name="iwmdrmprovidercreateobject-method"></a>Metodo IWMDRMProvider::CreateObject
 
-Il metodo **CreateObject** recupera un puntatore a un'interfaccia specificata e, se necessario, crea l'oggetto di implementazione.
+Il **metodo CreateObject** recupera un puntatore a un'interfaccia specificata, creando l'oggetto di implementazione, se necessario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ HRESULT CreateObject(
 
 <dl> <dt>
 
-*riid* \[ in\]
+*riid* \[ Pollici\]
 </dt> <dd>
 
 Identificatore dell'interfaccia da creare. Impostare su uno dei valori seguenti.
 
--   \_IWMDRMLICENSEMANAGEMENT IID
--   \_IWMDRMLICENSEQUERY IID
--   \_IWMDRMNETRECEIVER IID
--   \_IWMDRMNETTRANSMITTER IID
--   \_IWMDRMSECURITY IID
+-   IID \_ IWMDRMLicenseManagement
+-   IID \_ IWMDRMLicenseQuery
+-   IID \_ IWMDRMNetReceiver
+-   IID \_ IWMDRMNetTransmitter
+-   IID \_ IWMDRMSecurity
 
 </dd> <dt>
 
-*ppvObject* \[ out\]
+*ppvObject* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di un puntatore che riceve l'indirizzo dell'interfaccia richiesta.
@@ -66,13 +66,13 @@ Indirizzo di un puntatore che riceve l'indirizzo dell'interfaccia richiesta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -80,7 +80,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

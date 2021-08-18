@@ -1,19 +1,19 @@
 ---
-description: Indica se un dispositivo HID è un dispositivo Read-Only.
+description: Indica se un dispositivo HID è un Read-Only dispositivo.
 ms.assetid: cfac4094-94ee-47db-ba0d-cfb51a6d91a1
-title: System. DeviceInterface. HID. IsReadOnly
+title: System.DeviceInterface.Hid.IsReadOnly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1aa4cc3f49001cd827a88acd0a4761beeb38f30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c2be1f6b4b152936ae54ef1135909e128059868d55776267fe939e79ef3d63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728742"
 ---
-# <a name="systemdeviceinterfacehidisreadonly"></a>System. DeviceInterface. HID. IsReadOnly
+# <a name="systemdeviceinterfacehidisreadonly"></a>System.DeviceInterface.Hid.IsReadOnly
 
-Indica se un dispositivo HID è un dispositivo Read-Only.
+Indica se un dispositivo HID è un Read-Only dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

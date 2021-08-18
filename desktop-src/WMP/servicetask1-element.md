@@ -1,9 +1,9 @@
 ---
 title: Elemento ServiceTask1
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. L'elemento ServiceTask1 rappresenta il primo riquadro attività negozio online.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. L'elemento ServiceTask1 rappresenta il primo riquadro attività del negozio online.
 ms.assetid: 39b149ae-ea67-4fba-812b-15a97044fcd8
 keywords:
-- Finestra elementi ServiceTask1 Media Player
+- Elemento ServiceTask1 Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ca83f5f7935e8d1dfd376f569bd61f68d7e93bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2fc22e01329728935e2953b5be7a3a1042cee00da3a3b9756915de2aeafe9b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995411"
 ---
 # <a name="servicetask1-element"></a>Elemento ServiceTask1
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-L'elemento **ServiceTask1** rappresenta il primo riquadro attività negozio online.
+**L'elemento ServiceTask1** rappresenta il primo riquadro attività del negozio online.
 
 ``` syntax
 <ServiceTask1
@@ -41,7 +41,7 @@ L'elemento **ServiceTask1** rappresenta il primo riquadro attività negozio onli
 
 | Termine                                                                                                                             | Descrizione                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="URL__required_"></span><span id="url__required_"></span><span id="URL__REQUIRED_"></span>**URL** (obbligatorio)<br/> | URL per la pagina Web visualizzata da Windows Media Player.<br/> |
+| <span id="URL__required_"></span><span id="url__required_"></span><span id="URL__REQUIRED_"></span>**URL** (obbligatorio)<br/> | URL per la pagina Web Windows Media Player visualizzata.<br/> |
 
 
 
@@ -62,27 +62,27 @@ L'elemento **ServiceTask1** rappresenta il primo riquadro attività negozio onli
 
 ## <a name="remarks"></a>Commenti
 
-**ServiceTask1** viene considerato il riquadro attività principale per coinvolgere le attività commerciali. Si tratta del riquadro attività visualizzato quando l'utente sceglie di acquistare musica.
+**ServiceTask1 è** considerato il riquadro attività principale per l'attività commerciale. È il riquadro attività che viene visualizzato quando l'utente sceglie di acquistare musica.
 
 > [!Note]  
-> Windows Media Player 10 include tre riquadri attività in cui un negozio online può visualizzare le pagine Web. Lo Store online può scegliere di usare uno, due o tutti e tre i riquadri attività. Windows Media Player 11 dispone di un solo riquadro attività, rappresentato da **ServiceTask1**, che l'utente può visualizzare facendo clic sulla scheda **online stores** .
+> Windows Media Player 10 include tre riquadri attività in cui un negozio online può visualizzare le pagine Web. Lo Store online può scegliere di usare uno, due o tutti e tre i riquadri attività. Windows Media Player 11 ha un solo riquadro attività, rappresentato da **ServiceTask1,** che l'utente può visualizzare facendo clic sulla **scheda Negozi** online.
 
  
 
-I riquadri attività archivio online condividono una singola istanza del browser. Ciò significa che non è necessario scrivere codice di script nella pagina Web che si prevede di continuare a eseguire quando l'utente passa dall'attività del servizio corrente.
+I riquadri attività del negozio online condividono una singola istanza del browser. Ciò significa che non è consigliabile scrivere codice script nella pagina Web che si prevede di continuare a eseguire quando l'utente si allontana dall'attività del servizio corrente.
 
-Quando l'utente passa i riquadri attività, Windows Media Player archivia i cookie di sessione e l'URL. Quando l'utente torna al riquadro attività, il lettore ripristina l'URL e i cookie. Se l'utente sceglie di usare un archivio online diverso, i dati dell'URL e della sessione vengono cancellati.
+Quando l'utente cambia riquadro attività, Windows Media Player l'URL e i cookie di sessione. Quando l'utente torna al riquadro attività, Player ripristina l'URL e i cookie. Se l'utente sceglie di usare un negozio online diverso, l'URL e i dati della sessione vengono cancellati.
 
-La tabella seguente illustra in dettaglio i parametri inviati con la richiesta URL. Altri possono essere presenti per motivi di compatibilità con le versioni precedenti.
+Nella tabella seguente sono riportati i dettagli dei parametri inviati con la richiesta URL. Altri possono essere presenti per motivi di compatibilità legacy.
 
 
 
 | Nome         | Valore                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Geoid*      | ID della posizione geografica di Windows. L'ID percorso viene specificato dall'utente nell'area **località** delle impostazioni Opzioni internazionali e della lingua nel pannello di controllo. |
+| *Geoid*      | Windows ID località geografica. L'ID località viene specificato dall'utente nell'area **Località** delle impostazioni opzioni internazionali e della lingua in Pannello di controllo. |
 | *locale*     | Windows Media Player ID impostazioni locali.                                                                                                                                     |
-| *UserLocale* | ID delle impostazioni locali di Windows. Le impostazioni locali vengono specificate dall'utente nell'area **standard e formati** delle impostazioni Opzioni internazionali e della lingua nel pannello di controllo.        |
-| *version*    | Il numero di versione di Windows Media Player usando il formato seguente: 10.0. x. xxxx o 11.0. x. xxxx.                                                                         |
+| *userlocale* | Windows ID impostazioni locali. Le impostazioni locali vengono specificate dall'utente nell'area **Standard** e formati delle impostazioni opzioni internazionali e della lingua Pannello di controllo.        |
+| *version*    | Windows Media Player numero di versione usando il formato seguente: 10.0.x.xxxx o 11.0.x.xxxx.                                                                         |
 
 
 
@@ -102,10 +102,10 @@ La tabella seguente illustra in dettaglio i parametri inviati con la richiesta U
 
 <dl> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

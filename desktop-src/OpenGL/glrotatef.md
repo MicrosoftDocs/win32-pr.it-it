@@ -1,9 +1,9 @@
 ---
-title: funzione glRotatef (GL. h)
-description: La funzione glRotatef moltiplica la matrice corrente in base a una matrice di rotazione.
+title: Funzione glRotatef (Gl.h)
+description: La funzione glRotatef moltiplica la matrice corrente per una matrice di rotazione.
 ms.assetid: 8216a125-de8c-44e5-afb3-3d4e5ffc600d
 keywords:
-- funzione glRotatef OpenGL
+- Funzione glRotatef OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953b8ffc5f89e5a4cf9901e4cb5fb5afb4c8dfdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98f466ca73a826d9a12f97093c90c41cd1c753b01f25853096dd3f3219628654
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937931"
 ---
-# <a name="glrotatef-function"></a>glRotatef (funzione)
+# <a name="glrotatef-function"></a>Funzione glRotatef
 
-La funzione **glRotatef** moltiplica la matrice corrente in base a una matrice di rotazione.
+La **funzione glRotatef** moltiplica la matrice corrente per una matrice di rotazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI glRotatef(
 
 <dl> <dt>
 
-*angolo* 
+*Angolo* 
 </dt> <dd>
 
 Angolo di rotazione, in gradi.
@@ -77,35 +77,35 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glRotatef** calcola una matrice che esegue una rotazione in senso antiorario dei gradi *angolari* sul vettore dall'origine al punto (*x*, *y*, *z*).
+La **funzione glRotatef** calcola una matrice che esegue  una rotazione in senso antiorario dei gradi angolari intorno al vettore dall'origine al punto (*x*, *y*, *z*).
 
-La matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)) viene moltiplicata per la matrice di rotazione, con il prodotto che sostituisce la matrice corrente. Ovvero, se M è la matrice corrente e R è la matrice di traslazione, M viene sostituito con M R.
+La matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)) viene moltiplicata per questa matrice di rotazione, con il prodotto che sostituisce la matrice corrente. In altri punti, se M è la matrice corrente e R è la matrice di traslazione, M viene sostituito con M R.
 
-Se la modalità matrice è la \_ proiezione GL MODELVIEW o GL \_ , vengono ruotati tutti gli oggetti disegnati dopo **glRotatef** . Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare il sistema di coordinate non ruotato.
+Se la modalità matrice è GL MODELVIEW o GL PROJECTION, tutti gli oggetti disegnati dopo la chiamata \_ \_ a **glRotatef** vengono ruotati. Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare il sistema di coordinate non tortuoso.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glRotatef**:
+Le funzioni seguenti recuperano informazioni correlate a **glRotatef**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con modalità di \_ rendering GL argomento \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ RENDER \_ MODE
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ modalità matrice GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MATRIX \_ MODE
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MODELVIEW \_ Matrix
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MODELVIEW \_ MATRIX
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con matrice di \_ proiezione GL argomento \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ PROJECTION \_ MATRIX
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ matrice di trama GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,8 +115,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glRotat
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -128,7 +128,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glRotat
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glMatrixMode**](glmatrixmode.md)

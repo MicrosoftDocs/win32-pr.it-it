@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TVN_SELCHANGED (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione albero che la selezione è cambiata da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TVN_SELCHANGED di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione albero che la selezione è stata modificata da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 682170d3-5843-4d92-afeb-c37f3502ed5d
 keywords:
-- Controlli di Windows per il codice di notifica TVN_SELCHANGED
+- TVN_SELCHANGED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a564ec039e179d03dda9edc19d6de3412cd5361a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7708d797edebc8c2c0bf43b910aec4dc0a1d6ece1a8a535fdcac57e6b15d6e04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957780"
 ---
-# <a name="tvn_selchanged-notification-code"></a>\_Codice di notifica SELCHANGED di TVN
+# <a name="tvn_selchanged-notification-code"></a>Codice di notifica \_ TVN SELCHANGED
 
-Notifica alla finestra padre di un controllo di visualizzazione albero che la selezione è cambiata da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione albero che la selezione è stata modificata da un elemento a un altro. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,15 +43,15 @@ TVN_SELCHANGED
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) . I membri **itemOld** e **ItemNew** della struttura **NMTREEVIEW** sono strutture [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) contenenti informazioni sull'elemento selezionato in precedenza e sull'elemento appena selezionato. Sono validi solo i membri **mask**, **hitet**, **state** e **lParam** di queste strutture. I membri **stateMask** delle strutture **TVITEM** specificate da **itemOld** e **itemNew** non sono definiti nell'input. Il membro **Action** della struttura **NMTREEVIEW** indica il tipo di azione che ha causato la modifica della selezione. Può essere uno dei valori seguenti:
+Puntatore a [**una struttura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) **ItemOld** e **itemNew** members of the **NMTREEVIEW** structure are [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) structures that contain information about the previously selected item and the newly selected item. Sono **validi solo** i membri mask , **hItem**, **state** e **lParam** di queste strutture. I **membri stateMask** delle **strutture TVITEM** specificate da **itemOld** e **itemNew** non sono definiti nell'input. Il **membro** azione della **struttura NMTREEVIEW** indica il tipo di azione che ha causato la modifica della selezione. Può essere uno dei valori seguenti:
 
 
 
 | Requisito | Valore |
 |-----------------|-------------------|
-| \_BYKEYBOARD TVC | Da una sequenza di tasti.   |
-| \_BYMOUSE TVC    | Con un clic del mouse. |
-| TVC \_ sconosciuto    | Sconosciuto.          |
+| TVC \_ BYKEYBOARD | Da una sequenza di tasti.   |
+| TVC \_ BYMOUSE    | Con un clic del mouse. |
+| TVC \_ UNKNOWN    | Sconosciuto.          |
 
 
 
@@ -69,9 +69,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TVN \_ SELCHANGEDW** (Unicode) e **TVN \_ SELCHANGEDA** (ANSI)<br/>             |
 
 

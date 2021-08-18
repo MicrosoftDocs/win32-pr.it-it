@@ -1,17 +1,17 @@
 ---
 description: Porta in cui si trova la stampante.
 ms.assetid: 3FC1E36D-A03F-44ef-AD49-EE2F51703DBB
-title: System. DeviceInterface. PrinterPortName
+title: System.DeviceInterface.PrinterPortName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f94e7f39bf1ab16899b7c16553a8e6249169914
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a312d80a41e5de3f7771706a3e056c2b684a9eddaa2642e5f4524852841ba0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098012"
 ---
-# <a name="systemdeviceinterfaceprinterportname"></a>System. DeviceInterface. PrinterPortName
+# <a name="systemdeviceinterfaceprinterportname"></a>System.DeviceInterface.PrinterPortName
 
 Porta in cui si trova la stampante.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
