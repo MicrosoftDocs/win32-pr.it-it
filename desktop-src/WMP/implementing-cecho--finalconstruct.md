@@ -5,7 +5,7 @@ ms.assetid: 149e99c5-9f57-4447-b520-39a6dd39fc86
 keywords:
 - Windows Media Player plug-in, pagine delle proprietà di esempio Echo
 - plug-in, pagine delle proprietà di esempio Echo
-- plug-in di elaborazione del segnale digitale, pagine delle proprietà di esempio Echo
+- plug-in di elaborazione del segnale digitale,pagine delle proprietà di esempio Echo
 - Plug-in DSP, pagine delle proprietà di esempio Echo
 - Esempio di plug-in Echo DSP, pagine delle proprietà
 - Esempio di plug-in Echo DSP, metodo CEcho FinalConstruct
@@ -20,9 +20,9 @@ ms.locfileid: "117748146"
 ---
 # <a name="implementing-cechofinalconstruct"></a>Implementazione di CEcho::FinalConstruct
 
-Il metodo CEcho::FinalConstruct viene implementato in Echo.cpp. Contiene il codice per leggere i valori delle proprietà dal Registro di sistema quando Windows Media Player crea un'istanza dell'oggetto plug-in DSP. Questo è importante perché consente di mantenere le impostazioni utente tra istanze dell'oggetto e tra sessioni. Il codice di esempio della procedura guidata plug-in fornisce l'implementazione per leggere una singola proprietà dal Registro di sistema. È possibile modificare questo codice per gestire la proprietà delay time e quindi aggiungere codice per leggere il valore della proprietà wet mix.
+Il metodo CEcho::FinalConstruct viene implementato in Echo.cpp. Contiene il codice per leggere i valori delle proprietà dal Registro di sistema Windows Media Player crea un'istanza dell'oggetto plug-in DSP. Questo è importante perché consente alle impostazioni utente di mantenere le istanze dell'oggetto e tra una sessione e l'altra. Il codice di esempio della procedura guidata plug-in fornisce l'implementazione per leggere una singola proprietà dal Registro di sistema. È possibile modificare questo codice per gestire la proprietà delay time e quindi aggiungere il codice per leggere il valore della proprietà wet mix.
 
-Il codice di esempio seguente legge ogni valore della proprietà dal Registro di sistema e li archivia nella variabile membro corretta:
+Il codice di esempio seguente legge ogni valore di proprietà dal Registro di sistema e li archivia nella variabile membro corretta:
 
 
 ```CSharp

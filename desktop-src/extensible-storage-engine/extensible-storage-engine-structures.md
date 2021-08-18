@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: strutture Extensible Storage Engine'
-title: Strutture Extensible Storage Engine
+description: 'Altre informazioni su: Extensible Archiviazione Engine Structures'
+title: Strutture del motore Archiviazione estendibile
 TOCTitle: Extensible Storage Engine Structures
 ms:assetid: 0fe8a183-0f4b-4840-a53f-2d6494c43f22
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269187(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1ca5bf214b4aad7d39000f1fe3e58c540cfe8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e67f30c4fa2f142e616074bb50994da31b5e992e16123e195c6124741182e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706233"
 ---
-# <a name="extensible-storage-engine-structures"></a>Strutture Extensible Storage Engine
+# <a name="extensible-storage-engine-structures"></a>Strutture del motore Archiviazione estendibile
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="extensible-storage-engine-structures"></a>Strutture Extensible Storage Engine
+## <a name="extensible-storage-engine-structures"></a>Strutture del motore Archiviazione estendibile
 
-L'API del motore di archiviazione estendibile presenta le strutture seguenti:
+L'API extensible Archiviazione Engine ha le strutture seguenti:
 
   - [JET_BKINFO](./jet-bkinfo-structure.md)
 

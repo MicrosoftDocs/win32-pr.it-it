@@ -3,8 +3,8 @@ title: Enumerazioni di Gestione tabelle di routing versione 2
 description: Le funzioni RTMv2 usano l'enumerazione seguente
 ms.assetid: 5fb3c879-afeb-4d3a-a94a-84e25023336a
 keywords:
-- Routing e Servizio di accesso remoto RRAS, Gestione tabelle di routing versione 2,tipi enumerati
-- Routing Table Manager versione 2 RRAS, tipi enumerati
+- Servizio Routing e Accesso remoto RRAS, Gestione tabelle di routing versione 2, tipi enumerati
+- Gestione tabelle di routing versione 2 RRAS, tipi enumerati
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c684161869e8f53b70224190a2895d0f3394e77f23139e01dd0b40b28c9ef378

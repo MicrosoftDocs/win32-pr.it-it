@@ -1,27 +1,27 @@
 ---
-description: Nell'esempio di codice viene illustrato un client pipe che apre una named pipe, imposta l'handle della pipe sulla modalità di lettura del messaggio, utilizza la funzione WriteFile per inviare una richiesta al server e utilizza la funzione ReadFile per leggere la risposta dei server.
+description: L'esempio di codice mostra un client pipe che apre un named pipe, imposta l'handle di pipe in modalità di lettura messaggio, usa la funzione WriteFile per inviare una richiesta al server e usa la funzione ReadFile per leggere la risposta dei server.
 ms.assetid: 0779242c-45f4-4cd9-9c9f-36cff54c8dee
-title: Client named pipe
+title: Named Pipe Client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6318edd7d5b41c701e3112188a896c0529338805
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d00a3fec3e3d7df80468822d2e147cbae38f440e39fd55dafc9ed3ea2442cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695174"
 ---
-# <a name="named-pipe-client"></a>Client named pipe
+# <a name="named-pipe-client"></a>Named Pipe Client
 
-Un client named pipe utilizza la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) per aprire un handle per un named pipe. Se la pipe esiste ma tutte le relative istanze sono occupate, **CreateFile** restituisce un **\_ \_ valore di handle non valido** e la funzione [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce la pipe degli errori \_ \_ occupata. Quando ciò si verifica, il client named pipe utilizza la funzione [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) per attendere che un'istanza del named pipe diventi disponibile.
+Un named pipe client usa la [**funzione CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) per aprire un handle a un named pipe. Se la pipe esiste ma tutte le relative istanze sono occupate, **CreateFile** restituisce **INVALID HANDLE \_ \_ VALUE** e la funzione [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR \_ PIPE \_ BUSY. In questo caso, il client named pipe usa la funzione [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) per attendere che un'istanza del named pipe diventi disponibile.
 
-La funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) ha esito negativo se l'accesso specificato non è compatibile con l'accesso specificato (duplex, in uscita o in ingresso) quando il server ha creato la pipe. Per una pipe duplex, il client può specificare l'accesso in lettura, scrittura o lettura/scrittura; per una pipe in uscita (server di sola scrittura), il client deve specificare l'accesso in sola lettura. per una pipe in ingresso (server di sola lettura), il client deve specificare l'accesso in sola scrittura.
+La [**funzione CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) ha esito negativo se l'accesso specificato non è compatibile con l'accesso specificato (duplex, in uscita o in ingresso) quando il server ha creato la pipe. Per una pipe duplex, il client può specificare l'accesso in lettura, scrittura o lettura/scrittura; per una pipe in uscita (server di sola scrittura), il client deve specificare l'accesso in sola lettura; e per una pipe in ingresso (server di sola lettura), il client deve specificare l'accesso in sola scrittura.
 
-Per impostazione predefinita, l'handle restituito da [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) viene impostato sulla modalità di lettura byte, sulla modalità di attesa blocco, sulla modalità sovrapposta disabilitata e sulla modalità Write-through disabilitata. Il client pipe può utilizzare **CreateFile** per abilitare la modalità sovrapposta specificando il flag di file \_ \_ sovrapposto o abilitare la modalità Write-through specificando la scrittura del flag di file \_ \_ \_ . Il client può usare la funzione [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) per abilitare la modalità non di blocco SPECIFICAndo pipe \_ nowait o per abilitare la modalità di lettura del messaggio specificando pipe \_ READMODE \_ Message.
+Per impostazione predefinita, l'handle restituito da [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) è la modalità di lettura byte, la modalità di blocco-attesa, la modalità sovrapposta disabilitata e la modalità write-through disabilitata. Il client pipe può usare **CreateFile** per abilitare la modalità sovrapposta specificando FILE FLAG OVERLAPPED o per abilitare la \_ modalità write-through specificando FILE FLAG WRITE \_ \_ \_ \_ THROUGH. Il client può usare la [**funzione SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) per abilitare la modalità non di blocco specificando PIPE NOWAIT o per abilitare la modalità lettura messaggi specificando \_ PIPE \_ READMODE \_ MESSAGE.
 
-Nell'esempio seguente viene illustrato un client pipe che apre una named pipe, imposta l'handle della pipe sulla modalità di lettura del messaggio, usa la funzione [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) per inviare una richiesta al server e usa la funzione [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) per leggere la risposta del server. Questo client pipe può essere utilizzato con qualsiasi server di tipo messaggio elencato nella parte inferiore di questo argomento. Con un server di tipo byte, tuttavia, questo client pipe ha esito negativo quando chiama [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) per passare alla modalità di lettura del messaggio. Poiché il client sta leggendo dalla pipe in modalità di lettura del messaggio, è possibile che l'operazione **ReadFile** restituisca zero dopo la lettura di un messaggio parziale. Ciò si verifica quando il messaggio è più grande del buffer di lettura. In questa situazione, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce un errore di \_ più \_ dati e il client può leggere il resto del messaggio usando chiamate aggiuntive a **ReadFile**.
+Nell'esempio seguente viene illustrato un client pipe che apre un named pipe, imposta l'handle della pipe in modalità di lettura messaggi, usa la funzione [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) per inviare una richiesta al server e usa la funzione [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) per leggere la risposta del server. Questo client pipe può essere utilizzato con uno dei server di tipo messaggio elencati alla fine di questo argomento. Con un server di tipo byte, tuttavia, questo client pipe ha esito negativo quando chiama [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) per passare alla modalità di lettura del messaggio. Poiché il client legge dalla pipe in modalità di lettura messaggi, è possibile che **l'operazione ReadFile** restituirà zero dopo la lettura di un messaggio parziale. Ciò si verifica quando il messaggio è più grande del buffer di lettura. In questo caso, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR MORE DATA e il client può leggere il resto del messaggio usando \_ chiamate aggiuntive a \_ **ReadFile.**
 
-Questo client pipe può essere usato con uno qualsiasi dei server pipe elencati in vedere anche.
+Questo client pipe può essere usato con uno qualsiasi dei server pipe elencati in Vedere anche.
 
 
 ```C++
@@ -155,7 +155,7 @@ int _tmain(int argc, TCHAR *argv[])
 [Server pipe multithreading](multithreaded-pipe-server.md)
 </dt> <dt>
 
-[Server named pipe con I/O sovrapposti](named-pipe-server-using-overlapped-i-o.md)
+[Server named pipe con I/O sovrapposto](named-pipe-server-using-overlapped-i-o.md)
 </dt> <dt>
 
 [Server named pipe con routine di completamento](named-pipe-server-using-completion-routines.md)

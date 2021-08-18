@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118503414"
 ---
-# <a name="wm_ctlcolordlg-message"></a>Messaggio \_ WM CTLCOLORDLG
+# <a name="wm_ctlcolordlg-message"></a>Messaggio WM \_ CTLCOLORDLG
 
 Inviato a una finestra di dialogo prima che il sistema disegni la finestra di dialogo. Rispondendo a questo messaggio, la finestra di dialogo può impostare i colori del testo e dello sfondo usando l'handle del contesto di dispositivo di visualizzazione specificato.
 
@@ -56,7 +56,7 @@ Se un'applicazione elabora questo messaggio, deve restituire un handle a un penn
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per la finestra di dialogo.
+Per impostazione predefinita, [**la funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per la finestra di dialogo.
 
 Il sistema non elimina automaticamente il pennello restituito. È responsabilità dell'applicazione eliminare il pennello quando non è più necessario.
 
@@ -64,7 +64,7 @@ Il **messaggio WM \_ CTLCOLORDLG** non viene mai inviato tra i thread. Viene inv
 
 Si noti che il messaggio **WM \_ CTLCOLORDLG** viene inviato alla finestra di dialogo stessa. Tutti gli altri messaggi **WM \_ CTLCOLOR \*** vengono inviati al proprietario del controllo.
 
-Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a **un INT \_ PTR** e restituire direttamente il valore. Se la routine della finestra di dialogo restituisce **FALSE,** viene eseguita la gestione dei messaggi predefinita. Il **valore \_ MSGRESULT DWL** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
+Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a **un \_ INT PTR** e restituire direttamente il valore. Se la routine della finestra di dialogo restituisce **FALSE,** viene eseguita la gestione dei messaggi predefinita. Il **valore \_ MSGRESULT DWL** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 

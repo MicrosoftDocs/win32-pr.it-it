@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come copiare, spostare, eliminare e rinominare oggetti file system.
+description: Illustra come copiare, spostare, eliminare e rinominare file system oggetti .
 title: Esempio di operazioni su file
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 4ef70e6da6e59b0fcff0ba488a26d5e2cf43509a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aea9f50522c71dc36f2a9fa457de66a3cdc05a37d06c590f9fe9cdbe3042b76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677581"
 ---
 # <a name="file-operations-sample"></a>Esempio di operazioni su file
 
-Viene illustrato come copiare, spostare, eliminare e rinominare oggetti file system.
+Illustra come copiare, spostare, eliminare e rinominare file system oggetti .
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio FileOperations](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/fileoperations) |
+| GitHub  | [Esempio di FileOperations](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/fileoperations) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

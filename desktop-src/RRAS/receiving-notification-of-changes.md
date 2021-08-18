@@ -1,52 +1,52 @@
 ---
-title: Ricezione di notifiche di modifiche
+title: Ricezione della notifica delle modifiche
 description: Molti client possono aggiornare contemporaneamente la tabella di routing e i client devono ricevere una notifica quando si verificano modifiche alle informazioni di routing.
 ms.assetid: d42e16e2-32b2-4178-967b-e937730b3cca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bacd8d1d0329cf29be82a890be30b602b9330249
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a6eddc92404acb921b31bab22736561cbbc83e4c1c641da80a8ff95352e52f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788711"
 ---
-# <a name="receiving-notification-of-changes"></a>Ricezione di notifiche di modifiche
+# <a name="receiving-notification-of-changes"></a>Ricezione della notifica delle modifiche
 
-Molti client possono aggiornare contemporaneamente la tabella di routing e i client devono ricevere una notifica quando si verificano modifiche alle informazioni di routing. Ad esempio, un client che non riceve alcuna notifica delle modifiche di un altro client alla tabella di routing potrebbe annunciare informazioni sulle route obsolete. Questa operazione può essere impedita tramite la programmazione dei client per la registrazione con gestione tabelle di routing per ricevere notifiche delle modifiche apportate alla tabella di routing. Gestione tabelle di routing invia le notifiche delle modifiche a tutti i client registrati per riceverli.
+Molti client possono aggiornare contemporaneamente la tabella di routing e i client devono ricevere una notifica quando si verificano modifiche alle informazioni di routing. Ad esempio, un client che non viene informato delle modifiche apportate da un altro client alla tabella di routing potrebbe annunciare informazioni sulla route non aggiornate. Questa operazione può essere impedita dalla programmazione dei client per la registrazione con il gestore tabelle di routing per ricevere notifiche delle modifiche nella tabella di routing. Il gestore tabelle di routing invia notifiche di modifiche a tutti i client che si registrano per riceverle.
 
-La notifica delle modifiche è valida solo per le destinazioni. Non è possibile eseguire query su Gestione tabelle di routing per apportare modifiche a una route specifica.
+La notifica di modifica si applica solo alle destinazioni. Non è possibile eseguire query sul gestore tabelle di routing per le modifiche apportate a una route specifica.
 
-Quando viene apportata una modifica a una delle route a una destinazione, il servizio di gestione delle tabelle di routing invia una notifica che indica che si è verificata una modifica. Questa notifica viene inviata solo ai client che hanno eseguito la registrazione con gestione tabelle di routing per il tipo di modifica che si è verificata. Tutte le modifiche apportate alle informazioni di routing in Gestione tabelle di routing si verificano in una o più viste e i messaggi di notifica delle modifiche possono essere richiesti in qualsiasi subset di visualizzazioni supportate.
+Quando viene apportata una modifica a una delle route verso una destinazione, il gestore tabelle di routing invia una notifica che indica che si è verificata una modifica. Questa notifica viene inviata solo ai client registrati con gestione tabelle di routing per il tipo di modifica che si è verificata. Tutte le modifiche alle informazioni di routing in Gestione tabelle di routing si verificano in una o più viste e i messaggi di notifica delle modifiche possono essere richiesti in qualsiasi subset di viste supportate.
 
-Attualmente sono disponibili tre tipi di notifiche di modifica per le quali un client può registrarsi:
+Esistono attualmente tre tipi di notifiche di modifica per cui un client può eseguire la registrazione:
 
--   Notifica di qualsiasi modifica apportata alle route per la destinazione. Questa richiesta viene eseguita utilizzando il \_ flag di modifica \_ tipo RTM \_ all.
--   Notifica se il percorso migliore per la destinazione cambia o una delle informazioni seguenti per le modifiche più recenti alla route:
+-   Notifica di qualsiasi modifica alle route per la destinazione. Questa richiesta viene effettuata usando il \_ flag RTM CHANGE \_ TYPE \_ ALL.
+-   Notifica se la route migliore per la destinazione cambia o una delle informazioni seguenti per la route migliore corrente cambia:
 
     -   Preferenza
     -   Hop successivi
     -   Flag di route
 
-    Questa richiesta viene eseguita utilizzando il \_ flag di \_ tipo modifica RTM \_ .
+    Questa richiesta viene effettuata usando il \_ flag RTM CHANGE \_ TYPE \_ BEST.
 
--   Notifica di tutte le modifiche apportate al \_ tipo di modifica RTM \_ \_ , eccetto le modifiche apportate ai flag non di inoltro nella migliore route. Ad esempio, gestione router attende le modifiche di questo tipo nella visualizzazione unicast e aggiorna le informazioni nel server d'avvio unicast. Questa richiesta viene effettuata utilizzando il \_ flag di invio del tipo di modifica RTM \_ \_ .
+-   Notifica di tutte le modifiche del tipo RTM CHANGE TYPE BEST, ad eccezione delle modifiche nei flag di non inoltro \_ \_ nella route \_ migliore. Ad esempio, gestione router attende le modifiche di questo tipo nella visualizzazione unicast e aggiorna le informazioni nel server d'inoltro unicast. Questa richiesta viene effettuata usando il \_ flag RTM CHANGE \_ TYPE \_ FORWARDING.
 
-È anche possibile limitare le richieste di notifiche delle modifiche a un subset di destinazioni eseguendo la registrazione per le notifiche delle modifiche solo alle destinazioni "contrassegnate". Il client può contrassegnare una destinazione per la notifica di modifica chiamando [**RtmMarkDestForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmmarkdestforchangenotification).
+Le richieste di notifiche delle modifiche possono anche essere limitate a un subset di destinazioni registrando per le notifiche delle modifiche solo alle destinazioni "contrassegnate". Il client può contrassegnare una destinazione per la notifica delle modifiche chiamando [**RtmMarkDestForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmmarkdestforchangenotification).
 
-Quando si verifica una modifica, gestione tabelle di routing verifica se sono presenti client che devono ricevere notifiche relative a questa modifica. Un client deve ricevere una notifica di una modifica se vengono soddisfatte tutte le condizioni seguenti:
+Quando si verifica una modifica, gestione tabelle di routing verifica se sono presenti client che devono ricevere una notifica di questa modifica. Un client deve ricevere una notifica di una modifica se vengono soddisfatte tutte le condizioni seguenti:
 
--   Il tipo di modifica che si è verificato è un tipo per il quale il client ha effettuato la registrazione per la notifica
--   Le modifiche apportate a una destinazione contrassegnata dal client sono state eseguite o da qualsiasi destinazione, se il client ha richiesto modifiche per tutte le destinazioni
--   Il client ha richiesto una notifica di modifica per la vista in cui si è verificata questa modifica
+-   Il tipo di modifica che si è verificato è un tipo per il quale il client ha registrato per la notifica
+-   Si sono verificate modifiche a una destinazione contrassegnata dal client o a qualsiasi destinazione, se il client ha richiesto modifiche per tutte le destinazioni
+-   Notifica di modifica richiesta dal client per la vista in cui si è verificata la modifica
 
-Se la modifica soddisfa tutti i criteri sopra indicati, la modifica viene memorizzata nella cache e il client riceve una notifica.
+Se la modifica soddisfa tutti i criteri precedenti, la modifica viene memorizzata nella cache e il client viene informato.
 
-La notifica non specifica le modifiche effettive che si sono verificate. Il client deve recuperare le modifiche chiamando [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) usando l'handle di notifica ottenuto da una precedente chiamata a [**RtmRegisterForChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmregisterforchangenotification).
+La notifica non specifica quali sono le modifiche effettive, ma solo che si sono verificate. Il client deve recuperare le modifiche chiamando [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) usando l'handle di notifica ottenuto da una chiamata precedente a [**RtmRegisterForChangeNotification.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmregisterforchangenotification)
 
- 
+ 
 
- 
+ 
 
 
 

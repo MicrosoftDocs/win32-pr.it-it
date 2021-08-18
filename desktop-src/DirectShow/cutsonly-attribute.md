@@ -1,24 +1,24 @@
 ---
-description: L'attributo cutsonly specifica se viene eseguito il rendering di una transizione come taglia. Se il valore è TRUE, la transizione è un taglio istantaneo. In caso contrario, viene eseguito il rendering normale della transizione. Il valore predefinito è FALSE.
+description: L'attributo cutonly specifica se viene eseguito il rendering di una transizione come taglio. Se il valore è TRUE, la transizione è un taglio istantaneo. In caso contrario, il rendering della transizione viene eseguito normalmente. Il valore predefinito è FALSE.
 ms.assetid: 810921fb-952b-42df-abda-7ef9a273a02d
 title: Attributo cutsonly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52fd1a30349d914e0a6e8df9a1c6518ec97e987a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9b51d24b7944523b0fa8684c3b1a19448bd2986cb49e3b01923ea26ec14c0269
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821926"
 ---
 # <a name="cutsonly-attribute"></a>Attributo cutsonly
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `cutsonly` attributo specifica se viene eseguito il rendering di una transizione come taglia. Se il valore è **true**, la transizione è un taglio istantaneo. In caso contrario, viene eseguito il rendering normale della transizione. Il valore predefinito è **false**.
+`cutsonly`L'attributo specifica se viene eseguito il rendering di una transizione come taglio. Se il valore è **TRUE,** la transizione è un taglio istantaneo. In caso contrario, il rendering della transizione viene eseguito normalmente. Il valore predefinito è **FALSE.**
 
 ## <a name="possible-values"></a>Valori possibili
 
@@ -26,7 +26,7 @@ I valori seguenti sono definiti come TRUE: y, Y, t, T, 1. I valori seguenti sono
 
 ## <a name="applies-to"></a>Si applica a
 
-[**transizione**](transition-element.md)
+[**Transizione**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

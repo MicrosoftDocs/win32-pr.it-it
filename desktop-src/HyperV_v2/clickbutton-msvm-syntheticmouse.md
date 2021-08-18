@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2f5ea8e1f5984bd7e4b77222d6cbd8a05d1ed40b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2812bd898d674b9d17aba51db6d93e43c53a049800214c1373e41a45dfc1d02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150128"
 ---
-# <a name="clickbutton-method-of-the-msvm_syntheticmouse-class"></a>Metodo ClickButton della classe MSVM \_ SyntheticMouse
+# <a name="clickbutton-method-of-the-msvm_syntheticmouse-class"></a>Metodo ClickButton della classe Msvm \_ SyntheticMouse
 
 Simula un clic del pulsante del dispositivo specificato.
 
@@ -39,10 +39,10 @@ uint32 ClickButton(
 
 <dl> <dt>
 
-*ButtonIndex* \[ in\]
+*buttonIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Indice in base 1 del pulsante.
 
@@ -50,19 +50,19 @@ Indice in base 1 del pulsante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valore restituito pari a zero indica esito positivo. Un valore diverso da zero indica un errore di modifica dello stato del pulsante.
+Un valore restituito pari a zero indica l'esito positivo. Un valore diverso da zero indica un errore di modifica dello stato del pulsante.
 
 <dl> <dt>
 
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -71,25 +71,25 @@ Un valore restituito pari a zero indica esito positivo. Un valore diverso da zer
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -97,11 +97,11 @@ Un valore restituito pari a zero indica esito positivo. Un valore diverso da zer
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ SyntheticMouse di MSVM**](msvm-syntheticmouse.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio C# seguente simula un clic su un pulsante. Le utilità a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+L'esempio C# seguente simula un clic su un pulsante. Le utilità di riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -260,7 +260,7 @@ namespace HyperVSamples
 
 
 
-Il seguente esempio di Visual Basic Scripting Edition (VBScript) simula un clic su un pulsante.
+L'esempio Visual Basic Scripting Edition (VBScript) seguente simula un clic su un pulsante.
 
 
 ```VB
@@ -448,10 +448,10 @@ End Function
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -460,7 +460,7 @@ End Function
 
 <dl> <dt>
 
-[**\_SyntheticMouse MSVM**](msvm-syntheticmouse.md)
+[**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md)
 </dt> </dl>
 
  

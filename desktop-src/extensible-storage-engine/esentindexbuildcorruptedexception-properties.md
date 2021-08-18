@@ -17,7 +17,7 @@ ms.locfileid: "118495663"
 # <a name="esentindexbuildcorruptedexception-properties"></a>Proprietà di EsentIndexBuildCorruptedException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentIndexBuildCorruptedException](./esentindexbuildcorruptedexception-class.md) espone i membri seguenti.
 

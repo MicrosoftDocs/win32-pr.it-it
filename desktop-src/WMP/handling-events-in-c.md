@@ -7,9 +7,9 @@ keywords:
 - Windows Media Player a oggetti, C++
 - modello a oggetti,C++
 - Windows Media Player Mobile,C++
-- Windows Media Player ActiveX controllo, C++
+- Windows Media Player ActiveX, C++
 - Windows Media Player Controllo ActiveX per dispositivi mobili,C++
-- ActiveX controllo, C++
+- ActiveX, C++
 - Incorporamento di programmi C++
 - incorporamento, programmi C++
 - Windows Media Player ActiveX, gestione degli eventi
@@ -181,7 +181,7 @@ Il Windows Media Player di installazione installa un esempio che illustra la ges
 [**Esempi**](samples.md)
 </dt> <dt>
 
-[**Uso del Windows Media Player in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Uso del Windows Media Player controllo in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
  

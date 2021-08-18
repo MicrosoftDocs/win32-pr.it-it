@@ -1,23 +1,23 @@
 ---
-title: Codice di esempio per la gamma con IDirectorySearch
-description: Nell'esempio di codice riportato di seguito viene utilizzata la funzione Rang per recuperare i membri di un gruppo utilizzando l'interfaccia IDirectorySearch.
+title: Codice di esempio per ranging con IDirectorySearch
+description: Nell'esempio di codice seguente viene utilizzato ranging per recuperare i membri di un gruppo usando l'interfaccia IDirectorySearch.
 ms.assetid: 13aba22f-c649-4dda-804f-01ba493cd6d7
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per la gamma con IDirectorySearch ADSI
-- ADSI recupero intervallo, codice di esempio, uso di IDirectorySearch
+- Codice di esempio per Ranging con IDirectorySearch ADSI
+- Recupero di intervalli ADSI, codice di esempio, uso di IDirectorySearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a5744c4952db3a8026db6c27cc0ecd2c4543de
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c1c2f5cda530268fdc046c807a69ed8cec7ac2807fc4eb3225701209d4f261d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117840001"
 ---
-# <a name="example-code-for-ranging-with-idirectorysearch"></a>Codice di esempio per la gamma con IDirectorySearch
+# <a name="example-code-for-ranging-with-idirectorysearch"></a>Codice di esempio per ranging con IDirectorySearch
 
-Nell'esempio di codice riportato di seguito viene utilizzata la funzione Rang per recuperare i membri di un gruppo utilizzando l'interfaccia [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) .
+Nell'esempio di codice seguente viene utilizzato ranging per recuperare i membri di un gruppo usando [**l'interfaccia IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
 
 ```C++
@@ -214,9 +214,9 @@ HRESULT EnumGroupWithIDirectorySearch(LPCWSTR pwszGroupDN,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

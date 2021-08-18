@@ -1,9 +1,9 @@
 ---
-title: DownloadItem. size
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. La proprietà Size recupera le dimensioni del download.
+title: DownloadItem.size
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. La proprietà size recupera le dimensioni del download.
 ms.assetid: e0fd9cb5-155a-4159-94b8-1bf05b4d1062
 keywords:
-- DownloadItem. Size Media Player Windows
+- DownloadItem.size Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0ebb1ce15d34ad04095f1ef1ed84ad2df008c7e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 046c48cc324b8d388d9f730dc3ed4d6739632d169d02d11c77201fe1da3e98c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749722"
 ---
-# <a name="downloaditemsize"></a>DownloadItem. size
+# <a name="downloaditemsize"></a>DownloadItem.size
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-La proprietà **size** recupera le dimensioni del download.
+La **proprietà size** recupera le dimensioni del download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ Questa proprietà è un **numero** di sola lettura (**Long**).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ Questa proprietà è un **numero** di sola lettura (**Long**).
 [**Oggetto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. Progress**](downloaditem-progress.md)
+[**DownloadItem.progress**](downloaditem-progress.md)
 </dt> </dl>
 
  

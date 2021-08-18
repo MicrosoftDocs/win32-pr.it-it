@@ -1,6 +1,6 @@
 ---
 title: Elemento NetworkSettings (settingsType)
-description: Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere un profilo di rete. Il Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento RunOnlyIfNetworkAvailable è impostato su True.
+description: Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere un profilo di rete. Il Utilità di pianificazione verifica la disponibilità di questa rete quando l'elemento RunOnlyIfNetworkAvailable è impostato su True.
 ms.assetid: 7452b788-a170-4afe-abc5-ebcd3722da0d
 keywords:
 - Elemento NetworkSettings Utilità di pianificazione
@@ -22,7 +22,7 @@ ms.locfileid: "117758481"
 ---
 # <a name="networksettings-settingstype-element"></a>Elemento NetworkSettings (settingsType)
 
-Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere un profilo di rete. Il Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **True.**
+Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere un profilo di rete. Il Utilità di pianificazione verifica la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **True.**
 
 ``` syntax
 <xs:element name="NetworkSettings"
@@ -45,9 +45,9 @@ Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**Proprietà NetworkSettings di ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_networksettings)
+Per lo sviluppo C++, vedere [**Proprietà NetworkSettings di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_networksettings).
 
-Per lo sviluppo di script, [**vedere TaskSettings.NetworkSettings.**](tasksettings-networksettings.md)
+Per lo sviluppo di script, vedere [**TaskSettings.NetworkSettings**](tasksettings-networksettings.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Per lo sviluppo di script, [**vedere TaskSettings.NetworkSettings.**](tasksettin
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

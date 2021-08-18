@@ -26,7 +26,7 @@ ms.locfileid: "117755642"
 ---
 # <a name="settimezoneredirection-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetTimeZoneRedirection della classe TerminalServiceSetting Win32 \_
 
-Il **metodo SetTimeZoneRedirection** imposta la **proprietà TimeZoneRedirection,** che consente al computer client di reindirizzare le impostazioni del fuso orario Servizi Desktop remoto sessione.
+Il **metodo SetTimeZoneRedirection** imposta la **proprietà TimeZoneRedirection,** che consente al computer client di reindirizzare le impostazioni del fuso orario alla Servizi Desktop remoto sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,7 +74,7 @@ Abilita la **proprietà TimeZoneRedirection.** Il fuso orario del client viene r
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
+Restituisce 0 in esito positivo. in caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="remarks"></a>Commenti
 

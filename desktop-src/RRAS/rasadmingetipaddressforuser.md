@@ -1,9 +1,9 @@
 ---
 title: Funzione di callback RasAdminGetIpAddressForUser
-description: La funzione RasAdminGetIpAddressForUser è una funzione definita dall'applicazione esportata da una DLL di amministrazione del server RAS di terze parti. RAS chiama questa funzione per ottenere un indirizzo IP per il client remoto con accesso remoto.
+description: La funzione RasAdminGetIpAddressForUser è una funzione definita dall'applicazione esportata da una DLL di amministrazione del server RAS di terze parti. RAS chiama questa funzione per ottenere un indirizzo IP per il client remoto con connessione remota.
 ms.assetid: ef553202-0adc-47d6-8630-74f276e9e2bd
 keywords:
-- RasAdminGetIpAddressForUser funzione di callback RAS
+- Funzione di callback RasAdminGetIpAddressForUser RAS
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

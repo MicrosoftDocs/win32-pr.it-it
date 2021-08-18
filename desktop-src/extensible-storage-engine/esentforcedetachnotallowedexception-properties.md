@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentForceDetachNotAllowedException'
+description: Altre informazioni sulle proprietà di EsentForceDetachNotAllowedException
 title: Proprietà di EsentForceDetachNotAllowedException
 TOCTitle: EsentForceDetachNotAllowedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentForceDetachNotAllowedException
@@ -17,7 +17,7 @@ ms.locfileid: "118496076"
 # <a name="esentforcedetachnotallowedexception-properties"></a>Proprietà di EsentForceDetachNotAllowedException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentForceDetachNotAllowedException](./esentforcedetachnotallowedexception-class.md) espone i membri seguenti.
 

@@ -7,12 +7,12 @@ keywords:
 - Come specificare i valori di confronto AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edba238961cdc18b088b6b5bd5b06ff4be383add
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: b5babc7d9781895c9671594214e4e036a85ef951cdb4b97ba34d708d160dd8fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188122"
 ---
 # <a name="how-to-specify-comparison-values"></a>Come specificare i valori di confronto
 
@@ -70,7 +70,7 @@ Nell'esempio di codice seguente viene illustrato un filtro che consente di cerca
 
 
 
-Gli operatori delle regole di corrispondenza LDAP possono essere usati anche per eseguire confronti bit per bit. Per altre informazioni sulle regole di corrispondenza, vedere [Sintassi dei filtri di ricerca.](/windows/desktop/ADSI/search-filter-syntax) Nell'esempio di codice seguente viene illustrato un filtro che consente di cercare oggetti con **groupType** con il set di bit **ADS \_ GROUP TYPE \_ SECURITY \_ \_ ENABLED** (0x80000000 = 2147483648).
+Gli operatori delle regole di corrispondenza LDAP possono essere usati anche per eseguire confronti bit per bit. Per altre informazioni sulle regole di corrispondenza, vedere [Sintassi del filtro di ricerca.](/windows/desktop/ADSI/search-filter-syntax) Nell'esempio di codice seguente viene illustrato un filtro che consente di cercare oggetti per i cui valori **groupType** è impostato il bit **ADS \_ GROUP TYPE \_ SECURITY \_ \_ ENABLED** (0x80000000 = 2147483648).
 
 
 ```C++
@@ -86,7 +86,7 @@ Gli operatori delle regole di corrispondenza LDAP possono essere usati anche per
 
 Il valore specificato in un filtro è il numero di dati da trovare. I dati devono essere rappresentati come una stringa di byte con codifica a due caratteri in cui ogni byte è preceduto da una barra rovesciata ( \\ ). Ad esempio, il valore 0x05 verrà visualizzato nella stringa come " \\ 05".
 
-La [**funzione ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) può essere usata per creare una rappresentazione di stringa codificata dei dati binari. La **funzione ADsEncodeBinaryData** non codifica i valori byte che rappresentano caratteri alfanumerici. Il carattere verrà invece inserito nella stringa senza codificarlo. Il risultato è la stringa contenente una combinazione di caratteri codificati e non codificati. Ad esempio, se i dati binari sono 0x05 0x1A 0x1B 0x43 0x32, la stringa codificata conterrà \| \| " \| \| \\ 05 \\ 1A \\ 1BC2". Questa operazione non ha alcun effetto sul filtro e i filtri di ricerca funzioneranno correttamente con questi tipi di stringhe.
+La [**funzione ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) può essere usata per creare una rappresentazione di stringa codificata dei dati binari. La **funzione ADsEncodeBinaryData** non codifica i valori byte che rappresentano caratteri alfanumerici. Il carattere verrà invece inserito nella stringa senza codificarlo. Di seguito viene restituita la stringa contenente una combinazione di caratteri codificati e non codificati. Ad esempio, se i dati binari sono 0x05 0x1A 0x1B 0x43 0x32, la stringa codificata conterrà \| \| " \| \| \\ 05 \\ 1A \\ 1BC2". Questa operazione non ha alcun effetto sul filtro e i filtri di ricerca funzioneranno correttamente con questi tipi di stringhe.
 
 I caratteri jolly vengono accettati.
 
@@ -120,7 +120,7 @@ L'esempio di codice seguente mostra un filtro che contiene una stringa codificat
 <span id="DN"></span><span id="dn"></span>Dn
 </dt> <dd>
 
-È necessario specificare l'intero nome distinto da associare.
+È necessario specificare l'intero nome distinto per cui trovare una corrispondenza.
 
 I caratteri jolly non sono accettati.
 
@@ -312,7 +312,7 @@ YYYYMMDDHHMMSS.0[+/-]HHMM
 
 
 
-L'esempio seguente mostra un filtro che specifica **quandoCreated** time impostato su 3/23/99 8:52:58 PM GMT:
+L'esempio seguente mostra un filtro che specifica un'ora **whenCreated** impostata su 23/3/99 8:52:58 PM GMT:
 
 
 ```C++
@@ -321,7 +321,7 @@ L'esempio seguente mostra un filtro che specifica **quandoCreated** time imposta
 
 
 
-L'esempio seguente mostra un filtro che specifica **quandoCreated** time impostato su 3/23/99 8:52:58 PM New Australia Standard Time (differenziale è +12 ore):
+L'esempio seguente mostra un filtro che specifica **quandoCreated** time impostato su 3/23/99 8:52:58 PM New Zealand Standard Time (differenziale è +12 ore):
 
 
 ```C++
@@ -460,7 +460,7 @@ L'esempio seguente illustra un filtro che specifica un'ora **myTimeAttrib** impo
 
 
 
-L'esempio seguente illustra un filtro che specifica un'ora **myTimeAttrib** impostata su 23/3/99 8:52:58 PM senza i secondi specificati:
+L'esempio seguente mostra un filtro che specifica un'ora **myTimeAttrib** impostata su 23/3/99 8:52:58 PM senza i secondi specificati:
 
 
 ```C++
@@ -496,7 +496,7 @@ I caratteri jolly non sono accettati.
 
 **L'attributo objectCategory** consente di specificare **lDAPDisplayName** della classe impostata per l'attributo.
 
-L'esempio seguente mostra un filtro che specifica **governsID per** la classe volume:
+L'esempio seguente illustra un filtro che specifica **governsID per** la classe volume:
 
 
 ```C++

@@ -1,9 +1,9 @@
 ---
-title: IWMCodecProps (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | IWMCodecProps (Wmcodecdsp. h)
+title: IWMCodecProps (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | IWMCodecProps (Wmcodecdsp.h)
 ms.assetid: a3720f35-819b-4d32-a45b-ec419b83e9c9
 keywords:
-- IWMCodecProps Windows Media Format
+- Formato windows Media IWMCodecProps
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e13786ecacabffda367824df6e5ba6bde223bb15
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdc1a7e6fdc98d61a6a8704b61cd61e580155ef5d712a0c1a199d533bff80ffb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847337"
 ---
 # <a name="iwmcodecprops"></a>IWMCodecProps
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

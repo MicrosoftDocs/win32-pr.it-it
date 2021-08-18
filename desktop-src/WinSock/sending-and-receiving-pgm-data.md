@@ -1,23 +1,23 @@
 ---
-description: L'invio e la ricezione di dati PGM è simile all'invio o alla ricezione di dati in qualsiasi socket. Sono presenti considerazioni specifiche di PGM, descritte nei paragrafi seguenti.
+description: L'invio e la ricezione di dati PGM è simile all'invio o alla ricezione di dati su qualsiasi socket. Esistono considerazioni specifiche per la PGM, descritte nei paragrafi seguenti.
 ms.assetid: 51b447ad-b6da-424b-91df-e5be9ce225a5
 title: Invio e ricezione di dati PGM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab73999c33c97c6ba528552af6d746d54fb605df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 130b38ea52e5d0679b988e55f8292b9752a4bf15d0514a8277a2e0b3b2327001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740572"
 ---
 # <a name="sending-and-receiving-pgm-data"></a>Invio e ricezione di dati PGM
 
-L'invio e la ricezione di dati PGM è simile all'invio o alla ricezione di dati in qualsiasi socket. Sono presenti considerazioni specifiche di PGM, descritte nei paragrafi seguenti.
+L'invio e la ricezione di dati PGM è simile all'invio o alla ricezione di dati su qualsiasi socket. Esistono considerazioni specifiche per la PGM, descritte nei paragrafi seguenti.
 
 ## <a name="sending-pgm-data"></a>Invio di dati PGM
 
-Una volta creata la sessione del mittente PGM, i dati vengono inviati usando le varie funzioni di invio di Windows Sockets: [**Send**](/windows/desktop/api/Winsock2/nf-winsock2-send), [**SendTo**](/windows/desktop/api/winsock/nf-winsock-sendto), [**WSASend**](/windows/desktop/api/Winsock2/nf-winsock2-wsasend)e [**WSASendTo**](/windows/desktop/api/Winsock2/nf-winsock2-wsasendto). Poiché gli handle di Windows Sockets sono file system handle, altre funzioni quali funzioni [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) e CRT possono anche trasmettere dati. Il frammento di codice seguente illustra un'operazione del mittente PGM:
+Dopo aver creato una sessione del mittente PGM, i dati vengono inviati usando le varie funzioni di invio Windows Sockets: [**send**](/windows/desktop/api/Winsock2/nf-winsock2-send), [**sendto**](/windows/desktop/api/winsock/nf-winsock-sendto), [**WSASend**](/windows/desktop/api/Winsock2/nf-winsock2-wsasend)e [**WSASendTo**](/windows/desktop/api/Winsock2/nf-winsock2-wsasendto). Poiché Windows handle Sockets sono file system handle, anche altre funzioni, ad esempio [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) e CRT, possono trasmettere dati. Il frammento di codice seguente illustra un'operazione del mittente PGM:
 
 
 ```C++
@@ -33,13 +33,13 @@ if (error == SOCKET_ERROR)
 
 
 
-Quando si usa la modalità messaggio (SOCK \_ RDM), ogni chiamata a una funzione Send genera un messaggio discreto, che talvolta non è auspicabile. un'applicazione potrebbe voler inviare un messaggio di 2 megabyte con più chiamate da [**inviare**](/windows/desktop/api/Winsock2/nf-winsock2-send). In tali circostanze, il mittente può impostare l'opzione del socket del [ \_ limite del \_ messaggio \_ di RM set](socket-options.md) per indicare le dimensioni del messaggio che segue.
+Quando si usa la modalità messaggio (SOCK RDM), ogni chiamata a una funzione di invio restituisce un messaggio discreto, che talvolta non è \_ consigliabile. Un'applicazione potrebbe voler inviare un messaggio di 2 MB con più chiamate per inviare . [](/windows/desktop/api/Winsock2/nf-winsock2-send) In questi casi, il mittente può impostare l'opzione [socket RM \_ SET MESSAGE \_ \_ BOUNDARY](socket-options.md) per indicare le dimensioni del messaggio che segue.
 
-Se la finestra di trasmissione è piena, un nuovo invio dall'applicazione non viene accettato fino a quando non è stata avanzata la finestra. Il tentativo di invio su un socket non bloccante ha esito negativo con WSAEWOULDBLOCK; un socket di blocco viene semplicemente bloccato fino a quando la finestra non viene spostata nel punto in cui i dati richiesti possono essere memorizzati nel buffer e inviati. Nell'I/O sovrapposto, l'operazione non viene completata fino a quando la finestra non viene spostata in modo da contenere i nuovi dati.
+Se la finestra di invio è piena, un nuovo invio dall'applicazione non viene accettato fino a quando la finestra non è stata avanzata. Il tentativo di invio su un socket non bloccante ha esito negativo con WSAEWOULDBLOCK. un socket di blocco si blocca finché la finestra non avanza fino al punto in cui i dati richiesti possono essere memorizzati nel buffer e inviati. Nell'I/O sovrapposto, l'operazione non viene completata fino a quando la finestra non avanza sufficientemente per contenere i nuovi dati.
 
 ## <a name="receiving-pgm-data"></a>Ricezione di dati PGM
 
-Una volta creata la sessione del ricevitore PGM, i dati vengono ricevuti utilizzando le varie funzioni di ricezione di Windows Sockets: [**ricezione**](/windows/desktop/api/winsock/nf-winsock-recv), [**recvfrom**](/windows/desktop/api/winsock/nf-winsock-recvfrom), [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv)e [**WSARecvFrom**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvfrom). Poiché i socket di Windows sono anche handle di file, le funzioni [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) e CRT possono essere utilizzate anche per ricevere dati della sessione PGM. Il trasporto invia i dati fino al ricevitore così come arrivano fino a quando i dati sono in sequenza. Il trasporto garantisce che i dati restituiti siano contigui e privi di duplicati. Nel frammento di codice seguente viene illustrata un'operazione di ricezione PGM:
+Dopo aver creato una sessione ricevitore PGM, i dati vengono ricevuti usando le varie funzioni di ricezione Windows Sockets: [**recv**](/windows/desktop/api/winsock/nf-winsock-recv), [**recvfrom**](/windows/desktop/api/winsock/nf-winsock-recvfrom), [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv)e [**WSARecvFrom**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvfrom). Poiché Windows handle Sockets sono anche handle di file, le [**funzioni ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) e CRT possono essere usate anche per ricevere dati di sessione PGM. Il trasporto inoltra i dati al ricevitore non appena arrivano, purché i dati sono in sequenza. Il trasporto garantisce che i dati restituiti siano contigui e senza duplicati. Il frammento di codice seguente illustra un'operazione di ricezione PGM:
 
 
 ```C++
@@ -59,22 +59,22 @@ else if (BytesRead == SOCKET_ERROR)
 
 
 
-Quando si usa la modalità messaggio (SOCK \_ RDM), il trasporto indica quando viene ricevuto un messaggio parziale, con l'errore WSAEMSGSIZE o impostando il \_ flag parziale msg al ritorno dalle funzioni [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv) e [**WSARecvFrom**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvfrom) . Quando al client viene restituito l'ultimo frammento del messaggio completo, l'errore o il flag non è indicato.
+Quando si usa la modalità messaggio (SOCK RDM), il trasporto indica quando viene ricevuto un messaggio parziale, con l'errore WSAEMSGSIZE o impostando il flag MSG PARTIAL al ritorno dalle funzioni \_ \_ [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv) e [**WSARecvFrom.**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvfrom) Quando l'ultimo frammento del messaggio completo viene restituito al client, l'errore o il flag non viene indicato.
 
-Quando la sessione viene terminata normalmente, l'operazione di ricezione ha esito negativo con WSAEDISCON nativo. Quando si verifica una perdita di dati nel trasporto, PGM memorizza temporaneamente i pacchetti fuori sequenza e tenta di recuperare i dati persi. Se la perdita di dati è irreversibile, l'operazione di ricezione ha esito negativo con WSAECONNRESET e la sessione viene terminata. La sessione può essere reimpostata a causa di una serie di condizioni, incluse le seguenti:
+Quando la sessione viene terminata correttamente, l'operazione di ricezione ha esito negativo con WSAEDISCON. Quando si verifica una perdita di dati nel trasporto, PGM esegue temporaneamente il buffer dei pacchetti out-of-sequence e tenta di recuperare i dati persi. Se la perdita di dati non è irreversibile, l'operazione di ricezione ha esito negativo con WSAECONNRESET e la sessione viene terminata. La sessione può essere reimpostata a causa di diverse condizioni, tra cui le seguenti:
 
--   Il ricevitore o la velocità di connessione in ingresso è troppo lenta per restare al passo con la velocità dei dati in ingresso.
--   Si verifica una perdita di dati eccessiva, probabilmente a causa di condizioni di rete transitorie, ad esempio problemi di routing, instabilità della rete e così via.
--   Si è verificato un errore irreversibile sul mittente.
--   Un utilizzo eccessivo delle risorse si verifica nel computer locale, ad esempio superando il valore massimo consentito per l'archiviazione del buffer interno oppure riscontrando una condizione di esaurimento delle risorse.
--   Si verifica un errore di verifica della coerenza dei dati.
--   Un errore in un componente PGM dipende da, ad esempio TCP/IP o Windows Sockets.
+-   Il ricevitore o la velocità di connessione in ingresso è troppo lenta per tenere il passo con la velocità dei dati in ingresso.
+-   Si verifica una perdita eccessiva di dati, probabilmente a causa di condizioni di rete temporanee, ad esempio problemi di routing, instabilità della rete e così via.
+-   Si verifica un errore irreversibile nel mittente.
+-   L'utilizzo eccessivo delle risorse si verifica nel computer locale, ad esempio superando l'archiviazione buffer interna massima consentita o riscontrando una condizione di risorse non disponibili.
+-   Si verifica un errore di controllo di coerenza dei dati.
+-   L'errore in un componente PGM dipende da, ad esempio TCP/IP o Windows Socket.
 
-Sia il primo che il secondo elemento nell'elenco precedente possono comportare un sovraccarico del ricevitore prima di esaurire le risorse o prima di andare oltre la finestra del mittente.
+Sia il primo che il secondo elemento nell'elenco precedente potrebbero comportare l'esecuzione eccessiva del buffer da parte del ricevitore prima dell'eccesso di risorse o prima di andare oltre la finestra del mittente.
 
-## <a name="terminating-a-pgm-session"></a>Terminazione di una sessione PGM
+## <a name="terminating-a-pgm-session"></a>Chiusura di una sessione PGM
 
-Il mittente o il destinatario PGM può arrestare l'invio o la ricezione dei dati chiamando [**chiamata closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket). Il ricevitore deve chiamare **chiamata closesocket** sia sui socket in ascolto che sulla ricezione per evitare perdite di handle. La chiamata di [**Shutdown**](/windows/desktop/api/winsock/nf-winsock-shutdown) sul mittente prima della chiamata a **chiamata closesocket** garantisce che tutti i dati vengano inviati e che i dati di ripristino vengano mantenuti fino a quando la finestra di trasmissione avanza oltre l'ultima sequenza di dati, anche se l'applicazione stessa termina.
+Il mittente o il destinatario PGM può interrompere l'invio o la ricezione di dati chiamando [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket). Il ricevitore deve chiamare **closesocket** sui socket di ascolto e di ricezione per evitare perdite di gestione. La chiamata [**di shutdown**](/windows/desktop/api/winsock/nf-winsock-shutdown) sul mittente prima di chiamare **closesocket** garantisce l'invio di tutti i dati e la manutenzione dei dati di ripristino fino a quando la finestra di invio non passa oltre l'ultima sequenza di dati, anche se l'applicazione stessa termina.
 
  
 

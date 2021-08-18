@@ -1,42 +1,42 @@
 ---
-title: Visualizzazione di nomi e Stati delle attività (C++)
-description: Questi due esempi C++ illustrano come enumerare le attività. Un esempio Mostra come visualizzare le informazioni per le attività in una cartella attività, mentre negli altri esempi viene illustrato come visualizzare le informazioni per tutte le attività in esecuzione.
+title: Visualizzazione dei nomi e degli stati delle attività (C++)
+description: Questi due esempi di C++ illustrano come enumerare le attività. Un esempio mostra come visualizzare le informazioni per le attività in una cartella di attività e gli altri esempi illustrano come visualizzare le informazioni per tutte le attività in esecuzione.
 ms.assetid: 32037133-d3f3-4186-b035-ab01d37ed58d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6189960ef5b6e4ad78e75f156a482481f347b4b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b80ec17b71ae45c951a27ca582855936d73457401d878b0f21f69bcbaa71ca23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760186"
 ---
-# <a name="displaying-task-names-and-states-c"></a>Visualizzazione di nomi e Stati delle attività (C++)
+# <a name="displaying-task-names-and-states-c"></a>Visualizzazione dei nomi e degli stati delle attività (C++)
 
-Questi due esempi C++ illustrano come enumerare le attività. Un esempio Mostra come visualizzare le informazioni per le attività in una cartella attività, mentre negli altri esempi viene illustrato come visualizzare le informazioni per tutte le attività in esecuzione.
+Questi due esempi di C++ illustrano come enumerare le attività. Un esempio mostra come visualizzare le informazioni per le attività in una cartella di attività e gli altri esempi illustrano come visualizzare le informazioni per tutte le attività in esecuzione.
 
-Nella procedura seguente viene descritto come visualizzare i nomi delle attività e lo stato di tutte le attività in una cartella di attività.
+La procedura seguente descrive come visualizzare i nomi e lo stato delle attività per tutte le attività in una cartella delle attività.
 
-**Per visualizzare i nomi delle attività e lo stato di tutte le attività in una cartella attività**
+**Per visualizzare i nomi e lo stato delle attività per tutte le attività in una cartella di attività**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
-    Questo oggetto consente di connettersi al servizio Utilità di pianificazione e accedere a una cartella attività specifica.
+    Questo oggetto consente di connettersi al servizio Utilità di pianificazione e accedere a una cartella di attività specifica.
 
-3.  Ottenere una cartella attività che contenga le attività per le quali si desiderano informazioni.
+3.  Ottenere una cartella di attività che contiene le attività su cui si vogliono ottenere informazioni.
 
-    Usare il metodo [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella.
+    Usare il [**metodo ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella.
 
-4.  Ottiene la raccolta di attività dalla cartella.
+4.  Ottenere la raccolta di attività dalla cartella.
 
-    Usare il metodo [**ITaskFolder:: GetTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-gettasks) per ottenere la raccolta di attività ([**IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtaskcollection)).
+    Usare il [**metodo ITaskFolder::GetTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-gettasks) per ottenere la raccolta di attività ([**IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtaskcollection)).
 
-5.  Ottenere il numero di attività nella raccolta ed enumerare tutte le attività nella raccolta.
+5.  Ottenere il numero di attività nella raccolta ed enumerare ogni attività nella raccolta.
 
-    Usare la [**Proprietà Item di IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtaskcollection-get_item) per ottenere un'istanza di [**IRegisteredTask**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) . Ogni istanza conterrà un'attività nella raccolta. È quindi possibile visualizzare le informazioni (valori di proprietà) da ogni attività registrata.
+    Usare la [**proprietà Item di IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtaskcollection-get_item) per ottenere [**un'istanza di IRegisteredTask.**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) Ogni istanza conterrà un'attività nella raccolta. È quindi possibile visualizzare le informazioni (valori delle proprietà) di ogni attività registrata.
 
-Nell'esempio C++ riportato di seguito viene illustrato come visualizzare il nome e lo stato di tutte le attività nella cartella radice dell'attività.
+Nell'esempio C++ seguente viene illustrato come visualizzare il nome e lo stato di tutte le attività nella cartella delle attività radice.
 
 
 ```C++
@@ -197,21 +197,21 @@ int __cdecl wmain()
 
 
 
-Nella procedura seguente viene descritto come visualizzare i nomi delle attività e lo stato di tutte le attività in esecuzione.
+La procedura seguente descrive come visualizzare i nomi e lo stato delle attività per tutte le attività in esecuzione.
 
-**Per visualizzare i nomi delle attività e lo stato di tutte le attività in esecuzione**
+**Per visualizzare i nomi e lo stato delle attività per tutte le attività in esecuzione**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
-    Questo oggetto consente di connettersi al servizio Utilità di pianificazione e accedere a una cartella attività specifica.
+    Questo oggetto consente di connettersi al servizio Utilità di pianificazione e accedere a una cartella di attività specifica.
 
-3.  Usare il metodo [**ITaskService:: GetRunningTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getrunningtasks) per ottenere una raccolta di tutte le attività in esecuzione ([**IRunningTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-irunningtaskcollection)). È possibile specificare per ottenere le istanze dell'attività in esecuzione, incluse o escluse le attività nascoste.
-4.  Ottenere il numero di attività nella raccolta ed enumerare tutte le attività nella raccolta.
+3.  Usare il [**metodo ITaskService::GetRunningTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getrunningtasks) per ottenere una raccolta di tutte le attività in esecuzione ([**IRunningTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-irunningtaskcollection)). È possibile specificare per ottenere istanze dell'attività in esecuzione, incluse o escluse le attività nascoste.
+4.  Ottenere il numero di attività nella raccolta ed enumerare ogni attività nella raccolta.
 
-    Usare la [**Proprietà Item di IRunningTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-irunningtaskcollection-get_item) per ottenere un'istanza di [**IRunningTask**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) . Ogni istanza conterrà un'attività nella raccolta. È quindi possibile visualizzare le informazioni (valori di proprietà) da ogni attività registrata.
+    Usare la [**proprietà Item di IRunningTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-irunningtaskcollection-get_item) per ottenere [**un'istanza di IRunningTask.**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) Ogni istanza conterrà un'attività nella raccolta. È quindi possibile visualizzare le informazioni (valori delle proprietà) di ogni attività registrata.
 
-Nell'esempio C++ riportato di seguito viene illustrato come visualizzare il nome e lo stato di tutte le attività in esecuzione, incluse le attività nascoste.
+Nell'esempio C++ seguente viene illustrato come visualizzare il nome e lo stato di tutte le attività in esecuzione, incluse le attività nascoste.
 
 
 ```C++
@@ -361,12 +361,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

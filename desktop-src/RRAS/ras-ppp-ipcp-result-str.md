@@ -1,9 +1,9 @@
 ---
-title: Struttura RAS_PPP_IPCP_RESULT (rassapi. h)
-description: La struttura dei risultati di RAS \_ PPP \_ protocollo IPCP \_ viene utilizzata per segnalare il risultato di un'operazione di proiezione IP (Internet Protocol) PPP per una porta.
+title: RAS_PPP_IPCP_RESULT struttura (Rassapi.h)
+description: La struttura RAS PPP IPCP RESULT viene usata per segnalare il risultato di un'operazione di proiezione \_ \_ IP \_ (Internet Protocol) PPP per una porta.
 ms.assetid: edbdc8f2-ba56-4d34-8908-f7eccc2ebf61
 keywords:
-- RAS struttura RAS_PPP_IPCP_RESULT
+- RAS_PPP_IPCP_RESULT struttura RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eedcd7c7390e01849371eee2cbb24ffa2593900d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa0425289b7ffd686f0d908f9789a2c24606978f37e05dfada5b937b8ce05b21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789615"
 ---
-# <a name="ras_ppp_ipcp_result-structure"></a>\_Struttura di \_ \_ risultati protocollo IPCP di Ras PPP
+# <a name="ras_ppp_ipcp_result-structure"></a>Struttura \_ RAS PPP \_ IPCP \_ RESULT
 
-\[La struttura dei **risultati di Ras \_ PPP \_ protocollo IPCP \_** non è supportata a partire da Windows Vista.\]
+\[La **struttura RAS \_ PPP \_ IPCP \_ RESULT** non è supportata a Windows Vista.\]
 
-La struttura dei **risultati di Ras \_ PPP \_ protocollo IPCP \_** viene utilizzata per segnalare il risultato di un'operazione di proiezione IP (Internet Protocol) PPP per una porta.
+La **struttura RAS \_ PPP \_ IPCP \_ RESULT** viene usata per segnalare il risultato di un'operazione di proiezione IP (Internet Protocol) PPP per una porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct _RAS_PPP_IPCP_RESULT {
 **dwError**
 </dt> <dd>
 
-Indica i risultati dell'operazione di proiezione IP. Il valore nessun \_ errore indica l'esito positivo, nel qual caso il membro **wszAddress** è valido. Se l'operazione di proiezione ha esito negativo, **dwError** è un codice di errore di Winerror. h o Raserror. h.
+Indica i risultati dell'operazione di proiezione IP. Il valore NO \_ ERROR indica l'esito positivo, nel qual caso il membro **wszAddress** è valido. Se l'operazione di proiezione non è riuscita, **dwError** è un codice di errore di Winerror.h o Raserror.h.
 
 </dd> <dt>
 
 **wszAddress**
 </dt> <dd>
 
-Stringa Unicode con terminazione null che specifica l'indirizzo IP assegnato al client remoto. Il formato di questa stringa è ****.** _b_* _._ *_c_*_._ * _d_.
+Stringa Unicode con terminazione Null che specifica l'indirizzo IP assegnato al client remoto. Questa stringa ha il formato *a***.** _b_* _._ *_c_*_._ * _d_.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Stringa Unicode con terminazione null che specifica l'indirizzo IP assegnato al 
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -81,10 +81,10 @@ Stringa Unicode con terminazione null che specifica l'indirizzo IP assegnato al 
 [Strutture di amministrazione del server RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_Porta RAS \_ 1**](ras-port-1-str.md)
+[**PORTA \_ RAS \_ 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_risultato della \_ proiezione \_ PPP RAS**](ras-ppp-projection-result-str.md)
+[**RISULTATO \_ DELLA \_ PROIEZIONE RAS PPP \_**](ras-ppp-projection-result-str.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

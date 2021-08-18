@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCProduceDummyFrames (Wmcodecdsp.h)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | g_wszWMVCProduceDummyFrames (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | g_wszWMVCProduceDummyFrames (Wmcodecdsp.h)
 ms.assetid: da52f80a-3ec1-4929-9206-9daf0aae4fe5
 keywords:
 - g_wszWMVCProduceDummyFrames Windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118198482"
 ---
 # <a name="g_wszwmvcproducedummyframes"></a>g \_ wszWMVCProduceDummyFrames
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
 ## <a name="requirements"></a>Requisiti
 

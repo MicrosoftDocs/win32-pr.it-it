@@ -1,5 +1,5 @@
 ---
-title: WaveGetLaneIndex (funzione)
+title: Funzione WaveGetLaneIndex
 description: Restituisce l'indice della corsia corrente all'interno dell'onda corrente.
 ms.assetid: C05BD814-23DF-432F-8669-C03842B77AC7
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8adea1091739981523ab19b69158ead9aafa600c
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: bb6b0290b46727cdf0d9ce705d2910df003cbc114638a0135be2023bb836202a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104993616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721721"
 ---
-# <a name="wavegetlaneindex-function"></a>WaveGetLaneIndex (funzione)
+# <a name="wavegetlaneindex-function"></a>Funzione WaveGetLaneIndex
 
 Restituisce l'indice della corsia corrente all'interno dell'onda corrente.
 
@@ -36,11 +36,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Indice della corsia corrente. Il risultato sarà compreso tra 0 e il risultato restituito da [**WaveGetLaneCount**](wavegetlanecount.md).
+Indice della corsia corrente. Il risultato sarà compreso tra 0 e il risultato restituito da [**WaveGetLaneCount.**](wavegetlanecount.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -50,7 +50,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

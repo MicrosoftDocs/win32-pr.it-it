@@ -1,12 +1,12 @@
 ---
-title: Metodo RdvMigrateVmToDifferentHost della classe Win32_RdvhManagement
-description: Avvia una migrazione in tempo reale di una macchina virtuale in un host specificato.
+title: Metodo RdvMigrateVmToDifferentHost della Win32_RdvhManagement classe
+description: Avvia una migrazione in tempo reale di una macchina virtuale a un host specificato.
 ms.assetid: aa4b1e57-a97c-410b-9b9d-423a1c77de70
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo RdvMigrateVmToDifferentHost
-- Metodo RdvMigrateVmToDifferentHost Servizi Desktop remoto, classe Win32_RdvhManagement
-- Classe Win32_RdvhManagement Servizi Desktop remoto, metodo RdvMigrateVmToDifferentHost
+- Metodo RdvMigrateVmToDifferentHost Servizi Desktop remoto
+- Metodo RdvMigrateVmToDifferentHost Servizi Desktop remoto , Win32_RdvhManagement classe
+- Win32_RdvhManagement classe Servizi Desktop remoto, metodo RdvMigrateVmToDifferentHost
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3def1be6332397fb3830ffe8c90f324afc9f1b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7a84171bc6db6a39cff5a2d55ca7e453bf9b963636ea765480fe87b16fd8da92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756243"
 ---
-# <a name="rdvmigratevmtodifferenthost-method-of-the-win32_rdvhmanagement-class"></a>Metodo RdvMigrateVmToDifferentHost della \_ classe RdvhManagement Win32
+# <a name="rdvmigratevmtodifferenthost-method-of-the-win32_rdvhmanagement-class"></a>Metodo RdvMigrateVmToDifferentHost della classe \_ Win32 RdvhManagement
 
-Avvia una migrazione in tempo reale di una macchina virtuale in un host specificato.
+Avvia una migrazione in tempo reale di una macchina virtuale a un host specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,23 +44,23 @@ uint32 RdvMigrateVmToDifferentHost(
 
 <dl> <dt>
 
-*VmName* \[ in\]
+*VmName* \[ Pollici\]
 </dt> <dd>
 
-Nome della macchina virtuale da migrare.
+Nome della macchina virtuale di cui eseguire la migrazione.
 
 </dd> <dt>
 
-*DestinationHost* \[ in\]
+*Host di destinazione* \[ Pollici\]
 </dt> <dd>
 
-nome dell'host di destinazione.
+Nome dell'host di destinazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto di questi valori,](terminal-services-wmi-provider-error-codes.md) fare riferimento Servizi Desktop remoto di errore del provider WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                             |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RdvhManagement Win32**](win32-rdvhmanagement.md)
+[**Win32 \_ RdvhManagement**](win32-rdvhmanagement.md)
 </dt> </dl>
 
  

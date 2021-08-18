@@ -13,7 +13,7 @@ ms.locfileid: "117789821"
 ---
 # <a name="phone-book-entries"></a>Phone-Book voci
 
-Telefono-book contengono le informazioni necessarie per stabilire una connessione RAS. Un utente o un amministratore può usare **la Connessione remota** finestra di dialogo per creare, modificare e comporre voci della rubrica telefonica.
+Telefono-book contengono le informazioni necessarie per stabilire una connessione RAS. Un utente o un amministratore può **usare la Connessione remota** finestra di dialogo per creare, modificare e comporre voci della rubrica telefonica.
 
 A partire da Windows NT Server 4.0, il sistema supporta le funzioni descritte per Windows 95, nonché una serie di funzioni aggiuntive che un'applicazione può usare per lavorare con le rubriche telefoniche e le voci della rubrica telefonica.
 

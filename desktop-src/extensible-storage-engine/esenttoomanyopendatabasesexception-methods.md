@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodi EsentTooManyOpenDatabasesException'
+description: Altre informazioni sui metodi di EsentTooManyOpenDatabasesException
 title: 'Metodi di EsentTooManyOpenDatabasesException '
 TOCTitle: EsentTooManyOpenDatabasesException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentTooManyOpenDatabasesException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103104
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 430dac065367ea7ff3d7db1a7f64bba2e7048b03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba81c0360c97c466904eac4a841f01ffdb011351e12cf21a1624ace14f1ed80c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117707131"
 ---
 # <a name="esenttoomanyopendatabasesexception-methods"></a>Metodi di EsentTooManyOpenDatabasesException 
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo [EsentTooManyOpenDatabasesException](./esenttoomanyopendatabasesexception-class.md) espone i membri seguenti.
+Il [tipo EsentTooManyOpenDatabasesException](./esenttoomanyopendatabasesexception-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,42 +35,42 @@ Il tipo [EsentTooManyOpenDatabasesException](./esenttoomanyopendatabasesexceptio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta l'oggetto <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con le informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.</td>
+<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Inizio
 
 [Classe EsentTooManyOpenDatabasesException](./esenttoomanyopendatabasesexception-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

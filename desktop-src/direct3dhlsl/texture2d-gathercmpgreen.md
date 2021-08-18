@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture2D:: Texture2D GatherCmpGreen'
-description: Campiona e confronta un Texture2D e restituisce il componente verde.
+title: Metodi GatherCmpGreen texture2D::Texture2D
+description: Esempi e confronta un oggetto Texture2D e restituisce il componente verde.
 ms.assetid: 4a2c67b6-8a33-4bf8-a4aa-cf26b720f345
 keywords:
 - Metodi GatherCmpGreen HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 930aecdf6a361f10a2b0c49bbf9bfff7139e3928
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: d066b808a14af34feffec7d137c0cd23299f6182ab54e49bb90e34e3d9d64939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103719018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722796"
 ---
-# <a name="texture2dgathercmpgreen-methods"></a>Metodi Texture2D:: GatherCmpGreen
+# <a name="texture2dgathercmpgreen-methods"></a>Metodi texture2D::GatherCmpGreen
 
-Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce il componente verde.
+Esempi e confronta un oggetto [**Texture2D**](sm5-object-texture2d.md) e restituisce il componente verde.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,10 +29,10 @@ Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce i
 
 | Metodo                                                                                                                       | Descrizione                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen (S, float, float, int)**](sm5-object-texture2d-gathercmpgreen.md)                                             | Campiona e confronta una trama e restituisce il componente verde.<br/>                                       |
-| [**GatherCmpGreen (S, float, float, int, uint)**](t2d-gathercmpgreen-s-float-float-int-uint-.md)                                 | Campiona e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
-| [**GatherCmpGreen (S, float, float, int2, int2, int2, int2)**](sm5-object-texture2d-gathercmpgreen.md)                             | Campiona e confronta una trama e restituisce il componente verde.<br/>                                       |
-| [**GatherCmpGreen (S, float, float, int2, int2, int2, int2, uint)**](t2d-gathercmpgreen-s-float-float-int2-int2-int2-int2-uint-.md) | Campiona e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpGreen(S,float,float,int)**](sm5-object-texture2d-gathercmpgreen.md)                                             | Esempi e confronta una trama e restituisce il componente verde.<br/>                                       |
+| [**GatherCmpGreen(S,float,float,int,uint)**](t2d-gathercmpgreen-s-float-float-int-uint-.md)                                 | Esempi e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpGreen(S,float,float,int2,int2,int2,int2,int2)**](sm5-object-texture2d-gathercmpgreen.md)                             | Esempi e confronta una trama e restituisce il componente verde.<br/>                                       |
+| [**GatherCmpGreen(S,float,float,int2,int2,int2,int2,uint)**](t2d-gathercmpgreen-s-float-float-int2-int2-int2-int2-uint-.md) | Esempi e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
 
 
 

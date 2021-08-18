@@ -1,29 +1,29 @@
 ---
 title: Controlli di divulgazione progressiva
-description: Con un controllo di divulgazione progressiva, gli utenti possono mostrare o nascondere informazioni aggiuntive, inclusi dati, opzioni o comandi.
+description: Con un controllo di divulgazione progressiva, gli utenti possono visualizzare o nascondere informazioni aggiuntive, inclusi dati, opzioni o comandi.
 ms.assetid: 0ca00c49-f897-49a6-926a-cc65f3155c6c
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: a40f4c2fadd75cbcb6711dec2c1361ce2f970088
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 1d561ea6e4f937c6e162f9eaa1f452e73d7de20c9f94c41785641062c21cd1a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676166"
 ---
 # <a name="progressive-disclosure-controls"></a>Controlli di divulgazione progressiva
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida alla progettazione è stata creata Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-Con un controllo di divulgazione progressiva, gli utenti possono mostrare o nascondere informazioni aggiuntive, inclusi dati, opzioni o comandi. La divulgazione progressiva promuove la semplicità concentrandosi sull'essenziale, ma rivelando dettagli aggiuntivi in base alle esigenze.
+Con un controllo di divulgazione progressiva, gli utenti possono visualizzare o nascondere informazioni aggiuntive, inclusi dati, opzioni o comandi. La diffusione progressiva promuove la semplicità concentrandosi sull'essenziale, ma rivelando dettagli aggiuntivi in base alle esigenze.
 
 ![Screenshot dei controlli di divulgazione progressiva](images/progressive-disclosure-controls-image1.png)
 
 Esempi di controlli di divulgazione progressiva.
 
 > [!Note]  
-> Le linee guida [relative al layout,](vis-layout.md) [ai menu](cmd-menus.md)e alle barre [degli](cmd-toolbars.md) strumenti sono presentate in articoli separati.
+> Le linee guida relative [al layout,](vis-layout.md) [ai menu](cmd-menus.md)e alle barre [degli strumenti](cmd-toolbars.md) sono presentate in articoli separati.
 
  
 
@@ -31,78 +31,78 @@ Esempi di controlli di divulgazione progressiva.
 
 Per decidere, prendi in considerazione queste domande:
 
--   **Gli utenti devono visualizzare le informazioni in alcuni scenari, ma non in tutti, ma non sempre?** In tal caso, la visualizzazione delle informazioni tramite diffusione progressiva semplifica l'esperienza di base, ma consente agli utenti di accedere facilmente alle informazioni.
+-   **Gli utenti devono visualizzare le informazioni in alcuni scenari, ma non in tutti, o in alcuni, ma non sempre?** In tal caso, la visualizzazione delle informazioni tramite diffusione progressiva semplifica l'esperienza di base, ma consente agli utenti di accedere facilmente alle informazioni.
 
     ![Screenshot che mostra lo stato del Centro sicurezza.](images/progressive-disclosure-controls-image2.png)
 
-    In questo esempio, il Centro sicurezza visualizza sempre lo stato di sicurezza importante, ma usa la divulgazione progressiva per visualizzare i dettagli su richiesta.
+    In questo esempio il Centro sicurezza visualizza sempre lo stato di sicurezza importante, ma usa la diffusione progressiva per visualizzare i dettagli su richiesta.
 
--   **Se le informazioni vengono visualizzate per impostazione predefinita, è probabile che gli utenti scesino di nasconderla?** Esistono scenari in cui gli utenti necessitano di più spazio? Gli utenti sono sufficientemente motivati a personalizzare l'interfaccia utente? In caso contrario, visualizzare le informazioni senza usare la divulgazione progressiva.
+-   **Se le informazioni vengono visualizzate per impostazione predefinita, è probabile che gli utenti scesino di nasconderli?** Esistono scenari in cui gli utenti avranno bisogno di più spazio? Gli utenti sono sufficientemente motivati a personalizzare l'interfaccia utente? In caso contrario, visualizzare le informazioni senza usare la diffusione progressiva.
 
     **Non corretto:**
 
-    ![Screenshot delle scelte dei dati visualizzate per impostazione predefinita ](images/progressive-disclosure-controls-image3.png)
+    ![Screenshot delle scelte di dati visualizzate per impostazione predefinita ](images/progressive-disclosure-controls-image3.png)
 
     In questo esempio gli utenti non saranno motivati a nascondere le informazioni.
 
--   **Le informazioni aggiuntive sono avanzate, sostanziali, complesse o correlate a una sottoattività indipendente?** In tal caso, è consigliabile visualizzare [](ctrl-command-buttons.md) le informazioni in una finestra separata usando pulsanti di comando o collegamenti [invece](ctrl-command-links.md) di usare un controllo di divulgazione progressiva. Le informazioni aggiuntive sono avanzate se sono destinate a utenti avanzati. È complesso se rende difficile la lettura o il lay out di altre informazioni.
+-   **Le informazioni aggiuntive sono avanzate, sostanziali, complesse o correlate a una sottoattività indipendente?** In tal caso, è consigliabile visualizzare [](ctrl-command-buttons.md) le informazioni in una finestra separata usando pulsanti di comando o collegamenti [invece](ctrl-command-links.md) di usare un controllo di divulgazione progressiva. Altre informazioni sono avanzate se sono destinate a utenti esperti. È complesso se rende difficile la lettura o il lay out di altre informazioni.
 
     ![Screenshot di si vuole eseguire questo file? ](images/progressive-disclosure-controls-image4.png)
 
-    In questo esempio, le informazioni sul nome e sull'editore del software sono significative principalmente per gli utenti avanzati, quindi vengono usati collegamenti a finestre separate.
+    In questo esempio, le informazioni sul nome e sull'autore del software sono significative principalmente per gli utenti avanzati, quindi vengono usati collegamenti a finestre separate.
 
--   **Le informazioni aggiuntive sono una frase o un frammento di frase che descrive cosa fa un elemento o come può essere usato?** In tal caso, è consigliabile usare una [descrizione comando](ctrl-tooltips-and-infotips.md) o una descrizione comando.
--   **Le informazioni aggiuntive sono correlate all'attività corrente, ma indipendenti dalle informazioni attualmente visualizzate?** In tal caso, prendere in considerazione [l'uso di tabulazioni.](ctrl-tabs.md) Tuttavia, gli elenchi comprimibili sono spesso preferibili alle schede perché sono più flessibili e scalabili.
--   **Le informazioni aggiuntive vengono visualizzate o nascoste essenzialmente in un filtro dati?** In tal caso, è consigliabile [usare un elenco a](/windows/desktop/uxguide/ctrl-drop) discesa o caselle [di](ctrl-check-boxes.md) controllo per applicare il filtro all'intero elenco.
+-   **Le informazioni aggiuntive sono un frammento di frase o frase che descrive cosa fa un elemento o come può essere usato?** In tal caso, è consigliabile usare una [descrizione comando](ctrl-tooltips-and-infotips.md) o una descrizione comando.
+-   **Le informazioni aggiuntive sono correlate all'attività corrente, ma indipendenti dalle informazioni attualmente visualizzate?** In tal caso, è consigliabile [usare le tabulazioni.](ctrl-tabs.md) Tuttavia, gli elenchi comprimibile sono spesso preferibili alle schede perché sono più flessibili e scalabili.
+-   **Le informazioni aggiuntive vengono visualizzate o nascoste essenzialmente come filtro dati?** In tal caso, è consigliabile usare [un](/windows/desktop/uxguide/ctrl-drop) elenco a discesa o caselle [di](ctrl-check-boxes.md) controllo per applicare il filtro all'intero elenco.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
 Gli obiettivi della divulgazione progressiva sono:
 
--   **Semplificare un'interfaccia** utente concentrandosi sull'elemento essenziale, ma rivelando dettagli aggiuntivi in base alle esigenze.
+-   **Semplificare un'interfaccia** utente concentrandosi sull'essenziale, ma rivelando dettagli aggiuntivi in base alle esigenze.
 -   **Semplificare l'aspetto di un'interfaccia** utente riducendo la percezione di confusione.
 
-Entrambi gli obiettivi possono essere raggiunti usando i controlli di divulgazione progressiva, in cui gli utenti possono fare clic per visualizzare altri dettagli. Tuttavia, è possibile raggiungere il secondo obiettivo di semplificare l'aspetto senza usare controlli espliciti di divulgazione progressiva tramite:
+Entrambi gli obiettivi possono essere raggiunti usando controlli di divulgazione progressiva, in cui gli utenti possono fare clic per visualizzare più dettagli. Tuttavia, è possibile raggiungere il secondo obiettivo di semplificare l'aspetto senza usare controlli espliciti di divulgazione progressiva tramite:
 
--   **Visualizzazione dei dettagli contestuali solo nel contesto.** Ad esempio, è possibile visualizzare automaticamente comandi contestuali o barre degli strumenti quando sono rilevanti per l'oggetto o la modalità selezionata.
--   **Riduzione del peso degli affordance per l'interfaccia utente secondaria.** [Gli affordance sono](glossary.md) proprietà visive che suggeriscono come vengono usati gli oggetti. La tendenza è quella di avere un'interfaccia utente con cui gli utenti possono interagire sul posto, ma di avere tutta tale interfaccia utente disegnata in modo da "fare clic su di me!" causa una confusione visiva troppo grande. Per l'interfaccia utente secondaria, è spesso meglio usare i piccoli affordance e fornire gli effetti completi sul passaggio del mouse.
+-   **Visualizzazione dei dettagli contestuali solo nel contesto.** Ad esempio, è possibile visualizzare automaticamente i comandi contestuali o le barre degli strumenti quando sono rilevanti per l'oggetto o la modalità selezionata.
+-   **Riduzione del peso degli affordance per l'interfaccia utente secondaria.** [Gli affordance sono](glossary.md) proprietà visive che suggeriscono come vengono usati gli oggetti. La tendenza è quella di avere un'interfaccia utente con cui gli utenti possono interagire sul posto, ma di avere tutta questa interfaccia utente disegnata per gridare "click me!" causa troppi disordini visivi. Per l'interfaccia utente secondaria, è spesso meglio usare i affordances sottili e fornire gli effetti completi sul passaggio del mouse.
 
-    ![screenshot delle icone a stella usate per valutare le foto ](images/progressive-disclosure-controls-image5.png)
+    ![Screenshot delle icone a stella usate per valutare le foto ](images/progressive-disclosure-controls-image5.png)
 
-    In questo esempio il campo Classificazione è interattivo, ma non viene visualizzato fino al passaggio del mouse.
+    In questo esempio il campo Valutazione è interattivo, ma non viene visualizzato fino al passaggio del mouse.
 
--   **Visualizzazione dei passaggi di follow-up solo al termine dei prerequisiti.** Questo approccio è più adatto per le attività familiari in cui gli utenti possono eseguire i primi passaggi in modo sicuro.
+-   **Visualizzazione dei passaggi di follow-up solo dopo aver eseguito i prerequisiti.** Questo approccio è più adatto alle attività familiari in cui gli utenti possono eseguire con sicurezza i primi passaggi.
 
     ![Screenshot delle caselle di testo nome utente e password ](images/progressive-disclosure-controls-image6.png)
 
     In questo esempio la pagina nome utente e password mostra inizialmente solo le caselle nome utente e password facoltative. Le caselle di conferma e suggerimento vengono visualizzate dopo che l'utente ha immesso una password.
 
-Sebbene la divulgazione progressiva sia un ottimo modo per semplificare le informazioni utente, presenta questi rischi:
+Sebbene la diffusione progressiva sia un ottimo modo per semplificare le informazioni utente, presenta questi rischi:
 
 -   **Mancanza di individuabilità.** Gli utenti possono presupporre che se non possono vedere qualcosa, non esiste. Gli utenti non possono passare il puntatore del mouse o fare clic se non vedono ciò che stanno cercando. È sempre possibile che gli utenti non clicno su elementi come Altre opzioni.
--   **Mancanza di stabilità.** La divulgazione progressiva dovrebbe essere prevista o almeno sembra naturale. Se i controlli vengono visualizzati e scompaiono in modo imprevisto, l'interfaccia utente risultante può risultare instabile.
+-   **Mancanza di stabilità.** La divulgazione progressiva deve essere prevista o almeno sembra naturale. Se i controlli vengono visualizzati e scompaiono in modo imprevisto, l'interfaccia utente risultante può risultare instabile.
 
 ### <a name="progressive-disclosure-controls"></a>Controlli di divulgazione progressiva
 
-I controlli di divulgazione progressiva vengono in genere visualizzati senza etichette dirette che ne descrivono il comportamento, quindi gli utenti devono essere in grado di eseguire le operazioni seguenti solo in base all'aspetto visivo del controllo:
+I controlli di diffusione progressiva vengono in genere visualizzati senza etichette dirette che ne descrivono il comportamento, quindi gli utenti devono poter eseguire le operazioni seguenti in base all'aspetto visivo del controllo:
 
--   Riconoscere che il controllo fornisce la divulgazione progressiva.
+-   Riconoscere che il controllo fornisce una diffusione progressiva.
 -   Determinare se lo stato corrente è espanso o compresso.
 -   Determinare se sono necessarie informazioni, opzioni o comandi aggiuntivi per eseguire l'attività.
 -   Determinare come ripristinare lo stato originale, se necessario.
 
-Anche se gli utenti possono determinare quanto sopra per versione di valutazione ed errore, è consigliabile provare a rendere superflua questa sperimentazione.
+Anche se gli utenti possono determinare quanto sopra per versione di valutazione ed errore, è consigliabile provare a rendere questa sperimentazione superflua.
 
-I controlli di divulgazione progressiva hanno un [affordances](glossary.md)piuttosto debole, il che significa che le relative proprietà visive suggeriscono come vengono usate, anche se in modo debole. Nella tabella seguente viene confrontato l'aspetto dei controlli comuni di diffusione progressiva:
+I controlli di diffusione progressiva hanno una convenienza piuttosto [debole,](glossary.md)il che significa che le proprietà visive suggeriscono come vengono usati, anche se in modo debole. Nella tabella seguente viene confrontato l'aspetto dei controlli di divulgazione progressiva comuni:
 
 
 
 | Control | Scopo  | Aspetto | Il glifo indica |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| **Chevrons**<br/> ![Screenshot delle scacchiere sinistra/destra e su/giù ](images/progressive-disclosure-controls-image7.png)<br/>                 | **Mostra tutto:** Mostra o nasconde gli elementi rimanenti in contenuto completamente o parzialmente nascosto. Gli elementi vengono visualizzati sul posto (usando una singola freccia di controllo) o in un menu a comparsa (usando una doppia freccia di controllo).<br/> | Le virgolette di controllo puntano nella direzione in cui si verificherà l'azione.<br/>                                                        | Stato futuro<br/>        |
-| **Frecce**<br/> ![Screenshot delle frecce sinistra/destra e su/giù ](images/progressive-disclosure-controls-image8.png)<br/>                     | **Mostra opzioni:** Mostra un menu di comando popup.<br/>                                                                                                                                                    | Le frecce puntano nella direzione in cui si verificherà l'azione.<br/>                                                          | Stato futuro<br/>        |
-| **Controlli più e meno**<br/> ![Screenshot di due piccoli pulsanti più e meno ](images/progressive-disclosure-controls-image9.png)<br/> | **Espandere i contenitori:** Espandere o comprimere il contenuto del contenitore sul posto durante lo spostamento all'interno di una gerarchia.<br/>                                                                                        | I simboli più e meno non puntano, ma l'azione si verifica sempre a destra.<br/>                                    | Stato futuro<br/>        |
-| **Rotazione di triangoli**<br/> ![Screenshot di due piccoli triangoli ](images/progressive-disclosure-controls-image10.png)<br/>                  | **Mostra dettagli:** Mostrare o nascondere informazioni aggiuntive per un singolo elemento. Vengono usati anche per espandere i contenitori.<br/>                                                                  | I triangoli rotanti sono simili alle leve rotanti, quindi puntano nella direzione in cui si è verificata l'azione.<br/> | Stato attuale<br/>       |
+| **Chevrons**<br/> ![Screenshot delle scacchiere sinistra/destra e su/giù ](images/progressive-disclosure-controls-image7.png)<br/>                 | **Mostra tutto:** Mostra o nasconde gli elementi rimanenti nel contenuto completamente o parzialmente nascosto. Gli elementi vengono visualizzati sul posto (usando una singola freccia) o in un menu a comparsa (usando una doppia freccia).<br/> | Le scacchiere puntano nella direzione in cui si verificherà l'azione.<br/>                                                        | Stato futuro<br/>        |
+| **Frecce**<br/> ![Screenshot delle frecce sinistra/destra e su/giù ](images/progressive-disclosure-controls-image8.png)<br/>                     | **Mostra opzioni:** Visualizzare un menu di comando popup.<br/>                                                                                                                                                    | Le frecce puntano nella direzione in cui si verificherà l'azione.<br/>                                                          | Stato futuro<br/>        |
+| **Controlli più e meno**<br/> ![Screenshot di due piccoli pulsanti più e meno ](images/progressive-disclosure-controls-image9.png)<br/> | **Espandere i contenitori:** Espandere o comprimere il contenuto del contenitore sul posto quando si esplora una gerarchia.<br/>                                                                                        | I simboli più e meno non puntano, ma l'azione si verifica sempre a destra.<br/>                                    | Stato futuro<br/>        |
+| **Rotazione dei triangoli**<br/> ![Screenshot di due piccoli triangoli ](images/progressive-disclosure-controls-image10.png)<br/>                  | **Mostra dettagli:** Mostra o nasconde informazioni aggiuntive sul posto per un singolo elemento. Vengono usati anche per espandere i contenitori.<br/>                                                                  | I triangoli rotanti sono simili a leve rotanti, quindi puntano nella direzione in cui si è verificata l'azione.<br/> | Stato attuale<br/>       |
 
 
 
@@ -110,7 +110,7 @@ I controlli di divulgazione progressiva hanno un [affordances](glossary.md)piutt
 
 **Se si fa una sola cosa...**
 
-Gli utenti devono essere in grado di prevedere correttamente il comportamento di un controllo di divulgazione progressiva solo tramite ispezione. A tale scopo, selezionare i modelli di utilizzo appropriati e applicarne l'aspetto, la posizione e il comportamento in modo coerente.
+Gli utenti devono essere in grado di stimare correttamente il comportamento di un controllo di divulgazione progressiva solo tramite ispezione. A tale scopo, selezionare i modelli di utilizzo appropriati e applicarne l'aspetto, la posizione e il comportamento in modo coerente.
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
@@ -165,7 +165,7 @@ I controlli più e meno vengono usati nei modi seguenti:
 
 |       Utilizzo                                                                                         |       Esempio                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Alberi comprimibili**<br/> una gerarchia multi-livello per visualizzare il contenuto del contenitore.<br/> | ![Screenshot che mostra un Esplora risorse di cartelle con l'opzione "Comportamento" selezionata.](images/progressive-disclosure-controls-image16.png)<br/> In questo esempio i controlli più e meno vengono posizionati a sinistra del contenitore associato.<br/>       |
+| **Alberi comprimibili**<br/> una gerarchia multi-livello per visualizzare il contenuto del contenitore.<br/> | ![Screenshot che mostra un albero Windows di cartelle di Esplora risorse con l'opzione "Comportamento" selezionata.](images/progressive-disclosure-controls-image16.png)<br/> In questo esempio i controlli più e meno vengono posizionati a sinistra del contenitore associato.<br/>       |
 | **Elenchi comprimibili**<br/> una gerarchia a due livelli per visualizzare il contenuto del contenitore.<br/>   | ![Screenshot dell'elenco espanso per mostrare due livelli ](images/progressive-disclosure-controls-image17.png)<br/> In questo esempio i controlli più e meno vengono posizionati a sinistra dell'intestazione dell'elenco associato.<br/> |
 
 
@@ -178,7 +178,7 @@ I triangoli rotanti mostrano o nascondono informazioni aggiuntive per un singolo
 
 L'oggetto associato riceve lo stato attivo per l'input. Il triangolo compresso (puntato a destra) viene attivato con il tasto freccia destra e il triangolo espanso (verso il basso) con il tasto freccia SINISTRA.
 
-I triangoli rotanti vengono usati nei modi seguenti:
+La rotazione dei triangoli viene usata nei modi seguenti:
 
 
 
@@ -193,20 +193,20 @@ I triangoli rotanti vengono usati nei modi seguenti:
 
 ### <a name="preview-arrows"></a>Frecce di anteprima
 
-Come le virgolette, le informazioni aggiuntive vengono visualizzate o nascoste sul posto. L'elemento rimane espanso fino a quando l'utente non lo comprime. A differenza delle frecce di controllo, i glifi hanno una rappresentazione grafica dell'azione, in genere con una freccia che indica cosa accadrà.
+Come le scacchiere, le informazioni aggiuntive vengono visualizzate o nascoste sul posto. L'elemento rimane espanso fino a quando l'utente non lo comprime. A differenza delle frecce di controllo, i glifi hanno una rappresentazione grafica dell'azione, in genere con una freccia che indica cosa accadrà.
 
 ![Screenshot dei glifi a freccia che puntano in diagonale ](images/progressive-disclosure-controls-image20.png)
 
 In questi esempi di Microsoft Windows Media Player, i glifi hanno frecce che suggeriscono l'azione che verrà eseguita.
 
-Le frecce di anteprima sono meglio riservate nelle situazioni in cui una freccia di controllo standard non comunica in modo adeguato il comportamento del controllo, ad esempio quando la divulgazione è complessa o è presente più di un tipo di divulgazione.
+Le frecce di anteprima sono meglio riservate nelle situazioni in cui una freccia di controllo standard non comunica in modo adeguato il comportamento del controllo, ad esempio quando la divulgazione è complessa o è presente più di un tipo di diffusione.
 
 ## <a name="guidelines"></a>Indicazioni
 
 ### <a name="general"></a>Generale
 
 -   **Selezionare il modello di divulgazione progressiva in base al relativo utilizzo.** Per una descrizione di ogni modello di utilizzo, vedere la tabella precedente.
--   **Non usare i collegamenti per i controlli di divulgazione progressiva.** Usare solo i controlli di divulgazione progressiva presentati nella sezione Modelli di utilizzo. Usare tuttavia i collegamenti per passare agli argomenti [della Guida.](winenv-help.md)
+-   **Non usare collegamenti per i controlli di divulgazione progressiva.** Usare solo i controlli di divulgazione progressiva presentati nella sezione Modelli di utilizzo. Usare tuttavia i collegamenti per passare agli argomenti [della Guida.](winenv-help.md)
 
     **Corretto:**
 
@@ -226,12 +226,12 @@ Le frecce di anteprima sono meglio riservate nelle situazioni in cui una freccia
 
     In questo esempio la descrizione comando indica l'effetto di un controllo chevron senza etichetta.
 
--   Se un utente espande o comprime un **elemento,** rendere persistente lo stato in modo che venga reso attivo alla successiva visualizzazione della finestra , a meno che gli utenti non preferiscano iniziare con lo stato predefinito. Rendere persistente lo stato per ogni finestra, per utente.
+-   Se un utente espande o comprime un **elemento,** rendere persistente lo stato in modo che venga reso attivo alla successiva visualizzazione della finestra, a meno che gli utenti non preferiscano iniziare con lo stato predefinito. Rendere persistente lo stato per ogni finestra, per utente.
 -   **Assicurarsi che tutto il contenuto espanso possa essere compresso e viceversa e che l'operazione inversa sia ovvia.** In questo modo si favorisce l'esplorazione e si riduce la frustrazione. Il modo migliore per rendere ovvia l'operazione inversa è mantenere il controllo nella stessa posizione fissa. Se è necessario spostare il controllo, mantenerlo nella stessa posizione relativa all'interno di un'area visivamente distinta.
 
     **Non corretto:**
 
-    ![Screenshot del pulsante "sostituisci" con la barra di sospensione ](images/progressive-disclosure-controls-image24.png)
+    ![Screenshot del pulsante "sostituisci" con la barra di controllo ](images/progressive-disclosure-controls-image24.png)
 
     ![Screenshot del pulsante "sostituisci" senza chevron ](images/progressive-disclosure-controls-image25.png)
 
@@ -295,7 +295,7 @@ Le frecce di anteprima sono meglio riservate nelle situazioni in cui una freccia
 
     ![Screenshot di sfondo bianco e tinta unita per i controlli ](images/progressive-disclosure-controls-image33.png)
 
-    In questo esempio non esiste una relazione visiva chiara tra la scacchina sul posto e l'interfaccia utente associata, quindi sembra essere mobile nello spazio.
+    In questo esempio non esiste una relazione visiva chiara tra la barra di controllo sul posto e l'interfaccia utente associata, quindi sembra essere mobile nello spazio.
 
 ### <a name="arrows"></a>Frecce
 
@@ -313,7 +313,7 @@ Le frecce di anteprima sono meglio riservate nelle situazioni in cui una freccia
 
     Queste frecce non sono simili ai controlli di divulgazione progressiva.
 
-    **Non corretto (per Indietro, Inoltra):**
+    **Non corretto (per Back, Forward):**
 
     ![Screenshot di due pulsanti con triangoli neri ](images/progressive-disclosure-controls-image36.png)
 
@@ -353,7 +353,7 @@ Quando si fa riferimento ai controlli di divulgazione progressiva:
 
     **Esempio:** Per visualizzare i file all'interno di una cartella, spostare il puntatore all'inizio del nome della cartella e quindi fare clic sul triangolo accanto alla cartella.
 
--   Non fare riferimento al controllo come un pulsante, a meno che non si contrasti con altri controlli di divulgazione progressiva che non sono pulsanti.
+-   Non fare riferimento al controllo come pulsante, a meno che non si contrasti con altri controlli di divulgazione progressiva che non sono pulsanti.
 -   Per descrivere l'interazione dell'utente, usare click. Se necessario per maggiore chiarezza, usare click... per espandere o comprimere.
 -   Quando possibile, formattare l'etichetta usando il testo in grassetto. In caso contrario, inserire l'etichetta tra virgolette solo se necessario per evitare confusione.
 

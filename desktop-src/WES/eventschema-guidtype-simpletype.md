@@ -1,9 +1,9 @@
 ---
-title: Tipo semplice GUIDType (schema di eventi)
-description: Definisce un tipo di identificatore univoco globale nel formato del registro di sistema. | Tipo semplice GUIDType (schema di eventi)
+title: Tipo semplice GUIDType (schema eventi)
+description: Definisce un tipo di identificatore univoco globale, in formato Registro di sistema. | Tipo semplice GUIDType (schema eventi)
 ms.assetid: dbc305ef-6f07-4a70-9013-b89ccec889ea
 keywords:
-- Log eventi di tipo semplice GUIDType
+- GuidType tipo semplice EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 07635bc43ff07d65eee5f32786818ca7dad8dd64
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a2fb7c0cd759b8b58b0db801819ed365f5b25fdb5abdcf886430e8bb2582cbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750623"
 ---
-# <a name="guidtype-simple-type-event-schema"></a>Tipo semplice GUIDType (schema di eventi)
+# <a name="guidtype-simple-type-event-schema"></a>Tipo semplice GUIDType (schema eventi)
 
-Definisce un tipo di identificatore univoco globale nel formato del registro di sistema.
+Definisce un tipo di identificatore univoco globale, in formato Registro di sistema.
 
 ``` syntax
 <xs:simpleType name="GUIDType">
@@ -38,11 +38,11 @@ Definisce un tipo di identificatore univoco globale nel formato del registro di 
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **GUIDType** è una stringa limitata dal modello seguente:
+Il **tipo semplice GUIDType** è una stringa limitata dal modello seguente:
 
 -   `\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}`
 
-    Il valore deve essere un tipo di identificatore univoco globale nel formato del registro di sistema. Ad esempio, {5b2fc63a-8af4-44cb-960c-aefdced908d6}. Usare GUIDGen.exe o UUIDGen.exe per creare un GUID.
+    Il valore deve essere un tipo di identificatore univoco globale in formato Registro di sistema. Ad esempio, {5b2fc63a-8af4-44cb-960c-aefdced908d6}. Usare GUIDGen.exe o UUIDGen.exe per creare un GUID.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Il tipo semplice **GUIDType** è una stringa limitata dal modello seguente:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

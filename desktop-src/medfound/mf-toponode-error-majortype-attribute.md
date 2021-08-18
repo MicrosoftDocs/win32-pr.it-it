@@ -1,19 +1,19 @@
 ---
-description: Contiene il tipo di supporto principale per un nodo di topologia. Questo attributo viene impostato quando la topologia non viene caricata perché non è stato possibile trovare il decodificatore corretto.
+description: Contiene il tipo di supporto principale per un nodo della topologia. Questo attributo viene impostato quando il caricamento della topologia non riesce perché non è stato trovato il decodificatore corretto.
 ms.assetid: eb837fe6-12c9-479c-a0be-63b24093e6fd
-title: Attributo MF_TOPONODE_ERROR_MAJORTYPE (Mfidl. h)
+title: MF_TOPONODE_ERROR_MAJORTYPE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd68ace0cd3bec4f32536e7d0d8d29bcea60d997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e32752f74708272c367e3f15b208ed66fb0d476baab75b8032ed028e1b9e4162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875151"
 ---
-# <a name="mf_toponode_error_majortype-attribute"></a>\_ \_ Attributo MAJORTYPE dell'errore MF TOPONODE \_
+# <a name="mf_toponode_error_majortype-attribute"></a>Attributo MF \_ TOPONODE \_ ERROR \_ MAJORTYPE
 
-Contiene il tipo di supporto principale per un nodo di topologia. Questo attributo viene impostato quando la topologia non viene caricata perché non è stato possibile trovare il decodificatore corretto.
+Contiene il tipo di supporto principale per un nodo della topologia. Questo attributo viene impostato quando il caricamento della topologia non riesce perché non è stato trovato il decodificatore corretto.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,11 +23,11 @@ Contiene il tipo di supporto principale per un nodo di topologia. Questo attribu
 
 Questo attributo si applica a tutti i tipi di nodo.
 
-Il caricatore della topologia potrebbe impostare l'attributo. Le applicazioni in genere leggono questo attributo ma non lo impostano.
+Il caricatore della topologia potrebbe impostare l'attributo . Le applicazioni leggono in genere questo attributo ma non lo impostano.
 
-Per un elenco di valori possibili, vedere [principali tipi di supporti](media-type-guids.md).
+Per un elenco dei valori possibili, vedere [Tipi di supporti principali](media-type-guids.md).
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,13 +45,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: Seguid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

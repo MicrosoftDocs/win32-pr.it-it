@@ -1,26 +1,26 @@
 ---
-title: Proprietà RdpdrClipCleanTempDirString di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà RdpdrClipCleanTempDirString di IMsRdpClientAdvancedSettings
+title: Proprietà IMsRdpClientAdvancedSettings RdpdrClipCleanTempDirString
+description: Questa proprietà non è supportata. | Proprietà IMsRdpClientAdvancedSettings RdpdrClipCleanTempDirString
 ms.assetid: 3c143567-edfd-4a28-a390-4733b91aae20
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
-- Servizi Desktop remoto proprietà RdpdrClipCleanTempDirString, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto interfaccia , IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto interfaccia , IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
+- Proprietà RdpdrClipCleanTempDirString Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RdpdrClipCleanTempDirString
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef6f4587551d2eb001dae03431f062a6e227cbda
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d98d00c750f02681ce73a7fd8775b10872ddd7a5917f89d995ea57cd64b865a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757667"
 ---
-# <a name="imsrdpclientadvancedsettingsrdpdrclipcleantempdirstring-property"></a>Proprietà IMsRdpClientAdvancedSettings:: RdpdrClipCleanTempDirString
+# <a name="imsrdpclientadvancedsettingsrdpdrclipcleantempdirstring-property"></a>Proprietà IMsRdpClientAdvancedSettings::RdpdrClipCleanTempDirString
 
 Questa proprietà non è supportata.
 
@@ -88,7 +88,7 @@ Nuovo messaggio.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Restituisce un valore **\_ false**.
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

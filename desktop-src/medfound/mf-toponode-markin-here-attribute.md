@@ -1,19 +1,19 @@
 ---
-description: Specifica se la pipeline applica Mark-in a questo nodo.
+description: Specifica se la pipeline applica il mark-in in questo nodo.
 ms.assetid: 406145e8-e00e-460d-b282-85face457605
-title: Attributo MF_TOPONODE_MARKIN_HERE (Mfidl. h)
+title: MF_TOPONODE_MARKIN_HERE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efa355cc070a7371ff2e294b3ca3ad558a4749b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c105dae6792e995e281309d2b693b78a0ec01e67c4412dc6d62056df09ebe9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874878"
 ---
-# <a name="mf_toponode_markin_here-attribute"></a>\_ \_ Attributo Markin qui MF TOPONODE \_
+# <a name="mf_toponode_markin_here-attribute"></a>Attributo MF \_ TOPONODE \_ MARKIN \_ HERE
 
-Specifica se la pipeline applica Mark-in a questo nodo. Mark-in è il punto in cui inizia una presentazione. Se i componenti della pipeline generano dati prima del punto di contrassegno, non viene eseguito il rendering dei dati.
+Specifica se la pipeline applica il mark-in in questo nodo. Il mark-in è il punto in cui inizia una presentazione. Se i componenti della pipeline generano dati prima del punto di inserimento, non viene eseguito il rendering dei dati.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -24,15 +24,15 @@ Considera come valore booleano.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per la maggior parte delle applicazioni non è necessario usare questo attributo. Se necessario, la [sessione multimediale](media-session.md) imposta automaticamente questo attributo.
+> La maggior parte delle applicazioni non deve usare questo attributo. La [sessione multimediale](media-session.md) imposta automaticamente questo attributo, se necessario.
 
  
 
-Questo attributo si applica a tutti i tipi di nodo. Se l'attributo è **true**, la pipeline Media Foundation rimuove gli esempi di output da questo nodo in modo che corrispondano all'ora di inizio della presentazione. Il caricatore della topologia imposta questo attributo quando risolve una topologia.
+Questo attributo si applica a tutti i tipi di nodo. Se l'attributo è **TRUE,** Media Foundation pipeline taglia gli esempi di output da questo nodo in modo che corrispondano all'ora di inizio della presentazione. Il caricatore della topologia imposta questo attributo quando risolve una topologia.
 
-È consigliabile che questo attributo sia impostato su **true** esattamente per un nodo in ogni ramo della topologia. Un ramo della topologia è definito come il percorso da un nodo di origine a un nodo di output. All'interno di un ramo, gli attributi [ \_ TOPONODE \_ \_ ](mf-toponode-markout-here-attribute.md) e MF TOPONODE Markin \_ \_ \_ here devono essere impostati nello stesso nodo del branch. Non possono essere impostati su nodi diversi all'interno dello stesso ramo.
+È consigliabile che esattamente un nodo in ogni ramo della topologia abbia questo attributo impostato su **TRUE.** Un ramo della topologia è definito come percorso da un nodo di origine a un nodo di output. All'interno di un ramo, gli attributi [MF \_ TOPONODE \_ MARKOUT \_ HERE](mf-toponode-markout-here-attribute.md) e MF \_ TOPONODE MARKIN HERE devono essere impostati nello stesso nodo \_ del \_ ramo. Non possono essere impostate su nodi diversi all'interno dello stesso ramo.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,9 +40,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -50,19 +50,19 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
-[**TOPONODE di MF \_ \_ \_**](mf-toponode-markout-here-attribute.md)
+[**MF \_ TOPONODE \_ MARKOUT \_ QUI**](mf-toponode-markout-here-attribute.md)
 </dt> <dt>
 
 [Attributi del nodo della topologia](topology-node-attributes.md)

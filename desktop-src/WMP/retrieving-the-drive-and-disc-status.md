@@ -23,7 +23,7 @@ ms.locfileid: "117746273"
 ---
 # <a name="retrieving-the-drive-and-disc-status"></a>Recupero dello stato dell'unità e del disco
 
-Prima di avviare un'operazione di masterizzazione cd, è necessario assicurarsi che l'unità CD-ROM selezionata supporti l'operazione che si vuole eseguire. Ad esempio, è necessario verificare che un CD sia in grado di essere cancellato prima di chiamare [IWMPCdromBurn::erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). Il codice seguente illustra un esempio di uso [di IWMPCdromBurn::isAvailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) per determinare se è supportata un'operazione:
+Prima di avviare un'operazione di masterizzazione cd, è necessario assicurarsi che l'unità CD-ROM selezionata supporti l'operazione che si vuole eseguire. Ad esempio, è necessario verificare che un CD sia in grado di essere cancellato prima di chiamare [IWMPCdromBurn::erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). Il codice seguente illustra un esempio di uso [di IWMPCdromBurn::isAvailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) per determinare se un'operazione è supportata:
 
 
 ```C++

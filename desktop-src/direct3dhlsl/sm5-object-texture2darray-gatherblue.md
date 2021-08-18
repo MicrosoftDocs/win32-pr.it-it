@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GatherBlue (S, float, int)'
-description: "Restituisce i componenti blu dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Funzione Texture2DArray:: GatherBlue (S, float, int)"
+title: Funzione Texture2DArray::GatherBlue(S,float,int)
+description: Restituisce i componenti blu dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Funzione Texture2DArray::GatherBlue(S,float,int)
 ms.assetid: f81596b5-afd1-4baf-b6c0-ca4661a3ef22
 keywords:
 - Funzione GatherBlue HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1844b898deca767b04aba438f4784a54a5afa112
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9a81aef4d47b3113713f64093bb39567b566ad47969a937b70e4d000073b294a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724815"
 ---
-# <a name="texture2darraygatherbluesfloatint-function"></a>Funzione Texture2DArray:: GatherBlue (S, float, int)
+# <a name="texture2darraygatherbluesfloatint-function"></a>Funzione Texture2DArray::GatherBlue(S,float,int)
 
-Restituisce i componenti blu dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti blu dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,27 +41,27 @@ TemplateType GatherBlue(
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **Sampler**
+Tipo: **sampler**
 
 Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*posizione* \[ in\]
+*location* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*offset* \[ in\]
+*offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Offset applicato alla coordinata di trama prima del campionamento.
+Offset applicato alla coordinata della trama prima del campionamento.
 
 </dd> </dl>
 
@@ -69,17 +69,17 @@ Offset applicato alla coordinata di trama prima del campionamento.
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -94,7 +94,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi GatherBlue](texture2darray-gatherblue.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

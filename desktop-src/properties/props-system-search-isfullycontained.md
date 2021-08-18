@@ -1,19 +1,19 @@
 ---
-description: Emesso come TRUE da tutti gli elementi figlio di un contenitore, ad esempio un messaggio di posta elettronica o un file compresso con estensione zip, che genera System. search. IsClosedDirectory come TRUE. In questo modo si garantisce che gli elementi figlio siano inclusi nell'indice di ricerca.
+description: Generato come TRUE da tutti gli elementi figlio di un contenitore (ad esempio un messaggio di posta elettronica o un file compresso con estensione .zip) che genera System.Search.IsClosedDirectory come TRUE. Ciò garantisce che gli elementi figlio siano inclusi nell'indice di ricerca.
 ms.assetid: 6da60e89-6956-41f6-8624-063c4d46464d
-title: System. search. IsFullyContained
+title: System.Search.IsFullyContained
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1245f29a2940146a4e5d8f0a392210173be75e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ce7f325be26abdb81dcb51da7018f6da786e6ec5f3a31111e4ae3823acf8c78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864990"
 ---
-# <a name="systemsearchisfullycontained"></a>System. search. IsFullyContained
+# <a name="systemsearchisfullycontained"></a>System.Search.IsFullyContained
 
-Emesso come **true** da tutti gli elementi figlio di un contenitore, ad esempio un messaggio di posta elettronica o un file compresso con estensione zip, che genera [System. search. IsClosedDirectory](./props-system-search-iscloseddirectory.md) come **true**. In questo modo si garantisce che gli elementi figlio siano inclusi nell'indice di ricerca.
+Generato come **TRUE** da tutti gli elementi figlio di un contenitore (ad esempio un messaggio di posta elettronica o un file compresso con estensione .zip) che genera [System.Search.IsClosedDirectory](./props-system-search-iscloseddirectory.md) **come TRUE**. Ciò garantisce che gli elementi figlio siano inclusi nell'indice di ricerca.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,9 +32,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-La proprietà [System. search. IsClosedDirectory](./props-system-search-iscloseddirectory.md) consente di ottimizzare le prestazioni dell'indicizzatore consentendo all'indicizzatore di ignorare l'enumerazione degli elementi figlio di un contenitore. Tuttavia, tali elementi figlio vengono contrassegnati dall'indicizzatore come non visitati e, in quanto tali, verranno eliminati dall'indice. Con l'emissione di [System. search. IsFullyContained]() come **true**, un elemento non viene eliminato dall'indice, sebbene non sia stato visitato.
+La [proprietà System.Search.IsClosedDirectory](./props-system-search-iscloseddirectory.md) consente di ottimizzare le prestazioni dell'indicizzatore consentendo all'indicizzatore di ignorare l'enumerazione degli elementi figlio di un contenitore. Tali elementi figlio, tuttavia, sono contrassegnati dall'indicizzatore come non visitati e di conseguenza verranno eliminati dall'indice. [Emettendo System.Search.IsFullyContained]() **come TRUE,** un elemento non viene eliminato dall'indice nonostante non sia stato visitato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,13 +49,13 @@ La proprietà [System. search. IsClosedDirectory](./props-system-search-isclosed
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -64,7 +64,7 @@ La proprietà [System. search. IsClosedDirectory](./props-system-search-isclosed
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

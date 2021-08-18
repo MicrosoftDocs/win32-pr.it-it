@@ -3,27 +3,27 @@ title: CLOSEBUTTON
 description: CLOSEBUTTON
 ms.assetid: 39e2de27-c5aa-4a8f-8545-8b7e5cab730f
 keywords:
-- Windows Media Player Skin, elemento BUTTON
-- Skin, elemento BUTTON
-- riferimento per le interfacce, elemento BUTTON
-- Elemento BUTTON
-- elementi, pulsante
-- Interfacce Media Player di Windows, pulsanti Chiudi
-- interfacce, pulsanti Chiudi
-- Chiudi pulsanti
-- riferimento per le interfacce, pulsanti Chiudi
+- Windows Media Player, elemento BUTTON
+- skins,BUTTON - elemento
+- informazioni di riferimento per le interfaccia, elemento BUTTON
+- BUTTON - elemento
+- elementi, BUTTON
+- Windows Media Player, pulsanti Chiudi
+- skins,Close buttons
+- Pulsanti chiudi
+- informazioni di riferimento per le interfaccia, pulsanti Chiudi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7b3d6df8984d966e84a68cadaf38d1cc8ab369
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0f8123305c92bfe7f5fccc69b9fd8a92429a67fb933189bd3b0285834cccd2a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119789"
 ---
 # <a name="closebutton"></a>CLOSEBUTTON
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **pulsante predefinito** con i valori predefiniti seguenti.
 
 
 ```C++
@@ -36,7 +36,7 @@ upToolTip="Close"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo **Button** che chiude il lettore. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+Verrà creato un **controllo BUTTON** che chiude il lettore. Le descrizioni comandi sono localizzate. È possibile eseguire **l'override di** tutte le proprietà di questo pulsante specificandole in modo esplicito.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -45,9 +45,9 @@ Viene creato un controllo **Button** che chiude il lettore. Le descrizioni coman
 [**Elemento BUTTON**](button-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

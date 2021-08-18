@@ -1,5 +1,5 @@
 ---
-description: Questa tabella elenca i tipi di dati di base supportati da Windows Runtime e indica il tipo corrispondente in \# C, Visual Basic e C++.
+description: Questa tabella elenca i tipi di dati di base supportati dal runtime di Windows e indica il tipo corrispondente in \# C, Visual Basic e C++.
 ms.assetid: B5735851-EC07-48C1-92B4-CA9F768096F6
 title: Windows Tipi di dati di base di runtime
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117741655"
 ---
 # <a name="windows-runtime-base-data-types"></a>Windows Tipi di dati di base di runtime
 
-Questa tabella elenca i tipi di dati di base supportati da Windows Runtime e indica il tipo corrispondente in \# C, Visual Basic e C++.
+Questa tabella elenca i tipi di dati di base supportati dal runtime di Windows e indica il tipo corrispondente in \# C, Visual Basic e C++.
 
 
 

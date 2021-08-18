@@ -36,15 +36,15 @@ Trasferisce il controllo a un blocco di istruzioni diverso all'interno del corpo
 
 ## <a name="remarks"></a>Commenti
 
-Un costrutto **switch** endswitch si comporta esattamente come un costrutto switch nel linguaggio C, con l'eccezione seguente: per le istruzioni predefinite del case / [](endswitch--sm4---asm-.md) D3D11  che passano al case [](case--sm4---asm-.md) / [](default--sm4---asm-.md)  / **predefinito** [](break--sm4---asm-.md) successivo senza un'interruzione non possono essere presenti codice. È consentito che più **istruzioni case,** tra cui **default**, vengano visualizzate in sequenza, condividendo lo stesso blocco di codice.
+Un costrutto **switch** endswitch si comporta esattamente come un costrutto switch nel linguaggio C, con l'eccezione seguente: per le istruzioni predefinite del case / [](endswitch--sm4---asm-.md) D3D11  che passano all'impostazione predefinita case successiva senza un'interruzione non possono contenere [](case--sm4---asm-.md) / [](default--sm4---asm-.md)  /  codice. [](break--sm4---asm-.md) È consentito che più **istruzioni case,** inclusa **quella** predefinita, vengano visualizzate in sequenza, condividendo lo stesso blocco di codice.
 
-La condizione deve essere un componente di registro a 32 bit o una quantità immediata. Il confronto di uguaglianza è bit per bit (integer).
+La condizione deve essere un componente registro a 32 bit o una quantità immediata. Il confronto di uguaglianza è bit per bit (integer).
 
-Come per qualsiasi istruzione Shader in D3D11, l'hardware può implementare direttamente il **costrutto switch.**
+Come per qualsiasi istruzione Shader in D3D11, l'hardware può implementare direttamente o meno il **costrutto switch.**
 
-**Le istruzioni Switch** possono essere annidate. Ogni **blocco switch** viene conteggiato come livello 1 rispetto al limite di profondità di annidamento del controllo di flusso di 64 per subroutine e main, indipendentemente dal numero di istruzioni **case.** Il compilatore HLSL non genererà subroutine che superano questo limite. Il comportamento delle istruzioni del flusso di controllo oltre i 64 livelli di profondità per ogni subroutine non è definito.
+**Le istruzioni switch** possono essere annidate. Ogni **blocco switch** viene conteggiato come livello 1 rispetto al limite di profondità di annidamento del controllo di flusso di 64 per subroutine e main, indipendentemente dal numero di istruzioni **case.** Il compilatore HLSL non genererà subroutine che superano questo limite. Il comportamento delle istruzioni del flusso di controllo oltre i 64 livelli di profondità per subroutine non è definito.
 
-L'esempio seguente illustra come usare questa istruzione.
+Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
 
 ``` syntax
                 ...
@@ -65,7 +65,7 @@ L'esempio seguente illustra come usare questa istruzione.
                 endswitch
 ```
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -79,7 +79,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -88,9 +88,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -100,7 +100,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
 title: Metodo SetSingleSession della classe Win32_TerminalServiceSetting
-description: Il metodo SetSingleSession imposta la proprietà SingleSession per la classe.
+description: Il metodo SetSingleSession imposta la proprietà SingleSession per la classe .
 ms.assetid: 67ccfa9d-86a5-4501-9d61-c7f1677ec3d5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetSingleSession
-- Metodo SetSingleSession Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo SetSingleSession
+- Metodo SetSingleSession Servizi Desktop remoto
+- Metodo SetSingleSession Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto, metodo SetSingleSession
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40a6ff702020b7682938b7174c65623eba30076a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a93fe070a2c820a1fe098d34c65a00a78b2bb9abecb85dd672ba048a99d7f565
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755686"
 ---
-# <a name="setsinglesession-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetSingleSession della \_ classe TerminalServiceSetting Win32
+# <a name="setsinglesession-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetSingleSession della classe TerminalServiceSetting Win32 \_
 
-Il metodo **SetSingleSession** imposta la proprietà **SingleSession** per la classe.
+Il **metodo SetSingleSession** imposta la **proprietà SingleSession** per la classe .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ uint32 SetSingleSession(
 
 <dl> <dt>
 
-*SingleSession* \[ in\]
+*SingleSession* \[ Pollici\]
 </dt> <dd>
 
-Flag che disabilita o Abilita la proprietà **SingleSession** , che determina se gli utenti sono limitati a una o più sessioni di Servizi Desktop remoto.
+Contrassegnare la disabilitazione o l'abilitazione della proprietà **SingleSession,** che determina se gli utenti sono limitati a una o Servizi Desktop remoto sessioni.
 
 <dt>
 
@@ -57,7 +57,7 @@ Flag che disabilita o Abilita la proprietà **SingleSession** , che determina se
 
 </dt> <dd>
 
-Disabilitare la proprietà.
+Disabilitare la proprietà .
 
 </dd> <dt>
 
@@ -68,17 +68,17 @@ Disabilitare la proprietà.
 
 </dt> <dd>
 
-Abilitare la proprietà.
+Abilitare la proprietà .
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce Success in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -98,7 +98,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

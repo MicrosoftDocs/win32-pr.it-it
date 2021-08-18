@@ -1,11 +1,11 @@
 ---
-title: Controls. Previous, metodo
+title: Metodo Controls.previous
 description: Il metodo precedente imposta l'elemento corrente sull'elemento precedente nella playlist.
 ms.assetid: 09f83306-5e82-4384-ad28-38e406a401d8
 keywords:
-- Metodo precedente Media Player Windows
-- Metodo precedente Media Player Windows, classe Controls
-- Classe Controls Media Player Windows, metodo precedente
+- Metodo Windows Media Player
+- Metodo previous Windows Media Player , classe Controls
+- Classe Controls Windows Media Player , metodo precedente
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b8fcfacd93412f467e6ef1def5afa6305a6bc0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f67dbc80fb731f32eefb36f2a0f66c852da3da69dbc6b7ae56c03ebafb06e07e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119330"
 ---
-# <a name="controlsprevious-method"></a>Controls. Previous, metodo
+# <a name="controlsprevious-method"></a>Metodo Controls.previous
 
-Il metodo **precedente** imposta l'elemento corrente sull'elemento precedente nella playlist.
+Il **metodo** precedente imposta l'elemento corrente sull'elemento precedente nella playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se la playlist si trova nella prima voce quando viene richiamato il **precedente** , l'ultima voce nella playlist diventerà quella corrente.
+Se la playlist si trova sulla prima voce quando **viene richiamato previous,** l'ultima voce nella playlist diventerà quella corrente.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **Previous** per passare all'elemento precedente nella playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **previous** per passare all'elemento precedente nella playlist corrente. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -74,7 +74,7 @@ Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **Previous** 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -86,10 +86,10 @@ Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **Previous** 
 [**Oggetto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controlli. Next**](controls-next.md)
+[**Controls.next**](controls-next.md)
 </dt> <dt>
 
-[**Controls. Stop**](controls-stop.md)
+[**Controls.stop**](controls-stop.md)
 </dt> </dl>
 
  

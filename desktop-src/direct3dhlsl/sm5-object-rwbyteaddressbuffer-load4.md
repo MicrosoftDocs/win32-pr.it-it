@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: Load4 (uint)'
-description: 'Ottiene quattro valori. | Funzione RWByteAddressBuffer:: Load4 (uint)'
+title: Funzione RWByteAddressBuffer::Load4(uint)
+description: Ottiene quattro valori. | Funzione RWByteAddressBuffer::Load4(uint)
 ms.assetid: b46cd119-75be-4c2d-82f9-5dcabd7e4400
 keywords:
 - Funzione Load4 HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb2bdc5adf3b3d95c68871a14c9382891a59ad52
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7545c27ccd5f82b3fed1f36a1cc2b0f9d92a9d901f5614ba3b6bec4068cb8abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104982049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724971"
 ---
-# <a name="rwbyteaddressbufferload4uint-function"></a>Funzione RWByteAddressBuffer:: Load4 (uint)
+# <a name="rwbyteaddressbufferload4uint-function"></a>Funzione RWByteAddressBuffer::Load4(uint)
 
 Ottiene quattro valori.
 
@@ -36,7 +36,7 @@ uint4 Load4(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi Load4](rwbyteaddressbuffer-load4.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

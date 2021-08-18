@@ -13,7 +13,7 @@ ms.locfileid: "118193545"
 ---
 # <a name="wpd_content_type_appointment"></a>APPUNTAMENTO CON TIPO DI CONTENUTO WPD \_ \_ \_
 
-Un oggetto che ne descrive il tipo come WPD \_ CONTENT TYPE APPOINTMENT rappresenta un appuntamento in un \_ \_ calendario.
+Un oggetto che descrive il tipo come WPD \_ CONTENT TYPE APPOINTMENT rappresenta un appuntamento in un \_ \_ calendario.
 
 Questo tipo di oggetto supporta le proprietà seguenti.
 
@@ -25,9 +25,9 @@ Questo tipo di oggetto supporta le proprietà seguenti.
 | [ID PADRE \_ DELL'OGGETTO WPD \_ \_](object-properties.md)                                                 | Obbligatorio.                                                                      |
 | [NOME OGGETTO \_ WPD \_](object-properties.md)                                                            | Obbligatorio se l'oggetto rappresenta un file.                                      |
 | [\_ID UNIVOCO PERMANENTE DELL'OGGETTO WPD \_ \_ \_](object-properties.md)                          | Obbligatorio, di sola lettura. Un client non può impostare questa proprietà, anche in fase di creazione. |
-| [FORMATO OGGETTO WPD \_ \_](object-properties.md)                                                        | Obbligatorio.                                                                      |
+| [FORMATO \_ DELL'OGGETTO WPD \_](object-properties.md)                                                        | Obbligatorio.                                                                      |
 | [TIPO DI CONTENUTO \_ \_ DELL'OGGETTO \_ WPD](object-properties.md)                                           | Obbligatorio.                                                                      |
-| [\_ \_ ISHIDDEN DELL'OGGETTO WPD](object-properties.md)                                                    | Obbligatorio se l'oggetto è nascosto.                                              |
+| [\_ISHIDDEN DELL'OGGETTO \_ WPD](object-properties.md)                                                    | Obbligatorio se l'oggetto è nascosto.                                              |
 | [ISSYSTEM \_ DELL'OGGETTO \_ WPD](object-properties.md)                                                    | Obbligatorio se l'oggetto è un oggetto di sistema (rappresenta un file di sistema).          |
 | [DIMENSIONI \_ DELL'OGGETTO WPD \_](object-properties.md)                                                            | Obbligatorio se l'oggetto dispone di almeno una risorsa.                              |
 | [NOME FILE ORIGINALE \_ DELL'OGGETTO \_ \_ \_ WPD](object-properties.md)                              | Obbligatorio se l'oggetto rappresenta un file.                                      |
@@ -37,7 +37,7 @@ Questo tipo di oggetto supporta le proprietà seguenti.
 | [ID SINCRONIZZAZIONE OGGETTO WPD \_ \_ \_](object-properties.md)                                                     | facoltativo.                                                                      |
 | [L'OGGETTO WPD \_ \_ È PROTETTO DA \_ \_ DRM](object-properties.md)                                  | Obbligatorio se l'oggetto è protetto dalla tecnologia DRM.                         |
 | [DATA DI CREAZIONE DELL'OGGETTO WPD \_ \_ \_](object-properties.md)                                           | facoltativo.                                                                      |
-| [DATA DI \_ MODIFICA DELL'OGGETTO WPD \_ \_](object-properties.md)                                         | Consigliato.                                                                   |
+| [DATA DI MODIFICA DELL'OGGETTO WPD \_ \_ \_](object-properties.md)                                         | Consigliato.                                                                   |
 | [DATA DELL'OGGETTO WPD \_ \_ \_ CREATO](object-properties.md)                                         | facoltativo.                                                                      |
 | [RIFERIMENTI INDIETRO DEGLI OGGETTI WPD \_ \_ \_](object-properties.md)                                                                | Consigliato se all'oggetto viene fatto riferimento da un altro oggetto.                     |
 | [ID OGGETTO FUNZIONALE \_ DEL \_ CONTENITORE \_ DI \_ OGGETTI \_ WPD](object-properties.md)     | facoltativo.                                                                      |
@@ -48,8 +48,8 @@ Questo tipo di oggetto supporta le proprietà seguenti.
 | [WPD \_ COMMON \_ INFORMATION \_ SUBJECT](object-properties.md)                                                            | Obbligatorio.                                                                      |
 | [TESTO DEL CORPO \_ DELLE INFORMAZIONI COMUNI \_ WPD \_ \_](object-properties.md)                                                         | Consigliato.                                                                   |
 | [PRIORITÀ DELLE INFORMAZIONI COMUNI WPD \_ \_ \_](object-properties.md)                                                           | Consigliato.                                                                   |
-| [DATETIME DI \_ INIZIO DELLE INFORMAZIONI COMUNI \_ \_ \_ WPD](object-properties.md)                                                    | Consigliato.                                                                   |
-| [DATETIME DI \_ FINE DELLE INFORMAZIONI COMUNI \_ \_ \_ WPD](object-properties.md)                                                      | Consigliato.                                                                   |
+| [DATETIME DI INIZIO \_ \_ DELLE INFORMAZIONI COMUNI \_ \_ WPD](object-properties.md)                                                    | Consigliato.                                                                   |
+| [DATETIME DI \_ FINE \_ DELLE INFORMAZIONI COMUNI \_ WPD \_](object-properties.md)                                                      | Consigliato.                                                                   |
 | [NOTE SULLE INFORMAZIONI \_ COMUNI WPD \_ \_](object-properties.md)                                                              | facoltativo.                                                                      |
 | [POSIZIONE APPUNTAMENTO WPD \_ \_](object-properties.md)                                                                   | Obbligatorio.                                                                      |
 | [TIPO DI APPUNTAMENTO WPD \_ \_](appointment-properties.md)                                             | facoltativo.                                                                      |

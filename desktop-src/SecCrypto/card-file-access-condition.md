@@ -1,7 +1,7 @@
 ---
-description: Specifica le autorizzazioni di controllo di accesso per un file in una smart card.
+description: Specifica le autorizzazioni di controllo di accesso per un file in un smart card.
 ms.assetid: 995d959f-30dc-4e5c-be2d-6b447499415a
-title: Enumerazione CARD_FILE_ACCESS_CONDITION (cardmod. h)
+title: CARD_FILE_ACCESS_CONDITION enumerazione (Cardmod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: d3ef9fc81c9ab3bff5f3992c3aedeb3f923648ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9a38e7d67e413352de693f52b07ba11bf34858854fa708b41a735152ad3ed2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117771987"
 ---
-# <a name="card_file_access_condition-enumeration"></a>\_Enumerazione della \_ condizione di accesso ai file delle schede \_
+# <a name="card_file_access_condition-enumeration"></a>Enumerazione CARD \_ FILE \_ ACCESS \_ CONDITION
 
-L'enumerazione della condizione di accesso ai file di scheda specifica le autorizzazioni di controllo di accesso per un file in una [*Smart Card*](../secgloss/s-gly.md). **\_ \_ \_**
+**L'enumerazione CARD FILE ACCESS \_ \_ \_ CONDITION** specifica le autorizzazioni di controllo di accesso per un file in un [*smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Questo valore non è valido.
 <span id="EveryoneReadUserWriteAc"></span><span id="everyonereaduserwriteac"></span><span id="EVERYONEREADUSERWRITEAC"></span>**EveryoneReadUserWriteAc**
 </dt> <dd>
 
-Tutti possono leggere il file. Utenti specifici possono scrivere nel file.
+Tutti gli utenti possono leggere il file. Utenti specifici possono scrivere nel file.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Solo utenti specifici possono leggere o scrivere nel file.
 <span id="EveryoneReadAdminWriteAc"></span><span id="everyonereadadminwriteac"></span><span id="EVERYONEREADADMINWRITEAC"></span>**EveryoneReadAdminWriteAc**
 </dt> <dd>
 
-Tutti possono leggere il file. Gli amministratori possono scrivere nel file.
+Tutti gli utenti possono leggere il file. Gli amministratori possono scrivere nel file.
 
 </dd> <dt>
 
@@ -84,9 +84,9 @@ Le autorizzazioni di accesso per il file sono sconosciute.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, \[ solo app desktop Windows XP\]<br/>                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2003, Windows Server 2003 \[\]<br/>            |
-| Intestazione<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP, Windows solo \[ app desktop XP\]<br/>                              |
+| Server minimo supportato<br/> | Windows Solo app desktop Windows Server 2003 Server 2003 \[\]<br/>            |
+| Intestazione<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
 
 
 
@@ -94,10 +94,10 @@ Le autorizzazioni di accesso per il file sono sconosciute.
 
 <dl> <dt>
 
-[Provider del servizio di crittografia Smart Card di Microsoft base](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider)
+[Provider del servizio di crittografia smart card di base Microsoft](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider)
 </dt> <dt>
 
-[**\_informazioni sul file di scheda \_**](/previous-versions/windows/desktop/secsmart/card-file-info)
+[**INFORMAZIONI \_ SUL FILE DI \_ SCHEDA**](/previous-versions/windows/desktop/secsmart/card-file-info)
 </dt> <dt>
 
 [**CardCreateFile**](/previous-versions/windows/desktop/secsmart/cardcreatefile)

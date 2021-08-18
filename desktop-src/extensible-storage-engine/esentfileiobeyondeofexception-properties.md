@@ -17,7 +17,7 @@ ms.locfileid: "118496527"
 # <a name="esentfileiobeyondeofexception-properties"></a>Proprietà di EsentFileIOBeyondEOFException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md) espone i membri seguenti.
 

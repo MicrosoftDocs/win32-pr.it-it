@@ -1,5 +1,5 @@
 ---
-description: Archivia le informazioni sui tipi di collegamento e viene utilizzato dall'interfaccia IItemPreviewerExt.
+description: Archivia informazioni sui tipi di collegamento e viene usato dall'interfaccia IItemPreviewerExt.
 ms.assetid: c1d525ea-ee80-49fb-9447-20465b8f8654
 title: Struttura LINKINFO
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: de74f7aefb61f12bf85a457e4478aa76f2156410
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97c106a5a819ac1068501c77555f3eae238c935e2262894c6c250dfc6782188f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863944"
 ---
 # <a name="linkinfo-structure"></a>Struttura LINKINFO
 
-\[**LINKINFO** e [**IItemPreviewerExt**](-search-iitempreviewerext.md) sono supportati solo in Windows XP e Windows Server 2003 e non devono più essere utilizzati.\]
+\[**LINKINFO** e [**IItemPreviewerExt**](-search-iitempreviewerext.md) sono supportati solo in Windows XP e Windows Server 2003 e non devono più essere usati.\]
 
-Archivia le informazioni sui tipi di collegamento e viene utilizzato dall'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) .
+Archivia informazioni sui tipi di collegamento e viene usato [**dall'interfaccia IItemPreviewerExt.**](-search-iitempreviewerext.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,11 +50,11 @@ typedef struct _LINKINFO {
 **type**
 </dt> <dd>
 
-Tipo: **[ **LinkType**](-search-linktype.md)**
+Tipo: **[ **LINKTYPE**](-search-linktype.md)**
 
 </dd> <dd>
 
-Tipo di collegamento specificato durante la ricerca per indicizzazione o l'indicizzazione indicata da una costante [**LinkType**](-search-linktype.md) .
+Tipo di collegamento specificato durante la ricerca per indicizzazione o l'indicizzazione indicata da una [**costante LINKTYPE.**](-search-linktype.md)
 
 </dd> <dt>
 
@@ -87,18 +87,18 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Valore **BSTR** che specifica l'estensione del nome file.
+Valore **BSTR** che specifica l'estensione di file.
 
 </dd> <dt>
 
 **varData**
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **VARIANT**
 
 </dd> <dd>
 
-Variant che specifica il valore della variabile.
+Variante che specifica il valore della variabile.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-**DWORD** che specifica le parti correlate.
+Valore **DWORD** che specifica le parti correlate.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Valore **BSTR** che specifica una proprietà CID, una stringa decimale non riempita e con segno.
+Valore **BSTR** che specifica una proprietà Cid, una stringa decimale senza riempimento con segno.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ Tabella codici da utilizzare per la codifica della stringa.
 
 ## <a name="remarks"></a>Commenti
 
-Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti in computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario utilizzare la struttura **LINKINFO** e le API seguenti: i metodi [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e l'enumerazione [**LinkType**](-search-linktype.md) .
+Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare la struttura **LINKINFO** e le API seguenti: i metodi [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e l'enumerazione [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -145,9 +145,9 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
-| Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3,0<br/>          |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
+| Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>          |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Informazioni sullo sviluppo di framework dell'interfaccia utente accessibili per Windows con questa panoramica delle funzionalità Windows accessibilità che è possibile incorporare nel framework dell'interfaccia utente.
+description: Informazioni sullo sviluppo di framework dell'interfaccia utente accessibili Windows con questa panoramica delle funzionalità di accessibilità Windows che è possibile incorporare nel framework dell'interfaccia utente.
 title: Sviluppo di framework dell'interfaccia utente accessibili per Windows
 ms.topic: article
 ms.date: 04/18/2019
@@ -12,7 +12,7 @@ ms.locfileid: "117737770"
 ---
 # <a name="developing-accessible-ui-frameworks-for-windows"></a>Sviluppo di framework dell'interfaccia utente accessibili per Windows
 
-Per essere utilizzabili dal maggior numero possibile di persone, i framework dell'interfaccia utente creati per la piattaforma Windows devono supportare funzionalità di accessibilità che semplificano l'uso dei dispositivi Windows da parte di utenti con disabilità, preferenze personali o stili di lavoro specifici.
+Per essere utilizzabili dal maggior numero possibile di persone, i framework dell'interfaccia utente creati per la piattaforma Windows devono supportare funzionalità di accessibilità che semplificano l'uso corretto dei dispositivi Windows da parte di utenti con disabilità, preferenze personali o stili di lavoro specifici.
 
 Questa panoramica descrive come creare un framework dell'interfaccia utente che supporta funzionalità come l'accesso e l'automazione a livello di codice, la navigazione tramite tastiera e i comandi, le opzioni relative a colori e temi e la personalizzazione tramite le impostazioni utente.
 

@@ -1,14 +1,14 @@
 ---
-title: ITSRemoteProgram2 RemoteApplicationProgram - proprietà
+title: ItsRemoteProgram2 RemoteApplicationProgram - proprietà
 description: Percorso e nome file del programma RemoteApp.
 ms.assetid: 1e8fc9a5-6622-40e2-b434-a26ce20bd9aa
 ms.tgt_platform: multiple
 keywords:
 - Proprietà RemoteApplicationProgram Servizi Desktop remoto
 - Proprietà RemoteApplicationProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram2
-- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto, proprietà RemoteApplicationProgram
+- ItsRemoteProgram2 interface Servizi Desktop remoto , RemoteApplicationProgram property
 - Proprietà RemoteApplicationProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram3
-- Interfaccia ITSRemoteProgram3 Servizi Desktop remoto, proprietà RemoteApplicationProgram
+- ItsRemoteProgram3 interface Servizi Desktop remoto , RemoteApplicationProgram property
 topic_type:
 - apiref
 api_name:
