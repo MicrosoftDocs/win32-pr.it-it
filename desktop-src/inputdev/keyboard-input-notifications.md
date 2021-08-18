@@ -4,12 +4,12 @@ description: Notifiche di input da tastiera
 ms.assetid: dbce37a4-e84d-4719-8e9d-038a9847a6a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fe8183b3d9dad107ddf19191c1a491a69d63440
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03e13c4bf20455e8259f70892e142fa8d1af657cc5555b9a835368279b1504ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105780"
 ---
 # <a name="keyboard-input-notifications"></a>Notifiche di input da tastiera
 

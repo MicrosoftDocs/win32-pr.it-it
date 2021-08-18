@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3cdaf7bca4c351b4d255af530f9db43ca314776f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cd729d53081961f1c4ea00f3ffb2d5a3ebb5685c100e2013eee1618bb33db90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040739"
 ---
 # <a name="esentmemoryexception-constructor"></a>Costruttore EsentMemoryException
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,12 +39,12 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn334560(v=exchg.10).md">EsentMemoryException (SerializationInfo, StreamingContext)</a></td>
+<td><a href="dn334560(v=exchg.10).md">EsentMemoryException(SerializationInfo, StreamingContext)</a></td>
 <td>Inizializza una nuova istanza della classe EsentMemoryException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn334638(v=exchg.10).md">EsentMemoryException (stringa, JET_err)</a></td>
+<td><a href="dn334638(v=exchg.10).md">EsentMemoryException(String, JET_err)</a></td>
 <td>Inizializza una nuova istanza della classe EsentMemoryException.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Inizio
 
 [Membri di EsentMemoryException](./esentmemoryexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

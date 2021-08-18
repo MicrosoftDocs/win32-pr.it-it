@@ -1,22 +1,22 @@
 ---
-description: Impedisce a una voce del menu Start per un collegamento a un'applicazione appena installata di ricevere un'evidenziazione.
+description: Impedisce a una menu Start per un collegamento all'applicazione appena installato di ricevere un'evidenziazione.
 ms.assetid: ff85da6f-a506-4225-8ac9-4a8a7be8d599
-title: System. AppUserModel. ExcludeFromShowInNewInstall
+title: System.AppUserModel.ExcludeFromShowInNewInstall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 206cbbc6b07b0d3fec5833c046d4cb44c1e5e4e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba75b28b789fd9972eb484797957601dbcb5e93694b469eeb8b81bf9ba198d13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970900"
 ---
-# <a name="systemappusermodelexcludefromshowinnewinstall"></a>System. AppUserModel. ExcludeFromShowInNewInstall
+# <a name="systemappusermodelexcludefromshowinnewinstall"></a>System.AppUserModel.ExcludeFromShowInNewInstall
 
-Impedisce a una voce del menu **Start** per un collegamento a un'applicazione appena installata di ricevere un'evidenziazione. Questa operazione equivale a deselezionando l'opzione **evidenzia nuovi programmi installati** nella finestra **Personalizza il menu Start** di un singolo elemento. Questa proprietà deve essere impostata sui collegamenti per gli strumenti e le applicazioni secondarie.
+Impedisce a una **voce del** menu Start per un collegamento all'applicazione appena installato di ricevere un'evidenziazione. Equivale a deselezionare l'opzione **Evidenzia i programmi appena** installati nella finestra Personalizza menu **Start** di un singolo elemento. Questa proprietà deve essere impostata sui collegamenti per gli strumenti e le applicazioni secondarie.
 
 > [!Note]  
-> Questa proprietà è utilizzata solo dal menu Start in Windows Vista e Windows 7. La proprietà non viene utilizzata dalla schermata Start o dal menu Start in Windows 8 e versioni successive
+> Questa proprietà è usata solo dal menu Start in Windows Vista e Windows 7. La proprietà non viene usata dal schermata Start o menu Start in Windows 8 e versioni successive
 
  
 
@@ -40,13 +40,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[ID modello utente applicazione (AppUserModelIDs)](../shell/appids.md)
+[ID modello utente applicazione (AppUserModelID)](../shell/appids.md)
 </dt> <dt>
 
 [System.AppUserModel.ID](./props-system-appusermodel-id.md)
@@ -58,7 +58,7 @@ I valori PKEY sono definiti in Propkey. h.
 [propertyDescriptionList](./propdesc-schema-propertydescriptionlist.md)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ I valori PKEY sono definiti in Propkey. h.
 [aliasInfo](./propdesc-schema-aliasinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -85,13 +85,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[enum](./propdesc-schema-enum.md)
+[Enum](./propdesc-schema-enum.md)
 </dt> <dt>
 
 [enumRange](./propdesc-schema-enumrange.md)
@@ -100,7 +100,7 @@ I valori PKEY sono definiti in Propkey. h.
 [image](./propdesc-schema-image.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -4,16 +4,16 @@ description: Unioni incapsulate e non incapsulate e relativo formato con RPC (Re
 ms.assetid: de13151a-f4a4-4440-b287-454df4a1e3e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f35f0ff23132705330bf1f8566443ac8aa81d3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e5948a0557ea968a385324244d569d3578ec5d6c0dec4af5261866ed3ba2dc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011019"
 ---
 # <a name="rpc-unions"></a>Unioni RPC
 
-Sia le unioni incapsulate che quelle non incapsulate condividono un \_ selettore di Unione ARM comune \_<> formato:
+Sia le unioni incapsulate che le unioni non incapsulate condividono un selettore di arm di unione comune \_ \_<> formato:
 
 ``` syntax
 union_arms<2>
@@ -23,26 +23,26 @@ armN_case_value<4> offset_to_arm_description<2>
 default_arm_description<2>
 ```
 
-Il \_ campo Union arms<2> è costituito da due parti. Se l'Unione è un'Unione di stile MIDL 1,0, i 4 bit superiori contengono l'allineamento del ARM di Unione (allineamento del braccio allineato più grande). In caso contrario, i 4 bit superiori sono pari a zero. I 12 bit inferiori contengono il numero di bracci nell'Unione. In altre parole:
+Il campo \_ union arms<2> è costituito da due parti. Se l'unione è un'unione di stile MIDL 1.0, i 4 bit superiori contengono l'allineamento del braccio dell'unione (allineamento del braccio allineato più grande). In caso contrario, i 4 bit superiori sono zero. I 12 bit inferiori contengono il numero di bracci nell'unione. In altre parole:
 
 ``` syntax
 alignment<highest nibble> arm_counter<three lower nibbles>
 ```
 
-La descrizione dell'offset \_ a \_ ARM \_<2> i campi contengono un offset con segno relativo alla descrizione del tipo del ARM. Tuttavia, il campo è sovraccarico con ottimizzazione per i tipi semplici. Per questi, il byte superiore di questo campo offset è FC \_ Magic \_ Union \_ byte (0x80) e il byte più basso di short è il tipo di carattere di formato effettivo del ARM. Di conseguenza, sono disponibili due intervalli per i valori di offset: "80 *XX*" significa che *XX* è una stringa di formato del tipo. e tutto il resto entro l'intervallo (80 FF... 7F FF) indica un offset effettivo. Questa operazione rende gli offset dall'intervallo <80 00. 80 FF non > disponibili come offset. Il compilatore verifica che a partire da MIDL versione 5.1.164.
+La descrizione dell'offset<2> contiene un offset con segno relativo rispetto \_ \_ alla \_ descrizione del tipo del arm. Tuttavia, il campo viene sottoposto a overload con l'ottimizzazione per i tipi semplici. Per questi valori, il byte superiore di questo campo di offset è FC \_ MAGIC \_ UNION BYTE (0x80) e il byte inferiore di short è il tipo di carattere di formato effettivo \_ del arm. Di conseguenza, esistono due intervalli per i valori di offset: "80 *xx"* indica che *xx* è una stringa di formato del tipo. e tutto il resto entro l'intervallo (80 FF .. 7f FF) indica un offset effettivo. Questo rende gli offset dall'intervallo <80 00 .. 80 FF > non disponibile come offset. Il compilatore lo verifica a a livello di MIDL versione 5.1.164.
 
-Il \_ campo Default ARM \_ Description<2> indica il tipo di ARM Union per l'ARM predefinito, se disponibile. Se non è specificato un ARM predefinito per l'Unione, la descrizione predefinita di \_ arm \_<2> campo è 0xFFFF e viene generata un'eccezione se il \_ valore dell'opzione non corrisponde ad alcuno dei valori del case ARM. Se il ARM predefinito è specificato ma vuoto, il campo Default \_ ARM \_ Description<2> è zero. In caso contrario \_ , il campo Default ARM \_ Description<2> ha la stessa semantica dell'offset \_ a \_ arm \_ Description<2> Fields.
+La descrizione predefinita del<2> campo indica il tipo di arm di unione per il arm \_ \_ predefinito, se presente. Se non è stato specificato alcun arm predefinito per l'unione, il campo predefinito arm description<2> è 0xFFFF e viene generata un'eccezione se l'opzione è value non corrisponde a nessuno dei valori del case \_ \_ \_ arm. Se il arm predefinito è specificato ma vuoto, la descrizione predefinita del<2> \_ campo è \_ zero. In caso contrario, la descrizione predefinita del<2> ha la stessa semantica dell'offset per la descrizione del<2> \_ \_ \_ \_ \_ campo.
 
 Di seguito è riportato un riepilogo:
 
--   0: valore predefinito vuoto
--   FFFF-nessun valore predefinito
--   80xx-tipo semplice
--   altro offset relativo
+-   0 - valore predefinito vuoto
+-   FFFF : nessuna impostazione predefinita
+-   80xx - tipo semplice
+-   other - offset relativo
 
 ## <a name="encapsulated-unions"></a>Unioni incapsulate
 
-Un'Unione incapsulata deriva da una speciale sintassi di Unione in IDL. In realtà, un'Unione incapsulata è una struttura di aggregazione con un campo discriminante all'inizio della struttura e l'Unione come unico altro membro.
+Un'unione incapsulata deriva da una sintassi di unione speciale in IDL. In effetti, un'unione incapsulata è una struttura di aggregazione con un campo discriminante all'inizio della struttura e l'unione come unico altro membro.
 
 ``` syntax
 FC_ENCAPSULATED_UNION switch_type<1> 
@@ -50,13 +50,13 @@ memory_size<2>
 union_arm_selector<>
 ```
 
-Il tipo di opzione di un'Unione incapsulata \_<1> campo è costituito da due parti. Il morso inferiore fornisce il tipo di Commuter effettivo e il bocconcino superiore fornisce l'incremento della memoria per eseguire un'istruzione/routine che indica che il puntatore di memoria deve essere incrementato per saltare oltre l'opzione \_ è Field, che include la spaziatura interna tra il \_ campo switch is () della struttura costruita dallo stub e il campo Union effettivo.
+Il tipo di commutatore di \_ un'unione incapsulata<1> campo è in due parti. Il nibble inferiore fornisce il tipo di commutatore effettivo e il nibble superiore fornisce l'incremento di memoria per il passaggio, ovvero una quantità che il puntatore alla memoria deve essere incrementato per ignorare l'opzione è field, che include qualsiasi riempimento tra il campo switch is() della struttura costruita con stub e il campo \_ \_ di unione effettivo.
 
-Le \_ dimensioni della memoria<2> campo sono solo le dimensioni dell'Unione ed è identica alle unioni non incapsulate. Per ottenere la dimensione totale della struttura che contiene l'Unione, aggiungere la dimensione della memoria \_<2> all'incremento della memoria per eseguire un'istruzione/routine, ovvero al morso superiore del tipo di commutere \_<1 campo> e quindi allinearlo in base all'allineamento corrispondente all'incremento.
+Le dimensioni della<2> campo sono solo le dimensioni dell'unione ed è identica alle \_ unioni non incapsulate. Per ottenere le dimensioni totali della struttura che contiene l'unione, aggiungere le dimensioni della memoria<2> all'incremento della memoria per eseguire il passaggio, cio? al valore superiore del campo switch type<1> e quindi allinearlo in base all'allineamento corrispondente \_ \_ all'incremento.
 
 ## <a name="nonencapsulated-unions"></a>Unioni non incapsulate
 
-Un'Unione non incapsulata è una situazione tipica in cui un'Unione è un argomento o un campo e l'opzione è un altro argomento o campo, rispettivamente.
+Un'unione non incapsulata è una situazione tipica in cui un'unione è un argomento o un campo e l'opzione è rispettivamente un altro argomento o campo.
 
 ``` syntax
 FC_NON_ENCAPSULATED_UNION switch_type<1> 
@@ -66,17 +66,17 @@ offset_to_size_and_arm_description<2>
 
 Dove:
 
-Il \_ tipo di opzione<1> campo è un carattere di formato per discriminante.
+Il tipo \_ di<1> è un carattere di formato per la discriminante.
 
-L'opzione \_ è \_ descrittore<> campo è un descrittore di correlazione e ha 4 o 6 byte, a seconda che venga usato [**/robust**](/windows/desktop/Midl/-robust) . Tuttavia, per l'opzione \_ è \_ Description<>, se l'Unione è incorporata in una struttura, il campo offset dell'opzione \_ è \_ Description<> è l'offset per l'opzione \_ è il campo dalla posizione dell'Unione nella struttura (non dall'inizio della struttura).
+L'opzione è il<> campo è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ \_ [**/robust**](/windows/desktop/Midl/-robust) sia o meno usato. Tuttavia, per l'opzione è descrizione<>, se l'unione è incorporata in una struttura, il campo offset dell'opzione è descrizione<> è l'offset dell'opzione è campo dalla posizione dell'unione nella struttura \_ \_ \_ \_ \_ (non dall'inizio della struttura).
 
-Il \_ campo offset \_ per \_ size \_ e \_ Descrizione ARM<2> fornisce l'offset alle dimensioni dell'Unione e alla descrizione ARM, che è identica a quella per le unioni incapsulate e viene condivisa da tutte le unioni non incapsulate dello stesso tipo:
+L'offset per le dimensioni e la descrizione del braccio<2> assegna l'offset alle dimensioni e alla descrizione del braccio \_ \_ \_ \_ dell'unione, che è identico a quello per le unioni incapsulate ed è condiviso da tutte le unioni non incapsulate dello \_ stesso tipo:
 
 ``` syntax
 memory_size<2> 
 union_arm_selector<>
 ```
 
- 
+ 
 
- 
+ 

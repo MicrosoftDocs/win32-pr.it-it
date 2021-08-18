@@ -1,23 +1,23 @@
 ---
-description: Il termine outabout corrisponde alle colonne rispetto a un gruppo di uno o più termini di ricerca.
+description: Il termine ISABOUT corrisponde alle colonne rispetto a un gruppo di uno o più termini di ricerca.
 ms.assetid: e2629c4c-4b44-4427-ac1d-17f55fd969e3
-title: Termini
+title: Termine ISABOUT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f79fc2fa4a56b3ca6b3b412141f096b282e3aa9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5665e7bf62da4858cf2e7d68e65d0f42771903d55e3189db12f19cdd5414530d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969610"
 ---
-# <a name="isabout-term"></a>Termini
+# <a name="isabout-term"></a>Termine ISABOUT
 
 **Deprecato**
 
-Questa funzionalità è stata rimossa a partire da Windows 8. Se si scrivono nuove applicazioni, evitare di utilizzare questa funzionalità deprecata. Se si modificano le applicazioni esistenti, si consiglia vivamente di rimuovere qualsiasi dipendenza da questa funzionalità.
+Questa funzionalità è stata rimossa a Windows 8. Se si scrivono nuove applicazioni, evitare di usare questa funzionalità deprecata. Se si modificano applicazioni esistenti, è consigliabile rimuovere qualsiasi dipendenza da questa funzionalità.
 
-Il termine outabout corrisponde alle colonne rispetto a un gruppo di uno o più termini di ricerca. Ha la sintassi seguente:
+Il termine ISABOUT corrisponde alle colonne rispetto a un gruppo di uno o più termini di ricerca. Ha la sintassi seguente:
 
 
 ```
@@ -26,11 +26,11 @@ ISABOUT(<components>) [RANKMETHOD <method>]
 
 
 
-Il termine facoltativo RANKMETHOD specifica il metodo di calcolo utilizzato per classificare i documenti che corrispondono a uno o più componenti. Se non viene specificato alcun RANKMETHOD, viene usato il metodo di classificazione del coefficiente Jaccard predefinito.
+Il termine RANKMETHOD facoltativo specifica il metodo di calcolo usato per classificare i documenti che corrispondono a uno o più componenti. Se non viene specificato alcun RANKMETHOD, viene usato il metodo di rango predefinito Coefficiente Diffi.
 
-Il termine dell'espressione può avere uno o più componenti. Le colonne specificate nel predicato [Contains](-search-sql-contains.md) vengono verificate in base a ogni componente. Il documento viene incluso nei risultati se almeno uno dei componenti corrisponde a. Virgole separate da più componenti.
+Il termine ISABOUT può avere uno o più componenti. Le colonne specificate nel [predicato CONTAINS](-search-sql-contains.md) vengono testate in base a ogni componente. Il documento viene incluso nei risultati se almeno uno dei componenti corrisponde. Le virgole separano più componenti.
 
-La parte del componente presenta la sintassi seguente:
+La parte del componente ha la sintassi seguente:
 
 
 ```
@@ -39,9 +39,9 @@ La parte del componente presenta la sintassi seguente:
 
 
 
-È possibile utilizzare il termine di peso facoltativo per modificare l'importanza relativa di ogni termine nel termine. Se non viene applicato alcun termine di peso, viene implicito il peso predefinito di 1,0.
+È possibile usare il termine WEIGHT facoltativo per modificare l'importanza relativa di ogni termine all'interno del termine ISABOUT. Se non viene applicato alcun termine di peso, il peso predefinito 1,0 è implicito.
 
-Nella tabella seguente vengono descritti i possibili tipi di termini delle corrispondenze.
+Nella tabella seguente vengono descritti i possibili tipi di termini di corrispondenza.
 
 
 
@@ -61,7 +61,7 @@ Nella tabella seguente vengono descritti i possibili tipi di termini delle corri
 <tbody>
 <tr class="odd">
 <td>Word</td>
-<td>Una singola parola senza spazi o altra punteggiatura.</td>
+<td>Singola parola senza spazi o altri segni di punteggiatura.</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
@@ -97,7 +97,7 @@ Nella tabella seguente vengono descritti i possibili tipi di termini delle corri
 </tr>
 <tr class="odd">
 <td>Wildcard (Carattere jolly)</td>
-<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per ulteriori informazioni, vedere <a href="-search-sql-wildcards.md">utilizzo dei caratteri jolly nel predicato CONTAINS</a>.</td>
+<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per altre informazioni, vedere <a href="-search-sql-wildcards.md">Uso dei caratteri jolly nel predicato CONTAINS.</a></td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -124,9 +124,9 @@ and &quot;compulsory&quot;</code></pre></td>
 
  
 
-## <a name="isabout-column-weighting"></a>Informazioni sulla ponderazione delle colonne
+## <a name="isabout-column-weighting"></a>Ponderazione delle colonne ISABOUT
 
-Il termine noabout classifica i documenti corrispondenti in base alla precisione di ogni documento corrispondente al set di termini di corrispondenza nella query. È possibile usare la ponderazione delle colonne per inserire più importanza nella corrispondenza di alcuni termini di corrispondenza rispetto ad altri. È possibile applicare un valore di peso a ogni termine delle corrispondenze del termine di ricerca. Il peso viene applicato a un singolo termine di corrispondenza ed è indicato dalla parola chiave "WEIGHT". Il termine WEIGHT presenta due sintassi alternative:
+Il termine ISABOUT classifica i documenti corrispondenti in base al livello di corrispondenza tra ogni documento e il set di termini di corrispondenza nella query. È possibile usare la ponderazione delle colonne per mettere più importanza nella corrispondenza di alcuni termini di corrispondenza rispetto ad altri. A ogni termine di corrispondenza nel termine ISABOUT può essere applicato un valore di peso. Il peso viene applicato a un singolo termine di corrispondenza ed è indicato dalla parola chiave "WEIGHT". Il termine WEIGHT ha due sintassi alternative:
 
 
 ```
@@ -136,13 +136,13 @@ Il termine noabout classifica i documenti corrispondenti in base alla precisione
 
 
 
-Il valore del peso deve essere compreso tra 0 e 1,0, con non più di tre posizioni decimali. Se si specifica un valore di peso al di fuori di questo intervallo, viene restituito un messaggio di errore. Il valore di classificazione non ponderato per un termine viene moltiplicato per il valore del peso per il termine.
+Il valore di peso deve essere compreso tra 0 e 1,0, senza più di tre cifre decimali. Se si specifica un valore di peso non compreso in questo intervallo, viene visualizzato un messaggio di errore. Il valore di rango non ponderato per un termine viene moltiplicato per il valore di peso per il termine.
 
-Se per un termine di corrispondenza non viene specificato alcun peso, viene implicato il valore predefinito 1,0.
+Se non viene specificato alcun peso per un termine di corrispondenza, il valore predefinito, 1.0, è implicito.
 
 ### <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono applicati i pesi ai due termini di corrispondenza, usando la sintassi Long e short per i valori di peso.
+L'esempio seguente applica i pesi ai due termini di corrispondenza ISABOUT, usando sia la sintassi lunga che la sintassi breve per i valori di peso.
 
 
 ```

@@ -1,11 +1,11 @@
 ---
-title: Metodo Initialize INapEnforcementClientConnection (NapEnforcementClient. h)
+title: Metodo INapEnforcementClientConnection Initialize (NapEnforcementClient.h)
 description: Inizializza la connessione client.
 ms.assetid: da72bfc3-9551-4fb0-b9a5-2931c14f618f
 keywords:
-- Metodo di inizializzazione NAP
-- Metodo Initialize NAP, interfaccia INapEnforcementClientConnection
-- Interfaccia NAP di INapEnforcementClientConnection, metodo Initialize
+- Inizializzare il metodo NAP
+- Inizializzare il metodo NAP , interfaccia INapEnforcementClientConnection
+- Interfaccia INapEnforcementClientConnection NAP , metodo Initialize
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b51f12025bbddb8a9e795a97f2ed443344327a17
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 034fd83ac9337f6b2529b4035e6daa1b9bd06c3022ed30dbce0af74e5f6ef6cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939662"
 ---
-# <a name="inapenforcementclientconnectioninitialize-method"></a>Metodo INapEnforcementClientConnection:: Initialize
+# <a name="inapenforcementclientconnectioninitialize-method"></a>Metodo INapEnforcementClientConnection::Initialize
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: Initialize** Inizializza la connessione client.
+Il **metodo INapEnforcementClientConnection::Initialize** inizializza la connessione client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*ID* \[ in\]
+*id* \[ in\]
 </dt> <dd>
 
 Puntatore a un [**EnforementEntityId**](nap-datatypes.md) che identifica il client di imposizione che richiede la connessione. Questo valore viene impostato da NapAgent durante la creazione della connessione.
@@ -56,14 +56,14 @@ Puntatore a un [**EnforementEntityId**](nap-datatypes.md) che identifica il clie
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -76,10 +76,10 @@ Puntatore a un [**EnforementEntityId**](nap-datatypes.md) che identifica il clie
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

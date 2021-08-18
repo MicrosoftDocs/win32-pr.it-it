@@ -1,78 +1,78 @@
 ---
-description: In questo argomento vengono descritti due concetti correlati, proporzioni dell'immagine e proporzioni in pixel.
+description: Questo argomento descrive due concetti correlati, le proporzioni delle immagini e le proporzioni pixel.
 ms.assetid: 384bdeaa-5360-42af-9f95-b791af2dcafc
 title: Proporzioni immagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74e81f1b8e26af753a5c8c1bc7ecb09d8a658582
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71ae59cf213a9d44c9075f33be4bd422b81ced6dea270cf4fc9408990442529e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972983"
 ---
 # <a name="picture-aspect-ratio"></a>Proporzioni immagine
 
-In questo argomento vengono descritti due concetti correlati, proporzioni dell'immagine e proporzioni in pixel. Viene quindi descritto come questi concetti vengono espressi in Microsoft Media Foundation utilizzando i tipi di supporto.
+Questo argomento descrive due concetti correlati, le proporzioni delle immagini e le proporzioni pixel. Descrive quindi in che modo questi concetti vengono espressi in Microsoft Media Foundation usando i tipi di supporti.
 
 -   [Proporzioni immagine](#picture-aspect-ratio)
-    -   [Letterboxing](#letterboxing)
-    -   [Pan-and-Scan](#pan-and-scan)
+    -   [Creazione di lettere](#letterboxing)
+    -   [Panoramica e analisi](#pan-and-scan)
 -   [Proporzioni pixel](#pixel-aspect-ratio)
--   [Utilizzo delle proporzioni](#working-with-aspect-ratios)
+-   [Uso delle proporzioni](#working-with-aspect-ratios)
 -   [Esempi di codice](#code-examples)
     -   [Ricerca dell'area di visualizzazione](#finding-the-display-area)
-    -   [Conversione tra proporzioni in pixel](#converting-between-pixel-aspect-ratios)
-    -   [Calcolo dell'area letterbox](#calculating-the-letterbox-area)
+    -   [Conversione tra proporzioni pixel](#converting-between-pixel-aspect-ratios)
+    -   [Calcolo dell'area Letterbox](#calculating-the-letterbox-area)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="picture-aspect-ratio"></a>Proporzioni immagine
 
-Proporzioni *immagine* definisce la forma dell'immagine video visualizzata. L'aspetto dell'immagine è X:Y, dove X:Y è il rapporto tra la larghezza dell'immagine e l'altezza dell'immagine. La maggior parte degli standard video usa proporzioni dell'immagine 4:3 o 16:9. Le proporzioni 16:9 sono comunemente denominate *widescreen*. Cinema film usa spesso una proporzione 1:85:1 o 1:66:1. Le proporzioni dell'immagine sono denominate anche proporzioni di *visualizzazione* (Dar).
+*Le proporzioni dell'immagine* definiscono la forma dell'immagine video visualizzata. Le proporzioni dell'immagine vengono notate X:Y, dove X:Y è il rapporto tra larghezza e altezza dell'immagine. La maggior parte degli standard video usa le proporzioni delle immagini 4:3 o 16:9. Le proporzioni 16:9 sono comunemente chiamate *widescreen.* Il film cinematografico usa spesso proporzioni 1:85:1 o 1:66:1. Le proporzioni dell'immagine sono *chiamate anche proporzioni di visualizzazione* (DAR).
 
-![diagramma che mostra le proporzioni 4:3 e 16:9](images/aspect-ratio01.png)
+![Diagramma che mostra le proporzioni 4:3 e 16:9](images/aspect-ratio01.png)
 
-In alcuni casi l'immagine video non ha la stessa forma dell'area di visualizzazione. Ad esempio, un video 4:3 potrebbe essere visualizzato su un televisore widescreen (16 × 9). Nel video del computer il video potrebbe essere visualizzato all'interno di una finestra con dimensioni arbitrarie. In tal caso, è possibile creare l'immagine in tre modi per adattarla all'area di visualizzazione:
+A volte l'immagine video non ha la stessa forma dell'area di visualizzazione. Ad esempio, un video 4:3 potrebbe essere visualizzato su un tv widescreen (16×9). Nel video del computer, il video potrebbe essere visualizzato all'interno di una finestra con dimensioni arbitrarie. In tal caso, l'immagine può essere adattata all'interno dell'area di visualizzazione in tre modi:
 
 -   Estendere l'immagine lungo un asse per adattarla all'area di visualizzazione.
--   Ridimensionare l'immagine per adattarla all'area di visualizzazione, mantenendo le proporzioni originali dell'immagine.
+-   Ridimensionare l'immagine per adattarla all'area di visualizzazione, mantenendo le proporzioni dell'immagine originale.
 -   Ritagliare l'immagine.
 
-L'adattamento dell'immagine per adattarla all'area di visualizzazione è quasi sempre errato, perché non mantiene le proporzioni dell'immagine corrette.
+L'estensione dell'immagine per adattarla all'area di visualizzazione è quasi sempre errata, perché non mantiene le proporzioni corrette dell'immagine.
 
-### <a name="letterboxing"></a>Letterboxing
+### <a name="letterboxing"></a>Creazione di lettere
 
-Il processo di ridimensionamento di un'immagine widescreen per adattarsi a una visualizzazione 4:3 è denominato *letterbox*, illustrato nel diagramma seguente. Le aree rectanglular risultanti nella parte superiore e inferiore dell'immagine vengono in genere compilate con il nero, sebbene sia possibile utilizzare altri colori.
+Il processo di ridimensionamento di un'immagine widescreen per adattarla a uno schermo 4:3 è denominato *letterboxing*, illustrato nel diagramma successivo. Le aree rettangolari risultanti nella parte superiore e inferiore dell'immagine sono in genere riempite di nero, anche se è possibile usare altri colori.
 
-![diagramma che mostra la modalità corretta per la letterbox](images/aspect-ratio02.png)
+![diagramma che mostra il modo corretto di letterbox](images/aspect-ratio02.png)
 
-In caso contrario, il ridimensionamento di un'immagine 4:3 per adattarsi a una visualizzazione widescreen viene talvolta denominato *pillarbox*. Tuttavia, il termine *letterbox* viene anche usato in senso generale, per indicare la scalabilità di un'immagine video per adattarsi a qualsiasi area di visualizzazione specificata.
+Il caso inverso, il ridimensionamento di un'immagine 4:3 per adattarla a uno schermo widescreen, viene talvolta chiamato *pillarboxing.* Tuttavia, il termine *letterbox* viene usato anche in senso generale, per indicare il ridimensionamento di un'immagine video per adattarla a una determinata area di visualizzazione.
 
-![diagramma che mostra pillarbox](images/aspect-ratio03.png)
+![Diagramma che illustra pillarboxing](images/aspect-ratio03.png)
 
-### <a name="pan-and-scan"></a>Pan-and-Scan
+### <a name="pan-and-scan"></a>Panoramica e analisi
 
-Pan-and-Scan è una tecnica per cui un'immagine in formato widescreen viene ritagliata in un'area rettangolare da 4 × 3, per la visualizzazione in un dispositivo di visualizzazione 4:3. L'immagine risultante riempie l'intero schermo, senza richiedere le aree della cassetta nera, ma le parti dell'immagine originale vengono ritagliate dall'immagine. L'area ritagliata può spostarsi dal fotogramma al frame, in quanto l'area di interesse viene spostata. Il termine "Pan" in *Pan-and-Scan* si riferisce all'effetto di panning causato dallo spostamento dell'area di Pan-and-Scan.
+La panoramica e la scansione è una tecnica in base alla quale un'immagine widescreen viene ritagliata in un'area rettangolare 4×3, per la visualizzazione in un dispositivo di visualizzazione 4:3. L'immagine risultante riempie l'intero schermo, senza richiedere aree in formato letterbox nero, ma parti dell'immagine originale vengono ritagliate dall'immagine. L'area ritagliata può spostarsi da un frame all'altro, mentre l'area di interesse viene spostata. Il termine "panoramica" nella *panoramica* e nell'analisi si riferisce all'effetto di panoramica causato dallo spostamento dell'area di panoramica e analisi.
 
-![diagramma che illustra la Panoramica di Pan-and-Scan](images/aspect-ratio04.png)
+![Diagramma che illustra la panoramica e l'analisi](images/aspect-ratio04.png)
 
 ## <a name="pixel-aspect-ratio"></a>Proporzioni pixel
 
-Proporzioni *pixel* (par) misura la forma di un pixel.
+*Le proporzioni pixel* misurano la forma di un pixel.
 
-Quando viene acquisita un'immagine digitale, l'immagine viene campionata verticalmente e orizzontalmente, ottenendo una matrice rettangolare di campioni quantizzati, denominati *pixel* o *Pels*. La forma della griglia di campionamento determina la forma dei pixel nell'immagine digitalizzata.
+Quando un'immagine digitale viene acquisita, l'immagine viene campionata sia verticalmente che orizzontalmente, con conseguente matrice rettangolare di campioni quantizzati, denominati *pixel* *o pels.* La forma della griglia di campionamento determina la forma dei pixel nell'immagine digitalizzata.
 
-Di seguito è riportato un esempio che usa piccoli numeri per semplificare la matematica. Si supponga che l'immagine originale sia quadrata (ovvero, le proporzioni dell'immagine sono 1:1); e si supponga che la griglia di campionamento includa 12 elementi, disposti in una griglia di 4 × 3. La forma di ogni pixel risultante sarà più alta rispetto a quella estesa. In particolare, la forma di ogni pixel sarà 3 × 4. I pixel che non sono quadrati sono detti *pixel non quadrati*.
+Di seguito è riportato un esempio che usa numeri piccoli per mantenere la matematica semplice. Si supponga che l'immagine originale sia quadrata, ovvero le proporzioni dell'immagine sono 1:1. e si supponga che la griglia di campionamento contenga 12 elementi disposti in una griglia 4×3. La forma di ogni pixel risultante sarà più alta rispetto alla larghezza. In particolare, la forma di ogni pixel sarà 3×4. I pixel che non sono quadrati sono detti *pixel non quadrati.*
 
-![diagramma che mostra una griglia di campionamento non quadrato](images/aspect-ratio05.png)
+![Diagramma che mostra una griglia di campionamento non quadrata](images/aspect-ratio05.png)
 
-Le proporzioni dei pixel si applicano anche al dispositivo di visualizzazione. La forma fisica del dispositivo di visualizzazione e la risoluzione dei pixel fisici (in orizzontale e in basso) determinano la PAR del dispositivo di visualizzazione. I monitoraggi computer utilizzano in genere pixel quadrati. Se la par dell'immagine e la PAR della visualizzazione non corrispondono, l'immagine deve essere ridimensionata in una dimensione, verticalmente o orizzontalmente, per poter essere visualizzata correttamente. La formula seguente mette in relazione PAR, Display aspect ratio (DAR) e dimensioni dell'immagine in pixel:
+Le proporzioni pixel si applicano anche al dispositivo di visualizzazione. La forma fisica del dispositivo di visualizzazione e la risoluzione dei pixel fisici (su e giù) determinano il PAR del dispositivo di visualizzazione. I monitoraggi computer usano in genere pixel quadrati. Se l'immagine PAR e la visualizzazione PAR non corrispondono, è necessario ridimensionare l'immagine in una dimensione, verticalmente o orizzontalmente, per poter essere visualizzata correttamente. La formula seguente mette in relazione PAR, le proporzioni di visualizzazione (DAR) e le dimensioni dell'immagine in pixel:
 
-*Dar* = (*Larghezza immagine* in pixel  /  *altezza in pixel*) × *par*
+*DAR* = ( larghezza *dell'immagine in pixel*  /  *altezza immagine in pixel*) × *PAR*
 
-Si noti che la larghezza dell'immagine e l'altezza dell'immagine in questa formula fanno riferimento all'immagine in memoria, non all'immagine visualizzata.
+Si noti che la larghezza e l'altezza dell'immagine in questa formula fanno riferimento all'immagine in memoria, non all'immagine visualizzata.
 
-Ecco un esempio reale: il video analogico NTSC-M contiene 480 righe di analisi nell'area immagine attiva. ITU-R REC. BT. 601 specifica una frequenza di campionamento orizzontale di 704 pixel visibili per riga, restituendo un'immagine digitale con 704 x 480 pixel. Le proporzioni dell'immagine desiderate sono pari a 4:3, ottenendo un valore pari a 10:11.
+Ecco un esempio reale: il video analogico NTSC-M contiene 480 linee di analisi nell'area dell'immagine attiva. ITU-R Rec. BT.601 specifica una frequenza di campionamento orizzontale di 704 pixel visibili per riga, producendo un'immagine digitale con 704 x 480 pixel. Le proporzioni dell'immagine prevista sono 4:3, producendo un PAR di 10:11.
 
 -   DAR: 4:3
 -   Larghezza in pixel: 704
@@ -83,22 +83,22 @@ Ecco un esempio reale: il video analogico NTSC-M contiene 480 righe di analisi n
 
 Per visualizzare correttamente questa immagine in un dispositivo di visualizzazione con pixel quadrati, è necessario ridimensionare la larghezza di 10/11 o l'altezza di 11/10.
 
-## <a name="working-with-aspect-ratios"></a>Utilizzo delle proporzioni
+## <a name="working-with-aspect-ratios"></a>Uso delle proporzioni
 
-La forma corretta di un frame video è definita dalle proporzioni in *pixel* (par) e dall' *area di visualizzazione*.
+La forma corretta di un fotogramma video è definita dalle proporzioni *pixel* (PAR) e dall'area *di visualizzazione.*
 
--   Il PAR definisce la forma dei pixel in un'immagine. I pixel quadrati hanno proporzioni pari a 1:1. Tutte le altre proporzioni descrivono un pixel non quadrato. Ad esempio, la televisione NTSC USA un 10:11 PAR. Supponendo che si stia visualizzando il video in un monitor del computer, la visualizzazione avrà i pixel quadrati (1:1 PAR). La PAR del contenuto di origine viene specificata nell'attributo [**delle \_ \_ \_ proporzioni \_ del pixel MF mt**](mf-mt-pixel-aspect-ratio-attribute.md) sul tipo di supporto.
--   L'area di visualizzazione è l'area dell'immagine video che deve essere visualizzata. Esistono due aree di visualizzazione rilevanti che possono essere specificate nel tipo di supporto:
-    -   Apertura Pan-and-Scan. L'apertura Pan-and-Scan è un'area di video da 4 × 3 che dovrebbe essere visualizzata in modalità Pan/Scan. Viene usato per mostrare contenuto a schermo intero in una visualizzazione 4 × 3 senza letterbox. L'apertura di Pan-and-Scan è specificata nell'attributo dell'apertura di Pan [**\_ \_ \_ \_ Scan MF mt**](mf-mt-pan-scan-aperture-attribute.md) e deve essere usata solo quando l'attributo [**MF \_ mt \_ Pan \_ Scan \_ Enabled**](mf-mt-pan-scan-enabled-attribute.md) è **true**.
-    -   Visualizza apertura. Questa apertura è definita in alcuni standard video. Qualsiasi elemento all'esterno dell'apertura di visualizzazione è l'area di overscan e non deve essere visualizzato. Ad esempio, la televisione NTSC è 720 × 480 pixel con un diaframma di visualizzazione di 704 × 480. L'apertura di visualizzazione viene specificata nell'attributo di [**\_ \_ \_ \_ apertura della visualizzazione minima MF mt**](mf-mt-minimum-display-aperture-attribute.md) . Se presente, deve essere usato quando la modalità Pan-and-Scan è **false**.
+-   Par definisce la forma dei pixel in un'immagine. I pixel quadrati hanno proporzioni di 1:1. Qualsiasi altra proporzione descrive un pixel non quadrato. Ad esempio, NTSC tv usa un PAR 10:11. Supponendo che il video sia presentato su un monitor del computer, lo schermo avrà pixel quadrati (PAR 1:1). Il par del contenuto di origine è specificato nell'attributo [**\_ MF MT \_ PIXEL ASPECT \_ \_ RATIO**](mf-mt-pixel-aspect-ratio-attribute.md) sul tipo di supporto.
+-   L'area di visualizzazione è l'area dell'immagine video che deve essere visualizzata. Nel tipo di supporto possono essere specificate due aree di visualizzazione pertinenti:
+    -   Apertura di panoramica e analisi. L'apertura di panoramica e scansione è un'area video di 4×3 che deve essere visualizzata in modalità panoramica/scansione. Viene usato per visualizzare il contenuto a schermo wide su uno schermo a 4×3 senza letterboxing. L'apertura di panoramica e analisi viene specificata nell'attributo [**\_ MF MT \_ PAN SCAN \_ \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md) e deve essere usata solo quando l'attributo [**\_ MF MT PAN SCAN \_ \_ \_ ENABLED**](mf-mt-pan-scan-enabled-attribute.md) è **TRUE.**
+    -   Apertura della visualizzazione. Questa apertura è definita in alcuni standard video. Qualsiasi elemento esterno all'apertura dello schermo è l'area overscan e non deve essere visualizzato. Ad esempio, la tv NTSC è di 720×480 pixel con un'apertura di visualizzazione di 704×480. L'apertura di visualizzazione è specificata [**nell'attributo \_ MF MT \_ MINIMUM \_ DISPLAY \_ APERTURE.**](mf-mt-minimum-display-aperture-attribute.md) Se presente, deve essere usato quando la modalità di panoramica e analisi è **FALSE.**
 
-Se la modalità Pan-and-can è **false** e non è definita alcuna apertura di visualizzazione, verrà visualizzato l'intero frame video. In realtà, questo è il caso per la maggior parte dei contenuti video diversi dalla televisione e dal video DVD. Le proporzioni dell'intera immagine vengono calcolate come (  /  *Altezza area di visualizzazione* Larghezza area di visualizzazione) × *par*.
+Se la modalità pan-and-can **è IMPOSTATA SU FALSE** e non è stata definita alcuna apertura di visualizzazione, verrà visualizzato l'intero fotogramma video. In realtà, questo è il caso della maggior parte dei contenuti video diversi da quelli per la tv e i DVD. Le proporzioni dell'intera immagine vengono calcolate come ( altezza *area* di visualizzazione larghezza area di visualizzazione  /  ) × *PAR*.
 
 ## <a name="code-examples"></a>Esempi di codice
 
 ### <a name="finding-the-display-area"></a>Ricerca dell'area di visualizzazione
 
-Nel codice seguente viene illustrato come ottenere l'area di visualizzazione dal tipo di supporto.
+Il codice seguente illustra come ottenere l'area di visualizzazione dal tipo di supporto.
 
 
 ```C++
@@ -184,9 +184,9 @@ MFVideoArea MakeArea(float x, float y, DWORD width, DWORD height)
 
 
 
-### <a name="converting-between-pixel-aspect-ratios"></a>Conversione tra proporzioni in pixel
+### <a name="converting-between-pixel-aspect-ratios"></a>Conversione tra proporzioni pixel
 
-Nel codice riportato di seguito viene illustrato come convertire un rettangolo da una proporzioni in pixel (PAR) a un altro, mantenendo le proporzioni dell'immagine.
+Il codice seguente illustra come convertire un rettangolo da un pixel proporzioni (PAR) a un altro, mantenendo le proporzioni dell'immagine.
 
 
 ```C++
@@ -246,9 +246,9 @@ RECT CorrectAspectRatio(const RECT& src, const MFRatio& srcPAR, const MFRatio& d
 
 
 
-### <a name="calculating-the-letterbox-area"></a>Calcolo dell'area letterbox
+### <a name="calculating-the-letterbox-area"></a>Calcolo dell'area Letterbox
 
-Il codice seguente calcola l'area Letterbox, dato un rettangolo di origine e di destinazione. Si presuppone che entrambi i rettangoli abbiano lo stesso PAR.
+Il codice seguente calcola l'area letterbox, dati un rettangolo di origine e di destinazione. Si presuppone che entrambi i rettangoli hanno lo stesso PAR.
 
 
 ```C++
@@ -294,22 +294,22 @@ RECT LetterBoxRect(const RECT& rcSrc, const RECT& rcDst)
 
 <dl> <dt>
 
-[Tipi di supporto](media-types.md)
+[Tipi di supporti](media-types.md)
 </dt> <dt>
 
 [Tipi di supporti video](video-media-types.md)
 </dt> <dt>
 
-[**\_ \_ \_ apertura minima schermo \_ MF mt**](mf-mt-minimum-display-aperture-attribute.md)
+[**MF \_ MT \_ MINIMUM \_ DISPLAY \_ APERTURE**](mf-mt-minimum-display-aperture-attribute.md)
 </dt> <dt>
 
-[**\_apertura dell' \_ analisi della panoramica MF mt \_ \_**](mf-mt-pan-scan-aperture-attribute.md)
+[**MF \_ MT \_ PAN \_ SCAN \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md)
 </dt> <dt>
 
-[**\_ \_ Analisi panoramica MF \_ mt \_ abilitata**](mf-mt-pan-scan-enabled-attribute.md)
+[**MF MT PAN SCAN ENABLED (ANALISI \_ PANORAMICA MT \_ MF \_ \_ ABILITATA)**](mf-mt-pan-scan-enabled-attribute.md)
 </dt> <dt>
 
-[**proporzioni MF \_ mt \_ pixel \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)
+[**PROPORZIONI \_ DEI PIXEL MF MT \_ \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)
 </dt> </dl>
 
  

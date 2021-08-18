@@ -1,6 +1,6 @@
 ---
 title: Metodo Controls.play
-description: Il metodo play fa sì che l'elemento multimediale corrente inizi la riproduzione o riprendi la riproduzione di un elemento sospeso.
+description: Il metodo play avvia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
 ms.assetid: 2218a13b-6294-45f5-bb6f-c5a1e433e0c6
 keywords:
 - Metodo play Windows Media Player
@@ -25,7 +25,7 @@ ms.locfileid: "118997451"
 ---
 # <a name="controlsplay-method"></a>Metodo Controls.play
 
-Il **metodo play** fa sì che l'elemento multimediale corrente inizi la riproduzione o riprendi la riproduzione di un elemento sospeso.
+Il **metodo play** avvia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo metodo viene chiamato durante l'inoltro rapido o il riavvolgimento rapido, il valore *di* Impostazioni . **rate** è impostato su 1.0.
+Se questo metodo viene chiamato durante l'inoltro rapido o il riavvolgimento, il valore *di Impostazioni*. **rate** è impostato su 1.0.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **play** per riprodurre l'elemento multimediale corrente. **L'oggetto** Player è stato creato con ID = "Player".
+Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **play** per riprodurre l'elemento multimediale corrente. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript

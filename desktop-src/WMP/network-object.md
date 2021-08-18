@@ -66,7 +66,7 @@ ms.locfileid: "118996111"
 | [setProxyExceptionList](network-setproxyexceptionlist.md)   | Specifica l'elenco di eccezioni proxy.                                                                                  |
 | [setProxyName](network-setproxyname.md)                     | Specifica il nome di un server proxy da utilizzare.                                                                         |
 | [setProxyPort](network-setproxyport.md)                     | Specifica la porta proxy da utilizzare.                                                                                     |
-| [setProxySettings](network-setproxysettings.md)             | Specifica l'impostazione del proxy per un protocollo specificato.                                                                    |
+| [setProxySettings](network-setproxysettings.md)             | Specifica l'impostazione proxy per un protocollo specificato.                                                                    |
 
 
 

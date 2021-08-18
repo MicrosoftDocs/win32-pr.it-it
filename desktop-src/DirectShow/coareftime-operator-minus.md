@@ -1,7 +1,7 @@
 ---
 description: Questo operatore sottrae un'ora di riferimento da un'altra.
 ms.assetid: 5691cd76-0d25-45c0-bb58-6668abe1db01
-title: Metodo COARefTime. Operator-(Ctlutil. h)
+title: Metodo COARefTime.operator- (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e51ee8aaed69830a498d1d22cebdc3927987f045
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da8de864f344321cc5dca801782aab1f8476eb91608b42577cca6a34c625e153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073825"
 ---
-# <a name="coareftimeoperator--method"></a>COARefTime. Operator-(metodo)
+# <a name="coareftimeoperator--method"></a>Metodo COARefTime.operator-
 
 Questo operatore sottrae un'ora di riferimento da un'altra.
 
@@ -42,16 +42,16 @@ COARefTime operator-(
 
 <dl> <dt>
 
-*RT* \[ Ref\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Riferimento all'oggetto **COARefTime** da sottrarre.
+Riferimento **all'oggetto COARefTime** da sottrarre.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un nuovo oggetto **COARefTime** uguale alla differenza dei tempi di riferimento.
+Restituisce un nuovo **oggetto COARefTime** uguale alla differenza dei tempi di riferimento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un nuovo oggetto **COARefTime** uguale alla differenza dei tempi di 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

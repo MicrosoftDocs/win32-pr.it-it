@@ -1,37 +1,37 @@
 ---
-title: Disabilitazione di tasti di scelta rapida nei giochi
-description: In questo articolo viene descritto come disabilitare temporaneamente i tasti di scelta rapida in Microsoft Windows per impedire l'esecuzione di giochi da gioco a schermo intero.
+title: Disabilitazione dei tasti di scelta rapida nei giochi
+description: Questo articolo descrive come disabilitare temporaneamente i tasti di scelta rapida in Microsoft Windows per evitare interruzioni del gioco per i giochi a schermo intero.
 ms.assetid: 732523f9-ecff-c6c2-646d-1bc3443232ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aff426e0d728150cf5f6ac3cd8d46a711c9b4f8b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 08eae2ee1b30e78b17440f2c6144c529de4e6d7b6272a5d497de5c5e631ac1c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070521"
 ---
-# <a name="disabling-shortcut-keys-in-games"></a>Disabilitazione di tasti di scelta rapida nei giochi
+# <a name="disabling-shortcut-keys-in-games"></a>Disabilitazione dei tasti di scelta rapida nei giochi
 
-In questo articolo viene descritto come disabilitare temporaneamente i tasti di scelta rapida in Microsoft Windows per impedire l'esecuzione di giochi da gioco a schermo intero. Il tasto MAIUSC e il tasto CTRL vengono spesso usati come pulsanti Fire o Run nei giochi. Se gli utenti preme accidentalmente il tasto Windows (che si trova vicino a queste chiavi), possono causare un improvviso salto all'esterno dell'applicazione, che rovina l'esperienza del gioco. Semplicemente l'utilizzo del tasto MAIUSC come pulsante di gioco può eseguire inavvertitamente il collegamento StickyKeys che può visualizzare una finestra di dialogo di avviso. Per evitare questi problemi, è necessario disabilitare queste chiavi durante l'esecuzione in modalità a schermo intero e riabilitare le chiavi ai gestori predefiniti durante l'esecuzione in modalità finestra o uscire dall'applicazione.
+Questo articolo descrive come disabilitare temporaneamente i tasti di scelta rapida in Microsoft Windows per evitare interruzioni del gioco per i giochi a schermo intero. I tasti MAIUSC e CTRL vengono spesso usati come pulsanti di fuoco o di esecuzione nei giochi. Se gli utenti premono accidentalmente il tasto Windows (che si trova vicino a questi tasti), possono far saltare improvvisamente fuori dall'applicazione, causando un'esperienza di gioco insoddrizante. Il semplice uso del tasto MAIUSC come pulsante di gioco può inavvertitamente eseguire il collegamento Tasti permanenti che può visualizzare una finestra di dialogo di avviso. Per evitare questi problemi, è necessario disabilitare queste chiavi durante l'esecuzione in modalità schermo intero e abilitare le chiavi ai gestori predefiniti quando vengono eseguite in modalità a finestre o uscire dall'applicazione.
 
 Questo articolo descrive come eseguire le operazioni seguenti:
 
--   [Disabilitare il tasto Windows con un gancio da tastiera](#disable-the-windows-key-with-a-keyboard-hook)
+-   [Disabilitare il tasto Windows tastiera con un hook da tastiera](#disable-the-windows-key-with-a-keyboard-hook)
 -   [Disabilitare i tasti di scelta rapida per l'accessibilità](#disable-the-accessibility-shortcut-keys)
 
-## <a name="disable-the-windows-key-with-a-keyboard-hook"></a>Disabilitare il tasto Windows con un gancio da tastiera
+## <a name="disable-the-windows-key-with-a-keyboard-hook"></a>Disabilitare il tasto Windows tastiera con un hook da tastiera
 
-Usare un hook di tastiera di basso livello per filtrare la chiave di Windows da elaborare. L'hook della tastiera di basso livello illustrato nell'esempio 1 rimane attivo anche se un utente riduce la finestra o passa a un'altra applicazione. Ciò significa che è necessario assicurarsi che la chiave Windows non sia disabilitata quando l'applicazione viene disattivata. Il codice nell'esempio 1 esegue questa operazione gestendo il \_ messaggio WM ACTIVATEAPP.
+Usare un gancio da tastiera di basso livello per filtrare Windows tasto da elaborare. L'hook della tastiera di basso livello illustrato nell'esempio 1 rimane attivo anche se un utente riduce a icona la finestra o passa a un'altra applicazione. Ciò significa che è necessario assicurarsi che la chiave Windows non sia disabilitata quando l'applicazione viene disattivata. Il codice nell'esempio 1 esegue questa operazione gestendo il messaggio WM \_ ACTIVATEAPP.
 
 > [!Note]  
-> Questo metodo funziona in Windows 2000 e versioni successive di Windows. Questo metodo funziona anche con gli account utente con privilegi minimi (noti anche come account utente limitati).
+> Questo metodo funziona in Windows 2000 e versioni successive di Windows. Questo metodo funziona anche con gli account utente con privilegi minimi (noti anche come account utente con privilegi limitati).
 
- 
+ 
 
 Questo metodo viene usato da DXUT ed è illustrato nell'esempio di codice seguente.
 
-**Esempio 1. Uso di un hook di tastiera di basso livello per disabilitare il tasto Windows**
+**Esempio 1. Uso di un hook della tastiera di basso livello per disabilitare il tasto Windows tastiera**
 
 
 ```C++
@@ -95,26 +95,26 @@ LRESULT CALLBACK WndProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 
 ## <a name="disable-the-accessibility-shortcut-keys"></a>Disabilitare i tasti di scelta rapida per l'accessibilità
 
-Windows include funzionalità di accessibilità, ad esempio StickyKeys, filtro tasti e ToggleKeys (vedere [Windows Accessibility](/previous-versions/visualstudio/visual-studio-6.0/aa227589(v=vs.60))). Ognuno di questi scopi è diverso. StickyKeys, ad esempio, è progettato per gli utenti che hanno difficoltà a tenere contemporaneamente due o più chiavi. Ognuna di queste funzionalità di accessibilità dispone anche di un tasto di scelta rapida che consente di attivare o disattivare la funzionalità. Ad esempio, il collegamento StickyKeys viene attivato premendo cinque volte il tasto MAIUSC. Se anche il tasto MAIUSC viene usato nel gioco, l'utente potrebbe attivare accidentalmente il collegamento durante il gioco. Quando viene attivato il collegamento, Windows (per impostazione predefinita) presenta un avviso in una finestra di dialogo, in modo da consentire a Windows di ridurre al minimo un gioco in esecuzione in modalità schermo intero. Questo, ovviamente, può avere un effetto drastico sulla riproduzione del gioco.
+Windows include funzionalità di accessibilità come StickyKeys, FilterKeys e ToggleKeys (vedere Windows [Accessibilità](/previous-versions/visualstudio/visual-studio-6.0/aa227589(v=vs.60))). Ognuna di queste funzioni ha uno scopo diverso. StickyKeys, ad esempio, è progettato per le persone che hanno difficoltà a tenere premuto due o più chiavi contemporaneamente. Ognuna di queste funzionalità di accessibilità ha anche un tasto di scelta rapida che consente di attivarlo o disattivarlo. Ad esempio, il tasto di scelta rapida Tasti permanenti viene attivato premendo il tasto MAIUSC cinque volte. Se il tasto MAIUSC viene usato anche nel gioco, l'utente potrebbe attivare accidentalmente questo collegamento durante il gioco. Quando il collegamento viene attivato, Windows (per impostazione predefinita) visualizza un avviso in una finestra di dialogo, che causa Windows ridurre al minimo un gioco in esecuzione in modalità schermo intero. Questo, naturalmente, può avere un effetto drastico sul gioco.
 
-Le funzionalità di accessibilità sono necessarie per alcuni clienti e non interferiscono con i giochi a schermo intero; Pertanto, non è necessario modificare le impostazioni di accessibilità. Tuttavia, poiché i tasti di scelta rapida per le funzionalità di accessibilità possono compromettere il gioco se attivato accidentalmente, è consigliabile disattivare un collegamento di accessibilità solo quando tale funzionalità non è abilitata chiamando [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)).
+Le funzionalità di accessibilità sono necessarie per alcuni clienti e non interferiscono con i giochi a schermo intero; Pertanto, non è consigliabile modificare le impostazioni di accessibilità. Tuttavia, poiché i tasti di scelta rapida per le funzionalità di accessibilità possono interrompere il gioco se attivato accidentalmente, è consigliabile disattivare un collegamento di accessibilità solo quando tale funzionalità non è abilitata chiamando [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)).
 
-Un collegamento di accessibilità disabilitato da [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)) rimane disattivato anche dopo la chiusura dell'applicazione. Ciò significa che è necessario ripristinare le impostazioni prima di uscire dall'applicazione. Poiché è possibile che l'applicazione non venga chiusa correttamente, è necessario scrivere queste impostazioni nell'archivio permanente in modo che possano essere ripristinate quando l'applicazione viene eseguita di nuovo. È anche possibile usare un gestore di eccezioni per ripristinare queste impostazioni se si verifica un arresto anomalo.
+Un collegamento di accessibilità disattivato da [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)) rimane disattivato anche dopo la chiusura dell'applicazione. Ciò significa che è necessario ripristinare le impostazioni prima di uscire dall'applicazione. Poiché è possibile che l'applicazione non venga chiusa correttamente, è necessario scrivere queste impostazioni nell'archiviazione permanente in modo che possano essere ripristinate quando l'applicazione viene eseguita di nuovo. È anche possibile usare un gestore eccezioni per ripristinare queste impostazioni in caso di arresto anomalo del sistema.
 
 **Per disattivare questi tasti di scelta rapida**
 
-1.  Acquisisci le impostazioni di accessibilità correnti prima di disattivarle.
+1.  Acquisire le impostazioni di accessibilità correnti prima di disabilitarle.
 2.  Disabilitare il collegamento di accessibilità quando l'applicazione passa alla modalità schermo intero se la funzionalità di accessibilità è disattivata.
-3.  Ripristinare le impostazioni di accessibilità quando l'applicazione passa alla modalità finestra o viene chiusa.
+3.  Ripristinare le impostazioni di accessibilità quando l'applicazione passa in modalità finestra o si chiude.
 
 Questo metodo viene usato in DXUT ed è illustrato nell'esempio di codice seguente.
 
 > [!Note]  
-> Questo metodo funziona quando viene eseguito con un account utente limitato.
+> Questo metodo funziona quando viene eseguito in un account utente limitato.
 
- 
+ 
 
-**Esempio 2. Disabilitazione di tasti di scelta rapida accessibilità**
+**Esempio 2. Disabilitazione dei tasti di scelta rapida per l'accessibilità**
 
 
 ```C++
@@ -191,6 +191,6 @@ void AllowAccessibilityShortcutKeys( bool bAllowKeys )
 
 
 
- 
+ 
 
- 
+ 

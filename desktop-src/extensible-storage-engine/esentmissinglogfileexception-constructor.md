@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMissingLogFileException'
+description: Altre informazioni sul costruttore EsentMissingLogFileException
 title: Costruttore EsentMissingLogFileException
 TOCTitle: 'EsentMissingLogFileException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingLogFileException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a53c875a7c1cf67d26558f32d0f087c5ed53f1b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10158add10d8f8d578e911175f7542f15b774156cb3218834cd450075e8b082e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115442"
 ---
 # <a name="esentmissinglogfileexception-constructor"></a>Costruttore EsentMissingLogFileException
 
 Inizializza una nuova istanza della classe EsentMissingLogFileException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMissingLogFileException()
 
 [Membri di EsentMissingLogFileException](./esentmissinglogfileexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 - name: Raccolta eventi Windows
   href: windows-event-collector.md
   items:
-    - name: Utilizzo dell'agente di raccolta eventi di Windows
+    - name: Uso dell Windows dell'agente di raccolta eventi
       href: using-windows-event-collector.md
       items:
         - name: Creazione di una sottoscrizione avviata dall'agente di raccolta
@@ -15,26 +15,26 @@
           href: adding-an-event-source-to-an-event-collector-subscription.md
         - name: Creazione di sottoscrizioni di eventi hardware
           href: creating-hardware-event-subscriptions.md
-        - name: Eliminazione di una sottoscrizione di raccolta eventi
+        - name: Eliminazione di una sottoscrizione dell'agente di raccolta eventi
           href: deleting-an-event-collector-subscription.md
         - name: Visualizzare le proprietà della sottoscrizione dell'agente di raccolta eventi
           href: displaying-the-properties-of-an-event-collector-subscription.md
         - name: Visualizzazione dello stato di una sottoscrizione dell'agente di raccolta eventi
           href: displaying-the-status-of-an-event-collector-subscription.md
-        - name: Elenco delle sottoscrizioni degli agenti di raccolta eventi
+        - name: Elenco delle sottoscrizioni dell'agente di raccolta eventi
           href: listing-event-collector-subscriptions.md
         - name: Rimozione di un'origine evento da una sottoscrizione avviata dall'agente di raccolta
           href: removing-an-event-source-from-an-event-collector-subscription.md
-        - name: Nuovo tentativo di sottoscrizione di un agente di raccolta eventi
+        - name: Nuovo tentativo di una sottoscrizione dell'agente di raccolta eventi
           href: retrying-an-event-collector-subscription.md
-    - name: Informazioni di riferimento sull'agente di raccolta eventi Windows
+    - name: Windows Informazioni di riferimento sull'agente di raccolta eventi
       href: windows-event-collector-reference.md
       items:
-        - name: Costanti dell'agente di raccolta eventi Windows
+        - name: Windows Costanti dell'agente di raccolta eventi
           href: windows-event-collector-constants.md
-        - name: Tipi di dati dell'agente di raccolta eventi Windows
+        - name: Windows Tipi di dati dell'agente di raccolta eventi
           href: windows-event-collector-data-types.md
-        - name: Enumerazioni dell'agente di raccolta eventi Windows
+        - name: Windows Enumerazioni dell'agente di raccolta eventi
           href: windows-event-collector-enumerations.md
           items:
             - name: EC_SUBSCRIPTION_CONFIGURATION_MODE
@@ -55,7 +55,7 @@
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_subscription_type
             - name: EC_VARIANT_TYPE
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_variant_type
-        - name: Funzioni dell'agente di raccolta eventi di Windows
+        - name: Windows Funzioni dell'agente di raccolta eventi
           href: windows-event-collector-functions.md
           items:
             - name: EcClose
@@ -88,7 +88,7 @@
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement
             - name: EcRetrySubscription
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecretrysubscription
-        - name: Strutture di raccolta eventi di Windows
+        - name: Windows Strutture dell'agente di raccolta eventi
           href: windows-event-collector-structures.md
           items:
             - name: EC_VARIANT

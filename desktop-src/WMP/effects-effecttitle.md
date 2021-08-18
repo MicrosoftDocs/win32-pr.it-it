@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectTitle
-description: Il metodo effectTitle Recupera il titolo di visualizzazione della visualizzazione con l'indice del registro di sistema specificato.
+title: EFFECTS.effectTitle
+description: Il metodo effectTitle recupera il titolo di visualizzazione della visualizzazione con l'indice del Registro di sistema specificato.
 ms.assetid: f3ea33f6-a8fc-4a18-993e-69b549fbea16
 keywords:
-- EFFECTs. effectTitle Windows Media Player
+- EFFECTS.effectTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 99d5bcbc25dc12891241cfcd99d770242a581475
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0173f5d1bd4755da1feb024b26fc581e63029f48dcde27f5009fd508db3c9d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996681"
 ---
-# <a name="effectseffecttitle"></a>EFFECTs. effectTitle
+# <a name="effectseffecttitle"></a>EFFECTS.effectTitle
 
-Il metodo **effectTitle** Recupera il titolo di visualizzazione della visualizzazione con l'indice del registro di sistema specificato.
+Il **metodo effectTitle** recupera il titolo di visualizzazione della visualizzazione con l'indice del Registro di sistema specificato.
 
 ``` syntax
         elementID.effectTitle(index)
@@ -35,13 +35,13 @@ Il metodo **effectTitle** Recupera il titolo di visualizzazione della visualizza
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice del registro di sistema di una visualizzazione.
+**Numero** (**long**) contenente l'indice del Registro di sistema di una visualizzazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa**.
+Questo metodo restituisce un **oggetto String**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -53,7 +53,7 @@ Questo metodo viene usato per visualizzare i titoli di visualizzazione in un'int
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -61,10 +61,10 @@ Questo metodo viene usato per visualizzare i titoli di visualizzazione in un'int
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectTitle**](effects-currenteffecttitle.md)
+[**EFFECTS.currentEffectTitle**](effects-currenteffecttitle.md)
 </dt> </dl>
 
  

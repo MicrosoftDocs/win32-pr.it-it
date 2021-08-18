@@ -1,27 +1,27 @@
 ---
 title: Uso dei servizi di serializzazione
-description: MIDL genera uno stub di serializzazione per la procedura con gli attributi \ Encode \ e \ Decode \.
+description: MIDL genera uno stub di serializzazione per la procedura con gli attributi \ encode\ e \ decode\ .
 ms.assetid: b1fce133-32e3-4b5e-9f9d-ffbe60e9d9cd
 keywords:
-- RPC (Remote Procedure Call), attività, uso dei servizi di serializzazione
+- Chiamata di procedura remota RPC , attività, uso dei servizi di serializzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 317156a2da954e001b687cca12eb0c6df23ef4ee
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: be20d513bdb74eca316b022dd8536e8988e32e93099981cc77830035048e55e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010629"
 ---
 # <a name="using-serialization-services"></a>Uso dei servizi di serializzazione
 
-MIDL genera uno stub di serializzazione per la procedura con gli attributi \[ [**Encode**](/windows/desktop/Midl/encode) \] e \[ [**Decode**](/windows/desktop/Midl/decode) \] . Quando si chiama questa routine, si esegue una chiamata di serializzazione anziché una chiamata remota. Viene eseguito il marshalling o l'unmarshalling degli argomenti della routine da un buffer nel modo consueto. Si avrà quindi il controllo completo dei buffer.
+MIDL genera uno stub di serializzazione per la procedura con gli attributi \[ [**di codifica**](/windows/desktop/Midl/encode) \] e \[ [**decodifica**](/windows/desktop/Midl/decode) \] . Quando si chiama questa routine, si esegue una chiamata di serializzazione anziché una chiamata remota. Il marshalling o l'annullamento del marshalling degli argomenti della routine da un buffer viene eseguito nel modo consueto. Si ha quindi il controllo completo dei buffer.
 
-Al contrario, quando il programma esegue la serializzazione del tipo (un tipo è contrassegnato con attributi di serializzazione), MIDL genera routine per ridimensionare, codificare e decodificare oggetti di quel tipo. Per serializzare i dati, è necessario chiamare queste routine nel modo appropriato. La serializzazione del tipo è un'estensione Microsoft e, di conseguenza, non è disponibile quando si esegue la compilazione in modalità di compatibilità DCE ([**/OSF**](/windows/desktop/Midl/-osf)). Utilizzando gli attributi \[ [**Encode**](/windows/desktop/Midl/encode) \] e \[ [**Decode**](/windows/desktop/Midl/decode) \] come attributi di interfaccia, RPC applica la codifica a tutti i tipi e routine definiti nel file IDL.
+Al contrario, quando il programma esegue la serializzazione dei tipi (un tipo è etichettato con attributi di serializzazione), MIDL genera routine per ridimensionare, codificare e decodificare oggetti di quel tipo. Per serializzare i dati, è necessario chiamare queste routine nel modo appropriato. La serializzazione dei tipi è un'estensione Microsoft e, di conseguenza, non è disponibile quando si esegue la compilazione in modalità di compatibilità DCE ([**/osf**](/windows/desktop/Midl/-osf)). Usando gli attributi di codifica e decodifica come attributi di interfaccia, RPC applica la codifica a tutti i tipi e \[ [](/windows/desktop/Midl/encode) \] routine definiti \[ [](/windows/desktop/Midl/decode) \] nel file IDL.
 
-È necessario fornire buffer allineati in modo adeguato quando si utilizzano i servizi di serializzazione. L'inizio del buffer deve essere allineato a un indirizzo che è un multiplo di 8 o a 8 byte allineato. Per la serializzazione delle procedure, ogni chiamata di routine deve effettuare il marshalling o l'unmarshalling da una posizione del buffer a 8 byte allineata. Per la serializzazione dei tipi, il ridimensionamento, la codifica e la decodifica devono iniziare a una posizione allineata a 8 byte.
+Quando si usano i servizi di serializzazione, è necessario fornire buffer allineati in modo adeguato. L'inizio del buffer deve essere allineato in corrispondenza di un indirizzo multiplo di 8 o 8 byte allineato. Per la serializzazione di routine, ogni chiamata di routine deve effettuare il marshalling in o annullare il marshalling da una posizione del buffer allineata a 8 byte. Per la serializzazione del tipo, il ridimensionamento, la codifica e la decodifica devono iniziare da una posizione allineata a 8 byte.
 
-Un modo per garantire che i buffer siano allineati per l'applicazione consiste nel scrivere la funzione di [**\_ \_ allocazione utente MIDL**](/windows/desktop/Midl/midl-user-allocate-1) in modo da creare buffer allineati. Nell'esempio di codice riportato di seguito viene illustrato come eseguire questa operazione.
+Un modo per garantire che i buffer dell'applicazione siano allineati è scrivere la funzione di allocazione utente [**midl \_ \_**](/windows/desktop/Midl/midl-user-allocate-1) in modo che crei buffer allineati. L'esempio di codice seguente illustra come eseguire questa operazione.
 
 
 ```C++
@@ -47,7 +47,7 @@ void __RPC_FAR *__RPC_USER  MIDL_user_allocate(size_t sizeInBytes)
 
 
 
-Nell'esempio seguente viene illustrata la funzione di [**MIDL \_ User \_ Free**](/windows/desktop/Midl/midl-user-free-1) corrispondente.
+Nell'esempio seguente viene illustrata la funzione [**midl \_ user \_ free**](/windows/desktop/Midl/midl-user-free-1) corrispondente.
 
 
 ```C++
@@ -65,6 +65,6 @@ void __RPC_USER  MIDL_user_free(void __RPC_FAR *f)
 
 
 
- 
+ 
 
- 
+ 

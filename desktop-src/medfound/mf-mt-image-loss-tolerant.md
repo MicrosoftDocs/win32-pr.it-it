@@ -1,17 +1,17 @@
 ---
 description: Specifica se un flusso di immagini ASF è un tipo JPEG degradabile.
 ms.assetid: e29d0893-8561-4a8c-99e2-168186becd82
-title: Attributo MF_MT_IMAGE_LOSS_TOLERANT (Mfapi. h)
+title: MF_MT_IMAGE_LOSS_TOLERANT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eea33f9f5f49725d164bd26ba21b9602bffef2b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fdf5b2633586cf4b73279a636119ac4770a5321d6bc22b5b961fa85881019b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035169"
 ---
-# <a name="mf_mt_image_loss_tolerant-attribute"></a>\_Attributo a \_ \_ tolleranza di perdita immagine MF mt \_
+# <a name="mf_mt_image_loss_tolerant-attribute"></a>Attributo MF \_ MT \_ IMAGE LOSS \_ \_ TOLERANT
 
 Specifica se un flusso di immagini ASF è un tipo JPEG degradabile.
 
@@ -21,9 +21,9 @@ Specifica se un flusso di immagini ASF è un tipo JPEG degradabile.
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,22 +31,22 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica al tipo di supporto per i flussi di immagine in ASF. Se il valore è **true**, il flusso è un tipo di immagine JPEG degradabile. In caso contrario, il flusso è un tipo di immagine JFIF. Per ulteriori informazioni su questi tipi di flusso, vedere la specifica ASF.
+Questo attributo si applica al tipo di supporto per i flussi di immagini in ASF. Se il valore è **TRUE,** il flusso è un tipo di immagine JPEG degradabile. In caso contrario, il flusso è un tipo di immagine JFIF. Per altre informazioni su questi tipi di flusso, vedere la specifica ASF.
 
-Oltre all' \_ attributo MF mt \_ Image \_ Loss \_ tolerance, il tipo di supporto per un flusso di immagini ASF contiene gli attributi seguenti:
+Oltre all'attributo MF \_ MT \_ IMAGE LOSS TOLERANT, il tipo di supporto per un flusso di immagine \_ \_ ASF contiene gli attributi seguenti:
 
 
 
 | Attributo                                                 | Descrizione                                |
 |-----------------------------------------------------------|--------------------------------------------|
-| [**\_ \_ tipo principale MF \_ mt**](mf-mt-major-type-attribute.md) | Contiene il valore **MFMediaType \_ Image**. |
-| [**\_dimensioni del \_ frame MF mt \_**](mf-mt-frame-size-attribute.md) | Restituisce le dimensioni dell'immagine in pixel.            |
+| [**MF \_ MT \_ MAJOR \_ TYPE**](mf-mt-major-type-attribute.md) | Contiene il valore **MFMediaType \_ Image**. |
+| [**DIMENSIONI \_ DEL FRAME MT \_ \_ MF**](mf-mt-frame-size-attribute.md) | Fornisce le dimensioni dell'immagine in pixel.            |
 
 
 
  
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,9 +54,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

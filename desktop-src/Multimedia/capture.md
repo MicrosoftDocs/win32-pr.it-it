@@ -1,9 +1,9 @@
 ---
-title: comando Capture
-description: Il comando Capture copia il contenuto del buffer del frame e lo archivia nel file specificato. I dispositivi digitali video riconoscono questo comando.
+title: Comando capture
+description: Il comando capture copia il contenuto del buffer dei frame e lo archivia nel file specificato. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: cdf177b9-874e-40d8-af3e-59070c55903d
 keywords:
-- comando Acquisisci Windows Multimedia
+- Comando capture Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdf5edce248fc5402245e36e869cddc97ba3430a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68bc32fd247cbe3519fbffad778b33679e3b71c652b476f557db5a910e87721c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941519"
 ---
-# <a name="capture-command"></a>comando Capture
+# <a name="capture-command"></a>Comando capture
 
-Il comando Capture copia il contenuto del buffer del frame e lo archivia nel file specificato. I dispositivi digitali video riconoscono questo comando.
+Il comando capture copia il contenuto del buffer dei frame e lo archivia nel file specificato. I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno o più dei flag seguenti:
 
 | Valore          | Significato                                                                                                                                                                                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *nome percorso*  | Specifica il percorso e il nome file di destinazione per l'immagine acquisita. Questo flag è obbligatorio.                                                                                                                                                                |
-| al *rettangolo* | Specifica l'area rettangolare all'interno del buffer di frame che il dispositivo Ritaglia e Salva su disco. Se omesso, l'area ritagliata viene impostata per impostazione predefinita sul rettangolo specificato o impostato come predefinito in un comando [put](put.md) "Source" precedente per questa istanza del dispositivo. |
+| as *pathname*  | Specifica il percorso e il nome file di destinazione per l'immagine acquisita. Questo flag è obbligatorio.                                                                                                                                                                |
+| at *rectangle* | Specifica l'area rettangolare all'interno del buffer dei frame che il dispositivo ritaglia e salva su disco. Se omesso, per impostazione predefinita l'area ritagliata viene impostata sul rettangolo specificato o sul valore predefinito di un comando [put](put.md) "source" precedente per questa istanza del dispositivo. |
 
 
 
@@ -67,17 +67,17 @@ Uno o più dei flag seguenti:
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify", "test" o una combinazione di questi. Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify", "test" o una combinazione di questi elementi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo comando può avere esito negativo se il dispositivo sta attualmente eseguendo il video di movimento o se è in esecuzione un'altra operazione a elevato utilizzo di risorse. Se il buffer del frame viene aggiornato in tempo reale, l'aggiornamento viene momentaneamente sospeso in modo che venga acquisita un'immagine completa. Se il dispositivo sospende l'aggiornamento, è possibile che si verifichi un effetto visivo o acustico. Se il formato di file, l'algoritmo di compressione e i livelli di qualità non sono stati impostati, vengono usate le impostazioni predefinite.
+Questo comando potrebbe non riuscire se il dispositivo sta riproducendo video in movimento o sta eseguendo altre operazioni a elevato utilizzo di risorse. Se il buffer dei frame viene aggiornato in tempo reale, l'aggiornamento viene temporaneamente sospeso in modo che venga acquisita un'immagine completa. Se il dispositivo sospende l'aggiornamento, potrebbe esserci un effetto visivo o acustico. Se il formato di file, l'algoritmo di compressione e i livelli di qualità non sono stati impostati, vengono usati i relativi valori predefiniti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,13 +94,13 @@ Questo comando può avere esito negativo se il dispositivo sta attualmente esegu
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[mettere](put.md)
+[Mettere](put.md)
 </dt> </dl>
 
  

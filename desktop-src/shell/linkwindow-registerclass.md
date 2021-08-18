@@ -47,7 +47,7 @@ Restituisce **TRUE se** la registrazione ha avuto esito positivo. **FALSE in** c
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non ha un file di intestazione o di libreria associato, quindi deve essere chiamata dal valore ordinale. Chiamare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome della DLL Shell32.dll per ottenere un handle del modulo. Chiamare quindi [**GetProcAddress con**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) l'handle del modulo e il numero ordinale 258 per usare questa funzione.
+Questa funzione non ha un file di intestazione o di libreria associato, quindi deve essere chiamata dal valore ordinale. Chiamare [**LoadLibrary con**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) il nome della DLL Shell32.dll per ottenere un handle del modulo. Chiamare quindi [**GetProcAddress con**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) l'handle del modulo e il numero ordinale 258 per usare questa funzione.
 
 Usare [**LinkWindow \_ UnregisterClass**](linkwindow-unregisterclass.md) per annullare la registrazione della classe dopo l'uso.
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo SendQuality Invia un messaggio di qualità per indicare cosa deve fare il fornitore per la qualità.
+description: Il metodo SendQuality invia un messaggio di qualità per indicare cosa deve fare il fornitore sulla qualità.
 ms.assetid: 9ce11c35-958c-4eda-9130-1139c4074bf7
-title: Metodo CBaseVideoRenderer. SendQuality (Renbase. h)
+title: Metodo CBaseVideoRenderer.SendQuality (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8a6ae7228be0f3012c49d652d11bf2c1c3bfc181
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acda4bd9b00434e33c24ac44625b3c1d45350d45b4ec0b242d2638333ad11ed9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074765"
 ---
-# <a name="cbasevideorenderersendquality-method"></a>CBaseVideoRenderer. SendQuality, metodo
+# <a name="cbasevideorenderersendquality-method"></a>Metodo CBaseVideoRenderer.SendQuality
 
-Il `SendQuality` metodo invia un messaggio di qualità per indicare cosa deve fare il fornitore per la qualità.
+Il metodo invia un messaggio di qualità per indicare cosa deve fare il `SendQuality` fornitore sulla qualità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,24 +46,24 @@ virtual HRESULT SendQuality(
 *trLate* 
 </dt> <dd>
 
-Quantità di tempo in cui il frame è in ritardo.
+Intervallo di tempo entro il quale il frame è in ritardo.
 
 </dd> <dt>
 
 *trRealStream* 
 </dt> <dd>
 
-Currentstream tempo.
+Ora corrente del flusso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro invia un messaggio di controllo di qualità upstream per controllare la gestione della qualità. La natura del messaggio di qualità, ovvero se ridurre o aumentare il numero di campioni, viene determinata nell'implementazione della gestione della qualità in questa classe derivata (vedere [**CBaseVideoRenderer:: ShouldDrawSampleNow**](cbasevideorenderer-shoulddrawsamplenow.md)).
+Questa funzione membro invia un messaggio di controllo qualità a monte per controllare la gestione della qualità. La natura del messaggio di qualità( ovvero se ridurre o aumentare il numero di campioni) è determinata nell'implementazione della gestione della qualità in questa classe derivata (vedere [**CBaseVideoRenderer::ShouldDrawSampleNow**](cbasevideorenderer-shoulddrawsamplenow.md)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questa funzione membro invia un messaggio di controllo di qualità upstream per 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

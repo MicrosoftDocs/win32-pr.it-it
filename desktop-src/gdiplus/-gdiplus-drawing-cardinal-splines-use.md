@@ -1,19 +1,19 @@
 ---
-description: Una spline di cardinalità è una curva che passa in modo uniforme attraverso un set di punti specificato.
+description: Una spline cardinale è una curva che passa senza problemi attraverso un determinato set di punti.
 ms.assetid: 0bb84f55-18d0-4a4c-bc5b-7803aa807954
-title: Disegno di spline di cardinalità
+title: Disegno di spline cardinali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c780cb4486f579acb57170a8eda4fd187a421ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f9124e27254fc77135d265d9bab98d2332c02d345e60add1fcd96fc68c814df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036819"
 ---
-# <a name="drawing-cardinal-splines"></a>Disegno di spline di cardinalità
+# <a name="drawing-cardinal-splines"></a>Disegno di spline cardinali
 
-Una spline di cardinalità è una curva che passa in modo uniforme attraverso un set di punti specificato. Per creare una spline di cardinalità, creare un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e passare l'indirizzo di una matrice di punti al metodo [**Graphics::D rawcurve**](/previous-versions//ms536070(v=vs.85)) . Nell'esempio seguente viene disegnata una spline di cardinalità a forma di campana che passa attraverso cinque punti designati:
+Una spline cardinale è una curva che passa senza problemi attraverso un determinato set di punti. Per disegnare una spline cardinale, creare un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e passare l'indirizzo di una matrice di punti al [**metodo Graphics::D rawCurve.**](/previous-versions//ms536070(v=vs.85)) L'esempio seguente disegna una spline cardinale a forma di campana che passa attraverso cinque punti designati:
 
 
 ```
@@ -29,13 +29,13 @@ graphics.DrawCurve(&pen, points, 5);
 
 
 
-Nella figura seguente vengono illustrati la curva e cinque punti.
+La figura seguente mostra la curva e i cinque punti.
 
-![illustrazione di una spline di Cardinal che passa attraverso un set di cinque punti](images/cardinalspline1.png)
+![illustrazione di una spline cardinale che passa attraverso un set di cinque punti](images/cardinalspline1.png)
 
-È possibile usare il metodo [**Graphics::D rawclosedcurve**](/previous-versions//ms536143(v=vs.85)) della classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per creare una spline Cardinal chiusa. In una spline di Cardinal chiusa la curva continua fino all'ultimo punto nella matrice e si connette con il primo punto nella matrice.
+È possibile usare il [**metodo Graphics::D rawClosedCurve**](/previous-versions//ms536143(v=vs.85)) della classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per disegnare una spline cardinale chiusa. In una spline cardinale chiusa, la curva continua fino all'ultimo punto della matrice e si connette al primo punto della matrice.
 
-Nell'esempio seguente viene disegnata una spline di Cardinal chiusa che passa attraverso sei punti designati.
+Nell'esempio seguente viene disegnata una spline cardinale chiusa che passa attraverso sei punti designati.
 
 
 ```
@@ -52,11 +52,11 @@ graphics.DrawClosedCurve(&pen, points, 6);
 
 
 
-Nella figura seguente viene illustrata la spline chiusa insieme ai sei punti:
+La figura seguente mostra la spline chiusa insieme ai sei punti:
 
-![illustrazione di una spline di Cardinal chiusa che passa attraverso un set di sei punti](images/cardinalspline1a.png)
+![illustrazione di una spline cardinale chiusa che passa attraverso un set di sei punti](images/cardinalspline1a.png)
 
-È possibile modificare la curva di una spline di tipo Cardinal passando un argomento di tensionamento al metodo [**Graphics::D rawcurve**](/previous-versions//ms536070(v=vs.85)) . Nell'esempio seguente vengono disegnate tre spline cardinali che passano attraverso lo stesso set di punti:
+È possibile modificare il modo in cui una spline cardinale curva passando un argomento di tensione al [**metodo Graphics::D rawCurve.**](/previous-versions//ms536070(v=vs.85)) Nell'esempio seguente vengono disegnate tre spline cardinali che passano attraverso lo stesso set di punti:
 
 
 ```
@@ -74,9 +74,9 @@ graphics.DrawCurve(&pen, points, 5, 1.0f);  // tension 1.0
 
 
 
-Nella figura seguente sono illustrate le tre spline insieme ai relativi valori di tensione. Si noti che quando la tensione è 0, i punti sono collegati da linee rette.
+La figura seguente mostra le tre spline insieme ai relativi valori di tensione. Si noti che quando la tensione è 0, i punti sono connessi da linee rette.
 
-![illustrazione di tre spline cardinali che passano attraverso lo stesso set di punti ma con tensioni diverse](images/cardinalspline2.png)
+![illustrazione di tre spline cardinali che passano attraverso lo stesso set di punti, ma a diverse tensione](images/cardinalspline2.png)
 
  
 

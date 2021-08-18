@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)'
-title: Metodo API. RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)
+description: Altre informazioni sul metodo Api.RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)
+title: Metodo Api.RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)
 TOCTitle: RetrieveColumnAsByte method (JET_SESID, JET_TABLEID, JET_COLUMNID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.RetrieveColumnAsByte(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumnasbyte(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e3bc5db8aa14f3cabf05f15f8e1ecb41256496b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbc7268c19235a806b47a27ec1671ed18dbceda46129d3927dd9f7e11edf2818
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983041"
 ---
-# <a name="apiretrievecolumnasbyte-method-jet_sesid-jet_tableid-jet_columnid"></a>Metodo API. RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)
+# <a name="apiretrievecolumnasbyte-method-jet_sesid-jet_tableid-jet_columnid"></a>Metodo Api.RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)
 
-Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore.
+Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,28 +64,28 @@ public static Nullable<byte> RetrieveColumnAsByte(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da cui recuperare la colonna.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    ColumnID da recuperare.
+    Columnid da recuperare.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[Byte](/dotnet/api/system.byte)\>  
-Dati recuperati dalla colonna sotto forma di byte. Null se la colonna è null.  
+Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[Byte](/dotnet/api/system.byte)\>  
+Dati recuperati dalla colonna come byte. Null se la colonna è Null.  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -93,8 +93,8 @@ Dati recuperati dalla colonna sotto forma di byte. Null se la colonna è null.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload RetrieveColumnAsByte](./api.retrievecolumnasbyte-method.md)
+[Overload di RetrieveColumnAsByte](./api.retrievecolumnasbyte-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

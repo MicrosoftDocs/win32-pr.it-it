@@ -1,11 +1,11 @@
 ---
 title: Metodo DownloadCollection.item
-description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo item recupera un oggetto download in sospeso.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. Il metodo item recupera un oggetto di download in sospeso.
 ms.assetid: a79db9db-e80c-48db-aee6-9bd8f77a7dff
 keywords:
 - Metodo item Windows Media Player
-- Metodo item Windows Media Player , classe DownloadCollection
-- Classe DownloadCollection Windows Media Player metodo , item
+- metodo item Windows Media Player , classe DownloadCollection
+- Metodo della classe DownloadCollection Windows Media Player , item
 topic_type:
 - apiref
 api_name:
@@ -26,11 +26,11 @@ ms.locfileid: "118997041"
 # <a name="downloadcollectionitem-method"></a>Metodo DownloadCollection.item
 
 > [!Note]  
-> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-Il **metodo item** recupera un oggetto download in sospeso.
+Il **metodo item** recupera un oggetto di download in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,6 +1,6 @@
 ---
 title: Protezione accesso alla rete
-description: Nota La piattaforma Protezione accesso alla rete non è disponibile a partire da protezione accesso alla rete di Windows 10 è un set di componenti del sistema operativo che forniscono una piattaforma per l'accesso protetto alle reti private.
+description: Nota La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10 Protezione accesso alla rete è un set di componenti del sistema operativo che forniscono una piattaforma per l'accesso protetto alle reti private.
 ms.assetid: f562f5f1-c05a-4e4e-bcd9-a302c61f2a5e
 keywords:
 - Protezione accesso alla rete
@@ -39,7 +39,7 @@ Protezione accesso alla rete è progettato per essere estendibile. Può interagi
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-L'API protezione accesso alla rete è progettata per gli sviluppatori C/C++. Per i metodi di imposizione di Protezione accesso alla rete, i programmatori devono avere familiarità con i protocolli e le tecnologie di rete, ad esempio RADIUS (Remote Authentication Dial-in User Service), Dynamic Host Configuration Protocol (DHCP), reti private virtuali (VPN), lo standard IEEE 802.1X per l'accesso cablato e wireless e IPsec (Internet Protocol Security).
+L'API protezione accesso alla rete è progettata per gli sviluppatori C/C++. Per i metodi di imposizione di Protezione accesso alla rete, i programmatori devono avere familiarità con i protocolli e le tecnologie di rete, ad esempio RADIUS (Remote Authentication Dial-in User Service), Dynamic Host Configuration Protocol (DHCP), reti private virtuali (VPN), lo standard IEEE 802.1X per l'accesso cablato e wireless e internet protocol security (IPsec).
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura DRM_VIDEO_OUTPUT_PROTECTION_IDS (wmdrmsdk. h)
-description: La \_ \_ \_ struttura degli ID di protezione dell'output del video DRM \_ include una matrice di \_ strutture di protezione dell'output video DRM \_ \_ .
+title: DRM_VIDEO_OUTPUT_PROTECTION_IDS struttura (Wmdrmsdk.h)
+description: La struttura DRM \_ VIDEO \_ OUTPUT PROTECTION \_ \_ IDS contiene una matrice di strutture DRM \_ VIDEO OUTPUT \_ \_ PROTECTION.
 ms.assetid: 9f206a7e-c92b-4f29-a591-72784086d1db
 keywords:
-- Formato di Windows Media per la struttura DRM_VIDEO_OUTPUT_PROTECTION_IDS
-- struttura Windows Media Format
+- DRM_VIDEO_OUTPUT_PROTECTION_IDS struttura windows Media Format
+- Struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51af3ccebec52ab6f6863aeb376ed27f8c8e2467
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9439328ed817da40630c3a600cf7e6db553738a12799babbe9e71c48f28923b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085873"
 ---
-# <a name="drm_video_output_protection_ids-structure"></a>\_Struttura degli \_ ID di protezione dell'output del video DRM \_ \_
+# <a name="drm_video_output_protection_ids-structure"></a>Struttura DRM \_ VIDEO \_ OUTPUT PROTECTION \_ \_ IDS
 
-La struttura degli **ID di protezione dell' \_ output del video \_ \_ \_ DRM** include una matrice di strutture di **\_ \_ \_ protezione dell'output video DRM** .
+La **struttura DRM \_ VIDEO OUTPUT \_ PROTECTION \_ \_ IDS** contiene una matrice **di strutture DRM VIDEO OUTPUT \_ \_ \_ PROTECTION.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ typedef struct DRM_VIDEO_OUTPUT_PROTECTION_IDS {
 
 <dl> <dt>
 
-**Centri di**
+**cEntries**
 </dt> <dd>
 
 Numero di elementi nella matrice a cui fa riferimento **rgVop**.
@@ -52,13 +52,13 @@ Numero di elementi nella matrice a cui fa riferimento **rgVop**.
 **rgVop**
 </dt> <dd>
 
-Indirizzo di una matrice di strutture di **\_ \_ \_ protezione dell'output video DRM** . **DRM \_ La \_ \_ protezione dell'output video** è un tipo definito come [**\_ \_ protezione dell'output DRM**](drm-output-protection.md).
+Indirizzo di una matrice di **strutture DRM \_ VIDEO OUTPUT \_ \_ PROTECTION.** **DRM \_ VIDEO \_ OUTPUT \_ PROTECTION** è un tipo definito come [**DRM OUTPUT \_ \_ PROTECTION.**](drm-output-protection.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata come membro della struttura [**DRM \_ Play \_ OPL**](drmdrm-play-opl.md) .
+Questa struttura viene usata come membro della struttura [**\_ \_ OPL DRM PLAY.**](drmdrm-play-opl.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Questa struttura viene utilizzata come membro della struttura [**DRM \_ Play \_ 
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -74,10 +74,10 @@ Questa struttura viene utilizzata come membro della struttura [**DRM \_ Play \_ 
 
 <dl> <dt>
 
-[**\_ID di \_ protezione dell'output audio \_ DRM \_**](drm-audio-output-protection-ids.md)
+[**ID PROTEZIONE \_ OUTPUT AUDIO \_ \_ \_ DRM**](drm-audio-output-protection-ids.md)
 </dt> <dt>
 
-[**\_ \_ \_ ID protezione output video \_ DRM \_ es.**](drm-video-output-protection-ids-ex.md)
+[**ID DI \_ PROTEZIONE DELL'OUTPUT VIDEO DRM \_ \_ \_ \_ EX**](drm-video-output-protection-ids-ex.md)
 </dt> <dt>
 
 [**Strutture**](drm-structures.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: IndexSegment. Equals (metodo)'
-title: IndexSegment. Equals (metodo)
+description: Altre informazioni sul metodo IndexSegment.Equals
+title: Metodo IndexSegment.Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.IndexSegment.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.equals(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4425448b25f8f7ad0186e98ed2a7e181ae831fd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fce90e1d0a2ac27011250c9b7ebc80980555c82246801464f3bbbd98ad55d14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104569022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112640"
 ---
-# <a name="indexsegmentequals-method"></a>IndexSegment. Equals (metodo)
+# <a name="indexsegmentequals-method"></a>Metodo IndexSegment.Equals
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350913(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object. Equals (Object)</a>.</td>
+<td><a href="dn350913(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di . Esegue l'override <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">di Object.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350936(v=exchg.10).md">Uguale a (IndexSegment)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
+<td><a href="dn350936(v=exchg.10).md">Equals(IndexSegment)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .</td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Membri di IndexSegment](./indexsegment-members.md)
+[Membri indexSegment](./indexsegment-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

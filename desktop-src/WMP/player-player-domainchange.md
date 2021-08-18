@@ -1,11 +1,11 @@
 ---
 title: Evento Player.DomainChange
-description: L'evento DomainChange si verifica quando cambia il dominio DVD. | Evento Player.DomainChange
+description: L'evento DomainChange si verifica quando il dominio DVD viene modificato. | Evento Player.DomainChange
 ms.assetid: 01965492-276e-4d30-99eb-767e0776b423
 keywords:
 - Evento DomainChange Windows Media Player
-- Evento DomainChange Windows Media Player , classe Player
-- Classe Player Windows Media Player , evento DomainChange
+- Classe di evento DomainChange Windows Media Player , Player
+- Classe Player Windows Media Player, evento DomainChange
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118995911"
 ---
 # <a name="playerdomainchange-event"></a>Evento Player.DomainChange
 
-**L'evento DomainChange** si verifica quando il dominio DVD cambia.
+**L'evento DomainChange** si verifica quando il dominio DVD viene modificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,10 +52,10 @@ Player.DomainChange(
 | string            | Descrizione                                                          |
 |-------------------|----------------------------------------------------------------------|
 | firstplay         | Esecuzione dell'inizializzazione predefinita di un disco DVD.                     |
-| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come menu radice o topMenu. |
-| videoTitleSetMenu | Visualizzazione dei menu per il set di titoli corrente. Nota anche come titleMenu.     |
+| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come Menu radice o TopMenu. |
+| videoTitleSetMenu | Visualizzazione dei menu per il set di titoli corrente. Noto anche come titleMenu.     |
 | title             | Visualizzazione del titolo corrente.                                        |
-| stop              | Lo strumento di spostamento DVD si trova nel dominio DVD Stop.                         |
+| stop              | Il DVD Navigator si trova nel dominio DVD Stop.                         |
 
 
 
@@ -69,7 +69,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 
@@ -79,7 +79,7 @@ Il valore dei parametri dell'evento viene specificato da Windows Media Player ed
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva.<br/>                           |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive.<br/>                           |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

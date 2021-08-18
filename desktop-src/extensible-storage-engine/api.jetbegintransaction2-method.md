@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetBeginTransaction2'
-title: API. JetBeginTransaction2, metodo
+description: 'Altre informazioni su: Metodo Api.JetBeginTransaction2'
+title: Metodo Api.JetBeginTransaction2
 TOCTitle: 'JetBeginTransaction2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetBeginTransaction2(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.BeginTransactionGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetbegintransaction2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8d41652c4688bd736ac5f5164ca9b487a24edf8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 235aa39f7bcc6f73064be0bdd411171429bef479f95334e11118270396d359c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983611"
 ---
-# <a name="apijetbegintransaction2-method"></a>API. JetBeginTransaction2, metodo
+# <a name="apijetbegintransaction2-method"></a>Metodo Api.JetBeginTransaction2
 
-Consente a una sessione di immettere una transazione o di creare un nuovo punto di salvataggio in una transazione esistente.
+Determina l'immissione di una transazione in una sessione o la creazione di un nuovo punto di salvataggio in una transazione esistente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public static void JetBeginTransaction2(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione per la quale iniziare la transazione.
+    Sessione per cui avviare la transazione.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. BeginTransactionGrbit](./begintransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.BeginTransactionGrbit](./begintransactiongrbit-enumeration.md)  
     
     Opzioni di transazione.
 
@@ -79,6 +79,6 @@ public static void JetBeginTransaction2(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,29 +1,29 @@
 ---
-description: Quando si enumerano i cloud, un'applicazione deve fornire l'ambito della ricerca di cloud. Una volta identificato l'ambito, l'applicazione può avviare il processo di enumerazione.
+description: Quando si enumerano i cloud, un'applicazione deve fornire l'ambito della ricerca di cloud. Dopo l'identificazione dell'ambito, l'applicazione può iniziare il processo di enumerazione.
 ms.assetid: efd16cca-ac63-4bfa-bc6c-d7465cc374ee
 title: Enumerazione dei cloud
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f958a2cc958c10bd85e674b43a3b41354fc344c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c651fcfd003e4cafdf9b0f04c7cfc993a1e677b03630a61556523eed8c3aaece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011559"
 ---
 # <a name="enumerating-clouds"></a>Enumerazione dei cloud
 
-Quando si enumerano i cloud, un'applicazione deve fornire l'ambito della ricerca di cloud. Una volta identificato l'ambito, l'applicazione può avviare il processo di enumerazione.
+Quando si enumerano i cloud, un'applicazione deve fornire l'ambito della ricerca di cloud. Dopo l'identificazione dell'ambito, l'applicazione può iniziare il processo di enumerazione.
 
-Nella procedura riportata di seguito vengono identificate le chiamate che devono essere effettuate per enumerare i cloud.
+La procedura seguente identifica le chiamate che devono essere effettuate per enumerare i cloud.
 
 **Per enumerare i cloud**
 
 1.  Chiamare [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) per avviare il processo e restituire un handle.
-2.  Chiamare [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) per recuperare un set di cloud, quindi chiamare questa funzione fino a quando l'applicazione non recupera tutti i cloud.
+2.  Chiamare [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) per recuperare un set di cloud e quindi chiamare questa funzione fino a quando l'applicazione non ha recuperato tutti i cloud.
 3.  Chiamare [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) per completare l'enumerazione.
 
-## <a name="example-enumerating-and-printing-the-names-of-available-link-local-clouds"></a>Esempio: enumerazione e stampa dei nomi dei cloud locali per i collegamenti disponibili
+## <a name="example-enumerating-and-printing-the-names-of-available-link-local-clouds"></a>Esempio: Enumerazione e stampa dei nomi dei cloud locali di collegamento disponibili
 
 
 ```C++

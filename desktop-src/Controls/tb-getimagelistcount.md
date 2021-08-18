@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETIMAGELISTCOUNT (COMmctrl. h)
-description: Ottiene il numero di elenchi di immagini associate alla barra degli strumenti.
+title: TB_GETIMAGELISTCOUNT messaggio (Commctrl.h)
+description: Ottiene il numero di elenchi di immagini associati alla barra degli strumenti.
 ms.assetid: ecabbecf-dfd1-4a34-b03b-d6137e852021
 keywords:
-- Controlli di Windows Message TB_GETIMAGELISTCOUNT
+- TB_GETIMAGELISTCOUNT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdd520c2eba063b85be860a77791bb364650eab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fa28b951d5a886529cef8c263ddba34043f624974109264d279cd1264b76df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078355"
 ---
-# <a name="tb_getimagelistcount-message"></a>TB \_ GETIMAGELISTCOUNT messaggio
+# <a name="tb_getimagelistcount-message"></a>TB \_ GETIMAGELISTCOUNT message
 
-Ottiene il numero di elenchi di immagini associate alla barra degli strumenti.
+Ottiene il numero di elenchi di immagini associati alla barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il numero di elenchi di immagini.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

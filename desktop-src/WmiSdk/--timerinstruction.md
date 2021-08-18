@@ -1,8 +1,8 @@
 ---
-description: Specifica le istruzioni per la generazione di eventi timer per i consumer.
+description: Specifica le istruzioni sulla modalità di generazione degli eventi timer per i consumer.
 ms.assetid: b08edb25-bedf-4014-a835-4050f5749479
 ms.tgt_platform: multiple
-title: Classe __TimerInstruction
+title: __TimerInstruction classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 5c6bbbf905a141fb7e9e3621c78709fd78999393
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9081cef3ed58929fa976470b1c567c6accd0f60029f64f28ee7a90d16600d2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132014"
 ---
 # <a name="__timerinstruction-class"></a>\_\_Classe TimerInstruction
 
-La classe di sistema astratta **\_ \_ TimerInstruction** specifica le istruzioni per la generazione di [eventi timer](receiving-a-timed-or-repeating-event.md) per i consumer.
+La classe di sistema astratta **\_ \_ TimerInstruction** specifica le istruzioni sulla modalità di generazione degli eventi [timer](receiving-a-timed-or-repeating-event.md) per i consumer.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,40 +42,40 @@ class __TimerInstruction : __EventGenerator
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ TimerInstruction** dispone di questi tipi di membri:
+La **\_ \_ classe TimerInstruction** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ TimerInstruction** dispone di queste proprietà.
+La **\_ \_ classe TimerInstruction** ha queste proprietà.
 
 <dl> <dt>
 
 **SkipIfPassed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive se verrà generato un evento di notifica e che riceverà quando un consumer diventerà disponibile.
+Descrive se verrà generato e ricevuto un evento di notifica quando un consumer diventa disponibile.
 
 <dt>
 
 FALSE
 </dt> <dd>
 
-Quando WMI o il consumer diventano nuovamente disponibili, viene generato e ricevuto un evento di notifica.
+Quando WMI o il consumer diventa nuovamente disponibile, verrà generato e ricevuto un evento di notifica.
 
 </dd> <dt>
 
 true
 </dt> <dd>
 
-L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato oppure se il consumer che richiede la ricezione dell'evento non è disponibile.
+L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato o se il consumer che richiede di ricevere l'evento non è disponibile.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ L'evento timer non si verifica se WMI non è disponibile per generarlo all'inter
 **TimerId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -93,15 +93,15 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](standard-qualifiers.md)
 </dt> </dl>
 
-Stringa univoca assegnata dall'utente che identifica questo particolare evento del timer. Per evitare conflitti di denominazione con altri identificatori del timer, è possibile usare il formato stringa di un GUID di tipo DCE (Distributed computer Environment). Questa proprietà fa parte dell'istanza di [**\_ \_ TimerEvent**](--timerevent.md) che rappresenta l'evento.
+Stringa univoca assegnata dall'utente che identifica questo particolare evento timer. Per evitare conflitti di denominazione con altri identificatori timer, è possibile usare la forma stringa di un GUID di tipo DCE (Distributed Computer Environment). Questa proprietà fa parte [**\_ \_ dell'istanza di TimerEvent**](--timerevent.md) che rappresenta l'evento.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ TimerInstruction** deriva da [**\_ \_ EventGenerator**](--eventgenerator.md).
+La **\_ \_ classe TimerInstruction** è derivata da [**\_ \_ EventGenerator**](--eventgenerator.md).
 
-Le sottoclassi **\_ \_ TimerInstruction** sono [**\_ \_ AbsoluteTimerInstruction**](--absolutetimerinstruction.md), utilizzate dai consumer per la registrazione per un evento timer assoluto e [**\_ \_ IntervalTimerInstruction**](--intervaltimerinstruction.md), utilizzate per la registrazione per un evento timer intervallo.
+Le **\_ \_ sottoclassi TimerInstruction** sono [**\_ \_ AbsoluteTimerInstruction**](--absolutetimerinstruction.md), usate dai consumer per la registrazione per un evento timer assoluto, e [**\_ \_ IntervalTimerInstruction**](--intervaltimerinstruction.md), usate per la registrazione per un evento timer intervallo.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,5 +1,5 @@
 ---
-description: Il metodo della classe WMI DeleteEx eliminerà il file logico o la directory specificata nel percorso dell'oggetto. DeleteEx è una versione estesa del metodo Delete.
+description: Il metodo della classe WMI DeleteEx eliminerà il file logico (o la directory) specificato nel percorso dell'oggetto. DeleteEx è una versione estesa del metodo Delete.
 ms.assetid: 6e5447c1-4d71-4a51-a1e0-b5785c13dfd2
 ms.tgt_platform: multiple
 title: Metodo DeleteEx della classe Win32_Directory
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ac23a4013053d252aec49b8b7be4aae62c41c8e1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0725011b39628f5376293bc82273723a89dfb0eafe1535d2f58393919f18c71a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080065"
 ---
-# <a name="deleteex-method-of-the-win32_directory-class"></a>Metodo DeleteEx della classe di \_ directory Win32
+# <a name="deleteex-method-of-the-win32_directory-class"></a>Metodo DeleteEx della classe Directory Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminerà il file logico o la directory specificata nel percorso dell'oggetto. **DeleteEx** è una versione estesa del metodo [**Delete**](delete-method-in-class-win32-directory.md) .
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminerà il file logico (o la directory) specificato nel percorso dell'oggetto. **DeleteEx** è una versione estesa del [**metodo Delete.**](delete-method-in-class-win32-directory.md)
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,23 +43,23 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **DeleteEx** non è riuscito. Questo parametro sarà **null** se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo DeleteEx non** è riuscito. Questo parametro sarà **Null se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **DeleteEx**. Il parametro *StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata ExecMethod.
+Nome del file o della directory figlio da usare come punto di partenza per **DeleteEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella chiamata ExecMethod.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato eliminato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato eliminato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -175,7 +175,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

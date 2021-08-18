@@ -1,31 +1,31 @@
 ---
-title: Chi gestisce la memoria
-description: In genere, gli stub sono responsabili per la creazione di pacchetti e la decompressione dei dati, l'allocazione e la liberazione della memoria e il trasferimento dei dati da e verso la memoria.
+title: Who Gestisce la memoria
+description: In genere, gli stub sono responsabili della creazione del pacchetto e della decompressione dei dati, dell'allocazione e della liberare memoria e del trasferimento dei dati da e verso la memoria.
 ms.assetid: 9dea0fc0-d248-45b1-9a90-2155011c7e7c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3e43b2ff3d1dd8abdacccfb133106bd38ef625
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 74e1e8aa94b8c1c0dea86f7317c55186e373ab12c268bf58ba8baa4c7c0630a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010439"
 ---
-# <a name="who-manages-memory"></a>Chi gestisce la memoria?
+# <a name="who-manages-memory"></a>Who Gestisce la memoria?
 
-In genere, gli stub sono responsabili per la creazione di pacchetti e la decompressione dei dati, l'allocazione e la liberazione della memoria e il trasferimento dei dati da e verso la memoria. In alcuni casi, tuttavia, l'applicazione è responsabile dell'allocazione e della liberazione della memoria. Negli argomenti seguenti vengono illustrati i fattori che determinano quale componente è responsabile della gestione della memoria:
+In genere, gli stub sono responsabili della creazione del pacchetto e della decompressione dei dati, dell'allocazione e della liberare memoria e del trasferimento dei dati da e verso la memoria. In alcuni casi, tuttavia, l'applicazione è responsabile dell'allocazione e della liberare memoria. Negli argomenti seguenti vengono illustrati i fattori che determinano quale componente è responsabile della gestione della memoria:
 
--   [Puntatori di primo livello e incorporati](top-level-and-embedded-pointers.md)
+-   [Puntatori incorporati e di primo livello](top-level-and-embedded-pointers.md)
 -   [Attributi direzionali applicati al parametro](directional-attributes-applied-to-the-parameter.md)
--   [Attributi di lunghezza, dimensioni e direzionali](length-size-and-directional-attributes.md)
+-   [Attributi di lunghezza, dimensione e direzionali](length-size-and-directional-attributes.md)
 -   [Attributi del puntatore applicati al parametro](pointer-attributes-applied-to-the-parameter.md)
--   [Combinando gli attributi direzionale e puntatore](combining-pointer-and-directional-attributes.md)
+-   [Combinazione di puntatore e attributi direzionali](combining-pointer-and-directional-attributes.md)
 -   [Protezione del buffer MCCP](mccp-buffer-protection.md)
--   [Valori restituiti dalla funzione](function-return-values.md)
+-   [Valori restituiti dalle funzioni](function-return-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Contiene l'intestazione della sequenza MPEG-1 o MPEG-2 per un tipo di supporto video.
+description: Contiene l'intestazione di sequenza MPEG-1 o MPEG-2 per un tipo di supporto video.
 ms.assetid: 17b7f76c-404c-4aa9-9746-1488fee027f2
-title: Attributo MF_MT_MPEG_SEQUENCE_HEADER (Mfapi. h)
+title: MF_MT_MPEG_SEQUENCE_HEADER attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4003137ec4d2942bc95f56b2ce54644eb7b678d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1e988a5b64b7b1c99d3c84de7441f492cebe07f0b473ee3f5256c732fbb7697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035149"
 ---
-# <a name="mf_mt_mpeg_sequence_header-attribute"></a>\_ \_ \_ Attributo header della sequenza MF mt MPEG \_
+# <a name="mf_mt_mpeg_sequence_header-attribute"></a>Attributo \_ MF MT \_ MPEG \_ SEQUENCE \_ HEADER
 
-Contiene l'intestazione della sequenza MPEG-1 o MPEG-2 per un tipo di supporto video.
+Contiene l'intestazione di sequenza MPEG-1 o MPEG-2 per un tipo di supporto video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,11 +21,11 @@ Matrice di byte
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **dwSequenceHeader** della struttura [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) o al membro **bSequenceHeader** della struttura [**MPEG1VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo) .
+Questo attributo corrisponde al membro **dwSequenceHeader** della struttura [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) o al membro **bSequenceHeader** della struttura [**MPEG1VIDEOINFO.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo)
 
-Per i video H264 e H265, il BLOB contiene [unità NAL](https://en.wikipedia.org/wiki/Network_Abstraction_Layer) concatenate nel formato allegato B, insieme ai relativi codici iniziali. In particolare, per i video H264 si tratta di SPS & unità NAL di PPS. Per H265 sono VPS, SPS & PPS.
+Per i video h264 e h265, il BLOB contiene unità [NAL](https://en.wikipedia.org/wiki/Network_Abstraction_Layer) concatenate in formato Allegato B, insieme ai relativi codici di avvio. In particolare, per i video h264 si tratta di unità NAL & PPS. Per h265 sono VPS, SPS & PPS.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: seblob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

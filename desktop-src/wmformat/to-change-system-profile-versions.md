@@ -8,22 +8,22 @@ keywords:
 - profili di sistema, modifica delle versioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 824e2b1cf4a43cef0e87daa461c6510a6672472d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c963a142c879242b5e2ae734dedb4073a120a57a9121c3f3f95e5838c15110a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104336369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084271"
 ---
 # <a name="to-change-system-profile-versions"></a>Per modificare le versioni del profilo di sistema
 
-Ogni volta che si crea un oggetto di gestione profili, analizza i profili di sistema. È possibile scorrere i profili di sistema usando i metodi [**IWMProfileManager:: GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager:: LoadSystemProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) , ma gestione profili consentirà di contare ed elencare solo i profili di una sola versione alla volta. Se si vuole usare questo metodo per trovare i profili di sistema, è necessario assicurarsi che il gestore del profilo occupi la versione desiderata. Utilizzare i metodi dell'interfaccia [**IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) per impostare e recuperare la versione del profilo di sistema utilizzata da Gestione profili.
+Ogni volta che si crea un oggetto di gestione profili, analizza i profili di sistema. È possibile scorrere i profili di sistema usando i metodi [**IWMProfileManager::GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager::LoadSystemProfile,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) ma la gestione profili conta ed elenca solo i profili di una singola versione alla volta. Se si vuole usare questo metodo per trovare i profili di sistema, è necessario assicurarsi che la gestione dei profili si occupi della versione desiderata. Usare i metodi [**dell'interfaccia IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) per impostare e recuperare la versione del profilo di sistema usata da Gestione profili.
 
-Le versioni vengono specificate usando i membri del tipo di enumerazione della [**\_ versione WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) . Se si imposta la versione del profilo di sistema su WMT \_ ver \_ 9 \_ 0, la chiamata avrà esito positivo, ma il conteggio del profilo di sistema sarà zero. Questo perché nessun profilo di sistema predefinito usa i codec della serie Windows Media Audio e video 9. Per ulteriori informazioni sull'aggiornamento dei profili per l'utilizzo dei codec più recenti, vedere [riutilizzo delle configurazioni di flusso](reusing-stream-configurations.md).
+Le versioni vengono specificate usando i membri del tipo [**di enumerazione WMT \_ VERSION.**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) Se si imposta la versione del profilo di sistema su WMT \_ VER 9 0, la chiamata avrà esito positivo, ma il numero di profili \_ \_ di sistema sarà zero. Ciò è dovuto al fatto che nessun profilo di sistema predefinito usa Windows codec media audio e video serie 9. Per altre informazioni sull'aggiornamento dei profili per l'uso dei codec più recenti, vedere [Riutilizzo delle configurazioni dei flussi](reusing-stream-configurations.md).
 
-Se si carica un profilo di sistema in base al relativo identificatore GUID, la versione del profilo di sistema utilizzata da Profile Manager non è rilevante. Per ulteriori informazioni sul caricamento dei profili di sistema, vedere [per caricare un profilo di sistema](to-load-a-system-profile.md).
+Se si carica un profilo di sistema in base al relativo identificatore GUID, non è importante la versione del profilo di sistema in uso da parte di Gestione profili. Per altre informazioni sul caricamento dei profili di sistema, vedere [Per caricare un profilo di sistema](to-load-a-system-profile.md).
 
-Nell'esempio di codice seguente viene illustrato come impostare e recuperare la versione del profilo di sistema. Questo esempio USA printf per l'output della console e richiede l'inclusione di stdio. h. Per ulteriori informazioni sull'utilizzo di questo codice, vedere [utilizzo degli esempi di codice](using-the-code-examples.md).
+Il codice di esempio seguente illustra come impostare e recuperare la versione del profilo di sistema. Questo esempio usa printf per l'output della console e richiede l'uso di stdio.h. Per altre informazioni sull'uso di questo codice, vedere [Uso degli esempi di codice](using-the-code-examples.md).
 
 
 ```C++
@@ -137,9 +137,9 @@ int main(void)
 [**Uso dei profili di sistema**](using-system-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

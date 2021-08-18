@@ -1,5 +1,5 @@
 ---
-description: Le funzioni helper esperte fornite Network Monitor e funzioni helper comuni usano le strutture descritte nella tabella seguente.
+description: Le funzioni helper esperte Network Monitor e funzioni helper comuni usano le strutture descritte nella tabella seguente.
 ms.assetid: 3c49dd0a-836f-43f1-b383-357e8ba6545f
 title: Strutture esperte
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118939018"
 ---
 # <a name="expert-structures"></a>Strutture esperte
 
-Le funzioni helper esperte fornite Network Monitor e funzioni helper comuni usano le strutture descritte nella tabella seguente.
+Le funzioni helper esperte Network Monitor e funzioni helper comuni usano le strutture descritte nella tabella seguente.
 
 
 
@@ -28,7 +28,7 @@ Le funzioni helper esperte fornite Network Monitor e funzioni helper comuni usan
 | [**FILTEROBJECT**](filterobject.md)                   | Definisce le caratteristiche del filtro di visualizzazione per un esperto.                                              |
 | [**NMEVENTDATA**](nmeventdata.md)                     | Fornisce informazioni su una riga visualizzata nel visualizzatore esperti.                                      |
 | [**NMCOLUMNINFO**](nmcolumninfo.md)                   | Fornisce informazioni che definiscono una colonna nel Visualizzatore eventi.                                        |
-| [**NMCOLUMNVARIANT**](nmcolumnvariant.md)             | Fornisce un contenitore per tutti i dati possibili inseriti in una colonna in una riga del Visualizzatore eventi.     |
+| [**NMCOLUMNVARIANT**](nmcolumnvariant.md)             | Fornisce un contenitore per tutti i dati possibili inseriti in una colonna in una riga nel Visualizzatore eventi.     |
 | [**NMCOLUMNTYPE**](nmcolumntype.md)                   | Punto di ingresso nella variante che indica quale elemento dell'unione usare e come formattarlo. |
 
 

@@ -13,7 +13,7 @@ ms.locfileid: "118970970"
 ---
 # <a name="aliasinfo"></a>aliasInfo
 
-Specifica un alias di ordinamento o un elenco di alias di ordinamento specificando un elemento che contiene una proprietà di ordinamento o un elenco di proprietà di ordinamento. Deve essere presente un solo [elemento aliasInfo]() per ogni [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Per le proprietà che impostano canGroupBy=true, a meno che non venga specificata una proprietà di ordinamento secondaria ( =prop:example), è possibile che si verifichi un comportamento imprevisto quando si modifica l'ordinamento in una vista raggruppata in base alla aliasInfo/@additionalSortByAliases proprietà . In particolare, l'ordine dei gruppi cambierà, ma non l'ordine degli elementi all'interno dei gruppi.
+Specifica un alias di ordinamento o un elenco di alias di ordinamento specificando un elemento che contiene una proprietà di ordinamento o un elenco di proprietà di ordinamento. Deve essere presente un solo [elemento aliasInfo]() per ogni [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Per le proprietà che impostano canGroupBy=true, a meno che non venga specificata una proprietà di ordinamento secondaria ( =prop:example), è possibile che si verifichi un comportamento imprevisto quando si modifica l'ordinamento in una vista raggruppata in base alla aliasInfo/@additionalSortByAliases proprietà . In particolare, l'ordine dei gruppi cambierà, mentre l'ordine degli elementi all'interno dei gruppi non cambierà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Specifica un alias di ordinamento o un elenco di alias di ordinamento specifican
 
 | Elemento padre                                                   | Elementi figlio |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | Nessuno           |
+| [proprietàDescrizione](./propdesc-schema-propertydescription.md) | Nessuno           |
 
 
 
@@ -48,8 +48,8 @@ Specifica un alias di ordinamento o un elenco di alias di ordinamento specifican
 
 | Attributo               | Descrizione                                                                                                                                                            |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sortByAlias             | Pubblica. facoltativo. Nome canonico della proprietà in base alla quale eseguire l'ordinamento. Questa stringa è di tipo canonical-type.                                            |
-| additionalSortByAliases | Pubblica. facoltativo. Elenco delimitato da punto e virgola di proprietà aggiuntive da utilizzare durante l'ordinamento. Le proprietà vengono applicate all'ordinamento nella sequenza specificata. |
+| sortByAlias             | Pubblica. facoltativo. Nome canonico della proprietà da utilizzare per l'ordinamento. Questa stringa è di tipo canonical-type.                                            |
+| additionalSortByAliases | Pubblica. facoltativo. Elenco delimitato da punto e virgola delle proprietà aggiuntive da utilizzare durante l'ordinamento. Le proprietà vengono applicate all'ordinamento nella sequenza specificata. |
 
 
 

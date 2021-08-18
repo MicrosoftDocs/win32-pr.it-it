@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_RECSIZE'
-title: Struttura JET_RECSIZE (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_RECSIZE struttura'
+title: JET_RECSIZE struttura (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_RECSIZE structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e741d91187a138d7b8d9a57d0c4e76f54979d99e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58ac34dd551b38dc6179bbe1448d0b96e09073fff4ce716ac6efaf74037c0f3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107457"
 ---
-# <a name="jet_recsize-structure"></a>Struttura JET_RECSIZE
+# <a name="jet_recsize-structure"></a>JET_RECSIZE struttura
 
-Utilizzato da [JetGetRecordSize (JET_SESID, JET_TABLEID, JET_RECSIZE, GetRecordSizeGrbit)](./vistaapi.jetgetrecordsize-method.md) per restituire informazioni sui requisiti di utilizzo di un record nello spazio dati utente, il numero di colonne set, il numero di valori e lo spazio overhead della struttura del record esent.
+Usato da [JetGetRecordSize(JET_SESID, JET_TABLEID, JET_RECSIZE, GetRecordSizeGrbit)](./vistaapi.jetgetrecordsize-method.md) per restituire informazioni sui requisiti di utilizzo di un record nello spazio dati utente, sul numero di colonne del set, sul numero di valori e sullo spazio di sovraccarico della struttura dei record ESENT.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,6 +62,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

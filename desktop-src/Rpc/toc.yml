@@ -1,43 +1,43 @@
 - name: RPC (Remote Procedure Call)
   href: rpc-start-page.md
   items:
-    - name: Procedure di programmazione RPC migliori
+    - name: Procedure consigliate per la programmazione RPC
       href: best-rpc-programming-practices.md
       items:
         - name: Esecuzione di chiamate di funzione RPC
           href: making-rpc-function-calls.md
           items:
-            - name: Utilizzo di handle di associazione e esecuzione di chiamate RPC
+            - name: Uso di handle di associazione ed esecuzione di chiamate RPC
               href: using-binding-handles-and-making-rpc-calls.md
-            - name: Scelta del tipo di handle di associazione da usare
+            - name: Scelta del tipo di handle di associazione da utilizzare
               href: choosing-the-type-of-binding-handles-to-use.md
             - name: Scelta di una sequenza di protocollo
               href: choosing-a-protocol-sequence.md
-            - name: Usare gli handle di contesto per mantenere lo stato nel server
+            - name: Usare handle di contesto per mantenere lo stato nel server
               href: use-context-handles-for-keeping-state-on-the-server.md
-            - name: Indica errori per eccezioni
+            - name: Indicare gli errori in base alle eccezioni
               href: indicate-errors-by-exceptions.md
         - name: Uso di handle di contesto
           href: using-context-handles.md
           items:
             - name: Gestione dello stato sul server tra le chiamate
               href: maintaining-state-on-the-server-between-calls.md
-            - name: Scaricamento di un server con handle di contesto in attesa
+            - name: Scaricamento di un server con handle di contesto in sospeso
               href: unloading-a-server-with-outstanding-context-handles.md
-            - name: Uso di più di un handle di contesto per chiamata
+            - name: Uso di più handle di contesto per chiamata
               href: using-more-than-one-context-handle-per-call.md
             - name: Semantica degli errori per gli handle di contesto
               href: failure-semantics-for-context-handles.md
         - name: RPC e rete
           href: rpc-and-the-network.md
           items:
-            - name: Sviluppo rispetto alla distribuzione in rete
+            - name: Sviluppo e distribuzione in rete
               href: development-versus-deployment-in-the-network.md
-            - name: Prevenzione degli blocchi lato client
+            - name: Prevenzione dei blocchi sul lato client
               href: preventing-client-side-hangs.md
             - name: Gestione dei set di connessioni di rete (associazioni)
               href: managing-network-connection-sets-associations-.md
-            - name: Pulizia della connessione inattiva
+            - name: Pulizia connessione inattiva
               href: idle-connection-cleanup.md
             - name: Gestione della perdita di connettività
               href: dealing-with-loss-of-connectivity.md
@@ -52,7 +52,7 @@
               href: changing-interfaces-in-a-backward-compatible-manner.md
             - name: Esempi di modifiche incompatibili
               href: examples-of-incompatible-changes.md
-        - name: Scrittura di un client o un server RPC sicuro
+        - name: Scrittura di un client o di un server RPC sicuro
           href: writing-a-secure-rpc-client-or-server.md
           items:
             - name: Provider di sicurezza da usare
@@ -67,23 +67,23 @@
               href: common-mistake-assuming-rpcserverregisterauthinfo-prevents-unauthorized-users-from-calling-your-server.md
             - name: Callback
               href: callbacks.md
-            - name: Sessioni null
+            - name: Sessioni Null
               href: null-sessions.md
-            - name: Usare il flag/robust
+            - name: Usare il flag /robust
               href: use-the-robust-flag.md
-            - name: Handle di contesto Strict e di tipo strict
+            - name: Handle di contesto Strict e Type Strict
               href: strict-and-type-strict-context-handles.md
             - name: Non considerare attendibile il peer
               href: do-not-trust-your-peer.md
-            - name: Non utilizzare la sicurezza degli endpoint
+            - name: Non usare la sicurezza degli endpoint
               href: do-not-use-endpoint-security.md
-            - name: Prestare attenzione ad altri endpoint RPC in esecuzione nello stesso processo
+            - name: Essere diffidato da altri endpoint RPC in esecuzione nello stesso processo
               href: be-wary-of-other-rpc-endpoints-running-in-the-same-process.md
-            - name: Verificare che il server sia quello che dichiara di essere
+            - name: Verificare che il server Who che dichiara di essere
               href: verify-the-server-is-who-it-claims-to-be.md
-            - name: Usare le sequenze di protocollo mainstream
+            - name: Usare sequenze di protocollo Mainstream
               href: use-mainstream-protocol-sequences.md
-            - name: Quanto è sicuro il server RPC?
+            - name: Qual è la sicurezza del server RPC?
               href: how-secure-is-my-rpc-server-now.md
             - name: Tecniche IDL per una migliore progettazione di interfacce e metodi
               href: idl-techniques-for-better-interface-and-method-design.md
@@ -94,16 +94,16 @@
               href: network-latency-and-throughput.md
             - name: Scalabilità
               href: scalability.md
-            - name: Suggerimenti sulle prestazioni RPC varie
+            - name: Prestazioni RPC varie Suggerimenti
               href: miscellaneous-rpc-performance-tips.md
-        - name: Recupero delle informazioni sull'errore RPC esteso
+        - name: Recupero di informazioni sugli errori RPC estesi
           href: obtaining-extended-rpc-error-information.md
           items:
             - name: Necessità di informazioni estese sugli errori
               href: the-need-for-extended-error-information.md
             - name: Informazioni sulla sicurezza e sugli errori estesi
               href: security-and-extended-error-information.md
-            - name: Abilitazione di informazioni estese sugli errori
+            - name: Abilitazione delle informazioni estese sugli errori
               href: enabling-extended-error-information.md
             - name: Informazioni sugli errori estesi
               href: understanding-extended-error-information.md
@@ -111,16 +111,16 @@
               href: reliability-of-extended-error-information.md
             - name: Indipendenza da altri componenti
               href: independence-from-other-components.md
-            - name: Informazioni estese sull'errore per l'utente
+            - name: Informazioni estese sugli errori per l'utente
               href: extended-error-information-for-the-user.md
-            - name: Informazioni estese sull'errore per il server o l'app
+            - name: Informazioni estese sugli errori per il server o l'app
               href: extended-error-information-for-the-server-or-application.md
               items:
                 - name: Generazione di informazioni sugli errori
                   href: generating-error-information.md
                 - name: Propagazione delle informazioni sugli errori
                   href: propagating-error-information.md
-                - name: Rendere disponibili all'utente informazioni sull'errore
+                - name: Rendere disponibili all'utente le informazioni sull'errore
                   href: making-error-information-available-to-the-user.md
             - name: Percorsi di rilevamento delle informazioni sugli errori estesi
               href: extended-error-information-detection-locations.md
@@ -155,7 +155,7 @@
                 - name: Sviluppo dell'interfaccia
                   href: developing-the-interface.md
                   items:
-                    - name: Generazione UUID dell'interfaccia
+                    - name: Generazione di UUID di interfaccia
                       href: generating-interface-uuids.md
                     - name: Uso di MIDL
                       href: using-midl.md
@@ -168,16 +168,16 @@
         - name: Connessione del client e del server
           href: connecting-the-client-and-the-server.md
           items:
-            - name: Terminologia di associazione RPC essenziale
+            - name: Terminologia essenziale dell'associazione RPC
               href: essential-rpc-binding-terminology.md
-            - name: Preparazione del server per una connessione
+            - name: Modalità di preparazione del server per una connessione
               href: how-the-server-prepares-for-a-connection.md
               items:
                 - name: Registrazione dell'interfaccia
                   href: registering-the-interface.md
                 - name: Rendere disponibile il server in rete
                   href: making-the-server-available-on-the-network.md
-                - name: Registrazione degli endpoint
+                - name: Registrazione di endpoint
                   href: registering-endpoints.md
                 - name: Ascolto delle chiamate client
                   href: listening-for-client-calls.md
@@ -201,9 +201,9 @@
               href: defining-the-interface.md
             - name: Generazione dell'UUID
               href: generating-the-uuid.md
-            - name: File IDL
+            - name: The IDL File
               href: the-idl-file.md
-            - name: Il file ACF
+            - name: The ACF File
               href: the-acf-file.md
             - name: Generazione dei file stub
               href: generating-the-stub-files.md
@@ -227,12 +227,12 @@
                   href: the-idl-interface-header.md
                 - name: Corpo dell'interfaccia IDL
                   href: the-idl-interface-body.md
-            - name: Il file di configurazione dell'applicazione (ACF)
+            - name: File di configurazione dell'applicazione (ACF)
               href: the-application-configuration-file-acf-.md
               items:
                 - name: Intestazione ACF
                   href: the-acf-header.md
-                - name: Corpo ACF
+                - name: Corpo di ACF
                   href: the-acf-body.md
             - name: Output del compilatore MIDL
               href: midl-compiler-output.md
@@ -244,9 +244,9 @@
               items:
                 - name: Tipi di base
                   href: base-types.md
-                - name: Tipi firmati e non firmati
+                - name: Tipi firmati e senza segno
                   href: signed-and-unsigned-types.md
-                - name: Tipi di Wide-Character
+                - name: Wide-Character tipi
                   href: wide-character-types.md
                 - name: Struct
                   href: structures.md
@@ -264,12 +264,12 @@
                   href: three-pointer-types.md
                 - name: Attributi di tipo
                   href: type-attributes.md
-            - name: Attributi direzionali (parametro)
+            - name: Attributi direzionali (parametri)
               href: directional-parameter-attributes.md
             - name: Rappresentazione dei dati
               href: data-representation.md
               items:
-                - name: Attributi transmit_as e represent_as
+                - name: Attributi transmit_as e represent_as seguenti
                   href: the-transmit-as-and-represent-as-attributes.md
                   items:
                     - name: Attributo transmit_as
@@ -292,7 +292,7 @@
                       href: the-named-type-free-local-function.md
                     - name: Funzione named_type_free_inst
                       href: the-named-type-free-inst-function.md
-                - name: Attributi wire_marshal e user_marshal
+                - name: Attributi wire_marshal e user_marshal seguenti
                   href: the-wire-marshal-and-user-marshal-attributes.md
                   items:
                     - name: Attributo wire_marshal
@@ -320,26 +320,26 @@
                   items:
                     - name: Matrici fisse
                       href: fixed-arrays.md
-                    - name: Matrici variabili
+                    - name: Variabili di matrici
                       href: varying-arrays.md
                     - name: Matrici conformi
                       href: conformant-arrays.md
                 - name: Attributi di matrice
                   href: array-attributes.md
                   items:
-                    - name: Attributi di matrice MIDL utilizzati in RPC
+                    - name: Attributi di matrice MIDL usati in RPC
                       href: midl-array-attributes-used-in-rpc.md
-                    - name: 'Il [size_is'
+                    - name: '[size_is'
                       href: the-size-is-attribute.md
-                    - name: 'Il [length_is'
+                    - name: '[length_is'
                       href: the-length-is-attribute.md
-                    - name: 'Il [first_is'
+                    - name: '[first_is'
                       href: the-first-is-and-last-is-attributes.md
-                    - name: 'Il [max_is'
+                    - name: '[max_is'
                       href: the-max-is-attribute.md
                     - name: Combinazione di attributi di matrice
                       href: combining-array-attributes.md
-                    - name: '[Stringa'
+                    - name: '[string'
                       href: the-string-attribute-in-arrays.md
                 - name: Matrici multidimensionali
                   href: multidimensional-arrays.md
@@ -359,9 +359,9 @@
                   href: pointers-and-memory-allocation.md
                 - name: Tipi di puntatore predefiniti
                   href: default-pointer-types.md
-                - name: Ereditarietà del tipo di Pointer-Attribute
+                - name: Pointer-Attribute ereditarietà dei tipi
                   href: pointer-attribute-type-inheritance.md
-            - name: 'Utilizzo di matrici, stringhe e puntatori'
+            - name: 'Uso di matrici, stringhe e puntatori'
               href: using-arrays-strings-and-pointers.md
               items:
                 - name: Matrici di caratteri conteggiate
@@ -374,7 +374,7 @@
                 - name: Stringhe
                   href: strings.md
                   items:
-                    - name: '[in, out, stringa'
+                    - name: '[in, out, string'
                       href: '-in-out-string-prototype.md'
                     - name: '[in, stringa'
                       href: '-in-string-and-out-string-prototype.md'
@@ -383,20 +383,20 @@
         - name: Pipe
           href: pipes.md
           items:
-            - name: Terminologia pipe essenziale
+            - name: Terminologia essenziale delle pipe
               href: essential-pipe-terminology.md
             - name: Stato della pipe
               href: the-pipe-state.md
             - name: Definizione di pipe nei file IDL
               href: defining-pipes-in-idl-files.md
-            - name: Implementazione di Client-Side pipe
+            - name: Client-Side'implementazione della pipe
               href: client-side-pipe-implementation.md
               items:
                 - name: Implementazione di pipe di input nel client
                   href: implementing-input-pipes-on-the-client.md
                 - name: Implementazione di pipe di output nel client
                   href: implementing-output-pipes-on-the-client.md
-            - name: Implementazione di Server-Side pipe
+            - name: Server-Side'implementazione della pipe
               href: server-side-pipe-implementation.md
               items:
                 - name: Implementazione di pipe di input nel server
@@ -416,15 +416,15 @@
                 - name: Tipi di handle di associazione
                   href: types-of-binding-handles.md
                   items:
-                    - name: Handle di binding automatici
+                    - name: Handle di associazione automatici
                       href: automatic-binding-handles.md
-                    - name: Handle di binding impliciti
+                    - name: Handle di associazione impliciti
                       href: implicit-binding-handles.md
-                    - name: Handle di binding espliciti
+                    - name: Handle di associazione espliciti
                       href: explicit-binding-handles.md
-                    - name: Handle di binding primitivi e personalizzati
+                    - name: Handle di associazione primitivi e personalizzati
                       href: primitive-and-custom-binding-handles.md
-                - name: Binding lato client
+                - name: Associazione lato client
                   href: client-side-binding.md
                   items:
                     - name: Selezione di una sequenza di protocollo
@@ -433,58 +433,58 @@
                       href: finding-server-host-systems.md
                     - name: Ricerca di endpoint
                       href: finding-endpoints.md
-                - name: Binding lato server
+                - name: Associazione lato server
                   href: server-side-binding.md
                   items:
-                    - name: Registrazione di interfacce
+                    - name: Registrazione delle interfacce
                       href: registering-interfaces.md
-                    - name: Specifica di sequenze di protocollo
+                    - name: Specifica delle sequenze di protocollo
                       href: specifying-protocol-sequences.md
                     - name: Specifica di endpoint
                       href: specifying-endpoints.md
-                    - name: Interfacce server pubblicitarie
+                    - name: Interfacce del server pubblicitario
                       href: advertising-server-interfaces.md
-                    - name: Ascolto delle chiamate a procedure remote
+                    - name: Ascolto di chiamate di procedura remota
                       href: listening-for-remote-procedure-calls.md
-                - name: Handle con binding completo e parziale
+                - name: Handle completamente e parzialmente associati
                   href: fully-and-partially-bound-handles.md
-                - name: Interpretazione delle informazioni di binding
+                - name: Interpretazione delle informazioni di associazione
                   href: interpreting-binding-information.md
                 - name: Microsoft RPC Binding-Handle Extensions
                   href: microsoft-rpc-binding-handle-extensions.md
                 - name: Funzioni di handle di associazione
                   href: binding-handle-functions.md
-                - name: Il database RPC Name-Service
+                - name: Database di Name-Service RPC
                   href: the-rpc-name-service-database.md
                   items:
-                    - name: Linee guida per l'applicazione Name-Service
+                    - name: Name-Service linee guida per le applicazioni
                       href: name-service-application-guidelines.md
-                    - name: Panoramica dell'immissione del nome del servizio
+                    - name: Panoramica della voce name service
                       href: an-overview-of-the-name-service-entry.md
                     - name: Criteri per le voci del servizio dei nomi
                       href: criteria-for-name-service-entries.md
-                    - name: Pulizia voce servizio nome
+                    - name: Pulizia delle voci del servizio dei nomi
                       href: name-service-entry-cleanup.md
                     - name: Cosa accade durante una query
                       href: what-happens-during-a-query.md
                     - name: Uso di Microsoft Locator
                       href: using-microsoft-locator.md
-                    - name: Uso del servizio directory delle celle (CDS)
+                    - name: Uso di Cell Directory Service (CDS)
                       href: using-the-cell-directory-service-cds-.md
-                    - name: Sintassi del nome
+                    - name: Sintassi dei nomi
                       href: name-syntax.md
             - name: Handle di contesto
               href: context-handles.md
               items:
-                - name: Sviluppo di interfacce con handle di contesto
+                - name: Sviluppo di interfacce tramite handle di contesto
                   href: interface-development-using-context-handles.md
-                - name: Sviluppo di server con handle di contesto
+                - name: Sviluppo di server tramite handle di contesto
                   href: server-development-using-context-handles.md
-                - name: Sviluppo di client con handle di contesto
+                - name: Sviluppo client con handle di contesto
                   href: client-development-using-context-handles.md
                 - name: Routine di esecuzione del contesto del server
                   href: server-context-run-down-routine.md
-                - name: Ripristino del contesto client
+                - name: Reimpostazione del contesto client
                   href: client-context-reset.md
                 - name: Client multithreading e handle di contesto
                   href: multithreaded-clients-and-context-handles.md
@@ -493,7 +493,7 @@
           items:
             - name: Introduzione alla gestione della memoria RPC
               href: introduction-to-rpc-memory-management.md
-            - name: Modalità di allocazione e deallocazione della memoria
+            - name: Come viene allocata e deallocata la memoria
               href: how-memory-is-allocated-and-deallocated.md
               items:
                 - name: Funzione midl_user_allocate
@@ -502,42 +502,42 @@
                   href: the-midl-user-free-function.md
                 - name: Pacchetto di gestione della memoria RpcSs
                   href: rpcss-memory-management-package.md
-            - name: Modelli di Memory-Management
+            - name: Memory-Management modelli
               href: memory-management-models.md
               items:
-                - name: Allocazione e deallocazione di nodi per nodo
+                - name: Allocazione e deallocazione nodo per nodo
                   href: node-by-node-allocation-and-deallocation.md
-                - name: Buffer Stub-Allocated
+                - name: Stub-Allocated buffer
                   href: stub-allocated-buffers.md
-                - name: Gestione della memoria stub server
+                - name: Gestione della memoria dello stub del server
                   href: server-stub-memory-management.md
-                - name: Buffer Application-Allocated
+                - name: buffer Application-Allocated
                   href: application-allocated-buffer.md
-                - name: Archiviazione permanente sul server
+                - name: Persistent Archiviazione nel server
                   href: persistent-storage-on-the-server.md
-            - name: Chi gestisce la memoria?
+            - name: Who Gestisce la memoria?
               href: who-manages-memory-.md
               items:
-                - name: Top-Level e puntatori incorporati
+                - name: Top-Level e incorporati
                   href: top-level-and-embedded-pointers.md
                 - name: Attributi direzionali applicati al parametro
                   href: directional-attributes-applied-to-the-parameter.md
-                - name: 'Attributi di lunghezza, dimensioni e direzionali'
+                - name: 'Attributi di lunghezza, dimensione e direzionali'
                   href: length-size-and-directional-attributes.md
                 - name: Attributi del puntatore applicati al parametro
                   href: pointer-attributes-applied-to-the-parameter.md
-                - name: Combinando gli attributi direzionale e puntatore
+                - name: Combinazione di puntatore e attributi direzionali
                   href: combining-pointer-and-directional-attributes.md
                   items:
-                    - name: Puntatori di riferimento Out-Only incorporati
+                    - name: Puntatori Out-Only incorporati
                       href: embedded-out-only-reference-pointers.md
-                    - name: Out-Only parametri del puntatore univoco o completo non accettati
+                    - name: Out-Only parametri puntatore univoci o completi non accettati
                       href: out-only-unique-or-full-pointer-parameters-not-accepted.md
                 - name: Protezione del buffer MCCP
                   href: mccp-buffer-protection.md
                 - name: Valori restituiti dalla funzione
                   href: function-return-values.md
-            - name: Memoria orfana
+            - name: Orfano della memoria
               href: memory-orphaning.md
             - name: Riepilogo delle regole di allocazione della memoria
               href: summary-of-memory-allocation-rules.md
@@ -546,14 +546,14 @@
           items:
             - name: Uso dei servizi di serializzazione
               href: using-serialization-services.md
-            - name: Serializzazione delle procedure
+            - name: Serializzazione di procedure
               href: procedure-serialization.md
-            - name: Serializzazione del tipo
+            - name: Serializzazione dei tipi
               href: type-serialization.md
             - name: Handle di serializzazione
               href: serialization-handles.md
               items:
-                - name: Handle impliciti e espliciti
+                - name: Handle impliciti ed espliciti
                   href: implicit-versus-explicit-handles.md
                 - name: Stili di serializzazione
                   href: serialization-styles.md
@@ -567,15 +567,15 @@
                       items:
                         - name: Esempi di codifica incrementale
                           href: examples-of-incremental-encoding.md
-                - name: Ottenere un'identità di codifica
+                - name: Recupero di un'identità di codifica
                   href: obtaining-an-encoding-identity.md
         - name: Sicurezza
           href: security.md
           items:
-            - name: Concetti di base sulla sicurezza RPC
+            - name: Informazioni di base sulla sicurezza RPC
               href: rpc-security-essentials.md
               items:
-                - name: Nomi principali
+                - name: Nomi delle entità
                   href: principal-names.md
                 - name: Livelli di autenticazione
                   href: authentication-levels.md
@@ -589,7 +589,7 @@
                   href: quality-of-service.md
                 - name: Funzioni di autorizzazione
                   href: authorization-functions.md
-                - name: Funzioni di acquisizione chiave
+                - name: Funzioni di acquisizione delle chiavi
                   href: key-acquisition-functions.md
                 - name: Rappresentazione client
                   href: client-impersonation.md
@@ -601,7 +601,7 @@
                   items:
                     - name: Panoramica dell'architettura SSPI
                       href: sspi-architectural-overview.md
-                    - name: Security Support Provider (SSP)
+                    - name: Provider di supporto per la sicurezza (SSP)
                       href: security-support-providers-ssps-.md
                     - name: Scrittura di un client SSPI autenticato
                       href: writing-an-authenticated-sspi-client.md
@@ -610,9 +610,9 @@
                 - name: Protezione del trasporto
                   href: transport-security.md
                   items:
-                    - name: Uso della sicurezza a livello di trasporto nel server
+                    - name: Utilizzo della sicurezza a livello di trasporto nel server
                       href: using-transport-level-security-on-the-server.md
-                    - name: Utilizzo di Transport-Level sicurezza sul client
+                    - name: Uso Transport-Level sicurezza nel client
                       href: using-transport-level-security-on-the-client.md
         - name: Installazione e configurazione di applicazioni RPC
           href: installing-and-configuring-rpc-applications.md
@@ -620,28 +620,28 @@
             - name: Configurazione del provider di servizi dei nomi
               href: configuring-the-name-service-provider.md
               items:
-                - name: Configurazione del servizio nome
+                - name: Configurazione del servizio dei nomi
                   href: configuring-the-name-service-for-windows-xp-windows-2000-or-windows-nt.md
-                - name: Configurazione del servizio nome per Windows 95
+                - name: Configurazione del servizio dei nomi per Windows 95
                   href: configuring-the-name-service-for-windows-95.md
                   items:
-                    - name: Modifica del registro di sistema di Windows 95
+                    - name: Modifica del Registro Windows 95
                       href: editing-the-windows-95-registry.md
-                - name: Configurazione del servizio nome per Windows 3. x o MS-DOS
+                - name: Configurazione del servizio dei nomi per Windows 3.x o MS-DOS
                   href: configuring-the-name-service-for-windows-3-x-or-ms-dos.md
                   items:
-                    - name: Configurazione del provider di servizi Microsoft Locator Name
+                    - name: Configurazione di Microsoft Locator Name Service Provider
                       href: configuring-the-microsoft-locator-name-service-provider.md
-                    - name: Configurazione del provider di Name-Service di CDS DCE
+                    - name: Configurazione del provider di servizi cds DCE Name-Service
                       href: configuring-the-dce-cds-name-service-provider.md
                 - name: Avvio e arresto di Microsoft Locator
                   href: starting-and-stopping-microsoft-locator.md
-            - name: Informazioni registro di sistema
+            - name: Informazioni del Registro di sistema
               href: registry-information.md
               items:
-                - name: Configurazione del registro di sistema per le allocazioni delle porte e l'associazione selettiva
+                - name: Configurazione del Registro di sistema per allocazioni di porte e associazione selettiva
                   href: configuring-the-windows-xp-2000-nt-registry-for-port-allocations-and-selective-binding.md
-            - name: Uso di RPC con proxy Winsock
+            - name: Uso di RPC con il proxy Winsock
               href: using-rpc-with-winsock-proxy.md
             - name: Installazione di SPX/IPX
               href: spx-ipx-installation.md
@@ -655,20 +655,20 @@
         - name: RPC asincrona
           href: asynchronous-rpc.md
           items:
-            - name: Stato di chiamata asincrono
+            - name: Stato di chiamata asincrona
               href: asynchronous-call-state.md
             - name: Dichiarazione di funzioni asincrone
               href: declaring-asynchronous-functions.md
             - name: RPC asincrona lato client
               href: client-side-asynchronous-rpc.md
               items:
-                - name: Creazione della chiamata asincrona
+                - name: Esecuzione della chiamata asincrona
                   href: making-the-asynchronous-call.md
                 - name: In attesa della risposta asincrona
                   href: waiting-for-the-asynchronous-reply.md
                 - name: Ricezione della risposta asincrona
                   href: receiving-the-asynchronous-reply.md
-            - name: RPC asincrona sul lato server
+            - name: RPC asincrona lato server
               href: server-side-asynchronous-rpc.md
               items:
                 - name: Gestione delle chiamate asincrone
@@ -679,13 +679,13 @@
                   href: sending-the-asynchronous-reply.md
                 - name: I/O asincrono e RPC asincrono
                   href: asynchronous-i-o-and-asynchronous-rpc.md
-            - name: Ordinamento causale di chiamate asincrone
+            - name: Ordinamento causale delle chiamate asincrone
               href: causal-ordering-of-asynchronous-calls.md
             - name: Gestione degli errori
               href: error-handling.md
-            - name: RPC asincrona sul protocollo Named-Pipe
+            - name: RPC asincrono sul protocollo Named-Pipe
               href: asynchronous-rpc-over-the-named-pipe-protocol.md
-            - name: Uso di RPC asincrone con pipe DCE
+            - name: Uso di RPC asincrono con pipe DCE
               href: using-asynchronous-rpc-with-dce-pipes.md
               items:
                 - name: Pipe asincrone
@@ -696,37 +696,37 @@
                   href: client-side-asynchronous-pipe-handling.md
                 - name: Gestione della pipe asincrona sul lato server
                   href: server-side-asynchronous-pipe-handling.md
-                - name: Stato di pipe asincrono
+                - name: Stato della pipe asincrona
                   href: asynchronous-pipe-state.md
             - name: DCOM asincrono
               href: asynchronous-dcom.md
         - name: Accodamento messaggi RPC
           href: rpc-message-queuing.md
           items:
-            - name: Panoramica dell'architettura dei servizi di Accodamento messaggi
+            - name: Panoramica dell'architettura di Servizi accodamento messaggi
               href: overview-of-message-queuing-services-architecture.md
-            - name: Proprietà Message e Message Queue
+            - name: Proprietà di messaggi e code di messaggi
               href: message-and-message-queue-properties.md
-            - name: Utilizzo di MSMQ come trasporto RPC
+            - name: Uso di MSMQ come trasporto RPC
               href: using-msmq-as-an-rpc-transport.md
-            - name: Requisiti di sistema per le applicazioni di Accodamento RPC-Message
+            - name: Requisiti di sistema per RPC-Message di accodamento
               href: system-requirements-for-rpc-message-queuing-applications.md
-            - name: Sviluppo di applicazioni di Accodamento RPC-Message
+            - name: Sviluppo RPC-Message applicazioni di accodamento
               href: developing-rpc-message-queuing-applications.md
             - name: Servizi di sicurezza MSMQ
               href: msmq-security-services.md
         - name: Chiamate di procedure remote con RPC tramite HTTP
           href: remote-procedure-calls-using-rpc-over-http.md
           items:
-            - name: Utilizzo di HTTP come trasporto RPC
+            - name: Uso di HTTP come trasporto RPC
               href: using-http-as-an-rpc-transport.md
             - name: Sicurezza RPC su HTTP
               href: rpc-over-http-security.md
-            - name: 'Requisiti di sistema RPC su HTTP, interoperabilità'
+            - name: 'Requisiti di sistema rpc su HTTP, interoperabilità'
               href: system-requirements-and-interoperability-for-rpc-over-http.md
             - name: Configurazione dei computer per RPC su HTTP
               href: configuring-computers-for-rpc-over-http.md
-            - name: Raccomandazioni sulla distribuzione RPC su HTTP
+            - name: Distribuzione RPC su HTTP Consigli
               href: rpc-over-http-deployment-recommendations.md
         - name: Bilanciamento del carico RPC
           href: rpc-load-balancing.md
@@ -856,7 +856,7 @@
                   href: rpc-ns-handle.md
                 - name: RPC_STATUS
                   href: rpc-status.md
-                - name: Associazione stringa
+                - name: Associazione di stringhe
                   href: string-binding.md
                 - name: UUID stringa
                   href: string-uuid.md
@@ -865,11 +865,11 @@
               items:
                 - name: Costanti a livello di autenticazione
                   href: authentication-level-constants.md
-                - name: Costanti Authentication-Service
+                - name: Authentication-Service costanti
                   href: authentication-service-constants.md
-                - name: Costanti Authorization-Service
+                - name: Authorization-Service costanti
                   href: authorization-service-constants.md
-                - name: Costanti di timeout di binding
+                - name: Costanti di timeout dell'associazione
                   href: binding-time-out-constants.md
                 - name: Costanti delle opzioni di associazione
                   href: binding-option-constants.md
@@ -933,7 +933,7 @@
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingcreatea
                 - name: RpcBindingFree
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree
-                - name: Errore in RpcBindingFromStringBinding
+                - name: RpcBindingFromStringBinding
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding
                 - name: RpcBindingInqAuthClient
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient
@@ -955,7 +955,7 @@
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetauthinfo
                 - name: RpcBindingSetAuthInfoEx
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetauthinfoexa
-                - name: RpcBindingSetObject
+                - name: Oggetto RpcBindingSetObject
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetobject
                 - name: RpcBindingSetOption
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetoption
@@ -1247,7 +1247,7 @@
                   href: /windows/desktop/api/Rpcndr/nf-rpcndr-rpcsssetthreadhandle
                 - name: RpcSsSwapClientAllocFree
                   href: /windows/desktop/api/Rpcndr/nf-rpcndr-rpcssswapclientallocfree
-                - name: Errore in RpcStringBindingCompose
+                - name: RpcStringBindingCompose
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcstringbindingcompose
                 - name: RpcStringBindingParse
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-rpcstringbindingparse
@@ -1275,7 +1275,7 @@
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-uuidisnil
                 - name: UuidToString
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-uuidtostring
-            - name: Callback RPC e funzioni di notifica
+            - name: Funzioni di callback e notifica RPC
               href: rpc-callback-and-notification-functions.md
               items:
                 - name: RPC_AUTH_KEY_RETRIEVAL_FN
@@ -1311,27 +1311,27 @@
               href: rpctryexcept.md
             - name: RpcTryFinally
               href: rpctryfinally.md
-    - name: Motore di recapito RPC
+    - name: Motore NDR RPC
       href: rpc-ndr-engine.md
       items:
-        - name: Sintassi transfer e NDR64
+        - name: Sintassi di trasferimento e NDR64
           href: transfer-syntax-and-ndr64.md
-        - name: Stringhe di formato di recapito RPC
+        - name: Stringhe di formato NDR RPC
           href: rpc-ndr-format-strings.md
           items:
             - name: Stringhe di formato
               href: format-strings.md
-            - name: Stringhe di formato delle procedure
+            - name: Stringhe di formato della procedura
               href: procedure-format-strings.md
-            - name: Descrittore di intestazioni di routine
+            - name: Descrittore dell'intestazione della procedura
               href: procedure-header-descriptor.md
             - name: Selettori
               href: handles.md
             - name: Intestazione
               href: the-header.md
-            - name: Descrittori di parametro
+            - name: Descrittori di parametri
               href: parameter-descriptors.md
-            - name: Stringhe di formato del tipo
+            - name: Stringhe di formato dei tipi
               href: type-format-strings.md
               items:
                 - name: Tipi semplici
@@ -1352,9 +1352,9 @@
                   href: unions-tfs.md
                 - name: Transmit_as e Represent_as
                   href: transmit-as-and-represent-as-tfs.md
-                - name: Marshalling utente
+                - name: Marshalling dell'utente
                   href: user-marshal-tfs.md
-        - name: Riferimento all'interfaccia RPC NDR
+        - name: Informazioni di riferimento per l'interfaccia NDR RPC
           href: rpc-ndr-interface-reference.md
           items:
             - name: CStdAsyncStubBuffer_AddRef

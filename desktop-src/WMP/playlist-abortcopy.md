@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. abortCopy
-description: Il metodo abortCopy Annulla un'operazione di copia.
+title: PLAYLIST.abortCopy
+description: Il metodo abortCopy annulla un'operazione di copia.
 ms.assetid: 1d13b160-a43b-419c-bd97-e0f4eb0fa429
 keywords:
-- PLAYLIST. abortCopy Windows Media Player
+- Playlist.abortCopy Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 48fcc4e9dfe2960a45d4de1fac80d534e8d551a6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d6ef43afa2630c1f02c30ea3db05b09852d7f720ffd63e99a63984d0ca45800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995791"
 ---
-# <a name="playlistabortcopy"></a>PLAYLIST. abortCopy
+# <a name="playlistabortcopy"></a>PLAYLIST.abortCopy
 
-Il metodo **abortCopy** Annulla un'operazione di copia.
+Il **metodo abortCopy** annulla un'operazione di copia.
 
 ``` syntax
         elementID.abortCopy()
@@ -42,7 +42,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -50,13 +50,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. Copy**](playlist-copy.md)
+[**PLAYLIST.copy**](playlist-copy.md)
 </dt> <dt>
 
-[**PLAYLIST. copia**](playlist-copying.md)
+[**PLAYLIST.copying**](playlist-copying.md)
 </dt> </dl>
 
  

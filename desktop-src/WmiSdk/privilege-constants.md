@@ -1,8 +1,8 @@
 ---
-description: Il parametro strPrivilege del metodo SWbemPrivilegeSet. AddAsString e il parametro iPrivilege per SWbemPrivilegeSet. Add richiedono stringhe di privilegio da WbemPrivilegeEnum.
+description: Il parametro strPrivilege del metodo SWbemPrivilegeSet.AddAsString e il parametro iPrivilege per SWbemPrivilegeSet.Add richiedono stringhe di privilegi da WbemPrivilegeEnum.
 ms.assetid: f9400597-81bb-44a8-80dc-aba0160aea26
 ms.tgt_platform: multiple
-title: Costanti Privilege (wbemdisp. h)
+title: Costanti dei privilegi (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,18 +40,18 @@ api_type:
 - HeaderDef
 api_location:
 - Wbemdisp.h
-ms.openlocfilehash: 73fb9167af63f40f3a6e1c00470d871f749d228a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38d104c99885d4328ce8b12413e91607655ab1e260a61b511e3ea4a600b80b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131023"
 ---
-# <a name="privilege-constants"></a>Costanti Privilege
+# <a name="privilege-constants"></a>Costanti dei privilegi
 
-Il parametro *strPrivilege* del metodo [**SWbemPrivilegeSet. AddAsString**](swbemprivilegeset-addasstring.md) e il parametro *iPrivilege* per [**SWbemPrivilegeSet. Add**](swbemprivilegeset-add.md) richiedono stringhe di privilegio da [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). Per ulteriori informazioni sull'utilizzo delle costanti Privilege, vedere [esecuzione di operazioni con privilegi](executing-privileged-operations.md).
+Il *parametro strPrivilege* del metodo [**SWbemPrivilegeSet.AddAsString**](swbemprivilegeset-addasstring.md) e il parametro *iPrivilege* per [**SWbemPrivilegeSet.Add**](swbemprivilegeset-add.md) richiedono stringhe di privilegi [da WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). Per altre informazioni su come usare le costanti dei privilegi, vedere [Esecuzione di operazioni con privilegi](executing-privileged-operations.md).
 
-Le costanti seguenti sono definite in [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). Nell'elenco seguente sono incluse le costanti equivalenti per C++ e le stringhe per lo scripting. Per creare il nome breve dello scripting, rimuovere "se" e "Privilege" dal nome della costante C++.
+Le costanti seguenti sono definite in [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). L'elenco seguente include le costanti equivalenti per C++ e le stringhe per lo scripting. Per formare il nome breve dello scripting, rimuovere "Se" e "Privilege" dal nome della costante C++.
 
 Nell'esempio di codice VBScript seguente viene illustrato come abilitare il privilegio RemoteShutdown in uno script.
 
@@ -62,7 +62,7 @@ Set Service = GetObject("winmgmts:{impersonationLevel=impersonate, (RemoteShutdo
 
 
 
-Molti metodi WMI richiedono l'abilitazione di una o più autorizzazioni. Se a un account non è stato concesso un privilegio, non è possibile abilitarlo per la chiamata al metodo.
+Molti metodi WMI richiedono che sia abilitata una o più autorizzazioni. Se a un account non è stato concesso un privilegio, non può essere abilitato per la chiamata al metodo .
 
 <dl> <dt>
 
@@ -74,9 +74,9 @@ Molti metodi WMI richiedono l'abilitazione di una o più autorizzazioni. Se a un
 
 
 
-Costante C++: **se \_ creare \_ il \_ nome del token** stringa: **SeCreateTokenPrivilege**
+Costante C++: **edizione Standard \_ CREATE TOKEN \_ \_ NAME:** **SeCreateTokenPrivilege**
 
-Nome breve scripting: **creazione Okta**
+Nome breve di scripting: **CreateToken**
 
 Obbligatorio per creare un oggetto token primario.
 
@@ -91,9 +91,9 @@ Obbligatorio per creare un oggetto token primario.
 
 
 
-Costante C++: **SeAssignPrimaryTokenPrivilege** stringa: **SeAssignPrimaryTokenPrivilege**
+Costante C++: **Stringa SeAssignPrimaryTokenPrivilege:** **SeAssignPrimaryTokenPrivilege**
 
-Nome breve scripting: **AssignPrimaryToken**
+Nome breve di scripting: **AssignPrimaryToken**
 
 Obbligatorio per sostituire un token a livello di processo.
 
@@ -108,9 +108,9 @@ Obbligatorio per sostituire un token a livello di processo.
 
 
 
-Costante C++: **se si \_ blocca il \_ \_ nome della memoria** stringa: **SeLockMemoryPrivilege**
+Costante C++: **edizione Standard \_ LOCK MEMORY \_ \_ NAME** string: **SeLockMemoryPrivilege**
 
-Nome breve scripting: **LockMemory**
+Nome breve dello scripting: **LockMemory**
 
 Obbligatorio per bloccare le pagine in memoria.
 
@@ -125,9 +125,9 @@ Obbligatorio per bloccare le pagine in memoria.
 
 
 
-Costante C++: **se \_ aumenta \_ il \_ nome della quota** stringa: **SeIncreaseQuotaPrivilege**
+Costante C++: **edizione Standard \_ INCREASE QUOTA \_ \_ NAME** stringa: **SeIncreaseQuotaPrivilege**
 
-Nome breve scripting: **IncreaseQuotaPrivilege**
+Nome breve dello scripting: **IncreaseQuotaPrivilege**
 
 Obbligatorio per modificare le quote di memoria per un processo.
 
@@ -142,9 +142,9 @@ Obbligatorio per modificare le quote di memoria per un processo.
 
 
 
-Costante C++: **se \_ macine \_ \_ nome account** stringa: **SeMachineAccountPrivilege**
+Costante C++: **edizione Standard \_ MACINE \_ ACCOUNT \_ NAME** string: **SeMachineAccountPrivilege**
 
-Nome breve scripting: **MachineAccount**
+Nome breve dello scripting: **MachineAccount**
 
 Obbligatorio per aggiungere workstation a un dominio.
 
@@ -159,11 +159,11 @@ Obbligatorio per aggiungere workstation a un dominio.
 
 
 
-Costante C++: **se \_ TCB \_ nome** stringa: **SeTcbPrivilege**
+Costante C++: **edizione Standard \_ stringa TCB \_ NAME:** **SeTcbPrivilege**
 
-Nome breve scripting: **TCB**
+Nome breve dello scripting: **Tcb**
 
-Obbligatorio per agire come parte del sistema operativo. Il titolare fa parte della base dei computer attendibili.
+Necessario per fungere da parte del sistema operativo. Il titolare fa parte della base di computer attendibili.
 
 
 </dt> </dl> </dd> <dt>
@@ -176,11 +176,11 @@ Obbligatorio per agire come parte del sistema operativo. Il titolare fa parte de
 
 
 
-Costante C++: **se \_ \_ nome sicurezza** stringa: **SeSecurityPrivilege**
+Costante C++: **edizione Standard \_ SECURITY \_ NAME** stringa: **SeSecurityPrivilege**
 
-Nome breve scripting: **sicurezza**
+Nome breve dello scripting: **Sicurezza**
 
-Necessaria per gestire il controllo e il registro di protezione NT.
+Obbligatorio per gestire il controllo e il registro di sicurezza NT.
 
 
 </dt> </dl> </dd> <dt>
@@ -193,11 +193,11 @@ Necessaria per gestire il controllo e il registro di protezione NT.
 
 
 
-Costante C++: **se \_ accetta \_ il \_ nome della proprietà** stringa: **SeTakeOwnershipPrivilege**
+Costante C++: **edizione Standard \_ STRINGA NOME TAKE \_ OWNERSHIP: \_** **SeTakeOwnershipPrivilege**
 
-Nome breve scripting: **TakeOwnership**
+Nome breve dello scripting: **TakeOwnership**
 
-Obbligatorio per assumere la proprietà di file o altri oggetti senza avere una [*voce di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) nell'elenco di controllo di *accesso discrezionale* (DACL).
+Obbligatorio per assumere la proprietà di [](/windows/desktop/SecGloss/a-gly) file o altri oggetti senza avere una voce di controllo di accesso (ACE) nell'elenco di controllo di accesso discrezionale (DACL). 
 
 
 </dt> </dl> </dd> <dt>
@@ -210,11 +210,11 @@ Obbligatorio per assumere la proprietà di file o altri oggetti senza avere una 
 
 
 
-Costante C++: se si carica la stringa del **\_ \_ driver** : **SeLoadDriverPrivilege**
+Costante C++: **edizione Standard \_ LOAD \_ DRIVER:** **SeLoadDriverPrivilege**
 
-Nome breve scripting: **LoadDriver**
+Nome breve dello scripting: **LoadDriver**
 
-Necessario per caricare o scaricare un driver di dispositivo.
+Obbligatorio per caricare o scaricare un driver di dispositivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -227,9 +227,9 @@ Necessario per caricare o scaricare un driver di dispositivo.
 
 
 
-Costante C++: **se \_ \_ il \_ nome del profilo di sistema** è stringa: **SeSystemProfilePrivilege**
+Costante C++: **edizione Standard \_ SYSTEM PROFILE \_ \_ NAME** string: **SeSystemProfilePrivilege**
 
-Nome breve scripting: **systemprofile**
+Nome breve dello scripting: **SystemProfile**
 
 Obbligatorio per raccogliere informazioni sul profilo sulle prestazioni del sistema.
 
@@ -244,9 +244,9 @@ Obbligatorio per raccogliere informazioni sul profilo sulle prestazioni del sist
 
 
 
-Costante C++: **se \_** è la \_ stringa del nome SYSTEMTIME: **SeSystemTimePrivilege**
+Costante C++: **edizione Standard \_ SYSTEMTIME** \_ NAME string: **SeSystemtimePrivilege**
 
-Nome breve scripting: **SYSTEMTIME**
+Nome breve dello scripting: **Systemtime**
 
 Obbligatorio per modificare l'ora di sistema.
 
@@ -261,9 +261,9 @@ Obbligatorio per modificare l'ora di sistema.
 
 
 
-Costante C++: **se \_ il \_ \_ \_ nome del singolo processo** è stringa: **SeProfileSingleProcessPrivilege**
+Costante C++: **edizione Standard STRINGA NOME PROCESSO \_ \_ SINGOLO \_ \_ PROF:** **SeProfileSingleProcessPrivilege**
 
-Nome breve scripting: **ProfileSingleProcess**
+Nome breve dello scripting: **ProfileSingleProcess**
 
 Obbligatorio per raccogliere informazioni sul profilo per un singolo processo.
 
@@ -278,9 +278,9 @@ Obbligatorio per raccogliere informazioni sul profilo per un singolo processo.
 
 
 
-Costante C++: **se \_ Inc \_ base \_ \_ nome priorità** stringa: **SeIncreaseBasePriorityPrivilege**
+Costante C++: **edizione Standard \_ STRINGA NOME PRIORITÀ \_ BASE \_ \_ INC:** **SeIncreaseBasePriorityPrivilege**
 
-Nome breve scripting: **IncreaseBasePriority**
+Nome breve dello scripting: **IncreaseBasePriority**
 
 Obbligatorio per aumentare la priorità di pianificazione.
 
@@ -295,11 +295,11 @@ Obbligatorio per aumentare la priorità di pianificazione.
 
 
 
-Costante C++: **se \_ creare \_ il \_ nome del file di paging** stringa: **SeCreatePagefilePrivilege**
+Costante C++: **edizione Standard \_ CREATE \_ PAGEFILE \_ NAME** stringa: **SeCreatePagefilePrivilege**
 
-Nome breve scripting: **CreatePagefile**
+Nome breve di scripting: **CreatePagefile**
 
-Necessario per creare un pagefile.
+Obbligatorio per creare un file di paging.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,9 +312,9 @@ Necessario per creare un pagefile.
 
 
 
-Costante C++: **se crea una stringa di \_ \_ \_ nome permanente** : **SeCreatePermanentPrivilege**
+Costante C++: **edizione Standard \_ CREATE PERMANENT \_ \_ NAME** stringa: **SeCreatePermanentPrivilege**
 
-Nome breve scripting: **CreatePermanent**
+Nome breve dello scripting: **CreatePermanent**
 
 Obbligatorio per creare oggetti condivisi permanenti.
 
@@ -329,9 +329,9 @@ Obbligatorio per creare oggetti condivisi permanenti.
 
 
 
-Costante C++: **se \_ \_ nome backup** stringa: **SeBackupPrivilege**
+Costante C++: **edizione Standard \_ BACKUP \_ NAME** stringa: **SeBackupPrivilege**
 
-Nome breve scripting: **backup**
+Nome breve di scripting: **Backup**
 
 Obbligatorio per eseguire il backup di file e directory, indipendentemente dall'ACL specificato per il file.
 
@@ -346,11 +346,11 @@ Obbligatorio per eseguire il backup di file e directory, indipendentemente dall'
 
 
 
-Costante C++: **se \_ ripristinare il \_ nome** stringa: **SeRestorePrivilege**
+Costante C++: **edizione Standard \_ RESTORE \_ NAME** stringa: **SeRestorePrivilege**
 
-Nome breve scripting: **Restore**
+Nome breve dello scripting: **Ripristino**
 
-Obbligatorio per ripristinare i file e le directory, indipendentemente dall'ACL specificato per il file.
+Obbligatorio per ripristinare file e directory, indipendentemente dall'ACL specificato per il file.
 
 
 </dt> </dl> </dd> <dt>
@@ -363,9 +363,9 @@ Obbligatorio per ripristinare i file e le directory, indipendentemente dall'ACL 
 
 
 
-Costante C++: **se si \_ Arresta il \_ nome** stringa: **SeShutdownPrivilege**
+Costante C++: **edizione Standard \_ SHUTDOWN \_ NAME** stringa: **SeShutdownPrivilege**
 
-Nome breve scripting: **Shutdown**
+Nome breve script: **Shutdown**
 
 Necessario per arrestare il sistema locale.
 
@@ -380,11 +380,11 @@ Necessario per arrestare il sistema locale.
 
 
 
-Costante C++: **se \_ il \_ nome di debug** stringa: **SeDebugPrivilege**
+Costante C++: **edizione Standard \_ DEBUG \_ NAME** string: **SeDebugPrivilege**
 
-Nome breve scripting: **debug**
+Nome breve script: **Debug**
 
-Necessario per eseguire il debug e la modifica della memoria di un processo di proprietà di un altro account.
+Necessario per eseguire il debug e modificare la memoria di un processo di proprietà di un altro account.
 
 
 </dt> </dl> </dd> <dt>
@@ -397,11 +397,11 @@ Necessario per eseguire il debug e la modifica della memoria di un processo di p
 
 
 
-Costante C++: **se \_ controllo \_ nome** stringa: **SeAuditPrivilege**
+Costante C++: **edizione Standard \_ AUDIT \_ NAME** string: **SeAuditPrivilege**
 
-Nome breve scripting: **Audit**
+Nome breve script: **Audit**
 
-Obbligatorio per generare voci di controllo nel registro di sicurezza di NT. Solo i server protetti devono disporre di questo privilegio.
+Necessario per generare voci di controllo nel registro di sicurezza NT. Solo i server protetti devono avere questo privilegio.
 
 
 </dt> </dl> </dd> <dt>
@@ -414,11 +414,11 @@ Obbligatorio per generare voci di controllo nel registro di sicurezza di NT. Sol
 
 
 
-Costante C++: **se \_ il \_ \_ nome dell'ambiente di sistema** è stringa: **SeSystemEnvironmentPrivilege**
+Costante C++: **edizione Standard \_ SYSTEM ENVIRONMENT \_ \_ NAME** string: **SeSystemEnvironmentPrivilege**
 
-Nome breve scripting: **SystemEnvironment**
+Nome breve dello script: **SystemEnvironment**
 
-Obbligatorio per modificare la RAM non volatile dei sistemi che usano questo tipo di memoria per archiviare i dati di configurazione.
+Necessario per modificare la RAM non volatile dei sistemi che usano questo tipo di memoria per archiviare i dati di configurazione.
 
 
 </dt> </dl> </dd> <dt>
@@ -431,11 +431,11 @@ Obbligatorio per modificare la RAM non volatile dei sistemi che usano questo tip
 
 
 
-Costante C++: **se la \_ modifica \_ notifica il \_ nome** stringa: **SeChangeNotifyPrivilege**
+Costante C++: **edizione Standard \_ \_ CHANGE NOTIFY \_ NAME** string: **SeChangeNotifyPrivilege**
 
-Nome breve scripting: **ChangeNotify**
+Nome breve script: **ChangeNotify**
 
-Necessaria per ricevere notifiche delle modifiche a file o directory e ignorare i controlli di accesso attraversati. Questo privilegio è abilitato per impostazione predefinita per tutti gli utenti.
+Necessario per ricevere notifiche di modifiche a file o directory e ignorare i controlli di accesso di attraversamento. Questo privilegio è abilitato per impostazione predefinita per tutti gli utenti.
 
 
 </dt> </dl> </dd> <dt>
@@ -448,9 +448,9 @@ Necessaria per ricevere notifiche delle modifiche a file o directory e ignorare 
 
 
 
-Costante C++: se la stringa del **\_ \_ \_ nome di arresto remoto** è: **SeRemoteShutdownPrivilege**
+Costante C++: **edizione Standard \_ REMOTE SHUTDOWN \_ \_ NAME** string: **SeRemoteShutdownPrivilege**
 
-Nome breve scripting: **RemoteShutdown**
+Nome breve script: **RemoteShutdown**
 
 Necessario per arrestare un computer remoto.
 
@@ -465,11 +465,11 @@ Necessario per arrestare un computer remoto.
 
 
 
-Costante C++: se la stringa del **\_ \_ nome viene disancorata** : **SeUndockPrivilege**
+Costante C++: **edizione Standard \_ UNDOCK \_ NAME** string: **SeUndockPrivilege**
 
-Nome breve dello script: **Undock**
+Nome breve script: **Disanco**
 
-Necessario per rimuovere un computer portatile da una stazione di ancoraggio.
+Necessario per rimuovere un portatile da un docking station.
 
 
 </dt> </dl> </dd> <dt>
@@ -482,9 +482,9 @@ Necessario per rimuovere un computer portatile da una stazione di ancoraggio.
 
 
 
-Costante C++: **se \_ il \_ \_ nome dell'agente di sincronizzazione** è stringa: **SeSyncAgentPrivilege**
+Costante C++: **edizione Standard \_ SYNC AGENT \_ \_ NAME** string: **SeSyncAgentPrivilege**
 
-Nome breve scripting: **SyncAgent**
+Nome breve dello script: **SyncAgent**
 
 Obbligatorio per sincronizzare i dati del servizio directory.
 
@@ -499,11 +499,11 @@ Obbligatorio per sincronizzare i dati del servizio directory.
 
 
 
-Costante C++: **se \_ Abilita \_ il \_ nome della delega** stringa: **SeEnableDelegationPrivilege**
+Costante C++: **edizione Standard \_ ENABLE DELEGATION \_ \_ NAME** string: **SeEnableDelegationPrivilege**
 
-Nome breve scripting: **EnableDelegation**
+Nome breve dello script: **EnableDelegation**
 
-Necessario per consentire l'attendibilità degli account computer e utente per la delega.
+Necessario per abilitare gli account computer e utente come attendibili per la delega.
 
 
 </dt> </dl> </dd> <dt>
@@ -516,11 +516,11 @@ Necessario per consentire l'attendibilità degli account computer e utente per l
 
 
 
-Costante C++: **se \_ Gestisci \_ \_ nome volume** stringa: **SeManageVolumePrivilege**
+Costante C++: **edizione Standard \_ MANAGE VOLUME \_ \_ NAME** string: **SeManageVolumePrivilege**
 
-Nome breve scripting: **ManageVolume**
+Nome breve script: **ManageVolume**
 
-Obbligatorio per eseguire le attività di manutenzione del volume.
+Obbligatorio per eseguire attività di manutenzione dei volumi.
 
 
 </dt> </dl> </dd> </dl>
@@ -533,8 +533,8 @@ Obbligatorio per eseguire le attività di manutenzione del volume.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Wbemdisp. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wbemdisp.idl</dt> </dl> |
 
 
 
@@ -542,7 +542,7 @@ Obbligatorio per eseguire le attività di manutenzione del volume.
 
 <dl> <dt>
 
-[Esecuzione di script di costanti API](scripting-api-constants.md)
+[Costanti api di scripting](scripting-api-constants.md)
 </dt> <dt>
 
 [**SWbemSecurity**](swbemsecurity.md)

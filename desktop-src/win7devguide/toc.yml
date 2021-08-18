@@ -1,9 +1,9 @@
-- name: Guida per gli sviluppatori di Windows 7
+- name: Windows 7 Developer Guide (Guida per sviluppatori di Windows 7)
   href: windows-7-developer-guide.md
   items:
     - name: Introduzione
       href: introduction.md
-    - name: Fondamenta solide
+    - name: Solid Foundation
       href: solid-foundation.md
       items:
         - name: Compatibilità e affidabilità
@@ -14,16 +14,16 @@
           href: security.md
         - name: Prestazioni
           href: performance.md
-        - name: Documenti e periferiche per documenti
+        - name: Documenti e periferiche dei documenti
           href: documents-and-document-peripherals.md
         - name: Accessibilità e supporto globale
           href: accessibility-and-global-support.md
-    - name: Esperienze di applicazioni più ricche
+    - name: Esperienze applicative più ricche
       href: richer-application-experiences.md
       items:
         - name: Esperienza utente intuitiva
           href: intuitive-user-experience.md
-        - name: Grafia e input penna
+        - name: Scrittura manuale e input penna
           href: handwriting-and-ink.md
         - name: Esperienza desktop
           href: the-desktop-experience.md
@@ -31,20 +31,20 @@
           href: managing-files-and-data.md
         - name: Valori DPI alti
           href: high-dpi.md
-        - name: Grafica a fedeltà elevata con DirectX
+        - name: Grafica ad alta fedeltà con DirectX
           href: high-fidelity-graphics-with-directx.md
         - name: Piattaforma multimediale
           href: media-platform.md
         - name: Dispositivi
           href: devices.md
-    - name: Il meglio di Windows e il Web
+    - name: The Best of Windows and the Web
       href: the-best-of-windows-and-the-web.md
       items:
         - name: Servizi
           href: services.md
         - name: Ricerca federata
           href: federated-search.md
-        - name: Piattaforma sensore
+        - name: Piattaforma dei sensori
           href: sensor-platform.md
         - name: Internet Explorer 8
           href: internet-explorer-8.md

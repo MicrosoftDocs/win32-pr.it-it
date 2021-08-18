@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. allowColumnSorting
-description: L'attributo allowColumnSorting specifica o recupera un valore che indica se il contenuto della colonna di ordinamento è consentito.
+title: PLAYLIST.allowColumnSorting
+description: L'attributo allowColumnSorting specifica o recupera un valore che indica se è consentito l'ordinamento del contenuto della colonna.
 ms.assetid: b838f346-a0ab-40d3-893e-94c23142839e
 keywords:
-- PLAYLIST. allowColumnSorting Windows Media Player
+- PLAYLIST.allowColumnSorting Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef853bc1aabde4c261037cbeb31ce2deba34c631
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee3fadcd58f74b534c8d4b32ee2db0f87fd160d55abbb2dde243693696bbd2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995731"
 ---
-# <a name="playlistallowcolumnsorting"></a>PLAYLIST. allowColumnSorting
+# <a name="playlistallowcolumnsorting"></a>PLAYLIST.allowColumnSorting
 
-L'attributo **allowColumnSorting** specifica o recupera un valore che indica se il contenuto della colonna di ordinamento è consentito.
+**L'attributo allowColumnSorting** specifica o recupera un valore che indica se è consentito l'ordinamento del contenuto della colonna.
 
 ``` syntax
         elementID.allowColumnSorting
@@ -29,14 +29,14 @@ L'attributo **allowColumnSorting** specifica o recupera un valore che indica se 
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                  |
 |-------|----------------------------------------------|
-| true  | Valore predefinito. Il contenuto della colonna di ordinamento è consentito. |
-| false | Il contenuto della colonna di ordinamento non è consentito.      |
+| true  | Valore predefinito. L'ordinamento del contenuto della colonna è consentito. |
+| false | L'ordinamento del contenuto della colonna non è consentito.      |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -56,7 +56,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

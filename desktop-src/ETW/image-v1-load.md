@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e8a8c31cee7e45311887c16a1d10545e6a38e41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35144317b67a8d24ec07d72633897366e83628d6cc66d9c4661980fc44c373b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070161"
 ---
 # <a name="image_v1_load-class"></a>Classe Load \_ dell'immagine V1 \_
 
@@ -100,7 +100,7 @@ Qualificatori: WmiDataId(2), Puntatore
 
 Dimensioni dell'immagine caricata.
 
-Quando si utilizza questa proprietà, il tipo di dati per questa proprietà è effettivamente size \_ t. Il qualificatore puntatore viene usato per determinare se la dimensione \_ t è di 4 o 8 byte.
+Quando si utilizza questa proprietà, il tipo di dati per questa proprietà è effettivamente size \_ t. Il qualificatore Pointer viene usato per determinare se la dimensione \_ t è di 4 byte o 8 byte.
 
 </dd> <dt>
 
@@ -126,8 +126,8 @@ Identifica il processo in cui viene caricata l'immagine.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 053ea6c06f9e4ccfe821db5f9f9c677add581a0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21be8c6df7b363efefe722c78b04027e541505b2880fe48cb42fccc455e0c399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984661"
 ---
 # <a name="xmbyte4-constructors"></a>Costruttori XMBYTE4
 
 Costruttori esposti da `XMBYTE4` .
 
-Costruisce istanze della struttura [**XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4) .
+Costruisce istanze della [**struttura XMBYTE4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4)
 
 > [!Note]  
-> I costruttori elencati di seguito sono disponibili solo in C++.
+> I costruttori elencati qui sono disponibili solo in C++.
 
  
 
@@ -47,7 +47,7 @@ Costruisce istanze della struttura [**XMBYTE4**](/windows/win32/api/directxpacke
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(constfloat)"><strong>XMBYTE4 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMBYTE4</code> .<br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a>.<br/>
+<td style="text-align: left;">Costruttore predefinito per <code>XMBYTE4</code> .<br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4.</strong></a><br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -56,7 +56,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(uint32_t)"><strong>XMBYTE4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE4</code> da una <code>uint32_t</code> variabile che contiene i dati del componente in un formato compresso.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da una <code>uint32_t</code> variabile che contiene i dati del componente in un formato compresso.<br/>
+<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE4</code> da una variabile contenente i dati del componente in formato <code>uint32_t</code> pack.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da una variabile contenente i dati <code>uint32_t</code> del componente in formato pack.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -64,8 +64,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(constfloat)"><strong>XMBYTE4 (const Float *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE4</code> da un argomento di matrice di quattro elementi <code>float</code> .<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da un argomento di matrice di quattro elementi <code>float</code> .<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(constfloat)"><strong>XMBYTE4 (const float*)</strong></a></td>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMBYTE4</code> un argomento della matrice di quattro <code>float</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da un argomento di <code>float</code> matrice di quattro elementi.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -73,8 +73,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(constint8_t)"><strong>XMBYTE4 (const int8_t *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE4</code> da un argomento di matrice di quattro elementi <code>int8_t</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da un argomento di matrice di quattro elementi <code>int8_t</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(constint8_t)"><strong>XMBYTE4 (const int8_t*)</strong></a></td>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMBYTE4</code> un argomento della matrice di quattro <code>int8_t</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da un oggetto da un argomento di <code>int8_t</code> matrice di quattro elementi. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -91,7 +91,7 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(int8_t_int8_t_int8_t_int8_t)"><strong>XMBYTE4 (int8_t, int8_t, int8_t, int8_t)</strong></a></td>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte4-xmbyte4(int8_t_int8_t_int8_t_int8_t)"><strong>XMBYTE4 (int8_t,int8_t,int8_t,int8_t)</strong></a></td>
 <td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE4</code> da quattro <code>int8_t</code> argomenti.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmbyte4"><strong>XMBYTE4</strong></a> da quattro <code>int8_t</code> argomenti.<br/>
 <blockquote>
 [!Note]<br />

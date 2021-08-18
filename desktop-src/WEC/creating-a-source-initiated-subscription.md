@@ -1,31 +1,31 @@
 ---
 title: Creazione di una sottoscrizione avviata dall'origine
-description: Le sottoscrizioni avviate dall'origine consentono di definire una sottoscrizione in un computer dell'agente di raccolta eventi senza definire i computer di origine eventi, quindi è possibile configurare più computer di origine evento remoto (usando un'impostazione di criteri di gruppo) per inviare gli eventi al computer dell'agente di raccolta eventi. Prima che un computer locale possa sottoscrivere gli eventi e un computer remoto può inviare gli eventi, è necessario configurare entrambi i computer per la raccolta di eventi e l'invio di eventi. Per ulteriori informazioni su come configurare i computer, vedere la pagina relativa alla configurazione di una sottoscrizione avviata dall'origine.
+description: Le sottoscrizioni avviate dall'origine consentono di definire una sottoscrizione in un computer dell'agente di raccolta eventi senza definire i computer di origine eventi e quindi di configurare più computer di origine eventi remoti (usando un'impostazione di Criteri di gruppo) per inoltrare gli eventi al computer dell'agente di raccolta eventi. Prima che un computer locale possa sottoscrivere eventi e un computer remoto possa inoltrare gli eventi, entrambi i computer devono essere impostati per la raccolta di eventi e l'inoltro degli eventi. Per altre informazioni su come configurare i computer, vedere Impostazione di una sottoscrizione avviata dall'origine.
 ms.assetid: 489d3613-177f-4045-a055-2c1577ef2191
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e0e6d4aa7c94afcdbe6458c2c23c214d935db2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ef0f3a40b3404441df40434c7ddb2f1bb6ac578caaf182c14d2825c6f99e7f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997971"
 ---
 # <a name="creating-a-source-initiated-subscription"></a>Creazione di una sottoscrizione avviata dall'origine
 
-Le sottoscrizioni avviate dall'origine consentono di definire una sottoscrizione in un computer dell'agente di raccolta eventi senza definire i computer di origine eventi, quindi è possibile configurare più computer di origine evento remoto (usando un'impostazione di criteri di gruppo) per inviare gli eventi al computer dell'agente di raccolta eventi. Prima che un computer locale possa sottoscrivere gli eventi e un computer remoto può inviare gli eventi, è necessario configurare entrambi i computer per la raccolta di eventi e l'invio di eventi. Per ulteriori informazioni su come configurare i computer, vedere la pagina [relativa alla configurazione di una sottoscrizione avviata dall'origine](setting-up-a-source-initiated-subscription.md).
+Le sottoscrizioni avviate dall'origine consentono di definire una sottoscrizione in un computer dell'agente di raccolta eventi senza definire i computer di origine eventi e quindi di configurare più computer di origine eventi remoti (usando un'impostazione di Criteri di gruppo) per inoltrare gli eventi al computer dell'agente di raccolta eventi. Prima che un computer locale possa sottoscrivere eventi e un computer remoto possa inoltrare gli eventi, entrambi i computer devono essere impostati per la raccolta di eventi e l'inoltro degli eventi. Per altre informazioni su come configurare i computer, vedere [Impostazione di una sottoscrizione avviata dall'origine](setting-up-a-source-initiated-subscription.md).
 
 L'esempio di codice seguente segue una serie di passaggi per creare una sottoscrizione avviata dall'origine in cui le origini eventi si trovano nello stesso dominio del computer dell'agente di raccolta eventi.
 
-**Per creare una sottoscrizione avviata a livello di codice**
+**Per creare una sottoscrizione avviata dall'origine a livello di codice**
 
-1.  Aprire la sottoscrizione fornendo il nome della sottoscrizione e i diritti di accesso come parametri della funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Per ulteriori informazioni sui diritti di accesso, vedere [**costanti dell'agente di raccolta eventi di Windows**](windows-event-collector-constants.md).
-2.  Impostare le proprietà della sottoscrizione chiamando la funzione [**EcSetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) . Per ulteriori informazioni sulle proprietà di sottoscrizione che è possibile impostare, vedere l'enumerazione di [**\_ \_ \_ ID proprietà della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Salvare la sottoscrizione chiamando la funzione [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-4.  Chiudere la sottoscrizione chiamando la funzione [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Aprire la sottoscrizione specificando il nome della sottoscrizione e i diritti di accesso come parametri per la [**funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**Costanti dell'agente Windows eventi**](windows-event-collector-constants.md).
+2.  Impostare le proprietà della sottoscrizione chiamando la [**funzione EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Per altre informazioni sulle proprietà della sottoscrizione che è possibile impostare, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Salvare la sottoscrizione chiamando la [**funzione EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+4.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Nell'esempio C++ riportato di seguito viene illustrato come creare una sottoscrizione avviata dall'origine:
+L'esempio C++ seguente illustra come creare una sottoscrizione avviata dall'origine:
 
 
 ```C++
@@ -415,35 +415,35 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
 **Verificare che la sottoscrizione funzioni correttamente**
 
-1.  Sul computer dell'agente di raccolta eventi completare la procedura seguente:
+1.  Nel computer dell'agente di raccolta eventi completare la procedura seguente:
 
     1.  Eseguire il comando seguente da un prompt dei comandi con privilegi elevati per ottenere lo stato di runtime della sottoscrizione:
 
         **wecutil gr***<subscriptionID>*
 
-    2.  Verificare che l'origine evento sia connessa. Potrebbe essere necessario attendere fino al termine dell'intervallo di aggiornamento specificato nei criteri dopo aver creato la sottoscrizione per la connessione dell'origine evento.
+    2.  Verificare che l'origine evento sia connessa. Potrebbe essere necessario attendere la fine dell'intervallo di aggiornamento specificato nei criteri dopo aver creato la sottoscrizione per la connessione dell'origine evento.
     3.  Eseguire il comando seguente per ottenere le informazioni sulla sottoscrizione:
 
         **wecutil gs***<subscriptionID>*
 
     4.  Ottenere il valore DeliveryMaxItems dalle informazioni sulla sottoscrizione.
 
-2.  Nel computer di origine evento, generare gli eventi che corrispondono alla query della sottoscrizione di eventi. Per l'invio degli eventi è necessario che venga generato il numero DeliveryMaxItems di eventi.
-3.  Sul computer dell'agente di raccolta eventi, verificare che gli eventi siano stati trasmessi al log ForwardedEvents o al log specificato nella sottoscrizione.
+2.  Nel computer di origine eventi generare gli eventi che corrispondono alla query dalla sottoscrizione di eventi. Il numero di eventi DeliveryMaxItems deve essere generato per l'inoltro degli eventi.
+3.  Nel computer dell'agente di raccolta eventi verificare che gli eventi siano stati inoltrati al log ForwardedEvents o al log specificato nella sottoscrizione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Configurare i computer per l'invio e la raccolta di eventi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
+[Configurare i computer per l'inoltro e la raccolta di eventi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
 </dt> <dt>
 
 [Configurazione di una sottoscrizione avviata dall'origine](setting-up-a-source-initiated-subscription.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

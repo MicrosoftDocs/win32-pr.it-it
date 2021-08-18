@@ -3,10 +3,10 @@ title: Download Manager
 description: Download Manager
 ms.assetid: 8255a2e8-92f0-4e31-87ca-60edf7c91f31
 keywords:
-- Windows Media Player online, Download Manager
+- Windows Media Player store online, Download Manager
 - online store, Download Manager
 - store online di tipo 2, Download Manager
-- Windows Media Player,Download Manager
+- Windows Media Player, Download Manager
 - Windows Media Player Download Manager
 - Download Manager
 ms.topic: article

@@ -13,7 +13,7 @@ ms.locfileid: "119010889"
 ---
 # <a name="use-the-robust-flag"></a>Usare il flag /robust
 
-Compilare sempre i file con estensione idl usando [**l'opzione /robust.**](/windows/desktop/Midl/-robust) L'uso dell'opzione **/robust** genera informazioni aggiuntive che consentono al motore di rappresentazione dei dati di rete (NDR) di eseguire il controllo degli errori di runtime sugli argomenti correlati in matrici dinamiche, unioni e puntatori a interfaccia out nelle applicazioni COM e RPC. Se il software non riesce a compilare con questo flag, il software è così esposto agli attacchi che nessun impegno in altre aree può proteggerlo.
+Compilare sempre i file con estensione idl usando [**l'opzione /robust.**](/windows/desktop/Midl/-robust) L'uso dell'opzione **/robust** genera informazioni aggiuntive che consentono al motore di rappresentazione dei dati di rete (NDR) di eseguire il controllo degli errori di runtime sugli argomenti correlati in matrici dinamiche, unioni e puntatori a interfaccia in uscita nelle applicazioni COM e RPC. Se il software non viene compilato con questo flag, il software è così esposto agli attacchi che nessun impegno in nessun'altra area può proteggerlo.
 
  
 
