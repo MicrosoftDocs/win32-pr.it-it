@@ -1,12 +1,12 @@
 ---
-title: Metodo GetBaseVHDPath della classe Win32_RDMSDeploymentSettings
-description: Recupera il percorso di base della directory in cui vengono distribuiti i VHD dell'insieme di desktop virtuali. | Metodo GetBaseVHDPath della classe Win32_RDMSDeploymentSettings
+title: Metodo GetBaseVHDPath della Win32_RDMSDeploymentSettings classe
+description: Recupera il percorso di base della directory in cui vengono distribuiti i dischi rigidi virtuali dell'insieme di desktop virtuali. | Metodo GetBaseVHDPath della Win32_RDMSDeploymentSettings classe
 ms.assetid: d3629a08-ef16-4aab-b74b-f837a8ba00d0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetBaseVHDPath
-- Metodo GetBaseVHDPath Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo GetBaseVHDPath
+- Metodo GetBaseVHDPath Servizi Desktop remoto
+- Metodo GetBaseVHDPath Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto , metodo GetBaseVHDPath
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 595c6459148a0270bed2328c70e15ef74a69acf3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f44d2379d498f5e191296a132c30b5fde925c9c323d4f42f1a316ed6cb0a4c46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010190"
 ---
-# <a name="getbasevhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetBaseVHDPath della \_ classe RDMSDeploymentSettings Win32
+# <a name="getbasevhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetBaseVHDPath della classe \_ WIN32 RDMSDeploymentSettings
 
-Recupera il percorso di base della directory in cui vengono distribuiti i VHD dell'insieme di desktop virtuali.
+Recupera il percorso di base della directory in cui vengono distribuiti i dischi rigidi virtuali dell'insieme di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 GetBaseVHDPath(
 
 <dl> <dt>
 
-*DirectoryPath* \[ out\]
+*DirectoryPath* \[ Cambio\]
 </dt> <dd>
 
 Riceve il percorso di distribuzione del disco rigido virtuale.
@@ -52,7 +52,7 @@ Riceve il percorso di distribuzione del disco rigido virtuale.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

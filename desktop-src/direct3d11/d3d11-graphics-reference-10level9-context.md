@@ -1,5 +1,5 @@
 ---
-title: 10Level9 ID3D11DeviceContext Methods
+title: 10Level9 METODI ID3D11DeviceContext
 description: Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e il livello di funzionalità D3D FEATURE LEVEL 11 0 e superiore per i metodi \_ \_ \_ \_ ID3D11DeviceContext.
 ms.assetid: 84478b56-0306-491a-9545-0849b06d8342
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118990071"
 ---
-# <a name="10level9-id3d11devicecontext-methods"></a>10Level9 ID3D11DeviceContext Methods
+# <a name="10level9-id3d11devicecontext-methods"></a>10Level9 METODI ID3D11DeviceContext
 
 Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e il livello di funzionalità D3D FEATURE LEVEL 11 0 e superiore per i metodi \_ \_ \_ \_ [**ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
 
@@ -240,7 +240,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Verrà cancellata solo la prima sezione della matrice. Le applicazioni devono creare una visualizzazione di destinazione di rendering per ogni viso o sezione di matrice, quindi cancellare ogni visualizzazione singolarmente.${REMOVE}$<br />
+<td rowspan="3">Verrà cancellata solo la prima sezione della matrice. Le applicazioni devono creare una visualizzazione di destinazione di rendering per ogni sezione di viso o matrice, quindi cancellare ogni visualizzazione singolarmente.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -272,7 +272,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -304,7 +304,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -336,7 +336,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -368,7 +368,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -400,7 +400,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -432,7 +432,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -464,7 +464,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -488,9 +488,9 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 
 | Livello di funzionalità             | Differenze di comportamento                                                                                                               |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 1 | Il numero di primitive non può superare 65535.<br/> Le trame non possono essere ripetute più di 128 volte su una primitiva.<br/>    |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 2 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 2048 volte su una primitiva.<br/> |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 3 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte su una primitiva.<br/> |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 1 | Il numero di primitive non può superare 65535.<br/> Le trame non possono essere ripetute più di 128 volte in una primitiva.<br/>    |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 2 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 2048 volte in una primitiva.<br/> |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 3 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte in una primitiva.<br/> |
 
 
 
@@ -510,7 +510,7 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -534,9 +534,9 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 
 | Livello di funzionalità             | Differenze di comportamento                                                                                                                                                                                                            |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 1 | Il numero di primitive non può superare 65535.<br/> Le trame non possono essere ripetute più di 128 volte su una primitiva.<br/> I valori di indice non possono superare 65534.<br/> Gli elenchi di punti indicizzati non sono supportati.<br/>      |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 2 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 2048 volte su una primitiva.<br/> I valori di indice non possono superare 1048575.<br/> Gli elenchi di punti indicizzati non sono supportati.<br/> |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 3 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte su una primitiva.<br/> I valori di indice non possono superare 1048575.<br/> Gli elenchi di punti indicizzati non sono supportati.<br/> |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 1 | Il numero di primitive non può superare 65535.<br/> Le trame non possono essere ripetute più di 128 volte in una primitiva.<br/> I valori di indice non possono superare 65534.<br/> Elenchi di punti indicizzati non supportati.<br/>      |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 2 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 2048 volte in una primitiva.<br/> I valori di indice non possono superare 1048575.<br/> Elenchi di punti indicizzati non supportati.<br/> |
+| FUNZIONALITÀ D3D \_ \_ LIVELLO \_ 9 \_ 3 | Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte in una primitiva.<br/> I valori di indice non possono superare 1048575.<br/> Elenchi di punti indicizzati non supportati.<br/> |
 
 
 
@@ -569,10 +569,10 @@ Questa sezione elenca le differenze tra ogni livello di funzionalità 10Level9 e
 </tr>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte su una primitiva.<br/> I valori di indice non possono superare 1048575.<br/>
+<td>Il numero di primitive non può superare 1048575.<br/> Le trame non possono essere ripetute più di 8192 volte in una primitiva.<br/> I valori di indice non possono superare 1048575.<br/>
 <blockquote>
 [!Note]<br />
-Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un vertex shader associato alla pipeline e che non importa dati per istanza, alcuni componenti hardware grafici Direct3D 9 potrebbero non disegnare nulla. In particolare, se il vertex shader non usa dati per istanza, chiamare <strong>DrawIndexedInstanced</strong> con 1 istanza non equivale a chiamare <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>Draw.</strong></a>
+Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un vertex shader associato alla pipeline e che non importa dati per istanza, alcuni componenti hardware della grafica Direct3D 9 potrebbero non disegnare nulla. In particolare, se il vertex shader non usa dati per istanza, chiamare <strong>DrawIndexedInstanced</strong> con 1 istanza non equivale a chiamare <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>Draw</strong></a>.
 </blockquote>
 <br/></td>
 </tr>
@@ -597,7 +597,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -637,7 +637,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -669,7 +669,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -709,7 +709,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -749,7 +749,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -789,7 +789,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -829,7 +829,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -869,7 +869,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -901,7 +901,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -933,7 +933,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -965,7 +965,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -997,7 +997,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">Non supportato a livello di funzionalità 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1189,7 +1189,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Le topologie primitive con adizia non sono supportate${REMOVE}$<br />
+<td rowspan="3">Le topologie primitive con adicenza non sono supportate${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1445,7 +1445,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">È disponibile solo il retto della forbice zero${REMOVE}$<br />
+<td rowspan="3">È disponibile solo il retto di forbice zero${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1495,7 +1495,7 @@ Quando si chiama il metodo <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11de
 
  
 
-Anche se si specificano valori float per i membri della struttura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) per la matrice *pViewports* in una chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) per i livelli di funzionalità [9](overviews-direct3d-11-devices-downlevel-intro.md) \_ x, **RSSetViewports** usa internamente DWORD. A causa di questo comportamento, quando si usa un angolo superiore sinistro negativo per il viewport, la chiamata a **RSSetViewports** per i livelli di funzionalità 9 x ha \_ esito negativo. Questo errore si verifica perché **RSSetViewports** per 9 x esegue il cast dei valori a virgola mobile in interi senza segno senza convalida, causando un \_ overflow di integer.
+Anche se si specificano valori float per i membri della struttura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) per la matrice *pViewports* in una chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) per i livelli di funzionalità [9](overviews-direct3d-11-devices-downlevel-intro.md) \_ x, **RSSetViewports** usa internamente DWORD. A causa di questo comportamento, quando si usa un angolo superiore sinistro negativo per il viewport, la chiamata a **RSSetViewports** per i livelli di funzionalità 9 x ha \_ esito negativo. Questo errore si verifica perché **RSSetViewports** per 9 x esegue il cast dei valori a virgola mobile in interi senza segno senza convalida, causando un \_ overflow di Integer.
 
 La chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) per i livelli di funzionalità [10](overviews-direct3d-11-devices-downlevel-intro.md) x e 11 x funziona come previsto anche quando si usa un angolo superiore sinistro negativo per il \_ \_ viewport.
 
@@ -1513,7 +1513,7 @@ La chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1545,7 +1545,7 @@ La chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1609,7 +1609,7 @@ La chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1673,7 +1673,7 @@ La chiamata a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Non supportato a livello di funzionalità 9.* .${REMOVE}$<br />
+<td rowspan="3">Non supportato a livello di funzionalità 9.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">

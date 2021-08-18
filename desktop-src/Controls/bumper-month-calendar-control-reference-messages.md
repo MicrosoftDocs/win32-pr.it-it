@@ -1,52 +1,52 @@
 ---
-title: Messaggi di calendario mensile
-description: Messaggi di calendario mensile
+title: Messaggi del calendario mensile
+description: Messaggi del calendario mensile
 ms.assetid: e320dc4f-0fe2-44d9-b672-d88e4da16e4a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8911ba40e2008a7a9a31d67dee06d44fb66935bf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9b5cf2f4e6c2ccf9778d17dee2ed2bcd37ffe050529176f20dfc91a4525c9e37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971081"
 ---
-# <a name="month-calendar-messages"></a>Messaggi di calendario mensile
+# <a name="month-calendar-messages"></a>Messaggi del calendario mensile
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_GETCALENDARBORDER MCM**](mcm-getcalendarborder.md)
--   [**\_GETCALENDARCOUNT MCM**](mcm-getcalendarcount.md)
--   [**\_GETCALENDARGRIDINFO MCM**](mcm-getcalendargridinfo.md)
--   [**MCM \_ GETcalid**](mcm-getcalid.md)
--   [**MCM \_ GETcolor**](mcm-getcolor.md)
--   [**\_GETCURRENTVIEW MCM**](mcm-getcurrentview.md)
--   [**MCM \_ GETcursel**](mcm-getcursel.md)
--   [**\_GETFIRSTDAYOFWEEK MCM**](mcm-getfirstdayofweek.md)
--   [**\_GETMAXSELCOUNT MCM**](mcm-getmaxselcount.md)
--   [**\_GETMAXTODAYWIDTH MCM**](mcm-getmaxtodaywidth.md)
--   [**\_GETMINREQRECT MCM**](mcm-getminreqrect.md)
--   [**\_GETMONTHDELTA MCM**](mcm-getmonthdelta.md)
--   [**\_GETMONTHRANGE MCM**](mcm-getmonthrange.md)
--   [**GetRange MCM \_**](mcm-getrange.md)
--   [**\_GETSELRANGE MCM**](mcm-getselrange.md)
--   [**MCM \_ GETtoday**](mcm-gettoday.md)
--   [**\_GETUNICODEFORMAT MCM**](mcm-getunicodeformat.md)
--   [**HITTEST di MCM \_**](mcm-hittest.md)
--   [**\_SETCALENDARBORDER MCM**](mcm-setcalendarborder.md)
--   [**MCM \_**](mcm-setcalid.md)
--   [**COLORE per MCM \_**](mcm-setcolor.md)
--   [**\_SETCURRENTVIEW MCM**](mcm-setcurrentview.md)
--   [**MCM \_**](mcm-setcursel.md)
--   [**\_SETDAYSTATE MCM**](mcm-setdaystate.md)
--   [**\_SETFIRSTDAYOFWEEK MCM**](mcm-setfirstdayofweek.md)
--   [**\_SETMAXSELCOUNT MCM**](mcm-setmaxselcount.md)
--   [**\_SETMONTHDELTA MCM**](mcm-setmonthdelta.md)
--   [**\_SEtrange MCM**](mcm-setrange.md)
--   [**\_SETSELRANGE MCM**](mcm-setselrange.md)
--   [**\_attualmente MCM**](mcm-settoday.md)
--   [**\_SETUNICODEFORMAT MCM**](mcm-setunicodeformat.md)
--   [**\_SIZERECTTOMIN MCM**](mcm-sizerecttomin.md)
+-   [**MCM \_ GETCALENDARBORDER**](mcm-getcalendarborder.md)
+-   [**MCM \_ GETCALENDARCOUNT**](mcm-getcalendarcount.md)
+-   [**MCM \_ GETCALENDARGRIDINFO**](mcm-getcalendargridinfo.md)
+-   [**MCM \_ GETCALID**](mcm-getcalid.md)
+-   [**MCM \_ GETCOLOR**](mcm-getcolor.md)
+-   [**MCM \_ GETCURRENTVIEW**](mcm-getcurrentview.md)
+-   [**MCM \_ GETCURSEL**](mcm-getcursel.md)
+-   [**MCM \_ GETFIRSTDAYOFWEEK**](mcm-getfirstdayofweek.md)
+-   [**MCM \_ GETMAXSELCOUNT**](mcm-getmaxselcount.md)
+-   [**MCM \_ GETMAXTODAYWIDTH**](mcm-getmaxtodaywidth.md)
+-   [**MCM \_ GETMINREQRECT**](mcm-getminreqrect.md)
+-   [**MCM \_ GETMONTHDELTA**](mcm-getmonthdelta.md)
+-   [**MCM \_ GETMONTHRANGE**](mcm-getmonthrange.md)
+-   [**MCM \_ GETRANGE**](mcm-getrange.md)
+-   [**MCM \_ GETSELRANGE**](mcm-getselrange.md)
+-   [**MCM \_ GETTODAY**](mcm-gettoday.md)
+-   [**MCM \_ GETUNICODEFORMAT**](mcm-getunicodeformat.md)
+-   [**MCM \_ HITTEST**](mcm-hittest.md)
+-   [**MCM \_ SETCALENDARBORDER**](mcm-setcalendarborder.md)
+-   [**MCM \_ SETCALID**](mcm-setcalid.md)
+-   [**MCM \_ SETCOLOR**](mcm-setcolor.md)
+-   [**MCM \_ SETCURRENTVIEW**](mcm-setcurrentview.md)
+-   [**MCM \_ SETCURSEL**](mcm-setcursel.md)
+-   [**MCM \_ SETDAYSTATE**](mcm-setdaystate.md)
+-   [**MCM \_ SETFIRSTDAYOFWEEK**](mcm-setfirstdayofweek.md)
+-   [**MCM \_ SETMAXSELCOUNT**](mcm-setmaxselcount.md)
+-   [**MCM \_ SETMONTHDELTA**](mcm-setmonthdelta.md)
+-   [**MCM \_ SETRANGE**](mcm-setrange.md)
+-   [**MCM \_ SETSELRANGE**](mcm-setselrange.md)
+-   [**MCM \_ SETTODAY**](mcm-settoday.md)
+-   [**MCM \_ SETUNICODEFORMAT**](mcm-setunicodeformat.md)
+-   [**MCM \_ SIZERECTTOMIN**](mcm-sizerecttomin.md)
 
  
 

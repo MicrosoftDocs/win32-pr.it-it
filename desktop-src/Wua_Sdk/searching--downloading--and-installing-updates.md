@@ -1,36 +1,36 @@
 ---
-description: Nell'esempio di scripting in questo argomento viene illustrato come utilizzare Windows Update Agent (WUA) per analizzare, scaricare e installare gli aggiornamenti.
+description: L'esempio di scripting in questo argomento illustra come usare Windows Update Agent (WUA) per analizzare, scaricare e installare gli aggiornamenti.
 ms.assetid: 4b2b1898-64f1-4908-98b7-ea87a6fcb71d
-title: Ricerca, download e installazione degli aggiornamenti
+title: Ricerca, download e installazione di aggiornamenti
 ms.topic: article
 ms.date: 01/16/2020
-ms.openlocfilehash: 289e0535bc39ca3fb39ddb33bbc67d009898b556
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: bfb112533dd30ed203ab44104a0ef241ccf93504376637c07f1527ff3cca79f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994241"
 ---
-# <a name="searching-downloading-and-installing-updates"></a>Ricerca, download e installazione degli aggiornamenti
+# <a name="searching-downloading-and-installing-updates"></a>Ricerca, download e installazione di aggiornamenti
 
-Nell'esempio di scripting in questo argomento viene illustrato come utilizzare Windows Update Agent (WUA) per analizzare, scaricare e installare gli aggiornamenti.
+L'esempio di scripting in questo argomento illustra come usare Windows Update Agent (WUA) per analizzare, scaricare e installare gli aggiornamenti.
 
-Nell'esempio viene eseguita la ricerca di tutti gli aggiornamenti software applicabili, quindi vengono elencati gli aggiornamenti. Successivamente, crea una raccolta di aggiornamenti da scaricare e quindi li scarica. Infine, crea una raccolta di aggiornamenti da installare e quindi li installa.
+L'esempio cerca tutti gli aggiornamenti software applicabili e quindi elenca tali aggiornamenti. Successivamente, crea una raccolta di aggiornamenti da scaricare e quindi li scarica. Infine, crea una raccolta di aggiornamenti da installare e quindi li installa.
 
-Se si vuole cercare, scaricare e installare un aggiornamento specifico che si identifica con il titolo dell'aggiornamento, vedere [ricerca, download e installazione di aggiornamenti specifici](searching--downloading--and-installing-specific-updates.md).
+Per cercare, scaricare e installare un aggiornamento specifico identificato usando il titolo dell'aggiornamento, vedere [Ricerca, download](searching--downloading--and-installing-specific-updates.md)e installazione di aggiornamenti specifici .
 
-Prima di provare a eseguire l'esempio, tenere presente quanto segue:
+Prima di provare a eseguire questo esempio, tenere presente quanto segue:
 
--   WUA deve essere installato nel computer. Per ulteriori informazioni su come determinare la versione di WUA installata, vedere [determinazione della versione corrente di WUA](determining-the-current-version-of-wua.md).
--   L'esempio può scaricare gli aggiornamenti solo usando WUA. Non è possibile scaricare gli aggiornamenti da un server di servizi di aggiornamento software (SUS) 1,0.
--   Per eseguire questo esempio è necessario Windows script host (WSH). Per ulteriori informazioni su WSH, vedere la sezione WSH della piattaforma Software Development Kit (SDK). Se l'esempio viene copiato in un file denominato WUA \_SearchDownloadInstall.vbs, è possibile eseguire l'esempio aprendo una finestra del prompt dei comandi e digitando il comando seguente al prompt dei comandi.
+-   WUA deve essere installato nel computer. Per altre informazioni su come determinare la versione di WUA installata, vedere [Determinare la versione corrente di WUA.](determining-the-current-version-of-wua.md)
+-   L'esempio può scaricare gli aggiornamenti solo usando WUA. Non è possibile scaricare gli aggiornamenti da un server SuS (Software Update Services) 1.0.
+-   L'esecuzione di questo esempio richiede Windows Script Host (WSH). Per altre informazioni su WSH, vedere la sezione WSH di Platform Software Development Kit (SDK). Se l'esempio viene copiato in un file denominato WUASearchDownloadInstall.vbs, è possibile eseguire l'esempio aprendo una finestra del prompt dei comandi e digitando il comando seguente al \_ prompt dei comandi.
 
-    **SearchDownloadInstall.vbscscript WUA \_**
+    **Cscript WUA \_SearchDownloadInstall.vbs**
 
 ## <a name="example"></a>Esempio
 
 > [!IMPORTANT]
-> Questo script ha lo scopo di illustrare l'uso delle API dell'agente Windows Update e fornisce un esempio di come gli sviluppatori possono usare queste API per risolvere i problemi. Questo script non è destinato al codice di produzione e lo script non è supportato da Microsoft (anche se sono supportate le API di Windows Update Agent sottostanti).
+> Questo script ha lo scopo di illustrare l'uso delle API dell'Windows Update Agent e di fornire un esempio di come gli sviluppatori possono usare queste API per risolvere i problemi. Questo script non è inteso come codice di produzione e lo script stesso non è supportato da Microsoft (anche se sono supportate le API Windows Update Agent sottostanti).
 
  
 

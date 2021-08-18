@@ -1,7 +1,7 @@
 ---
-description: La funzione DeleteForm rimuove un nome di modulo dall'elenco dei form supportati.
+description: La funzione DeleteForm rimuove un nome di modulo dall'elenco di moduli supportati.
 ms.assetid: a2d0345f-2469-46ab-935f-777f2b33b621
-title: Funzione DeleteForm (winspool. h)
+title: Funzione DeleteForm (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 70ead5026c3b5cf21b28d230f79819bf71eeaf10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efd200a06ddea9cd5ec11396741e7ea66fb2d803a273a6d56c9d15c295263247
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104050004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112661"
 ---
-# <a name="deleteform-function"></a>DeleteForm (funzione)
+# <a name="deleteform-function"></a>Funzione DeleteForm
 
-La funzione **DeleteForm** rimuove un nome di modulo dall'elenco dei form supportati.
+La **funzione DeleteForm** rimuove un nome di modulo dall'elenco di moduli supportati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ BOOL DeleteForm(
 
 <dl> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Indica l'handle della stampante aperta su cui deve essere eseguita questa funzione. Utilizzare la funzione [**OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle di stampante.
+Indica l'handle della stampante aperto su cui deve essere eseguita questa funzione. Usare la [**funzione OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) per recuperare un handle della stampante.
 
 </dd> <dt>
 
-*pFormName* \[ in\]
+*pFormName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome del form da rimuovere.
@@ -65,11 +65,11 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona e potrebbe non restituire immediatamente . La velocità di ritorno di questa funzione dipende da fattori in fase di esecuzione, ad esempio lo stato di rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-**DeleteForm** può eliminare solo i nomi di modulo aggiunti tramite la funzione [**AddForm**](addform.md) .
+**DeleteForm** può eliminare solo i nomi dei moduli aggiunti tramite la [**funzione AddForm.**](addform.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,10 +79,10 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
-| Nomi Unicode e ANSI<br/>   | **DeleteFormW** (Unicode) e **DeleteFormA** (ANSI)<br/>                                           |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
+| Nomi Unicode e ANSI<br/>   | **DeleteFormW** (Unicode) ed **DeleteFormA** (ANSI)<br/>                                           |
 
 
 

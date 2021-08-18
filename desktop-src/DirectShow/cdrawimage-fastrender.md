@@ -1,7 +1,7 @@
 ---
 description: Il metodo FastRender disegna l'immagine video usando le funzioni BitBlt o StretchBlt.
 ms.assetid: 8bbc96ce-393f-46fb-bf90-61d3ce0ef0d6
-title: Metodo CDrawImage. FastRender (Winutil. h)
+title: Metodo CDrawImage.FastRender (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 823583beed6696d40803ccc098410dac053b8948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 146c3736f7aaa89fc9a724d9dd7e4bfb58160e21e2de57f40a8e855c8a3c1446
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043606"
 ---
-# <a name="cdrawimagefastrender-method"></a>CDrawImage. FastRender, metodo
+# <a name="cdrawimagefastrender-method"></a>Metodo CDrawImage.FastRender
 
-Il `FastRender` metodo disegna l'immagine video usando le funzioni **BitBlt** o **StretchBlt** .
+Il `FastRender` metodo disegna l'immagine video usando le **funzioni BitBlt** **o StretchBlt.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void FastRender(
 *pMediaSample* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio che contiene l'immagine.
+Puntatore [**all'interfaccia IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio che contiene l'immagine.
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CDrawImage::D rawImage**](cdrawimage-drawimage.md) chiama questo metodo, ma solo se l'allocatore per la connessione è un oggetto [**CImageAllocator**](cimageallocator.md) . In tal caso, l'esempio multimediale è sicuramente un oggetto [**CImageSample**](cimagesample.md) . L'oggetto **CImageSample** usa la funzione **CreateDIBSection** per allocare la memoria condivisa per la bitmap, che consente di creare l'immagine usando **BitBlt** o **StretchBlt**.
+Il [**metodo CDrawImage::D rawImage**](cdrawimage-drawimage.md) chiama questo metodo, ma solo se l'allocatore per la connessione è un [**oggetto CImageAllocator.**](cimageallocator.md) In tal caso, l'esempio multimediale è garantito come [**oggetto CImageSample.**](cimagesample.md) **L'oggetto CImageSample** usa la funzione **CreateDIBSection** per allocare memoria condivisa per la bitmap, che consente di disegnare l'immagine usando **BitBlt** **o StretchBlt.**
 
-Questo metodo chiama **BitBlt** se i rettangoli di origine e destinazione corrispondono esattamente o **StretchBlt** in caso contrario.
+Questo metodo chiama **BitBlt** se i rettangoli di origine e targer corrispondono esattamente oppure **StretchBlt** in caso contrario.
 
-Se il filtro non è il proprietario dell'allocatore, il metodo **DrawImage** USA [**CDrawImage:: SlowRender**](cdrawimage-slowrender.md) per creare l'immagine.
+Se il filtro non è proprietario dell'allocatore, il **metodo DrawImage** usa [**CDrawImage::SlowRender**](cdrawimage-slowrender.md) per disegnare l'immagine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Se il filtro non è il proprietario dell'allocatore, il metodo **DrawImage** USA
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

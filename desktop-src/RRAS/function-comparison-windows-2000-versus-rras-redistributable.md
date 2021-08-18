@@ -1,27 +1,27 @@
 ---
-title: Confronto tra le funzioni di Windows 2000 e RRAS ridistribuibile
-description: L'API RAS viene distribuita come funzionalità di Windows 2000 e sistemi operativi successivi ed è disponibile come ridistribuibile per Windows NT 4,0 con Service Pack 3 (SP3) e versioni precedenti.
+title: Confronto tra Windows 2000 e RRAS Redistributable
+description: L'API RAS viene distribuita come funzionalità dei sistemi operativi Windows 2000 e versioni successive ed è disponibile come ridistribuibile per Windows NT 4.0 con Service Pack 3 (SP3) e versioni precedenti.
 ms.assetid: fd6c76b9-52e2-405e-b62e-055cfbdb5ad6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 745ad0c50654c8269c3e62b03629a7ae12a17476
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 027c120133573b1d0c452b74dd02ab8fa0aa6f3367eb1a5fc9668a2de089c758
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995341"
 ---
-# <a name="function-comparison-windows-2000-vs-rras-redistributable"></a>Confronto tra le funzioni: Windows 2000 e RRAS ridistribuibile
+# <a name="function-comparison-windows-2000-vs-rras-redistributable"></a>Confronto tra funzioni: Windows 2000 e RRAS Redistributable
 
-L'API RAS viene distribuita come funzionalità di Windows 2000 e sistemi operativi successivi ed è disponibile come ridistribuibile per Windows NT 4,0 con Service Pack 3 (SP3) e versioni precedenti. RAS fornisce le stesse funzionalità in entrambi i formati, ma la convenzione di denominazione utilizzata è diversa per gli elementi di riferimento in ogni versione dell'API RAS.
+L'API RAS viene distribuita come funzionalità dei sistemi operativi Windows 2000 e versioni successive ed è disponibile come ridistribuibile per Windows NT 4.0 con Service Pack 3 (SP3) e versioni precedenti. RAS offre la stessa funzionalità in entrambi i formati, ma la convenzione di denominazione usata è diversa per gli elementi di riferimento in ogni versione dell'API RAS.
 
-Le funzioni RAS per Windows NT 4,0 con SP3 e versioni precedenti iniziano in genere con il prefisso "RasAdmin". Le funzioni analoghe per il servizio Routing e accesso remoto (RRAS) iniziano con il prefisso "MprAdmin". Ad esempio, RAS fornisce una funzione denominata [**RasAdminPortGetInfo**](rasadminportgetinfo.md). La funzione analoga in RRAS è denominata [**MprAdminPortGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo). Come esempio simile, RAS fornisce la funzione di callback [**RasAdminGetIpAddressForUser**](rasadmingetipaddressforuser.md). RRAS fornisce una funzione di callback simile denominata [**MprAdminGetIpAddressForUser**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmingetipaddressforuser). Le eccezioni a questa regola sono [**RasAdminPortClearStatistics**](rasadminportclearstatistics.md), che in RRAS è [**MprAdminPortClearStats**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportclearstats)e [**RasAdminFreeBuffer**](rasadminfreebuffer.md), che in RRAS è [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree).
+Le funzioni RAS per Windows NT 4.0 con SP3 e versioni precedenti iniziano in genere con il prefisso "RasAdmin". Le funzioni analoghe per routing e servizio di accesso remoto (RRAS) iniziano con il prefisso "MprAdmin". Ad esempio, RAS fornisce una funzione denominata [**RasAdminPortGetInfo**](rasadminportgetinfo.md). La funzione analoga in RRAS è denominata [**MprAdminPortGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo). Come esempio simile, RAS fornisce la funzione di callback [**RasAdminGetIpAddressForUser.**](rasadmingetipaddressforuser.md) RRAS fornisce una funzione di callback simile denominata [**MprAdminGetIpAddressForUser**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmingetipaddressforuser). Le eccezioni a questa regola sono [**RasAdminPortClearStatistics**](rasadminportclearstatistics.md), che in RRAS è [**MprAdminPortClearStats**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportclearstats)e [**RasAdminFreeBuffer**](rasadminfreebuffer.md), che in RRAS è [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree).
 
-Nella tabella seguente sono elencate le funzioni RAS di Windows NT 4,0 SP3 e le funzioni RRAS corrispondenti.
+La tabella seguente elenca le Windows NT 4.0 SP3 RAS e le funzioni RRAS corrispondenti.
 
 
 
-| RAS di Windows NT 4,0                                                                   | RRAS                                                                                 |
+| Windows NT 4.0 RAS                                                                   | Rras                                                                                 |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [**RasAdminAcceptNewConnection**](rasadminacceptnewconnection.md)                   | [**MprAdminAcceptNewConnection**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminacceptnewconnection)                   |
 | [**RasAdminConnectionHangupNotification**](rasadminconnectionhangupnotification.md) | [**MprAdminConnectionHangupNotification**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminconnectionhangupnotification) |
@@ -38,11 +38,11 @@ Nella tabella seguente sono elencate le funzioni RAS di Windows NT 4,0 SP3 e le 
 
 
 
- 
+ 
 
-Sebbene le funzioni RRAS siano simili a quelle di Windows NT 4,0 con SP3 e le controparti RAS precedenti nella funzionalità, le funzioni RRAS utilizzano spesso un set di parametri diverso. Per informazioni complete sull'elenco di parametri di questa funzione, vedere la pagina di riferimento relativa a una determinata funzione.
+Anche se le funzioni RRAS sono simili Windows NT 4.0 con SP3 e le controparti RAS precedenti nella funzionalità, le funzioni RRAS spesso accettano un set diverso di parametri. Per informazioni complete sull'elenco dei parametri di tale funzione, vedere la pagina di riferimento per una funzione specifica.
 
-RRAS Redistributable per Windows NT 4,0 con SP3 e versioni precedenti aggiunge le funzioni seguenti, che non hanno controparti RAS:
+RRAS redistributable per Windows NT 4.0 con SP3 e versioni precedenti aggiunge le funzioni seguenti, che non hanno controparti RAS:
 
 [**MprAdminAcceptNewLink**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminacceptnewlink)
 
@@ -64,7 +64,7 @@ RRAS Redistributable per Windows NT 4,0 con SP3 e versioni precedenti aggiunge l
 
 [**MprAdminServerDisconnect**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminserverdisconnect)
 
-Oltre alle funzioni precedenti, Windows 2000 e i sistemi operativi successivi aggiungono le funzioni seguenti:
+Oltre alle funzioni precedenti, Windows 2000 e versioni successive aggiungono le funzioni seguenti:
 
 [**MprAdminSendUserMessage**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminsendusermessage)
 
@@ -72,9 +72,9 @@ Oltre alle funzioni precedenti, Windows 2000 e i sistemi operativi successivi ag
 
 [**MprAdminConnectionHangupNotification2**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminconnectionhangupnotification2)
 
- 
+ 
 
- 
+ 
 
 
 

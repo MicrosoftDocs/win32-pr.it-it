@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_COLUMNCREATE'
-title: Proprietà JET_COLUMNCREATE
+description: 'Altre informazioni su: JET_COLUMNCREATE proprietà'
+title: JET_COLUMNCREATE proprietà
 TOCTitle: JET_COLUMNCREATE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columncreate_properties(v=EXCHG.10)
 ms:contentKeyID: 55103384
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 466065fbc2dc0f002593c432e48513aa402805a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89e233b3f920d0bcd10c842e8363061e480f024c6d9051774eef5fea23f37d2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945831"
 ---
-# <a name="jet_columncreate-properties"></a>Proprietà JET_COLUMNCREATE
+# <a name="jet_columncreate-properties"></a>JET_COLUMNCREATE proprietà
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_COLUMNCREATE](./jet-columncreate-class.md) espone i membri seguenti.
+Il [JET_COLUMNCREATE](./jet-columncreate-class.md) tipo espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,12 +35,12 @@ Il tipo di [JET_COLUMNCREATE](./jet-columncreate-class.md) espone i membri segue
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335071(v=exchg.10).md">cbDefault</a></td>
-<td>Ottiene o imposta la dimensione del valore predefinito.</td>
+<td>Ottiene o imposta le dimensioni del valore predefinito.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335032(v=exchg.10).md">cbMax</a></td>
-<td>Ottiene o imposta la lunghezza massima della colonna. Questa operazione è significativa solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LONGTEXT</a>, <a href="hh577895(v=exchg.10).md">Binary</a> e <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
+<td>Ottiene o imposta la lunghezza massima della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> <a href="hh577895(v=exchg.10).md">e LongBinary</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -49,28 +49,28 @@ Il tipo di [JET_COLUMNCREATE](./jet-columncreate-class.md) espone i membri segue
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn335077(v=exchg.10).md">ColumnID</a></td>
-<td>Ottiene l'ColumnID della colonna.</td>
+<td><a href="dn335077(v=exchg.10).md">columnid</a></td>
+<td>Ottiene l'id colonna della colonna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335035(v=exchg.10).md">cp</a></td>
-<td>Ottiene o imposta la tabella codici della colonna. Questa operazione è significativa solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> e <a href="hh577895(v=exchg.10).md">LONGTEXT</a>.</td>
+<td>Ottiene o imposta la tabella codici della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> e <a href="hh577895(v=exchg.10).md">LongText.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335076(v=exchg.10).md">Err</a></td>
-<td>Ottiene o imposta il codice di errore della creazione della colonna.</td>
+<td>Ottiene o imposta il codice di errore dalla creazione di questa colonna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335036(v=exchg.10).md">grbit</a></td>
-<td>Ottiene o imposta le opzioni della colonna.</td>
+<td>Ottiene o imposta le opzioni di colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335037(v=exchg.10).md">pvDefault</a></td>
-<td>Ottiene o imposta il valore predefinito (NULL se non è presente alcun valore).</td>
+<td>Ottiene o imposta il valore predefinito (NULL se non ne è stato specificato uno).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -87,6 +87,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNCREATE](./jet-columncreate-class.md)
+[JET_COLUMNCREATE classe](./jet-columncreate-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

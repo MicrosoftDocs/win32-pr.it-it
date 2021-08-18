@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnClose gestisce \_ i messaggi di chiusura WM.
+description: Il metodo OnClose gestisce i messaggi WM \_ CLOSE.
 ms.assetid: e562add4-752e-4665-a75e-a5526fb7f045
-title: Metodo CBaseWindow. OnClose (Winutil. h)
+title: Metodo CBaseWindow.OnClose (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 189b08c116f66ff864ffe308befb990973c6ce43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 880e82ca527972b5074ac290fda34ad1c7868a33cbbe1cad12885b56720cef99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635141"
 ---
-# <a name="cbasewindowonclose-method"></a>Metodo CBaseWindow. OnClose
+# <a name="cbasewindowonclose-method"></a>Metodo CBaseWindow.OnClose
 
-Il `OnClose` metodo gestisce \_ i messaggi di chiusura WM.
+Il `OnClose` metodo gestisce i messaggi WM \_ CLOSE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true**.
+Restituisce **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Nella classe di base, questo metodo nasconde semplicemente la finestra. In genere, una classe derivata eseguirà l'override di questo metodo in modo che invii anche un evento [**EC \_ USERABORT**](ec-userabort.md) . Non eseguire l'override del metodo per eliminare definitivamente la finestra. Al contrario, chiamare il metodo [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) quando il filtro proprietario viene eliminato definitivamente.
+Nella classe di base questo metodo nasconde semplicemente la finestra. In genere, una classe derivata eseguirà l'override di questo metodo in modo che invii anche un evento [**\_ EC USERABORT.**](ec-userabort.md) Non eseguire l'override del metodo per eliminare la finestra. Chiamare invece il [**metodo CBaseWindow::D oneWithWindow**](cbasewindow-donewithwindow.md) quando il filtro proprietario viene eliminato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Nella classe di base, questo metodo nasconde semplicemente la finestra. In gener
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

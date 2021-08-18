@@ -31,7 +31,7 @@ Specifica la descrizione dell'attività.
  />
 ```
 
-**L'elemento Description** è definito dal tipo complesso [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
+**L'elemento** Description è definito dal [**tipo complesso registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,15 +39,15 @@ Specifica la descrizione dell'attività.
 
 | Elemento                                                                           | Derivato da                                                                         | Descrizione                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica le informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, la descrizione di un'attività viene specificata tramite la [**proprietà RegistrationInfo.Description.**](registrationinfo-description.md)
+Per lo sviluppo di script, la descrizione di un'attività viene specificata usando la [**proprietà RegistrationInfo.Description.**](registrationinfo-description.md)
 
-Per lo sviluppo C++, la descrizione di un'attività viene specificata usando la [**proprietà IRegistrationInfo::D escription.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_description)
+Per lo sviluppo in C++, la descrizione di un'attività viene specificata usando la proprietà [**IRegistrationInfo::D escription.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_description)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Per lo sviluppo C++, la descrizione di un'attività viene specificata usando la 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ Per lo sviluppo C++, la descrizione di un'attività viene specificata usando la 
 
 <dl> <dt>
 
-[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

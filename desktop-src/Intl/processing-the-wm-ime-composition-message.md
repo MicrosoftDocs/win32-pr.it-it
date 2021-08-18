@@ -1,19 +1,19 @@
 ---
-description: Un'applicazione compatibile con IME che elabora il \_ messaggio di \_ composizione IME WM verifica i bit nel parametro lParam e chiama la funzione ImmGetCompositionString per recuperare la stringa o i dati indicati.
+description: Un'applicazione che elabora il messaggio COMPOSITION di WM IME testa i bit nel parametro lParam e chiama la \_ funzione ImmGetCompositionString per recuperare la stringa o i dati \_ indicati.
 ms.assetid: 6d9cb9e2-f30e-4299-9af5-a705cd40b185
-title: Elaborazione del messaggio di WM_IME_COMPOSITION
+title: Elaborazione del messaggio WM_IME_COMPOSITION
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 059ff6f38531cfdea781d5633226d32d054f13b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cb7237c986270f2684552fb19b1ad31a1dd369a723b0c8ef47189de95021022
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040661"
 ---
-# <a name="processing-the-wm_ime_composition-message"></a>Elaborazione del \_ messaggio di \_ composizione IME WM
+# <a name="processing-the-wm_ime_composition-message"></a>Elaborazione del messaggio COMPOSITION di WM \_ IME \_
 
-Un'applicazione compatibile con IME che elabora il messaggio di [**\_ \_ composizione IME WM**](wm-ime-composition.md) verifica i bit nel parametro *lParam* e chiama la funzione [**ImmGetCompositionString**](/windows/desktop/api/Imm/nf-imm-immgetcompositionstringa) per recuperare la stringa o i dati indicati. Nell'esempio seguente viene verificata la presenza della stringa di risultato, viene allocata una quantità di memoria sufficiente per la stringa e viene recuperata la stringa di risultato dall'IME.
+Un'applicazione che elabora il messaggio [**COMPOSITION di WM \_ IME \_**](wm-ime-composition.md) testa i bit nel parametro *lParam* e chiama la [**funzione ImmGetCompositionString**](/windows/desktop/api/Imm/nf-imm-immgetcompositionstringa) per recuperare la stringa o i dati indicati. Nell'esempio seguente viene verificata la presenza della stringa di risultato, viene allocata memoria sufficiente per la stringa e viene recuperata la stringa di risultato dall'IME.
 
 
 ```C++
@@ -62,7 +62,7 @@ case WM_IME_COMPOSITION:
 
 <dl> <dt>
 
-[Uso di gestione metodi di input](using-input-method-manager.md)
+[Uso di Gestione metodi di input](using-input-method-manager.md)
 </dt> </dl>
 
  

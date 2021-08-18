@@ -1,19 +1,19 @@
 ---
-description: Il \_ tipo di dati del registro DVD contiene un valore per il registro parametri generali DVD (GPRM) o il registro parametri di sistema (SPRM).
+description: Il tipo di dati DVD REGISTER contiene un valore per un registro di parametri generale (GPRM) o un registro dei \_ parametri di sistema (SPRM) DVD.
 ms.assetid: cd1aaeff-241c-4e54-9d05-da5cf61b58df
-title: DVD_REGISTER (Strmif. h)
+title: DVD_REGISTER (Strmif.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa7aba97cc0a1ddf9bf69a22e5d1adf3bf020997
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e849156b0e23cefa858b361e5ed10a1aecfbcd7f26a86c5194a5166b5213169
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043521"
 ---
-# <a name="dvd_register"></a>\_Registro DVD
+# <a name="dvd_register"></a>DVD \_ REGISTER
 
-Il tipo di dati del **\_ Registro DVD** contiene un valore per il registro parametri generali DVD (GPRM) o il registro parametri di sistema (SPRM).
+Il **tipo di dati DVD \_ REGISTER** contiene un valore per un registro di parametri generale (GPRM) o un registro dei parametri di sistema (SPRM) DVD.
 
 
 ```C++
@@ -28,7 +28,7 @@ typedef WORD DVD_REGISTER;
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Strmif. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Strmif.h (includere Dshow.h)</dt> </dl> |
 
 
 
@@ -36,7 +36,7 @@ typedef WORD DVD_REGISTER;
 
 <dl> <dt>
 
-[Tipi di dati DirectShow](directshow-data-types.md)
+[DirectShow Tipi di dati](directshow-data-types.md)
 </dt> <dt>
 
 [**GPRMARRAY**](gprmarray.md)

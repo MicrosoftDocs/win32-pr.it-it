@@ -1,24 +1,24 @@
 ---
-description: In Windows 7, WMI ha implementato la \_ classe Win32 OptionalFeature. Questa classe recupera lo stato delle funzionalità facoltative presenti in un computer.
+description: In Windows 7 WMI ha implementato la classe \_ OptionalFeature Win32. Questa classe recupera lo stato delle funzionalità facoltative presenti in un computer.
 ms.assetid: d756b0c0-b9f4-4b71-9f07-963a0dd5e585
 ms.tgt_platform: multiple
 title: Esecuzione di query sullo stato delle funzionalità facoltative
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c190b2a2143dae1e22c30b3e5e803908bcb4116
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec27457336adcc5c358aad0a5e139c1c7c07f6bcb72335ec549f9ca98cc1e5a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996031"
 ---
 # <a name="querying-the-status-of-optional-features"></a>Esecuzione di query sullo stato delle funzionalità facoltative
 
-In Windows 7, WMI ha implementato la classe [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) . Questa classe recupera lo stato delle funzionalità facoltative presenti in un computer.
+In Windows 7 WMI ha implementato la [**classe \_ OptionalFeature Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Questa classe recupera lo stato delle funzionalità facoltative presenti in un computer.
 
-È possibile utilizzare i cmdlet di Windows PowerShell per eseguire una query sullo stato delle funzionalità facoltative. Tutti gli esempi in questo argomento usano il cmdlet Get-WmiObject. Per ulteriori informazioni, vedere [Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
+È possibile usare Windows PowerShell cmdlet per eseguire query sullo stato delle funzionalità facoltative. Tutti gli esempi in questo argomento usano il cmdlet Get-WmiObject. Per altre informazioni, vedere [Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
 
-**Per recuperare tutte le istanze delle funzionalità facoltative presenti in un computer**
+**Per recuperare tutte le istanze di funzionalità facoltative presenti in un computer**
 
 -   <span codelanguage="PowerShell"></span>
     <table>
@@ -61,7 +61,7 @@ In Windows 7, WMI ha implementato la classe [**Win32 \_ OptionalFeature**](/wind
     
 
     > [!Note]  
-    > La proprietà **Name** distingue tra maiuscole e minuscole.
+    > La **proprietà name** fa distinzione tra maiuscole e minuscole.
 
      
 
@@ -86,13 +86,13 @@ In Windows 7, WMI ha implementato la classe [**Win32 \_ OptionalFeature**](/wind
 
     
 
-    Per ulteriori informazioni sui possibili valori per la proprietà **InstallState** , vedere [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
+    Per altre informazioni sui valori possibili per la **proprietà InstallState,** vedere [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**\_OptionalFeature Win32**](/windows/desktop/CIMWin32Prov/win32-optionalfeature)
+[**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature)
 </dt> </dl>
 
  

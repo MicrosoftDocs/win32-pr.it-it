@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione MemoryDeviceLocation Win32 mette in correlazione un dispositivo di memoria e la memoria fisica in cui è presente.
+description: La classe WMI di associazione MemoryDeviceLocation Win32 mette in relazione un dispositivo di memoria e \_ la memoria fisica in cui si trova.
 ms.assetid: 6fef916e-44e2-4b9f-94b7-c7204259004a
 ms.tgt_platform: multiple
-title: Classe Win32_MemoryDeviceLocation
+title: Win32_MemoryDeviceLocation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5cf1ba93a2574810892443aefa43e1c7c501636c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ba19807d888c27246a17d8af73cfd81bfd8ba52136e466ab78433316ea533339
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973011"
 ---
-# <a name="win32_memorydevicelocation-class"></a>Win32 \_ MemoryDeviceLocation (classe)
+# <a name="win32_memorydevicelocation-class"></a>Classe MemoryDeviceLocation Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ MemoryDeviceLocation Win32** mette in correlazione un dispositivo di memoria e la memoria fisica in cui è presente.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di **associazione \_ MemoryDeviceLocation Win32** mette in relazione un dispositivo di memoria e la memoria fisica in cui si trova.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_MemoryDeviceLocation : CIM_Realizes
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ MemoryDeviceLocation** presenta questi tipi di membri:
+La **classe \_ MemoryDeviceLocation Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ MemoryDeviceLocation** dispone di queste proprietà.
+La **classe \_ MemoryDeviceLocation Win32** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo di dati: **Win32 \_ PhysicalMemory**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemory")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemory")
 </dt> </dl>
 
-[**\_ PhysicalMemory Win32**](win32-physicalmemory.md) che rappresenta la memoria fisica che contiene il dispositivo di memoria.
+Oggetto [**\_ PhysicalMemory Win32**](win32-physicalmemory.md) che rappresenta la memoria fisica contenente il dispositivo di memoria.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo di dati: **Win32 \_ MemoryDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryDevice")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryDevice")
 </dt> </dl>
 
-**\_ MemoryDeviceLocation Win32** che rappresenta il dispositivo di memoria esistente nella memoria fisica.
+Oggetto **\_ MemoryDeviceLocation Win32** che rappresenta il dispositivo di memoria esistente nella memoria fisica.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ MemoryDeviceLocation** è derivata da [**CIM \_ realizzations**](cim-realizes.md).
+La **classe \_ MemoryDeviceLocation Win32** deriva da [**CIM \_ Realizes**](cim-realizes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ MemoryDeviceLocation** è derivata da [**CIM \_ realizzatio
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,10 +106,10 @@ La classe **Win32 \_ MemoryDeviceLocation** è derivata da [**CIM \_ realizzatio
 
 <dl> <dt>
 
-[**CIM \_ realizza**](cim-realizes.md)
+[**CIM \_ Realizes**](cim-realizes.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

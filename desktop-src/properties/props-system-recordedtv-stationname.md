@@ -4,12 +4,12 @@ ms.assetid: 26da8e3b-de9e-4f6e-8e17-fad1d5e72b42
 title: System.RecordedTV.StationName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2fdd284a082adbc127f237790b12c79eb575da
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6b670525e8415a92a72c286ee1ce4155fe6e257c526d79657ffcb7c1f05efb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938151"
 ---
 # <a name="systemrecordedtvstationname"></a>System.RecordedTV.StationName
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSrcAtTime recupera l'oggetto di origine più vicino al tempo specificato, in base alle condizioni di limite specificate.
+description: Il metodo GetSrcAtTime recupera l'oggetto di origine più vicino all'ora specificata, in base alle condizioni limite specificate.
 ms.assetid: 0469c0c2-13df-49f7-95b2-15d3069c5b1c
-title: 'Metodo IAMTimelineTrack:: GetSrcAtTime (qedit. h)'
+title: Metodo IAMTimelineTrack::GetSrcAtTime (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4b726d26efd0550df364200a27d536d60d38274a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fde7d4d1e1a92c4f403c4d6ae38517bd715cf6d474f22f8a2e262d69fc57139a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052331"
 ---
-# <a name="iamtimelinetrackgetsrcattime-method"></a>Metodo IAMTimelineTrack:: GetSrcAtTime
+# <a name="iamtimelinetrackgetsrcattime-method"></a>Metodo IAMTimelineTrack::GetSrcAtTime
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `GetSrcAtTime` metodo recupera l'oggetto di origine più vicino al tempo specificato, in base alle condizioni di limite specificate.
+Il `GetSrcAtTime` metodo recupera l'oggetto di origine più vicino all'ora specificata, in base alle condizioni limite specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ HRESULT GetSrcAtTime(
 
 <dl> <dt>
 
-*ppSrc* \[ out\]
+*ppSrc* \[ Cambio\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IAMTimelineObj**](iamtimelineobj.md) dell'oggetto di origine.
+Riceve un puntatore [**all'interfaccia IAMTimelineObj**](iamtimelineobj.md) dell'oggetto di origine.
 
 </dd> <dt>
 
@@ -64,22 +64,22 @@ Ora di inizio della ricerca, in unità di 100 nanosecondi.
 *SearchDirection* 
 </dt> <dd>
 
-Membro del tipo enumerato [**DEXTERF \_ Track \_ Search \_ Flags**](dexterf-track-search-flags.md) che specifica le condizioni limite per la ricerca.
+Membro del tipo [**enumerato TRACK \_ SEARCH FLAGS \_ \_ CHE**](dexterf-track-search-flags.md) specifica le condizioni limite per la ricerca.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** :
+Restituisce uno dei valori **HRESULT** seguenti:
 
 
 
 | Codice restituito                                                                                  | Descrizione                                |
 |----------------------------------------------------------------------------------------------|--------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>      | Impossibile trovare un oggetto di origine.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>         | Si trova un oggetto di origine.<br/>        |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>      | Non è stato individuato un oggetto di origine.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Individua un oggetto di origine.<br/>        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argomento non valido.<br/>               |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Argomento puntatore **null** .<br/>      |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Argomento del puntatore **NULL.**<br/>      |
 
 
 
@@ -87,15 +87,15 @@ Restituisce uno dei seguenti valori **HRESULT** :
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo restituisce S \_ OK, l'interfaccia **IAMTimelineObj** restituita presenta un conteggio dei riferimenti in attesa. Assicurarsi di rilasciare l'interfaccia al termine dell'utilizzo.
+Se il metodo restituisce S \_ OK, **l'interfaccia IAMTimelineObj** restituita ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -105,8 +105,8 @@ Se il metodo restituisce S \_ OK, l'interfaccia **IAMTimelineObj** restituita pr
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

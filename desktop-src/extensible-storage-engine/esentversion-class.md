@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentVersion'
+description: 'Altre informazioni su: Classe EsentVersion'
 title: Classe EsentVersion
 TOCTitle: EsentVersion class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentVersion
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e220aec0f0031ee09d4006297c5bcdb5a341ab17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e835cf89f649fa220fe6729c6077f142458ef00a336a89f5fd3853a8fc5d4382
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946081"
 ---
 # <a name="esentversion-class"></a>Classe EsentVersion
 
@@ -38,10 +38,10 @@ Fornisce informazioni sulla versione di ESENT in uso.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. EsentVersion  
+  Microsoft.Isam.Esent.Interop.EsentVersion  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,4 +66,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentVersion](./esentversion-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

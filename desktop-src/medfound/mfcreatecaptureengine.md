@@ -1,7 +1,7 @@
 ---
 description: Crea un'istanza del motore di acquisizione.
 ms.assetid: 4B0C9DD6-135D-4412-A585-7E98A84101B5
-title: MFCreateCaptureEngine (funzione)
+title: Funzione MFCreateCaptureEngine
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - MFCaptureEngine.dll
-ms.openlocfilehash: a2ff0dbf46ca464c11570c8fe78e0b3dbebe3248
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18d264b30b8f3ed4d06e80f236908dd7bc81dbe96c4eb9c3231fa330331e34f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940251"
 ---
-# <a name="mfcreatecaptureengine-function"></a>MFCreateCaptureEngine (funzione)
+# <a name="mfcreatecaptureengine-function"></a>Funzione MFCreateCaptureEngine
 
-\[MFCreateCaptureEngine non è supportato e può essere modificato o non disponibile in futuro. \]
+\[MFCreateCaptureEngine non è supportato e potrebbe essere modificato o non disponibile in futuro. \]
 
 Crea un'istanza del motore di acquisizione.
 
@@ -41,20 +41,20 @@ HRESULT MFCreateCaptureEngine(
 
 <dl> <dt>
 
-*ppCaptureEngine* \[ out\]
+*ppCaptureEngine* \[ Cambio\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IMFCaptureEngine**](/windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengine) . Il chiamante deve rilasciare l'interfaccia.
+Riceve un puntatore [**all'interfaccia IMFCaptureEngine.**](/windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengine) Il chiamante deve rilasciare l'interfaccia .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce S \_ OK. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se la funzione ha esito positivo, restituisce S \_ OK. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non dispone di librerie di importazione associate e non è dichiarata in un file di intestazione pubblico. È necessario utilizzare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a MFCaptureEngine.dll.
+A questa funzione non è associata alcuna libreria di importazione e non è dichiarata in un file di intestazione pubblico. È necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico MFCaptureEngine.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Questa funzione non dispone di librerie di importazione associate e non è dichi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                     |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                        |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                     |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                        |
 | DLL<br/>                      | <dl> <dt>MFCaptureEngine.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Questa funzione non dispone di librerie di importazione associate e non è dichi
 
 <dl> <dt>
 
-[Funzioni Media Foundation](media-foundation-functions.md)
+[Media Foundation funzioni](media-foundation-functions.md)
 </dt> </dl>
 
  

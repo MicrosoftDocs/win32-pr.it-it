@@ -1,5 +1,5 @@
 ---
-description: Chiamato da CertDeleteCTLFromStore prima di eliminare un elenco di scopi consentiti dall'archivio.
+description: Chiamato da CertDeleteCTLFromStore prima di eliminare un CTL dall'archivio.
 ms.assetid: 6cda772f-7e94-414d-99fc-a90451ac0ccf
 title: Funzione di callback CertStoreProvDeleteCTL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: abeea0fdc3b6d77974b2c057d0e2ea98fe11e63a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: befc031c1be441ad23c7a50563030775b625b81b66a9e1f92df4fb7c641fe73c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993091"
 ---
 # <a name="certstoreprovdeletectl-callback-function"></a>Funzione di callback CertStoreProvDeleteCTL
 
-La funzione di callback **CertStoreProvDeleteCTL** viene chiamata da [**CertDeleteCTLFromStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certdeletectlfromstore) prima di eliminare un elenco di scopi consentiti dall'archivio. Questa funzione determina se è possibile eliminare un elenco di scopi consentiti.
+La funzione di callback **CertStoreProvDeleteCTL** viene chiamata da [**CertDeleteCTLFromStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certdeletectlfromstore) prima di eliminare un CTL dall'archivio. Questa funzione determina se un CTL può essere eliminato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ BOOL WINAPI CertStoreProvDeleteCTL(
 
 <dl> <dt>
 
-*hStoreProv* \[ in\]
+*hStoreProv* \[ Pollici\]
 </dt> <dd>
 
-Handle **HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
+**Handle HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCtlContext* \[ in\]
+*pCtlContext* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ contesto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) .
+Puntatore a una [**struttura CONTEXT \_ CTL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tutti i valori di flag necessari.
@@ -63,7 +63,7 @@ Tutti i valori di flag necessari.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se è possibile eliminare un CTL dall'archivio.
+Restituisce **TRUE** se un CTL può essere eliminato dall'archivio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Restituisce **true** se è possibile eliminare un CTL dall'archivio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

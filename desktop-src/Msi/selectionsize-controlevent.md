@@ -1,23 +1,23 @@
 ---
-description: Il controllo SelectionTree usa l'evento SelectionSize per pubblicare la dimensione dell'elemento evidenziato.
+description: Il controllo SelectionTree usa l'evento SelectionSize per pubblicare le dimensioni dell'elemento evidenziato.
 ms.assetid: 1ef161b6-f127-45ad-a312-d2adcb5124ef
-title: ControlEvent SelectionSize
+title: SelectionSize ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c11829661f0120fa5906a04f081e6c979b37180
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24c8733c0155adc085343c0a5db1a42e3aa219719babb5b342781c5bb9923ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040361"
 ---
-# <a name="selectionsize-controlevent"></a>ControlEvent SelectionSize
+# <a name="selectionsize-controlevent"></a>SelectionSize ControlEvent
 
-Il [controllo SelectionTree](selectiontree-control.md) usa l'evento SelectionSize per pubblicare la dimensione dell'elemento evidenziato. Se è un elemento padre, viene pubblicato anche il numero di elementi figlio selezionati. La stringa è una delle stringhe **SelChildCostPos**, **SelChildCostNeg**, **SelParentCostPosPos**, **SelParentCostPosNeg**, **SelParentCostNegPos** o **SelParentCostNegNeg** della [tabella UIText](uitext-table.md). Questo evento deve essere creato nella [tabella EventMapping](eventmapping-table.md).
+Il [controllo SelectionTree usa](selectiontree-control.md) l'evento SelectionSize per pubblicare le dimensioni dell'elemento evidenziato. Se si tratta di un elemento padre, viene pubblicato anche il numero di elementi figlio selezionati. La stringa è una delle stringhe **SelChildCostPos**, **SelChildCostNeg**, **SelParentCostPosPos**, **SelParentCostPosNeg**, **SelParentCostNegPos** o **SelParentCostNegNegNeg** della tabella [UIText](uitext-table.md). Questo evento deve essere creato nella [tabella EventMapping](eventmapping-table.md).
 
-Questo ControlEvent richiede l'esecuzione dell'interfaccia utente a livello di [*interfaccia utente completo*](f-gly.md) . Questo evento non funzionerà con un'interfaccia utente [*ridotta*](r-gly.md) o un' [*interfaccia utente di base*](b-gly.md). Per informazioni, vedere [livelli di interfaccia utente](user-interface-levels.md).
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
-Questo evento può influire solo sui controlli che si trovano nella stessa finestra di dialogo del controllo SelectionTree.
+Questo evento può interessare solo i controlli che si trovano nella stessa finestra di dialogo del controllo SelectionTree.
 
 ## <a name="published-by"></a>Pubblicato da
 
@@ -25,15 +25,15 @@ Questo evento può influire solo sui controlli che si trovano nella stessa fines
 
 ## <a name="argument"></a>Argomento
 
-Nessuna.
+Nessuno.
 
-## <a name="action-on-subscribers"></a>Azione sui sottoscrittori
+## <a name="action-on-subscribers"></a>Azione nei Sottoscrittori
 
-Nessuna.
+Nessuno.
 
 ## <a name="typical-use"></a>Utilizzo tipico
 
-Controllo di [testo](text-control.md) nella stessa finestra di dialogo modale del controllo SelectionTree tramite la [tabella EventMapping](eventmapping-table.md). Il controllo testo usa questo evento per visualizzare la dimensione dell'elemento evidenziato.
+Controllo [Text](text-control.md) nella stessa finestra di dialogo modale del controllo SelectionTree tramite la [tabella EventMapping](eventmapping-table.md). Il controllo Text usa questo evento per visualizzare le dimensioni dell'elemento evidenziato.
 
  
 

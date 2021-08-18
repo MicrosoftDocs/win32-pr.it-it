@@ -4,16 +4,16 @@ ms.assetid: 0c2d739d-736d-4773-9747-1107546a973c
 title: Metodo ITTimeCollection::get__NewEnum (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acfc9d616efb58c6173f2c9c6e5913d27776958c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4ba76f1d10e2cb9ee937ec688af3e87e0bb9310df9fc39afaef64e60ea55b1dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991901"
 ---
 # <a name="ittimecollectionget__newenum-method"></a>Metodo ITTimeCollection::get \_ \_ NewEnum
 
-\[ Le interfacce e i controlli di conferenza di telefonia IP di Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
 Il **metodo get \_ \_ NewEnum** restituisce un enumeratore per la raccolta.
 

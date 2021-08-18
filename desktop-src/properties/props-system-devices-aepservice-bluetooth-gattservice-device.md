@@ -1,19 +1,19 @@
 ---
-description: Informazioni su come la proprietà System.Devices.AepService.Bluetooth.GattService.Device imposta l'indirizzo del dispositivo Bluetooth su cui eseguire query.
+description: Informazioni su come System.Devices.AepService. Bluetooth. La proprietà GattService.Device imposta l'Bluetooth dispositivo su cui eseguire una query.
 ms.assetid: 0a84f283-4b18-4042-afc5-5b75907fe9f2
-title: System.Devices.AepService.Bluetooth.GattService.Device
+title: System.Devices.AepService. Bluetooth. GattService.Device
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb2b38f9c67a86668b6eed85d951aa72ac22058
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 89a3c7864dab9fb58d3bd84a37ae7c7738316be019fed407cbb8c40edb61a5d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945971"
 ---
-# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System.Devices.AepService.Bluetooth.GattService.Device
+# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System.Devices.AepService. Bluetooth. GattService.Device
 
-Imposta l'indirizzo del dispositivo Bluetooth su cui eseguire una query.
+Imposta l'Bluetooth del dispositivo su cui eseguire una query.
 
 ## <a name="windows-10-version-1511"></a>Windows 10 versione 1511
 

@@ -1,5 +1,5 @@
 ---
-description: Questa sezione contiene le descrizioni delle funzioni di callback SPI di telefonia.
+description: Questa sezione contiene le descrizioni delle funzioni di callback spi di telefonia.
 ms.assetid: 0694e703-b99c-41f3-8c65-9407add27077
 title: Funzioni di callback TSPI
 ms.topic: article
@@ -13,10 +13,10 @@ ms.locfileid: "119991621"
 ---
 # <a name="tspi-callback-functions"></a>Funzioni di callback TSPI
 
-Questa sezione contiene le descrizioni delle funzioni di callback SPI di telefonia. Le funzioni di callback TSPI includono:
+Questa sezione contiene le descrizioni delle funzioni di callback spi di telefonia. Le funzioni di callback TSPI includono:
 
 -   [**Procedura di \_ completamento**](/windows/win32/api/tspi/nc-tspi-async_completion)
--   [**Evento \_ line**](/windows/win32/api/tspi/nc-tspi-lineevent)
+-   [**Evento \_ riga**](/windows/win32/api/tspi/nc-tspi-lineevent)
 -   [**\_Telefono Evento**](/windows/desktop/api/tspi/nc-tspi-phoneevent)
 
  

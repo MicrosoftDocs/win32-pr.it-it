@@ -1,10 +1,10 @@
 ---
 title: Elemento AllowHardTerminate (settingsType)
-description: Specifica che l'attività può essere terminata utilizzando TerminateProcess.
+description: Specifica che l'attività può essere terminata tramite TerminateProcess.
 ms.assetid: 093a3cc6-d3e1-48e3-bc9e-0b15df2a54de
 keywords:
 - Elemento AllowHardTerminate (settingsType) Utilità di pianificazione
-- Utilità di pianificazione elemento AllowHardTerminate
+- Elemento AllowHardTerminate Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eba987b42206121b91b3c096f298eac32cf52b38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7a143dfb0024cced8a67595e17b12fba9d037b335b425272e1ad2a7999e0b11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010921"
 ---
 # <a name="allowhardterminate-settingstype-element"></a>Elemento AllowHardTerminate (settingsType)
 
-Specifica che l'attività può essere terminata utilizzando TerminateProcess.
+Specifica che l'attività può essere terminata tramite TerminateProcess.
 
 ``` syntax
 <xs:element name="AllowHardTerminate"
@@ -33,7 +33,7 @@ Specifica che l'attività può essere terminata utilizzando TerminateProcess.
  />
 ```
 
-L'elemento **AllowHardTerminate** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento AllowHardTerminate** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -47,13 +47,13 @@ L'elemento **AllowHardTerminate** è definito dal tipo complesso [**settingsType
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere la [**Proprietà AllowHardTerminate di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowhardterminate).
+Per lo sviluppo C++, vedere la [**proprietà AllowHardTerminate di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowhardterminate).
 
-Per lo sviluppo di script, vedere [**TaskSettings. AllowHardTerminate**](tasksettings-allowhardterminate.md).
+Per lo sviluppo di script, [**vedere TaskSettings.AllowHardTerminate**](tasksettings-allowhardterminate.md).
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio completo del codice XML per un'attività che consente la terminazione rigida, vedere l' [esempio di trigger di ora (XML)](time-trigger-example--xml-.md).
+Per un esempio completo del codice XML per un'attività che consente la terminazione rigida, vedere [Time Trigger Example (XML) ( Esempio di trigger temporale (XML)](time-trigger-example--xml-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Per un esempio completo del codice XML per un'attività che consente la terminaz
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ Per un esempio completo del codice XML per un'attività che consente la terminaz
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

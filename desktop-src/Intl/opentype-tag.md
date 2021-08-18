@@ -1,19 +1,19 @@
 ---
-description: Definisce una matrice di 4 byte che contiene i valori ASCII a 4 8 bit, A-Z o a-z per identificare gli script OpenType, il linguaggio e i tag della funzionalità del tipo di carattere.
+description: Definisce una matrice a 4 byte che contiene quattro valori ASCII a 8 bit di spazio, A-Z o a-z per identificare i tag di funzionalità dello script, della lingua e del tipo di carattere OpenType.
 ms.assetid: 188ad9a1-e0eb-411f-b6df-8c394d122d6f
-title: OPENTYPE_TAG (usp10. h)
+title: OPENTYPE_TAG (Usp10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf973c03f26bdb8f8b3799e1780fed5075d315cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7c784fa7f6243e7e5444dcbc64c690ce7184d6ace469759c19be9de87854732
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040781"
 ---
-# <a name="opentype_tag"></a>\_tag OPENTYPE
+# <a name="opentype_tag"></a>OPENTYPE \_ TAG
 
-Definisce una matrice di 4 byte che contiene i valori ASCII a 4 8 bit, A-Z o a-z per identificare gli script OpenType, il linguaggio e i tag della funzionalità del tipo di carattere.
+Definisce una matrice a 4 byte che contiene quattro valori ASCII a 8 bit di spazio, A-Z o a-z per identificare i tag di funzionalità dello script, della lingua e del tipo di carattere OpenType.
 
 
 ```C++
@@ -24,13 +24,13 @@ typedef ULONG OPENTYPE_TAG;
 
 ## <a name="remarks"></a>Commenti
 
-Negli esempi seguenti vengono definite le rappresentazioni dei tag della funzionalità OpenType.
+Gli esempi seguenti definiscono le rappresentazioni dei tag di funzionalità OpenType.
 
--   Il tag di funzionalità per la funzionalità di legatura è "Liga".
--   I tag di lingua per Romeno, Urdu e persiano sono rispettivamente "ROM", "URD" e "lontano". Si noti che ognuno di questi tag termina con uno spazio.
--   I tag di script per gli script latini e arabi sono rispettivamente "Latn" e "Arab".
+-   Il tag di funzionalità per la funzionalità della legatura è "liga".
+-   I tag di lingua per romeno, urdu e persiano sono rispettivamente "ROM", "URD" e "FAR". Si noti che ognuno di questi tag termina con uno spazio.
+-   I tag di script per gli script latini e arabi sono rispettivamente "latn" e "arabo".
 
-Per ulteriori informazioni sui tag delle funzionalità OpenType e sulla specifica OpenType, vedere <https://www.microsoft.com/typography/otspec/featuretags.htm> .
+Per altre informazioni sui tag di funzionalità OpenType e sulla specifica OpenType, vedere <https://www.microsoft.com/typography/otspec/featuretags.htm> .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,8 +40,8 @@ Per ulteriori informazioni sui tag delle funzionalità OpenType e sulla specific
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Componente ridistribuibile<br/>          | Usp10.dll versione 1,600 o successiva in Windows Espandi in un secondo momento<br/>                |
-| Intestazione<br/>                   | <dl> <dt>Usp10. h</dt> </dl> |
+| Componente ridistribuibile<br/>          | Usp10.dll versione 1.600 o successiva in Windows XPand in un secondo momento<br/>                |
+| Intestazione<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sui tag delle funzionalità OpenType e sulla specific
 [Uniscribe](uniscribe.md)
 </dt> <dt>
 
-[Strutture Uniscribe](uniscribe-structures.md)
+[Annullare la sottoscrizione di strutture](uniscribe-structures.md)
 </dt> <dt>
 
 [**ScriptGetFontAlternateGlyphs**](/windows/desktop/api/Usp10/nf-usp10-scriptgetfontalternateglyphs)

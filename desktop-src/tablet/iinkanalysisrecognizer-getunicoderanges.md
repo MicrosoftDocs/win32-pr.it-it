@@ -1,7 +1,7 @@
 ---
-description: Recupera una matrice di intervalli di caratteri che rappresenta gli intervalli di caratteri Unicode supportati.
+description: Recupera una matrice di intervalli di caratteri che rappresentano gli intervalli di caratteri Unicode supportati.
 ms.assetid: 334cf545-832a-4e8a-8fe6-76a173676be7
-title: 'Metodo IInkAnalysisRecognizer:: GetUnicodeRanges (IACom. h)'
+title: Metodo IInkAnalysisRecognizer::GetUnicodeRanges (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 939c2d5bf45c5dfbf0f1866cb6d0c7a58c38320f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf8c0fe75d2eff0cdd8f2f9d3eb5366f6bab4dd4588c854455804ce4196971bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008401"
 ---
-# <a name="iinkanalysisrecognizergetunicoderanges-method"></a>Metodo IInkAnalysisRecognizer:: GetUnicodeRanges
+# <a name="iinkanalysisrecognizergetunicoderanges-method"></a>Metodo IInkAnalysisRecognizer::GetUnicodeRanges
 
-Recupera una matrice di intervalli di caratteri che rappresenta gli intervalli di caratteri Unicode supportati.
+Recupera una matrice di intervalli di caratteri che rappresentano gli intervalli di caratteri Unicode supportati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ HRESULT GetUnicodeRanges(
 
 <dl> <dt>
 
-*pulNumberOfRanges* \[ in uscita\]
+*pulNumberOfRanges* \[ in, out\]
 </dt> <dd>
 
-Numero di intervalli di caratteri a cui punta *ppulLowUnicode*.
+Numero di intervalli di caratteri a cui punta *ppulLowUnicode.*
 
 </dd> <dt>
 
-*ppulLowUnicode* \[ out\]
+*ppulLowUnicode* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una matrice di intervalli di caratteri che rappresenta gli intervalli di caratteri Unicode supportati.
+Puntatore a una matrice di intervalli di caratteri che rappresentano gli intervalli di caratteri Unicode supportati.
 
 </dd> <dt>
 
-*ppusUnicodeRangeLength* \[ out\]
+*ppusUnicodeRangeLength* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una matrice di valori che indica la lunghezza di ogni matrice puntata da *ppulLowUnicode*.
+Puntatore a una matrice di valori che indica la lunghezza di ogni punto della matrice a da *ppulLowUnicode*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

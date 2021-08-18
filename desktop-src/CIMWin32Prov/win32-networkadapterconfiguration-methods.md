@@ -1,20 +1,20 @@
 ---
-description: La \_ classe Win32 NetworkAdapterConfiguration espone i metodi seguenti.
+description: La classe NetworkAdapterConfiguration Win32 \_ espone i metodi seguenti.
 ms.assetid: 662E3F9C-B878-49B1-9090-F7570A19F220
 ms.tgt_platform: multiple
-title: Metodi di Win32_NetworkAdapterConfiguration
+title: Win32_NetworkAdapterConfiguration metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa882b77524b21285153f7c0e30fd1243f4ad27c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b9ff9a8a98570c25fff73ee543217b2a38e0ede87077d470a2e84191d230b408
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973060"
 ---
-# <a name="win32_networkadapterconfiguration-methods"></a>\_Metodi Win32 NetworkAdapterConfiguration
+# <a name="win32_networkadapterconfiguration-methods"></a>Metodi di NetworkAdapterConfiguration Win32 \_
 
-La classe [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) espone i metodi seguenti.
+La [**classe \_ NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -40,7 +40,7 @@ La classe [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfigu
 -   [**Metodo SetDNSSuffixSearchOrder**](setdnssuffixsearchorder-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetDynamicDNSRegistration**](setdynamicdnsregistration-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetForwardBufferMemory**](setforwardbuffermemory-method-in-class-win32-networkadapterconfiguration.md)
--   [**Metodo segateways**](setgateways-method-in-class-win32-networkadapterconfiguration.md)
+-   [**Metodo SetGateways**](setgateways-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetIGMPLevel**](setigmplevel-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetIPConnectionMetric**](setipconnectionmetric-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetIPUseZeroBroadcast**](setipusezerobroadcast-method-in-class-win32-networkadapterconfiguration.md)
@@ -52,7 +52,7 @@ La classe [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfigu
 -   [**Metodo SetNumForwardPackets**](setnumforwardpackets-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetPMTUBHDetect**](setpmtubhdetect-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetPMTUDiscovery**](setpmtudiscovery-method-in-class-win32-networkadapterconfiguration.md)
--   [**Metodo SetTcpipNetbios consente**](settcpipnetbios-method-in-class-win32-networkadapterconfiguration.md)
+-   [**Metodo SetTcpipNetbios**](settcpipnetbios-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetTcpMaxConnectRetransmissions**](settcpmaxconnectretransmissions-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetTcpMaxDataRetransmissions**](settcpmaxdataretransmissions-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Metodo SetTcpNumConnections**](settcpnumconnections-method-in-class-win32-networkadapterconfiguration.md)

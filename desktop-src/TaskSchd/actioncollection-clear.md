@@ -1,9 +1,9 @@
 ---
-title: Metodo ActionCollection. Clear
-description: Per gli script, cancella tutte le azioni dalla raccolta.
+title: Metodo ActionCollection.Clear
+description: Per lo scripting, cancella tutte le azioni dalla raccolta.
 ms.assetid: e2cdf2eb-72ca-42cf-bfbe-2234153ba3b4
 keywords:
-- Cancella metodo Utilità di pianificazione
+- Clear method Utilità di pianificazione
 - Metodo Clear Utilità di pianificazione, oggetto ActionCollection
 - Oggetto ActionCollection Utilità di pianificazione, metodo Clear
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd44fac1e86188de6d1c549dc517630cf1094fe4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d9a0f951fd1dbbcba934553d6aea4d87a687b36a1f91dceab10d9a00c7973a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011781"
 ---
-# <a name="actioncollectionclear-method"></a>Metodo ActionCollection. Clear
+# <a name="actioncollectionclear-method"></a>Metodo ActionCollection.Clear
 
-Per gli script, cancella tutte le azioni dalla raccolta.
+Per lo scripting, cancella tutte le azioni dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,9 +50,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 [Utilità di pianificazione](task-scheduler-start-page.md)
 </dt> <dt>
 
-[**ActionCollection**](actioncollection.md)
+[**Actioncollection**](actioncollection.md)
 </dt> </dl>
 
  

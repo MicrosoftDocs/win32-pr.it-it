@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Get bandwidth ottiene il valore della larghezza di banda.
+description: Il metodo get \_ Bandwidth ottiene il valore della larghezza di banda.
 ms.assetid: d9020443-d061-4a60-9d54-191144def110
-title: 'Metodo ITConnection:: get_Bandwidth (sdpblb. h)'
+title: Metodo ITConnection::get_Bandwidth (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 563ff4d5902a3434839167ffd28fad2b7552e5c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5ec8d46b4b57fb4bc3249acd486225e6de2ef108aa82ba3661c2c4ad5840c1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975791"
 ---
-# <a name="itconnectionget_bandwidth-method"></a>Metodo ITConnection:: Get \_ Bandwidth
+# <a name="itconnectionget_bandwidth-method"></a>Metodo ITConnection::get \_ Bandwidth
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **get \_ Bandwidth** ottiene il valore della larghezza di banda.
+Il **metodo get \_ Bandwidth** ottiene il valore della larghezza di banda.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT get_Bandwidth(
 
 <dl> <dt>
 
-*pBandwidth* \[ out\]
+*pBandwidth* \[ Cambio\]
 </dt> <dd>
 
 Valore della larghezza di banda.
@@ -47,10 +47,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *pBandwidth* non è un puntatore valido.<br/>   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Il *parametro pBandwidth* non è un puntatore valido.<br/>   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -63,9 +63,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

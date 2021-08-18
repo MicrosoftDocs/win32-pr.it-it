@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c74d79430d15fa136c6edeb2a6e77e79e76b02ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ea96e021972855b75d04c3c9e5a9294d241f524bb27f31e0b42093815a5bf2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918351"
 ---
-# <a name="getsecuritydescriptor-method-of-the-win32_printer-class"></a>Metodo GetSecurityDescriptor della \_ classe Printer Win32
+# <a name="getsecuritydescriptor-method-of-the-win32_printer-class"></a>Metodo GetSecurityDescriptor della classe Printer Win32 \_
 
-Il metodo **GetSecurityDescriptor** restituisce il descrittore di sicurezza che controlla l'accesso alla stampante. Il descrittore viene restituito come un'istanza di [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Per ulteriori informazioni, vedere [modifica della sicurezza di accesso per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+Il **metodo GetSecurityDescriptor** restituisce il descrittore di sicurezza che controlla l'accesso alla stampante. Il descrittore viene restituito come istanza di [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Per altre informazioni, vedere [Modifica della sicurezza degli accessi in oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ uint32 GetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descrittore* \[ out\]
+*Descrittore* \[ Cambio\]
 </dt> <dd>
 
 Descrittore di sicurezza associato alla stampante.
@@ -51,14 +51,14 @@ Descrittore di sicurezza associato alla stampante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-Operazione completata.
+Completamento.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Errore sconosciuto.
 **9**
 </dt> <dd>
 
-L'utente non dispone di privilegi sufficienti per eseguire il metodo.
+L'utente non dispone di privilegi adeguati per eseguire il metodo .
 
 </dd> <dt>
 
@@ -92,13 +92,13 @@ Un parametro specificato nella chiamata al metodo non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-L' [**istanza Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) rappresenta un tipo di dati di [**\_ \_ controllo del descrittore di sicurezza**](/windows/desktop/SecAuthZ/security-descriptor-control) e contiene un elenco di controllo di [*accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) e un elenco di controllo di accesso di [*sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Per altre informazioni, vedere [elenchi di controllo di accesso](/windows/desktop/SecAuthZ/access-control-lists).
+[**L'istanza \_ di Win32 SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) rappresenta un tipo di dati [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contiene un elenco di controllo di accesso discrezionale (DACL) e un elenco di controllo di accesso [*di*](/windows/desktop/SecGloss/s-gly) sistema (SACL). [](/windows/desktop/SecGloss/d-gly) Per altre informazioni, vedere [Elenchi di controllo di accesso](/windows/desktop/SecAuthZ/access-control-lists).
 
-Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**costanti Privilege**](/windows/desktop/WmiSdk/privilege-constants) ed [esecuzione di operazioni con privilegi](/windows/desktop/WmiSdk/executing-privileged-operations).
+Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**Costanti dei privilegi**](/windows/desktop/WmiSdk/privilege-constants) ed Esecuzione di operazioni con [privilegi](/windows/desktop/WmiSdk/executing-privileged-operations).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente sono elencate le stampanti collegate al computer locale e viene ottenuto il descrittore di sicurezza per ogni stampante. Quindi, le [*voci di controllo*](/windows/desktop/SecGloss/a-gly) di accesso (ACE) nell'elenco di controllo di [*accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) vengono estratte per determinare quali utenti hanno accesso alla stampante.
+L'esempio di codice VBScript seguente elenca le stampanti collegate al computer locale e ottiene il descrittore di sicurezza per ogni stampante. Le voci [*di controllo di*](/windows/desktop/SecGloss/a-gly) accesso nell'elenco di controllo di accesso discrezionale vengono quindi estratte per determinare quali utenti hanno accesso alla stampante. [](/windows/desktop/SecGloss/d-gly)
 
 
 ```VB
@@ -153,7 +153,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -162,16 +162,16 @@ Next
 
 <dl> <dt>
 
-[**\_Stampante Win32**](win32-printer.md)
+[**Stampante \_ Win32**](win32-printer.md)
 </dt> <dt>
 
-[**Costanti Privilege**](/windows/desktop/WmiSdk/privilege-constants)
+[**Costanti dei privilegi**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
-[Oggetti descrittore di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
+[Oggetti descrittori di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 </dt> <dt>
 
-[Modifica della sicurezza di accesso per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+[Modifica della sicurezza degli accessi per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 </dt> </dl>
 
  

@@ -1,39 +1,39 @@
 ---
-description: Il controllo SelectionTree usa l'evento SelectionNoItems per eliminare il testo della descrizione dell'elemento obsoleto o per disabilitare i pulsanti che diventano inutili. Questo evento deve essere creato nella tabella EventMapping.
+description: Il controllo SelectionTree usa l'evento SelectionNoItems per eliminare il testo della descrizione dell'elemento obsoleto o per disabilitare i pulsanti che sono diventati inutili. Questo evento deve essere creato nella tabella EventMapping.
 ms.assetid: a79abd77-a6e5-4a1f-8a63-51644151404a
-title: ControlEvent SelectionNoItems
+title: SelectionNoItems ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6544dfcaad3d22b63d71703ea95d1aa4f09a1efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17220849c6bf50a28a0a0596bcd347e2f0a4c5af77cb53c9d9fa0041ced59abe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040461"
 ---
-# <a name="selectionnoitems-controlevent"></a>ControlEvent SelectionNoItems
+# <a name="selectionnoitems-controlevent"></a>SelectionNoItems ControlEvent
 
-Il [controllo SelectionTree](selectiontree-control.md) usa l'evento SelectionNoItems per eliminare il testo della descrizione dell'elemento obsoleto o per disabilitare i pulsanti che diventano inutili. Questo evento deve essere creato nella [tabella EventMapping](eventmapping-table.md).
+Il [controllo SelectionTree usa l'evento](selectiontree-control.md) SelectionNoItems per eliminare il testo della descrizione dell'elemento obsoleto o per disabilitare i pulsanti che sono diventati inutili. Questo evento deve essere creato nella [tabella EventMapping](eventmapping-table.md).
 
-Questo ControlEvent richiede l'esecuzione dell'interfaccia utente a livello di [*interfaccia utente completo*](f-gly.md) . Questo evento non funzionerà con un'interfaccia utente [*ridotta*](r-gly.md) o un' [*interfaccia utente di base*](b-gly.md). Per informazioni, vedere [livelli di interfaccia utente](user-interface-levels.md).
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
-Questo evento può influire solo sui controlli che si trovano nella stessa finestra di dialogo del controllo SelectionTree.
+Questo evento può interessare solo i controlli che si trovano nella stessa finestra di dialogo del controllo SelectionTree.
 
 ## <a name="published-by"></a>Pubblicato da
 
-[SelectionTree controllare](selectiontree-control.md) se la selezione non include nodi.
+[Controllo SelectionTree](selectiontree-control.md) se la selezione non ha nodi.
 
 ## <a name="argument"></a>Argomento
 
-Nessuna.
+Nessuno.
 
-## <a name="action-on-subscribers"></a>Azione sui sottoscrittori
+## <a name="action-on-subscribers"></a>Azione nei Sottoscrittori
 
-Elimina il testo della descrizione dell'elemento obsoleto o Disabilita i pulsanti obsoleti.
+Elimina il testo di descrizione dell'elemento obsoleto o disabilita i pulsanti obsoleti.
 
 ## <a name="typical-use"></a>Utilizzo tipico
 
-Può essere usato per disabilitare i pulsanti Next, reset e DiskCost della finestra di [dialogo di selezione](selection-dialog.md) quando una selezione non contiene nodi e questi pulsanti diventano inutili.
+Può essere usato per disabilitare i pulsanti Avanti, Reimposta e DiskCost nella finestra di dialogo di selezione quando una selezione non ha nodi e questi pulsanti diventano inutili. [](selection-dialog.md)
 
  
 

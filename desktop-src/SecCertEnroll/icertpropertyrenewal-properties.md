@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ICertPropertyRenewal espone le proprietà seguenti.
 ms.assetid: 966C4584-625C-49BE-B4EF-5FB8311BE4E2
-title: Proprietà di ICertPropertyRenewal
+title: Proprietà ICertPropertyRenewal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc3070e17a547ece8f1a0683351056dd6e3abbd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a14cfc76d2a9ff034ee67a47c324096c7d78589e7665894f87947d3c60b1f19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976741"
 ---
-# <a name="icertpropertyrenewal-properties"></a>Proprietà di ICertPropertyRenewal
+# <a name="icertpropertyrenewal-properties"></a>Proprietà ICertPropertyRenewal
 
-L'interfaccia [**ICertPropertyRenewal**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyrenewal) espone le proprietà seguenti.
+[**L'interfaccia ICertPropertyRenewal**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyrenewal) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

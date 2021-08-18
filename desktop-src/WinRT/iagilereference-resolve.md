@@ -1,7 +1,7 @@
 ---
-description: Ottiene l'ID di interfaccia di un riferimento agile a un oggetto.
+description: Ottiene l'ID interfaccia di un riferimento Agile a un oggetto .
 ms.assetid: 627A7EE4-CFEF-47F6-BA99-51BEB78C5D55
-title: 'Metodo IAgileReference:: Resolve'
+title: Metodo IAgileReference::Resolve
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - objidl.h
-ms.openlocfilehash: 1c3ac95802a44f4305abb24566744ad98c67b174
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b58013ba81bb394715a0042f3f3d7435a381fa01f5b985bd9ad81d12122441e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758777"
 ---
-# <a name="iagilereferenceresolve-method"></a>Metodo IAgileReference:: Resolve
+# <a name="iagilereferenceresolve-method"></a>Metodo IAgileReference::Resolve
 
-Ottiene l'ID di interfaccia di un riferimento agile a un oggetto.
+Ottiene l'ID interfaccia di un riferimento Agile a un oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT Resolve(
 
 <dl> <dt>
 
-*riid* \[ in\]
+*riid* \[ Pollici\]
 </dt> <dd>
 
-ID di interfaccia dell'interfaccia da recuperare dal riferimento agile. Non è necessario che corrisponda all'interfaccia registrata.
+ID interfaccia dell'interfaccia da recuperare dal riferimento Agile. Non è necessario che sia uguale all'interfaccia registrata.
 
 </dd> <dt>
 
@@ -62,8 +62,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore restituito                                                                              | Descrizione                                                                    |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| <dl> <dt>\_OK</dt> </dl>          | Metodo completato correttamente.<br/>                                  |
-| <dl> <dt>E \_ NOinterface</dt> </dl> | L'interfaccia richiesta non è implementata nell'oggetto registrato.<br/> |
+| <dl> <dt>S \_ OK</dt> </dl>          | Metodo completato correttamente.<br/>                                  |
+| <dl> <dt>E \_ NOINTERFACE</dt> </dl> | L'interfaccia richiesta non viene implementata nell'oggetto registrato.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare la funzione [**RoGetAgileReference**](/windows/desktop/api/ComBaseApi/nf-combaseapi-rogetagilereference) per creare un riferimento agile a un oggetto. Chiamare il metodo **Resolve** per localizzare l'oggetto nell'Apartment in cui viene chiamata la **risoluzione** .
+Chiamare la [**funzione RoGetAgileReference**](/windows/desktop/api/ComBaseApi/nf-combaseapi-rogetagilereference) per creare un riferimento Agile a un oggetto. Chiamare il **metodo Resolve** per localizzare l'oggetto nell'apartment in cui viene **chiamato Resolve.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Chiamare la funzione [**RoGetAgileReference**](/windows/desktop/api/ComBaseApi/n
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>            |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/> |
 
 
 

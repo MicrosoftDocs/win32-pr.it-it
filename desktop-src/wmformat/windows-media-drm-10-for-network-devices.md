@@ -1,49 +1,49 @@
 ---
-title: Windows Media DRM 10 per i dispositivi di rete
-description: Windows Media DRM 10 per i dispositivi di rete
+title: Windows Supporto DRM 10 per dispositivi di rete
+description: Windows Supporto DRM 10 per dispositivi di rete
 ms.assetid: b32baf01-6cc5-400b-b3d1-85eff458eff8
 keywords:
-- Windows Media Format SDK, Windows Media DRM 10 per i dispositivi di rete
-- Digital Rights Management (DRM), Windows Media DRM 10 per i dispositivi di rete
-- DRM (Digital Rights Management), Windows Media DRM 10 per i dispositivi di rete
-- Windows Media Format SDK, DRM 10 per i dispositivi di rete
-- Digital Rights Management (DRM), DRM 10 per i dispositivi di rete
-- DRM (Digital Rights Management), DRM 10 per i dispositivi di rete
-- Windows Media DRM 10 per i dispositivi di rete, informazioni
-- DRM 10 per i dispositivi di rete, informazioni
+- Windows Media Format SDK,Windows Media DRM 10 per dispositivi di rete
+- DRM (Digital Rights Management), Windows Media DRM 10 per dispositivi di rete
+- DRM (digital rights management), Windows Media DRM 10 per dispositivi di rete
+- Windows Media Format SDK,DRM 10 per dispositivi di rete
+- digital rights management (DRM), DRM 10 per dispositivi di rete
+- DRM (digital rights management), DRM 10 per dispositivi di rete
+- Windows Media DRM 10 for Network Devices,about
+- DRM 10 per dispositivi di rete, informazioni su
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ab723424dc2f67b8f251db9434653b10f929e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9d96e88855e0757779861bb11ff3702debecfa0ce9552048b2e839351afeb9d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930451"
 ---
-# <a name="windows-media-drm-10-for-network-devices"></a>Windows Media DRM 10 per i dispositivi di rete
+# <a name="windows-media-drm-10-for-network-devices"></a>Windows Supporto DRM 10 per dispositivi di rete
 
-L'applicazione può trasmettere contenuti protetti a ricevitori multimediali digitali in una rete usando Windows Media DRM 10 per i dispositivi di rete. Questa funzionalità è un protocollo per comunicare in modo sicuro con i dispositivi di rete.
+L'applicazione può trasmettere contenuto protetto ai ricevitori di supporti digitali in una rete usando Windows Media DRM 10 per dispositivi di rete. Questa funzionalità è un protocollo per la comunicazione sicura con i dispositivi di rete.
 
-Windows Media Format SDK supporta Windows Media DRM 10 per i dispositivi di rete tramite la gestione di un database di dispositivi di rete, la convalida della prossimità di rete di tali dispositivi e la conversione di contenuti protetti con DRM in un formato di trasporto protetto.
+Windows Media Format SDK supporta Windows Media DRM 10 per dispositivi di rete tramite la gestione di un database di dispositivi di rete, la convalida della prossimità di rete di tali dispositivi e la conversione del contenuto protetto da DRM in un formato di trasporto protetto.
 
 > [!Note]  
-> Il DRM non è supportato dalla versione basata su x64 di questo SDK.
+> DRM non è supportato dalla versione basata su x64 di questo SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità di Rights Management digitali**](digital-rights-management-features.md)
+[**Funzionalità Rights Management digitali**](digital-rights-management-features.md)
 </dt> <dt>
 
-[**Uso del protocollo Windows Media DRM 10 per i dispositivi di rete**](using-the-windows-media-drm-10-for-network-devices-protocol.md)
+[**Uso del Windows DRM 10 per dispositivi di rete**](using-the-windows-media-drm-10-for-network-devices-protocol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
