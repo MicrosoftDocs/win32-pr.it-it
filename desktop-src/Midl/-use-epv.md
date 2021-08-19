@@ -1,9 +1,9 @@
 ---
-title: /use_epv opzione
-description: L' \_ opzione/utilizza EPV indica al compilatore MIDL di generare codice stub del server che chiama la routine dell'applicazione server tramite un vettore del punto di ingresso (EPV), anziché da una chiamata statica. Non è consigliabile usare questo attributo.
+title: Opzione /use_epv
+description: L'opzione /use epv indica al compilatore MIDL di generare codice stub del server che chiama la routine dell'applicazione server tramite un vettore del punto di ingresso (epv), anziché tramite una \_ chiamata statica. L'uso di questo attributo non è consigliato.
 ms.assetid: 2853d836-ded3-412a-916b-1143968123a2
 keywords:
-- /use_epv switch MIDL
+- /use_epv l'opzione MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec73b5cb9833c15a77c96a784e1ded88d266f9a6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 614abaf4c124aa0a6e1ca5f7da347ab4a9a2264e174c91734e6a75b188500a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014059"
 ---
-# <a name="use_epv-switch"></a>\_opzione EPV/utilizza
+# <a name="use_epv-switch"></a>/use \_ epv - opzione
 
-L'opzione **/utilizza \_ EPV** indica al compilatore MIDL di generare codice stub del server che chiama la routine dell'applicazione server tramite un vettore del punto di ingresso (EPV), anziché da una chiamata statica. Non è consigliabile usare questo attributo.
+**L'opzione /use \_ epv** indica al compilatore MIDL di generare codice stub del server che chiama la routine dell'applicazione server tramite un vettore del punto di ingresso (epv), anziché tramite una chiamata statica. L'uso di questo attributo non è consigliato.
 
 ``` syntax
 midl /use_epv
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-In genere, le applicazioni richiedono il collegamento statico alla routine dell'applicazione server. Per impostazione predefinita, il compilatore MIDL genera una chiamata di questo tipo. Tuttavia, se un'applicazione richiede che lo stub del server chiami la routine dell'applicazione server usando EPV, è necessario specificare l'opzione **/utilizza \_ EPV** . Quando viene specificata l'opzione **/utilizza \_ EPV** , il compilatore MIDL genera un EPV predefinito. Questa EPV predefinita viene quindi utilizzata se l'applicazione non registra un altro EPV tramite la chiamata [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif) .
+In genere, le applicazioni richiedono il collegamento statico alla routine dell'applicazione server. Il compilatore MIDL genera tale chiamata per impostazione predefinita. Tuttavia, se un'applicazione richiede che lo stub del server chiami la routine dell'applicazione server usando epv, è necessario specificare l'opzione **/use \_ epv.** Quando viene **specificata l'opzione /use \_ epv,** il compilatore MIDL genera un valore epv predefinito. Questo epv predefinito viene quindi usato se l'applicazione non registra un altro epv tramite la [**chiamata RpcServerRegisterIf.**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/utilizza \_ EPV** *nomefile * * *. idl**
+**midl /use \_ epv** *filename***.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -49,12 +49,12 @@ In genere, le applicazioni richiedono il collegamento statico alla routine dell'
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**/No \_ default \_ EPV**](-no-default-epv.md)
+[**/no \_ \_ epv predefinito**](-no-default-epv.md)
 </dt> <dt>
 
 [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

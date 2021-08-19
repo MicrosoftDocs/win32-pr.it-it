@@ -1,11 +1,11 @@
 ---
 title: Attributo Owner
-description: Nome distinto di un oggetto che dispone della proprietà di un oggetto.
+description: Nome distinto di un oggetto che ha la proprietà di un oggetto .
 ms.assetid: 37b0e8eb-fe33-494a-9e1f-264cf9211344
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Owner
-- Schema AD dell'attributo Owner
+- Schema AD dell'attributo owner
+- Schema AD dell'attributo owner
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d416158fea3fd0e3dfbda1cd60b2543d3df16248
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ead422104e6abc310db14cc2d6d1fbe7e4f2d0508e7144ba4087dd1730793e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022469"
 ---
 # <a name="owner-attribute"></a>Attributo Owner
 
-Nome distinto di un oggetto che dispone della proprietà di un oggetto.
+Nome distinto di un oggetto che ha la proprietà di un oggetto .
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Proprietario                                   |
-| LDAP-Display-Name | proprietario                                   |
+| Ldap-Display-Name | proprietario                                   |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 2.5.4.32                                |
-| System-ID-GUID    | bf9679f3-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf9679f3-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| È a valore singolo       | Vero                                                                                      |
+| Is-Single-Valued       | Vero                                                                                      |
 | Indicizzato             | Falso                                                                                     |
 | Nel catalogo globale      | Falso                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome distinto di un oggetto che dispone della proprietà di un oggetto.
 | ID collegamento                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: a31ba325-d405-74b9-0c13-d912816334dc
 title: Macro della libreria DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 545160c9846c919a366856b72c0a7bf914739d7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b57e68f1683f03c8bedfb02aa61a9a6e765d91fea95dc9af00a4b7a376aa31c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984791"
 ---
 # <a name="directxmath-library-macros"></a>Macro della libreria DirectXMath
 
@@ -21,7 +21,7 @@ Elenca le macro fornite da DirectXMath.
 
 | Argomento                                               | Descrizione                                                                                                                                                                    |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [XMGLOBALCONST (macro)](xmglobalconst.md)<br/> | Dichiara un oggetto come una costante pick-any, per evitare ricaricamenti ridondanti di tale oggetto se viene usato (e dichiarato) in più posizioni nella libreria DirectXMath.<br/> |
+| [Macro XMGLOBALCONST](xmglobalconst.md)<br/> | Dichiara un oggetto come costante pick-any, per evitare ricaricamenti ridondanti di tale oggetto se viene usato (e dichiarato) in più posizioni nella libreria DirectXMath.<br/> |
 
 
 
@@ -31,7 +31,7 @@ Elenca le macro fornite da DirectXMath.
 
 <dl> <dt>
 
-[Guida di riferimento alla programmazione DirectXMath](ovw-xnamath-reference.md)
+[Informazioni di riferimento sulla programmazione DirectXMath](ovw-xnamath-reference.md)
 </dt> </dl>
 
  

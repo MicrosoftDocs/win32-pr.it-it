@@ -1,7 +1,7 @@
 ---
 description: Avvia un'operazione di arresto del sistema operativo nella macchina virtuale figlio associata. Se viene restituito zero (0), l'arresto è stato avviato correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
 ms.assetid: 946BBC62-5479-4AE0-8870-D0A07827B902
-title: Metodo InitiateShutdown della classe Msvm_ShutdownComponent (winreg. h)
+title: Metodo InitiateShutdown della Msvm_ShutdownComponent classe (Winreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 266ab64bb058325ac165a2e12c2a91d442a90269
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f128eb2babfed0c70aca063832e579ad254ca1b02d6beaefb451c64598faa8d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950400"
 ---
-# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Metodo InitiateShutdown della classe MSVM \_ ShutdownComponent
+# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Metodo InitiateShutdown della classe Msvm \_ ShutdownComponent
 
 Avvia un'operazione di arresto del sistema operativo nella macchina virtuale figlio associata. Se viene restituito zero (0), l'arresto è stato avviato correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
 
@@ -40,19 +40,19 @@ uint32 InitiateShutdown(
 
 <dl> <dt>
 
-*Forza* \[ in\]
+*Forza* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Flag che, se **true**, impone la chiusura delle applicazioni nonostante i dati non salvati.
+Flag che, se **True, forza** la chiusura delle applicazioni nonostante siano presenti dati non salvati.
 
 </dd> <dt>
 
-*Motivo* \[ in\]
+*Motivo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Motivo dell'operazione di arresto. Si tratta di una stringa definita dall'utente.
 
@@ -60,14 +60,14 @@ Motivo dell'operazione di arresto. Si tratta di una stringa definita dall'utente
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -79,25 +79,25 @@ Tipo: **UInt32**
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -109,15 +109,15 @@ Tipo: **UInt32**
 **Il sistema non è pronto** (32780)
 </dt> <dt>
 
-**Il computer è bloccato e non può essere arrestato senza l'opzione Force** (32781)
+**Il computer è bloccato e non può essere arrestato senza l'opzione force** (32781)
 </dt> <dt>
 
-**È in corso un arresto del sistema** (32782)
+**Arresto del sistema in corso** (32782)
 </dt> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ ShutdownComponent di MSVM**](msvm-shutdowncomponent.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -125,11 +125,11 @@ L'accesso alla [**classe \_ ShutdownComponent di MSVM**](msvm-shutdowncomponent.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winreg. h</dt> </dl>                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winreg.h</dt> </dl>                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -138,7 +138,7 @@ L'accesso alla [**classe \_ ShutdownComponent di MSVM**](msvm-shutdowncomponent.
 
 <dl> <dt>
 
-[**\_ShutdownComponent MSVM**](msvm-shutdowncomponent.md)
+[**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md)
 </dt> </dl>
 
  

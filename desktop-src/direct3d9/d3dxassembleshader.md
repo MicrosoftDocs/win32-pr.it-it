@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 891281ebc3db970ca61132fe49ba98531ca1d879
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4d3666342cbbd8999d6136e1a780e6cb0ba80970f0cc928f652338d4574f667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988841"
 ---
 # <a name="d3dxassembleshader-function"></a>Funzione D3DXAssembleShader
 
@@ -96,7 +96,7 @@ Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice shader compilato, nonché le informazioni sulle tabelle di debug e simboli incorporate.
+Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice dello shader compilato, nonché tutte le informazioni incorporate sulla tabella di debug e simboli.
 
 </dd> <dt>
 

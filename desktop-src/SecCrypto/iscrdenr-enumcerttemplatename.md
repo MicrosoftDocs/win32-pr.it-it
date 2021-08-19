@@ -1,7 +1,7 @@
 ---
 description: Enumera i nomi dei modelli di certificato.
 ms.assetid: 4741eb0d-b8e0-468c-8a00-9ccacb52a9a7
-title: 'Metodo ISCrdEnr:: enumCertTemplateName'
+title: Metodo ISCrdEnr::enumCertTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: a0a4850143cac48ef9b9b853f99153d4daeb4366
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aab979e77e9e3e61b9d35125accbdf01934764d5a09daf161480646cdec28e3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005199"
 ---
-# <a name="iscrdenrenumcerttemplatename-method"></a>Metodo ISCrdEnr:: enumCertTemplateName
+# <a name="iscrdenrenumcerttemplatename-method"></a>Metodo ISCrdEnr::enumCertTemplateName
 
-Il metodo **enumCertTemplateName** enumera i nomi dei modelli di certificato.
+Il **metodo enumCertTemplateName** enumera i nomi dei modelli di certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,21 +54,21 @@ SCrdEnr.enumCertTemplateName( _
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
 Indice in base zero per la sequenza di enumerazione.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore che determina se il modello di certificato enumerato si applica ai certificati utente o computer. Se questo valore viene spaventato \_ \_ \_ \_ per la registrazione del modello di certificato utente (definito come 1), l'enumerazione si applica ai modelli di certificato utente. Se questo valore viene spaventato \_ , registrare \_ \_ \_ il modello del certificato del computer (definito come 2), l'enumerazione si applica ai modelli di certificato del computer.
+Valore che determina se il modello di certificato enumerato si applica ai certificati utente o computer. Se questo valore è SCARD \_ ENROLL \_ USER \_ CERT TEMPLATE (definito come 1), l'enumerazione \_ si applica ai modelli di certificato utente. Se questo valore è SCARD \_ ENROLL \_ MACHINE \_ CERT TEMPLATE (definito come 2), l'enumerazione \_ si applica ai modelli di certificato del computer.
 
 </dd> <dt>
 
-*pbstrCertTemplateName* \[ out\]
+*pbstrCertTemplateName* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una stringa che restituisce il nome del modello di certificato enumerato.
@@ -81,11 +81,11 @@ Puntatore a una stringa che restituisce il nome del modello di certificato enume
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Stringa che contiene il nome del modello di certificato enumerato.
+Stringa contenente il nome del modello di certificato enumerato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,9 +94,9 @@ Stringa che contiene il nome del modello di certificato enumerato.
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr è definito come \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

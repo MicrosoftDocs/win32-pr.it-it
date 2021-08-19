@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_GETCURSEL (winuser. h)
-description: Un'applicazione invia un \_ messaggio XMLcursel di CB per recuperare l'indice dell'elemento attualmente selezionato, se presente, nella casella di riepilogo di una casella combinata.
+title: CB_GETCURSEL messaggio (Winuser.h)
+description: Un'applicazione invia un messaggio GETCURSEL CB per recuperare l'indice dell'elemento attualmente selezionato, se presente, nella casella di riepilogo \_ di una casella combinata.
 ms.assetid: 47bf87f6-637f-48e9-849e-b2acbe5a6a7b
 keywords:
-- Controlli di Windows Message CB_GETCURSEL
+- CB_GETCURSEL dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fbc9aa1785738fb061696fbad64598747168269
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9bc51f43fd28563be4bc3f024bf6afd35c297648aa6c6cad677aca4582c3737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089261"
 ---
-# <a name="cb_getcursel-message"></a>\_Messaggio GETcursel CB
+# <a name="cb_getcursel-message"></a>Messaggio \_ GETCURSEL CB
 
-Un'applicazione invia un **messaggio \_ xmlcursel di CB** per recuperare l'indice dell'elemento attualmente selezionato, se presente, nella casella di riepilogo di una casella combinata.
+Un'applicazione invia un **messaggio \_ GETCURSEL CB** per recuperare l'indice dell'elemento attualmente selezionato, se presente, nella casella di riepilogo di una casella combinata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Un'applicazione invia un **messaggio \_ xmlcursel di CB** per recuperare l'indic
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice in base zero dell'elemento attualmente selezionato. Se non è selezionato alcun elemento, è CB \_ Err.
+Il valore restituito è l'indice in base zero dell'elemento attualmente selezionato. Se non è selezionato alcun elemento, si tratta di CB \_ ERR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è l'indice in base zero dell'elemento attualmente selezion
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Il valore restituito è l'indice in base zero dell'elemento attualmente selezion
 [**CB \_ SELECTSTRING**](cb-selectstring.md)
 </dt> <dt>
 
-[**\_CAcursel CB**](cb-setcursel.md)
+[**CB \_ SETCURSEL**](cb-setcursel.md)
 </dt> </dl>
 
  

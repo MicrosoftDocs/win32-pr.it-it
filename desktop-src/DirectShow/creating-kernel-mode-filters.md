@@ -1,27 +1,27 @@
 ---
-description: Creazione di filtri Kernel-Mode
+description: Creazione Kernel-Mode filtri
 ms.assetid: cbc86a5d-c53a-44a0-aa81-5c41527a8f67
-title: Creazione di filtri Kernel-Mode
+title: Creazione Kernel-Mode filtri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c915a08312e33f0e35245325fd8bce7e55e486c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 473565046c462e8992350c3662360e4c22b3b5b75e10f0e79e1399885355056e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953940"
 ---
-# <a name="creating-kernel-mode-filters"></a>Creazione di filtri Kernel-Mode
+# <a name="creating-kernel-mode-filters"></a>Creazione Kernel-Mode filtri
 
-Alcuni filtri in modalità kernel non possono essere creati tramite **CoCreateInstance** e pertanto non hanno CLSID. Questi filtri includono il [convertitore Tee/Sink-to-sink](tee-sink-to-sink-converter.md), il filtro del [decodificatore CC](cc-decoder-filter.md) e il filtro [codec WST](wst-codec-filter.md) . Per creare uno di questi filtri, utilizzare l'oggetto [enumeratore dispositivo di sistema](system-device-enumerator.md) e cercare in base al nome del filtro.
+Alcuni filtri in modalità kernel non possono essere creati tramite **CoCreateInstance** e pertanto non dispongono di CLSID. Questi filtri includono [il convertitore Tee/Sink-to-Sink,](tee-sink-to-sink-converter.md)il filtro [CC Decoder](cc-decoder-filter.md) e il filtro [codec WST.](wst-codec-filter.md) Per creare uno di questi filtri, usare [l'oggetto System Device Enumerator](system-device-enumerator.md) e cercare in base al nome del filtro.
 
-1.  Creare l'enumeratore di dispositivo di sistema.
-2.  Chiamare il metodo [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il CLSID della categoria Filter per tale filtro. Questo metodo crea un enumeratore per la categoria Filter. Un *enumeratore* è semplicemente un oggetto che restituisce un elenco di altri oggetti usando un'interfaccia com definita. L'enumeratore restituisce i puntatori **IMoniker** , che rappresentano i filtri in tale categoria.
-3.  Per ogni moniker, chiamare **IMoniker:: BindToStorage** per ottenere un'interfaccia **IPropertyBag** .
-4.  Chiamare **IPropertyBag:: Read** per ottenere il nome del filtro.
-5.  Se il nome corrisponde, chiamare **IMoniker:: BindToObject** per creare il filtro.
+1.  Creare l'enumeratore del dispositivo di sistema.
+2.  Chiamare il [**metodo ICreateDevEnum::CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il CLSID della categoria di filtro per il filtro. Questo metodo crea un enumeratore per la categoria di filtri. Un *enumeratore* è semplicemente un oggetto che restituisce un elenco di altri oggetti usando un'interfaccia COM definita. L'enumeratore **restituisce puntatori IMoniker,** che rappresentano i filtri in tale categoria.
+3.  Per ogni moniker, chiamare **IMoniker::BindToStorage** per ottenere **un'interfaccia IPropertyBag.**
+4.  Chiamare **IPropertyBag::Read** per ottenere il nome del filtro.
+5.  Se il nome corrisponde, chiamare **IMoniker::BindToObject** per creare il filtro.
 
-Nel codice seguente viene illustrata una funzione che esegue questi passaggi:
+Il codice seguente illustra una funzione che esegue questi passaggi:
 
 
 ```C++
@@ -89,7 +89,7 @@ HRESULT CreateKernelFilter(
 
 
 
-Nell'esempio di codice seguente viene usata questa funzione per creare il filtro del decodificatore CC e aggiungerlo al grafico del filtro:
+L'esempio di codice seguente usa questa funzione per creare il filtro CC Decoder e aggiungerlo al grafico dei filtri:
 
 
 ```C++
@@ -109,10 +109,10 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Argomenti sull'acquisizione avanzata](advanced-capture-topics.md)
+[Argomenti di acquisizione avanzata](advanced-capture-topics.md)
 </dt> <dt>
 
-[Uso di System Device Enumerator](using-the-system-device-enumerator.md)
+[Uso dell'enumeratore del dispositivo di sistema](using-the-system-device-enumerator.md)
 </dt> </dl>
 
  

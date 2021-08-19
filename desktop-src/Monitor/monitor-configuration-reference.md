@@ -1,29 +1,29 @@
 ---
-title: Riferimento alla configurazione del monitoraggio
-description: Riferimento alla configurazione del monitoraggio
+title: Informazioni di riferimento sulla configurazione del monitoraggio
+description: Informazioni di riferimento sulla configurazione del monitoraggio
 ms.assetid: 2539620a-ad92-433e-9547-48eafdbde679
 keywords:
-- monitoraggio, riferimento
-- monitoraggio, riferimento per la programmazione
-- riferimento per il monitoraggio
-- configurazione del monitoraggio, riferimento per la programmazione
-- configurazione del monitoraggio, riferimento
+- monitoraggio, informazioni di riferimento
+- monitoraggio, informazioni di riferimento sulla programmazione
+- informazioni di riferimento per il monitoraggio
+- configurazione del monitoraggio, informazioni di riferimento sulla programmazione
+- configurazione del monitoraggio, informazioni di riferimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ad595d8cc86820d96065a5b0b9807c80b28af09
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65ebd8ffcd546eb65c355d3e1bacf4a76944bc597a9b0cd9550d4b2d8be260fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013419"
 ---
-# <a name="monitor-configuration-reference"></a>Riferimento alla configurazione del monitoraggio
+# <a name="monitor-configuration-reference"></a>Informazioni di riferimento sulla configurazione del monitoraggio
 
-Gli elementi seguenti forniscono supporto per la configurazione del monitoraggio.
+Gli elementi seguenti forniscono il supporto per la configurazione del monitoraggio.
 
 -   [Monitorare le funzioni di configurazione](monitor-configuration-functions.md)
 -   [Monitorare le strutture di configurazione](monitor-configuration-structures.md)
--   [Monitorare i tipi di enumerazione di configurazione](monitor-configuration-enumeration-types.md)
+-   [Monitorare i tipi di enumerazione della configurazione](monitor-configuration-enumeration-types.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -32,9 +32,9 @@ Gli elementi seguenti forniscono supporto per la configurazione del monitoraggio
 [Configurazione del monitoraggio](monitor-configuration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

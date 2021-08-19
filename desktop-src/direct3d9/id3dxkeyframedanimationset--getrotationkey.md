@@ -1,7 +1,7 @@
 ---
-description: Ottenere le informazioni sulla rotazione per un fotogramma chiave specifico nel set di animazioni.
+description: Ottenere informazioni sulla rotazione per un fotogramma chiave specifico nel set di animazioni.
 ms.assetid: d62b8d5e-328e-4227-b2e8-cb6e5ccc4b3f
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetRotationKey (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetRotationKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8f5bf30eaf261e4baa032ed1411b3d70bddc706c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5abb39061b1782b7794ec475a6217677c8723625e2752237c122a694435f2862
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951471"
 ---
-# <a name="id3dxkeyframedanimationsetgetrotationkey-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetRotationKey
+# <a name="id3dxkeyframedanimationsetgetrotationkey-method"></a>Metodo ID3DXKeyframedAnimationSet::GetRotationKey
 
-Ottenere le informazioni sulla rotazione per un fotogramma chiave specifico nel set di animazioni.
+Ottenere informazioni sulla rotazione per un fotogramma chiave specifico nel set di animazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ HRESULT GetRotationKey(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotogramma chiave.
 
 </dd> <dt>
 
-*pRotationKeys* \[ in\]
+*pRotationKeys* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)**
@@ -73,7 +73,7 @@ Puntatore ai dati di rotazione. Vedere [**D3DXKEY \_ QUATERNION**](d3dxkey-quate
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: cbed5ceaca1e4e404c47766fa41b8b095216b277
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 955843e7171aaa64e5fa7027b0e0f6049613e31c2d3c647fd705623456ac4e56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990621"
 ---
 # <a name="d3dxvec3hermite-function-d3dx10mathh"></a>Funzione D3DXVec3Hermite (D3DX10Math.h)
 
@@ -102,15 +102,15 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta il risultato dell'interpolazione spline hermite.
+Puntatore a una struttura D3DXVECTOR3 che è il risultato dell'interpolazione spline hermite.
 
 ## <a name="remarks"></a>Commenti
 
 La **funzione D3DXVec3Hermite** interpola da (positionA, tangentA) a (positionB, tangentB) usando l'interpolazione spline hermite.
 
-L'interpolazione spline è una generalizzazione della spline semplice e semplice. La rampa è una funzione di Q(s) con le proprietà seguenti.
+L'interpolazione spline è una generalizzazione della spline ease-in e ease-out. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q(s) = As i + Bs più Cs + D (e pertanto Q'(s) = 3As PIÙ + 2Bs + C)
+Q(s) = As² + Bs² + Cs + D (e pertanto, Q(s) = 3As² + 2Bs + C)
 
 a) Q(0) = v1, quindi Q'(0) = t1
 
@@ -144,13 +144,13 @@ D = v1
 
 Il risultato è il seguente:
 
-Q(s) = (2v1 - 2v2 + t2 + t1)s ° + (3v2 - 3v1 - 2t1 - t2)s più + t1s + v1
+Q(s) = (2v1 - 2v2 + t2 + t1)s³ + (3v2 - 3v1 - 2t1 - t2)s² + t1s + v1
 
-Che può essere ridisposto come:
+Che può essere ridisporto come:
 
-Q(s) = (2s i - 3s più 1)v1 + (-2s più 3s 2)v2 + (sZIONI - 2s più s)t1 + (s ° - s più)t2
+Q(s) = (2s² - 3s² + 1)v1 + (-2s² + 3s²)v2 + (s³ - 2s² + s)t1 + (s² - s²)t2
 
-Le spline ermite sono utili per controllare l'animazione perché la curva attraversa tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva continua C2, purché la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
+Le spline ermeti sono utili per controllare l'animazione perché la curva attraversa tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva continua C2, purché la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXVec3Hermite** può essere usata come parametro per un'altra funzione.
 

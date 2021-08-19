@@ -1,15 +1,15 @@
 ---
-description: Specifica il deallocatore di tipo che deve essere utilizzato da una funzione stub di operazioni.
+description: Specifica il deallocatore di tipo che deve essere utilizzato da una funzione stub delle operazioni.
 ms.assetid: 52e6235d-90e6-4559-b17c-14ca3be896ff
 title: elemento operationDeallocator
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3ae0d9f1d37a478ceca0895806ade6a011747e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 44ce2902bbfac16cb096da334cf3f22a12c68e3720d575fa303b8f3b133c9328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991691"
 ---
 # <a name="operationdeallocator-element"></a>elemento operationDeallocator
 
@@ -52,7 +52,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

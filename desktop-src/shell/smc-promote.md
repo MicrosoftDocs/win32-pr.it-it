@@ -22,7 +22,7 @@ ms.locfileid: "118968020"
 ---
 # <a name="smc_promote-message"></a>Messaggio SMC \_ PROMOTE
 
-Alzare di livello l'elemento specificato dalla struttura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) che lo accompagna.
+Alzare di livello l'elemento specificato dalla [**struttura SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) che lo accompagna.
 
 
 ```C++

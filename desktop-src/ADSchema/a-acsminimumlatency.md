@@ -1,10 +1,10 @@
 ---
-title: ACS-attributo latenza minima
-description: L'attributo ACS-latenza minima è solo per uso interno.
+title: Attributo ACS-Minimum-Latency
+description: L'attributo ACS-Minimum-Latency è solo per uso interno.
 ms.assetid: ec2cca55-9e31-49da-98aa-aa2f6664ea90
 ms.tgt_platform: multiple
 keywords:
-- ACS-schema AD dell'attributo con latenza minima
+- Schema AD dell'attributo ACS-Minimum-Latency
 - Schema AD dell'attributo aCSMinimumLatency
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab7e9e6d5a9ccf626cdf8849ffe0e29504b4a0b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97f23f841b072b8bf90d5d57ec6efcc954369808d9ffc345d92c4264f7e01a07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022859"
 ---
-# <a name="acs-minimum-latency-attribute"></a>ACS-attributo latenza minima
+# <a name="acs-minimum-latency-attribute"></a>Attributo ACS-Minimum-Latency
 
-L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
+**L'attributo ACS-Minimum-Latency** è solo per uso interno. Basato su RFC2210.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-latenza minima                  |
-| LDAP-Display-Name | aCSMinimumLatency                    |
+| CN                | ACS - Latenza minima                  |
+| Ldap-Display-Name | aCSMinimumLatency                    |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1316              |
-| System-ID-GUID    | 9517fefb-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 9517fefb-3b90-11d2-90cc-00c04fd91ab1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **ACS-latenza minima** è solo per uso interno. Basato su RFC2210.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 

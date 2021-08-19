@@ -13,13 +13,13 @@ ms.locfileid: "118973040"
 ---
 # <a name="network-source-authentication"></a>Autenticazione dell'origine di rete
 
-Alcuni host di supporti possono richiedere le credenziali utente dalle applicazioni client prima di consentire l'accesso al supporto. Le credenziali utente includono l'identificazione e la prova di identificazione, ad esempio nome utente e password, usati dal server multimediale per concedere l'accesso all'origine di rete ospitata. L'origine di rete può fornire l'autenticazione NTLM, Digest o Di base.
+Alcuni host multimediali possono richiedere le credenziali utente dalle applicazioni client prima di consentire l'accesso ai supporti. Le credenziali utente includono l'identificazione e la prova di identificazione, ad esempio il nome utente e la password, usati dal server multimediale per concedere l'accesso all'origine di rete ospitata. L'origine di rete può fornire l'autenticazione NTLM, Digest o Basic.
 
-Le applicazioni basate Media Foundation possono archiviare le credenziali utente per un URL specifico in un oggetto *credenziali* che espone [**l'interfaccia IMFNetCredential.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) L'oggetto credenziali archivia le credenziali crittografate e fornisce metodi per restituire informazioni quali nome utente, password e dominio.
+Le applicazioni basate Media Foundation possono archiviare le credenziali utente per un URL specifico in un oggetto *credenziale* che espone [**l'interfaccia IMFNetCredential.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) L'oggetto credenziale archivia le credenziali crittografate e fornisce metodi per restituire informazioni quali nome utente, password e dominio.
 
 Gli oggetti credenziale vengono creati e gestiti in una cache. *L'oggetto cache* delle credenziali, esposto dall'interfaccia [**IMFNetCredentialCache,**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache) fornisce metodi per recuperare gli oggetti credenziali dalla cache delle credenziali.
 
-Un'applicazione che supporta l'autenticazione deve implementare [**l'interfaccia IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) Media Foundation non fornisce un'implementazione predefinita di questa interfaccia. Il gestore delle credenziali è responsabile della raccolta delle credenziali necessarie per un URL dall'input dell'utente o della lettura dall'archiviazione persistente.
+Un'applicazione che supporta l'autenticazione deve implementare [**l'interfaccia IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) Media Foundation non fornisce un'implementazione predefinita di questa interfaccia. Il gestore delle credenziali è responsabile della raccolta delle credenziali necessarie per un URL dall'input dell'utente o dalla lettura dall'archiviazione persistente.
 
 Questa sezione contiene i seguenti argomenti:
 

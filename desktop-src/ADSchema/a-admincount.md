@@ -1,10 +1,10 @@
 ---
-title: Attributo Admin-Count
-description: Indica che per un determinato oggetto sono stati modificati gli ACL a un valore più sicuro dal sistema perché era un membro di uno dei gruppi amministrativi (direttamente o in modo transitivo).
+title: Admin-Count attributo
+description: Indica che gli ACL di un determinato oggetto sono stati modificati in un valore più sicuro dal sistema perché era membro di uno dei gruppi amministrativi (direttamente o in modo transitivo).
 ms.assetid: b2384ada-a792-42fa-be64-291d23e00887
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Admin-Count attribute
+- Admin-Count schema AD dell'attributo
 - Schema AD dell'attributo adminCount
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e95b953aebaa39bb3fc3e4c9cf96632f32a37850
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d652d53627643e1028ee73cc67678119c689e46d8f4ec289c92ca32127e098dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022849"
 ---
-# <a name="admin-count-attribute"></a>Attributo Admin-Count
+# <a name="admin-count-attribute"></a>Admin-Count attributo
 
-Indica che per un determinato oggetto sono stati modificati gli ACL a un valore più sicuro dal sistema perché era un membro di uno dei gruppi amministrativi (direttamente o in modo transitivo).
+Indica che gli ACL di un determinato oggetto sono stati modificati in un valore più sicuro dal sistema perché era membro di uno dei gruppi amministrativi (direttamente o in modo transitivo).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------|
 | CN                | Admin-Count                                         |
-| LDAP-Display-Name | adminCount                                          |
+| Ldap-Display-Name | adminCount                                          |
 | Dimensione              | 4 byte                                             |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                    |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                    |
 | Frequenza di aggiornamento  | Quando un oggetto viene aggiunto a un gruppo amministrativo. |
 | Attribute-Id      | 1.2.840.113556.1.4.150                              |
-| System-ID-GUID    | bf967918-0de6-11d0-a285-00aa003049e2                |
+| System-Id-Guid    | bf967918-0de6-11d0-a285-00aa003049e2                |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                |
 
 
@@ -58,15 +58,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica che per un determinato oggetto sono stati modificati gli ACL a un valore 
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

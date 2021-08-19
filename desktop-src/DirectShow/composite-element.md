@@ -1,37 +1,37 @@
 ---
-description: L'elemento composito definisce una composizione, un oggetto contenitore per tracce e altre composizione annidate.
+description: L'elemento composito definisce una composizione, un oggetto contenitore per tracce e altre composizioni annidate.
 ms.assetid: 7551da3a-1da6-426a-ba9d-f715df53718f
 title: Elemento composite
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5eff3e0c16040f837e4c8a792ebac3124d723d1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: dec9ce7c889829ee227ce31df25d5d17985e877ed107870170f6939aebf14fd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084311"
 ---
 # <a name="composite-element"></a>Elemento composite
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-`composite`L'elemento definisce una composizione, un oggetto contenitore per tracce e altre composizione annidate.
+`composite`L'elemento definisce una composizione, un oggetto contenitore per tracce e altre composizioni annidate.
 
 ## <a name="attributes"></a>Attributi
 
-[**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**lock,**](lock-attribute.md) [**mute,**](mute-attribute.md) [**userdata,**](userdata-attribute.md) [**userid,**](userid-attribute.md) [**username**](username-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |----------|-------------------------------------------------------------------------------------------------------------------------|
 | Padre   | `composite`, [ **group**](group-element.md)                                                                             |
-| Children | `composite`, [**effetto**](effect-element.md), [**traccia**](track-element.md), [**transizione**](transition-element.md) |
+| Children | `composite`, [**effect,**](effect-element.md) [**track,**](track-element.md) [**transition**](transition-element.md) |
 
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "107908839"
 
 ## <a name="remarks"></a>Commenti
 
-`composite`All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito dall'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha la priorità 0 e i livelli successivi hanno valori di priorità crescenti.
+All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito in base `composite` all'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha priorità 0 e i livelli successivi hanno valori di priorità crescenti.
 
 ## <a name="examples"></a>Esempi
 

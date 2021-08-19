@@ -4,16 +4,16 @@ ms.assetid: 3200d666-d927-4198-b1f6-1636971f5f07
 title: Ricezione della notifica degli eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23716d4089caac4ebc61188b7a32818c9e462da9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fde3fd7a382ed15394c66e427a59260ba71e2e2cb2ff47cbf7d453e3526d708c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951360"
 ---
 # <a name="receiving-event-notification"></a>Ricezione della notifica degli eventi
 
-Nell'esempio seguente viene illustrato come utilizzare la funzione [**NotifyChangeEventLog**](/windows/desktop/api/Winbase/nf-winbase-notifychangeeventlog) per ricevere una notifica quando viene registrato un evento. Questo esempio consente di filtrare gli eventi scritti dall'esempio in [segnalazione di un evento](reporting-an-event.md).
+Nell'esempio seguente viene illustrato come usare la [**funzione NotifyChangeEventLog**](/windows/desktop/api/Winbase/nf-winbase-notifychangeeventlog) per ricevere una notifica quando viene registrato un evento. In questo esempio vengono filtrati gli eventi scritti dall'esempio in [Creazione di report di un evento](reporting-an-event.md).
 
 
 ```C++

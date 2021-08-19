@@ -1,6 +1,6 @@
 ---
-title: Ripristino configurazione di sistema API
-description: L Ripristino configurazione di sistema API consente a un'applicazione di gestire i punti di ripristino. È disponibile anche un'interfaccia che può essere utilizzata tramite script Windows Management Instrumentation (WMI).
+title: RIPRISTINO CONFIGURAZIONE DI SISTEMA API
+description: L Ripristino configurazione di sistema API consente a un'applicazione di gestire i punti di ripristino. È disponibile anche un'interfaccia di script tramite Windows Management Instrumentation (WMI).
 ms.assetid: e80fb930-8711-4347-b802-d55f780ee589
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118968030"
 ---
-# <a name="system-restore-api"></a>Ripristino configurazione di sistema API
+# <a name="system-restore-api"></a>RIPRISTINO CONFIGURAZIONE DI SISTEMA API
 
-L Ripristino configurazione di sistema API consente a un'applicazione di gestire i punti di ripristino. È disponibile anche un'interfaccia di script [tramite strumentazione Windows](/windows/desktop/WmiSdk/wmi-start-page) (WMI).
+L Ripristino configurazione di sistema API consente a un'applicazione di gestire i punti di ripristino. È disponibile anche un'interfaccia di script [tramite Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page) (WMI).
 
 Per altre informazioni sull'API Ripristino configurazione di sistema, vedere gli argomenti seguenti:
 

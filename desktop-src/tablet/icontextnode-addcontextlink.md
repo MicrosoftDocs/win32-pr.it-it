@@ -1,5 +1,5 @@
 ---
-description: Aggiunge un nuovo oggetto IContextLink alla raccolta di collegamenti di contesto dell'oggetto IContextNode.
+description: Aggiunge un nuovo IContextLink alla raccolta di collegamenti di contesto dell'oggetto IContextNode.
 ms.assetid: b7b9da10-3015-4976-bc4e-1a7f69b7c85b
 title: Metodo IContextNode::AddContextLink (IACom.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118967440"
 ---
 # <a name="icontextnodeaddcontextlink-method"></a>Metodo IContextNode::AddContextLink
 
-Aggiunge un nuovo [**oggetto IContextLink**](icontextlink.md) alla raccolta di collegamenti di contesto dell'oggetto [**IContextNode.**](icontextnode.md)
+Aggiunge un nuovo [**IContextLink**](icontextlink.md) alla raccolta di collegamenti di contesto dell'oggetto [**IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT AddContextLink(
 *pDestinationNode* \[ Pollici\]
 </dt> <dd>
 
-[**IContextNode di destinazione per**](icontextnode.md) il nuovo oggetto [**IContextLink.**](icontextlink.md)
+[**IContextNode di destinazione**](icontextnode.md) per il nuovo [**IContextLink.**](icontextlink.md)
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntatore al nuovo [**oggetto IContextLink.**](icontextlink.md)
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
@@ -73,7 +73,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 
  
 
-Questo [**oggetto IContextNode**](icontextnode.md) è il nodo di origine (vedere [**IContextLink::GetSourceNode)**](icontextlink-getsourcenode.md)per il [**nuovo oggetto IContextLink.**](icontextlink.md)
+Questo [**oggetto IContextNode**](icontextnode.md) è il nodo di origine (vedere [**IContextLink::GetSourceNode**](icontextlink-getsourcenode.md)) per il nuovo [**oggetto IContextLink.**](icontextlink.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,7 +81,7 @@ Questo [**oggetto IContextNode**](icontextnode.md) è il nodo di origine (vedere
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
@@ -110,7 +110,7 @@ Questo [**oggetto IContextNode**](icontextnode.md) è il nodo di origine (vedere
 [**IContextNode::GetContextLinks**](icontextnode-getcontextlinks.md)
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

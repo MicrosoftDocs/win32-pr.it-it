@@ -1,9 +1,9 @@
 ---
-title: Metodo INapEnforcementClientConnection SetMaxSize (NapEnforcementClient. h)
-description: Imposta la dimensione massima del pacchetto di rapporto di integrità per il client.
+title: Metodo INapEnforcementClientConnection SetMaxSize (NapEnforcementClient.h)
+description: Imposta le dimensioni massime del pacchetto SoH per questo client.
 ms.assetid: 30d3747d-bcf8-41b3-b0af-29f20d48417b
 keywords:
-- NAP metodo SetMaxSize
+- Metodo SetMaxSize NAP
 - Metodo SetMaxSize NAP, interfaccia INapEnforcementClientConnection
 - Interfaccia INapEnforcementClientConnection NAP, metodo SetMaxSize
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b10d7bc1a023371683f17bb3e6e12cd578fa964
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c487e26b89fbc53376837e59fdcc7c298b71ebb10ffc3e2490036b536f28264
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781021"
 ---
-# <a name="inapenforcementclientconnectionsetmaxsize-method"></a>Metodo INapEnforcementClientConnection:: SetMaxSize
+# <a name="inapenforcementclientconnectionsetmaxsize-method"></a>Metodo INapEnforcementClientConnection::SetMaxSize
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: SetMaxSize** imposta la dimensione massima del pacchetto di rapporto di integrità per il client.
+Il **metodo INapEnforcementClientConnection::SetMaxSize** imposta le dimensioni massime del pacchetto SoH per questo client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT SetMaxSize(
 
 <dl> <dt>
 
-*MaxSize* \[ in\]
+*maxSize* \[ Pollici\]
 </dt> <dd>
 
-Struttura [**ProtocolMaxSize**](nap-datatypes.md) che indica la dimensione massima, in byte, del pacchetto di rapporto di integrità.
+Struttura [**ProtocolMaxSize**](nap-datatypes.md) che indica le dimensioni massime, in byte, del pacchetto SoH.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -80,10 +80,10 @@ Questo valore viene impostato dal client di imposizione.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

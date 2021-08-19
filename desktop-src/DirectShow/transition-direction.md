@@ -15,7 +15,7 @@ ms.locfileid: "118951495"
 
 \[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Una transizione passa dall'input A all'input B e da t₀ a t₁. Di conseguenza, *la direzione* di una transizione può significare una delle due cose seguenti:
+Una transizione passa dall'input A all'input B e da t ₀ a t₁. Di conseguenza, *la direzione* di una transizione può significare una delle due cose seguenti:
 
 -   Mapping dei livelli della sequenza temporale agli input.
 -   Progressione nel tempo.
@@ -29,7 +29,7 @@ Il diagramma seguente illustra la differenza tra la direzione di input e la dire
 
 ![cancellare le indicazioni](images/wipedirections.png)
 
-La transizione si trova sulla traccia 1. Per impostazione predefinita, la cancellazione va da sinistra a destra e dalla traccia 0 alla traccia 1. Lo scambio di input fa sì che la cancellazione passa dalla traccia 1 alla traccia 0, ma da sinistra a destra. Invertindo lo stato di avanzamento, la transizione passa da destra a sinistra. È possibile combinare entrambe le combinazioni, come illustrato all'estrema sinistra.
+La transizione si trova sulla traccia 1. Per impostazione predefinita, la cancellazione va da sinistra a destra e dalla traccia 0 alla traccia 1. Lo scambio di input fa sì che la cancellazione passa dalla traccia 1 alla traccia 0, ma ancora da sinistra a destra. Invertindo lo stato di avanzamento, la transizione passa da destra a sinistra. È possibile combinare entrambe le combinazioni, come illustrato all'estrema sinistra.
 
 Per altre informazioni sul modo in cui DES esegue il rendering delle transizioni, vedere [Il modello di sequenza temporale](the-timeline-model.md).
 

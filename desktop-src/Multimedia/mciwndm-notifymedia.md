@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_NOTIFYMEDIA (VFW. h)
-description: Il \_ messaggio MCIWNDM NOTIFYMEDIA notifica alla finestra padre di un'applicazione che il supporto è stato modificato.
+title: MCIWNDM_NOTIFYMEDIA messaggio (Vfw.h)
+description: Il messaggio MCIWNDM NOTIFYMEDIA notifica alla \_ finestra padre di un'applicazione che il supporto è stato modificato.
 ms.assetid: cc31502d-09a9-4580-9ff8-9c2be51c8e35
 keywords:
-- MCIWNDM_NOTIFYMEDIA messaggi multimediali di Windows
+- MCIWNDM_NOTIFYMEDIA messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7026bd984e1d79775aac52caad56c87be6e8098e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa64b17fb3910e518e5b5d4318f8d988cf71f8c314f047a5f2eed1ff80cc843d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783022"
 ---
-# <a name="mciwndm_notifymedia-message"></a>\_Messaggio MCIWNDM NOTIFYMEDIA
+# <a name="mciwndm_notifymedia-message"></a>Messaggio NOTIFYMEDIA MCIWNDM \_
 
-Il messaggio **MCIWNDM \_ NOTIFYMEDIA** notifica alla finestra padre di un'applicazione che il supporto è stato modificato.
+Il **messaggio MCIWNDM \_ NOTIFYMEDIA** notifica alla finestra padre di un'applicazione che il supporto è stato modificato.
 
 
 ```C++
@@ -38,23 +38,23 @@ lParam = (LPARAM) (LPSTR) lp;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*HWND*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
 Handle per la finestra MCIWnd.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che contiene il nuovo nome file. Se il supporto è in chiusura, specifica una stringa null.
+Puntatore a una stringa con terminazione Null contenente il nuovo nome file. Se il supporto è in chiusura, specifica una stringa Null.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile abilitare la notifica delle modifiche dei supporti specificando lo \_ stile della finestra NOTIFYMEDIA di MCIWNDF.
+È possibile abilitare la notifica delle modifiche ai supporti specificando lo stile della finestra \_ NOTIFYMEDIA MCIWNDF.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Puntatore a una stringa con terminazione null che contiene il nuovo nome file. S
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

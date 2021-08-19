@@ -1,18 +1,18 @@
 ---
-title: Proprietà PublicMode di IMsRdpClientAdvancedSettings5
+title: Proprietà PublicMode IMsRdpClientAdvancedSettings5
 description: Imposta o recupera la configurazione per la modalità pubblica. La modalità pubblica impedisce al client di memorizzare nella cache i dati utente nel sistema locale.
 ms.assetid: dff6121a-b69c-411f-832b-29f9609f4230
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà PublicMode
-- Servizi Desktop remoto proprietà PublicMode, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà PublicMode
-- Servizi Desktop remoto proprietà PublicMode, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà PublicMode
-- Servizi Desktop remoto proprietà PublicMode, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà PublicMode
-- Servizi Desktop remoto proprietà PublicMode, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà PublicMode
+- Proprietà PublicMode Servizi Desktop remoto
+- Proprietà PublicMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , PublicMode
+- Proprietà PublicMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , PublicMode
+- Proprietà PublicMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , PublicMode
+- Proprietà PublicMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , PublicMode
 topic_type:
 - apiref
 api_name:
@@ -34,14 +34,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9173b7685e77984a28d65129c79c9d1a09cf1458
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f5577c01d50b9f7e82a7430d51631c90db7f83e32c0fd20273c524eecdecb26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001349"
 ---
-# <a name="imsrdpclientadvancedsettings5publicmode-property"></a>IMsRdpClientAdvancedSettings5::P proprietà ublicMode
+# <a name="imsrdpclientadvancedsettings5publicmode-property"></a>Proprietà IMsRdpClientAdvancedSettings5::P ublicMode
 
 Imposta o recupera la configurazione per la modalità pubblica. La modalità pubblica impedisce al client di memorizzare nella cache i dati utente nel sistema locale.
 
@@ -64,7 +64,7 @@ HRESULT get_PublicMode(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta l'impostazione della modalità pubblica su **Variant \_ true** o **Variant \_ false**. Se impostato su **Variant \_ true**, l'impostazione della modalità pubblica è abilitata.
+Imposta l'impostazione della modalità pubblica **su VARIANT \_ TRUE** **o VARIANT \_ FALSE.** Se impostato su **VARIANT \_ TRUE,** l'impostazione della modalità pubblica è abilitata.
 
 ## <a name="requirements"></a>Requisiti
 

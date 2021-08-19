@@ -1,23 +1,23 @@
 ---
-title: Campi di informazioni obsolete
-description: Molti dei campi di informazioni nelle strutture di informazioni principali saranno obsoleti. Questi campi rimarranno nella struttura delle informazioni per la compatibilità con le versioni di Windows a 16 bit e restituiranno un valore predefinito intelligente in altri sistemi Windows.
+title: Campi di informazioni obsoleti
+description: Molti dei campi di informazioni nelle strutture di informazioni di base saranno obsoleti. Questi campi rimarranno nella struttura delle informazioni per la compatibilità con le versioni a 16 bit di Windows e restituiranno un valore predefinito intelligente in altri sistemi Windows.
 ms.assetid: 666ad2cd-d407-4378-93d8-fc1e69fa3662
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e688985a3ee0ac1fe1df9c78cacfdeea17981ec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 95b9961fe515d2ecc4c9cba3db6c6f37cea915e55962f08d5272c0a479eb1939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012469"
 ---
-# <a name="obsolete-information-fields"></a>Campi di informazioni obsolete
+# <a name="obsolete-information-fields"></a>Campi di informazioni obsoleti
 
-Molti dei campi di informazioni nelle strutture di informazioni principali saranno obsoleti. Questi campi rimarranno nella struttura delle informazioni per la compatibilità con le versioni di Windows a 16 bit e restituiranno un valore predefinito intelligente in altri sistemi Windows.
+Molti dei campi di informazioni nelle strutture di informazioni di base saranno obsoleti. Questi campi rimarranno nella struttura delle informazioni per la compatibilità con le versioni a 16 bit di Windows e restituiranno un valore predefinito intelligente in altri sistemi Windows.
 
- 
+ 
 
- 
+ 
 
 
 

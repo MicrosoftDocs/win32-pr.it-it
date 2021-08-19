@@ -1,5 +1,5 @@
 ---
-description: Richiedere informazioni sul file di origine da un oggetto callstack.
+description: Richiesta di informazioni sul file di origine da un callstack.
 MS-HAID: vspixengine.ISourceFileInfoRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "118985631"
 ---
 # <a name="span-idvspixengineisourcefileinforequestspanisourcefileinforequest-interface"></a><span id="vspixengine.isourcefileinforequest"></span>Interfaccia ISourceFileInfoRequest
 
-Richiedere informazioni sul file di origine da un oggetto callstack.
+Richiesta di informazioni sul file di origine da un callstack.
 
 ## <a name="members"></a>Membri
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d2e41ad3e4119fffbada26fe3ebebdfe3bf82043
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf3f4b70f1b06f5f985d459af361dc27f320d84465f5ef86f2d956339bf90ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778791"
 ---
 # <a name="irtcgetcontrolstate-method"></a>Metodo IRTC::GetControlState
 
@@ -44,7 +44,7 @@ HRESULT STDMETHODCALLTYPE GetControlState(
 *IsRunnning* \[ Cambio\]
 </dt> <dd>
 
-Indicatore che l'acquisizione corrente è in esecuzione, anche se l'acquisizione è sospesa.
+Indicatore che l'acquisizione corrente è in esecuzione, incluso se l'acquisizione è sospesa.
 
 </dd> <dt>
 
@@ -65,8 +65,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | NPP è connesso alla rete, ma non con il [metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IRTC::Connessione](irtc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | Il NPP è connesso alla rete, ma non con il [metodo IRTC::Connessione.](irtc-connect.md)<br/>                     |
 
 
 
@@ -74,7 +74,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete. È possibile usare questo metodo per determinare se un'acquisizione è in esecuzione, se l'acquisizione è sospesa o se l'acquisizione è stata arrestata ma NPP è ancora connesso.
+Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete. È possibile usare questo metodo per scoprire se un'acquisizione è in esecuzione, se l'acquisizione è sospesa o se l'acquisizione è stata arrestata ma il NPP è ancora connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete. 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC::Connect](irtc-connect.md)
+[IRTC::Connessione](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::P ause](irtc-pause.md)

@@ -1,23 +1,23 @@
 ---
-title: itof (SM4-ASM)
-description: Intero con segno alla conversione a virgola mobile.
+title: itof (sm4 - asm)
+description: Conversione da intero con segno a virgola mobile.
 ms.assetid: 60652168-25FA-4084-8CC1-73F12984ECED
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f9d262f65801cd2caa0e6432b335ce32fff0d4e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f473b5cc9664ee1c9acab88381bc9de6a5b4897fac3899923c6bb20c22bba7fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986481"
 ---
-# <a name="itof-sm4---asm"></a>itof (SM4-ASM)
+# <a name="itof-sm4---asm"></a>itof (sm4 - asm)
 
-Intero con segno alla conversione a virgola mobile.
+Conversione da intero con segno a virgola mobile.
 
 
 
-| itof dest \[ . mask \] , \[ - \] src0 \[ . Swizzle\] |
+| itof dest \[ .mask \] , \[ - \] src0 \[ .swizzle\] |
 |-------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Intero con segno alla conversione a virgola mobile.
 
 | Elemento                                                            | Descrizione                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[in \] contiene il risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] contiene il valore da convertire.<br/>        |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Contiene il risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Contiene il valore da convertire.<br/>        |
 
 
 
@@ -37,15 +37,15 @@ Intero con segno alla conversione a virgola mobile.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione di conversione da Integer a float con segno presuppone che *src0* contenga una tupla con valore intero a 32 bit con segno 4. Dopo l'esecuzione dell'istruzione, *dest* conterrà una tupla a virgola mobile a 4 elementi.
+Questa istruzione di conversione da intero a float con segno presuppone che *src0* contenga una tupla integer a 4 bit con segno. Dopo l'esecuzione dell'istruzione, *dest* conterrà una tupla a 4 virgola mobile.
 
-La conversione viene eseguita per ogni componente.
+La conversione viene eseguita per componente.
 
-Quando un valore di input di tipo Integer è troppo grande per essere rappresentato esattamente nel formato a virgola mobile, l'arrotondamento alla modalità pari più vicina è fortemente consigliato ma non obbligatorio.
+Quando un valore di input integer è troppo grande per essere rappresentato esattamente nel formato a virgola mobile, l'arrotondamento alla modalità pari più vicina è fortemente consigliato ma non obbligatorio.
 
-Il modificatore negazioni facoltativo nell'operando di origine accetta il complemento di 2 prima di eseguire un'operazione aritmetica.
+Il modificatore di negazione facoltativo nell'operando di origine accetta il complemento 2 prima di eseguire un'operazione aritmetica.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -57,20 +57,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -80,7 +80,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

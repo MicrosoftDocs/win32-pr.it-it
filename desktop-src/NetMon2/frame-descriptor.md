@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118938572"
 ---
-# <a name="frame_descriptor-structure"></a>Struttura \_ FRAME DESCRIPTOR
+# <a name="frame_descriptor-structure"></a>Struttura \_ DEL DESCRITTORE FRAME
 
 La **struttura FRAME \_ DESCRIPTOR** fornisce informazioni descrittive sui frame non elaborati.
 

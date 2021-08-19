@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_WAVE_OPEN_PARMS (Mciapi. h)
-description: La \_ \_ \_ struttura parametri Wave Open di MCI contiene informazioni per il \_ comando di apertura di MCI per i dispositivi audio waveform.
+title: MCI_WAVE_OPEN_PARMS struttura (Mciapi.h)
+description: La struttura MCI WAVE OPEN PARMS contiene informazioni per \_ il comando \_ \_ MCI OPEN per i dispositivi \_ waveform-audio.
 ms.assetid: 2fc9383e-4610-4751-acad-b545dc6d8992
 keywords:
-- Struttura MCI_WAVE_OPEN_PARMS di Windows Multimedia
+- MCI_WAVE_OPEN_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5a4107c6283edab1ffeaf18297e2898a8b17761
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 470b00bc818fb184174f27a8ff281359788f235ec7e31b899b051dc90423426c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783785"
 ---
-# <a name="mci_wave_open_parms-structure"></a>\_ \_ Struttura parametri Wave Open di MCI \_
+# <a name="mci_wave_open_parms-structure"></a>Struttura MCI \_ WAVE \_ OPEN \_ PARMS
 
-La **struttura \_ \_ \_ parametri Wave Open di MCI** contiene informazioni per il comando di [**\_ apertura di MCI**](mci-open.md) per i dispositivi audio waveform.
+La **struttura MCI \_ WAVE OPEN \_ \_ PARMS** contiene informazioni per [**il comando MCI \_ OPEN**](mci-open.md) per i dispositivi waveform-audio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **wDeviceID**
 </dt> <dd>
 
-Identificatore restituito all'applicazione.
+Rientro restituito all'applicazione.
 
 </dd> <dt>
 
 **lpstrDeviceType**
 </dt> <dd>
 
-Nome o identificatore costante del tipo di dispositivo. Il nome del dispositivo viene in genere ottenuto dal registro di sistema o dal file di SYSTEM.INI. Questo membro può essere uno dei valori elencati in [tipi di dispositivo MCI](mci-device-types.md).
+Nome o identificatore costante del tipo di dispositivo. Il nome del dispositivo viene in genere ottenuto dal registro o dal SYSTEM.INI file. Questo membro può essere uno dei valori elencati in [Tipi di dispositivo MCI.](mci-device-types.md)
 
 </dd> <dt>
 
@@ -89,9 +89,9 @@ Lunghezza del buffer, in secondi.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
-Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ parametri Open**](mci-open-parms.md) di MCI invece di **MCI \_ Wave \_ Open \_ parametri** .
+Se non si usano i membri dati estesi, è possibile usare la struttura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) anziché **MCI \_ WAVE OPEN \_ \_ PARMS.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ p
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -109,19 +109,19 @@ Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ p
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_aperto MCI**](mci-open.md)
+[**MCI \_ OPEN**](mci-open.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[**\_parametri aperto \_ MCI**](mci-open-parms.md)
+[**MCI \_ OPEN \_ PARMS**](mci-open-parms.md)
 </dt> </dl>
 
  

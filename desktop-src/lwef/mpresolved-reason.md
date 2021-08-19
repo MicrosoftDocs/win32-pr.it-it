@@ -3,7 +3,7 @@ title: MPRESOLVED_REASON enumerazione (MpClient.h)
 description: Possibili motivi della risoluzione di un errore di correzione.
 ms.assetid: 29E875D7-97DA-4129-AB71-B261CD0E682A
 keywords:
-- MPRESOLVED_REASON funzionalità dell'ambiente Windows legacy
+- MPRESOLVED_REASON funzionalità dell'Windows legacy
 - PMPRESOLVED_REASON puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
@@ -57,7 +57,7 @@ In uno stato di errore.
 
 </dd> <dt>
 
-<span id="MPRESOLVED_REASON_TIMED_OUT"></span><span id="mpresolved_reason_timed_out"></span>**TIMEOUT DEL MOTIVO \_ MPRESOLVED \_ \_**
+<span id="MPRESOLVED_REASON_TIMED_OUT"></span><span id="mpresolved_reason_timed_out"></span>**TIMEOUT DEL MOTIVO MPRESOLVED \_ \_ \_**
 </dt> <dd>
 
 È passato tempo sufficiente. Il valore predefinito è una settimana.

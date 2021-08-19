@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4f84ecac1eb910f4b3c97aba6ed42691c70b5b1f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 87d1b386409047eefc3e70ce5007082dda2158122ccfe4e2d3b2bea683a25a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991091"
 ---
 # <a name="d3dxquaternionmultiply-function-d3dx10mathh"></a>Funzione D3DXQuaternionMultiply (D3DX10Math.h)
 
@@ -73,13 +73,13 @@ Puntatore a una [**struttura D3DXQUATERNION di**](d3d10-d3dxquaternion.md) origi
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a [**una struttura D3DXQUATERNION**](d3d10-d3dxquaternion.md) che è il prodotto di due quaternioni.
+Puntatore a [**una struttura D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il prodotto di due quaternioni.
 
 ## <a name="remarks"></a>Commenti
 
-Il risultato rappresenta la rotazione Q1 seguita dalla rotazione Q2 (Out = Q2 \* Q1). Questa operazione viene eseguita in modo che **D3DXQuaternionMultiply** mantenga la stessa semantica di [**D3DXMatrixMultiply**](d3d10-d3dxmatrixmultiply.md) perché i quaternioni unità possono essere considerati come un altro modo per rappresentare le matrici di rotazione.
+Il risultato rappresenta la rotazione Q1 seguita dalla rotazione Q2 (Out = Q2 \* Q1). Questa operazione viene eseguita in modo che **D3DXQuaternionMultiply** mantenga la stessa semantica di [**D3DXMatrixMultiply**](d3d10-d3dxmatrixmultiply.md) perché i quaternioni di unità possono essere considerati come un altro modo per rappresentare le matrici di rotazione.
 
-Le trasformazioni vengono concatenate nello stesso ordine per le funzioni **D3DXQuaternionMultiply** e [**D3DXMatrixMultiply.**](d3d10-d3dxmatrixmultiply.md) Ad esempio, supponendo che mX e mY rappresentino le stesse rotazioni di qX e qY, sia m che q rappresenteranno le stesse rotazioni.
+Le trasformazioni vengono concatenate nello stesso ordine per entrambe le funzioni **D3DXQuaternionMultiply** e [**D3DXMatrixMultiply.**](d3d10-d3dxmatrixmultiply.md) Ad esempio, supponendo che mX e mY rappresentino le stesse rotazioni di qX e qY, sia m che q rappresenteranno le stesse rotazioni.
 
 
 ```

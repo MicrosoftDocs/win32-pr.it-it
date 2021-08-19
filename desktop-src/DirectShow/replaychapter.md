@@ -4,12 +4,12 @@ ms.assetid: 557c6076-a57e-4424-b90c-9299387b413f
 title: ReplayChapter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39c0f631d62ebc8d7a7d27202d48a9bf2377286e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8b349aacaea4cac9bac1d351ec8f7d31dbdc58dfb042fb7ceb58bb7c803338e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952110"
 ---
 # <a name="replaychapter"></a>ReplayChapter
 
@@ -18,7 +18,7 @@ ms.locfileid: "104482237"
 
  
 
-L' `ReplayChapter` evento viene inviato quando il comando ReplayChapter è stato abilitato o disabilitato.
+`ReplayChapter`L'evento viene inviato quando il comando ReplayChapter è stato abilitato o disabilitato.
 
 ``` syntax
 ReplayChapter(bEnabled)

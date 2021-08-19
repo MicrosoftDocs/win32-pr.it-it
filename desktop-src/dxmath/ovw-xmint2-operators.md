@@ -26,7 +26,7 @@ La [**struttura XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) 
 
 | Metodi                                             | Descrizione                                                                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxmath/nf-directxmath-xmint2-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMINT2` di all'istanza corrente di `XMINT2` .<br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmint2-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMINT2` di all'istanza corrente di `XMINT2` .<br/> |
 
 
 

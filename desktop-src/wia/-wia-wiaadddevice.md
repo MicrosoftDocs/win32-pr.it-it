@@ -1,5 +1,5 @@
 ---
-description: La funzione WiaAddDevice richiama l'interfaccia utente dell'Installazione guidata scanner e fotocamera. Equivale a eseguire &\# 0034;rundll32.exe stici.dll \_ AddDevice&\# 0034; dal prompt dei comandi.
+description: La funzione WiaAddDevice richiama l'interfaccia utente dell'Installazione guidata scanner e fotocamera. Equivale a eseguire &\# 0034;rundll32.exe sti \_ci.dll AddDevice&\# 0034; dal prompt dei comandi.
 ms.assetid: 83a1e22c-d751-4c8e-8f39-ec987042c745
 title: Funzione WiaAddDevice (Wia.h)
 ms.topic: reference
@@ -44,7 +44,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione deve essere chiamata con credenziali di amministratore. Quando viene eseguito in Controllo dell'account utente , il processo deve essere con privilegi elevati.
+Questa funzione deve essere chiamata con credenziali di amministratore. Quando viene eseguito in Controllo dell'account utente , il processo deve essere elevato.
 
 ## <a name="requirements"></a>Requisiti
 

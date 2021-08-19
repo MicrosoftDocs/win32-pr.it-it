@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-TargetClass
-description: Nome della classe dell'oggetto criterio da creare.
+title: Attributo ms-WMI-TargetClass
+description: Nome della classe dell'oggetto criteri da creare.
 ms.assetid: 3b6dbdd2-e87f-4ae5-97a0-ccbee7221593
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-TargetClass
-- msWMI-schema AD attributo TargetClass
+- Schema AD dell'attributo msWMI-TargetClass
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b617d2c68bba314610bdf81902c0e2696d9f96ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a854ded477199728bad845baf73d49a57241a5d01de109fe732062837f4a36d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022479"
 ---
-# <a name="ms-wmi-targetclass-attribute"></a>attributo ms-WMI-TargetClass
+# <a name="ms-wmi-targetclass-attribute"></a>Attributo ms-WMI-TargetClass
 
-Nome della classe dell'oggetto criterio da creare.
+Nome della classe dell'oggetto criteri da creare.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetClass                          |
-| LDAP-Display-Name | msWMI-TargetClass                           |
-| Dimensione              | Meno di 20 caratteri.                |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| CN                | ms-WMI-TargetClass                          |
+| Ldap-Display-Name | msWMI-TargetClass                           |
+| Dimensione              | Meno di venti caratteri.                |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1645                     |
-| System-ID-GUID    | 95b6d8d6-c9e8-4661-a2bc-6a5cabc04c62        |
+| System-Id-Guid    | 95b6d8d6-c9e8-4661-a2bc-6a5cabc04c62        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Nome della classe dell'oggetto criterio da creare.
 | ID collegamento                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Nome della classe dell'oggetto criterio da creare.
 | ID collegamento                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Nome della classe dell'oggetto criterio da creare.
 | ID collegamento                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Nome della classe dell'oggetto criterio da creare.
 | ID collegamento                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Nome della classe dell'oggetto criterio da creare.
 | ID collegamento                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Callback per restituire informazioni sul file di origine da un oggetto callstack.
+description: Callback per restituire informazioni sul file di origine da unock di chiamate.
 MS-HAID: vspixengine.ISourceFileInfoCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "118985651"
 ---
 # <a name="span-idvspixengineisourcefileinfocallbackspanisourcefileinfocallback-interface"></a><span id="vspixengine.isourcefileinfocallback"></span>Interfaccia ISourceFileInfoCallback
 
-Callback per restituire informazioni sul file di origine da un oggetto callstack.
+Callback per restituire informazioni sul file di origine da unock di chiamate.
 
 ## <a name="members"></a>Membri
 
@@ -36,9 +36,9 @@ Callback per restituire informazioni sul file di origine da un oggetto callstack
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **ISourceFileInfoCallback.**
+**L'interfaccia ISourceFileInfoCallback** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host informazioni sui file di origine associati al callstack.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host informazioni sui file di origine associati allock di chiamate.</p></td></tr></tbody></table>
 
  
 

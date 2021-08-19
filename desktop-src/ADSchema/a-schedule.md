@@ -1,11 +1,11 @@
 ---
 title: Attributo Schedule
-description: Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utilizzato dalla replica.
+description: BLOB di pianificazione come definito dal servizio Windows NT processo. Utilizzato dalla replica.
 ms.assetid: 5eb6409d-3fb5-4368-8b7f-ce19567b7260
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD Attribute di pianificazione
-- Schema di AD Attribute di pianificazione
+- Schema AD dell'attributo Schedule
+- Schema di AD dell'attributo schedule
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abf53e86f77ecffc872d8b007e32b1f964ae244e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b65ff20b9eaba0c8429f5fec164e44a3e4b842e82bfddcca61461f6832f55d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022219"
 ---
 # <a name="schedule-attribute"></a>Attributo Schedule
 
-Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utilizzato dalla replica.
+BLOB di pianificazione come definito dal servizio Windows NT processo. Utilizzato dalla replica.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Pianifica                                              |
-| LDAP-Display-Name | schedule                                              |
+| Ldap-Display-Name | schedule                                              |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.211                                |
-| System-ID-GUID    | dd712224-10e4-11d0-a05f-00aa006c33ed                  |
+| System-Id-Guid    | dd712224-10e4-11d0-a05f-00aa006c33ed                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                                                          |
+| A valore singolo       | Vero                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                                    |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Un BLOB di pianificazione come definito dal servizio processi Windows NT. Utiliz
 | ID collegamento                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 

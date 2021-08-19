@@ -1,7 +1,7 @@
 ---
-description: Il metodo SaveToBlob Salva i dati della proprietà in un formato di persistenza.
+description: Il metodo SaveToBlob salva i dati della proprietà in un formato di persistenza.
 ms.assetid: 48201192-abda-484e-bdb3-442aca52b2bf
-title: 'Metodo IPropertySetter:: SaveToBlob (qedit. h)'
+title: Metodo IPropertySetter::SaveToBlob (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 97e248ebf741b45e73c82b17eee4181b1f19ac35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c94cbb7b927e4bce7309e3e8a016b0e43bc6a0f9f3f319ee733e6e22132b47c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952541"
 ---
-# <a name="ipropertysettersavetoblob-method"></a>Metodo IPropertySetter:: SaveToBlob
+# <a name="ipropertysettersavetoblob-method"></a>Metodo IPropertySetter::SaveToBlob
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -46,14 +46,14 @@ HRESULT SaveToBlob(
 
 <dl> <dt>
 
-*pcSize* \[ out\]
+*pcSize* \[ Cambio\]
 </dt> <dd>
 
-Riceve le dimensioni dei dati in byte.
+Riceve le dimensioni dei dati, in byte.
 
 </dd> <dt>
 
-*PPB* \[ out\]
+*ppb* \[ Cambio\]
 </dt> <dd>
 
 Riceve un puntatore a una matrice di byte che riceve i dati.
@@ -62,21 +62,21 @@ Riceve un puntatore a una matrice di byte che riceve i dati.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo alloca memoria per la matrice di byte. Il chiamante deve liberarlo, usando la funzione **CoTaskMemFree** .
+Il metodo alloca memoria per la matrice di byte. Il chiamante deve liberarlo usando la **funzione CoTaskMemFree.**
 
-Tutti i nomi e i valori delle proprietà vengono troncati con una lunghezza di 40 caratteri. Per questo motivo, XML è il formato di persistenza preferito. Vedere [**interfaccia IXml2Dex**](ixml2dex.md).
+Tutti i nomi e i valori delle proprietà vengono troncati a 40 caratteri. Per questo motivo, XML è il formato di persistenza preferito. Vedere [**Interfaccia IXml2Dex.**](ixml2dex.md)
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ Tutti i nomi e i valori delle proprietà vengono troncati con una lunghezza di 4
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

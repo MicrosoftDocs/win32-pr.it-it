@@ -33,7 +33,7 @@ ms.locfileid: "118983461"
 ---
 # <a name="apijetcompact-method"></a>Metodo Api.JetCompact
 
-Crea una copia di un database esistente. La copia viene compattata in uno stato ottimale per l'utilizzo. I dati nei dati copiati verranno imballati in base alle misure scelte per gli indici in fase di creazione dell'indice. In questo modo, i dati compattati possono essere archiviati nel modo più denso possibile. In alternativa, i dati compattati possono riservare spazio per la successiva crescita di record o inserimenti di indici.
+Crea una copia di un database esistente. La copia viene compattata in uno stato ottimale per l'utilizzo. I dati nei dati copiati verranno imballati in base alle misure scelte per gli indici al momento della creazione dell'indice. In questo modo, i dati compattati possono essere archiviati nel modo più denso possibile. In alternativa, i dati compattati possono riservare spazio per gli inserimenti successivi dell'indice o l'aumento delle dimensioni dei record.
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
@@ -88,14 +88,14 @@ public static void JetCompact(
 
 <!-- end list -->
 
-  - destinationDatabase  
+  - database di destinazione  
     Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome da utilizzare per il database compattato.
 
 <!-- end list -->
 
-  - statusCallback  
+  - StatusCallback  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
     
     Funzione di callback che può essere chiamata periodicamente tramite l'operazione di compattazione del database per segnalare lo stato di avanzamento.

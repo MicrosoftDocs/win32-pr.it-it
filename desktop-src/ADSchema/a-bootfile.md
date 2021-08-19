@@ -1,10 +1,10 @@
 ---
-title: attributo bootFile
-description: Contiene il nome dell'immagine di avvio.
+title: Attributo bootFile
+description: Contiene il nome dell'immagine d'avvio.
 ms.assetid: 8fb31ff0-eb0b-446b-8626-67138ad20d31
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo bootFile
+- Attributo bootFile Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff8805f12dbe04232efccdaad11033714379a8b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3b3883029b64aedb1db00bf3e53a2bd5b88db2b25c232ed393ce0f69fb6573e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022749"
 ---
-# <a name="bootfile-attribute"></a>attributo bootFile
+# <a name="bootfile-attribute"></a>Attributo bootFile
 
-Contiene il nome dell'immagine di avvio per il supporto per la gestione delle identità UNIX.
+Contiene il nome dell'immagine di avvio per il UNIX di gestione delle identità.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | bootFile                             |
-| LDAP-Display-Name | bootFile                             |
+| Ldap-Display-Name | bootFile                             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.24                     |
-| System-ID-GUID    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
+| System-Id-Guid    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene il nome dell'immagine di avvio per il supporto per la gestione delle id
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| A valore singolo       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il nome dell'immagine di avvio per il supporto per la gestione delle id
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| A valore singolo       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il nome dell'immagine di avvio per il supporto per la gestione delle id
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| A valore singolo       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene il nome dell'immagine di avvio per il supporto per la gestione delle id
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| Is-Single-Valued       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 

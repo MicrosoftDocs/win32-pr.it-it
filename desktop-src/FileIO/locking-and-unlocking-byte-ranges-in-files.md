@@ -1,36 +1,36 @@
 ---
-description: Codice di esempio che mostra il blocco e lo sblocco di intervalli di byte usando le funzioni LockFileEx e UnlockFileEx.
+description: Codice di esempio che illustra il blocco e lo sblocco dell'intervallo di byte usando le funzioni LockFileEx e UnlockFileEx.
 ms.assetid: 9d54fe11-b1ad-4723-a42a-00bc6dc64072
-title: Blocco e sblocco degli intervalli di byte nei file
+title: Blocco e sblocco di intervalli di byte nei file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7789c56cea100d00168494fac97bdb46e036953c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ccd18fc8a5e2f143cb58717f72abbc135421ee802ff93b651dad0916ed8a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951160"
 ---
-# <a name="locking-and-unlocking-byte-ranges-in-files"></a>Blocco e sblocco degli intervalli di byte nei file
+# <a name="locking-and-unlocking-byte-ranges-in-files"></a>Blocco e sblocco di intervalli di byte nei file
 
-Sebbene il sistema consenta a più di un'applicazione di aprire un file e di scrivervi, le applicazioni non devono scrivere sul lavoro dell'altro. Un'applicazione può impedire questo problema bloccando temporaneamente un intervallo di byte in un file.
+Anche se il sistema consente a più applicazioni di aprire un file e scriverlo, le applicazioni non devono scrivere le une sulle altre. Un'applicazione può evitare questo problema bloccando temporaneamente un intervallo di byte in un file.
 
-Le funzioni [**lockfile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile) e [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) bloccano un intervallo di byte specificato in un file. L'intervallo può estendersi oltre la fine corrente del file. Con la parte di blocco di un file i thread del blocco elaborano l'accesso esclusivo all'intervallo di byte specificato tramite l'handle di file specificato. I tentativi di accesso a un intervallo di byte bloccato da un altro processo hanno sempre esito negativo. Se il processo di blocco tenta di accedere a un intervallo di byte bloccato tramite un secondo handle di file, il tentativo ha esito negativo.
+Le [**funzioni LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile) [**e LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) bloccano un intervallo specificato di byte in un file. L'intervallo può estendersi oltre la fine corrente del file. La parte di blocco di un file concede ai thread dei processi di blocco l'accesso esclusivo all'intervallo di byte specificato usando l'handle di file specificato. I tentativi di accedere a un intervallo di byte bloccato da un altro processo hanno sempre esito negativo. Se il processo di blocco tenta di accedere a un intervallo di byte bloccato tramite un secondo handle di file, il tentativo ha esito negativo.
 
 > [!Note]  
 > I file mappati alla memoria non sono supportati con blocchi di intervallo di byte.
 
  
 
-La funzione [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) consente a un'applicazione di specificare uno dei due tipi di blocchi. Un *blocco esclusivo* nega a tutti gli altri processi l'accesso in lettura e scrittura all'intervallo di byte specificato di un file. Un *blocco condiviso* nega a tutti i processi l'accesso in scrittura all'intervallo di byte specificato di un file, incluso il processo che blocca prima l'intervallo di byte. Questa operazione può essere utilizzata per creare un intervallo di byte di sola lettura in un file.
+La [**funzione LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) consente a un'applicazione di specificare uno dei due tipi di blocchi. Un *blocco esclusivo nega* a tutti gli altri processi l'accesso in lettura e scrittura all'intervallo di byte specificato di un file. Un *blocco condiviso* nega a tutti i processi l'accesso in scrittura all'intervallo di byte specificato di un file, incluso il processo che blocca per primo l'intervallo di byte. Può essere usato per creare un intervallo di byte di sola lettura in un file.
 
-Un'applicazione Sblocca l'intervallo di byte tramite la funzione [**UnlockFile**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfile) o [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) e deve sbloccare tutte le aree bloccate prima di chiudere un file.
+Un'applicazione sblocca l'intervallo di byte usando la [**funzione UnlockFile**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfile) o [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) e deve sbloccare tutte le aree bloccate prima di chiudere un file.
 
-Per un esempio dell'uso di [**lockfile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile), vedere [Accodamento di un file a un altro file](appending-one-file-to-another-file.md).
+Per un esempio di utilizzo [**di LockFile,**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile)vedere [Aggiunta di un file a un altro file](appending-one-file-to-another-file.md).
 
-Gli esempi seguenti illustrano come usare [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex). Il primo esempio è una semplice dimostrazione che consente di creare un file, scrivere alcuni dati e quindi bloccare una sezione al centro.
+Negli esempi seguenti viene illustrato come usare [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex). Il primo esempio è una semplice dimostrazione per creare un file, scriverne alcuni dati e quindi bloccare una sezione al centro.
 
-**Nota**  In questo esempio non vengono modificati i dati dopo che il file è stato bloccato.
+**Nota**  Questo esempio non modifica i dati dopo il blocco del file.
 
 
 ```C++
@@ -167,7 +167,7 @@ int main(int argc, char *argv[])
 
 
 
-L'esempio seguente è una dimostrazione avanzata del blocco di intervalli di byte, usando più thread e un database semplice che esegue operazioni casuali su un singolo file di dati. Per ulteriori informazioni, vedere i commenti del codice incorporati e la sezione che segue il codice di esempio.
+L'esempio seguente è una dimostrazione avanzata del blocco dell'intervallo di byte, con più thread e un database semplice che esegue operazioni casuali su un singolo file di dati. Per altre informazioni, vedere i commenti del codice incorporato e la sezione che segue il codice di esempio.
 
 
 ```C++
@@ -1028,25 +1028,25 @@ int __cdecl wmain(int argc, LPCWSTR argv[])
 
 
 
-Questo esempio è un'applicazione console di Windows che esegue più accessi simultanei a un file, tutti coordinati per blocco di intervalli di byte utilizzando un database semplice, composto da più record di dimensioni fisse. Si noti che la vera concorrenza dipende dal numero di core del processore presenti nel sistema host.
+Questo esempio è un'applicazione console Windows che esegue più accessi simultanei a un file, tutti coordinati da blocchi di intervallo di byte usando un database semplice, costituito da diversi record di dimensioni fisse. Si noti che la vera concorrenza dipende dal numero di core del processore presenti nel sistema host.
 
-Tutti i record hanno i primi due campi in comune: un codice di tipo e un numero di sequenza. Il codice del tipo è uno dei due codici: il codice "MSTR" fa riferimento al tipo di **\_ record master** e il codice "data" fa riferimento a un tipo di **\_ record di dati** . Può essere presente un solo **\_ record master** e zero o più **\_ record di dati**. Per questo esempio, i dati contenuti nei record di dati vengono generati in modo casuale. Il secondo campo, il numero di sequenza, viene incrementato ogni volta che un record viene modificato.
+Tutti i record hanno i primi due campi in comune: un codice di tipo e un numero di sequenza. Il codice del tipo è uno dei due codici: il codice "Mstr" fa riferimento al tipo **MASTER \_ RECORD** e il codice "Data" fa riferimento a un **tipo DATA \_ RECORD.** Può essere presente un solo **RECORD \_ MASTER** e zero o più **RECORD \_ DI** DATI. Per questo esempio, i dati contenuti nei record di dati vengono generati in modo casuale. Il secondo campo, il numero di sequenza, viene incrementato ogni volta che un record viene modificato.
 
-Quando viene avviata l'esecuzione, se il file di dati non esiste già, viene creato e inizializzato dalla funzione **InitNewFile** . La funzione **InitNewFile** scrive un record di tipo master con una bitmap vuota all'inizio. Se il file esiste già, viene aperto; si presuppone che sia presente un record master valido all'inizio.
+All'inizio dell'esecuzione, se il file di dati non esiste già, viene creato e inizializzato dalla **funzione InitNewFile.** La **funzione InitNewFile** scrive un record di tipo Master con una bitmap vuota all'inizio. Se il file esiste già, viene aperto. si presuppone che abbia un record master valido all'inizio.
 
-Dopo che il file è stato creato correttamente o è stato aperto correttamente, vengono avviati più thread di lavoro e tutti eseguono un ciclo in cui un'operazione e un record vengono scelti in modo casuale e quindi si tenta di eseguire l'operazione su tale record. Poiché queste operazioni sono casuali, non tutte hanno esito positivo, ma non sono necessariamente errori. Le informazioni di stato appropriate vengono registrate nella console di.
+Dopo che il file è stato creato o aperto correttamente, vengono avviati più thread di lavoro e tutti eseguono un ciclo in cui un'operazione e un record vengono scelti in modo casuale e quindi tale operazione viene tentata su tale record. Poiché queste operazioni sono casuali, non tutte hanno esito positivo, ma non sono necessariamente errori. Le informazioni sullo stato appropriate vengono registrate nella console.
 
-Le operazioni possibili sono le seguenti: creazione di un nuovo record, modifica di un record esistente o eliminazione di un record esistente. L'operazione di creazione esamina la bitmap per trovare il primo record libero e lo alloca come nuovo record. L'operazione di modifica legge la bitmap per verificare se il record esiste effettivamente e, in caso affermativo, modifica il record. L'operazione di eliminazione cancella il bit nella bitmap corrispondente al record, liberando lo spazio del record occupato per l'allocazione futura. Inoltre, queste operazioni vengono suddivise in due parti: accesso a MasterRecord, in cui vengono archiviati i metadati e accesso al record di dati stesso.
+Le operazioni possibili sono le seguenti: creazione di un nuovo record, modifica di un record esistente o eliminazione di un record esistente. L'operazione di creazione esamina la bitmap per trovare il primo record disponibile e alloca tale record come nuovo record. L'operazione di modifica legge la bitmap per verificare se il record esiste effettivamente e, in tal caso, modifica tale record. L'operazione di eliminazione cancella il bit nella bitmap corrispondente al record, liberando lo spazio occupato per l'allocazione futura. Inoltre, queste operazioni sono suddivise in due parti: l'accesso a MasterRecord, in cui sono archiviati i metadati, e l'accesso al record di dati stesso.
 
-Poiché scrivono i dati nei record di dati, le operazioni di creazione e modifica dei record sono le uniche che richiedono l'accesso ai record di dati. Per questo motivo, l'area coperta dal record viene bloccata esclusivamente prima dell'esecuzione dell'operazione. Le operazioni di creazione ed eliminazione modificano la bitmap, quindi è necessario bloccare il record master in modo esclusivo. Tuttavia, le operazioni di modifica dei record devono leggere solo la bitmap, non scriverle, per verificare se il file esiste. Per tale operazione, il record master necessita solo di un blocco di intervallo di byte condiviso.
+Poiché scrivono dati nei record di dati, le operazioni di creazione e modifica dei record sono le uniche che richiedono l'accesso ai record di dati. Per questo motivo, l'area coperta dal record viene bloccata esclusivamente prima dell'esecuzione dell'operazione. Le operazioni di creazione ed eliminazione modificano la bitmap, quindi devono bloccare il record master in modo esclusivo. Tuttavia, le operazioni di modifica dei record devono solo leggere la bitmap, non scriverla, per verificare se il file esiste. Per tale operazione, il record Master richiede solo un blocco di intervallo di byte condiviso.
 
-I blocchi di intervalli di byte esclusivi impediscono l'accesso in lettura e scrittura da tutti gli altri handle al file ed è questo il motivo per cui vengono usati durante la scrittura in un record. D'altra parte, un blocco di intervallo di byte condiviso impedisce l'accesso in scrittura da tutti gli handle, incluso l'handle proprietario del blocco, ma consente l'accesso in lettura da tutti gli handle.
+I blocchi esclusivi dell'intervallo di byte impediscono l'accesso in lettura e scrittura da tutti gli altri handle al file ed è per questo motivo che vengono usati durante la scrittura in un record. D'altra parte, un blocco dell'intervallo di byte condiviso impedisce l'accesso in scrittura da tutti gli handle, incluso l'handle proprietario del blocco, ma consente l'accesso in lettura da tutti gli handle.
 
-Per illustrare l'uso dei blocchi di intervallo di byte con il file, tutte le operazioni di I/O in questo esempio, diverse dalla nuova inizializzazione di file, vengono eseguite tramite un handle di file asincrono. Questo può essere visualizzato nella funzione **IoRecord** nei case **IoLock** e **IoUnlock** all'interno dell'istruzione switch. Le funzioni [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) e [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) vengono usate con il modello di i/O sovrapposto passando una struttura [**sovrapposta**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) a esse con l'offset per l'inizio dell'intervallo bloccato e un evento che verrà segnalato dopo che il blocco su tale intervallo viene concesso a meno che la funzione non venga restituita immediatamente.
+Per illustrare l'uso dei blocchi di intervallo di byte con il file, tutte le operazioni di I/O in questo esempio, oltre all'inizializzazione del nuovo file, vengono eseguite tramite un handle di file asincrono. Questo può essere visualizzato nella funzione **IoRecord** nei case **IoLock** e **IoUnlock** all'interno dell'istruzione switch. Le funzioni [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) e [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) vengono usate con il modello di I/O sovrapposto passando loro una struttura [**OVERLAPPED**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) con l'offset per l'inizio dell'intervallo bloccato e un evento che verrà segnalato dopo il blocco su tale intervallo, a meno che la funzione non venga restituita immediatamente.
 
-Dopo aver emesso la richiesta di I/O asincrona, l'operazione successiva nella funzione **IoRecord** consiste nell'attendere l'operazione inline. Si tratta spesso di uno scenario non ottimale quando si desidera ottenere le massime prestazioni e viene usato qui per semplicità. Nelle applicazioni di produzione, è preferibile usare [porte di completamento i/o](i-o-completion-ports.md) o meccanismi simili perché rilascia thread per eseguire altre attività di elaborazione durante il completamento dell'i/o.
+Dopo aver emesso la richiesta di I/O asincrona, l'operazione successiva nella funzione **IoRecord** è attendere l'operazione inline. Questo è spesso uno scenario non ottimale quando si desidera ottenere prestazioni massime e viene usato qui per motivi di semplicità. Nelle applicazioni di produzione è preferibile l'uso di porte di completamento [I/O](i-o-completion-ports.md) o meccanismi simili perché rilascia i thread per eseguire altre operazioni di elaborazione durante il completamento dell'I/O.
 
-Il campione termina dopo l'esecuzione di **num \_ FILEOPS** operazioni casuali. Ogni thread registrerà lo stato di chiusura come una condizione di errore o una chiusura normale. Si noti che non tutti i thread termineranno nello stesso momento, a seconda del numero di core del processore del sistema host e della velocità del sottosistema di I/O.
+L'esempio termina dopo l'esecuzione **di operazioni casuali NUM \_ FILEOPS.** Ogni thread registra lo stato di terminazione come condizione di errore o terminazione normale. Si noti che non tutti i thread terminano contemporaneamente, a seconda del numero di core del processore del sistema host e della velocità del sottosistema di I/O.
 
  
 

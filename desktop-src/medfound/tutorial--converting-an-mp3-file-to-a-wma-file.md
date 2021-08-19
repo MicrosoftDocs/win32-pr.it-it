@@ -26,16 +26,16 @@ Per compilare la topologia di transcodifica, creare il profilo di transcodifica 
 Per creare il profilo, seguire questa procedura.
 
 1.  Chiamare la [**funzione MFCreateTranscodeProfile**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetranscodeprofile) per creare un profilo transcodifica vuoto.
-2.  Chiamare [**MFTranscodeGetAudioOutputAvailableTypes**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) per ottenere un elenco di tipi di file multimediali audio dal codificatore. Questa funzione restituisce un [**puntatore IMFCollection**](/windows/desktop/api/mfobjects/nn-mfobjects-imfcollection) che rappresenta una raccolta di [**puntatori IMFMediaType.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
+2.  Chiamare [**MFTranscodeGetAudioOutputAvailableTypes**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) per ottenere un elenco di tipi di supporti audio dal codificatore. Questa funzione restituisce un [**puntatore IMFCollection**](/windows/desktop/api/mfobjects/nn-mfobjects-imfcollection) che rappresenta una raccolta di [**puntatori IMFMediaType.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 3.  Scegliere il tipo di supporto audio che corrisponde ai requisiti di transcoding e copiare gli attributi in un archivio attributi. Per questa esercitazione viene usato il primo tipo di supporto nell'elenco.
-    -   Chiamare [**IMFCollection::GetElement per**](/windows/desktop/api/mfobjects/nf-mfobjects-imfcollection-getelement) selezionare un tipo di supporto audio dall'elenco.
+    -   Chiamare [**IMFCollection::GetElement**](/windows/desktop/api/mfobjects/nf-mfobjects-imfcollection-getelement) per selezionare un tipo di supporto audio dall'elenco.
     -   Eseguire una query sul tipo di supporto per ottenere un puntatore [**all'interfaccia IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) dell'archivio attributi del tipo di supporto.
     -   Chiamare [**IMFAttributes::GetCount**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getcount) per ottenere il numero di attributi contenuti nel tipo di supporto.
-    -   Chiamare [**MFCreateAttributes per**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) creare un nuovo archivio attributi.
+    -   Chiamare [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) per creare un nuovo archivio attributi.
     -   Chiamare [**IMFAttributes::CopyAllItems**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-copyallitems) per copiare gli attributi dal tipo di supporto al nuovo archivio attributi.
 4.  Chiamare [**IMFTranscodeProfile::SetAudioAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setaudioattributes) per impostare gli attributi per il flusso audio.
-5.  Chiamare [**MFCreateAttributes per**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) creare un archivio attributi per gli attributi a livello di contenitore.
-6.  Impostare [l'attributo \_ MF TRANSCODE \_ CONTAINERTYPE](mf-transcode-containertype.md) su **MFTranscodeContainerType \_ ASF,** che specifica un contenitore di file ASF.
+5.  Chiamare [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) per creare un archivio attributi per gli attributi a livello di contenitore.
+6.  Impostare [l'attributo MF \_ TRANSCODE \_ CONTAINERTYPE](mf-transcode-containertype.md) su **MFTranscodeContainerType \_ ASF**, che specifica un contenitore di file ASF.
 7.  Chiamare [**IMFTranscodeProfile::SetContainerAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setcontainerattributes) per impostare gli attributi a livello di contenitore nel profilo.
 
 

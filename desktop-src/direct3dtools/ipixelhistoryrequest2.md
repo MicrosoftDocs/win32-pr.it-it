@@ -1,5 +1,5 @@
 ---
-description: Richiesta di intersezione e primitive della Cronologia pixel separatamente.
+description: Richiesta di intersezioni di cronologia pixel e primitive separatamente.
 MS-HAID: vspixengine.IPixelHistoryRequest2
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e789829d85f4cb986de694470a8cebddf3f26675
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0769e6e6774e0cbad659e02d9abfec73003ac1bf46368e78201fc1e5c234be78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104342106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119624021"
 ---
 # <a name="span-idvspixengineipixelhistoryrequest2spanipixelhistoryrequest2-interface"></a><span id="vspixengine.ipixelhistoryrequest2"></span>Interfaccia IPixelHistoryRequest2
 
-Richiesta di intersezione e primitive della Cronologia pixel separatamente.
+Richiesta di intersezioni di cronologia pixel e primitive separatamente.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IPixelHistoryRequest2** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPixelHistoryRequest2** dispone anche di questi tipi di membri:
+**L'interfaccia IPixelHistoryRequest2** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixelHistoryRequest2** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IPixelHistoryRequest2** dispone di questi metodi.
+**L'interfaccia IPixelHistoryRequest2** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest2-requestintersections-dword-point2d-dword-ipixelhistorycallback2-ptr-dword-dword"><strong>RequestIntersections</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di eventi che generano una modifica nel pixel, nella destinazione di rendering/UAV e nel frame specificati.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest2-requestprimitives-pixelhistoryintersection-ptr-ipixelhistorycallback2-ptr-dword-dword"><strong>RequestPrimitives</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di primitive da una particolare intersezione. Per ulteriori informazioni, vedere la funzione membro RequestIntersections.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest2-requestintersections-dword-point2d-dword-ipixelhistorycallback2-ptr-dword-dword"><strong>RequestIntersections</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di eventi che causano una modifica nel pixel, nella destinazione di rendering/UAV e nel frame specificati.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest2-requestprimitives-pixelhistoryintersection-ptr-ipixelhistorycallback2-ptr-dword-dword"><strong>RequestPrimitives</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di primitive da una determinata intersezione. Per altre informazioni, vedere la funzione membro RequestIntersections.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

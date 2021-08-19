@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. Left
-description: L'attributo Left specifica o recupera la coordinata sinistra del controllo.
+title: AmbientAttributes.left
+description: L'attributo left specifica o recupera la coordinata sinistra del controllo.
 ms.assetid: fb1856f2-e286-4ba8-9ae4-b6cd8b0967b1
 keywords:
-- AmbientAttributes. Left Windows Media Player
+- AmbientAttributes.left Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f881de6733637c0776dd9626a7efc02b145ec25f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3624113fbc92e8114cdd4924fb0452f1091803557e5e32995450f8d2fae6e60a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055089"
 ---
-# <a name="ambientattributesleft"></a>AmbientAttributes. Left
+# <a name="ambientattributesleft"></a>AmbientAttributes.left
 
-L'attributo **Left** specifica o recupera la coordinata sinistra del controllo.
+**L'attributo** left specifica o recupera la coordinata sinistra del controllo.
 
 ``` syntax
         elementID.left
@@ -29,7 +29,7 @@ L'attributo **Left** specifica o recupera la coordinata sinistra del controllo.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresenta la distanza in pixel dal controllo al bordo sinistro della **visualizzazione** padre o della **Sottovisualizzazione**. Il valore predefinito è zero. Sono consentiti numeri negativi, nel qual caso il bordo sinistro della **vista** o della **visualizzazione subview** Ritaglia il controllo.
+Questo attributo è un numero **di** lettura/scrittura (**long**) che rappresenta la distanza in pixel tra il controllo e il bordo sinistro dell'oggetto **VIEW** o **SUBVIEW padre.** Ha un valore predefinito pari a zero. Sono consentiti numeri negativi, nel qual caso il bordo sinistro di **VIEW** o **SUBVIEW** ritaglia il controllo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresent
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

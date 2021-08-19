@@ -27,13 +27,13 @@ Restituisce o imposta l'impostazione visibile per il fumetto per il carattere sp
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintassi** 
 </dt> <dd>
 
-*agent***. Characters(**"* CharacterID *"**). Valore booleano Balloon.Visible* *  \[  =  \]
+*agent***. Characters(**"* CharacterID *"**). Booleano Balloon.Visible* *  \[  =  \]
 
 
 
 | Parte      | Descrizione                                                                                                                                                             |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *boolean* | Espressione booleana che specifica se il fumetto è visibile.<br/> **True** Il balloon è visibile.<br/> **False** Il balloon è nascosto.<br/> |
+| *boolean* | Espressione booleana che specifica se il fumetto della parola è visibile.<br/> **True** Il fumetto è visibile.<br/> **False** Il fumetto è nascosto.<br/> |
 
 
 
@@ -43,11 +43,11 @@ Restituisce o imposta l'impostazione visibile per il fumetto per il carattere sp
 
 ## <a name="remarks"></a>Commenti
 
-Se si segue una chiamata [**Speak**](speak-method.md) o Think con un'istruzione per tentare di modificare la proprietà del balloon, è possibile che non influisca sullo stato Visible del balloon perché la chiamata **Speak** o [**Think**](think-method.md) viene accodata, ma la chiamata che imposta lo stato visibile del balloon non lo fa.  Pertanto, impostare questo valore solo quando nessuna **chiamata Speak** o **Think** è in coda del carattere.
+Se si segue una chiamata [**Speak**](speak-method.md) o Think con un'istruzione per tentare di modificare la proprietà del fumetto, potrebbe non influire sullo stato Visible del fumetto perché la chiamata **Speak** o [**Think**](think-method.md) viene accodata, ma la chiamata che imposta lo stato visibile del fumetto non lo fa.  Pertanto, impostare questo valore solo quando nessuna **chiamata Speak** o **Think** è presente nella coda del carattere.
 
 Se si tenta di impostare questa proprietà mentre il carattere parla, si sposta o viene trascinato, l'impostazione della proprietà non ha effetto fino al completamento dell'operazione precedente.
 
-La chiamata [**dei metodi Speak**](speak-method.md) e [**Think**](think-method.md) rende automaticamente visibile il balloon, impostando la [**proprietà Visible**](visible-property.md) su **True.** Se la proprietà AutoHide del fumetto del carattere è abilitata, il fumetto viene nascosto automaticamente dopo la pronuncia del testo di output. Se si fa clic o si trascina un carattere che attualmente non parla, il fumetto viene nascosto automaticamente anche se l'impostazione Nascondi automaticamente è disabilitata. È possibile modificare l'impostazione AutoHide del carattere usando la proprietà [**Style del fumetto.**](style-property.md)
+La chiamata [**dei metodi Speak**](speak-method.md) e [**Think**](think-method.md) rende automaticamente visibile il fumetto, impostando la [**proprietà Visible**](visible-property.md) su **True.** Se la proprietà AutoHide del fumetto del carattere è abilitata, il fumetto viene automaticamente nascosto dopo la pronuncia del testo di output. Se si fa clic o si trascina un carattere che attualmente non parla, il fumetto viene nascosto automaticamente anche se l'impostazione Nascondi automaticamente è disabilitata. È possibile modificare l'impostazione AutoHide del carattere usando la proprietà [**Style del fumetto.**](style-property.md)
 
 ### <a name="see-also"></a>Vedere anche
 

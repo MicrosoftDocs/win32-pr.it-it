@@ -1,5 +1,5 @@
 ---
-description: 'Metodo SWbemServices.AssociatersOfAsync: restituisce una raccolta di oggetti (classi o istanze) denominati endpoint associati a un oggetto specificato.'
+description: 'Metodo SWbemServices.AssociatorsOfAsync: restituisce una raccolta di oggetti (classi o istanze) denominati endpoint associati a un oggetto specificato.'
 ms.assetid: 3969d90f-d39c-40f1-9328-fc1afbaa53b1
 ms.tgt_platform: multiple
 title: Metodo SWbemServices.AssociatorsOfAsync (Wbemdisp.h)
@@ -16,22 +16,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4b16eed97c891b4b4f5bd283496868d99f9e0fbc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ebc607bf10be8b94fa5274e5539953344c99c263db13dec6f8982146f60f4551
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991791"
 ---
 # <a name="swbemservicesassociatorsofasync-method"></a>Metodo SWbemServices.AssociatorsOfAsync
 
-Il **metodo AssociatorsOfAsync** dell'oggetto [**SWbemServices**](swbemservices.md) restituisce una raccolta di oggetti (classi o istanze) denominati endpoint associati a un oggetto specificato. La chiamata a **AssociatorsOfAsync** restituisce immediatamente e i risultati e lo stato vengono restituiti al chiamante tramite eventi recapitati al sink specificato in *objWbemSink.* Per gestire ogni oggetto restituito, creare *un oggetto objWbemSink.* [**Gestore dell'evento OnObjectReady.**](swbemsink-onobjectready.md)
+Il **metodo AssociatorsOfAsync** dell'oggetto [**SWbemServices**](swbemservices.md) restituisce una raccolta di oggetti (classi o istanze) denominati endpoint associati a un oggetto specificato. La chiamata a **AssociatorsOfAsync** restituisce immediatamente e i risultati e lo stato vengono restituiti al chiamante tramite gli eventi recapitati al sink specificato in *objWbemSink*. Per gestire ogni oggetto restituito, creare *un objWbemSink*. [**Gestore dell'evento OnObjectReady.**](swbemsink-onobjectready.md)
 
-Dopo l'arrivo di tutti gli oggetti, l'elaborazione viene eseguita in *objWbemSink.* [**Evento OnCompleted.**](swbemsink-oncompleted.md) Questo metodo esegue la stessa funzione eseguita dalla query ASSOCIATORS OF WQL. Per altre informazioni sulla creazione di un sink, vedere [Ricezione di un evento WMI.](receiving-a-wmi-event.md)
+Dopo l'arrivo di tutti gli oggetti, l'elaborazione viene eseguita in *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md) Questo metodo esegue la stessa funzione eseguita dalla query ASSOCIATORS OF WQL. Per altre informazioni sulla creazione di un sink, vedere [Ricezione di un evento WMI](receiving-a-wmi-event.md).
 
 Il metodo viene chiamato in modalità asincrona. Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ SWbemServices.AssociatorsOfAsync( _
 *objWbemSink* 
 </dt> <dd>
 
-Obbligatorio. Sink dell'oggetto che riceve gli oggetti in modo asincrono. Creare un [**oggetto SWbemSink**](swbemsink.md) per ricevere gli oggetti.
+Obbligatorio. Sink di oggetto che riceve gli oggetti in modo asincrono. Creare un [**oggetto SWbemSink**](swbemsink.md) per ricevere gli oggetti.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Stringa che contiene un nome di qualificatore. Se specificato, questo parametro 
 *iFlags* \[ Opzionale\]
 </dt> <dd>
 
-Intero che specifica i flag aggiuntivi per l'operazione. Il valore predefinito per questo parametro **è wbemFlagDontSendStatus.** Questo parametro può accettare i valori seguenti.
+Intero che specifica i flag aggiuntivi per l'operazione. Il valore predefinito per questo parametro **è wbemFlagDontSendStatus**. Questo parametro può accettare i valori seguenti.
 
 <dt>
 
@@ -144,7 +144,7 @@ Intero che specifica i flag aggiuntivi per l'operazione. Il valore predefinito p
 
 </dt> <dd>
 
-Fa sì che le chiamate asincrone inviino aggiornamenti di stato al [**gestore eventi OnProgress**](swbemsink-onprogress.md) per il sink dell'oggetto.
+Fa sì che le chiamate asincrone inviino aggiornamenti dello stato al [**gestore dell'evento OnProgress**](swbemsink-onprogress.md) per il sink di oggetto.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Fa sì che le chiamate asincrone inviino aggiornamenti di stato al [**gestore ev
 
 </dt> <dd>
 
-Impedisce alle chiamate asincrone di inviare aggiornamenti dello stato al [**gestore eventi OnProgress**](swbemsink-onprogress.md) per il sink dell'oggetto.
+Impedisce alle chiamate asincrone di inviare aggiornamenti dello stato al [**gestore eventi OnProgress**](swbemsink-onprogress.md) per il sink di oggetto.
 
 </dd> <dt>
 
@@ -173,20 +173,20 @@ Fa in modo che WMI restituirà i dati di modifica della classe insieme alla defi
 *objWbemNamedValueSet* \[ Opzionale\]
 </dt> <dd>
 
-In genere non è definito. In caso contrario, si tratta di un [**oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) i cui elementi rappresentano le informazioni di contesto che possono essere usate dal provider che sta servo della richiesta. Un provider che supporta o richiede tali informazioni deve documentare i nomi dei valori riconosciuti, il tipo di dati del valore, i valori consentiti e la semantica.
+In genere, questa operazione non è definita. In caso contrario, si tratta di un [**oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) i cui elementi rappresentano le informazioni sul contesto che possono essere usate dal provider che sta servo della richiesta. Un provider che supporta o richiede tali informazioni deve documentare i nomi dei valori riconosciuti, il tipo di dati del valore, i valori consentiti e la semantica.
 
 </dd> <dt>
 
 *objWbemAsyncContext* \[ Opzionale\]
 </dt> <dd>
 
-Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che restituisce al sink dell'oggetto per identificare l'origine della chiamata asincrona originale. Usare questo parametro se si effettuano più chiamate asincrone usando lo stesso sink di oggetto. Per usare questo parametro, creare un **oggetto SWbemNamedValueSet** e usare il metodo [**SWbemNamedValueSet.Add**](swbemnamedvalueset-add.md) per aggiungere un valore che identifichi la chiamata asincrona in esecuzione. Questo **oggetto SWbemNamedValueSet** viene restituito al sink dell'oggetto e l'origine della chiamata può essere estratta usando il metodo [**SWbemNamedValueSet.Item.**](swbemnamedvalueset-item.md) Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
+Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che restituisce all'oggetto sink per identificare l'origine della chiamata asincrona originale. Usare questo parametro se si effettuano più chiamate asincrone usando lo stesso sink di oggetto. Per usare questo parametro, creare un **oggetto SWbemNamedValueSet** e usare il metodo [**SWbemNamedValueSet.Add**](swbemnamedvalueset-add.md) per aggiungere un valore che identifica la chiamata asincrona in esecuzione. Questo **oggetto SWbemNamedValueSet** viene restituito al sink di oggetto e l'origine della chiamata può essere estratta usando il metodo [**SWbemNamedValueSet.Item.**](swbemnamedvalueset-item.md) Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo non restituisce valori. Se ha esito positivo, il sink riceve un [**evento OnObjectReady**](swbemsink-onobjectready.md) per ogni istanza. Dopo l'ultima istanza, il sink dell'oggetto riceve un [**evento OnCompleted.**](swbemsink-oncompleted.md)
+Questo metodo non restituisce valori. Se ha esito positivo, il sink riceve un [**evento OnObjectReady**](swbemsink-onobjectready.md) per ogni istanza. Dopo l'ultima istanza, il sink di oggetto riceve un [**evento OnCompleted.**](swbemsink-oncompleted.md)
 
 ## <a name="error-codes"></a>Codici di errore
 

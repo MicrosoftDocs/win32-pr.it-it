@@ -41,7 +41,7 @@ Esaminare il pixel nella riga 3, colonna 5 dell'immagine. Il numero corrisponden
 
  
 
-Una bitmap che archivia gli indici in una tabella dei colori è detta *bitmap indicizzata con* tavolozza. Alcune bitmap non hanno bisogno di una tabella dei colori. Ad esempio, se una bitmap usa 24 bit per pixel, tale bitmap può archiviare i colori anziché gli indici in una tabella dei colori. La figura seguente mostra una bitmap che archivia i colori direttamente (24 bit per pixel) anziché usare una tabella dei colori. L'illustrazione mostra anche una visualizzazione ingrandita dell'immagine corrispondente. Nella bitmap, FFFFFF rappresenta il bianco, FF0000 rappresenta il rosso, 00FF00 rappresenta il verde e 0000FF rappresenta il blu.
+Una bitmap che archivia gli indici in una tabella dei colori è detta *bitmap indicizzata con* tavolozza. Alcune bitmap non hanno bisogno di una tabella dei colori. Ad esempio, se una bitmap usa 24 bit per pixel, tale bitmap può archiviare i colori anziché gli indici in una tabella dei colori. La figura seguente mostra una bitmap che archivia i colori direttamente (24 bit per pixel) anziché usare una tabella dei colori. La figura mostra anche una visualizzazione ingrandita dell'immagine corrispondente. Nella bitmap, FFFFFF rappresenta il bianco, FF0000 rappresenta il rosso, 00FF00 rappresenta il verde e 0000FF rappresenta il blu.
 
 ![illustrazione di una matrice di valori esadecimali, seguita dall'immagine bitmap che i numeri rappresentano](images/aboutgdip03-art02.png)
 
@@ -57,7 +57,7 @@ BMP è un formato standard usato da Windows per archiviare immagini indipendenti
 
 **Graphics Interchange Format (GIF)**
 
-Il formato GIF è un formato comune per le immagini visualizzate nelle pagine Web. Le GIF funzionano bene per i disegni a linee, le immagini con blocchi di colore a tinta unita e le immagini con limiti netti tra i colori. Le GIF vengono compresse, ma non vengono perse informazioni nel processo di compressione. un'immagine decompressa è esattamente la stessa dell'originale. Un colore in una GIF può essere designato come trasparente, in modo che l'immagine abbia il colore di sfondo di qualsiasi pagina Web che la visualizza. Una sequenza di immagini GIF può essere archiviata in un singolo file per formare un'immagine GIF animata. Le GIF archiviano al massimo 8 bit per pixel, quindi sono limitate a 256 colori.
+GIF è un formato comune per le immagini visualizzate nelle pagine Web. Le GIF funzionano bene per i disegni a linee, le immagini con blocchi di colore a tinta unita e le immagini con limiti netti tra i colori. Le GIF vengono compresse, ma non vengono perse informazioni nel processo di compressione. un'immagine decompressa è esattamente la stessa dell'originale. Un colore in una GIF può essere designato come trasparente, in modo che l'immagine abbia il colore di sfondo di qualsiasi pagina Web che la visualizza. Una sequenza di immagini GIF può essere archiviata in un singolo file per formare un'immagine GIF animata. Le GIF archiviano al massimo 8 bit per pixel, quindi sono limitate a 256 colori.
 
 **Joint Photographic Experts Group (JPEG)**
 

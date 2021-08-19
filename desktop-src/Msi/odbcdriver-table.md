@@ -1,5 +1,5 @@
 ---
-description: Nella tabella ODBCDriver sono elencati i driver ODBC appartenenti all'installazione.
+description: Nella tabella ODBCDriver sono elencati i driver ODBC che appartengono all'installazione.
 ms.assetid: 3518b370-0652-4b54-8057-9871365d5e8c
 title: Tabella ODBCDriver
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118943122"
 ---
 # <a name="odbcdriver-table"></a>Tabella ODBCDriver
 
-Nella tabella ODBCDriver sono elencati i driver ODBC appartenenti all'installazione.
+Nella tabella ODBCDriver sono elencati i driver ODBC che appartengono all'installazione.
 
-La tabella ODBCDriver contiene le colonne seguenti.
+La tabella ODBCDriver include le colonne seguenti.
 
 
 
@@ -25,7 +25,7 @@ La tabella ODBCDriver contiene le colonne seguenti.
 | Componente\_ | [Identificatore](identifier.md) | N   | N        |
 | Descrizione | [Text](text.md)             | N   | N        |
 | file\_      | [Identificatore](identifier.md) | N   | N        |
-| Installazione \_ file | [Identificatore](identifier.md) | N   | S        |
+| Configurazione \_ file | [Identificatore](identifier.md) | N   | S        |
 
 
 
@@ -38,7 +38,7 @@ La tabella ODBCDriver contiene le colonne seguenti.
 <span id="Driver"></span><span id="driver"></span><span id="DRIVER"></span>autista
 </dt> <dd>
 
-Nome del token interno per il driver. Una chiave primaria per la tabella
+Nome del token interno per il driver. Chiave primaria per la tabella
 
 </dd> <dt>
 
@@ -59,20 +59,20 @@ Descrizione registrata per questo driver ODBC. Questo valore non può essere loc
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>File\_
 </dt> <dd>
 
-File DLL per i driver elencati nella colonna Driver . La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato nome file breve. Non è possibile \| usare la sintassi LFN SFN.
+File DLL per i driver elencati nella colonna Driver. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato di nome file breve. Non è possibile usare la sintassi \| LFN SFN.
 
 </dd> <dt>
 
-<span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Installazione \_ file
+<span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Configurazione \_ file
 </dt> <dd>
 
-Il file DLL di installazione per il driver se è diverso da Driver. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato nome file breve. Non è possibile \| usare la sintassi LFN SFN.
+File DLL di installazione per il driver se è diverso da Driver. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato di nome file breve. Non è possibile usare la sintassi \| LFN SFN.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni contenute in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Using a Sequence Table](using-a-sequence-table.md).
+Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Uso di una tabella di sequenza](using-a-sequence-table.md).
 
 ## <a name="validation"></a>Convalida
 

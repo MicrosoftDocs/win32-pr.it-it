@@ -21,7 +21,7 @@ Elenca le funzioni vettoriali 2D fornite da DirectXMath.
 
 | Argomento                                                                                                                           | Descrizione                                              |
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Funzioni di confronto vettoriali 2D della libreria DirectXMath](ovw-xnamath-reference-functions-vector2-comparison.md)<br/>         | Elenca le funzioni di confronto vettoriali 2D.<br/>     |
+| [Funzioni di confronto vettoriali 2D della libreria DirectXMath](ovw-xnamath-reference-functions-vector2-comparison.md)<br/>         | Elenca le funzioni di confronto dei vettori 2D.<br/>     |
 | [Funzioni geometriche vettoriali 2D della libreria DirectXMath](ovw-xnamath-reference-functions-vector2-geometric.md)<br/>           | Elenca le funzioni geometriche vettoriali 2D.<br/>      |
 | [Funzioni di trasformazione vettoriale 2D della libreria DirectXMath](ovw-xnamath-reference-functions-vector2-transformation.md)<br/> | Elenca le funzioni di trasformazione vettoriale 2D.<br/> |
 

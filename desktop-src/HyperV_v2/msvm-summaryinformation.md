@@ -1,7 +1,7 @@
 ---
-description: Utilizzato nei metodi GetSummaryInformation e GetDefinitionFileSummaryInformation della \_ classe MSVM VirtualSystemManagementService per recuperare rapidamente informazioni comuni relative a una macchina virtuale o a uno snapshot.
+description: Usato nei metodi GetSummaryInformation e GetDefinitionFileSummaryInformation nella classe Msvm VirtualSystemManagementService per recuperare rapidamente le informazioni comuni correlate a una macchina virtuale o \_ a uno snapshot.
 ms.assetid: 8D188BB2-4A56-4738-94DD-64D9F9B90B73
-title: Classe Msvm_SummaryInformation
+title: Msvm_SummaryInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -55,18 +55,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 817d025551ae10002b008a181edd8a7dfd2ec68c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4af759cf621f5afbaef90924351ad24a232889b1d81048f0e1372630c74f98f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950090"
 ---
-# <a name="msvm_summaryinformation-class"></a>\_Classe MSVM SummaryInformation
+# <a name="msvm_summaryinformation-class"></a>Classe Msvm \_ SummaryInformation
 
-Utilizzato nei metodi [**GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) e [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) della classe [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) per recuperare rapidamente informazioni comuni relative a una macchina virtuale o a uno snapshot.
+Usato nei [**metodi GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) e [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) nella classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) per recuperare rapidamente le informazioni comuni correlate a una macchina virtuale o a uno snapshot.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF).
+La sintassi seguente è Managed Object Format (MOF).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -121,39 +121,39 @@ class Msvm_SummaryInformation : Msvm_SummaryInformationBase
 
 ## <a name="members"></a>Members
 
-La **classe \_ SummaryInformation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SummaryInformation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SummaryInformation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SummaryInformation** ha queste proprietà.
 
 <dl> <dt>
 
 **AllocatedGPU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore della GPU (Graphics Processing Unit) fisica allocata a questa macchina virtuale. Questa proprietà si applica solo alle macchine virtuali che usano RemoteFX.
+Identificatore dell'unità di elaborazione grafica fisica (GPU) allocata a questa macchina virtuale. Questa proprietà si applica solo alle macchine virtuali che usano RemoteFX.
 
 </dd> <dt>
 
 **ApplicationHealth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di integrità dell'applicazione corrente per la macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Stato di integrità dell'applicazione corrente per la macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 <dt>
 
@@ -166,7 +166,7 @@ Stato di integrità dell'applicazione corrente per la macchina virtuale. Questa 
 
 <span id="Application_Critical"></span><span id="application_critical"></span><span id="APPLICATION_CRITICAL"></span>
 
-**Applicazione critica** (32782)
+**Application Critical** (32782)
 
 
 </dt> <dd></dd> <dt>
@@ -183,16 +183,16 @@ Stato di integrità dell'applicazione corrente per la macchina virtuale. Questa 
 **AsynchronousTasks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ ConcreteJob** Array
+Tipo di dati: **matrice \_ CiM ConcreteJob**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice di istanze [**di \_ ConcreteJob MSVM**](msvm-concretejob.md) che rappresentano le operazioni asincrone correlate alla macchina virtuale attualmente in esecuzione. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Matrice di [**istanze di Msvm \_ ConcreteJob**](msvm-concretejob.md) che rappresentano le operazioni asincrone correlate alla macchina virtuale attualmente in esecuzione. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
@@ -205,11 +205,11 @@ Tipo di dati: **sint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percentuale di buffer di memoria disponibile per la macchina virtuale. Quando la memoria dinamica è abilitata per una macchina virtuale, questa proprietà rappresenta il rapporto tra il buffer di memoria disponibile e il buffer di memoria ideale per la macchina virtuale. Le dimensioni di buffer di memoria ideali vengono configurate utilizzando la proprietà **TargetMemoryBuffer** della classe [**MSVM \_ MemorySettingData**](msvm-memorysettingdata.md) .
+Percentuale del buffer di memoria disponibile per la macchina virtuale. Quando la memoria dinamica è abilitata per una macchina virtuale, questa proprietà rappresenta il rapporto tra il buffer di memoria disponibile e il buffer di memoria ideale per la macchina virtuale. La dimensione ideale del buffer di memoria viene configurata usando la **proprietà TargetMemoryBuffer** della [**classe Msvm \_ MemorySettingData.**](msvm-memorysettingdata.md)
 
-Questa proprietà non è valida per le istanze della classe **MSVM \_ SummaryInformation** che rappresentano macchine virtuali per cui la memoria dinamica non è abilitata.
+Questa proprietà non è valida per le istanze della **classe Msvm \_ SummaryInformation** che rappresentano le macchine virtuali per cui non è abilitata la memoria dinamica.
 
-Questa proprietà non è valida per le istanze della classe **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Questa proprietà non è valida per le istanze della **classe Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
@@ -222,14 +222,14 @@ Tipo di dati: **DateTime**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora in cui è stata creata la macchina virtuale o lo snapshot.
+Ora di creazione della macchina virtuale o dello snapshot.
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -242,26 +242,26 @@ Nome visualizzato per la macchina virtuale o lo snapshot.
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente della macchina virtuale o dello snapshot. Per i valori possibili, vedere la proprietà **EnabledState** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Stato corrente della macchina virtuale o dello snapshot. Per i **valori possibili,** vedere la proprietà EnabledState [**della classe \_ Msvm ComputerSystem.**](msvm-computersystem.md)
 
 </dd> <dt>
 
 **EnhancedSessionModeState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se le connessioni in modalità avanzata sono consentite dall'host e, se consentito, se sono disponibili per la macchina virtuale.
+Indica se le connessioni in modalità avanzata sono consentite dall'host e, se consentite, se sono disponibili per la macchina virtuale.
 
 **Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
 
@@ -283,7 +283,7 @@ Indica se le connessioni in modalità avanzata sono consentite dall'host e, se c
 
 <span id="Allowed_but_not_available"></span><span id="allowed_but_not_available"></span><span id="ALLOWED_BUT_NOT_AVAILABLE"></span>
 
-**Consentito ma non disponibile** (6)
+**Consentito ma non disponibile** (6 )
 
 
 </dt> <dd></dd> </dl>
@@ -293,39 +293,39 @@ Indica se le connessioni in modalità avanzata sono consentite dall'host e, se c
 **GuestOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del sistema operativo guest, se disponibile. Se queste informazioni non sono disponibili, il valore di questa proprietà è **null**. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Nome del sistema operativo guest, se disponibile. Se queste informazioni non sono disponibili, il valore di questa proprietà è **Null.** Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
-**HealthState**
+**Stato di integrità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di integrità corrente per la macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Stato di integrità corrente per la macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
 **Heartbeat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato heartbeat corrente per la macchina virtuale. Per ulteriori informazioni, vedere la documentazione relativa alla proprietà [**StatusDescriptions**](msvm-heartbeatcomponent.md) della classe **MSVM \_ HeartbeatComponent** . Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Stato heartbeat corrente per la macchina virtuale. Per altre informazioni, vedere la documentazione relativa [**alla proprietà StatusDescriptions**](msvm-heartbeatcomponent.md) della **classe Msvm \_ HeartbeatComponent.** Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 <dl> <dt>
 
@@ -346,7 +346,7 @@ Stato heartbeat corrente per la macchina virtuale. Per ulteriori informazioni, v
 **HostComputerSystemName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -355,7 +355,7 @@ Tipo di accesso: sola lettura
 Nome del computer che ospita la macchina virtuale.
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -364,29 +364,29 @@ Nome del computer che ospita la macchina virtuale.
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ managed. InstanceId"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ ManagedElement.InstanceID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-InstanceID è una proprietà facoltativa che può essere utilizzata per identificare in modo opaco e univoco un'istanza di questa classe nell'ambito dello spazio dei nomi di creazione di istanze. Varie sottoclassi di questa classe possono eseguire l'override di questa proprietà per renderla obbligatoria o una chiave. Tali sottoclassi possono anche modificare gli algoritmi preferiti per garantire l'univocità definita di seguito.
+InstanceID è una proprietà facoltativa che può essere usata per identificare in modo opaco e univoco un'istanza di questa classe nell'ambito dello spazio dei nomi di creazione dell'istanza. Diverse sottoclassi di questa classe possono eseguire l'override di questa proprietà per renderla obbligatoria o una chiave. Tali sottoclassi possono anche modificare gli algoritmi preferiti per garantire l'univocità definita di seguito.
 
-Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente:
+Per garantire l'univocità all'interno di NameSpace, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente:
 
 <OrgID>:<LocalID>
 
-Dove <OrgID> e <LocalID> sono separati da due punti (:) e dove <OrgID> devono includere un nome con copyright, un marchio o in altro modo univoco di proprietà dell'entità di business che crea o definisce InstanceID o che è un ID registrato assegnato all'entità business da un'autorità globale riconosciuta. (Questo requisito è simile al <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Per garantire l'univocità, inoltre, <OrgID> non deve contenere i due punti (:). Quando si utilizza questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra <OrgID> e <LocalID> .
+Dove e sono separati da due punti (:) e dove devono includere un nome protetto da copyright, marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale <OrgID> <LocalID> <OrgID> riconosciuta. Questo requisito è simile al seguente: <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, <OrgID> non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra <OrgID> e <LocalID> .
 
-<LocalID> viene scelto dall'entità business e non deve essere riutilizzato per identificare elementi diversi (reali) sottostanti. Se non è null e l'algoritmo "preferito" precedente non viene utilizzato, l'entità di definizione deve garantire che l'ID istanza risultante non venga riutilizzato tra le InstanceID prodotte da questo o da altri provider per lo spazio dei nomi di questa istanza.
+<LocalID> viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se non è Null e l'algoritmo "preferito" precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza.
 
-Se non è impostato su null per le istanze definite da DMTF, è necessario usare l'algoritmo "preferito" con <OrgID> impostato su CIM.
+Se non è impostato su Null per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con <OrgID> impostato su CIM.
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -395,7 +395,7 @@ Se non è impostato su null per le istanze definite da DMTF, è necessario usare
 **IntegrationServicesVersionState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -414,7 +414,7 @@ Indica se i servizi di integrazione installati nella macchina virtuale sono aggi
 
 <span id="UpToDate"></span><span id="uptodate"></span><span id="UPTODATE"></span>
 
-**Uptodate** (1)
+**UpToDate** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -437,44 +437,44 @@ Tipo di dati: **sint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percentuale della memoria corrente disponibile per la macchina virtuale. Quando la memoria dinamica è abilitata per una macchina virtuale, questa proprietà rappresenta il rapporto tra la memoria disponibile della macchina virtuale e la memoria fisica totale assegnata alla macchina virtuale. Quando una macchina virtuale non dispone di memoria disponibile, questa proprietà sarà negativa e conterrà il rapporto tra la memoria necessaria per la macchina virtuale e la memoria fisica totale assegnata alla macchina virtuale.
+Percentuale della memoria corrente disponibile per la macchina virtuale. Quando la memoria dinamica è abilitata per una macchina virtuale, questa proprietà rappresenta il rapporto tra la memoria disponibile della macchina virtuale e la memoria fisica totale assegnata alla macchina virtuale. Quando una macchina virtuale non ha memoria disponibile, questa proprietà sarà negativa e conterrà il rapporto tra la memoria necessaria per la macchina virtuale e la memoria fisica totale assegnata alla macchina virtuale.
 
-Questa proprietà non è valida per le istanze della classe **MSVM \_ SummaryInformation** che rappresentano macchine virtuali per cui la memoria dinamica non è abilitata.
+Questa proprietà non è valida per le istanze della **classe Msvm \_ SummaryInformation** che rappresentano macchine virtuali per cui non è abilitata la memoria dinamica.
 
-Questa proprietà non è valida per le istanze della classe **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Questa proprietà non è valida per le istanze della **classe Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
 **MemorySpansPhysicalNumaNodes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la memoria di uno o più nodi NUMA (Virtual nonuniform Memory Access) della macchina virtuale si estende su più nodi NUMA fisici del sistema del computer host. Contiene **true** se la memoria si estende su più nodi NUMA fisici o su **false** in caso contrario.
+Indica se la memoria di uno o più nodi NUMA (Virtual NonUniform Memory Access) della macchina virtuale si estende su più nodi NUMA fisici del computer host. Contiene **True se** la memoria si estende su più nodi NUMA fisici oppure False in caso **contrario.**
 
 </dd> <dt>
 
 **MemoryUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Utilizzo corrente della memoria, in megabyte, della macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Utilizzo corrente della memoria, in megabyte, della macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -487,7 +487,7 @@ Nome univoco per la macchina virtuale o lo snapshot.
 **Note**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -500,7 +500,7 @@ Note associate alla macchina virtuale o allo snapshot.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -513,74 +513,74 @@ Numero totale di processori virtuali allocati alla macchina virtuale o allo snap
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Stati operativi correnti della macchina virtuale. Per i valori possibili, vedere la proprietà **OperationalStatus** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Stati operativi correnti della macchina virtuale. Per i **valori possibili,** vedere la proprietà OperationalStatus [**della classe \_ Msvm ComputerSystem.**](msvm-computersystem.md)
 
 </dd> <dt>
 
 **OtherEnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la proprietà **EnabledState** è impostata su 1. Questa proprietà verrà impostata su **null** quando **EnabledState** è un valore diverso da 1.
+Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la **proprietà EnabledState** è impostata su 1. Questa proprietà verrà impostata su **Null** quando **EnabledState** è un valore diverso da 1.
 
 </dd> <dt>
 
 **ProcessorLoad**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Utilizzo corrente del processore della macchina virtuale, in percentuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Utilizzo corrente del processore della macchina virtuale, in percentuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
-**ProcessorLoadHistory**
+**ProcessoreLoadHistory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice dei precedenti 100 esempi di utilizzo del processore, in percentuale, per la macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Matrice dei 100 campioni precedenti dell'utilizzo del processore, in percentuale, per la macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
-**ReplicationHealth**
+**Replicationhealth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**MSVM \_ SummaryInformation**.**ReplicationHealthEx**")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Msvm \_ SummaryInformation**.**ReplicationHealthEx**")
 </dt> </dl>
 
-Stato di replica per la macchina virtuale. Per i valori possibili, vedere la proprietà **ReplicationHealth** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Integrità della replica per la macchina virtuale. Per i **valori possibili,** vedere la proprietà ReplicationHealth [**della classe Msvm \_ ComputerSystem.**](msvm-computersystem.md)
 
 > [!Note]  
 > Questa proprietà è deprecata a partire da Windows 8.1; usare invece **ReplicationHealthEx**.
@@ -598,7 +598,7 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**OK** (1)
+**Ok** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -622,16 +622,16 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 **ReplicationHealthEx**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice di valori di integrità della replica per le varie relazioni di replica della macchina virtuale. Per i valori possibili, vedere la proprietà **ReplicationHealth** della classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) .
+Matrice di valori di integrità della replica per le varie relazioni di replica della macchina virtuale. Per i **valori possibili,** vedere la proprietà ReplicationHealth [**della classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md)
 
 <dt>
 
@@ -644,7 +644,7 @@ Matrice di valori di integrità della replica per le varie relazioni di replica 
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**OK** (1)
+**Ok** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -668,13 +668,13 @@ Matrice di valori di integrità della replica per le varie relazioni di replica 
 **ReplicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di replica per la macchina virtuale. Per i valori possibili, vedere la proprietà **ReplicationMode** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Tipo di replica per la macchina virtuale. Per i **valori possibili,** vedere la proprietà ReplicationMode [**della classe Msvm \_ ComputerSystem.**](msvm-computersystem.md)
 
 <dt>
 
@@ -718,37 +718,37 @@ Tipo di replica per la macchina virtuale. Per i valori possibili, vedere la prop
 **ReplicationProviderId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Per la macchina virtuale di replica primaria o estesa, questo è l'ID del provider di replica primario. Per una macchina virtuale di replica e se è abilitata la replica estesa, si tratta dell'ID provider per la relazione estesa.
+Per la macchina virtuale di replica primaria o estesa, si tratta dell'ID del provider di replica primaria. Per una macchina virtuale di replica e se la replica estesa è abilitata, si tratta dell'ID provider per la relazione estesa.
 
 **Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
-**ReplicationState**
+**Stato replica**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**MSVM \_ SummaryInformation**.**ReplicationStateEx**")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Msvm \_ SummaryInformation**.**ReplicationStateEx**")
 </dt> </dl>
 
-Stato di replica per la macchina virtuale. Per i valori possibili, vedere la proprietà **ReplicationState** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Stato di replica per la macchina virtuale. Per i **valori possibili,** vedere la proprietà ReplicationState [**della classe Msvm \_ ComputerSystem.**](msvm-computersystem.md)
 
 > [!Note]  
-> Questa proprietà è deprecata a partire da Windows 8.1; usare invece **ReplicationStateEx**.
+> Questa proprietà è deprecata a partire da Windows 8.1; usare invece **ReplicationStateEx.**
 
  
 
@@ -777,7 +777,7 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 
 <span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>
 
-**Replica** in corso (3)
+**Replica** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -791,14 +791,14 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 
 <span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>
 
-**Ripristino** (5)
+**Ripristinato** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-**Commit eseguito** (6)
+**Commit** eseguito (6)
 
 
 </dt> <dd></dd> <dt>
@@ -819,7 +819,7 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 
 <span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>
 
-**In attesa dell'avvio della risincronizzazione** (9)
+**In attesa di avviare la risincronizzazione** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -850,16 +850,16 @@ Stato di replica per la macchina virtuale. Per i valori possibili, vedere la pro
 **ReplicationStateEx**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice di valori dello stato di replica per le varie relazioni di replica della macchina virtuale. Per i valori possibili, vedere la proprietà **ReplicationState** della classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) .
+Matrice di valori dello stato di replica per le varie relazioni di replica della macchina virtuale. Per i **valori possibili,** vedere la proprietà ReplicationState [**della classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md)
 
 <dt>
 
@@ -886,7 +886,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>
 
-<span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>**Replica** in corso (3)
+<span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>**Replica** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -900,14 +900,14 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>
 
-<span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>**Ripristino** (5)
+<span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>**Ripristinato** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-<span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>**Commit eseguito** (6)
+<span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>**Commit** eseguito (6)
 
 
 </dt> <dd></dd> <dt>
@@ -928,7 +928,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>
 
-<span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>**In attesa dell'avvio della risincronizzazione** (9)
+<span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>**In attesa di avviare la risincronizzazione** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -1012,7 +1012,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>
 
-<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Riutilizzo della replica in corso** (18)
+<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Ridefinire la replica in corso** (18)
 
 
 </dt> <dd>
@@ -1026,7 +1026,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Prepared_for_sync_replication"></span><span id="prepared_for_sync_replication"></span><span id="PREPARED_FOR_SYNC_REPLICATION"></span>
 
-<span id="Prepared_for_sync_replication"></span><span id="prepared_for_sync_replication"></span><span id="PREPARED_FOR_SYNC_REPLICATION"></span>**Preparato per la replica di sincronizzazione** (19)
+<span id="Prepared_for_sync_replication"></span><span id="prepared_for_sync_replication"></span><span id="PREPARED_FOR_SYNC_REPLICATION"></span>**Preparata per la replica di** sincronizzazione (19)
 
 
 </dt> <dd>
@@ -1040,7 +1040,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>
 
-<span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>**Preparato per la replica inversa del gruppo** (20)
+<span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>**Preparata per la replica inversa di** gruppo (20)
 
 
 </dt> <dd>
@@ -1054,7 +1054,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 
 <span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>
 
-<span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>**FireDrill in corso** (21)
+<span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>**Firedrill in corso** (21)
 
 
 </dt> <dd>
@@ -1071,7 +1071,7 @@ Matrice di valori dello stato di replica per le varie relazioni di replica della
 **Schermato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1089,45 +1089,45 @@ Indica se la schermatura è configurata o meno per la macchina virtuale.
 **Snapshot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ VirtualSystemSettingData** Array
+Tipo di dati: **matrice CIM \_ VirtualSystemSettingData**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice di istanze [**di \_ VirtualSystemSettingData MSVM**](msvm-virtualsystemsettingdata.md) che rappresentano gli snapshot per la macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Matrice di istanze [**di Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresentano gli snapshot per la macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Stringhe che descrivono i valori corrispondenti della matrice **OperationalStatus** . Corrisponde alla proprietà **StatusDescriptions** della classe [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Stringhe che descrivono i valori **della matrice OperationalStatus** corrispondenti. Corrisponde alla proprietà **StatusDescriptions** della [**classe Msvm \_ ComputerSystem.**](msvm-computersystem.md)
 
 </dd> <dt>
 
 **SwapFilesInUse**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il paging di secondo livello è attivo. Contiene **true** se il paging di secondo livello è attivo o **false** in caso contrario.
+Indica se il paging di secondo livello è attivo. Contiene **True se** il paging di secondo livello è attivo o False in caso **contrario.**
 
 </dd> <dt>
 
@@ -1140,42 +1140,42 @@ Tipo di dati: **CIM \_ ComputerSystem**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento a un'istanza di [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale di replica di test per la macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Riferimento a [**un'istanza \_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale di replica di test per la macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
-**ThumbnailImage**
+**Immagine di anteprima**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **OctetString**, [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**MSVM \_ SummaryInformation**.**ThumbnailImageWidth**","**MSVM \_ SummaryInformation**.**ThumbnailImageHeight**")
+Qualificatori: **OctetString,** [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Msvm \_ SummaryInformation**.**ThumbnailImageWidth**", "**Msvm \_ SummaryInformation**.**ThumbnailImageHeight**")
 </dt> </dl>
 
-Matrice che contiene un'immagine di piccole dimensioni di anteprima del desktop per la macchina virtuale o lo snapshot nel formato RGB565.
+Matrice che contiene una piccola immagine in formato anteprima del desktop per la macchina virtuale o uno snapshot in formato RGB565.
 
 </dd> <dt>
 
 **ThumbnailImageHeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**MSVM \_ SummaryInformation**.**ThumbnailImage**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Msvm \_ SummaryInformation**.**ThumbnailImage**")
 </dt> </dl>
 
-Altezza, in pixel, dell'immagine nella proprietà ThumbnailImage.
+Altezza in pixel dell'immagine nella proprietà ThumbnailImage.
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -1184,50 +1184,50 @@ Altezza, in pixel, dell'immagine nella proprietà ThumbnailImage.
 **ThumbnailImageWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**MSVM \_ SummaryInformation**.**ThumbnailImage**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Msvm \_ SummaryInformation**.**ThumbnailImage**")
 </dt> </dl>
 
 Larghezza in pixel dell'immagine nella proprietà ThumbnailImage.
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
 </dd> <dt>
 
-**Tempo**
+**Uptime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di tempo trascorsa dall'ultimo avvio della macchina virtuale. Questa proprietà non è valida per le istanze di **MSVM \_ SummaryInformation** che rappresentano uno snapshot della macchina virtuale.
+Periodo di tempo dall'ultimo avvio della macchina virtuale. Questa proprietà non è valida per le istanze di **Msvm \_ SummaryInformation** che rappresentano uno snapshot di macchina virtuale.
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione del sistema virtuale in formato "Major. minor", ad esempio "2,0".
+Versione del sistema virtuale nel formato "major.minor", ad esempio "2.0".
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -1236,25 +1236,25 @@ Versione del sistema virtuale in formato "Major. minor", ad esempio "2,0".
 **VirtualSwitchNames**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Stringhe che specificano i nomi descrittivi dei commutatori virtuali a cui è connessa la macchina virtuale.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
 **VirtualSystemSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1262,20 +1262,20 @@ Tipo di accesso: sola lettura
 
 Sottotipo del sistema virtuale.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 <dt>
 
 <span id="Microsoft_Hyper-V_SubType_1"></span><span id="microsoft_hyper-v_subtype_1"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_1"></span>
 
-**Microsoft: Hyper-V: sottotipo: 1** ()
+**Microsoft:Hyper-V:SubType:1** ()
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Microsoft_Hyper-V_SubType_2"></span><span id="microsoft_hyper-v_subtype_2"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_2"></span>
 
-**Microsoft: Hyper-V: sottotipo: 2** ()
+**Microsoft:Hyper-V:SubType:2** ()
 
 
 </dt> <dd></dd> </dl>
@@ -1284,7 +1284,7 @@ Sottotipo del sistema virtuale.
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ SummaryInformation di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ SummaryInformation** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1292,10 +1292,10 @@ L'accesso alla **classe \_ SummaryInformation di MSVM** potrebbe essere limitato
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1304,10 +1304,10 @@ L'accesso alla **classe \_ SummaryInformation di MSVM** potrebbe essere limitato
 
 <dl> <dt>
 
-[**\_SummaryInformationBase MSVM**](msvm-summaryinformationbase.md)
+[**Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md)
 </dt> <dt>
 
-[Classi di sistema virtuali](virtual-system-classes.md)
+[Classi di sistema virtuale](virtual-system-classes.md)
 </dt> </dl>
 
  

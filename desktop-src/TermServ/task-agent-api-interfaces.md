@@ -1,20 +1,20 @@
 ---
-title: Interfacce API personal desktop Task Agent
-description: L'API personal desktop Task Agent supporta le interfacce seguenti.
+title: Interfacce API dell'agente attività desktop personale
+description: L'API dell'agente attività desktop personale supporta le interfacce seguenti.
 ms.assetid: 5627917D-AC54-40A7-ADAE-F978CF71EB61
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be1d3bba5785e62658b8c5b5644cd8674df47d8b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c717ce16fe3fb8d214746c35890f09ecba174650ef62dfeeb2c1a7c6ceae0e16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000311"
 ---
-# <a name="personal-desktop-task-agent-api-interfaces"></a>Interfacce API personal desktop Task Agent
+# <a name="personal-desktop-task-agent-api-interfaces"></a>Interfacce API dell'agente attività desktop personale
 
-L'API personal desktop Task Agent supporta le interfacce seguenti.
+L'API dell'agente attività desktop personale supporta le interfacce seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,20 +23,20 @@ L'API personal desktop Task Agent supporta le interfacce seguenti.
 [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)
 </dt> <dd>
 
-L'interfaccia [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) viene utilizzata dall'agente attività per comunicare con l'agente di trigger.
+[**L'interfaccia IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) viene usata dall'agente attività per comunicare con l'agente trigger.
 
 </dd> <dt>
 
 [**IRDVTaskPlugin**](irdvtaskplugin.md)
 </dt> <dd>
 
-L'interfaccia [**IRDVTaskPlugin**](irdvtaskplugin.md) viene implementata da un *agente attività* aggiornamento macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti del sistema per una macchina virtuale.
+[**L'interfaccia IRDVTaskPlugin**](irdvtaskplugin.md) viene implementata  da un agente attività di aggiornamento macchina virtuale per consentire all'agente attività di gestire gli aggiornamenti di sistema per una macchina virtuale.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,7 @@ A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) 
 <span id="_msb_work_items_gly"></span><span id="_MSB_WORK_ITEMS_GLY"></span>**elementi di lavoro**
 </dt> <dd>
 
-Elemento che può essere pianificato usando il Utilità di pianificazione servizio. Può essere qualsiasi elemento eseguito dal Utilità di pianificazione in un momento specificato dai trigger dell'elemento.
+Elemento che può essere pianificato utilizzando il Utilità di pianificazione servizio. Può essere qualsiasi elemento eseguito Utilità di pianificazione servizio di configurazione in un momento specificato dai trigger dell'elemento.
 
 Attualmente, le attività sono l'unico tipo valido di elemento di lavoro.
 

@@ -30,22 +30,22 @@ template<uint32_t SwizzleX, uint32_t SwizzleY, uint32_t SwizzleZ, uint32_t Swizz
 <span id="V"></span><span id="v"></span>*Presso*
 </dt> <dd>
 
-\[in \] Vector to swizzle( Vettore da swizzle).
+\[in \] Vector da scorrere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'oggetto [**XMVECTOR con**](xmvector-data-type.md)swizzle.
+Restituisce l'oggetto [**XMVECTOR con scorrimento.**](xmvector-data-type.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è una versione modello di [**XMVectorSwizzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) in cui gli *argomenti di Swizzle \** sono valori di modello.
+Questa funzione è una versione modello di [**XMVectorSwizzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) in cui gli argomenti *Swizzle \** sono valori di modello.
 
 `XM_SWIZZLE_X`, `XM_SWIZZLE_Y` `XM_SWIZZLE_Z` , e sono costanti `XM_SWIZZLE_W` che restituiscono rispettivamente 0, 1, 2 e 3 per l'uso con `XMVectorSwizzle` . È identico a `XM_PERMUTE_0X` , `XM_PERMUTE_0Y` , e `XM_PERMUTE_0Z` `XM_PERMUTE_0W` .
 
 > [!Note]  
-> Il `XMVectorSwizzle` modello è una novità di DirectXMath e non è disponibile per XNAMath 2.x.
+> Il `XMVectorSwizzle` modello è nuovo per DirectXMath e non è disponibile per XNAMath 2.x.
 
  
 
@@ -53,7 +53,7 @@ Questa funzione è una versione modello di [**XMVectorSwizzle**](/windows/win32/
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e Windows Phone 8 app.
 
 ## <a name="requirements"></a>Requisiti
 

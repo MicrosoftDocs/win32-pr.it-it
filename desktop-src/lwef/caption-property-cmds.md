@@ -20,7 +20,7 @@ ms.locfileid: "118976701"
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Determina il testo visualizzato per un [**oggetto Commands**](/windows/desktop/lwef/the-commands-collection-object) nel menu a comparsa del carattere.
+Determina il testo visualizzato per [**un oggetto Commands**](/windows/desktop/lwef/the-commands-collection-object) nel menu a comparsa del carattere.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Determina il testo visualizzato per un [**oggetto Commands**](/windows/desktop/l
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà [**Caption**](caption-property.md) per la raccolta [**Commands**](/windows/desktop/lwef/the-commands-collection-object) definisce come verrà visualizzato nel menu a comparsa del carattere quando la relativa proprietà [**Visible**](visible-property.md) è impostata su True e l'applicazione non è il client attivo per l'input. Per specificare un tasto di scelta (mnemotico non inline) per **caption,** includere un carattere e commerciale (&) prima di tale carattere.
+L'impostazione della proprietà [**Caption**](caption-property.md) per la raccolta [**Commands**](/windows/desktop/lwef/the-commands-collection-object) definisce come verrà visualizzato nel menu a comparsa del carattere quando la relativa proprietà [**Visible**](visible-property.md) è impostata su True e l'applicazione non è il client attivo per l'input. Per specificare un tasto di scelta (unlined mnemonic) per **caption,** includere un carattere e commerciale (&) prima di tale carattere.
 
 Se si definiscono comandi per una [**raccolta Commands**](/windows/desktop/lwef/the-commands-collection-object) con [**una didascalia**](caption-property.md), in genere si definisce anche **una didascalia** per la raccolta **Commands** associata.
 

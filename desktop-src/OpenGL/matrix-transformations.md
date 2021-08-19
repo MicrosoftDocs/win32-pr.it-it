@@ -1,28 +1,28 @@
 ---
-title: Trasformazioni matrice
-description: I vertici e le normali sono trasformati dalle matrici Modelview e projection prima di essere usati per produrre un'immagine nel framebuffer.
+title: Trasformazioni di matrice
+description: I vertici e le normali vengono trasformati dalle matrici di visualizzazione del modello e di proiezione prima di essere usati per produrre un'immagine nel framebuffer.
 ms.assetid: 9fd0b236-9152-4494-b5c7-dadb5943269e
 keywords:
-- Pipeline di elaborazione OpenGL, matrici
-- matrici OpenGL
-- matrice Modelview
+- pipeline di elaborazione OpenGL, matrici
+- Matrici OpenGL
+- matrice modelview
 - matrice di proiezione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3db0ebd8bd13b8d2cee32b8873f697ab073140bd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a0e3c88ffcfebc989400cfa9a85c16f355c0a7090ff4d16531cf03c3697ee869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937320"
 ---
-# <a name="matrix-transformations"></a>Trasformazioni matrice
+# <a name="matrix-transformations"></a>Trasformazioni di matrice
 
-I vertici e le normali sono trasformati dalle matrici Modelview e projection prima di essere usati per produrre un'immagine nel framebuffer. Usare funzioni come [**glMatrixMode**](glmatrixmode.md), [**glMultMatrix \***](glmultmatrix.md), [**glRotate \***](glrotate.md), [**glTranslate \***](gltranslate.md)e [**glScale \***](glscale.md) per comporre le trasformazioni desiderate. Oppure specificare matrici direttamente con [**glLoadMatrix \***](glloadmatrix.md) e [**glLoadIdentity**](glloadidentity.md). Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare Modelview e matrici di proiezione nei rispettivi stack.
+I vertici e le normali vengono trasformati dalle matrici di visualizzazione del modello e di proiezione prima di essere usati per produrre un'immagine nel framebuffer. Usare funzioni come [**glMatrixMode**](glmatrixmode.md), [ * *glMultMatrix \** _](glmultmatrix.md), [_*glRotate \**_](glrotate.md), [_*glTranslate \**_](gltranslate.md)e [_*glScale \**_](glscale.md) per comporre le trasformazioni desiderate. Oppure specificare direttamente le matrici [_*con glLoadMatrix \**_](glloadmatrix.md) e _ [*glLoadIdentity* *](glloadidentity.md). Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare matrici modelview e proiezione nei rispettivi stack.
 
- 
+ 
 
- 
+ 
 
 
 

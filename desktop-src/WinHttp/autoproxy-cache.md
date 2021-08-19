@@ -1,28 +1,28 @@
 ---
-description: Cache AutoProxy
+description: Cache del proxy automatico
 ms.assetid: 087104e8-ab38-4ba4-be70-23a5ea2bb130
-title: Cache AutoProxy
+title: Cache del proxy automatico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d0492bec116bad8a82da0e961cf6d851d27c787
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45d494f1491dd52484a893dbab601ed4870f03badf5f849dca413f9554a8493e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614181"
 ---
-# <a name="autoproxy-cache"></a>Cache AutoProxy
+# <a name="autoproxy-cache"></a>Cache del proxy automatico
 
-La funzione [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) esegue la ricerca del proxy automatica in base alle singole richieste per l'URL specificato. Se vengono restituiti più proxy, le applicazioni client devono testare ogni proxy prima di inviare la richiesta. per ulteriori informazioni, vedere la sezione [solo un server proxy attualmente supportata](autoproxy-issues-in-winhttp.md) nei problemi di AutoProxy in WinHTTP. Le informazioni contenute in questo argomento sono valide per le chiamate a **WinHttpGetProxyForUrl** quando il client specifica l'individuazione automatica del proxy.
+La [**funzione WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) esegue la ricerca del proxy automatico per ogni richiesta per l'URL specificato. Se vengono restituiti più proxy, le applicazioni client devono testare ogni proxy prima di inviare la richiesta. Per altre informazioni, vedere la sezione È attualmente supportato un solo [server proxy](autoproxy-issues-in-winhttp.md) in Problemi del proxy automatico in WinHTTP. Le informazioni contenute in questo argomento si applicano alle chiamate **a WinHttpGetProxyForUrl** quando il client specifica l'individuazione automatica del proxy.
 
-[**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) , facoltativamente, individua l'URL del proxy AutoProxy e Scarica lo script di AutoProxy da tale sito. WinHttp usa lo script di AutoProxy per individuare i server proxy. Sia l'URL del proxy AutoProxy che lo script di AutoProxy vengono memorizzati nella cache per la sessione specificata. Solo un URL e uno script di AutoProxy vengono memorizzati nella cache per ogni sessione. In genere, lo script e l'URL del proxy AutoProxy vengono memorizzati nella cache fino a quando non viene modificato l'indirizzo IP associato al computer. Se viene rilevato un nuovo indirizzo IP durante una chiamata a **WinHttpGetProxyForUrl**, la chiamata tenterà di individuare un nuovo URL di AutoProxy e di memorizzare nella cache i risultati. È necessario consentire un solo utente per sessione, in modo che i dati memorizzati nella cache non siano condivisi con altri utenti nel computer. Per ulteriori informazioni, vedere [Cenni preliminari sulle sessioni WinHTTP](winhttp-sessions-overview.md).
+[**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) individua facoltativamente l'URL del proxy automatico e scarica lo script del proxy automatico da tale sito. WinHttp usa lo script autoproxy per individuare i server proxy. Sia l'URL del proxy automatico che lo script del proxy automatico vengono memorizzati nella cache per la sessione specificata. Solo un URL e uno script del proxy automatico vengono memorizzati nella cache per ogni sessione. In genere, lo script e l'URL del proxy automatico vengono memorizzati nella cache fino a quando non cambia l'indirizzo IP associato al computer. Se durante una chiamata a **WinHttpGetProxyForUrl** viene rilevato un nuovo indirizzo IP, la chiamata tenterà di individuare un nuovo URL e script del proxy automatico e memorizzare nella cache i risultati. Deve essere consentito un solo utente per sessione, in modo che i dati memorizzati nella cache non siano condivisi con altri utenti del computer. Per altre informazioni, vedere [Cenni preliminari sulle sessioni WinHTTP.](winhttp-sessions-overview.md)
 
-Se il servizio out-of-process è attivo quando viene chiamato [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) , l'URL e lo script del proxy AutoProxy memorizzati nella cache sono disponibili per l'intero computer. Tuttavia, se viene usato il servizio out-of-process e il flag **fAutoLogonIfChallenged** nella struttura *pAutoProxyOptions* è true, l'URL e lo script di AutoProxy non vengono memorizzati nella cache. Pertanto, la chiamata di **WinHttpGetProxyForUrl** con il membro **FAutoLogonIfChallenged** impostato su **true** comporta operazioni di overhead aggiuntive che potrebbero influire sulle prestazioni. Per migliorare le prestazioni, è possibile usare i passaggi seguenti.
+Se il servizio out-of-process è attivo quando viene chiamato [**WinHttpGetProxyForUrl,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) l'URL e lo script del proxy automatico memorizzati nella cache sono disponibili per l'intero computer. Tuttavia, se viene usato il servizio out-of-process e il flag **fAutoLogonIfChallenged** nella struttura *pAutoProxyOptions* è true, l'URL e lo script del proxy automatico non vengono memorizzati nella cache. Pertanto, la chiamata **di WinHttpGetProxyForUrl** con il membro **fAutoLogonIfChallenged** impostato su **TRUE** comporta operazioni aggiuntive di overhead che possono influire sulle prestazioni. I passaggi seguenti possono essere usati per migliorare le prestazioni.
 
 **Per migliorare le prestazioni**
 
-1.  Chiamare [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) con il parametro fAutoLogonIfChallenged impostato su **false**. L'URL e lo script di AutoProxy vengono memorizzati nella cache per le chiamate future a **WinHttpGetProxyForUrl**.
-2.  Se il passaggio 1 ha esito negativo, con **errore errore di \_ \_ accesso \_ WinHTTP**, chiamare [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) con il membro **fAutoLogonIfChallenged** impostato su **true**.
+1.  Chiamare [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) con il parametro fAutoLogonIfChallenged impostato su **false.** L'URL e lo script del proxy automatico vengono memorizzati nella cache per le chiamate future **a WinHttpGetProxyForUrl.**
+2.  Se il passaggio 1 ha esito negativo, con **ERRORE \_ WINHTTP \_ LOGIN \_ FAILURE**, chiamare [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) con il membro **fAutoLogonIfChallenged** impostato su **TRUE.**
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Specifica il livello di downmix surround, in decibel (dB), in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 4633f91b-2023-4d35-ba10-34818f0f632a
-title: Proprietà AVEncDDSurroundDownMixLevel (codecapis. h)
+title: Proprietà AVEncDDSurroundDownMixLevel (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 217c0ed72c3ad1015e18f0a735323066e039fc7b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 707f2c0af1c17625dac35ce4987f26c0026a91275b88ee20f73274ec2362c50f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087611"
 ---
-# <a name="avencddsurrounddownmixlevel-property"></a>Proprietà AVEncDDSurroundDownMixLevel
+# <a name="avencddsurrounddownmixlevel-property"></a>AVEncDDSurroundDownMixLevel - proprietà
 
 Specifica il livello di downmix surround, in decibel (dB), in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
@@ -19,11 +19,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDSurroundDownMixLevel**
+**CODECAPI \_ AVEncDDSurroundDownMixLevel**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

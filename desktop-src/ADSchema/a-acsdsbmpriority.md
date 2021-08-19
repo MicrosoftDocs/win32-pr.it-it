@@ -1,10 +1,10 @@
 ---
-title: ACS-DSBM-attributo priority
-description: Questo attributo contiene la priorità per questo gestore della larghezza di banda della subnet (SBM).
+title: Attributo ACS-DSBM-Priority
+description: Questi attributi contengono la priorità per questo SBM (Subnet Bandwidth Manager).
 ms.assetid: 08dd49d2-a2fa-4707-8302-25566680b91d
 ms.tgt_platform: multiple
 keywords:
-- ACS-DSBM-schema AD dell'attributo priority
+- Schema AD dell'attributo ACS-DSBM-Priority
 - Schema AD dell'attributo aCSDSBMPriority
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd32c9e9cca95dbd5f52569de0b61e886033d13
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2e7a80c9c866b5c91f83f884ecaafe60e4596af4ca8d625791ed9264679c356
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637491"
 ---
-# <a name="acs-dsbm-priority-attribute"></a>ACS-DSBM-attributo priority
+# <a name="acs-dsbm-priority-attribute"></a>Attributo ACS-DSBM-Priority
 
-Questo attributo contiene la priorità per questo gestore della larghezza di banda della subnet (SBM). Quando è necessario eleggere un nuovo gestore della larghezza di banda della subnet designato (DSBM), questo valore viene inviato ad altri SBMs nel dominio come parte di un \_ messaggio DSBM. La SBM con la priorità più alta viene eletta come nuova DSBM.
+Questi attributi contengono la priorità per questo SBM (Subnet Bandwidth Manager). Quando deve essere scelto un nuovo DSBM (Designated Subnet Bandwidth Manager), questo valore viene inviato ad altri SBM nel dominio come parte di un messaggio di disponibilità \_ DSBM. Il modello SBM con la priorità più alta viene scelto come nuovo DSBM.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-DSBM-priorità                    |
-| LDAP-Display-Name | aCSDSBMPriority                      |
+| CN                | ACS-DSBM-Priority                    |
+| Ldap-Display-Name | aCSDSBMPriority                      |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.776               |
-| System-ID-GUID    | 1cb3559e-56d0-11d1-a9c6-0000f80367c1 |
+| System-Id-Guid    | 1cb3559e-56d0-11d1-a9c6-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene la priorità per questo gestore della larghezza di ban
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Di seguito sono riportate le funzioni ImageHlp.
 ms.assetid: 926f412e-25ba-4f9c-a118-b5a1bc723379
-title: Funzioni ImageHlp
+title: Funzioni imageHlp
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f2650d80dfb78f346a5fab22e0adfabdfb11c8e626ad3b5ea39930337feaebe8
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118957110"
 ---
-# <a name="imagehlp-functions"></a>Funzioni ImageHlp
+# <a name="imagehlp-functions"></a>Funzioni imageHlp
 
 Di seguito sono riportate le funzioni ImageHlp.
 

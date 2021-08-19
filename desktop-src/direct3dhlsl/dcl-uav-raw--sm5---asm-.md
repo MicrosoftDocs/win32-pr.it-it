@@ -1,6 +1,6 @@
 ---
 title: dcl_uav_raw (sm5 - asm)
-description: Dichiarare una visualizzazione di accesso non ordinato (UAV) per l'uso da parte di uno shader. | dcl_uav_raw (sm5 - asm)
+description: Dichiarare una visualizzazione di accesso non ordinato per l'uso da parte di uno shader. | dcl_uav_raw (sm5 - asm)
 ms.assetid: D0F43FF8-FF1C-4E42-AF42-F528C98FD680
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118986691"
 ---
 # <a name="dcl_uav_raw-sm5---asm"></a>dcl \_ uav \_ raw (sm5 - asm)
 
-Dichiarare una visualizzazione di accesso non ordinato (UAV) per l'uso da parte di uno shader.
+Dichiarare una visualizzazione di accesso non ordinato per l'uso da parte di uno shader.
 
 
 
@@ -36,13 +36,13 @@ Dichiarare una visualizzazione di accesso non ordinato (UAV) per l'uso da parte 
 
 ## <a name="remarks"></a>Commenti
 
-*dstUAV* è un registro u dichiarato come riferimento a UnorderedAccessView di un buffer, in cui il buffer viene visualizzato come una semplice matrice 1D di voci non tipizzate \# a 32 bit.
+*dstUAV* è un registro u dichiarato come riferimento a un oggetto UnorderedAccessView di un buffer, in cui il buffer viene visualizzato come una semplice matrice 1D di voci non tipizzate \# a 32 bit.
 
-Le operazioni eseguite sulla memoria possono interpretare in modo implicito i dati come con un tipo.
+Le operazioni eseguite sulla memoria possono interpretare implicitamente i dati come con un tipo .
 
-Il \_ flag glc indica "globalmente coerente". L'assenza di glc indica che l'UAV viene dichiarato solo come "coerente del gruppo" nel compute shader o "coerente localmente" in una singola pixel shader \_ chiamata.
+Il \_ flag glc significa "coerente a livello globale". L'assenza di glc significa che l'UAV viene dichiarato solo come "coerente del gruppo" nel compute shader o "coerente localmente" in una singola chiamata \_ pixel shader chiamata.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -66,9 +66,9 @@ Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1
 
  
 
-## <a name="minimum-shader-model"></a>Modello shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
@@ -77,16 +77,16 @@ Questa istruzione è supportata nei modelli shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
  
 
 > [!Note]  
-> Questa istruzione è supportata in cs \_ 4 \_ 0 e cs \_ 4 \_ 1.
+> Questa istruzione è supportata nei file cs \_ 4 \_ 0 e cs \_ 4 \_ 1.
 
  
 
@@ -94,7 +94,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

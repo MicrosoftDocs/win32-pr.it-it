@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECSIZE. cbData'
-title: Proprietà JET_RECSIZE. cbData (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_RECSIZE.cbData'
+title: proprietà JET_RECSIZE.cbData (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cbdata(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e7765ba11c39419cafac8441c59f797702872875
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93192408331154888b906f1a8d06a18bef61a958188aa481a7dfb5aee52006c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616601"
 ---
-# <a name="jet_recsizecbdata-property"></a>Proprietà JET_RECSIZE. cbData
+# <a name="jet_recsizecbdata-property"></a>JET_RECSIZE.cbData
 
 Ottiene il set di dati utente nel record.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public long cbData { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

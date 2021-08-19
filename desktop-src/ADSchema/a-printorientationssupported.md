@@ -1,10 +1,10 @@
 ---
-title: Per gli orientamenti alla stampa-attributo supportato
+title: Attributo print-Orientations-Supported
 description: Rotazione della pagina per la stampa orizzontale.
 ms.assetid: a3e910f1-452e-4b85-8ede-50b7274475a0
 ms.tgt_platform: multiple
 keywords:
-- Orientamento Stampa-schema AD dell'attributo supportato
+- Schema AD dell'attributo Print-Orientations-Supported
 - Schema AD dell'attributo printOrientationsSupported
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49888caa713de7dd12616dcb9932e52b15b2a454
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ffe346318b043f988f04d3f5f99cfd6c138ffdaa984eec2b0cf06f5cfa1c92ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022369"
 ---
-# <a name="print-orientations-supported-attribute"></a>Per gli orientamenti alla stampa-attributo supportato
+# <a name="print-orientations-supported-attribute"></a>Attributo print-Orientations-Supported
 
 Rotazione della pagina per la stampa orizzontale.
 
@@ -29,13 +29,13 @@ Rotazione della pagina per la stampa orizzontale.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------------|
-| CN                | Orientamento stampa-supportato                                |
-| LDAP-Display-Name | printOrientationsSupported                                  |
+| CN                | Print-Orientations-Supported                                |
+| Ldap-Display-Name | printOrientationsSupported                                  |
 | Dimensione              | 4 byte. Valori possibili: 0, 90, 270 e 0 = nessun orizzontale. |
-| Privilegio aggiornamento  | \-                                                          |
+| Privilegio di aggiornamento  | \-                                                          |
 | Frequenza di aggiornamento  | \-                                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.240                                      |
-| System-ID-GUID    | 281416d0-1968-11d0-a28f-00aa003049e2                        |
+| System-Id-Guid    | 281416d0-1968-11d0-a28f-00aa003049e2                        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                 |
 
 
@@ -58,15 +58,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Rotazione della pagina per la stampa orizzontale.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

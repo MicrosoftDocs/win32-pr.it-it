@@ -3,22 +3,22 @@ title: Determinazione del supporto del formato non standard
 description: Determinazione del supporto del formato non standard
 ms.assetid: a795aa7d-704b-4f03-9815-7a298907bd3d
 keywords:
-- audio Waveform, supporto del formato non standard
+- audio waveform, supporto del formato non standard
 - audio ausiliario, supporto del formato non standard
-- audio Waveform, supporto del formato standard
+- audio waveform, supporto del formato standard
 - audio ausiliario, supporto del formato standard
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d0933a82ca8da53c89e1cb8b7d32b40dc89ae0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 30a90d38f7419b6fbdb3de951c0aa2205ccd3dd9ff5366eb1e69eab945220db1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497281"
 ---
 # <a name="determining-nonstandard-format-support"></a>Determinazione del supporto del formato non standard
 
-Per verificare se un dispositivo supporta un particolare formato (standard o non standard), è possibile chiamare la funzione [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) con il \_ flag di query del formato Wave \_ . L'esempio seguente usa questa tecnica per determinare se un dispositivo waveform-audio supporta un formato specificato.
+Per verificare se un dispositivo supporta un formato specifico (standard o non standard), è possibile chiamare la funzione [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) con il flag WAVE \_ FORMAT \_ QUERY. Nell'esempio seguente viene utilizzata questa tecnica per determinare se un dispositivo waveform-audio supporta un formato specificato.
 
 
 ```C++
@@ -43,10 +43,10 @@ MMRESULT IsFormatSupported(LPWAVEFORMATEX pwfx, UINT uDeviceID)
 
 
 
-Questa tecnica per determinare il supporto del formato non standard si applica anche ai dispositivi di input audio e della forma d'onda. L'unica differenza è che la funzione [**waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen) viene usata al posto di [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) per eseguire una query per il supporto del formato.
+Questa tecnica per determinare il supporto del formato non standard si applica anche ai dispositivi di input waveform-audio. L'unica differenza è che la [**funzione waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen) viene usata al posto di [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) per eseguire query per il supporto del formato.
 
-Per determinare se un particolare formato di dati della forma d'onda-audio è supportato da uno qualsiasi dei dispositivi audio della forma d'onda in un sistema, usare la tecnica illustrata nell'esempio precedente, ma specificare la \_ costante di mapper wave per il parametro *uDeviceID* .
+Per determinare se un particolare formato dati waveform-audio è supportato da uno dei dispositivi waveform-audio in un sistema, usare la tecnica illustrata nell'esempio precedente, ma specificare la costante WAVE MAPPER per il \_ *parametro uDeviceID.*
 
- 
+ 
 
- 
+ 

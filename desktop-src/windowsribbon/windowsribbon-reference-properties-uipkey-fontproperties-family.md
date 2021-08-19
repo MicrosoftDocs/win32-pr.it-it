@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_Family
-description: Identifica la proprietà \_ della famiglia FontProperties PKEY \_ \_ dell'interfaccia utente.
+description: Identifica la proprietà \_ della famiglia fontProperties PKEY \_ \_ dell'interfaccia utente.
 ms.assetid: 95064588-9c14-401f-a86e-7b11e86faaf9
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118438660"
 ---
-# <a name="ui_pkey_fontproperties_family"></a>Famiglia \_ FontProperties PKEY \_ \_ dell'interfaccia utente
+# <a name="ui_pkey_fontproperties_family"></a>Famiglia \_ fontProperties PKEY \_ \_ dell'interfaccia utente
 
-Identifica la proprietà \_ della famiglia FontProperties PKEY \_ \_ dell'interfaccia utente.
+Identifica la proprietà \_ della famiglia fontProperties PKEY \_ \_ dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -29,7 +29,7 @@ propertyDescription
 
 Ui \_ PKEY \_ FontProperties \_ Family viene usato da un'applicazione per eseguire query  sul valore della raccolta a discesa Della famiglia di caratteri.
 
-Il valore di UI PKEY FontProperties Family corrisponde a un nome Windows GDI Font Families recuperato con la funzione \_ \_ \_ [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa) o [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexa). [](../gdi/font-families.md)
+Il valore di UI PKEY FontProperties Family corrisponde a un nome di famiglie di caratteri GDI di Windows recuperato con la funzione \_ \_ \_ [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa) o [la funzione EnumFontFamiliesEx.](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexa) [](../gdi/font-families.md)
 
 Il valore predefinito è una stringa vuota.
 

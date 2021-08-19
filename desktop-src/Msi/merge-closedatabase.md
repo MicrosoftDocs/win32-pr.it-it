@@ -1,7 +1,7 @@
 ---
-description: Il metodo ChiudiDatabase dell'oggetto merge chiude il database Windows Installer attualmente aperto.
+description: Il metodo CloseDatabase dell'oggetto Merge chiude il database Windows Installer.
 ms.assetid: a89fe77a-0099-4c49-b484-c05ee351a66a
-title: Metodo merge. ChiudiDatabase (Mergemod. h)
+title: Metodo Merge.CloseDatabase (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 5df72b9423ad212264736d16db0ae73ded9afef5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f3b250cbaebd565f14ef7f10cd8180e497f20347d00a7e96a74298d3e5dc770
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013029"
 ---
-# <a name="mergeclosedatabase-method"></a>Merge. ChiudiDatabase, metodo
+# <a name="mergeclosedatabase-method"></a>Metodo Merge.CloseDatabase
 
-Il metodo **ChiudiDatabase** dell'oggetto [**merge**](merge-object.md) chiude il database Windows Installer attualmente aperto.
+Il **metodo CloseDatabase** dell'oggetto [**Merge**](merge-object.md) chiude il database Windows Installer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Merge.CloseDatabase(
 *bCommit* 
 </dt> <dd>
 
-**True** se le modifiche devono essere salvate; in caso contrario, **false** .
+**TRUE se** le modifiche devono essere salvate, **FALSE in caso contrario.**
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La chiusura di un database Cancella tutte le informazioni sulle dipendenze, ma non influisce sugli errori che non sono stati recuperati.
+La chiusura di un database cancella tutte le informazioni sulle dipendenze, ma non influisce sugli errori che non sono stati recuperati.
 
 ### <a name="c"></a>C++
 
-Vedere funzione [**ChiudiDatabase**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closedatabase) .
+Vedere [**Funzione CloseDatabase.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closedatabase)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Vedere funzione [**ChiudiDatabase**](/windows/win32/api/mergemod/nf-mergemod-ims
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

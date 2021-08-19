@@ -1,23 +1,23 @@
 ---
-description: Gli aggiornamenti che richiedono l'interazione dell'utente non possono essere installati dalle applicazioni di Windows Update Agent (WUA) se le applicazioni WUA sono in esecuzione nel contesto del servizio di accesso secondario.
+description: Gli aggiornamenti che richiedono l'interazione dell'utente non possono essere installati dalle applicazioni dell'agente di aggiornamento di Windows (WUA) se le applicazioni WUA sono in esecuzione nel contesto del servizio di accesso secondario.
 ms.assetid: 090cd730-cfcd-49fc-b748-f66e696edaf3
 title: Uso di WUA da un processo di accesso secondario (RunAs)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f08626532b588f044ca866f78ebab836671f12d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66a659b9c46429100393138751039fdc1ce529191970a35c76d36e45bb16eb0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049089"
 ---
 # <a name="using-wua-from-a-secondary-logon-run-as-process"></a>Uso di WUA da un processo di accesso secondario (RunAs)
 
-Gli aggiornamenti che richiedono l'interazione dell'utente non possono essere installati dalle applicazioni di Windows Update Agent (WUA) se le applicazioni WUA sono in esecuzione nel contesto del servizio di accesso secondario.
+Gli aggiornamenti che richiedono l'interazione dell'utente non possono essere installati dalle applicazioni dell'agente di aggiornamento di Windows (WUA) se le applicazioni WUA sono in esecuzione nel contesto del servizio di accesso secondario.
 
-Se il processo che chiama WUA viene eseguito nel contesto del servizio RunAs o del servizio di accesso secondario, un tentativo di installare un aggiornamento che richiede l'interazione dell'utente ha esito negativo e restituisce l'errore di **Wu \_ e \_ nessun \_ \_ utente interattivo** .
+Se il processo che chiama WUA è in esecuzione nel contesto del servizio RunAs o del servizio di accesso secondario, un tentativo di installare un aggiornamento che richiede l'interazione dell'utente ha esito negativo e restituisce l'errore **WU E NO INTERACTIVE \_ \_ \_ \_ USER.**
 
-In Microsoft Windows è possibile eseguire programmi come un utente diverso dall'utente attualmente connesso. A tale scopo, è necessario che il servizio di accesso secondario sia in esecuzione.
+In Microsoft Windows è possibile eseguire programmi come utente diverso dall'utente attualmente connesso. A tale scopo, è necessario che il servizio di accesso secondario sia in esecuzione.
 
  
 

@@ -1,29 +1,29 @@
 ---
 title: OneWayUdpServerExample
-description: Questo esempio mostra un server UDP che accetta un canale e riceve messaggi unidirezionali.
+description: In questo esempio viene illustrato un server UDP che accetta un canale e riceve messaggi unidireli.
 ms.assetid: 45317e45-03d5-4d17-89cd-9108f81490ff
 keywords:
-- OneWayUdpServerExample native-servizi Web
+- OneWayUdpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 872687ac3f249b7199724a7ba5291fcda142002f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 25c284ee69f1e59a729e88432177529255ee369a1978d1bcf6f0f50c6112398c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026349"
 ---
 # <a name="onewayudpserverexample"></a>OneWayUdpServerExample
 
-Questo esempio mostra un server UDP che accetta un canale e riceve messaggi unidirezionali.
+In questo esempio viene illustrato un server UDP che accetta un canale e riceve messaggi unidireli.
 
--   [OneWayUdpServer. cpp](#onewayudpservercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [OneWayUdpServer.cpp](#onewayudpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="onewayudpservercpp"></a>OneWayUdpServer. cpp
+## <a name="onewayudpservercpp"></a>OneWayUdpServer.cpp
 
 
 ```C++
@@ -318,7 +318,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -462,9 +462,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
